@@ -1,0 +1,33 @@
+{
+  "name": "langgraph-agentic-framework-demo",
+  "version": "1.0.0",
+  "description": "A comprehensive demo of agentic AI framework using LangGraph.js",
+  "main": "agents.js",
+  "type": "module",
+  "scripts": {
+    "start": "node agents.js",
+    "demo": "node demo.js",
+    "test": "node test-agents.js"
+  },
+  "keywords": [
+    "langgraph",
+    "ai",
+    "agents",
+    "multi-agent",
+    "workflow",
+    "demo"
+  ],
+  "author": "ML Workbook Demo",
+  "license": "MIT",
+  "dependencies": {
+    "@langchain/langgraph": "^0.2.0",
+    "@langchain/core": "^0.3.0",
+    "@langchain/openai": "^0.3.0",
+    "@langchain/anthropic": "^0.3.0",
+    "zod": "^3.22.0",
+    "dotenv": "^16.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  }
+}
