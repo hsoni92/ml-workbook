@@ -203,4 +203,9 @@ This feature engineering pipeline demonstrates:
 
 The resulting dataset is **clean, informative, and ready for predictive modeling**, with dimensionality reduced while preserving 95% of the original information.
 
+## 7. Files Exported
+
+1. final_engineered_dataset.csv (PCA components + target)
+2. scaled_features_dataset.csv (all engineered features, scaled)
+
 ---
