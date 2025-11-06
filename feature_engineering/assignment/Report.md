@@ -7,7 +7,7 @@
 
 ---
 
-## Executive Summary
+## Summary
 
 This report summarizes the feature engineering pipeline applied to the House Prices dataset from Kaggle. The goal was to transform raw property data into a clean, modeling-ready dataset through systematic feature engineering, demonstrating strategic thinking and technical proficiency.
 
@@ -202,17 +202,5 @@ This feature engineering pipeline demonstrates:
 4. **Critical analysis:** Questioned correlations and PCA loadings for the random feature
 
 The resulting dataset is **clean, informative, and ready for predictive modeling**, with dimensionality reduced while preserving 95% of the original information.
-
-### Key Takeaway
-**Feature engineering is an iterative process guided by domain knowledge, data characteristics, and modeling objectives—not a mechanical application of transformations.**
-
----
-
-## Files Delivered
-
-1. **assignment.ipynb** - Fully executed notebook with code, outputs, and visualizations
-2. **REPORT.md** - This summary document
-3. **final_engineered_dataset.csv** - PCA components + target
-4. **scaled_features_dataset.csv** - All engineered features (pre-PCA)
 
 ---
