@@ -4,7 +4,6 @@
 **Student Name:** Himanshu Soni
 **Student ID:** 2025EM1100506
 **Student ID Last 7 Digits:** 1100506
-**Date:** October 26, 2025
 
 ---
 
@@ -185,11 +184,11 @@ TF-IDF captures the importance of terms based on their frequency and uniqueness:
 | Categorical encoding | Raw text | Numeric |
 
 ### Data Quality
-✓ No missing values
-✓ No infinite values
-✓ No duplicate rows
-✓ All features numeric and scaled
-✓ Target variable normalized
+- No missing values
+- No infinite values
+- No duplicate rows
+- All features numeric and scaled
+- Target variable normalized
 
 ---
 
@@ -217,7 +216,3 @@ The resulting dataset is **clean, informative, and ready for predictive modeling
 4. **scaled_features_dataset.csv** - All engineered features (pre-PCA)
 
 ---
-
-**Submission Date:** November 7, 2025
-**Assignment Completed Successfully** ✓
-
