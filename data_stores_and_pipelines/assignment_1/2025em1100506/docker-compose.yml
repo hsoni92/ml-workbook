@@ -9,12 +9,16 @@ services:
     ports:
       - "8080:8080"   # Spark Master Web UI
       - "7077:7077"   # Spark Master Port
+    environment:
+      - IVY_HOME=/opt/spark/.ivy2
+      - SPARK_HOME=/opt/spark
     volumes:
       - ./src:/opt/spark/work-dir/src
       - ./configs:/opt/spark/work-dir/configs
       - ./scripts:/opt/spark/work-dir/scripts
       - ./data:/opt/spark/work-dir/data
       - ./quarantine:/opt/spark/work-dir/quarantine
+      - ./input_data_sets:/opt/spark/work-dir/input_data_sets
     networks:
       - spark-network
 
@@ -36,6 +40,7 @@ services:
       - ./scripts:/opt/spark/work-dir/scripts
       - ./data:/opt/spark/work-dir/data
       - ./quarantine:/opt/spark/work-dir/quarantine
+      - ./input_data_sets:/opt/spark/work-dir/input_data_sets
     networks:
       - spark-network
 
@@ -57,6 +62,7 @@ services:
       - ./scripts:/opt/spark/work-dir/scripts
       - ./data:/opt/spark/work-dir/data
       - ./quarantine:/opt/spark/work-dir/quarantine
+      - ./input_data_sets:/opt/spark/work-dir/input_data_sets
     networks:
       - spark-network
 
