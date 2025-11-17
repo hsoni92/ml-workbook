@@ -21,6 +21,21 @@ fi
 # Also ensure it's available for any Python that might be used
 python3 -m pip install --quiet --no-cache-dir --user PyYAML==6.0.1 2>/dev/null || true
 
+# Install pandas and matplotlib for visualization script
+if ! python3 -c "import pandas" 2>/dev/null; then
+    echo "Installing pandas..."
+    python3 -m pip install --quiet --no-cache-dir "pandas>=2.0.0" || \
+    pip3 install --quiet --no-cache-dir "pandas>=2.0.0" || \
+    pip install --quiet --no-cache-dir "pandas>=2.0.0"
+fi
+
+if ! python3 -c "import matplotlib" 2>/dev/null; then
+    echo "Installing matplotlib..."
+    python3 -m pip install --quiet --no-cache-dir "matplotlib>=3.7.0" || \
+    pip3 install --quiet --no-cache-dir "matplotlib>=3.7.0" || \
+    pip install --quiet --no-cache-dir "matplotlib>=3.7.0"
+fi
+
 # Execute the original command passed to the container
 exec "$@"
 
