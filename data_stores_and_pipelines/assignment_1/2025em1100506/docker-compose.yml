@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   spark-master:
-    image: apache/spark:4.1.0-preview3
+    image: apache/spark:3.5.0
     container_name: spark-master
     hostname: spark-master
     command: /opt/spark/bin/spark-class org.apache.spark.deploy.master.Master
@@ -12,6 +12,7 @@ services:
     environment:
       - IVY_HOME=/opt/spark/.ivy2
       - SPARK_HOME=/opt/spark
+      - HOME=/opt/spark
     volumes:
       - ./src:/opt/spark/work-dir/src
       - ./configs:/opt/spark/work-dir/configs
@@ -23,7 +24,7 @@ services:
       - spark-network
 
   spark-worker-1:
-    image: apache/spark:4.1.0-preview3
+    image: apache/spark:3.5.0
     container_name: spark-worker-1
     hostname: spark-worker-1
     command: /opt/spark/bin/spark-class org.apache.spark.deploy.worker.Worker spark://spark-master:7077
@@ -45,7 +46,7 @@ services:
       - spark-network
 
   spark-worker-2:
-    image: apache/spark:4.1.0-preview3
+    image: apache/spark:3.5.0
     container_name: spark-worker-2
     hostname: spark-worker-2
     command: /opt/spark/bin/spark-class org.apache.spark.deploy.worker.Worker spark://spark-master:7077

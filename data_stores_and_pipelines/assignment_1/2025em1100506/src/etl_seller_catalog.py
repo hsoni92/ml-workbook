@@ -185,7 +185,7 @@ def write_to_hudi(df: DataFrame, hudi_output_path: str, table_name: str = "selle
         'hoodie.datasource.write.recordkey.field': 'record_key',  # Composite key as single field
         'hoodie.datasource.write.partitionpath.field': '',  # No partitioning
         'hoodie.datasource.write.table.type': 'COPY_ON_WRITE',
-        'hoodie.datasource.write.operation': 'overwrite',
+        'hoodie.datasource.write.operation': 'insert_overwrite_table',  # Overwrite entire table
         'hoodie.datasource.write.precombine.field': 'seller_id',
         'hoodie.cleaner.policy': 'KEEP_LATEST_COMMITS',
         'hoodie.cleaner.commits.retained': 1
