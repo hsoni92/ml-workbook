@@ -215,26 +215,41 @@ def main():
         config = load_yaml_config(config_path)
         seller_catalog_config = config.get("seller_catalog", {})
 
-        input_path = seller_catalog_config.get("input_path")
+        input_path_clean = seller_catalog_config.get("input_path_clean")
+        input_path_dirty = seller_catalog_config.get("input_path_dirty")
         hudi_output_path = seller_catalog_config.get("hudi_output_path")
         # Use container path for quarantine when running in Docker
         quarantine_path = "/opt/spark/work-dir/quarantine"
 
-        if not input_path or not hudi_output_path:
-            raise ValueError("Missing required configuration: input_path or hudi_output_path")
+        if not input_path_clean or not input_path_dirty or not hudi_output_path:
+            raise ValueError("Missing required configuration: input_path_clean, input_path_dirty, or hudi_output_path")
 
-        print(f"Input path: {input_path}")
+        print(f"Input path (clean): {input_path_clean}")
+        print(f"Input path (dirty): {input_path_dirty}")
         print(f"Hudi output path: {hudi_output_path}")
         print(f"Quarantine path: {quarantine_path}")
 
-        # Bronze Layer: Read raw data from CSV
+        # Bronze Layer: Read raw data from both clean and dirty CSVs and aggregate
         print("\n=== Bronze Layer: Reading raw data ===")
-        bronze_df = spark.read \
+        print("Reading clean data...")
+        clean_df = spark.read \
             .option("header", "true") \
             .option("inferSchema", "true") \
-            .csv(input_path)
+            .csv(input_path_clean)
 
-        print(f"Raw records read: {bronze_df.count()}")
+        print("Reading dirty data...")
+        dirty_df = spark.read \
+            .option("header", "true") \
+            .option("inferSchema", "true") \
+            .csv(input_path_dirty)
+
+        # Union both dataframes to aggregate clean and dirty data
+        print("Aggregating clean and dirty data...")
+        bronze_df = clean_df.unionByName(dirty_df, allowMissingColumns=True)
+
+        print(f"Clean records: {clean_df.count()}")
+        print(f"Dirty records: {dirty_df.count()}")
+        print(f"Total raw records (after aggregation): {bronze_df.count()}")
         print("Schema:")
         bronze_df.printSchema()
 

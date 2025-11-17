@@ -146,13 +146,13 @@ Build a recommendation system that analyzes sales data and recommends top-sellin
      - Group by item_id and category
      - Calculate total units_sold per item
      - Find top 10 selling items per category
-   
+
    - **Aggregate Competitor Sales:**
      - Group by item_id
      - Calculate total units_sold per item
      - Find top-selling items in the market
      - Get marketplace_price (average or latest)
-   
+
    - **Identify Missing Items:**
      - For each seller:
        - Get their current catalog items (from seller_catalog_hudi)
@@ -163,7 +163,7 @@ Build a recommendation system that analyzes sales data and recommends top-sellin
 3. **Recommendation Calculation:**
    For each missing item per seller:
    - **market_price:** Get from competitor_sales or company_sales (prefer competitor if available)
-   - **expected_units_sold:** 
+   - **expected_units_sold:**
      ```
      expected_units_sold = total units sold for the item / number of sellers selling this item
      ```

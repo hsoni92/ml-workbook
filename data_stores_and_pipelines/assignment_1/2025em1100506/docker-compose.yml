@@ -5,6 +5,7 @@ services:
     image: apache/spark:3.5.0
     container_name: spark-master
     hostname: spark-master
+    entrypoint: ["/bin/bash", "/opt/spark/work-dir/scripts/docker-entrypoint.sh"]
     command: /opt/spark/bin/spark-class org.apache.spark.deploy.master.Master
     ports:
       - "8080:8080"   # Spark Master Web UI
@@ -27,12 +28,16 @@ services:
     image: apache/spark:3.5.0
     container_name: spark-worker-1
     hostname: spark-worker-1
+    entrypoint: ["/bin/bash", "/opt/spark/work-dir/scripts/docker-entrypoint.sh"]
     command: /opt/spark/bin/spark-class org.apache.spark.deploy.worker.Worker spark://spark-master:7077
     depends_on:
       - spark-master
     ports:
       - "8081:8081"   # Spark Worker Web UI
     environment:
+      - IVY_HOME=/opt/spark/.ivy2
+      - SPARK_HOME=/opt/spark
+      - HOME=/opt/spark
       - SPARK_WORKER_CORES=2
       - SPARK_WORKER_MEMORY=2g
     volumes:
@@ -49,12 +54,16 @@ services:
     image: apache/spark:3.5.0
     container_name: spark-worker-2
     hostname: spark-worker-2
+    entrypoint: ["/bin/bash", "/opt/spark/work-dir/scripts/docker-entrypoint.sh"]
     command: /opt/spark/bin/spark-class org.apache.spark.deploy.worker.Worker spark://spark-master:7077
     depends_on:
       - spark-master
     ports:
       - "8082:8081"   # Spark Worker Web UI
     environment:
+      - IVY_HOME=/opt/spark/.ivy2
+      - SPARK_HOME=/opt/spark
+      - HOME=/opt/spark
       - SPARK_WORKER_CORES=2
       - SPARK_WORKER_MEMORY=2g
     volumes:
