@@ -11,7 +11,7 @@ The notebook currently:
 - Applies LabelEncoder to categorical features
 - Trains RandomForest and evaluates feature importance
 
-## Changes Required
+## Main Steps
 
 ### 1. Data Download
 
@@ -34,7 +34,7 @@ Map analysis steps to new column schema:
 - **Garage**: Parking_Space → GarageArea, GarageCars
 - **Basement**: No equivalent → use TotalBsmtSF, BsmtQual
 
-### 3. Data Audit Refactoring
+### 3. Data Audit
 
 Keep same checks, adapt for new columns:
 
@@ -44,7 +44,7 @@ Keep same checks, adapt for new columns:
 - Negative value checks for numeric columns
 - Duplicate rows check
 
-### 4. EDA Refactoring
+### 4. Exploratory Data Analysis (EDA)
 
 Adapt visualizations:
 
@@ -55,16 +55,17 @@ Adapt visualizations:
 - Correlation heatmap
 - Bivariate plots: Neighborhood vs SalePrice, OverallQual vs SalePrice, BldgType vs SalePrice
 
-### 5. Data Cleaning Refactoring
+### 5. Data Cleaning
 
 - **Handle missing values** (critical for Kaggle dataset):
-- Drop high-missing columns (>50%)
-- Impute numerical: median/mean
-- Impute categorical: mode or 'None' for applicable features
+  - Drop high-missing columns (>50%)
+  - Impute numerical: median/mean
+  - Impute categorical: mode or 'None' for applicable features
 - Drop irrelevant columns: Id (like current ID column)
+- Remove duplicates
 - Outlier detection using IQR method on numeric columns
 
-### 6. Feature Engineering Refactoring
+### 6. Feature Engineering
 
 Replace amenities parsing with relevant feature creation:
 
@@ -81,6 +82,53 @@ Replace amenities parsing with relevant feature creation:
 - Run F-regression feature scoring
 - Train RandomForest for feature importance
 - Keep top features based on importance scores
+
+### 8. Model Construction
+
+Build at least one appropriate basic regression model:
+
+- **Simple Linear Regression**: Use single most important feature (e.g., GrLivArea or OverallQual) to predict SalePrice
+- **Multiple Linear Regression**: Use top selected features from feature selection phase
+- Document model construction steps clearly in notebook
+- Show data input (train/test split or cross-validation setup)
+- Show model construction steps (feature selection, model fitting)
+
+### 9. Model Evaluation
+
+Compute relevant regression evaluation metrics:
+
+- **RMSE** (Root Mean Squared Error): Primary metric for house price prediction
+- **MAE** (Mean Absolute Error): Interpretable in dollars
+- **R²** (Coefficient of Determination): Measure of model fit
+- Display metrics clearly with interpretation
+- Show model interpretation (coefficients, feature importance)
+
+### 10. Visualization & Storytelling
+
+**Option A: Tableau / Power BI (preferred, if comfortable)**
+
+- **Interactive Dashboard (1–2 dashboards):**
+  - Show results from EDA (e.g., price distribution by neighborhood, quality vs price)
+  - Include key metrics (KPIs): Median SalePrice, Model RMSE, R² score
+  - Include dimensions (filters): Neighborhood, OverallQual, BldgType, YearBuilt range
+  - Show model predictions vs actual prices if possible
+
+- **5-Slide Story Deck (PDF/PPT):**
+  - Title & project context (House Price Prediction using Kaggle dataset)
+  - Visual highlights (EDA or model results)
+  - Key metric(s) / dimension(s) (RMSE, R², top features)
+  - 1–2 key observations (what the charts show - e.g., "Neighborhood significantly impacts price", "OverallQual is strongest predictor")
+  - Simple conclusion or "next steps" (model improvements, additional features)
+
+**Option B: Matplotlib / Seaborn (Notebook-based)**
+
+- **Notebook with 3–5 clear plots (serves as a static dashboard):**
+  - Plots from EDA: SalePrice distribution, correlation heatmap, price by neighborhood/quality
+  - Model results: Predicted vs Actual scatter plot, residual plots, feature importance
+  - Segmented plots (e.g., price by bedrooms, price by quality levels)
+  - Include 1–2 key metrics in text cells (RMSE, R², MAE)
+
+- **5-Slide Story Deck (same as Option A)**
 
 ## Files Modified
 
