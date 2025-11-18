@@ -2,21 +2,21 @@
 # All output paths are S3 or local paths (Hudi tables for ETL, CSV for consumption)
 
 seller_catalog:
-  # input files - both clean and dirty will be aggregated
-  input_path_clean: "/opt/spark/work-dir/input_data_sets/clean/seller_catalog_clean.csv"
-  input_path_dirty: "/opt/spark/work-dir/input_data_sets/dirty/seller_catalog_dirty.csv"
+  # input file - can be swapped between clean and dirty datasets for testing
+  input_path: "/opt/spark/work-dir/input_data_sets/clean/seller_catalog_clean.csv"
+  # input_pathy: "/opt/spark/work-dir/input_data_sets/dirty/seller_catalog_dirty.csv"
   hudi_output_path: "/opt/spark/work-dir/data/2025em1100506/processed/seller_catalog_hudi/" # processed
 
 company_sales:
-  # input files - both clean and dirty will be aggregated
-  input_path_clean: "/opt/spark/work-dir/input_data_sets/clean/company_sales_clean.csv"
-  input_path_dirty: "/opt/spark/work-dir/input_data_sets/dirty/company_sales_dirty.csv"
+  # input file - can be swapped between clean and dirty datasets for testing
+  input_path: "/opt/spark/work-dir/input_data_sets/clean/company_sales_clean.csv"
+  # input_path: "/opt/spark/work-dir/input_data_sets/dirty/company_sales_dirty.csv"
   hudi_output_path: "/opt/spark/work-dir/data/2025em1100506/processed/company_sales_hudi/" # processed
 
 competitor_sales:
-  # input files - both clean and dirty will be aggregated
-  input_path_clean: "/opt/spark/work-dir/input_data_sets/clean/competitor_sales_clean.csv"
-  input_path_dirty: "/opt/spark/work-dir/input_data_sets/dirty/competitor_sales_dirty.csv"
+  # input file - can be swapped between clean and dirty datasets for testing
+  input_path: "/opt/spark/work-dir/input_data_sets/clean/competitor_sales_clean.csv"
+  # input_path: "/opt/spark/work-dir/input_data_sets/dirty/competitor_sales_dirty.csv"
   hudi_output_path: "/opt/spark/work-dir/data/2025em1100506/processed/competitor_sales_hudi/" # ETL output (Hudi)
 
 recommendation:

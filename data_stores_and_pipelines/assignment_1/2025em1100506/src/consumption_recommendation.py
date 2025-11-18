@@ -327,7 +327,17 @@ def calculate_recommendations(
         )
 
     print(f"  ✓ Recommendation calculation completed: Generated {recommendations.count()} recommendations")
-    return recommendations
+
+    # Step 5.6: Filter to top 10 recommendations per seller by expected_revenue
+    print("  - Step 5.6: Filtering to top 10 recommendations per seller...")
+    window_spec = Window.partitionBy("seller_id").orderBy(desc("expected_revenue"))
+    top_recommendations = recommendations \
+        .withColumn("rank", row_number().over(window_spec)) \
+        .filter(col("rank") <= 10) \
+        .drop("rank")
+
+    print(f"  ✓ Filtered to top 10 per seller: {top_recommendations.count()} recommendations")
+    return top_recommendations
 
 
 def write_recommendations_to_csv(df: DataFrame, output_path: str) -> None:
@@ -342,7 +352,7 @@ def write_recommendations_to_csv(df: DataFrame, output_path: str) -> None:
         output_path: Path to output CSV file
     """
     # Verify columns match PLAN.md requirements
-    expected_columns = ["seller_id", "item_id", "item_name", "category", 
+    expected_columns = ["seller_id", "item_id", "item_name", "category",
                        "market_price", "expected_units_sold", "expected_revenue"]
     actual_columns = df.columns
 
@@ -386,7 +396,7 @@ def main():
         competitor_sales_hudi_path = recommendation_config.get("competitor_sales_hudi")
         output_csv_path = recommendation_config.get("output_csv")
 
-        if not all([seller_catalog_hudi_path, company_sales_hudi_path, 
+        if not all([seller_catalog_hudi_path, company_sales_hudi_path,
                    competitor_sales_hudi_path, output_csv_path]):
             raise ValueError("Missing required configuration in recommendation section")
 
