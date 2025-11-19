@@ -21,7 +21,7 @@ services:
       - ./data:/opt/spark/work-dir/data
       - ./quarantine:/opt/spark/work-dir/quarantine
       - ./input_data_sets:/opt/spark/work-dir/input_data_sets
-      - ../../../../docker-entrypoint.sh:/opt/spark/work-dir/docker-entrypoint.sh
+      - ./docker-entrypoint.sh:/opt/spark/work-dir/docker-entrypoint.sh
     networks:
       - spark-network
 
@@ -48,7 +48,7 @@ services:
       - ./data:/opt/spark/work-dir/data
       - ./quarantine:/opt/spark/work-dir/quarantine
       - ./input_data_sets:/opt/spark/work-dir/input_data_sets
-      - ../../../../docker-entrypoint.sh:/opt/spark/work-dir/docker-entrypoint.sh
+      - ./docker-entrypoint.sh:/opt/spark/work-dir/docker-entrypoint.sh
     networks:
       - spark-network
 
@@ -75,7 +75,7 @@ services:
       - ./data:/opt/spark/work-dir/data
       - ./quarantine:/opt/spark/work-dir/quarantine
       - ./input_data_sets:/opt/spark/work-dir/input_data_sets
-      - ../../../../docker-entrypoint.sh:/opt/spark/work-dir/docker-entrypoint.sh
+      - ./docker-entrypoint.sh:/opt/spark/work-dir/docker-entrypoint.sh
     networks:
       - spark-network
 
