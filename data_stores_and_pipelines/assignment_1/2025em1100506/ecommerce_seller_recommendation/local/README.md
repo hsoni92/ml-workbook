@@ -1,4 +1,7 @@
 # Ecommerce Seller Recommendation
+- Author: Himanshu Soni
+- Email: 2025em1100506@bitspilani-digital.edu.in
+- Student ID: 2025EM1100506
 
 A Spark-based ETL pipeline for processing ecommerce data and generating seller recommendations.
 
@@ -6,7 +9,7 @@ A Spark-based ETL pipeline for processing ecommerce data and generating seller r
 
 - Docker and Docker Compose installed on your system
 
-## How to Run
+## How to Run with Docker
 
 1. **Start the Spark cluster (As Container)**
    ```bash
@@ -43,6 +46,27 @@ A Spark-based ETL pipeline for processing ecommerce data and generating seller r
    ```bash
    docker compose down -v
    ```
+
+## How to Run Locally (Without Docker)
+
+Execute the ETL scripts in the following order:
+
+```bash
+# Step 1: Process seller catalog data
+spark-submit --master local[*] --packages org.apache.hudi:hudi-spark3.5-bundle_2.12:0.15.0,org.apache.hadoop:hadoop-aws:3.3.4,com.amazonaws:aws-java-sdk-bundle:1.12.262 --conf spark.serializer=org.apache.spark.serializer.KryoSerializer --conf spark.sql.legacy.timeParserPolicy=LEGACY src/etl_seller_catalog.py --config configs/ecomm_prod.yml
+
+# Step 2: Process company sales data
+spark-submit --master local[*] --packages org.apache.hudi:hudi-spark3.5-bundle_2.12:0.15.0,org.apache.hadoop:hadoop-aws:3.3.4,com.amazonaws:aws-java-sdk-bundle:1.12.262 --conf spark.serializer=org.apache.spark.serializer.KryoSerializer --conf spark.sql.legacy.timeParserPolicy=LEGACY src/etl_company_sales.py --config configs/ecomm_prod.yml
+
+# Step 3: Process competitor sales data
+spark-submit --master local[*] --packages org.apache.hudi:hudi-spark3.5-bundle_2.12:0.15.0,org.apache.hadoop:hadoop-aws:3.3.4,com.amazonaws:aws-java-sdk-bundle:1.12.262 --conf spark.serializer=org.apache.spark.serializer.KryoSerializer --conf spark.sql.legacy.timeParserPolicy=LEGACY src/etl_competitor_sales.py --config configs/ecomm_prod.yml
+
+# Step 4: Generate seller recommendations
+spark-submit --master local[*] --packages org.apache.hudi:hudi-spark3.5-bundle_2.12:0.15.0,org.apache.hadoop:hadoop-aws:3.3.4,com.amazonaws:aws-java-sdk-bundle:1.12.262 --conf spark.serializer=org.apache.spark.serializer.KryoSerializer --conf spark.sql.legacy.timeParserPolicy=LEGACY src/consumption_recommendation.py --config configs/ecomm_prod.yml
+
+# Step 5: Visualize recommendations (optional)
+python3 src/visualize_recommendations.py --csv-path data/2025em1100506/processed/recommendations_csv/seller_recommend_data.csv
+```
 
 ## What it does
 
