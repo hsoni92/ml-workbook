@@ -1,0 +1,18 @@
+seller_catalog:
+  input_path: "/opt/spark/work-dir/input_data_sets/clean/seller_catalog_clean.csv"
+  hudi_output_path: "/opt/spark/work-dir/data/2025em1100506/processed/seller_catalog_hudi/"
+
+company_sales:
+  input_path: "/opt/spark/work-dir/input_data_sets/clean/company_sales_clean.csv"
+  hudi_output_path: "/opt/spark/work-dir/data/2025em1100506/processed/company_sales_hudi/"
+
+competitor_sales:
+  input_path: "/opt/spark/work-dir/input_data_sets/clean/competitor_sales_clean.csv"
+  hudi_output_path: "/opt/spark/work-dir/data/2025em1100506/processed/competitor_sales_hudi/"
+
+recommendation:
+  seller_catalog_hudi: "/opt/spark/work-dir/data/2025em1100506/processed/seller_catalog_hudi/"
+  company_sales_hudi: "/opt/spark/work-dir/data/2025em1100506/processed/company_sales_hudi/"
+  competitor_sales_hudi: "/opt/spark/work-dir/data/2025em1100506/processed/competitor_sales_hudi/"
+  output_csv: "/opt/spark/work-dir/data/2025em1100506/processed/recommendations_csv/seller_recommend_data.csv"
+
