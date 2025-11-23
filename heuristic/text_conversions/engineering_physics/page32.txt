@@ -1,0 +1,80 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+26 
+ 
+ 
+ 
+As every integer represents one energy state, unit volume of this space contains exactly one 
+state .Hence; the number of states in any volume is equal to the volume expressed in units of 
+cubes of lattice parameters).Also 𝑛2 = 𝑛𝑥
+2 + 𝑛𝑦
+2 + 𝑛𝑧
+2Consider a sphere of radius n and another 
+sphere of radius n+dn with the energy values are E and (E+dE) respectively.   
+ 
+ 
+ 
+ 
+Therefore, the number of energy states available in the sphere of radius ‘n’ is 
+1
+8 (4𝜋𝑛3
+3
+) 
+by considering one octant of the sphere  
+(Here, the number of states in a shell of thickness dn at a 
+distance ‘n’ in coordinate system formed by 
+𝑛𝑥 , 𝑛𝑦 𝑎𝑛𝑑 𝑛𝑧 and will take only positive values ,in that 
+sphere 
+1
+8 of the volume will satisfy this condition). 
+The number of energy states within a sphere of radius 
+(n+dn) is 
+1
+8 (4𝜋
+3 )(𝑛+ 𝑑𝑛)3 
+Thus the number of energy states having energy values between E and E+dE is given by 
+g(𝐸)𝑑𝐸= 1
+8 (4𝜋
+3 )(𝑛+ 𝑑𝑛)3 −1
+8 (4𝜋
+3 )𝑛3 
+= 1
+8 (4𝜋
+3 )⌊(𝑛+ 𝑑𝑛)3 −𝑛3⌋= 𝜋
+6 (3𝑛2𝑑𝑛) = 𝜋
+2 𝑛2 𝑑𝑛 
+compared to ‘dn’,𝑑𝑛2  𝑎𝑛𝑑 𝑑𝑛3 𝑎𝑟𝑒 𝑣𝑒𝑟𝑦 𝑠𝑚𝑎𝑙𝑙 . 
+Neglecting higher powers of dn 
+g(𝐸)𝑑𝐸= 𝜋
+2 𝑛2 𝑑𝑛… … . . (2) 
+The expression for𝑛𝑡ℎ energy level can be written as , 
+𝐸= 𝑛2ℎ2
+8𝑚𝐿2 𝑜𝑟, 𝑛2 = 8𝑚𝐿2𝐸
+ℎ2
+… …. . (3) 
+⟹𝑛= (8𝑚𝐿2𝐸
+ℎ2
+)
+1
+2 … … ….      (4) 
+Differentiating eq. (3):  
+2𝑛𝑑𝑛= 8𝑚𝐿2
+ℎ2
+𝑑𝐸      =>  𝑑𝑛= 1
+2𝑛(8𝑚𝐿2
+ℎ2 )𝑑𝐸 
+∵ by substituting 1/n value in dn, 
+𝑛= 1
+2 (8𝑚𝐿2
+ℎ2 )
+1
+2 𝑑𝐸
+𝐸
+1
+2
+ … … … (5) 
+Substitute n2 and dn from eq. (3) and (5), we get 
+ 

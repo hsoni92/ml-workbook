@@ -1,0 +1,61 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+3 
+ 
+ 
+From eq(2) 
+𝑥= 𝐶1𝑒+𝑖ωt + 𝐶2𝑒−𝑖ωt 
+Where 𝐶1 𝑎𝑛𝑑 𝐶2 are arbitrary constants 
+𝑥= 𝐶1[cos 𝜔𝑡+ 𝑖 sin 𝜔𝑡] + 𝐶2[cos𝜔𝑡−𝑖 sin 𝜔𝑡] 
+𝑥= (𝐶1 + 𝐶2) cos 𝜔𝑡 +  𝑖(𝐶1 −𝐶2) sin 𝜔𝑡 
+Let us put 𝐶1 + 𝐶2 = 𝑎sin 𝜙   and   𝐶1 −𝐶2 = 𝑎cos 𝜙 
+Where a and ϕ are constants 
+𝑥= 𝑎sin 𝜙 cos 𝜔𝑡 +  𝑖𝑎cos 𝜙sin 𝜔𝑡 
+𝑥= 𝑎sin(𝜔𝑡+ 𝜙 ) -------- (4) 
+Equation (4) is the solution of simple harmonic motion. 
+Damped harmonic oscillator: 
+ 
+Definition:Damped harmonic motion is defined as decay or decrease of amplitude of motion 
+with respect to time in presence of air or other medium. The oscillator which performs such 
+type of motion is known asdamped harmonic oscillator. 
+Ex: Motion of tuning fork, Motion of simple pendulum. etc. 
+ 
+Equation for damped harmonic oscillator: 
+The damped system is subjected to: 
+ 
+i) A   restoring force which is proportional to displacement but oppositely directed. This is            
+   written   as  −𝑘𝑥  where k is force constant. 
+ii) Frictional force:Frictional force is proportional to velocity but oppositely directed, given 
+by  
+f2 α −dx
+dt 
+f2 = −r (
+dx
+dt) ------------- (2)          Where ‘r’ is frictional force per unit velocity. 
+Since,     𝑓𝑜𝑟𝑐𝑒 =  𝑚𝑎𝑠𝑠 × 𝑎𝑐𝑐𝑙𝑒𝑟𝑎𝑡𝑖𝑜𝑛= 𝑚 
+𝑑2𝑥
+𝑑𝑡2 
+Therefore, the equation of the motion of particle is given by  
+𝑚 𝑑2𝑥
+𝑑𝑡2 = −𝑘𝑥−r (dx
+dt)     𝑜𝑟         𝑑2𝑥
+𝑑𝑡2 + 𝑟
+𝑚
+dx
+dt + k
+m 𝑥= 0 
+Or      
+𝑑2𝑥
+𝑑𝑡2 + 2𝑏 dx
+dt + w2𝑥= 0           … … … … . (1) 
+Where 
+𝑟
+𝑚= 2𝑏 𝑎𝑛𝑑 k
+m = w2 
+Here b is damping constant, and this is a differential equation of damped harmonic motion. 
+ 
+ 
+ 

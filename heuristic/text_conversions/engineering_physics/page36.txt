@@ -1,0 +1,59 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+30 
+ 
+ 
+ 
+Conclusions: 
+1. The L.H.S is a cosine term which varies between the limits -1 and +1, and hence the 
+R.H.S also varies between these limits. It means energy is restricted within -1 to +1 
+only. 
+2. If  the energy of 𝑒− lies between -1 to +1, are called allowed energy bands and it is 
+shown by shaded portion in energy spectrum. This means that ‘αa’ can take only certain 
+range of values belonging to allowed energy band. 
+ 
+3. As the value of αa increases, the width of the allowed energy bands also increases. 
+4. If  energy of𝑒−s not lies between -1 to +1 are known as forbidden energy bands and it 
+is decreases w.r.to increment of 𝛼𝑎. 
+5. Thus, motion of 𝑒−s. in a periodic lattice is characterized by the bands of allowed & 
+forbidden energy levels. 
+Case 1: 
+1. P→∞ 
+ If P→∞, the allowed band reduces to a single (line) energy level, gives us steeper lines.  
+We have 
+𝑐𝑜𝑠𝑘𝑎  (𝛼𝑎
+𝑝) = sin 𝛼𝑎+ 𝑐𝑜𝑠𝛼𝑎(𝛼𝑎
+𝑝) 
+𝑃→∞  , 1
+∞= 0        𝑡ℎ𝑒𝑛    𝑠𝑖𝑛𝛼𝑎= 0 
+𝑠𝑖𝑛𝛼𝑎= sin 𝑛𝜋 
+𝛼𝑎= 𝑛𝜋 
+𝛼2𝑎2 = 𝑛2𝜋2 
+𝛼2 = 𝑛2𝜋2
+𝑎2  
+2𝑚𝐸
+ℏ2
+= 𝑛2𝜋2
+𝑎2  
+𝐸= 𝑛2𝜋2ℏ2
+2𝑚𝑎2 =  𝑛2𝜋2h2
+2𝑚𝑎2 4𝜋2 
+𝐸= 𝑛2h2
+8𝑚𝑎2    , ℎ𝑒𝑟𝑒   𝑎 𝑖𝑠 𝑙𝑎𝑡𝑡𝑖𝑐𝑒 𝑐𝑜𝑛𝑠𝑡𝑎𝑛𝑡 
+It means, it (zone theory) supports quantum free electron theory. 
+Case 2: 
+P→0, We have 
+𝑐𝑜𝑠𝑘𝑎= 𝑃𝑠𝑖𝑛𝛼𝑎
+𝛼𝑎
++ 𝑐𝑜𝑠𝛼𝑎 
+𝛼𝑎= 𝑘𝑎 
+𝛼= 𝑘 
+𝛼2 = 𝑘2 
+2𝑚𝐸
+ℏ2
+= (2𝜋
+𝜆)2 = 4𝜋2
+𝜆2  

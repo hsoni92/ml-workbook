@@ -1,0 +1,66 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+70 
+ 
+ 
+ 
+ Consider a cross-sectional view of an optical fiber having core & cladding of refractive 
+indices n1 and n2. 
+ Let the fiber be in air medium (no). The incident light while entering into the core at ‘A’ 
+makes an incident angle of ‘αi’ with the fiber-axis. 
+ In core it travels along AB & is incident at part B on cladding interface. 
+ Let αr be the angle of refraction at part ‘A’ & ‘θ’ be the angle of incidence at ‘B’. 
+ When ‘θ’ is greater than the critical angle ‘θc’, then total internal reflection takes place 
+into the core & light takes the path BD. 
+ Due to multiple total internal reflections the propagation of light ray takes place 
+through the fiber. 
+ Applying  Snell’s law at AC core-air interface :- 
+𝑠𝑖𝑛α𝑖
+𝑠𝑖𝑛α𝑟= 
+𝑛1
+𝑛𝑜 
+𝑛𝑜𝑠𝑖𝑛α𝑖= 𝑛1𝑠𝑖𝑛α𝑟           →(1) 
+ Let a normal ‘BC’ be drawn from the point ‘B’ to the fiber axis. Then from ∆ABC, we 
+get 
+α𝑟= 90° − 𝜃→(2) 
+Substitute eq - (2) in eq - (1) 
+ 𝑛𝑜𝑠𝑖𝑛α𝑖= 𝑛1𝑠𝑖𝑛 (90° −𝜃) 
+𝑛𝑜𝑠𝑖𝑛α𝑖= 𝑛1𝑐𝑜𝑠𝜃→(3) 
+ To get total internal reflection at 
+point B  
+                (Core-Classing Interface) i.e. 
+ 
+ Let the maximum angle of incidence at point A be α𝑖(max)for which
+. 
+From eqn (3), we get 
+𝑛𝑜𝑠𝑖𝑛α𝑖= 𝑛1𝑐𝑜𝑠𝜃→(4) 
+ α𝑖(max) = α𝑖,when 𝜃= 𝜃𝑐 
+𝑠𝑖𝑛 α𝑖(max) = 
+𝑛1
+𝑛𝑜𝑐𝑜𝑠𝜃𝑐→(5) 
+We know that     𝑠𝑖𝑛𝜃𝑐= 
+𝑛2
+𝑛1 
+𝐶𝑜𝑠𝜃𝑐= √(1 −𝑠𝑖𝑛𝜃𝑐
+2) = √(1 − 𝑛2
+2
+𝑛1
+2) => √𝑛1
+2 −𝑛2
+2
+𝑛1
+2
+= √(𝑛1
+2 −𝑛2
+2)
+𝑛1
+∴𝑐𝑜𝑠𝜃𝑐= √(𝑛1
+2 −𝑛2
+2)
+𝑛1
+     
+→(6) 
+ 

@@ -1,0 +1,154 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+8
+ 
+ 
+ 
+ 
+7. A Variate has the following  probability distribution 
+x 
+-3
+6 9 
+P(x)
+𝟏
+𝟔 𝟏
+𝟐
+𝟏
+𝟑
+ 
+Find𝑬(𝑿), 𝑬(𝑿𝟐)   𝒂𝐧𝐝 𝐡𝐞𝐧𝐜𝐞 𝐞𝐯𝐚𝐥𝐮𝐚𝐭𝐞 𝑬((𝟐𝑿+ 𝟏)𝟐). 
+Sol: 
+Given probability distribution of r.v X is 
+x
+-3
+6
+9
+P(x)
+1
+6 1
+2
+1
+3
+ 
+i) 
+𝐸(𝑋) = ∑
+𝑥௜𝑃௜
+௡
+௜ୀଵ
+ 
+=
+ଵ
+଺(−3) +
+ଵ
+ଶ(6) +
+ଵ
+ଷ(9) 
+= 
+ଵଵ
+ଶ 
+=5.5. 
+ii) 
+𝐸(𝑋ଶ)=∑
+𝑥௜
+ଶ𝑃௜
+௡
+௜ୀଵ
+= 
+ଵ
+଺(−3)ଶ+
+ଵ
+ଶ(6ଶ) +
+ଵ
+ଷ(9ଶ) 
+            =
+ଽଷ
+ଶ= 46.5. 
+iii) 
+𝐸(2𝑋+ 1)ଶ =𝐸(4𝑋ଶ+4X+1)  
+                       = 4E(𝑋ଶ)+4E(X)+1  
+                      =4(46.5) +4(5.5) +1 
+                      = 209. 
+8.Find the expectation of number of tosses require when a coin is tossed until head  
+appears or five tails occurs. 
+Sol: Let the random variable X be ‘number of tosses until head or five tail occurs’ 
+          then X = {1,2,3,4,5} 
+Probability of happening of 1 toss = P (Getting head in first toss) =P(H)=
+ଵ
+ଶ. 
+Probability of happening of 2 tosses = P(TH)=
+ଵ
+ଶ.
+ଵ
+ଶ=
+ଵ
+ସ. 
+Probability of happening of 3 tosses    =P(TTH)=
+ଵ
+ଶ.
+ଵ
+ଶ.
+ଵ
+ଶ=
+ଵ
+଼ 
+Probability of happening of 4 tosses=P(TTTH)=
+ଵ
+ଶ.
+ଵ
+ଶ.
+ଵ
+ଶ.
+ଵ
+ଶ=
+ଵ
+ଵ଺ 
+Similarly,we have 
+Probability of happening of 5 tosses=P (TTTTH OR TTTTT) =
+ଵ
+ଷଶ+
+ଵ
+ଷଶ=
+ଵ
+ଵ଺. 
+ 
+Probability distribution of X is 
+ 
+ 
+ 
+            Expected of number of tosses require when coin is tossed until head appears  
+                or five tails occurs is 
+                       𝐸(𝑋) = ෍𝑥௜𝑝௜
+௡
+௜ୀଵ
+ 
+=
+ଵ
+ଶ(1) +
+ଵ
+ସ(2) +
+ଵ
+଼(3) +
+ଵ
+ଵ଺(4) +
+ଵ
+ଵ଺(5) = 1.9375≅ 2 tosses. 
+ 
+x
+1
+2
+3
+4
+5
+P(x)
+1
+2
+1
+4
+1
+8
+1
+16
+1
+16 

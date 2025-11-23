@@ -1,0 +1,55 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+63 
+ 
+ 
+ 
+ 
+The CO2 laser produces a beam of infrared light with the principle wavelength bands centering 
+around 9.6 and  10.6 µm. 
+Principle: The principle of carbon di oxide laser is transition between vibrational states of the 
+same electronic states by achieving population inversion between these states.  
+For the laser action two points are important ,one is the population inversion  between the two 
+levels  and second increased density of the incident radiation. 
+Vibrational states in co2 molecules:  
+A carbon dioxide molecule has a carbon atom at the centre with two oxygen atoms attached, 
+one at both sides. Such a molecule exhibits three independent modes of vibrations. They are 
+a) Symmetric stretching mode. 
+b) Bending mode 
+c) Asymmetric stretching mode. 
+ a) Symmetric stretching mode :In this mode of vibration, carbon atoms are at rest and both 
+oxygen atoms vibrate simultaneously 
+along the axis of the molecule departing 
+or approaching the fixed carbon atoms 
+ 
+b)Bending mode: 
+  In this mode of vibration, oxygen 
+atoms 
+and 
+carbon 
+atoms 
+vibrate 
+perpendicular to molecular axis. 
+. 
+ 
+c)Asymmetric Stretching Mode : 
+In this mode of vibration, oxygen atoms 
+and carbon atoms vibrate asymmetrically, 
+i.e.,   oxygen atoms move in one 
+direction while carbon atoms in the other 
+direc 
+ 
+Consturction: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 

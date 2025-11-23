@@ -1,0 +1,120 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+66
+ 
+ 
+ 
+S.D : S = h ට∑௙ௗమ
+ே
+− ቀ
+∑௙ௗ
+ேቁ
+ଶ
+ = 5. ටଵ଺ସ
+ଵ଴଴− ቀ
+ଵ଺
+ଵ଴଴ቁ
+ଶ
+  = 6.35 
+i) 
+Null Hypothesis 𝐻଴ : The sample is drawn from population with mean 𝜇 
+ii) 
+i.e., 𝐻଴ : 𝜇  =  30.5 years  
+iii) 
+Alternative Hypothesis 𝐻ଵ : 𝜇< 30.5 ( Left one –tailed test ) 
+iv) 
+Level of significance :𝛼= 0.05   (𝑍ఈ = 1.645 ) 
+v) 
+Test Statistic : 𝑍௖௔௟= 
+௫̅ି ఓ
+഑
+√೙
+   =  
+ଶ଼.଼ିଷ.ହ
+ల.యఱ
+√భబబ
+   = − 2.677 
+vi) 
+Conclusion: Since |𝑍௖௔௟| 𝑣𝑎𝑙𝑢𝑒 >𝑍ఈvalue , we reject  𝐻଴  
+i.e., the sample is not drawn from the population with 𝜇  = 30.5 years. 
+ 
+5. An ambulance service claims that it takes on the average less than 10 minutes to reach 
+its destination in emergency calls . A sample of 36 calls has a mean of 11 minutes and 
+the variance of 16 minutes .Test the claim at 0.05 los? 
+Sol : Given n = 36 , 𝑥̅ =11 , 𝜇  = 10 and 𝜎 = √16 = 4  
+i) 
+Null Hypothesis 𝐻଴ : 𝜇  =  10  
+ii) 
+Alternative Hypothesis 𝐻ଵ : 𝜇< 10 ( Left one –tailed test ) 
+iii) 
+Level of significance :𝛼= 0.05   (𝑍ఈ = 1.645 ) 
+iv) 
+Test Statistic : 𝑍௖௔௟= 
+௫̅ି ఓ
+഑
+√೙
+   =  
+ଵଵିଵ଴
+ర
+√యల
+   = 
+଺
+ସ = 1.5 
+v) 
+Conclusion: Since |𝑍௖௔௟| 𝑣𝑎𝑙𝑢𝑒 <𝑍ఈvalue , we accept  𝐻଴  
+ 
+6. The means of two large samples of sizes 1000 and 2000 members are 67.5 inches and 
+68 inches respectively . Can the samples be regarded as drawn from the same 
+population of S.D 2.5 inches. 
+Sol: Let 𝜇ଵ and 𝜇ଶ be the means of the two populations  
+Given 𝑛ଵ = 1000 ,𝑛ଶ = 2000 and 𝑥̅ଵ = 67.5 inches , 𝑥̅ଶ = 68 inches  
+Population S.D, 𝜎 = 2.5 inches 
+i) 
+Null Hypothesis 𝐻଴ :The samples have been drawn from the same population of S.D 
+2.5 inches 
+i.e., 𝐻଴ : 𝜇ଵ = 𝜇ଶ 
+ii) 
+Alternative Hypothesis 𝐻ଵ :𝜇ଵ≠𝜇ଶ( Two – Tailed test) 
+iii) 
+Level of significance :𝛼= 0.05   (𝑍ఈ = 1.96 ) 
+iv) 
+Test Statistic : 𝑍௖௔௟=  
+௑തభି௑തమ
+ටభ
+೙భశభ
+೙మ
+഑
+  =  
+଺଻.ହି଺଼
+ට(ଶ.ହ)మቀ
+భ
+భబబబశ
+భ
+మబబబቁ   = 
+ି଴.ହ
+଴.଴ଽ଺଼ = -5.16 
+v) 
+Conclusion: Since |𝑍௖௔௟| 𝑣𝑎𝑙𝑢𝑒 >𝑍ఈvalue , we reject  𝐻଴  
+Hence , we conclude that the samples are not drawn from the same population of S.D 
+2.5 inches. 
+ 
+7. Samples of students were drawn from two universities and from their weights in 
+kilograms , mean and standard deviations are calculated and shown below. Make a 
+large sample test to test the significance of the difference between the means. 
+ 
+Mean 
+S .D 
+Size of the sample 
+University A 
+55 
+10 
+400 
+University B 
+57 
+15 
+100 
+ 
+Sol: Let 𝜇ଵ and 𝜇ଶ be the means of the two populations  
+Given 𝑛ଵ = 400 ,𝑛ଶ = 100 and 𝑥̅ଵ = 55 kgs , 𝑥̅ଶ = 57 kgs  

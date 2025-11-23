@@ -1,0 +1,96 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+23
+ 
+ 
+ 
+POISSON DISTRIBUTION 
+ A random variable ‘X’ follows Poisson distribution if it assumes only non-negative values  with 
+probability mass function is given by 
+𝑃(𝑥= 𝑟) = 𝑃(𝑟; 𝜆) = ቐ
+𝑒ିఒ𝜆௥
+𝑟!
+ 𝑓𝑜𝑟
+𝑦= 0,1, … (𝜆> 0)
+0,
+𝑜𝑡ℎ𝑒𝑟𝑤𝑖𝑠𝑒
+ 
+Conditions For Poisson Distribution 
+1. The number of trials are very large (infinite) 
+2. The probability of occurrence of an event is very small (𝜆= 𝑛𝑝) 
+3. 𝜆= 𝑛𝑝= 𝑓𝑖𝑛𝑖𝑡𝑒 
+ Examples:  
+1. The number of printing mistakes per page in a large text 
+2. The number of telephone calls per minute at a switch board 
+3. The number of defective items manufactured by a company. 
+Recurrence Relation 
+  𝑃(𝑟+ 1) =
+௘షഊఒೝశభ
+(௥ାଵ)! -------(1) 
+𝑃(𝑟) =
+௘షഊఒೝ
+(௥)! -------(2) 
+1
+2 = 𝑃(𝑟+ 1)
+𝑃(𝑟)
+= 𝑒ିఒ𝜆ଶ. 𝜆
+(𝑟+ 1)𝑟! 𝑋
+𝑟!
+𝑒ିఒ𝜆ଶ 
+𝑃(𝑟+ 1) = ൬
+𝜆
+𝑟+ 1൰𝑃(𝑟) 𝑓𝑜𝑟 𝑟= 0,1,2 −−−− 
+Problems 
+1.Using Recurrence relation find probability when x=0,1,2,3,4,5, if mean of P.D is 3. 
+Sol: We have 
+         𝑃(𝑟+ 1) = ቀ
+ఒ
+௥ାଵቁ𝑃(𝑟) 𝑓𝑜𝑟 𝑟= 0,1,2 −−−−(1) 
+Given𝜆= 3 
+        𝑃(0) =
+௘షయఒబ
+(଴)!  = 𝑒ିଷ  [ by definition of Poisson distribution ] 
+From (1), 
+For 𝑟= 0 , 𝑃(1) = ቀ
+ଷ
+଴ାଵቁ𝑃(0) =3 𝑒ିଷ 
+For 𝑟= 1 , 𝑃(2) = ቀ
+ଷ
+ଵାଵቁ𝑃(0) =
+ଷ
+ଶ 𝑒ିଷ 
+For 𝑟= 2 , 𝑃(3) = ቀ
+ଷ
+ଶାଵቁ𝑃(0) = 𝑒ିଷ 
+For 𝑟= 3 , 𝑃(4) = ቀ
+ଷ
+ଷାଵቁ𝑃(0) =
+ଷ
+ସ𝑒ିଷ 
+For 𝑟= 4 , 𝑃(5) = ቀ
+ଷ
+ସାଵቁ𝑃(0) =
+ଷ
+ ହ 𝑒ିଷ. 
+ 
+2.If X is a random variable such that 𝟑𝑷(𝑿= 𝟒) =
+𝑷(𝑿ୀ𝟐)
+𝟐
++ 𝑷(𝑿= 𝟎). 
+Find mean, 𝑷(𝑿≤𝟐). 
+Sol: Given3𝑃(𝑋= 4) =
+௉(௑ୀଶ)
+ଶ
++ 𝑃(𝑋= 0)…..(1) 
+Since X is a Poisson variable,𝑃(𝑥= 𝑟) =
+௘షഊఒೝ
+௥!  
+∴3 𝑒ିఒ𝜆ସ
+4!
+= 𝑒ିఒ𝜆ଶ
+(2)2! + 𝑒ିఒ𝜆଴
+0!
+ 
+Solving it we get 𝜆ସ−2𝜆ଶ−4 = 0 

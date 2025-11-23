@@ -1,0 +1,144 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+15 
+ 
+ 
+ 
+then,       
+2
+2
+pathdifference
+t
+
+
+
+ 
+At the point of contact t =0 the path difference is λ/2, i.e., the reflected light at the point 
+of contact suffers phase change of π. Then the incident and reflected rays are out of phase and 
+interface destructively. Hence the central spot is dark. 
+The condition for the bright ring is  2
+2
+t
+n
+
+
+
+
+ 
+2
+(2
+1) 2
+t
+n
+
+
+
+where n=1, 2, 3….. 
+                    The condition for dark ring is 2
+(2
+1)
+2
+2
+t
+n
+
+
+
+
+
+ 
+2t
+n
+
+where n=0, 1, 2, 3…… 
+Theory: 
+To find the diameters of dark and bright rings, let ‘L’ be the 
+lens placed on a glass plate P. The convex surface of the lens is the 
+part of spherical surface with centre at ‘C’. Let R be the radius of 
+curvature and r be the radius of Newton’s ring corresponding to the 
+film thickness‘t’.  
+From the property of a circle, 
+NA NB
+NO ND
+
+
+
+ 
+
+
+2
+r r
+t
+R
+t
+
+
+ 
+2
+2
+2
+r
+Rt
+t
+
+
+ 
+where R is the radius of curvature of plano lens and‘t’ is the maximum thickness of air film 
+ 
+As ‘t’ is small, r2 will be negligible,          
+2
+2
+r
+Rt
+
+ 
+2
+2
+r
+t
+R
+
+ 
+                  Condition for bright ring is,          
+
+
+2
+2
+1 2
+t
+n
+
+
+
+ 
+
+
+2
+2
+2
+1
+2
+2
+r
+n
+R
+
+
+
+ 
+
+
+2
+2
+1
+2
+n
+R
+r
+
+
+
+ 

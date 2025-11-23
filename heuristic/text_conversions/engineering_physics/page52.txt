@@ -1,0 +1,116 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+46 
+ 
+ 
+𝜇𝐵=  −𝑒ℎ
+ 4𝜋m 
+ Bhormagneton 
+= 1.6 × 10−19 × 6.626 × 10−34
+4 × 3.14 × 9.1 × 10−31
+= 9.27 × 10−34A –  m 
+  
+ 
+ 
+ 
+Here – sign indicates that magnetic moment is anti-parallel to the angular momentum L. 
+ 
+ 
+CLASSIFICATION OF MAGNETIC MATERIAL: 
+Depending on the direction and magnitude of magnetization and also the effect of temperature 
+on magnetic properties, all magnetic materials are classified into dia ,para and ferro 
+materials.Depending upon the spin orientation of the electrons, ferro magnetic materials are 
+classified into two types. They are 
+ 
+ 
+ 
+ 
+ 
+ 
+            
+a.Antiferro magnetic material. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+b. 
+Ferrimagnetic materials. 
+ 
+PROPERTY 
+DIA MAGNETIC 
+SUBSTANCES 
+PARA MAGNETIC 
+SUBSTANCES 
+FERRO MAGNETIC 
+SUBSTANCES 
+Defination 
+The 
+substance 
+in 
+which the resultant 
+magnetic moment of 
+individual atoms is 
+zero. 
+The 
+substance 
+in 
+which the resultant 
+magnetic moment of 
+individual atoms is 
+not zero. 
+The substance in which 
+the resultant magnetic  
+moments of individual 
+atoms align themselves  
+in parallel by giving rise 
+to 
+spontaneous 
+magnetization 
+Cause 
+Orbital motion of 
+electrons. 
+Spin motion of 
+electrons. 
+Formation of domains. 
+Susceptibility
+(𝝌) 
+Low and negative 
+Low and positive. 
+High and positive. 
+𝝌 depend on T 
+Does not depend on T. 
+except Bi at low T. 
+χ =
+𝐶
+𝑇   (curie law) 
+c is curie constant. 
+𝜒=
+𝐶
+𝑇−𝑇𝑐 : 𝑇> 𝑇𝐶 (curie 
+wises law) 
+Tc is curie temperature. 
+Relative 
+permeability 
+(µr) 
+<1 
+>1 
+≫ 1 
+spin alignment 
+No spin alignment is 
+present. 
+All spins or magnetic 
+moments 
+are 
+randomly oriented. 
+ 
+All spins or magnetic 
+moments 
+are 
+orderly 
+oriented. 

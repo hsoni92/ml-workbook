@@ -1,0 +1,179 @@
+Galvanometer as an Ammeter:
+i
+ig G
+S
+i −ig
+i
+igG = (i −ig)S
+Galvanometer as a Voltmeter:
+A ig
+R
+G
+↑
+B
+VAB = ig(R + G)
+Charging of capacitors:
+R
+C
+V
+q(t) = CV
+h
+1 −e−
+t
+RC
+i
+Discharging of capacitors: q(t) = q0e−
+t
+RC
+C
+q(t)
+R
+Time constant in RC circuit: τ = RC
+Peltier eﬀect: emf e = ∆H
+∆Q =
+Peltier heat
+charge transferred.
+Seeback eﬀect:
+T0
+Tn
+Ti
+T
+e
+1. Thermo-emf: e = aT + 1
+2bT 2
+2. Thermoelectric power: de/dt = a + bT.
+3. Neutral temp.: Tn = −a/b.
+4. Inversion temp.: Ti = −2a/b.
+Thomson eﬀect: emf e = ∆H
+∆Q =
+Thomson heat
+charge transferred = σ∆T.
+Faraday’s law of electrolysis: The mass deposited is
+m = Zit = 1
+F Eit
+where i is current, t is time, Z is electrochemical equiv-
+alent, E is chemical equivalent, and F = 96485 C/g is
+Faraday constant.
+5.5: Magnetism
+Lorentz force on a moving charge: ⃗F = q⃗v × ⃗B + q ⃗E
+Charged particle in a uniform magnetic ﬁeld:
+r
+v
+q
+⊗
+⃗B
+r = mv
+qB , T = 2πm
+qB
+Force on a current carrying wire:
+i
+⃗l
+⃗B
+⃗F
+⃗F = i ⃗l × ⃗B
+Magnetic moment of a current loop (dipole):
+i
+⃗µ
+⃗A
+⃗µ = i ⃗A
+Torque on a magnetic dipole placed in ⃗B: ⃗τ = ⃗µ× ⃗B
+Energy of a magnetic dipole placed in ⃗B:
+U = −⃗µ · ⃗B
+Hall eﬀect: Vw =
+Bi
+ned
+i
+l
+d
+w
+x
+y
+z
+⃗B
+5.6: Magnetic Field due to Current
+Biot-Savart law: d ⃗B = µ0
+4π
+i d⃗l×⃗r
+r3
+i
+d⃗l
+θ
+⃗r
+⊗⃗B
+Field due to a straight conductor:
+i
+d
+⊗⃗B
+θ1
+θ2
+B = µ0i
+4πd(cos θ1 −cos θ2)
+Field due to an inﬁnite straight wire: B = µ0i
+2πd
+Force between parallel wires:
+dF
+dl = µ0i1i2
+2πd
+i1
+i2
+d
+Field on the axis of a ring:
+a
+⃗B
+P
+d
+i
+BP =
+µ0ia2
+2(a2+d2)3/2
+Field at the centre of an arc: B = µ0iθ
+4πa
+⊙
+⃗B
+i
+a
+a
+θ
+Field at the centre of a ring: B = µ0i
+2a
+Ampere’s law:
+H ⃗B · d⃗l = µ0Iin
+Field inside a solenoid: B = µ0ni, n = N
+l
+l
+Field inside a toroid: B = µ0Ni
+2πr
+r
+Field of a bar magnet:
+⃗B1
+⃗B2
+d
+d
+N
+S
+B1 = µ0
+4π
+2M
+d3 ,
+B2 = µ0
+4π
+M
+d3
+Angle of dip: Bh = B cos δ
+B
+Bh
+Bv
+δ
+Horizontal
+Tangent galvanometer: Bh tan θ = µ0ni
+2r ,
+i = K tan θ
+Moving coil galvanometer: niAB = kθ,
+i =
+k
+nAB θ
+Time period of magnetometer: T = 2π
+q
+I
+MBh
+Permeability: ⃗B = µ ⃗H

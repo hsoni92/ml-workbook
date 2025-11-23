@@ -1,0 +1,130 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+47
+ 
+ 
+ 
+TUTORIAL QUESTIONS 
+ 
+1. The heights of mothers & daughters are given in the following table. From the 2 tables of  
+regression estimate the expected average height of daughter when the height of the mother   
+is 64.5 inches. 
+ 
+ 
+2. 
+The equations of 
+two regression lines are 7x −16y + 9 =  0 and 5y −4x −3 =  0. 
+   Find the  coefficient of correlation and the means of x& 𝑦 . 
+ 
+3. The marks obtained by 10 students in mathematics and statistics are given below. Find the      
+     coefficient of correlation between the two subjects and the two lines of regression 
+Marks in 
+mathematics
+25 
+28 
+30 
+32 
+35 
+36 
+38 
+42 
+45 
+39 
+Marks in 
+Statistics
+20 
+26 
+29 
+30 
+25 
+18 
+26 
+35 
+46 
+35 
+ 
+4. Fit a straight line Y=𝑎଴+𝑎ଵX for the following data and estimate the value of Y when         
+          X=25 
+X
+0
+5
+10
+15
+20
+Y
+7
+11
+16
+20
+26
+ 
+5. Find the rank correlation for the following indices of supply and price of an article: 
+ 
+PRICE
+80
+100
+102
+91
+100
+111
+109
+100
+99
+104
+111
+102
+98
+111
+INDEX
+124
+100
+105
+112
+102
+93
+99
+115
+123
+104
+99
+113
+121
+103
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Ht. of Mother(inches)
+62
+63
+64
+64
+65
+66
+68
+70
+Ht. of the daughter(inches)
+64
+65
+61
+69
+67
+68
+71
+65

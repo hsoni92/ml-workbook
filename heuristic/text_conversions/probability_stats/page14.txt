@@ -1,0 +1,148 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+7
+ 
+ 
+ 
+ 
+ 
+Variance = V(X)=∑x୧
+ଶp୧−μଶ 
+= k(−3)ଶ+ 0.1ଶ(−2) + k(−1)ଶ+ 2k(1) + 4(0.4) + 9(2k) 
+∴Variance = 2.86. 
+5.A random variable X has the following  probability distribution 
+ 
+ 
+ 
+ 
+Determine i) k ii) Mean iii) Variance. 
+Sol: Given probability distribution of a random variable X is 
+ 
+ 
+ 
+i) 
+Since total probability of the distribution is unity i.e, ∑
+𝑃௜= 1
+௡
+௜ୀଵ
+ 
+                    We have, 
+0 + 𝑘+ 2𝑘+ 2𝑘+ 3𝑘+ 𝑘ଶ+ 2𝑘ଶ+ 7𝑘ଶ+ 𝑘= 1 
+10𝑘ଶ+ 9𝑘−1 = 0 
+𝑘  = 1
+10 , −1 
+ 
+ 
+∴𝑘= 0.1(𝑠𝑖𝑛𝑐𝑒 𝑘> 0 𝑏𝑒𝑖𝑛𝑔 𝑃௜> 0) 
+ii) 
+Mean = 𝜇= ∑
+𝑥௜𝑃௜
+௡
+௜ୀଵ
+ 
+              =0(0) + 1(𝑘) + 2(2𝑘) + 3(2𝑘) + 4(3𝑘) + 5(𝑘ଶ) + 6(2𝑘ଶ) + 7(7𝑘ଶ+ 𝑘) 
+              = 66𝑘ଶ+ 30𝑘 
+             =66(0.01) +30(0.1) 
+             =3.66 
+∴𝜇= 3.66 
+iii) 
+Variance =𝜎ଶ=∑
+𝑥௜
+ଶ𝑝௜
+௡
+௜ୀଵ
+-𝜇ଶ 
+  =0ଶ(0) + 1ଶ(𝑘) + 2ଶ(2𝑘) + 3ଶ(2𝑘) + 4ଶ(3𝑘) + 5ଶ(𝑘ଶ) + 6ଶ(2𝑘ଶ) +
+                            7ଶ(7𝑘ଶ+ 𝑘) −3.66ଶ 
+ = 440𝑘ଶ+ 124𝑘−3.66ଶ 
+       =440(0.01) +124(0.1)-3.66ଶ 
+       =16.8-3.66ଶ=3.4044      
+                     ∴𝜎ଶ= 3.4044 
+6. A random variable X has the following probability distribution 
+ 
+ 
+ 
+ 
+    Determine i) k ii) P (1≤𝒙≤𝟓) iii) P(x>3) 
+Sol: Given probability distribution of a random variable X is 
+ 
+ 
+ 
+(i)Since total probability of the distribution is unity i.e, ∑
+𝑃௜= 1
+௡
+௜ୀଵ
+ 
+                     We have, 𝑘+ 3𝑘+ 5𝑘+ 7𝑘+ 9𝑘+ 11𝑘= 1 ⟹𝑘  =
+ଵ
+ଷ଺ 
+     ii)P (1≤𝑥≤5) = 𝑃(1) + 𝑃(2) + 𝑃(3) + 𝑃(4) + 𝑃(5) 
+                        = 𝑘+ 3𝑘+ 5𝑘+ 7𝑘+ 9𝑘 
+                        =25𝑘    =0.694. 
+    iii)𝑃(𝑥> 3)=𝑃(4) + 𝑃(5) + 𝑃(6) =  7𝑘+ 9𝑘+ 11𝑘   = 27𝑘= 0.75 
+x 
+0
+1
+2 
+3 
+4 
+5 
+6 
+7 
+P(x)
+0
+k
+2k
+2k
+3k
+𝒌𝟐
+𝟐𝒌𝟐
+𝟕𝒌𝟐+ 𝒌
+x
+0
+1
+2
+3
+4
+5
+6
+7
+P(x)
+0
+k
+2k
+2k
+3k
+𝑘ଶ
+2𝑘ଶ
+7𝑘ଶ+ 𝑘
+x 
+1
+2 
+3 
+4 
+5 
+6 
+P(x)
+k
+3k
+5k
+7k
+9k 
+11k 
+x
+1
+2
+3
+4
+5
+6
+P(x)
+k
+3k
+5k
+7k
+9k
+11k

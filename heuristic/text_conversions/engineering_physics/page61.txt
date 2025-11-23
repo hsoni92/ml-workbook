@@ -1,0 +1,59 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+55 
+ 
+ 
+ 
+EINSTEIN COEFFICIENTS & THEIR RELATIONS 
+Einstein coefficients: 
+Einstein mathematically expressed the statistical nature of the three possible radiative 
+transition routes (spontaneous emission, stimulated emission, and absorption) with the so-
+called Einstein coefficients and quantified the relations between the three processes. 
+Let N1 be the number of atoms per unit volume with energy E1 and N2 be the number of 
+atoms per unit volume with energy E2. Let ‘n’ be the number of photons per unit volume at 
+frequency ‘υ’ such that E2– E1= ℎ𝜗 Then, the energy density of photons E= ℎ𝜗 . 
+ Stimulated absoption: When the photons interact with the atoms it leads to absorption 
+transition which is called as stimulated absorption. Stimulated absorption rate depends 
+upon the number of atoms available in the lowest energy state as well as the energy 
+density photons. 
+                                    Stimulated absorption rate ∝N1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                      = B12 N1
+ 
+            Where B12 is the Einstein coefficient of stimulated absorption. 
+ Spontaneous emission: The atom in the excited state returns to ground state emitting a 
+photon of energy (E) = E2 – E1 =hν, without applying an external energy spontaneously 
+is known as spontaneous emission.The spontaneous emission rate depends up on the 
+number of atoms present in the excited state. 
+Spontaneous emission rate   N 2 
+   = A21 N 2 
+Where A21 is the Einstein coefficient of spontaneous emission. 
+ Stimulated emission: The atom in the excited state can also returns to the ground state 
+by applying external energy or inducement of photon thereby emitting two photons 
+which are having same energy as that of incident photon. This process is called as 
+stimulated emission. Stimulated emission rate depends upon the number of atoms 
+available in the excited state as well as the energy density of  incident photons. 
+                             Stimulated emission rate  N 2 
+ 
+                                                               =  B21 N 2
+ 
+          Where B21 is the Einstein coefficient of stimulated emission. 
+ 
+If the system is in equilibrium, the rates of absorption transitions (Stimulated 
+absorption) are equal to emission transitions(The rate of Spontaneous + Stimulated emission). 
+The rate of Absorption = The rate of Spontaneous + Stimulated emission  
+ 
+ 
+ 
+ 
+ 
+ 

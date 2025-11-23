@@ -1,0 +1,105 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+69
+ 
+ 
+ 
+       ii) Alternative Hypothesis 𝐻ଵ : The die is biased 
+i.e., 𝐻ଵ : P ≠ 0.33 ( Two –Tailed test) 
+       iii)  Level of Significance :𝛼= 0.05   (𝑍ఈ = 1.96 ) 
+       iv) Test Statistic :𝑍௖௔௟=
+௣ି௉
+ටುೂ
+೙
+   = 
+଴.ଷହ଻଼ି.ଷଷଷଷ
+ට(బ.యయయయ)(బ.లలలళ)
+వబబబ
+ = 4.94 
+      v)Conclusion: Since Zୡୟ୪value >Z஑value , we reject  𝐻଴  
+Hence , we conclude that  the die is biased. 
+ 
+13. In a random sample of 125 cool drinkers, 68 said they prefer thumsup to Pepsi . Test 
+the null hypothesis P = 0.5 against the alternative hypothesis hypothesis  P> 0.5? 
+Sol : Given n = 125  ,  x = 68 and p = 
+௫
+௡ = 
+଺଼
+ଵଶହ = 0.544 
+i) 
+Null Hypothesis 𝐻଴ : P = 0.5 
+ii) 
+Alternative Hypothesis 𝐻ଵ : P > 0.5( Right One Tailed test) 
+iii) 
+ Level of Significance :𝛼= 0.05   (𝑍ఈ = 1.645 ) 
+iv) 
+Test Statistic :𝑍௖௔௟=
+௣ି௉
+ටುೂ
+೙
+   = 
+଴.ହସସି଴.ହ
+ට(బ.ఱ)(బ.ఱ)
+భమఱ
+ = 0.9839 
+v) 
+Conclusion: Since Zୡୟ୪value <Z஑value , we accept  𝐻଴  
+ 
+14. A manufacturer claimed that at least 95% of the equipment which he supplied to a 
+factory conformed to specifications . An experiment of a sample of 200 piece of 
+equipment revealed that 18 were faulty .Test the claim at 5% los ? 
+Sol : Given n = 200 
+Number of pieces confirming to specifications =  200-18  = 182 
+∴ p = Proportion of pieces confirming to specification = 
+ଵ଼ଶ
+ଶ଴଴  = 0.91  
+P = Population proportion = 
+ଽହ 
+ଵ଴଴ = 0.95 
+ 
+ 
+i) 
+Null Hypothesis 𝐻଴ : P = 0.95 
+ii) 
+Alternative Hypothesis 𝐻ଵ : P < 0.95( Left One Tailed test) 
+iii) 
+ Level of Significance :𝛼= 0.05   (𝑍ఈ = -1.645 ) 
+iv) 
+Test Statistic :𝑍௖௔௟=
+௣ି௉
+ටುೂ
+೙
+   = 
+଴.ଽଵି଴.ଽହ
+ටబ.వఱ ౮ బ.బఱ
+మబబ
+ = - 2.59 
+v) 
+Conclusion: We  reject𝐻଴  
+Hence , we conclude that the manufacturer’s claim is rejected. 
+ 
+15. Among 900 people in a state 90 are found to be chapati eaters  . Construct 99% 
+confidence interval for the true proportion and also test the hypothesis for single 
+proportion ? 
+Sol: Given x = 90 , n = 900  
+∴ p = 
+௫
+௡ = 
+ଽ଴
+ଵ଴଴  = 
+ଵ
+ଵ଴ = 0.1 
+And q = 1- p= 0.9 
+Now ට
+௣௤
+௡ = ට
+(଴.ଵ)(଴.ଽ)
+ଽ଴଴
+  = 0.01 
+Confidence interval is 𝑃=  𝑝± 𝑍∝
+మ൫ඥ
+೛೜
+೙൯ 
+i.e.,   ( 0.1- 0.03 , 0.1 + 0.03 )  

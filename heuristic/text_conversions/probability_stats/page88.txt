@@ -1,0 +1,93 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+81
+ 
+ 
+ 
+Hence we conclude that the sample cannot be regarded as taken from population. 
+b) The 95% confidence limits of the mean of the population are given by 
+𝑥 ഥ± 𝑡଴.଴ହ
+ௌ
+√௡ = 53 ± 2.13 × 0.79 
+                    = 53 ± 1.6827  
+                     = 54.68 and 51.31 
+∴ 95% confidence limits are( 51.31, 54.68 ) 
+ 
+3. A random sample of 10 boys had the following I.Q’s : 70, 120 ,110, 101,88, 83,95,98,107 
+and 100. 
+a) Do these data support the assumption of a population mean I.Q of 100? 
+b) Find a reasonable range in which most of the mean I.Q values of samples of 10 
+boys lie 
+Sol: Since mean and s.d  are not given  
+We have to determine these  
+x 
+x −xത 
+(x −xത)ଶ 
+70 
+-27.2 
+739.84 
+120 
+22.8 
+519.84 
+110 
+12.8 
+163.84 
+101 
+3.8 
+14.44 
+88 
+-9.2 
+84.64 
+83 
+-14.2 
+201.64 
+95 
+-2.2 
+4.84 
+98 
+0.8 
+0.64 
+107 
+9.8 
+96.04 
+100 
+2.8 
+7.84 
+෍𝑥= 972 
+ 
+෍(x −xത)ଶ
+= 1833.60 
+ 
+Mean ,𝑥̅ = 
+∑௫
+௡ = 
+ଽ଻ଶ
+ଵ଴ = 97.2 and  
+    𝑆ଶ = 
+ଵ
+௡ିଵ∑(x −xത)ଶ = 
+ଵ଼ଷଷ.଺
+ଽ
+ 
+∴ S = √203.73   = 14.27 
+i) 
+Null Hypothesis 𝐻଴ : 𝜇 = 100 
+ii) 
+Alternative Hypothesis 𝐻ଵ : 𝜇≠100 (Two tailed test ) 
+iii) 
+Level of significance :𝛼= 0.05   
+t  tabulated value  with 9 degrees of freedom for two tailed test is 2.26 
+iv) 
+Test Statistic : 𝑡௖௔௟= 
+௫̅ି ఓ
+ೄ
+√೙
+   =  
+ଽ଻.ଶିଵ଴଴
+భర.మళ
+√భబ
+   = − 0.62 
+v) 
+Conclusion: Since |𝑡௖௔௟| 𝑣𝑎𝑙𝑢𝑒 <𝑡ఈvalue , we accept  𝐻଴  

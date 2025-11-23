@@ -1,0 +1,114 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+67
+ 
+ 
+ 
+𝜎ଵ = 10  and𝜎ଶ = 15  
+i) 
+Null Hypothesis 𝐻଴ : 𝜇ଵ =𝜇ଶ 
+ii) 
+Alternative Hypothesis 𝐻ଵ :𝜇ଵ≠𝜇ଶ( Two – Tailed test) 
+iii) 
+Level of significance :𝛼= 0.05   (𝑍ఈ = 1.96 ) 
+iv) 
+Test Statistic : 𝑍௖௔௟=  
+௫̅భି ௫̅మ
+ට഑భమ
+೙భା഑మమ
+೙మ
+  = 
+ହହି ହ଻
+ටభబమ
+రబబାభఱమ
+భబబ
+    = 
+ିଶ
+ටభ
+రାవ
+ర
+ = -1.26 
+v) 
+Conclusion: Since |𝑍௖௔௟| 𝑣𝑎𝑙𝑢𝑒 <𝑍ఈvalue , we accept  𝐻଴  
+Hence , we conclude that  there is no significant difference between the means 
+ 
+8. The average marks scored by 32 boys is 72 with a S.D of 8 . While that for 36 girls is 
+70 with a S.D of 6. Does this data indicate that the boys perform better than girls at 
+5% los ? 
+Sol: Let 𝜇ଵ and 𝜇ଶ be the means of the two populations  
+Given 𝑛ଵ = 32 ,𝑛ଶ = 36 and 𝑥̅ଵ =  72 , 𝑥̅ଶ = 70 
+𝜎ଵ = 8  and𝜎ଶ = 6  
+i) 
+Null Hypothesis 𝐻଴ : 𝜇ଵ =𝜇ଶ 
+ii) 
+Alternative Hypothesis 𝐻ଵ :𝜇ଵ>𝜇ଶ( Right One Tailed test) 
+iii) 
+Level of significance :𝛼= 0.05   (𝑍ఈ = 1.645 ) 
+iv) 
+Test Statistic : 𝑍௖௔௟=  
+௫̅భି ௫̅మ
+ට഑భమ
+೙భା഑మమ
+೙మ
+  = 
+଻ଶି ଻଴
+ටఴమ
+యమାలమ
+యల
+    = 
+ଶ
+√ଶାଵ = 1.1547 
+v) 
+Conclusion: Since |𝑍௖௔௟| 𝑣𝑎𝑙𝑢𝑒 <𝑍ఈvalue , we accept  𝐻଴  
+Hence , we conclude that  the performance of boys and girls is the same 
+ 
+9. A sample of the height of 6400 Englishmen has a mean of 67.85 inches and a S.D of 
+2.56 inches while another sample of heights of 1600 Austrians has a mean of 68.55 
+inches and S.D of 2.52 inches. Do the data indicate that Austrians are on the average 
+taller than the Englishmen ? (Use 𝜶 𝒂𝒔 𝟎. 𝟎𝟏) 
+Sol : Let 𝜇ଵ and 𝜇ଶ be the means of the two populations  
+Given 𝑛ଵ = 6400 ,𝑛ଶ = 1600 and 𝑥̅ଵ =  67.85 , 𝑥̅ଶ = 68.55 
+𝜎ଵ = 2.56  and𝜎ଶ = 2.52  
+i) 
+Null Hypothesis 𝐻଴ : 𝜇ଵ =𝜇ଶ 
+ii) 
+Alternative Hypothesis 𝐻ଵ :𝜇ଵ<𝜇ଶ( Left One Tailed test) 
+iii) 
+Level of significance :𝛼= 0.01   (𝑍ఈ = - 2.33 ) 
+iv) 
+Test Statistic : 𝑍௖௔௟=  
+௫̅భି ௫̅మ
+ට഑భమ
+೙భା഑మమ
+೙మ
+  = 
+଺଻.଼ହି ଺଼.ହହ
+ටమ.ఱలమ
+లరబబାమ.ఱమమ
+భలబబ
+ 
+= 67.85 − 68.55
+ට
+଺.ହହଷ଺
+଺ସ଴଴+
+଺.ଷହ
+ଵ଺଴଴
+ 
+ = 
+ି ଴.଻
+√଴.଴଴ଵା଴.଴଴ସ = 
+ି ଴.଻
+଴.଴଻଴଻ - 9.9 
+v) 
+Conclusion: Since |Z ୡୟ୪| value >Z஑value , we reject  𝐻଴  
+Hence , we conclude that  Australians are taller than Englishmen. 
+ 
+10. At a certain large university a sociologist speculates that male students spend 
+considerably more money on junk food than female students. To test her hypothesis 
+the sociologist randomly selects from records the names of 200 students . Of thee , 
+125 are men and 75 are women . The mean of the average amount spent on junk food 
+per week by the men is Rs. 400 and S.D is 100. For the women the sample mean is Rs. 
+450 and S.D is 150. Test the hypothesis at 5 % los ? 
+Sol: Let 𝜇ଵ and 𝜇ଶ be the means of the two populations  

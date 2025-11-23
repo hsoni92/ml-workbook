@@ -1,0 +1,79 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+27 
+ 
+ 
+g(𝐸)𝑑𝐸= 𝜋
+2 (8𝑚𝐿2
+ℎ2 )  𝐸𝑑𝐸 × 1
+2 (8𝑚𝐿2
+ℎ2 )
+3
+2 dE
+E
+1 2
+⁄  
+g(𝐸)𝑑𝐸= 𝜋
+4 (8𝑚𝐿2
+ℎ2 )
+3
+2𝐸
+1
+2𝑑𝐸   … … … (6) 
+According to Pauli’s Exclusion Principle, two electrons of opposite spin can occupy each 
+energy state  
+Equation (6) should be multiplied by 2  
+g(𝐸)𝑑𝐸= 2 × 𝜋
+4 (8𝑚𝐿2
+ℎ2 )
+3
+2𝐸
+1
+2𝑑𝐸 
+After mathematical simplification, we get g 
+(𝐸)𝑑𝐸= 4𝜋
+ℎ3  (2𝑚)
+3
+2E
+1
+2L3𝑑𝐸 
+The density of energy states g(E) dE  per unit volume is given by, 
+ 
+g(𝐸)𝑑𝐸= 4𝜋
+ℎ3  (2𝑚)
+3
+2E
+1
+2𝑑𝐸       ∵ L3 = 1 
+Bloch Theorem:  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+According to free electron model, a conduction electron in metal experiences constant 
+potential. But in real crystal, there exists a periodic arrangement of positively charged ions 
+through which the electrons move. As a consequence, the potential experienced by electrons is 
+not constant but it varies with the periodicity of the lattice.  In zone theory, as per Bloch, 
+potential energy of electrons considered as varying potential with respect to lattice ‘a’. 
+ 
+ 
+ 
+ 
+ 
+    Fig: Variation of potential energy in a periodic lattice. 
+Let us examine one dimensional lattice as shown in figure. It consists of array of ionic cores 
+along X-axis. A plot of potential V as a function of its position is shown in figure. 
+From graph: 
+At nuclei or positive ion cores, the potential energy of electron is minimum and in-between 
+nuclei, the P.E.is considered as maximum w.r.to. Lattice constant ‘a’. 
+This periodic potential V(x) changes with the help of lattice constant a, 𝑉(𝑥) = 𝑉(𝑥+ 𝑎) (‘a’ 
+is the periodicity of the lattice) 
+ 
+ 

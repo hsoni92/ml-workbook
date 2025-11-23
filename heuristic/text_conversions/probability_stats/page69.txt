@@ -1,0 +1,96 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+62
+ 
+ 
+ 
+7 
+10,18 
+28 
+14 
+8 
+10,13 
+23 
+11.5 
+9 
+10,24 
+34 
+17 
+10 
+14,18 
+32 
+16 
+11 
+14,13 
+27 
+13.5 
+12 
+14,24 
+38 
+19 
+13 
+18,13 
+31 
+15.5 
+14 
+18,24 
+42 
+21 
+15 
+13,24 
+37 
+18.5 
+Total 
+ 
+ 
+210 
+ 
+∴ Mean of sample means 𝜇௫̅ = 
+ଶଵ଴
+ଵହ = 14 
+d) The variance of sampling distribution of means 
+𝜎௫̅
+ଶ 
+= 
+ଵ
+ଵହ[(7.5 −14)ଶ+ (9.5 −14)ଶ+ (11.5 −14)ଶ+ (9 −14)ଶ+ (14.5 −14)ଶ+
+(12 −14)ଶ+ (14 −14)ଶ+ (11.5 −14)ଶ+ (17 −14)ଶ+ (16 −14)ଶ+ (13.5 −
+14)ଶ+ (19 −14)ଶ+ (15.5 −14)ଶ+ (21 −14)ଶ+ (18.5 −14)ଶ] 
+ 
+= 
+ଵ
+ଵହ[42.25 + 20.25 + 6.25 + 25 + 0.25 + 4 + 0 + 6.25 + 9 + 4 + 0.25 + 25 +
+2.25 + 49 + 2.025] 
+= 
+ଶଵସ
+ଵହ= 14.2666 
+∴ Standard deviation of sampling distribution of means is 𝜎௫̅√14.2666 = 3.78 
+Large Samples: Let a random sample of size n>30 is defined as large sample. 
+ 
+Applications of Large Samples 
+Test of Significance of a Single Mean 
+Let a random sample of size n,  x ഥbe the mean of the sample and 𝜇 be the population mean. 
+1. Null hypothesis: 𝐻଴: There is no significant difference in the given population mean value 
+say ‘𝜇଴
+ᇱ. 
+i.e𝐻଴: µ = 𝜇଴ 
+2. Alternative hypothesis: 𝐻ଵ :There is some significant difference in the given population mean 
+value. 
+i.ea)𝐻ଵ  : µ ≠µ଴  (Two –tailed) 
+b)𝐻ଵ  : µ> µ଴  (Right one tailed) 
+c) 𝐻ଵ  : µ> µ଴  (Left one tailed) 
+3. Level of significance: Set the LOS α 
+4. Test Statistic: 𝑧௖௔௟=
+௫̅ିµబ
+√௡
+഑/
+ (OR)  𝑧௖௔௟=
+௫̅ିµబ
+√௡
+ೞ/
+ 
+5. Decision /conclusion : Ifzୡୟ୪value < 𝑧∝value,  accept 𝐻଴ otherwise reject 𝐻଴ 
+           
+ 

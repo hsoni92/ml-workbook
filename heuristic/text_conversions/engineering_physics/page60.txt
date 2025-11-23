@@ -1,0 +1,59 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+54 
+ 
+ 
+ 
+These photons have same phase and it follows coherence. This phenomenon is called 
+stimulated emission 
+ 
+ 
+ 
+ 
+ 
+ 
+Stimulated emission rate depends upon the number of atoms available in the 
+excitedstate as well as the energy density of photons. 
+Comparison between Spontaneous and Stimulated emission: 
+ 
+ Spontaneous emission 
+ 
+Stimulated emission 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1. 
+The  spontaneous emission Was 1. The stimulated emission 
+was 
+ Postulated by Bohr. 
+Postulated by Einstein. 
+ 
+2. Additional  photons  are not required 2. Additional  photons  are  required  in 
+ in spontaneous emission. 
+Stimulated emission. 
+ 
+3. One Photon is emitted in 
+3. Two photons are emitted in 
+ spontaneous emission. 
+stimulated emission. 
+4. The emitted radiation is incoherent. 
+5. The emitted radiation is coherent. 
+5. The emitted radiation is less intense. 6. The emitted radiation is high intense. 
+Light Amplification: 
+Light amplification requires stimulated emission exclusively. In practice, absorption 
+and spontaneous emission always occur together with stimulated emission. The laser operation 
+is achieved when stimulated emission exceeds the other two processes due to its higher 
+transitions rates of atomic energy levels. 
+ 
+ 
+ 
+ 
+ 
+ 

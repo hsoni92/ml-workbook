@@ -1,0 +1,57 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+79
+ 
+ 
+ 
+ 
+Applications of  𝒕 – Test 
+1. To test the significance of the sample mean, When population variance is not given: 
+        Let 𝑥̅ be the mean of the sample and n be the size of the sample ‘𝜎’ be the standard deviation 
+of the population and 𝜇 be the mean of the population. 
+      Then the student 𝑡− distribution is defined by the statistic 
+𝑡=
+௫̅ିఓ
+ೞ
+√೙షభ
+  if s is given directly 
+If ′𝜎′ is unknown, then  𝑡=
+௑തିఓ
+ௌ
+√௡
+ൗ
+where 
+𝑆ଶ= ෍(𝑋௜−𝑋ത)ଶ
+𝑛−1
+ 
+Note ∶Confidence limits for mean μ = xത± t஑(S
+√n
+ൗ
+) or μ = xത± t஑(S
+√n −1
+ൗ
+) 
+𝟐.  To test the significance of the difference between means of the two independent samples : 
+To test the significant difference between the sample means 𝑥̅ଵ and 𝑥̅ଶof two independent samples 
+of sizes n1 and n2, with the same variance . 
+ 
+We use statistic 
+ 
+𝑡=
+௫̅భି௫̅మ
+ටௌమቀభ
+೙భାభ
+೙మቁ
+-------(1) where 
+𝑥̅ଵ=
+∑௫భ
+௡భ, 𝑥̅ଶ=
+∑௫మ
+௡మ  and 
+𝑆ଶ=
+ଵ
+௡భା௡మିଶ [∑(𝑥ଵ−𝑥ଵ
+തതത)ଶ+ ∑(𝑥ଶ−𝑥ଶ
+തതത)ଶ 

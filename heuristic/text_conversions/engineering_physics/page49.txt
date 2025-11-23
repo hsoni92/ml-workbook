@@ -1,0 +1,170 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+43 
+ 
+ 
+area A, then flux density is 
+ 
+ 
+ 
+ 
+ 𝐵=
+∅
+𝐴 =
+𝐹
+𝑚𝐨𝐫∅= 𝐁 . 𝐀 = BA cos θ.  
+ 
+ 
+ 
+ 
+ 
+ 
+It is a vector quantity.  
+Its SI unit is weber m2ortesla
+⁄
+ and CGS unit is Gauss(= 𝑚𝑎𝑥𝑤𝑒𝑙𝑙𝑐𝑚2
+⁄
+). 
+1Tesla= 104Gauss. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Magnetisingfield(force) or Magnetic intensity(H): The force acting on a unit north pole 
+placed at the point. It is independent of the medium.  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+𝐵= 𝜇𝐻 
+ 
+ 
+                                                        
+It is vector quantity. Its SI unit is ampere m.
+⁄
+ 
+ 
+ 
+ 
+ Permeability: It`s ability to allow the magnetic lines of force to pass through it or to allow 
+itself to be influenced by magnetic field (𝜇).  
+ 
+ 
+ 
+ 
+Relative magnetic permeability(𝝁𝒓):The ratio of its absolute magnetic permeability(µ) of the 
+material to the  magnetic permeability of free space (µo). 
+ 
+ 
+ 
+ 
+  
+𝜇𝑟= 𝜇
+𝜇0
+ 
+ It is purely a number, it has no units.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+     The permeability of free space or vacuum isµ0 = 4π × 10−7 H m
+⁄
+. 
+ 
+ 
+Magnetization: The ability of a material to get magnetized when placed in an external 
+magnetic field is called magnetization.  
+ 
+ 
+ 
+ 
+ 
+ 
+                     
+It is measured by a quantity called intensity of magnetization(I).  
+ 
+ 
+ 
+ 
+The net magnetic dipole moment acquired by a substance per unit volume is 
+defined as intensity of magnetization (I). 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+I = net magnetic dipole moment of material
+Volume of the material
+A m
+⁄
+ 
+It is vector quantity. Its SI unit is  A m
+⁄
+ .  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Relation between B,H and I: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The flux density B in a material due a to magnetizing force H, as the sum of the flux density 
+𝐵0 in vacuum produced by magnetizing force and flux density 𝐵𝑚 due to magnetization of 
+material. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Therefore                                𝐵= 𝐵0 + 𝐵𝑚  
+ 
+ 
+ 
+ 
+Also we know that  𝐵0 = 𝜇0𝐻𝑎𝑛𝑑𝐵𝑚= 𝜇0I 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Therefore,                        𝐵= 𝜇0𝐻+ 𝜇0I 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

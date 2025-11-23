@@ -1,0 +1,64 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+14 
+ 
+ 
+ 
+2
+cos
+t
+r
+n
+
+
+
+where n=0, 1, 2………. 
+   Depending on the conditions the interference pattern consists of bright and dark fringes. 
+Newton’s Rings: 
+Newton’s rings are one of the best examples for the interference in a non uniform thin 
+film. When a plano convex lens with its convex surface is placed on a plane glass plate, an air 
+film of increasing thickness is formed between the two. The thickness of the film at the point 
+of contact is zero. 
+If monochromatic light is allowed to fall normally and the film is viewed in the 
+reflected light, alternate dark and bright rings concentric around 
+the point of contact between the lens and glass plate are seen. 
+These circular rings were discovered by Newton and are called 
+as Newton’s rings.   
+The plano-convex lens (L) of large radius of curvature is 
+placed with its convex surface on a plane glass plate (P). The 
+lens makes the contact with the plate at ‘O’. The 
+monochromatic light falls on a glass plate G held at an angle of 
+450 with the vertical. The glass plate G reflects normally a part 
+of the incident light towards the air film enclosed by the lens L 
+and the glass plate P. A part of the light is reflected by the 
+curved surface of the lens L and a part is transmitted which is reflected back from the plane 
+surface of the plate. These reflected rays interfere and give rise to an interference pattern in the 
+form of circular rings. These rings are seen near the upper surface of the air film through the 
+microscope. 
+Explanation: 
+Newton’s rings are formed due to interference 
+between the light rays reflected from the top and 
+bottom surfaces of air film between the plate and the 
+lens. A part of the incident light is reflected at a point 
+in the form of the ray (1) with any additional phase 
+change. The other part is refracted and again reflected 
+in the form of the ray (2) with additional phase change of π or path change of λ/2. 
+ 
+As the rings are observed in the reflected light, the path difference between the rays is  
+2
+cos
+2
+pathdiffernce
+t
+r
+
+
+
+
+ 
+    For air film μ = 1 and for normal incidence r = 0, 
+ 
+ 

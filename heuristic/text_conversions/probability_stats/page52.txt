@@ -1,0 +1,74 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+45
+ 
+ 
+ 
+The procedure for studying multiple regression is similar to the one for simple regression, with 
+the difference that the other variables are added in the regression equation. If there are three 
+variables 𝑋ଵ, 𝑋ଶ 𝑎𝑛𝑑 𝑋ଷ the multiple regression has the following form: 
+𝑿𝟏= 𝒂𝟏.𝟐𝟑+ 𝒃𝟏𝟐.𝟑𝑿𝟐+ 𝒃𝟏𝟑.𝟐𝑿𝟑 ……………..(1) 
+In the above equation,𝑎ଵ.ଶଷ is the intercept made by the regression plane. It gives thevalue of the 
+dependent variable when all the independent variables are zero. 𝑏ଵଶ.ଷ indicates the slope of the 
+regression line of 𝑋ଵ 𝑜𝑛 𝑋ଶ𝑤ℎ𝑒𝑛𝑋ଷ is held constant. Similarly, 𝑏ଵଷ.ଶ indicates the slope of the 
+regression line of 𝑋ଵ 𝑜𝑛 𝑋ଷ 𝑤ℎ𝑒𝑛 𝑋ଶ is held constant. 
+Normal Equations for Multiple Regression Equations: 
+(i) 
+The regression plane of 𝑋ଵ 𝑜𝑛 𝑋ଶ 𝑎𝑛𝑑 𝑋ଷ is  
+𝑋ଵ= 𝑎ଵ.ଶଷ+ 𝑏ଵଶ.ଷ𝑋ଶ+ 𝑏ଵଷ.ଶ𝑋ଷ ………… (1) 
+In the above equation, the values of 𝑏ଵଶ.ଷ 𝑎𝑛𝑑 𝑏ଵଷ.ଶ are determined by solving simultaneously the 
+following three normal equations. 
+෍𝑋ଵ= 𝑁𝑎ଵ.ଶଷ+ 𝑏ଵଶ.ଷ෍𝑋ଶ+ 𝑏ଵଷ.ଶ෍𝑋ଷ 
+ 
+෍𝑋ଵ𝑋ଶ= 𝑎ଵ.ଶଷ෍𝑋ଶ+ 𝑏ଵଶ.ଷ෍𝑋ଶ
+ଶ+ 𝑏ଵଷ.ଶ෍𝑋ଶ𝑋ଷ 
+෍𝑋ଵ𝑋ଷ= 𝑎ଵ.ଶଷ෍𝑋ଷ+ 𝑏ଵଶ.ଷ෍𝑋ଶ𝑋ଷ+ 𝑏ଵଷ.ଶ෍𝑋ଷ
+ଶ 
+ 
+(ii) 
+The regression plane of 𝑋ଶ 𝑜𝑛 𝑋ଵ 𝑎𝑛𝑑 𝑋ଷ is  
+𝑋ଶ= 𝑎ଶ.ଵଷ+ 𝑏ଶଵ.ଷ𝑋ଵ+ 𝑏ଶଷ.ଵ𝑋ଷ ………… (2) 
+The normal equations for fitting the above equation are: 
+෍𝑋ଶ= 𝑁𝑎ଶ.ଵଷ+ 𝑏ଶଵ.ଷ෍𝑋ଵ+ 𝑏ଶଷ.ଵ෍𝑋ଷ 
+෍𝑋ଵ𝑋ଶ= 𝑎ଶ.ଵଷ෍𝑋ଵ+ 𝑏ଶଵ.ଷ෍𝑋ଵ
+ଶ+ 𝑏ଶଷ.ଵ෍𝑋ଵ𝑋ଷ 
+෍𝑋ଶ𝑋ଷ= 𝑎ଶ.ଵଷ෍𝑋ଷ+ 𝑏ଶଵ.ଷ෍𝑋ଵ𝑋ଷ+ 𝑏ଶଷ.ଵ෍𝑋ଷ
+ଶ 
+ 
+(iii) 
+The regression plane of 𝑋ଷ 𝑜𝑛 𝑋ଵ 𝑎𝑛𝑑 𝑋ଶ is  
+𝑋ଷ= 𝑎ଷ.ଵଶ+ 𝑏ଷଵ.ଶ𝑋ଵ+ 𝑏ଷଶ.ଵ𝑋ଶ ………… (3) 
+The normal equations for fitting the above equation are: 
+෍𝑋ଷ= 𝑁𝑎ଷ.ଵଶ+ 𝑏ଷଵ.ଶ෍𝑋ଵ+ 𝑏ଷଶ.ଵ෍𝑋ଶ 
+෍𝑋ଵ𝑋ଷ= 𝑎ଷ.ଵଶ෍𝑋ଵ+ 𝑏ଷଵ.ଶ෍𝑋ଵ
+ଶ+ 𝑏ଷଶ.ଵ෍𝑋ଵ𝑋ଶ 
+෍𝑋ଶ𝑋ଷ= 𝑎ଷ.ଵଶ෍𝑋ଶ+ 𝑏ଷଵ.ଶ෍𝑋ଵ𝑋ଶ+ 𝑏ଷଶ.ଵ෍𝑋ଶ
+ଶ 
+Problems: 
+Q. Find the multiple linear regression equation of 𝑿𝟏 𝒐𝒏 𝑿𝟐 𝒂𝒏𝒅 𝑿𝟑 from the data given 
+below: 
+ 
+ 
+ 
+ 
+Sol: The regression plane of 𝑋ଵ 𝑜𝑛 𝑋ଶ 𝑎𝑛𝑑 𝑋ଷ is  
+𝑋ଵ= 𝑎ଵ.ଶଷ+ 𝑏ଵଶ.ଷ𝑋ଶ+ 𝑏ଵଷ.ଶ𝑋ଷ ………… (A) 
+where the values of the three constants are obtained by solving the following three 
+normal equations. 
+𝑿𝟏
+2
+4
+6
+8 
+𝑿𝟐
+3
+5
+7
+9 
+𝑿𝟑
+4
+6
+8
+10

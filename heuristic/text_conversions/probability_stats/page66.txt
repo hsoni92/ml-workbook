@@ -1,0 +1,93 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+59
+ 
+ 
+ 
+∴ 𝑥̅ > 1470 
+ 
+∴|𝑧| = ቤ
+௫̅ି ఓ
+഑
+√೙
+ቤ  = ቤ
+ଵସ଻଴ିଵହ଴଴
+భమబ
+√೙
+ቤ = √௡
+ସ 
+From the given condition , the area of the probability normal curve to the left of √௡
+ସ  
+should be 0.95 
+∴ The area between 0 and √୬
+ସ  is 0.45 
+We do not want to know about the bulbs which have life above the guranteed life . 
+∴√௡
+ସ=  1.65  i.e., √𝑛   = 6.6  
+∴ n = 44 
+11.A normal population has a mean of 0.1 and standard deviation of 2.1 . Find the  
+probability that mean of a sample of size 900 will be negative . 
+Sol : Given 𝜇= 0.1  , 𝜎= 2.1 and  n = 900 
+The Standard normal variate 
+Z = 
+௫ ഥି ఓ
+഑
+√೙
+  = 
+௫̅ି ఓ
+మ.భ
+√వబబ
+ = 
+௫̅ି ଴.ଵ 
+଴.଴଻ 
+∴𝑥̅  = 0.1  +  0.007 z    where z  ~ N ( 0 ,1)  
+∴  The required  probability , that the sample mean is negative is given by  
+𝑃( 𝑥 ഥ< 0 ) = P ( 0.1 + 0.07 z < 0)  
+                   = P ( 0.07 z < - 0.1 ) 
+                   = P ( z<ቀ
+ି଴.ଵ
+଴.଴଻ቁ 
+ 
+ 
+ 
+ 
+                   = P  ( z < -1.43 ) 
+ 
+                   = 0.50 – P ( 0<  z  < 1.43 ) 
+                   = 0.50 – 0.4236 = 0.0764  
+12.In a study of an automobile insurance a random sample of 80 body repair costs had a  
+mean of  Rs 472.36 and the S.D of  Rs 62.35. If 𝒙ഥഥ is used as a point estimator to the true  
+average repair costs , with what confidence we can assert that the maximum error doesn’t  
+exceed Rs 10. 
+Sol : Size of a random sample , n = 80 
+The mean of random sample ,𝑥̅  = Rs 472.36 
+Standard deviation ,𝜎  = Rs 62.35 
+Maximum error of estimate ,𝐸 ௠௔௫  = Rs 10 
+We have 𝐸 ௠௔௫ =𝑍ఈଶ
+ൗ. 
+ఙ
+√௡ 
+i.e.,  𝑍ఈଶ
+ൗ= 
+ா ೘ೌೣ .√௡
+ఙ
+   =  
+ଵ଴ √଼଴
+଺ଶ.ଷହ  = 
+଼ଽ.ସସଶ଻
+଺ଶ.ଷହ=  1.4345 
+ ∴𝑍ఈଶ
+ൗ= 1.43 
+The area when z = 1.43 from tables is 0.4236 
+∴ 
+ఈ
+ଶ  = 0.4236   i.e ., 𝛼 = 0.8472 
+∴ confidence = (1- 𝛼 ) 100% = 84.72 %  
+Hence we are 84.72% confidence that the maximum error is Rs. 10 
+13.If we can assert with 95% that the maximum error is 0.05 and P = 0.2 find the size of the  
+sample. 
+Sol : Given P =0.2 , E = 0.05 
+We have Q = 0.8 and 𝑍ఈଶ
+ൗ= 1.96 ( 5% LOS ) 

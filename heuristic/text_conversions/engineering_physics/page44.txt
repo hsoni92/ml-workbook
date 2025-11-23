@@ -1,0 +1,80 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+38 
+ 
+ 
+= 4
+3 𝜋𝑥3 ( −𝑍𝑒
+4
+3 𝜋𝑅3) = 4
+3 𝜋𝑥3 (−3
+4 ) 𝑍𝑒
+𝜋𝑅3 = −𝑍𝑒𝑥3
+𝑅3
+ 
+Coulomb force =  𝑍𝑒× (−𝑍𝑒𝑥3
+𝑅3
+) ×
+1
+4𝜋𝜖0𝑥2 = −𝑍2𝑒2𝑥
+4𝜋𝜖0𝑅3  
+In the equilibrium position, −𝑍𝑒𝐸= −𝑍2𝑒2𝑥
+4𝜋𝜖0𝑅3 
+𝑜𝑟 𝑥=  4𝜋𝜖0𝑅3𝐸
+𝑍𝑒
+ 
+Thus, displacement of electron cloud is proportional to applied field 
+ 
+ 
+𝑥∝𝐸 
+   The electric charges +Ze and –Ze are separated by a distance x under the influence of E 
+constituting induced dipoles (moment).    
+Induced electric dipole moment, 
+𝜇𝑒 = 𝑍𝑒𝑥 
+          = 𝑍𝑒. 4𝜋𝜖0𝑅3𝐸
+𝑍𝑒
+ = 4𝜋𝜖0𝑅3𝐸 
+ 
+ 
+i.e.𝜇𝑒= 𝛼𝑒𝐸 
+where𝛼𝑒= 4𝜋𝜖0𝑅3  is called electronic polarizability 
+      It is the dipole moment per unit volume & is independent of temperature. 
+𝑃𝑒= 𝑁𝜇𝑒 
+=Nα_e E (where, N is the no. of atom/m3)    
+𝑃𝑒= 𝜖0𝐸(𝜖𝑟−1) = 𝑁𝛼𝑒𝜖𝑟−1 = 𝑁𝛼𝑒
+𝜖0
+ 
+𝐻𝑒𝑛𝑐𝑒  
+ 
+𝛼𝑒=
+𝜖0(𝜖𝑟−1)
+𝑁
+ 
+2. Ionic – polarization (pi):   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The polarization that occurs due to relative displacement of ions of the molecules in the 
+presence of an external electrical field. This happens in solids with ionic bonding which 
+automatically have dipoles but which get cancelled due to symmetry of the crystals. Here, 
+external field leads to small displacement of ions from their equilibrium positions and hence 
+inducing a net dipole moment.  
+ Ex:Nacl, KCl or KBrmolecules. 
+ It occurs at a frequency of around 1013 Hz. 
+ It is a slower process when compared to electronic polarization. 
+ It is independent of temperature. 
+ 
+ 
+ 
+ 
+Expression for Ionic polarization of a molecule: 
+The ionic polarization is due to the displacement of cation 
+and anions in opposite direction and occurs in an ionic solid. 

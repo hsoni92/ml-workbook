@@ -1,0 +1,126 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+85
+ 
+ 
+ 
+7. The blood pressure of 5 women before and after intake of a certain drug are given below: 
+Before 
+110 
+120 
+125 
+132 
+125 
+After 
+120 
+118 
+125 
+136 
+121 
+Test whether there is significant change in blood pressure at 1% los? 
+Sol: Given n = 5  
+i) 
+Null Hypothesis 𝐻଴: 𝜇ଵ = 𝜇ଶ 
+ii) 
+ Alternative Hypothesis 𝐻ଵ : 𝜇ଵ<𝜇ଶ (Left one tailed test) 
+iii) 
+Test Statistic 𝑡௖௔௟=
+ௗത
+௦
+√௡
+ൗ
+ 
+where dത=
+∑ୢ
+୬ and 𝑆ଶ=
+ଵ
+௡ିଵ∑൫𝑑− 𝑑̅൯
+ଶ 
+B.P before training 
+B.P after training 
+𝑑= 𝑦−𝑥 
+𝑑−𝑑̅ 
+൫𝑑−𝑑̅൯
+ଶ 
+110 
+120 
+10 
+8 
+64 
+120 
+118 
+-2 
+-4 
+16 
+123 
+125 
+2 
+0 
+0 
+132 
+136 
+4 
+2 
+4 
+125 
+121 
+-4 
+-6 
+36 
+ 
+ 
+෍𝑑= 10 
+ 
+∑൫𝑑−𝑑̅൯
+ଶ=
+120 
+ 
+∴𝑑  
+തതത = 
+ଵ଴
+ହ  = 2 and 𝑆ଶ=
+ଵଶ଴
+ସ = 30 
+∴ S = 5.477 
+𝑡௖௔௟=
+ௗത
+௦
+√௡
+ൗ
+  = 
+ଶ
+ହ.ସ଻଻
+√ହ
+ൗ
+   = 0.862  
+iv) 
+Degrees of freedom = 5-1= 4 
+Tabulated value of t for 4 d.f at 1% los is 4.6 
+Conclusion: Since |t ୡୟ୪| value <|t஑|value , we accept  𝐻଴  
+Hence we conclude that there is no significant difference in Blood pressure after intake of a certain 
+drug. 
+ 
+8. Memory capacity of 10 students were tested before and after training . State whether the 
+training was effective or not from the following scores. 
+Sol : 
+i) Null Hypothesis 𝐻଴: 𝜇ଵ = 𝜇ଶ 
+ 
+ii)Alternative Hypothesis 𝐻ଵ : 𝜇ଵ<𝜇ଶ (Left one tailed test) 
+iii)Test Statistic 𝑡௖௔௟=
+ௗത
+௦
+√௡
+ൗ
+ 
+where dത=
+∑ୢ
+୬ and 𝑆ଶ=
+ଵ
+௡ିଵ∑൫𝑑− 𝑑̅൯
+ଶ 
+ 
+ 
+ 
+ 

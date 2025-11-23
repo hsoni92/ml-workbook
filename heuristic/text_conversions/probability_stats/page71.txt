@@ -1,0 +1,89 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+64
+ 
+ 
+ 
+  v) Decision: If |𝑧௖௔௟| < 𝑍௧௔௕, accept H0  otherwise reject H0 
+ 
+NOTE : Confidence limits for population  proportion 
+P = P ± Z∝
+మ(S E of P)  
+= P ± Z∝
+మ൬ට
+୮୯
+୬൰ 
+ 
+4. Test for Equality of Two Proportions (Populations) 
+ 
+     Let p1 and p2 be the sample proportions in two large random samples of sizes n1 &n2 
+     drawn from two populations having proportions P1 &P2 
+ 
+i) 
+𝐍𝐮𝐥𝐥 𝐡𝐲𝐨𝐩𝐨𝐭𝐡𝐞𝐬𝐢𝐬: 𝐻଴: 𝑃ଵ= 𝑃ଶ 
+ 
+ii) 
+Alternative hypothesis :a) H1: 𝑃ଵ≠𝑃ଶ(Two Tailed) 
+      b)H1: 𝑃ଵ< 𝑃ଶ (Left one tailed) 
+     c) H1: 𝑃ଵ> 𝑃ଶ  (Right one tailed) 
+iii) 
+Test statistic :𝑍௖௔௟=
+(௉భି௉మ)ି(௉భି௉మ)
+ට
+ುభೂభ
+೙భశ
+ುభೂభ
+೙మ
+  if (P1-P2) is given. 
+If given only sample proportions then  
+ 
+𝑍௖௔௟=
+௣భି௣మ
+ටುభ೜భ
+೙భାುమ೜భ
+೙మ
+   where  pଵ=
+୶భ
+୬భ&pଵ=
+୶మ
+୬మ 
+ 
+OR 
+ 
+   Zୡୟ୪=
+୮భ ି  ୮మ
+ට୮୯ቀభ
+౤భାభ
+౤మቁ
+  Where p = 
+୬భ୮భା୬మ୮మ
+୬భା୬మ
+ = 
+୶భ ା୶మ 
+୬భା୬మ and q = 1- p 
+iv) 
+At specified LOS ∝ critical value of ‘Z’ 
+v) 
+Decision: If |𝑍௖௔௟| < 𝑍்௔௕, accept H0 otherwise reject H0 
+ 
+   NOTE: Confidence limits for difference of population proportions 
+𝑃ଵ−𝑃ଶ = (𝑝ଵ−𝑝ଶ) ± 𝑍∝  
+మ(𝑆 . 𝐸 𝑜𝑓 𝑃ଵ−𝑃ଶ ) 
+Problems:  
+1. A sample of 64 students have a mean weight of 70 kgs . Can this be regarded as 
+asample mean from a population with mean weight 56 kgs and standard deviation 25 
+kgs. 
+Sol:Given 𝑥̅ = mean of he sample = 70 kgs 
+𝜇   = Mean of the population  = 56 kgs  
+𝜎 = S.D of population = 25 kgs  
+             and 𝑛= Sample size = 64  
+ 
+i) 
+Null Hypothesis 𝐻଴ : A Sample of 64 students with mean weight 70 kgs be regarded 
+as a sample from a population with mean weight 56 kgs and standard deviation 25 kgs. 
+i.e., 𝐻଴ : 𝜇=  70 kgs 
+ii) 
+Alternative Hypothesis 𝐻ଵ : Sample cannot be regarded as one coming from the 
+population . i.e., 𝐻ଵ : 𝜇≠  70 kgs   ( Two –tailed test ) 

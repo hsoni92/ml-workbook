@@ -1,0 +1,48 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+69 
+ 
+ 
+ 
+Explanation: 
+Let us consider a denser medium & rarer medium of refractive indices n1& n2 respectively and 
+n1>n2. Let a light ray move from denser to rare medium with ‘i’ as the angle of incidence & ‘r’ 
+as angle of refraction. The refracted ray bends away from the normal as it travels from denser 
+to rarer medium with increase of angle of incidence ‘i’.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+In this we get three cases 
+Case-1: When i<θc, Then the light ray refracts into rarer medium as shown in figure. 
+ 
+Case-2: When i= θc , then the light ray traverses along the two media as shown in figure. 
+       For the two media, applying Snell’s law 
+𝑛1𝑠𝑖𝑛𝑖= 𝑛2𝑠𝑖𝑛𝑟 
+(∴  𝑖= 𝜃𝑐& 𝑟= 90°) 
+𝑛1𝑠𝑖𝑛𝜃𝑐= 𝑛2𝑠𝑖𝑛90 
+𝑛1𝑠𝑖𝑛𝜃𝑐= 𝑛2 
+𝑠𝑖𝑛𝜃𝑐= 𝑛2
+𝑛1
+ 
+Where n1>n2 
+For air, n2 =1,  
+𝜃𝑐= 𝑠𝑖𝑛−1 1
+𝑛1
+ 
+Case-3:When i> θc, then the light ray reflected back into the medium as shown in figure 
+ 
+ACCEPTANCE ANGLE & ACCEPTANCE CONE: 
+Def: Acceptance angle is the maximum angle of incidence at the core of an optical fiber so that 
+the light can be guided though the fiber by total internal reflection. This angle is called as 
+acceptance angle. It is denoted by ‘αi’. 
+ 
+ 

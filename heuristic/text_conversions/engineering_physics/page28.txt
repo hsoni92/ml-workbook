@@ -1,0 +1,58 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+22 
+ 
+ 
+ 
+Resolving power of a grating: 
+The resolving power of a grating represents its ability to form separate spectral lines for 
+wavelengths very close together. It is measured by  
+𝜆
+𝑑𝜆 , where d𝜆 is the smallest wavelength 
+difference that can just be resolved at wavelength 𝜆. 
+Analysis: 
+Let a parallel beam of light of two wavelengths 𝜆 𝑎𝑛𝑑 𝜆+ 𝑑𝜆 be incident normally on the 
+grating .If the nth principal maximum of 𝜆 is formed in the direction 𝜃𝑛,we will have (e +
+d) sin θn =  nλ where (e+d) is the grating element. 
+Now the grating equation for the minima is 𝑁(𝑒+ 𝑑)𝑠𝑖𝑛 𝜃= 𝑚𝜆  where N is the total number 
+of rulings on the grating and m can take all integral values except 0,N,2N,…Nn, because these 
+values of m give respective principal maxima.It is clear from figure that the first minimum of 𝜆 
+adjacent to nth principal maximum of (𝜆+ 𝑑𝜆) in the direction of increasing 𝜃 will be obtained 
+for m= Nn+1.Therefore, for this minimum we have  
+𝑁(𝑒+ 𝑑)𝑠𝑖𝑛 (𝜃𝑛+ 𝑑𝜃𝑛) = (𝑛𝑁+ 1)𝜆 
+(𝑒+ 𝑑)𝑠𝑖𝑛 (𝜃𝑛+ 𝑑𝜃𝑛) = (𝑛𝑁+ 1
+𝑁
+)𝜆 
+According to Rayleigh criterion, the wavelengths λ and λ+dλ are just resolved by the grating 
+when the nth maximum of λ+dλ is also obtained in direction θn+dθn i.e 
+(e+d)sin(θn + d θn)=n(λ+dλ)………..(4) 
+Figure shows the overlapping of principal maxima of two patterns 
+Comparing eqs (3) and(4), we get 
+(
+𝑛𝑁+1
+𝑁) 𝜆= n(λ+dλ) 
+nNλ+λ = nNλ+nNdλ 
+𝜆𝑑𝜆
+⁄
+= 𝑛𝑁 
+But (
+𝜆
+𝑑𝜆) is the resolving power R of the grating. Therefore , 
+R=nN 
+R=
+𝑁(𝑒+𝑑) sin 𝜃𝑛
+𝜆
+ 
+As expected, the resolving power is zero for the central principal maximum(n=0), all 
+wavelengths being indiffracted in this order. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

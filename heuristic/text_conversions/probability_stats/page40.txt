@@ -1,0 +1,47 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+33
+ 
+ 
+ 
+ASSIGNMENT QUESTIONS 
+1. A sales tax officer has reported that the average sales of the 500  business that he has to       
+     deal with during a year is Rs.36,000 with a standard deviation of Rs.10,000. Assuming   
+    that  the sales in these business are normally distributed ,find : 
+ 
+  i) The number of business as the sales of which are greater than Rs.40,000 
+  ii) The percentage of business the sales of which are likely to range between Rs.30,000 and        
+       Rs.40,000 
+ 
+ 2. If the variance of a Poisson  variate is 3 . Find the probability that                              
+         i) P(x=0)           ii)P(1≤x≤4)              iii) P(x>2) 
+ 
+3. The mean and SD of a normal variate are 8 and 4 respectively .Find  i) P( 5≤x≤10)       
+    ii)P(x≥5) 
+ 
+4. Average number of accidents on any day on a national highway is 1.8 .determine the  
+    probability that the number of accidents are  i) atleast one  ii) at the most one  iii) exactly    
+   one 
+ 
+5.If X is a normal variate , find  
+ 
+i) to the left of Z=-1.78  
+ ii) to the right of Z=-1.45 
+ iii) corresponding to -0.80≤Z≤1.53 
+ iv) to the left of Z=-2.52 and to the right of Z=1.83 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

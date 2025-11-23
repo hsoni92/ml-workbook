@@ -1,0 +1,127 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+93
+ 
+ 
+ 
+Since calculated F < tabulated F, we accept the null hypothesis 𝐻଴ at 5% los  i.e., there is no 
+significant difference between the variances of the distribution by the workers. 
+ 
+ 
+3. A sample of 26 machinery parts gives a mean working hours of 990 hrs with a S.D of  
+20 hrs. The manufacturer claims that the mean working hrs of the parts is 1000 hrs. Is 
+the sample not up to the standard?  
+ 
+Sol:Here the sample size = 26<30, ∴ it is small sample.  
+Given sample mean  𝑥 
+തതത= 990 
+Population mean,  𝜇   = 1000  
+S.D.        = 20 
+Degrees of freedom = n-1 = 26-1 = 25 
+We use students t test. 
+1. Null hypothesis  H0 : The sample is up to the standard. 
+2. Alternate hypothesis H1 :𝜇 < 1000 ( left tail test) 
+3. Level of significance   :∝ = 0.05 
+4. The test statistic is t =
+௫̅ିఓ
+ೞ
+√೙షభ
+  =. 
+ଽଽ଴ିଵ଴଴଴
+ଶ଴/√ଶହ  = -2.5 
+             ⸫|𝑡 |= 2.5  
+ 
+Tabulated value of t at 5% los with 25 degrees of freedom for left tailed test is 1.708. 
+Since the calculated t > the tabulated t, we reject the null hypothesis H0 and conclude that the  
+sample is not up to the mark. 
+ 
+4. Two horses A&B were tested according to the time to run a particular track with the 
+following results. 
+ 
+Horse A 
+28 
+30 
+32 
+33 
+33 
+29 
+34 
+Horse B 
+29 
+30 
+30 
+24 
+27 
+29 
+…… 
+ 
+Test whether two horses have the same running capacity at 5% values of t for 11 dof. 
+ 
+Sol: Here n1 = 7 and n2 = 6 
+Sample mean and S.D is not given in the question. First calculate mean and S.D 
+       ∴𝑥 ഥ= Mean of first sample =  
+ଵ
+଻ (28+30+32+33+33+29+34) 
+              = 
+ଵ
+଻ x 219 = 31.286 
+𝑦 ഥ= Mean of second sample =  
+ଵ
+଺ (29+30+30+24+27+29= 
+ଵ
+଺(169) = 28.16 
+X 
+x- 𝑥̅ 
+(X – 𝑋ത)2
+Y 
+Y - 𝑌ത
+(Y - 𝑌ത)2
+28
+-3.286
+10.8
+29
+0.84
+0.7056
+30
+-1.286
+1.6538
+30
+1.84
+3.3856
+32
+0.714
+0.51
+30
+1.84
+3.3856
+33
+1.714
+2.94
+24
+-4.16
+17.3056
+33
+1.714
+2.94
+27
+-1.16
+1.3456
+29
+-2.286
+5.226
+29
+0.84
+0.7056
+34
+2.714
+7.366
+∑X=219 
+ 
+∑(X – 𝑋ത)2
+=31.4358 
+∑Y=169 
+ 
+∑(Y - 𝑌ത)2  
+=26.8336 

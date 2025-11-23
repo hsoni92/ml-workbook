@@ -1,0 +1,85 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+44 
+ 
+ 
+B = µ0(H + I) 
+It is the relation in SI unit 
+ 
+Magnetic Susceptibility(𝝌):The ratio of magnetization to the magnetic intensity.  
+ 
+ 
+ 
+ 
+𝝌=
+I
+𝐻 
+ 
+ 
+It has no units when a material has high susceptibility then it can be easily magnetized. 
+ 
+Relation between Permeability and Susceptibility: 
+ 
+ 
+ 
+ 
+We know that       B∝ (H+I) 
+B = µo (H+I)       
+In vacuumB= µo H  + µo I                  
+𝐵
+𝐻= 𝜇0 + 𝜇0
+𝐼
+𝐻 
+Also,  
+𝐵
+𝐻= 𝜇(permeability of the material)and  
+ 
+ 
+ 
+χ =
+I
+𝐻(Susceptibility) ∴𝜇= µo + µoχor𝜇= µo(1 + χ) 
+ 
+ 
+𝜇
+𝜇0
+= (1 + χ) 
+𝜇𝑟= (1 + χ) 
+𝜇𝑟−1 = χ 
+𝜇𝑟 = χ + 1  
+ 
+Origin of magnetic moment:  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Materials are made up of atoms. These atoms consist of positively charged 
+nucleus, surrounded by cloud of electrons. In all atoms electrons are revolving around the 
+nucleus in different orbits and also spin about their own axis. These revolving electrons 
+constitute an electrical current in the orbits. These revolving electrons produces its own orbital 
+magnetic dipole moment, measured in Bohr magneton(𝜇𝐵) and there is also a spin magnetic 
+moment associated with it (spin of orbital electrons and spin of nucleus).In most materials 
+there is no resultant magnetic moments, due to the electrons being grouped in pairs causing 
+the magnetic moment to be cancelled by its neighbour. Under external applied magnetic field 
+these dipoles experience torque in the direction of applied field and the atom acquires certain 
+magnetism.  
+So, the magnetic moment of an atom is due to    
+1.  Orbital magnetic moment of the electrons. 
+2.  Spin magnetic moment of the electrons. 
+3.  Spin magnetic moment of the nucleus. 
+ 
+ 
+ 
+ 
+ 
+The orbital magnetic moment of the electrons(𝐁𝐨𝐡𝐫𝐌𝐚𝐠𝐧𝐞𝐭𝐨𝐧):  
+ 
+ 
+ 
+ 

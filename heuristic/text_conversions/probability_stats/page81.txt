@@ -1,0 +1,54 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+74
+ 
+ 
+ 
+TUTORIAL QUESTIONS 
+ 
+1) If the population is 3,6,9,15,27 
+a) List all possible samples of size 3 that can be taken without replacement from finite    
+population  
+b) Calculate the mean of each of the sampling distribution of means 
+c) Find the standard deviation of sampling distribution of means 
+2) A population consist of five numbers 2,3,6,8 and 11. Consider all possible samples of size 
+two which can be drawn with replacement from this population .Find 
+a) The mean of the population  
+b) The standard deviation of the population  
+c) The mean of the sampling distribution of means and  
+d) The standard deviation of the sampling distribution of means  
+3) A random sample of size 100 is taken from a population with 𝜎 = 5.1 . Given that the sample 
+mean is 𝑥̅ = 21.6 Construct a 95% confidence limits for the population mean  . 
+4) A normal population has a mean of 0.1 and standard deviation of 2.1 . Find the probability 
+that mean of a sample of size 900 will be negative . 
+5) A random sample of size 64 is taken from a normal population with 𝜇= 51.4  and 𝜎=  
+6.8.What is the probability that the mean of the sample will  
+a) exceed 52.9   
+b) fall between 50.5 and 52.3   
+c) be less than 50.6. 
+6) A random sample of 500 apples was taken from a large consignment and 60 were found to 
+be bad. Obtain 95% confidence interval for the percentage number of bad apples in the 
+consignment. 
+7) The average income of 100 people of a city is Rs 210 with a standard deviation of Rs 10.For 
+another sample of 150 people the average income is Rs 220 with a standard deviation of 
+Rs12.Test the significant difference between two mean at 5% LOS. 
+8) A coin is tossed 960 times .Head turned up 184 times. Find whether the coin is unbiased. 
+9) Random samples of 600 men and 900 women in a locality were asked they would like to 
+have  a bus stop near their residence .350 men and 475 women were in favor of the proposal. 
+Test the significance between the difference of two proportions at 5%LOS. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

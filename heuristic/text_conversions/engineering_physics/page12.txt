@@ -1,0 +1,65 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+6 
+ 
+ 
+ 
+Energy decay in damped harmonic oscillator (Energy dissipation): 
+Whenever the system is set into oscillations, its motion is opposed by frictional (damping) 
+forces due to air resistance. The work done against these forces is dissipated out in the form of 
+heat. So the mechanical energy of the system continuously decreases with time and amplitude 
+of oscillation gradually decays to zero.    
+The displacement of a damped harmonic oscillator at any time is given by  
+𝑥= 𝑎𝑒−𝑏𝑡sin (√(𝑤2 −𝑏2)) 𝑡+ ∅ ) 
+= 𝑎𝑒−𝑏𝑡sin(𝑤′𝑡+ ∅) … … … … . (1) 
+                                                                                                            𝑤ℎ𝑒𝑟𝑒 𝑤′ = √𝑤2 −𝑏2 
+Then velocity,      (
+𝑑𝑥
+ 𝑑𝑡) = −𝑎𝑏𝑒−𝑏𝑡sin(𝑤′𝑡+ ∅) + 𝑎𝑤′𝑒−𝑏𝑡cos(𝑤′𝑡+ ∅) … … …… (2) 
+If damping is very small i.e. ,,w.Hence the term  −𝑎𝑏𝑒−𝑏𝑡sin(𝑤′𝑡+ ∅) can be neglected in 
+comparison with the term 𝑎𝑤′𝑒−𝑏𝑡cos(𝑤′𝑡+ ∅). 
+Then 
+𝑑𝑥
+𝑑𝑡= 𝑎𝑤′𝑒−𝑏𝑡cos(𝑤′𝑡+ ∅) … …… (3) 
+The mechanical energy E of oscillator is given by  
+𝐸= 𝐾𝑖𝑛𝑒𝑡𝑖𝑐 𝑒𝑛𝑒𝑟𝑔𝑦+ 𝑃𝑜𝑡𝑒𝑛𝑡𝑖𝑎𝑙 𝑒𝑛𝑒𝑟𝑔𝑦 
+= 1
+2  𝑚 (𝑑𝑥
+𝑑𝑡)2 + 1
+2 𝜇𝑥2 … … … . . (4) 
+Substituting the value s of 
+𝑑𝑥
+𝑑𝑡 𝑎𝑛𝑑 𝑥 𝑓𝑟𝑜𝑚 𝑒𝑞𝑢𝑎𝑡𝑖𝑜𝑛𝑠 (3)𝑎𝑛𝑑 (1)in eq.n (4), 
+E =  1
+2 𝑚𝑎2𝑤′2𝑒−2𝑏𝑡𝑐𝑜𝑠2(𝑤′𝑡+ ∅) + 1
+2 𝜇 𝑎2𝑤′2𝑒−2𝑏𝑡𝑠𝑖𝑛2(𝑤′𝑡+ ∅) 
+= 1
+2 𝑚𝑎2 𝜇
+𝑚𝑒−2𝑏𝑡𝑐𝑜𝑠2(𝑤′𝑡+ ∅) + 1
+2 𝜇 𝑎2𝑒−2𝑏𝑡𝑠𝑖𝑛2(𝑤′𝑡+ ∅) 
+                                                               ∵𝑤′ = √𝑤2 −𝑏2 ≈𝑤= √(𝜇
+𝑚) 
+= 1
+2 𝑎2 𝜇𝑒−2𝑏𝑡(𝑐𝑜𝑠2(𝑤′𝑡+ ∅) + 𝑠𝑖𝑛2(𝑤′𝑡+ ∅) ) 
+= 1
+2 𝑎2𝑤 𝑒−2𝑏𝑡 
+= 1
+2 𝑎2𝑚𝑤2𝑒−2𝑏𝑡 
+𝐸= 1
+2 𝑎2𝜇𝑒−2𝑏𝑡 
+This shows that the energy of oscillator decreases with time. 
+ 
+Quality factor(qualitative): 
+The quality factor is defined as 2𝜋times the ratio of the energy stored in the system to the 
+energy lost per period. 
+𝑄= 2𝜋energy stored in system
+energy lost p𝑒𝑟 𝑝𝑒𝑟𝑖𝑜𝑑= 2𝜋𝐸
+𝑃𝑇 
+Where P is power dissipated and T is periodic time. We know that 𝑃=
+𝐸
+𝜏,  where 𝜏 is relaxation 
+time. So 
+ 

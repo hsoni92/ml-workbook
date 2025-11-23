@@ -1,0 +1,56 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+28 
+ 
+ 
+ 
+To solve, by considering Schrodinger’s time independent wave equation in one dimension, 
+𝑑2𝜓
+𝑑𝑥2 + 8𝜋2𝑚
+ℎ2
+[𝐸−𝑉(𝑥)]𝜓= 0 … …  (1) 
+Bloch’s 1D solution for Schrodinger wave equation (1)𝜓𝑘(𝑥) = 𝑢𝑘(𝑥)𝑒𝑥𝑝(𝑖𝑘𝑥) … …… . (2) 
+where 𝑢𝑘(𝑥) =  𝑢𝑘(𝑥+ 𝑎) 
+Here 𝑢𝑘(𝑥) -periodicity of crystal lattice, modulating function, k- propagation vector =
+2𝜋
+𝜆𝑒𝑖𝑘𝑥  
+is plane wave. 
+By applying eq.n (2) to eq.n (1),it is not easy to solve Schrodinger wave equation and Bloch 
+cannot explains complete physical information about an 𝑒− in periodic potential field. Then  
+Kronig Penny model was adopted to explains the electrical properties of an 𝑒−. 
+ 
+Kronig-Penney model: 
+Kronig –penny approximated the potentials of an 𝑒−𝑠 inside the crystal in terms of the shapes 
+of rectangular steps as shown, i.e. square wells is known as Kronig Penny model.  
+i.e. The periodic potential is taken in the form of rectangular one dimensional array of square 
+well potentials and it is the best suited to solve Schrodinger wave equation. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+It is assumed that the potential energy is zero when x lies between 0 and a, and is considered 
+as I region. Potential energy is 𝑉0  , when x lies between –b and 0. And considered as II 
+region. 
+Boundary conditions:  
+𝑉(𝑥) = 0 , 𝑤ℎ𝑒𝑟𝑒 𝑥 𝑙𝑖𝑒𝑠 𝑏𝑒𝑡𝑤𝑒𝑒𝑛   0 <  𝑥 <  𝑎 –   𝐼 𝑟𝑒𝑔𝑖𝑜𝑛𝑉(𝑥)
+= 𝑉0 , 𝑤ℎ𝑒𝑟𝑒 𝑥 𝑙𝑖𝑒𝑠 𝑏𝑒𝑡𝑤𝑒𝑒𝑛 −𝑏 <  𝑥 <  0 –  𝐼𝐼 𝑟𝑒𝑔𝑖𝑜𝑛 
+This model explains many of the characteristic features of the behavior of electrons in a 
+periodic lattice. 
+The wave function related to this model may be obtained by solving Schrodinger equations for 
+the two regions, 
+𝑑2𝜓
+𝑑𝑥2 + 2𝑚
+ℏ2  E𝜓= 0, for 0 < 𝑥< 𝑎  𝑤𝑖𝑡ℎ  𝑉(x) = 0 … … … … (1)  
+𝑑2𝜓
+ 𝑑𝑥2 + 2𝑚
+ℏ2 (E −V0)𝜓= 0, for −b < 𝑥< 0  with  V(x) = V0 … … … (2) 
+I 
+II 
+Widt
+h

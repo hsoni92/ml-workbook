@@ -1,0 +1,52 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+2
+ 
+ 
+ 
+OBJECTIVES 
+ 
+1. To understand a random variable that describes randomness or an 
+ 
+ uncertainty in certain realistic situations which can be either discrete or  
+ 
+continuous type. 
+ 
+2. To learn functions of multiple random variables through joint distributions 
+ 
+ since the random situations are described as functions of multiple random  
+ 
+variables. 
+ 
+               OUTCOME: 
+                  Describe randomness in certain realistic situation which can be either 
+ 
+                  discrete orcontinuous type. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

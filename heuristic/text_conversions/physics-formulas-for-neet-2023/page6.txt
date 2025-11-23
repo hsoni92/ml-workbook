@@ -1,0 +1,179 @@
+3
+Optics
+3.1: Reﬂection of Light
+Laws of reﬂection:
+normal
+incident
+reﬂected
+i
+r
+(i)
+Incident ray, reﬂected ray, and normal lie in the same
+plane (ii) ∠i = ∠r
+Plane mirror:
+d
+d
+(i) the image and the object are equidistant from mir-
+ror (ii) virtual image of real object
+Spherical Mirror:
+O
+I
+u
+v
+f
+1. Focal length f = R/2
+2. Mirror equation:
+1
+v + 1
+u = 1
+f
+3. Magniﬁcation: m = −v
+u
+3.2: Refraction of Light
+Refractive index: µ = speed of light in vacuum
+speed of light in medium = c
+v
+Snell’s Law:
+sin i
+sin r = µ2
+µ1
+µ1
+µ2
+incident
+refracted
+reﬂected
+i
+r
+Apparent depth: µ =
+real depth
+apparent depth = d
+d′
+O
+I
+d
+d′
+Critical angle: θc = sin−1 1
+µ
+θc
+µ
+Deviation by a prism:
+µ
+δ
+i
+i′
+A
+r
+r′
+δ = i + i′ −A,
+general result
+µ = sin A+δm
+2
+sin A
+2
+,
+i = i′ for minimum deviation
+δm = (µ −1)A,
+for small A
+i
+δ
+δm
+i′
+Refraction at spherical surface:
+P
+O
+Q
+µ1
+µ2
+u
+v
+µ2
+v −µ1
+u = µ2 −µ1
+R
+,
+m = µ1v
+µ2u
+Lens maker’s formula:
+1
+f = (µ −1)
+h
+1
+R1 −
+1
+R2
+i
+Lens formula:
+1
+v −1
+u = 1
+f ,
+m = v
+u
+f
+u
+v
+Power of the lens: P = 1
+f , P in diopter if f in metre.
+Two thin lenses separated by distance d:
+1
+F = 1
+f1
++ 1
+f2
+−
+d
+f1f2
+f1
+f2
+d
+3.3: Optical Instruments
+Simple microscope: m = D/f in normal adjustment.
+Compound microscope:
+O
+∞
+Objective
+Eyepiece
+u
+v
+fe
+D
+1. Magniﬁcation in normal adjustment: m = v
+u
+D
+fe
+2. Resolving power: R =
+1
+∆d = 2µ sin θ
+λ
+Astronomical telescope:
+fo
+fe
+1. In normal adjustment: m = −fo
+fe , L = fo + fe
+2. Resolving power: R =
+1
+∆θ =
+1
+1.22λ
+3.4: Dispersion
+Cauchy’s equation: µ = µ0 + A
+λ2 ,
+A > 0
+Dispersion by prism with small A and i:
+1. Mean deviation: δy = (µy −1)A
+2. Angular dispersion: θ = (µv −µr)A
+Dispersive power: ω = µv−µr
+µy−1 ≈
+θ
+δy (if A and i small)
+Dispersion without deviation:
+µ
+µ′
+A
+A′
+(µy −1)A + (µ′
+y −1)A′ = 0
+Deviation without dispersion:
+(µv −µr)A = (µ′
+v −µ′
+r)A′

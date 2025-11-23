@@ -1,0 +1,50 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+23 
+ 
+ 
+ 
+Unit III                     INTRODUCTION TO SOLIDS 
+ 
+Free electron theory: 
+In solids, electrons in outer most orbits of atoms determine its electrical properties. Electron 
+theory is applicable to all solids, both metals and non metals. In addition, it explains the 
+electrical, thermal and magnetic properties of solids. The structure and properties of solids are 
+explained employing their electronic structure by the electron theory of solids. 
+ It has been developed in three main stages: 
+1. Classical free electron theory 
+2. Quantum Free Electron Theory. 
+3. Zone Theory. 
+ Classical free electron theory: The first theory was developed by Drude & Lorentz in 
+1900. According to this theory, metalcontains free electrons which are responsible for the 
+electrical conductivity and metals obey the laws of classical mechanics. 
+ Quantum Free Electron Theory: In 1928Sommerfield developed the quantum free 
+electron theory. According toSommerfield, the   free electrons move with a constant 
+potential. This theory obeys quantum laws.  
+ Zone Theory: Bloch introduced the band theory in 1928. According to this theory, free 
+electrons move in a periodic potential provided by the lattice. This theory is also called 
+“Band Theory of Solids”. It gives complete informational study of electrons.  
+ 
+Classical free electron theory:  
+Even though the classical free electron theory is the first theory developed to explain the 
+electrical conduction of metals, it has many practical applications. The advantages and 
+disadvantages of the classical free electron theory are as follows: 
+Advantages: 
+1. It explains the electrical conductivity and thermal conductivity of metals. 
+2. It verifies ohm’s law. 
+3. It is used to explain the optical properties of metals. 
+4. The valence electrons are freely moving about the whole volume of the metals like the 
+molecules of perfect gas in a container 
+5. The free electrons moves in random directions and collide with either positive ions or 
+other free electrons. Collision is independent of charges and is elastic in nature 
+6. The movements of free electrons obey the laws of classical kinetic theory of gases 
+7. Potential field remains constant throughout the lattice. 
+Drawbacks: 
+1. The classical free electron model predicts the incorrect temperature dependence of 
+𝜎.According to the classical free electron theory ,𝜎 𝛼 𝑇−1 . 
+2. It fails to explain superconducting properties of metals. 
+3. It fails to explain new phenomena like photoelectric effect, Compton effect, black –
+body radiation, etc. 

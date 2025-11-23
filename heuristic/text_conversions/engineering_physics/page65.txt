@@ -1,0 +1,65 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+59 
+ 
+ 
+ 
+ 
+Ex: Xenon flash lamp, electric field. 
+(ii) Active medium: The medium in which the population inversion takes place is called as 
+active medium. 
+Active-centre: The material in which the atoms are raised to excited state to achieve 
+population inversion is called as active center. 
+(iii) Optical-cavity or resonator: The active medium is enclosed between a fully reflected 
+mirror & a partially reflective mirror. This arrangement is called as cavity or resonator. As a 
+result, we get highly intense monochromatic, coherence laser light through the non-reflecting 
+portion of the mirror. 
+DIFFERENT TYPES OF LASERS 
+On the basis of active medium used in the laser systems, lasers are classified into several types 
+I. 
+Solid lasers 
+: Ruby laser, Nd;YAG laser, Nd;Glass 
+II. Liquid lasers 
+: Europium Chelate laser, SeOCl2 
+III. Gas lasers 
+: CO2, He-Ne, Argon-Ion Laser 
+IV. Dye lasers 
+: Rhodamine 6G 
+V. Semiconductor lasers     : InP, GaAs.  
+ 
+RUBY LASER  
+Ruby laser is a three level solid state laser and was developed by Mainmann in 1960. 
+Ruby (Al2O3+Cr2O3) is a crystal of Aluminium oxide, in which 0.05% of Al+3 ions are replaced 
+by the Cr+3 ions. The colour of the ruby rod is pink. The active medium in the ruby rod is Cr+3 
+ions. 
+Principle or Characteristics of a ruby laser: 
+Due to optical pumping, the chromium atoms are raised to excited states then the atoms come 
+to metastable state by non-radiative transition. Due to stimulated emission the transition of 
+atoms takes place from metastable state to ground state and gives a laser beam. 
+Construction: 
+ In ruby laser 4cm length and 5mm diameter rod is generally used. 
+ Both the ends of the rods are highly polished and made strictly parallel. 
+ The ends are silvered in such a way, one becomes partially reflected and the other end 
+fully reflected. 
+ The 
+ruby 
+rod 
+is 
+surrounded by xenon 
+flash 
+tube, 
+which 
+provides the pumping 
+light 
+to 
+excite 
+the 
+chromium ions in to 
+upper energy levels. 
+ 
+ 
+ 
+ 

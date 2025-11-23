@@ -1,0 +1,99 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+80
+ 
+ 
+ 
+OR    𝑆ଶ=
+ଵ
+௡భା௡మିଶ[(𝑛ଵ𝑠ଵ
+ଶ) + (𝑛ଶ𝑠ଶ
+ଶ)] 
+ Where s1 and s2 are sample standard deviations. 
+Note: Confidence limits for difference of means  :𝜇ଵ− 𝜇ଶ = (𝑥̅ଵ−𝑥̅ଶ) ± t஑ቆට𝑆ଶቀభ
+೙భ+ భ
+೙మቁቇ 
+3.Paired t- test ( Test the significance of the difference between means of two dependent 
+samples ) : 
+Paired observations arise in many practical situations where each homogenous experimental unit 
+receives both population condition. 
+For Example: To test the effectiveness of ‘drug’ some // person’s blood pressure is measured 
+before and after the intake of certain drug. Here the individual person is the experimental unit and 
+the two populations are blood pressure “before” and “after” the drug is given 
+Paired t-test is applied for n paired observations by taking the differences d1,d2 ------dn of the paired 
+data. To test whether the differences di from a random sample of a population with mean 𝜇. 
+𝑡=
+ௗത
+௦
+√௡
+ൗ
+ 𝑤ℎ𝑒𝑟𝑒 𝑑̅ =
+ଵ
+௡𝜖 𝑑௜ and 𝑠ଶ=
+ଵ
+௡ିଵ∑൫𝑑−𝑑̅൯
+ଶ  
+Problems: 
+1. A sample of 26 bulbs gives a mean life of 990 hours with a S.D of 20 hours. The 
+manufacturer claims that the mean life of bulbs is 1000 hours . Is the sample not upto 
+the standard? 
+Sol: Given n = 26 
+𝑥̅ = 990 
+𝜇 = 1000 and S.D i.e., s = 20 
+i) 
+Null Hypothesis : 𝐻଴ : 𝜇 = 1000 
+ii) 
+Alternative Hypothesis:𝐻ଵ : 𝜇<1000( Left one tailed test )  
+(Since it is given  below standard) 
+iii) 
+Level of significance :𝛼= 0.05   
+t  tabulated value  with 25 degrees of freedom for left tailed test is 1.708 
+iv) 
+Test Statistic : 𝑡௖௔௟= 
+௫̅ି ఓ
+ೞ
+√೙షభ
+   =  
+ଽଽ଴ିଵ଴଴଴
+మబ
+√మఱ
+   = − 2.5 
+v) 
+Conclusion: Since |𝑡௖௔௟|value>𝑡ఈvalue , we reject  𝐻଴  
+Hence we conclude that the sample is not upto the standard. 
+ 
+2. A random sample of size 16 values from a normal population showed a mean of 53 and 
+sum of squares of deviations from the mean equals to 150 . Can this sample be regarded 
+as taken from the population having 56 as mean ? Obtain 95% confidence limits of the 
+mean of the population.? 
+Sol: a) Given n = 16 
+𝑥̅ = 53 
+ 𝜇 = 56 and ∑(𝑥௜−𝑥̅)ଶ = 150 
+∴𝑆ଶ = 
+∑(௫೔ି௫̅)మ 
+௡ିଵ
+  = 
+ଵହ଴
+ଵହ = 10 ⇒ S = √10 
+     Degrees of freedom 𝜗 = n-1 = 16-1 =15 
+i) 
+Null Hypothesis 𝐻଴ : 𝜇 = 56 
+ii) 
+Alternative Hypothesis 𝐻ଵ : 𝜇≠56 (Two tailed test ) 
+iii) 
+Level of significance :𝛼= 0.05   
+t  tabulated value  with 15 degrees of freedom for two tailed test is 2.13 
+iv) 
+Test Statistic : 𝑡௖௔௟= 
+௫̅ି ఓ
+ೄ
+√೙
+   =  
+ହଷିହ଺
+√భబ
+√భఱ
+   = − 3.79 
+v) 
+Conclusion: Since |𝑡௖௔௟| 𝑣𝑎𝑙𝑢𝑒 >𝑡ఈvalue , we reject  𝐻଴  

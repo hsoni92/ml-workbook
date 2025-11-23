@@ -1,0 +1,41 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+33 
+ 
+ 
+The existence of continuous bands of allowed energies can be understood starting with 
+the atomic scale. The electrons of a single isolated atom occupy atomic orbitals, which form a 
+discrete set of energy levels.  
+When two identical atoms are brought closer, the outermost orbits of these atoms 
+overlap and interact. When the wave functions of the electrons of different atoms begin to 
+overlap considerably, the energy levels corresponding to those wave functions split. 
+If more atoms are brought together more levels are formed and for a solid of N atoms, 
+each of the energy levels of an atom splits into N energy levels. These energy levels are so 
+close that they form an almost continuous band. The width of the band depends upon the 
+degree of overlap of electrons of adjacent atoms and is largest for the outermost atomic 
+electrons. 
+As a result of the finite width of the energy bands, gaps are essentially leftover between 
+the bands called forbidden energy gap.  
+The electrons first occupy the lower energy levels (and are of no importance) then the 
+electrons in the higher energy levels are of important to explain electrical properties of solids 
+and these are called valence band and conduction band.   
+ 
+ 
+ 
+Valence band:A band occupied by valence electrons and is responsible for electrical, thermal 
+and optical properties of solids and it is filled at 0K. 
+Conduction band: A band corresponding to outer most orbit is called conduction band and is 
+the highest energy band and it is completely empty at 0K. 
+The forbidden energy gap between valence band conduction band is known as the energy band 
+gap. By this solids are classified in to conductors, semiconductors and insulators.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

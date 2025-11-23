@@ -1,0 +1,101 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+42
+ 
+ 
+ 
+ r = 1
+3  or −3 
+ Since we cannot haver = −3 
+Thus r = 
+ଵ
+ଷ 
+8. Given the following information regarding a distribution 𝑵= 𝟓, 𝐗 ഥ= 𝟏𝟎, 𝐘ഥ= 𝟐𝟎,
+∑(𝐗−𝐘)𝟐= 𝟏𝟎𝟎, ∑(𝐘−𝟏𝟎)𝟐= 𝟏𝟔𝟎. Find the regression coefficients and  hence coefficient 
+of correlation. 
+Sol: Here dx = X −4, dy =  Y −10 
+Xഥ= A +
+∑dx
+N
+⇒10 = Y +
+∑dx
+5
+⇒෍dx = 30(here A = 4) 
+Yഥ= B + ∑dy
+N
+⇒20 = 10 + ∑dy
+5
+⇒෍dy = 50(here B = 10) 
+b୷୶=
+∑dxdy −
+∑ୢ୶∑ୢ୷
+୒
+∑dxଶ−
+(∑ୢ୶)మ
+୒
+= −220
+−80 = 2.75 
+b୶୷=
+∑dxdy −
+∑ୢ୶∑ୢ୷
+୒
+∑dyଶ−
+(∑ୢ୷)మ
+୒
+= −220
+−340 = 0.65 
+Coefficient of correlation r = ±ටb୶୷× b୷୶  = ඥ(0.65)(2.75) = √1.7875  = 1.337 
+9. Given that 𝐗= 𝟒𝐘+ 𝟓 and 𝐘= 𝟒𝐗+ 𝟒 are the lines of regression of 𝐗 on 𝐘 and 𝐘 on  
+𝐗respectively. Show that 𝟎< 4𝒌< 1. If 𝐤=
+𝟏
+𝟏𝟔find the means of the two variables and   
+coefficient of correlation  between them. 
+   Solution: Given lines are X= 4Y +5 …….(1) 
+                                      Y = KX+4 ……….(2) 
+  From (1) & (2), r
+σ౮
+σ౯=  4 and r
+σ౯
+σ౮=  K 
+  Multiplying these two equations we get rଶ= 4K 
+  Since 0 ≤ rଶ≤1, we have 0 ≤ 4K ≤
+ଵ
+ସ 
+  If K = 
+ଵ
+ଵ଺ then we have X = 4Y + 5         and 
+Y =  X/16 + 4 
+  We get X −4Y −5 = 0 
+  −X
+4 4Y −16 = 0 
+Adding we get 3
+ଡ଼
+ସ −21 = 0 
+X = 28 
+From(2), we get Y = 
+ଶଷ
+ସ 
+  The regression lines pass through ( x,ഥy ഥ)  
+We get means xത= 28𝑎𝑛𝑑yത =
+ଶଷ
+ସ 
+    We have  rଶ= 4k =
+ସ
+ଵ଺=
+ଵ
+ସ⇒r =  ±
+1
+2 
+    We consider positive value and take r = 
+ଵ
+ଶ 
+10.The difference between the ranks are 𝟎. 𝟓, −𝟔, −𝟒. 𝟓, −𝟑, −𝟓, −𝟏, 𝟑, 𝟎, 𝟓, 𝟓. 𝟓, 𝟎, −𝟎. 𝟓.  For 
+refracted ranks   𝐱𝐚𝐧𝐝𝐲.
+∑𝒎(𝒎𝟐ି𝟏)
+𝟏𝟐
+=3.5, 𝒓= 𝟎. 𝟒𝟒. Find the number of terms. 
+Solution: Given difference (𝑑௜) 0.5, −6, −4.5, −3, −5, −1,3,0,5,5.5,0, −0.5 
+෍d୧
+ଶ= 156 

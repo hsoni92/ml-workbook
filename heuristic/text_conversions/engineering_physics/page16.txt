@@ -1,0 +1,55 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+10 
+ 
+ 
+ 
+ 
+UNIT II                             WAVE OPTICS 
+Introduction:  
+Optics is a branch of physics which deals with the “Theory of light and its propagation 
+in a given medium”. The branch of optics is divided into two parts  
+1. Ray or Geometrical optics and  
+2. Physical or Wave optics 
+Ray optics: Ray optics deals with image formation by optical systems. It was supported by 
+Newton’s corpuscular theory. It deals with the particles propagating in a medium called “light-
+photons with energy En = nhυ in a medium” 
+Physical optics:Physical optics deals with nature of light. Huygens proposed the wave 
+theory of light. According to this, a luminous body is a source of disturbance in a hypothetical 
+medium called “ether” 
+Superposition Principle:  According to superposition principle “The resultant or total 
+displacement of the medium acted upon by two or more waves simultaneously equal to sum or 
+difference of displacements of individual waves”. 
+1
+2
+ 
+ 
+ 
+n
+R or Y
+y
+y
+y
+
+
+
+ 
+Interference of light:   
+It is defined as “Modification of Resultant Intensity of 
+light obtained by the superposition of two or more light waves”. 
+This theory of interference of light was developed by Thomas 
+young in his experimental study of light. The resultant intensity 
+consists of series of bright & dark fringes that appear on the 
+screen which are known as interference pattern or interference 
+fringes which correspond to maximum & minimum intensities of light.  
+ 
+Interference pattern may be either straight or circular or parabolic (Arc) fringes 
+Coherent Sources:If the phase difference between two light waves emitted from two 
+sources is zero or has a constant value then the sources are said to be coherent. 
+Incoherent- sources:If the phase difference between two light waves coming from two 
+sources changes with time, the sources are called as “In-coherent Sources”. 
+Types of interference:Interference of light based upon young’s double slit experiment is 
+divided into two types. 

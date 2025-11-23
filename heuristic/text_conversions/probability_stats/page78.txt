@@ -1,0 +1,116 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+71
+ 
+ 
+ 
+iv) 
+Test Statistic :𝑍௖௔௟=
+௣భ ି  ௣మ
+ට௣௤ቀభ
+೙భାభ
+೙మቁ
+ 
+We have p = 
+௡భ௣భା௡మ௣మ
+௡భା௡మ
+ = 
+௫భ ା௫మ 
+௡భା௡మ = 
+ଵ଺ାଷ
+ହ଴଴ାଵ଴଴ =  
+ଵଽ
+଺଴଴ = 0.032 
+q = 1- p = 0.968 
+= 
+଴.଴ଷଶି଴.଴ଷ
+ට(଴.଴ଷଶ)(଴.ଽ଺଼)ቀభ
+ఱబబାభ
+భబబቁ
+ 
+଴.଴଴ଶ 
+଴.଴ଵଽ=  0.104 
+v) 
+Conclusion: Since |Zୡୟ୪|value <Z஑value , we accept  𝐻଴  
+Hence we conclude that the machine has improved. 
+18. In an investigation on the machine performance the following results are obtained . 
+ 
+No# of units inspected 
+No# of defectives 
+Machine 1 
+375 
+17 
+Machine 2 
+450 
+22 
+Test whether there is any significant performance of two machines at 𝜶 = 0.05 
+Sol: Let 𝑃ଵ and 𝑃ଶ be the proportions of defective units in the population of units inspected in 
+machine 1 and Machine 2 respectively. 
+Given 𝑛ଵ = Sample size of the Machine 1 = 375 
+𝑛ଶ = Sample size of  the Machine 2  = 450 
+𝑥ଵ = Number of defectives of the Machine 1  = 17 
+𝑥ଶ= Number of defectives of the Machine 2  = 22 
+∴𝑝ଵ = 
+௫భ
+௡భ= 
+ଵ଻
+ଷ଻ହ = 0.045  and𝑝ଶ = 
+௫మ
+௡మ= 
+ଶଶ
+ସହ଴ = 0.049 
+ 
+i) 
+Null Hypothesis 𝐻଴ : 𝑃ଵ =  𝑃ଶ 
+ii) 
+Alternative Hypothesis 𝐻ଵ : 𝑃ଵ ≠𝑃ଶ ( Two  Tailed test) 
+iii) 
+ Level of Significance :𝛼= 0.05   (𝑍ఈ = 1.96 ) 
+iv) 
+Test Statistic :𝑍௖௔௟=
+௣భ ି  ௣మ
+ට௣௤ቀభ
+೙భାభ
+೙మቁ
+ 
+We have p = 
+௡భ௣భା௡మ௣మ
+௡భା௡మ
+ = 
+௫భ ା௫మ 
+௡భା௡మ = 
+ଵ଻ାଶଶ
+ଷ଻ହାସହ଴ =  
+ଷଽ
+଼ଶହ = 0.047 
+q = 1- p = 1- 0.047 = 0.953 
+= 
+଴.଴ସହି଴.଴ସଽ
+ට(଴.଴ସ଻)(଴.ଽହଷ)ቀభ
+యళఱାభ
+రఱబቁ
+ 
+= -  0.267 
+v) 
+Conclusion: Since |Zୡୟ୪|value <Z஑value , we accept  𝐻଴  
+Hence we conclude that there is no significant difference in performance of machines.  
+ 
+19. A cigarette manufacturing firm claims that its brand A line of cigarettes outsells its 
+brand B by 8% . If it is found that 42 out of 200 smokers prefer brand A and 18 out 
+of another sample of 100 smokers prefer brand B . Test whether 8% difference is a 
+valid claim? 
+Sol: Given 𝑛ଵ = 200 
+𝑛ଶ = 100 
+𝑥ଵ = Number of smokers preferring brand A= 42 
+𝑥ଶ= Number of smokers preferring brand B = 18 
+∴𝑝ଵ = 
+௫భ
+௡భ= 
+ସଶ
+ଶ଴଴ = 0.21  and𝑝ଶ = 
+௫మ
+௡మ= 
+ଵ଼
+ଵ଴଴ = 0.18 

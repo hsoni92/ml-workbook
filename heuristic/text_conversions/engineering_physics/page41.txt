@@ -1,0 +1,75 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+35 
+ 
+ 
+ 
+Introduction: 
+All dielectric materials are insulators but all insulators are not perfect dielectric 
+materials. There are no free charges available for conduction in a dielectric. All the electrons 
+are tightly bound to their nucleus of the atoms. When the dielectric is placed in an electric 
+field, then separation of positive and negative charges takes place in a dielectric, causing 
+polarization of dielectric. Dielectrics are characterized by polarization & dielectric constant. 
+Dielectrics materials store large amounts of electro-static fields. 
+ 
+There are two principal methods by which a dielectric can be polarized: stretching and 
+rotation.Stretching an atom or molecule results in an induced dipole moment added to every 
+atom or molecule.Rotation occurs only in polar molecules — those with a permanent dipole 
+moment like the water molecule shown in the diagram below. 
+ 
+Basic Definitions: 
+(1)Electric Dipole: Two opposite charges of equal magnitude 
+separated by a finite distance constitutes an electric dipole. 
+ 
+(ii) Dipole moment(µ): Electric dipole moment is defined  as 
+the  product of one of the charges and the charge separating 
+distance. 
+Units: coulomb meter or Debye,   1 Debye =3.3 × 10-30 c-m 
+ 
+(iii) Permittivity (ε):  Permittivity represents the easily polar sable nature of the dielectric or 
+medium.      
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+εo=permittivity of free space=8.854×10-12  F/m 
+ 
+ 
+(iv)Dielectric constant(εr): Dielectric constant is the 
+ratio between the permittivity of the medium and the 
+permittivity of free space. 
+ 
+ 
+ 
+ 
+Let us take a parallel plate capacitor. Suppose 
+the separation distance between the plates is d. Use 
+air or vacuum as a medium for this experiment. 
+ 
+ 
+ 
+Suppose +Q is the charge on 
+one plate and –Q is charge on the second plate. Bring 
+a rectangular slab made up of conducting material 
+between the plates of the capacitor. The thickness of 
+the slab must be less than the distance between the plates of the capacitor. When the electric 
+field will be applied then polarization of molecules will be started. The polarization will take 
+place in the direction same as that of electric field. Consider a vector that must be polarized, 
+name it as P. The polarization vector must be in the direction of electric field Eo. Then this 
+vector will start its functioning and will produce an electric field Ep in the opposite direction to 
+that of Eo. The net electric field in the circuit is shown by the figure.  
+εr = ε/εo 
+ 
+ 
+    E= Eo – Ep 

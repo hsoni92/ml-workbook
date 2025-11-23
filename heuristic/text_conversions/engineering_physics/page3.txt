@@ -1,0 +1,32 @@
+Unit-4 covers Dielectric & Magnetic properties of materials. The dielectric materials deals 
+with introduction & basic definitions of dielectric materials, types of  polarizations(Electronic 
+& Ionic) and calculation of their polarizabilities, internal fields in a solid , Clausius-Mossotti 
+relation. Magnetic materials with introduction & basic definitions, Origin of magnetic 
+moment(Bohr magneton), classification of dia, para & ferro magnetic materials, properties of 
+anti-ferro and ferri magnetic materials, Hysteresis curve based on domain theory, soft and 
+hard magnetic materials. Dielectric materials finds useful in capacitor, power transformer, 
+cables, spark generators, transducers. A magnetic material finds application in making of 
+permanent magnets, core materials for inductance coils & transformers, relays & heavy 
+current engineering. 
+Unit-5 deals with Lasers & Fibreoptics first chapter of unit-5 deals with lasers where students 
+were able to study the laser principles and features, absorption and emission(spontaneous & 
+stimulated mechanisms), Population inversion and various pumping schemes of laser 
+systems, laser mechanism and types of laser systems such as Ruby, He-Ne & Semiconductor 
+lasers & its applications. 
+The second chapter of unit-5 deals with fiber-optics where students were able to know about 
+principle & construction of optical fibers, Acceptance angle & N.A. relations, modes of 
+propagation of light through step-index and graded index fibers(Single & Multi-mode 
+fibers),optical communication system & applications of fibers. Students were able to know 
+the importance of optical fiber & lasers in photonics and fiber-optics industry. Optical fibers 
+finds application in communication and broadcasting the information from place to place. 
+ The concepts in this material are explained in very lucid manner & the contents are 
+optimised so that student will follow & digest the content. Language is simple & self 
+explanatory. Authors express their happiness on the encouraging welcome given to hand 
+book/material made by physics faculty all over. We are thankful to all physics faculty in 
+taking pain in preparation of the digital content/hand-book. Comments and feedback for the 
+improvement of hand book is welcome & appreciated. I hope this material will be beneficial 
+to both students for preparation of internal & final semester exams. 
+ 
+                                                                                                                          
+                                                                                                                               AUTHORS 
+ 

@@ -1,0 +1,109 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+24
+ 
+ 
+ 
+Taking 𝜆ଶ= 𝑘, 𝑤𝑒 𝑔𝑒𝑡 𝑘ଶ−2𝑘−4 = 0 
+∴𝑘= 4, −2 
+∴λଶ= 4   
+λ = 2 
+Therefore, Mean of the Poisson distribution = 2 
+𝑃(𝑋≤2) = 𝑃(𝑋= 0) + 𝑃(𝑋= 1) + 𝑃(𝑋= 2) 
+                                                        =
+௘షమఒబ
+଴!
++
+௘షమଶభ
+ଵ!
++
+௘షഊଶమ
+ଶ! = 0.54. 
+3.A car hire firm has 2 cars which it hires out day by day.The number of demands for a  
+car on each day is distributed as poisson with mean 1.5 Calculate the proportion of days 
+i)on which there is no demand 
+ii) on which demand is refused. 
+Sol: Let number of demands for cars be the success. 
+Given mean = 1.5= 𝜆 
+Using Poisson distribution𝑃(𝑥= 𝑟) =
+௘షഊఒೝ
+௥!  
+i)Probability that there is no demand for car is  
+𝑃(𝑥= 0) = 𝑒ିଵ.ହ(1.5)଴
+0!
+= 0.223 
+Expected number of days that there is no demand =N𝑃(0) = 365(0.223) 
+   = 81.39~ 81 𝑑𝑎𝑦𝑠 
+ii) Probability that  demand refused for car is 
+𝑃(𝑥> 2) = 1 −𝑃(𝑥= 0) −𝑃(𝑥= 1) −𝑃(𝑥= 2) 
+= 1 −𝑒ିଵ.ହ(1.5)଴
+0!
+−𝑒ିଵ.ହ(1.5)ଵ
+1!
+−𝑒ିଵ.ହ(1.5)ଶ
+2!
+= 0.191 
+Expected number of days that demand refused for car   = N𝑃(𝑥> 2) 
+                  = 365(0.191) = 69.7~ 70 𝑑𝑎𝑦𝑠. 
+4.A hospital switch board receives an average of 4 emergency calls in a 10-minute interval.     
+   What is the probability that (i) there are at most 2 emergency calls in a 10 minute 
+    interval(ii) there are exactly 3emergency calls in a 10-minute interval. 
+Sol: Mean, λ= (4 calls/10 minutes) = 4 calls 
+        ⸫P (X= x) =
+௘ష ಓ ஛ೣ
+୶!
+ = 
+௘ష ర ସೣ
+୶!
+=
+ଵ
+௘ర.
+ସೣ
+௫! 
+   (i)P (at most 2 calls) = P (X≤2) 
+                                    =P(X=0) +P(X=1) + P(X=2) 
+                                    = 
+ଵ
+௘ర+
+ଵ
+௘ర. 4 +
+ଵ
+௘ర.
+ସమ
+ଶ! = 13𝑒ିସ =0.2381 
+   (ii)P (exactly 3 calls) = P(X=3) = 
+ଵ
+௘ర.
+ସయ
+ଷ! = 0.1954 
+ 
+5.The distribution of typing mistakes committed by typist is given below. 
+    Fit a Poisson    distribution for it. 
+Mistakes per page
+0 
+1 
+2 
+3 
+4
+5
+Number of pages 
+142
+156
+69
+27
+5
+1
+ 
+Sol: Given n= 5,∑𝑓= 142 + 156 + 69 + 27 + 5 + 1 = 400 
+∑𝑥௜𝑓௜ == 0(142) + 1(156) + 2(69) + 3(27) + 4(5) + 5(1) = 400 
+         ∴ Mean of the distribution =
+∑୶౟୤౟ 
+∑୤౟= 
+ସ଴଴
+ସ଴଴ = 1 
+                                                                                               . 
+We have Mean of the Poisson distribution = 𝜆= 1 
+ 
+ 

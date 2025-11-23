@@ -1,0 +1,47 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+37
+ 
+ 
+ 
+The following are scatter diagrams of Correlation. 
+ 
+Karl Pearson’s Coefficient of Correlation 
+Karl Pearson suggested a mathematical method for measuring the magnitude of linear relationship 
+between 2 variables. This is known as Pearsonian Coefficient of correlation. It is denoted by ‘𝑟’. 
+This method is also known as Product-Moment correlation coefficient  
+ 
+r =
+େ୭୴(୶୷)
+σ౮σ౯
+=
+∑୶୷
+୒஢౮஢౯ 
+=
+∑ଡ଼ଢ଼
+ඥ∑ଡ଼మ∑ଢ଼మ 
+X = (x −Xഥ ) , Y = (y −Yഥ ) where, X,ഥYഥ  are means of the series 𝑥&𝑦. 
+σ୶= standard deviation of series x 
+σ୷=  standard deviation of series y 
+Properties  
+1. The Coefficient of correlation lies b/w −1&+1 . 
+2. The Coefficient of correlationis independent of change of origin & scale of measurements. 
+3. If X, Y are random variables and a, b, c, dare any numbers such that a ≠ 0, c ≠ 0 then  
+r(aX + b, cY +  d) = ac
+|ac| r(X, Y)  
+4. Two independent variables are uncorrelated. That is if X and Y are independent variables then 
+r(X, Y) =  0 
+Rank Correlation Coefficient 
+Charles Edward Spearman found out the method of finding the Coefficient of correlation by ranks. 
+This method is based on rank & is useful in dealing with qualitative characteristics such as 
+morality, character, intelligence and beauty. Rank correlation is applicable to only to the 
+individual observations. 
+formula: ρ = 6
+∑ୈమ
+୒(୒మିଵ) 
+where  :ρ - Rank  Coefficient of correlation 
+Dଶ- Sum of the squares of the differences of two ranks 
+N- Number of paired observations. 
+ 

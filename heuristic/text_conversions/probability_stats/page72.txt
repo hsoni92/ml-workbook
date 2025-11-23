@@ -1,0 +1,122 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+65
+ 
+ 
+ 
+iii) 
+Level of significance :𝛼= 0.05   (𝑍ఈ = 1.96 ) 
+iv) 
+Test Statistic : 𝑍௖௔௟= 
+௫̅ି ఓ
+഑
+√೙
+  = 
+଻଴ିହ଺
+మఱ
+√లర
+  = 4.48 
+v) 
+Conclusion: Since |𝑍௖௔௟| 𝑣𝑎𝑙𝑢𝑒 >𝑍ఈvalue , we reject  𝐻଴  
+∴ Sample cannot be regarded as one coming from the population 
+2. In a random sample of 60 workers , the average time taken by them to get to work is 
+33.8 minutes with a standard deviation of 6.1 minutes . Can we reject the null 
+hypothesis 𝝁 = 32.6 in favor of alternative null hypothesis 𝝁> 32.6 at 𝜶 = 0.05 LOS 
+Sol : Given n = 60 , 𝑥̅ = 33.8 , 𝜇 = 32.6 and 𝜎 = 6.1 
+i) 
+Null Hypothesis 𝐻଴ : 𝜇 = 32.6 
+ii) 
+Alternative Hypothesis 𝐻ଵ : 𝜇> 32.6 ( Right one tailed test )  
+iii) 
+Level of significance :𝛼= 0.01   (𝑍ఈ = 2.33 ) 
+iv) 
+Test Statistic : 𝑍௖௔௟= 
+௫̅ି ఓ
+഑
+√೙
+   =  
+ଷଷ.଼ିଷଶ.଺
+ల.భ
+√లబ
+   = 
+ଵ.ଶ 
+଴.଻଼଻ହ = 1.5238 
+v) 
+Conclusion: Since 𝑍௖௔௟ 𝑣𝑎𝑙𝑢𝑒 <𝑍ఈvalue , we accept  𝐻଴  
+ 
+3. A sample of 400 items is taken from a population whose standard deviation is 10 . 
+The mean of the sample is 40 . Test whether the sample has come from  a population 
+with mean 38 . Also calculate 95% confidence limits for the population . 
+Sol : Given n = 400 , 𝑥̅ = 40 , 𝜇 = 38 and 𝜎 = 10 
+i) 
+Null Hypothesis 𝐻଴ : 𝜇 = 38 
+ii) 
+Alternative Hypothesis 𝐻ଵ : 𝜇≠38 ( Two –tailed test ) 
+iii) 
+Level of significance :𝛼= 0.05   (𝑍ఈ = 1.96 ) 
+iv) 
+Test Statistic : 𝑍௖௔= 
+௫̅ି ఓ
+഑
+√೙
+   =  
+ଷ଼ିସ
+భబ
+√రబబ
+   = 
+ିଶ
+଴.ହ = - 4 
+v) 
+Conclusion: Since |𝑍௖௔௟| 𝑣_𝑙𝑢𝑒 >𝑍ఈvalue , we reject  𝐻଴  
+i.e., the sample is not from the population whose is 38. 
+∴  95% confidence interval is ቀ𝑥̅ −1.96.
+ఙ
+√௡ , 𝑥̅ + 1.96.
+ఙ
+√௡ቁ 
+i.e., ቀ40 − 
+ଵ.ଽ଺(ଵ଴)
+√ସ଴଴ , 40 + 
+ଵ.ଽ଺(ଵ଴)
+√ସ଴଴ቁ 
+= ቀ40 − 
+ଵ.ଽ଺(ଵ଴)
+ଶ଴
+ , 40 + 
+ଵ.ଽ଺(ଵ଴)
+ଶ଴
+ቁ 
+= ( 40 – 0.98 , 40 + 0.98 )  
+= ( 39.02  , 40.98 ) 
+ 
+4. An insurance agent has claimed that the average age of policy holders who issue 
+through him is less than the average for all agents which is 30.5. A random sample of 
+100 policy holders who had issued through him gave the following age distribution . 
+Age 
+16-20 
+21-25 
+26-30 
+31-35 
+36-40 
+No# 
+of 
+persons 
+12 
+22 
+20 
+30 
+16 
+ 
+Calculate the arithmetic mean and standard deviation of this distribution and use 
+these     values to test his claim at 5% los. 
+Sol : Take A = 28 where A – Assumed mean  
+𝑑௜ = 𝑥௜ – A  
+𝑥 ഥ = A + 
+௛ ∑௙೔ௗ೔
+ே
+ 
+= 28 + 
+ହ ୶ ଵ଺
+ଵ଴଴ = 28.8  

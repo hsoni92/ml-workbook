@@ -1,0 +1,51 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+52 
+ 
+ 
+ 
+Suppose when two photons each of amplitude ‘A’ are in phase with other, then young’s 
+principle of superposition, the resultant amplitude of two photons is 2A and the intensity is 4a2. 
+Since in laser many numbers of photons are in phase with each other, the amplitude of the 
+resulting wave becomes ‘nA’ and hence the intensity of laser is proportional to n2A2. So 1mw 
+He-Ne laser is highly intense than the sun. 
+ 
+4.  Highly coherence 
+A predictable correlation of the amplitude and phase at any one point with other point is 
+called coherence.In case of conventional light, the property of coherence exhibits between a 
+source and its virtual source where as in case of laser the property coherence exists between 
+any two sources of same phase. 
+There are two types of coherence 
+i) Temporal coherence  
+ii) Spatial coherence.  
+Temporal coherence (or longitudinal coherence): 
+The predictable correlation of amplitude and phase at one point on the wave train w .r. t 
+another point on the same wave train, then the wave is said to be temporal coherence. 
+ 
+ 
+ 
+Spatial coherence (or transverse coherence): 
+The predictable correlation of amplitude and phase at one point on the wave train w. r .t 
+another point on a second wave, then the waves are said to be spatial coherence (or transverse 
+coherence).Two waves are said to be coherent when the waves must have same phase & 
+amplitude. 
+ 
+ 
+ 
+INTERACTION OF LIGHT WITH MATTER AND THE THREE 
+QUANTUM PROCESSES: 
+ 
+When the radiation interacts with matter, results in the following three important 
+phenomena. They are 
+ (i)Induced or Stimulated Absorption 
+(ii)Spontaneous Emission 
+(iii)Stimulated Emission 
+STIMULATED ABSORPTION (OR) INDUCED ABSORPTION (OR) ABSORPTION:    
+An atom in the lower energy level or ground state energy level (E1) absorbs the incident photon 
+and goes to excited state (E2) as shown in figure below. This process is called induced or 
+stimulated absorption. 
+ 
+ 

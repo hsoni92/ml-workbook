@@ -1,0 +1,22 @@
+4. Common Activation Functions
+ReLU (Rectified Linear Unit): f(x) = max(0, x) - Most commonly used, helps with vanishing gradient
+problem.
+Sigmoid: f(x) = 1/(1 + e^(-x)) - Outputs values between 0 and 1, useful for binary classification.
+Tanh (Hyperbolic Tangent): f(x) = (e^x - e^(-x))/(e^x + e^(-x)) - Outputs values between -1 and 1.
+5. Training Neural Networks
+The training process involves feeding data through the network, comparing the output with the
+expected result, and adjusting the weights to minimize the error. This is typically done using
+backpropagation and gradient descent.
+Backpropagation calculates the gradient of the loss function with respect to each weight by applying
+the chain rule of calculus. Gradient descent then updates the weights in the direction that reduces
+the loss.
+6. Applications of Neural Networks
+- Image Recognition and Computer Vision
+- Natural Language Processing
+- Speech Recognition
+- Medical Diagnosis
+- Financial Forecasting
+- Autonomous Vehicles
+7. Types of Neural Networks
+Feedforward Neural Networks: The simplest type where connections do not form cycles. Information
+flows in one direction from input to output.

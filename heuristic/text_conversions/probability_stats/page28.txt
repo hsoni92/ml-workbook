@@ -1,0 +1,171 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+21
+ 
+ 
+ 
+The expected number of getting 8 heads and 4 Tails in 12 trials of such cases in256 sets  
+= 256 × 𝑃(𝑋= 8) = 2଼× 495
+2ଵଶ= 495 
+16 = 30.9375 ~3 
+ 
+3.Assume that 50% of all engineering students are good in Mathematics. Determine the    
+       probabilities that among 18 engineering students (i) exactly 10 (ii) at least 10 (iii) at 
+most 8 (iv) at least 2 and at most 9 are good in mathematics. 
+Sol: Let x be the number of engineering students who are good in Mathematics.  
+            p= The probability of students good in mathematics = 50% = 
+ଵ
+ଶ 
+            q = 1 – p = 
+ଵ
+ଶ 
+            n = Number of students = 18 
+        The probability distribution is p(x) = 𝐶௫
+௡𝑝௫𝑞௡ି௫= 𝐶௫
+ଵ଼(
+ଵ
+ଶ)௫(
+ଵ
+ଶ)ଵ଼ି௫ = 𝐶௫
+ଵ଼(
+ଵ
+ଶ)ଵ଼ 
+      (i)P(exactly 10) =p(10) = 𝐶ଵ଴
+ଵ଼(
+ଵ
+ଶ)ଵ଼= (
+ଵ
+ଶ)ଵ଼(43758) = 0.1669 
+      (ii) P( at least 10) = P( X≥10) = ∑
+𝐶௫
+ଵ଼ቀ
+ଵ
+ଶቁ
+ଵ଼
+ଵ଼
+௫ୀଵ଴
+ 
+      = ൬1
+2൰
+ଵ଼
+[𝐶ଵ଴
+ଵ଼+ 𝐶ଵଵ
+ଵ଼+ 𝐶ଵଶ
+ଵ଼+ ⋯+ 𝐶ଵ଼
+ଵ଼] 
+ 
+       (iii) P(at most 8) = P( X≤8) = ∑
+𝐶௫
+ଵ଼ቀ
+ଵ
+ଶቁ
+ଵ଼
+଼
+௫ୀ଴
+= ቀ
+ଵ
+ଶቁ
+ଵ଼
+[𝐶଴
+ଵ଼+ 𝐶ଵ
+ଵ଼+ 𝐶ଶ
+ଵ଼+ ⋯+ 𝐶଼
+ଵ଼] 
+       (iv)P(at least 2 and at most 9) = P(2≤X≤9)= ∑
+𝐶௫
+ଵ଼ቀ
+ଵ
+ଶቁ
+ଵ଼
+ଽ
+௫ୀଶ
+ 
+P(2 ≤X ≤9) = ൬1
+2൰
+ଵ଼
+[𝐶ଶ
+ଵ଼+ 𝐶ଷ
+ଵ଼+ 𝐶ସ
+ଵ଼+ ⋯+ 𝐶ଽ
+ଵ଼] 
+ 
+4.Find the probability of getting an even number 3 or 4 or 5 times in throwing a die 10 times 
+Sol: Probability of getting an even number in throwing a die   = 
+ଷ
+଺=
+ଵ
+ଶ  = 𝑝. 
+Probability of getting an odd number in throwing a die =𝑞= 
+ଵ
+ଶ. 
+     ∴Probability of getting an even number 3 or 4 or 5 times in throwing a die 10 times is 
+ 
+𝑃(𝑋= 3) + 𝑃(𝑋= 4) +  𝑃(𝑋= 5) 
+                      =10௖యቀ
+ଵ
+ଶቁ
+ଷ
+ቀ
+ଵ
+ଶቁ
+ଵ଴ିଷ
++ 10௖రቀ
+ଵ
+ଶቁ
+ସ
+ቀ
+ଵ
+ଶቁ
+ଵ଴ିସ
++ 10஼ఱቀ
+ଵ
+ଶቁ
+ହ
+ቀ
+ଵ
+ଶቁ
+ଵ଴ିହ
+ 
+=
+ଵ
+ଶభబൣ10஼య+ 10஼ర+ 10௖ఱ൧ 
+                      =
+ଵ
+ଶభబ[120 + 252 + 210] 
+                      =0.568. 
+5.Out of 800 families with 4 children each ,how many could you expect to have  
+a)three boys  b)five girls  c) 2 or 3 boys d)at least 1 boy. 
+Sol: : Given 𝑛= 5, 𝑁= 800 
+Let having boys be success 
+Probability of having a boy  =
+ଵ
+ଶ= 𝑝. 
+Probability of having girl  =𝑞= 1 −
+ଵ
+ଶ= 
+ଵ
+ଶ. 
+The probability of  having𝑟 boyss in 5 children is 
+𝑃(𝑋= 𝑟) = 𝑝(𝑟) = 5஼ೝ൬1
+2൰
+௥
+൬1
+2൰
+ହି௥
+; 𝑟= 0,1,2 … … 5 
+a)Probability of having 3 boys is given by 𝑃(𝑋= 3) = 5஼ೝቀ
+ଵ
+ଶቁ
+ଷ
+ቀ
+ଵ
+ଶቁ
+ହିଷ
+=
+ହ
+ଵ଺ 
+Expected number of families having 3 boys = 𝑁 𝑝(3) =800(
+ହ
+ଵ଺) =250 families. 

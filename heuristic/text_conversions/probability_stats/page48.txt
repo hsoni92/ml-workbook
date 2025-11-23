@@ -1,0 +1,118 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+41
+ 
+ 
+ 
+5. The heights of mothers & daughters are given in the following table. From the 2 tables of   
+regression estimate the expected average height of daughter when the height of the mother   
+is 𝟔𝟒. 𝟓 inches. 
+  Ht. of Mother(inches) 
+62 
+63 
+64 
+64 
+65 
+66 
+68 
+70 
+Ht. of the daughter(inches) 
+64 
+65 
+61 
+69 
+67 
+68 
+71 
+65 
+Sol: Let X = heights of the mother and Y = heights of the daughter 
+Let dx =  X − 65 , dy =  Y –  67, ∑x = 522, ∑dx = 2, ∑dxଶ= 50, ∑y = 530, 
+෍dy = −6 ෍dyଶ= 74, ෍dxdy = 20 
+X ഥ= ∑X
+N = 522
+8
+= 66.25 
+Y ഥ= ∑Y
+N = 530
+8
+= 65.25 
+b୷୶= 
+∑ୢ୶ୢ୷ି∑ୢ୶∑ୢ୷
+୒
+∑dxଶ−
+(∑ୢ୶)మ
+୒
+= 
+20 −
+ଶ(ି଺)
+଼
+50 −
+ଶ
+଼
+= 0.434 
+Regression equation of Yon  :Y −Yഥ = b୷୶(X −Xഥ ) 
+Y =  37.93 +  0.434X 
+when X =  64.5 thenY =  69.923 
+6. The equations of two regression lines are 𝟕𝐱−𝟏𝟔𝐲 + 𝟗 =  𝟎 and 𝟓𝐲−𝟒𝐱−𝟑 =  𝟎. 
+   Find the  coefficient of correlation and the means of 𝐱& 𝑦 . 
+Sol: Given equations are 7x −16y + 9 =  0………………..(1) 
+5y −4x −3 =  0………………….(2) 
+(1) × 4 gives 28x −64y + 36 = 0 
+(2) × 7 gives -28𝑥+ 35𝑦−21 = 0 
+On adding we get   −29𝑦 + 15 = 0 
+y = 0.5172 
+from(1) 7x =  16y −9 which gives x =  0.1034 
+since regression line  passes through (x,ഥyത) we have xത= 0.1034 
+yത= 0.5172 
+From(1) x =
+ଵ଺
+଻y −
+ଽ
+଻ 
+From (2) y =
+ସ
+ହx +
+ଷ
+ହ, 
+r σ୶
+σ୷
+= 16
+7  and r
+σ୷
+σ୶
+= 4
+5 
+Multiplying these 2equations , we get    rଶ =
+ଵ଺
+଻
+ସ
+  ହ= 
+଺ସ
+ଷହ 
+r =
+଼
+√ଷହ. 
+7. If 𝛔𝐱= 𝛔𝐲=  𝛔and the angle between the regression lines is Tan-1(
+𝟒
+𝟑). Find 𝐫. 
+      Sol: tanθ =
+σ౮σ౯
+σమ౮ାσమ౯(
+ଵି୰మ
+୰) 
+= 
+஢మ
+ଶ஢మ(
+ଵି୰మ
+୰) 
+By data, θ = Tanିଵ(
+ସ
+ଷ).  
+1 −rଶ
+2r
+= 4
+3 
+3 −3rଶ−8r = 0 
+(3r −1)(r + 3) = 0 

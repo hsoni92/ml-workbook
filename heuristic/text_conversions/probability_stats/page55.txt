@@ -1,0 +1,113 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+48
+ 
+ 
+ 
+ASSIGNMENT QUESTIONS 
+ 
+1.Fit a curve of the form Y= a +bX by the method of least squares for the following data: 
+X 
+1 
+2 
+3 
+4 
+5 
+Y 
+5 
+2 
+4.5 
+8 
+12.5 
+\ 
+2.The marks obtained by 10 students in two subjects are given below. Find the correlation 
+coefficient and lines of regression 
+Subject  
+1 
+48 
+75 
+30 
+60 
+80 
+53 
+35 
+15 
+40 
+38 
+Subject 2 
+44 
+85 
+45 
+54 
+91 
+58 
+63 
+35 
+43 
+45 
+ 
+3. The following table are the marks obtained by 12 students in economics and statistics: 
+Economics(X) 
+78 
+56 
+36 
+66 
+25 
+62 
+75 
+82 
+62Statistics(Y)
+84 
+44 
+51 
+58 
+60 
+58 
+68 
+62 
+   Obtain the regression lines. 
+4.Find the karlpearson’s coefficient of correlation for the paired data: 
+wages 
+100 
+101 
+102 
+100 
+99 
+97 
+98 
+96 
+95 
+102 
+Cost 
+of 
+living 
+98 
+99 
+99 
+95 
+92 
+95 
+94 
+90 
+91 
+97 
+ 
+5. The equations of two regression lines are 7x −16y + 9 =  0 and 5y −4x −3 =  0. 
+   Find the  coefficient of correlation and the means of x& 𝑦 . 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

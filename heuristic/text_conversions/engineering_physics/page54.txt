@@ -1,0 +1,115 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+48 
+ 
+ 
+ 
+  Where ‘c’ is the curie constant and the 𝑇𝑁 is Neel temperature. 
+     Ex:  FeO, MnO, Cr2O3  
+Ferrimagnetic materials: 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+These are the ferromagnetic materials in which 
+the magnetic interaction between any two dipoles aligns themselves 
+anti parallel to each other. But the magnitudes of any two adjacent 
+dipoles are not equal. Therefore, if we apply a small value of 
+magnetic field, it will produce a large value of magnetization. 
+ 
+ 
+ 
+ 
+Properties: 
+ 
+1. Susceptibility is positive and very large for these materials. 
+2. Spin alignment is systematic, but in anti parallel of different 
+magnitudes. 
+3. Ferrimagnetic materials possess net magnetic moment. 
+4. Above curie temperature becomes paramagnetic while below it 
+behaves as  ferrimagnetic material.   
+5. Ferrimagnetic domains become magnetic bubbles to act as 
+memory elements. 
+ 
+6. Susceptibility is inversely proportional to the temperature. The variation of susceptibility 
+with temperature is     
+𝜒=
+𝐶
+𝑇±𝑇𝑁𝑓𝑜𝑟𝑇> 𝑇𝑁 
+  
+ 
+ 
+ 
+Where, C is curie constant and  𝑇𝑁 is Neel temperature. 
+ 
+ 
+ 
+ 
+7. Ferrites are the best examples of ferromagnetic materials. 
+8. General formula of ferrites are Me2+OFe2O3 or  Me2+Fe2O4     
+Examples: Zn2+Fe2O4, CuFe2O4....... 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+DOMAIN THEORY OF FERROMAGNETISM: 
+ 
+ 
+ 
+The concept of domains was proposed by Weiss in order to 
+explain the properties of ferromagnetic materials and their 
+hysteresis effects.  
+Magnetic Domains: Every ferromagnetic material is made of 
+a very large number of miniature (very small) regions which 
+are known as domains. The boundaries separating the 
+domains are called domain walls, also known as Bloch walls.  
+In each domain the magnetic dipoles align parallel to each 
+other and produce spontaneous magnetization. The direction of spontaneous magnetization 
+varies from domain to domain. 
+  
+Process of Domain magnetization:  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+When the external field is applied there are two possible ways of alignment of random 
+domains.  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+1. By the motion of domain walls.  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+2. By rotation of domains.   
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

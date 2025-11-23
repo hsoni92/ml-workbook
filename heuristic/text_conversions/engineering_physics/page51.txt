@@ -1,0 +1,121 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+45 
+ 
+ 
+The magnetic moment contributed by a single electron is known as Bohr Magneton. 
+Mathematically it can express as  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+𝜇𝐵= 𝑒ℏ
+2𝑚 
+Proof: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Let us consider an electron revolving in a circular orbit of radius r with a speed 𝒗 .Consider a  
+ 
+ 
+pointp on the circle. The electron crosses this point once in every revolution. In one revolution 
+the electron travels 2𝜋r distance.  
+The current 𝒊 due to the electron motion in the circular loop (orbit) is    
+ 
+ 
+ 
+𝑖= 𝑐ℎ𝑎𝑟𝑔𝑒𝑜𝑓𝑒𝑙𝑒𝑐𝑡𝑟𝑜𝑛(𝑞)
+𝑡𝑖𝑚𝑒(𝑇)
+= −𝑒
+𝑇 
+Where,T is time for one revolution of electron about the nucleus.  
+𝑇=
+𝑑𝑖𝑠𝑡𝑎𝑛𝑐𝑒𝑡𝑟𝑎𝑣𝑒𝑙𝑙𝑒𝑑𝑏𝑦𝑎𝑛𝑒𝑙𝑒𝑐𝑡𝑟𝑜𝑛
+𝑠𝑝𝑒𝑒𝑑𝑜𝑓𝑎𝑛𝑒𝑙𝑒𝑐𝑡𝑟𝑜𝑛
+=
+2πr
+v  
+ 
+ 
+ 
+ 
+ 
+𝒊=
+−𝑒
+[2𝜋𝑟
+𝑣] =
+−𝑒𝑣
+2𝜋r  
+ 
+ 
+ 
+ 
+The magnetic moment 𝜇𝑙 associated with the orbit due to orbital motion of electron is  
+𝜇𝑙= 𝑖𝐴 
+Where, ’𝒊’ is current produced by the orbital motion of the electron and A is area covered by 
+the orbital(πr2). 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+𝜇𝑙= −𝑒𝑣
+2𝜋r × 𝜋𝑟2 
+Dividing and multiplying above eq. by the mass of the electron 
+𝜇𝑙= −𝑒𝑣𝑟
+  2 × 𝑚
+m  = (−𝑒
+2m)[𝑚𝑣𝑟] = (−𝑒
+2m) [𝐿] 
+ 
+w.k.t the angular momentum of an electron revolving in circular orbit is equal to integral 
+multiple of 
+ℎ
+  2π 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+𝐿 =   𝑚𝑣𝑟 = 𝑙ℎ
+  2𝜋  
+𝜇𝑙 = ( −𝑒ℎ
+ 4𝜋m)𝑙 
+                   𝜇𝑙  =    𝜇𝐵 𝑙 
+wherel= 0,1,2........  
+Where, l = orbital quantum number.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

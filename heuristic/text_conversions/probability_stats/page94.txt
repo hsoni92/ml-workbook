@@ -1,0 +1,62 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+87
+ 
+ 
+ 
+ 
+Applications of Chi – Square Distribution: 
+Chi – Square test as a test of goodness of fit : 
+ 
+𝝌𝟐– test enables us to ascertain how well the theoretical distributions such as binomial, 
+Poisson, normal etc, fit the distributions obtained from sample data. If the calculated value of 𝝌𝟐is 
+less than the table value at a specified level of generally 5% significance, the fit is considered to 
+be good. 
+If the calculated value of 𝝌𝟐is greater than the table value, the fit is considered to be poor. 
+i) Null hypothesis: H଴: There is no difference in given values and calculated values  
+ii)Altenative hypothesis: Hଵ: There is some difference in given values and calculated values 
+iii) Test Statistic 𝛘𝟐
+ୡୟ୪= ෍(O −E)ଶ
+E
+ 
+iv)At specified level of significance for n-1 d.f if the given problem is binomial distribution  
+At specified level of significance for n-2 d.f if the given problem is Poisson distribution  
+v)Conclusion :If𝝌𝟐
+ୡୟ୪ value <𝝌𝟐
+୲ୟୠ  value , then we accept H଴ , Otherwise reject H଴. 
+2. Chi – Square test for independence of attributes : 
+Definition : An attribute means a quality or characteristic 
+Eg: Drinking, Smoking, blindness, Honesty, beauty etc., 
+ 
+An attribute may be marked by its presence or absence in a number of a given population. 
+Let us consider two attributes A and B. 
+A is divided into two classes and B is divided into two classes. The various cell frequencies can 
+be expressed in the following table known as 2x2 contingency table. 
+a
+b
+a + b
+c
+d
+c+ d
+a + c
+b + d
+N =a + b + c + d
+The expected frequencies are given by 
+𝐸(𝑎) = (𝑎+ 𝑐)(𝑎+ 𝑏)
+𝑁
+ 
+𝐸(𝑏) = (𝑏+ 𝑐)(𝑎+ 𝑏)
+𝑁
+ 
+𝐸(𝑐) = (𝑎+ 𝑐)(𝑐+ 𝑑)
+𝑁
+ 
+𝐸(𝑑) = (𝑏+ 𝑑)(𝑐+ 𝑑)
+𝑁
+ 
+𝝌𝟐
+௖௔௟= ෍(𝑂−𝐸)ଶ
+𝐸
+ 

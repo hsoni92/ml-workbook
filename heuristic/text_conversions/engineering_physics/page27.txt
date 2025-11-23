@@ -1,0 +1,115 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+21 
+ 
+ 
+2.54
+e
+d
+cm
+N
+
+
+ 
+When light falls on the grating, the light gets diffracted through each slit. As a result, 
+both diffraction and interference of diffracted light gets enhanced and forms a diffraction 
+pattern. This pattern is known as diffraction spectrum.  
+Grating spectrum: 
+ 
+The condition to form the principal maxima in a grating is given by 
+
+sin
+e
+d
+n
+
+
+
+
+is called grating equation.           
+where (e + d) is the grating element and n=1, 2, …... 
+Instead of monochromatic source of light such as sodium vapour lamp, if white light 
+source such as mercury is used then each diffracted order will have different colours at 
+different angles. 
+                           For n=1  
+
+sin
+(
+)
+v
+v
+e
+d
+forviolet ray
+
+
+
+
+ 
+
+sin
+(
+)
+r
+r
+e
+d
+for red ray
+
+
+
+
+ 
+Thus in the spectrum for a grating, there is no 
+overlapping or mixing of colours unlike the spectrum 
+for a prism where different colours overlap. For a 
+grating the angle of diffraction (i.e., angular 
+dispersion) depends on λ and (e + d). Hence if two 
+different gratings of same (e + d) values are chosen, 
+they will produce same dispersion and hence they will be identical. 
+Maximum no. of orders available with a grating: 
+The principal maxima in a grating  
+
+sin
+e
+d
+n
+
+
+
+
+ 
+1
+N
+e
+d 
+
+ 
+Hence  1
+2
+0
+,
+e
+r
+r 
+
+
+
+ 
+For θ=900, the maximum possible value of sinθ is 1. 
+1
+1
+nN
+or n
+N
+
+
+
+
+ 
+This gives the maximum number of orders possible and n is a integer. 
+ 
+ 

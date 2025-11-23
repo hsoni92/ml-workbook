@@ -1,0 +1,89 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+40 
+ 
+ 
+Field𝑬𝟑:- 
+E3is the field intensity at A due to other atoms contained in the cavity. If we assume a 
+cubic structure then E3=0 because of symmetry. 
+ 
+Field𝑬𝟒: 
+E4 is the field density due to polarization charges on the surface of the cavity and it is 
+calculated by Lorentz. The enlarged view of the cavity is shown.  
+ 
+   If dA is the surface area of the sphere of radius r lying between θ and θ+dθ 
+ 
+  
+(where θ is the direction with reference to the direction of the applied force)Then𝑑𝐴=
+2𝜋(𝑃𝑄)(𝑄𝑅) 
+𝑠𝑖𝑛θ = PQ
+r => 𝑃𝑄= 𝑟𝑠𝑖𝑛θ 
+𝑎𝑛𝑑𝑑θ = QR
+r ⟹QR = rdθ 
+Hence,       
+The charge dq on the surface dA is equal to the 
+normal component of the polarization multiplied by 
+the surface area.  
+ 
+ 
+ 
+ 
+𝑑𝑞= 𝑝𝑐𝑜𝑠𝜃𝑑𝐴= 𝑃(2𝜋𝑟2𝑠𝑖𝑛𝜃𝑐𝑜𝑠𝜃𝑑𝜃) 
+Field due to this charge at the centre ‘A’ is denoted 
+by dE4 and is obtained by imagining a unit charge at 
+point ‘A’ 
+                  𝑑𝐸4  = 𝑑𝑞× 𝑙× 𝑐𝑜𝑠𝜃
+4𝜋𝜖0𝑟2
+                           =  𝑃(2𝜋𝑟2𝑠𝑖𝑛𝜃𝑐𝑜𝑠𝜃𝑑𝜃)𝑐𝑜𝑠𝜃
+4𝜋𝜖0𝑟2
+𝑑𝐸4    
+= 𝑃
+2𝜖0
+𝑐𝑜𝑠2𝜃𝑠𝑖𝑛𝜃𝑑𝜃→(3) 
+Thus, the total field E4 due to the charges on the surface of the entire cavity is obtained by 
+integrating∴∫𝑑𝐸4 =
+𝑃
+2𝜖0 ∫𝑐𝑜𝑠2𝜃
+𝜋
+0
+𝑠𝑖𝑛𝜃𝑑𝜃 
+=
+𝑃
+2𝜖0 ∫𝑐𝑜𝑠2𝜃
+𝜋
+0
+𝑑(−𝑐𝑜𝑠𝜃 
+ 
+= −
+𝑃
+2𝜖0 (
+𝑐𝑜𝑠3𝜃
+3 )
+0
+𝜋
+= −
+𝑃
+6𝜖0 (−1 −1) =
+𝑃
+3𝜖0 
+ i.e. 𝐸𝑖= 𝐸+
+𝑃
+3𝜖0 →(4)  
+where𝐸𝑖 is the internal field (or) Lorentz field. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Clausius – Mosotti relation: - 
+The relation between the dielectric constant and the polarizability of a polarized 
+dielectric is known as Clasius – Mosotti equation. Consider the dielectric having cubic 
+structure, here there are no ions and permanent dipoles in these materials, the ionic 
+polarizability𝛼𝑖 and orientational polarizability 𝛼0 are zero. 
+i.e.𝛼𝑖= 𝛼0 = 0 

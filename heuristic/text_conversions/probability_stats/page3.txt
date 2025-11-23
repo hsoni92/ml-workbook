@@ -1,0 +1,41 @@
+PROBABILITY AND STATISTICS 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+ 
+ 
+ 
+  Preface  
+     Education in mathematics forms the basis of science and engineering from undergraduate to 
+graduate level, because engineering and science are largely based on mathematical modelling. The 
+level and the quality of mathematics education sets the level of the education as a whole. 
+      Our aim is to develop a complete program for mathematics education in science and 
+engineering from basic undergraduate to graduate education. This includes several courses like  
+o Mathematics I  
+o Mathematics II  
+o Mathematics III  
+o Probability and Random Processes  
+o Probability and Statistics 
+These courses are introduced at different levels/semesters of the engineering program some being 
+common and some based on the branch/specialization chosen by the student. 
+        The purpose of these courses is to arm the student with the necessary ideas and methods, so 
+that when mathematical elements appear in other courses and research work, one can tackle them 
+with confidence, possibly with further independent study into specialized areas. Its major role is 
+to summarize, crystallize, enhance and give a forward orientation to the mathematical methods 
+taught in undergraduate curriculum, with projections to future requirements. 
+Common Features of the Mathematical Courses: 
+ 
+The courses are based on a synthesis of mathematics, computation and application. 
+ The courses are designed basing on new interests and needs of the current scenario, giving 
+a new united presentation from the start based on constructive       mathematical methods 
+including a computational methodology. 
+ These courses are designed at different levels of ambition concerning both mathematical 
+analysis and computation, while keeping a common basic core. 
+ These courses increase the motivation of the student by applying mathematical methods 
+to interesting and important concrete problems right from their introduction. 
+ While emphasis may be put on problem solving, these courses gives theoretical and 
+computational methods and builds confidence. 
+ The course contains most of the traditional material from basic courses in analysis, linear 
+algebra, applied mathematics and higher engineering mathematics. 
+ Emphasis is put on giving the student a solid understanding of basic mathematical 
+concepts. 

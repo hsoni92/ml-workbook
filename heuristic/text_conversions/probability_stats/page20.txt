@@ -1,0 +1,93 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+13
+ 
+ 
+ 
+Conditional probability density function : 
+Conditional probability density function of X on Y is  
+fଡ଼ଢ଼(X/Y) = fଡ଼ଢ଼(x, y)
+ fଢ଼(y)  
+Conditional probability density function of Y on X is  
+fଡ଼ଢ଼(Y/X) = fଡ଼ଢ଼(x, y)
+ fଡ଼(X)  
+ 
+Problems 
+1.For the following 2-d probability distribution of X and Y  
+X\Y 
+1 
+2 
+3 
+4 
+1 
+2 
+3 
+0.1 
+0.05 
+0.1 
+0 
+0.12 
+0.05 
+0.2 
+0.08 
+0.1 
+0.1 
+0.01 
+0.09 
+Find  i) P(X≤𝟐, 𝐘= 𝟐) ii)𝐅𝐗(𝟐) iii)P(Y=3) iv) P(X< 𝟑, 𝐘≤𝟒) v)𝐅𝐲(𝟑). 
+Sol:  Given 
+X\Y
+1 
+2 
+3 
+4 
+1 
+2 
+3
+0.1 
+0.05
+0.1
+0 
+0.12
+0.05
+0.2 
+0.08
+0.1
+0.1 
+0.01
+0.09
+ 
+i)P(X≤2, Y = 2) =P(X= 1, Y = 2)+ P(X= 2, Y = 2) 
+                           = 0+0.12 
+                           = 0.12 
+              ii) Fଡ଼(2) =P(X≤2) = P(X= 1) + P(X= 2) 
+                             =∑p(x୧ , y୨)
+୨
++ ∑p൫x୧ , y୨൯
+୨
+ 
+=(0.1+0+0.2+0.1)+(0.05+0.2+0.08+0.1) = 0.66 
+ 
+          iii) P(Y=3) =∑p(x୧ , y୨)
+୧
+ 
+             = 0.2+0.08+0.1 
+             = 0.38. 
+         iv) P(X< 3, Y ≤4) =P(X< 3, Y = 1)+ P(X< 3, Y = 2)+ P(X< 3, Y = 3) 
+                                                      + P(X< 3, Y = 4) 
+ 
+ = P(X= 1, Y = 1) +P(X= 2, Y = 1)+ P(X= 1, Y = 2)  
+                              +P(X= 2, Y = 2)+ P(X= 1, Y = 3) +P(X= 2, Y = 3) 
+                               +P(X= 1, Y = 4) +P(X= 2, Y = 4) 
+= (0.1+0+0.2+0.1) +(0.05+0.2+0.08+0.1) 
+                                       =0.66 
+v)F୷(3)= P(Y≤3) = P(Y= 1) + P(Y= 2)+ P(Y= 3) 
+ =(0.1+0.05+0.1) +(0+0.12+0.05) +(0.2+0.08+0.1) 
+ =0.8 
+2.Suppose the random variables X and Y have the joint density function defined by  
+𝐟(𝐱, 𝐲) = ቄ𝐜(𝟐𝐱+ 𝐲) 𝐢𝐟 𝟐< 𝐱< 𝟔, 𝟎< 𝐲< 𝟓
+𝟎    𝐨𝐭𝐡𝐞𝐫𝐰𝐢𝐬𝐞
+ 
+Find i)c   ii)P(X>3,Y>2)    iii) P(X>3) 

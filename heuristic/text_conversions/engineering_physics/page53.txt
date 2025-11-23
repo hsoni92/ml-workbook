@@ -1,0 +1,102 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+47 
+ 
+ 
+ 
+ 
+Antiferro magnetic materials: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+These are the ferromagnetic materials in which the magnetic 
+interaction between any two dipoles aligns themselves anti parallel to 
+each other. All the dipoles are equal in magnitude. Therefore the 
+resultant magnetization is zero. 
+ 
+ 
+ 
+Properties: 
+1. Susceptibility is small and positive for these materials. 
+2. Spin alignment is systematic, but in anti parallel manner. 
+3. Initially, the susceptibility increases slightly as the temperature 
+increases, and beyond a particular temperature known as Neel 
+temperature the susceptibility decreases with temperature.  
+4. The temperature at which anti ferromagnetic material converts into paramagnetic 
+material is known as Neel`s temperature. 
+5. Susceptibility is inversely proportional to the temperature. The 
+variation of susceptibility with temperature is expressed as 
+𝜒=
+𝐶
+𝑇+𝑇𝑁         When T > TN 
+𝜒∝𝑇                When T < TN 
+     
+𝝌 – T curve 
+ 
+ 
+ 
+Transition 
+of 
+material at Tc 
+Do not change. 
+On cooling these are 
+converted 
+into 
+ferromagnetic 
+material. 
+Converted into  
+para magnetic material 
+aboveTc. 
+In the presence 
+of 
+magnetic 
+field. 
+The magnetic lines of 
+force are pulled out 
+from 
+the 
+material 
+.Hence, magnetic flux 
+density 
+is 
+greater, 
+outside the material 
+than inside. 
+ 
+The magnetic lines of 
+force 
+are 
+attracted 
+towards the centre of 
+the material and hence 
+the Bin material is 
+greater than the B out. 
+ 
+ 
+The magnetic lines of 
+force are highly attracted 
+towards the centre of the 
+material and hence the 
+Bin 
+material 
+is 
+very 
+greater than the B out. 
+ 
+ 
+Example: 
+Bi, Zn, H2O, Gold..... 
+Al, Pt, Mn , cucl2.... 
+Fe, 
+Ni, 
+Co, 
+Mno, 
+Fe2o3.... 

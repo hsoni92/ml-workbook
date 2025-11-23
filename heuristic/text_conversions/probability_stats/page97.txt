@@ -1,0 +1,109 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+90
+ 
+ 
+ 
+ 
+4. On the basis of information given below about the treatment of 200 patients suffering 
+from disease , state whether the new treatment is comparatively  
+Superior to the conventional treatment. 
+Treatment 
+Favorable 
+Not Favorable 
+Total 
+New 
+60 
+30 
+90 
+Conventional 
+40 
+70 
+110 
+ 
+Sol: i) H଴: The two attributes are independent 
+ii) Hଵ: The two attributes are not independent 
+iii) 𝛘𝟐
+ୡୟ୪= ෍(𝑂−𝐸)ଶ
+𝐸
+ 
+ where E = 
+𝐑𝐨𝐰 𝐭𝐨𝐭𝐚𝐥  𝐱 𝐂𝐨𝐥𝐮𝐦𝐧 𝐭𝐨𝐭𝐚𝐥 
+𝐆𝐫𝐚𝐧𝐝 𝐭𝐨𝐭𝐚𝐥
+ 
+Calculation of 𝝌𝟐: 
+O 
+E 
+(𝑂−𝐸)ଶ 
+(𝑂−𝐸)ଶ
+𝐸
+ 
+60 
+45 
+225 
+5 
+30 
+45 
+225 
+5 
+40 
+55 
+225 
+4.09 
+70 
+55 
+225 
+4.09 
+ 
+ 
+ 
+∑
+(ைିா)మ
+ா
+ = 18.18 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+𝝌𝟐
+௖௔௟= 18.18 
+𝝌𝟐
+௧௔௕  for 1 d.f . at 5% los is 3.841 
+since 𝝌𝟐
+௖௔௟ value >𝝌𝟐
+௧௔௕ value ,  we reject 𝐻଴ 
+Hence we conclude that new and conventional treatment are not independent. 
+ 
+ 
+Snedecor’s F- Test of Significance 
+The F-Distribution is also called as Variance Ratio Distribution as it usually defines the ratio 
+of the variances of the two normally distributed populations. The F-distribution got its name after 
+the name of R.A. Fisher, who studied this test for the first time in 1924. 
+Symbolically, the quantity is distributed as F-distribution with and degrees of freedom 𝜗ଵ= 𝑛ଵ−
+1and 𝜗ଶ= 𝑛ଶ−1 is represented as: 
+90 x 100
+200
+= 45 
+90 x 100
+200
+= 45 
+90 
+100x 110
+200
+= 55 
+100 x 110
+200
+= 55 
+11 
+100 
+100 
+200 

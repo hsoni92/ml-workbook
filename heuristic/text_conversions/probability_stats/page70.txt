@@ -1,0 +1,101 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+63
+ 
+ 
+ 
+CRITICAL VALUES OF Z 
+LOS ∝ 
+1% 
+5% 
+10% 
+µ≠µ଴ 
+|𝑍| >2.58 
+|𝑍|>1.96 
+|𝑍|>1.645 
+µ> µ଴ 
+Z>2.33 
+z>1.645 
+Z>1.28 
+µ< µ଴ 
+Z<-2.33 
+Z<-1.645 
+Z<-1.28 
+ 
+NOTE: Confidence limits for the mean of the population corresponding to the given sample. 
+                𝜇= 𝑋ത± 𝑍∝ଶ
+ൗ( S.E of 𝑋ത) i.e, 
+                𝜇= 𝑋ത± 𝑍∝ଶ
+ൗቀ
+ఙ
+√௡ቁ (or) 𝜇= 𝑋ത± 𝑍∝ଶ
+ൗቀ
+ఌ
+√௡ቁ 
+2. Test of Significance for Difference of Means of two Large Samples 
+     Let 𝑥ଵ
+തതത&𝑥ଶ
+തതതbe the means of the samples of two ramdom sizes 𝓃ଵ&𝓃ଶ drawn from two    
+    populations having means 𝜇ଵ&𝜇ଶ and SD’s 𝜎ଵ&𝜎ଶ 
+i) 𝐍𝐮𝐥𝐥 𝐡𝐲𝐨𝐩𝐨𝐭𝐡𝐞𝐬𝐢𝐬: 𝐻଴: 𝜇ଵ= 𝜇ଶ 
+ii) Alternative hypothesis :: a) H1 : 𝜇ଵ≠𝜇ଶ(Two Tailed) 
+      b)Hଵ: 𝜇ଵ  <  µଶ  (Left one tailed) 
+ c)Hଵ: 𝜇ଵ  > µଶ  (Right one tailed) 
+iii) Level of Significance: Set the LOS α 
+iv) Test Statistic :𝑍௖௔௟=
+(×ഥభି×ഥమ)ିఋ
+ௌா ௢௙(×ഥభି×ഥమ) = -
+(×ഥభି×ഥమ)ିఋ
+ඨ഑భమ
+೙భା
+഑మమ
+೙మ
+ 
+      Where 𝛿= 𝜇ଵ−𝜇ଶ( where given constant)  
+                  Other wise 𝛿= 𝜇ଵ−𝜇ଶ=0 
+𝑍௖௔௟=
+×ഥభି×ഥమିఋ
+ඨ഑భమ
+೙భା
+഑మమ
+೙మ
+           if 𝜎ଵ
+ଶ= 𝜎ଶ
+ଶ= 𝜎ଶ then 𝑍௖௔௟=
+௑തభି௑തమ
+ටభ
+೙భశభ
+೙మ
+഑
+ 
+Critical value of Z from normal table at the LOS α 
+iv) Decision: If |𝑍௖௔௟| < 𝑍௧௔௕, accept H0 otherwise reject H0 
+NOTE:  Confidence limits for difference of means 
+𝜇ଵ−𝜇ଶ= (𝑋തଵ−𝑋തଶ) ± 𝑧∝ଶ
+⁄ [𝑆. 𝐸 𝑜𝑓 (𝑋തଵ−𝑋തଶ)] 
+= (𝑋തଵ−𝑋തଶ) ± 𝑧∝ଶ
+⁄ ቎ඨ𝜎ଵ
+ଶ
+𝑛ଵ
++ 𝜎ଶ
+ଶ
+𝑛ଵ
+቏ 
+3. Test of Significance for Single Proportions 
+       Suppose a random sample of size n has a sample proportion p of members possessing a 
+certain attribute (proportion of successes). To test the hypothesis that the proportion P in 
+the population has a specified value P0 . 
+i) 
+𝐍𝐮𝐥𝐥 𝐡𝐲𝐨𝐩𝐨𝐭𝐡𝐞𝐬𝐢𝐬: 𝐻଴: 𝑃= 𝑃଴ 
+ii) 
+Alternative hypothesis : a) H1 : P≠𝑃଴(Two Tailed test ) 
+             b)Hଵ∶ 𝑃< 𝑃଴ (Left one- tailed) 
+            c) Hଵ∶ P> 𝑃଴   (Right one tailed) 
+        iii) Test statistic :𝑍௖௔௟=
+௣ି௉
+ටುೂ
+೙
+  when P is the Population proportion 𝑄= 1 −𝑃 
+  iv) At specified LOS ∝, critical value of Z 

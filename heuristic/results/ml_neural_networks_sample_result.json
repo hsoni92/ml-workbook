@@ -1,0 +1,42 @@
+[
+  {
+    "page": 1,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 2,
+    "has_formula": true,
+    "formula_percentage": 25.72,
+    "detected_formulas": [
+      {
+        "text": "ReLU (Rectified Linear Unit): f(x) = max(0, x) - Most commonly used, helps with vanishing gradient",
+        "type": "displayed",
+        "score": 0.6
+      },
+      {
+        "text": "Sigmoid: f(x) = 1/(1 + e^(-x)) - Outputs values between 0 and 1, useful for binary classification.",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Tanh (Hyperbolic Tangent): f(x) = (e^x - e^(-x))/(e^x + e^(-x)) - Outputs values between -1 and 1.",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      }
+    ]
+  },
+  {
+    "page": 3,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 4,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  }
+]

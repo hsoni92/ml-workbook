@@ -1,0 +1,59 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+61 
+ 
+ 
+ 
+Uses of Ruby laser: 
+- 
+Used in distance measurement using ‘pulse echo technique’ 
+- 
+Used for measurement of plasma properties such as electron density and temperature.  
+- 
+Used to remove the melanin of the skin.  
+- 
+Used for recording pulsed holograms.  
+- 
+Used as target designators and range finders in military. 
+Draw backs of Ruby laser: 
+- 
+It requires high pumping power. 
+- 
+The efficiency of ruby laser is very small. It is a pulse laser. 
+ 
+He-Ne LASER 
+It was discovered by A. Javan & his co-workers in 1960. It is a continuous wave gas laser. It 
+consists of mixture of He & Ne in 10:1 ratio as a active medium. 
+ 
+Principle/Characteristics of He-Ne laser: 
+This laser is based on the principle of stimulated emission, produced in the He & Ne. The 
+population inversion is achieved due to the interaction between He & Ne gases.Using gas 
+lasers, we can achieve highly coherent, directional and high monochromatic beam.  
+ 
+Construction: 
+ In He-Ne gas laser, the He and Ne gases are taken in the ratio 10:1 in the discharge 
+tube.  
+ Two reflecting mirrors are fixed on either ends of the discharge tube, in that, one is 
+partially reflecting and the other is fully reflecting.  
+ In He-Ne laser 80cm length and 1cm diameter discharge tube is generally used.  
+ The output power of these lasers depends on the length of the discharge tube and 
+pressure of the gas mixture. 
+ Energy source of laser is provided by an electrical discharge of around 1000V through 
+an anode and cathode at each end of the glass tube.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

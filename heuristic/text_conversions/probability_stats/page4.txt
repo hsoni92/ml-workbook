@@ -1,0 +1,42 @@
+PROBABILITY AND STATISTICS 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+ 
+ 
+ 
+ The student acquires solid skills of implementing and applying the computational methods 
+learnt. 
+The idea is that making the student comfortable with both advanced mathematical concepts and 
+modern computational techniques, will open a wealth of possibilities of applying mathematics to 
+problems of real interest.  
+  
+Probability and Statistics: Course Description 
+         
+    This course is about the mathematics that is most widely used in the engineering core subjects. 
+Probability and Statistics provide an introduction to discrete and continuous probability 
+distributions, correlation and regression analysis, sampling distributions and sampling 
+inferences.Topics include the properties of both single and multiple random variables for the 
+discrete and continuous probability distributions, correlation and regression analysis for bivariate 
+as well as multivariate distributions, Estimation, sampling, testing of hypothesis for both large and 
+small samples.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

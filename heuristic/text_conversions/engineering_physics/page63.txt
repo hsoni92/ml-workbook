@@ -1,0 +1,54 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+57 
+ 
+ 
+ 
+where ‘N0’ is the number of atoms in ground or lower energy states & k is the Boltzmann 
+constant. 
+From the above equation the population of energy levels E1& E2 are given by 
+𝑁1 = 𝑁𝑜𝑒
+(−E1
+𝑘𝐵𝑇) 
+ 
+𝑁2 = 𝑁𝑜𝑒
+(−𝐸2
+𝑘𝐵𝑇) 
+ 
+At ordinary conditions N1>N2 i.e., the population in the ground or lower state is always 
+greater than the population in the excited or higher states. The stage of making, population of 
+higher energy level greater than the population of lower energy level is called population 
+inversion i.e., N2>N1. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+METASTABLE STATE:In general the number of excited particles in a system is smaller 
+than the non excited particles. The time during which a particle can exist in the ground state is 
+unlimited. On the other hand, the particle can remain in the excited state for a limited time 
+known as life time. 
+The life time of the excited hydrogen atom is of the order of 10-8sec. However there exist such 
+excited states in which the life time is greater than 10-8sec. These states are called as Meta 
+stable states.  
+PUMPING MECHANISMS (OR TECHNIQUES): 
+Pumping:  
+The process of rising more no of atoms to the excited state by artificial means is called 
+pumping. 
+A system in which population inversion is achieved is called as an active system. The 
+method of raising the particles from lower energy state to higher energy state is called 
+pumping. (or the process of achieving of population inversion is called pumping). This can be 
+done by number of ways. The most commonly used pumping methods are 
+ Optical pumping 
+ Electrical discharge pumping 
+ Chemical pumping 
+ Injection current pumping 
+ 
+ 
+ 

@@ -1,0 +1,50 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+68 
+ 
+ 
+ 
+FIBER-OPTICS 
+ 
+INTRODUCTION TO OPTICAL FIBER:  
+Fiber optics is a branch of physics which deals with the transmission & reception of light 
+waves using optical fibers which acts as a guiding media. The transmission of light waves by 
+fiber optics was first demonstrated by John Tyndall in 1870. 
+Optical Fiber:  
+Optical fiber is a thin & transparent guiding medium or material which guides the information 
+carrying light waves. It is a cylindrical wave-guide system which propagates the data & speech 
+signals in the optical frequency range. 
+A light beam acting as a carrier wave is capable of carrying more information than radio waves 
+& microwaves because of its high frequency as shown below. 
+Radio waves - 104 Hz  ,   Micro waves - 1010 Hz,   Light waves - 1015 Hz 
+Construction: 
+An optical fiber is a very thin, flexible transparent 
+made with plastic or glass. 
+It has cylindrical shape consisting of three layers or 
+sections 
+1 )  The  Core                               
+2 )   The Cladding 
+3 )   The Outer jacket  or  Buffer jacket 
+1)The Core:It is the central layer surrounded by another layer called cladding. Light is 
+transmitted within the core which has refractive index (n1). It is a denser medium. Core is made 
+of silica (SiO2). 
+2)The Cladding:It is the second layer, surrounded by a third layer called the outer jacket. It 
+has refractive index n2 which is less than the refractive index of core i.e (n1 >n2 ). It acts as a 
+rarer medium. It keeps the light within the core because n1>n2. To lower the refractive index of 
+cladding the silica is doped with phosphorous or bismuth material. 
+3)The Outer or Buffer Jacket:It is the third layer it protects the fiber from moisture & 
+abrasion. To provide necessary toughness & tensile strength, a layer of strength member is 
+arranged surrounding buffer jacket. It is made of polyurethane material. 
+Working Principle of Optical Fiber:  
+Total Internal Reflection: The principle of optical fiber is total internal reflection.  
+Condition for Total Internal Reflection: 
+1)  The light ray should move from denser to rarer medium. 
+2)  The refractive index of core must be greater than cladding i.e. n1>n2 
+3)  The angle of incidence (i) must be greater than the critical angle(θc) i.e. i>θc. 
+4)  The critical angle𝜃𝑐= 𝑠𝑖𝑛−1 𝑛2
+𝑛1. 
+ 
+ 

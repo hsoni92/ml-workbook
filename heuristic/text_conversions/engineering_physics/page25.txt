@@ -1,0 +1,165 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+19 
+ 
+ 
+ 
+ 
+sin
+sin
+2
+sin
+sin
+sin
+2
+nd
+e
+a Sin
+a
+R
+d
+e
+n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+sin
+sin
+a
+n
+
+
+
+         Where   
+sin
+e
+
+
+
+
+
+ 
+sin
+a
+n
+
+
+
+isvery small
+n
+
+
+
+
+
+
+
+ 
+sin
+na
+
+
+
+ 
+                Let na = A,                    
+sin
+A
+R
+
+
+
+ 
+ 
+Resultant intensity (I) is proportional to square of amplitude (R). Therefore, the 
+intensity is given by  
+2
+2
+2 sin
+I
+R
+A
+
+
+
+
+
+
+
+
+
+ 
+Intensity distribution: 
+The diffraction pattern consists of central principal 
+maximum for α=0. There are subsidiary or secondary maxima of 
+decreasing intensity on either sides of it at positions 𝛼=
+±
+3𝜋
+2 , ±
+5𝜋
+2 .  Between secondary maxima, there are minima at 
+positions 𝛼= ±𝜋, ±2𝜋. 
+Condition for principal maximum: 
+It is clear that intensity to be maximum means 
+𝑠𝑖𝑛𝛼
+𝛼 should also be  maximum. 
+i.e. lim
+𝛼→0
+𝑠𝑖𝑛𝛼
+𝛼
+= 1  means R =
+𝐴
+𝛼 [𝛼−
+𝛼
+3!
+3 +
+𝛼
+5!
+5 −
+𝛼
+7!
+7 + ⋯] 
+                                                 = 𝐴 [1 −
+𝛼
+3!
+2 +
+𝛼
+5!
+4 −
+𝛼
+7!
+6 + ⋯] 

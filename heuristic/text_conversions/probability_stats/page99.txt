@@ -1,0 +1,160 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+92
+ 
+ 
+ 
+and  
+𝑆ଶ
+ଶ=
+ଵ
+௡మିଵ∑(𝑦௜−𝑦ത)ଶ=
+ଵ଴ଶ.଺
+ଽ
+= 11.4 
+Let 𝐻଴ be true. Since 𝑆ଵ
+ଶ> 𝑆ଶ
+ଶ, the test statistic is  
+ 
+𝐹=
+ௌభమ
+ௌమమ=
+ଵଶ.଴ହ଻
+ଵଵ.ସ= 1.057 
+i.e., calculated F = 1.057. 
+ 
+Degrees of freedom are given by  𝑣ଵ= 𝑛ଵ−1 = 8 −1 = 7 
+and 𝑣ଶ= 𝑛ଶ−1 = 10 −1 = 9 
+ 
+Tabulated value of 𝐹 at 5% level for (7,9) degrees of freedom is 3.29 
+ 
+i.e.,𝐹଴.଴ହ(7,9) = 3.29 
+ 
+ 
+Since calculated 𝐹<tabulated 𝐹, we accept the Null Hypothesis 𝐻଴ and conclude 
+that the populations have the same variance. 
+ 
+2. The time taken by workers in performing a job by method I and method II is given below 
+Do the data show that the variances of time distribution from population from which these  
+samples are drawn do not differ significantly? 
+Sol: Let the Null Hypothesis be 𝐻଴: 𝜎ଵ
+ଶ= 𝜎ଶ
+ଶ where 𝜎ଵ
+ଶ and 𝜎ଶ
+ଶ are the variances of the two  
+populations from with the samples are drawn. 
+The Alternative Hypothesis is 𝐻ଵ: 𝜎ଵ
+ଶ≠𝜎ଶ
+ଶ. 
+ 
+ 
+ 
+ 
+ 
+Calculation of sample variances. 
+ 
+x
+x −xത
+(x −xത)ଶ
+y
+y −yത
+(y −yത)ଶ
+20 
+16 
+26 
+27 
+23 
+22 
+-2.3 
+-6.3 
+3.7 
+4.7 
+0.7 
+-0.3 
+5.29 
+39.69 
+13.69 
+22.09 
+0.49 
+0.09 
+27 
+33 
+42 
+35 
+32 
+34 
+38
+-7.4 
+-1.4 
+7.6 
+0.6 
+-2.4 
+-0.4 
+3.6
+54.76 
+1.96 
+57.76 
+0.36 
+5.76 
+0.16 
+12.96
+134
+81.34
+241
+133.72
+𝑛ଵ= 6, 𝑛ଶ= 7 
+∴𝑥̅ = ∑𝑥
+𝑛ଵ
+= 134
+6
+= 22.3, 𝑦ത= ∑𝑦
+𝑛ଶ
+= 241
+67 = 34. 
+෍(𝑥௜−𝑥̅)ଶ= 81.34, ෍(𝑦௜−𝑦ത)ଶ= 133.72 
+If 𝑆ଵ
+ଶ𝑎𝑛𝑑𝑆ଶ
+ଶ be the estimates of 𝜎ଵ
+ଶ and 𝜎ଶ
+ଶ, then 
+𝑆ଵ
+ଶ=
+1
+𝑛ଵ−1 ෍(𝑥௜−𝑥̅)ଶ= 81.34
+5
+= 16.26 
+and 
+𝑆ଶ
+ଶ=
+1
+𝑛ଶ−1 ෍(𝑦௜−𝑦ത)ଶ= 133.72
+6
+= 22.29 
+Let 𝐻଴be true  
+Since 𝑆ଶ
+ଶ>𝑆ଵ
+ଶ , the statistic is  
+F = 
+ୗమమ
+ୗభమ  = 
+ଶଶ.ଶଽ
+ଵ଺.ଶ଺଼ = 1.3699 = 1.37 
+F଴.଴ହ(5,6) d. f  = 4.39 
+Method I 
+20
+16
+26
+27
+23
+22
+- 
+Method II
+27
+33
+42
+35
+32
+34
+38

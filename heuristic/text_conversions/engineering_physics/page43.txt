@@ -1,0 +1,64 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+37 
+ 
+ 
+polarization(pe). This involves the separation of the centre of the electron cloud around an atom 
+with respect to the centre of its nucleus under the application of electric field. 
+ It occurs in monoatomic gases like He, Ne, Ar, Xe, Kr 
+ It occurs at optical frequencies (1015 Hz) 
+ It is independent of temperature. 
+Expression for Electronic polarization of a dielectric material: 
+ 
+The displacement 
+of the positively charged 
+nucleus 
+and 
+the 
+(negative) electron of an 
+atom 
+in 
+opposite 
+directions, on application 
+of an electric field,  result in electronic polarization. 
+On application of external electric field E, the electron cloud around the nucleus readily 
+shifts towards the positive end of the field. Because of this, dipole moment is created, within 
+each atom due to the separation of positive and negative charges. This separation or shift is 
+proportional to field strength (E). 
+∴  Dipole moment is the product of charge and the separation between the charges. 
+ 
+ 
+∴Induced dipole moment  𝜇∝𝐸 
+ 
+ 
+𝜇= 𝛼𝑒𝐸 
+αe is constant of proportionality or electronic polarizability and it is independent of 
+temperature. 
+Calculation of Electronic polarizability: 
+By taking classical model of an atom, the nucleus of change Ze is surrounded by an electron 
+cloud of charge –Ze distributed in a sphere of radius R. 
+  Then the charge density (Z – atomic number) is given by 
+𝜌= −𝑍𝑒
+4
+3 𝜋𝑅3 =  −3
+4 ( 𝑍𝑒
+𝜋𝑅3) →(1) 
+When an external electric field E is applied, the nucleus and electrons experience Lorentz 
+forces of magnitude ZeE in opposite direction. Because of this, the nucleus and electron cloud 
+are pulled apart. If separation is there in between nucleus and electron cloud, a coulomb force 
+develops which is attractive. 
+ 
+When Lorentz and Coulomb force are equal and opposite, equilibrium is reached.   
+Let ‘x’ be the displacement under this condition. Here, nucleus is much heavier than the 
+electron cloud; it is assumed that only the electron cloud is displaced when the external field is 
+applied. 
+Lorentz force = −𝑍𝑒𝐸 
+𝐶𝑜𝑢𝑙𝑜𝑚𝑏𝑓𝑜𝑟𝑐𝑒= 𝑍𝑒× 𝑐ℎ𝑎𝑟𝑔𝑒𝑒𝑛𝑐𝑙𝑜𝑠𝑒𝑑𝑖𝑛𝑡ℎ𝑒𝑠𝑝ℎ𝑒𝑟𝑒𝑜𝑓𝑟𝑎𝑑𝑖𝑢𝑠𝑥
+4𝜋𝜖0𝑥2
+The charge enclosed 
+= 4
+3 𝜋𝑥3𝜌 
+ 

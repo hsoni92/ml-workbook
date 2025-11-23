@@ -1,0 +1,82 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+19
+ 
+ 
+ 
+PROBABILITY DISTRIBUTIONS 
+Binomial Distribution: A Random variable ‘X’ has binomial distribution if it assumes only 
+non-negative values with probability mass function given by   
+𝑝(𝑥= 𝑟) = ൜𝑛௖ೝ𝑝௥𝑞௡ି௥
+𝑟= 0,1,2, −−−−𝑛
+0
+𝑜𝑡ℎ𝑒𝑟𝑤𝑖𝑠𝑒
+ 
+                                                    = 𝑏(𝑟; 𝑛, 𝑝) 
+Conditions For Applicability of Binomial Distributions: 
+1. Number of trials must be finite (n is finite) 
+2. The trails are independent 
+3. There are only two possible outcomes in any event i.e., success and failure. 
+4. Probability of success in each trail remains constant. 
+Examples: 
+1. Tossing a coin 𝑛 times 
+2. Throwing a die 
+3. Number of defective items in the box 
+Mean of the Binomial Distribution 
+μ = ෍r. P(r)
+୬
+୰ୀ଴
+ 
+= ෍r.
+୬
+୰ୀ଴
+nୡ౨P୰q୬ି୰ 
+      =  nୡభpଵq୬ିଵ+ 2nଶP୰q୬ିଶ+ 3nୡయpଷq୬ିଷ+ ⋯… . nnୡ౤p୬q୬ି୬ 
+ 
+ = npଵq୬ିଵ+  2.
+୬(୬ିଵ)
+ଶ!
+pଶq୬ିଶ+ 3.
+୬(୬ିଵ)(୬ିଶ)
+ଷ!
+pଷq୬ିଷ+ −−+np୬ 
+= np[ q(୬ିଵ)+(n −1)ୡభpଵq(୬ିଵ)ିଵ+ −−−+ p୬ିଵ 
+      =np[p + q]୬ିଵ 
+= np 
+since [p + q = 1] 
+⸫Mean  μ = np. 
+Variance of the Binomial Distribution 
+𝜎ଶ= 𝐸[𝑋ଶ] −(𝐸[𝑋])ଶ= 𝐸[𝑋ଶ] −𝜇ଶ= ෍𝑟ଶ
+௡
+௥ୀ଴
+𝑝(𝑟) −𝜇ଶ 
+= ෍[r(r −1) + r]P(r) −μଶ
+୬
+୰ୀ଴
+ 
+= ෍r(r −1)P(r) +
+୬
+୰ୀ଴
+෍r. P(r) −
+୬
+୰ୀ଴
+nଶpଶ 
+= ෍r(r −1)nୡ౨P୰q୬ି୰+ np −
+୬
+୰ୀ଴
+nଶPଶ 
+Let ෍r(r −1)P(r) =
+୬
+୰ୀ଴
+෍r(r −1)nୡ౨P୰q୬ି୰= 2
+୬
+୰ୀ଴
+nୡమ౨Pଶqଶn୬ିଶ+ 6nୡయPଷq୬ିଷ 
+                                                   + 12nୡ౨Pସq୬ିସ+---−+ n(n −1) P୬ 
+                                  = n(n −1)Pଶඃq୬ିଶ+ +(n −2)ୡభpଵq(୬ିଶ)ିଵ+ ⋯+ pଶඇ 
+= n(n −1)Pଶ(p + q)୬ିଶ= nଶPଶ−nPଶ 
+Thus σଶ= nଶPଶ−nPଶ+ np −nଶPଶ 
+= np(1 −p) = npq. 
+   ⸫Variance σଶ= 𝑛𝑝𝑞 

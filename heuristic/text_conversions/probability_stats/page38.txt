@@ -1,0 +1,67 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+31
+ 
+ 
+ 
+From normal curve, we ℎ𝑎𝑣𝑒  
+⇒𝑧ଵ= 1.48 
+ 
+We have𝑃(𝑋< 63) = 𝑃(𝑧< 𝑧ଶ) 
+         0.89 = 0.5+𝑃(0 ≤𝑧≤𝑧ଶ) 
+𝑃(0 ≤𝑧≤𝑧ଶ) = 0.39 
+From normal curve, wehave ⇒𝑧ଶ= 1.23 
+substituting the values of zଵ,zଶ in (1) and (2), we get 
+μ = 50,   σଶ= 100. 
+5.A r.v X is a normally distributed with mean 30 and SD 5. 
+Find the probabilities that (i)26 ≤ X ≤ 40 (ii) X ≥ 45 
+Sol:   Given mean µ = 30, σ = 5 
+(i) 
+When x=26, z =
+୶ିµ
+஢=
+ଶ଺ିଷ଴
+ହ
+= −0.8 = zଵ(say) 
+When x=40, z =
+୶ିµ
+஢=
+ସ଴ିଷ଴
+ହ
+=  2 = zଶ(say) 
+⸫P (26 ≤ X ≤ 40) = P (-0.8 ≤ z ≤ 2) 
+                             = A (zଶ) + A(zଵ) 
+                             = A (2) + A(−0.8) 
+= 0.4772 + 0.2881 = 0.7653(from Normal table) 
+(ii) 
+When x=45, z =
+୶ିµ
+஢=
+ସହିଷ଴
+ହ
+=  3 = zଵ(say) 
+            ⸫P(X≥45) = P (zଵ≥3) 
+                              = 0.5 – A (zଵ) 
+                              =0.5 – A (3) 
+                              =0.5-0.49865 
+                              = 0.00135 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

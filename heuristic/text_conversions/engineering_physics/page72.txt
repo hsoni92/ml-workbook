@@ -1,0 +1,52 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+66 
+ 
+ 
+ 
+APPLICATIONS OF LASERS 
+Due to high intensity, high mono-chromaticity and high directionality of lasers, they are 
+widely used in various fields like 
+1. communication  
+2. computers  
+3. chemistry  
+4. photography  
+5. industry  
+6. medicine  
+7. military  
+8. scientific research  
+1.  Communication:  
+ In case of optical communication, semiconductors laser diodes are used as optical 
+sources.   
+ More channels can be sent simultaneously Signal cannot be tapped as the band 
+width is large, more data can be sent.  
+ A laser is highly directional and less divergence, hence it has greater potential use 
+in space crafts and submarines.  
+2. Computers : 
+ In LAN (local area network), data can be transferred from memory storage of one 
+computer to other computer using laser for short time.  
+ Lasers are used in CD-ROMS during recording and reading the data.  
+3. Chemistry : 
+ Lasers are used in molecular structure identification. 
+ Lasers are also used to accelerate some chemical reactions.  
+ Using lasers, new chemical compound can be created by breaking bonds between 
+atoms or molecules.  
+4. Photography : 
+ Lasers can be used to get 3-D lens lessphotography. 
+ Lasers are also used in the construction of holograms.  
+ 
+5. Industry : 
+ Lasers can be used to blast holes in diamonds and hard 
+steel. 
+  Lasers are also used as a source of intense heat. 
+ Carbon dioxide laser is used for cutting drilling of metals and nonmetals, such as 
+ceramics   plastics, glass etc.  
+ High power lasers are used to weld or melt any material.  
+ Lasers are also used to cut teeth in saws and test the quality of fabric.  
+ 
+ 
+ 
+ 

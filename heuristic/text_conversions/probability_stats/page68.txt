@@ -1,0 +1,111 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+61
+ 
+ 
+ 
+ Let x ഥbe the mean salary of teacher . Then  
+P ( 472< x ഥ< 502 )     =   P ( -3.125 < z < 3.125 ) 
+                                   = 2 ( 0< z < 3.125 )  
+                                   = 2 ∫
+∅(𝑧)𝑑𝑧
+ଷ.ଵଶହ
+଴
+ 
+                                    = 2 ( 0.4991) = 0.9982 
+Thus we can ascertain with 99.82 % confidence  
+17. Measurements of the weights of a random sample of 200 ball bearing mad by a certain  
+machine during one week showed a mean of 0.824 and a standard deviation of 0.042. Find  
+maximum error at 95% confidence interval ? Find the confidence limits for the mean  
+𝒙ഥ = 32 
+Sol.  We are given 𝑥 ഥ = 0.824 
+𝑍ఈଶ
+ൗ = 1.96    ,𝜎= 0.042    , n = 200 
+Maximum error , E = 𝑍ఈଶ
+ൗ.
+ఙ
+√௡=
+ଵ.ଽ଺ ୶ ଴.଴ସଶ
+√ଶ଴଴
+= 0.0059 
+Now 𝑥 ഥ -- 𝑍ఈଶ
+ൗ.
+ఙ
+√௡= 0.824 −0.0059 = 0.8181 
+ 𝑎𝑛𝑑  𝑥 ഥ + 𝑍ఈଶ
+ൗ.
+ఙ
+√௡= 0.824 + 0.0059 = 0.8299 
+Hence the limits for the confidence are  
+𝑥 ഥ -- 𝑍ఈଶ
+ൗ.
+ఙ
+√௡<  𝜇 < 𝑥 ഥ + 𝑍ఈଶ
+ൗ.
+ఙ
+√௡ 
+∴  confidence limits are 0.8181 and 0.8299 
+18. A population consists of 5, 10, 14, 18, 13, 24. Consider all possible samples of size two  
+which can be drawn without replacement from the population . Find  
+a) The mean of the population  
+b) The standard deviation of the population  
+c) The mean of the sampling distribution of means 
+d) The standard deviation of sampling distribution of means 
+Sol.  a) The mean of the population 𝜇 is given by  
+𝜇= 
+∑௫
+௡ = 
+ହାଵ଴ାଵସାଵ଼ାଵଷାଶ
+଺
+ = 
+଼ସ
+଺ = 14  
+b) Variance of the population 𝜎ଶis given by 
+𝜎ଶ= 
+∑(௫೔ି௫̅)మ
+௡
+ 
+= 
+ଵ
+଺[(5 −14)ଶ+ (10 −14)ଶ+ (14 −14)ଶ+ (18 −14)ଶ+ (13 −
+14)ଶ+ (24 −14)ଶ] 
+ = 
+ଶଵସ
+଺   = 35.67 
+c) All possible samples of size two i.e,  6஼మ= 15 samples and their means are shown in the 
+following table 
+Sample 
+No. 
+Sample 
+values 
+Total of 
+Sample 
+values
+Sample 
+mean 
+1 
+5,10 
+15 
+7.5 
+2 
+5,14 
+19 
+9.5 
+3 
+5,18 
+23 
+11.5 
+4 
+5,13 
+18 
+9 
+5 
+5,24 
+29 
+14.5 
+6 
+10,14 
+24 
+12 

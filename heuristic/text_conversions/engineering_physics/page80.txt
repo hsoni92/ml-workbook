@@ -1,0 +1,57 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+74 
+ 
+ 
+ 
+Transmission / propagation of signal in Step-index fibers:  
+ Let us now consider a signal pulse 
+travelling through graded index 
+fiber in two different paths (1) and 
+(2). 
+ The pulse (1) travelling along the 
+axis of the fiber though travels along 
+shorter route it travels through higher refractive index. 
+ The pulse (2) travelling away from the axis undergo refraction and bend as shown in 
+fig. though it travels longer distance, it travels along lesser refractive index medium. 
+ Hence both the pulses reach the other end simultaneously. 
+ Thus the problem of inter model dispersion can be overcome by using graded index 
+fibers. 
+Based on types of materials: 
+   1) glass-glass optical fiber 
+   2) glass-plastic optical fiber 
+   3) plastic-plastic optical fiber 
+ATTENUATION (POWER-LOSS) IN OPTICAL FIBERS 
+When light propagates through an optical fiber, then the power of the light at the output end is 
+found to be always less than the power launched at the input end. The loss of power is called 
+Attenuation. It is measured in terms of decibels per kilometer. 
+Attenuation:It is defined as the ratio of the optical power output (Pout) from a fiber of length 
+‘L’ to the power input (Pin). 
+𝐴𝑡𝑡𝑒𝑛𝑢𝑎𝑡𝑖𝑜𝑛(𝛼) =  −10
+𝐿( 𝑃𝑖𝑛
+𝑃𝑜𝑢𝑡
+) 𝑑𝐵/𝑘𝑚 
+Attenuation occurs because of the following reasons  
+(1) Absorption   (2) Scattering loss 3) Bending loss  
+(1) Absorption:    
+ It occurs in two ways, i)Absorption by impurity or 
+impurity absorption 
+ii) Intrinsic absorption or internal absorption 
+ Impurity absorption: The impurities present in the 
+fiber are transition metal ions, such as iron, 
+chromium, 
+cobalt 
+& 
+copper. 
+During 
+signal 
+propagation when photons interact with these impurity atoms, then the photons are 
+absorbed by atoms. Hence loss occurs in light power. 
+ 
+ 
+ 
+ 
+ 

@@ -1,0 +1,65 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+24 
+ 
+ 
+ 
+4. It fails to explain Electrical conductivity (perfectly) of semiconductors or insulators. 
+5. It fails to give a correct mathematical expression for thermal conductivity. 
+6. Ferromagnetism couldn’t be explained by this theory. 
+7. Susceptibility has greater theoretical value than the experimental value. 
+Quantum free electron theory of metals: 
+Advantages: 
+1. All the electrons are not present in the ground state at 0 K, but the distribution obeys 
+Pauli’s exclusion principle. At 0 K, the highest energy level filled is called Fermi-level. 
+2. The potential remains constant throughout the lattice. 
+3. Collision of electrons with positive ion cores or other free electrons is independent of 
+charges and is elastic in nature. 
+4. Energy levels are discrete. 
+5. It was successful to explain not only conductivity, but also thermionic emission 
+paramagnetism, specific heat. 
+Drawbacks: 
+1. It fails to explain classification of solids as conductors, semiconductors and insulators. 
+Fermi level and Fermi energy: 
+The 
+distribution 
+of 
+energy 
+states 
+in 
+a 
+semiconductor is explained by Fermi –Dirac 
+statistics since it deals with the particles having 
+half integral spin like electrons. Consider that the 
+assembly of electrons as electron gas which 
+behaves like a system of Fermi particles or 
+fermions. The Fermions obeying Fermi–Dirac 
+statistics i.e., Pouli, s exclusion principle. 
+Fermi energy: Itis the energy of state at which the 
+probability of electron occupation is ½ at any temperature above 0K. It separates filled energy 
+states and unfilled energy states. The highest energy level that can be occupied by an electron 
+at 0 K is called Fermi energy level 
+Fermi level: It is a level at which the electron probability is 
+½ at any temp above 0K (or) always it is 1 or 0 at 0K. 
+Therefore, the probability function F(E) of an electron 
+occupying an energy level E is given by, 
+𝐹(𝐸) =
+1
+1 + exp (
+𝐸−𝐸𝐹
+𝐾𝑇)
+…… … … … … (1)  
+Where 𝐸𝐹  known as Fermi energy and it is constant for a 
+system,  
+            K is the Boltzmann constant and T is the absolute 
+temperature. 
+ 
+ 
+ 
+F
+(
+E
+) 

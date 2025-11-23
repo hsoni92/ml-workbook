@@ -1,0 +1,70 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+32
+ 
+ 
+ 
+TUTORIAL QUESTIONS 
+1. Out of 800 families with 4 children each, how many could you expect to have  
+       i)three boys  ii)five girls  iii) 2 or 3 boys iv) at least 1 boy. 
+2.  Suppose 2% of the people on the average are physically handicapped .Find 
+      i) the probability of     finding 3 or more Physically handicapped     
+      ii) the probability of finding  atmost 2 are handicapped 
+3. If X is a normal variate with mean 30 and variance 25.Find  
+        i)P(26≤X≤40) ii)P(X≥45). 
+4. In a normal distribution, 7% of the items are under 35 and 89% are under 63.  
+    Determine the  mean and variance of the distribution.  
+ 
+5.Fit a Poisson distribution to the following data 
+ 
+x 
+0 
+1 
+2 
+3 
+4 
+5 
+f 
+142 
+156 
+69 
+27 
+5 
+1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

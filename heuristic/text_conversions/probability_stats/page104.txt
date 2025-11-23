@@ -1,0 +1,97 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+97
+ 
+ 
+ 
+ 
+TUTORIAL QUESTIONS 
+ 
+1. A random sample of 500 apples was taken from a large consignment and 60 were found to 
+be bad. Obtain 95% confidence interval for the percentage number of bad apples in the 
+consignment. 
+ 
+2. The average income of 100 people of a city is Rs 210 with a standard deviation of Rs 
+10.For another sample of 150 people the average income is Rs 220 with a standard 
+deviation of Rs 12.Test the significant difference between two mean at 5% LOS. 
+3. A coin is tossed 960 times .Head turned up 184 times. Find whether the coin is unbiased. 
+ 
+4. Random samples of 600 men and 900 women in a locality were asked they would like to 
+have a bus stop near their residence .350 men and 475 women were in favor of the proposal. 
+Test the significance between the difference of two proportions at 5%LOS. 
+ 
+ 
+5. A pair of dice are thrown 360 times and the frequency of each sum is indicated below: 
+Sum  
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+10 
+11 
+12 
+Frequency 8 
+24 35 
+37 
+44 
+65 
+51 
+42 
+26 
+14 
+14 
+    
+ Would you say that the dice are fair on the basis of the chi-square test at 5% LOS 
+6. The following are the average weekly losses of worker hours due to accidents in 10 
+industrial plant before and after a certain safety programme was put into operation: 
+ 
+Before
+45 
+73 
+46 
+124 
+33 
+57 
+83 
+34 
+26 
+17 
+After 
+36 
+60 
+44 
+119 
+35 
+51 
+77 
+29 
+24 
+11 
+Test whether the safety programme is effective in reducing the number of accidents at 
+5%             
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

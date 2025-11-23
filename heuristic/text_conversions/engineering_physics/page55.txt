@@ -1,0 +1,72 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+49 
+ 
+ 
+ 
+Motion of Domain walls:When a small amount of magnetic fieldis applied on a ferro 
+magnetic material then the domains of the material whose magnetic moments are parallel or 
+nearly parallel to the direction of applied field can grow in size where as the domains are not 
+parallel to field can diminish in size. This change produces large magnetization for the bulk 
+material. 
+Rotation of Domains: 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+             When 
+the 
+magnetic 
+field 
+is 
+increased 
+further 
+to 
+a 
+large 
+value(i. e. , near saturation), further domains growth becomes impossible and hence fully 
+grown domains can rotate into the field direction and specimen is said to be saturated. 
+ 
+HYSTERESIS CURVE:  
+  
+ 
+ 
+ 
+  
+ 
+ 
+It means retardation. [or] Lagging of an effect behind 
+the cause of the effect [or]   The phenomenon of B lagging H. 
+[or] It is also defined as a phenomenon of flux density (B) with 
+the change in magnetic field strength (H) in a ferromagnetic 
+material.     
+  
+ 
+Explanation: When the magnetic field  H is applied on an un 
+magnetized ferromagnetic material the magnetic induction 
+increases first rapidly and then slowly from   o to a. The 
+increase is non linear, after that the rate of induction slows 
+down and attaining a saturation value Bsat, with further increase in H , there is no increase in 
+B.If applied magnetic field H on the material is decreased at this stage, naturally B decreases 
+and B will not travel in that initial path, creates a new path.  
+ 
+ When H is reduced to zero, B does not vanish , the value of B that remains in the material is 
+called as retentivity Br or reduce magnetisation. To remove retentivity in the material sufficient 
+negative magnetic field –Hc or Hc is applied in opposite direction then the retentivity Br 
+becomes zero .This is (field) known as coherceive field. On increasing H further B reaches 
+saturation in the opposite direction denoted by ’c’. Then reducing H to zero B reaches ‘d’ and 
+then increasing H in the positive direction B reaches again to Bsat and a curve is obtained. This 
+completes a closed loop called hysteresis loop.   It includes some area. This area indicates the 
+amount of energy wasted in one cycle of operation.   
+ 
+ 
+ 
+ 
+ 
+ 

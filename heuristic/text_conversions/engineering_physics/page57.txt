@@ -1,0 +1,53 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+51 
+ 
+ 
+UNIT V                                              LASERS 
+ 
+INTRODUCTION: 
+LASER stands for Light Amplification by Stimulated Emission of Radiation. Laser technology 
+started with Albert Einstein in 1917, he has given theoretical basis for the development of 
+Laser. The technology further evolved in 1960 when the very first laser called Ruby Laser was 
+built at Hughes Research Laboratoriesby T.H. Mainmann. 
+CHARACTERISTIC OF LASER RADIATION: 
+The laser beam has the properties given below which distinguish it from an ordinary beam of 
+light. Those are 
+1. Highly directional  
+2. Highly monochromatic  
+3. Highly intense  
+4. Highly coherence  
+1. Highly directional: 
+A conventional light source emits light in all directions. On the other hand, Laser emits 
+light only in one direction. The width of Laser beam is extremely narrow and hence a laser 
+beam can travel to long distances without spreading. 
+ 
+ 
+ 
+ 
+ 
+ 
+The directionality of laser beam is expressedin terms of divergence 
+∆𝜃= 𝑟2 −𝑟1
+𝑑2 −𝑑1
+ 
+Where r1and r2are the radii of laser beam spots at distances of d1 and d2 respectively from laser 
+source. 
+ 
+2.  Highly monochromatic: 
+A monochromatic source is a single frequency or single wavelength source of light. 
+The laser light is more monochromatic than that of a convectional light source. This may be 
+due to the stimulated characteristic of laser light. The band width of convectional 
+monochromatic light source is 1000A0. But the band width of ordinary light source is 10 A0. 
+For high sensitive laser source is 10-8 A0.  
+ 
+3.  Highly intense: 
+Laser light is highly intense than the conventional light. A one milli-Watt He-Ne laser is 
+highly intense than the sun intensity. This is because of coherence and directionality of laser.  
+ 
+ 
+ 
+ 

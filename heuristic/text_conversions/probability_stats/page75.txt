@@ -1,0 +1,116 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+68
+ 
+ 
+ 
+Given 𝑛ଵ = 125 ,𝑛ଶ = 75 and 𝑥̅ଵ =  Mean of men = 400 , 𝑥̅ଶ = Mean of women =  450 
+𝜎ଵ = 100  and𝜎ଶ = 150 
+i) 
+Null Hypothesis 𝐻଴ : 𝜇ଵ =𝜇ଶ 
+ii) 
+Alternative Hypothesis 𝐻ଵ :𝜇ଵ>𝜇ଶ( Right One Tailed test) 
+iii) 
+Level of significance :𝛼= 0.05   (𝑍ఈ = 1.645 ) 
+iv) 
+Test Statistic : 𝑍௖௔௟=  
+௫̅భି ௫̅మ
+ට഑భమ
+೙భା഑మమ
+೙మ
+  = 
+ସ଴଴ ସହ଴
+ටభబబమ
+భమఱାభఱబమ
+ళఱ
+ 
+= 
+− 50
+√80 + 300
+ 
+ = 
+ି ହ଴
+√ଷ଼଴ = 
+ି ହ଴
+ଵଽ.ସଽ  = - 2.5654 
+v) 
+Conclusion: Since Zୡୟ୪value <Z஑value , we accept  𝐻଴  
+Hence, we conclude that difference between the means are equal 
+ 
+11. The research investigator is interested in studying whether there is a significant 
+difference in the salaries of MBA grads in two cities. A random sample of size 100 
+from city A yields an average income of Rs. 20,150 . Another random sample of size 
+60 from city B yields an average income of Rs. 20,250. If the variance are given as 
+𝝈𝟏
+𝟐 = 40,000 and  
+𝝈𝟐
+𝟐 = 32,400 respectively . Test the equality of means and also construct 95% 
+confidence limits. 
+Sol: Let 𝜇ଵ and 𝜇ଶ be the means of the two populations  
+Given 𝑛ଵ = 100 ,𝑛ଶ = 60 and 𝑥̅ଵ =  Mean of city A = 20,150 , 𝑥̅ଶ = Mean of city B =  20,250 
+𝜎ଵ
+ଶ = 40,000 and  𝜎ଶ
+ଶ = 32,400  
+i) 
+Null Hypothesis 𝐻଴ : 𝜇ଵ =𝜇ଶ 
+ii) 
+Alternative Hypothesis 𝐻ଵ :𝜇ଵ≠𝜇ଶ (Two -Tailed test) 
+iii) 
+Level of significance :𝛼= 0.05   (𝑍ఈ = 1.96 ) 
+iv) 
+Test Statistic : 𝑍௖௔௟=  
+௫̅భି ௫̅మ
+ට഑భమ
+೙భା഑మమ
+೙మ
+  = 
+ଶ଴,ଵହ଴ି ଶ଴,ଶହ଴
+ටరబబబబ
+భబబାయమరబబ
+లబ
+ 
+= 
+100
+√400 + 540
+ 
+  = 
+ଵ଴଴
+ଷ଴.଺଺  = 3.26 
+v) 
+Conclusion: Since Zୡୟ୪value >Z஑value , we reject  𝐻଴  
+Hence , we conclude that  there is a significant difference in the salaries of MBA grades 
+two cities.  
+∴  95% confidence interval is𝜇ଵ - 𝜇ଶ=  (𝑥ଵ
+തതത−𝑥ଶ
+തതത )± 1.96 ට
+ఙభమ
+௡భ+
+ఙమమ
+௡మ 
+= (20,150 – 20,250) )± 1.96ට
+ସ଴଴଴଴
+ଵ଴଴+
+ଷଶସ଴଴
+଺଴  = (39.90, 160.09) 
+12. A die was thrown 9000 times and of these 3220 yielded a 3 or 4. Is this consistent with 
+the hypothesis that the die was unbiased? 
+Sol : Given n = 9000 
+P = Population of proportion of successes  
+    = P( getting a 3 or 4 ) = 
+ଵ
+଺ + 
+ଵ
+଺ = 
+ଶ
+଺ = 
+ଵ
+ଷ 0.3333 
+Q = 1- P = 0.6667 
+P = Proportion of successes of getting 3 or 4 in 9000 times  =
+ଷଶଶ଴
+ଽ଴଴଴ = 0.3578 
+i) 
+Null Hypothesis 𝐻଴ : The die is unbiased  
+i.e., 𝐻଴ : P = 0.33 

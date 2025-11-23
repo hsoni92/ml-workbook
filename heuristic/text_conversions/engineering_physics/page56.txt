@@ -1,0 +1,117 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+50 
+ 
+ 
+ 
+SOFT AND HARD MAGNETIC MATERIALS:  
+ 
+ 
+Ferromagnetic materials are classified into two types based on the characteristic parameters 
+such as hystersis and magnetisation. They are  
+ 
+ 
+ 
+ 
+ 
+ 
+1. Hard magnetic materials   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  2. Soft magnetic materials 
+ 
+S.NO SOFT MAGNETIC MATERIAL 
+HARD MAGNETIC MATERIAL 
+1 
+Materials 
+which 
+can 
+be 
+easily 
+magnetized and demagnetized are 
+called Soft magnetic materials. 
+Materials 
+which 
+can’t 
+be 
+easily 
+magnetized and demagnetized are 
+called hard magnetic materials.  
+2 
+The nature of hysteresis loop is very 
+steep 
+The nature of hysteresis loop is very  
+large. 
+ 
+3 
+They are prepared by annealing 
+process. 
+They are prepared by quenching 
+process. 
+4 
+Due to small hysteresis loop area, 
+they have small hysteresis loss. 
+Due to large hysteresis loop area, they 
+have large hysteresis loss. 
+5 
+They 
+have 
+large 
+value 
+of 
+permeability and susceptibility. 
+They have low value of permeability 
+and susceptibility. 
+6 
+The coercivity and retentivity are 
+small. 
+The coercivity and retentivity are 
+large. 
+7 
+They are free from irregularities. 
+They have large amount of impurities 
+and lattice defects. 
+8 
+They are used  
+ To produce temporary magnets. 
+ In the preparation of magnetic 
+core 
+materials 
+used 
+in 
+transformers, electric motors , 
+magnetic amplifiers, 
+magnetic 
+switching circuits, etc., 
+They are used  
+ To produce permanent magnets. 
+ In 
+loud 
+speakers, 
+toys, 
+in 
+measuring meters, microphones, 
+magnetic 
+detectors, 
+magnetic 
+separators, etc., 
+9 
+ Ex: Iron and silicon alloys ,Nickel – 
+Iron alloy, Iron – Cobalt alloy. 
+ Ex: High carbon steel, Cobalt steel, 
+Barium ferrite . 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

@@ -1,0 +1,75 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+30
+ 
+ 
+ 
+𝑧ଶ= 𝑥−𝜇
+𝜎
+= 71 −68
+3
+= 1 
+ 
+𝑃(65 ≤𝑋≤71) = 𝑃(−1 ≤𝑧≤1) 
+                                                                    = 𝑃(−1 ≤𝑧≤0) +  𝑃(−0 ≤𝑧≤1) 
+                                                                     =2 𝑃(−0 ≤𝑧≤1) 
+                                                                                           =2(0.341) = 0.6826 
+𝐸(65 ≤𝑋≤71) = 300(0.6826) = 205 𝑆𝑡𝑢𝑑𝑒𝑛𝑡𝑠. 
+∴Expected number of students between 65 and 71 kgs inclusive = 205 students. 
+ 
+3.In a normal distribution 𝟑𝟏% of the items are under 45 and 𝟖% of the items are  
+   over 64. Find mean and variance of the distribution. 
+Sol: Given 𝑃(𝑋< 45)=31% = 0.31 
+       And 𝑃(𝑋> 64)=8% = 0.08 
+         Let Mean and variances of the normal distributions are 𝜇, 𝜎ଶ. 
+        Standard normal variate for X is 
+𝑧= 𝑥−𝜇
+𝜎
+ 
+         Standard normal variate for 𝑋ଵ=45 is 
+𝑧ଵ= 𝑋ଵ−𝜇
+𝜎
+= 45 −𝜇
+𝜎
+ 
+⇒ 𝜇+ 𝜎𝑧ଵ= 45 … … … (1) 
+       Standard normal variate for 𝑋ଶ=64 is 
+𝑧ଶ= 𝑋ଶ−𝜇
+𝜎
+= 64 −𝜇
+𝜎
+ 
+⇒ 𝜇+ 𝜎𝑧ଶ= 64 … … … (2) 
+From normal curve, wehave P(−zଵ≤z ≤0) = 0.19 
+⇒𝑧ଵ= −0.5 
+𝑃(0 ≤𝑧≤𝑧ଶ)=0.42 
+⇒𝑧ଶ= 1.41 
+substituting the values of zଵ,zଶ in (1) and (2), we get 
+μ = 50, σଶ= 98. 
+4. In a normal distribution 𝟕% of the items are under 35 and 𝟖𝟗% of the items are  
+under 63. Find mean and variance of the distribution. 
+Sol: Given 𝑃(𝑋< 35)=7% = 0.07 
+       And 𝑃(𝑋< 63)=89% = 0.89 
+       Let Mean and variances of the normal distributions are 𝜇, 𝜎ଶ. 
+       Standard normal variate for X is𝑧=
+௫ିఓ
+ఙ 
+       Standard normal variate for 𝑋ଵ=35 is𝑧ଵ=
+௑భିఓ
+ఙ
+=
+ଷହିఓ
+ఙ 
+⇒ 𝜇+ 𝜎𝑧ଵ= 35 … … … (1) 
+       Standard normal variate for 𝑋ଶ=63 is 
+𝑧ଶ= 𝑋ଶ−𝜇
+𝜎
+= 63 −𝜇
+𝜎
+ 
+⇒ 𝜇+ 𝜎𝑧ଶ= 63 … … … (2) 
+ Given 𝑃(𝑋< 35) = 𝑃(𝑧< 𝑧ଵ) 
+0.07 = 0.5- 𝑃(−𝑧ଵ≤𝑧≤0) 
+𝑃(0 ≤𝑧≤𝑧ଵ) = 0.43 

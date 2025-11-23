@@ -1,0 +1,111 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+58
+ 
+ 
+ 
+a) P(𝑥 ഥ exceed 52.9 ) = P(𝑥 ഥ> 52.9)  
+       Z = 
+௫̅ିఓ
+഑
+√೙
+ = 
+ହଶ.ଽିହଵ.ସ
+ల.ఴ
+√లర
+ = 1.76 
+∴ P( 𝑥 
+തതത> 52.9 ) = P(z > 1.76)   
+=   0.5 – P(0 < z < 1.76) 
+=  0.5 – 0.4608 = 0.0392 
+ 
+b) P( 𝑥̅ fall between 50.5 and 52.3) 
+i.e, P(50.5 <𝑥̅< 52.3) = P(𝑥ଵ 
+തതതത< 𝑥̅ < 𝑥ଶ 
+തതതത) 
+𝑧ଵ= 
+௫భ
+തതതതିఓ
+഑
+√೙
+ = 
+ହ଴.ହିହଵ.ସ
+଴.଼ହ
+= −1.06 
+ 
+𝑧ଶ= 
+௫మ
+തതതതିఓ
+഑
+√೙
+ = 
+ହଶ.ଷିହଵ.ସ
+଴.଼ହ
+=  1.06 
+P(50.5 <𝑥̅< 52.3) = P(-1.06 <  z< 1.06) 
+= P(-1.06 <  z< 0) + P(0 <  z< 1.06) 
+= P(0 <  z< 1.06) + P(0 <  z< 1.06)  
+= 2( 0.3554) = 0.7108 
+ 
+c) P( 𝑥̅ will be less than 50.6) = P(𝑥 ഥ< 50.6) 
+Z = 
+௫̅ିఓ
+഑
+√೙
+ = 
+ହ଴.଺ିହଵ.ସ
+ల.ఴ
+√లర
+ = -0.94 
+∴P(z< -0.94) = 0.5 - P(0.94 <  z< 0) 
+  = 0.5 - P(0 <  z< 0.94) = 0.50-0.3264 
+= 0.1736 
+9.The mean of certain normal population is equal to the standard error of the mean of the  
+samples of 64 from that distribution . Find the probability that the mean of the sample size  
+36 will be negative. 
+Sol: The Standard error of mean = 
+ఙ
+√௡ 
+Sample size , n =64 
+Given mean ,𝜇 = Standard error of the mean of the samples 
+𝜇 = 
+ఙ
+√଺ସ = 
+ఙ
+଼ 
+         We know z = 
+௫̅ ିఓ
+഑
+√೙
+ = 
+௫̅ ି ഑
+ఴ
+഑
+ల
+ 
+= 
+଺௫̅
+ఙ  -
+ ଷ
+ସ 
+If Z < 0.75, 𝑥ഥഥ is negative  
+P(z < 0.75) = P( − ∞< 𝑧 < 0.75 )  
+                   = ∫
+∅(𝑧)
+଴
+ି ஶ
+dz  + ∫
+∅(𝑧)dz  
+଴.଻ହ
+଴
+=  0.50 + 0.2734  
+                    = 0.7734 
+10.The guaranteed average  life of a certain type of electric bulbs is 1500hrs with a S.D of 10 
+hrs. It is decided to sample the output so as to ensure that 95% of bulbs do not fall short  
+of the guaranteed average by more than 2% . What will be the minimum sample size ? 
+Sol : Let n be the size of the sample  
+The guaranteed mean is 1500 
+We do not want the mean of the sample to be less than 2% of (1500 )i.e, 30 hrs 
+So 1500 – 30 = 1470 

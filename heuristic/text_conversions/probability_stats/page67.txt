@@ -1,0 +1,102 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+60
+ 
+ 
+ 
+We know that maximum error , E = 𝑍ఈଶ
+ൗට
+௉ொ
+௡ 
+⇒ 0.05 = 1.96 ට
+଴.ଶ ୶ ଴.଼
+௡
+ 
+⇒ Sample size , n = 
+଴.ଶ ୶ ଴.଼ ୶ (ଵ.ଽ଺)మ
+(଴.଴ହ)మ
+ = 246 
+14.The mean and standard deviation of a population are 11,795 and 14,054 respectively    
+What can one assert with 95 % confidence about the maximum error if 𝒙ഥ = 11,795 and 
+ n = 50. And also construct 95% confidence interval for true mean . 
+Sol: Here mean of population ,𝜇 = 11795 
+S.D of population ,𝜎 = 14054 
+𝑥̅ = 11795  
+𝑛=  sample size  = 50 , maximum error = 𝑍ఈଶ
+ൗ .
+ఙ
+√௡ 
+𝑍ఈଶ
+ൗfor  95% confidence = 1.96  
+Max. error , 𝐸= 𝑍ఈଶ
+ൗ .
+ఙ
+√௡ = 1.96 .
+ଵସ଴ହସ
+√ହ଴ = 3899 
+ 
+∴  Confidence interval = ( 𝑥̅ − 𝑍ఈଶ
+ൗ .
+ఙ
+√௡ , 𝑥̅ + 𝑍ఈଶ
+ൗ .
+ఙ
+√௡ ) 
+     = (11795-3899, 11795+3899)  
+     = (7896, 15694) 
+15.Find 95% confidence limits for the mean of a normally distributed population from which  
+the following sample was taken 15, 17 , 10 ,18 ,16 ,9, 7, 11, 13 ,14. 
+Sol: We have 𝑥̅  = 
+ଵହାଵ଻ାଵ଴ାଵ଼ାଵ଺ାଽା଻ାଵଵାଵଷାଵସ
+ଵ଴
+ = 13 
+𝑆ଶ = ∑
+(௫೔ି௫̅)మ
+௡ିଵ 
+                       = 
+ଵ
+ଽ[(15 −13)ଶ+ (15 −13)ଶ+ (15 −13)ଶ+ (15 −13)ଶ+ (15 −13)ଶ+
+(15 −13)ଶ+ (15 −13)ଶ+ (15 −13)ଶ+ (15 −13)ଶ+ (15 −13)ଶ] 
+                                                =  
+ସ଴
+ଷ 
+                Since 𝑍ఈଶ
+ൗ = 1.96 , we have  
+𝑍ఈଶ
+ൗ .
+௦
+√௡  =  1.96 . √ସ଴
+√ଵ଴.√ଷ  = 2.26  
+∴  Confidence limits are 𝑥̅ ± 𝑍ఈଶ
+ൗ .
+௦
+√௡ = 13 ± 2.26 = ( 10.74 , 15.26 ) 
+16.A random sample of 100 teachers in a large metropolitan area revealed mean weekly  
+salary of Rs. 487 with a standard deviation  Rs.48. With what degree of confidence can  
+we assert that the average weekly of all teachers in the metropolitan area is between 472  
+to 502 ? 
+Sol: Given 𝜇 = 487 ,𝜎= 48 , 𝑛= 100 
+Z = 
+௫̅̅ି ఓ
+഑
+√೙ 
+ 
+    =  
+௫̅ି ସ଼଻
+రఴ
+√భబబ 
+   = 
+௫̅ି ସ଼଻
+ସ.଼ 
+Standard variable corresponding to Rs. 472 is  
+𝑍ଵ = 
+ସ଻ଶି ସ଼଻
+ସ.଼
+   = - 3.125 
+Standard vaiable corresponding to Rs. 502 
+𝑍ଶ = 
+ହ଴ଶି ସ଼଻
+ସ.଼
+=  3.125 

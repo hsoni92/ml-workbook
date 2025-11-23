@@ -1,0 +1,80 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+43
+ 
+ 
+ 
+ Here r =  1 −6 ቊ
+∑ୢ౟
+మା∑ౣ(ౣమషభ)
+భమ
+(୒మି୒)
+ቋ 
+             = 1 −(159.5)6
+(Nଶ−N)
+      = 1 −
+957
+N2 −N
+ 
+          ⇒0.44 = 1 −
+ଽହ଻
+୒మି୒ 
+           ⇒Nଶ−N = 1708.92 
+           ⇒N = 42 
+ 
+Multiple Correlation: 
+In Multiple Correlation, the relationship between three or more variables is studied. 
+A dependent variable is indicated by 𝑋ଵ and independent variables by 𝑋ଶ, 𝑋ଷ, 𝑋ସ, 𝑋ହ, … 
+The Coefficient of Multiple Correlation id denoted by R and necessary subscripts are added to it. 
+Suppose there are three variables for 𝑋ଵ, 𝑋ଶ 𝑎𝑛𝑑 𝑋ଷ. Let 𝑋ଵbe the dependent variable depending 
+on the independent variables 𝑋ଶ and 𝑋ଷ. Then multiple correlation is defined as follows: 
+𝑅ଵ.ଶଷ= Multiple correlation coefficient with 𝑋ଵas the dependent variable and 𝑋ଶ, 𝑋ଷ as 
+independent variables. 
+𝑅ଶ.ଵଷ= Multiple correlation coefficient with 𝑋ଶas the dependent variable and 𝑋ଵ, 𝑋ଷ as 
+independent variables. 
+𝑅ଷ.ଵଶ= Multiple correlation coefficient with 𝑋ଷas the dependent variable and 𝑋ଵ, 𝑋ଶ as 
+independent variables. 
+Calculation of Multiple Correlation Coefficient: 
+The multiple correlation coefficients can be calculated using the following formulae, 
+𝑅ଵ.ଶଷ= ඨ𝑟ଵଶ
+ଶ+ 𝑟ଵଷ
+ଶ−2𝑟ଵଶ𝑟ଵଷ𝑟ଶଷ
+1 −𝑟ଶଷ
+ଶ
+ 
+𝑅ଶ.ଵଷ= ඨ𝑟ଶଵ
+ଶ+ 𝑟ଶଷ
+ଶ−2𝑟ଶଵ𝑟ଶଷ𝑟ଵଷ
+1 −𝑟ଵଷ
+ଶ
+ 
+𝑅ଷ.ଵଶ= ඨ𝑟ଷଵ
+ଶ+ 𝑟ଷଶ
+ଶ−2𝑟ଷଵ𝑟ଷଶ𝑟ଵଶ
+1 −𝑟ଵଶ
+ଶ
+ 
+Note:  
+1. Multiple Correlation Coefficient is non-negative. Its value lies between 0 & 1. It cannot 
+assume a negative value. 
+2. 𝑅ଵ.ଶଷ= 0 𝑟ଵଶ= 0 𝑎𝑛𝑑 𝑟ଵଷ= 0 
+3. 𝑅ଵ.ଶଷ≥𝑟ଵଶ, 𝑟ଵଷ, 𝑟ଶଷ and 𝑅ଵ.ଶଷ≥𝑟ଵଷ 
+4. The position of the subscript to the right of dot does not make a difference i.e.𝑅ଵ.ଶଷ= 𝑅ଵ.ଷଶ 
+and so on. 
+5. If 𝑅ଵ.ଶଷ= 0 then all the Multiple Correlations involving 𝑋ଵ are zero. 
+Problems 
+1. A single correlation coefficient between yield (𝒙𝟏) and temperature (𝒙𝟐) and rainfall (𝒙𝟑) 
+are given by 𝒓𝟏𝟐= 𝟎. 𝟔, 𝒓𝟏𝟑= 𝟎. 𝟓, 𝒓𝟐𝟑= 𝟎. 𝟖. Find the Multiple Correlation Coefficient 
+𝑹𝟏.𝟐𝟑. 
+Sol: We know that, 𝑅ଵ.ଶଷ= ට
+௥భమ
+మା௥భయ
+మିଶ௥భమ௥భయ௥మయ
+ଵି௥మయ
+మ
+ 
+𝑅ଵ.ଶଷ= ඨ(0.6)ଶ+ (0.5)ଶ−2(0.6)(0.5)(0.8)
+1 −(0.8)ଶ
+ 

@@ -1,0 +1,112 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+88
+ 
+ 
+ 
+𝝌𝟐
+௖௔௟ value to be compared with 𝝌𝟐
+௧௔௕ value at 1% (5.1 or10%) level of significance for 
+ (r-1) (c-1) d.f where r- number of rows 
+ 
+ 
+ 
+c-number of columns. 
+Note: In 𝝌𝟐distribution for independence of attributes, we test if two attributes A and B are 
+independent or not. 
+i)Null  Hypothesis: H଴: The two attributes are independent 
+ii) Alternative hypothesis: Hଵ: The two attributes are not independent 
+iii) Test Statistic χଶ
+ୡୟ୪= ෍(O −E)ଶ
+E
+ 
+ where E = 
+𝐑𝐨𝐰 𝐭𝐨𝐭𝐚𝐥  𝐱 𝐂𝐨𝐥𝐮𝐦𝐧 𝐭𝐨𝐭𝐚𝐥 
+𝐆𝐫𝐚𝐧𝐝 𝐭𝐨𝐭𝐚𝐥
+ 
+iv)At specified level of significance for (m-1) (n-1) d.f  where m- no. of rows and n- no. of columns 
+v)Conclusion : If  𝛘𝟐
+ୡୟ୪ value <𝛘𝟐
+୲ୟୠ  value , then we accept H଴ , Otherwise reject H଴. 
+ 
+Problems : 
+ 
+1. Fit a Poisson distribution to the following data and test for its goodness of fit at 5% los 
+x 
+0 
+1 
+2 
+3 
+4 
+f 
+419 
+352 
+154 
+56 
+19 
+ 
+Sol:  
+X
+f
+fx
+0 
+419 
+0 
+1
+352
+352
+2
+154
+308
+3
+56
+168
+4
+19
+76
+ 
+N=1000 
+෍𝑓𝑥= 904 
+ 
+Mean 𝜆 = 
+∑௙௫
+୒ = 
+ଽ଴ସ
+ଵ଴଴଴ = 0.904 
+Theoretical distribution is given by 
+ = Np(x) = 1000 x 
+௘షഊఒೣ
+௫!  
+Hence the theoretical frequencies are given by  
+x
+0
+1
+2
+3
+4
+Total
+f = 1000 x 
+௘షഊఒೣ
+௫!  
+406.2 
+366 
+165.4 
+49.8 
+12.6 
+1000 
+ 
+Since Given frequencies total is equal to Calculated frequencies total. 
+ 
+To test for goodness of fit: 
+i) H଴: There is no difference in given values and calculated values  
+ii) Hଵ: There is some difference in given values and calculated values 
+ 
+ 
+𝝌𝟐
+௖௔௟= ෍(𝑂−𝐸)ଶ
+𝐸
+ 
+ 
+ 

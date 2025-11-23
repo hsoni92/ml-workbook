@@ -1,0 +1,45 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+5 
+ 
+ 
+𝑥= 𝑒−𝑏𝑡(𝑝+ 𝑞𝑡) … … . . (4) 
+Where p = (𝐴1  + 𝐴2)  𝑎𝑛𝑑 𝑞= (𝐴1  −𝐴2) 
+Eq.(4) represents a possible form of solution .  
+In this equation as‘t’ increases, 𝑒−bt decreases and [p + q t] increases and the damping is said 
+to be critical.  
+Thus in the case of critical damping, the motion just becomes a periodic or non oscillatory.  
+Ex: This type of motion is exhibited by many pointer instruments such as Ammeter, voltmeter, 
+etc, in which the pointer moves to the correct position and comes to rest much rapidly without 
+any oscillations. 
+ 
+Case III. Under –damped motion: 
+ 
+When  𝑏2 < 𝑤2.In this case √𝑏2 −𝜔2 is imaginary.Let us write √𝑏2 −𝜔2 = i√w2 −b2 = iβ 
+where 𝛽= √(w2 −b2) and 𝑖= √−1 
+now eq.(3) becomes 𝑥= 𝐴1𝑒(−𝑏+𝑖𝛽)𝑡+ 𝐴2𝑒(−𝑏−𝑖𝛽)𝑡 
+= 𝑒−𝑏𝑡 (𝐴1𝑒𝑖𝛽𝑡+ 𝐴2𝑒−𝑖𝛽𝑡) 
+= 𝑒−𝑏𝑡 ((𝐴1 cos 𝛽𝑡+ 𝑖sin 𝛽𝑡) + 𝐴2(cos 𝛽𝑡−𝑖sin 𝛽𝑡))  
+= 𝑒−𝑏𝑡((𝐴1 + 𝐴2) cos 𝛽𝑡+ 𝑖(𝐴1 −𝐴2)𝑠𝑖𝑛𝛽𝑡)  
+= 𝑒−𝑏𝑡 (𝑎sin ∅cos 𝛽𝑡+ 𝑎 𝑐𝑜𝑠∅sin 𝛽𝑡) 
+Where 𝑎 𝑠𝑖𝑛 ∅= (𝐴1 + 𝐴2) 𝑎𝑛𝑑 𝑎cos ∅= 𝑖 (𝐴1 −𝐴2) 
+= 𝑒−𝑏𝑡𝑎sin(𝛽𝑡+ ∅) 
+𝑥= 𝑎𝑒−𝑏𝑡sin(√(𝑤2 −𝑏2)𝑡+ ∅) 
+The above expression is the equation of motion of damped harmonic oscillator. 
+The amplitude of the motion continuously decreasing owing to the factor 𝑒−𝑏𝑡 which is called 
+damping factor. 
+The factor sin(√(𝑤2 −𝑏2)𝑡+ ∅ varies between +1 to -1, therefore the amplitude also varies 
+between + 𝑎𝑒−𝑏𝑡 and - 𝑎𝑒−𝑏𝑡.I t is called under damped motion, b is called damping 
+coefficient. 
+Ex:  Motion of a pendulum in air, the electric oscillations of LCR circuit. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

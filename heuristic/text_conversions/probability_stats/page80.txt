@@ -1,0 +1,89 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+73
+ 
+ 
+ 
+∴ |𝑧| = 
+ଶ଴
+ଽ = 2.22 
+v) 
+Conclusion: Since |Z ୡୟ୪| value>𝑍ఈvalue , we reject  𝐻଴  
+∴𝜇≠ 1580   
+22. Test the significance of the difference between the means of the samples from the 
+following data  
+ 
+ 
+                         Sample A 
+ 
+Sample B 
+Size of Sample 
+100 
+150 
+Mean 
+50 
+51 
+Standard Deviation 
+4 
+5 
+( Table value =1.96 ) 
+Sol.Let 𝜇ଵ and 𝜇ଶ be the means of the two populations  
+Given 𝑛ଵ = 100 ,𝑛ଶ = 150 and 𝑥̅ଵ = 50, 𝑥̅ଶ = 51  
+𝜎ଵ = 4  and𝜎ଶ = 5  
+i) 
+Null Hypothesis 𝐻଴ : 𝜇ଵ =𝜇ଶ 
+ii) 
+Alternative Hypothesis 𝐻ଵ :𝜇ଵ≠𝜇ଶ( Two – Tailed test) 
+iii) 
+Level of significance :𝛼= 0.05   (𝑍ఈ = 1.96 ) 
+iv) 
+Test Statistic : 𝑍௖௔௟=  
+௫̅భି ௫̅మ
+ට഑భమ
+೙భା഑మమ
+೙మ
+  = 
+ହ଴ି ହଵ
+ටరమ
+భబబାఱమ
+భఱబ
+    = 
+ିଵ
+ටభల
+భబబାమఱ
+భఱబ
+ = 
+ିଵ
+√଴.ଵ଺ା଴.ଵ଺଻ = -3.0581 
+∴|𝑍௖௔௟| = 3.0581 
+v) 
+Conclusion: Since |𝑍௖௔௟| 𝑣𝑎𝑙𝑢𝑒 > 𝑍ఈvalue , we reject 𝐻଴  
+Hence , we conclude that  there is some significant difference between the means 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

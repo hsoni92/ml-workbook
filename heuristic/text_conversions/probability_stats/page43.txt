@@ -1,0 +1,54 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+36
+ 
+ 
+ 
+CORRELATION AND REGRESSION 
+CORRELATION 
+Introduction 
+In a bivariate distribution and multivariate distribution, we may be interested to find if there is any 
+relationship between the two variables under study. Correlation refers to the relationship between 
+two or more variables. The correlation expresses the relationship or interdependence of two sets 
+of variables upon each other.  
+Definition Correlation is a statistical tool which studies the relationship b/w 2 variables & 
+correlation analysis involves various methods & techniques used for studying & measuring the 
+extent of the relationship b/w them. 
+Two variables are said to be correlated if the change in one variable results in a corresponding 
+change in the other. 
+The Types of Correlation 
+1) Positive and Negative Correlation: If the values of the 2 variables deviate in the same 
+direction 
+ i.e., if   the increase in the values of one variable results in a corresponding increase in the values 
+of othervariable (or) if the decrease in the values of one variable results in a corresponding 
+decrease in the values of other variable is called Positive Correlation. 
+e.g. Heights & weights of the individuals If the increase (decrease) in the values of one variable 
+results in a corresponding decrease (increase) in the values of other variable is called Negative 
+Correlation. 
+e.g, Price and demand of a commodity. 
+ 
+2) Linear and Non-linear Correlation:The correlation betweentwo variables is said to be 
+Linear if the corresponding to a unit change in one variable there is a constant change in the other 
+variable over the entire range of the values (or) two variables𝑥, 𝑦are said to be linearly related if 
+there exists a relationship of the form y = a + bx. 
+e.g when the amount of output in a factory is doubled by doubling the number of workers.  
+Two variables are said to be Non-linear or curvilinear if corresponding to a unit change  
+   in one variable the other variable doesnot change at a constant rate but at fluctuating rate. 
+i.eCorrelation is said to be non-linear if the ratio of change is not constant. In other words,  
+when all the points on the scatter diagram tend to lie near a smooth curve, the correlation is    
+  saidto be non-linear (curvilinear). 
+ 
+3) Partial and Total correlation: The study of two variables excluding some other 
+variablesis called Partial Correlation. 
+e.g. We study price and demand eliminating the supply.  
+   In Total correlation all the facts are taken into account. 
+e.g Price, demand &supply ,all are taken into account. 
+ 
+4) Simple and Multiple correlation:When we study only two variables, the relationship is  
+described as Simple correlation.  
+E.g quantity of money and price level, demand and price.  
+ 
+ 
+ 

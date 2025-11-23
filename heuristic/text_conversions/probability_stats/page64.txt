@@ -1,0 +1,111 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+57
+ 
+ 
+ 
+Sol: The standard error of mean = 
+ఙ
+√௡ 
+Sample size = n .let n= 𝑛ଵ=800 
+Then S.Eଵ = 
+ఙ
+√଼଴଴ = 
+ఙ
+ଶ଴√ଶ 
+When 𝑛ଵis reduced to 200 
+let n= 𝑛ଶ=200 
+Then S.Eଶ = 
+ఙ
+√ଶ଴଴ = 
+ఙ
+ଵ଴√ଶ 
+∴ S.Eଶ = 
+ఙ
+ଵ଴√ଶ = 2ቀ
+ఙ
+ଶ଴√ଶቁ = 2 (S.𝐸ଵ) 
+Hence if sample size is reduced from 800to 200, S. E. of mean will be multiplied by 2 
+4.The variance of a population is 2 . The size of the sample collected from the population is  
+169. What is the standard error of mean 
+Sol:  n= The size of the sample =169  
+𝜎= S.D of population = √Variance  = √2 
+Standard Error of mean = 
+ఙ
+√௡ = √ଶ
+√ଵ଺ଽ = 
+ଵ.ସଵ
+ଵଷ = 0.185 
+5.The mean height of students in a college is 155cms and standard deviation is 15 . What is  
+the probability that the mean height of 36 students is less than 157 cms. 
+Sol:𝜇 = Mean of the population  
+                     = Mean height of students of a college  = 155cms 
+                 n =  S.D of population = 15cms  
+ 𝑥ഥ = mean of sample = 157 cms 
+                     Now z = 
+௫ ഥିఓ
+഑
+√೙
+ = 
+ଵହ଻ିଵହହ
+భఱ
+√యల
+ = 
+ଵଶ
+ଵହ = 0.8 
+ 
+∴ P ( 𝑥̅ ≤157) = P ( z< 0.8 ) = 0.5 + P ( 0 ≤ z ≤ 0.8 )  
+ = 0.5 +0.2881 = 0.7881 
+Thus the probability that the mean height of 36 students is less than 157 = 0.7881 
+6.A random sample of size 100 is taken from a population with 𝝈 = 5.1 . Given that the  
+sample mean is 𝒙ഥ = 21.6 Construct a 95% confidence limits for the population mean  . 
+Sol: Given 𝑥̅ = 21.6  
+𝑧ఈଶ
+ൗ = 1.96, n = 100 ,𝜎 = 5.1 
+∴ Confidence interval = ( 𝑥̅ −𝑧ఈଶ
+ൗ.
+ఙ
+√௡ , 𝑥̅ + 𝑧ఈଶ
+ൗ.
+ఙ
+√௡ ) 
+𝑥̅ −𝑧ఈଶ
+ൗ.
+ఙ
+√௡= 21.6 – 
+ଵ.ଽ଺ ୶ ହ.ଵ
+ଵ଴
+ = 20.6 
+𝑥̅ + 𝑧ఈଶ
+ൗ.
+ఙ
+√௡ = 21.6 + 
+ଵ.ଽ଺ ୶ ହ.ଵ
+ଵ଴
+ = 22.6 
+Hence (20.6,22.6) is the confidence interval for the population mean 𝜇 
+7.It is desired to estimate the mean time of continuous use until an answering machine will  
+first require service . If it can be assumed that 𝝈 = 60 days, how large a sample is needed  
+so that one will be able to assert with 90% confidence that the sample mean is off by at  
+most 10 days. 
+Sol: We have maximum error (E)  = 10 days , 𝜎 = 60 days and 𝑧ఈଶ
+ൗ = 1.645 
+∴ n = ቂ
+௭ഀమ
+ൗ.ఙ
+ாቃ
+ଶ
+= ቂ
+ଵ.଺ସହ ୶ ଺଴
+ଵ଴
+ቃ
+ଶ
+ = 97 
+8.A random sample of size 64 is taken from a normal population with 𝝁= 𝟓𝟏. 𝟒 and 𝝈 =  
+6.8.What is the probability that the mean of the sample will  a)  exceed 52.9     b) fall  
+between 50.5 and 52.3  c) be less than 50.6 
+Sol: Given n = the size of the sample = 64 
+𝜇 = the mean of the population = 51.4 
+𝜎 = the S.D of the population = 6.8 

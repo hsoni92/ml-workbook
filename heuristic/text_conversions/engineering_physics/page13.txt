@@ -1,0 +1,63 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+7 
+ 
+ 
+ 
+𝑄= 2𝜋𝐸
+𝐸
+𝜏𝑇
+= 2𝜋𝜏
+𝑇
+= 𝑤𝜏 
+Where 𝑤=
+2𝜋
+𝑇 = angular frequency. 
+ 
+Forced damped harmonic vibrations 
+Forced vibrations can be defined as the vibrations in which the body vibrates with a frequency 
+other than its natural frequency under the action of an external periodic force. Ex: consider the 
+vibrations of bridge under the influence of marching solders, vibrations of a tuning fork when 
+exposed to the periodic force of sound waves. 
+Equation of motion of forced harmonic oscillator 
+The forces acted upon the particle are: 
+i) 
+A restoring force 
+Restoring force is proportional to the displacement but oppositely directed, given by  
+f1 α – x  
+f1 =  −kx    -------------- (1) 
+Where ‘k’ is known as the force constant. 
+ii) 
+Frictional force 
+Frictional force is proportional to velocity but oppositely directed, given by  
+f2 α −dx
+dt 
+f2 = −r (
+dx
+dt) ------------- (2) 
+Where ‘r’ is frictional force per unit velocity. 
+iii) 
+The external periodic force 
+It is represented by  𝑓3 = 𝐹sin 𝑝𝑡   ----------- (3) 
+Where F is the maximum value of this force  
+So the total force acting on the particle is given by 
+Total force = 𝑓1 + 𝑓2 + 𝑓3 
+From (1),(2) and (3) 
+𝐹𝑜𝑟𝑐𝑒(𝐹) = −kx + −r (dx
+dt) + 𝐹sin 𝑝𝑡 
+According to Newton second law of motion 
+F= mass × acceleration  
+𝐹= 𝑚𝑑2𝑥
+𝑑𝑡2 
+Hence 
+𝑚𝑑2𝑥
+𝑑𝑡2 = −kx −r (dx
+dt) + 𝐹sin 𝑝𝑡 
+𝑚𝑑2𝑥
+𝑑𝑡2 + kx + r (dx
+dt) = 𝐹sin 𝑝𝑡 
+ 
+ 

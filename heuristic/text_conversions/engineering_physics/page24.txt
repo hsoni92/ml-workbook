@@ -1,0 +1,89 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+18 
+ 
+ 
+through the slit be focused by means of a convex lens on a screen placed in the focal plane of 
+the lens.  
+ 
+According to Huygens-Fresnel, every point on the wavefront in the plane of the slit is a 
+source of secondary wavelets, which spread out to the right in all directions. These wavelets 
+travelling normal to the slit i.e., along the direction OPo are brought to focus at Po by the lens. 
+Thus, Po is a bright central image.  
+The secondary wavelets travelling at an angle θ with the normal are focused at a point 
+P1 on the screen. Depending on the path difference, the point P1may have maximum or 
+minimum intensities. In order to find out intensity at P1, let us draw a parallel AC from A to the 
+light ray at B.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The path difference between secondary wavelets from A and B in direction θ, is given 
+by 
+sin
+sin
+BC
+AB
+e
+
+
+
+
+
+ 
+ 
+The relationship between phase difference and path difference is given by 
+2
+Phasedifference
+pathdifference
+
+
+
+
+ 
+2
+sin
+e
+
+
+
+
+
+ 
+Let the width of the slit is divided into ‘n’ equal parts and the amplitude of the wave 
+from each part is ‘a’. Then the phase difference between any two successive waves is  
+
+
+
+
+1
+ 
+ 
+ 
+ 
+   
+1
+2
+(
+)
+ 
+Total phase
+esin
+d
+say
+n
+n
+
+
+
+
+
+ 
+Using the method of vector addition of amplitudes the resultant amplitude R is given by  
+ 

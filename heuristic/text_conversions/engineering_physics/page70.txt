@@ -1,0 +1,48 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+64 
+ 
+ 
+ 
+ It consists of a quartz tube 5 m long and 2.5 cm in the diameter. 
+ This discharge tube is filled with gaseous mixture of CO2 (active medium), helium and 
+nitrogen with suitable partial pressures.  
+ The terminals of the discharge tubes are connected to a D.C power supply. 
+ The ends of the discharge tube are fitted with NaCl Brewster windows so that the laser 
+light generated will be polarized. 
+ Two concave mirrors one fully reflecting and the other partially form an optical 
+resonator.  
+Working : 
+Figure shows energy levels of nitrogen and carbon dioxide molecules. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ A mixture of CO2 , N2 and helium or water vapour is used as active medium here. 
+ When an electric discharge occurs in the gas, the electrons collide with nitrogen molecules 
+and they are raised to excited states. This process is represented by the equation. 
+N2 + e* = N2* + e 
+N2 = Nitrogen molecule in ground state e* = electron with kinetic energy 
+N2* = nitrogen molecule in excited state e= same electron with lesser energy 
+ Now N2 molecules in the excited state collide with CO2 atoms in ground state and excite 
+to higher electronic, vibrational and rotational levels. This process is represented by the 
+equation 
+N2* + CO2 = CO2* + N2  
+N2* = Nitrogen molecule in excited state.  
+CO2 = Carbon dioxide atoms in ground state  
+CO2* = Carbon dioxide atoms in excited state 
+ N2 = Nitrogen molecule in ground state.  
+ 
+ 
+ 
+ 

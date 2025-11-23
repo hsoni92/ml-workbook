@@ -1,0 +1,52 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+1 
+ 
+ 
+ 
+UNIT I                    HARMONIC OSCILLATIONS 
+Introduction to harmonic oscillators 
+To and pro motion of a particle about the equilibrium position is known as oscillations. 
+Any motion which repeats itself after equal intervals of time is called a periodic motion or 
+harmonic motion. 
+Ex: Spin of earth, the motion of a satellite around a planet, moon around the earth etc. 
+There are two types of oscillators 
+i) 
+Mechanical oscillators 
+ii) 
+Electrical oscillators 
+The oscillations which are due to change in mechanical quantities such as displacement, 
+velocity, acceleration are known as mechanical oscillations. These oscillations belong to 
+mechanical oscillator. 
+Ex: Spin of earth, moon around the earth etc.. 
+The oscillations which are due to electrical and magnetic field vectors in visible light, radio 
+waves etc are known as electrical oscillations. These oscillations belong to electrical 
+oscillators. 
+Ex: A tuned circuit and closed metal cavity oscillate electro magnetically. 
+Simple harmonic motion 
+The oscillatory motion in which the force is directly proportional to the displacement is called 
+simple harmonic motion (S.H.M). The particle or body executing S.H.M is called a simple 
+oscillator. Since force is proportional to the displacement, the acceleration is not constant but 
+varies with time. 
+Simple harmonic oscillator: 
+When a particle or body moves such that its acceleration is always directed towards a fixed 
+point and varies directly as its distance from that point, the particle or body is said to execute 
+S.H.M.The particle or body executing simple harmonic motion is called a simple oscillator. 
+Equation of motion of a simple oscillator: 
+Equation of motion of a simple oscillator 
+Consider a particle p of mass ‘m’ executing S.H.M about equilibrium position ‘o’ along X-
+axis. Let x  be the displacement of p from o at any instant, then the restoring force F acting 
+upon p is given by  
+F α – x  
+F = −kx    -------------- (1) 
+Where ‘k’ is proportionality factor which represents the force per unit displacement, –ve sign 
+indicates force F is opposite to the displacement. 
+According to Newton second law of motion 
+F= mass × acceleration  
+𝐹= 𝑚
+𝑑2𝑥
+𝑑𝑡2  -------------- (2) 
+From equation (1) and (2) 

@@ -1,0 +1,73 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+52
+ 
+ 
+ 
+Classification of Samples: 
+ Large Samples : If the size of the sample  n ≥30 , then it is said to be large sample. 
+ Small Samples : If the size of the sample n < 30 ,then it is said to be small sample or 
+exact sample. 
+Parameters and Statistics: 
+Parameter is a statistical measure based on all the units of a population. Statistic is a statistical 
+measure based on only the units selected in a sample. 
+Note: In this unit, Parameter refers to the population and Statistic refers to sample. 
+Central Limit Theorem:  
+If 𝑥̅ be the mean of a random sample of size n drawn from population having mean 𝜇 and standard 
+deviation 𝜎 , then the sampling distribution of the sample mean 𝑥̅ is approximately a normal 
+distribution with mean 𝜇 and SD = S.E of 𝑥̅ = 
+ఙ
+√௡  provided the sample size n is large. 
+Standard Error of a Statistic: The standard error of statistic ‘t’ is the standard deviation          of 
+the sampling distribution of the statistic i.e, S.E of sample mean is the standard deviation           of 
+the sampling distribution of sample mean. 
+Formulae for S.E: 
+ S.E of Sample mean 𝑥̅ = 
+ఙ
+√௡  i.e, S.E (𝑥̅) = 
+ఙ
+√௡ 
+ S.E of sample proportion p=ට
+௉ொ
+௡ i.e, S.E (p) = ට
+௉ொ
+௡ where Q=1-P 
+ S.E of the difference of two sample means 𝑥ଵ
+തതത and 𝑥ଶ
+തതത  i.e, S.E (𝑥ଵ
+തതത−𝑥ଶ
+തതത ) = ට
+ఙభమ
+௡భ+
+ఙమమ
+௡మ 
+ S.E of the difference of two proportions  i.e, S.E(𝑝ଵ−𝑝ଶ) = ට
+௉భொభ
+௡భ+
+௉మொమ
+௡మ 
+Estimation :To use the statistic obtained by the samples as an estimate to predict the unknown 
+parameter of the population from which the sample is drawn. 
+Estimate : An estimate is a statement made to find an unknown population parameter. 
+Estimator : The procedure or rule to determine an unknown population parameter is called  
+estimator. 
+Example: Sample proportion is an estimate of population proportion , because with the help of 
+sample proportion value we can estimate the population proportion value. 
+Types of Estimation: 
+ Point Estimation: If the estimate of the population parameter is given by a single value , 
+then the estimate is called a point estimation of the parameter. 
+ Interval Estimation: If the estimate of the population parameter is given by two different 
+values between which the parameter may be considered to lie, then the estimate is called 
+an interval estimation of the parameter. 
+Confidence interval Estimation of parameters: 
+     In an interval estimation of the population parameter 𝜃, if we can find two quantities 𝑡ଵand 𝑡ଶ 
+     based on sample observations drawn from the population such that the unknown parameter 𝜃 
+     is included in the interval [𝑡ଵ,𝑡ଶ] in a specified cases ,then this is called a confidence interval  
+     for the parameter 𝜃. 
+Confidence Limits for Population mean 𝝁 
+ 95% confidence limits are 𝑥̅ ±  1.96 (𝑆. 𝐸. 𝑜𝑓 𝑥 ഥ) 
+ 99% confidence limits are 𝑥̅ ±  2.58 (𝑆. 𝐸. 𝑜𝑓 𝑥 ഥ) 
+ 99.73% confidence limits are 𝑥̅ ±  3 (𝑆. 𝐸. 𝑜𝑓 𝑥 ഥ) 
+ 90% confidence limits are 𝑥̅ ±  1.645 (𝑆. 𝐸. 𝑜𝑓 𝑥 ഥ) 

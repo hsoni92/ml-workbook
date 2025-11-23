@@ -1,0 +1,54 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+73 
+ 
+ 
+ 
+ They are 
+( i) Single mode step-index fiber 
+( ii) Multi-mode step-index fiber 
+Transmission / propagation of signal in Step-index fibers:  
+ Generally the signal is sent through the fiber in digital form i.e. in the form of pulses.  
+ The same pulsed signal travels in different paths. 
+ Let us now consider a signal pulse travelling through step index fiber in two different 
+paths (1) and (2). 
+ The pulse (1) travelling along the axis of the fiber and pulse (2) travelling away from 
+the axis. 
+ At the receiving end only the pulse (1)which travels along the fiber axis reaches first 
+while the pulse(2) reaches after some time delay. 
+ Hence the pulsed signal received at the other end is broadened. This is called internal 
+dispersion. 
+ This reduces transmission rate capacity of the signal. 
+ This difficulty is overcome by graded index fibers. 
+ 
+2) Graded index optical fiber: 
+ In this fiber, the refractive index of the core varies radially.  
+ It has maximum refractive index at its centre, 
+which gradually falls with increase of radius and 
+at the core-cladding interface matches with 
+refractive index of cladding. 
+ Variation of refractive index of the core with 
+radius is given by  
+n(x) = 𝑛1[1 −2Δ (
+x
+a)
+p
+]2 
+Where 𝑛1 -> refractive index at the centre of the core 
+a-> radius of the core 
+Δ-> Fractional index change,∆ =
+𝑛1−𝑛2
+𝑛1  
+                         p-> grating profile index number 
+ This fiber divided into two types. 
+                   ( i ) Single-mode graded index fiber 
+( ii ) Multi-mode graded index fiber 
+ 
+ 
+ 
+ 
+ 
+ 

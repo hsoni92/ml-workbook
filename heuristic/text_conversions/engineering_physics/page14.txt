@@ -1,0 +1,63 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+8 
+ 
+ 
+ 
+ 
+𝑑2𝑥
+𝑑𝑡2 + k
+m x + r
+m(dx
+dt) = 𝐹
+𝑚sin 𝑝𝑡 
+𝑑2𝑥
+𝑑𝑡2 + 2b (
+dx
+dt) + ω2x = f sin 𝑝𝑡 ---------- (4) 
+ Where 
+r
+m = 2b and  
+k
+m = ω2 𝐹
+𝑚= 𝑓 
+  Equation (4) is the differential equation of motion of the particle. 
+Solution of equation of forced oscillations 
+In this case, when the steady state is setup, the particle vibrates with the frequency of applied 
+force and not with its own natural frequency. 
+The solution of differential equation (4) must be of the type 
+𝑥= 𝐴sin(𝑝𝑡−𝜃) --------- (5) 
+Where A is the steady amplitude of vibration and θ is the angle by which the displacement x 
+lags behind the applied force  𝐹sin 𝑝𝑡 . A and θ are arbitrary constants. 
+Differentiating equation (5) we get 
+𝑑𝑥
+𝑑𝑡= 𝐴𝑝cos(𝑝𝑡−𝜃) -------- (6) 
+And  
+𝑑2𝑥
+𝑑𝑡2 =  −𝐴𝑝2 sin(𝑝𝑡−𝜃) --------- (7) 
+Sub (5),(6),(7) in (4), we get 
+−𝐴𝑝2 sin(𝑝𝑡−𝜃) + 2b𝐴𝑝cos(𝑝𝑡−𝜃) + ω2𝐴sin(𝑝𝑡−𝜃) = f sin 𝑝𝑡 
+𝐴sin(𝑝𝑡−𝜃) (ω2 − 𝑝2) + 2𝑏𝐴𝑝cos(𝑝𝑡−𝜃) = 𝑓sin(𝑝𝑡−𝜃+ 𝜃) 
+𝐴sin(𝑝𝑡−𝜃) (ω2 − 𝑝2) + 2𝑏𝐴𝑝cos(𝑝𝑡−𝜃) = 𝑓sin{(𝑝𝑡−𝜃) + 𝜃} 
+𝐴sin(𝑝𝑡−𝜃) (ω2 − 𝑝2) + 2𝑏𝐴𝑝cos(𝑝𝑡−𝜃) = 𝑓sin(𝑝𝑡−𝜃) cos 𝜃+ 𝑓cos(𝑝𝑡−𝜃) sin 𝜃 
+Comparing the coefficients of sin(𝑝𝑡−𝜃) and cos(𝑝𝑡−𝜃) on b/s we get 
+𝐴(ω2 − 𝑝2) = 𝑓cos 𝜃 -------- (8) 
+2bAp = fsin 𝜃--------- (9) 
+Square and add equations (8) and (9), we get 
+𝐴2(ω2 − 𝑝2)2 +  4𝑏2𝐴2𝑝2 = 𝑓2 
+𝐴= 
+𝑓
+√(ω2− 𝑝2)2+ 4𝑏2𝐴2𝑝2 -------(10) 
+Where A is amplitude of forced vibrations. 
+Divide (9) by (8), we get 
+𝑓sin 𝜃
+𝑓cos 𝜃= 
+2bAp
+𝐴(ω2 − 𝑝2) 
+tan 𝜃= 
+2bp
+(ω2 − 𝑝2) 
+ 

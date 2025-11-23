@@ -1,0 +1,92 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+82
+ 
+ 
+ 
+Hence we conclude that the data support the assumption of mean I.Q of 100 in the 
+population.  
+b) The 95% confidence limits of the mean of the population are given by 
+𝑥 ഥ± 𝑡଴.଴ହ
+ௌ
+√௡ = 97.2 ± 2.26× 4.512 
+                    = 97.2 ± 10.198  
+                     = 107.4 and 87 
+∴ 95% confidence limits are( 87, 107.4 ) 
+ 
+4. Samples of two types of electric bulbs were tested for length of life and following data 
+were obtained  
+Type 1 
+Type 2 
+Sample number , 𝒏𝟏 = 8  
+𝒏𝟐 = 7 
+Sample mean  ,𝒙𝟏
+തതത = 1234 
+𝒙𝟐
+തതത = 1036 
+Sample S.D ,𝒔𝟏= 36 
+𝒔𝟐= 40 
+Is the difference in the mean sufficient to warrant that type 1 is superior to type 2 
+regarding length of life . 
+Sol: i)  Null Hypothesis 𝐻଴ : The two types of electric bulbs are identical  
+i.e., 𝐻଴: 𝜇ଵ = 𝜇ଶ 
+ii) Alternative Hypothesis 𝐻ଵ : 𝜇ଵ≠𝜇ଶ 
+iii)Test Statistic :𝑡௖௔௟ = 
+௫̅భି ௫̅మ
+ට௦ቀభ
+೙భାభ
+೙మቁ
+ 
+Where 𝑆ଶ = 
+௡భ௦భమା௡భ௦భమ
+௡భା௡మ
+ 
+                       = 
+ଵ
+଼ା଻ିଶ(8(36)ଶ+ 7(40)ଶ) = 1659.08 
+∴ t =
+ଵଶଷସି ଵ଴ଷ଺
+ටଵ଺ହଽ.଴଼ቀభ
+ఴାభ
+ళቁ
+  = 9.39  
+iv)Degrees of freedom = 8+7-2 =13 ,tabulated value of t for 13 d.f at 5% los is 
+2.16v)Conclusion: Since |𝑡௖௔௟| 𝑣𝑎𝑙𝑢𝑒 >𝑡ఈ value , we reject  𝐻଴  
+       Hence we conclude that the two types 1 and 2 of electric bulbs are not identical . 
+5. Two horses A and B were tested according to the time to run a particular track with the 
+following results . 
+Horse A 
+28 
+30 
+32 
+33 
+33 
+29 
+34 
+Horse B 
+29 
+30 
+30 
+24 
+27 
+29 
+ 
+Test whether the two horses have the same running capacity 
+Sol: Given 𝑛ଵ = 7 ,𝑛ଶ= 6  
+We first compute the sample means and standard deviations 
+𝑥̅ = Mean of the first sample = 
+ଵ
+଻( 28 + 30 + 32 + 33 + 33 + 29 + 34) 
+  = 
+ଵ
+଻(219) =  31.286 
+𝑦ത = Mean of the second sample = 
+ଵ
+଺( 29 + 30 + 30 + 24 + 27 + 29 ) 
+  = 
+ଵ
+଺(169) =  28.16 
+ 
+ 

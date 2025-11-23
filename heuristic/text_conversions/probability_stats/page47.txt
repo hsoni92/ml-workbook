@@ -1,0 +1,190 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+40
+ 
+ 
+ 
+8 
+10 
+11 
+13 
+7
+6 
+9 
+11 
+12 
+3
+64 
+100 
+121 
+169 
+49
+36 
+81 
+121 
+144 
+9
+48 
+90 
+121 
+156 
+21
+෍X = 70 
+෍Y = 63 
+෍Xଶ= 728 
+෍Yଶ= 651 
+෍XY = 676 
+ 
+r = 
+∑XY − (∑X ∑Y)/N
+ඥ(∑Xଶ) −(∑X)ଶ/N)(∑Yଶ−(∑Y)ଶ)/N
+ 
+       Here N = 7. 
+r =
+4732 −4410
+√5096 −4900√4557 −3969
+  = 
+322
+ඥ(196)(588)
+=
+322
+339.48 = +0.95 
+3. A sample of 𝟏𝟐 fathers and their elder sons gave the following data about their elder 
+sons. Calculate the rank correlation coefficient. 
+Fathers
+65 
+63 
+67 
+64 
+68 
+62 
+70 
+66 
+68 
+67 
+69 
+71 
+Sons 
+68 
+66 
+68 
+65 
+69 
+66 
+68 
+65 
+71 
+67 
+68 
+70 
+Sol:  
+Fathers(x) 
+Sons(y) 
+Rank(x) 
+Rank(y) 
+d୧= x୧−y୧ 
+d୧
+ଶ 
+65 
+63 
+67 
+64 
+68 
+62 
+70 
+66 
+68 
+67 
+69 
+71
+68 
+66 
+68 
+65 
+69 
+66 
+68 
+65 
+71 
+67 
+68 
+70
+9 
+11 
+6.5 
+10 
+4.5 
+12 
+2 
+8 
+4.5 
+6.5 
+3 
+1
+5.5 
+9.5 
+5.5 
+11.5 
+3 
+9.5 
+5.5 
+11.5 
+1 
+8 
+5.5 
+2
+3.5 
+1.5 
+1.0 
+-1.5 
+1.5 
+2.5 
+=3.5 
+3.5 
+=3.5 
+-1.5 
+-2.5 
+-1
+12.25 
+2.25 
+1 
+2.25 
+2.25 
+6.25 
+12.25 
+12.25 
+12.25 
+2.25 
+6.25 
+1
+Repeated values are given common rank, which is the mean of the ranks .In X: 68 & 67 appear 
+twice.    
+In Y :68 appears 4 times , 66 appears twice &65 appears twice. Here N =  12.  
+ρ = 1 −6 ቐ
+∑Dଶ+
+ଵ
+ଵଶ(mଷ−m) +
+ଵ
+ଵଶ(mଷ−m)
+Nଷ−N
+ቑ   =  1 −6(72.5 +  7)
+12(12ଶ−1) = 0.722 
+4. Given𝐧= 𝟏𝟎 , 𝛔𝐱= 5.4,𝛔𝐲= 𝟔. 𝟐 and sum of product of deviation from the mean of 𝐗&𝐘 
+is 𝟔𝟔. Find the correlation coefficient. 
+Sol:n = 10, σ୶= 5.4, σ୷= 6.2 
+σ୶
+ଶ= ∑(x −xത)ଶ
+n
+ 
+σ୷
+ଶ= ∑(y −yത)ଶ
+n
+ 
+෍(x −xത )(y −yത) =  66 
+      r =
+∑(x − xത )(y −yത)
+ඥ∑(x −xത)ଶ∑(y −yത)ଶ= 
+66
+(5. )(6.2) = 0.1971 

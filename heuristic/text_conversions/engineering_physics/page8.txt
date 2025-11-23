@@ -1,0 +1,46 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+2 
+ 
+ 
+𝑚𝑑2𝑥
+𝑑𝑡2 =  −kx 
+𝑑2𝑥
+𝑑𝑡2 = −k
+m x 
+𝑑2𝑥
+𝑑𝑡2 = −k
+m x 
+𝑑2𝑥
+𝑑𝑡2 = −k
+m x 
+𝑑2𝑥
+𝑑𝑡2 + k
+m x = 0 
+𝑑2𝑥
+𝑑𝑡2 + ω2x = 0 
+This is known as the differential equation of simple harmonic oscillation. 
+Solution using complex exponential method 
+The simple harmonic oscillator is  
+𝑑2𝑥
+𝑑2𝑦+ ω2x = 0 -------- (1) 
+Where ω2 = 
+k
+m 
+Let us assume a trail solution of the form 
+𝑥= 𝐶𝑒𝛼𝑡 -------- (2) 
+Where ‘C’ and ‘α’ are arbitrary constants. 
+By differentiating we get  
+𝑑𝑥
+𝑑𝑡= 𝐶𝛼𝑒𝛼𝑡 
+𝑑2𝑥
+𝑑2𝑦=  𝐶𝛼2𝑒𝛼𝑡 ------ (3) 
+Sub (2),(3) in (1), we get 
+𝐶𝛼2𝑒𝛼𝑡+ ω2𝐶𝑒𝛼𝑡= 0 
+𝐶𝑒𝛼𝑡(𝛼2 + ω2) = 0 
+(𝛼2 + ω2) = 0 
+𝛼2 = −ω2 
+α = ±iω 

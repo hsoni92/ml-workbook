@@ -1,0 +1,50 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+75 
+ 
+ 
+ 
+ Intrinsic absorption or internal absorption: The fiber itself as a material has a 
+tendency to absorb light energy however small it may be. The absorption that takes 
+place in fiber material assuming that there are no impurities in it, is called intrinsic 
+absorption. 
+(II) Scattering loss:  
+ When the signals travels in the fiber, the photons may 
+be scattered due to variations in the refractive index 
+inside the fiber. This scattering is called as Rayleigh 
+scattering. It is also a wavelength dependent 
+loss.𝑅𝑎𝑦𝑙𝑒𝑖𝑔ℎ𝑠𝑐𝑎𝑡𝑡𝑒𝑟𝑖𝑛𝑔𝑙𝑜𝑠𝑠∝ 
+1
+𝜆4 
+(III)Bending losses:  
+ These losses occur due to (a) Macroscopic bending (b) Microscopic bending 
+ Macroscopic bending: If the radius of core is large 
+compared to fiber diameter causes large curvature at the 
+bends. At these bends, the light will not satisfy the 
+condition for total internal reflection & light escapes 
+out from the fiber. It is called as macroscopic bending. 
+ Microscopic bending: These are caused due to non-
+uniform pressures created during the cabling of the 
+fiber or during the manufacturing the fiber. It causes 
+irregular reflections. This lead to loss of light by 
+leakage through the fiber. 
+OPTICAL FIBER IN COMMUNICATION SYSTEM 
+The most important application of optical fibers occurs in the field of communication. 
+Fiber optic communication systems comprise of the following units. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

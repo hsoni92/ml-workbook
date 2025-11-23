@@ -1,0 +1,44 @@
+PREFACE 
+Physics is a fundamental aspect of science on which all engineering sciences are made. The 
+fundamental concepts of physics have given the way for the development of engineering 
+branch and technologies. All modern technological advances from laser micro surgery to 
+television, from computers to mobile phones, from remote controlled toys to space vehicles, 
+directly work on the principles of physics. Accordingly, the syllabus of engineering courses 
+includes physics as an essential subject. The physics syllabus in engineering course is 
+primarily divided into two parts i.e. applied physics & Engineering physics as per curriculum 
+requirement in universities & engineering colleges in India. Engineering physics is also 
+known as Technical physics related to both science & technology. Engineering physics is 
+more focussed on research/development/improvement of the industry & technology. The 
+scope of engineering physics is extended to various fields of Engineering & Technology. An 
+engineer needs to think in a creative manner to solve the real times problems of world by 
+using the weapon of technology. Thus a study of engineering physics gives the students an 
+opportunity to develop their skills & creativity. The present hand-book/material of 
+engineering physics is divided into five units i.e. Unit-1 deals with Harmonic oscillations, 
+Unit-2 deals with wave optics, Unit-3 deals with Introduction to solids, Unit-4 deals with 
+Dielectric and Magnetic properties of materials, Unit-5 deals with lasers and fiber-optics. 
+Unit-1 deals with Simple harmonic oscillation & simple harmonic oscillator, equation of 
+motion and its solution, damped harmonic oscillator, equation of motion and its solution, 
+types of damping effects i.e. over, critical and under damped motion, energy decay in damped 
+oscillator, Quality factor, forced harmonic oscillator, equation of  motion and its solution. 
+Students able to know the working principles of various oscillating mechanical & electrical 
+systems subjected to damping forces in real time experience in practical’s or experiments in 
+lab. Students know the importance of oscillations and waves which are prime types of motion 
+& responsible for communication i.e. seeing, speaking & hearing with the outside world. 
+Harmonic oscillations can arise from isolated or coupled oscillator in the system. 
+ Unit-2 covers Wave-Optics deals with Interference, superposition of waves, interference of 
+light by division of wave front-interference of reflected light in thin films, interference of 
+amplitude-Newton’s rings, Diffraction-Diffraction- difference between Fresnel and 
+Fraunhofer diffraction, Fraunhofer diffraction due to single slit, Diffraction grating- Grating 
+spectrum and resolving power. Students will be familiar with interference and diffraction 
+concepts by performing expts in optics lab such as Newton’s rings, dispersive power of 
+prism, diffraction grating expt with the help of optical devices (Microscopes & Telescopes) & 
+different light sources and know the significance of wave optics in science & engineering 
+technology.   
+Unit-3 covers Introduction to solids which deals with free electronic theory (Classical & 
+Quantum), Fermi level, and density of energy states, periodic potential, Bloch’s theorem, 
+Kronig-Penny model, E-K diagram & effective mass of an electron, Origin of energy bands 
+& classification of materials into metals, insulators & semiconductors. Students will be to 
+think and judge the electric response of materials/solids largely stems from the dynamics of 
+electrons, and their interplay with atoms and molecules. Students will be familiar with Fermi 
+level and classification of materials based on band –gap of solids. 
+ 

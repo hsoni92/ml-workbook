@@ -1,0 +1,39 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+56 
+ 
+ 
+ 
+ 
+ 
+                  According to Boltzmann distribution law                    
+ 
+ 
+ 
+ 
+ 
+ 
+     According to Planck’s radiation formula the energy density of photon is given by, 
+ 
+ 
+                   Comparing eq.(1) & eq.(2), we get 
+ 
+ 
+ 
+POPULATION INVERSION: 
+The number of atoms present in the excited (or higher) state is greater than the number 
+of atoms present in the ground energy state (or lower state) is called population inversion. 
+Let us consider two level energy systems of energies E1and E2as shown in figure. Let 
+N1 and N2 be the population (means number of atoms per unit volume) of E1and E2 
+respectively. 
+According to Boltzmann’s distribution the population of an energy level E, at temperature T 
+is given by 
+𝑁𝑖= 𝑁𝑜𝑒
+(−
+𝐸𝑖
+𝑘𝐵𝑇)𝑤ℎ𝑒𝑟𝑒𝑖= 1,2,3, … . 𝑁𝑖 
+ 
+ 

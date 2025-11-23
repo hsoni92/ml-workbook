@@ -1,0 +1,125 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+72
+ 
+ 
+ 
+          and 𝑃ଵ -  𝑃ଶ = 8% = 0.08 
+i) 
+Null Hypothesis 𝐻଴ : 𝑃ଵ -  𝑃ଶ=  0.08 
+ii) 
+Alternative Hypothesis 𝐻ଵ : 𝑃ଵ -𝑃ଶ ≠0.08 ( Two  Tailed test) 
+iii) 
+ Level of Significance :𝛼= 0.05   (𝑍ఈ = 1.96 ) 
+iv) 
+Test Statistic :𝑍௖௔௟=
+(௣భ ି  ௣మ)ି( ௉భ ି  ௉మ)
+ට௣௤ቀభ
+೙భାభ
+೙మቁ
+ 
+ 
+We have p = 
+௡భ௣భା௡మ௣మ
+௡భା௡మ
+ = 
+௫భ ା௫మ 
+௡భା௡మ = 
+ସଶାଵ
+ଶ଴଴ାଵ଴଴ =  
+଺଴
+ଷ଴଴ = 0.2 
+q = 1- p = 1- 0.2 = 0.8  
+𝑍௖௔௟= 
+(଴.ଶଵି଴.ଵ଼)ି଴.଴଼
+ට(଴.ଶ)(଴.଼)ቀభ
+మబబାభ
+భబబቁ
+ 
+=  
+ି଴.଴ହ
+଴.଴ସ଼ଽ = - 1.02 
+v) 
+Conclusion: Since |𝑍௖௔௟|𝑣𝑎𝑙𝑢𝑒 <𝑍ఈvalue , we accept  𝐻଴  
+Hence we conclude that 8% difference in the sale of two brands of cigarettes is a valid 
+claim. 
+ 
+20. In a city A , 20% of a random sample of 900 schoolboys has a certain slight physical 
+defect . In another city B ,18.5% of a random sample of 1600 school boys has the 
+same defect . Is the difference between the proportions significant at 5% los? 
+Sol: Given 𝑛ଵ = 900 
+𝑛ଶ = 1600 
+𝑥ଵ = 20% of 900 = 180 
+𝑥ଶ= 18.5% of 1600 = 296 
+∴𝑝ଵ = 
+௫భ
+௡భ= 
+ଵ଼଴
+ଽ଴଴ = 0.2  and𝑝ଶ = 
+௫మ
+௡మ= 
+ଶଽ଺
+ଵ଺଴଴ = 0.185 
+i) 
+Null Hypothesis 𝐻଴ : 𝑃ଵ = 𝑃ଶ 
+ii) 
+Alternative Hypothesis 𝐻ଵ : 𝑃ଵ ≠𝑃ଶ ( Two  Tailed test) 
+iii) 
+ Level of Significance :𝛼= 0.05   (𝑍ఈ = 1.96 ) 
+iv) 
+Test Statistic :𝑍௖௔௟=
+(௣భ ି  ௣మ)
+ට௣௤ቀభ
+೙భାభ
+೙మቁ
+ 
+ 
+We have p = 
+௡భ௣భା௡మ௣మ
+௡భା௡మ
+ = 
+௫భ ା௫మ 
+௡భା௡మ = 
+ଵ଼଴ାଶଽ଺
+ଽ଴଴ାଵ଺଴଴ =  
+ସ଻଺
+ଶହ଴଴ = 0.19 
+q = 1- p = 1- 0.19 = 0.81 
+𝑍௖௔௟= 
+଴.ଶି଴.ଵ଼ହ
+ට(଴.ଵଽ)(଴.଼ଵ)ቀభ
+వబబା
+భ
+భలబబቁ
+ 
+=  
+ି଴.଴ଵହ
+଴.଴ଵ଺ଷସ = - 0.918 
+v) 
+Conclusion: Since |𝑍௖௔௟|𝑣𝑎𝑙𝑢𝑒 <𝑍ఈvalue , we accept  𝐻଴  
+Hence we conclude that there is no significant difference between the proportions. 
+21. The mean life time of a sample of 100 light tubes produced by a company is found to 
+be 1560 hrs with a population S.D of 90 hrs . Test the hypothesis for 𝜶= 𝟎. 𝟎𝟓 that 
+the mean life time of the tubes produced by the company is 1580 hrs. 
+Sol. Given𝑥̅ = 1560 hrs 
+𝜇= 1580 hrs,   𝑛= 100     and  𝜎= 90 hrs 
+i) 
+Null Hypothesis 𝐻଴ : 𝐻଴ : 𝜇=  1580 
+ii) 
+Alternative Hypothesis 𝐻ଵ : 𝜇≠ 1580  ( Two –tailed test ) 
+iii) 
+Level of significance :𝛼= 0.05   (𝑍ఈ = 1.96 ) 
+iv) 
+Test Statistic : 𝑍௖௔௟= 
+௫̅ି ఓ
+഑
+√೙
+  = 
+ଵହ଺଴ିଵହ଼଴
+వబ
+√భబబ
+  = 
+ିଶ଴
+ଽ 

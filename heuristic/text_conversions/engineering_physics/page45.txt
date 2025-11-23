@@ -1,0 +1,88 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+39 
+ 
+ 
+ 
+ Consider an electric field is applied in the positive x direction then the positive ions 
+move to the right by x1 and the negative ions move to left by x2. If we assume, each unit cell 
+has one cation and one anion.  
+ 
+The resultant dipole moment per unit cell due to ionic displacement is 
+ 
+ 
+ 
+𝜇= 𝑒(𝑥1+𝑥2) 
+If β1 and β2 are restoring force constants of cation and anion, Newton is the force due to 
+applied field. Then 
+ 
+ 
+ 
+𝐹=  𝛽1𝑥1 = 𝛽2𝑥2
+ 
+𝐻𝑒𝑛𝑐𝑒,
+𝑥1 = 𝐹
+𝛽1
+ 
+Restoring force constants depends upon the mass of the ion and angular frequency of 
+the molecule in which the ions are present. 
+𝑥1 = 𝑒𝐸
+𝑚𝜔0
+2 &𝑥2 = 𝑒𝐸
+𝑀𝜔0
+2 
+where m- mass of the positive ion & M-mass of the negative ion 
+𝑥1 + 𝑥2 = 𝑒𝐸
+𝜔0
+2 ( 1
+𝑀+ 1
+𝑚)𝜇= 𝑒(𝑥1 + 𝑥2) = 𝑒2
+𝜔0
+2 ( 1
+𝑀+ 1
+𝑚) 𝛼𝑖= 𝜇
+𝐸= 𝑒2
+𝜔0
+2 ( 1
+𝑀+ 1
+𝑚)  
+The polarizability𝛼𝑖 is inversely proportional to the square of natural frequency of the ionic 
+molecule and to its reduced mass which is equal to 
+(1
+𝑚+ 1
+𝑀)−1 
+Internal fields in solids [Lorentz Method]:  
+Now a dielectric material is placed between the 
+two parallel plate capacitor and there be an imaginary 
+spherical cavity around the atom ‘A’ inside the 
+dielectric. By taking that the radius of the cavity is 
+large compared to the radius of the atom. Now, the 
+internal field at the atom site ‘A’ can be considered to 
+be made up of four components namely E1, E2, E3 and 
+E4 
+Field E1: - 
+E1 is the field intensity at A due to the charge density 
+on the plates.From the field theory.  
+ 
+ 
+ 
+𝐷= 𝑃+ 𝐸𝜖0
+ 
+∴𝐸1 = 𝑃+ 𝜖0𝐸
+𝜖0
+∴𝐸1 = 𝐸+ 𝑃
+𝜖0
+→(1) 
+Field E2: - 
+E2 is the field intensity at A due to charge density induced on the two sides of the dielectric. 
+Therefore, 
+ 
+ 
+ 
+𝐸2 = −𝑃
+𝜖0
+→(2) 
+ 

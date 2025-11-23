@@ -1,0 +1,54 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+58 
+ 
+ 
+ 
+Optical pumping: 
+Optical pumping is used in solid laser. Xenon flash tubes are used for optical pumping. 
+Since these materials have very broad band absorption, sufficient amount of energy is absorbed 
+from the emission band of flash lamp and population inversion is created. Examples of 
+optically pumped lasers are ruby, Nd: YAG Laser ( Y3 AL5G12 ) 
+(Neodymium: Yttrium Aluminum Garnet), Nd: Glass Laser 
+Electrical discharge pumping: 
+Electrical discharge pumping is used in gas lasers. Since gas lasers have very narrow 
+absorption band pumping them any flash lamp is not possible. Examples of Electrical 
+discharge pumped lasers are He-Ne laser, CO2 laser, argon-ion laser, etc 
+Chemical pumping: 
+Chemical reaction may also result in excitation and hence creation of population 
+inversion in few systems. Examples of such systems are HF and DF lasers. 
+Injection current pumping: 
+In semiconductors, injection of current through the junction results in creates of 
+population inversion among the minority charge carriers. Examples of such systems are InP 
+and GaAs. 
+PRINCIPLE OF LASER/LASING ACTION:  
+Let us consider many no of atoms in the excited state. Now the stimulating photon 
+interacts with any one of the atoms in the excited state, the stimulated emission will occur. It 
+emits two photons, having same energy & 
+same frequency move in the same direction. 
+These two photons will interact with another 
+two atoms in excited state & emit 8-
+photons. In a similar way chain reaction is 
+produced 
+this 
+phenomenon 
+is 
+called 
+“Principle of lasing –action”. We get a 
+monochromatic, coherent, directional & 
+intense beam is obtained. This is called laser beam. This is the principle of working of a laser. 
+ 
+Components of a LASER: 
+Any laser system consists of 3-important components. They 
+are    
+(i) Source of energy or pumping source 
+(ii) Active-medium (Laser Material) 
+(iii)Optical cavity or resonator 
+(i) Energy Source :  It supply energies & pumps the atoms or 
+molecules in the active medium to excited states. As a result 
+we get population inversion in the active medium which emits 
+laser. 
+ 

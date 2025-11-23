@@ -1,0 +1,45 @@
+MALLA REDDY COLLEGE OF ENGINEERING & TECHNOLOGY 
+B. TECH- I- YEAR- I-SEM                      
+ 
+(R20A0012) ENGINEERING PHYSICS 
+COURSE OBJECTIVES:  
+1. To gain the knowledge on the basic concepts of oscillations exhibited by various systems in 
+nature.  
+2. To Study the basic concepts of light through interference and diffraction. 
+3. To explore band structure of the solids and classification of materials.             
+4. To Compare dielectric and magnetic properties of the materials and enable them to design 
+and apply in different fields. 
+5. To analyze the ordinary light with a laser light and realize the transfer of light through 
+optical fibers. 
+UNIT – I 
+HARMONIC OSCILLATIONS                                                                                                   (10Hours) 
+Introduction to harmonic oscillators, simple harmonic oscillator: equation of motion and its 
+solution (complex exponential method), damped harmonic oscillator: equation of motion and 
+its solution, over, critical and lightly-damped oscillators; energy decay in damped harmonic 
+oscillator, Quality factor (qualitative), forced damped harmonic oscillator: equation of motion 
+and its solution. 
+UNIT – II 
+WAVEOPTICS                                                                                                                          (10Hours)
+ Interference- Introduction, Superposition of waves, interference of light by division of wave 
+front-interference of reflected light in thin films, interference of light by division of amplitude- 
+Newton’s rings, Diffraction- difference between Fresnel and Fraunhofer diffraction, Fraunhofer 
+diffraction due to single slit, Diffraction grating- Grating spectrum and resolving power. 
+UNIT- III 
+INTRODUCTION TO SOLIDS   
+ 
+ 
+                                                        (7 Hours) 
+Free electron theory (Classical & Quantum): Assumptions, Merits and drawbacks, Fermi level, 
+Density of states, Periodic potential, Bloch’s theorem, Kronig – Penny modal , E – K diagram, 
+Effective mass, Origin of energy bands in solids, Classification of materials : Metals, semi 
+conductors and insulators. 
+ 
+ 
+L 
+T 
+P 
+C 
+3 
+- 
+- 
+3 

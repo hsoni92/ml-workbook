@@ -1,0 +1,22 @@
+Convolutional Neural Networks (CNNs): Specialized for processing grid-like data such as images.
+They use convolutional layers to detect features.
+Recurrent Neural Networks (RNNs): Designed to work with sequential data. They have connections
+that form directed cycles, allowing them to maintain memory of previous inputs.
+8. Challenges and Limitations
+- Need for large amounts of training data
+- Computational complexity and resource requirements
+- Black box nature - difficult to interpret decisions
+- Risk of overfitting to training data
+- Vulnerability to adversarial attacks
+9. Future Directions
+The field of neural networks continues to evolve rapidly. Current research focuses on developing
+more efficient architectures, improving interpretability, reducing computational requirements, and
+creating more robust models that can generalize better to unseen data.
+Emerging areas include attention mechanisms, transformer architectures, and neural networks that
+can learn with less supervision. These developments are pushing the boundaries of what's possible
+with artificial intelligence.
+10. Summary
+Neural networks represent a powerful approach to machine learning that has revolutionized many
+fields. By mimicking the structure and function of biological neural networks, they can learn complex
+patterns and relationships in data.
+Understanding neural networks is essential for anyone working in artificial intelligence, data science,

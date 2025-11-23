@@ -1,0 +1,111 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+36 
+ 
+ 
+Dielectric constant, property of an electrical insulating material (a dielectric) equal to the ratio of 
+the capacitance of a capacitor filled with the given material(c) to the capacitance of an 
+identical capacitor(co)(in a vacuum without the dielectric material. 
+𝜺r  =  𝒄/𝒄𝟎 
+(v) Dielectric polarization (p):Diectric polarization or Electric polarization is the induced 
+dipole moment (µ) per unit volume (v) of the dielectric in the presence of an electric field.  
+ 
+Electric polarization,slight relative shift of positive and negative electric charge in opposite 
+directions within an insulator, or dielectric, induced by an external electrical field.  
+ 
+ 
+ 
+ 
+ 
+𝑃 =  µ/𝑣 
+ 
+ 
+ 
+ 
+ 
+Units: c-m-2 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+If“µ” is the average dipole moment per molecule and “N” is the number of 
+molecules per unit volume then 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 𝑃 =  𝑁 µ 
+(vi) Dielectric polarisability (α):  
+Di-electric polarisability is the net dipole moment induced per unit applied electric 
+field. 
+𝑃 =  𝑁 µ =  𝑁𝛼𝐸 
+Units: F-m2 
+(vii)Electric susceptibility (χ):  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+It measures the amount of polarization in a given electric field produced in a dielectric. 
+Polarization 
+proportional 
+to 
+the 
+product 
+of 
+‘ε0’ 
+and 
+applied 
+electricfield. 
+χ = 𝑃/ 𝜀0𝐸 
+(viii)Electric flux density or Electric displacement (D):  
+ 
+ 
+ 
+ 
+It is defined as the total number of electric lines of force passing through the dielectric 
+material is known as electric flux density (D). 
+Mathematically it is represented by the following equation 
+                                         𝐷=  𝜀𝐸 +  𝑝 
+𝜺𝐸 = 𝜀0𝐸 +  𝑝 
+𝜺 = 𝜀0𝜀r 
+𝜀0𝜀r𝑬 = 𝜀0𝐸 +  𝑝 
+ 𝑝= 𝜀0𝐸(𝜀r −𝟏) 
+ 
+Types of polarization in dielectrics: 
+There are four types of polarization processes in dielectric. 
+1. Electronic –polarization(pe) 
+2. Ionic – polarization(pi) 
+3. Orientation-polarization or di-polar polarization(po) 
+4. Space-charge polarization(ps) 
+1.Electronic –polarization(pe)or Atomic Polarization: 
+ 
+ 
+ 
+ 
+ 
+It is defined as polarization of rare-gas atoms in the presence of a static electric field or 
+polarization due to displacement of an electron-cloud from positive charge of nucleus in an 
+atom in the presence of an electric field in a dielectric material is known as electronic- 
+ 

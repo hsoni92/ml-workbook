@@ -1,0 +1,55 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+60 
+ 
+ 
+ 
+ 
+ Xenon flash tube emits thousands joules of energy in few milli seconds, but only a part 
+of that energy is utilized by the chromium ions while the rest energy heats up the 
+apparatus. 
+ A cooling arrangement is provided to keep the experimental set up at normal 
+temperatures. 
+Working:  
+ The energy level diagram of chromium ions is shown in figure. 
+ The chromium ions get excitation into higher energy levels by absorbing of 5600A0 of 
+wave length radiation. 
+ The excited chromium ions stay in the level H for short interval of time (10-8 Sec). 
+ After their life time 
+most 
+of 
+the 
+chromium ions are 
+de-excited from H 
+to G and a few 
+chromium ions are 
+de-excited from H 
+to M. 
+ 
+ The transition between H and M is non-radioactive transition i.e. the chromium ions 
+gives their energy to the lattice in the form of heat. 
+ In the Meta stable state the life time of chromium ions is 10-3 sec. 
+ Due to the continuous working of flash lamp, the chromium ions are excited to higher 
+state H and returned to M level. 
+ After few milli seconds the level M is more populated than the level G and hence the 
+desired population inversion is achieved. 
+ The state of population inversion is not a stable one. 
+ The process of spontaneous transition is very high. 
+ When the excited chromium ion passes spontaneously from H to M it emits one 
+photon of wave length 6943A0. 
+ The photon reflects back and forth by the silver ends and until it stimulates an excited 
+chromium ion in M state and it to emit fresh photon in phase with the earlier photon. 
+ The process is repeated again and again until the laser beam intensity is reached to a 
+sufficient value. 
+ When the photon beam becomes sufficient intense, it emerges through the partially 
+silvered end of the rod. 
+ The wave length 6943A0 is in the red region of the visible spectrum on returning to 
+ground state (G). 
+ 
+ 
+ 
+ 
+ 

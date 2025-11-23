@@ -1,0 +1,90 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+16
+ 
+ 
+ 
+TUTORIAL QUESTIONS 
+ 
+1) For  the following bivariate,  find,    (i)   P(X≤2, Y=2)   
+  (ii)  FX (2)   
+ (iii)  P(Y=3)   
+ (iv)  P(X<3, Y≤4)     and  (v) FY(3) 
+ 
+ 
+2a) A random variable X has following P.D. Find (i) k (ii) P(X>6) (iii) Find ‘c’ if P(X ≤ c)>
+ଵ
+ଶ 
+ 
+ 
+ 
+b)  If F(x) is the distribution function of X given by  
+       F(x) =൝
+0, 𝑥≤1
+k(x −1)ସ, 1 < 𝑥≤3
+1, x > 3
+ൡ  Find (i) f(x) (ii) k (iii) mean 
+3) The joint density function given by 𝑓௫௬(𝑥, 𝑦) = ൝
+𝑐𝑥𝑦, 1 < 𝑥< 3,2 < 𝑦< 4
+0, 𝑜𝑡ℎ𝑒𝑟𝑤𝑖𝑠𝑒
+ൡ 
+     Find (i) c (ii) marginal density functions (iii) conditional density functions 
+    (iv) S.T X ,Y are independent 
+ 
+4a) A sample of 4 items is selected at random from a box containing 12 items of which 5 are   
+defective . Find the expected number of defective items. 
+  b) If the p.d.f is f(x) =
+௄
+ଵା௫మ,- ∞<x<∞   Find (i)K (ii) Probability distribution function 
+5a) A continuous r.v has the p.d.f f(x)=൝
+𝑘𝑥𝑒ିఈ௫, 𝑥≥0, 𝛼> 0
+0, 𝑒𝑙𝑠𝑒𝑤ℎ𝑒𝑟𝑒
+ൡ Determine (i)K, (ii) mean 
+(iii)   variance    
+ 
+  b) A random sample with replacement of size 2 is taken from S ={1,2,3}. Let X denote sum of   
+2 no. s taken .(i)Write probability distribution (ii) find mean 
+ 
+ 
+ 
+𝑋𝑌
+⁄
+1 
+2 
+3 
+4 
+1
+0.1
+0
+0.2
+0.1
+2
+0.05
+0.12
+0.08
+0.01
+3
+0.1
+0.05
+0.1
+0.09
+X
+0
+1
+2
+3
+4
+5
+6
+7
+P(X)
+0
+k
+2k
+2k
+3k
+k2
+2k2
+7k2+k

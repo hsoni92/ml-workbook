@@ -1,0 +1,48 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+75
+ 
+ 
+ 
+ 
+ASSIGNMENT QUESTIONS 
+ 
+1. A manufacturer claimed that at least 95% of the equipment which he supplied to factory 
+conformed to specifications . An examination of a sample of 200 pieces of equipment 
+revealed that 180 were faulty .Test his claim at 5% and1% LOS. 
+2. Write about   i) critical region  ii) one tailed and two tailed test. 
+3. Define sample. Explain the different methods that are involved in selecting the sample. 
+4. Explain about   i) Type I error   ii) Type II error 
+5. a)Explain the five step procedure for testing of hypothesis 
+b)Explain  about i) point estimation  ii) interval estimation 
+6. A random sample of 500 items has mean 20 and another sample of size 400 has mean 15. 
+Can you conclude that the two samples are taken from the same population with SD as 4. 
+7. A sample of 500 products are examined from a factory and 5% found to be defective. 
+Another sample of 400 similar products are examined and 3% found to be defective. Test 
+the significance between the difference of two proportions at 5% LOS. 
+8. 20 people were attacked by a disease and only 18 survived. will you reject the hypothesis 
+that the survival rate of the attack by this disease is 85% in favor of the hypothesis that is 
+more at 5% LOS. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

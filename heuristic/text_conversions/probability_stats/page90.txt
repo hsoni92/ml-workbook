@@ -1,0 +1,136 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+83
+ 
+ 
+ 
+𝐱 
+𝐱−𝐱ത 
+(𝐱−𝐱ത)𝟐 
+𝐲 
+𝐲−𝐲ത 
+(𝐲−𝐲ത)𝟐 
+28 
+-3.286 
+10.8 
+29 
+0.84 
+0.7056 
+30 
+-1.286 
+1.6538 
+30 
+1.84 
+3.3856 
+32 
+0.714 
+0.51 
+30 
+1.84 
+3.3856 
+33 
+1.714 
+2.94 
+24 
+-416 
+17.3056 
+33 
+1.714 
+2.94 
+27 
+-1.16 
+1.3456 
+29 
+-2.286 
+5.226 
+29 
+0.84 
+0.7056 
+34 
+2.714 
+7.366 
+ 
+ 
+ 
+෍𝑥
+= 219 
+ 
+෍(𝑥−𝑥̅)ଶ
+= 31.4358 
+෍𝑦
+= 169 
+ 
+෍(𝑦−𝑦ത)ଶ
+= 26.8336 
+ 
+ Now 𝑆ଶ = 
+ଵ
+௡భା௡మିଶ[(∑(𝑥− 𝑥̅)ଶ+ ∑(𝑦− 𝑦)ଶ] 
+  = 
+ଵ
+ଵଵ[31.4358 + 26.8336] 
+  = 
+ଵ
+ଵଵ(58.2694) 
+  = 5.23  
+∴ S = √5.23  = 2.3 
+i) 
+Null Hypothesis 𝐻଴: 𝜇ଵ = 𝜇ଶ 
+ii) 
+ Alternative Hypothesis 𝐻ଵ : 𝜇ଵ≠𝜇ଶ 
+iii) 
+Test Statistic :𝑡௖௔௟ = 
+௫̅భି ௫̅మ
+ ௌටቀభ
+೙భାభ
+೙మቁ
+  = 
+ଷଵ.ଶ଼଺ିଶ଼.ଵ଺
+ଶ.ଷቆටభ
+ళାభ
+లቇ
+= 2.443 
+∴𝑡௖௔௟ = 2.443 
+iv)Degrees of freedom = 7+6-2 =11 
+Tabulated value of t for 11 d.f at 5% los is 2.2 
+Conclusion: Since |t ୡୟ୪| value >t஑value , we reject  𝐻଴  
+Hence we conclude that both horses do not have the same running capacity. 
+ 
+6. Ten soldiers participated in a shooting competition in the first week. After intensive 
+training they participated in the competition in the second week . Their scores before 
+and after training are given below : 
+Scores 
+before
+67 
+24 
+57 
+55 
+63 
+54 
+56 
+68 
+33 
+43 
+Scores 
+after 
+70 
+38 
+58 
+58 
+56 
+67 
+68 
+75 
+42 
+38 
+Do the data indicate that the soldiers have been benefited by the training. 
+Sol: Given 𝑛ଵ = 10 ,𝑛ଶ= 10 
+We first compute the sample means and standard deviations 
+𝑥̅ = Mean of the first sample = 
+ଵ
+ଵ଴(67 + 24 + 57 +55+63+54+56+68+33+43) 
+              = 
+ଵ
+ଵ଴(520) =  52 

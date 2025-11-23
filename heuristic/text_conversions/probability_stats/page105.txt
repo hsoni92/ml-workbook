@@ -1,0 +1,56 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+98
+ 
+ 
+ 
+ 
+ASSIGNMENT QUESTIONS 
+ 
+  1. A random sample of 500 items has mean 20 and another sample of size 400 has mean 15.    
+    Can you conclude that the two samples are taken from the same population with SD as 4. 
+2. A sample of 500 products are examined from a factory and 5% found to be defective. 
+Another sample of 400 similar products are examined and 3% found to be defective. Test 
+the significance between the difference of two proportions at 5% LOS. 
+ 
+3. 20 people were attacked by a disease and only 18 survived .will you reject the hypothesis 
+that the survival rate of the attack by this disease is 85% in favor of the hypothesis that is 
+more at 5% LOS 
+ 
+ 
+4. Ten specimens of copper wires drawn from a large lot have the following breaking 
+strength(in kg) 518,572,570,568,572,578,572,569,548.Test whether the mean breaking 
+strengths of the lot may be taken to be 518 kg weight. 
+ 
+5. A survey of 320 families with 4children each revealed the following distribution 
+No# of boys 
+5 
+4 
+3 
+2 
+1 
+0 
+No# of girls 
+0 
+1 
+2 
+3 
+4 
+5 
+No# of families 
+14 
+56 
+110
+88 
+40
+12
+ 
+  
+Is this result consistent with the hypothesis that male and female births are equally 
+    
+popular? 
+ 
+ 
+ 

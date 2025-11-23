@@ -1,0 +1,76 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+53
+ 
+ 
+ 
+Confidence limits  for population proportion P 
+ 95% confidence limits are  p ± 1.96(S.E.of  p) 
+ 99% confidence limits are  p ± 2.58(S.E. of  p) 
+ 99.73% confidence limits are  p ± 3(S.E.of  p) 
+ 90% confidence limits are  p ± 1.645(S.E.of  p) 
+Confidence limits for the difference of two population means 𝝁𝟏 and 𝝁𝟐 
+ 95% confidence limits are ((𝑥ଵ
+തതത−𝑥ଶ
+തതത )± 1.96 (S.E of ((𝑥ଵ
+തതത−𝑥ଶ
+തതത )) 
+ 99% confidence limits are ((𝑥ଵ
+തതത−𝑥ଶ
+തതത )± 2.58 (S.E of ((𝑥ଵ
+തതത−𝑥ଶ
+തതത )) 
+ 99.73% confidence limits are ((𝑥ଵ
+തതത−𝑥ଶ
+തതത )± 3 (S.E of ((𝑥ଵ
+തതത−𝑥ଶ
+തതത )) 
+ 90% confidence limits are ((𝑥ଵ
+തതത−𝑥ଶ
+തതത )± 2.58 (S.E of ((𝑥ଵ
+തതത−𝑥ଶ
+തതത )) 
+Confidence limits for the difference of two population proportions 
+ 95% confidence limits are  𝑝ଵ-𝑝ଶ ± 1.96 ( S.E. of 𝑝ଵ-𝑝ଶ) 
+ 99% confidence limits are  𝑝ଵ-𝑝ଶ ± 2.58 ( S.E. of 𝑝ଵ-𝑝ଶ) 
+ 99.73% confidence limits are  𝑝ଵ-𝑝ଶ ± 3 ( S.E. of 𝑝ଵ-𝑝ଶ) 
+ 90% confidence limits are  𝑝ଵ-𝑝ଶ ± 1.645 ( S.E. of 𝑝ଵ-𝑝ଶ) 
+Determination of proper sample size  
+Sample size for estimating population mean : 
+n= ቀ
+௭ഀఙ
+ாቁ
+ଶ
+ where 𝑧ఈ–  Critical value of z at 𝛼 Level of significance  
+𝜎− Standard deviation of population and  
+E – Maximum sampling Error = 𝑥̅ – 𝜇 
+Sample size for estimating population proportion : 
+𝑛= 
+௭ഀమ௉ொ
+ாమ  where𝑧ఈ – Critical value of z at 𝛼 Level of significance 
+P − Population proportion  
+𝑄− 1-P 
+𝐸− Maximum Sampling error = p-P 
+Testing of Hypothesis :It is an assumption or supposition and the decision making procedure 
+about the assumption whether to accept or reject is called hypothesis testing . 
+Statistical Hypothesis: To arrive at decision about the population on the basis of sample 
+information we make assumptions about the population parameters involved such assumption  
+is called a statistical hypothesis . 
+ 
+PROCEDURE FOR TESTING A HYPOTHESIS: 
+Test of Hypothesis involves the following steps: 
+Step1: Statement of hypothesis : 
+There are two types of hypothesis : 
+ Null hypothesis: A definite statement about the population parameter. Usually a null 
+hypothesis is written as  no difference , denoted by 𝐻଴. 
+Ex.  𝐻଴: 𝜇= 𝜇଴ 
+ Alternative hypothesis: A statement which contradicts the null hypothesis is called 
+alternative hypothesis. Usually an alternative hypothesis is written as some difference , 
+denoted by 𝐻ଵ.  
+Setting of alternative hypothesis is very important to decide whether it is two-tailed or one 
+– tailed alternative , which depends upon the question it is dealing. 
+Ex.𝐻ଵ: 𝜇≠𝜇଴ (Two – Tailed test)  
+ or  
+𝐻ଵ: 𝜇> 𝜇଴ (Right one tailed test) 

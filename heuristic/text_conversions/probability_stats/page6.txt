@@ -1,0 +1,55 @@
+PROBABILITY AND STATISTICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+ 
+ 
+ 
+MALLA REDDY COLLEGE OF ENGINEERING & TECHNOLOGY 
+ 
+ B. TECH- II- YEAR- I-SEM                                                                                       L /T/P/C 
+                                                                                                                                         3 / - /- / 3 
+(R20A0024)PROBABILITY AND STATISTICS 
+(Common to CSE, IT) 
+Course Objectives:  
+ 
+1. To identify a random variable that describes randomness or an uncertainty in certain 
+realistic situation. It can be either discrete or continuous type. 
+2. To learn important probability distributions like: in the discrete case, study of the Binomial 
+and the Poisson Distributions and in the continuous case the Normal Distributions. 
+3. To build the linear relationship between two variables and also to predict how a dependent 
+variable changes based on adjustments to an independent variable. 
+4. To interpret the types of sampling, sampling distribution of means and variance, 
+Estimations of statistical parameters. 
+5. To give comprehensive knowledge of probability theory to make inferences about a 
+population from large and small samples. 
+ 
+UNIT – I: Random Variables 
+ 
+Single Random Variables -Discrete and Continuous, Probability distribution function, 
+Probability mass and density functions, mathematical expectation and variance. 
+Multiple Random variables: Discrete and Continuous, Joint probability distribution, Marginal 
+probability density functions, conditional probability distribution function and density 
+functions. 
+ 
+UNIT-II: Probability Distributions 
+ 
+Binomial distribution – properties, mean, variance and recurrence formula for Binomial 
+distribution, Poisson distribution – Poisson distribution as Limiting case of Binomial distribution, 
+properties, mean variance and recurrence formula for Poisson distribution, Normal distribution 
+– mean, variance, median, mode and characteristics of Normal distribution. 
+ 
+UNIT -III: Correlation and Regression 
+ 
+Correlation -Coefficient of correlation, Rank correlation, Regression- Regression coefficients, 
+Lines of regression. 
+Multiple correlation and regression- Coefficient of multiple Correlation, multiple regression, 
+multiple linear regression equations. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

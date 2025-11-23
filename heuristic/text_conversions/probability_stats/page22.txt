@@ -1,0 +1,104 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+15
+ 
+ 
+ 
+ 
+4.The joint density function defined by  
+𝐟(𝐱, 𝐲) = ቊ(𝐱𝟐+ 𝐱𝐲
+𝟑) 𝐢𝐟 𝟎< 𝐱< 𝟏, 𝟎< 𝐲< 𝟐
+𝟎    𝐨𝐭𝐡𝐞𝐫𝐰𝐢𝐬𝐞
+ 
+    Find  
+i) 
+Conditional probability density functions. 
+ii) 
+Marginal probability density functions 
+iii) 
+Check whether the functions X and Y   are     independent or not 
+Sol:    Givenf(x, y) = ቊ(xଶ+
+୶୷
+ଷ) if 0 < x < 1,0 < y < 2
+0    otherwise
+ 
+ Marginal probability density functions of X  is 
+                      fଡ଼(x) = ∫
+fଡ଼ଢ଼(x, y) dy
+ஶ
+ିஶ
+= ∫(𝐱𝟐+
+𝐱𝐲
+𝟑) dy
+ଶ
+଴
+ = 2x(x +
+ଵ
+ଷ) 
+ Marginal probability density functions of Y  is 
+                     fଢ଼(y)=∫
+fଡ଼ଢ଼(x, y) dx
+ஶ
+ିஶ
+ =∫(𝐱𝟐+
+𝐱𝐲
+𝟑) dx
+ଵ
+଴
+ =
+ଵ
+ଷ+
+୷
+଺ 
+                  Here        fଢ଼(y)  fଡ଼(x) = 2x(x +
+ଵ
+ଷ)(
+ଵ
+ଷ+
+୷
+଺) 
+             ⸫fଡ଼ଢ଼(x, y) ≠fଡ଼(x) fଢ଼(y) 
+Hence X and Y are not Independent. 
+Conditional probability density function of X on Y is  
+fଡ଼ଢ଼(X/Y) = 
+୤౔ౕ(୶,୷)
+ ୤ౕ(୷)  =
+(𝐱𝟐ା𝐱𝐲
+𝟑)
+(భ
+యା౯
+ల)  
+Conditional probability density function of Y on X is  
+fଡ଼ଢ଼(Y/X) = 
+୤౔ౕ(୶,୷)
+ ୤౔(ଡ଼) =
+(𝐱𝟐ା𝐱𝐲
+𝟑)
+ଶ୶(୶ାభ
+య) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

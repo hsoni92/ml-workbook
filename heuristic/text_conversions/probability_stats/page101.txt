@@ -1,0 +1,139 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+94
+ 
+ 
+ 
+Now S2 = 
+ଵ
+௡ଵା௡ଶିଶ [∑(X – 𝑋ത)2 +∑( Y − 𝑌ത)2] 
+ 
+             = 
+ଵ
+ଵଵ[31.4358 + 26.8336] 
+ 
+             = 5.23                                                                    
+ 
+∴S  =√5.23 = 2.3 
+ 
+We use students t test. 
+1. Null hypothesis  H0 : 𝜇1 = 𝜇 2 
+2. Alternate hypothesis H1 :𝜇1≠𝜇 2 
+3. Level of significance :∝ = 0.05 
+4. The test statistic is t = (𝑥̅ −𝑦ത)/𝑆√(1/𝑛1 + 1/𝑛2) 
+ 
+                                = 31.286 −28.16)/2.3√(1/7 + 1/6) 
+ 
+                               = 2.443 
+The tabulated value of t for 7+6-2 = 11 d.f at 5% los is 2.2 
+Since calculated t > tabulated t , we reject the null hypothesis H0 and conclude that both horses 
+A & B do not have the same running capacity. 
+ 
+5. Two independent samples of 8 and 7 items respectively had the following values. 
+ 
+Sample1
+11 
+11 
+13 
+11 
+15 
+9 
+12 
+14 
+Sample2
+9 
+11 
+10 
+13 
+9 
+8 
+10 
+…… 
+Is the difference between the means of samples significant? 
+ 
+Sol: Here n1 = 8 and n2 = 7 
+Sample mean and S.D is not given in the question. 
+      ∴𝑥 ഥ= Mean of first sample =  
+ଵ
+଻଼ (11+11+13+11+15+9+12+14)= 
+ଵ
+଼ x 96 = 12 
+      ∴𝑦 ഥ= Mean of second sample =  
+ଵ
+଻ (9+11+10+13+9+8+10) =
+ଵ
+଻ (70) = 10 
+ 
+X 
+x- 𝑥̅ 
+(X – 𝑋ത)2
+Y 
+Y - 𝑌ത
+(Y - 𝑌ത)2
+11
+-1
+1
+9
+-1
+1
+11
+-1
+1
+11
+1
+1
+13
+1
+1
+10
+0
+0
+11
+-1
+1
+13
+3
+9
+15
+3
+9
+9
+-1
+1
+9
+-3
+9
+8
+-2
+4
+12
+0
+0
+10
+0
+0
+14
+2
+4
+-
+-
+-
+∑X=96 
+ 
+∑(X – 𝑋ത)2
+=26 
+∑Y=70 
+ 
+∑(Y - 𝑌ത)2  
+=16 
+ 
+Now S2 = 
+ଵ
+௡ଵା௡ଶିଶ [∑X – 𝑋ത)2+∑(Y - 𝑌ത)2]   = 
+ଵ
+ଵଷ[26 + 16]  =  
+ଵ
+ଵଷ[42]  =  3.23                                                        
+ 

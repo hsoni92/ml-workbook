@@ -1,0 +1,58 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+55
+ 
+ 
+ 
+ 
+ 
+Step 5 : Making decision:  
+By comparing the computed value and the critical value decision is taken for accepting or rejecting 
+𝐻଴ 
+If calculated value ≤ critical value , we accept 𝐻଴,  
+otherwise reject 𝐻଴. 
+ 
+Errors of Sampling : 
+While drawing conclusions for population parameters on the basis of the sample results , we have 
+two types of errors. 
+ Type I error : Reject 𝐻଴ when it is true i.e, if the null hypothesis 𝐻଴ is true but it is rejected 
+by test procedure . 
+ Type II error : Accept 𝐻଴ when it is false i.e, if the null hypothesis 𝐻଴is false but it is 
+accepted by test procedure. 
+DECISION TABLE 
+ 
+𝑯𝟎 is accepted 
+𝑯𝟎 is rejected 
+𝑯𝟎 is true 
+Correct Decision 
+Type I Error 
+𝑯𝟎 is false 
+Type II Error 
+Correct Decision 
+ 
+Problems:  
+1.If the population is 3,6,9,15,27 
+a) List all possible samples of size 3 that can be taken without replacement from 
+finite population  
+b) Calculate the mean of each of the sampling distribution of means 
+c) Find the standard deviation of sampling distribution of means 
+ Sol:       Mean of the population ,𝜇 = 
+ଷା଺ାଽାଵହ
+ହ
+ = 
+଺଴
+ହ =12 
+Standard deviation of the population , 
+𝜎= ඨ(3 −12)ଶ+ (6 −12)ଶ+ (9 −12)ଶ+ (15 −12)ଶ+ (27 −12)ଶ
+5
+ 
+                    = ට
+଼ଵାଷ଺ାଽାଽାଶଶହ
+ହ
+ = ට
+ଷ଺଴
+ହ = 8.4853 
+a) Sampling without replacement : 
+The total number of samples without replacement is 𝑁஼೙ = 5஼య=10 

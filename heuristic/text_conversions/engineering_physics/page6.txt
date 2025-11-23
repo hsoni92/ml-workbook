@@ -1,0 +1,40 @@
+ 
+UNIT – IV 
+DIELECTRICS AND MAGNETIC PROPERTIES OF MATERIALS  
+                           (10 Hours) 
+Dielectrics: Introduction, Types of polarizations (Electronic and Ionic) and calculation of their 
+polarizabilities, internal fields in a solid, Clausius-Mossotti relation. 
+Magnetism: Introduction, Bohr magneton, classification of dia, para and ferro magnetic 
+materials on the basis of magnetic moment, Properties of anti-ferro and ferri magnetic 
+materials, Hysteresis curve based on Domain theory of ferro magnetism, Soft  and hard 
+magnetic materials. 
+UNIT-V 
+LASERS                                                                                                                                     (10 Hours)                                  
+Characteristics of lasers, Absorption, Spontaneous and Stimulated emissions, Einstein’s 
+Coefficients, population inversion, meta stable state, types of pumping, lasing action, 
+construction and working of Ruby Laser, Helium-Neon Laser,CO2 Laser, Applications of lasers. 
+Fiber Optics: Introduction to optical fiber, Construction and working principle of an Optical 
+Fiber, Acceptance angle and Numerical aperture, Types of Optical fibers - Mode and 
+Propagation through step and graded index fibers , Attenuation in optical fiber, Optical Fiber in  
+Communication System, Applications of optical fibers 
+ 
+TEXT BOOKS: 
+1. Engineering Physics by Arumugam, Anuradha publications.   
+2. Engineering Physics- B.K. Pandey, S. Chaturvedi, Cengage Learning. 
+REFERENCES: 
+1. Engineering Physics – R.K. Gaur and S.L. Gupta, DhanpatRai Publishers. 
+2. Engineering Physics, S Mani Naidu- Pearson Publishers. 
+3. Engineering physics 2nd edition –H.K. Malik and A.K. Singh. 
+4. Engineering Physics – P.K. Palaniswamy, Scitech publications. 
+5. Physics by Resnick and Haliday. 
+ 
+COURSE OUTCOMES: After completion of studying Engineering Physics the student is able to, 
+1. Analyze the various oscillations made by different oscillating bodies in nature. 
+2. Design different devices to go to maximum accuracy in measuring the dimensions optically. 
+3. Find the importance of band structure of solids and their applications in various electronic 
+devices. 
+4. Examine dielectric, magnetic properties of the materials and apply them in material 
+technology. 
+5. Observe the properties of light and its engineering applications of laser in fiber optic 
+communication systems. 
+ 

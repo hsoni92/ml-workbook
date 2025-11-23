@@ -1,0 +1,185 @@
+0.1: Physical Constants
+Speed of light
+c
+3 × 108 m/s
+Planck constant
+h
+6.63 × 10−34 J s
+hc
+1242 eV-nm
+Gravitation constant
+G
+6.67×10−11 m3 kg−1 s−2
+Boltzmann constant
+k
+1.38 × 10−23 J/K
+Molar gas constant
+R
+8.314 J/(mol K)
+Avogadro’s number
+NA
+6.023 × 1023 mol−1
+Charge of electron
+e
+1.602 × 10−19 C
+Permeability
+of
+vac-
+uum
+µ0
+4π × 10−7 N/A2
+Permitivity of vacuum
+ϵ0
+8.85 × 10−12 F/m
+Coulomb constant
+1
+4πϵ0
+9 × 109 N m2/C2
+Faraday constant
+F
+96485 C/mol
+Mass of electron
+me
+9.1 × 10−31 kg
+Mass of proton
+mp
+1.6726 × 10−27 kg
+Mass of neutron
+mn
+1.6749 × 10−27 kg
+Atomic mass unit
+u
+1.66 × 10−27 kg
+Atomic mass unit
+u
+931.49 MeV/c2
+Stefan-Boltzmann
+constant
+σ
+5.67×10−8 W/(m2 K4)
+Rydberg constant
+R∞
+1.097 × 107 m−1
+Bohr magneton
+µB
+9.27 × 10−24 J/T
+Bohr radius
+a0
+0.529 × 10−10 m
+Standard atmosphere
+atm
+1.01325 × 105 Pa
+Wien
+displacement
+constant
+b
+2.9 × 10−3 m K
+1
+MECHANICS
+1.1: Vectors
+Notation: ⃗a = ax ˆı + ay ˆ+ az ˆk
+Magnitude: a = |⃗a| =
+q
+a2x + a2y + a2z
+Dot product: ⃗a ·⃗b = axbx + ayby + azbz = ab cos θ
+Cross product:
+⃗a
+⃗b
+⃗a ×⃗b
+θ
+ˆı
+ˆ
+ˆk
+⃗a×⃗b = (aybz −azby)ˆı+(azbx −axbz)ˆ+(axby −aybx)ˆk
+|⃗a ×⃗b| = ab sin θ
+1.2: Kinematics
+Average and Instantaneous Vel. and Accel.:
+⃗vav = ∆⃗r/∆t,
+⃗vinst = d⃗r/dt
+⃗aav = ∆⃗v/∆t
+⃗ainst = d⃗v/dt
+Motion in a straight line with constant a:
+v = u + at,
+s = ut + 1
+2at2,
+v2 −u2 = 2as
+Relative Velocity: ⃗vA/B = ⃗vA −⃗vB
+Projectile Motion:
+x
+y
+O
+u sin θ
+u cos θ
+u
+θ
+R
+H
+x = ut cos θ,
+y = ut sin θ −1
+2gt2
+y = x tan θ −
+g
+2u2 cos2 θx2
+T = 2u sin θ
+g
+,
+R = u2 sin 2θ
+g
+,
+H = u2 sin2 θ
+2g
+1.3: Newton’s Laws and Friction
+Linear momentum: ⃗p = m⃗v
+Newton’s ﬁrst law: inertial frame.
+Newton’s second law: ⃗F = d⃗p
+dt ,
+⃗F = m⃗a
+Newton’s third law: ⃗FAB = −⃗FBA
+Frictional force: fstatic, max = µsN,
+fkinetic = µkN
+Banking angle:
+v2
+rg = tan θ, v2
+rg =
+µ+tan θ
+1−µ tan θ
+Centripetal force: Fc = mv2
+r ,
+ac = v2
+r
+Pseudo force: ⃗Fpseudo = −m⃗a0,
+Fcentrifugal = −mv2
+r
+Minimum speed to complete vertical circle:
+vmin, bottom =
+p
+5gl,
+vmin, top =
+p
+gl
+Conical pendulum: T = 2π
+q
+l cos θ
+g
+mg
+T
+l
+θ
+θ
+1.4: Work, Power and Energy
+Work: W = ⃗F · ⃗S = FS cos θ,
+W =
+R ⃗F · d⃗S
+Kinetic energy: K = 1
+2mv2 = p2
+2m
+Potential energy: F = −∂U/∂x for conservative forces.
+Ugravitational = mgh,
+Uspring = 1
+2kx2
+Work done by conservative forces is
+path
+indepen-
+dent and depends only on initial and ﬁnal points:
+H ⃗Fconservative · d⃗r = 0.
+Work-energy theorem: W = ∆K

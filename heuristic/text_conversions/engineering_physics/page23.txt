@@ -1,0 +1,49 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+17 
+ 
+ 
+geometrical shadow consists of bright and dark fringes. These fringes are due to the  
+superposition of bended light waves around the corners of an obstacle. The amount of bending 
+depends upon the size of an obstacle and wavelength of light. 
+When light falls on an obstacle whose size is comparable with the wavelength of light 
+then light bends around the edges or corners of an obstacle and enters into the geometrical 
+shadow. This bending of light is known as diffraction. 
+Types of Diffraction: 
+The diffraction phenomena are broadly classified into two types. 
+1. Fresnel’s Diffraction:  
+In this type of diffraction, the source of light and the screen are placed at finite distance. 
+In this, lenses are not necessary to study the diffraction. This diffraction can be studied in the 
+direction of propagation of light. The incident wave fronts are either spherical or cylindrical. 
+2. Fraunhofer’s Diffraction: 
+In this type of diffraction, the source and screen are placed at infinite distances. Here 
+we need lenses to study the diffraction. This diffraction can be studied in any direction. In this, 
+the incident wavefront is plane. 
+Difference between Fresnel diffraction and Fraunhofer diffraction: 
+ 
+S. No. 
+Fresnel diffraction 
+Fraunhofer Diffraction 
+1 
+Source and screen are placed at finite 
+distances. 
+Source and screen are at placed at infinite 
+distances. 
+2 
+No lenses are used. 
+Lenses are used. 
+3. 
+The incident wave front is spherical 
+or cylindrical. 
+The incident wave front is plane wave front. 
+4. 
+The diffraction can be studied in the 
+direction of propagation of light. 
+The diffraction can be studied in any of 
+propagation of light. 
+Fraunhofer’s diffraction at single slit: 
+Consider a slit AB of width ‘e’. Let a plane wavefront WW’ of monochromatic light of 
+wavelength λ propagating normally towards the slit is incident on it. The diffracted light 

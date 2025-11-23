@@ -1,0 +1,78 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+11 
+ 
+ 
+ 
+1. Constructive interference 
+2. Destructive interference 
+Constructive interference:When the two light waves reach a point in phase the resultant 
+displacement (RMax or YMax) is always equal to algebraic sum of individual displacements of 
+the light waves. It is known as constructive interference. 
+1
+2
+ 
+ 
+Max
+Max
+n
+R
+or Y
+y
+y
+y
+
+
+
+
+
+ 
+Destructive interference:When the two light waves reach a point i.e. out of phase. The 
+resultant displacement (RMin or YMin) is always equal to the difference of displacements of the 
+light waves. It is known as destructive interference. 
+1
+2
+  
+ 
+Min
+Min
+n
+R
+or Y
+y
+y
+y
+
+
+
+
+ 
+Conditions for interference of light: 
+      1) The two light sources emitting light waves should be coherent. 
+      2) The separation between the two sources should be small. 
+      3) The distance between the two sources and the screen should be large. 
+      4)  To view interference fringes, the back-ground (good-contrast) should be dark. 
+      5)  Amplitudes of two light waves are nearly equal. 
+      6)  The source should be mono-chromatic. 
+      7)  The sources should be narrow i.e. they must be small. 
+ 
+Interference of reflected lightin thin films: 
+When light is incident on a (plane parallel) thin film, 
+some portion gets reflected from the upper surface and the 
+remaining portion is transmitted into the film. Again, some 
+portion of the transmitted light is reflected back into the film by 
+lower surface and emerges through the upper surface. These 
+reflected light beams superimpose with each other, producing 
+interference and forming interference patterns.  
+Consider a thin film of thickness‘t’ and refractive index µ. Let a monochromatic light 
+ray AB be incident at an angle of incidence of ‘i’ on the upper surface of the film. BE and BC 
+are the reflected and transmitted light rays. Let the angle of refraction is ‘r’. The ray BC will be 
+reflected into the film and emerge through the film in the form of the light ray DF. 
+These two light rays superimpose depending upon pathdifference between them 
+producing interference patterns. To know the pathdifference, let us draw the normal DG to BE. 
+From D and G onwards, the light rays travel equal distances. By the time the light ray travels 
+from B to G, the transmitted light ray has to travel from B to C and C to D. 
+          

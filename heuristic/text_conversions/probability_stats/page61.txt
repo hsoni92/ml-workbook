@@ -1,0 +1,37 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+54
+ 
+ 
+ 
+or 
+ 𝐻ଵ: 𝜇< 𝜇଴ (Left one tailed test) 
+Step 2: Specification of  level of significance :  
+The LOS denoted by 𝛼 is the confidence with which we reject or accept the null hypothesis. 
+It is generally specified before a test procedure ,which can be either 5% (0.05) , 1% or 10% 
+which means that thee are about 5 chances in 100 that we would reject the null hypothesis 
+𝐻଴ and the remaining 95% confident that we would accept the null hypothesis 𝐻଴ . 
+Similarly , it is applicable for different level of significance. 
+Step 3 : Identification of the test  Statistic : 
+There are several tests of significance like z,t, F etc .Depending upon the nature of the 
+information given in the problem we have to select the right test and construct the test 
+criterion and appropriate probability distribution. 
+Step 4: Critical Region:  
+It is the distribution of the statistic. 
+ Two – Tailed Test  : The critical region under the curve is equally distributed on both 
+sides of the mean. 
+If 𝐻ଵ has ≠sign , the critical region is divided equally on both sides of the distribution. 
+ 
+ 
+ 
+ 
+ One Tailed Test: The critical region under the curve is  distributed on one side of the 
+mean. 
+  Left one tailed test:  If 𝐻ଵ has  <sign , the critical region is taken in the left side of the 
+distribution. 
+ 
+ 
+Right one tailed test : If 𝐻ଵ has  > sign , the critical region is taken on right side of the distribution. 
+ 

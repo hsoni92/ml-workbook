@@ -1,0 +1,131 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+12 
+ 
+ 
+ 
+The pathdifference between light rays (1) and (2) is 
+∆ = μ (BC+CD) (in film) –BG (in air)    -------- (1) 
+From triangle BCH,  
+cos
+cos
+HC
+t
+BC
+r
+r
+
+
+ 
+∴
+cos
+cos
+HC
+t
+BC
+r
+r
+
+
+ 
+From triangle DCH, cos
+HC
+r
+CD
+
+ 
+t
+cosr
+CD
+
+
+ 
+t
+cos
+CD
+r
+
+ 
+t
+cos
+BC
+CD
+r
+
+
+ 
+2t
+(
+)
+cos
+BC
+CD
+r
+
+
+
+    -------- (2) 
+                 To calculate BG, BD=BH+HD 
+Triangle BHC, tan
+BH
+BH
+r
+CH
+t
+
+
+ 
+∴BH
+t tanr
+
+ 
+                                           Similarly HD
+t tanr
+
+ 
+BD
+BH HD
+2t tanr
+
+
+
+          (∵ BH=HD) 
+                                      From triangle BGD, sin
+BG
+i
+BD
+
+ 
+sin
+BG
+BD
+i
+
+
+ 
+∴
+2 tan sin
+BG
+t
+r
+i
+
+ 
+                 From Snell’s law,                 
+sin
+sin
+i
+r
+
+ 
+sin
+sin
+i
+r
+
+
+ 
+ 

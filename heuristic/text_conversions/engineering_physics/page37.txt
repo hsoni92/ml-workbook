@@ -1,0 +1,56 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+31 
+ 
+ 
+𝐸= 4𝜋2ℏ2
+2𝑚𝜆2  
+𝐸=
+4𝜋2h2
+2𝑚𝜆2 4𝜋2 
+      𝐸= 1
+2  𝑚𝑣2 
+ 
+It gives us kinetic energy of an electron. It means zone theory supports classical free electron 
+theory at this situation electron completely free electron not bounded with allowed and 
+forbidden gaps (and no energy level exists). 
+Thus by varying P from 0 to ∞, we find that the completely free electron(s) becomes 
+completely bound to Brillouin Zone. 
+Brillouin Zone OR E-K diagram: 
+The Brillouin zone are the boundaries that are marked by the values of wave vector k,in which 
+electrons can have allowed energy values. These represent the allowed values of k of the 
+electrons in 1D, 2D,&3D. 
+We have ,the energy of the electron in a constant potential box is, 
+E = n2h2
+8ma2  … . (1)where a = length of the box. 
+But, 
+𝑘= 𝑛𝜋
+𝑎 ⇒𝑘2 = 𝑛2Π2
+𝑎2  
+𝑛2
+𝑎2 = 𝑘2
+𝜋2     … …… (2) 
+Substitute eqn (2) in (1) ,we get 
+𝐸=
+k2h2
+8mπ2   ; 𝐸 ∝
+ 𝑘2 . 𝐼𝑡 represents parabolic 
+equation. 
+A graph is drawn between the 
+total energy (E) and the wave 
+vector k,for various values of k. 
+i.e.𝑘=
+𝑛𝜋
+𝑎 ; 𝑛= ±1, ±2, ±3, … … 
+It is the energy spectrum of an 
+electron moving in presence of a 
+periodic potential field and is divided into allowed energy regions (allowed zones) or forbidden 
+energy gaps (forbidden zones). 
+Allowed energy values lie in the region k=-π/a to =+π/a. This zone is called the first 
+Brillouin zone. After a break in the energy values, called forbidden energy band, we have  
+another allowed zone spread from k=-π/a to -2π/a and +π/a to +2π/a. This zone is called the 
+second Brillouin zone. Similarly, higher Brillouin zones are formed 
+ 

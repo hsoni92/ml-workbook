@@ -1,0 +1,132 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+28
+ 
+ 
+ 
+Median Of The Normal Distribution 
+Let x=M be the median, then 
+නf(x)dx = නf(x)dx =
+ஶ
+୑
+1
+2
+୑
+ିஶ
+ 
+Let μϵ(−∞, M) 
+Let ∫
+f(x)dx = ∫
+f(x)dx + ∫
+f(x)dx =
+ଵ
+ଶ
+୑
+ஜ
+ஜ
+ିஶ
+ஶ
+ିஶ
+ 
+Consider ∫
+f(x)dx =
+ଵ
+஢√ଶ஠∫
+eିభ
+మ൫౮షಔ
+ಚ൯
+మ
+ஜ
+ିஶ
+dx
+ஜ
+ିஶ
+ 
+Let z =
+୶ିஜ
+஢⇒dx = σdz                              [∵Limits of z −∞⟶0] 
+නf(x)dx =
+1
+σ√2π
+නeିౖ
+మ
+మ
+σdz
+଴
+ିஶ
+ஜ
+ିஶ
+ 
+=
+ଵ
+√ଶ஠∫eି౪
+మ
+మ
+(dt)
+଴
+ஶ
+ (by taking z=-t again) 
+=
+1
+√2π
+ටπ
+2 = 1
+2 
+∴නf(x)dx = 0 ⇒μ = M
+ஜ
+ஜ
+ 
+Mode of the Normal Distribution 
+f(x) =
+1
+σ√2π
+eିభ
+మ൫౮షಔ
+ಚ൯
+మ
+−ቀx −μ
+σ
+ቁ
+ଶ
+ 
+f`(x) = 0 ⇒
+1
+σ√2π
+eିభ
+మ൫౮షಔ
+ಚ൯
+మ
+൬−1
+2 ൰2 ቀx −μ
+σ
+ቁ1
+σ = 0 
+⇒x −μ = 0 
+⇒x = μ 
+fଵଵ(x) =
+−1
+σଷ√2π
+൤eିభ
+మ൫౮షಔ
+ಚ൯
+మ
+. 1 + (x −μ)eିభ
+మቀx −μ
+σ
+ቁ
+ଶ
+൬−1
+2 ൰2 ቀx −μ
+σ
+ቁ1
+σ൨ 
+=
+−1
+σଷ√2π
+[e଴+ 0] 
+=
+ିଵ
+஢య√ଶ஠<0  
+∴x = μ is the mode of normal distribution 

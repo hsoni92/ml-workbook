@@ -1,0 +1,46 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+34 
+ 
+ 
+Classification of solids into conductors , Semiconductors & Insulators: 
+Based on the energy band diagram materials or solids are classified as follows: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Conductors:In this kind of materials, there is no forbidden gap between the valence band and 
+conduction band. It is observed that the valence band overlaps with the conduction band in 
+metals as shown in figure. There are sufficient numbers of free electrons, available for 
+electrical conduction and due to the overlapping of the two bands there is an easy transition of 
+electrons from one band to another band takes place, and there no chance for the presence of 
+holes. Resistivity of conductors is very small and it is very few milli ohm meters.(Ω m ). 
+Examples: All metals (Na, Mg, Al, Cu, Ni Cu, Ag, Li, Ar etc)  
+Semiconductors: 
+ In semiconductors, there is a band gap exists between the valence band and conduction band 
+and it is very less and it is the order of -1 to 2 eV are known as semiconductors.It will conduct 
+electricity partially at normal conditions. The electrical resistivity values are 0.5 to 103 ohm 
+meter. Due to thermal vibrations within the solid, some electrons gain enough energy to 
+overcome the band gap (or barrier) and behave as conduction electrons. Conductivity exists 
+here due to electronics and holes.  
+Examples: Silicon, Germanium, Ga As. 
+Insulators: 
+ In insulators, the width of forbidden energy gap between the valence band and conduction 
+band is very large. Due to large energy gap, electrons cannot jump from V.B to C.B.Energy 
+gap is of the order of ~10 eV and higher than semiconductors. Resistivity values of insulators 
+are 107 to 1012 ohm-m. Electrons are tightly bound to the nucleus, no valence electrons are 
+available.  
+Examples: Wood, rubber,glass.  
+ 
+ 
+ 
+ 
+ 
+UNIT V                             DIELECTRIC PROPERTIES 
+1

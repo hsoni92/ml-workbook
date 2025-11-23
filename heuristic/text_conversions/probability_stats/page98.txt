@@ -1,0 +1,80 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+91
+ 
+ 
+ 
+Fୡୟ୪= Greater Variance
+Smaller Varinace 
+𝐹௖௔௟=  
+ௌభమ
+ௌమమ  Or  
+ௌమమ
+ௌభమ 
+Where, 
+ 𝑆ଵ
+ଶis the unbiased estimator of σ12 and is calculated as: 𝑆ଵ
+ଶ= 
+௡భ௦భమ
+௡భିଵ=
+ଵ
+௡భିଵ∑(𝑥ଵ− 𝑥ଵ
+തതത)ଶ 
+𝑆ଶ
+ଶ is the unbiased estimator of σ22 and is calculated as:𝑆ଶ
+ଶ= 
+௡మ௦మమ
+௡మିଵ=
+ଵ
+௡మିଵ∑(𝑥ଶ− 𝑥ଶ
+തതത)ଶ 
+To test the hypothesis that the two population variances 𝝈𝟏
+𝟐 and 𝝈𝟐
+𝟐 are equal 
+   i) H଴: σଵ
+ଶ = σଶ
+ଶ 
+  ii) Hଵ: σଵ
+ଶ≠σଶ
+ଶ 
+ iii) Fୡୟ୪=  
+𝐆𝐫𝐞𝐚𝐭𝐞𝐫 𝐕𝐚𝐫𝐢𝐚𝐧𝐜𝐞
+𝐒𝐦𝐚𝐥𝐥𝐞𝐫 𝐕𝐚𝐫𝐢𝐧𝐚𝐜𝐞 
+ iv)At specified level of significance ( 1% or 5 %) for (ϑଵ,ϑଶ) d.f 
+  v) If  𝐅ୡୟ୪ value <𝐅୲ୟୠ value , then we accept H଴ , Otherwise reject H଴. 
+𝐹௖௔௟(𝜗ଵ, 𝜗ଶ) is the value of F with 𝜗ଵ and   𝜗ଶ degrees of freedom such that the area under the F 
+– distribution to the right of   𝐹ఈis  𝛼. 
+ 
+ 
+Problems:  
+ 
+1. In one sample of 8 observations from a normal population, the sum of the squares of 
+deviations of the sample values from the sample mean is 84.4 and in another sample of 
+10 observations it was 102.6. Test at 𝟓% level whether the populations have the same 
+varience. 
+Sol: Let 𝜎ଵ
+ଶ and 𝜎ଶ
+ଶ be the variances of the two normal populations from which the samples 
+are drawn. 
+Let the Null Hypothesis be 𝐻଴: 𝜎ଵ
+ଶ= 𝜎ଶ
+ଶ 
+Then the Alternative Hypothesis is 𝐻ଵ: 𝜎ଵ
+ଶ≠𝜎ଶ
+ଶ 
+Here 𝑛ଵ= 8, 𝑛ଶ= 10 
+Also ∑(𝑥௜−𝑥̅)ଶ= 84.4, ∑(𝑦௜−𝑦ത)ଶ= 102.6 
+If 𝑆ଵ
+ଶ𝑎𝑛𝑑𝑆ଶ
+ଶ be the estimates of 𝜎ଵ
+ଶ and 𝜎ଶ
+ଶ then 
+𝑆ଵ
+ଶ=
+1
+𝑛ଵ−1 ෍(𝑥௜−𝑥̅)ଶ= 84.4
+7
+= 12.057 
+ 

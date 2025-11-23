@@ -1,0 +1,162 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+13 
+ 
+ 
+ 
+2
+tan sin
+BG
+t
+r
+r
+
+
+ 
+                      Substituting the above values in equation-(1) 
+2
+2
+(tan )sin
+cos
+t
+pathdifference
+t
+r
+r
+r
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+2
+2
+1 sin
+cos
+t
+r
+r
+
+
+
+ 
+
+
+2
+2
+cos
+cos
+t
+r
+r
+
+
+ 
+2
+cos
+pathdifference
+t
+r
+
+
+ 
+In the above case, the ray BE is reflected at the surface of a denser medium and hence it 
+suffers an additional pathdifference equal to 
+𝜆
+2. 
+The ray BC suffers reflection at C, at the surface of a rarer medium and hence on 
+emerging out at D, it suffers no additional path change. 
+Hence the net pathdifference between the two reflected rays DF and BE 
+2
+cos
+2
+Total pathdifference
+t
+r
+
+
+
+
+ 
+When the pathdifference is an integral multiple of λ then the rays (1) and (2) will be in 
+phase and appear as constructive interference. 
+i.e.,  2
+cos
+2
+t
+r
+n
+
+
+
+
+
+ (Condition for the bright fringe) 
+2
+cos
+2
+t
+r
+n
+
+
+
+
+
+ 
+2
+cos
+(2
+1) 2
+t
+r
+n
+
+
+
+
+where n=0, 1, 2………. 
+When the pathdifference is half integral multiple of λ, the rays (1) and (2) meet in out 
+of phase and undergo destructive interference. 
+                  i.e.,            2
+cos
+(2
+1)
+2
+2
+t
+r
+n
+
+
+
+
+
+
+     (Condition for the dark fringe) 
+2
+cos
+(2
+1) 2
+2
+t
+r
+n
+
+
+
+
+
+
+ 

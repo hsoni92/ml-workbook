@@ -1,0 +1,63 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+29 
+ 
+ 
+ 
+Again, 
+𝑑2𝜓
+𝑑𝑥2 + α2𝜓= 0 … … . . (3)                where α2 = 2mE
+ℏ2  and α = 2Π
+h √2𝑚𝐸 
+𝑑2𝜓
+𝑑𝑥2 − β2𝜓= 0 … … . (4)                               where β2 = 2m
+ℏ2 (V0 −E) 
+The solution of these equations from Bloch theorem,     𝜓𝑘(𝑥) = 𝑢𝑘(𝑥)𝑒𝑥𝑝(𝑖𝑘𝑥) .               
+From figure, square well potentials, if 𝑉0 increases, the width of barrier ‘w’ decreases, if 𝑉0 
+decreases the width of barrier w increases. But the (product) barrier strength 𝑉0𝑤 remains 
+constant. 
+To get this, differentiating above Schrodinger wave equations 3 & 4 w.r.to x, and by applying 
+boundary conditions of x (w.r.to their correspondingΨ), to known the values of constants  
+A, B of region -I, C,D-for reg-II,we get mathematical expression (by simplification)  
+ 
+  
+𝑐𝑜𝑠𝑘𝑎= 𝑃
+𝑠𝑖𝑛𝛼𝑎
+𝛼𝑎+ 𝑐𝑜𝑠𝛼𝑎  
+ 
+ 
+ 
+                        
+where,     
+𝑃= 4𝜋2𝑚𝑎
+ℎ2
+𝑉0w         and             α = 2π
+h √2mE 
+P-varying term, known as scattering power. 
+And ‘𝑣₀ b’ is known as barrier strength. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Forbidden 
+allowed energy 

@@ -1,0 +1,100 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+3
+ 
+ 
+ 
+ 
+RANDOM VARIABLES 
+Random Variable 
+A Random  Variable X is a real valued function from sample space S to a real number R. 
+(or) 
+A Random  Variable X is a real number which is determined by the outcomes of the random 
+experiment. 
+Eg:1.Tosssing 2 coins simultaneously 
+               Sample space ={HH,HT,TH,TT} 
+Let the random variable be getting number of heads then  
+                              X(S)={0,1,2}. 
+2.Sum of the two numbers  on throwing 2 dice 
+                              X(S)={2,3,4,5,6,7,8,9,10,11,12}. 
+ 
+Types of Random Variables: 
+1.Discrete Random Variables : A Random  Variable X is said to be discrete if it takes only the    
+   values of the set {0,1,2…..n}. 
+Eg:1.Tosssing  a coin, throwing a dice, number of defective items in a bag. 
+2. Continuous Random Variables: A Random Variable X which takes all possible values in a   
+   given interval of domain. 
+Eg: Heights, weights of students in a class. 
+ 
+Discrete Probability Distribution: 
+Let x is a Discrete Random Variable with possible outcomes 𝑥ଵ,𝑥ଶ, 𝑥ଷ… . 𝑥௡ having probabilities 
+𝑝(𝑥௜)𝑓𝑜𝑟 𝑖= 1,2 … 𝑛 .If 𝑝(𝑥௜) > 0 𝑎𝑛𝑑 ∑
+𝑝(𝑥௜) = 1
+௡
+௜ୀଵ
+ then the function 𝑝(𝑥௜) is called 
+Probability mass function of a random variable X and {𝑥௜, 𝑝(𝑥௜)} 𝑓𝑜𝑟 𝑖= 1,2 … 𝑛 is called 
+Discrete Probability Distribution. 
+Eg: Tossing  2 coins simultaneously 
+       Sample space ={HH,HT,TH,TT} 
+Let the random variable be getting number of heads then  
+                          X(S) = {0,1,2}. 
+Probability of getting no heads =
+ଵ
+ ସ, Probability of getting 1 head =
+ଵ
+ଶ, 
+Probability of getting 2 heads =  
+ ଵ
+ସ 
+∴Discrete Probability Distribution is  
+𝑥௜
+     0 
+   1 
+   2 
+𝑝(𝑥௜) 
+1
+4 
+1
+2 
+1
+4 
+ 
+Cumulative Distribution function is given by 𝐹(𝑥) = 𝑝[𝑋≤𝑥] = ∑
+𝑝(𝑥௜)
+௫
+௜ୀ଴
+. 
+Properties of Cumulative Distribution function: 
+1. 𝑃[𝑎< 𝑥< 𝑏] =  𝐹(𝑏) −𝐹(𝑎) −𝑃[𝑋= 𝑏] 
+2. 𝑃[𝑎≤𝑥≤𝑏] =  𝐹(𝑏) −𝐹(𝑎) −𝑃[𝑋= 𝑎] 
+3. 𝑃[𝑎< 𝑥≤𝑏] =  𝐹(𝑏) −𝐹(𝑎) 
+4. 𝑃[𝑎≤𝑥< 𝑏] =  𝐹(𝑏) −𝐹(𝑎) −𝑃[𝑋= 𝑏] + 𝑃[𝑋= 𝑎] 
+ 
+Mean: The meanof the discrete Probability Distribution is defined as 
+𝜇=
+∑
+௫೔௣(௫೔)
+೙
+೔సభ
+∑
+௣(௫೔)
+೙
+೔సభ
+ = ∑
+𝑥௜𝑝(𝑥௜)
+௡
+௜ୀଵ
+  since ∑
+𝑝(𝑥௜)
+௡
+௜ୀଵ
+= 1 
+Expectation:The Expectationof the discrete Probability Distribution is defined as 
+E(X) = ∑
+𝑥௜𝑝(𝑥௜)
+௡
+௜ୀଵ
+ 

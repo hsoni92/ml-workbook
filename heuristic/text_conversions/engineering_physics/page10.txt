@@ -1,0 +1,57 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+4 
+ 
+ 
+ 
+ 
+ 
+Solution of the equation: 
+Equation (1) is a differential equation of second degree .Let its solution be 𝑥=
+𝐴𝑒𝛼𝑡… … … … … . (2)where A and α arbitrary constants. 
+Differentiating equation 2 with respect to t, we get  
+dx
+dt = 𝐴𝛼𝑒𝛼𝑡          𝑎𝑛𝑑   𝑑2𝑥
+𝑑𝑡2 =   𝐴𝛼2𝑒𝛼𝑡 
+Substituting these values in eq.(1),we have  
+ 
+𝐴𝛼2𝑒𝛼𝑡+ 2𝑏 𝐴𝛼𝑒𝛼𝑡+ w2𝐴𝑒𝛼𝑡  = 0        
+𝐴𝑒𝛼𝑡(𝛼2 + 2𝑏 𝛼+ w2)  = 0     
+As 
+𝐴𝑒𝛼𝑡 ≠0       ∴  (𝛼2 + 2𝑏 𝛼+ w2)  = 0   
+This gives 
+𝛼= −𝑏 ± √𝑏2 −𝑤2 
+The general solution of eq. (1) is given by  
+𝑥= 𝐴1𝑒⌊−𝑏+√𝑏2−𝑤2⌋𝑡+ 𝐴2𝑒⌊−𝑏−√𝑏2−𝑤2⌋𝑡… … … (3) 
+ 
+Where 𝐴1and 𝐴2are arbritrary constants. 
+Different damping conditions: 
+Case – I, Over damped motion: 
+ 
+When 𝑏2 > 𝜔2. In this case √𝑏2 −𝜔2 is real & less than b. Now the powers in eq. (3) are both 
+negative. Thus this displacement x consists of two terms, both dying off exponentially to zero 
+without performing any oscillations as shown in figure. 
+The rate of decrease of displacement is governed by the term ⌊−𝑏+ √𝑏2 −𝑤2⌋𝑡as the other 
+term reduced to zero. 
+In this case, the body once displaced returns to its equilibrium position quite slowly without 
+performing any oscillation. This type of motion is called as  over damped ordead beat. 
+Ex: Motion of simple pendulum moving in thick oil  
+a dead beat moving coil galvanometer. 
+ 
+Case II.  Critical damping: 
+ 
+When𝑏2 = 𝜔2,if we put 𝑏2 = 𝑤2  in equation (3) , this solution does not satisfy the differential 
+equation(1).  
+Let us consider  √𝑏2 −𝜔2  is not zero, but this is equal to a very small quantity ‘h’. 
+i.e.√𝑏2 −𝜔2 = h → 0 
+Now equation (3) reduces to  
+𝑥= 𝐴1𝑒(−𝑏+ℎ)𝑡+ 𝐴2𝑒−(𝑏−ℎ)𝑡 
+ 
+= 𝑒−𝑏𝑡  ⌊𝐴1𝑒ℎ𝑡+ 𝐴2𝑒−ℎ𝑡⌋ 
+= 𝑒−𝑏𝑡  [𝐴1(1 + ℎ𝑡+ ⋯. ) + 𝐴2(1 −ℎ𝑡+ ⋯. )] 
+ 
+      = 𝑒−𝑏𝑡[(𝐴1+𝐴2 ) + ℎ𝑡(𝐴1 −𝐴2) + ⋯… ] 
+ 

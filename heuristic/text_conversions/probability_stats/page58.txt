@@ -1,0 +1,58 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+51
+ 
+ 
+ 
+SAMPLING 
+Introduction:  
+The totality of observations with which we are concerned, whether this number be finite or 
+infinite constitute population. In this chapter we focus on sampling from distributions or 
+populations and such important quantities as the sample mean and sample variance. 
+ 
+Definition: Population is defined as the aggregate or totality of statistical data forming a subject 
+of investigation.  
+Example: The population of the heights of Indian. 
+       The number of observations in the population is defined to be the size of the population. It    
+       may be finite or infinite. Size of the population is denoted by N. As the study of entire  
+       population may not be possible to carry out and hence a part of the population alone is    
+       selected. 
+Definition: A portion of the population which is examined with a view to determining the 
+population characteristics is called a sample.  In other words, sample is a subset of population. 
+Size of the sample is denoted by n. 
+The process of selection of a sample is called Sampling. There are different methods of sampling 
+ Probability Sampling Methods  
+ Non-Probability Sampling Methods 
+Probability Sampling Methods: 
+a) Random Sampling (Probability Sampling): 
+It is the process of drawing a sample from a population in such a way that each member 
+of the population has an equal chance of being included in the sample.  
+Example: A hand of cards from a well shuffled pack of cards is a random sample. 
+Note: If N is the size of the population and n is the size of the sample, then  
+ The no. of samples with replacement = 𝑁௡ 
+ The no. of samples without replacement = 𝑁஼೙ 
+b) Stratified Sampling : 
+In this , the population is first divided into several smaller groups called strata according 
+to some relevant characteristics . From each strata samples are selected at random, all the 
+samples are combined together to form the stratified sampling. 
+c) Systematic Sampling (Quasi Random Sampling): 
+In this method , all the units of the population are arranged in some order . If the population 
+size is N, and the sample size is n, then we first define sample interval denoted by = 
+ே
+௡ . 
+then from first k items ,one unit is selected at random. Then from first unit every kth  unit 
+is serially selected  combining all the selected units constitute a systematic sampling. 
+Non Probability Sampling Methods: 
+a) Purposive (Judgment ) Sampling : 
+In this method, the members constituting the sample are chosen not according to some 
+definite scientific procedure , but according to convenience and personal choice of the 
+individual who selects the sample . It is the choice of the individual items of a sample 
+entirely depends on the individual judgment of the investigator. 
+b) Sequential Sampling: 
+It consists of a sequence of sample drawn one after another from the population. 
+Depending on the results of previous samples if the result of the first sample is not 
+acceptable then second sample is drawn and the process continues to take proper decision 
+. But if the first sample is acceptable ,then no new sample is drawn. 
+ 

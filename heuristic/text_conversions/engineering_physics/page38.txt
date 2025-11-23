@@ -1,0 +1,90 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+32 
+ 
+ 
+Concept of effective mass of electron: 
+When an electron in a periodic potential of lattice is accelerated by an known electric field or 
+magnetic field, then the mass of the electron is called effective mass and is represented by 𝑚∗. 
+To explain, let us consider an electron of charge ‘e’ and mass ‘m’ moving inside a crystal 
+lattice of electric field E. 
+Then by taking known expression F=ma, can be considered here as 𝐹=  𝑚∗𝑎  … … . . (1) 
+The acceleration𝑎= 
+𝑒𝐸
+𝑚is not constant in the periodic lattice but varies due to the change in 
+electronic mass. 
+If free electron under wave packet, the group velocity Vg corresponding to the particle’s 
+velocity can be written as 
+𝑣𝑔= 𝑑𝜔
+𝑑𝑘= 2𝜋𝑑𝜈
+𝑑𝑘= 2𝜋
+ℎ
+𝑑𝐸
+𝑑𝑘= 1
+ħ
+𝑑𝐸
+𝑑𝑘  … ….  (2)𝑤ℎ𝑒𝑟𝑒𝐸= ℎ𝜈 
+The rate of change of velocity is known as  
+ 
+ 
+ 
+𝐴𝑐𝑐𝑒𝑙𝑒𝑟𝑎𝑡𝑖𝑜𝑛, 𝑎= 𝑑𝑣𝑔
+𝑑𝑡= 1
+ħ
+𝑑2𝐸
+𝑑𝑘𝑑𝑡 
+𝑎= 1
+ħ
+𝑑𝐸
+𝑑𝑡
+dk
+dk = 1
+ħ
+𝑑2𝐸
+𝑑𝑘2
+𝑑𝑘
+𝑑𝑡… . . (3) 
+𝐹𝑟𝑜𝑚 𝑞𝑢𝑎𝑛𝑡𝑢𝑚 𝑚𝑒𝑐ℎ𝑎𝑛𝑖𝑐𝑠 𝑟𝑒𝑙𝑎𝑡𝑖𝑜𝑛 , 𝑝= ħ𝑘… (4) 
+𝑎𝑛𝑑𝐹= 𝑑𝑝
+𝑑𝑡… … . (5) 
+𝐵𝑦 𝑑𝑖𝑓𝑓𝑒𝑟𝑒𝑛𝑡𝑖𝑎𝑡𝑖𝑛𝑔 𝑒𝑞 (4) w.r.to t ,and by substituting eq(5)  
+ħ 𝑑𝑘
+𝑑𝑡= 𝑑𝑝
+𝑑𝑡= 𝐹⇒𝑑𝑘
+𝑑𝑡= 𝐹
+ħ   …… . (6) 
+by substituting eq.(6) in eq (3), 
+∴𝑎= 1
+ħ
+𝑑2𝐸
+𝑑𝑘2
+𝐹
+ħ 
+By rearranging the above term and by comparing with eq.(1) 
+𝐹=  ⌊
+ħ2
+(𝑑2𝐸
+𝑑𝑘2
+⁄
+)
+⌋𝑎 
+∴  𝑚∗=
+ħ2
+(𝑑2𝐸
+𝑑𝑘2
+⁄
+)
+ 
+Is known as expression for 𝑚∗and it is depends on E and K. 
+ 
+Origin of energy band formation in Solids: 
+The band theory of solids explains the formation of energy bands and determines 
+whether a solid is a conductor, semiconductor or insulator. 
+ 
+ 
+ 
+ 
+ 

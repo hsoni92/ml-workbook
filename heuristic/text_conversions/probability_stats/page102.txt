@@ -1,0 +1,95 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+95
+ 
+ 
+ 
+S  =√3.23 = 1.8 
+ 
+We use students t test. 
+1. Null hypothesis  H0 : 𝜇1 = 𝜇 2 
+2. Alternate hypothesis H1 :𝜇1≠𝜇 2  ( Two tailed test) 
+3. Level of significance :∝ = 0.05 
+4. The test statistic is t =  (𝑥̅ −𝑦ത)/𝑆√(1/𝑛1 + 1/𝑛2) 
+ 
+                                                = (12 −10)/1.8√(1/8 + 1/7) 
+ 
+                                                = 2.15 
+The tabulated value of t for 8+7-2 = 13 d.f at 5% los is 2.16 
+Since calculated t value < tabulated t value, we accept the null hypothesis H0 and conclude that  
+the difference between the means of the sample is not significant. 
+ 
+ 
+5. A sample of 10 student’s marks in an Entrance test out of 150 marks is given as 70,  
+    120, 110, 101, 88, 83, 95, 98, 107, 100. Test whether their mean mark is 100 at 5% los. 
+ 
+Sol: Here mean and S.D of the data is not given. So first calculate the sample mean and S.D. 
+Mean    = 
+∑௫
+௡ 
+ 
+= 
+ଽ଻ଶ
+ଵ଴ = 97.2 
+ 
+ 
+S2 = 
+ଵ
+௡ିଵ∑(x − 𝑥̅)2 
+ 
+       = 
+ଵ଼ଷଷ.଺଴
+ଽ
+ 
+      = 203.73 
+ There for S.D,  S = √203.73 
+                               = 14.27 
+We use students t test. 
+1. Null hypothesis  H0 : 𝜇 = 100 
+2. Alternate hypothesis H1 :𝜇 ≠ 100  (Two tailed test) 
+3. Level of significance   :∝ = 0.05 
+4. The test statistic is t =
+௫̅ିఓ
+ೞ
+√೙
+  =. 
+ଽ଻.ଶିଵ଴଴
+ଵସ.ଶ଻/√ଵ଴  = -0.62 
+x 
+x- 𝑥̅
+(x- 𝑥̅)2
+70
+-27.2
+739.84
+120
+22.8
+519.84
+110
+12.8
+163.84
+101
+3.8
+14.44
+88
+-9.2
+84.64
+83
+-14.2
+201.64
+95
+-2.2
+4.84
+98
+0.8
+0.64
+107
+9.8
+96.04
+100
+2.8
+7.84
+∑x=972 
+ 
+∑(x- 𝑥̅)2 =1833.60

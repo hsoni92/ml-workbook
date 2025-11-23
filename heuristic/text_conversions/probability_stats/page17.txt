@@ -1,0 +1,143 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+10
+ 
+ 
+ 
+න
+k
+1 + xଶdx = 1.
+ஶ
+ିஶ
+ 
+2k(tanିଵx) ∞
+0 =  1 
+2k(tanିଵ∞ −tanିଵ0) =1 
+∴k = 1
+π 
+Cumulative distribution function of f(x) is given by 
+න
+f(x)dx = න
+𝐤
+𝟏+ 𝐱𝟐dx = 1
+π (tanିଵx) x
+−∞= 1
+π [π
+2 + (tanିଵx)].
+୶
+ିஶ
+୶
+ିஶ
+ 
+2. If the probability density function 𝐟(𝐱) =  𝐜𝐞ି|𝐱|   −∞< 𝒙< ∞.  
+     Find the value of ‘c’, mean and variance. 
+Sol: Since total area under the probability curve is 1 i. e, ∫f(x)dx = 1.
+ୠ
+ୟ
+ 
+න
+𝐜𝐞ି|𝐱|dx = 1
+ஶ
+ିஶ
+ 
+2 න𝐜𝐞ି𝐱dx = 1
+ஶ
+଴
+ 
+2c (
+𝐞ష𝐱
+ିଵ) ஶ
+଴=1 
+∴c = 1
+2 
+  Mean,μ = ∫
+x f(x)dx =
+ଵ
+ଶ∫
+x𝐞ି|𝐱| dx = 0 since x𝐞ି|𝐱| is an odd function .
+ஶ
+ିஶ
+ஶ
+ିஶ
+ 
+Variance = V(X)
+= න
+xଶ f(x)dx −μଶ
+ஶ
+ିஶ
+= 1
+2 න
+xଶ𝐞ି|𝐱| dx
+ஶ
+ିஶ
+= 1
+2 න
+2xଶ𝐞ି𝐱 dx = [xଶ(−𝐞ି𝐱) −2x(𝐞ି𝐱) + 2(−𝐞ି𝐱)] ∞
+0 = 2
+ஶ
+଴
+. 
+3. If the probability density function 𝐟(𝐱) = ቊ
+𝐬𝐢𝐧𝐱
+𝟐
+𝟎, 𝐨𝐭𝐡𝐞𝐫𝐰𝐢𝐬𝐞   
+, 𝐢𝐟 𝟎≤𝐱≤𝛑     . 
+Find mean, median, mode and𝐏(𝟎< 𝐱<
+𝛑
+𝟐). 
+Sol:Mean =μ = ∫
+x f(x)dx =
+ଵ
+ଶ∫x
+𝐬𝐢𝐧𝐱
+𝟐dx =
+ଵ
+ଶ[−xcosx + sinx] ஠
+଴=
+஠
+ଶ.
+஠
+଴
+ஶ
+ିஶ
+ 
+ Let M be the Median then 
+න
+f(x)dx = නf(x)dx = 1
+2 ∀ x ∈(−∞, ∞)
+஠
+୑
+୑
+଴
+ 
+න
+sinx
+2 dx = නsinx
+2 dx = 1
+2 ∀ x ∈(−∞, ∞)
+஠
+୑
+୑
+଴
+ 
+Consider∫
+𝐬𝐢𝐧𝐱
+𝟐dx =
+ଵ
+ଶ
+஠
+୑
+ then (– cosx) ஠
+୑ 
+ 
+  ∴M =
+஠
+ଶ 
+Since f(x) = ቊ
+ୱ୧୬୶
+ଶ
+0 ,   otherwise
+if 0 ≤x ≤π      
+ 

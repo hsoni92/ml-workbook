@@ -1,0 +1,58 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+17
+ 
+ 
+ 
+ASSIGNMENT QUESTIONS 
+1.If the p.d.f of a r.vxis given by 𝑓(𝑥) = ൜𝑘(1 −𝑥ଶ), 0 < 𝑥< 1
+0, 𝑜𝑡ℎ𝑒𝑟𝑤𝑖𝑠𝑒 
+   find   i) k 
+2.If F(x) is the distribution function of x is given by𝐹(𝑋) = ቐ
+0   𝑖𝑓𝑥≤1
+𝑘(𝑥−1)ସ
+1   𝑖𝑓𝑥> 3
+𝑖𝑓 1 < 𝑥≤3 
+Determine  i) f(x)  ii) k  iii)mean 
+3. If X is a continuous  r.v and Y=kX+c prove that E(Y)=kE(X)+y and V(Y)=𝑘ଶ𝑉(𝑋),where V  
+stands for  Variance 
+ 
+4. A random variable has the following probability function 
+x 
+0 1 
+2 
+3 
+4 
+5 
+6 
+7 
+P(x) 
+0 
+K 
+2K 
+2K 
+3K 
+K2 
+2K2 
+7K2 +K 
+        Determine i) K   ii) Mean  iii)Variance  iv) P(2< X < 6). 
+ 
+5. The joint density function given by 𝑓௫௬(𝑥, 𝑦) = ൜𝑐𝑥𝑦, 1 < 𝑥< 3,2 < 𝑦< 4
+0, 𝑜𝑡ℎ𝑒𝑟𝑤𝑖𝑠𝑒
+ 
+     Find (i) c (ii) marginal density functions (iii) conditional density functions 
+    (iv) S.T X ,Y are independent 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

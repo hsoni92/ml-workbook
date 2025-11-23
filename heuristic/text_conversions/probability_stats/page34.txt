@@ -1,0 +1,176 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+27
+ 
+ 
+ 
+μ = න
+x f(x)dx = න
+x 
+1
+σ√2π
+eି(౮షౘ)మ
+మಚమdx
+ஶ
+ିஶ
+ஶ
+ିஶ
+ 
+                                            =
+ଵ
+√ଶ஠∫
+(σz + b) eି(౰)మ
+మdz
+ஶ
+ିஶ
+[Putting z =
+୶ିୠ
+஢  so that dx = σ dz] 
+                                           =
+஢
+√ଶ஠∫
+z eି(౰)మ
+మdz
+ஶ
+ିஶ
++
+ୠ
+√ଶ஠∫
+eି(౰)మ
+మdz
+ஶ
+ିஶ
+ 
+                                         =
+ଶୠ
+√ଶ஠∫
+eି(౰)మ
+మdz
+ஶ
+ି଴
+ 
+ [ since z eି(౰)మ
+మ is an odd function and eି(౰)మ
+మis an even function] 
+μ =
+ଶୠ
+√ଶ஠√
+஠
+ଶ   = b 
+∴Mean =  b 
+Variance of the Normal Distribution 
+Variance = ∫
+xଶ
+ஶ
+ିஶ
+f(x)dx −μଶ 
+=
+1
+σ√2π
+නxଶ
+ஶ
+ିஶ
+eିభ
+మ   
+ቀ౮షಔ
+ಚቁ
+మ
+dx −μଶ 
+Let z =
+୶ିஜ
+஢⟹dx = σdz 
+=
+1
+σ√2π
+න(μଶ
+ஶ
+ିஶ
++ σଶzଶ  + 2μσz) eି౰మ
+మσdz −μଶ 
+= μଶ
+√2π
+නeି౰మ
+మ
+ஶ
+ିஶ
+dz + σଶ
+√2π
+නzଶ
+ஶ
+ିஶ
+eିయమ
+మ   dz + 2μσ
+√2π
+නzଶ
+ஶ
+ିஶ
+eିయమ
+మ   dz −μଶ 
+= 2μଶ
+√2π
+නeି౰మ
+మ
+ஶ
+଴
+dz + 2σଶ
+√2π
+නzଶ
+ஶ
+଴
+eିయమ
+మ   dz −μଶ 
+=
+ଶ஢మ
+√ଶ஠∫
+zଶeି౰మ
+మ
+ஶ
+଴
+dz 
+ 
+ 
+ 
+ 
+ቈ∵zଶ
+2 = t ⇒2zdz
+2
+= dt ⟹dz = dt
+√2t
+቉ 
+= 2σଶ
+√2π
+න(2 +)ଶe୲
+ஶ
+଴
+dt
+√2t
+ 
+=
+ଶ஢మ
+√஠∫
+eି୲
+ஶ
+଴
++
+య
+మషభ.dt =
+ଶ஢మ
+√஠Γ൫య
+మ൯ =
+ଶ஢మ
+√஠
+ଵ
+ଶ Γ ቀ
+ଵ
+ଶቁ=
+஢మ
+√஠√π = σଶ 
+∴σଶ= න
+xଶ f(x)dx −μଶ.
+ஶ
+ିஶ
+ 
+ 
+ 

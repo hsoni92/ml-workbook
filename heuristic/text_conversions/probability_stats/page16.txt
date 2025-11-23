@@ -1,0 +1,100 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+9
+ 
+ 
+ 
+Continuous Probability distribution: 
+Let X be a continuous random variable taking values on the interval (a,b). A function f(x) is  
+said to be the Probability density function of x if 
+i) 
+f(x) > 0 ∀ x ∈(a, b) 
+ii) 
+Total area under the probability curve is 1i. e, ∫f(x)dx = 1.
+ୠ
+ୟ
+ 
+iii) 
+For two distinct numbers ‘c’ and ‘d’ in (𝑎, 𝑏) is given by P(c < 𝑥< 𝑑) =
+Area under the probability curve between ordinates x = c and x = d i. e 
+∫f(x)dx.
+ୢ
+ୡ
+ 
+Note: P(c < 𝑥< 𝑑) = P(c ≤x ≤d) = P(c ≤x < 𝑑) = P(c < 𝑥≤𝑑) 
+Cumulative distribution function of 𝑓(𝑥) is given by 
+∫
+f(x)dx
+୶
+ିஶ
+    i.e, f(x) =
+ୢ
+ୢ୶F(x) 
+ 
+Mean: The meanof the continuous Probability Distribution is defined as 
+μ = න
+x f(x)dx.
+ஶ
+ିஶ
+ 
+Expectation:The Expectationof the continuous Probability Distribution is defined as 
+E(X) =∫
+x f(x)dx.
+ஶ
+ିஶ
+ 
+In general,E(g(x)) = ∫
+g(x) f(x)dx.
+ஶ
+ିஶ
+ 
+Properties: 
+1)E(X) =  μ 
+2)E(X) =  k E(X) 
+3) E(X + k) =  E(X) +  k 
+4) ) E(aX ± b) =  aE(X) ±  b 
+ 
+Variance: The variance of the Continuous Probability Distribution is defined as  
+ Var(X) =  V(X) = න
+xଶ f(x)dx −μଶ.
+ஶ
+ିஶ
+ 
+Properties: 
+1)V(c) = 0 where c is a constant 
+2) V(kX) = kଶ V(X) 
+3) V(X + k) =  V(X) 
+4) V(aX ± b) = aଶ V(X) 
+ 
+Mean Deviation: Mean deviation of continuous probability distribution function is defined  
+                        as    M.D =∫
+|x −μ| f(x)dx.
+ஶ
+ିஶ
+ 
+Median: Median is the point which divides the entire distribution in to two equal parts. In case  
+of continuous distribution, median is the point which divides the total area in to two  
+equal parts i.e.,∫
+f(x)dx = ∫f(x)dx =
+ଵ
+ଶ ∀ x ∈(a, b)
+ୠ
+୑
+.
+୑
+ୟ
+ 
+Mode: Mode is the value of x for which f(x)is maximum. 
+i.ef ᇱ(x) = 0 and f "(x) < 0  for x ∈(a, b) 
+ 
+Problems 
+1.If the probability density function𝒇(𝒙) = 
+𝒌
+𝟏ା𝒙𝟐   −∞< 𝑥< ∞. Find the value of ‘k’ and  
+probability distribution function of𝐟(𝐱). 
+Sol: Since total area under the probability curve is 1i. e, ∫f(x)dx = 1.
+ୠ
+ୟ
+ 

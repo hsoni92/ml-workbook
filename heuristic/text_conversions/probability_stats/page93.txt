@@ -1,0 +1,92 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+86
+ 
+ 
+ 
+Before(𝑥)
+After(𝑦) 
+𝑑= 𝑦−𝑥 
+𝑑ଶ 
+12 
+15 
+-3 
+9 
+14 
+16 
+-2 
+4 
+11 
+10 
+1 
+1 
+8 
+7 
+1 
+1 
+7 
+5 
+2 
+4 
+10 
+12 
+-2 
+4 
+3 
+10 
+-7 
+49 
+0 
+2 
+-2 
+4 
+5 
+3 
+2 
+4 
+6 
+8 
+-2 
+4 
+ 
+ 
+෍𝑑
+= −12 
+෍𝑑ଶ
+= 84 
+ 
+𝑑̅ = 
+ିଵଶ
+ଵ଴  = -1.2 
+𝑆ଶ= 
+଼ସି (ିଵ.ଶ)మ୶ ଵ଴
+ଽ
+ = 7.73 
+∴ S = 2.78 
+𝑡௖௔௟=
+ௗത
+௦
+√௡
+ൗ
+  = 
+ିଵ.ଶ
+ଶ.଻଼
+√ଵ଴
+ൗ
+   = -1.365 and d.f = n-1 = 9 
+ Tabulated value of t for 9 d.f at 5% los is 1.833 
+Conclusion: Since |t ୡୟ୪| value <|t஑|value , we accept  𝐻଴  
+Hence we conclude that there is no significant difference in memory capacity after the training 
+program. 
+ 
+ 
+Chi-Square (𝝌𝟐) Distribution 
+Chi square distribution is a type of cumulative probability distribution . probability distributions 
+provide the probability of every possible value that may occur . Distributions that are cumulative 
+give the probability of a random variable being less than or equal to a particular value. Since the 
+sum of the probabilities of every possible value must equal one , the total area under the curve is 
+equal to one . Chi square distributions vary depending on the degrees of freedom. The degrees of 
+freedom is found by subtracting one from the number of categories in the data . 
+. 

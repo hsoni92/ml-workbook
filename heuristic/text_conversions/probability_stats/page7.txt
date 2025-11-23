@@ -1,0 +1,58 @@
+PROBABILITY AND STATISTICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+ 
+ 
+ 
+UNIT –IV: Sampling and Testing of Hypothesis for Large Samples 
+ 
+Sampling: Definitions - Types of sampling - Expected values of sample mean and variance, 
+Standard error - Sampling distribution of means and variance. Estimation - Point estimation 
+and Interval estimation. 
+ 
+Testing of hypothesis: Null and Alternative hypothesis - Type I and Type II errors, Critical 
+region - confidence interval - Level of significance, One tailed and Two tailed test. 
+ 
+Large sample Tests: Test of significance - Large sample test for single mean, difference of 
+means, single proportion, and difference of proportions. 
+ 
+Unit-V: Testing of Hypothesis for Small Samples 
+ 
+Small samples: Test for single mean, difference of means, paired t-test, test for ratio of variances 
+(F-test), Chi- square test for goodness of fit and independence of attributes. 
+ 
+Suggested Text Books: 
+i) 
+Fundamental of Statistics by S.C. Gupta, 7thEdition,2016. 
+ii) 
+Fundamentals of Mathematical Statistics by SC Gupta and V.K.Kapoor 
+iii) 
+Higher 
+Engineering 
+Mathematics 
+by 
+B.S.Grewal, 
+Khanna 
+Publishers, 
+35thEdition,2000. 
+ 
+ References: 
+i) 
+Introduction to Probability and Statistics for Engineers and Scientists by 
+Sheldon M.Ross. 
+ii) 
+Probability and Statistics for Engineers by Dr. J. Ravichandran.  
+ 
+Course Outcomes: After learning the concepts of this paper the student will be able to          
+            independently  
+1. Evaluate randomness in certain realistic situation which can be either discrete or 
+continuous type and compute statistical constants of these random variables.  
+2. Provide very good insight which is essential for industrial applications by learning 
+probability distributions. 
+3. Higher up thinking skills to make objective, data-driven decisions by using correlation and 
+regression. 
+4. Assess the importance of sampling distribution of a given statistic of a random sample. 
+5. Analyze and interpret statistical inference using samples of a given size which is taken from 
+a population. 

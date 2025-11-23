@@ -1,0 +1,57 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+62 
+ 
+ 
+ 
+ 
+Working: 
+ When the electric discharge is passing through the gas mixture, the electrons 
+accelerated towards the positive electrode. 
+  During their passage, they collide with He atoms and excite them into higher levels. 
+ F2 and F3 form F1. In higher levels F2 and F3, the life time of He atoms is more. 
+ So there is a maximum possibility of energy transfer between He and Ne atoms 
+through atomic collisions. 
+ When He atoms present in the levels F2 and F3 collide with Ne atoms present ground 
+state E1, the Ne atoms gets excitation into higher levels E4 andE6.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Due to the continuous excitation of Ne atoms, we can achieve the population inversion 
+between the higher levels E4 (E6) and lower levels E3 (E5). 
+ The various transitions E6→ E5, E4→ E3 and E6→ E3 leads to the emission of 
+wavelengths 3.39A⁰, 1.15 A⁰ and 6328A0. 
+ The first two corresponding to the infrared region while the last wavelength is 
+corresponding to the visible region. 
+ The Ne atoms present in the E3 level are de-excited into E2 level, by spontaneously 
+emission of photon. 
+ When a narrow discharge tube is used, the Ne atoms present in the level E2 collide 
+with the walls of the tube and get de-excited to ground level E1. 
+Uses of He-Ne laser: 
+- 
+Used in laboratories foe all interferometric experiments. 
+- 
+Used widely in metrology in surveying, alignment etc. 
+- 
+Used to read barcodes and He-Ne laser scanners also used for optical character 
+recognition. 
+- 
+Used in holography. 
+CO2 laser : 
+The CO2 laser was one of the gas laser,these are the highest power continuous wave lasers that 
+are currently available,they are also quite efficient .The ratio of output power to pump power 
+can be as large as 20%. 
+ 
+ 
+ 

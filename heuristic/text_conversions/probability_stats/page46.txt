@@ -1,0 +1,192 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+39
+ 
+ 
+ 
+∑XY= a ∑Y+ b∑Yଶ 
+Regression equations when deviations taken from the arithmetic mean : 
+Regression equation of Y onX  : Y −Yഥ = b୷୶(X −Xഥ ) whereb୷୶=
+∑ଡ଼ଢ଼
+∑ଡ଼మ 
+Regression equation of X onY  : X −Xഥ = b୶୷(Y −Yഥ ) where b୶୷=
+∑ଡ଼ଢ଼
+∑ଢ଼మ 
+Angle b/w Two Regression lines :tanθ = 
+୫భି୫మ
+ଵା୫భ୫మ 
+1. If θ is acute then tanθ =
+ఙ౮ఙ౯
+ఙమ౮ାఙమ౯(
+ଵି௥మ
+௥) 
+2. If  θ is obtuse then tanθ =
+ఙ౮ఙ౯
+ఙమ౮ାఙమ౯(
+௥మିଵ
+௥) 
+3. If r =  0 then tan θ = ∞thenθ = 
+π
+ଶ. Thus if there is no relationship between the 2 
+variables(i.e, they are independent) thenθ = 
+π
+ଶ. 
+4. If 𝑟= ±1 then tanθ = 0 then θ = 0 or  π. Hence the 2 regression lines are parallel or 
+coincident. The correlation between2variables is perfect. 
+Problems 
+1. Find Karl Pearson’s coefficient of correlation from the following data. 
+Ht. in inches 
+57 
+59 
+62 
+63 
+64 
+65 
+55 
+58 
+57 
+Weight in lbs
+113
+117
+126
+126
+130
+129
+111
+116
+112
+Sol: 
+Ht. 
+in 
+inches 
+  X 
+Deviation 
+from mean 
+X = x-𝑥̅ 
+𝑋ଶ 
+Wt. in lbs 
+Y 
+Deviation 
+from mean 
+Y = y-𝑦ത 
+𝑌ଶ 
+Product of 
+deviations 
+of X and Y 
+series (XY)
+57
+-3
+9
+113
+-7
+49
+21
+59
+-1
+1
+117
+-3
+9
+3
+62
+2
+4
+126
+6
+36
+12
+63
+3
+9
+126
+6
+36
+18
+64
+4
+16
+130
+10
+100
+40
+65
+5
+25
+129
+9
+81
+45
+55
+-5
+25
+111
+-9
+81
+45
+58
+-2
+4
+116
+-4
+16
+8
+57
+-3
+9
+112
+-8
+64
+24
+540
+0
+102
+1080
+0
+472
+216
+ 
+Coefficient of correlation r = 
+∑ଡ଼ଢ଼
+ඥ∑ଡ଼మ∑ଢ଼మ = 
+ଶଵ଺
+ඥ(ଵ଴ଶ)(ସ଻ଵ) = 0.98 
+ 
+2. Calculate Coefficient of correlation for the following data. 
+X 
+12 
+9 
+8 
+10 
+11 
+13 
+7 
+Y 
+14 
+8 
+6 
+9 
+11 
+12 
+3 
+Sol: In both series items are in small number. 
+So there is no need to take deviations. 
+Formula used: r = Cov(XY)
+σ୶σ୷
+ 
+X
+Y
+X2
+Y2
+XY
+12 
+9
+14 
+8
+144 
+81
+196 
+64
+168 
+72

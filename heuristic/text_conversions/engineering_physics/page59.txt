@@ -1,0 +1,44 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+53 
+ 
+ 
+ 
+Let  E1 and  E2 be  the  energies  of  ground  and  excited  states  of  an  atom. Suppose, 
+if a photon of energy E2−E1 = hν  interacts with an atom present in the ground state, the atom 
+gets excitation form ground state E1 to excited state E2 .  This process is called stimulated 
+absorption. 
+ 
+ 
+ 
+ 
+ 
+Stimulated absorption rate depends upon the number of atoms available in the lowest 
+energy state as well as the energy density of photons. 
+SPONTANEOUS EMISSION:  
+The atom in the excited state returns to ground state emitting a photon of energy (E) = 
+E2 – E1 = hv, without applying an external energy spontaneously is known as spontaneous 
+emission. 
+ Let E1 and E2 be the energies of ground and excited states of an atom. Suppose, if 
+photon of energy E2− E1 = hν interacts with an atom present in the ground state, the atom gets 
+excitation form ground state E1 to excited state E2 
+The excited atom does not stay for a long time in the excited state. The excited atom 
+gets de-excitation after its life time by emitting a photon of energy E2− E1 = hν . This process is 
+called spontaneous emission. 
+The spontaneous emission rate depends up on the number of atoms present in the excited state. 
+ The probability of spontaneous emission (P21) is independent of u(𝜗). 
+𝑃21 = 𝐴21 
+ 
+ 
+STIMULATED-EMISSION:   
+The atom in the excited state can also returns to the ground state by applying external 
+energy or inducement of photon thereby emitting two photons which are having same energy 
+as that of incident photon. This process is called as stimulated emission. 
+Stimulated emission was postulated by Einstein. Let E1 and E2 be the energies of 
+ground and excited states of an atom. Let a Photon of energy E2-E1=hυ interacts with the 
+excited atom with in their life time The atom gets de-excitation to ground state by emitting of 
+another photon.  
+ 

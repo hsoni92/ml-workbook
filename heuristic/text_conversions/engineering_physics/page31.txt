@@ -1,0 +1,67 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+25 
+ 
+ 
+ 
+Case I : Probability of occupation at T= 0K,and 𝐸< 𝐸𝐹 
+𝐹(𝐸) =
+1
+1 + exp (
+−1
+0 )
+=
+1
+1 + 0 = 1 
+Therefore F(E) =1,as per above ,clearly indicates that at T=0K, the energy level below the 
+Fermi energy level 𝐸𝐹 is fully occupied by electrons leaving the upper level vacant. Therefore, 
+there is 100% probability that the electrons to occupy energy level below Fermi level. 
+Case II:Probability of occupation at T= 0K, and 𝐸> 𝐸𝐹 
+Then 
+𝐹(𝐸) = 
+1
+1 + 𝑒
+1
+0
+= 
+1
+1 + 𝑒∞=
+1
+1 + ∞=  1
+∞= 0 
+i.e., all levels below 𝐸𝐹 are completely filled and al levels above 𝐸𝐹are completely empty. As 
+the temperature rises F (E). 
+Case III:Probability of occupation at T= 0K, and 𝐸= 𝐸𝐹 
+𝐹(𝐸) = 
+1
+1 + 𝑒0 = 
+1
+1 + 1 = 1
+2 = 0.5 
+The above condition states that, T=0K, there is a 50% probability for the electrons to occupy 
+Fermi energy. 
+The probability function F(E) lies between 0 and 1. 
+Hence there are three possible probabilitities namely 
+F(E) =1         100% probability to occupy the energy level by electrons. 
+F(E) =0         No probability to occupy the energy levels by electrons and hence ,it is empty. 
+F(E) =0.5      50%  probability of finding the electron in the energy level. 
+Density of States (DOS): 
+The number of electrons per unit volume in an energy level at a given temperature is equal to 
+the product of density of states (number of energy levels per unit volume) and Fermi Dirac 
+distribution function (the probability to find an electron). 
+𝑛𝑐= ∫g(𝐸) × 𝑓(𝐸)𝑑𝐸… …….         (1) 
+where𝑛𝑐 is the concentration of electrons, g (E) is the 
+density of states & F(E) is the occupancy probability. 
+The number of energy states with a particular energy value E 
+is depending on how many combinations of quantum 
+numbers resulting in the same value n. 
+To calculate the number of energy states with all possible 
+energies, we construct a sphere in 3D- space with ‘n’ as 
+radius and every point (nx, ny and nz) in the sphere represents 
+an energy state. 
+ 
+ 
+ 

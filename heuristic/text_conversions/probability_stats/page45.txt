@@ -1,0 +1,45 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+38
+ 
+ 
+ 
+Properties 
+1. The value ofρlies between+1 and −1. 
+2. Ifρ = 1, then there is complete agreement in the order of the ranks & the direction of the rank 
+is same. 
+3. Ifρ = −1, then there is complete disagreement in the order of the ranks & they are in opposite  
+directions. 
+Equal or Repeated ranks 
+If any 2 or more items are with same value the in that case common ranks are given to repeated 
+items. The common rank is the average of the ranks which these items would have assumed, if 
+they were different from each other and the next item will get the rank next to ranks already 
+assumed. 
+Formula:ρ = 1 −6{
+∑ୈమାభ
+భమ൫୫యି୫൯ାభ
+భమ൫୫యି୫൯….
+୒యି୒
+} 
+where m =the  number of items whose ranks are common. 
+N-Number of paired observations. 
+Dଶ- Sum of the squares of the differences of two ranks 
+REGRESSION 
+In regression we can estimate value of one variable with the value of the other variable which is 
+known. The statistical method which helps us to estimate the unknown value of one variable from 
+the known value of the related variable is called ‘Regression’. The line described in the average 
+relationship b/w 2 variables is known as Line of Regression. 
+ 
+Regression Equation:  
+The standard form of the Regression equation is Y =  a +  bX where a, b are called constants. ‘a’ 
+indicates value of Y when X = 0. It is called Y-intercept. ‘b’ indicates the value of slope of the 
+regression line & gives a measure of change of y for a unit change in X . it is also called as 
+regression coefficient of Y on X. The values of a, b are found with the help of following Normal 
+Equations. 
+ Normal Equations for Regression Equation of Y onX are   
+∑Y= Na + b∑X 
+∑XY= a ∑X+ b∑Xଶ 
+Normal Equations for Regression Equation of X on Yare  
+∑X= Na + b∑Y 

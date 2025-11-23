@@ -1,0 +1,41 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+78
+ 
+ 
+ 
+SMALL SAMPLES 
+ 
+Introduction When the sample size n < 30, then if is referred to as small samples. In this sampling 
+distribution in many cases may not be normal ie., we will not be justified in estimating the 
+population parameters as equal to the corresponding sample values. 
+Degree Of Freedom The number of independent variates which make up the statistic is known 
+as the degrees of freedom (d.f) and it is denoted by 𝜗. 
+Example: If 𝑥ଵ+ 𝑥ଶ+ 𝑥ଷ= 50 and we assign any values to two os the variables (say x1, x2 ), 
+then the values of x3 will be known. Thus, the two variables are free and independent choices for 
+finding the third. 
+ 
+In general, the number of degrees of freedom is equal to the total number of observations 
+less the number of independent constraints imposed on the observations. 
+For example:in a set of data of n observations, if K is the number of independent constraints then 
+𝜗= 𝑛−𝑘 
+Student’s t-Distribution Or t-Distribution 
+Let 𝑋ത be the mean of a random sample of size n, taken from a normal population having the mean 
+𝜇 and the variance 𝜎ଶ, and sample variance 𝑆ଶ=∑
+(௑೔ି௑ത)మ
+௡ିଵ, then 
+𝑡=
+௫̅ିఓ
+ௌ
+√௡
+ൗ
+ is a random variable having the 𝑡− distribution with 𝜗= 𝑛−1 degrees of freedom. 
+Properties of 𝒕− Distribution 
+1. The shape of 𝑡−distribution is bell shaped, which is similar to that of normal distribution and 
+is symmetrical about the mean. 
+2. The mean of the standard normal distribution as well as 𝑡−distribution is zero, but the 
+variance of 𝑡−distrubution depends upon the parometer 𝜗 which is called the degrees of 
+freedom. 
+3. The variance of 𝑡−distribution exceeds 1, but approaches 1 as 𝑛→∞. 

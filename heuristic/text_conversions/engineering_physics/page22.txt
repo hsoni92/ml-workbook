@@ -1,0 +1,126 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+16 
+ 
+ 
+ 
+Replacing r by D/2  the diameter of nth bright ring will be 
+2
+(2
+1)
+4
+2
+n
+D
+n
+R
+
+
+
+ 
+∴D
+odd natural number
+
+ (for bright ring) 
+D
+natural number
+
+      (for dark ring) 
+Thus, the diameters of dark rings are proportional to the square root of natural numbers 
+and diameters of bright rings are proportional to odd natural numbers. 
+Determination of wavelength of a light source: 
+Let R be the radius of curvature of a Plano 
+convex lens, λ be the wavelength of light used. Let 
+Dmand Dn are the diameters of mth and nth dark rings 
+are respectively.                            
+2
+4
+m
+D
+m R
+
+
+ 
+2
+4
+n
+D
+n R
+
+
+ 
+2
+2
+4(
+)
+m
+n
+D
+D
+m
+n
+R
+
+
+
+
+ 
+2
+2
+4(
+)
+m
+n
+D
+D
+m
+n R
+
+
+
+
+ 
+2
+2
+4(
+)
+m
+n
+D
+D
+R
+m
+n 
+
+
+
+ 
+                 From the graph,      
+2
+2
+(
+)
+m
+n
+D
+D
+AB
+CD
+m
+n
+
+
+
+ 
+The radius R of the Plano convex lens can be obtained with the help of a spherometer. λ 
+can be calculated by substituting all the above values. 
+DIFFRACTION: 
+Introduction: 
+The bending of light around the edges of an 
+obstacle is called diffraction.  
+When light falls on an obstacle then the 
+corresponding geometrical shadow on the screen 
+should be completely dark. Practically the 

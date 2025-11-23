@@ -1,0 +1,145 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+89
+ 
+ 
+ 
+O 
+E 
+(𝑂−𝐸)ଶ 
+(𝑂−𝐸)ଶ
+𝐸
+ 
+419 
+406.2 
+(419 −406.2)ଶ 
+(419 −406.2)ଶ
+406.2
+ 
+352 
+366 
+(352 −366)ଶ 
+(352 −366)ଶ
+366
+ 
+154 
+165.4 
+(154 −165.4)ଶ 
+(154 −165.4)ଶ
+165.4
+ 
+56 
+49.8 
+(56 −49.8)ଶ 
+(56 −49.8)ଶ
+49.8
+ 
+19 
+12.6 
+(19 −12.6)ଶ 
+(19 −12.6)ଶ
+12.6
+ 
+ 
+∑
+(ைିா)మ
+ா
+ = 5.748 
+Degrees of freedom = 5-2 = 3 
+𝝌𝟐
+௧௔௕  at 5% LOS = 7.82 
+Since 𝝌𝟐
+௖௔௟ value <𝝌𝟐
+௧௔௕ ,we accept  𝐻଴ . 
+ 
+3. A die is thrown 264 times with following results. Show that the die is biased [ Given 
+𝝌𝟐
+𝟎.𝟎𝟓 = 11.07 for 5 d.f] 
+ 
+No. 
+appeared 
+on the die 
+1 
+2 
+3 
+4 
+5 
+6 
+Frequency 
+40 
+32 
+28 
+58 
+54 
+52 
+Sol: 
+ i) H଴: The die is unbiased  
+             ii) Hଵ: The die is not unbiased 
+𝛘𝟐
+ୡୟ୪= ෍(𝑂−𝐸)ଶ
+𝐸
+ 
+The expected frequency of each of the number 1,2,3,4,5,6 is 
+ଶ଺ସ
+଺= 44 
+Calculation of  𝝌𝟐: 
+O 
+E 
+(𝑂−𝐸)ଶ 
+(𝑂−𝐸)ଶ
+𝐸
+ 
+40
+44
+16
+0.3636
+32
+44
+144
+3.2727
+28
+44
+256
+5.8181
+58
+44
+196
+4.4545
+54
+44
+100
+2.2727
+52
+44
+64
+1.4545
+ 
+ 
+ 
+∑
+(ைିா)మ
+ா
+ = 17.6362 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+𝝌𝟐
+௖௔௟= 17.6362 
+The number of degrees of freedom = n-1 = 5 
+𝝌𝟐
+଴.଴ହ = 11.07 for 5 d.f  
+Since  𝝌𝟐
+௖௔௟ value >𝝌𝟐
+௧௔௕ value ,  we reject 𝐻଴ 
+Hence the die is biased. 
+ 

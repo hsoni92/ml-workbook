@@ -1,0 +1,45 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+65 
+ 
+ 
+ 
+ Since the excited level of nitrogen is very close to the E5 level of CO2 atom, population in 
+E5 level increases.  
+ As soon as population inversion is reached, any of the spontaneously emitted photon will 
+trigger laser action in the tube. There are two types of laser transition possible.  
+ 1.Transition E5  to E4 : This will produces far IR radiation of laser beam at the  wavelength 
+10.6μm 
+ 2.Transition E5  to E3:This laser transition will produce a laser beam of wavelength 9.6μm in IR 
+region. Normally 10.6μm transition is more intense than 9.6μm transition. The power output from 
+this laser is 10kW. 
+E3 and E4 levels also metastable states and the co2 molecules at these levels fall to the lower 
+level E2 through inelastic collisions with unexited co2 molecules, then again tends to closer 
+ground state through thermal excitations.The nature of output may be continuous wave or 
+pulsed wave. 
+Advantages:  
+1. The construction of CO2 laser is simple and the output of this laser is continuous. 
+2. It has high efficiency 
+3. It has very high output power. 
+4. The output power can be increased by extending the length of the gas tube. 
+Disadvantages: 
+1. The contamination of oxygen by carbon monoxide will have some effect on laser action 
+2. The operating temperature plays an important role in determining the output power of 
+laser. 
+3. The corrosion may occur at the reflecting plates. 
+4. Accidental exposure may damage our eyes, since it is invisible (infrared region) to our 
+eyes. 
+Applications:  
+1. High power CO2 laser finds applications in material processing, welding, drilling, 
+cutting soldering etc. 
+2. The low atmospheric attenuation (10.6μm makes CO2 laser suitable for open air 
+communication. 
+3. It is used for remote sensing.  
+4. It is used for treatment of liver and lung diseases.  
+5. It is mostly used in neuro surgery and general surgery.  
+6. It is used to perform microsurgery and bloodless operations. 
+ 
+ 

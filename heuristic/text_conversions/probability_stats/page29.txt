@@ -1,0 +1,145 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+22
+ 
+ 
+ 
+b) Probability of having 5 girls  = Probability of having no boys  is given by  
+𝑃(𝑋= 0) = 5஼బ൬1
+2൰
+଴
+൬1
+2൰
+ହି଴
+= 1
+32 
+Expected number of families having 5 girls = 𝑁 𝑝(0) =800(
+ଵ
+ଷଶ) =25 families. 
+c) Probability of having either  2 or 3 boys is given by  
+𝑃(𝑋= 2) + 𝑃(𝑋= 3) = 5஼మ൬1
+2൰
+ଶ
+൬1
+2൰
+ହିଶ
++ 5஼య൬1
+2൰
+ଷ
+൬1
+2൰
+ହିଷ
+= 5
+18 
+Expected number of families having 3 boys = 𝑁 𝑝(3) =800(
+ହ
+଼) =500 families. 
+ 
+d) Probability of having at least 1 boy is given by  
+𝑃(𝑋≥1) = 1 −𝑃(𝑋= 0) 
+= 1 −5஼బ൬1
+2൰
+଴
+൬1
+2൰
+ହି଴
+= 31
+32 
+Expected number of families having at least 1 boy =800(
+ଷଵ
+ଷଶ) =775 families. 
+6.Fit a Binomial distribution for the following data. 
+ 
+x
+0
+1 
+2 
+3 
+4 
+5
+f 
+2
+14
+20
+34
+22
+8
+Sol:  Given n= 5,∑𝑓= 2 + 14 + 20 + 34 + 22 + 8 = 100 
+∑𝑥௜𝑓௜ == 0(2) + 1(14) + 2(20) + 3(34) + 4(22) + 5(8) = 284 
+       ∴Mean of the distribution =
+∑୶౟୤౟ 
+∑୤౟=
+ଶ଼ସ
+ଵ଴଴ = 2.84                                                                                               
+We have Mean of the binomial distribution = 𝑛𝑝 = 2.84 
+∴𝑝= 2.84
+5
+= 0.568; 𝑞= 1 −0.568 = 0.432. 
+              Table To Fit Binomial Distribution 
+X
+               P(X= 𝑥௜)
+E(𝑋)
+0 
+ 
+1 
+ 
+ 
+2 
+ 
+ 
+3 
+ 
+ 
+4 
+ 
+ 
+5 
+5஼బ(0.568)଴(0.432)ହି଴=0.02 
+ 
+5஼భ(0.568)ଵ(0.432)ହିଵ=0.09 
+ 
+ 
+5஼మ(0.568)ଶ(0.432)ହିଶ=0.26 
+ 
+5஼య(0.568)ଷ(0.432)ହିଷ=0.34 
+ 
+ 
+5஼ర(0.568)ସ(0.432)ହିସ=0.22 
+ 
+ 
+5஼ఱ(0.568)ହ(0.432)ହିହ=0.059
+N p (0) =100(0.02)=2
+ 
+9 
+ 
+ 
+26 
+ 
+ 
+34 
+ 
+ 
+22 
+ 
+ 
+5.9 
+ 
+                 Fitted Binomial distribution is  
+x
+0
+1
+2
+3
+4
+5
+f
+2
+10
+26
+34
+22
+6
+ 
+ 

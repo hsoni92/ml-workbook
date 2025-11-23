@@ -1,0 +1,51 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+76 
+ 
+ 
+ 
+Information signal source:  
+ The information signal to be transmitted may be voice, video or computer data (analog 
+signals). 
+ In order to communicate through optical fiber, the analog signals are converted into 
+electrical signals.( by Analog to Digital converter) 
+ The converted electrical signals are passed through the transmitter. 
+Transmitter: 
+ The transmitter is a modulator device used to receive electrical input signal, and then 
+modulate it into digital pulses for propagation into an optical fiber. 
+ The modulator consists of a driver and a light source as shown in fig. 
+ The driver receives the electrical signals and then converts into the digital pulses. 
+ These digital pulses are converted into optical signals after passing through a light 
+source, generally either light emitting diodes (LED’s) or a semi conductor laser is used 
+as light source. 
+ The optical signals are then focused into the optical fiber as shown in fig. 
+Optical Fiber (or) Transmission medium: 
+ The optical fiber is used as transmission medium between the transmitter and the 
+receiver. 
+ The optical signals are then fed into an optical fiber cable where they are transmitted 
+over long distances using the principle of total internal reflection. 
+Receiver: 
+ The receiver is a demodulator device used to receive the optical signals from the optical 
+fiber and then convert into electrical signals. 
+ The demodulator consists of a photodetector, an amplifier and a signal restorer. 
+ The optical signals which are emerging from the optical fiber are received by photo 
+detector. 
+ The photodetector converts the optical signals into electrical signals. 
+ The electrical signals are then amplified by the amplifier and the amplified electrical 
+signals are converted into digital form. 
+ The amplified electrical signals are fed to a signal restorer where the original voice is 
+recovered. 
+Advantages of Optical Fibers in communication system: 
+ High data transmission rates and bandwidth. 
+ Low losses. 
+ Small cable size and weight. 
+ Immunity to EM radiations. 
+ Safety due to lack of sparks. 
+ Data security. 
+ 
+ 
+ 
+ 

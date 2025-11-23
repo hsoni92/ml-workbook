@@ -1,0 +1,147 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+42 
+ 
+ 
+Magnetism has its own application in the field of physics. Magnetic properties have 
+been the subject of special interest because of the information they yield about the constitution 
+of matter. Magnetics have wide range of application in electrical machinery and in magnetic 
+tapes in computers. Magnetic materials are classified into three, namely diamagnetic, 
+paramagnetic and ferromagnetic materials.   
+Magnetic field: The 3D region around a magnet in which it`s magnetic force is felt is called 
+magnetic field of that magnet. It is a scalar quantity.  
+ 
+ 
+ 
+ 
+ 
+Magnetic dipole: It`s a system consisting of two equal and opposite magnetic poles separated 
+by a small distance of 2𝑙𝑚 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Or  
+ 
+ 
+ 
+ 
+ 
+ 
+Two poles of equal strength separated by a very small distance is called a magnetic 
+dipole.  
+Pole strength (m):  The ability of a pole of magnet to attract or repel another magnetic pole is 
+called it`s pole strength. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Magnetic dipole moment (𝛍):It can define in three ways depending on situation.            
+1. In case of bar magnet it is defined as the product of pole strength and distance between 
+them.   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+𝜇= 2𝑙𝑚 
+2. In case of current carrying conductor, it is the product of current (i) and cross section 
+area (A) of the conductor. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+𝜇= 𝑖𝐴 
+3. In case of atom, it is the product of current (i) developed by orbital motion of electron   
+and the area covered by the orbital.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+𝜇= 𝑖𝐴 
+ 
+ 
+ 
+ 
+ 
+ 
+It is a vector quantity. Its direction is from south pole to the north pole.  
+Its SI unit is ampere m2.
+⁄
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Magnetic flux(∅): The total number of magnetic lines of force passing normal to a surface in 
+a magnetic field is called magnetic flux.   
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+Or  
+ 
+ 
+ 
+ 
+ 
+ The number of magnetic lines of force passing through a point is called magnetic flux. 
+  Its SI unit is weberortesla −m2 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Magnetic field induction or magnetic flux density (B):The magnetic flux passing through a 
+unit normal area of substance is defined as magnetic flux density and is denoted by B. It is 
+commonly known as magnetic induction.   Let ∅ be the flux passing through a substance of 

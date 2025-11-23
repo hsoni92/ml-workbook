@@ -1,0 +1,55 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+20 
+ 
+ 
+ 
+ 
+R maximum means –ve values must vanish and all 𝛼 terms on right hand side should be equal 
+to zero.it is possible 
+ if sin𝜃=0                                             [where 𝛼=
+𝜋𝑒 𝑠𝑖𝑛𝜃
+𝜆
+] 
+𝑡ℎ𝑒𝑛 𝜃= 0                                     … . .  𝑖s the condition for principal maximumwith high 
+intensity. 
+R=A               𝐼𝑚𝑎𝑥= 𝑅2 = 𝐴2 
+Condition for minimum intensity: 
+I will be minimum when sin𝛼= 0 
+𝛼= ±𝜋, ±2𝜋, ±3𝜋, … .. 
+𝛼= ±𝑚𝜋 
+𝜋𝑒 𝑠𝑖𝑛𝜃
+𝜆
+= ±𝑚𝜋  
+                                                                     𝑒 𝑠𝑖𝑛𝜃= ±𝑚𝜆                             𝑤ℎ𝑒𝑟𝑒 𝑚= 1,2,3, ….  
+Thus ,we obtain the points of minimum intensity on either side of principal maximum. 
+Diffraction grating: 
+Diffraction grating is closed placed multiple slits. It 
+consists of very large number of narrow slits side by side 
+separated by opaque spaces. The incident light is transmitted 
+through the slits and blocked by opaque spaces. Such a 
+grating is called transmission grating. 
+ 
+When light passes through the grating, each one of 
+the slit diffracts the waves. All the diffracted waves combine 
+one another producing sharp and intense maxima on the screen. 
+A plane transmission grating is a plane sheet of transparent material on which opaque 
+lines are made with a diamond point. The space between the rulings is equal and transparent 
+and consists of parallel slits. The combined width of a ruling and a slit is called grating 
+element.  
+Let ‘e’ be the width of the line and‘d’ be the width of the slit. Then (e + d) is known as 
+grating element. If ‘N’ is the no. of lines per inch on the grating then 
+
+
+1"
+2.54
+N e
+d
+cm
+
+
+
+ 

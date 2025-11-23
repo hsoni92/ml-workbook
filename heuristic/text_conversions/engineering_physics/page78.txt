@@ -1,0 +1,47 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+72 
+ 
+ 
+ 
+Optical fibers can be classified based on either the mode they support or the refractive index 
+profile of the fiber. They can also be classified based on the material of the fiber. 
+Based on Mode: 
+The rays travelling in the fiber by total internal reflection are called modes. 
+1) Single mode fibers: 
+ If the thickness of the fiber is so small that it supports only one mode then the fiber is 
+called single modefiberor mono mode fiber. 
+ The core diameter of this fiber is about 8 to 10µm and the outer diameter of cladding is 
+60 to 70µm. 
+ 
+ 
+ 
+2)Multi mode fibers: 
+ If the thickness of the fiber is very large that it supports more than one mode then the 
+fiber is called multi mode fiber. 
+ The core diameter of this fiber is about 50 to 200µm and the outer diameter of cladding 
+is 100 to 250µm. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Based on refractive index profile: 
+1) Step-Index Optical fiber: 
+ In a step-index optical fiber, the entire core has 
+uniform refractive index n1 slightly greater than 
+the refractive index of the cladding n2.  
+ Since the index profile is in the form of a step, 
+these fibers are called step-index fibers.  
+ The transmission of information will be in the 
+form of signals or pulses. 
+ These are extensively used because distortion and transmission losses are very less. 
+ Step-index optical fibers are of two types. 
+ 
+ 
+ 

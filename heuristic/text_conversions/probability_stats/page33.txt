@@ -1,0 +1,50 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+26
+ 
+ 
+ 
+5. X-axis is an  asymptote to the normal curve 
+6. The total area under the normal curve from −∞ 𝑡𝑜∞ is “1” 
+7. The points of inflection of the normal curve are 𝜇± 𝜎, 𝜇± 3𝜎 
+8. The area of the normal curve between 
+                                                               𝜇−𝜎 to 𝜇+ 𝜎  = 68.27% 
+𝜇−2𝜎 𝑡𝑜 𝜇+ 2𝜎 = 95.44% 
+𝜇−3𝜎 𝑡𝑜 𝜇+ 3𝜎 = 99.73% 
+9.The curve for normal distribution is given below 
+ 
+ 
+Standard Normal Variable 
+Let 𝑍=
+௫ିఓ
+ఙ with mean ‘0’ and variance is ‘1’ then the normal variable is said to be standard 
+normal variable. 
+Standard Normal Distribution 
+The normal distribution with man ‘0’ and variance ‘1’ is said to be standard normal distribution 
+of its probability density function is defined by 
+𝑓(𝑥) =
+1
+𝜎√2𝜋
+𝑒ିభ
+మቀೣషೠ
+഑ቁ
+మ
+−∞< 𝑥≤∞ 
+𝑓(𝑧) =
+1
+√2𝜋
+𝑒ି೥
+మ
+మ
+−∞≤𝑥≤∞  (𝜇= 0, 𝜎= 1) 
+ 
+Mean Of The Normal Distribution  
+ Consider Normal distribution with b,σ as parameters Then 
+f(x; b, σ)
+1
+σ√2π
+eି(౮షౘ)మ
+మಚమ 
+Mean of the continuous distribution is given by 

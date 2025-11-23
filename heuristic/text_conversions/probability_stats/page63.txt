@@ -1,0 +1,91 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+56
+ 
+ 
+ 
+The 10 samples are (3,6,9), (3,6,15), (3,9,15), (3,6,27), (3,9,27), (3,15,27), (6,9,15), 
+(6,9,27), (6,15,27), (9,15,27) 
+b) Mean of the sampling distribution of means is  
+𝜇௫̅ = 
+଺ା଼ାଽାଵ଴ାଵଶାଵଷାଵସାଵହାଵ଺ାଵ଻
+ଵ଴
+ = 
+ଵଶ଴
+ଵ଴ = 12 
+c)  
+𝜎ଶ = 
+(଺ିଵଶ)మା(଼ିଵଶ)మା(ଽିଵ)మା(ଵ଴ିଵଶ)మା(ଵଶିଵ)మା(ଵଷି
+)మା(ଵସି
+)మା(ଵହିଵ)మା(ଵ଺ି
+)మା(ଵ଻ିଵଶ)మ
+ଵ଴
+ 
+= 13.3 
+∴ 𝜎௫̅ = √13.3 = 3.651 
+2.A population consist of five numbers 2,3,6,8 and 11. Consider all possible samples of size 
+two which can be drawn with replacement from this population .Find 
+a) The mean of the population  
+b) The standard deviation of the population  
+c) The mean of the sampling distribution of means and  
+d) The standard deviation of the sampling distribution of means  
+Sol:a)  Mean of the Population is given by 
+𝜇  = 
+ଶାଷା଺ା଼ାଵ
+ହ
+ = 
+ଷ଴
+ହ = 6 
+b) Variance of the population is given by  
+𝜎ଶ= ∑
+(௫೔ି௫̅)మ
+௡
+ 
+                        = 
+(ଶି଺)మା(ଷି଺)మା(଺ି଺)మା(଼ି଺)మା(ଵଵି଺)మ
+ହ
+ 
+                        = 
+ଵ଺ାଽା଴ାସା
+ହ
+ = 10.8          ∴ 𝜎= 3.29 
+c) Sampling  with replacement  
+The total no.of samples with replacement is 𝑁௡ = 5ଶ = 25  
+∴ List of all possible samples with replacement are 
+ቐ
+(2,2), (2,3), (2,6), (2,8), (2,11), (3,2), (3,3)(3,6), (3,8), (3,11)
+(6,2), (6,3), (6,6), (6,8), (6,11), (8,2), (8,3), (8,6), (8,8), (8,11)
+(11,2), (11,3), (11,6), (11,8), (11,11)
+ቑ 
+Now compute the arithmetic mean for each of these 25 samples which gives rise to the 
+distribution of means of the samples known as sampling distribution of means 
+The samples means are  
+⎩⎪⎨
+⎪⎧2 , 2.5 , 4 , 5 ,6.5
+2.5 , 3 ,4.5, ,5.5,7
+4,4.5,6,7,8.5
+5,5.5,7,8,9.5
+6.5,7,8.5,9.5,11 ⎭⎪⎬
+⎪⎫
+ 
+And the mean of sampling distribution of means is the mean of these 25 means  
+𝜇௫̅ = 
+ୱ୳୫ ୭୤ ୟ୪୪ ୟୠ୭୴ୣ ୱୟ୫୮୪ୣ ୫ୣୟ୬ୱ 
+ଶହ
+ = 
+ଵହ଴
+ଶହ = 6 
+d) The variance of the sampling distribution of means is obtained by subtracting the mean 6 
+from each number in sampling distribution of means and squaring the result ,adding all 25 
+numbers thus obtained and dividing by 25. 
+𝜎ଶ = 
+(ଶି଺)మା(ଶ.ହି଺)మା(ସି଺)మା(ହି଺)మା⋯……(ଵଵି଺)మ
+ଶହ
+ = 
+ଵଷହ
+ଶହ = 5.4 
+∴𝜎= √5.4  = 2.32 
+3. When a sample is taken from an infinite population , what  happens to the standard error 
+of the mean if the sample size is decreased from 800 to 200 

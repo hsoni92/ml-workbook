@@ -1,0 +1,122 @@
+PROBABILITY AND STATISTICS
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+12
+ 
+ 
+ 
+6.The diameter of ban electric cable assumed to be a continuous r.v with p.d.f 
+𝒇(𝒙) = 𝒌 𝒙 (𝟏−𝒙 )   𝟎≤𝒙≤𝟏 
+Find  i)k ii)b such that P(x<b)=P(x>b). 
+Sol: Given probability density function of a random variable X is 
+𝑓(𝑥) =  𝑘 𝑥 (1 −𝑥 )   0 ≤𝑥≤1 
+(i) Since total probability of the distribution is unity i.e, ∫
+𝑓(𝑥)𝑑𝑥= 1
+ஶ
+ିஶ
+ 
+                     We have ∫𝑘𝑥(1 −𝑥)𝑑𝑥= 1
+ଵ
+଴
+ 
+ቆ𝑘𝑥ଶ
+2 −𝑘𝑥ଷ
+3 ቇ
+଴
+ଵ
+= 1  𝑘= 1
+6 
+ 
+(ii) Given that P(x<b) = P(x>b) 
+∫𝑓(𝑥)𝑑𝑥= ∫𝑓(𝑥)𝑑𝑥
+ଵ
+௕
+௕
+଴
+  ∫𝑘𝑥(1 −𝑥)𝑑𝑥= ∫𝑘𝑥(1 −𝑥)𝑑𝑥
+ଵ
+௕
+௕
+଴
+ 
+ቆ𝑘𝑥ଶ
+2 −𝑘𝑥ଷ
+3 ቇ
+଴
+௕
+= ቆ𝑘𝑥ଶ
+2 −𝑘𝑥ଷ
+3 ቇ
+௕
+ଵ
+ 
+𝑏ଶ
+2 −𝑏ଷ
+3 = ൬1
+2 −1
+3൰−(𝑏ଶ
+2 −𝑏ଷ
+3 ) 
+                                     2(
+௕మ
+ଶ−
+௕య
+ଷ) =
+ଵ
+଺ 
+                                6𝑏ଶ-2𝑏ଷ−1 = 0 
+                         Solving above equation,we get 
+b = 0.5  ( by neglecting other roots which do not belong to(0,1)). 
+ 
+Multiple Random Variables 
+Discrete two-dimensional random variable: 
+Joint probability mass function is defined as  f(x, y) = P(X = x୧ , Y = y୨) 
+Joint probability distribution function is defined as 
+Fଡ଼ଢ଼(x, y) = P(X < x୧ , Y < y୨) =∑
+∑
+p(x୧ , y୨)
+ழ௬
+ழ௫
+ 
+Marginal probability mass functions of X and Y are defined as 
+P(X = x୧ ) = p(x୧ ) = ෍p(x୧ , y୨)
+୨
+ 
+P൫Y = y୨ ൯= p൫y୨ ൯= ෍p(x୧ , y୨)
+୧
+ 
+Continuous two-dimensional random variable: 
+Joint probability density function is defined as 
+fଡ଼ଢ଼(x, y) = P(x ≤X ≤x + dx, y ≤Y ≤y + dy) 
+and ∫
+∫
+fଡ଼ଢ଼(x, y) dxdy = 1
+ஶ
+ିஶ
+ஶ
+ିஶ
+ 
+Joint probability distribution function is defined as 
+Fଡ଼ଢ଼(x, y) = P(X < x୧ , Y < y୧) =∫
+∫
+fଡ଼ଢ଼(x, y) dxdy
+୷
+ିஶ
+୶
+ିஶ
+ 
+andfଡ଼ଢ଼(x, y) =
+பమ
+ப୶ப୷[Fଡ଼ଢ଼(x, y) ] 
+Marginal probability density functions of Xis defined as 
+fଡ଼(x) = නfଡ଼ଢ଼(x, y) dy
+ஶ
+ିஶ
+ 
+Marginal probability density functions of Yis defined as 
+fଢ଼(y)=∫
+fଡ଼ଢ଼(x, y) dx
+ஶ
+ିஶ
+ 

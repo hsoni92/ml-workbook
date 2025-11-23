@@ -1,0 +1,62 @@
+ENGINEERING PHYSICS 
+ 
+ 
+DEPARTMENT OF HUMANITIES & SCIENCES 
+©MRCET (EAMCET CODE: MLRD) 
+71 
+ 
+ 
+ 
+Substitute the eq(6) in eq(5) , we get  
+ 
+ 
+𝑠𝑖𝑛 α𝑖(max) = 𝑛1
+𝑛0
+√𝑛1
+2 −𝑛2
+2
+𝑛1
+ 
+𝑠𝑖𝑛 α𝑖(max) = √𝑛1
+2 −𝑛2
+2
+𝑛0
+ 
+                                                                         (OR) 
+ α𝑖(max) = 𝑠𝑖𝑛−1√𝑛1
+2 −𝑛2
+2
+𝑛0
+→(7) 
+  For air medium, n0=1         α𝑖(max) = 𝑠𝑖𝑛−1√𝑛1
+2 −𝑛2
+2 →(8) 
+Fractional Index Change (∆): 
+It is the ratio of refractive index difference in core & cladding to the refractive index of core. 
+∆ = n1-n2
+n1
+ 
+𝑛1 −𝑛2 = ∆𝑛1 →(1) 
+NUMERICAL APERTURE (N.A.):   
+Def:It is defined as light accepting efficiency of the fiber and is equal to sine of the acceptance 
+angle of the fiber i.e.  𝑁. 𝐴. = 𝑠𝑖𝑛α𝑖(max) 
+N.A=𝑠𝑖𝑛 α𝑖(max) =  √
+𝑛12−𝑛22
+𝑛0  
+We know that ∆ =
+𝑛1−𝑛2
+𝑛1  
+𝑛1 −𝑛2 = ∆𝑛1 →(2)  
+𝑊𝑒𝑘𝑛𝑜𝑤 , 𝑁. 𝐴. = 𝑆𝑖𝑛 α𝑖(max) = √𝑛2
+2 −𝑛1
+2            for air n0=1 
+𝑁. 𝐴. = √(𝑛1 + 𝑛2)(𝑛1 −𝑛2) 
+𝐼𝑓𝑛1 =  𝑛2, 𝑡ℎ𝑒𝑛𝑁. 𝐴. = √2𝑛1 × ∆𝑛1 
+𝑁. 𝐴. = 𝑛1√2∆→(3) 
+TYPES OF OPTICAL FIBERS: 
+ 
+ 
+ 
+ 
+ 
+ 
