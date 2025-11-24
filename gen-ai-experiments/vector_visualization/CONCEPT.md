@@ -1,0 +1,9 @@
+I’ve been working on a RAG setup recently and ran into a recurring issue with retrieval. Some queries were returning chunks that felt completely irrelevant, and I honestly couldn’t understand why. On paper, everything seemed fine: 768-dim embeddings, similarity search, chunking that should work… yet the results weren’t convincing.
+
+Out of curiosity more than anything, I wrote a small app in python to extract the vectors straight from my vector db (weaviate) and apply a PCA (Principal Component Analysis) to reduce the embeddings down to 3 dimensions, just to get a visual sense of what was happening. I know 3D doesn’t reflect 768 dimensions perfectly, but I figured it might at least give me a clue. And it actually did.
+
+I noticed one cluster of chunks sitting clearly apart from the rest, and retrieval for that content was consistently good. The rest were grouped very closely together, almost overlapping, which might explain why the model struggled to choose the right pieces.
+
+I’m still not fully sure if what I saw in 3D truly represents what’s going on in high-dimensional space, but it definitely made me think. A lot of my chunks had repetitive or boilerplate text, and maybe that made them look too similar in the embedding space. I tried cleaning them up, reducing redundancy, and I’m already seeing some early improvements in retrieval, although still testing.
+
+I’m sharing this because visualizing embeddings turned out to be surprisingly helpful. It didn’t solve the problem by itself, but it gave me direction. If you’re building RAG systems, it might be worth plotting your embeddings at least once. Even a simple PCA view can reveal patterns you wouldn’t notice just by looking at the code or metrics.
