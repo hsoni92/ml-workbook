@@ -43,50 +43,58 @@ Predict house sale prices to help:
 
 1. **Data Acquisition** → Download via Kaggle API
 2. **Data Audit** → Shape, types, missing values analysis
-3. **Exploratory Data Analysis** → Visualizations, correlations
-4. **Data Cleaning** → Handle missing values, outliers, duplicates
-5. **Feature Engineering** → Create 10 new features (TotalSF, PropertyAge, QualityScore, etc.)
-6. **Feature Selection** → Selected 35 best features from 81
-7. **Modeling** → Built 4 regression models
-8. **Evaluation** → RMSE, MAE, R² metrics
+3. **Exploratory Data Analysis** → Univariate & bivariate visualizations, correlations
+4. **Data Cleaning** → Handle missing values, outlier Winsorization (1st-99th percentile), duplicates
+5. **Feature Engineering** → Create 10 new features (TotalSF, PropertyAge, QualityScore, TotalBath, etc.)
+6. **Feature Selection** → Multi-method approach:
+   - Mutual Information, F-test, Random Forest importance
+   - RFECV (24 features), Lasso regularization (23 features)
+   - Final: 35 selected features
+7. **Dimensionality Reduction** → PCA (20 components, 95% variance retained)
+8. **Modeling** → Built 4 regression models on log-transformed target
+9. **Evaluation** → RMSE, R² metrics on log scale
 
 ---
 
 ## Slide 5: Key Findings - Data Insights
 **What We Discovered**
 
-- **Missing Values:** Handled strategically (dropped >50% missing, imputed others)
-- **Top Price Drivers:**
-  - Overall Quality (37.8% importance)
-  - Total Square Footage (33.8% importance)
-  - Quality Score (4.9% importance)
-- **Insight:** Quality and size together account for ~72% of price variation
+- **Missing Values:** Handled strategically (dropped >50% missing: Alley, MasVnrType, PoolQC, Fence, MiscFeature)
+- **Outliers:** Winsorized at 1st-99th percentile to cap extreme values
+- **Top Price Drivers (by Mutual Information):**
+  - TotalSF (67.99% MI score)
+  - OverallQual (57.53% MI score)
+  - GrLivArea (47.76% MI score)
+  - QualityScore (44.64% MI score)
+- **Feature Selection:** 35 features selected from 81 using multiple methods
+- **Dimensionality Reduction:** PCA reduced to 20 components (95% variance retained)
 
 ---
 
 ## Slide 6: Model Performance
-**Results Comparison**
+**Results Comparison (Log-Transformed Target)**
 
-| Model | R² Score | RMSE | MAE |
-|-------|----------|------|-----|
-| Simple Linear Regression | 0.7466 | $39,010 | - |
-| Multiple Linear Regression | 0.9012 | $24,363 | - |
-| **Gradient Boosting** ⭐ | **0.9106** | **$23,172** | **$15,310** |
-| LightGBM | 0.9102 | $23,229 | - |
+| Model | R² Score | RMSE (log scale) |
+|-------|----------|------------------|
+| **Gradient Boosting** ⭐ | **0.9043** | **0.1267** |
+| LightGBM | 0.9001 | 0.1295 |
+| Linear Regression | 0.8942 | 0.1333 |
+| Tuned SVR | 0.8801 | 0.1419 |
 
 **Best Model: Gradient Boosting Regressor**
-- 91.06% variance explained
-- Average error: ~$15,310 (8.5% of average price)
+- 90.43% variance explained
+- Trained on PCA-reduced features (20 components)
+- Log-transformed target for better distribution
 
 ---
 
 ## Slide 7: Business Value & Insights
 **Key Takeaways**
 
-✅ **Model Accuracy:** 91% accurate predictions
-✅ **Average Error:** ~$15,000 per house
-✅ **Top Predictors:** Quality and size are most important
-✅ **Actionable Insight:** Focus on quality improvements for maximum ROI
+✅ **Model Accuracy:** 90.4% variance explained (R² = 0.9043)
+✅ **Robust Pipeline:** Multi-method feature selection + PCA dimensionality reduction
+✅ **Top Predictors:** Total Square Footage and Overall Quality are most important
+✅ **Actionable Insight:** Focus on size and quality improvements for maximum ROI
 
 **Applications:**
 - Automated price estimates
@@ -101,8 +109,9 @@ Predict house sale prices to help:
 
 **Achievements:**
 - Complete ML pipeline from data to predictions
-- Multiple models evaluated and compared
-- Strong predictive performance (91% accuracy)
+- Multiple models evaluated and compared (4 algorithms)
+- Strong predictive performance (90.4% R² score)
+- Comprehensive feature selection and PCA dimensionality reduction
 - Clear business insights delivered
 
 **Future Improvements:**

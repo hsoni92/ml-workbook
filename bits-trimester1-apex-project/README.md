@@ -43,7 +43,15 @@ The dataset contains 1,460 training samples with 81 features including property 
 
 4. **Open and run the notebooks:**
    - **Phase 2 Notebook:** `protected_apex_project_phase2_deliverable.ipynb` - Contains data preprocessing, EDA, and feature engineering
-   - **Phase 4 Notebook:** `protected_apex_project_phase4_deliverable.ipynb` - Contains complete pipeline including modeling, evaluation, and visualization
+   - **Phase 4 Notebook:** `protected_apex_project_phase4_deliverable.ipynb` - Contains complete pipeline including:
+     - Data audit and availability check
+     - Exploratory Data Analysis (EDA) with univariate and bivariate visualizations
+     - Data cleaning (missing value handling, outlier detection and Winsorization)
+     - Feature engineering (10 new features created)
+     - Feature selection using multiple methods (Mutual Information, F-test, Random Forest, RFECV, Lasso)
+     - PCA dimensionality reduction (20 components for 95% variance retention)
+     - Model training with 4 algorithms (Gradient Boosting, LightGBM, Linear Regression, Tuned SVR)
+     - Model evaluation and comparison
 
    The notebooks will automatically download the dataset using the Kaggle API when executed.
 
