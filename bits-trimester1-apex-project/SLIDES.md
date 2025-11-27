@@ -182,7 +182,41 @@ Transformed 81 messy features into 35 powerful predictors, achieving **90.4% acc
 
 ---
 
-## Slide 9: Conclusion
+## Slide 9: Validation Results Export
+**Detailed Performance Analysis**
+
+**What We Exported:**
+- **292 validation samples** analyzed in detail
+- Per-sample predictions with comprehensive error metrics
+- Complete validation results saved to CSV for further analysis
+
+**Key Metrics in Export:**
+- Actual vs Predicted prices (log scale)
+- Error distribution (raw and absolute)
+- Percentage errors for interpretability
+- Absolute percentage errors for magnitude assessment
+
+**Validation Insights:**
+- Model performance validated on **20% hold-out test set**
+- Each prediction includes error breakdown
+- Enables detailed analysis of model behavior
+- Supports production deployment validation
+
+**Key Findings from Validation:**
+- **Mean Absolute Percentage Error: 0.76%** - Excellent average accuracy
+- **Median Absolute Percentage Error: 0.54%** - Most predictions are highly accurate
+- **95th Percentile: 2.35%** - 95% of predictions within 2.35% error
+- **Max Error: 4.66%** - Worst case scenario still under 5% error
+
+**Deliverable:**
+✅ `house_price_validation_results.csv` - Complete validation breakdown with 6 metrics per sample
+
+*[Placeholder: Notebook Cell 66 - Validation Results Export - Shows CSV export code and sample results]*
+*[Placeholder: Sample rows from validation_results.csv showing actual vs predicted with errors]*
+
+---
+
+## Slide 10: Conclusion
 **The Story in Numbers**
 
 **Project Summary:**
@@ -240,3 +274,7 @@ Transformed 81 messy features into 35 powerful predictors, achieving **90.4% acc
 8. **Cell 42** - PCA Plot (First Two Components)
    - *Purpose:* Show data structure in reduced space
    - *Slide:* 8 (The Impact)
+
+9. **Cell 66** - Validation Results Export
+   - *Purpose:* Show detailed validation analysis and CSV export
+   - *Slide:* 9 (Validation Results Export)
