@@ -1,263 +1,124 @@
 """
-Dataset creation module for merging and consolidating election data.
+Script to create the curated dataset for 10 selected constituencies.
 """
+
 import pandas as pd
-from pathlib import Path
-from typing import Dict, List
+import os
+try:
+    from .data_loader import load_all_data
+    from .data_processor import create_standardized_dataset, find_common_constituencies
+except ImportError:
+    from data_loader import load_all_data
+    from data_processor import create_standardized_dataset, find_common_constituencies
 
 
-class DatasetCreator:
-    """Creates consolidated dataset from multiple years of election data."""
+def select_constituencies(common_constituencies, n=10):
+    """
+    Select n constituencies with diversity in states and regions.
 
-    def __init__(self, dataframes_dict: Dict[int, pd.DataFrame], selected_constituencies: List[str]):
-        """
-        Initialize with data and selections.
+    Selection criteria:
+    - Geographic diversity (different states)
+    - Mix of constituencies from different regions
+    """
+    # Select diverse constituencies
+    # Prioritize different states
+    selected_indices = []
 
-        Args:
-            dataframes_dict: Dictionary mapping year to DataFrame
-            selected_constituencies: List of selected constituency names (normalized)
-        """
-        self.dataframes_dict = dataframes_dict
-        self.selected_constituencies = selected_constituencies
-        self.filtered_data = {}
-        self.consolidated_dataset = None
+    # Select 2-3 constituencies from different major states
+    # This ensures geographic diversity
+    state_counts = common_constituencies.groupby('State').size().sort_values(ascending=False)
 
-    def filter_by_constituencies(self) -> Dict[int, pd.DataFrame]:
-        """
-        Filter dataframes to include only selected constituencies.
+    # Select from top states with most constituencies
+    top_states = state_counts.head(5).index.tolist()
 
-        Returns:
-            Dictionary of filtered DataFrames
-        """
-        self.filtered_data = {}
+    # Track selected constituency keys to avoid duplicates
+    selected_keys = set()
 
-        for year, df in self.dataframes_dict.items():
-            if df is None or df.empty:
-                continue
+    for state in top_states[:4]:  # Take from 4 different states
+        state_constituencies = common_constituencies[common_constituencies['State'] == state]
+        if len(state_constituencies) > 0:
+            idx = state_constituencies.index[0]
+            row = state_constituencies.iloc[0]
+            key = (row['State'], row['PC_NAME'])
+            if key not in selected_keys:
+                selected_indices.append(idx)
+                selected_keys.add(key)
+        if len(selected_indices) >= n:
+            break
 
-            # Find constituency column
-            constituency_col = None
-            for col in df.columns:
-                if 'constituency' in col.lower() or 'pc' in col.lower():
-                    constituency_col = col
-                    break
+    # Fill remaining slots from any state
+    remaining = n - len(selected_indices)
+    if remaining > 0:
+        # Filter out already selected constituencies
+        mask = common_constituencies.apply(
+            lambda x: (x['State'], x['PC_NAME']) not in selected_keys,
+            axis=1
+        )
+        remaining_constituencies = common_constituencies[mask]
 
-            if constituency_col:
-                # Normalize constituency names for comparison
-                df_filtered = df.copy()
-                df_filtered['_const_normalized'] = (
-                    df_filtered[constituency_col].astype(str).str.strip().str.lower()
-                )
+        if len(remaining_constituencies) >= remaining:
+            additional_indices = remaining_constituencies.head(remaining).index.tolist()
+            selected_indices.extend(additional_indices)
 
-                # Filter by selected constituencies
-                df_filtered = df_filtered[
-                    df_filtered['_const_normalized'].isin(self.selected_constituencies)
-                ].copy()
+    # Select rows by index
+    selected_df = common_constituencies.loc[selected_indices[:n]].copy().reset_index(drop=True)
 
-                # Drop temporary column
-                df_filtered.drop('_const_normalized', axis=1, inplace=True)
+    return selected_df
 
-                self.filtered_data[year] = df_filtered
-                print(f"Filtered {year} data: {df_filtered.shape[0]} rows")
 
-        return self.filtered_data
+def create_dataset():
+    """Main function to create the curated dataset."""
 
-    def merge_data(self) -> pd.DataFrame:
-        """
-        Merge data from all three years for selected constituencies.
+    print("Loading data files...")
+    data = load_all_data()
 
-        Returns:
-            Consolidated DataFrame
-        """
-        if not self.filtered_data:
-            self.filter_by_constituencies()
+    print("Finding common constituencies...")
+    common = find_common_constituencies(data, min_years=3)
 
-        merged_dfs = []
+    print(f"Found {len(common)} constituencies present in all 3 years")
 
-        for year, df in self.filtered_data.items():
-            if df is not None and not df.empty:
-                df_with_year = df.copy()
-                df_with_year['year'] = year
-                merged_dfs.append(df_with_year)
+    # Select 10 constituencies
+    print("\nSelecting 10 constituencies...")
+    selected = select_constituencies(common, n=10)
 
-        if not merged_dfs:
-            print("No data to merge")
-            return pd.DataFrame()
+    print("\nSelected constituencies:")
+    for idx, row in selected.iterrows():
+        print(f"  {idx+1}. {row['PC_NAME']}, {row['State']}")
 
-        # Concatenate all dataframes
-        self.consolidated_dataset = pd.concat(merged_dfs, ignore_index=True)
+    # Create standardized dataset
+    print("\nCreating standardized dataset...")
+    dataset = create_standardized_dataset(data, selected)
 
-        print(f"Merged dataset: {self.consolidated_dataset.shape[0]} rows, "
-              f"{self.consolidated_dataset.shape[1]} columns")
+    print(f"\nDataset created with {len(dataset)} rows")
+    print(f"Columns: {list(dataset.columns)}")
 
-        return self.consolidated_dataset
+    # Save to CSV and Excel
+    output_dir = 'data'
+    os.makedirs(output_dir, exist_ok=True)
 
-    def add_year_column(self) -> pd.DataFrame:
-        """
-        Add year column for time-based analysis.
+    csv_path = os.path.join(output_dir, 'voter_turnout_dataset.csv')
+    excel_path = os.path.join(output_dir, 'voter_turnout_dataset.xlsx')
 
-        Returns:
-            DataFrame with year column
-        """
-        if self.consolidated_dataset is None:
-            self.merge_data()
+    dataset.to_csv(csv_path, index=False)
+    dataset.to_excel(excel_path, index=False)
 
-        # Year column should already be added in merge_data
-        if 'year' not in self.consolidated_dataset.columns:
-            # Extract year from data if not present
-            print("Warning: Year column not found, attempting to extract from data")
+    print(f"\nDataset saved to:")
+    print(f"  CSV: {csv_path}")
+    print(f"  Excel: {excel_path}")
 
-        return self.consolidated_dataset
+    # Save selected constituencies list
+    selected.to_csv(os.path.join(output_dir, 'selected_constituencies.csv'), index=False)
 
-    def calculate_aggregates(self) -> pd.DataFrame:
-        """
-        Calculate aggregate statistics (sums, averages) for the 10 constituencies.
+    return dataset, selected
 
-        Returns:
-            DataFrame with aggregate statistics
-        """
-        if self.consolidated_dataset is None:
-            self.add_year_column()
 
-        # Ensure we have the required columns
-        numeric_cols = ['total_voters', 'male_voters', 'female_voters',
-                       'total_votes_polled', 'male_votes_polled',
-                       'female_votes_polled', 'postal_votes',
-                       'turnout_overall', 'turnout_male', 'turnout_female', 'turnout_postal']
+if __name__ == '__main__':
+    dataset, selected = create_dataset()
 
-        available_numeric_cols = [col for col in numeric_cols
-                                 if col in self.consolidated_dataset.columns]
-
-        # Add aggregate columns
-        if 'year' in self.consolidated_dataset.columns:
-            # Group by year and calculate aggregates
-            agg_dict = {}
-            for col in available_numeric_cols:
-                if col.startswith('turnout'):
-                    agg_dict[col] = 'mean'  # Average for ratios
-                else:
-                    agg_dict[col] = 'sum'  # Sum for counts
-
-            aggregates = self.consolidated_dataset.groupby('year')[available_numeric_cols].agg(agg_dict)
-            aggregates.reset_index(inplace=True)
-
-            print("\nAggregate statistics by year:")
-            print(aggregates)
-
-        return self.consolidated_dataset
-
-    def validate_dataset(self) -> bool:
-        """
-        Check data consistency and completeness.
-
-        Returns:
-            True if dataset is valid
-        """
-        if self.consolidated_dataset is None or self.consolidated_dataset.empty:
-            print("Dataset is empty")
-            return False
-
-        # Check for required columns
-        required_cols = ['constituency', 'state', 'year']
-        missing_cols = [col for col in required_cols
-                       if col not in self.consolidated_dataset.columns]
-
-        if missing_cols:
-            print(f"Missing required columns: {missing_cols}")
-            return False
-
-        # Check for missing values in key columns
-        key_cols = ['constituency', 'state', 'year']
-        for col in key_cols:
-            if col in self.consolidated_dataset.columns:
-                missing = self.consolidated_dataset[col].isnull().sum()
-                if missing > 0:
-                    print(f"Warning: {missing} missing values in {col}")
-
-        # Check that we have data for all selected constituencies
-        if 'constituency' in self.consolidated_dataset.columns:
-            const_normalized = (
-                self.consolidated_dataset['constituency']
-                .astype(str).str.strip().str.lower()
-            )
-            found_constituencies = set(const_normalized.unique())
-            selected_set = set(self.selected_constituencies)
-
-            missing = selected_set - found_constituencies
-            if missing:
-                print(f"Warning: Missing data for constituencies: {missing}")
-
-        # Check that we have data for all years
-        if 'year' in self.consolidated_dataset.columns:
-            years = set(self.consolidated_dataset['year'].unique())
-            expected_years = set(self.dataframes_dict.keys())
-            missing_years = expected_years - years
-            if missing_years:
-                print(f"Warning: Missing data for years: {missing_years}")
-
-        print("Dataset validation completed")
-        return True
-
-    def export_to_excel(self, filepath: Path) -> bool:
-        """
-        Export consolidated dataset to Excel.
-
-        Args:
-            filepath: Path to save Excel file
-
-        Returns:
-            True if export successful
-        """
-        if self.consolidated_dataset is None:
-            print("No dataset to export")
-            return False
-
-        try:
-            # Ensure output directory exists
-            filepath.parent.mkdir(parents=True, exist_ok=True)
-
-            # Export to Excel
-            self.consolidated_dataset.to_excel(filepath, index=False)
-            print(f"Dataset exported to {filepath}")
-            return True
-
-        except Exception as e:
-            print(f"Error exporting dataset: {e}")
-            return False
-
-    def export_to_csv(self, filepath: Path) -> bool:
-        """
-        Export consolidated dataset to CSV.
-
-        Args:
-            filepath: Path to save CSV file
-
-        Returns:
-            True if export successful
-        """
-        if self.consolidated_dataset is None:
-            print("No dataset to export")
-            return False
-
-        try:
-            # Ensure output directory exists
-            filepath.parent.mkdir(parents=True, exist_ok=True)
-
-            # Export to CSV
-            self.consolidated_dataset.to_csv(filepath, index=False)
-            print(f"Dataset exported to {filepath}")
-            return True
-
-        except Exception as e:
-            print(f"Error exporting dataset: {e}")
-            return False
-
-    def get_dataset(self) -> pd.DataFrame:
-        """
-        Return the consolidated DataFrame.
-
-        Returns:
-            Consolidated DataFrame
-        """
-        return self.consolidated_dataset
+    print("\nDataset summary:")
+    print(dataset.groupby('Year').agg({
+        'Total_Electors': 'sum',
+        'Total_Votes': 'sum',
+        'Overall_Turnout': 'mean'
+    }))
 

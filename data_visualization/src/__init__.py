@@ -1,5 +1,2 @@
-"""
-Voter Turnout Dashboard - Source Package
-"""
-
+# Data Visualization Project - Voter Turnout Dashboard
 

@@ -1,113 +1,123 @@
-# Variable Type Identification
+# Variable Types Documentation
 
-This document identifies the variable types in the voter turnout dataset.
+This document identifies and categorizes all variables in the voter turnout dataset.
 
-## Variable Categories
+## Dataset Variables
 
-### Categorical Variables
+### Categorical/Nominal Variables
 
-These variables represent categories or groups:
+**Constituency Name (PC_NAME)**
+- Type: Categorical/Nominal
+- Description: Name of the parliamentary constituency
+- Values: Text strings (e.g., "Araku", "Srikakulam", "Vizianagaram")
+- Unique values: 10 (one for each selected constituency)
 
-1. **Constituency Name**
-   - Type: Categorical (Nominal)
-   - Description: Name of the parliamentary constituency
-   - Values: Text strings (e.g., "Amethi", "Varanasi", "Bangalore North")
+**State**
+- Type: Categorical/Nominal
+- Description: Name of the state where the constituency is located
+- Values: Text strings (e.g., "Andhra Pradesh", "Tamil Nadu")
+- Unique values: Varies based on selected constituencies
 
-2. **State**
-   - Type: Categorical (Nominal)
-   - Description: Name of the state where the constituency is located
-   - Values: Text strings (e.g., "Uttar Pradesh", "Karnataka", "Tamil Nadu")
+### Ordinal Variables
 
-3. **Year**
-   - Type: Categorical (Ordinal)
-   - Description: Year of the general election
-   - Values: 2014, 2019, 2024
-   - Note: While numeric, this is treated as categorical/ordinal as it represents discrete time periods
+**Election Year (Year)**
+- Type: Ordinal
+- Description: Year of the general election
+- Values: 2014, 2019, 2024
+- Order: 2014 < 2019 < 2024 (temporal ordering)
 
-### Numerical Variables - Discrete
+**PC Number (PC_NO)**
+- Type: Ordinal (can also be considered discrete numerical)
+- Description: Parliamentary constituency number within the state
+- Values: Integer numbers
+- Order: Numerical ordering (though may not have meaningful ordinal relationship)
 
-These variables represent counts (whole numbers):
+### Numerical/Continuous Variables
 
-4. **Total Voters**
-   - Type: Numerical (Discrete)
-   - Description: Total number of registered voters in the constituency
-   - Values: Non-negative integers
-   - Units: Number of voters
+**Total Electors (Total_Electors)**
+- Type: Numerical/Continuous (Count)
+- Description: Total number of eligible voters in the constituency
+- Range: Positive integers (count data)
+- Unit: Number of voters
 
-5. **Male Voters**
-   - Type: Numerical (Discrete)
-   - Description: Number of registered male voters
-   - Values: Non-negative integers
-   - Units: Number of voters
+**Male Electors (Male_Electors)**
+- Type: Numerical/Continuous (Count)
+- Description: Total number of eligible male voters
+- Range: Positive integers
+- Unit: Number of voters
 
-6. **Female Voters**
-   - Type: Numerical (Discrete)
-   - Description: Number of registered female voters
-   - Values: Non-negative integers
-   - Units: Number of voters
+**Female Electors (Female_Electors)**
+- Type: Numerical/Continuous (Count)
+- Description: Total number of eligible female voters
+- Range: Positive integers
+- Unit: Number of voters
 
-7. **Total Votes Polled**
-   - Type: Numerical (Discrete)
-   - Description: Total number of votes cast in the election
-   - Values: Non-negative integers
-   - Units: Number of votes
+**Others Electors (Others_Electors)**
+- Type: Numerical/Continuous (Count)
+- Description: Total number of eligible voters in other/third gender category
+- Range: Non-negative integers
+- Unit: Number of voters
 
-8. **Male Votes Polled**
-   - Type: Numerical (Discrete)
-   - Description: Number of votes cast by male voters
-   - Values: Non-negative integers
-   - Units: Number of votes
+**Total Votes (Total_Votes)**
+- Type: Numerical/Continuous (Count)
+- Description: Total number of votes polled in the constituency
+- Range: Positive integers
+- Unit: Number of votes
 
-9. **Female Votes Polled**
-   - Type: Numerical (Discrete)
-   - Description: Number of votes cast by female voters
-   - Values: Non-negative integers
-   - Units: Number of votes
+**Male Votes (Male_Votes)**
+- Type: Numerical/Continuous (Count)
+- Description: Total number of votes polled by male voters
+- Range: Positive integers
+- Unit: Number of votes
 
-10. **Postal Votes**
-    - Type: Numerical (Discrete)
-    - Description: Number of postal votes cast
-    - Values: Non-negative integers
-    - Units: Number of votes
+**Female Votes (Female_Votes)**
+- Type: Numerical/Continuous (Count)
+- Description: Total number of votes polled by female voters
+- Range: Positive integers
+- Unit: Number of votes
 
-### Numerical Variables - Continuous
+**Postal Votes (Postal_Votes)**
+- Type: Numerical/Continuous (Count)
+- Description: Total number of postal votes
+- Range: Non-negative integers
+- Unit: Number of votes
 
-These variables represent ratios or percentages (can have decimal values):
+**Overall Turnout (Overall_Turnout)**
+- Type: Numerical/Continuous (Percentage)
+- Description: Overall voter turnout ratio as a percentage
+- Range: 0 to 100 (typically 50-90 in practice)
+- Unit: Percentage (%)
 
-11. **Voter Turnout Ratio - Overall**
-    - Type: Numerical (Continuous)
-    - Description: Overall voter turnout as a percentage
-    - Values: 0-100 (percentage)
-    - Formula: (Total Votes Polled / Total Voters) × 100
-    - Units: Percentage (%)
+**Male Turnout (Male_Turnout)**
+- Type: Numerical/Continuous (Percentage)
+- Description: Male voter turnout ratio as a percentage
+- Range: 0 to 100
+- Unit: Percentage (%)
 
-12. **Voter Turnout Ratio - Male**
-    - Type: Numerical (Continuous)
-    - Description: Male voter turnout as a percentage
-    - Values: 0-100 (percentage)
-    - Formula: (Male Votes Polled / Male Voters) × 100
-    - Units: Percentage (%)
+**Female Turnout (Female_Turnout)**
+- Type: Numerical/Continuous (Percentage)
+- Description: Female voter turnout ratio as a percentage
+- Range: 0 to 100
+- Unit: Percentage (%)
 
-13. **Voter Turnout Ratio - Female**
-    - Type: Numerical (Continuous)
-    - Description: Female voter turnout as a percentage
-    - Values: 0-100 (percentage)
-    - Formula: (Female Votes Polled / Female Voters) × 100
-    - Units: Percentage (%)
+**Others Turnout (Others_Turnout)**
+- Type: Numerical/Continuous (Percentage)
+- Description: Other/third gender voter turnout ratio as a percentage
+- Range: 0 to 100
+- Unit: Percentage (%)
 
-14. **Voter Turnout Ratio - Postal**
-    - Type: Numerical (Continuous)
-    - Description: Postal votes as a percentage of total voters
-    - Values: 0-100 (percentage)
-    - Formula: (Postal Votes / Total Voters) × 100
-    - Units: Percentage (%)
+**Postal Turnout (Postal_Turnout)**
+- Type: Numerical/Continuous (Percentage)
+- Description: Postal votes as percentage of total electors
+- Range: 0 to 100 (typically very small)
+- Unit: Percentage (%)
 
 ## Summary
 
-- **Categorical Variables**: 3 (Constituency Name, State, Year)
-- **Numerical Discrete Variables**: 7 (All count-based variables)
-- **Numerical Continuous Variables**: 4 (All turnout ratio variables)
+- **Categorical/Nominal**: 2 variables (PC_NAME, State)
+- **Ordinal**: 2 variables (Year, PC_NO)
+- **Numerical/Continuous (Counts)**: 8 variables (all elector and vote counts)
+- **Numerical/Continuous (Percentages)**: 5 variables (all turnout ratios)
 
-**Total Variables**: 14
-
+**Total Variables**: 17 variables in the final dataset
 

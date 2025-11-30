@@ -1,146 +1,79 @@
 """
-Interactivity manager for adding interactive features to the dashboard.
+Interactivity module for dashboard widgets and callbacks.
 """
-from bokeh.models import Select, MultiSelect, ColumnDataSource, CustomJS
-from bokeh.layouts import column, row
-from typing import List, Dict
-from dashboard import DashboardBuilder
-from data_processor import DataProcessor
+
+from bokeh.models import Select, MultiSelect, CheckboxGroup, CustomJS
+from bokeh.models import ColumnDataSource
+import pandas as pd
 
 
-class InteractivityManager:
-    """Manages interactive features for the dashboard."""
+def create_constituency_selector(constituencies, default_selection=None):
+    """
+    Create a multi-select widget for constituency selection.
 
-    def __init__(self, dashboard_builder: DashboardBuilder,
-                 data_processor: DataProcessor):
-        """
-        Initialize with dashboard and data processor.
+    Args:
+        constituencies: List of constituency names
+        default_selection: List of default selected constituencies
 
-        Args:
-            dashboard_builder: DashboardBuilder instance
-            data_processor: DataProcessor instance
-        """
-        self.dashboard_builder = dashboard_builder
-        self.data_processor = data_processor
-        self.widgets = {}
+    Returns:
+        MultiSelect widget
+    """
+    if default_selection is None:
+        default_selection = constituencies
 
-    def add_constituency_selector(self) -> Select:
-        """
-        Add dropdown widget for constituency selection.
+    widget = MultiSelect(
+        title="Select Constituencies:",
+        value=default_selection,
+        options=constituencies,
+        width=200,
+        height=150
+    )
 
-        Returns:
-            Select widget
-        """
-        # Get available constituencies
-        dataset = self.data_processor.dataset
-        if dataset is None or dataset.empty:
-            return None
+    return widget
 
-        # Find constituency column
-        constituency_col = None
-        for col in dataset.columns:
-            if 'constituency' in col.lower() or 'pc' in col.lower():
-                constituency_col = col
-                break
 
-        if not constituency_col:
-            return None
+def create_year_filter(years, default_selection=None):
+    """
+    Create a checkbox group for year filtering.
 
-        constituencies = sorted(dataset[constituency_col].unique())
-        constituency_options = [str(c).strip() for c in constituencies]
+    Args:
+        years: List of years
+        default_selection: List of default selected years
 
-        # Create select widget
-        selector = Select(
-            title="Select Constituency:",
-            value=constituency_options[0] if constituency_options else "",
-            options=constituency_options,
-            width=300
-        )
+    Returns:
+        CheckboxGroup widget
+    """
+    if default_selection is None:
+        default_selection = list(range(len(years)))
 
-        self.widgets['constituency_selector'] = selector
+    widget = CheckboxGroup(
+        labels=[str(y) for y in years],
+        active=default_selection,
+        width=150
+    )
 
-        return selector
+    return widget
 
-    def create_callback_functions(self):
-        """
-        Create callback functions for widget interactions.
 
-        Returns:
-            Dictionary of callback functions
-        """
-        # This is a placeholder for callback functions
-        # Actual callbacks would be implemented based on specific requirements
-        callbacks = {}
+def filter_data_by_selection(dataset, selected_constituencies=None, selected_years=None):
+    """
+    Filter dataset based on selected constituencies and years.
 
-        return callbacks
+    Args:
+        dataset: Full dataset DataFrame
+        selected_constituencies: List of selected constituency names
+        selected_years: List of selected years
 
-    def implement_drill_down(self):
-        """
-        Implement drill-down functionality using Bokeh's TapTool/Selection.
+    Returns:
+        Filtered DataFrame
+    """
+    filtered = dataset.copy()
 
-        Returns:
-            Updated plots with drill-down capability
-        """
-        # Get all plots
-        plots = self.dashboard_builder.visualization_generator.get_all_plots()
+    if selected_constituencies:
+        filtered = filtered[filtered['PC_NAME'].isin(selected_constituencies)]
 
-        # Add tap tool to plots for drill-down
-        for plot_name, plot in plots.items():
-            if hasattr(plot, 'add_tools'):
-                # Tap tool is already added in visualization generation
-                # Additional drill-down logic can be implemented here
-                pass
+    if selected_years:
+        filtered = filtered[filtered['Year'].isin(selected_years)]
 
-        return plots
-
-    def link_visualizations(self):
-        """
-        Link visualizations so selections update all charts.
-
-        Returns:
-            Linked visualizations
-        """
-        # This would implement cross-filtering between visualizations
-        # For now, this is a placeholder
-        plots = self.dashboard_builder.visualization_generator.get_all_plots()
-
-        return plots
-
-    def add_tooltips(self):
-        """
-        Add hover tooltips to visualizations.
-
-        Returns:
-            Plots with tooltips
-        """
-        # Tooltips are already added in visualization generation
-        # This method can be used to customize tooltips further
-        plots = self.dashboard_builder.visualization_generator.get_all_plots()
-
-        return plots
-
-    def apply_interactivity(self) -> Dict:
-        """
-        Apply all interactive features to dashboard.
-
-        Returns:
-            Dictionary of interactive widgets and updated plots
-        """
-        # Add constituency selector
-        selector = self.add_constituency_selector()
-
-        # Add tooltips
-        self.add_tooltips()
-
-        # Implement drill-down
-        self.implement_drill_down()
-
-        # Link visualizations
-        self.link_visualizations()
-
-        return {
-            'widgets': self.widgets,
-            'plots': self.dashboard_builder.visualization_generator.get_all_plots()
-        }
-
+    return filtered
 

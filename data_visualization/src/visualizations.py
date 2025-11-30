@@ -1,459 +1,314 @@
 """
-Visualization generation module using Bokeh.
+Visualization functions for creating the four required charts.
 """
+
 import pandas as pd
 from bokeh.plotting import figure
-from bokeh.models import ColumnDataSource, HoverTool
-from typing import Dict, Optional
-from color_scheme import ColorScheme
-
-
-class VisualizationGenerator:
-    """Generates Bokeh visualizations for voter turnout data."""
-
-    def __init__(self, data_processor, color_scheme: Optional[ColorScheme] = None):
-        """
-        Initialize with DataProcessor and color scheme.
-
-        Args:
-            data_processor: DataProcessor instance
-            color_scheme: ColorScheme instance (optional)
-        """
-        self.data_processor = data_processor
-        self.color_scheme = color_scheme or ColorScheme('colorblind_safe')
-        self.plots = {}
-
-    def _apply_gestalt_principles(self, fig):
-        """
-        Apply Gestalt principles to figure (proximity, similarity, continuity).
-
-        Args:
-            fig: Bokeh figure
-
-        Returns:
-            Styled figure
-        """
-        # Proximity: Group related elements with consistent spacing
-        fig.min_border_left = 60
-        fig.min_border_right = 60
-        fig.min_border_top = 60
-        fig.min_border_bottom = 60
-
-        # Similarity: Use consistent styling for similar elements
-        fig.title.text_font_size = "16pt"
-        fig.title.text_font_style = "bold"
-        fig.title.align = "center"
-
-        # Continuity: Smooth visual flow
-        fig.xaxis.major_label_orientation = 0
-        fig.yaxis.major_label_orientation = 0
-
-        return fig
-
-    def _setup_figure(self, title: str, x_label: str, y_label: str,
-                     width: int = 800, height: int = 500) -> figure:
-        """
-        Create base figure with consistent styling.
-
-        Args:
-            title: Figure title
-            x_label: X-axis label
-            y_label: Y-axis label
-            width: Figure width
-            height: Figure height
-
-        Returns:
-            Styled Bokeh figure
-        """
-        fig = figure(
-            title=title,
-            x_axis_label=x_label,
-            y_axis_label=y_label,
-            width=width,
-            height=height,
-            tools="pan,wheel_zoom,box_zoom,reset,save,hover"
-        )
-
-        # Apply color scheme theme
-        self.color_scheme.apply_theme(fig)
-
-        # Apply Gestalt principles
-        self._apply_gestalt_principles(fig)
-
-        return fig
-
-    def plot_turnout_over_time(self, data: Optional[pd.DataFrame] = None) -> figure:
-        """
-        Create line chart showing aggregate voter turnout ratio over time.
-
-        Args:
-            data: Time series data (optional, will fetch from processor if not provided)
-
-        Returns:
-            Bokeh figure
-        """
-        if data is None:
-            data = self.data_processor.get_aggregated_data('time_series')
-
-        if data is None or data.empty:
-            print("No data available for time series plot")
-            return figure()
-
-        # Prepare data
-        if 'year' not in data.columns or 'turnout_overall' not in data.columns:
-            print("Required columns not found in data")
-            return figure()
-
-        source = ColumnDataSource(data)
-
-        # Create figure
-        fig = self._setup_figure(
-            title="Voter Turnout Ratio Over Time (Aggregate)",
-            x_label="Year",
-            y_label="Turnout Ratio (%)"
-        )
-
-        # Add line
-        fig.line(
-            x='year',
-            y='turnout_overall',
-            source=source,
-            line_width=3,
-            line_color=self.color_scheme.get_colors('general')['primary'],
-            legend_label="Overall Turnout"
-        )
-
-        # Add markers
-        fig.scatter(
-            x='year',
-            y='turnout_overall',
-            source=source,
-            size=10,
-            color=self.color_scheme.get_colors('general')['primary'],
-            fill_alpha=0.8
-        )
-
-        # Add hover tool
-        hover = HoverTool(
-            tooltips=[
-                ("Year", "@year"),
-                ("Turnout", "@turnout_overall{0.2f}%")
-            ]
-        )
-        fig.add_tools(hover)
-
-        fig.legend.location = "top_left"
-        self.plots['time_series'] = fig
-
-        return fig
-
-    def plot_turnout_by_gender(self, data: Optional[pd.DataFrame] = None) -> figure:
-        """
-        Create multi-line chart for gender comparison.
-
-        Args:
-            data: Gender comparison data (optional)
-
-        Returns:
-            Bokeh figure
-        """
-        if data is None:
-            data = self.data_processor.get_aggregated_data('gender_comparison')
-
-        if data is None or data.empty:
-            print("No data available for gender comparison plot")
-            return figure()
-
-        if 'year' not in data.columns or 'gender' not in data.columns or 'turnout' not in data.columns:
-            print("Required columns not found in data")
-            return figure()
-
-        # Create figure
-        fig = self._setup_figure(
-            title="Voter Turnout Ratio by Gender Over Time (Aggregate)",
-            x_label="Year",
-            y_label="Turnout Ratio (%)"
-        )
-
-        # Get gender colors
-        gender_colors = self.color_scheme.get_colors('gender')
-
-        # Plot line for each gender
-        genders = data['gender'].unique()
-        for gender in genders:
-            gender_data = data[data['gender'] == gender].sort_values('year')
-            source = ColumnDataSource(gender_data)
-
-            color = gender_colors.get(gender, self.color_scheme.colorblind_palette[0])
-
-            fig.line(
-                x='year',
-                y='turnout',
-                source=source,
-                line_width=3,
-                line_color=color,
-                legend_label=gender
-            )
-
-            fig.scatter(
-                x='year',
-                y='turnout',
-                source=source,
-                size=10,
-                color=color,
-                fill_alpha=0.8
-            )
-
-        # Add hover tool
-        hover = HoverTool(
-            tooltips=[
-                ("Year", "@year"),
-                ("Gender", "@gender"),
-                ("Turnout", "@turnout{0.2f}%")
-            ]
-        )
-        fig.add_tools(hover)
-
-        fig.legend.location = "top_left"
-        self.plots['gender_comparison'] = fig
-
-        return fig
-
-    def plot_constituency_time_distribution(self, data: Optional[pd.DataFrame] = None) -> figure:
-        """
-        Create heatmap/grouped bar for constituency-time distribution.
-
-        Args:
-            data: Constituency-time data (optional)
-
-        Returns:
-            Bokeh figure
-        """
-        if data is None:
-            data = self.data_processor.get_aggregated_data('constituency_time')
-
-        if data is None or data.empty:
-            print("No data available for constituency-time distribution plot")
-            return figure()
-
-        if 'constituency' not in data.columns or 'year' not in data.columns or 'turnout' not in data.columns:
-            print("Required columns not found in data")
-            return figure()
-
-        # Check for duplicates and handle them
-        duplicates = data.duplicated(subset=['constituency', 'year'], keep=False)
-        if duplicates.any():
-            print(f"Warning: Found {duplicates.sum()} duplicate entries for (constituency, year) combinations. Aggregating using mean.")
-            # Group by constituency and year, taking the mean of turnout to handle duplicates
-            data = data.groupby(['constituency', 'year'], as_index=False)['turnout'].mean()
-
-        # Pivot data for heatmap
-        try:
-            pivot_data = data.pivot(index='constituency', columns='year', values='turnout')
-        except ValueError as e:
-            # If pivot still fails, use pivot_table with aggregation
-            print(f"Pivot failed, using pivot_table with aggregation: {e}")
-            pivot_data = data.pivot_table(index='constituency', columns='year', values='turnout', aggfunc='mean')
-
-        pivot_data = pivot_data.fillna(0)
-
-        # Prepare data for plotting
-        constituencies = pivot_data.index.tolist()
-        years = pivot_data.columns.tolist()
-
-        # Create figure
-        fig = self._setup_figure(
-            title="Voter Turnout Distribution: Constituencies Across Time",
-            x_label="Year",
-            y_label="Constituency",
-            width=800,
-            height=max(500, len(constituencies) * 40)
-        )
-
-        # Get color palette
-        colors = self.color_scheme.get_colorblind_safe()
-        year_colors = self.color_scheme.get_colors('year')
-
-        # Create heatmap using rect glyphs
-        x = []
-        y = []
-        colors_list = []
-        alphas = []
-        turnouts = []
-
-        for i, const in enumerate(constituencies):
-            for j, year in enumerate(years):
-                turnout = pivot_data.loc[const, year]
-                x.append(year)
-                y.append(i)
-                turnouts.append(turnout)
-
-                # Map turnout to color (normalize to 0-1)
-                max_turnout = pivot_data.max().max()
-                min_turnout = pivot_data.min().min()
-                if max_turnout > min_turnout:
-                    normalized = (turnout - min_turnout) / (max_turnout - min_turnout)
-                else:
-                    normalized = 0.5
-
-                # Use color from palette based on year
-                color = year_colors.get(year, colors[j % len(colors)])
-                colors_list.append(color)
-                alphas.append(0.6 + normalized * 0.4)
-
-        source = ColumnDataSource(dict(
-            x=x,
-            y=y,
-            colors=colors_list,
-            alphas=alphas,
-            turnouts=turnouts,
-            constituencies=[constituencies[int(yi)] for yi in y],
-            years=x
-        ))
-
-        # Draw rectangles
-        fig.rect(
-            x='x',
-            y='y',
-            width=0.8,
-            height=0.8,
-            source=source,
-            fill_color='colors',
-            fill_alpha='alphas',
-            line_color='white',
-            line_width=1
-        )
-
-        # Set y-axis labels
-        fig.yaxis.ticker = list(range(len(constituencies)))
-        fig.yaxis.major_label_overrides = {i: const for i, const in enumerate(constituencies)}
-
-        # Add hover tool
-        hover = HoverTool(
-            tooltips=[
-                ("Constituency", "@constituencies"),
-                ("Year", "@years"),
-                ("Turnout", "@turnouts{0.2f}%")
-            ]
-        )
-        fig.add_tools(hover)
-
-        self.plots['constituency_time'] = fig
-
-        return fig
-
-    def plot_constituency_gender_distribution(self, data: Optional[pd.DataFrame] = None) -> figure:
-        """
-        Create grouped bar chart for constituency-gender distribution.
-
-        Args:
-            data: Constituency-gender data (optional)
-
-        Returns:
-            Bokeh figure
-        """
-        if data is None:
-            data = self.data_processor.get_aggregated_data('constituency_gender')
-
-        if data is None or data.empty:
-            print("No data available for constituency-gender distribution plot")
-            return figure()
-
-        if 'constituency' not in data.columns or 'gender' not in data.columns or 'turnout' not in data.columns:
-            print("Required columns not found in data")
-            return figure()
-
-        # Prepare data for grouped bars
-        constituencies = sorted(data['constituency'].unique())
-        genders = sorted(data['gender'].unique())
-
-        # Create figure
-        fig = self._setup_figure(
-            title="Voter Turnout Distribution: Constituencies by Gender",
-            x_label="Constituency",
-            y_label="Turnout Ratio (%)",
-            width=max(800, len(constituencies) * 60),
-            height=500
-        )
-
-        # Get gender colors
-        gender_colors = self.color_scheme.get_colors('gender')
-
-        # Create grouped bars
-        x_positions = []
-        turnouts = []
-        colors_list = []
-        gender_labels = []
-        constituency_labels = []
-
-        bar_width = 0.25
-        for i, const in enumerate(constituencies):
-            const_data = data[data['constituency'] == const]
-            for j, gender in enumerate(genders):
-                gender_data = const_data[const_data['gender'] == gender]
-                if not gender_data.empty:
-                    x_pos = i + (j - len(genders)/2 + 0.5) * bar_width
-                    x_positions.append(x_pos)
-                    turnouts.append(gender_data['turnout'].iloc[0])
-                    colors_list.append(gender_colors.get(gender, self.color_scheme.colorblind_palette[j]))
-                    gender_labels.append(gender)
-                    constituency_labels.append(const)
-
-        source = ColumnDataSource(dict(
-            x=x_positions,
-            y=turnouts,
-            colors=colors_list,
-            genders=gender_labels,
-            constituencies=constituency_labels
-        ))
-
-        # Draw bars
+from bokeh.models import ColumnDataSource, HoverTool, Legend
+from bokeh.transform import factor_cmap
+try:
+    from .styling import create_figure
+    from .color_scheme import (
+        COLOR_OVERALL, COLOR_MALE, COLOR_FEMALE, COLOR_POSTAL,
+        COLOR_2014, COLOR_2019, COLOR_2024,
+        PALETTE_GENDER, PALETTE_YEARS
+    )
+except ImportError:
+    from styling import create_figure
+    from color_scheme import (
+        COLOR_OVERALL, COLOR_MALE, COLOR_FEMALE, COLOR_POSTAL,
+        COLOR_2014, COLOR_2019, COLOR_2024,
+        PALETTE_GENDER, PALETTE_YEARS
+    )
+
+
+def create_visualization_a(aggregated_data):
+    """
+    Visualization A: Change in voter turnout ratio over time (aggregate).
+
+    Args:
+        aggregated_data: DataFrame with Year and Overall_Turnout columns
+
+    Returns:
+        Bokeh figure
+    """
+    # Prepare data
+    data = aggregated_data.sort_values('Year')
+
+    source = ColumnDataSource(data={
+        'Year': data['Year'].astype(str),
+        'Turnout': data['Overall_Turnout'],
+        'Year_num': data['Year']
+    })
+
+    # Create figure
+    fig = create_figure(
+        title='Change in Voter Turnout Ratio Over Time (Aggregate)',
+        x_label='Election Year',
+        y_label='Voter Turnout Ratio (%)',
+        width=500,
+        height=350,
+        x_range=data['Year'].astype(str).tolist()
+    )
+
+    # Add line
+    line = fig.line(
+        x='Year',
+        y='Turnout',
+        source=source,
+        line_width=3,
+        line_color=COLOR_OVERALL,
+        alpha=0.8
+    )
+
+    # Add markers
+    fig.scatter(
+        x='Year',
+        y='Turnout',
+        source=source,
+        size=10,
+        color=COLOR_OVERALL,
+        alpha=0.9
+    )
+
+    # Add hover tool
+    hover = HoverTool(
+        tooltips=[
+            ('Year', '@Year'),
+            ('Turnout', '@Turnout{0.2f}%')
+        ],
+        mode='vline'
+    )
+    fig.add_tools(hover)
+
+    return fig
+
+
+def create_visualization_b(aggregated_data):
+    """
+    Visualization B: Change in voter turnout ratio across genders (aggregate).
+
+    Args:
+        aggregated_data: DataFrame with Year, Male_Turnout, Female_Turnout columns
+
+    Returns:
+        Bokeh figure
+    """
+    # Prepare data
+    data = aggregated_data.sort_values('Year')
+    years = data['Year'].astype(str).tolist()
+
+    source = ColumnDataSource(data={
+        'Year': years,
+        'Male': data['Male_Turnout'],
+        'Female': data['Female_Turnout'],
+        'Year_num': data['Year']
+    })
+
+    # Create figure
+    fig = create_figure(
+        title='Change in Voter Turnout Ratio Across Genders (Aggregate)',
+        x_label='Election Year',
+        y_label='Voter Turnout Ratio (%)',
+        width=500,
+        height=350,
+        x_range=years
+    )
+
+    # Add lines for Male and Female
+    line_male = fig.line(
+        x='Year',
+        y='Male',
+        source=source,
+        line_width=3,
+        line_color=COLOR_MALE,
+        alpha=0.8,
+        legend_label='Male'
+    )
+
+    line_female = fig.line(
+        x='Year',
+        y='Female',
+        source=source,
+        line_width=3,
+        line_color=COLOR_FEMALE,
+        alpha=0.8,
+        legend_label='Female'
+    )
+
+    # Add markers
+    fig.scatter(x='Year', y='Male', source=source, size=10, color=COLOR_MALE, alpha=0.9)
+    fig.scatter(x='Year', y='Female', source=source, size=10, color=COLOR_FEMALE, alpha=0.9)
+
+    # Add hover tool
+    hover = HoverTool(
+        tooltips=[
+            ('Year', '@Year'),
+            ('Male Turnout', '@Male{0.2f}%'),
+            ('Female Turnout', '@Female{0.2f}%')
+        ],
+        mode='vline'
+    )
+    fig.add_tools(hover)
+
+    # Legend
+    fig.legend.location = 'top_left'
+    fig.legend.label_text_font_size = '10pt'
+
+    return fig
+
+
+def create_visualization_c(dataset):
+    """
+    Visualization C: Distribution of voter turnout across constituencies and time.
+
+    Args:
+        dataset: DataFrame with PC_NAME, Year, Overall_Turnout columns
+
+    Returns:
+        Bokeh figure
+    """
+    # Prepare data for grouped bar chart
+    pivot_data = dataset.pivot_table(
+        values='Overall_Turnout',
+        index='PC_NAME',
+        columns='Year',
+        aggfunc='mean'
+    ).fillna(0)
+
+    constituencies = pivot_data.index.tolist()
+    years = sorted(pivot_data.columns)
+
+    # Create data sources for each year
+    from bokeh.transform import dodge
+    from bokeh.models import FactorRange
+
+    # Create figure with FactorRange for categorical x-axis
+    fig = create_figure(
+        title='Distribution of Voter Turnout Across Constituencies and Time',
+        x_label='Constituency',
+        y_label='Voter Turnout Ratio (%)',
+        width=800,
+        height=400,
+        x_range=FactorRange(*constituencies)
+    )
+
+    # Color mapping for years
+    colors = {2014: COLOR_2014, 2019: COLOR_2019, 2024: COLOR_2024}
+
+    # Create bars for each year
+    offsets = [-0.2, 0, 0.2]
+    for i, year in enumerate(years):
+        year_data = pivot_data[year].tolist()
+        source = ColumnDataSource(data={
+            'Constituency': constituencies,
+            'Turnout': year_data
+        })
+
+        offset = offsets[i] if i < len(offsets) else (i - 1) * 0.2
         fig.vbar(
-            x='x',
-            top='y',
-            width=bar_width,
+            x=dodge('Constituency', offset, range=fig.x_range),
+            top='Turnout',
             source=source,
-            fill_color='colors',
-            fill_alpha=0.8,
-            line_color='white',
-            line_width=1,
-            legend_field='genders'
+            width=0.2,
+            color=colors[year],
+            alpha=0.8,
+            legend_label=str(year)
         )
 
-        # Set x-axis labels
-        fig.xaxis.ticker = list(range(len(constituencies)))
-        fig.xaxis.major_label_overrides = {i: const for i, const in enumerate(constituencies)}
-        fig.xaxis.major_label_orientation = 1.2
+    # Rotate x-axis labels
+    fig.xaxis.major_label_orientation = 45
 
-        # Add hover tool
-        hover = HoverTool(
-            tooltips=[
-                ("Constituency", "@constituencies"),
-                ("Gender", "@genders"),
-                ("Turnout", "@y{0.2f}%")
-            ]
-        )
-        fig.add_tools(hover)
+    # Add hover tool
+    hover = HoverTool(
+        tooltips=[
+            ('Constituency', '@Constituency'),
+            ('Turnout', '@Turnout{0.2f}%')
+        ]
+    )
+    fig.add_tools(hover)
 
-        fig.legend.location = "top_right"
-        self.plots['constituency_gender'] = fig
+    fig.legend.location = 'top_right'
+    fig.legend.label_text_font_size = '10pt'
 
-        return fig
+    return fig
 
-    def get_all_plots(self) -> Dict[str, figure]:
-        """
-        Return dictionary of all four plots.
 
-        Returns:
-            Dictionary mapping plot names to Bokeh figures
-        """
-        if not self.plots:
-            # Generate all plots
-            self.plot_turnout_over_time()
-            self.plot_turnout_by_gender()
-            self.plot_constituency_time_distribution()
-            self.plot_constituency_gender_distribution()
+def create_visualization_d(dataset):
+    """
+    Visualization D: Distribution of voter turnout across constituencies and genders.
 
-        return self.plots
+    Args:
+        dataset: DataFrame with PC_NAME, Male_Turnout, Female_Turnout columns
 
+    Returns:
+        Bokeh figure
+    """
+    # Aggregate by constituency (average across years)
+    constituency_avg = dataset.groupby('PC_NAME').agg({
+        'Male_Turnout': 'mean',
+        'Female_Turnout': 'mean'
+    }).reset_index()
+
+    constituencies = constituency_avg['PC_NAME'].tolist()
+
+    source = ColumnDataSource(data={
+        'Constituency': constituencies,
+        'Male': constituency_avg['Male_Turnout'],
+        'Female': constituency_avg['Female_Turnout']
+    })
+
+    # Grouped bars
+    from bokeh.transform import dodge
+    from bokeh.models import FactorRange
+
+    # Create figure with FactorRange for categorical x-axis
+    fig = create_figure(
+        title='Distribution of Voter Turnout Across Constituencies and Genders',
+        x_label='Constituency',
+        y_label='Voter Turnout Ratio (%)',
+        width=800,
+        height=400,
+        x_range=FactorRange(*constituencies)
+    )
+
+    # Male bars
+    fig.vbar(
+        x=dodge('Constituency', -0.15, range=fig.x_range),
+        top='Male',
+        source=source,
+        width=0.3,
+        color=COLOR_MALE,
+        alpha=0.8,
+        legend_label='Male'
+    )
+
+    # Female bars
+    fig.vbar(
+        x=dodge('Constituency', 0.15, range=fig.x_range),
+        top='Female',
+        source=source,
+        width=0.3,
+        color=COLOR_FEMALE,
+        alpha=0.8,
+        legend_label='Female'
+    )
+
+    # Rotate x-axis labels
+    fig.xaxis.major_label_orientation = 45
+
+    # Add hover tool
+    hover = HoverTool(
+        tooltips=[
+            ('Constituency', '@Constituency'),
+            ('Male Turnout', '@Male{0.2f}%'),
+            ('Female Turnout', '@Female{0.2f}%')
+        ]
+    )
+    fig.add_tools(hover)
+
+    fig.legend.location = 'top_right'
+    fig.legend.label_text_font_size = '10pt'
+
+    return fig
 
