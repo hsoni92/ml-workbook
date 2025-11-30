@@ -26,7 +26,7 @@ def create_constituency_selector(constituencies, default_selection=None):
         value=default_selection,
         options=constituencies,
         width=200,
-        height=150
+        height=250
     )
 
     return widget
