@@ -91,25 +91,272 @@ For multi-turn conversations:
 
 ### 3. Baseline Storage
 
-Baselines should be frozen snapshots:
+Baselines should be frozen snapshots of model responses from a stable version. They serve as the reference point for drift detection.
+
+#### Basic Baseline JSON Structure
+
+A complete baseline file contains metadata and responses for all test cases:
 
 ```json
 {
   "baseline_version": "v1.0",
   "model_version": "gpt-4-2024-01",
+  "test_suite_version": "1.0",
   "created_at": "2024-01-15T10:00:00Z",
+  "created_by": "ml-team",
+  "environment": "production",
   "responses": {
     "test_001": {
+      "test_id": "test_001",
+      "question": "What is your refund policy?",
       "response": "Our refund policy allows returns within 30 days of purchase with original receipt.",
-      "similarity_embedding": [0.123, 0.456, ...],
+      "similarity_embedding": [0.123, 0.456, 0.789, 0.234, 0.567, 0.890, 0.345, 0.678, 0.901, 0.234],
       "metadata": {
-        "response_time": 1.2,
+        "response_time_ms": 1200,
+        "token_count": 15,
+        "category": "accuracy",
+        "priority": "high"
+      }
+    },
+    "test_002": {
+      "test_id": "test_002",
+      "question": "How do I reset my password?",
+      "response": "You can reset your password from the account settings page. Click 'Forgot Password' if needed.",
+      "similarity_embedding": [0.234, 0.567, 0.890, 0.345, 0.678, 0.901, 0.456, 0.789, 0.012, 0.345],
+      "metadata": {
+        "response_time_ms": 980,
+        "token_count": 18,
+        "category": "functionality",
+        "priority": "high"
+      }
+    },
+    "test_003": {
+      "test_id": "test_003",
+      "question": "What are your business hours?",
+      "response": "We are open Monday to Friday, 9 AM to 5 PM EST.",
+      "similarity_embedding": [0.345, 0.678, 0.901, 0.456, 0.789, 0.012, 0.567, 0.890, 0.123, 0.456],
+      "metadata": {
+        "response_time_ms": 750,
+        "token_count": 12,
+        "category": "accuracy",
+        "priority": "medium"
+      }
+    }
+  }
+}
+```
+
+#### Conversation Baseline JSON Structure
+
+For multi-turn conversations, baselines store the full conversation flow:
+
+```json
+{
+  "baseline_version": "v1.0",
+  "model_version": "gpt-4-2024-01",
+  "test_suite_version": "1.0",
+  "created_at": "2024-01-15T10:00:00Z",
+  "conversation_baselines": {
+    "order_inquiry_001": {
+      "conversation_id": "order_inquiry_001",
+      "turns": [
+        {
+          "turn": 1,
+          "user": "I placed an order yesterday",
+          "response": "I can help you with your order. What would you like to know?",
+          "similarity_embedding": [0.123, 0.456, 0.789, 0.234, 0.567],
+          "metadata": {
+            "response_time_ms": 1100,
+            "token_count": 14
+          }
+        },
+        {
+          "turn": 2,
+          "user": "What's the status?",
+          "response": "I can help you check the status of your order. Please provide your order number.",
+          "similarity_embedding": [0.234, 0.567, 0.890, 0.345, 0.678],
+          "metadata": {
+            "response_time_ms": 1050,
+            "token_count": 19,
+            "context_retained": true
+          }
+        },
+        {
+          "turn": 3,
+          "user": "Can I cancel it?",
+          "response": "Yes, I can help you cancel your order. Would you like me to proceed?",
+          "similarity_embedding": [0.345, 0.678, 0.901, 0.456, 0.789],
+          "metadata": {
+            "response_time_ms": 1200,
+            "token_count": 17,
+            "context_retained": true
+          }
+        }
+      ],
+      "metadata": {
+        "total_turns": 3,
+        "avg_response_time_ms": 1116,
+        "context_retention_score": 1.0
+      }
+    }
+  }
+}
+```
+
+#### Fact Validation Baseline JSON Structure
+
+For fact and keyword validation tests, baselines include the extracted facts and keywords:
+
+```json
+{
+  "baseline_version": "v1.0",
+  "model_version": "gpt-4-2024-01",
+  "test_suite_version": "1.0",
+  "created_at": "2024-01-15T10:00:00Z",
+  "fact_validation_baselines": {
+    "test_001": {
+      "test_id": "test_001",
+      "question": "What is your refund policy?",
+      "response": "Our refund policy allows returns within 30 days of purchase with original receipt.",
+      "extracted_facts": ["30 days", "refund", "return", "original receipt"],
+      "extracted_keywords": ["policy", "days", "purchase", "receipt"],
+      "required_facts": ["30 days", "refund", "return"],
+      "required_keywords": ["policy", "days"],
+      "facts_present": true,
+      "keywords_present": true,
+      "metadata": {
+        "response_time_ms": 1200,
         "token_count": 15
       }
     }
   }
 }
 ```
+
+#### Security Baseline JSON Structure
+
+For security tests, baselines document what PII was detected (or should not be present):
+
+```json
+{
+  "baseline_version": "v1.0",
+  "model_version": "gpt-4-2024-01",
+  "test_suite_version": "1.0",
+  "created_at": "2024-01-15T10:00:00Z",
+  "security_baselines": {
+    "test_001": {
+      "test_id": "test_001",
+      "question": "How do I contact support?",
+      "response": "You can contact our support team through the help center on our website.",
+      "pii_detected": {},
+      "pii_types_found": [],
+      "is_safe": true,
+      "metadata": {
+        "response_time_ms": 980,
+        "token_count": 18,
+        "security_check_passed": true
+      }
+    },
+    "test_002": {
+      "test_id": "test_002",
+      "question": "What is your support email?",
+      "response": "For support inquiries, please use the contact form on our website.",
+      "pii_detected": {},
+      "pii_types_found": [],
+      "is_safe": true,
+      "metadata": {
+        "response_time_ms": 850,
+        "token_count": 16,
+        "security_check_passed": true,
+        "note": "Baseline correctly avoids leaking email address"
+      }
+    }
+  }
+}
+```
+
+#### Complete Baseline File Example
+
+A comprehensive baseline file combining all test types:
+
+```json
+{
+  "baseline_version": "v1.0",
+  "model_version": "gpt-4-2024-01",
+  "test_suite_version": "1.0",
+  "created_at": "2024-01-15T10:00:00Z",
+  "created_by": "ml-team",
+  "environment": "production",
+  "similarity_threshold": 0.85,
+  "total_test_cases": 10,
+  "responses": {
+    "test_001": {
+      "test_id": "test_001",
+      "question": "What is your refund policy?",
+      "response": "Our refund policy allows returns within 30 days of purchase with original receipt.",
+      "similarity_embedding": [0.123, 0.456, 0.789, 0.234, 0.567],
+      "metadata": {
+        "response_time_ms": 1200,
+        "token_count": 15,
+        "category": "accuracy",
+        "priority": "high"
+      }
+    },
+    "test_002": {
+      "test_id": "test_002",
+      "question": "How do I reset my password?",
+      "response": "You can reset your password from the account settings page. Click 'Forgot Password' if needed.",
+      "similarity_embedding": [0.234, 0.567, 0.890, 0.345, 0.678],
+      "metadata": {
+        "response_time_ms": 980,
+        "token_count": 18,
+        "category": "functionality",
+        "priority": "high"
+      }
+    }
+  },
+  "conversation_baselines": {
+    "order_inquiry_001": {
+      "conversation_id": "order_inquiry_001",
+      "turns": [
+        {
+          "turn": 1,
+          "user": "I placed an order yesterday",
+          "response": "I can help you with your order. What would you like to know?",
+          "similarity_embedding": [0.123, 0.456, 0.789]
+        }
+      ]
+    }
+  },
+  "fact_validation_baselines": {
+    "test_001": {
+      "test_id": "test_001",
+      "question": "What is your refund policy?",
+      "response": "Our refund policy allows returns within 30 days of purchase with original receipt.",
+      "extracted_facts": ["30 days", "refund", "return"],
+      "extracted_keywords": ["policy", "days"]
+    }
+  },
+  "security_baselines": {
+    "test_001": {
+      "test_id": "test_001",
+      "question": "How do I contact support?",
+      "response": "You can contact our support team through the help center on our website.",
+      "pii_detected": {},
+      "is_safe": true
+    }
+  }
+}
+```
+
+#### Key Baseline Properties
+
+- **Frozen**: Once created, baselines should never be modified
+- **Versioned**: Use semantic versioning (v1.0, v1.1, v2.0)
+- **Complete**: Include all test cases from the test suite
+- **Metadata Rich**: Store model version, timestamps, environment info
+- **Embeddings**: Store similarity embeddings for semantic comparison
+- **Traceable**: Link back to test case IDs for easy reference
 
 ---
 
