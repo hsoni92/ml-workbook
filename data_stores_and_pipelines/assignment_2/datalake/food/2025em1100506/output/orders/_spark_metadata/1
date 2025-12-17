@@ -1,0 +1,3 @@
+v1
+{"path":"file:///datalake/food/2025em1100506/output/orders/date=2025-01-15/part-00000-d7f4841e-44cb-40f7-ae1a-09a0a7f94c8e.c000.snappy.parquet","size":3439,"isDir":false,"modificationTime":1764771953171,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///datalake/food/2025em1100506/output/orders/date=2025-12-03/part-00000-2261fae6-5442-4cf4-9d28-607905c1aeb4.c000.snappy.parquet","size":3116,"isDir":false,"modificationTime":1764771953182,"blockReplication":1,"blockSize":33554432,"action":"add"}

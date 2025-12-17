@@ -1,0 +1,104 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: food_delivery_postgres
+    environment:
+      POSTGRES_DB: food_delivery_db
+      POSTGRES_USER: student
+      POSTGRES_PASSWORD: student123
+      PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./db:/docker-entrypoint-initdb.d  # Auto-run SQL scripts on init
+    networks:
+      - food_delivery_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U student -d food_delivery_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  zookeeper:
+    image: confluentinc/cp-zookeeper:latest
+    container_name: food_delivery_zookeeper
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    ports:
+      - "2181:2181"
+    networks:
+      - food_delivery_network
+    healthcheck:
+      test: ["CMD", "nc", "-z", "localhost", "2181"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  kafka:
+    image: confluentinc/cp-kafka:7.4.0
+    container_name: food_delivery_kafka
+    depends_on:
+      zookeeper:
+        condition: service_healthy
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092,PLAINTEXT_INTERNAL://kafka:29092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_INTERNAL:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT_INTERNAL
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
+    ports:
+      - "9092:9092"
+    volumes:
+      - kafka_data:/var/lib/kafka/data
+    networks:
+      - food_delivery_network
+    healthcheck:
+      test: ["CMD", "kafka-broker-api-versions", "--bootstrap-server", "localhost:9092"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  spark:
+    image: apache/spark-py:latest
+    container_name: food_delivery_spark
+    user: root
+    depends_on:
+      postgres:
+        condition: service_healthy
+      kafka:
+        condition: service_healthy
+    ports:
+      - "8080:8080"  # Spark UI (when jobs are running)
+      - "4040:4040"  # Spark Application UI (default port)
+      - "7077:7077"  # Spark Master (for future use)
+    volumes:
+      - .:/workspace  # Mount entire project
+      - ./datalake:/datalake  # Mount Data Lake directory
+    working_dir: /workspace
+    networks:
+      - food_delivery_network
+    command: >
+      bash -c "
+        pip install psycopg2-binary kafka-python pyyaml &&
+        tail -f /dev/null
+      "
+
+volumes:
+  postgres_data:
+    driver: local
+  kafka_data:
+    driver: local
+
+networks:
+  food_delivery_network:
+    driver: bridge
+
+
+
+
