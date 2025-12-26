@@ -89,6 +89,38 @@ We are 99% confident that the true proportion of users who would upgrade to prem
 
 **Note:** The actual margin of error (0.0518) is very close to the target of 0.05 from part (a), validating our sample size calculation.
 
+#### Concepts
+
+**Key Concepts for Similar Problems:**
+
+1. **Sample Size Determination for Proportions:**
+   - Formula: n = (z²α/2 × p̂(1-p̂)) / E²
+   - When no prior info: use p̂ = 0.5 (most conservative, maximizes sample size)
+   - With prior estimate: use that value for p̂ (may reduce required sample size)
+   - Always round UP to ensure margin of error isn't exceeded
+   - Higher confidence level → larger z-value → larger sample size needed
+   - Smaller margin of error (E) → larger sample size (inverse square relationship)
+
+2. **Confidence Interval Construction:**
+   - Steps: Calculate p̂ → SE → Margin of Error → CI bounds
+   - Standard Error for proportion: SE = √[p̂(1-p̂)/n]
+   - Margin of Error: E = z × SE
+   - Confidence Interval: p̂ ± E
+   - Interpretation: "X% confident true parameter lies in this interval"
+
+3. **Problem-Solving Strategy:**
+   - Identify what you know (sample size, successes, confidence level)
+   - Look up or calculate appropriate z-value from normal table
+   - Apply formulas systematically
+   - Always interpret results in business/practical context
+
+4. **Common Variations You Might See:**
+   - Different confidence levels (90%, 95%, 99%) → different z-values
+   - Mean estimation instead of proportion → use σ/√n for SE
+   - Given sample size, asked to find achievable margin of error
+   - Given margin of error and confidence, solve for sample size
+   - Two-proportion problems (comparing two groups)
+
 ---
 
 ## Question 2: Two-Way ANOVA [9 marks]
@@ -202,6 +234,48 @@ This demonstrates why looking only at main effects would be dangerously misleadi
 
 **Key Learning:** Significant interactions mean we must consider factor combinations, not factors in isolation. Ignoring the interaction could lead to prescribing high-dose New drug, which is actually the worst treatment option!
 
+#### Concepts
+
+**Key Concepts for Similar Problems:**
+
+1. **Two-Way ANOVA Fundamentals:**
+   - Tests three hypotheses: Main effect A, Main effect B, Interaction A×B
+   - Each has its own F-statistic and p-value
+   - Degrees of freedom: Factor A (a-1), Factor B (b-1), Interaction (a-1)(b-1), Error (N-ab)
+   - Mean Square = SS/df, F = MS_effect/MS_error
+
+2. **Understanding Interactions:**
+   - **Interaction exists when:** The effect of one factor depends on the level of another factor
+   - Look for "crossing lines" or "non-parallel lines" in interaction plots
+   - **Significant interaction means:** You CANNOT interpret main effects independently
+   - **When interaction is present:** Analyze simple effects (effect of A at each level of B)
+
+3. **Statistical Significance Hierarchy:**
+   - ALWAYS check interaction first
+   - If interaction is significant → focus on cell means, not main effects
+   - If interaction is NOT significant → interpret main effects
+   - P-value < α → reject null hypothesis (effect exists)
+
+4. **Simpson's Paradox:**
+   - Occurs when aggregated data shows a different pattern than disaggregated data
+   - Averaging can mask important subgroup differences
+   - Always examine cell means, not just marginal means
+   - In this problem: dosage effect cancels out overall but is strong within groups
+
+5. **Problem-Solving Strategy:**
+   - Step 1: Examine the means table for patterns
+   - Step 2: Check interaction p-value first
+   - Step 3: If interaction significant → analyze combinations
+   - Step 4: Provide practical recommendations based on cell means
+   - Step 5: Explain what the statistics mean for decision-making
+
+6. **Common Variations:**
+   - Unbalanced designs (different sample sizes per cell)
+   - Three-way ANOVA (three factors)
+   - Repeated measures ANOVA (within-subjects factors)
+   - Mixed ANOVA (between and within factors)
+   - Post-hoc tests when factors have >2 levels
+
 ---
 
 ## Question 3: Multiple Regression and Time Series Forecasting [9 marks]
@@ -301,6 +375,54 @@ Instead of removing Footfall, the team should:
 - Collect more data to increase power
 - Keep both predictors for comprehensive revenue modeling
 
+#### Concepts - Part (a)
+
+**Key Concepts for Similar Problems:**
+
+1. **Multiple Regression Fundamentals:**
+   - Model form: Y = β₀ + β₁X₁ + β₂X₂ + ... + ε
+   - Each βᵢ represents change in Y for 1-unit change in Xᵢ, holding others constant
+   - Assumptions: linearity, independence, homoscedasticity, normality of errors
+
+2. **Overall Model Testing (F-test):**
+   - H₀: β₁ = β₂ = ... = βₖ = 0 (no predictors matter)
+   - H₁: At least one βᵢ ≠ 0
+   - Reject H₀ if p-value < α → model has predictive value
+   - R² shows proportion of variance explained (0 to 1)
+   - Adjusted R² penalizes for adding unnecessary predictors
+
+3. **Individual Predictor Testing (t-test):**
+   - For each coefficient: H₀: βᵢ = 0 vs H₁: βᵢ ≠ 0
+   - t-statistic = Estimate / Std. Error
+   - Significant if p-value < α
+   - **Important:** A predictor can be non-significant even if overall model is significant
+
+4. **Variable Selection Dilemma:**
+   - **Don't blindly remove non-significant predictors because:**
+     - Marginal significance (p close to α) suggests borderline importance
+     - Practical/theoretical importance may outweigh statistical significance
+     - Multicollinearity inflates standard errors → makes predictors appear non-significant
+     - Removing variables reduces model's explanatory power
+   - **Consider removing if:**
+     - p-value is very large (e.g., > 0.20)
+     - No theoretical justification for inclusion
+     - Causes interpretation problems
+     - Compare models using AIC, BIC, or cross-validation
+
+5. **Multicollinearity Effects:**
+   - When predictors are correlated with each other
+   - Inflates standard errors → larger p-values
+   - Makes coefficients unstable
+   - Check using VIF (Variance Inflation Factor): VIF > 10 is problematic
+   - Solutions: remove one correlated predictor, combine them, or use regularization
+
+6. **Problem-Solving Strategy:**
+   - Step 1: Check overall F-test (is model useful?)
+   - Step 2: Check individual t-tests (which predictors matter?)
+   - Step 3: Consider practical significance, not just statistical
+   - Step 4: Examine model diagnostics (R², Adjusted R²)
+   - Step 5: Make recommendation based on both statistics and context
+
 ---
 
 ### Part (b) [5 marks]
@@ -374,6 +496,75 @@ Holt-Winters (Triple Exponential Smoothing) captures **three components:**
 - **Moving Average:** When you want smooth, stable forecasts and equal treatment of recent history
 - **Exponential Smoothing:** When you want adaptive forecasts that respond quickly to recent changes
 - **Holt-Winters:** When you have trend and seasonality that must be modeled explicitly
+
+#### Concepts - Part (b)
+
+**Key Concepts for Similar Problems:**
+
+1. **Time Series Components:**
+   - **Level (L):** Average value around which series fluctuates
+   - **Trend (T):** Long-term increase or decrease
+   - **Seasonality (S):** Regular, periodic patterns (daily, monthly, quarterly, yearly)
+   - **Irregular (I):** Random fluctuations/noise
+   - Decomposition: Additive (Y = L + T + S + I) or Multiplicative (Y = L × T × S × I)
+
+2. **Exponential Smoothing Methods Hierarchy:**
+
+   | Method | Level | Trend | Seasonality | Use When |
+   |--------|-------|-------|-------------|----------|
+   | Simple ES | ✓ | ✗ | ✗ | Flat series, no pattern |
+   | Holt's | ✓ | ✓ | ✗ | Trend but no seasonality |
+   | Holt-Winters | ✓ | ✓ | ✓ | Trend AND seasonality |
+
+3. **Exponential Smoothing Characteristics:**
+   - Weights decline exponentially: most recent gets highest weight
+   - Uses all historical data (unlike moving average)
+   - Parameters: α (level), β (trend), γ (seasonality), each in [0,1]
+   - Higher α = more responsive to recent changes
+   - Lower α = more smoothing, less reactive
+
+4. **Moving Average vs Exponential Smoothing:**
+
+   | Aspect | Moving Average | Exponential Smoothing |
+   |--------|----------------|----------------------|
+   | Weighting | Equal for all k observations | Exponentially decreasing |
+   | Data used | Only last k observations | All historical data |
+   | Parameters | Window size (k) | Smoothing constant (α) |
+   | Responsiveness | Moderate | Tunable (via α) |
+   | Simplicity | Very simple | More complex |
+   | Lag | Higher lag | Lower lag |
+
+5. **Choosing the Right Method:**
+   - **Examine the data pattern first:**
+     - No trend/seasonality → Simple ES or MA
+     - Trend only → Holt's method
+     - Seasonality only → Seasonal ES
+     - Both trend and seasonality → Holt-Winters
+   - **Consider:**
+     - Need for responsiveness vs stability
+     - Interpretability requirements
+     - Computational resources
+     - Forecast horizon
+
+6. **Forecast Evaluation:**
+   - Split data: training and test sets
+   - Common metrics: MAE, RMSE, MAPE
+   - Compare methods on holdout data
+   - Check residuals for patterns (should be random)
+
+7. **Problem-Solving Strategy:**
+   - Step 1: Identify time series components (plot the data)
+   - Step 2: Match method to pattern
+   - Step 3: Explain what each component captures
+   - Step 4: Justify why simpler methods are inadequate
+   - Step 5: Discuss trade-offs between different approaches
+
+8. **Common Exam Variations:**
+   - Identify appropriate method given data description
+   - Explain why method X is better than method Y
+   - Calculate forecasts given smoothing parameters
+   - Interpret smoothing parameters
+   - Compare moving average windows (3-month vs 6-month)
 
 ---
 
@@ -456,6 +647,60 @@ Solving for p:
 4. **Statistical Note:** The MLE is unbiased and efficient, giving us the "best" estimate given the data. With 30 users, we have reasonable confidence, though a larger sample would provide more precision.
 
 5. **Risk Assessment:** Even accounting for sampling variability, the true proportion is likely well above 50%, making this a viable feature for broad release.
+
+#### Concepts - Part (a)
+
+**Key Concepts for Similar Problems:**
+
+1. **Maximum Likelihood Estimation (MLE) Framework:**
+   - **Goal:** Find parameter value that maximizes probability of observing the data
+   - **General steps:**
+     1. Write likelihood function L(θ) based on probability distribution
+     2. Take log to get log-likelihood ℓ(θ)
+     3. Differentiate: dℓ/dθ = 0
+     4. Solve for θ̂ (MLE)
+     5. Verify it's maximum (second derivative < 0)
+   - **Properties:** Unbiased (large samples), efficient, consistent
+
+2. **Common Distributions for MLE:**
+   - **Bernoulli/Binomial (proportions):** L(p) = pˣ(1-p)ⁿ⁻ˣ → p̂ = x/n
+   - **Poisson (count data):** L(λ) = e⁻ⁿλ·λ^Σxᵢ → λ̂ = x̄
+   - **Normal (continuous data):** Solve for μ̂ = x̄, σ̂² = Σ(xᵢ-x̄)²/n
+   - **Exponential (time/failure data):** λ̂ = 1/x̄
+
+3. **Why Log-Likelihood?**
+   - Products become sums (easier to differentiate)
+   - Prevents numerical underflow (probabilities are small)
+   - Maximizing log(L) ≡ maximizing L (logarithm is monotonic)
+   - Simplifies algebra significantly
+
+4. **Derivative Tricks for Common Terms:**
+   - d/dp[ln(p)] = 1/p
+   - d/dp[ln(1-p)] = -1/(1-p)
+   - Set derivative = 0, then solve algebraically
+   - Cross-multiply to eliminate fractions
+
+5. **Interpreting MLE Results:**
+   - MLE gives point estimate (single best value)
+   - For proportions: x/n is intuitive (sample proportion)
+   - Consider uncertainty (confidence intervals)
+   - Context matters for "good" vs "bad" estimate
+
+6. **Problem-Solving Strategy:**
+   - Step 1: Identify the distribution (Bernoulli, Normal, Poisson, etc.)
+   - Step 2: Write likelihood (product of individual probabilities)
+   - Step 3: Take natural log (convert products to sums)
+   - Step 4: Differentiate and set = 0
+   - Step 5: Solve for parameter
+   - Step 6: Verify with second derivative (optional but good practice)
+   - Step 7: Interpret in context
+
+7. **Common Exam Variations:**
+   - Different distributions (Poisson, Exponential, Normal)
+   - Multiple parameters (μ and σ² for Normal)
+   - Censored or truncated data
+   - Asked to show MLE is unbiased
+   - Compare MLE to method of moments estimator
 
 ---
 
@@ -586,6 +831,107 @@ Logistic regression is appropriate because:
 4. ✅ Provides interpretable odds ratios (e^(-0.08) ≈ 0.923 = 7.7% decrease in odds per year)
 
 Using linear regression for binary outcomes is statistically inappropriate and can lead to nonsensical predictions and invalid inference.
+
+#### Concepts - Part (b)
+
+**Key Concepts for Similar Problems:**
+
+1. **Logistic Regression Fundamentals:**
+   - **Response variable:** Binary (0/1, yes/no, success/failure)
+   - **Model form:** log(odds) = β₀ + β₁X₁ + β₂X₂ + ...
+   - **Odds:** P(Y=1) / P(Y=0) = p/(1-p)
+   - **Log-odds (logit):** ln[p/(1-p)] = linear combination of predictors
+   - **Probability formula:** P(Y=1) = 1 / (1 + e^(-(β₀ + β₁X)))
+
+2. **Converting Between Representations:**
+   - **Log-odds → Odds:** odds = e^(log-odds)
+   - **Log-odds → Probability:** p = e^(log-odds) / (1 + e^(log-odds))
+   - **Alternative:** p = 1 / (1 + e^(-log-odds))
+   - **Probability → Odds:** odds = p/(1-p)
+   - **Odds → Probability:** p = odds/(1+odds)
+
+3. **Interpreting Coefficients:**
+   - **β₁ > 0:** As X increases, probability of Y=1 increases
+   - **β₁ < 0:** As X increases, probability of Y=1 decreases
+   - **Odds ratio:** e^β₁ = change in odds for 1-unit increase in X
+   - **Example:** β₁ = -0.08 → OR = e^(-0.08) ≈ 0.923
+   - Interpretation: 1-year age increase multiplies odds by 0.923 (7.7% decrease)
+
+4. **Why NOT Linear Regression for Binary Outcomes:**
+
+   **Problem 1: Invalid Predictions**
+   - Linear regression: Ŷ = β₀ + β₁X (can be any value)
+   - Binary outcome needs: 0 ≤ P(Y=1) ≤ 1
+   - Linear model produces predictions < 0 or > 1 (nonsensical probabilities)
+
+   **Problem 2: Heteroscedasticity**
+   - Binary data: Variance = p(1-p)
+   - Variance depends on predicted value (not constant)
+   - Violates OLS assumption of homoscedasticity
+   - Results: inefficient estimates, wrong standard errors, invalid tests
+
+   **Problem 3: Non-normal Errors**
+   - Binary outcomes produce bimodal residuals (not normal)
+   - Only two possible residual values for each prediction
+   - Violates normality assumption
+   - Invalidates hypothesis tests and confidence intervals
+
+   **Problem 4: Wrong Distributional Assumption**
+   - Binary outcomes follow Bernoulli/Binomial distribution
+   - Linear regression assumes normal distribution
+   - Logistic uses appropriate binomial likelihood
+
+5. **The Logistic (Sigmoid) Function:**
+   - S-shaped curve
+   - Asymptotically approaches 0 and 1
+   - Steepest at p = 0.5
+   - Symmetric around midpoint
+   - Always outputs valid probabilities
+
+6. **Making Predictions:**
+   - Step 1: Calculate log-odds using regression equation
+   - Step 2: Convert to probability using logistic function
+   - Step 3: Apply decision rule (often p > 0.5 → predict 1, else 0)
+   - Step 4: Interpret in context
+
+7. **Model Fitting:**
+   - Uses Maximum Likelihood Estimation (not OLS)
+   - Maximizes binomial likelihood
+   - No closed-form solution (iterative methods like Newton-Raphson)
+   - Produces coefficient estimates and standard errors
+
+8. **Model Evaluation:**
+   - **Accuracy:** Proportion correctly classified
+   - **Confusion matrix:** True/False positives/negatives
+   - **ROC curve and AUC:** Trade-off between sensitivity and specificity
+   - **Likelihood ratio test:** Compare nested models
+   - **Pseudo-R²:** Various versions (McFadden's, Nagelkerke's)
+
+9. **Problem-Solving Strategy:**
+   - Step 1: Recognize binary outcome → use logistic regression
+   - Step 2: Given model, substitute X value into equation
+   - Step 3: Calculate log-odds
+   - Step 4: Convert to probability using logistic function
+   - Step 5: Interpret probability in context
+   - Step 6: If asked why not linear regression, cite: invalid probabilities, heteroscedasticity, non-normal errors
+
+10. **Common Exam Variations:**
+    - Multiple predictors: log(odds) = β₀ + β₁X₁ + β₂X₂ + ...
+    - Interpret odds ratios
+    - Calculate probability for given predictor values
+    - Explain advantages over linear probability model
+    - Probit regression (uses normal CDF instead of logistic)
+    - Multinomial logistic (>2 categories)
+    - Calculate classification accuracy
+    - Derive MLE for logistic regression
+
+11. **Quick Reference - Probability Calculation:**
+    ```
+    Given: log(odds) = β₀ + β₁X
+    Step 1: Compute z = β₀ + β₁X
+    Step 2: P(Y=1) = 1 / (1 + e^(-z))
+    Or: P(Y=1) = e^z / (1 + e^z)
+    ```
 
 ---
 
