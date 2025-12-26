@@ -19,106 +19,7 @@ A mobile app company wants to estimate the proportion of users who would upgrade
 ### Part (a) [5 marks]
 The company wants to estimate the true proportion of potential upgraders with 99% confidence and a margin of error of no more than 0.05. If no prior information is available about user preferences, what sample size should be used?
 
-### Part (b) [4 marks]
-After conducting the full survey, the company found that 156 out of 520 users indicated they would upgrade to premium. Construct a 99% confidence interval for the true proportion of users who would upgrade. Interpret this confidence interval in the context of the business decision the company needs to make.
-
----
-
-## Question 2: Two-Way ANOVA [9 marks]
-
-### Context
-A pharmaceutical researcher is investigating the effects of two factors on patient recovery time (in days): Drug Type (Standard vs. New) and Dosage Level (Low vs. High). The researcher measures recovery times and obtains the following results:
-
-### Mean Recovery Times (days)
-
-| Drug Type | Low Dosage | High Dosage | Overall Mean |
-|-----------|------------|-------------|--------------|
-| Standard  | 14         | 10          | 12.0         |
-| New       | 8          | 12          | 10.0         |
-| **Overall Mean** | **11.0** | **11.0** | **11.0** |
-
-### Two-Way ANOVA Results
-
-| Source | SS | df | MS | F-stat | P-value |
-|--------|-----|----|----|--------|---------|
-| Drug Type | 16.0 | 1 | 16.0 | 3.56 | 0.082 |
-| Dosage Level | 0.0 | 1 | 0.0 | 0.00 | 1.000 |
-| Interaction (Drug × Dosage) | 64.0 | 1 | 64.0 | 14.22 | 0.003 |
-| Error | 54.0 | 12 | 4.5 | | |
-| Total | 134.0 | 15 | | | |
-
-### Part (a) [4 marks]
-Looking at the mean recovery times table, describe the pattern you observe. How do recovery times change with drug type and dosage level? Using α = 0.05, interpret the ANOVA results for the main effects (Drug Type and Dosage Level) and the interaction effect. Which effects are statistically significant?
-
-### Part (b) [5 marks]
-Explain what the significant interaction effect means in practical terms for this pharmaceutical study. The overall mean for Dosage Level is exactly the same (11.0 for both Low and High), yet we see very different recovery times within each drug type. Explain this paradox and discuss how the researcher should interpret these findings when making recommendations about drug prescription.
-
----
-
-## Question 3: Multiple Regression and Time Series Forecasting [9 marks]
-
-### Context
-A retail analytics team wants to predict monthly revenue (in lakhs Rs.) based on marketing spend (in lakhs Rs.) and store footfall (in thousands). Using data from 18 months, the following regression model was fitted:
-
-**Revenue = β₀ + β₁(Marketing) + β₂(Footfall) + ε**
-
-### Regression Output
-
-| Coefficient | Estimate | Std. Error | t-statistic | P-value |
-|-------------|----------|------------|-------------|---------|
-| Intercept (β₀) | 8.2 | 2.5 | 3.28 | 0.005 |
-| Marketing (β₁) | 2.4 | 0.6 | 4.00 | 0.001 |
-| Footfall (β₂) | 1.8 | 0.9 | 2.00 | 0.064 |
-
-**Additional Information:**
-- R² = 0.78
-- Adjusted R² = 0.75
-- Overall F-test p-value = 0.0002
-
-### Part (a) [4 marks]
-At α = 0.05 significance level, examine whether the overall regression model is significant. Then, analyze the individual t-tests for each predictor variable. Are both Marketing spend and Footfall significant predictors of Revenue? The manager suggests removing Footfall to simplify the model. Based on the statistical output, would you recommend this? Justify your answer.
-
-### Part (b) [5 marks]
-If the revenue data shows a clear upward trend with quarterly seasonal patterns, explain why Holt-Winters exponential smoothing would be more appropriate than simple exponential smoothing for forecasting future revenue. Describe what specific components Holt-Winters captures that simple exponential smoothing cannot. Also, explain one advantage and one disadvantage of using a 3-month moving average compared to exponential smoothing methods.
-
----
-
-## Question 4: Maximum Likelihood Estimation and Logistic Regression [8 marks]
-
-### Context
-A technology company conducted a product trial where 30 users tested a new software feature, and 21 of them found it useful and continued using it.
-
-### Part (a) [4 marks]
-Using Maximum Likelihood Estimation (MLE), derive the estimate for the probability (p) that a user will find the feature useful. Show your complete derivation including:
-1. The likelihood function
-2. The log-likelihood function
-3. The derivative and solution
-
-Interpret what this estimate tells the company about the feature's potential success.
-
-### Part (b) [4 marks]
-The company also wants to predict whether a user will adopt the feature based on their age. Historical data shows the following pattern:
-
-| Age (years) | 22 | 25 | 28 | 32 | 38 | 42 | 48 | 52 | 58 | 62 |
-|-------------|----|----|----|----|----|----|----|----|----|----|
-| Adopted     | 1  | 1  | 1  | 1  | 1  | 0  | 0  | 0  | 0  | 0  |
-
-*(1 = adopted, 0 = did not adopt)*
-
-After fitting a logistic regression model: **log(odds) = 3.2 − 0.08 × Age**
-
-Calculate the probability that a 35-year-old user will adopt the feature using the logistic function. Then explain why logistic regression is more appropriate than linear regression for this problem, discussing at least two specific issues that would arise if ordinary linear regression were used instead.
-
----
----
-
-# ANSWERS WITH DETAILED EXPLANATIONS
-
----
-
-## Answer 1: Confidence Intervals and Sample Size Estimation
-
-### Part (a) - Sample Size Calculation [5 marks]
+#### Answer - Part (a) [5 marks]
 
 **Given Information:**
 - Confidence level: 99% (α = 0.01)
@@ -149,7 +50,10 @@ Substituting values:
 
 ---
 
-### Part (b) - Confidence Interval Construction [4 marks]
+### Part (b) [4 marks]
+After conducting the full survey, the company found that 156 out of 520 users indicated they would upgrade to premium. Construct a 99% confidence interval for the true proportion of users who would upgrade. Interpret this confidence interval in the context of the business decision the company needs to make.
+
+#### Answer - Part (b) [4 marks]
 
 **Given Information:**
 - Sample size: n = 520
@@ -187,9 +91,33 @@ We are 99% confident that the true proportion of users who would upgrade to prem
 
 ---
 
-## Answer 2: Two-Way ANOVA
+## Question 2: Two-Way ANOVA [9 marks]
 
-### Part (a) - ANOVA Interpretation [4 marks]
+### Context
+A pharmaceutical researcher is investigating the effects of two factors on patient recovery time (in days): Drug Type (Standard vs. New) and Dosage Level (Low vs. High). The researcher measures recovery times and obtains the following results:
+
+### Mean Recovery Times (days)
+
+| Drug Type | Low Dosage | High Dosage | Overall Mean |
+|-----------|------------|-------------|--------------|
+| Standard  | 14         | 10          | 12.0         |
+| New       | 8          | 12          | 10.0         |
+| **Overall Mean** | **11.0** | **11.0** | **11.0** |
+
+### Two-Way ANOVA Results
+
+| Source | SS | df | MS | F-stat | P-value |
+|--------|-----|----|----|--------|---------|
+| Drug Type | 16.0 | 1 | 16.0 | 3.56 | 0.082 |
+| Dosage Level | 0.0 | 1 | 0.0 | 0.00 | 1.000 |
+| Interaction (Drug × Dosage) | 64.0 | 1 | 64.0 | 14.22 | 0.003 |
+| Error | 54.0 | 12 | 4.5 | | |
+| Total | 134.0 | 15 | | | |
+
+### Part (a) [4 marks]
+Looking at the mean recovery times table, describe the pattern you observe. How do recovery times change with drug type and dosage level? Using α = 0.05, interpret the ANOVA results for the main effects (Drug Type and Dosage Level) and the interaction effect. Which effects are statistically significant?
+
+#### Answer - Part (a) [4 marks]
 
 **Pattern in Mean Recovery Times:**
 
@@ -220,7 +148,10 @@ Only the interaction effect is statistically significant. Neither main effect is
 
 ---
 
-### Part (b) - Interaction Effect Explanation [5 marks]
+### Part (b) [5 marks]
+Explain what the significant interaction effect means in practical terms for this pharmaceutical study. The overall mean for Dosage Level is exactly the same (11.0 for both Low and High), yet we see very different recovery times within each drug type. Explain this paradox and discuss how the researcher should interpret these findings when making recommendations about drug prescription.
+
+#### Answer - Part (b) [5 marks]
 
 **Understanding the Significant Interaction:**
 
@@ -273,9 +204,30 @@ This demonstrates why looking only at main effects would be dangerously misleadi
 
 ---
 
-## Answer 3: Multiple Regression and Time Series Forecasting
+## Question 3: Multiple Regression and Time Series Forecasting [9 marks]
 
-### Part (a) - Regression Model Assessment [4 marks]
+### Context
+A retail analytics team wants to predict monthly revenue (in lakhs Rs.) based on marketing spend (in lakhs Rs.) and store footfall (in thousands). Using data from 18 months, the following regression model was fitted:
+
+**Revenue = β₀ + β₁(Marketing) + β₂(Footfall) + ε**
+
+### Regression Output
+
+| Coefficient | Estimate | Std. Error | t-statistic | P-value |
+|-------------|----------|------------|-------------|---------|
+| Intercept (β₀) | 8.2 | 2.5 | 3.28 | 0.005 |
+| Marketing (β₁) | 2.4 | 0.6 | 4.00 | 0.001 |
+| Footfall (β₂) | 1.8 | 0.9 | 2.00 | 0.064 |
+
+**Additional Information:**
+- R² = 0.78
+- Adjusted R² = 0.75
+- Overall F-test p-value = 0.0002
+
+### Part (a) [4 marks]
+At α = 0.05 significance level, examine whether the overall regression model is significant. Then, analyze the individual t-tests for each predictor variable. Are both Marketing spend and Footfall significant predictors of Revenue? The manager suggests removing Footfall to simplify the model. Based on the statistical output, would you recommend this? Justify your answer.
+
+#### Answer - Part (a) [4 marks]
 
 **1. Overall Model Significance:**
 
@@ -351,7 +303,10 @@ Instead of removing Footfall, the team should:
 
 ---
 
-### Part (b) - Time Series Methods [5 marks]
+### Part (b) [5 marks]
+If the revenue data shows a clear upward trend with quarterly seasonal patterns, explain why Holt-Winters exponential smoothing would be more appropriate than simple exponential smoothing for forecasting future revenue. Describe what specific components Holt-Winters captures that simple exponential smoothing cannot. Also, explain one advantage and one disadvantage of using a 3-month moving average compared to exponential smoothing methods.
+
+#### Answer - Part (b) [5 marks]
 
 **Why Holt-Winters over Simple Exponential Smoothing:**
 
@@ -422,9 +377,20 @@ Holt-Winters (Triple Exponential Smoothing) captures **three components:**
 
 ---
 
-## Answer 4: Maximum Likelihood Estimation and Logistic Regression
+## Question 4: Maximum Likelihood Estimation and Logistic Regression [8 marks]
 
-### Part (a) - MLE Derivation [4 marks]
+### Context
+A technology company conducted a product trial where 30 users tested a new software feature, and 21 of them found it useful and continued using it.
+
+### Part (a) [4 marks]
+Using Maximum Likelihood Estimation (MLE), derive the estimate for the probability (p) that a user will find the feature useful. Show your complete derivation including:
+1. The likelihood function
+2. The log-likelihood function
+3. The derivative and solution
+
+Interpret what this estimate tells the company about the feature's potential success.
+
+#### Answer - Part (a) [4 marks]
 
 **Given Information:**
 - n = 30 users tested the feature
@@ -493,7 +459,20 @@ Solving for p:
 
 ---
 
-### Part (b) - Logistic Regression Application [4 marks]
+### Part (b) [4 marks]
+The company also wants to predict whether a user will adopt the feature based on their age. Historical data shows the following pattern:
+
+| Age (years) | 22 | 25 | 28 | 32 | 38 | 42 | 48 | 52 | 58 | 62 |
+|-------------|----|----|----|----|----|----|----|----|----|----|
+| Adopted     | 1  | 1  | 1  | 1  | 1  | 0  | 0  | 0  | 0  | 0  |
+
+*(1 = adopted, 0 = did not adopt)*
+
+After fitting a logistic regression model: **log(odds) = 3.2 − 0.08 × Age**
+
+Calculate the probability that a 35-year-old user will adopt the feature using the logistic function. Then explain why logistic regression is more appropriate than linear regression for this problem, discussing at least two specific issues that would arise if ordinary linear regression were used instead.
+
+#### Answer - Part (b) [4 marks]
 
 **Part 1: Probability Calculation for 35-year-old**
 
@@ -610,4 +589,4 @@ Using linear regression for binary outcomes is statistically inappropriate and c
 
 ---
 
-# END OF ANSWERS
+# END OF PAPER
