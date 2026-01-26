@@ -1,0 +1,51 @@
+Hello to all of you. My name is Dr. Hemant Rathore and we are in the course Machine Learning. We are in module 1, Introduction of Machine Learning and we are discussing video 4, Practical Considerations in Machine Learning.
+
+So the learning objective of this video is we are going to look into the real-world challenges faced in machine learning projects and what are the important issues we have to think about when we build a machine learning project. So when we build a machine learning project, it might be a supervised learning project or an unsupervised learning project. It might be a classification project or a regression project.
+
+It might be a cross-training project or an association rule mining project. What are the challenges faced in the machine learning project is what we are going to discuss now. So building an effective and efficient machine learning system to navigate through these challenges.
+
+The machine learning model should be scalable. It should be able to handle complex and heterogeneous data. It should be able to handle data ownership and distribution issues.
+
+It should be able to handle high dimensional data. It should be able to handle poor quality of data. It should not have any privacy preservation issues.
+
+So let's discuss these issues which we have to keep in mind whenever we build any machine learning project. So the first thing is the machine learning model which we are going to build, be it a classification, regression, unsupervised learning model, it should be scalable. Scalability should not be an issue with your project.
+
+So what do you mean by scalability? So if the data is growing exponentially, right? So let's suppose your model is built on 100 data points and suddenly you are passing it 1 lakh data points. The model or the pipeline should be able to handle it. So if the data is growing exponentially, the algorithm should work perfectly fine even with thousand records or maybe 1 billion records, right? So whatever algorithm, if you are writing an algorithm or you are building a model, it should be scalable.
+
+It should be able to handle 100 points. It should be able to handle 1 billion points. So the algorithm must be efficient and effective in terms of processing and memory usage if we deploy it in the real world.
+
+So scalability should not be an issue. If you pass limited data, if you pass a huge amount of the data, the algorithm and the model should scale appropriately. The second challenge in the machine learning domain is dimensionality, right? Sometimes we have high dimensional data.
+
+Many machine learning algorithms and models perform very poorly when we pass it a high dimensional data. So dimensionality refers to the number of features and attributes I have in the dataset. So if you remember, if I have a tabular dataset like this, the number of columns which we are talking about here is essentially dimensions or attributes or features.
+
+If the number of dimensions are high, the algorithm and the model should be able to handle it properly. So if the algorithm performs very slowly with high dimensional data, then the algorithm quality is poor. Or if the model is performing very poorly with high dimensional data, then the quality of the model is also poor.
+
+So the amount of data needed to support the result should grow as the number of dimensions. These should not be disproportionate. So if they are disproportionate, there is another issue that opens up which is called sparsity.
+
+That means very less number of data points contain enough information, right? So if the dataset is sparse and it is high dimensional, it is very extremely hard for any algorithm to build a model on it. So dimensionality means, right, your model or algorithm should be able to handle high dimensional data. And if it is sparse data also, the algorithm should be able to handle it.
+
+The third challenge in the data science or machine learning domain is your algorithm or the pipeline should be able to handle data from heterogeneous sources and also complex data. So real data is coming from various sources and it is always very complex. So data coming from various sources, that means heterogeneous data, that means you have information in audio form, video form, textual form, or maybe from sensors.
+
+Now, sensors, now you have to aggregate the data, integrate the data. So all these are heterogeneous data. You have to first integrate the data and that might lead to a complex data or sometimes data is generated in a complex fashion only.
+
+So the algorithm and model should be able to handle that as well. So the ML pipeline must be able to handle and integrate data from heterogeneous sources effectively and efficiently. It should be able to handle complex data effectively and efficiently as well.
+
+Fourth issue in machine learning pipeline is the data quality. Real world data is always of poor quality, right? That means there might be noise in the data, there might be outliers in the data, there might be some missing values in the data, there might be inconsistencies in the data, right? So all this we have seen in the data pre-processing course. So real world data is always of poor quality.
+
+The machine learning pipeline should be able to fix all these challenges such that the final knowledge which I am going to get should be of appropriate nature. So the quality of your model or the pipeline entirely depends on the quality of the data which is getting into the system or which is the input to the system. In real world, the significant portion of an ML project, roughly 80 percent time is spent on the data cleaning and preparation.
+
+So building a machine learning model is a small part but the pipeline should be able to handle data quality issues. So we have to do proper data cleaning, data integration, handling missing values, handling noisy data, handling outliers etc etc. The ML pipeline should be able to do that.
+
+The ML pipeline should be able to handle data ownership and distribution issues. So since we are collecting data from various sources, since we are collecting data from heterogeneous sources, various sources, right? Data ownership might become an issue, right? Two departments might not be comfortable in sharing data among themselves. So my machine learning model, if I integrate the data, right? It should be done very carefully so that the ownership issues doesn't come up and the distribution is proper, right? So in a large organization, data is stored in various forms, in various silos, right? One department might not share the data to another department.
+
+That will lead to incomplete view of the data. So what if you want unified view to the data, right? We have to do data integration. But when we do data integration, data in ownership should be clearly defined and it should not lead to any political or technical challenges.
+
+So this is another fifth challenge. Sixth challenge, privacy issue, right? If data is coming from various sources, right? Privacy is a big problem because if the data is stolen, then someone should be responsible for it. So the problem here is many data sets contain sensitive and personal information and we need to store them ethically, in a legally, in a protected environment, right? Today, a lot of laws like GDPR is there to protect user's data and if you build a model on it and if the original data is stolen or the model is stolen, then prevention becomes a big issue and today it is bounded by law as well, right? We should be, the ML pipeline should be able to handle streaming data, right? Data might be coming in multiple forms, sometimes a streaming data, right? Sensor data or maybe a social media data or finance data, it is continuously flowing in.
+
+Traditional algorithm might not be able to handle it. So the ML pipeline should be able to handle different types of data, streaming data, static data, fixed data, dynamic data, right? Image data, video data, etc, etc. The ML pipeline should be able to handle it in real world situations.
+
+So in this module, we discussed four lessons, four videos. Lesson one was focused on defining what machine learning is and the basic pipeline of machine learning. Module two or lesson two or video two was focused on supervised learning and different types of supervised learning algorithms like classification and regression, which is done on label data.
+
+Lesson three was focused on unsupervised learning, which is to find patterns and structure in the data and the different algorithms are clustering and association rule mining. And video four was about real-world challenges in implementing any ML pipeline. In summary, in this video, we looked into right different challenges in a machine learning pipeline.
+
+Take care. Bye-bye.

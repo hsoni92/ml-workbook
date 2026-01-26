@@ -1,2 +1,0 @@
-item_id,units_sold,revenue,sale_date,dataset_name,dq_failure_reason,quarantine_timestamp
-,601,6.909697503E7,2025-09-19,company_sales,missing_item_id,2025-11-18T16:14:31.381105

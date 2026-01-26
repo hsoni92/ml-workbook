@@ -1,0 +1,1 @@
+from xyz.txt  video transcription make notes for studying for my trimester exam in md format

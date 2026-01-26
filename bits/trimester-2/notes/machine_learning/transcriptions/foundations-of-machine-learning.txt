@@ -1,0 +1,155 @@
+Hello to all of you, my name is Dr. Hemant Rathor and welcome to the Machine Learning course. Today we are going to start with Module 1, Introduction of Machine Learning. This video is focused on Foundations of Machine Learning.
+
+So the learning objective of this video is, first we are going to define what Machine Learning is and its relationship to Data Science and Artificial Intelligence. Then we are going to identify the key stages of building standard Machine Learning workflow. So let's start right away.
+
+Why do we need Machine Learning? Today, data is constantly being collected, generated and collected from countless sources. Think about a scenario, 10 years back, when you want to take a photograph, you will take a physical camera, take a photograph and take a printout. So that was a physical experience.
+
+Today, if you want to take a photograph, you will start your mobile phone, take a picture and store it on a cloud. So that physical experience today is converted into a digital experience. And this is not only true with photographs, but with various other processes in our life.
+
+For example, today in businesses, a lot of physical experiences are converted into digital experiences. For example, in e-commerce, previously if you want to purchase a book, you will actually go to a bookstore and then purchase a physical book. Today, if you want to purchase a book, you go to Amazon, Flipkart and order the book online.
+
+So again a physical experience of purchasing a book converted from physical experience to a digital experience. Earlier, if you wanted to search a topic, you will physically go to a library, open a few books, physically search for a particular topic and then read the topic. Today, if you want to read or understand a topic, you go to the web and then search it on Google or some other platform.
+
+So a physical experience again converted into a digital experience. Stock market trading, earlier if you want to purchase a stock, you will go to a stock broker and physically do the transaction. Now if you want to purchase a stock, you will open an application like Zerodha or anything else and will purchase a stock.
+
+So a lot of these physical experiences are now converted into digital experience. Because of this, now data is constantly being collected from various sources. Now the data storage capability has also increased drastically.
+
+20 years back, if I want to store a data, it was very costly. Even the storage capability was very less. For example, when I first bought my first machine in 2000, the disk HDD capacity was 6 GB or was 8 GB.
+
+Today, I have a phone which has memory in terms of 128 GB. And I have a machine which has storage capability in petabytes. So a lot of physical experiences have been converted into digital experiences.
+
+The data which is getting generated, now storage has also improved drastically. And which has led to large volume of data being generated. When we have large amount of data, we are drowning in data.
+
+If we start asking questions from the data, we are not getting it. That is why we are starving for knowledge. So data generation in other areas is also increased.
+
+For example, today because of scientific simulation, bioinformatics, remote sensing, lot of data is generated. In society also, earlier if you want to communicate, you will physically go to someone's house and then talk. Today you have social media which can enable digital form of communication.
+
+Earlier if you want to read news, you will have a physical newspaper. To read the news, you go to Google News and read the news and so on. So lot of these physical experiences now is converted into digital experiences.
+
+These digital experiences are constantly generating very large amount of data. The data storage capability has also increased drastically. Therefore, we are drowning in data.
+
+But if I start asking relevant questions from the data which we are having today, or which is getting generated today, we are not getting proper answers. For example, in e-commerce, let's suppose you have done lot of banking transaction or you have purchased lot of books. If I ask relevant question, for example, how many were actually fake bookings, fake order.
+
+E-commerce websites are struggling to build system that can detect fake users or fake orders or fake bookings. So we have tons of data. But if we start asking relevant questions, we are not getting proper answers.
+
+Another example can be stock market. We are generating tons of data in stock market. But if I ask which stock I should purchase tomorrow, which stock I should sell day after tomorrow, I am not getting relevant answers from it.
+
+So we are starving for knowledge. So we have tons of data. And if we start asking relevant questions from the data, we are not getting proper information.
+
+And that is why we are starving for knowledge. That is why machine learning is so prominent today. Why? Because we have tons of data.
+
+We are able to store it. Maybe we are able to process it as well. But if we ask for relevant questions and try to get relevant information from it, we are not getting it.
+
+And therefore, we are starving for knowledge. Now if you look into the history, the technology of data has drastically changed in last 500 years. Earlier, we believed in empirical sciences.
+
+For example, we believed in ideas based on observation. For example, earlier in 1600, we will wake up in the morning and we will look towards the east for sunrise. And in the evening, we will look towards the west for sunset.
+
+So this is an observation that sun will always rise from east and will always set at west. So this is an observation. Based on the observations, we were building empirical science ideas or models.
+
+So this was the age before 1600. It was an empirical science age where a lot of ideas were driven from observation, were based on observation. Then came the age of theoretical science.
+
+From 1600 to 1950s, the age was of theoretical science where scientists based on the observation will actually mathematically build models and will try to generalize the idea. Think about a scenario. Sun always rises from the east but throughout the year not at a particular time.
+
+In winters, sun will rise late and in summer, sun will rise early. Similarly, sunset. In winters, sun will set early and in summers, sun will set late.
+
+So now during the theoretical age, scientists will try to write mathematical formulations or models and will try to generalize the bounds. And this was the age of theoretical science. Then came the age of computational science.
+
+When computers were actually designed and developed, the age of computational science came where we had some limited computational power. We had calculators, we had limited computational machines which can process data at faster rates. During this duration, humans will do the calculations.
+
+But now from 1950s to 1990s, computers start coming into the picture and we had limited computational power. So that whatever models we have built, we were trying to run simulations and we were trying to develop even more complex models. So this was the age of computational science.
+
+And today we are in the age of data science and machine learning where the computational resources or computational power has drastically increased. As well as computer storage or data storage capability has also increased. So now I have higher capacity to compute, I have higher capacity to store and I have higher capacity so that these two can communicate with each other.
+
+And therefore, whatever data earlier we used to observe, now we are actually digitalizing it, storing it and then we have computational resources so that we can mine information from it. We can learn pattern from it and that is what we are trying to do with machine learning algorithms. Machine learning algorithms actually try to extract patterns from the data which is stored.
+
+So based on the higher computational resources, we have higher storage resources we have and the good communication channel between them. Now is the age of machine learning and data science where we are trying to write algorithms that can extract or uncover patterns from huge amount of or from massive amount of data. So what is machine learning? Machine learning is a field of study that actually uses computer to learn the data without explicitly being programmed.
+
+So earlier if I want to actually build a model, I will write mathematical formulations or exact rules that will derive the formula. But today I do not have to write those rules. Machine learning algorithms will automatically learn those rules or patterns without being explicitly programmed.
+
+So machine learning extracts ideas, information from the data what we have. We do not have to program it. We do not have to tell the machine what to extract.
+
+It will automatically extract knowledge from it. Machine learning has evolved from the field of data mining where the focus is to extract useful previously unknown knowledge from the larger data set. So machine learning has evolved the ideas from data mining which focuses on extracting useful previously unknown knowledge from the larger data set.
+
+So here in machine learning we discover meaningful patterns automatically or semi-automatically. And this is the machine learning pipeline. You have seen this pipeline in the data preprocessing course as well.
+
+So if I quickly want to revise that, initially you start with data and set of questions. So I have tons of data and I have a question whether it is going to rain tomorrow or not. This is the question I start with and maybe last 10 years of weather data.
+
+Once I have the data, first I have to do data selection. So I have tons of data. I am going to select a subset of data so that I can answer this question.
+
+Processing whole data is costly, time consuming and might be noisy. So that is why I perform data selection first. Once data is selected, you have the targeted data, then you perform data preprocessing on the targeted data.
+
+In data preprocessing, you can do data cleaning, data transformation, removal of noise etc. Once data preprocessing and data transformation is done, then we actually apply machine learning and data mining algorithms on it. On the transformed data, once that is done, we have some results.
+
+We have interpreter and evaluation tool to look at the results or performance matrices to look at the results. And then based on that, we will extract or get knowledge from it. So what do you mean by knowledge? If you can answer the question you started with from the knowledge which you have gathered, then this pipeline is successful.
+
+Otherwise, the pipeline is broken. You might have to revisit one or more stages to fix the pipeline so that you have got proper knowledge. So that you can answer properly the question you started with.
+
+So for example, when we are talking about whether it is going to rain tomorrow or not, if the knowledge is that yes, it is going to rain tomorrow and it rains tomorrow, then the knowledge extracted from the previous data was good. And there are so many cases associated like this. So what is the origins of machine learning? Machine learning extracts ideas from various domains.
+
+It is not a single discipline. It draws ideas or strength from various other fields like statistics and AI, machine learning and pattern recognition and database systems. Statistics and AI, it learns theory and predictions.
+
+So machine learning or data mining extract ideas from statistics and AI, patterns, recognition and database system. Now let's look into the machine learning workflow. Machine learning is not about running one single algorithm.
+
+So a lot of time you will see that people run maybe a decision tree, build a decision tree model and they say that they are doing machine learning. It is not machine learning. Machine learning is a comprehensive multi-step process.
+
+And the two popular workflows we are going to see today, which can help us in building a machine learning pipeline, a machine learning workflow. So KDD is one of the ways we can build this pipeline or workflow. KDD stands for knowledge discovery in databases.
+
+And there is another industry wide pipeline, which is called CRISP-DM. So what do you mean by KDD process view? So basically what we want to do is we want to use machine learning to build a solution, to build some answers, to extract knowledge from the data. And for this we have a pipeline.
+
+So the KDD pipeline starts with the raw data and will end with the knowledge. So as I said, we have seen this pipeline earlier as well. We start with set of questions and data, a group of and data.
+
+So in databases, in first stage, we have raw data. Weather prediction system, if I am building, I have last 10 years of weather data. On a particular date, what was the temperature? What was the humidity? What was the wind speed? What was the wind direction? All this data I am extracting and I am storing, I am gathering and I am storing in a database.
+
+This is called as raw data source. Once you have this data, right, the second step here is data integration and cleaning. So you might be storing data, the original data in various data structures.
+
+First thing is you have to integrate that data. Multiple tables need to be combined together so that you can build a model later on. So data integration is merging, combining data from various sources.
+
+So in the second step, you are doing data integration where various databases or data sets are merged together. And what you create is a data warehouse. So now in the third stage, you have created a data warehouse.
+
+So in data warehouse, you have data from various sources. One more thing you do in stage two is to perform data cleaning or data pre-processing. In data pre-processing, we can do various activities like data cleaning, data integration, right, outlier detection, etc., etc.
+
+All these things we perform in data pre-processing so that data is ready for the next stage. So in data warehouse, we perform data selection in which we select task relevant data. So from data warehouse, which has data coming from various sources, we select a subset of data which is called as task relevant data.
+
+Once we have the task relevant data, then in the fourth stage, we will build a machine learning model or a data mining model. I'm using machine learning and data mining model interchangeably, but later on in other courses, you will see there's a big difference from both of them. But that's fine.
+
+Today, you can imagine or assume that data mining and machine learning are the same. But later on, we will discuss how they are different. So in data mining or machine learning, algorithms will be used to find patterns here.
+
+So once you have task relevant data, now I will build a model. Now I will apply a data mining algorithm that can extract knowledge or patterns from the data which we have. Once we have extracted the knowledge in the fifth stage, right, we are going to evaluate the patterns which were extracted.
+
+So here you will identify the patterns which were extracted and then look and measure the quality of patterns which are extracted. So quality measurement is done here, right. So whatever patterns you have extracted, whether it is a good quality or not.
+
+And once that is done in stage number six, we will extract knowledge from it, right. To find the final and actionable insights are we will receive at the knowledge stage, stage number six. In this stage, right, if we are able to answer the questions we started with, then this pipeline is correct.
+
+Otherwise, we have to rerun the pipeline, maybe change the algorithm, data mining or machine learning algorithm, maybe change the data selection technique, maybe do data integration, data cleaning again to get the proper results, get the proper knowledge which can answer these questions. Similarly, we have CRISPR-DM pipeline, right. So this is more of a general pipeline, knowledge discovery data in databases is a general pipeline.
+
+In industry, it has been modified a bit and then adopted industry. So CRISPR-DM pipeline is a popular framework used in the industry for building machine learning projects, right. Here also you start with data, prior knowledge and questions, right.
+
+So you start with data, some domain expertise and a set of questions. Once that is done, you are going to integrate the data from various sources, you are going to prepare the data from various sources. So when we are talking about data preparation, right, we might do data integration, we might do data cleaning.
+
+We are basically preparing the final data. So once data preparation stage is done, step number two is done, in step number three, we model, we build a model. So here we use various machine learning algorithms to build the model.
+
+So here we select and apply machine learning algorithms in the modeling stage. Then comes stage number four, where we actually apply the build model, which we have built in step number three, on a newer data and evaluate its performance. Evaluate the performance of the model which we have built in step number three.
+
+So we apply whatever model we have built, we apply the model on a newer data and check whether the performance is good or not. Once that is done, then we extract knowledge in step number five, if the model is performing successfully, is performing good, then we extract knowledge from it and check whether we are able to answer the questions or not. If we are able to answer the question, the pipeline is successful, otherwise pipeline is broken.
+
+Similarly, we have business BI, business intelligence view of the KDD pipeline or the machine learning pipeline. We start with some data sources, we first do data preprocessing, including data integration and creating data warehousing. Then we perform data exploration, then we apply machine learning and data mining algorithm on it.
+
+Then we present the data and finally we make the decisions. So again, this is also a five step pipeline. This is three, this is four, and this is five.
+
+Very similar to what we have seen earlier. So what kind of data I can use in machine learning or data mining? So we can either use structured data, data arranged and stored in a structured way. So we can actually use structured data.
+
+Some machine learning algorithms also work on unstructured or semi-structured data where the structure is not proper. An example of structured data is a tabular data or a graphical data. These are examples of structured data.
+
+Unstructured data, that means you have a news article, you have a web page. This is more of unstructured or semi-structured data. We can directly apply machine learning algorithms on it or convert these unstructured or semi-structured data into structured data.
+
+And then apply machine learning algorithm on it. Both types of applications you can see in real one. Third type of data is called time series data, time dependent data.
+
+There are some advanced data types as well. For example, data stream or sensor data, data flowing in real world. Real time data from IoT devices is called stream data, streaming data, time series data, socio-temporal data and world wide data.
+
+These are some advanced type of data we can use to build the model. So in summary, in this video we looked into basic definition of machine learning. And we also looked into the workflow to build a machine learning pipeline.
+
+We also looked into different data types used in machine learning. We will continue in the next video. Take care.
+
+Bye-bye.
+
+(Transcribed by TurboScribe.ai. Go Unlimited to remove this message.)
