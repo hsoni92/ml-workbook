@@ -1,0 +1,21 @@
+Hello everyone, welcome to module 2 of Artificial Neural Networks. In this video, we will discuss why we need the mathematical foundation for neural networks.
+In module 1, we focused on building a conceptual foundation for neural networks. We understood what neurons are, how layers are formed, how feed-forward networks work, and where neural networks are used in real-world systems.
+However, one very important question remains, which is, how do neural networks actually learn from the data?
+To answer that, we must shift from concepts to mathematics. Neural network learning is fundamentally driven by linear algebra, calculus, and systematic gradient computation.
+This module exists to give you the exact mathematical tools required to understand and implement neural network training.
+Coming to what you will learn this week? In this module, we will build the mathematical foundations step by step.
+We will begin with the linear algebra essentials used in neural networks like vectors, matrices, tensors, dot products, and matrix operations.
+Then, we will move to gradients and derivatives, including partial derivatives and gradient vectors for multivariate functions.
+Next, we will study the chain rule, which is the key mathematical mechanism that allows gradients to flow through multilayer neural networks.
+Finally, we will cover numerical stability, which explains why training can fail due to overflow and underflow, and how practical systems avoid these issues.
+This module serves as a critical bridge between understanding what neural networks are and understanding how they actually learn.
+Without the tools from this module, it is impossible to properly understand back propagation, multilayer learning, loss minimization, and deep learning optimization.
+Everything that follows later in this course, from simple perceptrons to deep neural architectures, will rely directly on the mathematics you learn here.
+So, how to approach this module?
+This module will be slightly more mathematical than the previous one, but you are not expected to memorize formulas.
+Instead, your goal should be to understand what each mathematical object represents, build some geometric intuition around it, and connect every equation to what the neural network is actually doing.
+If some calculus or linear algebra feels rusty, this module is designed as a targeted refresher, focused only on what neural networks truly use.
+So, please don't worry, we will be covering all the required concepts here.
+This module will actually make all the future topics easier.
+So, my advice to you all would be to spend enough time on this module.
+Thank you.

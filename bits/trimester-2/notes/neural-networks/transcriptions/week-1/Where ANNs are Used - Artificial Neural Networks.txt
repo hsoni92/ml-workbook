@@ -1,0 +1,42 @@
+Hello everyone, welcome back to module 1 of Artificial Neural Networks. In this video,
+we will discuss the applications of Artificial Neural Networks.
+By the end of this video, you will be able to identify the major real-world domains where
+Artificial Neural Networks are widely used. You will also be able to explain how neural networks
+operate on different types of data. And finally, you will recognize why ANNs are the default choice
+for modern AI systems. So far in this module, we have studied what neural networks are, how single
+neurons work, and how feed-forward networks are structured. Now, it is important to connect these
+ideas to the real world. Neural networks are not just academic models. They are the core engines
+behind most modern AI systems that we interact with every day. By looking at these applications,
+you will understand what types of problems neural networks are especially good at and why they have
+become the dominant approach in artificial intelligence. In this video, we will survey the
+major domains where artificial neural networks are the default modeling choice.
+One of the most impactful application areas of neural networks is computer vision. Here, the input to the model is raw pixel data and the output can be an object label, a bounding box, or a segmentation map of the image.
+Neural networks automatically learn visual features directly from the pixels. Early layers learn simple structures like edges and textures, while deeper layers learn shapes, objects, and full scenes. This ability to automatically learn visual representations is why convolutional neural networks have become the backbone of tasks such as face recognition, medical image diagnosis,
+and autonomous driving perception systems. Another major application area is speech and
+natural language processing. In speech systems, neural networks are used for speech-to-text,
+voice assistance, and speaker identification. In natural language processing, they power the
+chatbots, machine translation, text summarization, and large language models. Language and speech
+data are sequential and highly contextual. Neural networks, especially architectures like
+recurrent networks and transformers, are extremely effective at modeling the temporal structure
+and long-range dependencies in the data. This is what enables machines to understand and generate
+human language at scale. Neural networks are also at the heart of recommendation and
+personalization systems. Whenever you watch a movie on Netflix, a video on YouTube, or browse
+products on Amazon, neural networks are working in the background to predict what you are most
+likely to engage with next. These systems learn representations of users, representations of items,
+and complex interaction patterns between them. The business impact is enormous because even small
+improvements in recommendation quality can lead to large gains in user engagement, retention, and the
+revenue of these big companies. Beyond consumer applications, neural networks are widely used in
+critical industrial domains. In finance, they are applied to fraud detection, credit scoring, and algorithmic trading. In healthcare, they are used for medical image analysis, disease risk prediction, and clinical decision support. In autonomous systems and robotics, neural networks enable perception, control, and navigation. In manufacturing, they support predictive maintenance and defect detection from sensor and image data.
+In all these domains, neural networks learn from large volumes of complex high-dimensional data where the traditional models struggle.
+To conclude, neural networks dominate these application areas for a few fundamental reasons.
+They can learn directly from raw high-dimensional data such as images, audio, text, and sensor signals.
+They automatically perform feature learning instead of relying on handcrafted features.
+They scale naturally with data and computational power.
+And most importantly, they support end-to-end optimization, meaning the entire system can be trained jointly for the final objective.
+For these reasons, artificial neural networks have become the backbone of modern AI systems across almost every major industry that we see today.
+Now, let us summarize the main points of this video.
+In this video, we understood why neural networks are the core engines of modern AI systems, how they power various real-world applications ranging from finance to autonomous vehicles.
+We also concluded that scalability and end-to-end optimization is what makes them the default choice.
+In the next video, we will look at the current limitations of neural networks and why those limitations motivated the development of deeper and more advanced models.
+Thank you.
+Thank you.

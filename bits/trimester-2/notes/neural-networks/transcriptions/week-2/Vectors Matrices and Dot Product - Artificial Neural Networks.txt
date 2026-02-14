@@ -1,0 +1,88 @@
+Hello everyone. Welcome back to module 2 of Artificial Neural Networks. In this video,
+we will brush up our linear algebra fundamentals focusing on vectors, matrices, and dot product.
+Let's begin with the learning objectives. By the end of this video, you will be able to identify the vectors, matrices, and tensors used in neural networks. You will understand the importance of shapes and dimensionality in neural network computations. You will also be able to compute the dot product algebraically. And finally, you will be able to interpret the dot product as a measure of alignment and similarity.
+Let's start this video with the language of neural networks. Before we can understand learning, gradients, or backpropagation, we must first understand the mathematical objects that neural networks are built from. Every computation inside a neural network is expressed using vectors, matrices, and tensors. Inputs, weights, activations, outputs, and even gradients, all of these are
+represented using these same mathematical objects. Once you are comfortable with these three, the rest of neural network mathematics becomes systematic and predictable. Coming to vectors, a vector is simply an ordered list of numbers. We usually represent it as a column of values. For example, a vector could be x equals 1, 2, 3, and so on, and the number of values are represented using these same mathematical objects. Once you are comfortable with these three, the rest of neural network mathematics becomes systematic and predictable.
+Coming to vectors, a vector is simply an ordered list of numbers. We usually represent it as a column of values.
+For example, a vector could be
+x equals 1, 2, 3 and so on and it can represent an input vector.
+Mathematically, we describe it as x belongs to Rn which means it has n real valued components and its shape is n cross 1.
+In neural networks, vectors are used everywhere. A single data sample is often a vector. The activations of a layer form a vector.
+Even gradients with respect to parameters are vectors.
+So, you should think of a vector as the basic carrier of information in a neural network.
+So now, what is a matrix? A matrix is a two-dimensional collection of numbers arranged in rows and columns.
+For example, a weight matrix for a neural network can look something like this.
+W equals W11 till W1n, W21, W22, so on, going on till Wm1, Wm2 till Wmn.
+This matrix W belongs to Rm cross n. This means it has m rows and n columns. In neural networks, matrices are most commonly used to store the weights that connect one layer of neurons to the next.
+Tensor might be a new term for you all, but it is simply a generalization of vectors and matrices to higher dimensions.
+A vector is a first-order tensor. A matrix is a second-order tensor. Anything with three or more dimensions is called a higher-order tensor.
+Tensors are especially important in deep learning because real-world data is often multidimensional.
+An image is a 3D tensor of height, width, and color channels. A video is a 4D tensor of time plus image dimensions.
+Modern deep learning frameworks operate almost entirely on tensors.
+Now, one of the most important practical ideas in neural network mathematics is shape consistency.
+If an input vector has a shape n and a weight vector has shape m cross n, then their product will have shape m.
+If these shapes do not align, the computation is mathematically invalid and will fail in code.
+In practice, most implementation bugs in neural networks come from shape mismatches.
+This is why it is essential to track the input dimensionality, weight matrix dimensions, output dimensions at every layer of the network.
+Next, let's refresh the concepts of dot product.
+Let us begin with the algebraic definition of the dot product.
+x dot w equals summation of xi wi for i ranging from 1 to n.
+In simple terms, we multiply the corresponding elements and sum up the results.
+This operation always produces a single scalar number, no matter how high-dimensional the vectors are.
+Now, let us look at a very simple numerical example to understand how the dot product is actually computed.
+Suppose, the input vector is given by 2, 1, minus 1 and weight vector is 3, minus 2, 4.
+The dot product is computed by multiplying corresponding components and summing up the results.
+So, we compute 2 times 3, plus 1 times minus 2, plus minus 1 times 4.
+Adding them together gives 0 in this case.
+The dot product also has a powerful geometric interpretation.
+It can be written as x dot w equals magnitude of x times magnitude of y times cos theta.
+Here, theta is the angle between the two vectors and cos theta measures how aligned they are.
+If the vectors point in the same direction, the dot product is large and positive.
+If they point in opposite directions, dot product is large and negative.
+And if they are in perpendicular directions, then dot product is 0.
+Now, let us look at some examples to clarify the concepts.
+In example 1, we have x equals 2, 2 and w equals 3, 3.
+So, x dot w is given by 2 times 3 plus 2 times 3.
+We are just multiplying the corresponding elements and summing them up.
+So, this gives us 12, which is large and positive.
+Now, let us look at it visually.
+If I plot these two points on the graph, the vector for 2, 2 would point something like this.
+And vector for 3, 3 would also point in the same direction.
+So, we see that the angle between these two vectors is 0 degree.
+That is why we see that the output of the dot product is large and positive.
+Now, coming to the next example where x is 2, 2 and w is minus 3, minus 3.
+Here, x dot w equals 2 times minus 3 plus 2 times minus 3, which gives us minus 12.
+Looking at it on the graph, vector 2, 2 is given by this vector and vector minus 3, minus 3 is given by this vector.
+We see that the angle between the two of them is 180 degrees as they point in the opposite directions.
+This is also reflected in the fact that the dot product is negative and large.
+Now, let's consider this third case.
+Can you try solving this first on your own?
+Okay.
+So, x dot w here is given by 1 times 0 plus 0 times 1, which is equal to 0.
+Here, the dot product is 0.
+So, 0 happens when the two vectors are actually perpendicular to each other.
+So, let's see how they look on the graph.
+Vector 1, 0 is represented by this point.
+So, it points in the direction of x-axis.
+Vector 0, 1 is represented by this point.
+So, it points in the direction of the w-axis.
+And we see that the angle between the two of them is 90 degree and indeed they are perpendicular to each other.
+Now, comes the question that why dot product matters in neural networks.
+Every artificial neuron at its mathematical core computes a dot product between the input vector and the weight vector.
+This single operation determines whether a neuron activates strongly, weakly or not at all.
+So, if you truly understand the dot product, you understand what the neuron is actually doing.
+In practice, the dot product is not used alone.
+We add a bias term.
+So, we say z equals x dot w plus b.
+The dot product measures similarity while the bias shifts the point at which the neuron begins to activate.
+Together, the dot product and bias determine the raw decision signal of a neuron.
+This value is then passed through an activation function to produce the final non-linear output.
+So, every neuron's decision is controlled by similarity through the dot product and sensitivity through the bias.
+Now, let's summarize the main points of this video.
+Vectors carry information.
+Matrices connect layers and tensors generalize everything to higher dimensions.
+Tracking shapes is absolutely essential for correct neural network computation.
+The dot product measures alignment, similarity and strength of evidence between the two vectors.
+A neuron computes a dot product between its input and its weights, adds a bias and then applies a non-linear activation.
+In the next video, we will see how dot products generalize to matrix operations, allowing entire layers of neurons to be computed simultaneously and efficiently.
+Thank you.

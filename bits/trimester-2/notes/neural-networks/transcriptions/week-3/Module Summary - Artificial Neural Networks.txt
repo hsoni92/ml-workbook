@@ -1,0 +1,21 @@
+Hello everyone. Welcome to the last video of module 3 of Artificial Neural Networks.
+What did we learn in module 3? In this module, our goal was to understand the first building
+blocks of neural networks. We focused on the perceptron and the logistic neuron and used
+them to develop a foundational understanding of linear classification, model limitations,
+and the motivation for deeper architectures. We began with the perceptron, the simplest
+computational model of a neuron. The perceptron computes a linear score using a weighted sum of
+inputs and a bias and then applies a hard threshold to produce a binary output. This makes the
+perceptron a linear binary classifier. It works perfectly when the data is linearly separable,
+but that assumption turns out to be very restrictive.
+By studying the perceptron geometrically, we saw that it can draw only one straight decision
+boundary in the input space. This immediately leads to a fundamental limitation. Some problems
+like the ZOR classification task cannot be separated by any single straight line. The perceptron fails on
+such problems not because of poor learning, but because of a structural limitation of the model itself.
+We then saw how this limitation can be overcome by changing the architecture, not just the neuron.
+By introducing a hidden layer, a network can create multiple linear feature splits and then recombine
+them to form non-linear decision regions. This is the key representational advantage of multi-layer neural
+networks over single-layer perceptrons. Finally, we introduced the logistic neuron which replaces the hard
+threshold of the perceptron with a smooth sigmoid function. This gives us continuous outputs that can
+be interpreted as probabilities, enabling confidence-aware predictions. To summarize the big picture of this module, we move from the perceptron as a basic linear classifier, to its geometric
+limitations shown by ZOR, to the architectural motivation for hidden layers, and finally to the logistic neuron as a smooth probabilistic building block of modern neural networks. In the next module, we will build on this foundation to study the architecture of multi-layer perceptrons. How hidden layers and forward paths work? We will delve deeper into the concept of non-linearity and activation functions and some
+associated practical issues. See you all in the next module. Thank you.

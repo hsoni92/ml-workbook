@@ -1,0 +1,22 @@
+Hello everyone, welcome back to module 1 of Artificial Neural Networks. In this video,
+we will discuss the biological and artificial neurons. By the end of this video, you will be
+able to differentiate between biological neurons and artificial neurons. You will recognize their
+shared computational principle and you will be able to explain how the power of neural networks
+emerges from many simple neurons trained through data-driven optimization.
+Neural networks are inspired by the human brain, but they are not biologically accurate simulations
+of it. This distinction is very important. In this video, our goal is twofold. First,
+to build a high-level biological intuition of how real neurons work and second, to translate that
+intuition into a clean mathematical model that we actually use in artificial neural networks.
+This abstraction from biology to mathematics is the foundation of everything we will study in this
+course. A biological neuron is a highly complex electrochemical system. It has three main components,
+dendrites, which receive signals from the other neurons, the cell body or soma, which integrates
+these signals. The exon, which carries the output signal. Neurons communicate using a combination of
+electrical impulses and chemical neurotransmitters. Each incoming signal can either excite or inhibit the
+neuron. When the combined input strength crosses a certain threshold, the neuron fires an action potential and
+sends a signal forward. So, at a conceptual level, a biological neuron performs signal aggregation followed by a decision to fire. In artificial neural networks, we take this very complex biological process and create a drastically simplified mathematical abstraction of it. The mapping works as follows. Dendrites are mapped to input features like X1, X2, so on. The
+Soma is mapped to input. The Soma is mapped to a weighted summation of these inputs and neuron firing is mapped to an activation function. All the biochemical details of real neurons are deliberately ignored. This simplification is essential because it allows us to represent neurons using equations and optimize large networks efficiently. So, what we keep from biology is the structural idea, not the physical process.
+Let us now look at the mathematical form of an artificial neuron.
+Z. So, Z. So, mathematically, a neuron is a parametric non-linear function of the input. The weights and bias are the parameters that will later be learned from data using optimization. This simple equation is the atomic computational unit of all neural networks, from small classifiers to very large deep learning models. A single artificial neuron by itself is a very weak learner.
+It can only represent very simple decision. It can only represent very simple decision boundaries. However, when we combine many such neurons, arrange them into layers and train them end-to-end using data, we obtain a powerful function of the form FX, which is equal to the composition of so many layers. This layered composition dramatically increases the expressive power of the network. So, while biology inspired the original idea, it is mathematics, optimization,
+and scale and scale that actually drive the performance of modern neural networks.
+In the next video, we will take this artificial neurons composed together and optimized using data. In the next video, we will take this artificial neuron and see how it works as a simple feature detector. Thank you.

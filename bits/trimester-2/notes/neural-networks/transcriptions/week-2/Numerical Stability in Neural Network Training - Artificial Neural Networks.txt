@@ -1,0 +1,48 @@
+Hello everyone. Welcome back to module 2 of Artificial Neural Networks. In this video, we will discuss common numerical stability issues in neural network training and explain the techniques to mitigate them.
+By the end of this video, you will understand why numerical stability is critical in deep learning computations. You will be able to identify common numerical issues such as overflow and underflow. You will explain the log sum exponential trick used to stabilize exponential operations. And finally, you will recognize key practical techniques used to ensure stable neural network training.
+Up to this point, we have treated all computations as if they were exact and perfectly precise. In reality, every computation on a computer is performed with finite numerical precision. Deep learning uses exponentials, repeated multiplications, and very small probability values. This combination makes numerical instability not just possible, but very common.
+If numerical stability is not handled carefully, if numerical stability is not handled carefully,
+models can produce infinities, zeros, or nads. And training can solve the problem.
+If numerical stability is not just possible, if numerical stability is not handled carefully,
+models can produce infinities, zeros, or nads. And training can silently fail without any obvious coding error. This brings us to the concept of numerical overflow and underflow. Overflow occurs when a number becomes too large to be represented by the computer's
+floating point system. For example, the mathematical value of e raised to the power of 1000 is equal to the power of 1000.
+On a typical machine, this cannot be represented by the computer. This cannot be stored and is represented by the computer. This cannot be stored and is represented by the computer.
+except of numerical overflow and underflow. Overflow occurs when a number becomes too
+large to be represented by the computer's floating point system. For example, the mathematical
+value of e raised to the power of 1000 is extremely large. On a typical machine, this
+cannot be stored and is represented as infinity. Now, once infinity appears in a computation,
+all subsequent operations they become meaningless. This is one of the most dangerous failure
+modes in deep learning. Similarly, underflow is the opposite problem. It occurs when a
+number becomes so small that it is rounded down to exactly zero by the computer. For example,
+e raised to the power minus 1000 is a very small positive number mathematically. But in floating-point arithmetic, it becomes
+stored exactly as zero. Once this happens, all gradient or probability information carried by that value is permanently lost. Deep learning models are especially sensitive to numerical instability for three reasons. First, they apply long chains of multiplications. Second, they use exponential functions extensively. Third, they often work with extremely small probabilities. And then, they use exponential functions extensively. Third, they often work with extremely small probabilities. And then, they use exponential functions extensively.
+Second, they use exponential functions extensively. Third, they often work with extremely small probabilities. Each of these factors independently causes numerical problems. Combined together, they make stable numerical computation a central concern in all deep learning systems. One of the most common unstable expressions in deep learning is the sum of exponentials.
+given by summation e to the power zi. If even one of the values zi is large, its exponential can overflow. If all values are very negative, all exponentials can underflow to zero. This exact expression appears inside probability computations and probability computations.
+The most common of the most common unstable expressions in deep learning is the sum of exponentials. One of the most common unstable expressions in deep learning is the sum of exponentials. One of the most common unstable expressions in deep learning is the sum of exponentials. One of the most common unstable expressions in deep learning is the sum of exponentials given by summation e to the power zi.
+summation e to the power zi. If even one of the values zi is large, its exponential can overflow. If all values are very negative, all exponentials can underflow to zero. This exact expression appears inside probability computations and must therefore be handled with great care.
+To stabilize this expression, we use a mathematical identity known as the log sum exponential trick. Which is given by log of summation e to the power zi equals alpha plus log summation e to the power zi minus alpha. Now let's see how this is derived.
+So we have summation e to the power zi. Now this can be written as e raised to the power zi times summation e raised to the power zi divided by e raised to the power zi divided by e raised to the power alpha. Which equals to e raised to the power alpha times summation e raised to the power zi minus alpha overall i.
+Now, if we take log on both the sides, log of summation e raised to the power zi becomes log of e raised to the power alpha plus log of summation e raised to the power zi minus alpha.
+Now, log of e raised to the power alpha is just alpha plus log of summation e raised to the power zi minus alpha which gives us the required expression.
+Here, alpha is given by the max value of zi.
+Let us try to understand how this works.
+After subtracting the maximum value, the largest exponential becomes e raised to the power 0 which is 1 and all other exponentials become numbers between 0 and 1.
+None of the terms become excessively large and none become too small too quickly.
+The computation remains numerically safe across a wide range of input values.
+Log sum exponential is not the only stabilization strategy.
+In practice, we frequently work in the logarithmic domain, subtract maximum values before exponentiation, add small epsilon constants to denominators to avoid division by 0, avoid direct multiplication of long probability chains.
+All practical deep learning systems rely heavily on these simple but critical numerical techniques.
+If numerical stability is ignored, the consequences are severe.
+Computations produce nans and infinities.
+Gradients can become zero or undefined.
+The training process may diverge or appear to converge while actually learning nothing.
+These failures are often silent, meaning there may be no clear error message.
+For this reason, numerical stability is one of the most important practical engineering concerns in the deep learning.
+Now, let us summarize the main points of this video.
+All deep learning computations are performed under finite numerical precision.
+Without stabilization, overflow and underflow are unavoidable.
+The log sum exponential trick is the standard method for stabilizing exponential sums.
+And stable numerical computation is not optional.
+It is a fundamental requirement for any reliable deep learning system.
+Thank you.
+Thank you.

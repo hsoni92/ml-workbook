@@ -1,0 +1,23 @@
+Hello everyone. Welcome back to module 3 of Artificial Neural Networks. In this video,
+we will discuss the linear separability and the ZOR limitation. By the end of this video,
+you will be able to explain what linear separability means and why it is crucial for perceptrons.
+You will formally identify when a dataset is linearly separable or not. Then, you will understand
+why the perceptron fails on non-separable data. And finally, you will analyze the ZOR problem as
+a fundamental limitation of a single perceptron. In previous lessons, we saw that the perceptron
+implements a single linear decision boundary. This immediately raises a critical question:
+What kind of datasets can actually be separated by one straight line or hyperplane?
+The answer is captured by a single concept called linear separability. Whether a dataset is linearly
+separable completely determines whether a perceptron can ever achieve perfect classification and whether
+its learning rule can converge. We have already seen that a dataset is called linearly separable if there
+exists a weight vector w and a bias b such that for every training example, yi dot w transpose xi plus b is greater than 0.
+This means that all the positive examples lie on one side of a straight boundary and all negative examples lie on the other side.
+In two dimensions, this boundary is a line. In higher dimensions, it is a hyperplane. If such a boundary exists,
+a perceptron can perfectly classify the data. Geometrically, the idea of linear separability is very intuitive. For a linearly separable dataset, a single straight line can cleanly divide the two classes.
+For a nonlinearly separable dataset, no straight line exists that can separate the two classes without errors. In this case, the perceptron is guaranteed to fail regardless of how long we train it or how we initialize the weights. So, the success or failure of the perceptron is fundamentally a geometric property of the data.
+The most famous example of a nonlinearly separable problem is the ZOR classification task. In ZOR, the output is +1 when the two inputs are different and 0 when they are the same. So, if you look at the ZOR table here, when both x1 and x2 are same, whether they are 0 and when they are 1, the output is going to be same as 0. But when they are different, the output is going to be 1.
+Even though this is a very simple logical rule, its geometric structure is highly problematic for linear classifiers. When we plot these four input combinations in the plane, the points belonging to the same class lie diagonally opposite to each other. If you look at these points here, right, the zeros are diagonally opposite to each other and the ones are like this.
+this. Can you try and divide this using just one line? Let's try. So we see that there
+is no one single line which can actually achieve this.
+This layout makes linear separation impossible. XOR is the simplest and clearest demonstration
+of the fundamental limits of single layer perceptrons. Now, let's summarize the main points of this video. Linear separability determines whether a perceptron can succeed. Many real-world problems are not linearly separable. XOR is the simplest and most important example of a non-linearly separable task. Because a single perceptron can only draw one straight boundary,
+it is fundamentally incapable of solving such problems. This limitation directly motivates the need for multi-layer neural networks which we will explore next. Thank you.

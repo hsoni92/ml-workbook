@@ -1,0 +1,24 @@
+Hello everyone. Welcome to the last video of module 1 of Artificial Neural Networks.
+In module 1, we built the conceptual foundation for everything that follows in this course.
+We positioned neural networks within the broader landscape of artificial intelligence and machine learning and saw why deep learning works so well today.
+We developed an intuitive understanding of artificial neurons, weights, bias and layers and how these elements combine to form feed-forward neural networks.
+We also explored where neural networks are used in real-world systems and why shallow models face fundamental limitations.
+Conceptually, this entire module can be seen as one continuous flow.
+We moved from AI to machine learning to deep learning.
+Then we moved from a single artificial neuron to weights and bias, from neurons to layers and from layers to feed-forward networks.
+This flow captures the big picture of how modern neural network models are constructed from extremely simple building blocks.
+We also discussed how feed-forward networks power so many real-world applications.
+The most important intuitions you should retain from this module are
+A single neuron is only a simple pattern detector.
+Weights determine the feature importance.
+Bias controls the baseline activation.
+Layers create hierarchies of abstraction.
+And depth is essential for capturing complex real-world structure.
+Feed-forward networks built from these ideas form the foundation of modern neural networks.
+With the conceptual foundation from this module in place, we are now ready to move into the mathematical core of neural networks.
+In the next module, we will build the precise tools needed to train neural networks effectively.
+We will study the linear algebra that underlines neural computations, understand how computational graphs represent complex functions,
+and use the chain rule to systematically compute gradients through multilayer networks.
+So, in the next module, we shift from what neural networks are to how neural networks actually learn from the data.
+Thank you.
+Thank you.
