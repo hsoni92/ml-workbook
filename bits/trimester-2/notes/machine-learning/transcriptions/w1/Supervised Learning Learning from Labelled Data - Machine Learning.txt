@@ -1,0 +1,379 @@
+Hello to all of you. My name is Dr. Hemant Aathar and we are in the course Machine Learning. We are in the module 1, Introduction of Machine Learning and this video is on Supervised Learning, Learning from Labeled Data.
+So the learning objective of this video is, we are going to first define what supervised learning is and we will understand the core concepts of supervised learning. Then we will look into the two different types of supervised learning algorithms, classification and regression. Then we will look into the process of training and testing a classification model and we will also look into some real world applications of classification and regression. So let's start right away.
+So we are in the course Machine Learning. If you break this word, there are two subwords here, Machine and Learning. So basically what we are trying to say here is, Machine is trying to learn. Now there can be two fundamental approaches where machine can learn. In Machine Learning, there are two fundamental types of approaches how machine is learning. One is called Supervised Learning.
+Supervised Learning and the second one is called Unsupervised Learning. So machine learning can broadly be divided into two types of learning. Supervised Learning and Unsupervised Learning. Supervised Learning is also called as prediction methods. The basic idea is, we learn so that we can do prediction. So the goal of supervised learning algorithm is to do some sort of prediction of unknown values. For example, weather prediction system.
+I want to predict whether there will be rainfall tomorrow or not. So rainfall yes or no is a supervised learning. Rainfall prediction is a supervised learning problem. Right? Here we are doing building a prediction model. So here in supervised learning, the machine learns from the example, where the correct answer is also known. Right? So the learning, right? In prediction methods, the learning is all done.
+or done based on the correct answer we have provided in the past right so we have provided
+the data and the correct answers correct answers are also known as class labels right so in
+supervised learning we are given original data and the correct answers also known in class label
+and the machine learns the relationship between data and the correct labels through a function
+called as f and that is what we call it as machine learning model or a classification model or a
+prediction model or a supervised learning model so this f is a model right which is a prediction model
+which finds the relationship between data and the correct label another way the machine can learn
+is called unsupervised learning in unsupervised learning another name is called descriptive methods
+in descriptive methods we are not doing any prediction we are trying to find interesting
+patterns human interpretable patterns and structure in the data right so in descriptive methods we are not
+doing any prediction in unsupervised learning we are not doing any prediction we are just trying to find
+human interpretable patterns and structure in the data and in this machine learning explores the data
+without correct answers so here we are only given the data we are not given correct answers or class
+label what we do is we just find structure pattern in the data whether two points are same or not
+whether two points are different or not right these things can be understood or can be learned
+using descriptive methods or unsupervised learning so in this video we will focus on
+supervised learning right supervised learning algorithms or models or strategy methods which
+are used to do some sort of prediction for the future so what is supervised learning supervised
+learning is one of the most common method in machine learning and here learning is done using
+labeled data correct answers also known as correct labeled so labeled data correct answers correct
+label all are same so what we have is the original data and the correct labels or class labels correct answers or class labels label data consists of training examples where each example is a pair of input features along with the desired output also known as labeled or target so we have data and the class label for example a very simple example can be weather prediction system right in
+class labels correct answers or class labels label data consists of training examples where
+each example is a pair of input features along with the desired output also known as label or
+target so we have data and the class label for example a very simple example can be weather
+prediction system right in weather prediction system i can have what was the temperature
+what was the humidity and it rained or not so class label is rain yes or no so let's suppose on day one
+there was rain day two there was no rain day three there was rain so this is my correct label this is
+one of the features that describe the data another feature describe the data so this is called as x and
+this is called as y right so in the data you have some portion which is the original data and which
+is called as x and you also have y which is called as correct answer or class label the classification
+model or any supervised learning model build a function f that finds the relationship between x and y so a
+simple analogy of supervised learning is that when student learns from textbook and answers the question
+right so input is question and the answers are output right so basically if you have done rd sharma right
+so you have a question then you solve it and the correct answer is written at the back so whatever answer
+you get right you can check it from the back so you learn if you do 100 questions you learn how to solve a
+question and you verify with with the correct answer at the back so this is called as supervised learning
+you have data and the corresponding class label and then when you build a model so that you can do
+prediction in the future this is called supervised learning so supervised learning is further divided into
+two types of algorithms one is called classification another one is called regression when we predict
+so supervised learning is essentially used for prediction and prediction is done based on data and the class
+labels the original data should consist of original data and the class label so in class label in classification
+the class labels are categorical in nature finite in nature the number of items i can predict are finite
+are fixed are divided into categories then it is called as classification problem for example weather prediction system
+right i was predicting whether it is going to rain or no rain yes or no right rain or no rain right so this is a classification problem i am building a model which can predict whether it is going to rain tomorrow or no rain tomorrow
+so i am building a cheat detection system whether the customer has cheated or not cheated so i am predicting one of the two classes so this is a classification problem so classification is a type of supervised learning in supervised learning the basic idea is being doing prediction if we are predicting finite number of values fixed number of values or fixed number of values or fixed number of classes or categories then it is called as classification problem so a simple example can be i have two images
+i have two images i build a ml model or a machine learning model which can predict whether the image contains dog or cat so in this case right the model is predicting cat so most likely i must have pushed this picture so maybe when i push this picture the machine learning model should predict it is a dog right so in classification we do prediction but we predict fixed number of values on the other hand in regression
+on the other hand in regression the output can be continuous or numerical in nature so when i am doing petrol price prediction oil price prediction gold price prediction stock price prediction all these are regression problem so when i am doing petrol price prediction petrol price can be 100 101 102 101 101 101 102 and so on there can be infinite number of values
+so supervised learning so supervised learning so supervised learning i am doing prediction but if i can i am predicting infinite number of values my model can predict infinite number of values then it is called as regression problem right so what is my vehicle average it can be 10 it can be 10.5 it can be 11 it can be 20 it can be 500 and so on so in supervised learning right it is divided into two parts classification and regression in classification
+so what we have is set of training data set of training data data is defined with the help of attributes so if you remember i have been taking this example again assuming this is my structured data in a table form the data point is explained with the help of some attributes right so this is data point 1 explained with the help of attribute a attribute b and attribute c in classification there would be another attribute
+another column which is called class labeled right so there is another special attribute which is called class labeled or target right which is what we want to predict so in supervised learning in classification the original data will consist of both data x and the corresponding y when we build this model and we deploy it in real world what we will be given is x and then we have to predict y based on the x is which is given to us right so the
+goal is to build a model that takes a new data or unseen record and assign a class label as accurately as possible so a simple classification problem can be cheat detection system whether a particular customer has cheated or not so someone has given me a tabular data with three attributes attribute 1 attribute 2 and attribute 3 and there is another attribute attribute 4 right so customer 1 is defined with the help of the
+of attribute one attribute two and attribute three right so customer number one refund was yes
+maritous status was single and taxable income was 125 there is another class label another attribute
+which is a defining customer number one which is whether he has cheated in the past or not so he
+has not cheated similarly customer number two customer number three and so on so in classification
+we have set of attributes one of the attribute is the class label right one of the attribute is the
+target label so once we have built a classification this is my training data once we have learned the
+model we have built a model in real world user will be given me x only attribute this is my x and this
+is my y so user will be giving me x and then i have to do prediction for that x right so particularly
+this case right what would be the prediction what would be the prediction here what would be the
+prediction here so this is a classification problem why this is classification so the number of classes
+here are finite and which is two no and yes i can predict three classes i can predict four classes
+right so all these will fall under classification so in classification we start with the original data
+data x and the corresponding y it's a huge data set with a lot of data points first we split the data into
+two parts training data and test data in training data is used to build the model once i have built the
+model i am going to use test data to check the performance of the model in the test data actually
+i know what is the class label but i forget about the class label for some time right and use this machine
+learning model to do the predictions whatever prediction is done i can match with the original
+label if the original label is matching my model is good otherwise my model is of poor quality so your
+original data is divided into training data and test data original data or training data basically
+training data is used to build the model and once the model is built you want to check the performance
+of the model on the testing data set right so in testing data set you forget about the class label for
+some time and let machine learning model do the prediction classification model do the prediction and
+then whatever prediction the model has done and whatever were the original labels are checked if both are
+matching then your model was of good quality otherwise the model was of bad quality right so we train the
+model on the training data set then sometimes we do validation as well and then finally we are going to
+confirm the result on the test data set so in this case right we had x consists of three attributes a1
+a2 a3 and what we want to predict is whether the customer has cheated or not right so in training phase we build a
+model based on the training data original data divided into two parts one used for training one used for testing right this is more of a representative breakage but we do sampling with replacement to build right without replacement to build training data and test data and on training data we build the model on test data we actually test our model so this is testing done on testing data we check whether the prediction ball is matching with the original labels on the test data and on the test data we actually test our model so this is testing done on testing data we check whether the prediction ball is matching with the original labels on the test data and on the test data we actually test our model.
+test our model so this is testing our model so this is testing done on testing data we check whether the prediction ball is matching with the original labels or not if it is not then the model is of bad quality.
+test our model is matching with the original labels and we check whether the prediction ball is matching with the original labels or not if it is not the model is matching with the original labels or not if it is not the model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.
+test our model is matching with the original labels.

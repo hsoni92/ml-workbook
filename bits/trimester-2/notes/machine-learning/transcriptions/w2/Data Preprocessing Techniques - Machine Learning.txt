@@ -1,0 +1,112 @@
+Hello to all of you. My name is Dr. Hemant Rathar and we are in the course Machine Learning. We are discussing Module 2, Data Pre-processing and there is the fourth video. In this we are going to talk about data pre-processing techniques.
+So the learning objective of this video is we are going to look into four major tasks of data pre-processing. Data cleaning, data integration, data transformation and data reduction. We will look into common methods to handle missing values and handle noisy data. We will also look into data integration, data transformation methods. So let's start right away.
+So we started with that real world data is always messy, is of poor quality. Then we also looked into if data is of poor quality, then the model will also be of poor quality. Garbage in, garbage out. To improve the quality of the raw data, we perform data pre-processing steps. Data pre-processing is not a single action, it is set of tasks.
+So in this I am talking about four different categories of tasks, but there might be few more. So the four tasks which we are going to discuss today are data cleaning, data integration, data transformation and data reduction.
+So data cleaning means if there are any missing values, if there is any smooth noise, how can we smooth them, how can we identify the outliers, how can we resolve the inconsistency. So all these steps will come under data cleaning. There might be few more. Data integration means again it is a step, right. It is a set of tasks in data pre-processing where when we merge data from multiple sources, how can we integrate the data?
+data data transformation is another task group of tasks where we can perform normalization we can
+perform aggregation and data reduction is another set of tasks where we can perform reduction in
+data or in terms of both attributes and in terms of both tuples right by maintaining the data
+integrity right so let's start with the first task right so as i said data pre-processing is
+not a single action this set of tasks and there are thousands of tasks we are discussing few of them
+here right the first task is to clean the data now cleaning the data means the goal of cleaning the
+data is to clean up the data by addressing some data quality issues right that we discussed in the last
+video in this we will focus right now on handling missing values and handling noisy data so if there
+are few missing values how can we handle them and if there is some noisy data how can we reduce the
+effect of noise in the data set so missing values can be handled by ignoring a tuple right so if i have
+a tabular data set and some of the fields here are missing i can ignore the tuple directly right so
+sometimes we do this again very simple but sometimes we do that this all the time sometimes we do that
+right another way of handling missing data is to fill out the missing values manually this is a very tedious
+and always sometimes often infeasible task that means filling out the missing values by looking at the
+huge data set might be very tedious and might be infeasible if you have a huge huge data set so but you
+can do that right so the idea is there are few tuples few fields missing in the original data one way you
+can handle them you know the tuple another way you can handle them fill the missing values manually or
+you can fill the missing values using global constant so you say that in a particular attribute if any
+missing value would be there i will fill it with abc right so you can set a global constant and then
+fill the missing values you can use uh local constants as well right on a group of tuples so global constant
+works on all the tuples local constant works on a limited number of tuples use central tendency uh for
+example if there is a missing field missing value in salary column can i take an average and then fill the value so
+i can fill the numerical data by mean median etc etc so you fill the missing value by looking at the
+central tendency of the attribute central tendency can be defined with the help of mean median etc etc or you
+can write conditional statement as well if a equals to one then if b is missing fill it with two something of
+that sort so you can write some sort of conditional statement you can even build a model to fill the missing values
+sometimes people do that so in data cleaning we can first thing we are handling is how to handle missing
+values and these are some of the steps to handle missing value now second thing in data cleaning is how to
+handle noisy data so let's suppose there is one point which is noisy in the original data how can i handle
+that one way of handling the noisy data is to smoothen the noise can we smoothen the noise or reduce its impact so we
+see what we saw right this example in the last video right and this was changing my statistical one of the
+statistical measure like average drastically right so this was the problem how can i smoothen the noise here
+so if this is instead of outlier this is a noisy point i can smoothen it with the help of binning or regression or some other way right so in binning what we do is we sort the all the data points partition the data points
+into bins or buckets then smoothen the data inside each bin with the help of mean median and boundary
+and boundary and this is called local smoothing method right so i can take average here i can take average here i can take maybe
+maybe this is five average here and then try to smoothen the effect of noise in the data set i can use regression
+fits the data to a regression function and the regression line itself will represent the smoothened data or outline analysis that means you detect the noisy points and then handle them separately right so cluster
+cluster the data points and identify the values that are falling outside the clusters right so if they are falling outside the clusters these might be noisy points and if these are noisy points you want to handle them properly but before that once you have identified that these are outside the clusters these might be potentially noise and then you have to handle them appropriately so this is the example of binning which we have seen in the last course as well right so let's suppose these are my data points first i'm going to create bins so bin
+i'm creating three bins each of size three and then inside the bin i can fill replace the original values with the mean value mode value boundary value etc etc now second step in data pre-processing is data integration data integration is done when we involve when we merge data from multiple sources when we take data and merge it from multiple sources then we have to be very very careful i gave you an example of aadhar in the last semester think about it
+we spend millions of rupees right to uniquely identify citizen of this country or maybe people of this country right and to do that right they could have done it with other id cards as well but when they try to merge right to think about it let me just repeat the problem statement again right indian government has been issuing various id cards for example voter id card passport ration card
+driving license etc etc right now let's suppose government of india wants to build a policy
+and in that policy one of the requirement is can i identify different uniquely identify different
+all the people of this country uniquely identify identification can i do that right now you can
+see that some of the people are registered in voter id some of the people are registered in
+passport and there might be some intersection but there might be some overlap but these all
+these tables are distinct so one way to uniquely identify all the people of this country is to
+merge all these data sets and then create a master data set right now government of india did try to
+do that but this led to lot of data integrity issues right lot of data integrity issues it led to entity
+identification problem data value conflicts redundancy and because of this this master table was discarded
+the idea of merging multiple data sets was discarded and new collection of new data from scratch in case of in this case it is aadhaar was done right because data integration is a very tedious and time consuming process so what can be issues in data integration integration
+how do you identify different attributes properly right data value conflict right data value conflict right in one tuple right name is written as john spith in another tuple the same person is written as jd smith this happens right in our id cards same name same person two different names
+different names Hemant R, H Rattor, Hemant Rattor. Three ID cards, three different names, same person.
+This will lead to a lot of inconsistency in the data and data might be this if we merge it binary
+this will lead to redundancy in the data. The third task in data pre-processing is called data
+transformation. Data transformation involves converting data into a form that is making it
+appropriate for data mining algorithms. So it is not about fixing the errors it is about changing the data scale and structure to help the machine learning algorithm. To help the further machine learning algorithm. So common data transformation methods are normalization or aggregation. So what do you mean by normalization? Data normalization means we do not want one attribute which is having large
+magnitude of attribute values dominate the calculation. For example we see any distance based algorithm. Maybe it is a Euclidean distance or any distance based computational algorithm in machine learning will suffer from data if data normalization is not done. If one attribute is having values of higher magnitude it will start to dominate the calculation. For example age the attribute values can be will be in the range of 1 to 100. Income on the other hand
+the attribute values can be from 90 000 to 50 000 to 50 lakh or so on. So here income will become a dominant attribute because the magnitude of attribute values in income is of higher magnitude and it will have much higher effect in distance based calculation. So reason one is to we do normalization. Reason number one is to prevent attributes with large value to not dominate the calculations and to speed up
+reason number two is to speed up the training process in machine learning models. So there are various normalization methods like min max normalization. In min max normalization we perform linear transformation on the original data and map it in a new range. The formula preserves the relationship between the original values and the transformed value. The formula of min max normalization is transformed value is equal to original value minus minimum
+original values divided by max minus minimum divided by new max minus new min plus new min.
+right we have seen various numericals of this and this help us in transforming the data in a new
+range right so original data let's suppose was in this range i can transform and all the values in
+this attribute in a new range maybe from one to two i can do that sort of a transform transformation
+so this becomes new min this becomes new max and i can perform this sort of a transformation z-score
+transformation is another type of normalization which can help us in improving the machine learning
+model transform the data set z-score transform the data set based on mean and standard deviation
+so min max normalization performed transformation based on minimum and maximum value in the attribute
+z-score normalization on the other hand will normalize the data based on the mean and the
+standard deviation of the attribute the resultant value would be based on mean and the standard
+deviation right be in between mean and the standard deviation right so v dash right transform value is
+equal to original value minus mean divided by standard deviation of the particular attribute right so
+another thing we perform in data transformation is data aggregation so in data transformation we might
+do normalization we might do data aggregation why do we do data aggregation data aggregation can be can be done
+based to do data reduction to reduce the amount of data can be done to change the scale aggregate right so if i
+have city level data can i aggregate it make it state level can i make it country level can i make it continent
+level if i have quarterly sales can i aggregate the data into yearly data and so on how does it help it can make
+my data much more stable so aggregate data tends to be having much more stable tends to be more stable
+and will have is expected to be have will have less variability fourth task in data pre-processing is data
+reduction can we reduce the amount of data why we want to reduce the amount of data the goal is the
+representative data reduced representative data is much smaller in volume and actually maintains the
+integrity of with the as compared to the original data so if you have a lesser data that computational
+resources and the time which is taken to build a model on it will also reduce so complex data
+analysis and mining takes on huge amount of data might be time consuming and might be impractical and
+infeasible so if you have a huge amount of data right if you have a huge amount of data building a model on it
+might be very time consuming might be sometimes impractical and infeasible so what you do is you do data
+reduction right so you reduce the data in terms of either column or rows or both so the reduced data
+should be as effective as the original data right should have same integrity same property almost same
+property as of the original data so i can do data reduction using dimensionality reduction dimensionality
+reduction means i have 15 dimensions 15 feature in my data set i am saying i'm going to use only 10 5
+i will discard the least most important features can be discarded the most important features can be
+taken into account to build the model so reduce the amount of attributes reduce the number of
+attributes or dimensions and that can be done by identifying irrelevant attributes or by finding
+redundant attributes irrelevant attributes means that attributes or features that are not used for a
+particular type of analysis for a particular type of prediction for example predicting gpa doesn't depend
+on student id so it is an irrelevant attribute right in this case it is an irrelevant attribute to for
+calculating the gpa so student id can be discarded redundant attribute means two in attribute containing
+almost same information redundant information and that can be identified and reduced so if i want to do
+attribute reduction i can do something called there are various ways one way is attribute sub selection you
+take a subset of the attribute right so you can follow let's suppose you have 15 attributes i'm going to
+take best subset of the original attribute to build the final model i can use a greedy strategy like forward
+selection backward elimination to select a subset of attributes or i can use a decision tree based induction so all
+these we have seen in the last course as well let's suppose i have six attributes i want to select a subset which is most prominent for my use case right so how i'm going to do in forward selection i start with the empty set and i continue adding two attributes and just continue measuring the performance the optimal subset can be chosen similarly backward elimination and so on now one way is reduce the number of attributes another way of reducing the data size or data reduction is
+we do number reduction so i can build histogram or i can do clustering or i can do sampling to reduce the amount of data or size of data right so one way is sampling can i do sampling to reduce the amount of data right yes i can do that i can do it sampling is use principle is use a representative sample which will work almost as good as the original data set right so you have original data set
+you say i'm going to take a subset you say i'm going to take a subset but both these are almost same so this is a representative sample this is the original sample and both are almost same right almost has the same property and i can do it with the various sampling methods like simple random sampling or stratified sampling so i can do simple random sampling with replacement without replacement all these things we have seen in the last course right so data pre-processing when we talk about right in real world we start with
+the raw and messy data right if we work on raw and messy data it will lead to poor quality results so we start with cleaning the data by handling the missing values while integrating we should be careful we should perform data transformation we should reduce the size to an appropriate size and that will make our data set high quality and which can be used for analysis in the future which can be used to build the model in the future so in summary in this video
+we talked about different steps of data pre-processing which include data cleaning data integration data transformation data reduction we looked into how can we reduce the data in both in terms of objects attributes how do we clean the data what should be done while doing data integration and what are the different transformation methods we will continue in the next module take care bye bye
+you
