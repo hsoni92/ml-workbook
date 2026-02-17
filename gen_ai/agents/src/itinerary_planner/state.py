@@ -46,6 +46,7 @@ class TransportLeg(TypedDict, total=False):
     departure: Optional[str]
     arrival: Optional[str]
     estimated_cost: Optional[float]
+    flight_details: Optional[str]  # airlines, flight numbers from search snippets
 
 
 # --- Accommodation ---
@@ -56,6 +57,7 @@ class AccommodationStay(TypedDict, total=False):
     city: str
     nights: Optional[int]
     estimated_cost_per_night: Optional[float]
+    address: Optional[str]
 
 
 # --- Prices summary ---
@@ -83,6 +85,7 @@ class ItineraryTransport(TypedDict, total=False):
     arrival: str
     duration_minutes: int
     estimated_cost: Optional[float]
+    flight_details: Optional[str]
 
 
 class ItineraryAccommodation(TypedDict, total=False):
@@ -91,6 +94,7 @@ class ItineraryAccommodation(TypedDict, total=False):
     check_out: str
     nights: int
     estimated_cost_per_night: Optional[float]
+    address: Optional[str]
 
 
 class ItineraryOutput(TypedDict, total=False):

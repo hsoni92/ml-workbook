@@ -35,10 +35,15 @@ def main() -> None:
     }
 
     logger.debug("Invoking graph with user_message length={}", len(user_message))
-    result = graph.invoke(
-        initial_state,
-        config={"callbacks": [LLMLoggingCallback()]},
-    )
+
+    try:
+        result = graph.invoke(
+            initial_state,
+            config={"callbacks": [LLMLoggingCallback()]},
+        )
+    except KeyboardInterrupt:
+        print("\nInterrupted, exiting.")
+        sys.exit(130)
 
     if result.get("error"):
         logger.error("Planner error: {}", result["error"])

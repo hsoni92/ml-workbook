@@ -8,6 +8,7 @@ from itinerary_planner.llm import (
     chat_structured,
     is_openrouter_auth_error,
 )
+from itinerary_planner.constants import DEFAULT_CURRENCY
 from itinerary_planner.prompt_garden import ADD_PRICES_PROMPT
 from itinerary_planner.state import (
     AccommodationStay,
@@ -31,7 +32,7 @@ def add_prices(state: PlannerState) -> dict:
     logger.debug("add_prices started")
     parsed = state.get("parsed") or {}
     budget = parsed.get("budget", "mid-range")
-    currency = "INR"
+    currency = DEFAULT_CURRENCY
 
     transport_legs: list[TransportLeg] = state.get("transport_legs") or []
     accommodation: list[AccommodationStay] = state.get("accommodation") or []

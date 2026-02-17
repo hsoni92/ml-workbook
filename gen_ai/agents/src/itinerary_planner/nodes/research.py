@@ -6,7 +6,21 @@ from pydantic import BaseModel, Field
 from itinerary_planner.llm import chat_structured
 from itinerary_planner.prompt_garden import EXPAND_COUNTRY_PROMPT
 from itinerary_planner.state import PlannerState
-from itinerary_planner.tools import web_search
+from itinerary_planner.tools import web_search, search_flights
+
+
+def _date_to_dd_mm_yyyy(iso_date: str) -> str:
+    """Convert YYYY-MM-DD to DD-MM-YYYY for flight search."""
+    if not iso_date or len(iso_date) < 10:
+        return iso_date
+    try:
+        parts = iso_date.strip()[:10].split("-")
+        if len(parts) == 3:
+            y, m, d = parts[0], parts[1], parts[2]
+            return f"{d}-{m}-{y}"
+    except Exception:
+        pass
+    return iso_date
 
 # Static map: country name (lowercase) -> list of representative regions/cities
 COUNTRY_REGIONS: dict[str, list[str]] = {
@@ -138,10 +152,43 @@ def research(state: PlannerState) -> dict:
                     else:
                         transport_by_leg[leg_key] = "No transport search results (search unavailable or rate limited)."
 
+    # Flight search is guaranteed for bookend legs when origin and dates are set (research node).
+    # flight_search_legs then runs for all transport legs with mode=flight. Together they are the source of truth for flight_by_leg.
+    flight_by_leg: dict[str, dict] = {}
+    start_date = (parsed.get("start_date") or "").strip()
+    end_date = (parsed.get("end_date") or "").strip()
+    if origin and destinations and start_date and end_date and len(start_date) >= 10 and len(end_date) >= 10:
+        dep_dd_mm_yyyy = _date_to_dd_mm_yyyy(start_date)
+        ret_dd_mm_yyyy = _date_to_dd_mm_yyyy(end_date)
+        first_dest = destinations[0]
+        last_dest = destinations[-1]
+        if first_dest.lower() != origin.lower():
+            outbound = search_flights(origin, first_dest, dep_dd_mm_yyyy, ret_dd_mm_yyyy)
+            if outbound:
+                flight_by_leg[f"{origin} to {first_dest}"] = outbound
+        if last_dest.lower() != origin.lower():
+            return_leg_key = f"{last_dest} to {origin}"
+            if return_leg_key not in flight_by_leg:
+                return_flight = search_flights(last_dest, origin, dep_dd_mm_yyyy, ret_dd_mm_yyyy)
+                if return_flight:
+                    flight_by_leg[return_leg_key] = return_flight
+
+    existing_research = state.get("research") or {}
+    agent_summary = (existing_research.get("agent_summary") or "").strip()
+    hotels_by_location = existing_research.get("hotels_by_location") or {}
+    agent_flight_by_leg = existing_research.get("flight_by_leg") or {}
+    merged_flight_by_leg = {**agent_flight_by_leg, **flight_by_leg}
+
     research_notes = {
         "destinations": destinations,
         "notes_by_destination": notes_by_destination,
         "transport_by_leg": transport_by_leg,
         "notes": "Web search used for destination tips and opening hours." if notes_by_destination else "No external research data.",
     }
+    if merged_flight_by_leg:
+        research_notes["flight_by_leg"] = merged_flight_by_leg
+    if hotels_by_location:
+        research_notes["hotels_by_location"] = hotels_by_location
+    if agent_summary:
+        research_notes["agent_summary"] = agent_summary
     return {"research": research_notes}

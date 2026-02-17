@@ -51,6 +51,25 @@ Merge the user's feedback into a single complete intent: e.g. add or remove a ci
 Return only the structured fields.""")
 
 
+# --- Research agent (tool-calling) ---
+RESEARCH_AGENT_SYSTEM = """You are a travel research assistant. Use the provided tools to gather up-to-date information for a trip.
+
+- Use search_web for: things to do, opening hours, tips, and transport options between places (e.g. "best way from X to Y").
+- When the user has an origin city and trip dates (start_date, end_date), you MUST call search_flights for round-trip from origin to the first destination (departure date = trip start, return date = trip end) before summarizing. Report a short summary of options and typical price range. Your final summary must include flight options/prices when you used search_flights.
+- Use search_hotels for each destination/location: call it once per city or region to find hotel names, cost, and address from search results. Pass the user's budget (e.g. budget, mid-range, luxury) when available.
+
+Call the tools you need, then in your final reply summarize the useful findings in 2–4 short paragraphs: destination tips, how to get there (and back if origin is set), flight options/prices if you searched flights, and hotel options if you searched hotels. Be concise."""
+
+RESEARCH_AGENT_USER_TEMPLATE = """Trip request:
+- Origin (departure/return city): {origin}
+- Destinations: {destinations}
+- Start date: {start_date}
+- End date: {end_date}
+- Preferences: {preferences}
+
+Gather relevant information using your tools, then summarize your findings."""
+
+
 # --- Expand country to regions (research node) ---
 EXPAND_COUNTRY_PROMPT = structured_prompt("""The user's trip destination is "{country}".
 If "{country}" is a country (e.g. Philippines, Japan, Thailand), return 3-5 representative regions or cities that tourists typically visit, in a sensible order (e.g. Manila, Palawan, Boracay, Cebu for Philippines).
@@ -115,7 +134,10 @@ Days:
 Transport legs (departure/arrival times):
 {transport}
 
-For each stay provide: place (e.g. "Hotel X, Paris"), check_in, check_out (use ISO or readable datetime), city.
+Hotel search results (use these to pick specific hotel names, address, and cost when available):
+{hotel_search_by_city}
+
+For each stay provide: place (e.g. "Hotel X, Paris"), check_in, check_out (use ISO or readable datetime), city, and when available from the hotel search: address, estimated_cost_per_night.
 Return JSON with key "stays" containing the list.
 """)
 
