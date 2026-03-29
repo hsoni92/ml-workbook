@@ -195,7 +195,6 @@ def try_load_key_from_repo(root: Path) -> None:
 
 def get_fernet() -> Fernet:
     raw = os.environ.get(ENV_KEY)
-    print(f"secure_vault: raw key: {raw}")
     if not raw:
         print(
             f"secure_vault: set {ENV_KEY} (export, or add {ENV_KEY}=... to repo-root .env, "
@@ -359,8 +358,36 @@ def check_staged(root: Path, secure_paths: list[str], allow: set[str]) -> None:
         sys.exit(1)
 
 
-def cmd_pre_commit(root: Path, fernet: Fernet, rel_paths: list[str], allow: set[str]) -> None:
-    cmd_encrypt(root, fernet, rel_paths)
+def assert_vault_clean(root: Path, rel_paths: list[str]) -> None:
+    """Exit with an error if any plaintext file under secured paths would be encrypted."""
+    rr = root.resolve()
+    bad: list[str] = []
+    for rel in rel_paths:
+        target = (root / rel).resolve()
+        try:
+            target.relative_to(rr)
+        except ValueError:
+            print(f"secure_vault: path escapes repo root: {rel}", file=sys.stderr)
+            continue
+        if not target.exists() or target.is_symlink():
+            continue
+        for path in files_to_encrypt(root, target, rel):
+            rp = rel_posix_under_root(root, path)
+            if rp is not None:
+                bad.append(rp)
+    if bad:
+        print(
+            "secure_vault: secured paths must contain only ciphertext (.enc) or gitignored files; "
+            "plaintext files remain. Run: python scripts/secure_vault.py encrypt",
+            file=sys.stderr,
+        )
+        for b in sorted(set(bad)):
+            print(f"  {b}", file=sys.stderr)
+        sys.exit(1)
+
+
+def cmd_pre_commit(root: Path, rel_paths: list[str], allow: set[str]) -> None:
+    assert_vault_clean(root, rel_paths)
     check_staged(root, rel_paths, allow)
 
 
@@ -377,21 +404,21 @@ def main() -> None:
     )
     sub.add_parser(
         "pre-commit",
-        help="Encrypt then verify index (only .enc under secured paths).",
+        help="Verify working tree and index (only .enc under secured paths).",
     )
     args = parser.parse_args()
 
     root = git_toplevel()
-    try_load_key_from_repo(root)
     rel_paths, allow = load_config(root)
-    fernet = get_fernet()
 
     if args.command == "encrypt":
-        cmd_encrypt(root, fernet, rel_paths)
+        try_load_key_from_repo(root)
+        cmd_encrypt(root, get_fernet(), rel_paths)
     elif args.command == "decrypt":
-        cmd_decrypt(root, fernet, rel_paths)
+        try_load_key_from_repo(root)
+        cmd_decrypt(root, get_fernet(), rel_paths)
     else:
-        cmd_pre_commit(root, fernet, rel_paths, allow)
+        cmd_pre_commit(root, rel_paths, allow)
 
 
 if __name__ == "__main__":

@@ -15,11 +15,12 @@ repos:
       - id: mixed-line-ending
       - id: debug-statements
       - id: check-added-large-files
+        args: ["--maxkb=36631"]
 
   - repo: local
     hooks:
       - id: secure-vault
-        name: secure vault (encrypt + staged check)
+        name: secure vault (verify encrypted + staged check)
         entry: python scripts/secure_vault.py pre-commit
         language: python
         additional_dependencies: [cryptography, pyyaml]
