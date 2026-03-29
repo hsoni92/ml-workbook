@@ -1,0 +1,12 @@
+# Repo-relative directories or files to include in the secure vault.
+# Each regular file is encrypted in place to basename.enc (original name + extension preserved).
+# Paths ignored by Git (.gitignore, etc.) are skipped.
+# Staged: under a secured path, only .enc files (unless allow_staged_non_enc).
+paths: [
+  "bits-pilani/trimester-2/assignment-1",
+  "bits-pilani/trimester-1/assignments"
+]
+
+# Exact repo-relative paths allowed to be staged without .enc (rare exceptions).
+allow_staged_non_enc:
+  - secure.yaml

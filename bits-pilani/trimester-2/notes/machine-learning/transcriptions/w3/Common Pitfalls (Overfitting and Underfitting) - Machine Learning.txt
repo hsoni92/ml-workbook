@@ -1,0 +1,75 @@
+Hello to all of you. My name is Dr. Hemant Rathaur and we are in the course Machine Learning. We are in the module 3, Introduction to Machine Learning. And this is video 4. We will talk about common pitfalls focusing on overfitting and underfitting issues in classification models.
+So, the learning objective of this video is we will look into the concept of underfitting and overfitting in case of classification problems. So, what we have studied till now? The first thing we studied is that given some dataset, first you break that dataset into two parts, strain part and test part. Then build a module F on it. Once the F is built, then we measure the performance of that module F using model evaluation parameters.
+The way we are going to measure the performance of various classification models are accuracy, speed, robustness, scalability and interpretability. Moving further, let's try to understand what are the common issues or problems when we build a classification model. So, there are two very common problems when we build a classification model.
+One is called underfitting and second one is called overfitting. These are very common issues, failure modes and we want to understand them. So, let me try to explain them in a very simplistic way. So, let me draw a graph. On x-axis, I have model complexity.
+Model complexity means that when we are using a classification algorithm to build a classification model, the model can be of various complexity. We will discuss about model complexity when we discuss classification algorithms properly. Right? That we will see from module 4 onwards. But on x-axis, I am plotting model complexity. A model can be of less complexity, can be of less complexity.
+Can be of higher complexity. And on y-axis, I am plotting error. Right? Error means the performance matrix we have seen earlier, how much error it is generating. Now, there are two types of errors essentially when we are building classification models. One is called train error. And another one is called test error.
+What do you mean by train error? Train error? Train error is when you train the model on training data.
+And on test it on training data. And test it on training data.
+So, there are two types of errors essentially when we are building classification models. One is called train error.
+One is called train error. And another one is called test error. What do you mean by train error? Train error is when you train the model on training data.
+And test it on training data. And test it on training data. Please note, when you train the model on training data. And test also that model on training data. Right? This is a bit different from what seen earlier. Test error is what? When you train the model on trained data.
+When you train the model on trained data. But you test it on test data. That is why it is called test error. Right? So train error is when you train the model on training data. And you test it on the same data. That is called train error. Test error is when you train the model on trained data. But you test it on test data. Right? When I plot this train data and test data on this graph, it would look something like this.
+So this is my train data. This is my train data. Sorry. This is my test. Test. Or test error. Let me call it as test error. And this is called as train error.
+So let me try to explain to you in this graph. Right? So when the model complexity is low. That means the model is too simple. So given a data set, you have very simple model. Now given a complex data set, if you have a very simple model, the model will not be able to learn the data properly. If it is not able to learn all the patterns, it will give you high error.
+high both train error and test error. So model complexity means the model is simple. But the data set essentially is complex. If the data set is complex, model is simple, model will not be able to learn the data properly. So it will give you high train error and high test error. High train error means it will perform poorly on the training data set. And it will perform poorly on the test data set as well while testing the performance. Right? So it will give you high train error.
+and high test error. High train error means it will perform poorly on the training data set
+and it will perform poorly on the test data set as well while testing the performance.
+Right now if you increase the model complexity right so now my model is also complex data is
+also complex if you increase the model complexity that test error will gradually come down and will
+start to increase. Right this is called this is where the test error will be and on similarly right as you
+increase the model complexity initially the train error will come down and it will subside it will
+it will merge with the x-axis. Why this is happening? Because you have over learned the data. This zone
+is typically called as over fitting. In simple terms over fitting means that you had some data you had
+some model complex model complex algorithm you have built a complex algorithm which has over learned the
+data. Over learned the data means it has learned the noisy patterns it has learned some bad things from
+the data set it has over learned the data it has done maybe wrote learning on the data if it has over learned the data it will give you very less error on the original data set on the original train data set because you have learned from the data set you are testing on the same data set so the error would be negligible would be zero but as you just change the data set from train data set to test data set during testing time now these two data sets are different right different these are different.
+So if you have done road learning if you have done road learning if i give you exactly the sample which was there in the original training data set you will do correct prediction but if i give you a sample which is not there in training data set you will start to perform poor so this is called over fitting you have over learned the data this zone is called under fitting
+under fitting when you have higher train error and higher test error when you have higher test error and higher test error and higher test error. Over fitting means when you have higher test error but lower train error. In ideal world the classification model should be trained here. Right? Should be trained here. Where both train error and test error are actually overlapping or are very close to each other. This zone is called over fitting we do not want to reach here. This zone is called under fitting we also do not want to reach here.
+So under fitting means when the model is when the model is too simple and is not able to learn the data properly. So high train error and high test error. Over fitting means the model is too complex. It has over learned the data. It has learned the noisy patterns. It has learned minute things which we do not want. We want to make our model generalized. The model should be generalized. It should perform fairly well on all the samples. It should not give me zero error. It should give me some error. But it should
+It should be generalized. It should be able to handle all type of cases. It should be generalized. It should be able to handle all type of cases. Right? That is called generalization. We will look into formal definition as we move along. So under fitting means when the model is too simple. When the model is too simple not complex enough to capture the underlying pattern in the data. And in that case under fitting case you have higher train error and higher test error. Your model is not able to run the relationship between input features and output labels. Right? Because the model is simple.
+data set is complex gives you high train error high test error under fitting issues under fitting
+model is not useful because you are not able to predict properly it will give you higher error
+in any case the model is simple the model is too simple for a complex problem right so i have drawn
+it this is called train error this is called test error right this is called under fitting area
+right this is called under fitting area and this area is called over fitting
+so in over fitting what do you mean by over fitting over fitting is just opposite of under fitting
+over fitting is the model is too complex and it started to learn random noise and inaccuracy in
+the training data so it has learned the noisy samples it has learned the inaccuracies in the
+training data rather than learning the true underlying pattern right so my model is essentially
+memorizing the training data rote learning we do not want our model to be doing rote learning it should
+journalize learn the generalized patterns so symptoms of over fitting is it has low train error right but
+high test error low train error low train error high test error right and this is called over fitting and we do
+not want to reach here as well so over fitting model is dangerous because it has learned largely minor details
+from the training data and might fail in the real world because it has not generalized well right another
+representation of over fitting is right look at this binary classification problem two classes positive
+class and dot class blue class and dot class if you see very carefully this tab data set there are some
+positive class samples some dot class samples right now if you look at this data set carefully right all the positive
+class samples are on the right hand side right right hand side of this line and all the dot class samples right
+class samples on the left hand side except this sample right which is of positive class but lying majority or lying in the
+different class right in the dot class so this is a noisy point now if i do over fitting right my classification
+model's boundary would look something like this right just hold right so in ideal world right my classification
+boundary should look like this i should not learn from this noisy point but if the model is over fitting it
+would learn the classification boundary would look like this all samples on left of this line are dot all the
+samples on right of the side are positive so it has over learned the noisy sample and that is what we want to
+avoid in the during classification model training right so it has started learning the noisy samples
+and that will lead to wrong poor test performance so under fitting right under fitting is when the model
+is not complex enough to learn the details properly over fitting is when the model has over learned the
+noisy and outlier and memorize the data training data properly but will perform poorly on the test data
+good fit is when you fit in the middle when you have low training error low test error right somewhere in
+the middle right in case of classification problem can come somewhere here now this is for a particular
+case but if when you draw you will see that right what is the reason of over fitting when you try to learn
+noisy samples right when you try to learn over to learn the samples and you might learn over noisy samples as well
+outliers as well etc etc and that will give you poor classification boundary this is a poor classification
+boundary right so what you want to do is to journalize the data well in the middle so the primary goal of a
+supervised learning algorithm or a model or a classification model is to do proper generalization
+generalization is the model's adaptability to properly learn and make accurate predictions for new and unseen
+samples that are drawn from the same distribution of the data to create the model right so you should be able
+to do proper prediction for the unseen samples whatever run you have learned from the training samples that are not going to exactly come same in the real world deployment as well so you have to generalize well such that for unseen samples that are not going to exactly come same in the real world deployment as well so you have to generalize well such
+such that for unseen samples also you are able to do correct predictions a good food model is good
+is one that generalizes well is has independent test set for measuring the model's performance right so that is why right
+why you are coming in the middle why you are meeting in the middle because in this area your model is trained on a different data set and is tested on a different data set and the error on both the data sets
+are exactly same so error on both the data sets are exactly same means whatever you have learned
+from the training data from the training data if you deploy that in real world you will get the same error so on training data right you have some x error if you deploy that in real world and you get the same error this is called well generalization good generalization if you train the model right and you over learn the data it will perform good at the training time as you deploy it in real world it will start to give poor performance so low training error high testing error and that is what we do in overfitting what happens in overfitting.
+And that is what we want to reduce in overfitting issues. So in this video we talked about overfitting and underfitting issues and in real world classification model should be generalized well should be avoided for overfitting and underfitting issues. We will continue in the next video. Take care. Bye bye.
+Bye bye.

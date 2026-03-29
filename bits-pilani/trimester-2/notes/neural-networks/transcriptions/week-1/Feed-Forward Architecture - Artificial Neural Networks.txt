@@ -1,0 +1,35 @@
+Hello everyone, welcome back to module 1 of Artificial Neural Networks. In this video,
+we will discuss the feed-forward architecture. By the end of this video, you will be able to
+define a feed-forward neural network, you will identify its core building blocks, weights,
+bias and layers and you will recognize why this architecture forms the foundational structure
+of modern neural networks. So far, we have seen the basic building blocks of a neural network,
+weights, bias and layers. Now, we put these pieces together to form the simplest and most
+fundamental neural network architecture called as a feed-forward neural network. The term feed-forward
+simply means that information flows in only one direction, from the input layer through one or
+more hidden layers and finally to the output layer. There are no loops, no feedback connections and no
+dependence on past outputs. This one-way flow makes feed-forward networks easy to understand,
+easy to compute and the foundation of most modern neural network models.
+Structurally, a feed-forward neural network is organized as a stack of layers. Each layer is connected only to the next layer in the sequence. Every neuron in one layer takes inputs from the previous layer, applies weights and bias and sends its output forward to the next layer. Because of this one-directional flow, the entire network forms a directed acyclic graph.
+There is a clear start point at the input layer and a clear endpoint at the output layer.
+Now, let us go back to our example of house price prediction to clearly see how this feed-forward flow works.
+At the input layer, we feed in raw features such as size of the house, number of bedrooms and the distance from the city center.
+These inputs are passed to the hidden layer or multiple layers where they are combined using weights and bias to form internal features such as spaciousness or location quality.
+Finally, the output layer takes these internal representations and produces a single number which is the predicted house price.
+So, the information flows step by step from raw features to abstract features and to the final prediction.
+At no point does information move backward or in a loop.
+This architecture is called feed-forward because each layer depends only on the output of the previous layer.
+A neuron never depends on its own past output or the output of any neuron in a future layer.
+This creates a clear computational pipeline where each layer performs one stage of transformation and hands the result forward.
+This one-way flow is extremely important because it simplifies the forward computation, avoids circular dependencies and forms the basis for efficient learning algorithms that we will study later in this course.
+By stacking multiple layers, feed-forward networks can represent highly complex and non-linear functions even though each individual neuron is very simple.
+Each additional layer increases the depth of computation and the level of abstraction in the learned representation.
+This is why feed-forward networks are widely used for regression tasks such as house price prediction, classification tasks and general feature learning.
+The key idea here is very simple.
+Complex behavior emerges from the composition of many simple transformations.
+Now, let us summarize the main points of this video.
+A feed-forward neural network passes information strictly from the input layer through hidden layers to the final output layer in one direction only.
+It is built using the same three components we studied earlier, weights, bias and layers.
+Hidden layers enable the network to learn hierarchical representations which is the source of its expressive power.
+This feed-forward structure forms the core architecture of most neural networks that we use in practice today.
+In the next video, we will move from structure to application and see where artificial neural networks are used in the real world systems.
+Thank you.

@@ -1,0 +1,38 @@
+Hello everyone. Welcome back to module 5 of Artificial Neural Networks. In this video,
+we will try to answer an important question. What does backpropagation actually compute?
+By the end of this video, you will learn what quantity backpropagation actually computes
+inside a neural network. You will understand what a gradient really represents as a sensitivity or
+responsibility signal. You will clearly distinguish backpropagation from optimization and you will
+interpret the sign and magnitude of a gradient using a simple numerical example.
+A neural network contains a very large number of parameters, its weights and biases. A forward
+pass combines all of these parameters to produce a single prediction. If the prediction is wrong,
+a fundamental question arises. Which parameters are responsible for the error and by how much?
+Backpropagation exists to answer exactly this question. It computes a precise responsibility
+signal for every single parameter in the network. To improve the network, we need to know two things
+about every parameter. First, should it increase or decrease and how strongly should it change?
+To answer this, we need a quantity that measures how sensitive the output error is to each parameter.
+This sensitivity quantity is called the gradient. At a high level, a gradient answers a very simple question.
+If I change this parameter just a little, how much will the error change?
+For every weight and bias, backpropagation computes a partial derivative. This derivative tells us the direction in which the parameter should move and the strength of its influence on the error.
+Backpropagation does exactly one thing. It computes a set of gradients, one for every parameter.
+These gradients are the only information required by any learning algorithm to perform parameter updates.
+Let us interpret what a gradient really means physically.
+For a parameter theta, if the gradient is positive, increasing theta will increase the error. If the gradient is negative, increasing theta will decrease the error. If the gradient is 0, theta has no local effect on it.
+The magnitude of the gradient tells us how strongly sensitive the error is to the parameter.
+Let us now look at a very small numerical example to make this concrete. Suppose a model output depends on a single parameter and it is given by y equals wx. Let us say that for x equals to 2, the true value of y is 10. To start with, we do not know what is the value of y.
+So, we do not know what is the correct value of y. So, we initialize it randomly with value 1.
+Now, for w equals 1 and x equals to 2, y predicted would be 2 times 1 which is equal to 2.
+Now, we define a simple error measure e given by y minus y true square. Now, substituting for y, we get e equals wx minus y true square.
+Here, we know that y true is equal to 10. So, e becomes wx minus 10 square. Now, we want to compute the quantity dE by dw. So, dE by dw here is 2 wx minus 10 times x.
+Since the value of x is 2, so it becomes 2 times wx minus 10 times 2. This is the gradient that backpropagation would compute for this parameter in the simple situation. Now, let us interpret this result at a specific value. For w equals to 1 and then y equals to 2. Here, error is 2.
+So, 2 minus 10 square is 2 minus 10 square which is 2 minus 10 square which is 2 minus 10 square which is 64. Now, let us substitute the value of w in the gradient also. So, dE by dw becomes 2 times 2 minus 10 into 2.
+The gradient is negative which means that increasing w will reduce the error. The magnitude 32 tells us that the sensitivity is strong. This single number minus 32 already tells us which direction to move w and how strongly the error reacts to the changes in w.
+We know which direction each parameter should move w and how aggressively that movement should be. Every training algorithm from basic gradient descent to advanced modern optimizers starts from the gradients produced by backpropagation. Without gradients, learning cannot proceed. Now, let us summarize the main points.
+of this video. Backpropagation computes gradients of the error with respect to every parameter in
+the network. A gradient tells us how sensitive the error is to the parameter, including the
+direction and the strength of influence. Backpropagation itself does not learn, it only
+provides the information required for learning. Now that you understand what backpropagation
+computes, the next step is to understand how it computes these gradients. In the next video,
+we will introduce computational graphs and local gradients, which show how large and complex
+networks can systematically apply the chain rule to compute all these gradients efficiently.
+Thank you.

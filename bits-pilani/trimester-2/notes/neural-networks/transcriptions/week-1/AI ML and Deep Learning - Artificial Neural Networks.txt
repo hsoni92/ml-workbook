@@ -1,0 +1,29 @@
+Hello everyone, welcome to module 1 of Artificial Neural Networks. In this video, we will discuss
+artificial intelligence, machine learning and deep learning. Let's begin with the learning
+objectives. By the end of this video, you will be able to define and clearly distinguish between AI,
+ML and deep learning. You will also be able to identify where neural networks fit in the overall
+AI ecosystem. Let's begin with a very simple but important question. What exactly do we mean by
+artificial intelligence? Today, the term AI is used everywhere. Chatbots, self-driving cars,
+recommendation systems, even the camera filters on our phones. But for this course, we need a precise
+engineering definition, not a marketing one. In this video, we will clearly place AI, ML and deep
+learning into a single functional framework so that you know exactly where neural networks fit in the
+overall AI ecosystem. From an engineering perspective, an artificial intelligence system is any system that
+perceives its environment, makes decisions and takes actions in order to maximize a defined objective. So, at its core,
+every AI system follows this loop, perception, decision, action and feedback. For example, a self-driving car perceives the road through sensors, decides how to steer and brake and acts through its control system. A recommendation system perceives user behavior, decides what content to show and acts by ranking the items.
+Notice that in this definition, we are not talking about consciousness or human-like thinking. We are purely talking about goal-driven, intelligent behavior implemented computationally.
+Historically, AI has been built using two very different paradigms. The first is symbolic or rule-based AI. Here, intelligence is encoded manually using if-then rules, logics and knowledge bases. This was the dominant form of AI from the 1950s to the late 1980s. Expert systems in medicine and engineering are prime examples of this approach.
+The second paradigm is data-driven AI. The second paradigm is data-driven AI, where the system does not rely on human-written rules. Instead, it learns behavior directly from the data using statistics and optimization.
+The modern AI systems that we have today, whether in vision, speech, language or recommendation, are almost entirely data-driven. And this is where machine learning enters the picture. So, what is machine learning?
+Machine learning is the branch of AI where we allow the system to learn a function from data instead of programming the rules manually. Mathematically, we assume that the system learns a function of the form fxθ, where x is the input data, theta are the model parameters, and f is trained using a loss function and an optimization algorithm.
+Every ML system has four essential components, data, a model, a loss function, and an optimization method such as gradient descent. So, instead of writing rules for decision-making, we optimize the model parameters so that the system performs well on the historical data.
+Since you have already studied machine learning, this formulation should be very familiar to you. Now, coming on to the limitations of classical machine learning. In classical machine learning, the model learns parameters, but the features are designed by humans.
+For example, in computer vision, we manually design features like edges or textures. In text analysis, we use TF-IDF or bag of words. In speech, we use MFCCs. This creates what is called as a feature engineering bottleneck.
+The performance of the model. In the model, the performance of the model often depends more on the quality of handcrafted features than on the learning algorithm itself. Human design features do not scale well when data becomes more complex or dimensionality becomes very high and patterns become highly abstract. This bottleneck is the main reason why we need something beyond classical ML.
+Now, now enters deep learning. Deep learning is a subfield of machine learning where we use deep neural networks to learn not only the model parameters, but also the features and representations themselves. Instead of using a single function of FX, we use a composition of many functions. Each layer transforms the data into a new representation.
+The key difference is this. In classical ML, features are fixed, only parameters are learned. In deep learning, features, representations and parameters are all learned jointly from the data.
+Now, let's clearly settle the relationship between these three terms. Think of them as nested sets. Artificial intelligence is the broadest field. Machine learning is a subset of AI that focuses on learning from the data.
+Deep learning is a subset of machine learning that uses deep neural networks. So, every deep learning system is a machine learning system and every machine learning system is an AI system. But the reverse is not true.
+Neural networks have become the core engine of modern AI because they enable automatic feature learning, high-dimensional representation learning, end-to-end differentiable optimization, and large-scale parameter learning with millions or even billions of parameters.
+Neural networks have become the same. They allow us to train systems directly from raw pixels, audio, text. This capability is what powers the modern computer vision, speech recognition, natural language processing, recommendation systems, and generative AI models.
+Now, let's summarize the main points of this video. Artificial intelligence is the umbrella field of goal-driven intelligence systems. Machine learning is data-driven AI that learns model parameters from the data. Deep learning is machine learning using deep neural networks. And neural networks learn features, representations, and predictions jointly.
+In the next video, we will answer a very important question. Why did deep learning suddenly start working so well, even though neural networks have existed for decades? Thank you.

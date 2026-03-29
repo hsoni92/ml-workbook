@@ -1,0 +1,23 @@
+Hello everyone, welcome back to module 6 of Artificial Neural Networks. In this video,
+we will understand why using a single fixed learning rate throughout the training is often
+suboptimal. You will see how the needs of training change over time and why adapting the learning
+rate becomes important for both speed and stability. The learning rate controls how big a step
+the optimizer takes at every update. It directly affects how fast the model learns, how stable
+the training is, and whether the model converges at all. When we use a fixed learning rate,
+we are implicitly assuming that the same step size is appropriate at every stage of training,
+from the very first update to the final fine-tuning step. In practice, this assumption rarely holds.
+The final fine does not behave the same way from start to the finish. Early in training, the model is far from the
+optimum. Gradients are usually large and taking bigger steps helps the model make rapid progress. Later in the training, the model is close to a minimum. Gradients are smaller and large steps can cause oscillation or prevent convergence. This means that the learning rate we want early on is very different from the learning rate we want near the end. Now, let us look at some of the failure boxes.
+Let us say if the learning rate is too large. Let us say if the learning rate is too large, then the optimizer overshoots the minimum. So, instead of settling down, the updates keep bouncing back and forth. The loss may oscillate or even increase and training can become unstable or diverge completely. This often looks like a loss curve that refuses to go down smoothly. Now, imagine the other extreme scenario. If the learning rate is too large,
+the learning rate is too small. Then, the training becomes painfully slow. The model makes tiny progress at each step, struggles on flat regions of the lost surface and wastes a lot of computation. While this setup is stable, it is highly inefficient and often impractical for large models. A fixed learning rate forces us into a bad compromise. If we choose a large learning rate,
+training starts fast but finishes poorly. If we choose a small learning rate, training is stable
+but extremely slow. What we really want is large steps early when exploration matters and small
+steps later when fine-tuning matters. A fixed learning rate cannot satisfy both these goals.
+This is where learning rate scheduling comes in. Instead of keeping the learning rate constant,
+we change it over time to match the needs of the training. Scheduling allows fast initial learning,
+smoother convergence later, and better final performance. This idea is widely used in modern
+neural network training pipelines. Now, let us summarize the main points of this video. The
+learning rate controls how big each update is. Training has different phases with different needs. A single
+fixed learning rate is a poor compromise. Adjusting the learning rate over time improves both speed and
+stability. This motivates the use of learning rate schedules. In the next video, we will look at popular
+learning rate schedules such as step decay, cosine annealing and warm-up and understand how they are used in practice. Thank you.

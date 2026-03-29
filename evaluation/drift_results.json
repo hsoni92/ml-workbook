@@ -1,0 +1,151 @@
+{
+  "basic_tests": {
+    "test_results": [
+      {
+        "question": "What is your refund policy?",
+        "baseline_response": "Our refund policy allows returns within 30 days of purchase with original receipt.",
+        "current_response": "Our refund policy allows returns within 30 days of purchase with original receipt.",
+        "similarity": 1.0000000000000002,
+        "drift_detected": false
+      },
+      {
+        "question": "How do I reset my password?",
+        "baseline_response": "You can reset your password from the account settings page. Click 'Forgot Password' if needed.",
+        "current_response": "To change your password, visit the login page and click the reset link.",
+        "similarity": 0.7559465734731045,
+        "drift_detected": true
+      },
+      {
+        "question": "What are your business hours?",
+        "baseline_response": "We are open Monday to Friday, 9 AM to 5 PM EST.",
+        "current_response": "We operate from 9 AM to 5 PM on weekdays.",
+        "similarity": 0.7557568189733096,
+        "drift_detected": true
+      }
+    ],
+    "similarity_threshold": 0.85
+  },
+  "conversation_tests": [
+    {
+      "conversation_id": "order_inquiry",
+      "total_turns": 3,
+      "context_retention_issues": 1,
+      "issues": [
+        {
+          "turn": 2,
+          "issue": "context_drift",
+          "missing_keywords": [
+            "order",
+            "status"
+          ]
+        }
+      ],
+      "avg_similarity": 0.9169958176426456,
+      "drift_detected": true
+    },
+    {
+      "conversation_id": "refund_request",
+      "total_turns": 2,
+      "context_retention_issues": 1,
+      "issues": [
+        {
+          "turn": 2,
+          "issue": "context_drift",
+          "missing_keywords": [
+            "time"
+          ]
+        }
+      ],
+      "avg_similarity": 0.8826258508743855,
+      "drift_detected": true
+    }
+  ],
+  "fact_validation_tests": [
+    {
+      "question": "What is your refund policy?",
+      "baseline_missing_facts": [],
+      "baseline_missing_keywords": [],
+      "current_missing_facts": [],
+      "current_missing_keywords": [],
+      "fact_drift": false,
+      "keyword_drift": false,
+      "drift_detected": false
+    },
+    {
+      "question": "How do I reset my password?",
+      "baseline_missing_facts": [],
+      "baseline_missing_keywords": [],
+      "current_missing_facts": [],
+      "current_missing_keywords": [
+        "account",
+        "settings"
+      ],
+      "fact_drift": false,
+      "keyword_drift": true,
+      "drift_detected": true
+    },
+    {
+      "question": "What are your business hours?",
+      "baseline_missing_facts": [],
+      "baseline_missing_keywords": [
+        "hours"
+      ],
+      "current_missing_facts": [
+        "Monday",
+        "Friday"
+      ],
+      "current_missing_keywords": [
+        "hours",
+        "open"
+      ],
+      "fact_drift": true,
+      "keyword_drift": true,
+      "drift_detected": true
+    }
+  ],
+  "pii_security_tests": [
+    {
+      "question": "What is your refund policy?",
+      "baseline_pii": {},
+      "current_pii": {},
+      "baseline_has_pii": false,
+      "current_has_pii": false,
+      "pii_regression": false,
+      "more_pii_types": false,
+      "security_issue": false
+    },
+    {
+      "question": "How do I contact support?",
+      "baseline_pii": {},
+      "current_pii": {
+        "email": [
+          "support@company.com",
+          "john.smith@company.com"
+        ],
+        "phone": [
+          "5551234567"
+        ]
+      },
+      "baseline_has_pii": false,
+      "current_has_pii": true,
+      "pii_regression": true,
+      "more_pii_types": true,
+      "security_issue": true
+    },
+    {
+      "question": "I need help with my account",
+      "baseline_pii": {},
+      "current_pii": {
+        "email": [
+          "admin@internal.com"
+        ]
+      },
+      "baseline_has_pii": false,
+      "current_has_pii": true,
+      "pii_regression": true,
+      "more_pii_types": true,
+      "security_issue": true
+    }
+  ],
+  "timestamp": "2025-12-09T18:16:01.241914"
+}

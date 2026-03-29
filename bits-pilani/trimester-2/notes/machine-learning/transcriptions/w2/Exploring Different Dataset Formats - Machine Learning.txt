@@ -1,0 +1,50 @@
+Hello to all of you. My name is Dr. Himbendrathar and we are in the course Machine Learning. We are
+discussing module 2 which is data pre-processing and this video is about exploring different data
+set formats. So the learning objective of this video is we are going to look into different types
+of data sets like records, graph, ordered data set. We will look into the further categorization of these
+data sets and explore more. So let's start right away. So in the last video we talked about if we
+are given huge amount of data we can structure it and then store it. One way of structure and storing
+it is called storing data in a table form, in a tabular form. Table will have some rows, table will
+have some columns, rows are data points and column are my attributes. So this is if you have data set
+in a table like format then it is called as a record data. So tabular data is also known as record data.
+Then I might store organize and store data in a graphical format that is called graph data.
+I might store and organize the data in a ordered fashion so that is called ordered data. So let's
+quickly revise all these things again one by one. So record data the first type of data set or data type
+data set is record data. So what do you mean by record data? Record data consists of a collection of records or data objects
+where each record has fixed set of attributes. So tabular data is a great example of record data.
+So I have data arranged and organized in a table like format. I have some rows, I have some columns, columns are my attributes and this is one of the most common and straightforward way of organizing and storing the record.
+Arrange it in a table like format and then storing it. Now record data can further be divided into or further can be categorized into data matrix, document data or transactional data.
+So what do you mean by data matrix? So data matrix is a specific type of record data where all the attributes are numerical. That means the attribute values here you can see are numerical, not categorical at all. This format allows of thinking of each data objects in a multi-dimensional space, m cross n matrix. So record data is a tabular data. If all the attributes are of numerical type, then it is called data matrix.
+So here you can see all the attributes are of numerical type. Then we have document data. So record data can further be divided into document data or categorized into document data. So what do you mean by document data? Document data is used when the objects are text documents and each document will become a term vector. Let's suppose I'm giving you thousands of news articles and I ask you to arrange it in a particular format. So return a particular format.
+so written a particular format one way to do that is in a tabular data so document data is used when
+the data objects are documents news articles are documents i can store these news articles
+in a table like format that is called as term vector so in document data you have attributes
+where each distinct term in the entire collection of record is an attribute right so for example
+this value so here in document data attributes are essentially keywords
+and rows are documents so it says that document one contain term team three number of times
+contain term coach zero number of times contain term play five number of times and so on so this is
+called as document data this results in a very sparse matrix and most of the document will not
+consist of most terms or most words then we have transactional data transactional data is again a
+special type of record data where each record or transaction involves a set of items so let's
+suppose i go to a mall right or d mart or a vishal mega mart or a reliance mart right and i look into
+the billing counter so tabular data again two columns first column is tid and column number two is the items purchased
+so when i look into transaction one right i see these these items were purchased bread coke and milk so
+here attributes are not fixed same way instead of having interesting collection of items that appear
+together right so this is called transactional data right now when we talk about record data right if
+most of the information is not in the attribute of a object then the relationship between the object
+then we look into different other type of data right so record data essentially talk about information in
+the attributes right but if you want to find the relationship between attributes then you might store the data into a graphical
+format and this is a great example of graphical format so graph data is used when the model objects and the relationship or connection between them
+them. For example, let's suppose this is website 1, this is website 2, this is website 3 and this is
+website 4. Now I want to build a web search engine. If I want to build a web engine, right, now I can
+represent all the websites of this world into a graphical form and then write an engine that will
+pass through all the websites and find out keywords for me. And then when I search, the corresponding
+website should be shown. For example, website number 1 is associated with website number 3. Website number 1 is associated with website number 2. So this is a graph like format, right, in a graphical format. So all these websites, right, can be organized and stored in an ordered form. This is called graphical data. So worldwide web is a giant graph. Here nodes are web pages, edges are hyperlinked between one page and another.
+And analyzing the graph can give us great insight about the data set, right. So Google's page ranking algorithm, essentially whenever you search anything on Google, page ranking algorithm search that keyword in the list of pages and show them in the descending order of their importance. Again, if I want to store the chemical data, I might not do it in a tabular fashion, I might still do it in a graphical fashion, right. So here nodes are atoms and edges are chemical born between the items.
+Genome sequence, right. Genome sequence is a sequence of objects, right. Genome sequence is a ordered data. So ordered is a sequence of data objects where order is mattering. For example, first A is happening, then B is happening, then C is happening, then D is happening. So this is an ordered data. Data points can be arranged in an ordered format and here the order matters.
+So social temporal data means that in terms of space and in terms of time, I can talk about this data set contain the information about both, right. So social temporal. So in summary, we looked into different types of data set record data, graphical data and ordered data. Record data can be further divided into data matrix, document data and transactional matrix.
+Graphical data can be further divided into data set. Graphical data can be further divided into data sets. Graphical data can be further divided into data sets. Graphical data can be further divided into data sets.
+So why does the structure matter? The structure of the data set determines the type of question you can ask from the data set and the type of analysis tool you can use on it. So the structure, once you have the rough information in an unstructured way, when you structure it and store it, then we will be able to find out or define what all sorts of data sets are.
+mathematical operations I can perform. So the structure of your data determines the type of question you can ask from the data set and the analysis tool that you can apply on it. You cannot apply on social media tool some parameters of data metrics or record type of data.
+Choosing a right type of data representation is critical step in the data pre-processing project. So in this video we looked into different types of data sets record, graph and ordered sequence. In record we looked into different types of data sets.
+In record we looked into further categorization into different types of record data like transactional data etc. Then we looked into graphical data and then we looked into ordered data. We will continue in the next video as well. Take care. Bye bye.

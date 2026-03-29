@@ -1,0 +1,19 @@
+Hello everyone. Welcome back to Module 6 of Artificial Neural Networks. In this video, we will learn how to interpret the training convergence behavior.
+By the end of this video, you will be able to interpret noisy vs. smooth training loss curves. You will understand why training loss sometimes look noisy when smooth convergence occurs and why both the behaviors can be perfectly valid. You will also be able to relate batch size and optimizer choice to convergence behavior.
+When we say a model is converging, we usually expect the loss to decrease and the updates to become smaller. But in practice, convergence does not always look smooth. Some training curves are clean and steady, while others fluctuate significantly. The key is to understand why this happens and how to interpret it correctly.
+Smooth convergence typically happens when we use large batch sizes or average gradients over many samples. The loss decreases steadily with minimal fluctuation, making the training process easy to interpret.
+However, smooth convergence can sometimes lead to slower progress or convergence to sharper minima, which may generalize worse.
+Noisy convergence is very common in training neural networks. It happens when we use mini batches, small batch sizes or relatively high learning rates. The loss curve fluctuates, sometimes going up temporarily, even though the overall trend is down.
+Even though the overall trend is downward. Like you can see in this image, there is an up down behavior in case of noisy descent. This behavior is normal and does not mean that training is failing. Noise in training can actually be beneficial. It helps the optimizer to escape saggle points and avoid getting stuck in poor local regions of the loss surface.
+Noisy updates encourage exploration and often lead to flatter minima, which tend to generalize better.
+Batch size plays a major role in convergence behavior. Small batches introduce noise, which helps exploration, but makes training curves harder to interpret. Large batches reduce noise and produce smoother curves, but may lead to less exploration and poorer generalization.
+There is no single best batch size. There is no single batch size. It depends on the model and the task.
+Different optimizers also produce different convergence patterns. SGD with momentum tends to be noisier, but often generalizes well. Adam and RMS prop usually produce smoother early training and faster convergence, but may settle into sharper minima.
+Understanding these patterns helps you avoid misinterpreting the training curves. When analyzing training behavior, focus on long-term trends. Ask whether the loss is decreasing overall, whether noise reduces over time, and whether validation performance improves. Avoid reacting to short-term fluctuations. They are a normal part of training.
+Now, let us summarize the main points of this video. Convergence does not always look smooth.
+Does not always look smooth. Noisy descent is common and often beneficial. Smooth descent is easier to interpret, but not always better.
+Do not always look smooth.
+Bath size and optimizer.
+Bath size and optimizer strongly influence convergence behavior. Look at the trends, not the individual spikes.
+This brings us to the end of our discussion on optimization. In the next video, we will summarize what all we have learned in this week. Thank you.
+Thank you.

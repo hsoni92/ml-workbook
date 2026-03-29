@@ -1,0 +1,28 @@
+Hello everyone, welcome back to module 3 of Artificial Neural Networks. In this video,
+we will discuss Perceptron which is a simple linear classifier. By the end of this video,
+you will be able to define what a Perceptron is and understand its role in neural networks. You will
+be able to interpret the Perceptron equation for binary classification. And finally, you will be
+able to explain both the capability and the limitation of a single Perceptron. The Perceptron
+is the simplest computational model of a neuron and the first true neural network model proposed in
+machine learning. It was introduced by Frank Rosenblatt in the late 1950s. Its purpose is
+simple but powerful, which is binary classification. Despite its simplicity, the Perceptron forms the
+conceptual foundation of all modern neural networks. Mathematically, the Perceptron computes a linear
+function of the input. The quantity z equals w transpose x plus b is a weighted sum of the inputs plus a bias.
+The output is then obtained by applying a sine or step function that is y hat equals sine of z. What this sine function does is that when z is positive, it gives us a value of plus 1 and when z is negative, it gives us a value of minus 1. This means the Perceptron produces one of the two outputs. The output is then obtained by applying a sine or step function of the sine or step function of the sine of z.
+the sine of z equals sine of z equals sine of z. What this sine function does is that when z is
+z is positive, when z is positive, it gives us a value of plus 1 and when z is negative, it gives us a value of minus 1. This means the Perceptron produces one of the two outputs, plus 1 or minus 1. So at its core, the Perceptron is a binary decision unit. The equation of the Perceptron defines a line in two dimensions, a plane in three dimensions, a plane in three dimensions, and a plane in three dimensions.
+negative, it gives us a value of -1. This means the perceptron produces one of the two outputs,
+plus 1 or minus 1. So at its core, the perceptron is a binary decision unit. The equation of the
+perceptron defines a line in two dimensions, a plane in three dimensions, and a hyperplane in
+higher dimensions. This boundary divides the input space into two half spaces. Points on one side are
+classified as +1 and the points on the other side are classified as -1. That is why the perceptron
+is called a linear classifier. Since perceptron divides the input space into two half spaces,
+it can classify only linearly separable data. That means all points of one class can be separated
+from the other class using a single straight line or hyperplane. However, if the data is not linearly
+separable, let's look at this case where we have like two circles here. So whatever line I draw,
+I am not able to classify the data into two linearly separable patterns. Right? No choice of weights
+and bias can make the perceptron perfectly classify such kind of data. This is the fundamental limitation
+of perceptrons. Now, let's summarize the main points of this video. Perceptron is the simplest binary
+classifier. It computes a weighted sum of inputs, adds a bias, and applies a threshold to produce a binary
+output. It implements a linear decision boundary. In the next video, we will move from this algebraic view
+to a fully geometric and visual understanding of perceptron decision boundaries in two dimensions. Thank you.

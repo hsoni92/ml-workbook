@@ -1,0 +1,37 @@
+Hello everyone. Welcome back to Module 6 of Artificial Neural Networks. In this video, we will explore different variants of gradient descent. By the end of this video, you will be able to understand three different ways to run gradient descent: batch, mini-batch, and stochastic gradient descent.
+You will learn how they differ, what trade-offs they offer, and why mini-batch SGD is the standard today. And finally, you will understand the intuition behind how variance impacts optimization behavior.
+When datasets were small, computing gradients on the entire dataset was not a big deal. But modern datasets often contain millions of samples.
+Computing one full gradient update over all the data becomes slow, expensive, memory-intensive, and difficult to scale.
+So, instead of always using the full dataset, we decide how much data to use for each update. That choice gives us the three variants of gradient descent.
+Starting with batch gradient descent. Batch gradient descent uses the entire dataset to compute a single gradient update. This has advantages like the update is stable, smooth, and points in the correct direction.
+If we look at this contour plot, we can see that in batch gradient descent, the update happens in the correct direction and in a stable manner.
+However, the downside of batch gradient descent is severe. It's extremely slow on large datasets, memory-expensive, and does not leverage the parallelism of GPUs efficiently.
+Because of this, batch gradient descent is almost never used in neural network training, except for small datasets or convex problems.
+At the other extreme, stochastic gradient descent updates the model using just one sample at a time.
+This makes updates extremely fast and introduces beneficial noise into the training process, which can help us escape saddle points or sharp minima.
+But there is a drawback. The updates are very noisy.
+As you can see in the diagram, the loss may bounce around instead of smoothly decreasing, making the convergence unpredictable.
+As you can see, SGD is useful for online learning or streaming data setting, but it is rarely used alone in training the networks.
+Now comes mini-batch gradient descent, which strikes the perfect balance.
+Instead of using the full dataset or a single sample, we use a small batch, typically 32 to 512 samples.
+This gives us efficient parallel computation on GPUs, a gradient estimate that is stable enough, enough noise to help generalization, much faster training than full-batch GD.
+This is why mini-batch SGD is the default optimization method in training neural networks.
+The first batch size has a major influence on how learning behaves.
+A small batch size like 16 or 32 produces noisier gradients.
+This noise sometimes improves generalization and helps escape bad regions in the lost landscape.
+A large batch size like 1024 or more produces very smooth gradients, but it may converge to sharp minima and can require learning rate tuning or warm-up strategies.
+For most of the tasks, batch sizes between 32 and 256 work extremely well.
+Now, to summarize the three methods, Batch GD uses the whole dataset.
+It is very stable but slow.
+SGD uses a single sample, very fast but it can be noisy.
+Mini-batch GD uses a small subset.
+It is fast and stable, which is why it dominates the training process.
+The choice of batch size becomes one of the most important hyperparameters in training.
+Now, let us summarize the main points of this video.
+All gradient descent variants differ only in how much data they use per update.
+Mini-batch SGD hits the sweet spot between speed and stability.
+Batch size influences convergence, generalization and noise in the gradient.
+Noise is not always bad.
+Sometimes, it's exactly what the optimizer needs to keep moving.
+In the next video, we will learn about momentum, an important technique that smooths out gradient updates and helps us move faster in the right direction, especially when lost surfaces are curved or have narrow valleys.
+Thank you.

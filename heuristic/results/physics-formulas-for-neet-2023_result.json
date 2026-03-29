@@ -1,0 +1,2429 @@
+[
+  {
+    "page": 1,
+    "has_formula": true,
+    "formula_percentage": 45.62,
+    "detected_formulas": [
+      {
+        "text": "Speed of light\nc\n3 × 108 m/s\nPlanck constant\nh\n6.63 × 10−34 J s\nhc\n1242 eV-nm\nGravitation constant\nG\n6.67×10−11 m3 kg−1 s−2",
+        "type": "displayed",
+        "score": 0.65
+      },
+      {
+        "text": "Charge of electron\ne\n1.602 × 10−19 C\nPermeability\nof\nvac-\nuum\nµ0\n4π × 10−7 N/A2",
+        "type": "displayed",
+        "score": 0.65
+      },
+      {
+        "text": "Stefan-Boltzmann\nconstant\nσ\n5.67×10−8 W/(m2 K4)",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "Rydberg constant\nR∞\n1.097 × 107 m−1",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "Notation: ⃗a = ax ˆı + ay ˆ+ az ˆk",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Dot product: ⃗a ·⃗b = axbx + ayby + azbz = ab cos θ",
+        "type": "displayed",
+        "score": 0.6
+      },
+      {
+        "text": "⃗b\n⃗a ×⃗b",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "θ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "⃗a×⃗b = (aybz −azby)ˆı+(azbx −axbz)ˆ+(axby −aybx)ˆk",
+        "type": "displayed",
+        "score": 1.0
+      },
+      {
+        "text": "|⃗a ×⃗b| = ab sin θ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "⃗vav = ∆⃗r/∆t,\n⃗vinst = d⃗r/dt",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "⃗aav = ∆⃗v/∆t\n⃗ainst = d⃗v/dt",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "v = u + at,\ns = ut + 1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "2at2,\nv2 −u2 = 2as",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "u sin θ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "u cos θ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "θ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "x = ut cos θ,\ny = ut sin θ −1",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "y = x tan θ −\ng\n2u2 cos2 θx2",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "T = 2u sin θ",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "g\n,\nR = u2 sin 2θ",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "g\n,\nH = u2 sin2 θ",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "Linear momentum: ⃗p = m⃗v",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Newton’s second law: ⃗F = d⃗p",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "dt ,\n⃗F = m⃗a",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Banking angle:\nv2\nrg = tan θ, v2",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "rg =\nµ+tan θ\n1−µ tan θ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Centripetal force: Fc = mv2",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "r ,\nac = v2",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "vmin, bottom =\np",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "5gl,\nvmin, top =\np",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Conical pendulum: T = 2π\nq",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "l cos θ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "θ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "θ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Work: W = ⃗F · ⃗S = FS cos θ,\nW =\nR ⃗F · d⃗S",
+        "type": "displayed",
+        "score": 0.6
+      },
+      {
+        "text": "Kinetic energy: K = 1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "2mv2 = p2",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Potential energy: F = −∂U/∂x for conservative forces.",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Ugravitational = mgh,\nUspring = 1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      }
+    ]
+  },
+  {
+    "page": 2,
+    "has_formula": true,
+    "formula_percentage": 46.6,
+    "detected_formulas": [
+      {
+        "text": "Mechanical energy: E = U +K. Conserved if forces are\nconservative in nature.",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Power Pav = ∆W",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Centre of mass: xcm =\nP ximi\nP mi ,\nxcm =",
+        "type": "displayed",
+        "score": 0.6
+      },
+      {
+        "text": "2. Triangle (CM ≡Centroid) yc = h",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "3. Semicircular ring: yc = 2r",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "π\nC",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "π\nr",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "4. Semicircular disc: yc = 4r",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "3π\nC\n4r\n3π\nr",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "5. Hemispherical shell: yc = r",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "6. Solid Hemisphere: yc = 3r",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Motion of the CM: M = P mi",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "⃗vcm =\nP mi⃗vi",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Impulse: ⃗J =\nR ⃗F dt = ∆⃗p",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "v′\n1\nv′\n2\nMomentum conservation: m1v1+m2v2 = m1v′\n1+m2v′\n2\nElastic Collision: 1",
+        "type": "inline_or_mixed",
+        "score": 0.35
+      },
+      {
+        "text": "2m2v22 = 1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Angular velocity: ωav = ∆θ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "∆t ,\nω = dθ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "dt ,\n⃗v = ⃗ω × ⃗r",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Angular Accel.: αav = ∆ω",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "∆t ,\nα = dω",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "dt ,\n⃗a = ⃗α × ⃗r",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "ω = ω0 + αt,\nθ = ωt + 1",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "2αt2,\nω2 −ω0\n2 = 2αθ",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "Moment of Inertia: I = P",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "i miri2,\nI =\nR\nr2dm",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "I∥\nd\nIc",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Theorem of Perp. Axes: Iz = Ix + Iy\nx",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Radius of Gyration: k =\np",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Angular Momentum: ⃗L = ⃗r × ⃗p,\n⃗L = I⃗ω",
+        "type": "displayed",
+        "score": 0.6
+      },
+      {
+        "text": "Torque: ⃗τ = ⃗r × ⃗F,\n⃗τ = d⃗L",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "dt ,\nτ = Iα",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "⃗F\nθ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Conservation of ⃗L: ⃗τext = 0 =⇒⃗L = const.",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Kinetic Energy: Krot = 1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "2Iω2",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "⃗τcm = Icm⃗α,\n⃗Fext = m⃗acm,\n⃗pcm = m⃗vcm",
+        "type": "displayed",
+        "score": 0.6
+      },
+      {
+        "text": "K = 1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "2Icmω2,\n⃗L = Icm⃗ω + ⃗rcm × m⃗vcm",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "Gravitational force: F = G m1m2",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Gravitational acceleration: g = GM",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      }
+    ]
+  },
+  {
+    "page": 3,
+    "has_formula": true,
+    "formula_percentage": 70.15,
+    "detected_formulas": [
+      {
+        "text": "mg′\nθ =mg −mω2R cos2 θ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "mω2R cos θ\nmg",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "⃗ω",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "θ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Orbital velocity of satellite: vo =\nq",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Escape velocity: ve =\nq",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "First: Elliptical orbit with sun at one of the focus.\nSecond: Areal velocity is constant. (∵d⃗L/dt = 0).\nThird: T 2 ∝a3. In circular orbit T 2 = 4π2",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Acceleration: a = d2x",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "dt2 = −k",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "mx = −ω2x",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Time period: T = 2π",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "ω = 2πp m",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Displacement: x = A sin(ωt + φ)",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "Velocity: v = Aω cos(ωt + φ) = ±ω\n√",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "A2 −x2",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Potential energy: U = 1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "−A\n0\nA\nx\nU",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Kinetic energy K = 1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "−A\n0\nA\nx\nK",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Total energy: E = U + K = 1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "2mω2A2",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Simple pendulum: T = 2π\nq",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Physical Pendulum: T = 2π\nq",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Torsional Pendulum T = 2π\nq",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Springs in parallel: keq = k1 + k2",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "δ\nϵ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "x1 = A1 sin ωt,\nx2 = A2 sin(ωt + δ)",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "x = x1 + x2 = A sin(ωt + ϵ)",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "A =\nq",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "tan ϵ =\nA2 sin δ\nA1 + A2 cos δ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Modulus of rigidity: Y = F/A",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "∆l/l, B = −V ∆P",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "∆V , η =\nF\nAθ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Compressibility: K = 1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "B = −1",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "∆l/l",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Elastic energy: U = 1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "2 stress × strain × volume",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Surface tension: S = F/l",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Surface energy: U = SA",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "∆pair = 2S/R,\n∆psoap = 4S/R",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "Capillary rise: h = 2S cos θ",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "rρg",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Buoyant force: FB = ρV g = Weight of displaced liquid",
+        "type": "displayed",
+        "score": 0.6
+      },
+      {
+        "text": "Equation of continuity: A1v1 = A2v2\nv1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "2ρv2 + ρgh = constant",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "Viscous force: F = −ηA dv",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Stoke’s law: F = 6πηrv",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "time\n= πpr4",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "8ηl",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Terminal velocity: vt = 2r2(ρ−σ)g",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "9η",
+        "type": "displayed",
+        "score": 0.7
+      }
+    ]
+  },
+  {
+    "page": 4,
+    "has_formula": true,
+    "formula_percentage": 72.29,
+    "detected_formulas": [
+      {
+        "text": "General equation of wave:\n∂2y\n∂x2 =\n1\nv2\n∂2y",
+        "type": "displayed",
+        "score": 0.8
+      },
+      {
+        "text": "∂t2 .",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "T = 1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "ν = 2π",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "ω ,\nv = νλ,\nk = 2π",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "λ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "y=f(t −x/v), ⇝+x;\ny=f(t + x/v), ⇝−x",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "λ\n2\nλ\nx",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "y = A sin(kx −ωt) = A sin(2π (x/λ −t/T))",
+        "type": "displayed",
+        "score": 1.0
+      },
+      {
+        "text": "Speed of waves on a string with mass per unit length µ\nand tension T: v =\np",
+        "type": "displayed",
+        "score": 0.6
+      },
+      {
+        "text": "Transmitted power: Pav = 2π2µvA2ν2",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "y1 = A1 sin(kx −ωt),\ny2 = A2 sin(kx −ωt + δ)",
+        "type": "displayed",
+        "score": 1.0
+      },
+      {
+        "text": "y = y1 + y2 = A sin(kx −ωt + ϵ)",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "A =\nq",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "tan ϵ =\nA2 sin δ\nA1 + A2 cos δ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "δ =\n\u001a 2nπ,\nconstructive;\n(2n + 1)π,\ndestructive.",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "λ/4",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "y1 = A1 sin(kx −ωt),\ny2 = A2 sin(kx + ωt)",
+        "type": "displayed",
+        "score": 1.0
+      },
+      {
+        "text": "y = y1 + y2 = (2A cos kx) sin ωt",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "2\n\u0001 λ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "2 ,\nnodes;\nn = 0, 1, 2, . . .\nn λ",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "2 ,\nantinodes.\nn = 0, 1, 2, . . .",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "λ/2",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "1. Boundary conditions: y = 0 at x = 0 and at x = L",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "2. Allowed Freq.: L = n λ",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "2 , ν =\nn\n2L\nq",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "T\nµ , n = 1, 2, 3, . . ..",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "3. Fundamental/1st harmonics: ν0 =\n1\n2L\nq",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "4. 1st overtone/2nd harmonics: ν1 =\n2\n2L\nq",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "5. 2nd overtone/3rd harmonics: ν2 =\n3\n2L\nq",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "λ/2",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "1. Boundary conditions: y = 0 at x = 0",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "2. Allowed Freq.: L = (2n + 1) λ",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "4 , ν = 2n+1",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "T\nµ , n =\n0, 1, 2, . . ..",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "3. Fundamental/1st harmonics: ν0 =\n1\n4L\nq",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "4. 1st overtone/3rd harmonics: ν1 =\n3\n4L\nq",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "5. 2nd overtone/5th harmonics: ν2 =\n5\n4L\nq",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Sonometer: ν ∝1",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "L, ν ∝\n√",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "T, ν ∝\n1\n√µ. ν =\nn\n2L\nq",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Displacement wave: s = s0 sin ω(t −x/v)",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Pressure wave: p = p0 cos ω(t −x/v), p0 = (Bω/v)s0",
+        "type": "displayed",
+        "score": 1.0
+      },
+      {
+        "text": "ρ ,\nvsolid =",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "ρ ,\nvgas =",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "γP",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "ρ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Intensity: I = 2π2B",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "2ρv",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "p1 = p0 sin ω(t −x/v),\np2 = p0 sin ω(t + x/v)",
+        "type": "displayed",
+        "score": 1.0
+      },
+      {
+        "text": "p = p1 + p2 = 2p0 cos kx sin ωt",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "1. Boundary condition: y = 0 at x = 0",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "2. Allowed freq.: L = (2n + 1) λ",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "4 , ν = (2n + 1) v",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "4L, n =\n0, 1, 2, . . .",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "3. Fundamental/1st harmonics: ν0 =\nv\n4L",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "4. 1st overtone/3rd harmonics: ν1 = 3ν0 = 3v",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      }
+    ]
+  },
+  {
+    "page": 5,
+    "has_formula": true,
+    "formula_percentage": 56.05,
+    "detected_formulas": [
+      {
+        "text": "5. 2nd overtone/5th harmonics: ν2 = 5ν0 = 5v",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "1. Boundary condition: y = 0 at x = 0\nAllowed freq.: L = n λ",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "2 , ν = n v",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "4L, n = 1, 2, . . .",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "2. Fundamental/1st harmonics: ν0 =\nv\n2L",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "3. 1st overtone/2nd harmonics: ν1 = 2ν0 = 2v",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "4. 2nd overtone/3rd harmonics: ν2 = 3ν0 = 3v",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "l1 + d = λ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "2 ,\nl2 + d = 3λ",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "4 ,\nv = 2(l2 −l1)ν",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "Beats: two waves of almost equal frequencies ω1 ≈ω2",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "p1 = p0 sin ω1(t −x/v),\np2 = p0 sin ω2(t −x/v)",
+        "type": "displayed",
+        "score": 1.0
+      },
+      {
+        "text": "p = p1 + p2 = 2p0 cos ∆ω(t −x/v) sin ω(t −x/v)",
+        "type": "displayed",
+        "score": 1.0
+      },
+      {
+        "text": "ω = (ω1 + ω2)/2,\n∆ω = ω1 −ω2\n(beats freq.)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "ν = v + uo",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "v −us\nν0",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Plane Wave: E = E0 sin ω(t −x",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "v ), I = I0",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Spherical Wave: E = aE0",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "r\nsin ω(t −r",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "v), I = I0",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Path diﬀerence: ∆x = dy",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "θ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Phase diﬀerence: δ = 2π",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "λ ∆x",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "δ =\n\u001a 2nπ,\nconstructive;\n(2n + 1)π,\ndestructive,",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "∆x =\n\u001a nλ,\nconstructive;\n\u0000\nn + 1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "2\n\u0001\nλ,\ndestructive",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "I = I1 + I2 + 2\np",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "I1I2 cos δ,",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "I1 −\np",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "I1 = I2 : I = 4I0 cos2 δ",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "2, Imax = 4I0, Imin = 0",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Optical path: ∆x′ = µ∆x",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "∆x = 2µd =\n\u001a nλ,\nconstructive;\n\u0000\nn + 1",
+        "type": "displayed",
+        "score": 0.65
+      },
+      {
+        "text": "y\nD\nFor Minima: nλ = b sin θ ≈b(y/D)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Resolution: sin θ = 1.22λ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Law of Malus: I = I0 cos2 θ\nI0\nI\nθ",
+        "type": "displayed",
+        "score": 0.9
+      }
+    ]
+  },
+  {
+    "page": 6,
+    "has_formula": true,
+    "formula_percentage": 42.65,
+    "detected_formulas": [
+      {
+        "text": "1. Focal length f = R/2",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "u = 1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "speed of light in medium = c",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Apparent depth: µ =\nreal depth\napparent depth = d",
+        "type": "displayed",
+        "score": 0.6
+      },
+      {
+        "text": "Critical angle: θc = sin−1 1",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "µ\nθc\nµ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "δ\ni\ni′",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "δ = i + i′ −A,\ngeneral result",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "µ = sin A+δm",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "2\n,\ni = i′ for minimum deviation",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "δm = (µ −1)A,\nfor small A",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "δ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "δm",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "v −µ1",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "u = µ2 −µ1",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Lens maker’s formula:\n1\nf = (µ −1)\nh\n1\nR1 −\n1\nR2",
+        "type": "inline_or_mixed",
+        "score": 0.35
+      },
+      {
+        "text": "u = 1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "f ,\nm = v",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Power of the lens: P = 1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "1\nF = 1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "f2\n−\nd\nf1f2",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Simple microscope: m = D/f in normal adjustment.",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "O\n∞",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "1. Magniﬁcation in normal adjustment: m = v",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "λ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "fe , L = fo + fe",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "2. Resolving power: R =\n1\n∆θ =\n1\n1.22λ",
+        "type": "displayed",
+        "score": 0.65
+      },
+      {
+        "text": "λ2 ,\nA > 0",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "1. Mean deviation: δy = (µy −1)A",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "2. Angular dispersion: θ = (µv −µr)A",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Dispersive power: ω = µv−µr",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "µy−1 ≈\nθ\nδy (if A and i small)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "(µy −1)A + (µ′\ny −1)A′ = 0",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Deviation without dispersion:\n(µv −µr)A = (µ′\nv −µ′\nr)A′",
+        "type": "displayed",
+        "score": 0.6
+      }
+    ]
+  },
+  {
+    "page": 7,
+    "has_formula": true,
+    "formula_percentage": 59.0,
+    "detected_formulas": [
+      {
+        "text": "Temp. scales: F = 32 + 9",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "5C,\nK = C + 273.16",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Ideal gas equation: pV = nRT,\nn : number of moles",
+        "type": "displayed",
+        "score": 0.6
+      },
+      {
+        "text": "van der Waals equation:\n\u0000\np +\na\nV 2\n\u0001\n(V −b) = nRT",
+        "type": "inline_or_mixed",
+        "score": 0.35
+      },
+      {
+        "text": "Thermal expansion: L = L0(1 + α∆T),\nA = A0(1 + β∆T), V = V0(1 + γ∆T), γ = 2β = 3α",
+        "type": "displayed",
+        "score": 1.0
+      },
+      {
+        "text": "Thermal stress of a material:\nF\nA = Y ∆l",
+        "type": "displayed",
+        "score": 0.6
+      },
+      {
+        "text": "General: M = mNA, k = R/NA",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "RMS speed: vrms =\nq",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "m =\nq",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Average speed: ¯v =\nq",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "πm =\nq",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "πM",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Most probable speed: vp =\nq",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Pressure: p = 1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "3ρv2\nrms",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Equipartition of energy: K =\n1\n2kT for each degree of\nfreedom. Thus, K = f",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Internal energy of n moles of an ideal gas is U = f",
+        "type": "displayed",
+        "score": 0.6
+      },
+      {
+        "text": "Speciﬁc heat: s =\nQ\nm∆T",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Latent heat: L = Q/m",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Relation between Cp and Cv: Cp −Cv = R",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Relation between U and Cv: ∆U = nCv∆T",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "Cv = n1Cv1 + n2Cv2",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "First law of thermodynamics: ∆Q = ∆U + ∆W",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "∆W = p∆V,\nW =\nZ V2",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "Wisothermal = nRT ln\n\u0012V2",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Wisobaric = p(V2 −V1)",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Wadiabatic = p1V1 −p2V2",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "γ −1\nWisochoric = 0",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "heat supplied to it\n= Q1 −Q2",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "ηcarnot = 1 −Q2",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "Q1\n= 1 −T2",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "COP = Q2",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "W =\nQ2\nQ1−Q2",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "Entropy: ∆S = ∆Q",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "T , Sf −Si =\nR f\ni\n∆Q",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "Const. T : ∆S = Q",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "T ,\nVarying T : ∆S = ms ln Tf",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Adiabatic process: ∆Q = 0, pV γ = constant",
+        "type": "displayed",
+        "score": 0.6
+      },
+      {
+        "text": "Conduction:\n∆Q",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "∆t = −KA ∆T",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Thermal resistance: R =\nx\nKA",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Rseries = R1 + R2 = 1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Kirchhoﬀ’s Law:\nemissive power\nabsorptive power = Ebody",
+        "type": "displayed",
+        "score": 0.6
+      },
+      {
+        "text": "abody = Eblackbody",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Wien’s displacement law: λmT = b",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "λ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Eλ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "λm",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "∆t = σeAT 4",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "dt = −bA(T −T0)",
+        "type": "displayed",
+        "score": 0.7
+      }
+    ]
+  },
+  {
+    "page": 8,
+    "has_formula": true,
+    "formula_percentage": 46.73,
+    "detected_formulas": [
+      {
+        "text": "Coulomb’s law: ⃗F =\n1\n4πϵ0\nq1q2",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "dV = −⃗E ·⃗r,\nV (⃗r) = −\nZ ⃗r",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "∞\n⃗E · d⃗r",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Electric dipole moment: ⃗p = q⃗d",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "−q",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Potential of a dipole: V =\n1\n4πϵ0\np cos θ",
+        "type": "displayed",
+        "score": 0.6
+      },
+      {
+        "text": "V (r)\nθ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Eθ\nθ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Er =\n1\n4πϵ0\n2p cos θ",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "r3\n,\nEθ =\n1\n4πϵ0\np sin θ",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Gauss’s law:\nH ⃗E · d⃗S = qin/ϵ0",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "(\n1\n4πϵ0\nQr\nR3 ,\nfor r < R\n1\n4πϵ0\nQ\nr2 ,\nfor r ≥R\nO\nR\nr\nE",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "(\nQ\n8πϵ0R\n\u0000\n3 −r2",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "(\n1\n4πϵ0\nQ\nR,\nfor r < R\n1\n4πϵ0\nQ",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Field of a line charge: E =\nλ\n2πϵ0r",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Capacitance: C = q/V",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "−q",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Spherical capacitor: C = 4πϵ0r1r2",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "r2−r1\nr1",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "+q\n−q",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Cylindrical capacitor: C =\n2πϵ0l\nln(r2/r1)\nl\nr1",
+        "type": "inline_or_mixed",
+        "score": 0.35
+      },
+      {
+        "text": "Capacitors in parallel: Ceq = C1 + C2\nC2\nA",
+        "type": "displayed",
+        "score": 0.6
+      },
+      {
+        "text": "Capacitors in series:\n1\nCeq =\n1\nC1 +\n1\nC2",
+        "type": "inline_or_mixed",
+        "score": 0.35
+      },
+      {
+        "text": "Force between plates of a parallel plate capacitor:\nF =\nQ2",
+        "type": "displayed",
+        "score": 0.6
+      },
+      {
+        "text": "Energy stored in capacitor: U = 1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "2CV 2 = Q2",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "2C = 1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Energy density in electric ﬁeld E: U/V = 1",
+        "type": "displayed",
+        "score": 0.6
+      },
+      {
+        "text": "Current density: j = i/A = σE",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Drift speed: vd = 1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "m τ =\ni\nneA",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Resistance of a wire: R = ρl/A, where ρ = 1/σ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Temp. dependence of resistance: R = R0(1 + α∆T)",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Ohm’s law: V = iR",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Resistors in parallel:\n1\nReq =\n1\nR1 +\n1\nR2\nR2\nA",
+        "type": "inline_or_mixed",
+        "score": 0.35
+      },
+      {
+        "text": "Resistors in series: Req = R1 + R2\nR1\nR2\nA\nB",
+        "type": "inline_or_mixed",
+        "score": 0.35
+      },
+      {
+        "text": "↑G",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Balanced if R1/R2 = R3/R4.",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Electric Power: P = V 2/R = I2R = IV",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      }
+    ]
+  },
+  {
+    "page": 9,
+    "has_formula": true,
+    "formula_percentage": 38.53,
+    "detected_formulas": [
+      {
+        "text": "i −ig",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "igG = (i −ig)S",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "q(t) = CV\nh\n1 −e−\nt\nRC\ni",
+        "type": "displayed",
+        "score": 0.65
+      },
+      {
+        "text": "Discharging of capacitors: q(t) = q0e−\nt\nRC",
+        "type": "displayed",
+        "score": 0.6
+      },
+      {
+        "text": "∆Q =\nPeltier heat\ncharge transferred.",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "1. Thermo-emf: e = aT + 1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "2. Thermoelectric power: de/dt = a + bT.",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "∆Q =\nThomson heat\ncharge transferred = σ∆T.",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "m = Zit = 1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "where i is current, t is time, Z is electrochemical equiv-\nalent, E is chemical equivalent, and F = 96485 C/g is\nFaraday constant.",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Lorentz force on a moving charge: ⃗F = q⃗v × ⃗B + q ⃗E",
+        "type": "displayed",
+        "score": 0.6
+      },
+      {
+        "text": "⊗\n⃗B",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "r = mv",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "qB , T = 2πm",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "⃗F\n⃗F = i ⃗l × ⃗B",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "Hall eﬀect: Vw =\nBi\nned",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "4π\ni d⃗l×⃗r",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "θ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "⊗⃗B",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "θ2",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "4πd(cos θ1 −cos θ2)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "2πd",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "2πd",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "4πa\n⊙\n⃗B\ni",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "θ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Field inside a solenoid: B = µ0ni, n = N",
+        "type": "displayed",
+        "score": 0.6
+      },
+      {
+        "text": "2πr\nr",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "4π\n2M",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "4π\nM\nd3",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Angle of dip: Bh = B cos δ",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "δ\nHorizontal",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "2r ,\ni = K tan θ",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "Moving coil galvanometer: niAB = kθ,\ni =\nk\nnAB θ",
+        "type": "displayed",
+        "score": 0.6
+      },
+      {
+        "text": "Time period of magnetometer: T = 2π\nq",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      }
+    ]
+  },
+  {
+    "page": 10,
+    "has_formula": true,
+    "formula_percentage": 66.32,
+    "detected_formulas": [
+      {
+        "text": "Faraday’s law: e = −dφ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Motional emf: e = Blv",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "−",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "⃗v\nl\n⊗⃗B",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Self inductance: φ = Li,\ne = −L di",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Growth of current in LR circuit: i =\ne\nR\nh\n1 −e−\nt\nL/R\ni",
+        "type": "inline_or_mixed",
+        "score": 0.35
+      },
+      {
+        "text": "Decay of current in LR circuit: i = i0e−\nt\nL/R",
+        "type": "displayed",
+        "score": 0.6
+      },
+      {
+        "text": "Energy stored in an inductor: U = 1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Energy density of B ﬁeld: u = U",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "V = B2",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Mutual inductance: φ = Mi,\ne = −M di",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "EMF induced in a rotating coil: e = NABω sin ωt",
+        "type": "displayed",
+        "score": 0.6
+      },
+      {
+        "text": "T\ni = i0 sin(ωt + φ),\nT = 2π/ω",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "Average current in AC: ¯i = 1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "T\nR T\n0 i dt = 0",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "RMS current: irms =\nh\n1\nT\nR T\n0 i2 dt\ni1/2\n=\ni0\n√",
+        "type": "inline_or_mixed",
+        "score": 0.35
+      },
+      {
+        "text": "Energy: E = irms\n2RT",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Capacitive reactance: Xc =\n1\nωC",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Imepedance: Z = e0/i0",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "e0 sin ωt\n˜\nR",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "1\nωC",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "φ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Z =\np",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "R2 + (1/ωC)2,\ntan φ =\n1\nωCR",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "e0 sin ωt\n˜",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "ωL",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "φ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Z =\n√",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "R2 + ω2L2,\ntan φ = ωL",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "e0 sin ωt\n˜\nR",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "1\nωC",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "ωL",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Z\n1\nωC −ωL\nφ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Z =\nq",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "ωC −ωL\n\u00012,\ntan φ =",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "1\nωC −ωL",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "R\nνresonance =\n1\n2π\nq",
+        "type": "displayed",
+        "score": 0.65
+      },
+      {
+        "text": "Power factor: P = ermsirms cos φ",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Transformer:\nN1\nN2 = e1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "e2 , e1i1 = e2i2",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Speed of the EM waves in vacuum: c = 1/√µ0ϵ0",
+        "type": "displayed",
+        "score": 0.6
+      }
+    ]
+  },
+  {
+    "page": 11,
+    "has_formula": true,
+    "formula_percentage": 54.25,
+    "detected_formulas": [
+      {
+        "text": "Photon’s energy: E = hν = hc/λ",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "Photon’s momentum: p = h/λ = E/c",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Max. KE of ejected photo-electron: Kmax = hν −φ",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "Stopping potential: Vo = hc",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "λ\n\u0001\n−φ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "1\nλ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "φ\nhc",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "−φ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "En = −mZ2e4",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "πmZe2 ,\nrn = n2a0",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "Z\n,\na0 = 0.529 ˚A",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Quantization of the angular momentum: l = nh",
+        "type": "displayed",
+        "score": 0.6
+      },
+      {
+        "text": "2π",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Photon energy in state transition: E2 −E1 = hν",
+        "type": "displayed",
+        "score": 0.6
+      },
+      {
+        "text": "hν",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "hν",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "1\nλ = RZ2\n\u0014 1",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "n2 −1",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "X-ray spectrum: λmin = hc",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "λ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "λmin\nλα",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Kα\nKβ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Moseley’s law: √ν = a(Z −b)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "X-ray diﬀraction: 2d sin θ = nλ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Heisenberg uncertainity principle:\n∆p∆x ≥h/(2π),\n∆E∆t ≥h/(2π)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Nuclear radius: R = R0A1/3,\nR0 ≈1.1 × 10−15 m",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "dt = −λN",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Population at time t: N = N0e−λt",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "Half life: t1/2 = 0.693/λ",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Average life: tav = 1/λ",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Population after n half lives: N = N0/2n.",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Mass defect: ∆m = [Zmp + (A −Z)mn] −M",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "Binding energy: B = [Zmp + (A −Z)mn −M] c2",
+        "type": "displayed",
+        "score": 0.6
+      },
+      {
+        "text": "Q-value: Q = Ui −Uf",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "where ∆m = mreactants −mproducts.",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "∆ip",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "∆Vg=0",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "∆Vp=0",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "Ampliﬁcation by a triode: µ = −∆Vp",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "∆Vg",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "∆ip=0",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "Current in a transistor: Ie = Ib + Ic",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "α and β parameters of a transistor: α =\nIc\nIe ,\nβ\n=\nIc\nIb , β =\nα\n1−α",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Transconductance: gm =\n∆Ic\n∆Vbe",
+        "type": "displayed",
+        "score": 0.7
+      }
+    ]
+  }
+]

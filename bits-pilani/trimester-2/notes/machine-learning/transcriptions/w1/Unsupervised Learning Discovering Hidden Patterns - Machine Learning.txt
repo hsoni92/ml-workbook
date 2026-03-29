@@ -1,0 +1,99 @@
+Hello to all of you. My name is Dr. Hemant Rathar and we are in the course Machine Learning. We are
+doing module 1, Introduction of Machine Learning and in video 3 we are going to talk about unsupervised
+learning, discovering hidden patterns. So, the learning objective of this video is we are going
+to define what unsupervised learning is and how it is different from supervised learning. We will
+look into two different types of unsupervised learning algorithms, clustering and association
+rule mining. Then we will also look into some real world applications of both clustering and
+association rule mining. So, let's start right away. So, in the last video we talked about supervised
+learning. In supervised learning the idea is we are going to do prediction. So, the algorithm in
+supervised learning learns from the data and the correct labels and the correct answers and the
+model which we have built will be used to do prediction in the future. In unsupervised learning,
+so this was supervised learning. In unsupervised learning the idea is that we do not have any class
+labels, we do not have any correct answers. The idea or the goal is not to do any prediction. In unsupervised
+learning the goal is not to do any prediction is to find hidden structure, patterns and relationship
+within the data itself. So, this is also known as knowledge discovery. Unsupervised learning is also known
+as knowledge discovery. So, what we have in the data here in unsupervised learning is only x, we do not have y.
+And we learn patterns, structure and relationship in the data and also known as knowledge discovery.
+So, when we talk about unsupervised learning there are two types or two primary types of unsupervised
+learning algorithms. One is called clustering. So, unsupervised learning there are a lot of algorithms.
+One group of algorithms is called clustering and another group of algorithm is called association
+room remaining. So, clustering algorithm focuses on automatically grouping similar data points together.
+So, if two points are similar then clustering algorithm will tell them these two are very similar. If two
+points are very dissimilar clustering algorithm would be able to find them to put them into two different
+groups. So, clustering algorithm as the name suggests will tell what are the natural groups in my data.
+So, clustering algorithm will find identify natural groups in the data. If two items are similar will
+be put into same group. If two items are dissimilar will be put into two different groups.
+Association rule mining algorithms are focused on something else. The task in association rule mining is
+to find interesting relationship or rules between variables in a data set. So, what are the items brought
+together is the pattern we want to identify from the X. So, in unsupervised learning there are two types of algorithm.
+Clustering which focuses on finding natural groups in the data and association rule mining is another category
+which is focused on finding frequently purchased items or frequently occurring items together.
+A very good example of unsupervised learning is called clustering and is this diagram. So, think about a scenario.
+In 1947 when we got independence the government of India or our first prime minister had two options.
+To run this country as one unit or divide this country into states and let state runs the local issue and the national
+issues like defense and stuff will be run by the national government. So, if you run the country as one big unit it is very hard to run.
+Because the issues in Jammu Kashmir will be very different from issues in Kerala. It will be very different.
+Local issues in Gujarat will be very different from issues in the northeast. We decided that we will not run the country as one unit. We will divide it into states and then run the country and the local issues will be handled by state.
+So, the question was how do you divide the country into states and the national issue or issues which are of national interest will be handled by the national government. So, then the question was how do you divide the country into states? So, the basic philosophy is similar people put into one group one state dissimilar people put into different groups. So, how do you find similar people and dissimilar people in this? Basically you divide or find similarity based on the language. If, so this was the philosophy of the language.
+So, philosophy is that type that if two people are speaking same language put them into one state. If two people are speaking different languages put them into different states. So, for example, people speaking Malayali and people speaking Tamil were divided were put into two different states. Kerala and Tamil Nadu. So, these people are dissimilar. And that is why they were put into two different states. Kerala and Tamil Nadu. So, these people are dissimilar. And that is why they were put into two different states.
+So, here the idea is not to do any prediction. Just to find similarity. So, this person and this person is dissimilar. Why? Because they are speaking two different languages. This person and this person is similar because they are speaking both Tamil. So, they were put into one state otherwise you are going to put into. So, you will see that majority of the state boundaries are built today based on the language which is spoken in that
+So, for example, Punjab came from Punjabi. So, for example Punjab came from Punjabi. Gujarat came from Gujarati. Then you have Marathi. You have Marathi state. In central India again they have divided into some states. Then you have Bengali based Bengal. Udiya. Udisa and so on. So, you see that country was divided.
+So, this is based on the language based on the language which we are speaking. And the idea of grouping was based on the same language. If two people are speaking same language. Put them into one group. Disimilar put into different group. So, here the idea was not to do any prediction. To find similarity between people. Similar people were put into one group. Disimilar people were put into different groups.
+different groups. So clustering, the idea is to find natural groups in the data. So given
+a set of points only x, no y, no class label, no correct answer. The goal of the clustering
+algorithm is to find groups such that data points in one group are very similar to each
+other. Data points in two different groups, data points which are very different from
+each other are put into two different groups. So data points in separate groups are very
+dissimilar to each other. So similarity computation can be, so here the similarity computation
+can was done based on language. Maybe similarity computation can be based on maybe height of
+the person, maybe gender of the person, maybe how much he can run, maybe the colour of the
+person, maybe what dress they are wearing. So think about it, country divided based on the
+the dress, the local dress which we are wearing. So if you are wearing maybe a sari, you are
+from a different state. If you are wearing salwar kurta, you are from different state. If you
+are wearing dhoti kurta, you are from different state and so on. So those can be idea to divide
+fine groups. But finally, we decided to divide groups based on language. Right. So the idea
+of any clustering algorithm is to minimize intra cluster distance and maximize inter cluster similarity. So that
+means this distance inside the cluster, the distance should be minimized and between the clusters group, the
+distance should be maximized. So inside the cluster, the similarity should be maximized. Distance is minimized,
+right. So here, distance and similarity are inversely proportional. Right. If the distance is high, similarity is less. If the distance is low, similarity is high. There are various applications of clustering in real world. Think about it. Right. Google News is a very good example of document clustering. So every day, thousands of news articles are getting generated.
+If I give you all these news articles as one bunch, if I give you all these news articles as one bunch, would not be a good way of passing on the information. So what Google News does, divide news articles into groups based on the topic. So topic identification, which is a part of clustering, which is an example of the topic. So topic identification, which is a part of clustering, which is an example of the topic.
+Clustering can be used to identify news articles. So similar news articles put into one group, dissimilar news articles are put into different groups. So similarly, finance news articles are put into one group, foreign are put into another group, national are put into another group, metro is put into another group, sports is put into another group. These are the different groups. And then these are the articles which are put into those groups. So clustering, we are not doing any prediction.
+not doing any prediction we are finding similarity between news articles similar news articles put
+into one group so all the news articles related to finance in one group all the news articles
+related to foreign in another group and so on stock market analysis right so a lot of time you
+see right oil companies are performing good right defense companies are performing good
+technologies companies are performing good finance companies are performing good so when i talk
+about finance companies this is not one company a group of company are performing a good so for
+example after every budget right there are news articles saying that technology companies are going
+to perform good why because government has reduced tax on technology companies maybe oil price is going
+to come down if oil price is going to come down all the companies related to oil price oil business will
+the stock price will increase so think about it right again not doing any prediction finding groups
+in the data finding clusters in the data market segmentation divide market into segments so that
+we can do lot of things with it so direct marketing marketing to a specific group of customer so if
+you are launching an iphone you are not going to sort of market it to person with a very low income
+right so that is what we do in clustering right market segmentation is a great example of clustering
+association rule mining association rule mining is another great example of unsupervised learning in
+association rule mining a different category the idea is to produce dependency rules right which can
+predict the occurrence of an item based on another item so think about is these taglines right panda
+coca-cola right this is an association rule mining example right you find association between two things
+here tanda and coca-cola so if one thing is happening another thing will also happen right so great example we have
+discussed this in data pre-processing course so i'm just quickly skimming through it so that we can revise it
+right so in association rule mining right one item is bought leads to the purchase of another item
+another item is bought leads to the purchase of another so you find relationship between two items
+right whether they are bought together or not so this is called association rule mining right so you see
+See if the tramosa is bought, there is a high chance that coke will also be bought.
+So this is a great example of association rule mining.
+Supermarket chef management is a great example of association rule mining.
+So you put, you stack items which are very, which are bought together.
+So if you have thousands of product getting sold in a supermarket, right, you instead
+of arranging them randomly in a supermarket, you arrange those product which are bought
+together in one place and which are not bought together in a different place.
+Inventory management, all these are great examples of association rule mining.
+So in summary, in this video we looked into what is unsupervised learning and we also looked
+into different types of unsupervised learning algorithms like clustering and association rule
+mining and we saw few real world examples of clustering and association rule mining.
+We have already discussed this in data pre-processing course.
+Please feel free to read those or watch those videos again.
+We will continue in this module.
+Take care.
+Bye bye.

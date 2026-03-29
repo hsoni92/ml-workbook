@@ -1,0 +1,55 @@
+Hello everyone. Welcome back to module 5 of Artificial Neural Networks. In this video,
+we will learn about one of the most important control knobs for gradient flow,
+that is, weights and bias initialization. By the end of this video, you will understand
+why initialization is crucial for stable training, why zero initialization fails, what can go wrong
+with naive random initialization, and how Xavier and he initialization help stabilize gradient flow.
+You will also learn why bias initialization is treated differently from weight initialization.
+When training begins, the network knows nothing. Every parameter, every weight and bias must be given an
+initial value. These initial values determine how activations scale, how gradients scale,
+and whether learning begins smoothly or it fails immediately. Bad initialization can completely
+block learning. Good initialization can make deep networks trainable. So, initialization is not a small
+detail. It is the starting point of the entire learning process. A very natural question is, why not just
+initialize all weights to zero? Isn't that simple and clean? The problem is symmetry. If all the weights
+are zero, every neuron in a layer receives exactly the same input. Every neuron produces exactly the same output. During backpropagation, every neuron receives exactly the same gradient. So, they stay identical forever. This means the network can never learn different features. All neurons collapse into clones of each other. This is called the symmetry breaking problem.
+And this is why weights can never be initialized to zero. Bias terms behave differently. Bias does not multiply inputs. So, it does not create symmetry across neurons. If you set all biases to zero, it does not block learning. It does not produce identical neuron behavior. This is why B equals to zero is a standard practice.
+However, in ReLU networks. However, in ReLU networks, you sometimes use a small positive bias to avoid dead neurons. But zero bias is also perfectly fine in most of the architectures.
+Now, that we know that zero weights are not an option, what makes an initialization good? A good initialization should make sure that activations do not blow up, they do not collapse to zero, and gradients maintain a healthy magnitude across layers. In other words, a good initialization tries to preserve stable variance during both forward and backward passes.
+The idea of preserving variance is the foundation of modern initialization methods. So, if zero initialization fails, why not randomly pick weights from a normal distribution?
+If we choose W from a normal distribution with mean zero and variance sigma square, two things can happen. If sigma is too small, weighted sums shrink. Activations get smaller across layers, gradients vanish.
+And if sigma is too large, and if sigma is too large, weighted sums explode, activations become huge, gradients blow up. This is why naive random initialization very often fails, especially for deeper networks.
+To understand why random initialization is risky, consider what each layer computes. It computes z equals summation wi xi. The variance of this output depends on the number of inputs, the variance of the inputs, and the variance of the weights.
+As signals move through many layers, this variance keeps getting multiplied. Without careful control, it grows or shrinks exponentially. This leads us directly to vanishing or exploding gradients, the problems that we had discussed earlier.
+Xavier initialization was designed for sigmoid and tanh networks. It chooses weight variance very carefully.
+Gaussian version is given by W is sampled from normal distribution with mean zero and variance 1 by number of neurons in input of the current layer.
+And the uniform distribution version is given by W is sampled from this uniform distribution, where n input is the number of neurons in the input of the current layer, which is basically the previous layer, and n out is the number of neurons in the output of this layer.
+The idea is simple. Maintain stable variance across layers for both forward and backward passes.
+For tanh and sigmoid networks, Xavier initialization dramatically improves training stability.
+For ReLU networks, Xavier is not ideal.
+ReLU zeros out roughly half the inputs.
+This means the effective variance of the signal is cut in half.
+He initialization compensates by using
+weights sampled from a normal distribution with mean zero and variance 2 by number of inputs.
+This factor of 2 keeps activations and gradients well scaled for the ReLU family.
+Modern deep networks with ReLU and all its variants almost always use He initialization.
+Coming to bias initialization.
+Bias initialization is much simpler.
+Bias does not affect variance propagation.
+Bias does not multiply signals, so it does not contribute to vanishing or exploding gradients.
+This is why B equals to 0 is normal.
+Sometimes for ReLU networks, we use a small positive bias to avoid dead neurons, but this is optional.
+It is tempting to treat initialization as a small tuning detail.
+In reality, it can decide whether gradients flow, whether activations are in a healthy range, and whether the model even begins to learn.
+Poor initialization can lead to
+Immediate vanishing exploding gradients, flat loss curves, instability or divergence.
+While, good initialization helps in
+Smooth early learning, stable gradient flow, and faster convergence.
+Hence, initialization is not just a tuning knob.
+It is the foundation of model training.
+Now, let us summarize the main points of this video.
+Zero weights break learning because of symmetry, but zero bias is usually fine.
+Naive random initialization often leads to exploding or vanishing gradients.
+Xavier initialization stabilizes TANACH and sigmoid networks.
+He initialization stabilizes ReLU family networks.
+Specialization is a crucial foundation for healthy training.
+In the next lesson, we will learn about the need for loss functions in training and compare some common loss functions.
+Thank you.

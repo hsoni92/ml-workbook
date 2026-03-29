@@ -1,0 +1,34 @@
+Hello everyone. Welcome back to module 3 of Artificial Neural Networks. In this video,
+we will discuss the logistic neuron. By the end of this video, you will be able to explain the
+limitations of the perceptron's heart threshold and why a smooth alternative is needed. You will
+understand the sigmoid function and its key properties. You will be able to interpret the
+logistic neuron's output as a probability and you will recognize that in the case of logistic neuron,
+the decision boundary remains linear while the output becomes smooth. Till now, we have worked with
+the perceptron, which makes decisions using a heart threshold. The output jumps abruptly from
+minus 1 to plus 1. This means the perceptron gives us only a class label, not how confident it is about the decision.
+Because of this heart threshold, the perceptron has three major limitations. It provides no notion of uncertainty,
+no probabilistic interpretation and it is difficult to use for smooth continuous optimization. To overcome these issues, we now introduce a smooth alternative to the perceptron, which is the logistic neuron. At the heart of the logistic neuron is the sigmoid function.
+The logistic neuron is defined as sigma of z equals 1 upon 1 plus e to the power minus z.
+If we look at this curve, you can see its most important property immediately. Unlike a step
+function, the sigmoid changes smoothly between 0 and 1. No sudden jumps, no discontinuities.
+Now, let's look at the values of this function. When z equals to 0, the value of this function
+becomes 1 upon 1 plus e to the power minus 0 which is 1 upon 1 plus 1 which is 0.5. When z is a large
+positive number, then e to the power minus z tends to 0 and this function value tends to plus 1. As you
+can see in the graph here, when z is a large negative number, then in this case, 1 upon 1 plus e to the power
+minus z and negative of that becomes like a very big positive value.
+So, the denominator tends to infinity and the value of the function tends to 0. So, we see that any real
+input, whether very large positive or very large negative, gets mapped into a value strictly between
+0 and 1. This makes the sigmoid ideal for representing soft decisions and gradual transitions instead of
+hard switching. Now, let's discuss the logistic neuron. The structure of the logistic neuron is almost the
+same as the perceptron. We still compute a linear combination of inputs z equals w transpose x plus b.
+But, instead of applying a hard step function, we now apply the sigmoid. So, the only change from the
+perceptron is the activation function. But, this single change radically alters how the output behaves.
+Instead of giving us just plus 1 or minus 1, the logistic neuron produces a continuous value between 0 and 1.
+This continuous output now allows a very powerful interpretation. The output of the logistic neuron
+can be interpreted as a probability. Y hat equals probability of y equals 1 given x. If the output is close to 1, the model is highly confident that the input belongs to class 1. If the output is close to 0, the model is highly confident that the input belongs to class 0. If the output is around 0.5, the model is uncertain.
+This is a fundamental shift from the perceptron. We no longer get just a class label. We get a confidence score along with it.
+This probabilistic viewpoint is central to modern machine learning. Interestingly, even though the output behavior has changed completely, the geometry of the classifier has not changed. The decision boundary of a logistic neuron is still defined by the condition y hat equals 0.5 and 0.5.
+So, geometrically, the logistic neuron still creates a linear decision boundary. The same kind of line or hyperplane as the perceptron. What changes is not the location of the boundary, but how sharply the decision transitions across that boundary. Instead of an abrupt flip, the output now changes smoothly from the boundary.
+The logistic neuron changes smoothly from near 0 to near 1. Now, let's summarize the main points of this video. The logistic neuron replaces the hard threshold of the perceptron with a sigmoid function. It produces continuous outputs between 0 and 1 that can be interpreted as probabilities. Although the decision boundary remains linear, the output varies smoothly across that boundary. Because of these properties, the output varies smoothly across that boundary.
+Because of these properties, the logistic neuron becomes a core component of modern multilayer neural networks. In the next video, we will directly compare the logistic neuron with the perceptron in terms of their decision behavior and smoothness. Thank you.
+Thank you.

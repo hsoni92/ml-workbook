@@ -1,0 +1,37 @@
+Hello everyone. Welcome back to Module 5 of Artificial Neural Networks. In this video,
+we will see backpropagation step-by-step on a real two-layer neural network.
+By the end of this video, you should be able to trace the forward pass, identify all intermediate
+variables used in backprop and apply the chain rule to compute gradients for every weight
+and bias. We will work with the simplest non-trivial neural network. There is one input x, one hidden
+neuron and one output neuron. The computations are z1 equals w1x plus b1. Then we apply an
+activation function h equals sigma z1 to add some non-linearity. This goes as an input to the next layer
+giving us z2 equals w2h plus b2 and finally the output y hat equals to z2. The error signal here is given by
+e of y hat. This is called a two-layer network because it has one hidden layer and one output layer.
+We begin with the forward pass. The input x is first transformed by the first layer z1 equals w1x plus b1. This is a
+linear transformation. Then the activation function is applied h equals sigma z1. At this point, it is very important to note that we store both z1 and h. These stored values will be reused during backpropagation. Next, the hidden activation is passed to the output layer which gives z2 equals w2h plus b2 and y hat is given by the output layer. This is a linear transformation. This is a linear transformation. This is a linear transformation. Then the activation function is applied h equals sigma z1. At this point, it is very important to note that we store both z1 and h. These stored values will be reused during backpropagation.
+Next, the hidden activation function is passed to the output layer which gives z2 equals w2h plus b2 and y hat is given by z2. Finally, the network produces an error signal e of y hat. At the end of the forward pass, we have cached x, z1, h, z2 and y hat. These stored values make the backward pass
+as possible. The goal of backpropagation is to compute the following gradients. Deli by del w2, deli by del b2, deli by del w1 and deli by del b1. Each of these quantities tells us how strongly that specific parameter influenced the final error. We will compute them using the chain rule step by step. Backpropagation always
+begins at the output. We first compute deli by del y hat. Since y hat equals to z2, so del e by del y hat equals to del e by del z2. This is the initial gradient signal that will be propagated backward through the network. Now, we compute
+gradients for the output layer parameters. Since Z2 equals W2H plus B2, using the chain rule,
+we know that del E by del W2 is equal to del E by del Z2 times del Z2 time by del W2.
+Now, del Z2 by del W2 is given by H and this is del E by del Z2 which we have seen previously.
+Similarly, del E by del B2 is given by del E by del Z2 times del Z2 by del B2. Now, this del
+Z2 by del B2 is 1 because rest of the things are constant here. So, the output layer is now
+fully differentiated. Both W2 and B2 have received their responsibility for the error. We now propagate
+the gradient backward to the hidden activation. Since we have seen that Z2 equals W2H plus
+B2, so del E by del H is given by del E by del Z2 times del Z2 by del H. Del E by del Z2 we already know
+W2 and del Z2 by del Z2 by del H is given by W2. This value tells us how much the hidden
+neuron contributed to the final error. The hidden layer never sees the error directly. It only sees this
+propagated responsibility signal. Next, we pass the gradient through the activation function. Since we know that
+H equals to sigma of Z1, we know that H equals to sigma of Z1. So, to compute del E by del Z1, we know that del E by del H times del H by del Z1. Del E by del H we already know.
+And del H by del Z1 is given by the differential of this. This is a very important step. It clearly
+shows that the activation function directly influences how gradients flow during the training process. Finally, we compute gradients for the
+the first layer. Since Z1 is given by the first layer. Since Z1 equals to W1 X plus B1, so
+we get del E by del W1 equals del E by del Z1 times del Z1 by del W1, which equals to del E by del Z1 times X because W1 X.
+Then, del E by del B1 is given by del E by del Z1 times del Z1 by del W1. So, this equals 1. Now, the first layer has also received its learning signal. At this point, all parameter gradients in the network are available to us. Let's look at the first layer. Now, the first layer has also received its learning signal. At this point, all parameter gradients in the network are available to us. Let's look at the first layer.
+Let us now interpret the entire process visually. In the forward direction, values flow from X to Z1 to H to Z2 and to Y hat and finally to the error E. In the backward direction, gradients flow from E to Z2 to H and finally to Z1 and from each layer's pre-activation, gradients branch upward to the corresponding weights and biases. This shows us
+something fundamental. The same network used for prediction is reused in reverse to assign responsibility for the error. In this video, we have only computed gradients. We have not updated any parameters. We have not used a learning rate and not applied any optimization algorithm. This is intentional.
+Backpropagation is only the gradient computation step. Parameter updates will be introduced later when we study optimization. Now, let us summarize the main points of this video.
+Backpropagation works by chaining local derivatives backward. Output layer gradients are computed first. Hidden layer gradients are obtained only through propagation. Even this tiny two-layer network already shows the complete structure of
+deep backpropagation. Everything that happens in deep backpropagation. Everything that happens in very deep networks is an extension of this exact same idea. Now that you understand how gradients flow through a full network, we are ready to address the next critical question. What happens to these gradients when the network becomes very deep? In the next lesson, we will study gradient flow, initialization, and why deep networks are
+often fail to train without careful design. Thank you.

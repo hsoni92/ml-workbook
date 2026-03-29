@@ -1,0 +1,19 @@
+Hello everyone. Welcome back to module 5 of Artificial Neural Networks. In this video, we will learn about computational graphs. By the end of this video, you will learn what a computational graph is, how nodes and operations are represented in such a graph, what a local gradient means, how the chain rule operates on a graph, and what a local gradient is.
+Why computational graphs make backpropagation efficient and systematic? A computational graph is a graphical representation of a mathematical expression. In this graph, nodes represent variables or intermediate values. Edges represent mathematical operations that transform one value into another.
+The graph shows us exactly how a final output is constructed step by step from the input. Let us look at a very simple example. We define u equals 3x and then y equals u square.
+As a graph, this becomes a simple chain. The input node is x. The first operation computes u equals 3x. The second operation computes y equals u square. So, even this small expression already has a clear graph-like structure.
+input multiply square and then you get the output. When we perform a forward pass on a
+computational graph, we evaluate each node step by step. For this example, we start with the value
+of x, then we compute u equals 3x and then finally compute y equals u square. Each intermediate
+value is stored inside the graph. This storage is extremely important because these values will
+later be reused when we compute gradients during the backward pass. At each edge of the computational
+graph, we can define something called as a local gradient. A local gradient is simply the derivative
+of a node's output with respect to its direct input. In our example, since u equals 3x, the local
+gradient here is given by du by dx equals to 3. And in the second case, the local gradient is given by
+dy by du equals 2u. Each small operation in the graph contributes its own local derivative. Backpropagation
+is built entirely from these local gradients. Suppose we want the global derivative dy by dx. The computational
+graph tells us exactly how to apply the chain rule. By looking at this graph, we know dy by dx equals dy by du times du by dx. Now we know that dy by du is given by 2u. We have seen this already. And du by dx is 3.
+This shows us a key idea. A global gradient is the product of local gradients along a path in the graph. The same computational graph is used both for the forward pass and the backward pass. During the forward pass, the graph computes and stores all the intermediate values. During the backward pass, we start at the output and propagate gradients backward and backward and backward.
+through the same graph using only the stored intermediate values using only the stored intermediate values and the local derivatives at each node. So, one static graph supports both the computation and differentiation. Now, let us summarize the main points of this video.
+Any neural network computation can be represented as a computational graph. Each edge in the graph has a local gradient. Global gradients are computed by multiplying local gradients along the paths using the chain rule. Backpropagation is simply the systematic backward traversal of this computational graph to compute all parameter gradients efficiently.
+In the next video, we will bring everything together. You will see backpropagation step by step on a real two-layer network. This will be your first complete concrete example of how neural networks actually learn. Thank you.

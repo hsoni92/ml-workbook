@@ -1,0 +1,44 @@
+# Two-tower recommendation system config
+# Single place for model, data, and training settings.
+
+# Model: both towers output this embedding dimension (must match for dot-product scoring)
+embedding_dim: 64
+
+# User tower: input dims and hidden layers (last layer projects to embedding_dim)
+user_tower:
+  # Number of user features (e.g. user_id one-hot dim, device, time bucket)
+  input_dim: 128
+  hidden_dims: [256, 128]  # MLP hidden layer sizes
+
+# Item tower: same idea
+item_tower:
+  input_dim: 128
+  hidden_dims: [256, 128]
+
+# Data paths (relative to project root or absolute)
+data:
+  train_path: data/train.csv
+  eval_path: data/eval.csv
+  # Column names in CSV (set for Kaggle etc., e.g. userId/movieId, reviewerID/asin)
+  user_id_column: user_id
+  item_id_column: item_id
+
+# Training
+train:
+  batch_size: 256
+  epochs: 10
+  learning_rate: 0.001
+  # Where to save checkpoints and best model
+  checkpoint_dir: checkpoints
+  save_every_n_epochs: 1
+
+# Embedding / index build
+embed:
+  item_embeddings_path: output/item_embeddings.pt
+  item_ids_path: output/item_ids.pt
+  # Optional: FAISS index path for serving
+  faiss_index_path: output/faiss.index
+
+# Evaluation
+evaluate:
+  k_values: [1, 5, 10, 20]  # Recall@K and NDCG@K

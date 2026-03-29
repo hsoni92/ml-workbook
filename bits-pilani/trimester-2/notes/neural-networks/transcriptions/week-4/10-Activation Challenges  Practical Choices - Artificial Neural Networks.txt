@@ -1,0 +1,32 @@
+Hello everyone! Welcome back to Module 4 of Artificial Neural Networks. In this video, we will study the practical challenges and design choices involved in selecting activations for real-world networks.
+By the end of this video, you will be able to identify the main challenges caused by poor activation choices, understand the issues such as saturation and dead neurons, see how activation functions affect training dynamics, and finally learn practical guidelines for choosing activation functions in real neural networks.
+Activation functions are not just a mathematical formality. They strongly influence how a neural network trains, converges, and remains stable.
+A poor activation choice can lead to extremely slow learning, unstable training, or in some cases, no learning at all.
+That is why activation selection is not a minor design detail. It is a core architectural decision that directly impacts whether a deep network will work in practice or not.
+Let us start with the problem of saturation, which occurs primarily with sigmoid and tanage. For very large positive or very large negative inputs, both sigmoid and tanage flatten out. In these regions, even a large change in the input produces only a tiny change in the output.
+During training, this means that learning signals become extremely weak. As a result, parameter updates become very small and learning slows down dramatically.
+This was one of the main reasons why early deep neural networks were so difficult to train. Saturation leads directly to another major challenge known as the vanishing gradient problem.
+When signals are passed backward through many layers, small values multiply with each other and become even smaller. As a result, the early layers in a deep network receive almost no learning signal.
+This means that the deeper the network, the harder it becomes for the first layers to learn meaningful features. We will study the mathematical details of this phenomena later. For now, it is important to understand its conceptual impact on training deep networks.
+Although, ReLU solved the saturation problem in the positive region, it introduced a new issue known as the dying ReLU problem. Recall that, ReLU solved the saturation problem in the positive region. It introduced a new issue known as the dying ReLU problem.
+Recall that, ReLU outputs exactly zero for all negative inputs. If, during training, a neuron starts receiving inputs that are always negative, it will output zero for every input thereafter. Once this happens, the neuron effectively stops contributing to the network. It no longer activates and it no longer learns. Such neurons are referred to as dead ReLUs.
+This problem does not always occur, but when it does, it reduces the effective capacity of the network. Another less common but dangerous issue is exploding activations. In some deep networks, activations can grow very large as they propagate through layers. This can happen due to poor weight initialization, excessive depth or unstable activation weight interactions.
+sections. Exploding activations can lead to numerical overflow, instability in computation,
+and complete training failure. This highlights the fact that activation choice is tightly
+connected to weight initialization and network depth.
+Let us now summarize the practical guidelines for hidden layers. As a rule of thumb, use
+ReLU as the default activation for hidden layers. If you observe many inactive or dead neurons,
+try Leaky ReLU. For very deep networks, always prefer ReLU family activations. Avoid sigmoid
+in deep hidden layers as it almost always slows down or destabilizes the training. These guidelines
+are based on years of empirical experience across many deep learning applications. The
+choice of activation for the output layer depends entirely on the nature of the prediction task.
+For binary classification, use sigmoid. For multiclass classification, use softmax. And for regression,
+use a linear output with no activation. Here, we choose the output activation based on how
+we want to interpret the model's predictions, not on training speed. At this point, we can clearly see
+the trade-offs between different activation functions. Sigmoid gives us probabilistic outputs but suffers
+from saturation. TanH is zero-centered but still saturates. ReLU is fast and stable but can suffer from dead neurons. Variance of ReLU reduces the risk of dead neurons. And softmax is essential.
+And softmax is essential for multiclass probability outputs. No single activation function is perfect. Each one exists because of the specific design goals and trade-offs. Now, let us summarize the main points of this video. Activation choice strongly affects the
+trainability and stability of the trainability and stability of neural network. Sigmoid and TanH suffer from saturation and vanishing gradients, while ReLU enables fast and stable learning but it can suffer from dead neurons. These issues can be mitigated using leaky ReLU and related variants. Output activation must always match the nature of the prediction task. Good activation choices are one of the key reasons for the prediction task.
+So, these choices are one of the key reasons why deep neural networks are practical and effective today. Thank you.
+Thank you.
+Thank you.

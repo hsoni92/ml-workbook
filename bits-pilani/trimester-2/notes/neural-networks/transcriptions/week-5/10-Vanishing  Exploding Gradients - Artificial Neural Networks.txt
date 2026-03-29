@@ -1,0 +1,28 @@
+Hello everyone. Welcome back to module 5 of Artificial Neural Networks. In this video,
+we are going to understand one of the biggest challenges in training deep neural networks,
+vanishing and exploding gradients. By the end of this video, you will know why gradients can shrink
+or grow as they pass through many layers, how the chain rule creates these effects,
+and what symptoms show up during the training process. When we train a neural network using
+backpropagation, each layer computes a local derivative. And during backprop, these derivatives
+get multiplied together through the chain rule. So, the gradient for an early layer looks like
+dl by dw equals product of all the local derivatives dAk by dAk minus 1 times dl by da of the current
+layer L. You don't need to focus on the notation. The key idea here is simple. A deep network
+multiplies many derivative terms together. If most of these derivatives are less than 1,
+the gradient shrinks as it travels backward. If they are greater than 1, it grows rapidly.
+This is the origin of vanishing and exploding gradients. Let's start with vanishing gradients.
+This happens when most layer derivatives are less than 1.
+Two common reasons for this are, first, activations like sigmoid or tanh tend to saturate. Their derivatives
+become extremely small, sometimes close to 0. Second, if the weights are initialized too small,
+activations remain small and so do their derivatives. When you multiply many numbers that are less than 1,
+you get exponential shrinkage. For example, if each derivative is around 0.5 and you have around 20 layers,
+so 0.5 raised to the power 20 equals 10 raised to the power minus 6. That's almost 0. So, lower layers receive almost no gradient signal and they simply stop learning.
+Exploding gradients occur when most derivatives are greater than 1. This happens when weights are too large or when activations
+Amplify inputs instead of controlling them. Each layer multiplies the gradient by a number slightly bigger than 1 and
+when this repeated like 20 or 30 times, this becomes huge. For example, 1.5 raised to the power 20 is roughly 3300. A gradient that should have been small becomes
+thousands of times larger. This makes the weight updates enormous and the model becomes unstable or it just diverges. Activation functions play a major role here.
+Sigmoid has a derivative that is never larger than 0.25 and becomes almost 0 when saturated. This strongly encourages vanishing gradients.
+Tanage is centered but still saturates and produces derivatives near 0. ReLU helps a lot because its derivative is either 0 or 1 so it doesn't shrink the gradients. But with large weights, even ReLU networks can experience exploding gradients.
+So, the choice of activation directly affects the gradient flow. How do you know gradients are vanishing or exploding? For vanishing gradients, the first few layers barely change. Training accuracy plateaus very early. Loss decreases extremely slowly. And for exploding gradients, loss suddenly spikes or becomes NAN. Weight values grow extremely large. Training
+Training updates look chaotic and unstable. Recognizing these symptoms helps you troubleshoot training failures quickly. Now, let us summarize the main points of this video. Deep networks repeatedly multiply local derivatives. If derivatives are less than 1, this leads to vanishing gradients. If derivatives are more than 1, it can lead to exploding gradients. Both make training difficult or impossible. Activation
+Activation choice and initialization strongly influence the gradient flow. Understanding these effects helps us build more stable, deeper networks. In the next video, we will look at some practical techniques to mitigate vanishing and exploding gradients. Thank you.
+Thank you.

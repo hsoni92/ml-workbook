@@ -1,0 +1,44 @@
+Hello everyone, welcome back to module 4 of Artificial Neural Networks. In this video, we will discuss the two key activation functions sigmoid and tanh.
+By the end of this video, you will learn the mathematical definitions of the sigmoid and tanh activation functions, how to interpret their output ranges and shapes, understand their saturation behaviour and compare where each of them is used in practice.
+We begin with sigmoid and tanh because these are the classical activation functions that were used in the earliest neural networks. They introduce smooth continuous non-linearity and they also help us understand the limitations that later motivated the development of modern activation functions like ReLU.
+Sigmoid is closely connected to logistic regression while tanh became a standard choice for hidden layers in early deep networks.
+The sigmoid activation function is defined as sigma of z equals 1 upon 1 plus e to the power minus z.
+This function maps any real valued input into the range between 0 and 1.
+It's graph has a characteristic S-shaped curve.
+Because of this range, the output of sigmoid can be naturally interpreted as a probability.
+This is why sigmoid is commonly used in the output layer for binary classification problems.
+Now, let us interpret what the sigmoid is actually doing.
+As we have seen in the previous videos, when the input z is large and positive, the output of sigmoid is close to 1.
+When z is large and negative, the output is close to 0.
+Around z equals 0, the sigmoid changes most rapidly.
+So, sigmoid takes a real valued score and converts it into a soft yes or no decision rather than a hard threshold.
+This smooth transition is what makes it useful for probabilistic modeling.
+Now, let us look at the tanh or hyperbolic tangent.
+It is defined as tanh of z equals e to the power z minus e to the power minus z divided by e to the power z plus e to the power minus z.
+Like sigmoid, tanh is also an S-shaped curve.
+But its output range is from minus 1 to plus 1, making it zero-centered.
+In fact, tanh is mathematically related to the sigmoid.
+It is essentially a rescaled and shifted version of the sigmoid function.
+Tanh was widely used in the hidden layers of classical neural networks.
+One of the most important differences between sigmoid and tanh is zero-centering.
+The output of sigmoid is always positive, lying between 0 and 1, while the output of tanh is centered around 0, lying between minus 1 and plus 1.
+Zero-centered activations often lead to better optimization behavior during training because the activations can be balanced between positive and negative values.
+For this reason, tanh was generally preferred over sigmoid in hidden layers, even in early deep networks.
+Both sigmoid and tanh suffer from a phenomena known as saturation.
+When the magnitude of the input z becomes very large, the output of both functions changes very slowly, even if z changes by a lot.
+Even if you look at this graph here, right?
+The value of x is changing here, but the magnitude of tanh is kind of saturated here.
+So this is what we mean by the saturation behavior.
+This means that during training, the gradients associated with such neurons, they become very small.
+This effect is one of the main contributors to the vanishing gradient problem in deep networks.
+While we are not studying gradients yet in detail, it is important to note that this saturation behavior causes serious difficulties in training deep networks with sigmoid and tanh.
+Now, let us summarize how sigmoid and tanh are used in practice.
+Sigmoid is most commonly used in the output layer for binary classification because its output can be interpreted as a probability.
+Tanh was historically used in hidden layers, especially in early neural network architectures.
+In modern deep learning, however, both sigmoid and tanh are used sparingly in hidden layers, mainly because of their saturation and banishing gradient issues.
+Now, let us summarize the main points of this video.
+Sigmoid and tanh are smooth nonlinear activation functions.
+Sigmoid maps real values to probabilities between 0 and 1, while tanh maps values to a zero-centered range between -1 and +1.
+Both functions suffer from saturation, which can slow down or destabilize the training of deep networks.
+These limitations directly motivated the development of modern activation functions such as ReLU, which we will study next.
+Thank you.

@@ -1,0 +1,35 @@
+Hello everyone! Welcome back to Module 4 of Artificial Neural Networks. In this video, we will discuss how the depth and width of a network affect its expressive power.
+By the end of this video, you will learn what the expressive power of a neural network really means. How both network width and depth affect this expressive power.
+How shallow wide networks differ from deep narrow networks. And finally, why depth plays a central role in modern deep learning.
+When we talk about the expressive power of a model, we are referring to the set of functions that the model can represent.
+A model with higher expressive power can represent more complex and more varied input-output relationships. For neural networks,
+the expressive power is controlled mainly by two structural choices. First, how many layers the network has, which we call depth. And,
+second, how many neurons per layer, which we call as width. So, expressive power is about capacity, not yet about training or performance of the model.
+A shallow network typically has only one hidden layer or no hidden layers at all. A deep network contains multiple hidden layers stacked on top of each other.
+Both shallow and deep networks can, in principle, approximate complex functions. However, the efficiency with which they represent these functions is very different.
+This leads us to a key question. Is it better to add more neurons in one layer or to add more layers with fewer neurons each?
+Let us first think about what happens when we increase the width of a network. Adding more neurons to the same hidden layer increases the number of feature detectors at a single level of abstraction.
+This allows the network to create finer and finer partitions of the input space. In fact, a famous theoretical result, the Universal Approximation Theorem, tells us that a network with even one hidden layer can approximate any continuous function provided it has enough neurons.
+However, the catch is that the number of neurons required may become exponentially large making such networks impractical.
+Now, let us consider what happens when we increase the depth of a network.
+Adding depth means stacking multiple layers of transformations where each layer works on the representation produced by the previous one.
+This allows the network to build features in a hierarchical manner. Simple features are formed first and then successively combined into more complex features.
+A key advantage of depth is that many complex functions can be represented using far fewer parameters compared to a very wide but shallow network.
+Depth enables efficient function composition.
+This leads us to the central trade-off between width and depth.
+A wide but shallow network tries to learn many features all at once in a single layer.
+A deep but narrower network learns features gradually, across multiple levels of abstraction.
+For many real world problems, deep networks are far more parameter efficient.
+They can represent the same class of functions using fewer neurons and fewer parameters than an extremely wide, shallow network.
+This is a major reason why modern neural network design strongly favors depth over extreme width.
+Another important reason depth works so well is that many real world problems have an inherent hierarchical structure.
+For example, in vision, simple edges combine into shapes, shapes combine into objects.
+Or in language, characters form words, words form phrases and phrases form meaning.
+Deep networks naturally match this kind of hierarchical composition of features, which is why they are so effective for vision, speech and language based tasks.
+Now, let us summarize the main points of this video.
+The expressive power of a neural network refers to the class of functions it can represent.
+Increasing width gives more feature detectors at a single level, while increasing depth enables hierarchical composition of features.
+Although shallow networks with enough width can approximate any function in theory, deep networks usually achieve the same expressive power with far fewer parameters.
+This is why depth plays a central role in modern deep learning architectures.
+In the next video, we will see how activation functions enable this expressive power by injecting non-linearity into the network.
+Thank you.

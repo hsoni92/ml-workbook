@@ -1,0 +1,28 @@
+# Skip generated / internal storage paths misclassified as text (Hudi, Spark checkpoints).
+exclude: (?x)(
+  /\.hoodie/|/_spark_metadata/|/datalake/.*/checkpoints/|
+  \.enc$
+  )
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-merge-conflict
+      - id: mixed-line-ending
+      - id: debug-statements
+      - id: check-added-large-files
+
+  - repo: local
+    hooks:
+      - id: secure-vault
+        name: secure vault (encrypt + staged check)
+        entry: python scripts/secure_vault.py pre-commit
+        language: python
+        additional_dependencies: [cryptography, pyyaml]
+        pass_filenames: false
+        always_run: true
+        require_serial: true

@@ -1,0 +1,18 @@
+Hello everyone, welcome back to module 6 of Artificial Neural Networks. In this video, we will study about ADAM, which is a powerful and widely used optimizer for neural network training.
+By the end of this video, you will be able to understand the intuition behind the ADAM optimizer, how it combines ideas from Momentum and RMS prop, you will be able to interpret the update rule of ADAM at a high level, and finally, you will be able to appreciate why it became the default optimizer in many applications.
+So far, we have seen two powerful ideas. Momentum helps smooth updates and accelerate learning in consistent directions.
+RMS prop adapts learning rates per parameter to handle noisy and uneven gradients.
+But, each of these solves only part of the problem. ADAM was designed to combine both the ideas, momentum for direction, and adaptive scaling for stability into a single optimizer.
+That is why ADAM is able to move fast in consistent directions, stays stable in noisy or steep regions, and handle sparse gradients well.
+As we will see in the next slide, ADAM keeps track of two running statistics for each parameter.
+First, it tracks the average of recent gradients. This acts like momentum and tells us the direction to move.
+Second, it tracks the average of squared gradients. This controls how big each step should be. Together, this means ADAM knows where to go and how far to go separately for each parameter.
+Let's briefly look at the components ADAM maintains. It computes a moving average of gradients called the first moment. This is like the momentum. And a moving average of squared gradients called the second moment. This is the RMS prop part.
+Because these averages start at zero, ADAM applies bias correction early in training to avoid underestimating their true values.
+You don't need to memorize these equations. The important idea is that ADAM tracks both direction and scale of gradients over time.
+The final update step uses both corrected moments. The direction comes from the momentum term while the step size is scaled by the square root of the variance. This ensures that the updates are smooth.
+Learning rates adapt per parameter. Early training is stable due to bias correction. ADAM effectively normalizes updates while preserving useful directional information.
+ADAM works extremely well in practice because it handles noisy mini-batch gradients. It works well with sparse gradients. It requires minimal tuning. It converges quickly and works across many architectures. This is why ADAM is often the default optimizer when training deep neural networks.
+Despite its strengths, ADAM is not always the best choice. It can sometimes converge to a sharp minima which may generalize worse than solutions found by SGD. It can also hide poor learning rate choices and make debugging harder. Because of this, many practitioners switch from ADAM to SGD for fine tuning of the final training stages.
+Now, let us summarize the main points of this video. Adam combines momentum and RMS prop into a single optimizer. It tracks both gradient direction and scale. Bias correction stabilizes early updates. It is fast, adaptive and widely used but not universally optimal. In the next video, we will discuss when you should use ADAM and when you should avoid it.
+When you should use ADAM and when you should avoid it based on some practical experience and empirical results. Thank you.

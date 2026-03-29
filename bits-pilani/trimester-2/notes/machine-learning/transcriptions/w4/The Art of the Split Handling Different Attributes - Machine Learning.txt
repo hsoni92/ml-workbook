@@ -1,0 +1,209 @@
+Hello to all of you. We are in the course Machine Learning. Today we are going to discuss module 4, Supervised Learning, focusing on Decision Trees. Today's topic is the Art of Splitting, how to handle different attributes.
+So the learning objective of this video is first we are going to understand the greedy strategy that is followed by decision tree to build the tree. We are going to look into how different types of attributes like nominal, ordinal and continuous attributes are handled in while building the decision tree. So let's start right away.
+So in the last lecture we learnt about the two stage life cycle for decision tree model. That means given a tabular data set when we are building the decision tree it is called decision tree induction or tree induction. The process of learning and building the decision tree for the labelled data set is called decision tree induction.
+So given a tabular data set when you are building the tree it is called decision tree induction. Once your decision tree is built now you are going to use it for doing the prediction. So that is called decision tree or tree deduction. So the process of using completed decision tree to make the final predictions for the unlabeled data for new data is called tree deduction.
+So next few videos or lessons will focus on tree induction. How do we actually build the tree. So given some data how do we build the tree will be the focus of next few videos. Now what is the basic philosophy of building the decision tree. How do we build a decision tree. Decision tree follows a greedy strategy for construction. What do you mean by greedy strategy. So at each step of building the tree the decision tree algorithm.
+So this algorithm splits by looking at the best at the moment without looking ahead if the choice overall is good or not. Whether the choice overall is better for the overall tree in a logger run or not. Right. So basically decision tree optimize local criteria at each leaf node or non leaf node for building the tree with no backtracking. So in very simple terms.
+Let's suppose I am building a decision tree. I am at the root node. So at this point which attribute should be chosen will be based on local factors. That means at this point of time. Right. I will try to optimize locally which is the best attribute. Assuming I have let's suppose three attributes to build the tree. And locally at this point of time at root node. A assuming is the best attribute.
+Suppose I am building a decision tree.
+I am at the root node.
+So at this point, which attribute should be chosen will be based on local factors.
+That means at this point of time, I will try to optimize locally which is the best attribute.
+Assuming I have let's suppose three attributes to build the tree.
+And locally at this point of time at root node, A assuming is the best attribute.
+So I will split based on A and I will get let's suppose few child nodes.
+Again these child nodes, how do we split?
+Which attribute should be chosen?
+Again that will be done based on the local snapshot which we are seeing right now.
+So assuming let's suppose the best attribute in this case is C and the best attribute in
+this case is let's suppose B.
+So again I am going to split based on C and B and this is how I am going to build the tree.
+So please note down at each step at each splitting criteria.
+I am taking decision based on local optimization right.
+I am trying to do local optimization without any backtracking.
+So once I have split based on A and later on I found out that A is not the best attribute.
+I will not go back and change the tree right.
+So basically decision tree follows a greedy strategy where it is going to optimize locally with no backtracking.
+That also means that decision tree doesn't always guarantee global optima.
+Right.
+Now so when we are talking about decision tree induction there are three basic questions.
+One is which attribute should be chosen?
+Which attribute is the best attribute I should choose now?
+The second criteria is if a particular attribute is chosen how do we split that attribute is the second question.
+And the third question is when do we stop building the tree?
+So how do we choose which is the best attribute that we will see in the next lesson.
+Third video of this decision tree module.
+Today we are going to discuss about given an attribute.
+Assuming an attribute is the best attribute to split now.
+How do we split?
+Right.
+That we are going to discuss today.
+And the stopping condition we are going to discuss in lesson 4.
+So let's discuss right while building a decision tree.
+Assuming someone told me that this is the best attribute.
+How do we split that attribute so that I can continue building the tree is the question now.
+Right.
+So how do we split?
+It depends.
+Splitting of records depends on the attribute type.
+So if you remember in data preprocessing course we have 4 types of attribute.
+Attributes are of 4 types.
+Nominal attribute, ordinal attribute, interval attribute and ratio attribute.
+Nominal attributes are those attributes where attribute values contain only enough information
+to distinguish between attributes.
+Ordinal attributes are those attributes where attribute contains only enough information to
+distinguish or to arrange attribute values in a particular order ascending or descending.
+Interval attributes are those attributes where attribute contains enough information where the attribute values have interval has some meaning.
+And ratio attributes are those attributes where attribute values have some identity.
+So now these are the 4 types depending on the attribute type we are going to split it.
+So we can broadly divide these into 3 types.
+Nominal attribute, ordinal attribute and interval and ratio I am going to put in the continuous attribute.
+So let's talk about how do we split based on attribute type.
+So let's start with the attribute type 1 which is called nominal attribute.
+As I said nominal attributes are those attributes where attribute contains only enough information to distinguish between two attribute values.
+So let's suppose car type is my nominal attribute.
+So let's suppose car type is my nominal attribute.
+So let's suppose car type is my nominal attribute.
+Three unique attribute values are family, sports and luxury.
+Now I can here if car type is a nominal attribute I can say that family is equal to family.
+Family is not equal to sports.
+Sports is not equal to luxury.
+These are the mathematical operations I can perform on the nominal attribute.
+So let's suppose I choose at the root node to split based on car type.
+How should we split it?
+Similarly for marital status and color these are the different attribute values.
+How should we split the particular attribute?
+So we can do a multiway split or we can do a binary split.
+So a nominal attribute can be splitted based on multiway split or a binary split.
+So what is a multiway split?
+So this car type had three unique attribute values.
+So on each branch, each branch you have a unique attribute value.
+So all the training samples where car type is family will come in this child node.
+All the training samples where attribute value, attribute car type value is sports will come in this child node.
+And where the attribute value is luxury will come in this child node.
+So this is how one way of splitting the nominal attribute which is a multiway split.
+You can see there are three children's here.
+I can do five children's.
+I can do 50 children's.
+Right?
+So it says that create one branch for each distinct value of the attribute.
+Now what is the pro for this?
+What is the advantage of this strategy?
+It is very simple and very intuitive to build.
+What is the problem?
+Right?
+The problem is resultant child node might have very less number of records.
+And that might hurt the overall model performance.
+So another way of splitting nominal attribute is doing a binary split.
+What do you mean by binary split?
+Right?
+Given an attribute which has three unique attribute values.
+Sports, luxury and family.
+What I can do is I can split this attribute on a binary basis in which one path or one branch
+will have two different attribute values and another branch has unique one attribute value.
+Right?
+So there is no bound on how many attribute values you can put here and how many attribute values you can
+put here.
+If there are three unique you can put two on one side, one on another side and so on.
+If you have five, three here, two on the other side.
+If you have ten you can put five here, five here and so on.
+That sort of thing you can do.
+So we are doing binary split.
+That means there are resulting there are only two child nodes.
+And how do we reach the child nodes?
+Based on the attribute value.
+So attribute value we can consolidate into five, five in case of ten unique values and so on.
+We can do any combination.
+Right?
+So divide the attribute values into two distinct, important, two distinct non-overlapping subsets.
+That means if sports is here, it cannot be present on the other side.
+If luxury is on one side, luxury cannot be on the other side.
+So it is two distinct non-overlapping subsets.
+Right?
+Something like this we can create.
+What are the disadvantages or challenges here?
+Right?
+Finding an optimal binary split.
+Right?
+Would be a very complex problem.
+Because the number of combination would be here 2 to the power k minus 1 minus 1.
+So if there are three unique attribute values.
+Right?
+How many combinations can be possible?
+2 to the power 3 minus 1 minus 1.
+Right?
+So you can see that the number of combinations here are very very huge.
+Which combination you should choose becomes a problem here.
+Now the second one is called ordinal attribute.
+So if it is an ordinal attribute, how should you split it?
+Right?
+So the property of ordinal attribute is the attribute values.
+We can have distinctness operation.
+And we can arrange attribute values in a particular order as well.
+So in ordinal attributes, again I can do a multi-way split.
+So let's suppose, car type is an ordinal attribute.
+I can arrange all attribute values at separate branches.
+So this is firm family, this is sports, and this is luxury.
+So here, ordinal attribute can also be splitted based on multi-way split.
+It can also be splitted based on binary split.
+The only condition here is, when we are making a bucket, the order should be maintained.
+When we are making a bucket, when we are consolidating, combining multiple attribute values,
+the order should be maintained.
+If the order is broken, then there is no logical sense if the logic is broken.
+If the hierarchy is broken.
+So I can combine small and medium and I can combine medium and large.
+I cannot do small and large and have medium here.
+This is not allowed.
+So again, ordinal attribute, you can do a multi-way split.
+You can also do a binary split.
+If you are doing binary split, if you are consolidating multiple values, attribute values,
+the order should be maintained if it is an ordinal attribute.
+So this is an invalid split.
+Small, large and then medium on the other side.
+The order is broken in this case.
+If it is a continuous attribute, continuous attribute means that it can have infinite number of values.
+Like taxable income, like temperature, like age, like weight.
+Age can be 1, 2, 3, 4, 5, 6, 100, 105 and so on.
+So there are infinite number of values.
+How can we split them?
+We can split continuous values based on two strategies.
+One is called discretization and another one is called binary decision.
+Discretization means continuous attribute splitted into bins.
+For example, age.
+I can split age attribute into bins.
+Right?
+Let's suppose four bins.
+1 to 25, 26 to 50, 51 to 75 and 76 to 100.
+So I have made bins.
+I have discretized the value.
+Here the bin size is 25.
+So continuous attribute can be discretized and then each child node will be in the corresponding places.
+Or I can do a binary split.
+So taxable income, again, I can split taxable income based on a binary condition.
+If the taxable income is greater than 80k, yes or no.
+So it is a binary split.
+So taxable income is a continuous attribute.
+I can do a binary split.
+That means yes and no.
+Taxable income greater than 80k, yes and no.
+And I can also do taxable income into a discretization way.
+In discretization, I have made five buckets or five bins.
+Value less than 10k, 10k to 25k, 25 to 50k, 50 to 80k and greater than 80k.
+So again, I can for continuous values or continuous attributes, I can do a binary split.
+As well as I can also do, depending on my use case, I can also do a multi-way split.
+Like this.
+So how do we split a particular attribute?
+It depends on the attribute type.
+If it is a nominal attribute, I can do a multi-way split or I can do a binary split.
+If it is an ordinal attribute, I can do again a multi-way split or a binary split.
+But if I am making buckets or bins, the order inside the bins should be maintained.
+In continuous attributes, I can do a binary split or I can do a multi-way split based on
+discretization.
+So in summary, in this video, we looked into if we are selecting an attribute to split,
+how can we split it?
+We can split it based on its attribute type.
+In the next video, we are going to look into how do we choose a particular attribute to split.
+Thank you for attending today's class.
+We will see you in the next video.
+Take care.
+Bye.

@@ -1,0 +1,23 @@
+Hello everyone. Welcome back to module 5 of Artificial Neural Networks. In this video,
+we will learn about the mean squared error loss or MSE. By the end of this video,
+you will understand why we need loss functions in training, what MSE actually measures and why it's
+a natural fit for regression problems. So, why do we need a loss function? When a neural network
+makes a prediction, we need a way to measure how good or how bad that prediction is. This is the
+role of the loss function. It gives us a number that represents how wrong the model is. During
+training, backpropagation uses this number to calculate gradients and update weights.
+Different tasks require different loss functions. In this video, we will look at one of the simplest
+and most widely used losses, the mean squared error. MSE measures the average squared difference between
+the true value and the predicted value. Mathematically, it is 1 by N times sigma y minus y hat squared, where y hat is the predicted y value.
+But more important than the formula is the intuition. We take the error, we square it and we average it.
+The result is a smooth, always non-negative measure of how far predictions are from the truth. You can also think of MSE geometrically. MSE measures the square distance between the true point and the predicted point. In regression tasks, where predictions lie on a continuous scale, this is exactly what we want. We are essentially asking the network to position its predictions as close as possible to the true value.
+Let's make this concrete with a small example.
+Even in this tiny example, you can see how MSE punishes large errors much more strongly than the small ones.
+MSE is the default loss function for regression. It's used when the output is a continuous value.
+Predicting house prices, it works well because it directly measures distance in numerical space. But for classification, MSE behaves poorly and we will see why in the next video.
+Now, let's summarize the main points of this video. We need loss functions to quantify error during training. MSE measures the square distance between prediction and truth. Squaring penalizes large errors heavily and creates smooth gradients. MSE is perfect for regression but not ideal for classification.
+Next, we will look at loss function. MSE measures the square distance between classification. MSE measures the square distance between the two and the two and the two.
+Next, we will look at a loss function designed specifically for classification tasks. MSE measures the square distance between the two and the two.
+Next, we will look at a loss function designed specifically for classification tasks. MSE measures the square distance between the two and the two.
+Thank you.
+We will look at a loss function designed specifically for classification tasks. MSE measures the square distance between the two and the two.
+Thank you.
