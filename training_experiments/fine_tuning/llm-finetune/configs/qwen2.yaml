@@ -1,0 +1,11 @@
+model_name: Qwen/Qwen2-0.5B
+dataset: data/docs.jsonl
+
+training:
+  output_dir: outputs/qwen2
+  num_epochs: 3
+  batch_size: 4
+  gradient_accumulation_steps: 4
+  learning_rate: 2.0e-5
+  max_length: 512
+  warmup_ratio: 0.1

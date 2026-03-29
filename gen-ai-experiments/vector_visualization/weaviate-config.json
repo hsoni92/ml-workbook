@@ -1,0 +1,10 @@
+{
+  "default_cluster": "local",
+  "clusters": {
+    "local": {
+      "scheme": "http",
+      "host": "localhost",
+      "port": 8080
+    }
+  }
+}

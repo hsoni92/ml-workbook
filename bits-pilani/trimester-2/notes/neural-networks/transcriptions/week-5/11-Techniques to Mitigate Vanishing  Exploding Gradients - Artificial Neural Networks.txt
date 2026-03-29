@@ -1,0 +1,26 @@
+Hello everyone, welcome back to module 5 of artificial neural networks. In this video,
+we will look at some practical techniques that help prevent vanishing and exploding gradients.
+By the end of this video, you will see how initialization, activation functions, gradient
+clipping and normalization layers all play a role in keeping gradient flow stable during
+the training process. To keep the gradients from shrinking or exploding, modern neural networks
+rely on four major categories of techniques: weight initialization strategies designed for
+stable variance, activation functions that don't kill the gradients, gradient clipping
+which prevents runaway updates and normalization layers which stabilize activations throughout
+the network. Together, these form the foundation of stable deep learning training. Let's start
+with weight initialization, which is one of the most important contributors to gradient stability.
+Xavier initialization, also called Glorot initialization, is designed to keep the variance of activation,
+gradient and gradients consistent across the layers. It works especially well with sigmoid and tan-itch
+activations. He initialization is similar but scaled for ReLU type of activations. Because ReLU blocks half the inputs, it uses a larger variance, specifically 2 by number of inputs to compensate. The goal of both methods is the same. Keep the forward and backward signals
+from shrinking or exploding as it moves through the network. Without good initialization, all the other
+techniques become much less effective. Activation functions also strongly influence the gradient flow. Sigmoid and tan-itch can saturate very easily, meaning their derivatives become close to zero. This is why deep networks with sigmoids used to be so hard to train. In contrast, the ReLU family solves much of this problem.
+ReLU has a derivative of 1 for positive inputs, which means the gradients pass cleanly.
+Leaky ReLU, GELU and other variants generalize this idea. Using the right activation significantly reduces the risk of vanishing gradients and is a big part of why deep learning became feasible.
+Next is gradient clipping. Exploding gradients happen when many layers multiply derivatives greater than 1, leading to extremely large gradients that destabilize training. Gradient clipping prevents this by forcing the gradients to stay within a certain threshold. If the gradient norm exceeds a preset limit, we scale it down so updates remain controlled. This technique is widely used in RMS.
+LSTM, LSTM, LSTM and transformers where exploding gradients can be a major challenge. Think of it as putting a safety cap on the gradient size.
+Normalization layers are another crucial tool for stable training. Batch normalization. Batch normalization normalizes the activations within a batch. This keeps activations in a healthy range, which in turn keeps derivatives in a healthy range. It dramatically reduces internal covariate shift and helps deeper networks train effectively.
+Layer normalization works at the feature level and is commonly used in transformers where Batch statistics are not always reliable. By standardizing activations, normalization layers stabilize both the forward and backward paths, which helps prevent both vanishing and exploding gradients. Now, let us summarize the main points of this video. Gradients can vanish or explode due to repeated motion.
+multiplication in deep networks. Proper initialization keeps variants balanced.
+ReLU and its variants help gradients move through the layers. Gradient clipping prevents
+instability from exploding updates. Normalization layers stabilize activations and gradients.
+Together, these techniques form the backbone of modern deep network training. Thank you.
+you

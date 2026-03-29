@@ -1,0 +1,7 @@
+Hello everyone. Welcome to module 4 of Artificial Neural Networks. In this module, we will study about multilayer perceptrons and activation functions.
+So, where are we in the course now? In the previous module, we studied the perceptron and the logistic neuron. We understood how single neurons act as linear classifiers and we also saw their fundamental limitation through the Zor problem.
+That limitation showed us clearly that single layer models are not expressive enough for many important problems. This naturally leads us to the next step, combining neurons into multilayer networks.
+In this week, we will study the multilayer perceptron or MLP, the simplest form of a neural network with hidden layers. We will understand how hidden layers transform data representations, how information flows forward through an MLP, and why the depth and width of a network control its expressive power.
+We will also study activation functions, which are the source of all non-linearity in neural networks.
+So, MLPs are not just one specific model. They are the conceptual foundation of deep learning. Almost every modern deep learning architecture, including convolutional networks, recurrent networks, and transformers, is built using the same core ideas of layered computation and non-linear activation.
+So, by understanding MLPs and activation functions, you are essentially learning the core language of deep learning itself. See you all in the next video. Thank you.

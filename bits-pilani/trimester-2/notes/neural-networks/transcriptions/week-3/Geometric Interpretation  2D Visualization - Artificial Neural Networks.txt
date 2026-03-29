@@ -1,0 +1,43 @@
+Hello everyone, welcome back to module 3 of artificial neural networks. In this video,
+we will discuss geometric interpretation of perceptron and try to visualize it. By the end
+of this video, you will be able to visualize perceptron decision boundaries in 2D. You will
+understand the geometric roles of weights and bias. And finally, you will be able to identify geometric
+limits of linear classification. In two dimensions, the perceptron decision function becomes w1x1+w2x2+b=0.
+This is not just an abstract equation. This is the equation of a straight line in the x1x2 plane.
+Every point that satisfies this equation lies exactly on the decision boundary. For points on one side
+of the line, the perceptron outputs +1. For points on the other side, it outputs -1. So, in two dimensions,
+the perceptron is literally a straight line classifier. The decision boundary divides the
+entire plane into two regions called half spaces. For any input point x, if w transpose x + b is greater
+than 0, then it is assigned as a +1 class and when it is negative, then it is assigned as a -1 class.
+So, classification is nothing more than a sign test, determining on which side of the line the point
+lies. There is no notion of distance, probability or confidence here yet. Only side of the line membership.
+You can also interpret the perceptron decision using the dot product. The quantity w transpose x measures
+the alignment between the input vector and the weight vector. If the alignment is positive and large enough,
+the perceptron outputs +1. If it is negative, the output is -1. So, classification is fundamentally based
+on vector alignment between the input and the learned weight vector. This weight vector determines the
+orientation of the decision boundary. Changing the direction of the weight vector rotates the boundary.
+The bias determines the location of the boundary. Changing the bias shifts the boundary parallel to itself.
+Now, let's look at an example. Suppose we have a weight vector given by 1, 1 and bias is 0 and the
+decision boundary is given by x1 + x2 = 0. Now, on the x1 x2 plane, this is how the decision boundary is going to look like.
+Let's say this is my origin. Now, let's look at the case when x = 2, 1. So, 2 here and 1 here. So, this is my point here.
+So, when we evaluate x1 + x2, so this becomes 2 + 1 = 3 which is a positive number. So, it lies on this side of the decision boundary and can be classified as class +1.
+Now, similarly, let's look at another example where x = 2 and y = -1. So, this is the point here. Let's try to put it in the decision boundary.
+So, here, essentially, we are just looking at the output. The weight vector is perpendicular to the decision boundary.
+In geometry, this is called the normal vector of the line. If we change the direction of w, the line rotates. Let's say, the currently line is given like this and this is the w vector here.
+Now, if I change the weight vector would still be perpendicular to it and it would point in this direction. Let's say, the current line is given like this and this is the w vector here.
+Now, if I change the line to this, my weight vector would still be perpendicular to it and it would point in this direction. Let's say, now, if the line becomes like this, my weight vector would become like this. So, essentially, we are just rotating the decision boundary if we are changing the weight vector.
+The direction in which the weight vector points is the direction of increasing perceptron activation. And it always points towards the region classified as +1. So, the weights do not just scale features numerically. They control the orientation of the separating line and space.
+The bias B controls something different from the weights. It controls the position of the decision boundary.
+Changing the bias shifts the line parallel to itself without rotating it. If we increase the bias, the entire line moves in one direction. If we decrease it, the entire line shifts in the opposite direction.
+However, not all data sets admit such a clean geometric separation. There are configurations of points for which no straight line can separate the two classes, no matter how we rotate or shift it.
+For example, look at this case. Is there any way you can completely separate these data points using just one line?
+In such cases, the perceptron must fail. Not because it is badly trained, but because the geometry of the problem itself makes a linear separation impossible.
+This geometric failure is the key reason why single layer neural models are fundamentally limited.
+Now, let's summarize the main points of this video.
+In two dimensions, the perceptron draws a straight line in the input space.
+The weight vector determines the orientation of this line and the bias determines its position.
+Classification is simply a half-space membership test checking on which side of the line a data point lies.
+If the data can be separated by a single straight line, the perceptron can succeed.
+If no such line exists, the perceptron must fail.
+This geometric limitation will directly lead us to the XOR problem and to the motivation for multi-layer neural networks.
+Thank you.

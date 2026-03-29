@@ -1,0 +1,38 @@
+Current Limitations  Motivation for Deeper Models - Artificial Neural Networks.mp4
+==================================================================================
+
+Language: ENG
+Duration: 6m 3s
+Transcribed: February 14, 2026
+Speaker detection: Enabled
+
+--------------------------------------------------
+
+
+Speaker 1
+---------
+
+[0:04] Hello, everyone. Welcome back to Module One of Artificial Neural Networks. In this video, we will discuss the current limitations of neural networks and how this serves as a motivation
+[0:17] for deeper models. By the end of this video, you will be able to identify the key limitations of shallow neural networks, you will understand why depth increases the expressive
+[0:30] power, you will be able to explain the role of hierarchies and representation learning, and finally, you will recognize why deep models are needed for complex real-world tasks. So far
+[0:44] in this module, we have seen how neural networks are structured and where they are used. At this point, it is very important to pause and ask a critical question.
+[0:56] If neural networks are so powerful, what are their limitations? Understanding limitations is just as important as understanding the strength. It helps us to know where simple models fail, avoid
+[1:11] unrealistic expectations, and appreciate why deeper and more advanced models are needed. In this video, we will focus on the conceptual limitations of shallow neural networks and how those limitations
+[1:25] naturally motivate deeper models. The first major limitation is limited representational power in shallow networks. A network with very few layers can only perform a small number of transformations on
+[1:41] the input. As a result, it struggles to capture complex non-linear relationships, interactions between many variables, and subtle variations in the data. Many real-world problems such as vision, speech, and
+[1:57] language, they require multiple stages of transformation to go from raw input to meaningful abstraction. Shallow networks simply do not have enough depth to model these rich transformations effectively. They
+[2:13] may work for simple patterns, but their capacity is fundamentally limited for complex real-world data. The second major limitation is the feature engineering bottleneck. Earlier, machine learning systems depended heavily
+[2:29] on human-designed features. Even shallow neural networks often struggle when data is very high dimensional and useful features are deeply hidden in raw inputs. In such cases, the performance of
+[2:43] the system becomes limited not by its learning ability, but by the quality of manually engineered features. This dependence on human intuition and domain expertise does not scale well and
+[2:56] often fails in highly complex problems such as images, speech, and natural language. This is one of the key reasons why deeper models became necessary. A third limitation is the
+[3:10] inability of shallow models to naturally capture hierarchical structure in the data. Most real-world data is hierarchical in nature. In images, pixels form edges, edges form shapes, and shapes form
+[3:26] objects. Similarly, in language, characters form words, words form phrases, and phrases form meaning. In user behavior, simple actions combine into complex patterns of intent. Shallow networks tend to treat
+[3:43] data in a more flat manner. They lack the layered structure required to build these hierarchies of abstraction. As a result, they often fail to learn the deeper structure that
+[3:56] underlies the complex data. These limitations naturally lead to the motivation for deeper models. Depth allows neural networks to reuse intermediate features, compose simple functions into increasingly complex ones, and
+[4:14] build multiple levels of abstraction. Deeper models are often more parameter-efficient for complex tasks, meaning they can represent complicated functions with fewer resources than very wide, shallow networks. Most importantly,
+[4:32] depth enables true representation learning, where useful features are discovered automatically at multiple levels of abstraction. This is the key reason why deep neural networks outperform shallow models in nearly
+[4:47] all modern AI applications. Shallow neural networks are effective for simple patterns, but they struggle with complex, hierarchical, real-world data. Their limitations arise from restricted representational power, reliance on manual
+[5:06] feature engineering, and inability to naturally model hierarchical structure. Deeper networks address these limitations by introducing multiple layers of transformation and abstraction. These ideas form the conceptual foundation of deep
+[5:22] learning. Now, let us summarize the main points of this video. Shallow neural networks have limited expressive power and rely heavily on hand-engineered features. They also struggle to model hierarchical
+[5:38] structure effectively. In contrast, depth enables the reuse of features, higher levels of abstraction, and complex function composition. These fundamental limitations of shallow networks are what directly motivate the development
+[5:54] of modern deep neural networks. Thank you. (uplifting music)

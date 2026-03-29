@@ -1,0 +1,38 @@
+Hello everyone. Welcome back to module 4 of Artificial Neural Networks. In this video, we will discuss a very important activation function, ReLU. By the end of this video, you will be able to define what the ReLU activation function is, why it replaced Sigmoid and Tanage in most deep learning systems.
+You will identify the main variants of ReLU and understand the practical advantages and limitations of ReLU-based activations. In the previous video, we saw that Sigmoid and Tanage introduce non-linearity, but they also suffer from serious limitations. Both of these functions saturate for large positive or negative inputs. When saturation occurs, the neuron output changes
+very slowly, which leads to vanishing gradients during training. This made it extremely difficult to train very deep networks using Sigmoid or Tanage. As researchers tried to build deeper and deeper networks, it became clear that we needed an activation function that remained non-linear, avoided saturation in a large region, and allowed faster, more stable training. This led
+to the development of the ReLU family of activation functions. The rectified linear unit or ReLU
+as we call it is defined as f equals max . This means if the input z is negative,
+the output is zero. If the input z is positive, the output is equal to z.
+So, the ReLU function is simple piecewise linear and very easy to compute. Importantly,
+for positive inputs, it does not saturate the way sigmoid or tanh do. This single property turns
+out to be extremely powerful for training deep networks. ReLU became the default activation
+function in deep learning for several practical reasons. First, it does not saturate for positive
+inputs, which allows information to flow more easily through many layers. Second, it enables much faster
+and more stable training compared to sigmoid and tanhage. Third, ReLU produces sparse activations.
+Many neurons output exactly zero. This sparsity often improves generalization and makes computation more
+efficient. Finally, from a computational perspective, ReLU is extremely cheap to evaluate. Because of all these
+reasons, ReLU is now the standard activation function for hidden layers in modern deep networks.
+Despite its many advantages, ReLU is not perfect. It suffers from a problem known as the dying ReLU. Recall
+that when the input z is negative, the ReLU output is exactly zero. Now, if during training, the parameters of a
+neuron shift in such a way that its input is always negative, the neuron will output zero for every input.
+Once this happens, the neuron effectively stops participating in the network. It becomes inactive forever and this is referred to as a dead ReLU.
+This problem motivated the researchers to design modified versions of ReLU that still retain its benefits while reducing the risk of dead neurons.
+One such modification is the leaky ReLU. Now, instead of setting the output to exactly zero when z is less than zero,
+Leaky ReLU assigns a small negative slope in the negative region. Its definition is given by f of z equals z when z is positive and it equals to alpha z when z is negative. Here alpha is a small constant such as 0.01. This means that even when the neuron receives negative inputs, it still produces a small non-zero output.
+As a result, the neuron is far less likely to die completely. Leaky ReLU keeps most of the advantages of ReLU while improving the robustness. An extension of leaky ReLU is the parametric ReLU or P ReLU. P ReLU has the same functional form as leaky ReLU but the slope alpha in the negative region is not fixed. Instead, it is treated as a negative region.
+as a learnable parameter that is adjusted during the training process. This gives the model more flexibility to adapt how much information should flow through the negative region.
+P ReLU has been shown to improve performance in some high performance computer vision models, though it also increases the number of parameters slightly. Now, let us compare the three main members of the ReLU family. ReLU outputs 0 for all negative inputs. It is simple and extremely efficient and it is the default choice for most of the applications.
+Leaky ReLU introduces a small fixed slope in the negative region to reduce the dying
+ReLU problem. And P ReLU makes this negative slope learnable, giving the network additional
+flexibility. All three of them retain the key benefits of ReLU, which are non-linearity,
+efficiency, and stable behavior in deep networks. In practice, the following guidelines are
+commonly used. ReLU is the first and best baseline for almost all hidden layers. But if you observe
+many inactive neurons during training, Leaky ReLU can be used as a simple fix. P ReLU is
+usually chosen only in specialized models where a small performance game justifies additional
+parameters. In most real-world deep learning pipelines, standard ReLU remains the default
+activation function. Now, let us summarize the main points of this video. The ReLU activation
+function is defined as f = max . It avoids saturation in the positive region, enables
+fast and stable training, and has become the default activation function in modern deep learning.
+Its main drawback is the dying ReLU problem, which is addressed by variants such as Leaky ReLU
+and pReLU. Together, the ReLU family forms the backbone of most contemporary neural network architectures. In the next video, we will study softmax, which is used specifically in the output layer for multi-class classification. Thank you.

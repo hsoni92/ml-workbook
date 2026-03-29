@@ -1,0 +1,1850 @@
+[
+  {
+    "page": 1,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 2,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 3,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 4,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 5,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 6,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 7,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 8,
+    "has_formula": true,
+    "formula_percentage": 26.89,
+    "detected_formulas": [
+      {
+        "text": "𝑑𝑡2 =  −kx",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝑑2𝑥\n𝑑𝑡2 = −k",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝑑2𝑥\n𝑑𝑡2 = −k",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝑑2𝑥\n𝑑𝑡2 = −k",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "m x = 0",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "𝑑2𝑥\n𝑑𝑡2 + ω2x = 0",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "𝑑2𝑦+ ω2x = 0 -------- (1)",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Where ω2 =",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝐶𝛼2𝑒𝛼𝑡+ ω2𝐶𝑒𝛼𝑡= 0",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝐶𝑒𝛼𝑡(𝛼2 + ω2) = 0",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "(𝛼2 + ω2) = 0",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "𝛼2 = −ω2",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "α = ±iω",
+        "type": "displayed",
+        "score": 0.7
+      }
+    ]
+  },
+  {
+    "page": 9,
+    "has_formula": true,
+    "formula_percentage": 3.77,
+    "detected_formulas": [
+      {
+        "text": "𝑥= 𝐶1𝑒+𝑖ωt + 𝐶2𝑒−𝑖ωt",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "f2 α −dx",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "f2 = −r (",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝑑𝑡2 = −𝑘𝑥−r (dx",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "m = w2",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      }
+    ]
+  },
+  {
+    "page": 10,
+    "has_formula": true,
+    "formula_percentage": 18.33,
+    "detected_formulas": [
+      {
+        "text": "𝐴𝑒𝛼𝑡(𝛼2 + 2𝑏 𝛼+ w2)  = 0     \nAs",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "𝐴𝑒𝛼𝑡 ≠0       ∴  (𝛼2 + 2𝑏 𝛼+ w2)  = 0   \nThis gives",
+        "type": "displayed",
+        "score": 0.6
+      },
+      {
+        "text": "𝛼= −𝑏 ± √𝑏2 −𝑤2 \nThe general solution of eq. (1) is given by",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝑥= 𝐴1𝑒⌊−𝑏+√𝑏2−𝑤2⌋𝑡+ 𝐴2𝑒⌊−𝑏−√𝑏2−𝑤2⌋𝑡… … … (3) \n \nWhere 𝐴1and 𝐴2are arbritrary constants.",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "𝑥= 𝐴1𝑒(−𝑏+ℎ)𝑡+ 𝐴2𝑒−(𝑏−ℎ)𝑡",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "= 𝑒−𝑏𝑡  ⌊𝐴1𝑒ℎ𝑡+ 𝐴2𝑒−ℎ𝑡⌋ \n= 𝑒−𝑏𝑡  [𝐴1(1 + ℎ𝑡+ ⋯. ) + 𝐴2(1 −ℎ𝑡+ ⋯. )]",
+        "type": "displayed",
+        "score": 0.7
+      }
+    ]
+  },
+  {
+    "page": 11,
+    "has_formula": true,
+    "formula_percentage": 24.88,
+    "detected_formulas": [
+      {
+        "text": "Where p = (𝐴1  + 𝐴2)  𝑎𝑛𝑑 𝑞= (𝐴1  −𝐴2)",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "= 𝑒−𝑏𝑡 (𝐴1𝑒𝑖𝛽𝑡+ 𝐴2𝑒−𝑖𝛽𝑡)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "= 𝑒−𝑏𝑡 (𝑎sin ∅cos 𝛽𝑡+ 𝑎 𝑐𝑜𝑠∅sin 𝛽𝑡)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Where 𝑎 𝑠𝑖𝑛 ∅= (𝐴1 + 𝐴2) 𝑎𝑛𝑑 𝑎cos ∅= 𝑖 (𝐴1 −𝐴2)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "= 𝑒−𝑏𝑡𝑎sin(𝛽𝑡+ ∅)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝑥= 𝑎𝑒−𝑏𝑡sin(√(𝑤2 −𝑏2)𝑡+ ∅)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "The factor sin(√(𝑤2 −𝑏2)𝑡+ ∅ varies between +1 to -1, therefore the amplitude also varies \nbetween + 𝑎𝑒−𝑏𝑡 and - 𝑎𝑒−𝑏𝑡.I t is called under damped motion, b is called damping \ncoefficient.",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      }
+    ]
+  },
+  {
+    "page": 12,
+    "has_formula": true,
+    "formula_percentage": 20.88,
+    "detected_formulas": [
+      {
+        "text": "𝑥= 𝑎𝑒−𝑏𝑡sin (√(𝑤2 −𝑏2)) 𝑡+ ∅ )",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "= 𝑎𝑒−𝑏𝑡sin(𝑤′𝑡+ ∅) … … … … . (1)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝑑𝑡) = −𝑎𝑏𝑒−𝑏𝑡sin(𝑤′𝑡+ ∅) + 𝑎𝑤′𝑒−𝑏𝑡cos(𝑤′𝑡+ ∅) … … …… (2)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝑑𝑡= 𝑎𝑤′𝑒−𝑏𝑡cos(𝑤′𝑡+ ∅) … …… (3)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "E =  1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "2 𝑚𝑎2𝑤′2𝑒−2𝑏𝑡𝑐𝑜𝑠2(𝑤′𝑡+ ∅) + 1",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "2 𝜇 𝑎2𝑤′2𝑒−2𝑏𝑡𝑠𝑖𝑛2(𝑤′𝑡+ ∅)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝑚𝑒−2𝑏𝑡𝑐𝑜𝑠2(𝑤′𝑡+ ∅) + 1",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "2 𝜇 𝑎2𝑒−2𝑏𝑡𝑠𝑖𝑛2(𝑤′𝑡+ ∅)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "∵𝑤′ = √𝑤2 −𝑏2 ≈𝑤= √(𝜇",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "2 𝑎2 𝜇𝑒−2𝑏𝑡(𝑐𝑜𝑠2(𝑤′𝑡+ ∅) + 𝑠𝑖𝑛2(𝑤′𝑡+ ∅) )",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "2 𝑎2𝑤 𝑒−2𝑏𝑡",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "2 𝑎2𝑚𝑤2𝑒−2𝑏𝑡",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "2 𝑎2𝜇𝑒−2𝑏𝑡",
+        "type": "displayed",
+        "score": 0.7
+      }
+    ]
+  },
+  {
+    "page": 13,
+    "has_formula": true,
+    "formula_percentage": 8.6,
+    "detected_formulas": [
+      {
+        "text": "f2 α −dx",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "f2 = −r (",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝐹𝑜𝑟𝑐𝑒(𝐹) = −kx + −r (dx",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "According to Newton second law of motion \nF= mass × acceleration",
+        "type": "displayed",
+        "score": 0.6
+      },
+      {
+        "text": "𝑑𝑡2 = −kx −r (dx",
+        "type": "displayed",
+        "score": 0.7
+      }
+    ]
+  },
+  {
+    "page": 14,
+    "has_formula": true,
+    "formula_percentage": 41.08,
+    "detected_formulas": [
+      {
+        "text": "dt) + ω2x = f sin 𝑝𝑡 ---------- (4)",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "m = 2b and",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "m = ω2 𝐹",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝑑𝑡2 =  −𝐴𝑝2 sin(𝑝𝑡−𝜃) --------- (7)",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "Sub (5),(6),(7) in (4), we get \n−𝐴𝑝2 sin(𝑝𝑡−𝜃) + 2b𝐴𝑝cos(𝑝𝑡−𝜃) + ω2𝐴sin(𝑝𝑡−𝜃) = f sin 𝑝𝑡",
+        "type": "displayed",
+        "score": 1.0
+      },
+      {
+        "text": "𝐴sin(𝑝𝑡−𝜃) (ω2 − 𝑝2) + 2𝑏𝐴𝑝cos(𝑝𝑡−𝜃) = 𝑓sin(𝑝𝑡−𝜃+ 𝜃) \n𝐴sin(𝑝𝑡−𝜃) (ω2 − 𝑝2) + 2𝑏𝐴𝑝cos(𝑝𝑡−𝜃) = 𝑓sin{(𝑝𝑡−𝜃) + 𝜃} \n𝐴sin(𝑝𝑡−𝜃) (ω2 − 𝑝2) + 2𝑏𝐴𝑝cos(𝑝𝑡−𝜃) = 𝑓sin(𝑝𝑡−𝜃) cos 𝜃+ 𝑓cos(𝑝𝑡−𝜃) sin 𝜃",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Comparing the coefficients of sin(𝑝𝑡−𝜃) and cos(𝑝𝑡−𝜃) on b/s we get",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "𝐴(ω2 − 𝑝2) = 𝑓cos 𝜃 -------- (8)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "2bAp = fsin 𝜃--------- (9)",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "𝐴2(ω2 − 𝑝2)2 +  4𝑏2𝐴2𝑝2 = 𝑓2",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "√(ω2− 𝑝2)2+ 4𝑏2𝐴2𝑝2 -------(10)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝑓sin 𝜃\n𝑓cos 𝜃= \n2bAp\n𝐴(ω2 − 𝑝2)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "tan 𝜃= \n2bp\n(ω2 − 𝑝2)",
+        "type": "displayed",
+        "score": 0.7
+      }
+    ]
+  },
+  {
+    "page": 15,
+    "has_formula": true,
+    "formula_percentage": 17.81,
+    "detected_formulas": [
+      {
+        "text": "𝜃=  tan−1 (\n2bp\n(ω2 − 𝑝2))",
+        "type": "displayed",
+        "score": 0.7
+      }
+    ]
+  },
+  {
+    "page": 16,
+    "has_formula": true,
+    "formula_percentage": 11.12,
+    "detected_formulas": [
+      {
+        "text": "Ray optics: Ray optics deals with image formation by optical systems. It was supported by \nNewton’s corpuscular theory. It deals with the particles propagating in a medium called “light-\nphotons with energy En = nhυ in a medium”",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      }
+    ]
+  },
+  {
+    "page": 17,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 18,
+    "has_formula": true,
+    "formula_percentage": 12.34,
+    "detected_formulas": [
+      {
+        "text": "To calculate BG, BD=BH+HD",
+        "type": "displayed",
+        "score": 0.6
+      },
+      {
+        "text": "∴BH\nt tanr\n",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "BD\nBH HD\n2t tanr\n\n\n\n          (∵ BH=HD)",
+        "type": "inline_or_mixed",
+        "score": 0.35
+      }
+    ]
+  },
+  {
+    "page": 19,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 20,
+    "has_formula": true,
+    "formula_percentage": 2.32,
+    "detected_formulas": [
+      {
+        "text": "For air film μ = 1 and for normal incidence r = 0,",
+        "type": "displayed",
+        "score": 0.6
+      }
+    ]
+  },
+  {
+    "page": 21,
+    "has_formula": true,
+    "formula_percentage": 20.78,
+    "detected_formulas": [
+      {
+        "text": "At the point of contact t =0 the path difference is λ/2, i.e., the reflected light at the point \nof contact suffers phase change of π. Then the incident and reflected rays are out of phase and \ninterface destructively. Hence the central spot is dark.",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      }
+    ]
+  },
+  {
+    "page": 22,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 23,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 24,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 25,
+    "has_formula": true,
+    "formula_percentage": 9.05,
+    "detected_formulas": [
+      {
+        "text": "Let na = A,                    \nsin\nA\nR\n\n\n",
+        "type": "inline_or_mixed",
+        "score": 0.35
+      },
+      {
+        "text": "±",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "2 , ±",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "positions 𝛼= ±𝜋, ±2𝜋.",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝛼→0",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝛼 [𝛼−",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "5 −",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "4 −",
+        "type": "displayed",
+        "score": 0.7
+      }
+    ]
+  },
+  {
+    "page": 26,
+    "has_formula": true,
+    "formula_percentage": 4.05,
+    "detected_formulas": [
+      {
+        "text": "R=A               𝐼𝑚𝑎𝑥= 𝑅2 = 𝐴2",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "𝛼= ±𝜋, ±2𝜋, ±3𝜋, … ..",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝛼= ±𝑚𝜋",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝜆\n= ±𝑚𝜋",
+        "type": "displayed",
+        "score": 0.7
+      }
+    ]
+  },
+  {
+    "page": 27,
+    "has_formula": true,
+    "formula_percentage": 4.1,
+    "detected_formulas": [
+      {
+        "text": "where (e + d) is the grating element and n=1, 2, …...",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "For n=1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      }
+    ]
+  },
+  {
+    "page": 28,
+    "has_formula": true,
+    "formula_percentage": 36.0,
+    "detected_formulas": [
+      {
+        "text": "Let a parallel beam of light of two wavelengths 𝜆 𝑎𝑛𝑑 𝜆+ 𝑑𝜆 be incident normally on the \ngrating .If the nth principal maximum of 𝜆 is formed in the direction 𝜃𝑛,we will have (e +\nd) sin θn =  nλ where (e+d) is the grating element.",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "𝑁(𝑒+ 𝑑)𝑠𝑖𝑛 (𝜃𝑛+ 𝑑𝜃𝑛) = (𝑛𝑁+ 1)𝜆",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "(𝑒+ 𝑑)𝑠𝑖𝑛 (𝜃𝑛+ 𝑑𝜃𝑛) = (𝑛𝑁+ 1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "(e+d)sin(θn + d θn)=n(λ+dλ)………..(4) \nFigure shows the overlapping of principal maxima of two patterns \nComparing eqs (3) and(4), we get",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "𝑁) 𝜆= n(λ+dλ)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "nNλ+λ = nNλ+nNdλ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "R=nN",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "As expected, the resolving power is zero for the central principal maximum(n=0), all \nwavelengths being indiffracted in this order.",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      }
+    ]
+  },
+  {
+    "page": 29,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 30,
+    "has_formula": true,
+    "formula_percentage": 0.97,
+    "detected_formulas": [
+      {
+        "text": "𝐹(𝐸) =\n1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "1 + exp (",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "𝐸−𝐸𝐹",
+        "type": "displayed",
+        "score": 0.7
+      }
+    ]
+  },
+  {
+    "page": 31,
+    "has_formula": true,
+    "formula_percentage": 39.2,
+    "detected_formulas": [
+      {
+        "text": "Case I : Probability of occupation at T= 0K,and 𝐸< 𝐸𝐹",
+        "type": "displayed",
+        "score": 0.6
+      },
+      {
+        "text": "𝐹(𝐸) =\n1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "1 + exp (",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "−1",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "=\n1\n1 + 0 = 1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Therefore F(E) =1,as per above ,clearly indicates that at T=0K, the energy level below the \nFermi energy level 𝐸𝐹 is fully occupied by electrons leaving the upper level vacant. Therefore, \nthere is 100% probability that the electrons to occupy energy level below Fermi level.",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Case II:Probability of occupation at T= 0K, and 𝐸> 𝐸𝐹 \nThen",
+        "type": "displayed",
+        "score": 0.6
+      },
+      {
+        "text": "𝐹(𝐸) = \n1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "= \n1\n1 + 𝑒∞=\n1\n1 + ∞=  1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "∞= 0",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "i.e., all levels below 𝐸𝐹 are completely filled and al levels above 𝐸𝐹are completely empty. As \nthe temperature rises F (E). \nCase III:Probability of occupation at T= 0K, and 𝐸= 𝐸𝐹",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "2 = 0.5",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "The above condition states that, T=0K, there is a 50% probability for the electrons to occupy \nFermi energy.",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "𝑛𝑐= ∫g(𝐸) × 𝑓(𝐸)𝑑𝐸… …….         (1)",
+        "type": "displayed",
+        "score": 0.7
+      }
+    ]
+  },
+  {
+    "page": 32,
+    "has_formula": true,
+    "formula_percentage": 2.24,
+    "detected_formulas": [
+      {
+        "text": "3 )(𝑛+ 𝑑𝑛)3 −1",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "8𝑚𝐿2 𝑜𝑟, 𝑛2 = 8𝑚𝐿2𝐸",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      }
+    ]
+  },
+  {
+    "page": 33,
+    "has_formula": true,
+    "formula_percentage": 2.95,
+    "detected_formulas": [
+      {
+        "text": "ℎ2 )  𝐸𝑑𝐸 × 1",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "g(𝐸)𝑑𝐸= 2 × 𝜋",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "1\n2𝑑𝐸       ∵ L3 = 1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      }
+    ]
+  },
+  {
+    "page": 34,
+    "has_formula": true,
+    "formula_percentage": 9.55,
+    "detected_formulas": [
+      {
+        "text": "𝑉(𝑥) = 0 , 𝑤ℎ𝑒𝑟𝑒 𝑥 𝑙𝑖𝑒𝑠 𝑏𝑒𝑡𝑤𝑒𝑒𝑛   0 <  𝑥 <  𝑎 –   𝐼 𝑟𝑒𝑔𝑖𝑜𝑛𝑉(𝑥)",
+        "type": "displayed",
+        "score": 0.6
+      },
+      {
+        "text": "ℏ2  E𝜓= 0, for 0 < 𝑥< 𝑎  𝑤𝑖𝑡ℎ  𝑉(x) = 0 … … … … (1)",
+        "type": "displayed",
+        "score": 0.6
+      },
+      {
+        "text": "ℏ2 (E −V0)𝜓= 0, for −b < 𝑥< 0  with  V(x) = V0 … … … (2)",
+        "type": "displayed",
+        "score": 0.6
+      }
+    ]
+  },
+  {
+    "page": 35,
+    "has_formula": true,
+    "formula_percentage": 27.78,
+    "detected_formulas": [
+      {
+        "text": "𝑑𝑥2 + α2𝜓= 0 … … . . (3)                where α2 = 2mE",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "ℏ2  and α = 2Π",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "h √2𝑚𝐸",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝑑𝑥2 − β2𝜓= 0 … … . (4)                               where β2 = 2m",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "ℏ2 (V0 −E)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "ℎ2\n𝑉0w         and             α = 2π",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "h √2mE",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "P-varying term, known as scattering power. \nAnd ‘𝑣₀ b’ is known as barrier strength.",
+        "type": "displayed",
+        "score": 0.55
+      }
+    ]
+  },
+  {
+    "page": 36,
+    "has_formula": true,
+    "formula_percentage": 4.44,
+    "detected_formulas": [
+      {
+        "text": "𝑝) = sin 𝛼𝑎+ 𝑐𝑜𝑠𝛼𝑎(𝛼𝑎",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "𝑃→∞  , 1",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "P→0, We have",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "ℏ2\n= (2𝜋",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "𝜆)2 = 4𝜋2",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      }
+    ]
+  },
+  {
+    "page": 37,
+    "has_formula": true,
+    "formula_percentage": 5.81,
+    "detected_formulas": [
+      {
+        "text": "E = n2h2",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "8ma2  … . (1)where a = length of the box.",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "𝑎 ⇒𝑘2 = 𝑛2Π2",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "8mπ2   ; 𝐸 ∝",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝑎 ; 𝑛= ±1, ±2, ±3, … …",
+        "type": "displayed",
+        "score": 0.7
+      }
+    ]
+  },
+  {
+    "page": 38,
+    "has_formula": true,
+    "formula_percentage": 2.1,
+    "detected_formulas": [
+      {
+        "text": "dk\ndk = 1",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "𝑑𝑡= 𝐹⇒𝑑𝑘",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "∴𝑎= 1",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "∴  𝑚∗=\nħ2",
+        "type": "displayed",
+        "score": 0.7
+      }
+    ]
+  },
+  {
+    "page": 39,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 40,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 41,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 42,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 43,
+    "has_formula": true,
+    "formula_percentage": 1.18,
+    "detected_formulas": [
+      {
+        "text": "𝜌= −𝑍𝑒",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "3 𝜋𝑅3 =  −3",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝜋𝑅3) →(1)",
+        "type": "displayed",
+        "score": 0.7
+      }
+    ]
+  },
+  {
+    "page": 44,
+    "has_formula": true,
+    "formula_percentage": 8.12,
+    "detected_formulas": [
+      {
+        "text": "3 𝜋𝑥3 ( −𝑍𝑒",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "3 𝜋𝑅3) = 4",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "3 𝜋𝑥3 (−3",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝜋𝑅3 = −𝑍𝑒𝑥3",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Coulomb force =  𝑍𝑒× (−𝑍𝑒𝑥3",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝑅3\n) ×\n1\n4𝜋𝜖0𝑥2 = −𝑍2𝑒2𝑥",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝑃𝑒= 𝜖0𝐸(𝜖𝑟−1) = 𝑁𝛼𝑒𝜖𝑟−1 = 𝑁𝛼𝑒",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝜖0(𝜖𝑟−1)",
+        "type": "displayed",
+        "score": 0.7
+      }
+    ]
+  },
+  {
+    "page": 45,
+    "has_formula": true,
+    "formula_percentage": 2.4,
+    "detected_formulas": [
+      {
+        "text": "𝑀)−1",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "∴𝐸1 = 𝑃+ 𝜖0𝐸",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "∴𝐸1 = 𝐸+ 𝑃",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "→(1)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝐸2 = −𝑃",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "→(2)",
+        "type": "displayed",
+        "score": 0.7
+      }
+    ]
+  },
+  {
+    "page": 46,
+    "has_formula": true,
+    "formula_percentage": 17.53,
+    "detected_formulas": [
+      {
+        "text": "E3is the field intensity at A due to other atoms contained in the cavity. If we assume a \ncubic structure then E3=0 because of symmetry.",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "𝑠𝑖𝑛θ = PQ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "r => 𝑃𝑄= 𝑟𝑠𝑖𝑛θ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝑎𝑛𝑑𝑑θ = QR",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "r ⟹QR = rdθ",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "𝑑𝐸4  = 𝑑𝑞× 𝑙× 𝑐𝑜𝑠𝜃",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝑐𝑜𝑠2𝜃𝑠𝑖𝑛𝜃𝑑𝜃→(3)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "integrating∴∫𝑑𝐸4 =",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "2𝜖0 ∫𝑐𝑜𝑠2𝜃",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "2𝜖0 ∫𝑐𝑜𝑠2𝜃",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝜋\n0\n𝑑(−𝑐𝑜𝑠𝜃 \n \n= −",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "= −",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "6𝜖0 (−1 −1) =",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "3𝜖0 →(4)",
+        "type": "displayed",
+        "score": 0.7
+      }
+    ]
+  },
+  {
+    "page": 47,
+    "has_formula": true,
+    "formula_percentage": 25.97,
+    "detected_formulas": [
+      {
+        "text": "𝑃(1 −𝑁𝛼𝑒",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "(1 −",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "→(1)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝑃= 𝐷−𝜖0𝐸",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝐸−𝜖0",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "= 𝜖−𝜖0 \n \n \n  = 𝜖0𝜖𝑟−𝜖0 \n \n \n \n \n∴𝑃= 𝐸𝜖0(𝜖𝑟−1) →(2)",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "(1 −",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "1 −",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "𝑁𝛼𝑒\n𝜖0(𝜖𝑟−1)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "(1 +\n3\n𝜖𝑟−1)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝜖𝑟−1)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "= 𝜖𝑟−1",
+        "type": "displayed",
+        "score": 0.7
+      }
+    ]
+  },
+  {
+    "page": 48,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 49,
+    "has_formula": true,
+    "formula_percentage": 3.62,
+    "detected_formulas": [
+      {
+        "text": "∅",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝑚𝐨𝐫∅= 𝐁 . 𝐀 = BA cos θ.",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "I = net magnetic dipole moment of material",
+        "type": "displayed",
+        "score": 0.6
+      }
+    ]
+  },
+  {
+    "page": 50,
+    "has_formula": true,
+    "formula_percentage": 5.65,
+    "detected_formulas": [
+      {
+        "text": "χ =",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝐻(Susceptibility) ∴𝜇= µo + µoχor𝜇= µo(1 + χ) \n \n \n𝜇\n𝜇0",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "= (1 + χ)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝜇𝑟= (1 + χ)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝜇𝑟−1 = χ \n𝜇𝑟 = χ + 1",
+        "type": "displayed",
+        "score": 0.7
+      }
+    ]
+  },
+  {
+    "page": 51,
+    "has_formula": true,
+    "formula_percentage": 6.44,
+    "detected_formulas": [
+      {
+        "text": "𝑡𝑖𝑚𝑒(𝑇)\n= −𝑒",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "2πr",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "−𝑒",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "−𝑒𝑣",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝜇𝑙= −𝑒𝑣",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "2𝜋r × 𝜋𝑟2",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝜇𝑙= −𝑒𝑣𝑟",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "2 × 𝑚",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "m  = (−𝑒",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "2m)[𝑚𝑣𝑟] = (−𝑒",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "𝜇𝑙 = ( −𝑒ℎ",
+        "type": "displayed",
+        "score": 0.7
+      }
+    ]
+  },
+  {
+    "page": 52,
+    "has_formula": true,
+    "formula_percentage": 5.67,
+    "detected_formulas": [
+      {
+        "text": "𝜇𝐵=  −𝑒ℎ",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "= 1.6 × 10−19 × 6.626 × 10−34",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "4 × 3.14 × 9.1 × 10−31\n= 9.27 × 10−34A –  m",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "χ =",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "<1 \n>1 \n≫ 1",
+        "type": "displayed",
+        "score": 0.7
+      }
+    ]
+  },
+  {
+    "page": 53,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 54,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 55,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 56,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 57,
+    "has_formula": true,
+    "formula_percentage": 0.88,
+    "detected_formulas": [
+      {
+        "text": "∆𝜃= 𝑟2 −𝑟1",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝑑2 −𝑑1",
+        "type": "displayed",
+        "score": 0.7
+      }
+    ]
+  },
+  {
+    "page": 58,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 59,
+    "has_formula": true,
+    "formula_percentage": 36.79,
+    "detected_formulas": [
+      {
+        "text": "The atom in the excited state returns to ground state emitting a photon of energy (E) = \nE2 – E1 = hv, without applying an external energy spontaneously is known as spontaneous \nemission.",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Let E1 and E2 be the energies of ground and excited states of an atom. Suppose, if \nphoton of energy E2− E1 = hν interacts with an atom present in the ground state, the atom gets \nexcitation form ground state E1 to excited state E2",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "Stimulated emission was postulated by Einstein. Let E1 and E2 be the energies of \nground and excited states of an atom. Let a Photon of energy E2-E1=hυ interacts with the \nexcited atom with in their life time The atom gets de-excitation to ground state by emitting of \nanother photon.",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      }
+    ]
+  },
+  {
+    "page": 60,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 61,
+    "has_formula": true,
+    "formula_percentage": 9.36,
+    "detected_formulas": [
+      {
+        "text": "photon of energy (E) = E2 – E1 =hν, without applying an external energy spontaneously \nis known as spontaneous emission.The spontaneous emission rate depends up on the \nnumber of atoms present in the excited state.",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      }
+    ]
+  },
+  {
+    "page": 62,
+    "has_formula": true,
+    "formula_percentage": 0.26,
+    "detected_formulas": [
+      {
+        "text": "(−",
+        "type": "displayed",
+        "score": 0.7
+      }
+    ]
+  },
+  {
+    "page": 63,
+    "has_formula": true,
+    "formula_percentage": 0.48,
+    "detected_formulas": [
+      {
+        "text": "(−E1",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "(−𝐸2",
+        "type": "displayed",
+        "score": 0.7
+      }
+    ]
+  },
+  {
+    "page": 64,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 65,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 66,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 67,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 68,
+    "has_formula": true,
+    "formula_percentage": 6.86,
+    "detected_formulas": [
+      {
+        "text": "wavelengths 3.39A⁰, 1.15 A⁰ and 6328A0. \n The first two corresponding to the infrared region while the last wavelength is",
+        "type": "displayed",
+        "score": 0.55
+      }
+    ]
+  },
+  {
+    "page": 69,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 70,
+    "has_formula": true,
+    "formula_percentage": 17.6,
+    "detected_formulas": [
+      {
+        "text": "N2 + e* = N2* + e \nN2 = Nitrogen molecule in ground state e* = electron with kinetic energy \nN2* = nitrogen molecule in excited state e= same electron with lesser energy \n Now N2 molecules in the excited state collide with CO2 atoms in ground state and excite",
+        "type": "displayed",
+        "score": 0.6
+      }
+    ]
+  },
+  {
+    "page": 71,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 72,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 73,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 74,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 75,
+    "has_formula": true,
+    "formula_percentage": 3.39,
+    "detected_formulas": [
+      {
+        "text": "Where n1>n2 \nFor air, n2 =1,",
+        "type": "inline_or_mixed",
+        "score": 0.45
+      },
+      {
+        "text": "𝜃𝑐= 𝑠𝑖𝑛−1 1",
+        "type": "displayed",
+        "score": 0.7
+      }
+    ]
+  },
+  {
+    "page": 76,
+    "has_formula": true,
+    "formula_percentage": 17.94,
+    "detected_formulas": [
+      {
+        "text": "𝑠𝑖𝑛α𝑖\n𝑠𝑖𝑛α𝑟=",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝑛𝑜𝑠𝑖𝑛α𝑖= 𝑛1𝑠𝑖𝑛α𝑟           →(1)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "α𝑟= 90° − 𝜃→(2)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝑛𝑜𝑠𝑖𝑛α𝑖= 𝑛1𝑠𝑖𝑛 (90° −𝜃)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝑛𝑜𝑠𝑖𝑛α𝑖= 𝑛1𝑐𝑜𝑠𝜃→(3)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝑛𝑜𝑠𝑖𝑛α𝑖= 𝑛1𝑐𝑜𝑠𝜃→(4)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "α𝑖(max) = α𝑖,when 𝜃= 𝜃𝑐",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝑠𝑖𝑛 α𝑖(max) =",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝑛1\n𝑛𝑜𝑐𝑜𝑠𝜃𝑐→(5)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝐶𝑜𝑠𝜃𝑐= √(1 −𝑠𝑖𝑛𝜃𝑐",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "2) = √(1 − 𝑛2",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "2) => √𝑛1",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "2 −𝑛2",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "2\n= √(𝑛1",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "2 −𝑛2",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "∴𝑐𝑜𝑠𝜃𝑐= √(𝑛1",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "2 −𝑛2",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "→(6)",
+        "type": "displayed",
+        "score": 0.7
+      }
+    ]
+  },
+  {
+    "page": 77,
+    "has_formula": true,
+    "formula_percentage": 51.07,
+    "detected_formulas": [
+      {
+        "text": "𝑠𝑖𝑛 α𝑖(max) = 𝑛1",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "√𝑛1",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "2 −𝑛2",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝑠𝑖𝑛 α𝑖(max) = √𝑛1",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "2 −𝑛2",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "α𝑖(max) = 𝑠𝑖𝑛−1√𝑛1",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "2 −𝑛2",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝑛0\n→(7)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "For air medium, n0=1         α𝑖(max) = 𝑠𝑖𝑛−1√𝑛1",
+        "type": "displayed",
+        "score": 1.0
+      },
+      {
+        "text": "2 −𝑛2",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "2 →(8) \nFractional Index Change (∆):",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "∆ = n1-n2",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝑛1 −𝑛2 = ∆𝑛1 →(1)",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "N.A=𝑠𝑖𝑛 α𝑖(max) =  √",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝑛12−𝑛22",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "We know that ∆ =",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝑛1−𝑛2",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝑛1 −𝑛2 = ∆𝑛1 →(2)  \n𝑊𝑒𝑘𝑛𝑜𝑤 , 𝑁. 𝐴. = 𝑆𝑖𝑛 α𝑖(max) = √𝑛2",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "2 −𝑛1",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "2            for air n0=1 \n𝑁. 𝐴. = √(𝑛1 + 𝑛2)(𝑛1 −𝑛2) \n𝐼𝑓𝑛1 =  𝑛2, 𝑡ℎ𝑒𝑛𝑁. 𝐴. = √2𝑛1 × ∆𝑛1",
+        "type": "displayed",
+        "score": 0.9
+      },
+      {
+        "text": "𝑁. 𝐴. = 𝑛1√2∆→(3) \nTYPES OF OPTICAL FIBERS:",
+        "type": "displayed",
+        "score": 0.7
+      }
+    ]
+  },
+  {
+    "page": 78,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 79,
+    "has_formula": true,
+    "formula_percentage": 3.43,
+    "detected_formulas": [
+      {
+        "text": "n(x) = 𝑛1[1 −2Δ (",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "Δ-> Fractional index change,∆ =",
+        "type": "displayed",
+        "score": 0.7
+      },
+      {
+        "text": "𝑛1−𝑛2",
+        "type": "displayed",
+        "score": 0.7
+      }
+    ]
+  },
+  {
+    "page": 80,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 81,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 82,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  },
+  {
+    "page": 83,
+    "has_formula": false,
+    "formula_percentage": 0.0,
+    "detected_formulas": []
+  }
+]

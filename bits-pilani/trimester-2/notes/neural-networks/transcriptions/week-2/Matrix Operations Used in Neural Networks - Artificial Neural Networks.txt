@@ -1,0 +1,23 @@
+Hello everyone. Welcome back to Module 2 of Artificial Neural Networks. In this video, we will study the matrix operations used in neural networks. By the end of this video, you will be able to explain why matrices are fundamental to neural network computation. You will learn how to represent a neural network layer using a weight matrix and a bias vector.
+You will also be able to compute layer outputs using matrix multiplication. And finally, you will be able to track and verify matrix dimensions and shapes correctly.
+So, why do neural networks use matrices? A single neuron computes one dot product between an input vector and a weight vector. But, a real neural network layer contains many neurons operating in parallel.
+Computing each neuron separately would be extremely slow. Matrix operations allows us to compute all neuron dot products in one efficient mathematical operation. This is why matrices are central to neural network computation.
+Let us consider the case where we have one input neuron given by X. Then there are M different neurons with weights W1, W2 and Wm. This X is connected to all of them.
+The output of the second neuron is given by Z1, W1 transpose X. Output of the second neuron is given by Z2, which is W2 transpose X. And similarly, the Mth neuron is given by Zm equals Wm transpose X.
+Writing all these dot products separately is repetitive and inefficient. Matrix notation lets us represent all of them compactly. To do this, we stack the weight vectors of all neurons as rows of a single matrix W. This matrix has shape M cross N where M is the number of neurons and N is the number of input features. This is exactly how neural network parameters are.
+The number of neural network parameters are stored in practice. Now, when we multiply the matrix W with the input vector X, the result is Z equals W dot X. This single multiplication computes the dot product of X with every row of the matrix. In other words, it computes the outputs of all neurons in the layer at the same time. The output vector Z contains one value per neuron.
+The output vector Z is the number of neural network. Now, let us consider this example. Here, we have a weight vector given by W and the input vector X. The shape of this weight vector is 3 cross 2 and the shape of the input vector is 2 cross 1. So, their inner shapes are matching. Hence, we can multiply them. Now, let's try to multiply them. So, W dot X is the number of the input vector X. The shape of the input vector is 2 cross 1. So, their inner shapes are matching. Hence, we can multiply them. Now, let's try to multiply them.
+multiply them. So w dot x is given by 1 0 0 1 1 1 dot 1 2. The output here would be 1 times 1
+plus 0 times 2. Then 0 times 1 plus 1 times 2. Then 1 times 1 and 1 times 2. So the end result would be 1,
+2 and 3. So this is the output. Tracking dimensions is essential. If the input has dimension n and the
+layer has n neurons, then the weight matrix must have shape m cross n. The product w dot x will then
+have shape m. Any mismatch in these dimensions makes the computation invalid. In practice,
+many neural network bugs come from shape mismatches. In a full layer, bias is not a single number.
+It is a vector with one bias term for each neuron. Let's say for a neural network, the bias vector
+can look something like this. B equals b1, b2 till bm for the m neurons that we have.
+Now, the full linear computation becomes z equals w x plus b. Each bias value shifts the output of its
+corresponding neuron independently. This gives each neuron its own baseline level of activation.
+Till now, we have seen that for one data point x, how do we handle multiple neurons? In real systems,
+we rarely process just one input at a time. We stack multiple input vectors as columns of a matrix x. Then, one multiplication z equals w x computes the outputs for all inputs in the batch simultaneously. This batching is the key reason why GPUs and other parallel hardware are so effective for deep learning. Now, let's summarize the main points of this video.
+One neuron performs one dot product, one layer performs one matrix multiplication and bias is added as a vector. Batch processing uses large matrix multiplications to compute many outputs in parallel. These operations form the linear algebra backbone of neural networks. In the next lesson, we move from linear algebra to calculus and study how derivatives and gradients allow these weights to be used in the same way.
+One neuron performs the same way. It's to be learned from data. Thank you.

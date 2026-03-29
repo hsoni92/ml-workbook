@@ -1,0 +1,21 @@
+Hello everyone, welcome back to module 6 of Artificial Neural Networks. In this video, we will learn why adaptive optimizers like RMSPROP and ADAM were needed to train the neural network models.
+By the end of this video, you will be able to understand the limitations of SGD and Momentum and you will see what challenges arise when we use a single learning rate for all the parameters.
+You will also understand the challenges of sparse features and noisy gradients and finally the motivation behind adaptive optimizers like RMSPROP and ADAM.
+SGD has one major limitation. It uses a single global learning rate for all parameters in the network. But weights behave very differently.
+Some are sensitive, some barely change the laws, some need large steps and others need very tiny adjustments. When we force all the parameters to share one learning rate, some will learn too slowly and others will become unstable.
+This mismatch becomes more severe as networks become deeper and parameter scales diverge.
+Another major issue comes from sparse data, especially in NLP, recommender systems and high-dimensional sparse inputs.
+Many features are zero most of the time, which means their corresponding weights get very infrequent gradients.
+SGD treats all the weights equally. So, rarely updated weights hardly move. They essentially learn at a fraction of the speed of frequently updated parameters.
+Adaptive optimizers solve this by giving each parameter its own effective learning rate, making rare gradients more impactful.
+Deep networks often exhibit highly variable gradient magnitudes across layers. Some layers get large gradients, others get tiny ones.
+Mini-batch SGD introduces additional noise. With a single learning rate, large gradient parameters may overshoot while the small gradient parameters they barely miss.
+We need a way to scale updates differently for each parameter based on its own gradient history. Adaptive methods do exactly this. They look at past gradients and adjust the step size automatically.
+Even with momentum, SGD struggles with plateaus, regions where the gradient is close to zero and saddle points where the surface is flat in one direction and steep in another.
+In such landscapes, a large learning rate causes divergence. A small learning rate slows learning dramatically. What we really need is a method that adjusts the step size based on directional curvature and gradient consistency.
+Adaptive optimizers approximate this behavior by using gradient statistics to tune the learning rate.
+So, adaptive methods were created to solve one fundamental limitation of SGD, which is:
+Different parameters need different learning rates. Adaptive parameters compute per parameter learning rates using the history of the gradients. This means:
+Noisy parameters get dampened updates, sparse parameters get boosted updates, and stable directions get accelerated updates. In other words, each parameter learns at the speed that is appropriate for it.
+Now, let us summarize the main points of this video. SGD and momentum are limited because they use one learning rate for all the parameters. Deep networks need different step sizes across parameters and across layers. Sparse gradients, noisy gradients, and varying curvature all cause SGD to behave poorly.
+Adaptive optimizers like RMS prop and ADAM were designed to solve exactly these problems. In the next video, we will explore RMS prop, the first widely used adaptive method that adjusts learning rates using squared gradients. Thank you.

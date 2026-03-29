@@ -1,0 +1,17 @@
+Hello everyone. Welcome back to module 6 of Artificial Neural Networks. In this video, we will compare adaptive learning rates with scheduled learning rates.
+By the end of this video, you will be able to clearly distinguish between adaptive and scheduled learning rates. You will understand the strengths and limitations of each approach and how to choose between them in real training scenarios.
+There are two main ways to control learning rates in neural network training. The first is adaptive learning rates where the optimizer automatically adjusts the stack size for each parameter based on the gradient history, like RMSPROF or ADM.
+The second is scheduled learning rates where we explicitly change the learning rate over time according to a predefined schedule. This happens in step decay, cosine annealing or warm-up.
+Both the approaches aim to solve the same problem, choosing the right step size, but they do so in very different ways.
+Adaptive optimizers like ADM are very powerful in early training. They handle noisy and sparse gradients well, require licky tuning and converge quickly. Because each parameter gets its own effective learning rate, adaptive methods are robust even while gradient magnitudes vary significantly across the layers.
+This makes them an excellent default choice when starting training or experimenting with new architectures. However, adaptive methods also have limitations. They can sometimes converge to sharp minima, which may generalize worse. They also offer less explicit control over learning dynamics, especially in the later stages of training.
+Because of this, adaptive optimizers are not always ideal for fine tuning or achieving the best possible final performance. Now, coming to the scheduled learning rates. Scheduled learning rates, on the other hand, give us precise control over how the step size changes over time. They are especially useful in later training stages where careful fine tuning is important.
+Learning rate schedules are also useful in later training.
+In practice, many training pipelines combine both the ideas. Some of the common strategies are to use ADM with fixed LR. This gives a simple and fast baseline. Another common strategy is to use ADM with a LR schedule. This gives better stability and convergence.
+And finally, the most popular strategy is to use ADM with ADM to get fast stable progress. Then, once the model reaches a good region of the lost landscape, training switches to SGD with momentum and a learning rate schedule for fine tuning. This approach leverages the strengths of both adaptive and scheduled methods. Here is a simple rule of thumb to choose between the two in practice.
+Use adaptive optimizers when training is difficult, noisy or exploratory. Use scheduled learning rates when training is stable and you care about the final performance. There is no universal best choice. The right decision depends on modules, data and goals. Now, let us summarize the main points of this video.
+this video. Adaptive methods automatically adjust learning rates per parameter. Scheduled
+learning rates explicitly control step size over time. Adaptive methods are fast and robust
+early on. Scheduled methods offer better control and often better final results. Combining
+both is common and effective. In the next video, we will focus on stabilizing and understanding
+convergence starting with gradient clipping. Thank you.

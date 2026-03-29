@@ -1,0 +1,194 @@
+Hello to all of you. My name is Dr. Hemant Rathar and we are in the course Machine Learning. We are
+discussing module 4 Dicientries and today's topic is Finding the Best Attribute or Best Split. So,
+the learning objective of this video is we are going to understand the basic concept of node
+impurity and why it is important. Then we are going to define and calculate three primary measures
+of calculating node impurity like entropy, guinea index and misclassification error and then we are
+going to compare them towards the end. So, let's start right away. So, we are talking about decision tree
+construction. So, the process of decision tree construction is called tree induction. When we
+are creating the decision tree, basically there are three questions. Which attribute should be chosen
+now? How should we split the record based on that attribute? And what is the stopping condition? So, in the last video
+we discussed about we have decided an attribute to be split on. Now, how do we split that attribute? It depends on the attribute
+type. Whether it is a nominal attribute or an ordinal attribute or a continuous attribute. If it is a nominal attribute,
+we can do a multi-way split or a binary split. If it is an ordinal attribute, again we can do a binary split and a multi-way split.
+And if it is a continuous type of attribute, we can do discretization and we can also do a binary split. So, this is what we have seen in the last video.
+In today's video we are going to talk about which attribute should be chosen first. For example, let's suppose I have been given a tabular data like this which has some attributes and the last column is class label.
+I have attribute A, attribute B, attribute C. I can spread based on attribute A, attribute B and attribute C. Which attribute out of A, B and C I should start with. So, at the root node, when I am starting to constructing the tree, which attribute should be chosen first. And that is what we want to discuss on today. Later on in the next video we are going to talk about the stopping condition for tree construction.
+So, the basic idea of choosing one attribute for splitting is to reach homogenous child nodes. For example, let's suppose as we were discussing, I have three attributes A, B and C. And then I have a class label. And I can start my tree construction from either A, B or C. Which attribute I should choose?
+So, I should choose an attribute. Assuming I am choosing A. I should choose an attribute. Which should result in child nodes. Those are homogenous in nature.
+So, the resulting child nodes should be homogenous in nature. And that is what we want to achieve with any disorientary construction. So, what is a homogenous node? Homogenous nodes are also known as pure nodes. What do you mean by homogenous nodes?
+Homogenous nodes? When a child nodes contain tuples of only one class or majority of the tuples are of only one class. Then we call it as homogenous or almost homogenous or almost pure node. For example, if you look into this particular case. I have C0 class and C1 class. I have nine elements or nine tuples of C0 class and one element of C1 class. So, you can see majority of the tuples
+in this node is of C0 class. So, that is why we are calling it as homogenous node. On the other hand, a resultant child node might look like this. Where again I have two classes. C0 and C1. And C0 is having five tuples and C1 is having again five tuples. So, I have tuples of both C0 class and C1 class. And then, they are almost equal. They are almost in equal number. And that is why we are calling it as homogenous.
+are calling it as heterogeneous non-homogeneous impure node so we do not want to reach impure node
+where we want to reach is a pure node why we want to reach in a pure node because if we reach a pure
+node i can do the classification so in addition tree if i split based on a and i reach this child
+node where all the elements are of c0 class i can declare that this test tuple is of c0 class let's
+suppose i reach the other child node again having all the tuples of c1 class so if i reach here right
+then this here in this case it will be declared as c1 class so you want to reach a child node which is
+homogeneous in nature so a node like c0 5 and c1 5 a node having five elements of c0 class and five
+elements of c1 class doesn't help us in doing any clear prediction because we do not know there are
+some samples of one class and almost equal number of samples of other class so we have not reached a
+conclusion we cannot do any prediction when we reach these types of node what we typically do is further
+split this node into smaller sub nodes where we can reach a pure child node right the other case is if
+you reach a child node like this majority of the elements are of one class so in this case majority
+of the elements are of c0 class then we can stop here and we can say that we can predict that now you are
+in c0 class and the confidence is 90 percent so when we are constructing the tree let's suppose again i
+have a tabular data set three attributes a b and c and then i have class label assuming a is the best
+right right now we will decide we will discuss how we are choosing a right so i'm splitting based on a
+now this child node has all the samples of one class this child node has some sample of c0 class
+and some sample of c1 class so this is a homogeneous node here if i reach here i have reached addition
+point i can say the prediction when i reach here is of c0 class but if i reach on the right hand side
+there are some tuples of c0 class some tuples of c1 class that means i cannot do any prediction now
+what i have to do i have to split this child node again into smaller child nodes let's suppose here
+now i have reached all the elements are of c0 class and in this case here i have all the elements of c1
+class so now both these child nodes are homogeneous in nature and i can stop here so if i reach here i can
+do prediction as c0 if i reach here i can do prediction as c1 and this is what we want to achieve in this case
+so basically we are talking about measuring the node impurity so given a child node how can we measure its
+impurity so impurity measure is a function that takes the class distribution of a node right so given a
+child node it takes the class distribution in a child node and returns a numerical representation or a
+number representation of its impurity so if this is the scenario it should result as pure node right a
+number which this signifies pure node if the resultant child node looks like this
+the number should represent its impure node right so that is what we want to achieve here so pure node
+will have impurity equals to zero and an impure node right should have a maximum impurity value that is
+what we want to achieve how can we achieve there so basically in decision trees there are three performance
+matrix three matrix through which you can measure node impurity there are three measures in decision trees
+that can help us in measuring node impurity the first one is called entropy the second one is called guinea
+index and the third one is called misclassification error so entropy is very very popular and used in many
+decision tree algorithms like id3 c4.5 and so on guinea index is also very popular and it is used in cart
+again which is a version of decision tree implementation if you are using sklearnh guinea index is the by default way of
+measuring node impurity and then of course we have misclassification error as well so let's start with
+the first way of measuring node impurity right which is entropy just to recap right let's suppose i started
+from this point at root node and i split based on a now i have two child nodes this is my child one and this is
+my child two how do we measure impurity in child one and child two is what we are discussing there are different ways of measuring that
+impurity for example entropy guinea index and misclassification error so we started with entropy right we are measuring impurity in a child node so what is entropy entropy comes from the term from the information theory it is amount of uncertainty randomness and
+so what is entropy entropy comes from the term from information theory it is amount of uncertainty randomness and
+chaos in a system so when the entropy value is high that means there is high chaos and high impurity in the
+child node if the entropy value is low right that means it has having low chaos and it is basically there is low amount of impurity high entropy means high chaos and high impurity and it is basically there is low amount of impurity high entropy means high
+high chaos and high impurity low entropy means low chaos and low impurity right so mostly low entropy means
+majority of the tuples in this child node is of one class and when we are talking about high entropy that
+means there are mixed number of samples of both the classes in a particular child node so the aim of any
+additionary based algorithm is to split that causes largest reduction in entropy so we will talk about that
+as we move along so how do we calculate entropy mathematically so entropy formula is entropy is minus pi log pi
+where pi is the probability of records or tuples that belong to class i in a particular node
+so given a child node right probability of each class can be measured and then we do the
+summation to get the entropy so the overall formula would look like this entropy is summation of
+minus pi log pi to the base 2 right so this is the overall formula so for example if this is the child
+node this is the node i want to measure its impurity right so i'm going to calculate the
+probability of c0 class i am also going to calculate the probability of c1 class and then feed it into
+the formula so let's take a very simple example a toy example so let's suppose this is my child node
+which is having three tuples of a class and seven tuples of b class so there are 10 records
+three tuples of a class and seven tuples of b class i want to measure the entropy of this node so for
+that we have to calculate the probability of a class first probability of a class would be 3 divided by
+3 plus 7 3 divided by 10 which is 0.3 right probability of b class in this child node is
+7 divided by 7 plus 3 which is 7 by 10 that means 0.7 so probability of a in this child node probability
+of class a in this child node is 0.3 percent and probability of b class b in this child node is 0.7
+7 let us feed this probability value in the entropy formula so in entropy formula it would be minus
+probability of c1 class multiplied by log probability of c1 class plus minus probability of c2 class class a this is class
+a probability of a probability of a class b log probability of class b right this is how it would
+look like so let us feed the formula right so probability of a class is 0.3 multiplied by log of probability of
+class a right which is again 0.3 here plus because this summation but of course there is a negative sign here so this becomes negative overall so probability of c class b which is 0.3 here plus because this is a negative sign here so this becomes negative overall so probability of c
+class b which is 0.7 multiplied by log of probability of class b right so when i feed all these values and i
+calculate the entropy of this child node is 0.88 right 0.88 so let's take few more examples to understand entropy better
+so there are three examples i am discussing case one in case one let's suppose this is my resultant child node
+zero elements of c1 class six element of c2 class let me calculate the entropy of this child so i have a
+child node like this let's call it as c1 this is my child one let's call it ca the let me calculate the
+entropy of child node a right so i have two classes here c1 class zero tuples c2 class six tuples for that if i want to
+calculate the entropy of child a first i have to calculate the entropy of child a first i have to calculate
+probability of class one and probability of class two so probability of class one would be zero divided by
+zero plus six so this is probability of class one probability of class two c2 is six divided by zero plus six so
+probability of c1 class is zero and probability of c2 class is one and that you also can see right
+probability of c1 class equals to zero means there is no tuple of c1 class probability of c2 class is one
+also means there are all the tuples are of c2 class right so if you look by definition this is a
+homogeneous node all the elements all the tuples are belonging to only one class which is c2 class
+but let's see how do we get the same how do we calculate the entropy works for the child a so for
+entropy of child a i will feed all these value into the entropy formula which is summation of pi multiplied
+by log 2 pi so when i feed all these values so probability of c2 class multiplied by log probability of c2
+class so when i do that i get minus zero minus zero and then final value zero so entropy of this child
+node child node a is zero that means it is perfectly pure and there is no uncertainty in this child node
+all the tuples belong to only one class so this is one example let's take another child node right so let's call this
+child node as child b so child b looks like this there is one element of c1 class and there are five
+elements or five tuples c2 class i want to calculate the entropy of this child node b so to calculate the
+entropy of child node b first i have to calculate the probability of c1 class in this child node probability of
+c1 class would be one divided by one plus five that means one by six and i have to calculate the probability of
+c2 class in this child node child node b which will be five divided by one plus five that gives me five
+divided by six right so this is probability of c1 class in child node b and this is the probability of c2
+class in child node b when i feed that into entropy formula right as we have done earlier the final
+entropy comes out to be 0.65 right so of course zero is a perfect case this probability so this is the
+entropy of child a is less than entropy of child b right so entropy of child a right this was child a
+and entropy of child b if i compare entropy of child a is 0 entropy of child b is 0.65 which is much higher
+so this is less impure node right it is not perfectly pure node this is less impure node let's take
+another case let's call it as child c and the composition of this child is there are two elements
+of c1 class and there are four elements of c2 class so let me calculate the entropy of
+so entropy of this child c would be first we have to calculate probability of c1 class here which is 2 divided by 2 plus 4 and probability of c2 class would be 4 divided by 2 plus 4. so when i have done this calculation and i feed it into entropy formula the entropy value comes for this child note c comes to be 0.92 so this entropy value is very high so here we can see
+entropy of child a was lesser than entropy of child b lesser than entropy of child c
+so in dictionary we can say that for example i can also say i am splitting based on a here
+so i had a tabular data three attributes attribute a attribute b attribute c so assuming i was splitting
+based on a here assuming i was splitting based on attribute b here and assuming i was splitting based on attribute c here so in this case splitting based on attribute a make lot of sense because it results in a child node which is homogeneous in nature splitting based on attribute c doesn't make any sense because resultant child notes entropy is very high right so i hope this is clear
+now when we talk about entropy it is not directly used in dictionary right there is a wrapper function which is wrapped around entropy
+so what is information gain so what is information gain very simple ig or information gain is entropy of parent minus entropy of child and if i elaborate it is entropy of parent minus weighted average entropy of child right so why we are doing weighted average because yeah let's suppose this is my
+this is my parent right it has five elements of c0 class and five elements of c1 class i decided to split it based on attribute a these are the resultant child nodes right so let's suppose here i got this i got this right so here you can see this is my parent right and i split based on a
+it results in two child node this is child 1 and this is child 2 right now so when we talk about entropy essentially we are using information gain information gain of attribute a would be entropy of the parent node minus entropy of the child nodes to further elaborate it would be entropy of parent minus weighted average of entropy of child why because here in this child
+you can see only two you can see only two you can see only two you can see only two samples and in this child node you can see only two samples and in this child node you had eight samples so majority of the samples went to right hand side so that is why this child node should be given higher weightage as compared to this child node so that is why information gain is entropy of parent minus weighted average of entropy of children so gain spread is entropy of parent minus this is to calculate the weight of the child right so entropy of
+so we can do that so we can do that and it's very easy to do it as well and this is how we calculate so just to elaborate so just to elaborate yeah the example which we were discussing so let's suppose i've been finally how it would look like so let's suppose someone has given me this tabular data right it has some tuples now i have to create a decision tree so what i have to do first i have to this is my root node right
+so let's suppose the root node looks like this now whether i should choose a to split at the root node or attribute b or attribute c is the question so what i have to do i have to calculate information gain of a then i have to calculate information gain of b and then information gain of c all three information gain i have to calculate right now higher the information gain the better is the attribute
+so the highest information guy would be selected the attribute having the highest information gain would be selected and let's suppose the highest information gain came from attribute a so a would be used to split so now you have this child node and this child node again let's assume that both the child nodes are impure again i have to split to reach addition point so again i have to calculate information gain here and information gain here right highest information gain attribute would be chosen and again
+we are going to split till we reach a stopping condition which we are going to discuss in the next video now another way of measuring node impurity is called gini index gini index so it is also very popular and it represents the probability of misclassification of randomly chosen element in a node it were randomly labeled according to the class distribution of that node again this is more of a definition let's look the formula and then try to understand
+gini of a child so i have a child node i want to calculate the error or i want to calculate the impurity in that so to calculate the impurity i can calculate the gini of that child node so t is the child node gini of the child node is 1 minus probability of the class squared so probability of j given t so what is probability of j given t probability of j given t is the relative probability of class
+j at the node t entropy value 0 means it is a pure node entropy value would be higher that is 0.5
+when you have binary classification product again do not worry let's see an example very simple
+example let's try to understand again the same tabular data set i have right i want to do tree
+construction now instead of measuring node impurity using entropy i am using different measure to
+measure node impurity so now at the root node i have okay this is 10 and this is 10 assuming something
+like this okay i have this parent this is my parent this is my root now i have three options
+three attributes on which i can split attribute a attribute b and attribute c i can split based on
+attribute b at a b and c right i can split based on any of this the idea is the resultant child node
+should be homogeneous in nature how to measure the resultant child node impurity entropy is one way
+second one is guinea index so let's talk about guinea how do we measure node impurity using guinea so the
+formula is as i said one minus probability of a class square and you do summation for all the classes here so let's suppose based on a
+attribute a i choose to split so here based on attribute a i am splitting the records and this is my resultant child node let's call it as
+this child a this is my resultant child node i want to calculate the guinea of this child node a calculating the guinea index of this child node first you have to calculate the probability of class 1 in this and probability of class 2 so probability of class 1 is very simple 0 divided by 0 plus 6 and probability of c2 class of this in this child node is 6 divided by 0 plus 6 which is 1.
+So probability of c1 class in this child node is 0 and this child node is 0 and probability of c2 class in this child node is 1. Let me feed this probability value in guinea. So guinea is 1 minus probability of c1 class square.
+right plus probability of c2 class square. Of course this is summation so when you include this minus sign this will also become minus. So it becomes 1 minus probability of c1 class square minus probability of c2 class square. Okay so let us feed the value it is 1 minus probability of c1 class is 0 square plus minus probability of c2 class which is 1 square which becomes 1 minus 0 minus 1 which
+So guinea value of c1 is 0. So guinea value for this child node is 0. Guinea value equals to 0 means it is a pure node. Homogeneous node. All the samples belong to only one class. All the tuples belong to one class. And we can see here all the tuples in this child node belong to c2 class. Similarly let us assume that we split it based on a. Now let us suppose I am splitting based on attribute b.
+And when I split based on attribute b. This is my resultant child node. Right. Now I want to calculate the guinea of this child node. So let me calculate the guinea of this child node. So we have to calculate the guinea value of this child node b. Let us call it a child node b. So let us calculate the probability of c1 class in this and probability of c2 class in this. So probability of c1 class is 1 by 1 plus 5. And probability of c2 class in this is 5 divided by 1 plus 5.
+So these are the guinea. So these are the guinea. So these are the guinea. So these are the values and when we feed this into the guinea formula. Right. We get 1 minus 1 divided by 6 square plus 5 by 6 square. So the guinea value comes to be 0.278.
+So let us suppose I split based on attribute c. So I can split based on a, b, c. Right. I have to decide on which one I should use. So assuming I split based on c and the resultant child node child c looks like this. Two elements of c1 class and four elements of c2 class.
+This is the child node. I want to calculate the impurity using guinea of this child node. So for doing that first we have to calculate the probability of c1 class and then we have to calculate the probability of c2 class. These are the values when I feed in the guinea formula. This is the guinea value for this child node.
+So if I compare all the guinea. Guinea resulting from attribute a versus guinea resulting from child node and guinea of the child node resulting from spirit based on b and so on. This would look like. Guinea of c a is lesser than guinea of child node b lesser than guinea of child node c.
+So in this case also now you can understand that splitting based on a is resulting in pure node and that is why a should be chosen first to split. You do this activity iteratively till you get some stopping condition. This is how we measure node impurity using guinea. Now again as we saw entropy is not directly used to calculate the node impurity. What we use overall is something called
+information gain which is called the information gain which is called the information gain which is built on entropy. Similarly guinea is not directly used. What we use is guinea split to calculate the overall structure. So what is guinea split? Guinea split is guinea entropy of children's along with their weighted average. Weighted average of all the child nodes. Here we are not calculating the guinea of parent. Here it is summation of weightage of all the child nodes.
+For example this is my let's suppose parent node and I can split this based on I can split this in two child nodes node 1 and node 2. So the parent looks like this. Let's suppose there are six elements of c1 class six element of c2 class. I can calculate guinea of this as well. Not required for calculating gimme split but I can calculate. So guinea of this would be probability of c1 class probability of c2 class and then you do 1-1.
+So you get the final value it is 0.5 that is it is impure node. I cannot take any decision here. There are half of the samples of c1 class. Half of the samples are of c2 class. I cannot take any decision. So I have to split. When I decide to split this parent these are the resulted nodes. Node 1 and node 2. So node 1 looks like this. And node 2 looks like this. So node 1 has seven types.
+and node 2 has 5 tuples that is why we are again doing weighted values we are taking weight of each child
+but how do we calculate the guinea split so guinea split would be first you have to calculate the guinea of node 1
+so guinea of node 1 would be simple 1-5/7 square -2/7 square so guinea of this child node is this child node is 0.27
+and guinea similarly guinea of node 2 is 0.32 now we have to calculate the overall guinea index overall guinea split is the correct term so guinea split would be weighted value of the child node
+so weight of this child node 1 is 7/12 so this is the weight for node 1
+right and similarly the weight for node 2 would be 5/12 so there are 7 tuples so that is why 7/12 there are 5 tuples so 5/12 and then you can put the values
+so node 1 guinea is 0.27 and node 2 guinea value is 0.32 and when you finally calculate the guinea split is 0.295 right so again as we saw earlier as well
+we have to do the same computation right so let's suppose i can split based on a b and c i am going to calculate guinea split for a
+guinea split for b guinea split for c right higher the value i am going to choose that attribute to split right higher the attribute value higher the guinea index value
+guinea split value i am going to choose that attribute to split so this is how we use guinea split and the last one is called misclassification error very simple and very used there in the literature so i am discussing it
+so again we want to calculate the impurity so error in the node t is determined by 1 minus maximum of probability of all the classes so max probability i given t where max p i given t is the proportion of the largest class add node t okay this is more of mathematics let's see the toy example so you understand it same example i have a tabular data set
+so if i have a tabular data set and the class label i have a tabular data set and the class label i have a tabular data set and the class label i have a tabular data set and the class label i have a tabular data set and the class label i have a tabular data set and the class label i have a tabular data set and the class label i have a tabular data set and the class label i have a tabular data set and the class label i have a tabular data set and the class label i should decide which attribute should be used to split right again the resultant child note should be homogeneous in nature i can measure the impurity of this children
+also by misclassification error so you can do it with entropy you can do it with guinea value and you can also do it with misclassification error so how do we do misclassification error very simple
+so assuming i have to calculate the impurity impurity of this child node a how do i do that i calculate misclassification error for this child node a right how do i do that first i have to do probability of c1 class here and probability of c2 class probability of c1 class is 0 probability of c2 class is 1 let me feed all these values in the formula
+in the formula 1 minus max so probability of c1 class so probability of c1 class so probability of c2 class and so on if there are many right so 1 minus probability of c1 class is 0 and probability of c1 class c2 class is 1 so 1 minus max what which is the maximum value 1 is the maximum value so max of 0 and 1 so which is 1 so 1 minus 1 which is 0 so error
+in this child node is 0 in this child node is 0. similarly let's assume i am splitting based on b attribute here and the resultant in the child node is cb i want to calculate misclassification error similarly i have to calculate probability of c1 class probability of c2 class and i feed it to the formula
+the error of this child node is 0.167 right and let's suppose i am splitting based on c this is the resultant child node right so i want to calculate misclassification of this child node again probability of c1 class probability of c2 class feeding in the formula the error value coming to be 1 by 3 which is 0.33 so i can say misclassification error
+of child node a is less than misclassification error of child node b is less than misclassification error of child node c right child node c right child node c so if i want to compare all three which is a
+entropy versus gini versus misclassification error this is how the plot would look like let me explain the plot very simple assuming i have a binary classification problem two class classification problem right and on x-axis i am plotting the probability values right probability of one class so let's suppose i am plotting probability of positive class here right on x-axis i am plotting probability of positive class there are two classes positive class and negative class
+on x-axis I am plotting probability of positive class and on y-axis I have error. Right? The values
+entropy value, guinea value, misclassification I have value. So on y-axis I have that those values.
+Essentially we are measuring impurities so that is why I wrote error. So let's talk about this case
+probability of positive class is zero. So probability of negative class will become one.
+Guinea, entropy and misclassification all the values are zero. So this is a pure node. Of course this is a pure node. Let's talk about this case.
+Probability of positive class is one. That also means probability of negative class is zero. Again
+entropy value is zero. You can see entropy red line entropy value is zero. Guinea value is also zero.
+And misclassification error is also zero. These are pure cases. These are homogeneous nodes. Of course
+there can be a case where probability of positive class is 0.5. Then the probability of negative class
+will also be 0.5. In that case misclassification error value would be 0.5. Guinea value will also be 0.5. And entropy value. So for binary
+classification problem for binary two class classification problem misclassification error can range from 0 which is pure node to 0.5 which is impure node.
+Guinea value can range from 0 pure node to 0.5 which is impure node. Entropy value can range from 0 which is pure node to 1 which is impure node.
+So therefore in summary in this video we discussed about how do we choose an attribute to split. We are going to calculate node impurity using entropy, guinea index and misclassification error.
+We are going to continue in the next video as well. Thank you for attending. Take care. Bye.
+Thank you.

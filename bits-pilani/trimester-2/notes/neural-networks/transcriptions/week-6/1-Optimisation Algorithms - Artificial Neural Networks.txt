@@ -1,0 +1,19 @@
+Hello everyone. Welcome to Module 6 of Artificial Neural Networks, where we focus on one of the most important parts of training deep neural networks, that is optimization.
+Until now, we have learned how neural networks compute predictions through the forward pass and how they compute gradients using backpropagation.
+But gradients alone don't tell the network how to adjust its parameters. That's the role of optimization.
+Optimization determines how fast the network learns, how big the updates should be, which direction we should move in, and whether it converges, and even how we avoid the bad regions.
+A poorly chosen optimizer can make a model learn extremely slowly or diverge entirely.
+While training a neural network model, backpropagation gives the gradients and optimization tells how to use these gradients.
+If the optimization is good, we have faster convergence and ultimately better performance.
+However, if the optimization is poor, it can lead to slow learning or even divergence or getting stuck in the plateaus.
+Every modern breakthrough in neural network training uses strong optimization techniques.
+So, it becomes essential to study it from the very basic in the context of artificial neural networks as it would lay the foundation for future understanding.
+In this module, we will start with the foundations of gradient descent, understanding the role of the learning rate, the effect of batch size, and how the momentum helps us move smoothly through the loss landscape.
+Then, we will explore adaptive optimizers like RMS prop and Adam, which adjust learning rates automatically and have become essential.
+Next, we will look at learning rate scheduling strategies such as cosine annealing, step decay, and warm-up.
+These schedules often make the difference between fast, stable training and a model that gets stuck.
+Finally, we will understand what optimization challenging, noisy gradients, saddle points, exploding updates, and we will study practical techniques like gradient clipping and optimizer selection techniques.
+By the end of this module, you will have a strong toolkit to make deep learning models converge faster, more smoothly, and more reliably.
+By the end of this module, you will have a strong toolkit to make deep learning models converge faster, more smoothly, and more reliably.
+In the next video, we begin with the question, what is optimization?
+Thank you.

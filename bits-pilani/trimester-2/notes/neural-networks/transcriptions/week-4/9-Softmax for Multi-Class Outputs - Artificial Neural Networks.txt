@@ -1,0 +1,26 @@
+Hello everyone, welcome back to module 4 of artificial neural networks. In this video, we will study softmax which is used specifically in the output layer for multi-class classification.
+By the end of this video, you will be able to explain why the softmax function is needed for multi-class classification, how it is defined mathematically, you will be able to interpret its outputs as a probability distribution and how it differs from the sigmoid function.
+So far, we have seen that sigmoid is suitable for binary classification, where there are only two possible outcomes. However, in many real-world problems, we do not have just two classes. For example, recognizing handwritten digits involves 10 classes, classifying news articles may involve many topics, and image recognition can involve hundreds or thousands of categories.
+In such cases, the model must output one probability per class, and all these probabilities must be non-negative and they must sum up to 1. This is exactly the requirement that the softmax function is designed to satisfy.
+Before softmax is applied, the final layer of the network produces a vector of real-valued numbers called logits. These logits are simply the raw outputs of the last linear layer. They can be positive or negative, and they can be small or large, and do not have any probabilistic meaning yet. At this stage, the network has only produced unnormalized scores for each of the class.
+We still need a transformation that will convert these scores into valid probabilities. That transformation is softmax. The softmax function takes a vector of logits and converts it into a probability distribution. For a vector, let's say z equals z1, z2, zk. The softmax output for the ith class is defined as:
+zi equals e to the power zi divided by summation of e to the power zj for j ranging from 1 to k. There are three key properties of this transformation. Every output lies between 0 and 1. All outputs sum up to 1. And larger logits get larger probabilities. So, softmax converts arbitrary real numbers into a valid categorical number.
+Now, let's look at a simple numerical example. Now, let's look at a simple numerical example. Suppose, the logits for three classes are: z equals 2, 1, and 0.1. After exponentiating, e to the power z becomes 7.3, 2.7, and 1.1. The sum of these values is approximately 11.2. Now, dividing each exponential by this sum of these values is approximately 11.2. Now, dividing each exponential by this sum of these values is approximately 11.2. Now, dividing each exponential by this sum of these values is approximately 11.2.
+by this sum gives us class 1 about 0.66, class 2 about 0.24 and class 3 about 0.1. So, the network
+assigns the highest probability to class 1 even though all three classes receive some probability
+mass. Let us understand intuitively what Softmax is doing. First, the exponentiation step makes
+all values strictly positive. Then, the normalization step divides by the sum of all
+exponentials forcing the total probability mass to be exactly 1. What Softmax really preserves is
+the relative dominance of scores. If one logit is much larger than the others, Softmax will assign
+it a probability close to 1 while the remaining classes will still receive small probability.
+So, it turns relative confidence among classes into normalized probabilities.
+So, the output is strictly positive since exponentials are always positive. Second, the normalization
+step guarantees that all probabilities sum up to exactly 1. This means we can directly interpret
+the outputs of the Softmax layer as: The models believe that the input belongs to each class.
+The predicted class is simply the class with the highest probability. It is important to clearly
+distinguish between Sigmoid and Softmax because both output values between 0 and 1.
+Sigmoid produces a single probability and is best suited for binary classification. While Softmax produces a
+vector of probabilities, one for each class and these probabilities compete with each other because
+they must sum up to 1. This makes it ideal for multi-class classification. So, the key difference is that Sigmoid models one event in isolation while Softmax models a mutually exclusive set of classes. Now, let us summarize the main points of this video.
+So, Softmax is the standard activation function for multi-class classification. It converts raw scores or logits into a probability distribution over classes. Its outputs are positive, sum up to 1 and introduce competition between classes.
+So, Softmax generalizes the role of Sigmoid from the binary case to the multi-class case. In the next video, we will move from individual activation functions to the practical challenges and design choices involved in selecting activations for real-world networks. Thank you.

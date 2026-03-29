@@ -1,0 +1,26 @@
+Hello everyone. Welcome back to module 5 of artificial neural networks. In this video,
+we will learn about cross entropy loss and we will see why it works so well with softmax for
+multi-class classification. By the end of this video, you will understand why mean squared error
+or MSC is not suitable for classification. We will introduce the softmax function, learn about
+cross entropy loss and see how softmax and cross entropy work together to form the standard loss
+function used in almost all neural network classifiers. When we used MSC for regression,
+it worked beautifully. But for classification, it runs into three major problems. First,
+MSC treats class labels as if they were numbers on a line like 0, 1, 2. But class 2 is not twice of
+class 1. There is no natural numeric distance between the classes. This leads to incorrect
+decision boundaries. Second, MSC does not penalize confident wrong predictions strongly. Predicting
+0.2 or 0.01 for the true class produces similar loss values. But in classification, we need the model to
+get strong feedback when it's confidently wrong. Let's look at this example. For a prediction of 0.9,
+MSC is 0.01. And for a prediction of 0.1, MSC is 0.81. Both are small quantities. The feedback is not that strong to the model. Coming to the third problem, MSC produces very small gradients when combined with sigmoid or softmax. These activation functions saturate near 0 or 1 and their derivatives become tiny. So, when the model is confidently wrong,
+MSC sends almost no corrective signal. The model learns extremely slowly. For instance, if y equals 1 and predicted y hat is 0.99, then MSC loss becomes 1 minus 0.99 square, that is 0.0001. And it's very small.
+In classification, the model must output a probability distribution over classes. But neural networks naturally output raw scores called logits. These values can be positive or negative and don't sum up to 1. So, before we can compute a meaningful loss, we need to convert these logits into probabilities.
+That's exactly what softmax. That's exactly what softmax does. The softmax function exponentiates each logit and normalizes by the sum.
+This has two beautiful properties. Every output is positive and all outputs sum up to 1. So, softmax gives us a probability distribution over classes. If one logit is larger than the others, it will assign a higher probability to that class.
+Please note that we have already covered the numerical stable version of softmax in the math module. Now, that we have probabilities, we need a way to measure how good they are. Cross entropy does exactly this.
+For the true class Y, we take cross entropy equals to minus log of PY. This measures how surprised the model is that the true class occurred. If the model assigns high probability to the correct class, the loss is small. If the probability is low, the loss is large.
+If the probability is low, it directly captures the quality of the probability of the predicted distribution. Let us try to understand this with an example. Let's say the true class in some prediction problem is cat. If the model predicts 90% probability for cat, the loss is about 0.1 which is almost perfect. If it predicts 50%, meaning it's unsure, the loss increases.
+But if it predicts only 1% for the true class, a confident wrong prediction, the loss shoots up to more than 4.6. This is exactly the kind of behavior we want. Cross entropy tells the model that if you are confidently wrong, you must correct aggressively. In practice, softmax and cross entropy are used together. We don't compute softmax first and then take the log.
+Instead, we use a single combined expression given by loss equals minus Zy plus log of summation e to the power Zj. This avoids unnecessary computation and is numerically stable. Frameworks like PyTorch and TensorFlow implement this combined from internally.
+This is why you simply call cross entropy loss. It already includes softmax. Softmax plus cross entropy is the default choice for classification because it works extremely well. It produces strong, well-shaped gradients. It encourages the network to assign high probability to the correct class.
+It heavily penalizes confidence. It heavily penalizes confident mistakes. It scales naturally to multi-class problems. And it trains faster and more reliably than MSE. This combination is used in CNNs, RNNs, transformers and almost every modern classifier.
+Now, let us summarize the main points of this video. MSC fails for classification because of vanishing gradients, incorrect geometry and weak penalties. Softmax converts logits into probabilities. Cross entropy measures how well those probabilities match the true class.
+The combined softmax plus cross entropy formulation is the standard loss for classification tasks today. Deep learning libraries already implement the stable version internally. In the next video, we will explore how loss functions shape gradient signals. Thank you.

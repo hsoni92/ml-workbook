@@ -1,0 +1,29 @@
+Hello everyone, welcome back to module 4 of Artificial Neural Networks. In this video,
+we will discuss why we need activation function. By the end of this video, you will learn why purely
+linear neural networks are fundamentally limited, how activation functions introduce non-linearity,
+why stacking linear layers collapses into a single linear model, and how activation functions are the
+true source of expressive power in deep networks. Let us begin with a simple thought experiment.
+Suppose every layer in a neural network only performed a linear transformation of the form
+z equals wx plus b and no activation function was applied. In this case, every layer would be nothing
+more than a linear mapping from input to output. A natural question then arises, if we stack many such
+linear layers, do we get a powerful model? To answer that question, let us look at what happens when we
+compose two linear layers. The first layer computes z1 equals w1x plus b1 and the second layer computes z2
+equals w2z1 plus b2. Now, if we substitute z1 in z2, we get z2 equals w2 w1x plus b1 plus b2. This equals to w2w1x plus b2.
+This final expression that we get here is still a linear transformation of the input. That means, no matter how many purely linear layers we stack, the entire network always collapses into a single linear model. So, depth alone does not give power if all the layers are linear.
+This has a very important consequence. Purely linear models can only learn straight line decision boundaries or hyperplanes in higher dimension. They cannot represent zore type patterns, curved boundaries or complex feature interactions. We have already seen this limitation in the perceptron. No matter how many linear layers we stack without activation functions, we cannot escape this limitation.
+We cannot escape this limitation. This is where activation functions enter the picture. An activation function applies a nonlinear transformation to the output of each neuron. We usually write this as a equals a function of z. This simple nonlinear step breaks the linear nature of the network. Once a nonlinearity is introduced, stacking layers no longer collapses.
+stacking layers no longer collapses into a single linear transformation. With activation
+functions, each layer becomes a non-linear transformation of the previous layer. Once
+non-linearity is introduced, everything changes. The first layer can now learn non-linear features
+of the input. The second layer can learn non-linear combinations of those non-linear features.
+And as we go deeper and deeper, the network can represent highly complex nested non-linear
+relationships. This is what allows the neural networks to learn. Curved decision boundaries,
+complex interactions between features and hierarchical abstractions. This is the true reason why deep
+neural networks are so powerful. Without activation functions, an MLP is nothing more than a linear
+regression model, no matter how deep it is. With activation functions, however, even a single
+hidden layer neural network can approximate any continuous function on a compact domain. This
+is known as the universal approximation theorem. Now, let us summarize the main points of this video.
+Stacking linear layers without activation functions does not increase the expressive power of a network. Activation
+functions introduce the essential non-linearity that allows neural networks to represent complex patterns
+and curve decision boundaries. Without activation functions, deep learning as we know would not exist. In the next videos, we will study specific activation functions,
+such as sigmoid, tanach and relu and understand their properties and practical behavior. Thank you.

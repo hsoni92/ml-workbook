@@ -1,0 +1,37 @@
+Hello everyone, welcome back to module 6 of Artificial Neural Networks. In this video,
+we will focus on a very practical question, when should you use Adam and when should you
+avoid it. By the end of this video, you will be able to identify the situations where Adam
+is a strong choice and where it may not be ideal. You will be able to understand the trade-off
+between fast convergence and generalization. And finally, you will have clear guidelines
+for choosing Adam versus other optimizers in real training scenarios. As we have seen
+in the previous video, Adam is extremely popular because it works well right out of the box.
+It requires very little tuning, it handles noisy gradients well and converges quickly in the
+early stages of training. It is also found to be robust across many different architectures.
+Because of this, Adam is often the default optimizer and is widely used in NLP models, vision models
+and transformers. If you are starting a new project or experimenting with a new architecture,
+Adam is usually a safe and reliable first choice. Adam tends to work best in settings where training
+is difficult or unstable. This includes deep or complex architectures, models with sparse gradients,
+and problems where gradients are noisy, such as large-scale mini-batch training. Adam is also a great choice
+during early experimentation when you want fast feedback and want to iterate quickly
+and don't want to spend too much time tuning the hyperparameters.
+However, Adam is not always the best option. In some cases, especially when final generalization
+performance is critical, models trained with Adam may converge to sharp minima that don't generalize
+as well. For fine-tuning pre-trained models or in well-conditioned problems, simpler optimizers
+like SGD with momentum often outperform Adam in terms of final accuracy. So, while Adam is fast,
+it's not always the best choice for the last stage of training. Here's a useful way to think about the
+trade-off. Adam converges quickly and is easy to use but may sacrifice some generalization. SGD with
+momentum converges more slowly and needs more tuning but often leads to better final performance.
+Neither optimizer is universally better. The right choice depends on your goals.
+Adam converges quickly and is easy to use. A very common and effective strategy in practice is to combine
+both the optimizers. You start training with Adam to quickly reach a good region of the lost landscape.
+Once the training stabilizes, you switch to SGD with momentum to fine-tune the model and improve the
+generalization. This approach gives you the best of both the worlds. Now, some common mistakes to watch out for.
+1. Using Adam blindly without thinking about the task. 2. Never adjusting the learning rates. 3. Using Adam for
+final fine-tuning without evaluation. 4. And assuming Adam will always outperform other optimizers.
+We need to remember that optimizers are tools, not magic. Choosing them thoughtfully will make a real
+difference. 5. Now, let us summarize the main points of this video. Adam is an excellent default optimizer,
+especially for complex or noisy problems. 6. It works best for fast convergence and early training.
+6. SGD with momentum often performs better for final fine-tuning and generalization.
+7. Switching optimizers during training is a common and effective practice.
+7. In the next video, we will move on to learning rate scheduling and understand why keeping the
+learning rate fixed throughout the training is often limiting. Thank you.

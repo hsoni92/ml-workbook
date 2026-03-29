@@ -1,0 +1,64 @@
+Hello everyone, welcome back to module 1 of Artificial Neural Networks. In this video,
+we will discuss weights, bias and layers, the core elements of a neural network.
+By the end of this video, you will know how weights and bias affect the behavior of a neuron,
+you will understand how layers form feature hierarchies and you will recognize how these
+elements together define what a neural network can represent. In the previous videos, we understood
+what a single artificial neuron does at an intuitive level. We saw that a single neuron is
+only a simple pattern detector and has very limited expressive power. To build intelligent
+systems, we need many neurons working together in an organized way. This organization is achieved
+using three fundamental building blocks of every neural network, which are weights, bias and layers.
+In this video, we will understand what each of these means conceptually. Now, let us start with a simple example.
+Imagine a task where we want to predict the price of a house using a few basic features such as the size of the house,
+the number of bedrooms and the distance from the city center. Technically, we all know this is a regression problem.
+We want to fit a function to translate these features into the output Y, which is the price of the house. Now, let us try to visualize this example. So, let's say we have multiple inputs available to us. I am representing the different inputs with the help of these circles. So, the first input is the size of the house. Second one is the number of bedrooms.
+Third one is the number of bedrooms. Third one is the number of bedrooms. Third one is the distance from city center. Right? Now, size and bedrooms together, you know, might help us to understand a feature called as spaciousness present in the house.
+distance from the city center is basically the location quality of the
+house now the two of them together they combine into a final Y which is the
+output which is the price right so as we can see here right the three inputs
+size number of bedrooms distance from the city center this represents our
+input layer spaciousness and location quality it represents some of the hidden
+layers and Y is the output layer
+now now these different parameters like size and bedrooms right can have like
+different importances to determine the price Y so which would be indicated by
+the different weights which are present there so let's say size has an
+importance of W1 bedrooms has an importance of W2 and distance has an
+importance of W3 right and also there would be like a base price which is there
+so let's say a very remote house right so that would have some minimum price which we
+represent by the term called as B which we will see in the videos later now let us
+begin formally with the weights every connection between neurons in a neural
+network has an associated weight conceptually a weight represents the
+importance or influence of one input signal on a neurons output in the context of
+House price prediction, the weight on the size of the house tells us how strongly size influences
+the price. The weight W2 which we saw on the number of bedrooms captures how much each
+additional bedroom contributes. The weight on distance from the city center typically has a
+influence since houses farther away are often cheaper. So, weights tell the network which
+features matter more and which features matter less. In neural networks, learning simply means
+adjusting these weights based on data so that important features are emphasized and less
+relevant features are suppressed. Next is the bias. The bias term provides a baseline output for a neuron.
+It allows a neuron to produce a meaningful output even when all input values are small or zero.
+In our house price example, think of bias as representing the base cost of a house.
+Even if a house is very small, has few rooms and is far away from the city, it will still have some
+minimum price. That base level is captured by the bias. Conceptually, bias controls when a neuron begins
+to activate. It shifts the response of the neuron left or right allowing for greater flexibility. Now, let us move to the notion of layers. A layer is simply a group of neurons operating at the same level of the network. Neural networks are usually organized into three types of layers. The input layer which receives the raw features, one or more hidden layers which compute intermediate representations,
+and the output layer which produces the final prediction.
+In the house price prediction problem that we saw,
+the input layer receives basic features like size, rooms, and distance.
+Hidden layers transform these raw numbers into more meaningful internal representations.
+The output layer finally produces the predicted house price.
+Each layer performs a transformation of the data and passes the result to the next layer.
+So, information flows layer by layer from raw input to the final output.
+The true power of layers lies in their ability to build hierarchical representations.
+In the example we saw, the first hidden layer might learn intermediate concepts like spaciousness or location quality.
+The next layer might combine them into a more abstract idea such as overall attractiveness.
+The final layer then turns this abstract notion into a numerical price or buy.
+So, each layer converts low-level raw features into progressively more abstract and useful representations.
+This hierarchy is what allows neural networks to model highly complex relationships using a series of simple transformations.
+It is also what enables end-to-end learning where the system automatically discovers useful internal concepts from the data.
+Now, let us summarize the main points of this video.
+Weights determine how strongly each input feature influences the output.
+Bias sets a baseline level and controls when neurons activate.
+Layers organize neurons into hierarchical structures that build progressively abstract representations.
+Together, weights, bias, bias, and layers define the structural backbone of a neural network and determine what kind of functions it can represent.
+In the next video, we will take these building blocks and see how they connect to form a complete feed-forward neural network,
+where information flows from input to output through multiple layers.
+Thank you.

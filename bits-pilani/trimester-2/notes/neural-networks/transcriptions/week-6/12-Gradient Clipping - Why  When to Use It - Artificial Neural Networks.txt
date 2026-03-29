@@ -1,0 +1,20 @@
+Hello everyone, welcome back to module 6 of Artificial Neural Networks. In this video, we will discuss about gradient clipping. By the end of this video, you will be able to understand what gradient clipping is, explain why
+exploding gradients can break training and identify scenarios when gradient clipping is actually useful in practice. You will also be able to distinguish between clipping the magnitude versus norm of the gradients. In deep networks, gradients can sometimes grow extremely large. When this happens, parameter updates become huge, the loss can spike dramatically and training may become unstable or even
+crash with NAND values. Exploding gradients are especially common in recurrent neural networks, very deep models and during early training when parameters are poorly initialized. Even a single bad update can ruin an otherwise stable training process. Gradient clipping is a simple safety mechanism. In simple words, before applying an update, we check the size of the gradient. If the gradient is within a
+reasonable range, we leave it unchanged. If it's too large, we scale it down. This ensures that no single update can be catastrophically large. Gradient clipping works because it limits the magnitude of updates without changing the overall optimization process. It prevents sudden jumps in parameter values, stabilizes training when gradients spike and allows learning to continue
+continue instead of diverging. It's important to remember that gradient clipping is not
+a cure-all, it's a safeguard, not a replacement for good optimization. Now coming to the types
+of gradient clipping, there are two common ways to clip the gradients. Clipping by value
+limits each individual gradient component to a fixed range. This is simple but it can
+distort the direction of the gradient. Clipping by norm is more common. Here we scale the entire
+gradient vector if its overall norm exceeds a particular threshold. This preserves the direction
+while limiting the magnitude. Gradient clipping is most useful in situations where training is
+unstable. This includes training recurrent models, very deep networks or using large learning rates.
+If you see sudden loss spikes or exploding gradients early in the training, clipping can help stabilize
+the process. However, well-behaved models may not need gradient clipping at all. At this stage,
+it is also important to understand what gradient clipping does not do. It does not improve
+generalization. It does not fix banishing gradients. It does not replace good learning rate choices or
+initialization. Gradient clipping only prevents extreme updates. It does not solve deeper optimization problems.
+Let us summarize the main points of this video. Exploding gradients cause unstable training.
+Gradient clipping limits update magnitude. Non-base clipping is most commonly used. It acts as a safety mechanism in unstable settings. And it should be combined with good optimization practices. In the next video, we will look at some common optimization pitfalls, including saddle points,
+noisy updates, and plateaus, and understand how they affect the convergence. Thank you.

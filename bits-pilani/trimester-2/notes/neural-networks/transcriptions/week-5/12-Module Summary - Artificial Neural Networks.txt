@@ -1,0 +1,14 @@
+Hello everyone. Welcome to the last video of module 5 of Artificial Neural Networks.
+So, what did we learn this week? In this module, you learn how the forward pass produces predictions
+and how backpropagation computes gradients using the chain rule. You saw that gradients depend
+directly on the loss function, which is why MSE and cross-entropy behave so differently in practice.
+We then explored gradient flow in deep networks and understood why repeated multiplication of
+local derivatives can make the gradients either vanish or explode. To address this, we studied
+practical techniques like Xavier and He initialization, Relu family activations, gradient clipping,
+normalization layers. These tools form the core of modern deep learning practice. By now,
+you should have a clear understanding not only of how the neural networks learn, but also of why
+certain architectures and training techniques are necessary for stable and efficient learning.
+In the next module, we move from how gradients behave to how we optimize them, exploring optimizers like
+momentum, RMS prop, ADAM, learning rate scheduling, and the practical dynamics of training deep networks.
+These concepts will help you debug, speed up, and stabilize training in real-world applications.
+See you all in the next module. Thank you.

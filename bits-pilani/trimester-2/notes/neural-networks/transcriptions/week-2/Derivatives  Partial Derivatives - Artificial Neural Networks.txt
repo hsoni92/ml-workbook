@@ -1,0 +1,22 @@
+Hello everyone. Welcome back to module 2 of Artificial Neural Network. In this video,
+we will refresh our concepts of derivatives and partial derivatives. By the end of this video,
+you will understand derivatives as a measure of sensitivity and rate of change. You will be able
+to explain why derivatives are essential for learning in neural networks. You will also
+differentiate between derivatives and partial derivatives and interpret the role of partial
+derivatives in multivariable neural network systems. In the previous lesson, we saw how
+neural network computations are built using vectors, matrices and dot products. But computation
+alone does not imply learning. A neural network learns by adjusting its weights. To know how
+to adjust them, we must first understand how the output changes when a weight changes. This
+idea of sensitivity is captured mathematically by derivatives. Derivatives are therefore the core
+mathematical tool that makes learning in neural networks possible. Now, let us consider this
+example. Here, we have a line given by y equals 5x. At x equals 2, we see that y equals 10. Let's assume
+at x equals 2.001, y would equal to 10.005. Now, let's see what is the change in y given by change in x. So, change in y is given by 10.005 minus 10 divided by change in x 2.001 minus 2, which equals to 10.005.
+0.005 by 0.005 by 0.001, which equals 5. So, if we change x by 1 unit, y changes by 5 units. This brings us to the definition of derivatives. It measures how fast the output y changes when the input x changes. Geometrically, it is the slope of the tangent line to the curve at a point.
+In a learning system, this slope tells us whether increasing a parameter will increase the output, decrease it or have little effect at all. In neural networks, outputs are not functions of a single variable. They are functions of many variables, many inputs and many weights. Y is a function of x1, x2 till xn.
+To adjust each parameter. To adjust each parameter correctly, we must know how the output changes with respect to each variable individually. This leads us to the concept of partial derivatives. The partial derivative, del y by del xi, measures how the output y changes when only the variable xi is changed while all other variables are kept fixed.
+An intuitive way to think about this is, we turn one knob at a time while freezing all the others. This is exactly what happens in neural network learning, where we adjust one weight while treating all other weights as temporarily fixed.
+Geometrically, if we have a surface such as fxy given by x2 plus y2, a partial derivative corresponds to slicing the surface along one direction and computing the slope along that slice.
+Geometrically, if we have a surface of x2, we have a surface of x2. So, if we fix y equals to 1 here, like this, we can see the values of x changing and it follows this u-shape curve which is x2.
+Now, how does fxy change when y is fixed and x is changing is given by this curve. Partial derivative is given by 2x. So, at x is equal to 1, if we draw the tangent at x equals to 1, this is the rate of change of fxy.
+Now, let's summarize the main points of fxy. Now, let's summarize the main points of this video. A derivative measures sensitivity, multivariable systems require partial derivatives, and learning in neural networks is driven entirely by these sensitivities with respect to the parameters. In the next video, we will learn about the gradient vector. Thank you.
+Thank you.

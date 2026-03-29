@@ -1,0 +1,36 @@
+Hello everyone. Welcome back to module 4 of Artificial Neural Networks. In this video, we will discuss a multi-layer perceptron.
+By the end of this video, you will be able to understand the basic structure of an MLP. You will be able to explain how feed-forward information flows in MLPs. You will also identify the key parameters of each layer. And finally, you will recognize how multiple layers combine to form complex transformations.
+So, let's start with what is a multi-layer perceptron. A multi-layer perceptron or MLP is one of the most fundamental architectures in neural networks.
+Formally, an MLP is a feed-forward neural network. It is composed of three types of layers: an input layer, one or more hidden layers and an output layer. Information flows strictly in one direction, from the input layer to the hidden layers and then to the output layer. There are no cycles and no feedback connections in an MLP.
+This one-way flow of information is what we mean by feed-forward. Let us now look more closely at what each of these layers does. The input layer simply holds the raw feature vector. No computation happens here. It only serves as a container for the data. The hidden layers are where the actual transformations occur. Each hidden layer takes the output of the previous layer and
+produces a new transformed representation. Finally, the output layer takes the last hidden representation and produces the final prediction of the network. In most standard MLPs, neurons in one layer are fully connected to neurons in the next layer. Meaning, every neuron in one layer sends its output to every neuron in the next layer. Let's look at it visually. Suppose, the output layer sends its output to every neuron in the next layer.
+Let's look at it visually. Suppose, we have a network with two inputs, X1 and X2. There is one hidden layer with three neurons, another hidden layer with three more neurons and one final output layer, Y. So, X1 would be connected to all the three neurons. Similarly, X2 would be connected to all the three neurons. These hidden layers again would be interconnected. So, X2 would be connected to all the three neurons.
+These hidden layers again would be interconnected fully. And the second hidden layer would be fully connected to the Y which is the output. So, this is what we mean by fully connected architecture. Now, let's see the parameters of an MLP. Every layer has a weight matrix and a bias vector. These parameters define the function of the output. Now, let's see the parameters of an MLP. Every layer has a weight matrix and a bias vector. These parameters define the function of the output. Now, let's see the parameters of an MLP.
+Let's see the parameters of an MLP. Every layer has a weight matrix and a bias vector. These parameters define the function which will be computed by the network. Now, let's look at a layer mathematically. Each layer performs two basic operations. First, it applies a linear transformation which is a weighted sum of the inputs plus a bias. Second, it applies a nonlinear activation function to that result.
+activation function to that result. Mathematically, we write this as z of layer L equals w times
+a coming from layer L minus 1 plus b and a equals f of z. Here, the vector a of L minus
+1 is the input to the layer. This is basically the output from the previous layer. The matrix
+w contains the weights and d contains the biases for this layer. The function f is the activation
+function. The output a of L is a new representation of the data and this output now becomes the
+input to the next layer. To make this flow more concrete, let us look at a small dimensional
+example. Suppose the input has two features x1 and x2. The first hidden layer has three
+neurons and the output layer has one neuron. In this case, the weight matrix of the first
+layer has shape 3 x 2 and its bias vector has length 3. The second layer's weight matrix has
+shape 1 x 3. Now, if we see here, the shape of the input is 2 x 1. The weight matrix here
+has a shape of 3 x 2. The first operation that we will do is w1 times x. So, shape of w1 is
+3 x 2 and shape of x is 2 x 1. Since their inner shapes are matching, we can do a dot product
+here. So, the output shape would be 3 x 1. And similarly, the shape for the bias vector is
+also 3 x 1. So, these two can be added. So, the output that is coming from this layer will have a shape
+of 3 x 1. Now, w2 has a shape of 1 x 3. So, next operation here is going to be w2 times a coming from layer 1. So, w2 has a shape of 1 x 3 and this a1 has a shape of 3 x 1. Again, we can multiply them. So, w2 has a shape of 1 x 3 and this a1 has a shape of 3 x 1. Again, we can multiply them.
+We can multiply them and the output will have a shape of 1 x 1 which is the shape of this neuron y. What this shows is that as the data moves forward through the network, the dimension of its representation can change. The network is not just classifying the data. It is reshaping the feature space itself at every layer. From a functional point of view, an MLP should
+not be thought of as one big formula. Instead, it is a composition of many simpler transformations.
+Each layer applies its own transformation and these are tagged one after another. Conceptually,
+we can write the final output as a composition of functions given by a = f f and
+so on till f . Each layer refines the representation a little further. This repeated transformation
+of representations is what gives multilayer networks their power. Now, let's summarize
+the main points of this video. A multilayer perceptron is a feed-forward network of neurons
+structured into input, hidden and output layers. Each layer performs a linear transformation
+followed by nonlinear activation. As data flows through the network, its representation is
+repeatedly transformed from layer to layer. Because of this layer transformation process,
+MLPs form the core architectural template of deep neural networks. In the next video, we'll explore
+what hidden layers actually learn and how they build powerful intermediate representations from raw input features. Thank you.

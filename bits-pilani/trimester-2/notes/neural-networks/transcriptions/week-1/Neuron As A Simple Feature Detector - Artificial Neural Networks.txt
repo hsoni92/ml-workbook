@@ -1,0 +1,32 @@
+Hello, everyone. Welcome back to Module 1 of Artificial Neural Networks. In this video,
+we will discuss how a neuron acts as a simple feature detector.
+By the end of this video, you will be able to explain how neurons act as a simple feature
+detector. You will identify the limitations of a single neuron and you will understand
+why intelligence emerges from layered network. In the previous video, we saw how the artificial
+neuron is a mathematical abstraction inspired by the biological neuron. Now, let us focus on a
+purely functional question. What does a single artificial neuron actually do? At a very high
+level, a neuron does not think, reason or make complex decisions. A single neuron performs only
+one basic operation, which is weighted evidence aggregation. Each input to the neuron contributes
+some amount of evidence. Some inputs support the activation and some suppress it. The importance
+of each input is controlled by its weight. As you can see in this diagram, the thickness of arrows
+represents the weights of the input features x1, x2 and so on. All of this is combined to form the output y. This y is the neuron trying to answer, is the total evidence strong enough for it to respond? Another very useful way to view a neuron is as a pattern detector. The set of weights inside a neuron defines a kind of template or signature that the neuron is sensitive to.
+When an input, here x1, x2 arrives, the neuron effectively compares the input pattern. When an input, here x1, x2 arrives, the neuron effectively compares the input pattern with this internal template, which are the weights w1, w2 and so on. If the input matches the template well, the neuron produces a strong response. If the match is weak, the neuron stays mostly inactive. So, the neuron is constantly answering a similarity type question. How similar is the input?
+Miller is the current input to the pattern that I am looking for. This is why neurons are often
+interpreted as feature detectors. Each neuron becomes sensitive to one specific kind of pattern
+present in the data. And this pattern itself is not hand-designed. It will later be learned from
+data during the training process. At this stage, what is important is this intuition. A single
+neuron specializes in detecting one kind of simple pattern. Now, we arrive at a very important
+limitation. Because a single neuron can detect only one simple pattern, it has extremely limited
+expressive power. Real-world data such as images, speech, text and user behavior, they contain highly
+complex multi-level structures. One neuron cannot capture this complexity. The real power of neural
+networks comes from combining many neurons arranged into layers and trained together end-to-end using
+the data. In a network, simple patterns detected by early neurons are combined by later neurons to form
+more complex patterns. This layered composition is what produces hierarchical representations.
+So, intelligence and neural networks does not come from any single neuron. It emerges from the interaction
+of many simple neurons organized in layers. Now, let us summarize the main points of this video.
+A single artificial neuron performs weighted evidence aggregation. It acts as a simple pattern
+detector, not as a complete decision-making system. The pattern it detects is fully determined by its
+weights. Because of this, a single neuron can capture only very simple structures in the data.
+The real representational power of neural networks arises when many such neurons are organized into layers
+and trained together. In the next video, we will take this intuition forward and see how weights, bias and layers
+come together to form full feed-forward neural networks. Thank you.

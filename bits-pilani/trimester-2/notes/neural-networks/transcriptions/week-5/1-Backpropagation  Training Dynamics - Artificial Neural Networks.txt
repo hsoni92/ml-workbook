@@ -1,0 +1,32 @@
+Hello everyone. Welcome to module 5 of Artificial Neural Networks. In this module, we will study backpropagation and training dynamics.
+So far in this course, you have learned how neural networks are structured and how they compute outputs using a forward pass. You now understand MLPs, hidden layers and activation functions.
+But one fundamental question has not yet been answered. How does a neural network improve itself using data?
+In other words, when a network makes a mistake, how does it know what went wrong and what exactly needs to be changed inside the network?
+This question is the central focus of this entire module.
+The whole idea behind training a neural network model is to adjust its internal parameters, i.e. weights and biases, so that the predictions become better.
+Training involves the following steps.
+We start with the forward pass, which we already know now.
+In forward pass, we compute the predictions from the model.
+Next step is loss computation, which involves comparing the predictions with the reality.
+This tells us about the error that the model is making.
+After this, we compute the gradients of the parameters to determine how much each parameter is contributing to the error.
+And then we correct or improve the parameters gradually.
+This mathematical process that makes this possible is called backpropagation.
+Backpropagation tells us how responsibility for error is distributed across the entire network.
+So, what are we going to cover this week?
+This week, we will study the mechanics of learning in neural networks.
+We will learn what backpropagation actually computes.
+How gradients flow through multiple layers.
+Why the initial values of weights matter so much for stability.
+How different loss functions influence learning behavior.
+Why do deep networks suffer from vanishing and exploding gradients.
+And how these problems can be diagnosed and mitigated in practice.
+This module is where the mathematics behind learning truly begins.
+There is an important conceptual transition happening here.
+In earlier modules, our focus was on network structure, representations and forward computation.
+In this module, the focus shifts to adaptation, learning and optimization.
+You will now connect forward computation, error signals and gradient based parameter updates into a single unified learning process.
+In the very next video, we will answer a precise and important question.
+What does backpropagation actually compute?
+See you in the next video.
+Thank you.

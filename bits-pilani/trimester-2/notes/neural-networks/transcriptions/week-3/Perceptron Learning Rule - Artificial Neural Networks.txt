@@ -1,0 +1,42 @@
+Hello everyone. Welcome back to Module 3 of Artificial Neural Networks. In this video, we will discuss the Perceptron Learning Rule. By the end of this video, you will be able to explain why a learning rule is needed to adjust weights and bias from data. Define the classification error condition for a Perceptron.
+You will be able to apply the Perceptron weight and bias update equations and finally understand the convergence behavior and key limitations of the learning rule. In the previous videos, we defined the Perceptron model and understood it as a linear classifier. But the model alone is not sufficient. The Perceptron contains parameters, the weights and the bias, and these parameters are not known in advance.
+We need a systematic way to determine these parameters from the data. This process of automatically adjusting parameters based on the examples is what we call learning. So, the central goal of the learning rule is simple. Adjust the weights and bias so that the Perceptron correctly classifies the training data.
+Let us now formalize the training setup. We are given a training dataset consisting of input label pairs x_i y_i for i in the range of 1 to n. Each input x_i is a feature vector and each label y_i takes one of the two values, either +1 or -1. For each training example, the Perceptron computes a prediction y_i hat.
+Learning is driven by comparing this prediction with the true label y_i. If they match, nothing needs to be done. If they do not match, the model must update itself. The Perceptron makes a prediction using y_i hat equals sin . A convenient mathematical way to express whether a mistake has occurred is via the condition y_i hat.
+w transpose x plus b less than equals to 0. If this expression is positive, the example
+is correctly classified. Let's say if y is positive and w transpose x plus b is also
+positive, then their dot product is going to be positive. And when y is negative,
+and this is positive, then the dot product is going to be negative. This means in the case of negative,
+the example is misclassified. Only in such kind of cases, we perform an update. This makes the
+perceptron learning rule mistake driven rather than continuously optimizing. When a mistake occurs,
+the perceptron updates its parameters using the following simple rule. W becomes w plus eta times
+y x and b becomes b plus eta times y. Here, eta is a positive scalar called the learning rate,
+which controls the size of the update. The update depends on three things, the current input x,
+the true label y and the current parameter values. Importantly, updates happen only when the model
+makes a mistake. To understand why this update makes sense, consider the two possible error cases.
+If a positive example is misclassified as negative, then in such scenarios, y equals plus 1 and w transpose x
+plus d is less than equal to 0. So, in this cases, their dot product is going to be negative. This is the case of misclassification.
+In such cases, the update adds a positive multiple of x to the weight vector. This increases the alignment between the input and the weights, making it more likely that the example will be correctly classified next time.
+Now, consider the counter scenario where our true class label y equals to minus 1 and we predict it as positive. That means, w transpose x plus b is greater than 0. In this case also, our dot product is going to be negative.
+So, here again, like the update subtracts a multiple of x from the input vector. This reduces the alignment between the input and the weights, again pushing the decision in the correct direction.
+So, every update nudges the decision boundary in the direction that corrects the observed mistake.
+From a conceptual standpoint, learning in the perceptron can be viewed as a process of incrementally adjusting the decision boundary.
+We typically begin with random initial weights and bias, which impose an arbitrary initial boundary.
+Each time a misclassified example is encountered, the update slightly shifts and rotates this boundary.
+Over many such small local updates, the decision boundary gradually aligns itself with the structure of the data.
+Learning stops naturally when the model stops making mistakes on the training set.
+A remarkable theoretical result is associated with the perceptron learning rule.
+If the data is linearly separable, then the perceptron learning algorithm is guaranteed to converge in a finite number of updates.
+That is, it will eventually find a set of weights and bias that perfectly classify the training data.
+However, if the training data is not linearly separable, the algorithm will never fully converge.
+The weights will continue to update indefinitely because the model can never eliminate all the classification errors.
+Because of this, the perceptron lacks many of the properties required for stable optimization and probabilistic interpretation.
+These limitations will directly motivate our study of the logistic neuron in the next lesson.
+So, let's summarize the main points of this video.
+The perceptron learning rule automatically adjusts the weights and bias using label training data.
+Updates occur only when the model makes a mistake.
+The direction of the update depends on the true label of the example.
+The algorithm is guaranteed to converge only when the data is linearly separable.
+At the same time, the learning rule does not perform smooth optimization or produce probabilistic outputs.
+These limitations will lead us naturally to the logistic neuron and to more general learning algorithms.
+Thank you.

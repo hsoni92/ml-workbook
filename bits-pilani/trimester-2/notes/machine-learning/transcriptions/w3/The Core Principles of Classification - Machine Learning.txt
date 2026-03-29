@@ -1,0 +1,98 @@
+Hello to all of you. My name is Dr. Hemant Rathaur and we are in the course Machine Learning. We are discussing Module 3, Introduction to Machine Learning and today's video is on the core principles of classification.
+So the learning objective of this video is we are going to define the task in classification in Machine Learning and we are going to look into some real world applications of classification. We will look into the two crucial steps of building classification models which is training and testing and we are going to do some other details. So let's start right away.
+So in the last video we discussed about classification. The idea of classification is given x and the corresponding y where y the number of attribute values unique attribute values are finite or limited you want to build a function f such that given a new x it can do the prediction for y. So this is the basic classification.
+So classification is about prediction. It predicts a categorical class label which is discrete or nominal that means the number of values are discrete or nominal type. So we have already seen this right. So classification in formal definition would look something like this right. We start with a collection of records known as training data. Here the records means x and y right. So tabular data assuming it's a tabular data.
+So you have x1, x2, x3 and y. So all these x1, x2 and x3 are essentially x and then you have y. The task is to learn a model or a function that maps set of x to the correct label y. So x here is the attribute set.
+Essentially attribute set means it is a collection of features or characteristics of the records. And y is the class label that is called predefined category of the record belonging it to. Right. So let's break this x again. Right. So we have already discussed it. I'm just elaborating it formally as well.
+Now given a tabular data. Now given a tabular data you have many attributes and the corresponding class label we are calling all these attributes as x1, x2, x3 as x. So basically your x which is attribute set x is divided into different attributes. So the attribute set x is a collection of features x1, x2, x3 and so on that is used to describe the data or tuples.
+So the class labels. It is the input. Right. It is the input. Right. To our model. Right. And the basic idea is we want to build model as accurately as possible. So for example, I want to find out whether the customer, a particular customer will unsubscribe or not. Right. So unsubscribe or will subscribe. Or will stay.
+So the class labels. Right. So the class labels or y here are two. Stay and unsubscribe. So a customer is there on my platform. Right. There are two classes here. Whether the customer is going to stay on the platform or will unsubscribe. So my data consists of assuming it's a tabular data. It consists of some attributes.
+x1, x2, x3, x4 and y. The number of unique attribute values of y are stay, are two which
+are stay and unsubscribe. These are the two unique values of y. Stay, whether the customer
+is going to stay or is going to unsubscribe the model. What is my x1? x1 is my each. This
+particular attribute. What is x2? What is the billing amount? What is x3? How many months
+the customer was there on the platform? And x4 is how many support calls it did. So I want
+to build a classification system such that given a new customer, I can predict whether
+he is going to stay on the platform or will leave the platform.
+Then for that particular customer, I will be given his age. Let's suppose his age is 80, his bill is 50k, his number of months is
+1 and number of support calls he did was 50k. So whether he is going to stay on the platform or leave the platform. So this is how it would look like. We have seen these examples in the
+past as well. Let's see some more examples so that you can understand it better. If you look very carefully at y, which is the class
+in classification the number of values unique values of y are fixed right finite or nominal
+right so these values essentially are these categories are mutually exclusive and
+mutually exhaustive and exclusive right what do you mean by exhaustive right for every possible
+outcome fits into one of the classes right so for every given x i have the corresponding y
+in the training data right for all the x's i have the corresponding y so this is called exhaustive
+in the training data responding to all the x either corresponding y this is called exhaustive
+exclusive means right if two x's two tuples are same their class level cannot be different
+so an object cannot belong to more than one class so if you have x right you have two x's x1 and x2
+but their values are exactly same x1 and x2 the values the tuple is exactly same their class label
+cannot be different their class label cannot be different so an object cannot belong to more than
+one class so y should be exhaustive and exclusive right so now this is the problem statement we are
+discussing whether the customer is going to unsubscribe or will stay on the platform let's
+take few more examples to understand this further better so classification problem we are discussing
+application one is email categorization whether an email is a spam or no spam so this is the tabular data
+y here the number of unique values would be two and what are those values spam or no spam right so
+these will be the unique values and the column y right again when i want to build a classification system
+right this is my email one this is my email two this is my email three all these emails are explained with the help of attributes
+so assuming there are four attributes attribute one is essentially what are the words it is using what the email contains
+attribute two is the sender's id attribute three is right whether it has attachment or not
+attribute four is something else maybe port number or something else right so email one contain these words
+its center email id is this the attachment is yes or no right whether it has something else or not and whether it is classified as spam or not
+whether it is spam or not so i will have it for all the emails so this is the training data i will gather
+now what we want to do is we want to build this function f such that you are given a new x so that you can predict whether the email is spam or no spam right very simple example of classification problem
+another example tumor cell right so given an x-ray image or mra whether you can find out cancer or tumor in that image or not right so again assuming i am been given a tabular data right again the class label so here all these is my x and this is my y in this case you have all these are x attributes are x and then you have the corresponding y
+right why number of unique values are two what are the unique values malignant or benign these are exhaustive and exclusive right so x contains of attribute one attribute two attribute three attribute one is what is the size of the tumor what is the shape of the tumor what is the cell texture or density what is the boundary regulator regulatory or something like that right so these are my image one image two image three image four and i fill
+the corresponding values and y will have either m or b m or b now i want to build a function f such that if i am given a image n i can predict the class label for that right whether that image contains malignant cell or benign cell great example of classification finite number of values i am predicting another example can be an antivirus or a malware detector right so again a tabular data assuming i am given a tabular data last column is y class label
+label. This is my y. Number of unique values are 2. Number of unique values are 2. Malignant
+or benign. Malignant or benign. Attributes. And this is called x. And then you have file
+1, file 2, file 3. File 1 is defined or represented with the help of a1, a2 and a3. And its label
+is m. File 2 is defined with the help of a1, a2 and a3. And its label is b. File 3 is defined
+with the help of a1, a2, a3. And its class label is m. Now I want to build a function f such
+that you are given a new file. File new. And you predict y. Simple case of classification problem.
+So all these are examples of classification problem. Now when we are building classification
+models, its a 2 step process. It is a 2 step process. So classification process is a 2 step
+journey. Model training, model testing. Model training and model testing. What do you mean
+by model training? In model training, we are building this f. We are building this model function f. And
+in model testing, we are testing this function f. Whether it is performing good or bad. Whether
+it is evaluating, we are evaluating function f. Or model f. This is my classification model
+f. This is my classification model f. So in training phase, we are training this function f. When in testing
+phase we are testing this function f so how do we do that right so in training what we are doing
+in testing what we are doing we are going to discuss it now so think about it right how it
+would work so you are given for classification you are given x and the corresponding y this is the
+data you are given this is your data set now right as i said classification process building
+classification model is a two-step journey so in two step one step is training the model second
+step is testing the model so for training the model what you are going to do is you are going to divide
+this data set into two parts two disjoint sets one would be used for training and another one would
+be used for testing so this is more of a representation but you can do sampling without
+replacement to actually separate training data and test data so basically your original data will be
+divided into two parts training data this is called training data and this is called test data training
+data will be used to train the function f and once your f is built then you are going to use test data
+to check the performance of this function f or model f so original data will be divided into two parts
+training data test data training data will be used to train the function f test data will be used to test
+the function f right so let's talk about what we are doing in training phase step number one training
+phase in training phase right we will get the training data this is called training set or this is called test set
+so you will get the training data right so in the data set right you are having x and the corresponding y and you will use the learning algorithm classification algorithm to learn the pattern and then you will build the model f right so here you have the training data here you have variety of classification algorithms like dt rule base or etc etc and then you have build a model right so the model can be a rule rule like this if age equals to 60.
+and has loan is true and has loan is true then the class label is high right so i have built a rule to separate the classes to build a model right so i have built this rule which is essentially a model to separate the classes once that is done right once that is done then we are going to test it right so this is your original data
+original data is divided into two part this is more of a representation we do not divide it like this literally divide like this upper data is not always training lower data is not always testing this is more of a representation right so this is my train data and this is my test data
+original data is used by the learning algorithm to build a model once the model is built then you are going to apply the model on the test data think about it right in test data you do have the class labels
+you do have the class labels the original class labels but you are checking whether your model right models prediction y right is matching with the original y or not right so in this test data you have all the attributes and the corresponding y as well you forget about these these y values for a while
+you let the model you let the model do prediction and then check whether the original y and the predicted y is matching or not if it is matching right your model performance is good if the prediction you are doing is not matching with the original labels with the original label your model is of bad quality then you have to do some improvement so in testing phase right in testing phase the goal is to estimate the performance of the model accuracy is one of the performance
+performance of the model which it has never seen before that is why you have splited train data and
+test data original data into two parts train data and test data right so you've trained the model
+on the training data and test data you're testing the model on test data which model has not seen
+in the past right now use the second set of the data so data set was divided into train data test
+data first data is training data second data representation wise is the test data right so
+the test data must always be independent of training data right these two are separate disjoint sets
+if the model is already seen the training data before then this is more of a cheating think about
+it right in an exam right so i'm teaching these classes right think about it i'm teaching these
+classes if i exactly ask a question from a slide right if you have seen the slide you will be able
+to answer it this is called cheating an ideal exam should be whatever you are learning in
+the class a advance form of it or a deviation from it should be there in the question paper
+so that whatever you have learned in the class this is called testing if you are able to apply
+whatever you have learned then this is called proper testing right so how does testing work right we are
+fed only x right from the test set to the model which we have built f right so in testing phase you are only so you have x and y but you
+will only feed x to the model trained model f right the model will predict the class label right you will check whether this y is matching with the original label or not compare the model's predicted label with the true label with the original label if they are matching then the performance of the model is good the accuracy of the model is good otherwise the performance of the model is of bad quality so the final step in on the prediction is once you are satisfied that okay
+right your model is giving you right your model is giving you high performance then you can deploy this model in real world right so now when you deploy it in real world right so now when you deploy it in real world right anti-virus you have deployed in real world it will get x and then it will be used to predict y so if you deploy a cancer detection machine right an ai machine machine machine learning based machine a new image will be passed and it will predict whether that image contain cancer or not spam or not spam email or not malware or not right
+so the full view of this process is right initially you are given the whole data right label data x and the corresponding y you start with the you break this data into two parts training data and test data train data will be used to build the model then the separate test data will be used to evaluate the performance of the model if the performance of the model is good then you are going to deploy it in real world
+this is called deduction or inferencing so therefore in this video we discussed about formal understanding of classification the relationship between x and y attribute set and the class label we saw various three use cases or real world applications of classification spam detection malware detection tumor detection we looked into model training and testing and we looked into basic idea of measuring the performance we are going to continue in this
+model training and testing and we looked into the same model as well take care bye bye bye

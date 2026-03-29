@@ -1,0 +1,366 @@
+Hello to all of you. My name is Dr. Hemant Rathar and we are in the course Machine Learning. Today,
+we are going to start with Module 4 Supervised Learning focusing on Decision Trees. Today's topic
+is Introduction to Decision Trees. So the learning objective of this video is, first we will try
+to understand what is Decision Tree and why they are so popular. Then we are going to look
+into different core components of Decision Tree like root nodes, Decision nodes, branches
+and leaf nodes. And then we are going to understand the difference between Tree Induction and Tree
+and Tree Induction. So let's start right away. We are in the course Machine Learning. So Machine
+Learning, if you look, is broadly divided into two categories of Algorithm. Supervised Learning
+and Unsupervised Learning. In Supervised Learning, we are given X data set and the corresponding
+labels Y. So we are given a training data set where we have X as well as Y. The aim is to
+be a model where given test data which contains only X. We can predict this Y. Now if you look
+broadly into Supervised Learning, there are two categories of Algorithm. One is called Classification.
+And another one is called Regression. In classification, this Y is a categorical value. That means if we are predicting a class label, then it is pre-categorical.
+If we are predicting a class label, then it is called classification. If we are predicting a continuous value, then it is called regression. On the other hand, in unsupervised learning, the idea is that given X, no Y, no class labels. Given training data X, we want to understand the structure and pattern in X. Right? Now, in unsupervised learning, there are various kinds of Algorithm like clustering,
+association rule mining, association rule mining. All these we are going to discuss in this course. Today, we are going to start in supervised learning, focusing on classification. And in classification, we will start with an algorithm called decision trees. DT. So, as I said, in classification, right? Classification is a type of supervised learning where the task
+is to predict a categorical label a class label. So in classification we are given data
+and a corresponding class label and we will train a model. Once the model is trained given
+x where we do not know the class label it will predict the class label. So the classification
+model is used to predict labels for unseen or new data. If you want to have an analogy
+it is just like putting items in a predefined buckets or bits. For example apple go in a
+particular bin, orange goes in another particular bin and banana also goes in a particular bin.
+So depending on your test sample. So if test sample is apple it should go in bin 1. If it is your test sample is orange then it should definitely go in bin 2. So you have created
+these bins. These bins are essentially our class labels. Now classification has huge number of
+applications. A simple example can be spam detection in emails. So assuming you are using gmail and
+the email is arrived in your email box. Now gmail will scan and will find out whether that particular email is a spam or non-spam.
+This is a classification problem. You have two classes spam and non-spam based on the header of the email. Either it will be labeled as spam or non-spam.
+Another example can be loan application. So you go to a bank with a loan application and the bank will declare you as a default or a no-default case.
+So these are different applications of classification in various domains. Now let me start discussing decision tree particularly in case of classification. Now when we look into decision tree they are very similar to how humans take decision. For example let's suppose you want to purchase a laptop.
+you want to purchase a laptop and you go to amazon to purchase that particular laptop now on amazon
+there are roughly 400 or 500 laptops listed which particular laptop you want to purchase or you
+should purchase is a problem now how do you rationally think and decide on a particular
+laptop that you want to purchase so it is very similar to how decision trees are made for example
+now before purchasing a laptop you will look into the criterias which are important for you to
+purchase the laptop for example maybe you are looking the criteria the most important criteria
+for choosing a laptop is processor so this is your criteria right there are thousands of laptop 500
+laptop which is the most important criteria to choose a particular laptop for according to your case
+maybe it is a processor the second important criteria or a feature we call it in classification is let's
+suppose ram what is the size of the ram third important criteria let's suppose is the disk
+the fourth important criteria is the gpu so now laptops can have various features various properties
+according to you these are the one two three four most important criteria for selecting the laptop so
+how you are going to select the laptop when you go to amazon website you are going to select right let's
+suppose you are looking for processor i7 so you are going to select those laptop where processor is i7
+right so the guys the laptops with processor i7 will be listed or towards the left in yes and the machines the
+laptops where the processor is not i7 will be lifted or towards the right now this set you are not going
+to explore because you want laptop with i7 processor okay so once you have selected i7 then you are looking
+for the second most important criteria for you is the ram so let's suppose you are looking for ram of 64 gb
+so then again you can put a condition if the laptop has particular laptop has ram of 64 gb right again two cases some laptops will have ram
+equal to 64 gb and some laptops will have ram not equal to 64 gb those will come towards the right and we are not
+considering them they are not important for you so now again the laptops where processor is i7 with ram 84 gb is now listed here
+again the third most important criteria for you is hgd disk let's suppose you are looking for hgd of one team
+so again you are going to select laptops with one tb disk right some laptops will have one tb disk some
+laptops will not have one tb disk so those you are not going to explore and finally you're going to arrive here
+so if you look very closely here essentially you have built a tree right you first look for processors
+then you look for ram then you look for disk and this is how you shortlist one laptop which you have going to purchase in the future
+so laptop purchase and the way you think human take decision is very similar to how decision trees also work
+another application of decision trees loan application so today if you want to get some loan from a bank you fill an application and go to a counter a bank counter on the other side there is a human sitting and that who will look into your application and will approve loan yes or no so we can remove human here from the bank account and that who will look into your application and will approve loan yes or no so we can remove human here from the bank account and that who will look into your application and will approve loan yes or no so we can
+remove human here from the bank account and replace it with an ai system with a decision tree how now decision tree will work think about it right so you have written a loan application now the most important criteria for bank to decide whether the loan should be approved or disapproved let's suppose is whether you are earning salary or not whether you are a salaried person or not so
+So when you submit your application, in the application the first thing that will be checked
+is whether you are a salaried person or not.
+So I say yes or I say no.
+If you are a salaried person then the bank is checking whether your last year ITR is
+greater than 10 lakh or not.
+So I can put a condition ITR greater than 10 lakh.
+If the ITR value is greater than 10 lakh the bank approved the loan.
+So now you have the class label otherwise bank reject the loan.
+Similarly on the no side again bank might cite a criteria if your ITR is greater than 20 lakh.
+If greater than 20 lakh approves the loan or rejects the loan.
+So this is how bank might evaluate your application.
+If you look very carefully it is a decision tree.
+It is a tree like structure which is helping bank to evaluate your application and say yes
+or no, approve or reject to it.
+So human driven thinking is very similar to how decision trees also work.
+If you look into decision tree it has broadly two parts.
+Leaf nodes.
+Leaf nodes.
+Leaf nodes.
+Leaf nodes.
+These are my leaf nodes.
+In decision tree leaf nodes are typically class labels.
+Right.
+So approve, reject a particular laptop or no.
+Right.
+So you can see on the leaf node.
+Right.
+So you have the labels and then you have non leaf nodes.
+Right.
+Which are decision points.
+For example this is a decision point.
+This is another decision point.
+This is another decision point.
+This is another decision point.
+In earlier case also.
+Right.
+All the non leaf nodes were decision points.
+So in decision tree there are two types of nodes.
+Non leaf nodes and leaf nodes.
+Non leaf nodes are decision points and leaf nodes are essentially your class label.
+Now these nodes are connected with branches.
+And in branches essentially you are writing what you are writing?
+Essentially you are writing attribute value.
+We will talk about that also in a minute.
+So just to recap what we discussed decision tree is a very powerful and widely known machine
+learning algorithm for classification and prediction task.
+Its structure is just like a tree.
+A flow chart where basically it is very easy to understand the flow chart.
+The model learns the hierarchy of question.
+The decision tree model learns the hierarchy of question based on the data.
+Right.
+And will answer based on the final path which is followed to do the prediction.
+Right.
+So this is a decision tree.
+As I said decision tree is a tree like structure where you have non leaf nodes and leaf nodes.
+Leaf nodes are essentially your decision points and leaf nodes are your basically class labels.
+Now why decision tree are very popular?
+Because of two major reasons.
+One is they are white box model.
+What do you mean by white box model?
+They are very easy to interpret.
+Another way of saying it that if I reach this point.
+If I reach this point.
+I started from root and I have reached this point.
+Right.
+I can trace back the path.
+I can trace back the path.
+And I can tell exactly why I approved the loan or why I rejected the loan.
+For example.
+Let's take this case.
+Right.
+Let's suppose I started from root of the tree and I reached the approved.
+Now I have traversed this path.
+So it is transparent to user as well as other stakeholders.
+How do I arrived at this approved?
+Right.
+I started with salary.
+I checked the salary.
+Salary was yes.
+Then I checked ITR.
+ITR was greater than 10k.
+It was again yes.
+Then I reached here.
+So I can trace back the path from which I have arrived at a particular decision.
+And that makes our decision tree white box model.
+Right.
+Very easy to interpret.
+That also means that we can literally trace how the path, how a particular prediction was
+made and what path was followed.
+Another reason why decision tree is very popular is they are very easy to set up.
+They require minimum data pre-processing as compared to other classification algorithms.
+So as we were discussing decision trees will have two major components.
+Non-leaf nodes and leaf nodes.
+Right.
+So non-leaf nodes will have again two types.
+One is called root node which is the head of the decision tree and all the other non-leaf
+nodes are called internal nodes.
+All root node as well as internal nodes are decision points where you write attributes to take a
+particular decision.
+Attribute along with a condition to take a particular decision.
+Then you have branches that connects different leaf nodes and non-leaf nodes.
+You have branches all as well as edges.
+Edges are essentially your particular attribute value.
+And then you have leaf nodes.
+At the bottom of the decision tree or bottom of the tree which contains the glass label.
+Now as I said decision tree actually requires two phases for building the model.
+One it is called induction and another one is called deduction.
+So there are two phases in decision tree.
+Decision tree induction and decision tree deduction.
+Induction focuses on how we are building the tree in the training phase.
+And deduction essentially is once your tree is built how it is used to do the final prediction
+for the unlabeled data for the test data.
+So decision tree induction as I am talking about is essentially talking about training phase.
+How do you build a tree?
+So given a tabular data assuming I have a tabular data like this.
+By looking at the data right how can I build a tree a decision tree will fall under decision
+tree induction phase where we are learning to how we are building the model.
+And then we have deduction phase.
+In deduction phase once you have built the model once you have built the decision tree given
+unlabeled data where we do not have the class label I am using decision tree to do the prediction
+for me and this is called deduction.
+So once your decision tree is built it is used to apply on the test data set to do the
+prediction.
+And this is called deduction.
+So decision tree building is called induction.
+Using decision tree to do prediction is called deduction.
+So how do we do that?
+I will talk very broadly now and we will have at least three more lectures for them focusing
+on how do we build the decision tree.
+But let me talk about this very broadly.
+Let's suppose we are building a tax evasion prediction system.
+So for example let's suppose ITR department income tax department in this country is logging details
+of all the people who are filing ITR.
+Right?
+So this is person 1, this is person 2, this is person 3, this is person 4 and so on.
+So it is representing a particular person with 3 attributes assuming these 3 attributes are
+refund, marital status and taxable income.
+And based on the previous year's data they have labelled the data saying that this particular
+case customer number 1 or person number 1 has cheated or not cheated.
+So there are 2 class labels here.
+Yes and no.
+Right?
+So it is a binary classification problem.
+I am predicting only 2 classes either yes or no.
+Whether a person has cheated or not cheated.
+So each person is defined or represented with the help of 3 attributes.
+Refund, marital status and taxable income.
+And the class label based on the historical data I am able to label that data saying that
+some people have cheated some people have not cheated.
+For example if you look very careful at this refund attribute.
+It is a categorical attribute with 2 unique attribute values.
+Yes and no.
+There are 2 values only 2 values for refund.
+Similarly if you look into marital status attribute or feature.
+Again it is a categorical feature or attribute with 3 unique attribute values.
+Single, married and divorced.
+And the third one taxable income is a continuous attribute.
+Where I can have infinite number of values which are defining which are essentially used to measure taxable income.
+And then class labels are again unique 2 values yes and no.
+Now given this sort of a data.
+I have been given this training data.
+Now I want to build a model.
+Decision tree model.
+Such that given unlabeled data where I do not know the class labels.
+Can I do the prediction.
+Right.
+So this is what we want to achieve.
+So can we build a decision tree.
+Yes we can build a decision tree.
+And now we are going to build a decision tree.
+So once we are given the data set.
+The process of building the tree is called decision tree induction.
+And now we are doing decision tree induction.
+So the basic idea of building the decision tree is.
+You are going to choose an attribute and split based on that attribute.
+You are going to choose an attribute based on that.
+You are going to split the values the samples.
+Such that the resultant child nodes are pure in nature.
+Again we will discuss in very much detail in next video.
+But I am just introducing the term.
+So initially you have samples of both yes class and no class.
+Red class and blue class.
+The aim is you are going to choose an attribute here.
+Such that the resultant child nodes are homogeneous in nature.
+Are pure in nature.
+That means they should have samples of only one class.
+So let me start building the decision tree.
+Assuming someone has given me this doubler data set we saw.
+For tax evasion prediction.
+Right.
+So someone has given me this data set.
+Now let me build the decision tree.
+So how do we build the decision tree.
+The process is called induction.
+And out of three attributes.
+I am going to choose one attribute.
+To start building the tree.
+Right.
+So assuming someone has told me refund is the best attribute.
+Later on we are going to discuss how refund was chosen.
+Assuming someone told me that refund is the best attribute.
+And let's build the tree based on that.
+So refund will come at the root node.
+Refund will come at the root node.
+Now refund can have two unique attribute values.
+Yes and no.
+Right.
+So refund equals to yes.
+Class label is no.
+Refund equals to yes.
+Class label is no.
+Refund equals to yes.
+Class label is no.
+Refund equals to yes.
+Class label is no.
+So if refund value is no.
+Then the class label is no.
+So this is my leaf node.
+And refund is my non-leaf node.
+Now if refund value is no.
+Then the class label is no.
+Refund value is no.
+Class label is no.
+Refund value is no.
+Class label is yes.
+Class label is yes.
+So I do not know.
+If refund value is no.
+It can be no class label.
+It can also be yes class label.
+We do not know.
+Final prediction if we take refund value equals to no.
+So what we have to do.
+Again we are going to split the record based on another attribute.
+So assuming someone told me that second best attribute in this case is marital status.
+So when we look into marital status again three unique values.
+Single, married and divorced.
+Let's suppose I clubbed single and divorced in one bucket and married in second bucket.
+Refund equals to yes.
+We can directly reach here.
+And refund equals to no.
+Right.
+I am going to check marital status.
+If the marital status is single or married.
+If marital status is married.
+The class label is no.
+If the marital status is married.
+Class label is no.
+If the marital status is married.
+Class label is no.
+If the marital status is married.
+Class label is no.
+So I arrived at a decision point.
+Assuming here also I split based on another attribute taxable income.
+And then I put two attribute values.
+80K and 80K to do the final prediction.
+So this is how we are going to build the tree.
+Again we are going to discuss this construction in much more detail.
+But this is the step by step process of how to visualize decision tree induction process happening.
+So once my decision tree is built.
+Then I am going to use it for doing the prediction for the unlabeled data.
+So let's suppose someone has given me this test data.
+Where I do not know the class label.
+I want to do the prediction for this based on this decision tree.
+So how I am going to do that.
+I am going to start from the root node.
+So first attribute here is refund.
+What is the refund value.
+Refund value is no.
+In this particular test sample.
+So I move towards the right.
+Because no is towards the right.
+Then I check the marital status.
+Marital status in the text sample is.
+Test sample is married.
+So again I move towards the right.
+This particular attribute value.
+And I reach the class label no.
+So for this particular test sample.
+The final prediction will be no.
+This is how we arrive at during deduction.
+We traverse the root tree from the root node.
+And we will reach try to the leaf node.
+Whatever is the class label in the leaf node.
+Would be the prediction done for that particular test sample.
+So this is exactly what we did.
+We are following this path through the prediction.
+So for this particular sample.
+The class label would be predicted as no.
+So therefore in this video.
+We discussed.
+Right.
+Decision tree is a very intuitive wide box model.
+Which behaves.
+Which works like a tree like structure.
+We looked into different core components of decision tree.
+Like root nodes.
+Decision nodes.
+And branches.
+We looked into.
+How we are going to split the nodes.
+And we looked into.
+What is the process of induction.
+As well as what was the process of deduction.
+We are going to continue on decision tree.
+In next few videos as well.
+Thank you for attending.
+Take care.
+Bye bye.

@@ -1,0 +1,12 @@
+Hello everyone. Welcome to module 3 of Artificial Neural Networks. This module is about Perceptron and Logistic Neuron.
+In the previous module, we focused entirely on the mathematical foundations of learning, vectors, derivatives, gradients, chain rule and numerical stability.
+In this module, we now move from pure mathematics to the first actual neural models. We will study two fundamental building blocks of neural networks, the Perceptron and the Logistic Neuron or the Sigmoid Neuron.
+These are the simplest units that perform real decision making in neural systems.
+You will first learn how the Perceptron works as a linear classifier and how its decisions can be understood geometrically through decision boundaries.
+You will then study how the Perceptron learns from the data, followed by the idea of linear separability and the famous Zor problem, which reveals a fundamental limitation of single layer models.
+After that, we will introduce the Logistic Neuron, which produces smooth probabilistic outputs.
+Together, these ideas will explain why multilayer neural networks are necessary.
+This module forms the bridge between the mathematical tools you have already learned and the multilayer neural networks we will study later.
+Once you understand the perceptron and the logistic neuron, the transition to deeper networks becomes conceptually natural and well motivated.
+See you all in the next video. Thank you.
+Thank you.
