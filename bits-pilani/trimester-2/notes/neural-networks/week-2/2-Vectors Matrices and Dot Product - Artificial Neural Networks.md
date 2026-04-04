@@ -101,9 +101,11 @@ w_{m1} & w_{m2} & \cdots & w_{mn} \end{bmatrix}
 ### Algebraic Definition
 
 For vectors $\mathbf{x}$ and $\mathbf{w}$ of the same length $n$:
+
 $$
 \mathbf{x} \cdot \mathbf{w} = \sum_{i=1}^{n} x_i w_i
 $$
+
 - **In words:** Multiply corresponding elements and sum the results.
 - **Output:** Always a **single scalar**, regardless of dimension.
 
@@ -140,10 +142,8 @@ $$
 
 ### Full Neuron Computation
 
-In practice we add a **bias** term:
-$$
-z = \mathbf{x} \cdot \mathbf{w} + b
-$$
+In practice we add a **bias** term: $z = \mathbf{x} \cdot \mathbf{w} + b$
+
 - **Dot product** → measures **similarity** (alignment) between input and weights.
 - **Bias** → shifts the point at which the neuron starts to activate.
 - **Together** → they give the **raw decision signal** $z$, which is then passed through an **activation function** to produce the final (often non-linear) output.

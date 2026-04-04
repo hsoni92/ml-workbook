@@ -50,10 +50,8 @@ Each of these can cause numerical problems on its own; **together** they make st
 
 ## Unstable Expression: Sum of Exponentials
 
-A very common unstable expression is:
-$$
-\sum_i e^{z_i}
-$$
+A very common unstable expression is: $\sum_i e^{z_i}$
+
 - If **one** $z_i$ is large → $e^{z_i}$ can **overflow**.
 - If **all** $z_i$ are very negative → all $e^{z_i}$ can **underflow** to zero.
 - This expression appears inside **probability** computations (e.g. softmax), so it **must** be handled carefully.

@@ -28,10 +28,8 @@ By the end of this video you will:
 
 ## Softmax Definition
 
-For logit vector $\mathbf{z} = (z_1, \ldots, z_K)$, the softmax output for class $i$ is:
-$$
-p_i = \frac{e^{z_i}}{\sum_{j=1}^{K} e^{z_j}}
-$$
+For logit vector $\mathbf{z} = (z_1, \ldots, z_K)$, the softmax output for class $i$ is: $p_i = \frac{e^{z_i}}{\sum_{j=1}^{K} e^{z_j}}$
+
 **Properties:**
 
 - Every output is in $(0, 1)$.

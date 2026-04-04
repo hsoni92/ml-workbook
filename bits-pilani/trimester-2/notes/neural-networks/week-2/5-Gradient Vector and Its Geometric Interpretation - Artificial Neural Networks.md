@@ -21,10 +21,8 @@ By the end of this video you will:
 
 ## Definition of the Gradient Vector
 
-For a function $f(x_1, x_2, \ldots, x_n)$, the **gradient vector** is:
-$$
-\nabla f = \left( \frac{\partial f}{\partial x_1},\ \frac{\partial f}{\partial x_2},\ \ldots,\ \frac{\partial f}{\partial x_n} \right)^T
-$$
+For a function $f(x_1, x_2, \ldots, x_n)$, the **gradient vector** is: $\nabla f = \left( \frac{\partial f}{\partial x_1},\ \frac{\partial f}{\partial x_2},\ \ldots,\ \frac{\partial f}{\partial x_n} \right)^T$
+
 - Each **component** is the partial derivative with respect to one variable.
 - So the gradient tells us, in **one vector**, how sensitive the function is to **every** variable at once.
 - The gradient has **dimension $n$**, same as the input — this is convenient both mathematically and in code.
@@ -46,10 +44,8 @@ $$
 $$
 \frac{\partial f}{\partial x} = 2x,\qquad \frac{\partial f}{\partial y} = 2y
 $$
-So:
-$$
-\nabla f = (2x,\ 2y)^T.
-$$
+So: $\nabla f = (2x,\ 2y)^T.$
+
 - At $(1, 1)$: $\nabla f = (2, 2)^T$. To move **upwards** in the steepest way, we move in the direction of $(2, 2)$ — i.e. **along the gradient**.
 
 ---

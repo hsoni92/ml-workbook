@@ -25,10 +25,8 @@ By the end of this video you will:
 - $u = 3x$
 - $y = u^2$ (so $y$ depends on $x$ only through $u$).
 
-We want $\frac{dy}{dx}$. We **cannot** differentiate $y$ directly with respect to $x$ because $y$ is given in terms of $u$. So we use the **chain rule**:
-$$
-\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}
-$$
+We want $\frac{dy}{dx}$. We **cannot** differentiate $y$ directly with respect to $x$ because $y$ is given in terms of $u$. So we use the **chain rule**: $\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$
+
 Sensitivity **flows** from $y$ → $u$ → $x$.
 
 - $\frac{du}{dx} = 3$, $\frac{dy}{du} = 2u$ ⇒ $\frac{dy}{dx} = 2u \cdot 3 = 6u = 18x$.
@@ -64,10 +62,7 @@ $$
 - $u = w_1 x + b_1$ ⇒ $\frac{du}{dx} = w_1$ ($b_1$ constant).
 - $y = u^2$ ⇒ $\frac{dy}{du} = 2u$.
 
-So:
-$$
-\frac{dy}{dx} = 2u \cdot w_1.
-$$
+So: $\frac{dy}{dx} = 2u \cdot w_1.$
 ### 2. $\frac{dy}{dw_1}$
 $$
 \frac{dy}{dw_1} = \frac{dy}{du} \cdot \frac{du}{dw_1}
@@ -75,10 +70,7 @@ $$
 - $\frac{du}{dw_1} = x$ (treat $x$, $b_1$ constant).
 - $\frac{dy}{du} = 2u$.
 
-So:
-$$
-\frac{dy}{dw_1} = 2u \cdot x.
-$$
+So: $\frac{dy}{dw_1} = 2u \cdot x.$
 ### 3. $\frac{dy}{db_1}$
 $$
 \frac{dy}{db_1} = \frac{dy}{du} \cdot \frac{du}{db_1}
@@ -86,10 +78,7 @@ $$
 - $\frac{du}{db_1} = 1$ (only $b_1$ varies).
 - $\frac{dy}{du} = 2u$.
 
-So:
-$$
-\frac{dy}{db_1} = 2u.
-$$
+So: $\frac{dy}{db_1} = 2u.$
 ---
 
 ## Pattern and Extension to Deep Networks
