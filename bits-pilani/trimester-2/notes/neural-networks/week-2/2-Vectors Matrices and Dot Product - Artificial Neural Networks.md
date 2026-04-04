@@ -29,12 +29,12 @@ Inputs, weights, activations, outputs, and gradients are all represented with th
 
 A **vector** is an **ordered list of numbers**, usually represented as a **column** of values.
 
-**Example:** \( \mathbf{x} = \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix} \) can represent an input vector.
+**Example:** $`\mathbf{x} = \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix}`$ can represent an input vector.
 
 ### Notation and Shape
 
-- **Notation:** \( \mathbf{x} \in \mathbb{R}^n \) means the vector has \( n \) real-valued components.
-- **Shape:** \( n \times 1 \) (n rows, 1 column).
+- **Notation:** $\mathbf{x} \in \mathbb{R}^n$ means the vector has $n$ real-valued components.
+- **Shape:** $n \times 1$ (n rows, 1 column).
 
 ### Where Vectors Appear in Neural Networks
 
@@ -56,14 +56,14 @@ A **matrix** is a **two-dimensional** collection of numbers arranged in **rows a
 
 **Example (weight matrix):**
 
-\[
+```math
 \mathbf{W} = \begin{bmatrix} w_{11} & w_{12} & \cdots & w_{1n} \\
 w_{21} & w_{22} & \cdots & w_{2n} \\
 \vdots & \vdots & \ddots & \vdots \\
 w_{m1} & w_{m2} & \cdots & w_{mn} \end{bmatrix}
-\]
+```
 
-- **Notation:** \( \mathbf{W} \in \mathbb{R}^{m \times n} \) → \( m \) rows, \( n \) columns.
+- **Notation:** $\mathbf{W} \in \mathbb{R}^{m \times n}$ → $m$ rows, $n$ columns.
 - **Role in neural networks:** Matrices most commonly store the **weights** that connect **one layer of neurons to the next**.
 
 ---
@@ -85,7 +85,7 @@ w_{m1} & w_{m2} & \cdots & w_{mn} \end{bmatrix}
 
 **Rule:** For a valid computation, **dimensions must align**.
 
-- If **input vector** has shape \( n \times 1 \) and **weight matrix** has shape \( m \times n \), their product has shape **\( m \)** (one value per output neuron).
+- If **input vector** has shape $n \times 1$ and **weight matrix** has shape $m \times n$, their product has shape **$m$** (one value per output neuron).
 - If shapes do **not** align, the computation is **invalid** and will fail in code.
 - **In practice:** Many implementation bugs in neural networks come from **shape mismatches**. Always track:
   - Input dimensionality
@@ -100,39 +100,39 @@ w_{m1} & w_{m2} & \cdots & w_{mn} \end{bmatrix}
 
 ### Algebraic Definition
 
-For vectors \( \mathbf{x} \) and \( \mathbf{w} \) of the same length \( n \):
+For vectors $\mathbf{x}$ and $\mathbf{w}$ of the same length $n$:
 
-\[
+$$
 \mathbf{x} \cdot \mathbf{w} = \sum_{i=1}^{n} x_i w_i
-\]
+$$
 
 - **In words:** Multiply corresponding elements and sum the results.
 - **Output:** Always a **single scalar**, regardless of dimension.
 
 ### Numerical Example
 
-- \( \mathbf{x} = [2,\ 1,\ -1]^T \), \( \mathbf{w} = [3,\ -2,\ 4]^T \)
-- \( \mathbf{x} \cdot \mathbf{w} = 2(3) + 1(-2) + (-1)(4) = 6 - 2 - 4 = 0 \)
+- $\mathbf{x} = [2,\ 1,\ -1]^T$, $\mathbf{w} = [3,\ -2,\ 4]^T$
+- $\mathbf{x} \cdot \mathbf{w} = 2(3) + 1(-2) + (-1)(4) = 6 - 2 - 4 = 0$
 
 ### Geometric Interpretation
 
-\[
+$$
 \mathbf{x} \cdot \mathbf{w} = \|\mathbf{x}\| \,\|\mathbf{w}\| \cos\theta
-\]
+$$
 
-- \( \theta \) = angle between the two vectors.
-- \( \cos\theta \) measures **alignment**:
+- $\theta$ = angle between the two vectors.
+- $\cos\theta$ measures **alignment**:
   - **Same direction** → dot product **large and positive**.
   - **Opposite direction** → dot product **large and negative**.
   - **Perpendicular** → dot product **zero**.
 
 ### Worked Examples (2D)
 
-| \( \mathbf{x} \) | \( \mathbf{w} \) | \( \mathbf{x} \cdot \mathbf{w} \) | Interpretation |
+| $\mathbf{x}$ | $\mathbf{w}$ | $\mathbf{x} \cdot \mathbf{w}$ | Interpretation |
 |------------------|------------------|------------------------------------|----------------|
-| \( (2, 2) \)     | \( (3, 3) \)     | \( 2(3)+2(3)=12 \)                 | Same direction (angle 0°) |
-| \( (2, 2) \)     | \( (-3, -3) \)   | \( 2(-3)+2(-3)=-12 \)              | Opposite direction (180°) |
-| \( (1, 0) \)     | \( (0, 1) \)     | \( 1(0)+0(1)=0 \)                  | Perpendicular (90°) |
+| $(2, 2)$     | $(3, 3)$     | $2(3)+2(3)=12$                 | Same direction (angle 0°) |
+| $(2, 2)$     | $(-3, -3)$   | $2(-3)+2(-3)=-12$              | Opposite direction (180°) |
+| $(1, 0)$     | $(0, 1)$     | $1(0)+0(1)=0$                  | Perpendicular (90°) |
 
 ---
 
@@ -146,13 +146,13 @@ For vectors \( \mathbf{x} \) and \( \mathbf{w} \) of the same length \( n \):
 
 In practice we add a **bias** term:
 
-\[
+$$
 z = \mathbf{x} \cdot \mathbf{w} + b
-\]
+$$
 
 - **Dot product** → measures **similarity** (alignment) between input and weights.
 - **Bias** → shifts the point at which the neuron starts to activate.
-- **Together** → they give the **raw decision signal** \( z \), which is then passed through an **activation function** to produce the final (often non-linear) output.
+- **Together** → they give the **raw decision signal** $z$, which is then passed through an **activation function** to produce the final (often non-linear) output.
 
 So: **similarity** (dot product) + **sensitivity** (bias) control every neuron’s decision.
 
