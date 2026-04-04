@@ -42,22 +42,22 @@ This is exactly what a **gradient** (partial derivative of the error w.r.t. that
 
 ## Interpreting the Gradient
 
-For a parameter \( \theta \):
+For a parameter $\theta$:
 
-- **Positive gradient:** Increasing \( \theta \) **increases** the error → we should **decrease** \( \theta \) (move opposite to the gradient).
-- **Negative gradient:** Increasing \( \theta \) **decreases** the error → we should **increase** \( \theta \).
-- **Zero gradient:** \( \theta \) has no local effect on the error.
+- **Positive gradient:** Increasing $\theta$ **increases** the error → we should **decrease** $\theta$ (move opposite to the gradient).
+- **Negative gradient:** Increasing $\theta$ **decreases** the error → we should **increase** $\theta$.
+- **Zero gradient:** $\theta$ has no local effect on the error.
 - **Magnitude:** How **strongly** the error reacts to that parameter.
 
 ---
 
 ## Simple Numerical Example
 
-- Model: \( y = wx \). Given \( x = 2 \), true \( y = 10 \). Initialize \( w = 1 \).
-- Predicted \( y = wx = 2 \). Error: \( E = (y - y_{\text{true}})^2 = (wx - 10)^2 \).
-- Gradient: \( \frac{\partial E}{\partial w} = 2(wx - 10) \cdot x = 2(wx - 10) \cdot 2 \).
-- At \( w = 1 \): \( \frac{\partial E}{\partial w} = 2(2 - 10) \cdot 2 = -32 \).
-- **Negative** → increasing \( w \) reduces error; **magnitude 32** → strong sensitivity. This one number gives both **direction** and **strength** of the update.
+- Model: $y = wx$. Given $x = 2$, true $y = 10$. Initialize $w = 1$.
+- Predicted $y = wx = 2$. Error: $E = (y - y_{\text{true}})^2 = (wx - 10)^2$.
+- Gradient: $\frac{\partial E}{\partial w} = 2(wx - 10) \cdot x = 2(wx - 10) \cdot 2$.
+- At $w = 1$: $\frac{\partial E}{\partial w} = 2(2 - 10) \cdot 2 = -32$.
+- **Negative** → increasing $w$ reduces error; **magnitude 32** → strong sensitivity. This one number gives both **direction** and **strength** of the update.
 
 ---
 

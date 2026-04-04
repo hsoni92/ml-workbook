@@ -33,7 +33,7 @@ By the end of this video you will:
 
 - **Bias** does **not** multiply inputs; it does **not** create symmetry across neurons.
 - Setting all biases to **zero** does **not** block learning or make neurons identical.
-- **\( \mathbf{b} = \mathbf{0} \)** is standard. In ReLU networks, a **small positive** bias is sometimes used to reduce dead neurons, but zero bias is fine in most architectures.
+- **$\mathbf{b} = \mathbf{0}$** is standard. In ReLU networks, a **small positive** bias is sometimes used to reduce dead neurons, but zero bias is fine in most architectures.
 
 ---
 
@@ -47,11 +47,11 @@ By the end of this video you will:
 
 ## Naive Random Initialization
 
-- Suppose \( W \sim \mathcal{N}(0, \sigma^2) \).
-- **\( \sigma \) too small:** Weighted sums shrink → activations get smaller layer by layer → **gradients vanish**.
-- **\( \sigma \) too large:** Weighted sums explode → activations become huge → **gradients explode**.
+- Suppose $W \sim \mathcal{N}(0, \sigma^2)$.
+- **$\sigma$ too small:** Weighted sums shrink → activations get smaller layer by layer → **gradients vanish**.
+- **$\sigma$ too large:** Weighted sums explode → activations become huge → **gradients explode**.
 - Naive random initialization often **fails**, especially for **deeper** networks.
-- Each layer computes \( z = \sum_i w_i x_i \); variance of \( z \) depends on number of inputs, variance of inputs, and variance of weights. Through many layers this variance is **multiplied**; without care it grows or shrinks **exponentially** → vanishing or exploding gradients.
+- Each layer computes $z = \sum_i w_i x_i$; variance of $z$ depends on number of inputs, variance of inputs, and variance of weights. Through many layers this variance is **multiplied**; without care it grows or shrinks **exponentially** → vanishing or exploding gradients.
 
 ---
 
@@ -59,8 +59,8 @@ By the end of this video you will:
 
 - Designed for **sigmoid** and **tanh** networks.
 - Chooses weight variance so that **variance is stable** across layers (forward and backward).
-- **Gaussian:** \( W \sim \mathcal{N}\big(0, \frac{1}{n_{\text{in}}}\big) \), where \( n_{\text{in}} \) = number of inputs to the layer.
-- **Uniform:** sample from \( \mathcal{U}\big(-\sqrt{\frac{6}{n_{\text{in}} + n_{\text{out}}}}, \sqrt{\frac{6}{n_{\text{in}} + n_{\text{out}}}}\big) \).
+- **Gaussian:** $W \sim \mathcal{N}\big(0, \frac{1}{n_{\text{in}}}\big)$, where $n_{\text{in}}$ = number of inputs to the layer.
+- **Uniform:** sample from $\mathcal{U}\big(-\sqrt{\frac{6}{n_{\text{in}} + n_{\text{out}}}}, \sqrt{\frac{6}{n_{\text{in}} + n_{\text{out}}}}\big)$.
 - For tanh/sigmoid, Xavier **dramatically** improves training stability. For **ReLU** networks, Xavier is **not** ideal.
 
 ---
@@ -68,7 +68,7 @@ By the end of this video you will:
 ## He Initialization
 
 - ReLU **zeros** out about half the inputs → effective variance is **halved**.
-- **He** initialization compensates: \( W \sim \mathcal{N}\big(0, \frac{2}{n_{\text{in}}}\big) \).
+- **He** initialization compensates: $W \sim \mathcal{N}\big(0, \frac{2}{n_{\text{in}}}\big)$.
 - The factor **2** keeps activations and gradients well-scaled for the **ReLU** family.
 - Modern deep networks with ReLU (and variants) almost always use **He** initialization.
 
@@ -77,7 +77,7 @@ By the end of this video you will:
 ## Bias Initialization
 
 - **Bias** does not multiply signals → it does **not** drive variance propagation or vanishing/exploding gradients.
-- **\( \mathbf{b} = \mathbf{0} \)** is standard.
+- **$\mathbf{b} = \mathbf{0}$** is standard.
 - Optionally, a **small positive** bias in ReLU networks can help avoid dead neurons.
 
 ---

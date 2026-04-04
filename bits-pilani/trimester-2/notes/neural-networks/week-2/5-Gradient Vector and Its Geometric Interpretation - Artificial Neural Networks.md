@@ -21,15 +21,13 @@ By the end of this video you will:
 
 ## Definition of the Gradient Vector
 
-For a function \( f(x_1, x_2, \ldots, x_n) \), the **gradient vector** is:
-
-\[
+For a function $f(x_1, x_2, \ldots, x_n)$, the **gradient vector** is:
+$$
 \nabla f = \left( \frac{\partial f}{\partial x_1},\ \frac{\partial f}{\partial x_2},\ \ldots,\ \frac{\partial f}{\partial x_n} \right)^T
-\]
-
+$$
 - Each **component** is the partial derivative with respect to one variable.
 - So the gradient tells us, in **one vector**, how sensitive the function is to **every** variable at once.
-- The gradient has **dimension \( n \)**, same as the input — this is convenient both mathematically and in code.
+- The gradient has **dimension $n$**, same as the input — this is convenient both mathematically and in code.
 
 ---
 
@@ -44,25 +42,22 @@ For a function \( f(x_1, x_2, \ldots, x_n) \), the **gradient vector** is:
 
 ---
 
-## Example: \( f(x, y) = x^2 + y^2 \)
-
-\[
+## Example: $f(x, y) = x^2 + y^2$
+$$
 \frac{\partial f}{\partial x} = 2x,\qquad \frac{\partial f}{\partial y} = 2y
-\]
-
+$$
 So:
-\[
+$$
 \nabla f = (2x,\ 2y)^T.
-\]
-
-- At \( (1, 1) \): \( \nabla f = (2, 2)^T \). To move **upwards** in the steepest way, we move in the direction of \( (2, 2) \) — i.e. **along the gradient**.
+$$
+- At $(1, 1)$: $\nabla f = (2, 2)^T$. To move **upwards** in the steepest way, we move in the direction of $(2, 2)$ — i.e. **along the gradient**.
 
 ---
 
 ## Level Curves
 
 - A **level curve** (or level set) is the set of points where the function has a **constant** value.
-- For \( f(x, y) = x^2 + y^2 \), level curves are **circles** (e.g. \( x^2 + y^2 = 2 \) for the value 2).
+- For $f(x, y) = x^2 + y^2$, level curves are **circles** (e.g. $x^2 + y^2 = 2$ for the value 2).
 - **Key fact:** The **gradient is perpendicular to the level curves**.
   - Along a level curve, the function does **not** change.
   - Moving **across** level curves (e.g. from one circle to a larger one) changes the function, and it changes **fastest** when we move in the **direction of the gradient**.
@@ -72,7 +67,7 @@ So:
 ## Gradient and Minimization (Neural Network Training)
 
 - In neural network training we usually **minimize** a **loss function**, not maximize it.
-- To **minimize** a function we need the direction in which it **decreases fastest**. That direction is the **negative gradient** \( -\nabla f \).
+- To **minimize** a function we need the direction in which it **decreases fastest**. That direction is the **negative gradient** $-\nabla f$.
 - **Every** modern learning algorithm — from basic gradient descent to advanced optimizers — is built on this: **use the gradient to decide how to update the parameters**. So the gradient is not just a mathematical object; it is the **driver of learning**.
 
 ---

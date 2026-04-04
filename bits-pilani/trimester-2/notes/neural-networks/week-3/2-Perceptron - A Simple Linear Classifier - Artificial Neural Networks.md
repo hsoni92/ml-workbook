@@ -24,26 +24,26 @@ By the end of this video you will:
 The Perceptron computes a **linear function** of the input, then applies a **threshold**:
 
 **1. Linear score (pre-activation):**
-\[
+$$
 z = \mathbf{w}^T \mathbf{x} + b
-\]
-- \( \mathbf{w} \) = weight vector, \( \mathbf{x} \) = input vector, \( b \) = bias.
+$$
+- $\mathbf{w}$ = weight vector, $\mathbf{x}$ = input vector, $b$ = bias.
 - This is a **weighted sum** of the inputs plus a bias.
 
 **2. Output (activation):**
-\[
+$$
 \hat{y} = \text{sgn}(z)
-\]
+$$
 - **sgn** (sign or step function):
-  - If \( z > 0 \) → output **+1**
-  - If \( z < 0 \) → output **-1**
+  - If $z > 0$ → output **+1**
+  - If $z < 0$ → output **-1**
 - So the Perceptron produces **exactly one of two outputs**: +1 or -1. It is a **binary decision unit**.
 
 ---
 
 ## Decision Boundary: Line, Plane, Hyperplane
 
-- The equation \( \mathbf{w}^T \mathbf{x} + b = 0 \) defines:
+- The equation $\mathbf{w}^T \mathbf{x} + b = 0$ defines:
   - In **2D**: a **line**
   - In **3D**: a **plane**
   - In higher dimensions: a **hyperplane**

@@ -28,14 +28,13 @@ By the end of this video you will:
 
 ## Softmax Definition
 
-For logit vector \( \mathbf{z} = (z_1, \ldots, z_K) \), the softmax output for class \( i \) is:
-\[
+For logit vector $\mathbf{z} = (z_1, \ldots, z_K)$, the softmax output for class $i$ is:
+$$
 p_i = \frac{e^{z_i}}{\sum_{j=1}^{K} e^{z_j}}
-\]
-
+$$
 **Properties:**
 
-- Every output is in \( (0, 1) \).
+- Every output is in $(0, 1)$.
 - Outputs **sum to 1**.
 - **Larger** logits get **larger** probabilities.
 - Softmax turns arbitrary reals into a **valid categorical probability distribution**.
@@ -44,8 +43,8 @@ p_i = \frac{e^{z_i}}{\sum_{j=1}^{K} e^{z_j}}
 
 ## Numerical Example
 
-- Logits: \( \mathbf{z} = (2, 1, 0.1) \).
-- \( e^{\mathbf{z}} \approx (7.3, 2.7, 1.1) \), sum \( \approx 11.2 \).
+- Logits: $\mathbf{z} = (2, 1, 0.1)$.
+- $e^{\mathbf{z}} \approx (7.3, 2.7, 1.1)$, sum $\approx 11.2$.
 - Softmax: class 1 ≈ 0.66, class 2 ≈ 0.24, class 3 ≈ 0.1.
 - Highest probability goes to class 1; all classes get some probability mass.
 

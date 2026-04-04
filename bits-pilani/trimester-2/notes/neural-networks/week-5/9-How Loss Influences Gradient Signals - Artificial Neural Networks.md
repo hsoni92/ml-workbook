@@ -26,7 +26,7 @@ By the end of this video you will:
 
 ---
 
-## Case 1: Model Unsure (e.g. \( p \approx 0.5 \) for correct class)
+## Case 1: Model Unsure (e.g. $p \approx 0.5$ for correct class)
 
 - **MSE:** Error term ≈ 0.5, activation derivative ≈ 0.25 → gradient ≈ 0.125 (moderate).
 - **Cross-entropy:** Gradient ≈ 0.5 — **stronger** corrective signal.
@@ -34,7 +34,7 @@ By the end of this video you will:
 
 ---
 
-## Case 2: Model Confidently Wrong (e.g. \( p \approx 0.01 \) for true class)
+## Case 2: Model Confidently Wrong (e.g. $p \approx 0.01$ for true class)
 
 - **MSE:** Error term ≈ 0.99, but activation derivative at saturation is **tiny** → product (actual gradient) ≈ 0. Model gets almost **no** signal to fix the mistake.
 - **Cross-entropy:** Gradient ≈ −0.99 — **large** signal to correct.
@@ -50,8 +50,8 @@ By the end of this video you will:
 
 ## Conceptual Picture
 
-- Plot: horizontal axis = predicted probability \( p \) for correct class; vertical axis = gradient magnitude.
-- **Cross-entropy:** High when \( p \) is small, then decreases smoothly to 0 as \( p \) increases — strong corrections when wrong.
+- Plot: horizontal axis = predicted probability $p$ for correct class; vertical axis = gradient magnitude.
+- **Cross-entropy:** High when $p$ is small, then decreases smoothly to 0 as $p$ increases — strong corrections when wrong.
 - **MSE:** Peaks somewhere in the middle and is **very small** at the edges — weak corrections when confidently wrong, exactly when we need strong learning signals.
 
 ---

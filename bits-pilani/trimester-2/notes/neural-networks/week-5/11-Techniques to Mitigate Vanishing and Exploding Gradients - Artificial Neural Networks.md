@@ -25,7 +25,7 @@ Together these form the **foundation** of stable deep learning training.
 ## 1. Weight Initialization
 
 - **Xavier (Glorot):** Keeps variance of activations and gradients **consistent** across layers. Works well with **sigmoid** and **tanh**.
-- **He:** Scaled for **ReLU**-type activations. Because ReLU zeros half the inputs, it uses larger variance (e.g. \( \frac{2}{n_{\text{in}}} \)) to compensate.
+- **He:** Scaled for **ReLU**-type activations. Because ReLU zeros half the inputs, it uses larger variance (e.g. $\frac{2}{n_{\text{in}}}$) to compensate.
 - **Goal of both:** Keep forward and backward signals from **shrinking** or **exploding** as they move through the network. Without good initialization, other techniques are much less effective.
 
 ---

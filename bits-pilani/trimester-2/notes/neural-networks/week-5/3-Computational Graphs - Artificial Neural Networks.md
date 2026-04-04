@@ -22,15 +22,15 @@ By the end of this video you will:
 
 ## Simple Example
 
-- \( u = 3x \), \( y = u^2 \).
-- As a graph: input node \( x \) → multiply by 3 → node \( u \) → square → node \( y \).
+- $u = 3x$, $y = u^2$.
+- As a graph: input node $x$ → multiply by 3 → node $u$ → square → node $y$.
 - Even this small expression has a clear **chain** structure.
 
 ---
 
 ## Forward Pass on the Graph
 
-- Evaluate each node in order: start with \( x \), compute \( u = 3x \), then \( y = u^2 \).
+- Evaluate each node in order: start with $x$, compute $u = 3x$, then $y = u^2$.
 - **Store** every intermediate value at its node.
 - This storage is **essential**: these values are **reused** when computing gradients in the **backward** pass.
 
@@ -39,16 +39,16 @@ By the end of this video you will:
 ## Local Gradient
 
 - At each **edge**, the **local gradient** is the derivative of that node’s **output** w.r.t. its **direct input**.
-- Example: \( u = 3x \) → local gradient \( \frac{du}{dx} = 3 \).
-- \( y = u^2 \) → local gradient \( \frac{dy}{du} = 2u \).
+- Example: $u = 3x$ → local gradient $\frac{du}{dx} = 3$.
+- $y = u^2$ → local gradient $\frac{dy}{du} = 2u$.
 - Each small operation contributes its **local** derivative; backpropagation is built from these.
 
 ---
 
 ## Chain Rule on the Graph
 
-- To get the **global** derivative \( \frac{dy}{dx} \), the graph tells us: \( \frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx} \).
-- So \( \frac{dy}{dx} = 2u \cdot 3 \).
+- To get the **global** derivative $\frac{dy}{dx}$, the graph tells us: $\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$.
+- So $\frac{dy}{dx} = 2u \cdot 3$.
 - **Key idea:** A **global** gradient is the **product of local gradients** along a path in the graph.
 
 ---

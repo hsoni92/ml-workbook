@@ -11,7 +11,7 @@ Module 6 focuses on **optimization**: how neural networks **learn** by using gra
 | Topic | Content |
 |-------|--------|
 | **Optimization** | Minimizing loss by adjusting weights and biases; navigating a high-dimensional loss surface (valleys, plateaus, saddle points). Optimizer controls step size, momentum, per-parameter scaling, stability (e.g. clipping). |
-| **Gradient descent** | Step **downhill** opposite to the gradient; update \( \theta \leftarrow \theta - \eta \nabla L \); **learning rate** \( \eta \) is critical. |
+| **Gradient descent** | Step **downhill** opposite to the gradient; update $\theta \leftarrow \theta - \eta \nabla L$; **learning rate** $\eta$ is critical. |
 | **Variants** | **Batch** (full data, stable, slow), **SGD** (one sample, noisy, fast), **mini-batch** (default: balance of speed and stability). **Batch size** affects noise, generalization, convergence. |
 | **Adaptive methods** | **Single** LR for all parameters is limiting; **RMSProp** (squared gradients) and **Adam** (momentum + RMSProp, bias correction) give **per-parameter** step sizes. Handle noisy/sparse gradients, fast convergence. |
 | **When to use Adam** | Good default for complex/noisy problems; **SGD + momentum** often better for **final** fine-tuning and generalization; **switching** optimizers during training is common. |

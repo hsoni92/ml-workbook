@@ -21,9 +21,9 @@ By the end of this video you will:
 
 ## Flow of One Input
 
-- Input vector \( \mathbf{x} \) is fed into the **first hidden layer**.
+- Input vector $\mathbf{x}$ is fed into the **first hidden layer**.
 - The network is not “deciding” yet; it is beginning a **sequence of transformations**.
-- The **same** input \( \mathbf{x} \) is **not** reused at every layer; each layer works on the **transformed version** produced by the previous layer.
+- The **same** input $\mathbf{x}$ is **not** reused at every layer; each layer works on the **transformed version** produced by the previous layer.
 
 ---
 
@@ -34,13 +34,12 @@ Each neuron does four steps:
 1. Multiply each input by its corresponding **weight**.
 2. **Sum** all weighted inputs.
 3. Add the **bias**.
-4. Apply the **activation function** \( f \).
+4. Apply the **activation function** $f$.
 
 Mathematically:
-\[
+$$
 z = \sum_i w_i x_i + b, \qquad a = f(z)
-\]
-
+$$
 This happens at **runtime** for every input; one output number per neuron.
 
 ---
@@ -50,7 +49,7 @@ This happens at **runtime** for every input; one output number per neuron.
 - After the first hidden layer finishes, its **output vector** is passed to the second hidden layer.
 - The second hidden layer does the same neuron-wise computation and produces a new **activation vector**.
 - This continues until the signal reaches the **output layer**.
-- **Important:** The original input \( \mathbf{x} \) is **never used again directly**; each layer only sees the representation from the previous layer.
+- **Important:** The original input $\mathbf{x}$ is **never used again directly**; each layer only sees the representation from the previous layer.
 
 ---
 

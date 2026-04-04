@@ -15,7 +15,7 @@ By the end of this video you will:
 
 1. **Wrong geometry:** MSE treats class labels as numbers on a line (0, 1, 2…). Class 2 is not “twice” class 1; there is no natural distance between classes → wrong decision boundaries.
 2. **Weak penalty for confident mistakes:** Predicting 0.2 vs 0.01 for the true class gives similar MSE. We need **strong** feedback when the model is **confidently wrong**.
-3. **Vanishing gradients with sigmoid/softmax:** Near 0 or 1, derivatives are tiny. When the model is confidently wrong, MSE sends **almost no** corrective signal → very slow learning. Example: \( y = 1 \), \( \hat{y} = 0.99 \) ⇒ MSE \( = (1 - 0.99)^2 = 0.0001 \) — too small.
+3. **Vanishing gradients with sigmoid/softmax:** Near 0 or 1, derivatives are tiny. When the model is confidently wrong, MSE sends **almost no** corrective signal → very slow learning. Example: $y = 1$, $\hat{y} = 0.99$ ⇒ MSE $= (1 - 0.99)^2 = 0.0001$ — too small.
 
 ---
 
@@ -29,7 +29,7 @@ By the end of this video you will:
 
 ## Cross-Entropy Loss
 
-- For the **true** class \( y \), cross-entropy is: \( -\log(p_y) \), where \( p_y \) is the predicted probability for class \( y \).
+- For the **true** class $y$, cross-entropy is: $-\log(p_y)$, where $p_y$ is the predicted probability for class $y$.
 - It measures how “surprised” the model is that the true class occurred.
 - **High** probability for correct class → **small** loss; **low** probability → **large** loss.
 - Example (true class = cat): 90% for cat → loss ≈ 0.1; 50% → larger loss; 1% (confidently wrong) → loss &gt; 4.6. So cross-entropy **strongly** penalizes confident mistakes.
@@ -39,7 +39,7 @@ By the end of this video you will:
 ## Softmax + Cross-Entropy in Practice
 
 - We do **not** compute softmax and then take log separately.
-- We use a **single combined** expression: \( \mathcal{L} = -z_y + \log \sum_j e^{z_j} \).
+- We use a **single combined** expression: $\mathcal{L} = -z_y + \log \sum_j e^{z_j}$.
 - This avoids extra computation and is **numerically stable**. Frameworks (PyTorch, TensorFlow) implement this combined form when you call “cross-entropy loss”; it **includes** softmax.
 
 ---

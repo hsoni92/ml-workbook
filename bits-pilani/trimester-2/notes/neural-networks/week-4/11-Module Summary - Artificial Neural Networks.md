@@ -15,8 +15,8 @@ Module 4 builds the **foundation** of **multi-layer perceptrons (MLPs)** and **a
 | **Hidden layers** | Representation learning; each neuron as feature detector; raw → derived features; hierarchical representations (simple → complex). |
 | **Expressive power** | Set of functions the model can represent; **width** = more detectors at one level; **depth** = hierarchical composition; depth usually more parameter-efficient. |
 | **Activation functions** | Essential for non-linearity; without them, stacking layers collapses to one linear map. |
-| **Sigmoid / tanh** | Classical; sigmoid \( (0,1) \), tanh \( (-1,1) \) zero-centered; both **saturate** → vanishing gradients. |
-| **ReLU family** | ReLU = \( \max(0,z) \); no saturation for \( z>0 \); default for hidden layers; **dying ReLU** mitigated by Leaky ReLU, PReLU. |
+| **Sigmoid / tanh** | Classical; sigmoid $(0,1)$, tanh $(-1,1)$ zero-centered; both **saturate** → vanishing gradients. |
+| **ReLU family** | ReLU = $\max(0,z)$; no saturation for $z>0$; default for hidden layers; **dying ReLU** mitigated by Leaky ReLU, PReLU. |
 | **Softmax** | Converts logits to probability distribution over classes; for **multi-class** output layer. |
 | **Practical choices** | Hidden: ReLU (or Leaky ReLU); output: sigmoid (binary), softmax (multi-class), linear (regression). |
 

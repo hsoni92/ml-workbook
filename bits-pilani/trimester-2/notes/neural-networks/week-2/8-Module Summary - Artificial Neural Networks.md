@@ -24,7 +24,7 @@ With this toolkit we are ready to study **concrete neural models** (e.g. percept
 
 1. **Vectors** carry information; **matrices** connect layers; **tensors** generalize to higher dimensions. **Shapes** must be tracked at every layer.
 2. **Dot product** measures alignment/similarity; each neuron computes (input · weights) + bias, then an activation.
-3. **One layer** = one matrix multiplication (\( \mathbf{W}\mathbf{x} \)) + bias vector \( \mathbf{b} \).
+3. **One layer** = one matrix multiplication ($\mathbf{W}\mathbf{x}$) + bias vector $\mathbf{b}$.
 4. **Derivatives** = sensitivity; **partial derivatives** = sensitivity to one variable with others fixed.
 5. **Gradient** = vector of partial derivatives; points in direction of steepest increase; **negative gradient** used for minimization.
 6. **Chain rule** = total derivative as product of local derivatives along the path; essential for multi-layer (deep) networks.
@@ -48,8 +48,8 @@ So the shift is: **mathematical tools (Module 2)** → **first neural models and
 
 - [ ] Vectors, matrices, tensors: definition, shape, role in neural nets.
 - [ ] Dot product: algebraic formula and geometric interpretation (alignment).
-- [ ] Layer computation: \( \mathbf{z} = \mathbf{W}\mathbf{x} + \mathbf{b} \); correct shapes (\( m \times n \), \( n \times 1 \), \( m \times 1 \)).
+- [ ] Layer computation: $\mathbf{z} = \mathbf{W}\mathbf{x} + \mathbf{b}$; correct shapes ($m \times n$, $n \times 1$, $m \times 1$).
 - [ ] Derivative vs partial derivative; why partials are needed for learning.
 - [ ] Gradient: definition, direction of steepest increase, role in minimization.
-- [ ] Chain rule: \( \frac{dy}{dx} = \frac{dy}{du}\frac{du}{dx} \); application to two-layer example.
+- [ ] Chain rule: $\frac{dy}{dx} = \frac{dy}{du}\frac{du}{dx}$; application to two-layer example.
 - [ ] Overflow, underflow, log-sum-exp trick and why numerical stability matters.
