@@ -1,0 +1,14 @@
+{
+  "name": "ml-workbook",
+  "version": "1.0.0",
+  "description": "## Pre-commit",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "cd scripts && uv sync",
+    "encrypt": "uv run scripts/secure_vault.py encrypt",
+    "decrypt": "uv run scripts/secure_vault.py decrypt"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
