@@ -118,6 +118,7 @@ $$
 $$
 \mathbf{x} \cdot \mathbf{w} = \|\mathbf{x}\| \,\|\mathbf{w}\| \cos\theta
 $$
+
 - $\theta$ = angle between the two vectors.
 - $\cos\theta$ measures **alignment**:
   - **Same direction** → dot product **large and positive**.

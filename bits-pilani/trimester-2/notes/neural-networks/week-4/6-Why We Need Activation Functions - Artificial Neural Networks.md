@@ -27,6 +27,7 @@ Substituting:
 $$
 \mathbf{z}_2 = \mathbf{W}_2 (\mathbf{W}_1 \mathbf{x} + \mathbf{b}_1) + \mathbf{b}_2 = \mathbf{W}_2 \mathbf{W}_1 \mathbf{x} + \mathbf{W}_2 \mathbf{b}_1 + \mathbf{b}_2
 $$
+
 This is still a **single linear transformation** of $\mathbf{x}$. No matter how many purely linear layers we stack, the **entire network collapses** into one linear model. **Depth alone does not add power** if all layers are linear.
 
 ---
