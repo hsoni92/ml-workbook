@@ -13,22 +13,21 @@ By the end of this video you will:
 
 ## Thought Experiment: No Activation Functions
 
-- Suppose every layer only does \( \mathbf{z} = \mathbf{W}\mathbf{x} + \mathbf{b} \) with **no** activation.
+- Suppose every layer only does $\mathbf{z} = \mathbf{W}\mathbf{x} + \mathbf{b}$ with **no** activation.
 - Each layer is then just a **linear** mapping.
 
 ---
 
 ## Stacking Linear Layers Collapses
 
-- **Layer 1:** \( \mathbf{z}_1 = \mathbf{W}_1 \mathbf{x} + \mathbf{b}_1 \)
-- **Layer 2:** \( \mathbf{z}_2 = \mathbf{W}_2 \mathbf{z}_1 + \mathbf{b}_2 \)
+- **Layer 1:** $\mathbf{z}_1 = \mathbf{W}_1 \mathbf{x} + \mathbf{b}_1$
+- **Layer 2:** $\mathbf{z}_2 = \mathbf{W}_2 \mathbf{z}_1 + \mathbf{b}_2$
 
 Substituting:
-\[
+$$
 \mathbf{z}_2 = \mathbf{W}_2 (\mathbf{W}_1 \mathbf{x} + \mathbf{b}_1) + \mathbf{b}_2 = \mathbf{W}_2 \mathbf{W}_1 \mathbf{x} + \mathbf{W}_2 \mathbf{b}_1 + \mathbf{b}_2
-\]
-
-This is still a **single linear transformation** of \( \mathbf{x} \). No matter how many purely linear layers we stack, the **entire network collapses** into one linear model. **Depth alone does not add power** if all layers are linear.
+$$
+This is still a **single linear transformation** of $\mathbf{x}$. No matter how many purely linear layers we stack, the **entire network collapses** into one linear model. **Depth alone does not add power** if all layers are linear.
 
 ---
 
@@ -42,7 +41,7 @@ This is still a **single linear transformation** of \( \mathbf{x} \). No matter 
 
 ## Role of Activation Functions
 
-- An **activation function** applies a **nonlinear** transformation to each neuron’s output: \( a = f(z) \).
+- An **activation function** applies a **nonlinear** transformation to each neuron’s output: $a = f(z)$.
 - This **breaks** the linearity of the network.
 - Once non-linearity is introduced, **stacking layers no longer collapses** into one linear map.
 - Each layer becomes a **nonlinear** transformation of the previous layer’s output.

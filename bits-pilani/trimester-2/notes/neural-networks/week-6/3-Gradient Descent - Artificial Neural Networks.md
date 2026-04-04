@@ -31,14 +31,12 @@ By the end of this video you will:
 ---
 
 ## Update Rule
-
-\[
+$$
 \theta_{\text{new}} = \theta_{\text{old}} - \eta \cdot \nabla L
-\]
-
-- \( \theta \): parameter (weight) we update.
-- \( \eta \): **learning rate**.
-- \( \nabla L \): **gradient** of the loss w.r.t. \( \theta \) (slope at the current point).
+$$
+- $\theta$: parameter (weight) we update.
+- $\eta$: **learning rate**.
+- $\nabla L$: **gradient** of the loss w.r.t. $\theta$ (slope at the current point).
 - The **gradient** gives the **direction**; the **learning rate** controls **how big** the step is. Every parameter in the network follows this same rule during training.
 
 ---
@@ -63,5 +61,5 @@ By the end of this video you will:
 
 - **Gradient descent** minimizes the loss by stepping **downhill**.
 - The **gradient** points toward steepest **increase**, so we move **opposite** to it.
-- **Update rule:** \( \theta \leftarrow \theta - \eta \nabla L \).
+- **Update rule:** $\theta \leftarrow \theta - \eta \nabla L$.
 - The **learning rate** controls how **fast** or how **safely** we descend. This is the foundation for all optimizers that follow.

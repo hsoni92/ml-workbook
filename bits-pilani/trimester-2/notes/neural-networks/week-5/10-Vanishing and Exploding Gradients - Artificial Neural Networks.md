@@ -27,14 +27,14 @@ By the end of this video you will:
 - **Causes:**
   1. **Saturating activations** (sigmoid, tanh): derivatives become very small, often near 0.
   2. **Weights initialized too small:** activations stay small → derivatives stay small.
-- **Effect:** Multiply many numbers &lt; 1 → **exponential** shrinkage. Example: 0.5\(^{20}\) ≈ 10\(^{-6}\) ≈ 0. Early layers get **almost no** gradient → they **stop learning**.
+- **Effect:** Multiply many numbers &lt; 1 → **exponential** shrinkage. Example: 0.5$^{20}$ ≈ 10$^{-6}$ ≈ 0. Early layers get **almost no** gradient → they **stop learning**.
 
 ---
 
 ## Exploding Gradients
 
 - **When:** Most derivatives are **greater than 1** (e.g. weights too large, or activations amplifying inputs).
-- **Effect:** Each layer multiplies the gradient by something &gt; 1; after 20–30 layers this becomes huge. Example: 1.5\(^{20}\) ≈ 3300. Updates become **enormous** → **unstable** or **divergent** training.
+- **Effect:** Each layer multiplies the gradient by something &gt; 1; after 20–30 layers this becomes huge. Example: 1.5$^{20}$ ≈ 3300. Updates become **enormous** → **unstable** or **divergent** training.
 
 ---
 

@@ -30,7 +30,7 @@ By the end of this video you will:
 
 ## Hidden Neuron as Feature Detector
 
-- A hidden neuron computes \( a = f(\mathbf{w}^T \mathbf{x} + b) \).
+- A hidden neuron computes $a = f(\mathbf{w}^T \mathbf{x} + b)$.
 - Conceptually: the neuron **responds strongly** when a **specific pattern** appears in the input → it acts as a **feature detector**.
 - Different hidden neurons learn to respond to **different patterns**; together they form a **bank of feature detectors**.
 

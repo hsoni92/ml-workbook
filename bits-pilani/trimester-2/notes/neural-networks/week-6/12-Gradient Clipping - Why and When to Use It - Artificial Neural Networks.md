@@ -35,7 +35,7 @@ By the end of this video you will:
 
 ## Two Types of Clipping
 
-1. **Clipping by value:** Limit **each** gradient component to a fixed range (e.g. \( [-c, c] \)). **Simple**, but can **distort** the **direction** of the gradient.
+1. **Clipping by value:** Limit **each** gradient component to a fixed range (e.g. $[-c, c]$). **Simple**, but can **distort** the **direction** of the gradient.
 2. **Clipping by norm (most common):** If the **norm** of the whole gradient vector exceeds a threshold, **scale** the entire vector down. This **preserves direction** while **limiting magnitude**.
 
 ---

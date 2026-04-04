@@ -10,7 +10,7 @@ Module 3 focuses on the **first building blocks** of neural networks: the **Perc
 
 | Topic | Content |
 |-------|--------|
-| **Perceptron** | Simplest computational model of a neuron: linear score \( \mathbf{w}^T \mathbf{x} + b \) + **hard threshold** → binary output (+1 / -1). Linear binary classifier. |
+| **Perceptron** | Simplest computational model of a neuron: linear score $\mathbf{w}^T \mathbf{x} + b$ + **hard threshold** → binary output (+1 / -1). Linear binary classifier. |
 | **Geometry** | One straight decision boundary (line/hyperplane); **weights** = orientation, **bias** = position. |
 | **Linear separability** | Perceptron works when data **can** be separated by one line; **fails** when it cannot. |
 | **XOR** | Classic **non–linearly separable** problem; single Perceptron **cannot** solve it (structural limit). |
@@ -54,7 +54,7 @@ In the next module we build on this foundation to study:
 ## Quick Revision Checklist
 
 - [ ] Define Perceptron: equation, output (+1 / -1), decision boundary (line/hyperplane).
-- [ ] Explain linear separability and the condition \( y_i(\mathbf{w}^T \mathbf{x}_i + b) > 0 \) for all \( i \).
+- [ ] Explain linear separability and the condition $y_i(\mathbf{w}^T \mathbf{x}_i + b) > 0$ for all $i$.
 - [ ] Describe XOR and why a single Perceptron cannot solve it.
 - [ ] State Perceptron learning rule: when to update, update equations, convergence only for linearly separable data.
 - [ ] Define logistic neuron: sigmoid, output as probability, decision boundary still linear.

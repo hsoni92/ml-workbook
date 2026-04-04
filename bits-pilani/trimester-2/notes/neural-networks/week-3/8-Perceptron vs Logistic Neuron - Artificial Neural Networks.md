@@ -13,11 +13,11 @@ By the end of this video you will:
 ## Same Linear Score, Different Activation
 
 - At a high level, **both** models compute the **same** linear score:
-  \[
+  $$
   z = \mathbf{w}^T \mathbf{x} + b
-  \]
-- So the **underlying geometry** — the line or hyperplane defined by \( \mathbf{w}^T \mathbf{x} + b = 0 \) — is **identical** in both cases.
-- The **only** difference is what we do **after** computing \( z \): the **activation function**. That single change completely changes the **nature of the output**, the **interpretation** of predictions, and **how learning** is performed.
+  $$
+- So the **underlying geometry** — the line or hyperplane defined by $\mathbf{w}^T \mathbf{x} + b = 0$ — is **identical** in both cases.
+- The **only** difference is what we do **after** computing $z$: the **activation function**. That single change completely changes the **nature of the output**, the **interpretation** of predictions, and **how learning** is performed.
 
 ---
 
@@ -25,13 +25,13 @@ By the end of this video you will:
 
 | Model | Activation | Behavior |
 |-------|-------------|----------|
-| **Perceptron** | **Step (sign)** | As soon as \( z \) crosses 0, output **jumps** from one class to the other. |
-| **Logistic neuron** | **Sigmoid** | Output **smoothly** transitions from 0 to 1 as \( z \) increases. |
+| **Perceptron** | **Step (sign)** | As soon as $z$ crosses 0, output **jumps** from one class to the other. |
+| **Logistic neuron** | **Sigmoid** | Output **smoothly** transitions from 0 to 1 as $z$ increases. |
 
 **Graphs:**
 
-- **Step:** Constant -1 for \( z < 0 \), then **jump** to +1 at \( z = 0 \); often 0 at \( z = 0 \) by convention.
-- **Sigmoid:** S-shaped curve; 0.5 at \( z = 0 \), tending to 1 for large positive \( z \) and to 0 for large negative \( z \).
+- **Step:** Constant -1 for $z < 0$, then **jump** to +1 at $z = 0$; often 0 at $z = 0$ by convention.
+- **Sigmoid:** S-shaped curve; 0.5 at $z = 0$, tending to 1 for large positive $z$ and to 0 for large negative $z$.
 
 So: **step = instant switch**; **sigmoid = gradual change**. This one mathematical change turns a **hard** classifier into a **soft, probabilistic** classifier.
 
@@ -42,16 +42,16 @@ So: **step = instant switch**; **sigmoid = gradual change**. This one mathematic
 | Model | Output | Meaning |
 |-------|--------|--------|
 | **Perceptron** | Only **+1** or **-1** | Class label only; **no** measure of confidence. |
-| **Logistic neuron** | Value in \( (0, 1) \) | Can be interpreted as **probability** \( \hat{y} = P(y=1 \mid \mathbf{x}) \): both predicted class and **confidence**. |
+| **Logistic neuron** | Value in $(0, 1)$ | Can be interpreted as **probability** $\hat{y} = P(y=1 \mid \mathbf{x})$: both predicted class and **confidence**. |
 
 ---
 
 ## Decision Boundary: Same in Both
 
 - For **both** Perceptron and logistic neuron, the **decision boundary** is:
-  \[
+  $$
   \mathbf{w}^T \mathbf{x} + b = 0
-  \]
+  $$
 - So **geometrically** both produce the **same** linear boundary in the input space. What changes is **not where** the boundary is, but **how the output behaves near** that boundary.
 - “Smooth decision boundary” does **not** mean the boundary curve is curved. The boundary is still **linear**. What is smooth is the **transition of the output** across the boundary.
 
@@ -74,7 +74,7 @@ So: **step = instant switch**; **sigmoid = gradual change**. This one mathematic
 
 | Aspect | Perceptron | Logistic neuron |
 |--------|------------|------------------|
-| **Linear score** | \( z = \mathbf{w}^T \mathbf{x} + b \) | Same |
+| **Linear score** | $z = \mathbf{w}^T \mathbf{x} + b$ | Same |
 | **Activation** | Hard step (sign) | Sigmoid |
 | **Output** | Binary (+1 / -1) | Continuous in (0, 1) |
 | **Interpretation** | Class label only | Probability + confidence |

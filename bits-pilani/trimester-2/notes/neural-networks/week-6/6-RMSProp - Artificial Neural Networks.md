@@ -30,17 +30,16 @@ By the end of this video you will:
 ## Update Rule
 
 **Running average of squared gradients:**
-\[
+$$
 v_t = \beta \cdot v_{t-1} + (1 - \beta) \cdot g_t^2
-\]
+$$
 This captures how large the gradients have been recently.
 
 **Parameter update:**
-\[
+$$
 \theta_t = \theta_{t-1} - \frac{\eta}{\sqrt{v_t} + \epsilon} \cdot g_t
-\]
-
-- **Key:** The **denominator** scales the step. When gradients are **large**, \( v_t \) is large → **smaller** updates. When gradients are **small**, \( v_t \) is small → **larger** updates. So RMSProp **adapts** the learning rate automatically per parameter.
+$$
+- **Key:** The **denominator** scales the step. When gradients are **large**, $v_t$ is large → **smaller** updates. When gradients are **small**, $v_t$ is small → **larger** updates. So RMSProp **adapts** the learning rate automatically per parameter.
 
 ---
 
@@ -56,9 +55,9 @@ This captures how large the gradients have been recently.
 
 ## Practical Defaults
 
-- **\( \beta \approx 0.9 \)** (for the running average).
-- **\( \eta \approx 0.001 \)** (learning rate).
-- **\( \epsilon \approx 10^{-8} \)** (numerical stability).
+- **$\beta \approx 0.9$** (for the running average).
+- **$\eta \approx 0.001$** (learning rate).
+- **$\epsilon \approx 10^{-8}$** (numerical stability).
 - These often work with **little** tuning, which made RMSProp attractive in practice.
 
 ---

@@ -25,7 +25,7 @@ By the end of this video you will:
 ## Overflow
 
 - **Overflow** occurs when a number is **too large** to be represented in the computer’s floating-point system.
-- **Example:** \( e^{1000} \) is extremely large. On a typical machine it cannot be stored and is represented as **infinity**.
+- **Example:** $e^{1000}$ is extremely large. On a typical machine it cannot be stored and is represented as **infinity**.
 - Once **infinity** appears, subsequent operations become meaningless. This is one of the most dangerous failure modes in deep learning.
 
 ---
@@ -33,7 +33,7 @@ By the end of this video you will:
 ## Underflow
 
 - **Underflow** is the opposite: a number becomes **so small** that it is rounded down to **exactly zero**.
-- **Example:** \( e^{-1000} \) is a very small positive number mathematically, but in floating-point arithmetic it is stored as **zero**.
+- **Example:** $e^{-1000}$ is a very small positive number mathematically, but in floating-point arithmetic it is stored as **zero**.
 - When that happens, any gradient or probability information carried by that value is **permanently lost**.
 
 ---
@@ -51,36 +51,32 @@ Each of these can cause numerical problems on its own; **together** they make st
 ## Unstable Expression: Sum of Exponentials
 
 A very common unstable expression is:
-
-\[
+$$
 \sum_i e^{z_i}
-\]
-
-- If **one** \( z_i \) is large → \( e^{z_i} \) can **overflow**.
-- If **all** \( z_i \) are very negative → all \( e^{z_i} \) can **underflow** to zero.
+$$
+- If **one** $z_i$ is large → $e^{z_i}$ can **overflow**.
+- If **all** $z_i$ are very negative → all $e^{z_i}$ can **underflow** to zero.
 - This expression appears inside **probability** computations (e.g. softmax), so it **must** be handled carefully.
 
 ---
 
 ## Log-Sum-Exp Trick (Stabilization)
 
-**Identity (for any \( \alpha \)):**
-
-\[
+**Identity (for any $\alpha$):**
+$$
 \log \left( \sum_i e^{z_i} \right) = \alpha + \log \left( \sum_i e^{z_i - \alpha} \right)
-\]
-
+$$
 **Derivation (outline):**
 
-- \( \sum_i e^{z_i} = e^\alpha \sum_i \frac{e^{z_i}}{e^\alpha} = e^\alpha \sum_i e^{z_i - \alpha} \).
-- Take log: \( \log \sum_i e^{z_i} = \alpha + \log \sum_i e^{z_i - \alpha} \).
+- $\sum_i e^{z_i} = e^\alpha \sum_i \frac{e^{z_i}}{e^\alpha} = e^\alpha \sum_i e^{z_i - \alpha}$.
+- Take log: $\log \sum_i e^{z_i} = \alpha + \log \sum_i e^{z_i - \alpha}$.
 
-**Choice of \( \alpha \):** Take \( \alpha = \max_i z_i \).
+**Choice of $\alpha$:** Take $\alpha = \max_i z_i$.
 
 **Why this helps:**
 
-- After subtracting the maximum, the **largest** exponent is \( e^0 = 1 \).
-- All other terms are \( e^{z_i - \alpha} \in (0, 1] \).
+- After subtracting the maximum, the **largest** exponent is $e^0 = 1$.
+- All other terms are $e^{z_i - \alpha} \in (0, 1]$.
 - So no term is excessively large, and none shrink to zero too quickly. The computation stays in a **numerically safe** range for a wide variety of inputs.
 
 ---
@@ -89,7 +85,7 @@ A very common unstable expression is:
 
 - **Work in the log domain** when possible (e.g. log-probabilities).
 - **Subtract the maximum** before exponentiation (as in log-sum-exp).
-- **Add a small \( \varepsilon \)** to denominators to avoid **division by zero**.
+- **Add a small $\varepsilon$** to denominators to avoid **division by zero**.
 - **Avoid** direct multiplication of **long chains of probabilities** (use sums of log-probabilities instead).
 
 All practical deep learning systems rely heavily on these simple but critical numerical techniques.
@@ -114,7 +110,7 @@ So **numerical stability is not optional** — it is a **fundamental requirement
 | **Precision** | All deep learning is done in **finite** numerical precision. |
 | **Overflow** | Numbers too large → infinity → invalid computation. |
 | **Underflow** | Numbers too small → zero → loss of information. |
-| **Log-sum-exp** | Standard way to stabilize \( \log \sum_i e^{z_i} \) by using \( \alpha = \max_i z_i \). |
-| **Stable computation** | Required for reliable deep learning; use log domain, subtract max, small \( \varepsilon \), avoid long probability chains. |
+| **Log-sum-exp** | Standard way to stabilize $\log \sum_i e^{z_i}$ by using $\alpha = \max_i z_i$. |
+| **Stable computation** | Required for reliable deep learning; use log domain, subtract max, small $\varepsilon$, avoid long probability chains. |
 
-> **Exam tip:** Log-sum-exp trick: use \( \alpha = \max_i z_i \) so that \( e^{z_i - \alpha} \le 1 \) and no overflow/underflow; then \( \log \sum e^{z_i} = \alpha + \log \sum e^{z_i - \alpha} \).
+> **Exam tip:** Log-sum-exp trick: use $\alpha = \max_i z_i$ so that $e^{z_i - \alpha} \le 1$ and no overflow/underflow; then $\log \sum e^{z_i} = \alpha + \log \sum e^{z_i - \alpha}$.

@@ -21,12 +21,11 @@ By the end of this video you will:
 ## Mean Squared Error (MSE)
 
 **Definition:**
-\[
+$$
 \text{MSE} = \frac{1}{N} \sum_{i=1}^{N} (y_i - \hat{y}_i)^2
-\]
-
-- \( \hat{y} \): predicted value; \( y \): true value.
-- We take the **error** \( (y - \hat{y}) \), **square** it, and **average** over examples.
+$$
+- $\hat{y}$: predicted value; $y$: true value.
+- We take the **error** $(y - \hat{y})$, **square** it, and **average** over examples.
 - Result: a **smooth**, **non-negative** measure of how far predictions are from the truth.
 
 ---
