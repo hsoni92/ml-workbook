@@ -26,10 +26,8 @@ To address these we introduce a **smooth** alternative: the **logistic neuron**.
 
 ## Sigmoid Function
 
-At the heart of the logistic neuron is the **sigmoid** (logistic) function:
-$$
-\sigma(z) = \frac{1}{1 + e^{-z}}
-$$
+At the heart of the logistic neuron is the **sigmoid** (logistic) function: $\sigma(z) = \frac{1}{1 + e^{-z}}$
+
 **Properties:**
 
 - **Smooth:** No sudden jumps; it changes **gradually** between 0 and 1.
@@ -49,14 +47,8 @@ So any real input is mapped to a value **strictly between 0 and 1** — ideal fo
 
 ## Logistic Neuron: Definition
 
-- **Structure:** Same as the Perceptron — we still compute a linear combination:
-  $$
-  z = \mathbf{w}^T \mathbf{x} + b
-  $$
-- **Only change:** Instead of a **hard step**, we apply the **sigmoid**:
-  $$
-  \hat{y} = \sigma(z) = \frac{1}{1 + e^{-z}}
-  $$
+- **Structure:** Same as the Perceptron — we still compute a linear combination: $z = \mathbf{w}^T \mathbf{x} + b$
+- **Only change:** Instead of a **hard step**, we apply the **sigmoid**: $\hat{y} = \sigma(z) = \frac{1}{1 + e^{-z}}$
 - So the **only** difference from the Perceptron is the **activation function**. But this change **radically** alters the behavior of the output.
 
 ---
@@ -64,10 +56,7 @@ So any real input is mapped to a value **strictly between 0 and 1** — ideal fo
 ## Output: Continuous and Probabilistic
 
 - Instead of only +1 or -1, the logistic neuron outputs a **continuous** value in $(0, 1)$.
-- This can be **interpreted as a probability**:
-  $$
-  \hat{y} = P(y = 1 \mid \mathbf{x})
-  $$
+- This can be **interpreted as a probability**: $\hat{y} = P(y = 1 \mid \mathbf{x})$
   - $\hat{y} \approx 1$ → model is confident class 1.
   - $\hat{y} \approx 0$ → model is confident class 0.
   - $\hat{y} \approx 0.5$ → model is **uncertain**.

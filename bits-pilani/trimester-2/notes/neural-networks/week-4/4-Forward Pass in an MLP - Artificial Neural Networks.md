@@ -36,10 +36,8 @@ Each neuron does four steps:
 3. Add the **bias**.
 4. Apply the **activation function** $f$.
 
-Mathematically:
-$$
-z = \sum_i w_i x_i + b, \qquad a = f(z)
-$$
+Mathematically: $z = \sum_i w_i x_i + b, \qquad a = f(z)$
+
 This happens at **runtime** for every input; one output number per neuron.
 
 ---

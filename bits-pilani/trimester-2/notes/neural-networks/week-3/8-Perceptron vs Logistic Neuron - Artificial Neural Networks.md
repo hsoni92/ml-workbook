@@ -12,10 +12,7 @@ By the end of this video you will:
 
 ## Same Linear Score, Different Activation
 
-- At a high level, **both** models compute the **same** linear score:
-  $$
-  z = \mathbf{w}^T \mathbf{x} + b
-  $$
+- At a high level, **both** models compute the **same** linear score: $z = \mathbf{w}^T \mathbf{x} + b$
 - So the **underlying geometry** — the line or hyperplane defined by $\mathbf{w}^T \mathbf{x} + b = 0$ — is **identical** in both cases.
 - The **only** difference is what we do **after** computing $z$: the **activation function**. That single change completely changes the **nature of the output**, the **interpretation** of predictions, and **how learning** is performed.
 
@@ -48,10 +45,7 @@ So: **step = instant switch**; **sigmoid = gradual change**. This one mathematic
 
 ## Decision Boundary: Same in Both
 
-- For **both** Perceptron and logistic neuron, the **decision boundary** is:
-  $$
-  \mathbf{w}^T \mathbf{x} + b = 0
-  $$
+- For **both** Perceptron and logistic neuron, the **decision boundary** is: $\mathbf{w}^T \mathbf{x} + b = 0$
 - So **geometrically** both produce the **same** linear boundary in the input space. What changes is **not where** the boundary is, but **how the output behaves near** that boundary.
 - “Smooth decision boundary” does **not** mean the boundary curve is curved. The boundary is still **linear**. What is smooth is the **transition of the output** across the boundary.
 

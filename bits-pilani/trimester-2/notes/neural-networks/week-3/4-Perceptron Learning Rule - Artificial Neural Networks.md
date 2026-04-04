@@ -33,10 +33,7 @@ By the end of this video you will:
 ## When Does a Mistake Occur?
 
 - Prediction: $\hat{y}_i = \text{sgn}(\mathbf{w}^T \mathbf{x}_i + b)$.
-- A convenient way to express “misclassification” is:
-  $$
-  y_i \cdot (\mathbf{w}^T \mathbf{x}_i + b) \leq 0
-  $$
+- A convenient way to express “misclassification” is: $y_i \cdot (\mathbf{w}^T \mathbf{x}_i + b) \leq 0$
   - If this product is **positive** → the example is **correctly** classified (correct side of the boundary).
   - If it is **negative or zero** → the example is **misclassified**. **Updates happen only in this case.** So the Perceptron learning rule is **mistake-driven**, not a continuous optimization over all examples.
 

@@ -25,10 +25,8 @@ The answer is given by the concept of **linear separability**. It completely det
 
 ## Formal Definition of Linear Separability
 
-A dataset is **linearly separable** if there exist a weight vector $\mathbf{w}$ and a bias $b$ such that **for every** training example $(\mathbf{x}_i, y_i)$:
-$$
-y_i \cdot (\mathbf{w}^T \mathbf{x}_i + b) > 0
-$$
+A dataset is **linearly separable** if there exist a weight vector $\mathbf{w}$ and a bias $b$ such that **for every** training example $(\mathbf{x}_i, y_i)$: $y_i \cdot (\mathbf{w}^T \mathbf{x}_i + b) > 0$
+
 - So **all positive** examples ($y_i = +1$) lie on one side of the boundary, and **all negative** examples ($y_i = -1$) lie on the other.
 - In 2D the boundary is a **line**; in higher dimensions it is a **hyperplane**. If such a boundary exists, a Perceptron **can** perfectly classify the data.
 

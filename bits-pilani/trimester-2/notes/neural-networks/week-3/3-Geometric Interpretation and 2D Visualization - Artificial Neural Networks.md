@@ -12,10 +12,8 @@ By the end of this video you will:
 
 ## Decision Boundary in 2D
 
-In two dimensions, the Perceptron decision function is:
-$$
-w_1 x_1 + w_2 x_2 + b = 0
-$$
+In two dimensions, the Perceptron decision function is: $w_1 x_1 + w_2 x_2 + b = 0$
+
 This is the **equation of a straight line** in the $(x_1, x_2)$ plane.
 
 - Every point that **satisfies** this equation lies **on** the decision boundary.
