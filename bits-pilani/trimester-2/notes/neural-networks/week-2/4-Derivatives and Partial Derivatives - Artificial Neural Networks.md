@@ -25,10 +25,7 @@ By the end of this video you will:
 ### Simple Example
 
 - Line: $y = 5x$. At $x = 2$, $y = 10$. At $x = 2.001$, $y = 10.005$.
-- **Change in $y$** per **change in $x$:**
-  $$
-  \frac{\Delta y}{\Delta x} = \frac{10.005 - 10}{2.001 - 2} = \frac{0.005}{0.001} = 5.
-  $$
+- **Change in $y$** per **change in $x$**: $\frac{\Delta y}{\Delta x} = \frac{10.005 - 10}{2.001 - 2} = \frac{0.005}{0.001} = 5.$
 - So: if we change $x$ by 1 unit, $y$ changes by 5 units.
 
 ### Definition (Single Variable)

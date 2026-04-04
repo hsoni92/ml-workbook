@@ -48,6 +48,7 @@ So any real input is mapped to a value **strictly between 0 and 1** — ideal fo
 ## Logistic Neuron: Definition
 
 - **Structure:** Same as the Perceptron — we still compute a linear combination: $z = \mathbf{w}^T \mathbf{x} + b$
+
 - **Only change:** Instead of a **hard step**, we apply the **sigmoid**: $\hat{y} = \sigma(z) = \frac{1}{1 + e^{-z}}$
 - So the **only** difference from the Perceptron is the **activation function**. But this change **radically** alters the behavior of the output.
 
