@@ -10,3 +10,5 @@ training_experiments/fine_tuning/llm-finetune/outputs/*
 .secure_key
 *.log
 *.aux
+*.csv
+*.pdf
