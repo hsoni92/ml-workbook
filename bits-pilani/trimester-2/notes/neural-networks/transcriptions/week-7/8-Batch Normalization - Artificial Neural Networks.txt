@@ -1,0 +1,29 @@
+Hello everyone. Welcome back to Module 7 of Artificial Neural Networks. In this video,
+we will study batch normalization, which is a widely used technique in neural networks.
+By the end of this video, you will be able to understand why batch normalization was introduced,
+how it works mathematically, and why it often improves both training stability and generalization.
+Training deep neural networks can be challenging. As training progresses, the distributions of
+activations in different layers can shift, even when earlier layers change only slightly. This
+makes optimization harder, slows down convergence, and increases sensitivity to hyperparameters such
+as the learning rate and initialization. Batch normalization was introduced to address this
+instability during the training. The core idea behind batch normalization is to normalize layer
+inputs within each mini-batch. Specifically, activations are centered to have zero mean and
+scale to have unit variance. By keeping activations in a stable range, batch normalization makes training
+more predictable and helps gradients propagate more smoothly through the network. Now, let's briefly
+look at the mathematical formulation. For each mini-batch of activations, we compute the mean and the variance. And then, each activation is basically centered by subtracting the mean and dividing by the variance with a small epsilon for numerical stability.
+This normalization step ensures that the distribution of activations is consistent across training iterations. Importantly, batch normalization does not restrict the expressive power of the network. After normalization, two learnable parameters, a scale parameter gamma and a shift parameter beta are applied. These parameters,
+allow the network to recover any necessary scaling or shifting of activations. As a
+As a result, as a result, batch normalization, a scale of the network can represent.
+Although, it often improves generalization in practice. This happens because batch normalization
+happens because batch normalization relies on statistics computed from mini-batches.
+Since different mini-batches have slightly different statistics, this introduces noise
+into the training process. This noise acts as a form of implicit regularization, similar in spirit
+to dropout but arising naturally from the normalization process. In practice, batch
+normalization offers several advantages. It allows the use of higher learning rates,
+reduces sensitivity to initialization and often speeds up the convergence process.
+Because of its stabilizing effect, batch normalization can also reduce the need for
+other regularization techniques in some settings. Now, let us summarize the main points of this video.
+Batch normalization stabilizes activations during training, making the optimization easier and more
+reliable. At the same time, the noise introduced by batch statistics often leads to improved
+generalization, acting as an implicit regularizer. In the next video, we will study early stopping,
+a simple yet highly effective technique for preventing overfitting. Thank you.

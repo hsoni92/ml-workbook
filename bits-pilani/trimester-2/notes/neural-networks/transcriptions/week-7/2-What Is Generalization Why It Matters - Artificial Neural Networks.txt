@@ -1,0 +1,30 @@
+Hello everyone. Welcome back to module 7 of Artificial Neural Networks. In this video,
+we will focus on understanding what generalization means in neural networks and why does it matter.
+By the end of this video, you will be able to understand what generalization means in neural
+network context. You will be able to clearly distinguish between training error and generalization
+error and understand why good training performance alone does not guarantee a useful model. This
+distinction is fundamental because most of the challenges we will study in this module arise
+from this gap. Neural networks are always trained on a finite data set. However, the real goal of
+training is not to perform well on this data set but to perform well on new data that the model has
+never seen before. You would already be familiar with the concept of validation and test data set.
+A model generalization refers to the ability of a model to transfer what it has learned from the training data to unseen test data. A model generalizes well when it captures underlying patterns in the data rather than memorizing individual training examples or noise. It is important to distinguish between two different types of model performance. Training error measures how well the model fits the training data. It is important to distinguish between two different types of model performance.
+Training error measures how well the model fits the training data. And generalization error measures how well
+how well the model performs on unseen data such as validation or test data.
+These two errors can behave very differently during training.
+A model may achieve very low training error while still having a high generalization error,
+which means it looks good during training but fails when applied to new data.
+Modern neural networks have very high representational capacity.
+They can fit extremely complex patterns and in many cases, they can even fit random noise.
+This is especially problematic when the data set is limited or noisy.
+In such situations, the model may simply memorize the training data instead of learning meaningful structure that generalizes.
+As a result, strong training performance can sometimes be misleading.
+In real-world applications, models are deployed on future data that may differ from the training data.
+Users, environments and input distributions can all change over time.
+Because of this, generalization and not training accuracy is what ultimately determines whether the model is reliable and useful.
+Optimization techniques help models learn from data but generalization determines whether that learning transfers beyond the training set.
+Now, let us summarize the main points of this video.
+In real-world applications, generalization error tells us how well a model fits known data, while generalization error tells us how well it has actually learned.
+A useful neural network must balance both.
+This distinction naturally leads us to the concepts of under-fitting and over-fitting, which describe different failure modes in generalization.
+In the next video, we will explore these two concepts of under-fitting and over-fitting in detail.
+Thank you.

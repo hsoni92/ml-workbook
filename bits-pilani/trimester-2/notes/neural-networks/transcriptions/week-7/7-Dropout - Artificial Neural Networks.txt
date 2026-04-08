@@ -1,0 +1,27 @@
+Hello everyone. Welcome back to Module 7 of Artificial Neural Networks. In this video,
+we will discuss Dropout, a stochastic regularization technique widely used in neural networks.
+By the end of this video, you will be able to understand the intuition behind Dropout,
+how it acts as a regularization technique during training, and why it improves generalization.
+You will also be able to distinguish between training and inference while using Dropout.
+Let us start with why do we need Dropout. As neural networks grow larger, they become
+increasingly capable of overfitting. One common issue is that neurons start to co-adapt, meaning
+that certain neurons rely heavily on others to produce correct predictions. This makes the
+model fragile because it depends too strongly on specific activations. Dropout addresses this
+problem by reducing the model's reliance on any single neuron. The core idea behind Dropout is simple.
+During training, we randomly deactivate or drop a subset of neurons. Drop neurons do not
+participate in either the forward pass or backward pass for that training setup. For instance, like in this
+network, we can see that we have eliminated certain neurons in a particular iteration. So, no connections
+are made to these neurons. We are only connected to certain neurons only. While in another iteration,
+it might so happen that these neurons are deactivated while this neuron becomes active again.
+This dropping is done independently for each mini-batch, which means that the network architecture effectively
+changes slightly at every training iteration. Because different neurons are dropped at each training step,
+the model cannot rely on any fixed set of features. Instead, it is forced to learn redundant and distributed
+representations. From another perspective, dropout injects noise into the training process. This noise acts as a regularizer,
+preventing the model from fitting the training data too precisely. Now, let's look at it mathematically.
+Dropout can be described using a random mask, say M. Each neuron's output is multiplied by a binary random variable M,
+sample from a Bernoulli distribution. If the mask value is 1, the neuron remains active. If it is 0, the neuron is dropped. The parameter p controls the probability of keeping a neuron active. This formulation captures the randomness introduced by dropout during training. It is important to note that dropout is applied only during the training time.
+At inference, all neurons are active. To ensure that the expected activations remain consistent between training and inference, outputs are appropriately scaled. In practice, this is handled using a technique called inverted dropout where scaling is applied during training rather than inference. In practice, dropout rates must be chosen carefully.
+The vertical values range from about 0.1 to 0.3 for input layers and 0.3 to 0.5 for hidden layers. Dropout is less effective in very small networks and is often combined with other regularization techniques such as L2 regularization. Like most hyperparameters, dropout rates usually require tuning.
+Now, let us summarize the main points of this video. Dropout is a stochastic regularization technique that improves generalization by preventing neurons from co-adapting. During training, random subnetworks are effectively sampled from a larger network while inference uses the full network. In the next video, we will study batch normalization and understand how it also influences generalization.
+This also influences generalization, often acting as an implicit regularizer. Thank you.
+Thank you.

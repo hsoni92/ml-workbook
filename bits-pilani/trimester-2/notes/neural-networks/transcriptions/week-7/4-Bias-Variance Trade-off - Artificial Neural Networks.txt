@@ -1,0 +1,32 @@
+Hello everyone. Welcome back to Module 7 of Artificial Neural Networks. In this video,
+we will discuss bias and variance trade-off. By the end of this video, you will be able
+to explain the concepts of bias and variance, which help us understand why learning models
+fail to generalize. You will be able to relate bias and variance to underfitting and overfitting
+and understand why improving one aspect of a model's performance can sometimes worsen another.
+When a model makes errors on unseen data, those errors do not all come from the same source.
+Some errors arise because the model makes overly simple assumptions about the data.
+Other errors arise because the model is overly sensitive to the specific training examples it sees.
+The concept of bias and variance capture these two different sources of generalization error.
+Bias refers to the error introduced by simplifying assumptions made by a model.
+A high bias model is too rigid and unable to represent the true complexity of the data.
+As a result, it makes systematic errors regardless of how much training data it sees.
+High bias is typically associated with underfitting, where the model fails to capture important patterns in the data.
+Variance refers to how sensitive a model is to the particular training data it is given.
+A high variance model can change significantly when trained on slightly different data sets.
+Such models tend to fit noise along with meaningful signals, leading to unstable predictions on unseen data.
+High variance is commonly associated with overfitting.
+Bias and variance are not independent of each other.
+As you can see in this curve, as the model complexity increases, the bias reduces while the variance increases.
+On the other hand, when the model complexity decreases, the bias increases and the variance reduces.
+So there is a trade-off between the two.
+Improving one often versens the another one.
+We can now connect these ideas to the behaviors we have studied earlier.
+Underfitting occurs when bias is high and variance is low.
+Overfitting occurs when bias is low and variance is high.
+Good generalization lies in between these two extremes, where the model is flexible enough to capture patterns, but stable enough to ignore the noise.
+Now, let us summarize the main points of this video.
+Bias and variance provide a useful framework for understanding generalization errors.
+The goal in model design and training is to balance the two.
+This framework guides decisions about model complexity, data usage and training strategies.
+In the next video, we will discuss how we can recognize overfitting in practice and detect early warning signs.
+Thank you.

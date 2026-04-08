@@ -1,0 +1,16 @@
+Hello everyone. Welcome back to module 7 of Artificial Neural Networks. In this video,
+we will study data augmentation, which is a data level strategy used to improve generalization in
+neural network. By the end of this video, you will be able to understand what data augmentation is,
+why it is effective in improving generalization, and you will be able to identify common augmentation
+strategies across different data modalities. Neural networks typically require large and diverse
+data sets to generalize well. However, in many real-world problems, collecting large amounts of
+labeled data is expensive, time-consuming, or simply not feasible. When data is limited,
+models are more likely to overfit, learning specific details of the training set rather
+than general patterns. Data augmentation helps to address this limitation. The key idea behind data
+augmentation is to artificially increase the size and diversity of the training data set. This is done by
+applying transformations to existing data points that preserve their labels. Like, in this case of cat image, we can flip it, rotate, blur, change the exposure, contrast to create transformed images. Each of these transformed samples is treated as a new training example. By exposing the model to many realistic variations of the same underlying data, we encourage it to learn more robust data.
+data augmentation. Data augmentation works by increasing data diversity without changing the underlying task. It reduces overfitting by preventing the model from memorizing exact training samples. At the same time, it encourages the model to become invariant to small realistic changes in the input. As a result, the model learns features that are more stable and transferable to unseen data.
+The specific augmentation techniques depend on the data. For images, common techniques include rotations, flips, cropping, and color adjustments. For text data, augmentations may include synonym replacement or paraphrasing. For audio data, noise injection and time shifting are often used. In all these cases, it is critical that the augmentations preserve the data.
+data augmentation is especially useful when data sets are small. However, it must be applied carefully.
+However, it must be applied carefully. Poorly chosen augmentations that do not reflect real-world variations can confuse the model and hurt the performance. Domain knowledge plays an important role in deciding which transformations are appropriate. Now, let us summarize the main points of this video. Data augmentation increases the effective diversity of the training data and helps models to generalize better.
+It complements model level regularization techniques and is often a key component of successful training pipelines. In the next video, we will discuss training setup choices such as batch size and learning rate that also influence generalization. Thank you.

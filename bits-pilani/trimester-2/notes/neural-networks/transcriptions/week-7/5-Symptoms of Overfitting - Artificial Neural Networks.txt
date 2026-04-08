@@ -1,0 +1,17 @@
+Hello everyone. Welcome back to Module 7 of Artificial Neural Networks. In this video,
+we will discuss the symptoms of overfitting and how to recognize them in practice. By the end of
+this video, you will be able to identify common symptoms of overfitting during training, interpret
+training and validation behavior, and detect early warning signs before model performance degrades.
+Overfitting does not usually happen suddenly. In many cases, it develops gradually as the training
+progresses. Because training metrics often continue to improve, it can be difficult to notice overfitting
+if we focus only on the training performance. Detecting overfitting early helps us to
+avoid wasted computation and prevents us from selecting models that perform poorly in real-world
+settings. One of the clearest symptoms of overfitting appears when we compare training and validation
+curves. As we can see in this graph, as the model keeps on training, the training loss appears to
+decrease, while the validation loss stops improving or maybe after a point it starts increasing
+also. The growing gap between training and validation performance is a strong signal that the model is no longer learning
+patterns that generalize. Another common symptom of overfitting is instability in the validation metrics. Validation accuracy may fluctuate significantly from epoch to epoch. Small changes in the validation data or the random seed can lead to noticeably different results. This instability indicates that the model is overly sensitive to specific training examples it has seen.
+Overfitting can also be observed in the behavior of the model itself. Overfitting can also be observed in the behavior of the model itself. Such models often make highly confident predictions on training-like inputs but perform poorly on slightly different or shifted inputs. They may fail to generalize even to simple variations that a robust model should handle. This reflects memorization rather than meaningful learning.
+Overfitting can also make overfitting can also make overfitting. These include training high-capacity models on small or noisy datasets, training for too many epochs without proper monitoring, and using complex architectures without constraints. Overfitting is not caused by a single factor but by the interaction between the model, the data, and the training setup. Now, let us summarize the main points of this video.
+Overfitting has clear and observable symptoms. Overfitting has clear and observable symptoms. Monitoring validation performance is essential for detecting it. Recognizing these signals allows us to intervene before selecting or deploying a poor model. In the next video, we will study regularization techniques that help prevent overfitting and improve generalization. Thank you.
+Thank you.
