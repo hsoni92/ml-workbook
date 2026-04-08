@@ -1,0 +1,60 @@
+Hybrid & Multi-Cloud Architectures Transcript
+In the previous topic, we discussed public and private cloud. Now, let's take things a
+step further and talk about two very powerful deployment strategies used by our
+modern companies, hybrid cloud and multi-cloud architectures. These models exist
+because real-world businesses often need flexibility, security, cost optimization, and
+the ability to use the best of different cloud environments.
+Let's break them down one by one. First, hybrid cloud. A hybrid cloud is a combination
+of public cloud plus private cloud working together as one system.Think of it like having
+two environments, but they are connected and applications can move or interact
+between them. Why do companies use hybrid cloud? Because it gives them the best
+of both the worlds. For example, sensitive data can stay in the private cloud.
+Applications that need high scalability can run in the public cloud. Workloads can shift
+based on the demand. Costs can be optimized by placing different components in
+different environments.
+So, let's look into this from a simple real-world example. A hospital keeps patient
+medical records which are highly sensitive in a private cloud, but their appointment
+booking systems run on a public cloud because it needs scalability. Both systems talk
+to each other.
+Now, that is a hybrid cloud. Hybrid cloud is like having both a personal car and access
+to Uber. You use your own car for private or important trips and you use Uber
+whenever you need flexibility or additional capacity.You have freedom, control, and
+convenience all at the same time. Next, multi-cloud approach. Multi-cloud approach
+means a company uses multiple public cloud providers.
+For example, AWS, Azure, GCP. It can have multiple combinations of these. It could
+use AWS plus Azure.It could use GCP plus AWS or even all three in some cases. In
+multi-cloud, there is no private cloud involved. It's simply about using different cloud
+vendors for different purposes.
+Why do companies choose multi-cloud? There are several powerful reasons. The first
+one, avoid vendor lock-in. They don't want to depend on a single provider.They want
+to use the best tools from each cloud. For example, Google for AI, AWS for compute.
+Improve reliability also.
+If one cloud has an outage, the other cloud keeps services running. You can negotiate
+better pricing, real-world example. A global company may run its ML models on
+Google Cloud because of tensor flow optimizations.
+Its e-commerce platform on AWS because of scalability and its internal tools on Azure,
+which is again because of Microsoft integrations. Now, that is a multi-cloud. Multi-cloud
+is like having multiple credit cards from different banks.Each card gives different
+benefits. One gives cashback. One gives travel points.
+
+Page 1 of 2
+
+One gives you a premium lounge access. So, you use the best card for each situation.
+Let's try to compare hybrid versus multi-cloud.Many people confuse with these two,
+between the hybrid and the multi-cloud. So, let's make it extremely simple. Hybrid
+cloud is public cloud plus private cloud working together.
+Multi-cloud is multiple public clouds. Hybrid focuses on mixing environments. So,
+multi-cloud focuses on mixing providers.Where do companies use them? Hybrid cloud.
+Let's look into some couple of use cases like healthcare, finance, large enterprises,
+government. They need both scalability and strict control.
+Let's look into few examples for multi-cloud as well. Tech giants, AI companies, global
+service providers. They need the best features from multiple platforms.Let's try to
+summarize hybrid cloud and the multi-cloud. So, hybrid cloud gives you control plus
+flexibility. Multi-cloud gives you choice plus redundancy.
+Both the architectures are extremely common today because no single cloud provider
+fits all the business needs. Even though I am from Amazon, I would say AWS also
+does not fit all the business needs.
+
+-----------------------------------------------------End------------------------------------------------------
+
+Page 2 of 2

@@ -1,0 +1,64 @@
+Current Industry Trends in Cloud Adoption Transcript
+Now that we have explored all the foundations of cloud computing, let's wrap up this
+module by looking at the current industry trends shaping the future of cloud adoption.
+Cloud computing is constantly evolving and understanding these trends will help you
+see where the technology and the entire industry is heading towards. Let's go through
+the most important ones.
+The first trend, serverless computing. Serverless has become one of the fastestgrowing cloud trends. With serverless, developers don't manage servers at all.The
+cloud providers automatically handle the scaling, execution, and the availability. You
+only write a small piece of code called functions and the cloud runs them when needed.
+Some popular services we have within AWS is Lambda.
+Within Azure, we call it as functions. Within GCP, we call it cloud functions. All of these
+have different naming conventions, but the way they operate is absolutely the same.
+There's no difference in that. This approach reduces cost, increases speed, and
+removes operational overload also. Serverless is like having a professional cook who
+appears instantly whenever you're hungry, prepares the exact dish you want, and
+disappears the moment you're done.
+You pay only for what you eat. That is serverless computing. The next trend, cloud
+plus AI and ML integration.Every cloud provider is heavily investing in AI and machine
+learning services. Companies no longer need to build AI infrastructure from scratch.
+They can directly use pre-trained models, auto ML tools, AI APIs for speech, vision,
+or NLP, scalable GPU clusters, and many more actually.
+This makes AI development accessible to everyone from startups to large enterprises.
+AI and cloud are becoming inseparable now. You can call it the deadly combo.The
+next trend is edge computing. Edge computing is gaining momentum, especially for
+IoT and real-time processing. Instead of sending all data to the cloud, some processing
+happens near the device itself, at the edge, as the name says.
+This reduces latency and increases the speed. Some real-world examples, if I have to
+bring to your notice, self-driving cars, smart factories, medical devices, retail
+automation, smart city with edge computing, plus cloud, together create powerful
+hybrid architecture. Let's move on to the next trend, Kubernetes and containers.
+Everywhere, containers have become the standard way to deploy modern
+applications. Kubernetes has become the industry standard for managing these
+containers. Cloud providers offer fully managed Kubernetes services like AWS EKS,
+Azure AKS, or Google GKE.
+We are going to deep dive into this in the upcoming modules. But for now, you need
+to understand this allows companies to deploy applications consistently across
+environments and scale effortlessly. There is a concept called as self-restart and selfhealing in Kubernetes.
+Page 1 of 2
+
+That is something why every organization opts for this deployment strategy. The next
+trend, green cloud and sustainability. Cloud providers are focusing heavily on reducing
+carbon footprints.
+Many companies are adopting cloud because it is more energy efficient than running
+their own data centers. Because either ways, data centers are going to be there,
+whether you have your own or not. So sustainability is becoming one of the strongest
+drivers for cloud migration.
+And the last one, industry-specific clouds. We are now seeing cloud services
+customized for specific industries like healthcare cloud, banking and financial cloud,
+telecom cloud, retail cloud. So to summarize cloud computing, these platforms
+address the unique regulations, workflows, and compliance needed of each individual
+sector.
+Let's summarize cloud computing. So cloud computing is evolving rapidly and the
+major trends are shaping the future, which include serverless architectures, AI and ML
+integrations, edge computing, Kubernetes and containers, sustainability-driven cloud
+adoption, industry-specific cloud solutions, and many more. So cloud is no longer just
+a technology.
+It's becoming the foundation of innovation across every industry that we can point out.
+And with that, we conclude this module on cloud computing fundamentals. You now
+have a clear understanding of history, service models, deployment models, real-world
+applications, and the major trends shaping the future of cloud.
+
+-----------------------------------------------------End------------------------------------------------------
+
+Page 2 of 2

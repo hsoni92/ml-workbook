@@ -1,0 +1,57 @@
+Page 1 of 2
+What is Cloud & Key Traits Transcript
+Now that we understand how cloud computing evolved, let's move into actual definition
+of cloud computing and the core characteristics that make the cloud so powerful and
+so different from traditional computing. So, what is cloud computing? In simple terms,
+cloud computing is the delivery of computing services over the internet and you pay
+only for what you use. When these services can include servers, storage, databases,
+networking, analytics, AI tools and much more.
+Instead of buying hardware, instead of maintaining data centers, instead of hiring
+people to physically manage the servers, you simply use computing resources
+provided by the companies like Amazon, Microsoft or Google and you access
+everything through the internet. It's basically computing as a utility just like electricity
+or water. You turn it on when you need it, you turn it off when you don't.
+Now, cloud has three core characteristics that make it extremely powerful. Let's go
+through each of them in a simple and intuitive way. Number one, scalability.
+Scalability means the ability to grow and handle more load whenever needed. Imagine
+you launch a website and one day you have 100 users, but suddenly you get featured
+on Instagram and now 1 lakh people try to open your website. If you're running your
+own physical servers, they'll crash because your servers can't magically grow, right?
+But with cloud, increasing capacity is as simple as increasing the number of virtual
+servers.
+The cloud can instantly scale up your resources to handle the traffic. Let's try to
+understand it with a simple analogy. Scalability is like adding more chairs in a
+restaurant when more customers arrive.You expand as needed, right? That is the
+exact way how scalability works. Number two, elasticity. Elasticity means the system
+can scale up and scale down automatically based on real-time demand.
+For example, during Diwali or New Year sales, e-commerce websites experience huge
+spikes in traffic, maybe 5 times or 10 times the usual load. Cloud systems
+automatically increase capacity during the week and then reduce the capacity after
+the sale ends. When you're not paying for extra resources, when you don't need them,
+right? So basically, there's no need for you to pay extra resources when there is no
+need.
+So think of elasticity like a rubber band. It stretches when required and it returns to its
+original size when the pressure goes away. This is one of the main reasons companies
+save millions of dollars using cloud.Number three, on-demand self-service. This
+characteristic is all about speed and convenience. Earlier, if you need a new server,
+you would raise a ticket, wait for approvals, wait for procurement, wait for installation,
+and that could take days or even weeks.
+But in the cloud, you just log in, click a button, within seconds your server is ready to
+use. There's no physical setup, no waiting, and no dependency on IT teams, right?
+Page 2 of 2
+Let's try to understand this with a real-life example that we do on a daily basis,
+something like using Swiggy or Zomato. So you don't call the restaurant directly.You
+open the app, choose what you want, click, and it arrives. Of course, it's going to take
+some time, but it does. Cloud computing works the same way.
+Instant access whenever you need it. Now, let's connect these characteristics or traits
+with a quick real-world example. Imagine you are running a ride booking
+application.During office rush hours, thousands of users are active at the same time.
+But late at night, the number drops significantly. With cloud, your servers automatically
+scale up during peak hours and scale down during late night hours.
+So you save money, your app stays fast, and your users also stay happy. This is the
+beauty of scalability, elasticity, and on-demand services working together. So to
+summarize the topic, cloud computing means renting computing resources over the
+internet, paying only for what you use, and having the ability to scale instantly.
+Its three core characteristics, scalability, elasticity, and on-demand service make it one
+of the biggest revolutions in today's market.
+------------------------------------------------------End-----------------------------------------------------

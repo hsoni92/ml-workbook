@@ -1,0 +1,22 @@
+Hello everyone and welcome to this module on cloud computing fundamentals. In
+today's world, almost every digital service we use, whether it is Netflix, Uber, Gmail,
+Instagram or AI-powered tools, all of them are running on the cloud. Cloud computing
+has become the backbone of modern technology and understanding it is one of the
+most valuable skills for anyone in data science, software and IT.
+Now, if you are completely new to the cloud, don't worry, this module is designed
+exactly for the beginners. So, we are going to start from the very basics, build slowly,
+use analogies, real-world examples and by the end of this session, you'll have a solid
+practical understanding of cloud concepts. Here, what we are going to explore let's go
+through them one by one.
+First, we'll deep dive into how cloud computing evolved over the time, what cloud really
+means and its core characteristics, why companies around the world are rapidly
+adopting cloud, what are the three major service models and how does the
+responsibilities differ in each model. Different cloud deployment models like public,
+private, hybrid and multi-cloud. How organizations choose the right model, real-world
+applications of cloud in AI, IoT and modern web applications and finally case studies
+of companies like Netflix, Uber and Dropbox.
+Along with the latest trends, as you go through each topic, I'll keep the explanations
+simple, intuitive and relatable so you never feel lost or overwhelmed. Thinking of this
+module as the perfect foundation upon which we'll build more advanced cloud
+concepts later. So, with that, let's begin our journey into cloud computing starting with
+the history and evolution of the cloud.

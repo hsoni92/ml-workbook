@@ -1,0 +1,49 @@
+Comapring Service Models Transcript
+In previous topic, we understood what Infra, Platform and Software-as-a-Service are.
+Now let's take it step further and compare these service models based on
+responsibilities and use cases. This comparison will help you understand who
+manages what and why different companies choose different models.
+Let's start with the core idea. When you use cloud services, both you and the cloud
+provider share responsibilities. But how much responsibility you have completely
+depends on whether you are using Infra, Platform or Software-as-a-Service.Let's
+break down the responsibility layers. Imagine a stack with these components.
+Networking, Servers, Storage, Virtualization, OS, Runtime, Application and Data.
+Now watch how responsibilities shifts. In Infra-as-a-Service, the cloud provider
+manages the hardware, the network, the storage and virtualization layer. But you, the
+customer, manage everything above that.
+The operating system, the runtime, your application and your data. This means you
+have maximum control but also the most responsibility. Let's look into it from a reallife perspective.
+Companies migrating legacy systems that require custom OS configurations often
+choose Infra-as-a-Service. In Platform-as-a-Service, the provider manages more
+layers. The hardware, the virtualization, the operating system, the runtime and even
+scaling.
+You only manage your application code and your data. This makes Platform-as-aService great for developers who want to build and deploy quickly without worrying
+about server management. Startups focusing on fast development cycles like
+commonly choose Platform-as-a-Service.In Software-as-a-Service, the provider
+manages everything. Infra, Platform, Application itself, everything. You only use the
+software.
+This gives you zero maintenance and maximum convenience. Tools like Gmail, Zoom,
+Salesforce, all of them fall under Software-as-a-Service because customers just log in
+and use them. Let's simplify this with a simple analogy, the one which we commonly
+take, the most famous example by now, the housing example.
+Think of it like three types of living arrangements. Infra-as-a-Service is like renting an
+empty apartment. You get the structure but you take care of everything
+inside.Platform-as-a-Service is like renting a semi-furnished house. The furniture and
+basic setup are there so you can start living quickly. Software-as-a-Service is like
+staying in a hotel.
+Everything is managed for you. You simply enjoy the service. Each option has its
+purpose depending on what you need.
+
+Page 1 of 2
+
+Let's have a quick comparison and a summary of what we have learned. If you want
+control, you choose Infra-as-a-Service. If you want speed of development, you choose
+Platform-as-a-Service.It is ease of use if that is your priority. You want to use it without
+any hesitation, without any handouts. You choose Software-as-a-Service.
+Most modern companies use a combination of all three because each model helps
+solve a different business problem. So that completes our clear comparison of Infra,
+Platform and Software along with who is responsible for what.
+
+------------------------------------------------------End-----------------------------------------------------
+
+Page 2 of 2

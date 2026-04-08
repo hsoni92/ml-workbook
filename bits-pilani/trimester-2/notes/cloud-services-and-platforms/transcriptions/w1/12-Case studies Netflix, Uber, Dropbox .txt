@@ -1,0 +1,53 @@
+Case studies Netflix, Uber, Dropbox Transcript
+Now, let's bring everything together by looking at some real-world case studies.
+Understanding how global companies use cloud computing gives us a clear picture of
+cloud's impact. We can understand the scale and importance.
+We'll look at three very popular companies which is Netflix, Uber and Dropbox. Each
+of them depends heavily on the cloud but in very different ways. Let's start with a
+company we all know, Netflix.
+Streaming for the entire world, Netflix is one of the largest video streaming platforms
+on the planet. Every minute, millions of users are watching movies and shows from
+different regions on different devices in different network conditions. To support this
+massive global audience, Netflix migrated completely to AWS.
+Why? Because AWS provided exactly what they needed. Massive scalability during
+high traffic events, global content delivery using CloudFront, high availability to prevent
+interruptions, elastic capacity to handle sudden surges, storage for huge video
+libraries, analytics to recommend shows to users whenever a new season or a popular
+series like Stranger Things drops traffic spike instantly. So, with cloud auto-scaling,
+Netflix handles this load seamlessly.
+Netflix uses the cloud like a giant cinema hall that can magically expand whenever
+more views walk in. Cloud computing is the only way they can operate at this global
+scale. Let's go on to the next one, Uber.
+Real-time rides powered by cloud next. Let's talk about Uber in a much more detail. A
+company that relies on real-time data more than almost any other business.
+Every second Uber has to track drivers and riders, calculate accurate pickup and dropoff points, match riders with nearby drivers, predict arrival times, adjust search pricing,
+process payments, maintain safety features, handle messaging and notifications. All
+of this happens at massive scale across hundreds of cities. Uber uses cloud because
+it provides low latency, which is crucial for real-time tracking, instant scalability,
+especially during peak hours, a global infrastructure allowing them to launch in new
+markets quickly, data analytics for routing and demand prediction, and then without
+cloud computing, this real-time ride matching would never be possible.
+Right? So, user uses the cloud like a giant traffic control centre that never sleeps,
+constantly coordinating millions of micro-interactions. Let's go on to the next one,
+Dropbox, a file storage and global synchronisation. One of the earliest large-scale
+cloud storage companies, Dropbox allows users to store files, sync them across
+devices, share them with others, and collaborate in real-time.
+To do this efficiently, Dropbox relies on cloud-based storage systems. Not only that, it
+also relies on backup solutions, authentication services, global content delivery,
+collaboration tools, redundancy, and failover. So, there are many things like this.
+
+Page 1 of 2
+
+When a user updates a file on one device, that change needs to be reflected instantly
+on their other device. Cloud infrastructure makes this synchronisation fast, reliable,
+and globally available. Dropbox uses the cloud like an intelligent global filing cabinet.
+Eventually, that updates itself instantly wherever you are. Now, why do these case
+studies matter? Because these companies demonstrate the strengths of cloud. Netflix,
+scalability and global distribution.
+Uber, real-time processing and low latency. Dropbox, storage, syncing, and
+collaboration. None of these businesses could operate the way they do today without
+cloud computing.
+
+------------------------------------------------------End-----------------------------------------------------
+
+Page 2 of 2

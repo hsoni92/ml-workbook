@@ -1,0 +1,53 @@
+Cloud in Real-World Applications Transcript
+Now, let's look at how cloud computing is used in the real world across areas like AI,
+ML, IoT, and modern web applications. We use cloud services every single day without
+even realizing it. Understanding these real-world applications makes cloud computing
+feel much more practical and meaningful.
+Let's break this down into three major categories. The first one, cloud in artificial
+intelligence and machine learning. Workloads require huge computing power,
+especially when training large models or processing massive data sets.
+Buying physical GPU servers is extremely expensive and maintaining them is even
+more challenging. This is where cloud platforms shine. Cloud providers offer highperformance GPU and TPU instances also.
+They also offer distributed training environments. We can manage ML platforms like
+AWS SageMaker or Azure ML, Google Vertex AI. So, there are many pre-built AI
+services for vision, speech, NLP, and predictions as well.
+This allows companies to build AI products without worrying about the infrastructure.
+Let's look into it from a real-world example. A fintech startup predicting loan defaults
+can train machine learning models on cloud GPU clusters within hours or instead of
+days or weeks on a local machine.
+Cloud for AI is like renting a supercomputer for a few hours instead of buying one.
+Now, let's look into the next one, cloud in IoT, internet of things. IoT involves billions
+of devices sending real-time data like smart home devices, security cameras, fitness
+trackers, car sensors, industrial machines, everything.Now, imagine managing all that
+data locally. It's impossible, right? So, cloud providers provide IoT device
+management. So, these are real-time data ingestions.
+These can be used for data storage and analytics pipelines. We can also extend them
+with event processing and automation, security, and access control as well. Smart city
+systems use cloud services to collect data from streetlights or CCTV networks, water
+meters, and even sometimes from public transport sensors.
+And then, later on, they analyze it to improve the city operations. IoT without cloud is
+like having millions of phones but no mobile cars. Everything needs a central scalable
+platform and that is the cloud.
+The next one, cloud for web and mobile applications. This is the most common and
+visible application. Almost every app we use today depends on cloud for hosting
+servers, storing any data, authentication and login services, any kind of media
+streaming, or sending out notifications, managing databases, live streaming, content
+delivery networks, and many more.
+Whether it is Instagram, Swiggy, Zomato, Hotstar, or Paytm, their backend runs on
+cloud infrastructure. A food delivery app scales up during lunch and dinner hours.
+
+Page 1 of 2
+
+When orders spike and scale down late at night, they'll be saving the cost while
+maintaining the speed.
+So, cloud for web applications is like having an automatically expanding restaurant
+kitchen. When more orders come in, more cooking stations appear instantly. So, let's
+have a quick summary of this cloud computing.
+This enables AI and ML model training on powerful GPU clusters, IoT data collection,
+and real-time analytics, fast scalable global web applications. These real-world use
+cases that the cloud is not, show us that the cloud is not just a buzzword. It is the
+backbone of modern digital life.
+
+-----------------------------------------------------End------------------------------------------------------
+
+Page 2 of 2
