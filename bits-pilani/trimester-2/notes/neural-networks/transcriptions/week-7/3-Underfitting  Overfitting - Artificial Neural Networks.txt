@@ -1,0 +1,35 @@
+Hello everyone. Welcome back to Module 7 of Artificial Neural Networks. In this video,
+we will study two common failure modes in neural network training, which is underfitting and
+overfitting. By the end of this video, you will be able to understand the concepts of
+underfitting and overfitting, understand why these behaviors occur and recognize how model
+capacity and data influence them. And finally, you will be able to identify whether a model is
+underfitting or overfitting using the training performance. These concepts are fundamental to
+understanding how neural networks generalize. When we train a neural network, the goal is not just
+to fit the data, but to fit it appropriately. A model that is too simple may fail to capture
+important patterns in the data, while a model that is too complex may capture patterns that do not
+generalize beyond the training set. Both these situations lead to poor generalization. So, the
+key question is not whether the model fits the data, but how it fits the data.
+Let us start with underfitting. Underfitting occurs when a model is too simple for the task. In this case,
+the model is unable to capture the underlying structure of the data. As you can see in this image,
+we have just fit a straight line to these points instead of learning the pattern in the data. As a
+result, the model performs poorly on the training data and also poorly on unseen data. Common reasons for
+underfitting include: Insufficient model capacity, overly restrictive assumptions, inadequate features, or excessive regularization. In essence, the model has not learned enough from the data. Another problem is overfitting, which occurs when a model is too complex for the data.
+Another problem is overfitting, which occurs when a model is too complex relative
+In this case, the model is too complex. In this case, the model fits the training data extremely well, often achieving very low training
+error. However, instead of learning general patterns, as you can see in this image, the model starts to memorize noise and spurious details specific to the training set. As a result, performance on unseen data degrades, even though training performance looks excellent. Now, we can clear the data. In this case, the model fits the training data extremely well, often achieving very low training error. In this case, the model fits the training data extremely well, often achieving very low training error.
+error. However, instead of learning general patterns, as you can see in this image, the model
+starts to memorize noise and spurious details specific to the training set. As a result,
+performance on unseen data degrades, even though training performance looks excellent.
+Now, we can clearly distinguish between these behaviors by comparing training and generalization
+errors. In underfitting, both training error and generalization error are high. In a well-fit
+model, both the errors are low. In overfitting, training error is low but generalization error is
+high. This simple comparison provides a powerful diagnostic tool for understanding the model
+behavior. Model capacity refers to the expressive power of a neural network.
+Low-capacity models struggle to represent complex patterns and are prone to underfitting. High-capacity
+models can represent very complex functions which increases the risk of overfitting, especially when
+the data is limited or noisy. Importantly, the same model can underfit or overfit depending on the
+amount and quality of data available. This highlights that underfitting and overfitting are not just
+properties of the model but of the model and data combination. Now, let us summarize the main points of this video.
+Underfitting and overfitting represent two different ways in which models can fail to generalize. Both arise from an imbalance
+between model capacity and data. Understanding this balance is critical for building reliable neural networks. In the next video, we will formalize this idea using the bias-variance trade-off which provides a theoretical framework for understanding these behaviors. Thank you.
+Thank you.

@@ -1,0 +1,35 @@
+Hello everyone. Welcome back to module 7 of Artificial Neural Networks. In this video,
+we will discuss regularization, which is essential for improving generalization in neural network
+training. By the end of this video, you will be able to understand why regularization is needed,
+write down the mathematical formulation of L1 and L2 regularization, and interpret how these
+techniques influence model behavior. As we saw earlier, modern neural networks often have very
+high capacity. While optimization techniques help minimize training loss, they do not prevent the
+model from overfitting. In other words, optimization answers the question how to reduce the loss,
+but not which solutions are preferable. Regularization addresses this by explicitly
+constraining the learning process, biasing the model towards simpler and more generalizable solutions.
+Mathematically, regularization is introduced directly into the objective function. Instead
+of minimizing only the data loss, we minimize a regularized loss that includes a penalty for
+model complexity. The total loss is written as the data loss plus the regularization term which is scaled
+by the parameter lambda. The parameter lambda controls the trade-off between fitting the data well and keeping the model simple. A larger lambda places more emphasis on simplicity while a smaller lambda prioritizes data fit. Now, let us start with L2 regularization, also known as weight decay. In L2 regularization, the penalty term is the sum of the score.
+values of the model weights. This means that large weights are penalized more heavily than
+smaller ones. As a result, the optimization process naturally favors solutions where weights
+are small and distributed across many features. L2 regularization is widely used in deep learning
+because it leads to smooth stable models and improves generalization. Now, let us try to
+understand how it looks visually. Let us say we have two model parameters, beta1 and beta2.
+These concentric ellipses, they represent the values of the unregularized loss function.
+The center of these ellipses, this dot, indicates the optimal weights if there were no regularization
+penalty. As you move outward from the center, the loss value increases. This circular region,
+it represents the L2 penalty which is the sum of the squared weights. The model is constrained to
+find a solution within this L2 ball or on its boundary. The optimal regularized weights are
+found at the very first point where the smallest possible loss contour ellipse touches the L2
+constraint circle which is given by this point here. An important property of L2 regularization is that
+it shrinks weights continuously towards zero. However, it does not force weights to become exactly zero. This is because of the smooth circular boundary of the L2 node. L2 regularization reduces the influence of any single parameter, making the model less sensitive to noise in the data. This leads to smoother decision boundaries and more stable predictions on unseen data.
+Next comes L1 regularization. L1 regularization takes a slightly different approach. Here, the penalty term is the sum of the absolute values of the weights, as we can see here. This one.
+Because of this absolute value penalty, it encourages sparsity. During training, many weights are driven exactly to zero, effectively removing some features from the model. Now, let's look at it geometrically. In contrast to L2, L1 regularization has a diamond-shaped constraint region with sharp corners on the axis. So, this is the region that we are talking about.
+This geometry makes it highly probable that the intersection point will fall directly on a corner, forcing some weights to become exactly zero, thereby performing feature selection. From a mathematical perspective, the key difference between L1 and L2 lies in the shape of their penalty functions.
+In contrast, L2 regularization has a smooth quadratic penalty, which leads to gradual shrinking of weights, while L1 regularization has sharp corners due to the absolute value, which causes some weights to collapse exactly to zero.
+Because of these properties, L2 is more commonly used in deep neural networks, while L1 is often used when sparsity is desired.
+Now, let's summarize the main points of this video.
+Now, let's summarize the main points of this video. Regularization modifies the training objective to control model complexity. L2 regularization discourages large weights in a smooth and stable way, while L1 regularization promotes sparsity by eliminating unnecessary parameters. Both the techniques help improve generalization by preventing over-fitting.
+In the next video, we will study dropout, a stochastic regularization technique that is especially effective in deep neural networks. Thank you.
+Thank you.
