@@ -1,0 +1,48 @@
+Choosing the Right Cloud Model Transcript
+Now that we've explored public, private, hybrid and multi-cloud architectures, the next
+logical question is how do we decide which deployment model to use? What factors
+actually influence this choice? This is an extremely important topic because every
+organisation has different needs and the cloud model they select must align with their
+business security and operational goals. So let's break the decision-making process
+into four simple factors. First one, cost and budget.
+If an organisation wants the lowest upfront cost, minimal maintenance and pay-asyou-go model, then public cloud is the best option for them. Startups, small businesses
+and fast-growing companies usually go with public cloud because it gives them
+maximum flexibility with minimum cost. On the other hand, private cloud requires
+significant investment in hardware, data centres and IT teams.
+So it's mainly chosen by large enterprises that need the full control. The next factor,
+security and compliance. Some industries like banking, government and healthcare
+deal with very sensitive and regulated data.
+They cannot risk storing certain types of information in a multi-tenant environment. So
+if a company has strict compliance requirements or deals with high confidential data,
+the choice is usually private cloud or hybrid cloud. Hybrid cloud allows them to keep
+sensitive data privately while using public cloud for scalable workloads.
+That's the reason they could use both. The third factor, performance and scalability. If
+an application often experiences traffic spikes, for example, an e-commerce site during
+festival sales or a ticket booking application during event releases.
+You can even take the example of an IRCTC train bookings as well. The best choice
+is public cloud because of its elasticity and global infrastructure. Private cloud can
+struggle with rapid dynamic scaling because you are limited by your own hardware.
+Hybrid cloud can also work here like you keep core systems private but burst into the
+public cloud when demand increases. Factor number four, vendor strategy and
+technical requirements. If a company wants the best tools from different cloud
+providers or wants to avoid depending on a single vendor, which we also call it as
+vendor lock-in, then multi-cloud becomes the ideal choice.
+For example, you can use AWS for compute, you can use Google Cloud GCP for AI
+and ML, you can use Azure for Microsoft integrations and multi-cloud also helps with
+the redundancy in this case. If one cloud has an outage, workloads can shift to another
+cloud. Let's summarise the decision factors with a simple guide.
+Choose public cloud when you want cost efficiency, scalability, global reach and fast
+deployment. Choose private cloud when you need strict data control, security and
+compliance. Choose hybrid cloud when you want the best of both the worlds.
+
+Page 1 of 2
+
+Control for sensitive systems, scalability for public facing applications and finally
+choose multi-cloud when you want to use the strengths of different providers or want
+to avoid vendor lock-in. In the next lesson, we'll explore some real-world applications
+of cloud computing including how AI, IoT and modern web applications rely heavily on
+these cloud technologies.
+
+------------------------------------------------------End-----------------------------------------------------
+
+Page 2 of 2

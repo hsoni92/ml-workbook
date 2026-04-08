@@ -1,0 +1,53 @@
+Cloud Evolution Overview Transcript:
+Welcome everyone. In this session, let's start by understanding the history and
+evolution of cloud computing. Because before we talk about what cloud is today, it's
+important to know where it actually came from and why it became such a big deal.
+So let's go back in time all the way to 1960s. During this period, computers were
+massive, expensive and very much costlier machines. Organizations couldn't afford to
+buy multiple systems.
+So what they did instead of something called time sharing. Multiple people would share
+one single computer, each getting a small window of time to run their programs. And
+even though it looked very primitive compared to today, this idea of sharing a powerful
+computing resource was actually the first spark of what we now call cloud computing.
+Now, let's move ahead to the 1990s. This is where things start getting interesting. A
+company called VMware introduced the concept of virtualization, which basically
+means one physical server can run multiple servers on top of it.This completely
+transformed computing. Why? Because companies no longer needed one more
+physical server for their application. They could split a single server into multiple virtual
+machines.
+This made computing cheaper, more flexible and much more efficient. Now, the
+turning point comes in 2006. Amazon, yes, the same Amazon we all shop on, launched
+its cloud platform called Amazon Web Services or AWS.
+For the first time ever, companies could rent servers over the internet instead of buying
+them. Imagine needing a server at 2 a.m. Earlier, you would need a data center, an IT
+team and expensive hardware. But now with AWS, you could simply click a button and
+boom, a server was ready in seconds.
+This single moment changed everything. Startups suddenly had no upfront cost. Large
+companies could innovate faster and cloud companies officially entered the modern
+era.By 2010, cloud adoption exploded. Microsoft launched Azure. Google launched
+Google Cloud.
+Companies around the world realized that cloud wasn't just a trend. It was the future.
+And today, cloud computing is literally everywhere around us.When you watch a movie
+on Netflix, that's cloud. When you book a cab on Uber, that's cloud. When you save a
+file on Google Drive or Dropbox, that is also cloud.
+So when AI models are trained, that happens on cloud GPU clusters. Cloud is
+powering banking, healthcare, gaming, education, entertainment, and many more
+industries like this. Basically, every digital service we use daily.
+Now, let me give you a simple analogy to wrap this up. Think of cloud computing like
+using Uber instead of buying a car. If you buy a car, you handle maintenance, repairs,
+fuel, insurance, everything.
+
+If you use Uber, you pay only when you need a ride. When you don't own the car, you
+don't maintain it. So you don't worry about the repairs as well.Cloud computing works
+the same way. Instead of buying and maintaining physical servers, companies use
+cloud services only when they need them. And that makes cloud incredibly efficient
+and cost effective.
+Finally, let's look at a real world scenario. Imagine a new startup launching an
+application. If they had to buy physical servers, it might cost them 20 million or more
+upfront.
+But with cloud, they can start with just a few couple of dollars, scale up as a user
+grows, pay only for what they actually use. This flexibility is exactly why cloud
+computing has become the backbone of modern digital businesses. So that's the
+evolution from time sharing in 1960s to virtualization in 1990s to AWS in 2006.
+The cloud powered world we live in today.
+------------------------------------------------------End-----------------------------------------------------

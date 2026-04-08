@@ -1,0 +1,52 @@
+Shared Responsibility Model Transcript
+Now let's move into concept that is absolutely essential for anyone using cloud
+services, the shared responsibility model. This model clearly defines what the cloud
+provider is responsible for and what you the customer are responsible for and
+understanding this correctly is extremely important especially when it comes to
+security. So let's break it down in simple and intuitive way again.
+First, what does the cloud provider handle? The providers whether it is AWS, Azure
+or GCP, all of them are responsible for the security of the cloud. When I say security
+of the cloud, this includes physical data centers, servers and hardware, networking
+equipment, power cooling and physical access. This can also involve global cloud
+infrastructure, virtualization layers, hypervisors, basically everything related to
+physical environment and the foundational infrastructure that is handled by the
+provider.
+The idea is simple, you should never have to worry about someone walking into an
+AWS data center and unplugging the server, they take care of that. Now what are you
+responsible for? You the customer are responsible for security in the cloud. When I
+say security in the cloud, this includes your data, your application logic, your user
+management, your network configurations like the security groups, firewalls,
+encryption settings and if you are managing any operating systems for patching like
+infra as a service, so securing your user accounts, properly configuring your cloud
+resources.
+So if you accidentally make any kind of a resource publicly available, it is your
+responsibility, not the providers. The cloud is secure but your configuration determines
+which security has been compromised or not within the cloud. Let's make this even
+clearer with a real world example.
+Imagine you live in a high security apartment, the building has security guards, CCTV
+cameras, locked gates, emergency systems, everything is there. That's a cloud
+provider's job, protecting the building and the environment basically. But inside your
+apartment, it's your responsibility to lock your door, secure your valuables, install a
+safe if you need one, not leave the windows open if someone enters your apartment
+because you left the door unlocked.
+You can't blame the building management for it, right? So same logic applies in cloud
+computing also. Let's look at a quick real-world scenario. Suppose a company stores
+sensitive data in one of the storage services like S3 bucket in AWS.
+AWS ensures the S3 service itself is secure. The infra, the storage hardware, network,
+everything on their side is secure. But if the company sets the permissions incorrectly
+and makes it publicly accessible, then the data becomes exposed.
+And this exact mistake has happened many times in the real world. So the shared
+responsibility model helps prevent confusion. It clarifies what each side must handle.
+
+Page 1 of 2
+
+Here's a quick summary. Cloud provider, security of the cloud. Customer, security in
+the cloud.This model gives companies flexibility. You decide your security settings,
+your access policies, your encryption, and your data protection strategies. So that's
+the shared responsibility model.
+Simple but absolutely crucial for safe cloud usage. In the next lesson, we'll look at the
+different cloud deployment models which is public, private, hybrid, and multi-cloud.
+
+----------------------------------------------------End-------------------------------------------------------
+
+Page 2 of 2

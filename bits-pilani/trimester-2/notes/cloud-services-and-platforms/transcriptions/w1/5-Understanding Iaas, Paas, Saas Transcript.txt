@@ -1,0 +1,65 @@
+Understanding Iaas, Paas, Saas Transcript
+Now that we understand why cloud adoption has become so important, let's talk about
+one of the most fundamental concepts in cloud computing. The three major service
+models, infra as a service, platform as a service, software as a service. These models
+define how much of the system the cloud provider manages and how much the
+customer manages.
+Understanding these clearly will make the rest of the cloud computing much easier.
+Let's break them down one by one in the simplest and most intuitive way. The first
+one, infra as a service.
+This is the most basic layer of cloud computing. Here, the cloud provider gives you
+virtual machines, storage, networks, load balancers, and basic computing
+infrastructure. You control the operating system, you install the software, you configure
+security, you manage the updates.
+The provider only gives you the raw infrastructure. A few popular examples of infra as
+a service are within AWS, we have EC2 instance, or within Azure, we have virtual
+machines. Within Google, we have compute engine.
+We're going to take a look into all of these services in upcoming modules, just giving
+you a heads up. Let's take a simple analogy. Imagine renting an empty apartment.The
+building is provided, electricity is provided, water is provided, but inside, you decide
+everything. You bring your furniture, you set up the rooms, you maintain the interiors.
+That is exactly how infra as a software works.
+You get the building, but the setup inside is your responsibility. Let's look into this with
+a real world use case. A company migrating old applications that need full control over
+the server environment often choose infra as a service.
+Let's go through the next one. Platform as a service. Platform as a service, PaaS,
+which stands for platform, gives developer a ready-made platform to build and deploy
+applications.
+Here, the cloud provider manages servers, OS, which is the operating system,
+middleware, runtime, environments, automatic scaling, patching, updates. You only
+write your application code and deploy it straight away. Some of the common
+examples within this AWS, we have a service called Elastic Beanstack.
+But I understand, since you guys haven't covered the services of AWS yet, so let me
+make you understand with a simple analogy once again. Think of renting a fully
+furnished apartment. You just walk in with your bag, place your clothes, cupboard, and
+start living.You don't worry about buying furniture, installing lights, or painting the walls.
+All the essentials are already set up for you. That's platform as a underlying
+infrastructure.
+
+Page 1 of 2
+
+Let's look into this with a real-world use case. A startup building a new web application
+can deploy it quickly on platform as a service without hiring infrastructure engineers.
+Let's go on to the third one.
+Finally, we have software as a service, which is most user-friendly model. With SaaS,
+you don't manage any infrastructure or platform. You simply use a complete software
+product delivered over the internet.
+Some very popular examples are Gmail, Zoom, Office 365, Dropbox, and many more.
+A simple analogy for software as a service is like staying in a hotel. You don't clean
+the room, you don't manage the building, you don't do any repairs at all.
+You simply use the room, enjoy the service. SaaS is perfect when you want a readyto-use application without worrying about installation, configuration, or management.
+Companies use SaaS tools for HR systems, email services, CRM, video conferencing,
+and even for file storage also.
+Why understanding these models matter? When we move forward into cloud
+architecture or into deployment models or into cost optimization, these service models
+form the base of everything. Knowing the difference between infra as a service,
+platform as a service, and software as a service help you understand who handles
+what, where your responsibilities lie, and how to choose the right resolution for your
+business needs. So that's a complete clear breakdown of infra, platform, and software
+as a service.
+In the next topic, we are going to compare these models in more depth and see how
+responsibilities differ in each layer.
+
+------------------------------------------------------End-----------------------------------------------------
+
+Page 2 of 2

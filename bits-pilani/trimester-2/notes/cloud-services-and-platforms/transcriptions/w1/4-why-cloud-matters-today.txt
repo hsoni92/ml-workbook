@@ -1,0 +1,62 @@
+Why Cloud Matters Today Transcript
+Now that we know what cloud computing is and what makes it so powerful, let's talk
+about why companies are adopting cloud so rapidly and why cloud has become
+essential in the real world. There are many reasons for cloud adoption but let's break
+them down into simple relatable drivers so that the concept becomes crystal clear.
+Driver number one, cost savings.
+Traditionally, companies had to buy physical servers, maintain them, upgrade them
+and pay for large IT teams just to keep everything running. This required huge upfront
+investments, sometimes even in millions. But with cloud, companies switched to a payas-you-go model.
+There is no upfront cost, no maintenance, no hardware failures, no need for a big data
+center. Companies pay only for what they actually use and this saves them enormous
+amount of money. Driver number two, fast innovation and speed to market.
+Earlier, if a company wanted to launch a new product or a service, setting up the
+required infrastructure could take weeks or even months. But with cloud, everything is
+available instantly. Need a server? Click.Need a database? Click. You need a load
+balancer? Click. Need any AI or ML tools? Click.
+This speed allows companies to innovate quickly, experiment and bring new futures
+to customers faster than ever before. In the world of technology, speed is everything
+and cloud provides that speed. Driver number three, scalability and elasticity.
+We already discussed scalability and elasticity earlier, but let's look at their business
+impact. Imagine a company running a big sale event. The traffic suddenly goes 20
+times higher than usual.
+Without cloud, their systems would crash. With cloud, resources automatically scale
+up to handle the traffic and scale down when the load reduces. This ensures smooth
+performance, happy customers and zero downtime.
+Driver number four, global reach. With cloud, companies can make their applications
+available anywhere in the world in just a few clicks. If a company wants to expand from
+India to Europe or the US, they don't need to set up physical data centers in those
+countries.
+Cloud providers already have data centers across the globe. This allows businesses
+to reach international users instantly and with better performance and lower latency.
+Driver number five, reliability and high availability.
+Cloud platforms are designed to be highly fault tolerant. If one server fails, another
+one takes its place automatically. If one region goes down, traffic can be routed to
+another region.This level of reliability is extremely hard and expensive to achieve in
+traditional on-premise environments. For businesses, reliability means fewer outages,
+Page 2 of 2
+better customer trust and smoother operations. Driver number six, security and
+compliance.
+Cloud providers invest billions of dollars into security. They have the best tools, the
+best experts and the strongest security practices. While customers still have
+responsibilities, which we'll discuss in the shared responsibility model, the cloud
+provides more world-class protection for infrastructure.
+This is especially important for industries like banking, healthcare and e-commerce.
+Now, let's look at real-world relevance with a simple example. During the COVID-19
+pandemic, many companies shifted to remote work.
+I'm sure most of you have also shifted. Suddenly, they needed tools like video
+conferencing, file sharing, messaging, all sorts of collaboration tools. All of this was
+possible only because of the cloud.
+Companies that were already on cloud adapted quickly, but companies that relied on
+physical data centers have struggled a lot. This event clearly showed the world that
+cloud is not optional anymore. It is a necessity.
+Another example, a fintech startup wants to launch an application to serve customers
+across India. If they had to buy servers, set up data centers and hire large IT teams,
+they would need months and millions of rupees. But with cloud, they can launch within
+days, scale automatically and pay only for what they use.
+This is why almost every startup born today is born on the cloud. So, in summary,
+cloud adoption is driven by cost savings, fast innovation, scalability, global reach,
+reliability, and strong security. And in today's world, cloud computing is not just a
+technology trend.
+It is the backbone of almost every digital service that we depend on.
+-----------------------------------------------------End------------------------------------------------------

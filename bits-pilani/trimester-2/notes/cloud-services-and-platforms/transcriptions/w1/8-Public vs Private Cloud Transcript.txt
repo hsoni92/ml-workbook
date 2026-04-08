@@ -1,0 +1,42 @@
+Public vs Private Cloud Transcript
+Now let's talk about something very important for cloud architecture decisions. The
+difference between public cloud and private cloud. These two deployment models
+represent different ways companies choose to run their applications and data
+depending on their needs, budget and security requirements.
+Let's break them down in simplest way. First, public cloud. A public cloud is where
+cloud services are delivered over the internet and the underlying infrastructure is
+shared among multiple customers.
+This doesn't mean your data mixes with others. It simply means everyone is using the
+same large cloud platform. Examples of public cloud providers AWS, Microsoft Azure,
+GCP from Google, all of these fall under public cloud.You pay only for what you use.
+There is no hardware to buy, no servers to maintain and no physical setup to worry
+about. This model is perfect for companies that want scalability, flexibility and low
+upfront cost.
+Using a public cloud is like going to a public gym. You don't own the equipment, but
+you get full access wherever you need it. Someone else handles the maintenance,
+cleaning and upgrades.You just use the services. Next, private cloud. A private cloud
+is dedicated to a single organization.
+This means the entire infrastructure, servers, storage, networking, all of these are used
+only by one organization. A private cloud can be hosted in company's own data
+centers, managed by third-party provider or even built on technologies like VMware or
+OpenStack. Companies choose private cloud when they need full control, high
+security, strict compliance, custom configurations.
+When you need all these parameters, that is when companies opt for private cloud. A
+private cloud is like having a personal home gym. All the equipment is yours.No one
+else uses it and you control everything. The setup, rules, environment, everything.
+When do companies choose each model? If a company wants fast scaling, lower cost,
+less maintenance, quick global access, they choose the public cloud.
+If a company has sensitive data, strict government regulations, security heavy
+operations or industry compliance requirements, they choose a private cloud. For
+example, banks, government agencies, all of these often prefer private cloud due to
+regulatory needs, while startups and tech companies prefer public cloud for flexibility.
+Let me summarize that for you.
+Public cloud is a shared infrastructure, pay-as-you-go, high flexibility. In the private
+cloud, you get dedicated infrastructure, high control, high security. Both the models
+are useful and both are widely used depending on the business needs.
+
+-------------------------------------------------------End----------------------------------------------------
+
+Page 1 of 2
+
+Page 2 of 2
