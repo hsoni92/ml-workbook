@@ -1,0 +1,20 @@
+Hello everyone. Welcome back to Module 8 of Artificial Neural Networks. In this video, we will walk through a complete end-to-end example of a simple convolutional neural network.
+By the end of this video, you will be able to trace a forward pass through a CNN, understand the role played by each component, and see how spatial features extracted from images are ultimately converted into predictions.
+Let's begin by clarifying the problem setting. We start with an input image and want to predict an output, such as a class label or a numerical value.
+To do this effectively, the model must first extract meaningful spatial patterns from the image and then combine this information into a final decision.
+Convolutional neural networks are designed precisely to solve this problem through a structured processing pipeline.
+This slide shows a simple CNN architecture that captures the core ideas behind most convolutional networks.
+The image first passes through convolutional layers, combined with batch normalization and activation functions.
+Pooling layers are used to reduce spatial resolution. After a few such stages, the representation is flattened and passed through fully connected layers to produce the final output.
+Although real-world CNNs can be much deeper, this simple pipeline contains all the essential building blocks.
+Let's now walk through this pipeline step by step. In the early layers, convolutional operations are applied to the input image.
+These layers detect local patterns such as edges, corners and simple textures. Batch normalization helps to stabilize learning and nonlinear activations allow the network to model complex.
+At this stage, the network focuses on identifying what patterns exist in the image.
+As we move deeper into the network, pooling layers are introduced. Pooling reduces the spatial dimensions of feature maps while retaining the most important information. This reduces computation and makes the network more robust to small spatial shifts in the input.
+As a result, their representations become more abstract with less emphasis on precise spatial location.
+After the convolutional and pooling stages, the network has a set of high-level feature maps. These feature maps are flattened into a one-dimensional vector. Fully connected layers then aggregate all this information and perform global reasoning to produce the final output.
+At this point, the network behaves similarly to a multi-layer perceptron using the learned features to make the prediction.
+Now, let us summarize the main points of this video. A convolutional neural network follows a clear end-to-end pipeline. Convolutional layers extract spatial features. Pooling layers control spatial resolution. And fully connected layers convert these features into predictions.
+Complex CNN architectures are built by stacking and stacking and stacking and stacking and stacking and stacking and extending this basic pattern.
+With this understanding, in the next video, we are now ready to explore modern CNN architectures and how these ideas have evolved over time. Thank you.
+Thank you.

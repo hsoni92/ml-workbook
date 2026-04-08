@@ -1,0 +1,25 @@
+Hello everyone. Welcome back to module 8 of Artificial Neural Networks. In this video,
+we will study pooling operations in convolutional neural networks. By the end of this video,
+you will be able to understand what pooling is, why it is used in CNNs, and how common
+pooling operations such as max pooling and average pooling can be interpreted mathematically.
+After convolution, feature maps often retain a lot of fine-grained spatial detail. However,
+in many vision tasks, small shifts in the input such as slight translations or local distortions
+should not significantly change the model's prediction. Pooling is introduced to make the
+network more robust to such small spatial variations. In other words, pooling helps CNNs to focus on
+whether a pattern is present rather than its exact location. Pooling operates on a small local region
+of a feature map and summarizes the values in that region. Importantly, pooling is applied
+independently to each feature map and does not involve any learnable parameters. Mathematically,
+for a local region, max pooling selects the maximum value while average pooling computes the mean of
+the values in that region. Both operations replace a single representative value, reducing spatial detail while
+maintaining the important information. Now, let's look at this with an example. If you look at this feature map,
+map here, with a max pooling, we will be taking the maximum value out of these four cells. So, the output
+feature map will have the max value from these four cells here. Similarly, from the next four cells, we will have one value here and so on. While, in case of average pooling, we are going to average these four values and the value in this output feature map will be the average of these four cells.
+One immediate effect of pooling is a reduction in spatial dimensions. For example, applying a two-by-two
+pooling operation with stride 2 halves the height and width of the feature map. At the same time, the depth or number of channels remains unchanged.
+This spatial compression reduces computation in deeper layers and helps control the size of representations as the network goes deeper.
+It is useful to contrast pooling with strided convolution. Both reduce spatial resolution, but they serve different purposes.
+pooling uses fixed operations such as maximum or average and introduces invariants without learning new parameters. Strided convolution, on the other hand, performs subsampling while also learning new features through convolutional filters.
+pooling focuses on robustness whereas strided convolution combines downsampling with feature learning.
+Now, let us summarize the main points of this video.
+Pooling summarizes local regions of feature maps using simple mathematical operations. It reduces spatial resolution, improves robustness to small spatial shifts, and keeps the number of channels unchanged.
+Pooling is an important tool for controlling representation size and encouraging invariants in convolutional neural networks. In the next video, we will bring together filters, stride, padding, and pooling to see how these components work together inside a convolutional block. Thank you.

@@ -1,0 +1,18 @@
+Hello everyone, welcome back to module 8 of Artificial Neural Networks. In this video,
+we will introduce the convolution operation. By the end of this video, you will be able to explain
+what a convolution is, understand why it is useful for spatial data like images, and interpret
+convolution as a local pattern matching operation. Images are composed of pixels, but meaningful
+information in images is not carried by individual pixels. Instead, patterns such as edges, corners,
+and small textures arise from relationships between neighbouring pixels. These are local patterns,
+they depend on small regions of the image rather than the entire image at once. To model images
+effectively, we need a way to detect these local patterns consistently. Fully connected layers process
+all pixels together without explicitly modelling local neighbourhood. As a result, the same pattern
+appearing at different locations is treated as a completely different configuration. This leads to inefficient
+learning, a large number of parameters, and poor use of the spatial structure present in images.
+A convolution addresses these limitations by operating locally. It uses a small grid of
+the entire image rather than the entire image rather than the entire image.
+The same filter is reused across all spatial locations, allowing the model to detect the same pattern wherever it appears.
+One intuitive way to think about convolution is pattern matching. At each spatial location,
+the filter is compared with the local pixel region. If the local region closely resembles the pattern encoded by the filter, the convolution produces a strong response. If there is little similarity, the response is weak. In this way, convolution measures how well a specific pattern matches different from the filter.
+In this way, a specific pattern matches different parts of the image. Now, let us summarize the main points of this video. Convolution is a local operation that applies the same set of weights across an image. This shared local computation allows neural networks to efficiently detect repeating patterns such as edges and textures. Convolution is the fundamental operation underlying convolutional neural networks.
+In the next video, we will look at how convolution actually works step by step, including how a filter slides across an image and how outputs are computed at each location. Thank you.

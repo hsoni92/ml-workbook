@@ -1,0 +1,23 @@
+Hello everyone. Welcome to module 8 of Artificial Neural Networks. In this module, we will study a new class of models designed specifically for spatial data, convolutional neural networks, that power the modern computer vision system.
+So far in this course, we have focused primarily on fully connected neural networks. We studied how multilayer perceptrons learn representations, how information flows forward through layers, and how these models are trained using backpropagation and optimization techniques. A key assumption in all of this was that the input is treated as a flat vector.
+Each input dimension is handled independently without any notion of structure or relationships between neighboring inputs. This assumption works well for many types of data, but it also has important limitations.
+The model does not explicitly capture relationships between nearby inputs. Second, the number of parameters grow very quickly as the input size increases. For structured data, such as images, this leads to inefficient models that require many parameters and large amounts of data to train effectively.
+This motivates the need for architectures that can exploit structure in the input. Images are fundamentally different from generic vectors.
+Pixels that are highly correlated and meaningful patterns such as edges or corners are formed by local groups of pixels. At the same time, the same kind of patterns can appear at many different locations within an image.
+by local groups of pixels. At the same time, the same kind of patterns can appear at many
+different locations within an image. This means that spatial locality and repetition
+are central properties of image data. If a model ignores these properties, it fails to
+use valuable information that is already present in the data. Convolutional neural networks or CNN
+are designed specifically to address these challenges. Instead of connecting every input
+to every neuron, TNNs use local connectivity. They apply the same set of weights across different
+spatial locations, a concept known as weight sharing. As a result, the model learns what patterns to
+detect, independent of where those patterns appear in the image. This makes TNN far more
+efficient and better suited for spatial data. Another property of CNNs is hierarchical feature
+learning. In early layers, CNNs typically learn very simple patterns such as edges and corners.
+As we move deeper into the network, these simple patterns are combined to form more complex features
+like textures, shapes, shapes, and eventually entire objects. This hierarchical structure allows CNNs to transform
+raw pixel values into increasingly abstract and meaningful representations. In this module, we will build a
+detailed understanding of how CNNs work. We will start by studying the convolution operation and teacher maps. We will then explore key design choices such as filters,
+stride, padding, padding, and pooling. Next, we will see how these components are assembled into a full CNN architecture. Finally, we will look at classic and modern CNN models to understand how architectural design has evolved over time. By the end of this module, you will understand both the mechanics and the conceptual foundations of convolutional neural networks. In the next video, we will see how these components are assembled into a full CNN architecture.
+As we will see how these components are assembled into a full CNN architecture. Finally, we will see how these components are assembled into a full CNN architecture. Finally, we will look at classic and modern CNN models to understand how architectural design has evolved over time. By the end of this module, you will understand both the mechanics and the conceptual foundations of convolutional neural networks. In the next video, we will try to understand the fundamental concept powering CNN, i.e. convolution. Thank you.
+Thank you.

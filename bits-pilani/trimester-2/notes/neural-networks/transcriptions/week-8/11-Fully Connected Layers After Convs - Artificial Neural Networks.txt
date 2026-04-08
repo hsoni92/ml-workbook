@@ -1,0 +1,25 @@
+Hello everyone. Welcome back to module 8 of Artificial Neural Networks. In this video, we will study the role of fully connected layers in convolutional neural networks. By the end of this video, you will be able to understand why fully connected layers are used after convolutional layers, how spatial feature maps are converted into predictions, and how this transition from the convolutional neural networks are used after convolutional neural networks.
+It spits into the overall CNN pipeline. Let's begin by recalling what convolutional layers gives us. After passing through several convolutional blocks, the network produces feature maps. These feature maps preserve spatial structure and contain multiple channels, each corresponding to a different learned pattern. At this stage, the representation tells us what patterns are present and where they are
+occur in the input. However, this representation is still spatial in nature. For many tasks such as image classification or regression, the model ultimately needs to produce a single decision or a small set of outputs. Making such decisions usually requires combining information from the entire image. While convolutional layers are excellent at extracting localized patterns, they are not designed to directly perform
+form global reasoning. This creates the need for a mechanism that can aggregate spatial
+information into a form suitable for decision making. Flattening is the step that bridges
+this gap. Here, the multidimensional feature maps characterized by height, width and channels
+are reshaped into a single one-dimensional vector. For example, a feature map of size
+h x w x c is converted into a vector of length h w x c. It is important to note that flattening
+itself does not involve any learning. It is purely a structural transformation that prepares
+the representation for fully connected layers. Once the representation is flattened, fully
+connected layers can then be applied. Fully connected layers combine all extracted features
+and learn global decision boundaries. At this stage, the network behaves very much like the
+multi-layer perceptrons we have studied earlier in the course. In essence, convolutional layers
+act as feature extractors, while fully connected layers perform the final reasoning required to
+produce the predictions. Let us now walk through a simple example to see how this works end-to-end. We
+start with an input image that passes through a sequence of convolution and pooling layers.
+These layers progressively extract spatial features and reduce spatial resolution while increasing the
+depth of the representation. After the final convolutional block, we obtain a set of feature maps.
+These feature maps are then flattened into a single vector. This vector is passed through one or more fully
+connected layers which combine all the extracted features and produce the final output such as a class
+score or a regression value. This example illustrates how CNN's transition from spatial feature extraction to global decision making.
+Now, let us summarize the main points of this video. Convolutional layers are responsible for extracting rich spatial features from the input.
+Flattening converts these spatial representations into vectors. Fully connected layers then aggregate this information and perform the final prediction. Together, these components enable convolutional neural networks to be trained end-to-end for a wide range of tasks.
+In the next video, they will look at common components used within CNN's such as batch normalization and dropout and understand their roles within the convolutional pipelines. Thank you.
+Thank you.

@@ -1,0 +1,33 @@
+Hello everyone, welcome back to module 8 of Artificial Neural Networks. In this video,
+we will study the early evolution of convolutional neural networks. By the end of this video,
+you will be able to understand the historical context behind CNNs, the key ideas demonstrated
+by Leeneth, and why AlexNet marked a major breakthrough that revived the interest in
+deep learning. The core ideas behind convolutional neural networks existed well before the recent
+deep learning boom. However, early CNNs were typically shallow, trained on small datasets,
+and applied to relatively constrained problems. At the time, limited computational power and lack of
+large label datasets made it difficult to train deep models effectively. As a result, despite their
+conceptual appeal, CNNs did not see widespread adoption in the broader machine learning community.
+One of the earliest successful convolutional neural networks was Leeneth, designed primarily for
+handwritten digit recognition. Let's look briefly at the architectures shown on the slide. You can see,
+that Leeneth follows a clear and structured pattern. It alternates between convolutional layers and pooling
+layers, gradually reducing spatial dimensions while increasing the feature complexity. After these feature
+extraction stages, the network uses fully connected layers to perform classification. This structure should look familiar. It closely matches the CNN pipeline we have studied earlier. Feature extraction followed by decision making. Leenet was important because it demonstrated that convolution, pooling, and fully connected layers could be combined into a single end-to-end trainable model. Despite the success of Leenet, CNNs'
+CNNs did not immediately became dominant. There were several reasons for this. Data sets were relatively small, limiting the benefits of deep feature learning. Computational resources were also insufficient to train large networks efficiently. In many practical settings, simpler models performed competitively, making CNNs less attractive from an engineering perspective. In hindsight, CNNs were conceptualized by the data.
+CNNs were conceptually strong but limited by the technological ecosystem of the time.
+AlexNet marked a major turning point in the history of convolutional neural networks.
+If you look at the architecture diagram, you will notice that it follows the same high-level structure as LeNet, but at a much larger scale.
+AlexNet uses many more convolutional layers and significantly more filters.
+The depth of the network is much greater, allowing it to learn richer and more abstract features.
+Importantly, the architecture clearly separates convolutional feature extraction from fully connected classification layers.
+AlexNet showed that CNNs could scale to large real-world image datasets and outperform traditional computer vision approaches by a large margin.
+AlexNet was not just larger, it introduced several ideas that made deep CNNs practical.
+It relied heavily on ReLU activations, which helped address training difficulties in deep networks.
+It leveraged GPUs to make large-scale training computationally feasible.
+Regularization techniques such as dropout were also used to reduce overfitting.
+Together, these design choices demonstrated that deep convolutional networks could be trained effectively when data, hardware, and architecture design are aligned.
+Now, let us summarize the main points of this video.
+LeNet demonstrated that convolutional neural networks could learn features and classifiers jointly in an end-to-end manner.
+AlexNet showed that with sufficient data, computational power, and appropriate design choices, CNNs could achieve dramatic performance gains at scale.
+These early breakthroughs laid the foundation for the modern CNN architectures that we will study next.
+So, in the next video, we will explore how CNN architectures evolved further, focusing on models such as VGG and ResNet, and the design ideas they introduced to enable even deeper networks.
+Thank you.

@@ -1,0 +1,34 @@
+Hello everyone. Welcome back to Module 8 of Artificial Neural Networks. In this video, we will extend our understanding of convolution to more realistic settings.
+By the end of this video, you will be able to understand what channels represent in CNN inputs and feature maps, how convolution operates on multichannel inputs, and why convolutional layers typically use multiple filters.
+So far, we have mostly talked about images as two-dimensional grids. However, real-world images usually have multiple channels.
+For example, grayscale images have a single channel, while RGB images have three channels, red, green, and blue.
+Each channel captures different aspects of the same image.
+This means that an image is not just a two-dimensional grid, but a three-dimensional volume with height, width, and depth.
+When an input has multiple channels, convolution filters must handle this depth information.
+A single convolutional filter spans all input channels, i.e. it has a separate set of weights for each channel.
+At a given spatial location, the filter performs convolution independently on each channel and then sums the results across channels.
+This allows the filter to combine information from all channels into a single response.
+Let's say this image has multiple channels.
+Then, the kernel will also have these many channels.
+As we said earlier, we will perform convolution independently on each channel and then sum up the result and it will be represented by one number, which is given here.
+So, the number of feature maps here will be equal to the number of kernels that we apply.
+Even when the input has multiple channels, an important principle remains unchanged.
+One filter produces exactly one feature map.
+The presence of multiple channels affects how the filter computes its output, but not how many feature maps it produces.
+The filter aggregates information across channels and produces a two-dimensional feature map that reflects a specific learned pattern.
+Using a single filter limits the model to detect only one type of pattern.
+In practice, we want the network to detect many different patterns at the same layer.
+To achieve this, convolutional layers use multiple filters.
+Each filter learns to detect a different pattern and each produces its own feature map.
+As a result, a convolutional layer outputs a stack of feature maps, increasing the representational richness of the model.
+In CNNs, depth corresponds to the number of feature maps.
+As we move deeper into the network, spatial dimensions often decrease, but the depth typically increases.
+This reflects a shift from precise spatial detail to richer, more abstract representation.
+Depth therefore represents the diversity of patterns learned at that stage of the network.
+Now, let us summarize the main points of this video.
+Real-world images and intermediate representations in CNNs have multiple channels.
+A convolutional filter spans all input channels and aggregates information across them.
+Each filter produces one feature map and using multiple filters produces multiple feature maps.
+The depth of a CNN layer reflects how many different patterns the network has learned to detect.
+In the next video, we will focus on filters themselves, what they learn, how their size matters, and how they shape the representations produced by convolutional layers.
+Thank you.

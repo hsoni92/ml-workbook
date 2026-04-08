@@ -1,0 +1,37 @@
+Hello everyone, welcome back to module 8 of Artificial Neural Networks. In this video, we will look at modern convolutional neural network architectures that focus on efficiency.
+By the end of this video, you will be able to understand why efficiency has become an important design goal in CNNs and the core ideas behind two influential families of models, Mobile Nets and Efficient Net.
+Before we begin, it's important to note that we will study these architectures at a high level. The goal here is to build awareness of the key design ideas, not to go into architectural or implementation details.
+If you are interested in deeper understanding, I strongly encourage you to read the original research papers.
+So far, we have mostly discussed CNNs from the perspective of accuracy and representation power.
+However, in real-world applications, CNNs are often deployed under strict constraints.
+They may need to run on mobile devices, embedded systems or large-scale production environments where memory, computation and latency all matter.
+In such settings, high accuracy alone is not sufficient.
+This shift in deployment requirements motivated the development of CNN architectures that are not just accurate but also efficient.
+Mobile Nets were designed specifically for resource-constrained environments.
+The key idea behind Mobile Nets is to separate spatial computation from channel-wise computation.
+Instead of performing a full convolution all at once, Mobile Nets break it into simpler operations that are much cheaper to compute.
+This allows the network to retain important features while dramatically reducing the computational cost.
+The introduction of Mobile Nets demonstrated that efficiency can be built directly into the architecture.
+By redesigning how convolutions are performed, Mobile Nets achieve a strong balance between performance and efficiency.
+This made it feasible to deploy CNNs on devices with limited hardware resources such as smartphones and edge devices.
+At this stage, we focus only on the architectural idea behind Mobile Nets, not on the detailed mechanics or variations of the model.
+Efficient Net approaches efficiency from a different angle.
+Rather than focusing on a single architectural trick, Efficient Net examines how CNNs are scaled.
+Traditionally, models were made larger by increasing depth or width or input resolution, often in an unbalanced way.
+Efficient Net proposes scaling all three dimensions together in a principled manner.
+This balanced scaling leads to better performance for a given computational budget.
+Efficient Net showed that smarter scaling strategies can outperform brute force approaches.
+By carefully balancing model dimensions, Efficient Net achieves strong accuracy with fewer parameters and lower computation.
+The key takeaway here is not the specific configuration of the models, but the idea that architectural efficiency can come from thoughtful design choices, not just from making networks deeper or wider.
+Together, Mobile Nets and Efficient Net reflect a broader shift in CNN design philosophy.
+Earlier, architectures were primarily optimized for accuracy.
+Modern architectures must balance accuracy with efficiency, scalability and deployability.
+As a result, architecture choices today are often driven by where and how the model will be used, not just by benchmark performance.
+Now, let us summarize the main points of this video.
+Modern CNNs place strong emphasis on efficiency alongside accuracy.
+Mobile Nets achieve efficiency through lightweight architectural design.
+Efficient Net achieves efficiency through balanced scaling of network dimensions.
+Our goal in this video was to introduce you to these ideas and make you aware of how modern CNN architectures address real-world constraints.
+For deeper understanding, reading the original papers is highly recommended.
+In the next video, we will summarize the key ideas from this module and reflect on how convolutional neural networks evolved from early models to modern efficient architectures.
+Thank you.
