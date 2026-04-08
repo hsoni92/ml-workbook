@@ -1,0 +1,21 @@
+Hello everyone! Welcome to the last video of module 8 of Artificial Neural Network.
+In this module, we studied convolutional neural networks, one of the most important architectures.
+We focused on understanding why CNNs are well suited for image and spatial data, and how their design leverages local structure, parameter sharing, and hierarchical feature learning.
+We began by introducing the core ideas behind CNNs. We studied the convolution operation and saw how it produces feature maps that capture local spatial patterns.
+We discussed filters as learnable pattern detectors and how multiple channels and multiple filters allow CNNs to build rich representations from raw images.
+These concepts form the foundation of how CNNs process spatially structured data.
+Next, we examined how CNNs control the evolution of representations across layers. Stride and padding determine how spatial resolution changes during convolution.
+Pooling reduces spatial dimensions and introduces robustness to small spatial shifts. As representations move deeper into the network, spatial detail gradually decreases while semantic richness increases.
+This spatial to semantic transformation is a defining characteristic of CNNs. We then brought these ideas together into a complete CNN pipeline. Convolutional blocks extract spatial features, stacking layers builds hierarchical representations, and flattening converts feature maps into vector representations. Fully connected layers then aggregate global information and produce final predictions.
+This pipeline shows how CNNs. This pipeline shows how CNNs combine spatial feature extraction with decision making in an end-to-end model. We also explored how CNN architectures evolved over time. Early models like LeNet demonstrated that convolutional networks could work in practice. AlexNet showed that deep CNNs could scale to large datasets and achieve dramatic performance improvements.
+VGG highlighted the power of depth through simple, repeatable design, while ResNet introduced residual connections that made very deep networks trainable. Finally, we discussed how modern CNN design is shaped by real-world constraints.
+constraints. Architectures such as mobile nets and efficient net emphasize efficiency alongside
+accuracy. These models reflect a shift from purely maximizing performance to balancing accuracy,
+computation, memory, and deployability. Modern CNNs are designed not just to perform well on
+benchmarks but to operate effectively in production systems. So far, we have focused on models
+designed for special data such as images. In the next module, we will shift our attention to sequential
+and temporal data where the order of inputs matter. We will study sequence models such as recurrent
+neural networks, LSTMs, and GRUs and understand why feed-forward architectures are insufficient for
+modeling sequences. We will also discuss the limitations of recurrent models and the motivation
+behind attention mechanisms and transformer-based architectures that dominate modern sequence
+learning. Thank you.

@@ -1,0 +1,36 @@
+Hello everyone. Welcome back to Module 8 of Artificial Neural Networks. In this video, we will study two influential Convolutional Neural Network architectures, VGG and ResNet.
+By the end of this video, you will be able to understand why researchers began exploring deeper CNNs, what design ideas VGG introduced and how ResNet solved key challenges associated with training very deep networks.
+As we saw in earlier lessons, stacking convolutional layers allows CNNs to learn hierarchical representations.
+This naturally led researchers to ask whether simply making networks deeper would lead to better performance.
+Empirically, deeper CNNs often outperformed better on challenging visual tasks. However, this also raised an important question.
+If depth helps, why not keep adding more layers indefinitely?
+Let's now look at VGG. If you examine the architecture diagram on the slide, you will notice that VGG follows a very uniform and simple design.
+It repeatedly stacks small 3x3 convolutional layers followed by pooling layers at regular intervals.
+Instead of using complex or varied components, VGG increases depth by repeating the same basic building block many times.
+This simplicity made the architecture easy to understand and showed clearly that increasing depth alone could significantly improve the performance.
+VGG demonstrated several important lessons.
+First, depth matters. Very deep CNNs can learn powerful representations.
+Second, stacking multiple small convolutions can be more effective than using fewer large ones.
+However, BGG also revealed a limitation.
+As networks became deeper, training them became increasingly difficult.
+This difficulty was not just about overfitting but about optimization itself.
+As researchers experimented with even deeper networks, they encountered what is known as the degradation problem.
+Surprisingly, adding more layers sometimes led to higher training error.
+This indicated that deeper networks were not necessarily learning better representations.
+The issue was not lack of capacity but difficulty in optimizing very deep models using standard training methods.
+This challenge motivated new architectural ideas.
+ResNet introduced a fundamentally new concept, skip or residual connections.
+If you look at the architecture diagram, you will see that ResNet allows information to bypass one or more layers through shortcut connections.
+Instead of learning a full transformation, layers learn a residual, how the output should differ from the input.
+This simple idea made it much easier to train very deep networks by allowing information and gradients to flow more directly through the network.
+Residual connections address the optimization difficulties seen in very deep networks.
+They improve gradient flow during training and reduce the risk of vanishing gradients.
+As a result, networks with dozens or even hundreds of layers became trainable.
+ResNet showed that architectural design, not just depth, is crucial for building effective deep neural networks.
+Now, let us summarize the main points of this video.
+BGG demonstrated the power of depth through a simple and uniform design.
+However, increasing depth alone was not sufficient as very deep plane networks became hard to train.
+ResNet introduced residual connections which made training deep networks practical.
+These ideas strongly influenced modern CNN architectures and remain foundational in deep learning today.
+In the next video, we will look at more recent CNN architectures such as EfficientNet and MobileNet that focus on improving efficiency while maintaining the strong performance.
+Thank you.

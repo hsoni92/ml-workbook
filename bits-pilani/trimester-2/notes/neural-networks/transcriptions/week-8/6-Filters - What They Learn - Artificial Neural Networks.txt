@@ -1,0 +1,20 @@
+Hello everyone, welcome back to module 8 of Artificial Neural Networks. In this video, we will focus on understanding convolutional filters.
+By the end of this video, you will have a clear picture of what filters represent, how they learn to detect patterns and how the kinds of patterns learned by filters change as we move deeper into a convolutional neural network.
+Let's begin by clarifying what a filter actually is. A filter is simply a small set of learnable waves used in the convolution operation.
+However, instead of thinking of filters as just numbers, it is more useful to think of them as defining a pattern the network is looking for.
+During training, the network adjusts these waves so that the filter responds strongly to certain structures in the data. In this sense, filters act as pattern detectors that are learned directly from the data.
+In the early layers of a CNN, filters operate directly on raw pixel values. At this stage, the network has no prior understanding of objects or shapes.
+As a result, early filters tend to learn very simple and fundamental patterns such as edges, corners and basic color transitions. These patterns form the basic visual building blocks from which more complex features are constructed later in the network.
+As we move deeper into the network. As we move deeper into the network, the situation changes. Deeper filters no longer see raw pixels. Instead, they operate on feature maps produced by earlier layers. This allows them to combine simpler patterns into more complex structures. At deeper layers, filters often respond to textures, repeated motifs or parts of objects reflecting a higher level of abstraction.
+level of abstraction. An important point to emphasize is that filters are not manually designed.
+They are learned automatically during the training. Filters typically start from random initial
+values. Through backpropagation and optimization, the network gradually adjusts these ways to improve
+performance on the task. As a result, meaningful and useful patterns emerge without explicit feature
+engineering. This is one of the key strengths of convolutional neural networks.
+Now, let us summarize the main points of this video. Convolutional filters are learnable pattern
+detectors. Filters in early layers capture simple, low-level patterns, while filters in deeper layers
+capture increasingly complex and abstract patterns. This hierarchical learning of features is a central
+reason why CNNs are effective for image and spatial data. In the next video, we will study how stride
+and padding affect the spatial size of feature maps and how these design choices influence the behavior
+of convolutional layers. Thank you.
+Thank you.

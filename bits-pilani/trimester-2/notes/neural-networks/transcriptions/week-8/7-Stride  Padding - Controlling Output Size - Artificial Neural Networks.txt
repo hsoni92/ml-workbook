@@ -1,0 +1,32 @@
+Hello everyone, welcome back to module 8 of Artificial Neural Networks. In this video, we will study two important design choices in convolutional layers, stride and padding.
+By the end of this video, you will be able to understand how stride affects the movement of the filter, why padding is introduced and how these choices control the spatial size of feature maps. Each convolution operation changes the spatial dimension of its input. If we apply multiple convolutions without careful design, feature maps can shrink very quickly.
+The network may lose important information. This makes output size an important design consideration rather than a side effect of convolution.
+Stride determines how far the filter moves across the input at each step. With a stride of 1, the filter moves 1 pixel at a time. With a larger stride, the filter skips over positions.
+This directly affects how densely the filter samples the input. Stride therefore controls the sampling resolution of the convolution operation.
+When stride increases, the filter is applied at fewer spatial locations. As a result, the output feature map becomes smaller.
+This reduces computational cost but also reduces spatial detail. Choosing stride involves a trade-off between efficiency and the level of spatial precision retained in the feature maps.
+Now, let's look at this example. For this image of size 7 x 7, we have a kernel of size 3 x 3.
+Now, let's see how this kernel moves across the image. With a stride of 1, see, first the filter will apply to this region of the image.
+Then next to this block, then next to this block and so on. So we see that the output feature map would be of size 5 x 5.
+But now, let's change the stride to a value of 2. So stride is 2. Here, first the kernel would be at this location.
+Then we will leave these two cells and the kernel would be at this location. Then again we will leave these two cells and the kernel would be at this location.
+So instead of moving 5 steps, we are just covering 3 blocks here. So the output feature map will have a dimension of 3 x 3.
+Next comes the concept of padding. In padding, we apply extra pixels around the input. Without padding, convolution near the edges of an image becomes problematic.
+Border pixels are used fewer times than central pixels and information near the edges is lost quickly.
+Padding addresses this issue by adding extra pixels around the input. This allows filters to be applied more uniformly across the image.
+Padding also gives us control over the output dimensions.
+By adding padding, we can preserve spatial dimensions or slow down the reduction in size across layers.
+This makes padding a useful tool for maintaining spatial information while building deeper networks.
+Common choices include no padding and same padding.
+So let's look at this image of size 3 x 3. When there is no padding and let's say we apply a filter of size 2 x 2, what would be the size of the output feature map here?
+So let's say the filter would first be applied here, then the filter would move. We are assuming that the stride is 1 here.
+Then it would come here and finally here. So the output feature map would be of size 2 x 2.
+Now let's say we apply a padding layer of size 1. So what this means is that throughout around the image, we will have all these zeros padded.
+So now the size of the image becomes 5 x 5. So this is the padded image.
+Then let's say we again apply a filter of size 2 x 2 with a stride of 1. So let's see how this filter is going to move.
+So first it will look at this block and this block, then number 3 and number 4.
+So the size of the output feature map is going to be 4 x 4. Now let us summarize the main points of this video.
+Stride controls how the filter moves across the input while padding controls how borders are handled.
+Larger stride reduces spatial resolution and padding helps to preserve the spatial information.
+Together stride and padding allow us to control the spatial size of feature maps in convolutional neural networks.
+In the next video, we will introduce pooling operations and study how they further reduce spatial dimensions while providing a degree of invariance. Thank you.

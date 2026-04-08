@@ -1,0 +1,70 @@
+Hello everyone. Welcome back to Module 8 of Artificial Neural Networks. In this video, we will focus on how the convolution operation works in practice.
+By the end of this video, you will be able to explain how a convolution is computed step by step, understand how a filter moves across an image, and you will be able to interpret how these local computations together form an output feature map.
+Let's begin by looking at the components involved in a convolution. A convolution takes an input image or feature map and a small grid of learnable weights called a filter or kernel. The filter is much smaller than the image and contains the parameters that the network learns.
+By combining local input values with each filter weights, the convolution produces a new representation called a feature map. So if we look here, this is our input image. This is the set of weights called as kernel or filter. And this is the output feature map which is produced.
+Now, let's zoom in on what happens at a single spatial location. The filter is placed over a small region of the image. Each value in the filter is multiplied with the corresponding pixel value in the image patch. All these products are then summed to produce a single output value.
+This one number summarizes how well the filter matches that particular local region of the image. Let's look at this with the help of an example. In this example, we have a small 3x3 image patch and a 3x3 filter. Let's see how the convolution operation would work here. So here, we will multiply the corresponding entries first and then sum up the results to obtain a single output value. So let's see that.
+So let's see that. So we will multiply 1 with 1 plus 2 with 0 plus 1 with minus 1 plus this 0 gets multiplied by this 1 plus 1 times 0 plus 0 times minus 1 plus this 2 would get multiplied with 1 plus 1 times 0 plus 2 times minus 1.
+See, we are just multiplying the corresponding elements. So this entire thing results into 0.
+We don't need to focus on the exact numerical result here. What matters is that this single output value represents the strength of the match between the filter pattern and the local image region. Now, this local
+computation which we just saw is not performed just once. After computing the output at one location, the filter is shifted to the next position on the image. The same computation
+is repeated at every valid location. Importantly, the filter weights do not change as the filter moves. This reuse of the same weights across all spatial locations is known as weight sharing and it is a key property of convolution. Each time the filter is applied at a new location, it produces one output value. Then we collect all these output values together, we obtain an output feature map.
+output feature map. This feature map shows where in the image the pattern encoded by
+the filter appears strongly. High values indicate strong matches while low values indicate weak
+or no matches. Now, let us look at a bigger image which is given by 1211, 0100, 2121,
+1111 and we will apply the same filter that we saw earlier which was 10-1, 10-1 and 10-1. So, earlier we had seen the shape of the image was 3 by 3. Now, it's 4 by 4 and the size of the kernel is 3 by 3. So, how the computation here would happen is that first we will multiply this block with
+the kernel and obtain one value. Then, the kernel would move slightly towards the right. So, next we will multiply this block with the kernel. Now, we don't have any more elements to the right. So, we move downwards. The next computation would be this block with the kernel and finally, this block with the kernel. The computation that we are doing is exactly the same as we have seen earlier.
+So, we are multiplying the kernel. So, we are multiplying the kernel. So, we are multiplying the corresponding elements only and adding up the sums. So, the final outcome
+The final outcome here is going to be 0, 2, 0, 0, 1. This way of computing is powerful for several reasons. First, the local connectivity allows the model to capture spatial structure in the data. Second, bait sharing drastically reduces the number of parameters compared to fully connected layers. Finally, because the same filter is applied everywhere, the model can detect the number of parameters compared to fully connected layers.
+So, let's summarize the same filter. Now, let's summarize the main points of the model. This way of computing is powerful for several reasons.
+Convolution works by computing local weighted sums between an image and a filter.
+Convolution works by computing local weighted sums between an image and a filter.
+Convolution works by computing local weighted sums between an image and a filter.
+Convolution works by computing local weighted sums between an image and a filter.
+Convolution works by computing local weighted sums by the filter.
+Convolution works by computing local weighted sums by the filter.
+Convolution works by computing local weighted sums by the filter.
+Convolution works by computing local weighted sums by the filter.
+Convolution works by computing local weighted sums by the filter.
+Convolution works by the filter.
+Convolution works by computing local weighted sums by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.
+Convolution works by the filter.

@@ -1,0 +1,16 @@
+Hello everyone. Welcome back to Module 8 of Artificial Neural Networks. In this video, we will look at several components that are commonly used in modern convolutional neural networks.
+By the end of this video, you will be able to identify the components used in CNNs, understand where they are placed within the pipelines, and explain how they contribute to effective learning and good generalization.
+So far, we have focused mainly on convolutional layers and how they extract spatial features. However, modern CNNs are rarely built using convolutions alone.
+Additional components are introduced to make training more stable, improve generalization, and enable deeper architectures.
+The overall performance of a CNN depends not just on convolutions, but on how these supporting components are combined with them.
+After each convolution operation, we typically apply a nonlinear activation function. Without activation functions,
+stacking convolutional layers would collapse into a single linear transformation. Activations such as ReLU or Leaky ReLU introduce non-linearity, allowing the CNNs to model complex patterns and decision boundaries.
+Although the activation functions themselves are the same as those we studied earlier in the course, their role within CNN pipelines is just as critical.
+Batch normalization is another widely used component in CNNs. It normalizes activations within a mini-batch, which helps stabilize the distribution of inputs to each layer. This leads to faster convergence and more stable training.
+In CNNs, batch normalization is typically applied after convolution and before the activation function. An important practical observation is that batch normalization often provides a regularizing effect, even though its primary goal is training stability.
+Dropout is a regularization technique we have studied in CNNs. Dropout is a regularization technique we have studied in detail earlier. In CNNs, dropout randomly drops activations during training, forcing the network to rely on multiple redundant features rather than a small set of dominant ones.
+Dropout is a regularization technique. Dropout is a regularization technique. Dropout is most commonly used in fully connected layers of CNNs where overfitting risk is higher. It is used more cautiously in convolutional layers as excessive dropout there can disrupt spatial feature learning.
+Dropout is a regularization technique. When we look at real CNNs, we often see a consistent pattern. A convolutional layer is followed by batch normalization, then a nonlinear activation, and sometimes a pooling operation. This pattern is repeated multiple times to build deeper networks.
+Understanding this common structure helps you read, design, and debug CNN architectures more effectively.
+Now, let us summarize the main points of this video. Convolutional neural networks rely on more than just convolutional operations. Activation functions introduce non-linearity, batch normalization stabilizes and accelerates the training, and dropout helps to improve the generalization.
+The correct placement and combination of these components play a crucial role in the success of CNN architectures. In the next video, we will put everything together and walk through an end-to-end example of a simple convolutional neural network architecture. Thank you.
