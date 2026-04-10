@@ -26,6 +26,16 @@ By the end of this video you will:
 - As a graph: input node $x$ → multiply by 3 → node $u$ → square → node $y$.
 - Even this small expression has a clear **chain** structure.
 
+### Visual: graph for u = 3x, y = u²
+
+```mermaid
+flowchart LR
+  x[x] --> mul[Times 3]
+  mul --> u[u]
+  u --> sq[Square]
+  sq --> y[y]
+```
+
 ---
 
 ## Forward Pass on the Graph
@@ -58,6 +68,18 @@ By the end of this video you will:
 - **Forward pass:** Compute and **store** all intermediate values.
 - **Backward pass:** Start at the output and propagate gradients **backward** through the same graph using **stored** values and **local** derivatives at each node.
 - One **static** graph supports both **computation** and **differentiation**.
+
+### Visual: forward vs backward direction
+
+```mermaid
+flowchart LR
+  x2[x] --> u2[u]
+  u2 --> y2[y]
+  y2 -.->|dE/dy| u2
+  u2 -.->|chain rule| x2
+```
+
+Solid arrows: forward values. Dashed: gradient signals flow **from** the loss **toward** inputs and parameters.
 
 ---
 

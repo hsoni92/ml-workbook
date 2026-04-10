@@ -104,6 +104,8 @@ In each case, **low-level building blocks** combine into **progressively more ab
 
 Shallow networks do not have enough **layers** to mirror these natural hierarchies. They cannot naturally build “edges from pixels,” then “shapes from edges,” then “objects from shapes” in separate stages. They lack the **layered structure** required to build these **abstraction hierarchies**.
 
+### Visual: depth matches a hierarchy of features
+
 ```mermaid
 flowchart LR
   subgraph level0 [Raw input]

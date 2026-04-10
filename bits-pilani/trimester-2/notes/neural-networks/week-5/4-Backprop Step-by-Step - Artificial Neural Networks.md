@@ -30,6 +30,19 @@ By the end of this video you will:
 
 **Goal:** Compute $\frac{\partial E}{\partial w_2}, \frac{\partial E}{\partial b_2}, \frac{\partial E}{\partial w_1}, \frac{\partial E}{\partial b_1}$.
 
+### Visual: forward graph
+
+```mermaid
+flowchart LR
+  x[x] --> z1[z1 = w1 x + b1]
+  z1 --> h[h = sigma z1]
+  h --> z2[z2 = w2 h + b2]
+  z2 --> yhat[yhat]
+  yhat --> E[Loss E]
+```
+
+Gradients flow from **E** back along the same edges, applying the chain rule at each step.
+
 ---
 
 ## Backpropagation: Start at Output

@@ -16,6 +16,13 @@ By the end of this video you will:
 - The loss is not only an **error measure**; it **directly shapes** the gradients in backpropagation.
 - Different losses → different **gradient magnitudes** and **directions** → different **speed** and **quality** of learning.
 
+### Visual: loss sits between prediction and updates
+
+```text
+  yhat  →  Loss L y yhat  →  dL/dtheta  →  optimizer step
+           choice of L changes dL/dtheta even for same error
+```
+
 ---
 
 ## MSE vs Cross-Entropy (High Level)

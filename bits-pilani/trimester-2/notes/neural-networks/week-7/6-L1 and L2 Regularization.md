@@ -47,6 +47,18 @@ J(\theta) = L_{\text{data}}(\theta) + \lambda \, \Omega(\theta)
 - **L2 constraint** region: a **disk** (L2 ball). The regularized solution is where a loss contour **first touches** the disk—often **shrinking** all weights **toward zero** but **rarely** setting exact zeros (smooth boundary).
 - Effect: reduces **any single parameter’s** dominance → **less sensitivity** to noise → **smoother** decision boundaries in classification settings.
 
+### Visual: L2 ball vs L1 ball (two weights)
+
+```text
+   w2                    L2: circle      L1: diamond (rotated square)
+    |                        ___              /\
+    |    ___---'''---___   /    \            /  \
+    |   /              \  |      |          /    \
+----+--/----------------\-+------+-- w1    /______\
+```
+
+The regularized solution often lies where a **loss contour** first touches the **constraint set**—corners of the diamond favor **sparse** weights (L1).
+
 ---
 
 ## L1 Regularization

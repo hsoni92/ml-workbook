@@ -18,6 +18,16 @@ By the end of this video you will:
 - The model becomes **fragile**: predictions hinge on a **narrow** set of activations.
 - **Dropout** reduces reliance on **any single neuron** by randomly **disabling** units during training.
 
+### Visual: training vs inference
+
+```text
+Training (dropout on):     h1  (h2)  h3   h4   — (h2) dropped this step
+                           |    x    |    |
+Inference (all active):    h1   h2   h3   h4   — full network, usual scaling rules
+```
+
+Each mini-batch can use a **different** random mask; at test time **all** units participate with **consistent** scaling (e.g. inverted dropout).
+
 ---
 
 ## Core Mechanism (Training)

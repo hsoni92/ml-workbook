@@ -57,6 +57,22 @@ A dataset is **linearly separable** if there exist a weight vector $\mathbf{w}$ 
 | 1 | 0 | 1 |
 | 1 | 1 | 0 |
 
+### Visual: XOR in the (x₁, x₂) plane
+
+```text
+  x₂
+   1    (0,1) XOR=1        (1,1) XOR=0
+        ●                  ●
+        │                  │
+   ─────┼──────────────────┼────  (no single line separates 0s from 1s)
+        │                  │
+   0    ●                  ●
+        (0,0) XOR=0        (1,0) XOR=1
+        0                  1        x₁
+```
+
+Same-class labels are on opposite corners, so **no straight line** can separate class 0 from class 1.
+
 - When we plot the four input points in the plane, the two **0**s lie **diagonally opposite** (e.g. at (0,0) and (1,1)), and the two **1**s lie on the other diagonal (e.g. (0,1) and (1,0)). So the **same-class** points are not on the same side of any single line.
 - **No single line** can separate the 0s from the 1s. This layout makes **linear separation impossible**. XOR is the simplest and clearest demonstration of the **fundamental limits** of single-layer Perceptrons.
 

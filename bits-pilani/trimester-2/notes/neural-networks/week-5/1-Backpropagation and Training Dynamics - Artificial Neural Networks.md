@@ -28,6 +28,16 @@ By the end of this video you will:
 
 **Backpropagation** is the process that determines how **responsibility for error** is distributed across the entire network.
 
+### Visual: one training step
+
+```mermaid
+flowchart LR
+  fwd[Forward pass] --> loss[Compute loss]
+  loss --> bp[Backprop gradients]
+  bp --> upd[Update weights]
+  upd --> fwd
+```
+
 ---
 
 ## What This Module Covers

@@ -91,6 +91,8 @@ The **output layer** takes these internal representations and produces a **singl
 
 Information flows **step by step**: **raw features → abstract features → final prediction**. At **no point** does information move backward or in a loop.
 
+### Visual: one-way pipeline
+
 ```mermaid
 flowchart LR
   subgraph input [Input Layer]

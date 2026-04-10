@@ -19,6 +19,16 @@ By the end of this video you will:
 
 ---
 
+### Visual: how much data per gradient step
+
+```text
+Batch:        [████████████████████]  all samples → one update
+Mini-batch:   [██] [██] [██] [██] ...   chunks → many updates
+Stochastic:   [█][█][█][█][█]...        one sample → one update
+```
+
+---
+
 ## Batch Gradient Descent
 
 - Uses the **entire** dataset to compute **one** gradient update.

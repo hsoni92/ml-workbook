@@ -48,6 +48,25 @@ Errors on unseen data do not come from a single cause:
 - **Improving** one aspect often **worsens** the other—hence **bias–variance trade-off**.
 - **Good generalization** usually lies **between** extremes: flexible enough to capture real patterns, **stable** enough not to chase noise.
 
+### Visual: error vs model complexity (schematic)
+
+```text
+  error
+    ▲
+    │      bias² (high for simple models)
+    │       ╲
+    │        ╲___
+    │            ╲___  total error (often U-shaped)
+    │                ╲___
+    │     variance ___╱  (high for complex models)
+    │          ___╱
+    └────────────────────────► model complexity
+              ↑
+         sweet spot
+```
+
+As complexity grows, **bias** tends to fall and **variance** to rise; **total** generalization error often has a **minimum** in the middle.
+
 ---
 
 ## Connection to Underfitting and Overfitting

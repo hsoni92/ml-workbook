@@ -18,6 +18,15 @@ Module 2 builds the **mathematical foundation** needed to understand how neural 
 
 With this toolkit we are ready to study **concrete neural models** (e.g. perceptron, logistic neuron) and connect the math to actual learning.
 
+### Visual: module 2 toolkit
+
+```mermaid
+flowchart LR
+  vecmat[Vectors matrices] --> grad[Gradients]
+  grad --> chain[Chain rule]
+  chain --> stable[Stable numerics]
+```
+
 ---
 
 ## Key Intuitions to Retain (Exam-Ready)

@@ -77,6 +77,16 @@ So **intelligence** in neural networks does **not** come from any single neuron.
 
 ## Diagram Intuition (Weights as Template)
 
+### Visual: one artificial neuron
+
+```mermaid
+flowchart LR
+  x1[x1] --> sum[Weighted sum + b]
+  x2[x2] --> sum
+  sum --> sigma[Activation]
+  sigma --> y[y]
+```
+
 Conceptually:
 
 ```

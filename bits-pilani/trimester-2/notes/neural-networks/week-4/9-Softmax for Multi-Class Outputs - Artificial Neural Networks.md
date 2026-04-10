@@ -24,6 +24,15 @@ By the end of this video you will:
 - Before softmax, the last layer outputs a vector of **real numbers** — the **logits** (raw scores per class).
 - Logits can be positive or negative, large or small; they do **not** yet form a probability distribution.
 
+### Visual: logits → probabilities
+
+```mermaid
+flowchart LR
+  z[Logits z1..zK] --> exp[Exponentiate]
+  exp --> norm[Divide by sum]
+  norm --> p[Probabilities p1..pK sum to 1]
+```
+
 ---
 
 ## Softmax Definition

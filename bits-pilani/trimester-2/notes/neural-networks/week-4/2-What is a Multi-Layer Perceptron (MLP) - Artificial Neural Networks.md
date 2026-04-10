@@ -19,6 +19,22 @@ By the end of this video you will:
   - **Output layer** — produces the final prediction.
 - Information flows **strictly in one direction**: input → hidden layers → output. No cycles, no feedback.
 
+### Visual: feed-forward MLP
+
+```mermaid
+flowchart LR
+  subgraph inLayer [Input]
+    x[Features x]
+  end
+  subgraph hid1 [Hidden]
+    h[Neurons: z = Wx + b, a = f z]
+  end
+  subgraph outLayer [Output]
+    yhat[Prediction]
+  end
+  x --> h --> yhat
+```
+
 ---
 
 ## Fully Connected Architecture

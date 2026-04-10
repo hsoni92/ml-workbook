@@ -17,6 +17,16 @@ By the end of this video you will:
 - **Ad hoc** fixes (e.g. randomly cranking dropout or \(\lambda\)) often **fail** because the **root cause** was wrong.
 - A checklist enforces: **observe** → **classify the failure mode** → **act**.
 
+### Visual: diagnose then fix
+
+```mermaid
+flowchart LR
+  curves[Train val curves] --> diag{Over or under?}
+  diag --> dataFix[Data]
+  diag --> modelFix[Model]
+  diag --> trainFix[Training]
+```
+
 ---
 
 ## Step 1: Diagnosis (Always First)

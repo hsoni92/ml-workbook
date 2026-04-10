@@ -58,6 +58,21 @@ So: $\nabla f = (2x,\ 2y)^T.$
   - Along a level curve, the function does **not** change.
   - Moving **across** level curves (e.g. from one circle to a larger one) changes the function, and it changes **fastest** when we move in the **direction of the gradient**.
 
+### Visual: level curves and gradient (for f = x² + y²)
+
+```text
+              y
+              ▲
+              │     ___---'''---___  larger f
+              │  .-'             '-.
+              │ (   ∇f points      )
+              │  '.   outward,      .'
+              │    '-._ normal to circles _.-'
+              └──────────────────────────► x
+```
+
+Along a circle, f is constant. The gradient at a point is **radial** (perpendicular to the circle through that point): steepest climb is straight toward larger circles.
+
 ---
 
 ## Gradient and Minimization (Neural Network Training)

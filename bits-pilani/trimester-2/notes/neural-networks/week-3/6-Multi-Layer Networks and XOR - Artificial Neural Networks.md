@@ -24,6 +24,20 @@ By the end of this video you will:
 - **Each hidden neuron** can learn its **own** linear separator of the input space. These intermediate “linear features” are then passed to the **output** neuron, which **combines** them into a final decision.
 - By **composing** multiple linear cuts in this way, the network can form **non-linear** decision regions in the original input space. This is the crucial **representational leap**: we are no longer restricted to a **single** straight boundary.
 
+### Visual: hidden layer combines multiple linear splits
+
+```mermaid
+flowchart LR
+  x1[x1] --> h1[Hidden 1]
+  x2[x2] --> h1
+  x1 --> h2[Hidden 2]
+  x2 --> h2
+  h1 --> out[Output]
+  h2 --> out
+```
+
+Each hidden unit can implement one linear partition; the output layer **recombines** their signals so the overall map is non-linear in the original inputs (e.g. XOR).
+
 ---
 
 ## Solving XOR with Two Linear Boundaries

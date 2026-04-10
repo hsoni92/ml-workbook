@@ -51,6 +51,17 @@ $$
 - $\eta > 0$ = **learning rate** (controls step size).
 - The update depends on: current input $\mathbf{x}$, true label $y$, and current parameters. **Updates occur only when the model makes a mistake.**
 
+### Visual: mistake-driven update loop
+
+```mermaid
+flowchart LR
+  ex[Next example x y] --> pred[Predict yhat]
+  pred --> gate{Mistake?}
+  gate -->|no| ex
+  gate -->|yes| upd["w <- w + eta y x,  b <- b + eta y"]
+  upd --> ex
+```
+
 ---
 
 ## Why This Update Makes Sense

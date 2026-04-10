@@ -15,6 +15,14 @@ By the end of this video you will:
 - Training does not always **explode** or **crash**. Often it **starts** normally, then **slows**, **stalls**, or **fluctuates** without clear improvement.
 - These issues are often due to **optimization** challenges rather than code bugs or data problems.
 
+### Visual: stuck vs progressing
+
+```text
+Loss flat but not minimal  →  saddle or plateau
+Loss noisy but trending down  →  often normal SGD
+Loss diverging               →  LR too big or numerical issue
+```
+
 ---
 
 ## Saddle Points

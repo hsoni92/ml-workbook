@@ -19,6 +19,17 @@ By the end of this video you will:
 - **If** most derivatives are **&lt; 1** → gradient **shrinks** (vanishing).
 - **If** most are **&gt; 1** → gradient **grows** rapidly (exploding).
 
+### Visual: many factors in the chain
+
+```text
+Backward through L layers (schematic):
+
+  dL/d early  ≈  dL/d top × g_L × g_{L-1} × ... × g_1
+
+If each |g_i| < 1  →  product shrinks  →  vanishing
+If each |g_i| > 1  →  product explodes  →  exploding
+```
+
 ---
 
 ## Vanishing Gradients

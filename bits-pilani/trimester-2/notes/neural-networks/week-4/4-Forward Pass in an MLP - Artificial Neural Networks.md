@@ -17,6 +17,19 @@ By the end of this video you will:
 - **Forward pass** = executing the stored computations of the network on a **single input**.
 - No learning happens here — only **numerical computation** that turns one input into one prediction.
 
+### Visual: signal flow
+
+```mermaid
+flowchart LR
+  x0[Input x] --> L1[Layer 1]
+  L1 --> L2[Layer 2]
+  L2 --> dots[...]
+  dots --> Lout[Output layer]
+  Lout --> yhat[Prediction]
+```
+
+Each box is “linear map + activation” on the vector from the previous stage.
+
 ---
 
 ## Flow of One Input

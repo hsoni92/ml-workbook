@@ -45,6 +45,20 @@ By the end of this video you will:
 - **Key advantage:** Many complex functions can be represented with **far fewer parameters** than a very wide but shallow network.
 - Depth enables **efficient function composition**.
 
+### Visual: depth stacks abstractions
+
+```mermaid
+flowchart TB
+  subgraph shallow [More width one level]
+    manyUnits[Many neurons same layer]
+  end
+  subgraph deepNet [More depth]
+    d1[Layer 1] --> d2[Layer 2] --> d3[Layer 3]
+  end
+```
+
+Deep nets build **compositional** features layer by layer; wide shallow nets pack many detectors at **one** level.
+
 ---
 
 ## Width vs Depth Trade-off

@@ -34,6 +34,16 @@ By the end of this video you will:
 | **Early stopping** | Limits **over-training**; picks **best** val checkpoint |
 | **Data augmentation** | Increases **effective** data diversity |
 
+### Visual: stack defenses
+
+```mermaid
+flowchart TB
+  data[More diverse data aug] --> gen[Better generalization]
+  pen[Weight penalties] --> gen
+  stop[Early stopping] --> gen
+  drop[Dropout BN noise] --> gen
+```
+
 ---
 
 ## Common Combinations (Examples from Lecture)

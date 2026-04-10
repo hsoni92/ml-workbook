@@ -49,6 +49,17 @@ $$
 - Tanh is a **rescaled and shifted** version of sigmoid.
 - Historically used in **hidden layers** of classical neural networks.
 
+### Visual: output ranges (schematic)
+
+```text
+Sigmoid:  1 |     _________     maps R to (0, 1)
+          0 |____/
+
+Tanh:     1 |     _________     maps R to (-1, 1)
+          0 |____/
+         -1 |         ‾‾‾‾‾
+```
+
 ---
 
 ## Zero-Centering: Sigmoid vs Tanh

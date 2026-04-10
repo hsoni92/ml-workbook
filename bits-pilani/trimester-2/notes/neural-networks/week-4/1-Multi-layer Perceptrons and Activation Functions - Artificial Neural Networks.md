@@ -32,3 +32,12 @@ By the end of this video you will:
 - MLPs are not just one specific model — they are the **conceptual foundation** of deep learning.
 - Almost every modern architecture (convolutional networks, recurrent networks, transformers) is built using the same core ideas: **layered computation** and **non-linear activation**.
 - Understanding MLPs and activation functions is learning the **core language of deep learning**.
+
+### Visual: this module in one picture
+
+```mermaid
+flowchart LR
+  single[Single neuron limits] --> mlp[MLP with hidden layers]
+  mlp --> act[Nonlinear activations]
+  act --> power[Expressive decisions]
+```

@@ -16,6 +16,14 @@ By the end of this video you will:
 - A bad choice can cause very **slow** learning, **unstable** training, or **no** learning.
 - Activation selection is a **core architectural** decision, not a minor detail.
 
+### Visual: failure modes vs fixes (overview)
+
+```text
+Saturation sigmoid tanh  →  vanishing grads  →  prefer ReLU hidden
+Dying ReLU               →  dead units       →  Leaky ReLU PReLU
+Too large activations    →  exploding        →  init BN clipping
+```
+
 ---
 
 ## Saturation (Sigmoid and Tanh)
