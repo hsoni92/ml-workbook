@@ -18,6 +18,13 @@ By the end of this video you will:
 - These values affect how **activations** scale, how **gradients** scale, and whether learning starts **smoothly** or **fails** immediately.
 - **Bad** initialization can block learning; **good** initialization can make deep networks trainable. Initialization is the **starting point** of the entire learning process.
 
+### Visual: goal at start of training
+
+```text
+Activations neither explode nor vanish  →  gradients stay in a usable range
+Xavier He rules set variance of W from fan-in fan-out
+```
+
 ---
 
 ## Why Not Initialize All Weights to Zero?

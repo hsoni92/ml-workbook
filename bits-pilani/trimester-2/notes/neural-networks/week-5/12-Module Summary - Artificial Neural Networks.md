@@ -20,6 +20,16 @@ Module 5 focuses on **backpropagation** and **training dynamics**: how neural ne
 | **Vanishing/exploding** | Chain rule multiplies many derivatives; &lt; 1 → vanish, &gt; 1 → explode; activation and initialization are key. |
 | **Mitigation** | Initialization (Xavier, He), ReLU family, **gradient clipping**, **normalization** (batch, layer). |
 
+### Visual: training loop recap
+
+```mermaid
+flowchart LR
+  fwd[Forward] --> loss[Loss]
+  loss --> bp[Backprop]
+  bp --> opt[Optimizer update]
+  opt --> fwd
+```
+
 ---
 
 ## Key Intuitions to Retain (Exam-Ready)

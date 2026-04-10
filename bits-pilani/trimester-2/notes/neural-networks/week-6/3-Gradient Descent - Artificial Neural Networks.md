@@ -39,6 +39,16 @@ $$
 - $\nabla L$: **gradient** of the loss w.r.t. $\theta$ (slope at the current point).
 - The **gradient** gives the **direction**; the **learning rate** controls **how big** the step is. Every parameter in the network follows this same rule during training.
 
+### Visual: step opposite to the gradient of loss
+
+```text
+  Loss L(theta)
+      ╲
+       ╲___
+           ‾‾‾╲___  ← move theta in direction  -grad L  (downhill)
+                ‾‾‾
+```
+
 ---
 
 ## Learning Rate: Critical Hyperparameter

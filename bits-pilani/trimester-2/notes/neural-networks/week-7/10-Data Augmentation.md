@@ -27,6 +27,12 @@ By the end of this video you will:
 
 **Example (images):** flips, rotations, crops, blur, exposure/contrast changes—**if** they still depict the **same class**.
 
+### Visual: one label many views
+
+```text
+  original image  →  flip  crop  jitter  ...  →  same class label y
+```
+
 ---
 
 ## Why It Helps Generalization

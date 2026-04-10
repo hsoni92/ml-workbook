@@ -43,6 +43,16 @@ y = \gamma \hat{x} + \beta
 
 - The network can **recover** needed scaling and bias, so expressive power is **not** arbitrarily restricted.
 
+### Visual: BN block inside a layer
+
+```mermaid
+flowchart LR
+  xin[Activations x] --> norm[Normalize using batch mean and var]
+  norm --> gamma[Scale by gamma]
+  gamma --> beta[Shift by beta]
+  beta --> yout[Output y to next op]
+```
+
 ---
 
 ## Implicit Regularization

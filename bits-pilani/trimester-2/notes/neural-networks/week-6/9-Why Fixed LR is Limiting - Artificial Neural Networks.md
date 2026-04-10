@@ -24,6 +24,16 @@ By the end of this video you will:
 - **Later:** Model is **close** to a minimum; gradients are **smaller**; **large** steps can cause **oscillation** or prevent convergence.
 - So the learning rate we want **early** is **different** from the one we want **near the end**.
 
+### Visual: step size over training
+
+```text
+  eta
+   |  ---
+   |     ---
+   |        ----   decay or schedule shrinks steps later
+   +-------------- time
+```
+
 ---
 
 ## Failure Modes

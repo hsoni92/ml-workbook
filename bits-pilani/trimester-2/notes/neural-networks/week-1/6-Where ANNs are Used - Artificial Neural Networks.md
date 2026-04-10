@@ -16,6 +16,14 @@ So far in this module we have studied **what neural networks are**, **how single
 
 Neural networks are **not just academic models**. They are the **core engines** behind most modern AI systems that we interact with every day. By looking at these applications, you will understand **what types of problems** neural networks are especially good at and **why they have become the dominant approach** in artificial intelligence. In this video we survey the major domains where artificial neural networks are the **default modeling choice**.
 
+### Visual: typical data modalities
+
+```mermaid
+flowchart LR
+  pixels[Pixels audio text] --> ann[Neural net]
+  ann --> out[Labels scores sequences]
+```
+
 ---
 
 ## Computer Vision

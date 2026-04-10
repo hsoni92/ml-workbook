@@ -17,6 +17,17 @@ By the end of this video you will:
 - Each alone solves only **part** of the problem. **Adam** combines **momentum** (direction) and **adaptive scaling** (stability) in one optimizer.
 - So Adam can move **fast** in consistent directions, stay **stable** in noisy or steep regions, and handle **sparse** gradients well.
 
+### Visual: two ingredients → one update
+
+```mermaid
+flowchart LR
+  g[Gradients g] --> mTrack[First moment momentum-like]
+  g --> vTrack[Second moment RMSProp-like]
+  mTrack --> adamStep[Bias-correct and combine]
+  vTrack --> adamStep
+  adamStep --> theta[Parameter update]
+```
+
 ---
 
 ## What Adam Tracks

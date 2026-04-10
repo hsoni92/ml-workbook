@@ -39,6 +39,16 @@ By the end of this video you will:
 - Noisy updates encourage **exploration** and often lead to **flatter** minima, which tend to **generalize** better.
 - So **noisy** descent is common and often **beneficial**.
 
+### Visual: loss vs step (cartoon)
+
+```text
+Smooth (large batch):     Noisy (small batch):
+  L|                        L|    ·  ·
+   |╲                        | ·    · ·
+   | ╲___                     |· ·___·  ·___
+   +──── step                 +──────────── step
+```
+
 ---
 
 ## Batch Size

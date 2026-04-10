@@ -29,6 +29,17 @@ f(z) = \max(0, z) = \begin{cases} z & \text{if } z > 0 \\ 0 & \text{if } z \leq 
 - For **positive** inputs, ReLU **does not saturate** (unlike sigmoid/tanh).
 - This property is very effective for training **deep** networks.
 
+### Visual: ReLU is piecewise linear
+
+```text
+  f z
+    |     /
+    |    /  slope 1 for z > 0
+────┼───/──────────  z
+    |  /
+    | flat 0 for z <= 0
+```
+
 ---
 
 ## Why ReLU Became Default

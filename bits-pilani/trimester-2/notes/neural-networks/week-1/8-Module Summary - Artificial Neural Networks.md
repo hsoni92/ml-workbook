@@ -19,6 +19,15 @@ The module can be seen as **one continuous flow** from broad to specific:
 
 **Big picture**: Modern neural network models are constructed from **extremely simple building blocks** (neurons, weights, bias, layers) combined in a feed-forward architecture.
 
+### Visual: module 1 storyline
+
+```mermaid
+flowchart LR
+  AI[AI ML DL] --> neuron[Neuron]
+  neuron --> Wb[Weights bias layers]
+  Wb --> ff[Feed-forward net]
+```
+
 ---
 
 ## Key Intuitions to Retain (Exam-Ready)

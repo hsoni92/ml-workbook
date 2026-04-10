@@ -17,6 +17,16 @@ By the end of this video you will:
 - So the **underlying geometry** — the line or hyperplane defined by $\mathbf{w}^T \mathbf{x} + b = 0$ — is **identical** in both cases.
 - The **only** difference is what we do **after** computing $z$: the **activation function**. That single change completely changes the **nature of the output**, the **interpretation** of predictions, and **how learning** is performed.
 
+### Visual: same z, different output nonlinearity
+
+```mermaid
+flowchart TB
+  z[Linear score z = w^T x + b] --> stepPath[Step sign]
+  z --> sigPath[Sigmoid]
+  stepPath --> disc[Discrete class]
+  sigPath --> prob[Probability in 0 1]
+```
+
 ---
 
 ## Activation Functions

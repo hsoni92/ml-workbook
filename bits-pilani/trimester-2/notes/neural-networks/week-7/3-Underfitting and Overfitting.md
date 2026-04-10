@@ -56,6 +56,17 @@ In short: the model has **not learned enough**.
 
 This comparison is a **practical diagnostic** for model behavior.
 
+### Visual: fit to data (cartoon)
+
+```text
+Underfit          Good fit              Overfit
+  ·    ·            ·    ·                ·    ·
+    ——            ~  curve  ~          (((((())))))
+  ·    ·            ·    ·         wiggly curve hits every ·
+  (line misses      (smooth            (memorizes noise)
+   the pattern)     trend)
+```
+
 ---
 
 ## Model Capacity and Data
