@@ -25,6 +25,14 @@ By the end of this video you will:
 - If it is **too large** → **scale it down**.
 - So **no single** update can be catastrophically large. Clipping **limits** the magnitude of updates **without** changing the overall optimization process: it prevents sudden jumps, **stabilizes** training when gradients spike, and lets learning **continue** instead of diverging.
 
+### Visual: norm clipping preserves direction
+
+```text
+Gradient g (too long)  →  scale to max norm c  →  g_clip = (c / ||g||) g
+
+Same direction, smaller length — update stays stable.
+```
+
 ---
 
 ## Gradient Clipping Is a Safeguard

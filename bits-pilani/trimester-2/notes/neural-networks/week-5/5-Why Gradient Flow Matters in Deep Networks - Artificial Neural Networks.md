@@ -17,6 +17,13 @@ By the end of this video you will:
 - These gradients do **not** appear only at the output; they **travel backward** through the whole network, from the output layer to the first layer.
 - This **backward movement** of gradients is **gradient flow**.
 
+### Visual: signal from loss to early layers
+
+```text
+  Loss  ←  layer L  ←  layer L-1  ← ... ←  layer 1
+         backprop multiplies local derivatives at each step
+```
+
 ---
 
 ## A Layer Can Only Learn If a Gradient Reaches It

@@ -26,6 +26,14 @@ By the end of this video you will:
 - **Whether** training **converges** or diverges.
 - **How** we avoid bad regions (e.g. saddle points, sharp minima).
 
+### Visual: gradients vs optimizer
+
+```mermaid
+flowchart LR
+  bp[Backprop gradients] --> opt[Optimizer rule]
+  opt --> step[Parameter update]
+```
+
 ---
 
 ## Why It Matters

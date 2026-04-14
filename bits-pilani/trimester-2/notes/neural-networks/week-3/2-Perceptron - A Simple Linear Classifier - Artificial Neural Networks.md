@@ -39,6 +39,15 @@ $$
   - If $z < 0$ → output **-1**
 - So the Perceptron produces **exactly one of two outputs**: +1 or -1. It is a **binary decision unit**.
 
+### Visual: Perceptron computation
+
+```mermaid
+flowchart LR
+  x[Input x] --> z["z = w^T x + b"]
+  z --> sgn[Sign threshold]
+  sgn --> yhat["yhat is plus1 or minus1"]
+```
+
 ---
 
 ## Decision Boundary: Line, Plane, Hyperplane

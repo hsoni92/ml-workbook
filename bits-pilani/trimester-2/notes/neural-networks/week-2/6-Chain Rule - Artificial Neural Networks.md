@@ -31,6 +31,16 @@ Sensitivity **flows** from $y$ → $u$ → $x$.
 
 - $\frac{du}{dx} = 3$, $\frac{dy}{du} = 2u$ ⇒ $\frac{dy}{dx} = 2u \cdot 3 = 6u = 18x$.
 
+### Visual: dependency chain
+
+```mermaid
+flowchart LR
+  x[x] -->|times 3| u[u]
+  u -->|square| y[y]
+```
+
+$\frac{dy}{dx}$ multiplies local derivatives along this path: $\frac{dy}{du}\frac{du}{dx}$.
+
 ---
 
 ## Two-Layer-Like Composite Function

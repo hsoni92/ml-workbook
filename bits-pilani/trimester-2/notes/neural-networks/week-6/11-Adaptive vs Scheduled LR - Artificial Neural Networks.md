@@ -17,6 +17,18 @@ By the end of this video you will:
 
 Both aim to choose the **right** step size, but in **different** ways.
 
+### Visual: two control knobs
+
+```mermaid
+flowchart TB
+  subgraph adapt [Adaptive per parameter]
+    ghist[Gradient history] --> eta_i[Effective step per weight]
+  end
+  subgraph sched [Scheduled global]
+    time[Time or epoch] --> eta_t[Global eta t]
+  end
+```
+
 ---
 
 ## Adaptive Optimizers (e.g. Adam)

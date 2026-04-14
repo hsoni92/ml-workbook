@@ -33,6 +33,13 @@ By the end of this video you will:
 - **SGD with momentum:** Slower, needs more tuning; often gives **better final** performance.
 - Neither is **universally** better; the right choice depends on **goals**.
 
+### Visual: typical workflow
+
+```text
+Experiment or hard training  →  Adam first
+Final fine-tune for accuracy  →  SGD with momentum often wins
+```
+
 ---
 
 ## Combining Both: Common Strategy

@@ -16,6 +16,13 @@ By the end of this video you will:
 - But parameters **behave differently**: some are very sensitive, some barely affect the loss; some need **large** steps, others **tiny** ones.
 - Forcing **one** learning rate on all parameters → some learn **too slowly**, others become **unstable**. This mismatch gets worse as networks get **deeper** and parameter scales **diverge**.
 
+### Visual: one eta vs per-parameter steps
+
+```text
+SGD:        same step for every weight
+Adaptive:   each weight i gets its own effective eta_i from gradient history
+```
+
 ---
 
 ## Sparse Data and Sparse Gradients

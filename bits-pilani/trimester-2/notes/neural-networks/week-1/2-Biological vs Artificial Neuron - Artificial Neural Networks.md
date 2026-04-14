@@ -60,6 +60,20 @@ In artificial neural networks we take this complex biological process and create
 | **Soma** (integrating signals) | **Weighted summation** of inputs — combine all inputs with weights. |
 | **Neuron firing** (output) | **Activation function** — a function that decides how strong the output is (e.g. threshold, sigmoid, ReLU). |
 
+### Visual: biology → artificial (same pipeline)
+
+```mermaid
+flowchart LR
+  subgraph bio [Biological]
+    Dendrites[Dendrites receive] --> Soma[Soma integrates]
+    Soma --> Axon[Axon fires if threshold exceeded]
+  end
+  subgraph art [Artificial]
+    Inputs[Input features x] --> Wsum[Weighted sum + b]
+    Wsum --> Act[Activation]
+  end
+```
+
 All the **biochemical details** of real neurons (ions, channels, neurotransmitters, etc.) are **deliberately ignored**. This simplification is **essential** because it allows us to:
 
 - Represent neurons using **equations**.

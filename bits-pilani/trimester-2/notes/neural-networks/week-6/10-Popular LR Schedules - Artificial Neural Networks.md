@@ -16,6 +16,16 @@ By the end of this video you will:
 - Instead of keeping it **constant**, we often **start** with a relatively **large** value and **gradually reduce** it.
 - **Idea:** Training needs **large** steps early and **smaller**, more precise steps later. Schedules **match** step size to the current phase.
 
+### Visual: common shapes (schematic)
+
+```text
+Step decay:     eta ──┐     ┌──┐     ┌──
+                      └─────┘  └─────┘
+
+Cosine:         eta ─╲                    ╱──  smooth dip to near zero
+                       ╲________________╱
+```
+
 ---
 
 ## Step Decay

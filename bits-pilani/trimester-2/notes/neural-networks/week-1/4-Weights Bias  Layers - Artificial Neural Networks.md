@@ -154,6 +154,8 @@ So each layer converts **low-level raw features** into **progressively more abst
 1. **Complex relationships**: This hierarchy allows neural networks to model highly complex relationships using a **series of simple transformations**.
 2. **End-to-end learning**: The system can **automatically discover** useful internal concepts from the data, without hand-designing every intermediate feature.
 
+### Visual: hierarchy of layers (house-price example)
+
 ```mermaid
 flowchart LR
   subgraph input [Input Layer]

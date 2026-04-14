@@ -20,6 +20,14 @@ Module 4 builds the **foundation** of **multi-layer perceptrons (MLPs)** and **a
 | **Softmax** | Converts logits to probability distribution over classes; for **multi-class** output layer. |
 | **Practical choices** | Hidden: ReLU (or Leaky ReLU); output: sigmoid (binary), softmax (multi-class), linear (regression). |
 
+### Visual: MLP + activations recap
+
+```mermaid
+flowchart TB
+  inLayer[Input] --> hid[Hidden ReLU family]
+  hid --> outLayer[Output sigmoid softmax or linear]
+```
+
 ---
 
 ## Key Intuitions to Retain (Exam-Ready)

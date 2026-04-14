@@ -25,6 +25,17 @@ By the end of this video you will:
 - If it sees **small** gradients → RMSProp **increases** its effective learning rate.
 - So instead of **one global** learning rate, each parameter gets a **dynamically adjusted** step size. This **balances** learning across parameters, **dampens** unstable directions, **boosts** slow ones, and **smooths** updates when gradients are noisy or sparse.
 
+### Visual: per-parameter scaling
+
+```mermaid
+flowchart LR
+  g[Gradient g_t] --> sq[Track avg g squared]
+  sq --> denom[Sqrt running avg + eps]
+  g --> step[Step size eta over denom]
+  denom --> step
+  step --> theta[Update theta]
+```
+
 ---
 
 ## Update Rule

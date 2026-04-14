@@ -24,6 +24,16 @@ By the end of this video you will:
 - A **classic** signal: **training loss** keeps **decreasing**, while **validation loss** **plateaus** or starts **increasing** after some point.
 - A **widening gap** between training and validation performance suggests the model is learning **idiosyncrasies** of the training set rather than **general** patterns.
 
+### Visual: widening gap
+
+```text
+  metric
+    |  train ------
+    |        \\      val ___
+    |         \\___/     ‾‾‾  val gets worse while train improves
+    +------------------------ epoch
+```
+
 ---
 
 ## Unstable Validation Metrics

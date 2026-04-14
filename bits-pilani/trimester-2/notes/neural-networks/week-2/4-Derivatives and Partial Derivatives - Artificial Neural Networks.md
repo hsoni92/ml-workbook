@@ -34,6 +34,16 @@ By the end of this video you will:
 - **Geometrically:** It is the **slope of the tangent line** to the curve at that point.
 - **In a learning system:** This slope tells us whether **increasing** a parameter will **increase** the output, **decrease** it, or have **little effect**. That is exactly what we need to update weights.
 
+### Visual: derivative as slope of the tangent
+
+```text
+     y |     / curve y = f x
+       |    /
+       |   *  ← tangent slope = df/dx at this point
+       |  /
+       +──────── x
+```
+
 ---
 
 ## Why Partial Derivatives?

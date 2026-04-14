@@ -36,6 +36,15 @@ By the end of this video you will:
 - These two can **diverge** sharply during training.
 - **Low training error** with **high generalization error** = the model **looks good** on training data but **fails** on new data.
 
+### Visual: two errors to watch
+
+```text
+  Train error  vs  Val or test error
+       low              high     →  classic overfit
+       high             high     →  underfit
+       low              low      →  goal
+```
+
 ---
 
 ## Why Training Performance Can Mislead

@@ -36,6 +36,14 @@ By the end of this video you will:
 - **Example:** $e^{-1000}$ is a very small positive number mathematically, but in floating-point arithmetic it is stored as **zero**.
 - When that happens, any gradient or probability information carried by that value is **permanently lost**.
 
+### Visual: stable softmax / log-domain idea
+
+```text
+Bad:  exp z_i  can overflow          Good:  work with log-probs
+      sum of huge exponentials            log-sum-exp trick
+      or underflow to 0                   keeps magnitudes controlled
+```
+
 ---
 
 ## Why Deep Learning Is Especially Sensitive

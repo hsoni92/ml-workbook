@@ -36,6 +36,15 @@ This module gives you the **exact mathematical tools** required to understand an
 | **Chain rule** | The key mechanism that lets gradients flow through multilayer neural networks |
 | **Numerical stability** | Why training can fail (overflow, underflow) and how practical systems avoid it |
 
+### Visual: three pillars for training math
+
+```mermaid
+flowchart TB
+  LA[Linear algebra layers] --> CR[Chain rule gradients]
+  CR --> NS[Numerical stability]
+  NS --> train[Ready for learning algorithms]
+```
+
 ---
 
 ## Role of This Module

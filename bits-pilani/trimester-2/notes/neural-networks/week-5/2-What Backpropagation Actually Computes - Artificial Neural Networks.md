@@ -38,6 +38,19 @@ This is exactly what a **gradient** (partial derivative of the error w.r.t. that
 - Backpropagation computes **one gradient per parameter** (partial derivative of loss w.r.t. each weight and bias).
 - These gradients are the **only** information needed by any learning algorithm to perform parameter updates.
 
+### Visual: forward vs backward (same graph)
+
+```mermaid
+flowchart LR
+  inNode[Input] --> hid[Hidden layers]
+  hid --> outNode[Output]
+  outNode --> lossNode[Loss]
+  lossNode -.->|dL/d params| hid
+  hid -.->|chain rule| inNode
+```
+
+Solid: compute prediction and loss. Dashed: backprop assigns **dL/dθ** to every parameter θ.
+
 ---
 
 ## Interpreting the Gradient
