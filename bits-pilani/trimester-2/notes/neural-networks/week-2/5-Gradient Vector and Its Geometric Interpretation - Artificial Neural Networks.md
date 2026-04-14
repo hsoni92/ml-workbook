@@ -41,9 +41,7 @@ For a function $f(x_1, x_2, \ldots, x_n)$, the **gradient vector** is: $\nabla f
 ---
 
 ## Example: $f(x, y) = x^2 + y^2$
-$$
-\frac{\partial f}{\partial x} = 2x,\qquad \frac{\partial f}{\partial y} = 2y
-$$
+$\frac{\partial f}{\partial x} = 2x,\qquad \frac{\partial f}{\partial y} = 2y$
 So: $\nabla f = (2x,\ 2y)^T.$
 
 - At $(1, 1)$: $\nabla f = (2, 2)^T$. To move **upwards** in the steepest way, we move in the direction of $(2, 2)$ — i.e. **along the gradient**.

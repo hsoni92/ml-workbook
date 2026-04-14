@@ -31,9 +31,7 @@ By the end of this video you will:
 ---
 
 ## Update Rule
-$$
-\theta_{\text{new}} = \theta_{\text{old}} - \eta \cdot \nabla L
-$$
+$\theta_{\text{new}} = \theta_{\text{old}} - \eta \cdot \nabla L$
 - $\theta$: parameter (weight) we update.
 - $\eta$: **learning rate**.
 - $\nabla L$: **gradient** of the loss w.r.t. $\theta$ (slope at the current point).

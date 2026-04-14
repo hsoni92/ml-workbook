@@ -100,11 +100,7 @@ w_{m1} & w_{m2} & \cdots & w_{mn} \end{bmatrix}
 
 ### Algebraic Definition
 
-For vectors $\mathbf{x}$ and $\mathbf{w}$ of the same length $n$:
-
-$$
-\mathbf{x} \cdot \mathbf{w} = \sum_{i=1}^{n} x_i w_i
-$$
+For vectors $\mathbf{x}$ and $\mathbf{w}$ of the same length $n$: $\mathbf{x} \cdot \mathbf{w} = \sum_{i=1}^{n} x_i w_i$
 
 - **In words:** Multiply corresponding elements and sum the results.
 - **Output:** Always a **single scalar**, regardless of dimension.
@@ -115,9 +111,7 @@ $$
 - $\mathbf{x} \cdot \mathbf{w} = 2(3) + 1(-2) + (-1)(4) = 6 - 2 - 4 = 0$
 
 ### Geometric Interpretation
-$$
-\mathbf{x} \cdot \mathbf{w} = \|\mathbf{x}\| \,\|\mathbf{w}\| \cos\theta
-$$
+$\mathbf{x} \cdot \mathbf{w} = \|\mathbf{x}\| \,\|\mathbf{w}\| \cos\theta$
 
 - $\theta$ = angle between the two vectors.
 - $\cos\theta$ measures **alignment**:

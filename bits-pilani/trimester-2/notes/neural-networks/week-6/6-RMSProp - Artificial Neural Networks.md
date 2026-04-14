@@ -40,16 +40,10 @@ flowchart LR
 
 ## Update Rule
 
-**Running average of squared gradients:**
-$$
-v_t = \beta \cdot v_{t-1} + (1 - \beta) \cdot g_t^2
-$$
+**Running average of squared gradients:** $v_t = \beta \cdot v_{t-1} + (1 - \beta) \cdot g_t^2$
 This captures how large the gradients have been recently.
 
-**Parameter update:**
-$$
-\theta_t = \theta_{t-1} - \frac{\eta}{\sqrt{v_t} + \epsilon} \cdot g_t
-$$
+**Parameter update:** $\theta_t = \theta_{t-1} - \frac{\eta}{\sqrt{v_t} + \epsilon} \cdot g_t$
 - **Key:** The **denominator** scales the step. When gradients are **large**, $v_t$ is large → **smaller** updates. When gradients are **small**, $v_t$ is small → **larger** updates. So RMSProp **adapts** the learning rate automatically per parameter.
 
 ---

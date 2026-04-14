@@ -62,9 +62,7 @@ flowchart LR
 ---
 
 ## Layer Output in One Matrix Multiplication
-$$
-\mathbf{z} = \mathbf{W} \mathbf{x}
-$$
+$\mathbf{z} = \mathbf{W} \mathbf{x}$
 - This **single** multiplication computes the dot product of $\mathbf{x}$ with **every row** of $\mathbf{W}$.
 - So it gives the **outputs of all $m$ neurons at once**.
 - **Output:** $\mathbf{z} \in \mathbb{R}^m$ — one value per neuron.
@@ -103,10 +101,7 @@ So $\mathbf{z} = [1,\ 2,\ 3]^T$.
 - Bias is **not** a single number for the whole layer. There is **one bias per neuron**.
 - **Bias vector:** $\mathbf{b} = [b_1,\ b_2,\ \ldots,\ b_m]^T \in \mathbb{R}^m$.
 
-**Full linear computation for one layer:**
-$$
-\mathbf{z} = \mathbf{W} \mathbf{x} + \mathbf{b}
-$$
+**Full linear computation for one layer:** $\mathbf{z} = \mathbf{W} \mathbf{x} + \mathbf{b}$
 - Each $b_i$ shifts the output of the $i$-th neuron independently.
 - So each neuron has its own **baseline level of activation**.
 

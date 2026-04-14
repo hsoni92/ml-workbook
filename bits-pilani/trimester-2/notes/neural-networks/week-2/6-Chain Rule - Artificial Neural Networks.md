@@ -66,25 +66,19 @@ We want:
 ## Applying the Chain Rule
 
 ### 1. $\frac{dy}{dx}$
-$$
-\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}
-$$
+$\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$
 - $u = w_1 x + b_1$ ⇒ $\frac{du}{dx} = w_1$ ($b_1$ constant).
 - $y = u^2$ ⇒ $\frac{dy}{du} = 2u$.
 
 So: $\frac{dy}{dx} = 2u \cdot w_1.$
 ### 2. $\frac{dy}{dw_1}$
-$$
-\frac{dy}{dw_1} = \frac{dy}{du} \cdot \frac{du}{dw_1}
-$$
+$\frac{dy}{dw_1} = \frac{dy}{du} \cdot \frac{du}{dw_1}$
 - $\frac{du}{dw_1} = x$ (treat $x$, $b_1$ constant).
 - $\frac{dy}{du} = 2u$.
 
 So: $\frac{dy}{dw_1} = 2u \cdot x.$
 ### 3. $\frac{dy}{db_1}$
-$$
-\frac{dy}{db_1} = \frac{dy}{du} \cdot \frac{du}{db_1}
-$$
+$\frac{dy}{db_1} = \frac{dy}{du} \cdot \frac{du}{db_1}$
 - $\frac{du}{db_1} = 1$ (only $b_1$ varies).
 - $\frac{dy}{du} = 2u$.
 
