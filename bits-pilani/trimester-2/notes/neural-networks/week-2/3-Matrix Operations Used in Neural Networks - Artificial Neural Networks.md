@@ -64,8 +64,8 @@ $$
 
 ## Numerical Example
 
-- $`\mathbf{W} = \begin{bmatrix} 1 & 0 \\ 0 & 1 \\ 1 & 1 \end{bmatrix}`$ (shape $3 \times 2$)
-- $`\mathbf{x} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}`$ (shape $2 \times 1$)
+- $\mathbf{W} = \begin{bmatrix} 1 & 0 \\ 0 & 1 \\ 1 & 1 \end{bmatrix}$ (shape $3 \times 2$)
+- $\mathbf{x} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}$ (shape $2 \times 1$)
 - Inner dimensions (2 and 2) match → multiplication is valid.
 
 ```math

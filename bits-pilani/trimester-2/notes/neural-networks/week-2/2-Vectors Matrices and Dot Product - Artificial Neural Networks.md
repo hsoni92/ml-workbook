@@ -29,7 +29,7 @@ Inputs, weights, activations, outputs, and gradients are all represented with th
 
 A **vector** is an **ordered list of numbers**, usually represented as a **column** of values.
 
-**Example:** $`\mathbf{x} = \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix}`$ can represent an input vector.
+**Example:** $\mathbf{x} = \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix}$ can represent an input vector.
 
 ### Notation and Shape
 
