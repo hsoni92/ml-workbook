@@ -36,6 +36,15 @@ By the end of this module you will:
 - **Bridge:** From the **mathematical tools** (Module 2) to **concrete models** and their limitations.
 - Once you understand the Perceptron and the Logistic Neuron, the step to **deeper networks** becomes **conceptually natural** and well motivated.
 
+### Visual: module 3 arc
+
+```mermaid
+flowchart LR
+  perc[Perceptron] --> geom[Geometry XOR limits]
+  geom --> logi[Logistic neuron]
+  logi --> deep[Multi-layer motivation]
+```
+
 ---
 
 ## Summary

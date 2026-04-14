@@ -26,6 +26,13 @@ By the end of this video you will:
 - **Larger batches** → **smoother**, more **stable** updates but may converge to solutions that **generalize** **less** well in some settings.
 - **Takeaway:** batch size is a **first-class** generalization knob, not just a speed setting.
 
+### Visual: noise vs stability
+
+```text
+Small batch  →  noisy gradients  →  more exploration  →  often flatter minima
+Large batch  →  smooth updates   →  faster wall-clock   →  tune LR and regularization
+```
+
 ---
 
 ## Learning Rate and Training Length

@@ -44,6 +44,22 @@ This stops learning **before** the model spends long stretches **memorizing** no
 - **Validation loss** often **decreases** at first, reaches a **minimum**, then **rises** as overfitting sets in.
 - Early stopping targets the parameters at (or near) the **minimum validation** region.
 
+### Visual: typical training vs validation loss
+
+```text
+  loss
+    ▲
+    │ ╲  training loss (often keeps decreasing)
+    │  ╲____________
+    │              ╲
+    │   ___ validation loss
+    │  ╱   ╲    ╱╲  (rises again when overfitting)
+    │ ╱     ╲__╱  ╲__
+    └────────────────────► epoch
+            ↑
+      stop near best val
+```
+
 ---
 
 ## Practical Considerations

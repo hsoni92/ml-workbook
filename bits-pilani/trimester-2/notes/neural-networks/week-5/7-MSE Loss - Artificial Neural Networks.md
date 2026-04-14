@@ -36,6 +36,16 @@ $$
 - In **regression**, where predictions are on a **continuous** scale, we want the network to place predictions as **close as possible** to the true value — MSE does exactly that.
 - **Squaring** penalizes **large** errors more than small ones and yields **smooth** gradients.
 
+### Visual: MSE as a bowl in prediction space
+
+```text
+  Loss
+    |      U-shaped in yhat
+    |     /   minimum at yhat = y
+    |    /
+    +----------  prediction yhat
+```
+
 ---
 
 ## When to Use MSE

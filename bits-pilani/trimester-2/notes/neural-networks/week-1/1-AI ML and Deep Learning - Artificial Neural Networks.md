@@ -36,6 +36,15 @@ So at its core, every AI system follows this loop:
 | **Action** | Execute the chosen behavior. |
 | **Feedback** | (Implicit) Outcome influences future perception and decisions. |
 
+### Visual: perception–decision–action loop
+
+```mermaid
+flowchart LR
+  Perceive[Perceive] --> Decide[Decide]
+  Decide --> Act[Act]
+  Act -.->|feedback| Perceive
+```
+
 ### Examples
 
 - **Self-driving car**: Perceives the road through sensors → decides how to steer and brake → acts through its control system.
@@ -155,6 +164,21 @@ So:
 | **Representations** | Hand-crafted | Learned layer by layer |
 | **Function form** | Often single f(x) | Composition of many layers f_L(…f_2(f_1(x))…) |
 
+### Visual: fixed features vs learned layers
+
+```mermaid
+flowchart LR
+  subgraph classical [Classical ML]
+    rawX[Raw input x] --> handFeat[Hand-designed features]
+    handFeat --> model1[Model f with learned theta]
+  end
+  subgraph deepPath [Deep learning]
+    rawX2[Raw input x] --> layer1[Layer 1 learns representation]
+    layer1 --> layer2[Layer 2 learns representation]
+    layer2 --> model2[Output learned jointly]
+  end
+```
+
 > **Exam tip:** In classical ML, features are fixed and only parameters are learned. In deep learning, features, representations, and parameters are all learned jointly.
 
 ---
@@ -172,6 +196,17 @@ So:
 - Every **deep learning** system is a **machine learning** system.
 - Every **machine learning** system is an **AI** system.
 - The **reverse** is not true (not every AI system uses ML; not every ML system uses deep learning).
+
+### Visual: AI ⊃ ML ⊃ deep learning
+
+```mermaid
+flowchart TB
+  subgraph fldAI [Artificial Intelligence]
+    subgraph fldML [Machine Learning]
+      dl[Deep learning]
+    end
+  end
+```
 
 ---
 

@@ -18,6 +18,15 @@ Module 3 focuses on the **first building blocks** of neural networks: the **Perc
 | **Logistic neuron** | Replaces **hard** threshold with **sigmoid**; **continuous** output in (0,1), interpretable as **probability**; same **linear** decision boundary, **smooth** transition across it. |
 | **Perceptron vs logistic** | Same linear score; different activation (step vs sigmoid); logistic gives **confidence** and allows **gradient-based** training. |
 
+### Visual: module 3 recap
+
+```mermaid
+flowchart LR
+  P[Perceptron linear] --> XOR[XOR limit]
+  XOR --> H[Hidden layers]
+  H --> L[Logistic smooth]
+```
+
 ---
 
 ## Key Intuitions to Retain (Exam-Ready)

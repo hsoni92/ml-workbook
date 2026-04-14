@@ -21,6 +21,19 @@ This is the **equation of a straight line** in the $(x_1, x_2)$ plane.
 - Points on the **other side** → output **-1**.
 - So in 2D, the Perceptron is literally a **straight-line classifier**.
 
+### Visual: line, normal **w**, and half-spaces
+
+```text
+        class +1  (w·x + b > 0)
+              ▲ w (normal to line)
+              │
+    ──────────┼──────────  decision boundary  w·x + b = 0
+              │
+        class −1  (w·x + b < 0)
+```
+
+The weight vector **w** is perpendicular to the boundary and points toward the **+1** side.
+
 ---
 
 ## Half-Spaces and Classification

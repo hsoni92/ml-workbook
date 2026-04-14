@@ -52,6 +52,16 @@ By the end of this video you will:
 - Example (image → dog/cat/bird): input = raw pixels; layer 1 ≈ edges; layer 2 ≈ corners/contours; deeper layers ≈ shapes and objects.
 - This **hierarchical** structure is why deep networks are more powerful than shallow ones.
 
+### Visual: representations deepen along the network
+
+```mermaid
+flowchart LR
+  raw[Raw input] --> L1[Layer 1 simple features]
+  L1 --> L2[Layer 2 combinations]
+  L2 --> L3[Layer 3 abstract features]
+  L3 --> task[Task output]
+```
+
 ---
 
 ## Trade-off

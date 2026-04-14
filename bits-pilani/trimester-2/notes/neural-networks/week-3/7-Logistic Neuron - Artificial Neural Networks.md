@@ -43,6 +43,18 @@ At the heart of the logistic neuron is the **sigmoid** (logistic) function: $\si
 
 So any real input is mapped to a value **strictly between 0 and 1** — ideal for soft decisions and gradual transitions instead of hard switching.
 
+### Visual: sigmoid shape (schematic)
+
+```text
+  sigma z
+    1 |     ___________
+      |    /
+    0.5|  /
+      | /
+    0 |/________________  z
+      steep near 0, flat for large |z|
+```
+
 ---
 
 ## Logistic Neuron: Definition

@@ -20,6 +20,16 @@ To prevent gradients from **shrinking** or **exploding**, modern networks rely o
 
 Together these form the **foundation** of stable deep learning training.
 
+### Visual: four stabilizers
+
+```mermaid
+flowchart TB
+  init[Init Xavier He] --> stable[Stable gradient flow]
+  act[ReLU family] --> stable
+  clip[Gradient clipping] --> stable
+  norm[Batch norm etc] --> stable
+```
+
 ---
 
 ## 1. Weight Initialization

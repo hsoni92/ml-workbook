@@ -125,6 +125,18 @@ $$
   - **Opposite direction** → dot product **large and negative**.
   - **Perpendicular** → dot product **zero**.
 
+### Visual: alignment in 2D (schematic)
+
+```text
+        w
+        ↑  small angle θ → cos θ large → x·w large (aligned)
+       ╱
+      ╱
+     ●──────► x
+
+x ⊥ w  →  x·w = 0     x opposite to w  →  x·w strongly negative
+```
+
 ### Worked Examples (2D)
 
 | $\mathbf{x}$ | $\mathbf{w}$ | $\mathbf{x} \cdot \mathbf{w}$ | Interpretation |

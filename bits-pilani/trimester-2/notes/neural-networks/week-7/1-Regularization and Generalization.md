@@ -35,6 +35,16 @@ By the end of this video you will:
 - A model may seem to learn while **memorizing** training examples instead of **stable patterns**.
 - The **gap** between training performance and performance on new/real data is the **generalization problem**—a **central challenge** in deep learning.
 
+### Visual: train vs deploy
+
+```mermaid
+flowchart LR
+  trainData[Training data] --> fit[Low train error possible]
+  fit --> gap{New data?}
+  gap -->|generalizes| good[Low test error]
+  gap -->|overfits| bad[High test error]
+```
+
 ---
 
 ## What This Module Covers

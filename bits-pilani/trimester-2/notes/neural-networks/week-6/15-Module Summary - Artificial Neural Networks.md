@@ -22,6 +22,15 @@ Module 6 focuses on **optimization**: how neural networks **learn** by using gra
 | **Pitfalls** | **Saddle points**, **plateaus**, **noise**, **poor conditioning**; distinguish **optimization** issues (loss not decreasing) from **model/data** issues (loss decreases, performance poor). |
 | **Convergence** | **Noisy** vs **smooth** descent; both can be valid; **batch size** and **optimizer** shape behaviour; focus on **trends**, not spikes. |
 
+### Visual: module 6 stack
+
+```mermaid
+flowchart LR
+  gd[Gradient descent] --> var[Mini-batch variants]
+  var --> adapt[Adam RMSProp]
+  adapt --> sched[Schedules and stability]
+```
+
 ---
 
 ## Key Intuitions to Retain (Exam-Ready)

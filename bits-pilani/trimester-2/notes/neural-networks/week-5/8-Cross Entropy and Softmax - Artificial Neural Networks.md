@@ -25,6 +25,16 @@ By the end of this video you will:
 - The network outputs **raw scores** (logits): can be positive/negative, do not sum to 1.
 - **Softmax** converts logits to probabilities: exponentiate each logit and normalize by the sum. Outputs are **positive** and **sum to 1** → valid probability distribution. Larger logit ⇒ larger probability.
 
+### Visual: classification loss stack
+
+```mermaid
+flowchart LR
+  logits[Logits z] --> sm[Softmax]
+  sm --> p[Class probs p]
+  p --> ce[Cross-entropy vs true label]
+  ce --> L[Scalar loss]
+```
+
 ---
 
 ## Cross-Entropy Loss

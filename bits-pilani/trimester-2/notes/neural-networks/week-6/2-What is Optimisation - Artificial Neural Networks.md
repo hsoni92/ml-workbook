@@ -27,6 +27,16 @@ By the end of this video you will:
 - There can be **local minima** and (ideally) a **global minimum**.
 - **Optimization** = navigating this landscape efficiently, avoiding bad regions that slow or block learning.
 
+### Visual: loss surface (cartoon)
+
+```text
+        L
+        |  ╲    plateau
+        |   ╲___
+        |       ‾‾‾╲___  valley
+        +----------------  parameters
+```
+
 ---
 
 ## Why Optimization Is Tricky

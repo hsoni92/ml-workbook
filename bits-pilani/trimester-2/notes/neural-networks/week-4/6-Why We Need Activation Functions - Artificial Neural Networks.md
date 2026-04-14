@@ -30,6 +30,17 @@ $$
 
 This is still a **single linear transformation** of $\mathbf{x}$. No matter how many purely linear layers we stack, the **entire network collapses** into one linear model. **Depth alone does not add power** if all layers are linear.
 
+### Visual: linear stack collapses
+
+```mermaid
+flowchart LR
+  x[x] --> W1[W1 x + b1]
+  W1 --> W2[W2 ... + b2]
+  W2 --> same[Same as one linear map on x]
+```
+
+With **no** non-linearity between layers, two (or more) affine maps compose into **one** affine map.
+
 ---
 
 ## Consequences of Purely Linear Networks

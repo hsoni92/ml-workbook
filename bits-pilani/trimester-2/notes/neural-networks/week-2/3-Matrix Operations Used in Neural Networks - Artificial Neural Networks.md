@@ -50,6 +50,15 @@ Writing these separately is repetitive. **Matrix notation** compresses them into
 
 This is exactly how neural network parameters are stored in practice.
 
+### Visual: one linear layer
+
+```mermaid
+flowchart LR
+  x[Input x] --> W[Multiply by W]
+  W --> plusB[Add bias b]
+  plusB --> z[Pre-activations z]
+```
+
 ---
 
 ## Layer Output in One Matrix Multiplication
@@ -109,6 +118,14 @@ $$
 - **Batch:** Stack multiple input vectors as **columns** of a matrix $\mathbf{X}$.
 - Then **one** multiplication $\mathbf{Z} = \mathbf{W} \mathbf{X}$ computes the outputs for **all** inputs in the batch.
 - This **batching** is a key reason **GPUs** and parallel hardware are so effective for deep learning.
+
+### Visual: batch of inputs as columns
+
+```mermaid
+flowchart LR
+  X["X = columns x1 ... xB"] --> WX["Z = W X + b"]
+  WX --> Zbatch[All layer outputs at once]
+```
 
 ---
 
