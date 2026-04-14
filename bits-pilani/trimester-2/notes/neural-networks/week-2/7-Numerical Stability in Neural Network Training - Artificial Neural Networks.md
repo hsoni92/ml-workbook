@@ -68,10 +68,7 @@ A very common unstable expression is: $\sum_i e^{z_i}$
 
 ## Log-Sum-Exp Trick (Stabilization)
 
-**Identity (for any $\alpha$):**
-$$
-\log \left( \sum_i e^{z_i} \right) = \alpha + \log \left( \sum_i e^{z_i - \alpha} \right)
-$$
+**Identity (for any $\alpha$):** $\log \left( \sum_i e^{z_i} \right) = \alpha + \log \left( \sum_i e^{z_i - \alpha} \right)$
 **Derivation (outline):**
 
 - $\sum_i e^{z_i} = e^\alpha \sum_i \frac{e^{z_i}}{e^\alpha} = e^\alpha \sum_i e^{z_i - \alpha}$.

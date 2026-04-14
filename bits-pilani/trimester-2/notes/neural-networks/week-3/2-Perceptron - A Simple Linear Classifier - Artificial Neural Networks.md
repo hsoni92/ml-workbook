@@ -23,17 +23,11 @@ By the end of this video you will:
 
 The Perceptron computes a **linear function** of the input, then applies a **threshold**:
 
-**1. Linear score (pre-activation):**
-$$
-z = \mathbf{w}^T \mathbf{x} + b
-$$
+**1. Linear score (pre-activation):** $z = \mathbf{w}^T \mathbf{x} + b$
 - $\mathbf{w}$ = weight vector, $\mathbf{x}$ = input vector, $b$ = bias.
 - This is a **weighted sum** of the inputs plus a bias.
 
-**2. Output (activation):**
-$$
-\hat{y} = \text{sgn}(z)
-$$
+**2. Output (activation):** $\hat{y} = \text{sgn}(z)$
 - **sgn** (sign or step function):
   - If $z > 0$ → output **+1**
   - If $z < 0$ → output **-1**

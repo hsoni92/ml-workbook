@@ -42,12 +42,8 @@ By the end of this video you will:
 ## Update Equations
 
 When a **mistake** occurs:
-$$
-\mathbf{w} \leftarrow \mathbf{w} + \eta \cdot y \cdot \mathbf{x}
-$$
-$$
-b \leftarrow b + \eta \cdot y
-$$
+- $\mathbf{w} \leftarrow \mathbf{w} + \eta \cdot y \cdot \mathbf{x}$
+- $b \leftarrow b + \eta \cdot y$
 - $\eta > 0$ = **learning rate** (controls step size).
 - The update depends on: current input $\mathbf{x}$, true label $y$, and current parameters. **Updates occur only when the model makes a mistake.**
 
