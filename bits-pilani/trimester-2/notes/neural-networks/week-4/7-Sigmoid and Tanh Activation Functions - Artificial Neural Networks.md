@@ -21,10 +21,7 @@ By the end of this video you will:
 
 ## Sigmoid
 
-**Definition:**
-$$
-\sigma(z) = \frac{1}{1 + e^{-z}}
-$$
+**Definition:** $\sigma(z) = \frac{1}{1 + e^{-z}}$
 - Maps any real input to the range $(0, 1)$.
 - **S-shaped** curve.
 - Output can be interpreted as a **probability** → commonly used in the **output layer** for **binary classification**.
@@ -40,10 +37,7 @@ $$
 
 ## Tanh (Hyperbolic Tangent)
 
-**Definition:**
-$$
-\tanh(z) = \frac{e^z - e^{-z}}{e^z + e^{-z}}
-$$
+**Definition:** $\tanh(z) = \frac{e^z - e^{-z}}{e^z + e^{-z}}$
 - Like sigmoid, an **S-shaped** curve.
 - Output range: $(-1, +1)$ → **zero-centered**.
 - Tanh is a **rescaled and shifted** version of sigmoid.
