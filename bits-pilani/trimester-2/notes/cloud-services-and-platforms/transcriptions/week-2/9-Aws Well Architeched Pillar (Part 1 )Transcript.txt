@@ -1,0 +1,58 @@
+Page 1 of 2
+
+
+Aws Well Architeched Pillar (Part 1 )Transcript
+In this lesson, we are going to focus on three of the most critical pillars of the well -
+architected framework, security, reliability, and cost optimization. These three pillars
+directly affect risk, uptime, and cloud spend, which is why architects and busi ness
+leaders care deeply about them. Let's start with the security pillar.
+The security pillar is about protecting data, systems, and identities in the cloud. In
+cloud environments, security follows a shared responsibility model. They provide
+securely underlying infrastructure, while the customers are responsible for securing
+what they deploy on top of it.
+A strong security design starts with identity. Access should always follow the principle
+of least privilege. Users and services should only have the permission they truly need.
+Data production is another core aspect. Sensitive data must be encrypted both when
+it is stored and when it is moving across networks. Managed key services help ensure
+encryption keys are protected and rotated safely.
+Infrastructure protection also plays a major role. This includes network isolation,
+private endpoints, firewalls, and protection against common attacks like DDoS. Finally,
+security is incomplete without detection and response.
+Logs, monitoring, and alerts allow teams to detect unusual activity early and respond
+quickly. Security is stronger when it is built into the architecture from the beginning
+rather than later on. Reliability pillar, let's look into this.
+It is the ability of a system to continue operating correctly even when the components
+fail. In the cloud, failure is expected. So, reliable architectures use redundancy,
+automation, and recovery strategies.
+So, change management is also critical. Automated deployments, infrastructure as
+code, and controlled rollouts all of this reduce the risk of outages caused by human
+error. Two important reliability metrics are RTO and RPO.
+RTO defines how quickly the system must recover and RPO defines how much data
+loss is acceptable. These values are driven by business requirements, not just
+technical preferences. Cost optimization pillar, finally, we have the cost optimization
+pillar which ensures that cloud resources are used effectively and efficiently so that
+the money is not wasted.
+A key strategy is right sizing. Over provisioning may feel safe but it leads to
+unnecessary cost. Demand-based scaling helps control the cost.
+So, when the demand drops, you can reduce it. When the demand raises, you can
+increase it. Cloud providers also often offer different pricing models which can
+significantly help you to reduce the cost when you're using it correctly.
+
+
+
+
+
+  Page 2 of 2
+
+
+Storage optimization, another major area where you're moving your older data to a
+cheaper storage to reduce some amount of money over the time. So, cloud
+optimization is not one-time exercise. Strong security reduces the risk.
+High reliability protects revenue and user trust. Smart cost optimization ensures a
+long-term sustainability. So, effective cloud architecture is not about maximizing one
+pillar.
+It's about balancing all these three. In the next lesson, we are going to continue with
+the remaining pillars on how they are going to complete the entire architected cloud
+systems.
+
+-----------------------------------------------------End------------------------------------------------------

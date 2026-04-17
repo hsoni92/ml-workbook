@@ -1,0 +1,59 @@
+Page 1 of 2
+
+
+Compute Services Overview Transcript
+In this topic, we are going to compare cloud services across the three major cloud
+providers AWS, Azure and Google Cloud. At a high level, compute simply means the
+processing power that runs your applications. Anytime an app is running, an API is
+responding or a job is being processed.
+So compute resources are involved behind the scenes. Across all cloud providers,
+compute usually takes the form of virtual machines, also called VMs. These VMs look
+and behave like a physical server, but they can be created, resized, scaled and
+destroyed in minutes.
+Why does compute matter so much? Because compute choices directly impact how
+fast your application runs, how well it scales, how much you pay and how reliable the
+system is. How complex operations become most cloud problems eventually trace
+back to a compute decision. So let's start with AWS EC2.
+AWS EC2 is the oldest cloud compute service and the most future rich. It offers a
+massive variety of instance types, from a small general purpose machines to a high -
+end GPU servers. AWS gives architects a lot of control.
+You can choose the exact instance family, a CPU architecture, a memory profile and
+a networking performance also. This makes EC2 extremely flexible, but also means
+there are many choices to understand. AWS EC2 is commonly used when teams need
+flexibility and support for many different workload types.
+Next, let's look at Azure Virtual Machines. Azure Virtual Machines are heavily
+optimised for enterprise environments, especially those already using Microsoft
+technologies. Azure integrates very well with Windows Server, Active Directory, SQL
+Server and .NET applications also.
+Azure also shines in hybrid cloud scenarios where some systems run on-premises like
+the physical resources are present and others are in the cloud, a virtual. So enterprises
+migrating existing data centres or Azure VMs often feel like a natural extension of what
+they already know. Now, let's talk about Google Compute Engine or GCE.
+So this reflects Google's internal engineering culture, a performance, simplicity and
+automation. One standout feature is custom machine types where you choose exactly
+how many CPUs and how much memory you need. Nothing more or nothing less.
+GCE is popular for data intensive workloads, analytics, machine learning, performance
+sensitive systems. Google's global network also gives GCE a strong performance
+characteristics. Here's an easy way to remember this.
+All three providers give you virtual machines. That part is the same. The difference is
+in positioning.
+AWS focusses on breadth and flexibility. Azure focusses on enterprise and Microsoft
+integration. Google Cloud focusses on performance and data workloads.
+
+
+
+
+  Page 2 of 2
+
+
+So think of them like different rental car companies. You are renting a car in all cases,
+but the experience, options and strengths will vary. When architects choose compute
+services, they rarely ask which cloud is better.
+Instead, they ask what kind of a workload am I running? Do I need performance or
+flexibility? Am I cost sensitive? How important is enterprise integration? What does my
+team already know? So those answers guide the compute decision. In the next topic,
+we'll move to compute to storage service and compare S3 from AWS, blob storage
+from Azure and cloud storage from GCP. All of this will play a very different but equally
+critical role in the cloud architectures.
+
+-----------------------------------------------------End------------------------------------------------------

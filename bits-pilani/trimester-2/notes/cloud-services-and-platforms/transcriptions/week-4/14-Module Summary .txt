@@ -1,0 +1,33 @@
+Page 1 of 1
+
+
+Module Summary Transcript
+We've come to the end of module 4, AWS Foundations and IAM. So let's quickly recap
+what we covered and why it matters. We started by understanding how AWS is
+designed globally using regions, availability zones and edge locations.
+This design allows AWS to provide high availability, fault isolation and low latency for
+users across the world. We then discussed AWS accounts which acts as both a
+security boundary and a billing boundary. So each account is isolated and within every
+account exists a root user with full access.
+Then one of the most important practises we learned is to avoid using the root user
+for daily work and protect it very carefully. The core focus of this module was IAM,
+Identity and Access Management, which determines who can access AWS, what
+resources they can use and what actions they are allowed to perform. We looked at
+IAM users and groups and how groups help manage permissions efficiently as the
+teams grow.
+We also emphasised the principle of least privilege, granting only the permissions that
+are truly required and nothing more. We then explored IAM rules which are different
+from users. Rules provide temporary access, they do not have passwords and are
+widely used by AWS services and applications.
+Trust relationships define who is allowed to assume these roles, making roles both
+powerful and secure. We touched on IAM policies at a high level, understanding how
+AWS evaluates permissions and why explicit deny always takes on the priority. Finally,
+we took a deep dive on AWS organisation which allows companies to manage multiple
+AWS accounts on a central level for billing, governance and security.
+So the takeaway for this module is strong AWS foundation and well -designed IAM,
+which are essential for building a secure cloud environment. In the next module, we'll
+start moving beyond foundations and begin working with more hands-on services and
+real-world use cases.
+
+
+------------------------------------------------------End-----------------------------------------------------

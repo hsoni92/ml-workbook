@@ -1,0 +1,37 @@
+Page 1 of 1
+
+
+Account Structure & Billing Basics Transcript
+In this lesson, we'll focus on three very important AWS fundamentals, which is AWS
+account, the root user and billing basics. Let's start with AWS account itself. An AWS
+account is the basic container where everything in AWS lives.
+Every server, storage, bucket, or database, or a user you created, everything belongs
+to an AWS account. AWS uses accounts as strong boundaries, whether it is for
+security, for billing, and most importantly, for isolation. That's why organisations often
+use multiple accounts, such as one for development, one for testing, and one for the
+production, which is actually accessible to the customers.
+This separation helps limit mistakes, control the access, and track the costs clearly.
+Now, when an AWS account is created, AWS automatically creates one special user,
+which we refer to as a root user. Root user has full and unrestricted access to the
+entire account.
+It can do things that no other user can, such as closing the account, changing the
+billing ownership, and many more. Because of this power, the root user should never
+be used for daily work. Using it regularly increases risk, because if those credentials
+are compromised, the entire account is exposed.
+So, the best practise is to secure the root user with a multi-factor authentication, which
+we are going to explore in the upcoming videos, and use it only for critical account -
+level tasks. Let's now talk briefly about billing. AWS follows a pay -as-you-go model.
+You pay only for what you use. There is no upfront commitment required for most
+services, which makes AWS more flexible, but also easy to misuse if you're not careful.
+One important thing for beginners to understand is that running a resource always
+costs money.
+Even if you're not actively using them, they may still generate charges. This is why
+checking the billing dashboard and cleaning up unused resources is very, very
+important. So, a simple way to think about this is like an office building.
+The AWS account is the building, the root user is the owner, IAM users are employees,
+and billing is a monthly expense. So, you don't give the building owners the keys to
+everyone, and the same principle applies in AWS as well. So, in the next lesson, we'll
+go deeper into IAM concepts and understand how AWS controls access securely
+using users, groups, roles, and policies.
+
+-----------------------------------------------------End------------------------------------------------------

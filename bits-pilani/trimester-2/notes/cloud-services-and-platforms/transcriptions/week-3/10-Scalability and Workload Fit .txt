@@ -1,0 +1,50 @@
+Page 1 of 2
+
+
+Scalability and Workload Fit Transcript
+In this lesson, we are going to connect everything we've learned so far and answer a
+very practical question. Why does the same application behave differently on different
+cloud designs? The answer lies in understanding scalability, performance, and
+workload behaviour. Let's start with an important truth.
+Not all workloads scale the same way. Some applications scale easily, others resist
+scaling and need careful handling. First, think about stateless workloads.
+These are applications like web apps, APIs, and microservices. Each request is
+independent. No user data is tied to a specific server.
+Because of this, they scale beautifully in the cloud. You can add more servers, remove
+them later, and users never notice. This is why cloud platforms love stateless design.
+It unlocks elasticity. Now compare that with stateful workloads. Databases, file
+systems, and legacy enterprise apps store data that must stay consistent.
+You can't just add servers casually. Scaling here requires replication, sharding, careful
+coordination. This is why stateful systems scale slower and are architecturally harder.
+Next, let's talk about performance. Because speed is not just about CPU, performance
+is influenced by three major things. Compute, storage, and network.
+You might choose a powerful CPU, but if storage is slow, the app still feels very laggy.
+Or you might have fast compute and storage but poor network placement which will
+eventually increase the latency. For example, object storage is great for large files but
+terrible for databases.
+In-memory caches are incredibly fast but expensive. Cross -region traffic adds
+unavoidable latency. Now performance is about balance, not raw power.
+Now let's connect this to a workload-specific design. A web or mobile application cares
+mostly about fast response time, elastic scaling, or a global reach. So a data analytics
+workload cares more about throughput, parallel processing, and cost efficiency.
+And AI or ML workloads prioritise GPUs or TPUs, a higher compute density, a fast
+data access. Enterprise workloads often prioritise stability, compliance, and
+predictable performance. So designing cloud architecture is like choosing a vehicle.
+A sports car is great for speed but terrible for cargo. A truck carries weight but it isn't
+built for racing. A bus scales for people, not speed.
+So cloud architecture works the same way. The most important takeaway from this
+lesson is you have to choose your cloud design based on how your workload behaves,
+not on hype, branding, or trends.
+When architects say it depends, what they really mean is it depends on the workload.
+
+
+
+
+
+  Page 2 of 2
+
+
+And that mindset is what separates cloud users from cloud architects.
+
+
+------------------------------------------------------End-----------------------------------------------------

@@ -1,0 +1,59 @@
+Page 1 of 2
+
+
+Cost, Compliance, Global Availability Transcript
+In this topic, we are going to look at three factors that almost always decide which
+cloud provider an organisation chooses. Cost, compliance, and global availability.
+These are not technical features, they are business decision drivers.
+Let's start with the cost. Cost in the cloud uses a pay -as-you-go model. So you pay
+only for what you consume, whether it is a compute time, a storage used, and a data
+that has been transferred.
+This removes the need for buying servers upfront, which is great. But it also introduces
+a new risk. If resources are left running unnecessarily, costs can grow very quickly.
+Think of cloud like electricity in your house. It's convenient because you only pay for
+the usage. But if you leave all the lights and AC on, the bill will definitely surprise you.
+So different providers approach cost differently. AWS offers the most flexible services,
+but without strong controls, it can become expensive. So Azure often reduces cost for
+organisations already using Microsoft tools.
+GCP is known for automated discounts when workloads run consistently. Now, let's
+talk about compliance. Compliance is about rules and regulations that control how the
+data is stored, processed, and protected.
+Examples include mostly healthcare data, financial data, or any personal user data. A
+common misunderstanding is that moving to the cloud automatically makes you
+compliant. That's not true.
+Cloud providers ensure their infrastructure meets compliance standards. But how you
+use that infra determines whether your application is compliant or not. AWS has the
+widest global compliance coverage.
+Azure is very strong in government and enterprise heavy industries. GCP is
+particularly strong in data privacy and analytics focused compliance. So global
+availability is something that we are going to deep dive into.
+
+Global availability is about how close your application is to your users. If users are
+spread across the world, deploying in multiple regions reduces latency and improves
+experience. But more regions also mean more infra, more replication, and higher
+operational cost.
+AWS has the largest number of regions on a global scale. Azure follows closely driven
+by enterprise demand. GWS has fewer regions but benefits from one of the fastest
+global networks in the world.
+The real architectural trade -off is you usually cannot optimise all three at once. Like
+the lower cost, strict compliance, global low latency access, all of this. Architects must
+prioritise based on business needs.
+
+
+
+
+  Page 2 of 2
+
+
+A banking system may prioritise compliance over cost. A startup may prioritise cost
+over a global reach. A streaming platform may prioritise global availability above
+everything else.
+So key takeaway is cost, compliance, and global availability are not cloud futures.
+They are strategic design decisions. Understanding how each provider approaches
+them helps architects choose the right cloud, not just the popular one.
+In the next topic, we'll explore enterprise integrations and ecosystem suitability. And
+we'll also understand why different industries naturally gravitate towards different
+cloud providers.
+
+
+-----------------------------------------------------End------------------------------------------------------

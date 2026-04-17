@@ -1,0 +1,63 @@
+Page 1 of 2
+
+
+Service Equivalents Transcript
+In this lesson, we are going to build one of the most important skills for any cloud
+professional, the ability to translate the services across the cloud providers. Different
+cloud providers use different names and that often confuses the beginners. But here's
+the truth, cloud providers differ more in branding than in fundamentals.
+At a foundational level, all major cloud platforms provide the same core building
+blocks. Those building blocks fall into four categories, compute, storage, database,
+and networking. Once you understand these categories, switching between AWS,
+Azure, and Google Cloud becomes much easier.
+So let's start with compute services. Compute services are where your applications
+actually run. These provide virtual machines with CPU, memory, disc, and networking.
+On AWS, this service is called EC2. On Azure, it's called a virtual machine, and on
+Google Cloud, it's referred to as compute engines. So different names, but same idea.
+These services give you full control over the operating system. You decide what
+software runs, how it is configured, and how it is secured. Because of that control,
+compute services are very flexible, but they also come with more responsibility like
+patching, security, and the maintenance as well.
+Let's understand this from a simple analogy. Compute services are like renting an
+empty house. You can design it any way you want, but you are responsible for
+everything inside.
+Next, let's talk about the storage services, especially the object storage. Object storage
+is used to store files and unstructured data. Things like images, videos, documents,
+backups, logs, any kind of a file.
+On AWS, this service is referred to as S3. On Azure, it is blob storage. On Google, it
+is referred to as cloud storage.
+These services are highly durable, scalable, and cost efficient. They are not traditional
+file systems. You don't instal applications on them.
+You access them through APIs. Think of object storage like a massive cloud -scale
+warehouse. You store items, retrieve them when needed, and you don't worry about
+the building itself.
+Now, let's move on to the database services. Databases store structured transactional
+data. Things like user accounts, orders, payments, records, etc.
+Across the clouds, managed relational database equivalents are AWS, RDS, Azure
+SQL Database, Google Cloud SQL. So, the key word here is manage. These services
+handle backup, patching, replication, failover, and monitoring.
+Instead of worrying about database infrastructure, teams focus on data and queries.
+Databases are stateful and complex, which makes managed database services
+
+
+
+
+  Page 2 of 2
+
+
+extremely valuable in real -world architectures. Finally, let's talk about networking
+services.
+Networking defines how everything connects securely and efficiently. All major clouds
+use the same concept, a private, isolated virtual network. On AWS, it is called a VPC.
+On Azure, it is a virtual network. On GCP, it is again a VPC. So, networking services
+provide private IP ranges, subnets, routing, firewall, a secure connectivity.
+So, from an architectural perspective, networking is the foundation of cloud security.
+If networking is designed poorly, even the best application can become vulnerable.
+So, here's the key takeaway.
+Cloud providers use different names, but the underlying concepts remain the same. If
+you understand what service does, why it exists, and where it fits you, and how
+confidently you can work with it across the cloud platforms, that is what we get to learn.
+In the next lesson, we'll build on this understanding and look at how these services
+differ in strengths and real-world usage across AWS, Azure, and GCP.
+
+-----------------------------------------------------End------------------------------------------------------

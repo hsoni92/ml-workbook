@@ -1,0 +1,55 @@
+Page 1 of 2
+
+
+Trade Offs in Cloud Architecture Transcript
+In this lesson, we are going to talk about trade -offs in cloud architecture, a concept
+that every cloud architect must understand deeply. A trade -off means that when we
+improve one part of a system, we usually affect another part. In cloud design, there is
+no architecture that is simultaneously the cheapest, fastest, most resilient, or the
+simplest also.
+So something always has to give. So that's why cloud architecture is not about perfect
+solutions. It's about balanced decisions.
+Let's start with latency and cost. Reducing latency means making your application
+respond faster to users. To do that, architects often deploy services closer to users,
+use multiple regions, or replicate data globally.
+All of this improves speed, but it increases cost. You're running more infrastructure,
+storing more copies of data, and paying for a region specific. So the trade-off becomes
+clear.
+Low latency usually means higher cost, and lower cost usually means a higher latency.
+So a global gaming platform will gladly pay more to reduce the latency. An internal
+company tool may accept higher latency to save money, because it is for the internal
+purpose.
+There's no business hit in that case. Next, let's look at cost versus resilience.
+Resilience means the system can survive failures.
+To improve resilience, we add redundancy, multiple servers, multiple backups, and
+failover mechanisms. But every backup server costs money. Every replicated
+database will cost money.
+So the trade-off here is higher resilience means higher cost, while lower cost means
+accepting higher risk. A banking system invests heavily in resilience, so a startup MVP
+may accept downtime to stay within the budget. Now let's talk about performance
+versus cost.
+High performance often requires larger machines, faster storage, caching systems,
+and premium networking as well. These choices improve response time and
+throughput, but they increase the cloud bills. On the other hand, minimizing cost too
+aggressively can result in slow applications and poor user experience.
+Good architects aim for right sizing, not the biggest resources and not the smallest,
+but the right fit for the workload. Another important trade -off is simplicity versus
+scalability. Simple architectures are easy to build and easy to understand, but they
+don't scale well.
+Scalable architectures like distributed systems or microservices which handle growth
+much better, but they are more complex to design, operate, and debug. Early -stage
+systems often start simple. As scale increases, complexity becomes unavoidable.
+
+
+
+
+  Page 2 of 2
+
+
+
+The key lesson here is the mindset. Cloud architecture is about making intentional
+trade-offs. Architects must clearly understand what they are optimizing for, what they
+are sacrificing, and what decision makes sense for the business.
+There is no perfect architecture, only informed, well-justified decisions.
+
+---------------------------------------------------End--------------------------------------------------------

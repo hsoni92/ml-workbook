@@ -1,0 +1,50 @@
+Page 1 of 2
+
+
+IAM Roles & Trust Basics Transcript
+Now, let's talk about one of the most important and widely used security concepts in
+AWS. IAM rules and trust relationships. To understand IAM rules, let's first clear one
+thing up.
+An IAM rule is not a user. It doesn't have a username, it doesn't have a password, and
+it doesn't have anything related to permanent access keys. Instead, an IAM rule is a
+temporary identity that can be assumed when needed.
+In simple terms, a rule allows something, like an application or an AWS service, to
+temporarily act with certain permissions.
+So, why did AWS introduce rules in the first place? Earlier, applications stored AWS
+access keys directly inside the servers or the code. This caused serious security
+problems where the keys got deleted or reused incorrectly.
+So, IAM rules solve this by producing temporary credentials that are automatically
+managed by AWS. We don't need to worry about it. So, no secrets are stored and
+credentials expire automatically and get renewed automatically.
+This is why rules are always the preferred way to grant access in AWS. Now, let's look
+at where rules are used in real life. If an EC2 compute service needs to access S3
+bucket for storage, we don't give it an IAM user.
+Instead, the EC2 instance assumes a role that has permissions to access this S3
+bucket. Similarly, there are multiple services which we could have a communication
+between them through these IAM rules. Now comes a very important concept, which
+is trust relationships.
+Permissions alone are not enough. Every IAM role has two sides. One side defines
+what actions are allowed, like reading from a storage or writing to a database.
+The other side defines who is allowed to assume the role. And this is called a trust
+relationship. You can think of it like this.
+A trust policy answers the question like who is allowed to step into this role. Without a
+trust relationship, the role cannot be used, even if it has permissions. A simple way to
+remember this is trust policies decides who can enter and the permission poli cy
+decides what they can do once they are inside.
+So, rules can trust AWS services like EC2, Lambda and other AWS accounts or even
+external identity systems.
+This is why IAM roles are more secure, more flexible and better suited for automation
+than IAM actual users. In the next topic, we'll move on to a practical demonstration of
+understanding how to access this AWS account, how to work with the roles, users and
+trust policies.
+
+
+
+
+  Page 2 of 2
+
+
+So, we are going to have a practical exposure and we are going to understand
+everything that we have learned so far from a practical point of view.
+
+------------------------------------------------------End-----------------------------------------------------

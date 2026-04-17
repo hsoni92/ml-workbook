@@ -1,0 +1,41 @@
+Page 1 of 1
+
+
+ AWS Organizations Transcript
+
+Now let's talk about AWS organisations, which is how real companies manage AWS
+at a larger scale. In the real world, companies don't run everything in a single AWS
+account that becomes risky, messy, and hard to control. AWS organisations solve this
+by allowing you to manage multiple accounts centrally.
+
+Instead of applying security rules, billing settings and restrictions individually in each
+account, you control them from one place. That one place is called management
+account. This account acts like a control centre.
+
+It manages billing, governance, and policies. It should never be used for running
+applications. That is the key.
+
+Actual work happens inside member accounts. These are regular AWS accounts used
+by teams or environments like development, testing, or production. To organise
+accounts better, AWS provides something called organisational units or OUs.
+
+So these organisational units are simply logical grouping of accounts. For example,
+you might group all engineering accounts under one OU and all security related
+accounts under another. So one of the most powerful features of AWS organisation is
+service control policies, which we also refer to as SCP.
+
+So these service control policies act as guardrails. They don't give permissions.
+Instead they limit what accounts are allowed to do, even if IAM permissions exist.
+
+For example, you can prevent anyone from deleting audit logs using restricted regions
+or performing risky admin actions. Finally, AWS organisations provide consolidated
+billing. This means one bill for all the accounts.
+
+A simple way to think about AWS organisations is it's like a company headquarters
+that sets rules and budgets while departments work independently. In practise, almost
+every production environment uses AWS organisation within Amazon. So it's a
+foundational service for security governance and to scale.
+
+
+
+------------------------------------------------------End-----------------------------------------------------

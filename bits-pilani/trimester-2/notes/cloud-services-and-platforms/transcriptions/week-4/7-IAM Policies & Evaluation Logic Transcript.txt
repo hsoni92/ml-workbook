@@ -1,0 +1,38 @@
+Page 1 of 1
+
+
+IAM Policies & Evaluation Logic Transcript
+Before moving on to the practical part, in this topic we are going to understand IAM
+policies a little bit more deeply as part of our AWS security. We can think of policies
+as the rules that decide what is allowed and what is not allowed in AWS. So whenever
+someone tries to do anything in AWS, whether it is creating a server, accessing a file
+or even deleting a database, AWS checks policies before taking an action.
+Let's start with what an IAM policy actually is. An IAM policy is simply a document that
+tells AWS who can do what on which resource and under what conditions. So IAM
+users, groups and rules are identities.
+But policies define their permissions. Without policies, identities can't do anything.
+Now why are IAM policies so important? Because AWS follows a security-first model.
+Nothing is allowed unless you explicitly permit. Policies help enforce least privilege,
+reduce the security risk and make access predictable and auditable. At a high level,
+IAM policies are written in JSON.
+You don't need to memorise the syntax right now. What matters is understanding how
+AWS reads and applies them. So each policy contains statements and every
+statement has an effect, an action and a resource, sometimes conditions also.
+One concept you must clearly remember is allow versus deny. AWS works on a deny
+by default principle. If there is no explicit allow, access is denied.
+And here's most important rule, an explicit deny always wins. Even if multiple policies
+allow something, a single deny will block the entire action. When AWS evaluates a
+request, it follows a very simple logic.
+First, it looks for an explicit deny. If it finds one, the request is rejected immediately. If
+there is no deny, it looks for an explicit allow.
+If found, the request is allowed. If nothing matches, the request is again denied by
+default. This approach ensures a strong security. Think of it like an office building. All
+doors are locked by default. You only enter rooms you've been explicitly given access
+to.
+And security can always override the permissions. Let's take another simple example.
+A developer needs read -only access to files in an S3 bucket. You allow read actions
+but do not allow delete. Reading works. Deleting fails automatically.
+Now that is IAM policy doing exactly what they are designed to do. In the next topic,
+we'll step slightly higher and look into a more practical approach of these concepts.
+
+------------------------------------------------------End-----------------------------------------------------

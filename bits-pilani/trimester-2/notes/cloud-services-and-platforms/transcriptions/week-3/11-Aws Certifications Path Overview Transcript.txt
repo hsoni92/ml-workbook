@@ -1,0 +1,37 @@
+Page 1 of 1
+
+
+Aws Certifications Path Overview Transcript
+Since you already have a foundation in the cloud computing, our focus now is on AWS
+certifications, how they are structured, what each level represents, and how you can
+navigate them as your skills grow. AWS certifications are organised into four levels
+based on the depth and responsibility. At the foundation level, you'll find certifications
+like Cloud Practitioner and the newer AI Practitioner.
+These focus on the core cloud concepts, AWS services, pricing, security, and basic AI
+ideas. The next and the very important is Associate level, where most engineering
+rules begin here. AWS offers multiple role -orientated certifications at this stage.
+You have Solutions Architect, which focusses on designing reliable and scalable
+systems. You have Developer Associate, which focusses on building and interacting
+the cloud native applications. In addition to this, AWS now also includes the newer
+Associate certification, which is the Data Engineering and the ML Engineering
+Associate.
+Both of these reflect on how the data and AI have become the core part of our modern
+cloud platforms. Moving on to the professional certification, at this level, the focus
+shifts from implementation to the architecture and decision making at a larger scale .
+So in this, you will find certifications like Solutions Architect Professional, DevOps, all
+of them deal with the complex system design and trade -offs.
+DevOps especially emphasise automation, CICD, and operational excellence. Moving
+on, we have Speciality certifications, where these are for the deep expertise in specific
+domains such as security, advanced networking, ML, data analytics, and database.
+These are usually pursued after gaining a good hands -on experience in a focused
+area.
+So certifications are not just exams to clear, they provide a structured learning path
+that will complement your academic foundation, whichever you are going to achieve
+through this entire programme. As we continue, I'll try to help you connect these
+certifications to the real -world architectures, tools, and the career paths you can
+realistically pursue. So your certification journey doesn't need to be rushed.
+Each step should reinforce your understanding and prepare you for a meaningful work
+and cloud technology as well. So I hope this gives you clarity on how to approach the
+AWS certifications as part of your academic and professional development.
+
+--------------------------------------------------------End---------------------------------------------------

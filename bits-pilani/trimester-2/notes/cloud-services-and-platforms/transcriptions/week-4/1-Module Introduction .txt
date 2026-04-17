@@ -1,0 +1,28 @@
+Page 1 of 1
+
+
+Module Introduction Transcript
+In this module, we are officially stepping into AWS and this is an important transition
+point in your cloud learning journey. So far, we've spoken about cloud concepts,
+architecture principles, and how different cloud providers compare at a high level.
+Now, we start working with real cloud foundations, beginning with AWS.
+This module focusses on two major areas. The first is AWS foundations,
+understanding how AWS is structured globally. This includes regions, availability
+zones, edge locations, and how AWS accounts are set up.
+We'll have a quick recap on these things. Without this knowledge, AWS often feels
+confusing. Once you understand the structure, everything else becomes much clearer.
+The second focus area is identity and access management, commonly called as IAM.
+IAM answers one critical question, who is allowed to do what inside my AWS account?
+Every action in AWS, whether it is creating servers, deleting data, accessing services,
+is controlled by IAM. Because of this, IAM is one of the most important services in
+AWS and also one of the most commonly misunderstood.
+Many real -world cloud security incidents don't happen because AWS is insecure.
+That's why we start IAM a bit early. Keep it simple, focus on the core ideas.
+In this module, we'll stay practical and straightforward. We'll avoid unnecessary
+complexity, and we'll try to focus on the clarity and prepare you for a hands -on AWS
+usage. By the end of this module, you should feel confident about how AWS is
+organised, how access is controlled, and why IAM is central to our cloud security.
+With that foundation in place, we'll then move into our first AWS concepts, starting with
+how AWS is structured globally.
+
+------------------------------------------------------End-----------------------------------------------------

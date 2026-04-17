@@ -1,0 +1,90 @@
+Page 1 of 3
+
+
+Create and Use IAM Roles Transcript
+In this demonstration, we are going to understand how to create a role and how to
+attach certain services to this particular role. Firstly, just to clear out or give you a small
+heads up, users are for humans. The users which we created at this list is for  the
+humans who could log in and use it, the whole console basically.
+Roles are for the AWS services, which means if you want a particular service to
+interact with another service, you do that with the help of roles. So, roles act something
+similar to a pass. Let's say there is some huge event at a huge city and certain people
+are invited for that event.
+If there are two types of passes, one is a VIP pass and one is a guest pass. So, a VIP
+pass is someone who has extra privileges and a guest pass is someone who is going
+to sit in the audience row. So, depending upon the pass, the security guards are going
+to navigate them in that conference.
+Similarly, rules also act exactly the same way. The services that you see over here,
+let's say if there is this but any service wants to interact with some of the database
+services over here. Let's say a some service from the compute wants to interact with
+these one of these database services.
+Now, how do they do that? We can use role and create a particular role saying that
+anyone who has access to this role can talk to this Amazon, Aurora or RDSS. So, in
+short, a role is just another identity which will help two services to interact with each
+other. Now, these two services can be under one account or they can be under
+different accounts.
+If one service from my account wants to interact with one service which is created in
+your account, we can use roles as a mode of authorisation and have our services
+interacted with each other. Now, let's try to create a role and understand better. So,
+click on create role.
+You have multiple options. So, if you want to create a role from a service level, you
+use the first option AWS service. You can choose any service that you want out of this
+list.
+Whether it is for an EC2 instance, it is for a storage service, for a database service or
+a monitoring. Any tool you have, almost you have every tool that you can use this role
+with. Next is the AWS account.
+So, here when you want to set up the connections between other accounts, then you
+can use another account or you are using through this account, you can use this
+option. You can also enable multi-factor authentication when you're trying to use with
+other accounts like this. So, you have multiple other options.
+Just to keep it simple, we're going to go with the default option which is AWS service.
+Let's say I want to choose EC2 service and we have different options over here like
+
+
+
+
+  Page 2 of 3
+
+
+what you want to do, what permission do you want your role to have related to this
+particular service. So, here this says allow EC2 to call AWS services on your behalf.
+This seems fine. I want this particular activity to be performed on my behalf with the
+help of this role. So, I'll just stick to this default one.
+I'll click on next. Now, what permissions does this role have? You have only selected
+the service in the previous step. Now, what all can my role do with that particular
+service? So, let's say I want to provide only the read-only access to that particular EC2
+instance.
+So, I choose this read-only access for my EC2. Anyone who's trying to use that role to
+interact with my EC2 service can only have read-only permissions. They cannot write.
+They don't have a write or an administrator level permission to delete or modify. So,
+this is the only permission I want. So, you can choose multiple more than one.
+I'm choosing read-only in this case. Click on next. I can give it a name like I can say
+EC2 read-only role.
+You can add a simple description to someone who's new to the team. He wants to
+understand what this role is about, what all permissions does it have, what all can it
+do. You can give a simple description in your own language.
+And this is a JSON format where whatever we are trying to do by clicking certain
+buttons, everything is written in a JSON format which we call as a policy. If you
+remember the policies which we have tried to interact with in the previous
+demonstration, this is exactly the same. You don't need to understand what is going
+on here.
+This is just for the internal purpose. Whatever we are trying to perform in these three
+steps, it is just trying to convert that into a code. So, the permissions it has is only the
+read-only permissions to an EC2 service.
+Click on create role. My role will be created automatically. You see this was the role
+that I have created.
+So, this is how you can create any role, attach any permissions, and use that role to
+interact with other services whether in the same account or in a different AWS account.
+I'm saying different AWS account because companies usually do not rely on one single
+account. They maintain different accounts within one cloud or maybe within multiple
+clouds also.
+So, to make sure that they have a proper communication, they have a proper
+authentication to interact with the services and make the application run, roles are the
+foundation in those perspectives. That's all.
+
+------------------------------------------------------End-----------------------------------------------------
+
+
+
+
+  Page 3 of 3
