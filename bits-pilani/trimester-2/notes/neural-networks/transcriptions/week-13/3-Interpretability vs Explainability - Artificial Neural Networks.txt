@@ -1,0 +1,22 @@
+Hello everyone, welcome back to module 13 of Artificial Neural Network. In this video,
+we clarify an important conceptual distinction that is often misunderstood, the difference
+between interpretability and explainability. By the end of this video, you will be able
+to clearly understand how interpretability and explainability differ and why this distinction
+matters when building and deploying real-world AI systems. You will also identify when each
+concept is more appropriate. In many discussions, these two terms are used interchangeably. However,
+confusing them can lead to incorrect expectations about what a model can and cannot provide.
+This distinction directly affects trust, regulation and system design. Interpretability refers to models
+that are understandable by their very nature. Their structure is very transparent. A human can look at
+the model and reason about how inputs influence the outputs. This usually comes at the cost of limited
+complexity. Some of the examples of such models are linear models, small decision trees and rule-based
+systems. Explainability, on the other hand, explainability, on the other hand, is about explaining complex models after they are trained. The model itself may be opaque, but we use additional methods to generate explanations for specific predictions. Some of the examples of such methods are feature attributions, saliency maps, line, sharp explanations. The key difference between the two is this. Interpretability is intrinsic, while explainability is
+explainability is external. Interpretability gives you global understanding and explainability often provides local instance level insight.
+provides local, instance-level insight. In practice, the choice depends on the context.
+In high-stakes domains with strict transparency requirements, interpretable models may be
+preferred. In many modern applications, however, performance demands complex models, making
+explainability the practical solution. Now, let us summarize the main points of this video.
+The most important takeaway is that interpretability and explainability solve different problems.
+Interpretability is intrinsic and explainability is post-op. Most modern deep learning relies
+on explainability. Choosing between them is a design decision, not a preference. Now, that
+we understand these concepts, in the next video, we will start exploring concrete methods, beginning
+with teacher importance and saliency-based explanations. Thank you.

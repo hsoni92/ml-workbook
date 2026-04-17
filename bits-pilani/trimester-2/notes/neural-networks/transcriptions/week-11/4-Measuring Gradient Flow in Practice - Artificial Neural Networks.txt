@@ -1,0 +1,23 @@
+Hello everyone. Welcome back to Module 11 of Artificial Neural Networks. In this video, we will see a demo of how to measure gradient flow in practice. In the previous video, we saw what banishing and exploding gradients look like. In this demo, we ask a practical question, how do we measure gradient flow during real training?
+In this demo, we will track the gradients during training, visualize layer-wise gradient norms, and learn how to recognize healthy versus unhealthy gradient flow. As training progresses, focus on gradient magnitudes across the layers, whether early layers receive usable gradients, and whether gradients remain stable over time. This tells us whether learning is actually happening or not.
+Now let's start with the demo, importing the standard libraries, creating the dataset, which is for binary classification. For this case, we are going to train a moderately deep network so that the gradient flow is non-trivial. So this is the class architecture for the deep network.
+To track the gradient flow, we will track the L2 norm of gradients for each layer at every training step. So this is the function which will help us to do the same. Now let's train the model while measuring the gradients also. So this is the function for that. We are training the model for around 30 epochs and capturing the gradient history along. Now let's visualize the gradient magnitudes across the layers. Let's focus on this graph.
+on this graph. Each point in this graph represents the magnitude of gradients flowing through
+a particular layer. Notice that the earlier layers on the left side have larger gradient
+magnitudes which then decreases as we move deeper into the network and slightly increase
+again near the output layer. What's important is that no layer has near zero gradients.
+This tells us gradients are still reaching all the layers. Learning has not stalled anywhere.
+At the same time, gradients are not exploding. We are seeing values that are well behaved and
+within a reasonable range. This kind of profile is what healthy gradient flow looks like at
+a given point in training. Now, we'll try to see the gradient stability over time, how it
+is evolving across different epochs. This heat map shows the same. Each column in this heat
+map is one epoch and each row corresponds to a layer. Brighter colors mean larger gradient
+magnitudes and darker color means smaller gradients. Notice that across training, gradients are
+consistently present across most of the layers. We don't see entire rows going dark for long
+periods which would indicate dead or untrained layers. You can also see some natural variation
+over epochs. That's normal. Gradients are expected to fluctuate as the model learns.
+So now, what does unhealthy training look like? Warning signs of unhealthy training include: early layers
+with near zero gradients, sudden gradient explosions, highly unstable gradients across epochs. These
+patterns require some intervention. Now, let us summarize the main points of this video. Gradient flow must be measured explicitly.
+Layer-wise gradient norms reveal learning health. Healthy models show stable gradients across depth and time. Gradient diagnostics guide corrective actions. This sets the foundation for diagnosing deeper training issues. In the next video, we will look at some real examples of gradient pathologies. This sets the foundation for diagnosing deeper training issues. In the next video, we will look at some real examples of gradient pathologies.
+Thank you.

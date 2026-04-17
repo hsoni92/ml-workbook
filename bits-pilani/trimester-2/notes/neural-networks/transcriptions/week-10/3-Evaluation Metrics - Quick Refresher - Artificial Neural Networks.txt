@@ -1,0 +1,57 @@
+Hello everyone, welcome back to module 10 of Artificial Neural Networks. In this video, we will revisit the confusion matrix and the most commonly used classification matrix.
+By the end of this video, you will be able to explain the confusion matrix, derive accuracy, precision, recall and F1 score from it and interpret these metrics correctly in the context of neural network predictions.
+Before talking about individual metrics, it is important to start with the confusion matrix. The confusion matrix is the most detailed summary of a classification model's behavior.
+All classical metrics like accuracy, precision, recall and F1 are simply different ways of summarizing the information contained in this table.
+If you understand the confusion matrix, the other metrics become intuitive rather than formula driven.
+Let us use a simple example to ground the discussion.
+Suppose, we are building a fraud detection system. The positive class is fraud and the negative class is not fraud.
+The confusion matrix breaks predictions into four cases: true positives, false positives, false negatives and true negatives.
+When the true label is actual fraud and the model predicts it as fraud, it is called as true positive.
+And when the model predicts it as not fraud, it becomes false negative.
+Similarly, when the true label is not fraud and the model predicts it as fraud, it is called as false positive.
+And when the model predicts it as fraud and when the model predicts it as correctly as not fraud, it becomes true negative.
+Each cell represents a specific type of success or failure made by the model.
+The first metric that we discuss here is accuracy.
+Accuracy measures the fraction of total predictions that the model gets correct.
+It combines true positives and true negatives and divides by the total number of predictions.
+For example, in this case, if a model makes a total of 1000 predictions and we have 60 true positives and 880 true negatives, then the accuracy becomes 60 plus 880 divided by total which is 1000.
+This is 940 by 1000 which is 94%.
+The problem with accuracy is that it treats all errors equally and does not tell us what kind of mistakes the model is making.
+Next is precision.
+Precision focuses specifically on the predictions that the model labels as positive.
+It answers the question, when the model predicts fraud, how often is it actually correct?
+For example, in this case, model predicts total 100 cases as fraud.
+However, we see that only 60 are actually correct.
+So, the precision here is given by true positives divided by true positive plus false positive which is 60 divided by 60 plus 40 which is 60%.
+So, here the model is operating at a precision of 60%.
+High precision means fewer false alarms which is important in applications where false positives are costly.
+Next is recall.
+Recall focuses on the actual positive cases.
+It answers the question of all fraud cases.
+It answers the question, of all the fraud cases that exist, how many did the model successfully detect?
+So, here in this case, the total fraud cases are 80 given by 60 plus 20 and the model is successfully able to detect 60 cases.
+So, recall becomes true positive which is 60 divided by 60 plus false negative of 20 which is 75%.
+High recall means fewer missed positives which is critical in applications where missing a positive case has serious consequences.
+Recall and recall often trade off against each other.
+If you tune a model to be more sensitive, it may catch more positives increasing the recall but it may also produce more false positives reducing the precision.
+Which metric matters more depends on the application.
+For instance, in medical diagnosis, recall is often prioritized to avoid missing a disease.
+While in spam filtering, precision may be more important to avoid blocking legitimate messages.
+The F1 score combines precision and recall into a single number.
+It is especially useful when classes are imbalanced and when both false positives and false negatives matter.
+So, rather than optimizing precision or recall alone, the F1 score encourages a balance between the two.
+It is given by the harmonic mean of precision and recall.
+However, like all the summary metrics, it still hides the underlying trade-offs.
+In neural networks, these metrics depend on the decision threshold applied to the predicted probabilities.
+The same model can produce very different confusion matrices and therefore very different metrics by changing the threshold.
+This means metrics are not fixed properties of the model.
+They reflect both the model and the evaluation choices we make.
+This insight will be important later when we discuss calibration and confidence.
+Now, let us summarize the main points of this video.
+The confusion matrix is the foundation of all the classification metrics.
+Accuracy alone can be misleading, especially for imbalanced problems.
+Precision and recall capture different types of errors and the F1 score balances them.
+In neural networks, metrics depend on probability thresholds and must be interpreted in context.
+Understanding these relationships is essential for reliable model evaluation.
+In the next video, we will move beyond metrics and begin studying neural network specific learning behaviors, starting with loss surfaces and their intuition.
+Thank you.

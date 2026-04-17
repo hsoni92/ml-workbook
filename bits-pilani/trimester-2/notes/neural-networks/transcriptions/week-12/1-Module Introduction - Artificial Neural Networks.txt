@@ -1,0 +1,13 @@
+Hello everyone. Welcome to module 12 of Artificial Neural Networks. In this module, we will discuss
+hyperparameter tuning and experiment control. This is the module where we move from understanding
+neural networks to actually running deep learning experiments in a professional way. Up till now,
+you have learned how neural networks work, how they are trained and how they fail. But one very
+important question still remains. How do we design training experiments that actually succeed? Two
+people can train the same model and get very different results. And this module explains why
+that happens. Training deep models is not deterministic in practice. Learning rate,
+batch size, initialization, data order and randomness all influence the outcome. So,
+training a model is not just running the code. It is running an experiment and experiments must be
+controlled. In this module, we focus on the things that control learning. We will study how to choose
+hyperparameters, how to run multiple experiments systematically, how to make results reproducible
+and how to track what really happened during the training. We will proceed in three stages. First, we will look at the hyperparameters that matter the most. Then, we will study automated tuning methods. Finally, we will learn how to control and track experiments professionally. In the next video, we begin with the hyperparameters that truly control the learning, starting with learning rate and batch size.
+We will learn how to control and track the learning rate and the ability to control and track the learning rate. Thank you.

@@ -1,0 +1,40 @@
+Hello everyone, welcome back to module 9 of Artificial Neural Network. In this video, we will study why attention mechanisms were introduced in sequence modeling.
+By the end of this video, you will be able to understand the motivation behind attention mechanisms, what limitations of RNN-based models attention addresses, and how attention fundamentally changes the way model process sequences.
+Let's begin by revisiting the limitations we discussed in the previous video.
+Even with LSTMs and GRUs, sequence models still face several challenges.
+They process sequences sequentially, which limits parallelization.
+They struggle with very long sequences.
+And they compress all past information into a fixed-size hidden state, creating an information bottleneck.
+This leads to a key question.
+Do we really need to remember everything, or can we instead look back when needed?
+To build intuition, let's think about how humans process long sequences, especially in language.
+Consider reading a long sentence, for example,
+The book that you gave me last year, which I read during my vacation, turned out to be extremely insightful.
+When you reach the end of this sentence, you don't rely on a compressed summary of the entire sentence.
+Instead, your attention naturally goes back to specific relevant parts such as the book.
+To interpret the meaning correctly, you don't treat every word as equally important.
+Some parts of the sequence matter more than the others, depending on the context.
+This selective focus is the core intuition behind attention mechanisms.
+Attention mechanisms bring this idea into neural networks.
+Instead of compressing the entire sequence into a single hidden state, attention allows the model to access all parts of the sequence directly.
+At each step, the model assigns different importance or weights to different elements of the sequence.
+This means, the model can focus more on relevant parts and less on the irrelevant ones.
+At a high level, attention is simply a weighted focus over the sequence.
+Now, let's discuss why attention helps.
+First, attention allows direct access to distant elements in a sequence, making long-range dependencies easier to model.
+Second, it reduces the information bottleneck caused by fixed-size hidden states.
+Finally, attention improves the model's ability to capture global relationships across the sequence.
+In short, attention makes sequence modeling more flexible and expressive.
+It's helpful to contrast attention with recurrent.
+RNN-based models rely on memory compression.
+Everything from the past must be stored in a single evolving state.
+Attention-based models rely on selective access.
+Instead of remembering everything, the model learns where to look.
+This represents a fundamental shift in how sequence models reason about information.
+Now, let us summarize the main points of this video.
+Attention was introduced to address key limitations of recurrent models.
+RNNs compress the past into a fixed-size state which limits long-range and global reasoning.
+Attention allows models to flexibly focus on relevant parts of a sequence, regardless of the distance.
+This idea paved the way for transformer architectures which rely entirely on attention mechanisms.
+In the next video, we will take a high-level look at transformer architectures and see how attention becomes the central building block of modern sequence models.
+Thank you.

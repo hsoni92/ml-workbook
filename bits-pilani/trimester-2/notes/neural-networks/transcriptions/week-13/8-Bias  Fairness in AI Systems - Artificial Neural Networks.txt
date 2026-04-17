@@ -1,0 +1,19 @@
+Hello everyone, welcome back to module 13 of Artificial Neural Networks. In this video,
+we will discuss bias and fairness in AI systems. By the end of this video, you will be able to
+understand what bias means in the context of AI, identify some common sources of fit, and why
+fairness must be treated as a separate concern from model accuracy. And finally, you will understand
+the need for fairness evaluation and mitigation. When we talk about bias in AI, we are not talking
+about opinions or intent. Bias refers to systematic differences in how a model behaves across different
+groups. For example, imagine a loan approval model that has a lower approval rate for one demographic
+group, even when applicants have similar financial profiles. The model may be accurate overall, but its
+errors are not evenly distributed. This kind of bias is often invisible if we only look at aggregate
+performance metrics. Bias most commonly comes from data, not from malicious intent. Consider historical
+bias. If past hiring decisions favored certain groups, a model trained on historical hiring data
+will learn and reproduce those patterns. Another example is representation bias. If a face recognition data
+set contains far fewer images of certain skin tones, the model will perform worse on those groups.
+There is also measurement bias. For instance, using zip code as a proxy for credit worthiness can
+unintentionally encode socioeconomic or racial information. Finally, deployment bias occurs when a model is used
+in a context different from the one it was trained for. For example, a healthcare model trained in one country but deployed in another.
+One of the most important ideas here is that accuracy and fairness are not the same thing. Suppose a medical diagnosis model achieves 95% accuracy overall. If that remaining 5% of errors disproportionately affects one group, they under-diagnosing a disease in women, the model is unfair even though it is highly accurate.
+Optimizing for average accuracy hides these disparities. Fairness requires us to look at who the model is right or wrong for. Unfair AI systems can have serious real-world consequences. In finance, they can deny opportunities. In healthcare, they can delay or miss direct treatment. In legal or administrative systems, they can reinforce existing inequalities.
+This is why fairness is not just a technical issue. It is an ethical, legal and social responsibility. In the next video, we will look at fairness metrics and detection techniques and see how fairness can be quantified in practice. Thank you.

@@ -1,0 +1,16 @@
+Hello everyone. Welcome to module 9 of Artificial Neural Networks. In this module, we move beyond
+models designed for independent inputs and study neural networks built for sequential and temporal
+data. Many real-world problems involve data where context, order, and history matter. In such settings,
+understanding a data point in isolation is not enough. We need models that can reason about what
+came before. This module introduces sequence models starting from classical recurrent networks
+and moving towards modern architectures. Let's first understand why sequence models are needed.
+In many domains, data naturally appears as sequences. Examples include text, speech,
+time series, and user behavior over time. In all these cases, the order of elements is critical.
+The same values arranged differently can convey entirely different meanings. For instance,
+when I say dog bites a man, it is very different from saying man bites a dog. Words are the same,
+just the ordering is different. This dependence on order is what distinguishes sequence data from the
+kind of data we have modeled using feed-forward or convolutional networks. So, why can't we simply use the
+feed-forward networks? We already know. Feed-forward models such as multi-layer perceptrons process inputs independently. They have no built-in mechanism to remember past inputs or maintain context over time. As a result, they cannot naturally model dependencies across time steps. To handle sequences effectively, a model needs some notion of memory or state that evolves as new inputs arrive.
+This limitation motivates a new class of architectures. In this module, we build sequence models step-by-step. We will start by studying the fundamentals of sequence modeling and introduce recurrent neural networks or RNNs. We will then examine the challenges involved in training RNNs, particularly the vanishing gradient problem. To address these issues, we will explore advanced architectures such as the NNs.
+We will also explore advanced architectures such as LSTMs and GRUs, which use gating mechanisms to model long-term dependencies. Finally, we will discuss the limitations of recurrent models and motivate attention-based and transformer architectures that dominate modern sequence learning. In the next video, we will define what sequence models are. So, see you all in the next video. Thank you.
+Thank you.

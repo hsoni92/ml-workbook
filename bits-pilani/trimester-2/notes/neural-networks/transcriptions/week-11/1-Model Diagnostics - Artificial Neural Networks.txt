@@ -1,0 +1,15 @@
+Hello everyone, welcome to module 11 of Artificial Neural Networks. In this module, we shift our focus from evaluating models to diagnosing them.
+Instead of asking whether a neural network is performing well, we now ask a deeper question. Why is it behaving the way it is? This module is about opening the black box.
+In the previous module, we studied evaluation. We learned how to measure accuracy, calibration, robustness and uncertainty.
+But evaluation only tells us what went wrong. Diagnostic tells us where and why things went wrong inside the module.
+Debugging neural networks is fundamentally difficult. They are deep, highly non-linear systems with many interacting components. Failures are often silent. Training runs, but learning does not happen.
+As a result, surface level metrics rarely reveal the true cause. Many common training failures look similar from the outside. The model may not learn. Training becomes unstable.
+Loss may plateau, explode or behave unpredictably. Some layers might even stop learning. But these failures are not random. They leave internal signals. Our goal is to learn how to read those signals.
+In this module, we will diagnose neural networks at three levels. First, gradients. To understand whether learning signals are flowing through the network. Second, activations. To check whether neurons are active, dead or saturated. Third, parameters. To examine how weights and normalization statistics evolve. We begin with gradient flow diagnostics. Studying vanishing and exploding gradients.
+exploding gradients. We then move to activation level pathologies such as dead-ray-loose and
+saturation. Next, we analyze parameter behavior using weight distributions, norms, and batch norm
+statistics. Finally, we bring everything together through a structured debugging workflow and
+practical tools like TensorBoard. This module is intentionally practice-driven. Most lessons are
+taught through notebooks, visualizations, and real failure patterns. The goal is not memorization,
+but diagnostic intuition. In the next video, we will explore why gradient flow matters and how it
+fails in deep networks. Thank you.

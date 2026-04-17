@@ -1,0 +1,18 @@
+Hello everyone, welcome back to module 13 of Artificial Neural Networks. In this video,
+we focus on explainability techniques that are specifically designed for deep neural networks,
+GradCam and Integrated Gradients. By the end of this video, you will be able to understand
+why model-specific methods exist, how GradCam and Integrated Gradients work at a conceptual level,
+and when each method is appropriate. You will also understand their key limitations.
+Generic explainability methods treat the model as a black box. However, deep networks have rich
+internal representations, layers, activations, and gradients, all that we can exploit. Model-specific
+methods leverage this structure to produce more informative explanations. GradCam stands for
+Gradient-Waited Class Activation Mapping. It was designed specifically for convolutional neural networks.
+It uses the gradients flowing into the convolutional layers to highlight spatial regions which are
+important for a class. Its goal is to answer a very intuitive question: which regions of the image were
+most important for predicting a particular class? Now, let's see how GradCam actually works. GradCam looks at
+how the class score changes with respect to feature maps in a convolutional layer. These gradients tell us which feature maps are important. By combining them, we obtain a heat map that highlights the regions the model focused on. This results in a visual, class-specific explanation. Integrated gradients take a
+different approach. Instead of looking at one gradient, it accumulates gradients along a path from a baseline input to the actual input. This provides a principled way to attribute the prediction to individual input features. Now, let us try to compare the two approaches. GradCam is highly visual and works best for CNNs and images. Integrated gradients is more general, model agnostic and works at the feature level.
+The method is more general, but depends on the level, but depends on the choice of baseline. They solve related but distinct explanation problems.
+Despite their usefulness, these methods are still based on gradients. They can be noisy, sensitive to design choices and should not be interpreted as causal explanations. They can give false confidence if overtrusted. They are diagnostic tools, not the ground tooth. Now, let us summarize the main points of this video.
+Model-specific explainability methods leverage the internal structure of deep networks. GradCam explains spatial focus in CNNs, while integrated gradients provide principal feature attributions. Both are powerful but must be used carefully.
+In the next video, we step back and critically evaluate all the explainability methods we have seen, focusing on their strengths, limitations and appropriate use cases. Thank you.

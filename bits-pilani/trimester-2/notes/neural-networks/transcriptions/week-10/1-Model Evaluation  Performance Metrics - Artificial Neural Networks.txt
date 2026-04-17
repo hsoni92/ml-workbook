@@ -1,0 +1,28 @@
+Hello everyone. Welcome to module 10 of Artificial Neural Networks. In this module,
+we will discuss model evaluation and performance metrics. Up to this point in the course,
+we have focused on how neural networks are built and trained. However, training a model is not the
+end of the story. A neural network can achieve very high training accuracy and still perform
+poorly in practice. Deep models can overfit without obvious warning signs, make highly confident but
+incorrect predictions or fail when inputs are slightly perturbed. This is why evaluation is
+a critical part of any deep learning workflow. Evaluating deep learning models or neural network
+models is more challenging than evaluating classical models. Neural networks typically produce probabilistic
+outputs rather than just class labels. A model might be accurate overall yet poorly calibrated,
+meaning its confidence does not reflect the reality. In other cases, the model may be extremely confident
+while being wrong. Because neural networks learn complex decision boundaries, many failure modes are not
+immediately visible from accuracy alone. For example, a fraud detection neural network may achieve 99% accuracy,
+yet it may assign 95-99% fraud probability to many legitimate transactions, showing that it is highly confident but wrong, something accuracy alone cannot reveal. As a result, model evaluation for neural networks must be multi-dimensional. We care about predictive performance but also about how the model learned, whether it generalizes well, how confident it is.
+How confident it is in its predictions and how robust it is to the small changes in inputs.
+Each of these dimensions reveals a different aspect of model behavior. No single metric can capture all of them.
+We care about predictive performance, but also about how the model learned, whether it generalizes well, how confident it is in its predictions, and how robust it is to the small changes in input.
+Each of these dimensions reveals a different aspect of model behavior. No single metric can capture all of them.
+This module is designed to give you a comprehensive toolkit for evaluating neural network models.
+We will revisit classical performance metrics and reinterpret them in the context of neural networks.
+We will study learning dynamics, loss surfaces, and overfitting patterns that are unique to deep models.
+We will then examine calibration and confidence evaluation and finally explore robustness and uncertainty analysis.
+It's useful to see how this module fits into the broader core structure.
+Earlier modules focused on how neural networks operate internally and how they are trained.
+This module focuses on how to evaluate and trust those trained models.
+The next modules will build on this foundation by teaching you how to diagnose training issues and systematically improve models through tuning and controlled experimentation.
+In the next video, we will start with a key question.
+Why evaluation matters in neural networks?
+Thank you.

@@ -1,0 +1,19 @@
+Hello everyone, welcome back to module 13 of Artificial Neural Networks. In this video,
+we will discuss another major breakthrough, diffusion models, which power much of today's
+generative AI. By the end of this video, you will be able to understand what generative AI is trying
+to achieve, the core intuition behind diffusion models, identify their applications, and understand
+why they are so influential today. Most models we have studied so far are predictive. They classify,
+regress, or rank. Generative models do something different. They create new data. For example,
+generating a realistic image that never existed before, or synthesizing speech in a new voice.
+To do this, models must learn the underlying structure of the data distribution.
+Diffusion models are based on a surprisingly simple idea. Imagine taking a clean image and
+gradually adding random noise until it becomes pure static. Now, imagine training a model to
+reverse this process, to slowly remove noise step by step. Generation then becomes a process of starting
+from noise and gradually denoising until a meaningful sample emerges. Diffusion models can produce high-quality,
+diverse samples. One reason diffusion models are so successful is stability. Earlier, generative models were
+often difficult to train and prone to failures. Diffusion models break generation into many small, manageable steps,
+making training more reliable, and outputs more diverse. Many modern text-to-image systems rely on diffusion models. You provide a text prompt and the model gradually
+that aligns with an image that aligns with that description. They are also popular for image editing, in-painting, style transfer, and many creative tools. This ability to combine text understanding with image generation is a defining feature of modern generative AI. Diffusion models don't exist in isolation. They are often combined with transformers and attention mechanisms, especially for conditioning on text and image.
+This reflects a broader trend towards large, flexible, multimodal AI systems. Now, let us summarize the main points of this video. Generative AI focuses on creating new data. Diffusion models generate by reversing the numbers. Now, let us summarize the main points of this video.
+Generative AI focuses on creating new data. Diffusion models generate by reversing the noise. They are stable, flexible, and high quality, and power many modern creative AI systems. In the next video, we will zoom out even further and discuss future directions in deep learning, including efficiency, scaling, and multimodal models. Thank you.
+you

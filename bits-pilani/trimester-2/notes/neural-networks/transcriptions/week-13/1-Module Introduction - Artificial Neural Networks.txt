@@ -1,0 +1,22 @@
+Hello everyone, welcome to module 13, the last module of Artificial Neural Networks.
+Up to this point in the course, we have focused on how neural networks are designed, trained,
+tuned and evaluated. But there is a deeper question we now need to ask: even if a model is accurate,
+can we trust it? Neural networks are no longer just academic tools. They are being used to decide
+who gets a loan, how medical diagnoses are made and how legal or administrative decisions are supported.
+In these settings, accuracy alone is not sufficient. We need understanding, accountability and trust.
+Deep learning models are extremely powerful, but they are also often described as black boxes.
+They can make highly accurate predictions without offering any clear explanation for why a particular
+decision was made. This opacity becomes a serious problem in real-world deployments. This module
+represents a shift in perspective. So far, we have focused on learning and optimization. Now, we focus
+on behavior, responsibility and consequences. The central question becomes: how do we build models
+models that are not just powerful, but also trustworthy? We will begin by studying interpretability and
+explainability. You will learn: why explanations are necessary, what different types of explanations exist,
+and how modern techniques attempt to reveal what a model has learned. Next, we will examine fairness and
+bias. You will see: how buyers can enter AI systems through data, design choices, and deployment contexts,
+and how fairness can be measured and improved. Finally, we will step back and look forward. You will get a
+guided overview of where deep learning is heading, including transformers, diffusion models, and the move
+towards more efficient and multimodal systems. This part is about awareness, not implementation. And this
+is a stage in the course, you already understand the mechanics of deep learning. This module completes the picture by
+addressing the questions that arise once models leave the lab and enter the real world. In the next video, we begin by
+answering a fundamental question: why do we need explanations at all? And what goes wrong when we don't have them? Thank you.
+Thank you.

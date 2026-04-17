@@ -1,0 +1,19 @@
+Hello everyone. Welcome back to module 13 of Artificial Neural Network. In this video, we move to a practical question. How do we actually detect unfair behavior in AI systems? To do that, we need fairness metrics.
+By the end of this video, you will be able to understand why fairness must be measured explicitly, what some commonly used fairness metrics are, and how these metrics help us detect disparities across groups. You will also understand trade-offs between different fairness notions.
+Let's start with why accuracy is not enough. Imagine a loan approval model with 90% accuracy overall. At first glance, this looks excellent. But suppose the approval rate is 80% for one group and only 50% for another group with similar financial profile. Accuracy alone hides this disparity by aggregating the performance.
+Fairness metrics force us to ask who the model is performing well for and who it is not. It is concerned with group-wise behavior. Different definitions of fair can exist. So, we need the ability to measure fairness first before solving these issues.
+To measure fairness, we usually begin by identifying protected attributes such as gender or race. For example, in a hiring model, we might split the validation data into groups based on gender and then compare hiring recommendations. We then compute metrics separately for each group. If the model behaves very differently across groups, this is a signal of potential unfairness.
+Different fairness. Different fairness metrics capture different ideas of what it means to be fair. Demographic parity asks, do different groups receive positive outcomes at similar rates? For example, are loan approvals equally frequent across groups? Equal opportunity focuses on qualified individuals. Among people who truly deserve a positive outcome, does the model treat groups equally? Equalized odds are not fair.
+Equalized odds goes one step further and looks at both correct approvals and incorrect rejections. Each of these metrics reflects a different ethical perspective. A crucial and often surprising fact is that these fairness metrics can conflict. For example, if two groups have different base rates, say different disease prevalence, it may be mathematically impossible to satisfy both demographic parity and equalized odds.
+This means fairness is not something we optimize away. It involves explicit trade-offs and value judgments. In practice, fairness detection involves monitoring these metrics during validation and deployment. For example, after training a model, we might discover that the false negative rate for one group is significantly higher than for others. This is a clear signal that further investigation is needed.
+at the same time. This means fairness is not something we optimize away. It involves explicit
+trade-offs and value judgments. In practice, fairness detection involves monitoring these
+metrics during validation and deployment. For example, after training a model, we might discover
+that the false negative rate for one group is significantly higher than for others. This is a
+clear signal that further investigation is needed. Fairness evaluation is not a one-time
+check. It must be continuous. Now, let us summarize the main points of this video.
+Fairness must be measured explicitly. It cannot be inferred from accuracy alone.
+Multiple fairness definitions exist and they capture different notions of fairness. Metrics
+often conflict requiring conscious design decisions. Metric choice depends on context and values.
+Measuring fairness is the first step towards building responsible AI systems. In the next video,
+we will study mitigation strategies for reducing bias and improving fairness in AI systems. Thank you.

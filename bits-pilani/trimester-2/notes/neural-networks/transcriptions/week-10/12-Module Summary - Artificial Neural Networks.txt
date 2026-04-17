@@ -1,0 +1,42 @@
+Hello everyone. Welcome to the last video of module 10 of Artificial Neural Networks.
+In this module, we focused on how to evaluate neural networks in a meaningful and trustworthy way.
+Rather than treating evaluation as a single number, we approached it as a multidimensional problem.
+The central idea was simple. Accuracy alone is not enough.
+Accuracy tells us how often the model is correct.
+But it does not tell us how confident the model is, how stable it is under small changes, or how uncertain it is when predictions are ambiguous.
+As neural networks become more widely deployed, these additional dimensions become critical.
+We revisited classical evaluation metrics such as accuracy, precision, recall, and F1 score.
+We also studied confusion matrices specifically in the context of deep learning models that output probabilities.
+The key takeaway was that probabilistic outputs require careful interpretation, not blind thresholding.
+We then examined learning behavior during training.
+By looking at loss surfaces, flat versus short minima, and training validation curves, we saw how generalization and overfitting manifest in deep models.
+These patterns are not just theoretical, they are practical diagnostic tools.
+Next, we introduced calibration as a way to evaluate confidence quality.
+We learned that confidence does not automatically reflect correctness.
+Reliability curves and expected calibration errors help quantify whether predicted probabilities align with the reality.
+Well-calibrated models are honest about their uncertainty.
+We then shifted our focus to robustness.
+We saw that even highly accurate models can fail under small realistic perturbations.
+Perturbation tests and sensitivity curves reveal local instability that standard test sets cannot detect.
+Robustness must be evaluated explicitly.
+We also explored uncertainty through the lens of probability distributions.
+Softmax entropy allows us to quantify how uncertain the model is about its predictions.
+We observed that uncertainty is informative but imperfect.
+Models can still be confidently wrong.
+Uncertainty should be treated as a signal, not a guarantee.
+Taken together, these ideas form a holistic evaluation framework.
+Accuracy measures correctness.
+Calibration measures confidence quality.
+Robustness measures stability.
+And uncertainty measures ambiguity.
+Trustworthy models perform well across all of these dimensions.
+This module equips you with tools to go beyond surface level evaluation.
+You can now diagnose weaknesses, assess risk, and make more informed decisions about model deployment.
+Evaluation is not an afterthought.
+It is central to responsible machine learning.
+In the next module, we move from evaluating outcomes to diagnosing the causes.
+We will study gradient flow, activation behavior, parameter distributions, and systematic debugging workflows.
+The goal is to understand why models behave the way they do and how to fix issues when they arise.
+With this foundation in evaluation, we are now ready to open the black box and look inside the neural networks.
+See you all next week.
+Thank you.

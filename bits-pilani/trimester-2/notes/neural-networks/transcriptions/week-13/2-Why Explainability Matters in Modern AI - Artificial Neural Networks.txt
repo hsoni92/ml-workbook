@@ -1,0 +1,21 @@
+Hello everyone. Welcome back to module 13 of Artificial Neural Network. In this video,
+we will discuss why explainability has become a central requirement in modern AI systems.
+By the end of this video, you will be able to explain why explainability is essential in modern AI systems,
+you will identify risks of deploying black box models, and you will be able to describe how
+explainability supports trust, safety, and accountability. Traditionally, machine learning
+focused almost entirely on performance metrics. If a model achieved high accuracy on a test set,
+it was considered successful, even if its internal reasoning was completely opaque.
+This mindset breaks down when AI systems are used in high-stakes settings. In healthcare,
+finance, hiring, or legal contexts, model decisions directly affect people's lives. In such cases,
+why a decision was made becomes as important as what decision was made. Deep neural networks learn
+complex representations from data, but they do not naturally provide explanation. They can be highly
+confident and highly accurate while still relying on patterns that are incorrect, biased, or even
+dangerous. Without explanations, models may learn shortcuts. They may pick up correlations that
+appear predictive but are meaningless or unethical. Because these patterns are hidden,
+such problems often go unnoticed until real harm occurs. Explainability acts as a safety mechanism. It allows us to inspect model behavior, debug errors, detect bias, and verify whether the model's reasoning aligns with the domain knowledge or not. In this sense, explainability is not just about understanding, it is about risk reduction. There is also increasing regulatory and organizational pressure to explain AI decisions. In this sense, explainability is not just about understanding, it is about risk reduction. There is also increasing regulatory and organizational pressure to explain AI decisions.
+decisions. Auditors, regulators and domain experts often require justifications, not just predictions.
+This makes explainability a practical necessity, not an optional feature. A key idea to remember
+is that high accuracy does not guarantee correct reasoning. Two models can achieve similar
+accuracy while relying on very different internal signals. Explainability helps us to distinguish
+between models that work for the right reasons and those that do not. Now, let us summarize the main points of this video. High accuracy alone is not sufficient for real-world AI deployment. Black box models can hide bias, shortcuts and unsafe behavior. Explainability helps with debugging, trust and risk mitigation. In modern AI, explainability is a requirement and not an option.
+In the next video, we will clarify an important conceptual distinction. We will differentiate between interpretability and explainability and understand why these terms are not interchangeable. Thank you.

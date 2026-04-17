@@ -1,0 +1,36 @@
+Hello everyone. Welcome back to Module 10 of Artificial Neural Networks. In this video, we will focus on how overfitting actually shows up in practice in neural network models.
+By the end of this video, you will be able to recognize common overfitting patterns, interpret training and validation curves correctly, and identify early signals of poor generalization. You have already seen the theory behind generalization and overfitting in earlier modules. Here, the focus is on observing behavior rather than revisiting the definitions.
+Overfitting in deep learning often looks very different from what we expect based on simpler models. Deep networks have extremely high capacity and as a result, training loss often looks smooth and well-behaved even when the model is starting to overfit.
+Overfitting may appear late in training, progress gradually, or be partially hidden by noisy validation metrics. This is why you cannot reliably detect overfitting from a single final number.
+The most reliable signal of overfitting is the relationship between training and validation loss over time. Typically, training loss continues to decrease steadily while validation loss improves initially and then stops improving or starts increasing.
+This divergence tells us that the model has begun fitting patterns that are specific to the training data rather than generalizable structure. In practice, it's not the absolute value of the loss that matters most, but how these curves evolve relative to each other.
+Accuracy can be particularly misleading when diagnosing overfitting. Training accuracy often continues to increase and validation accuracy may appear to plateau or fluctuate only slightly.
+Loss, on the other hand, captures the confidence. A rising validation loss often indicates that the model is becoming increasingly confident in incorrect predictions.
+This distinction between loss and accuracy will become especially important when we later discuss calibration.
+So far, we have discussed what overfitting patterns look like conceptually.
+Now, we will move to a live notebook demonstration where we will train neural networks under different conditions and directly observe these patterns in training and validation curves.
+As you watch the demo, focus on when the curves diverge, how fast the divergence grows and which changes in the training setup trigger overfitting.
+Let's now switch to the notebook and see these overfitting patterns emerge step by step.
+In this demo, we'll focus on learning behavior, not just the final performance.
+Overfitting and deep learning reveals itself through training dynamics.
+Don't focus on single numbers here. Watch how the training and validation curves move together or apart.
+So let's start running the notebook now.
+We'll run the first cell. These are some of the standard imports we are doing here.
+We'll fix some random seeds so that the behavior you see is reproducible and intentional.
+For this case, we are designing a dataset of our own. We are intentionally using a clean, low-dimensional synthetic dataset.
+So this is the code for generating the dataset where we are using this function called as make classification.
+We are generating 1000 samples of 20 features and we are dividing this data into training and validation sets.
+Then doing the standard scaling and converting it into appropriate tensors.
+So let's run this cell now.
+Now, for this purpose, we are going to train two neural networks on the same dataset.
+A low-capacity model would be well-suited for the task that we are doing here.
+And a high-capacity model that is intentionally over-parameterized and will show us the over-fitting patterns.
+So these are the function classes that we have created for the two models.
+Now, this is how the training setup looks like. Let's run this code.
+And here we are actually training the low-capacity and the high-capacity models.
+Next, we are going to look at the training and validation losses.
+So let's try to see what happens here. So yeah. Now, as you can see in the screen, for a low-capacity model, both the training and validation losses are moving simultaneously. They are so close to each other.
+While for the high-capacity model, initially the training and validation curves are moving together. But then validation curve starts to diverge. You can see the gap between them is kind of increasing.
+Next, let's look at the training and validation accuracy curves. So here, if we look at the accuracy curves, it is difficult to distinguish between the two cases. For both the cases, low-capacity and high-capacity models, we see that the two curves are going simultaneously together.
+So just from accuracy alone, it is difficult to determine if overfitting is happening in the models or not. Now, let us summarize the key takeaways from this demo. Overfitting in deep models is progressive, not sudden. Excess capacity allows models to fit training data extremely well. Validation loss is often a more reliable diagnostic than accuracy. Diverging training, validation curves, signal analysis, and accuracy.
+So far, we have focused on how well models fit data and how overfitting shows up in practice. But an equally important question is, how confident should a model be in its predictions? In the next video, we will study calibration and learn how to evaluate model confidence. Thank you.

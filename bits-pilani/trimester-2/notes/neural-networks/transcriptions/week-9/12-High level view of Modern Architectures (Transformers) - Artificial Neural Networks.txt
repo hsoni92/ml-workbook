@@ -1,0 +1,32 @@
+Hello everyone, welcome back to Module 9 of Artificial Neural Networks. In this video, we will take a high-level look at modern sequence modeling architectures known as transformers.
+By the end of this video, you will be able to understand what transformers are, how they differ conceptually from recurrent models, and why they dominate many modern sequence modeling.
+Please note that this discussion is intentionally high-level. We will not cover the detailed mechanics of transformers here.
+Let's begin by placing transformers in context. We started with recurrent neural networks, which process sequences step-by-step and rely on memory compression.
+We then introduced attention mechanisms, which allow models to selectively focus on relevant parts of a sequence.
+Transformers represent the next step in this evolution: architectures that rely entirely on attention rather than recurrence.
+This shift fundamentally changes how sequences are modeled.
+At a high level, a transformer is a sequence model built entirely around attention mechanisms.
+Unlike RNNs, transformers do not use recurrence. Unlike CNNs, they do not rely on convolution for sequence modeling.
+Instead, transformers process all elements of a sequence in parallel, using attention to model relationships between them.
+In this module, we will not dive into architectural details. Our goal here is simply to understand the core idea.
+The central component of a transformer is self-attention. Self-attention allows each element in a sequence to directly consider all other elements.
+Rather than passing information step-by-step through time, the model learns which parts of the sequence are relevant to each other.
+This enables transformers to capture global dependencies efficiently and directly.
+Transformers offer several important advantages.
+Because they process sequences in parallel, they train much faster than recurrent models on long sequences.
+They model long-range dependencies directly, without relying on memory compression.
+Finally, transformers scale extremely well with larger datasets and model sizes, which has led to dramatic performance improvements in many domains.
+These properties explain why transformers have become the dominant architecture in modern deep learning.
+Conceptually, the difference between transformers and RNNs is quite stark.
+RNNs process sequences sequentially and rely on a hidden state to store past information.
+Transformers process sequences all at once and rely on attention to dynamically access relevant information.
+This shift from step-by-step computation to global interaction is one of the key reasons transformers outperform recurrent models at scale.
+Transformers were first popularized in natural language processing.
+Today, they are used across a wide range of applications, including machine translation, language modeling, speech processing, and even computer vision and multimodal tasks.
+This broad adoption highlights the flexibility and power of attention-based architectures.
+Now, let us summarize the main points of this video.
+Transformers are modern sequence models built entirely on attention mechanisms.
+They eliminate recurrence, enable parallel computation, and model global dependencies effectively.
+In this module, we have only introduced transformers at a conceptual level.
+In the next video, we will summarize the key ideas from this module on sequence models and connect them back to the broader neural network concepts you have learned so far.
+Thank you.

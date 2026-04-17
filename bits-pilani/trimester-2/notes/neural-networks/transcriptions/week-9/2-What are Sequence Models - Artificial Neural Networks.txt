@@ -1,0 +1,27 @@
+Hello everyone. Welcome back to module 9 of Artificial Neural Networks. In this video,
+we will define what sequence models are and understand the nature of sequential data.
+By the end of this video, you will be able to define what sequence models are, recognize what makes data sequential,
+and identify common tasks that require sequence modeling. This will prepare us for understanding
+why specialized architectures are needed for sequential data. Let's begin by understanding
+what we mean by sequential data. Sequential data arrives in an ordered manner where each element
+depends on what came before it. The order of elements is crucial. Changing the order often
+changes the meaning entirely. This dependence on order and accumulated context is what distinguishes
+sequential data from standard tabular data. Sequence models are neural network models designed
+specifically to handle sequential data. They process inputs one step at a time and maintain an internal
+state that summarizes information from previous steps. As a result, the output at any given
+time depends not only on the current input but also on the history of inputs seen so far. This ability
+to maintain an update state over time is what allows sequence models to model temporal dependency. A natural
+question is why we cannot simply convert a sequence into a fixed length vector and use a standard
+model. When we collapse a sequence into a vector, we often lose information about order and timing. Important patterns that span multiple time steps may no longer be captured. Sequence models avoid this by preserving temporal structure and processing inputs in a sequence rather than all at once.
+Sequence models are widely used across many domains.
+In sequence-to-one tasks, an entire sequence is mapped to a single output, such as sentiment analysis or time series forecasting.
+In sequence-to-sequence tasks, one sequence is mapped to another, as in machine translation or speech recognition.
+In sequence-labeling tasks, each element in the sequence is assigned a label, such as part-of-speech tagging.
+Although these tasks differ in structure, they all rely on capturing temporal dependencies.
+Now, let us summarize the main points of this video.
+Sequential data is characterized by order and context.
+Sequence models process inputs step-by-step and maintain an internal state that accumulates information over time.
+This makes them well-suited for tasks where meaning depends on what came before.
+In the next video, we will examine why traditional feed-forward networks fail when applied to sequential data.
+We will analyze their structural limitations and see why memory and recurrence are essential for modeling sequences effectively.
+Thank you.

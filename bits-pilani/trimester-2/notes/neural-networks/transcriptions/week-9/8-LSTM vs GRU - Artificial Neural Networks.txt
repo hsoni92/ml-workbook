@@ -1,0 +1,18 @@
+Hello everyone. Welcome back to Module 9 of Artificial Neural Networks. In this video, we will compare LSTMs and GRUs and discuss practical guidelines for choosing between them.
+By the end of this video, you will be able to understand the key trade-offs between these architectures and you will be able to make informed decisions based on the task and the constraints.
+Let's begin with a quick recap. Both LSTMs and GRUs were designed to address the same fundamental problem: the difficulty basic RNNs have in learning long-term dependencies.
+They both use gating mechanisms to control information flow and mitigate vanishing gradient issues. In that sense, LSTMs and GRUs are alternative solutions to the same problem.
+Now, let us look at how their designs differ at a high level. LSTMs maintain a separate memory cell and hidden state along with multiple gates that control memory updates and output.
+GRUs, in contrast, use a single hidden state and fewer gates. This makes LSTMs more expressive and flexible while GRUs are simpler and more compact.
+These design differences drive many of the practical trade-offs between the two models.
+The key trade-off between LSTMs and GRUs lies in complexity versus expressiveness. LSTMs have more parameters and offer finer control over memory through multiple gates.
+This can be beneficial for modelling very complex temporal relationships. GRUs, on the other hand, have fewer parameters and often train faster, especially on smaller datasets.
+This simplicity can make GRUs easier to train in practice. LSTMs are often a good choice when the task involves very long sequences or complex temporal dependencies.
+They are particularly useful when precise control over memory retention and forgetting is important. For example, tasks such as language modelling with long-range context can benefit from the expressiveness of LSTMs.
+GRUs are often a good choice when working with smaller datasets or shorter to moderately long sequences. They are also useful when faster training and simpler models are desirable, such as during rapid prototyping or experimentation.
+In many practical applications, GRUs can achieve performance comparable to LSTMs with lower computational cost.
+Now, let us summarize the main points of this video.
+Both LSTMs and GRUs are powerful sequence modelling architectures. There is no universal winner between the two.
+The choice depends on the complexity of the task, the amount of available data, and practical constraints such as training time.
+A good rule of thumb is to start with a simpler model like a GRU and move to an LSTM if greater expressiveness is needed.
+In the next video, we will look at a concrete sequence classification example to see how these models are applied in practice. Thank you.

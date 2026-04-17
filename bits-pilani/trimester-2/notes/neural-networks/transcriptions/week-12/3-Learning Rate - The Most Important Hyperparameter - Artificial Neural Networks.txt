@@ -1,0 +1,29 @@
+Hello everyone. Welcome back to module 12 of Artificial Neural Network. In this video,
+we focus on the single most important hyperparameter in neural network training,
+which is the learning rate. By the end of this video, you will be able to explain what the
+learning rate actually does inside gradient descent, how it affects the stability of training,
+and how to recognize the symptoms of learning rates that are too high or too low. The learning
+rate controls how far the parameters move after each gradient update. Think of gradient descent
+as walking downhill on a complicated landscape. The gradient tells you which direction to walk,
+but the learning rate decides how big a step you can take. If the step is too small, you may make
+very slow progress. If it is too large, you can overshoot and bounce around instead of moving
+downhill. We already know this formula of learning rate. Mathematically, the learning rate multiplies
+the gradient in every update. That means it scales every change to every weight in the network. So, even if the gradients are computed perfectly, a badly chosen learning rate will distort how those gradients are applied. When the learning rate is too small, the model does learn but extremely slowly. The loss curve goes down but at a very gentle slope. This makes training inefficient and can also cause the model to get stuck in some way.
+Suboptimal solutions, especially in deep networks. Now, when the learning rate is too large, the
+opposite happens. Instead of the opposite happens. Instead of smoothly moving towards a minimum, the parameters keep overshooting it. This causes the loss to oscillate, sometimes violently, and in extreme cases, the training can completely diverge. Learning rate also interacts with other hyperparameters. Small back sizes, large models, and regularization all make training more sensitive to learning rate.
+So, learning rate acts like a central knob that connects all parts of the training process. Rather than just talking about learning rate, we will now look at it in practice. In the notebook, we will train the same model with different learning rates and directly observe how the loss curve behave. Let us now switch to the notebook and see the demo. Let us start with the demo.
+We will import the standard packages. We will import the standard packages. We are using the same dataset as always. And for model, we will use a small feedforward neural network. We define a training helper function so that we can train the model for fixed number of epochs and record the training loss. Now, we train the same model using four different learning rates. So, these are the four different learning rates we are going to use.
+to use. 0.0001, 0.01, 0.1 and 1. Now we want to see the training loss across different learning
+rates. Here we are using y-axis in the log scale. Now in this curve we observe four distinct
+behaviors. Very small learning rate of the order of 10 to the power minus 4. We see that loss
+decreases very slowly, training is stable but inefficient. For moderate learning rate like
+0.01, loss decreases smoothly and converges so this reflects healthy training. For large learning
+rates like 0.1, loss is oscillating and is struggling to converge. And for very large learning rates like
+1, the loss diverges or becomes unstable and the training fails. This shows that learning rate
+alone can determine whether training succeeds or fails. The learning rate controls step size
+and speed of convergence. Even with a good model and good data, a bad learning rate can completely break the train.
+Now let us summarize the main points of this video. Always tune the learning rate first. If training diverges, reduce the
+learning rate. If training is too slow, increase it cautiously. Learning rate strongly
+impacts with batch size and optimizer choice. This is why it is often called the most important hyperparameter.
+In the next video, we study batch size which controls the noise in gradient estimates and interacts strongly with learning rate. Thank you.
+Thank you.

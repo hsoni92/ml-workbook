@@ -1,0 +1,20 @@
+Hello everyone. Welcome back to Module 11 of Artificial Neural Networks. In this video, we will see a demo of vanishing and exploding gradients.
+Training deep neural networks can fail even when the code is correct, the loss is defined properly, and the optimizer is working.
+In this demo, we ask how do gradients behave as they propagate across layers. We will observe vanishing gradients, exploding gradients, and their layer-wise signatures.
+As we train the model, focus on gradient magnitudes in early versus late layers, whether gradients shrink or blow up with depth, and how this impacts learning.
+We will track the gradients layer by layer. Now let's start with the demo.
+We will import the standard libraries. And for this case, we are using a simple binary classification dataset. Let's create the dataset.
+For this setup, we are deliberately constructing a deep network. This allows us to observe how gradients are behaving near the output and input layer.
+Now, for this case, we are using two initialization strategies. We will compare the small weight initialization and when we initialize with the large weights. So we have defined the functions for both of them.
+And then to measure the gradient flow, we will track the average gradient magnitude for each layer. So this function would do that for us.
+Now let's try to look at the case for vanishing gradients. For this, we initialize the weights with very small values.
+And we will get the layer weight. Now let's see how this looks like. So here for vanishing gradients, this is the kind of graph that we are seeing here.
+Notice how gradients are shrinking dramatically as we move towards the earlier layer. Compare the gradients at layer number 10 versus layer number 0.
+Now we will look at the case of exploding gradients. We will initialize the weights with very large values. Let's see how this looks like.
+So here you can see that the gradients have kind of blown up. The values are in the range of 1200, 1000, very high values are there.
+So here gradients are blowing up as we move backward through the network. This would lead to unstable updates and the training collapse.
+Now let's try to compare both the cases in one single graph. It is difficult to see the vanishing gradients here because the values are very small in comparison to the exploding gradient values.
+So, now let us summarize the main points of this video.
+Gradient problems are layer specific. Vanishing gradients start early layers. Exploding gradients destabilize the training.
+Both can be diagnosed by tracking layer wise gradients. This motivates better initialization, activation choices and normalization techniques.
+In the next video, we will look at measuring gradient flow in practice. Thank you.

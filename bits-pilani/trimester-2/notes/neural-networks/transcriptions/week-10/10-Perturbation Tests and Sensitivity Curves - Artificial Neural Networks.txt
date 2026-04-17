@@ -1,0 +1,25 @@
+Hello everyone. Welcome back to Module 10 of Artificial Neural Networks. In this video,
+we will see a demo of perturbation tests and sensitivity curves. So far, we have evaluated
+neural networks using accuracy, loss, calibration. In this demo, we ask a new question. How stable is
+a neural network when the input is slightly perturbed? This property is known as robustness.
+As we run this demo, focus on how predictions behave under small input noise, how performance
+changes as perturbations increase, whether degradation is gradual or sudden. This behavior
+is summarized using a sensitivity curve. Now let's start with the demo. As always,
+we'll just import the standard libraries and fix the seed. Here again, we are using a clean data
+set for binary classification. Let's create our data set. Then we will train a standard neural network
+normally. This is the architecture of the neural network and let's train it for around 40-50 epochs.
+Now let's look at the baseline performance of the model without any perturbation. So we see that the
+baseline accuracy is around 95%. Now to apply perturbation, what we do is we apply some small
+Gaussian noise to the input features. The key idea here is that the real world data is never exact.
+So the model should adapt to these kinds of degradation. This is the function for adding the noise.
+So now what we are doing is we will gradually increase the perturbation strength and measure the accuracy.
+So let's do that. Then we will plot the sensitivity curve.
+So this is how the sensitivity curve looks like. So in this curve, notice how accuracy decreases as noise
+increases. The shape of this curve tells us how robust the model is. Flat curve means a robust model,
+gradual decline means graceful degradation and a sharp collapse means high sensitivity. Two models can
+have the same accuracy yet very different robustness. Now let us summarize the main points of this video.
+Perturbation tests evaluate robustness explicitly. Sensitivity curves reveal how models fail. Accuracy
+alone cannot capture robustness. Robust models degrade gracefully under noise. Robustness is critical in real-world
+noisy environments. If a model fails under tiny perturbations, it cannot be trusted in production.
+In the next video, we will study uncertainty more explicitly using entropy and multi-class probability
+distributions. Thank you.

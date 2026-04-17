@@ -1,0 +1,67 @@
+Hello everyone. Welcome back to module 10 of Artificial Neural Networks. In this video,
+we will introduce calibration as an important but often overlooked aspect of model evaluation.
+By the end of this video, you will be able to explain what calibration means for neural network
+predictions, interpret reliability curves at a high level, and understand the idea behind expected
+calibration error. The goal here is not mathematical detail but conceptual clarity so that the plots and
+metrics we'll see next make sense. So far in this module, we have focused heavily on accuracy and
+generalization. However, accuracy alone does not tell us how confident a model should be in its
+predictions. A model can be accurate overall but still make predictions with poorly calibrated
+confidence. This distinction becomes critical when model outputs are used for decision making.
+At a high level, calibration is about honesty and confidence. If a model says it is 80% confident,
+we should expect it to be correct about 80% of the time in those cases.
+A well-calibrated model's confidence aligns with empirical reality. Calibration is not about being
+right. It's about knowing how sure you should be. There are two common ways models can be miscalibrated.
+Over-confident models assign probabilities that are higher than their true accuracy. Under-confident models
+assign probabilities that are lower than what their accuracy would justify. Both cases are problematic
+because downstream systems often rely directly on these confidence values. So, how do we actually measure
+calibration? We need a way to compare what the model predicts in terms of confidence with what
+actually happens in reality. This comparison is done using a visualization called as a reliability curve.
+The basic idea of a reliability curve is simple. We group predictions into bins based on their confidence. For example, all predictions between 70% and 80% confidence. For each bin, then we compare the model's average confidence with the actual accuracy observed in that bin. If the model is perfectly calibrated, then we compare the model's average confidence with the actual accuracy observed in that bin. If the model is perfectly calibrated, then we compare the model's average confidence with the actual accuracy observed in that bin.
+If the model is perfectly calibrated, these points lie on the diagonal.
+While reliability curves provide a visual understanding, we often want a single numerical summary.
+Expected calibration error or ECE measures the average gap between predicted confidence and observed accuracy across all the bins.
+Lower ECE means better calibration.
+You can think of ECE as answering the question, how far on an average is the model from being perfectly calibrated?
+Calibration is especially important for neural networks.
+Modern neural networks tend to be highly expressive and often overly confident.
+Softmax probabilities in particular are frequently mistaken for true confidence even though they are not.
+As a result, high accuracy does not guarantee reliable confidence estimates.
+So far, we have discussed calibration conceptually.
+Next, we will move to a notebook demo where we will actually plot reliability curves and compute expected calibration error.
+As you watch the demo, focus on how miscalibration appears visually and how it relates to the confidence values produced by the model.
+Let us now switch to the notebook and see how calibration looks in practice.
+Here, we are just importing some standard libraries like always.
+We will fix the seeds to make sure the behavior we observe is stable and reproducible.
+Next, we are using a clean binary classification dataset here so that calibration issues can appear even when the accuracy is high.
+So, this is the code for designing the dataset.
+We are splitting it into train and test.
+For this case, we are using a moderately deep neural network which would be trained to high accuracy.
+This would mirror the real-life scenarios where the model performs well but still their confidence estimates are unreliable.
+So, this is the code for training the model.
+Let us train the model for around 50 epochs here.
+Before discussing about calibration, first let us look if the model is performing well or not.
+So, we will evaluate the model and here we see that the accuracy of model is around 95%.
+Now, let us look at the predicted confidence distribution.
+Neural networks output the probabilities and not just the labels.
+So, we will look at the probability distribution here.
+Let us look at this graph.
+So, here we can see that most of the predictions are near 0 or 1.
+This means that the model is very confident.
+Next, we are going to look at the reliability diagram here.
+Where we will group the predictions into confidence bins and then we will compare the average confidence
+with the actual accuracy in each of the bins.
+So, let us look at the reliability diagram which is shown on the screen.
+We can see that the expected calibration error of the model is as 4.5%.
+So, EC is the weighted average gap between the predicted confidence and the observed accuracy.
+As we have discussed earlier, lower EC means better calibration.
+Here, we have seen that EC is given by 0.045.
+This means that on an average, the model's predicted probabilities differ from the true correctness
+by about 4.6 percentage points.
+It's like saying if the model is 80% confident, then the true correctness might be between 75% to 85%.
+Now, let us summarize the main points of this demo.
+Neural networks can be accurate yet poorly calibrated.
+Confidence values must be evaluated explicitly.
+Reliability diagrams provide visual insight into miscalibration.
+ECE summarizes confidence mismatch into a single number.
+In the next video, we will study techniques like temperature scaling and ensembles to improve calibration.
+Thank you.
