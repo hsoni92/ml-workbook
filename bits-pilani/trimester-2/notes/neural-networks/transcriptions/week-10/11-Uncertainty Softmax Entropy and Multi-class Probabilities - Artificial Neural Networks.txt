@@ -1,0 +1,27 @@
+Hello everyone. Welcome back to module 10 of Artificial Neural Networks. In this video,
+we will look at uncertainty and multi-class probability interpretation.
+Neural networks do not just output predictions, they output probability distributions. In this
+demo, we ask, what do these probability distributions actually tell us? We will study
+confidence versus uncertainty, softmax entropy as an uncertainty signal, and how to interpret
+multi-class probability vectors. As we go through this demo, focus on differences between confident
+and uncertain predictions, how probability mass is distributed across classes, how entropy summarizes
+uncertainty in a single number. We are learning how to read model outputs, not just to evaluate them.
+So let's start with the demo. So we'll just start with importing the standard libraries. Now for this use
+case, because we want to study multi-class probabilities, we'll use a multi-class classification problem. So the data set that we
+have created has four classes here. Now we'll train a standard multi-class neural network.
+Let's train the model. Now let's look at the baseline accuracy of the model. So the baseline accuracy here is 86%, which is pretty good for a multi-class case. Now,
+we will look at confidence versus uncertainty. So confidence refers to the highest predicted probability
+while uncertainty refers to how spread out the probabilities are. So let's look at some of them. So here
+let's say for sample 0, we see that these are the probability vector which is output from the model and the predicted class is 2. Now, let's look at softmax entropy as an uncertainty measure. So here,
+low entropy means confident prediction and high entropy means uncertain prediction. Let's look at the distribution
+of prediction uncertainty. So here you can see that the distribution is skewed towards 0. That means the model
+the model is pretty confident in most of the cases. But in some of the cases, it is still uncertain. Now, let's look at the entropy graphs for correct versus incorrect predictions. So here you can see that for most of the correct predictions, entropy is on the left side on the lower side. And for the incorrect ones, which is represented by this orange graph is towards the right. This would be more formalized when we look at the average numbers here. So on an average number, we will look at the average numbers here. So on an average number, we will look at the average numbers here. So on an average number, we will look at the average number.
+side on the lower side and for the incorrect ones which is represented by this orange graph
+is towards the right. This would be more formalized when we look at the average numbers here.
+So on an average if we look at for the correct cases average entropy is around 0.17 while for
+the incorrect cases it's around 0.49. So we can clearly see that entropy for incorrect cases is
+higher. Now let us summarize the main points of this video. Neural networks output probability
+distributions. Confidence and uncertainty are different concepts. Softmax entropy provides a
+simple uncertainty signal. Multi-class probabilities contain rich diagnostic information. Understanding
+uncertainty is essential for trust and decision making. In the next video we will summarize the
+learnings of this module. Thank you.

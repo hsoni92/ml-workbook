@@ -1,0 +1,20 @@
+Hello everyone. Welcome back to module 11 of Artificial Neural Networks. In this video,
+we will study what dead ReLUs are, how to detect them in practice, and why they silently stop
+learning. As we train the model, focus on the fraction of neurons that output zero and how
+this changes across the layers. Dead ReLUs leave very clear activation signatures. So, let's start the demo with this. We will import the standard libraries. For this case, we are using a simple classification data set. Let's create the data set. Here, we will use ReLU activations, which are efficient,
+but they have the problem of dead neurons. So, let's define the architecture of the network. To detect the dead ReLUs, we track how many activations are actually zero. So, for this, we define this function where we are checking the activations if they are zero or not. Now, let's register this hook on the ReLU layers of the network. In this case, we are intentionally using a high learning rate so that we can induce dead ReLUs for the demo purpose. So, you can see, we have a learning rate of 1.5 here.
+track how many activations are actually zero. So for this we define this function where we are
+checking the activations if they are zero or not. Now let's register this hook on the ReLU layers
+of the network. In this case we are intentionally using a high learning rate so that we can induce
+dead ReLUs for the demo purpose. So you can see we have a learning rate of 1.5 here.
+Let's train the model now for around 100 epochs. Now this plot shows us the fraction of dead ReLUs
+for training. Let's look at this plot visually. Notice how some layers quickly reach a high
+fraction of zero activations like 70-80%. You can see the orange and green lines here. So these neurons
+are effectively dead now. Now once a ReLU outputs zero, its gradient is zero, its weights stop updating,
+and the neuron cannot recover. This creates permanent dead regions in the network. Now some
+of the common causes of dead ReLU are high learning rates, poor weight initialization,
+large negative biases, and deep networks without normalization. Now let us summarize the main points
+of this video. Dead ReLUs are neurons that stop activating. They can be detected by monitoring activation
+distributions. Once dead, ReLUs rarely recover. Activation diagnostics are essential for stable
+training. In the next video, we will see how saturation in sigmoid and tanage activation leads to learning
+failure. Thank you.

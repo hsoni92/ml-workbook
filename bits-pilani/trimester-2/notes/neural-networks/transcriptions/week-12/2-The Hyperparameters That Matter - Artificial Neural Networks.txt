@@ -1,0 +1,19 @@
+Hello everyone, welcome back to module 12 of Artificial Neural Networks. In this video,
+we are going to talk about hyperparameters but not in the usual overwhelming way. Instead,
+we will identify the small set of hyperparameters that actually control whether model learning
+succeeds or fails. By the end of this video, you will be able to identify which hyperparameters
+really matter, understand how they influence training behavior like convergence and generalization,
+and distinguish critical tuning choices from secondary ones. Modern neural networks expose
+hundreds of knobs you can tune. But in practice, most of them do not change the outcome much. Only a few
+dominate the learning dynamics. Our goal here is to focus on those instead of getting lost in
+unnecessary details. In real deep learning systems, four hyperparameters control almost everything.
+The learning rate, the batch size, the model's capacity meaning its depth and width, and the strength of regularization.
+If these four are badly chosen, no optimizer or architecture can save the model.
+These hyperparameters directly control how fast the model learns, how stable the training is, how much the model overfits, and how much complexity it can represent. Together, they determine whether training converges or collapses.
+These hyperparameters do not act independently. A large learning rate may require a smaller back-size. A large
+model needs stronger regularization. A small dataset requires a smaller model. Hyperparameter tuning is really about balancing these interacting forces.
+Now, let us summarize the main points of this video. Although deep learning exposes many hyperparameters, only
+a few truly matter. Learning rate, batch size, model capacity, and regularization dominate the training behavior.
+These parameters interact and successful training depends on balancing them correctly.
+In the next video, we will zoom in on the single most important hyperparameter of all, the learning rate, and see how it controls the training behavior. Thank you.
+Thank you.

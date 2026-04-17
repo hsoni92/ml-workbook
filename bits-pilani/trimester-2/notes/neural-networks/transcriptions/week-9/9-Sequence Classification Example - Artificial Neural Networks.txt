@@ -1,0 +1,44 @@
+Hello everyone. Welcome back to Module 9 of Artificial Neural Networks. In this video,
+we will look at a concrete example of sequence classification. By the end of this video,
+you will be able to understand what sequence classification means, how sequence models such
+as RNNs, LSTMs or GRUs, process data step by step, and how hidden states accumulate information
+across time to make a final prediction. Let's begin by clarifying what we mean by sequence
+classification. In sequence classification, the input is a sequence of elements, but the output is a
+single label or value. The prediction depends on the entire sequence, not just on individual elements.
+Common examples include sentiment classification of text, activity recognition from sensor data,
+or classifying a time series into different patterns. In all these cases, understanding the full sequence
+is essential to making the correct decision. Let's make this concrete with a simple and familiar example.
+Consider a sentence sentiment classification task where the goal is to determine whether a sentence expresses
+positive or negative sentiment. Suppose the input sentence is, "The movie was not good." This sentence is processed
+as a sequence of words, one word at a time. Each word represents a time step in the sequence and the model processes the sentence from left to right.
+The key idea here is that the sentiment of the sentence is not determined by any single word in isolation. It emerges from the sequence as a whole. So, our sentence was, "The movie was not good."
+Now, let's see how a sequence model processes the sentence step by step. At first, the model sees the word "The." The hidden state is initialized and contains very little meaningful information. As the model processes the sentence, the word "The." The hidden state is initialized and contains very little meaningful information. As the model processes the sentence, the word "The." The hidden state is initialized and contains very little meaningful information. As the model processes the sentence, the word "The." The hidden state is initialized and contains very little meaningful information. The hidden state is initialized and contains very little meaningful information. As the model
+As the model processes movie and then was, the hidden state gradually accumulates context about the sentence.
+Up to this point, the sentence appears mostly neutral.
+But when the model encounters the word not, something very important happens.
+The hidden state is updated to reflect the presence of negation.
+This information must be remembered because it will affect how later words are interpreted.
+Now, consider what happens when the model processes the final word good.
+On its own, the word good usually indicates positive sentiment.
+However, in this sentence, the correct interpretation depends on remembering the earlier word not.
+The hidden state plays exactly this role.
+It acts as a running summary of the sequence so far, retaining important context and allowing the model to combine information across time steps.
+If the model forgets the word not, it will likely make an incorrect prediction.
+This illustrates why memory is essential in sequence modeling.
+After the entire sequence has been processed, the model uses the final hidden state to make a prediction.
+This hidden state is assumed to encode the relevant information from the entire sequence.
+It is passed through a simple classification layer to produce the final output, such as positive or negative sentiment.
+This pattern, where a sequence is mapped to a single output using the final hidden state, is typical for sequence classification tasks.
+For longer or more complex sequences, basic RNNs may struggle to retain important early information.
+This is where LSTMs and GRUs become especially useful.
+Their gating mechanisms help the model decide what information to keep, what to forget, and what to use for prediction.
+In our example, these gates helps to ensure that the word not is remembered until it is needed to interpret good correctly.
+As a result, gated models perform much better on tasks involving long-range dependencies.
+Now, let us summarize the main points of this video.
+Sequence classification involves mapping an entire sequence to a single output.
+Sequence models process inputs one step at a time and hidden states act as a memory that accumulates information over time.
+The final hidden state is used to make a sequence-level prediction.
+LSTM and GRU architectures improve this process by enabling better retention of important contexts across long sequences.
+In the next video, we will step back and examine the limitations of recurrent models
+and understand why even LSTMs and GRUs have drawbacks that motivated the development of attention-based and transformer architectures.
+Thank you.

@@ -1,0 +1,18 @@
+Hello everyone. Welcome back to module 12 of Artificial Neural Network. In this video,
+we bring everything in this module together. We are no longer talking about individual techniques
+like learning rate or batch size. We are talking about how neural network training is done
+professionally as an engineering discipline. The goal is not to train a model once but to
+build a process that reliably produces good models. By the end of this video, you will be able to
+describe a complete experimentation workflow from defining a problem to tuning to selecting the final
+model in a reproducible and trustworthy way. Deep learning systems are highly stochastic,
+highly sensitive to hyperparameters and extremely expensive to train. If you do not impose structure,
+two runs of the same code can give you two very different models. Without a workflow, you cannot
+debug, compare or improve models in a reliable way. Everything starts with defining what problem
+you are solving. What is the data set? What is the metric? What does success look like? If you do not
+define these clearly, all tuning and experimentation becomes noise. Before you start tuning, you always
+build a simple baseline. This tells you whether your pipeline works at all and it gives you a
+reference point. Without a baseline, you cannot tell whether improvements are real or just random
+fluctuation. Now you decide what to tune and how, whichever parameters matter, what ranges will you explore, what validation strategy will you use. This is where automated search methods become essential. Step 4 is running the controlled experiments. This is where most of the projects fail. You must run experiments in a controlled way with fixed seeds, track parameters, save checkpoints and
+log metrics. Otherwise, you have no way to compare runs or reproduce the results. Now, from all your experiments, you choose the model that performs best on the validation data. You never use the test set for tuning. This protects you from overfitting to your experiments. Only once do you evaluate on the test set. This gives you a clean, unbiased estimate of how well your model will perform in the real world.
+Now, let us summarize the main points of this video. Training neural networks is not just about architectures. It is about disciplined experimentation. Strong results come from systematic workflows, not random lucky guesses. We need a strong pipeline to tune, track and evaluate the models. This is how real ML teams build reliable models. In the next video, they will summarize the
+key learnings from this module. Thank you.

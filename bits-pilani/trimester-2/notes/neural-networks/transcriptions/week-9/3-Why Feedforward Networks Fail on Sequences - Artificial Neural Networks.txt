@@ -1,0 +1,13 @@
+Hello everyone. Welcome back to Module 9 of Artificial Neural Networks. In this video, we will analyze why traditional feed-forward networks struggle when applied to sequential data.
+By the end of this video, you will be able to understand the structural assumptions behind feed-forward models and why these assumptions break down for sequence modeling tasks.
+Let's briefly recall how feed-forward networks such as multi-layer perceptrons process data. They take a fixed-length input vector and produce an output through a series of transformations.
+Each input is processed independently and there is no notion of order or time within the architecture. We follow the assumption of independent and identically distributed data. In other words, given the same input vector,
+the feed-forward network will always produce the same output regardless of any surrounding context.
+Now, consider sequential data. In a sequence, individual elements are not independent. Their meaning depends on their position in the sequence and on the elements that came before them. If we shuffle the elements of a sequence, we often change or completely destroy its meaning.
+This directly violates the independence assumption that feed-forward networks rely on.
+A deeper issue is that feed-forward networks have no built-in memory. They do not maintain an internal state that can store information about past inputs. As a result, each input is processed in isolation without any awareness of previous time steps.
+This makes it impossible for feed-forward models to accumulate information over time or model temporal dependencies effectively.
+It is important to emphasize that this limitation is structural. It is not caused by insufficient data, poor training or suboptimal hyperparameters. Even a perfectly trained feed-forward network cannot model sequences in a natural way because the architecture itself lacks recurrence and memory.
+To handle sequences properly, we need models that explicitly incorporate state and temporal computation.
+Now, let us summarize the main points of this video. Feed-forward networks assume that inputs are independent and identically distributed. Sequential data violates this assumption because order and context matter. This fundamental mismatch motivates the need for recurrent architectures and the
+need for recurrent architectures which are designed to maintain memory and process data over time. So, in the next video, we will introduce recurrent neural networks and study how they incorporate recurrence and hidden state to overcome these limitations. Thank you.

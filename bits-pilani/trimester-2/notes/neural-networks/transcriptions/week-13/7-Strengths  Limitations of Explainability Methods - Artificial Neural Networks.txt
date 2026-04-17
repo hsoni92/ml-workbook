@@ -1,0 +1,18 @@
+Hello everyone, welcome back to module 13 of Artificial Neural Networks. In this video,
+we critically reflect on all the explainability methods we have studied so far. Rather than
+introducing new techniques, the goal here is to understand what these methods can and cannot tell
+us. By the end of this video, you will be able to compare explainability approaches, identify when
+an explanation is useful and when it is misleading. You will be able to recognize their limitations
+and avoid common misinterpretations when using them in practice. We have covered a wide range
+of explainability methods, from simple saliency maps to more principled approaches like shape
+and integrated gradients. Despite their differences, all of them aim to provide insight into why a model
+made a particular prediction. Explainability methods are undeniably useful. They improve transparency and
+trust. They help us debug models, identify spurious correlations and build trust with stakeholders.
+In regulated or high-stakes domains, they are often essential. However, these methods also
+have serious limitations. Most explanations are local, dependent on assumptions and sensitive to noise.
+They can also be unstable across similar inputs. Importantly, they do not provide causal guarantees.
+One of the biggest risks is overconfidence. Just because an explanation looks intuitive, does not mean it reflects the true reasoning of the model. Or we cannot just assume that the highlighted features are the
+true causes and one explanation method. The correct way to use explainability is as a diagnostic and investigative tool. Use multiple methods. Look for consistent patterns. We should treat explanations as hypotheses, not facts. We should always combine explanations with rigorous evaluation and domain expertise.
+Lastly, we should focus on patterns and not individual examples. Now, let us summarize the main points of this video. Explainability methods are powerful but limited. Explainability improves transparency, reveals influence and not causation. No method provides complete transparency and eliminates uncertainty completely. A responsible practitioner treats explanations with both
+curiosity and skepticism. In the next video, we move beyond explanations of individual predictions and examine a broader issue. Fairness, bias and responsibility in AI systems. Thank you.
+Thank you.

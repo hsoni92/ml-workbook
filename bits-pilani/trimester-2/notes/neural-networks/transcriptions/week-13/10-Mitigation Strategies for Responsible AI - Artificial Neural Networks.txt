@@ -1,0 +1,21 @@
+Hello everyone, welcome back to module 13 of Artificial Neural Networks. In this video,
+we discuss the question, once bias is detected, what can we actually do to mitigate it?
+By the end of this video, you will be able to understand where bias mitigation can occur in
+an AI pipeline, what common strategies look like in practice, why mitigation always involves
+trade-offs, and appreciate why mitigation is a continuous process. Bias mitigation can happen
+at multiple points in the machine learning life cycle. We can intervene before training,
+during training, or after predictions are made. These are commonly referred to as pre-processing,
+in-processing, and post-processing strategies. Pre-processing strategies focus on the data.
+For example, suppose a hiring dataset contains far fewer examples from a particular group.
+One approach is to rebalance the dataset through resampling or re-weighting so that the model does
+not underlearn patterns from that group. Another example is correcting the bias labels. If historical
+decisions were unfair, blindly learning from them will perpetuate the bias. In-processing strategies,
+modify the training process itself. For instance, we might add a fairness constraint to the loss function
+that penalizes large differences in error rates across the groups. A more advanced example is adversarial
+de-biasing where the model is trained not only to make predictions but also to prevent another model from
+inferring protected attributes from its internal representations. Post-processing strategies act after the model has made predictions.
+For example, a loan approval system might use different decision thresholds for different groups to equalize the false negative rates.
+These approaches are often easier to implement but may raise concerns about transparency and policy justification. A key reality is that fairness interventions often reduce overall accuracy. Improving fairness for one group may worsen outcomes for another.
+Different groups will have different fairness goals. This means mitigation is not purely a technical optimization problem. It requires explicit value judgments and it is context dependent. There is no single solution and context. Domain risk and stakeholder priorities all matter.
+Now, let us summarize the main points of this video. Bias can be mitigated at multiple stages, each with its own strengths and limitations. There is no universal solution. Trade-offs are unavoidable and must be made explicit. Responsible AI requires conscious design decisions, documentation and ongoing monitoring, not one-time fixes. In the next video, we will see you in the next video.
+In the next video, we shift our focus to the future, exploring emerging trends in deep learning architectures that are shaping modern AI systems, starting with the Transformers. Thank you.

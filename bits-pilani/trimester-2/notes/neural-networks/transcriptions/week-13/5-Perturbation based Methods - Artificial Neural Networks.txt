@@ -1,0 +1,24 @@
+Hello everyone. Welcome back to module 13 of Artificial Neural Networks. In this video,
+we study about perturbation-based explainability, focusing on LIME and SHAP. By the end of this
+video, you will be able to understand the core idea behind perturbation-based methods,
+how LIME and SHAP generate explanations and work at a high level, and what their strengths and
+limitations are. The fundamental idea here is simple. If a small change in an input feature
+causes a large change in the prediction, that feature must be important. Perturbation-based
+methods systematically apply this idea by modifying inputs and observing the model's response. LIME
+focuses on explaining a single prediction. It generates many perturbed versions of the input
+around that point, queries the black box model, and then fits a simple interpretable model locally.
+The explanation comes from this local surrogate, not from the original model itself.
+SHAP takes a more principled approach rooted in game theory. Each feature is treated as a player
+contributing to the final prediction. SHAP computes how much each feature contributes on average across
+all possible feature combinations. This gives SHAP strong theoretical guarantees but at higher
+computational cost. Conceptually, LIME is faster and more heuristic, while SHAP is slower but more
+theoretically grounded. Both produce local explanations but SHAP explanations are more consistent across runs and
+models. One major advantage of perturbation-based methods is that they are model agnostic. They can work with any
+black box model, neural networks, tree-based models or ensembles, making them very practical for use. However, these methods are not perfect. They can be computationally expensive,
+sensitive to how perturbations are generated, local explanations may not generalize, and sometimes
+misleading if perturbations move inputs off the true data manifold. Now, let us summarize the main points of this video.
+Perturbation-based methods like LIME and SHAP are powerful tools for explainability.
+They explain predictions by probing sensitivity. They explain predictions by probing sensitivity. LIME uses local surrogate models, while SHAP uses
+principal feature attribution. They provide flexible model agnostic explanations, but their
+results must be interpreted with care. In the next video, we will look at explainability methods designed
+specifically for deep neural networks, including GradCam and integrated gradients. Thank you.

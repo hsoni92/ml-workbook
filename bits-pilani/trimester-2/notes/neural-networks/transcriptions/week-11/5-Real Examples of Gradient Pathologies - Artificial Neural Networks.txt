@@ -1,0 +1,33 @@
+Hello everyone, welcome back to module 11 of Artificial Neural Networks. In this video, we will see a demo of some real examples of gradient pathologies. So far you have already seen what vanishing and exploding gradients look like and how to measure gradient flow in practice. Now, let's try to answer the question, given a broken training run, how do you measure gradient flow in practice?
+do I recognize which gradient problem I am seeing? Here, we will intentionally break down
+the training in controlled ways to observe real gradient pathologies. For each scenario,
+observe the loss behavior, layer-wise gradient magnitudes, and stability across epochs. This
+will help you identify which issue is happening. So let's start with the demo. Importing the
+standard libraries. Here, we are keeping the dataset fixed for all the cases. Let's create
+the dataset. We'll use the same deep network architecture throughout, only the configurations
+will keep on changing. So this is the structure of the network. And this is the function we
+will use to get the layer gradients. So the first case is for vanishing gradients, which
+is usually caused by deeper networks when we use activations like tanH and when we do the
+standard initialization. So let's try to plot the vanishing gradient, layer by layer. This
+plot shows us the vanishing gradients. You should notice here that gradient magnitudes are extremely
+small in the early layers and they increase only near the output layer. This indicates that
+gradients decay as they propagate backward through the network. As a result, early layers learn very slowly or stop learning altogether.
+We will look at the case of exploding gradient, which are usually caused by excessively high learning rate. So here you can see that we have a deep network of depth 10 and a learning rate of 20. This has been done intentionally to look at the demo. Now let's try to visualize this. This plot shows that the
+early stage of exploding gradients are the early stage of exploding gradients. This plot shows the early stage of exploding gradients. Exploding gradients usually do not show up suddenly. They start to
+uneven amplification across layers. You should notice that the uneven amplification across layers. You should notice that gradients remain very small in the early layer. This is the
+gradient magnitudes. Gradients remain very small in the early layers. Gradient magnitudes grow rapidly in the later layers and the growth becomes increasingly steep as the
+This plot shows the early stage of exploding gradients. Exploding gradients usually do not show up suddenly. They start as uneven amplification across layers. You should notice that gradients remain very small in the early layers. Gradient magnitudes grow rapidly in the later layers and the growth becomes increasingly steep as they move towards the output. This pattern indicates gradient amplification across the layers.
+While gradients have not yet numerically blown up, this uneven growth is a warning sign of instability. If training continues with this configuration, which is high learning rate and deep network, this amplification typically leads to full gradient explosion and unstable update. Now, let's look at the case of dead gradient paths, which are usually caused by extremely small weight initialization. So you can see here we are initializing the weights with a very small number, 10 to 10.5.
+So let's look at it visually. This plot shows us the dead gradient paths. You should notice that gradient norms are exactly zero across all the layers and gradient signal is completely absent. This indicates that gradients are being blocked entirely. Unlike vanishing gradient, this is not a numerical decay problem, but a configuration or architectural issue. This could be because of bad initialization.
+Let's look at it visually. This plot shows us the dead gradient paths. You should notice that
+gradient norms are exactly zero across all the layers and gradient signal is completely absent.
+This indicates that gradients are being blocked entirely. Unlike vanishing gradient, this is not
+a numerical decay problem but a configuration or architectural issue. This could be because of
+bad initialization like in this case or frozen layers or some explicit gradient blocking.
+So, how do you recognize gradient issues? In case of vanishing gradients, early layers go dark.
+In case of exploding gradients, we see large unstable spikes. And in case of dead paths,
+we see uniformly tiny gradients. Now, let us summarize the main points of this video.
+Gradient failures have identifiable signatures. Most issues arise from configuration choices.
+Measuring gradients reveal failure modes early. And debugging starts with diagnostics and not the fixes.
+In the next video, we will look at how activations can kill gradient flow starting with dead relu. Thank you.
+Thank you.

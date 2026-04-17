@@ -1,0 +1,68 @@
+Hello everyone. Welcome back to module 9 of Artificial Neural Networks. In this video,
+we will introduce the core architecture of recurrent neural networks.
+By the end of this video, you will be able to understand the structure of an RNN,
+you will be able to explain how an RNN processes sequential data, how recurrent computation work,
+and how unrolling helps us visualize computation over time.
+Let's start by revisiting the key limitation we discussed earlier.
+Feed-forward networks process inputs independently and have no memory of past inputs. However,
+sequence modeling requires the ability to retain information from earlier time steps and use it
+when processing later inputs. This need for memory and temporal context motivates the idea of recurrence.
+Recurrent neural networks are designed specifically to introduce this notion of memory
+neural architectures. Now, let's look at the basic structure of a recurrent neural network.
+An RNN processes input data one step at a time. At each time step, the network receives two things.
+The current input, which is given by XT here, and the hidden state from the previous time step,
+which is given by H T minus 1. The hidden state acts as a compact summary of everything the network has seen so far.
+Mathematically, we express this idea by saying that the hidden state at time step T is a function of the current input
+and the previous hidden state. This recurrent connection is what allows information to flow across time.
+Let us now understand the computation more intuitively. At each time step, the RNN combines the current input with the previous hidden state and applies the same transformation. Importantly, the same set of parameters is reused at every time step. This parameter sharing allows the model to generalize across different sequence lengths and positions.
+As the sequence progresses, the hidden state is continuously updated, gradually accumulating information from earlier inputs. This evolving hidden state is the model's memory.
+To better understand this process, we often use a visualization technique called unrolling.
+Unrolling shows the RNN as a sequence of repeated blocks, one for each time step. Each block represents the same RNN cell using the same weights.
+Unrolling does not create multiple networks. It simply makes the temporal structure explicit. This visualization helps us to see how information flows from one time step to the next.
+So, why do we unroll RNNs? Unrolling serves several important purposes. First, it makes temporal dependencies clear by showing how earlier inputs influence later computations.
+Second, it helps us reason about gradient flow during the training, which becomes important when we discuss learning difficulties in RNNs. Finally, unrolling provides a clear mental model for how RNNs process is developed.
+In short, unrolling is a tool to understand time-dependent computation. In short, unrolling is a tool to understand time-dependent computation.
+Now, let us summarize the main points of this video. Recurrent neural networks extend feed-forward models by introducing recurrents and hidden state. The hidden state carries information forward in time, enabling the network to model sequential dependencies. The same computation is repeated at each time step using shared parameters. Unrolling helps us to visualize this recurrent process and prepare for the next step.
+Unrolling helps us to analyze the recurrent process and prepare for the next step.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Unrolling helps us to analyze the data.
+Music.

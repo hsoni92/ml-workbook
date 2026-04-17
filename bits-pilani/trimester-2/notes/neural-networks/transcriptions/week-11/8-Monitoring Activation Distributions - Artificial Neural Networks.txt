@@ -1,0 +1,22 @@
+Hello everyone, welcome back to module 11 of Artificial Neural Networks. In this video, we will see how to track and monitor activation distributions during training. So far we have seen dead relu and saturation in sigmoid and tanage. In this demo, we move from isolated examples to systematic monitoring. We will learn what healthy activation distributions look like.
+How activation distributions evolve during training and how to detect problems early using distribution diagnostics. As training progresses, you should focus on where activation values concentrate, whether distributions drift or collapse, and differences between healthy and unhealthy layers. Activation distributions tell us how information flows through the network. So with this, let's start the demo.
+As always, we will start by importing the standard libraries. For this, we will create a binary data set again. Here, for modeling purpose, we will use a relu-based network and we will monitor activations at each of the layers. So this is how the architecture of the model looks like. We will capture the activation outputs for each layer during the training using this function. Let's register this hook function on the relu layers. Now let's start the training of the model. Here, we will use a well-dent
+defined learning rate of 0.01 and we will train the model for 20 epochs. Now we will look at the activation distributions at the final epoch. Each box plot here summarizes the activation values of a relu layer at the end of the training. We observe very similar activation distributions across layers, comparable spread and medians, and no layer showing extreme collapse or saturation. This indicates that activation behavior is
+stable across depth. Importantly, this diagnostic confirms that no layer is currently suffering
+from dead relu's or severe activation imbalance. Next, we would want to monitor the activations
+across time. So for this, we will track the activation distribution of a single layer
+across different epochs. These box plots show the activation distribution of a single relu layer
+at different training epochs. We observe very similar distributions across epochs,
+no major drift or collapse, and stable activation spread. This indicates healthy and stable activation
+behavior. After this, we want to quantify the fraction of zero activations over time. So let's
+plot that. This curve shows the fraction of neurons producing zero output at each epoch. Some of the
+key observations from this plot are: The fraction of dead relu's increases slowly. Even small increases
+indicate permanent capacity loss. And dead relu's rarely recover once inactive. Importantly, this can
+happen even while training loss continues to decrease. A key point to note here is that around 40-60%
+zero activations is common and often healthy. What matters most is the trend. A gradual unbounded increase may
+indicate growing dead relu's and a stable or slowly varying curve suggests healthy behavior. In this case,
+the fraction remains around 50% indicating normal relu sparsity with no catastrophic activation collapse.
+Now, let us summarize the main points of this video. Activation distributions reveal internal learning dynamics.
+Cross layer comparison highlights structural issues. Temporal monitoring exposes gradual failures.
+Activation diagnostics are essential for debugging deep networks. In the next video,
+we will look at weight distribution drift and track how they change during the training. Thank you.

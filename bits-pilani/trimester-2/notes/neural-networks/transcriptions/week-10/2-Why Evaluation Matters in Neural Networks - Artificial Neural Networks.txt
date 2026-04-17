@@ -1,0 +1,34 @@
+Hello everyone. Welcome back to module 10 of Artificial Neural Networks. In this video,
+we will discuss why evaluating neural networks requires more care than evaluating classical
+machine learning models. By the end of this video, you will be able to explain why evaluating
+neural networks is more challenging than classical models. You will be able to identify why accuracy
+alone is insufficient, identify common hidden failure modes in deep learning models, and
+understand why evaluation must be multidimensional. Let's begin with a common misconception. When
+a model achieves high accuracy, it is tempting to assume that it is reliable. However, in
+neural networks, high accuracy does not necessarily mean the model has learned the right patterns.
+A model may simply memorize training data, exploit spurious correlations, or perform well on a
+benchmark while failing in real-world conditions. For example, a classifier might achieve high
+accuracy by relying on background cues and images rather than learning the actual object of interest.
+This is why accuracy alone is not a sufficient indicator of model quality. Neural networks are highly expressive
+models, or in other words, they have a very high capacity. With enough parameters, they can fit extremely complex patterns and even the noise. In fact, deep networks can be trained to perfectly fit random labels, despite those labels containing no real signal. This means that strong training performance can sometimes be misleading. Overfooting may not be obvious from training accuracy of the data.
+alone, making careful evaluation on unseen data is essential. Another important difference is that neural networks typically produce probabilistic outputs. Instead of predicting just a class label, they output a probability distribution over possible classes. Two models can achieve the same accuracy while behaving very differently in terms of confidence. One model may be cautious and uncertain, while another can achieve the same accuracy while behaving very differently in terms of confidence. One model may be cautious and uncertain, while another can achieve the same accuracy while behaving very differently in terms of confidence. One model may be cautious and uncertain, while another can achieve the same accuracy.
+may be extremely confident even when it is wrong. In many applications such as healthcare or finance,
+this confidence information is as important as the prediction itself.
+Many failure modes in deep learning are subtle and not immediately visible. A model may be
+overconfident on incorrect predictions. It may generalize poorly to slightly different data
+distributions. It may be highly sensitive to small input perturbations that are imperceptible to
+humans. It may also perform deceptively well on imbalanced datasets by favoring the dominant classes.
+These failures often do not show up when looking at a single aggregate metric. Because of these
+complexities, evaluating neural networks requires multiple complementary perspectives. We
+need to assess predictive performance using appropriate metrics. We must examine generalization
+behavior and overfitting patterns. We should evaluate confidence quality and calibration.
+And we need to test robustness and uncertainty. Each of these dimensions reveal a different aspect
+of model behavior. And ignoring any of them can lead to misleading conclusions.
+Now, let us summarize the main points of this video. Evaluating neural networks goes beyond checking
+accuracy. Deep models introduce new failure modes that are not always obvious. Reliable evaluation requires
+looking at performance, confidence, generalization and robustness together. This module will
+equip you with the tools and intuition needed to evaluate neural network models and decide when they can be trusted.
+In the next video, they will revisit classical performance metrics such as accuracy, precision, recall and F1 score and
+reinterpret them specifically in the context of neural network outputs. Thank you.
+Thank you.
+you

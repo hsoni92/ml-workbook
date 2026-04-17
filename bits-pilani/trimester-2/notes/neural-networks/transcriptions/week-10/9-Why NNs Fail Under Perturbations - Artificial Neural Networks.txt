@@ -1,0 +1,32 @@
+Hello everyone, welcome back to module 10 of Artificial Neural Networks. In this video,
+we will discuss why neural networks fail under perturbations or small changes in the inputs.
+By the end of this video, you will be able to explain what robustness means, understand why small input
+changes can cause large changes in model predictions and see why perturbation-based
+evaluation is necessary. The focus here is not on fixes but on understanding why failures happen.
+Let's start with a simple but important question. In real world, inputs are rarely clean or exact.
+Measurements are noisy, sensors are imperfect and data naturally varies. So, the question is,
+should a very small change in input lead to a completely different prediction?
+Intuitively, we would expect a reliable model to be stable under such small changes. A common
+misconception is that high accuracy guarantees reliable behavior. In practice, a neural network can achieve
+excellent test accuracy and still behave in a very fragile way. It can be accurate and even well
+calibrated, yet still fail when inputs are slightly perturbed. This tells us that robustness is a separate property that must be evaluated explicitly. By perturbations, we mean small realistic changes to the input. These could be due to noise, minor shifts in measurement, or natural variability in the data. Importantly, perturbations do not change the underlying meaning or true label of the input.
+If a model changes its prediction drastically under such changes, that indicates a robustness problem. For example, in this particular case, for the original image, the model is 85% confident that it is a polar bear. But with small perturbation, now the model is 100% confident that it is a dishwasher. Such a drastic change in the labels.
+Why do neural networks fail under small perturbations? One reason is that neural networks learn highly non-linear decision boundaries. Another reason is the high dimensionality of input spaces, where small changes along certain directions can have a large effect. Finally, standard training procedures optimize average performance and not the local stability. From a local perspective,
+Even a tiny perturbation can cause a large change in the model's logics.
+This can lead to a prediction flip, even though the input is semantically unchanged.
+In many cases, the model remains highly confident while being wrong.
+This combination, instability plus confidence, is particularly dangerous.
+It's important to distinguish robustness from generalization.
+Generalization is about how well a model performs on new unseen examples.
+Robustness is about how stable the model's predictions are around a given example.
+A model can generalize well but still be locally unstable.
+For trustworthy systems, we need both of them.
+Standard test sets evaluate performance on individual data points.
+They do not probe what happens in the neighborhood around those points.
+Perturbation-based tests explicitly examine local behavior and reveal hidden fragility.
+Without such tests, robustness issues often remain invisible.
+So far, we have built intuition for why neural networks can fail under small perturbations.
+In the next video, we will move from intuition to practice.
+We will apply controlled perturbations to inputs, observe how predictions change and visualize model sensitivity.
+Thank you.
+Thank you.

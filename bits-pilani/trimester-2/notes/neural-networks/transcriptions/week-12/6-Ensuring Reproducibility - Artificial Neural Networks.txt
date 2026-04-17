@@ -1,0 +1,28 @@
+Hello everyone. Welcome back to module 12 of Artificial Neural Networks. In this video,
+we will focus on reproducibility, which is a foundational principle of scientific machine
+learning. By the end of this video, you will be able to clearly explain what reproducibility
+means in the context of neural networks, identify the key sources of randomness that affect
+deep learning experiments and understand how we can systematically control these factors to run
+reliable and comparable experiments. When we say reproducibility, we mean something very precise.
+If we run the same code again under the same conditions, we should obtain the same results.
+In traditional software systems, this is usually taken for granted. However, in deep learning,
+achieving reproducibility is surprisingly difficult because training neural networks involves many
+stochastic components that are often hidden from view. Let's look at why reproducibility breaks in
+practice. Neural networks typically start with randomly initialized weights. Training data is often
+different than shuffled differently in each run. Many GPU operations are non-deterministic for performance reasons.
+Techniques like dropout deliberately introduce randomness during training. And finally, multi-threading and parallel execution can change the order of computations. Each of these factors can slightly alter training dynamics leading to different final models. This lack of reproducibility is not just an academic concern, but it's not just an academic concern.
+It is genuinely dangerous. If results are not reproducible, you cannot fully trust model improvements. Debugging becomes extremely difficult because you cannot isolate the cause of a change. Most importantly, you cannot clearly compare experiments, which undermines both research conclusions and production decision-making. To achieve reproducibility, several elements must be explicitly controlled. We need to fix random seeds across libraries.
+We must ensure consistent data splits for training, validation and testing. All hyperparameters should be logged and reused exactly. Finally, software versions including frameworks, drivers and hardware dependencies must be tracked because even small changes can affect the outcome.
+Now that we understand the risk of reproducibility, we will move to a hands-on demonstration. In the next section, we will see how these principles are applied in practice and how small changes can lead to surprisingly different results if reproducibility is not enforced.
+Let's now switch to the notebook and see this step by step. Let's start with the standard library. Now we create a dataset and a simple model. At this stage, we do not fix any random seeds.
+We will reuse the same MLP architecture that we have used earlier. Now this is our training and evaluation function. Now let's see when we run the exact same code twice. Here, if we look at the accuracy of run 1 and 2, we see that it's 94% and 93.6%.
+So these two runs are producing different results even though the code we have used is identical, the dataset is same and the model architecture is unchanged. So this is the non-reproducible behavior that we were talking about.
+Now to control randomness, we use something called as seeds. So we must fix the numpy random seed, pytorch random seed and data splitting randomness.
+So we set all these seeds to a random value, let's say 42 in this case. We now recreate the dataset and splits using the fixed seeds. And we will rerun the experiments again.
+This time we see that we are getting exactly the same value as 92.3 in both the cases. Here is a brief checklist we can follow to ensure reproducibility, fix all the random seeds, fix strain and validation splits,
+log the hyperparameters, save model checkpoints and avoid mixing multiple runs in the same logs. These practices are essential for reliable experimentation.
+Now, let us summarize the main points of this video. With proper control of randomness, repeated runs produce identical results, comparisons across experiments become meaningful and debugging becomes possible.
+Reproducibility is not automatic, it must be engineered. In the next video, we will look at experiment tracking, how to store configurations, metrics and models so that experiments can be compared and revisited later. Thank you.
+Reproducibility is not automatic, it must be engineered.
+Reproducibility is not automatic, it must be engineered.
+Reproducibility is not automatic, it must be engineered.

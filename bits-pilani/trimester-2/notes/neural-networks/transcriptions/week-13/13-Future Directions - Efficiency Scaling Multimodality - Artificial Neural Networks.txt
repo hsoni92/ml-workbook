@@ -1,0 +1,22 @@
+Hello everyone. Welcome back to module 13 of Artificial Neural Networks. In this video,
+we step back and look at where the field is heading next and how these ideas are already
+shaping real-world AI systems. By the end of this video, you will be able to understand
+three major forces shaping the future of deep learning. Efficiency, scaling and multimodality
+and how they are shaping the future of modern AI. For many years, progress in deep learning was
+driven by making models bigger, more parameters, more data, more compute. However, modern AI systems
+are no longer just research demos. They are deployed in products that millions of people use daily.
+For example, conversational assistants, coding co-pilots and document analysis systems must
+respond quickly, run reliably and be cost efficient. This has made efficiency a first-class concern,
+not just model accuracy. Scaling laws taught us an important lesson. Larger models trained on more
+data tend to learn more general and flexible representations. This insight led to powerful
+foundation models that can write text, answer questions, summarize documents and even assist with
+programming. However, scaling also comes with trade-offs. Training very large models is expensive,
+energy-intensive and not always sustainable. As a result, the field is now focused on smarter scaling,
+using better architectures, better data and training strategies rather than just increasing the size.
+Another major shift in modern AI is multimodality. Humans naturally combine text, images and sound when
+reasoning. Modern AI systems are increasingly doing the same. For example, systems can now read a document
+that contain text and images. Answer questions about both or generate images from natural language
+descriptions. This ability to reason across modalities is becoming a defining feature of next-generation AI system.
+When we put these trends together, a clear picture emerges. The future of AI is not just about larger models. It is about efficient models that can scale responsibly, integrate multiple modalities and be deployed reliably in real-world settings. Equally important is alignment, ensuring that these powerful systems are interpretable, fair and trustworthy.
+Now, let us summarize the main points of this video. Efficiency is now a first-class design goal. Scaling enabled breakthroughs but has limits. Multimodal models represent the next major shift. The future of AI balances power, cost and responsibility. With this, we conclude our discussion on emerging trends in deep learning. In the final video of this video, we will see.
+In the final video of this module and of this course, we will summarize everything we have learned from interpretability and fairness to the future directions of AI systems. Thank you.

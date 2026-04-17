@@ -1,0 +1,25 @@
+Hello everyone. Welcome back to module 12 of Artificial Neural Network. In this video,
+we bring together everything learned so far to run a complete professional hyperparameter
+tuning experiment. We will cover train and validation splits, automated hyperparameter sampling,
+early stopping, model checkpointing and best model selection. The goal here is not maximum accuracy,
+but a reliable and systematic tuning workflow. A professional tuning experiment must compare models
+fairly, use a validation set, stop bad runs early, save the best model and track configurations and results.
+This notebook demonstrates all of these elements. Let's start with the demonstration.
+We will import the standard packages.
+Now in the dataset, we will explicitly create the training set and validation set. This is done using
+the function train_test_split. This ensures fair model comparison during the training.
+Here, we are using a simple and fixed model architecture so that only hyperparameters influence
+the performance. Now for the hyperparameter search space, we define distributions instead of the fixed
+values. For instance, learning rate is sampled from this uniform distribution and batch size is randomly
+sampled from these three choices. Now in our training, we are incorporating something called as early
+stopping which prevents wasted computation on poor configurations. So how early stopping works is that
+we define a patient's parameter. So we check what is the validation accuracy that we are seeing with
+respect to the best accuracy that we have seen so far. And if it does not improve beyond a certain number of
+epochs, which is guided by the patient's parameters, then we break the training. Now we will run the hyperparameter tuning loop. In each trial, we will sample the hyperparameter, train with early stopping, evaluate on the validation data, and store the best model. So here we are going to do some 10 trials.
+So we can see that for each of the trials for different combinations, the validation accuracy is coming up.
+Now we will store the best configuration found. So here we see that the best validation accuracy we have
+achieved is of 95.5% at a learning rate of 0.001 and the batch size of 32. Now the final step is to save the best performing model for later evaluation or for deployment.
+Now let us summarize the main points of this video. Hyperparameter tuning is an experiment, not a guess.
+Validation performance guides the selection. Early stopping saves computation. Checkpointing preserves the best model. And a systematic pipeline is essential for reliable results.
+In the next video, we will focus on reproducibility, where we will look at random seeds, deterministic behavior, and reliable comparisons across the runs.
+These practices ensure that tuning results can be trusted. Thank you.

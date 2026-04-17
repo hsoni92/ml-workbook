@@ -1,0 +1,19 @@
+Hello everyone, welcome back to module 11 of Artificial Neural Networks. In this video, we will look at identifying parameter anomalies such as frozen layers, untrained components and configuration errors.
+So far, we have examined healthy training behaviour which is stable gradients, reasonable activations, balanced weight norms and stable batch norm statistics. In this video, we deliberately introduce parameter level anomalies and learn how to detect them using the diagnostics.
+Let's start by importing the packages. Next, we create the dataset. We will use the same dataset across all the experiments. Now, first we train a healthy model to establish a reference for weight norms and the training behaviour.
+So, let's train the model. And now let's look at how does the baseline or healthy weight norm evolution looks like.
+So, for the baseline behaviour, we observe smooth growth of weight norms, no frozen or exploding layers and similar learning dynamics across the layers. So, this is going to be our reference for healthy training.
+So, now we will start with the first anomaly which is frozen layer. Here we will intentionally freeze one layer so that its parameters do not update during training.
+So, for this particular layer which is net.0, they have said that requires gradient equals to false. So, we are intentionally doing this. So, now let's look at this graph. So, here we see that one layer shows a nearly flat weight norm across the epochs. This indicates no gradient updates and possible causes could be requires gradient equals to false has been set up which is an optimizer level misconfiguration.
+Flat norms are a strong signal of frozen or disconnected layers.
+Our second anomaly is going to be exploding weights. So, here we intentionally increase the learning rate so that we can induce unstable updates. Now, if we look at this graph, we see that weight norms grow rapidly and inconsistently across the layers. This indicates unstable optimization, learning rate being too high and risk of divergence.
+And risk of divergence or NANDs. Sudden norm spikes are a clear warning signal here.
+Next anomaly is under trained output layer. So, here we assign a much smaller learning rate to the output layer.
+So, here in this graph, we see that one layer exhibits much slower norm growth than the others. This indicates layer specific learning rate issues, insufficient learning signal and potential bottleneck in model performance.
+Now, let us summarize the main points of this video. Weight norms are powerful diagnostics for parameter anomalies. Flat norms indicate frozen or disconnected layers. Rapid growth indicates instability and slow growth may indicate under training. Comparing against a healthy baseline is essential for diagnosis. We now know how to detect training pathologies. In the next video, we bring everything to the point.
+diagnostics for parameter anomalies, flat norms indicate frozen or disconnected layers,
+rapid growth indicates instability, and slow growth may indicate undertraining.
+Comparing against a healthy baseline is essential for diagnosis.
+We now know how to detect training pathologies. In the next video, we bring everything together
+into a structured debugging workflow and learn how to monitor these signals. Thank you.
+Music.

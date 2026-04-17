@@ -1,0 +1,41 @@
+Hello everyone, welcome back to module 9 of Artificial Neural Networks. In this video,
+we will study long short-term memory networks commonly known as LSTMs. By the end of this
+video, you will be able to understand why LSTMs were introduced, the role played by the memory cell,
+and how gating mechanisms control information flow to enable learning over long sequences.
+You will also be able to understand how LSTMs address the issue of vanishing gradients.
+Let's begin by recalling the key limitation of basic recurrent neural networks. As we discussed
+earlier, simple RNNs struggle to learn long-term dependencies because gradients tend to vanish over
+long sequences. As a result, important information from earlier time steps is often forgotten. This
+limitation motivates the need for a more structured form of memory, one that can selectively retain
+important information over time. The core idea behind LSTMs is to introduce an explicit memory cell. Instead of
+recomputing all information at every time step, the memory cell allows information to be stored and carried forward with
+minimal modification. Crucially, LSTMs separate memory storage from memory updates. This separation makes it possible to
+preserve important information over long periods while still allowing the model to update its memory when needed. Let us now look at the overall structure of an LSTM cell. An LSTM maintains two states at each time step. The cell state represents long-term memory cell.
+of an LSTM cell. An LSTM maintains two states at each time step. The cell state represents
+long-term memory while the hidden state represents the current output of the model.
+Multiple gates operate on these states to control how information flows into, through and out of
+the memory cell. These gates are learned and adapt to the task during training. LSTMs use
+three main gates to regulate information flow. The forget gate decides what information should
+be removed from the memory cell. The input gate controls what new information should be added
+to the memory. And the output gate determines what information from the memory should influence
+the hidden state and the output. Together, these gates act as learned controllers that manage the
+model's memory over time. The forget gate plays a critical role in preventing memory
+from growing uncontrollably. At each time step, it decides which parts of the memory to
+keep and which parts to discard. It uses a sigmoid activation, producing values between 0 and 1. Values close to 1 indicate
+that information should be retained, while values close to 0 indicate that information should be forgotten.
+This allows the model to discard irrelevant or outdated information.
+The input gate determines what new information should be written into the memory cell. It ensures that only relevant information is added, preventing noise from corrupting the memory.
+The output gate then decides how much of the memory should be exposed as hidden state.
+This separation between memory storage and memory usage allows the model to retain information
+without necessarily using it at every time step.
+LSTMs address the vanishing gradient problem through their memory cell design.
+Because information can flow through the memory cell with minimal modification,
+gradients can also propagate across many time steps. The gating mechanisms provide smooth, controlled updates, reducing the risk of gradients vanishing or exploding.
+As a result, LSTMs are able to learn long-term dependencies much more effectively than basic RNNs.
+Now, let us summarize the main points of this video.
+LSTMs extend recurrent neural networks by introducing an explicit memory cell.
+Gating mechanisms control what information is remembered, forgotten and output.
+This separation of memory and computation significantly improves the model's ability to learn long-term dependencies.
+LSTMs remain a foundational architecture for many sequence modeling tasks.
+In the next video, we will study Gated Recurrent Units or GRUs which provide a simpler alternative to LSTMs with fewer gates and parameters.
+Thank you.

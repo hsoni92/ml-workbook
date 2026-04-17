@@ -1,0 +1,15 @@
+Hello everyone. Welcome back to module 13 of Artificial Neural Network. In this video,
+we begin our study of concrete explainability methods. We start with feature importance and
+saliency maps the simplest and most intuitive ways to understand neural network predictions.
+By the end of this video, you will be able to understand what feature importance means,
+how saliency maps work at a high level, and what their strengths and limitations are. At its core,
+feature importance answers a simple question, which inputs mattered most? Depending on the
+context, we may ask this globally, that is across the entire data set, or locally for a single
+prediction. For example, which words influenced a sentiment prediction, or which pixels influenced
+an image classification. In deep learning, especially for images, feature importance is visualized using
+saliency maps. A saliency map assigns an important score to each input pixel, highlighting the regions that
+influence the prediction. Most saliency methods rely on gradients. If changing a pixel slightly causes a
+large change in the output, that pixel is considered important. We visualize this sensitivity as a heat
+map over the input. Saliency maps are extremely useful for debugging. They help us see whether a model is focusing on meaningful regions or relying on spurious patterns. However, they show influence, not the reasoning. Saliency maps can be noisy and unstable. They are not causal explanations and should not be treated as definitive evidence of understanding. This is a recurring theme in explainability.
+Now, let us summarize the main points of this video. Feature importance identifies influential inputs. Saliency maps extend this idea to deep networks. They are intuitive and visual but limited. Hence, they are best used as diagnostic tools, not proofs. In the next video, we move beyond gradients to perturbation-based methods like line and shape, which take a very different approach to explanation.
+Thank you.

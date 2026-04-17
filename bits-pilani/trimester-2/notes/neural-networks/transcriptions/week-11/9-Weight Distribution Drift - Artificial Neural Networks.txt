@@ -1,0 +1,24 @@
+Hello everyone, welcome back to module 11 of Artificial Neural Networks. In this video,
+we will look at weight distribution and track how they change during the training. So far,
+we have examined gradient flow and activation behavior. In this video, we move one level deeper
+to the model parameters. We will study how weight distributions differ across the layers,
+how weights evolve during training, and what stable versus unstable weight behavior looks like.
+The key question here is why should we monitor weight distributions? Weight distributions reveal
+whether learning is balanced across layers, whether weights are collapsing or exploding,
+whether some layers are effectively untrained. These issues are often invisible from loss curves alone.
+We will import some standard packages and libraries and check the seed for reproducibility.
+For this case, we will use a simple classification dataset. We are creating a binary dataset here.
+And for the model, we will use a moderately deep forward network. So you can look at the model
+architecture here. Here we are going to use a stable configuration to train so that we can observe the
+normal weight behavior. So this is how the training looks like. We are using a learning rate of 0.01 and
+we will train the model for 20 epochs. So let the model train. Now we will first examine how the weight
+distributions look like across the layers at final epoch. So let's focus on this graph now. In this plot,
+we observe similar weight distributions across the layers, no extreme spread or collapse, and no layer
+dominating in magnitude. This indicates stable and balanced learning across the network. Now let's look at
+how weight distribution evolution over time looks like. So for this, we will track the distribution of a single
+layer across different epochs. In this plot, the weight distributions remain largely stable over time. This
+suggests learning updates are controlled, no runway growth or collapse, and optimization is well behaved.
+Now, let us summarize the main points of this video. Weight distributions provide insight beyond the
+loss curves. Stable distributions indicate healthy optimization. And monitoring weights helps to
+catch silent instabilities early. So, in this video, we have seen weight distributions show where the
+learning accumulates. In the next video, we quantify this using weight norms and training signals. Thank you.

@@ -1,0 +1,42 @@
+Hello everyone. Welcome back to module 9 of Artificial Neural Networks.
+In this video, we will examine the key limitations of recurrent neural networks.
+By the end of this video, you will be able to identify the structural challenges of RNN-based models,
+understand why these challenges persist even with LSTNs and GRUs,
+and see why alternative sequence modeling approaches were needed.
+Let's begin with an important clarification.
+Recurrent neural networks were a major breakthrough in sequence modeling.
+They introduced memory and recurrence, and architectures like LSTMs and GRUs
+significantly improved the ability to model long-term dependencies.
+RNN-based models have been successfully used in many real-world applications.
+However, despite these successes, RNNs are not without limitations.
+Understanding these limitations helps to explain why newer architectures were developed.
+One of the most fundamental limitations of RNNs is that they process sequences sequentially.
+Each time step depends on the hidden state from the previous step.
+This means that computations cannot be fully parallelized across time steps.
+As a result, training RNNs on long sequences can be slow and inefficient,
+especially on modern hardware that is optimized for parallel computation.
+This sequential dependency becomes a serious bottleneck at scale.
+Even with LSTMs and GRUs, modeling very long sequences remains challenging.
+While gating mechanisms helps to mitigate vanishing gradients,
+they do not eliminate the problem entirely.
+As sequences grow longer, it becomes increasingly difficult for the model to retain and use information from very distant time steps.
+In practice, performance often degrades when important dependencies span long time intervals.
+Another important limitation is the fixed size of the hidden state.
+In RNN-based models, the entire history of the sequence is compressed into a single hidden vector.
+This creates an information bottleneck.
+As sequences become longer or more complex,
+it becomes harder to store all relevant information in a fixed size representation.
+Some details are inevitably lost, especially when multiple distant parts of the sequence are important.
+Related to this is the difficulty RNNs have in capturing global context.
+RNNs tend to focus more strongly on recent inputs because
+information from earlier time steps must pass through many intermediate states.
+Directly relating distant elements in a sequence, such as the beginning and end of a long sentence, is therefore difficult.
+This indirect flow of information limits the model's ability to reason globally across the sequence.
+Now, let us summarize the main points of this video.
+Recurrent neural networks introduced powerful ideas for sequence modeling,
+but they also come with important limitations.
+Their inherently sequential nature makes training slow and hard to paralyze.
+Even with gating mechanisms, learning very long range and global dependencies remains challenging.
+In the next video, we will explore why attention mechanisms were introduced
+and how they addressed many of the limitations we just discussed.
+Thank you.

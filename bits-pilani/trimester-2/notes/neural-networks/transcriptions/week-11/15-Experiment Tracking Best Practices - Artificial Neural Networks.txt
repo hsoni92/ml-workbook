@@ -1,0 +1,24 @@
+Hello everyone. Welcome back to module 11 of Artificial Neural Networks. In this video,
+we will discuss best practices for tracking the experiments. As neural network models grow in
+complexity, so do the number of experiments we run. In this video, we focus on why experiment
+tracking matters, what information should always be tracked, and simple practical tracking habits
+that you can apply immediately. The goal is reproducibility, not sophistication.
+In practice, we often ask questions like which learning rate worked best, which model version
+produced this result, and can I reproduce this experiment next week? Without proper experiment
+tracking, these questions are hard to answer. So let's start with the demo. We will load the standard
+packages. Now we know that an experiment consists of a model, a dataset, a configuration of hyperparameters,
+logged metrics and artifacts, and a unique identifier. Good tracking ensures that all the five are recorded
+together. Now let's start with the configuration. So instead of hard coding the hyperparameters, we store
+them in a configuration dictionary. So a configuration dictionary looks like this, where it's a simple
+JSON object which has keys like model, learning rate, optimizer, batch size, epochs, and the seed value.
+Next is the unique experiment identifier. Every experiment should have a unique ID. This prevents log overwriting and we can compare them properly.
+Now we will save the configuration alongside the experiment outputs. This ensures that we can always reconstruct how the model was trained.
+Next is about model and data. Here we keep the model and dataset simple so that we can focus on the tracking mechanics.
+Now each experiment will get its own tensor board log directory. This avoids mixing the results across the runs.
+Now let's train the model with logging. After one experiment, the directory structure would look
+something like this. So we will have an experiment. The experiment name would be there along with the date
+and timestamp. And inside that we will have the configuration and the tensor board folder. So this tensor board folder will have
+all the training logs. Now at minimum, every experiment should record model architecture, hyperparameters, random seed, training metrics, logs, and plots. If you cannot reproduce an experiment, it means it does not exist.
+Some of the common experiment tracking mistakes we should avoid are: Overwriting the logs, forgetting hyperparameters, relying on your memory, and keeping results only in the notebooks.
+Now let us summarize the main points of this video. Experiment tracking is about discipline, not tools. Unique IDs prevent confusion. Config files enable reproducibility. Answer board complements structured experiment organization.
+These habits scale from coursework to research and industry projects. In the next video, we will summarize the learnings of this module. Thank you.
