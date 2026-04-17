@@ -1,0 +1,58 @@
+Page 1 of 2
+
+
+Reliability in Cloud Architecture Transcript
+In this lesson, we'll focus on reliability in cloud architecture, one of the most critical
+qualities of any system running in the cloud. So, reliability refers to a system's ability
+to continue operating correctly even when parts of the system fail. In clo ud
+environments, failure is not an exception, it is an expectation.
+So, hardware fails, networks experience issues, software has bugs, and even entire
+availability zones can go offline. A reliable cloud system is one that anticipates these
+failures and recovers from them automatically, with minimal impact on the users. That
+is the key.
+So, this is why reliability matters so much. Cloud systems are distributed and
+constantly changing, which increases the chance of something going wrong all the
+time. So, when reliability is poor, the impact is immediate.
+The downtime revenue loss, broken trust, missed SLAs, and many more. So, to
+achieve reliability, cloud architects rely on a few core building blocks. The first is
+redundancy.
+Critical components are duplicated so that if one fails, another can take over. This
+might mean multiple application servers, multiple database replicas, or multiple load
+balancers. So, closely related to redundancy is fault isolation.
+Fault isolation ensures that when something fails, it affects only a small part of the
+system, not everything. This is why cloud applications are spread across the area and
+why services are often isolated from each other. Next is automatic failover.
+When a component becomes unhealthy, traffic is automatically routed to a healthy
+one. This happens without human intervention and it is essential for fast recovery.
+Reliability also depends heavily on the replication.
+Data is stored in more than one location to prevent data loss. Some systems use
+synchronous replication for minimal data loss while others use asynchronous
+replication to improve the performance. Another critical element is backups and
+disaster recovery.
+These protect against large -scale failures like region outages or accidental data
+deletion. Recovery strategies are guided by two metrics. How quickly recovery must
+happen and how much data loss is acceptable.
+So, a key mindset shift in cloud architecture is designing for failure. Instead of trying
+to prevent failures entirely, cloud systems assume failure will happen and focus on
+recovering quickly. This includes health checks, self -healing mechanisms, and
+graceful degradation.
+So, where a non -critical futures usually fail without bringing down the entire system.
+It's also important to distinguish reliability from availability. Availability asks whether
+the system is up at a given moment.
+
+
+
+
+  Page 2 of 2
+
+
+
+Reliability looks at the system's ability to function correctly over time including how it
+handles and recovers from the failures. So, to summarize, reliable cloud systems are
+built by expecting failures, automating recovery, isolating faults, protecting t he data,
+minimizing user impact, and finally, to summarize, reliability is not just a technical
+concern. It's a fundamental business requirement.
+So, in the next topic, we'll look at performance considerations in cloud workloads and
+understand how architects balance the speed, scalability, and efficiency.
+
+----------------------------------------------------End-------------------------------------------------------

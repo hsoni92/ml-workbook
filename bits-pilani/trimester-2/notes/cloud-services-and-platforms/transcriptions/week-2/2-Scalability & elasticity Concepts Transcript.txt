@@ -1,0 +1,59 @@
+Page 1 of 2
+
+
+Scalability & elasticity Concepts Transcript
+In this video, we are going to explore two foundational cloud concepts, which is
+scalability and elasticity. These concepts determine whether a system can grow, adapt
+to a changing demand, and remain stable under the pressure. So let's begin with
+scalability.
+Scalability refers to a system's ability to handle growth without failing. That growth
+could be more users, more requests, or even more data being processed. A scalable
+system continues to meet performance expectations as the demand increases.
+This matters because real-world traffic is never predictable. An application may work
+perfectly at normal load. But during a sudden spike, like a sale or a viral event, the
+demand can increase dramatically.
+If the architecture cannot handle that growth, the system will fail. There are two main
+ways systems scale. The first is vertical scalability, which we also call as scale-up.
+This approach increases the power of a single machine by adding more CPUs, more
+memories, or faster storage. It's simple to implement and often requires little to no
+application change. However, vertical scaling has clear limits.
+Hardware can only grow so much. Scaling often requires downtime. And high -end
+machines are expensive.
+So this approach is commonly used for traditional databases and monolithic
+applications. The second approach is horizontal scalability, or which we also refer to
+as scale -out. Instead of making one machine bigger, we add more machines and
+distribute the workload across them.
+Horizontal scaling offers major advantages. There are no theoretical upper limit,
+availability improvements, or any fault tolerance increases. Scaling happened without
+the downtime.
+This model is ideal for web applications, microservers, or NoSQL databases also. A
+simple way to remember this is vertical scaling makes one worker stronger. Horizontal
+scaling hires more workers.
+So cloud environments strongly favor horizontal scaling. Now let's move to elasticity.
+Scalability tells us whether a system can grow.
+
+Elasticity tells us whether the system can grow and shrink automatically, based on the
+demand. So elastic systems scale up when the traffic increases and scales down when
+the traffic drops, without any manual intervention. This is crucial because cloud
+workloads fluctuate constantly.
+
+
+
+
+
+  Page 2 of 2
+
+
+Cloud platforms support elasticity through services like autoscaling groups and
+autoscalers. These tools monitor metrics such as CPU usage or request volume and
+adjust the capacity automatically. Elasticity helps avoid two extremes.
+Over-provisioning wastes money by running unused resources. Under -provisioning
+hurts performance and user experience. So elastic systems strike the balance by
+delivering the performance when needed and saving cost when demand drops.
+This is why elasticity is essential for platforms like food delivery applications or any
+kind of ride -sharing services, streaming platforms, or even for flash sales. So to
+summarize, scalability enables growth. Horizontal scaling is preferred in the cloud.
+Elasticity adds automation and cost efficiency. Together, these concepts form the
+foundation of cloud-native architecture.
+
+----------------------------------------------------End-------------------------------------------------------

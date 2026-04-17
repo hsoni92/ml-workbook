@@ -1,0 +1,143 @@
+Page 1 of 3
+
+
+4 Practical Lab AWS Account Setup
+Walkthrough Transcript
+Module 4, Lesson 1, Practical Lab. In this practical lab, we are going to set up our own
+AWS accounts. Throughout this programme, we'll be learning all the tools and services
+within AWS from a theoretical and a practical point of view.
+So, first once you type in create AWS account in your browser, you'll see a page like
+this which says account. When you click on that page, it will direct you to create your
+own new account within AWS. At the top right, when you see this create account, click
+on it.
+When you get a page like this, you're supposed to provide your personal email address
+which is active. You are aware of the password of that email address, something which
+you use regularly. So, add the email ID.
+So, I'm just going to add some email over here. You can provide a name. Let's say I'm
+going to provide a valid name for this account.
+Then, you click on verify email address. You'll be expecting an OTP for your account.
+So, make sure your email is active.
+Provide the OTP that you received. After that, once it is successfully authenticated,
+you can provide a decent password over here which satisfies all of these conditions.
+Do not use any repetitive passwords because AWS fetches your password once you
+enter over here.
+It is going to give you a hint that a password is used many times and it is exposed out
+in the public. So, try to use a password which has never been used, which has a
+complex pattern rather than ABC, other 8123. Avoid such kind of patterns or using
+your names or mobile numbers.
+So, give a random password. So, I'm giving some random password over here. Then,
+you click on continue.
+So, we have total five steps. Now, once you land on this page since we do not want to
+incur or invite any payments while we are trying to learn and practise. So we'll prefer
+the free account which is for the six months.
+So we click on choose free plan. Now here from the two options we can go with the
+personal either one is fine. Provide your full name, your mobile number, you can add
+any mobile number over here, country and add your address details, your city, postal
+code, then checkbox it and click on agree and continue.
+So this is step two out of the five. OK, seems like I have to provide an actual phone
+number. So after that, once you provide your personal details, it will bring you to the
+payments option, which is step three out of five
+Here you have two options. One, you can either use your UPI for auto payments,
+wherein you have to provide your personal UPI ID. And apart from this, you have an
+option which is for to choosing your credit or debit card details.
+Make sure that whenever you choose your credit or debit card details, they have to be
+enabled for international transaction. Otherwise it will keep on throwing some error.
+
+
+
+
+  Page 2 of 3
+
+
+For easy authentication, just go with the UPI auto pay because UPI is something we've
+been using for a while now.
+So it avoids any complexity. Once you complete the payment after this, which is step
+three of five. So from here, I'll be there, I'll be telling you from the document
+perspective, because adding all the details would already my credit card is already
+involved in another AWS account.
+So I would not be able to do it again. So to avoid that, I'm going to show it to you what
+the next step is going to look like. So we have reached this stage, this step, wherein
+we have to add the payment.
+After you add your UPI ID and the transaction is made. So the transaction, it's not
+going to deduct huge amount. It will deduct like two rupees and it will be refunded.
+It's only to verify if your bank is active for the international transaction or not. Post that,
+it will ask you to provide your mobile number and it will send an OTP to verify if it is an
+active mobile number or not. After that, it will ask you to choose a support plan.
+Again, you choose the one which has a free tier support post that you'll have a
+complete end page which says that your AWS account is up and active, which means
+you are ready to start using your console account from here on. So once you set up
+your own acc ount, once everything is set up, it will take max to max. It will take 15
+minutes to make it active.
+In some cases, it gets active within two minutes. So best case scenario, you can wait
+for five or 10 minutes and then you go on to the sign into your console. When you try
+to sign into your console, it will ask you for the email and the password.
+So you add your email ID. One thing to remember, since you're creating it for the first
+time, you have created the account for a root user. So when you're trying to sign into
+your account, you're supposed to choose sign in as a root user.
+Over there, you add your email ID and the password which you have used to create
+the account. After that, you see an interface like this. It's going to look completely
+empty because you haven't used any of the services before.
+It's the first time. So it will look something similar to this. Let me walk you through this
+entire interface so that you can navigate easily.
+
+The first thing is this is your account ID. Always make sure that you copy and save this
+account ID, the email which you have used to create your root user account for this
+AWS cloud and the password. Do not miss these details or try to lose these because
+if you lose these and any service is running, then the bill keeps on coming up and it is
+very complicated to have your account reopened because you do not have such
+features as forget password or those kind of options.
+So be very mindful and save all the details. This account ID, the email ID which you
+used and the password. You either note it down somewhere or you use a Gmail
+account, whichever you're convenient with.
+Just use a secure approach and save these details. Once you get inside your AWS
+account. So just to show you how the everything looks like.
+
+
+
+
+  Page 3 of 3
+
+
+So when you click on this button, you see different services of different categories. So
+if I just had to show you this compute. So you see various compute services involved
+within AWS.
+If you go to all the services, you have the services listed from an alphabetic order. For
+database, we have multiple services that we can work with database. Similarly, we
+have for IOT, ML, many services, we are going to go through most of them through
+the process.
+Specifically, we are going to focus on the important services of AWS throughout this
+programme. Now, once you're now that your account is created, the first thing that
+you're supposed to do is set a budget so that you do not exceed or incur more billing
+unknowingly. For that, you can go to account ID, you select the option billing and cost
+management.
+This is where we are going to set our budget. So on the left hand side, if you scroll
+down, you see something called as budgets. Over here, you click create a budget.
+We can use this default settings, use a template, zero spend budget, since if you don't
+want to spend any money, you just want to practise everything without spending any
+money. You can choose this zero spend budget in case in future when you want to
+when you're working on a project and you want to highlight or showcase something,
+then you can choose this monthly cost budget. Template is going to be the same, it is
+just the questions are going to change a little bit.
+So let's go with this one for now, which is zero spend budget. What we're trying to do
+is we are trying to set an alert whenever zero point zero one dollar is going to be
+charged based on our usage. Right.
+So you give a valid name over here. So this is going to be a default name. You can
+give any unique name to have added bits to this particular default name.
+You can add any of your names like learning, demo, introduction, whichever name
+which you feel valid. You add an email ID over here for which you want to send or get
+the notifications when a threshold is exceeded. So you can add your personal email
+ID over here for notifications.
+After that, you click on create budget. So let's say I'll add some random Gmail ID over
+here. So I click on create budget.
+Now, we have a budget whenever one dollar exceeds based on our usage, this is
+going to turn unhealthy. We are going to have a notification on the email which we
+provided, and we can also see the status frequently. All you have to do is click on
+billing and cost management.
+Then you scroll down, you see something called as budgets. You click on this budget.
+You see your budget plan over here.
+Right. So depending upon your usage, you keep on getting multiple forecast, the
+amount that is being used and everything. You can also download the report if you
+have multiple budgets like this.
+Right. So this is all for today. I'll see you guys in the next practical lab.
+That's all.
+-----------------------------------------------------End------------------------------------------------------

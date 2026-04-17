@@ -1,0 +1,58 @@
+Page 1 of 2
+
+
+Strengths and Positioning Transcript
+In this lesson, we are going to compare the strengths and positioning of AWS, Azure
+and Google Cloud. This is an important mindset shift because these clouds are not
+just competitors, they are different by design. Each cloud was built for a different
+purpose and that history strongly influences where it shines today.
+Let's start with AWS. AWS was the first major public cloud provider. It was created
+because Amazon needed to handle massive traffic spikes, global demand and
+extreme automation for its own business.
+They later turned those internal tools into cloud services. Because of that origin, AWS
+offers a wide range of services in the market and we are going to focus on the AWS
+throughout this complete programme. If you can imagine a cloud use case, AWS
+probably has a service for it.
+This is why AWS is extremely popular with startups and cloud -native companies. It
+allows teams to experiment quickly, scale aggressively and innovate without worrying
+about the infra. A useful way to think about AWS is AWS is like a massive toolbox.
+Whatever problem you are trying to solve, there is likely a tool available and often
+more than one. Now let's move to Microsoft Azure. Azure was built from a very different
+starting point.
+Microsoft already dominated the enterprise world with Windows Server, Active
+Directory, SQL Server and Office. So Azure was designed to help enterprises move
+to the cloud without abandoning their existing systems. That's why Azure is strong in
+hybrid cloud  scenarios.
+It integrates deeply with on -premise environments, identity systems and enterprise
+governance models. Azure is often the natural choice for organizationals like banks,
+governments and enterprises that already rely heavily on Microsoft technologies. So
+a helpful analogy is Azure acts like a bridge.
+It allows companies to cross from traditional data centres into the cloud smoothly
+instead of forcing a sudden jump. Now let's look at Google Cloud Platform. GCP was
+built on the same infrastructure that powers Google Search, YouTube, Gmail and
+Maps.
+So Google's expertise lies in distributed systems, data processing, automation at
+massive scale. Because of this GCP shines in areas like big data analytics, machine
+learning and high performance global networking. If AWS is a toolbox and Azure is a
+bridge, GCP is like a high performance research lab which is elegant, fast and
+optimised for data and intelligence.
+Engineering heavy teams and data -driven organisations often gravitate towards this
+GCP for the same reason. Now here's the most important takeaway from this lesson.
+There is no single best cloud provider.
+
+
+
+
+  Page 2 of 2
+
+
+AWS is best when you need flexibility and breadth. Azure is best when you need
+enterprise integrations and hybrid capabilities. GCP is best when data analytics and
+AI are central to your workload.
+So strong cloud professionals understand this positioning. They don't blindly choose
+a cloud. They match the cloud to the problem.
+In the next lesson, we'll build on this comparison and look at compute services that
+are equivalent across these three cloud platforms. So you can see how similar
+capabilities are delivered differently by each provider.
+
+-------------------------------------------------------End----------------------------------------------------

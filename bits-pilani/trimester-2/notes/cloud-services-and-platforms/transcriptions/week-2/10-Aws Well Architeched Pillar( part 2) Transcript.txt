@@ -1,0 +1,51 @@
+Page 1 of 2
+
+
+Aws Well Architeched Pillar( part 2) Transcript
+In this lesson, we'll cover the final three pillars of well -architected framework.
+Operational excellence, performance efficiency, and sustainability. These pillars focus
+on how cloud systems are operated, optimized, and sustained over time.
+Let's start with operational excellence. Operational excellence is about running
+systems efficiently and improving them continuously. It emphasizes automation over
+manual work because manual processes don't scale and are prone to errors.
+Automation is applied to infrastructure provisioning, backups, or even for recovery. So
+when the systems are automated, teams spend less time fixing the issues and more
+time improving the platform. Another core concept is observability.
+Cloud systems must expose metrics, logs, and traces so the teams can understand
+system behavior in real time. Without observability, troubleshooting becomes more of
+a guesswork. So operational excellence also assumes failures will happen.
+The focus is on fast detection, effective response, and learning through post -incident
+reviews so that the same issue doesn't repeat. Now let's move on to performance
+efficiency. The goal is to focus on using the right resources to meet workload needs,
+not more, not less.
+It's not about maximum performance but appropriate performance. This includes
+selecting the correct compute storage and networking options, stateless services,
+caching, and asynchronous processing. All of these improve performance without
+unnecessary resource usage.
+So performance efficiency also encourages experimentation. Architects test different
+configurations, measure results, and continuously optimize as the workloads evolve.
+Managed services play a bigger role here.
+They often deliver better performance with less operational overhead. Finally, let's look
+at the sustainability pillar focuses on reducing the environmental impact of cloud
+workloads. Over-provisioning and ideal resources consume energy without delivering
+value.
+So efficient architectures, especially auto-scaling and serverless models, these ensure
+resources are used only when needed. A data lifecycle management also matters.
+Archiving or deleting unused data reduces long-time storage waste.
+Sustainability is increasingly important as organizations track carbon impact alongside
+cost and performance. So to summarize, operational excellence ensures systems are
+run and improved effectively. Performance efficiency ensures resources are used
+widely as the systems scale.
+
+
+
+
+
+  Page 2 of 2
+
+
+Sustainability ensures cloud architects are responsible and future ready. Together,
+these three pillars help organizations operate cloud systems efficiently in today's time
+while preparing them for the future.
+
+-----------------------------------------------------End------------------------------------------------------

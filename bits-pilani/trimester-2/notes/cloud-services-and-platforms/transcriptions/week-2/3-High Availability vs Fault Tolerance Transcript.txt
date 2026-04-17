@@ -1,0 +1,61 @@
+Page 1 of 2
+
+
+High Availability vs Fault Tolerance Transcript
+In this lesson, we are going to clearly separate two concepts that are often confused
+in the cloud architecture, high availability and fault tolerance. Both are handling failure,
+but they approach the problem in a different way. Let's start with why this topic matters.
+In distributed cloud systems, failure is not an exception, it is expected. So server
+crashes, networks break, zones go down and services become unavailable. The real
+question is not if failures happen, but how the system responds when it does.
+That's where the high availability and fault tolerance come in. So let's first understand
+high availability. High availability means designing systems so that they are available
+most of the time.
+Failures can still happen, but the system is built to recover quickly and restore the
+service. The key idea behind high availability is simple. Minimize the downtime, even
+if you cannot eliminate it completely.
+High availability systems usually rely on redundancy, meaning more than one instance
+of a component. Then load balancers to distribute the traffic. Next, health checks to
+detect failures.
+Failover mechanisms to redirect traffic in the cloud environment. This often means
+deploying applications across multiple availability zones. If one zone fails, the traffic is
+automatically routed to the remaining healthy zones.
+There may be a short interruption, but service is restored quickly. Now let's contrast
+this with fault tolerance. Fault tolerance takes a much stricter approach.
+Fault tolerance systems are designed to continue operating without interruption, even
+when the components fail. So here failure is absorbed instantly. Users should not
+experience downtime, delays or errors.
+This is achieved by running duplicate components at the same time, synchronizing
+data in the real time, eliminating every single point of failure. So all these are
+something that can be achieved. So fault tolerance usually involves active -active
+architectures where multiple systems are serving traffic simultaneously.
+The goal is zero downtime, which sounds ideal but comes at a cost. Let's compare the
+two clearly. High availability allows brief downtime and focuses on fast recovery.
+Fault tolerance aims for no visible downtime at all. So high availability is moderately
+complex and cost effective. Fault tolerance is extremely complex and expensive as
+well.
+Because of this, high availability is used almost everywhere in the cloud, while fault
+tolerance is reserved for very specific machine critical systems. A simple way to
+remember this is through an analogy. So a high availability is like having a backup
+generator.
+
+
+
+
+  Page 2 of 2
+
+
+The power may go out briefly but it comes back quickly. Fault tolerance is like having
+two power supplies running at the same time. If one fails, the other takes over instantly.
+So in real -world usage, high availability is commonly used for web applications or
+SaaS products, mobile backends and APIs as well. So fault tolerance is used for
+banking or transactional systems, stock exchanges, air traffic control, medical
+monitoring systems and many more. So the key takeaway in this is most cloud systems
+aim for high availability and not full fault tolerance.
+Because full fault tolerance is used only when downtime is completely unacceptable.
+As a cloud architect, the right choice depends on business impact, requirements, cost
+and operational maturity. It is not on chasing the perfection.
+So in the next topic, we'll explore multi -tenancy and understand how cloud systems
+securely serve multiple customers on the shared infrastructure.
+
+-----------------------------------------------------End------------------------------------------------------

@@ -1,0 +1,173 @@
+Page 1 of 4
+
+
+Create IAM Users and Groups Transcript
+In this module, we are going to have a practical point of view of using IAM, Identity
+Access Management. As I mentioned earlier, in AWS, we never give permissions
+directly to the people. We design the identity permissions and the access control very
+carefully.
+Now, what we are going to understand in this particular video is, we are going to learn
+how to create a new IAM user, how to create groups, how to add that particular user
+to a particular group. We are going to work on policies and we are going to log in with
+our actual user that we have created. Now, before we get started, I want to show you
+something which is kind of important when it comes to IAM.
+For AWS, as we have learned earlier, we have a concept called as, all of this that you
+see, United States, Asia Pacific, Canada, Europe, South America. So, there are total
+17 regions and many more are going to be added in the upcoming times. So, each of
+these regions have different subcategories and these are nothing but the availability
+zones.
+So, if you see for United States, we have four availability zones. For Asia Pacific, we
+have Mumbai, Singapore, Seoul, Sydney, Tokyo and for Europe, we have Frankfurt,
+Ireland, London, Paris. So, these are the availability zones and these are the regions.
+A quick tip is, any service used in US East 1 available region which is in Virginia, our
+billing is less when we use in this region because this is the first data centre where
+Amazon has launched and many services are cheaper in this particular region. So,
+this is the reason majority of the projects operate when they want to work on this cloud
+platform. So, that was about regions and availability zone.
+The reason I'm explaining this once again over here is, for IAM, whatever users roles
+and policies we are going to create, they will be applied across all of this. So, it is on
+a global level. It is not specific only to a region or to an availability zone.
+Right. Now, let's get started. So, first thing is, we have to search with IAM at the search
+bar that you see.
+Click on it. This is where we manage our authentication and authorisation. When you
+scroll to this list from the left side, you see various options, groups, users, roles,
+policies.So, we are going to go through all of them. Now, IAM is a global service. It
+controls authentication and authorisation for AWS.
+Every request to AWS is evaluated by a IAM. Right. So, without IAM, nothing begins
+at AWS.Now, let's try to create our first user on our own. So, you click. You see this
+users under the access management section.
+You click on users. So, here this is my user. I myself am not the root user for this
+particular account because the team, the BITS team handles the actual root account.
+
+
+
+
+
+  Page 2 of 4
+
+
+If you guys remember in the previous practical lab, the account which you guys have
+created, that is an actual root account. Right. And this account which I have logged
+into, this is a non -root account, which means I am just a user as part of that root
+account.
+So, you will not see any names like this. Now, if you want to access as a non-root user,
+this is how and where you create your new users. And it is always recommended that
+you never access your AWS account from your root user because so many
+permissions are there when you work at admin level.
+You don't want to corrupt your services or permissions. So, it is always recommended
+that inside your root user account, which you have created, you create your own
+personal user on your name and try to log into your AWS account with your personal
+user, the non-root user. Right.
+Now, let's try to create our first user within IAM. So, you see this option over here at
+the top. Right.You click on create user. Give a meaningful name. Like, let's say, I would
+say student0011 or I would say student12345.
+Right. You can give any name that you want or let's give a meaningful name. Non -
+user.
+Non-root user number one. So, this is the name that I want to give. So, looking at the
+username itself, we should understand that this is not a root user where we could
+manage every single operation.
+Right. So, you can give any name that you want, like a dummy or a duplicate name.
+You have to checkbox this so that this user has a proper access to your console.
+Now, here it is better and recommended to always choose auto-generated password.
+So, it will generate a random combination of small caps, capital letter, symbol and a
+number. Right.
+So, I'll tell you in a bit why that is recommended. So, for now, choose this auto -
+generated password and always use this user must create a new password at next
+sign in. So, this is an option which you can checkbox it or uncheck box it.
+The reason being why this option is provided here, whatever auto-generated password
+that you have, it is a combination of random patterns, probably difficult to remember
+for anyone or whomever you want to provide this user details. So, what you're
+supposed to do is you can checkbox this and whenever user tries to log in using this
+root user name, they will be redirected to change their password to whichever one
+they remember. Right.
+So, that is the reason why we checkbox this so that the moment they log in, they can
+create their own password. Now, after this, we click on next. So, we have three options
+over here.
+
+
+
+
+
+  Page 3 of 4
+
+
+Add user to a group, copy certain permissions or attach a policy directly. So, as of
+now, you would not see any groups over here because you have never created a
+group. Right.
+So, I have already created one group few minutes ago just to verify. So, but in your
+case, you would not see this group. So, what you can do, you can just select attach
+policies directly.
+Now, what type of a user this is? If you want, if you're creating this user for your
+personal benefit, for your usage, you can directly select administrative access so that
+you can do anything within your AWS root account. Right. With this user that you have
+created, you can do anything when you select administrative access.
+So, you can choose any access and click on next. This is a review and create page
+where you can see what is the name you provided, what type of a password is there.
+Does it ask me to reset my password after I log in for the first time? I've chosen yes.And
+these are the permissions that I have. So, I create create user and that's it. My user is
+created.
+This is the URL. This is the username. And this is the password.
+I'm going to display this password. Anyways, I'm going to delete this user after a couple
+of minutes. Now, whenever someone wants to log into this AWS account, they have
+to use this username, this password and this account number.
+Right. The same way how you have logged in after creating your AWS account with
+your email ID and password. Similarly, you're going to use a username and password.
+This time, you are going to log in as a non -root user. So, it will not ask for an email. It
+will only ask you for the username and the password.
+So, these two details would be required to log in as a non -root user. Right. You can
+also download it and save the file or you can take a screenshot, whichever is required.
+This password will automatically change because when the first time when you try to
+access this particular user, it will redirect you to change the password. So, this would
+be of no use. So, it is only going to be helpful for the first time.
+Right. So, we return to the users list. Now, as you can see, I have one more user which
+was created one minute ago.
+Right. So, you can create as many users as you want depending upon your personal
+use case. Now, after this, the next concept comes groups.
+Now, groups are used to provide a particular set of permissions. Like in a team, if there
+are developers, if there are database administrators, there are DevOps engineers,
+there is a cloud team, each of these team members needs to have a different set of
+permissions. Developers can have admin access.
+
+
+
+
+
+  Page 4 of 4
+
+
+DevOps and cloud engineers can have admin access. But the database administrators
+should only have read access. So, you can create multiple groups like this and provide
+a dedicated permissions for that particular group.
+Let's say, I want to create a group called as cloud admins. This is the group where I
+want to provide them each and every permission so that they can make any
+corrections and change the configurations when something goes wrong. Right.
+So, this is the name and out of two users, do I want anyone to be part of this group?
+So, I want this non-root user to be part of this cloud admins. Right. Now, coming to the
+permissions, what type of permissions should people in this group have? So, I can say
+since it is for the admins, I can either choose administrative access where they'll have
+access to each and every service like this.
+So, within admin access, you have a lot of categories. So, as you can see, amplify is
+a service, elastic bean stack is a service. So, try to expand the whole and then
+observe.
+So, this is the actual administrator access. If you want to provide, you can provide this
+one. Next, I click on create user group.
+Now, I have my user group ready which is create admins group and there is only one
+user as part of this group. That user's name is non -root user. What permissions does
+he have? He has administrative permissions.
+Now, no matter how many users I create, if I add them to this group, everyone are
+going to have the same set of permissions that are created specifically for this cloud
+admins group. This is how you can provide a set of permissions directly to a particular
+group. You can also add more permissions from here.
+Let's say there is some kind of a database service like RDS and you want to provide
+only the read-only access. Just because they are cloud admins doesn't mean they can
+delete any database or make any changes. So, you want to restrict their access when
+it comes to the relational databases.
+So, you can provide read-only access so that they don't corrupt anything. So, you click
+on attach policies and now they're going to have this permission also. So, this is how
+you can create a user, add them to a particular group, attach any policy that you want
+from here and the last part left is logging in using your created user.
+So, I've already shown you what would be the name, what would be the password.
+The moment you try to log in through that username and password it will ask you to
+redirect. That's all.
+
+-----------------------------------------------------End------------------------------------------------------

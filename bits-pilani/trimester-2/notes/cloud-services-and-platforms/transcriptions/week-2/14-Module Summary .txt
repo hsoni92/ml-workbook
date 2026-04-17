@@ -1,0 +1,37 @@
+Page 1 of 1
+
+
+Module Summary Transcript
+We covered a tremendous amount of foundational knowledge in this module. And by
+now, you should have a much deeper understanding of not just what runs in the cloud,
+but how the cloud systems are actually designed, optimized, and kept reliable at scale.
+Let's briefly recap what we learned.
+We began by exploring scalability and elasticity. The two pillars that allow applications
+to grow and shrink based on the demand. We discussed high availability versus fault
+tolerance and why these two architectural strategies, although related, serve very
+different purposes.
+We examined multi -tenancy, the architectural model that enables cloud services to
+serve millions of customers on a shared infrastructure. We then looked at reliability,
+learning how redundancy, replication, automated failure, and disaster recovery
+strategies work together to ensure the systems continue functioning even when the
+components fail. From there, we explored performance considerations, like how a
+compute, storage, networking, caching, load balancing, all of this influences the speed
+and responsiveness of your application.
+We also talked about trade -offs because every cloud architecture involves balancing
+latency, cost, and complexity. We learned the six pillars of the well -architected
+framework and then took a deep dive into each pillar, understanding how security,
+reliability, cost, and operational excellence, all of them work together and guide our
+real-world cloud architectures. After that, we explored two major industry frameworks,
+the Azure architecture and the Google cloud architecture framework, giving you a
+multi-cloud perspective and helping you see how different providers approach the
+cloud design.
+Finally, we've wrapped up with universal cross -cloud architecture principles, the
+mindset and best practices that apply across AWS, Azure, Google cloud, and a few
+other cloud platforms as well. Together, these topics form the foundation of how cloud
+architects think, plan, and design the systems that are cost -efficient, secure, and
+performant. Great job completing module 2. In the next module, we will cover selection
+criteria for choosing the right cloud provider based on the business needs and
+introduce some cloud career pathways also, probably some certification options for
+you guys to extend your learning.
+
+--------------------------------------------------------End--------------------------------------------------

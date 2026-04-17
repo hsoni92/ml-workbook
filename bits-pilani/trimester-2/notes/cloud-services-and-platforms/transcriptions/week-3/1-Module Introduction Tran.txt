@@ -1,0 +1,27 @@
+Page 1 of 1
+
+
+Module Introduction Transcript
+Module 3, lesson 0, video 1. Welcome to the module 3, where we zoom out and look
+at the big players in the cloud world. So far, we've talked about cloud concepts and
+architecture principles. Now, it's time to answer a very common and a very practical
+question.
+Why do we even have multiple cloud providers and how are AWS, Azure, GCP actually
+different? At a higher level, all major cloud providers offer the same basic building
+blocks, like compute, storage, databases, security, network. So it's easy to assume
+they're all the same, but in reality, they are similar in capabilities, not in the strengths.
+So think of it like choosing a car.
+Every car helps you travel from one place to another, but some cars are built for long
+highway drives, some for city comfort, and some for performance. Cloud providers act
+in a similar fashion. They all solve the same problem, running applications at scale ,
+but each one is optimised for different types of organisations and workloads.
+In this module, we'll compare AWS, Azure, and GCP side by side. We'll look at how
+their global infrastructure works, how similar services map to each other, where each
+provider shines, and why companies choose one over the other. We'll also connect
+this knowledge to real world cloud careers, so you understand how these platforms
+show up in an actual job role.
+By the end of this module, you won't just recognise cloud service names, you'll
+understand which cloud fits which problem and why. Let's begin by first understanding
+the global footprint of the cloud providers.
+
+-----------------------------------------------------End------------------------------------------------------

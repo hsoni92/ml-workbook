@@ -1,0 +1,62 @@
+Page 1 of 2
+
+
+Performance Considerations in Cloud Transcript
+In this lesson, we are going to talk about performance considerations in cloud
+workloads, one of the most critical responsibilities of a cloud architect. Performance is
+not just another making systems fast, it's about making them consistently responsive
+even as traffic patterns change. At its core, performance answers questions like how
+quickly does the system respond, does it remain stable under the load, and does it
+use resources efficiently while doing so.
+So performance matters because users today have extremely high expectations. So
+if an application feels slow, users will leave. If it becomes unreliable under the peak
+load, trust is lost.
+So in cloud environments, performance problems usually come from architectural
+decisions, not from lack of hardware. So let's break performance down into major
+components. First, compute performance.
+So compute performance depends on choosing the right type of compute for the
+workload. A CPU-heavy task, a memory-heavy task, and GPU workloads all behave
+very differently. Using a large general -purpose instance for a memory -intensive
+workload often results in poor performance and a wasted cost.
+So cloud performance starts with matching the workload to the right compute family.
+When I say compute family, I am referring to the machines, which could be a virtual
+machine. So next is storage performance, one of the most common bottlenecks.
+A storage performance depends on latency, IOPS, and throughput. Object storage is
+excellent for durability and scale, but not for low latency access. Block storage is ideal
+for databases.
+In-memory storage delivers the fastest access, but it is volatile. Using the wrong
+storage type can slow down even the best -designed application. The third area is
+network performance.
+In distributed cloud systems, network latency adds up quickly. Cross -zone or cross -
+region calls introduce delay, and a chatty service will magnify the problem. So a key
+architectural principle is to minimize synchronous network calls and keep related
+services close together.
+Next comes caching and data locality. So caching is one of the most effective ways to
+improve your performance. By storing frequently accessed data closer to the
+application or the user, systems will reduce the load on databases and improve
+response time.
+CDNs, which are also called as content delivery networks, and distributed systems,
+and application-level caching, all of these three are essential tools in high-performance
+cloud design. Finally, load balancing. Load balancers distribute traffic evenly.
+
+
+
+
+  Page 2 of 2
+
+
+It will prevent the hotspots and ensure no single server becomes overwhelmed.
+Probably, load balancing is one of the pillars when it comes to the cloud. Advanced
+routing techniques can also direct users to the closest or fastest backend, improving
+global performance.
+One important clarification before we conclude. Scalability and performance are
+related, but they are not the same. Scalability answers whether a system can grow.
+Performance answers how well it behaves at any point in a time. So a system can
+scale beautifully and still perform poorly. If it's poorly designed.
+So in summary, cloud performance depends on choosing the right compute, using the
+correct storage type, designing efficient network paths, caching intelligently, and
+distributing traffic effectively. So in the next topic, we'll look at architectural trade -offs
+and understand how improving performance often impacts cost, complexity, and
+resilience.
+
+-----------------------------------------------------End------------------------------------------------------

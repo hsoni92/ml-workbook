@@ -1,0 +1,38 @@
+Page 1 of 1
+
+
+Understanding AWS Global Infra Transcript
+In this lesson, we are going to understand where AWS actually runs and why that
+matters for everything you build on AWS. AWS doesn't run from one big data centre.
+Instead, it uses a global infrastructure made up of regions, availability zones, and edge
+locations.And each one plays a very different role. Let's start with AWS regions. So an
+AWS region is a geographical area where AWS has its data centres.
+Each region is completely independent from other regions. That independence is
+intentional. It allows AWS to isolate large -scale failures and meet country -specific
+compliance requirements.
+When you create resources in AWS, the first decision you always make is which region
+to use. That choice affects performance, cost, and even legal compliance. Now, inside
+each region, AWS has something called availability zones or also shortcut as AZs.
+So an availability zone is one or more data centres inside a region. Each AZ has its
+own power, networking, and cooling, and they are physically separated from one
+another. The idea is simple.
+If only one data centre fails, another availability zone in the same region should
+continue running. That's how AWS enables high availability. A very important point
+here is high availability does not happen automatically.
+You must design your application to use multiple availability zones. Let's talk about
+edge locations. Edge locations are placed very close to end users.
+They are mainly used to deliver content faster and reduce the latency. Instead of every
+user request travelling away too far to the region, content is cached and placed at the
+nearest edge location. This is how services like CloudFront make websites and videos
+load faster.
+Here's an easy way to remember all three. I think of AWS like a retail company. A
+region is the main warehouse in a country.
+Availability zones are separate buildings inside that warehouse campus. Edge
+locations are small delivery hubs close to customers. Together, they solve three
+different problems.Regions handle location and compliance. Availability zones handle
+availability and fault tolerance. Edge locations handle speed and performance.
+Understanding this foundation will make everything else in AWS much easier to learn.
+So in the next topic, we'll move from where AWS runs to and how AWS is organised
+internally. We are going to start with accounts, root user, and the billing basics.
+
+------------------------------------------------------End-----------------------------------------------------

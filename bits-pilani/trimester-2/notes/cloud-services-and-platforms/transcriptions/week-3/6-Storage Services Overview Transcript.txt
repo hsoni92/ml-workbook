@@ -1,0 +1,65 @@
+Page 1 of 2
+
+
+Storage Services Overview Transcript
+Let's talk about one of the most fundamental building blocks in cloud computing,
+storage. Almost every cloud workload relies on storage in some form, whether it's a
+website storing images, an application saving user uploads, a data platform collecting
+logs or a backup system preserving some data. So storage is everywhere.
+In the cloud, storage is designed very differently from traditional discs attached to a
+server. Just the way we have our own hard disc for our personal laptops or any
+personal devices, it works in a similar fashion. So understanding cloud storage, first
+cloud storage is decoupled from compute.
+That means your data lives independently of your virtual machines. You can delete
+servers, scale applications or move your workloads and the data remains safe and
+accessible. The most common form of cloud storage across the providers is object
+storage.
+Now what is an object storage? Data is stored as object. Each object contains the
+actual data, a metadata describing the data, a unique identifier unlike traditional file
+systems. Object storage is not mounted like a disc.
+It is accessed using APIs over HTTP request. It scales almost infinitely. This makes it
+perfect for unstructured data like images, videos, documents, backups, etc.
+Let's start with AWS S3. S3 is the oldest and most mature object storage services in
+the cloud world. It is known for extreme durability designed to keep data safe even if
+multiple systems fail.
+So data is stored in buckets and buckets hold objects. So S3 integrates deeply with
+almost every AWS service making it the backbone of many architectures. It's widely
+used for website assets, media storage, data lakes, backup and archives, Azure block
+storage as well.
+It's widely used for website assets, media storage, data lakes, backup and archives
+as well. Next is Azure blob storage. Blob storage follows a similar object storage model
+but it is designed with strong enterprise integration in mind.
+It fits naturally into Microsoft environments and integrates tightly with Active Directory,
+Windows based workloads, enterprise compliance tooling as well. So Azure blob
+storage is commonly used for enterprise document storage, application data, media
+streaming, compliance and backup solutions. Now let's look at Google cloud storage.
+Google cloud storage which is GCS is designed for simplicity and performance. It
+shines in data heavy and analytics driven workload. Google's private global network
+gives it strong performance characteristics especially for large -scale data processing
+and AI workloads.
+It's widely used for big data pipelines, ML data sets, cloud native applications or media
+storage. So all the three providers offer multiple storage tiers. Frequently accessed
+
+
+
+
+  Page 2 of 2
+
+
+data costs are more, infrequent accessed or archived data costs much less but takes
+longer to retrieve.
+Architects use lifecycle policies to automatically move data between these tiers over
+the time. This will help us to balance the cost and performance. A simple analogy,
+think of cloud storage like a massive digital warehouse.
+Frequently used items are close and easy to access. Rarely used items are stored
+farther away. Cheaper but slow to retrieve.
+You don't need to manage the warehouse. The cloud provider will do that for you. The
+key takeaway is S3 buckets, Azure blob storage and Google cloud storages all are
+conceptually very similar.
+The real difference comes from ecosystem integration, performance characteristics,
+enterprise alignment. So object storage is the foundation of modern cloud systems. It
+is scalable, durable and cost efficient.
+In the next topic, we'll move from storage to databases and compare how AWS, Azure
+and GCP approach managed database services.
+
+-----------------------------------------------------End------------------------------------------------------

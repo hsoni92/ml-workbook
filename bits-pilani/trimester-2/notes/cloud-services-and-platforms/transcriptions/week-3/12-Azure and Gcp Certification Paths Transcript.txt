@@ -1,0 +1,58 @@
+Page 1 of 2
+
+
+Azure and Gcp Certification Paths Transcript
+Let's take a quick peek at other options if you're exploring cloud certifications outside
+of AWS. Azure certifications are organised around how professionals actually work,
+whether it is for managing infrastructure, building the applications, working with data,
+and securing your systems. At the entry level, Azure offers fundamental certifications
+such as Azure Fundamentals, Data Fundamentals, and Azure AI Fundamentals.
+These focus on the core cloud concepts, basic services, security principles, and an
+introduction to data and AI. They help you establish a common baseline before moving
+into a role -based learning. The next level is Associate Tier, which is where most
+technical roles begin.
+Here, Azure has certifications aligned with specific responsibilities. For infrastructure
+and operations, there are roles like Azure Administrator Certificate, Network Engineer
+Associate, Security Engineer Associate, and Windows Server Hybrid Administrator .
+For applications and platform-focused roles, Azure offers Azure Developer Associate,
+AI Engineer, and certifications around Virtual Desktop and SAP workloads.
+On the data side, there are associate-level certifications such as Data Engineer, Data
+Scientist, Database Administrator, and Enterprise Data Analyst. Most of these focus
+on analytics, pipelines, and data-driven systems. Moving to the advanced level, Azure
+has expert certifications, which include Solutions Architect Expert, DevOps Expert.
+Most of these rely completely on the designing scalable and cloud architectures.
+Coming to the DevOps, it focusses on automation, CICD, monitoring, and
+collaboration. Some areas also have speciality certifications such as Azure Virtual
+Desktop and SAP on Azure, which is purely meant for professionals working deeply in
+those particular domains.
+Along with AWS and Azure, Google Cloud also offers a well -structured certification
+path that maps closely to your real industry roles. At a foundational level, there are
+certifications like Cloud Digital Leader and Generative AI Leader. These focus mostly
+on understanding the cloud concepts, Google Cloud Services, and how the
+organisations use data and AI to solve their daily business problems.
+So these are meant purely to build conceptual clarity rather than a deep technical
+implementation. The next level is associative level, where the hands -on skills start
+from here. Roles like Associate Cloud Engineer, Google Workspace Administrator,
+and Data  Practitioner, all of these three focus on deploying your resources and
+supporting your cloud operations.
+At a higher level, we have professional certification. These represent advanced role -
+based expertise, something similar to an expert level tier from AWS and Azure. These
+include many roles like Cloud Architect, Database Engineer, Developer, Data
+Engineer, and a few more, as you can see over here at the list.
+
+
+
+
+
+  Page 2 of 2
+
+
+These certifications focus on designing and operating your production -grade systems
+at a global level. You can choose AWS and Azure or even GCP 5 certifications, but
+the real goal is not the batch. The goal is to understand the cloud concepts deeply and
+practise them through one of your personal projects and apply them to the real -world
+problems once you get hired into an organisation.
+That is what the real goal is to understand and make you show all these certification
+paths.
+
+-----------------------------------------------------End------------------------------------------------------

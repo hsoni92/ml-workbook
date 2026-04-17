@@ -1,0 +1,25 @@
+Page 1 of 1
+
+
+IAM Users, Groups & Least Privilege Transcript
+In this lesson, we are going to understand how AWS controls access using IAM users,
+IAM groups, and the principle of least privilege. This topic is extremely important
+because every security issue in AWS eventually comes back to IAM. Let's start with
+the basics.
+IAM stands for Identity and Access Management. Its job is simple. Decide who can
+access AWS and what they are allowed to do.
+Think of IAM like access control in an office building. Not everyone should enter every
+room and not everyone should have the master keys. Now, let's talk about IAM users.
+An IAM user represents a single identity, usually a person or sometimes an
+application. Each user can have login credentials for the AWS account and access
+keys for programmatic access. Since all the AWS services can be accessed via API,
+so we would also need access keys for these programmatic access.
+A very important and a best practise here is one IAM user should represent one real
+identity. Sharing users across a team is risky and should be avoided. Next comes IAM
+groups.
+IAM groups are simply a collection of users. They exist to make permission
+management a little bit easier. Instead of assigning permissions to each user one by
+one, we attach permissions to a group and then add users.
+
+
+------------------------------------------------------End-----------------------------------------------------

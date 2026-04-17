@@ -1,0 +1,37 @@
+Page 1 of 1
+
+
+Cloud Career Roles Transcript
+In this lesson, we are going to talk about cloud career goals. Because learning cloud
+services only makes sense when you understand how they translate into real jobs.
+Many beginners ask, should I become a cloud engineer, a DevOps engineer, or a
+cloud archi tect? Let's break this down clearly.
+Let's start with the cloud engineer. A cloud engineer focusses on building and
+maintaining cloud infrastructure. They work directly with cloud services like compute,
+storage, networking, and security.
+Their day-to-day work includes creating virtual machines, configuring networks, setting
+permissions, monitoring systems, or even troubleshooting any issues. Think of a cloud
+provider like a city utilities engineer. They make sure electricity, water, and roads exist
+and function properly.
+Without them, nothing else can operate. Next comes the DevOps engineer, like
+myself. A DevOps engineer focusses on automation, specifically how code moves
+from development to production smoothly and safely.
+They build CI -CD pipelines, automate deployments, they manage containers, and
+improve systems reliability. If cloud engineers build the city, DevOps engineers build
+the automated factories inside the city, ensuring products move fast, consistently, and
+with minimal human errors. Now, let's talk about the cloud architect.
+A cloud architect designs the overall system. They decide how everything fits together,
+whether it is scalability, security, reliability, and cost. They don't worry about individual
+servers.
+They worry about how the system behaves under load, during failures, and over time.
+So, a cloud architect is like an urban planner. They don't build houses.
+They design how the entire city works together. In real organisations, these roles
+collaborate closely. Cloud engineers build, DevOps engineers automate and operate,
+cloud architects design and guide, and very importantly, many professionals grow
+through these roles over time.
+They start by building systems, then learn automation and reliability, and eventually
+design the architectures. Understanding these roles helps you set clear career goals
+and learn with direction. So, in the next topic, we'll continue exploring how cloud
+platforms support different workloads and organisations.
+
+------------------------------------------------------End-----------------------------------------------------

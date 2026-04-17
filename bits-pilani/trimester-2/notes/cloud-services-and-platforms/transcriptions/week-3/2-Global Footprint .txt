@@ -1,0 +1,58 @@
+Page 1 of 2
+
+
+Global Footprint Transcript
+In this topic, we are going to understand how cloud providers operate at a global
+scale, and why their global footprint is such a big reason cloud computing works so
+well. When we say a cloud provider is global, we are not talking about the internet
+alone. We are talking about physical infrastructure that is spread across the world.
+This global footprint is built using three main building blocks, region, availability zone,
+and edge location. Let's start with regions. A region is a large geographic area where
+a cloud provider operates their infrastructure.
+Think of the regions as a major hubs like Mumbai, Virginia, Frankfurt, or Singapore.
+Regions are physically isolated from one another, and they are designed to operate
+independently. This matters because users closer to a region experience a lower
+latency, and many countries require data to stay within their borders.
+So if you're serving Indian users, hosting your application in a region located in India
+gives you better performance and helps with legal compliance as well. Now inside
+each region, we have something called as availability zones. An availability zone is
+essentially a separate data centre, or sometimes multiple data centres inside a
+single region.
+We're going to refer this availability zone as AZ. So each AZ has its own power
+supply, cooling, and network connectivity. The key idea here is isolation.
+If one AZ goes down due to a power resource or hardware failure, the others remain
+unaffected. This is what allows cloud architects to design systems that stay online,
+even when part of the infrastructure fails. So a helpful way to think about this is a
+region is a city, and availability zones are different buildings in that city.
+If one building has a problem, the entire city doesn't shut down. Now let's move even
+closer to users, which is edge locations. Edge locations are designed to bring cloud
+services closer to where the user actually are.
+They are mainly used to cache and deliver content like images, videos, or any kind
+of static files. Instead of every request travelling to a far away data centre, edge
+locations serve content from nearby locations. This will help us to reduce the latency
+as well.
+This is especially important for things like video streaming, websites, and software
+downloads. You can think of edge locations like a neighbourhood delivery hubs.
+Instead of shipping everything from a central warehouse, items are stored closer to
+the customers for faster delivery.
+Something like a warehouse that we use for Swiggy and Zomato. Now when we
+compare cloud providers at a higher level, all major providers follow the same model.
+Some have more regions.
+
+
+
+
+  Page 2 of 2
+
+
+Some have stronger enterprise presence. Some have extremely fast private
+networks. But the architectural pattern remains the same.
+And this global footprint matters a lot. It affects how fast your application feels, how
+reliable it is, whether you meet compliance requirements, and how well you can
+recover from failures. A good cloud architecture always starts with one simple
+question.
+Where should this application run to best serve its users? Understanding regions,
+availability zones, and edge locations gives you the foundation to answer that
+question correctly.
+
+-----------------------------------------------------End------------------------------------------------------

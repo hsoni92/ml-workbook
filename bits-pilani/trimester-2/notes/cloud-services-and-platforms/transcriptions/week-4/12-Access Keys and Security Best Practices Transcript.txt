@@ -1,0 +1,80 @@
+Page 1 of 2
+
+
+Access Keys and Security Best Practices Transcript
+In this demonstration, we are going to understand what access keys are, where they
+are used, and what is the best practises for this. So access keys are nothing but these
+are certain credentials that can be used when you want your AWS to interact with tools
+and services outside of AWS. Where can you find these access keys? So these are
+related to your user.
+Whenever you go to your user, let's say I'm going to my non-root user, I'm working on
+a project which has an integration with let's say another tool like Terraform, for
+example. So if I want my AWS to interact with Terraform, I need to have something
+called access keys. Access keys are a mode of authorisation or a bridge between my
+AWS and any third -party tool or a service outside of AWS.
+So when you go to the user, you click on security credentials, you scroll down, you
+have the access key. There are two ways to use access key. One is you also have
+something called as CLI, command line interface.
+So if you click on this icon over here, so we use a proper coding approach where we
+can interact with our AWS services. Whatever we have tried to do so far like creating
+a user role or a group, we have done manually. Like we have tried to navigate through
+different options over here.
+We clicked on certain buttons and then we got the outcome. But whatever you have
+done, you can also do it through a command line interface like this using certain
+commands. We have a proper documentation of how to use CLI, what commands to
+frame when you w ant to create, modify or manage a particular AWS service.
+Access keys are going to be used in such scenarios. So every laptop has a proper
+command and interface from a Mac's perspective. If you're using a Windows laptop,
+you have something called as command prompt.
+So from here, you type in multiple commands and you interact with different services.
+From your personal laptop, when you want to access this AWS console from any
+location, you use access keys. That is the purpose of having access keys.
+You can create these access keys for different purposes, whether it is for the CLI, for
+a local code or for any third-party service. Usually, we go with the CLI because CLI is
+the most easier approach preferred by the developers or anyone who works heavily
+with the code. So all you have to do is select the option, check box the requirements,
+click on next, add a proper tag value.
+Let's say you want to maintain different access keys for different services. Let's say
+you want to use GitHub account with your AWS. You can say GitHub keys or give any
+meaningful name and click on create key.So it will generate two types of keys, access
+key and a secret key. So both of these  are required whenever you try to build a
+connection between GitHub and AWS. Now that's a different concept.
+
+
+
+
+  Page 2 of 2
+
+
+How do we integrate these different services as one? That is an entirely different
+concept. But access keys are the mode of communication. They act as a bridge when
+you want two third -party services communicating with each other.
+You can download the CSV file and this will be present only once. You don't get to see
+this again. So either you watch it from here by clicking on show or you download the
+CSV file from here.
+Never ever expose these access keys and secret keys to anyone, not to your fellow
+classmates, not to your friends or family. Having this access key and secret key or
+having access to your user's name and password will definitely lead to a misuse. So
+always keep these details very secure.
+If you feel that these details are compromised, you can always go back and delete
+these access keys. So you have something called as actions over here. You can
+deactivate or delete instantly like this.
+So it is going to ask you to type something in order to confirm the deletion. So it is just
+asking for this key name. So I'll just add that and after deactivating, I can delete it.
+So now I don't have any access keys. So no one could misuse this. So always make
+sure that you delete or clean up any resource that you have created or you think if they
+are compromised.
+This is a very important security lesson because your UPI or your credit card or debit
+card is attached to this AWS account. Whatever billing you're going to get, it is going
+to be auto-debited. So you won't even know until you realise a huge chunk of mone y
+is deducted from your bank account.
+So be very mindful when you work with these account details. Always try to reset or
+try to create a new resource. Even if you have any doubts, just try to delete.
+You go to the users or you can do it from here also. You have multiple options whether
+it is a user or a role. Just select and delete.
+It's going to ask you to confirm. You type in confirm and delete. So making sure your
+account is secured is your responsibility.
+AWS can only take care of making it easy for you. When it comes to managing the
+security, it is your responsibility. That's all.
+
+--------------------------------------------------------End---------------------------------------------------

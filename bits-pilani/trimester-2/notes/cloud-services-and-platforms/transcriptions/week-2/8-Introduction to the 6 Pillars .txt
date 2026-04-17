@@ -1,0 +1,55 @@
+Page 1 of 2
+
+
+Introduction to the 6 Pillars Transcript
+In this lesson, we are going to introduce one of the most important modules in modern
+cloud architecture, the well -architected framework. This framework was originally
+introduced by AWS, but the ideas behind it are universal and widely used across the
+cloud industry. At its core, the well -architected framework is a way to design, review,
+and continuously improve your cloud systems using proven best practices.
+The reason this framework exists is simple. As cloud systems became more complex,
+teams started seeing the same type of failures again and again. Applications worked
+at small scale but broke under growth.
+Security was added late and caused rework. Operational tasks became manual and
+fragile. Costs increased over time without clear visibility.
+So AWS analyzed thousands of real customer workloads and realized that most
+problems were not caused by cloud services failing. They were caused by architectural
+blind spots. The well-architected framework was created to address exactly that.
+The key idea behind the framework is balance. A cloud system cannot be evaluated
+using a single metric like performance or cost. Instead, architecture must be viewed
+across multiple dimensions.
+This is where the pillars come in. Each pillar represents a critical quality of a cloud
+system. If one pillar is weak, the overall architecture becomes fragile.
+For example, a system might be extremely secure but very difficult to operate. Or it
+might be highly performant but far too expensive to sustain. The framework forces
+architects to think holistically, not in isolation.
+There are six pillars in the well-architected framework. Operational excellence, which
+focuses on how systems are operated, monitored and improved over time. Security,
+which focuses on protecting the data, systems and assets.
+Reliability, it focuses on the ability to recover from failures and meet availability
+expectations. Performance efficiency, which focuses on using resources effectively as
+the demand changes. Cost optimization, which again focuses on controlling and
+optimizing the cloud spend.
+And sustainability, this focuses on minimizing environmental impact through efficient
+architecture. Together, these pillars define what it means to build a well -architected
+cloud system. In practice, architects use this framework during architecture reviews or
+for design discussions, migrations and even after the incidents happen.
+So, teams ask structured questions aligned to each pillar to identify the risk and
+prioritize the improvements. This creates a culture of continuous architectural
+improvement rather than one -time design decisions. For you as a leader, this
+framework is extremely important.
+
+
+
+
+  Page 2 of 2
+
+
+It helps you think like a cloud architect. It prepares you for real -world system design
+challenges and it forms the foundation for deeper topics like security architecture,
+reliability engineering, cost governance, operational excellence and many more. In the
+next lesson, we'll go deeper into pillars themselves.
+We'll start with security, reliability and cost optimization. Post that, we'll move on to the
+remaining pillars.
+
+--------------------------------------------------End---------------------------------------------------------

@@ -1,0 +1,50 @@
+Page 1 of 2
+
+
+Multi-tenancy Transcript
+In this lesson, we are going to understand multi -tenancy, a foundational concept
+behind almost every cloud and SaaS platform we use today. Multi-tenancy means that
+a single application and infrastructure serve multiple customers called tenants, while
+keeping each tenant's data and access in an isolated environment. A tenant could be
+an individual user, a company, or an entire organization.
+This approach exists because running a separate application for every customer would
+be extremely expensive and inefficient as well. So multi -tenancy allows cloud
+platforms to share resources, reduce the cost, and scale to millions of users. For multi-
+tenancy to work correctly, three architectural goals must be achieved at the same time.
+The first is isolation. One tenant must never access another tenant's data. Second is
+fair resource usage.
+One tenant should not degrade performance for others. Third, scalability. Tenants
+grow at different rates, and the system must handle that gracefully.
+There are three common multi-tenancy models used in practice. The first is the shared
+everything model, where all the tenants share the same application, database, and the
+data is separated logically. This model is highly scalable and cost effective, but
+requires very careful isolation logic.
+The second module is shared application with separate databases, where the tenants
+share the application but have their own databases.
+This improves isolation and simplifies backup, but it also increases the cost and
+operational effort. The third module is fully isolated tenancy, where each tenancy gets
+a dedicated application and database.
+This provides the strongest isolation and is preferred in regulatory industries, but it is
+most expensive and hardest to scale.
+ A major challenge in multi-tenant systems is the noisy neighbor problem, where one
+tenant consumes excessive resources and affects others. So architects mitigate this
+using codes, which we also call rate limits.
+There is a concept called autoscaling and a tiered service model, which we are going
+to explore in the upcoming modules. So multi -tenancy also introduces security risk.
+Because many tenants share the same system, a single vulnerability can impact
+multiple users.
+This is why strong access controls, encryption, and tenant-aware security checks are
+very critical. So in summary, multi-tenancy is a core architectural decision that directly
+impacts cost, security, scalability, and compliance. Choosing the right model depends
+on business needs.
+
+
+
+
+  Page 2 of 2
+
+
+So in the next lesson, we'll move forward and examine reliability in the cloud
+architecture and understand how systems are designed to survive these failures.
+
+-----------------------------------------------------End-------------------------------------------------

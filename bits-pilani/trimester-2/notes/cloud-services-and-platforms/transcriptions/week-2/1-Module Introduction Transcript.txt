@@ -1,0 +1,25 @@
+Page 1 of 1
+
+
+Module Introduction Transcript
+Module 2, lesson 0, video 1. Welcome to module 2, where we shift from understanding
+what the cloud is to learning how cloud systems are actually designed. This module is
+all about cloud architecture and design principles, the fundamentals that guide every
+high quality cloud system in the real world. In the first module, we build a strong
+foundation.
+Now, we take the next step, which is understanding how cloud architects think, plan,
+and make the decisions. Because cloud isn't just about spinning up virtual machines.
+It's about designing systems that scale smoothly, perform efficiently, survive without
+any failures, and stay secure.
+Throughout this module, we'll dive deep into core cloud architect principles like
+scalability, elasticity, high availability, versus fault tolerance, multi-tenancy, and a few
+more. We'll also explore industry standard frameworks like the AWS architected
+framework, Azure architecture center, and the Google cloud architecture framework.
+All of which will represent decades of real world engineering experience.
+By the end of this module, you'll have the mindset and the vocabulary of a cloud
+architect. You'll understand why certain systems succeed under heavy load while
+others fail. Why some applications scale naturally while others struggle to do that.
+And how companies design the cloud environments that are both resilient and cost
+effective. So with that, let's begin module two.
+
+----------------------------------------------------End-------------------------------------------------------
