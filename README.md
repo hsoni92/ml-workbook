@@ -4,21 +4,27 @@
 
 To run checks on every commit:
 
-1. Install the CLI (pick one):
+1. Install `uv`:
 
    ```bash
-   uv tool install pre-commit
+   # macOS / Linux
+   curl -LsSf https://astral.sh/uv/install.sh | sh
    ```
 
-   Or: `pip install pre-commit`
-
-2. In this repository root, install the Git hook:
+2. In this repository root, run:
 
    ```bash
-   pre-commit install
+   make setup
    ```
 
-Optional: run all hooks on the whole repo once with `pre-commit run --all-files`. See [pre-commit](https://pre-commit.com/) for details.
+This installs project dependencies with `uv sync`, installs `pre-commit`, and configures the Git hook.
+
+Useful commands:
+
+- `make precommit-install` to (re)install the Git hook
+- `make precommit-run` to run all hooks for all files
+
+Every `make` target prechecks that `uv` is installed before running.
 
 ### Secure vault (`secure.yaml`)
 
@@ -35,8 +41,8 @@ python -c 'from cryptography.fernet import Fernet; print(Fernet.generate_key().d
 Encrypt or strip one encryption layer locally. With [uv](https://docs.astral.sh/uv/), run the script directly so dependencies are installed automatically (do not use `uvx python`, which does not add `pyyaml` / `cryptography`):
 
 ```bash
-uv run scripts/secure_vault.py encrypt
-uv run scripts/secure_vault.py decrypt
+make encrypt
+make decrypt
 ```
 
 If those packages are already on your `python`, plain `python scripts/secure_vault.py …` is fine.
