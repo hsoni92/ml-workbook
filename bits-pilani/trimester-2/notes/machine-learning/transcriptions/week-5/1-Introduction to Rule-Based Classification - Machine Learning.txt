@@ -1,0 +1,150 @@
+Hello to all of you. My name is Dr. Himandrathar and we are in the course Machine Learning. Today,
+we are going to start with a new module, Rule-Based Classification. And today's topic is,
+Introduction to Rule-Based Classification. So, the learning objective of this video is,
+we are going to define what do you mean by Rule-Based Classifier and we are going to identify
+the core components of Rule-Based Classifier that is what is Rule-Endecent and what is Rule-Consequate.
+Then we are going to also look into how to evaluate the quality of the rule using coverage and accuracy.
+So, let us start right away. So, we are discussing about classification right now. What do you mean by
+classification? Classification is one of the tasks in Machine Learning where we want to do prediction of
+discrete or categorical labels based for the particular input. So, let us take a very simple
+case which we have been discussing for so long. Assuming someone has given me a tabular data set.
+In Tabular data set, there are some attributes. Attribute 1, attribute 2, attribute 3 and then I have class label.
+Now, in classification, these class labels are discrete and categorical labels. That means there are finite
+number of class labels. Typically, there are 2, 3 and so on. Now, given this sort of a train data I have,
+right, we want to build a model such that given a test data where I have been given values for attribute 1,
+attribute 2 and attribute 3 but I do not know the class label, I can predict the class label.
+So, here I want to build a classification model F such that for this test data I can predict the class label.
+So, there are various use cases for this, right. For example, someone has sent me an email. I want to
+decide whether the email is a spam email or a non-spam email. Another example can be a customer. For a
+customer, we want to predict whether the customer is going to stay on the platform or he is going to leave
+the platform. So, these are classification problems where I am predicting finite or discrete or categorical
+number of values, right, or class labels. So, in this case, the number of class labels are 2. In this case,
+also the number of class labels are 2. Churn, stay, 2 class labels. Spam, non-spam, 2 class labels.
+Now, we saw that we can do this sort of a prediction, right. We can build a model. Let's suppose,
+we build a decision tree model and that is doing prediction of these class labels for us. Now, we can do
+the prediction for using something called rule-based classifier as well. So, this F can be a rule-based
+classifier. So, why rule-based classifier? Because they are one of the most powerful and highly
+interpretable of building the model. So, we are going to see what do you mean by rule-based classifiers as
+they move along. So, just to understand what do you mean by rule-based classifier? So, rule-based
+classifier is essentially a collection of rules, collection of simple rules. How does this rules
+look like? So, rules are written like this. If condition, then conclusion. If the condition holds true,
+then we do the prediction of in the form of conclusion, right. So, whatever is the conclusion, we are going to
+predict that. So, this is the rule, a simple rule we can write. Now, why rule-based classifiers are very
+popular? There are two major rules, right. There are two major reasons. One is they are highly intuitive
+and human readable, right. So, as we look into the rule, we can understand, right, how a rule-based
+classifier is doing a prediction. We can easily understand with the rule-based classifiers. This is just
+beginning. We are going to look into more details as we move along. So, as I said, rule-based classifier
+consists of collection of rules. A simple rule can be, rule one can be, if condition, then conclusion.
+If condition, then conclusion. So, if the condition holds true, if the condition is satisfied, then we say,
+we are going to predict what is written in the conclusion. A simple example can be, let's suppose,
+I have written a rule, if age equals to youth, then by computer equals to yes. Now, let me just dissect
+this. Age is, let's suppose, an attribute one and youth is attribute one's one of the attribute value. So,
+attribute one can have various values. One of the value is youth. Rule one says that,
+if age, which is an attribute is equal to youth, which is one of the attribute values of age, then I'm
+going to do prediction. What is the prediction? So, this is my class label, right, and class label category,
+and then the final class label is yes. So, the rule says that, if age equals to youth, then you are going
+to predict the class label as yes, right. So, this is the name of the class label and they can be multiple
+class labels. For example, here, assuming it's a binary classification problem, by computer is either yes
+or no. So, I am predicting yes. So, if age equals to youth, then this guy is going to buy the computer.
+This is my classification model, rule-based classification model, which is summarized using
+rule one. Let's suppose, I have written rule two, something like this. If age equals to youth and
+student equals to yes, then by computer equals to yes. So, here you can see, instead of just one condition,
+I have two conditions. If age equals to youth, so age is attribute one and youth is one of the attribute
+values of attribute one. Student is another attribute, assuming it is attribute two. So, student is an
+another attribute. Its attribute value is yes. So, I'm saying that now I'm using two attributes to do the
+prediction and here I'm predicting the class label as yes. So, I can use multiple attributes, right, I can combine
+multiple attributes to do the final prediction. Okay. So, as you can understand, if I further want to
+understand how the rule looks like, right, or what is the detail of rules. Rules is essentially condition
+arrow y. If condition, then conclusion. So, this condition is essentially consists of
+attributes. If there is one attribute. If there is one attribute, I can write if age equals to youth, by computer equals to use. Yes. I can use multiple attributes. If age equals to youth and student equals to yes, then by computer. So, I can use multiple attributes here in the condition
+So, if I look into this particular rule. So, if I look into this particular rule or any rule, it has two parts. Any rule has basically two parts. LHS and RHS. So, basically, before arrow or before then, right, if condition, then conclusion. So, before then or before arrow, what we call it as LHS. The if part. And RHS is, then part is RHS. So, when I'm talking about LHS part or if part,
+it is also called as Rule and Descent or Rule P condition. So, this part, right, if age equals to youth is Rule and Descent or Rule P condition. So, if this condition holds true, then we call that Rule is getting triggered and we go to RHS part. If LHS is not holding true, if LHS is false, if age is not
+equal to Rule and not equal to Rule, then the Rule will not be triggered. So, as we are talking about LHS is essentially called as Rule and Descent or Rule P condition. It can compose of one or more conditions, right, and more conditions can be combined, right, based on and, right. So, attribute 1 and attribute 2 and attribute 3 and attribute 4 and so on. This is the way we are going to combine multiple attributes and the corresponding conditions.
+If I look into the RHS part of the Rule, it is called as Consequent or Conclusion. So, this part or this part is called as Rule Consequent or Rule Conclusion. And here, typically, what we write in Rule Conclusion and Consequent, what we write is the class label. So, left-hand side, we have conditions are defined with the help of attribute and attribute values.
+So, RHS part is essentially my class labels, right. So, a simple rule can be of multiple conditions. So, a simple rule can be just when we are checking only one attribute. If age equals to youth, I am checking one, I am using only one attribute. So, then it is called a simple rule. I can have a complex rule where I am checking multiple attributes. If age equals to youth and student equals to A, then it is called a simple rule.
+a complex rule where i am checking multiple attributes if age equals to youth and student
+equals to a then so this is a complex rule in a particular rule i can make it a simple rule or i
+can also make it as a complex rule where i am using multiple attributes to check right or to
+do final prediction of the class label so these multiple attributes can be combined together with
+the help of logical and right so a simple way of saying this is if the condition of the rule and
+descent holds true if age equals to youth then by computer equals to yes so here we are saying that
+if if the condition of the rule and descent if this holds true right the condition is satisfied
+then we are saying that rule is getting triggered if lhs holds true then we are saying that rule
+is getting triggered so if and descent holds true or the and descent is satisfied then rule is covering
+the trouble and rule is getting triggered so once the rule is getting triggered then we can do prediction
+based on the right hand side rhs part of the particular rule now this is the basic detail about the rules but there
+are few more things we need to understand about rules so a classification model or a rule based classifier can have many rules hundreds of rules now how do we check the quality of these rules how do we trust a particular rules so a rule based classifier
+can have many rules rule one rule two rule three rule four and so on there can be tons of rules
+hundreds of rules how do i check what is the quality of the rule right whether it is a good
+quality bad quality how should i trust these rules so for that there are rule performance metrics
+coverage and accuracy so i can define coverage of a rule i can define accuracy of the rule to check
+the quality of a particular rule so a rule might be very accurate but it is applicable it is getting
+triggered for very less number of samples right or a rule is getting triggered for majority of the data
+set majority of the data in the data set but half of the time it is doing wrong prediction right to
+check the quality of the rule the rule performance metrics are coverage and accuracy so let's look
+into what do you mean by coverage and accuracy so rule assessment can be done using coverage and
+let's start with coverage so what do you mean by coverage coverage means how much of the data set
+is covered by the rule right so coverage measures the fraction of tuples in the data set that satisfies
+the rule and descent so basically we are saying if i have a data set assuming it's a tabular data set
+and there are 10 tuples right so i have a training data set there are 10 tuples right
+now i have written rule r1 the coverage of rule r1 means this r1 is getting triggered for how many
+tuples this is what we are measuring with coverage so a coverage of the rule the formula is n cover
+divided by d where n cover is the number of tuples covered by the rule that means lhs hold true
+the rule is getting triggered and d is the number of tuples in the data set they will see a small
+example for example in next couple of slides so coverage is essentially measuring right in the
+data set this rule is applicable to how many tuples what do you mean by accuracy so accuracy is another
+measure to check the quality of the rule so accuracy means if the rule is applied right so if the rule
+is getting triggered in a particular data set how often it is doing correct prediction how often it
+is correct so if you remember as i said rule 1 consists of if condition then conclusion right so when we are
+talking about coverage we are talking about here how many times this is getting triggered accuracy means
+given this is triggered how many times the rule is doing correct prediction accuracy of the rule
+is the measure of how many times a tuple is covered by the rule and it is also doing correct prediction or correct classification so that means their actual class label matches with the rule consequent so accuracy formula is n correct divided by n cover n correct means the number of tuples correctly classified by the rule and n cover is the number of tuples covered by the rule so we want higher accuracy
+accuracy rules right so accuracy of the rule should be high that is what we want to that those are the rules we are looking for so let's take a toy example and understand it better so let's assume that i have this tabular data set there are four attributes attribute 1 which is age attribute 2 which is income attribute 3 which is student attribute 4 which is credit rating and then the last attribute is my class label by computer so if i look into attribute 4 which is credit rating and then the last attribute is my class label by computer so if i look into
+into attribute 1 a1 age right i can see there are multiple attribute values here youth middle age and senior so age has three unique attribute values similarly income again is an attribute with three unique attribute values low medium and high attribute student has two unique attribute values yes and no and there are how many class labels there are two class labels there are two class labels
+class labels now this is or some training data which is given to me and I want to build a
+classification model such that if someone gives me something like this youth low no and fair
+I want a rule based model to do prediction for this particular test case this particular test
+tuple so given this sort of a training data I want to build rules such that I can do prediction in the
+future the number of training data tuples I have is 14 right assuming I have written a rule if age
+equals to youth and by computer equals to yes I want to check the quality of this rule so this data
+set is given to me this rule is given to me now I want to check the quality of this rule if age
+equals to youth then by computer equals to yes I want to check the quality of this rules so how can
+I measure the quality of this rule there are two performance measure one is called coverage another
+one is called accuracy right so let's calculate coverage and accuracy so what do you mean by coverage
+coverage coverage is n cover divided by d right so n cover is for how many tuples this rule is getting
+triggered so this is my rule so I had 14 tuples right now the rule says that if age equals to youth
+right so I want to check whether the rule is getting triggered or not so I look into the condition part
+the l just part of it so there is only one condition if age equals to youth age is my attribute a1 and youth is an attribute value so I want to check for how many tuples this rule is getting triggered so for tuple 1 age equals to youth so for tuple 1 this rule will get triggered whether it will do correct prediction or not
+or not i am not worried about it right now but i want to check for how many rules how
+many tuples this rule is getting triggered so for tuple 1 age equals to youth so for
+tuple 1 this rule will get triggered whether it will do correct prediction or not i am
+not talking about that right now for tuple 2 again age value is attribute value is youth
+so for this tuple also the rule will get triggered for tuple 3 the rule will not get triggered
+because the attribute value is middle age so rule will get triggered for 1 2 tuple 8 tuple 9 and
+tuple 11 so out of 14 tuples the rule is getting triggered for 5 tuples so n cover is 5 the number
+of tuples in my data set is 14 so essentially my coverage of the rule is 35.71 percent so 35 percent
+of the time this rule is getting triggered in the data set so this is what we were measuring in the
+coverage so coverage is n cover divided by d n cover in this case is 5 for this particular rule is 5
+and d is number of tuple which is 14 so the coverage percentage is 35 percent now let's measure the
+accuracy of the accuracy of the accuracy of the accuracy of the rule is n correct divided by n cover so
+assuming the rule is n cover so assuming the rule is getting triggered for how many tuples the rule did correct prediction so for tuple 1 the rule was
+was triggered LHS was triggered now the class label in the data set is no my rule is saying class
+label is yes so in this case for tuple 1 the rule is doing wrong prediction similarly let's talk
+about tuple 2 right the rule is getting triggered the class label essentially here is no the original
+class label is no my rule is predicting yes so the rule is doing wrong prediction right so n
+correct is still 0 n correct is 0 here n correct is 0 here now tuple 8 rule is getting triggered
+the class label is no doesn't match with by consequent so again my n correct is 0. tuple 9
+the rule is getting triggered the class label is yes my original class label in the rule right the
+original class label is yes my rule is saying yes so the rule is triggered and it is doing correct
+prediction right so the data set that says that the class label is yes the rule is also saying the class
+label is yes that means n correct in this case is 1 counter is increased to 1 and for tuple 11 again
+the rule is getting triggered and here you can see that the class label is yes right so here also the rule
+is doing correct prediction so counter is increased to 2 so accuracy is n correct divided by n cover so n correct
+for a particular rule in a particular data set n correct is 2 divided by n cover n cover is 5 so this is 40 percent
+so basically accuracy of the rule so accuracy of this rule is 40 percent that means if the this rule is used to do prediction 100 times only 40 times it is doing correct prediction right so this is the way we measure the quality of the rule we can measure the quality of any rule using coverage in accuracy
+so this is what we discussed in the last slide coverage right so there are so many tuples there are 14 tuples we are checking for how many tuples the rule is getting triggered for 5 tuples and the number of tuples in my data set is 14 so coverage is 5 by 14 which is 35 percent right so this rule applies to just over one third of the tuples in the data set right if you want to measure the accuracy so once lhs is getting triggered
+right for how many tuples right for how many tuples this rule is doing correct prediction so this rule was triggered for 5 tuples right for 5 tuples right for 5 tuples and for 3 tuples it did wrong prediction for 2 tuples it did correct prediction so here you can see that the accuracy of this rule is n correct divided by n cover which is 2 by 5 which is 40 percent so the accuracy of this rule is 40 percent that also means that
+if the rule is if the rule is applied it correctly only predicts 40 percent of the time that is it is less than random coin flip so accuracy of this rule is basically very low so if i want to compare what do you mean by accuracy versus coverage is the percentage of the tuples that are covered by the rule n descend right that means how broad the rule is is what we are measuring with coverage accuracy means out of the tuples covered by the rule which are percentage of the tuples
+which are correctly classified so basically accuracy is used to measure what is the quality of the rule how good the rule is so when the rule is applied how often it is correct is measured with the help of accuracy right so accuracy and coverage are essentially used to measure the quality of a rule high coverage low accuracy means the rule is very general but it is doing majority of the time wrong prediction low coverage and high accuracy reason
+rule means that it is getting triggered it is getting triggered it is getting triggered it is doing correct prediction so in summary in this video we introduced what do you mean by rule based classifier basically their set of if then conditions or rules right and we looked into what do you mean by rule n descent and rule conclusion and we also looked into how to calculate the quality of the rule based on coverage and accuracy we will continue in the next video
+thank you for attending bye

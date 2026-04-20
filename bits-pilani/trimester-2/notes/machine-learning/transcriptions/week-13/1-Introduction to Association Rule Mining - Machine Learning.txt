@@ -1,0 +1,221 @@
+Hello to all of you. My name is Dr. Hemant Rathaur and we are in the course of machine learning. Today we are going to start with a new module, module 13, Association Rule Mining. This video is focusing on introduction to association rule mining.
+So the learning objectives of this video are, first we are going to define what is association rule mining and its objective which is to find co-occurring patterns in the data. We will look into one of the primary applications of association rule mining which is market basket analysis. Then we will look into some other real world business use cases of association rule mining. So let's start right away. So in this course machine learning,
+we have broadly looked into two types of strategies. One is called supervised learning where given a label data set we are doing some sort of prediction. Right. If we are predicting class labels then we are saying it is a classification problem. If we are predicting real world continuous values then we are calling it as regression problem. Later on we started with unsupervised learning. In unsupervised learning
+we are given unlabeled data and the idea is to find pattern structure inside the data. So we started with clustering here. We started with clustering here. We started with clustering here where the idea was to find groups of objects those are similar. Right. So the idea of clustering was to find groups which contain similar objects. On the other hand today we are going to start with association rule mining.
+So we are going to start with clustering. Which is again an unsupervised learning method. Which is again an unsupervised learning method where we need unlabeled data and the idea is to discover relationships between items or variables in a larger data set. Right. So association rule mining is an unsupervised learning technique where the idea is to discover relationships between items or variables in a larger data set. In a huge data set. So for example in clustering the
+So the idea was can we find customers those are similar. So the idea was can we find customers those are similar. So clustering algorithm the basic idea was find groups those are similar. Those items find groups where points are very similar to each other. On the other hand in association rule mining now our aim is what items are frequently purchased together is what we want to identify. Which items are frequently purchased together is what we want to identify with association.
+association rule mining. So think about a problem statement, right? So we all go to supermarket for purchasing our stuff, right? For example, let's assume that you went to D-Mart. Now in D-Mart, they are selling thousands of product, right? Those thousands of product are arranged or organized in sales, right? You purchase, you put some items which you want to purchase in your bucket and then move to the counter, right?
+Similarly, all the customers, whatever they want to buy, they put the item in their bucket, right? And then move to the counter. They get their billing done and then they move out of the mall, right? So at the billing counter, right? This sort of a data set is generated, right? If you look, there are two columns in this data set. One is customer ID or transaction ID. This is my transaction ID and the items which the customer is buying or
+in a particular transaction, the items which were bought. So if you look at this tabular data set, right? In rows, we have transaction IDs and in columns, there are only two columns. One is transaction ID and the second column is the list of items that were bought against a particular transaction ID. For example, against transaction ID 1, milk and bread were bought. Against transaction ID 2,
+bread, bread, diaper, beer and egg were bought and so on, right? So this sort of transactional log is generated at billing counter of any supermarket. Now, this is a huge data set. Think about it. If you have 5000 customers visiting your supermarket every day, then it would have 5000 entries. Typically, in a supermarket, the number of customers or transactions done in a day would be in lakhs, right? In a good big supermarket, right? That
+would be the number. Now this much data is getting generated every day. So given a set
+of these transactions can we find rules such that right we can understand the occurrence
+of one item based on the occurrence of other item. So what we wanted to say here is given
+this sort of a transaction log can I do a pattern analysis and find a pattern which looks
+like this. If a person is buying bread he is 100% going to buy diaper as well. So by looking
+at this transaction log and by analyzing this transaction log I can derive these sort of
+rules. These are called association rules. For example if a customer is buying milk there
+is a 90% chance that he is going to buy bread as well. These sort of rules can be generated
+by looking at the transaction log. So the idea of association rule mining is to mine frequent
+patterns and rule. Please note frequent patterns and rules. Those patterns which are occurring
+very frequently those rules which are occurring very frequently. Right so I do not want to
+generate a rule which happens once in a while. We are focusing on finding or mining or identifying
+patterns and rules which are very frequent in nature. Now this is what we want to achieve
+with association rule mining. Let's look deeper into it. Right. So the idea is to mine frequent
+patterns and rule. Right. For that we are doing association rule mining. Right. We are writing
+the rules means if a happens then there is a chance that b will also happen. Right. And identifying
+association rules is a two step process. The first step is to find the frequent patterns
+in the data set and the second step is to derive associations from frequent patterns. Now this
+is more of a definition we are discussing. We will see lot of examples, numericals around this
+as we move along. Right. So let me repeat the problem statement. Given a set of transaction
+log. Right. We want to find, identify frequent patterns and rules which looks like conditional dependencies. If a happens then there is a chance that b will also happen. If c happens then there is a chance that d would also happen. Something like these. These are association rules which we want to derive from these set of transactions.
+To derive these rules. To derive these rules we follow a two stage process. First we identify what items are frequently bought. Right. So frequent find, frequent patterns and the second is by looking at the patterns we derive association. These are the association rules. Okay. Right. We will come back to this in a while. But let's look at some real world applications of association analysis. So the objective of association analysis is the objective of association analysis.
+is to find usable patterns in co-occurrence of the item. Right. On the other hand. Right. We also looked into. Right. Classification and regression where we were doing some sort of prediction. Association rule mining is not about prediction. It is about finding co-occurrence of two or more items and finding what is the strength of association. Right. So association rule mining is an unsupervised learning method where we want to discover
+hidden pattern in the data in a form of rules. How the rules would look like this? How the rules will look like? Like this. A arrow B. If A happens, there is a 50% chance that B would happen. If C happens, there is a 100% chance that D would happen. Right. So, association rule mining is widely used in various domains like retail analysis of transaction. We saw that. Right. Recommendation engine. Lot of time when you visit a website, you search for a particular product and
+access that page. Similar sort of products will be shown on the right hand side in the advertisement bar. Right. So, recommendation engine. Based on your previous searches, right, the AI engine will predict that, okay, you are most likely to buy these products and those products are listed in the advertisement section. Right. Online click stream analysis also is based on association rule mining. But one of the fundamental sort of most popular examples
+of association rule mining is market basket analysis. Where we want to find co-occurrence of one item with reference to another item which was purchased in a transaction log. Right. Why this is important? Right. Based on if we find this sort of a relationship, I can run various schemes, policies around it. For example, if I find this sort of association, I can do bundle pricing. Right. So, typically, you will find, right, in a mall, right,
+two products are bundled together. Right. Why they are bundled together? Because they must have identified an association between those two products and what they are trying to do is they are going to sort of bundle these products and sell them together. How can they do that? A very simple strategy you would see that if A is bought, then there is a chance that B is bought. If this is the association rule I have identified, what they will typically do, so let's suppose this is milk and this is bread.
+so an association i have identified if milk is bought then there is a 99 chance that bread would
+be bought right so now what will happen if a mall owner is very intelligent what he is going to do
+is he is going to run an advertisement with milk saying that okay we are selling milk at maybe 5
+percent discount right and he will increase the price of bread by 10 percent so this is called
+bundling right so he will advertise saying that my mall is selling milk with five percent discount
+when you come and visit and purchase milk and you also tend to buy bread right this association is
+there right mall owner knows this association so once you pick up a milk packet now you are also
+going to buy bread also but bread price has been increased right by 10 percent so this way the
+mall owner will pull the customer in and then sort of increase the sale product placement right how
+supermarkets are arranged organized is done or supermarket shelf management right all these
+are great example of association rule mining right let's see some real world applications of association
+rule mining now right application one right which is supermarkets shelf management right so we all visit
+supermarkets right like d mart visual mega mart reliance mart right etc etc to purchase our different items
+each of these malls must be selling 1000 product right now to sort of show these product to the customer
+they will purchase racks almeras right and these almeras will be arranged in an order
+now think about as a co of let's suppose reliance you have to sell 1000 items right and you have
+empty shelves right how you are going to organize these 1000 items in the shelf is it in a random
+fashion is it in some sort of name ascending order or is it based on pricing what is the idea so when
+you visit any mall think about it right as a mall owner you have 1000 products to sell how do you
+organize these items in different shelf and so on right so typically you will see that these items
+are organized in a very intelligent way right for example let's suppose this rack is selling chips
+right and there are various levels right typically you will find look at this very carefully when you
+visit a mall next time typically at your eyesight level you will find chips brand which is most
+popular for example lays right so lays will be stuck at your eyesight level right why because when someone
+is walking right in the mall right he or she should be able to quickly identify that this rack contains chips
+packet potato chips packet right so at your eyesight level they will always put the most popular brand right
+where the customer can easily identify that this almira this shelf contain potato chips once they have done that
+just above the most popular brand or below the most popular brand they will stack the local brand or in-house brand for example reliance will have their own potato chips right they will stack it just above and below this most popular brand and reduce the price of their local in-house brand by 2 rupees.
+So India is a very price sensitive market if you say that ok lays are sold for 10 rupees and same quantity is sold for 8 rupees most likely Indian customers are going to buy a cheaper product right so very intelligently they are organizing the items in a shelf.
+So India is a very price sensitive market to buy a cheaper market to buy a cheaper market to buy a cheaper market to buy a cheaper market.
+So India is a very price sensitive market to buy a cheaper market to buy a cheaper market.
+So India is a very price sensitive market to buy a cheaper market to buy a cheaper market.
+So India is a very price sensitive market to buy a cheaper market.
+So India is a very price sensitive market to buy a cheaper market.
+So India is a very price sensitive market to buy a cheaper market.
+So India is a very price sensitive market to buy a cheaper market.
+So India is a very price sensitive market to buy a cheaper market.
+So India is a very price sensitive market to buy a cheaper market.
+So India is a very price sensitive market to buy a cheaper market.
+So India is a very price sensitive market to buy a cheaper market.
+So India is a very price sensitive market to buy a cheaper market.
+So India is a very price sensitive market to buy a cheaper market.
+So India is a very price sensitive market to buy a cheaper market.
+So India is a very price sensitive market to buy a cheaper market.
+So India is a very price sensitive market to buy a cheaper market.
+So India is a very price sensitive market to buy a cheaper market.
+So India is a very price sensitive market to buy a cheaper market.
+So India is a very price sensitive market to buy a cheaper market.
+So India is a very price sensitive market to buy a cheaper market.
+So India is a very price sensitive market to buy a cheaper market.
+So India is a very price sensitive market to buy a cheaper market.
+So India is a very price sensitive market to buy a cheaper market.
+So India is a very price sensitive market to buy a cheaper market.
+So India is a very price sensitive market to buy a cheaper market market.
+when he or she walks in right they can easily identify milk, pick up milk packet and in the nearby sort of almira they can find bread packet, they can put both of them in the basket, get the billing done and move out of the mall.
+So very intelligently they can arrange these, organize these almirahs right or items inside the almirahs so that customer experience is improved. So as a mall owner if I am owner of reliance mega mart right what would be the two or three objectives I would have. One is my sales my profit should be high right as a owner of reliance mega mart first aim would be to have some ex profit that is one.
+Second is to have good customer experience because customer is going to come next time only when the customer experience previous times have been good right so good customer experience good profit and then only your mall would be successful otherwise people will not come to your mall.
+So supermarket shelf management is essentially driven by association rule discovery only if you are selling thousands of product right they are not organized in a random fashion.
+For example have you seen any mall where items are organized based on maybe alphabetical order so items with name A comes first with name B can come second with name C can come in third shelf have you seen that no right because that is not a good way to present items or sort of products to a customer right.
+It is based on a customer it is based on association rules so we want to identify the items which are bought sort of together sufficiently by large number of customers how can we find out we look at the sort of a transactional log and through that we can find that these two products are associated so I can put them near to each other and there can be various other strategies right and so on.
+There is a very popular study and there is a very popular study and very sort of sometimes we call it as a hilarious study right which was done in supermarket shelf management right so this is a US study where right a man was sort of asked to buy a pair of diapers by his wife right when he was driving from work to home right.
+Now he visits a mall right now he visits a mall right as grocery retail grocery store right now that grocery store has got a transaction log and they analyze the transactional log.
+So what they found was amazing they found that men between 30 to 40 year old right of age shopping between 5 to 7 pm on Friday if they are buying diaper they are also buying the beer as well.
+So diaper sales lead to beer sales if you just look at this association rule right this doesn't make sense at all right this if you just look at the association rule diaper leads to the sale of beer right.
+What kind of association rule it be right it doesn't make any sense but if you look it into the context right typically in US Friday is a game night right Friday is a game night.
+So there we have right rugby is very popular and Friday is a game night right Friday evening is a game night.
+So what they are trying to point out is what they found is typically men with who are young right around 30 40 years old which have who have very small kids will go to the mall to buy a diaper to sort of take care of their children and simultaneously they will also buy beer for their game night right for their to enjoy their match right.
+So this is a great association they have found right very weird if you just look at the association rule but if you look into a broader context it makes a lot of sense right.
+Association rule minding can be used for marketing and sales promotion right for example at various places you will find this sort of association.
+Samosa tastes better with coke this sort of association.
+So here samosa is innocent coke is consequent and they have built an association here.
+Samosa tastes better with coke.
+So whenever you are purchasing samosa right and if you think that you want to drink anything right the first thing that will come to your mind is can I have a coke right.
+So this association they have built in your head by sort of marketing which is samosa tastes better with coke right.
+So this sort of association also you might see at various places right.
+These tag lines thanda matlab coca cola right very good association they have built in your head right.
+Thanda matlab coca cola so whenever you feel thirsty the first thing that will come into your mind right first thing which you want to drink and will come to your mind is coca cola right.
+So thanda matlab coca cola right.
+So if you are thirsty you can drink n number of items right you can drink water you can drink xyz right.
+But because of this association this tag line which is built in your head right.
+Now the first thing first product which will come to your mind whenever you are thirsty is can I have a coke right.
+Or dar ke aage jeet hai right.
+Dar and jeet.
+Dar ke aage jeet hai right.
+So dar is a feeling and they have associated mountain dew with the dar feeling right.
+So these type of association right they have built through the marketing strategy.
+So this is a great example of association rule mining.
+Think about right if you are sort of CEO of LG right.
+LG washing machine division right.
+So LG sort of build washing machine in this country and then they sell the washing machine throughout the country right.
+Of course to sort of have good customer experience right they will have service centers.
+So if the product is going bad they have service centers to sort of handle those cases and these service centers are lying across the country.
+Now think about it.
+A washing machine has many components right.
+Now I have service centers maybe 500 service centers throughout the country.
+So assuming my washing machine has let suppose 1000 components.
+So one way is how do I organize how do I arrange how do I make sure that the spares are available in all the service centers.
+Right how can I do that.
+So one way is very dumb way is right.
+All 1000 sort of components should be placed in sufficient quantity in all the service centers.
+But that would be a logistic nightmare think about it right.
+All the products doesn't go bad all the time and they are dependent on various factors.
+For example in Goa right humidity level is very high.
+So the product electronics product right tends to go bad very frequently.
+On the other hand in central India if you go right there is a problem of hard water.
+That means water has lot of calcium and magnesium component to it right.
+And because of that the filter inside washing machine goes bad.
+Right.
+So in Goa it is making much more sense to stock additional electronics component which are going bad.
+And in central India it makes lot of sense to have additional stock of let suppose filters.
+So this sort of association if I can find I can sort of organize my inventory or plan my inventory throughout the country.
+So these sort of associations if I can find right.
+For example in Goa electronics items are going bad.
+In central India let suppose maybe Indore right.
+The filter is going bad right.
+In Ghaziabad again the filter is going bad.
+There can be various other association I can find.
+So then once I know these sort of association I can plan my inventory in that fashion.
+So there are other applications as well where association rule mining is very popular like topic identification.
+So lot of time when you are sort of typing on Microsoft word.
+My name is and you have not sort of completed the sentence but in blur it will come sort of it will tell okay my name is Hemant.
+Right.
+So they can predict that okay this word is associated.
+This association was there found earlier.
+So most likely the customer is going to sort of use this word.
+So you will type my name is and automatically Hemant will come.
+Right.
+So this is association which was found earlier and based on that it is showing okay my name is Hemant.
+It is used sometimes in time series analysis as well.
+So but there are couple of very famous terminology used in association rule mining.
+One is called frequent item set.
+So first let's break this term frequent item set.
+First what is item set?
+A collection of item is called item set.
+If the item set is very frequently bought then it is called frequent item set.
+For example milk and bread were bought very frequently.
+So milk and bread are item set.
+Since they have bought very frequently that becomes frequent item set.
+Similarly we can have frequent subsequence.
+PC if someone has bought a computer he is also going to buy OS.
+If he has bought OS he is also going to buy antivirus.
+Sub sequence.
+Frequent subsequence.
+Right.
+So they have identified a sequence.
+A part of a sequence which is very frequent is called frequent subsequence.
+Then we can have frequent substructure.
+So let's suppose I have a tree and a part of the tree is frequent.
+Then it is called frequent substructure.
+Right.
+So association rule mining why we want to do that?
+It can be helpful for sort of finding associations.
+It can help us in finding interesting relationship between the data.
+So market basket analysis is one of the most popular application of association rule mining.
+This we have already discussed.
+So essentially what we are talking about is looking inside the basket of a customer standing in a supermarket.
+So this customer, customers basket contain milk, bread and cereal.
+This customers basket contain egg and sugar.
+By looking at the basket.
+Right.
+Looking at the basket is more of abstract term.
+By looking at the basket.
+Can I predict how the basket would look for other customers as well.
+Right.
+So there is no prediction essentially.
+But we are trying to find associations.
+So if A is bought.
+Then I know that customer will also buy B as well.
+If C is bought.
+And I know that this association.
+So D will also be put into the bucket.
+Right.
+So we are actually peaking inside the basket of customers.
+So that we can identify association rules.
+Right.
+This can be used for selective marketing, supermarket shelf management etc. etc.
+So therefore in this video we talked about association rule mining which is an unsupervised learning method.
+Which the aim is to find discover hidden relationship between items in a data set.
+Market basket analysis is one of the most popular application of association rule mining.
+And it can be used for product placement strategy, inventory management etc. etc.
+We will continue in the next class as well.
+Take care.
+Bye bye.
+you

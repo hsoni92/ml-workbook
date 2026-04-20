@@ -1,0 +1,99 @@
+Hello to all of you. My name is Dr. Hemad Rathar and we are in the course Machine Learning. Today we are going to start with a new module which is clustering. So today's topic is introduction to clustering.
+The learning objective of this video is we will first define what is clustering in the context of unsupervised learning. We will differentiate between supervised learning and unsupervised learning. We will look into various real world applications of clustering and then we will look into the fundamental concept of similarity in clustering. So let's start right away.
+So what is clustering? What is the basic definition of clustering? In clustering we are given a set of data points. What we want to do? We want to find clusters and groups such that data points in one group are more similar to each other. So inside a cluster the points should be homogeneous. Very similar to each other.
+Data points in separate clusters or group should be less similar to each other. So the idea of clustering is given a set of points like this you have two dimensional data let's suppose x and y and these dots black dots are let's suppose my data points. The idea of clustering is can we group these points based on similarity?
+Now it might have many groups inside one group similar items or similar objects should be put between groups this similar item should be there. For example in this case right I see this as one group one cluster this as another cluster and this as another cluster. So let's call it cluster A or cluster 1 cluster 2 and cluster 3.
+So idea of any clustering algorithm is given a set of data points can we identify groups such that similar points come under one group dissimilar points. So these are very far dissimilar points come into two different groups dissimilar points come under different groups.
+So that would be the aim of any clustering algorithm. So that would be the aim of any clustering algorithm. The core idea will always to find natural groups in the data set. So the aim of any clustering algorithm would be to find natural groups in the data. We will look into this term again and again because this is extremely hard to implement.
+So when I run a clustering algorithm. So when I run a clustering algorithm on this data set I get cluster A, cluster B and cluster C. I have few other points as well like these which doesn't belong to any clusters. We are calling them as outlier that means they are not similar to any point in the cluster either cluster A, cluster B or cluster C because they are very far.
+So the idea of clustering is given a clustering. So the idea of clustering is given a set of data points. We want to group the data points such that similar data points come under one group that means the group is homogenous and data points in separate clusters are very less similar to each other.
+So any clustering algorithm will focus on two things. So any clustering algorithm will focus on two things. High intracluster similarity. That means inside one cluster there should be high similarity. The similarity between points should be high. So intracluster similarity should be maximized.
+So I want to find groups such that inside one group if I am taking two points the similarity can be maximized. And intercluster similarity should be minimized. Between two clusters the similarity should be minimized. So that would be the aim of any clustering algorithm which is to find clusters such that there is high intercluster similarity. That means points within a cluster should be very similar to each other.
+So that means points in different clusters are similar to each other and low intercluster similarity. That means points in different clusters are very different. Right.
+Idea as I said again. Right. I am saying again. The clustering algorithm focuses on finding natural groups in the data. Now clustering is part of unsupervised learning. So we are in the course machine learning. Machine learning is broadly divided into two categories. Supervised learning and unsupervised learning.
+Right. There are some other categories which we are not considering in this course. In supervised learning we already discussed classification and regression. Now we are starting with unsupervised learning. So unsupervised learning there can be many methods in unsupervised learning. One is called clustering which we are discussing which we are starting today. And then we have association.
+So clustering is part of unsupervised learning. So clustering is part of unsupervised learning. Right. That means we do not have any class label in clustering. We do not have any class label. What we have is the data. That means I have features and the corresponding values. That's it. We do not have class label or answer key. And the idea of any clustering algorithm is to find inherent similarity patterns in the data.
+So let's compare what we have to find out. So let's compare what we have to find out. So let's compare what is supervised learning versus unsupervised learning. In supervised learning what we have been discussing in the past. The idea of any algorithm was to discover discriminatory pattern. So that we can separate the classes. So let's suppose I have this sort of a problem statement.
+Where I have binary classification. Right. I want to build a model that can separate the classes. Right. Separate the cross classes from the circle class. Right. For example.
+An example of supervised learning would be spam detection. Right. There are two classes. Spam and non-spam. And I want to build a classification boundary between these two classes so that I can separate them. Right. Supervised learning algorithms need label data. Class labels. On the other hand in unsupervised learning.
+I do not have class labels, what I have is just the data points. What I want to achieve is to find
+inherit pattern in this data. So one pattern is this look like one group, this look like another
+group and this look like another group. So the unsupervised learning algorithm will focus on
+identifying these groups. Right? So the goal of any unsupervised learning algorithm is to discover
+the inherent pattern within the data itself without knowing the class label or the target. An example of
+unsupervised learning algorithm would be customer segmentation based on the purchase behavior. So in
+unsupervised learning we do not need labeled data. Unlabeled data is sufficient to identify
+inherent pattern in the data. Now let's quickly compare classification versus clustering. Right? So
+classification is what we have studied in the past. Classification is one of the supervised learning
+algorithm. Right? Where we need training data. Right? Where we need training data and we need the class
+label. Right? And based on the training data and the corresponding class label we build a classification
+model. On the other hand in clustering it is an unsupervised learning method. In clustering we do
+not need any training data. We want just the data without the class label. Right? So we do not have class labels here
+as well. The aim of any clustering algorithm is to do statistical computation for similarity measurement. Right? So we do a lot of similarity computation based on statistics in the clustering algorithms. Or clustering algorithm will do that. Now clustering is extremely hard problem. And let me try to explain you why clustering is extremely hard. Let's talk about our college, Bitz Goa. Now,
+let's suppose this is student 1. This is student 2. This is student 3. This is student 4. And this is student 5. Right? So I have many students. I have just listed 5 students here. Now I ask a very simple question. Can we group these students? This is the problem statement. So what we want here is when we group these students inside one group similar student should be put between two different groups. Right? The student should be very dissimilar. Right? So one group
+student here. One student here. One student in a different group. The student should be very dissimilar. Right? So how I can do that? So if these are 5 students I can group them maybe based on department. Which department they belong to? For example this guy belong to CS. This guy also belong to CS. This guy belong to EE. This also belong to EE. This also belong to EE. And this also belong to let's suppose this belong to mechanical. Now
+So now I have one property that means I have student data and I know that one of the characteristics of student is what is the department he is enrolled in.
+Now let's suppose I want to group the students based on department. So in that case these two students will come under one group, these two students will come under another group and the student would be a separate group.
+So if I group the students based on department, these will be the different groups that would be formed. But that is not the only way. I can group these students based on their gender. Same student, student 1, 2, 3, 4, 5, I can group them based on gender. For example,
+let's do that. So this guy is male, this is female, male, male and this is male. Right? Or let's suppose this is also male and this is female.
+Now, so I have one female and four males. If I run clustering algorithm now, the clustering algorithm should group these four students as one group and this one as a separate group.
+So same data based on my requirement should be able to group data points properly. I can also group them based on hostel number. In that case, I might find very different group. I can also group them based on their year. Right? So whether they are enrolled in year 1, year 2, year 3, year 4 and so on.
+So same students, right? These same students will fall under different groups based on what sort of similarity I am looking for. If I am looking for department level similarity, I might find different groups. If I am looking for gender level similarity, it might be very different group. Same student, very different group. If you want to look into similarity based on hostel number, it might be very different group.
+So, one of the things in clustering is at what level or at what is the aim of finding similarity here. So we have to sometimes define on what parameter we want to find similarity. We will see this in much more detail as we move along.
+So this is a great example of clustering. So think about it. If you look at these two figures, these two pictures. You might smile, but look carefully. There is some sense of similarity between these two pictures. At the same time, there is some sense of dissimilarity between these two pictures. What is the sense of similarity? If you look at the structure.
+Right? The structure, the structure, the facial structure looks very same, right? In these two figures. On the other hand, if you look, one is dog, one is female. Right? So there is some sense of similarity. At the same point, there is some sense of dissimilarity. Similar to what I said earlier. Right? These two students at one point might be very similar based on department and might be very dissimilar based on gender. Yeah?
+Similarly, these two pictures. Similarly, these two pictures. Right? At one point, you will see that you can find out that these two pictures are very similar. At another point, these are very dissimilar as well. Right? Now clustering has various applications. Right? Clustering can be applied across various domains. For example, in marketing, in biology, in document analysis, in image processing, in social network analysis. Let's see a few of them in next few slides.
+So let's start with one of the applications of clustering, which is document clustering. Right? This we have discussed in the past as well. The very good example is Google News. Right? What was the problem statement? I have 1000 news articles. Right? I want to show these news articles to the customer in a more organized fashion. How I can do that?
+I can group these news articles. Right? I can group these news articles into groups such that similar news articles come under one group. Dissimilar news articles come under different groups. Right? And that is what exactly Google News will do. Right? So if I have 1000 news articles, I cannot directly apply...
+machine learning on it. What we need to do is convert these news articles into a term vector or frequency vector. Right? So we discussed that in data preprocessing course as well. Right? I can convert these documents into a term vector. Right? Where in rows, I have news articles. So news article 1 is represented by row 1. News article 2 is represented by row 2. News article 3 is represented by row 3.
+In columns, I can put the frequency of the columns. In columns, I can put the frequency of important words. So word 1, what is the frequency? Word 2, what is the frequency? Word 3, what is the frequency? Word 4, what is the frequency? And so on. Right? And then I can run clustering algorithm. That means if I can find similarity between n1 and n2. And the similarity is, let's suppose, 1. That means n1 and n2 are exactly same.
+If the similarity is 0.9 I can say they are very similar. If the similarity between n1 and n2 is 0 that means they are very dissimilar. That also says that none of the words which is there in n1 is also present in n2. Right. So clustering has huge application. One of the application is document clustering. Google news is exactly doing that. Maybe plagiarism also in plagiarism detection techniques also sometimes use document clustering. Right. So given a set of documents like news articles.
+Right. We want to find similar news articles and put them into one bucket. The idea is. Right. We will convert these news articles into term vector or frequency vector and based on clustering algorithm we can group them. Right. This is a very good example of clustering. Real world application of clustering. Another application of clustering. Customer segmentation. Right. So think about a problem statement. Right. Amazon has let's suppose 1 lakh customers on their platform.
+Now they want to group customers in such a fashion that if right they have a new product and they can identify the target group and then they can only market it to those people. For example let's suppose I am just projecting those customers in a two dimensional space. This might be an n dimensional space but let's assume for now customers are represented in a two dimensional space. On x axis I have their income and on y axis I have their annual spending.
+So this guy right. So this guy is earning roughly like 100k and is spending roughly like 100k only. Right. Similar to like this. This guy is earning 420 or 430k and this guy is spending. Same guy is spending.
+60k right so I can so all these points are my customers can I group these customers such that
+right similar customer come under one group so I can see that this look like one group
+this look like another group this look like another group this look like another group
+I can make this group better like this so I can see four five groups here right essentially I can
+see four groups here now as you can see that this group is essentially high income this group or let's
+call it c1 c2 c3 and c4 if you look into c3 group most of the customers are earning very high and also
+spending very high right that is as group c3 on the other hand if you look into group c4 most of the
+customers are earning high but spending less let's look into group c1 they're earning low but they're
+spending also but they're spending high and so on so this is a pattern I'm able to find when I run the
+clustering algorithm so most probably if I am launching an iPhone I will launch for to this customer because
+they are earning very high they're spending very high and so on so the idea here is can we divide the market
+into subset of customers so that we can target specific marketing mix right so in this case I have projected customer in a two-dimensional space right and then was able to find few groups and these groups can be formed based on the spending and earning maybe financial other behaviors and etc etc.
+so market segmentation what we are discussing what we will do is we will collect customer data amazon will collect customer data like salary
+spending lifestyle what is what is the purchase history and then we'll try to group the customers based on similarity so similar cluster customers should go in one group and this similar customer should go in different groups and then we can find various patterns from it.
+So as we are discussing clustering has various applications in various domains for example in organizing compute cluster in market segmentation we already saw it is used clustering is used in search engines in telecommunication in astronomy right sometimes clustering is also used to help other machine learning algorithms.
+For example sometimes clustering can be used to find the class labels right so the clusters which we have identified right we can say that one cluster is label A another cluster is label B another cluster is label C. In some domains sometimes right clustering is used to identify class labels or to label the data.
+Clustering can also be used to identify class labels or to label the data.
+Clustering can also be used for data and dimensionality reduction.
+Clustering can also be used for data and dimensionality reduction.
+Think about it.
+Cluster sampling.
+We have discussed a method called cluster sampling.
+Cluster sampling is a data reduction method.
+Right.
+So clustering has application is huge amount of domains from real world to helping other machine learning algorithms.
+Towards the end let me repeat again.
+The idea of clustering is always to find natural groups in the data.
+Right.
+When I say groups.
+Right.
+Groups should be such that inside group there should be high similarity.
+The group should be homogeneous.
+Right.
+Between groups there should be less similarity.
+So if I take a point here from this group another point from this group these two points should be very dissimilar.
+Right.
+They should not be similar.
+They should be dissimilar.
+So finally in this video we looked into the basic idea of clustering.
+We looked into the goal of clustering which is to achieve high intracluster similarity and low intercluster similarity.
+We looked into various applications of clustering like market segmentation, document analysis and so on.
+And we looked into how clustering and classification are very different from each other.
+We will continue on this topic.
+Thank you for attending.
+Take care.
+Bye-bye.

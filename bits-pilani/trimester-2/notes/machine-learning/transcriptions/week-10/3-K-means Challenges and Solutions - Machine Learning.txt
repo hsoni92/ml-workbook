@@ -1,0 +1,93 @@
+Hello to all of you. My name is Dr. Hemant Rathaur and we are in the course Machine Learning. We are discussing Module 10, K-Means Clustering Algorithm. Today we are going to discuss challenges in K-Means Clustering Algorithm and the corresponding solutions to it.
+So let's discuss the learning objective. We will first start with what are the challenges in terms of random initialization in K-Means Clustering Algorithm and the corresponding solutions to it. Then we will look into limitations of K-Means Clustering Algorithm because of varying sizes, density and shape in K-Means Clustering Algorithm etc. etc. So let's start right away.
+So what are the key challenges in K-Means Clustering Algorithm? So K-Means is of course very powerful, effective and efficient Clustering Algorithm in various real world scenarios. But it has various challenges and the limitations. Those we are going to discuss in this video. So let's start with the challenges.
+The first challenge or issue in K-Means Clustering Algorithm is it suffers heavily because of random initialization of centroid. Because of random initialization of centroid, we cannot guarantee global optima and my Clustering Algorithm might give me suboptimum solutions.
+The second issue in K-Means Clustering Algorithm is sometimes K-Means Clustering Algorithm might give me empty clusters and then we have to handle that properly. I will show you an example why it might happen. And the third issue or challenge in K-Means Clustering Algorithm is its inherent limitation in terms of handling clusters of varying sizes, density, shape or sensitivity towards outlier.
+So let's discuss each of these in detail in this video. So let's start with challenge 1 in K-Means Clustering Algorithm which is initialization problem. We saw in the last video that K-Means Clustering Algorithm optimizes sum of square error. It tries to do it in a greedy fashion and because of that Clustering Algorithm might get stuck in local optimum solution. It does not guarantee global optima.
+So let's start with challenge 2 in K-Means Clustering Algorithm. And this is happening because of one major reason which is random initialization of centroid.
+So poor initialization of centroid in the last video we saw might give me suboptimal solution. It will not give me any error. K-Means will not give me any error because of poor initialization of centroid. It will give me suboptimum solutions.
+So this is the example we saw. Right. This is the example we saw. Right. So if I ask you if this is the dataset. If I ask you how many natural clusters.
+1, 2 and 3 and any good Crustering Algorithm including K-Means should identify these 3 natural clusters in the dataset. However, if I poorly initialize the centroid in K-Means it might give me these clusters.
+So this is suboptimum clustering solution by K-Means. One of the reasons this is happening is poor initialization of centroid and second is K-Means is a greedy strategy.
+So we can handle greedy strategy. We cannot handle because this is how the algorithm was designed. But can we handle poor start problem? Random initialization problem? Right. Or poor random initialization problem? Yes we can handle it. Right. And potential solution to poor initial centroid location is do not rely on initial start single random start. That means please run K-Means 10 to 50 times. Right. So this is the solution.
+to poor initial centroid location is do not rely on initial start single random start that means
+please run k-means 10 to 50 times right just run k-means clustering algorithm not iteration i'm
+not talking about iteration just run k-means clustering algorithm 10 to 50 times right so
+once you run k-means clustering algorithm with some new random initialization points
+right it will give you some clusters you run k-means first time with some initial random
+initialization points it will give you some ssc value right just note it down so run one
+right what is the ssc value right suppose ssc value total ssc value is five okay right then you run
+run k-means again with run two right with different random initializations
+and get a total ssc value it might give you ssc value equals to six run three
+so why this is happening because of right two reasons one is k-means is greedy second is random
+initialization of centroid so random initialization of centroid if i repeat again and again with
+different seeds or different initializations it will give me different ssc value right so out of
+these three runs r1 r2 r3 right r3 gave me the least ssc value that would be my final solution so select the
+clustering result that give you lowest ssc value as the final model final solution and this will
+significantly decrease the chance of finding poor solution and it will give you increase the chance
+of finding good or optimum solution right so simple thing is how do you handle random initialization problem run k-means
+with multiple times with different seeds different initial centroids and note down ssc value for each
+you run the solution which gave you the least ssc value is the most optimum solution you can find
+in that case or the second solution is something called k means plus plus right and which is
+implemented in sklan as well right so instead of this solution says that instead of purely randomly
+initializing centroid can we do initialization of centroid in a more smarter way brings bring some
+logic to it so instead of randomly initializing the centroid can we build a smarter way of
+initializing the centroid so in k means plus plus right which is a variant of k means only right
+variant of k means the initial initialization of random initialization of centroid is replaced by
+complementing or finding running a algorithm before k means to find the centroid right so before you
+start running k means clustering algorithm in the first step which is random initialization of centroid
+instead of randomly initializing the centroid take help of any other clustering algorithm to find the
+proper centroid and that increases the chances of finding better or good solution right avoids the chances of poor solutions or so k means plus plus take help of other clustering algorithm to choose the initial centroid locations and that you can look into the literature as well there are other ways as well for example other way of smartly choosing the initial centroid is right take centroid as far as possible right this is one solution not the
+do not guarantee but it often gives you better solutions there are other solutions there are other solutions also to fix this problem right initial centroid problem the second challenge in k means clustering algorithm is handling empty clusters again this is happening
+right now this is the data set i pass these data points with k equals to 2 to k means clustering algorithm now one centroid was initialized here one centroid was initialized here
+right it gave me this cluster and this cluster my cluster my cluster mu1 or c1 and this is c2 is an empty cluster this can happen right this can happen very often so right because of poor centroid initial centroid location or some anomaly right i might end k means might end with empty cluster this is an empty cluster empty cluster with means there is no point in the cluster except the the centroid location which is an imaginary point
+point in our case right so this can happen right this can happen very often right how do we handle
+empty clusters there can be multiple strategies to it i am discussing two strategy one strategy two
+right strategy two is easier one let me explain choose the cluster with higher ssc value or highest
+ssc value and break into two parts right so this cluster let me redraw the cluster and then you
+will be able to visualize yeah so yeah now if i ask you how many natural clusters there are two natural
+clusters right these are the two natural clusters however because of initial location of centroid
+this is mu1 and this is mu2 now i am again and again saying initial location of centroid but if you just visualize let me just do it for you
+one case so that you can understand why this might yield you empty cluster
+right k equals to do this this is my iteration one step one done right initialization of centroid done
+iteration one step two assign each point to its nearest centroid
+right so for doing that i have to do this all the points right all the points are closer to mu2 all these
+points will be assigned to mu2 none of the points will be assigned to mu1 right step number two done in iteration one step number three
+re-computation of centroid when i recomputed right mu2 will not change it is sitting at the center of the
+proper location and mu1 will also not change because there is no point there is no point actually in mu1
+then iteration one step four loop iteration two step two assign each point to its nearest centroid
+same thing will happen so after multiple runs as well
+as you can see that natural clusters here are this and this my crusting algorithm should have found these
+but instead of that crusting algorithm found k means found these as two clusters so what i can do is simplest thing is
+k means give me k means crusting algorithm give me this as big cluster and this as smaller cluster
+with no point here and all four points here what i'm going to do it break the cluster having highest sse value
+right what do you mean by breaking the so break this cluster into two parts
+when i break this cluster into two parts breaking the cluster with two parts means run k means inside this
+and this is gone see it was an empty cluster there was no point associated with it so i can just discard
+it and run k means inside this cluster with k cluster two so breaking a bigger cluster into smaller parts
+is is strategy two or strategy one can be another strategy can be identify a point which contributes
+most to the sse of any cluster and then break that point to the sse of any cluster and then break that point assign empty cluster to that point let's see that
+yeah so right now this is my cluster this is my empty cluster what i'm going to do is
+break this point from the cluster this becomes my cluster one and this becomes my cluster two right so this is how i can handle empty clusters
+Now, challenge 3: Inherit limitation with KME's clustering algorithm. Now, KME's clustering algorithm by design has some issues, which is it cannot handle clusters of different sizes, of different shapes or different densities. Right? And it cannot handle outliers as well. Right? Why I am saying it cannot handle outliers? This point was an outlier. Right? But became part of this cluster and must have forced the centroid to move to the other.
+Towards this particular point. Because of cluster assignment phase, since this point is farther from rest of the point, it would have forced this centroid, actual centroid from year to year for the particular cluster. Right? So, my KME's clustering algorithm is vulnerable to outliers. Cannot handle outliers. So, what I am talking about here? It has inherited, KME's has inherited limitations in terms of varying sizes or different size cluster. Let's look at this particular cluster.
+data set. How many national clusters? There are 3 national clusters. 1, 2, 3. There are 3 national clusters. Any good clustering algorithm should identify these 3 national clusters. However, KME's if I run even with proper centroid location will give me these 3 national clusters. These 3 S clusters. Why this is happening? Because KME's objective function is to just minimize SSE value. It is biased
+towards creating clusters of equal sizes. And that is why it will give me these suboptimal clusters. It will not give me any error. KME's will not give me any error in this case. It will give me equal sizes cluster. And that is the inherent limitation. Another inherent limitation of KME's clustering algorithm is different density clusters it cannot identify. Given this set of a type of a data set. How many natural clusters? 1, 2, and 3.
+So that means clustering algorithm assumes that the cluster density is same. All the clusters the density is same. It is biased toward finding clusters of similar density. So if I run KME's on this it will give me cluster 1, cluster 2, and cluster 3. Suboptimal clusters. And non-globular shapes. So if I give you this data set. How many clusters are there? Natural clusters are there? 1.
+2. K means is a center-based clustering algorithm. Focus is center. Center actually signifies
+the cluster strength, right, or SSE value or variance. If all the points are lying on the
+center, the variance is 0, SSE is 0, right. Now, right, if I find cluster centroid here,
+cluster centroid here, right, like this, this becomes cluster 1, this becomes cluster 2.
+So, suboptimal clusters, right. So, K means clustering algorithm only works with convex, spherical, or Voronoi cell-based clusters, right. If the clusters are of these types, these shapes, if the clusters are of these shapes, non-globular shapes, my K means clustering algorithm will fail. How do we handle these? If there is a size limitation, that means cluster sizes, right, original cluster sizes or natural cluster sizes are not
+same, right. How do we still do that? Pass higher value of K, right. So, I want to identify two clusters in this data set or three clusters in the data set. Pass K equals to 10. It will give you many clusters of same size.
+many clusters of many clusters of same sizes. Now, I can do post-processing and do a lot of merging here. So, I can do post-processing and merge all these clusters to say this is one big cluster, this is C1, this is C2, and this is C3, right. So, pass higher value of K, get smaller clusters of same sizes, and then do post-processing, right, where you can merge very similar clusters, right, and that is how you can find natural clusters in the data set.
+Similar story with density as well, right. Pass higher value of K to find clusters of equal density. So, all these clusters are almost of equal density, right. Now, I can do post-processing. In post-processing, once K means is run, I can do post-processing and I can merge all these clusters in C1 and say C1, this is become C2, and this becomes C3.
+Same story with shape as well. Pass higher value of K, right. So, I get a lot of smaller clusters. Now, in post-processing step, I can merge these smaller clusters into a bigger cluster. I can merge these smaller clusters into a bigger cluster. So, these things I can do. Right. So, what are the pre-processing and post-processing steps in K-means clustering algorithm?
+Pre-processing steps are, we have to normalize the data. Why normalize the data? Because it's a Euclidean distance-based computation-based method. If the magnitude is higher for one dimension, right, it will start sort of dominating all the computations in the formula.
+So, K-means clustering algorithm, since it works on Euclidean distance-based computation, we have to normalize the data before we actually run K-means clustering algorithm.
+Plus, we have to eliminate the outliers. Because if there are outliers in the dataset when we parse it to the K-means algorithm, it will, the outlier will be assigned to one of the clusters.
+And that will shift the actual centroid from real location to a poor centroid location. So, these are the two, these are, there can be many steps that can be done in pre-processing of K-means, but these are two steps which I am highlighting here.
+What are the post-processing steps in K-means clustering algorithm? Right. You can eliminate smaller clusters and assign them outliers. Right. So, for example,
+I pass K-means clustering algorithm, I pass K-means clustering algorithm, so this point became an outlier. There is only one point. Right. So, this is, let's suppose, C1, this is C2, and this is C3. So, C3 cluster is having only one point and I can call it as an outlier. Right. Or, I can break loose cluster. What do you mean by loose cluster? Cluster having higher SSE value. Higher within cluster variance, I can break into smaller part. Or, merge clusters from
+each other. Right. To further find natural clusters. So, therefore, in summary, in this video, we looked into, right, how to handle initial centroid problem in K-means clustering algorithm and that can be done by multiple runs or smarter initialization of centroid using K-means plus plus. We also looked into fundamental limitations of K-means clustering algorithm in terms of handling varying sizes, varying sizes of clusters,
+or densities, varying density of clusters or non-globular shapes and we looked into various pre-processing and post-processing steps of before we run K-means clustering algorithm. We will continue in the next video. Thank you for attending. Take care. Bye-bye.

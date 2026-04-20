@@ -1,0 +1,100 @@
+Hello to all of you. My name is Dr. Hemant Rathar and we are in the course Machine Learning. We are
+discussing module 10 K-means Clustering Algorithm. This video is on K-means objective function and
+convergence. So the learning objective of this video is we will first try to understand what is
+the objective function of K-means Clustering Algorithm and what it is trying to minimize. It is trying to
+minimize something called sum of square errors SSE. Then we will also look into the difference between
+local optimum and global optimum in case of K-means Clustering. So let's start right away. So what K-means
+is trying to achieve? K-means is not a random algorithm. In this case it is trying this optimization
+algorithm is trying to minimize something. It wants to find a partition that is as compact as it can be.
+So it wants to find a partition of the data set that is as compact as possible. What do you mean by
+compactness? Just listen to these terms. I will show you pictorically as well. What do you mean by
+compactness? Compactness means within cluster variation which is essentially the sum of distance
+between data points and cluster centroid. So a good clustering algorithm should have very small within cluster
+variation. K-means Clustering algorithm aims to minimize overall variation in the cluster.
+Let's take a very small toy example and let me try to explain it to you. How many natural clusters?
+My K-means Clustering algorithm should be able to identify these two natural clusters. Assuming K-means
+Clustering algorithm gave me these two clusters. Right? With mu1 here and mu2 here. Right? Now what is K-means
+trying to achieve? It is an optimization algorithm trying to minimize within cluster variation. So inside the cluster
+it is trying to minimize the variation. Right? And it is going to do it for all the clusters. So when I say within cluster variation means inside the cluster what is the variation?
+If I zoom out these. Right? These are my data points and this is my centroid. So what is the error in
+this cluster? What is the error in the cluster? What is the error in the cluster? The error in the cluster is the distance between the point each point and the centroid. Right? So
+summation of distance between all the points in the centroid when the error would be 0 in this case
+if in this cluster all the points are overlapping with the centroid and all the points are overlapping
+with centroid so this is p1 p2 p3 and p4 all are overlapping with mu1 and p5 to p8 or are overlapping
+with mu2 if that is the case then your ss e value would be 0 right your variation is 0 right variation
+in the cluster means the distance between point and the centroid right because it is we are saying
+that the center of the cluster is actually the root is the main point in the cluster right if a point is
+a bit far right that is the error right that is the distance we want to minimize that distance that is
+the variation we want to minimize the distance so the loss function in k-means crusting algorithm is
+this which is called as sum of square error so k-means crusting algorithm measures total
+within cluster variation total this is one term and within cluster variation is another term
+using the terminology called sum of square error so this is the name of the error sum of square error so
+how do we compute sum of square error this is within cluster variation of cluster one we do it for all
+the clay clusters so i equals to one to k right we are doing for all the clusters right now how do we compute
+the error inside the cluster within cluster variation so first is total so total is essentially my
+summation function is doing that when we are talking about within cluster variation this part is doing that
+within cluster variation this part is doing that how do we calculate within cluster variation calculate the
+distance between point and the centroid you do it for all the point in the cluster and of course there is a
+squaring term right just to reduce the effect of negative right so it might be sometime point will be on this side some point the point will be on this side
+if i just take the magnitude it will not be fair so we just if we square it the magnitude
+actually is retained right so as i was saying if you look very carefully into the formula this part is calculating within cluster variation for one cluster and this part this summation is doing for making sure that we are doing it for all the clusters so for each point the calculation of error would be distance of that point from the cluster center
+so the same example in the last slide assuming this is my cluster this is another cluster this is my centroid mu1 this is my centroid mu1 this is my centroid mu2 so error because of p1 is distance between p1 and mu1 error between p2 error in p2 is
+distance between p2 and mu1 if the distance between p2 and mu1 is 0 that means this p1 is actually overlapping mu1 if the distance between p2 and mu1 is 0 that means p2 is overlapping mu1 so when the within cluster variation would be 0 in this case
+if all these points are overlapping mu1 if all these points are overlapping mu1 so within cluster would be 0 right because the distance between point and centroid would be 0 you do it for p1 you do it for p2 you do it for p3 you do it for p4 within cluster distance would be a variation would be 0 and then you do it for cluster 2 right so that is the summation part of it second summation part of it outer summation part of it
+so k means clustering algorithm the optimization function is also called as alternating optimization why two steps are doing optimization one is step number two you remember four step algorithm initialization of centroid cluster assignment recomputation of centroid and loop so step number two right is doing optimization and step number three is also doing optimization in an alternate fashion what we are optimizing in step number two
+in step number two we are assigning each point to its nearest centroid so we assume that the centroid location is fixed so the goal of this step is to minimize the distance between the point and the centroid right i'm assigning this point to this centroid i can assign this point to this centroid as well but i'm assigning it to this centroid by because this distance is this so this is what we are trying to minimize in step number two right which is cluster assignment step
+we do optimization in step number three as well where we assume that now my cluster boundary is fixed so this is cluster one this is cluster two now i want to optimize by correctly representing this cluster how do i correctly represent this cluster right i have to put centroid location at correct place so average all these points and my centroid will move from here to here so that is what we are doing in step number three you iterate between step number two and step number three that
+is why it is why it is called as alternating optimization right overall when we combine these two steps alternatively we are trying to minimize something called total sse right now how do we calculate mean or centroid for a cluster we have already talked about it the center of the cluster is essentially the mean right how do we calculate the center so in a cluster distance between point and the centroid distance between point and the centroid
+it would be the centroid it would be the centroid it would be the center right so how do we calculate the center so error of this is sse of the centroid but how do we calculate centroid right mean mean would be x1 plus x2 plus x3 divided by number of points right and you do it for y as well right so this is sum of square of the centroid now the same example which we were discussing in the last video let's try to see whether my sse is decreasing in each iteration or not right so
+so if you remember i had two centroid c1 and c2 i had six points p1 to p6 after iteration one p1 p2 p3 went to c1 and p4 p5 p6 went to cluster c2 right now iteration one complete right i want to calculate what is the sse value right now so sse value would be right of cluster c1 would be 2 plus 2 plus 2 plus 2 plus 3
+divided by number of points right and cluster c2 divided by number of points right and cluster c2 would be right of course there is a squaring term here as well right just to handle the sign right so this is square just to handle the sign part of it okay so sse value of c1 would be right 2 minus 2 square 2 minus 3 square right and we do summing
+the information of all these right so that is how we got 2 right similarly you do it for y as well similarly you do it for cluster 2 as well 8 minus 8 square square 7 minus 9 square square 7 minus 8 square square and you do it for y excess as well so when we calculate the sse value right sse value right sse value right for cluster c1 it is coming 2 for cluster c1 it is coming 2 for cluster c1
+2 it is coming 6. Total would be 2 plus 6 which is 8. So SSE value after iteration 1 is 8. When I
+finish iteration 2 the SSE value should come down. When we move to iteration 2 I recomputed the
+centroid. I reassigned each point to the nearest centroid. I recompute the SSE value. So when I
+recomputed the SSE value now you can see in cluster C1 where the SSE value is 1.34 in C2
+the SSE value is 2.67. 4.1 from 8 which is in iteration 1 it was 8. SSE value was 8. In iteration 2
+it is reduced to 4. So there is reduced reduction in the SSE value. When you iterate 3 also you might
+see some reduction in SSE value and so on. It might stable over after some time based on the data set
+points and the centroid location but it will never increase. So in each iteration the SSE value in
+ideal case should come down or at least should remain as it is. 4.4.4.4 then it becomes stable.
+So K-means crusting algorithms guarantees reduction in the SSE value or at least guarantees reduction in the SSE value or at least will maintain the current SSE value. Will minimize or maintain the current SSE value till we converge. But there is a catch in K-means crusting algorithm. It suffers from something called local optimization versus global optimization phenomena. Think about it. Right. So in ideal world.
+right so this is an example let me explain this example right k-means crusting algorithm suffers
+from something called global optimization suboptimal crusting phenomena how many natural
+clusters are in this data set there are three natural clusters in this data set one two three
+if my k-means crusting algorithm is good it should be able to identify these three clusters
+right now right so if k-means crusting algorithm is optimum is if it is good right it should be able
+to identify right these right that is what i said however sometimes k-means might give you these
+clusters as well which is cluster one cluster two and cluster three so these are my suboptimal clusters
+clusters why this might happen fundamental reason or major reason is that it suffers from there are
+two reasons one reason it it suffers from something called some optimal problem right so based on initial
+location of centroid right it might start converging right so k-means crusting algorithm four steps step
+number one was initialization of centroid it is done in a random fashion so based on your starting point
+if this is a hill and you want to come up at the bottom most point based on your starting point you might
+come down but you might get stuck in a small valley right so this is called local optimum so this is one
+local solution this is one local optimum this is one local optimum the global optimum is this so in ideal
+world any crusting algorithm should reach here but in k-means crusting algorithm depending on your initial
+location initialization of centroids right you might get stuck here you might get stuck here you might get
+stuck here or you might finally reach global optimum right so any crusting algorithm right here you had
+ssc value you are trying to reduce the ssc value and you will get stuck here so k-means crusting algorithm
+suffers from something called local versus global optimum solution it doesn't guarantee always guarantee
+global optimal solution it might get stuck in local optima right why this is happening because it's a greedy
+strategy greedy strategy tends to do not guarantee global optimum solution why what is a greedy strategy
+after each iteration right in each iteration right it locally chooses best cluster how each point is assigned to
+to its nearest centroid so instead of overall looking at which is the best group it just locally
+in each iteration look for the best assignment and that is why it is called greedy strategy and since it is a greedy strategy
+it do not guarantee global optimum right so it is k-means crusting algorithm is
+vulnerable or is vulnerable or is sensitive to the initial location initialization of centroid if the initial
+initial initialization of centroid are perfect you might get go to a global optimum solution otherwise you might get something like this right so k-means will not give you error please understand k-means will not give you error or let me say none of the k-means crusting algorithm will ever give you error right until you are doing some syntax error right it will give you suboptimal solution right so k-means will not give you error or let me say none of the k-means crusting algorithm will ever give you error right until you are doing some syntax error right
+it will give you error it will give you suboptimal clusters please remember this is a two-dimensional vector space so you are able to see that these are suboptimal clusters but if it is n-dimensional how do you visualize these are suboptimal clusters it's an hard task it's a very hard task we'll talk about that as we move in crustering right this is another example of suboptimal clusters if i ask you how many natural clusters are there right so most likely you will say this is one big cluster right depending on abstraction as well as well
+whatever we have discussed in the last module but broadly if i see there is only one cluster but let's suppose if i pass k equals to 3 it will not give me any error right it will converge like this k-means will not give me an error it will converge it will say that all these points are cluster 1 all these points are cluster 2 all these points are cluster 3 right that is one big problem with crusting algorithms why i am saying this because in two-dimension
+space you are able to visualize but in n dimensional space it would be extremely hard to visualize
+all these things. Right. So in summary in this video we looked into the optimization function
+of k-meas clustering algorithm which is called sum of square error which measures total within
+cluster variation. Right. And we looked into k-meas clustering algorithm is a alternating
+optimization algorithm where you the SSE value in two steps right both in cluster assignment and
+recomputation of centroid. We also looked into k-means can only guarantee local optimum will not
+cannot guarantee global optimum because it is a greedy strategy and k-meas clustering algorithm is
+vulnerable to initialization of centroid. How do you choose the initial centroid? We will talk about
+this in much more detail in the next video as well. Thank you for attending. Take care.
+you

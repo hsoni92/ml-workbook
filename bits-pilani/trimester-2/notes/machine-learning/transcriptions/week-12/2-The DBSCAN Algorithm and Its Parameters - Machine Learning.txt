@@ -1,0 +1,684 @@
+Hello to all of you. My name is Dr. Hemant Rathar and we are in the course Machine Learning. We are
+in the module 12 where we are discussing two algorithms, dbScan and Birch. This is video 2
+and in this we will focus on dbScan algorithm and its parameters. So the learning objective of this
+video are that we will first look into the high level description of dbScan algorithm. Then we
+will look a very small toy example of how dbScan will work on a simple data set. Then we will look
+into the major strengths and weaknesses of dbScan algorithm. So let's start right away. So we have
+looked in the last video we have looked into various important definitions right of dbScan
+algorithm. Now right we have looked into how do we define density using EPS and minpoints. We looked
+into classification of points as either core, border or outlier and then we looked into density connected
+and density reachable definitions. Now in dbScan how do we define cluster? There is a very simple
+condition. A set of points C is a cluster if it satisfies two conditions. Maximality and connectivity.
+So what is maximality? For any two points P and Q in a cluster C, P and Q must be density connected.
+So P and Q if they are density connected they will be part of same cluster because of maximality. And what do you mean by connectivity?
+So if a point P is in a cluster C another point S is density reachable from P then S must also be a part of cluster C.
+These two simple terminologies will give us a cluster of largest possible group which are density connected. Right?
+These two simple terminologies, right, will give us a cluster of largest possible group
+which are density connected, right.
+Because of these maximality and connectivity, I will get a cluster which is largest group
+of points which are density connected, right.
+So we have just introduced one more definition.
+Now let's try to see how it will work.
+It is a beauty, right.
+If you look, this is exceptionally well algorithm.
+Let's look at the original data set.
+This is my original data set.
+If I ask you, how many natural clusters are in this data set?
+So you will say that the number of natural clusters are 1, 2, 3, 4, 5, 6.
+There are 6 natural clusters and these are the boundary.
+Think about it.
+You have learned k-means.
+You have learned hierarchical clustering.
+On this data set, if you run either k-means or hierarchical clustering, whether it will
+be able to identify these clusters?
+Most likely no, right.
+So we have to change the philosophy here.
+Instead of center base or distance as a similarity measure, can we use density as a measure to
+find these natural clusters?
+So the first step in db scan is to label the points, each point.
+So in the data set, you have many points.
+Label each point as either core or border or noise.
+This we saw in the last video as well.
+The basic definition.
+So for example, let's start with this point.
+Right.
+So this point, first we have to label it should be as either core or border or outright.
+So first we will check, right, whether it is a core point or not.
+So I have to draw an EPS around it, right.
+I have to draw a circle around it with an EPS and count the number of points in its vicinity.
+So before running EPS, we have to define these two things.
+Right.
+We have already discussed.
+So let's suppose EPS is 1 centimeter and min point is 5.
+Some random value I have taken.
+So since, right, in the vicinity, in the given EPS, the min point criteria is satisfied.
+This is a core point.
+Similarly, this is a core point.
+This is a core point.
+So all the core points here are denoted by green color.
+So once we know that a certain point is not a core point, for example, this is not a core
+point.
+This blue one, all the blue ones are border point.
+Right.
+So this is not a core point.
+Why?
+Because I have drawn EPS around it, a circle around it with an EPS boundary and count the
+number of points.
+It does not satisfy the min point criteria, but it falls under the vicinity of a core point.
+Right.
+So all these blue points, if you see, are essentially my border points.
+So first we will always check whether the point is a core point or not.
+If it is not a core point, then we check whether it is a border point or not.
+If it is not a border point, then we know it is a noise point and we can check it.
+Right.
+So all these blue points, as you can see, are actually at the border of a natural cluster.
+Right.
+And then we have outliers or noise points, which are denoted with red color.
+So they do not satisfy the min point criteria in a given EPS.
+Plus, I cannot reach this point.
+Right.
+With the help of any core point or there is no core point in the vicinity of this point.
+Right.
+So if you remember, core points are in the dense region.
+Border points are at the border of dense region.
+And noise points are far away from the dense region.
+Right.
+See.
+These three definitions we saw in the last video.
+Right.
+We discussed that at various length.
+At good length.
+Right.
+So the first aim or the first in DB scan algorithm is to label each point either as core or border
+or noise.
+This is the first part of the algorithm.
+Right.
+Now, so as I was saying, right, how many natural clusters were there?
+Six.
+Right.
+So my DB scan is able to identify these natural clusters.
+Right.
+And rest of the points are outliers.
+So how DB scan work?
+Right.
+So let's see a very tall example and then I will show you the algorithm.
+Algorithm is very simple.
+So first thing is we label each point as either core, border or outlier.
+So now I have list of all the core points.
+I have list all the border points.
+And I have list of all the outlier points or noise points.
+I will take a core point.
+Let's suppose this core point I have taken.
+Okay.
+This core point I have taken.
+Okay.
+I will check.
+Is there any cluster label assigned to this core point?
+Right.
+If there is no cluster label assigned to this point,
+Let's suppose I label this point as orange cluster.
+Right.
+So this point is part of right now as orange cluster.
+Then what is the next step?
+I will sort of in the vicinity of EPS.
+Right.
+So I know this is a core point.
+So there is an EPS around it.
+And I know it satisfies the min point criteria.
+So in the vicinity of this point.
+Right.
+I will label all the points as orange cluster.
+Right.
+So first I take a core point.
+I check whether there is any cluster label assigned to it.
+If there is no cluster label assigned to it.
+Let me label it as let's suppose orange.
+Then in its vicinity EPS, I will label all the points.
+Whether it's a core or a border point as orange point.
+Okay.
+Now I take core points in the vicinity of this first point.
+And I will start expanding them.
+So like this.
+So let's suppose this is a core point I took.
+I will go in the EPS of that.
+And label all the points in its vicinity as orange cluster.
+And so on.
+And it will stop here.
+Fair enough.
+So once.
+So this becomes my orange cluster.
+Right.
+And then my cluster boundary will stop.
+The loop will stop.
+Then I will take another core point from the list of core points I have.
+So let's suppose this is the core point I took.
+So I will draw EPS around it.
+I know it's a core point.
+I will draw EPS around it.
+I will check whether there is a cluster label assigned to it.
+There is no cluster label assigned to it.
+So let me label it as blue.
+Blue cluster.
+Okay.
+I will label all the points in its vicinity as blue cluster.
+Okay.
+I will expand all the core points in its vicinity.
+Right.
+Start expanding all the core points vicinity as blue cluster.
+So let's suppose this point.
+Right.
+I start expanding.
+Right.
+So this point I start expanding.
+So EPS label all the points as blue point.
+Then again this point.
+Draw EPS label all the points as blue point.
+Blue point.
+Blue point.
+Blue point.
+Blue point.
+So now I have two clusters.
+Two natural clusters.
+One is an orange cluster like this.
+Blue cluster like this.
+Yeah.
+Yeah.
+So it's a very beautiful algorithm as you can see.
+Right.
+So let me just repeat the steps again and you will understand.
+Right.
+Yeah.
+So I start one core point.
+Check its cluster label.
+No cluster label assigned to it.
+Label it some cluster label.
+Right.
+A new cluster label.
+Orange cluster.
+Right.
+Expand all its points in its vicinity and label them as orange cluster.
+Orange cluster.
+Orange cluster.
+Okay.
+Okay.
+Okay.
+Once I'm exhausted with all the points.
+This all the points.
+Expansion of all these points.
+Right.
+Here.
+I have no other point.
+Then I will go back to the original queue.
+Get one more point.
+Core point.
+Let's suppose the core point here is.
+Is this.
+Right.
+Check its label.
+Cluster label.
+There is no cluster label.
+Label it as blue.
+Expand all the points in its vicinity.
+All the core points in its vicinity.
+And start labeling them as blue.
+Right.
+Like this.
+And rest of the points.
+These are my outliers.
+Right.
+These are my outliers.
+So.
+If you see very carefully.
+DB scan is able to identify.
+Two national clusters in the dataset.
+Right.
+There are two national clusters and we were able to identify it.
+Right.
+Think about it.
+If I pass this dataset.
+To k-means-crusting algorithm.
+It will never be able to find.
+These two natural clusters.
+Apart from.
+If we play around with some tricks.
+It might be.
+But by default.
+K-means-crusting algorithm.
+Will never be able to identify.
+These two natural clusters in the dataset.
+Right.
+So DB scan.
+In this sense.
+Is extremely good.
+First step in DB scan algorithm.
+Label each point as.
+Either core.
+Border or outlier.
+Then.
+Take one core point from the dataset.
+Check its label.
+See the algorithm.
+Right.
+So.
+The algorithm is very simple.
+Right.
+So.
+First you start.
+With the label.
+Right.
+So you say that.
+My cluster.
+I have cluster label 1.
+Right now.
+My cluster level is 1.
+Current cluster level is 1.
+All core points.
+If the core point has no label.
+Right.
+So.
+Earlier.
+This one.
+When we started here.
+It does not.
+It didn't have any label.
+So I labeled it as.
+Orange cluster.
+Okay.
+I labeled it as.
+Orange cluster.
+Then.
+For all the.
+Points in its vicinity.
+Right.
+Label them.
+If they are not labeled.
+Label them as.
+Current label.
+All of these.
+Are labeled as orange.
+And we will expand.
+Right.
+This loop will expand.
+Loop.
+Till we have no other point.
+For expansion.
+In this cluster.
+In a loop.
+Once that is done.
+We again go back.
+And.
+Start with a new point.
+In a different cluster.
+Very simple algorithm.
+But very intuitive.
+And very powerful algorithm.
+Right.
+So what are the strengths.
+Of DB scan algorithm.
+It can detect.
+Clusters of arbitrary shape.
+Right.
+This is a.
+Dangerous.
+Sort of.
+Shape.
+To be detected.
+By any.
+Clustering algorithm.
+Very hard to detect.
+So DB scan algorithm.
+Can detect.
+Clusters.
+Of arbitrary shape.
+Because.
+What we are trying to do is.
+We are connecting.
+Locally dense region.
+We are not biased towards.
+Finding globaler shapes.
+Or measuring distance.
+As a.
+Similarity measure.
+It is robust.
+True noise.
+Right.
+So we know.
+Right.
+DB scan.
+It quickly identify.
+Those outlier points.
+And separate them quickly.
+Right.
+So.
+If there are a lot of.
+Outliers in the data set.
+Right.
+Here I am.
+Using sort of.
+Noise and outlier.
+Sort of.
+In a very.
+Mixed fashion.
+But this is how it is defined.
+In the original paper as well.
+Okay.
+One more thing.
+I will upload.
+All the original papers.
+Right.
+On.
+The.
+LMS.
+So that you can.
+Original paper.
+As in.
+The paper which proposed.
+This algorithm.
+Including.
+All the classification algorithms.
+Including.
+All the clustering algorithms.
+I will upload it on LMS.
+Please read those papers.
+You will get to understand.
+The intention.
+And the motivation.
+Behind building an algorithm.
+Be it a classification.
+Or a clustering algorithm.
+What is the basic idea.
+They started with.
+And then.
+They sort of.
+Build a philosophy around it.
+And then.
+They mathematically proved.
+An optimization function.
+Designed a mathematical optimization function.
+And then build an algorithm.
+Wrote an algorithm around it.
+This cycle.
+This cycle.
+Is very much needed.
+Because.
+Whatever algorithms.
+We are discussing.
+Be it classification.
+And clustering.
+Might not be applicable.
+Always applicable.
+In all the cases of the world.
+You might have to design.
+Your own algorithm.
+So.
+What you can do.
+You can read.
+The original paper.
+And then you will get to.
+Understand.
+How.
+Researchers.
+Were actually.
+Designing.
+An algorithm.
+Right.
+And then you can.
+Modify an existing algorithm.
+Or build your own algorithm.
+Be it a classification.
+Or a clustering.
+For a particular use case.
+Which you are working on.
+So.
+Please read.
+Original papers.
+They give you.
+Extremely good insights.
+In the actual.
+Thinking of researchers.
+While designing.
+These algorithms.
+I put those papers on.
+LMS.
+Please do not.
+Sort of share it.
+Or put it on internet.
+But you can.
+This is for.
+Your own reading.
+Right.
+Coming back.
+DB scan.
+Is robust.
+To noise.
+Right.
+So.
+One of the points.
+Which we identify.
+That.
+If a point is noise.
+Or outlier.
+We can easily handle them.
+DB scan.
+Does not need.
+To specify.
+How many clusters.
+Are there.
+In the data set.
+It can automatically.
+Detect.
+Number of clusters.
+In the data set.
+But.
+There are weaknesses.
+To DB scan.
+One of the weakness.
+Is.
+Varying density.
+What do you mean.
+By varying density.
+Right.
+If.
+In a data set.
+Right.
+You have.
+Clusters.
+Of different density.
+DB scan.
+Will fail.
+To detect.
+All of them.
+For example.
+Think about this.
+Data set.
+How many clusters.
+Are there.
+One.
+Two.
+Three.
+Four.
+Five.
+And six.
+Right.
+These.
+Are the.
+Power cluster.
+You can see.
+That density of one.
+Cluster number one.
+Versus density of cluster number four.
+Are very different.
+Now.
+You remember.
+Before running.
+DB scan algorithm.
+We have to pass.
+Two parameters to it.
+EPS.
+And min points.
+And they remain fixed.
+Throughout the running of.
+DB scan algorithm.
+So once I've defined density.
+Right.
+This is how I quantify.
+A dense region.
+Or a non dense region.
+Right.
+If I have varying density.
+In the data set.
+My crusting algorithm.
+DB scan will not work properly.
+So the major challenge.
+With DB scan algorithm is.
+We have global density parameters.
+We decide them.
+A priori.
+And then run.
+We cannot change them.
+On the fly.
+So it cannot handle.
+Data sets of.
+Clusters.
+Which are having.
+Signifquently different densities.
+Right.
+So.
+If you have varying density.
+Right.
+DB scan algorithm.
+Might not be able.
+To detect clusters properly.
+Right.
+On this data set.
+You can try yourself.
+Right.
+Try a different value of EPS and min.
+And see how many clusters.
+It is able to identify.
+And with a different value of EPS min.
+You can.
+Sort of check whether.
+How many clusters.
+It is able to identify.
+Now.
+How do we define the values of EPS and min.
+Again.
+There is no fixed rule.
+As we saw with value of K.
+Right.
+How do we know the value of K.
+There is no fixed formula to do that.
+But there are some pointers.
+Like elbow method.
+Heuristic domain experts.
+Can help here.
+Right.
+Similarly.
+How do we find the value of.
+Optimal value of EPS and.
+Min point.
+Again.
+There is no fixed formula.
+But there are some heuristics.
+What is the heuristic?
+Min point.
+Right.
+Should be greater than and equal to.
+D plus one.
+Where D is the number of dimension.
+What is the number of dimension.
+Number of attributes I have.
+Right.
+For example.
+If I have a two dimensional data.
+Min point value.
+Of around four.
+Makes sense.
+Right.
+Again.
+This is not a hard and fast rule.
+It is more of a heuristic approach.
+Combined with.
+Domain knowledge.
+Can help us in identifying.
+A proper value of EPS and min points.
+What is the time complexity of DB scan?
+That is your homework.
+I am giving you the answer.
+But it is your homework.
+You know the algorithm.
+Now.
+Break the steps.
+And calculate the complexity.
+As you can visualize some pointers.
+Right.
+You have to first label the points as.
+Either core.
+Border or outlier.
+There would be a time complexity.
+Associated with it.
+Will directly be added.
+Which will directly contribute.
+To the overall time complexity.
+Of DB scan algorithm.
+And then there is a loop.
+For example.
+Just I am giving you the answer.
+But I want you to derive.
+The time complexity.
+Of DB scan algorithm.
+It is very simple.
+But think over it.
+You know the algorithm as well.
+So in summary.
+DB scan algorithm.
+Can detect.
+Clusters.
+Of arbitrary shapes.
+And it can handle.
+Noise and outlier points.
+We do not need to pass.
+The number of clusters.
+To be identified.
+In a data set.
+And the only limitation is.
+It can detect.
+Clusters of similar density.
+It is one of the most powerful.
+Clustering algorithm.
+Available today.
+But the only.
+One big limitation is.
+Time complexity.
+Very high.
+N square.
+Right.
+Very high time complexity.
+So in summary.
+Right.
+In this video.
+We talked about.
+The basic working.
+Of DB scan algorithm.
+Right.
+We took a toy example.
+And understood.
+How DB scan algorithm.
+Would work.
+We also looked into.
+The primary weakness.
+Of DB scan algorithm.
+Which is.
+It cannot handle.
+Clusters of various density.
+Or varying density.
+Right.
+And the advantage of DB scan.
+Is it can detect.
+Sort of.
+Clusters of non-globular shape.
+Thank you for attending.
+Take care.
+Bye bye.
+you

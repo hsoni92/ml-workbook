@@ -1,0 +1,728 @@
+Hello to all of you. My name is Dr. Hemant Rathar and we are in the course Machine Learning. We are in the module 7, Ensemble Learning and this is video 4. We will discuss boosting and ada boost.
+So the learning objective of this video is we will look into the basic philosophy of boosting and how it is different from bagging. We will also look into the basic ideas of converting weak classifiers and getting stronger learners. Let's start right away.
+So in the last video we looked into bagging and in bagging we looked into two types of algorithms. Bag, dish and tree and we looked into random forest.
+Now when we were talking about bagging I said that the bagging algorithms are designed for a very specific purpose. The purpose was to avoid overfitting issues in a model.
+So for example traditional dish and tree if it is left unbounded tends to overfit the data.
+So if you look into all those issues to improve the generalization performance, to improve the robustness performance, you can do bagging which will force the model to avoid overfitting issues and lie in the area between underfitting and overfitting.
+And we looked into how can we achieve it using in bag, dish and tree and random forest.
+This was the philosophy of bagging to avoid overfitting issues.
+In general also if you look into any bagging based algorithms, they are very less suspectable or prone to overfitting issues.
+They have better generalization performance as compared to their traditional counterparts.
+When we look into boosting, boosting has a very different philosophy.
+What is the philosophy of boosting? Given a weak classifier.
+Given a weak classifier. You remember this graph, weak classifier.
+So on x-axis you have model complexity and y-axis you have error.
+Right, towards the left on the x-axis you have low complexity model.
+And towards the right you have high complexity model.
+Low complexity, high complexity can differ in various classifiers.
+Let me take a very simple example of dish and tree.
+Less complex dish and tree can be implemented.
+One way complex dish and tree can be implemented by controlling the height.
+If I force dish and tree to be of height maximum of 1.
+So dish and tree of height 1, level 1 or depth 1.
+Then it is called stump. Dish and stump.
+If I allow the dish and tree to be of any height then the model is much more complex.
+So a very simple or low complexity dish and tree is dish and tree with height 1 or depth 1.
+So this is also known as stump.
+So if I am only allowed to use low complexity model but data is very complex.
+So how can I combine these low complexity models to come up with a highly complex classification boundary.
+That is what we want to achieve in boosting.
+So let me repeat again.
+In boosting we are given a very weak classifier.
+How can I combine these weak classifiers in an arrangement such that by combining these weak classifiers I still get a highly complex classification boundary.
+That is what we achieve in boosting.
+So you remember we had 3 questions in ensemble.
+1 is which classifier.
+Which algorithm.
+So in random forest it was dish and tree.
+In back dish and tree it was dish and tree.
+In ada boost which is a boosting based algorithm.
+It is also dish and tree.
+But it is a weak dish and tree.
+So dish and tree with height 1 or depth 1 also known as stump.
+So this algorithm which we use in boosting.
+Specifically in ada boost.
+Boosting can have various versions.
+Various implementation.
+So I am talking about ada boost.
+Algorithm use dish and tree of height 1.
+So it is still used dish and tree.
+What is the architecture?
+This was architecture.
+And here it was how do you combine the results.
+So in boosting the architecture is not parallel architecture.
+It is sequential architecture.
+We put dish and tree in a sequence.
+I will talk about that architecture as we move ahead.
+We put dish and trees in a sequence.
+How do we combine the result?
+Is the third question.
+In boosting or in random forest we did majority voting to combine the results.
+In boosting we do not do majority voting.
+What we do is weighted average.
+Weighted combination.
+Weighted average is used to combine the results.
+Right.
+So you remember three questions.
+In ada boost we are using dish and tree algorithm.
+Right.
+So many dish and tree are there.
+If you look into ada boost you can find out how many dish and trees are there.
+Look into sklern you can find out very easily.
+That is your homework.
+The architecture is serial architecture.
+You combine different dish and trees in a sequential fashion.
+And how do you combine the results?
+Using weighted average.
+Now we will discuss this algorithm as we move along.
+So in boosting.
+Right.
+We have chain.
+Right.
+We build a chain of model.
+Sequentially.
+The idea here is.
+Each model.
+Right.
+In the chain.
+Each model.
+Right.
+Suppose this is the model I have trained.
+Then I have trained next model.
+will try to fix mistakes of the previous model.
+This model.
+Will try to fix the mistake of the previous model.
+This model.
+Will try to fix the mistake of the previous model.
+So each model is explicitly trained.
+To correct the mistakes of the models which are built previous to it.
+The analogy is very simple.
+I will talk about that.
+In a minute.
+Right.
+So in boosting.
+We are given weak learners.
+Weak classifiers.
+And we have to combine these weak classifiers in such a fashion that we get a strong classifier.
+A very complex classifier.
+Which is highly accurate.
+And which can easily classify the results.
+So.
+In case of ADAPOOST.
+What we have is DECISION TREE of height 1.
+Call it as DECISION STUMP.
+This I have already explained.
+Now let me give you a very simple analogy of boosting.
+Let me take the same example of doctor.
+You were having severe pain in the heart.
+So you first went to a generalized doctor.
+Right.
+Not a specialist.
+A generalized doctor.
+A generalized doctor looked into your symptoms and suggested some medicine.
+That medicine was able to slightly reduce the pain in the heart.
+Right.
+So.
+You were not satisfied.
+So you then went to a specialist doctor.
+A heart specialist.
+Now heart specialist.
+Again looked into your symptoms.
+And then gave some medicine based on the specialization.
+Which is based on heart.
+Again that pain was a bit reduced.
+But still it was not zero.
+So you again went to the doctor third.
+Which is a super heart specialist.
+He again looked into your symptoms.
+Was able to diagnose properly.
+Because he is super specialist.
+And suggested some medicines.
+And that is how iteratively you go.
+And meet the doctor.
+Which are more and more and more specialist.
+And then you combine the results.
+Using a weighted average or weighted combination.
+So this is how boosting algorithm works.
+You first go to a weak classifier.
+Then a bit more specialist classifier.
+And so on.
+Right.
+So how does boosting work.
+So.
+Let me give you a very simple.
+Sort of example.
+Steps.
+And then I will explain all the slides.
+So let me.
+Take a very simple data set.
+Binary classification problem.
+Two classes.
+Negative class and positive class.
+I have been given this data set.
+And a very weak classifier.
+Which is decision tree.
+Of height 1.
+Decision tree stump.
+Right.
+Now decision tree.
+It is bounded by height 1.
+Right.
+The classification boundary.
+It can make.
+Is.
+A line.
+Which is.
+Either parallel to x axis.
+Or line parallel to y axis.
+So either.
+Line.
+Parallel to x axis.
+Or line parallel to y axis.
+This is what my weak classifier can do.
+As you can understand.
+If I build a weak classification boundary here.
+It will have lot of error.
+Right.
+For example.
+I made decision boundary like this.
+Let's suppose.
+If I build a weak classification boundary here.
+It will have lot of error.
+Right.
+For example.
+I made decision boundary like this.
+Let's suppose.
+If I build a weak classification boundary here.
+It will have lot of error.
+Right.
+For example.
+I made decision boundary like this.
+Let's suppose.
+If I build a weak classification boundary here.
+It will have lot of error.
+Right.
+For example.
+I made decision boundary like this.
+Let's suppose.
+Okay.
+Yeah.
+Like this.
+So you can see.
+That.
+This is.
+Let's suppose.
+Negative side.
+This is positive side.
+So you can see here.
+That.
+These two samples.
+Are correctly classified.
+This sample was wrongly classified.
+These three samples are correctly classified.
+This is wrongly classified.
+These two are wrongly classified.
+So.
+My decision tree.
+Stump.
+Is not able to properly classify.
+Because of the limitation of the height.
+It's a weak classifier.
+It's a weak classifier.
+Right.
+So how can I make it more powerful.
+What I am going to do here is.
+In step number one.
+This is step one.
+All the training samples.
+So all these samples.
+All these samples.
+Are of equal weight.
+Are of equal weight.
+In the next iteration.
+I will give more weightage.
+To the samples.
+Which were wrongly classified earlier.
+So same data set.
+But the weightage of the sample will change.
+Weightage of the sample will change.
+So.
+These two.
+Right.
+Which were correctly classified earlier.
+The weightage will reduce.
+On the other hand.
+This sample.
+Which was wrongly classified.
+The weightage will increase.
+So I am just increasing the size.
+Right.
+Through that I am trying to represent.
+These two were wrongly classified.
+So again the size will increase.
+The weight will increase.
+Right.
+And then.
+These were correctly classified.
+So.
+These were.
+The weight will decrease here.
+So.
+This is data set one.
+Right.
+Based on the weightage.
+And I have a weak classifier.
+This is the classification boundary.
+This is the decision tree I made.
+It had some error.
+I want to fix those error.
+In the next iteration.
+So in iteration two.
+I will.
+Sort of have.
+The.
+Samples which were.
+Wrongly.
+Classified.
+Will given higher weightage.
+The samples which were.
+Correctly classified.
+Lower weightage.
+Now.
+Again I will build a classification boundary.
+Let's suppose.
+I build a classification boundary.
+Like this.
+I can build only.
+Line parallel to.
+X axis.
+Or Y axis.
+This is my decision tree of height one.
+So.
+All these samples.
+Negative samples are correctly.
+This is.
+Let's suppose.
+Negative side.
+This is positive side.
+So left hand side.
+All are correctly classified.
+Or right hand side.
+This sample is wrongly classified.
+Rest are correctly classified.
+So in the third iteration.
+I will focus on this sample.
+This sample.
+Right.
+More.
+To get the correct classification.
+So I will increase the weight of this sample.
+Okay.
+So this is my third iteration.
+Again.
+I have to build a classification boundary.
+So let's suppose.
+I build a classification boundary.
+Like this.
+Okay.
+Now you can see.
+Let's suppose.
+This is positive side.
+This is negative side.
+So.
+I have these samples correctly classified.
+However.
+These two samples are wrongly classified.
+Right.
+So.
+Every time.
+Because.
+I have a weak classifier.
+I am not able to perfectly classify.
+But.
+At different stages.
+I am able to fix those errors.
+As we move along in the chain.
+So from step number one.
+I was able to fix some mistakes in step number two.
+I was able to fix some errors in step number three.
+If I combine these three classification lines.
+I get a perfect classifier.
+And.
+If I combine these three classification lines.
+I get a perfect classifier.
+And.
+If I combine these three classification lines.
+I get a perfect classifier.
+And.
+If I combine these three classification lines.
+I get a perfect classifier.
+And.
+If I combine these three classification lines.
+I get a perfect classifier.
+And.
+If I combine these three classification lines.
+I get a perfect classifier.
+And.
+If I combine these three classification lines.
+I get a perfect classifier.
+And.
+If I combine these three classification lines.
+I get a perfect classifier.
+And.
+If I combine these three classification lines.
+Yeah.
+From here.
+From here.
+From here.
+And.
+From here.
+So.
+This is my classification boundary.
+Okay.
+About this.
+Okay.
+Sorry.
+My bad.
+Right.
+So.
+This line.
+Actually contributed here.
+And.
+This line.
+Actually contributed here.
+So.
+When I combine.
+Right.
+These three classification boundaries.
+I will get this sort of a classifier.
+This is called.
+A boost.
+So.
+As you can understand.
+What I have been given.
+A weak classifier.
+A line.
+Which is either parallel to.
+X axis.
+Y axis.
+But.
+In the end.
+I was able to build.
+A classification boundary.
+Which is much more complex.
+But a.
+Line parallel to.
+X axis.
+Y axis.
+All the steps.
+Need to be done.
+In sequence.
+Right.
+Because.
+My current classifier.
+Is dependent on.
+Is fixing mistakes.
+Of the previous classifier.
+In shell.
+Right.
+So.
+In bagging.
+Right.
+We were able to.
+Paralyze.
+Lot of things.
+In boosting.
+We cannot paralyze.
+Many things.
+Right.
+Things.
+Models.
+Are trained.
+In a sequential fashion.
+In which.
+One.
+Mistake.
+In a sequential fashion.
+Right.
+So.
+As I was talking about.
+How boosting works.
+It works at two levels.
+Right.
+First is.
+Right.
+Initially.
+All the data points.
+Are given.
+Same importance.
+Equal importance.
+Then we build a model.
+Once we build a model.
+Right.
+Some samples will be correctly classified.
+Some samples will be misclassified.
+We will pay more attention.
+In the next iteration.
+On the samples.
+Which were wrongly classified.
+Right.
+That is what we did.
+So.
+In.
+Step number two.
+We were more focused.
+On fixing the samples.
+Which were wrongly classified.
+Earlier.
+In step number one.
+In step number three.
+We were more focused.
+On fixing mistakes.
+Of.
+Step number two.
+Right.
+Now.
+Once that is done.
+Step number one is done.
+Step number two.
+May.
+What we are going to do.
+Right.
+We are going to iterate.
+Again and again.
+Right.
+And how do we combine the results.
+We take weighted average.
+Weighted combination.
+Right.
+We combine.
+So.
+AdaBoost.
+Which is a boosting based algorithm.
+Was proposed.
+In 1997.
+By these two scientists.
+Right.
+Now.
+It works on the philosophy.
+Of.
+Two level.
+Bagging.
+Right.
+Two level boosting.
+In first step.
+Right.
+We create.
+Sort of bags.
+These are bags.
+Right.
+Bag creation.
+Is done.
+Based on.
+Weights.
+Right.
+Weights.
+We created.
+How.
+We will try to increase the weight of samples.
+Which were wrongly classified.
+Earlier.
+So.
+Let me explain.
+AdaBoost.
+Which I have already explained.
+In data.
+The first step.
+All the samples are given.
+Equal weightage.
+Then we train.
+Model M1.
+Right.
+Model M1.
+We are training.
+Which is a Dishon tree.
+Which is a line.
+Can be parallel to X axis.
+Or parallel to Y axis.
+Or Y axis.
+Whatever.
+Then.
+We are trying.
+In this.
+Right.
+There will be some mistakes.
+There will be some mistakes.
+Right.
+As we saw earlier.
+So.
+In step number two.
+Right.
+We will update the weights.
+In such a fashion.
+That wrongly classified samples.
+The weight is increased.
+Correctly classified samples.
+The weight is decreased.
+And then we train.
+Model on M2.
+Right.
+So.
+It will more focus on samples.
+Of M.
+Focus on the wrongly classified samples.
+Earlier.
+And this is how we iterate.
+So.
+The final model.
+Will be combination.
+Of M1.
+M2.
+And M3.
+Right.
+By different weightages.
+So.
+Let's compare.
+Bagging versus boosting.
+Bagging.
+Is highly parallelizable.
+On the other hand.
+Boosting is.
+A sequential algorithm.
+The.
+Primary aim of bagging.
+Is to reduce the overfitting issues.
+Right.
+Reduce the variance.
+The primary aim of boosting.
+Is.
+Reduce.
+Bias.
+I have been given.
+Weak classifier.
+And I have to build a.
+Complex classification boundary.
+Right.
+So.
+The.
+Aim of boosting.
+Is.
+To reduce bias.
+Right.
+Underfitting issues.
+Right.
+Model training.
+Each of the.
+Decision tree.
+In bagging.
+In case of random forest.
+But trained independently.
+In case of boosting.
+In case of.
+Ada boost.
+Right.
+In a sequential fashion.
+Mistakes of current model.
+Are.
+Will be fixed by the next model.
+In the current model.
+I am fixing.
+Mistakes of the previous model.
+Right.
+We are.
+Combining the results.
+Using majority voting.
+Majority of the trees.
+Are saying.
+Class level one.
+Right.
+It will be predicted as.
+Class level one.
+By the bagging based algorithm.
+Random forest.
+In case of.
+Boosting.
+Right.
+We take.
+Weightage.
+Right.
+So.
+The model.
+Here.
+How.
+Weightage is implemented.
+In very simplistic term.
+I am explaining.
+Each of these.
+Models.
+Will have.
+Error.
+Will have error.
+Right.
+So.
+Here.
+The error.
+Is.
+This sample.
+Each of these.
+Models.
+Are having error.
+Higher.
+Right.
+Distribution.
+Will be given.
+To the model.
+Which is having.
+The lesser.
+So.
+When I am combining.
+The result.
+This guy.
+Is having.
+The least.
+Error.
+Is.
+This guy.
+Is having.
+Some more.
+Error.
+Right.
+So.
+The higher.
+Weightage.
+Positive.
+Weightage.
+Will be given.
+To this model.
+Right.
+So.
+In.
+Bagging.
+Right.
+In.
+Boosting.
+Right.
+The model.
+Will be weighted.
+Based on the.
+Error.
+Accuracy.
+Right.
+The model.
+Performance.
+Base.
+Estimators.
+Or.
+Base.
+Learners.
+Are.
+Decentry.
+Of.
+Height.
+One.
+So.
+Boosting.
+ZBoost we have light GBM. Today we discussed about basic version of boosting which is AIDA
+boost. So in summary we looked into what the boosting algorithm looks like, how a weak
+classifier can be converted into a complex classifier using boosting and then we looked
+into a use case called AIDA boost. Thank you for attending. Take care. Bye bye.

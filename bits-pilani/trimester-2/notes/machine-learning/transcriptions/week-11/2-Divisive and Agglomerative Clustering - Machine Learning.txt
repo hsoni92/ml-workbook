@@ -1,0 +1,356 @@
+Hello to all of you. My name is Dr. Himantrathar and we are in the course Machine Learning.
+We are discussing module 11. Hierarchical clustering. This is video 2 and we will talk about divisive hierarchical clustering.
+So the learning objective of this video is we will look into the step by step algorithm for divisive clustering which is called bisecting k-means.
+Then we will look into the strength and weaknesses of divisive clustering approach.
+So let's start right away.
+So when we are talking about hierarchical clustering, we can build hierarchy using agglomerative approach which is bottom up.
+Each point is a cluster based on similarity. I will merge and iteratively I will do it till we have one big cluster at the top.
+Or I can build hierarchy based on top down approach. That means one big cluster containing all the data points based on some notion of dissimilarity.
+I will start breaking the bigger cluster into smaller clusters till each cluster contain only one data point.
+So we can build hierarchy, hierarchical clustering based on any of these approaches.
+Today we are going to start with divisive approach, top down approach.
+Right. So divisive clustering.
+Right. The most popular divisive clustering algorithm is called bisecting k-means.
+As the name suggests, let me break the word for you. Bisecting k-means. Two parts. Bisecting k-means.
+So you run k-means again and again for bisecting. Very simple.
+You run k-means again and again for bisecting. I will show you a very good pictorial representation.
+But it is a sort of an advanced form of k-means to generate a hierarchical cluster, hierarchical dendogram.
+Right. So one of the way we implement divisive clustering is based on partitioning method which is k-means clustering algorithm.
+So we use to build a hierarchy, we use partition based algorithm called k-means to perform the spread.
+So initially we start with one big cluster that contain all the points.
+Right. Step number one. Start with all data points in one big cluster. Right. So you have one big cluster.
+And all the data points are lying here. Right. Now I will pass this bigger cluster, this one cluster to k-means.
+So k-means with k=2. Right. So when I run k-means on this cluster with k=2, it should give me two clusters. Right.
+For example, 2 k-means with k=5. So it gave me 5 continents. Similarly, one big cluster, I pass it to k-means with k=2 and it gave me two smaller clusters.
+So now what is happening? Based on some notion of dissimilarity, I will break a bigger cluster into smaller cluster.
+This point and this point are dissimilar to each other. That is why they are in two different clusters.
+This point and this point are in two distinct clusters. Why? Because they are very dissimilar to each other.
+This point and this point is very similar to each other. That is why at this level they are a part of same cluster. Yeah.
+Now what is the next step? Step number 2 done. Right. What is the next step? Right. Again we have to break these bigger clusters into smaller clusters.
+So which cluster to break next? Right. Identify the SSE value of both these guys. The cluster which is having the higher SSE needs to be broken down. Right.
+So let's suppose this cluster was having the higher SSE. So you again pass this cluster data points into k-means with k=2. Right.
+Now again what is the value of k? I am not discussing on that. Again it is an input parameter but just get the gist of it. And then we will see how it will work in real world.
+So when I do that, I get two smaller clusters.
+Please note that these two points were in the same cluster at one level. And at different level they might be in different cluster. So there is some sense of similarity earlier. But now these two points are in two different clusters because there was some sense of dissimilarity also there in the same clusters.
+So you remember right? Asia and Europe are part of different clusters. Why? Because they are different continents. But they are part of same cluster when we are talking about Earth. In Asia, Pakistan, India and Nepal are part of different clusters. Because we are talking about trinality and there is some sense of dissimilarity. These are different countries. But they are part of same cluster if I talk about a higher abstraction which is continent.
+They all belong to one continent which is Asia. So this is how we do it. Now in the next iteration again find a cluster. So I have three clusters now. C1, C2 and C3. Find the cluster which is having the highest value of SSE among 1, 2, 3 and break that into smaller parts. You do it iteratively till you have only one point in each cluster. And that is how you build the hierarchical structures.
+So I will discuss the algorithm in a minute. Let me show it pictorically how it will work. So let's suppose this is my data set as you can see it on the screen. Right? Forget about the color. Now assume let's everything is black. Right? All the data points are of black color. Now let me ask you how many natural clusters are in this data set? So some of you might say there are 10 natural clusters. One, two, three, four, five, six,
+seven, eight, nine, ten. So yes there are 10 natural clusters in this data set. Again depend on the abstraction. But there are 10 natural clusters I can see in this data set.
+depend on the abstraction but there are 10 natural clusters I can see in this dataset.
+That's perfectly fine.
+Any clustering algorithm, bisecting k-means should be able to identify these natural clusters
+otherwise the cluster algorithm is bad or we are doing something wrong.
+The aim of any clustering algorithm is to find natural clusters.
+These are the 10 natural clusters so my clustering algorithm should be able to identify these
+natural clusters.
+Now let's start with bisecting k-means.
+Initially, as we said, initially I will have one big cluster which contains all the data points.
+This is my cluster C1 which contains all the data points.
+So what I did, I passed this C1 cluster to k-means clustering algorithm with k=2.
+So then this bigger C1 cluster was broken down into two smaller clusters.
+Blue cluster and red cluster.
+So the bigger cluster C1 was broken down into two smaller clusters.
+and red cluster C1 and red cluster.
+Now I find out the SSE value of both these guys.
+Since as we can see here, blue cluster has higher SSE.
+Let me pass this blue cluster to k-means with k=2.
+So this is my blue cluster C1 and red cluster C1 and red cluster C1 and red.
+So blue is passed to k-means clustering algorithm with k=2.
+So blue is broken down now into two sub clusters.
+So blue is also green and red cluster C1 and red.
+Right now I have three clusters.
+Right now I have three clusters.
+Green, blue and red.
+Right.
+Again I will find the SSE value of these three clusters.
+green, blue and red cluster C1 and red.
+The guy having the highest SSE value should be passed to k-means and should be broken down.
+Right.
+So let's suppose I pass this blue cluster into k-means with k=2.
+So this blue cluster is now broken down into two smaller clusters.
+Blue and this is dark green.
+Yeah.
+Now again identify the cluster having the highest SSE value.
+The highest SSE value looks here.
+So I will pass this cluster to k-means clustering algorithm with k=2.
+So this bigger cluster will be broken down into two smaller clusters.
+Right.
+Light red and dark red.
+Light red and dark red.
+So right now at this snapshot.
+How many clusters I have?
+Five.
+One.
+Two.
+Three.
+Four.
+And five.
+Right.
+Again I can break these bigger clusters into smaller cluster.
+So identify the cluster having the highest SSE value.
+And then break it into smaller clusters.
+So let's suppose this guy was having the highest SSE value.
+Let me break into two smaller clusters.
+Right.
+So this dark red is now broken into dark red and dark blue.
+Right.
+And we do it iteratively.
+So now this is broken.
+This is broken.
+This is broken.
+This is broken.
+Right.
+And then finally this is also broken.
+So now if we look very carefully.
+Right.
+How many clusters I am able to identify with at the end.
+One.
+Two.
+Three.
+Four.
+Five.
+Six.
+Seven.
+Eight.
+Nine.
+Ten.
+So bisecting k means in this case was able to identify these clusters.
+These 10 natural clusters.
+Why did I stop here?
+I could have further broken down these bigger clusters into smaller clusters.
+Yes I could have done that.
+That is not a problem.
+This bigger green cluster can be broken down into smaller clusters.
+Till.
+Right.
+So end of the tree.
+Right.
+End of the dendogram.
+Only one point will be there in this case.
+Right.
+So end of the tree.
+Right.
+End of the dendogram.
+Only one point will be there in the one cluster.
+Right.
+But I tend decided to stop at this cut.
+Right.
+Continent cut.
+Country cut.
+District cut.
+State cut.
+Whatever.
+Is my requirement.
+So I can cut at various levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+And then I can cut at different levels.
+So in K-means crusting algorithm.
+I have to pass K-value in advance.
+To run, to even start running the algorithm.
+On the other hand, in bisecting K-means.
+I will build the full hierarchy.
+Full tree.
+And then cut my tree at any level.
+To identify the natural crusters.
+Right.
+So cut.
+So once the tree is built.
+Then we can analyze the dendogram.
+And cut at the most appropriate place.
+That gives me the natural crusters.
+So that is one strength of bisecting K-means.
+The other strength of bisecting K-means is.
+In many sort of problem statement.
+It is meaningful to build a hierarchy.
+Then do a partition.
+Build a hierarchy.
+Then do a partition.
+For example, we saw a couple of examples.
+Right.
+Biological sciences and stuff.
+We can do that.
+But what is the main weakness of bisecting K-means?
+The main weakness of bisecting.
+There are two main weaknesses of bisecting K-means.
+One is computational complexity.
+What is the time complexity of K-means?
+You remember?
+What is the time complexity of K-means?
+I * K * N * D.
+Where I is the number of iteration.
+K is the number of cruster.
+N is the number of data point.
+And D is the number of dimension.
+So K-means crusting algorithm.
+Which is a partition based crusting algorithm.
+Had this time complexity.
+What is the time complexity of bisecting K-means?
+Can someone think about it?
+Right.
+So think about it.
+Let's try to sort of visualize how we are doing it.
+Bisecting K-means is essentially running K-means iteratively.
+Initially, you have one big cluster.
+You break it into smaller cluster.
+You break it into smaller cluster.
+You break it into smaller cluster.
+You break it into smaller cluster.
+And so on.
+Now, so the point to note here is.
+I will have complexity.
+So I am running K-means multiple times.
+Right.
+So what is the time complexity of K-means?
+It is I * K * N * D.
+Right.
+I am assuming I am running always with K = 2.
+Bisecting K-means.
+In R, let's suppose in this case, I am running with K = 2.
+Right.
+So this becomes constant.
+So it becomes I * N * D.
+So breaking this.
+Right.
+Running K-means on this.
+Is I * N * D.
+How many times I am doing?
+Right.
+So let's suppose at all the levels I am breaking with K = 2.
+Right.
+So K will become constant and I can eliminate it.
+So how many times I am running K-means?
+Right here.
+Can someone think about it?
+It depends on the height of the tree.
+Height of the tree is what?
+Can be determined by log K.
+So height of the tree would be log K and then I can run to identify the natural clusters
+in the dataset.
+Okay.
+Another big weakness of bisecting K-means is it follows a greedy strategy.
+When you have greedy strategy, you might get suboptimal solution.
+Let's take a very simple example here.
+Let's take a look at this.
+This is the dataset.
+How many natural clusters are there?
+Three.
+Bisecting K-means should be able to identify these three natural clusters.
+Otherwise there is something wrong with bisecting K-means.
+Let's run bisecting K-means here.
+Right.
+So initially, all these points are in one big cluster.
+I will pass this to K-means with K=2.
+So this big cluster will be broken into smaller clusters.
+Two smaller clusters.
+Perfect.
+Again, I will find the SSC value of both these clusters.
+Cluster having the higher SSC value again will be broken down into two smaller clusters.
+Right.
+So let's suppose this one.
+This one, this one, this bigger cluster now is broken down into two smaller clusters.
+Similarly, again, this cluster will have the higher SSC value and will be broken down into smaller clusters.
+Right.
+Let's do it further.
+So at this snapshot, can you see the problem here?
+So in bisecting K-means, we greedily at a particular snapshot, I just break the cluster into smaller cluster.
+There is no chance where I can merge these two clusters.
+Right.
+So at this snapshot, this is a perfect cluster.
+This is a perfect cluster.
+However, these two points, which should be part of one cluster, these two points, which should be part of one cluster, are going into separate clusters.
+Right.
+So in bisecting K-means, it follows a greedy strategy.
+That means, at this snapshot, break this into two smaller clusters.
+Right.
+So in bisecting K-means, we bisect, we always break a bigger cluster into smaller cluster without an option of further merging to more similar clusters.
+So it might give me suboptimal cluster.
+At this snapshot, it is giving me bisecting K-means is saying there are four clusters, which is actually wrong.
+There are three actually natural clusters.
+These C2 and C3 should be part of only one cluster.
+So there is no chance that I can merge C2 and C3.
+I can, of course, do post-processing and do the merging, but that is not a part of bisecting K-means.
+Right.
+And that is why we are not talking about it.
+So in bisecting K-means, I iteratively break bigger clusters into smaller clusters without an option of merging.
+Why this is happening?
+Because we greedily break a bigger cluster into smaller clusters and that might force us to fall into local optima.
+So this is a local optima.
+Right.
+We get stuck into a local optima.
+And that is why it might get stuck into local optima and does not guarantee global optima always.
+So in summary, in this video, we talked about step-by-step algorithm for divisive clustering.
+We looked into the strength and weaknesses of divisive clustering.
+And then we looked into, right, bisecting K-means as an example of divisive clustering.
+Thank you for attending it.
+Take care.
+Bye-bye.

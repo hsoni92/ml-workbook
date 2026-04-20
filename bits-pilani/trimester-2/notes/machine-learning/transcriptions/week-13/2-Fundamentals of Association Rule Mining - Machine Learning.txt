@@ -1,0 +1,135 @@
+Hello to all of you. My name is Dr. Hemant Rathar and we are in the course Machine Learning.
+We are in the module 13 Association Rule Mining and this video will focus on Fundamentals
+of Association Rule Mining. So the learning objectives of this video are: First we will
+look into the key terminologies in association rule mining. Then we will also look into the
+two key evaluation matrices in association rule mining which is support and confidence.
+Then we will look into how do we generate association rules using a priori algorithm and so on.
+So let's start right away. So in association rule mining we are given the input is a set
+of transaction log. Set of transactions or a transaction log. From this transaction log I can generate few things.
+I can identify few things. First thing is item set. What is an item set? Item set is collection of item is called item set. So collection of one or more items is called an item set. For example an item set can be milk, bread, diaper and item set can be milk and bread and so on.
+So there can be many items. So there can be many items. So there can be many items. Item set is collection of one or more items.
+What do you mean by k item set. What do you mean by k item set? K item set is item set with cardinality k.
+right an item set that contains k item is called k item set for example this milk bread diaper
+is a three item set k value is three right because there are three product inside this item set
+right so when i say three item set there can be many three items set in this data set right for
+example bread diaper beer is three item set milk diaper beer is three items set and so on right
+so three item set means any item set with cardinality three or k item set means any item set with
+cardinality k then we have something called support count support count is what is the frequency of an
+item set what is the frequency of an item set for example let's talk about this item set milk bread
+and diaper so how many times in this transaction log these three items were bought together milk bread and
+diaper so let's see that milk bread and diaper milk bread and diaper right so out of five transactions
+right in the transaction log two times milk bread and diaper were bought right so that is why support
+means how many times what is the frequency of occurrence of an item set in a transaction log is called support
+what do you mean by frequent item set what do you mean by frequent item set so if a item set right
+satisfies the min support criteria minimum support right then we are calling it as frequent item set for example if i say
+milk, bread and diaper will be frequent if they are purchased two or more than two times in a transaction log.
+So in this case milk, bread and diaper is frequent item set.
+So frequent item set means if an item set satisfies the min support criteria then it is called a frequent item set.
+These are few terminologies. Let's see few more terminologies.
+When we are building these sort of association rules we assume few things. One is that this item when I am buying, the frequency can only be one.
+So I cannot have milk milk two packets. This is more of an assumption for simplicity right now.
+We can handle these cases in later on, maybe in some other course. Maybe can I buy two packets of milk? Yes we can buy.
+But in this case we are assuming the frequency of one item can be only one time.
+Also, a bread packet can be of 500 grams. A bread packet can also be of 1 kg.
+So we are not considering that case.
+When we say bread, it is a unique item.
+So the frequency of the item can be only one.
+That is one limitation which we are discussing right now. One assumption we have right now.
+And there is only one product associated with bread. Right? We are not talking about various types of bread, various sizes of bread and all those things.
+Those cases association rule mining can also handle them. That might see in a different course.
+So given these sort of, we have understood these sort of definitions. Now let's sort of look into how do we get to the association rules. Right?
+So what is an association rule? If X is bought, there is a chance that Y will also be bought.
+Where X and Y are item sets. How we are going to evaluate this rule? Right?
+So this is an association rule. How can I evaluate this association rule?
+For example, let's suppose I have been given association rule like this.
+Milk and diaper leads to the sale of beer. Milk and diaper leads to the sales of beer.
+So you can understand this is my X. This is my Y. X is also an item set. Y is also an item set.
+X is of cardinality 2. Y is of cardinality 1. So this is 2 item set. This is 1 item set. Just for terminologies I am explaining.
+Right? So this is the transaction log I have. And this is the association rule I have derived.
+Now, how do I check the quality of this association rule? There are two matrices. Support and confidence.
+What do you mean by support? So support is bit different from support count. Okay? There is a minor change in support count. Right?
+So what is support? Fraction of transactions that contain both X and Y. Right? That means how many times X union Y was purchased in this transaction log.
+So how many times milk, diaper and beer. This item set. X union Y would be milk, diaper and beer. Are bought together in this transaction log. How many times divided by the total number of transactions in the transaction log. So milk, diaper and bread. Milk, diaper, bread. Milk, diaper, bread. Milk, diaper, bread. So the frequency, the support, the support count of this item set is 2.
+The support count of this item set is 2 divided by number of transaction. Here are 5. So that is why support of this rule is 2 by 5 which is 40. 0.4 which is 40%. It also says something else. Just a minute. It also says that support equals to 40% means.
+40% of the time this item set was purchased. What is the item set? Milk, diaper and bread. 40% of the time this item set was purchased. So out of 5 transactions. Right? 2 times this item set was purchased. If there was 10 transactions then 4 times this item set was purchased. Right? That is what we mean by support. Now support can also be directly connected with.
+connected with frequent item set if the support of a item set is greater than
+minimum support then we are calling it as frequent item set right we have then
+confidence what do you mean by confidence confidence we always talk in
+terms of like this this is my x and this is my y right so what is the chance that
+if x happen y will also happen so measure how often y appears in the
+transaction that contain x right so how do we calculate confidence is support
+count of x union y divided by support count of x right so this is my x support
+count of x union y would be we can count here 2 and support count of x would be
+milk and diaper milk and diaper milk and diaper 3 right so here the confidence is
+coming out to be 0.67 which is 67 percent so what is the interpretation right the
+interpretation is very simple if a customer is buying milk and diaper there is a 67
+percent chance that he will also buy a beer right that is the interpretation think
+about it if the customer is buying milk and diaper milk and diaper milk and diaper so how many
+times milk and diaper were bought three times right if the customer is buying milk and diaper there is a 67 percent chance that he will also buy beer yes yes no so out of three times
+two times two times beer was bought so that is what we mean by confidence if x happened what is the chances that y will also happen what is the probability or what is the percentage that y will also happen what is the probability or what is the percentage that y will also happen now a very key observation is from this data set i can derive various associations right for example i am assuming that my item set is fixed milk diaper and butter this item set is fixed how many associations are fixed?
+i am assuming that i can derive various rules i can derive various rules i can derive various rules i can derive various rules i can derive from it many in all these association rules the support would be same however confidence will differ for example milk and diaper leads to the purchase of butter 60 percent there is a chance milk and butter leads to the purchase of diaper 100 percent right so if we are talking about an item set right i can derive many associations from it
+from an item set i can derive many from an item set i can derive many associations but right the support of all the associations will remain the same however confidence might be different so the key observation is once we have an item set right all the association rules will have same support but will have might have different confidence right so how do we derive association rules right so before we derive association rules let's look into few more things right so given a set of transactions
+right we are looking for frequent item sets or frequent association rules we're talking about
+the items which are purchased very heavily or the association rules which are happening very
+frequently right so i can define a term called support right and i can say that i will consider
+item set as frequent when the support is greater than minimum support minimum sub threshold and i
+will call a rule as confident right if the minimum confidence if it is greater than minimum
+confidence greater than or equal to minimum confidence right so an item set would be frequent
+when its support is greater than minimum support threshold a rule will be sort of confident if
+right its confidence is greater than minimum confidence threshold how can we derive these
+association rules now right so a very simple thing could be if i am selling six product in
+my mall right how many combinations i can purchase how many combination baskets i can have i can have
+2 to the power 6 baskets i can build right or let's take a very simple case assuming i am selling
+three items in my mall so how the basket might look like how many combinations can be possible 2 to the
+power d 2 to the power this is d number of items which i am selling right which is 2 to the power
+3 which is 8 how we are deriving at this right so let's suppose i am selling a b and c a can be
+there in the basket a and b can be in the basket a b c can be in the basket only b can be in the
+basket only b c can be in the basket only c can be in the basket a b c can be in the basket 1 2 3 4 5 6
+7 and there would be one more yeah ac right so these many item sets are possible these many baskets are
+possible right so which item set is popular right so for that i have to calculate support of each of
+these guys so first i have to build the item set count the support of it or find the support of it
+if it satisfies the min support criteria then we are saying that this item set is frequent and i am
+interested in finding association rules from it otherwise i am just discarding it list all possible
+item sets right similarly i have to build or association rules so how many association rules i can derive from
+it we will see that in a minute so to build association rules it's a two step process first
+is to generate all the frequent item sets right so first generate all the item sets then derive all the
+frequent item sets in the frequent item sets generate all the rules and then derive rules which are having
+confidence greater than minimum confidence this is the process so if you are selling three items generate all the item set
+set count from the transaction log count the frequent item set from the frequent item set derive the rules from the rules derive the rules which are having the higher confidence
+so this is more of a brute force approach right which is very in sort of which is not very proper so i was talking about let's suppose i am selling five items
+so d value would be five right how many item sets are possible a b c d e one item set right item set of cardinal d one two items set how many combinations are possible a b ac and so on so 2 to the power 5 which is 32 so if i am selling five items in my mall 32 item sets are possible 32 possible
+candidate item sets are possible. Right. Now I want to find out which one are
+frequent. So I have to find the support of each of these guys and the guys which
+are having support less than minimum support I'm going to describe them. Right.
+So the way we are going to do candidate generation is from the transaction log
+find the items then generate all the candidate item sets and then prune based
+on the support. Right. Then prune based on the support. So if the number of items I'm
+selling is D then the number of candidate items that's possible are 2 to the power
+D. Right. Which is this is 2 to the power 6. Right. Which is 64. Similarly how many
+rules are possible candidate rules are possible. It is 3 to the power 6. The
+formula is this 3 to the power D minus 2 to the power D plus 1 plus 1. So
+So 3^6 - 2^6 + 1 + 1 which gives me 602.
+So 602 candidate rules, association rules are possible.
+Now I have to find which rules are confident, where the confidence is greater than minimum
+confidence and those rules I am going to consider.
+This is more of a brute force approach which is very computationally expensive.
+However, we will come back to this in a minute.
+So how can I sort of have a better way of handling this?
+So then we have something called a a priori principle.
+A priori principle is very simple.
+If an item set is frequent then all its subset must also be frequent.
+If A, B and C this item set is frequent then all its subset.
+There can be 8 subsets.
+Will also be frequent.
+So a priori principle mathematically if I want to say for all X and Y. If X is a subset of Y.
+Then I can say that support of X will always be greater than and equal to support of Y. So support of an item set never exceeds the support of its subset. This is also called as anti monotone property.
+What is the interpretation?
+What is the interpretation?
+Right?
+I will just invert this a priori principle.
+If an item set is infrequent all its superset will also be infrequent. Let me repeat.
+If an item set is infrequent then all its superset will also be infrequent. I have just inverted
+this right based on anti monotone property. So if A and B the item set A and B is infrequent. All its superset will also be infrequent.
+Right? So this will be infrequent. This will be infrequent. This will be infrequent. This will be infrequent. And so on. So think about it. Out of 2 to the power D candidates which I was generating earlier. Now if A and B are infrequent. I don't have to even generate these candidates. So this is called a priori principle and anti monotone property. If an item set is infrequent. Then all its superset will also be infrequent.
+Right? So therefore in this video we talked about basic association rule mining. We understood basic phenomenologies in association rule mining. We looked into key evaluation matrix for rules which is confidence and support. We looked into what is the brute force way of generating association rules which might be a computationally expensive task. And we also looked into the basic definition of a priori principle. In the next video we will solve a new problem.
+numerical where we will derive association rules from a test or a toy example. Thank you for attending today's class. Take care. Bye bye.

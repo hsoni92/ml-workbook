@@ -1,0 +1,143 @@
+Hello to all of you. My name is Dr. Hemant Rathar and we are in the course Machine Learning. Today, we are going to start with a new module, module 10, K-means Crustering Algorithm.
+So today's topic is K-means Crustering Algorithm. The learning objective of this video is, first we will understand the steps of K-means Crustering Algorithm like initialization, cluster assignment and centroid update. Then we will manually trace one full iteration of K-means Crustering Algorithm with a very simple toy example. Then we will also look into the stopping criteria of K-means Crustering Algorithm. So let's start right away.
+So if you look into the K-means Crustering Algorithm, it was proposed by Lloyd in 1957. So you can visualize or you can imagine it was proposed roughly 70 years back, even before the modern computer came into the picture.
+So the basic definition of K-means Crustering Algorithm is, given a set of n data points, given a set of n data points. Now K-means Crustering Algorithm is an unsupervised learning algorithm. That means what we have is just the data points, no class label.
+So assuming I have been given a tabular data points, no class label. So assuming I have been given a tabular data set, right, where data points will be represented in rows. So there will be n rows. There will be n rows. Right. To describe each row, I will have attributes.
+So assuming there are d attributes. So d1, d2, d3 and so on. So I have d attributes. So given I do not have the class label. So given a set of n points, this is unsupervised learning. So no class label.
+So this is called the K-means Crustering Algorithm. Partitions. Remember the word partitions or clusters. These n data points into k disjoint subset. N data points will be partitioned into k disjoint subset. Right. Such that with the objective of minimizing sum of square errors.
+So minimizing the sum of square error is the objective function. We will discuss this in detail in the next few videos. But this is the basic definition and this will give you a lot of insight about K-means if you connect it with the last lecture. Right. So K-means Clustering Algorithm. The partitioning criteria is it's a flat clustering or a single level clustering algorithm. If you remember, there are multiple ways we can partition, right, in clustering.
+One is called flat clustering. One is called hierarchical clustering. In flat clustering, we partition the vector space into non-overlapping subsets or disjoint subset. So K-means is a flat clustering algorithm. The separation of clusters is done based on hard clustering.
+So if you remember, so if you remember, so if you remember, so if you remember, separation of clusters can be done into two ways. Hard clustering, soft clustering. Hard clustering means each point is assigned to only one cluster. Soft clustering means one point can be assigned to many clusters. Right. So K-means is a hard clustering algorithm. It's a flat clustering algorithm. Right. Another way we do clustering is how do we measure similarity. Right. So we can measure similarity based on distance.
+Based on continuity. Right. You remember from last video. Right. K-means clustering algorithm. The similarity is based on distance. That means if the two points are closer, the distance is less. They are more similar. If the two points are far, the distance is high. Their similarity is less.
+And the mode of operation is less. And the mode of operation is, it is a sequential algorithm. That means all the steps, there are four steps in K-means clustering algorithm. All the four steps needs to be done in a sequential fashion one by one. It's not a simultaneous algorithm. You cannot paralyze those four steps in K-means clustering algorithm. So whatever we have discussed earlier, now you will be able to connect those dots in today's lecture.
+So the core idea behind K-means clustering algorithm is, K-means is a partitioning based clustering algorithm. It partitions the vector space into N disjoint or non-overlapping subsets.
+So this is K-means clustering. Right. So this is K-means clustering. What it is going to do. Now K-means, if you see, if you look into the term K-means, it is divided into two parts. K and means. So let's talk about this means. Mean. Right. Essentially mean. Mean means center. Right. In K-means clustering, the mean is the cluster centers.
+So we are going to partition N data points into K-means clustering. So we are going to partition N data points into K clusters, K groups. How do you find the mean or the center of the group? This is the mean. Right. K-means means how do you find mean of the group? Mean of the cluster. Typically mean is calculated by averaging all the points within that cluster. It is also called a centroid. Center is also called a centroid in the context of K-means. K-means is very simple yet very powerful.
+It is one of the most powerful. It is one of the most powerful and popular clustering algorithm you will see today. It is used typically to find spherical and globular shaped clusters. Remember these terms. We'll come back to these. Right. So it is typically used to identify spherical and globular shaped clusters. You remember I have said that line in the last video, which is the idea of any clustering algorithm is to find natural clustering.
+natural clusters in the data. Now natural clusters might be spherical, might not be spherical, might be globular, might not be globular. Right. So K-means can easily detect spherical clusters. We will see why. But I am just raising a point here.
+Now let's look into the K-means clustering algorithm. Right. So first thing let's look into the input to the K-means clustering algorithm. What is the input to the K-means clustering algorithm and then we will look into what is the output. So the input to K-means clustering algorithm is you give it N unlabeled data points.
+unsupervised data points. So we give it N data points. Those are unlabeled. Points can be X1, X2, X2, Xn and these can be D dimensional points. Right. So D dimensional points. So if you remember. Right. N data points and these can be D dimensional. Right. These can be D dimensional.
+Now this is one input to the K-means clustering algorithm. Right. So we have to tell these are the N points and we also have to tell how many partitions we want to identify in these N points. These are the two input to K-means clustering algorithm.
+The output would be these N data points will be assigned to one of the K clusters. Right. So cluster assignment of these N points into K clusters. Each point will be assigned to one cluster. Right. That is what we will get. Right. Cluster assignment of each N point to clusters.
+Now let's look into the algorithm. Right. K-means clustering algorithm is a four step algorithm. Right. The first step is called initialization. The second step is called initialization.
+cluster assignment. The third step is called. Recomputation of centroid. And the fourth step is called loop. Right. I just use small small terminology so that you can remember. First step is initialization. Second step is cluster assignment. Third step is recomputation of centroid. And fourth step is looping. Right. So what we are doing in step number one. In step number one. Right. We need to initialize.
+initialize the centroids right so I have been given let's suppose these are my data points
+before we start running the k-means clustering algorithm if I give you this data set and ask you
+how many natural clusters are in this data set so you will tell me there are two natural clusters
+in this data set cluster one cluster two k-means will be successful when it will be able to identify
+these natural clusters right so we have not run k-means till now we are going to run it now but
+you can understand what I'm trying to point out step number one is right I have passed these eight
+data points n1 to n8 to k-means clustering algorithm and I have passed k equals to 2 assuming I have
+passed k equals to 2 so this vector space will be divided into two subparts two subsets two groups
+two partitions right non-overlapping okay so the first step is initialization of centroid so the
+initialization of centroid will be done in a random fashion so in the vector space I can initialize
+centroids how many centroid 2 because k value is 2 so I'm going to initialize two centroids randomly
+into the vector space let's suppose this is centroid 1 mu 1 and this is centroid 2 mu 2 right so this is
+step number one given a set of n data points 8 data points and k equals to 2 the first step is
+initialization of centroid centroid are initialized in a random space in the vector space step number one
+step number two right now each point will be assigned to its nearest cluster right each point will be assigned
+to its nearest cluster what we are saying here is cluster means essentially it is represented by the
+centroid right so clusters in k-means context are represented by centroid so each point needs to be
+assigned to its nearest centroid right so how do we do that you have to find the distance between centroid
+and the point so if this is p1 right whether p1 should be assigned to mu 1 or mu 2 will be determined
+by the distance between mu 1 and p1 and mu 2 and p2 right since the distance between mu 1 and p1 is less
+right p1 will be assigned to mu 1 right that means cluster 1 right let's talk about point 2 let's suppose this is
+point 2 same step we have to do this point we have to calculate the distance between p2 and mu 1 and p2 and mu 2
+whichever is the lesser distance the point will be assigned to that cluster right to that centroid
+we have to do it for all the points so step number two is right assign each point from 1 to n to its
+centroid right now here you can see right you have to do it for all the points and here we are doing
+each point xn is the point and mu k is the centroid right so you have to calculate the distance between x1
+mu 1 x2 mu 2 right and so on and here i have a squaring term why because it might sometimes give you
+negative value to sort of handle the negative value right you just square the values you square the
+final distance okay so we have to do it for all the points step number three is re-computation of
+centroid right so let's suppose all these points are assigned to mu 1 and all these points are assigned
+mu 2 that means this is my cluster 1 now and this is my cluster 2 now right so after step number two
+all these points p1 p2 p3 and p4 are assigned to mu 1 and rest of them are assigned to mu 2 now we have done this
+step number three is re-computation of centroid so right now my cluster 1 looks like this cluster 2 looks like this
+we have to identify the new boundary of centroid how do you identify the new boundary of cluster 1
+we have to look into the centroid of c1 cluster 1 initially we initialize the mu 1 or centroid
+right randomly now i have few points i can recompute the centroid so now re-computation of centroid will be done
+based on the points which were assigned earlier so we have to calculate the center of these p1 p2 p3 p4
+right re-computation of centroid so mu 1 will move from here to here and mu 2 will move from here to here
+step number three step number three step number four you loop right from step number four go to step number two and do step number three four two three and so on loop till we converge now what is the convergence condition we will come back to that in some time but this is the basic idea i have a lot of examples to pictorical we show you do not worry
+okay so this is what we discussed right k means clustering algorithm is divided into four parts
+step number one initialization initialization of centroid so random initialization of k
+right we have to find k clusters so input to the k means clustering algorithm is n data points and k
+clusters so randomly initialize these k clusters
+right with k points right that is called initialization right so here i have initialized mu 1
+randomly in the vector space i could have initialized it here i could have initialized it here i could have
+initialized it here and so on right so both the variants are available right typically centroids are
+initialized overlapping the end points right so one of the points will be overlapping with the centroid right
+that way it is typically implemented step number two right cluster assignment now once we have initialized
+the centroid each point will be assigned to its nearest centroid right and step number three then right
+re-computation of centroid right so let's do a toy example now right let me show you a toy example okay right let's
+suppose this is my p1 this is my p2 this is my p3 this is my p4 and so on
+okay i passed all these points p1 to p8 and i passed k equals to 2 to k means clustering algorithm
+now k means clustering algorithm right will first step is initialization will randomly initialize two centroid
+so this is centroid one and this is centroid two this is step number one then assignment of each point to its nearest centroid so p1 will be either assigned to mu1 or p1 will be assigned to mu2 how do we do that p1 will be assigned to mu1 because the distance between p1 and mu1 is less as compared to mu2 you do it for p2 as well you do it for p3 as well you do it for all
+all the points right so now so initialization is done then the second step is cluster assignment right so
+each point is assigned to its nearest centroid so when i do that right this is how it would look like
+each point will be assigned to its nearest centroid
+this becomes my cluster 1 and this becomes my cluster 2 yeah yeah it's non overlapping so you can understand this is better non overlapping right like this okay so my step number 2 is done now step number 3 is recomputation of centroid right so in recomputation of centroid i will recompute the centroid right so recomputation of centroid i will recompute the centroid right so recomputation of centroid i will recompute the centroid right so recomputation of centroid i will recompute the centroid right so recomputation of centroid i will recompute the centroid right so
+what the recompute the centroid means now typically right now these points are assigned to mu1 and these points are assigned to mu2 now i will recompute the centroid so average of all these points will give me c1 and will give me c2 cluster 1 and cluster 2 and then we iterate till we converge right so this is how k means works now these are the steps these are and then we iterate till we converge right so let's look into
+a very toy example that will be able to help you to visualize a lot of details here right okay this is my data set right points here are represented with green color and i passed all these points along with k equals to 2 now let me ask you first how many natural clusters are in this data set you will see there are two clusters natural clusters in this data set yeah so my k means crusting algorithm at the end of the day should be
+able to identify these two clusters c1 and c2 that would be able to identify these two clusters c1 and c2 that would be the aim of k means crusting algorithm if it is able to do that then your crusting algorithm is good otherwise the crusting algorithm is performing
+poorly right so i pass k equals to 2 right step number one initialization of centroid so i randomly initialize centroid blue centroid and red centroid at two equations
+okay step number one initialize centroid so let's talk about this point how do you assign whether you assign it to mu1 or mu2 you calculate the distance since it is closer to blue cluster this point is closer to blue cluster it will be assigned to blue cluster rather than red cluster right we do it for all the points right so when i am done with this point i will be assigned to blue cluster rather than red cluster right we do it for all the points right so when i am done with this point i will be assigned to blue cluster right so when i am
+done with step number two right all these points which are represented with blue color are part of
+blue cluster and all these points which are represented with red colors are part of red
+cluster right why you have done this it is this point is closer to red cluster that is why it is
+assigned to red cluster this point you must have done this in the last step right this blue point
+this point is assigned to blue cluster because it is much closer to the blue centroid as compared to
+the red centroid yeah i hope this is clear step number two complete step number three
+recomputation of centroid now forget about this centroid forget about this centroid now i know
+this is my cluster this is my red cluster can i recompute the centroid yes i can recompute the
+centroid by averaging all the points we will look into the formula and optimization as we move ahead
+but just average all the points when we do averaging of all these points
+right this is how it would look like so my centroid from here is moved to here and here
+right now step number three done iterate you move to step number four step number four says go to step
+number two till we converge till we converge till we converge right so again i move to step number two
+what i have to do i have to do assign each point to its nearest centroid right so you can understand
+from here when i assign each point to its nearest now these are the current cluster centers i will assign
+each point to its nearest centroid so you can see all these points for now are much closer to blue cluster all
+these points are much closer to red cluster so in the next iteration right all these became blue all
+these became red right we are converging step number two done then again recomputation of centroid so my
+centroid location will move now to here and here again step number four go to step number two right we assign
+each point to its nearest centroid right so see now you see few of the points now are much closer to blue cluster
+as compared to red cluster so now my cluster boundary is changing again so we iterate till we converge right
+so finally see k-means clustering algorithm is saying this is blue cluster and this is red cluster
+are these natural clusters yes these are natural clusters so in this case k-means clustering is able to
+identify natural clusters in the data set right so this is how k-means work right if you want to see again
+let me just quickly skim through it so you will be able to visualize how it is moving
+yeah so we are here step number two step number one step number two step number three step number
+two step number three step number two step number three step number two step number three right
+so this is how we find natural clusters in the data set another toy example right let's suppose these
+are the data points i pass k equals to three assuming all these are black right now i pass
+k equals to three step number one random initialization of centroid so this is green centroid this is a
+red centroid and this is blue centroid each point is assigned to its nearest centroid step number two
+complete step number three re-computation of centroid right so this is green cluster right now this is
+blue cluster right now and this is red cluster right now recomputation of centroid right my
+centroid location is moved from here to here from here to here and from here to here right so my
+cluster boundaries are changed now and you can visualize how we are moving right so let me show you
+quickly right step number one done initialization done step number two is also done right assigning each
+point to its nearest centroid step number three re-computation of centroid okay so centroid location
+moved step number four is also done step number two is again also done each point is now assigned to its nearest centroid
+as we iterate you can identify that you can visualize that i'm able to identify natural clusters in the data set
+these are the natural clusters so k means algorithm is good at identifying spherical or clusters in the data set right so he in this case also k means was able to identify natural clusters in the data set so what is the stopping condition right so in step number four we were saying
+we are saying iterate till we converge so what are the stopping condition stopping condition can be many
+but i am discussing three here right right so the first one is the cluster boundaries are not changing right or cluster membership are not changing that means in the last iteration those end points are assigned to one of the clusters in the next iteration also those same points are assigned to same clusters so that means the membership of those points are not changing at all
+at all if the membership of points are not changing between iteration we can stop right so no new assignment if it is happening we can stop or minimum change in the centroid if the centroid location is not moving between these iterations so when you reach four and when you reach two three and again reach four between these iterations right this is the loop right so this is iteration one this is iteration two iteration three and iteration four and so on so between iterations no cluster membership is changing
+or there is a minimum change in the centroid or there is a minimum change in the centroid or we have reached the maximum number of iteration for example in sklearn right the maximum number of iterations are defined as 100 right that's the default value they said but again we can change it it's a tunable so the algorithm should not run indefinitely we can fix the number of iterations that we want to iterate so any of these conditions or a combination of these conditions can be used right as the stopping condition so let me repeat right
+we are talking about stopping condition this is my iteration this is iteration one then i go back and start doing the iteration two then i go back and start doing the iteration three so between iterations if the membership is not changing or centroid is not changing or i've reached the maximum number of iterations then i can stop
+let's let's take a very small toy example quickly to understand this right so let's suppose i've been given a data set with six data points p1 p2 p3 p4 p5 p6 these are two dimensional data points right so this is x this is y this is x this is y and so on
+right i want to take a very small toy example right i want to take a very small toy example right i want to partition or i want to pass these data sets right to k means clustering algorithm with k equals to 2 that means i want to find two groups in the data set or two clusters in the data set so let's do that step number one initialization of centroid right so let's suppose centroid one and centroid two are randomly initialized right so they can be initialized anywhere in the vector space right now when i say anywhere in the vector space there are two variants that are
+either the centroid are overlapping with one of the existing data point or might be not be overlapping with the existing data point both the variants are possible in this example we are assuming that the centroid are overlapping with one of the data point so c1 would be overlapping with one of the data points p1 to p6 and c2 is also overlapping with any one of the data points randomly any one so both the variants are possible and you will see both of them
+in the literature so c1 is actually overlapping p1 and c2 is overlapping p4 right it could have been p2 p5 any combination would happen random initialization of centroid so c1 is randomly initialized overlapping p1 and c2 is randomly initialized overlapping p4 step number one done step number two cluster assignment phase so each point will be assigned to its nearest centroid so p1 is overlapping with c1
+so definitely p1 so definitely p1 will become part of c1 let's talk about p2 so for p2 we have to calculate the distance between p2 and c1 and p2 and c2 right so distance between p2 and c1 would be right x2 minus x1 plus y2 minus y1 square square under root
+euclidean distance euclidean distance euclidean distance euclidean distance euclidean distance euclidean distance computation as simple as this we have done this so once we are done with that right the distance between p2 and c1 is 1 and p2 and c2 is 6.7 since p2 is much closer to cluster c1 centroid c1 right p2 will be assigned to c1
+similarly we are done with that c1 and c1 similarly we are done with that c1 and c1 similarly we do it for p4 p4 is overlapping with that c2 so that is not a problem p5 and p6 right so each of these points will be assigned to one of the nearest centroid
+right so in this case p1 and p3 fall under cluster c1 right or after step number two right iteration one step two and p4 p5 and p6 are assigned to cluster c2 now iteration one step three recomputation of centroid that we will see later on
+okay here only so here only so iteration one step three recomputation of centroid so now i will recompute the centroid c1 dash and c2 dash based on so c1 dash will be based on p1 p2 p3 p1 p2 and p3 and c2 will be based on p4 p5 and p6 yeah very simple
+right so what i did so what i did x1 plus x2 plus x3 divided by 3 y1 plus y2 plus y3 divided by 3 right so these are my new centroid c1 so iteration one step number three done iteration one step four loop go to iteration two step two and you repeat until we converge
+therefore in this video we looked into the basic algorithm of k-means clustering algorithm it comprises of basically four steps initialization cluster assignment updation and loop right these are the four steps in k-means clustering algorithm we took a toy example also to understand it better we will continue on k-means clustering algorithm in the next video as well take care bye bye
+you
