@@ -1,0 +1,285 @@
+
+
+
+  Page 1 of 6
+
+
+Lambda configurations & iam role usage transcript
+
+In this demonstration, we'll  understand how AWS Lambda works internally, how it is
+configurations control the performance and limits, and also how the IAM rules decide
+what Lambda is allowed to do. We'll do everything using the AWS console from a step-
+by-step. For jumping into the La mbda, just a quick recap, Lambda has two
+responsibilities, which is it runs your code and it respects the limits and permissions
+that we configure.
+
+So, configurations control how it runs and IAM controls what it can access, right? So,
+since Lambda is a serverless compute service, something similar to EC2 instance, but
+you don't have to maintain any servers like managing the OS, patching, or worrying
+about increasing the capacity like a memory or CPU when it comes to using an AWS
+Lambda. We focus only on the code and configuration, right? So, mostly AWS Lambda
+is used in cases wherein you have some automation to perform any kind of file
+processing or there is an event-driven task that you want to be performed instead of
+manually doing it. So, automation is one of the key elements when it comes to utilising
+AWS Lambda, right? So, let's create a Lambda function and try to understand
+everything from scratch.
+
+So, we have three approaches, authoring from scratch as in providing all the details
+using a container image or using a blueprint of an existing Lambda application. So,
+we'll author from scratch to understand how everything goes. So, we'll give it a
+meaningful name, something like demo Lambda config.
+
+So, this name becomes the identity of the function inside your AWS. Next comes the
+runtime. So, here we can use maybe Python.
+
+So, runtime decides the language and execution environment. AWS maintains this
+runtime on your behalf. We're not going to instal Python ourselves, right? So, if we are
+trying to run a logic inside our EC2 instance, we have to make sure that Python is
+installed and then we can run any Python-based operations.
+
+But when it comes to using AWS Lambda, you don't have to worry about setting up
+and installing your runtime. So, all we have to do is select and AWS will spin up a
+server from its fleet of resources and assign us a Python-based server, right? So, this
+is the reason why we say that AWS Lambda, we don't have to worry about the patching
+operating system or working with anything related to managing your OS. Next comes
+the architecture.
+
+So, we have two types of architectures. These architectures affect the performance
+and compatibility. ARM is cheaper.
+
+
+
+
+  Page 2 of 6
+
+
+x86 is more widely compatible. So, usually in production x86 is preferred choice for
+many projects. So, we are going to go with the same.
+
+Next comes the execution rule. So, just to reiterate, Lambda needs permissions to do
+anything in AWS. Without an IAM role, Lambda cannot even write the logs.
+
+Now, what is the difference between IAM role and IAM user? IAM user is something
+that we use for our personal tasks, like for human interactions. When we personally
+want to access a service within our cloud, that is when we use IAM user. When we
+want one o f the AWS service to interact with another AWS service on a temporary
+basis, in those situations, we use IAM role.
+
+So, IAM role is mostly to have two services communicate with each other. These two
+services could be in one AWS account or they could be across different AWS
+accounts. So, at the moment, this is my AWS account and if I want my Lambda to
+communicate with an other service within this same account, I am going to use IAM
+role.
+
+I can also use it if the role is, if the service that it's supposed to communicate is in
+another account, I can still use IAM role. So, here we have three options. Creating a
+new role with basic Lambda permissions, which is the default setting.
+
+Whenever you create a Lambda, an IAM role will automatically be created by default.
+If you have a customised role, you can use that customised role. You can find it over
+here.
+
+Right. Then, you can also create a role for any AWS policy templates. So, this is a bit
+advanced where you can provide your name and you have to choose certain policies
+from the provided list.
+
+But to avoid any complexity, we'll go with creating a new role. We'll let AWS create
+necessary role, necessary permissions for us. Right.
+
+And then comes the configuration. In the configurations, we have the networking
+elements just like any other service. Right.
+
+So, we have the VPC, we have for security. So, all of these are advanced options
+which we use in production level. Using which VPC you want, what function URL you
+want your Lambda to work with other services.
+
+So, these are configured inside the additional configurations. Let's go ahead and
+create a first function. So, now a Lambda function is created successfully.
+
+
+
+
+  Page 3 of 6
+
+
+The moment it is created, it gives us an option to access this Lambda function from
+our code editor, any code editor that you have. So, Visual Studio Code is a default
+one. Right.
+
+So, there are certain steps that you need to follow. You need to just run your AWS
+credentials, make sure that you are authorised to use this AWS account locally. Then
+you make your code changes and you deploy and invoke this Lambda.
+
+So, this is one way of doing it. But we can just try to use this simple approach as you're
+trying to understand how things work. So, this is how the entire interface of your
+Lambda looks like.
+
+Majority of the times Lambda functions are managed through this interface because it
+is easier and convenient compared to doing it locally. Right. Because the setup and
+everything takes up some amount of time.
+
+So, we prefer doing it from this interface. Now, there are a couple of tabs that we have
+to manage our AWS Lambda. The first tab is the code.
+
+This is where we write the actual logic that we want our Lambda to be performed.
+Right. Then comes our test event, which is where we can verify if our code is running
+properly and where we trigger our entire Lambda function.
+
+We'll deep dive on this further in the practical lab. Let's move on to the configuration.
+In configuration, you have various settings over here.
+
+So, in this general configuration that you see, the first thing is we have memory.
+Memory is not just RAM in this case. In Lambda, CPU power increases with the
+memory.
+
+So, more memory often means faster execution and lower total cost. Lambda having
+more CPU is using more capacity and in return, we have to pay more bill for what we
+have used. But Lambda is chargeable only when it is running.
+
+Right. So, as long as your Lambda is not running, you will not be chargeable for it.
+That is the reason it is usually considered to provide a good amount of memory over
+here.
+
+Usually, 512 would be more than enough to perform our regular day-to-day operations
+using Lambda. But you also have a limit of 128 MB till proper 10,240 MB. Right.
+
+You can also manage the storage, which again serves the same purpose. Next comes
+the timeout. Timeout is the maximum execution time.
+
+
+
+
+  Page 4 of 6
+
+
+If the function crosses this limit, AWS kills it immediately. Timeout fails are pretty
+common in production. So, the maximum timeout that you can go is 15 minutes.
+
+Right. So, this is another key point which AWS is trying to inform the customers that
+we are going to manage the servers on your behalf. We are going to scale it
+automatically.
+
+But you are not supposed to use it constantly for more than 15 minutes. Because what
+happens usually in projects, we run applications or any servers that we use for our
+application are run 24 by 7. So, to avoid that, we have a limitation of 15 minutes.
+Whenever you are trying to use a Lambda function to automate a task, be it anything
+for an API backend or it could be anything related to your event -driven task or file
+processing, it should not go beyond 15 minutes.
+
+So, it should be under 14 minutes. Your logic that you are going to write in the Lambda
+function, that also has to be minimal. The goal of using Lambda should be to get the
+job done as fast as possible.
+
+That is the only way to get a job done and pay less for it. So, for that reason, you can
+set a proper timeout of how much time you want the Lambda to be closed. So, usually
+in production, this should not go beyond 8 or 9 minutes.
+
+It depends from task to task and team to team how flexible they are with the billing.
+So, we are just using an existing role as defined earlier. So, let us try to save these
+changes.
+
+Next comes the environment variables. In environment variables, we can add
+environments depending upon our code. In production, we have multiple environments
+running.
+
+Like one environment, we have it for the production and one environment maybe we
+have for development. So, you can add as many environments as you can as a key
+value pair and refer to these keys as a placeholder inside your code. You do not have
+to hard code them every time because this environment key might be used like 10 or
+15 times in hundreds of lines of code.
+
+So, if you decide to remove prod and keep only dev, then you have to make changes
+across those multiple lines. So, to avoid that, you just mention environment and you
+come back here and change it from prod to staging or whatever value you want to
+replace it with. So, this is a one-stop solution to be implemented across multiple lines.
+
+This is the reason we use environment variable. Basically, these help separate the
+configuration from your code. Next is concurrency.
+
+
+
+
+  Page 5 of 6
+
+
+So far, we talked about how one lambda execution behaves. Now, let us talk about
+how many executions can lambda run at the same time. Concurrency is nothing but
+number of lambda executions running at the same time.
+
+Let me repeat that again. Concurrency is the number of lambda executions running at
+the same time. So, here we have something called as default concurrency, function
+concurrency, unreserved.
+
+So, we have multiple options in this case. By default, lambda automatically scales. If
+100 events arrive, AWS can run 100 executions in parallel.
+
+This scaling is automatic. You don't have to use any auto scaling groups in this case.
+Next we have is reserved concurrency.
+
+Reserved concurrency sets a hard limit on how many executions this function can run
+at once. Like if I set the concurrency, let's say to five. So, only five executions can run
+at the same time.
+
+The sixth request will be throttled. Now, why the throttling happens in this case?
+Throttling is not a crash. It means lambda saying, wait, I'm busy.
+
+So, this reduces the load on your lambda function. The simple mental model when it
+comes to understanding all of these configurations is memory controls power per
+execution memory. Timeout controls how long one execution can run.
+
+Concurrency controls how many executions can run together. Right? So, concurrency
+does not make a single function faster. It only controls how many run in parallel.
+
+Now, let's look into  the most important concept within lambda, which is permissions.
+This IAM role that you see, this was auto created by AWS. This IAM role assumed by
+lambda at a runtime.
+
+In short, lambda temporarily becomes this role. Lambda itself has zero permissions.
+All it is going to perform is through this role.
+
+Before even saying yes to any operation, it is going to look into the details of this role.
+Does it have the permissions? Is it authorised or not? So, if we open this role, so this
+is just part of your IAM roles, just beside your users. Right? So, at the moment, it has
+the basic execution role.
+
+Right? So, we can either look from here as well. So, if we expand this, so all we have
+is access to CloudWatch logs. Basically, this is used to monitor what is going on in our
+lambda.
+
+
+
+
+  Page 6 of 6
+
+
+CloudWatch is one of the monitoring service in AWS. It helps us to create the logs of
+every event that is going on and every metric that is being performed behind the
+scenes. This is what allows lambda to just write the logs to CloudWatch.
+
+Nothing else. There's no other permission added inside this particular resource. Now,
+let's say I want my lambda function to interact with an S3 bucket.
+
+Maybe there is a file present in an S3 bucket and I want my lambda to read that file.
+So, for that, I need to go back to my permission, to my role, into the permissions
+column. I have an option to attach policies directly.
+
+So, from here, I can say Amazon S3. So, I can give read-only access so that if anyone
+has even incorrectly written a code to delete the file from the S3, the lambda will throw
+an error saying that this lambda doesn't have permissions to delete the objects from
+an S3. So, all I can do is check box this and click on add permissions.
+
+Again, the most important rule, whenever you are providing permissions or policies to
+your role or user, always provide only that are needed. We have to follow the concept
+of least privilege. Whatever access is needed, only that should be granted.
+
+Others should be ignored. So, now the permissions that we have given live in the IAM,
+not inside the code. These permissions are nowhere close to your code.
+
+Right? Your code is completely different and the permissions are completely different.
+So, to summarise, lambda configuration controls how the function runs. IAM role
+controls what the function can access and perform.
+
+Understanding the separation is important to build a secure and scalable serverless
+systems.
+
+-----------------------------------------------------End------------------------------------------------------

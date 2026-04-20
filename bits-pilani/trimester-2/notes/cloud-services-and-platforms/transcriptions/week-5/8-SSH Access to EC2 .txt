@@ -1,0 +1,54 @@
+
+
+
+  Page 1 of 2
+
+
+SSH Access to EC2 Transcript
+Once an EC2 instance is launched, the next natural question is, how do we actually
+connect to it? In AWS, servers do not use passwords by default. Instead, access is
+done using something called as SSH with key pairs, which is far more secure and
+widely used in real-world environments. Let's deep dive on SSH.
+SSH stands for secure shell. It's a secure encrypted way to connect to a remote server
+and run commands. Whenever engineers instal a particular software, configure
+applications, or debug issues on a server, they almost always use SSH.
+Now, AWS does not allow password-based login for EC2 by default. It uses key-based
+authentication. A key pair has two parts.
+The first is the public key. This is stored on the EC2 instance when it is launched. The
+second is the private key, usually a .pem file.
+This is downloaded by you and stored safely on your laptop. When you try to connect
+your laptop present with the private key, both of these are required. The EC2 instance
+checks whether it makes the public key it has.
+If they match, access is granted. If not, the connection is rejected. So there are no
+passwords involved at all.
+This is much safer than passwords because keys are harder to guess, harder to steal,
+and easier to manage securely.
+One very important practical detail is the username. The SSH username depends on
+the operating system of the instance.
+For Amazon Linux, the user is ec2 -user. For Ubuntu, it is ubuntu. Using the wrong
+username is one of the most common beginner mistakes that everyone does.
+A typical SSH command looks something similar to this. You specify the private key,
+the username, and the public IP of that instance. Now, let's talk about security.
+The private key is extremely sensitive. It should never be shared, emailed, or uploaded
+to any repository like GitHub. The file permission should be restricted so only you can
+read it.
+A simple way to remember this is think of the public key as a lock installed on the
+server's door. The private key is the only physical key that opens it. AWS instals the
+lock, but you are responsible for protecting the key.
+If you lose the private key, you lose access to the server. In real -world DevOps and
+cloud-based roles, SSH is used daily for troubleshooting, emergency fixes, and
+configuration tasks. Later, you'll see services that reduce the need for SSH.
+
+
+
+
+  Page 2 of 2
+
+
+But understanding this concept is absolutely foundational. We'll move into basic
+instance management where we'll see what happens when we start, stop, reboot, or
+terminate an EC2 instance. Basically, we'll observe what are the different phases of
+working with your EC2 instance.
+
+
+------------------------------------------------------End-----------------------------------------------------

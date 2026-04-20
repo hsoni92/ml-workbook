@@ -1,0 +1,117 @@
+
+
+
+  Page 1 of 3
+
+
+Monitoring lambda functions transcript
+
+In this demonstration, we'll see how AWS Lambda is monitored using a CloudWatch
+service. How we can observe  the metrics and logs based on the code that we are
+trying to run. So, we'll try to do some real -time analysing and look out some
+dashboards of how the metrics are being generated based on our execution.
+
+So, Lambda monitoring is all about metrics tells us what happened, logs tell us why it
+happened. This is the difference between metrics and logs. Both of these are part of
+monitoring, but they provide us different information.
+
+In serverless, there are no servers to assess it. Monitoring is the only way to
+understand the behaviour, failures, and performance. If Lambda never runs, then
+probably there are no logs to display.
+
+So, first, we'll try to intentionally generate some logs to understand how this monitoring
+works. In the code part, I've tried to add a very simple logic. Basically, what we're trying
+to do is we're trying to perform a basic operation.
+
+So, in this, I've tried to print a statement in the Lambda, which will automatically go
+into the CloudWatch logs. We don't configure logging separately. AWS does it for us.
+
+Since we already have the permissions assigned to the role attached to this Lambda,
+so this role already has the permissions attached. So, if I refresh this once again, since
+we have added S3 as well in the previous demonstration, so now S3 will also be
+visible. So, these are the permissions attached to our Lambda.
+
+Now, based on our logic, if I try to run it once or twice, we are going to get some logs
+created. So, let's try to deploy it first. So, I've already deployed these changes.
+
+Whenever you try to add a new code, you always have to deploy the code and then
+you click on test. So, you can create a new test event in this case. So, I'll say it is a
+demo event that I want to invoke.
+
+So, I'll say save and then I'll try to invoke it. So, we have a terminal over here. So, this
+was the exact message that we just tried to print regarding our Lambda.
+
+Now, moving ahead, let's try to figure out the metrics that were consumed behind the
+scenes to run this entire logic. It's a simple logic, but let's still try to understand what
+happened. For that, we have to go to the monitoring column.
+
+So, we have various graphs present over here. So, since this does not have much
+impact on our Lambda, so pretty much the logs are going to be simple. So, we have
+different options.
+
+
+
+  Page 2 of 3
+
+
+
+We can figure out what is the metrics on different time frames, one hour, three hours.
+We can also use local time zone. Invocations, this graph tells us how many times the
+function was called.
+
+Duration tells us how long it ran and affected by memory and code. Errors will just give
+us any failed executions that will appear. Protals, this happens when the concurrency
+limits are exceeded.
+
+Then, all of this connects directly to the concurrency configuration that we discussed
+pretty much earlier. So, we have multiple more graphs like this which serve the similar
+purpose. Let's get into the view logs.
+
+So, this is what tells you why a particular event has happened. All right. So, here as
+you can see, once I click on view CloudWatch logs, so we have multiple options to
+look into what log groups and what streams have been created.
+
+So, currently I'm trying to record this. So, this is the date in which I have tried to run
+my log that I have created. So, if you open this log stream, so these are groups created
+on a day-to-day basis.
+
+On one day, if I try to rerun my lambda once again, another log stream will be present
+with a different time frame. So, this is a way that AWS allows you to individually monitor
+each lambda run. So, once we open this in a new tab, so we have the logs displ ayed
+over here.
+
+So, as you can see, we have all the details that we have mentioned. So, if I just scroll,
+so whatever we are trying to perform through our lambda logic, all of that is performed.
+If there were any errors, you get to see the errors as well.
+
+And this is where you get the whole report of what happened with your log. The start
+and end are added by the AWS. The lines in between are just our application logs.
+
+So, the duration, the build duration, the memory used, every little detail that we have
+are properly monitored and displayed for our convenience. This is how you just monitor
+your logs. It is pretty easier to understand what is going on with your lambda.
+
+All you have to do is trigger your lambda function from here. Once you trigger it, so
+you will get a certain output, whether it is success or failure. From there, you go to the
+monitoring part and you observe how the metrics are running.
+
+So, currently we have this over here, we have some invocations, we have some
+duration, which is roughly, we have some error. We do not have any error count, so
+
+
+
+  Page 3 of 3
+
+
+things are in green. Post this, you go to the view cloud watch logs and you can analyse
+clearly what happened with that lambda trigger.
+
+So, since it is on the same day, if I open this once again, close the previous tabs, so
+now you have more logs. So, this is the new set of logs. So, this is our first run and
+this is our second run.
+
+So, as many times you run, you get the whole result over here. You can expand all of
+them at once and see if it was successful or failed or stuck at any step. You can
+observe everything.
+
+-----------------------------------------------------End------------------------------------------------------

@@ -1,0 +1,55 @@
+
+
+
+  Page 1 of 2
+
+
+CloudWatch Logs Transcript
+In this topic, we'll understand CloudWatch Logs, which is AWS's centralised logging
+service. In modern cloud environments, applications don't run on just one server. They
+run across many instances, containers, and services that can appear and disappear
+at any time.
+Because of that, logging into individual machines to check the logs simply doesn't work
+anymore. CloudWatch Logs solve this by collecting logs from different AWS services
+and bring them into one central place. At a high level, CloudWatch Logs help you see
+what your systems are doing, understand the failures, and debug the issues without
+touching the underlying servers.
+Now, let's understand how it's structured. Logs in CloudWatch are organised using
+something called log groups and log streams. A log group represents a logical
+application or a service.
+For example, a lambda function or a web application. Inside that log group, there are
+multiple log streams. Each stream usually represents a single source like one EC2
+instance or it could be a one container or one lambda execution.
+Inside those streams are the log events, which are the actual log messages with the
+timestamp. Logs can reach CloudWatch in different ways. Many AWS services like
+Lambda, API Gateway, send logs automatically.
+For EC2 instances, we usually instal an agent called as CloudWatch agent to push the
+system and application logs. Applications can also send logs directly using a concept
+called SDKs. A helpful way to think about CloudWatch logs is like a central control
+room.
+Imagine a large office building with hundreds of CCTV cameras. Instead of checking
+each camera individually, all the video feeds come into one control centre.
+CloudWatch logs plays the same role for system and application logs.
+This centralised setup makes troubleshooting very much easier. You can quickly
+identify errors, track any unexpected behaviour or investigate failures without jumping
+across the machines. Another important concept is log retention.
+Logs are not meant to live forever. You can configure how long the logs should be
+stored. For example, 7 days, 30 days or even longer depending on the compliance
+needs.
+This helps control your storage cost while keeping only useful history. CloudWatch
+logs also integrates tightly with other AWS services. You can trigger alarms based on
+log patterns, invoke your Lambda function automatically or export logs to S3 for a long-
+term storage.
+The key takeaway here is that CloudWatch logs provides visibility. It acts as the
+foundation for debugging, monitoring, auditing and understanding how your systems
+
+
+
+  Page 2 of 2
+
+
+behave in the production. In the next topic, we'll look at CloudTrail which focusses not
+on application logs but on tracking who did what and when inside your AWS account.
+
+
+------------------------------------------------------End-----------------------------------------------------

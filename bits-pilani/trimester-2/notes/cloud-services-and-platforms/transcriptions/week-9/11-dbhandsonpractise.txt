@@ -1,0 +1,343 @@
+
+
+
+  Page 1 of 9
+
+
+
+           DB Hands-On Practice Transcript
+Module 9, Lesson 3, Practical Lab. In this practical lab, we'll create a relational
+database, we'll perform some crude operations just to understand how to interact with
+our database from the AWS account. Then understand backups and we'll compare it
+with a NoSQL database using DynamoDB.
+Post that, we'll interact with it from an interface level and also from a CLI level so that
+we can understand what are the different approaches to communicate and get the job
+done related to our databases. Quick recap, before we dive into the practicals, R DS
+is a Structured Relational SQL Database. DynamoDB is a key value approach wherein
+it is completely serverless and a NoSQL database.
+So let's get started. To demonstrate with the RDS, we are going to use the same setup
+that we have done earlier for our two-tier architecture demonstration. We are going to
+create an Amazon RDS, we'll use a database engine, configure the security group.
+Then to interact with this RDS, we are going to create an EC2 instance, do an SSH
+and communicate with our RDS through that EC2 instance. So let's quickly do that.
+We'll go ahead and create an RDS database.
+We'll go with the same approach with the free tier. So all of this that I'm doing over
+here, this is something that we have already done in that demonstration. So I'm just
+trying to do the same thing again.
+Here we'll create our own security group because we can't use an existing one, or
+maybe I have that old security group. Yes. So I have the security group available.
+So I'm just going to use the security group. We'll use the default VPC and we'll create
+our database. All right.
+This might take a couple of minutes. In the meantime, we'll go ahead and create our
+EC2 instance as well, so that we can communicate with this RDS. Go to launch
+instance, we'll give a similar name like last time, which is web server.
+We'll use the Linux AMI, we'll use the free tier instance type. Key pair, we can use this.
+I have it ready.
+I'll use the same security group, which we have configured last time. All right. So just
+to reiterate what we have done so far.
+So I have created a database, an RDS database, whose security group is configured
+in a way that any request coming in from this EC2 instance, only those requests will
+be processed. Only this is added as a source to consider the request and process all
+the operations. So for this relational database in the security group that we have
+
+
+
+  Page 2 of 9
+
+
+created, that we have used in the previous demonstration, the source for this will be
+the web security group, which means the security group used for this web server.
+So we're just coming to this security group. If we take a quick look at this, I'll go to
+security, we'll open the security group. All right.
+The inbound rule is we have an SSH connection to this particular web server. In the
+previous demonstration, we also had an additional inbound rule, which was HTTP.
+Since we were trying to keep it open for the Internet to reach out to our EC2 instance
+for any kind of front end websites or any other public operations we kept.
+So for this one, since we do not have any such requirement. So I've just deleted that
+HTTP inbound rule and I've left the SSH so that we can communicate with this and
+basically interact with our DynamoDB. So let's see our instance is running.
+See if our DynamoDB is taking time, let's refresh it once again. So if you're doing it for
+the first time, make sure you click on this view connection details and go through the
+save this username and password. Once it is created and active, you won't be able to
+see these details.
+So if you're just trying to practise it, make sure you give a very simple password and
+a simple username, something which you could remember. We'll give it a couple of,
+we'll give it one or two minutes and. We'll see if it is working.
+All right. So our DB is successfully created. So it is taking a backup of our database,
+which is being created.
+So we'll discuss this backup part in a couple of minutes. So whenever a new resource,
+a new database is created, it will automatically take a backup of your database. So
+this is an automated database that is.
+Done through AWS side, we can also take our own database at our own manual effort.
+We'll see that in a couple of minutes. But now, since it is pretty much our database is
+ready, it will be done in a couple of minutes.
+In the meantime, let's connect to our EC2 instance and interact with our RDS. So we
+have two approaches. One is through the browser and one is through your SSH client,
+which you can do it locally by running this command and this command.
+So just to save time, we'll just go with this. I've logged into my EC2 instance. So we
+have to set up our MySQL engine before we go ahead.
+So we do not have it. So let's try to quickly run the same command, which is sudo m
+instal MariaDB FNY. So we are using MariaDB client over here to run our MySQL.
+It should take a couple of seconds, I believe. All right. So now it is done.
+
+
+
+
+  Page 3 of 9
+
+
+Let's try to verify once again if everything is successfully configured. OK, so it is set
+up clearly. Now, let's try to communicate and interact with our RDS.
+So the command is mysql-h. We need the endpoint over here. So we go to our RDS,
+click on our database.
+And on the connectivity and security, we have an endpoint. So we copy it from here.
+Paste the endpoint.
+Then we provide the username and the password. All right. So now I'm inside my RDS.
+The same if I run this exact command from my local terminal or the command prompt,
+it is going to throw an error saying as access denied because our personal laptops or
+systems are not considered as a source to interact with this MySQL engine. Right.
+Only this EC2 instance security group is allowed as a source.
+That's the reason we had to interact and run this command within our EC2 instance.
+So now that our EC2 instance is able to communicate with our RDS, let's try to do
+some crude operations. Let's create a database.
+I'll say again appdb. So let's use this appdb. All right.
+Now, let's try to create a table with a primary key and auto increment as well. Give it a
+name, something like range. All right.
+So we're just trying to create a table user with the name, ID and email. All right. So
+let's try to insert something into this.
+So all the operations that I'm trying to do over here is pretty much what we do on a
+day to day basis, how we interact with our DBs. All right. So I'll provide my name or
+maybe since we provided an email, I'll say at the rate gmail.com. Right.
+So let's try to just verify if things are going as expected. OK, so we can see now the
+similar way we can update or even delete the user ID as well. Right.
+So this is a classic relational crude operation which we are trying to work with the rows,
+columns and SQL. Right. Same similar fashion, whatever operations that we want are
+we want to be performed with our RDS.
+This is how we interact with our RDS through EC2 instance and do all the operations.
+Now, let's try to look into the backup of how this works. So initially, this is our database.
+When you go to this section, you find something like maintenance and backups. So
+this is managed by AWS. Right.
+
+So whenever you want to use this snapshot, like someone has it by default, they might
+have deleted some, deleted the resources or any information which is critical. All you
+have to do is checkbox and restore. This is how you can do it.
+
+
+
+  Page 4 of 9
+
+
+Push this after a couple of, after a couple of duration, after some duration of time. If
+you want to take a manual snapshot of this entire DB, then you can still go to actions
+and select take a snapshot. It will give you options whether you want to take a
+snapshot of your DB instance or the entire cluster.
+Right. So you provide the name like restored version demo DB. This was the default
+one, which was automated by AWS.
+And this snapshot is the one which we have created just now manually. This is how
+you can manage and make sure that your databases are properly backed up and have
+each and every detail without any disaster. So snapshots are manual backups,
+automated backups allow you point in time recovery, which means until a certain
+period of time, let's say until 30 days or for the last 10 days or five days, whatever we
+have, we get, we can restore that version of our database.
+So the key line here is backups are managed. No cron jobs or anything is needed in
+this case. This is how we work with a relational database, AWS RDS.
+Now, let's jump into a NoSQL database. Which is DynamoDB. So DynamoDB works
+on a key value.
+Right. So we have two ways to create a DynamoDB table. The first one is to do it
+manually by clicking on this create table.
+We give it a name like demo DB partition key we can use as user ID. You can leave
+the default settings and you click on create table. Now, let's try to explore the items.
+So when we want to add some items into this table, we go to explore items. If I scan
+the entire DB. So I don't have any items as of now because we just created a table.
+We go to create items. We have two approaches to add the items either through this
+manual approach or if you are aware of how to use JSON, we can just code the entire
+part over here. Right.
+So for simplicity, I'll just use this approach. So we'll add three attributes. First is user
+ID.
+Let's say I'll keep it as 001. Maybe a name and email. I'll take the same example so
+that it's easy to map it.
+So you click on create and your item will be created over here. Right. Similarly, let's
+try to add one more item, say 002.
+
+So this is how we have our items. Now we can query these just like we do through our
+regular tables. But here we go with the manual approach.
+So we go with query. Let's say I want to get the information of user ID who has 002.
+So you can see that the user ID is 002 and the user ID is 001.
+
+
+
+  Page 5 of 9
+
+
+So this is how you get the information populated for that particular user. This is how
+you use your DynamoDB manually. Now, let's try to do this exact approach through a
+CLI.
+For that, we need to get back to our EC2 instance. So let me connect to it. All right.
+So now to connect to my DynamoDB from a CLI, I can either do it from here or I can
+even do it through my command prompt as well. Since I have the EC2 instance
+running, we can use this. Run AWS configure.
+Make sure that you are authorised to create a DynamoDB table. Right. So for this, it
+is going to ask you access key.
+Secret key. It will ask you a default region. And then what type of an output format do
+you want? Right.
+So this is how it is going to ask. So let's try to do this once again. So coming to the
+access key, I need to go to my IAM user to get these all of these details that are
+requested.
+So let me head back to my IAM. I'll go to users. So this is my own user ID.
+So we'll create a dummy user ID and provide the necessary permissions. I'll checkbox
+this. I'll use some auto-generated password.
+That should be fine. I'll say attach policies directly. And I'm going to provide
+administrative access.
+Right. So for here in production, usually it is not recommended to provide
+administrative access directly. Right.
+So it is. We always follow a process called leased privilege, provide only the access
+which is needed. In this case, we are trying to create a DynamoDB table from our CLI.
+So if I go to Dynamo, if I search for DynamoDB, I can just provide full access regarding
+DynamoDB. Right. But since I'm trying to demonstrate, I don't want to go back and
+forth for all the permissions.
+So. I'm giving it an administrative access for now. So I'll go next and create the user.
+Now my user is created. I'll just download this details. I'll return to the user list.
+So now I have my user over here. So we still need the access key and the secret key
+required. So I go to security credentials.
+
+Scroll down for this particular user. There are no such accounts. So I had to create a
+user.
+We're using it for the CLI command line interface. So I'll  choose that. Checkbox this
+and go with next.
+
+
+
+  Page 6 of 9
+
+
+I'll say. Demonstrating DynamoDB via CLI. So now I have my access key and the
+secret key.
+Make sure you download the CSV file and save it if you're going to use this same user
+again and again. Right. So do not expose these keys to anyone because anyone who
+has access to this can perform any actions that you on within your AWS account.
+So always keep this secure or deactivate and create a new ones. Right. So I'll just
+copy this access key.
+I'll paste it over here. Then I'll go with the secret key for the region. I'll say US East 1
+and go with Jason for the output.
+All right. So now. I'm configured and now I am telling to this particular terminal that I
+am configured.
+My IAM role has the permissions to create DynamoDB table. And these are the
+credentials for you to verify. So now that it is verified.
+Let's try to create our first DynamoDB table. Whenever we create this there is a certain
+format that we use to create all the details. So it looks something similar to this.
+So here all we're trying to do is provide all the necessary information required to create
+a DynamoDB table. Right. So when we were trying to create our table from here all
+we did was provide a table name a partition key.
+Some settings over here since we are doing it through the command line interface.
+We need to add a couple of details specifically at how we want to configure our
+DynamoDB. So for that reason all I have done is I'm mentioning that I have created a
+DynamoDB table and the table name is going to be app underscore events.
+And these will be the definition of attributes. So in this case we are using user ID and
+event time. In the manual approach we used user ID name and email.
+So here we are just using user ID and event time. Right. And then the key schema for
+these two attributes for user ID and the event time.
+Right. So who generated the event is what the user ID is all about. When the event
+happened is what the event time is all about.
+Right. And this is the building model that we are opting for. So once I click on hit enter
+so my table is created right.
+So here if I go back to my DynamoDB. Go back to tables. Just try to refresh it.
+
+Observe if the table is active or not. OK. So this is the table which we have just created
+through our CLI.
+
+
+
+  Page 7 of 9
+
+
+Right. So this is the table which has if you go to the explore table items we won't be
+having any attributes inside this because we again did not create any items for this
+through our CLI. Right.
+So we can add verify add the put we can do put item we can query we can update all
+can be done through CLI in the same format that we have done over here. Right. You
+don't have to memorise this format.
+You have a proper documentation of AWS of where and how you can what all details
+are required. What are the necessary. Necessary formats to use everything is present
+in that documentation so you can just copy paste and refer it.
+So this makes it easy for you to interact with your RDS or DynamoDB from any location
+that you want whether it is your personal laptop or it is a remote server. All you have
+to make sure is there is a proper authorisation between both the resources and you r
+AWS account your user in IAM has the necessary permissions assigned. These are
+the prerequisites that you should be doing.
+Now let's look into the backup for DynamoDB. So when I go to my tables let's say I go
+with the demo DB which we created we have something called as backups for
+DynamoDB. It follows the concept of PITR point in time recovery.
+So this is again this will give you a recovery of up to 35 days. Any operation performed
+in the last 35 days all of that will be backed up and you can restore it to those versions.
+So all we have to do is go to edit it turn on the point in time recovery.
+We select the date the number of days. How long do we want it. The maximum is 35
+days.
+You can save changes and now our backup is enabled. Right. So if we go to our
+explore table items when I scan over here.
+So currently we have two items inside our DynamoDB. If we intentionally try to delete
+one of them that record will be stored inside our backups. And when we try to restore
+it we get the same details as it is.
+So AWS has multiple approaches and a very convenient approaches to take a backup
+of our tables and databases. If you go back to our backups now we have an option to
+restore whenever something goes wrong whenever some particular action is not it's
+not something that you desire and you want it to restore. All you have to do is click on
+restore and that data will be displayed for you.
+The only difference when it comes to DynamoDB is it is going to create a new table
+rather than adding the missing items inside the existing table. That is the only
+difference. Right.
+
+
+
+
+  Page 8 of 9
+
+
+So this is how you can manage your backups with RDS and DynamoDB. So to quickly
+summarise what we have learned today through this practical demonstration when it
+comes to data model RDS follows tables and rows. DynamoDB follows key value.
+For query language RDS follows SQL. DynamoDB follows API based query. Schema
+is fixed for RDS but it is flexible for DynamoDB.
+When it comes to backups RDS follows snapshots which is automated or manual. For
+DynamoDB we have point in time recovery. Coming to use cases RDS is used for
+transactional data.
+DynamoDB is used for high scale applications something which you want to record
+the event of a user the login the timestamps what events are they performing when
+you want these type of high scale applications to be performed. That is where you use
+DynamoDB. So you choose based on the access pattern rather than the preference.
+So to summarise we used RDS for structured transactional data and DynamoDB for
+high scale serverless workloads. Both of them solve different problems and the
+modern applications often use both together. Right.
+So these are a combination which serves your modern cloud architectures. Before we
+wrap up make sure that you clean out all of your resources that you have created to
+avoid any billing. So we'll quickly go ahead and clear out the resources as well.
+So DynamoDB is cleared. Let's clear out our RDS also. This is a very important step
+especially when you're trying to learn if these resources are left active.
+Then the billing will definitely surprise you. So make sure that you avoid spending any
+money on this. We have a snapshot before this.
+Let's try to clear the snapshots also. Let's give it some time until the snapshots are
+completely removed. Then we'll remove the databases.
+So we'll head back to our EC2 instance and terminate the EC2 instances. You can
+leave the security groups security groups. You don't invite any charges so you can
+leave them as it is.
+So we go to terminate. Do not use stop instance. Even though you go with stop
+instance it is only going to stop processing the task.
+But since it is still under your account you will be charged for it. So always to avoid
+any billing always terminate the instance. All right.
+We'll also clear out this users. Cleanup is one of the necessary actions. Whenever
+you're trying to perform.
+Since I have access key over here it will prompt you to deactivate the access key first
+and then you can delete it. So make sure you deactivate and then delete the user.
+Right.
+
+
+
+  Page 9 of 9
+
+
+
+Let's get back to our RDS key value pairs and security groups can be ignored. All right.
+So my RDS is also cleaned up.
+So make sure you clean up all the resources before you end your learning.
+
+
+            ---------------------------------THANK YOU--------------------------------------

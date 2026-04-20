@@ -1,0 +1,42 @@
+
+
+
+  Page 1 of 1
+
+
+Rightsizing EC2 & Storage Optimization Transcript
+Let's talk about something that directly affects cloud cost and performance, which is
+right-sizing. Right-sizing simply means choosing the correct size of a resource based
+on how they are actually used, not how we think they might be used. There's a
+difference.
+In real environments, teams often pick large EC2 instances just to be on the safer side.
+Over time, those instances will stay mostly ideal, but the bill keeps running. That's
+where right-sizing becomes important.
+At a high level, right -sizing helps you reduce waste while still keeping your
+performance stable. When we talk about EC2 right -sizing, we mainly look at CPU
+usage, memory usage, network traffic, and disc activity. If CPU usage is always below
+10 or 15 percent, the instance is probably oversized.
+It's a simple indication that you're not using to its full capacity. Majority of the capacity
+is being wasted. So, if CPU is constantly maxed out, then the instance is
+underpowered, which means you're not using the right size.
+You're using a very lower version. So, right -sizing is not about changing the size. It's
+about choosing the correct instance family for your requirement.
+Compute-heavy workloads work better on compute -optimised instances. Memory -
+heavy apps need memory -optimised instances. So, storage also plays a big role in
+cost optimisation.
+Many teams over-allocate EBS volumes or use expensive types even when they don't
+need them. A better approach is to choose GP3 by default, resize volumes based on
+real usage, and regularly clean up unused or detached volumes. AWS provides helpful
+tools to guide this process.
+Compute Optimiser, which analyses historical usage and recommends better instance
+types for you. Cost Explorer shows where money is being spent. Another tool, which
+is Trusted Advisor, highlights underutilised resources.
+Think of right -sizing like choosing the right vehicle. Using a large truck to deliver a
+letter wastes money. Using a bike to move furniture causes failure.
+So, the right choice depends on the job. The key takeaway is right-sizing is not a one-
+time task. It's an ongoing activity that helps balance performance and cost as the
+workload keeps on growing.
+
+
+
+------------------------------------------------------End-----------------------------------------------------

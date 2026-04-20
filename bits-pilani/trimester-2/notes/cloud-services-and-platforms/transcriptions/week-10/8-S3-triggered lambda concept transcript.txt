@@ -1,0 +1,69 @@
+
+
+
+  Page 1 of 2
+
+
+S3-triggered lambda concept transcript
+
+In this topic, we are going to understand one of the most powerful and commonly used
+serverless patterns, which is S3 triggered lambda workflows. This is where serverless
+really starts to feel magical. At a high level, the idea is simple.
+
+When someone or something happens inside an S3 bucket, a lambda function
+automatically runs. There is no polling, no servers or a scheduler, just an event
+triggering the code. Let's break this down step by step.
+
+When a file is uploaded into an S3 bucket, AWS can generate an event. That event
+can automatically invoke your lambda function. This means the system reacts instantly
+to changes instead of constantly checking for them.
+
+This model is called event-driven architecture and it's a core serverless concept. Now,
+why is this pattern so popular? Because file uploads are everywhere. Almost every
+real system starts with data entering the platform.
+
+Think about uploading images, CSVs, invoices, logs, or documents. Each upload can
+trigger automated processing without human involvement. For example, validate your
+uploaded data, extract some metadata, scan for viruses, push records into a database.
+
+All of this can happen automatically. Let's walk through the flow from a conceptual
+point of view. A user or system uploads a file into an S3 bucket.
+
+S3 detects this event and sends a notification. That notification invokes a lambda
+function. The lambda function receives details like the file name, bucket name, and
+the event type.
+
+Using this information, it reads the file and performs its logic. That's it. No servers, no
+polling loops or cron jobs.
+
+You can also control when lambda should trigger. For example, only when files are
+uploaded into a specific folder or only when the file ends with .csv or .jpg. This filtering
+avoids unnecessary executions. Inside lambda, AWS automatically passes metadata
+such as bucket name, object key, timestamp, and event type.
+
+Using the AWS SDK, the function can read the file, process it, and send results
+elsewhere also. Now let's talk reliability. If something fails while lambda runs, AWS
+can retry automatically.
+
+Failures can be logged to a monitoring service like CloudWatch or sent to a failure
+destination. This makes the system resilient by default. From an architecture
+
+
+
+  Page 2 of 2
+
+
+perspective, this pattern supports automatic scaling, loose coupling, pay -per-use
+execution, and fault isolation.
+
+That's why it's used heavily in real -world systems. You'll find this pattern in media
+processing pipelines, data ingestion systems, ETL workflows, analytics pipelines, and
+even machine learning pre-processing steps. The key takeaway here is S3 -triggered
+lambda represents the heart of event-driven serverless architecture.
+
+It allows systems to react to change automatically, scale instantly, and remain simple
+to operate. In the next topic, we'll build on this idea and look at how API Gateway
+works with lambda to create serverless APIs. Where HTTP requests, not files, become
+the trigger.
+
+-----------------------------------------------------End------------------------------------------------------

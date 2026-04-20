@@ -1,0 +1,42 @@
+
+
+
+  Page 1 of 1
+
+
+Key EC2 Components Ami, instance types, Key Pairs Transcript
+In this lesson, we'll look at the three core building blocks that define every EC2
+instance, which are AMI, instance type, and key pairs. If you understand these three
+well, EC2 becomes much easier to reason about. So, let's start with the AMI.
+An AMI or Amazon Machine Image is essentially a template for your server. It defines
+what OS the instance runs, what software is already installed, and how the system is
+configured. For example, you might choose an Amazon Linux AMI, a Windows AMI,
+or even a Marketplace AMI that already has software like WordPress or any other tools
+in the market.
+Many teams also create their own custom AMIs. This is useful when you want every
+new server to launch with your application or your security patches. So, it saves time
+and reduces errors.
+Next comes the instance type. The instance type decides how much power your EC2
+instance has. It controls the CPU, memory, storage, and network performance.
+Because not all the workloads need the same power, so a small website might run
+perfectly on a general -purpose instance, while a database might need a memory -
+optimised one, and machine learning workloads often require GPU instances.
+Choosing the right inst ance type is important because it directly affects both
+performance and cost. Now, let's talk about key pairs, which controls how you access
+the instance.
+AWS does not use passwords for EC2. Instead, it uses key pairs, a public key stored
+on the server, and a private key that you keep securely. When you connect using SSH,
+AWS verifies that you own the private key.
+If you lose it, accessing the instance becomes very difficult, which is why protecting
+these private keys is critical. Think of it like a physical lock and key. AWS instals the
+lock, but only you have the key.
+So, when you launch an EC2 instance, all three pieces come together. You choose an
+AMI to define the software, an instance type to define the power, and a key pair to
+define access. If any one of these is wrong, the instance won't serve its purpose
+properly.
+Once you understand this relationship, EC2 stops feeling complex and starts feeling
+logical. In the next lesson, we'll look at how EC2 traffic is controlled using security
+groups and how inbound and outbound traffic rules the work.
+
+
+------------------------------------------------------End-----------------------------------------------------

@@ -1,0 +1,59 @@
+
+
+
+  Page 1 of 2
+
+
+What is DevOps Transcript
+
+Let's start by understanding what DevOps really means because it's often
+misunderstood. DevOps is not just a tool and it is not just a job title. DevOps is a way
+of working that brings development and operation teams together so that the software
+can be delivered faster and more reliably.
+
+Traditionally, developers focused on writing the code and the operation teams focused
+on keeping the systems stable and running. These goals often conflicted a lot.
+Developers wanted speed and operations wanted a better stability and this created
+the friction between them.
+
+So DevOps emerged to solve that problem. It focusses on collaboration, automation,
+and shared responsibility. Now, let's talk about the culture which is actually the most
+important part of DevOps.
+
+A DevOps culture encourages teams to work together and everyone has proper
+ownership of their respective outcomes. Failures are treated as learning opportunities,
+not the reason to blame the individuals. So a common DevOps mindset is you build it,
+you run it.
+
+Next comes collaboration. DevOps teams don't work in isolation. Developers, testers,
+operations, and even security teams collaborate continuously.
+
+They use shared tools, dashboards, and workflows so everyone has the visibility into
+what's happening. Then we have automation, the engine that makes DevOps scalable.
+So automation removes repetitive manual work like building the code, running your
+tests, deploying applications, and provisioning infrastructure.
+
+This reduces human errors and allows teams to move much faster without sacrificing
+their reliability. Cloud platforms play a big role here. They provide APIs, manage
+services, and built-in automation that makes the DevOps practises at scale.
+
+That is why DevOps and cloud usually go hand in hand. A simple real -world analogy
+is a modern restaurant kitchen. The chefs prepare the dishes, staff coordinate the
+orders, and the machines help automate repetitive tasks.
+
+Everyone works together to deliver the quality food quickly. DevOps works the same
+way for a software delivery. When the DevOps is done right, organisations release
+faster, recover quickly from failures, collaborate better, and also deliver more value to
+the users.
+
+So DevOps play a very important role for a software to be released or any product that
+is to be released to the customers.
+
+
+
+  Page 2 of 2
+
+
+
+
+-----------------------------------------------------End------------------------------------------------------

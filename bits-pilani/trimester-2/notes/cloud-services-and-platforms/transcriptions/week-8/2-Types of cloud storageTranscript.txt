@@ -1,0 +1,68 @@
+
+
+
+  Page 1 of 2
+
+
+Types of cloud storage transcript
+
+In this lesson, we are going to understand one of the most important foundations of
+cloud storage, the types of cloud storage. Before we talk about specific services like
+S3, EBS, or EFS, it's crucial to understand how storage itself is categorised in the
+cloud. At a high level, cloud storage comes in three main types, object, storage,
+block storage, and file storage.
+
+Let's go through them one by one in a very simple way. First, object storage. The
+data is stored as objects.
+
+Each object contains the data itself and some metadata, and a unique ID used to
+retrieve it. This object could be a file, video, or anything. There's no traditional file
+system like on your laptop.
+
+What looks like folders is really just naming, not actual directories. Object storage is
+built to scale massively and store a huge amount of data at a very lower cost. This
+makes it ideal for things like images, videos, backups, logs, and archive data also.
+
+A simple way to think about object storage is like a warehouse. You don't care where
+the item physically sits as long as you have the tracking ID and you can retrieve it.
+Next is the block storage.
+
+Block behaves like a virtual hard disc. It's attached directly to a server and the
+operating system controls how files are stored and accessed from this block.
+Because of this direct attachment, block storage offers very high performance and
+low latency.
+
+This is why block storage is commonly used for databases, operating system discs,
+and transactional applications. So your laptop's internal hard drive is something
+similar to this. It is fast, tightly controlled by the OS, and designed for performance.
+
+The third type is file storage. File storage provides shared storage using a familiar
+folder and file structure which means multiple servers can access the same files at
+the same time, making it ideal for shared workloads. This is commonly used for
+things like content management systems, shared application data, media
+processing, and home directories.
+
+Think of file storage like a shared office drive where multiple people can open, edit,
+and save files together. Now, why does this distinction matter a lot? Because each
+storage type is designed for a different access pattern. Object storage is great for
+scale and durability.
+
+
+
+
+  Page 2 of 2
+
+
+Block storage is best for performance critical workloads. File storage is ideal when
+data must be shared across systems. Choosing the wrong storage type can lead to a
+poor performance and higher cost.
+
+It can also invite unnecessary complexity to your architecture. That is why cloud
+architects always start by asking what kind of a data access does this workload
+need. Once that's clear, choosing services like S3, EBS, or EFS becomes much
+easier.
+
+In the next topic, we'll build on this foundation and look at storage services overview
+which is for S3, EBS, and EFS.
+
+-----------------------------------------------------End------------------------------------------------------

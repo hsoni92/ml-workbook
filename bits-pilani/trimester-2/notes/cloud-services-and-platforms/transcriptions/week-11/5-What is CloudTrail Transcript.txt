@@ -1,0 +1,60 @@
+
+
+
+  Page 1 of 2
+
+
+What is CloudTrail Transcript
+
+In this topic, we are going to understand AWS CloudTrail, which plays an important
+role in security, auditing, and compliance. CloudTrail answers one simple but powerful
+question. Who did what and when inside your AWS account? Whenever someone
+performs an action directly through the console or through some commands or even
+another AWS service, CloudTrail records it.
+
+Think of CloudTrail as an activity log for your entire AWS environment. CloudTrail
+records actions such as creating or deleting resources, modifying security settings,
+starting or stopping instances, changing any IAM policies, or accessing sensitive
+services. Each recorded event contains details like who performed the action, what
+action was performed, which service was involved, and the time it happened.
+
+This makes CloudTrail extremely valuable during investigations or audits. CloudTrail
+events are categorised into three types. The first is management events.
+
+These track control plane actions like creating or modifying the resources. They are
+enabled by default and form the backbone of auditing. The second type is data events.
+
+These track high-volume operations such as reading or writing S3 objects or invoking
+your Lambda functions. Because they generate a lot of logs, they are optional and
+enabled only when needed. The third type is inside events, which automatically
+detects unusual activity patterns, for example, sudden spikes in your API calls.
+
+Once events are captured, CloudTrail delivers them to the storage. Logs are typically
+sent to an S3 bucket for long -term retention. They can also be sent to CloudWatch
+logs if you want near real-time monitoring or alerting.
+
+This allows security teams to search and analyse what is going on. To understand
+CloudTrail, think of it like a CCTV footage or an access log inside an office building.
+Every bad swipe, door access, or system change gets recorded.
+
+Even if something goes wrong later on, you can rewind and see exactly what
+happened. That is why CloudTrail is critical for security audits, incident response,
+regulatory compliance, and accountability. One important distinction to remember
+here, CloudTrail does not tell you how busy your system is.
+
+It tells you who made changes and what actions were taken. So do not get it confused
+with the CloudWatch logs and metrics. Performance monitoring belongs to
+CloudWatch.
+
+
+
+
+  Page 2 of 2
+
+
+Auditing and accountability belongs to CloudTrail. In the next topic, we'll connect this
+with visibility and logging by looking at how the CloudTrail integrates with other AWS
+monitoring services.
+
+
+-----------------------------------------------------End------------------------------------------------------

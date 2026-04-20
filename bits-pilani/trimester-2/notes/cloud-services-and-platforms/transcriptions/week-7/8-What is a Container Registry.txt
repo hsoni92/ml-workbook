@@ -1,0 +1,40 @@
+
+
+
+  Page 1 of 1
+
+
+What is a Container Registry Transcript
+In this topic, we are going to understand what a container registry is and why it plays
+such a critical role in containerised applications. When we build a docker image, that
+image initially exists only on our local machine. If we want to share it, deploy it, or run
+it somewhere else, we need a centralised place to store it.
+And that's exactly what a container registry provides. A container registry is essentially
+a storage and distributed system for container images. It allows teams, servers, and
+platforms to pull the exact same image reliably.
+Now, why do we even need registries again? Without registries, every developer would
+have to rebuild images manually. Deployments would differ between environments
+and automation would completely break down. Registries enable CI -CD pipelines,
+scalable deployments, consistency across multiple teams.
+The typical workflow looks like this. We build an image, tag it with a version, push it to
+a registry, and later servers or Kubernetes will use that image and run the containers
+from it. Registries can be public or private.
+Public registries allow anyone to pull images and are commonly used for open source
+software and learning purposes. Private registries restrict access and are used by
+companies for production applications. The most popular registry is Docker Hub.
+It's the default registry used by Docker and hosts thousands of official images like
+Redis, MySQL, Nginx, and many more. Docker Hub is very beginner -friendly and
+widely used for learning and development. For production use on AWS, companies
+typically use Amazon's AWS ECR, Elastic Container Registry.
+ECR is a fully managed AWS service that integrates deeply with EC2, ECS, and EKS.
+So it uses IAM for authentication and is designed for secure enterprise -grade
+deployments. In real-world setups, teams often use both Docker Hub for public base
+images and ECR for their own internal application images.
+A simple way to think about registries is to compare them to an app store. Developers
+upload applications, users download them when needed, and updates are versioned
+and managed centrally. Container registries work exactly the same way, just for
+containerised applications though.
+In the next topic, we'll build on this and look at pushing and pulling Docker images.
+Which is how we actually interact with registries in practise.
+
+---------------------------------------------------End-----------------------------------------------------

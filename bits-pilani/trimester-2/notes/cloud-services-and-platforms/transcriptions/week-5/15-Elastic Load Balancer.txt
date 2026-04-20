@@ -1,0 +1,47 @@
+
+
+
+  Page 1 of 2
+
+
+Elastic Load Balancer Transcript
+In this lesson, we are going to understand Elastic Load Balancer, often called as ELB.
+At its core, a load balancer has a very simple job. It distributes incoming traffic across
+multiple servers so that no single server gets overwhelmed.
+Without a load balancer, users directly hit one EC2 instance. If traffic increases or that
+instance fails, the application goes down. A load balancer solves this by acting as a
+smart traffic manager.
+One of the easiest ways to understand this is with a real example. Think of a restaurant
+reception desk. Customers keep arriving and the receptionist assigns them to
+available waiters.
+If one waiter is busy or unavailable, customers are sent to someone else. In this setup,
+the receptionist is the load balancer and the waiters are EC2 instances. In cloud
+environments, this becomes extremely important because applications are designed
+to scale horizontally.
+Instead of one big server, we run multiple small servers. So Elastic Load Balancer
+automatically loads traffic only to the healthy instance. It will stop sending traffic to
+failed ones and works seamlessly with the auto-scaling.
+It is also important to understand what ELB does not do. It does not increase the
+server's capacity. It does not fix poor application performance.
+Its role is purely traffic distribution. At a high level, AWS provides three types of load
+balancers. The first is Application Load Balancer which is used for web applications
+and APIs.
+The next one is Network Load Balancer which is used for very high performance, low
+latency systems. And the third one is Classic Load Balancer. This is an older option
+mostly used for legacy setups.
+One powerful feature of Elastic Load Balancer is health check. Elastic Load Balancer
+continuously checks whether an instance is responding correctly or not. If it's not,
+traffic is automatically redirected to a healthy instance.
+No manual action is required from our end. So ELB becomes even more powerful
+when combined with auto -scaling. As auto -scaling adds or removes EC2 instances,
+ELB automatically starts or stops routing traffic to those instances.
+So this combination is what enables scaling fault -tolerant cloud applications. At this
+stage, remember one key idea. Elastic Load Balancer is not about speed.
+It's about availability, reliability, and a smart traffic distribution.
+
+
+------------------------------------------------------End-----------------------------------------------------
+
+
+
+  Page 2 of 2

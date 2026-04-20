@@ -1,0 +1,39 @@
+
+
+
+  Page 1 of 1
+
+
+Assigning Public IPS vs Elastic IPS Transcript
+In this topic, we'll understand how AWS handles public internet access using IP
+addresses. And more importantly, when to use which option. In AWS, instances are
+private by default.
+So if you want an instance to talk to the internet or be accessed from the internet, you
+need a public IP address. AWS gives us two ways to do this. A public IP and Elastic
+IP.
+Let's start with public IP. So a public IP is automatically assigned when an instance is
+launched. If the subnet setting will allow this, it will automatically be launched and
+assigned.
+This IP allows the instance to communicate with the internet. But public IPs are usually
+temporary. If you stop and start the instance, the public IP will change.
+So AWS releases the old IP and assigns a new one. Because of this behaviour, public
+IPs are best suited for temporary use cases like labs, testing environments, or short -
+lived servers where the IP stability doesn't matter much. Now let's move to Elastic IPs.
+An Elastic IP is a static public IP that you can explicitly allow to your AWS account.
+This IP remains the same even if the instance stops or restarts. You can also detach
+it from one instance and attach it to another within seconds.
+This makes Elastic IP extremely useful for production issues or any kind of failover
+scenarios. A good way to think about this is phone numbers. A public IP is like a
+temporary SIM card.
+As long as you use it, it will be active. And if you do not use it for a while, if you do not
+recharge it, you do not top up the balance, it gets assigned to another. Right? And an
+existing active mobile number can also be assigned to a different user, dep ending
+upon the compliance that we follow.
+So as a best practise, they should be used carefully and only when required. The
+common best practises are use public IPs for demos and testing. Use Elastic IPs only
+when IP stability is mandatory.
+Understanding this difference helps you design secure, cost-effective, and predictable
+network architectures. In the next topic, we'll move into VPC peering and see how
+separate VPCs can communicate with each other.
+
+------------------------------------------------------End-----------------------------------------------------

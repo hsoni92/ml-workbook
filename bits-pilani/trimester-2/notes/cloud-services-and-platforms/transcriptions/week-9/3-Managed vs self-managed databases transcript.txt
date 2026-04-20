@@ -1,0 +1,54 @@
+
+
+
+  Page 1 of 2
+
+
+Managed vs self-managed databases transcript
+
+In this topic, we are going to understand a very important  design decision. Choosing
+between managed databases and self -managed databases running on EC2. This
+choice affects how much effort your team spends on operations versus building
+futures.
+
+Let's start by clarifying what these two actually mean. A self -managed database
+means you launch an EC2 instance and instal the database all by yourself. You decide
+how it is configured, how it is secured, and how backups work and scaling happens
+on its own.
+
+In contrast, a managed database means AWS takes care of most of that operational
+responsibility on your behalf. You focus on your data and application logic while AWS
+handles maintenance tasks in the background. Now, with self -managed databases,
+you are re sponsible for everything, whether it is OS updates, database patches,
+backups, monitoring, replication, and even failover.
+
+This gives maximum flexibility but also maximum responsibility. Teams usually choose
+this model when they need very specific configurations or unsupported database
+versions because there are certain plugins that managed services don't allow. On the
+other hand, managed databases remove a lot of operational burden.
+Backups happen automatically. Failover is built in. Monitoring works out of the box.
+
+So, scaling storage or adding replicas becomes much more easier. A helpful way to
+think about this is ownership versus service. Running a self-managed database is like
+owning and renting your own data centre equipment.
+
+You control everything, but you also fix everything. Using a managed database is like
+using a professionally operated facility where power, cooling, maintenance,
+monitoring, all will be taken care of. From a cloud -native perspective, most modern
+architectures prefer managed databases.
+
+They reduce risk, save time, and allow teams to focus on delivering futures instead of
+managing infrastructure. That said, self -managed databases still have their place,
+especially in legacy systems or compliance -heavy environments or when deep
+customisation is required. So, the key takeaway here is simple.
+
+Start with managed databases by default. Only choose self-managed when you have
+a clear, justified reason to do so. In the next topic, we'll look at the actual AWS
+database services available, including RDS, DynamoDB, and Aurora. We'll also try to
+understand how they fit into different application needs.
+
+-----------------------------------------------------End------------------------------------------------------
+
+
+
+  Page 2 of 2

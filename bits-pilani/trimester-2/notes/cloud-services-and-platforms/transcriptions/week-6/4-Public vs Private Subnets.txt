@@ -1,0 +1,47 @@
+
+
+
+  Page 1 of 2
+
+
+Public vs Private Subnets Transcript
+When we design a VPC, one of the most important decisions we make is how to divide
+it into public and private subnets. To understand this clearly, let's first quickly remind
+ourselves what a subnet is. A subnet is simply a smaller network inside a VPC.
+It helps us organise resources, control how traffic flows, and apply security boundaries.
+Now let's talk about public subnet. A public subnet is one that can directly
+communicate with the internet.
+This happens because the subnet has a route that points to an internet gateway.
+Resources placed here can be given public IP addresses, which means they are
+reachable from outside the cloud. This is why public subnets are commonly used for
+things like web servers, load balancers, or other components that act as an entry point
+into your system.
+Now let's contrast that with private subnets. A private subnet does not allow direct
+internet access. There is no route to an internet gateway, and instances here do not
+use public IP addresses also.
+Private subnets are used to protect sensitive systems like databases, application
+servers, and internal servers. If these systems need internet access for updates or
+downloads, they use a NAT gateway instead of exposing themselves directly. This
+difference is extremely important.
+Public subnets are exposed by nature. Private subnets are intentionally hidden. In real-
+world architectures, both are used together.
+Internet traffic enters through the public subnet. The public layer forwards requests to
+the private subnet where the actual business logic runs. Databases sit even deeper
+inside the private subnets.
+A simple way to think about this is an office building. The public subnet is like the
+reception area anyone can walk in. The private subnet is like the employee workspace,
+basically a restricted access.
+And the database is like a locked vault that only authorised staff can reach. So one
+very common beginner mistake is placing databases in public subnets just to make
+the connectivity less complex. This works technically, but it creates serious security
+risk.
+The key takeaway is simple. Public subnets are for exposure. Private subnets are for
+protection.
+Using both correctly is a fundamental cloud networking scheme.
+
+
+------------------------------------------------------End-----------------------------------------------------
+
+
+
+  Page 2 of 2

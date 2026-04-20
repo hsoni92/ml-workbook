@@ -1,0 +1,53 @@
+
+
+
+  Page 1 of 2
+
+
+VPC Security Best Practices Transcript
+In this lesson, we'll talk about security considerations when designing a VPC. A VPC
+is your private network in the cloud. And if the network design is weak, everything
+built on top of it becomes vulnerable.
+In fact, many cloud security incidents don't happen because of application bugs.
+They happen because of network misconfiguration. Let's start with the first principle,
+network segmentation.
+You should never put all resources in the same subnet. Public-facing components,
+application services, and database, all of these should live in separate network
+layers.
+This limits the blast radius, as in, even if one part is compromised, attackers cannot
+move freely through the other components.
+Next, let's talk about a public exposure. Only components that truly need internet
+access should be public. Databases, internal services, and back-end systems should
+never be directly exposed.
+Because they could have a very sensitive information. So, every public IP increases
+your attack surface. The goal is always to minimise the exposure.
+Now, let's get into the defence into the depth. VPC security works best when multiple
+layers protect the system. Routing controls where the traffic can go.
+Network ACLs filter traffic at subnet level. Security groups control instance access.
+And IAM controls who can change these settings.
+If one layer fails, others still provide protection. Security groups and network ACLs
+are often confused, but they serve different purposes.
+So, as I mentioned earlier, security groups are best for precise access control at
+instance level.
+And network ACLs provide a broader subnet wide filtering. So, used together, they
+form a strong security boundary. Administrative access is another critical area.
+Direct SSH access from the internet is a bit risky. A safer approach includes using a
+VPN-based access or admin access should always be restricted. Or for logging and
+for auditable purposes.
+So, without monitoring, you don't know what's happening inside your network. VPC
+flow logs or their other services like CloudTrail, GuardDuty, these help you detect
+suspicious traffic and configuration changes early at stages. Finally, a strong VPC
+follows a default deny mindset.
+
+
+
+  Page 2 of 2
+
+
+Everything is blocked by default and only required access is explicitly allowed. This
+approach reduces any kind of accidental exposure. In short, good VPC security is
+not about adding more rules.
+It is about designing the network thoughtfully, limiting the exposure, layering your
+defences at each level and continuously monitoring your traffic.
+
+------------------------------------------------------End-----------------------------------------------------

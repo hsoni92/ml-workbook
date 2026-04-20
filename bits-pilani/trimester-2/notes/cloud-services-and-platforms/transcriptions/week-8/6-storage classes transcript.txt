@@ -1,0 +1,47 @@
+
+
+
+  Page 1 of 1
+
+
+Storage Classes (Standard, IA, Glacier) transcript
+
+In this topic, we are going to understand S3 storage classes, which help us decide
+where and how data should be stored based on how often it is accessed. Not all data
+behaves the same. Some data is used every day, some is used once in a while, and
+some is stored only for compliance or future reference.
+
+So S3 storage classes exist to solve this exact problem. Let's start with S3 standard.
+S3 standard is the default storage class and is meant for frequently accessed data.
+
+It offers low latency, high throughput, and extremely high durability. This is the right
+choice for things like website images, application data, and files that applications read
+and write on a regular basis. Think of S3 standard as hot data, always ready,  always
+available.
+
+Next is S3 standard IA, which stands for infrequent access. This class is used when
+data is not accessed often, but still needs to be available quickly when required. The
+storage cost is lower than standard, but the retrieval cost is a bit higher.
+
+This makes it ideal for backups, disaster recovery data, or older logs. You don't open
+them daily, but when you need them, you need them immediately. Now let's talk about
+S3 Glacier.
+
+Glacier is designed for long -term archival. It has very low storage cost, but data
+retrieval can take minutes or even hours. Because of that, Glacier is not meant for
+applications.
+
+It is used for compliance records, audit logs, and historical data that must be retained
+but rarely accessed. A simple way to remember this, standard is hot data, infrequent
+access is warm data, Glacier is cold data. As we move from standard to IA to Glacier,
+storage becomes cheaper, but access also becomes slower and more expensive.
+
+In real systems, companies mix these storage classes. Active data stays in standard,
+older backups move to infrequent access, and long-term records go to Glacier. Good
+cloud design isn't about storing everything the same way, it's about matching storage
+to how data is actually used.
+
+In the next topic, we'll see how lifecycle rules automate this entire movement and help
+reduce S3 costs without manual effort.
+
+-----------------------------------------------------End------------------------------------------------------

@@ -1,0 +1,40 @@
+
+
+
+  Page 1 of 1
+
+
+Launching an EC2 Instance Transcript
+When we say launching an EC2 instance, what we really mean is creating a brand
+new virtual server on AWS. Think of it like ordering a laptop online. You don't build the
+laptop yourself, you choose the specifications, place the order and arrives ready to
+use.
+EC2 works the same way, except your server is ready in seconds. Let's walk through
+the process step by step. The first decision is choosing an AMI.
+An AMI is simply the blueprint of your server. It defines which OS the instance will run.
+It could be a Linux OS, Ubuntu or even Windows.
+Just like choosing Windows or Mac OS on a new laptop, the AMI sets the foundation.
+Next, you choose an instance type. This decides how powerful your server is, like how
+much CPU, memory and network performance it gets.
+For learning and practise, small instance types like T3 micro or more than enough and
+cost very less. After that, you configure access using a key pair. AWS doesn't use
+passwords by default.
+Instead, it gives you a private key that acts like a house key. You download it once,
+store it safely and use it whenever you want to connect to the server. If you lose this
+key, you lose access.
+So this key is extremely important. Then comes the security group. A security group
+is a virtual firewall that controls who can talk to your instance over the network.
+By default, everything is blocked. You explicitly allow only what you need like SSH
+access on the port 22 or a web traffic on port 80. So storage is handled as a next
+phase.
+AWS automatically attaches a root disc using EBS, a service within AWS. You can
+choose the size and type, but for beginners, the default settings work perfectly fine.
+So we can go with that.
+Finally, you review everything and click on launch. AWS spins up the server, assigns
+it an IP address and within a few seconds, your EC2 instance is running. At this point,
+you have a real server in the cloud ready to connect, configure and utilise.
+In the next topic, we'll look at how to actually connect to this instance, manage it after
+the launch.
+
+
+------------------------------------------------------End-----------------------------------------------------

@@ -1,0 +1,55 @@
+
+
+
+  Page 1 of 2
+
+
+Docker Internals Overview Transcript
+In this lesson, we are going to understand docker architecture, which explains how
+docker actually works behind the scenes. Once you understand this, everything else
+in docker, which is images, containers, registries starts making a lot more sense. At a
+higher level, docker follows a client server architecture, and it revolves around three
+core components, images, containers, and docker engine.
+Let's start with docker images. A docker image is a read-only blueprint used to create
+these containers. It contains the application code, the runtime, required libraries, and
+configuration, basically everything the app needs to run.
+One important thing to remember is that images are immutable, which means once an
+image is created, it doesn't change. If you need a change, you build a new image. So
+docker images are also built in layers.
+Each step in a docker file creates a layer. For example, the base OS, then the runtime,
+then dependencies, and application code. This layer design is powerful because
+docker can reuse layers.
+That's why builds are faster and storage is efficient. Now let's talk about containers. A
+container is simply a runtime instance of an image.
+If an image is a blueprint, a container is the actual running application. Containers are
+lightweight because they share the host operating system. They start quickly, use
+fewer resources than virtual machines, and can be created or destroyed in seconds.
+You can run many containers from a single image. For example, 10 containers from
+one nginx image. So a simple way to remember this, images are static, containers are
+dynamic.
+Let's connect this with the docker engine. The docker engine is the core component
+that makes everything work. It includes the docker daemon, which runs in the
+background, the docker CLI that we interact with, and an API that connects everything.
+When you run a command like docker run nginx, the CLI sends that request to the
+daemon. The daemon checks if the image exists locally. If it doesn't, docker pulls it
+from a place called registry.
+Then it will create a container and starts it. All of this happens in seconds. So to simply
+understand this, image is a recipe, container is a cooked dish, docker engine is the
+kitchen, and chef combined together.
+This clean separation is what makes docker fast, portable, and easy to use across
+different servers and cloud platforms. In the next lesson, we'll build on this and look at
+how docker files are created, and what best practises to follow when defining these
+images. Because containers start from docker file, that docker file is converted to a
+docker image, and then the docker image is then built for a container.
+
+
+
+  Page 2 of 2
+
+
+So file, image, then you get a container. From the file itself, you define everything that
+your application needs, so that it is packed into a single unit, and then converted into
+an image. And that image will help us to run on a container.
+So I'll see you guys in the next one.
+
+---------------------------------------------------End-----------------------------------------------------

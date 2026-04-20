@@ -1,0 +1,78 @@
+
+
+
+  Page 1 of 2
+
+
+Declarative vs Imperative IAC Transcript
+
+In this topic, we are going to understand one of the most important mindset shifts in
+the Infra as code. The difference between imperative and declarative infrastructure
+management. This distinction explains why tools like terraform exist at all.
+
+Let's start with imperative approach. Imperative means you tell the system exactly how
+to do something step by step. You explicitly define each action, create this, configure
+that, attach this, start that etc.
+
+Pretty much a spoon feeding. This is similar to writing a script or also manually clicking
+through a console. Whatever you do through manually, you try to replicate the exact
+in the imperative.
+
+Now imperative approaches are common when using CLI commands or when you are
+using any shell scripts. They work but they come with challenges. As systems grow
+larger imperative workflow becomes harder to maintain.
+
+They don't track what already exists. They don't automatically fix the difference and
+small mistakes can easily cause inconsistencies. Like if there are two servers to host
+your website, one server has a version of 1.0 and another server has a version of 2.0.
+So these would not be able to be fixed with imperative.
+
+Now let's contrast this with declarative approach. Declarative infrastructure focusses
+on the end result, not the steps. So instead of telling the system how to build
+something, you describe what the final state should look like.
+
+For example, instead of saying create an ec2 instance, attach networking, configure
+an EBS storage, you just say I want one ec2 instances with these properties. The tool
+figures out how to make reality match your declaration. So it's like ordering food fro m
+an app.
+
+You don't describe cooking steps. You simply choose the dish. The system handles
+everything else behind the scenes.
+
+Declarative systems continuously compare what you want versus what actually exists.
+If there is a difference, they fix it automatically. This is why declarative models are so
+powerful in the cloud environments.
+
+Cloud infrastructure changes frequently. Resources come and go. Manual tracking
+becomes impossible at scale.
+
+
+
+
+  Page 2 of 2
+
+
+Declarative tools automatically detect this drift or a difference which will enforce
+consistency and apply only required changes. Terraform works exactly this way. You
+describe your infrastructure in configuration files.
+
+Terraform checks the real environment. It creates a plan showing what will change
+and when applied, it makes only the necessary updates. That is why declarative
+infrastructure is predictable and scalable.
+
+Now, this doesn't mean imperative approaches are useless. They still make sense for
+one-time administrative actions, debugging, scripting small tasks, operational fixes. In
+practise, teams often use declarative for infrastructure, imperative for operationa l
+commands.
+
+The key takeaway is imperative tells the systems how to do something. Declarative
+tells the system what the final state should be. Modern cloud platforms and ISE tools
+strongly favour the declarative approach because it is safer, cleaner, and far easier to
+manage at scale.
+
+So, in the next topic, we'll build on this foundation by understanding popular ISE tools
+and where Terraform fits among them.
+
+
+
+-----------------------------------------------------End------------------------------------------------------

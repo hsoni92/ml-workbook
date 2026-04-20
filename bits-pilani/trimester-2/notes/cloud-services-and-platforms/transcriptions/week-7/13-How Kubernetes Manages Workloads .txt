@@ -1,0 +1,40 @@
+
+
+
+  Page 1 of 1
+
+
+How Kubernetes Manages Workloads Transcript
+In this final topic of the module, we are going to understand how Kubernetes actually
+manages workloads in the real world. Specifically, how it handles scaling, load
+balancing, and self -healing. This is where Kubernetes truly earns its reputation as a
+production-grade platform.
+Let's start with scaling. Kubernetes primarily scales applications horizontally, which
+means instead of making one container bigger, it creates more copies of the same
+container, which we also call them as pods. When traffic increases, Kubernetes
+increases the number of pods.
+When traffic drops, it reduces them again. This is usually handled by something called
+Horizontal Pod Autoscaler, HPA. This watches the metrics like CPU usage and adjusts
+the number of pods automatically.
+Think of it like opening more checkout counters in a supermarket when the queue
+grows. Now, let's talk about load balancing. In Kubernetes, traffic is never sent directly
+to the pods.
+Instead, traffic goes through something called a service. A service provides a stable
+endpoint and automatically distributes traffic across the healthy pods. If a pod crashes
+or is replaced, the service keeps working without any changes from the client side.
+For more advanced routing, like routing based on URLs or domains like example.com,
+Kubernetes uses Ingress. Ingress works with cloud load balancers and gives a control
+over traffic flow. Finally, let's look at self-healing.
+Kubernetes constantly monitors the state of the system, which doesn't happen in
+Docker. In Docker, you can only create the containers. There is no monitoring and
+self-healing concept like you have in Kubernetes.
+If a pod crashes, it restarts it. If a node fails, it moves the pod to a healthy node. If an
+application becomes unresponsive, Kubernetes replaces it automatically.
+Kubernetes doesn't try to debug failures. It simply restores the desired state. This
+combination of automatic scaling, built -in load balancing, and continuous scaling is
+what makes Kubernetes ideal for cloud-native and large-scale systems.
+And with that, we complete module 7 on containers, Dockers, and Kubernetes
+fundamentals.
+
+
+---------------------------------------------------End-----------------------------------------------------

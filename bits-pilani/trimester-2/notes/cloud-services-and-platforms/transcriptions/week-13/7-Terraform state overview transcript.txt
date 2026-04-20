@@ -1,0 +1,65 @@
+
+
+
+  Page 1 of 2
+
+
+Terraform state overview transcript
+
+Now, let's talk about something extremely important in Terraform, the state file.
+Terraform doesn't magically know what infrastructure exists. It needs memory and that
+memory is the state file.
+
+The state file keeps track of what resources Terraform has created, what are their IDs,
+their attributes, and how everything is connected. Whenever you run Terraform, it
+compares three things. What you want, what exists in the cloud, and what's recorded
+in the state.
+
+That comparison helps Terraform decide what to create, modify, or delete. So, it's like
+a reference for Terraform. Without a state file, Terraform would have no idea what
+already exists.
+
+The state file also stores metadata such as dependencies and outputs. Every time you
+create an EC2 instance, you have a new IP address. So, those IP addresses are
+considered and saved as outputs.
+
+Because of that, it may include sensitive information, which means it must be protected
+carefully. Initially, Terraform stores state locally on your system. This works for
+learning and experiments, but it quickly becomes risky in the teams.
+
+That is why teams actually use remote state, usually stored in services like S3 or a
+Terraform cloud. Remote state allows multiple engineers to collaborate safely and
+keep the state centralised, which means everything within your state file is stored
+inside a cloud storage like an S3 bucket or a Terraform cloud. Another key concept
+here is state locking.
+
+Locking ensures that only one person or a pipeline can modify infrastructure at a time.
+Without locking, two people running Terraform simultaneously could corrupt the state
+file or destroy the resources accidentally. Like one is asking to create a server, one is
+asking to delete the server.
+
+So, Terraform also helps detect something called state drift. Drift happens when
+someone manually changes resources through the cloud console instead of
+Terraform. When you run Terraform plan, Terraform compares reality with the stored
+state and highlights those differences.
+
+This is why best practise is simple. Make changes through Terraform, not manually. A
+helpful way to think about state is like a financial ledger.
+
+Your infrastructure is the account and the state file is the record that keeps track of
+every transaction. If that ledger is missing or inaccurate, nothing lines up anymore.
+
+
+
+  Page 2 of 2
+
+
+That's why proper state management is absolutely critical for collaboration,
+automation, and safety.
+
+This is the reason why state locking and maintaining a remote state file is important to
+safeguard it from multiple edits and concurrent destroys. In the next topic, we'll move
+forward and look at how Terraform actually understands configuration files, sta rting
+with .tf files, variables, and output files.
+
+-----------------------------------------------------End------------------------------------------------------

@@ -1,0 +1,30 @@
+
+
+
+  Page 1 of 1
+
+
+Module Introduction Transcript
+In this module, we shift focus from building systems to operating them responsibly.
+Once your applications are live in the cloud, the real challenge begins, keeping them
+healthy, visible, and within the cost budget. Cloud environments are dynamic,
+resources come and go, traffic changes constantly, and costs can grow silently if not
+monitored properly.
+That's why monitoring and cost optimisation are critical skills for any cloud
+professional. Monitoring helps us answer basic but important questions. Is the system
+running correctly? Is performance degrading? Are there any errors happening? Is
+usage increasing or dropping? To answer these, cloud platforms provide metrics, logs,
+events, and alerts, all working together to give us a good visibility into our system's
+behaviour.
+At the same time, cloud follows a pay-as-you-go model. This gives flexibility but it also
+means unused or misconfigured resources directly increase your cost. Cost
+optimisation isn't about cutting corners, it's about spending smartly while maintaining
+the reliability.
+In this module, you will learn how AWS helps with monitoring using CloudWatch, or
+auditing through CloudTrail, and cost control using some billing tools. Think of this
+module as learning how to run the cloud systems properly, not just use them. By the
+end, you'll understand how teams monitor health, detect issues early before the
+disaster, track activity, and keep the cloud costs under control in real-world projects.
+
+
+------------------------------------------------------End-----------------------------------------------------

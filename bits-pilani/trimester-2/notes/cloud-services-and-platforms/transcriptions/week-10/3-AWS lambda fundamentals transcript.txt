@@ -1,0 +1,68 @@
+
+
+
+  Page 1 of 2
+
+
+AWS lambda fundamentals transcript
+
+In this topic, we'll understand what AWS Lambda really is and how it works internally.
+At a higher level, Lambda is a serverless compute service. That means you don't
+manage servers, OS or scaling.
+
+You simply write small pieces of code and AWS runs them when something triggers
+them. Think of Lambda as code that runs only when needed and stops when its job is
+done. Let's start with the core idea.
+
+A Lambda function is a small unit of code designed to perform a specific task. It could
+resize an image, process an API request, validate input, or even send a notification.
+Instead of running continuously, this code runs only when triggered by an event.
+
+Now, inside every Lambda function, there is something called a handler. The handler
+is the entry point. It tells AWS where execution should begin.
+
+Whenever an event occurs, AWS sends that event to the handler. Then your code
+runs and the response is returned. Behind the scenes, AWS creates something called
+an execution environment.
+
+This environment contains the runtime, your code, dependencies, and all the allocated
+memory. Sometimes AWS reuses this environment called a warm start. Other times,
+it creates a new one known as a cold start.
+
+Each invocation or each trigger runs independently, which means Lambda is naturally
+stateless. It does not remember anything from previous runs. If your application needs
+memory or state, you store it externally.
+
+For example, in DynamoDB, S3, or Database. Another important concept is execution
+limits. A Lambda function can run for a maximum of 15 minutes.
+
+It's designed for short, event -driven tasks, not long background processes. Memory
+also controls CPU power, which is more CPU, means more capacity. One of the most
+powerful features of Lambda is how it scales.
+
+Every incoming request can trigger its own execution environment. Thousands of
+requests can run in parallel automatically without configuration. You don't set up load
+balancers for Lambda.
+
+You don't configure auto -scaling rules as well. AWS handles all of that for you. A
+helpful way to visualise Lambda is to imagine an on-demand call centre.
+
+
+
+
+  Page 2 of 2
+
+
+When calls come in, agents instantly appear. Each agent handles exactly one call.
+Once the call finishes, the agent disappears.
+
+You never hire, fire, or manage them. So, Lambda works best for event -driven
+workloads like APIs, file processing, automation jobs, and for microservices. It's not
+suitable for long-running or stateful applications.
+
+The key takeaway is Lambda changes how we think about servers. Instead of
+managing infrastructure, we focus only on writing logic that reacts to the events. In the
+next topic, we'll look at how events actually trigger Lambda, including services like S3
+Bucket, API Gateway, DynamoDB, and CloudWatch.
+
+-----------------------------------------------------End------------------------------------------------------

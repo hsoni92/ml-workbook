@@ -1,0 +1,39 @@
+
+
+
+  Page 1 of 1
+
+
+Basic instance management Transcript
+Now that we know how to launch and connect to an EC2 instance from a theoretical
+point of view, and later on we are going to observe it in a practical approach as well.
+For now, let's talk about something you'll do almost every day, a basic instance
+management. Every EC2 instance goes through a simple life cycle, and AWS gives
+us four main actions to control it.
+Start, Stop, Reboot, and Terminate. Let's begin with starting an instance. So starting
+an instance simply means powering it on.
+This is used when an instance is in a stop state and you want to resume your work.
+The operating system boots up, applications will start, and the billing begins again.
+Any data stored on the disc remains exactly as it was.
+Stopping an instance is like shutting down your laptop. The OS shuts down gracefully.
+CPU and memory are released and the compute billing will stop.
+However, the storage billing continues because the data is still attached to it. This is
+one of the most common cost -saving techniques in AWS. Stopping instances when
+they are not in use.
+Rebooting an instance is simply restarting the operating system. So the instance ID
+stays the same, data remains intact, and the billing continues parallelly. So reboot is
+usually used when applications are stuck or after applying any updates.
+Now comes the most dangerous action, Terminate. Terminating an instance
+permanently deletes it. By default, the root where your data is stored is also deleted
+and all data is lost.
+Once terminated, the instance cannot be recovered. So it is extremely important to be
+careful when you are terminating any instance. If you accidentally terminate instance
+thinking it is as a stop, then that would be a loss.
+A simple way to remember this is to think of EC2 instance like a laptop. Start is power
+on. Stop is shutdown.
+Reboot is restart. Terminate is throwing the laptop away. So understanding these
+actions helps you avoid data loss, control the cost, and manage your EC2 in a secure
+manner.
+
+
+------------------------------------------------------End-----------------------------------------------------

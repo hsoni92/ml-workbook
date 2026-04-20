@@ -1,0 +1,45 @@
+
+
+
+  Page 1 of 1
+
+
+Module introduction transcript
+
+Welcome to module 10, where we begin exploring serverless computing on AWS. This
+module is important because serverless has completely changed how modern cloud
+applications are built. Instead of managing servers, worrying about scaling or planning
+capacity, developers now focus only on writing small pieces of logic that runs when
+something happens.
+
+That's really the key idea behind serverless. You focus on code. AWS handles the
+infrastructure.
+
+When we say serverless, it doesn't mean servers don't exist. They absolutely do. What
+it means is that you don't manage them.
+
+AWS takes care of provisioning, patching, scaling, and availability behind the scenes.
+This mode is powerful because today's applications do not have predictable traffic.
+Sometimes nothing happens for hours and suddenly thousands of events arrive at
+once.
+
+So serverless handles this automatically. A useful way to think about it is like ride -
+hailing apps. You don't own a car, you don't maintain one, and you don't pay when
+you're not using it.
+
+You simply request a ride, you need it, and you pay for it when you use. So serverless
+works exactly the same way. Code runs only when it is triggered, and you pay only for
+execution time.
+
+In this module, we'll  explore how AWS implements serverless using Lambda, how
+different services trigger Lambda functions, and how full event -driven workloads are
+built. We'll also look at important ideas like stateless design, cost behaviour, limitations
+such as execution tim e, and best practises used in real systems. By the end of this
+module, you'll understand not just what serverless is, but why it is used everywhere
+from automation to APIs to data processing pipelines.
+
+Next, we'll start with the foundation, understanding what serverless actually means, its
+benefits, and the common use cases where it shines.
+
+
+-----------------------------------------------------End------------------------------------------------------

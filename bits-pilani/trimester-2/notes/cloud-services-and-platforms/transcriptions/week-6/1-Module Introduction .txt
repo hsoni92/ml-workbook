@@ -1,0 +1,32 @@
+
+
+
+  Page 1 of 1
+
+
+Module Introduction Transcript
+In this module, we are going to focus on cloud networking fundamentals. Specifically,
+how networking works inside AWS using something called a virtual private cloud or
+VPC. Networking is one of the most common areas that feels intimidating at first, but
+once the core ideas click, everything becomes much simpler.
+And the truth is, most real -world cloud problems are actually networking problems. If
+any application can't connect to a database, if a server can't access the internet, or if
+something is exposed that shouldn't have been, networking is usually the reason.  In
+AWS, networking is completely software-defined.
+There are no physical cables for us to touch. But the same ideas still exist, which is
+private networks, IP addresses, routing rules, and security boundaries. So, a VPC is
+essentially your own private network inside AWS.
+Inside this networking, you decide which resources can talk to each other, which ones
+can reach the internet, and which ones must stay completely private. So, in this
+module, we'll keep things simple and practical. We won't drown ourselves into the
+networking jargon.
+Instead, we will try to focus on understanding the traffic flow, where the requests come
+from, where they go, and what rules decide whether they are allowed or blocked. By
+the end of this module, you should be able to look at a cloud setup and clearly explain
+what something can access and why something can access the internet, why
+something cannot, and how AWS keeps networks secure by design. Think of this
+module as learning road rules before driving.
+Once you understand how traffic flows, everything else becomes much easier. Let's
+begin by understanding the most basic building block, what a VPC actually is.
+
+------------------------------------------------------End-----------------------------------------------------

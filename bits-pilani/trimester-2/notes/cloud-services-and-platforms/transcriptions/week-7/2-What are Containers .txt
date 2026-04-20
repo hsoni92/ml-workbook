@@ -1,0 +1,54 @@
+
+
+
+  Page 1 of 2
+
+
+What are Containers Transcript
+In this topic, we are going to understand what containers are and more importantly,
+why they are considered lightweight compared to virtual machines. Let's start with the
+basics. A container is a lightweight package that bundles an application along with
+everything it needs to run.
+Whether it is its runtime, libraries, dependencies, and configuration, anything it needs
+to run an application, all of those are packed into a single unit. The goal is very simple.
+If the application runs in one place, it should run exactly the same everywhere else.
+This solves a very common problem teams faced earlier. The famous code that we
+have, it worked on my machine issue. Before containers, applications behaved
+differently across environments because of OS differences, dependency mismatches,
+and manual configuration.
+Containers have fixed this by standardising the runtime environment. Let's talk about
+how containers actually work because this explains why they are so lightweight.
+Containers do not include a full operating system like our virtual machines or EC2
+instance does.
+Instead, they share the host machine's operating system and run as isolated
+processes. That's a huge difference compared to virtual machines. Virtual machines
+each include their own operating system, their own kernel, and their own system
+services.
+Containers don't. Because of this, containers start extremely fast, often in or even
+milliseconds, while virtual machines can take minutes to restart or reboot. Virtual
+machines are something that helps us to perform activities and have a full control
+where we get to manage everything.
+Containers are something that uses the host's system configurations. In whichever
+system our docker container is going to be running, it is going to use that particular
+system's dependencies and configurations. This shared model is why containers are
+lightweight.
+They use less CPU, less memory, and less storage. They allow many applications to
+run on the same server efficiently in the real -world systems. This is considered as
+incredibly powerful in the real world.
+Imagine a microservice application with dozens of small services. Running each
+service in a full virtual machine would be very expensive and slow. With containers,
+each service runs independently, scales easily, and shares resources efficiently.
+This is why containers are at the heart of modern cloud development. They enable
+fast deployments, easy scaling, any kind of CI -CD automation, and much more
+automated tasks. In the next topic, we'll build on this and compare containerisation
+
+
+
+  Page 2 of 2
+
+
+and virtualisation conceptually so you clearly understand when and why each
+approach is used.
+
+
+------------------------------------------------------End-----------------------------------------------------

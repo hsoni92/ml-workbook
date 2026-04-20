@@ -1,0 +1,64 @@
+
+
+
+  Page 1 of 2
+
+
+Using Reserved Instances Transcript
+
+Let's talk about one of the most important cost optimisation tools in AWS. Reserved
+instances and saving plans. So far, we've seen that running everything on on-demand
+pricing gives flexibility, but it can become expensive very quickly, especially for
+workloads that run all day, every day.
+
+That is where AWS introduces commitment -based pricing. Let's start with reserved
+instances. Reserved instances are not physical machines.
+
+They are actually billing discounts. You commit to using a certain instance
+configuration for one or three years, and AWS rewards you with significant discounts.
+There are different types of reserved instances.
+
+The first one, standard reserved instance, which gives the biggest discount but are
+less flexible.
+
+Convertible reserved instances, which gives you flexibility to change the instance
+family later on, but the discount is slightly lower. You also choose how you pay, all
+upfront, partial upfront, or no upfront.
+
+It all depends on your budget strategy. Reserved instances work best when your
+workloads are stable, predictable, and always running, like databases or back -end
+services. Let's talk about savings plans, which are more modern and flexible.
+
+Instead of committing to a specific instance, you commit to spending a certain amount
+per hour on your compute.
+
+AWS then automatically applies discounts wherever eligible compute is used. There
+are two types, compute savings plan, which is most flexible.
+
+They work across EC2, Fargate, and Lambda, across instance types and also across
+the regions. So EC2 instance saving plans are more specific, like tied to a particular
+instance family in a region but offer a higher discount. A simple way to think about this
+is through a real-world analogy.
+
+Using on-demand pricing is like taking a cab every day, convenient but expensive.
+Reserved instances are like leasing a car long-term, which is cheaper but less flexible.
+Saving plans are like committing to a monthly fuel budget.
+
+You don't care which car you drive as long as you keep using the fuel. In practise,
+most organisations start with savings plans because they are safer and flexible. Then
+they move to the reserved instances for very stable workloads.
+
+
+
+
+  Page 2 of 2
+
+
+Best practise is to observe usage for a few weeks, analyse it using your cost explorer,
+and then you can commit gradually. Never overcommit because unused commitments
+still cost you money. When used correctly, reserved instances and savings plans can
+reduce AWS bills dramatically without changing architecture or the performance.
+
+
+
+------------------------------------------------------End-----------------------------------------------------

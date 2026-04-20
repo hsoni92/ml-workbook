@@ -1,0 +1,63 @@
+
+
+
+  Page 1 of 2
+
+
+IAC Basics Transcript
+
+Let's now understand what infrastructure as code really means and why it plays such
+a big role in modern cloud and the DevOps practises. Infrastructure as code or ISE
+means defining your infrastructure using code instead of creating things manually
+through the cloud console. Instead of clicking around to create the servers, networks
+or databases, you describe what you want in a file.
+
+A tool that reads that file and builds everything automatically. That is Terraform. So, a
+simple way to think about this is to compare it with cooking.
+
+Manual infrastructure is like cooking without a recipe. Everyone does it slightly
+different. ISE is like having a written recipe that anyone can follow and get the same
+result every time.
+
+That consistency is extremely important in the cloud environments. Before ISE, teams
+struggled with issues like inconsistent environments, configuration mistakes and
+difficulty recreating that exact setup. One developer's environment would work,
+another's wouldn't.
+
+So, production fixes were a bit risky in this case. Recovery took a lot of time. ISE
+solved these problems by making infrastructure predictable and repeatable.
+
+When infrastructure is written as code, it can be version controlled just like the
+application code. That means you can track changes, review them, roll them back to
+the previous code and even collaborate safely. Another important idea behind ISE is
+that it is declarative, which means you declare the final state you want.
+
+For example, I want two servers, a network and a database. The tool figures out how
+to make that happen. This approach also makes automation very easy.
+
+Once the configuration exists, it can be executed automatically through scripts or
+through pipelines also. In real projects, teams use ISE to create stuff like virtual
+networks, compute instances, load balancers, databases, IAM roles and even storage.
+All from a code.
+
+The same configuration can be reused to create development, testing and production
+environments simply by changing input values. That saves time and avoids mistakes.
+ISE is also a core pillar of DevOps.
+
+Without it, automation becomes fragile and inconsistent. With ISE, infrastructure
+becomes repeatable and scalable. So, the key takeaway here is ISE turns
+infrastructure into something predictable, automated and easy to manage.
+
+
+
+
+  Page 2 of 2
+
+
+Just like a software. Next, we'll build on this by understanding the difference between
+declarative and imperative approaches, which explains how the tools like Terraform
+actually work and how we could set up our infrastructure through a code.
+
+
+
+-----------------------------------------------------End------------------------------------------------------

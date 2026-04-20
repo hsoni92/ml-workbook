@@ -1,0 +1,41 @@
+
+
+
+  Page 1 of 1
+
+
+Activity Auditing with CloudTrail Transcript
+Now let's talk about one of the most important questions in cloud security and
+governance. Who did what and when? In AWS, almost everything happens through
+API calls. Whether someone clicks a button in the console, runs a CLI command, or
+an automated servi ce performs an action, it all becomes an API request behind the
+scenes.
+This is where CloudTrail becomes critical. CloudTrail records these actions so you
+always have visibility into what happened in your account. Every time an action occurs,
+CloudTrail captures details such as who performed it, what action was taken, when it
+happened, from where it was triggered, and whether it succeeded or failed.
+This makes AWS fully auditable. Think about a real situation. Suddenly, a security
+group rule changes and port 22 becomes open to the world.
+Instead of guessing, CloudTrail allows you to trace exactly who made that change and
+at what time. This is extremely important for security investigations. It's also critical for
+compliance.
+Organisations in banking, healthcare, or enterprise environments must prove that all
+changes are tracked and reviewable because these sectors provide heavy and
+confidential customer data. CloudTrail provides that evidence for you. It's also very
+useful for troubleshooting.
+Sometimes, systems break not because of bugs but because someone accidentally
+changed a small configuration. CloudTrail helps you rewind the timeline and
+understand what happened. It records different kinds of events.
+Managed events track actions like creating or deleting resources. Data events capture
+access to things like S3 objects. And insights events help detect unusual behaviour
+patterns automatically.
+All these logs can be viewed directly in the AWS console for recent history or stored
+long term in S3. They can also be sent to CloudWatch logs for alerts or queried also.
+A simple way to think about CloudTrail is it acts like security cameras as I've been
+mentioning in the previous topic.
+If CloudWatch tells you what is happening right now, CloudTrail tells you who changed
+what in the past. Together, they form the backbone of monitoring, auditing, and
+accountability in AWS.
+
+
+------------------------------------------------------End-----------------------------------------------------

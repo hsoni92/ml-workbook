@@ -1,0 +1,54 @@
+
+
+
+  Page 1 of 2
+
+
+Connecting Resources Across Subnets Transcript
+In this topic, let's understand how resources communicate across subnets inside a
+VPC. This is one area where many beginners get confused, so let's clear it up in a
+proper way. First, an important truth.
+Subnets inside the same VPC can communicate with each other by default. Public
+and private subnets are not isolated from each other automatically. They are simply
+logical divisions inside the same network.
+So, how does communication actually work? Inside a VPC, AWS automatically
+provides internet connectivity between the subnets. So, every route table has a local
+route that allows the traffic within the VPC's header range. This means traffic does not
+need an internet gateway or a NAT gateway or anything extra to move between the
+subnets.
+However, just because traffic can flow doesn't mean it should. That is where the control
+comes in. There are three things that decide whether communication succeeds.
+First is the route tables. Route tables decide where the traffic goes, not whether it is
+allowed or blocked. As long as a local route exists, routing is usually not the issue.
+Second is security groups. Security groups are attached to the instances and control
+who is allowed in and out. They are stateful, which means return traffic is automatically
+allowed.
+Most real -world architectures rely heavily on security groups to control subnet
+communication. The third is network ACLs. These work at a subnet level and are
+stateless.
+They act like a security gate at the subnet boundary. If a network ACL blocks traffic,
+communication will fail even if security groups allow it because before reaching
+security groups they need to pass a check at a network ACL. So a very common
+pattern is a web server in a public subnet talking to an application server in a private
+subnet.
+This works as long as the application server's security group allows traffic from the
+web server's security group. Another common pattern is application servers talking to
+databases, usually both inside private subnets. In this case, the database allows traffic
+only from the application layer.
+So admins connect to these public subnets through a concept called a bastion. This
+is a cloud concept, a very advanced one. With this, we can access private instances
+in a secure way.
+But the bottom line stays the same. Private subnets are usually not the block where
+you initiate a communication. But if you still want to do it, there are certain advanced
+mechanisms that we could follow.
+
+
+
+  Page 2 of 2
+
+
+Once you understand this, VPC design becomes much easier to understand. In the
+next topic, we'll talk about assigning the public IP addresses versus elastic IP
+addresses and when you should use each of them.
+
+------------------------------------------------------End-----------------------------------------------------

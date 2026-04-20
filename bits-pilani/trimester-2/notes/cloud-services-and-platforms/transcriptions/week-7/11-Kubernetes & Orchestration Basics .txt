@@ -1,0 +1,40 @@
+
+
+
+  Page 1 of 1
+
+
+Kubernetes & Orchestration Basics Transcript
+Up to now, we have understood how containers package applications and make them
+portable. But there's a big question we haven't answered yet. What happens when you
+don't have one container but hundreds of them? This is exactly the problem
+Kubernetes was created to solve.
+Docker makes it easy to create and run containers. But managing these numerous
+containers at a scale is a completely different challenge. Containers can crash, servers
+can go down, traffic can spike suddenly, and deploying new versions manually
+becomes risky very quickly.
+This is where container orchestration comes in. Container orchestration simply means
+automatically managing containers so that applications stay available, scale when
+needed, and recover when something breaks. All of this without human intervention.
+So Kubernetes is the most widely used container orchestration platform today. In
+simple terms, Kubernetes is the system that runs, manages, scales, and heals
+containers automatically. It doesn't replace Docker.
+Docker builds containers, Kubernetes manages those containers. So Kubernetes
+takes care of deciding where containers should run, restarting them if they fail, scaling
+them when the traffic increases, and distributing traffic across healthy containers.
+Because the servers which we have discussed so far, which are having their own
+operating system, they can be launched on these containers.
+So if a server is down or a container is down, we need a mechanism to manage it.
+That is exactly where Kubernetes steps up. So this is why Kubernetes is so important
+for cloud native applications.
+Modern applications are distributed, frequently updated. Some new version or some
+new change always comes up to improve the business and expected to be available
+all the time. Any slight discomfort will have an effect on the business directly.
+So Kubernetes provides the automation needed to make that possible. That's also why
+Kubernetes has become the industry standard across all the major cloud platforms,
+AWS, Azure, and GCP. So in the next lesson, we'll try to understand how Kubernetes
+works from an internal point of view, and we'll also try to understand how the flow of
+Kubernetes works like from an architectural point of view.
+
+
+------------------------------------------------------End-----------------------------------------------------

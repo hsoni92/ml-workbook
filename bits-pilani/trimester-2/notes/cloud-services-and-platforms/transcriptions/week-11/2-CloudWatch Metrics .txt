@@ -1,0 +1,47 @@
+
+
+
+  Page 1 of 2
+
+
+CloudWatch Metrics Transcript
+In this topic, we are going to understand CloudWatch metrics. One of the most
+important foundations of monitoring in AWS. At a simple level, metrics are numbers
+collected over time that will tell us how our resources are behaving.
+They act like health indicators for our systems. Think of the metrics the same way you
+think of a car dashboard. You look at speed, fuel level, and warning lights before
+something goes wrong.
+CloudWatch metrics plays the same role for the cloud resources. Let's start with CPU
+metrics. CPU utilisation tells us how busy the processor is.
+If CPU is constantly high, it usually means the system is under pressure. If it's always
+very low, it might mean we are paying for more capacity than we need. This metric is
+commonly used to trigger auto-scaling and performance alerts.
+Now, let's talk about memory metrics, an important detail that many people miss out.
+AWS does not collect memory usage by default because memory lives inside the OS.
+To get memory data, we instal the CloudWatch agent.
+Once enabled, we track memory usage, available memory, and swap usage. This
+becomes critical for applications like Java or databases that are memory heavy. Next
+comes network metrics.
+Network metrics track how much data is flowing in and out of an instance, like network
+in, network out, and packet counts. These metrics help us detect traffic spikes,
+diagnose slow applications, identify unusual behaviours, and even understand the
+data transfer cost. Another important concept is metric resolution.
+By default, metrics are collected every five minutes. If you enable detailed monitoring,
+metrics are collected every one minute. So higher resolution gives faster visibility but
+also slightly increases the cost.
+So that is a trade-off. Now, let's connect this to a real operation. CloudWatch metrics
+are used everywhere for alarms, for scaling, dashboards, cost optimisation, and
+incident troubleshooting.
+Without metrics, teams are essentially flying blind. To summarise this topic,
+CloudWatch metrics provide good visibility, and visibility gives you awareness.
+Awareness enables automation and control.
+And this is why metrics are the foundation of monitoring in the AWS. Next, we'll move
+to CloudWatch alarms, where these metrics actually start triggering actions and the
+alerts.
+
+
+------------------------------------------------------End-----------------------------------------------------
+
+
+
+  Page 2 of 2

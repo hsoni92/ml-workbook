@@ -1,0 +1,66 @@
+
+
+
+  Page 1 of 2
+
+
+                        Read replicas, scaling & failover transcript
+
+In this topic, we are going to understand how databases handle growth and failures
+using three key ideas, read replicas, scaling, and failover. Let's start with problem they
+solve. In most real-world systems, databases don't fail because of storage.
+
+They fail because too many users are reading data at the same time. Think of
+dashboards, reports, product listings, or even analytics views. These are read -heavy
+operations.
+
+That's where read replicas come into the picture. A read replica is essentially a copy
+of the main database. The primary database handles all the writes while replicas
+handle read requests.
+
+This separation allows the system to scale without overloading the main database.
+Behind the scenes, the primary database records every change and sends those
+updates to the replicas. This process happens asynchronously, which means replicas
+may lag slightly, but that's usually acceptable for read-heavy use cases.
+
+This brings us to an important idea over here, which is scaling. There are two ways to
+scale databases. Vertical scaling means increasing the CPU or the memory on one
+machine.
+
+It's simple, but limited and expensive. Horizontal scaling, the other one, which means
+adding more machines, which is exactly what read replicas enable. This is how
+modern systems scale read traffic efficiently.
+
+Now, it's important not to confuse read replicas with multi -AZ deployments. Read
+replicas exist mainly for performance. Multi-AZ exists for availability.
+
+In a multi-available zone setup, there is a standby database that stays in sync with the
+primary. If the primary fails, the system automatically promotes the standby and
+redirects the traffic. This process is called failover.
+
+Failover ensures your application stays online even during the failures. The switch
+happens automatically without any manual intervention. Think of it like a newsroom.
+
+One editor approves content while the multiple newspapers distribute it to the readers.
+If the editor is unavailable, a deputy immediately takes over, so publishing continues.
+That is exactly how failover works.
+
+In real systems, these mechanisms are combined. Read replicas handle performance.
+Multi-AZ handles reliability.
+
+
+
+
+  Page 2 of 2
+
+
+Failover handles unexpected failures. Together, they form the foundation of
+production-grade database systems, which are commonly used by e -commerce
+platforms, SaaS tools, analytics dashboards, and even enterprise applications. The
+key takeaway is simple.
+
+Read replicas improve performance. Failover protects availability. Using both gives
+you resilience and scalable databases.
+
+
+-----------------------------------------------------End------------------------------------------------------

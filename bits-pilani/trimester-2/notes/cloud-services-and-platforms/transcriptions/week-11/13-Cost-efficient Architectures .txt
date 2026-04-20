@@ -1,0 +1,36 @@
+
+
+
+  Page 1 of 1
+
+
+Cost-efficient Architectures Transcript
+In this topic, we'll look at how serverless computing and autoscaling help reduce cloud
+costs without compromising the performance. Let's start with serverless. When we say
+serverless, it doesn't mean there are no servers at all, right? It means you don't
+manage or pay for the servers when nothing is running.
+With services like AWS Lambda, your code runs only when something triggers it, like
+an API call, a file upload, or any other event. Once the execution finishes, resources
+are released automatically. That means there is no ideal cost.
+So you pay only when you use it. Serverless works the same way. This makes
+serverless extremely cost efficient for workloads that are unpredictable, event-based,
+or even now.
+Let's talk about autoscaling. Autoscaling applies mainly to services like EC2 or
+container platforms. Instead of running a fixed number of servers all the time, the
+system will automatically adjust the capacity based on your current demand.
+When the traffic increases, more instances are added. When the traffic drops, extra
+instances that were added will be removed. This avoids the classic problem of keeping
+extra servers running just in case.
+So a great real-world example is an online store. During a sale, traffic spikes heavily.
+Autoscaling adds capacity so users don't face slowness.
+Once the sale ends, the system scales back down so you're not paying for unused
+servers. When you combine serverless plus autoscaling, you get the best of both the
+automatic scaling, zero ideal cost, and minimal operational effort. This approach works
+beautifully for APIs, background jobs, file processing, and even event -driven
+workflows.
+The key takeaway here is simple. Cost optimisation is not about choosing cheaper
+machines. It's about matching resource usage to your actual demand.
+So serverless and autoscaling help you do exactly that automatically.
+
+
+------------------------------------------------------End-----------------------------------------------------

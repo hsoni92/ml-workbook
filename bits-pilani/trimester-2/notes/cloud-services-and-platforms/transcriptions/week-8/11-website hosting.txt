@@ -1,0 +1,142 @@
+
+
+
+  Page 1 of 4
+
+
+               S3 Website Hosting Transcript
+Module 8, Lesson 3, Practical Lab. In this practical lab, we'll  create an S3 bucket,
+configure permissions securely and host a static website accessible from the internet.
+Before we dive deep into this demonstration, I just want to jog your memory that S3 is
+an object storage.
+It is not a server. So S3 stores objects like HTML, images, videos, backups and logs.
+It doesn't run your code.
+It only serves the files. But S3 has an option wherein if you have a static file, you can
+host it onto the internet. Just like you do on a EC2 instance or any other remote server.
+So in this demonstration, what we are going to experience is we are going to create
+an S3 bucket into our AWS account. We'll try to upload a HTML file which has all the
+details related to our website. After that, once we upload the file, we have certain
+options within our S3 which helps us to enable this website hosting.
+Post enabling it, we'll try to observe if that particular website is accessible over the
+internet or not. So anyone who has access to that URL post enabling the option can
+have a proper access to your website. So this is the exact flow which we are going to
+demonstrate in today's practical activity.
+Once logging into your AWS account, go with the S3, you can type here or you can
+use it from the bottom. The search for S3, you have an option called as create bucket.
+So once you give a create bucket, let's try to start creating a bucket with some options.
+First is the bucket name. Let's give something that's meaningful. So I would say my
+static website demo.
+Then we land on to block public access settings for this bucket. This is always enabled
+by default because S3 usually has a very secure information in these buckets. But in
+our case, we are trying to upload a file which we wanted to be publicly accessible on
+the internet.
+For the same reason, we can unbox it, acknowledge the warning and we can just
+create the bucket. You can leave the other options as usual. So these are additional
+security measurements for the encryption.
+This is for the versioning. So all of these are additional layers to keep your items inside
+your bucket secure. So we can avoid that since we want everything to be public inside
+this bucket.
+So we go with create bucket. The name already exists. So let's say we give some
+unique name to this.
+All right. Now we have an S3 bucket. And there are different ways to manage the
+permissions for this.
+
+
+
+  Page 2 of 4
+
+
+
+So we have three types to manage the permission. The first one is IAM policies, which
+is recommended by AWS. Then we have bucket policies, which is also recommended.
+The other one is ACL access control list. If you observe when we are trying to create
+an S3 bucket, we had this option for access control list. So this is disabled and it is
+recommended because this needs to be done manually by a user.
+So there are good chances that it  could lead to many human errors. For that reason,
+AWS allows us to use IAM or bucket policies rather than access control list, ACLs,
+which could lead to a human error. Now let's try to actually get inside our bucket and
+upload a file.
+So we have an option called as upload and add the file. So my file is present on the
+desktop. This is the file which I want to upload inside this file.
+I have all the information related to my website, how it should look, what colours to
+use, how much font size to use, all that details, I have it inside this file. So now that
+my uploading is successful, let's go back to our bucket. From the bucket, if you  go to
+the properties and scroll to extreme bottom, you have something called as static
+website hosting, which means whatever file is present, a HTML file that can be used
+to convert it into a website using S3.
+We say static because it can't be modified or it can't be edited. You always have to
+upload a new file and delete the existing one. So there's no dynamic approach when
+it comes to hosting your files as a website using this S3 service.
+So once we enable it, we have an option called as enable. So here we'll go with host
+a static website, right? Index documentation. We can just give the name of the file and
+do the same for error document.
+You can also skip this. This particular is not needed, but you can add both of those
+and click on save changes. So S3 now behaves like a web server for static files.
+If you scroll to extreme bottom, we have a URL created by the AWS. So this is an
+actual URL, a hyperlink, which our file that we have uploaded. It is converted into a
+URL.
+But before going ahead and pasting this URL into the website, we need to set some
+permissions. For that, we have to go back to the permissions tab. We have something
+called as bucket policy.
+So bucket policies will define what access should be given, who should be able to do
+what operation with this website. So usually we use a JSON formatted code to define
+our bucket policies. That is a whole new different concept.
+So it will look something similar to this. So here we are just trying to allow only the
+read permission to this website. Right.
+
+
+
+  Page 3 of 4
+
+
+
+So here I'll just give my name over here. So this is the resource that I want it to be
+public, publicly available, which should have only read only access. So I can either
+allow or deny coming to the principle who can do it when I mention a star.
+It means anyone anyone with this URL can use it. So this is exactly how the policy
+looks like. And all it does is this policy allows anyone to read my website.
+Nothing more than that. Right. So now let's try to save the changes.
+There's something which we have missed out. All right. So now my changes are saved.
+Let's go back to the properties. Scroll down. And if we try to open this URL, which was
+created.
+So if we open this into a if I copy this and just paste it over here, we are going to see
+our website's content, which we have created. Right. So this is the website which I just
+try to summarise what we are going to do in this demonstration.
+So this is how your regular website, a regular file, which is a normal index dot HTML
+file that we created inside our bucket. So this file is now converted into an actual
+website. Right.
+So just to be on the safer side, since this is going to be chargeable to keep our file
+inside our bucket for a longer duration of time, we can delete and clean up our
+resource. Right. So just to summarise what we have done before the cleanup, we used
+Amazon S3 to host a static website by controlling access with a bucket policy.
+This pattern is widely used for landing pages or documentation or any front end
+hosting. In production environments, this setup is often combined with a service called
+as Amazon CloudFront, which is also a global content delivery service by AWS that
+caches the content at the edge locations for a better and faster delivery. CloudFront
+is commonly used alongside Amazon S3 to improve performance and enhance the
+security.
+So feel free to explore the CloudFront service further at your own pace. So this is the
+entire content which we have discussed so far. Right.
+So now our website is live and accessible. Anyone who has access to this website can
+also go through this entire content. They can't make any change, but they will have
+the read only access.
+Let's try to quickly delete and clean up our resource. In S3 bucket, when it comes to
+cleaning up your resources, your bucket should be empty before you delete it. If there
+is any object inside it, it will not allow you to delete.
+So if I currently I have my index.html file. If I go ahead and delete it, it's going to throw
+me an error saying that the bucket is not empty. So before that, I had to make sure
+that my file is deleted.
+
+
+
+  Page 4 of 4
+
+
+Quickly delete this. All right. So now my file, my objects are empty inside my bucket.
+Now it will allow me to delete this bucket. So this is how you can use S3 to host and
+launch your websites. The URL can be shared with anyone.
+But in exchange, if you're keeping that file inside your S3 bucket, it is going to be
+chargeable after a certain time. That's all.
+
+
+            ---------------------------------THANK YOU--------------------------------------

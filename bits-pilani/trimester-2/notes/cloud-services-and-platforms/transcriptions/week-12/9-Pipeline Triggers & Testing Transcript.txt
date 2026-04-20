@@ -1,0 +1,67 @@
+
+
+
+  Page 1 of 2
+
+
+Pipeline Triggers & Testing Transcript
+
+Now, let's talk about pipeline triggers and automated testing, which together form the
+backbone of our CI-CD setup. Let's start with pipeline triggers. A trigger simply defines
+when a pipeline should start.
+
+Instead of someone manually clicking a button, the system reacts automatically to the
+events. Most common trigger is a code change. Whenever a developer pushes a code
+or creates a pull request or merges to a branch, the pipeline starts automatically.
+
+It gets triggered automatically. Another common type is schedule -based triggers.
+These are useful for night jobs, security scans, or routine maintenance checks.
+
+They are also event -based triggers where pipelines start because something
+happened, like a file being uploaded. And finally, manual triggers, which are useful
+when the teams want controlled releases or approvals. Together, these triggers make
+pipelines responsive and automated.
+
+Now, let's move to automated testing. Automated testing means your system checks
+itself. Without human involvement, every time the code changes, it will run certain
+tests.
+
+Instead of manual testing features, scripts that are written by the developers or the
+devops verify whether the application behaves correctly or as expected. This is
+extremely important because modern systems change frequently and manual testing
+simply doesn't scale that much. There are different kinds of tests used in pipelines.
+
+First are unit tests, which test a small piece of your logic. They are fast and usually run
+on every code change. Next are integration tests, which check how the multiple
+components work together.
+
+For example, if your application involves an API and a database, it will verify if your
+API is talking correctly with the database or not. Then comes end -to-end test, which
+simulates a real user behaviour, such as logging in or uploading a file. Finally, m any
+pipelines also include security and quality checks, such as scanning for any
+vulnerabilities or bad coding practises, like exposing the private keys or tokens publicly
+within the code.
+
+All these tests fit into a simple pipeline flow. The code comes in, builds run, tests
+execute, and then the deployment happens only if every stage is passed. A key idea
+here is something called failed fast.
+
+
+
+
+  Page 2 of 2
+
+
+If a test fails, the pipeline stops immediately. This prevents broken or insecure code
+from reaching into the where the customers actually get used to. A user analogy is
+airport security, where passengers pass through multiple checks.
+
+If something fails, the movement stops. Only when all the checks pass, the journey
+will continue for that particular passenger. That's exactly how the pipelines work.
+
+When the pipelines trigger and automated testing work together, teams get a faster
+and more confident code into their production. This combination is what enables the
+true DevOps automation.
+
+
+-----------------------------------------------------End------------------------------------------------------

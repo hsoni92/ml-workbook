@@ -1,0 +1,326 @@
+
+
+
+  Page 1 of 8
+
+
+Course Video Launching & Managing EC2
+Transcript
+Module 5, lesson 3, practical lab. In this practical lab, I'm going to demonstrate how to
+create our own EC2 instance, how to work with the security groups, how to work with
+the AMIs, what are the different instance types that we can create, and how to manage
+our EC2 instance. So before moving ahead, EC2 instance is just a virtual machi ne,
+something similar to our personal laptops, the way our laptop has a memory RAM, we
+perform certain operations like copying the files, managing the file system, working
+with the softwares.
+Similarly, we can do the exact same actions using our EC2 instance. The only
+difference is our personal laptops, we have a physical access to it. For the EC2
+instance, we don't have to manage our EC2, we don't have to manage the wiring,
+configuration, setup, installation, everything.
+So all of that is managed by the AWS. All we have to do is we just have to click on
+certain buttons, pay some amount to what we are going to use and start using it. Now
+let's get started.
+So either type EC2 with a search bar or you can get it from the list. So currently I don't
+have any EC2 instances running, so it is currently zero instances running within my
+AWS account. So if I go to a different account, let's say I go to California avai lability
+zone, we can create our EC2 instances at any region at any availability zone.
+So even here I don't have any instances running. So let's try to create one instance.
+At the left, you see an option called as instances and you click on it, you see an option
+called as launch instance.
+So we click on that, give a valid name like demo instance EC2. After providing the
+name, this is where we have to select our AMI, which is Amazon machine image.
+Basically, just to reiterate, AMIs are nothing but the type of operating systems.
+So normally, so far we know Windows, Ubuntu and Linux. This is something that are
+most common operating systems that many of our laptops have. So you can choose
+anything out of this list.
+If there is something that is beyond this list you're looking for, you can also browse for
+more AMIs. So you have an option called as marketplace and community. So many
+product based companies, when they launch their particular product with combination
+of AWS, they could use this AMI, they could build their own AMI, launch their product
+inside that AMI and they'll just give you the ID of whatever AMI they have launched
+the product.
+So when you want to use someone's product, you just browse through their AMIs and
+you select it. Now, just for a simple reason, we're just going with the Linux operating
+
+
+
+  Page 2 of 8
+
+
+system and we'll go with the free tier eligible since we don't want to invite any billing.
+So we have multiple free tiers within this Linux AMI.
+So you can use anyone which you want. Next is the instance type. Instance type
+defines what are the configurations required for your virtual machine.
+So we have different types. So the free tier one is T2 micro. So we can go with the T2
+micro.
+But apart from that, you have multiple instance types ranging from the highest with
+128 CPU, 512 GB memory. So our current one which we are selecting. So it is a
+minimal one since it is on the free tier.
+So we'll have only one CPU and one GB memory. You can also observe what is the
+pricing based on an hourly basis. So EC2 instance works on an hourly basis.
+So you have multiple options like this one for 16 GB, 32 GB, it keeps on increasing
+and it changes depending upon the type that you are using. We'll go with the free tier
+over here. Next is the key pair.
+Key pair is something that is used to validate that a right person is trying to access this
+EC2 instance. So it is kind of a required step. You can skip it.
+It is not a mandatory. But when you skip it, so it is going to say not recommended
+proceeding without a key pair is not recommended. So you don't have to go to
+anywhere else.
+You have a default hyperlink over here to create a new key pair. Give a name like key
+pair for demo instance. So you can use either types .ppk or .pem whichever one is
+fine.
+You just create the key pair and you can save it somewhere in your desktop. Now,
+after that, you have the network settings. So when you create an EC2 instance, since
+it is not accessible accessible to us from a physical basis, we need to interact with it
+through certain networking elements, right? That is where your VPC, subnet, IP,
+firewalls, all of these come into the picture.
+So over here, if you remember the security groups, which acts as a security layer for
+your instance level. So we can either create a security group or we can select an
+existing one. So if you select an existing one, you will have a default security group
+created by AWS.
+So you can use that default security group or let's create a new security group. So
+here we have multiple options. The first one is allowing to connect to this instance from
+anywhere.
+So this is the IP address. Basically, we are trying to say that from any IP address, I
+could connect to this particular instance. You can add a custom or you can add your
+personal IP address also.
+
+
+
+  Page 3 of 8
+
+
+
+For now, we leave it as open like anyone could access this particular EC2 instance if
+they have the required details. Moving ahead, we have the configuration storage. So
+storage is something that will be used for your EC2 instance, like the way our laptops
+have hard discs like SSD or HDD.
+The EC2 instance also has a default storage, which we call it as EBS, Elastic Block
+Store. We'll look into this topic in the upcoming lessons, but we can also configure and
+add a storage type to our EC2. For now, we'll skip this.
+So that's all. We have added all the required details. We provided a name.
+We provided the AMI. What type of OS do you want to use? Then we selected an
+instance type like what should be the configurations for our OS. And then we created
+a key pair for security purpose so that we can connect to this EC2 instance from
+anywhere.
+We selected the networking settings to connect to it. And that is it. So we can also add
+instances in currently we are creating only one.
+You can make it as many as you want, like two, three, four, any number that you want.
+So for now, we'll keep it as one. And we click on launch instance.
+So within 10 seconds, your instance is up and running. See, it didn't even take five
+seconds. You click on this link.
+So when you go back to your instances where we started, so you'll have your instance
+ready over here. So currently it is in pending state. We give it a couple of seconds.
+It will be in the running state. So it is already in the running state. So this is my instance.
+This is my instance ID. Every instance is going to have a unique ID so that we can
+identify them based on these IDs. Right.
+If the ID is not something that is easy to remember, that is where we go with the names.
+So this is my instance type. This is where I have set the availability zone where I have
+created my EC2 instance.
+And these are all the other details. This is the key pair name that I have used for this
+instance. The platform this instance is running is on Linux.
+And if you go through more detail, then if you scroll down here, you have a proper
+details column wherein you get to see the instance ID, public IP address of this
+instance, private IP address of this instance. Basically this public IP address and
+private IP address are used whenever you're trying to launch a particular product, like
+you're using this instance to launch your front end. So in those cases, you can expose
+this IP address so that anyone who's trying to access your website, like if you're trying
+to launch an e-commerce website, right.
+
+
+
+
+  Page 4 of 8
+
+
+And you can use a domain name on top of this public address, public IP address. So
+these are used in those cases. That's the reason we have them out in the open.
+We have more additional details, which we are going to see in the upcoming modules
+slowly one by one. You have the AMI ID. So this AMI ID is going to be useful, especially
+when we use tools like Terraform, Pulumi or CloudFormation.
+So these are tools which are used to build your infrastructure with the help of a code.
+So we'll also navigate through Terraform as well as part of our last module in this
+programme. So we'll discuss all of this once again, just giving you a heads up that you
+have all the required details related to your instance over here.
+If you are set up any alarms, you can watch them over here, like how the instance is
+running. Is it up? Is it down? You can monitor your instance CPU utilisation, how the
+network is working. You can have different metrics to adjust and compare how your
+instance is being used.
+Is it overused? Is it underused? Because if it is underused, you can just go to a
+previous lower version, a lower instance type that will save you some money. If it is
+overused, then you have to increase it so that your performance stays up to the mark.
+So you can filter it out by different time frames.
+You can use a local time zone as well. Pretty much monitoring is very much convenient
+for each EC2 instance. You just have to select which EC2 instance that you want.
+You select and the details of that instance will pop. Same goes with the security and
+networking. What security group you are using inside the security group? What are
+the inbound rules? What are the outbound rules? If you remember inbound rules and
+outbound rules, decide what type of a request is allowed and what type of a request
+is not allowed.
+So here you can use if I go to this security group, you can also edit the inbound rules.
+Like if you go to the edit inbound. So you have multiple types of connections which
+you can access or which you can restrict.
+You can add more rules like if you want a TCP connection with some different port or
+if you want some other custom protocol that your company is using. So you can just
+configure them and click on save rules. This will directly apply instantly on top of your
+instance.
+So all of this will help to provide a better security to your instance. Now that we are
+ready with our EC2 instance, we have learned how to create our instance, how to
+launch it, what all configurations to use along the way. Let's try to connect to this EC2
+instance.
+Now you see a button over here which says connect. We click on it. We have two
+common approaches when we want to connect with this instance.
+
+
+
+
+  Page 5 of 8
+
+
+The first one is this EC2 instance connect. So when you click on connect, it will open,
+you're able to connect to your instance through a browser. So it opens into a new tab
+and from here you can access your EC2 instance.
+So this is just like a command line interface where you can access your EC2. You can
+do any type of operations that you do on your local laptops. Let's say if you want to
+create a folder.
+So the command we use is MKDIR. If you are familiar with Linux, then this would be
+easier for you. So let's say I'm trying to create a folder called as bits.
+I click on LS to display what all folders do we have. So currently I have only one folder.
+All right.
+So I want to navigate inside this folder and create a simple file. So I'll say cd bits. This
+is the command that we use to change our folder cds change directory.
+So now I'm inside my bits folder and if I want to create a command, I'd say create a
+file touch CSP plan. Basically I'm trying to create up a learning plan for our programme.
+So I'll create this file.
+So if I click on LS, then this file is created. So you can do any operations. You can add
+files, remove files, delete, modify, archive, unzip every operation that you do on your
+local laptops.
+Everything can be done within this. The only difference is since it is a Linux operating
+system, Linux works purely on the commands. So you can use their multiple
+commands that you could use to run your EC2 instance.
+This is approach one where you approach through a browser. The issue with this is
+whenever you want to access your EC2 instance, first thing you need to log into your
+AWS console, which means you need to have access to the non root username and
+the password. After that, you come to your EC2 instance, you type it, you look for the
+relevant EC2 instance, then you click on connect, you choose the type and then you
+land over here.
+This is approach one, which is kind of a lengthy process. We also have an easy
+approach, which is SSH client, SSH stands for secure shell login, which means anyone
+from any location can directly interact with this instance from their personal machine.
+Now, how is it done? You just have to follow this guidelines.
+Even if you are someone from a non technical background, you don't are, you're not
+involved much with the Linux or working closely with the terminal. It is still an easier
+approach for you. So what you're supposed to do is let's say now this is my personal
+laptop, right? So if I want to access to this instance from my local laptop, so what I
+have to do, I have something called as a terminal.
+
+
+
+
+  Page 6 of 8
+
+
+So in this terminal, currently this is my personal username, right? So over here,
+whenever I want to log in from here, I need to make sure that my particular key value
+pairs, which I have created, should be, I need to go inside that folder and from there I
+will be logging in to my EC2 instance. Now, so I have my key value pair, which I have
+downloaded to launch my EC2 instance. It was on the desktop.
+So I have to, since I'm in my root account, so I'll just go to change my directory, the
+desktop and see if it is present or not. Okay. So this was the key pair that I have used,
+right? So I'm in my right folder.
+Now from here, we need to run a couple of commands to directly connect to our EC2
+instance from my local machine. Now how do we do that? So we have a proper
+guidance, like first we open our terminal, such client is nothing but a CLI where you
+are going to run the commands. So from here, we have to locate where our key pair
+was present.
+So as I've already shown you, it is in my desktop. So I have changed my directory
+using the cd command from the root directory to the desktop folder. After that, we need
+to run two commands.
+So the first one is this one, so that our file, our key value files are accessible. This is a
+command that we use to make our files accessible to anyone. After that, so it is asking
+us to connect to our instance using a public DNS.
+So you can skip step four and you can directly copy this command over here, the
+example command. So the format of this command is ssh -i, the name of your key
+value pair and the ARN of your EC2 instance. So if you see this EC2 at the rate EC2
+1356 to 12, this is exactly the same which we have launched.
+This is the username of our EC2 instance. Just like I have this as my username,
+similarly, my remote has this as its username. So all we're trying to do is just using
+replacing the names and running this command.
+So just copy this and run it in your terminal or in your command prompt. So it's going
+to ask you for a confirmation if you want to continue connecting to this remote server.
+So I say yes, that's it.
+So if you observe over here, so this was my local account for my laptop and this is my
+remote EC2 instance, which means currently I'm inside my remote EC2 instance. So
+if you remember, we created a folder called as bits. Right.
+So if I click on LS over here, so it's going to show that directory. If I go inside this bits
+and click on LS again, it's going to show the file which we created. So what you're
+trying to do is you run two commands and you are able to access your EC2 insta nce
+instantly.
+
+
+
+
+  Page 7 of 8
+
+
+Whatever files are present, everything will replicate in your local laptop. This will avoid
+a lot of time for you. You don't have to collect the details, the login details, password,
+type in EC2 and then click on connect and use it from the browser.
+This will hardly take you five seconds to type in the command and run them. And that's
+it. You have access to your EC2.
+Sitting from your home, you're trying to access a virtual machine which is somewhere
+in the US. Right. This is the beauty of cloud.
+This is why many companies have opted for cloud compute, because it gives you an
+easier approach to interact with your servers, maintain it and manage it. Now coming
+to the last part of our practical lab, we have a couple of states when it comes to running
+your instance. Currently it is in running state, which means my bill is going to come
+based on this usage that I have done.
+Right. So if you go to this instance type, we have three different stages. Stop.
+Start. Reboot. And terminate.
+So you'll be able to see the start instance when your instance is in stop state. So
+currently it is already running. So the start is not visible.
+So we have stop. Stopping an instance will only stop the processing. The billing will
+still continue.
+So make sure that whenever you create an EC2 instance for a practical learning, make
+sure that you terminate it rather than stopping an instance. Because even though you
+stop it, it is still under your name. It is still accessed and applied to your account.
+So no one is still going to use this instance until you delete it. Right. So it is still on
+your name.
+So you have to delete to avoid any billing. Right. So we are going to terminate this to
+avoid any billing.
+So it is already shutting down. So once I give it like 10 or 20 seconds, it will the stage
+will turn as terminated for this instance. In the meantime, let me walk you through other
+options that we have.
+So for an instance, you have a proper AMI catalogue where you can search or browse
+for the instance images, whether it is on the marketplace or any other AMIs. You can
+create your own personal AMIs. You have security groups.
+You can create your key value pairs from here as well. Key value pairs and the security
+groups. But when you create an instance, you already have a proper hyperlink over
+there to create instantly.
+
+
+
+  Page 8 of 8
+
+
+Right. So all of this, we have reserved instances where we can we will learn about
+this, which will help us in terms of getting a better pricing model, savings plan, spot
+requests. So all of these are dedicated hosts.
+All of this help us to track everything related to your EC2 instance from a single place.
+Right. So as you can see, my instance is now terminated.
+So I do not have any running instances. If we go to this running, I do not have any
+instances running. Right.
+So just to be on the safer side, I would recommend you guys to go to the billing and
+cost management. And from here, you can verify if any services are running or any
+particular service is charging any bill for you. Right.
+You can also look this up within your EC2 dashboard also. And you go to the
+dashboard. If you see security groups and key pairs are not there, they are not
+chargeable.
+You don't charge anything. So here I see there is one instance running. So it is
+terminated.
+Even that instance in a couple of minutes, it will be refreshed. Right. So this is how
+you create your instance.
+You set the configurations, you manage them. And you maintain in this way. This is
+how you set up your EC2 instance and connect to it from anywhere.
+That's all.
+            ---------------------------------THANK YOU--------------------------------------

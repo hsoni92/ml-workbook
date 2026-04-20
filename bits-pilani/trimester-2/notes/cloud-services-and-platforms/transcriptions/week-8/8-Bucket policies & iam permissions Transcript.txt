@@ -1,0 +1,63 @@
+
+
+
+  Page 1 of 2
+
+
+Bucket policies & iam permissions transcript
+
+In this topic, we are going to understand how access to S3 buckets is actually
+controlled because this is one of the most important and commonly misunderstood
+parts of AWS storage security.
+
+There are two main layers involved in this, IAM permissions and bucket policies.
+They sound similar, but they solve different problems.
+
+Let's start with IAM permissions, something which we have already covered in the
+earlier topics. IAM permissions are identity based. They answer a simple question,
+what is this user role or service allowed to do? For example, an EC2 instance might
+need permission to read and write objects in a specific S3 bucket.
+
+So in these cases, permissions are attached to the role, not the bucket, because the
+role is something that will help to bridge the gap between this to perform the
+operation.
+
+IAM works very well for internal AWS access because it is centralised and reusable.
+Now let's talk about bucket policies.
+
+Bucket policies are resource based. Instead of asking who are you, they ask what
+rules apply to this bucket. With bucket policies, you can control access based on
+things like which AWS account is calling, where the request is coming from, or
+whether encryption is being used or not.
+
+This is commonly used for cross account access or restricting access to a particular
+VPC also. Now here's the most important part. Both IAM and bucket policies are
+evaluated together.
+
+For any S3 request to succeed, an IAM policy must allow it. The bucket policy must
+allow it and there must be no explicit deny anywhere. If there's even one explicit
+deny, access will fail.
+
+That is why people often see access denied errors even when IAM permissions look
+absolutely correct. The issue is the bucket policy is blocking it. A simple way to
+remember this is IAM permissions is like your ID card.
+
+Bucket policies are like the building's security rules. Even if you have an ID card, you
+still can't enter if the building doesn't allow you in. Or you can take an example of a
+get to buy or top up your metro pass and when there's no balance you cannot
+proceed to the platform.
+
+
+
+
+
+  Page 2 of 2
+
+
+
+So using bucket policies when you need cross account access or network
+restrictions or bucket level rules is always the best approach.
+
+In the next topic, we'll move into public access controls and S3 block public access.
+These build directly on what we have learned so far.
+-----------------------------------------------------End------------------------------------------------------

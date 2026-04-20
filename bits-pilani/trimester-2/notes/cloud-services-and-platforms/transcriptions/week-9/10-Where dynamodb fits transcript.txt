@@ -1,0 +1,68 @@
+
+
+
+  Page 1 of 2
+
+
+Where dynamodb fits transcript
+
+Now, let's talk about where DynamoDB really shines and just as importantly where it
+does not. DynamoDB is designed for very specific types of workloads. When you used
+correctly, it performs incredibly well.
+
+When used incorrectly, it can become expensive and frustrating. So understanding its
+use case and limits is very important. Let's start with where DynamoDB works best.
+
+One of the most common use cases is session management. Web applications often
+need to store login sessions or authentication tokens. These need fast access and
+automatic cleanup, which in general DynamoDB handles very well.
+
+Another popular use case is user profiles and metadata. Things like preferences,
+settings, or lightweight user information work well because DynamoDB allows flexibility
+schemas and very fast lookups. E -commerce platforms often use DynamoDB for
+shopping carts.
+
+Carts change frequently, need fast updates, and must scale during the sales. So
+DynamoDB handles sudden spike without manual scaling. It's also widely used for
+event tracking and clickstream data.
+
+Things like page views or user actions. These generate huge write volumes and
+DynamoDB is designed to handle that in a smooth manner. In IoT systems,
+DynamoDB stores device state or the metadata.
+
+Millions of devices can write small updates very frequently, which fits DynamoDB's
+model perfectly. Every gaming platform uses it for leaderboards, player statistics, and
+matchmaking because performance and concurrency are very critical. Now let's talk
+about the limitations.
+
+DynamoDB does not support joins. If your application needs to join multiple tables
+frequently, DynamoDB is not the right tool. It also does not support freeform querying.
+
+You can only query using primary keys or defined indexes. This means access
+patterns must be planned before building the application. Another limitation is
+analytics.
+
+DynamoDB is not meant for heavy reporting or complex analytics queries. Those
+workloads belong to analytics databases instead. There is also a size limit where each
+item can be up to 400 kilobytes.
+
+
+
+
+  Page 2 of 2
+
+
+So large documents, files, or blobs should go into object storage like S3. Finally, poor
+data modelling can increase the cost. If partitions are not designed properly, you may
+get hot partitions and throttling.
+
+A simple way to think about DynamoDB is it's like a very fast intelligent index system.
+If you know exactly what key you're looking for, it responses instantly. But it's not
+meant for browsing or flexible searching like a spreadsheet or SQL table.
+
+So in summary, use DynamoDB when you need predictable performance, massive
+scale, serverless simplicity, and fast key-based access. Avoid it when you need joins,
+complex queries, reporting, or for analytics. Understanding these boundaries help you
+design better systems and choose the right database for the job.
+
+-----------------------------------------------------End------------------------------------------------------

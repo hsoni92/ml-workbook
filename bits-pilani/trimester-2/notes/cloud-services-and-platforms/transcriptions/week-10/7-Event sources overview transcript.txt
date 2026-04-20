@@ -1,0 +1,66 @@
+
+
+
+  Page 1 of 2
+
+
+Event sources overview transcript
+
+In this topic, we are going to understand something very important  in serverless
+systems, which is event sources. In traditional applications, servers are always running
+and waiting for the request. But in serverless, things work very differently.
+
+Lambda does not run all the time. It runs only when something happens. And that
+something is called an event.
+
+An event source is simply a service that triggers a lambda function when a specific
+action occurs. This design is what makes serverless efficient and cost effective. Let's
+start with one of the most common event sources, Amazon S3.
+
+Whenever a file is uploaded, deleted, or modified inside a bucket, S3 can trigger a
+lambda function automatically. This is commonly used for things like processing
+uploaded files, validating documents, or kicking off the data pipelines. Instead of
+constantly checking if a file exists, lambda wakes up only when the file actually arrives.
+
+Next is API gateway, probably the most popular trigger again. Whenever a client sends
+an HTTP request over the internet, an API gateway can trigger the lambda
+automatically. This API request could be anything, a GET, POST, PUT, or DELETE.
+
+This is how serverless APIs actually work. There is no server listening in the
+background. The request itself becomes the trigger.
+
+This model is used for backend APIs, mobile backends, microservices, or any
+lightweight web applications. Another powerful source is DynamoDB streams.
+Whenever data in a DynamoDB table changes, an item is inserted, updated, or
+deleted, a stream record is generated.
+
+That change can trigger lambda automatically. This is useful for keeping systems in
+sync, triggering workflows, auditing the changes, or processing data in real time. Then
+we have CloudWatch events.
+
+Now it is part of a service called EventBridge, a monitoring service in cloud. These are
+used for scheduled jobs, system level events, and rule -based triggers. For example,
+you can run a lambda every night at midnight.
+
+Or trigger one when a resource changes state. This replaces traditional Chrome jobs
+in a serverless system. A helpful way to think about this is like an automated control
+system.
+
+Different sensors detect different things. When something happens, a worker is called
+to act. Every event source are the sensors.
+
+
+
+  Page 2 of 2
+
+
+
+Lambda is the worker. No ideal waiting. No wasted compute.
+
+This event-driven approach allows systems to scale automatically, react instantly, stay
+loosely coupled, and stay cost-efficient. Most real-world serverless systems combine
+multiple event sources together to form an event pipeline. In the next topic, we'll
+connect this understanding to a real use case, how S3 triggers lambda to build a
+complete serverless workflow.
+
+-----------------------------------------------------End------------------------------------------------------

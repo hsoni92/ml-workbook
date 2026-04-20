@@ -1,0 +1,58 @@
+
+
+
+  Page 1 of 2
+
+
+Why DevOps Matters Transcript
+
+In this topic, let's focus on why the DevOps becomes essential powerful when
+combined with the cloud. The first big benefit is speed. Cloud -based DevOps allows
+teams to release the updates much faster.
+
+Instead of waiting weeks or months, teams can push small improvements frequently.
+Automated pipelines handle the building, testing, and deploying the code. All of this
+removes delays and manual effort.
+
+We'll deep dive into the pipelines in the upcoming sessions as well. For now, this faster
+delivery also makes systems more reliable. When changes are small and frequent,
+failures are easier to detect and fix.
+
+Automation replaces manual steps and reducing the human mistakes. If something
+goes wrong, teams can quickly roll back or redeploy it once again. Another major
+benefit is scalability.
+
+DevOps works hand -in-hand with cloud auto -scaling. As the traffic increases,
+infrastructure can scale automatically and the deployment pipelines continue working
+without interruption. This tight integration makes applications responsive even during
+a sudden traffic spike.
+
+Cost efficiency is another important advantage. DevOps encourages automation that
+turns off unused resources, avoids over -provisioning, and helps teams understand
+where the money is being spent. Instead of paying for ideal infrastructure, resources
+are used only when needed.
+
+So DevOps also improves collaboration. Developers, operations, and security teams
+work with shared tools, dashboards, and pipelines. This transparency creates shared
+ownership and faster problem resolution.
+
+Security also becomes stronger when it is automated. Instead of being added at the
+end, security checks run continuously inside the pipeline. Policies, scans, and
+configurations are all applied consistently, which will eventually reduce the risk and
+manual errors.
+
+Finally, DevOps enables experimentation where the teams can safely test their ideas,
+release to a smaller group of audience, and quickly roll back if something doesn't work.
+This freedom encourages innovation without any fear. In short, DevOps in the cloud
+leads to faster delivery, better reliability, controlled costs, stronger security, and
+happier teams, which is why it has become the foundation of modern cloud
+engineering.
+
+
+
+
+  Page 2 of 2
+
+
+
+-----------------------------------------------------End------------------------------------------------------

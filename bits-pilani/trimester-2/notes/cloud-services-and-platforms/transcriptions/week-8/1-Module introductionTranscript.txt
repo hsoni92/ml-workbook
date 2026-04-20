@@ -1,0 +1,43 @@
+
+
+
+  Page 1 of 1
+
+
+Module introduction transcript
+
+In this module, we are going to focus on one of the most fundamental topics in cloud
+computing, storage. No matter what kind of application you build, a website, a mobile
+app, or a backend API, or even a data pipeline, it always needs a place to store data.
+That data could be user uploads, images, logs, backups, or application files.
+
+Traditionally, storage was tightly attached to servers. If the server failed, storage was
+at risk. If storage needed to grow, new hardware had to be purchased and configured.
+
+Scaling was slow and expensive. Cloud storage completely changed this game. In the
+cloud, storage is separate from compute.
+
+It scales automatically, it is highly durable, and you pay only for what you actually use.
+This is one of the biggest advantages of cloud platforms like AWS. In this module, we
+will focus on three core AWS storage services, S3, EBS, and EFS.
+
+Each of these services exists for a specific reason, and each solves a different
+problem. A very common beginner's mistake is trying to use one storage service for
+everything. For example, using S3 when block storage is needed, or using EBS when
+shared storage is required.
+
+This module will help you avoid those mistakes. We'll start by understanding the type
+of cloud storage, which is object, block, and file. We'll try to understand these in very
+simple terms.
+
+Then we'll go deeper into Amazon S3, including buckets, storage classes, security,
+and cost optimisation. After that, we'll revisit EBS and introduce EFS. And finally,
+compare all three services side by side.
+
+The goal here is not to memorise service names, but to build decision -making ability.
+So by the end of this module, you should be able to confidently answer questions like,
+which storage should I use for backups? Which storage should I use for an EC2
+instance? Which storage should multiple servers share? Once you have that clarity,
+storage becomes one of the easiest parts of cloud architecture.
+
+-----------------------------------------------------End------------------------------------------------------

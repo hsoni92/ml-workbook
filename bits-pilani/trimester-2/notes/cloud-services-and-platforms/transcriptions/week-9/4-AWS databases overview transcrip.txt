@@ -1,0 +1,79 @@
+
+
+
+  Page 1 of 2
+
+
+AWS databases overview transcript
+
+In this topic, we'll look at the AWS database landscape, especially RDS, Aurora, and
+DynamoDB. We'll  try to understand why AWS offers multiple database services
+instead of just one. The key idea is to remember that different applications need
+different ways to store and access the data.
+
+Let's start with the big picture. AWS databases broadly fall into two categories,
+relational and NoSQL. From those, three services appear very frequently in the real -
+world architectures, which are RDS, Aurora, and DynamoDB.
+
+Let's begin with Amazon RDS. RDS stands for Relational Database Service. It's AWS-
+managed version of traditional databases that many teams already know.
+
+It supports engines like MySQL, PostgreSQL, MariaDB, Oracle, and also SQL Server.
+You still use SQL. You still work with tables, rows, relationships, and transactions.
+
+The difference is that AWS manages the heavy operational work like backups,
+patching, monitoring, and failover. So instead of worrying about maintaining servers,
+you focus on your application logic. RDS is commonly used for traditional applications
+such as business systems, reporting platforms, and legacy apps moving to the cloud.
+
+You can think of RDS as a familiar database experience, but without the operational
+burden. Now let's move on to Amazon Aurora. Aurora is also a relational database,
+but it's not just another engine.
+
+It was built by AWS specifically for the cloud. Aurora is compatible with MySQL and
+PostgreSQL, so applications don't need major rewrites. Behind the scenes, however,
+Aurora uses a distributed storage system that automatically replicates data across
+multiple availability zones.
+
+This gives it better performance, better availability, faster failover as well. It also gives
+us easier scaling as well. So Aurora separates compute from storage, which allows it
+to scale more efficiently than the traditional databases.
+
+It also offers a serverless option where capacity automatically adjusts based on the
+traffic. Aurora is commonly used for high traffic web applications, SaaS products,
+systems that need both SQL and high scalability. You can think of Aurora as a cloud
+native evolution of the relational databases.
+
+Now let's look at DynamoDB, which is very different. DynamoDB is a fully managed
+NoSQL database. It does not use tables and joins in the traditional sense.
+
+
+
+
+  Page 2 of 2
+
+
+Instead, it stores data as tables, items, attributes. Each item is accessed using a
+primary key, making lookups extremely fast. DynamoDB is serverless, which means
+no servers to manage, no capacity planning upfront, automatic scaling, built -in high
+availability as well.
+
+So it delivers a single-digit millisecond performance at virtually any scale. Because of
+this, it's widely used for shopping carts, game leaderboards, IoT workloads, or even
+for real-time applications. A helpful way to think about DynamoDB is it's like a massive
+ultra-fast lookup engine built for internet scale systems.
+
+To summarise the difference clearly, RDS is best when you need traditional relational
+behaviour. Aurora is best when you need relational databases, but at a cloud scale.
+DynamoDB is best when you need massive performance, flexibility, and automatic
+scaling.
+
+They are not competitors. They are tools designed for different problems.
+Understanding when to use each one is a critical skill for any cloud engineer or an
+architect.
+
+In the next topic, we'll go deeper into relational databases and explore RDS engines,
+including MySQL, PostgreSQL, MariaDB, Oracle, and SQL Server, and also when to
+choose each one of them.
+
+-----------------------------------------------------End------------------------------------------------------

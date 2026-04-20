@@ -1,0 +1,340 @@
+
+
+
+  Page 1 of 8
+
+
+
+Provisioning Resources with Terraform
+Transcript
+Module 13, Lesson 4, Practical Lab. So far, we've  been creating AWS resources
+manually using the console. That works for learning, but it doesn't scale in real teams.
+In real world DevOps, infrastructure must be repeatable, version controlled, automated
+and reviewable. So Terraform lets us describe infrastructure as a code. If the code
+exists, the infrastructure exists.
+As simple as that, Terraform is considered as declarative, not imperative, as in you
+say what you want and Terraform figures out how to do it. In today's demonstration,
+we are going to observe how Terraform works and how it is widely used across 99%
+projects in today's industry. So you can just type in download Terraform.
+From here, you can pick in the first URL that is provided. Once you land on this page,
+you'll see various options to download and set up Terraform as per your operating
+system, whether you're using a Mac, Windows or Linux, you can directly run these
+commands or you can directly download the .exe file and instal it as usual. Same goes
+for Linux across multiple distributions.
+After setting up Terraform, you can also verify it through your command prompt. So
+you can just open your command prompt or your terminal if you're using a Mac, you
+can just type in Terraform version. So you'll see something similar to this.
+That means your Terraform is set up properly. This confirms Terraform is installed and
+accessible from your terminal or command prompt. Just follow that documentation
+from there and you should be landing on this exact line.
+Once our Terraform is set up, it needs authorisation to communicate with our AWS
+console and Terraform does not log into the AWS magically. It uses AWS credentials
+exactly like the AWS CLI. For that, again, you should make sure that you have AWS
+CLI configured into your laptop.
+So again, for that, you can just type in AWS instal. You can pick out any of the AWS
+documentation. They have a detailed guidance on how to run.
+So once you land on a similar page like this, you go to instal or update. If you already
+have, you can update to the latest version 2. Version 1 also works fine. It is not
+mandatory that you have to work on version 2. So you have multiple options according
+to your operating system.
+
+
+
+
+  Page 2 of 8
+
+
+Just follow the guidelines, follow the commands used and you'll be able to set up AWS
+CLI. Post this setup, let's try to create a project in our local environment. So let's say I
+create a project over here, simple directory, I'll say Terraform AWS demo.
+So I'll open my VS code again. We'll try to create the Terraform files and perform all
+the operations from this VS code. Let's open that project which we just created.
+Now let me open my terminal. From here, once you have set up your AWS CLI and
+Terraform, you have to run AWS configure. As demonstrated in previous practical lab
+and multiple demonstrations, we need to have an access key and a secret key,
+basically getting it from an IAM user.
+So let's log into our AWS account. So first thing is I'll go ahead to IAM. From IAM, I
+should have a user with the desired permissions to perform these operations.
+So I've created a dummy user and I've given it all the necessary permissions to create
+any service in this console via Terraform. I'll head to this user and I've also created the
+access keys for this particular user. But you can go ahead and click on create access
+keys from here.
+You use CLI, checkbox this and click on next. It will ask you for a tag. Then you click
+on create access key.
+It will display the access key and the secret key. Make sure that you have an option
+somewhere around here to download your access key and secret key. So we are going
+to use exactly those keys.
+So I have it saved already over here. For temporary basis, I have created this user.
+So you can copy the access key and secret key over here and just configure your
+AWS.
+Same goes with the secret key. The region you can keep it as default, just keep on
+pressing enter. And now our AWS is successfully configured.
+We can also verify if our AWS from the local environment is able to communicate with
+our console or not. The command for that is AWS STS get caller identity. Once you
+run this command, this will display certain details about your user and your account
+ID.
+So this is the user which I created, the dummy user. And this is the account which I
+have and this is the user ID, which means now my Terraform is able to interact with
+my AWS console. I can do anything with Terraform.
+What we are going to do from here is in this lab, we will write Terraform configurations,
+initialise Terraform, we will preview the changes and create the infrastructure. Post
+creation, we'll verify it in AWS, play along with this Terraform a little bit, t hen we'll
+destroy everything safely so that we do not incur any AWS billing. This is how we are
+going to observe the full Terraform lifecycle in this practical lab.
+
+
+
+  Page 3 of 8
+
+
+
+First thing is we always have a main.tf file inside which we define every configuration
+related to an infrastructure. Before diving into it, so let's quickly verify if we have any
+EC2 instances so that we can if we do not have any EC2 instances, we can go ahead
+and create two EC2 instances. So at the moment, we do not have any running
+instances.
+These are so at the moment, we do not have any running instances. So pretty much
+it is empty if you verify from the dashboard, again, we do not have any instances. Do
+we have an S3 bucket? We do not have any active S3 bucket server, so let's try to
+create two EC2 instances and one S3 bucket through our code through Terraform.
+So I'll just create a simple file main.tf. Let's try to start adding the configurations into
+this main.tf file. So it always starts with Terraform. Then you add the required providers
+like which provider you are looking to interact with.
+So I would say AWS in our case. Inside AWS, you need to provide the source and the
+version. Basically we are providing the official path to our AWS provider.
+So you get all this information from the Terraform documentation. So it is not
+mandatory that you have to remember all of this. But having the skeleton in the mind
+is very important when you work with Terraform.
+The first thing is the source, then it would be the version. So for the version, we can
+use something related to 5.0. This is the version I would like to use. Basically we are
+trying to maintain a stability, a version constraint.
+Next is providing the actual provider details. So for that, I'll use provider AWS. This is
+going to be my cloud provider.
+And whenever we log into our AWS, we should always make sure what region we are
+going to create our services or our application. So region is always something that you
+need to provide when you give the details of the cloud provider. I'll say US East one,
+we can use the default one.
+So this provider block tells Terraform where to create the resources. Now, now that
+we have provided every detail about the cloud provider, what version to use, where to
+find and everything. Now let's dive into providing the actual details of the resource that
+we want to create.
+So we have to declare a resource. Here, every resource has its own name, which we
+call it as resource type. So we can say AWS instance and we can give any name to
+this instance.
+So normally we would we would manually type in the name when we create it through
+our console. We can give it something similar to a web. Now coming to the remaining
+details, whatever details that we are going to fill when we do it manually, we are going
+to provide all the details exactly in a form of a code.
+
+
+
+  Page 4 of 8
+
+
+
+That is the only difference. Rest everything is absolutely the same. So we can skip it
+or we can provide the count.
+This is not a mandatory, mandatory line. Mandatory ones are AMIs, which defines
+what type of an operating system your EC2 instances should have. In production,
+these AMIs are usually saved somewhere so we can directly add a particular AMI ID.
+So since it is hard to remember, we'll just try to copy from here for now. So when we
+try to launch instance, it will give us the AMI IDs. So let's say if I want a Linux based
+AMI, so I'll just use this AMI.
+Then the instance type, instance type will use the free tier, which is T2.micro. Since
+we are trying to create two instances in this case. It is always recommended that you
+provide something unique to these two EC2 instances. For that, we use tags.
+Let's say in the tags, I would want to provide a unique name. For example, I want to
+say Terraform EC2. And there is something that we use as count.index. I'll say plus
+one.
+So if we have two instances, it is going to say Terraform -EC2-1. Then for the second
+one, it is going to name it as Terraform-EC2-2. If we add five, it is going to add 1, 2, 3,
+4, 5. That is the logic.
+We're just trying to add. It's OK even if you skip this tags part. This is not mandatory.
+So this tags is just an identification to segregate your resources. AMI is the operating
+system image to define how we are trying to, how and what type of operating system
+does our server need. Count is just for the looping to make sure how many resources
+that we want.
+AWS instance is the resource type. Web is the name that we provide. And resource is
+defining to Terraform that this is what I want to create using Terraform.
+This one block replaces clicking your launch instance twice. If I had to perform two
+instances within my console, I had to add all these details and click on this launch
+instance twice. So to avoid this thing, we use Terraform.
+If I had to spin up 100 EC2 instances, in that case, I can't obviously come back to
+launch instance, add the details, add the instance type, add the AMI and then do this
+whole process 100 times. It is not technically or it is going to be very time consuming.
+That is the solution that Terraform provides.
+All you have to do is change this to 100 and you will have 100 EC2 instances created
+instantly. This is the purpose of using Terraform and why all the projects use this. Let's
+add one more resource.
+We use and follow the same. This time we'll add an S3 bucket. So I'll say Amazon S3
+bucket.
+
+
+
+  Page 5 of 8
+
+
+
+I'll give a name something similar to data bucket. So whenever you want to create a
+bucket, you should provide a proper name to your bucket as well. So that is what we
+are going to do.
+We'll say Terraform demo bucket will give some unique name so that it doesn't fall
+under already exist because Terraform bucket names should always be unique. Now,
+S3 bucket names must be globally unique. This is something that we have learned in
+the last demonstration.
+So this bucket related to this data bucket, it could store some data sets or model
+outputs. You can use it for any storage purposes. So once we let's go through this
+entire line of code.
+So this is the entire Terraform code that we are going to execute now. All we did is in
+the Terraform block, we provided the version and the source of what cloud provider
+we want. Then we explicitly define the cloud provider and the region inside which we
+want to create the below two resources and the below resources have all the details
+required to create an EC2 instance.
+One is for EC2 and one is for the S3 bucket on control S and save this file. Now let's
+get into the action whenever you are going to start with your Terraform lifecycle. You
+always have to initialise it before applying any changes.
+The command for that is Terraform init. This downloads the providers and prepares
+the project. Basically, it sets the ground of what all plugins are required, what all
+packages are required, what all dependencies do we have to interact with AWS cloud
+provider and get this job done.
+Everything required for that job, it is going to instal it. So always Terraform init should
+be run when you're trying to create a resource for the very first time. Or if there is any
+gap in the provider or any other resource, it is always recommended to st art your
+Terraform with Terraform init command.
+After this, now that your changes are saved, you have the playground set up for you
+by a Terraform init. The next step is to observe what is going to be prepared. Basically,
+a preview to understand what this Terraform, this main.terraform file is going to create
+for me once I apply the changes.
+So all the Terraform plan does is plan shows exactly what Terraform will change. So
+if we come from the start, so from here, the first thing it is saying that there is going to
+be an AWS instance web created. So there is a resource.
+It will be created with this AMI and all these details will be poured over here once the
+resource is created. Since we do not have the resource created yet, that's the reason
+we do not see some values. Whatever values we have provided, like this is going t o
+be the instance type and the AMI, the tags that we provided, it is going to provide all
+the details.
+
+
+
+  Page 6 of 8
+
+
+
+Same goes for the second EC2 instance as well. Initially it was 1, it was 0, now it is 1.
+So this is the second EC2 instance. This is the AMI that they are going to use and this
+is the, this is the instance type that they are going to create.
+Same goes for S3 bucket as well. So plan gives you a preview of what you're going to
+do, two EC2 instances, one S3 bucket. Let's get this into action.
+So now that we are sure that three items are going to add two EC2 and one S3, let's
+try to implement this using Terraform. So to apply these changes, to make it as to turn
+this code into an infrastructure over your cloud, you have to run Terraform apply.
+Terraform now will call the AWS APIs.
+Post calling it will take a confirmation from you if you really want to do this or not. So
+here it says to type in yes and we are going to do the same. After typing in yes, it is
+going to interact with the AWS APIs and start creating the resources based on  the
+information that you provide.
+Within a couple of seconds, it is going to set up the whole infrastructure. Depending
+upon the complexity, sometimes it might take one or two minutes and sometimes it
+might take five minutes also. Here we have three resources to be created across
+multiple services.
+That's the reason it took us roughly around five to six seconds. So now we have a
+confirmation from Terraform saying that our resources are now created. Let's check
+this out.
+So if I refresh it, these are the terminated instances which I was just verifying. So let's
+refresh and see if our new instances are created or not. OK.
+So these are our two instances that we created using Terraform. We use the instance
+type T2 micro, we did not provide any availability zone. So it picked out its own
+availability zone.
+And now our instances are up and running. Same if we observe into the S3 buckets,
+we'll also have a Terraform bucket mentioned over here. This is the same bucket that
+we created and there are no objects as of now because we did not upload anything.
+So it's a fresh bucket that we created. This is how Terraform can instantly set up your
+resources, converting your code into an actual infrastructure. This is why Terraform is
+referred to as infrastructure as a code.
+Now that we have the resources already present, if we try to rerun the same Terraform
+file again, let's say if I run Terraform apply once again, let's observe if it is going to
+create one more S3 and two more EC2 instances or it is going to just ignore it, saying
+that the desired state is matching with the actual state. So as you can see, the moment
+I ran Terraform again, it gave me no changes. Your infrastructure matches the
+configuration.
+
+
+
+  Page 7 of 8
+
+
+
+Whatever our desired state is in this lines of code, it is exactly what my AWS console
+already have. This infrastructure is already active. So rather than recreating it and
+making duplicates, which will avoid, which will invite more buildings for us, Terra form
+ignores those.
+So no changes, there are zero that are added, zero that are changed and zero that
+are destroyed. Now that our resources are created properly with no manual clicks, let's
+try to the way we have created, let's try to destroy them and remove, clean up our
+resources instantly. The command for that is Terraform destroy.
+Again, it is going to interact with the AWS APIs. It will pick out whatever resources that
+we mentioned over here. It will look for those resource and it will try to delete it.
+But before deleting, once again, it is going to ask for your confirmation that if you are
+sure, type in yes, but there is no going back once you try to type yes. Since we are
+sure that we want to clean up our resources to avoid any building, we type yes. A nd
+our resources will be cleared instantly.
+OK, so now we got a confirmation saying that three resources have been destroyed.
+Although I'm sure that the resources are destroyed, I won't be able to see, but just for
+a safer side, I'm just observing that my resources are properly deleted or not. The
+moment you see a confirmation from the Terraform, the resources are properly
+removed.
+Although this verification is not needed, since I'm trying to demonstrate, I want you
+guys to observe how Terraform can instantly spin up numerous resources and also
+clean them up instantly.  This is exactly how you can work closely using Terraform.
+And this is not just for AWS.
+Within this same configuration file, you can also add another provider like GCP or
+Azure, create a resources present in those cloud providers and manage the
+infrastructure for those resources as well. Terraform is not limited to just one cloud
+platform. You have hundreds of cloud providers, AWS, Azure and GCP are the popular
+ones.
+Outside of this, we have Oracle, we have DigitalOcean, we have Alibaba and there
+are many other cloud platforms. Terraform supports each and every one of them. All
+you have to do is add in this column, you have to provide the cloud provider and the
+region that you want to create the resource and then the resource that you want to be
+created as part of that provider.
+This is all that you have to do. This is exactly the reason why projects that are
+dependent on multi-cloud or hybrid cloud environments, they heavily use Terraform to
+manage their infrastructure. Rather than providing the username and passwords to
+the team members and giving them the console access to navigate throughout the
+
+
+
+  Page 8 of 8
+
+
+console and create the resources manually, Terraform is a one-stop solution to create
+multiple resources, not only EC2 or S3.
+
+It could even create a security group and IAM user and IAM role or any other load
+balancers or networking components. Every service that we have in AWS can be
+created using Terraform. So, to summarise, today we used Terraform to define, create,
+verify and destroy the AWS infrastructure.
+This is infrastructure as code, something which is predictable, repeatable and
+automation ready. All you had to do is maintain this file. As a core DevOps practise,
+how these Terraform files are maintained is these are part of your project files.
+You can also commit and push these files to your GitHub repository so that anyone
+who makes change to any of these details, we can have a proper version control and
+observe which lines of your Terraform code are modified and built accordingly. So this
+is another benefit where you can properly have a well -structured audit mechanism to
+understand what changes are going throughout your Terraform code. Feel free to
+explore more on how to build resources, how to use other resources and create them
+using Terraform.
+You also have a proper documentation within Terraform, which gives you a more
+detailed view of how and where you can set up. We go to the documentation from
+here. So you have all the details within your Terraform.
+What type of a Terraform script do you want? How would you want to configure your
+Terraform across multiple platforms? So every little detail you have in the
+documentation, the code which I have written, even that can be provided directly. You
+have a proper tutorials where you can explore beyond what we have learned. So you
+have every service, even related to Kubernetes or Docker, you can also set up
+Kubernetes clusters using Terraform.
+Terraform is not only limited to cloud providers. You can also create other DevOps
+tools as well using Terraform. That's all.
+
+
+            ---------------------------------THANK YOU--------------------------------------

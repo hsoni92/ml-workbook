@@ -1,0 +1,34 @@
+
+
+
+  Page 1 of 1
+
+
+Module Introduction Transcript
+This module is extremely important because containers are the foundation of how
+modern applications are built and deployed today. Up to now, we've talked a lot about
+virtual machines, networking, and infrastructure. Those concepts are still relevant, but
+containers change how applications run on top of that infrastructure.
+Before containers became popular, teams faced some very common problems.
+Applications worked on developers' laptops, but the problem was it failed in production.
+Deployments were slow, fragile, and very hard to repeat, and scaling the applications
+meant managing servers one by one.
+That is when containers were created to solve these exact problems. At a high level,
+containers allow you to package an application along with everything it needs to run.
+Now, it could be the code, libraries, dependencies, everything into a single unit.
+That unit can run consistently on any machine anywhere. A helpful way to think about
+this is housing. Virtual machines are like renting the entire house.
+Each one has its own setup, its own overhead. Containers are more like furnished
+apartments inside a big building. In this module, we'll first understand what containers
+really are and why they are lighter than the virtual machines.
+Then, we'll look at Docker, the most popular tool used to build and run containers.
+After that, we'll introduce Kubernetes and understand why orchestration is required
+once you have many containers running together. The goal here is not to overwhelm
+you with commands or deep internals.
+The goal is to build a clear intuition so when you hear words like Docker, ECR, or
+Kubernetes later on, they actually make sense to you. So, let's begin by understanding
+the most basic question of all. What exactly are containers? Why are they considered
+lightweight compared to virtual machines? Let's try to explore these areas.
+
+
+------------------------------------------------------End-----------------------------------------------------

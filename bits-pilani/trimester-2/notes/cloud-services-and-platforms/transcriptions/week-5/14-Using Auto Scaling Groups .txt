@@ -1,0 +1,54 @@
+
+
+
+  Page 1 of 2
+
+
+Using Auto Scaling Groups Transcript
+Let's talk about autoscaling loops. One of the most important building blocks for
+running EC2 at scale. At a very basic level, autoscaling allows AWS to automatically
+add or remove EC2 instances based on the demand.
+Instead of you constantly watching traffic and manually launching servers, AWS
+handles that job for you. This is important because real -world traffic is never
+predictable. Some days are usually quiet, some days suddenly explode with the traffic.
+If you run too many or very few servers, your application might crash or it might slow
+down or you are over -provisioning it. So, if you run too many servers, you waste
+money. If you run a very few, it will slow down or crash.
+Autoscaling exists to balance the performance and the cost. Let's understand what an
+autoscaling group or also referred to as ASG actually means. An autoscaling group is
+simply a group of EC2 instances managed together.
+You tell AWS how many instances you want running and AWS makes sure those many
+number of instances are maintained.
+If one instance crashes, AWS automatically launches a new one. If traffic increases,
+AWS adds more instances.
+If traffic drops, AWS will remove that extra ones. So, the autoscaling group works using
+a few simple settings. First is the launch template.
+This defines how new EC2 instances should look. Basically, the AMI, instance type,
+security group and the key pair. Next is desired capacity.
+This is the number of instances AWS tries to keep running at all times. Then we have
+minimum and maximum capacity. Minimum ensures your app never goes completely
+down.
+Maximum prevents costs from going out of control. Autoscaling usually works together
+with a load balancer. The load balancer spreads traffic and the autoscaling group
+adjusts the number of backend servers.
+Together, they form the backbone of scalable and highly available applications. A
+simple way to think about autoscaling is like staffing in a store. During peak hours,
+more staff are added.
+During slow hours, staff numbers are reduced. You don't manage each person
+manually. The system does it for you.
+One important thing to remember is autoscaling is not magic. It doesn't fix bad code.
+It doesn't reduce the cost if your minimum capacity is set too high.
+
+
+
+
+  Page 2 of 2
+
+
+But when used correctly, it makes applications resilient, scalable, and cost efficient.
+Autoscaling is widely used for web applications, APIs, background jobs, and even for
+microservices. So in the next topic, we'll look at how autoscaling works together w ith
+another service, which is the elastic load balancer.
+
+
+------------------------------------------------------End-----------------------------------------------------

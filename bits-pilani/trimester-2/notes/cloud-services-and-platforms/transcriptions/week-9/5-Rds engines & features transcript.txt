@@ -1,0 +1,74 @@
+
+
+
+  Page 1 of 2
+
+
+Rds engines & features transcript
+
+In this topic, we look at the different database engines supported by Amazon RDS and
+more importantly why multiple engines exist in the first place. RDS itself is a managed
+service but the engine defines how your database behaves. You can think of the
+engine as the personality of your database.
+
+Different applications need different behaviours like performance, flexibility, cost or
+enterprise support which is why AWS offers multiple options. Let's go through them
+one by one. Let's start the MySQL.
+
+MySQL is one of the most popular relational database in the world. It's simple, stable
+and widely supported. It works very well for web applications, content management
+and typical back-end services.
+
+Many startups and websites begin with MySQL because it's easy to learn and easy to
+operate. However, a system grows more complex and the teams sometimes need
+more advanced features. That brings us to PostgreSQL.
+
+PostgreSQL is also open source but it focusses heavily on the correctness, flexibility
+and advanced querying. It supports complex joints, rich indexing and even semi -
+structured data like JSON. That makes it very popular for enterprise applications,
+analytics workloads and systems that need strict data consistency.
+
+A simple way to think about it is MySQL focusses on simplicity and speed while
+PostgreSQL focusses on depth and capability. Next is MariaDB. MariaDB was created
+by the original MySQL developers after MySQL was acquired by Oracle.
+
+It's designed to be a drop -in replacement meaning existing MySQL apps can usually
+switch without any changes. Organisations often choose MariaDB when they want
+open source control, a good performance and MySQL compatibility. The key here is
+all of this without Oracle's licencing concerns.
+
+Now let's talk about Oracle Database. Oracle is the full -fledged enterprise database
+that is used by large corporations and financial institutions. It offers advanced features
+for performance tuning, security and large-scale workloads.
+
+However, it comes with higher licencing cost and operational complexity. You'll often
+see Oracle used in ERP systems, banking platforms and even legacy environments.
+Finally, there's Microsoft SQL Server.
+
+SQL Server integrates deeply with Microsoft technologies like .NET, Active Directory
+and Windows environments. It's commonly used in enterprise internal systems and
+
+
+
+  Page 2 of 2
+
+
+the business applications where the Microsoft tooling dominates. It also includes
+strong reporting and analytics capabilities.
+
+Here's a helpful way to remember all of this. Think of the databases like vehicles.
+MySQL is the reliable everyday car.
+
+PostgreSQL is the powerful performance vehicle. MariaDB is the community -tuned
+version and Oracle is a luxury enterprise machine. SQL Server is the corporate fleet
+favourite.
+
+They all move data  but they serve different roads and drivers. The key takeaway is
+this. There is no best database engine.
+
+As I always say, the best choice depends on your workload, your team's expertise,
+cost considerations, integration needs and the performance expectations. In the next
+topic, we'll look at how RDS handles high availability, backup and scaling which is
+where managed databases really start to shine.
+
+-----------------------------------------------------End------------------------------------------------------

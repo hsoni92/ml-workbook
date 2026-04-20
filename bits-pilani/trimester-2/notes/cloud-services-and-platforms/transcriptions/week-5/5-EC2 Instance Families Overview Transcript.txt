@@ -1,0 +1,59 @@
+
+
+
+  Page 1 of 2
+
+
+EC2 Instance Families Overview Transcript
+In this lesson, we are going to understand why AWS provides so many different EC2
+instance types and how to choose the right one based on your workload. Not all
+applications behave the same way. Some push the CPU hard, some consume a lot
+of memory, some read and write massive amounts of data, and some need GPUs as
+well.
+So AWS solves this by offering specialised instance families instead of one generic
+server. Let's start with compute-optimised instances. Compute-optimised instances
+are designed for workloads where CPU power is the most critical factor.
+These are applications that perform heavy calculations or need a fast processing
+speed. As an example, including a batch processing job, a video encoding, gaming
+servers, and any kind of high-performance APIs, all of these fall under the same
+category. If the application is slow because the CPU is at its top capacity, compute-
+optimised instances are usually the right choice.
+Think of them like a sports bike built for speed and performance. Next, we have
+memory-optimised instances. These are used when the applications need large
+amounts of RAM.
+If your workload constantly reads data from memory and disc access becomes a
+throttling capacity, then the memory-optimised instances help you in those
+scenarios. They are commonly used for in-memory databases or real-time analytics
+or large caching systems. A good way to think about this is having a huge disc where
+everything is already laid out.
+You don't waste time opening drawers again and again. Now, let's talk about
+storage-optimised instances. These instances focus on fast disc performance, a high
+IOPS, low latency, and fast read and write speeds.
+They usually use local SSD storage directly attached to the instance. They are great
+for workloads like log processing, analytics engines, search platforms, and big data
+processing. One important thing to remember is that the storage is temporary.
+If the instance stops or terminates, the data is lost. So, these are like having a
+warehouse right next to your shop. Very fast access but not meant for long-term
+storage.
+Finally, we have GPU instances. GPU instances are designed for workloads that
+require parallel processing. Instead of doing one calculation at a time, GPUs handle
+thousands of operations simultaneously.
+They are used heavily in machine learning, deep learning, image processing, video
+rendering, and many more. A simple way to remember this, CPUs are great at doing
+one thing fast. GPUs are great at doing many things at the same time.
+
+
+
+  Page 2 of 2
+
+
+Now, why does all of this matter? Choosing the wrong instance type can lead to poor
+performance and higher cost. For example, running a database on a compute-
+optimised instance may cause memory. Running machine learning workloads on a
+general-purpose instance may slow down your training drastically.
+So, good cloud architecture is about matching the workload to the right instance
+family. In the next lesson, we'll look at EC2 pricing models and understand how the
+cost changes depending on how and when you use these instances.
+
+
+------------------------------------------------------End-----------------------------------------------------

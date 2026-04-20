@@ -1,0 +1,38 @@
+
+
+
+  Page 1 of 1
+
+
+Internet Gateway (IGW) & NAT Gateway Transcript
+In this topic, we are going to understand how internet connectivity works inside a VPC
+using internet gateway and NAT gateway. We've been using the names of these two
+services in the past sessions as well. So let's try to understand how these work.
+By default, a VPC is completely isolated. We know that by now. Nothing inside it can
+talk to the internet unless we explicitly allow.
+So AWS uses gateways as controlled entry and exit points. Let's start with the internet
+gateway. An internet gateway allows two-way communication between your VPC and
+the public internet.
+Resources can send traffic outside and the can send traffic back in. If security rules
+allow it, that is the key. This is why internet gateways are used for public resources
+like web servers or load balancers.
+But simply attaching an internet gateway is not enough. For internet access to work,
+the resource must also be in a public subnet. They should have a route to the gateway
+and have a public IP address.
+Now, let's talk about NAT gateways. Private subnet resources often need internet
+access to update the OS, increase or get a latest version of the OS, any kind of API
+calls, for all this, but they should not be reachable from the internet. A NAT gateway
+solves exactly this problem.
+It allows outbound traffic only, which means private instances can reach the internet,
+but the internet cannot initiate a connection back to them. So the NAT gateway itself
+sits in a public subnet and private subnet sends their internet traffic through it.  From
+the outside world's perspective, only the NAT gateway is visible.
+The private instances remains hidden. So the NAT gateway acts like a face to your
+private subnet. So NAT gateways is like a security receptionist.
+Employees can call outside, but outsiders cannot call them directly. So in real world
+architectures, both gateways are often used together. Public facing components use
+the internet gateway, while backend services use NAT gateway for secure outbound
+access.
+Understanding this separation is critical for designing a secure and scalable VPCs.
+
+------------------------------------------------------End-----------------------------------------------------

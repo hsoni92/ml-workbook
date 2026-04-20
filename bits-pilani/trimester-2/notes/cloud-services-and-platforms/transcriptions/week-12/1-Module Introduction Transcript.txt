@@ -1,0 +1,61 @@
+
+
+
+  Page 1 of 2
+
+
+Module Introduction Transcript
+
+In this module, we are going to talk about DevOps in the cloud, which is one of the
+most important concepts in modern software engineering. So far in this course, we
+focused on infrastructure, compute, storage, networking, and security. Now, we shift
+our attention to how the software actually moves  from developers to the actual users
+in a reliable and repeatable manner.
+
+As its core, DevOps is about bringing two worlds together, development and
+operations. Earlier, these teams worked separately. Developers wrote the code,
+operational teams were responsible for running it.
+
+This separation often caused delays, confusion, and failures. DevOps changed that
+mindset. It promotes collaboration, a shared responsibility, and automation so that the
+software can be delivered fast and more safely.
+
+One important thing to understand is DevOps is not a single tool. It's a culture
+supported by tools and practises. There are three key ideas behind DevOps.
+
+The first is collaboration. Teams work together instead of in silos. Second is
+automation.
+
+Repetitive tasks like building, testing, and deploying should be automated. Third is
+continuous improvement, where small frequent changes with the faster feedback.
+Cloud platforms make DevOps possible at a larger scale because infrastructure is
+available on demand and controlled using APIs and automation becomes a bit natural.
+
+You can increase the service, deploy your applications, and monitor systems without
+any human intervention. A helpful real -world way to think about DevOps is a modern
+production line. Imagine a kitchen in a food delivery company.
+
+Orders come in continuously. The process is standardised, automated, and monitored.
+If something goes wrong, it's detected quickly and corrected.
+
+That's how DevOps works for the software delivery as well. In this module, we'll build
+that understanding step by step. We'll start with version control and Git, which is the
+foundation of collaboration.
+
+Then we'll move into CI -CD pipelines and popular tools like GitHub Actions and
+Jenkins. After that, we'll explore deployment strategies such as blue-green and canary
+deployments, which helps release the software safely onto the users. By the end of
+this mo dule, you'll clearly understand how the modern teams move the code from
+development to production reliably without any chaos.
+
+
+
+
+  Page 2 of 2
+
+
+Let's now begin with the first real concept in DevOps, which is understanding what
+DevOps actually means and why it is so important.
+
+
+-----------------------------------------------------End------------------------------------------------------

@@ -1,0 +1,61 @@
+
+
+
+  Page 1 of 2
+
+
+Buckets, objects & folder structure
+
+In this topic, we are going to understand how data is actually organised inside Amazon
+S3 using buckets, objects, and what looks like a folder structure. This topic is extremely
+important because many people try to treat S3 like a normal file system and that leads
+to a good confusion. Let's start with the most basic building block.
+
+First one is buckets. A bucket is a top-level container in AWS S3. So, you can think of
+it as a logical box that holds your data.
+
+Do not get this confused with an actual docker container. Bucket is just a technical
+term where you put in all of your files and data. So every piece of data you store in S3
+must live inside a bucket.
+
+You can't store data directly in S3 without a bucket. Buckets are globally unique, which
+means no two AWS accounts in the world can have the same bucket name. They are
+also created in a specific AWS region and are used to apply permissions, policies, and
+configurations.
+
+Now inside buckets, we store objects, which are nothing but files. An object is the
+actual data like image, video, or backup files. Each object has three important parts.
+
+The data itself, a unique name called the object key, and some metadata. Here's
+where things get interesting. When you see something like images slash 2025 slash
+events slash concert dot jpj, some similar format, it looks like folders and subfolders.
+
+But in reality, S3 does not have a concept of folders. There are no real directories in
+S3. Everything before the file name is just part of the object's name, what we call a
+prefix.
+
+So S3 stores this as one flat object, not a nested structure like a traditional file system.
+The reason AWS still shows folders is simple. Humans understand folders better.
+
+So the console groups objects using slashes to make the navigation much more
+easier. But under the hood, S3 treats everything as objects in a flat structure. This
+design is actually what makes S3 so powerful.
+
+Because there are no real folders, S3 can scale infinitely, store trillions of objects, and
+deliver extremely and highly durable performance. That's why S3 is used for things
+like data lakes, backups, static website hosting, or even for ML datasets. A good way
+to think about S3 is it's more like Google Drive with labels, not a traditional hard drive
+with folders.
+
+
+
+
+  Page 2 of 2
+
+
+Once you understand this mental model, S3 becomes very easy to work with. We'll
+build on this understanding and explore storage classes as well. How S3 lets you store
+data at different costs based on how often you access it.
+
+
+-----------------------------------------------------End------------------------------------------------------

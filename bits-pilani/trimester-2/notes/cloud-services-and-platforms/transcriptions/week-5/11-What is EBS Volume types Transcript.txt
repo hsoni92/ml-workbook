@@ -1,0 +1,37 @@
+
+
+
+  Page 1 of 1
+
+
+What is EBS? Volume types Transcript
+In this lesson, we are going to understand Amazon EBS which stands for Elastic Block
+Store. The simple way to think about EBS is ECS is the computer and EBS is the hard
+disc attached to it. Without EBS, an EC2 instance has no reliable place to store data
+for a long term.
+EBS exists because applications need storage that survives reboot, failure and
+maintenance events. As we were discussing in the last video, when an EC2 instance
+restarts, the data on the EBS will still be there. That's why almost every EC2 instance
+you create will use EBS in some form.
+Now, EBS isn't just one type of storage. AWS gives us multiple volume types so we
+can match storage to the workload. The most commonly used option is GP3, the
+general purpose SSD.
+It provides a good balance of cost and performance and it works well for web servers,
+applications and development environments as well. If you are unsure which type of
+volume to use, GP3 is usually the safest choice. For workloads that need very high
+performance, especially databases, AWS provides IO1 and IO2 volumes.
+These allow you to pre-define how much performance you need. So you pay more but
+you get consistent speed and very low latency. IO2 is the newer and more durable
+option for large files that are read and written sequentially like logs or analytics data.
+ST1 is a better choice. It is cheaper than SSD but not designed for database or boot
+volumes. So SE1 is the lowest cost option.
+It is meant for data that is rarely accessed like old logs or archives. It is slow but very
+cheap. A good way to remember this is by thinking about storage in daily life.
+You wouldn't store important work files on a slow old USB drive and you wouldn't buy
+enterprise-grade storage for casual use. So choosing the right EBS volume helps you
+avoid performance issues and unnecessary cloud bills. In the next topic, we'll continue
+building on storage by looking at concepts like snapshots, backups and restore
+strategies.
+
+
+------------------------------------------------------End-----------------------------------------------------
