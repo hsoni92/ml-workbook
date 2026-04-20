@@ -1,78 +1,130 @@
-# 10-Perturbation Tests and Sensitivity Curves - Artificial Neural Networks
+# Perturbation Tests and Sensitivity Curves - Artificial Neural Networks
 
 ## Learning Objectives
 
-1. Understand the central idea behind 10-Perturbation Tests and Sensitivity Curves - Artificial Neural Networks.
-2. Connect this concept to the broader sequence/evaluation/diagnostics/optimization/responsible-AI pipeline as applicable.
-3. Prepare exam-ready explanations, comparisons, and reasoning based on lecture flow.
-4. In this video, we will see a demo of perturbation tests and sensitivity curves.
+By the end of this note, you should be able to:
+
+1. Explain how **perturbation tests** are performed.
+2. Interpret a **sensitivity curve** for model robustness.
+3. Distinguish between **graceful degradation** and **sharp collapse**.
+4. Explain why two models with similar clean accuracy can still have very different robustness.
 
 ---
 
-## Core Concepts and Deep Notes
+## From Intuition to Measurement
 
-- This topic from Week 10 builds conceptual depth around **10-Perturbation Tests and Sensitivity Curves** and should be revised as both a theory question and an application-oriented question.
-- Focus on three layers of understanding: definition, mechanism, and implication (how it changes model behavior, training stability, or decision quality).
-- In exam settings, score comes from linking intuition to formal reasoning: explain *why* the method exists, *how* it works, and *where* it can fail.
-- Treat this lecture as part of a system-level story: data properties -> model design -> optimization/training signals -> evaluation and reliability.
+In the previous note, robustness was introduced conceptually. This note turns that idea into a practical evaluation procedure.
 
-## Detailed Lecture Notes
+The central question is:
 
-- In this video, we will see a demo of perturbation tests and sensitivity curves.
-- So far, we have evaluated neural networks using accuracy, loss, calibration.
-- In this demo, we ask a new question.
-- How stable is a neural network when the input is slightly perturbed?
-- This property is known as robustness.
-- As we run this demo, focus on how predictions behave under small input noise, how performance changes as perturbations increase, whether degradation is gradual or sudden.
-- This behavior is summarized using a sensitivity curve.
-- Now let's start with the demo.
-- As always, we'll just import the standard libraries and fix the seed.
-- Here again, we are using a clean data set for binary classification.
-- Let's create our data set.
-- Then we will train a standard neural network normally.
+**What happens to model performance as input perturbation strength increases?**
 
-## Key Takeaways from the Lecture Transcription
+Perturbation tests answer this by applying controlled changes to the input and re-evaluating the model at each level.
 
-- In this video, we will see a demo of perturbation tests and sensitivity curves.
-- So far, we have evaluated neural networks using accuracy, loss, calibration.
-- In this demo, we ask a new question.
-- How stable is a neural network when the input is slightly perturbed?
-- This property is known as robustness.
-- As we run this demo, focus on how predictions behave under small input noise, how performance changes as perturbations increase, whether degradation is gradual or sudden.
-- This behavior is summarized using a sensitivity curve.
-- Now let's start with the demo.
-- Now let's look at the baseline performance of the model without any perturbation.
-- So we see that the baseline accuracy is around 95%.
-- Now to apply perturbation, what we do is we apply some small Gaussian noise to the input features.
-- The key idea here is that the real world data is never exact.
-- So the model should adapt to these kinds of degradation.
-- This is the function for adding the noise.
-- So now what we are doing is we will gradually increase the perturbation strength and measure the accuracy.
-- Then we will plot the sensitivity curve.
-- Now let us summarize the main points of this video.
-- Perturbation tests evaluate robustness explicitly.
-- Sensitivity curves reveal how models fail.
-- Accuracy alone cannot capture robustness.
-- Robust models degrade gracefully under noise.
-- Robustness is critical in real-world noisy environments.
-- If a model fails under tiny perturbations, it cannot be trusted in production.
-- In the next video, we will study uncertainty more explicitly using entropy and multi-class probability distributions.
+---
 
-## Common Exam Pitfalls
+## Typical Test Setup
 
-- Writing only definitions without connecting to training behavior, model limitations, or practical consequences.
-- Mixing related concepts (for example: model capacity vs generalization, calibration vs accuracy, or explainability vs fairness) without clear boundaries.
-- Ignoring assumptions and failure modes; exam questions often test when a method breaks or needs modification.
-- Not using the terminology used in class (state, gradients, gates, uncertainty, diagnostics, reproducibility, bias metrics, etc.) in precise context.
+| Step | What We Do | What We Observe |
+| --- | --- | --- |
+| 1 | Evaluate the model on clean validation or test data | Baseline metric |
+| 2 | Apply perturbation at strength `s` | Perturbed inputs |
+| 3 | Re-evaluate the model | Metric at that perturbation level |
+| 4 | Repeat for multiple values of `s` | Degradation pattern |
+| 5 | Plot metric against perturbation strength | Sensitivity curve |
 
-## Summary
+Common perturbations may include:
 
-- This note converts the lecture transcript into exam-focused revision points with conceptual flow, mechanism-level understanding, and practical reasoning.
-- Revise this along with nearby lectures in the same week to answer integrative questions that combine design choice, optimization behavior, and evaluation criteria.
+- Gaussian noise,
+- blur,
+- occlusion,
+- feature jitter.
 
-## Exam-Style Cues
+The transcript demo uses **Gaussian noise** added gradually to the input features.
 
-- Define the core concept in one precise paragraph and state why it is needed in neural-network practice.
-- Explain the process/mechanism step-by-step using correct technical terms from the lecture.
-- Compare this concept with one close alternative and justify when each is preferred.
-- Mention one implementation or diagnostic checklist that improves reliability in real training workflows.
+---
+
+## Demo Intuition from the Transcript
+
+The notebook demo:
+
+- trains a standard neural network on a clean binary classification dataset,
+- obtains a baseline accuracy of around **95%**,
+- then increases the noise level step by step,
+- and measures how accuracy changes.
+
+This setup is useful because it isolates one idea clearly:
+
+> **Clean accuracy alone does not tell us how stable the model is under realistic disturbance.**
+
+---
+
+## What Is a Sensitivity Curve?
+
+A **sensitivity curve** plots a performance metric such as accuracy against perturbation strength.
+
+```text
+Metric
+  |
+  |------\             flat or slow decline -> robust behavior
+  |       \__
+  |          \____      steep early drop -> fragile behavior
+  +-----------------> perturbation strength
+```
+
+The shape of the curve matters more than a single point.
+
+---
+
+## How to Read the Curve
+
+### Flat or slowly declining curve
+
+This suggests the model is relatively robust. Performance degrades gradually as the perturbation becomes stronger.
+
+This is often described as **graceful degradation**.
+
+### Steep early drop
+
+This suggests the model is fragile. Even small perturbations cause a sharp fall in performance.
+
+This is often described as **sharp collapse** or **high sensitivity**.
+
+---
+
+## What to Report in a Robustness Evaluation
+
+When describing a perturbation test, it is useful to report:
+
+- the **baseline metric** at zero perturbation,
+- the **rate of degradation** as perturbation increases,
+- whether the decline is **gradual or sudden**,
+- the perturbation level where performance begins to collapse,
+- comparisons between models with similar clean accuracy.
+
+This gives a much richer picture than saying only that one model was accurate on the original test set.
+
+---
+
+## Why Sensitivity Curves Are Valuable
+
+Two models may have:
+
+- the same clean-data accuracy,
+- but very different robustness profiles.
+
+One model may degrade slowly, while another may fail almost immediately once noise is introduced.
+
+So sensitivity curves reveal behavior that standard evaluation can easily miss.
+
+---
+
+## Summary and Exam-Ready Takeaways
+
+- **Perturbation tests** evaluate robustness by applying controlled input changes and re-measuring performance.
+- A **sensitivity curve** shows how quickly performance degrades as perturbation strength increases.
+- **Graceful degradation** suggests robustness; **sharp collapse** suggests fragility.
+- Robustness testing **complements** standard test-set evaluation rather than replacing it.
+- Two models with the same clean accuracy can still differ greatly in robustness.
+
+**Bridge to next topic:** Robustness asks whether predictions stay stable. The next note asks a different question: **when the model produces a probability distribution over many classes, how do we read its uncertainty?**

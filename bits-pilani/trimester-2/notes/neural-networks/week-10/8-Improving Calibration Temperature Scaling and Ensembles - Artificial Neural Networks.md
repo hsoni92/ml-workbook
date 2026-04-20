@@ -1,78 +1,129 @@
-# 8-Improving Calibration Temperature Scaling and Ensembles - Artificial Neural Networks
+# Improving Calibration: Temperature Scaling and Ensembles - Artificial Neural Networks
 
 ## Learning Objectives
 
-1. Understand the central idea behind 8-Improving Calibration Temperature Scaling and Ensembles - Artificial Neural Networks.
-2. Connect this concept to the broader sequence/evaluation/diagnostics/optimization/responsible-AI pipeline as applicable.
-3. Prepare exam-ready explanations, comparisons, and reasoning based on lecture flow.
-4. In this video, we will study temperature scaling and ensembles to improve the calibration of the models.
+By the end of this note, you should be able to:
+
+1. Explain why calibration can be improved **after training**.
+2. Describe how **temperature scaling** changes predicted probabilities.
+3. Explain why **ensembles** often improve confidence quality.
+4. Distinguish between improving **accuracy** and improving **calibration**.
 
 ---
 
-## Core Concepts and Deep Notes
+## Why We Need Calibration Improvement
 
-- This topic from Week 10 builds conceptual depth around **8-Improving Calibration Temperature Scaling and Ensembles** and should be revised as both a theory question and an application-oriented question.
-- Focus on three layers of understanding: definition, mechanism, and implication (how it changes model behavior, training stability, or decision quality).
-- In exam settings, score comes from linking intuition to formal reasoning: explain *why* the method exists, *how* it works, and *where* it can fail.
-- Treat this lecture as part of a system-level story: data properties -> model design -> optimization/training signals -> evaluation and reliability.
+In the previous note, we saw that a neural network can be accurate yet still poorly calibrated. That naturally leads to the next question:
 
-## Detailed Lecture Notes
+**Can we improve the quality of predicted probabilities without retraining the whole model from scratch?**
 
-- In this video, we will study temperature scaling and ensembles to improve the calibration of the models.
-- In the previous video, we saw that a neural network can be accurate but still poorly calibrated.
-- In this demo, we will look at how we can improve the quality of predicted probabilities without retraining the model.
-- We will study two methods, temperature and ensembles.
-- The model here is already trained.
-- We will use the same model again.
-- So, let's start the demo.
-- We are here importing the standard libraries like we always do and setting up a seed for reproducibility.
-- We will use the same dataset that we used earlier and we are using the same neural network model.
-- Now, let's train the same model for around 50 epochs.
-- Now, let's look at the model's accuracy before applying any kind of calibration.
-- So, like before, we see that the accuracy this time also is around 95%.
+The transcript introduces two answers:
 
-## Key Takeaways from the Lecture Transcription
+- **temperature scaling**, a simple post-hoc correction,
+- **ensembles**, which improve reliability by averaging multiple models.
 
-- In this video, we will study temperature scaling and ensembles to improve the calibration of the models.
-- In the previous video, we saw that a neural network can be accurate but still poorly calibrated.
-- In this demo, we will look at how we can improve the quality of predicted probabilities without retraining the model.
-- We will study two methods, temperature and ensembles.
-- The model here is already trained.
-- We will use the same model again.
-- So, let's start the demo.
-- We are here importing the standard libraries like we always do and setting up a seed for reproducibility.
-- So, while applying temperature scaling, what we do is we rescale the logits and then apply the sigmoid function.
-- So, here we are applying a temperature scaling with T is equal to 2.
-- After applying temperature scaling, this is how the reliability diagram looks now.
-- You can see that the green line is much closer to the diagonal while the orange line which is before the temperature scaling is slightly away.
-- Now, let's see what happens to the accuracy.
-- So, before and after temperature scaling, the accuracy is around 95% only.
-- So, it is not impacting the accuracy in any way.
-- Now, let's see what happens to the model.
-- So, orange line shows for a single model and the green line shows the curve for the ensemble of five different models.
-- So, here we see that ECE has not improved much.
-- Now, let's summarize the main points of this video.
-- Temperature scaling directly fixes confidence without changing the accuracy.
-- Ensembles improve calibration indirectly via averaging.
-- Both approaches reduce overconfidence.
-- Calibration is essential when probabilities drive decisions.
-- In the next video, we will understand why neural networks fail under perturbations.
+---
 
-## Common Exam Pitfalls
+## Two Main Approaches
 
-- Writing only definitions without connecting to training behavior, model limitations, or practical consequences.
-- Mixing related concepts (for example: model capacity vs generalization, calibration vs accuracy, or explainability vs fairness) without clear boundaries.
-- Ignoring assumptions and failure modes; exam questions often test when a method breaks or needs modification.
-- Not using the terminology used in class (state, gradients, gates, uncertainty, diagnostics, reproducibility, bias metrics, etc.) in precise context.
+| Method | Core Idea | Typical Accuracy Effect | Typical Calibration Effect | Cost |
+| --- | --- | --- | --- | --- |
+| **Temperature scaling** | Rescale logits using a single scalar temperature before sigmoid/softmax | Usually little change | Often noticeably better | Low |
+| **Ensembles** | Average predictions from multiple models | Often stable or slightly better | Often improves | Higher |
 
-## Summary
+Both methods target **confidence quality**, but they do so in different ways.
 
-- This note converts the lecture transcript into exam-focused revision points with conceptual flow, mechanism-level understanding, and practical reasoning.
-- Revise this along with nearby lectures in the same week to answer integrative questions that combine design choice, optimization behavior, and evaluation criteria.
+---
 
-## Exam-Style Cues
+## Temperature Scaling
 
-- Define the core concept in one precise paragraph and state why it is needed in neural-network practice.
-- Explain the process/mechanism step-by-step using correct technical terms from the lecture.
-- Compare this concept with one close alternative and justify when each is preferred.
-- Mention one implementation or diagnostic checklist that improves reliability in real training workflows.
+### Core Idea
+
+Temperature scaling adjusts the logits before converting them into probabilities.
+
+If `T > 1`, the predicted distribution becomes **softer**, which often reduces overconfidence.
+
+```text
+Train model
+-> freeze model weights
+-> choose temperature T on validation data
+-> rescale logits
+-> recompute probabilities
+-> re-check reliability diagram and ECE
+```
+
+### Why It Helps
+
+- It directly targets **overly peaked probabilities**.
+- It usually keeps the **ranking of predictions** similar.
+- It is a **post-processing step**, so full retraining is not required.
+
+### Demo Detail from the Transcript
+
+The transcript uses a model with about **95% accuracy** before calibration. After applying temperature scaling with **T = 2**, the reliability curve moves closer to the diagonal while the accuracy remains about **95%**.
+
+This is the main pedagogical point:
+
+> **Calibration can improve even when raw accuracy stays almost unchanged.**
+
+---
+
+## Ensembles
+
+### Core Idea
+
+An ensemble combines predictions from multiple independently trained models and averages them.
+
+The intuition is that individual models may be overconfident in different ways. Averaging can reduce those extreme confidence errors.
+
+### Why Ensembles Help
+
+- different models make slightly different mistakes,
+- confidence spikes may cancel out when averaged,
+- uncertainty estimates often become more stable.
+
+In the transcript demo, the ensemble behavior is simulated by introducing small variations in logits, and the ECE improves slightly to around **4.1%**.
+
+So ensembles can improve calibration, though the amount of improvement depends on the setting.
+
+---
+
+## Temperature Scaling vs Ensembles
+
+### Temperature Scaling
+
+- simple,
+- cheap,
+- easy to apply after training,
+- mainly fixes confidence without changing the model itself.
+
+### Ensembles
+
+- usually more computationally expensive,
+- require multiple models or multiple predictive paths,
+- often help both **calibration** and **uncertainty behavior**.
+
+So if the goal is a lightweight correction, temperature scaling is attractive. If the goal is stronger predictive reliability and uncertainty handling, ensembles are often more powerful but more costly.
+
+---
+
+## Practical Caveats
+
+- Calibration parameters should be tuned on **validation data**, not test data.
+- Always re-check both:
+  - **predictive performance**, and
+  - **calibration metrics** such as ECE.
+- Better calibration does **not automatically** mean higher accuracy.
+- Ensembles may improve trustworthiness but add **compute, memory, and latency** costs.
+
+---
+
+## Summary and Exam-Ready Takeaways
+
+- Calibration can often be improved **after training**.
+- **Temperature scaling** softens probabilities by rescaling logits and often improves calibration with little effect on accuracy.
+- **Ensembles** improve calibration more indirectly by averaging multiple predictions and reducing extreme confidence.
+- Improving **confidence quality** is different from improving **raw accuracy**.
+- ECE and reliability diagrams should be compared **before and after** calibration.
+
+**Bridge to next topic:** Calibration handles confidence quality, but another question remains: **why do neural networks fail when the input is only slightly perturbed?**

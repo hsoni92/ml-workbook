@@ -1,78 +1,153 @@
-# 5-Perturbation based Methods - Artificial Neural Networks
+# Perturbation based Methods - Artificial Neural Networks
 
 ## Learning Objectives
 
-1. Understand the central idea behind 5-Perturbation based Methods - Artificial Neural Networks.
-2. Connect this concept to the broader sequence/evaluation/diagnostics/optimization/responsible-AI pipeline as applicable.
-3. Prepare exam-ready explanations, comparisons, and reasoning based on lecture flow.
-4. By the end of this video, you will be able to understand the core idea behind perturbation-based methods, how LIME and SHAP generate explanations and work at a high level, and what their strengths and limitations are.
+By the end of this note, you should be able to:
+
+1. **Explain** the central idea behind perturbation-based explainability.
+2. **Compare** LIME and SHAP at a conceptual level.
+3. **Identify** the strengths and limitations of model-agnostic explanation methods.
 
 ---
 
-## Core Concepts and Deep Notes
+## Why This Topic Matters
 
-- This topic from Week 13 builds conceptual depth around **5-Perturbation based Methods** and should be revised as both a theory question and an application-oriented question.
-- Focus on three layers of understanding: definition, mechanism, and implication (how it changes model behavior, training stability, or decision quality).
-- In exam settings, score comes from linking intuition to formal reasoning: explain *why* the method exists, *how* it works, and *where* it can fail.
-- Treat this lecture as part of a system-level story: data properties -> model design -> optimization/training signals -> evaluation and reliability.
+Gradient-based explanations are useful, but they are not the only way to inspect a model.
 
-## Detailed Lecture Notes
+A very natural alternative is:
 
-- In this video, we study about perturbation-based explainability, focusing on LIME and SHAP.
-- By the end of this video, you will be able to understand the core idea behind perturbation-based methods, how LIME and SHAP generate explanations and work at a high level, and what their strengths and limitations are.
-- The fundamental idea here is simple.
-- If a small change in an input feature causes a large change in the prediction, that feature must be important.
-- Perturbation-based methods systematically apply this idea by modifying inputs and observing the model's response.
-- LIME focuses on explaining a single prediction.
-- It generates many perturbed versions of the input around that point, queries the black box model, and then fits a simple interpretable model locally.
-- The explanation comes from this local surrogate, not from the original model itself.
-- SHAP takes a more principled approach rooted in game theory.
-- Each feature is treated as a player contributing to the final prediction.
-- SHAP computes how much each feature contributes on average across all possible feature combinations.
-- This gives SHAP strong theoretical guarantees but at higher computational cost.
+**change the input slightly and see how the prediction changes.**
 
-## Key Takeaways from the Lecture Transcription
+If a small change in one feature produces a large change in output, that feature is likely important.
 
-- In this video, we study about perturbation-based explainability, focusing on LIME and SHAP.
-- By the end of this video, you will be able to understand the core idea behind perturbation-based methods, how LIME and SHAP generate explanations and work at a high level, and what their strengths and limitations are.
-- The fundamental idea here is simple.
-- If a small change in an input feature causes a large change in the prediction, that feature must be important.
-- Perturbation-based methods systematically apply this idea by modifying inputs and observing the model's response.
-- LIME focuses on explaining a single prediction.
-- It generates many perturbed versions of the input around that point, queries the black box model, and then fits a simple interpretable model locally.
-- The explanation comes from this local surrogate, not from the original model itself.
-- SHAP takes a more principled approach rooted in game theory.
-- Each feature is treated as a player contributing to the final prediction.
-- SHAP computes how much each feature contributes on average across all possible feature combinations.
-- This gives SHAP strong theoretical guarantees but at higher computational cost.
-- Conceptually, LIME is faster and more heuristic, while SHAP is slower but more theoretically grounded.
-- Both produce local explanations but SHAP explanations are more consistent across runs and models.
-- One major advantage of perturbation-based methods is that they are model agnostic.
-- They can work with any black box model, neural networks, tree-based models or ensembles, making them very practical for use.
-- They can be computationally expensive, sensitive to how perturbations are generated, local explanations may not generalize, and sometimes misleading if perturbations move inputs off the true data manifold.
-- Now, let us summarize the main points of this video.
-- Perturbation-based methods like LIME and SHAP are powerful tools for explainability.
-- They explain predictions by probing sensitivity.
-- They explain predictions by probing sensitivity.
-- LIME uses local surrogate models, while SHAP uses principal feature attribution.
-- They provide flexible model agnostic explanations, but their results must be interpreted with care.
-- In the next video, we will look at explainability methods designed specifically for deep neural networks, including GradCam and integrated gradients.
+This is the basic idea behind perturbation-based explainability.
 
-## Common Exam Pitfalls
+---
 
-- Writing only definitions without connecting to training behavior, model limitations, or practical consequences.
-- Mixing related concepts (for example: model capacity vs generalization, calibration vs accuracy, or explainability vs fairness) without clear boundaries.
-- Ignoring assumptions and failure modes; exam questions often test when a method breaks or needs modification.
-- Not using the terminology used in class (state, gradients, gates, uncertainty, diagnostics, reproducibility, bias metrics, etc.) in precise context.
+## The Core Intuition
 
-## Summary
+Perturbation methods explain a prediction by probing the model with modified versions of the input.
 
-- This note converts the lecture transcript into exam-focused revision points with conceptual flow, mechanism-level understanding, and practical reasoning.
-- Revise this along with nearby lectures in the same week to answer integrative questions that combine design choice, optimization behavior, and evaluation criteria.
+Instead of looking inside the model, they ask:
 
-## Exam-Style Cues
+- What happens if this word is removed?
+- What happens if this feature value is changed?
+- What happens if part of the image is masked?
 
-- Define the core concept in one precise paragraph and state why it is needed in neural-network practice.
-- Explain the process/mechanism step-by-step using correct technical terms from the lecture.
-- Compare this concept with one close alternative and justify when each is preferred.
-- Mention one implementation or diagnostic checklist that improves reliability in real training workflows.
+Because they study the input-output behavior directly, these methods can work with many kinds of black-box models.
+
+---
+
+## Why These Methods Are Attractive
+
+One major advantage is that they are **model-agnostic**.
+
+They can be applied to:
+
+- neural networks,
+- tree-based systems,
+- ensemble models,
+- other predictive black boxes.
+
+This makes them especially practical when we care more about explaining predictions than about the internal architecture.
+
+---
+
+## LIME and SHAP
+
+The two most common examples in this family are **LIME** and **SHAP**.
+
+| Method | Main idea | Strength | Limitation |
+|---|---|---|---|
+| **LIME** | Fit a simple interpretable model around one input | Fast and intuitive | Sensitive to sampling choices |
+| **SHAP** | Estimate each feature's average contribution using Shapley values | Strong theoretical grounding | Often more computationally expensive |
+
+---
+
+## How LIME Works
+
+LIME focuses on one prediction at a time.
+
+High-level idea:
+
+1. Take one input example.
+2. Create many perturbed versions near that example.
+3. Query the original black-box model on those perturbed samples.
+4. Fit a simple local surrogate model, often linear.
+5. Use the surrogate coefficients as the explanation.
+
+So LIME does not directly explain the full black-box model. It explains a **local approximation** of behavior near one point.
+
+---
+
+## How SHAP Works
+
+SHAP comes from cooperative game theory.
+
+It treats each feature as a "player" contributing to the final prediction and asks:
+
+**How much does each feature contribute on average across different feature combinations?**
+
+This gives SHAP a more principled attribution framework. In exchange, the computation is often heavier than LIME.
+
+Conceptually:
+
+- **LIME** is more heuristic and practical.
+- **SHAP** is more theoretically grounded and often more consistent.
+
+---
+
+## Example Intuition
+
+Imagine a loan approval model.
+
+- LIME may approximate the model locally and say: income and debt ratio were the strongest reasons this applicant was rejected.
+- SHAP may assign additive contributions to each feature and show how much each one pushed the prediction toward approval or rejection.
+
+Both are useful, but they answer the question through different mechanisms.
+
+---
+
+## An Important Warning: Plausible Perturbations Matter
+
+Perturbation methods can become misleading when the modified inputs are unrealistic.
+
+For example:
+
+- masking words may create unnatural text,
+- changing one feature independently may create an impossible tabular record,
+- masking image regions may move the sample away from the true data manifold.
+
+If the perturbed samples are unrealistic, the explanation may reflect strange model behavior on artificial inputs rather than meaningful reasoning on real ones.
+
+---
+
+## Common Misunderstandings
+
+- **"Model-agnostic means automatically reliable."**
+  Reliability still depends on how perturbations are generated.
+
+- **"SHAP is always better than LIME."**
+  SHAP is often more principled, but cost and workflow constraints still matter.
+
+- **"A local explanation describes the whole model."**
+  These methods usually explain one prediction at a time, not global behavior.
+
+---
+
+## Summary and Exam-Ready Takeaways
+
+- Perturbation-based methods explain predictions by modifying inputs and observing output changes.
+- They are attractive because they are model-agnostic.
+- LIME fits a local surrogate model around one example.
+- SHAP assigns feature contributions using a Shapley-value perspective.
+- Both methods are useful, but both depend on the quality of the perturbation process.
+- Local explanations should be interpreted carefully and not overgeneralized.
+
+---
+
+## Bridge to the Next Note
+
+So far, we have seen gradient-based and model-agnostic explanation methods. The next step is to study methods that use the internal structure of deep networks directly:
+
+**Grad-CAM and Integrated Gradients**.

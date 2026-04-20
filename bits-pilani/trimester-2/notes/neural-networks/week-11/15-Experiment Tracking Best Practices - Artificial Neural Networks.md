@@ -1,78 +1,119 @@
-# 15-Experiment Tracking Best Practices - Artificial Neural Networks
+# Experiment Tracking Best Practices - Artificial Neural Networks
 
 ## Learning Objectives
 
-1. Understand the central idea behind 15-Experiment Tracking Best Practices - Artificial Neural Networks.
-2. Connect this concept to the broader sequence/evaluation/diagnostics/optimization/responsible-AI pipeline as applicable.
-3. Prepare exam-ready explanations, comparisons, and reasoning based on lecture flow.
-4. In this video, we will discuss best practices for tracking the experiments.
+By the end of this note, you should be able to:
+
+1. Explain why experiment tracking is essential for reproducibility.
+2. List the minimum information that every neural network experiment should record.
+3. Describe simple habits that make debugging and comparison much easier.
 
 ---
 
-## Core Concepts and Deep Notes
+## Why Experiment Tracking Matters
 
-- This topic from Week 11 builds conceptual depth around **15-Experiment Tracking Best Practices** and should be revised as both a theory question and an application-oriented question.
-- Focus on three layers of understanding: definition, mechanism, and implication (how it changes model behavior, training stability, or decision quality).
-- In exam settings, score comes from linking intuition to formal reasoning: explain *why* the method exists, *how* it works, and *where* it can fail.
-- Treat this lecture as part of a system-level story: data properties -> model design -> optimization/training signals -> evaluation and reliability.
+As models become more complex, the number of experiments grows quickly. At that point, memory is no longer reliable.
 
-## Detailed Lecture Notes
+The transcript frames experiment tracking around very practical questions:
 
-- In this video, we will discuss best practices for tracking the experiments.
-- As neural network models grow in complexity, so do the number of experiments we run.
-- In this video, we focus on why experiment tracking matters, what information should always be tracked, and simple practical tracking habits that you can apply immediately.
-- The goal is reproducibility, not sophistication.
-- In practice, we often ask questions like which learning rate worked best, which model version produced this result, and can I reproduce this experiment next week?
-- Without proper experiment tracking, these questions are hard to answer.
-- So let's start with the demo.
-- We will load the standard packages.
-- Now we know that an experiment consists of a model, a dataset, a configuration of hyperparameters, logged metrics and artifacts, and a unique identifier.
-- Good tracking ensures that all the five are recorded together.
-- Now let's start with the configuration.
-- So instead of hard coding the hyperparameters, we store them in a configuration dictionary.
+- Which learning rate worked best?
+- Which model version produced a given result?
+- Can the same experiment be reproduced next week?
 
-## Key Takeaways from the Lecture Transcription
+If those questions cannot be answered, the experiment is not truly useful.
 
-- In this video, we will discuss best practices for tracking the experiments.
-- As neural network models grow in complexity, so do the number of experiments we run.
-- In this video, we focus on why experiment tracking matters, what information should always be tracked, and simple practical tracking habits that you can apply immediately.
-- The goal is reproducibility, not sophistication.
-- In practice, we often ask questions like which learning rate worked best, which model version produced this result, and can I reproduce this experiment next week?
-- Without proper experiment tracking, these questions are hard to answer.
-- So let's start with the demo.
-- We will load the standard packages.
-- This prevents log overwriting and we can compare them properly.
-- Now we will save the configuration alongside the experiment outputs.
-- This ensures that we can always reconstruct how the model was trained.
-- Next is about model and data.
-- Here we keep the model and dataset simple so that we can focus on the tracking mechanics.
-- Now each experiment will get its own tensor board log directory.
-- This avoids mixing the results across the runs.
-- Now let's train the model with logging.
-- Some of the common experiment tracking mistakes we should avoid are: Overwriting the logs, forgetting hyperparameters, relying on your memory, and keeping results only in the notebooks.
-- Now let us summarize the main points of this video.
-- Experiment tracking is about discipline, not tools.
-- Unique IDs prevent confusion.
-- Config files enable reproducibility.
-- Answer board complements structured experiment organization.
-- These habits scale from coursework to research and industry projects.
-- In the next video, we will summarize the learnings of this module.
+So the main goal of experiment tracking is not sophistication. It is **reproducibility**.
 
-## Common Exam Pitfalls
+---
 
-- Writing only definitions without connecting to training behavior, model limitations, or practical consequences.
-- Mixing related concepts (for example: model capacity vs generalization, calibration vs accuracy, or explainability vs fairness) without clear boundaries.
-- Ignoring assumptions and failure modes; exam questions often test when a method breaks or needs modification.
-- Not using the terminology used in class (state, gradients, gates, uncertainty, diagnostics, reproducibility, bias metrics, etc.) in precise context.
+## What an Experiment Includes
 
-## Summary
+The lesson treats an experiment as a package of several parts:
 
-- This note converts the lecture transcript into exam-focused revision points with conceptual flow, mechanism-level understanding, and practical reasoning.
-- Revise this along with nearby lectures in the same week to answer integrative questions that combine design choice, optimization behavior, and evaluation criteria.
+- a **model**,
+- a **dataset**,
+- a **hyperparameter configuration**,
+- **logged metrics and artifacts**,
+- and a **unique identifier**.
 
-## Exam-Style Cues
+Good tracking means keeping all of these together rather than scattering them across notebooks, memory, and ad hoc filenames.
 
-- Define the core concept in one precise paragraph and state why it is needed in neural-network practice.
-- Explain the process/mechanism step-by-step using correct technical terms from the lecture.
-- Compare this concept with one close alternative and justify when each is preferred.
-- Mention one implementation or diagnostic checklist that improves reliability in real training workflows.
+---
+
+## Configuration Should Be Explicit
+
+Instead of hard-coding hyperparameters in many places, the transcript recommends storing them in a configuration object.
+
+Typical entries include:
+
+- model,
+- learning rate,
+- optimizer,
+- batch size,
+- epochs,
+- and random seed.
+
+This matters because a result without its configuration is difficult to interpret and impossible to reproduce reliably.
+
+---
+
+## Why Unique Experiment IDs Matter
+
+Every experiment should have its own unique identifier.
+
+This prevents:
+
+- accidental log overwriting,
+- confusion between similar runs,
+- and difficulty comparing results later.
+
+The lesson also recommends storing each run in its own TensorBoard log directory so that experiment outputs remain separate and traceable.
+
+---
+
+## Minimum Information to Record
+
+The transcript gives a clear minimum checklist. At the very least, each experiment should record:
+
+- model architecture,
+- hyperparameters,
+- random seed,
+- training metrics,
+- logs,
+- and generated plots or artifacts.
+
+This is a strong exam-ready list because it captures both the setup and the outcome.
+
+---
+
+## Common Mistakes to Avoid
+
+The lesson lists several mistakes that are extremely common in practice:
+
+- overwriting old logs,
+- forgetting hyperparameters,
+- relying on memory,
+- and keeping results only inside notebooks.
+
+These are not minor organizational issues. They directly damage reproducibility and make diagnostics much harder.
+
+---
+
+## The Bigger Message
+
+One of the strongest lines in the transcript is the idea that:
+
+> if you cannot reproduce an experiment, it effectively does not exist.
+
+That captures the real purpose of tracking. Good experiment management turns isolated training runs into a cumulative body of evidence. That makes debugging faster, comparisons fairer, and improvements more trustworthy.
+
+---
+
+## Key Takeaways
+
+- Experiment tracking is about discipline, not fancy tooling.
+- Every run should have a clear configuration, logs, metrics, artifacts, and a unique ID.
+- Separate experiment directories prevent confusion and make comparison easier.
+- Reproducibility is the real standard for whether an experiment was properly recorded.
+
+**Bridge to the next topic:** the final lesson of the module brings all of these ideas together in a **module-wide summary of neural network diagnostics**.

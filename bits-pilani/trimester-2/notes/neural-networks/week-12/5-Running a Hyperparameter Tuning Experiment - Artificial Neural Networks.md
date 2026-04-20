@@ -1,78 +1,159 @@
-# 5-Running a Hyperparameter Tuning Experiment - Artificial Neural Networks
+# Running a Hyperparameter Tuning Experiment - Artificial Neural Networks
 
 ## Learning Objectives
 
-1. Understand the central idea behind 5-Running a Hyperparameter Tuning Experiment - Artificial Neural Networks.
-2. Connect this concept to the broader sequence/evaluation/diagnostics/optimization/responsible-AI pipeline as applicable.
-3. Prepare exam-ready explanations, comparisons, and reasoning based on lecture flow.
-4. We will cover train and validation splits, automated hyperparameter sampling, early stopping, model checkpointing and best model selection.
+By the end of this note, you should be able to:
+
+1. **Describe** the structure of a professional hyperparameter tuning experiment.
+2. **Explain** why tuning must be treated as a controlled comparison rather than trial-and-error.
+3. **Define** the roles of validation splits, early stopping, checkpointing, and logging.
+4. **Compare** common search strategies at a high level.
 
 ---
 
-## Core Concepts and Deep Notes
+## Why Manual Tuning Is Not Enough
 
-- This topic from Week 12 builds conceptual depth around **5-Running a Hyperparameter Tuning Experiment** and should be revised as both a theory question and an application-oriented question.
-- Focus on three layers of understanding: definition, mechanism, and implication (how it changes model behavior, training stability, or decision quality).
-- In exam settings, score comes from linking intuition to formal reasoning: explain *why* the method exists, *how* it works, and *where* it can fail.
-- Treat this lecture as part of a system-level story: data properties -> model design -> optimization/training signals -> evaluation and reliability.
+Once learning rate and batch size are understood conceptually, the next challenge is practical:
 
-## Detailed Lecture Notes
+**How do we search for good hyperparameter settings without turning training into guesswork?**
 
-- In this video, we bring together everything learned so far to run a complete professional hyperparameter tuning experiment.
-- We will cover train and validation splits, automated hyperparameter sampling, early stopping, model checkpointing and best model selection.
-- The goal here is not maximum accuracy, but a reliable and systematic tuning workflow.
-- A professional tuning experiment must compare models fairly, use a validation set, stop bad runs early, save the best model and track configurations and results.
-- This notebook demonstrates all of these elements.
-- Let's start with the demonstration.
-- We will import the standard packages.
-- Now in the dataset, we will explicitly create the training set and validation set.
-- This is done using the function train_test_split.
-- This ensures fair model comparison during the training.
-- Here, we are using a simple and fixed model architecture so that only hyperparameters influence the performance.
-- Now for the hyperparameter search space, we define distributions instead of the fixed values.
+The lecture's answer is that tuning must be run as a **systematic experiment**. The goal is not simply to find one good run, but to compare candidate configurations **fairly** and **efficiently**.
 
-## Key Takeaways from the Lecture Transcription
+---
 
-- In this video, we bring together everything learned so far to run a complete professional hyperparameter tuning experiment.
-- We will cover train and validation splits, automated hyperparameter sampling, early stopping, model checkpointing and best model selection.
-- The goal here is not maximum accuracy, but a reliable and systematic tuning workflow.
-- A professional tuning experiment must compare models fairly, use a validation set, stop bad runs early, save the best model and track configurations and results.
-- This notebook demonstrates all of these elements.
-- Let's start with the demonstration.
-- We will import the standard packages.
-- Now in the dataset, we will explicitly create the training set and validation set.
-- For instance, learning rate is sampled from this uniform distribution and batch size is randomly sampled from these three choices.
-- Now in our training, we are incorporating something called as early stopping which prevents wasted computation on poor configurations.
-- So how early stopping works is that we define a patient's parameter.
-- So we check what is the validation accuracy that we are seeing with respect to the best accuracy that we have seen so far.
-- And if it does not improve beyond a certain number of epochs, which is guided by the patient's parameters, then we break the training.
-- Now we will run the hyperparameter tuning loop.
-- In each trial, we will sample the hyperparameter, train with early stopping, evaluate on the validation data, and store the best model.
-- So here we are going to do some 10 trials.
-- Now let us summarize the main points of this video.
-- Hyperparameter tuning is an experiment, not a guess.
-- Validation performance guides the selection.
-- Early stopping saves computation.
-- Checkpointing preserves the best model.
-- And a systematic pipeline is essential for reliable results.
-- In the next video, we will focus on reproducibility, where we will look at random seeds, deterministic behavior, and reliable comparisons across the runs.
-- These practices ensure that tuning results can be trusted.
+## The Core Tuning Pipeline
 
-## Common Exam Pitfalls
+The full workflow can be summarized as:
 
-- Writing only definitions without connecting to training behavior, model limitations, or practical consequences.
-- Mixing related concepts (for example: model capacity vs generalization, calibration vs accuracy, or explainability vs fairness) without clear boundaries.
-- Ignoring assumptions and failure modes; exam questions often test when a method breaks or needs modification.
-- Not using the terminology used in class (state, gradients, gates, uncertainty, diagnostics, reproducibility, bias metrics, etc.) in precise context.
+`define metric and validation split -> define search space -> sample a configuration -> train -> monitor validation performance -> stop poor runs early -> save the best model -> compare all trials`
+
+This sequence turns tuning into a repeatable process instead of an ad hoc sequence of guesses.
+
+---
+
+## Essential Components of a Tuning Experiment
+
+| Component | What It Does | Why It Matters |
+|---|---|---|
+| **Train/validation split** | Separates fitting from model selection | Prevents biased choice of model |
+| **Search space** | Defines allowed hyperparameter values or distributions | Makes tuning intentional rather than arbitrary |
+| **Trial loop** | Repeats training across sampled configurations | Enables comparison across candidates |
+| **Early stopping** | Terminates unpromising runs | Saves compute budget |
+| **Checkpointing** | Saves best-performing model state | Preserves the strongest version of a run |
+| **Logging** | Stores metrics, settings, and outcomes | Makes experiments auditable and comparable |
+
+These are the ingredients of a professional tuning setup.
+
+---
+
+## What the Lecture Demonstration Does
+
+The notebook demonstration follows a clean and controlled pattern:
+
+- it creates an explicit **training set** and **validation set**,
+- it keeps the **model architecture fixed**,
+- it samples hyperparameters instead of hard-coding one setting,
+- it uses **early stopping** to avoid wasting computation,
+- it stores the best validation result and corresponding model,
+- and it repeats this process across multiple trials.
+
+The transcript specifically mentions a run with **10 trials**, which helps show that tuning is a loop, not a one-shot decision.
+
+---
+
+## Why the Architecture Is Held Fixed
+
+Holding the architecture fixed is a subtle but important design choice.
+
+It means the experiment is testing:
+
+- the effect of **hyperparameters**,
+
+not mixing that with:
+
+- architectural redesign,
+- changed preprocessing,
+- or changed data splits.
+
+This is what makes the comparison fair. If many things change at once, the result is harder to interpret.
+
+---
+
+## Early Stopping and Checkpointing
+
+The lecture emphasizes two ideas that make tuning practical.
+
+### Early stopping
+
+If validation performance stops improving for a chosen patience window, the run is stopped early.
+
+This helps because:
+
+- bad configurations are identified sooner,
+- compute is saved,
+- and the search can explore more candidates under the same budget.
+
+### Checkpointing
+
+The best version of the model within a run should be saved when validation performance is highest.
+
+This matters because the final epoch is not always the best epoch.
+
+---
+
+## Example Outcome from the Lecture
+
+The transcript gives a concrete illustration: among the sampled trials, the best validation accuracy reported was **95.5%** with:
+
+- learning rate = `0.001`
+- batch size = `32`
+
+The exact values matter less than the lesson:
+
+**the winning configuration was discovered through a structured search process, not intuition alone.**
+
+---
+
+## Search Strategies
+
+| Strategy | When It Is Useful | Main Limitation |
+|---|---|---|
+| **Grid search** | Very small search spaces | Quickly becomes wasteful as dimensions increase |
+| **Random search** | Strong practical baseline | May still miss narrow good regions |
+| **Bayesian search** | Expensive trials and small budgets | More setup and overhead |
+
+For this module, the key idea is not to memorize algorithms in depth, but to understand that the search itself should be **systematic**.
+
+---
+
+## What Makes a Tuning Experiment Fair
+
+A tuning experiment is only meaningful if runs are comparable. That usually means:
+
+- same validation protocol,
+- same architecture unless architecture is the thing being tuned,
+- same evaluation metric,
+- same logging discipline,
+- and no use of the test set for model selection.
+
+Without these controls, the "best" trial may simply be the least comparable one.
+
+---
+
+## Common Mistakes
+
+- Declaring a winner from one lucky run.
+- Tuning directly on the test set.
+- Forgetting to save the best checkpoint.
+- Changing split or preprocessing across trials.
+- Running many experiments but not recording what configuration produced each result.
+
+---
 
 ## Summary
 
-- This note converts the lecture transcript into exam-focused revision points with conceptual flow, mechanism-level understanding, and practical reasoning.
-- Revise this along with nearby lectures in the same week to answer integrative questions that combine design choice, optimization behavior, and evaluation criteria.
+- Hyperparameter tuning should be treated as a **designed experiment**, not random exploration.
+- Validation splits, early stopping, checkpointing, and logging are core parts of that design.
+- Good tuning balances **fairness**, **compute efficiency**, and **reliable comparison**.
 
-## Exam-Style Cues
-
-- Define the core concept in one precise paragraph and state why it is needed in neural-network practice.
-- Explain the process/mechanism step-by-step using correct technical terms from the lecture.
-- Compare this concept with one close alternative and justify when each is preferred.
-- Mention one implementation or diagnostic checklist that improves reliability in real training workflows.
+**Bridge to the next note:** once tuning is systematic, the next requirement is reproducibility so that repeated runs and comparisons can actually be trusted.

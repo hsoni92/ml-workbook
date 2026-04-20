@@ -1,78 +1,129 @@
-# 6-Ensuring Reproducibility - Artificial Neural Networks
+# Ensuring Reproducibility - Artificial Neural Networks
 
 ## Learning Objectives
 
-1. Understand the central idea behind 6-Ensuring Reproducibility - Artificial Neural Networks.
-2. Connect this concept to the broader sequence/evaluation/diagnostics/optimization/responsible-AI pipeline as applicable.
-3. Prepare exam-ready explanations, comparisons, and reasoning based on lecture flow.
-4. In this video, we will focus on reproducibility, which is a foundational principle of scientific machine learning.
+By the end of this note, you should be able to:
+
+1. **Define** reproducibility in the context of deep learning experiments.
+2. **Identify** the major sources of randomness that make repeated runs differ.
+3. **Explain** why reproducibility is necessary for fair comparison and debugging.
+4. **List** the practical controls required to make experiments reproducible.
 
 ---
 
-## Core Concepts and Deep Notes
+## What Reproducibility Means
 
-- This topic from Week 12 builds conceptual depth around **6-Ensuring Reproducibility** and should be revised as both a theory question and an application-oriented question.
-- Focus on three layers of understanding: definition, mechanism, and implication (how it changes model behavior, training stability, or decision quality).
-- In exam settings, score comes from linking intuition to formal reasoning: explain *why* the method exists, *how* it works, and *where* it can fail.
-- Treat this lecture as part of a system-level story: data properties -> model design -> optimization/training signals -> evaluation and reliability.
+Reproducibility means rerunning the same experiment under the same conditions and obtaining the same result, or at least a statistically consistent result when exact determinism is difficult.
 
-## Detailed Lecture Notes
+This sounds simple, but deep learning makes it surprisingly difficult because training contains many hidden sources of stochasticity.
 
-- In this video, we will focus on reproducibility, which is a foundational principle of scientific machine learning.
-- By the end of this video, you will be able to clearly explain what reproducibility means in the context of neural networks, identify the key sources of randomness that affect deep learning experiments and understand how we can systematically control these factors to run reliable and comparable experiments.
-- When we say reproducibility, we mean something very precise.
-- If we run the same code again under the same conditions, we should obtain the same results.
-- In traditional software systems, this is usually taken for granted.
-- However, in deep learning, achieving reproducibility is surprisingly difficult because training neural networks involves many stochastic components that are often hidden from view.
-- Let's look at why reproducibility breaks in practice.
-- Neural networks typically start with randomly initialized weights.
-- Training data is often different than shuffled differently in each run.
-- Many GPU operations are non-deterministic for performance reasons.
-- Techniques like dropout deliberately introduce randomness during training.
-- And finally, multi-threading and parallel execution can change the order of computations.
+---
 
-## Key Takeaways from the Lecture Transcription
+## Why Reproducibility Matters
 
-- In this video, we will focus on reproducibility, which is a foundational principle of scientific machine learning.
-- By the end of this video, you will be able to clearly explain what reproducibility means in the context of neural networks, identify the key sources of randomness that affect deep learning experiments and understand how we can systematically control these factors to run reliable and comparable experiments.
-- When we say reproducibility, we mean something very precise.
-- If we run the same code again under the same conditions, we should obtain the same results.
-- In traditional software systems, this is usually taken for granted.
-- However, in deep learning, achieving reproducibility is surprisingly difficult because training neural networks involves many stochastic components that are often hidden from view.
-- Let's look at why reproducibility breaks in practice.
-- Neural networks typically start with randomly initialized weights.
-- All hyperparameters should be logged and reused exactly.
-- Finally, software versions including frameworks, drivers and hardware dependencies must be tracked because even small changes can affect the outcome.
-- Now that we understand the risk of reproducibility, we will move to a hands-on demonstration.
-- In the next section, we will see how these principles are applied in practice and how small changes can lead to surprisingly different results if reproducibility is not enforced.
-- Let's now switch to the notebook and see this step by step.
-- Let's start with the standard library.
-- Now we create a dataset and a simple model.
-- At this stage, we do not fix any random seeds.
-- These practices are essential for reliable experimentation.
-- Now, let us summarize the main points of this video.
-- With proper control of randomness, repeated runs produce identical results, comparisons across experiments become meaningful and debugging becomes possible.
-- Reproducibility is not automatic, it must be engineered.
-- In the next video, we will look at experiment tracking, how to store configurations, metrics and models so that experiments can be compared and revisited later.
-- Reproducibility is not automatic, it must be engineered.
-- Reproducibility is not automatic, it must be engineered.
-- Reproducibility is not automatic, it must be engineered.
+The lecture makes a strong point: lack of reproducibility is not just an academic inconvenience. It is dangerous for practical work.
 
-## Common Exam Pitfalls
+If results are not reproducible:
 
-- Writing only definitions without connecting to training behavior, model limitations, or practical consequences.
-- Mixing related concepts (for example: model capacity vs generalization, calibration vs accuracy, or explainability vs fairness) without clear boundaries.
-- Ignoring assumptions and failure modes; exam questions often test when a method breaks or needs modification.
-- Not using the terminology used in class (state, gradients, gates, uncertainty, diagnostics, reproducibility, bias metrics, etc.) in precise context.
+- you cannot trust claimed improvements,
+- you cannot compare experiments fairly,
+- and debugging becomes much harder because you do not know whether a change in outcome came from your code or from randomness.
+
+So reproducibility is not extra polish. It is part of the method.
+
+---
+
+## Why Deep Learning Runs Differ
+
+Training can vary from run to run because of several sources of randomness and variation.
+
+| Source | How It Changes Results |
+|---|---|
+| **Random initialization** | Different starting weights lead optimization down different paths |
+| **Data split randomness** | Different train/validation partitions change what the model sees |
+| **Data order and shuffling** | Batch sequence changes update history |
+| **Stochastic layers** | Methods like dropout intentionally inject randomness |
+| **Non-deterministic hardware behavior** | Some GPU operations vary because of execution order |
+| **Software and environment drift** | Framework, driver, and package differences can alter outcomes |
+
+The important lesson is that "same code" does not automatically mean "same experiment."
+
+---
+
+## The Lecture Demonstration
+
+The notebook gives a clear demonstration of the problem.
+
+- First, the same code is run twice **without** fixing seeds.
+- The two runs produce different accuracies: **94.0%** and **93.6%**.
+
+Then the experiment is repeated with seed control and fixed split randomness:
+
+- numpy seed is fixed,
+- PyTorch seed is fixed,
+- data splitting randomness is fixed.
+
+This time, repeated runs produce the **same** value: **92.3%** in both cases.
+
+The conclusion is straightforward:
+
+**Reproducibility does not happen automatically. It must be engineered.**
+
+---
+
+## Reproducibility Checklist
+
+| Control Item | What To Do |
+|---|---|
+| **Random seeds** | Fix seeds across all relevant libraries and workers |
+| **Data splits** | Use deterministic train/validation/test splits |
+| **Hyperparameter logging** | Record exact settings used in every run |
+| **Checkpoints** | Save model states so results can be revisited |
+| **Environment tracking** | Record framework versions, packages, drivers, and hardware context |
+| **Log hygiene** | Keep runs separate instead of mixing outputs in one folder |
+
+This checklist converts reproducibility from a vague idea into concrete practice.
+
+---
+
+## Why Reproducibility Helps Debugging
+
+Suppose accuracy changes after you edit a model or training script.
+
+Without reproducibility, you do not know whether the difference came from:
+
+- the code change,
+- the random initialization,
+- a different split,
+- or a changed environment.
+
+With reproducibility controls in place, you can isolate causes much more reliably. That is why reproducibility is essential not only for reporting results, but also for diagnosing problems.
+
+---
+
+## Different Levels of Reproducibility
+
+- **Exact reproducibility**: repeated runs produce exactly the same outputs and metrics.
+- **Statistical reproducibility**: repeated runs are not bit-for-bit identical, but their behavior remains consistent.
+- **Conclusion reproducibility**: repeated experiments support the same overall conclusion, such as one model being consistently better than another.
+
+This distinction is useful because some hardware or software settings make exact determinism hard, but the experiment should still support stable conclusions.
+
+---
+
+## Common Mistakes
+
+- Fixing only one seed while leaving data splitting or shuffling uncontrolled.
+- Reusing the same log directory for different experiments.
+- Changing package versions without recording them.
+- Assuming reproducibility is guaranteed because the code file did not change.
+
+---
 
 ## Summary
 
-- This note converts the lecture transcript into exam-focused revision points with conceptual flow, mechanism-level understanding, and practical reasoning.
-- Revise this along with nearby lectures in the same week to answer integrative questions that combine design choice, optimization behavior, and evaluation criteria.
+- Reproducibility means being able to rerun an experiment under the same conditions and obtain the same or statistically consistent result.
+- Deep learning makes this difficult because of randomness in initialization, data order, stochastic operations, and environment details.
+- Reproducibility is essential for **trustworthy comparison**, **reliable debugging**, and **sound conclusions**.
 
-## Exam-Style Cues
-
-- Define the core concept in one precise paragraph and state why it is needed in neural-network practice.
-- Explain the process/mechanism step-by-step using correct technical terms from the lecture.
-- Compare this concept with one close alternative and justify when each is preferred.
-- Mention one implementation or diagnostic checklist that improves reliability in real training workflows.
+**Bridge to the next note:** once experiments are reproducible, the next step is to organize them into a complete end-to-end workflow for professional model development.

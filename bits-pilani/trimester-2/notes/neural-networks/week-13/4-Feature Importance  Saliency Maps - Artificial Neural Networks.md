@@ -1,77 +1,137 @@
-# 4-Feature Importance  Saliency Maps - Artificial Neural Networks
+# Feature Importance and Saliency Maps - Artificial Neural Networks
 
 ## Learning Objectives
 
-1. Understand the central idea behind 4-Feature Importance  Saliency Maps - Artificial Neural Networks.
-2. Connect this concept to the broader sequence/evaluation/diagnostics/optimization/responsible-AI pipeline as applicable.
-3. Prepare exam-ready explanations, comparisons, and reasoning based on lecture flow.
-4. By the end of this video, you will be able to understand what feature importance means, how saliency maps work at a high level, and what their strengths and limitations are.
+By the end of this note, you should be able to:
+
+1. **Explain** what feature importance means in local and global settings.
+2. **Describe** the basic idea behind saliency maps in deep networks.
+3. **Recognize** the strengths and limitations of saliency-based explanations.
 
 ---
 
-## Core Concepts and Deep Notes
+## Why This Topic Matters
 
-- This topic from Week 13 builds conceptual depth around **4-Feature Importance  Saliency Maps** and should be revised as both a theory question and an application-oriented question.
-- Focus on three layers of understanding: definition, mechanism, and implication (how it changes model behavior, training stability, or decision quality).
-- In exam settings, score comes from linking intuition to formal reasoning: explain *why* the method exists, *how* it works, and *where* it can fail.
-- Treat this lecture as part of a system-level story: data properties -> model design -> optimization/training signals -> evaluation and reliability.
+Once we decide that model predictions need explanation, the most natural question is:
 
-## Detailed Lecture Notes
+**Which inputs mattered most?**
 
-- In this video, we begin our study of concrete explainability methods.
-- We start with feature importance and saliency maps the simplest and most intuitive ways to understand neural network predictions.
-- By the end of this video, you will be able to understand what feature importance means, how saliency maps work at a high level, and what their strengths and limitations are.
-- At its core, feature importance answers a simple question, which inputs mattered most?
-- Depending on the context, we may ask this globally, that is across the entire data set, or locally for a single prediction.
-- For example, which words influenced a sentiment prediction, or which pixels influenced an image classification.
-- In deep learning, especially for images, feature importance is visualized using saliency maps.
-- A saliency map assigns an important score to each input pixel, highlighting the regions that influence the prediction.
-- Most saliency methods rely on gradients.
-- If changing a pixel slightly causes a large change in the output, that pixel is considered important.
-- We visualize this sensitivity as a heat map over the input.
-- Saliency maps are extremely useful for debugging.
+That question appears in many forms:
 
-## Key Takeaways from the Lecture Transcription
+- Which words drove a sentiment prediction?
+- Which patient variables influenced a diagnosis score?
+- Which image regions pushed the model toward the label "cat" or "tumor"?
 
-- In this video, we begin our study of concrete explainability methods.
-- We start with feature importance and saliency maps the simplest and most intuitive ways to understand neural network predictions.
-- By the end of this video, you will be able to understand what feature importance means, how saliency maps work at a high level, and what their strengths and limitations are.
-- At its core, feature importance answers a simple question, which inputs mattered most?
-- Depending on the context, we may ask this globally, that is across the entire data set, or locally for a single prediction.
-- For example, which words influenced a sentiment prediction, or which pixels influenced an image classification.
-- In deep learning, especially for images, feature importance is visualized using saliency maps.
-- A saliency map assigns an important score to each input pixel, highlighting the regions that influence the prediction.
-- Most saliency methods rely on gradients.
-- If changing a pixel slightly causes a large change in the output, that pixel is considered important.
-- We visualize this sensitivity as a heat map over the input.
-- Saliency maps are extremely useful for debugging.
-- They help us see whether a model is focusing on meaningful regions or relying on spurious patterns.
-- However, they show influence, not the reasoning.
-- Saliency maps can be noisy and unstable.
-- They are not causal explanations and should not be treated as definitive evidence of understanding.
-- This is a recurring theme in explainability.
-- Now, let us summarize the main points of this video.
-- Feature importance identifies influential inputs.
-- Saliency maps extend this idea to deep networks.
-- They are intuitive and visual but limited.
-- Hence, they are best used as diagnostic tools, not proofs.
-- In the next video, we move beyond gradients to perturbation-based methods like line and shape, which take a very different approach to explanation.
+Feature importance tries to answer that question. In deep vision models, the answer is often shown using **saliency maps**.
 
-## Common Exam Pitfalls
+---
 
-- Writing only definitions without connecting to training behavior, model limitations, or practical consequences.
-- Mixing related concepts (for example: model capacity vs generalization, calibration vs accuracy, or explainability vs fairness) without clear boundaries.
-- Ignoring assumptions and failure modes; exam questions often test when a method breaks or needs modification.
-- Not using the terminology used in class (state, gradients, gates, uncertainty, diagnostics, reproducibility, bias metrics, etc.) in precise context.
+## What Feature Importance Means
 
-## Summary
+Feature importance identifies which parts of the input had the strongest influence on a prediction.
 
-- This note converts the lecture transcript into exam-focused revision points with conceptual flow, mechanism-level understanding, and practical reasoning.
-- Revise this along with nearby lectures in the same week to answer integrative questions that combine design choice, optimization behavior, and evaluation criteria.
+There are two common ways to ask for it:
 
-## Exam-Style Cues
+| Type | Main question | Example |
+|---|---|---|
+| **Global feature importance** | Which features matter across the dataset? | Which variables matter most overall in a loan model? |
+| **Local feature importance** | Which features mattered for this one prediction? | Why was this one applicant rejected? |
 
-- Define the core concept in one precise paragraph and state why it is needed in neural-network practice.
-- Explain the process/mechanism step-by-step using correct technical terms from the lecture.
-- Compare this concept with one close alternative and justify when each is preferred.
-- Mention one implementation or diagnostic checklist that improves reliability in real training workflows.
+For images, local importance is usually visualized spatially. Instead of a ranked list of features, we get a heatmap over pixels or regions.
+
+---
+
+## Saliency Map Intuition
+
+Saliency maps are usually built from gradients.
+
+The idea is simple:
+
+- If changing a pixel slightly causes a large change in the output score,
+- then that pixel is locally important for the prediction.
+
+So the model computes a sensitivity score for each input location, and we visualize the result as a heatmap.
+
+This makes saliency one of the most intuitive explanation methods in deep learning.
+
+---
+
+## High-Level Workflow
+
+1. Feed the input image into the network.
+2. Select the class score of interest.
+3. Compute how sensitive that score is to changes in each input pixel.
+4. Convert those sensitivities into a heatmap.
+5. Overlay the heatmap on the image to see where the network is focusing.
+
+This does not show the model's full reasoning, but it shows where influence is concentrated.
+
+---
+
+## A Simple Example
+
+Suppose an image classifier predicts **"dog."**
+
+- If the saliency map highlights the dog's face and body, that is encouraging.
+- If it highlights a background watermark that happened to appear in many dog images during training, that is a warning sign.
+
+This is why saliency maps are useful for debugging shortcut learning.
+
+---
+
+## Why Saliency Maps Are Useful
+
+Saliency maps are popular because they are:
+
+- **fast** to compute,
+- **visual** and easy to communicate,
+- **useful for debugging** spurious focus,
+- **helpful for local inspection** of one prediction at a time.
+
+They are often the first tool practitioners try when they want a quick explanation of a deep vision model.
+
+---
+
+## What Saliency Maps Cannot Tell Us
+
+Saliency maps have important limitations:
+
+- They show **influence**, not causal proof.
+- They can be **noisy** and hard to interpret.
+- Small choices in smoothing or normalization can change the map.
+- A visually appealing heatmap can still be misleading.
+
+So saliency maps should be treated as **diagnostic tools**, not as definitive evidence that the model truly understands the task.
+
+---
+
+## Common Misunderstandings
+
+- **"Highlighted pixels are the true cause of the prediction."**
+  Saliency reflects local sensitivity, not intervention-based causality.
+
+- **"One clean saliency map proves the model is valid."**
+  A single visualization is never enough for full validation.
+
+- **"Noisy saliency always means a bad model."**
+  Sometimes the noise comes from the method itself, not only from the model.
+
+---
+
+## Summary and Exam-Ready Takeaways
+
+- Feature importance asks which inputs influenced a prediction.
+- It can be studied globally across many examples or locally for one example.
+- Saliency maps are local visual explanations that usually rely on gradient-based sensitivity.
+- They are useful for debugging and identifying suspicious focus regions.
+- Saliency maps show influence, not full reasoning or causation, so they must be interpreted carefully.
+
+---
+
+## Bridge to the Next Note
+
+Saliency uses gradients to study sensitivity. The next family of methods takes a different route:
+
+**change the input, observe the output, and infer importance from the response.**
+
+That leads us to **perturbation-based methods such as LIME and SHAP**.

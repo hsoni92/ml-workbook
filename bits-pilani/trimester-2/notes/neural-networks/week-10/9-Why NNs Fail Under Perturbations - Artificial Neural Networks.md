@@ -1,78 +1,132 @@
-# 9-Why NNs Fail Under Perturbations - Artificial Neural Networks
+# Why NNs Fail Under Perturbations - Artificial Neural Networks
 
 ## Learning Objectives
 
-1. Understand the central idea behind 9-Why NNs Fail Under Perturbations - Artificial Neural Networks.
-2. Connect this concept to the broader sequence/evaluation/diagnostics/optimization/responsible-AI pipeline as applicable.
-3. Prepare exam-ready explanations, comparisons, and reasoning based on lecture flow.
-4. In this video, we will discuss why neural networks fail under perturbations or small changes in the inputs.
+By the end of this note, you should be able to:
+
+1. Define **robustness** in the context of neural networks.
+2. Explain why small input changes can cause large prediction changes.
+3. Distinguish **robustness** from **generalization**.
+4. Justify why perturbation-based tests are a necessary evaluation tool.
 
 ---
 
-## Core Concepts and Deep Notes
+## What Robustness Asks
 
-- This topic from Week 10 builds conceptual depth around **9-Why NNs Fail Under Perturbations** and should be revised as both a theory question and an application-oriented question.
-- Focus on three layers of understanding: definition, mechanism, and implication (how it changes model behavior, training stability, or decision quality).
-- In exam settings, score comes from linking intuition to formal reasoning: explain *why* the method exists, *how* it works, and *where* it can fail.
-- Treat this lecture as part of a system-level story: data properties -> model design -> optimization/training signals -> evaluation and reliability.
+A robust model should remain reasonably stable when the input is changed **slightly** but its underlying meaning has not changed.
 
-## Detailed Lecture Notes
+Examples of such small changes include:
 
-- In this video, we will discuss why neural networks fail under perturbations or small changes in the inputs.
-- By the end of this video, you will be able to explain what robustness means, understand why small input changes can cause large changes in model predictions and see why perturbation-based evaluation is necessary.
-- The focus here is not on fixes but on understanding why failures happen.
-- Let's start with a simple but important question.
-- In real world, inputs are rarely clean or exact.
-- Measurements are noisy, sensors are imperfect and data naturally varies.
-- So, the question is, should a very small change in input lead to a completely different prediction?
-- Intuitively, we would expect a reliable model to be stable under such small changes.
-- A common misconception is that high accuracy guarantees reliable behavior.
-- In practice, a neural network can achieve excellent test accuracy and still behave in a very fragile way.
-- It can be accurate and even well calibrated, yet still fail when inputs are slightly perturbed.
-- This tells us that robustness is a separate property that must be evaluated explicitly.
+- noise,
+- blur,
+- small measurement shifts,
+- natural feature variation.
 
-## Key Takeaways from the Lecture Transcription
+If the input is semantically the same, we usually expect the prediction to remain similar.
 
-- In this video, we will discuss why neural networks fail under perturbations or small changes in the inputs.
-- By the end of this video, you will be able to explain what robustness means, understand why small input changes can cause large changes in model predictions and see why perturbation-based evaluation is necessary.
-- The focus here is not on fixes but on understanding why failures happen.
-- Let's start with a simple but important question.
-- In real world, inputs are rarely clean or exact.
-- Measurements are noisy, sensors are imperfect and data naturally varies.
-- So, the question is, should a very small change in input lead to a completely different prediction?
-- Intuitively, we would expect a reliable model to be stable under such small changes.
-- If a model changes its prediction drastically under such changes, that indicates a robustness problem.
-- For example, in this particular case, for the original image, the model is 85% confident that it is a polar bear.
-- But with small perturbation, now the model is 100% confident that it is a dishwasher.
-- Such a drastic change in the labels.
-- Why do neural networks fail under small perturbations?
-- One reason is that neural networks learn highly non-linear decision boundaries.
-- Another reason is the high dimensionality of input spaces, where small changes along certain directions can have a large effect.
-- Finally, standard training procedures optimize average performance and not the local stability.
-- For trustworthy systems, we need both of them.
-- Standard test sets evaluate performance on individual data points.
-- They do not probe what happens in the neighborhood around those points.
-- Perturbation-based tests explicitly examine local behavior and reveal hidden fragility.
-- Without such tests, robustness issues often remain invisible.
-- So far, we have built intuition for why neural networks can fail under small perturbations.
-- In the next video, we will move from intuition to practice.
-- We will apply controlled perturbations to inputs, observe how predictions change and visualize model sensitivity.
+---
 
-## Common Exam Pitfalls
+## Why This Topic Matters
 
-- Writing only definitions without connecting to training behavior, model limitations, or practical consequences.
-- Mixing related concepts (for example: model capacity vs generalization, calibration vs accuracy, or explainability vs fairness) without clear boundaries.
-- Ignoring assumptions and failure modes; exam questions often test when a method breaks or needs modification.
-- Not using the terminology used in class (state, gradients, gates, uncertainty, diagnostics, reproducibility, bias metrics, etc.) in precise context.
+A common misconception is that high test accuracy guarantees reliable behavior. In practice, a neural network can be:
 
-## Summary
+- accurate,
+- even reasonably calibrated,
+- and still **fragile** under tiny perturbations.
 
-- This note converts the lecture transcript into exam-focused revision points with conceptual flow, mechanism-level understanding, and practical reasoning.
-- Revise this along with nearby lectures in the same week to answer integrative questions that combine design choice, optimization behavior, and evaluation criteria.
+This shows that **robustness is a separate evaluation property**.
 
-## Exam-Style Cues
+Standard test sets evaluate single examples as they are given. They usually do **not** test what happens in the neighborhood around each example.
 
-- Define the core concept in one precise paragraph and state why it is needed in neural-network practice.
-- Explain the process/mechanism step-by-step using correct technical terms from the lecture.
-- Compare this concept with one close alternative and justify when each is preferred.
-- Mention one implementation or diagnostic checklist that improves reliability in real training workflows.
+---
+
+## What Counts as a Perturbation
+
+In this module, a perturbation means a **small realistic change** to the input that should not change the true label.
+
+Examples:
+
+- slight sensor noise,
+- small pixel noise in an image,
+- mild feature jitter in tabular data,
+- minor measurement variation.
+
+So the key issue is not whether the input changed at all. The key issue is whether the change should have changed the model's decision.
+
+---
+
+## Why Neural Networks Fail Under Perturbations
+
+| Cause | Mechanism | Outcome |
+| --- | --- | --- |
+| **Highly nonlinear decision boundaries** | Small input movement can cross a boundary | Prediction flips |
+| **High-dimensional input spaces** | Tiny changes along many directions can accumulate | Confidence changes unexpectedly |
+| **Training objective** | Standard training optimizes average accuracy, not local stability | Hidden fragility remains |
+| **Overconfidence** | Model may stay very certain even when wrong | Unsafe behavior |
+
+The transcript emphasizes that even a tiny perturbation can produce a large change in the model's **logits**, which can then flip the predicted label.
+
+---
+
+## A Concrete Example
+
+The transcript gives a vivid illustration:
+
+- on the original input, the model is **85% confident** that an image is a **polar bear**,
+- after a small perturbation, it becomes **100% confident** that it is a **dishwasher**.
+
+The important point is not the exact classes. The important point is the combination of:
+
+- **very small input change**,
+- **drastic label flip**,
+- **high confidence while wrong**.
+
+That combination is especially dangerous in real systems.
+
+---
+
+## Robustness vs Generalization
+
+| Property | Main Question | Can One Be Good While the Other Is Bad? |
+| --- | --- | --- |
+| **Generalization** | Does the model work on new examples from the same broad distribution? | Yes |
+| **Robustness** | Is the model stable around a specific example under small perturbations? | Yes |
+
+A model can generalize well on standard test data and still be locally unstable.
+
+So for trustworthy deployment, we need **both**:
+
+- good generalization,
+- good robustness.
+
+---
+
+## Why Standard Evaluation Misses This
+
+A standard test set typically checks only the clean input:
+
+```text
+Clean input -> prediction looks correct
+```
+
+Robustness evaluation checks the nearby neighborhood:
+
+```text
+Clean input -> correct prediction
+Small perturbation -> same meaning
+Model output changes sharply -> robustness failure
+```
+
+Without perturbation-based tests, this kind of fragility can remain invisible.
+
+---
+
+## Summary and Exam-Ready Takeaways
+
+- **Robustness** asks whether predictions remain stable under small, label-preserving input changes.
+- Neural networks may fail because of **nonlinear boundaries**, **high-dimensional inputs**, and training that optimizes **average accuracy rather than local stability**.
+- A model can be **accurate and calibrated** yet still fragile.
+- **Robustness** and **generalization** are related but distinct ideas.
+- Perturbation-based evaluation is necessary because standard test sets do not probe local behavior around each sample.
+
+**Bridge to next topic:** After understanding why perturbation failures happen, the next step is to test them directly using **perturbation tests and sensitivity curves**.
