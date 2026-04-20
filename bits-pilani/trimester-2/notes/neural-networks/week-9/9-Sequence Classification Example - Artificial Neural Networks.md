@@ -1,78 +1,136 @@
-# 9-Sequence Classification Example - Artificial Neural Networks
+# Sequence Classification Example - Artificial Neural Networks
 
 ## Learning Objectives
 
-1. Understand the central idea behind 9-Sequence Classification Example - Artificial Neural Networks.
-2. Connect this concept to the broader sequence/evaluation/diagnostics/optimization/responsible-AI pipeline as applicable.
-3. Prepare exam-ready explanations, comparisons, and reasoning based on lecture flow.
-4. In this video, we will look at a concrete example of sequence classification.
+By the end of this note you should be able to:
+
+1. **Define** what a **sequence classification** task is.
+2. **Explain** how a sequence model builds context step by step.
+3. **Show** why the final prediction depends on the **whole sequence**, not isolated elements.
+4. **Explain** why **LSTM** and **GRU** often outperform plain RNNs on such tasks.
 
 ---
 
-## Core Concepts and Deep Notes
+## What Is Sequence Classification?
 
-- This topic from Week 9 builds conceptual depth around **9-Sequence Classification Example** and should be revised as both a theory question and an application-oriented question.
-- Focus on three layers of understanding: definition, mechanism, and implication (how it changes model behavior, training stability, or decision quality).
-- In exam settings, score comes from linking intuition to formal reasoning: explain *why* the method exists, *how* it works, and *where* it can fail.
-- Treat this lecture as part of a system-level story: data properties -> model design -> optimization/training signals -> evaluation and reliability.
+In sequence classification:
 
-## Detailed Lecture Notes
+- the **input** is a sequence,
+- but the **output** is a **single label or value**.
 
-- In this video, we will look at a concrete example of sequence classification.
-- By the end of this video, you will be able to understand what sequence classification means, how sequence models such as RNNs, LSTMs or GRUs, process data step by step, and how hidden states accumulate information across time to make a final prediction.
-- Let's begin by clarifying what we mean by sequence classification.
-- In sequence classification, the input is a sequence of elements, but the output is a single label or value.
-- The prediction depends on the entire sequence, not just on individual elements.
-- Common examples include sentiment classification of text, activity recognition from sensor data, or classifying a time series into different patterns.
-- In all these cases, understanding the full sequence is essential to making the correct decision.
-- Let's make this concrete with a simple and familiar example.
-- Consider a sentence sentiment classification task where the goal is to determine whether a sentence expresses positive or negative sentiment.
-- Suppose the input sentence is, "The movie was not good." This sentence is processed as a sequence of words, one word at a time.
-- Each word represents a time step in the sequence and the model processes the sentence from left to right.
-- The key idea here is that the sentiment of the sentence is not determined by any single word in isolation.
+Examples include:
 
-## Key Takeaways from the Lecture Transcription
+- **sentiment classification** of a sentence,
+- **activity recognition** from sensor readings,
+- **time-series classification** for patterns or events.
 
-- In this video, we will look at a concrete example of sequence classification.
-- By the end of this video, you will be able to understand what sequence classification means, how sequence models such as RNNs, LSTMs or GRUs, process data step by step, and how hidden states accumulate information across time to make a final prediction.
-- Let's begin by clarifying what we mean by sequence classification.
-- In sequence classification, the input is a sequence of elements, but the output is a single label or value.
-- The prediction depends on the entire sequence, not just on individual elements.
-- Common examples include sentiment classification of text, activity recognition from sensor data, or classifying a time series into different patterns.
-- In all these cases, understanding the full sequence is essential to making the correct decision.
-- Let's make this concrete with a simple and familiar example.
-- As the model As the model processes movie and then was, the hidden state gradually accumulates context about the sentence.
-- Up to this point, the sentence appears mostly neutral.
-- But when the model encounters the word not, something very important happens.
-- The hidden state is updated to reflect the presence of negation.
-- This information must be remembered because it will affect how later words are interpreted.
-- Now, consider what happens when the model processes the final word good.
-- On its own, the word good usually indicates positive sentiment.
-- However, in this sentence, the correct interpretation depends on remembering the earlier word not.
-- In our example, these gates helps to ensure that the word not is remembered until it is needed to interpret good correctly.
-- As a result, gated models perform much better on tasks involving long-range dependencies.
-- Now, let us summarize the main points of this video.
-- Sequence classification involves mapping an entire sequence to a single output.
-- Sequence models process inputs one step at a time and hidden states act as a memory that accumulates information over time.
-- The final hidden state is used to make a sequence-level prediction.
-- LSTM and GRU architectures improve this process by enabling better retention of important contexts across long sequences.
-- In the next video, we will step back and examine the limitations of recurrent models and understand why even LSTMs and GRUs have drawbacks that motivated the development of attention-based and transformer architectures.
+The important point is that the prediction must be based on the **entire ordered sequence**.
 
-## Common Exam Pitfalls
+---
 
-- Writing only definitions without connecting to training behavior, model limitations, or practical consequences.
-- Mixing related concepts (for example: model capacity vs generalization, calibration vs accuracy, or explainability vs fairness) without clear boundaries.
-- Ignoring assumptions and failure modes; exam questions often test when a method breaks or needs modification.
-- Not using the terminology used in class (state, gradients, gates, uncertainty, diagnostics, reproducibility, bias metrics, etc.) in precise context.
+## Why This Is Not Ordinary Classification
 
-## Summary
+In standard classification on fixed vectors, each feature is usually treated as part of a single static input. In sequence classification, the meaning emerges **over time** as the model reads the sequence.
 
-- This note converts the lecture transcript into exam-focused revision points with conceptual flow, mechanism-level understanding, and practical reasoning.
-- Revise this along with nearby lectures in the same week to answer integrative questions that combine design choice, optimization behavior, and evaluation criteria.
+So the model must decide:
 
-## Exam-Style Cues
+- what to remember,
+- what to ignore,
+- and how earlier context changes the interpretation of later elements.
 
-- Define the core concept in one precise paragraph and state why it is needed in neural-network practice.
-- Explain the process/mechanism step-by-step using correct technical terms from the lecture.
-- Compare this concept with one close alternative and justify when each is preferred.
-- Mention one implementation or diagnostic checklist that improves reliability in real training workflows.
+---
+
+## Worked Example: Sentiment Classification
+
+Consider the sentence:
+
+**"The movie was not good."**
+
+If the model treats words independently, the word **"good"** may dominate and produce a positive prediction. But the true sentiment depends on remembering the earlier negation **"not"**.
+
+This makes sequence classification a memory problem as much as a classification problem.
+
+---
+
+## Step-by-Step Processing Intuition
+
+```text
+t1: "The"   -> little sentiment information
+t2: "movie" -> topic context accumulates
+t3: "was"   -> still mostly neutral
+t4: "not"   -> critical negation cue must be retained
+t5: "good"  -> interpreted using earlier context
+
+final state -> classifier -> negative
+```
+
+The key step is not merely seeing the word **"good"**, but interpreting it in light of the earlier word **"not"**.
+
+---
+
+## Typical Sequence Classification Pipeline
+
+| Stage | Role | What can go wrong |
+|---|---|---|
+| **Embedding / representation** | Convert tokens or signals into vectors | Weak representation quality |
+| **Sequence encoder** | Accumulate context over time | Important earlier context may fade |
+| **Sequence summary** | Produce one representation for the full sequence | Final summary may miss decisive information |
+| **Classifier head** | Map summary to a final label | Can be confidently wrong if context is poor |
+
+This pipeline helps you organize exam answers and practical implementations alike.
+
+---
+
+## Why Hidden States Matter
+
+In an RNN-style model, the hidden state acts as a running summary of the sequence. For sequence classification, the final prediction is typically made from:
+
+- the **final hidden state**, or
+- a pooled summary of hidden states.
+
+So the model succeeds only if the summary still contains the information most relevant to the final decision.
+
+---
+
+## Why LSTM and GRU Often Help
+
+Plain RNNs may forget earlier but important signals, especially in longer sequences. LSTM and GRU improve this by using gates that help the model:
+
+- keep useful context,
+- discard irrelevant details,
+- and preserve cues until they are needed later.
+
+In the example above, gating helps ensure that **"not"** still influences the interpretation of **"good"**.
+
+---
+
+## Important Distinction
+
+Do not confuse:
+
+- **sequence classification** with
+- **sequence labeling**.
+
+In sequence classification, the entire sequence maps to **one output**.
+In sequence labeling, each element in the sequence gets **its own output label**.
+
+That difference matters for architecture design and evaluation.
+
+---
+
+## Common Misconceptions
+
+- **The final token determines the class.** Often false; earlier context may reverse the meaning.
+- **If the model sees all words, it understands the sentence.** Seeing is not enough; it must retain and integrate the right information.
+- **Accuracy alone is enough to judge the model.** You should also inspect failure patterns, especially on negation, long-range context, or rare sequence structures.
+
+---
+
+## Exam-Ready Takeaways
+
+- Sequence classification maps an **entire sequence** to a **single output**.
+- The final decision depends on how well the model accumulates and preserves context over time.
+- Hidden states or pooled summaries must carry the relevant information needed for the final label.
+- LSTM and GRU usually improve sequence classification by retaining important cues better than plain RNNs.
+
+**Bridge to the next note:** even with LSTM and GRU, recurrent models still have important drawbacks. That is why we next study the **limitations of RNN-based models** more broadly.

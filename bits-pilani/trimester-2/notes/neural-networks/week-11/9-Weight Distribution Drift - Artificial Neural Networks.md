@@ -1,78 +1,116 @@
-# 9-Weight Distribution Drift - Artificial Neural Networks
+# Weight Distribution Drift - Artificial Neural Networks
 
 ## Learning Objectives
 
-1. Understand the central idea behind 9-Weight Distribution Drift - Artificial Neural Networks.
-2. Connect this concept to the broader sequence/evaluation/diagnostics/optimization/responsible-AI pipeline as applicable.
-3. Prepare exam-ready explanations, comparisons, and reasoning based on lecture flow.
-4. In this video, we will look at weight distribution and track how they change during the training.
+By the end of this note, you should be able to:
+
+1. Explain why monitoring **weight distributions** gives insight beyond loss curves.
+2. Describe what **stable** weight behavior looks like across layers and across time.
+3. Interpret weight drift as a parameter-level diagnostic signal.
 
 ---
 
-## Core Concepts and Deep Notes
+## Why Look at Weights?
 
-- This topic from Week 11 builds conceptual depth around **9-Weight Distribution Drift** and should be revised as both a theory question and an application-oriented question.
-- Focus on three layers of understanding: definition, mechanism, and implication (how it changes model behavior, training stability, or decision quality).
-- In exam settings, score comes from linking intuition to formal reasoning: explain *why* the method exists, *how* it works, and *where* it can fail.
-- Treat this lecture as part of a system-level story: data properties -> model design -> optimization/training signals -> evaluation and reliability.
+After gradients and activations, this lesson moves one level deeper into the model: the parameters themselves.
 
-## Detailed Lecture Notes
+The key motivation is simple:
 
-- In this video, we will look at weight distribution and track how they change during the training.
-- So far, we have examined gradient flow and activation behavior.
-- In this video, we move one level deeper to the model parameters.
-- We will study how weight distributions differ across the layers, how weights evolve during training, and what stable versus unstable weight behavior looks like.
-- The key question here is why should we monitor weight distributions?
-- Weight distributions reveal whether learning is balanced across layers, whether weights are collapsing or exploding, whether some layers are effectively untrained.
-- These issues are often invisible from loss curves alone.
-- We will import some standard packages and libraries and check the seed for reproducibility.
-- For this case, we will use a simple classification dataset.
-- We are creating a binary dataset here.
-- And for the model, we will use a moderately deep forward network.
-- So you can look at the model architecture here.
+> if learning is happening, the parameters should change in a meaningful and controlled way.
 
-## Key Takeaways from the Lecture Transcription
+Weight distributions help answer questions such as:
 
-- In this video, we will look at weight distribution and track how they change during the training.
-- So far, we have examined gradient flow and activation behavior.
-- In this video, we move one level deeper to the model parameters.
-- We will study how weight distributions differ across the layers, how weights evolve during training, and what stable versus unstable weight behavior looks like.
-- The key question here is why should we monitor weight distributions?
-- Weight distributions reveal whether learning is balanced across layers, whether weights are collapsing or exploding, whether some layers are effectively untrained.
-- These issues are often invisible from loss curves alone.
-- We will import some standard packages and libraries and check the seed for reproducibility.
-- And for the model, we will use a moderately deep forward network.
-- So you can look at the model architecture here.
-- Here we are going to use a stable configuration to train so that we can observe the normal weight behavior.
-- So this is how the training looks like.
-- We are using a learning rate of 0.01 and we will train the model for 20 epochs.
-- Now we will first examine how the weight distributions look like across the layers at final epoch.
-- So let's focus on this graph now.
-- In this plot, we observe similar weight distributions across the layers, no extreme spread or collapse, and no layer dominating in magnitude.
-- In this plot, the weight distributions remain largely stable over time.
-- This suggests learning updates are controlled, no runway growth or collapse, and optimization is well behaved.
-- Now, let us summarize the main points of this video.
-- Weight distributions provide insight beyond the loss curves.
-- Stable distributions indicate healthy optimization.
-- And monitoring weights helps to catch silent instabilities early.
-- So, in this video, we have seen weight distributions show where the learning accumulates.
-- In the next video, we quantify this using weight norms and training signals.
+- Are all layers learning in a balanced way?
+- Are some layers effectively untrained?
+- Are weights growing in a stable way or drifting toward instability?
 
-## Common Exam Pitfalls
+These issues may not be obvious from the loss alone.
 
-- Writing only definitions without connecting to training behavior, model limitations, or practical consequences.
-- Mixing related concepts (for example: model capacity vs generalization, calibration vs accuracy, or explainability vs fairness) without clear boundaries.
-- Ignoring assumptions and failure modes; exam questions often test when a method breaks or needs modification.
-- Not using the terminology used in class (state, gradients, gates, uncertainty, diagnostics, reproducibility, bias metrics, etc.) in precise context.
+---
 
-## Summary
+## What the Lesson Examines
 
-- This note converts the lecture transcript into exam-focused revision points with conceptual flow, mechanism-level understanding, and practical reasoning.
-- Revise this along with nearby lectures in the same week to answer integrative questions that combine design choice, optimization behavior, and evaluation criteria.
+The transcript uses a moderately deep feed-forward network and trains it with a stable configuration so that we can first understand **healthy behavior**.
 
-## Exam-Style Cues
+Two views are emphasized:
 
-- Define the core concept in one precise paragraph and state why it is needed in neural-network practice.
-- Explain the process/mechanism step-by-step using correct technical terms from the lecture.
-- Compare this concept with one close alternative and justify when each is preferred.
-- Mention one implementation or diagnostic checklist that improves reliability in real training workflows.
+1. **Weight distributions across layers at the final epoch**
+2. **Weight distribution evolution of a layer across time**
+
+This mirrors the same diagnostic logic used earlier for gradients and activations.
+
+---
+
+## Healthy Weight Distributions Across Layers
+
+At the final epoch, the plot shows:
+
+- similar weight distributions across layers,
+- no extreme spread,
+- no obvious collapse,
+- and no single layer dominating in magnitude.
+
+### Interpretation
+
+This suggests that learning is **balanced across the network**.
+
+If one layer had drastically larger or smaller weights than the rest, that could indicate that optimization pressure is uneven or that some part of the model is behaving abnormally.
+
+---
+
+## Healthy Weight Evolution Over Time
+
+The transcript then tracks how one layer's weight distribution changes over multiple epochs.
+
+In the healthy run:
+
+- the distribution remains largely stable,
+- changes are gradual rather than abrupt,
+- and there is no runaway growth or collapse.
+
+### Why this matters
+
+Learning should change parameters, but it should do so in a **controlled** way. Weight drift is expected during training. The issue is not drift itself, but **unstable drift**.
+
+So a good mental model is:
+
+- **some movement** is healthy,
+- **wild movement** is suspicious,
+- **no movement at all** may mean under-training or a frozen component.
+
+---
+
+## Why Weight Diagnostics Complement Other Signals
+
+Gradient diagnostics tell us whether learning signals are flowing.
+
+Activation diagnostics tell us whether neurons are responding meaningfully.
+
+Weight diagnostics tell us whether those signals are producing **actual parameter change**.
+
+So weights give a useful parameter-level confirmation of what the training process is doing internally.
+
+---
+
+## Practical Interpretation
+
+When monitoring weight distributions, ask:
+
+1. Do the layers show broadly balanced parameter scales?
+2. Are the distributions stable over time?
+3. Is any layer collapsing, exploding, or staying oddly unchanged?
+
+If the answers look healthy, optimization is likely well behaved.
+
+If not, the weight distributions can expose silent instability before the final performance metrics become obviously bad.
+
+---
+
+## Key Takeaways
+
+- Weight distributions provide visibility into how learning accumulates inside the model.
+- Stable distributions across layers suggest balanced learning.
+- Stable evolution over time suggests controlled optimization.
+- Monitoring weights helps catch silent problems that loss curves alone may miss.
+
+**Bridge to the next topic:** weight distributions show the full parameter picture. The next lesson compresses that picture into a simpler signal: **weight norms**.

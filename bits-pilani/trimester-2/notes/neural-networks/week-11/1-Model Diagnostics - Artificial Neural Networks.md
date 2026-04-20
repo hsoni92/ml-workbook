@@ -1,77 +1,106 @@
-# 1-Model Diagnostics - Artificial Neural Networks
+# Model Diagnostics - Artificial Neural Networks
 
 ## Learning Objectives
 
-1. Understand the central idea behind 1-Model Diagnostics - Artificial Neural Networks.
-2. Connect this concept to the broader sequence/evaluation/diagnostics/optimization/responsible-AI pipeline as applicable.
-3. Prepare exam-ready explanations, comparisons, and reasoning based on lecture flow.
+By the end of this module, you should be able to:
+
+1. Explain the difference between **evaluating** a model and **diagnosing** a model.
+2. Identify the three main internal signals used for debugging deep networks: **gradients**, **activations**, and **parameters**.
+3. Describe why deep neural networks often fail **silently** even when code executes without errors.
+4. Build a structured mindset for moving from a visible symptom to a likely internal cause.
 
 ---
 
-## Core Concepts and Deep Notes
+## Why This Module Matters
 
-- This topic from Week 11 builds conceptual depth around **1-Model Diagnostics** and should be revised as both a theory question and an application-oriented question.
-- Focus on three layers of understanding: definition, mechanism, and implication (how it changes model behavior, training stability, or decision quality).
-- In exam settings, score comes from linking intuition to formal reasoning: explain *why* the method exists, *how* it works, and *where* it can fail.
-- Treat this lecture as part of a system-level story: data properties -> model design -> optimization/training signals -> evaluation and reliability.
+In the previous module, the main question was: **How good is the model?**
 
-## Detailed Lecture Notes
+In this module, the question becomes: **Why is the model behaving this way?**
 
-- In this module, we shift our focus from evaluating models to diagnosing them.
-- Instead of asking whether a neural network is performing well, we now ask a deeper question.
-- Why is it behaving the way it is?
-- This module is about opening the black box.
-- In the previous module, we studied evaluation.
-- We learned how to measure accuracy, calibration, robustness and uncertainty.
-- But evaluation only tells us what went wrong.
-- Diagnostic tells us where and why things went wrong inside the module.
-- Debugging neural networks is fundamentally difficult.
-- They are deep, highly non-linear systems with many interacting components.
-- Failures are often silent.
-- Training runs, but learning does not happen.
+That shift is important. A model may show poor accuracy, unstable loss, or weak generalization, but those external metrics only tell us that something is wrong. They do not tell us **where** the problem is or **what mechanism** caused it.
 
-## Key Takeaways from the Lecture Transcription
+Neural networks are difficult to debug because they are:
 
-- In this module, we shift our focus from evaluating models to diagnosing them.
-- Instead of asking whether a neural network is performing well, we now ask a deeper question.
-- Why is it behaving the way it is?
-- This module is about opening the black box.
-- In the previous module, we studied evaluation.
-- We learned how to measure accuracy, calibration, robustness and uncertainty.
-- But evaluation only tells us what went wrong.
-- Diagnostic tells us where and why things went wrong inside the module.
-- As a result, surface level metrics rarely reveal the true cause.
-- Many common training failures look similar from the outside.
-- Training becomes unstable.
-- Loss may plateau, explode or behave unpredictably.
-- Some layers might even stop learning.
-- But these failures are not random.
-- They leave internal signals.
-- Our goal is to learn how to read those signals.
-- Studying vanishing and exploding gradients.
-- We then move to activation level pathologies such as dead-ray-loose and saturation.
-- Next, we analyze parameter behavior using weight distributions, norms, and batch norm statistics.
-- Finally, we bring everything together through a structured debugging workflow and practical tools like TensorBoard.
-- This module is intentionally practice-driven.
-- Most lessons are taught through notebooks, visualizations, and real failure patterns.
-- The goal is not memorization, but diagnostic intuition.
-- In the next video, we will explore why gradient flow matters and how it fails in deep networks.
+- **deep**, with many interacting layers,
+- **non-linear**, so small internal changes can have large effects,
+- and often **silent in failure**, meaning training appears to run even when learning has effectively stopped.
 
-## Common Exam Pitfalls
+So model diagnostics is about opening the black box and learning how to read the internal signals left behind by failure.
 
-- Writing only definitions without connecting to training behavior, model limitations, or practical consequences.
-- Mixing related concepts (for example: model capacity vs generalization, calibration vs accuracy, or explainability vs fairness) without clear boundaries.
-- Ignoring assumptions and failure modes; exam questions often test when a method breaks or needs modification.
-- Not using the terminology used in class (state, gradients, gates, uncertainty, diagnostics, reproducibility, bias metrics, etc.) in precise context.
+---
 
-## Summary
+## Evaluation vs Diagnostics
 
-- This note converts the lecture transcript into exam-focused revision points with conceptual flow, mechanism-level understanding, and practical reasoning.
-- Revise this along with nearby lectures in the same week to answer integrative questions that combine design choice, optimization behavior, and evaluation criteria.
+This is the central contrast of the module:
 
-## Exam-Style Cues
+| Question | Evaluation | Diagnostics |
+|---|---|---|
+| Main goal | Measure performance | Explain behavior |
+| Typical signals | Accuracy, loss, calibration, robustness | Gradients, activations, weights, normalization statistics |
+| What it tells you | **What** went wrong | **Where** and **why** it went wrong |
 
-- Define the core concept in one precise paragraph and state why it is needed in neural-network practice.
-- Explain the process/mechanism step-by-step using correct technical terms from the lecture.
-- Compare this concept with one close alternative and justify when each is preferred.
-- Mention one implementation or diagnostic checklist that improves reliability in real training workflows.
+A useful way to remember this:
+
+- **Evaluation** is outcome-focused.
+- **Diagnostics** is mechanism-focused.
+
+Both are necessary, but diagnostics becomes essential once a training run looks suspicious and the loss curve alone is no longer enough.
+
+---
+
+## The Three Diagnostic Levels
+
+Throughout this module, we inspect neural networks at three internal levels.
+
+### 1. Gradients
+
+Gradients tell us whether the learning signal is actually flowing backward through the network.
+
+- If gradients vanish, earlier layers learn very slowly.
+- If gradients explode, updates become unstable.
+- If some layers receive almost no gradient, training may look normal from the outside while part of the model is effectively frozen.
+
+### 2. Activations
+
+Activations tell us whether neurons are responding meaningfully to data.
+
+- ReLU units can become permanently inactive.
+- Sigmoid and tanh units can saturate near their limits.
+- A network may therefore stop learning not because the optimizer failed, but because the neurons stopped operating in useful regimes.
+
+### 3. Parameters and Internal Statistics
+
+Parameters reveal whether the model is actually changing during training.
+
+- Weight distributions and norms show whether learning is balanced across layers.
+- BatchNorm running statistics reveal hidden instability in internal feature distributions.
+- Frozen or abnormal parameters often expose configuration mistakes that do not appear clearly in metrics.
+
+---
+
+## Module Roadmap
+
+This module follows a clear progression:
+
+1. Start with **gradient flow**, because gradients are the most direct signal of whether learning is happening.
+2. Move to **activation pathologies**, such as dead ReLUs and saturation.
+3. Examine **parameter behavior**, including weight drift, norms, BatchNorm statistics, and anomalies.
+4. Bring everything together into a **structured debugging workflow** supported by tools like TensorBoard and experiment tracking.
+
+This makes the module intentionally practice-driven. The point is not just to memorize definitions, but to build **diagnostic intuition**.
+
+---
+
+## Big Picture Takeaway
+
+When a neural network fails, the cause is often visible inside the model before it becomes obvious in the final metrics.
+
+The goal of this module is therefore simple:
+
+- do not guess,
+- do not rely only on loss curves,
+- and do not treat every failure as random.
+
+Instead, inspect the internal signals, form a hypothesis, and verify it with evidence.
+
+**Bridge to the next topic:** we begin with the most fundamental internal signal of all, **gradient flow**, and why it is often the first thing to inspect in a deep network.

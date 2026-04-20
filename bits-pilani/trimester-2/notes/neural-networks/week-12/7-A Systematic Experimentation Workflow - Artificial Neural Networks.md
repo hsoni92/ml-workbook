@@ -1,78 +1,147 @@
-# 7-A Systematic Experimentation Workflow - Artificial Neural Networks
+# A Systematic Experimentation Workflow - Artificial Neural Networks
 
 ## Learning Objectives
 
-1. Understand the central idea behind 7-A Systematic Experimentation Workflow - Artificial Neural Networks.
-2. Connect this concept to the broader sequence/evaluation/diagnostics/optimization/responsible-AI pipeline as applicable.
-3. Prepare exam-ready explanations, comparisons, and reasoning based on lecture flow.
-4. By the end of this video, you will be able to describe a complete experimentation workflow from defining a problem to tuning to selecting the final model in a reproducible and trustworthy way.
+By the end of this note, you should be able to:
+
+1. **Describe** a complete workflow for training neural networks in a disciplined way.
+2. **Explain** why a baseline model is required before tuning begins.
+3. **Distinguish** the roles of validation and test evaluation in the workflow.
+4. **Argue** why structured experimentation is an engineering necessity, not optional process overhead.
 
 ---
 
-## Core Concepts and Deep Notes
+## Why Workflow Matters
 
-- This topic from Week 12 builds conceptual depth around **7-A Systematic Experimentation Workflow** and should be revised as both a theory question and an application-oriented question.
-- Focus on three layers of understanding: definition, mechanism, and implication (how it changes model behavior, training stability, or decision quality).
-- In exam settings, score comes from linking intuition to formal reasoning: explain *why* the method exists, *how* it works, and *where* it can fail.
-- Treat this lecture as part of a system-level story: data properties -> model design -> optimization/training signals -> evaluation and reliability.
+This lecture brings the full module together. The point is no longer to discuss isolated concepts such as learning rate or batch size separately. The point is to understand how model development is done **professionally**.
 
-## Detailed Lecture Notes
+Deep learning systems are:
 
-- In this video, we bring everything in this module together.
-- We are no longer talking about individual techniques like learning rate or batch size.
-- We are talking about how neural network training is done professionally as an engineering discipline.
-- The goal is not to train a model once but to build a process that reliably produces good models.
-- By the end of this video, you will be able to describe a complete experimentation workflow from defining a problem to tuning to selecting the final model in a reproducible and trustworthy way.
-- Deep learning systems are highly stochastic, highly sensitive to hyperparameters and extremely expensive to train.
-- If you do not impose structure, two runs of the same code can give you two very different models.
-- Without a workflow, you cannot debug, compare or improve models in a reliable way.
-- Everything starts with defining what problem you are solving.
-- What does success look like?
-- If you do not define these clearly, all tuning and experimentation becomes noise.
-- Before you start tuning, you always build a simple baseline.
+- highly stochastic,
+- highly sensitive to hyperparameters,
+- and often expensive to train.
 
-## Key Takeaways from the Lecture Transcription
+Because of that, training once and getting a good result is not enough. What matters is building a **process** that can reliably produce, compare, and justify good models.
 
-- In this video, we bring everything in this module together.
-- We are no longer talking about individual techniques like learning rate or batch size.
-- We are talking about how neural network training is done professionally as an engineering discipline.
-- The goal is not to train a model once but to build a process that reliably produces good models.
-- By the end of this video, you will be able to describe a complete experimentation workflow from defining a problem to tuning to selecting the final model in a reproducible and trustworthy way.
-- Deep learning systems are highly stochastic, highly sensitive to hyperparameters and extremely expensive to train.
-- If you do not impose structure, two runs of the same code can give you two very different models.
-- Without a workflow, you cannot debug, compare or improve models in a reliable way.
-- This tells you whether your pipeline works at all and it gives you a reference point.
-- Without a baseline, you cannot tell whether improvements are real or just random fluctuation.
-- Now you decide what to tune and how, which hyperparameters matter, what ranges will you explore, what validation strategy will you use.
-- This is where automated search methods become essential.
-- Step 4 is running the controlled experiments.
-- This is where most of the projects fail.
-- You must run experiments in a controlled way with fixed seeds, track parameters, safe checkpoints and log metrics.
-- Otherwise, you have no way to compare runs or reproduce the results.
-- This gives you a clean, unbiased estimate of how well your model will perform in the real world.
-- Now, let us summarize the main points of this video.
-- Training neural networks is not just about architectures.
-- It is about disciplined experimentation.
-- Strong results come from systematic workflows, not random lucky guesses.
-- We need a strong pipeline to tune, track and evaluate the models.
-- This is how real ML teams build reliable models.
-- In the next video, they will summarize the key learnings from this module.
+---
 
-## Common Exam Pitfalls
+## The End-to-End Workflow
 
-- Writing only definitions without connecting to training behavior, model limitations, or practical consequences.
-- Mixing related concepts (for example: model capacity vs generalization, calibration vs accuracy, or explainability vs fairness) without clear boundaries.
-- Ignoring assumptions and failure modes; exam questions often test when a method breaks or needs modification.
-- Not using the terminology used in class (state, gradients, gates, uncertainty, diagnostics, reproducibility, bias metrics, etc.) in precise context.
+The module's professional workflow can be summarized as:
+
+`define the problem and metric -> build a baseline -> decide what to tune -> run controlled experiments -> track metrics and checkpoints -> choose by validation -> evaluate once on the test set`
+
+This is the main operational story of Week 12.
+
+---
+
+## Step-by-Step Breakdown
+
+| Step | Main Question | Why It Matters |
+|---|---|---|
+| **Problem definition** | What task are we solving, on what data, and with which metric? | Without this, tuning has no clear target |
+| **Baseline model** | What simple reproducible model can serve as a reference? | Establishes whether the pipeline works and what "improvement" means |
+| **Tuning plan** | Which hyperparameters matter and what ranges should be explored? | Prevents random, unstructured search |
+| **Controlled execution** | Are runs using fixed conditions and proper tracking? | Makes comparisons fair and reproducible |
+| **Model selection** | Which model performs best on validation data? | Selects the strongest candidate without using the test set |
+| **Final evaluation** | How does the chosen model perform on the test set? | Provides an unbiased estimate of generalization |
+
+---
+
+## Why the Baseline Comes First
+
+The transcript strongly emphasizes the baseline.
+
+A baseline is necessary because it:
+
+- tells you whether the pipeline works at all,
+- gives you a reference point,
+- and prevents you from mistaking random fluctuation for real improvement.
+
+Without a baseline, even a "better" result is hard to interpret because there is no stable starting comparison.
+
+---
+
+## What Usually Fails in Real Projects
+
+The lecture explicitly says that controlled execution is where many projects fail.
+
+Typical reasons include:
+
+- no fixed seeds,
+- no tracked hyperparameters,
+- no saved checkpoints,
+- unclear metrics,
+- or many uncontrolled changes happening at once.
+
+When that happens, experiments may still produce numbers, but those numbers are hard to trust.
+
+---
+
+## Validation vs Test Set
+
+This distinction is one of the most important ideas in the workflow.
+
+### Validation set
+
+Used during experimentation for:
+
+- comparing runs,
+- selecting hyperparameters,
+- and choosing the best model candidate.
+
+### Test set
+
+Used only at the end for:
+
+- one final, unbiased estimate of real-world performance.
+
+This separation matters because repeated tuning on the test set leaks information and can make the final estimate overly optimistic.
+
+---
+
+## What Should Be Tracked During the Workflow
+
+The lecture calls for controlled experimentation, which implies keeping track of:
+
+- hyperparameter settings,
+- validation performance,
+- saved checkpoints,
+- and other run metadata needed to compare experiments later.
+
+In practice, this turns model development from a vague process into an auditable one.
+
+---
+
+## Exam-Ready Narrative
+
+If asked to describe a professional experimentation workflow, a strong answer should include:
+
+1. a clearly defined problem and evaluation metric,
+2. a simple baseline,
+3. a planned hyperparameter search,
+4. controlled and reproducible experimentation,
+5. validation-based model selection,
+6. and a single final test evaluation.
+
+That sequence shows both technical understanding and process discipline.
+
+---
+
+## Common Mistakes
+
+- Beginning tuning before defining the success metric.
+- Skipping the baseline model.
+- Using the test set for repeated comparison.
+- Failing to track experiment settings and artifacts.
+- Changing multiple factors together and then drawing strong conclusions.
+
+---
 
 ## Summary
 
-- This note converts the lecture transcript into exam-focused revision points with conceptual flow, mechanism-level understanding, and practical reasoning.
-- Revise this along with nearby lectures in the same week to answer integrative questions that combine design choice, optimization behavior, and evaluation criteria.
+- Strong models come from **structured experimentation**, not isolated lucky runs.
+- The baseline, validation protocol, reproducibility controls, and final test evaluation each serve a different purpose.
+- Workflow discipline is part of good ML engineering, not administrative overhead.
 
-## Exam-Style Cues
-
-- Define the core concept in one precise paragraph and state why it is needed in neural-network practice.
-- Explain the process/mechanism step-by-step using correct technical terms from the lecture.
-- Compare this concept with one close alternative and justify when each is preferred.
-- Mention one implementation or diagnostic checklist that improves reliability in real training workflows.
+**Bridge to the next note:** the module summary pulls these ideas together into one exam-ready picture of hyperparameter tuning, reproducibility, and disciplined experimentation.

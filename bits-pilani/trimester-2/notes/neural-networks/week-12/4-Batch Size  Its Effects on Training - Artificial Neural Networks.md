@@ -1,78 +1,153 @@
-# 4-Batch Size  Its Effects on Training - Artificial Neural Networks
+# Batch Size: Its Effects on Training - Artificial Neural Networks
 
 ## Learning Objectives
 
-1. Understand the central idea behind 4-Batch Size  Its Effects on Training - Artificial Neural Networks.
-2. Connect this concept to the broader sequence/evaluation/diagnostics/optimization/responsible-AI pipeline as applicable.
-3. Prepare exam-ready explanations, comparisons, and reasoning based on lecture flow.
-4. In this demo, we will study how batch size affects neural network training dynamics.
+By the end of this note, you should be able to:
+
+1. **Explain** what batch size controls during training.
+2. **Describe** how batch size changes gradient noise, stability, and optimization behavior.
+3. **Compare** small, medium, large, and full-batch regimes.
+4. **Explain** why batch size must be studied with a controlled experiment and tuned together with learning rate.
 
 ---
 
-## Core Concepts and Deep Notes
+## What Batch Size Actually Changes
 
-- This topic from Week 12 builds conceptual depth around **4-Batch Size  Its Effects on Training** and should be revised as both a theory question and an application-oriented question.
-- Focus on three layers of understanding: definition, mechanism, and implication (how it changes model behavior, training stability, or decision quality).
-- In exam settings, score comes from linking intuition to formal reasoning: explain *why* the method exists, *how* it works, and *where* it can fail.
-- Treat this lecture as part of a system-level story: data properties -> model design -> optimization/training signals -> evaluation and reliability.
+Batch size is the number of training samples used to compute one gradient update.
 
-## Detailed Lecture Notes
+This changes the character of optimization:
 
-- We will observe how batch size influences the training loss behavior, gradient noise and stability, and smoothness of optimization.
-- Bath size determines how many samples are used to compute one gradient update.
-- Importantly, batch size does not change the objective function.
-- We will track training loss and gradient norm in our training to measure the noise and stability.
-- Now, let's look at the effect of batch size on gradient noise.
-- In this particular plot, we see that small batches show high variability in gradient magnitude.
-- Large batches produce stable and smooth gradients.
-- And full batch gradients are almost deterministic.
-- This highlights the trade-off between stability and exploration.
-- Batch size controls gradient noise, not the loss function.
-- Manually tuning these hyperparameters quickly becomes impractical.
-- In the next video, we will see why manual tuning does not scale and how automated hyperparameters search addresses this challenge.
+- **Small batch** -> noisy but frequent updates
+- **Large batch** -> smoother and less noisy updates
+- **Full batch** -> nearly deterministic updates using the whole dataset
 
-## Key Takeaways from the Lecture Transcription
+The most important conceptual point is:
 
-- In this demo, we will study how batch size affects neural network training dynamics.
-- To ensure a controlled experiment, we keep the dataset, model, and optimizer fixed.
-- We will vary only the batch size.
-- We will observe how batch size influences the training loss behavior, gradient noise and stability, and smoothness of optimization.
-- So, what does batch size control?
-- Bath size determines how many samples are used to compute one gradient update.
-- Small batch sizes means noisy but frequent updates, while large batch sizes result in smooth but less stochastic updates.
-- Importantly, batch size does not change the objective function.
-- Now, we compare clearly separated batch sizes regimes.
-- We will use a small, medium, large, and full batch.
-- So, we can see here, we are training with different batch sizes of 16, 64, 256, and the full dataset.
-- Now, let's see the effect of batch size on training loss.
-- So, in this graph, we can see that small batch sizes produce noisy loss curves.
-- Larger batch sizes, larger batch sizes produce smoother and more stable curves.
-- And full batch training is the smoothest but updates are less frequent.
-- It can help optimization escape the sharp regions.
-- Batch size controls gradient noise, not the loss function.
-- Small batches result in noisy updates.
-- Often better exploration.
-- And large batches result in smooth updates and can converge to sharper minima.
-- In practice, batch size and learning rate must be tuned together.
-- So far, we have seen how learning rate and batch size shape the training behavior.
-- Manually tuning these hyperparameters quickly becomes impractical.
-- In the next video, we will see why manual tuning does not scale and how automated hyperparameters search addresses this challenge.
+**Batch size does not change the objective function. It changes the path taken through the loss landscape.**
 
-## Common Exam Pitfalls
+That distinction is easy to miss, but it is central.
 
-- Writing only definitions without connecting to training behavior, model limitations, or practical consequences.
-- Mixing related concepts (for example: model capacity vs generalization, calibration vs accuracy, or explainability vs fairness) without clear boundaries.
-- Ignoring assumptions and failure modes; exam questions often test when a method breaks or needs modification.
-- Not using the terminology used in class (state, gradients, gates, uncertainty, diagnostics, reproducibility, bias metrics, etc.) in precise context.
+---
+
+## Intuition: Noise vs Stability
+
+Smaller batches use less data to estimate the gradient, so each update contains more randomness. Larger batches average over more examples, so the update direction becomes smoother.
+
+This creates a classic trade-off:
+
+- more noise can help the optimizer **explore**,
+- less noise can make descent more **stable**.
+
+So a noisier curve is not automatically bad, and a smoother curve is not automatically better.
+
+---
+
+## Controlled Experiment Setup
+
+The lecture explicitly studies batch size using a controlled experiment. To do that properly, keep fixed:
+
+- the dataset and split,
+- the model architecture,
+- the optimizer,
+- the learning rate,
+- and the training duration.
+
+Then vary only batch size, for example:
+
+`16 -> 64 -> 256 -> full batch`
+
+This is the only way to attribute differences to batch size rather than to some other changing factor.
+
+---
+
+## Observed Batch-Size Regimes
+
+The transcript compares small, medium, large, and full-batch training and tracks both training loss and gradient norms.
+
+| Batch Size | Loss Curve Pattern | Gradient Variability | Typical Interpretation |
+|---|---|---|---|
+| Small | Noisy | High | More stochastic exploration, less stable |
+| Medium | Moderately smooth | Moderate | Good balance between noise and stability |
+| Large | Smooth | Low | Stable optimization, less stochasticity |
+| Full batch | Smoothest | Very low | Nearly deterministic updates, less frequent parameter changes |
+
+The lecture also highlights that **full-batch training is smooth but updates are less frequent**, which is an important practical distinction.
+
+---
+
+## Why Gradient Noise Matters
+
+The demo measures not only loss but also **gradient norm variability**. That is useful because it makes the role of batch size visible:
+
+- **small batches** produce high variation in gradient magnitude,
+- **large batches** produce smoother gradient behavior,
+- **full batch** is almost deterministic.
+
+This helps explain why small-batch training can sometimes escape sharp regions more easily, while large-batch training can appear calmer but may settle differently.
+
+---
+
+## Stability-Exploration Trade-off
+
+You can summarize the effect of batch size as:
+
+`decrease batch size -> more gradient noise -> more exploration, less stability`
+
+`increase batch size -> less gradient noise -> more stability, less exploration`
+
+This is the main exam-ready intuition behind batch size.
+
+---
+
+## Why Batch Size and Learning Rate Must Be Tuned Together
+
+The lecture repeatedly connects batch size with learning rate. That is because both shape update behavior:
+
+- batch size affects how noisy the gradient estimate is,
+- learning rate affects how large the update step is.
+
+Together, they determine whether updates are:
+
+- stable,
+- erratic,
+- slow,
+- or aggressively overshooting.
+
+| Batch-Size Change | Typical Implication for Learning Rate |
+|---|---|
+| Increase batch size | May allow a larger learning rate or a different effective update scale |
+| Decrease batch size | May require more care because noisy gradients and large steps can combine badly |
+
+So it is not enough to ask, "What is the best batch size?" The better question is, "What batch size works well with this learning rate and model?"
+
+---
+
+## Practical Decision Factors
+
+In real systems, batch size is not chosen only for theory. It is also constrained by:
+
+- available memory,
+- hardware throughput,
+- training time per update,
+- and overall stability of optimization.
+
+So the best batch size is usually a compromise between **optimization behavior** and **compute reality**.
+
+---
+
+## Common Mistakes
+
+- Changing batch size and learning rate together without a controlled comparison.
+- Assuming smoother loss always means better generalization.
+- Ignoring the role of gradient noise in shaping optimization behavior.
+- Treating batch size as only a hardware decision and not a learning decision.
+
+---
 
 ## Summary
 
-- This note converts the lecture transcript into exam-focused revision points with conceptual flow, mechanism-level understanding, and practical reasoning.
-- Revise this along with nearby lectures in the same week to answer integrative questions that combine design choice, optimization behavior, and evaluation criteria.
+- Batch size controls **how many samples define one update**.
+- Its main effect is on **gradient noise**, which creates a trade-off between **exploration** and **stability**.
+- Proper conclusions about batch size require controlled experiments and should always consider its interaction with learning rate.
 
-## Exam-Style Cues
-
-- Define the core concept in one precise paragraph and state why it is needed in neural-network practice.
-- Explain the process/mechanism step-by-step using correct technical terms from the lecture.
-- Compare this concept with one close alternative and justify when each is preferred.
-- Mention one implementation or diagnostic checklist that improves reliability in real training workflows.
+**Bridge to the next note:** once we understand the main hyperparameters, the next step is to run a full hyperparameter tuning experiment in a systematic way.

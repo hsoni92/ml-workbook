@@ -1,78 +1,116 @@
-# 10-Weight Norms and Training Signals - Artificial Neural Networks
+# Weight Norms and Training Signals - Artificial Neural Networks
 
 ## Learning Objectives
 
-1. Understand the central idea behind 10-Weight Norms and Training Signals - Artificial Neural Networks.
-2. Connect this concept to the broader sequence/evaluation/diagnostics/optimization/responsible-AI pipeline as applicable.
-3. Prepare exam-ready explanations, comparisons, and reasoning based on lecture flow.
-4. In this video, we will look at weight norms and training signals.
+By the end of this note, you should be able to:
+
+1. Explain what a **weight norm** measures.
+2. Use weight norms as a compact signal of training health.
+3. Interpret different norm patterns across layers and across epochs.
 
 ---
 
-## Core Concepts and Deep Notes
+## Why Weight Norms Are Useful
 
-- This topic from Week 11 builds conceptual depth around **10-Weight Norms and Training Signals** and should be revised as both a theory question and an application-oriented question.
-- Focus on three layers of understanding: definition, mechanism, and implication (how it changes model behavior, training stability, or decision quality).
-- In exam settings, score comes from linking intuition to formal reasoning: explain *why* the method exists, *how* it works, and *where* it can fail.
-- Treat this lecture as part of a system-level story: data properties -> model design -> optimization/training signals -> evaluation and reliability.
+In the previous lesson, we looked at full weight distributions. That gives rich detail, but it can also be more information than we need for a quick diagnosis.
 
-## Detailed Lecture Notes
+Weight norms provide a simpler summary.
 
-- In this video, we will look at weight norms and training signals.
-- In the previous video, we examined full weight distributions.
-- In this video, we compressed that information into a single interpretable signal which is weight norms.
-- We will study what weight norms measure, how norms behave, and how the weight norms are.
-- We will study how to behave across layers and how they evolve during tuning.
-- Now, why should we monitor weight norms?
-- Weight norms tell us how large parameter updates are, whether learning pressure is balanced across the layers, and whether weights are exploding, shrinking, or frozen.
-- They act like a heartbeat for the training dynamics.
-- Let's import some standard packages.
-- We will use the same dataset as last time.
-- And also, we will use the same model architecture so that we can maintain the continuity here.
-- And the training setup is also going to be stable with a low and decent learning rate and low number of epochs.
+They act like a compact training signal that tells us:
 
-## Key Takeaways from the Lecture Transcription
+- how large the parameters are,
+- whether learning pressure is balanced across layers,
+- and whether weights are growing, shrinking, or staying flat.
 
-- In this video, we will look at weight norms and training signals.
-- In the previous video, we examined full weight distributions.
-- In this video, we compressed that information into a single interpretable signal which is weight norms.
-- We will study what weight norms measure, how norms behave, and how the weight norms are.
-- We will study how to behave across layers and how they evolve during tuning.
-- Now, why should we monitor weight norms?
-- Weight norms tell us how large parameter updates are, whether learning pressure is balanced across the layers, and whether weights are exploding, shrinking, or frozen.
-- They act like a heartbeat for the training dynamics.
-- Now, let's first examine how the weight norms across layers look like at the final epoch.
-- If we look at this plot, we see that most hidden layers have very similar L2 norms, indicating that learning pressure is balanced across the depth of the network.
-- The final or the output layer has a noticeably smaller weight norm.
-- Because it maps learned representations to a single logit, it has fewer parameters, fewer parameters than hidden layers, and its updates are directly constrained by the loss function.
-- Now, let's look at the weight evolution across time.
-- Across different epochs, hidden layers show smooth and gradual growth in weight norms, suggesting stable and well-behaved optimization.
-- The output layer evolves more slowly and remains lower in magnitude.
-- This is expected because it has lower representational complexity, it is tightly coupled to the supervised loss, and large weight growth is unnecessary for convergence.
-- Monitoring norms complements distribution-based diagnostics.
-- Now, let us summarize the main points of this video.
-- Weight norms summarize parameter scale.
-- Balanced norms indicate healthy training.
-- Temporal trends matter more than the absolute values.
-- And norms act as early warning signals for instability.
-- So far, we have looked at gradients, activations, and weights.
-- In the next video, we examine how normalization layers, especially batch norm, expose hidden training dynamics.
+The transcript describes them as a kind of **heartbeat** for training dynamics.
 
-## Common Exam Pitfalls
+---
 
-- Writing only definitions without connecting to training behavior, model limitations, or practical consequences.
-- Mixing related concepts (for example: model capacity vs generalization, calibration vs accuracy, or explainability vs fairness) without clear boundaries.
-- Ignoring assumptions and failure modes; exam questions often test when a method breaks or needs modification.
-- Not using the terminology used in class (state, gradients, gates, uncertainty, diagnostics, reproducibility, bias metrics, etc.) in precise context.
+## What the Lesson Shows
 
-## Summary
+The same dataset and general model setup are reused to maintain continuity.
 
-- This note converts the lecture transcript into exam-focused revision points with conceptual flow, mechanism-level understanding, and practical reasoning.
-- Revise this along with nearby lectures in the same week to answer integrative questions that combine design choice, optimization behavior, and evaluation criteria.
+The note focuses on two views:
 
-## Exam-Style Cues
+1. **weight norms across layers at the final epoch**
+2. **weight norm evolution across time**
 
-- Define the core concept in one precise paragraph and state why it is needed in neural-network practice.
-- Explain the process/mechanism step-by-step using correct technical terms from the lecture.
-- Compare this concept with one close alternative and justify when each is preferred.
-- Mention one implementation or diagnostic checklist that improves reliability in real training workflows.
+This makes it possible to compare how different layers behave and how those behaviors change during training.
+
+---
+
+## Interpreting Weight Norms Across Layers
+
+At the final epoch, most hidden layers show similar L2 norms.
+
+### What this suggests
+
+- learning pressure is fairly balanced across depth,
+- no hidden layer appears grossly over-dominant,
+- and the training process is behaving in a controlled way.
+
+The transcript also points out that the **output layer** has a noticeably smaller norm.
+
+That is not treated as a problem. In this example, it is expected because:
+
+- the output layer maps learned representations to a single logit,
+- it has fewer parameters,
+- and its updates are directly tied to the supervised loss.
+
+So this lesson also teaches an important diagnostic caution:
+
+> not every difference across layers is a failure.
+
+Some differences are structurally expected.
+
+---
+
+## Interpreting Weight Norms Over Time
+
+Across epochs, the hidden layers show **smooth, gradual growth**.
+
+That is the key healthy pattern.
+
+### Why smooth growth matters
+
+- It suggests stable optimization.
+- It indicates that the model is learning without runaway instability.
+- It gives confidence that updates are meaningful but not excessive.
+
+The output layer again evolves more slowly and remains lower in magnitude, which is consistent with its smaller representational role in this setup.
+
+---
+
+## What Different Norm Patterns Mean
+
+The transcript gives three especially useful interpretations:
+
+- **flat norms** may mean layers are frozen or under-trained,
+- **exploding norms** suggest unstable optimization,
+- **smooth growth** usually indicates healthy learning.
+
+This makes weight norms a convenient early warning signal.
+
+---
+
+## Why Norms Complement Distribution Diagnostics
+
+Weight distributions give detailed shape information.
+
+Weight norms compress that information into one number per layer, making them easier to monitor over time.
+
+So the two diagnostics serve different purposes:
+
+- use **distributions** when you want richer detail,
+- use **norms** when you want a compact trend signal.
+
+---
+
+## Key Takeaways
+
+- Weight norms summarize parameter scale in a compact way.
+- Balanced norms across hidden layers often indicate healthy training.
+- Smooth temporal growth is usually a good sign; flat or explosive behavior is not.
+- Temporal trends matter more than memorizing a single absolute norm value.
+
+**Bridge to the next topic:** after monitoring parameters directly, the module turns to a special internal component: **BatchNorm statistics**.

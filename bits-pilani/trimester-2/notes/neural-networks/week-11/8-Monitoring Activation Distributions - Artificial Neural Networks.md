@@ -1,78 +1,109 @@
-# 8-Monitoring Activation Distributions - Artificial Neural Networks
+# Monitoring Activation Distributions - Artificial Neural Networks
 
 ## Learning Objectives
 
-1. Understand the central idea behind 8-Monitoring Activation Distributions - Artificial Neural Networks.
-2. Connect this concept to the broader sequence/evaluation/diagnostics/optimization/responsible-AI pipeline as applicable.
-3. Prepare exam-ready explanations, comparisons, and reasoning based on lecture flow.
-4. In this video, we will see how to track and monitor activation distributions during training.
+By the end of this note, you should be able to:
+
+1. Explain what activation distributions reveal about internal learning.
+2. Compare activation behavior **across layers** and **across time**.
+3. Interpret the fraction of zero activations in a ReLU network correctly.
 
 ---
 
-## Core Concepts and Deep Notes
+## Why Monitor Activation Distributions?
 
-- This topic from Week 11 builds conceptual depth around **8-Monitoring Activation Distributions** and should be revised as both a theory question and an application-oriented question.
-- Focus on three layers of understanding: definition, mechanism, and implication (how it changes model behavior, training stability, or decision quality).
-- In exam settings, score comes from linking intuition to formal reasoning: explain *why* the method exists, *how* it works, and *where* it can fail.
-- Treat this lecture as part of a system-level story: data properties -> model design -> optimization/training signals -> evaluation and reliability.
+Earlier lessons looked at specific activation failures such as dead ReLUs and saturation. This lesson moves from isolated cases to **systematic monitoring**.
 
-## Detailed Lecture Notes
+The main idea is:
 
-- In this video, we will see how to track and monitor activation distributions during training.
-- So far we have seen dead relu and saturation in sigmoid and tanage.
-- In this demo, we move from isolated examples to systematic monitoring.
-- We will learn what healthy activation distributions look like.
-- How activation distributions evolve during training and how to detect problems early using distribution diagnostics.
-- As training progresses, you should focus on where activation values concentrate, whether distributions drift or collapse, and differences between healthy and unhealthy layers.
-- Activation distributions tell us how information flows through the network.
-- So with this, let's start the demo.
-- As always, we will start by importing the standard libraries.
-- For this, we will create a binary data set again.
-- Here, for modeling purpose, we will use a relu-based network and we will monitor activations at each of the layers.
-- So this is how the architecture of the model looks like.
+> activation distributions tell us how information is flowing through the network.
 
-## Key Takeaways from the Lecture Transcription
+They help answer questions like:
 
-- In this video, we will see how to track and monitor activation distributions during training.
-- So far we have seen dead relu and saturation in sigmoid and tanage.
-- In this demo, we move from isolated examples to systematic monitoring.
-- We will learn what healthy activation distributions look like.
-- How activation distributions evolve during training and how to detect problems early using distribution diagnostics.
-- As training progresses, you should focus on where activation values concentrate, whether distributions drift or collapse, and differences between healthy and unhealthy layers.
-- Activation distributions tell us how information flows through the network.
-- So with this, let's start the demo.
-- Each box plot here summarizes the activation values of a relu layer at the end of the training.
-- We observe very similar activation distributions across layers, comparable spread and medians, and no layer showing extreme collapse or saturation.
-- This indicates that activation behavior is stable across depth.
-- Importantly, this diagnostic confirms that no layer is currently suffering from dead relu's or severe activation imbalance.
-- Next, we would want to monitor the activations across time.
-- So for this, we will track the activation distribution of a single layer across different epochs.
-- These box plots show the activation distribution of a single relu layer at different training epochs.
-- We observe very similar distributions across epochs, no major drift or collapse, and stable activation spread.
-- A gradual unbounded increase may indicate growing dead relu's and a stable or slowly varying curve suggests healthy behavior.
-- In this case, the fraction remains around 50% indicating normal relu sparsity with no catastrophic activation collapse.
-- Now, let us summarize the main points of this video.
-- Activation distributions reveal internal learning dynamics.
-- Cross layer comparison highlights structural issues.
-- Temporal monitoring exposes gradual failures.
-- Activation diagnostics are essential for debugging deep networks.
-- In the next video, we will look at weight distribution drift and track how they change during the training.
+- Are different layers behaving similarly or very differently?
+- Are activations stable over training, or drifting toward unhealthy regimes?
+- Is the network using its representational capacity well?
 
-## Common Exam Pitfalls
+---
 
-- Writing only definitions without connecting to training behavior, model limitations, or practical consequences.
-- Mixing related concepts (for example: model capacity vs generalization, calibration vs accuracy, or explainability vs fairness) without clear boundaries.
-- Ignoring assumptions and failure modes; exam questions often test when a method breaks or needs modification.
-- Not using the terminology used in class (state, gradients, gates, uncertainty, diagnostics, reproducibility, bias metrics, etc.) in precise context.
+## What the Demo Tracks
 
-## Summary
+The transcript uses a ReLU-based network and records activation outputs during training.
 
-- This note converts the lecture transcript into exam-focused revision points with conceptual flow, mechanism-level understanding, and practical reasoning.
-- Revise this along with nearby lectures in the same week to answer integrative questions that combine design choice, optimization behavior, and evaluation criteria.
+Three views are emphasized:
 
-## Exam-Style Cues
+1. **Cross-layer comparison at the final epoch**
+2. **Temporal evolution of one layer across epochs**
+3. **Fraction of zero activations over time**
 
-- Define the core concept in one precise paragraph and state why it is needed in neural-network practice.
-- Explain the process/mechanism step-by-step using correct technical terms from the lecture.
-- Compare this concept with one close alternative and justify when each is preferred.
-- Mention one implementation or diagnostic checklist that improves reliability in real training workflows.
+Together, these views make activation monitoring much more informative than a single snapshot.
+
+---
+
+## Healthy Cross-layer Behaviour
+
+At the final epoch, the lesson examines box plots of activation values for different ReLU layers.
+
+In the healthy case shown in the transcript:
+
+- activation distributions across layers are broadly similar,
+- the spread and median are comparable,
+- and no layer shows severe collapse or extreme imbalance.
+
+This suggests that activation behavior is stable across depth. In other words, no part of the network is obviously broken from the activation perspective.
+
+---
+
+## Healthy Temporal Behaviour
+
+The lesson then tracks one layer's activation distribution across multiple epochs.
+
+The important observation is not that the distribution is perfectly constant, but that it remains **stable enough**:
+
+- no major collapse,
+- no abrupt drift,
+- and no obvious movement into a pathological regime.
+
+This teaches an important diagnostic principle: internal signals should be read as **trends**, not single points.
+
+---
+
+## Interpreting the Fraction of Zero Activations
+
+This is one of the most useful distinctions in the lesson.
+
+The transcript explains that around **40 to 60 percent** zero activations can be common and even healthy in ReLU networks.
+
+So a high fraction of zeros is **not automatically a problem**.
+
+What matters more is the **trend**:
+
+- a stable or slowly varying zero fraction often indicates normal ReLU sparsity,
+- a gradual unbounded increase may indicate growing dead ReLUs,
+- and a sharp rise suggests loss of representational capacity.
+
+This is a very exam-ready comparison because it separates **healthy sparsity** from **pathological inactivity**.
+
+---
+
+## What Activation Monitoring Reveals
+
+Activation diagnostics help catch problems that may stay hidden in the loss curve:
+
+- structural imbalance across layers,
+- gradual collapse over time,
+- increasing dead ReLUs,
+- or shifts in how the network is using its neurons.
+
+This makes activations a natural companion to gradient monitoring.
+
+---
+
+## Key Takeaways
+
+- Activation distributions reveal internal learning dynamics, not just final outputs.
+- Healthy monitoring involves comparing layers and tracking trends across epochs.
+- In ReLU networks, many zero activations can be normal; the **trend** is what matters most.
+- Activation diagnostics help detect gradual failures before they become obvious externally.
+
+**Bridge to the next topic:** after studying gradients and activations, the module moves deeper into the model and begins tracking **weight distributions during training**.

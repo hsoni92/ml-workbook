@@ -1,78 +1,132 @@
-# 12-Identifying Parameter Anomalies - Artificial Neural Networks
+# Identifying Parameter Anomalies - Artificial Neural Networks
 
 ## Learning Objectives
 
-1. Understand the central idea behind 12-Identifying Parameter Anomalies - Artificial Neural Networks.
-2. Connect this concept to the broader sequence/evaluation/diagnostics/optimization/responsible-AI pipeline as applicable.
-3. Prepare exam-ready explanations, comparisons, and reasoning based on lecture flow.
-4. In this video, we will look at identifying parameter anomalies such as frozen layers, untrained components and configuration errors.
+By the end of this note, you should be able to:
+
+1. Use parameter-level diagnostics to identify abnormal training behavior.
+2. Compare anomalous layers against a **healthy baseline**.
+3. Distinguish between frozen layers, unstable growth, and under-trained components.
 
 ---
 
-## Core Concepts and Deep Notes
+## Why Parameter Anomalies Matter
 
-- This topic from Week 11 builds conceptual depth around **12-Identifying Parameter Anomalies** and should be revised as both a theory question and an application-oriented question.
-- Focus on three layers of understanding: definition, mechanism, and implication (how it changes model behavior, training stability, or decision quality).
-- In exam settings, score comes from linking intuition to formal reasoning: explain *why* the method exists, *how* it works, and *where* it can fail.
-- Treat this lecture as part of a system-level story: data properties -> model design -> optimization/training signals -> evaluation and reliability.
+By this stage of the module, we have seen what healthy training looks like:
 
-## Detailed Lecture Notes
+- gradients are stable,
+- activations are reasonable,
+- weight norms evolve smoothly,
+- and BatchNorm statistics are controlled.
 
-- In this video, we will look at identifying parameter anomalies such as frozen layers, untrained components and configuration errors.
-- So far, we have examined healthy training behaviour which is stable gradients, reasonable activations, balanced weight norms and stable batch norm statistics.
-- In this video, we deliberately introduce parameter level anomalies and learn how to detect them using the diagnostics.
-- Let's start by importing the packages.
-- Next, we create the dataset.
-- We will use the same dataset across all the experiments.
-- Now, first we train a healthy model to establish a reference for weight norms and the training behaviour.
-- So, let's train the model.
-- And now let's look at how does the baseline or healthy weight norm evolution looks like.
-- So, for the baseline behaviour, we observe smooth growth of weight norms, no frozen or exploding layers and similar learning dynamics across the layers.
-- So, this is going to be our reference for healthy training.
-- So, now we will start with the first anomaly which is frozen layer.
+This lesson deliberately breaks that healthy picture so we can learn how abnormal parameter behavior looks in practice.
 
-## Key Takeaways from the Lecture Transcription
+The key idea is:
 
-- In this video, we will look at identifying parameter anomalies such as frozen layers, untrained components and configuration errors.
-- So far, we have examined healthy training behaviour which is stable gradients, reasonable activations, balanced weight norms and stable batch norm statistics.
-- In this video, we deliberately introduce parameter level anomalies and learn how to detect them using the diagnostics.
-- Let's start by importing the packages.
-- Next, we create the dataset.
-- We will use the same dataset across all the experiments.
-- Now, first we train a healthy model to establish a reference for weight norms and the training behaviour.
-- So, let's train the model.
-- So, here we see that one layer shows a nearly flat weight norm across the epochs.
-- This indicates no gradient updates and possible causes could be requires gradient equals to false has been set up which is an optimizer level misconfiguration.
-- Flat norms are a strong signal of frozen or disconnected layers.
-- Our second anomaly is going to be exploding weights.
-- So, here we intentionally increase the learning rate so that we can induce unstable updates.
-- Now, if we look at this graph, we see that weight norms grow rapidly and inconsistently across the layers.
-- This indicates unstable optimization, learning rate being too high and risk of divergence.
-- And risk of divergence or NANDs.
-- Rapid growth indicates instability and slow growth may indicate under training.
-- Comparing against a healthy baseline is essential for diagnosis.
-- We now know how to detect training pathologies.
-- In the next video, we bring everything to the point.
-- diagnostics for parameter anomalies, flat norms indicate frozen or disconnected layers, rapid growth indicates instability, and slow growth may indicate undertraining.
-- Comparing against a healthy baseline is essential for diagnosis.
-- We now know how to detect training pathologies.
-- In the next video, we bring everything together into a structured debugging workflow and learn how to monitor these signals.
+> anomalies are easiest to spot when you first know what healthy behavior looks like.
 
-## Common Exam Pitfalls
+---
 
-- Writing only definitions without connecting to training behavior, model limitations, or practical consequences.
-- Mixing related concepts (for example: model capacity vs generalization, calibration vs accuracy, or explainability vs fairness) without clear boundaries.
-- Ignoring assumptions and failure modes; exam questions often test when a method breaks or needs modification.
-- Not using the terminology used in class (state, gradients, gates, uncertainty, diagnostics, reproducibility, bias metrics, etc.) in precise context.
+## Step 1: Establish a Healthy Baseline
 
-## Summary
+The transcript first trains a healthy model and treats its weight norm evolution as the reference.
 
-- This note converts the lecture transcript into exam-focused revision points with conceptual flow, mechanism-level understanding, and practical reasoning.
-- Revise this along with nearby lectures in the same week to answer integrative questions that combine design choice, optimization behavior, and evaluation criteria.
+In the healthy case:
 
-## Exam-Style Cues
+- weight norms grow smoothly,
+- no layer looks frozen,
+- and no layer grows explosively.
 
-- Define the core concept in one precise paragraph and state why it is needed in neural-network practice.
-- Explain the process/mechanism step-by-step using correct technical terms from the lecture.
-- Compare this concept with one close alternative and justify when each is preferred.
-- Mention one implementation or diagnostic checklist that improves reliability in real training workflows.
+This baseline is crucial because diagnosis is often comparative. We do not ask only "Is this pattern strange?" We ask "How is this pattern different from the healthy reference?"
+
+---
+
+## Anomaly 1: Frozen Layer
+
+The first anomaly is created by intentionally freezing one layer so its parameters do not update.
+
+### Observed signature
+
+- one layer shows an almost flat weight norm across epochs.
+
+### Interpretation
+
+This indicates that the layer is not receiving effective updates.
+
+Possible reasons mentioned in the transcript include:
+
+- `requires_grad = False`,
+- optimizer-level misconfiguration,
+- or a disconnected update path.
+
+### Exam-ready intuition
+
+If a layer's norm stays nearly flat while other layers evolve, suspect a **frozen or disconnected layer**.
+
+---
+
+## Anomaly 2: Exploding Weights
+
+The second anomaly uses a very high learning rate to induce unstable updates.
+
+### Observed signature
+
+- weight norms grow rapidly,
+- the growth is inconsistent across layers,
+- and sharp spikes appear.
+
+### Interpretation
+
+This pattern indicates unstable optimization and a high risk of divergence. The transcript explicitly connects this to an excessively large learning rate.
+
+### Exam-ready intuition
+
+Rapid, irregular norm growth is a warning sign that training pressure is too aggressive.
+
+---
+
+## Anomaly 3: Under-trained Output Layer
+
+The third anomaly assigns a much smaller learning rate to the output layer.
+
+### Observed signature
+
+- one layer's norm grows much more slowly than the others.
+
+### Interpretation
+
+This suggests a layer-specific learning issue rather than a whole-network failure.
+
+The transcript associates this with:
+
+- insufficient learning signal,
+- layer-specific learning-rate mismatch,
+- and a possible bottleneck in performance.
+
+### Exam-ready intuition
+
+When one layer evolves much more slowly than the rest, check whether its update rule differs from the others.
+
+---
+
+## Why Comparison Matters
+
+This lesson repeatedly emphasizes comparison against the healthy baseline.
+
+That is a strong debugging principle because the same absolute norm value may be harmless in one network and suspicious in another. What matters is the **pattern**:
+
+- flat when it should change,
+- exploding when it should grow smoothly,
+- or lagging when peer layers are learning normally.
+
+---
+
+## Key Takeaways
+
+- Weight norms are powerful signals for parameter anomalies.
+- Flat norms suggest frozen or disconnected layers.
+- Rapid norm growth suggests instability.
+- Much slower growth in one layer suggests under-training or configuration imbalance.
+- A healthy baseline makes anomaly detection much more reliable.
+
+**Bridge to the next topic:** after learning to detect individual pathologies, the module brings everything together into **one structured debugging workflow**.

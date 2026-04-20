@@ -1,78 +1,147 @@
-# 7-Strengths  Limitations of Explainability Methods - Artificial Neural Networks
+# Strengths and Limitations of Explainability Methods - Artificial Neural Networks
 
 ## Learning Objectives
 
-1. Understand the central idea behind 7-Strengths  Limitations of Explainability Methods - Artificial Neural Networks.
-2. Connect this concept to the broader sequence/evaluation/diagnostics/optimization/responsible-AI pipeline as applicable.
-3. Prepare exam-ready explanations, comparisons, and reasoning based on lecture flow.
-4. By the end of this video, you will be able to compare explainability approaches, identify when an explanation is useful and when it is misleading.
+By the end of this note, you should be able to:
+
+1. **Compare** the main strengths of common explainability methods.
+2. **Recognize** their major limitations and failure modes.
+3. **Adopt** a responsible way to use explanations in practice.
 
 ---
 
-## Core Concepts and Deep Notes
+## Why This Topic Matters
 
-- This topic from Week 13 builds conceptual depth around **7-Strengths  Limitations of Explainability Methods** and should be revised as both a theory question and an application-oriented question.
-- Focus on three layers of understanding: definition, mechanism, and implication (how it changes model behavior, training stability, or decision quality).
-- In exam settings, score comes from linking intuition to formal reasoning: explain *why* the method exists, *how* it works, and *where* it can fail.
-- Treat this lecture as part of a system-level story: data properties -> model design -> optimization/training signals -> evaluation and reliability.
+Explainability methods are useful, but they are easy to over-trust.
 
-## Detailed Lecture Notes
+That is dangerous because explanations often look convincing. A colorful heatmap or a neat feature ranking can create the illusion of full understanding even when the explanation is incomplete or unstable.
 
-- In this video, we critically reflect on all the explainability methods we have studied so far.
-- Rather than introducing new techniques, the goal here is to understand what these methods can and cannot tell us.
-- By the end of this video, you will be able to compare explainability approaches, identify when an explanation is useful and when it is misleading.
-- You will be able to recognize their limitations and avoid common misinterpretations when using them in practice.
-- We have covered a wide range of explainability methods, from simple saliency maps to more principled approaches like shape and integrated gradients.
-- Despite their differences, all of them aim to provide insight into why a model made a particular prediction.
-- Explainability methods are undeniably useful.
-- They improve transparency and trust.
-- They help us debug models, identify spurious correlations and build trust with stakeholders.
-- In regulated or high-stakes domains, they are often essential.
-- However, these methods also have serious limitations.
-- Most explanations are local, dependent on assumptions and sensitive to noise.
+So an important skill in responsible AI is not only knowing explanation methods, but also knowing **how far to trust them**.
 
-## Key Takeaways from the Lecture Transcription
+---
 
-- In this video, we critically reflect on all the explainability methods we have studied so far.
-- Rather than introducing new techniques, the goal here is to understand what these methods can and cannot tell us.
-- By the end of this video, you will be able to compare explainability approaches, identify when an explanation is useful and when it is misleading.
-- You will be able to recognize their limitations and avoid common misinterpretations when using them in practice.
-- We have covered a wide range of explainability methods, from simple saliency maps to more principled approaches like shape and integrated gradients.
-- Despite their differences, all of them aim to provide insight into why a model made a particular prediction.
-- Explainability methods are undeniably useful.
-- They improve transparency and trust.
-- However, these methods also have serious limitations.
-- Most explanations are local, dependent on assumptions and sensitive to noise.
-- They can also be unstable across similar inputs.
-- Importantly, they do not provide causal guarantees.
-- One of the biggest risks is overconfidence.
-- Just because an explanation looks intuitive, does not mean it reflects the true reasoning of the model.
-- Or we cannot just assume that the highlighted features are the true causes and one explanation method.
-- The correct way to use explainability is as a diagnostic and investigative tool.
-- Lastly, we should focus on patterns and not individual examples.
-- Now, let us summarize the main points of this video.
-- Explainability methods are powerful but limited.
-- Explainability improves transparency, reveals influence and not causation.
-- No method provides complete transparency and eliminates uncertainty completely.
-- A responsible practitioner treats explanations with both curiosity and skepticism.
-- In the next video, we move beyond explanations of individual predictions and examine a broader issue.
-- Fairness, bias and responsibility in AI systems.
+## What Explainability Methods Are Good At
 
-## Common Exam Pitfalls
+Across the methods studied so far, explainability is valuable because it can:
 
-- Writing only definitions without connecting to training behavior, model limitations, or practical consequences.
-- Mixing related concepts (for example: model capacity vs generalization, calibration vs accuracy, or explainability vs fairness) without clear boundaries.
-- Ignoring assumptions and failure modes; exam questions often test when a method breaks or needs modification.
-- Not using the terminology used in class (state, gradients, gates, uncertainty, diagnostics, reproducibility, bias metrics, etc.) in precise context.
+- improve transparency,
+- help debug models,
+- reveal spurious correlations,
+- support communication with domain experts,
+- strengthen trust in regulated or high-stakes settings.
 
-## Summary
+In other words, explanations are often excellent **diagnostic tools**.
 
-- This note converts the lecture transcript into exam-focused revision points with conceptual flow, mechanism-level understanding, and practical reasoning.
-- Revise this along with nearby lectures in the same week to answer integrative questions that combine design choice, optimization behavior, and evaluation criteria.
+---
 
-## Exam-Style Cues
+## Different Methods, Different Strengths
 
-- Define the core concept in one precise paragraph and state why it is needed in neural-network practice.
-- Explain the process/mechanism step-by-step using correct technical terms from the lecture.
-- Compare this concept with one close alternative and justify when each is preferred.
-- Mention one implementation or diagnostic checklist that improves reliability in real training workflows.
+| Method family | Typical strength | Typical weakness |
+|---|---|---|
+| **Saliency / gradient methods** | Fast, intuitive, visual | Noisy and unstable |
+| **Perturbation methods** | Model-agnostic and flexible | Can be computationally expensive and perturbation-sensitive |
+| **Model-specific methods** | Use deep network structure well | Often depend on architecture and design choices |
+
+No single method dominates on every criterion because different methods optimize different goals.
+
+---
+
+## The Main Limitations to Remember
+
+Most explanation methods share several important limitations:
+
+### 1. They are often local
+
+Many methods explain one prediction, not the entire model.
+
+### 2. They can be unstable
+
+Two very similar inputs may produce noticeably different explanations.
+
+### 3. They depend on assumptions
+
+Sampling choices, baselines, smoothing, layers, and perturbation design can all change the explanation.
+
+### 4. They are not causal
+
+An explanation may show influence or association without proving true cause.
+
+These limitations do not make explanations useless, but they do mean explanations must be interpreted with caution.
+
+---
+
+## The Biggest Risk: Overconfidence
+
+One of the most common mistakes is to believe an explanation simply because it looks intuitive.
+
+That is risky because:
+
+- visually plausible explanations may still be wrong,
+- highlighted features may not be true causes,
+- one method may agree with our intuition for the wrong reason.
+
+So the right attitude is:
+
+**curiosity plus skepticism**
+
+We should treat explanations as hypotheses to investigate, not facts to accept blindly.
+
+---
+
+## A Better Workflow for Responsible Use
+
+A safer approach is to combine methods and look for stable patterns:
+
+1. Run one explanation method.
+2. Run a second method if possible.
+3. Check whether the results are reasonably consistent.
+4. Compare the explanation with domain knowledge.
+5. Use evaluation results and error analysis together with the explanation.
+
+This multi-method view helps reduce false confidence.
+
+---
+
+## Focus on Patterns, Not Only Anecdotes
+
+Another good practice is to avoid relying only on isolated examples.
+
+A single explanation can be interesting, but repeated patterns across many samples are more informative.
+
+For example:
+
+- if many explanations consistently highlight irrelevant background regions,
+- or one subgroup repeatedly shows suspicious attribution behavior,
+
+then we have stronger evidence of a systematic issue.
+
+---
+
+## Common Misunderstandings
+
+- **"If the explanation looks intuitive, it must be true."**
+  Visual plausibility is not the same as validity.
+
+- **"One method is enough."**
+  Method disagreement can itself reveal uncertainty or weakness.
+
+- **"Explainability removes uncertainty."**
+  It reduces uncertainty, but it does not eliminate it.
+
+---
+
+## Summary and Exam-Ready Takeaways
+
+- Explainability methods are valuable for debugging, transparency, and stakeholder trust.
+- Different method families have different strengths and different weaknesses.
+- Most explanations are local, assumption-dependent, and non-causal.
+- Overconfidence is one of the biggest practical risks.
+- Responsible practitioners use multiple methods, compare results with domain knowledge, and treat explanations as investigative evidence.
+
+---
+
+## Bridge to the Next Note
+
+So far, we have focused on understanding individual predictions. The next topic broadens the lens:
+
+**How can AI systems be biased or unfair even when they seem accurate overall?**

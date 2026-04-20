@@ -1,78 +1,120 @@
-# 3-Why Feedforward Networks Fail on Sequences - Artificial Neural Networks
+# Why Feed-Forward Networks Fail on Sequences - Artificial Neural Networks
 
 ## Learning Objectives
 
-1. Understand the central idea behind 3-Why Feedforward Networks Fail on Sequences - Artificial Neural Networks.
-2. Connect this concept to the broader sequence/evaluation/diagnostics/optimization/responsible-AI pipeline as applicable.
-3. Prepare exam-ready explanations, comparisons, and reasoning based on lecture flow.
-4. In this video, we will analyze why traditional feed-forward networks struggle when applied to sequential data.
+By the end of this note you should be able to:
+
+1. **Recall** the core assumptions behind **feed-forward networks**.
+2. **Explain** why those assumptions break for **sequence data**.
+3. **Distinguish** between an **optimization problem** and an **architectural mismatch**.
+4. **Motivate** why sequence models need explicit **memory and temporal computation**.
 
 ---
 
-## Core Concepts and Deep Notes
+## The Central Mismatch
 
-- This topic from Week 9 builds conceptual depth around **3-Why Feedforward Networks Fail on Sequences** and should be revised as both a theory question and an application-oriented question.
-- Focus on three layers of understanding: definition, mechanism, and implication (how it changes model behavior, training stability, or decision quality).
-- In exam settings, score comes from linking intuition to formal reasoning: explain *why* the method exists, *how* it works, and *where* it can fail.
-- Treat this lecture as part of a system-level story: data properties -> model design -> optimization/training signals -> evaluation and reliability.
+Feed-forward networks such as MLPs are designed for inputs that can be treated as:
 
-## Detailed Lecture Notes
+- **fixed-size vectors**, and
+- processed **independently** of surrounding context.
 
-- In this video, we will analyze why traditional feed-forward networks struggle when applied to sequential data.
-- By the end of this video, you will be able to understand the structural assumptions behind feed-forward models and why these assumptions break down for sequence modeling tasks.
-- Let's briefly recall how feed-forward networks such as multi-layer perceptrons process data.
-- They take a fixed-length input vector and produce an output through a series of transformations.
-- Each input is processed independently and there is no notion of order or time within the architecture.
-- We follow the assumption of independent and identically distributed data.
-- In other words, given the same input vector, the feed-forward network will always produce the same output regardless of any surrounding context.
-- Now, consider sequential data.
-- In a sequence, individual elements are not independent.
-- Their meaning depends on their position in the sequence and on the elements that came before them.
-- If we shuffle the elements of a sequence, we often change or completely destroy its meaning.
-- This directly violates the independence assumption that feed-forward networks rely on.
+Sequence problems violate both assumptions. In a sequence:
 
-## Key Takeaways from the Lecture Transcription
+- **order matters,**
+- meaning changes with **context,**
+- and examples often have **variable length**.
 
-- In this video, we will analyze why traditional feed-forward networks struggle when applied to sequential data.
-- By the end of this video, you will be able to understand the structural assumptions behind feed-forward models and why these assumptions break down for sequence modeling tasks.
-- Let's briefly recall how feed-forward networks such as multi-layer perceptrons process data.
-- They take a fixed-length input vector and produce an output through a series of transformations.
-- Each input is processed independently and there is no notion of order or time within the architecture.
-- We follow the assumption of independent and identically distributed data.
-- In other words, given the same input vector, the feed-forward network will always produce the same output regardless of any surrounding context.
-- Now, consider sequential data.
-- In a sequence, individual elements are not independent.
-- Their meaning depends on their position in the sequence and on the elements that came before them.
-- If we shuffle the elements of a sequence, we often change or completely destroy its meaning.
-- This directly violates the independence assumption that feed-forward networks rely on.
-- A deeper issue is that feed-forward networks have no built-in memory.
-- They do not maintain an internal state that can store information about past inputs.
-- As a result, each input is processed in isolation without any awareness of previous time steps.
-- This makes it impossible for feed-forward models to accumulate information over time or model temporal dependencies effectively.
-- It is not caused by insufficient data, poor training or suboptimal hyperparameters.
-- Even a perfectly trained feed-forward network cannot model sequences in a natural way because the architecture itself lacks recurrence and memory.
-- To handle sequences properly, we need models that explicitly incorporate state and temporal computation.
-- Now, let us summarize the main points of this video.
-- Feed-forward networks assume that inputs are independent and identically distributed.
-- Sequential data violates this assumption because order and context matter.
-- This fundamental mismatch motivates the need for recurrent architectures and the need for recurrent architectures which are designed to maintain memory and process data over time.
-- So, in the next video, we will introduce recurrent neural networks and study how they incorporate recurrence and hidden state to overcome these limitations.
+So the issue is not that feed-forward networks are "weak." The issue is that they are built for a **different problem class**.
 
-## Common Exam Pitfalls
+---
 
-- Writing only definitions without connecting to training behavior, model limitations, or practical consequences.
-- Mixing related concepts (for example: model capacity vs generalization, calibration vs accuracy, or explainability vs fairness) without clear boundaries.
-- Ignoring assumptions and failure modes; exam questions often test when a method breaks or needs modification.
-- Not using the terminology used in class (state, gradients, gates, uncertainty, diagnostics, reproducibility, bias metrics, etc.) in precise context.
+## What Feed-Forward Networks Actually Do
 
-## Summary
+A feed-forward network computes a mapping like:
 
-- This note converts the lecture transcript into exam-focused revision points with conceptual flow, mechanism-level understanding, and practical reasoning.
-- Revise this along with nearby lectures in the same week to answer integrative questions that combine design choice, optimization behavior, and evaluation criteria.
+```text
+x -> layer 1 -> layer 2 -> ... -> output
+```
 
-## Exam-Style Cues
+There is **no recurrent loop**, no evolving hidden state, and no built-in memory of earlier steps.
 
-- Define the core concept in one precise paragraph and state why it is needed in neural-network practice.
-- Explain the process/mechanism step-by-step using correct technical terms from the lecture.
-- Compare this concept with one close alternative and justify when each is preferred.
-- Mention one implementation or diagnostic checklist that improves reliability in real training workflows.
+If the same input vector appears again, the network produces the same output, regardless of what came before it.
+
+---
+
+## Why This Fails for Sequences
+
+In sequential data, the current element often cannot be interpreted correctly without earlier context.
+
+Example:
+
+- **"good"** usually suggests positive sentiment.
+- In **"not good"**, the earlier word **"not"** changes the meaning.
+
+A plain feed-forward model has no natural mechanism to carry the effect of **"not"** forward in time unless we manually encode that context into the input representation.
+
+That is the core failure: **no memory, no temporal dependency modeling**.
+
+---
+
+## Structural Limits of Feed-Forward Models on Sequences
+
+- **No built-in memory** of earlier inputs.
+- **No temporal recursion** from one step to the next.
+- **No native handling of variable-length inputs** without external tricks.
+- **Dependence on feature engineering** if context must be manually inserted.
+
+This makes feed-forward models awkward for tasks where information unfolds over time.
+
+---
+
+## Why Better Training Does Not Solve It
+
+This point is important:
+
+**The limitation is structural, not just due to bad optimization.**
+
+More epochs, more data, or better hyperparameters cannot magically create temporal memory in an architecture that does not contain it. If the model class lacks stateful transitions, it cannot naturally represent sequence dynamics.
+
+---
+
+## Feed-Forward vs Sequence Models
+
+| Property | Feed-forward network | Sequence model |
+|---|---|---|
+| **Input view** | Fixed vector | Ordered stream of elements |
+| **Memory of past** | None | Internal state or attention-based retrieval |
+| **Variable-length support** | Indirect | Natural |
+| **Context sensitivity** | Must be engineered | Built into the architecture |
+| **Long-range dependency modeling** | Weak | Designed for it |
+
+---
+
+## A Useful Distinction
+
+Do not confuse:
+
+- **"The model can classify a vector well"**
+- with
+- **"The model can model a sequence naturally."**
+
+A feed-forward network may work if you carefully hand-design features or use fixed windows, but that is very different from having an architecture whose computation itself is **history-aware**.
+
+---
+
+## Common Misconceptions
+
+- **Adding more dense layers gives memory.** More depth adds representational power, but not temporal state.
+- **A sliding window solves sequence modeling.** It only gives local context and can miss dependencies outside the window.
+- **If results are poor, hyperparameters are the main issue.** Often the deeper problem is that the architecture does not match the data structure.
+
+---
+
+## Exam-Ready Takeaways
+
+- Feed-forward networks assume **independent, fixed-size inputs**.
+- Sequence data violates that assumption because **order and context matter**.
+- The main limitation is **architectural**, not merely a training issue.
+- Sequence models are introduced because they provide explicit **memory and temporal computation**.
+
+**Bridge to the next note:** the first major architecture designed to fix this gap is the **recurrent neural network (RNN)**, which carries information forward through a hidden state.
