@@ -1,0 +1,63 @@
+
+
+
+  Page 1 of 2
+
+
+Blue-green & Rolling Deployments Transcript
+
+In this topic, we are going to understand two very important deployment strategies
+used in DevOps and cloud environments, blue-green deployment and rolling updates.
+These strategies define how new versions of applications are released without
+disrupting the user experience. Let's start with blue-green deployment.
+
+In a blue -green setup, you maintain two identical environments. One environment
+called blue, which is currently serving the users, where the users are actually
+navigating and going through the application, where the traffic is being served. The
+other, green.
+
+This is where the new version gets deployed, which no one has access to. Once the
+new version in the green is tested and verified, traffic is switched from blue to the green
+using a load balancer or a routing rule. If something goes wrong, you can immediately
+switch traffic back to the blue.
+
+This makes rollback extremely fast and safe. That's why blue-green deployments are
+often used for critical systems where the failure or bugs are unacceptable. The trade-
+off here is the cost.
+
+Because you are temporarily running two full environments, it will involve some cost.
+Now, let's talk about rolling deployments. In a rolling deployment, updates happen
+gradually.
+
+Instead of switching traffic all at once, the system updates one instance at a time. An
+old instance or an old server is taken out of service, updated, checked, and then
+brought back again. This process repeats until all the instances are updated.
+
+Rolling deployments are very popular because they don't require duplicate
+environments and work naturally with the auto -scaling groups and also Kubernetes.
+However, during the update, some users may hit the old version while others hit the
+new one. This means backward compatibility becomes very important.
+
+Rolling updates are efficient and cost -friendly and also widely used, especially in
+container platforms. To summarise, blue -green deployments prioritise safety and
+instant rollback at the cost of extra infrastructure. Rolling deployments prioritise
+efficiency and simplicity but require a careful version compatibility.
+
+Choosing the right deployment strategy directly impacts reliability, user experience,
+and confidence in your release process. Because at the end of the day, whatever
+application that we are trying to launch to the customers, that should not affect or
+hinder their experience.
+
+
+
+  Page 2 of 2
+
+
+If a customer is trying to go through your application over the internet and your team
+is trying to minor or minute the traffic from one infra to another infrastructure, then the
+customer should not have that minor discomfort.
+
+That is the goal of a good deployment across all the teams.
+
+
+-----------------------------------------------------End------------------------------------------------------

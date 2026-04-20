@@ -1,0 +1,65 @@
+
+
+
+  Page 1 of 2
+
+
+API gateway + lambda concept transcript
+
+In this topic, we are going to understand how API Gateway and Lambda work together
+to build a serverless API. One of the most common and powerful patterns in AWS.
+Let's start with the core idea.
+
+A serverless API means you don't run or manage servers at all. Instead, requests
+come in throughout API Gateway and your backend logic runs inside the Lambda.
+Think of this setup as a clean separation of responsibilities.
+
+API Gateway acts as your front door. Lambda acts as the worker that does the actual
+job. When a client sends a request, for example, from a browser or mobile application,
+API Gateway receives it first.
+
+It can validate the request, authenticate the user, apply some rate limits, then decide
+which backend function to call once everything checks out. Then it triggers a Lambda
+function. The Lambda function executes your business logic.
+
+It might validate input, save data to DynamoDB, read from S3, and send notifications
+or even return a JSON response. Each request runs independently and Lambda
+automatically scales based on the traffic. What makes this powerful is that you don't
+manage any servers.
+
+There is no EC2, no load balancer, no auto -scaling configuration, or there's also no
+patching. AWS handles all of that behind the scenes. This model works especially well
+for web and mobile backends, REST APIs, microservices, webhooks, event -driven
+applications.
+
+If the traffic suddenly spikes from 10 users to 10,000 users, the system scales
+automatically. Let's think about a simple real -world example. Imagine a form
+submission on a website.
+
+The user clicks submit. API Gateway receives the request. It triggers a Lambda
+function.
+
+The function validates the data and stores it in a database. A success response is sent
+back. That entire workflow runs without any server that has been running for 24 by 7.
+This model also has clear advantages.
+
+You only pay when requests are made. It scales automatically. A high availability is
+built-in.
+
+Integration with AWS services is also seamless. Of course, there are some things to
+keep in mind, like serverless functions are stateless, so you can't rely on memory
+
+
+
+  Page 2 of 2
+
+
+between the requests. There may be a small cold start delay for infrequently used
+functions.
+
+And debugging distributed systems might take some practise. But with good design,
+these are very manageable. To summarise, API Gateway provides the entry point.
+
+Lambda executes the logic. Together, they form the foundation of serverless APIs.
+
+-----------------------------------------------------End------------------------------------------------------

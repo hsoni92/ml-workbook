@@ -1,0 +1,51 @@
+
+
+
+  Page 1 of 2
+
+
+CIDR & Ip Addressing Transcript
+In this lesson, we are going to understand SIDR blocks and IP addressing, one of the
+most important building blocks of cloud networking.
+Before we talk about subnets, routing or gateways, we must understand how IP ranges
+are defined. That's where SIDR comes in.
+Let's start simple. An IP address is just a unique number given to a device so it can
+communicate on a network. For example, 10.0.0.1.15. In the cloud, every server,
+database and load balancer communicate using these IP addresses.
+Now, instead of managing single IPs, cloud networking works with a range of IPs and
+that range is defined using SIDR. SIDR stands for classless inter -domain routing. In
+simple terms, SIDR tells us how many IP addresses are available in a network.
+SIDR is written in the format of IP slash number. For example, 10.0.0.0.16. So, the
+number after the slash is extremely important. It tells us how large the network is.
+A small number means a bigger network. A large number means a smaller network.
+So, a slash 16 gives you a very large network while a slash 24 gives you a much
+smaller one.
+In AWS, when you create a VPC, you must assign it a proper SIDR block. This SIDR
+becomes the total address space for everything inside that VPC. From that VPC SIDR,
+you then create smaller SIDR blocks for subnets.
+Let's understand this with an example. A VPC might use 10.0.0.0.0 slash 16. Inside it,
+you create subnets like 10.0.0.0.0 slash 24 and maybe slash 20.
+So, each subnet is simply a smaller slice of the VPC's address space.
+One important thing to remember is that SIDR does not decide whether a subnet is
+public or private. That decision is made later using concepts called as route tables and
+gateways.
+This is a very common misunderstanding that we think SIDR block is the one that is
+responsible. But think of SIDR like buying land. The VPC SIDR is the entire land you
+own.
+Subnets are the plots you divide into whether a plot connects to a highway or not
+depends on roads.
+Not on the plot size, right? So, that is why SIDR planning is so critical. If you choose
+a SIDR that's too small, you run out of IPs very quick.
+If you choose overlapping SIDRs, networks cannot talk to each other. And once a VPC
+is created, its SIDR cannot be changed or modified. So, SIDR decisions are
+architectural decisions.
+
+
+
+  Page 2 of 2
+
+
+In the next lesson, we'll use this understanding to clearly differentiate public and
+private subnets and see how the routing actually makes that distinction.
+
+------------------------------------------------------End-----------------------------------------------------

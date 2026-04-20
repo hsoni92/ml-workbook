@@ -1,0 +1,47 @@
+
+
+
+  Page 1 of 2
+
+
+VPC Routing Essentials Transcript
+In this topic, we are going to understand route tables, which are one of the most
+important but often misunderstood parts of VPC networking. At a very simple level, a
+route table tells network traffic where to go. Whenever a packet leaves an instance,
+a request is sent from an instance.
+AWS looks at the route table and asks where should this traffic be sent. Each route
+has two parts, a destination and a target. The destination defines where the traffic
+wants to go and the target defines how it should get there.
+Route tables exist because without them, traffic would have no direction itself.
+Instances wouldn't know how to reach the internet, private subnets wouldn't know
+how to reach the NAT gateways, and even subnet-to-subnet communication would
+fail. Routing inside a VPC follows a simple but important rule called longest prefix
+match.
+This means the most specific route always wins. For example, traffic going to an
+internal IP stays inside the VPC, while traffic going to an external IP follows the
+default path if one exists. So every VPC comes with a default route table.
+By default, it only contains one rule, the VPC seeder pointing to the local. This allows
+all subnets inside the VPC to communicate with each other, but it does not provide
+internet access. Whether the subnet is public or private depends entirely on its route
+table.
+A subnet becomes public when it has a route that sends internet traffic to an internet
+gateway. That route usually looks like a 0.0.0.0.0.0. Basically, we are allowing
+anything, everywhere. So private subnets work differently.
+They never talk directly to the internet. Instead, their default route sends traffic to a
+NAT gateway. This allows your outbound internet access while keeping the subnet
+unreachable from outside.
+Route tables can send traffic to many different targets, such as the gateways or even
+other VPCs. So a usual or useful way to think about route table is like a road signs.
+They don't decide who is allowed to travel.
+They only decide which road traffic should take. And that distinction is very
+important. Route tables are not security controls.
+They do not allow or block traffic. They only decide the path. Security decisions are
+handled by security groups, which we'll cover in the upcoming sessions.
+Once you understand route tables, VPC networking becomes much easier to reason.
+
+
+------------------------------------------------------End-----------------------------------------------------
+
+
+
+  Page 2 of 2

@@ -1,0 +1,62 @@
+
+
+
+  Page 1 of 2
+
+
+Dynamodb concepts transcript
+
+In this topic, we are going to understand the Key -Value NoSQL model, which is one
+of the most widely used data models in the cloud systems. At its core, a Key -Value
+database works like a very large, extremely fast dictionary. You provide a key and the
+system instantly returns the value.
+
+This simplicity is exactly what gives NoSQL systems their speed and scalability. Let's
+start with the basic building blocks. A table in the top-level container.
+
+Inside the table, we store items. Each item represents one real -world entity. For
+example, a user, an order or a session.
+
+Unlike relational databases, items do not need to follow a fixed schema. One item may
+have 5 attributes, another may also have 10. Both are valid.
+
+This flexibility makes NoSQL very adaptable when requirements change frequently.
+Each item is uniquely identified using a primary key. There are two models, a simple
+partition key or a combination of partition key and the sort key.
+
+The partition key determines where the data is stored internally. If you use a composite
+key, the sort key allows multiple related items to exist under the same partition, like
+multiple orders for one user. Behind the scenes, the database divides data into  the
+partitions.
+
+Each partition holds a portion of the data and has performance limits. AWS
+automatically manages this by splitting, balancing, and scaling partitions as your data
+keeps on growing. You don't manage partitions directly, but your key design strongly
+influences this performance.
+
+So, why are key-value databases so fast? Because there are no joins, no table scans,
+no complex querying. The system performs a direct lookup using the key, similar to
+how a hash map works in programming. A great real-world analogy is DNS.
+
+When you type a website name, the domain name system doesn't search throughout
+everything. It directly maps a name to an IP address. Key -value databases work the
+same way.
+
+This model works extremely well for user profiles, login sessions, game leaderboards,
+or IoT device stats also. Basically, anything where you know exactly how data will be
+accessed. However, this model is not ideal for complex analytics or join -heavy
+workloads.
+
+
+
+
+  Page 2 of 2
+
+
+To summarise, key -value databases trade flexibility in querying for massive speed,
+scalability, and simplicity. They are a perfect fit for modern cloud applications that need
+predictable performance at scale. Next, we'll build on this foundation by looking  at
+capacity modes, auto -scaling, and pricing behaviour, which explains how these
+databases scale automatically in the production.
+
+-----------------------------------------------------End------------------------------------------------------

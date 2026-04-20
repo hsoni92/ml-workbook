@@ -1,0 +1,63 @@
+
+
+
+  Page 1 of 2
+
+
+S3 encryption options transcript
+
+In this topic, we'll talk about how data is protected when stored in Amazon S3 under
+encryption. So whenever data is stored in S3, it lives on physical discs inside AWS
+data centres. Although we don't get to see them, but these are stored somewhere in
+a physical disc.
+
+Encryption ensures that even if someone gains access to those discs, the data itself
+remains unreadable. AWS handles encryption using something called server -side
+encryption, SSE. With server-side encryption, you upload your data normally.
+
+AWS encrypts it after receiving it. It will store it securely and automatically decrypt it
+when you want to access. Now, there are two common server-side encryption options
+in S3.
+
+One is SSE through S3 and the other one is through a service called KMS. Let's start
+with S3. With encryption with S3, AWS manages the encryption keys completely.
+
+You don't create keys, change them or control access at the key level. AWS handles
+everything behind the scenes using a strong industry standard encryption. This option
+is perfect when you want encryption with zero management.
+
+Most general workloads use SSE with S3 because it is simple, secure and has no
+additional cost anyways.
+
+So a good way  to think about SSE with S3 is like storing valuables in a bank locker
+where the bank controls the lock and the security as well. Now, let's look at SSE with
+KMS.
+
+KMS also called as Key Management Service, which allows you to control the
+encryption keys. You decide who can use the key, where it can be used and every
+usage is locked.
+
+This is especially important for regulated industries where you need audit trails and
+strict access control.
+
+With KMS, every time data is accessed, AWS checks permissions with the KMS. That
+gives you better visibility and stronger governance. But it also introduces small
+additional cost and configuration.
+
+So in a simple way, it is a digital safe where you own the key, control access and every
+open attempt is recorded. So how do you choose? If you want simplicity and low
+maintenance, you go ahead with server side encryption with S3.
+
+
+
+
+  Page 2 of 2
+
+
+If you need compliance, auditing, fine grained control, then we have to choose with
+KMS.
+
+Both are secure. The difference is how much control and visibility you need when
+you're trying to encrypt your data.
+
+-----------------------------------------------------End------------------------------------------------------

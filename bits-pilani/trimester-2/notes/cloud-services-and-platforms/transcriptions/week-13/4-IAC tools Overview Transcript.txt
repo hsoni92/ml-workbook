@@ -1,0 +1,78 @@
+
+
+
+  Page 1 of 2
+
+
+IAC tools Overview Transcript
+
+In this topic, we'll look at some of the most popular tools used to implement
+infrastructure as code and understand how they differ from each other. Before jumping
+into names, let's quickly remind ourselves why we even need IAC tools. When
+infrastructure is created manually through a console, it becomes inconsistent, hard to
+reproduce, and difficult to audit.
+
+Automation solves this by allowing us to describe infrastructure as code, something
+we can version control, review, reuse, and automate. Now, IAC tools generally fall into
+two broad categories. First, they are cloud-native tools, which are built and maintained
+by numerous cloud providers themselves.
+
+Second, there are cloud -agnostic tools, which work across multiple cloud platforms.
+Let's start with the most popular tool in the industry in today's market, Terraform.
+Terraform is an open -source tool that allows you to define infrastructure using a
+declarative syntax.
+
+You describe what you want, and Terraform figures out how to make it happen. It
+works through something called providers, which allows Terraform to talk to cloud
+platforms like AWS, Azure, GCP, Oracle, and many other platforms. One of the biggest
+reasons Terraform is so popular is that the same language can be used across multiple
+clouds, which means this makes it ideal for teams working in multi -cloud or hybrid
+environments.
+
+You also get features like execution plans, state tracking, and modular design. All of
+these make infrastructure changes predictable and safe. A simple way to think about
+Terraform is as a universal remote.
+
+One tool can control many different cloud platforms. Now, let's look at AWS
+CloudFormation. CloudFormation is an AWS native IAC tool within AWS.
+
+It uses YAML or JSON templates to describe the AWS resources. Because it's built
+directly into AWS, it integrates extremely well with the AWS services. You don't need
+to manage external state and permissions, integrate cleanly with the IAM.
+
+However, CloudFormation only works with the AWS. It's not suitable if your
+architecture spans multiple cloud providers. So, if you are on a multi -cloud setup,
+CloudFormation would not be a reliable option in that case.
+
+You can think of CloudFormation as a remote that works perfectly, but only for AWS
+devices. Next, we have Pulumi. Pulumi takes a very different approach.
+
+
+
+
+  Page 2 of 2
+
+
+Instead of configuration files, it allows you to write infrastructure using real
+programming language like JavaScript, Python, or Go. This makes it attractive to
+software developers because you can use loops, conditions, and other programming
+concepts. So, Pulumi works across multiple clouds, similar to Terraform, but it requires
+stronger programming skills, and it has a smaller ecosystem.
+
+You can think of Pulumi as treating infrastructure like software engineering rather than
+configuration. Now, how do you choose between these tools? If your organisation
+works across multiple clouds and wants a widely adopted stable tool, Terraform is
+usually the choice. If you are deeply invested in AWS and want a native integration
+with minimal setup, then CloudFormation works well.
+
+If your team is developer heavy and prefers writing infrastructure in code rather than
+configuration, Pulumi can be a strong option in that case. The important takeaway is
+simple. All of these tools solve the same core problem, automating infrastructure, b ut
+they approach it in a different manner.
+
+Understanding their strengths helps you choose the right tool for the right environment.
+In the next topic, we'll move deeper into how Terraform actually works by looking at its
+workflow and core building blocks.
+
+
+-----------------------------------------------------End------------------------------------------------------

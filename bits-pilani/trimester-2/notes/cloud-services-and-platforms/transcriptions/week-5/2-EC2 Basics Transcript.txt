@@ -1,0 +1,43 @@
+
+
+
+  Page 1 of 1
+
+
+EC2 Basics Transcript
+
+What is EC2? When people talk about AWS, one of the first service you'll hear about
+is EC2. EC2 stands for Elastic Compute Cloud and simply put, it allows you to run
+virtual servers in the AWS cloud. Think of an EC2 instance just like a real server.
+
+It has its own CPU, memory, storage, and networking. You can instal an operating
+system, deploy applications, and connect to it just like you would with a physical
+machine. The big difference is you don't buy the hardware.
+
+AWS owns and manages these physical servers. You just rent the compute power
+when you need it. Now, why is it called elastic? Elastic means flexible.
+
+With EC2, you can launch one server today and add 10 more tomorrow if the traffic
+increases. The flexibility is what makes EC2 so powerful. In traditional setups,
+companies had to buy servers up front.
+
+They had to guess the future capacity, spend a lot of money, and still risk running out
+of resources during this peak usage. With EC2, that problem completely disappears.
+You launch server in minutes, scale up or scale down anytime, and pay only for the
+time the servers are running.
+
+This is the reason why EC2 is used for many things like testing your applications,
+processing your data, and even running temporary scripts or jobs. A simple way to
+think about EC2 is it's like renting an apartment instead of buying a house. You choose
+the size you need, move in quickly, pay only while you stay, and move out whenever
+you want.
+
+So the building maintenance is not your responsibility. And that is why EC2 is so
+important to understand. It is the foundation of compute in AWS, and almost every
+world AWS architecture uses EC2 in some form.
+
+So AWS starts to make a lot more sense because we'll go deeper and look at the key
+components of EC2 like AMI, instance, types, and key pairs.
+
+
+------------------------------------------------------End-----------------------------------------------------

@@ -1,0 +1,47 @@
+
+
+
+  Page 1 of 2
+
+
+Nacls vs Security Groups Transcript
+In this lesson, we'll clear up one of the most confusing topics in AWS networking, the
+difference between security group and network access control list, which we also
+called as network ACLs. Both control traffic, but they work at different layers and serve
+different purposes. Let's start with security groups.
+A security group is a firewall that protects an EC2 instance. It decides who is allowed
+to talk to that specific server. One important thing to remember is that security groups
+are stateful.
+If you allow incoming traffic, AWS will automatically allow the response traffic back
+out. You don't need to write separate outbound rules for replies, which means if a
+request comes in, you don't have to write a separate rule for that request to also
+communicate back outside of that. So there is no concept of explicit denying traffic
+when it comes to security groups.
+Now let's talk about network ACLs. A network ACL or access control list works at a
+subnet level. It controls what traffic can enter or leave an entire subnet also.
+Unlike security groups, network access control lists are stateless. That means if you
+allow inbound traffic, you must also allow outbound traffic explicitly. If you forget, traffic
+will fail.
+Even if security groups are correct, that is the key over here. Another key difference
+is that network access control support both allow and deny rules. Here's the most
+important concept, the order of evaluation.
+Whenever traffic enters a VPC, AWS checks the network ACL first. If the network ACL
+allows traffic, does it reach the security group or not? These things are going to be the
+first validation. Then the security group allows traffic.
+But if the network ACL does not allow, it will be stopped at the subnet level itself. It will
+never reach till your server. Let's understand this in a more deeper way.
+Most AWS architectures rely mainly on the security groups. They are simpler, safe,
+and designed for application level access. Network ACLs are usually used sparingly
+for broad rules, for IP blocking, or compliance needs.
+If you remember one thing from this lesson, remember this. Security groups protect
+instances. Network ACLs protect subnets.
+So your servers or your instances are inside your subnets. Subnets are inside your
+VPC. So network access controllers protect the subnet.
+Security groups protect your instances.
+
+
+------------------------------------------------------End-----------------------------------------------------
+
+
+
+  Page 2 of 2

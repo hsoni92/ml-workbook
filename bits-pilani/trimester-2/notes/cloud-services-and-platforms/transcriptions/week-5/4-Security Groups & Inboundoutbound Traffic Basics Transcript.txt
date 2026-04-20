@@ -1,0 +1,53 @@
+
+
+
+  Page 1 of 2
+
+
+Security Groups & Inboundoutbound Traffic Basics Transcript
+In this topic, we are going to understand security groups, which are one of the most
+important security concepts in AWS. A security group is essentially a virtual firewall
+from your EC2 instance. It controls what traffic is allowed to reach your server and
+where your server is allowed to send the traffic.
+If traffic is not explicitly allowed, it is blocked by default. Let's first talk about why
+security groups exist. In the cloud, servers are connected to networks, sometimes
+even the public internet.
+Without access control, anyone could attempt to connect to your instance. So security
+groups act as the first layer of protection, deciding exactly who can talk to your server.
+Now, let's break security groups into two parts, inbound traffic and outbound traffic.
+Inbound traffic refers to incoming requests. This includes things like users accessing
+a website or you connecting to a server using the concept called as SSH. Inbound
+rules define who can access the instance, which port number they can use, and which
+protocol is allowed.
+For example, SSH uses port number 22, a web traffic uses port 80, and for HTTP, they
+use 443. If any inbound rule doesn't allow the traffic, the request never reaches the
+server. Outbound traffic is the opposite.
+It controls where the EC2 instance can send the traffic. By default, AWS allows all
+outbound traffic. This means your instance can reach the internet, download the
+updates, or connect to the other services.
+In more secure setups, teams often restrict outbound access as well. Now, an
+important characteristic of security group is that they are stateful. This means if
+inbound traffic is allowed, the response is automatically allowed back.
+You don't need to create a separate outbound rule for replies. Another important point,
+security groups only support allow rules. They are no-deny rules.
+Anything not allowed to automatically denied. So security groups can also be attached
+in multiples to an instance, and the rules are combined together. Any change you
+make takes effect immediately.
+There's no need to restart the instance. A simple way to remember security groups is
+think of them like a security guard at an office building. Inbound rules decide who can
+enter.
+Outbound rules decide where people inside can go. If your name isn't on the list, you
+don't get the access. Security groups are pretty much simple in concept but extremely
+powerful.
+
+
+
+  Page 2 of 2
+
+
+Most EC2 access issues that beginners face are actually security group
+misconfigurations. In the next topic, we'll continue building on and move deeper into
+EC2 behaviour and its usage.
+
+
+------------------------------------------------------End-----------------------------------------------------

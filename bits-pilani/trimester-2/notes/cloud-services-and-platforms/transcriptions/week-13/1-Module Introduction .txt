@@ -1,0 +1,44 @@
+
+
+
+  Page 1 of 1
+
+
+Module Introduction Transcript
+
+In this module, we are going to step into one of the most important ideas in modern
+cloud and DevOps, infrastructure as code, commonly called IAC. Until now, most of
+what we have learned involved understanding cloud services conceptually. From this
+module onwards, we start thinking like engineers who build and automate the
+infrastructure.
+
+So, let's first understand why IAC even exists. Traditionally, infrastructure was created
+manually. Clicking through the cloud console, configuring servers one by one, setting
+networking rules manually, and hoping nothing was missed.
+
+This approach works for small setups, but it quickly breaks down as the systems grow.
+Manual setups lead to inconsistencies, human errors, and environments that are
+difficult to reproduce. If something breaks, nobody knows exactly what has changed
+or when.
+
+So, infrastructure as code solves this by treating infrastructure the same way we treat
+our application code. Instead of clicking buttons, we write certain definitions in a file
+that describe what infrastructure should look like. Those files can be version controlled
+with Git, reviewed, reused, and automated.
+
+This is where tools like Terraform come in. In this module, we'll focus mainly on
+Terraform because it is one of the most widely used IAC tools across the industry.
+We'll also briefly understand how it compares to other tools like CloudFormation from
+AWS and Pulumi.
+
+By the end of this module, you will understand what infrastructure as code really
+means, why it's essential in modern cloud environments, how Terraform works at a
+higher level, how Terraform communicates with AWS or any other cloud platform, and
+how infrastructure becomes repeatable, predictable, and automated. So, think of this
+module as the bridge between cloud fundamentals and real DevOps engineering work.
+In the next topic, we'll start by clearly defining what infrastructure as code is and why
+it matters before going deeply into how Terraform actually works.
+
+
+
+-----------------------------------------------------End------------------------------------------------------

@@ -1,0 +1,37 @@
+
+
+
+  Page 1 of 1
+
+
+Module introduction transcript
+
+In this module, we are going to focus on one of the most important building blocks of
+any application, data. Every application you use, whether it is a banking app, an e -
+commerce website or a streaming platform, depends on databases to store and
+retrieve the information. Without databases, applications simply cannot function.
+
+In cloud environments, databases behave very differently compared to traditional or
+on-prem systems. They are designed to scale automatically, handle failures gracefully
+and support millions of users at the same time. Throughout this module, we'll
+understand how cloud providers solve these challenges.
+
+We'll start by looking at the difference between relational and NoSQL databases and
+why both of them still exist in today's market. Then we'll explore what it really means
+to use a managed database, where the cloud takes care of patching, backups and
+availability for you. You'll also get an overview of the major AWS database services
+and we'll try to understand when to use each one of them.
+
+We'll talk about how databases stay highly available using features like multi -AZ
+deployment, backups, snapshots and replicas. And finally, we'll dive into DynamoDB
+to understand how the modern high-scale systems store and retrieve the data in a very
+easy manner. A useful way to think about this module is there is no single best
+database.
+
+The right choice depends on how your data looks, how often it changes and how your
+application accesses it. By the end of this module, you will be able to confidently
+reason with the database choices in the cloud architecture, not just in theory but in
+practical scenarios you'll encounter as a cloud or a DevOps engineer.
+
+
+-----------------------------------------------------End------------------------------------------------------

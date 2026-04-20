@@ -1,0 +1,74 @@
+
+
+
+  Page 1 of 2
+
+
+Relational vs NoSQL transcript
+
+In this topic, we are going to understand one of the most important choices in cloud
+architecture, which is choosing between relational database and NoSQL database.
+Instead of memorising definitions, we'll focus on why both exist and when each one
+makes sense. Let's start with relational database.
+
+Relational databases store data in tables made of rows and columns. Each table
+follows a strict structure also called as schema. Every record must follow that structure.
+
+They also support relationships between tables using keys and they enforce a strong
+consistency rules as well. This means when data is written, it is immediately accurate
+and reliable. Examples like MySQL, PostgreSQL, Oracle and SQL Server.
+
+These databases are excellent when correctness matters more than the speed. Think
+of a relational database like a well-maintained accounting spreadsheet. Every column
+has a meaning.
+
+Every row must follow certain rules. If something doesn't match, it's rejected. This
+makes relational databases perfect for systems where accuracy and relationships are
+critical.
+
+Now let's talk about NoSQL database. These are designed for scale, speed and
+flexibility. They don't require a fixed schema.
+
+Different records can look different. New attributes can appear anytime without
+breaking anything. They are also built to scale horizontally meaning they easily spread
+data across many machines.
+
+Common examples MongoDB, Cassandra, Redis and even DynamoDB when it comes
+to AWS. A good way to imagine NoSQL is like application event data or the logs. Every
+entry may look slightly different.
+
+Some have more fields, some have fewer. But what matters is fast writes, fast reads
+and massive scale. Let's compare them at a higher level.
+
+Relational databases which is the structured schema driven, strong consistency,
+supports joins. It is best for transactional workload. It is horizontally scalable.
+
+It delivers high performance. Now let's talk about real use cases. Relational databases
+are commonly used for banking systems, order management, inventory tracking or
+any kind of billing systems.
+
+
+
+
+  Page 2 of 2
+
+
+Anywhere correctness and relationships are non -negotiable. NoSQL databases are
+commonly used for user session storage, shopping carts, real -time analytics, gaming
+leaderboards, chat systems and many more. These workloads value speed and
+scalability over a strict structure.
+
+In real cloud applications, it's rarely one or the other. Most common systems use both.
+For example, orders and payments stored in a relational database, user sessions
+stored in DynamoDB, logs stored in an object storage.
+
+So each database does what it's best at. A simple rule to remember, if relationships
+and transactions matter, you choose relational. If scale, flexibility and speed matters,
+you choose NoSQL.
+
+This decision mindset will help you design better systems as we move deeper into the
+cloud databases. In the next topic, we'll zoom out and look at managed databases
+versus self -managed databases and why cloud providers strongly encourage
+managed services.
+
+-----------------------------------------------------End------------------------------------------------------

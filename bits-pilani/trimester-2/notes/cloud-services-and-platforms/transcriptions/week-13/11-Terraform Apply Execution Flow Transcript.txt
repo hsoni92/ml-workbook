@@ -1,0 +1,57 @@
+
+
+
+  Page 1 of 2
+
+
+Terraform Apply Execution Flow Transcript
+
+When we run Terraform Apply, a lot more happens behind the scenes than just
+creating resources. Understanding this flow is very important because it helps you
+debug issues and trust the automation. First, Terraform reads all your configuration
+files, which is your main.tf, variables, and provide rs, and builds an internal picture of
+what you want.
+
+At this stage, nothing is created yet. It's just updating and understanding its intent.
+Next, Terraform refreshes the state.
+
+This means it checks what already exists in the cloud and compares that with what it
+believes exists in the state file. Basically, it is looking for a comparison between the
+actual and the desired state. If someone manually deleted or modified something,
+Terraform notices it from here.
+
+After that, Terraform creates an execution plan. This plan is basically a preview. It
+shows what will be created, updated, or destroyed.
+
+This is a safety feature. Nothing changes yet. Then comes the confirmation step.
+
+Terraform pauses and waits for your approval. This is your last checkpoint before real
+infrastructure changes happen in your cloud environment. Once you approve,
+Terraform starts applying the changes one by one.
+
+It talks directly to AWS APIs and creates resources in the correct order. Dependencies
+are respected automatically. For example, a subnet is created before an EC2 instance.
+
+You'll see live logs showing what is being created, updated, or completed. These logs
+are helpful when something is slow or fails. After everything finishes successfully,
+Terraform updates the state file.
+
+This file becomes the source of truth for your future runs. If something fails in the
+middle, Terraform stops immediately. Some resources may already exist, but the next
+run will reconcile the difference instead of starting from scratch.
+
+A simple way to think about Terraform Apply is like placing an online order. You review
+the cart, confirm the payment, items ship one by one, and your order history updates
+at the end. Updating this execution flow makes Terraform much less scary and more
+predictable, especially when used in the automation and the CI-CD pipelines.
+
+Let's also try to understand this exact flow from a practical point of view.
+
+
+
+
+
+  Page 2 of 2
+
+
+-----------------------------------------------------End------------------------------------------------------

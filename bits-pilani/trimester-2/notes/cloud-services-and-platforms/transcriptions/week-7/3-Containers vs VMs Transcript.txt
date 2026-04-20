@@ -1,0 +1,37 @@
+
+
+
+  Page 1 of 1
+
+
+Containers vs VMs Transcript
+Now, let's clearly understand the difference between containerisation and virtualisation
+because this is one of the most important mindset shifts in the modern cloud
+computing. First, let's talk about virtualisation. Virtualisation was created to solve a big
+problem, running multiple systems on one physical server.
+Using a hypervisor, we can create multiple virtual machines, and each virtual machine
+behaves like a completely independent computer. Each virtual machine has its own
+operating system, its own libraries, and its own application. This gives strong isolation,
+which is great, but it also makes virtual machines very heavy.
+They consume more resources, and they take time to start. Now, let's look at
+containerisation. Containers solve a similar problem, but in a much more efficient way.
+Instead of virtualizing the entire machine, containers only isolate the application. All
+containers share the same underlying operating system, but each container carries its
+own application code and dependencies. This makes containers extremely lightweight
+and fast.
+A very simple way to think about it is virtual machines are like renting separate houses.
+Each house has its own kitchen, power, and water supply. Containers are like renting
+rooms in the same house.
+Everyone shares the building, but each room is private. That shared foundation is what
+makes containers faster and cheaper. Virtual machines are still very useful when you
+need strong isolation, when you want to run different operating systems, when you're
+dealing with old enterprise applications, but containers shine even more when
+applications need to scale quickly, microservices are used, continuous deployment is
+required, or cloud-native architectures are built.
+This is exactly why modern platforms like Kubernetes are built around containers, not
+virtual machines. So the key takeaway is virtualisation isolates machines.
+Containerisation isolates applications.
+Both have their place, but containers are the foundation of modern cloud development.
+
+
+------------------------------------------------------End-----------------------------------------------------

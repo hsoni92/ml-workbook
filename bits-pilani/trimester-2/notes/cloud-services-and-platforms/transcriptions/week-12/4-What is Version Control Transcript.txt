@@ -1,0 +1,49 @@
+
+
+
+  Page 1 of 1
+
+
+What is Version Control Transcript
+
+In this topic, we're going to understand what version control is and why git has become
+such a critical tool in modern DevOps and the cloud workflows. Let's start simple.
+Version control is a way to track changes made to certain files over a time period.
+
+It helps teams know what changed, who changed it, and when it was changed.
+Because in every product, we constantly have some new features rolling out. So some
+change is a part of the process.
+
+Without version control, collaboration becomes messy. Files get overwritten, changes
+get lost, and fixing mistakes becomes very difficult. With version control, every change
+is recorded, history is properly preserved, and you can safely go back to the previous
+versions whenever you want.
+
+Traditionally, there were centralised version control systems, where everything lived
+on one central server. If that server went down, the work will be stopped. Offline work
+was pretty much limited, and collaboration was very slow.
+
+So the modern systems use a distributed model, and that's where git comes in. Git is
+a distributed version control system, which means every developer has a full copy of
+the project and its history on their personal machine. You can work offline, commit
+changes locally, and sync later on when you're ready.
+
+So git was created by Linus Torvalds, and is now the industry standard used across
+almost all the software and cloud teams. One reason git became so popular is its
+speed and reliability. It handles branching and merging extremely well, which allows
+teams to work on features independently without breaking each other's work.
+
+In the cloud and DevOps environment, git plays a central role. It stores application
+code, infrastructure definitions, configuration files, and CICD pipeline logic, and many
+more. In many teams, git becomes the single source of truth.
+
+Any change pushed to git can automatically trigger builds, tests, and deployments. A
+simple way to think about git is like a Google Docs version history, but designed for
+code. You can see every change, restore older versions, and collaborate safely.
+
+The difference is git also works offline and integrates deeply with the automation. At
+this stage, you don't need to memorise commands. What's important is understanding
+why the version control exists and why git is foundational to the DevOps.
+
+
+-----------------------------------------------------End------------------------------------------------------

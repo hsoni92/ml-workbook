@@ -1,0 +1,55 @@
+
+
+
+  Page 1 of 2
+
+
+ECR Essentials Transcript
+In this lesson, we are going to understand the basics of Amazon ECR, which stands
+for Elastic Container Registry. So far, we've talked about docker images and container
+registries like docker hub. ECR is AWS owned container registry designed specifically
+to work securely inside the AWS ecosystem.
+At a high level, ECR is a place where you store docker images so that AWS services
+can pull and run them. Let's first understand why ECR exists. Docker hub is great for
+learning and public images, but it comes with limitations.
+Images are often public, they are rate limits, and authentication is completely separate
+from AWS. ECR solves these problems by keeping container images inside your AWS
+account, protected using IAM. That means only users, roles, or services you explicitly
+allow can access those images.
+Now let's talk about ECR repositories. An ECR repository is simply a logical container
+for images. Inside a repository, you store multiple versions of the same application
+image using tags.
+For example, you might have version 1, version 2, and the latest version. Each of
+these is just a different tag pointing to a specific image build. Repositories are created
+per region and can be private or public also.
+Next comes authentication. This is where ECR is very different from docker hub. ECR
+does not use usernames and passwords.
+Instead, it relies entirely on IAM. When you want to push or pull an image, AWS
+generates a temporary authentication token. Docker uses that token to log in.
+Access is granted based on IAM permissions. This makes ECR much more secure
+and enterprise-friendly. Even better, EC2 instances and elastic container services, the
+ECS or EKS, basically the services for container and orchestration can also pull the
+images automatically and no credentials are stored anywhere.
+Where is ECR commonly used? So, ECR is heavily used in CI CD pipelines where
+images are built and pushed. It is used in container and orchestration tools like ECS
+and EKS to deploy and pull the images. So, the regulated environments that need
+strict access, if your workload runs on AWS and ECR becomes the natural choice for
+image storage.
+So, here's a simple way to understand. Amazon ECR is like a private company
+warehouse where entry is controlled using access badges. Only the right people or
+services are allowed inside.
+That's the core idea behind Amazon ECR. In the next topic, we'll build on this and start
+understanding why Kubernetes is needed and how orchestration solves problems that
+containers alone cannot. Because Kubernetes is just an extended hand of
+containerisation.
+
+
+
+  Page 2 of 2
+
+
+So, containerisation is the evolved version of containers is orchestration. So, we'll go
+into deep dive on that in the next lesson.
+
+
+---------------------------------------------------End-----------------------------------------------------

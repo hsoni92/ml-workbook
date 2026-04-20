@@ -1,0 +1,123 @@
+
+
+
+  Page 1 of 3
+
+
+Attaching/detaching EBS volumes Transcript
+
+In this demonstration, we are going to understand and practically observe how the
+EBS volumes work and how to attach them to our EC2 instance. So a quick summary,
+EC2 instance is just a compute, a virtual machine and EBS is a persistent disc that
+can be attached to your instance. So EBS has no value if it is not attached to an EC2
+instance.
+
+Just the way our laptops have hard disc, EC2 instances use EBS elastic block store.
+The only difference over here is EC2 can be stopped or terminated but EBS volumes
+can exist independently. You don't have to mandatorily have an instance to create an
+EBS volume.
+
+So if you go back over here, so within the EBS, when you go to the volumes, you can
+create any kind of a volume with various options. So let's go through this step now. So
+as discussed earlier in the previous videos, so you can have multiple types of volumes
+according to your use case.
+
+If you want a general-purpose GP2, GP3, you want a cold HDD which is not that much
+used or you want a standard volume type, whichever one you want, you can choose
+the desired volume type. Then a proper size, let's say I want it like 50. A 50 GB should
+be the size and availability zone is something very important when it comes to creating
+your own volumes.
+
+EBS volumes are availability zone scoped which means wherever your EC2 instance
+is present in whichever availability zone, if you want to attach this new volume to that
+particular instance, the availability zone should match. So our EC2 instance which we
+created in the practical lab, so it was in US East 1C. This is the availability zone which
+is where the instance is created.
+
+So if we want to attach this volume as a storage, we have to create the volume in the
+same availability zone. You can create snapshot IDs if you want or you can use some
+existing templates. For now, we will ignore it and we'll just directly try to create a
+volume.
+
+So this standard type is our volume that we have created. Let's give it a name demo
+EC2 volume. So this is our volume which we set it for standard type 50 GB and the
+availability zone is US East 1C.
+
+Now remember this one which is GP3 8 GB. If we go back to our instance and this is
+our instance. If you go to the storage type, we already have and we always have a
+default EBS storage.
+
+
+
+
+  Page 2 of 3
+
+
+If you look at this, so this is our default EBS storage. So the volume is 8 GB. This is
+the volume ID.
+
+It is actively in use for this particular instance. Whatever activities you do that require
+a proper storage, this particular storage option is used. So this is exactly the storage
+which we are using at the moment.
+
+Now if you want to add an additional storage, the one which we created over here. So
+we can add our storage accordingly. So how we do is you go to your EC2 instance,
+go to actions.
+
+In this, within the storage, you choose attach volume. So when you choose the volume
+that you created. So this was the volume which we created few minutes ago.
+
+Demo EC2 volume. So it is visible over here because it is in the same availability zone.
+If it was in a different availability zone than US East 1, it would not have been visible
+over here.
+
+So you need to be very sure before creating your volume. So when we attach it,
+choose a device name. So after you create a volume, you also have to mount your
+storage to your EC2 for all the obvious reasons.
+
+So let's say I choose this one and attach a volume. Now if I go back to the storage,
+now I have two EC2 instances. Sorry, I have two EBS volumes attached to my EC2
+instance.
+
+Both of them aren't attached. So if either of them, I can detach them anytime I want.
+So all I have to do is go back to my volumes.
+
+And if I feel that this is an additional one, I do not want this much of a higher capacity.
+I'm just paying for something I'm not even using. So all I have to do, go to the actions
+and I can just say delete.
+
+It's asking me to type delete. So I'll just copy paste to save some time. So in order to
+avoid deleting a particular volume mistakenly, AWS helps us to pause it and verify
+what and why we are deleting it.
+
+So if I go back to my EC2 instance over here and I go to storage, I have an option
+called as detach volume. The way we have attached our existing new volume, we can
+also detach it. After detaching the volume, then we can delete it completely.
+
+So here I'm going to choose which one I want to detach. So the one which we created
+with the 50 GB, I want to detach this and I select detach. So once I refresh it, I'd again
+see only the default volume.
+
+
+
+  Page 3 of 3
+
+
+
+Now if I go back to my volumes over here, so despite detaching, I still have my EBS
+volume present. As I mentioned earlier, volumes are independent of EC2 instances.
+Their value increases when they are attached to an EC2, but that does not mean that
+if you detach a volume from an EC2, your volumes will automatically be deleted.
+
+That is not the case. If I try to, since I'm not using it anywhere, it is not attached to any
+particular EC2 instance, I can just delete the EC2 instance from here. So now my EC2
+instance got deleted.
+
+Reason being, it wasn't attached to any EC2 instance. The key points to remember
+from this demonstration is EBS volumes are availability zone specific. To whichever
+EC2 instance you are trying to attach it, you need to make sure that you have to use
+the exactly the same availability zone while creating your EBS volumes.
+
+
+
+------------------------------------------------------End-----------------------------------------------------

@@ -1,0 +1,50 @@
+
+
+
+  Page 1 of 1
+
+
+Terraform syntax basics transcript
+
+Now, let's  talk about one of the most important ideas in terraform, variables and
+outputs. These are two concepts that transform terraform from a static configuration
+into a reusable, flexible system. Let's start with variables.
+
+At a simple level, variables allow us to avoid hardcoding values inside our
+infrastructure code. Instead of fixing things like region, instance type or environment
+name, we define them once and reuse them again and again. You can think of
+variables like inputs to a form.
+
+The form logic stays the same, but the values change depending on who fills it. This
+makes terraform extremely reusable across environments. So, terraform supports
+different types of variables such as strings, numbers, booleans, lists or even maps.
+
+In the beginning, we'll mostly work with strings and and that's perfectly fine. Variables
+are usually defined in a file called variables.tf. Each variable can have a description, a
+type and sometimes a default value. Now, how do values actually get passed?
+Terraform gives us multiple options for it.
+
+You can define defaults directly or use an additional file called .tfvars file, pass values
+through the command line or even use environment variables. This flexibility makes
+automation and CI-CD pipelines a bit easier. Next, let's talk about outputs.
+
+Outputs are used to display useful information after terraform finishes creating the
+resources. For example, you may want to know the public IP of a server or the DNS
+name of your load balancer. Outputs behave like return values from your infrastructure
+code.
+
+They help in debugging, validation and also allows one module to pass data to another
+module. Now, let's briefly understand terraform's  syntax. Terraform uses a simple
+configuration language where everything is defined inside blocks.
+
+Each block has a type, a name and arguments. All .tf files inside a folder are read
+together. Terraform doesn't care about file names.
+
+It treats them as one configuration. It builds a dependency graph automatically and
+figures out what needs to be created first and applies changes in the correct order.
+This automation is what makes terraform powerful and safe.
+
+So, the takeaway here is variables make terraform flexible. Outputs make it observable
+and clean syntax makes it predictable. Once you understand these basics, working
+with real terraform modules becomes much more easier.
+-----------------------------------------------------End------------------------------------------------------

@@ -1,0 +1,65 @@
+
+
+
+  Page 1 of 2
+
+
+Serverless basics transcript
+
+Now, let's talk about one of the most powerful ideas in modern cloud computing, which
+is serverless. Despite the name, serverless does not mean there are no servers at all.
+Servers still exist, but you don't manage them anymore.
+
+You don't worry about provisioning, patching, or availability. You simply write your
+code, define when it should run, and the cloud takes care of the rest. Serverless means
+your code runs only when something happens.
+
+Instead of keeping a server running 24 by 7 and waiting for the requests, your code is
+triggered by events. And once execution finishes, resources are released
+automatically. A good way to think about this is electricity at home.
+
+You don't own a generator. You don't manage fuel or maintenance. You just switch
+something on and pay for what you use.
+
+Serverless works the same way. Let's talk about why this model is so powerful. One
+big advantage is that there is no server management, no OS updates, or no instance
+sizing.
+
+Another major benefit is automatic scaling. Whether one request comes in or a million,
+the platform scales automatically without your involvement. Then there's pricing.
+
+You pay only when your code runs. If nothing happens, you pay nothing, which makes
+serverless extremely cost -efficient for unpredictable workloads. It saves us a lot of
+billing amount.
+
+It also helps teams move faster. Developers focus only on the business logic instead
+of infrastructure setup. Serverless is also highly available by default, since cloud
+providers run it across multiple availability zones.
+
+Now, let's look at where serverless is commonly used. It's very popular for backend
+APIs, where API gateway triggers the lambda function. It's widely used for file
+processing.
+
+For example, when a file is uploaded to storage and triggers a function automatically.
+It's great for automation tasks, notifications, scheduled jobs, and data processing
+pipelines. However, serverless is not perfect for everything.
+
+It is not ideal for very long -running workloads, heavy compute jobs, or systems that
+must stay warm and running continuously. Because with lambda functions, you pay
+only for the usage. And when your systems run for a longer time, you turn out to pay
+more.
+
+
+
+  Page 2 of 2
+
+
+
+So the key idea is serverless shifts your mindset from managing servers to reacting to
+events. You focus on what should happen, not where it runs. In the next topic, we'll go
+deeper into AWS lambda itself.
+
+How functions work with handlers, what are they, how execution actually happens
+behind the scenes. We're going to go through all
+
+-----------------------------------------------------End------------------------------------------------------

@@ -1,0 +1,61 @@
+
+
+
+  Page 1 of 2
+
+
+Limitations & best practices transcript
+
+Before we wrap up serverless, it's important to understand that even though Lambda
+removes infrastructure management, it still has certain limitations. Knowing these early
+helps you design better systems. Let's start with the most common one, cold starts.
+
+When a Lambda function hasn't been used for some time, AWS shuts it down. The
+next request has to start it again, which adds a small delay. This is called a cold start.
+
+It's more noticeable in user -facing APIs and depends on things like runtime, packet
+size, and configuration. Another important limitation is execution time. A Lambda
+function can only run for a maximum of 15 minutes.
+
+That means it's not suitable for long-running jobs like video processing or heavy batch
+workloads. Serverless functions are also stateless. That means they don't remember
+anything between executions.
+
+Any data you want to keep must be stored outside in services like DynamoDB or S3.
+This design is actually what makes serverless scalable. There are also resource limits
+around memory, CPU, and concurrency.
+
+If these limits are hit, your function may fail. So, monitoring becomes important. Let's
+talk about the best practises.
+
+First, keep your functions small and focused, point to point. Each function should do
+one clear job. This makes your system easier to test, scale, and maintain.
+
+Second, design everything around the events. When something happens, a file
+upload, a database update, or an API call, let that event trigger the next step. Event -
+driven systems scale naturally and stay loosely coupled.
+
+Third, always handle errors properly. Add retries, or there is a concept called dead -
+letter queues. Basically, your system behaves safely even when failures occur.
+
+Another important best practise is optimising cold starts. Keep your packages
+lightweight. Avoid unnecessary libraries or dependencies in your code because
+latency really matters in some situations.
+
+So, monitoring is also critical in this case. You can use logs, metrics, and tracing to
+understand how your functions behave in production. You can't improve what you can't
+observe.
+
+
+
+
+  Page 2 of 2
+
+
+Finally, remember that serverless works best when services are combined
+thoughtfully. Lambda with API, S3, DynamoDB, and any other services. When
+designed well, serverless systems are extremely powerful.
+
+They would save you a lot of money and are easy to scale as well.
+
+-----------------------------------------------------End------------------------------------------------------

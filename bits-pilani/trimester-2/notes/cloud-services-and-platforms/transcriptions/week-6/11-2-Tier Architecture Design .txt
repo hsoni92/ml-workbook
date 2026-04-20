@@ -1,0 +1,318 @@
+
+
+
+  Page 1 of 8
+
+
+2-Tier Architecture Design Transcript
+In this session, we'll design a simple two-tier architecture wherein the tier one will have
+our web server which will handle users and user interface, basically a website. Then
+in the tier two, we'll have a database server which will store the data and per form all
+the database related operations for us. Now, the key idea is separation of
+responsibilities and security.
+Let me walk you through the flow of our architecture. Whenever a user tries to interact
+with our website, which is hosted on this remote server, which is EC2, and any
+operations that need to be performed on the database, the user should not directly
+have access to our database, which is hosted on AWS. For that, what we do, we only
+add a source like a web server, like EC2 in this case, to interact with the database and
+make the necessary operations.
+So the entire flow of this demonstration is going to be around making sure that our
+resources are public and private at the same time. So in this case, our web server is
+going to be publicly accessible to the users from the internet. At the same time, our
+RDS database is going to be restricted for the public on the internet.
+Let's try to build this exact architecture. So this is the entire architecture that we'll try
+to replicate into the production level. So how the flow looks like is when a user from
+the internet is going to or willing to interact with your server or with your website hosted
+inside an EC2 instance, so they have to enter a VPC network.
+So from a network layer, we have Amazon VPC. This is a private network inside which
+the application is being hosted. Then we have a web tier wherein we are using Amazon
+EC2 to run our application or the website.
+Then for the database tier, we are using Amazon RDS, which is a managed database
+and useful to perform all of our DB operations. Then for the security, we are using
+security groups individually, one for our web tier, one for our database tier. We're not
+going to use a single group because using a single group would categorise them under
+the same sort of firewall permissions.
+We want our users to interact with this, but we don't want our users to interact with the
+DB. That's the reason we maintain separate security groups. Now, for your server to
+interact with your database security group, we set up a common ground so that only
+requests coming from the web server are accepted and processed by your RDS, by
+your database.
+Now, all of these resources are going to be launched inside some availability zone. In
+this case, it is US East 1A. Remember, they are regions and availability zones.
+So in one of the region, in one of the availability zone, they're going to set up. Coming
+to the subnets inside our VPC, since we want our web server to be accessible publicly,
+we are going to place it inside a public subnet. Since we do not want our datab ase to
+be accessible over the internet, we are going to place it inside a private subnet.
+
+
+
+  Page 2 of 8
+
+
+
+Now, getting inside the VPC, the users will always pass along with the internet
+gateway. So this internet gateway will act as the door for your entry and exit into this
+VPC. This is the last layer of security that we are going to add and allow the users
+outside this private network.
+So every time a user tries or wants to navigate your website, he gets inside your VPC
+through an internet gateway, then he interacts to the public subnet inside which your
+EC2 instance is hosting the website. After navigating, if he's creating an account o r
+saving some address details or payment details, and those need to be saved inside a
+database, that is when EC2 instance will send a request to the DB saying that I have
+this request to be saved. And that is when the DB will verify if the request that it got is
+from a web server or from the user directly.
+After validating, it will process and the operation will be successful. This is how the
+entire two-tier architecture works in production. Now, let's try to perform this practically
+and understand the flow.
+First, let's create our web tier. So we'll launch an instance in this case, we'll name it as
+app web server. We'll use the default settings.
+The key pair, let's create a key pair called as simple architecture. So we're going to
+use this key pair to log in inside our remote server from anywhere that we want,
+whether it is from our local terminal or from any other server. Now, we use a default
+VPC because AWS provides us a default VPC to interact with.
+So we can also create a new VPC but for that we have to create our own subnets and
+everything. So since AWS already gave us the option, we are going to use this.
+Coming to the security groups, which is the actual firewall for our resources, we'll
+create a security group.
+Let's say we'll call this as web security group. We'll say this security group is configured
+to allow internet access. Now, first thing is since we want the users from the internet
+to access this server because inside this server is where the application runs.
+So for that we need to provide a HTTP since we are working with the internet. I'm
+going to keep it as anywhere so that anyone can interact with this. Next is I'm going to
+add one more rule over here for us.
+If ever we want to interact with this remote server, we need to do SSH. Remember
+SSH wherein we have to perform certain commands and we can interact with this
+remote server even from our local command prompt or terminal. So we can use either
+anywhere or my IP.
+So when you choose my IP, it will select your IP address automatically. Since I don't
+want to expose my IP address, I'm just going with anywhere in this case. So I have
+two security groups ready and let's launch our instance.
+
+
+
+  Page 3 of 8
+
+
+
+So our EC2 instance is ready. We'll give it a couple of seconds and it will be up and
+running. So we have one instance over here which we have just created.
+It is already running. It is an availability zone US East 1C. This is the public IP address.
+This is the security group. Let's go inside our security group and re -verify if whatever
+we have created is there or not. So the first rule we already have for our in the inbound
+rules.
+Let's open it from here. So we have two types of inbound rules. The first one is for the
+HTTP which is for the users on the internet to access this server.
+Then we have a SSH type of inbound rule which is for us to log in inside this remote
+server and perform certain operations. So EC2 instance is properly configured. Let's
+try to create a database.
+So here once you get into the database you click on the top right go to create database.
+Here you will have multiple options to choose whichever database engine you want to
+create. So always go with this full configuration.
+Do not go with easy create because it will have some recommended practises which
+we might not need. So always go with the full configuration. Then in the engine options
+you have various options like Postgre, IBM, Microsoft, SQL, Oracle, MariaDB.
+We are going to go with MySQL. In this case we use the production template. You can
+use multi AZ.
+Coming to the templates we have production well I think it's better we use a free tier
+so that we can avoid any billing in our case. So we use free tier. We'll give this
+database instance a name like AppDB.
+A username Masha username for our DB can leave it as admin. For credentials you
+have two types. There is an AWS managed service which is secret manager.
+Since we haven't covered this yet so we'll go with the self-managed and we'll use auto
+generate password. The password will be generated automatically and we can use
+that for now. Then coming to the connectivity since we want our database to be
+restricted we don't have to connect to our EC2 instance.
+So we'll just leave it as it is. We'll use the default VPC again over here as well.
+Whatever default VPC we used for EC2 instance for our web server we are going to
+use the same default VPC for our DB as well because ultimately we want both of our
+tiers to be present under one VPC.
+So we are going to use the default one. Coming to the public access we don't want
+our database to be accessible publicly so make sure you select this as no. This is
+always no by default unless you keep it yes but always keep it as no.
+
+
+
+  Page 4 of 8
+
+
+
+It is a proper verification that you have to do. Next step is the security group. So for
+our EC2 instance we have created one security group which is web security group.
+Similarly for our database also we have to create a separate security group because
+using this existing security group will allow your database to have public access on the
+internet. We added two inbound rules for the security group. First is anyone can access
+from the internet which is the HTTP protocol.
+Then we added SSH connection also. We want our database to accept request only
+from this security group not from anybody else. So we cannot use that security group.
+Let's try to create a new one. We'll name it as DB security group. We're not creating
+any inbound rules as of now.
+We're just creating a firewall. Once this is created we'll edit the inbound rules. You can
+read the remaining options as it is.
+Those are for monitoring. We'll go ahead with creating our database. So here the
+database does not allow internet traffic but we need it to allow traffic coming from the
+web server's security group.
+As per our architecture we need our database to accept requests coming in from our
+web server security group. So let's work on that. Let me open my database over here.
+So it is in creating state. It will take couple of minutes. In the meantime we'll just set
+up the security group for this.
+So I have the security that I created. Let's open this in a new tab. So if we go to the
+inbound rules there is only one default rule.
+It says MySQL TCP and the source is something else in this case. But we want our
+database to have the source of web server security group. So we edit the inbound
+rules.
+We delete this existing one and create a new one. So I'll say custom and we'll search
+for the group which we have created. This is the exact security group that we want our
+database to listen and perform the actions.
+Anything apart from this it should deny straight away. This is the only source and only
+resource that it should be considering to perform the actions. So I have chosen that
+as the source and I'll save the rules.
+So now we have total three security. This is the default one. So this is the web security
+group that we created for our EC2 instance and these are the the inbound rules that
+we've selected.
+Next comes our database security group and the only source for this is we are allowing
+our MySQL and we make sure that the source is only the security group that we
+
+
+
+  Page 5 of 8
+
+
+created for the web tier and make sure the port is correct. So the port should not or
+never be open at all. Right.
+So let's check if our database is ready or not. All right. So it's still in progress.
+Now before we go ahead there is one thing that you need to observe which is for our
+every database there is always a master username and endpoint and a password.
+Endpoint and the username you can get it from here. Once it is created you get the
+endpoint over here and you get the port number just to be sure.
+Right. Coming to the password we have set it up as auto-generated. So this is where
+you get to see that password whichever password got auto-generated.
+So you can save the master username and the password and just save the password
+over here although it is not recommended to make sure that you save the password
+somewhere safe. Once it is created we can try to get inside this database and verify
+the connection is set. All right.
+So now my database is up and running. Right. So if I click on this it is in the
+configuration state.
+Let's see if we have. OK. Let's refresh the tab.
+So this is my DB app DB and the engine that I'm using is MySQL. It is in this region
+and availability zone. This is the endpoint that is used to interact or connect with my
+database.
+This is the port that should be used. Now the VPC is the default VPC which we created
+and as you can see publicly it is not accessible. So this proves that our database is
+not able to cannot interact with any resource except for the one defined in the security
+group.
+So let's try to interact with this security group and directly from our EC2 instance. So
+let's head back to our EC2. We'll see if our EC2 is able to communicate with this
+database or not.
+So this is our web server. This is the web server that we have created. Let's try to
+connect to it.
+As discussed earlier in the EC2 demonstration we have two types to interact with our
+remote server either through the browser by clicking on connect or if you want to
+interact from your local command prompt or terminal you can run these two
+commands. But for now we'll go with this. Click on connect.
+So now I'm inside my EC2 instance. So let's try to set up our MySQL. Since this is a
+new remote server obviously it does not have any database clients installed inside.
+So we'll just try to set up our MySQL. So for that we can use MariaDB engine also. We
+can use any engine.
+
+
+
+  Page 6 of 8
+
+
+
+We are not using MariaDB. We're just using the MariaDB client to use and interact
+with our MySQL. It should take a couple of seconds to have it completely installed.
+All right. So our MariaDB is installed. Let's verify if MySQL is set up properly.
+So our MySQL is also set up perfectly. Now we can actually test the entire flow of how
+our EC2 instance is present, how we can interact with it. Let's run the command.
+So to test the flow we use MySQL hyphen h. Here we need to provide the endpoint.
+This is our endpoint for our database. We'll paste it.
+Then we need to provide the name of the user which is in our case it is admin. We'll
+try to prompt the password rather than copy pasting it. So I click on enter.
+It'll ask me for the password. So I'll type in the password over here. Obviously it won't
+be visible.
+It's going to be hidden. So as you can see initially this was our username which is our
+remote server. Now we have logged inside our MySQL.
+This proves EC2 and our relational database connectivity are using the security groups
+correctly. I logged into the web server and from there I'm able to connect to the
+database. This means the web tier and the database tier communication is working
+fine between both of these.
+The security groups are perfectly configured. If I run this exact command that I have
+run from my local laptop from my command prompt or terminal it is going to show as
+access denied even though I have the endpoint and I have the right password. Just
+because my laptop is not part of the security group it is going to deny the request.
+This is how you separate the security at the same time use the resources together as
+part of launching your applications or websites. Now if I just type in show databases
+let's say from here I have a couple of details and if I say use MySQL. So now my
+database has changed to MySQL.
+If I click on show tables inside this so we haven't created any tables as of now but
+AWS will have certain tables. So these are the databases and tables within the system
+that was created automatically by the AWS MySQL. They are required for MySQL and
+Amazon RDS to function properly.
+So these are created by them. Now if we want to create we can just normally the way
+we try to create a database we create our own. Let's say I want to create a database
+as MyDB.
+Let me correct that again there is a typing error. Okay so now we have created a
+database. We can use anything if I say use AppDB.
+
+
+
+
+  Page 7 of 8
+
+
+All the operations that we perform inside a database it gets changed. You can create
+a table you can insert the data. Everything is absolutely the same.
+This proves that every operation that we are trying to do through our EC2 inside our
+database all of them are performed correctly. So this is how we set up our
+infrastructure when a user opens a website a request hits the EC2 through the internet
+gateway. Then the app's logic will run inside our EC2.
+Let's say if I just click on exit I'm back into my EC2 instance. So assume there are
+certain applications or code files that are running my application. So all of my
+application is running inside this server at the moment.
+So EC2 queries the database if any particular logic requires to put or post some details
+into the database then since web server is configured as a source to accept and run
+the request so DB will perform the actions. This is how the communication happens.
+Users can interact with your website within a private network and keep your resources
+secure with multiple security layers like VPC internet gateway and the security groups
+and subnets.
+Users are never going to see this database but every operation that they require to
+store certain details are going to be performed without being exposed. Now common
+mistakes that everyone does is making your database public. Missing out on making
+it a yes will make it publicly accessible.
+Opening the database port to a random open port. So we have used a dedicated port
+thinking that your EC2 instance is going to store the data permanently. If I go ahead
+and try to terminate this instance also without having a proper knowledge that there is
+an application running inside.
+So I'm going to lose that particular application directly once I try to terminate this
+instance. So the data is never secure in your EC2 instance. You should always have
+a persistent storage like EBS and the last mistake mixing your web and database tier
+on the same instance.
+You always have to separate them have a different subnets have a different security
+groups and have a separate service for both of them rather than mixing everything into
+one. So this is how you set up your two tier architecture. Now additionally if you wa nt
+to elaborate into a more expanded form then all you do is you expand your VPC.
+Let's say our current architecture is only running in one availability zone. If the
+database is crashed over here and the users are constantly trying to save some details
+but since the database is crashed all those operations are returning some failures and
+the customers are getting frustrated. To avoid such things what we do we replicate the
+exact same environment and we create the same resources in another availability
+zone.
+So here we have used US East 1. So maybe here we can use we can set it up into
+another availability zone let's say US East 1 C or 1 D. So whenever if this is down this
+
+
+
+  Page 8 of 8
+
+
+particular availability zone will serve the traffic it will try to perform all the operations
+until this is up and running. As long as this is filled this will be added as a duplicate or
+it will be acting as a support resource. So to summarise this two-tier architecture is the
+foundation of many cloud applications.
+Separation of web and database will improve security and scalability. Every advanced
+architecture that you're going to see in microservices kubernetes or any serverless
+architecture all of them are built on the similar principles. Hope you understood this
+demonstration.
+
+------------------------------------------------------End-----------------------------------------------------

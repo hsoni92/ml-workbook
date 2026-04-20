@@ -1,0 +1,52 @@
+
+
+
+  Page 1 of 2
+
+
+VPC Peering Transcript
+In this lesson, we'll take a high-level look at VPC peering, which is one of the simplest
+ways to connect networks inside AWS. Let's start with what VPC peering actually is.
+VPC peering is a network connection between two VPCs that allow resources in one
+VPC to communicate with resources in another VPC using private IP addresses.
+The traffic does not go over the internet. It stays entirely on AWS private network. You
+don't need a VPN.
+You don't need a NAT device. You don't need any special gateway appliances also.
+Now, why do we even need VPC peering? In real projects, teams rarely use just one
+VPC.
+They often separate environments like development, staging, and production. They
+might isolate databases into their own VPC. They might create a shared services VPC
+for logging or monitoring.
+Now, even though these VPCs are separated, they still need to communicate. So,
+VPC peering allows that communication without merging the network. Let's look at
+some of the key characteristics because this is where people often get confused.
+So, first, VPC peering is one-to-one and it is a non-transitive which means if VPC A is
+connected to VPC B and VPC B is connected to VPC C, A cannot automatically talk
+to VPC C.
+Each peering connection stands on its own. Second, CIDR blocks must not overlap. If
+two VPCs use the same IP range, peering will simply not work.
+This is why IP planning is extremely important early in the cloud design. The third,
+routing does not happen automatically. After creating a peering connection, you must
+manually update the route tables in both the VPCs where we have set up the peering.
+If the routes are missing, traffic will never reach the destination. Fourth, security rules
+still apply. VPC peering only makes network communication possible.
+But security groups and network ACLs still decide what traffic is allowed. So, a useful
+way to think about VPC peering is it's like building a private road between two gated
+communities. The road exists but only those two communities are connected.
+You must update maps so traffic knows where to go and security guards still decide
+who can enter.
+So, when should you use VPC peering? It works best when you have a small number
+of VPCs. You need direct communication and the architecture is relatively simple.
+It's not ideal for large or complex environments where many VPCs need to talk to each
+other.
+
+
+
+  Page 2 of 2
+
+
+So, in those cases, other services are used which we'll cover in the later modules as
+well. For now, remember this, VPC peering is simple, private and effective but it has
+clear limitations by its design.
+
+------------------------------------------------------End-----------------------------------------------------

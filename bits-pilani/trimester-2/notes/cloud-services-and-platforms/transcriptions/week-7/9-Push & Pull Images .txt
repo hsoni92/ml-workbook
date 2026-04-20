@@ -1,0 +1,55 @@
+
+
+
+  Page 1 of 2
+
+
+Push & Pull Images Transcript
+In this topic, we are going to understand how Docker images actually move between
+systems using push and pull operations. This is a very important concept because in
+modern cloud environments, applications are not copied manually. They are pushed
+and pulled as images.
+Let's start with pulling an image. Pulling an image simply means downloading a pre -
+built application image from a container's registry. When you run a command like
+docker pull nginx, docker contacts the registry, downloads the image layers and stores
+them locally.
+If I'm using a windows laptop and I want to use an ubuntu based image where I could
+run some ubuntu based operations, I can use docker and I can pull the images for
+ubuntu based operating system.
+This is why pulls are usually very fast and very helpful. Now let's talk about pushing
+an image.
+Pushing means uploading your local build image to a container registry so that others
+or automated systems can use it.
+The usual flow is simple. You build the image, give it a proper tag, authenticate with
+the registry and push it.
+Only new or changed layers are uploaded which again makes the process efficient. It
+avoids duplicates. So why is this push-pull model so important? Because in real world
+systems developers don't deploy code directly to servers.
+They build images, pipelines are used to push those images and platforms like
+kubernetes will pull them when needed. Docker images become the delivery package
+of a software. Image tags also play a critical role here.
+Tags act like version numbers. They help us identify which version of the application
+we are running. It will allow a safe rollback and prevent accidental overwrites.
+Using clear tags like v1, rod or a timestamp is far better than relying on latest one.
+Security is another key aspect. Public registries allow anyone to pull images but
+pushing always requires authentication.
+Private registries require authentication for both pull and push making sure that only
+authorised systems can access those images.
+A common real world example is a CICD pipeline. A developer commits a code, the
+pipeline builds an image, pushes it to a registry and kubernetes will pull that image to
+deploy a new version all automatically.
+To make this intuitive, think of docker images like mobile apps. The registry is the app
+store. Pushing is publishing an app.
+
+
+
+  Page 2 of 2
+
+
+Pulling is downloading it and tags are the version numbers. Once you understand push
+and pull, you understand how modern software delivery works. In the next topic, we'll
+move forward and look at ECR basics.
+We'll try to understand the repositories authentication and the use cases of ECR.
+
+
+------------------------------------------------------End-----------------------------------------------------

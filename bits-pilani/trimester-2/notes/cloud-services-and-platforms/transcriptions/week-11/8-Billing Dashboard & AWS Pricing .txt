@@ -1,0 +1,51 @@
+
+
+
+  Page 1 of 2
+
+
+Billing Dashboard & AWS Pricing Transcript
+Now, let's talk about something every cloud professional must understand, the AWS
+Billing Dashboard and Pricing Basics.
+No matter how good your architecture is, if you don't understand the cost, your system
+can quickly become expensive and hard to control. The Billing Dashboard is
+essentially your financial control centre inside your AWS.
+It shows how much you're spending, where the money is going, and which services
+are responsible for that usage. Think of it like your monthly electricity or phone bill.
+Except here, every service contributes a small part to the total.
+Inside the Billing Dashboard, you can see your total monthly charges, service -wise
+breakdowns, like how much an EC2 instance has built up, how much S3 is giving us
+the bill, or how the databases have given us the billing.
+This helps you connect technical usage with the real money. One important thing to
+understand early is how AWS pricing works.
+AWS follows a pay -as-you-go model, as I mentioned earlier. You don't buy servers
+upfront. You pay only for what you consume, per hour, per second, per request, or per
+GB.
+Many services also follow tiered pricing, which means the more you use, the cheaper
+each unit becomes.
+This encourages scale without punishing the growth. Some services allow long -term
+savings through commitments like reserved instances or savings plan, which reduce
+the cost if you commit to the usage for a specific duration, like 1 or 3 years.
+Now, let's talk about common cost drivers. Compute services like EC2 are usually the
+biggest contributors in this space. Storage services like S3 and EBS also add cost,
+especially when the data grows.
+Data transfer, especially traffic going out of AWS, often surprises the beginners.
+Databases, NAT gateways, and load balancers also contribute significantly. So, a
+good mental model is AWS billing works very much like a combined electricity and
+mobile data bill.
+If you leave things running unnecessarily, the bill keeps on growing. That's why
+understanding the billing isn't just for finance teams. Engineers directly influence the
+cost through your design choices.
+Knowing how much billing works helps you design a smarter architecture, avoid waste,
+and build trust with your team and the leadership.
+This foundation prepares us for the next topic where we'll look at tools like budgets,
+cost explorer, and optimisation strategies.
+
+
+
+  Page 2 of 2
+
+
+We'll try to understand how these tools help us to maintain our AWS billing.
+
+------------------------------------------------------End-----------------------------------------------------

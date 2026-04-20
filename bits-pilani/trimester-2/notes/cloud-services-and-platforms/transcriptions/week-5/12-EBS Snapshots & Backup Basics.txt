@@ -1,0 +1,36 @@
+
+
+
+  Page 1 of 1
+
+
+EBS Snapshots & Backup Basics Transcript
+In this topic, we are going to understand EBS snapshots, how backup works in AWS,
+how data is restored when something goes wrong. Let's start simple. An EBS snapshot
+is a point in time backup of an EBS volume.
+It captures the data exactly as it exists at that moment. Think of it like taking a photo
+of your disc. Whatever data is there at that time gets saved safely by AWS.
+Now, why do we even need snapshots? Because systems fail, people make mistakes,
+volumes can get deleted, updates will also go wrong in some places. So, snapshots
+act as your safety net. If something breaks, you don't panic, you just restore.
+So, snapshots are stored by AWS and are incremental. That means the first snapshot
+is a full backup and every snapshot after that only saves what has changed. This
+makes them fast and cost effective.
+Now, let's talk about backup strategy in a very particular way. So, a good backup
+strategy answers three questions. What do I backup? How often do I back it up? And
+how long do I keep it? Critical data might need daily snapshots.
+Less important systems might be weekly. In real environments, backups are almost
+always automated. Teams don't rely on someone remembering to click create
+snapshot.
+Now, an important concept, restoring from a snapshot. You never restore a snapshot
+directly into a running EC2 instance. Instead, the flow is always snapshot, then it will
+create a new EBS volume, we attach it to EC2, then access the data.
+For root disc, you can even launch a brand new EC2 instance from an existing
+snapshot. A simple way to think about snapshot is like phone backups. If your phone
+crashes, you don't fix the broken system, you restore the last working backup.
+Same idea here as well. The key takeaway is this, snapshots are simple, powerful,
+and mandatory in real AWS environments. No production system runs safely without
+a proper backup and a restore plan.
+
+
+------------------------------------------------------End-----------------------------------------------------

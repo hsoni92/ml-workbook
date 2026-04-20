@@ -1,0 +1,61 @@
+
+
+
+  Page 1 of 2
+
+
+Creating a Dockerfile Transcript
+In this lesson, we are going to understand docker files, which are one of the most
+important building blocks in containerised applications. A docker file is simply a text
+file that contains a set of instructions telling docker how to build an image. You ca n
+think of it as a recipe or a blueprint.
+When docker reads the docker file, it follows each step in order and produces an entire
+docker image. This image can then be run as a container, shared with others, or
+pushed to a hub called as registry. Now, why are docker files so important? Without
+docker files, every developer sets up applications manually.
+Again, that leads to inconsistencies and the classic problem of it worked in my system.
+This will again come up. With docker files, the setup becomes repeatable and
+consistent.
+The same image works on different laptops, different servers, different pipelines, or
+different cloud platforms. That is why docker files are at the heart of this cloud
+deployment. Let's look at the core instructions used in almost every docker file.
+It usually starts with a from instruction. This means the base image, such as a Node.js
+image or a Python image or a Linux distribution. Basically, this means you're starting
+from an already prepared environment.
+Next is workdir, which we also refer to as directory, which sets the working directory
+inside the container. Once this is set, all the future commands run from that directory.
+Then we use copy to bring application files from our local system into the image.
+This is how your code ends up inside the container. After that comes run, which is
+used to instal dependencies or perform setup tasks while the image is being built.
+Each run instruction creates a new layer in the image.
+The expose instruction documents which port the application uses. It doesn't actually
+open the port, but it makes the intention clear. Finally, cmd defines what should run
+when the container starts.
+This is usually the command that launches your application. A simple way to
+remember the docker files flow is start with the base image, set a working directory,
+copy the files, instal dependencies, expose the port, and define how the app starts.
+Now, let' s talk about best practises because this is where real -world experience
+matters.
+Always use official base images when possible. They are more secure and better
+maintained. Keep your images small because small images start fast and have a fewer
+security risk.
+Order your instruction carefully so docker can reuse the cache layer and speed up the
+builds. There will be many steps that need to be repeated and you can cache them to
+
+
+
+  Page 2 of 2
+
+
+save some time. Use a docker ignore file to prevent unnecessary files from being
+added to the image and most importantly design containers with a single responsibility.
+One main process per container. So, following all these best practises, it will give you
+a better flow. It will save you some time and you can use it in a very efficient way.
+So, docker files are used everywhere whether it is a local development, kubernetes,
+or production systems. In the next topic, we'll move forward and look at container
+registries and how images are stored, shared, and pulled when needed. But before
+getting into the ECR, we'll also try to understand and have a practical demonstration
+of how docker can be used, utilised, built, and maintained for our day-to-day use.
+
+
+------------------------------------------------------End-----------------------------------------------------

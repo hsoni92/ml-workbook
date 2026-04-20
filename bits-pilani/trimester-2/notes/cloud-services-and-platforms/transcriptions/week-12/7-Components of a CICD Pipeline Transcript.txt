@@ -1,0 +1,62 @@
+
+
+
+  Page 1 of 2
+
+
+Components of a CICD Pipeline Transcript
+
+In this topic, we are going to understand the core building blocks of a CI -CD pipeline,
+which is build, test, and deploy. Think of a CI -CD pipeline as an automated path that
+takes code from developers' local system and safely turns it into a running application.
+Instead of people manually compiling the code, testing it, and copying files to the
+servers, the pipeline does all of that automatically.
+
+It's a sequence of tasks. Let's break it down step by step. First comes the build stage.
+
+This is where your raw source code is converted into something runnable. This code
+could be in any programming language. So that could mean compiling code, installing
+dependencies, or even building a docker image.
+
+If the build fails for some reason, the process will stop immediately. There's no point
+testing or deploying a broken code. You can think of this stage like preparing
+ingredients before cooking.
+
+Everything must be ready before moving forward. Next comes the test stage. Here,
+automated test checks whether the code behaves as expected or not.
+
+These may include some test cases like unit test, integration, and a few more.
+Basically, they look out for some formatting rules and security checks. Tests act like
+automatic reviewers.
+
+They catch mistakes early before users ever see it. If a test fails, deployment does not
+happen. This will eventually protect your production systems from smelly codes.
+
+After tests pass, we move to the deploy stage. This is where the application is released
+to an environment such as development, staging, or production. Deployment may
+involve updating servers, containers, or your serverless functions also.
+
+The key idea is consistency. Every deployment follows the same process every time.
+This avoids manual errors like copying the files incorrectly or forgetting certain steps.
+
+If we look at the full picture, a CI -CD pipeline always follows this flow. Code change,
+build, test, deploy, monitor. Each stage acts as a checkpoint that improves the quality.
+
+So, think of it like a factory's assembly line. Raw materials come in, quality checks
+happen at multiple stages, and only the approved products are shipped. CI -CD
+pipelines work the same way.
+
+
+
+
+  Page 2 of 2
+
+
+Automated quality gets before the release. The most important takeaway here is every
+CI-CD pipeline is built around three core ideas. Building software, testing it
+automatically, and deploying it safely.
+
+Everything else in DevOps builds on top of these foundations.
+
+
+-----------------------------------------------------End------------------------------------------------------

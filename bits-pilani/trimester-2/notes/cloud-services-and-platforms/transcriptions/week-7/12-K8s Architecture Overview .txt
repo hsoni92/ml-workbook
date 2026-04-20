@@ -1,0 +1,195 @@
+
+
+
+  Page 1 of 5
+
+
+K8s Architecture Overview Transcript
+Let's understand Kubernetes architecture in a very simple way that helps us map to
+real-world use cases. In this demonstration, I'll explain this from two perspectives. First
+is the internal Kubernetes architecture, like what happens inside the cluster.
+Then second one is external application view, how multi -tier architecture is managed
+on Kubernetes. And finally, we'll connect everything with one full flow, like how a
+request comes from the internet and reaches a container inside a concept called pod.
+Basically, internet till Kubernetes cluster, how the journey looks like, we are going to
+cover all of that.
+Now, don't worry about memorising the names, just focus on who does what, right?
+That is the main agenda for this. Coming to the big picture, I want you guys to frame
+before we move ahead, is remember one golden rule. Kubernetes is just a manager
+for containers.
+It decides where the container should run, how many should run, what to do if
+something crashes. Everything else is just different parts helping Kubernetes do their
+job. Remember this golden rule while we move ahead with our external application
+architecture.
+So this is Kubernetes from an engineer's perspective. First is a node -based
+responsibility. Now, here we see three different nodes, front -end, back -end and a
+database node.
+Nodes are nothing but servers with operating system like our EC2 instances or virtual
+machines. Kubernetes doesn't specifically require any front -end or back -end nodes.
+This is just one possible design for you to map it to an actual real-world use case.
+Each nodes that you observe here runs couple of pods and each pods runs the
+containers. Let's discuss about the pods. Pods are considered as a smallest
+deployable unit.
+A pod is one or more containers. It shares the network and a storage. In real life, front-
+end pods manage the user interface.
+Back-end pods manage the APIs and the database pods manage the database
+processing. What Kubernetes does on a pod level is it scales the pods, not the
+containers directly. As in, it will try to add more number of pods if the existing pods are
+not able to handle the job.
+If two pods are not able to accommodate the request, Kubernetes has some
+mechanisms which will automatically add two more pods over here. Pod number 3
+and pod number 4. That is what Kubernetes does when it comes to managing a pod.
+And the container inside this pod, this is where your application logic runs.
+If you remember the docker practical lab which we have performed, how we have tried
+to simulate an application running inside a container. Similarly, each of these
+
+
+
+  Page 2 of 5
+
+
+containers that you see inside the pods, these containers also run a certain logic. To
+deep dive more on the containers, these containers hold your application code.
+They have your runtime and the dependencies required to run that particular
+application. Kubernetes doesn't care what language you use. It could be a Java,
+Python or even Node.js. All of them are same to Kubernetes.
+This is how it looks from an external point of view, from an engineer's point of view.
+Now, let's look into the internal Kubernetes architecture. You'll notice Kubernetes is
+divided into two parts in this image.
+The first one is the control plane and the second half is the worker plane. Think of it
+like this. Control plane is like a brain and worker plane is like a muscle.
+Control plane does not run your application. It only decides what should happen. Let's
+break it down simply based on the parts that we have inside this control plane.
+The first one is API server. This API server is considered as the entry gate. It is the
+heart of Kubernetes.
+Everything goes through the API server. No shortcuts, no exceptions. You can think
+of it like if Kubernetes was a company, API server is the reception desk.
+Next comes our etcd. This is the memory. It is just a key value database, which is a
+part of your Kubernetes.
+It stores what pods should exist, how many replicas are there, what is the configuration
+data, what is the status of your cluster. You have all this information in the etcd. So, if
+etcd goes down, Kubernetes forgets everything what is going on.
+That is why etcd is treated very carefully in production. Next, we have a scheduler.
+Scheduler decides who goes where.
+Now, imagine you say I want to run three pods. The scheduler decides which worker
+node has enough CPUs, enough memory without any conflicts. This is what it is going
+to plan.
+It doesn't create the pods. It just assigns them to a node. So, in the previous image
+when we were discussing that if two pods are not able to accommodate the request,
+Kubernetes has a mechanism to add two more pods.
+That decision making lies with the scheduler. So, I'll repeat that once again. It doesn't
+create the pods.
+It just assigns them to a node. Moving on to the next element, which is controller
+manager. This is considered as the fixer of Kubernetes.
+This is a component that constantly asks is the cluster matching the desired state. Like
+you want three pods, one pod crashes. Controller manager notices this and a new pod
+is created automatically.
+
+
+
+  Page 3 of 5
+
+
+That's what we call it as self -healing in Kubernetes and this is where it comes from.
+So, controller manager always looks for the desired number of pods and the actual
+number of pods. When you are building up your Kubernetes cluster, you decide that
+two pods are sufficient to run all of my tasks inside this database node.
+And later on, after some monitoring, you've come to a conclusion that two pods are
+not sufficient. So, I would require four pods to be present all the time to process and
+accommodate all the requests coming into these two containers. You'll make some
+changes to the files and you will say that I need four pods always available on the DB
+node.
+If one pod crashes, the controller manager will observe that and it will try to replace
+that dead pod with a new one. So, this self -healing happens from the controller
+manager. So, this is how all of these components together rely on the decision making
+of your Kubernetes cluster.
+As you can see, API server is interacting with every little service that you have. It has
+a connection on the worker plane. It is interacting to all the components of your control
+plane as well.
+This API and this kubectl and UI that you see outside of it, these are nothing but the
+commands that we run in our terminal or command prompt. The moment we run
+Kubernetes commands, kubectl is how we run our Kubernetes commands. So, it is a
+very advanced concept.
+That's the reason I'm giving you an overview for this. The moment you run a command
+of kubectl, that command will be picked up through an API and the first request goes
+to the API server since this is the entry to your Kubernetes cluster. From here,
+depending upon what type of a request you're trying to raise, the kubectl command, it
+will try to interact with the relevant components of the Kubernetes and get the job
+performed.
+So, our journey, we only see this part. All of this control plane and the worker plane,
+these are behind the scenes. You don't get to observe or see what is going on here.
+Now, moving ahead to the worker plane, this is where your actual application runs.
+Here, it is all about decision making, analysing and validating. Here is where the action
+takes place.
+So, the first interaction that you get is through a kubelet. Kubelet is a node manager.
+Kubelet runs on every worker node.
+So, its job is simple. Talk to the API server, make sure containers assigned to the node
+are running properly or not. If something crashes, Kubelet reports it back.
+Going back to the previous example, when we decided two pods are not sufficient, we
+require four pods and one of them has crashed due to some overload or any throttling
+performance. So, that news will be picked up by the kubelet, informed to the control
+
+
+
+  Page 4 of 5
+
+
+manager and control manager will replace it with a new one. That is the reason we
+call kubelet as a node manager.
+Coming to the container runtime, which is the docker. So, this is the software as
+discussed earlier in the docker lessons. This is a software that actually pulls the
+images, starts the container, stops the container, all of these activities related to your
+docker.
+Kubernetes doesn't run containers directly. It asks this runtime to do it on its behalf.
+Because docker and kubernetes are separate.
+Docker is where you run your applications. Kubernetes is something that helps you
+manage your containers on a global level. Moving on to the next part, which is kube
+proxy.
+This is a networking helper. Kube proxy handles internal networking, any kind of load
+balancing the traffic between the pods. Let's say you have two pods present to launch
+your website over the internet.
+So, whatever traffic that you are getting over the internet, that request are transferred
+onto these two containers. Between the internet and these two pods and this front-end
+node, you have a kube proxy in between. So, you don't configure it directly.
+It just works in the background. It comes with the kubernetes architecture, again
+behind the scenes. So, internally, control plane decides, worker plane executes.
+That is how the entire architecture works in kubernetes. Let's try to understand the
+end-to-end flow. Let's connect everything.
+This is the most important part. First, you get a request coming from the internet. To
+access a front-end website or to save some details into the database attached to that
+application.
+So, traffic enters your cluster. Then, kube proxy takes over. It will route the traffic from
+an internal component called service.
+Service is another component that we define within our kubernetes cluster to navigate
+among these pods. Since we have numerous pods, here you can see like 8 or 8 nodes
+and roughly around 10 pods inside them. But in production, we have hundreds of pods
+present under multiple nodes.
+So, to make sure that the request that is coming in from the internet is reaching the
+right pod among multiple nodes, we use a component called services. That will direct
+the traffic to whichever pod the request should reach. So, once the request comes in
+from the internet, kube proxy will take over and route the traffic.
+Then, the request finally reaches the pod which is inside a container and the
+application processes that particular request. Next, the response goes back. Which
+means, the way it came, it is going to travel back to the same flow again.
+
+
+
+  Page 5 of 5
+
+
+Like, from the container, it will go back to the pod. From the pod, it will go back to an
+internal service. Service will go back to the internet via the kube proxy and the user
+gets a response.
+Whatever, whether it's a successful response or it is a failure response, it is a try again
+response, whatever it could be. All of this entire flow that I just mentioned to you, this
+happens in milliseconds. This is the reason why kubernetes is considered as the
+modern technology and many applications in today's world are reliant on docker and
+kubernetes.
+So, to summarise kubernetes in one single sentence, kubernetes is a system that
+decides, runs, monitors and fixes the containers automatically. Control plane things,
+worker node work, pods run the applications, services handle the traffic, kubernetes
+handles the failure and you are going to focus on building the applications. This is how
+the entire architecture of kubernetes works.
+
+
+------------------------------------------------------End-----------------------------------------------------

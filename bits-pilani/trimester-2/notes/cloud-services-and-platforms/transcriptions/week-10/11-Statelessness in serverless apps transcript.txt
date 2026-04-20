@@ -1,0 +1,72 @@
+
+
+
+  Page 1 of 2
+
+
+Statelessness in serverless apps transcript
+
+In this topic, we are going to understand a very important  idea behind serverless
+systems, which is statelessness. This concept explains why serverless platforms scale
+so easily and why they behave differently from your traditional servers. Let's start
+simple.
+
+A stateless function does not remember anything between requests. Every time it runs,
+it starts fresh. Each request must carry all the information needed to process it.
+
+Now, this might sound restrictive at first, but it's actually what makes serverless
+powerful. In cloud platforms like AWS Lambda, functions can start, stop, or move at
+any time. You don't control which machine executes your code.
+
+Now, because of that, you cannot rely on memory or previous executions. That's
+exactly why serverless systems are designed to be stateless. Here's a real-world use
+case that makes it more intuitive.
+
+Think of a hotel reception desk. Every time you go there, a different staff member
+might help you. They don't remember you personally.
+
+They look up your bookings in the system. The receptionist is stateless in this case.
+The booking database holds the state.
+
+Serverless works exactly the same way. Now, where does state actually live in
+serverless systems? State lives in external services such as databases, object
+storage, caches, queues, or even event streams. Lambda functions simply read data,
+process it, and write results back.
+
+For example, imagine a file upload system. A user uploads a file. S3 triggers a Lambda
+function.
+
+The function then processes that uploaded file and stores the metadata in DynamoDB.
+Once finished, it will exit. If Lambda crashes or restarts, nothing is lost because state
+was never inside it.
+
+This design brings major advantages. Stateless functions can scale instantly, run in
+parallel recovery automatically, retry safe handle failures with full grace. That's why
+AWS can spin up thousands of Lambda executions at once.
+
+Now, a quick warning. There are common mistakes people usually tend to make.
+Some developers try to store the session data in memory.
+
+
+
+
+  Page 2 of 2
+
+
+Some rely on global variables. Others assume the same function instance will always
+run. These approaches fail unpredictably.
+
+Lambda does offer a temporary directory, but it's only for short -lived processes. It's
+not guaranteed storage and should never hold important state. Remember this rule.
+
+Stateless does not mean no data. It means the function doesn't own the data. Data
+lives outside.
+
+Functions simply act on it. This design is what enables event -driven architectures,
+scalable workflows, and a reliable automation mechanism. So, the key takeaway is a
+serverless function is like a disposable worker.
+
+It shows up, does one job, saves the result somewhere safe, and it disappears. That
+mindset is essentially to designing reliable serverless systems.
+
+-----------------------------------------------------End------------------------------------------------------

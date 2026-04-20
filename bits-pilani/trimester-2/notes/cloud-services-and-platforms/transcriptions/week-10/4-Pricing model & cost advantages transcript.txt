@@ -1,0 +1,66 @@
+
+
+
+  Page 1 of 2
+
+
+Pricing model & cost advantages transcript
+
+Let's talk about one of the biggest reasons why serverless became so popular. It's
+pricing model. Unlike traditional servers where you pay even when nothing is
+happening, serverless completely flips the idea of cost.
+
+With AWS Lambda, you only pay when your cloud actually runs. If nothing runs, you
+pay nothing. That single idea already makes serverless very attractive option.
+
+Let's break down how Lambda pricing really works in simple terms. There are only
+three things that affect your cost. First is the number of requests.
+
+Every time your function is triggered, it counts as one request. AWS even gives a
+generous free tier here, which makes experimentation very easy for you. Second is
+execution time.
+
+You are charged based on how long your function runs. It is measured in milliseconds.
+The faster your function finishes, the cheaper it becomes.
+
+Third is memory allocation. When you assign more memory, AWS also gives more
+CPU power. That means your function may run faster even though memory is higher.
+
+This creates an interesting effect. Sometimes giving more memory actually reduces
+total cost. A helpful way to understand serverless pricing is think of EC2 like renting a
+car for the whole day.
+
+Even if you drive only 10 minutes, you still pay for 24 hours. Lambda is like using a
+taxi. You pay only when you are actually riding in the cab.
+
+If you rarely travel, the taxi is much cheaper for you. If you drive nonstop all day,
+owning a car might make more sense. This is why serverless is perfect for workloads
+that are event driven, unpredictable, or idle most of the time.
+
+And these type of scenarios could commonly lead to background jobs, notifications,
+processing files, or any other automation task. You don't need to guess the capacity.
+You don't overpay for unused servers.
+
+Everything scales automatically. Another major advantage is that you don't pay for
+infrastructure management also. There is no cost for patching servers, upgrading OS,
+managing capacity, or handling the scaling logic.
+
+AWS handles all of that for you. However, serverless is not always the cheapest
+option. As mentioned earlier, if your workload runs continuously, processes heavy
+
+
+
+  Page 2 of 2
+
+
+data, needs long execution times, or handles a constant high traffic, then it will turn
+out to be very cost effective.
+
+So serverless is not cheap by default. It is cost efficient when used for the right
+workload. The takeaway here is simple.
+
+Serverless pricing is pay -per-use, automatic, scalable, and beginner -friendly. It
+removes upfront cost and complexity, making it perfect for modern event -driven
+systems.
+
+-----------------------------------------------------End------------------------------------------------------

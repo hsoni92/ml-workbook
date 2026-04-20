@@ -1,0 +1,66 @@
+
+
+
+  Page 1 of 2
+
+
+Terraform Workflow Transcript
+
+Let's understand how Terraform actually works in practise by walking through its core
+workflow. Terraform follows a very clean and predictable life cycle made up of four
+main steps. Init, plan, apply and destroy.
+
+Once you understand this flow, Terraform becomes much easier to reason. Let's start
+with the first step, Terraform init. This command prepares your project to run.
+
+It downloads provider plugins, like if you're using AWS, it will instal and download all
+the AWS plugins to initialise the project and set up the infra for you. Think of this as
+setting up dependencies before running an application. It doesn't create anyth ing, it
+just prepares the environment.
+
+You usually run init once when we start a project or again if the providers change. Like
+instead of AWS, if you have moved to Azure, then you run this command. Next comes
+Terraform plan.
+
+This is one of the most powerful and safest feature of Terraform. Plan shows you what
+Terraform is about to do before it actually does anything. It compares your
+configuration files, the current Terraform state and real cloud infrastructure.
+
+Then it generates a preview showing what will be created, updated or even deleted.
+Nothing changes during this step, it's only a simulation, a reality check. This makes
+Terraform very safe and review friendly, especially in teams where you are working
+with a heavy infrastructure.
+
+After reviewing the plan, we move to Terraform apply. This is where real action
+happens. Apply takes the plan and actually talks to the cloud provider through APIs
+and creates or modifies the resources.
+
+Terraform then records everything in its file called as a state file. It's like a dictionary
+for Terraform. So it knows what all exists.
+
+You usually confirm before the execution or automate approval inside your pipeline.
+At this stage, your infrastructure becomes real from code to real infra. The final
+command is Terraform destroy.
+
+This will destroy the infrastructure that is managed by the Terraform. Whatever you
+have written through the code and run Terraform apply, all of that which is present in
+the state file will be destroyed. Destroy is commonly used for test environments, demo
+setups, training labs, temporary workloads and many more use cases.
+
+
+
+
+  Page 2 of 2
+
+
+Because it can delete everything, access to this command should be tightly controlled
+and restricted, especially to the beginners in the team. When you put all this together,
+the Terraform workflow looks like a clean life cycle. You define the infrastructure, you
+initialise, preview, then you apply them and you clean it up if it is not required.
+
+This predictability is why Terraform works so well with DevOps and CICD pipelines.
+Once you understand this workflow, writing Terraform code becomes far less
+intimidating.
+
+
+-----------------------------------------------------End------------------------------------------------------

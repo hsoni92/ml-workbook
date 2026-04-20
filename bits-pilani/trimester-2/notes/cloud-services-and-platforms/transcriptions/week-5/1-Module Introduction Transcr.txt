@@ -1,0 +1,28 @@
+
+
+
+  Page 1 of 1
+
+
+Module Introduction Transcript
+In this module, we are entering one of the most important areas of cloud computing,
+which is compute services. So far, we've talked about cloud concepts, architecture,
+and security. Now, we are answering a very practical question.
+Where does my application actually run in AWS? The answer is compute. Every
+website, API, database, or any background job needs a machine to execute the code.
+In AWS, that machine is usually an EC2 instance.
+This module focusses on understanding the EC2 instance and the idea of
+virtualisation. So each of these virtual servers feels like its own computer with its own
+operating system, CPU, memory, and security. A simple way to think about it is EC2
+is like renting a computer from Amazon's data centre.
+You choose how powerful it should be, what operating system it runs, and how secure
+it is, and when it should be turned on or off. Most importantly, you pay only for the time
+that you use it. In this module, we'll walk step-by-step through what EC2 really is, how
+instances are created and secured, how storage works with EC2, how AWS handles
+scaling and traffic.
+By the end, you won't just know the theory, you'll understand how a real application
+runs on AWS, and be ready to work with EC2 confidently. So let's begin our first
+understanding by what EC2 actually is.
+
+
+------------------------------------------------------End-----------------------------------------------------

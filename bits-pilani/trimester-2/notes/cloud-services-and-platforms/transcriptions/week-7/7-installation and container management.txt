@@ -1,0 +1,240 @@
+
+
+
+  Page 1 of 6
+
+
+Docker installation & container management
+Transcript
+Module 7, Lesson 2, Practical Lab. In this practical lab, we are going to practically
+learn how to set up Docker, how to use it and manage it for a production level projects
+with a simple demonstration. Before moving ahead, just to give you a quick recap,
+Docker allows us to package an application with its dependencies and run it
+consistently anywhere.
+So this is what Docker is all about and why we use Docker. Basically it solves the
+problem of it runs only in my system or it doesn't run in my system. Whatever
+application you have built using whichever programming language, Docker will make
+sure that your application that you have built using a specific programming language
+is run on every operating system at every environment.
+Now let's start with setting up our Docker to extend our practical lab, more practical
+activity. First, once you type in Docker desktop like this, you'll find the first link coming
+in from Docker. So once you land on this page, when you click on this Docker desktop,
+you'll have multiple options whether whatever operating system that you are using,
+choose your operating system and download it.
+Then extract the file and do the installation process just the same way how you do it
+for regular softwares. Right. Once you are done with downloading this Docker
+application, open your command prompt or your terminal and type in this command to
+verify if Docker is installed successfully or not.
+When you see a response something similar to this, that's a confirmation that Docker
+is successfully installed in your system. Now let's try to open the Docker desktop and
+go through this graphical user interface and observe what is going on, what all options
+do we have to manage, how can we do it, basically the do's and don'ts. So, the first
+thing whenever you are willing to work on Docker, the first thing you should observe
+is the engine is on, it is in the start or it is in the pause state.
+So always make sure that before you run any Docker commands, you resume your
+Docker engine. Once you resume your Docker engine, that is when Docker will be
+active and you can run all of your Docker commands. Now, apart from this, we have
+certain options wh ere we can observe how many containers we have built and how
+many containers are running with our application inside it.
+How many images have we created? What are the images that we hold? You get each
+and every details about your containers, images, volumes. What is the build history,
+every little detail that you've been performing using Docker. Each and every activity is
+tracked in here.
+
+
+
+
+  Page 2 of 6
+
+
+Right. Now, time to get our hands dirty with Docker. Let's do all of this exact activity
+from the CLI, from the command line interface.
+So we'll try to containerise a simple Python's data processing script with the help of
+Docker. So what we'll build is a Python container that reads a small data set, which
+means a list of numbers, calculates the mean and then prints the output. Right.
+Something simple. We just want to understand how does Docker allow us to run an
+application. So two ways to do this, either you can just, I'm currently I'm using IntelliJ
+as an IDE, so you can use VS code or any other software that you're comfortable with.
+So create a project like this and let's try to assume that we are building an application
+in Python. So let's say I just want to create an application like app.py. Inside this, I'm
+going to just add a couple of numbers to demonstrate the result. Let's say I have data
+and mean, I want to calculate the mean.
+So I want to print a particular, if you are aware of how Python works, then there
+shouldn't be a problem. But it's absolutely fine if you do not understand, because you
+don't have to know the programming part to work with Docker. Right.
+So all of this is before you start working with Docker. Right. So it is OK if you do not
+understand this.
+All I'm trying to do is just try to create a simple Python script that replicates like an
+actual application. So this has a certain logic and I want this logic to be run whenever
+my Docker is Docker container is active. So this represents a basic data proc essing
+task, something that every data scientist does on their day to day activities.
+Right. Not at this level, something more advanced as well. Now, assuming that this is
+our actual application that we want to run through a container rather than through a
+remote server to run this through a Docker container, we need to create a Docker file.
+So the extension, you do not have an extension for Docker file. It is just capital D with
+Docker and file. You do not have a .dy or .d, anything as such.
+Right. Once you see a file created with the logo in Docker, then you can start creating
+your actual Docker file. Docker file is the first stage towards your container.
+So we have common instructions in Docker like from, workdir, copy and cmd. The from
+defines the base environment. So we don't instal Python ourself.
+Docker gives it to us. For that, we use, we just define a base image like Python 3.10
+slime. So this is the name of a Docker base image.
+
+This is a prebuilt image provided by Docker. Right. So the moment Docker file runs
+with using the Docker daemon, it will understand that the user is expecting a base
+image that is prebuilt already.
+
+
+
+  Page 3 of 6
+
+
+So this comes from a Docker community. They have multiple prebuilt images like this.
+So I'm just using one of them.
+Next comes the workdir. So this sets the working directory inside the container. Right.
+So think of it like navigating inside your container. For example, if this is, since this is
+my operating system, currently I have this project running on the desktop. So on the
+desktop, when I want to get to this particular project, I say cd and I give th is name of
+this directory.
+Similarly, we are doing exactly the same with the workdir. So I'll say I want to set my
+work directory to this path like slash app. Then comes our copy instruction.
+Copy as the name says, moves the file from one machine into the container image.
+Right. Since container is considered as an isolated operating system inside your
+personal laptop
+So the files present in your laptop should be transferred into the container so that the
+application can be run. For that reason, we use this copy instruction to move all the
+files from our machine into the container. So here, since this is our only file w hich
+contains our application logic and everything.
+So I'll just mention this name. Then comes CMD command. CMD, this instruction tells
+Docker what to run when the container starts.
+The moment a container is ready, when you want your container to perform certain
+actions, all those details you're going to mention in this CMD. Right. So here I'm going
+to mention that I want to run my Python based application.
+And this is the name of the file. So what happens is I'm telling my container Docker
+that the moment container is up and ready, pick this file and try to run this file.
+Normally, if we had to do this exact command, this exact instruction on our own, we
+just want to verify if there are any errors or there is any mistake going on.
+So what we do, we just open the terminal, we say Python 3 and we provide the name
+of the file. So then what happens automatically, the lines of code present in the file,
+they start to read and get executed. I'm trying to print data set and the mean value o f
+that data set.
+That's the reason you see the data set provided list and then the mean value. Right.
+Let me correct this is a typing error.
+
+So the mean for the provided data set is 30. Similarly, whatever logic that you have
+inside your code files related to your application software or any website that you're
+trying to launch. This instead of app.py, you just have all of those files in your directory
+in your project directory.
+
+
+
+  Page 4 of 6
+
+
+Right. Now, instead of doing it manually from here, what we are doing is we are since
+we are trying to run this application through Docker. I'm mentioning exactly the same
+thing through this CMD instruction.
+So Docker file is not executing the code. It is defining how the image should be built.
+Right.
+So if I save click on control s and save these details and there is a command that we
+use whenever we want to convert a Docker file into a Docker image and that image
+will further be used to run your application inside a container. Right. The first process
+Docker file is created.
+Now, the next process is to convert it into an image. The command for that is Docker
+build hyphen T can give any name that you want. I'm saying I'm giving here my name.
+So this will be the name of my image. So you have to give a space and a dot. OK.
+So I think there is one mistake which I have done. So we need to provide the file name
+clearly. So I forgot to miss a dot.
+Let me do that again. Docker build and the name. So now my image is in progress of
+being built.
+This might take a couple of seconds should not take long enough. OK. So now my
+image is built successfully.
+Just to verify if my images are built. If I say Docker images. So one image that I just
+created 12 seconds ago is reflecting.
+Right. Now from the Docker file I have a Docker image which tells my container exactly
+what to do how to perform and where to look for details. Now that we have all that all
+the information needed to run our application inside a container.
+Let's actually try to create a container and run this image inside it. So the command
+for that is Docker run. You have to provide a name.
+So the name of the container I would say again my container. Now that you have
+provided the name you should also provide what image would you like to use to run
+inside your container. So the image that we have is my image.
+So I'll just say my image. The moment I run this command. You'll see the same result
+what we have seen earlier when we were individually trying to verify if there is any
+logic missing or any syntax error in our application code.
+
+Whatever result that we got a successful result. Exactly the same result we are getting
+the moment I created a container and I have made it active. Now just while I was trying
+to create a container the application started running.
+
+
+
+  Page 5 of 6
+
+
+Because at line number 7 the CMD command which we used. We have defined that
+the moment container is live run this particular application. That is the reason as soon
+as it is active it ran this particular command and it has given us the result.
+So the container ran the script and exited. This is pretty much a batch style  data
+workload. So if I say there is a command to show the containers to see what all
+containers do we have
+So docker ps hyphen a is a command which displays the containers. At the moment
+we have one container. This is the unique ID.
+This is the image used for this container. This was the command that was provided to
+run the moment container is active. This is the status of when it was created when it
+got exited.
+And what is the name of that container. We use this name. It means it is OK when if
+you do not if you delete this part from the command.
+Because we use this name flag in the command that we can remember easily
+remember this unique ID is kind of challenging. That's the reason we use this name
+flag to run a container while we are creating it. So if we verify the same within our
+docker desktop if you see our image which we have built is present over here.
+The container which we have created is also visible. Currently it is not running because
+the logic which we have mentioned was pretty much a three second job. So it ran the
+logic and the container is exiting.
+It is no longer in running status. So when if you want to run it or start the container
+again you just use this start button from here or you can just mention docker start and
+the name of the container. So this is how you use your applications to run inside your
+docker containers.
+Now the last step is to clean up our resources whatever we have created since these
+does not have any value to add for us. So I'm going to just delete or clean up these
+resources. If I want to remove a container I would say docker RM which stands for
+remove and I'll mention the container.
+Next I'll do the same with image. Since we are removing image we have to add an I
+RM I and the name of the image that you want to delete. So this is how we can clean
+up our resources instantly.
+Again all of our images and containers are deleted. So to summarise containers are
+disposable. Any container that you create you can dispose it anytime but the images
+are considered as reproducible.
+
+
+
+
+  Page 6 of 6
+
+
+The reason behind that is you have this docker file already with you. You can create
+another image using this exact docker file. All you have to do is run a docker command
+docker build hyphen T and give another new name.
+Initially what we have done. We just use docker build hyphen T. We gave a name like
+this my image. This was the command which we used to create an image.
+If you want to use exactly the same file or maybe you have changed from what you
+have added another file which you want to be part inside the container along with
+app.py. Let's say you have a readme.md file or any other configuration file. You want
+even those to be part of your container. So you add that details on this line and you
+create a new image.
+You can give any name that you want. You can say revised image or modified image
+and you just click hit enter and your image will be created. This is exactly the reason
+why we say images are reproducible and containers are disposable.
+So to summarise we wrote a docker file built an image ran a container stopped it and
+then removed everything a cleanup of our resource so that we do not have additional
+load on our system for something that we do not need. This is the complete docker
+container lifecycle right from a file to a container. In this demonstration we learned how
+to create a customised docker image using a docker file The core of docker in many
+industry graded projects.
+This is how we use docker in production levels but there are also prebuilt docker
+images which are for everyday use available through the docker community via docker
+registries. You will explore these in the upcoming lessons. So stay engaged and keep
+the excitement going.
+
+            ---------------------------------THANK YOU--------------------------------------

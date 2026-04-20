@@ -1,0 +1,63 @@
+
+
+
+  Page 1 of 2
+
+
+Providers, resources & modules transcript
+
+In this topic, we'll understand three very important  Terraform concepts that work
+together. Providers, Resources, and Modules. Let's start with Providers.
+
+A provider is what allows Terraform to talk to an external platform. It acts like a
+translator between Terraform and services like AWS, Azure, or even Kubernetes.
+When you say you want to create an EC2 instance, Terraform itself doesn't know how
+to do that.
+
+The AWS provider understands AWS APIs and performs those actions on Terraform's
+behalf. So, you can think of the provider as the communication bridge. Now, let's move
+to Resources.
+
+Resources represent actual infrastructure. Real things that exist in the cloud. An EC2
+instance, S3 bucket, database, or an IAM role.
+
+Each of these is considered as a resource. Every resource has a type, a name, and a
+configuration value. When Terraform runs, it compares what's written in your
+configuration with what already exists in your cloud account.
+
+And then it will decide what to create, change, or delete. If it already exists, it will
+ignore. If it exists with a different version, it will modify or update.
+
+This brings us to how the providers and resources work together. The provider knows
+how to talk to the cloud. The resource defines what you want to create.
+
+Terraform connects the two and manages everything through its state. Now, let's talk
+about modules. A module is simply a reusable package of Terraform code.
+
+Instead of rewriting the same infra again and again, you group it into a module and
+reuse it like a ready-made template. A module can contain resources, variables, and
+also the outputs. Think of a module like a reusable blueprint.
+
+Once designed, it can be used multiple times, like for development, testing, or
+production. This becomes powerful in real companies because teams create a
+standard module for networking, compute, security, or even for databases. Other
+teams reuse them safely without worrying about the implementation details.
+
+So, Terraform itself treats your project as a module called root module and inside it,
+you can call child modules. This approach keeps your code clean, readable, and
+scalable. To simplify with an analogy, a provider is like a service provider company.
+
+
+
+
+  Page 2 of 2
+
+
+A resource is an actual appliance. A module is a pre-designed room layout you reuse
+across buildings. Together, these three concepts form the foundation of how the
+Terraform works.
+
+Once you understand providers, resources, and modules, everything else in Terraform
+becomes much more easier to grasp.
+
+-----------------------------------------------------End------------------------------------------------------

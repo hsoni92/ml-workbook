@@ -1,0 +1,65 @@
+
+
+
+  Page 1 of 2
+
+
+End-to-end serverless workflow transcript
+
+In this topic, we'll look at how a complete serverless workflow comes together from the
+moment an event happens to the final outcome. The easiest way to understand this is
+through a simple pattern. Upload, process, notify.
+
+This pattern shows up everywhere in real -world systems. Think about uploading a
+profile picture or uploading a document. Something happens and the system reacts
+automatically.
+
+That reaction is what serverless is really about. Let's start with the trigger. In many
+workflows, the starting point is an event.
+
+For example, a file uploaded to an S3 bucket. S3 can automatically trigger an event
+whenever a new object appears. That event contains useful information like the file
+name, bucket name, and the timestamp of when it has occurred.
+
+Once the event happens, it triggers a lambda function. Lambda automatically starts
+running without you managing any servers. It executes your code, does its job, and
+then it stops.
+
+This job might include validating data, resizing an image, or extracting information.
+After processing, the workflow usually produces some output. Now that output could
+be saving the processed data into another S3 bucket, writing records into DynamoDB,
+sending a notification, or triggering another service.
+
+So it could work in a chain reaction process as well. This is how serverless workflows
+chain actions together. What makes this powerful is that everything is event-driven.
+
+Instead of constantly checking whether something changed, the system reacts
+instantly when something actually happens. This model reduces waste, improves
+performance, and it simplifies your architecture. You see this pattern everywhere in
+the real products.
+
+Even at Amazon, we use it very heavily for our day-to-day products that our customers
+use. When you upload a profile photo, it gets resized automatically. When logs arrive,
+they are parsed and analysed also.
+
+When documents are uploaded, text is extracted and stored from that document. All
+of these use the same idea, upload, process, notify. So serverless works so well here
+because it scales automatically, charges only when used, handles failures internally,
+integrates easily with other AWS services, and you don't have to worry about the
+server capacity or resources being idle.
+
+
+
+
+  Page 2 of 2
+
+
+One important design idea to remember is that each function should do one small job.
+Short execution, clear responsibility, and clean input or output makes your serverless
+systems easier to scale and maintain. So whenever you think about serverless, think
+in terms of reactions.
+
+Something happens, code runs, outcome is produced. That mindset is key to
+understanding your modern cloud architectures related to serverless
+
+-----------------------------------------------------End------------------------------------------------------

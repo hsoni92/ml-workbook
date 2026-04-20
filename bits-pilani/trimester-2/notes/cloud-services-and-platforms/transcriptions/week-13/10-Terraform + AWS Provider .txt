@@ -1,0 +1,61 @@
+
+
+
+  Page 1 of 2
+
+
+Terraform + AWS Provider Transcript
+
+In this topic, we are going to understand how Terraform actually talks to AWS because
+this clears up a lot of confusion for beginners. Terraform by itself cannot create EC2
+instances or VPCs. It needs something called a provider and in our case that's the
+AWS provider.
+
+Think of the provider as a translator where Terraform speaks its own language and
+AWS speaks API language. The provider sits in between and translates your intent
+into AWS API calls. When you write Terraform code and run it, the first thing Terraform
+does is initialise the AWS provider.
+
+This tells Terraform which cloud you're working with and where. Next comes
+authentication. Terraform needs permission to talk to these cloud providers.
+
+This can happen using access keys, environment variables, or most commonly in the
+real projects we use IAM rules. Using IAM rules is preferred because it avoids hard -
+coded secrets and improves the security. Once authentication is done, Terraform
+starts its actual job.
+
+It reads the current state of your AWS environment. Then it compares that with what
+you described in your configuration files. Based on the difference, Terraform decides
+what needs to be created, updated, or deleted.
+
+This is why Terraform is called declarative. You just describe the desired end state
+and Terraform figures out the steps. When you run apply, Terraform sends API
+requests to AWS such as create an EC2, attach security groups, or configure
+networking.
+
+AWS executes those requests and Terraform records the result in its state file, whether
+it is successful or failure. Another important idea here is provider versions. Providers
+change over time, so Terraform allows you to lock a specific version to avoid
+unexpected behaviour.
+
+So in real -world environments, teams often use multiple AWS accounts or regions.
+Terraform supports this by allowing multiple provider configurations. For example, one
+for the project manager.
+
+AWS provider is the translator. AWS APIs are the workers doing the actual job. You
+talk to the project manager, the translator converts the instructions, and the workers
+build the infrastructure for you.
+
+Understanding this interaction is extremely important because many Terraform errors
+come from provider configuration, permissions, or authentication issues. Once this
+
+
+
+  Page 2 of 2
+
+
+mental model is clear, debugging and designing your Terraform setup becomes much
+easier.
+
+
+-----------------------------------------------------End------------------------------------------------------

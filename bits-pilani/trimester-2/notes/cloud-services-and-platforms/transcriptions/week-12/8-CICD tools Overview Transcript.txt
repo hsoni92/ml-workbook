@@ -1,0 +1,63 @@
+
+
+
+  Page 1 of 2
+
+
+CICD tools Overview Transcript
+
+In this topic, we'll understand the most commonly used CICD tools and how they fit
+into the modern DevOps workflow. CICD tools are responsible for automating the
+process of building, testing, and deploying applications. Instead of developers
+manually running certain commands or copying the files,  these tools take over and
+execute steps automatically whenever something changes in the code.
+
+Think of CICD tools as automated supervisors that ensure every code change goes
+through the same quality process. Now, let's look at the most widely used tools in this
+space. First, GitHub Actions.
+
+GitHub Actions is built directly into GitHub, which makes it very easy to use if your
+code already lives there. Whenever someone pushes code or opens a pull request,
+workflows can run automatically. These workflows are defined using simple YAML files
+and can run tests, build images, or deploy your applications.
+
+Because everything lives inside GitHub, setup is fast and maintenance is very minimal.
+This makes GitHub Actions very popular for cloud-native and modern teams. Next, we
+have GitLab CI.
+
+GitLab CI is tightly integrated into GitLab platform. Here, source code, pipelines, and
+deployment tracking all live together. Pipelines are defined using a .gitlab-cli.yaml file,
+and GitLab provides built-in runners to execute certain tasks.
+
+It has strong support for containers and DevOps workflows, making it popular in the
+enterprise environments that want a single unified tool for all their use cases. Now,
+let's talk about Jenkins. Jenkins is one of the oldest and most flexible CI -CD tools
+available.
+
+It works using plugins, and there are thousands of them available. You can customise
+Jenkins to work with almost any language, platform, or a tool. Pipelines are written
+using a Jenkins file, and teams usually host Jenkins themselves.
+
+The advantage of Jenkins is flexible and controlled. The downside is it requires more
+setup, maintenance, and operational effort compared to the other tools. A simple way
+to think about these tools are GitHub Actions works best when you want simplicity and
+tight GitHub integration.
+
+GitLab CI works best when you want an all -in-one DevOps platform. Jenkins works
+best when you need full customisation and control. All of them aim to solve the same
+problem, automating software delivery, but they approach it in a different way.
+
+
+
+
+  Page 2 of 2
+
+
+The key takeaway here is that CI-CD tools are backbone of DevOps automation. They
+reduce human errors, speed up the delivery, and make the deployments predictable
+and repeatable. In the next topic, we'll move forward in the pipeline and look at how
+the pipelines are actually structured, focussing on the core stages, which is build, test,
+and deploy.
+
+
+-----------------------------------------------------End------------------------------------------------------

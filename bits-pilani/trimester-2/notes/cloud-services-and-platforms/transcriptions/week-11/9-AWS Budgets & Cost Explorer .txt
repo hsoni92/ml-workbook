@@ -1,0 +1,48 @@
+
+
+
+  Page 1 of 2
+
+
+AWS Budgets & Cost Explorer Transcript
+Let's talk about cost visibility in AWS because one of the biggest cloud challenges is
+in performance or security, its unexpected bills. In traditional data centres, cost was
+fixed. In the cloud, cost changes every day depending upon your usage.
+That's why AWS gives us tools to see, understand, and control our spending. The two
+most important tools are Cost Explorer and AWS Budgets. Let's start with Cost
+Explorer.
+Cost Explorer is essentially your financial dashboard inside your AWS. It helps you
+answer very practical questions like, Where is my money going? Which service is
+costing the most? How much my spending changes over time? You can view daily or
+monthly grap hs filtered by service, regions, account, and you can even see the
+forecast for future spending. This makes it easier to spot sudden spikes or long -term
+growth trends.
+For example, if EC2 cost suddenly doubles, Cost Explorer helps you quickly identify
+where it happened and which region or service has caused it. Now, Cost Explorer
+helps you understand spending but it does not stop anything. That is the key.
+That is where AWS Budgets comes in. Budgets act like guardrails. You define limits
+such as monthly cost of $200 and AWS sends alerts when the usage crosses a
+threshold like 80% or 90%.
+These alerts can go to email or trigger an automation helping teams react early before
+the costs get out of control. Budgets can also track usage -based limits such as
+compute hours or monitor how well the reserved instances and savings plans are
+being used. A very important concept here is cost allocation tags.
+Tags are simple key value labels like project, environment, or a team. Once enabled
+for billing, they allow you to break costs logically, which means instead of seeing one
+large bill, you see which project or team is responsible for which portion of the spend.
+A good real-world way to think about this Cost Explorer is like your bank statement.
+Budgets are your spending alerts and tags are category labels like rent, travel, or
+groceries. Together, they give full visibility and the control. In real organisations, teams
+use these tools to detect cost spikes early, trace ownership, and prevent budge t
+overruns.
+The key takeaway here is simple. Cost optimisation starts with visibility. You can't
+control what you can't see.
+In the next topic, we'll continue exploring how AWS helps track and optimise spending
+using tagging, right-sizing our resources, and planning the strategies.
+
+
+------------------------------------------------------End-----------------------------------------------------
+
+
+
+  Page 2 of 2

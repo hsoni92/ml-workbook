@@ -1,0 +1,48 @@
+
+
+
+  Page 1 of 1
+
+
+Understanding .tf Files Transcript
+
+Now let's understand how terraform code is actually structured using dot tf files.
+Terraform works by reading all the files with a dot tf extension inside a particular folder
+or a directory. It doesn't execute them one by one, instead it merges them into o ne
+single configuration.
+
+That's why naming is mainly for human clarity, not for terraform itself. You can give
+any names but it should end with dot tf so that terraform can identify and build a single
+configuration out of it. Let's start with the most common one main dot tf.
+
+This is where we define what infra we want. Things like providers, ec2 instances, s3
+buckets or networking resources. You can think of main dot tf as the blueprint of your
+setup.
+
+Next comes variables dot tf. Hardcoding values like region, instance type or
+environment makes code rigid and unsafe. Variables solve this by allowing us to pass
+values dynamically.
+
+This makes the same terraform code reusable for development, testing and even for
+production. Then we have outputs dot tf. Outputs are values terraform prints after
+creation.
+
+They help us quickly see important results like ip address, dns names or resource ids.
+They are also useful when connecting terraform with automation pipelines or other
+modules. Now here's an important point terraform loads all tf files in the directory
+together.
+
+It doesn't care about file names but only about their content. We use this structure
+simply to keep things clean and readable. A helpful way to remember this is main dot
+tf file is like a recipe.
+
+Variables dot tf file are the choices you make before ordering. Outputs dot tf as the
+final recipe showing what you got. This separation is why terraform scales so well in
+the real times.
+
+Once you understand this structure you are ready to move forward more advanced
+concepts like modules, state file management and automation pipelines. That's the
+foundation we are building in this module.
+
+
+-----------------------------------------------------End------------------------------------------------------

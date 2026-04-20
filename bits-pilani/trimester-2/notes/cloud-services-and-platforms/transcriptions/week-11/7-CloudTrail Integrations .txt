@@ -1,0 +1,36 @@
+
+
+
+  Page 1 of 1
+
+
+CloudTrail Integrations Transcript
+Now, let's look at how CloudTrail actually becomes useful in the real environments by
+integrating with S3 and CloudWatch. By itself, CloudTrail only records events. To store
+those events safely and to act on them, we connect it to other AWS services.
+The first and most important integration is with Amazon S3. When CloudTrail is
+enabled, it continuously delivers log files into an S3 bucket. These logs are stored as
+structured files and organised by account, region, and time.
+S3 is used because it's durable, cost -effective, and it is ideal for long -term storage.
+Organisations often keep these logs for months or years to meet the compliance and
+audit requirements. Think of S3 as the archive room where all activity history is safely
+preserved.
+This is the place where we use the storage classes concept with a combination of
+lifecycle rules. CloudWatch allows CloudTrail events to be streamed into the log
+groups where they can be searched, filtered, and monitored almost immediately. This
+makes it possible to detect important activities as they happen, not hours later on.
+You can detect when someone logs in as a root, when IAM permissions are changed,
+or when a critical resource is deleted. Once events reach CloudWatch, you can create
+alarms. These alarms can send notifications, trigger some automation, or even take a
+corrective action.
+In many environments, CloudWatch alarms are connected to email alerts, Slack
+messages, or Lambda functions that get triggered automatically. Together, these
+create a powerful flow. How the flow looks like is an action happens, CloudTrail records
+it, S3 will store it, CloudWatch will monitor it, alerts and automations will take place.
+This integration is foundational for security, auditing, and governance in AWS. Almost
+every production AWS environment relies on this particular setup. Understanding how
+CloudTrail works with S3 and CloudWatch helps you see how AWS builds visibility,
+accountability, and trust into the platform.
+
+
+------------------------------------------------------End-----------------------------------------------------

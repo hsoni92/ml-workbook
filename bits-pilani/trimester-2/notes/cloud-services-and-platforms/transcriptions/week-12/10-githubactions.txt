@@ -1,0 +1,337 @@
+
+
+
+  Page 1 of 8
+
+
+
+
+     GitHub Actions Pipeline Demo Transcript
+Module 12, Lesson 3, Practical Lab. In real DevOps teams, every code change is
+automatically validated using pipelines. Today, we'll try to demonstrate the same and
+understand how the entire flow looks like.
+So we'll create a GitHub account and we'll  also set up Git in our local systems to
+manage the version control for all the code changes. Post setting up Git and GitHub
+accounts, we'll try to complete all the authorisation steps related to the setup and we'll
+create some simple files and push the co de from our local machine, observe how
+those changes are automatically reflecting into our GitHub account, which is over the
+internet. We'll also try to automatically trigger a pipeline on the code changes.
+In short, we are going to see how the continuous integration CI will be in action from
+the beginning till the end. So first, to set up Git in your laptops, navigate to git-scm.com
+slash instal. From here, you can choose your desired operating system, which ever
+operating system you're using for your laptop.
+Go choose that and try to follow these instructions. You can just directly click here to
+instal for Windows if you're using if you're using Mac or Linux, running these
+commands should be fine. So following these commands will make it easier for you to
+set up your Git.
+Once your Git is installed successfully, when you try to open the file and keep on
+clicking next during the installation process, you will have something as git bash. Make
+sure that git bash is also checkboxed. That is very important.
+Post installation, open your browser and search for GitHub and sign up a GitHub
+account with your email and password. After signing up, it will ask you to create an
+organisation which will look something like this. So it will look you go to the
+organisations like this.
+You have to create an organisation for yourself. And from there, from that organisation,
+you can get inside that and you can start working on projects directly. Post setup,
+whatever change that we have in our local environment, if we want those changes to
+reflect inside our GitHub repository, you should have a new repository set up in your
+GitHub account and you should have the required authorisation between your GitHub
+account and your local environment.
+So let's try to first set up that authorisation between our GitHub account and then our
+local environment for that. The first thing is open your if you're using Windows, then
+open PowerShell, run as administrator and first run this command. Get service SSH
+agent.
+
+
+
+  Page 2 of 8
+
+
+
+If you see something similar to this, which is in stop status, then run the following three
+commands. Post that once you see that the status is running, then we can go ahead
+with the next step. Make sure you follow this procedure before going ahead with
+creating the SSH setup.
+After this, create a simple folder in your desktop, something like this. And if you have
+any code editor, you can either use IntelliJ, VS Code or any other code editor. So I'll
+be using VS Code in this case.
+Go to file, click on open folder and select that project which you created in the desktop.
+Push selection, open terminal. And from here we are going to create SSH keys and
+set up the entire authorisation between our local environment and our GitHub account,
+which we have signed up over the Internet.
+Now, while creating the while creating our SSH keys, make sure that this terminal that
+you have, it is in your git bash. This is the reason I was informing that while installation,
+your git bash should also be part of your installation. You can just click on this down
+arrow, choose select default profile from here.
+And if you have PowerShell or command prompt, you can just choose git bash. Once
+you have git bash ready from here, we'll start running the commands to generate an
+SSH key. So the command for that is SSH egen -t ed25519, just we're just following
+the standard practise and you can provide any email ID that you want.
+Make sure you provide an actual email ID. So this is I'm just doing it for the
+demonstration. You can use any personal email ID for this and hit enter.
+So you will be prompted a few questions over here. You don't need to answer anything,
+just keep pressing enter. You'll see something like this.
+From here, once the file is created. You can verify how the files are created, if it is
+properly created or any errors are there. So I'll say ls ssh.
+So these are the keys that have just been created with the command that we run. Now
+the next step is we have to connect git bash to the running SSH agent. If you
+remember, in the initial video, I've shown you what commands to run in your
+PowerShell as an administrator.
+We were trying to activate our SSH agent. Now even though we have the keys, now
+we have to connect our git bash to that running agent. So for that, the command is
+eval quote $ssh-agent.
+So this is the command that you're supposed to run post creation. After this, we need
+to add this key to that particular agent. So the command would be ssh add.
+
+
+
+
+  Page 3 of 8
+
+
+So we're just trying to mention this exact key over here. So you should see something
+like this identity added. So this was the email which we provided initially while we are
+trying to create our SSH key.
+Once you see this, probably our SSH key is properly added to your agent. You can
+also verify it as an additional step like this ssh add hyphen l. So the moment you see
+something like this, this is a confirmation that it is properly added. Now we need to get
+the actual key in order to copy paste it into our GitHub account.
+So we have a command cat command that we use to display the actual key. So now
+that we have our actual key, make sure that you copy the entire output from the start
+till the end. Do not miss out on anything.
+Copy the entire thing. And so here when we go back to this top right, we have a settings
+option. Navigate to settings.
+On the left on the list, you see something as SSH and GPG keys. So we go to SSH.
+We create a new SSH key.
+We provide GitHub credentials or any other meaningful name and just paste it directly
+over here. Click on add key. Once you see that the key is successfully added, head
+back to your code editor.
+From here to confirm if the SSH connection is built perfectly between our local
+environment and the GitHub account, which is over the Internet. The command for
+that is SSH-T git at the rate github.com. This is the command that you should run to
+verify if the SSH is correctly set up or not. The reason we are following each and every
+step very particularly is whenever you make any code change in your local
+environment for those changes to automatically reflect on your GitHub account, you
+need this SSH connection.
+As an alternative, we also have personal access token. So these are something that
+you need to provide every time you are going to push a change. So to avoid that
+recurring recurrence of providing the keys, we use SSH once.
+As your SSH key is set up for one time between your system and the GitHub account,
+you never have to again for any other repository or any other project. You never have
+to set it up again and again. So it's a one time job.
+That's the reason we are going ahead with the SSH approach. So when we hit enter,
+it is going to ask you that are you sure you want this to be connected because we have
+never set up this connection. So you just type in yes.
+And the moment you see a similar message, your GitHub and your resource are
+properly authenticated and authorised to communicate with each other. So so far, what
+we have done, we have enabled SSH agent. Then we've set up git bash through which
+we've created some keys and we have set up a proper connection to promote our
+changes from local to GitHub.
+
+
+
+  Page 4 of 8
+
+
+
+Now, let's get into the actual task, which is creating some changes, creating the
+repository and managing it. So if I head back to my repository. So now let's create our
+first repository so that our changes are saved inside this repository or something
+similar to folders that we have in our laptop.
+These are used to do to manage the version control of any change that is being
+modified, overwritten, deleted. All these changes, every version of your actual file will
+be monitored and recorded using GitHub. That's the reason we call it as a version
+control system, something which helps us track every version of your code change.
+Let's create a new repository. We give a name, something similar to CICD demo, then
+keep it private or public. It doesn't matter.
+For now, I'm keeping it as public and we can leave the options as it is. Click on create
+repository. Once you create a repository successfully, it is going to prompt you with all
+the required commands that you should be doing to get your changes from local to
+this remote repository.
+So let's try to create a simple file and push our changes to verify if it is properly done
+or not. So I'll say a simple name like app.txt. Inside this, I'll mention some random text.
+So I have some assuming that this is some kind of a code and I want this particular
+line of code to be version control.
+This represents our application code. Now, so far, the folder which we have created
+into our desktop, it is just a regular directory. For that directory to be converted as an
+actual Git repository at a local level, the command that we use is git init.
+So this is the command that we run. Let's rerun it once again. All right.
+So now this directory is considered as a Git repository. The next step is we need to
+add the remote origin, which means there are hundreds of repositories out there inside
+the GitHub account. And you want to specifically mention what repository you want to
+track your changes.
+The command for that is git remote add origin git iterate github.com. You can also get
+this command directly from here. This is the exact command which we are trying to
+create, which we are trying to run. So you can copy it from here and paste it directly.
+Let's run git status. OK, so as of now, we do not have any files committed. We did not
+make any changes.
+All we did is we just added a remote origin to our GitHub repository, indicating our Git
+that this is the repository that I want my changes to be pushed when I run a git push
+command. So there are certain sequence of commands that we run in order to promote
+our changes from local environment to this remote repository. So let's run one by one
+to make sure that we have it.
+
+
+
+
+  Page 5 of 8
+
+
+Before making any changes, the concept of branches is very different when it comes
+to using Git on your local level. By default, our branches are considered to be a master
+branch in GitHub. The default branch is always main.
+So we need to either rename our branch from master to main or just create a new
+branch. So we'll just use this existing command for simplicity and we'll make sure that
+the branches are same. All right.
+So now our origin is set, which means we have a destination in which repository we
+want our changes to go. We have a proper authorisation to communicate with that
+repository and sync our changes. We've also set the correct branch.
+Now, the only thing left is to add these changes that we created newly and take it to
+that remote repository. The command for that is git add. Git add command is used to
+add the files.
+This stages the changes. Basically it prepares your Git of what changes to be
+committed and pushed. Once we stage the changes, the next process would be git
+commit.
+In git commit, we are just mentioning that these are the files that are finalised to be
+promoted to my remote repository. So git commit is the command hyphen m is for a
+message. You can add any message related to your commit.
+So I'll say it is the initial commit, the first commit that I'm doing for this repository. Push
+this. Now the only thing left is to push this changes from this local environment to our
+remote repository.
+We use git push command for that. So I'll say git push hyphen u origin main. Whatever
+origin we have set and on the main branch, we need this changes to be pushed.
+All right. So our changes have successfully been promoted into our GitHub account.
+Let's verify that by refreshing the tab and observe if that file from a local is appearing
+or not.
+So the app.txt, this is the exact file which we had in our local environment after we ran
+git add, git commit and git push. Now the changes are present in our remote repository.
+This verifies that our code which is in the local is now into our repository.
+Now the main part, which is the main demonstration of this practical lab is creating an
+actual pipeline using GitHub actions. So GitHub actions is where we create a yaml file,
+provide certain details and then we wait for that change to be triggered automatically.
+So let's create this file and observe how our pipeline is automatically triggered.
+So for that, I'll create a folder. There is a particular format that you should be following
+for these pipelines. The first should be .github. Inside .github, you should create
+another sub folder, which is workflows.
+
+
+
+
+  Page 6 of 8
+
+
+Inside workflows, you should have your yaml file where you actually define the entire
+pipeline. So I'll say pipeline.yaml or maybe I can use a simple name like main.yaml.
+So now this is where we are going to define every component of our pipeline. The first
+part is the name.
+What name would you want to define for your pipeline? I'll say pipeline demo. Then is
+the trigger. The on trigger, we are basically trying to define how and when our pipeline
+should be triggered automatically.
+So all we are doing under on is define the event trigger. So let's say I want this to be
+triggered when someone tries to push on the branches specifically on the main branch.
+So this is what I want as a trigger.
+Whenever someone tries to push any changes on the main branch, this pipeline
+should automatically trigger. The next part of this is jobs. Inside jobs, we define what
+procedure we want to follow.
+A pipeline can contain one or more jobs. Within the job, we add a proper structure of
+what we want this job to perform. So I first want this to perform a build.
+But if we run this pipeline in our local environment, our laptop has an operating system.
+When you want to run the same thing over GitHub actions. So this is over the Internet
+and there are no specific servers that we have to configure.
+So GitHub action uses its own server to run our pipeline to run the logic for our code.
+So for that reason, we need to make sure that we define what operating system, what
+runtime should it use to prepare this pipeline. So for this, we can use Ubuntu latest.
+Next comes the steps. To make sure this job is performed, we use a sequence of steps
+where we define what needs to be done. The first step of every job should always be
+to verify the latest code compared to the previous version.
+We call it as checkout code. So I'll say checkout, I'll name it as a checkout code. And
+here I will define actions checkout at the rate v3.
+So this is a default keyword which is understood by the GitHub actions. The moment
+it reads this line, it will understand that the user wants me to verify the latest code
+before I even do anything. Any other step post this can create another step, you can
+say like run a simple command inside this.
+We can run any kind of a Linux or any normal command would also work. It depends
+from case to case. So let's say I just want to run an echo command saying that I want
+this particular this particular sentence to be repeated as part of my logic.
+This could go as complex as it goes. I'm  just trying to use a simple example to
+demonstrate how a pipeline is built, how it is automatically triggered. Now, overall, we
+have pretty much defined everything what we want to do, how we want the steps to
+be performed and what actions are required.
+
+
+
+  Page 7 of 8
+
+
+We can click we can save this by using control S. Let's open back our terminal from
+here again, the process would again be the same. Whatever changes I have made, I
+want to take those changes to I'll use git add. Then I want to finalise those changes
+for that.
+I use git commit, so I'll add a message saying that added a CI pipeline file. Now we
+have finalised the change what you want to push to your remote repository. We can
+directly run git push since it is the second time and we have already tried to push one
+change for the first time.
+And now git knows the destination. So we don't have to use the exact same command,
+which is git push hyphen u origin main. Since it is for the second time, we can just run
+git push and a pipeline file will be reflected into our GitHub account.
+So if we go back to our code. So we already have our folders and the file which we
+have created inside this right here. This was the same file that we have created.
+How do we know if the pipeline is automatically triggered? When you go back to this
+code, you see a dot initially. If it is in progress, if you see something like a tick mark,
+that means the build was successful. This build gives us every information of wh at
+happened throughout the process.
+If you go through this one by one, although it is not necessary that you understand
+what is going on in each and every one of them, but all we are trying to do is
+understand and monitor what happened with our pipeline, what steps and in what
+sequence it has run. Right. So if you have any errors, if the build has failed, which is
+pretty much expected in production, you can come back to this build history and
+observe which particular step or which job has failed, make the necessary corrections
+and commit and push once again.
+Then the build will trigger once again and it will try to make it successful. Right. So this
+is how you can monitor and trigger your changes automatically.
+DevOps engineers try to set these workflows or these pipelines at a very advanced
+level. Usually the pipeline files go around 20 to 40 lines. We have used a simple
+example to demonstrate how it works.
+So at the moment we have only one job, which is build. For a proper CI CD entire flow
+to work, we include many tools in this. We include if we are using Docker to build an
+image and run the application on the container, we can create another job specifically
+for Docker.
+We can create specific jobs related to Kubernetes. We can create specific jobs related
+to deployment, which you're going to learn in upcoming lessons. So a pipeline involves
+every sequence of task.
+
+
+
+
+  Page 8 of 8
+
+
+When you want a streamlined process to make sure your application reaches from a
+local environment till the user on the Internet, you use these CI CD tools. There are
+many other concepts which we haven't discussed, but there are a lot of elements
+involved inside your CI CD pipeline, like testing the changes before they go into
+deployment. There is a DevOps tool, which is we call it as Ansible, which manages
+the configurations of your cloud resources.
+So multiple jobs and multiple steps will involve in production. This is exactly how you
+manage your entire CI CD flow. Any push to the main branch will trigger this pipeline
+automatically.
+If I create another branch over here, let's say I create some other private branch. And
+I push my changes on that private branch instead of main, the pipeline will not trigger.
+And that is how the developers or the DevOps team in production, they make the code
+changes on their private branch and they promote their changes just to verify if their
+changes are working correctly in the production or not.
+The moment they realise that their changes are working fine, no errors are thrown, all
+the bugs are fixed, then they promote their changes onto the main branch and then
+the main branch, the trigger will be invoked and the pipeline will start building up your
+change. So to summarise, we created a repository, pushed a code and configured a
+CI pipeline using GitHub actions. Every change is now automatically validated.
+You can add multiple steps throughout your pipeline, like verifying the code, looking if
+the logic works properly, adding some test frameworks if there is any kind of linting
+issues or syntax errors. You can add various tasks throughout this pipeline. And if you
+if you want a proper corrected, validated code to enter into the deployment, you can
+make sure all of this through this pipeline.
+This is just the foundation of modern DevOps workflows. There are many more flows
+which are not part of the curriculum, but this is the beginning. So I encourage all of
+you to explore beyond this demonstration at your personal space.
+
+            ---------------------------------THANK YOU--------------------------------------

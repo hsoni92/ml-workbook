@@ -1,0 +1,69 @@
+
+
+
+  Page 1 of 2
+
+
+Canary Deployments Strategy Transcript
+
+Now, let's talk about canary deployments, one of the safest and smartest deployment
+strategies used in the modern DevOps. In fact, even at Amazon, we use this canary
+deployment strategy. Let's take a look at it.
+
+At a high level, a canary deployment means releasing a new version of your application
+to only a small percentage of users first, instead of everyone at the same time. The
+idea comes from the old practise where miners used the canary birds to detect danger
+early. In software, the canary is your small group of users.
+
+If something goes wrong, you stop immediately before the problem spreads. The
+reason canary deployment exists is traditional full releases are a bit risky. If a bug slips
+through, even after all those tests, it impacts everyone instantly.
+
+Rollback might become stressful and user experience will hinder again. With canary
+deployment, risk is pretty much controlled. Here's how the flow usually works.
+
+Your current stable version continues serving most users. A new version is deployed,
+but only a small portion, maybe like five or 10% is routed to it. Something if you guys
+have ever heard of a beta version, which is accessible only for a few participants.
+
+During this time, teams carefully monitor the error rates, latency, logs, and the system
+health. If everything looks good, traffic is slowly increased from 5 to 25 and then 50.
+Eventually, they'll take it up until 100.
+
+If something looks wrong, the rollout is stopped and they rollback instantly to the
+previous version. Canary deployments are commonly used for web applications,
+microservices, backend services, and even ML models. Anywhere you want a real
+world validation before a full rollout.
+
+From an implementation point of view, canary deployments are usually handled using
+load balancers, traffic routing rules, or API gateways, services that work with the traffic
+routing. The key idea is traffic control, deciding who sees this version. It's us eful to
+compare canary deployment with other strategies.
+
+So, rolling updates replace servers gradually, but don't always control traffic
+percentage. Blue-green deployments switch traffic all at once, which is fast but riskier.
+Canary deployments sits in between slower, but much safer.
+
+The biggest advantages are lower risk, early issue detection, zero downtime, and
+better confidence in releases. But they come with challenges also. They require good
+monitoring, proper alerts, and some operational maturity.
+
+
+
+
+  Page 2 of 2
+
+
+Without visibility, canary deployments lose their value. Think of it like this is a
+restaurant testing a new dish. Instead of updating the menu for everyone, they let a
+few customers try it first.
+
+If the feedback is good, it becomes a full menu item. If not, it's quietly removed. That's
+exactly how the canary deployments work in software.
+
+The key takeaway is canary deployments help teams release changes gradually,
+safely, and confidently. They are a core part of modern DevOps and reliable delivery
+pipelines.
+
+
+-----------------------------------------------------End------------------------------------------------------

@@ -1,0 +1,47 @@
+
+
+
+  Page 1 of 1
+
+
+Choosing the right storage type transcript
+
+When architects choose storage in the cloud, they are not picking services randomly.
+They are making a decision, a design that directly affects the performance and cost.
+The most important thing to understand is there is no single best storage service.
+
+There is only the right storage for the workload. Let's start with object storage. Object
+storage like S3 is ideal when data is stored as files and accessed over the network
+using APIs or the web.
+
+This includes things like images, videos, documents, and backups. So S3 works
+extremely well because it scales almost infinitely and it is also very much cost
+effective. But it's important to remember S3 is not a file system.
+
+You don't mount it like a disc. Now let's move to block storage. Block storage like
+EBS behaves like a traditional hard disc attached to a server.
+
+It's perfect for workloads that need low latency and predictable performance.
+Databases are a great example. They expect a disc, not an object store.
+
+That is why EBS is commonly used for operating systems, databases, and
+application servers. However, EBS is tied to a single instance. It's not meant for
+sharing across many servers.
+
+Now that brings us to a file storage. File storage like EFS is designed for scenarios
+where multiple servers need to read and write the same files at the same time. It
+automatically scales and behaves like a shared network drive.
+
+This is useful for things like shared application content or container workloads. A
+simple way to remember this is think of S3 as a massive warehouse which is cheap,
+durable, and greater for storing lots of items. Think of EBS as a personal hard drive
+attached to one computer and think of EFS as a shared office file server that
+everyone can access.
+
+Something similar to a google drive file as well. So in real architectures, applications
+often use all three. S3 for uploads and backups, EBS for databases, and EFS for
+shared files.
+
+Choosing the right storage upfront avoids performance issues, reduces the cost, and
+it makes the systems easier to operate as well.
+-----------------------------------------------------End------------------------------------------------------

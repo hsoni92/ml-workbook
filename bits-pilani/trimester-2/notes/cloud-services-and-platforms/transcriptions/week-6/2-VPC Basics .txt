@@ -1,0 +1,34 @@
+
+
+
+  Page 1 of 1
+
+
+VPC Basics Transcript
+In this lesson, we are going to understand one of the most important building blocks
+of cloud networking, the VPC or Virtual Private Cloud. At a very high level, a VPC is
+your own private network inside AWS. Even though AWS is a public cloud, your VPC
+is logically isolated and fully under your control.
+Inside this private network, you decide the IP ranges, how the traffic is going to be
+flowing and which resources are public or private and how secure everything should
+be. Now, why do we even need something like a VPC? Without a VPC, all cloud
+resources would live in a shared space with very little control. So, security would be
+harder, isolation would be weaker and designing real applications could be a very high
+risk.
+So, a VPC solves this by giving you a private predictable network boundary. Inside a
+VPC, you place things like a subnet, route table, gateways, and other security controls.
+And inside those, you run your EC2 instances, databases, load balancers, and any
+other services that you want.
+One important difference between cloud networking and traditional networking is that
+everything here is software defined. There are no physical routers or cables for you to
+manage. You create and modify the entire network using configuration.
+A helpful way to think about a VPC is AWS is like a large city and your VPC is a fenced
+plot of land inside that city. AWS manages the city infrastructure, but inside your fence,
+you make the rules. You decide who can enter, how traffic moves within that f ence,
+and what runs inside.
+Almost every serious AWS workload starts with a VPC. If you understand VPC well,
+cloud networking becomes structured and logical instead of confusing. In the next
+topic, we will go deeper and look at concepts like SIDR blocks and IP addressing,
+which actually define how the addresses are assigned inside a VPC.
+
+------------------------------------------------------End-----------------------------------------------------

@@ -1,0 +1,52 @@
+
+
+
+  Page 1 of 2
+
+
+CloudWatch Alarms Transcript
+Let's talk about cloud watch alarms, which are one of the most important pieces of
+monitoring in AWS. Metrics by themselves only show the numbers. Alarms are what
+turn those numbers into actions.
+At a simple level, a cloud watch alarm watches a metric and then reacts when that
+metric crosses a threshold. Think of it like a smoke detector. If constantly watches the
+environment, it stays silent when everything is fine and alerts immediately when
+something goes wrong.
+Cloud watch alarms usually monitor things like CPU usage, network traffic, disc
+activity, or health check failures. Every alarm has three possible states. When
+everything looks normal, the alarm is in the okay state.
+When the threshold is crossed, it moves into alarm state. If there isn't enough data to
+make a decision, it stays in insufficient data state. Now the important part.
+What happens when an alarm triggers? An alarm can send a notification using a
+service called SNS, simple notification service.
+It is part of AWS, which is used to send an email or send a notification over Slack. It
+can automatically scale your application by adding or removing the resources.
+If you're using an EC2 instance, it can stop, reboot, or recover an instance also. And
+in more advanced setups, it can trigger a lambda function. Let's look at a very common
+example.
+If CPU usage goes above 80% for five minutes straight, the alarm can send a
+notification to the team. This helps catch performance problems before users start
+complaining or passing on the negative feedback on the Play Store. Another common
+example is auto scaling.
+If CPU stays high, the alarm can trigger the scaling policies to add more resources
+automatically. Alarms also help detect failures.
+For example, if an instance fails its health checks, the alarm can notify the system or
+initiate a recovery.
+Behind the scenes, alarms don't react instantly to every spike. They evaluate data over
+a time window. For example, three data points over five minutes.
+This avoids fault alerts caused by temporary spikes. In simple terms, CloudWatch
+alarms act like an early warning system for your infrastructure. They help you respond
+faster, automate recovery, and reduce the failure time.
+Without alarms, you're just flying blind. With alarms, your systems can speak up when
+something goes wrong and even fix themselves automatically.
+
+
+
+  Page 2 of 2
+
+
+In the next topic, we'll move from monitoring into auditing and security visibility by
+understanding the service called as CloudTrail and how AWS tracks who did what and
+when.
+
+------------------------------------------------------End-----------------------------------------------------

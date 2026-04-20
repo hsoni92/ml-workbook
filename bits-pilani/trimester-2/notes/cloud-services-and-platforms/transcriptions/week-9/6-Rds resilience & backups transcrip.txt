@@ -1,0 +1,61 @@
+
+
+
+  Page 1 of 2
+
+
+Rds resilience & backups transcript
+
+Now, let's talk about one of the most important reliable features in the cloud databases,
+multi-AZ deployments, along with automated backups and snapshots. These three
+ideas often get mixed up. So let's clearly separate what each one does.
+
+First, let's understand multi-AZ deployments. Multi-AZ means your database is running
+in more than one availability zone inside the same region. There is a primary database
+that handles traffic and a standby database sitting in another zone.
+
+The key idea here is to protect from failure. If something goes wrong, hardware issue,
+power issue, or network outage, AWS will automatically switch the traffic from the
+primary to the standby. This happens without manual intervention.
+
+Your application continues running with minimal disruption. Now, here's an important
+clarification. Multi-AZ is not designed to make your database faster.
+
+It does not help with scaling reads. Its only job is availability and reliability. The
+distinction is very important and often misunderstood.
+
+Next, let's talk about automated backups. Automated backups help you recover from
+mistakes, not outages. AWS takes a full daily backup, continuous transaction logs.
+
+This allows point-in-time recovery, meaning you can restore your database to almost
+any second within your retention window. If someone accidentally deletes data or runs
+a bad query, backups will save you. Retention typically ranges from one to three, five
+days.
+
+Now, let's talk about snapshots, which are a bit different. Snapshots are manually
+backups that you take intentionally. They are stored until you delete them and can also
+be copied to other regions, shared with other accounts, used to create new databases.
+
+So, snapshots are commonly used for long -term storage, compliance, disaster
+recovery, and environment cloning also. Here's an easy real -world way to remember
+this. Think of a bank.
+
+Multi-AZ is like having a second live data centre ready instantly. Automated backups
+are like CCTV recordings you can rewind. Snapshots are like archived system images
+kept for audits.
+
+Each serves a different purpose. So, to summarise, Multi -AZ keeps your system
+running during the failures. Automated backups help you recover from mistakes.
+
+
+
+
+  Page 2 of 2
+
+
+Snapshots help with long -term recovery and replication. Together, they form the
+foundation of database in the cloud. In the next topic, we'll build on this and explore
+read replicas, scaling strategies, and failover behaviour, which focusses more on
+performance and traffic handling.
+
+-----------------------------------------------------End------------------------------------------------------

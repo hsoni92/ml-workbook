@@ -1,0 +1,73 @@
+
+
+
+  Page 1 of 2
+
+
+dynamodb capacity & pricing transcript
+
+In this topic, we are going to understand how DynamoDB controls performance and
+pricing using read and write capacity. Unlike traditional databases where you think in
+CPU or memory, DynamoDB works using capacity units, read capacity units, RCU,
+and write capacity units, WCU. Let's start with what those mean.
+
+A read capacity unit represents how many read operations DynamoDB can handle per
+second. One RCU allows one strongly consistent read of up to 4 KBs per second. If
+the item is larger, more capacity is consumed.
+
+A write capacity unit or WCU represents how many writes can happen per second.
+One WCU supports one write per second for items up to 1 KB. Bigger items consume
+more write capacity.
+
+A useful way to think about this is like lanes on a highway. Reads and writes are
+vehicles and capacity units decide how many vehicles can pass per second. Now
+DynamoDB gives you two ways to manage this capacity.
+
+The first is provision capacity mode. Here you decide upfront how many reads and
+write units your table should have. You pay for those units whether or not you fully use
+them.
+
+This works very well when the traffic patterns are predictable and stable. Provision
+mode also supports auto scaling which means DynamoDB can increase or decrease
+capacity automatically within limits that you are going to define. The second option is
+on-demand capacity mode.
+
+In this mode you don't define any capacity at all. DynamoDB automatically scales up
+or down depending on traffic. You simply pay per request.
+
+This mode is ideal when traffic is unpredictable or still unknown such as early stage
+applications or event-driven systems. A good way to remember this provision mode is
+like reserving seats in advance. On -demand mode is like booking writes only when
+you need them.
+
+Now let's talk about auto scaling. Auto scaling works only with provision capacity. You
+define a minimum, a maximum and a target utilisation percentage.
+
+AWS then adjusts capacity automatically to stay near the target. It's like cruise control
+for database throughput. It keeps things balanced without constant manual tuning.
+
+If your application exceeds this allowed capacity, DynamoDB may throttle requests.
+That means requests are temporarily rejected to protect the system. This is why
+
+
+
+  Page 2 of 2
+
+
+applications should implement retries and back -off logic and why proper capacity
+planning is important.
+
+Pricing in DynamoDB depends on how many reads you perform, how many writes you
+perform, how much data you store and whether you use provisioned or on -demand
+mode. On-demand costs more per request but removes planning overhead. Provision
+mode is cheaper for steady workload but requires tuning.
+
+To choose correctly, use provisioned with auto scaling when the traffic is predictable
+and long -running. Use on -demand when the traffic is spiky, unpredictable  or even
+event-driven. The key takeaway here is this.
+
+DynamoDB performance is not about machines. It is about capacity planning. Once
+you understand how read and write capacity work, DynamoDB becomes extremely
+powerful, predictable and scalable.
+
+-----------------------------------------------------End------------------------------------------------------

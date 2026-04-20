@@ -1,0 +1,62 @@
+
+
+
+  Page 1 of 2
+
+
+Git Essentials Transcript
+
+Now, let's talk about the most practical part of DevOps, Git basics. This is something
+you'll use daily as a cloud or as a DevOps professional, or even if you're working with
+anything related to a software development. At a high level, Git helps teams track
+changes, collaborate safely, and manage versions of their code.
+
+Let's start with the idea of cloning. When you run a Git clone, you're creating a full local
+copy of a repository. A repository is nothing but a bunch of files which has a code
+related to your product or your software.
+
+This includes not just the files, but the entire history of changes. It's usually the first
+step when you join a project or start working on a shared code. Think of cloning like
+downloading a shared workspace that already contains everything that is done so far.
+
+Once you have the code locally, you start making changes. You save those changes,
+and then you create a commit. A commit is basically a snapshot of your work at a point
+in time.
+
+It records what changed, who changed it, and why. Good commits are small and
+meaningful, like checkpoints you can return to later on. After committing, your changes
+still exist only on your machine.
+
+To share your changes with others, you use git push. Pushing uploads your committed
+change to the repository which is accessible to everyone. We also refer to it as remote
+repository.
+
+This is what triggers your CI pipeline and deployments in the real projects. Before
+starting new work, it is also important to stay up to date. That is where git pull comes
+in.
+
+Pulling brings in the latest updates from your repository and merges them into your
+local copy. It helps avoid conflicts and keeps everyone in sync. Let's talk about the
+most powerful idea, branches.
+
+A branch lets you work independently without affecting the main code. You can create
+a future branch, experiment freely, and merge it only when you feel it is ready.
+Branches are used for new features, bug fixes, experiment, and releases.
+
+This is what enables teams to work in parallel without stepping on each other's
+changes. In DevOps, branching is extremely important because CI-CD pipelines often
+run automatically when a branch is updated. To summarise, you clone to get the code,
+commit t o save progress, push to share your work, and pull to stay updated, and
+branch to work safely and independently.
+
+
+
+  Page 2 of 2
+
+
+
+These simple actions form the backbone of modern DevOps workflow and the
+automation pipelines.
+
+
+-----------------------------------------------------End------------------------------------------------------

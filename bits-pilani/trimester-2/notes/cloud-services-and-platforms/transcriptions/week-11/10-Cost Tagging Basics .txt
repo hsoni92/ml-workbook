@@ -1,0 +1,43 @@
+
+
+
+  Page 1 of 1
+
+
+Cost Tagging Basics Transcript
+Now let's talk about something that becomes extremely important once the cloud
+usage starts growing, which is cloud allocation tags. At a basic level, cloud allocation
+tags are simply labels that you attach to your AWS resources so you can understand
+who is using what and how much it costs. Without tags, AWS billing shows just one
+big number.
+You know how much you spent but not why or who caused it. Tags solve this visibility
+problem. Think of them as labels that add meaning to your cloud spending.
+For example, you can tag resources with things like project name, team's name or a
+cost centre. Once this is done, you can clearly see which team is responsible for which
+portion of the bill. This becomes extremely important in real companies where multiple
+teams share the same AWS account.
+There are two types of cost allocation tags. First, AWS generated tags. These are
+created automatically by AWS and are mainly useful for system level tracking.
+Second, user defined tags. These are the most important ones for cost management
+because you decide their names and the meaning. Example, like environments equals
+production or project equals payments.
+So, one important thing to remember is that tags don't automatically appear in billing
+reports. You must explicitly activate them from the billing console. Also, tags only apply
+to future usage.
+They don't work retroactively, which means once enabled, tags become very powerful.
+They appear inside cost explorer and budgets which will allow you to filter and analyse
+your spending. You can answer questions like which team is most expensive? Which
+team is burning a lot of cash on the name of testing and innovation? Which project
+needs better cost optimisation techniques? A good way to think about tags is like an
+expense categories on a company credit card.
+Without categories, finance sees only the total bill. With categories, they know exactly
+where the money was spent. So, tagging is not optional.
+It is enforced through policies. Teams define a standard tag piece. They apply them
+during the resource creation and regularly audit the missing tags.
+Good tagging leads to better accountability, better budgeting, and better decision
+making. This concept might seem simple, but it plays a huge role in the governance
+and the cost optimisation.
+
+
+
+------------------------------------------------------End-----------------------------------------------------

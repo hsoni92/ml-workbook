@@ -1,0 +1,48 @@
+
+
+
+  Page 1 of 1
+
+
+Efs shared file storage transcript
+
+Now, let's connect the dots between EBS and EFS, because this is where many real-
+world architectures start making sense a lot. Let's begin with a quick recap of EBS.
+EBS is block storage that attaches to a single EC2 instance.
+
+It behaves like a hard disc. You use it for operating systems, databases, and
+application data that belong to one server. But EBS has a clear limitation.
+
+It is not designed for shared access. One volume belongs to one EC2 instance. And
+this leads to a very common question in real projects.
+
+What if multiple EC2 instances need access to the same files? That's exactly why EFS
+exists. Elastic File System is a managed shared file system in AWS. Multiple EC2
+instances can read and write to the same file at the same time.
+
+EFS works across availability zones, which means it is highly available by default. You
+don't size the discs, you don't worry about scaling, and you don't manage the
+replication also. Storage grows automatically as files are added and shrinks when the
+files are deleted.
+
+The easiest way to remember this is with a simple analogy. EBS is like a personal
+laptop's hard drive. EFS is like a shared office network folder that everyone can
+access.
+
+This becomes extremely powerful when used for auto-scaling. As new EC2 instances
+are launched, they simply mount the same file system, which is with EFS. No file
+copying, no synchronous logic, everything is instantly available.
+
+Let's say every server that you use, you need a particular software to be installed with
+a particular version. Whenever a new server has been placed to run your application,
+you don't want to again follow the same steps, run certain scripts, instal certain  tools
+and technologies inside that server. As an alternative, what you could do is use EFS
+so that if the server is already attached with the shared EFS file system, when you
+attach your new server to this existing EFS file system, you don't have to worry about
+any additional load.
+
+All the files that are already present in the existing servers will start reflecting in your
+new server as well. With that, in the next topic, we'll bring everything together and we'll
+try to compare EBS, EFS and S3 side by side and conclude this module.
+
+-----------------------------------------------------End------------------------------------------------------

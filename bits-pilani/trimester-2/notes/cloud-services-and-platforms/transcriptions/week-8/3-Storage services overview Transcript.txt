@@ -1,0 +1,48 @@
+
+
+
+  Page 1 of 1
+
+
+Storage services overview Transcript
+
+In this topic, we'll  connect the storage concepts we just learned to actual AWS
+services. Amazon S3, EBS and EFS. These are the three of the most commonly used
+storage services in AWS.
+
+And choosing the wrong one is one of the most common mistakes. Let's start with
+Amazon S3. S3 is an object storage.
+
+It is designed to store massive amounts of unstructured data. Things like images,
+videos, backups, logs, analytics files, any kind of a file type. In S3, data is stored as
+objects inside buckets.
+
+Bucket is just a terminology that we use whenever we refer to S3. You don't manage
+disc, file system or servers. AWS handles scaling availability for you.
+
+One more important thing to remember is S3 is not a hard disc. You cannot instal
+softwares on it or treat it like a file system. Now, let's move to Amazon EBS.
+
+EBS is a block storage and it is primarily used with EC2 instances. Think of EBS as a
+virtual hard drive attached to a server. EBS is fast, low latency and perfect for
+workloads that need quick access to data like OS, database and application files.
+
+Unlike S3, EBS is designed to work closely with EC2, not as a standalone storage
+service. Now, let's talk about Amazon EFS. EFS is the file storage and its biggest
+strength is shared access.
+
+Multiple EC2 instances can read and write to the same file system at the same time.
+This makes EFS ideal for applications where servers need to share files like content
+management systems or media processing. EFS automatically scales as data grows,
+so you don't have to plan storage capacity in advance.
+
+Why does AWS provide all three? Because each service solves a different problem.
+S3 is about scale and durability. EBS is about performance and control.
+
+EFS is about shared access and simplicity. There is no single best storage service.
+There is only the right storage service for the cloud.
+
+So, in the next topic, we'll look at how to choose the right storage type for different
+workloads. So, these decisions become a second nature to us.
+
+-----------------------------------------------------End------------------------------------------------------

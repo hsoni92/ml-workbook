@@ -1,0 +1,60 @@
+
+
+
+  Page 1 of 2
+
+
+GitHub Overview & Repository Workflows Transcript
+
+Now, let's talk about GitHub, one of the most important platforms you'll use in DevOps
+and Cloud Engineering. GitHub is essentially where teams store and manage their
+code. But more importantly, where the collaboration and automation come together.
+
+Git itself handles the version control, but GitHub builds an entire ecosystem around it.
+So GitHub is a tool. Git is the technology where we manage our version control.
+
+So at the centre of GitHub is something called a repository. A repository stores your
+source code, its history, and everything related to the development like documentation,
+workflows, and any configurations. Teams usually work with multiple branches.
+
+The main branch represents stable, production-ready code. Developers create future
+branches to work safely without affecting others, like a private branch. Every
+meaningful change is saved as a commit.
+
+A commit tells us what changed, who changed it, and why. This creates traceability,
+which is critical in professional environments. Once changes are ready, developers
+open a pull request is not just about merging code, it is about collaboration.
+
+It allows reviews, discussions, automated testing, and approval before anything
+reaches the production. A typical workflow looks like this. You clone the repository
+where all the files are present regarding the application, create a branch, your own
+private branch with any name that you want, make your changes, commit them, push
+them to the GitHub, and open a pull request.
+
+Automated checks will run, teammates or your lead will review the code, and once
+approved, that changes will be merged into the main branch where the production
+code runs. This process dramatically reduces bugs and improves reliability. GitHub
+also plays a key role in CICD.
+
+Whenever code is pushed or a pull request is created, pipelines can automatically run
+tests, build a backup, or deploy applications. This means GitHub becomes the trigger
+point for automation. For teams and enterprises, GitHub provides strong controls like
+permissions, protected branches, required reviews, and audit logs.
+
+All of this to ensure there is flexibility and good governance. The ideal way to think
+about GitHub is like Google Docs for your software development. You can see who
+changed what, review changes before accepting them, and collaborate safely, but with
+automation built-in.
+
+
+
+
+  Page 2 of 2
+
+
+Understanding GitHub workflows is essential because almost every modern DevOps
+setup starts here. If you understand repositories, branches, and pull requests, you
+already understood the foundation of modern software delivery.
+
+
+-----------------------------------------------------End------------------------------------------------------
