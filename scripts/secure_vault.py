@@ -21,6 +21,7 @@ from cryptography.fernet import Fernet, InvalidToken
 ENV_KEY = "SECURE_VAULT_KEY"
 CONFIG_NAME = "secure.yaml"
 _CHECK_IGNORE_BATCH = 8192
+_MAX_REPORTED_PATHS = 4
 
 
 def git_toplevel() -> Path:
@@ -60,9 +61,10 @@ def normalize_rel(p: str) -> str:
     return str(Path(p).as_posix()).strip().strip("/")
 
 
-def rel_posix_under_root(root: Path, path: Path) -> str | None:
+def rel_posix_under_root(root: Path, path: Path, root_resolved: Path | None = None) -> str | None:
+    rr = root_resolved or root.resolve()
     try:
-        return path.resolve().relative_to(root.resolve()).as_posix()
+        return path.resolve().relative_to(rr).as_posix()
     except ValueError:
         return None
 
@@ -127,19 +129,30 @@ def _walk_encrypt_candidates(root: Path, target: Path) -> list[Path]:
     return out
 
 
-def files_to_encrypt(root: Path, target: Path, rel: str) -> list[Path]:
+def _encrypt_candidates_with_rel(
+    root: Path, target: Path, rel: str, root_resolved: Path | None = None
+) -> list[tuple[Path, str]]:
     candidates = _walk_encrypt_candidates(root, target)
     if not candidates:
         return []
-    rels = []
+    rr = root_resolved or root.resolve()
+    out: list[tuple[Path, str]] = []
     for p in candidates:
-        rp = rel_posix_under_root(root, p)
+        rp = rel_posix_under_root(root, p, root_resolved=rr)
         if rp is None:
             print(f"secure_vault: path escapes repo root: {rel}", file=sys.stderr)
             return []
-        rels.append(rp)
+        out.append((p, rp))
+    return out
+
+
+def files_to_encrypt(root: Path, target: Path, rel: str) -> list[Path]:
+    pairs = _encrypt_candidates_with_rel(root, target, rel)
+    if not pairs:
+        return []
+    rels = [rp for _, rp in pairs]
     ignored = git_ignored_relpaths(root, rels)
-    return [p for p, rp in zip(candidates, rels, strict=True) if rp not in ignored]
+    return [p for p, rp in pairs if rp not in ignored]
 
 
 def _atomic_replace_bytes(dest: Path, data: bytes) -> None:
@@ -326,8 +339,15 @@ def is_under_secure_path(staged: str, secure_paths: list[str]) -> bool:
 
 
 def staged_files(root: Path) -> list[str]:
+    return staged_files_under(root, [])
+
+
+def staged_files_under(root: Path, secure_paths: list[str]) -> list[str]:
+    cmd = ["git", "diff", "--cached", "--name-only", "--diff-filter=ACM"]
+    if secure_paths:
+        cmd.extend(["--", *secure_paths])
     out = subprocess.run(
-        ["git", "diff", "--cached", "--name-only", "--diff-filter=ACM"],
+        cmd,
         cwd=root,
         capture_output=True,
         text=True,
@@ -336,9 +356,18 @@ def staged_files(root: Path) -> list[str]:
     return [line.strip() for line in out.stdout.splitlines() if line.strip()]
 
 
+def print_path_list(paths: list[str], max_items: int = _MAX_REPORTED_PATHS) -> None:
+    shown = paths[:max_items]
+    for p in shown:
+        print(f"  {p}", file=sys.stderr)
+    remaining = len(paths) - len(shown)
+    if remaining > 0:
+        print(f"  +{remaining} others", file=sys.stderr)
+
+
 def check_staged(root: Path, secure_paths: list[str], allow: set[str]) -> None:
     bad: list[str] = []
-    for name in staged_files(root):
+    for name in staged_files_under(root, secure_paths):
         n = normalize_rel(name)
         if n in allow:
             continue
@@ -353,15 +382,14 @@ def check_staged(root: Path, secure_paths: list[str], allow: set[str]) -> None:
             "(or paths listed in allow_staged_non_enc). Offending:",
             file=sys.stderr,
         )
-        for b in bad:
-            print(f"  {b}", file=sys.stderr)
+        print_path_list(bad)
         sys.exit(1)
 
 
 def assert_vault_clean(root: Path, rel_paths: list[str]) -> None:
     """Exit with an error if any plaintext file under secured paths would be encrypted."""
     rr = root.resolve()
-    bad: list[str] = []
+    valid_secure_paths: list[str] = []
     for rel in rel_paths:
         target = (root / rel).resolve()
         try:
@@ -371,18 +399,38 @@ def assert_vault_clean(root: Path, rel_paths: list[str]) -> None:
             continue
         if not target.exists() or target.is_symlink():
             continue
-        for path in files_to_encrypt(root, target, rel):
-            rp = rel_posix_under_root(root, path)
-            if rp is not None:
-                bad.append(rp)
+        valid_secure_paths.append(rel)
+    if not valid_secure_paths:
+        return
+
+    out = subprocess.run(
+        ["git", "ls-files", "-z", "--cached", "--others", "--exclude-standard", "--", *valid_secure_paths],
+        cwd=root,
+        capture_output=True,
+        check=True,
+    )
+    rels = [p for p in out.stdout.decode("utf-8", errors="surrogateescape").split("\0") if p]
+
+    bad: list[str] = []
+    for rp in rels:
+        if rp.endswith(".enc"):
+            continue
+        p = (root / rp).resolve()
+        try:
+            p.relative_to(rr)
+        except ValueError:
+            continue
+        if not p.exists() or p.is_symlink() or not p.is_file():
+            continue
+        bad.append(rp)
+    bad = sorted(set(bad))
     if bad:
         print(
             "secure_vault: secured paths must contain only ciphertext (.enc) or gitignored files; "
             "plaintext files remain. Run: python scripts/secure_vault.py encrypt",
             file=sys.stderr,
         )
-        for b in sorted(set(bad)):
-            print(f"  {b}", file=sys.stderr)
+        print_path_list(bad)
         sys.exit(1)
 
 

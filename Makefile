@@ -25,6 +25,9 @@ encrypt: check-uv
 decrypt: check-uv
 	cd scripts && uv run secure_vault.py decrypt
 
+verify-encryption:
+	python3 scripts/secure_vault.py pre-commit
+
 notes-pdf-setup: check-uv
 	cd scripts && uv sync && uv run playwright install chromium
 
