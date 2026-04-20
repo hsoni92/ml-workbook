@@ -1,0 +1,457 @@
+Hello to all of you. My name is Dr. Hemant Rathaur and we are in the course Machine Learning. Today,
+we are going to start with new module, module 6, which is about KNN, K Nearest Neighbor Algorithm.
+The title of today's video is "Introduction to Lazy Learning and KNN". So the learning objective of this video is, first we are going to differentiate between eager learning and lazy learning, then we are going to understand the core concepts of instance-based learning and then we are going to understand the intuition behind K Nearest Neighbor Algorithm. So let's start right away. So till now we have discussed two classification algorithms.
+One is decision tree and another one is called rule-based system. So in last couple of modules, we have discussed decision tree and rule-based classification algorithms. In both the algorithms, there is a similar philosophy. That is, given some training dataset, given some training examples, we are going to construct a generalized model. We are going to construct a model. In case of decision tree, we are going to construct a tree. In case of rule-based system, we are going to construct a tree. In case of rule-based system, we are going to construct a tree. In case of rule-based system, we are going to construct a tree.
+In case of rule-based system, we are going to construct a tree or a set of rules. So from training data, we are constructing a tree or a set of rules. Once that is done, then we are going to use that tree or set of rules to do prediction in the future. So this is called eager learning. This is called eager learning where the model is eager to represent the training data. Right? So once the training data is given, then we build a model. We represent that data into a model.
+We represent that tree or a set of rules. So this is a tree or a set of rules. So once the training data is given, then we build a model. We represent that data into a model. Which is a tree or a set of rules. So once the training data is given, then we build a model. We represent that data into a model. Which is a tree or a set of rules.
+the model is eager to represent the training data right so once the training data is given then we
+build a model we represent that data into a model which is a tree or a set of rules so this is called
+eager learning there is another philosophy for building a classification model which is called
+lazy learning which is called lazy learning and that is what we are going to discuss in this module
+so in lazy learning the basic idea is given some training data you are not going to build a model
+out of it you are not going to up front build a model out of it once the testing samples are given
+to you then you do some computation and then do the prediction so we are not in lazy learning we are
+not building a model a priori during the testing time we do some computation and then do prediction
+based on the computation done during test time so this is the stark difference broad difference
+between eager learning and lazy learning so as we saw in eager learning given some training data set
+the algorithm addition tree algorithm or rule-based classification algorithm construct a classification
+model we build a classification model which is a single hypothesis of the entire training set right
+so when we build a tree the tree represents the entire training data set a generalized version of the entire
+training data set or a set of rules are generalized version of the entire training data set so eager learning
+algorithms are decision tree rule-based classifier knife-based classifier and svf all these are eager learning algorithms on the other hand in lazy learning right given training data set right we do not construct any model we
+We store that with some minor pre-processing and just store that training data as it is.
+When some test samples are given to us then we do computation and using that computation
+we do the final prediction.
+So this is the philosophy behind K nearest neighbor algorithm, KNN algorithm which we
+are going to discuss in detail in this module.
+So if I broadly try to compare eager learner versus lazy learner in terms of training time
+and in terms of test time or prediction time, let's try to compare them.
+So in eager learner, if you look into training time it will have long and expensive computationally
+expensive training time because we are building a single hypothesis, we are building given a
+training data set, we are building a tree, we are building a single hypothesis, we are building
+a set of rules.
+So it takes some amount of time or that means higher training time or long training time and
+it is computationally expensive.
+So while constructing the tree, we first, let's suppose I meant the root, we first find the
+information gain of all the attributes and the highest information attribute would be selected.
+So that needs some computation that is why eager learner algorithms in general will have higher
+train time.
+So when we compare this with lazy learner, in lazy learners we are not building any model, we are not building any single hypothesis, we are just storing the training data as it is with some minor processing.
+So essentially in lazy learners training time is essentially zero or almost negligible.
+So in lazy learners training time is almost negligible because we are not building any single hypothesis or set of rules or a decision tree upfront.
+If we look into prediction time or test time for eager learners it is very fast.
+So once you have constructed the tree and a test sample is given to you, you have to just parse
+the tree.
+You have to parse the tree from root node to leaf node and whatever is the class label at the
+leaf node would be the final prediction.
+So during testing eager learner tends to take very less time.
+They are very fast.
+Because in decision tree you have to traverse the tree.
+In rule based classifiers you have to identify the rule and do the prediction based on that.
+So in eager learner prediction or test time is very less or they are very fast.
+Essentially we are traversing through a tree or a set of rules.
+That's it.
+Already made rules or already made decision tree.
+In case of lazy learner if you look into test time or prediction time it would be very long.
+Because majority of the computation in lazy learners for doing prediction will be done during test
+time.
+So for each new test sample we do lot of computation with the training examples.
+So given a test samples during test time you do lot of computations during test time with
+the training examples to do the final prediction.
+So in eager learners there is lot of computation upfront in training phase.
+In lazy learners you pay you do lot of computation during test time or during the time of prediction.
+So when we look into lazy learners essentially what we said is we are not building any model.
+We are not building any single hypothesis.
+We are not building a decision tree.
+We are not building a set of rules.
+We are not building anything.
+We are just storing the training examples as it is and those training examples represent
+the knowledge.
+So in case of decision tree once the data set is given to you you build a tree and this tree
+represents the knowledge which was there in the training data.
+So given a training data when we build a tree.
+Now this tree actually represents the knowledge which was there in the training data.
+In case of lazy learners.
+In case of lazy learners this training data itself represents the knowledge.
+We are not going to construct any classification model out of it or any single hypothesis model out of it.
+During training instances during test time you search for the most closest trained sample.
+Right.
+So let's suppose this test sample is given to me and I am going to do prediction based on lazy learner or KNN.
+So during test time what you are going to do is this test sample will be compared with all the samples in the training data set and based on that right we are going to do the prediction.
+We are going to see that as we move along.
+So in lazy learners there is no separate model that is learned.
+The stored training instance represents the knowledge.
+If you look into lazy learners there are broadly two categories.
+So lazy learners or instance based learners are broadly divided into two categories.
+One is called rote learners and second one is called nearest neighbor algorithm.
+So what do you mean by rote learner?
+Rote learner means we memorize the entire training data set and classification is performed based on the exact match in the training example set.
+So someone has given me this training example.
+Training data set.
+Training data.
+It has some tuples and some attributes and towards the end I have class labels.
+There are some attributes and last column is the class label.
+In rote learner when this test sample is given to you for which you are going to do prediction
+and you do not know the class label in rote learner you are going to find the exact match of this test sample in the training samples.
+When you find the exact match the class label of the exact match let's suppose this double was matching exactly.
+So the class label of the exact match would be used to do the prediction for the test sample as well.
+So for the test sample whatever is the exact match that class level would be used to do the prediction for the test sample as well.
+So this is called road learner.
+You memorize the entire training data set and classification is performed based on the exact match in the trained samples or training data set.
+When we look into nearest neighborhood here we are not looking for the exact match.
+We are going to look for the closest k points closest neighbors.
+We are going to discuss this as we move along.
+So as I was talking about when we are talking about lazy learners the first strategy is called rote learner.
+So in rote learner the basic idea is we memorize the classification algorithm or the classification model.
+There is no model but the classification algorithm memorize the entire training data set.
+So let's suppose this data set is given to me.
+Last column is my class label and there are 4 attributes.
+Temperature, Outlook, Humidity and Windy.
+Based on these 4 attributes I want to predict whether I should play golf yes or no.
+It's a simple classification problem.
+Now I want to build a model such that given this sort of a test sample where the temperature is cool,
+Outlook is sunny, humidity is normal and windy is false.
+I want to predict the class label.
+Right now I do not know the class label.
+Right now I do not know the class label.
+So how I can do that in k nearest neighbor or lazy learner?
+In lazy learner specifically in rote learner we first memorize the whole train data set.
+Once we have memorized that whole train data set then once the test sample is given to me
+I am going to look for the exact match of this test sample in the training samples.
+Right.
+So where this cool, sunny I can find here cool, sunny, normal and false.
+So in this tuple I find the exact match.
+So this test sample can be found in this training tuple which is 714.
+What is the class label of this training sample or training tuple?
+Yes.
+So yes would be predicted for this test sample as well.
+So this is called road learner.
+So given a test sample you look for the exact match in all the training examples.
+Whatever is the class label of the training example would be the class label of the test sample as well.
+And that is what we are calling it as rote learner.
+Right.
+What happens if we do not find the exact match?
+For example if this is the case if we do not find the exact match.
+Right.
+So all 4 attributes are not matching corresponding to this test sample.
+I do not find any train sample which is exactly matching.
+So what do we do?
+Our rote learner actually fails.
+It will fail.
+It cannot do any prediction if it does not find an exact match.
+It will fail.
+It cannot do any prediction.
+So in that case what we can use is something called K nearest neighbor.
+And an algorithm as the name suggests.
+Right.
+It looks for the most similar records is not looking for the exact match.
+So given this sort of a data set.
+If test sample is not matching with any of the training examples.
+We look for the approximate match.
+So what do you mean by approximate match?
+So here we have 4 attributes and all of these are categorical in nature.
+So basically what we can do here is instead of all 4 matching.
+Right.
+If all 4 are matching we are talking about road learner.
+But if all 4 are not matching even if 3 are also matching.
+3 attributes are matching.
+Right.
+We are saying that it is approximately similar.
+It is approximately similar.
+And we can say that based on this approximately similar I can do the prediction.
+So here I have 4 training examples.
+Right.
+Which are looking approximately similar to the test sample.
+For which I have to do the prediction.
+Out of 4 attributes 3 attributes are matching.
+So these are approximately matching training examples.
+If these are approximately training examples.
+I can use them in K nearest neighbor.
+And whatever is the class label here.
+So here 3 training examples are saying class label yes.
+And 1 training example is saying class neighbor.
+So I can use majority voting to resolve this conflict.
+And I will predict yes here.
+Since majority of the training examples are saying yes.
+And only one is saying no.
+So I can resolve this conflict using a majority voting strategy.
+And for this test samples.
+I can still do the prediction as yes.
+Even I do not find an exact match in the training examples.
+So in rote learner you try to find the exact match.
+In K nearest neighbor you look for the almost similar training examples.
+So here we are not looking for exact match.
+We are looking for most similar records.
+So the basic philosophy would be birds of a feather flock together.
+So similar items will have similar properties.
+Is what we are trying to find or identify or look in the K nearest neighbor.
+We assume that data points that are close to each other in the feature space.
+Are most likely belonging to the same class.
+So since this test sample is very closely related to these training examples.
+So whatever is the class label of these training examples.
+Would be the class label of the test sample as well.
+In this case it was not.
+All of them are not saying yes.
+One class label is different.
+For one training example it is different.
+So how do I resolve the conflict.
+I can use something called majority voting.
+So the basic analogy or idea of K nearest neighbor is.
+That if it walks like a duck.
+Quacks like a duck.
+Then and looks like a duck.
+Most probably it is duck.
+So you are given some training data set.
+And a test record.
+So in training data set you have various animals.
+Like hen.
+Bright duck.
+Other animals.
+Now what you are going to do is.
+Once you are given this test sample.
+You are going to compare this.
+With all the training examples.
+So for example.
+This test example is very closely related to this.
+Train example.
+So whatever is the class label of this training example.
+Would be the class label for the test sample.
+So as you can understand.
+That I am not doing any computation a priori.
+Right.
+During training phase.
+We are not doing any computation.
+We are just storing the data as a test.
+Whenever the test sample is arriving.
+I am going to start comparing.
+This test tuple.
+With all the training samples.
+And the closest one can be used.
+Or a group of closest one can be used.
+To do the prediction for this.
+Particular test sample.
+So in KNN's neighbor.
+Right.
+If a new unknown data point is given to me.
+And I want to do prediction for it.
+I will try to find out common training examples.
+Right.
+Which are similar to the test sample.
+And based on that.
+I am going to do the prediction.
+That is why KNN is incredibly intuitive.
+And mimic our real life.
+So how does it work.
+In KNN algorithm.
+Once the training data set is given to me.
+I am not going to build any model.
+I am just going to store the training data.
+As it is.
+With some processing.
+Pre-processing.
+Once that is done.
+During prediction phase.
+Right.
+Our test sample is given to me.
+Once the test sample is given to me.
+Now I am going to compute.
+Right.
+Compare this new test sample.
+With all the training examples.
+And find the.
+K closest one.
+So in.
+K nearest neighbor.
+We are going to discuss that.
+In K nearest neighbor.
+We are going to talk about.
+K.
+N.
+N.
+K.
+Nearest.
+Neighbor.
+N. N. means.
+Nearest neighbor.
+K means what.
+K means.
+How many neighbors you want to consider.
+5 neighbors.
+50 neighbors.
+500 neighbors.
+1 neighbor.
+So we are going to look into the.
+K closest neighbors.
+So if it is.
+1.
+N. N.
+For this test sample.
+I am going to use.
+The closest nearest neighbor.
+If it is.
+2 N. N.
+That means.
+I am going to consider.
+The 2 nearest samples.
+Of the test sample.
+Right.
+2 nearest sample.
+Training samples.
+Of the test sample.
+If it is.
+5 N. N.
+That means.
+I am going to consider.
+5 most similar.
+Training example.
+To the test sample.
+And based on that.
+I am going to do the prediction.
+That is why it is.
+K N. N.
+Where K is the number of neighbors.
+We want to consider.
+Right.
+So.
+During prediction time.
+Once the test sample.
+Is given to me.
+Right.
+I am going to.
+Do.
+Comparison.
+Or computation.
+Of distance.
+Or similarity.
+Between.
+Test sample.
+And all the training example.
+I am going to identify.
+The K closest.
+Similar training examples.
+Compared to the.
+Test sample.
+And those.
+K nearest.
+Neighbors.
+Would be used.
+To do the.
+Final prediction.
+The basic.
+Idea.
+Of K nearest neighbor.
+That is.
+The basic.
+Philosophy.
+Of K nearest neighbor.
+So.
+Very similar.
+Representation.
+Again.
+This is more.
+Of a.
+Pictorical.
+Representation.
+In a.
+Two dimensional.
+Space.
+Let's suppose.
+This is my.
+Training data.
+And this is.
+Let's suppose.
+Red.
+And yellow.
+Right.
+So.
+In training data.
+There are.
+Three classes.
+Green.
+Red.
+And yellow.
+And I have.
+Projected.
+These.
+Training examples.
+Now.
+You can see them.
+In.
+This.
+Two dimensional.
+Space.
+All these.
+Training examples.
+Once.
+This.
+Test sample.
+Is given.
+To me.
+And I want.
+To do.
+Prediction.
+This is my.
+Test sample.
+Now.
+Once.
+This.
+Test sample.
+Is known.
+Now.
+I am going.
+To do.
+Similarity.
+Computation.
+Here.
+Or.
+Distance.
+Computation.
+To find.
+The.
+Nearest.
+Training.
+Sample.
+Corresponding.
+To.
+Nearest.
+Training.
+Sample.
+To.
+Nearest.
+Sample.
+To.
+To.
+The.
+Prediction.
+For.
+The.
+Class.
+Label.
+Of.
+The.
+Test.
+Sample.
+As.
+Well.
+That.
+Is.
+The.
+Basic.
+Idea.
+Behind.
+Kn.
+Algorithm.
+We.
+Will.
+Discuss.
+During test time, we use that single hypothesis, we use the decision tree and we use the set
+of rules to do the prediction.
+On the other hand, in lazy learner, given some training data set, we are not going to
+build any model.
+During testing time, once the test samples are given to me, I am going to do majority
+of the computation or similarity computation to do the prediction for the test samples.
+So in KNS labor, essentially is a lazy instance based learner algorithm and we have understood
+the intuition behind KNS labor.
+We are going to continue in the next video as well.
+Take care.
+Bye bye.

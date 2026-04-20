@@ -1,0 +1,420 @@
+Hello to all of you. My name is Dr. Hemant Rathar and we are in the course Machine Learning. We are discussing Module 11 Hierarchical Clustering and this video is on Agglomative Clustering.
+So the learning objectives of this video are that we will start with the step by step algorithm for Agglomative Clustering. Then we will look into the core concept of proximity matrix, the linkage criteria. Then we will look and compare different linkage criteria like single link, complete link, average link, boards method etc. etc. So let's start right away. Right. So we are discussing Hierarchical Clustering.
+There are two ways we can build the hierarchy. One is called divisive approach which is called top down approach and we can also do agglomative approach which is called bottom up approach. In the last class or in the last video we discussed k bisecting k-means which is a divisive clustering method.
+That means we start with a big cluster and we iteratively break that big cluster into smaller clusters till we find only one point in each cluster. This is called divisive clustering or top down clustering and we can implement it using bisecting k-means.
+Today we are going to start with agglomative approach which is bottom up approach. As the name suggests we are going to build the tree from bottom to up. Right. So initially right each point would be a cluster. So each point would be a cluster. Right. Now so we start with each data point as its own cluster.
+Based on some notion of similarity I am going to merge the two most similar clusters. So let's suppose I have merged these three clusters. And I have formed a bigger cluster where there are two points in each of the bigger cluster. Then based on some notion of similarity I am going to further merge the clusters till we have one big cluster at the top which contains all the data points. Right. So let's talk about how do we build this agglomative.
+How do we build this agglomative clustering. Right. Or follow a bottom up approach. So as we are talking about we initialize. Right. Where each data point would be a part of will be one cluster. Right. Then second step is we calculate the proximity matrix. Proximetry matrix help us in calculating distance or similarity between two clusters. So I am saying that we merge the two most similar clusters.
+What are the two most similar clusters. How do we know that. We know that using proximity matrix. Right. So step number one is each point is a cluster itself. Then we merge the two most similar clusters. We do it iteratively. So how do we know which are the two most similar clusters. Based on proximity matrix. Which calculates the distance or similarity between all pairs of clusters. We repeat. Step number two. Iteratively.
+We repeat.
+Step number two.
+Iteratively.
+Till we have only one big cluster at the top.
+At the root.
+At the root.
+So this step number three.
+So this step number three.
+So this step number three.
+So this step number three.
+So this step number three.
+So this step number three.
+Is a cluster itself.
+Then we merge the two most similar clusters.
+Then we merge the two most similar clusters.
+Then we merge the two most similar clusters.
+We do it iteratively.
+So how do we know which are the two most similar clusters.
+Based on proximity matrix.
+Which calculates the distance or similarity between all pairs of clusters.
+So we repeat.
+Step number two.
+Iteratively.
+Till we have only one big cluster at the top.
+At the root.
+So this step three.
+Consists of two things.
+One is called merging step.
+You merge the two closest clusters.
+Two most similar clusters.
+Based on proximity matrix.
+Once the merger is done.
+We have to update the proximity matrix as well.
+So we will see this in a minute.
+So how this will look like.
+Right.
+Step number one.
+Right.
+Let's suppose I have five points.
+P1.
+P2.
+P3.
+And P4.
+P5.
+Right.
+So I have five points.
+Right.
+Now first step is.
+Each of these points will be cluster itself.
+So P1 will become C1.
+P2 will become C2.
+P3 will become C3.
+And so on.
+So each point will be a cluster.
+Right.
+So a set of n clusters will be formed.
+Where each cluster contains only one single data point.
+Right.
+Now.
+What we have to do.
+We have to build up proximity matrix.
+What is the proximity matrix.
+You have heard about this term few videos back.
+What is the proximity matrix.
+Proximity matrix defines.
+Or measures.
+Or note down.
+The similarity between two clusters.
+For example.
+This is point one.
+So I am assuming this is cluster one.
+Only one point is there.
+Right.
+I can write it like this.
+Right.
+So point one.
+So here I am writing.
+The distance.
+Assuming I am defining similarity based on distance.
+I can write.
+What is the distance between P1 and P1.
+Or C1 and C1.
+So distance between P1 and P1.
+Or C1 and C1 would be 0.
+Similarly distance between C2 and C2 is 0.
+Distance between C3 and C3 is 0.
+Distance between C4 and C4 is 0.
+What is the distance between C2 and C1.
+I have to calculate.
+How do I calculate it.
+Euclidean distance.
+X2 minus X1 plus square plus Y2 minus Y1 plus square under root.
+So this will come distance here.
+Right.
+Assuming distance is inversely proportional to similarity.
+Or similarity is inversely proportional to distance.
+Right.
+I am assuming these conventions are standard across the community.
+Right.
+So whenever we are doing agglomative clustering.
+This is how we typically define similarity.
+Which is inversely proportional to distance.
+Points are closer.
+They are more similar.
+Points are farther.
+They are less similar.
+So this is proximity matrix.
+Which measures the distance between two clusters.
+Distance can also be converted into similarity if I just do an inverse of it.
+Right.
+So this way.
+I can do that.
+Right.
+So proximity matrix measures the similarity or distance between two clusters.
+Any two pair of clusters.
+Remember any two pair of clusters.
+P2 P5, P3 P5, P4 P5, P5 P5.
+Right.
+Similarly P3 P1, P3 P2, P3 P3, P4 P5.
+P4 P3 and P4 P3 P5.
+Right.
+So any pair.
+Right.
+Proximity matrix measures the similarity or distance between any two pair of clusters
+in the dataset.
+Right.
+So assuming.
+Right.
+Step number one was.
+Right.
+We initialize this proximity matrix.
+We fill the default values.
+Right.
+We measure the distance between C1 and C1.
+C1 and C1, C1 and C2 and fill this proximity matrix.
+Once that is done.
+Then we start merging the two more similar clusters.
+So this is what I was talking about.
+Initially we had five points.
+Each point is a cluster.
+C1 and C1.
+Right.
+So this is my C1 which contains only P1.
+C2 contains only P2.
+C3 contains only P3.
+C4 contains only P4.
+And C5 contains only P5.
+Right.
+And then I denoted them on the proximity matrix.
+Right.
+So the distance between C1 and C1 can be put here.
+C2 and C1 can be put here.
+C2 and C2 would be put here and so on.
+Right.
+It's a n cross n matrix.
+Okay.
+Now.
+So once this is done.
+Each point is a cluster.
+Now I am going to merge the two most similar clusters.
+So assuming C2 and C5 are the two most similar clusters.
+So I am going to merge them.
+Right.
+Then I will have only four clusters in the data set.
+C1, C3, C4 and C2 union C5.
+Right.
+So these two clusters will be merged and will become part of only one cluster which is C2 union C5.
+Now this merging needs to be updated on the proximity matrix as well.
+Right.
+So here as you can see.
+Right.
+C2 will be gone.
+C5 will be gone.
+It will be replaced by only one column.
+C2 union C5.
+And in the row also.
+Right.
+C2 will be gone.
+C5 will be gone.
+It will be replaced by only one row which is C2 union C5.
+Right.
+That's it.
+Now as you can see.
+I have to put the distance between C1 and C2 union C5 here.
+Right.
+Because C2 is gone.
+C5 is gone.
+It's union is there.
+I have to put union.
+Right.
+I have to calculate the distance between C4 and C2 union C5.
+Right.
+So these three fields needs to be updated.
+Of course distance between C2 union C5 and C2 union C5 would be similarity would be 1.
+Right.
+Or distance would be 0.
+Right.
+Here it is distance.
+This would be 0.
+But these three values needs to be computed.
+Right.
+So updating the proximity matrix means this.
+Right.
+Updating the proximity matrix means this.
+Right.
+Updating the proximity matrix means updating, recomputing the distance between all the cluster pairs in the dataset.
+We do it iteratively till we have only one big cluster at the top.
+Right.
+So the biggest question in agglomative question is how do you define inter cluster similarity.
+Right.
+So the biggest question in agglomative question is how do you define inter cluster similarity.
+Right.
+So the biggest question in agglomative question is how do you define inter cluster similarity.
+Right.
+So let's suppose this is my cluster 1.
+This is my cluster 2.
+Cluster 1 contains p1.
+And this is my cluster 2.
+Cluster 1 contains p1.
+And this is my cluster 2.
+So the biggest question in agglomative question is how do you define inter cluster similarity.
+Right.
+So let's suppose this is my cluster 1.
+This is my cluster 2.
+Cluster 1 contains p1.
+p2.
+p2.
+p3.
+And p4.
+And cluster 2 contains p5.
+p6.
+p7.
+And p8.
+How do you define inter cluster at the top.
+Right.
+So the biggest question in agglomative question is how do you define inter cluster similarity.
+Right.
+So let's suppose this is my cluster 1.
+This is my cluster 2.
+Cluster 1 contains p1, p2, p3, and p4.
+And cluster 2 contains p5, p6, p7, and p8.
+So how do I define similarity between c1 and c2.
+We are saying that in agglomative clustering we are going to merge iteratively the two most
+similar clusters.
+So how do I define similarity between two clusters then only I will be able to find out that these
+two are very similar.
+Let's merge them.
+How do I define similarity between these two clusters is defined by something called inter-cruster
+similarity.
+And that is what we are going to discuss now.
+Inter-cruster similarity can be defined by something called linkage criteria also known as linkage
+criteria.
+So linkage criteria defines how similar two clusters are.
+How do we measure the similarity between two clusters.
+So in this case similarity is inversely proportional to distance so that would work.
+Now in very simplistic terms if you want to visualize one way to define similarity between c1 and c2 would be the distance between the centroid of c1 and c2.
+So I can define similarity between c1 and c2 with the help of centroid of c1 and c2.
+The distance between c1 and c2 can help me in finding the similarity between c1 and c2.
+For example let's suppose I have another cluster of c3.
+Right.
+And it has some points.
+Now how do I define similarity between c1 and c3.
+Distance between centroid of c1 and distance between centroid of c3.
+Similarly how do I define similarity between c2 and c5.
+What is the distance between centroid of c3 and centroid of c2.
+Right.
+This is one way which is centroid based linkage to find similarity between these two clusters.
+Right.
+If there was only one point it was not an issue.
+Right.
+Distance between two points would be enough.
+But my cluster now contain many points.
+Now how do I define similarity.
+So one way is centroid.
+There are few more ways.
+Right.
+So how do we define similarity between two clusters.
+Right.
+It is called as inter-cluster similarity.
+And it can be done based on min, max, group average, distance between centroid.
+We saw in the last slide.
+And Watts method.
+We are going to discuss each of these in detail as we move along.
+And then we have proximity matrix as well.
+So what is min?
+Right.
+Min is similarity between two clusters is defined by two most similar points in two different clusters.
+Max means similarity between two clusters.
+Max means similarity between two clusters is defined by two most dissimilar points in these two clusters.
+And so on.
+We will discuss each of them in detail as we move along.
+So this is min.
+This is max.
+This is group average.
+Same clusters.
+This is distance between centroid.
+Right.
+So centroid based inter-cluster similarity.
+And then we have Watts method.
+Let's see each of these in detail now.
+Right.
+So min means similarity between clusters is defined by shortest distance between any two points
+in cluster A and any point in cluster B. So in min also known as single linkage similarity between
+two clusters is defined by shortest distance between any point in cluster A and any point in cluster B.
+On the other hand max also known as complete linkage is we define similarity between two clusters as longest distance between any two points in cluster A and cluster B. Right.
+Any point in cluster A and any point in cluster B. Group averages we define similarity based on average distance between all pairs of points in cluster A and cluster B. And then we have Watts method. We will see that in a minute.
+Right.
+So let's start with each of these methods in detail now.
+So what do we mean?
+Min.
+So we will discuss each of these now in detail.
+Min.
+Min also known as single linkage.
+The similarity between two clusters is based on two most similar points in different clusters.
+So if it is cluster C1 this is cluster 2.
+And there are many points in cluster 1 and many points in cluster 2.
+I define similarity between C1 and C2 based on identifying two most similar points in the dataset. Right.
+So one C1 and another point in C2. Right.
+So whatever is the distance between these two will define the similarity between C1 and C2. Right.
+So let's take a toy example.
+Let's suppose this is my dataset P1, P2, P3, P4, P5, P6. There are six points.
+First I have to develop the proximity matrix.
+So proximity matrix means each point is a cluster in itself.
+Right now each cluster contains only one data point.
+So P1 is essentially C1, P2 is essentially C2 and so on.
+I compute the distance between all pair of clusters. Right.
+So distance between C1 and C1 or P1 and P1 is 0.
+Distance between P2 and P2 is 0. Distance between P3 and P3 is 0 and so on.
+Distance between P2 and P1. P2 and P1 would be defined by.
+So it's a two dimensional data. X is there and Y is there.
+So distance between P2 and P1 is x2 minus x1 square plus y2 minus y1 square plus summation kander root. Right.
+And that will come at as 0.24. Right.
+So distance between P2 and P1 and P1 and P1 and P2 would remain the same. Right.
+It's a diagonal matrix.
+So either you can generate the upper part of the diagonal or the lower pattern of diagonal.
+It is an identity. Right.
+Just same of each other.
+Similarly distance between P3 and P1 would be x2 minus x1 plus y2 minus y1 kander root. Right.
+So that is coming out to be 0.22 and same here and so on. Right.
+So once I have developed this proximity matrix which is telling me the similarity between two clusters.
+Now I have to merge the two most similar clusters.
+So the two most similar clusters are where the distance is minimum in this diagonal matrix. Right.
+The distance between P3 and P6 is minimum. So I am going to merge P3 and P6 first.
+So P3 and P6 are merged and then I have to update the proximity matrix.
+So this will be gone, this will be gone, this will be gone, this will be gone. Right.
+So out of these two rows, two columns, one column will be replaced right by P3 union P6 and this would be discarded.
+Similarly row also P3 union P6 would be put and then P6 column row might be discarded.
+Now I have to update the proximity matrix. So when do I update the proximity matrix?
+So P6 as you can see, this is removed, this is removed. So this is P3 union P6.
+So here I have to update, right, distance between P3 union P6 and P1. Right.
+This needs to be updated. Similarly this needs to be updated. Similarly other fields needs to be updated.
+You can understand what I am trying to point out. Now how do I update it?
+So now as you can see, right, see here. So this is 1, this is 0.2, this is 0.3, this is 0.4, this is 0.5 and this is 0.6.
+I am saying we will first merge P3 and P6. Right.
+So this is the dendogram. X axis are all the data points and essentially clusters in this snapshot.
+Y axis is essentially my SSE value or distance whatever I want to put. Right.
+Distance between P3 and P6 is minimum. So let me merge them. Right.
+So distance between P3 and P6 is minimum. So I merge and this become C3 union C6. Right.
+So first C3 and 6 are merged and I have noted down here. Right.
+Now how do I calculate the similarity between 2 and 3.
+C2 and 3 union 5. How do I do that? It would be the distance between 0.2 and 3.
+Got it? Distance similarity between or distance between cluster C5 and 3 union 6 would be the distance between 0.2 and 0.3. Got it?
+Distance similarity between or distance between cluster C5 and 3 union 6 would be the distance between 5 and 6. Not 5 and 6 because they are farthest. Right. So min is the similarity between 2 and 3.
+So min is the similarity between 2 clusters is based on 2 most similar closer point in different clusters. Right.
+So I am going to iteratively merge these. Once 3 and 6 are merged.
+Then we are going to merge 2 and 5. Then we are going to merge 2, 5, 3, 6. Then we are going to merge and rest of the guys. Right.
+So this is how we are noting down in the demogram. So first 3 and 6 are merged. Then 2 and 5 are merged. Then 3, 6, 2, 5 are merged. And then 3, 6, 2, 5 and 4 are merged. And then 3, 6, 2, 5, 4 and 1 is merged. Right. Min.
+So the strength of min is or single linkage is very flexible and it can give me non-global or complex clusters.
+You remember one of the clustering approaches was continuity based clustering. Right. Continuity based clustering.
+So single linkage can give me this sort of clusters. It can generate chaining effect. Right. So that is an advantage as well as a disadvantage.
+What is the disadvantage? Right. It is highly sensitive because of the chaining effect. It is highly sensitive to the noisy point. Right.
+So if there is a noisy point. So think about it. This is the dataset. Now similarity between these two clusters will be defined by.
+So let's suppose this is the noisy point. This is the noisy point. I will define similarity between C1 and C2 would based on these two noisy points.
+Because of the minimum distance. Right. Because of the formulation. Right. So this chaining effect. Right.
+Or single linkage is vulnerable. Is sensitive to noisy or outlier points. Right. So that is single linkage.
+What is max or complete linkage? The similarity between two clusters is based on two least similar or distant points in the clusters.
+Again the same dataset which I have taken earlier. Again I have to generate the proximity matrix.
+The proximity matrix in row. In iteration 1 would exactly be same. Because same clusters. Once I start merging.
+Then the update of proximity matrix will change. But initially for all the methods. Initially the proximity matrix will remain same. Right.
+So now the similarity between two clusters is defined by two most dissimilar points in the cluster.
+So initially all the points are itself in a cluster. So the proximity matrix will remain the same. But while merging. I will always merge the two most similar clusters. So this is the way I am defining similarity. Right. But. Right. The similarity between this cluster and this cluster is defined by these two points. Distance between these two points. But I will always merge the two most similar clusters. Right. So this is how I define similarity. And this is defined by these two points.
+So this is how I define similarity. And let's suppose this is a cluster. So this is C1. This is C2. And this is C3. So similarity between C1 and C3 will be defined by the distance between this. This distance. Similarity between C2 and C3 will be this distance.
+So once I know D1. Once I know D1, D2 and D3. I will always merge the two most similar clusters. So single linkage, max, complete linkage and so on can help us in defining similarity. Whatever is the similarity measure. We always merge the two most similar clusters. So for example D3 is the minimum. Right. D3 value is minimum. So then I am going to merge C2 and C3. Right.
+So defining similarity versus merging is different. Defining similarity defines the similarity between two clusters. However, while running the aggregative clustering, we will always merge the two most similar clusters. Right. So you remember right. The same data set. First, initially I will merge C3, C3. Right. Now I have to update the proximity matrix.
+So distance between P1 and P3 and P6. Right. So now this cluster would be P3 union P6. And this one would be P3 union P6. And this would be gone. And this would be eliminated.
+Now as you can understand. First I have merged C3, C3. Now let me recompute the distances. Update the proximity matrix. So distance between P1 and P3 union P6. Right. Would be defined.
+So distance between P5 and P3 union P5 would be defined by this distance. Not by this distance. This is min. Right. Similarly distance between P5 and P3 union P6 would be defined based on this distance. Not based on this distance. Right. Max. Right. So then when I run this algorithm. Right. Then again here.
+So let's do it from starting. So first you will merge 3 and 6. Most similar clusters. How do you define similarity is different. Then you will merge 2 and 5.
+Then you will merge 3, 6 and 4. Then you will merge 1, 2 and 5. And then you will merge 3, 6, 4 and 1, 2, 5. Yeah.
+So this is how we generate. So this is how we generate. So the advantage of max linkage is, complete linkage is, it is less vulnerable to noise and outliers as compared to single linkage.
+So this is how we generate. And another advantage is, it will give you globular shapes. But then the disadvantage is, that you will get huge number of clusters. As in huge size clusters. Not huge number of clusters. Huge size clusters.
+Then we have group average. Group average. Group average as the name suggests. We find all pair distances between clusters. And that helps us in defining the similarity. So initially this will remain the same. And as you can see, now when I'm merging. Right. Initially, I will merge.
+So I will merge. 3 and 6. Then I will merge. 2 and 5. Then I will merge. 4, 3 and 6. Then I will merge. 3, 6, 4, 2 and 5. And then finally I will merge it with 1 as well. So this is how we do that. Now what is, what's method? What's method is bit different. Right. It is very close to KME's clustering algorithm. Now let me help you out with its understanding.
+Similarity between two clusters. Similarity between two clusters is defined by. Right. Increment in the SSE value when we merge the clusters. Right. Three clusters. I have the SSE value of each of these clusters. Right. So similarity between C1 and C2 is defined by. Right. So I have SSE value of this guy. SSE value of this guy.
+Similarity between C1 and C2 will be defined by. Increment in SSE value if I merge C1 and C2. What is the increment? Right. Similarly, similarity between C1 and C3 will be defined by the increment in the SSE value if I merge C1 and C3. Similarly, similarity between C1 and C3 will be defined by the increment in the SSE value if I merge C1 and C3.
+similarity between c2 and c3 will be defined by the increment in the ssc value right if i merge
+c2 and c3 we will always merge the clusters which leads to minimum increase in the ssc value
+so this is what's method right so we discussed min we discussed max we discussed group average
+and we discussed centroid base also you can visualize and then wards method first if i want
+to compare in wards method first three and six are merged in group average three and six are merged
+in max also three and six are merged and min also three and six are merged but later on you can see
+that different clusters will be merged at different point of time right what would be the time complexity
+of agglomative clustering think about it here essentially what we are doing is we are generating
+the proximity matrix the time complexity will come because of the proximity matrix
+what is the time complexity to generate the proximity matrix it is all pairwise distance
+all pairwise similarity between all clusters right so the time complexity would be n square
+to generate the proximity matrix proximity matrix is what similarity between or distance between all pair of points right essentially each point is a cluster initially so this would work so it is n cross n right so when i generate all pair distances right to generate the proximity matrix the complexity is n square right at each point of the proximity matrix is n square right at each point of the proximity matrix is n square right so when i generate all pair of distances right to generate the proximity matrix the complexity is n square right
+each step at each step at each iteration at each step at each merge right i find the minimum value right so to find the minimum value right so to find the minimum value right i can run an algorithm right so to find the minimum value right so to find the minimum value either i can just do a linear search or i can use a data structure which can help me in identifying the sort of value quickly right so by default if i use the by default version of agglomative clustering the complexity is n cube very very very high very very high
+so in this n cube right so in this n cube right n square is coming right because of we are generating the proximity matrix once the initial proximity matrix is generated then we have to merge n number of times based on what minimum distance right so that becomes n square multiplied by n which is n cube right i can reduce this n value to log n by effectively storing all the data structures so some of the implementations
+right they were able to claim that they were able to claim that they were able to claim that agglomative clustering can give you n square log n complexity as well because the searching i am trying to optimize but to generate the proximity matrix the complexity is n square only so therefore in this video we talked about how do we build agglomative clustering in hierarchical clustering it is a bottom up approach where initially each point is a cluster and then we start merging based on some sense of similarity
+we always merge similar clusters but how do we define similarity we define similarity based on linkage criteria i can define linkage criteria based on single link which is min or complete link which is max or watts methods or distance between centroid etc etc. thank you for attending today's video thank you for attending today's class take care bye bye
+you

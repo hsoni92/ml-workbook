@@ -1,0 +1,103 @@
+Hello to all of you. My name is Dr. Himant Rathaur and we are in the course Machine Learning.
+We are in the module 6 KNERS-Neighbor and today's video is about practical consideration
+and challenges in KNN. So, the learning objective of this video is we are going to first understand
+the similarity or distance computation in KNERS-Neighbor algorithm. We are going to look into
+feature scaling issues in KNN and how to find the value of K along with the curse of dimensionality
+issues in KNN. So, let's start right away. So, in the last video we talked about what is the basic
+idea of KNN and how the algorithm works, right and so on. So, first that all the training examples are
+stored as it is as the test sample is given to me. I will do the distance computation, identify the K
+closest neighbors and I will use majority voting to do the prediction for the particular test sample.
+Now, there are two things which we need to discuss further discuss now which is how do you do the
+similarity computation or distance computation and the second thing is how to find the right value
+or ideal value of K. These are the two things we will further elaborate in this video. Right,
+so let's start with the first one how do you do the distance computation or similarity computation.
+So, to do distance computation or similarity computation it depends on the type of data set we have.
+So, if it is a numerical data, if the data set your training data set is numerical data then I can use
+Euclidean distance to do the distance computation. But if the data set is of categorical type I have
+to use, I cannot use Euclidean distance I have to use something called Hamming distance or Hamming
+computation to do the similarity computation. So, basically given two points you want to find out whether they are
+or not whether they are similar or not. So, if these both the points are numerical in nature,
+I can do the Euclidean distance computation. If both these tuples are of categorical type,
+to find the similarity between these two I have to do the Hamming distance computation.
+So, we have seen Euclidean distance computation in our data pre-processing course but just to quickly
+revise, Euclidean distance means let's suppose this is one point, point A, this is my point B.
+I want to find the distance between point A and point B. If A and B are very close, they are similar.
+If the distance between A and B are zero, they are identical. If the distance between A and B are
+very far, they are, the distance is high. That means they are very dissimilar. How do I do the distance
+computation? If x is represented as x1, y1, b is represented as x2, y2, I can simply do Euclidean
+distance computation as x2 minus x1 plus y2 minus y1 plus square. Right? So, this is how I can calculate
+the distance between A and B. This is also called as the crow flies. Right? So, it is the smallest distance
+between any two points. And this is how we can do the distance computation. Now, in distance computation
+whenever we are doing, if you remember, right, all the dimensions are treated equally and that becomes
+a problem we will see later on. Right? If you can recall what is the problem, think about it.
+But if the two tuples are of categorical type, if my data set is of categorical type, I can do
+similarity computation based on Hamming distance. Hamming distance means that now you have two tuples.
+Now, you have to calculate the similarity between these two. So, the Hamming distance is the number
+of attributes in which where the two records are different. How many attributes, the number of
+attributes where two records are different can be used to do the distance computation,
+Hamming distance computation and that we have already seen in the last class. You can already do last course.
+Now, the major problem. Right? Whenever we are doing distance based computation, if there is Euclidean
+distance involved, right, then all the attributes are treated equally. If the scale of one attribute is
+higher than the scale of another attribute, then it becomes a problem. Because the attribute having higher
+scale will start dominating the mathematical computation. Right? Which is you are doing two computation here.
+Substraction, squaring and under root. So, it will end the addition. So, it will start dominating all
+these computation and it will start squealing the results. So, attribute with the large values,
+value range will start dominating the distance computation and the attribute with the smaller range
+will basically be ignored. Right? So, any distance based computation, Euclidean distance, any distance
+based computation will have this issue where we have to see the scale of each attribute and we have to
+make sure that scale of all the attributes are in the same range, not identical on the similar range.
+For example, right, let's suppose I have two attributes, height and income. Height is in the range of meters
+and income is in the range of 10,000 value. 10,000. The absolute magnitude is 10,000 to 1 lakh. So, here you
+can see if I am doing Euclidean distance computation, income attribute will start, will always dominate the
+computation and that becomes a big problem. And we have seen this example in data pre-processing course as well.
+So, let's suppose this is my training example. I have two attributes, attribute 1, attribute 2. Right? And again,
+point 2 is also defined with attribute 1 and attribute 2. And this is, let's suppose, point 3. Right? If I look distance computation between p1 and p2, p1 and p3 and p2 and p3, you will see that a2 attribute having higher magnitude will start to dominate the computation as you can see. So, if I am doing this computation, distance between p1 and p3 and p2 and p3, you will see that a2 attribute having higher magnitude will start to dominate the computation as you can see. So, if I am doing this
+computation, distance between p1 and p3 would be 1-1 square plus 150-100 square or 100-150 square square. And the distance between p1 and p3 is 50. Distance between p2 and p3 is 2-1 square square plus 100-110 square square under root. Right? So, if I do that, it comes out to be 10.5. Right? If you look very closely, this was my p1 and this was my p1.
+p1 and this was my p2. This was my p2. This was attribute 1. This was attribute 2. This was attribute 1 attribute 2. Attribute 1 attribute 2. Attribute 1 attribute 2. Right? If you look very closely, this sample, when we are doing distance computation, the a1 value is exactly matching. Right? And a2 value basically is 1.5 in terms of 1.5. If you compare p1 and p3, a1 value is getting twice. And this one is almost same.
+But in any case, you are seeing that the distance between p2 and p3 is very less. So here my a2 attribute is getting doubled. But since its magnitude is less, it is having lesser weightage in the distance computation.
+So here my a2 attribute will start dominating the computation because the magnitude of a2 is higher. We have seen all these things in the data pre-processing course. So, KNA nearest neighbor algorithm will suffer from this problem which is scaling issue. How do we solve them? We are going to use normalization.
+So we can use min max normalization. So we can use min max normalization or we can use z score normalization. So min max normalization is x minus x min divided by x max minus x min. And you can do some other computation as well. Right? So if the min max value, if you are doing new range as 0 and 1, then the formula will be extended.
+So z score normalization is x scale would be x minus x minus x minus x min divided by standard deviation.
+So we have to scale in KNA all the attributes in the similar range, in the similar scale. So this means that transforming the data should be for all the attributes in a similar scale. Right? So when you are using KNA algorithm, make sure that all the attributes are in similar range.
+So, another question we started with was how to find the ideal value of K. If the K value is 1, what will happen? If K value is N or infinite, what will happen? N is number of data points. Right? N here is number of data points. K is how many neighbors I want to consider.
+If K is 1, if K is 1, then I will have low bias, high variance KNA model. Low bias, high variance KNA model, which is highly prone to overfitting issue. It will give me highly unstable decision boundary. Right? You will see this sort of a classification boundary with one nearest neighbor.
+So, if we take K value is infinite or K value equals to N, then it will be high bias low variance situation, where you will always predict for test sample in any area, you will always predict the majority class. Right? Because all the training examples are going to be neighbor and whatever training examples are of majority class. Right? Would be the prediction for the particular test sample as well.
+So, finding the value of K is extremely hard because K value 1 gives you unstable boundary. K equals to infinite gives you majority class. So, how to find the value of K? Right? So, how to find the value of K? Basically, you find the K value using something called cross validation. Right? It is more of a hit and trial. Hit and trial you try with different values of K and whatever is giving you stable results, that value you are going to consider. Right? So, K equal you can do N fold cross validation.
+So, given the data set, you are going to divide data set and test data set. Or you can do 5 fold split. 4 are used for training, 1 is used for testing and similar sort of thing you can always do. Right? So, in this we are doing N way split and then we are doing N fold cross validation to validate the results. But in K and areas neighbor, to find the ideal value of K, it is more of a hit and trial method. There is no single metric which can give you always optimal value of K.
+Now, problems with K nearest neighbor. K nearest neighbor suffers from curse of dimensionality. What do you mean by curse of dimensionality? So, if you remember, one of the steps in K nearest neighbor is to do distance computation, similarity computation.
+If there are two dimensions, so I am going to do x2-x1 car square + y2-y1 car square. So two dimensions here are x and y. If there are three dimensions, then it would be x, y and z. x2-x1, y2-y1 and z2-yz1.
+So now you see computation has increased. If it is 100 dimensions, every time you have to do, for each dimension you have to do this computation. So k nearest neighbor suffers from curves of dimensionality. That means as you increase the number of features, number of dimensions, its performance starts to degrade severely because the number of computations are increasing.
+In k nearest neighbor, the high dimensional space, the distance computation will become expensive and that is why k nearest neighbor will become extremely slow. So as you increase the number of dimensions, the volume of space and the computation will also increase exponentially and this will make my distance, my overall algorithm slow.
+So k nearest neighbor suffers from curves of dimensionality because this step you are going to do for one point, for one particular test point against all the training examples. So this is one computation. Test versus one training example. You are going to do it for test versus all the training example.
+So k nearest neighbor and then you are going to find the nearest k, right? So think about the complexity. So we were talking about complexity, no? Think about it. We are going to discuss it towards the past.
+Another limitation of k nearest neighbor is it might give you counter-intuitive results sometimes. Counter-intuitive results sometimes that means let's suppose this is 0.1, this is 0.2, this is 0.3, this is 0.4.
+Now if I calculate the similarity, the distance between these two, it gives me, you can see these are the dimensions. So 0-1 square square, 1-1 square square and so on, right? If you do this distance computation, the distance between p1 and p2 is coming out to be 1.4 and p3 and p4 is also coming out to be 1.4. But if you look very closely here, there is a very stark difference.
+So sometimes since you are doing distance computation and which takes only magnitude into picture, right? It might produce sometimes counter-intuitive results. Right? So curse of dimensionality might become make my algorithm very slow. How do I fix the curse of dimensionality issue? I can reduce the number of features. How do I reduce the number of features? By using something called feature selection method. So you can do attribute subselection. You can do forward selection. You can do
+backward elimination. You can use induction. You can use PCA. You can use T-SNE. All these algorithms you have seen in the previous courses to reduce the number of features and then run KNN algorithm. Right? So if KNN algorithm is used on high dimensional data, it is computationally expensive and it will give you poor performance. To improve the performance, you can do feature selection to reduce the number of features and that is how you can increase. Still you can use KNN algorithm for higher dimensional data.
+So what is the complexity of KNN algorithm? So what is the complexity of KNN algorithm? The KNN complexity is very simple. Right? So for a particular test point. So this is the test point and I have N training example. I have to do the distance computation between this point and all the N training examples. Right? Distance computation complexity would be N D. Right? Number of points are D. N. And number and dimension of each point is D. So N
+So if I am running KNN. So if I am running KNN. So if I am running KNN. So if I am running KNN. So if I am running KNN. So if I am running KNN. So if I am running KNN. So if I am running KNN. So if I am running KNN. So I have to run KNN. So I have to find 5 near a sample. So 5 closest sample. So out of all these distances. Right? I have to find the closest 5.
+right. So closest 5 I can use any searching algorithm or sorting algorithm to find the closest
+n right. So here it would be n log k right. So the complexity of k nearest neighbor is n into d
+plus n log k. n into d is the distance computation and to find the k closest sample the complexity
+would be n log k and that is how you find the complexity of k nearest neighbor. So k nearest
+neighbor as you can see depends on n and d. n and d. If the number of points are huge number of distance
+computation you have to do is will be very high. If the number of dimensions are also high right you
+can see inside each calculation distance computation the calculation will also increase right. So k nearest
+neighbor perform poorly if the number of points are high or the number of dimensions are high. So what
+are the positive or advantages of k nearest neighbor? It is very simple and intuitive algorithm right. What
+you have to build is the Voronai cells and Voronai tesseraction boundary and you can do the classification.
+So it's a very simple and intuitive method very easy to build. Second advantage is there is no training
+phase. We are not building any model. It is a lazy learning algorithm right which is having extremely
+less train time. It gives you very good non-linear classification boundary. So if you want to build a
+very complex classification algorithm k nearest neighbor algorithm can be very useful in that
+scenario because it gives you highly complex non-linear classification boundary. It can give you very complex
+classification boundary like this right because based on test direction boundary and it is good for complex data
+distribution right. This k nearest neighbor worked better for complex distribution. So right now what we have
+discussed till now is we have two philosophies for building classification models. One is called eager learning.
+Dissidentry and rule-based classifiers are example of eager learning where we build model a priori. We build the model and then that model is used to do the prediction.
+We saw another classification model which is called lazy learner. An example of lazy learner is called k nearest neighbor algorithm. In k nearest neighbor we are not building any model. Given a test sample we are doing distance computation finding the closest k and then the class
+label of those k sample would be used to do the prediction of k nearest neighbor would be used to do the prediction for the particular test sample. So it can give me very complex classification boundary and they are very simple. However, rule-based classifiers are very expensive in building up front. So when do you use k nearest neighbor? When you have low dimensional data. High dimensional data suffers from curves of dimensionality. When you want relatively complex classification boundary where interpretability is not primarily concerned.
+Because in rule-based classifiers the interpretability is very high. Which rule is applied I can know. But in k nearest neighbor identifying interpretability is very very poor. So they are flexible but they give you non-linear classification boundary. But that makes my model less interpretable. And it gives me very high performance as well.
+So in summary, in this video we discussed about k nearest neighbor algorithm. We looked into distance computation based on Euclidean distance and Hamming distance for k nearest neighbor algorithm. We looked into the limitation of k nearest neighbor algorithm like it suffers from curse of dimensionality and it suffers from scaling issues. It might sometimes produce counterintuitive results as well. We also looked into the complexity of k nearest neighbor algorithm and advantages and limitations.
+That finishes the k nearest neighbor algorithm. We will continue in the next module. Take care. Bye-bye.
+I will continue in the next module. Take care. Bye-bye.

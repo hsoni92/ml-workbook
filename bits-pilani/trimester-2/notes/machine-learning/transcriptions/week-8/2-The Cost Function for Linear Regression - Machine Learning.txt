@@ -1,0 +1,102 @@
+Hello to all of you. My name is Dr. Himat Rathaur and we are in the course Machine Learning.
+We are in the module 8, Regression. Today we are going to discuss the cost function for
+linear regression problems. So the learning objective of this video are, we will look
+into the need of cost function in the learning algorithms in case of regression. We will
+look into how to calculate prediction or residual error and how do we calculate mean square
+error. So let's start right away. So in the last video we talked about, right, this is my
+single linear hypothesis function. This is my hypothesis function, right, which consists
+of basically two terms, theta 0 and theta 1. Essentially it is a line, line is essentially
+y = mx + c, right, where I have to find out what is the best value of m and what is the
+best value of c. Right, these are the two terms I have to find out. So the key question is how
+do I find the best value of m and c? In this case theta 0 and theta 1, how do I find the best
+value of theta 0 and theta 1? Right, so we have to apply a learning algorithm to find the best
+best values of theta 0 and theta 1 and that fits our data with minimum error. So how do we calculate
+the error and how do we do with it with a cost function is what we are discussing now. So what
+is the cost function? A cost function or a loss function or an error function is a function
+that measures the loss or cost or penalty if model is doing some incorrect prediction. Think about it.
+So this is my data set, this is my age, this is my salary. Right, I have built a linear regression model. Linear regression model means that these are my data points. I have drawn a line which is a linear regression model which cuts through the point, majority of the points with minimum error. Which goes through the points with minimum error. Now, let's look at the point.
+So let's suppose someone asked me if my age is 70. Can you predict my age? So this is my data set. So this is my data set. This is my data set. This is my age. This is my salary. Right. I have built a linear regression model.
+model linear regression model means that these are my data points i have drawn a line which is a
+linear regression model which cuts to the point majority of the points with minimum error which
+goes through the points with minimum error now let's suppose someone asked me if my age is 70
+can you predict what would be my salary so what i have to do here is i have to project this point
+this intersection on y-axis and found out will find out what is the value of y right what is the value
+of salary right this is how we do it for example if i ask you if my age is let's suppose 35 can you
+predict my salary right so i have to do it like this right now the point here is that in this case you
+are seeing that all these data points are actually lying on the line properly but in real world this
+is never the case right look at this right now now if i am doing some sort of prediction it might not
+always be perfect in those cases we have to calculate the error right so given our data set original data
+right which consists of x and y y is continuous value i have to build a function f of x such that i can predict y
+right now for example so this is my training data this is let's suppose i am predicting
+these are the values i am predicting right so this is my train data and this is my test data so once i have
+trained right using linear regression model once i have trained these data points right what i have to
+do right i have to do prediction on the test data so i will predict for 4. let's suppose my model is predicting
+right 104 value my model is predicting y hat which is 104 now the value predicted is 104 the original value is 103 right the
+difference is 104 minus 103 which is the error right this is what we are talking about right the cost function
+will measure the cost or penalty for models incorrect prediction so here the model is doing incorrect prediction
+how do you measure it right the cost function will actually do that so our model will actually do
+predictions right and i do have the true values for the test data as well and i can do sort of this sort
+of computation right now so if you look very carefully right so let's start by looking at the error in the
+higher training example right so in this right so right now i said that okay i have tested my model
+against the test data set but before that we have to tune our model on train data set as well we have
+to decide which line should be best this line or this line which line all these three out of these three
+lines which line is the best one that is what we want to identify now and once that is done we can
+check the error error for computation will remain same during training tests both right but you have to
+check error if the error is zero then it is a perfect case otherwise we have issues right so the prediction error
+is the difference between the actual value and the predicted value right difference between the actual value and the predicted value right so for example this is my x variable and this is my y variable and these are my data points
+now i have to build this function f which is a let's suppose line right which passes through all these
+points with minimum error with minimum error so let's suppose the line is this right now as you can see
+this line is this line is not perfect it is actually not passing through all the points that is why it has error for example this point it is bit far from the actual point so the error would be for this particular point would be this for this point right maybe this is x1 this is x2 this is x3 so error for x2 would be this error for x5 would be this and so on error for x4 would be 0 right so here you can see that error would be
+right predicted value right predicted value predicted value predicted value is essentially giving us the error so predicted value is coming from right f of x and this is my original value so if i predict if i subtract predicted value minus original value that gives me error we want to minimize this error while fitting the regression line so this value can tell us how far our predicted value is from the original value right in this
+So in this case we are calculating the vertical distance to find this value now when we are talking about error error for x2 is this x3 is this but we have n number of points in the data set so how do we get the complete error total error total error would be this error plus this error plus this error plus this error plus this error and so on so computation of all the errors right will give me total error so total error would be summation of all the
+predictions minus their original value so summation of prediction minus original value for all the
+data points for all the training examples now if i do this right this might not be the best way
+right if i just subtract these values like this this might not be the best way because this is a
+bad idea because sometimes i get positive error sometimes i get negative error sometimes again i
+get positive error sometimes i get negative error so sometimes many a times what we will have is
+originally the model has huge error but when we do the summation right when we do the summation
+the total error becomes zero right so how do we handle that there are two ways right you take only
+absolute error right so you ignore the sign you ignore the sign you just take magnitude
+right this is called sum of absolute error that can be done if we do not ignore the sign then even if
+the model has higher error might give me zero error consolidated error zero total error
+so we have to do sum of absolute error but there is a better sort of error calculation method which is
+called sum of squared errors that means error in a data point would be predicted value minus original value
+car square we do it for all the points summation of all the points so in linear regression the most common approach for
+calculating the error is squared error for single point i do it
+i calculate squared error as predicted value minus original value car square and when i do summation of
+this error for all the points that becomes sum of squared errors so when i use sum of squared errors
+that cancellation of sign will not be a problem right the more important part here is that larger errors will give higher we can assign higher penalty to it why because there is a squaring
+term right 2 car square versus 20 car square right the penalty would be higher here as compared to here right so if the error is very less the penalty is less if the error is high the penalty would also be high because of the squaring term
+right the third reason for sum of square error is that it is a differentiable function cost function is a differential function and it is easy to find the minima in this case so we know that we can calculate the error in regression problems
+using sum of the function using sum of square error right you i hope you got it right so let's suppose these are my data points three data points let's suppose this is my function f of x i can calculate error how
+This value minus its projection on the line. This value minus its projection on the line. This value minus projection on the line. Summation of all these three things will tell me what is the error because of this function. If on the same dataset I build this function what would be the error? Right? Projection of this point on the line plus projection of this point on the line plus projection of the point three on the line. Summation of all these three things will give me error.
+Right? Of course we do not want to take we do not want to do a normal error calculation. We want to do sum of square errors calculated computation because the sign problem would not be there. Plus larger penalty if there is a larger error plus this function becomes my differentiable function as well. Right? So now sum of square error is done. Now let's try to understand there is a terminology called mean sum squared error. What is mean sum squared error? It is very simple. Sum of squared error.
+divided by number of points. Divided by number of points. Right? So that is what we are trying to point out. So mean square error means what is the average error in the each point. Right? So when I calculate mean square error. So I would know that what is the average distance average error in the dataset in the mod. Right? Once I do that. Right? So this is the cost function here is 1 by m.
+which is the number of data points. M is the number of data points. M is the number of data points. Multiplied by summation of predicted value minus original value.
+K square. I can change this predicted value. Right? Since I am sort of my function here is linear regression function. It's a line. So line can be replaced by mx plus c which is theta 0 plus theta 1 x. Right? I can replace my y dash y hat with the line.
+And the remaining formulation remains the same. So my first function now would be right? 1 by m multiplied by summation of theta 0 plus theta 1 x minus y square square. We do it for all the points. Right? Summation is for all the points. Right? Sometimes in the denominator we use instead of 1 by m we use 2m. Right? Just for notation convenience while calculating the derivatives. Right? So now here the hypothesis
+is my function is my function is mx plus c which is theta 0 plus theta 1. Right? Which is a line. Right? My parameters here are in this line the parameters which I can tune are theta 0 and theta 1. Theta 0 and theta 1. And the first function is 1 by 2 m multiplied by summation of predicted value minus original value square.
+These are the terms. Right? These are the terms important terms here. Now what I have to find is I want to find theta 0. Proper values of theta 0 and theta 1 such that I can minimize my cost function. Right? I can minimize my cost function.
+So essentially what we are talking about theta 0 and theta 1. If I am talking about a line. What is the intercept? What is the best value of intercept? What is the best value of slope? These are the two values I want to find out. So that I can get minimum error. Right? I can get the minimum error. Right? So if it is a one dimensional data. If I want to visualize how it would look like. Right? So all these are my data points. Right?
+So what is the intercept? What is the intercept? So this red line now is intercepting at 5. What is the slope? Right? These are the two things I want to find. I can draw for the same data set. I can draw this line as well. I can draw this line as well. I can draw this line as well. Which line is the best? Right? So all of these are having different slopes and different intercepts. So which combination is best is what we want to find. Now to find that. Right? It becomes.
+To find that. What we can do here is. We can fix one thing. To find out which. What is the best value of theta 0 and theta 1. Let's start with. Fixing the value of theta 0. So fixing the value of theta 0 means. Intercept I have fixed. But slope of the line can be different.
+So all these lines are possible. Which line is the best one. Right? Which line is the best one. Now we can calculate the error. Right? Based on theta 1 only. So we fix 1. And calculate error. Based on different slopes value. Right?
+So now when I do that. Right? When I calculate. So when I fix theta 0. And calculate theta 1. For theta 1. Right? Now different values if I project. Right? Different slope value if I project. Right? On a two dimensional space. It would look like this.
+So this is my loss function. Right? So this was my intercept. I can project this line. I can project this line. I can project this line. Right? There are three lines are possible.
+So theta 0. So theta 0 is fixed. Theta 1 I am varying. And I can sort of plot a graph based on that. So this is my theta 1. So theta 1 if. Is 0.5. What is the error?
+Theta 2. Theta 1. When it is 1. What is the error? Right? So error is. So on the x axis I have theta 1. On y axis I have the error. Right? There are two terms here. Theta 1 and error.
+Theta 0 is fixed. Now here if you see. Right? For different values of theta 1. I will calculate the error. If you see. This is a pure optimization problem. Right?
+So what we are trying to say in the left graphs are. Right? These many lines are possible. When we fix theta 0. Right? These many lines of different slopes are possible. Right? Of different theta 1 are possible.
+Which line should be chosen. Right? Can be based on. Right? And optimization formulation. Right? So here blue line if you see. Right? This blue line. Right? Is a poor fit. On the other hand. Red line is the best fit.
+Now if it is a 2 dimensional vector space. Right? So if you see here. Right? Here we want to reach. This is a global minima. Right? Here you want to reach. How we want to reach that? We will see that in next video about when we study gradient descent.
+But for now. Right? This is the error term. Right? When we fix theta 0. Right? And then. Wherever we are. Right? We want to take. We want to move in such a way. That we reach the global minimum.
+So if it is a 2 dimensional vector space. Right? So if it is a 2 dimensional data. Right? I have 2 values to optimize. Right? 2 dimensional data. Or if I have to optimize for 2 values simultaneously.
+So if I have to optimize for 2 values. Right? Here I was optimizing. Fixing one value. Which is theta 0. And was changing theta 1. But let's suppose I want to optimize both the values. Parallely. Theta 0 and theta 1. Right? Now then it becomes a 3 dimensional vector space. It is a.
+Mean square error would be a convex function. And that would be a bowl like. Shape. And this would be a global minima. I want to reach here. Right? So what is the best value of theta 0. And theta 1. Is what you want to find out. It would be somewhere here.
+So theta 0. So theta 0. Would be. Maybe minus 11. And theta 1. Would also be. Minus 11. Will give me. Best. Line. That fits the data. With minimum error. So. The objective. Optimization. Objective here is. That. It is a learning problem. With only one goal. How do we find the optimal value of theta 0 and theta 1. Right? Where y dash is my predicted value. Y is my original value.
+And I calculate the loss. With the help of. When I do. Y dash minus y. Ca square. Right? So. How do I find the. Optimal value of theta. So that my total loss is. Minivized. There are two approaches to find the optimal values of theta. Right? Two ways of finding the optimal value of theta. One is called closed form solution. And other is called iterative solution. So in the next video. We will talk about the gradient decent algorithm.
+that will help us in finding the optimal value of theta. so in summary in this video we talked about
+the cost function for measuring error in the regression problems. we also find from we learned
+that how do we calculate error through sum of square errors through mean square errors. we also
+looked into the cost function which is j theta which is a convex bowl like service. thank you for
+attending take care bye bye.

@@ -1,0 +1,358 @@
+Hello to all of you. My name is Dr. Hemant Rathaur and we are in the course Machine Learning.
+We are discussing module 12 and this is video 4. The title of the video is the Birch Algorithm and the CF tree.
+So the learning objectives of this video are we will first discuss the structure of CF tree.
+Then we will look into the role of branching factor and threshold values in Birch.
+Then we will look into the process of insertion of a new data point in CF tree in the Algorithm.
+And finally we will look at the overall Birch Algorithm.
+So let's start right away.
+So in the last video we talked about clustering feature CF.
+So the basic idea is that we want to represent tightly coupled clusters using a three-tuple architecture which is called CF.
+The Birch summarizes group of data points which is tightly coupled clusters using architecture called CF.
+CF is a three-tuple architecture which consists of N, LS and SS.
+Where N is the number of data points, LS is the linear sum of points and SS is the squared sum of the points.
+Now once we have this CF, we can efficiently calculate the other properties of the clusters, the tightly coupled clusters.
+So for example with the help of CF, I can find the centroid of that cluster.
+I can find the radius of that cluster.
+I can even find the diameter of the cluster.
+Right?
+So the tightly coupled cluster is now represented with the help of CF.
+And CF gives us various statistical properties of that tightly coupled cluster.
+Now let's talk about how this CF can be used in Birch.
+So let's look into the Birch algorithm again.
+Now let me add few more things here.
+So initially we have one lac data point which we cannot load into the main memory in one shot.
+So the Birch algorithm can give me clusters, natural clusters can identify natural clusters in this one lac data points.
+How?
+It is a four phase process.
+Phase 1.
+In phase 1, we will parse, scan through these one lac data points one by one and find very tightly coupled clusters.
+These might not be natural clusters.
+The only idea is I have to find very tightly coupled clusters.
+Right?
+And it is essentially a data reduction step.
+Right?
+So what I want that these one lac data points when I find tightly coupled clusters, let's suppose the number of tightly coupled clusters are 10,000.
+So now I have 10,000 tightly coupled cluster.
+Each of them might be containing 10 data points.
+So that is how I get one lac data points.
+So these are my tightly coupled clusters.
+Each of these will be represented by a clustering feature.
+C F.
+Right?
+So this is essentially my data reduction phase.
+Right?
+These tightly coupled clusters might not be the natural clusters.
+Right?
+So once I have identified them, the second step is how do I sort of organize them so that I can run the algorithm properly.
+I will come back to this point too in a minute.
+Then phase 3 is global clustering.
+So now I have these 10,000 data points.
+These are data points.
+Clustering feature is a data point.
+I can get the centroid.
+I can get the radius.
+I can get the diameter.
+So essentially it is a data point.
+Right?
+Now these 10,000 data points I can load into the main memory and I can use any traditional
+algorithm.
+Right?
+To do clustering for me to identify natural clusters in this data set.
+So for example these 10,000 data points.
+Right?
+Essentially represented by the centroid can be passed to K-means algorithm.
+And K-means is able to identify there are 10 natural clusters in the data set.
+I am able to identify 10 natural clusters with the help of these 10,000 data points with the help of K-means.
+I could have used BIRCH.
+I could have used agglomative clustering.
+I could have used DB scan.
+Any traditional algorithm I can use here.
+Right?
+These are my natural clusters.
+Now please note down.
+These natural clusters essentially are represented right now by not with the original points.
+By the summary of the tightly coupled clusters.
+Right?
+In this summary, there might be few mistakes.
+So then we move to step number 4.
+In step number 4, once I know that there are 10 natural clusters in my data set, I will do another parse through the data.
+And assign each point, right, to the nearest centroid.
+And that is how I get natural clusters through BIRCH.
+Now let me add couple of things here.
+Right?
+Now, how this algorithm would work?
+So, let's go back to step number 1.
+Right?
+I have 1 lakh data points.
+This is point 1.
+This is point 2.
+This is point 3.
+And so on.
+Till point 1 lakh.
+I will start with, so I am saying, I will scan through the data once.
+Right?
+And represent these 1 lakh data points with the help of 10,000 data points.
+Tightly coupled clusters.
+So this, let's suppose I start with point number 1.
+I start processing point number 1.
+I have to represent this as a clustering feature.
+CF.
+So clustering feature, let's call it CF1, is a three-tuple architecture.
+Since this is first point, this is the only cluster.
+So, P1 will come here.
+In this tightly coupled cluster, number of points in here are 1.
+The linear sum would be something.
+Square sum would be something.
+You can calculate it.
+Then, I process point number 2.
+Now, point number 2 can be part of clustering feature 1 or can be a different tightly coupled cluster.
+So, how do I know point 2 is closer to point 1 or clustering feature 1 or not?
+I will define the distance between P2 and the centroid of clustering feature 1.
+So, how do I do that?
+Clustering feature 1, how can I represent that?
+Through the centroid.
+Ls by n give me the centroid.
+So, centroid of this cluster I know.
+I know the P2.
+I will calculate the distance.
+If P2 is closer to CF1, right?
+I can put P2 into CF1 or it needs to be represented by a different cluster.
+Different cluster means it is not part of that tightly coupled cluster.
+It is a bit far from the cluster.
+So, assuming this P2 is part of CF1 only.
+It is closer to the centroid of the CF1.
+So, now I have to update my clustering feature.
+Right?
+P1 and P2.
+Number of data points will be 2.
+Right?
+I am not storing the data point.
+I am storing the summary.
+And then there would be linear sum and square sum.
+Right?
+Suppose point 3.
+Now I am processing point 3.
+Again, I will check whether it is closer to the cluster.
+Whether it is closer to CF1 or not.
+So, CF1.
+How can I find the centroid?
+LS by N will give me the centroid.
+I know the centroid.
+I know the P3 location.
+I will calculate the distance.
+If it is closer.
+I will assign it to CF1.
+Otherwise, I have to generate a new clustering feature.
+Assuming P3 is also part of CF1 only.
+So, the number of points are 3 here.
+And then I will update linear sum and SSL as well.
+Now, let's go to P4.
+Assuming now I have to add P4.
+I calculated the distance between P4 and centroid of CF1.
+And I found out that P4 is very far.
+So, now I have to generate a new clustering feature.
+That represents P4 and the tightly coupled cluster around it.
+Alright?
+So, let's suppose P4 went here.
+Right?
+So, one point in this cluster.
+This is my clustering feature 2.
+And so on.
+I move to 0.5.
+P5.
+Again, it is not closer to CF1.
+It is not closer to CF2.
+Right?
+So, I generate another CF.
+CF3.
+Right?
+And so on.
+How many CFs would be there?
+As you can understand, there would be 10,000 CFs.
+Right?
+I am saying we are going to generate 10,000 tightly coupled clusters.
+Okay?
+This is what we are going to do.
+Now, think about it.
+Suppose that P1001.
+Now, I want to check this point should go to which clustering feature.
+Right?
+So, it can go to CF1, CF2, CF3, CF4 and so on.
+I have to do a linear searching every time.
+Which might not be an efficient way.
+Right?
+So, to put a point in a proper clustering feature, one way is you linearly arrange all the clustering
+features.
+Or, can I use a more efficient way?
+Yes, I can use a more efficient way.
+I can build a B+ tree.
+So, that is called as CF3.
+Clustering feature tree.
+Essentially, a group of clustering features organized in a tree-like format.
+So, that I can efficiently put one point in a proper clustering feature.
+I can put points in efficiently in the clustering feature tree.
+Right?
+So, let's do that.
+So, let's quickly summarize the steps again and then we will look into what we discussed
+now.
+Right?
+So, phase 1 was focusing on building the CF3.
+That means, I have given 1 lakh data points.
+Can I sort of build a summary of these points?
+Can I represent these 1 lakh data points with 10,000 tightly coupled clusters?
+Right?
+Now, these tightly coupled clusters, if I arrange them in a linear fashion, it might not be most
+efficient way.
+So, what I can do is, I can build a tree-like structure.
+We will see that tree in a minute.
+Right?
+So, that tree is called as clustering feature tree.
+CF3.
+Right?
+Now, this clustering feature, I cannot load these 1 lakh data points, but this clustering feature, which is essentially my
+10,000 data points or 10,000 clustering features, right?
+I can load it into the main memory.
+So, step number 1 done.
+Phase 1 done.
+Phase number 2 is, balancing this tree.
+Right?
+So, linear search is not very good way to search a proper place for a particular point, list
+of clustering feature.
+So, how can I arrange in a tree-like structure?
+But this tree might be skewed in one direction, might not be balanced.
+Right?
+So, to optimize the tree, we can do that optimization in, right?
+We can reorganization of tree in phase 2.
+Right?
+So, this is more of an optional phase, where this tree is reorganized in a fashion, so that
+this searching, so that I can put a point at a proper clustering feature, right, can be
+made more efficient.
+So, that I can do condensation of tree, realignment of tree, balancing of tree, all these things can
+be done in phase 2.
+Phase 3.
+So, when we look into this tree, clustering feature tree, right, it's a tree.
+It's a B+ tree.
+So, this tree is going to be a clustering feature, right?
+So, this tree is going to be a clustering feature, right?
+So, this tree is going to be a clustering feature, right?
+So, this tree is going to be a clustering feature, right?
+So, this tree is going to be a clustering feature, right?
+So, this tree is going to be a clustering feature, right?
+So, this tree is going to be a clustering feature, right?
+So, this tree is going to be a clustering feature, right?
+So, this tree is going to be a clustering feature, right?
+So, this tree is going to be a clustering feature, right?
+So, this tree is going to be a clustering feature, right?
+So, this tree is going to be a clustering feature, right?
+So, this tree is going to be a clustering feature, right?
+So, this tree is going to be a clustering feature, right?
+So, this tree is going to be a clustering feature, right?
+So, this tree is going to be a clustering feature, right?
+So, this tree is going to be a clustering feature, right?
+So, this tree is going to be a clustering feature, right?
+So, this tree is going to be a clustering feature, right?
+So, this tree is going to be a clustering feature, right?
+So, this tree is going to be a clustering feature, right?
+So, this tree is going to be a clustering feature, right?
+So, this tree is going to be a clustering feature, right?
+So, this tree is going to be a clustering feature, right?
+So, this tree is going to be a clustering feature, right?
+So, this tree is going to be a clustering feature, right?
+So, this tree is going to be a clustering feature, right?
+So, this tree is going to be a clustering feature, right?
+So, this tree is going to be a clustering feature, right?
+So, this tree is going to be a clustering feature, right?
+So, this tree is going to be a clustering feature, right?
+So, this tree is going to be a clustering feature, right?
+So, this tree is going to be a clustering feature, right?
+So, this tree is going to be a clustering feature, right?
+run k-means on that or agglomative on that or db scan on that to find natural clusters in the
+data set once that is done then in phase four i will assign now what i have are 10 tightly coupled
+10 natural clusters and essentially their centroid now i have one lag data points as well
+which are sitting into the disk hgd i will scan through the data set one more time and assign
+each point to the nearest centroid right so think about it right even so if you look into the
+agglomative clustering the complexity was m cube right that means each point is accessed right think
+about it so there are five points five cube how many times i'm accessing the data points in here
+how many times in birch how many times i'm accessing each point only twice one time in phase one and
+one time in phase four so each point original data point is accessed only twice in birch one time in
+phase one and one time in phase four that's it now so the time complexity think about the time complexity
+right would be extremely less it will only about how to build this tree and efficiently organize this
+tree insertion deletion and balancing of the tree right i'm not focused or dependent on the number of
+points in the data set number of 10 data points if even they are one crore i'm just scanning those one
+crore accessing those one crore data points twice right just accessing those data points so i'm not
+boys is not dependent on number of data points now it is dependent on how efficiently i can organize my cf tree
+so in step number four phase four i will scan through the data point once more reassign each point to their nearest natural centroid
+right nearest natural cluster right so how do we build this cf tree so cf tree is a height balanced
+b plus tree right very simple height balanced b plus tree i could have built a binary tree also but the problem would be
+binary tree the depth would be very high 10 000 data points the example which we are talking about
+the depth would be very high so to reduce the depth also right depth means number of computation at non leaf nodes
+would be very high so to reduce that what i can represent it is instead of the binary tree i can represent
+the data set clustering features as in structure called b plus tree so each node here right in the b plus tree
+would have number of cf entries cluster featuring entries it would have non leaf nodes it would have leaf nodes
+leaf nodes are my tightly coupled clusters that are representing raw points right and i can easily optimize my
+addition and subtraction so this is how cf tree would look like clustering feature tree would look like
+one way one way we saw original ways can i arrange all these cf from cf1 to cf 10 000 in a linear way not optimal solution not a very bad way of doing it i can arrange them in a tree a b plus tree so what i have is right this b plus tree structure where at the leaf node
+leaf node i have these tightly coupled clusters how many of them are there 10 000 total
+these are my tightly coupled clusters so let's suppose i want to insert point one lakh
+if this structure was not there it was arranged in a linear fashion i have to do this comparison
+one lakh comparison to identify where should i put this point into all these clustering features
+which clustering feature is the best one right so i don't want to do that i can arrange this in a tree
+so this one lakh point i will go at the root of the tree i will find out right so all these
+it's a b plus tree right so there is a branching factor so each node right in this tree will have
+right some branches so let's suppose the branching factor here is six so a particular node will have
+six clustering features maximum six clustering features six clustering features six clustering
+features so these six natural tightly coupled clusters can be if it is a b plus tree
+can be summarized right with the help of one clustering feature at the top now these six
+clustering feature can be summarized at the top right so that is why it becomes a tree right it's a binary
+search if you know binary search it is very simple right so let's suppose five this is two this is six
+bst i'm talking about this is one and this is three this is let's suppose seven this is six and this is nine
+so if i give you insert four so what you're going to do you're going to first check with five
+a four is less than five so you move towards the left you check four with now two two is less than four
+so you move towards the right and then you insert four somewhere here towards the right of three
+right so this is what how you build a bst binary search tree similarly you have b plus three right so
+you start from the top the summary of all these points are here the summary of these points are here
+the summary of these points are here and so on
+right so all these leaf nodes are summarized here all these non-leaf nodes on this node are summarized
+here and so on so i start from the top i find the nearest clustering feature right which is the summary
+of all these clustering feature of in the non-leaf node which are summary of these clustering features
+and then i insert it at a proper place yeah now let we'll see an example don't worry about it
+yes now there are two more terminologies here in clustering feature there is something called
+branching factor branching factor means a node can store how many clustering features by default
+there is the value i think is 10 in sk learn but again you can tune it and then there is a threshold
+what do you mean by threshold this clustering feature right is a tightly coupled cluster right very tightly coupled cluster
+i have summarized these six tightly coupled cluster using this clustering feature i have summarized these five clusters using this clustering feature and so on now
+we start with let's suppose 0.5 i move here i found that it is in this clustering feature
+i then i do computation i found that it is there in this clustering feature and then i came here
+now i have to find p5 should be assigned to cf5 cf2 which one right so i said you are going to compute
+the distance between p5 and the centroid of cf1 right if the distance is less you assign if the distance is
+more you create a new clustering feature how do i define less and large this is defined by threshold
+i can say that there is a threshold so cf of this cluster will tell me about n ls nss which is centroid radius and diameter
+but how do i know what is the maximum limit of this cluster what is the acceptable size of this tightly coupled cluster this is denoted by the threshold value so the maximum size of this cluster can be up to t right this is diameter i can represent it in terms of diameter or radius it's a tunable in sk learn right so for example if it has only one point right it would have centroid and it would have
+some radius but i can accommodate few more points here right till what the t value so all when i sign the point i check what is the distance between the centroid and the point and whether the distance is less than threshold or not this distance is less than threshold this point can be assigned to this cluster otherwise this should go to some other cluster or i might have to create a new question feature right so in phase one as
+we are talking about we start with a point and recursively scan through the clustering feature tree cf tree and put it at the proper leaf node right and we attempt to update based on the stuff let's see right this is a better representation so this is the current snapshot of my cf tree cf tree okay branching factor assume here is three right so that means i can have three children here i
+can have three children here and i can have three children here and i can have right i am at the root so maximum i can have three here i can have three here so this is essentially
+my one node which has three clustering features this is another node which are having two clustering features this is another node which is having two clustering features this is another node which is having two clustering features one is empty here one is empty here and this one is having this one is having three clustering features it is packed i brought
+one point in i want to put this point in i want to put this point properly at a location how do i do that i start so i've got sc8 this is a new point i start from the root right i check whether it should belong to c1 c2 c3 how can i do that right this is my point i can get the centroid of c1 i can get the centroid of c2 i can get the centroid of c3
+whichever is the closest you move in this direction so assuming c1 was the closest so i moved in this direction now this c1 clustering feature was representing actually these three titricoupled clusters right so i moved from here to here now i have to assign this eight point to either sc1 or sc2 or sc3 or it might be a very different point right a new
+clustering feature might be a clustering feature might be required so assuming how do i do that i will compute the distance between sc8 and the centroid of 1 centroid of 2 or centroid of 3 assuming right it is not closer to any of that not closer means it is the threshold the distance between sc8 and sc1 is more as compared to the threshold so that is why it is not part of sc1 not part of sc2 and not part of sc3 so now what i have to do is i have to represent this
+sc sc8 as a new clustering feature because it is not part of sc8 as a new clustering feature because it is not closer to this tightly coupled cluster this tightly coupled cluster or this tightly coupled cluster so i have to create a new clustering feature it contains only one data point right as you can understand the branching factor here is three right branching factor is three so c1 can have only three clustering feature so what i have to do here now it became four clustering features
+so i have to break this tree and realign this tree right so what will happen this c1 right this initial c1 will be broken down into c1 dash and c1 double dash right so this bigger one is now broken down into two smaller sub clusters right so now it has these two clustering features
+c1 c1 clustering features c1 clustering features c1 clustering features c1 clustering features c1 double dash will have two clustering features c1 double dash will have two clustering features c1 double dash will have two clustering features c1 double dash will have two clustering features c1 double dash will have two clustering features c2 and c3 now at this level
+right the branching factor again in the whole tree is three now i have four branches right so what
+i have to do i have to break this further this is more of a tree construction right so here the
+branching factor here is actually three but i have four nodes so again i have to break root into two
+smaller sub clusters right okay so that you can do it on your own right so this root will be broken
+into two smaller sub clusters root one and root two and then the tree depth will increase like this
+tree depth will increase you can build on your own it's very simple
+right so this might create addition of new node might create ripple effect throughout the tree
+which is fine right which is fine while constructing the tree so this is how the birch works now what
+are the limitations and concerns with birch birch is sensitive to the insertion order that means
+right in the original data set i have let's suppose one lakh data points
+if i reorder the points and build the tree it might give me a very different cf tree
+my birch algorithm is sensitive to the insertion of point insertion order of points in the cf tree
+right the tightly coupled clusters are actually defined on the leaf node on the leaf node right
+and that is also fixed these tightly coupled clusters right essentially would be always be spherical in
+type right so that is why it is spherically biased clustering method right and that might give me
+right sometimes non-natural clusters right it might not be able to identify natural clusters in the end
+so these are the three limitations of birch clustering algorithm so in summary in this video we talked about the cf tree the construction of cf tree why it is required what do you mean by branching factor and threshold in the cf tree we looked into how do we insert a new point in this cf tree we overall looked into the birch clustering algorithm and we looked into birch is very fast and scalable however it has some limitations
+so thank you for attending today's class take care bye bye

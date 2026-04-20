@@ -1,0 +1,112 @@
+Hello to all of you. My name is Dr. Hemant Rathar and we are in the course Machine Learning.
+We are discussing Module 7 - Ensemble Learning. Today's video is on Bagging and the need for Random Forest Classifier.
+So the learning objective of this video is, we will first look into the problem of overfitting in complex models like deep-dition trees.
+Then we will look into one of the solution to this by doing bootstrap aggregation or the fundamentals of bagging algorithm.
+And then we will look into how bagging helps us in reducing the model variance.
+So let's start right away.
+In the last video we talked about if we have a single highly complex classification model, it tends to overfit the data.
+It has overfitting issues. What do you mean by overfitting issues?
+So for example, I have a highly complex classification model, a deep-dition tree.
+So deep-dition tree means the height of the tree is infinite. There is no limit to the height of the tree.
+Based on the data, it might be very large as well. The tree depth is very high.
+Now when we have deep-dition tree, there the tree actually learns the training data perfectly.
+So in the ideal world, what we want the model to learn is the underlying pattern, not the noisy part.
+Random noise in the training data.
+So if the classification model learns random noise, then we are talking about model overfitting.
+Then we are saying that the model has overfitted the data.
+So what is the problem with that? If we pass unseen data, new unseen data to this overfitted model, it tends to perform very poorly.
+Since it has memorized everything, it tends to perform poorly.
+And that is what we are saying that my overfitted model are too dependent on training data.
+You do a small change in the training data and that is what we have in the test data.
+Right? The model performance goes really bad.
+We saw this graph in the last class as well, where on x-axis, you had model complexity and y-axis.
+You had error and we had two types of error. Train error and test error.
+This is my train error and this is my test error. This zone is called overfitting.
+And what we want here is that our model should be lying somewhere in this zone where it should have some train error, some test error.
+It should not have absolutely zero train error or absolutely zero test error.
+Right? That is never possible. Right? Then we have done road learning. We do not want that.
+So, the model should be lying somewhere in this zone. Bagging based algorithm force classification models to lie in this zone.
+It will force the model to come in this zone. That would be the fundamental idea of any bagging based algorithm.
+We are going to discuss many of these in today's class.
+So, the first basic idea of bagging is, bagging stands for, the full form of bagging is bootstrap aggregation.
+There are two steps here. Bootstrapping and aggregation.
+So, let's look into each of these steps. The first step is called bootstrapping. Bootstrapping means, from the training data set.
+So, this is my training data set. I will create many bags. So, when we create many bags from this training data set.
+So, this is bag 1, this is bag 2, this is bag 3 and this is bag 4. So many of these. We are going to create many bags from the training data set.
+Now, what are these bags? These bags are essentially subset of training data set.
+How do we make bags here? Typically, we do random sampling with replacement to create these bags.
+So, for example, a very simplistic example, let's suppose I had n sample in my training data set.
+So, the number of data points are n and the number of dimensions are d. Right? Typically, you will see that the size of the bag, this bag d1 would be less than n.
+So, let's suppose this is n1. So, n1 would be less than n. Right? I will do random sampling with replacement to create this bag. Similarly, I will use random sampling with replacement to create this bag and so on.
+So, we create many different training set from the original data set with the method called bootstrapping. Bootstrapping is random sampling with replacement to create these bags.
+Now, once these bags are created. Right? What we do is we construct classification model on each of these bags. For example, let's suppose I am using decision tree based algorithm.
+So, on this bag, I will create a decision tree model 1. DT1. On this bag, I will train another decision tree, decision tree 2. On this bag, bag 3, I will train another decision tree, decision tree 3 and so on.
+So, on each bag, I am going to create a different classification model. Right? So, here I am using same classification algorithm, decision tree. And there are n decision trees I am going to create for n bags. Right? For each bag, I am going to create one decision tree.
+Once these bags are created, then what I am going to do, whenever a test sample is given to me. Right? Whenever a test sample is given to me, the test sample is passed to all the decision trees.
+Now, this decision tree will do some sort of prediction. Right? Because for this test sample, earlier there was only one decision tree. Now, I have n decision trees. So, test sample will be passed to each decision tree. Each of these decision tree will do some sort of prediction. I am going to aggregate the prediction. Right? In the aggregation stage. Right? So, how do we aggregate? There can be various strategies like majority voting and so on. We will see them.
+So, aggregation step means once these classification models are trained, that test data is given to these classification models. Each of them will do prediction and we aggregate. We train the data set. We train a model on the bootstrap data sets.
+We will combine the prediction to get the single final output. So, we will combine the prediction of all these decision tree to get one single output. Right? So, this is the basic philosophy of bootstrap aggregation, also known as bagging.
+There are two steps: bootstrapping and aggregation. Bootstrapping is creating bags. Aggregation means once we receive output from each of these models, which are trained on bags, we will combine the results using aggregation strategy.
+This is the basic philosophy. Right? Now, we will discuss more details and specific algorithms to bagging. So, as we were discussing, let me formalize the steps here. The first step is...
+First step in bagging is bootstrapping. Right? So, we are in bootstrapping process. Bootstrapping process. From the original dataset D, I am going to create bags. Okay? Once these bags are created, then on each bag, I am going to train one independent classification model.
+So, let's suppose there are K bags. From the dataset, I have created K bags. Now, on each bag, I am going to train one classifier, another classifier. So, on bag one, I have trained classifier one. On bag two, I have trained classifier two. On bag three, I have trained classifier three. And so on.
+These are also called as base learners or base estimators. Once that is done, whenever a test sample is given to me, the test sample will be passed to all these trained classification models. Each of them will do the prediction. I am going to aggregate the results. I am going to combine the results.
+C*. Combining the results. Final prediction would be C*. Aggregation of C1, C2, C3 and so on. Right? That is the basic idea. Now, how do we aggregate? You remember we discussed three questions in bagging.
+So, first question was, bagging, architecture and aggregation. So, in bagging, first question was, what are the classifiers you are going to use? Right? Are they all same? Are they all different? That is question number one. Question number two, what is the architecture here? So, here you see,
+I have not specified the architecture. I am going to discuss it next. But what is how do you arrange all these classifiers? And the third one is how do you aggregate the result? So, aggregation in case of classification in bagging would be majority voting.
+So, think about it. Right? This classifier is saying binary classification problem. Two classes, class one, class zero. So, this classifier is saying one. This classifier is again saying one. This classifier is saying zero. Out of these three classifiers, two are saying one.
+Only one is saying zero. Right? So, based on majority voting, C* will predict, final will predict, class label one. Right? So, in classification, we aggregate the results using majority voting. So, these K-trained models will do the prediction. Right? And the final prediction of the class will be received by the most votes. Right? So, based on this, right, we have discussed this example in the class class as well.
+So, where you had some problem. You went to doctor one. He suggested some remedy. Doctor two, he suggested another remedy. Doctor three, he suggested another remedy. Majority of the guys, majority doctors, if they are suggesting a particular cure, you will go for that. Right? So, that is what we are trying to do in aggregation in classification.
+In case of regression. Right? How do you aggregate the results? One way is to do averaging. This is not the only way, but one way is averaging. For example, petrol price prediction. Right? So, you have trained, on a given data set, you have trained C1, C2, C3. Right? On these bags, you have trained C1, C2, C3 and so on.
+Now, let's suppose C1 is predicting petrol price for tomorrow will be 100 rupees. C2 is saying 101 and C2 is saying, so this is C1, this is C2, this is C3.
+This is C1 is predicting petrol price for tomorrow is 100 rupees, C2 is predicting 101 and C3 is predicting 102. Right? So, in case of regression, how can I aggregate the results? I will take the average. 100 plus 101 plus 102 divided by 3 which will be 101. So, my C* will predict 101. Okay? So, this is how we aggregate the results in bagging. Right? Now, these are two broad strategies.
+Two broad strategies. There might be a different strategy as well, but these are the two broad strategies. In case of classification, we resolve using majority voting and in regression, you use averaging. Now, let's look into...
+So, we discussed the basic philosophy of bagging till now. Let's talk about couple of algorithms which are actually implementing bagging. So, the first algorithm we are discussing, bagging algorithm which we are discussing is bagged decision trees.
+Bagged DT. So, this is one of the algorithm which is implemented on basic bagging philosophy. So, as the name suggests, bagged decision trees. Right? Bagged decision trees. Now, why do we use decision trees in bagging? Right? So, you will see another algorithm we are going to discuss in this course is random forest. Again, built on decision tree. So, decision trees are very popularly used in bagging and boosting as well. Why? Because decision trees are very fast to construct.
+They are highly explainable. They are unstable. They are unstable. They are notoriously unstable and have higher variance. Right? So, if we do a small change in the training data set, it might give me a different tree structure. I will talk about that in a minute.
+So, decision tree without any height limitation. Right? Might grow very large. They are very prone to overfitting issues as well. Right? So, the base algorithm typically in bagging based algorithms is decision tree. Right? But they are unstable.
+They are unstable. So, they have overfitting issues as well. So, they have overfitting issues and we have to fix them to create stable classifier. So, bagged decision tree. Let me just draw the figure and you will understand. Right? We had three questions. Which classifier? Which algorithm?
+So, we have three questions. Right? So, we have three questions. Right? So, this is my original data set. Right? N samples. D dimension. Bagging I am doing. So, I will create bags. Right? So, let's suppose I have created. K bags.
+The number of bags are K. Right? Size of each bag would be typically less than N. So, let's suppose this is N1. N1 would be less than N. N2 would be less than 2 and so on. So, this is bag 1, bag 2, bag 3 and bag 4. So, this is bootstrapping. I have from the original data set, I have used random sampling with replacement to create the bags. Now, on each of these bags.
+In bag decision tree. In bag decision tree. I am going to train a decision tree model. So, this is decision tree model 1. Decision tree model 2. Decision tree model 3. Decision tree model 4. And I will have K decision tree models.
+Now if it is a binary classification problem there are two classes class 1 class 0. Whenever test sample is given that test sample will be passed to each of these decision trees. Right? And they will do the prediction based on the model which we have here. So let's suppose this is predicting 1, this is predicting 1, this is also predicting 1 and this is predicting 0. How do I combine the result? What is C star here? Majority voting.
+Since majority of the guys, majority of the decision tree are predicting 1, the final prediction would be C star would be class label 1. This is how the back decision tree would look like. Now let me give you few more insights here. So we are saying which algorithm? Back decision tree. Use decision tree algorithm as the classifier. Right? Decision tree algorithm as a classifier. All the models in back decision tree are of decision tree type.
+Okay? This is back decision tree. What is the architecture? As you can understand this is a parallel architecture. Right? This step, original data when we create bags. Right? This can be parallelized.
+Back 1 is independent of back 2, is independent of back 3, is it independent of back 4.
+So now back creation, bootstrapping process. Right? Is independent and can be parallelized. Similarly, if you look at the model training. Look at the model training.
+Look at the model training. Decision tree 1 is independent of decision tree 2, is independent of decision tree 3 and so on.
+So creation or training of these models can also be parallelized. Right? So that is why I am saying back decision tree are parallelizable architecture. They are highly parallelizable architecture. And in the last step, I am going to do aggregation. Right? So I am going to aggregate the results. Right? So you can really do huge speed up. Right? In back decision tree. Because the architecture is highly parallelizable. Right? So the process of back decision tree as we discussed.
+First step is to create the bags. Right? From the original data set. So we follow the bootstrapping process. Where from the original data set. I am going to create K bags. Once these bags are created. On each bag. I am going to train a decision tree model. Unprune decision tree model. So the height of the tree is not bounded. It can be anything. Once that is done. Then I am going to do prediction. So this is the aggregation stage. Right? In aggregation stage. Right?
+So this data is passed to each of these classification model. Decision tree model. And they will do K predictions. Right? So K trees are there. K predictions will be done. And based on majority voting, I can resolve the conflict or I can aggregate the results. So majority voting or averaging can be used to combine the results.
+Now, what is the advantage of decision tree? Why we are using bag decision tree? What are the benefits of bag decision tree? Bag decision tree is more accurate, they give higher accuracy and they are well generalized. Why they are generalized? Think about it. Or better generalized. Why? Because it lies in the process of bag creation.
+Since, so I am saying bagging avoids overfitting issues in the model. How that is implemented? How actually that is done? Think about it. If you expose the complete data set to a model, let the model to be developed unrestricted, then it tends to overfit.
+But, if I do not expose the complete data set to a model, to an algorithm, then it will not overlearn. So, think about it. These bags are actually subset of this data set. Right?
+This bag is again a subset of the data set. Again, this bag is a subset of the data set. Now, these bags are subset of the original data set.
+So, I am not exposing the complete data set to any of the models. And that is why it tends to less overfit the data. So, as I said, bagging focuses on reducing overfitting issues in single classification model. And that is what we are trying to do here. Right?
+So, as I am saying, bagged decision tree have greater generalization performance, less overfitting issues. And they are more robust as compared to the original decision trees. So, when I am talking about robustness, think about a problem statement. I am just giving you an idea. And there is a lot of research going on in this domain. Let's take a very simple example. Let me build up a very simple decision tree. Feature 1.
+Feature 2. Feature 3. And this is class 1. This is class 2. This is class 1. And class 2. Now, let's suppose I build a very simple decision tree with three features. Feature 1. Feature 2. Feature 3. This is a binary classification problem. Two classes. Class 1. Class 2.
+So, if a bad guy, if a bad guy, an adversary has access, sort of read this model, they can do a lot of bad things here. What bad things they can do? For example, I have been given a test data set like this. This is feature 1. This is feature 2. And this is feature 3. Values are, let's suppose, 11.
+So, this is yes. This is no. This is yes. This is no. This is yes. This is no. This is 11. And this is 11. So, in this traditional tree, this traditional decision tree, if I pass this test data set, what would be the output? The output would be this. Class 1. Right? Feature 1 value is 11. Feature 2 value is also 11. Right? And you will predict 1.
+The prediction from this decision tree would be 1. Now, think about it. If adversary, a bad guy, knows about this decision tree, will do a very small change in the test data set. Instead of 11, he replaced it with 10.
+If, with a very small modification in the test sample, I can force misclassification in the decision tree, then it is called an adversial attack. Poor robustness. So, think about it. If I did very small modification, instead of 11, 11, 11, I did 11, 10, 11.
+So, think about it. If, with a very small modification, I will predict class label 2. Right? For this particular test sample, I will predict class label 2. So, with a very small modification, I am able to force evasion. I am able to force misclassification in this decision tree.
+And that is what we are talking about. If there is a small change. Right? So, decision tree is very sensitive to these cases. Now, how can we make it more robust? Back decision tree actually helps us in improving the robustness. And we will talk about this more as we move along. Right?
+Now, I am saying, back decision tree are better than decision tree in terms of robustness. But they are not absolutely good. They are not absolutely at the peak. Why? Because back decision tree has correlated trees. Right? So, we were looking into this architecture. Right? Where I have created these decision trees.
+I am saying that these decision trees are highly correlated. Right? Highly correlated means they are very similar. Even they are trained on different bags. They are very similar. Why I am saying that? Think about it. What is the basic philosophy of building decision tree? How do you build decision tree? For example, if you are given this tabular data set with features, feature 1, feature 2, feature 3, feature 4, how do you build the decision tree?
+You first calculate information gain of information gain of information gain of information gain of f1, information gain of f2, information gain of f3, information gain of f4. And then the feature having the highest information gain is selected for the root of the tree. So, let's suppose f1 is having the highest information gain would be at the root of the tree. Then, again you calculate the information gain for rest of the features and then maybe f2 had the second highest information gain. So, f2 will come second and so on.
+So, decision trees follow a greedy strategy. Right? To create the decision tree. Now, I am saying that bag decision tree will almost be very similar to each other. Why? Because the data set which I have taken, the bags which I have created, right? Right? Are almost same. Right? So, since I am creating these bags, when I am creating these bags, they are subset of the original data set. Right?
+just subset of original data set so most of the bags are very similar to each other right now the
+since the bags are very similar now when i'm calculating the information gain of these guys
+these features they are also very very similar in each of the descient because think about it this
+bag is almost similar to the original bag right and because of the greedy strategy the trees will
+also be of a very similar structure right now because of that my descientry is not very immune
+towards the adversarial attacks right they have better generalization performance as compared to
+traditional descientries there is some scope of improvement here as well right so this is what i
+was talking about since i am creating bags right since i'm creating the bags which are very similar
+and i'm following the greedy strategy and greedy strategy will force the tree to be almost very
+similar right so that will force weak aggregation as well right so how can i fix this part how can i
+force descientry to be of very different structure from each other right will do not follow very similar
+structure because of the greedy strategy we'll discuss in the random forest that is the next video
+so in this video we talked about basic idea of bootstrapping and we looked into the algorithm called
+bootstrap bag descientry right we looked into the instability issues in bag descientry we will
+continue on this in the next video as well take care bye bye

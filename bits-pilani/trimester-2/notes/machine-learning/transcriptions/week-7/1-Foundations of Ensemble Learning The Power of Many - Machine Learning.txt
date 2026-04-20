@@ -1,0 +1,373 @@
+Hello to all of you. My name is Dr. Himandrathar and we are in the course Machine Learning. Today we are going to start with a new module, Module 7, Ensemble Learning.
+Today's video topic is Foundation of Ensemble Learning, The Power of Many.
+So the learning objective of this video is, first we will understand the core motivation behind Ensemble Learning methods.
+Then we will look into the concept of wisdom of crowd. Then we will look into the statistical reason of why you want to combine multiple classification models.
+And then we will look into the difference between bias and variance.
+So let's start right away. So let me start with a very simple problem statement. Let's suppose you are unaware, you are having severe pain in your heart.
+So then you go to a doctor and doctor will ask for some symptoms and will do the diagnostics and then suggest that you have to do an open heart surgery.
+Now open heart surgery is a big thing, right? It will have a monitor, physical, mental tone on you, right? So then you are not confident, you are uncertain about doctor 1, doctor 1 analysis, who suggested you should go for open heart surgery, right?
+So what you do is, you go to another doctor, doctor 2, and tell the symptoms. Now doctor 2 also do some analysis and then he says that, okay, it doesn't look like severe heart issue, it looks like more of a gastric issue.
+So doctor 2 is suggesting gastric issue. Again, one is saying open heart surgery, another one is saying gastric issue. They are stuck very different from each other. So you are not confident about doctor 1, you are not confident about doctor 2, so you visit the third doctor, let's suppose doctor 3, and doctor 3, based on your symptoms, suggests that it looks like a gastric issue only.
+Now think about it, right? This happens very often, where, right? We actually are not confident about one analysis, so we go for second opinion, we go for third opinion, we might go for even fourth opinion.
+And then, based on the combined analysis, based on the combined results, we take the final decision. So that is what in broad terms called ensemble learning.
+That is what we discuss about in the ensemble learning. So, when we go to doctor 1, right, doctor 1 based on the analysis, right, suggested something, but I am not very confident, I am not very certain about, I do not feel very confident about the analysis, about 100% accuracy diagnosis.
+So what I do is, I go to second doctor, I go to third doctor, I go to even fourth doctor for their opinions. Once I actually get many opinions, many results, I combine them together to take the final call, right? So in machine learning, a single model, a single model, no matter how complex it is, it's like a single expert, single doctor, right?
+So in machine learning, if we are not confident about it, right, what we are going to do is, we are going to take multiple opinions and then combine the results.
+Why we might not feel confident about it? Because a single complex model might have its own weaknesses, blind spots, and relying on one magical classifier might be very risky.
+So what do we do in ensemble learning? So what do we do in ensemble learning? Ensemble learning works on a principle called wisdom of crowd. Wisdom of crowd.
+So basically the idea is, instead of building and trusting only one single complex model, right, what we do is, build many models and combine the results in the end.
+So instead of relying on one doctor, we go to many doctors, take their opinion and then combine the results to get the final result, to get the final result, right?
+So if you look into ensemble learning, the formal definition says that it uses a combination of model to improve the overall performance of the system, like accuracy, error, etc, etc.
+So the fundamental goal here is, we will make multiple models, instead of relying on one model, we will make multiple models, M1, M2, M3, etc.
+And then we will sort of combine the results to get the final model which is M*.
+So we are not betting on one single magical highly complex classification model.
+So in this model, what we are doing is, we are betting on collective wisdom of many models and then combining the results in the end.
+So how does the ensemble learning models work, right?
+So ensemble learning concept is very simple.
+Step number one is, you start with the basic data.
+So we have training data, we start with the basic training data.
+In step number two, right, we will generate, we will train many classification models.
+C1, C2, C3, C4, C5, we will train many classification models on this training data.
+Now let me say that we might not exactly use this training data, but some sort of training data we are going to use.
+Right, we will talk about this in more detail as we move along.
+So in the second step, we actually train many individual classification models, right?
+Then in third step, we combine the results of these classification models.
+So given a test data, given some unseen data sample, I am going to pass this unseen data sample to all the classification models which we have trained earlier.
+Once we have prediction from each of these classification models, I am going to combine their results in the end.
+How do we combine?
+We will talk about that as we move along, right?
+And fourth one is, fourth step is that once we combine the results, that would be the final prediction from the ensemble model.
+So step number one is, have your training data.
+Step number two is, build many classification models.
+Step number three is, combine the results of, given a test data, combine the results of all the classification models which we have trained in step number two.
+And then step number four is, the final result would be the combination of all the votes, all the results predicted by all the models in the second step.
+So when we build an ensemble model, right, there are three questions we need to answer, right?
+Three questions, fundamental questions we have to see.
+First question is, I said in step number two is, that there are many classification models I am going to train, right?
+So there I am going to use many classification algorithms to build many classification models.
+Now when I am talking about many classification models and algorithms, which classification algorithm we are going to use?
+Is it DT?
+Dictionary?
+Is it KNN?
+Is it rule-based?
+Is it SVM?
+So that is question number one.
+We are going to train many classification, multiple classification models, right?
+Which one we are going to use in simple?
+That is question number one, right?
+Many classification models, are they all same or different?
+That is also an extension of question number one.
+Question number two, right?
+So when we have multiple classification models, right?
+Train classification models, how do you combine their results?
+What is the architecture?
+Right?
+What is the architecture?
+Right?
+What is the architecture?
+Right?
+So there are three fundamental questions.
+Architecture means, that how each model is arranged in the ecosystem.
+I will talk about this in more detail as we move along.
+So whenever we are talking about ensemble methods, there are three things we have to think about.
+One is, which classification algorithm is actually used to build the ensemble method?
+Are all the classification algorithms same for ensemble or different for ensemble?
+Second question is, once each of the classification models has done the prediction, how do you combine the votes?
+And the third question is, right?
+What is the architecture?
+How these ensemble models, these classification models are arranged in the ensemble?
+These are the three fundamental questions which we need to answer and we will do that as we move along.
+So this is a very simple architecture for any ensemble model.
+Right?
+So initially you have train data.
+This train data, I am going to pass it to classification algorithm 1 or classification model 1, classifier 2, classifier T.
+Right?
+So this training data, same training data, in this case, in this particular case, same training data, I am passing it to C1, I am passing it to C2, I am passing it to the third classification model Ct and so on.
+Once that is done, right?
+All these classification, so this is model training.
+So this is model training.
+Once that is done, then I have been given test data.
+This test data will be passed to all these classification models which we have trained earlier.
+And then we combine the votes.
+So each of these classification, so this test data is passed to all the classification models and each of these classification models will do some prediction.
+We are going to combine the results and that becomes the final prediction.
+Let me give you a very simple example, another example for ensemble learning.
+Think about our parliament.
+How do we choose, sort of how do we run this country?
+Right?
+So the way we do is, actually each citizen is not directly running the country.
+He or she is indirectly running the country.
+How?
+So we conduct elections.
+We conduct elections to select our representative.
+Those people actually take decision on our behalf.
+And those people actually sit in parliament.
+So think about it.
+In ensemble what they are trying to do here is that, right?
+Instead of each person running the country, what we are trying to do here is, right?
+We actually sort of select.
+Some people sit together in a particular constituency, sit together and select one parliament twin.
+Then another region, another parliament, and so on.
+And that is how people are selected in the parliament.
+Those people are represented and they take decision on our behalf.
+Now think about it.
+This is a very simple ensemble, right?
+Think about it.
+Now, in the parliament also, there are roughly 550 seats.
+550 seats.
+There are 550 parliamentarians.
+Now, let's suppose someone has put some bill on the table saying that tax should be abolished.
+Right?
+So some people, some parliamentarian might be in favour of that.
+Some parliamentarian might not be in favour of that.
+Right?
+So how do we take consensus here?
+We take consensus based on the voting.
+Right?
+So all these 550 people, right?
+Whether positive, whether negative, it's a separate affair, will vote for the people, for the vote for the bill.
+Now, if majority of the people are saying that tax should be abolished in the country, right?
+That bill will be passed in this fashion where tax will be abolished.
+Otherwise, right, the bill will fall.
+Right?
+The bill will not be passed.
+So, think about it.
+How did we combine the votes?
+We took a very simple principle of majority voting.
+Right?
+Majority of the people are saying that we should abolish the tax.
+That is why we are abolishing the tax in the country.
+If majority of the people are saying that something else, right, that decision will also be, might be taken.
+So, it is about how do we combine the results.
+This is not the only way we combine the results.
+There are many ways of combining the results.
+But this is one way of combining the result.
+Right?
+Now, so as I said, there are three things we have to see.
+Which classification algorithm is this?
+Right?
+We'll talk about that later.
+Second thing is, how do we combine the results?
+How do we combine the results?
+Right?
+In this architecture, I said that one way we combine the result is
+Majority voting.
+So, if this guy is saying one, this guy is saying one, this guy is saying zero.
+Majority of the people are saying one, final prediction will be one.
+Right?
+This is what I explained in the parliament as well.
+This is what we do in our democracy as well.
+If majority of the people are saying something, right, that thing would be done for the country by the government.
+The third thing was architecture.
+So, what is the architecture here?
+Here you can see here what we call it as serial architecture.
+Right?
+Serial architecture.
+Oh, sorry.
+This is parallel architecture.
+Parallel architecture means C1 is in parallel to C2 is in parallel to CT.
+Right?
+Now, there are a lot of advantages in parallel architecture.
+We will see that as we move along.
+Right?
+So, what is the rationale behind ensemble learning?
+Right?
+First is the statistical reason.
+Statistical reason means that, think about it.
+Instead, we want to sort of train a model to do some predictions.
+Right?
+Instead of relying on one magical classifier, which will do a very complex analysis for doing prediction.
+What we can do here is, we can train multiple models and then average the results.
+Or combine the results by averaging.
+Averaging is another way of combining the results.
+So, we reduce the risk of picking one, that one magical classifier that might perform poorly
+on a test dataset.
+Right?
+So, by having multiple classification models, we actually smoothen out the errors.
+We actually smoothen out the errors.
+Then there is computational reason as well.
+That means, think about it.
+Right?
+We learned few classification algorithms in this course, like, dissonantary, rule-based,
+KNN.
+Now, given a dataset, which classification algorithm you should use to do the final prediction.
+Now, for doing that, right, you have to do an exhaustive search.
+Which classification algorithm you should use.
+And that might stuck into local minima conditions.
+Right?
+To reduce that thing, right, what we can do here is, we can train all of these guys and
+then combine the result in the end.
+And then there is a representative reason as well.
+So, let's talk about the statistical reason why we want to combine the results.
+So, a set of classifiers with similar training performance might have different journalization
+performance.
+So, think about it.
+A set of classifiers with similar training performance might have different journalization
+performance.
+So, different models generalize very differently from each other.
+And that is how we actually reduce the sort of issue of not selecting a proper model.
+So, by combining multiple models, right, together, right, we improve generalization which is better
+for our real world use cases.
+Now, let me talk about this.
+This slide, I will come back.
+So, if you remember, we have talked about bias variance trade-off.
+Right?
+So, think about it.
+Let me draw a graph here.
+On the x-axis, I have model complexity.
+And on y-axis, I have error.
+Right?
+Let's suppose, model complexity, this we have already discussed earlier, but let me just
+quickly revise and then I will explain the exact same thing in terms of ensemble.
+So, model complexity here means the model complexity is low.
+Right?
+And as we move towards the right, the model complexity is high.
+Now, what do you mean by model complexity?
+Let's take case of Duchenne Tree.
+How do we decide on model complexity here?
+If Duchenne Tree has height of one only, we call it as stump, then the model complexity
+is very low.
+If the Duchenne Tree has infinite height, right, there is no control over height.
+Right?
+It can have height of 50, 500 and whatever, based on the training data set.
+Then it is highly complex model.
+Here, you have low error.
+Here, you have high error.
+Okay?
+Now, there are two types of errors.
+Train error and test error.
+What is train error?
+Train error is when we train the model on training data and test it on.
+Train error.
+Test it on train data.
+So, you train on certain data and you test also on the same data.
+Test error is when you train the model on train data, but you test it on a separate, a different data, test data.
+And that is why initially from the data set, we divide the data set into two parts, train part, test part.
+You train the model on training part, you test the model on test part.
+So, that is your test error.
+Now, let me draw a graph for train error.
+So, initially when the model complexity is low, the train error will be high because your model is very simple.
+However, the data set might be complex and your model is not able to learn the data set properly.
+So, that is why you have high error.
+As you increase the model complexity, the error will come down.
+Right?
+Actually come down and will become almost zero.
+This is my train error.
+So, initially your error would be high because from the build is not able to learn everything from the data set.
+Right?
+Because model is very simple.
+Decentry with height 1, that means I can only draw a line parallel to x axis or y axis, which is insufficient for a complex data set.
+So, what I do is, as I increase the model complexity, the train error will come down.
+Let us talk about test error.
+Right?
+Initially, test error will also be high.
+Right?
+For a simple model, low complexity model, the test error will also be high.
+But as you increase the model complexity, the test error will come down and will increase further.
+Right?
+So, this is my test error.
+This is my train error.
+This area is called underfitting.
+Underfitting means that your data set is complex.
+You have chosen a wrong model, a very low complexity model to learn the data.
+And because of that, because you are not able to select a model properly, because of that, your model is performing poor.
+So, it is high bias area.
+Your model selection was poor.
+Right?
+And that is why you are getting high train error, high test error.
+This is called underfitting.
+This region is called overfitting.
+Overfitting means that you have low train error, but high test error.
+Why this is happening?
+When you are training the model, you are at high complexity model.
+When you are training the model, you learn very minute details of the data.
+You have learned noise.
+Outliers you have learned.
+Since you have learned very minor details, including noise, outliers.
+Right?
+So, a very small change in the data set.
+Right?
+From trained data set to test data set will actually have very high difference in the error.
+So, here as you move towards the right, test error starts to increase because you have trained it on a certain model and certain data set and your model has overlearned the things.
+As you switch the model, as you switch a data set or as you change a data set a bit, the model starts to give high test error.
+In ideal world, your model should lie somewhere here.
+Now, your model should lie somewhere here.
+So, when we look into ensemble learning methods, basically, there are broadly, there are two strategies in ensemble.
+One is called bagging and another one is called boosting.
+Right?
+So, there are two strategies in ensemble learning.
+We will see both of them in this course.
+Bagging means, right?
+You create bags and then you train the model.
+Boosting has a different strategy.
+So, when I'm talking about this ecosystem, right?
+One strategy is bagging.
+Bagging actually works on, right?
+Bias variance trade-off.
+Bias variance trade-off.
+So, this is called bias variance trade-off.
+This is high bias area.
+This is high variance area.
+This is high variance area.
+Right?
+And you want your model should be between high bias and high variance area here.
+Bagging based algorithm forces the model to be somewhere here.
+In this region.
+It will force the model to be lying in this region.
+Right?
+So, as I was talking about, let's go back.
+Right?
+We looked into it.
+We are constructing the model error.
+Right?
+How the error will come in the model.
+There might be train error.
+There might be test error.
+Right?
+So, you have error because of bias.
+You have error because of variance.
+And then you have irreducible error.
+So, we are not talking about irreducible error.
+This might be coming because your data set is poor quality.
+Right?
+Bias and variance is one thing.
+Error you have to reduce.
+So, what is high bias?
+You have basically, what we have done is, we have high bias.
+That means we have not focused on selecting correct model for a particular data set.
+And that leads to underfitting.
+Right?
+There is a model data mismatch.
+There is model data mismatch.
+Right?
+And that leads to underfitting.
+And that is called high bias region.
+There is something called high variance.
+High variance means minor change in the data set.
+Minor change in the data set.
+And then your train and test error is fluctuating a lot.
+Right?
+So, basically we want to look into bias variance trade-off.
+And bagging based algorithm actually focuses on bias variance trade-off to get an optimal model in the middle.
+So, as I said, in Sembil learning, there are two broad strategies.
+Bagging and boosting.
+Bagging based algorithm focuses on bias variance trade-off.
+Right?
+Bagging.
+Another name of bagging is called bootstrap aggregation.
+On the other hand, we will see these methods in detail.
+Don't worry about it.
+On the other hand, boosting is a different strategy.
+In boosting, the focus is that given a weak classifier, can I combine multiple weak classifiers to come up with a highly strong complex classifier model.
+Here, bagging focuses on bias variance trade-off to reduce the overfitting issues in the model.
+On the other hand, boosting focuses on given a weak classifier, can I combine multiple of these weak classifiers to get a stronger classifier.
+Right?
+So, in summary, in this video, we looked into what is the basic philosophy of in Sembil.
+Right?
+How it is very similar to wisdom of crowd.
+We look into the statistical reason of why do you want to compile multiple classification models.
+And then we looked into the bias-variance trade-off.
+We will continue in Sembil learning.
+Thank you for attending.
+Take care.
+Bye-bye.

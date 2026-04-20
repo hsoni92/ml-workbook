@@ -1,0 +1,104 @@
+Hello to all of you. My name is Dr. Himad Rathar and we are in the course Machine Learning.
+We are in the module 5 and discussing Rule-based classifiers. This is the third video which
+is focusing on extracting rules by Dirich method. So, the learning objective of this
+video is we are going to look into sequential covering algorithm which is a Dirich method
+for rule generation. So, let's start right away. So, in last two videos we saw that how a rule-based
+classification system can be built. It consists of set of or collection of rules and rules can
+be extracted using indirect method like a surrogate decision tree or we can directly extract the
+rules. So, this video will focus on extracting rules or writing rules or learning rules with
+the help of direct method. So, what do you mean by direct method? In very simplistic terms, assuming
+someone has given me this sort of a tabular data set, now I want to write rules based on
+the same. So, in direct method we look into this table and directly write rules. One of the very famous
+algorithm is called sequential covering algorithm. The algorithm is very simple and I will talk about it. So, as the name suggests, it has two parts. Sequential and covering. So, what do you mean by sequential? Sequential covering algorithm covers rules one at a time. It learns the rules one at a time.
+It learns the rules one at a time in a sequence. And covering means once the rule is learned. It covers some of the tuples.
+that subset of the tuples are removed from the training data. So, that is meant by covering. So, sequential covering algorithm.
+Let's see in retail. So essentially sequential covering algorithm it's a five step process. Step number one full data set you have empty rule set right there is no rule so given a data set to you right and there is no rule right now. We are going to start writing the rule first rule with the help of learn one rule formula that means write a rule which cover large number of sample of one class and very less number of samples of another class.
+Basically by looking at the data set write a rule such that it covers very large number of samples or tuples of one class and very less number samples of a second class or another class right. So once that rule is written then remove the data which is already covered by the rule which you have written just in the previous step right. So remove the tuples which are already covered by the rule which you have already written. Repeat step number two and step number three again and again.
+Step number five is essentially write the default rule towards the end. So it's a five step process. Let's see it visually then you will be able to understand it better. So let's suppose I have been given a two dimensional data. There are two classes positive class and a negative class. I have been given this this data set two dimensional data set. There are two classes positive class and negative class. As you can see different class tuples are represented here.
+Now I have to write rules. I have to build a rule based classifier. So rule based classifier will consist of collection of rules. Let me write rule number one. First rule. I will write rule number one based on learn one rule formula. What do you mean by learn one rule formula? Write a rule which covers maximum number of samples of one class. So let's suppose I have written a rule which cover these tuples.
+So rule number two. So rule number two. So rule number two is done. Step number three. So rule number two is done. Step number three. Remove these samples. So rule one is written. Done. And remove these tuples which are already covered by rule one from the training data set. Now you are going to write rule number two. Write such that again.
+maximum number of samples of only positive class and very less number of samples of negative class.
+So step number two is done. Step number three remove these samples so rule one is written done
+and remove these tuples which are already covered by rule one from the training data set. Now you
+are going to write rule number two write such that again same class elements are covered two
+different class elements are not covered right so you are going to write a rule right such that it covers
+majority the samples of positive class very less number of samples of negative class and then you
+iterate. So by looking directly at the data set now i am writing the rules there is no surrogate model
+here i am directly going to write the rules based on the data set which i am seeing if it is a tabular
+data set i'll show you another example if it is a two dimensional data set like this this is how you
+are going to write the rules. So rule one is written here and these tuples would be removed from the data
+set then rule two would be written here and these number of samples will be written. So here you can
+see majority of the samples are of positive class again rule two covers majority of the samples of
+positive class and rule three again will cover majority of the samples of positive class some
+samples of negative class as well right. So if it covers only one class samples accuracy of the rule would be
+100 percent if it covers some samples of positive class very less number of samples of another class
+accuracy of the rule would be bit less right you do not want accuracy of the rule to be 10 percent or
+so that means it is a poor quality rule. So this is the algorithm right you start you look at the data set
+your rule set is empty you write rule number one with the help of learn one rule where you write a rule such that it
+covers samples of only one class right it might cover samples of another class as well but then the
+accuracy would reduce that's fine but try to write a rule which cover samples of only one class right.
+Once the rule is written remove those samples that are covered by the rule from the data set and then
+you move to step number four step number four says that iterate over rule number two and three until
+there is a some stopping condition that means the accuracy of the rule is reducing to a particular
+threshold you write again and again rules until all the tuples are exhausted or the accuracy of the rule
+is reduced below a threshold once that is done you write the default rule and then you stop right so that is what we are trying to do here.
+Another part of sequential covering algorithm is learn one rule formula right so as i said in
+pictorical data we were writing the rules which were covering only positive samples now if it is a
+tabular data how you are going to write it so think about it let's suppose it's a binary classification
+problem there is positive class and there is negative class there are two classes positive class and
+negative class and assuming you have been given a tabular data set with some attributes a1 a2 a3 and class label
+now i have to write the rules for this i am going to use learn one rule formula so to write rule 1
+assuming i start with attribute 1 and i wrote a condition like this attribute 1 let's suppose i
+start with attribute 3 and write a condition a3 equals to 1 that is the triggering condition this is the rule
+indecent if that happens right now you can see rule 1 when i write 3 equals to 1 this is the condition it
+covers some samples of positive class and some samples of negative class so definitely the accuracy of
+this rule would be poor now i want to improve the quality of the rule if i want to improve the quality
+of the rule i add one more attribute so instead of a3 now i use a3 and a1 two attributes and tighten the
+rule or make the rule more complex when i do that now i see majority of the samples are of positive class less
+number of samples of negative class so now this rule accuracy would be higher now i have not finally written this rule
+till the accuracy of the rule is not good so further i can improve the quality of the rule
+by putting one more condition right so now i am writing this particular i am writing the first rule itself
+with three condition three condition in the rule indecent a3 attribute a1 attribute and a8 attribute join with
+and so if a3 equals to 1 and a1 equals to 2 and a8 equals to 5 then predict the class label as positive so
+now this rule covers samples of only one class that is positive class accuracy of this rule will be 100% so this is one rule formula learn one rule formula that means
+you start with a broad rule you tighten the screws of the rule till the accuracy reaches a certain threshold and it covers samples of only one class or majority of the samples of only one class and the rule one is written once rule one is written all the tuples covering this rule will be removed from the data set now i am going to write a rule which will cover these tuples another rule which will cover these tuples another rule which will cover these tuples another rule which will cover these tuples and so on this is how
+sequential covering algorithm will work. So now if I am writing rule 1 as you saw evolved. It started with 1 condition then 2 condition then 3 condition. So whether how the quality of the rule is improving can be measured using something called foil information gain. So what do you mean by foil information gain? It is a way of calculating if you are writing the rule and making it more and more complex.
+whether the quality of the rule is improving or not. So, a very famous measure in algorithm
+like FOIL or RIPPER is called FOIL information gain. It is very similar to information gain
+which we have seen in the addition tree and it checks whether I am reaching pure set or not. So,
+it has two parts as you can see. This part is after improvement and this is before improvement.
+So, here basically you are saying number of samples of positive class divided by number of samples of
+positive and negative class after rule is improved minus this is the before condition adding. So,
+number of samples of positive class plus number of samples of positive negative class in the denominator.
+So, by this way you can check whether the rule is improving or not. If the rule of is improving
+FOIL information gain is positive then your rule is actually becoming better and better and this is how
+you can check whether in learn one rule formula or method whether the rule quality is improving or not.
+Once it reaches a certain threshold you can stop generating making more rule more complex and then
+can stop. So, direct method has basically two very famous algorithms one is called CN2 algorithm and
+another is called RIPPER algorithm. Both of them are fundamentally same right. They use the algorithm which
+we saw it's a five step process right. Start with the empty rule, write a rule, improve the complexity of
+the rule once it reaches the threshold, write the rule, remove the tuples which are covered by the
+rule in from the data set, continue writing the rules, all the tuples are covered or
+rules are not getting perfect accuracy or threshold accuracy. Both the algorithms rules basically uses this
+similar idea. So, what are the advantages of rule based classifier? They are highly interpretable. In general,
+rule based classifiers are highly interpretable. So, think about it when I say highly interpretable means
+let's suppose this rule is written. So, this is my rule one and my rule based classifier predicted for a
+particular test tuple. I pass it to this rule based classifier. It triggers rule one and it predicted yes.
+My rule based classifier predicted yes. Now, yes is one thing which is that you have done some prediction
+and then this might be right or wrong. That is one part of it. This rule based classifier is highly
+interpretable. So, whatever prediction you are making, you can go back and see how did you make that prediction.
+So, if I made this yes prediction, it was done because attribute one value was equal to five.
+Right. So, rule based classifiers are highly interpretable. That means whatever prediction
+they are making, right, I can go back and easily check and inspect and validate the logic how a particular
+prediction is done. So, prediction accuracy is one part of the story. But how did you do the prediction is
+very high in case of rule based classifier? So, rule based classifiers are highly interpretable. That means we know
+why a particular prediction was done. They are highly expressive as well. That means they contain as much information as if you are extracting it from the decision tree as much information as in the decision tree. They are really fast. So, if you see in intuition detection systems,
+a lot of times rule based classifiers are used. Think about it. I can write a rule based classifier which says that if communication is coming from this IP, allow otherwise block.
+This we do all the time. In your machine which you are looking at, all the ports are closed
+except 2-3 ports which are open. So this is a rule based classifier. Close all the ports
+except 2 or 3 ports. So this is rule based classifier. It achieves a comparable performance
+as we have seen. If you compare with the state of the art, this gives you basic good accuracy
+as well. So in summary, in this module and video we looked into actually rule based classifier
+and in particular in this video we looked into sequential governing algorithm which is a direct
+way of extracting the rules and building a rule based classifier. Thank you for attending
+this video. Take care. Bye.

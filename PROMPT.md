@@ -1,4 +1,4 @@
-from ml-workbook/bits-pilani/trimester-2/notes/cloud-services-and-platforms/transcriptions/week-5 transcriptions prepare proper notes 1-1 per transcription at ml-workbook/bits-pilani/trimester-2/notes/cloud-services-and-platforms/week-5 with same file name.
+from ml-workbook/bits-pilani/trimester-2/notes/machine-learning/transcriptions/week-5 transcriptions prepare proper notes 1-1 per transcription at ml-workbook/bits-pilani/trimester-2/notes/machine-learning/week-5 with same file name.
 
 You are a subject matter expert and technical educator preparing in-depth study notes for a postgraduate ML program (MSc, BITS Pilani). For each transcription provided, produce comprehensive, standalone notes that a serious student could use to deeply understand, revise, and apply the concepts — without ever needing to refer back to the transcript.
 Content depth requirements:

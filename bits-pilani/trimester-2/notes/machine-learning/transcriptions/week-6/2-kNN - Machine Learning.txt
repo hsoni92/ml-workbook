@@ -1,0 +1,139 @@
+Hello to all of you. My name is Dr. Hemantrathar and we are in the course Machine Learning. We are in the module 6, K-nearest neighbor and today's topic is K-nearest neighbor algorithm. So the learning objective of this video is we are going to discuss the K-nearest neighbor algorithm and we are going to outline the steps that are required to classify a new point using K-nearest neighbor.
+So in the last video we discussed about the difference between eager learner and lazy learner. In eager learner given some training data set we build a model and that model is used to do the prediction for the test samples. The example of eager learner algorithms are dissonantry, rule based classifier etc etc. On the other hand in lazy learner given some training examples we basically do not build any model we just process the data and store
+the training data as it is. As the training samples test samples are arriving we do the computation and do the prediction. So K-nearest neighbor is a lazy learner algorithm. Right. So the basic philosophy of K-nearest neighbor algorithm as we have discussed in the last video is based on three steps. One is once the training data is given to me I store the training data as it is with sub processing. Then during testing time I do
+I do distance computation or similarity computation or closeness computation. So when the test sample is given to me a function is used to compute the distance or similarity between the test tuple and the training examples. So a distance metric or a similarity computation function is used to do the computation of similarity or distance between the given test sample and all the training samples.
+To measure the closeness or similarity or distance. Right. So once that distance computation is done then we have to find the K-nearest neighbors. K-closest samples. And once the K-closest samples are identified then we use majority voting or some sort of voting algorithm to do the final prediction. So in K-nearest neighbor there are two things we need to discuss now. One is how do we do this distance computation, similarity computation.
+And how do we do this and how do we do this and how do we do this and how do we do this and how do we do this and how do we find the value of K. These are the two things which we have to discuss in this video now.
+video now. So as we are discussing k-nearest member algorithm is a three step process. Step
+number one, step number two and step number three. As we have already discussed step number one is
+distance computation or similarity computation. So given a test sample right I am going to compare
+this test sample in terms of similarity with all the training examples. Whichever are the closest
+training example would be used to do the final prediction. So first thing is we have to do this
+computation of distance between test sample and all the training examples. Once that is done then we
+have to identify the k closest training examples by vis-a-vis test sample. So we have to find now the
+k closest the k closest training examples right where the distance is minimum vis-a-vis test sample.
+And once we have identified the k closest samples now I can use those class label of those k training
+examples to do the final prediction or the corresponding test sample. So k-nearest algorithm is a three step
+process. Now let me give you a simple question. Can you calculate the time complexity? Think about it.
+We will discuss that towards the end of this video. Okay so when we are talking about k nearest neighbor let's take different values of k and try to see the results. So let's suppose someone has given me this training data set right. Same training data set right. So this is train data. This is again the same training data and this is also the same train data. Now let me do prediction for this train data. Using one nearest neighbor.
+data this is again the same training data and this is also the same trained data now let me do
+prediction for this trained data using one nearest neighbor so my test sample is here so step number
+one is so this is a binary classification problem there are two classes positive class and negative
+class and I want to do prediction for this test sample now so the first step is store the training
+data as it is step number two do the distance computation right so do the distance computation
+between this test sample and the training sample this test sample and the training sample this test
+sample and the training sample this test sample and the training sample and with all the training
+samples so distance between the test sample and all the training examples would be counted will be
+calculated once that is done then we are going to find out which one is having the least distance which
+distance between this sample and the training sample is the least so this training example is closest to
+the test sample so now one nearest neighbor will use this training example to do prediction for this
+test sample right so one nearest neighbor I am going to consider the closest training example to do the
+prediction for the test sample let's talk about three nearest neighbor for the same data set 3nn as the name
+suggest i'm going to consider three nearest sample training example vis-a-vis test sample and then
+use those three training examples to do the final prediction so again the same idea this is my test
+sample i'm going to do the distance computation between this test sample and all the training
+samples once that is done i will find three closest training examples vis-a-vis this test sample now
+these are the three closest samples now i'm going to look into the class label of these three class
+three training examples majority of them are saying positive so i'm going to predict positive here here
+i'm going to predict negative because the training example here was negative so you can see same data
+set with one nearest neighbor it is predicting negative class because it is looking for the
+closest training example same data set with 3nn right now it is predicting positive class what
+about 2nn for the same data set so in 2nn i'm going to look for two closest samples two closest training
+example vis-a-vis this particular test sample now one of them is saying negative one of them is saying
+positive right one of the training example class label is positive one is negative now how do i do
+prediction for this test sample how can i do that think about it so now once majority voting cannot help
+here we can use something called weighted average or weighted computation right so since the negative training
+example is much more closer to the test sample the weight of that training example for doing the final
+prediction for the test sample would be higher so since this is closer and this is farther i can say negative
+trading sample has a more higher weightage so finally i'm going to predict with for two nearest neighbor
+negative class only so here you can see same data set one nearest neighbor saying negative class
+two nearest neighbor again saying negative class three nearest neighbor saying positive class and that is
+how k nearest neighbor algorithm works broadly how it works now let's try to understand deeper into k nearest neighbor algorithm and let's take
+example of one nearest neighbor one nearest neighbor means for doing prediction i am going to consider the
+closest training example to do the prediction so when we talk about one nearest neighbor there is something called
+voronoi cell what do you mean by voronoi cell let's suppose someone has given me this training data set
+this is my training data set right now i have not depicted the class label all these dots
+are my training examples but i have not put the class label i'll put the class label in the next slide
+now what do you mean by voronoi cell so if this is a training example and i am using one nearest neighbor i want to find the area of influence of this training example
+why this is important because if the test sample is coming here
+it is under the area of influence of this training example so whatever is the class label of this training
+example would be the class label of this test example so in one nearest neighbor this particular case of one nearest neighbor
+for each training example i want to identify the area of influence we call it as voronoi cell okay so how can i find voronoi cell so this is my training example what would be the voronoi area of influence of this or voronoi cell of this?
+so what we can do in one nearest neighbor it is very simple to compute right you connect two training example with a line
+and in the middle draw a perpendicular you again do it with the another training example and draw a perpendicular in the middle
+you do it again on the other side of the particular training example and draw a perpendicular in the middle
+you do it again so like this somewhere here and draw perpendicular in the middle so for this training
+example this becomes my area of influence any test sample in this area would be classified as the class
+label of this particular training example so this is called a voronoi cell each training point has its own
+Voronoi cell. The cell of a point P is a region of the space containing all the location that are
+closest to P than any other training point. Similarly I can do it for this training example
+as well. So I want to understand the area of influence of this training sample. So what I'm
+going to do connect closest training example and draw perpendicular in the middle. I do it again
+draw perpendicular in the middle. I do it again draw perpendicular in the middle. I do it again
+draw perpendicular in the middle. So this becomes the area of influence of this particular training
+example. So Voronoi cell is essentially an area of influence of a training example. If any test sample
+comes under that area the class label of that training example would be used to do the prediction
+for the test sample as well. So any new point that falls within the training areas training samples
+Voronoi cell will be classified as the training samples class label because the training sample
+is the single nearest neighbor. Now there is something called Voronoi Tesseraction. So Voronoi cell means
+area of influence. Voronoi cell Tesseraction means how can I build a classification boundary out of this.
+So I can build a classification boundary very easily like this. So in the last example you had only dots
+training examples and I depicted them without class label. I had the class label but I depicted them
+without class label. Now I depict them using class labels. So same example now training example
+and the corresponding class label. There are two classes here green glass and red glass.
+Right. So this is my training example and this is the Voronoi cell for it. How did I build the Voronoi cell?
+Perpendicular, perpendicular, perpendicular, perpendicular, perpendicular. So for this green training sample this is the Voronoi cell in case of one nearest neighbor.
+Now I want to build a classification boundary here. What do you mean by classification boundary?
+If you come on the one side of the classification boundary you have same 10 examples of same class.
+Now so if I want to build a classification boundary. How can I do that? So for each training example you look at the Voronoi cell's boundary. If the neighbor is of different class that becomes a classification boundary.
+So this becomes a classification boundary. This will not be a classification boundary. Why? Because both the neighbors are of same class. Here both the neighbors.
+This one is red class. This is green class. Right. Similarly think about this. Here this would be a classification Voronoi testerection boundary. Why? Because here you have
+green class. Here you have red class. Again this would be a testerection boundary. Green class, red class and so on.
+By checking Voronoi cell boundary of each training example and seeing that on one side you have one class element training example of one class and on another side you have training example of another class.
+You can build a classification boundary like this. And this is a classification boundary of the k nearest neighbor. In this case it is one nearest neighbor.
+Any testerection. Any testerection here would be classified as green. Any testerection here would be red. Any testerection here would be red. Any testerection here would be green.
+So on the left hand side of this classification boundary all the training samples are of green class.
+On the right hand side of this training data set all the samples are of red class. So any sample testerection on right hand side would be classified as red.
+Any test sample on the left side of the training boundary would be classified as green class. So this is called Voronoi Tesseraction. So I hope you got it right. So Voronoi cell means for each training example I want to understand its area of influence. Once I are able to understand the area of influence then I can look into the neighborhood. If the neighborhood is of same class then I do not need to build any classification boundary or testerection boundary.
+But if the neighborhood is of different class then that becomes the classification boundary for KNN. K nearest neighbor. So if I am taking one nearest neighbor what is the advantage and what is the disadvantage? So we understood Voronoi cell. We understood Voronoi Tesseraction. Now in case of one nearest neighbor. If I take one nearest neighbor. What is the advantage? In one nearest neighbor. Right. It is very easy to compute.
+Very fast to compute. Because you are looking considering only one neighbor. Right. But the positive point is that it can give you very complex classification boundary. I am able to get it with one nearest neighbor. What is the disadvantage here?
+The disadvantage is that if you have some noisy points. Or one nearest neighbor has very high chance of overfitting. That means if there is a noisy point I might do misclassification. I do wrong prediction for that particular sample test sample. So one nearest neighbor. Right. The advantage is it gives you very complex classification boundary. Without spending too much of computation. On the other hand the negative point is that it has high chances. It has very high chances of.
+that if you have some noisy points or one nearest neighbor has very high chance of overfitting.
+that means if there is a noisy point i might do misclassification i do wrong prediction for that
+particular sample test sample. so one nearest neighbor right the advantage it gives you very
+complex classification boundary without spending too much of computation. on the other hand the
+negative point is that it has high chances it has very high chances of overfitting right. so if i
+increase the value of k to some n value right so for example these are the two test examples or two
+examples i am explaining it's a three class classification problem right you have purple
+class you have green class you have yellow class and these are the training examples how do i build
+the classification boundary so if i take k value as 11 we took k value as one in the last case
+k value is 11 that means i am going to consider 11 neighbors to do the prediction right once i identify
+the 11 neighbors right and i look at the neighborhood class labels if the neighborhood class label is
+changing then that becomes a tesseraction boundary so this is tesseraction boundary this is tesseraction
+boundary this is tesseraction boundary and similarly i can do it for other cases as well so here you can
+see weight uniform weight distance right so if you remember what do you mean by weight uniform and weight
+distance here two nearest neighbor so two nearest neighbor means i am going to look at two closest sample
+what happens if both the closest samples are of different class if both the samples are of different class
+and i am giving equal weight to the both the closest samples then there is no way i can resolve the conflict
+so what i can do here is instead of uniform weight to all the training closest training examples i can make
+distance based weights for training examples for example corresponding to this test sample this training
+example is much closer as compared to this training example so i will give higher weightage to the closer
+sample and lower weightage to the farther sample and that is how you will do the conflict resolution so here you can see right the weight is uniform that means all the 11 neighbors are given equal weightage in this case it is distance based all the neighbors are not given equal weightage the neighbor which is the training neighbor which is very close is given higher weightage the training neighbor which is very far will be given less weightage
+far will be given less weightage and you can see there is a minor change here in this area in the classification boundary
+right minor change right so this is one of the ways we can resolve the conflict
+so if i pass k equals to 5 right so this training data set two class classification problem there are two
+classes one is positive class one is negative class so how i am going to do that for this particular case
+this is the test sample i am going to find the nearest neighbors five nearest neighbors then i am going
+to identify the class label of these five nearest neighbors all of them are saying positive class i am
+going to predict positive class my knn algorithm is going to predict positive class for this particular test
+sample now we are talking about computation distance computation similarity computation but how we are going to do that that we are going to see next right in the next video
+right so if we try to broadly compare eager learners versus lazy learner in eager learner basically we are
+building a model but in lazy learner we are not building the model the entire training data set is a model during
+training time this is eager learner algorithms are slow and computationally expensive on the other hand lazy
+learner during training phase are very fast and virtually we are not doing any computation during prediction
+eager learners are very fast simple lookup we are doing lazy learners are slow because majority of the
+distance computation similarity computation is done during testing phase or prediction phase right and data usage
+the entire training data set would be used as a global model in lazy learners i am only considering the neighbors
+so in this video we looked into the basic idea of k nearest neighbor algorithm we will look into some more details
+in the next video we also looked into how to find the value of k or how to look into the value of k and how to do the distance computation
+we are going to continue in the next video as well take care bye bye

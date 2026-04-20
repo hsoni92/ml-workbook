@@ -1,0 +1,332 @@
+Hello to all of you. My name is Dr. Hemant Rathar and we are in the course Machine Learning.
+We are discussing the module Clustering and today's topic is type of clusterings and type of clusters.
+So the learning objective of this video is we will first appreciate that the notion of clustering can be very very ambiguous.
+We will then look into different types of clustering approaches. Then we will look into different types of clusters.
+So let's start right away. So the notion of clustering can be very very ambiguous.
+Why I am saying that? Look at this data set. If I ask you how many clusters are there in this data set?
+Some of you might say that there are two clusters. Which is correct.
+Some of you might say that here we have four clusters. Those people are also correct.
+Some people say that there are six clusters. So same data set.
+Some people say that there are two clusters. Sometimes for my queries it might have properly two clusters.
+It might have four clusters. It might have six clusters. So the way we define clusters can change on how we want to interpret the data.
+For the same set of data points depending on the criteria might have two clusters might have four clusters might have six clusters.
+So that is very very ambiguous thing in clustering.
+So now we have discussed two things in clustering. One, right, clustering is very subjective.
+What sort of cluster, what sort of similarity you are looking for. That we discussed in the last video.
+That based on the similarity you are looking for, you might find different groups.
+If you remember Bits Goa student example, right, based on how you want to define similarity, you might get different groups.
+Now we are discussing another ambiguity in clustering, which is at what level of abstraction you are looking for.
+If you are looking at very high abstraction, this data set have two groups, two clusters.
+If you are looking at very low level of abstraction, the same data set has six groups.
+So depending on the level of abstraction, right, the number of clusters might change here.
+So that is the second ambiguous thing we are discussing in clustering.
+So now whenever we are designing any clustering algorithm or running any clustering algorithm, these are some of the fundamental questions.
+How many clusters are there? What is the size of each cluster? Can we divide a bigger cluster? Can we aggregate a cluster? Can we further divide few clusters? How do we handle outliers?
+So when we design or run any clustering algorithm, we have to keep these things in mind to get proper groups, proper natural groups that we want to identify in the data points.
+Right, so let's start with type of clustering.
+So there are various types of clustering algorithms.
+Right now what we are discussing is not the clustering algorithms, but the various philosophy, the basic philosophy behind different clustering algorithms.
+So in this video, we will first look into different types of clustering algorithms and different types of clustering ideas and then we will look into different types of clusters.
+Right now these philosophies you will directly be able to relate when we actually discuss clustering algorithm that we will start in after next few videos.
+So right now I am just discussing the ideas of clustering and clusters.
+So now let's start with different types of clustering strategies or ideas.
+You can do clustering based on soft and hard clustering.
+You can do clustering based on partitioning criteria, whether it is flat clustering or hierarchical clustering.
+You can do clustering based on similarity computation, how you want to define similarity.
+You want to define similarity based on distance or if you want to define similarity based on connectivity.
+We can define clustering algorithms based on whether these algorithms should be run in a sequential fashion or can be run in a simultaneous fashion.
+So these are the different ideas in clustering methods.
+Let's discuss each of them in detail.
+Right and then we will look into different types of cluster.
+So let's start with the first idea of clustering which is hard clustering versus soft clustering.
+So this is an idea.
+So what is hard clustering?
+In hard clustering, each data point can belong to exactly one cluster.
+So let's look at this data set.
+Right.
+So let me draw a data set here.
+So this is the data set.
+Right.
+These are my data points.
+Hard clustering means each data point can belong to only one cluster.
+So whenever we run hard clustering algorithm.
+Right.
+It will form cluster in such a fashion that each point can maximum belong to only one cluster.
+So if I have this data set, input data set, this is how the hard clustering would look like.
+Right.
+You have divided, you have partitioned the data set in a flat fashion where one point can belong to only one cluster.
+Right.
+So for example, let's suppose this is cluster 1, this is cluster 2.
+So this point is belonging to only one cluster, that is C1.
+This point also belonging to only one cluster, C1.
+This point, it's also belonging to only one cluster, which is C2.
+That means when we run k-meas clustering algorithm, one point can belong to only one cluster.
+On the other hand, right.
+So hard clustering algorithm, the output is a set of non-overlapping subsets.
+So here you can see that groups are non-overlapping.
+C1 is not overlapping to C2.
+Right.
+So these two subsets, two clusters, C1 and C2 are non-overlapping in hard clustering.
+On the other hand, in soft clustering, a data point can belong to many clusters, can belong to multiple clusters.
+So in soft clustering, a data object can belong to many clusters.
+Right.
+So for example, the same data set, if I run soft clustering algorithm, right, same data set on the top.
+If I run soft clustering algorithm, it might give me, even these clusters.
+This is C1 and C2.
+Right.
+So C1 and C2 in soft clustering can overlap each other.
+That also means that a particular point can belong.
+So for example, this point can belong to two clusters.
+Right.
+C1 at the same time C2.
+So a particular point, let's suppose, A can belong to two clusters.
+Right.
+This point, let's suppose B is belonging to two clusters.
+Point C is only belonging to one cluster which is C1.
+Point 2, D is also belonging to only one cluster which is C2.
+Right.
+So in soft clustering method, one point can belong to many clusters.
+Right.
+So when we are talking about soft clustering, I can define some additional measures as well.
+For example, degree.
+Right.
+So in soft clustering, what do you mean by degree?
+Degree means one point can belong to maximum how many clusters.
+So if I say degree equals to three, that means one point can belong to maximum three clusters.
+If I say degree equals to five, that means, right, one point can belong to maximum five clusters.
+It can belong to one cluster as well, but one point can belong to maximum five clusters.
+Right.
+In soft clustering, we can additionally define something called strength of association.
+Right.
+So for example, this point is belonging to C1 cluster as well as C2 cluster.
+Right.
+Now, we can define strength of association for this point.
+So strength of association means by default, this point A is belonging to C1 cluster and C2 cluster with same strength of association.
+Same strength of association means that the affinity of point A to C1 is same as affinity from point A to C2. Right.
+So that we can define with the help of something called C2. Right.
+I can say that a particular point can have more affinity towards one cluster versus less affinity towards the another cluster.
+I can say that.
+So that is called strength of association.
+I can say that the point A is more closer or more similar to C1 cluster than C2 cluster.
+Right.
+So that we can define with the help of something called strength of association.
+So one idea of clustering is whether the clustering algorithm is hard clustering versus soft clustering.
+Hard means one point can belong to only one cluster. Soft clustering means one point can belong to many clusters.
+And in here we can define degree as well as strength of association.
+The second idea of clustering is what is the partitioning criteria. Right.
+What is the partitioning philosophy. Right.
+So partitioning philosophy can be a flat partitioning strategy or a hierarchical partitioning strategy.
+For example, look at this data set. Right.
+In flat partitioning strategy, we divide the data into single level non-overlapping clusters.
+So if this is the data set, it is single level non-overlapping clusters. Right.
+For example, k means is a flat clustering algorithm. Right.
+So in here we require to tell number of clusters in advance.
+On the other hand, hierarchical clustering means we can create nested clusters organized in a hierarchical tree.
+I will show you an example. Just hold. Right.
+That hierarchy can be formed, can be constructed using a bottom-up approach called agglomerative
+and a top-down approach called as divisive. Right.
+Let's see an example of hierarchical clustering. Right.
+I'll come back to the slides. Right.
+So we have Earth. Earth is divided into five continents. We have Asia. We have Europe. And we have many more.
+Asia. Now Asia can also be divided further into countries. For example, we have India. We have Pakistan. We have Bangladesh. Right.
+India can further be divided into smaller parts. For example, Goa states. So India can further be divided into states. Goa state.
+Kothra Pradesh, Madhya Pradesh, Rajasthan and so on. Now Goa can further be divided into districts. North Goa, South Goa. Now think about it. This is a data point. This is another data point. Then there are districts. Right. So at this level I am talking about districts. Right. In a data set what I have is these many points. Right. These points.
+So let's suppose this is North Goa and this is South Goa. So Goa has two district. North Goa and South Goa. Right. So this North Goa data point belong to Goan cluster. At the same time can belong to Indian cluster. At the same time is belonging to Asian cluster is also belonging to Earth cluster. Right. Like this.
+So a point can belong to many clusters at particular instance. Let me draw another diagram here. So this is let's suppose Goa. And this is let's suppose UP. Yeah.
+So a particular point. Let's suppose this is NOIDA. Right. And this point is NOIDA. So North Goa and NOIDA are not part of same cluster if I am talking in terms of district.
+They are not in the same cluster when I am talking in terms of state. But they are in the same cluster when I am talking in terms of country. They are in the same cluster when I am talking about when they are in the. So think about it. Right. This is my country cluster. And this is my continent cluster. Right.
+So I can build a hierarchy in which one point at one point can belong to many clusters. Right. So this is a great example of hierarchical clustering where we see that. Right. North Goa and South Goa are belonging to Goan cluster as well as Indian cluster as well as Asian cluster as well as Earth cluster.
+North Goa and North Goa are not part of any district cluster. They are not even part of same state cluster. But they are part of same Indian cluster. They are part of Asia cluster and they are part of Earth cluster. So this is how you can sort of build an hierarchy here. Right. An hierarchical clustering. Right.
+So let's come back to the partitioning clustering. Right. So in partitioning based clustering we divide the data set. Right. Of n data points into k non-overlapping sets. K single level non-overlapping sets. K means clustering is a partition. Flat partition based clustering algorithm. K means is a flat partitioning clustering algorithm. On the other hand in hierarchical clustering.
+The idea is an hierarchy is created. The idea is a hierarchy in the data set is created which is a tree like structure. I can create this hierarchy based on a bottom up approach or a top down approach. What do you mean by bottom approach? Think about it. This is bottom up approach. So that means I have all these district points. I can group these points. Right. Based on state. Right.
+So at this level I am merging points based on similarity in terms of state. So if two points come under same state they will belong to same cluster. If two points are not in same state will be part of two different cluster. Right. So at this level from this level I am merging points based on similarity in terms of state. In here again I am merging points based on state. So for example.
+For example, I have Goa state, in Pakistan they have Sindhap state.
+So if they belong to same country, they should belong, they will come under country level.
+Otherwise they will be in the different country level at this particular level.
+So basically what I am trying to say here is, when I build a bottom up approach, I merge
+point based on similarity notion.
+So if two points are similar, they will form into one cluster as we move up in the hierarchy.
+A divisive approach, we start from the top.
+A very big cluster earth is there.
+Based on some notion of dissimilarity, I will start breaking a bigger cluster into smaller
+clusters.
+So earth which is a bigger cluster can be divided into 5 sub clusters based on continent.
+A bigger Asian cluster can further be divided into smaller cluster based on dissimilarity
+in terms of country and so on.
+Right?
+So when we follow a bottom up approach, we merge cluster based on similarity.
+When we follow a top down approach, which is divisive strategy, we divide the cluster based on some
+notion of dissimilarity.
+Right?
+So in bottom up approach, start with individual points as cluster and as we move up, we merge
+clusters which are very similar.
+In top down approach, we start with one big cluster and we recursively split till we have
+each point as one cluster.
+We will come back to algorithms as we move along.
+Don't worry about it.
+Right?
+So when we build hierarchical clustering, right, this sort of tree is what we get.
+This tree is called dendogram.
+So dendogram records the sequence of merges and split and then we can look into various
+parameters of dendogram when we are discussing agglomerative clustering.
+Don't worry about it.
+The third way of visualizing clustering is how do you define similarity measure?
+For example, similarity between two points can be defined based on distance.
+If the two points are close, we are calling them, they are similar.
+If the two points are very far, we are saying that the distance is high, they are very dissimilar.
+So I can define similarity based on distance between points.
+I can also define similarity based on connectivity.
+If two points are connected, irrespective what is the distance between them, they will fall
+into one cluster.
+If two points are not connected, even the distance is very less, they will form into different
+clusters.
+So similarity can be defined based on distance, can be defined based on connectivity.
+There are other ways of defining the similarity.
+In this course we will look into distance based similarity and connectivity based similarity.
+Another notion of clustering methods is whether the algorithm is sequential or simultaneous.
+Clustering algorithm means any clustering algorithm will be divided into steps.
+To run a clustering algorithm, we have to run some steps.
+For example, K means.
+K means clustering algorithm has four steps.
+4 steps.
+So K means has four steps.
+If I have to run these steps one by one, then it is called sequential algorithm.
+So K means clustering algorithm is a sequential algorithm.
+It means all these steps, step one, step two, step three, step four needs to be run in a sequential
+fashion.
+On the other hand, if in some other algorithm, I can run few of the steps in parallel to each
+other, then it is called simultaneous algorithm.
+K means is a sequential algorithm.
+Your homework is to find an algorithm that can run in a simultaneous fashion.
+Cimuntaneous fashion means some of the steps can be parallelized.
+You remember bagging, rustling, boosting.
+In bagging, we can parallelize some steps.
+What we can parallelize?
+Bag construction.
+What we can parallelize?
+Model construction.
+On the other hand, boosting, none of the steps can be parallelized.
+So bagging is a sequential algorithm.
+Bagging is a simultaneous algorithm.
+Boosting is a sequential algorithm.
+So similarly, you have to find some algorithms in clustering as well.
+We will discuss them as we move around.
+Now let's look into another criteria.
+So one, what we look into basic philosophy is how we can cluster the data points, which
+is flat versus hierarchical, right, signal level versus multi level, sequential versus simultaneous,
+and so on.
+Right.
+Now let's look into different types of clusters.
+There can be different types of clusters.
+So once I have ran the clustering algorithm, I have got some clusters, some groups.
+What can be different types of clusters?
+There can be well separated clusters.
+There can be center based clusters.
+There can be continuous clusters and there can be density based clusters.
+So let's see one by one in detail.
+So what do you mean by center based clusters?
+So I have some data set.
+I ran a clustering algorithm and I have got clusters.
+Now these clusters can be center based, separated, continuous and so on.
+So let's start with what is center based clusters.
+Center based clusters mean a cluster is a set of data points such that a point or object in
+a cluster is more closer to the center of the cluster than the center of any other cluster.
+Right.
+Let me explain.
+Right.
+This is the data point.
+I have four clusters.
+Red, blue, green and yellow.
+Let's talk about this point.
+This point belongs to blue cluster.
+Why?
+Because it is much closer to the center of blue cluster as compared to the center of green cluster,
+as compared to the center of yellow cluster and so on.
+Right.
+Let me repeat.
+Cluster is a set of object such that a point or object in a cluster is closer or more similar
+to the center of that cluster than center of any other cluster.
+So center based clustering algorithms typically give symmetrical clusters.
+Please note down.
+This is an important point.
+Always give symmetrical clusters.
+We will come back to this in a while.
+On the other hand, how do we compute center of the cluster?
+I can compute center of the cluster as centroid which is an average of all the points.
+So how do I calculate center, this center?
+I can average all these points to get the center of green cluster.
+I can average all these points to get the center of yellow cluster.
+Now second type of clusters can be something called well separated cluster.
+So what do you mean by well separated cluster?
+A cluster is a set of points where any point within the cluster is closer to every other
+point in the same cluster.
+Then any other point not in the cluster.
+Think about it.
+This point.
+I have three clusters here.
+Red, green and yellow.
+This particular point is closer to all the points in the green cluster.
+Then any other point not in the cluster.
+So this point is farther from any point in the yellow cluster and it is closer to all
+the points in the green cluster.
+So this well separated cluster typically give clean and most intuitive clusters.
+And typically we do not find well separated clusters in real world.
+Then we have continuous clusters.
+Antiguous clusters are those clusters.
+A cluster is a set of points such that a point in a cluster is closer to one or more point
+in the cluster than any other point not in the cluster.
+Think about it.
+This point.
+This point and this point.
+They belong to green cluster because point one is closer to point two is connected to
+point three in a contiguous fashion.
+Similarly let's suppose this, this and this.
+This is A, B and C. So you can see there's A is very close to B is also very close to in
+a contiguous fashion in a very transitive way, in a very nearest neighbor way is very close
+to each other and that is by what we call it as continuous clustering.
+Continuous clustering can give me asymmetric clusters.
+Think about it.
+This is asymmetric.
+This is asymmetric.
+This is asymmetric.
+This is asymmetric.
+And it sometimes can give you symmetric as well.
+But important point is continuous cluster can give me clusters are sort of asymmetric in nature.
+Then there is something called density based cluster.
+Density based cluster the idea is very simple.
+Two points.
+Density based cluster means two points.
+Okay.
+How do we do that?
+If I ask you what are the natural clusters in the data set?
+So idea of any clustering algorithm is to identify natural clusters in the data set.
+So what are the two natural clusters in the data set?
+One and two.
+These are the two natural clusters in the data set.
+Now my clustering algorithm should be able to identify these natural clusters.
+So density based cluster means two points will belong to same cluster.
+Suppose this is point A. This is point B. Two points will belong to same cluster.
+If I can start from one point and can reach another point by moving through a dense area.
+Right.
+So let me do it again.
+This is another cluster.
+This is another cluster.
+So B are belonging to same cluster because I can start from point A and can reach point B by moving through a dense area.
+How do we define density and all we will discuss later on.
+A and C are not part of same cluster because I cannot reach from A to C by moving through a dense area.
+I have an area which is non dense.
+Right.
+So that is why A and C are not part of same cluster.
+On the other hand let's suppose this is D and this is E. D and E are part of same cluster because I can start from D and can reach E by moving through a dense area.
+So that is the idea behind density based clusters.
+So density based clusters are those clusters where I can start from one point and can reach another point by moving through a dense area.
+Right.
+Now density based clusters can also be very asymmetrical.
+Think about it.
+This is asymmetrical.
+So in summary in this video we looked into various ideas behind clustering algorithms like Partitional, Hierarchical, Sequential, Simultaneous and so on.
+We looked into different types of clusters like center based clusters, well separated cluster, contiguous cluster and density based clusters.
+We will continue in the next video.
+Thank you for attending.
+Take care.
+Bye bye.

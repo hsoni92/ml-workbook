@@ -1,0 +1,133 @@
+Hello to all of you. My name is Dr. Himindra Athar and we are in the course Machine Learning. We are discussing Module 5 which is Rule Based Classifiers. Today we are going to discuss about Rule Generation using Indirect Method.
+So the learning objective of this video is we are going to understand how rules can be generated using Indirect Method. What are the properties that we get if we use Indirect Methods for Rule Generation and how do we do Rule Simplification. So let's start right away.
+So in the last video we talked about the basic design of Rule Based Classifier. So when we talk about Rule Based Classifier, they are essentially collection of rules R1, R2 and so on. Each rule is essentially a condition, a construct.
+If condition then conclusion. So each rule is a construct. If condition then conclusion and you can have many such rules. But the point now is how do we generate these rules? How do we construct these rules? How do we write these rules?
+So basically there are two approaches to write these rules. One is called Direct Method of Writing the Rules and another one is called Indirect Way of Writing the Rules. So Direct Way of Writing the Rules is the basic idea is given a dataset. I look at the dataset and directly try to write the rules. So let's suppose someone has given me this dataset. I will look at the dataset and directly try to write Rule 1, Rule 2, Rule 3 and so on.
+So algorithms like Ripper, C and 2 are essentially direct methods of writing the rules. This method, direct method of writing the rules we will see in the next video. In this video we will look into indirect method of writing the rules. In indirect method of writing the rules, assuming someone has given a dataset to me, first I will construct a model.
+A classification model. Now this is not the rule based classification model. A serogate classification model. Let's suppose a decision tree based classification model. So given a dataset, first I will build a decision tree or a neural network based classification model. Once this model is built, then I am going to write rules based on the decision tree model.
+So in indirect way of writing the rules, we first build different classification model. Maybe a decision tree or a neural network. And then we extract rules from that model. That particular decision tree model. Right. And this is one of the very interesting way of writing the rules. Let's start with how do we write the rules using indirect method. And the direct method we will see in the next video. So indirect method of writing the rules. We extract rules.
+rules based on a different classification model assuming this different classification model in
+our case is dysentery since we have already discussed dysentery essentially i can build
+given a data set a dysentery now once that is done right so the step number one in this process
+of writing the rules right so the indirect method extracting rules from dysentery step number one
+build a dysentery model right based on the training data set given to me right so the algorithm for
+building dysentery can be id3 or c4.5 any dysentery algorithm can be used to build the dysentery model
+so once the dysentery model is built then step number two now i am going to look into the dysentery
+model or i am going to take the help of dysentery model to write the rules so how i am going to
+write the rules we are going to start from the root node and move towards the leaf node right so in
+dysentery you start from the root node you move towards the leaf node right and then based on that
+traversal you are going to write the rules so one rule is created for each path from root to leaf right
+so when i am moving from root to leaf there would be lot of non-leaf nodes and finally i will have a
+leaf node so in a dysentery like this there are some non-leaf nodes non-leaf node non-leaf node non-leaf node and these are leaf nodes
+so when given a data set first i have constructed this dysentery now i would start traversal from the root node and go towards the leaf node now so how do i write the rule
+rule would be written when i start from the root node the non-leaf nodes essentially are condition points
+so that becomes rule and the class label is essentially your rule consequent or conclusion right so by looking at the decision tree i can write different rules so essentially your rule and descent essentially is the conditions right traversal from root node to leaf node whatever number of non-leaf nodes are there their condition points and become part of the root node. so that becomes rule and descent and the class label is essentially your rule and descent and the class label is essentially your rule consequent or conclusion right so by looking at the decision tree i can write different rules. so essentially your rule and descent essentially is the conditions right
+so you can write traversal from root node to leaf node whatever number of non-leaf nodes are there their condition points and become part of rule and descent and finally you reach a leaf node that becomes rule consequent or the class label. so let's take a very simple example and try to understand it better. so assuming someone has given me this sort of a tabular data i have four attributes age income student
+so if you have a different credit rating and the class label is by computer yes or no. so as you can see this is a tabular data set given to me. now i want to build a rule based classifier for this right. a rule based classifier will be essentially consist of collection of rules. so now i want to write the rules. how i can write the rules? i can use direct method or i can use indirect method to write the rules. right now we are discussing indirect way of writing the rules.
+in indirect way first i am going to build a surrogate model assuming the surrogate model assuming the surrogate model right now we are considering is the decision tree model dt model. so first i am going to build a decision tree for this data set. once the decision tree is built then this surrogate model will be used to extract the rules.
+something like this so this is my tabular data tabular data
+now first i'm going to build a surrogate model decision tree model on the data set right once
+the surrogate model is built i'm going to look into this decision tree to help me in writing the
+rules right so assuming this from this data set this decision tree is built right as you can see
+the root node is age then there are non leaf nodes these are my some other non leaf nodes
+and here i have leaf nodes leaf nodes are my class label
+right so i have constructed let's suppose this decision tree now i want to write the rules so
+the basic idea is you start from the root node and go towards the leaf whatever non leaf nodes are
+you are encountering are essentially your conditions and those will become rule and descent so here i
+start from the root node it says that if age equals to youth if age equals to youth so this is my first
+part of rule and descent then if and so if age equals to youth and student equals to no and student equals to no
+then the class label is no then the class label is no so i start from the root node i move towards a leaf whatever non leaf nodes
+the root node i am getting these are essentially condition will be part of rule and descent and these will be joined using and
+another rule can be this part if age equals to youth and student equals to yes if age equals to youth and student equals to yes then the class label is yes
+now third one can be this one if age equals to middle age then the class label is yes another rule can be like this if age equals to senior and credit rating equals to
+senior and credit rating equals to fair then the class label is no and last rule can be like this if age equals to senior and credit rating equals to excellent then the class label is yes right so now i am exploring my
+extracting rules based on the rules based on the rules based on the rules based on a surrogate model which is decision tree in our case so i can use decision tree to write the rules and these are really good rules right these rules contain enough information as much as the decision tree contains so essentially whatever decision tree information decision tree has exactly same information i have in these rules as well there is no information loss when i do this sort of a transformation right so these are the different paths and
+based on that i have written different rules so here if i ask you how many rules will be there for a particular decision tree then you have to count how many leaf nodes are there so number of leaf nodes would be the number of rules i am going to extract from the decision tree now when we extract rules from decision tree we automatically get two special properties one is called mutual exclusion and second is called
+exhaustiveness so what do you mean by mutual exclusion means for a particular tuple only one rule will get triggered another way of saying is
+no two rules can be triggered no two rules can be triggered for one record or for one tuple so for one tuple only one rule will get triggered this is guaranteed right when we extract rules from decision tree and that guarantee is called mutual exclusion all the rules are mutually exclusive in nature that means for each tuple only one rule will get triggered not more than one exhaustive means there is at least one
+rule for each rule for each tuple in the data set there is at least one rule right which is covering each tuple so now when we get these properties there are lot of benefits right so as i said what do you mean by mutual exclusion mutual exclusion means there is no data point there is no tuple that is getting triggered for more than one rule so for one tuple only one rule is getting triggered now this is a big problem we will see
+if this mutual exclusion if this mutual exclusion property is not there in my collection of rules if this mutual exclusion property is not there in my collection of rules then there is a big issue and that is what we are going to study next the rules are exhaustive as in nature that means every data point covered by exactly one rule right so these are the two properties which we get when we extract rules from decision tree right now if i ask you let's suppose this is my decision tree how many rules i am going to write so i am going to write one
+two two three four i am going to write four rules for this decision tree there will be four rules because there are four leaf nodes so when we extract rules from decision tree these rules are mutually exclusive and exhaustive in nature however there is a problem here so assuming let's suppose this is the path rule i am talking about if refund equals to no
+marital status is single and divorced and taxable income is less than 80k then the class level is no right so as you can see here this rule right this particular rule has three conditions condition one condition two condition three there are three conditions if these three conditions get satisfied then only we are saying that this particular rule is getting triggered similarly you talk about this particular rule how many conditions condition
+condition one condition two condition two condition three so this rule also has three conditions in the rule and descent part right if all three are satisfied then only the rule is getting triggered now again as you can visualize that there can be many rules right so let's suppose i am building a intrusion detection system that means a packet flowing in your network organization or a packet computer network packet going out i am going to check
+whether the packet is malicious or benign that means whether the packet is good or bad so this is a simple problem statement i want to build an intrusion detection system which sits on the in the middle of the outer network and the inner network and all the pocket packets which are flowing inside your network or going out of your network we are going to check whether those packets are malicious or benign right simple classification problem right and for this i can
+build a rule based classifier now when i build a rule based classifier essentially it would be a collection of rules so let's look into one rule in this particular case a rule will consist of three condition condition one and condition two and condition three and if these three conditions get satisfied then only i am going to do the prediction now think about it in a typical intrusion detection system there will be millions of packets getting scanned each day
+now when we are talking about scanning millions of packets essentially you are scanning it against the rules now each rule if you see is consisting of conditions if there are many conditions that means those number of checkings you are doing that means those number of comparisons you are doing that means there is some computation involved when you actually run a rule so this intrusion detection system if you run it for millions of packets and if you have huge number of rules and each rule is very big
+will become intrusion detection system will become very very slow right so for that what we do we try to simplify this rule right so instead of five conditions instead of ten conditions in the rule can we still manage the rule can we still write the rule with less number of conditions is what we call it as rule simplification so for a given data set i can rebuild a decision tree once the decision tree is built i can extract rules from decision tree however these
+rules might be very big and might be costly to run i can do rule simplification to speed up my process of rule checking and that is called rule simplification so i can do pruning right which can help me in doing rule simplification right so for example let's suppose let's take about this case right so initially the rule was if refund equals to no and marital status is married
+if refund equals to no and marital status is married then the class label is no right now this is the original rule r1 can i simplify the rule yes i can simplify the rule i can just instead of two conditions condition 1 and condition 2 i can just write this rule with only one condition condition 1 which is if status is equal to married then the class label is no so i am just not starting from root node every time so when i am writing the
+rule from decision tree i am always starting from root root node i am always starting from root node and go towards leaf node but i can do rule simplification where i can start from any non leaf node and then move towards the leaf node so this sort of simplification i can do when i do this sort of simplification i am saving on the number of computation for this rule to be triggered there are two conditions after i do rule simplification now only one condition is checked right for this triggering of this rule so when i do rule simplification
+rule simplification then there would be some problems so what is the problem the two properties which we inherited when we extract rules from decision tree which is mutual exclusion and exhaustiveness might not no longer be active when we do rule simplification that means when you have rules when you have written the rules and done rule simplification the two properties which is mutually exclusion and exhaustiveness might not hold true for the
+rules now now if that is not the rules now now if that is not the case then you have to have a strategy to resolve them let's talk about a simple case right so assuming i am talking about mutual exclusion rules are no longer mutually exclusive that means that for one tuple more than one rule are getting triggered so for one tuple mutual exclusion means for one tuple only one rule should get triggered if this property doesn't hold
+true that means for one tuple more than one rule are getting triggered right. So when I do rule
+simplification the rules are no longer mutually exclusive. For example let's suppose there is
+rule something like this if temperature is greater than 80 then class label is yes and there is
+another rule rule 2 if win equals to strong then the class label is no. Assuming my test tuple is
+this if temperature is 85 and this is my tuple and I want to do the class prediction. So the
+temperature value is 85 and wind value is strong. So as you can see for this test tuple both r1 and
+r2 will get triggered because right the condition in r1 is also getting triggered is also holding true
+and condition is r2 is also holding true. For this test tuple both the rules are getting triggered.
+If both these rules are getting triggered and both of them are doing different class label prediction then I am in trouble. Which rule to take?
+which rule to finally consider is a big problem. So this problem is arising because I am doing rule simplification.
+When I do rule simplification the rules are no longer mutually exclusive in nature and if the rules are no longer mutually exclusive in nature then they might lead to conflicts.
+and then we have to come up with something called conflict resolution strategy so if there are more
+than one rule getting triggered for a particular trouble we have to have a conflict resolution
+strategy multiple rules are getting triggered which rule should finally i'll be using to do
+the final prediction is the question so for conflict resolution strategy there are broadly
+two approaches size ordering rule ordering size ordering means arrange all the rules based on the
+size the toughest rule the rule having the toughest condition or the rule having the largest and
+decent size should be put at the top so rule one would be at the top rule two which is much simpler
+will become later rule three rule four and so on so whenever you get test double first you try to run
+it with rule one if rule one is getting triggered right whatever is the class label if rule one gets
+triggered whatever the class label rule one is predicting that would be used to predict the
+class label for the test double if rule one is not getting triggered you go to rule two then you go
+to rule three then you go to rule four if any of the rule you there is a ordering try with rule one
+if fail try with rule two if fail try with rule three with rule three it was satisfied so then you
+are going to do prediction based on r3 and you are not going to check rest of them r4 r5 and r6 you are
+not going to check so this is called size ordering arrange rules based on size and sizes essentially number of
+conditions i have the toughest rules come at the top and the lowest rule come at the bottom and i have
+arranged all the rules once the rule getting triggered i can use that to do the final class prediction
+another approach for conflict resolution strategy is rule ordering can we arrange rules in a particular order
+it can be class based or rule based so rule ordering means arrange rules in a order how do we arrange them
+based on rules right so based on the quality of the rule right property of the rule so i can arrange
+all the rules based on the accuracy highest accuracy rule come at the top lowest accuracy rule come at the
+bottom so rule ordering means to resolve the conflict rule ordering means arrange all the rules in a particular order
+highest accuracy rule at the top lowest accuracy rule come at the bottom based on the coverage i can
+arrange through the rules based on the andescent size i can arrange the rules right we already discussed
+based on the expert advice expert says that this rule should be coming at the top and this rule should
+be coming at the bottom so i can arrange rules based on the expert advice so arrange rule based on the rule
+property property property property can be accuracy coverage and descent size expert advice etc etc class
+based ordering means that you bunch all the rules of same class and then arrange them for example if i have
+five rules rule one rule two rule three rule four and rule five right bunch them based on the classes so let's suppose rule one two three are predicting class table one and
+four and five are predicting class table two so all the rules predicting c1 class table one are bunched together all the rules which are predicting class table two are bunched together right and then you arrange the rules so rules predicting class table one comes at the top rules predicting class table two comes at the bottom
+how do you arrange the rules how do you arrange the rules how do you arrange the rules based on the classes so how do you decide on the classes right which class should come first again it depends on the problem statement for example let's talk about intuition detection system in intuition detection system your aim is to detect whether there is an intuition or not so the higher preference class is malicious class right so malicious class rules should be come at the top and benign class rules should be coming at the bottom
+cancer detection all the rules which are predicting cancer should be coming above rules which are predicting benign will be coming later so i can do class based ordering or i can do rule based ordering depending on my use case so this is a very good example right let's suppose i have written five rules
+right and this is a very good example right and this is a very good example right and this is the test tuple given to me test tuple i will start applying rule number one right so i have assuming i have arranged all these rules based on some criteria accuracy coverage and descent size some criteria or domain expert has done that now here you can see i am first trying to apply rule one when i apply rule one give birth equals to no so yeah this holds true can fly equals to yes okay so this falls
+okay so this falls rule one is not getting triggered rule two true and live in water is sometimes rule two is not getting triggered similarly rule three is also not getting triggered rule four give birth equals to no can fly equals to no so rule four is getting triggered rule five let's assuming i am checking rule five as well so rule five sometimes right live in water sometimes so this is also getting triggered so in this case you can see both rule five as well so rule five sometimes right live in water sometimes so this is also getting triggered so in this case you can see
+rule four and rule four and rule five are getting triggered so in this case you can see both rule four and rule five are getting triggered and both of them are predicting different class labels so this is a conflict and we have to have a conflict resolution strategy the conflict resolution strategy is a range rule in order order can be coverage based accuracy based expert advice based add descent based or you can have a class based ordering so rule based ordering means each rule is ranked individually based on its quality
+quality quality can be accuracy coverage based on its accuracy coverage other statistical measures etc etc etc class based ordering means rules that are predicting same class can be grouped together the rule group of rules are then ordered what is the order here right all the rules which are rare right fraudulent should be put so if i am
+doing intrusion detection system malicious class is more important would be put on the top cancer
+detection put that on the top so this is when mutual exclusion fails right that means for one
+tuple more than one rule is getting triggered then you have to have a conflict resolution strategy
+and then you can do rule-based ordering or class-based ordering to resolve conflict
+another property which is getting lost is when we do rule simplification is exhaustiveness
+exhaustiveness means for a particular test tuple i do not have any rule because of rule simplification
+i am not covering some of the tuples if that happens i have to have a default rule by which i
+can do some prediction so a default rule essentially so what we are trying to say here is there is no
+rule which is getting triggered for a particular tuple if there is no rule getting triggered for
+a particular tuple how do i do the prediction for that i have to make a default rule i have to make a
+default rule so default rule it would be like this if there is no condition right it should get triggered
+always and this rule will always will be at the bottom right default rule will be always at the
+last so this is how the default rule would look like if no condition then the class label is assuming i am
+default i am predicting majority class so the rule says that by default predict the majority class or by default
+predict the malicious sample by default predict the cancer right so you want to detect the cancer if
+none of the rules are getting triggered by default raise a flag and then later on we will analyze and
+find out whether this prediction is correct or not right instead of doing benign prediction right which
+is less important class in case of malware detection right you are predicting a class which is more important
+or it can be a majority class or it can be some other criteria so finally your rule base classifier or
+system would look something like this there will be many rules how do you extract these rules one way
+of extracting these rules is indirect method that means you build a surrogate model decision tree and with
+the help of decision tree you extract many rules once you have extracted the rules then they might be costly to run so you do rule simplification once you have done rule simplification
+once you have to arrange these rules or order these rules based on priority accuracy coverage whatever and towards the end you have to write a default rule r default and this is how the rule based classifier right would look like extracted from non indirect method so finally in this video we looked into how do we extract rules?
+we looked into how do we extract rules with the help of indirect method in this case we talked about decision tree we looked into the two properties which we get when we extract rules from decision tree which is mutual exclusion and exhaustiveness and we looked into if we do rule simplification then how do we handle conflicts and default class we are going to continue in the next video thank you for attending bye
+Thank you.

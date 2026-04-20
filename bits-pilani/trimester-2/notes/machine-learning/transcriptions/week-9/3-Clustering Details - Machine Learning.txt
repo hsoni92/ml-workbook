@@ -1,0 +1,440 @@
+Hello to all of you. My name is Dr. Himandr Athar and we are in the course Machine Learning. We are discussing module clustering and today's topic is other details about clustering.
+So the learning objective of this video is we will look into the role of proximity measure in clustering. We will look into the key distance measures used in clustering. And then we will look into what are the different data representation for clustering which is data matrix and dissimilarity matrix. So let's start right away. So what is the basic foundation of clustering? So given a set of data points.
+A successful clustering output depends on three fundamental aspects. Right. Which clustering algorithm you are using. Right. So for example this is the data set. I want to identify natural clusters in this. What are the natural clusters here? One. Two. So this is what I want to achieve. What is the pattern I want to grasp or identify. Right. So assuming I want to identify.
+I have these data points. Now the clustering algorithm which I am running should be able to identify natural clusters here. This depends on three fundamental aspects. The first one is which clustering algorithm I am using. Right. So I can use k-meas clustering algorithm. I can use hierarchical clustering algorithm. I can use db-scan clustering algorithm. Please remember this is a two-dimensional data. And since it's a two-dimensional data you are able to visualize natural clusters here.
+But if it is n-dimensional data. But if it is n-dimensional data. Most likely you will not be able to visualize natural clusters in the data set. So for that it becomes extremely hard to choose which clustering algorithm you should use for a particular data set. Right. No one clustering algorithm works on all types of data sets to identify all types of clusters. So identification of clustering algorithm is one of the essential part. Second thing to identify natural clusters is how do we define
+similarity function right so two points should be in the same cluster is defined based on how do you define similarity if the similarity is based on distance right if the two points are closer then they will part of one cluster otherwise they will part of different clusters so second thing which actually help us in identifying natural groups is how do you define similarity and the third thing is once you have got clusters from clustering algorithm how do you
+evaluate the cluster qualities right so for example this is one cluster this is another cluster right in two dimensional space you are able to see that these are natural cluster but if it is n dimensional space how do you find out that this is one proper cluster and this is another proper cluster we should have proper cluster quality measures right to identify the quality of clusters so choice of distance function is crucial in deciding
+how we are getting the final outputs so let's talk about this in detail so we are starting to focusing on this part right so we already discussed what are the different types of clustering ideas we will come back to different clustering algorithms in next module so we have already discussed different types of clustering algorithm now we are talking about how do we actually define similarity and then we can look into how do we measure the quality of cluster this we will discuss a bit
+in today's video as well as well as more details in next few videos so we are talking about how do we define similarity function right so data representation in clustering can be built can be organized into two strategies one is called data matrix and other is called dissimilarity matrix also known as proximity matrix so what are these so basically what we are trying to say here is let's suppose someone has given you this data set
+right you want to identify clusters in this natural group in this right so it's a two dimensional data you have x axis you have y axis right in actual terms it would be a tabular data right with four rows right 0.1 0.2 0.3 0.4 sorry 8 rows and two columns
+right so this is let's suppose 1 this is 1 this is 2 this is 2 so point let's suppose let's call it as a b c d and so on so point a is 1,1 this is nothing point b is so let's suppose this is point b 2,1 and so on so this is data matrix this raw data is called data
+right so someone has given you this raw data right so someone has given you this raw data you have projected it into a two dimensional space just for visualization but when we run clustering algorithm on this my clustering algorithm should be able to identify natural groups in the data so this is called data matrix right where i have rows in rows i am representing data points or data objects and in columns i have attributes or features right in columns i have attributes or features so this is called data
+matrix matrix and i can run clustering algorithm on this to identify natural groups in the data set right so the cell i and j and column j contain the value of attribute j and the object i that's just fine another data structure representation of in the clustering is something called dissimilarity matrix right this you will see very often when we discuss hierarchical clustering so this is the traditional way right some
+For anyone, the customer will give you this sort of dataset.
+You have xx which are data points, yx which are attributes and they will ask you to find
+natural groups in the dataset.
+So this is called data matrix.
+Sometimes we convert this data matrix in something called dissimilarity matrix also known as
+proximity matrix.
+So what is proximity matrix?
+Again a tabular representation, bit different here.
+Here both row and column represent object and so let me show it here.
+For example, so this is my dissimilarity matrix or proximity matrix.
+You remember proximity matrix we have discussed in the data pre-processing course as well.
+So here again a tabular representation.
+Dissimilarity matrix or proximity matrix is again a tabular representation, a table.
+In rows you have data points, in columns also you have data points.
+Rows data point, columns also you have data point.
+In the middle, in this field, will be distance or dissimilarity or similarity between point
+one and one.
+So if I am saying distance, if I am putting distance in this matrix.
+So distance between one and one, point one and point one is zero.
+Distance between two and two is zero.
+Distance between three and three is zero.
+Distance between four and four is zero.
+Distance between two and one.
+Right, this one.
+Distance between three and one.
+I can compute.
+How I can compute?
+We have already discussed it in proximity measures.
+Euclidean distance, Hamming distance, etc. etc.
+Similarly I can compute distance between three and one.
+I can compute distance between four and one.
+So from this matrix, which is data matrix, I can convert this data matrix into a proximity matrix
+or a dissimilarity matrix.
+Instead of distance, I can have dissimilarity here.
+I can sometimes have similarity here.
+Whatever I want to represent here.
+But it is a tabular matrix where rows represent data points and columns also represent data points.
+Then in the value, I can define similarity.
+I can write similarity, dissimilarity, distance, whatever I want.
+So it is dissimilarity matrix or proximity matrix is very heavily used in hierarchical clustering
+methods.
+We will see them as we discuss hierarchical clustering.
+So I can convert data matrix into proximity matrix using proximity computations which we have
+discussed in the data preprocessing course.
+So proximity measures is a function that calculates the closeness between two data objects.
+In terms of either similarity or dissimilarity.
+Similarity means if I am doing similarity based computation.
+That means higher value if the items are similar.
+So for example, 0.1 is very similar to 0.1.
+So it would be higher value.
+In terms of when I am doing similarity measure.
+Often fall into a particular range.
+When I am talking about dissimilarity.
+So same matrix can be in terms of dissimilarity as well.
+One and one are very similar.
+Right.
+So dissimilarity should be 0.
+Right.
+They are not dissimilar.
+They are similar.
+Or we can say distance as well.
+Right.
+So dissimilarity or distance.
+A lower value indicates higher similarity.
+A higher value indicates lower similarity.
+Lower similarity and so on.
+So I can convert any data matrix into proximity matrix using proximity measures.
+Right.
+So if it is numerical data.
+Now you can connect.
+We have discussed all these things in data preprocessing course.
+If you have numerical data.
+How do you compute proximity matrix.
+I can do it using Euclidean distance.
+Manitian distance and so on.
+So what is Euclidean distance?
+Distance between two points can be defined by using this formula.
+Which is.
+If these are two points.
+X2 minus X1.
+Ca square.
+Plus.
+Y2 minus Y1.
+Ca square.
+Ca under root.
+Right.
+Also known as L2 norm.
+We have discussed this.
+So measures the shortest straight line distance between two points.
+Right.
+Heavily used in crusting algorithms.
+So many crusting algorithms.
+For example.
+K means use Euclidean distance.
+To compute distance between two points.
+To compute similarity between two points.
+Then we can have.
+We can calculate proximity matrix.
+By defining distance.
+Based on Manitian distance.
+Also known as.
+L1 norm.
+So what is L1 norm?
+Measures the distance by summing.
+By putting absolute difference between the coordinates.
+So here I do not have squaring term.
+It is just subtracting X2 minus X1.
+Right.
+So I can do that.
+And that will give me something called.
+City grid distance.
+Right.
+Then we can have.
+Menisci distance.
+Right.
+Which is a generalized form of.
+Which is mother of all type of distance computation.
+Which can sort of compute.
+Euclidean distance.
+Also sometimes Manitian distance.
+And so on.
+Right.
+So this is the formula.
+Which we have already discussed in.
+In data preprocessing course.
+I am not discussing it here.
+Right.
+Right.
+So.
+If it is not numerical data.
+The data matrix is not numerical data.
+If it is categorical.
+How do you do that?
+Homework.
+We have already discussed this in.
+Data preprocessing course.
+If it is binary data.
+How do you convert data matrix into.
+Proximity matrix.
+If it is binary data.
+Again we have discussed it.
+It is written here as well.
+But we have already discussed this in.
+Data preprocessing course.
+Proximity measure.
+Right.
+So.
+In this course.
+We are going to machine learning course.
+We are going to discuss.
+These clustering algorithms.
+For example.
+We are going to discuss.
+K-means clustering algorithm.
+We are going to discuss.
+Aggromative clustering algorithm.
+Divisive clustering algorithm.
+DB scan clustering algorithm.
+And then we will look into.
+Birch.
+And cure as well.
+Right.
+This we will see.
+If we have time left.
+We will discuss them.
+Otherwise.
+These for sure.
+We are going to discuss.
+In detail.
+In this course.
+Right.
+So.
+Now.
+Last question is.
+Once.
+So you have data set.
+You ran a clustering algorithm on it.
+You have defined the distance measure as well.
+Similarity measure as well.
+Now you have got clusters.
+Right.
+How do you define the quality of clusters.
+How do you know.
+That the clusters which you have received.
+Or the cluster algorithm which we have ran.
+Is producing good quality clusters.
+Right.
+So there are various ways to do that.
+Right.
+For example.
+You have supervised learning problem.
+You ran a.
+Supervised learning algorithm.
+Called classification algorithm.
+Let's suppose.
+Dishentry.
+You got some prediction.
+Can we measure the quality of.
+Dishentry predictions.
+Yes.
+We can measure using accuracy.
+True positive.
+True negative.
+And so on.
+On the same data set.
+I can run k-means.
+I can run hierarchical.
+I can run db scan.
+It will produce some clusters.
+How I can check.
+The quality of clusters.
+Is what we are discussing now.
+So a good clustering method.
+Will always produce.
+High quality clusters.
+That means.
+It will have.
+High.
+Intracluster similarity.
+Low.
+Intracluster similarity.
+That means.
+Cohesion between clusters.
+Should be very high.
+In.
+High intracluster similarity.
+Clusters.
+And distinctness between.
+Should be there for.
+Low cluster similarity.
+The quality of cluster.
+Is also.
+Depending on.
+Similarity measure.
+Which we have already.
+Discussed.
+And.
+A.
+Clustering method.
+Should be able.
+To measure the.
+Should have the ability.
+To discover.
+Some.
+Hidden pattern.
+From the data set.
+So.
+No clustering algorithm.
+Can give you.
+Proper clusters.
+In all the cases.
+This is very similar to.
+One.
+Classification algorithm.
+Performing.
+For all the cases.
+It is not the case.
+Each.
+Classification algorithm.
+Has its own idea.
+Has its own.
+Philosophy.
+And we run.
+The classification.
+We build.
+The classification model.
+We get some output.
+Right.
+On the test data.
+And we measure.
+The quality of the.
+Model.
+Using performance matrices.
+Similarly.
+No clustering algorithm.
+Can give you.
+Perfect result.
+All the time.
+Right.
+It depends on.
+The key factors.
+For example.
+Right.
+This also.
+Points out.
+To.
+How do you.
+Choose.
+A particular.
+Crusting algorithm.
+So.
+Given a data set.
+Which.
+Crusting algorithm.
+Should be.
+Chosen.
+It can depend on.
+What are the.
+Shape of the cluster.
+Are you looking for.
+Spherical.
+Symmetrical cluster.
+Arbitrary.
+Shape clusters.
+So.
+If the.
+Natural clusters.
+In the data set.
+Are of.
+Arbitrary nature.
+There is no point.
+Of running.
+Spherical.
+Crusting algorithm.
+Because.
+It will give you.
+Poor results.
+On the other hand.
+If you have.
+Spherical clusters.
+To handle.
+Identify.
+Spherical clusters.
+Right.
+Identification.
+Of clustering algorithm.
+Can also.
+Be depending.
+On the scalability.
+Right.
+If the data set.
+Is.
+Too.
+Huge.
+Right.
+Some clustering algorithm.
+Will perform.
+Very.
+Very.
+Poorly.
+So.
+There is.
+Something called.
+In-memory.
+Clustering algorithm.
+That means.
+In-memory.
+In-memory.
+Clustering algorithm.
+Assumes.
+That.
+All the data points.
+where some data points can be loaded into the main memory, rest of the data points are sitting in my disk and I can still run the clustering algorithm.
+For example, k-means algorithm is an in-memory clustering algorithm. It assumes that all the data points are there in the main memory when we run k-means clustering algorithm.
+On the other hand, burch assumes that some points are there in the main memory, rest of the points are sitting in the disk and I can still run the clustering algorithm.
+Think about it, k-means if you give you huge number of data points, it will start performing poorly.
+On the other hand, burch is designed to handle huge data sets.
+So scalability is one issue.
+Presence of noise, right? If the original data has noisy points or has outliers, if the data set has outliers, some clustering algorithms are very vulnerable to outliers.
+For example, k-means is very vulnerable to outliers. On the other hand, db-scan clustering algorithm is very comfortable with outliers.
+And other criteria of choosing clustering algorithm is how many inputs I am giving.
+For example, in k-means clustering algorithm, I have to define what is k.
+User have to pass the value of k. On the other hand, in db-scan we do not have to pass the value of k.
+What is k? We will talk about that later in the next video.
+So when we are designing any clustering algorithm, so this is more about how do we choose one clustering algorithm.
+But when we design any clustering algorithm, the clustering algorithm, if you write your own clustering algorithm,
+the clustering algorithm should be scalable.
+That means it should be able to handle 1000 point, it should be able to handle 1 million point.
+When we write our own clustering algorithm, it should be able to handle different types of attribute.
+Nominal, ordinal, ratio, interval, right?
+So my clustering algorithm should be able to sort of handle all types of attribute.
+It should be able to handle arbitrary shaped clusters, right?
+So if you are writing a clustering algorithm, a novel clustering algorithm, it should be able to identify arbitrary shaped natural clusters.
+It should take minimum input from the user, right?
+So many clustering algorithm need some input from the user.
+For example, k means use need k, right?
+Hierarchical clustering need, right?
+The threshold value, right?
+So an ideal clustering algorithm should take minimum input from the user, right?
+And the clustering algorithm should be able to handle noise as well as outliers.
+It should be able to, a good clustering algorithm should be able to handle insensitivity in terms of input order.
+For example, right?
+Let's suppose I have three points, right?
+I am processing them using k means clustering algorithm, right?
+So if the order in which k means clustering algorithm is processing 1 to 3 only, right?
+So this is the order I am processing.
+Or if I reverse the order, my clustering algorithm still yields me same result.
+Then my clustering algorithm is insensitive to the order of input.
+So k means clustering algorithm is insensitive, right?
+If you even change the order of processing of points, it still works perfectly.
+On the other hand, birch clustering algorithm is sensitive to the order of input points.
+If you change the order, the birch clustering algorithm might give you different result.
+Same clustering algorithm, same dataset.
+If you change the order of processing of data points, it might give you different result.
+An ideal clustering algorithm should be able to handle high dimensional data.
+So if it has 15 features or 500 features, my clustering algorithm should be able to handle it properly, right?
+Clustering algorithm should be interpretable and usable.
+That means the final clusters which whatever I am getting should be interpretable.
+By looking at the clusters, I should be able to identify that, okay, right?
+Why these two points are put into one group, one cluster, why these two points are put into different groups, right?
+So clustering algorithms should be interpretable in nature, right?
+And should be able to also incorporate user specific constraints.
+For example, sometimes users give a very specific input, right?
+Or criteria, constraint in a particular dataset.
+So my clustering algorithm should be able to handle that as well.
+So when you design your own clustering algorithm, right?
+It should be scalable, it should be able to handle different types of datasets.
+It should be able to handle arbitrary shaped clusters, natural clusters.
+It should take minimum amount of knowledge requirement or domain knowledge to run the algorithm.
+It should be able to handle noise and outliers.
+It should be able to handle high dimensional data.
+It should be insensitive to input points.
+It should be able to incorporate user specific constraints.
+And the algorithm should be interpretable and usable.
+None of the clustering algorithm satisfies all the criteria today.
+But of course, we are talking about an ideal case.
+But when you design your algorithm, right?
+Own algorithm, many of these criteria, parameters or requirements should be satisfied.
+Otherwise, the quality of the clustering algorithm would be poor.
+So therefore, in this video, we looked into, right?
+The proximity measures which is the foundation of clustering, right?
+We looked into Euclidean distance, Maritain distance which are basically used in proximity measures.
+And then we looked into different requirements of designing a new clustering algorithm.
+Thank you for attending today's video.
+Take care.
+Bye-bye.
+Music.

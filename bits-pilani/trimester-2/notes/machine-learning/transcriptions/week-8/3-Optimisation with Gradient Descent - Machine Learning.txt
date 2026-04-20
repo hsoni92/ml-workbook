@@ -1,0 +1,44 @@
+Hello to all of you. My name is Dr. Himadra Athar and we are in the course Machine Learning.
+We are in module 8, Regression and today's topic is optimization with gradient descent.
+So the learning objectives of this video are, we will look into the basic intuition behind
+gradient descent algorithm. We will look into a term called alpha, the learning rate which
+decides the step size in gradient descent. So let's start right away. So let's summarize what we have
+discussed till now. What we have is our goal is to build a linear regression model. Linear regression
+model means I have two terms which I need to optimize which is theta0 and theta1 and I optimize
+them based on a cost function which is j theta0 theta1. I can visualize this cost function as a convex
+bowl like surface right and find a proper optimal value of theta0 and theta1.
+So you can easily visualize this as a you are actually standing somewhere on the hill. You want to reach at the bottom of the hill right in which direction you should take the step right. So let's suppose I am standing at this location. I can move in this direction. I can move in this direction. So what I can do is I can find the slope. The slope in the direction in which the slope is highest. I should move in the that direction.
+Right. And I will take step. I will do this step. I will do this step iteratively to reach at the bottom of the bowl.
+Right. So imagine you are standing on the bowl. Right. So imagine you are standing on a side of the hill. Right. And the cost function right is there. Right. You want to descent in the hill as quickly as possible. Right. So the strategy would be a four point
+right so imagine you are standing on a side of the hill right and the cost function right is there
+right you want to descent in the hill as quickly as possible right so the strategy would be a four
+point strategy which i just explained right you can start from any random point right i can stand
+anywhere on the hill right somewhere i'm hitting here and sitting here and i want to reach here
+look around and find the direction where you have the steepest downhill slope so i can find it here
+if i'm standing here it would be here if i'm standing here it would be here if i'm standing
+here this direction would be giving me the steepest downhill slope i take a small step and i repeat
+this process right till i reach the bottom of the valley i will reach the bottom of the curve or
+bottom of the valley this is called minima so gradient descent right the algorithm gradient
+descent is very simple you start from a random location right you take you find the slope around
+you take move in the direction which gives you the steepest slope right take a small step and iterate
+till you reach at the bottom of the curve or bottom of the valley so gradient descent is a simple iterative
+process right that takes step in the steepest downhill direction so that we can reach the bottom of the valley
+right so the direction of the steepest descent right can be determined by the gradient of the function
+right the gradient of the vector essentially can be calculated based on the partial derivative of the
+function right so essentially if the direction of the steepest descent is simply is the negative of the gradient
+right so the direction of the steepest descent is the moving towards simply towards the negative of the gradient
+right so this is the way we are going to move downhill in the valley now as you can as i have already
+mentioned right so what we have to do is we have to calculate the partial derivative right so cost function
+the partial derivative in terms of with respect to theta zero and theta one i have to do that computation
+and right so basically when i do partial derivative with theta zero we are saying that we are changing
+cost function with respect to a small tweak in theta zero or if i am doing in with theta one i am changing
+cost function modifying cost function a bit right with tweaking theta one right so with this right i can find the slope
+right and with respect to theta zero and theta one and can move in the correct direction right so here if you can see right if you look at the gradient descent algorithm right there is a term called alpha right so this term is fine right which we have discussed which is the partial derivative but there is alpha so what is alpha alpha is the step size if alpha so if i am standing here if i take
+longer step longer longer longer longer longer longer longer longer longer longer longer longer longer step i might do ping pong like this which you can see on the right hand side diagram so if the step size is very high right you will ping pong and maybe you might not be ever able to reach the bottom of the valley so alpha value is very important if alpha value is too small then you might take large amount of time long amount of time to reach the bottom of the valley right so we have to take a proper value of alpha the step size so that we can reach the bottom of the valley with sort of a
+limited number of limited number of limited number of limited number of limited number of steps so alpha is also called as learning rate so if i am standing here i will be moving in this direction if i am standing here i will be moving in this direction how do we determine that by taking partial derivative wherever i am standing right so the slope of the derivative on the left hand side diagram case 1 is negative therefore i am moving towards the right the slope of this guy this point right
+is towards the positive side is towards the positive side that is why i am moving towards the left hand side right so based on the slope direction right i go in the opposite direction i descent in the opposite direction now so we have two terms here the problem is we have two terms here theta 0 and theta 1 how can we update them properly so that we descent properly at the bottom of the valley how can we do that the correct way of doing it is you calculate the partial derivative of theta 0
+you also do calculate the partial derivative of theta 1 and then update theta 0 and theta 1 simultaneously together the incorrect way would be you update one and then take a step and then you update the second one that is not the correct way right so we have to update the partial derivative of theta 1 and theta 2 theta 0 and theta 1 simultaneously so that we can reach the bottom of the pyramid or bottom of the valley right so this is my cost function cost function cost function
+is essentially mean square error is essentially mean square error this is the mean square error this is the mean term this is the mean term this is the summation of square error right so summation and this is the error this is my y dash this is my y dash this is my y this we have seen earlier as well if i take the partial derivative of this right this is how it would look like now right if i take partial derivative of the cost function right with respect to theta 0 and theta 1 both this is how it would look like
+so we repeat until we converge right so essentially wherever we are standing right if this is the 1 this is theta 0 i want to reach the valley here right so in summary the basic idea of gradient descent is it is an iterative optimization algorithm which tries to minimize the cost function which right we repetitively take steps in the opposite direction of the gradient right gradient is calculated by doing a partial derivative learning rate is
+hypermanometer which talks about what is the step size thank you for attending take care bye bye
+you

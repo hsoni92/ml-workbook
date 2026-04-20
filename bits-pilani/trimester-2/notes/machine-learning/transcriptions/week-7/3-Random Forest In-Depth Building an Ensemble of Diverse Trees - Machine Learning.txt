@@ -1,0 +1,64 @@
+Hello to all of you. My name is Dr. Hemant Rathaur and we are in the course Machine Learning.
+We are discussing module 7 and this video is on Random Forest.
+The learning objective of this video is we will look into the basic idea of Random Forest,
+then we will look into the algorithm of Random Forest and then we will look into other details
+of Random Forest. So let's start right away. So in the last video we talked about bagged
+Dishian tree. So we said that Dishian tree are good, they are very fast but they are poor in terms of robustness.
+That means small change in an input, right, we can force misclassification in the tree and if the tree
+height can be, is not bounded then it tends to overfit the data as well. So Dishian trees are fast, are highly explainable but how can we improve Dishian trees?
+So then we said that the overfitting issues in bagged Dishian tree and overfitting issues can be implemented, can be fixed using bagged Dishian tree and bagged Dishian trees are highly generalizable as well.
+But in terms of robustness there is some scope of improvement in bagged Dishian tree as well. Now why bagged Dishian tree has poor robustness? Because Dishian tree construction
+So the construction process follows greedy strategy where we are calculating information gain for each of the features and all the features are included every time in every tree.
+So that is one thing we are going to fix in the Random Forest. So in the Random Forest classifier, the Random Forest classifier was proposed by Leo in 2001. Right? And it is one of the most popular machine learning classifier. Right? It is very fast. It is highly robust.
+And it is highly explainable as well in some sense. Right? So let me explain the architecture and you will understand the Random Forest very very quickly. So I had original data. It had D features and N samples. Right? So I am talking about Random Forest. How do you create Random Forest model? Right? So N data points, D dimensions and this is my original data. Right? First step is to create, so it is a bagging algorithm.
+So first step is to create, so first step is to create bags. Now when I am creating the bags. Now when I am creating the bags, there is a small change vis-a-vis bagged Dishian tree. So in bagged Dishian tree, we were creating bags in such a fashion that all the data samples are not exposed to the Dishian tree model. Right? All the sample training data is not exposed to each Dishian tree. Right? There is some change, sort of subset from the original data should be there in the bags.
+right so when we are creating bags so this is bag one this is bag two this is bag three this is bag
+four when we were creating these bags we were saying that i will not expose the complete n
+samples to my decision tree i will expose a subset of it so to create the subset we were doing random
+sampling with replacement to create a bag of size n1 which is a bit smaller than n and that worked
+some cases you will see that bag size is same but still in this case also we are not posing the
+complete the original data because the bag creation is still done using random sampling with replacement
+right so the complete data set never be there in the bag one will never be there in the bag two and
+never be there in the bag three as well we do an additional step in random forest right so we were
+that we will not expose all the tuples or all the attributes into any decision tree so we do random
+sampling at tuple at a dimension level as well here so here instead of all the attributes i will take
+only d1 attributes which is a subset of d here also i will take only d1 attributes again which is a subset
+of d now please remember and when i was saying n1 n2 n3 n4 right are all same the bag size are all same
+back size are not differing right the bag are different different from each other but back sizes are same
+similarly d1 d2 d3 d4 are subset of the original number of dimensions but the number of dimensions in
+each bag remains the same so d1 will equal to d2 will equal to d3 in terms of number but number of
+attributes will remain same but the attribute subset would might change right so this one might have a b c
+this one would have might have a b d this one would have a b c this one would have b c d and so on
+so the number of dimensions will remain same but the subset might be different right now think about it
+this solves my robustness issue right i am not exposing the complete number of tuples i am not even exposing
+the number of all the attributes if i am not exposing all the attributes even with a greedy strategy
+if d cannot be used in this tree right even with the highest information gain that tree will be forced
+to be used some other so think about it right in this case right when i am building the addition tree here
+i will calculate the information gain of a b c and d right since d is not there in the subset in bag one
+even with the highest information gain if d has right will not be selected i have to build this
+addition tree with only a b c in this case as well right third one as well even if d has the highest
+information gain i have to construct the addition tree with only three attributes so a subset of
+attributes will be selected those would be used to create the trees right so once i have created these
+bags which are subset in terms of both tuples and attributes right in the bootstrapping process these
+bags will be created and in random forest right addition tree classifier would be used so addition tree algorithm
+will be used and on each bag i will create one addition tree right now these addition tree will be different
+from each other in the sense that even with the highest information gain right i have to choose from
+a subset of feature so these addition trees will be different from each other and then finally i am going
+to aggregate results using majority voting so aggregation step remains as it is as i suggested earlier as well
+random forest is highly paralyzable this step can be paralyzed this step can be paralyzed so that is why random forest is extremely fast when we can paralyze it
+so random forest right will have bagging step right when we do bagging it is bagging in terms of both tuples in terms of both attributes both
+right so the key innovation in random forest is random feature selection random feature selection
+so how do i select a subset of feature random sampling with replacement so you do random sampling at replacement this level
+random sampling with replacement at this level both the tuple and attribute level you are going to do random sampling with replacement so in the standard decision tree right the trees are almost i am using all the features all the
+all the time and the trees are always looking very similar so in bag addition tree right i am using all the features and that is why the trees are looking very similar to each other i can change this by using random feature selection and this is what we did here in the random forest and then the aggregation remains the same for example by default value let me talk about by default value here by default value in random forest the number of trees are 100 so if you
+go and look into sklearn the number of bags are 100 the number of decision trees are 100 the height of tree is unrestricted and we use random sampling with replacement to create this bag at tuple level at attribute level this is how it is implemented in sklearn as well
+so as i was saying how do you select the features we are doing random input selection in terms of both attributes in terms of both tuples all right so we randomly select
+we use cart algorithm only and we randomly select the attributes right so the full picture is first we do bootstrapping is random selection at tuple level random sample with replacement at tuple level is attribute level and then we build the tree and then we do the final prediction in here right as i was saying back decision tree the trees are highly correlated here the trees are less correlated because
+i cannot use the dominant feature right so i cannot use the dominant feature right if the subset doesn't include the dominant feature i have to create i have to build the addition tree with a subset of the features and that leads to decorrelation of the tree so random forest is more superior in terms of robustness and can handle outliers compared to back decision tree compared to basic decision tree right it can handle
+irrelevant features as well because of the irrelevant features as well because of the random selection of features right so think about it i have decision tree i have bag decision tree i have random forest in bag decision tree right i will build standard decision trees here i will build randomized decision trees right now what is the difference here when i am selecting the data set right i am doing bootstrapping and both bag decision tree and random forest
+in terms of feature diversity in terms of feature diversity right back decision tree there all the features are always considered in random forest a subset of features are considered at in a particular tree the tree correlation in bag decision tree all the trees are highly very similar because the upper structure of the decision tree are almost same because you are selecting features based on the information gain right so even few of the apples if they are drop right the information highest information guy will remain the same and
+the structure remains the same i can force it to be different in random forest right by doing random selection at attribute level as well so random forest can handle can reduce variation reduction excellently as compared to the bag decision tree so as compared to bag decision tree right so random forest are highly generalizable can handle high dimensional data is more robust to outlier and noise
+right and can be easily parallelizable what are the disadvantages right random forest has 100 decision trees think about it 100 decision trees will take lot of memory even if you paralyze lot of things here even if you paralyze lot of computation here but these trees needs to be stored somewhere for doing the final prediction so that is why right it needs lot of memory sometimes it is slow in prediction because if you cannot paralyze the architecture the all the tree construction
+needs to be done in a sequential fashion right so then it becomes slow prediction right so then it becomes slow prediction right so then it becomes slow prediction or random forest becomes bit slower than decision tree because you are creating 100 decision trees sometimes it becomes black box why if you have 100 decision tree if you have single decision tree i can easily understand how i am doing the prediction but if you have 100 decision trees diagnosis become really hard because you have to look into each tree how they are doing the prediction and then traverse it back in some cases it becomes it moves towards the black box why
+because you have to instead of tracking 100 decision tree now you have to track 100 decision tree so it is not black and white black box is not black and white right decision trees are highly interpretable back decision tree are random forests are even less interpretable this is what we are trying to talk about so in this video we talked about random forest classifier we looked into what are the advantages of random forest classifier and what are the limitations of random forest classifier and what are the limitations of random forest classifier.
+thank you for attending take care bye bye bye
