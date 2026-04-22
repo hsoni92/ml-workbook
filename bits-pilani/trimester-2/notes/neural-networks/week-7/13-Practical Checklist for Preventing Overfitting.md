@@ -14,7 +14,7 @@ By the end of this video you will:
 ## Why a Checklist?
 
 - Overfitting usually has **multiple** contributing factors: **data** limits, **model** capacity, **training** configuration—or **combinations**.
-- **Ad hoc** fixes (e.g. randomly cranking dropout or \(\lambda\)) often **fail** because the **root cause** was wrong.
+- **Ad hoc** fixes (e.g. randomly cranking dropout or $\lambda$) often **fail** because the **root cause** was wrong.
 - A checklist enforces: **observe** → **classify the failure mode** → **act**.
 
 ### Visual: diagnose then fix
