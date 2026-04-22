@@ -37,9 +37,9 @@ $$
 - Pure normalization could **limit** what the layer can represent.
 - BN adds **learnable** parameters **$\gamma$** (scale) and **$\beta$** (shift):
 
-\[
+$$
 y = \gamma \hat{x} + \beta
-\]
+$$
 
 - The network can **recover** needed scaling and bias, so expressive power is **not** arbitrarily restricted.
 
