@@ -24,9 +24,9 @@ By the end of this video you will:
 - For each **mini-batch**, compute **mean** and **variance** of activations (over the batch, and typically per feature/channel).
 - **Normalize** to approximately **zero mean** and **unit variance**, with a small **$\epsilon$** for **numerical stability** when dividing by standard deviation:
 
-\[
+$$
 \hat{x} = \frac{x - \mu_{\text{batch}}}{\sqrt{\sigma_{\text{batch}}^2 + \epsilon}}
-\]
+$$
 
 - This keeps activations in a **stable** range across iterations and can help **gradient flow** behave more predictably.
 
