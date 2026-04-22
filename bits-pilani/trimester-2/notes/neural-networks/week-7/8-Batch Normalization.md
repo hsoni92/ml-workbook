@@ -22,7 +22,7 @@ By the end of this video you will:
 ## Core Idea
 
 - For each **mini-batch**, compute **mean** and **variance** of activations (over the batch, and typically per feature/channel).
-- **Normalize** to approximately **zero mean** and **unit variance**, with a small **\(\epsilon\)** for **numerical stability** when dividing by standard deviation:
+- **Normalize** to approximately **zero mean** and **unit variance**, with a small **$\epsilon$** for **numerical stability** when dividing by standard deviation:
 
 \[
 \hat{x} = \frac{x - \mu_{\text{batch}}}{\sqrt{\sigma_{\text{batch}}^2 + \epsilon}}
@@ -35,7 +35,7 @@ By the end of this video you will:
 ## Learnable Scale and Shift
 
 - Pure normalization could **limit** what the layer can represent.
-- BN adds **learnable** parameters **\(\gamma\)** (scale) and **\(\beta\)** (shift):
+- BN adds **learnable** parameters **$\gamma$** (scale) and **$\beta$** (shift):
 
 \[
 y = \gamma \hat{x} + \beta
@@ -57,7 +57,7 @@ flowchart LR
 
 ## Implicit Regularization
 
-- Normalization uses statistics from **mini-batches**; different batches give **slightly different** \(\mu\), \(\sigma\).
+- Normalization uses statistics from **mini-batches**; different batches give **slightly different** $\mu$, $\sigma$.
 - That **randomness** injects **noise** into the forward pass—**similar in spirit** to dropout’s stochasticity, but arising from **batch estimation**.
 - In practice this noise can **help generalization** (implicit regularizer), though BN’s main motivation is **optimization stability**.
 
@@ -74,7 +74,7 @@ flowchart LR
 
 ## Summary
 
-- **BN** stabilizes layer input statistics by **batch-wise** normalization + **\(\gamma,\beta\)** recovery.
+- **BN** stabilizes layer input statistics by **batch-wise** normalization + **$\gamma,\beta$** recovery.
 - **Batch statistic noise** can improve **generalization** as **implicit** regularization.
 - **Next:** **Early stopping**—a simple, effective way to **limit** overfitting by **when** we stop training.
 

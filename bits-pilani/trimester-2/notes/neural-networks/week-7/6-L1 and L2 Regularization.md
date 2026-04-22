@@ -21,22 +21,22 @@ By the end of this video you will:
 
 ## Regularized Loss
 
-- Instead of minimizing **only** the data loss \(L_{\text{data}}(\theta)\), we minimize a **regularized** objective:
+- Instead of minimizing **only** the data loss $L_{\text{data}}(\theta)$, we minimize a **regularized** objective:
 
 \[
 J(\theta) = L_{\text{data}}(\theta) + \lambda \, \Omega(\theta)
 \]
 
-- **\(\Omega(\theta)\)** = penalty on model complexity (here, a function of **weights**).
-- **\(\lambda \geq 0\)** controls the **trade-off**:
-  - **Larger \(\lambda\)** → stronger push toward **simplicity** (smaller penalty weights / sparser solutions, depending on \(\Omega\)).
-  - **Smaller \(\lambda\)** → more emphasis on **fitting** the data.
+- **$\Omega(\theta)$** = penalty on model complexity (here, a function of **weights**).
+- **$\lambda \geq 0$** controls the **trade-off**:
+  - **Larger $\lambda$** → stronger push toward **simplicity** (smaller penalty weights / sparser solutions, depending on $\Omega$).
+  - **Smaller $\lambda$** → more emphasis on **fitting** the data.
 
 ---
 
 ## L2 Regularization (Weight Decay)
 
-- Penalty: **sum of squared weights** (often \(\frac{1}{2}\sum_i w_i^2\) is used for cleaner derivatives—equivalent up to rescaling \(\lambda\)).
+- Penalty: **sum of squared weights** (often $\frac{1}{2}\sum_i w_i^2$ is used for cleaner derivatives—equivalent up to rescaling $\lambda$).
 - **Large** weights are penalized **more** than small ones (quadratic growth).
 - Encourages **many small** weights spread across features rather than a few **very large** ones.
 - **Common in deep learning:** tends to yield **smoother**, **more stable** models and often **better generalization**.
@@ -63,7 +63,7 @@ The regularized solution often lies where a **loss contour** first touches the *
 
 ## L1 Regularization
 
-- Penalty: **sum of absolute values** of weights, \(\sum_i |w_i|\).
+- Penalty: **sum of absolute values** of weights, $\sum_i |w_i|$.
 - Encourages **sparsity**: many weights can be driven **exactly to zero** → **feature selection** / effective removal of connections.
 
 **Geometry:**
@@ -90,7 +90,7 @@ The regularized solution often lies where a **loss contour** first touches the *
 
 ## Summary
 
-- **Regularization** changes the **objective** to penalize complexity; **\(\lambda\)** sets data fit vs simplicity.
+- **Regularization** changes the **objective** to penalize complexity; **$\lambda$** sets data fit vs simplicity.
 - **L2** penalizes large weights smoothly, encourages **distributed** small weights, and is widely used in deep networks.
 - **L1** encourages **sparsity** and **feature selection** via diamond-shaped constraints.
 - Both aim to **reduce overfitting** and improve **generalization**.
@@ -100,6 +100,6 @@ The regularized solution often lies where a **loss contour** first touches the *
 
 ## Exam-style cues
 
-- **Write** \(J = L_{\text{data}} + \lambda \Omega\) and explain \(\lambda\).
+- **Write** $J = L_{\text{data}} + \lambda \Omega$ and explain $\lambda$.
 - **Compare** L1 vs L2 geometrically and in terms of sparsity.
 - **Explain** why minimizing training loss alone does not prevent overfitting.
