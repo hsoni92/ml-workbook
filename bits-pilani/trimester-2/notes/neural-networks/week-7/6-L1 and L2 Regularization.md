@@ -23,9 +23,9 @@ By the end of this video you will:
 
 - Instead of minimizing **only** the data loss $L_{\text{data}}(\theta)$, we minimize a **regularized** objective:
 
-\[
+$$
 J(\theta) = L_{\text{data}}(\theta) + \lambda \, \Omega(\theta)
-\]
+$$
 
 - **$\Omega(\theta)$** = penalty on model complexity (here, a function of **weights**).
 - **$\lambda \geq 0$** controls the **trade-off**:
