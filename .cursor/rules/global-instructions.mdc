@@ -4,6 +4,6 @@ alwaysApply: true
 
 - Never add emojis to anything
 
-# Use one consistent math style across notes:
+# Always run a pass to check if formulas are formatted properly:
 - Inline math: `$...$`
 - Display math only where necessary, and only if your renderer supports it consistently
