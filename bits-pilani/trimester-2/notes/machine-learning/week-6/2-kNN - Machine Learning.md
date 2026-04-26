@@ -2,10 +2,10 @@
 
 ## 1. Three-step prediction pipeline
 
-For each new instance **x**:
+For each new instance $\mathbf{x}$:
 
-1. **Store** (training): keep labeled examples \(\{(\mathbf{x}_i, y_i)\}\).
-2. **Score neighbors:** compute **distance** \(d(\mathbf{x}, \mathbf{x}_i)\) or **similarity** to every training point (unless an index prunes the search).
+1. **Store** (training): keep labeled examples $\{(\mathbf{x}_i, y_i)\}$.
+2. **Score neighbors:** compute **distance** $d(\mathbf{x}, \mathbf{x}_i)$ or **similarity** to every training point (unless an index prunes the search).
 3. **Decide:** among the **k** smallest distances, aggregate labels:
    - **Classification:** majority vote (optionally **weighted** by inverse distance).
    - **Regression:** average or weighted average of neighbor targets.
@@ -35,7 +35,7 @@ flowchart TB
 
 ## 3. Weighted neighbors
 
-Assign weight \(w_i\) to neighbor \(i\), often \(w_i \propto 1 / d(\mathbf{x}, \mathbf{x}_i)\) (with safeguards for \(d=0\)). **Uniform weights** treat all k neighbors equally; **distance weights** emphasize the nearest few.
+Assign weight $w_i$ to neighbor $i$, often $w_i \propto 1 / d(\mathbf{x}, \mathbf{x}_i)$ (with safeguards for $d=0$). **Uniform weights** treat all k neighbors equally; **distance weights** emphasize the nearest few.
 
 | Setting | Effect |
 |---------|--------|
@@ -48,11 +48,11 @@ Assign weight \(w_i\) to neighbor \(i\), often \(w_i \propto 1 / d(\mathbf{x}, \
 
 For **one** query, naive implementation:
 
-- Distance to each of \(N\) points in \(d\) dimensions: **O(Nd)**.
+- Distance to each of $N$ points in $d$ dimensions: **O(Nd)**.
 - Selecting **k** smallest: **O(N)** with partial selection or **O(N log N)** if full sort.
-- Often summarized as **O(Nd)** dominated term for large \(N\).
+- Often summarized as **O(Nd)** dominated term for large $N$.
 
-**Production note:** indexing (k-d trees, ball trees, hashing) or **approximate** NN search reduces amortized query cost for large \(N\).
+**Production note:** indexing (k-d trees, ball trees, hashing) or **approximate** NN search reduces amortized query cost for large $N$.
 
 ---
 
