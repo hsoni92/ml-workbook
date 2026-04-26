@@ -13,14 +13,14 @@
 
 ## 2. Feature scaling (mandatory for mixed-scale numeric data)
 
-Distance sums contributions from **every dimension**. If one feature ranges \(0\)–\(1\) and another \(10^4\)–\(10^5\), the large-scale dimension **dominates** the distance; the small-scale feature is effectively ignored.
+Distance sums contributions from **every dimension**. If one feature ranges $0$–$1$ and another $10^4$–$10^5$, the large-scale dimension **dominates** the distance; the small-scale feature is effectively ignored.
 
 **Examples (cloud / systems).** Latency (ms) vs request count vs binary flags in **API abuse** scoring; without scaling, “count” swamps “latency.”
 
 **Remedies:**
 
-- **Min–max:** \(x' = (x - x_{\min})/(x_{\max} - x_{\min})\) to a fixed range (e.g. \([0,1]\)).
-- **Z-score (standardization):** \(x' = (x - \mu)/\sigma\) per feature.
+- **Min–max:** $x' = (x - x_{\min})/(x_{\max} - x_{\min})$ to a fixed range (e.g. $\left[0,\, 1\right]$).
+- **Z-score (standardization):** $x' = (x - \mu)/\sigma$ per feature.
 
 Fit scaling statistics on **training** data; apply the same transform at inference.
 
