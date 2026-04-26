@@ -33,6 +33,8 @@ Gradient g (too long)  →  scale to max norm c  →  g_clip = (c / ||g||) g
 Same direction, smaller length — update stays stable.
 ```
 
+In symbols, when $\lVert g \rVert > c$: $g_{\text{clip}} = \frac{c}{\lVert g \rVert}\,g$ (same direction, capped length).
+
 ---
 
 ## Gradient Clipping Is a Safeguard
@@ -43,7 +45,7 @@ Same direction, smaller length — update stays stable.
 
 ## Two Types of Clipping
 
-1. **Clipping by value:** Limit **each** gradient component to a fixed range (e.g. $[-c, c]$). **Simple**, but can **distort** the **direction** of the gradient.
+1. **Clipping by value:** Limit **each** gradient component to a fixed range (e.g. $\left[-c,\, c\right]$). **Simple**, but can **distort** the **direction** of the gradient.
 2. **Clipping by norm (most common):** If the **norm** of the whole gradient vector exceeds a threshold, **scale** the entire vector down. This **preserves direction** while **limiting magnitude**.
 
 ---

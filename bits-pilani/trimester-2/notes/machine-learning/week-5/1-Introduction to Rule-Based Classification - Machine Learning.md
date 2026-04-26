@@ -77,7 +77,7 @@ A full rule set can contain many rules. To compare or prune rules, we need **loc
 
 **Definition.** Let **n_cover** be the number of tuples in $D$ for which the **antecedent** of $r$ is true (the rule is triggered). Then: $\mathrm{Coverage}(r) = \frac{n_{\mathrm{cover}}}{|D|}$
 
-Coverage is a fraction in $[0, 1]$; often reported as a percentage.
+Coverage is a fraction in $\left[0,\, 1\right]$; often reported as a percentage.
 
 **Why it matters.** High coverage means the rule is **broad**—it speaks to a large slice of the population. That can be good (wide applicability) or bad (if accuracy is poor, you are often wrong at scale).
 
