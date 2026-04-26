@@ -28,10 +28,12 @@ At time step `t`, the model receives:
 
 It then computes:
 
-```text
-h_t = phi(W_x x_t + W_h h_{t-1} + b)
-y_t = W_y h_t
-```
+$$
+\begin{aligned}
+h_t &= \phi(W_x x_t + W_h h_{t-1} + b) \\
+y_t &= W_y h_t
+\end{aligned}
+$$
 
 where:
 

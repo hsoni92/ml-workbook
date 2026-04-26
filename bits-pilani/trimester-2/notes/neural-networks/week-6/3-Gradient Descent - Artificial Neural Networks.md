@@ -31,7 +31,9 @@ By the end of this video you will:
 ---
 
 ## Update Rule
+
 $\theta_{\text{new}} = \theta_{\text{old}} - \eta \cdot \nabla L$
+
 - $\theta$: parameter (weight) we update.
 - $\eta$: **learning rate**.
 - $\nabla L$: **gradient** of the loss w.r.t. $\theta$ (slope at the current point).
@@ -69,5 +71,5 @@ $\theta_{\text{new}} = \theta_{\text{old}} - \eta \cdot \nabla L$
 
 - **Gradient descent** minimizes the loss by stepping **downhill**.
 - The **gradient** points toward steepest **increase**, so we move **opposite** to it.
-- **Update rule:** $\theta \leftarrow \theta - \eta \nabla L$.
+- **Update rule:** $\theta \leftarrow \theta - \eta \cdot \nabla L$.
 - The **learning rate** controls how **fast** or how **safely** we descend. This is the foundation for all optimizers that follow.

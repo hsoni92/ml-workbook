@@ -40,7 +40,7 @@ Xavier He rules set variance of W from fan-in fan-out
 
 - **Bias** does **not** multiply inputs; it does **not** create symmetry across neurons.
 - Setting all biases to **zero** does **not** block learning or make neurons identical.
-- **$\mathbf{b} = \mathbf{0}$** is standard. In ReLU networks, a **small positive** bias is sometimes used to reduce dead neurons, but zero bias is fine in most architectures.
+- Bias vector $\mathbf{b} = \mathbf{0}$ is **standard**. In ReLU networks, a **small positive** bias is sometimes used to reduce dead neurons, but zero bias is fine in most architectures.
 
 ---
 
@@ -55,8 +55,8 @@ Xavier He rules set variance of W from fan-in fan-out
 ## Naive Random Initialization
 
 - Suppose $W \sim \mathcal{N}(0, \sigma^2)$.
-- **$\sigma$ too small:** Weighted sums shrink → activations get smaller layer by layer → **gradients vanish**.
-- **$\sigma$ too large:** Weighted sums explode → activations become huge → **gradients explode**.
+- If $\sigma$ is **too small:** weighted sums shrink → activations get smaller layer by layer → **gradients vanish**.
+- If $\sigma$ is **too large:** weighted sums explode → activations become huge → **gradients explode**.
 - Naive random initialization often **fails**, especially for **deeper** networks.
 - Each layer computes $z = \sum_i w_i x_i$; variance of $z$ depends on number of inputs, variance of inputs, and variance of weights. Through many layers this variance is **multiplied**; without care it grows or shrinks **exponentially** → vanishing or exploding gradients.
 
@@ -84,7 +84,7 @@ Xavier He rules set variance of W from fan-in fan-out
 ## Bias Initialization
 
 - **Bias** does not multiply signals → it does **not** drive variance propagation or vanishing/exploding gradients.
-- **$\mathbf{b} = \mathbf{0}$** is standard.
+- $\mathbf{b} = \mathbf{0}$ is **standard**.
 - Optionally, a **small positive** bias in ReLU networks can help avoid dead neurons.
 
 ---

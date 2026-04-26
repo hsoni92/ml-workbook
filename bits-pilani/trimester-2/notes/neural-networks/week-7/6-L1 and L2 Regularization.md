@@ -23,8 +23,8 @@ By the end of this video you will:
 
 - Instead of minimizing **only** the data loss $L_{\text{data}}(\theta)$, we minimize a **regularized** objective: $J(\theta) = L_{\text{data}}(\theta) + \lambda \, \Omega(\theta)$
 
-- **$\Omega(\theta)$** = penalty on model complexity (here, a function of **weights**).
-- **$\lambda \geq 0$** controls the **trade-off**:
+- $\Omega(\theta)$: penalty on model complexity (here, a function of **weights**).
+- Scalar $\lambda \geq 0$ controls the **trade-off**:
   - **Larger $\lambda$** → stronger push toward **simplicity** (smaller penalty weights / sparser solutions, depending on $\Omega$).
   - **Smaller $\lambda$** → more emphasis on **fitting** the data.
 
@@ -86,7 +86,7 @@ The regularized solution often lies where a **loss contour** first touches the *
 
 ## Summary
 
-- **Regularization** changes the **objective** to penalize complexity; **$\lambda$** sets data fit vs simplicity.
+- **Regularization** changes the **objective** to penalize complexity; $\lambda$ sets data fit vs simplicity.
 - **L2** penalizes large weights smoothly, encourages **distributed** small weights, and is widely used in deep networks.
 - **L1** encourages **sparsity** and **feature selection** via diamond-shaped constraints.
 - Both aim to **reduce overfitting** and improve **generalization**.
