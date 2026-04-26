@@ -75,7 +75,7 @@ A full rule set can contain many rules. To compare or prune rules, we need **loc
 
 **Intuition.** Coverage answers: “**How often does this rule even apply?**” A rule with a very specific antecedent may rarely fire; a very general antecedent may fire often.
 
-**Definition.** Let **n_cover** be the number of tuples in $D$ for which the **antecedent** of $r$ is true (the rule is triggered). Then: $\text{Coverage}(r) = \frac{\text{n\_cover}}{|D|}$
+**Definition.** Let **n_cover** be the number of tuples in $D$ for which the **antecedent** of $r$ is true (the rule is triggered). Then: $\operatorname{Coverage}(r) = \frac{n_{\mathrm{cover}}}{|D|}$
 
 Coverage is a fraction in $[0, 1]$; often reported as a percentage.
 
@@ -85,7 +85,7 @@ Coverage is a fraction in $[0, 1]$; often reported as a percentage.
 
 **Intuition.** Accuracy answers: “**When this rule fires, how often is its prediction correct?**” It is **not** the same as overall model accuracy unless the rule is the only rule.
 
-**Definition.** Among tuples where the antecedent is true, compare the **consequent’s class** to the **true class** in $D$. Let **n_correct** be the count of tuples where they match. Then: $\text{Accuracy}(r) = \frac{\text{n\_correct}}{\text{n\_cover}} \quad (\text{defined only if n\_cover} > 0)$
+**Definition.** Among tuples where the antecedent is true, compare the **consequent’s class** to the **true class** in $D$. Let **n_correct** be the count of tuples where they match. Then: $\operatorname{Accuracy}(r) = \frac{n_{\mathrm{correct}}}{n_{\mathrm{cover}}} \quad (\text{defined only if } n_{\mathrm{cover}} > 0)$
 
 Equivalently: among covered tuples, fraction where **predicted class = actual class**.
 
@@ -149,7 +149,7 @@ Those topics are developed in the notes on indirect and direct rule generation.
 
 - **Confusing coverage with accuracy.** Coverage uses $|D|$ in the denominator; accuracy uses **n_cover**. Missing this is a classic exam mistake.
 - **Accuracy of a rule vs accuracy of the whole classifier.** Rule accuracy is **conditional** on the antecedent being true; global accuracy averages over the entire model and data distribution.
-- **Zero coverage.** If n_cover $= 0$, accuracy is undefined; coverage is 0. Do not divide by zero.
+- **Zero coverage.** If $n_{\mathrm{cover}} = 0$, accuracy is undefined; coverage is 0. Do not divide by zero.
 - **Consequent ignored in coverage.** Coverage depends only on whether the **LHS** holds, not whether the prediction would be right.
 - **“Simple” vs “complex” rules.** In this module, complexity refers to **how many attribute tests** are in the antecedent, not philosophical simplicity of the domain.
 
@@ -161,7 +161,7 @@ Those topics are developed in the notes on indirect and direct rule generation.
 - **Rule-based classifier:** a collection of **IF–THEN** rules mapping conditions (antecedent) to a predicted class (consequent).
 - **Antecedent (LHS):** attribute tests, often combined with **AND**; when true, the rule **triggers**.
 - **Consequent (RHS):** typically the **predicted class label**.
-- **Coverage** $=$ n_cover $/$ $|D|$: fraction of **all** tuples for which the antecedent is true.
-- **Accuracy** $=$ n_correct $/$ n_cover: fraction of **covered** tuples where consequent matches the **true** label.
+- **Coverage** $=$ $n_{\mathrm{cover}} / |D|$: fraction of **all** tuples for which the antecedent is true.
+- **Accuracy** $=$ $n_{\mathrm{correct}} / n_{\mathrm{cover}}$: fraction of **covered** tuples where consequent matches the **true** label.
 - **High coverage, low accuracy:** broad rule that is often wrong when it fires; **low coverage, high accuracy:** narrow but sharp rule.
 - Rule quality is assessed **per rule** using these two metrics before discussing full rule lists, ordering, and defaults.
