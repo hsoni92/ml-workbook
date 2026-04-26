@@ -75,7 +75,7 @@ A full rule set can contain many rules. To compare or prune rules, we need **loc
 
 **Intuition.** Coverage answers: “**How often does this rule even apply?**” A rule with a very specific antecedent may rarely fire; a very general antecedent may fire often.
 
-**Definition.** Let **n_cover** be the number of tuples in $D$ for which the **antecedent** of $r$ is true (the rule is triggered). Then: $\operatorname{Coverage}(r) = \frac{n_{\mathrm{cover}}}{|D|}$
+**Definition.** Let **n_cover** be the number of tuples in $D$ for which the **antecedent** of $r$ is true (the rule is triggered). Then: $\mathrm{Coverage}(r) = \frac{n_{\mathrm{cover}}}{|D|}$
 
 Coverage is a fraction in $[0, 1]$; often reported as a percentage.
 
@@ -85,7 +85,7 @@ Coverage is a fraction in $[0, 1]$; often reported as a percentage.
 
 **Intuition.** Accuracy answers: “**When this rule fires, how often is its prediction correct?**” It is **not** the same as overall model accuracy unless the rule is the only rule.
 
-**Definition.** Among tuples where the antecedent is true, compare the **consequent’s class** to the **true class** in $D$. Let **n_correct** be the count of tuples where they match. Then: $\operatorname{Accuracy}(r) = \frac{n_{\mathrm{correct}}}{n_{\mathrm{cover}}} \quad (\text{defined only if } n_{\mathrm{cover}} > 0)$
+**Definition.** Among tuples where the antecedent is true, compare the **consequent’s class** to the **true class** in $D$. Let **n_correct** be the count of tuples where they match. Then: $\mathrm{Accuracy}(r) = \frac{n_{\mathrm{correct}}}{n_{\mathrm{cover}}} \quad (\text{defined only if } n_{\mathrm{cover}} > 0)$
 
 Equivalently: among covered tuples, fraction where **predicted class = actual class**.
 
