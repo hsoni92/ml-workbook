@@ -29,7 +29,7 @@ By the end of this video you will:
 
 ```mermaid
 flowchart LR
-  g[Gradient g_t] --> sq[Track avg g squared]
+  g["Gradient g_t"] --> sq[Track avg g squared]
   sq --> denom[Sqrt running avg + eps]
   g --> step[Step size eta over denom]
   denom --> step
@@ -40,10 +40,15 @@ flowchart LR
 
 ## Update Rule
 
-**Running average of squared gradients:** $v_t = \beta \cdot v_{t-1} + (1 - \beta) \cdot g_t^2$
+**Running average of squared gradients:**
+
+$v_t = \beta \cdot v_{t-1} + (1 - \beta) \cdot g_t^2$
+
 This captures how large the gradients have been recently.
 
-**Parameter update:** $\theta_t = \theta_{t-1} - \frac{\eta}{\sqrt{v_t} + \epsilon} \cdot g_t$
+**Parameter update:**
+
+$\theta_t = \theta_{t-1} - \frac{\eta}{\sqrt{v_t} + \epsilon} \cdot g_t$
 - **Key:** The **denominator** scales the step. When gradients are **large**, $v_t$ is large → **smaller** updates. When gradients are **small**, $v_t$ is small → **larger** updates. So RMSProp **adapts** the learning rate automatically per parameter.
 
 ---
@@ -60,9 +65,9 @@ This captures how large the gradients have been recently.
 
 ## Practical Defaults
 
-- **$\beta \approx 0.9$** (for the running average).
-- **$\eta \approx 0.001$** (learning rate).
-- **$\epsilon \approx 10^{-8}$** (numerical stability).
+- Running-average decay: $\beta \approx 0.9$.
+- Learning rate: $\eta \approx 0.001$.
+- Numerical stability term: $\epsilon \approx 10^{-8}$.
 - These often work with **little** tuning, which made RMSProp attractive in practice.
 
 ---

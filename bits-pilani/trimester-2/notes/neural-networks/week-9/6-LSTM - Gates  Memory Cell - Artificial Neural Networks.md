@@ -39,14 +39,16 @@ This separation is important. It means the model can **store** information witho
 
 At time step `t`, a standard LSTM computes:
 
-```text
-f_t = sigmoid(W_f [h_{t-1}, x_t] + b_f)
-i_t = sigmoid(W_i [h_{t-1}, x_t] + b_i)
-g_t = tanh(W_g [h_{t-1}, x_t] + b_g)
-c_t = f_t * c_{t-1} + i_t * g_t
-o_t = sigmoid(W_o [h_{t-1}, x_t] + b_o)
-h_t = o_t * tanh(c_t)
-```
+$$
+\begin{aligned}
+f_t &= \sigma\big(W_f [h_{t-1},\, x_t] + b_f\big) \\
+i_t &= \sigma\big(W_i [h_{t-1},\, x_t] + b_i\big) \\
+g_t &= \tanh\big(W_g [h_{t-1},\, x_t] + b_g\big) \\
+c_t &= f_t \odot c_{t-1} + i_t \odot g_t \\
+o_t &= \sigma\big(W_o [h_{t-1},\, x_t] + b_o\big) \\
+h_t &= o_t \odot \tanh(c_t)
+\end{aligned}
+$$
 
 You do not need to memorize every symbol immediately. What matters first is the logic behind the gates.
 
@@ -68,9 +70,7 @@ Together, these gates act like learned controllers of memory flow.
 
 The key design improvement is the update:
 
-```text
-c_t = f_t * c_{t-1} + i_t * g_t
-```
+$$c_t = f_t \odot c_{t-1} + i_t \odot g_t$$
 
 This update contains an **additive path** through the cell state. That matters because gradients can propagate through this path more easily than through a long chain of repeated nonlinear transformations.
 

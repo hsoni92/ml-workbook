@@ -59,7 +59,7 @@ Training points appear in the plane with class colors. A new point is classified
 | Memory | Often smaller than full data | Must retain training set (or summaries) |
 | Query cost | Low after training | Grows with training size and dimension |
 
-**Cloud / ML angle.** kNN in production often needs **approximate nearest neighbor** search (FAISS, Annoy, vector DBs) when \(N\) is huge; raw linear scan is the textbook baseline, not always the deployment pattern.
+**Cloud / ML angle.** kNN in production often needs **approximate nearest neighbor** search (FAISS, Annoy, vector DBs) when $N$ is huge; raw linear scan is the textbook baseline, not always the deployment pattern.
 
 ---
 
@@ -79,4 +79,4 @@ Training points appear in the plane with class colors. A new point is classified
 - **kNN:** classify/regress by **k** nearest training points using a distance or similarity.
 - **Rote:** exact match only; fails when no exact row exists.
 - **Trade-off:** cheap train vs expensive query; full-data retention vs tree footprint.
-- **Design implication:** large \(N\) and high dimension push kNN toward indexing and approximate search.
+- **Design implication:** large $N$ and high dimension push kNN toward indexing and approximate search.
