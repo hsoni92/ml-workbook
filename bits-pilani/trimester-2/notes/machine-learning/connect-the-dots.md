@@ -1,98 +1,54 @@
 # Machine Learning: Connect the Dots (Weeks 1-13)
 
-This is the full ML course in one line of thought: define learning settings, build clean data representations, train supervised models that generalize, choose methods that match structure (rules, trees, neighbors, ensembles, regression), then move to unsupervised discovery (clustering, scalability, association rules) with disciplined evaluation and practical trade-off awareness.
+This note is one continuous story across the course: you frame the learning problem, shape data so algorithms can use it, build supervised predictors that generalize by matching method to structure, then turn to unsupervised discovery when labels are absent or beside the point. Along the way, the same ideas recur—data quality before model complexity, what is being optimized, and whether the output scales to real data. Tags like `[week-3]` mark where a topic is developed in depth.
 
 ---
 
-## The 13-week spine (one connected story)
+## From paradigms to honest evaluation
 
-### Week 1 - ML foundations and learning paradigms
-- Core: what ML is, supervised vs unsupervised learning, practical ML lifecycle concerns.
-- Why it matters: frames every later algorithm as a data-to-decision mapping with assumptions.
-- Enables next: Week 2 formalizes dataset structure and quality.
-- Hub: [week-1/1-Foundations of Machine Learning.md](week-1/1-Foundations of Machine Learning.md)
+Machine learning is not a catalog of tricks; it is learning a mapping from data to decisions under assumptions you must state up front [week-1]. Supervised learning uses labels to predict outcomes; unsupervised learning looks for structure without them. The practical lifecycle—problem definition, data, modeling, evaluation, deployment—means every algorithm is only as credible as the pipeline around it [week-1].
 
-### Week 2 - Data representation and preprocessing
-- Core: objects/attributes/types, dataset formats, data quality issues, preprocessing.
-- Why it matters: model quality is constrained by data quality and feature semantics.
-- Enables next: Week 3 starts supervised classification with proper train/test thinking.
-- Hub: [week-2/1-Building Blocks of Data - Objects Attributes and Types.md](week-2/1-Building Blocks of Data - Objects Attributes and Types.md)
+Before you choose a learner, you fix how the world is represented: objects, attributes, types, formats, and the semantic meaning of each field [week-2]. Noise, missing values, inconsistent scales, and bad encodings cap what any later model can do; preprocessing is not optional polish but part of the inductive bias you inject [week-2]. That data-first thread runs through everything that follows: the same representation choices that help or hurt classifiers also determine whether clusters or association patterns mean anything [week-2].
 
-### Week 3 - Supervised classification basics and pitfalls
-- Core: classification principles, performance evaluation, overfitting vs underfitting.
-- Why it matters: introduces the generalization lens before specific algorithms.
-- Enables next: Week 4 uses decision trees as the first full classifier family.
-- Hub: [week-3/1-Foundations of ML and Supervised Learning.md](week-3/1-Foundations of ML and Supervised Learning.md)
+With labels in hand, classification becomes the default supervised question: assign discrete outcomes from inputs [week-3]. The central tension is generalization—performance on new data—not memorizing the training set [week-3]. Evaluation metrics and validation discipline make that tension visible; overfitting and underfitting name the two ways a model can lie about how well it will generalize [week-3]. From here on, algorithm families are different answers to the same question: how to control bias and variance while staying interpretable or accurate enough for the task.
 
-### Week 4 - Decision trees from induction to pruning
-- Core: tree structure, split criteria, handling nominal/ordinal/continuous attributes, stopping and pruning.
-- Why it matters: gives interpretable rule-like supervised learning with clear bias-variance behavior.
-- Enables next: Week 5 converts tree logic into explicit rule-based systems.
-- Hub: [week-4/1-Introduction to Decision Trees.md](week-4/1-Introduction to Decision Trees.md)
+Decision trees grow piecewise boundaries by recursive splits on attributes, handling nominal, ordinal, and continuous features with explicit split criteria [week-4]. They read as nested if-then logic, so humans can audit them; pruning and stopping rules are direct levers on overfitting [week-4]. Rule-based classification peels that logic into standalone rules—coverage, accuracy, and conflict resolution—either indirectly from trees or directly via sequential covering and related mining ideas [week-5]. You trade the tidy tree shape for modular, sometimes more controllable, rule sets [week-5].
 
-### Week 5 - Rule-based classification
-- Core: rule anatomy, coverage/accuracy, indirect rule generation (from trees), direct rule mining (sequential covering).
-- Why it matters: separates interpretable decision logic from tree structure.
-- Enables next: Week 6 contrasts eager model-building with lazy, instance-based prediction.
-- Hub: [week-5/1-Introduction to Rule-Based Classification - Machine Learning.md](week-5/1-Introduction to Rule-Based Classification - Machine Learning.md)
-
-### Week 6 - Lazy learning with kNN
-- Core: eager vs lazy learning, kNN algorithm, distance choices, scaling, choice of $k$, dimensionality effects.
-- Why it matters: shows prediction by local neighborhood geometry instead of global parametric fit.
-- Enables next: Week 7 reduces variance through ensembles of unstable learners.
-- Hub: [week-6/1-Introduction to Lazy Learning and kNN - Machine Learning.md](week-6/1-Introduction to Lazy Learning and kNN - Machine Learning.md)
-
-### Week 7 - Ensemble learning
-- Core: bias-variance rationale, bagging, random forest diversity, boosting and AdaBoost sequential focus.
-- Why it matters: combines weak/unstable learners into stronger, more robust predictors.
-- Enables next: Week 8 shifts to regression for continuous targets.
-- Hub: [week-7/1-Foundations of Ensemble Learning The Power of Many - Machine Learning.md](week-7/1-Foundations of Ensemble Learning The Power of Many - Machine Learning.md)
-
-### Week 8 - Regression and optimization
-- Core: regression framing, SSE/MSE cost, linear hypothesis, gradient descent dynamics and learning rate.
-- Why it matters: formalizes continuous-output prediction and objective-driven optimization.
-- Enables next: Week 9 transitions from labeled prediction to unlabeled structure discovery.
-- Hub: [week-8/1-Introduction to Regression - Machine Learning.md](week-8/1-Introduction to Regression - Machine Learning.md)
-
-### Week 9 - Clustering fundamentals
-- Core: clustering purpose, hard vs soft, flat vs hierarchical, proximity choices, cluster validity intuition.
-- Why it matters: unsupervised learning depends on similarity assumptions, not labels.
-- Enables next: Week 10 operationalizes these ideas via k-means.
-- Hub: [week-9/1-Introduction to Clustering - Machine Learning.md](week-9/1-Introduction to Clustering - Machine Learning.md)
-
-### Week 10 - k-Means in depth
-- Core: centroid-based clustering loop, objective function (SSE), convergence behavior, initialization and $k$ selection issues.
-- Why it matters: illustrates alternating optimization and local-optimum trade-offs in unsupervised learning.
-- Enables next: Week 11 explores hierarchical alternatives when fixed $k$ is limiting.
-- Hub: [week-10/1-K-means Clustering Algorithm - Machine Learning.md](week-10/1-K-means Clustering Algorithm - Machine Learning.md)
-
-### Week 11 - Hierarchical clustering
-- Core: dendrogram view, agglomerative vs divisive strategies, linkage/proximity matrix, complexity costs.
-- Why it matters: captures multi-resolution structure instead of forcing one partition.
-- Enables next: Week 12 addresses density-based and scalable clustering for large or irregular data.
-- Hub: [week-11/1-Introduction to Hierarchical Clustering - Machine Learning.md](week-11/1-Introduction to Hierarchical Clustering - Machine Learning.md)
-
-### Week 12 - Density and scalability (DBSCAN, BIRCH)
-- Core: density-connected clusters (DBSCAN), parameter sensitivity, BIRCH CF-tree compression for scale.
-- Why it matters: handles noise, non-spherical shapes, and large-data constraints better than vanilla k-means.
-- Enables next: Week 13 generalizes unsupervised discovery to transactional co-occurrence patterns.
-- Hub: [week-12/1-Density-Based Clustering and DBSCAN - Machine Learning.md](week-12/1-Density-Based Clustering and DBSCAN - Machine Learning.md)
-
-### Week 13 - Association rule mining
-- Core: transactions/itemsets, support-confidence-lift framing, Apriori anti-monotonic search, rule generation.
-- Why it matters: moves from grouping points to discovering actionable co-occurrence patterns.
-- Enables next: practical deployment of interpretable unsupervised knowledge extraction.
-- Hub: [week-13/1-Introduction to Association Rule Mining - Machine Learning.md](week-13/1-Introduction to Association Rule Mining - Machine Learning.md)
+k-nearest neighbors flips the script: unlike eager methods that fold training data into a global model before prediction, kNN is lazy—it stores data and predicts by the geometry of local neighborhoods [week-6]. Distance metrics, feature scaling, the choice of $k$, and the curse of dimensionality are not implementation details; they are the model [week-6]. Ensembles then ask what happens when many learners disagree: bagging and random forests average or diversify high-variance base models; boosting chains weak learners so later stages emphasize what earlier ones missed [week-7]. The through-line is stability and error reduction by combining what single trees or shallow rules might miss [week-7].
 
 ---
 
-## Cross-week threads you should see instantly
+## Continuous targets, then discovery without labels
 
-- **Data-first thread:** Week 2 data quality choices control Week 3-8 supervised outcomes and Week 9-13 unsupervised structure quality.
-- **Generalization thread:** Week 3 formalizes under/overfitting, Week 4-7 shows algorithmic controls (pruning, rules, $k$, ensembles), Week 8 ties this to objective optimization.
-- **Structure-matching thread:** trees/rules for interpretability, kNN for local geometry, ensembles for variance reduction, regression for continuous targets, clustering/association for unlabeled discovery.
-- **Optimization thread:** Week 8 gradient descent in regression and Week 10 alternating optimization in k-means are two objective-minimization templates.
-- **Scalability thread:** moves from classic algorithms to hierarchical, density-based, and CF-tree compression to handle real-world data size and shape.
+Regression shifts the target from a class to a real-valued quantity [week-8]. You state a cost—sum of squared errors, mean squared error—and fit parameters so that cost falls, often via gradient descent, where step size and curvature determine whether optimization helps or diverges [week-8]. The generalization story from classification still applies; here the objective is simply explicit in the algebra [week-8].
+
+When labels are unavailable or not the goal, you still need a notion of similarity and a purpose: partition points, soft assignments, flat versus hierarchical structure, and how you will argue that a grouping is valid [week-9]. Clustering quality is driven by those assumptions, not by ground-truth labels you do not have [week-9].
+
+k-means fixes $k$ centroids and alternates assigning points to nearest centers and recomputing centers to reduce within-cluster dispersion—an SSE-style objective and a prototype for alternating optimization, with local optima and sensitivity to initialization and $k$ [week-10]. Hierarchical clustering instead builds a nested tree of merges or splits, exposing many possible cuts through a dendrogram and paying complexity for that flexibility via linkage choices and distance updates [week-11]. When clusters are not round blobs or noise is heavy, density-based methods such as DBSCAN follow connected dense regions; when data are huge, structures like BIRCH compress summaries in a CF-tree so clustering can scale [week-12]. That scalability arc—moving from basic prototypes to methods that respect shape, noise, and memory—is the same practical pressure that showed up in data prep and in ensemble training costs [week-12].
+
+Association rule mining is a different unsupervised face: not grouping rows in metric space, but finding frequent itemsets and rules in transactions, with support, confidence, and lift framing what “interesting” means and Apriori-style search exploiting structure to keep the search feasible [week-13]. The output is still interpretable pattern knowledge, but tied to co-occurrence rather than Euclidean neighborhoods [week-13].
+
+Two optimization templates echo across the course: gradient-style steps on a smooth supervised loss [week-8] and discrete alternating updates that chase a clustering objective [week-10]. Keeping sight of what is actually minimized—and where greedy or local procedures can stall—keeps both supervised and unsupervised methods honest.
+
+---
+
+## Hub notes by week
+
+Depth lives in the week folders. Starting points:
+
+- [week-1/1-Foundations of Machine Learning.md](week-1/1-Foundations of Machine Learning.md)
+- [week-2/1-Building Blocks of Data - Objects Attributes and Types.md](week-2/1-Building Blocks of Data - Objects Attributes and Types.md)
+- [week-3/1-Foundations of ML and Supervised Learning.md](week-3/1-Foundations of ML and Supervised Learning.md)
+- [week-4/1-Introduction to Decision Trees.md](week-4/1-Introduction to Decision Trees.md)
+- [week-5/1-Introduction to Rule-Based Classification - Machine Learning.md](week-5/1-Introduction to Rule-Based Classification - Machine Learning.md)
+- [week-6/1-Introduction to Lazy Learning and kNN - Machine Learning.md](week-6/1-Introduction to Lazy Learning and kNN - Machine Learning.md)
+- [week-7/1-Foundations of Ensemble Learning The Power of Many - Machine Learning.md](week-7/1-Foundations of Ensemble Learning The Power of Many - Machine Learning.md)
+- [week-8/1-Introduction to Regression - Machine Learning.md](week-8/1-Introduction to Regression - Machine Learning.md)
+- [week-9/1-Introduction to Clustering - Machine Learning.md](week-9/1-Introduction to Clustering - Machine Learning.md)
+- [week-10/1-K-means Clustering Algorithm - Machine Learning.md](week-10/1-K-means Clustering Algorithm - Machine Learning.md)
+- [week-11/1-Introduction to Hierarchical Clustering - Machine Learning.md](week-11/1-Introduction to Hierarchical Clustering - Machine Learning.md)
+- [week-12/1-Density-Based Clustering and DBSCAN - Machine Learning.md](week-12/1-Density-Based Clustering and DBSCAN - Machine Learning.md)
+- [week-13/1-Introduction to Association Rule Mining - Machine Learning.md](week-13/1-Introduction to Association Rule Mining - Machine Learning.md)
 
 ---
 
@@ -109,24 +65,22 @@ This is the full ML course in one line of thought: define learning settings, bui
 
 ---
 
-## 13 one-line hinges (rapid revision)
+## Thirteen hinges (rapid revision)
 
-| Week | Hinge |
-|------|-------|
-| 1 | ML starts with learning paradigm clarity, not algorithm choice. |
-| 2 | Better data representation beats premature model complexity. |
-| 3 | Generalization is the central test of supervised learning. |
-| 4 | Decision trees convert feature tests into human-readable logic. |
-| 5 | Rules trade structure for interpretability and modular control. |
-| 6 | kNN predicts by local neighborhoods, so distance design is everything. |
-| 7 | Ensembles improve stability by aggregating diverse learners. |
-| 8 | Regression formalizes continuous prediction through explicit cost minimization. |
-| 9 | Clustering quality depends on similarity assumptions, not labels. |
-| 10 | k-means is efficient but sensitive to initialization and chosen $k$. |
-| 11 | Hierarchical clustering provides nested structure, not just one cut. |
-| 12 | DBSCAN/BIRCH address noise, shape, and scale limits of basic clustering. |
-| 13 | Association rules turn transactions into interpretable co-occurrence knowledge. |
+1. ML starts with learning paradigm clarity, not algorithm choice. [week-1]
+2. Better data representation beats premature model complexity. [week-2]
+3. Generalization is the central test of supervised learning. [week-3]
+4. Decision trees convert feature tests into human-readable logic. [week-4]
+5. Rules trade structure for interpretability and modular control. [week-5]
+6. kNN predicts by local neighborhoods, so distance design is everything. [week-6]
+7. Ensembles improve stability by aggregating diverse learners. [week-7]
+8. Regression formalizes continuous prediction through explicit cost minimization. [week-8]
+9. Clustering quality depends on similarity assumptions, not labels. [week-9]
+10. k-means is efficient but sensitive to initialization and chosen $k$. [week-10]
+11. Hierarchical clustering provides nested structure, not just one cut. [week-11]
+12. DBSCAN/BIRCH address noise, shape, and scale limits of basic clustering. [week-12]
+13. Association rules turn transactions into interpretable co-occurrence knowledge. [week-13]
 
 ---
 
-Use this note as the map. Use week notes for detail; use this page for conceptual continuity across the full course.
+Use this page for conceptual continuity across the full course; use the week notes for derivations, algorithms, and exercises.
