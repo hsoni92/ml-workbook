@@ -1,0 +1,7 @@
+---
+alwaysApply: true
+---
+
+# Always run a pass to check if formulas are formatted properly:
+- Always use Inline math: `$...$`
+- Make sure github md renders the formula correctly
