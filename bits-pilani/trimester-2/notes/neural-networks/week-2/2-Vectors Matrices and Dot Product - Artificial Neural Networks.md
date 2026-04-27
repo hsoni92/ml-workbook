@@ -85,7 +85,7 @@ w_{m1} & w_{m2} & \cdots & w_{mn} \end{bmatrix}
 
 **Rule:** For a valid computation, **dimensions must align**.
 
-- If **input vector** has shape $n \times 1$ and **weight matrix** has shape $m \times n$, their product has shape **$m$** (one value per output neuron).
+- If **input vector** has shape $n \times 1$ and **weight matrix** has shape $m \times n$, their product has shape $m \times 1$ (one value per output neuron).
 - If shapes do **not** align, the computation is **invalid** and will fail in code.
 - **In practice:** Many implementation bugs in neural networks come from **shape mismatches**. Always track:
   - Input dimensionality

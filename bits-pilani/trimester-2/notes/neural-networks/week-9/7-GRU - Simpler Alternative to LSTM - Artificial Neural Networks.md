@@ -41,12 +41,14 @@ So the GRU still controls memory through learned gates, but with a more compact 
 
 At time step `t`, a typical GRU computes:
 
-```text
-z_t = sigmoid(W_z [h_{t-1}, x_t] + b_z)
-r_t = sigmoid(W_r [h_{t-1}, x_t] + b_r)
-h~_t = tanh(W_h [r_t * h_{t-1}, x_t] + b_h)
-h_t = (1 - z_t) * h_{t-1} + z_t * h~_t
-```
+$$
+\begin{aligned}
+z_t &= \sigma\big(W_z [h_{t-1},\, x_t] + b_z\big) \\
+r_t &= \sigma\big(W_r [h_{t-1},\, x_t] + b_r\big) \\
+\tilde{h}_t &= \tanh\big(W_h [r_t \odot h_{t-1},\, x_t] + b_h\big) \\
+h_t &= (1 - z_t) \odot h_{t-1} + z_t \odot \tilde{h}_t
+\end{aligned}
+$$
 
 Again, the equations matter less than the roles of the gates.
 
@@ -96,7 +98,7 @@ The **update gate**, meanwhile, decides whether the new candidate should signifi
 ```text
 previous state h_{t-1} --(update gate)------\
                                              +--> new state h_t
-candidate state h~_t -----------------------/
+candidate state (tilde h)_t ----------------/
 
 previous state h_{t-1} --(reset gate)--> candidate computation
 ```

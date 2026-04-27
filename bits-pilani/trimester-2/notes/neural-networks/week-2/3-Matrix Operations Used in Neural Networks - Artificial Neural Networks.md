@@ -31,6 +31,7 @@ By the end of this video you will:
 - Neuron 1: $z_1 = \mathbf{w}_1^T \mathbf{x}$
 
 - Neuron 2: $z_2 = \mathbf{w}_2^T \mathbf{x}$
+
 - …
 - Neuron $m$: $z_m = \mathbf{w}_m^T \mathbf{x}$
 
