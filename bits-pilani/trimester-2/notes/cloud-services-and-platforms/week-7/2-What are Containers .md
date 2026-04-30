@@ -1,73 +1,16 @@
-# What are Containers
+# What Are Containers
 
-## Why This Topic Matters
+## Container concept
+- A container is a running process isolated with OS features such as namespaces and cgroups.
+- It includes application code, libraries, runtime, and configuration needed to run consistently.
+- It shares the host OS kernel, which makes it lighter than a VM.
 
-This note explains containerized platforms used for reproducible deployment and scalable microservices. These ideas are essential for production ML serving.
+## What containers solve
+- Dependency conflicts across environments.
+- Slow and inconsistent deployments.
+- Packaging microservices and ML inference services for repeatable release.
 
-## Learning Objectives
-
-- Build first-principles understanding of `What are Containers`.
-- Connect concepts to architecture decisions in real cloud systems.
-- Evaluate security, reliability, performance, and cost trade-offs rigorously.
-- Prepare for scenario-based exam and interview questions.
-
-## Core Concepts and Definitions
-
-- `Container`: an isolated process environment sharing the host kernel but with its own filesystem and libraries.
-
-## Intuition Before Mechanics
-
-- Start from workload requirements before choosing services or architecture patterns.
-- Prefer managed primitives for undifferentiated heavy lifting where practical.
-- Evaluate every design through security, reliability, performance, and cost trade-offs.
-- Key technologies here: `Container`.
-
-## Architecture / Relationship View
-
-```mermaid
-flowchart LR
-  Dev[Developer] --> Build[Build Docker Image]
-  Build --> Registry[Container Registry/ECR]
-  Registry --> K8s[Kubernetes Scheduler]
-  K8s --> PodA[Pod A]
-  K8s --> PodB[Pod B]
-  PodA --> Svc[Service]
-  PodB --> Svc
-```
-
-## Comparison and Decision Framework
-
-| Decision axis | Option A | Option B |
-|---|---|---|
-| Complexity | Lower with managed defaults | Higher with custom control |
-| Flexibility | Moderate | High |
-| Risk profile | Safer baseline | Higher misconfiguration risk |
-| Typical fit | Fast delivery | Specialized constraints |
-
-## How It Works in Practice
-
-1. Capture workload requirements and constraints first.
-2. Choose topology and services that match those requirements.
-3. Apply security and policy controls before exposing traffic.
-4. Validate behavior with realistic workload and failure tests.
-5. Operate with observability and optimize iteratively from production signals.
-
-## Real-World Example
-
-An inference service ships Docker images to ECR and deploys replicas on Kubernetes, ensuring identical runtime behavior across environments.
-
-## Common Pitfalls / Exam Traps
-
-- Treating containers as persistent VMs and storing state locally.
-- Using bloated images without security scanning.
-- Running orchestration without resource limits/requests.
-- Ignoring image provenance and rollout hygiene.
-
-## Quick Revision Summary
-
-- Define the primary architecture problem solved by this topic.
-- Explain one reliability and one security trade-off.
-- State one cost optimization opportunity and one risk.
-- Describe a production scenario where this design is appropriate.
-- Identify a likely misconfiguration and its operational impact.
-- Recall precise definitions for: Container.
+## Limits to remember
+- Containers are not security boundaries as strong as separate VMs.
+- Local container filesystem should be treated as ephemeral.
+- Persistent state belongs in volumes, databases, or object storage.

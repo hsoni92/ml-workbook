@@ -1,64 +1,16 @@
-# Module introduction
+# Week 10: Serverless and Lambda Foundation
 
-## Why This Topic Matters
+## Serverless mental model
+- Serverless means the provider manages server provisioning, scaling, and routine infrastructure operations.
+- You still own code, IAM permissions, event contracts, error handling, and data design.
+- Lambda is event-driven compute: code runs because something invokes it.
 
-This note explains serverless architecture patterns for event-driven systems and their trade-offs in latency, observability, and operational simplicity.
+## Where Lambda fits
+- Short-lived tasks, event processing, API backends, automation, file processing, and stream consumers.
+- Pairs naturally with API Gateway, S3, EventBridge, SQS, DynamoDB Streams, and CloudWatch.
+- Not ideal for long-running processes, stable ultra-low latency without tuning, or workloads needing full host control.
 
-## Learning Objectives
-
-- Build first-principles understanding of `Module introduction`.
-- Connect concepts to architecture decisions in real cloud systems.
-- Evaluate security, reliability, performance, and cost trade-offs rigorously.
-- Prepare for scenario-based exam and interview questions.
-
-## Intuition Before Mechanics
-
-- Start from workload requirements before choosing services or architecture patterns.
-- Prefer managed primitives for undifferentiated heavy lifting where practical.
-- Evaluate every design through security, reliability, performance, and cost trade-offs.
-
-## Architecture / Relationship View
-
-```mermaid
-flowchart LR
-  Trigger[API/Event Source] --> Lambda[Lambda Function]
-  Lambda --> Store[(Data Store)]
-  Lambda --> Logs[CloudWatch Logs]
-  S3[S3 Upload Event] --> Lambda
-```
-
-## Comparison and Decision Framework
-
-| Decision axis | Option A | Option B |
-|---|---|---|
-| Complexity | Lower with managed defaults | Higher with custom control |
-| Flexibility | Moderate | High |
-| Risk profile | Safer baseline | Higher misconfiguration risk |
-| Typical fit | Fast delivery | Specialized constraints |
-
-## How It Works in Practice
-
-1. Define trigger contracts (API payloads, storage events, queue messages, schedules).
-2. Implement stateless business logic with explicit external dependencies.
-3. Apply least-privilege IAM permissions for execution identities.
-4. Tune execution controls: memory, timeout, concurrency, and retry/DLQ behavior.
-5. Instrument metrics/logs and configure alarms for latency, errors, and throttling.
-
-## Real-World Example
-
-File uploads trigger Lambda for processing; metadata is persisted and exposed through API endpoints without managing server fleets.
-
-## Common Pitfalls / Exam Traps
-
-- Non-idempotent handlers causing duplicate side effects.
-- Overloaded Lambda functions with mixed concerns.
-- Over-permissive execution roles.
-- No alarms around error or throttle conditions.
-
-## Quick Revision Summary
-
-- Define the primary architecture problem solved by this topic.
-- Explain one reliability and one security trade-off.
-- State one cost optimization opportunity and one risk.
-- Describe a production scenario where this design is appropriate.
-- Identify a likely misconfiguration and its operational impact.
+## Exam anchors
+- Stateless design is mandatory; store state in S3/DynamoDB/RDS/cache.
+- Execution role grants permissions to the function.
+- Timeout, memory, concurrency, retries, and idempotency decide production behavior.

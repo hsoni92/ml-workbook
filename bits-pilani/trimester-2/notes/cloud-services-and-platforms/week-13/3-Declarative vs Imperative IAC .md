@@ -1,73 +1,16 @@
-# Declarative vs Imperative IAC
+# Declarative vs Imperative IaC
 
-## Why This Topic Matters
+## Declarative approach
+- Describe desired end state.
+- Tool decides operation order from dependency graph.
+- Terraform, CloudFormation, and Kubernetes manifests are common declarative examples.
 
-This note introduces infrastructure as code and Terraform workflows for reproducible, reviewable, and automatable cloud infrastructure.
+## Imperative approach
+- Describe exact steps/commands to run.
+- Scripts such as shell/Python/CLI sequences are imperative.
+- Useful for procedural tasks but harder to reason about drift and final state.
 
-## Learning Objectives
-
-- Build first-principles understanding of `Declarative vs Imperative IAC`.
-- Connect concepts to architecture decisions in real cloud systems.
-- Evaluate security, reliability, performance, and cost trade-offs rigorously.
-- Prepare for scenario-based exam and interview questions.
-
-## Core Concepts and Definitions
-
-- `Terraform`: an infrastructure-as-code tool that provisions resources from declarative configuration files.
-
-## Intuition Before Mechanics
-
-- Start from workload requirements before choosing services or architecture patterns.
-- Prefer managed primitives for undifferentiated heavy lifting where practical.
-- Evaluate every design through security, reliability, performance, and cost trade-offs.
-- Key technologies here: `Terraform`.
-
-## Architecture / Relationship View
-
-```mermaid
-flowchart LR
-  Code[Terraform Code] --> Init[terraform init]
-  Init --> Plan[terraform plan]
-  Plan --> Review[Review]
-  Review --> Apply[terraform apply]
-  Apply --> AWS[AWS Resources]
-  AWS --> State[Terraform State]
-```
-
-## Comparison and Decision Framework
-
-| Aspect | Declarative IaC | Imperative IaC |
-|---|---|---|
-| Author intent | Desired end state | Stepwise operations |
-| Drift handling | Plan/diff aware | Script logic dependent |
-| Team scalability | Better | Harder at scale |
-| Repeatability | Higher | Depends on script quality |
-
-## How It Works in Practice
-
-1. Model infrastructure declaratively in `.tf` files with variables and outputs.
-2. Run `terraform init`, validation, and `terraform plan` before apply.
-3. Review plan output as a formal change contract before execution.
-4. Apply through controlled workflows with remote state and locking.
-5. Continuously detect drift and reconcile through versioned IaC changes.
-
-## Real-World Example
-
-Terraform plans are reviewed in pull requests and applied through controlled pipelines, giving safe, reproducible environment provisioning.
-
-## Common Pitfalls / Exam Traps
-
-- Manual console changes creating IaC drift.
-- Local state without locking in team workflows.
-- Secrets leaking into code or state files.
-- Applying large plans without review discipline.
-
-## Quick Revision Summary
-
-- Define the primary architecture problem solved by this topic.
-- Explain one reliability and one security trade-off.
-- State one cost optimization opportunity and one risk.
-- Describe a production scenario where this design is appropriate.
-- Identify a likely misconfiguration and its operational impact.
-- Memorize when each side of the comparison is preferred.
-- Recall precise definitions for: Terraform.
+## Exam comparison
+- Declarative: what should exist.
+- Imperative: how to create/change it step by step.
+- Terraform plan works because Terraform compares desired config, state, and real provider objects.

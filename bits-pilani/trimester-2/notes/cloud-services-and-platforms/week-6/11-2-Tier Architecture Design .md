@@ -1,67 +1,16 @@
-# 2-Tier Architecture Design
+# Two-Tier Architecture Design
 
-## Why This Topic Matters
+## Architecture shape
+- Two-tier commonly means presentation/application tier plus database tier.
+- Internet-facing entry point belongs in public subnet; database belongs in private subnet.
+- Security group references should express tier relationships, not broad CIDR access.
 
-This note builds networking intuition for secure and reachable cloud systems. Network decisions define exposure boundaries, routing behavior, and fault isolation.
+## AWS mapping
+- ALB or web server in public subnet receives user traffic.
+- Application or database tier in private subnet accepts only required ports.
+- NAT is optional and only for private tier outbound updates/API calls.
 
-## Learning Objectives
-
-- Build first-principles understanding of `2-Tier Architecture Design`.
-- Connect concepts to architecture decisions in real cloud systems.
-- Evaluate security, reliability, performance, and cost trade-offs rigorously.
-- Prepare for scenario-based exam and interview questions.
-
-## Intuition Before Mechanics
-
-- Start from workload requirements before choosing services or architecture patterns.
-- Prefer managed primitives for undifferentiated heavy lifting where practical.
-- Evaluate every design through security, reliability, performance, and cost trade-offs.
-
-## Architecture / Relationship View
-
-```mermaid
-flowchart LR
-  Internet[Internet] --> IGW[Internet Gateway]
-  IGW --> Pub[Public Subnet]
-  Pub --> ALB[Load Balancer]
-  ALB --> App[Private App Subnet]
-  App --> DB[Private DB Subnet]
-  App --> NAT[NAT Gateway]
-  NAT --> Internet
-```
-
-## Comparison and Decision Framework
-
-| Decision axis | Option A | Option B |
-|---|---|---|
-| Complexity | Lower with managed defaults | Higher with custom control |
-| Flexibility | Moderate | High |
-| Risk profile | Safer baseline | Higher misconfiguration risk |
-| Typical fit | Fast delivery | Specialized constraints |
-
-## How It Works in Practice
-
-1. Capture workload requirements and constraints first.
-2. Choose topology and services that match those requirements.
-3. Apply security and policy controls before exposing traffic.
-4. Validate behavior with realistic workload and failure tests.
-5. Operate with observability and optimize iteratively from production signals.
-
-## Real-World Example
-
-A production web platform keeps only load balancers in public subnets while app and database tiers remain private with controlled NAT egress.
-
-## Common Pitfalls / Exam Traps
-
-- Overlapping CIDR blocks that block peering/hybrid growth.
-- Mixing up route-table and firewall issues while debugging connectivity.
-- Exposing private tiers due to incorrect subnet placement.
-- Overly broad network rules enabling lateral movement.
-
-## Quick Revision Summary
-
-- Define the primary architecture problem solved by this topic.
-- Explain one reliability and one security trade-off.
-- State one cost optimization opportunity and one risk.
-- Describe a production scenario where this design is appropriate.
-- Identify a likely misconfiguration and its operational impact.
+## Exam-safe answer
+- Mention subnet placement, route tables, and SG flow.
+- Use Multi-AZ for availability if production resilience is asked.
+- Never expose database directly to the internet for convenience.

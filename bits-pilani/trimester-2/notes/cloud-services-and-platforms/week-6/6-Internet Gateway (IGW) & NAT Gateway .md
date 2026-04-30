@@ -1,74 +1,16 @@
-# Internet Gateway (IGW) & NAT Gateway
+# Internet Gateway and NAT Gateway
 
-## Why This Topic Matters
+## Internet Gateway
+- IGW attaches to a VPC and allows internet-routable traffic for resources with public IPs.
+- It is horizontally scaled and highly available by design.
+- A route to IGW plus public IP is required for direct internet access from EC2.
 
-This note builds networking intuition for secure and reachable cloud systems. Network decisions define exposure boundaries, routing behavior, and fault isolation.
+## NAT Gateway
+- NAT Gateway lives in a public subnet and lets private subnet resources initiate outbound internet connections.
+- It does not allow unsolicited inbound internet connections to private instances.
+- For high availability, deploy NAT Gateway per AZ and route private subnets to same-AZ NAT.
 
-## Learning Objectives
-
-- Build first-principles understanding of `Internet Gateway (IGW) & NAT Gateway`.
-- Connect concepts to architecture decisions in real cloud systems.
-- Evaluate security, reliability, performance, and cost trade-offs rigorously.
-- Prepare for scenario-based exam and interview questions.
-
-## Core Concepts and Definitions
-
-- `Internet Gateway`: a managed gateway enabling traffic between a VPC and the public internet.
-- `NAT Gateway`: a managed service that lets private subnet instances initiate outbound internet access without inbound exposure.
-
-## Intuition Before Mechanics
-
-- Start from workload requirements before choosing services or architecture patterns.
-- Prefer managed primitives for undifferentiated heavy lifting where practical.
-- Evaluate every design through security, reliability, performance, and cost trade-offs.
-- Key technologies here: `Internet Gateway`, `NAT Gateway`.
-
-## Architecture / Relationship View
-
-```mermaid
-flowchart LR
-  Internet[Internet] --> IGW[Internet Gateway]
-  IGW --> Pub[Public Subnet]
-  Pub --> ALB[Load Balancer]
-  ALB --> App[Private App Subnet]
-  App --> DB[Private DB Subnet]
-  App --> NAT[NAT Gateway]
-  NAT --> Internet
-```
-
-## Comparison and Decision Framework
-
-| Decision axis | Option A | Option B |
-|---|---|---|
-| Complexity | Lower with managed defaults | Higher with custom control |
-| Flexibility | Moderate | High |
-| Risk profile | Safer baseline | Higher misconfiguration risk |
-| Typical fit | Fast delivery | Specialized constraints |
-
-## How It Works in Practice
-
-1. Capture workload requirements and constraints first.
-2. Choose topology and services that match those requirements.
-3. Apply security and policy controls before exposing traffic.
-4. Validate behavior with realistic workload and failure tests.
-5. Operate with observability and optimize iteratively from production signals.
-
-## Real-World Example
-
-A production web platform keeps only load balancers in public subnets while app and database tiers remain private with controlled NAT egress.
-
-## Common Pitfalls / Exam Traps
-
-- Overlapping CIDR blocks that block peering/hybrid growth.
-- Mixing up route-table and firewall issues while debugging connectivity.
-- Exposing private tiers due to incorrect subnet placement.
-- Overly broad network rules enabling lateral movement.
-
-## Quick Revision Summary
-
-- Define the primary architecture problem solved by this topic.
-- Explain one reliability and one security trade-off.
-- State one cost optimization opportunity and one risk.
-- Describe a production scenario where this design is appropriate.
-- Identify a likely misconfiguration and its operational impact.
-- Recall precise definitions for: Internet Gateway, NAT Gateway.
+## Exam contrast
+- IGW = bidirectional internet path for public resources.
+- NAT = outbound-only internet path for private resources.
+- Gateway endpoint can replace NAT for S3/DynamoDB private access and reduce cost.

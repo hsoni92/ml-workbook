@@ -3,6 +3,7 @@
 ## How to use this sheet
 
 - Skim **(Wn)** tags to map topics to `week-n/` notes if something feels thin.
+- Week 6 to Week 13 topic files are now concept-built by filename; open the exact topic file when a revision hook needs more detail.
 - For every **HOOK** in bold caps: say the expansion out loud once, then close the file and recall it.
 - Tables = comparison traps (exams love NACL vs SG, pricing models, SQL vs NoSQL).
 - Diagrams = redraw on paper from memory after first read.

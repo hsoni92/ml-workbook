@@ -1,70 +1,19 @@
-# End-to-end serverless workflow
+# End-to-End Serverless Workflow
 
-## Why This Topic Matters
+## Typical workflow
+- Client calls API Gateway.
+- Lambda validates request and executes business logic.
+- Data persists in DynamoDB/RDS/S3.
+- Events trigger async processing through SQS/EventBridge.
+- CloudWatch monitors logs, errors, duration, and alarms.
 
-This note explains serverless architecture patterns for event-driven systems and their trade-offs in latency, observability, and operational simplicity.
+## Reliability design
+- Use queues to decouple spikes and retries.
+- Make handlers idempotent because events may be retried.
+- Use DLQ or failure destinations for failed async events.
+- Split long workflows with Step Functions.
 
-## Learning Objectives
-
-- Build first-principles understanding of `End-to-end serverless workflow`.
-- Connect concepts to architecture decisions in real cloud systems.
-- Evaluate security, reliability, performance, and cost trade-offs rigorously.
-- Prepare for scenario-based exam and interview questions.
-
-## Core Concepts and Definitions
-
-- `Lambda`: a serverless compute service that runs code in response to events.
-
-## Intuition Before Mechanics
-
-- Serverless shifts infrastructure management burden to the platform.
-- Stateless function boundaries improve scaling and fault isolation.
-- Event contract design and idempotency determine system correctness at scale.
-- Key technologies here: `Lambda`.
-
-## Architecture / Relationship View
-
-```mermaid
-flowchart LR
-  Trigger[API/Event Source] --> Lambda[Lambda Function]
-  Lambda --> Store[(Data Store)]
-  Lambda --> Logs[CloudWatch Logs]
-  S3[S3 Upload Event] --> Lambda
-```
-
-## Comparison and Decision Framework
-
-| Decision axis | Option A | Option B |
-|---|---|---|
-| Complexity | Lower with managed defaults | Higher with custom control |
-| Flexibility | Moderate | High |
-| Risk profile | Safer baseline | Higher misconfiguration risk |
-| Typical fit | Fast delivery | Specialized constraints |
-
-## How It Works in Practice
-
-1. Define trigger contracts (API payloads, storage events, queue messages, schedules).
-2. Implement stateless business logic with explicit external dependencies.
-3. Apply least-privilege IAM permissions for execution identities.
-4. Tune execution controls: memory, timeout, concurrency, and retry/DLQ behavior.
-5. Instrument metrics/logs and configure alarms for latency, errors, and throttling.
-
-## Real-World Example
-
-File uploads trigger Lambda for processing; metadata is persisted and exposed through API endpoints without managing server fleets.
-
-## Common Pitfalls / Exam Traps
-
-- Non-idempotent handlers causing duplicate side effects.
-- Overloaded Lambda functions with mixed concerns.
-- Over-permissive execution roles.
-- No alarms around error or throttle conditions.
-
-## Quick Revision Summary
-
-- Define the primary architecture problem solved by this topic.
-- Explain one reliability and one security trade-off.
-- State one cost optimization opportunity and one risk.
-- Describe a production scenario where this design is appropriate.
-- Identify a likely misconfiguration and its operational impact.
-- Recall precise definitions for: Lambda.
+## Exam architecture answer
+- Name trigger, compute, state store, failure path, and monitoring.
+- Avoid putting state inside Lambda memory/local disk.
+- Mention least-privilege IAM across every service call.

@@ -1,73 +1,18 @@
 # Creating a Dockerfile
 
-## Why This Topic Matters
+## Dockerfile purpose
+- Dockerfile is a recipe for building an image.
+- Each instruction usually creates a layer.
+- A good Dockerfile is reproducible, minimal, and explicit.
 
-This note explains containerized platforms used for reproducible deployment and scalable microservices. These ideas are essential for production ML serving.
+## Key instructions
+- FROM chooses base image.
+- RUN installs packages or executes build commands.
+- COPY copies application files into image.
+- EXPOSE documents intended port but does not publish it.
+- CMD or ENTRYPOINT defines default process.
 
-## Learning Objectives
-
-- Build first-principles understanding of `Creating a Dockerfile`.
-- Connect concepts to architecture decisions in real cloud systems.
-- Evaluate security, reliability, performance, and cost trade-offs rigorously.
-- Prepare for scenario-based exam and interview questions.
-
-## Core Concepts and Definitions
-
-- `Docker`: a container runtime ecosystem that packages code and dependencies into portable images.
-
-## Intuition Before Mechanics
-
-- Dockerfiles create reproducible runtime artifacts independent of local machine state.
-- Layer order controls cache efficiency and build speed.
-- Small base images reduce attack surface and pull latency.
-- Key technologies here: `Docker`.
-
-## Architecture / Relationship View
-
-```mermaid
-flowchart LR
-  Dev[Developer] --> Build[Build Docker Image]
-  Build --> Registry[Container Registry/ECR]
-  Registry --> K8s[Kubernetes Scheduler]
-  K8s --> PodA[Pod A]
-  K8s --> PodB[Pod B]
-  PodA --> Svc[Service]
-  PodB --> Svc
-```
-
-## Comparison and Decision Framework
-
-| Decision axis | Option A | Option B |
-|---|---|---|
-| Complexity | Lower with managed defaults | Higher with custom control |
-| Flexibility | Moderate | High |
-| Risk profile | Safer baseline | Higher misconfiguration risk |
-| Typical fit | Fast delivery | Specialized constraints |
-
-## How It Works in Practice
-
-1. Capture workload requirements and constraints first.
-2. Choose topology and services that match those requirements.
-3. Apply security and policy controls before exposing traffic.
-4. Validate behavior with realistic workload and failure tests.
-5. Operate with observability and optimize iteratively from production signals.
-
-## Real-World Example
-
-An inference service ships Docker images to ECR and deploys replicas on Kubernetes, ensuring identical runtime behavior across environments.
-
-## Common Pitfalls / Exam Traps
-
-- Treating containers as persistent VMs and storing state locally.
-- Using bloated images without security scanning.
-- Running orchestration without resource limits/requests.
-- Ignoring image provenance and rollout hygiene.
-
-## Quick Revision Summary
-
-- Define the primary architecture problem solved by this topic.
-- Explain one reliability and one security trade-off.
-- State one cost optimization opportunity and one risk.
-- Describe a production scenario where this design is appropriate.
-- Identify a likely misconfiguration and its operational impact.
-- Recall precise definitions for: Docker.
+## Best practices
+- Use small trusted base images.
+- Copy dependency manifests before source code to improve cache use.
+- Do not bake secrets into images; pass secrets through runtime secret mechanisms.
