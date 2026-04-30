@@ -1,68 +1,16 @@
-# Assigning Public IPS vs Elastic IPS
+# Public IPs vs Elastic IPs
 
-## Why This Topic Matters
+## Public IPv4 address
+- Can be auto-assigned to an instance launched in a public subnet.
+- Usually changes when an instance is stopped and started.
+- Useful for temporary labs, not stable production endpoints.
 
-This note builds networking intuition for secure and reachable cloud systems. Network decisions define exposure boundaries, routing behavior, and fault isolation.
+## Elastic IP address
+- Static public IPv4 address allocated to your AWS account.
+- Can be remapped to another instance or network interface.
+- Charged when allocated but not properly associated/used.
 
-## Learning Objectives
-
-- Build first-principles understanding of `Assigning Public IPS vs Elastic IPS`.
-- Connect concepts to architecture decisions in real cloud systems.
-- Evaluate security, reliability, performance, and cost trade-offs rigorously.
-- Prepare for scenario-based exam and interview questions.
-
-## Intuition Before Mechanics
-
-- Start from workload requirements before choosing services or architecture patterns.
-- Prefer managed primitives for undifferentiated heavy lifting where practical.
-- Evaluate every design through security, reliability, performance, and cost trade-offs.
-
-## Architecture / Relationship View
-
-```mermaid
-flowchart LR
-  Internet[Internet] --> IGW[Internet Gateway]
-  IGW --> Pub[Public Subnet]
-  Pub --> ALB[Load Balancer]
-  ALB --> App[Private App Subnet]
-  App --> DB[Private DB Subnet]
-  App --> NAT[NAT Gateway]
-  NAT --> Internet
-```
-
-## Comparison and Decision Framework
-
-| Decision axis | Option A | Option B |
-|---|---|---|
-| Complexity | Lower with managed defaults | Higher with custom control |
-| Flexibility | Moderate | High |
-| Risk profile | Safer baseline | Higher misconfiguration risk |
-| Typical fit | Fast delivery | Specialized constraints |
-
-## How It Works in Practice
-
-1. Capture workload requirements and constraints first.
-2. Choose topology and services that match those requirements.
-3. Apply security and policy controls before exposing traffic.
-4. Validate behavior with realistic workload and failure tests.
-5. Operate with observability and optimize iteratively from production signals.
-
-## Real-World Example
-
-A production web platform keeps only load balancers in public subnets while app and database tiers remain private with controlled NAT egress.
-
-## Common Pitfalls / Exam Traps
-
-- Overlapping CIDR blocks that block peering/hybrid growth.
-- Mixing up route-table and firewall issues while debugging connectivity.
-- Exposing private tiers due to incorrect subnet placement.
-- Overly broad network rules enabling lateral movement.
-
-## Quick Revision Summary
-
-- Define the primary architecture problem solved by this topic.
-- Explain one reliability and one security trade-off.
-- State one cost optimization opportunity and one risk.
-- Describe a production scenario where this design is appropriate.
-- Identify a likely misconfiguration and its operational impact.
-- Memorize when each side of the comparison is preferred.
+## Exam choices
+- Use Elastic IP when a fixed public address is explicitly required.
+- Prefer DNS/load balancers over direct instance public IPs for production.
+- Public IP alone is insufficient without public subnet route and security rules.

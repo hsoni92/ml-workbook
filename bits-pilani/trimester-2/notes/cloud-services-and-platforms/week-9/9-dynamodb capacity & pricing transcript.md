@@ -1,71 +1,16 @@
-# dynamodb capacity & pricing
+# DynamoDB Capacity and Pricing
 
-## Why This Topic Matters
+## Capacity modes
+- On-demand charges per request and fits unpredictable/spiky workloads.
+- Provisioned capacity sets read/write units and fits predictable steady workloads.
+- Autoscaling can adjust provisioned capacity within configured bounds.
 
-This note focuses on managed database design where consistency model, schema strategy, and scaling pattern determine correctness and performance.
+## Read and write units
+- Write capacity depends on item size and write rate.
+- Read capacity depends on item size and consistency mode.
+- Strongly consistent reads cost more capacity than eventually consistent reads.
 
-## Learning Objectives
-
-- Build first-principles understanding of `dynamodb capacity & pricing`.
-- Connect concepts to architecture decisions in real cloud systems.
-- Evaluate security, reliability, performance, and cost trade-offs rigorously.
-- Prepare for scenario-based exam and interview questions.
-
-## Core Concepts and Definitions
-
-- `DynamoDB`: a serverless NoSQL key-value/document database with predictable low-latency performance.
-
-## Intuition Before Mechanics
-
-- Cloud cost is an architectural variable, not merely a billing artifact.
-- Optimization must preserve reliability while removing underutilized resources.
-- Cost governance needs tagging discipline and accountability ownership.
-- Key technologies here: `DynamoDB`.
-
-## Architecture / Relationship View
-
-```mermaid
-flowchart LR
-  App[Application] --> DAL[Data Access Layer]
-  DAL --> RDS[(RDS)]
-  DAL --> DDB[(DynamoDB)]
-  RDS --> Replica[Read Replica]
-  DDB --> Streams[DynamoDB Streams]
-```
-
-## Comparison and Decision Framework
-
-| Decision axis | Option A | Option B |
-|---|---|---|
-| Complexity | Lower with managed defaults | Higher with custom control |
-| Flexibility | Moderate | High |
-| Risk profile | Safer baseline | Higher misconfiguration risk |
-| Typical fit | Fast delivery | Specialized constraints |
-
-## How It Works in Practice
-
-1. Capture workload requirements and constraints first.
-2. Choose topology and services that match those requirements.
-3. Apply security and policy controls before exposing traffic.
-4. Validate behavior with realistic workload and failure tests.
-5. Operate with observability and optimize iteratively from production signals.
-
-## Real-World Example
-
-A transaction-heavy service uses RDS for ACID integrity and DynamoDB for low-latency high-scale user session workloads.
-
-## Common Pitfalls / Exam Traps
-
-- Selecting DB type without query and consistency analysis.
-- Ignoring partition-key behavior in DynamoDB.
-- Relying on backups without restore drills.
-- Underestimating failover and replica lag behavior.
-
-## Quick Revision Summary
-
-- Define the primary architecture problem solved by this topic.
-- Explain one reliability and one security trade-off.
-- State one cost optimization opportunity and one risk.
-- Describe a production scenario where this design is appropriate.
-- Identify a likely misconfiguration and its operational impact.
-- Recall precise definitions for: DynamoDB.
+## Cost traps
+- Indexes consume separate read/write capacity.
+- Scans are expensive compared to targeted key queries.
+- Poor partition key design can throttle even if table-level capacity looks sufficient.

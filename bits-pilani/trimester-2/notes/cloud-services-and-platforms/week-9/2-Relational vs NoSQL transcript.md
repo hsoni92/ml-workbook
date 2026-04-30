@@ -1,73 +1,16 @@
-# Relational vs NoSQL
+# Relational vs NoSQL Databases
 
-## Why This Topic Matters
+## Relational strengths
+- Structured schema with tables, rows, columns, constraints, and joins.
+- ACID transactions protect correctness for multi-step business operations.
+- SQL supports flexible querying and reporting.
 
-This note focuses on managed database design where consistency model, schema strategy, and scaling pattern determine correctness and performance.
+## NoSQL strengths
+- Schema flexibility and horizontal scaling for specific access patterns.
+- Key-value/document models work well for sessions, profiles, events, and catalog lookups.
+- Denormalization is common to avoid joins at scale.
 
-## Learning Objectives
-
-- Build first-principles understanding of `Relational vs NoSQL`.
-- Connect concepts to architecture decisions in real cloud systems.
-- Evaluate security, reliability, performance, and cost trade-offs rigorously.
-- Prepare for scenario-based exam and interview questions.
-
-## Core Concepts and Definitions
-
-- `RDS`: a managed relational database service that automates backups, patching, and failover features.
-- `DynamoDB`: a serverless NoSQL key-value/document database with predictable low-latency performance.
-
-## Intuition Before Mechanics
-
-- Start from workload requirements before choosing services or architecture patterns.
-- Prefer managed primitives for undifferentiated heavy lifting where practical.
-- Evaluate every design through security, reliability, performance, and cost trade-offs.
-- Key technologies here: `RDS`, `DynamoDB`.
-
-## Architecture / Relationship View
-
-```mermaid
-flowchart LR
-  App[Application] --> DAL[Data Access Layer]
-  DAL --> RDS[(RDS)]
-  DAL --> DDB[(DynamoDB)]
-  RDS --> Replica[Read Replica]
-  DDB --> Streams[DynamoDB Streams]
-```
-
-## Comparison and Decision Framework
-
-| Aspect | Relational | NoSQL |
-|---|---|---|
-| Schema | Fixed and explicit | Flexible |
-| Transactions | Strong ACID support | Model-dependent |
-| Scaling | Vertical-first | Horizontal-first |
-| Best fit | Complex joins and strict consistency | High-scale key/document access |
-
-## How It Works in Practice
-
-1. Capture workload requirements and constraints first.
-2. Choose topology and services that match those requirements.
-3. Apply security and policy controls before exposing traffic.
-4. Validate behavior with realistic workload and failure tests.
-5. Operate with observability and optimize iteratively from production signals.
-
-## Real-World Example
-
-A transaction-heavy service uses RDS for ACID integrity and DynamoDB for low-latency high-scale user session workloads.
-
-## Common Pitfalls / Exam Traps
-
-- Selecting DB type without query and consistency analysis.
-- Ignoring partition-key behavior in DynamoDB.
-- Relying on backups without restore drills.
-- Underestimating failover and replica lag behavior.
-
-## Quick Revision Summary
-
-- Define the primary architecture problem solved by this topic.
-- Explain one reliability and one security trade-off.
-- State one cost optimization opportunity and one risk.
-- Describe a production scenario where this design is appropriate.
-- Identify a likely misconfiguration and its operational impact.
-- Memorize when each side of the comparison is preferred.
-- Recall precise definitions for: RDS, DynamoDB.
+## Exam decision rule
+- Choose relational for transactions, joins, referential integrity, and complex SQL.
+- Choose NoSQL for predictable key access, massive scale, low latency, and flexible schema.
+- Do not choose NoSQL just because data is large; analytics may need warehouse/lake services.

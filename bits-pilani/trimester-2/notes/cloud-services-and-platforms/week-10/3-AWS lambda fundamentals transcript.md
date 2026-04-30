@@ -1,70 +1,17 @@
-# AWS lambda fundamentals
+# AWS Lambda Fundamentals
 
-## Why This Topic Matters
+## Function anatomy
+- Handler is the entry point Lambda calls.
+- Event object carries trigger payload.
+- Context object exposes runtime metadata like request ID and remaining time.
+- Deployment package or container image contains code and dependencies.
 
-This note explains serverless architecture patterns for event-driven systems and their trade-offs in latency, observability, and operational simplicity.
+## Runtime behavior
+- Lambda may reuse execution environments across invocations.
+- Cold start happens when new environment must initialize.
+- Memory setting also influences CPU allocation.
 
-## Learning Objectives
-
-- Build first-principles understanding of `AWS lambda fundamentals`.
-- Connect concepts to architecture decisions in real cloud systems.
-- Evaluate security, reliability, performance, and cost trade-offs rigorously.
-- Prepare for scenario-based exam and interview questions.
-
-## Core Concepts and Definitions
-
-- `Lambda`: a serverless compute service that runs code in response to events.
-
-## Intuition Before Mechanics
-
-- Serverless shifts infrastructure management burden to the platform.
-- Stateless function boundaries improve scaling and fault isolation.
-- Event contract design and idempotency determine system correctness at scale.
-- Key technologies here: `Lambda`.
-
-## Architecture / Relationship View
-
-```mermaid
-flowchart LR
-  Trigger[API/Event Source] --> Lambda[Lambda Function]
-  Lambda --> Store[(Data Store)]
-  Lambda --> Logs[CloudWatch Logs]
-  S3[S3 Upload Event] --> Lambda
-```
-
-## Comparison and Decision Framework
-
-| Decision axis | Option A | Option B |
-|---|---|---|
-| Complexity | Lower with managed defaults | Higher with custom control |
-| Flexibility | Moderate | High |
-| Risk profile | Safer baseline | Higher misconfiguration risk |
-| Typical fit | Fast delivery | Specialized constraints |
-
-## How It Works in Practice
-
-1. Define trigger contracts (API payloads, storage events, queue messages, schedules).
-2. Implement stateless business logic with explicit external dependencies.
-3. Apply least-privilege IAM permissions for execution identities.
-4. Tune execution controls: memory, timeout, concurrency, and retry/DLQ behavior.
-5. Instrument metrics/logs and configure alarms for latency, errors, and throttling.
-
-## Real-World Example
-
-File uploads trigger Lambda for processing; metadata is persisted and exposed through API endpoints without managing server fleets.
-
-## Common Pitfalls / Exam Traps
-
-- Non-idempotent handlers causing duplicate side effects.
-- Overloaded Lambda functions with mixed concerns.
-- Over-permissive execution roles.
-- No alarms around error or throttle conditions.
-
-## Quick Revision Summary
-
-- Define the primary architecture problem solved by this topic.
-- Explain one reliability and one security trade-off.
-- State one cost optimization opportunity and one risk.
-- Describe a production scenario where this design is appropriate.
-- Identify a likely misconfiguration and its operational impact.
-- Recall precise definitions for: Lambda.
+## Configuration to know
+- Timeout max is 15 minutes.
+- Environment variables store non-secret config; secrets should use Secrets Manager/Parameter Store.
+- Reserved concurrency caps or guarantees capacity for a function.
