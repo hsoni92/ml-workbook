@@ -372,39 +372,7 @@ DBSCAN can find a ring-shaped cluster. K-Means will always force it into overlap
 
 **The story:** Cash registers log **transactions** (market baskets). You want rules like "if **bread and butter**, then **jam**" — not from physics, from **co-occurrence**.
 
-- An association rule **$X \Rightarrow Y$** links itemsets $X$ and $Y$ that share **no** items.
-- **Support** = fraction of transactions containing both $X$ and $Y$ (joint frequency).
-- **Confidence** = $\mathrm{support}(X \cup Y) / \mathrm{support}(X)$ — "of baskets with $X$, how many also have $Y$?"
-- **Lift** = confidence divided by baseline popularity of $Y$ — **interesting** if $> 1$ (better than independence); near 1 is dull; $<1$ is negative association.
 
-| Story | ML term |
-|-------|---------|
-| Receipts | **Transactions** |
-| Items bought together | **Itemsets** |
-| "If X then Y" pattern | **Association rule** |
-| How often the whole bundle appears | **Support** |
-| Reliability of rule head→body among head | **Confidence** |
-| Beats random co-occurrence? | **Lift** |
-
-> **Association mining = hunt for bundles that show up together — support finds frequency, confidence tests the arrow, lift checks if it is truly special.**
-
----
-
-## Week 13 (continued) — Apriori: The Superset Lock (Pruning)
-
-**The story:** If a **small itemset is rare**, any **bigger set containing it** must be at least as rare (or rarer). So **infrequent itemsets cannot grow into frequent supersets** — **anti-monotonicity** of support. **Apriori** scans levels: keep frequent $k$-itemsets, **prune** candidates for $(k+1)$-itemsets whose subsets were not frequent. No brute-force explosion.
-
-| Story | Apriori Term |
-|-------|--------------|
-| Rare prefix | Cannot become common by adding items |
-| Frequents only grow from frequents | **Apriori / anti-monotone** pruning |
-| Level-wise candidate generation | **Join + prune** steps |
-
-> **Apriori = if the seed combo is rare, do not bother expanding it — supersets are doomed.**
-
-**Key properties / pitfalls:**
-- High **confidence** alone can mislead if the body item is super popular — check **lift** and **support** context.
-- Many rules can be statistically real but **business-boring** — interestingness filters matter.
 
 ---
 
@@ -434,3 +402,38 @@ DBSCAN can find a ring-shaped cluster. K-Means will always force it into overlap
 - **Association rules:** confidence without **lift** can praise trivially popular consequents.
 
 > **If the metric feels too good, ask who leaked, who was scaled, and whether the rare class was heard.**
+
+---
+
+## Week 9 — The Herding Problem (Clustering)
+
+**The story:** No one told you how many tables to set at this dinner party. You just have to watch who gravitates toward whom and form natural groups. That's **clustering** — finding structure without being told the answer.
+
+**K-Means Algorithm Steps**
+
+```
+1. Initialize K centroids randomly
+2. Assign each point to nearest centroid (Euclidean distance)
+3. Recalculate each centroid = mean of assigned points
+4. Repeat step 2 & 3 until convergence (no point switches)
+```
+
+**Convergence = local minimum reached.** Since initialization is random, run K-Means multiple times and pick the run with lowest within-cluster sum of squares (WCSS).
+
+---
+
+### K-Means vs DBSCAN
+
+| | K-Means | DBSCAN |
+|--|--|--|
+| Number of clusters | Must specify $k$ | Discovered automatically |
+| Cluster shape | Spherical / globular | Arbitrary shapes |
+| Outliers | Gets forced into a cluster | Labeled as noise (-1) |
+| Sensitivity | Sensitive to initialization | Sensitive to $\varepsilon$, MinPts |
+
+DBSCAN can find a ring-shaped cluster. K-Means will always force it into overlapping spheres. That's massive.
+
+**When to use:**
+- You know number of clusters → **K-Means**
+- You don't know how many / clusters are weird shapes → **DBSCAN**
+- Data has clear noise/outliers → **DBSCAN**
