@@ -140,12 +140,41 @@ Memory-first stories aligned with the course week map. For topic navigation and 
 
 ---
 
+## Week 5 (continued) — The City Planner vs the Accident Detective (Indirect vs Direct Rule Mining)
+
+**The story — Part A: Indirect (read rules from a tree).** Imagine a city planner who **first draws a full decision tree** of every intersection — which roads branch where, which lights change when — and then **reads off the sign rules** from the tree's paths. Every root-to-leaf path becomes one rule: the conjunction of all tests along the path gives the antecedent; the leaf label gives the consequent. This is the **indirect method**: build a surrogate model (a tree), then translate it into rules. Clean, structured, mutually exclusive (one tuple can only take one path), but the rules inherit the tree's complexity.
+
+**The story — Part B: Direct (mine rules from data).** Now imagine an accident detective who **never builds a map**. Instead, they scan the accident log for **patterns**: "when the speed limit is high AND the intersection has no signal AND the driver is young → crash." They find one strong pattern, write it as a rule, then **remove all accidents that matched that rule** from the log, and start searching again. Keep going until no more useful patterns remain. Finally, add a **default rule** for any accident not covered by the discovered patterns. This is **sequential covering** — the direct method. The algorithm is called **RIPPER** when it adds careful pruning and optimization on top of this skeleton.
+
+**What "general → specific" means in rule refinement.** A rule starts broad (covers many accidents, including ones you don't want). Each additional condition you tack onto the IF side narrows the rule — it becomes more **specific**. You stop adding conditions when the rule is **sharp enough** (high accuracy on covered examples). FOIL information gain measures whether adding one more condition actually improves the rule's ability to isolate the target class or just adds noise.
+
+**What breaks after simplification.** If you strip conditions from rules to make them shorter (faster evaluation), you can **lose mutual exclusion** — one case might now match two rules with conflicting predictions. You can also **lose exhaustiveness** — a case might match nothing, hence the **default rule** (often the majority class of remaining uncovered examples) is always appended last.
+
+| Story | ML term |
+|-------|---------|
+| Planner draws a full tree first | **Indirect**: tree → rules |
+| Detective finds one pattern, removes covered cases | **Sequential covering** (direct) |
+| Adding more AND conditions to narrow a rule | **General → specific** refinement |
+| Stripping conditions for speed | **Rule simplification** (can break mutual exclusion) |
+| "None of the above" catch-all | **Default rule** |
+| Detective's scoring of "does this condition help?" | **FOIL information gain** |
+
+> **Indirect rule mining = read the rulebook from a map someone else drew. Direct rule mining = patrol the accident scene yourself with a notebook, write down patterns, remove covered ground, repeat.**
+
+**Key properties / pitfalls:**
+- Indirect methods inherit the tree's **greedy** nature — rules are as good as the tree was before extraction.
+- Direct methods need careful **stopping criteria** or they'll keep refining until rules memorize noise.
+- Size ordering (specific rules first) vs quality ordering (best rules first) are two conflict-resolution policies — know the difference.
+- RIPPER uses **pruning** to avoid overfitting long rules — that's what makes it practically strong on tabular data.
+
+---
+
 ## Week 6 — The Student Who Studies Only on Exam Day (kNN)
 
-**The story:** **Eager learners** cram a compact model early. **Lazy learners** like **k-nearest neighbors (kNN)** keep the whole training set and only "think" at prediction time: find the **k** closest training points in feature space and **vote** (classification) or average (regression).
+**The story:** **Eager learners** (trees, rules, neural nets) spend training time building a compact model — studying all semester. **Lazy learners** like **k-nearest neighbors (kNN)** do almost nothing during training: they just **store the training data**. When the exam question comes (a new query), they frantically look around the exam hall, find the **k** people sitting nearest to them, and **copy their answers** (majority vote for classification, average for regression).
 
-- **Small k:** wiggly, local, **sensitive to noise**. **Large k:** smoother, more **bias**, may wash out local structure.
-- **Distance metric** and **feature scaling** define what "near" means — unscaled features distort neighborhoods.
+- **Small k:** wiggly, local, **sensitive to noise** — one bribed student can corrupt the answer. **Large k:** smoother, more **bias**, but might wash out the point of asking neighbors at all.
+- **Distance metric** and **feature scaling** define what "near" means — unscaled features distort neighborhoods so badly that one huge-scale feature bullies all the rest out of the distance calculation.
 
 | Story | ML term |
 |-------|---------|
@@ -156,6 +185,32 @@ Memory-first stories aligned with the course week map. For topic navigation and 
 | Same measuring cups for every feature | **Normalize** before distance |
 
 > **kNN = democracy of proximity — redraw the map if you change scales.**
+
+---
+
+## Week 6 (continued) — The Voronoi Arena and the Blindfold Hike (kNN Geometry and Gradient Descent)
+
+**The story — Part A: kNN's decision surface.** With **k=1**, every training point owns a patch of the exam hall — the region where it is the single closest person. Draw boundaries between patches owned by different classes. These boundaries form a **Voronoi tessellation**: each cell is the set of seats closer to you than to anyone else. The classification boundary is where cells of different classes meet. 1-NN can carve **extremely intricate** boundaries — it can memorize the training set perfectly. That's also its weakness: one mislabeled training point owns a little cell of wrong influence right in the middle of the correct region.
+
+**Part B: Weighted voting.** Instead of giving every of the k neighbors equal vote, give closer neighbors **more** influence — typically weight proportional to **1 / distance**. This sharpens the decision: the two closest neighbors matter more than the 8th closest in a k=10 vote.
+
+**Part C: The cost of being lazy.** kNN stores all training data — so memory scales with N. And each query scans all N rows plus dimension d. At large N and high d, this is expensive. **Approximate nearest neighbor** methods (k-d trees, FAISS-style inverted indexes) reduce the scan cost at the price of occasional missed neighbors.
+
+| Story | ML term |
+|-------|---------|
+| Each person's seat territory | **Voronoi cell** (1-NN) |
+| Carving complex territory piece by piece | **1-NN** creates highly flexible, nonlinear boundaries |
+| One bribed student | **Label noise** → 1-NN is sensitive to it |
+| Closer neighbors talk louder | **Distance-weighted** kNN |
+| Store all past exams | **Full training set retention** (memory cost) |
+
+> **kNN does zero work until the moment it needs to answer — then it asks the neighborhood. Zero model-building is its charm and its curse.**
+
+**Key properties / pitfalls:**
+- **k = N** collapses to predicting the **global majority** class — no locality survives.
+- **Even k in binary classification** can tie without distance weighting — always have a tie-break policy.
+- The **curse of dimensionality** hits kNN hard: in high-d spaces, all distances look similar and "nearest" loses meaning. Feature selection or PCA before kNN is often essential.
+- **No scaling** → one dimension dominates distance → neighbors are chosen by that one dimension alone.
 
 ---
 
@@ -194,6 +249,40 @@ Memory-first stories aligned with the course week map. For topic navigation and 
 | Step size dial | **Learning rate** $\eta$ |
 
 > **Regression minimizes prediction error; gradient descent is the blind hiker following the slope.**
+
+---
+
+## Week 8 (continued) — The Blind Hiker and the Ridge Regulator (Gradient Descent and Regularization)
+
+**The story — Part A: Gradient descent in detail.** You're a blind hiker on a mountainside (the **MSE cost surface**). You can't see the whole mountain — you can only feel the slope under your feet. The gradient tells you the direction of steepest ascent. You want the lowest valley, so you step in the **opposite** direction: $\theta := \theta - \alpha \nabla J$. The **learning rate** $\alpha$ is how big a step you take. Too large and you overshoot, bouncing between two sides of the valley or even climbing back up. Too small and you inch forward, taking forever to reach the bottom. For **linear regression with MSE**, the surface is a smooth convex bowl — gradient descent is guaranteed to find the **global minimum** if you take small enough steps and run long enough.
+
+**Simultaneous updates matter.** You compute the gradient for **all** parameters at the current $\theta$ before making any updates. If you update $\theta_0$, then compute the gradient for $\theta_1$ **using the already-updated $\theta_0$**, you've changed the problem mid-iteration — that's not gradient descent on the original surface, it's something messier.
+
+**Part B: Why we regularize.** Without constraint, a linear model can fit the training data perfectly but behave catastrophically on new data — especially when features are highly correlated or when $d$ is large relative to $m$. **Regularization** adds a penalty term to the cost function that discourages the weights $\theta$ from growing unbounded:
+
+- **Ridge (L2):** add $\lambda\sum\theta_j^2$ to the cost — pulls weights toward zero smoothly but rarely exactly zero.
+- **Lasso (L1):** add $\lambda\sum|\theta_j|$ — can set some weights exactly to zero, performing **feature selection**.
+
+The right analogy: you are not just trying to find the lowest valley, you are also trying to stay **near the origin** (small $\theta$). How strongly you enforce that depends on $\lambda$. Too little regularization → overfitting. Too much → underfitting (all $\theta$ near zero, model predicts near the mean everywhere).
+
+**Part C: Closed form vs iterative.** The **normal equations** solve $\theta = (X^TX)^{-1}X^Ty$ directly — one-shot, no learning rate, but requires inverting a $d \times d$ matrix which is $O(d^3)$. For large $d$ (or sparse data), gradient descent scales much better. For small $d$ with invertible $X^TX$, closed form is often faster.
+
+| Story | ML term |
+|-------|---------|
+| Feel slope under feet | **Gradient** of $J(\theta)$ |
+| Step opposite the steepest direction | **Negative gradient** update |
+| Step size | **Learning rate** $\alpha$ |
+| Bouncing or climbing instead of descending | **Oscillation / divergence** from too-large $\alpha$ |
+| Stay near the origin (low $\theta$) | **Regularization** (L2 = Ridge, L1 = Lasso) |
+| One-shot matrix solve | **Normal equations** (closed form) |
+
+> **Gradient descent is the blind hiker who takes small steps in the direction that goes most downhill — keep going until the ground feels flat. Regularization keeps the hiker from venturing into dangerous cliff regions where the view looks great but the drop is lethal.**
+
+**Key properties / pitfalls:**
+- Linear regression MSE is **convex** — one global minimum, no local trap. Deep learning cost surfaces are **not** convex, so gradient descent can get stuck.
+- **Feature scaling** is critical for gradient descent speed — unscaled features make the bowl elongated and GD zigzag wastefully.
+- **$\lambda$** (regularization strength) is a **hyperparameter** tuned by cross-validation, not learned from training data.
+- **L1 regularization** can eliminate features entirely (set $\theta_j = 0$), which is useful when many features are irrelevant.
 
 ---
 
