@@ -357,6 +357,15 @@ The right analogy: you are not just trying to find the lowest valley, you are al
 - **Agglomerative:** bottom-up merges (most common in courses). **Divisive:** top-down splits (e.g. bisecting k-means flavor).
 - **Linkage** decides "closest groups" meaning: single-link (nearest pair), complete-link (farthest pair), average-link (average pair distance), Ward (merge cost in variance) — different sensitivities to chain shapes and cluster size.
 
+**The Linkage — How Do You Measure Distance Between Two Tribes?**
+
+You have two groups of people. How do you define the "distance" between them? Four common answers:
+
+- **Single linkage:** pick the **closest two people** from each group, call that the group distance. Like connecting families by their friendliest member. Risk: **chaining** — a bridge of mediocre connections can merge two blobs that should stay separate.
+- **Complete linkage:** pick the **farthest two people** from each group. Guarantees clusters are **compact and globular** — no member of one cluster is farther from the other cluster than the merge height. More conservative mergers.
+- **Average linkage:** compute **all pairwise distances** between the two groups, take the mean. A fair compromise — neither swayed by the closest pair (single) nor the most distant pair (complete).
+- **Ward linkage:** instead of distance, measure how much **within-cluster variance increases** if you merge. Like measuring the mess introduced — merging two tight families that each keep to themselves costs more than merging two already-messy groups.
+
 | Story | ML term |
 |-------|---------|
 | Daily merger diary | **Dendrogram** |
@@ -364,12 +373,18 @@ The right analogy: you are not just trying to find the lowest valley, you are al
 | Start one blob, split down | **Divisive** |
 | Where you chop the diary | **Cut height** ↔ number of clusters |
 | Definition of "closest groups" | **Linkage** rule |
+| Friendliest member bridge | **Single linkage** (chaining risk) |
+| Most distant pair rule | **Complete linkage** (compact, globular) |
+| Mean of all cross-group pairs | **Average linkage** (fair compromise) |
+| "Mess cost" of merging | **Ward linkage** (variance increase) |
 
 > **Hierarchical clustering = build a merge tree first, decide K later by where you cut.**
 
 **Key properties / pitfalls:**
 - No upfront $k$ required to **build** the tree — but you still choose a cut.
 - **Scalability:** naive agglomerative methods can be costly on huge $n$; BIRCH (Week 12) addresses big data differently.
+- **Single linkage** can produce elongated, chain-like clusters even when true blobs are spherical — know your linkage.
+- **Divisive** (top-down) uses repeated k-means to split — faster in some implementations but greedy: once split, no merge to undo a bad early decision.
 
 ---
 
@@ -397,69 +412,193 @@ Now walk through the party:
 
 > **DBSCAN = party planner who says "wherever enough people cluster within arm's reach, that's a group — everyone else is just standing alone."**
 
-**Key properties:**
-- **No K needed** — discovers clusters automatically
-- Finds **any shape** (even rings, spirals)
-- Outliers → **marked as noise** automatically
-- **$\varepsilon$ and MinPts are hand-picked** — the catch
+**Core / Border / Noise — The Three Guest Types:**
 
-**Core / Border / Noise:**
-- **Core point:** ≥ MinPts within $\varepsilon$ → dense enough to form a cluster
-- **Border point:** fewer than MinPts, but IS within $\varepsilon$ of a core point → on the edge
-- **Noise point:** not a core, not near any core → loner
+- **Core point:** at least MinPts neighbors within $\varepsilon$ — the social hub. If you're a core, you get to **pull in** everyone near you into your cluster.
+- **Border point:** fewer than MinPts neighbors, but sits within $\varepsilon$ of some core. You don't have enough friends to be a hub, but you're **adjacent to** one, so you get grouped in.
+- **Noise point:** not a core, and not within $\varepsilon$ of any core. Nobody's crowd. Marked -1 (or similar) and left unassigned.
+
+**Reachability — How Clusters Grow:**
+
+- **Directly density-reachable:** $q$ is a core, and $p$ is within $\varepsilon$ of $q$. One hop. Note this is **asymmetric** — a border point cannot pull in a core.
+- **Density-reachable:** a chain of core points links $p$ to $q$. Think: $p$ is within reach of core $r$, $r$ is within reach of core $s$, and so on to $q$.
+- **Density-connected:** $p$ and $q$ are both density-reachable from some third point $o$. Symmetric relation — used to tie together border regions of the same cluster.
+
+The cluster grows via **breadth-first expansion** from core seeds: mark all core's $\varepsilon$-neighbors, and for any that are also cores, add their neighbors recursively.
 
 **The Algorithm (3 sentences):**
 1. Find all core points — every point with ≥ MinPts neighbours within $\varepsilon$
 2. Build clusters — breadth-first from every unvisited core point: mark all $\varepsilon$-neighbours as in the cluster; for each that is also core, add THEIR $\varepsilon$-neighbours too
 3. Mark leftovers — any point not reached from a core = noise
 
+**Key properties:**
+- **No K needed** — discovers clusters automatically
+- Finds **any shape** (even rings, spirals)
+- Outliers → **marked as noise** automatically
+- **$\varepsilon$ and MinPts are hand-picked** — the catch
+
+**BIRCH comparison:** DBSCAN is exact but needs full data in memory and pairwise neighbors. BIRCH (next section) summarizes data in a CF-tree for large/sparse data but introduces approximation. BIRCH has **Phases 1-4**: build CF-tree → optional condense → global clustering on leaf centroids → reassign raw points.
+
 ---
 
 ## Week 12 (continued) — BIRCH: The Warehouse Clipboard (Scalable Clustering)
 
-**The story:** You cannot fit every package in the office to measure pairwise distances. Instead, you maintain a **running summary** of each micro-cluster: count, linear sum, sum of squares — enough statistics to compute **centroid** and **radius** without storing every point. **BIRCH** builds a **CF-tree** (Clustering Feature tree): a height-balanced tree where each leaf entry holds a **subcluster summary** (CF) within a **radius threshold**, respecting memory.
+**The story:** You cannot fit every package in the warehouse to measure pairwise distances. Instead, you maintain a **running summary** of each micro-cluster: count, linear sum, sum of squares — enough statistics to compute **centroid** and **radius** without storing every point. **BIRCH** builds a **CF-tree** (Clustering Feature tree): a height-balanced tree where each leaf entry holds a **subcluster summary** (CF) within a **radius threshold**, respecting memory.
 
 - New point? Navigate the tree, find the leaf entry whose centroid is closest; if it still fits the **threshold**, absorb into that CF; else split/add leaf, maybe rebuild.
 - After the tree, optional **global clustering** (e.g. run k-means on leaf centroids) can polish.
 
+**Clustering Feature (CF) = The Three Numbers That Replace Thousands of Points:**
+
+A CF is just three numbers: **N** (count), **LS** (linear sum of all points), **SS** (sum of squared norms). From these you can compute:
+- **Centroid:** LS / N
+- **Radius:** how spread out the micro-cluster is, derived from SS and LS
+- **Merging two CFs:** just add N+N, LS+LS, SS+SS — instant, no raw points needed
+
+This is the magic: you can merge or compare micro-clusters without ever storing a single raw point.
+
+**CF-Tree Structure — The Height-Balanced Index of Summaries:**
+
+- **Root and internal nodes:** store aggregated CF summaries of their children — enough to route a new point down the tree.
+- **Leaf nodes:** hold CF entries, each summarizing a micro-cluster within a **threshold T** (radius/diameter constraint).
+- **Branching factor B:** max children per node — controls tree width vs depth.
+- **Threshold T:** max allowable radius of any leaf CF — too large → under-segmented; too small → huge tree.
+
+**Insert flow:** point arrives → navigate from root, always choosing child whose centroid is closest → reach leaf → try to absorb into closest CF (update N, LS, SS) if still within T → else create new CF entry; if leaf overflows, split and propagate up like a B+ tree.
+
 | Story | BIRCH Term |
 |-------|------------|
-| Summary stats instead of all rows | **Clustering Feature (CF)** |
+| Summary stats instead of all rows | **Clustering Feature (CF) = (N, LS, SS)** |
 | Hierarchical index of summaries | **CF-tree** |
 | "Still compact enough?" | **Threshold** / **T** |
 | Leaf summaries as micro-clusters | **CF entries** in leaves |
+| Merge two clusters without raw data | **CF additivity** |
 
 > **BIRCH = stream huge data through a tree of compact summaries, then refine if needed.**
 
+**End-to-end flow:**
+1. **Phase 1:** incrementally build CF-tree (single scan, or few)
+2. **Phase 2:** optional condense/rebalance
+3. **Phase 3:** global clustering on leaf CF centroids (e.g. k-means)
+4. **Phase 4:** second pass — assign every original point to nearest final centroid
+
 **Key properties / pitfalls:**
 - Built for **large** or streaming-ish data where $O(n^2)$ distance matrices hurt.
-- Still sensitive to **parameter** choices (branching factor, threshold); not a magic auto-clusterer.
+- Each raw point touched **twice** max — not $O(n^2)$.
+- **Order-sensitive:** different input order → different tree → possibly different micro-clusters.
+- Still sensitive to **parameter** choices (branching factor, threshold T) — not a magic auto-clusterer.
+- At the micro-cluster level, still assumes roughly **spherical** clusters (radius threshold).
 
 ---
 
-## K-Means vs DBSCAN
+## K-Means vs DBSCAN vs BIRCH
 
-| | K-Means | DBSCAN |
-|--|---------|--------|
-| Clusters | You pick K upfront | Algorithm discovers them |
-| Shape | Assumes spherical | Finds **any shape** |
-| Outliers | Forced into nearest cluster | Marked **noise** |
-| Centroids | Yes | No |
-| Initialization sensitive | Yes | No (deterministic given params) |
-
-DBSCAN can find a ring-shaped cluster. K-Means will always force it into overlapping spheres. That's massive.
+| | K-Means | DBSCAN | BIRCH |
+|--|---------|--------|-------|
+| Clusters | You pick K upfront | Algorithm discovers them | Algorithm discovers (on leaf summaries) |
+| Shape | Assumes spherical | Finds **any shape** | Assumes spherical at micro level |
+| Outliers | Forced into nearest | Marked **noise** | Absorbed into micro-clusters or left |
+| Memory | All points | All points | **Summaries** (CF) — much smaller |
+| Speed | $O(n \cdot k \cdot iter)$ | $O(n^2)$ naive; better with index | $O(n)$ to build tree |
+| Parameters | $k$ | $\varepsilon$, MinPts | Branching factor, threshold T |
 
 **When to use:**
-- You know number of clusters → **K-Means**
-- You don't know how many / clusters are weird shapes → **DBSCAN**
-- Data has clear noise/outliers → **DBSCAN**
-- Data massive, streaming summaries → consider **BIRCH** before exact pairwise fantasies
+- You know number of clusters + spherical → **K-Means**
+- You don't know how many / clusters are weird shapes → **DBSCAN** (if data fits in memory)
+- Data is massive / streaming → **BIRCH** first, then refine
+- Data has clear noise/outliers → **DBSCAN** (algorithm explicitly labels noise)
+
+DBSCAN can find a ring-shaped cluster. K-Means will always force it into overlapping spheres. That's massive.
 
 ---
 
 ## Week 13 — The Market Basket Detective (Association Rules)
 
-**The story:** Cash registers log **transactions** (market baskets). You want rules like "if **bread and butter**, then **jam**" — not from physics, from **co-occurrence**.
+**The story:** You run a grocery store. You have **10,000 receipts** from last week. You notice something: customers who buy **bread and butter** together seem to also buy **jam** more often than you'd expect by chance. Not a rule written down in the corporate playbook — discovered from the **co-occurrence pattern** in the transaction logs. That's **association rule mining**: finding rules not from physics or logic, but from **frequency of joint appearances**.
+
+**Transaction format:** each row is a basket (receipt), each column is an item (present or absent). You don't care about quantities for basic rules — just **was it bought or not?** The data is binary transaction data.
+
+**The two-step mining pipeline:**
+
+1. **Find frequent itemsets** — groups of items that appear together in enough transactions (above a **minSupp** threshold). These are the raw material.
+2. **Generate rules** from each frequent itemset — split it into antecedent $X$ and consequent $Y$; measure rule quality with **support**, **confidence**, and **lift**.
+
+**Support — How Often Does This Actually Happen?**
+
+$$\text{supp}(X) = \frac{\# \text{transactions containing } X}{\text{total transactions}}$$
+
+If milk appears in 3,000 of 10,000 transactions, support = 0.30 (30%). This is the **baseline popularity** of an item or itemset. A rule needs to beat this baseline to be interesting.
+
+**Confidence — When X Shows Up, How Often Does Y Show Up Too?**
+
+$$\text{conf}(X \Rightarrow Y) = \frac{\text{supp}(X \cup Y)}{\text{supp}(X)}$$
+
+This is **conditional probability** in empirical form: $P(Y | X)$. Of all transactions containing $X$, what fraction also contain $Y$?
+
+Example: `{bread, butter} → {jam}` appears together in 600 transactions. `{bread, butter}` appears in 1000 transactions. Confidence = 600/1000 = 60%. Meaning: 60% of baskets with bread and butter also had jam.
+
+**Lift — How Much Better Is This Rule Than Random Chance?**
+
+$$\text{lift}(X \Rightarrow Y) = \frac{\text{conf}(X \Rightarrow Y)}{\text{supp}(Y)}$$
+
+Compare the rule's confidence to the baseline rate of $Y$ appearing. If jam appears in 30% of all transactions (supp(jam)=0.30), and the rule `{bread, butter} → jam` has confidence 60%:
+
+lift = 0.60 / 0.30 = 2.0
+
+Interpretation: buying bread and butter makes customers **twice as likely** to buy jam than the average customer. Lift > 1 means positive association; lift < 1 means substitution effect.
+
+**Why lift matters:** a rule can have high confidence but still be uninteresting if the consequent is just naturally common. High confidence + low lift = the consequent was going to sell anyway.
+
+| Story | AR term |
+|-------|---------|
+| Receipt / shopping basket | **Transaction** |
+| Items appearing together | **Itemset** |
+| Appears in ≥ minSupp fraction | **Frequent itemset** |
+| "Bread and butter, then jam" | **Rule** $X \Rightarrow Y$ |
+| Fraction of all transactions | **Support** (popularity) |
+| Of X-transactions, how many also have Y | **Confidence** (conditional probability) |
+| Lift > 1 = positive association | **Lift** (vs baseline randomness) |
+
+> **Association rules = finding "if X, then Y" not from logic but from co-occurrence frequency in transaction logs.**
+
+**The Apriori Principle — The Anti-Monotonicity Shortcut:**
+
+If an itemset is **infrequent**, every **superset** of it (adding more items) is also infrequent. Reason: adding items makes the set **harder** to appear in a transaction — support can only go down, never up.
+
+Contraposition for pruning: if `{bread}` is infrequent, you can **immediately discard** all candidates containing bread — `{bread, butter}`, `{bread, milk}`, `{bread, butter, milk}`, everything. You never even count them.
+
+This is the core insight that makes Apriori run: by checking small itemsets first and pruning supersets aggressively, you avoid counting the exponential $2^d$ possible itemsets naively.
+
+**The Apriori Algorithm — Level by Level Up the Itemset Size:**
+
+1. **k = 1:** scan all transactions, count each single item, keep those above minSupp → $F_1$ (frequent 1-itemsets)
+2. **Generate $C_{k+1}$:** join $F_k$ with $F_k$ on items that differ only in the last element (standard join condition), then **prune** any candidate whose any (k-1)-subset is NOT in $F_{k-1}$ (that's the Apriori property check)
+3. **Scan** all transactions to count support of every candidate in $C_{k+1}$ → keep survivors above minSupp → $F_{k+1}$
+4. **Repeat** until $F_k$ is empty or no candidates generated
+
+**The join step:** to make a (k+1)-itemset candidate from two k-itemsets, they must share k-1 items. Example: `{a,b,c}` and `{a,b,d}` join to `{a,b,c,d}`. The join only works if the first k-1 items are identical.
+
+**The prune step:** before counting, discard any candidate containing a subset that wasn't frequent. E.g., if `{a,b}` is not in $F_2$, then `{a,b,c}` and `{a,b,d}` are both pruned — never scanned.
+
+**After frequent itemsets — rule generation:** For each frequent itemset $Z$, generate rules $X \Rightarrow Z \setminus X$ for all non-empty $X \subset Z$. Keep those above minConf. Confidence = supp(Z) / supp(X). All rules from the same $Z$ share the same support (that of $Z$) but differ in confidence.
+
+| Story | Apriori term |
+|-------|-------------|
+| Drop anything containing an infrequent subset | **Prune** by Apriori property |
+| Combine two k-itemsets sharing k-1 items | **Join** to form (k+1)-candidates |
+| Size-k itemsets that survived minSupp | **$F_k$** (frequent k-itemsets) |
+| Candidate itemsets before support test | **$C_k$** (candidate k-itemsets) |
+| Level 1 items → pairs → triples | **Level-wise** generation |
+| Count transactions for every candidate | **Scan** the database |
+
+> **Apriori = start with frequent singles, build pairs, prune anything containing an infrequent subset, scan, grow, repeat until nothing survives.**
+
+**Key properties / pitfalls:**
+- **Anti-monotonicity** is the computational key — without it, enumeration is $O(2^d)$.
+- **Multiple DB scans** are the bottleneck — FP-growth addresses this with a prefix-tree that stores transaction paths compactly.
+- **Lift** is essential alongside confidence — high confidence rules can still be trivial if the consequent is universally common.
+- **minSupp** trades recall vs noise: low threshold → many itemsets (including spurious); high threshold → may miss interesting but rarer patterns.
+- Association ≠ causation: just because bread and jam co-occur doesn't mean buying one causes buying the other.
 
 
 
