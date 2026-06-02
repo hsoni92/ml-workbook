@@ -1,0 +1,65 @@
+Welcome back, learners, to this lesson,
+where we will implement and analyse
+text corpora in Python. Let's set up a
+system for corpus exploration. Welcome
+learners to the 4th lab and hands-on
+session. In this lab, we will do
+hands-on text corpus analysis. But
+before that, let's understand why it is
+important to analyse any text corpus.
+Analysis of a text corpus helps us see
+what data is available in that text
+corpus. It also helps us understand how
+corpora is structured and helps us draw
+important insights of different
+parameters in that text data. All of
+this exercise helps us avoid treating
+text as black box, right?
+So in this lab session what we'll do is
+we'll set up NLTK first, then we will
+load two classic corpora and then
+explore them one by one, right? So
+let's get started.
+So let's first import NLTK and the two
+text copora, Kattenberg coppora and the
+brown copper.
+Now while we have imported the methods
+for these individual corpora, we also
+need to download it from the NLTK
+library. So let's do that.
+OK
+All right. So we are ready.
+Now that we have downloaded the
+Guttenberg Coppora and Brown Coppora,
+let's run a quick exploration before we
+deep dive into them.
+So let's run.
+Gothenburg.
+Dot file IDs.
+So what this is Other contents of this
+copra. So Guttenberg Coppora is created
+from literary classics. So you see Emma,
+Persuasion, Sense, poems by Blake, you
+see Caesar by Shakespeare, Hamlet,
+Macbeth, so on and so forth, right?
+Each of these text files corresponds to
+a classic book.
+Let's now inspect one of these classics,
+right? So for that Let's take
+carolelis.txt.
+Guttenberg.words and then you pass the
+book's name. This will give us the
+words in that text corpora. Similarly,
+guttenberg.sense will give us the
+sentences.
+Let's run them.
+Let's see how many words and how many
+sentences are there. So you see 3410
+total words are present in this book.
+Similarly, 1703 sentences are available
+in this book. It's important to note
+here is that these corpora provide
+tokenized text, and they're already
+preprocessed for us to run any analysis.
+So that's all for this video. I'll see
+you in the next video. Thank you.

@@ -1,0 +1,89 @@
+Let's connect batch inference back to
+the matrix from topic one.
+Latency throughput cost. In batch,
+latency per row is usually not the main
+concern.
+If row takes a few extra milliseconds,
+nobody cares. As long as the whole job
+finishes on time, instead we focus on
+total job time, how long does it take
+to process the entire data set?
+Throughput
+How many rows per second, per minute we
+can handle?
+On the cost side,
+Batch jobs often run at off peak times.
+You can use cheaper compute options
+like spot instance.
+You can tolerate longer wall clock
+times if that saves money.
+So, the matrix dashboard or the batch
+looks like throughput and total job
+time at the top, per row latency
+somewhere much lower on the priority
+list.
+In a batch world, you're thinking, I
+have a million of rows to score and I
+need them. Done by 7:00 a.m.
+The key questions are how fast I can
+chew through this dataset, did the job
+finishes successfully?
+What are my rows per second?
+In an online world, you're thinking, a
+user clicked a button and they expect
+an answer in under 200 milliseconds.
+The key questions are.
+What is my P95 latency? Can I handle
+spikes in real time traffic? It might
+be the same model, but with batch it's
+doing heavy lifting backstage.
+With online, it's on stage, right in
+front of the user.
+That difference in mindset is crucial
+when we choose our serving pattern.
+Just to give you a mental picture,
+here's what a typical batch setup looks
+like at high level.
+You have a data source.
+Maybe data warehouse like BigQuery or
+Snowflake, or a data lake, or a
+database snapshot. A batch job, a
+script or pipeline defined in a tool,
+maybe like airflow, Dexter, or simple
+con job that loads the model artefact,
+reads the input data, run features,
+transformation and predictions. An
+output target, a table, file, or
+feature store where predictions are
+written.
+The job is scheduled, monitored, and if
+it fails, you get an alert, you fix the
+issue, and you rerun the job. This is
+very different operationally from
+online APIs that must be up 24/7 and
+handle live traffic in real time. Let's
+wrap up and connect this to.
+What's coming next? In this video, we
+defined batch inference. As scoring
+many items at once, on a schedule.
+Looked at a use cases where real time
+is not required. Discuss the pros, high
+throughput, simpler infra, easier
+rollback, and the cons, stale
+prediction. And lower feedback loops.
+And we mapped batch into our matrix
+throughputs.
+And total job time matters most, per
+row latency. Much less.
+In the lab, you'll actually build a
+batch client against the same model API
+we used in Module 1. Run it over many
+rows of input data and measure total
+runtime rows per second. Then, in the
+next video, topic 3, we will switch
+perspective to online request response
+inference, where 1 user is waiting and
+P95 latency suddenly become
+non-negotiable. Once you have seen both,
+the difference between batch and online
+will really start to click. Thank you.

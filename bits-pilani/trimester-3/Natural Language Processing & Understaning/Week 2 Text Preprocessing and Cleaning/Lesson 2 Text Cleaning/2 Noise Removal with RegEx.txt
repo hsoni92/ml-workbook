@@ -1,0 +1,231 @@
+Welcome back learners In this video, we
+will understand what noise within text
+is and how we can remove it.
+So what do we mean by noise?
+Within natural language processing,
+noise refers to parts of text that do
+not contribute to any meaning.
+They also increase vocabulary
+unnecessarily.
+Which ends up reducing the model's
+performance.
+Common sources of noise include HTML
+and XML tags, special characters and
+punctuations. Extra white spaces.
+Numbers, emojis, and symbols.
+Noise removal is a text cleaning step
+that prepares text for meaningful
+analysis.
+Why do we use regular expressions, or
+rejects for noise removal?
+Regular expressions provide a flexible
+and powerful way to identify patterns
+in text.
+Remove and replace unwanted characters,
+and it helps us clean text at a scale.
+What we should note is that reject is
+language independent. It is solely
+based on the characters.
+Reject is also widely used in industry.
+And it has become essential for
+production level NLP pipelines.
+If you work with real world text. It is
+highly likely that you will require
+rejects.
+Now let's look at some common noise
+patterns within text. HTML Tax Look at
+this example.
+P tag this is B tag important
+B text P.
+The cleaned version should be. This
+Is
+Important
+Let's look at some special characters.
+At
+Exclamations,
+dollars. Emojis. The cleaned version
+should be NLP.
+Is
+Awesome.
+Extra spaces and new lines. So this
+slash N is a new line character, and if
+you notice, we have extra space here.
+So the cleaned version should be.
+This sentence
+Has
+Irregular spacing.
+So we saw some examples, right, and
+these patterns and more can severely
+distort tokenization and frequency
+counts, which will then further affect
+your NLP application.
+OK, learners, so let's look at how we
+can remove noise from our text data,
+right? The most often and reoccurring
+types of noise that you will see in
+your text data will include a bunch of
+different HTML tags, right?
+And a lot of special characters.
+So these are all your at symbols,
+exclamations, your emojis, right? So
+these two will cover almost 95% or 99%
+of your noise that you will encounter.
+And then there can be special cases for
+which you can define special regular
+expression patterns, right? We'll see
+how you can do that, right? And then
+there is one special case of
+normalising white spaces as well that
+we will look at, OK. So let's look at
+how we can use a regular expressions or
+rejects. To remove noise in your text
+data, right? So first, let's import
+rejects, right? Once we've successfully
+imported it, let's look at this example
+that I have for you.
+Nate HTML tag, this is HTML tag
+important. Another closing HTML tag and
+a closing P tag, right?
+So let's clean this.
+I will call RE or rex and the
+substitute method called sub, right?
+So what the syntax looks like is we
+command rejects to substitute this
+pattern with this pattern in this text
+data, right? So this can be anything,
+whatever it will be, rejects will go in
+the text data and find that pattern and
+replace it with whatever is here, right?
+So let's see one example. So if I pass
+important and I want to substitute or
+replace it with Important, let's see
+how that.
+Well
+So you see, it remains almost the same
+except this important in lowercase has
+been replaced with important in
+uppercase, right? This also tells you
+rejects is case sensitive.
+So let me take that note down for you.
+Rejects is. Case
+Sensitive.
+OK. Now let's come back to HTML tags.
+Now, HTML tags look like this. They
+start with this. There is something
+here in Britain.
+And then they end with another closing
+part, right? So let's define what this
+can be.
+Boom. So within rejects this is the
+pattern for anything. It's called the
+wild character, right, or wild card. So
+it starts with this. A pattern starts
+with this and contains anything and
+ends with this is what rejects will
+find and substitute it with an empty
+string, right? So basically remove it.
+Let's see what that looks like.
+This is important text, super clean.
+Text, right? Cool. Let's also look at
+now removing special cases.
+Let me share another example with you.
+At NLP exclamation, bunch of different
+tags and is awesome, right? Ideally, we
+would want NLP is awesome.
+Awesome. Great. So let's look at how we
+can do this, and this will tell you how
+you can build a pattern in rejects for
+your custom cases, right? So,
+rejects.substitute.
+Pattern pattern
+that data.
+Now the pattern that I'm looking for is
+Defined, let's define it with a list.
+A to Z, A to Z, and slashes. Now what
+this defines is.
+Anything ranging from the lowercase a
+to z, so all the English alphabets.
+Also, anything ranging from the
+uppercase A to uppercase Z, so all the
+uppercase English alphabets and space,
+so white spaces, right? Space
+characters. This will define all of
+your English text. Now what I'll do is
+I will add a carrot top here, right?
+Let's also make it an R string. So when
+we add a carrot top here, what this
+does is the opposite of whatever
+follows. So It is commanding rejects to
+look for everything apart from this,
+which is essentially the main English
+language text, right? Why do we do this?
+We do this because defining all the
+different cases of special characters
+will become an impossible and
+non-exhaustive task for us, right? So
+the smarter way to do is define what we
+don't need to replace. Essentially, OK,
+so let's look at what this will look
+like. Print
+plain text.
+NLP is awesome, right? Now if you, if
+you notice, there is one case, right?
+So if you see there are two white
+spaces here.
+This may be a problem for you. This may
+not be a problem for you. In case it is,
+let's see how we can deal with it.
+So let me share this example with you.
+This sentence has irregular spacing.
+Let me add some more white spaces,
+right? So clean text.
+This is to normalise the white spaces.
+Slashs is for white space and let's add
+a plus for multiple white spaces. Let's
+replace it with empty string from text.
+Also, let's do a script for
+normalisation of the white characters
+follow preceding and succeeding the
+text, right? Let's look at what The
+skin test looks like.
+Oops. This sentence has irregular
+spacing. Hmm. So what have we done here?
+We've successfully found all the white
+spaces. Right, no matter how many they
+were, but we have replaced them with
+empty strings.
+So this has become meaningless, right?
+So what we need to do is we need to
+replace it with a single. Space
+character.
+Bingo, right? So you must be wondering
+why was this not replaced with.
+A single space, right, because of this
+dot strip.
+Who?
+Now, go ahead and try this on different
+kinds of text with different kinds of
+noise that you want to remove, right?
+Get a good hands-on practise with this.
+So we saw multiple examples of noise,
+and how we can remove them, right?
+You must be wondering, should we always
+remove everything?
+And the answer is no.
+Noise removal is very task dependent.
+There is no universal cleaning rule.
+Always align your cleaning decisions
+with the downstream task at hand.
+For example,
+You might remove numbers in one
+application, but they are important
+within financial data. And medical data
+Right?
+Emojis are mostly removed, but they
+become important when you're dealing
+with social media analytics.
+Punctuations can also matter within
+question answering applications and
+sentiment detection.
+That's all for this video, and I'll see
+you in the next one. Thank you.

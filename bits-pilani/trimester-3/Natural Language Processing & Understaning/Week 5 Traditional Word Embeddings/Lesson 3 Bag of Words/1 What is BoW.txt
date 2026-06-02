@@ -1,0 +1,17 @@
+Welcome learners. Now that we have
+learned about one hot encoding, let's
+look at the next word embedding
+technique called bag of words. Bag of
+words is another word embedding
+technique that ignores the grammar and
+order of words. It treats a document as
+a bag. Or a multi set of its words,
+while disregarding grammar and word
+order. However, keeping multiplicity.
+In other words, you can understand bag
+of words as word frequencies.
+Baggo word answers the question, Does
+this word appear in the document, and
+how many times?
+That's it for this video. I'll see you
+in the next one. Thank you.

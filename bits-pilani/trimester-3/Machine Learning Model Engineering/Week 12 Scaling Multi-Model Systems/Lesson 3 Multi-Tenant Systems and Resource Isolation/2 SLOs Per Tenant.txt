@@ -1,0 +1,35 @@
+To manage expectations in multi tenant
+system, we use SLOs, Service Level
+Objectives.
+An SLO is a target for metric like
+latency, availability, or error rate.
+Not every tenant has the same SLOs. A
+VIP external customer might get
+tight latency target and very high
+availability, while an internal, low
+priority tenant might get more relaxed
+best effort guarantees. For example,
+tenant A, 95th percentile latency under
+150 milliseconds and 99.9% availability.
+Tenant B, 95th percentile latency,
+under 400 milliseconds, and 99%
+availability. These SLOs drive capacity
+planning, isolation strategies, and
+incident response. They tell you who
+gets protected first when things go bad.
+To handle multi-tenancies safely, we
+use isolation strategies at several
+layers logical isolation, separate name
+space, projects, or accounts so each
+tenant has its own scope, resource
+isolation, quotas and limits on CPU,
+memory, GPUs, and concurrency, so one
+tenant can't consume everything. Data
+and access isolation, separate data
+stores, odd schemas, and strict access
+controls so tenants can't see each
+other's data. The general idea is
+shared platform but clear boundaries.
+Tenants feel like they are in their own
+environment, even though they share the
+underlying hardware.

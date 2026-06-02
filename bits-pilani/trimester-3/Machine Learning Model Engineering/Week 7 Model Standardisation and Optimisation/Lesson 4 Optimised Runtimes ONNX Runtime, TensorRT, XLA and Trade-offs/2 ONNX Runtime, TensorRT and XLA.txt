@@ -1,0 +1,60 @@
+First, let's look at ONX run time. ONNX
+Runtime is a high performance inference
+engine designed specifically for models
+in the ONX format, where ONNX stands
+for Open Neural Network Exchange. It
+can run on CPUs, run on GPUs, and even
+plug into other accelerators using what
+it calls extension providers, such as
+the CPU extension provider, the Kuda
+extension provider for Nvidia GPUs, or
+Tensor RT's execution providers. OneNX
+runtime comes with built-in graph
+optimisations and provides convenient
+APIs in language like Python, C, C++.
+It's a great default if your
+organisation wants to standardise an
+ONNX and have a portable runtime that
+works across different platforms
+without writing a lot of custom code
+for each.
+Next, let's talk about Tensor RT.
+Tensor RT is Nvidia's dedicated
+inference optimizer and runtime for
+their own graphical processing unit, or
+we call it GPUs.
+With Tensor RT, you typically import a
+model, often from ONLX file. Let Tensor
+RT run heavy graph optimisations, fuse
+layers, and auto-tune kernels for your
+specific GPU model.
+And then it produces a binary artefact
+called a Tensor RT Engine.
+This engine can run extremely fast and
+can take advantage of lower precision,
+such as 16 bit floating point.
+Often abbreviated as FP 16 and 8 bit
+integer, often abbreviated as in 8 for
+quantized inference. Tensor RT is
+usually the right choice when your
+production workload run often mostly on.
+Nvidia GPUs, and you care a lot about
+squeezing out the lowest possible
+latency and the highest throughput.
+Now let's look at XLA, which stands for
+accelerated Linear Algebra. XLA is a
+compiler used inside framework like
+Tensorflow and JAX. Instead of
+interpreting the computation graph step
+by step, XLA compiles the graph into
+optimised machine code, fuses
+operations, and chooses good memory
+layout. XLA can generate efficient code
+for CPUs, GPUs, and TPUs, which are
+Tensor Processing Units.
+As a user, you typically do not export
+separate XLA model file. Instead, you
+enable XLA or just in time compilation
+in your Tensorflow or JAX programme,
+and the framework uses XLA under the
+hood to speed things up.

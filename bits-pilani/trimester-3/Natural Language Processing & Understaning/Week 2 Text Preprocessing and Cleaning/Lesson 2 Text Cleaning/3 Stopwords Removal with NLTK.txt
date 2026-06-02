@@ -1,0 +1,143 @@
+Welcome back, learners.
+In the last video, we saw how we
+removed noise from text, and in this
+video we will look at how we can remove
+stop words from your text data.
+First, let's understand what stop words
+are.
+Stop words are commonly occurring words
+that usually carry very little semantic
+meaning of their own. For example,
+words like the. Is and of. And so on.
+These words appear very frequently
+within text data.
+Can dominate word frequency
+distributions. In the sense The model
+may understand that these words are
+more important than the other less
+occurring words.
+Also, stop words often do not help
+distinguish one document from another.
+In many NLP applications, removing stop
+words helps the model to focus on
+content bearing words.
+So why do we remove stop words?
+Removing stop words can, firstly,
+reduce the vocabulary size.
+And also, improve the performance and
+model's efficiency.
+For example, in topic modelling, words
+like the or is do not help identify
+themes, while words like policy,
+economy, or health do.
+Do note that we will explore topic
+modelling to depth in a future module.
+Lastly, stop words removal is not
+always beneficial.
+We will discuss this shortly.
+Hi learners, let's now look at how we
+can remove stop words using NLTK. OK?
+So NLTK provides a built-in list of
+stop words for multiple languages.
+Let's look at it for English, right? So
+let's download it first.
+So, from NLTK.opus
+stop words.
+Um, so let's import the TK.
+NLTK. download.
+Stop foods?
+Perfect. So now we've downloaded the
+built-in library or list of stopwords.
+Now let's philtre it for the English
+language, right?
+And I'm printing the
+And I'm printing the 1st 20 stopwords,
+so they are this.
+Right? Experiment with this, OK?
+Now this list of stop words is general
+and the purpose is very generic. It's
+default, right? So now, depending on
+your purpose, depending on your domain
+of the problem, you can customise it as
+per your usage.
+Finally, let's look at how we can use
+this to remove stop words from a given
+text data, OK.
+Stop words is usually applied after
+tokenization. So first we break the
+text data into different words and then
+we see which words of those tokens are
+stoppers and we can then remove them,
+right?
+I have a text example for you.
+And Let's tokenize it word by word.
+Oops, we need to download the Punk tab
+library. Let me copy it from you.
+Now it should work.
+Remember we also did it when we were
+tokenizing, right? So Great, our text
+has been tokenized into different words.
+Now let's just philtre out the stop
+words.
+So, filtered.
+Tokens
+Will be a list comprehension, word for
+word. In tokens if Word not in words,
+underscore words. Right, so give me
+every word that is not in this list of
+stop words that we have.
+Wait, so our original sentence was
+natural language processing is a
+fascinating area of computer science.
+The filtered tokens are natural
+language processing is uh has been
+removed, fascinating area of has been
+removed, and computer science.
+Mingo.
+So the final takeaway is that the
+function words are removed is of that.
+And the content words have been
+retained. Now this text is more
+informative for a machine for.
+Further analysis
+Again, practise on your own text data
+as well and get a hang of things.
+Now that we've seen how to remove stop
+words.
+Let's understand when we should not
+remove stop words.
+Stop words are important in certain
+tasks like sentiment analysis.
+For example, words like not, no.
+Never can change the meaning.
+Other applications include question
+answering, language modelling and
+grammar aware tasks.
+For example, let's consider the
+sentence This movie is not good.
+Removing not changes the meaning
+entirely.
+This is why Stopford's removal is a
+design decision and not a thumb rule.
+Custom soft words list.
+Many NLP applications are very domain
+specific, and there may be words very
+specific to that domain which are not
+part of the standard softwares list. So
+you may have a requirement of having a
+list of custom softwares.
+In practise, we often add domain
+specific stop words. And remove certain
+stop words from the default list.
+For example, in product reviews, words
+like product or item may may appear too
+often. And you may have a requirement
+to remove them.
+Within news data, words like said.
+May be uninformative, and you might
+want to remove it.
+Custom soft words list improve task
+performance and model's efficiency.
+That's all for stop words removal. And
+I'll see you in the next video. Thank
+you.

@@ -1,0 +1,65 @@
+Now we can define a feature store. A
+feature store is central system that
+lets you define features once in code
+or configuration. materialise those
+features into both an offline store for
+training and batch scoring, and an
+online store for low latency survey.
+And exposes them through API and a
+catalogue or a user interface.
+The core promise is simple, define a
+feature once, use it consistently
+offline and online, and avoid training
+serving skew.
+Let's break down the responsibilities
+of a feature, typical feature store.
+First, feature definition. You define
+feature in code or configuration.
+Include the entity key, time stamps,
+and transformation logic. Second,
+offline materialisation. The feature
+store runs pipeline to compute feature
+table in your data lake or warehouse.
+And helps you do point in time, correct
+joints for training. Third, online
+materialisation. It pushes the latest
+feature value into a low latency key
+value store and keeps them fresh via
+streaming or scheduled jobs. 4th,
+serving API and catalogue, get
+historical features for training. Get
+online features for serving. And a
+searchable registry so team can
+discover and reuse existing features.
+All of this is aimed at making feature
+engineering reliable, reusable and
+consistent.
+To summarise this video, we separated
+offline features used for training and
+batch scoring from online features used
+for real-time prediction. We compared
+them in terms of data source, latency,
+freshness constraint, and compute
+patterns.
+And we defined a feature store as
+central system, where you define
+feature ones, materialise them into
+both online
+and offline stores.
+And serve them via consistent API and
+searchable catalogue. In the next
+theory video, topic 3, we will look at
+feature store ecosystem, tools like
+Feast, Tacton, Hopsworks, to give you a
+vendor agnostic mental model. In topic
+4, we will talk about reusability,
+metadata, lineage, and governance. And
+in the labs, we will build a tiny
+feature store in a notebook using
+pandas and a Python dictionary. You
+will see training serving SKU and its
+fix in very concrete way.
+Keep this offline versus online split
+in mind, it's the backbone of how
+modern features stores are designed.
+Thank you.

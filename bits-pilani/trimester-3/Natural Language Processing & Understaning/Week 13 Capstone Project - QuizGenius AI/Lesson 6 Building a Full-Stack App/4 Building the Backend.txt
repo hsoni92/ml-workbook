@@ -1,0 +1,483 @@
+Welcome back learners. In this video,
+we will build the back end portion of
+our application, right? We will start
+by building a virtual environment,
+installing the necessary packages, and
+then implementing the backend logic,
+right? So for that, I've come to the
+collab notebook where we implemented
+our logic, right? Our main application
+for running the quiz, right? So what
+I'll do just for reference, I will
+download this as a Python notebook,
+right?
+So I've already done that. You can go
+ahead and do it for yourself. I have
+downloaded it and stored it inside our
+main folder, right? So this is the
+application. Now what I'll do first is
+create a virtual environment. There are
+multiple different ways of creating the
+virtual environment. You can create a
+Python VNV,
+UV VNV, right? What I'll use for now is
+a Konda virtual environment. OK, so
+let's open the terminal. I will go to
+the top, click on terminal, and then
+new terminal. So this is our command
+prompt, right? I will close the
+previous ones. This is a fresh one. Now
+what I'll do is I will.
+Type conduct create dash N and I'll
+name it sequence
+genius.
+And I will declare Python version as
+3.11, and I will also add the yes card
+for agreeing to create the Konda
+environment. I will click enter and
+this should ideally create the virtual
+environment for us.
+Perfect. Our virtual environment is
+created, so I'll copy this on the
+activated Quiz genius. I will paste it
+here. On the activate Quiz genius,
+press enter. And our virtual
+environment is activated. Perfect. Now
+I will travel to the repo of our
+application, which is quizgenius_AI. Go
+to requirements.txt. And then let's
+download the necessary packages. So for
+now I can think of streamlet.
+Google GN AI, which is a Google SDK for
+using Gemini LLMs, and Python.Nv for
+handling environment variables, right?
+So I'm here Click on clip.
+Install
+Look at this bottom right. This is
+where I'm acting. So pip install
+r requirements.txt, press enter.
+Perfect. Our packages have been
+installed. Now let's just run a list.
+OK, so what I did was I ran Pip list,
+and this will list all the packages
+installed in my virtual environment.
+Why I did this is just to capture the
+versions. So Google Geni is this. So
+just put double equals and the version.
+Let's find streamlet.
+Right, and let's find Python.env just
+this.
+OK. This is great. Since
+Essentially no versions were defined
+for us or dictated to us, so we went
+ahead with whatever's available right
+now and then we wrote them here so that
+we can freeze it. Now anyone who wants
+to implement my project can come take
+my requirements.txt and download the
+necessary packages in their environment
+and run this application without any
+difficulties. OK, so this is done.
+Now, let's go ahead. Let me close this.
+Let's go ahead and build the back end
+of our application, the main quizine. I,
+right?
+What you'll need is to create a .NV
+file. Do one thing, right?
+Gemini_API_key. Enter your key here,
+right?
+And then also declare model name and
+enter the model name. A lot of people
+and a lot of industrial applications
+will have the model names also hidden
+in the ENV files, so we'll just follow
+that practise.
+Come to QuizEngine.pi. Now let's do the
+imports.
+So let me add a description for this
+file as well.
+So that anyone who comes from outside
+knows what's happening here.
+OK, so what I've done is I've added the
+name and a quick description, so code
+backend logic for generating quizzes
+using Google's Gemini LM. So this is
+what will happen in this file. Now
+let's begin with the imports.
+So with the coding, I'm also showing
+you the best practises as well.
+Perfect. So what is this? Import JSON
+for handling the JSON response from LLM.
+Import RE for Regex applications.
+Import OS and load.env for loading the
+environment variables. This is the
+Gemini, and this is for using Gemini
+LLMs, and this is for handling the
+response, right? OK, so let's load.
+Environmental variables and
+Our
+environment variables, I think that's
+more better load.nv.
+This will load all the environment
+variables for us. Let me show you one
+model name equals OS.
+getNV
+model name. And let's print model name.
+OK. So let's bring our terminal back.
+I will run
+CLS for clearing it.
+Our environment is already activated,
+so let's run.
+Python quiz Engine.pi.
+The model name is printing here, so we
+know that our environment variables are
+loading. Perfect. So what I'll do is I
+will also load Gemini API key.
+Equals OS. get
+ENV Gemini APL key.
+I will add this. So what I'll do now is
+I will add my Gemini API key. Which
+obviously will not be useful for you.
+You will have to generate your own key
+and add it here, right?
+OK. Now, let's also add some fail-safe
+handling. If not Gemini API key.
+Raise value error.
+Gemini APL key is missing. Please check
+your. DotNV file, right? So just in
+case there is no API key available in
+the .NV file, we will raise this value
+error and the app will stop here itself.
+It will not proceed, OK.
+Now, I don't need this per se.
+So, once our environment variables are
+ready, let's set up.
+Gemini client. So client equals.
+NAI.client, let's pass the API key.
+Equals Gemini API key. OK, so this will
+set up our Gemini client. Also, one
+thing we can do is I add another
+parameter called default.
+And I will add the
+model's name. I'll copy it from here.
+You copy paste it so that I don't make
+a spelling error. OK, so what this will
+do is if it does not find any
+environment variable with the secret
+name model underscorena, it will take
+this value, right? This is safe for us.
+There's no secret which model we're
+using. Now, let's set up our prompt.
+Template
+I'll take our faithful notebook.
+Come here, copy this.
+And past your table. All right. So, you
+see, Earlier we were just taking 1
+input. Now we're taking 12, and 3
+inputs. I'm doing this just so that you
+get ideas of making your app more
+interactive and sophisticated and fun
+for the end user, right? This is just
+to give you more ideas and inspire you
+to do more with your application, right?
+So this is done.
+Now One thing that we need to do, let
+me actually run this as well before
+proceeding.
+OK, so we have successfully run it till
+here. Now I do not need this. So, let
+me
+Close this for now. Now one thing I'll
+add more, which was not part of the
+initial POC was validation. We can
+accept any kind of input from the user,
+but we must validate it so that. It is
+the right input. We make sure that the
+user is not inputting any random
+gibberish, right, and breaks our
+pipeline. We need to. Create pipelines
+such that every input and every output
+is very consistent. OK, so I'll give
+inputs as valid difficulties. So this
+is a list of difficulty levels that are
+valid and only acceptable for our
+application. So easy.
+Intermediate.
+And art the user can only input
+difficulty levels. From these options,
+right? Now, Matt's topic length. Should
+be defined as 200 characters. We don't
+want a paragraph as the topic, right?
+We want legit topics. So, Adding a
+restriction there as well. Then
+max questions or Max.
+Questions? Should be
+Since we are giving the user an option
+to enter the number of questions as
+they like, we should also add a limit
+to it so that they don't enter a very
+bizarre number like 1 million or so,
+right? So let's cap it to 10 questions
+as max and. Main questions similarly
+should be set to 1 or any number that
+you like so that below this number the
+user cannot have any input, right, like
+a -10. We cannot generate -10 questions,
+right? Now for validation, let's create
+a function that will do the validations
+for us so the.
+Validate inputs.
+We will take the topic, which is a
+string. We will take a number of
+questions, which is an end. We will
+take Difficulty, which is a string.
+And we need to output a string.
+I will add a dock string later.
+So let's add the validation logic.
+If not topic,
+Or not topic strip.
+Return
+Topic cannot be empty, right? So this
+is validating. So if the topic entered
+is empty, return this, right? Toch it
+there itself.
+If length of topic dot strip.
+is greater than Max topic length.
+Return
+Topic is too long.
+Please keep it under.
+These many characters, right? So I'll
+take this. Please keep it under.
+Characters, so let's make it dynamic.
+So if at all you change this, it will
+be implemented here as well.
+Now, let's add another validation. If
+not,
+Men Questions?
+Less than a number of questions.
+Close than Max's questions. So if the
+number of questions that the user has
+selected, if it is not between minimum
+number of questions and maximum number
+of questions, then
+Or on
+Number of questions. Must be between.
+Any questions?
+And
+Next question. Right? I hope this makes
+sense.
+No.
+If difficulty, not invalid difficulties.
+Return
+Difficulty must be one of the
+Following
+Valid difficulties, let's do.
+Not join on that. So it will not
+present as a list of strings, but just
+this, right? So this is handled.
+No.
+Final return? Return? None.
+So let's see, we have implemented a
+validation for empty topic, a
+validation for lengthy topic, a
+validation for a number of questions,
+and a validation for valid difficulties.
+OK, great. Now let's add a box string
+to define this function.
+So what does it say? Validate user
+inputs before sending to LLM, right? So
+not only are we validating the inputs
+to maintain the sanity of the workflow,
+but also to save cost on LLM
+applications and API usage, right? So
+validate the user inputs before sending
+to the LLM returns an error message if
+the string is invalid or none if all
+inputs are valid, right?
+Perfect.
+Now that we've done the validation of
+the user inputs. And prompt definition,
+let's now implement quiz generation
+logic. So this will be
+Very similar to this.
+However, let's type it out. Ourself and
+include the necessary modifications. So
+generate. Who is
+Top pitch is a string.
+We need a number of questions, which is
+an end.
+Let's also define 3 as the default.
+Difficulty should be string.
+Let's define Intermediate as default
+and
+I think we need just 3 inputs, so topic.
+Topic, numb questions and difficulty,
+like this will return.
+Uh, dictionary or none.
+Another doc string to define this
+function, which I will add later, all
+right? Now, let's implement. So first,
+validate.
+Error
+Validate inputs.
+Topic Um
+Questions?
+And
+Difficulty. So what we're doing, we're
+calling this function to validate these
+inputs, right?
+It's error Right, so if everything is
+validated, it should return none,
+otherwise it will return an error,
+right? So if error. Please Value error
+and the error.
+Now, once the inputs are validated,
+let's.
+Build the prompt. So prompt or prompt
+this prompt template.
+format.
+Right. Topic will be topic. strip,
+which is the user input.
+Dot strip is just to remove the white
+spaces, right? Let me just obtain some
+consistency here. Numb questions should
+be for numb questions.
+And difficulty will be equal to
+difficulty. Now our prompt is ready. So
+for example, if the topic entered by
+the user is mathematics, it will
+implement mathematics here. So.
+Multiple choice quiz about mathematics.
+Similarly, if the number of questions
+is 3, it will enter here 3 question
+multiple choice, and then if the
+difficulty level is, say easy, it will
+enter easy here. The rest of the prompt
+remains the same.
+Now, let's start implementing. So try.
+Response equals client.mos. generate
+content.
+Model
+Equals model name.
+Contents equals.
+Prompt
+And conflict.
+Equals
+So config equals types.
+Generate.
+On and
+config.
+And this will be a response.
+Lime
+Type equals. Application slash Jason.
+So if you remember, we implemented this.
+Already? Yeah, right? Let me copy this
+itself so that I don't end up making.
+Spelling mistakes.
+All right, we are ready. This way we
+will get a response. Now, text equals
+response.text. Now we have the response.
+Stored here in raw text. Now that we
+have the response from the LLM we need
+to extract the Jason from it, OK? So
+let me copy.
+This
+Right from here.
+Correct. Now, Let me show you an
+alternate way of implementing this ALS.
+So Jason_
+String equals
+Match.group. One, which is this.
+It's
+If much. Else
+Raw text.
+That's it.
+We condensed 4 lines into 1. That's the
+magic of Python.
+Right? You remember we implemented this
+as well. So let me copy it from here.
+One or two
+Now,
+Let's load.
+Quiz data Jason brought.
+Lords
+Clean Jason's team.
+She just let me just name it clean just
+for brevity, no other reason.
+OK.
+Now that we have the response from the
+LLM and we have cleaned it and stripped
+it off any unwanted characters, let's
+do a basic structure validation.
+If
+Questions
+Not in
+Who is data.
+Then raise value error.
+LLM, the response.
+Missing
+Questions key. Right, why are we doing
+this? We have received a till here we
+ensure that we have received a JSON
+response. However, we want to also
+ensure that the JSON is of this formula,
+right? So we will take any critical key
+from here and see if it is present here
+as well. You can implement other
+validations with other keys as well.
+Now that we have cleaned and passed and
+validated the LLM response, let's
+return it in this function. OK, I think
+we have a decent function, Andy with us.
+Let's also add the doxin to complete it.
+Also, Docstring is very optional but
+highly recommended. It is a very, very
+good practise and shows that you are a
+seasoned Python programmer.
+Generate a quiz using the Gemini LLM.
+Odd
+Topic
+The subject for the quiz.
+Numb questions.
+How many? Questions to Generate
+And
+Difficulty.
+One of the
+Difficulties from here.
+OK. Sorted. Full stop. Full stop. And
+what does this return?
+Uh, dictionary.
+With
+His title and questions.
+Wrist or none?
+If failure.
+All right. We have implemented our main
+function for the quiz generation logic.
+This is great.
+Let's see, oh, we've missed something.
+So you see these squiggly red lines?
+This says that you have implemented the
+drive lock, but you have not
+implemented the accept block. OK. We
+were celebrating a little too early,
+but no worries, except Jason. Jason
+decode error as E.
+failed to pass.
+The quiz Jason from
+Hi um response.
+And this will be the error.
+And let's add another.
+Exception as E.
+Please runtime error.
+Quiz
+Generation failed. And for whatever
+error.
+Now, let's check if everything is
+complete.
+It looks complete
+Great. So, this was it for the backend
+development. I hope you are excited for
+the front-end development and then the
+final demo and testing of the
+application. All right, I'll see you in
+the next video. Thank you.

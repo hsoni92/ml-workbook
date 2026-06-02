@@ -1,0 +1,147 @@
+Similar to stemming Let's now look at
+lematization.
+Lematization is the process of reducing
+a word to its base or dictionary form,
+known as the lemma.
+Unlike stemming, Limitation produces
+valid words.
+Limitization also considers the meaning
+and grammatical role of the word. And
+it uses linguistic knowledge, such as
+vocabulary. And part of speech
+information.
+For example,
+The lemma for word running is run.
+The lemma for the word better is good.
+And the lemma of a word studies is
+study.
+It's important to note that
+limitization focuses on semantic
+correctness, and not just surface
+patterns.
+Let's look at why lamentation is more
+accurate than stemming.
+Stemming blindly removes suffixes.
+Whereas lematization asks, what part of
+speech is this word?
+And what is the correct base form?
+Let's look at an example of the word
+playing.
+As a verb, it should be reduced to play.
+But as a noun
+Playing should remain unchanged.
+This makes lematization very useful. In
+tasks like text classification,
+information extraction. Question
+answering.
+And semantic analysis task.
+OK, learners, Let's now look at how we
+can implement lematization using NLTK,
+right? So let's Quickly import the
+necessary packages. So from NLTK.stem
+import WordNet Lematizer and let's also
+import NLTK because we need to download.
+Some built in libraries.
+Perfect.
+Now let's initialise the WordNet
+lematizer.
+And
+Now, let's compliment lemonizer. Dot
+lemma ties.
+And what should we pass? Let's pass a
+running.
+Running was running, no problem.
+Let's try studies.
+Studies begin study. If you remember
+our STEMming lecture.
+Studies was reduced to just study and
+not study, right? OK, now let's run it
+for, OK, now let's run it for a bunch
+of different words.
+So connect was reduced to connect.
+Connected was not reduced to connect as
+opposed to stemming, where it remained
+connected. Connecting was connecting,
+connection was connection, right? Let's
+also do it for a different example.
+Running, running, better, better
+studies, it was reduced to study and
+doing it too.
+All right.
+All right, so now your task is, again,
+to practise this for different words
+and different variations of words.
+Limitation is poss aware.
+By pause, we understand part of speech.
+The default pause is a noun.
+The results of lematization improve
+drastically when the part of speech, or
+pause, is specified. N stands for noun,
+V stands for verb, A is an adjective,
+and R is an adverb.
+By now it must be clear that pause
+aware lematization always aligns better
+with linguistic meaning.
+OK, now let's also quickly see how we
+can do limitization with spacey library,
+right? So let me copy this.
+Go ahead. Spacey.
+Spacey is one of the most used
+libraries or packages for NLP in
+industrial use cases.
+So, let's quickly import Spacey. And
+Download its library.
+Now in spacey, how things are is that a
+lot of things happen under the hood, so
+we need to create a dock.
+Of NLP. Which is this.
+Of Our text data. Text data, let's see.
+It is. The children were playing happy.
+OK. Now, for token and doc.
+Let's print.
+The token.
+And it's malematization.
+Books
+It should be next.
+Right, so you see, firstly, the
+uppercases were normalised, so the
+became the with lowercase, children
+became child, were became b, playing
+became play, happily became happily,
+right?
+So you can also see that lematization
+with Spacey is much more effective,
+right? And also you don't have to run
+tokenization before lematization. One
+more thing to note with Spacey is that
+Spacey does not provide option to run
+stemming. It believes that limitization
+is a much more better process for
+preprocessing text, right? So now your
+task becomes to practise limitization
+with both NLTK and Spacey with
+different text.
+Now that we've seen both stemming and
+lamatization, Let's look at some
+differences and see when to use what.
+We should use stemming when speed
+matters, because stemming is way faster
+than limitization.
+Stemming is also much more useful in
+exploratory analysis of text data.
+Stemming can also be useful in tasks
+where slight inaccuracies are
+acceptable, whereas.
+We should use lematization when the
+word's meaning matters.
+Limitation is also useful when we need
+clean, interpretable tokens.
+And lastly, limatization is used while
+we're building production grade NLP
+systems.
+We must understand that there is no
+universal best choice, and it depends
+on the task. And the decision is at
+your hand.
+That's all for this video. I'll see you
+in the next one. Thank you.

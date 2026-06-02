@@ -1,0 +1,41 @@
+The second technique is pruning. The
+idea is to remove parts of the model
+that don't contribute much of its
+prediction.
+There are two main styles. Unstructured
+pruning zeroes out individual weights
+based on some importance score.
+That leads to very sparse matrix. But
+you often need special kernels to
+really benefit from the sparsity.
+Structured pruning remove entire neuron,
+philtres or channels. That changes the
+shape of the layer but gives you a
+smaller, dense network that standard
+hardware can handle efficiently. In
+most workflow, you prune weights
+according to some creations.
+Then fine tune the model for a new
+epoch to regain some of the lost
+accuracy. Pruning is especially useful
+when you suspect that your model is
+overparameterized.
+The third technique is known as
+distillation. Here, instead of just
+shrinking the same model, we keep a big,
+accurate teacher model, design a
+smaller student model with fewer
+parameters, and train the student model
+to imitate the teacher's output. The
+key idea is that the student doesn't
+just see the Hard label, cat or dog? To
+see the teacher's full probability
+distribution over classes which
+contains extra information about which
+classes are similar. As a result,
+students can end up much smaller and
+faster, but often more accurate, and
+another small model trained only on
+hard labels. Distillation is very
+popular when deploying to edge on
+mobile devices. Thank you.

@@ -1,0 +1,101 @@
+Now let's look at retrieval Augmented
+generation, or RAG. A typical rag
+pipeline works like this.
+A user query comes in.
+Usually a text, you embed the query
+using an embedding model.
+You use that embedding to retrieve the
+top K relevant document from a vector
+database.
+You might optionally re rank the
+retrieved document with another model
+to refine the order. You then feed the
+original query plus the selected
+document into generator model, often a
+large language model. The generator
+produces the final answer, ideally
+grounded in the retrieved document.
+The key idea is that you combine search
+and generation. Rather than relying
+solely on what the generator has
+memorised, notice that a rag pipeline
+is multimodal by design. You typically
+have an embedding model to produce
+vector for queries and documentation, a
+vector database or retrieval layer that
+uses those vector to find candidates.
+Optionally, a re ranker model that
+reorder the retrieve documentation for
+quality, and a generator model that
+produces the final text answers. On top
+of that, you might add caching for
+embeddings or retrieval search, and
+routing by domain, tenant, or language.
+So RAG is a perfect example of the
+multi-modal pattern we have been
+discussing in Module 12. Everything we
+learned earlier in Module 12 shows up
+here. You can shard your vector
+database by tenant, region, or domain,
+for example, separate indexes for
+customer support, product documents,
+and internal knowledge.
+You can use caching to avoid
+recomputing embeddings or retrieval
+results for frequent queries, and even
+cache final answers
+when they are reusable. You can
+implement multi-tenancy by giving each
+tenant its own index or name space
+in the vector database, combined with
+access control, so they only see their
+own data.
+So at a scale, a rack system is really
+a large multimodal, multi-tenant,
+sharded and caste system.
+Where does this show up in practise?
+Everywhere. Semantic search and Q&A
+over documentation or knowledge base.
+Customer support assistance that uses
+pass tickets and docs to answer user
+questions, personalization and
+recommendations that rely on embeddings
+of users and items, code and log search
+where you want to find similar snippet
+or error patterns.
+And enterprise knowledge system, where
+you run RAAG over internal documents
+and reports. If you see a system that
+can answer questions over your data,
+there is usually a vector database and
+some
+form of retrieval augmented pipeline in
+the background.
+To wrap up, embedding let us represent
+text, items, and other entities as
+vector so that similar things are close
+in vector space. Vector databases store
+those embeddings and metadata and
+provide fast similarity search, often
+through approximate nearest neighbour
+algorithm. Retrieval augmented
+generation pipeline combines query
+embedding, retrievals, optional
+reranking and generation into a
+multimodal system. At a scale, these
+setups use the same pattern we have
+covered sharding, caching, and
+multi-tenancy, plus all the monitoring,
+retraining and governance practise for
+previous modules.
+The big idea, modern machine learning
+in production is really just a model
+file. It's a combination of models,
+plus data and retrieval infrastructure,
+working together to serve your
+application.
+In the labs and later modules, you can
+build small versions of these ideas and
+start thinking like a model platform
+engineer, not just a model trainer.
+Thank you.

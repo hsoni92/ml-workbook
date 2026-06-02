@@ -1,0 +1,56 @@
+Now let's talk about online feature.
+Online features are computed or
+retrieved at request time. One entity.
+At a time, one user, one session, one
+item, or ad.
+They are stored in low latency key
+value store like Radis, Amazon, Dynamo
+DB, or Cassandra. This allows us to
+read them quickly using a key like
+customer ID. Online features must be
+available in just a few milliseconds.
+Be up even under high traffic, and be
+reasonably fresh, reflecting recent
+events.
+This is the world your model actually
+lives in during serving.
+Here is how online features typically
+fit into serving flow. Step one. A
+request arrives containing a customer
+ID, session information, and some
+context. Step 2, the service performs a
+feature lookup in the online store by
+key to get features like 30 day spend,
+churn score, or last activity time.
+Step 3. We might apply small on the fly
+transformation or combine these
+features with request context. Step 4,
+we call the model with this feature
+vector and return the prediction. For
+all of this to work in real time, we
+need very fast lookup and a stable API
+for feature retrieval.
+Let's put online and offline features
+side by side, data source. Offline
+feature live in data lake or warehouse.
+Online features live in a key value
+store or cache. Use case
+Offline is for training and batch
+scoring. Online is for real time
+prediction.
+Scale and latency.
+Offline job can process many rows with
+minutes or hours of runtime.
+Online serving handles one entity at a
+time and has to respond in milliseconds.
+Freshness. Offline features are as
+fresh as the last batch.
+Online features strive for near real
+time freshness, or as refreshed
+frequently. Compute Offline pipelines
+can do heavy joints and aggregations.
+Online pipelines usually do fast
+lookups and lightweight transformation.
+Both sites are about the same feature
+concept, but optimised for different
+constraints.

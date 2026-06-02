@@ -1,0 +1,59 @@
+So how do these techniques compare? A
+rough mental model is. Quantization is
+often the best first step. It's
+relatively easy to apply, especially
+with post training.
+Quantization And give big gain on speed
+and memory for small drop in accuracy.
+Pruning is useful when your model is
+clearly bigger than it needs to be.
+Structured pruning can shrink the
+network in a way that leads to a real
+speed improvements. Distillation is
+powerful if you're willing to invest
+more in training, you can design a
+smaller architecture tailored to your
+constraint and train it to mimic a
+strong teacher.
+No matter which technique you use, the
+rule is always measure model size,
+latency, accuracy before and after.
+Don't guess. Let the number tell you
+whether the tradeoff is worth it for
+your use case.
+Let's zoom out and see where
+compression fits into bigger picture.
+You can think of it as a post training
+steps. You train a base model, as usual?
+Then you apply compression.
+Quantization, pruning, distillation, or
+some combination. You export the
+compressed model to a standard format,
+like ONNX. And finally, you run it in
+production on an optimised runtime,
+like ONNX runtime or Tensor RT.
+Compression is simply another tool in
+your MLOps toolbox to make sure your
+model actually meets latency runtime,
+cost constraints, and hardware limits.
+To wrap up this video, we learned the
+intuition behind quantization, pruning,
+or knowledge distillation, and we saw
+how they trade model size and speed
+accuracy against accuracy. In the next
+theory video, topic 4, we will look at
+optimised runtime like ONX runtime,
+Tensor RT and XLA tools. That take a
+model graph and squeeze more
+performance out of the hardware. In
+your Module 7 labs, you will start with
+a pre-trained CNN, measure its baseline
+size and latency, export it to ONNX.
+And run it with ONX run time. Then
+compare the before and after numbers.
+Later, you can combine these labs with
+the idea from this video by adding
+quantization or other compression
+techniques to see how much further you
+can push performance in practise. Thank
+you.

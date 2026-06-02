@@ -1,0 +1,90 @@
+Welcome back, learners. In this video
+we will look at STEmming.
+So what is stemming? Stemming is the
+process of reducing words to their base
+form, also known as the stem.
+The goal of stemming is to normalise
+different word forms. It also helps
+reduce vocabulary size.
+And it helps the model to treat related
+words as the same token.
+For example,
+Words like connect, connected,
+connecting.
+All have the same base word, or base
+form. Which is Connect.
+Similarly, play playing played can be
+reduced to the base form play.
+Do note that stemming is a rule based
+approach, and does not consider the
+context or meaning of words.
+Now let's understand the requirement of
+stemming.
+Stemming becomes very useful when the
+exact word form is not important.
+It helps us group similar words
+together.
+It also increases the speed and makes
+preprocessing simple.
+Some common use cases for stemming. Can
+be seen in search engines. Information
+retrieval. Topic modelling
+Early NLP pipelines mostly included
+stemming.
+Stemming helps natural language
+processing models to focus on core word
+patterns, rather than surface level
+variations.
+OK, learners, now let's see how we can
+implement STEMming with LTK.
+Within NLTK there are mainly two
+algorithms for stemming. The most
+popular one is Porter stemmer, and the
+next one is Snowball stemmer. Let's
+look at Porter stemmer for now.
+So let's import it.
+From NLTK.stem import.
+So let's look at it
+From NLTK.stem import auto stemmer, and
+then let's initialise the stemmer,
+right?
+Now, let's pause. Any word, so Ps. stem.
+So running became a run, right?
+It's also try FTS stem.
+Iran, Iran Iran.
+Now let's try a bunch of different
+words.
+PS. stem. Word Forward
+And Woods.
+And let's also print.
+Stems? So the words connect, connected,
+connecting, and connection. All were
+reduced to the root word or the stem
+called connect, right? Let's also try
+it for another set of words.
+Running became run better was better,
+studies was reduced to study and doing
+became. 2
+They Now your task as practise is to
+run this on different words and
+different variations of the same word,
+and also you can try the snowball
+stemmer.
+Now stemming has some limitations.
+Let's look at that.
+Stemming can produce non words.
+It also ignores word meaning and
+context.
+Over stemming can merge unrelated words.
+While under stemming, may fail to group
+some related words.
+For example,
+organisation and organ may get similar
+stems, while they have completely
+different meanings.
+Another example is a word like better.
+Which may not reduce to a meaningful
+base form.
+Because of these limitations, stemming
+is not always ideal.
+That's all for this video. Thank you.

@@ -1,0 +1,45 @@
+How do we actually measure drift?
+Start simple per feature, track means
+and standard deviations over time. Look
+at min max and missing rates, plot
+histograms comparing training data to a
+recent time window. On top of that,
+there are classic drift tests.
+PSI Population Stability Index as a
+high level stability score.
+KS test
+Kalagorov-imirov for continuous
+variables.
+She square test, or frequency
+comparison for categorical features.
+The basic idea is always the same. Take
+a reference distribution.
+Maybe training data or a stable period.
+Compare it It with the recent video,
+last week or last month, and flag
+features, those distributions have
+shifted beyond some threshold. You
+don't need perfect statistics. You need
+useful, explainable signals.
+Once you can measure drift, the next
+question is, when do we actually alert
+human?
+Good candidates for alerts. Several key
+features show strong drift at the same
+time. Label rates or overall moral
+performance cross a bad threshold. A
+critical segment, say a country or
+product line, show a big change. But we
+also want to avoid alert fatigue. Don't
+page load for every tiny bump?
+Look for sustained or significant drift.
+Group related signals into a single dri
+drift incident, instead of spamming
+slack.
+Route alert to the right owners. Some
+issues are data pipeline problems, some
+are model issues, some are infra issues.
+The goal is that an alert means stop
+and look at this, something materially
+changed, not mute this channel because
+it's always noisy. Thank you

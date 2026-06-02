@@ -1,0 +1,76 @@
+Welcome back. Bye now. You've seen how
+checkpointing can save a job from
+crashing by truncating long lineage
+chains. But a common question arises.
+Wait, isn't this just about cash or
+purchase does,
+while both mechanisms are used to speed
+up spark jobs and provide resilience?
+They serve very different purposes.
+And behave pretty differently under the
+hood. In this lesson, we're going to
+differentiate these two critical
+resilience mechanisms. So you know
+exactly when to use each of them.
+Let's look at the comparison table on
+the next slide.
+The most fundamental difference between
+the two is how they handle lineage.
+When you use caching or persistence,
+Spark keeps a copy of data, but it
+preserves the lineage as well. If an
+executor fails and the cached data is
+lost, Spark uses that preserved lineage
+to recomput the cached data from the
+original source itself.
+However checkpointing, as we discussed,
+completely truncates the lineage. It
+deletes or destroys the lineage.
+Once the data is retained to a reliable
+storage, the memory of how it was
+created is wiped clean.
+This makes checkpointing better for
+stability in long chains.
+While caching is better for performance
+in shorter ones.
+Now let's look at the storage.
+Caching is designed for speed, so it
+typically lives in memory or local disc.
+This makes it fast to access. But lazy,
+it's bound to the specific spark
+session itself. Once your session ends,
+your cash is gone. But checkpointing is
+designed for extreme persistence. It
+writes to a reliable distributed
+storage like HDFS or S3. Because of
+this, the checkpointed data is
+persistent, even after the session exit.
+You could
+Theoretically start a new spark session
+and pick up exactly where the last one
+left.
+By reading the checkpointed file, you
+can do that.
+And then finally, let's consider
+reliability. Cache data is vulnerable.
+If a node or an executor fails, that
+local cache is lost.
+But checkpointing being distributed
+across the cluster is fault tolerant at
+the hardware level itself. One
+important technical note mentioned on
+the slide is checkpointing is typically
+an eager operation in Spark. When you
+call it, Spark immediately triggers a
+background job to write that data,
+whereas caching is lazy and only
+happens when an action is called.
+To summarise,
+Cash for speed in reuse. Checkpoint for
+stability in long alternative pipelines.
+In our next lesson, we'll look at the
+actual implementation, how we configure
+Spark to talk to backends like HDFS and
+SI to store these checkpoints.
+See you in Lesson 4. Till then, happy
+learning. Thank you so much.

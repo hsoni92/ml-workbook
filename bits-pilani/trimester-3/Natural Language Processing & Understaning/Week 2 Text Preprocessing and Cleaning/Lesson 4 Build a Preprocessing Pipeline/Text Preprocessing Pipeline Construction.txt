@@ -1,0 +1,154 @@
+Welcome back, learners, to your first
+lab. In this video, we will construct a
+proper text preprocessing pipeline.
+So why do we need a preprocessing
+pipeline, you may ask.
+So far we have learned individual
+preprocessing steps like tokenization,
+noise removal, stop words removal,
+stemming and limitization.
+However, in real world NLP systems,
+these steps are not applied in
+isolation.
+Whereas they are combined into a
+pipeline that can be reused across data
+sets for different tasks. A
+preprocessing pipeline ensures
+consistency. Reproducibility,
+scalability, and cleaner downstream
+modelling for different NLP tasks.
+The order of preprocessing steps
+matters a lot for different NLP tasks.
+A typical and very effective order is
+as follows.
+First, we will do text normalisation.
+Then follow it up with noise removal.
+Tokenization Stop words removal.
+Stemming or lamatization, as per our
+choice.
+And may we may follow it up with some
+phrase level handling.
+Do note that incorrect ordering can
+lead to loss of information and
+inconsistent results. Welcome learners
+to the first lab of this course where
+we will build a complete text
+preprocessing pipeline that will
+convert your raw text to machine
+processible text formats, right? So,
+first things first, let's import a
+bunch of different libraries that we
+will require. RE for regular
+expressions, NLTK for NLTK purposes,
+Word tokenize for tokenization, stop
+words. This will be the stop words
+library for stop words removal.
+Word net lemonizer for lemonization,
+right?
+Now let's download the list of in-build
+sowords and also initialise WordNet
+Lematizer for lematization.
+OK, that's done.
+Now let's build a few helper functions.
+The first one would be.
+Be text
+Which will perform
+Pets screening.
+So let's see. This will normalise all
+text and bring everything down to
+lowercase.
+Then we will remove everything that's
+unwanted, everything that's noise to us,
+right? We've seen these implementations
+already, and we will return the clean
+text.
+All right. So, screening is done.
+Now, let's, let's, let me also add.
+Some comments for helping out?
+Tokenization. After cleaning, let's do
+tokenization. So,
+Tokenize text, we will take text as
+input and we it.
+We're done.
+What
+Tokenize on text.
+La
+Straightforward, we've seen this as
+well.
+Now let's implement stop words
+stop words.
+Removal.
+We have already downloaded the list of
+stopwords. What we do is on tokenized
+text, we will just check which word is
+part of the stop words library, and we
+will remove it.
+Finally, let's do lematization.
+Lematizer, which we initialised here,
+so lematizer.lematize word for word in
+tokens, right?
+Now let's build a function that will.
+Implement all these utility functions.
+So let's define preprocessed text that
+will first clean the text. Using
+dysfunction.
+Tokenize using this function. Remove
+stop words using this function and then
+lematize using this function, and what
+it will return is a bunch of clean and
+processed tokens.
+Right? So let's implement these
+functions.
+Now let's apply this pipeline to raw
+text.
+I have a sample of rawtex ready for you.
+Let's
+We process
+You should.
+Let's not confuse with the variable
+names and function names.
+OK. So this is the raw text. Here we
+will pass this text to our function
+which implements all of these steps,
+and then we will print out the output.
+Oops.
+We need to download Tongue tap. Let's
+download Tongue tab as well.
+Absolutely correct.
+Let's implement it here.
+And we need verb net.
+For
+lematization.
+Fly.
+Bingo. So natural language processing
+is an exciting field of AI has been
+firstly normalised to lowercase and
+let's see what all has been removed. So
+natural remains natural language
+processing is and has been removed,
+exciting field. And AI is AIU.
+Perfect.
+Perfect. Now bear in mind this
+preprocessing pipeline is ready-made
+for general purposes. This is a
+ready-made template for you to use and
+maybe also modify it for your use case,
+right? So go ahead and implement this
+pipeline and then apply this pipeline
+on a bunch of different pieces of raw
+text.
+Different NLP tasks may require
+different preprocessing pipelines.
+For example, sentiment analysis.
+May require us to keep negation words.
+Topic modelling may require. Aggressive
+stop towards removal.
+Named entity recognition, or NER, may
+require very minimal preprocessing.
+Whereas in search engines, stemming may
+be preferred over lamentation.
+We must note that a preprocessing
+pipeline should always be task aware,
+data aware, and flexible.
+That's all for this video, and I'll see
+you in the next one. Thank you.

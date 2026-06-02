@@ -1,0 +1,69 @@
+Let's name the problem clearly.
+Training serving skew.
+Training serving SQU happens when model
+sees one distribution of features
+during training and a different
+distribution of features during serving.
+This can happen because training and
+serving use different code path, they
+use different time window, like 30 days
+versus 7 days.
+They pull data from different sources,
+or apply different philtres.
+Or, because of an ETL pipeline, changes
+in production but not in your training
+job. The result is painful.
+Your offline matrix looks great, but in
+production, the model suddenly
+underperforms, and it's not obvious why.
+Here is a concrete example of training
+serving skew. During training, we
+define a feature called Customer 3D
+Average Spend.
+The average spend over the last 30 days
+for each customer. Computed from
+complete transaction history. But
+during serving, someone implements the
+feature quickly and said accidentally
+uses only the last 7 days of data. And
+uses a different philtre and includes
+or excludes transactions differently.
+Now the model is expecting a 30 day
+behaviour pattern, but it's actually
+seeing a 7 day snapshot, even if the
+feature is named the same. The semantic
+are different.
+That's training serving skew.
+Why is this dangerous?
+The model has been trained.
+To use a particular feature
+distribution, for example, 30 days
+spend value that range in a certain way
+and correlate with churn or risk in a
+certain way. If you suddenly feed it
+features based on 7 day spend instead,
+the scale and distribution change. The
+threshold and weights the model learned
+stop matching reality. Business metrics,
+like conversions or the conversions.
+Chance or fraud detection degrades. The
+worst part, this can be very hard to
+debug. Logs may look fine, features are
+present, there are no obvious error,
+offline evaluation looks good, but in
+production, the mismatch quietly
+poisons the model. The root cause
+behind a lot of skew is that feature
+logic lives in ad hoc places. A
+notebook here, a SQL script there, a
+slightly different Python function. In
+the serving code in production, we want
+a single, single source of truth for
+each feature, one definition of
+customer 30 days spent.
+Reuse consistently for both training
+and serving. Ved, testable and
+documented.
+This is what pushes teams toward future
+pipeline and eventually feature stores.
+Which we will cover in the next videos.

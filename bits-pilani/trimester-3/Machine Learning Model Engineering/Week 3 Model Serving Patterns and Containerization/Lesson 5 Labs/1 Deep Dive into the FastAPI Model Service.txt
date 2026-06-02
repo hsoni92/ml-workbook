@@ -1,0 +1,358 @@
+Welcome to the 3rd Handsome lab. In
+this session, we will look into the
+fast API model service. This service is
+the core of our model deployment.
+And uh here, the goal is to understand
+three basic things, how the API is
+structured, where the model is loaded,
+and uh what happens to a request when
+we hit uh predict endpoints. OK. So,
+let's start with how an end to end
+machine learning solving pipeline works,
+OK? So you have created this uh
+directory, lab 3.
+And uh for this lab, we will train a
+very simple model, a basic uh linear
+regression model using a dummy data set.
+The goal here is not to build a useful
+uh or uh production-ready model. The
+goal is only to understand how the
+training process looks, what files get
+uh created, and uh how a trained model
+is produced, OK? So let's first
+understand how the files and folder are
+arranged uh in this project because uh
+this structure is something you will
+see very often in uh real ML projects.
+Check out the training script. So like
+I mentioned, very, uh, simple training
+script. Um, in the real world, we
+usually do not train model from scratch
+like this. As we already learned
+earlier, we can directly, uh, download
+pre-trained model from hugging face and,
+uh, use them, and then probably
+post-training, right? So think of this
+training script as a placeholder. Today,
+we are using trainmodel.Py
+to train a dummy model and generate a
+model artefacts. But later in the
+course, we will replace this training
+script with uh Something else, instead
+of uh training a script, we will write
+something like a
+download .py script, OK? And that
+script will download a pre-trained
+model from hugging face, uh, we'll
+store it inside a model folder. So
+currently we have this model.
+PKL, but we have seen when you download
+model from hugging face, so that model
+artefacts will be available inside
+model folder, right? And then that
+downloaded model will. And then that
+downloading model will act as a model
+artefact. So that model we can load uh
+inside our application and use it for
+inference. But for this experiment, we
+have uh our own training script and uh
+we are training this model and uh
+creating model artefacts here. Uh, like
+this modern Logan. OK. So let's open
+.py.
+And here, the first thing you can see,
+uh, we have imported the fast API. So,
+fast API is a Python framework used to
+build APIs. Here, it helps us serve our
+trained ML model and uh expose a
+prediction in point.
+Uh, and here we are creating the
+First TPA instances.
+And this app object is the root of all
+endpoints, OK? And uh here, uh, we pass
+in metadata like um title and uh
+description.
+So, fast API uses this information to
+automatically generate documentation,
+which is a huge benefit while consuming
+this API. You can take this file. App.
+PYE as the front door of our service,
+it creates the fast API app.
+And all our routes or endpoints will be
+attached to, to this object. So the
+framework knows what to do with the
+incoming requests. So, we understood,
+uh, we're using fast API then we have
+Pyrite,
+uh, which here we are using it for
+input validation. And we have seen how
+we have created the fast API app object.
+Now, let's try to understand this part
+of code. So, this is uh perhaps the
+most uh important serving pattern in
+this file. Notice how we load the model
+here. Uh, first, we define the model
+path, which is, uh, model.
+PKLL and use joblib.load to load the
+model. Uh, basically to de-sterilize
+the modern artefacts, right?
+And the key point here is that this
+code runs once. When the application
+starts up, OK? Not on every single
+prediction request. Why, uh, is this
+critical? Because, uh, uh, loading a
+large model can take seconds or even
+minutes, right? So we load these heavy
+object one and then reuse the same
+instance uh across the incoming
+requests, right? So this is how we keep
+pre-request latency low and uh ensure
+our service is fast. And if the model
+file is missing,
+Uh, we handle the file not found error
+gracefully, which is a good practise
+for, uh, a robust service. Yeah. So,
+now we just understood how to load the
+model. This is the validation for
+inputs. Here, we have created the fast
+API, uh, object. Now, let's, uh, scroll.
+Uh, a little bit down and uh try to
+understand the simplest uh endpoint,
+the route path. So, this last is
+basically the Route path, this act as
+uh our health check.
+So this endpoint is crucial for
+operational visibility, infrastructure
+components like uh cuanities,
+load balancer, and uh
+Uh, monitoring system, use this to
+check, uh, uh, like, uh, is this
+process running? Is this process up?
+And, uh, Uh, if these endpoints return
+a non-200 status code, so it signal an
+alarm that the service is down or
+unhealthy. Uh, in more advanced setup,
+a health check might also verify the
+Model loading, uh, or that a database
+connection is reachable or not, you can
+always add more, uh, logics over here
+to validate the multiple components.
+But for now, whenever you call this, uh,
+Endpoint, it will give you this message
+if your application is running. So now
+let's move to the next endpoint, that
+is uh predict and uh
+This function is the heart of this
+service, the predictting point. First,
+uh, look at the prediction request
+class. This is a pedantic model that
+defined the expected input structure.
+So, when a JSON request comes in,
+Bydentic automatically handles
+validation and parsing for us. So,
+basically, it enforced that feature one
+and feature 2 must be Uh, floating
+point, uh, numbers, right, which we
+have defined over here. So, that's the
+purpose of, uh, Bydentic. Now, let's
+work the flow inside the predict
+function.
+Uh, the incoming request, right? Uh,
+and this is again, if the model is not
+over there, if, if there is any issue
+in the model, then it will return the
+model not loaded, uh, error. So it's uh
+just for validation.
+Now, uh, the incoming request object,
+which is, uh,
+Already validated, uh, is converted
+into a numpi array, right? So this tip
+is a form of, uh, data transformation
+to match the exact input shape the
+circu-learn or Scal-learn model expects,
+right? Then we call model.predict. Uh,
+this is the inference step. And, uh,
+finally, we return a clean, tight
+response. This entire process, uh,
+validation, transformation, inference,
+and response is the serving pattern you
+will repeat for most, uh, ML APIs,
+right?
+So this is our predict function. Then
+we have another
+endpoint, which is uh model info. And
+if you see here inside, we don't have
+uh any uh logic. It's uh just a
+hard-coded uh feature of model. So just
+a sample. So when you call this model
+info
+endpoint, basically, it will return you
+the, uh, model info. So, yeah, that's
+all. So here, the main function right
+now we have is the predict function,
+and if you want to check the health of
+the API if it's running or not, you can
+always call this uh app.kit, right? The
+root uh endpoint. Now our fast API is
+ready. Uh, let's uh try to run this
+application, OK?
+Uh, OK. Before we test our API we need
+to train and save the model, right. Uh,
+here, I have showed you the example,
+but, uh, actually, we haven't, uh,
+trained this model, right? So let's, uh,
+run the training script from the
+terminal.
+Let's uh open the terminal.
+Make sure you have a.
+Activated the virtual environment and
+Here in this uh folder directory, we
+have uh another set of. Dependencies.
+So before running this script, let's
+try to install the dependencies. You'll
+be
+good. Install.
+Uh, labs, 3.
+And then we have this requirement. DXT.
+And here we have to pass out from that.
+Right, so.
+Now we have installed all the
+dependencies.
+OK, now run this uh training script by
+um.
+Love 3.
+Uh, let's go inside this directory CD.
+Lab 3.
+And now
+Run this training train model.py OK? It
+will take a few seconds. This file will
+get executed. And uh our model will
+save as model.pel and you can see model
+is trained and uh
+Great. The model file has been created,
+so now let's uh test our API using
+Bruno. So before call this API we have
+to start this application, right? Fast
+API application. So, how we can run
+this, we have to type UV card app.
+Colon, cap.
+Relaunch.
+Here, the reload flag enables auto
+reloading during uh development. So the
+server restart whenever you modify any
+piece of code.
+Right, in this directory. So now you
+can see the server is now running on
+STTP 127.0.0.1.
+And port is 8000. Let's test the health
+check invite using Bruno. Now, open
+Bruno and uh create a get request to
+this uh URL. And uh test our uh root
+health checkpoint, OK?
+Uh, so this is, uh, Bruno
+UI.
+Uh, so, basically, what is, uh, this
+Bruno?
+Bruno is an open-source API client
+designed for testing and uh exploring
+APIs, right? Uh, think of it as uh an
+alternative to tools like uh Postman.
+But with a focus on being fast,
+lightweight, and uh developer-friendly.
+And it's open source, so it's
+completely free and, and if you talk
+about the licence, uh, it has uh open
+source uh MIT licence, meaning you can
+use it without uh distinction, right?
+And uh it's uh built with developers in
+mind. So supporting environment
+variables, script and automation. So
+it's quite easy to use. If you want to
+download Bruno, just go and type.
+Use your.
+Juno.com.
+And uh you can download it from here.
+Right.
+So
+OK.
+So now create a new collection, your
+collection name of lab 3.
+You have to pass the location.
+Yeah.
+So here, uh, left side, you can see the
+collection has been created. Now create
+a new request.
+Request name
+And
+Check.
+Yeah.
+Now Copy this, uh.
+You want them?
+Paste it here. And uh if you go back
+and
+Check, uh, we want to call this route,
+uh, endpoint, right? So just, uh, pass
+this and let's try to execute it.
+After sending this request.
+Uh, we can see 200 OK message and uh.
+Uh, uh, with, with this, uh, uh,
+response message, right? So, this
+confirms our API is up and running and
+the model has been successfully loaded,
+right? So let's try, uh, some random
+thing, uh, test, because we haven't
+created this API, so ideally it should
+throw some error, right? 404fo
+and uh. We have this API so that's the
+reason we are getting the right message.
+You can also try this uh URL in your
+browser. So let's go here.
+Uh, type of. Dogs.
+And uh it will give you all the details
+what uh Uh, in points we have created
+in our application. So here also you
+can execute, but uh I would prefer
+using uh Bruno. Uh, you can explore uh
+web application as well.
+So now let's uh come back to the Bruno.
+Now, let's call the another endpoint.
+Uh, if you remember, we had also
+created, uh, more info, right?
+So save this.
+Request. Go here.
+The collection which we had created.
+Create new request, uh. Let's check, uh,
+more info, right?
+Great
+Uh
+and uh.
+Copy the same URL over here as well and
+call mode.
+Info.
+Right? And we are getting the static
+result. Which we are simply passing it
+over here, right?
+Now
+Let's call our 3rd. The main endpoint.
+Predict.
+Again, the same URL and here.
+The point is predict, and this one is
+the post request.
+And it takes input in a
+Just informant?
+Uh And if you remember, we have a
+Let's go back and check your text input
+as a feature 1 and feature 2. So let's
+pass as.
+Feature 1, feature 2 in adjacent format,
+and it's called the model. So you can
+see we are getting the prediction. Uh,
+we can also change the number.
+And try. And we are getting the
+different uh prediction, right? So
+that's all we can uh call the End
+points. So we have seen, we have
+created the application, faster the
+application, and now we are calling it
+via.
+Bruno, API client.

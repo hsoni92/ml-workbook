@@ -1,0 +1,86 @@
+Why should we care about security for
+machine learning specifically? First,
+these models increasingly sit in the
+decision loop for real things loan
+approvals, fraud checks, content
+moderations, healthcare triage, dynamic
+pricing, and more. If they are attacked
+or misused, the damage hits both users
+and the business. Think unfair
+decisions, privacy leaks, fraud, losses,
+regulatory fines, and reputational
+damage. Second, machine learning
+systems are often harder to reason
+about than rule-based logic.
+That makes them Attractive targets.
+Attackers can keep poking your model
+with inputs and observe the outputs,
+trying to find weaknesses. So security
+becomes part of being a good model
+engineer, not just an add-on for
+someone else to figure out.
+We will group threads into 4 buckets
+first.
+Data threat, poisoned or low quality
+training data, skewed samples, or
+corrupted labels that quietly change
+what the model learns. Second. Input
+threads, unusual or adversarial style
+inputs. Out of distribution traffic, or
+simple abuse patterns that push the
+model outside its comfort zone. 3rd,
+model and privacy threat situations
+where an attacker tries to reconstruct
+the model or extract sensitive
+information from its output. 4th.
+Infrastructure and access, unprotected
+APIs, weak authentications, or exposed
+locks. And feature stores, we will walk
+through each bucket at high level,
+focusing on what to watch for and how
+to think defensively. Let's start with
+data threat.
+Data poisoning is the idea that someone
+or some process manages to inject bad
+or malicious data into your training
+set. Over time, the model may learn
+behaviours that benefit an attacker,
+for example, approving certain
+fraudulent pattern more often. Even
+without a deliberate attack, you can
+get label noise or inconsistent
+labelling over time. Maybe different
+team apply slightly different rules, or
+a bug mislabel a portion of the data.
+Your offline matrix looks fine, but the
+model is learning from shaky ground.
+Finally. skewed sample, where some
+group, region, or behaviours are over
+or underrepresented, can create blind
+spots and fairness issues. As model
+engineer, we don't need to be paranoid,
+but we do need to assume that data
+quality is a security and fairness
+concern, not just an accuracy concern.
+Next are input threats.
+Problems at prediction time. Models
+assume that incoming data looks similar
+to what they saw during training, when
+they receive out of distribution inputs,
+strange formats, extreme values, or
+completely new patterns.
+Their predictions can become unreliable.
+On top of that, there are adversary
+style inputs.
+At a high level, this is when someone
+deliberately crafts inputs or sends a
+large number of queries to explore your
+model weak spots and decision
+boundaries. Even simple abuse pattern
+matters, an attacker might hammer your
+API with many variations until they
+find one that bypasses a fraud rule or
+the content philtre. Detection, rate
+limiting, input validation and
+monitoring are unusual input patterns
+are your friend here.

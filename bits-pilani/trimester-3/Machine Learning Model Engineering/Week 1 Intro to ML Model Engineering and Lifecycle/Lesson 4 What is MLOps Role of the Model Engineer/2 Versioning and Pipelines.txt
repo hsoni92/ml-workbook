@@ -1,0 +1,60 @@
+First key envelopes practise its
+versioning. In regular software we
+version the code in envelopes, we also
+need to version data, the exact dataset
+or feature snapshot used to train model,
+model artefact or checkpoints, config,
+hyperparameter, thresholds, routing
+rules. Feature flags.
+Why? Because we care about
+reproducibility.
+Can we recreate this exact model?
+With the same behaviour what we had 6
+months ago.
+Auditability.
+If someone asks, why did the system
+make this prediction for this user, can
+we track it back to specific model and
+data set? Safe rollback. If a new model
+misbehaves, can we quickly revert to
+previous known good version?
+Versioning everything is foundational
+to treating ML as a real, accountable
+system.
+Second practise, reproducible pipelines.
+Instead of a bunch of ad hoc scripts
+and notebooks, we want an end to end
+pipeline that describes how we ingest
+and validate data. How we do feature
+engineering? How we train and evaluate
+model, how we package and deploy them,
+reproducibility here means. Given the
+same input and environment, we get the
+same output, and anyone on the team can
+run this pipeline, not just the
+original author, but everyone. This
+dramatically reduces it only works for
+my laptop and makes debugging and
+collaboration a lot easier because
+everyone is using the same shared
+process.
+Third practise, CICD for ML.
+On the CI side, we test data,
+transforms, training code. Inference
+code, run checks on matrix and model
+quality, for example, does this model
+beat the baseline?
+On the CD side, which is continuous
+deployment, we do automatically package
+new model version.
+Use safe rollout patterns, like canary
+deployments.
+Small percentage of traffic.
+Shadow deployment, no user impact, just
+comparison, or AB tests.
+The goal is to ship small, frequent,
+safe changes rather than giant, risky
+release once every few months.
+In ML, this is especially important
+because both data and models are
+evolving.

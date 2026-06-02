@@ -1,0 +1,38 @@
+Now let's define our micro batching
+ingestion.
+Micro batch is still batching, but the
+batches are smaller, and they run much
+more frequently, like every 1 to 5
+minutes. Conceptually, it feels like
+almost streaming, but implemented as
+many small batch jobs. You might
+implement this with spark structured
+streaming, Flink or beam in micro batch
+mode.
+Or even with a corn job that runs a
+small script every few minutes.
+Micro batch is great when you need
+freshers feature.
+You don't Need per event updates. For
+example, updating user session features
+every 2 minutes. Refreshing risk or
+fraud scores every 5 minutes.
+Recomputing last 15 minutes of clicks
+periodically. It's a nice compromise.
+Latency is much lower than a daily
+batch, but the architecture and tooling
+can remain closer to batch, which many
+teams already understand.
+Here is a micro batch example for risk
+scoring.
+Every 5 minutes a job, read the last 5
+minutes of transactions. Compute
+features such as spend in last 5 and 6
+minutes. Or numbers of failed loggings.
+Runs a risk model and writes updated
+risk score values into database.
+And downstream services or dashboard
+read that latest risk score when they
+need it. You get a near real time risk
+score without building a fully event by
+event streaming system. Thank you.

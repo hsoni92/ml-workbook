@@ -1,0 +1,70 @@
+Welcome back. In the last video, we
+identified a significant challenge. How
+do you calculate metrics like an
+average or a sum on a data stream that
+never ends? You can't wait for the end
+of the data to perform an aggregation.
+The solution is temporal segmentation,
+or what we call windowing, which is
+shown on the slide. Think of a
+windowing as placing a frame over a
+specific section of the timeline to
+group events for processing. There are
+3 main types of windows you should know.
+The first is tumbling windows. These
+are fixed size and non-overlapping. For
+example, if you set a 5 minute tumbling
+window, the system processes data from
+12 to 12:05, then clears the buffers
+and start fresh for 12:05 to 12:010.
+The 2nd type of windows are sliding
+windows. These are also fixed size, but
+they overlap. You might want to see the
+average price over the last 10 minutes.
+Updated every single minute. This
+provides a smoother, more continuous
+look at the data. Another third is
+session windows. These are dynamic and
+activity based. They stay open as long
+as data is arriving and close after a
+specific gap of activity. This is
+perfect for analysing a user's
+behaviour during a single website visit.
+While windowing is great for looking at
+chunks of time, sometimes we need to
+remember things across the entire life
+cycle of the stream. This is where the
+global state comes in.
+Unlike windowing, which clears data
+periodically, the global state
+maintains a persistent state store
+which is in memory. This allows the
+system to handle three critical tasks
+running totals, let's say if you need
+the cumulative sum of all sales since
+the start of the year. You can't use a
+window. You need a state that grows
+with every transaction. The next is
+user context. This is vital for
+personalization. We need to remember if
+a user is currently logged in, what's
+in their shopping cart, or their
+previous 5 clicks to suggest the right
+product in real time. Then machine
+learning updates in advanced
+architectures, we use a stream to
+perform online learning. We update
+model parameters continuously as data
+arrives, ensuring our prediction evolve
+as the market changes. Understanding
+when to use a Windows versus when to
+maintain a global state is a hallmark
+of a skilled data architect.
+We have now covered the how off stream
+processing logic. But how do we ensure
+that our data is reliable in our next
+lesson? We'll look at the different
+processing guarantees, like exactly
+once versus at least once, and how to
+choose the right one for your
+application.

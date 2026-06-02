@@ -1,0 +1,23 @@
+The big takeaway from this video is
+simple. Monitoring is not optional for
+production machine learning. A mature
+machine learning system needs the usual
+system health monitoring CPU, memory,
+error rates, latency, data health
+monitoring, schemas, distributions,
+drifts, quality checks, predictions,
+health monitoring, model metrics over
+time, fairness, business KPIs. Only
+when we watch all three. We can say the
+service is up, the input looks sane.
+The predictions are still good and fair.
+In next video, we will get more
+concrete. On what does a good machine
+learning monitoring set up looks like?
+Which metric should we log?
+How do we build or start a dashboard
+and alerts that catch issues before
+they hurt users? This is where we start
+turning models from one of deployment
+into a reliable, long running system.
+Thank you.

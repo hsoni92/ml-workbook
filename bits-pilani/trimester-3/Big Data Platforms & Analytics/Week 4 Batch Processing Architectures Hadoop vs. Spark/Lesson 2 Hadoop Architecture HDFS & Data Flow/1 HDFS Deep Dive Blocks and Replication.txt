@@ -1,0 +1,59 @@
+Welcome back. In this video, we're
+going to do a deep dive into the
+storage layer of the Hadoop ecosystem,
+the HDFS, or the Hadoop Distributed
+File System. To understand why Hadoop
+behaves the way it does. We have to
+look at how it physically handles your
+data.
+We encounter the fundamental unit of
+HDFS storage, the block. Unlike a
+traditional PC file system that might
+use a 4 KB or 8 KB blocks, HDFS is
+designed for big data, meaning it uses
+massive blocks, sizes, typically 128 MB
+or even 256 MB. Why so large? It's all
+about reducing seek time.
+By making the blocks large, the time it
+takes to transfer the data from disc
+becomes significantly longer than the
+time it took to find the start of the
+block. This optimises the system for
+high throughput sequential reads, which
+is perfect for batch processing. Now
+let's move to the next slide.
+storing data in a large block is
+efficient, but it's also risky. In a
+cluster of thousands of commodity
+servers, hardware failure isn't a
+possibility. It's a mathematical
+certainty. This brings us to the slide
+and the SDFS replication strategy. By
+default, HDFS follows a 3x replication
+rule. When you upload a file, HDFS
+doesn't just store one copy to each
+block, it creates 3. But it's the
+placement of these copies that makes
+SDFS so resilient. SDFS is rack aware.
+Typically, the 1st copy stays on the
+local node. The 2nd copy is sent to a
+different node on a completely
+different rack. The 3rd copy is placed
+on another node with the same 2nd rack.
+This strategy provides a perfect
+balance. If a single disc fails, you
+have two other copies. If an entire
+rack loses power or its still network
+switch fails, you still have a copy of
+your data on a different rack
+altogether.
+This block and replicate model is the
+bedrock of Hadoop's reliability,
+ensuring that even in the face of
+hardware chaos, your data remains safe
+and accessible.
+In our next video, we'll see how
+MapReduce data flow. Actually interacts
+with these blocks to process
+information. Till then, happy learning.
+I'll see you in the next class.

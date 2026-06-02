@@ -1,0 +1,69 @@
+Now that we have covered the theory and
+the internal mechanics of RDDs, it's
+time to actually roll up our sleeves
+and create something. There are 2 main
+ways to create an RDD in Spark. And in
+this video we are going to look at the
+first one. Which is paralysing local
+collections. As you can see on screen,
+the concept here is very
+straightforward. Often when you're
+starting a project, you might have a
+simple amount of data already sitting
+in your Python code.
+Maybe it's a list of numbers, a
+dictionary, or an array of strings. To
+turn that local list. Into a
+distributed RDD you use the command
+sc.paralllyze, and in the argument you
+provide your data. The SC stands for
+Spark context, which is your entry
+point to all Spark functionality. When
+you run this command, something very
+cool happens behind the scenes. Spark
+takes that list from your driver's
+memory, chops it into the partitions we
+discussed earlier, and physically
+copies those pieces out to the worker
+nodes in your cluster.
+So why would you use this method?
+The answer is prototyping and testing.
+It's the fastest way to test a small
+bit of logic without needing to connect
+to a massive external database,
+synthetic data. It is great for
+generating simple data sets for
+simulation. Just remember, since this
+data starts on your drive.
+The main computer running your script,
+this method is only for small data sets.
+You wouldn't want to try this with a
+500 GB file. OK, now let's jump into
+the code. So in line number 4 we are
+creating a Spark session. And then in
+line number 5 we have created something
+called spark context that we already
+discussed. Now I have a small list of
+names that I have.
+And then I want this list to be
+converted into RDT. I need to call this
+command called Sc.pananalyze, but what
+happens is Spark will actually convert
+this list into this RDD.
+And then we can, you know, print and
+see what are the values in this
+particular RDT. So the values are the
+same as the list, but actually this is
+RDD. To validate that, we'll just
+verify. What is the type of object that
+we have created and clearly on screen
+you can see it's a Pie Spark RDD that
+we have created. Now that you know how
+to turn local code into an RDD.
+What do we do when our data is too big
+for our local machine? In our next
+video we'll look at the method 2, which
+is loading data from external.
+Files or external sources. I'll see you
+in the next class. Till then, happy
+learning. Thank you.

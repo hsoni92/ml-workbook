@@ -1,0 +1,52 @@
+Welcome to.
+Now that we understand why we
+distribute, let's look at the first
+major architectural pattern, which is
+centralised learning, also known as
+parameter server model. In a parameter
+server model architecture, we divide
+our computing resources into two
+distinct roles parameter servers and
+workers. Think of the parameter server
+as a brain or the central repository of
+the model. Its job is simple but
+critical. It stores the current state
+of the model weights or parameters. The
+workers, on the other hand, are the
+muscles. They do the heavy lifting of
+processing data. Here's how a single
+training step typically works in this
+model. First, a worker pulls the latest
+version of the parameters from the
+server itself. Then the worker takes a
+batch of data. And perform a forward
+and backward pass to compute the
+gradients. Finally, the worker pushes
+those gradients back to the parameter
+server. Once the server receives these
+gradients, it applies an optimisation
+algorithm like SGD to update the global
+weights. So why would we choose the
+centralised approach? The parameter
+server model is particularly ideal for
+large, sparse models that have a
+massive number of parameters.
+Sometimes in the billions. A classic
+example would be large scale
+recommendation systems where you have
+massive embedding tables because only a
+small fraction of the parameters might
+be updated in any given step. Having a
+dedicated server to manage that state
+is very efficient. However, as we scale
+up the number of workers, we have to be
+careful. If you have too many workers
+trying to talk to one server at the
+same time.
+That central server can become a
+bottleneck, slowing down the entire
+training process. In our next video,
+We'll look at a decentralised
+alternative. That addresses this very
+specific problem, which is the ring,
+all reduce strategy.

@@ -1,0 +1,100 @@
+Welcome back to Module 3, Model serving
+patterns and containerization. So far
+in this module, we have talked about
+what a model serving layer actually
+does.
+How it can be structured as monolith,
+or microservice or a surless function
+and how client talk to it using APIs
+like REST or GRPC in sync or a sync
+patterns. In this video, we are going
+to answer a new question.
+How do we actually run this model API
+in the real world? We will look at
+basic deployment of a model service,
+safer rollout patterns like blue, green,
+or canary releases, and auto scaling,
+which helps your service keep up with
+traffic using without wasting money.
+We will also connect all of this to the
+dockerized fast API service, which
+you'll be using in the labs.
+Let's quickly recap where we are. In
+topic one, we discussed the
+responsibilities of serving layer,
+loading the model, validating input,
+running inference, scrolling formatting
+output, and handling loggings and
+errors. In Topic two, we looked at
+serving architectures, monoliths,
+microservices, and serverless.
+In topic 3, we covered APIs, R versus
+GRPC, synchronous versus asynchronous
+call. At this point, you can imagine a
+nice post predict endpoint implemented
+in something like fast API sitting
+behind whatever architecture you choose.
+Now ask
+Where does this service actually run, a
+VM? A container cluster, how do we
+update it without breaking anything?
+And when traffic grows, how do we scale
+it up and down?
+Those are deployment rollout and auto
+scaling questions we will tackle in
+these videos.
+We'll start with the simplest possible
+deployment, one instance. In early
+stages, we might have a single VM or a
+single container running your model API.
+It listens to the port like 8000 either
+directly or behind a simple payload
+balancer or a reverse proxy.
+Configurations easily usually happen
+through. Environment variables, model
+parts, port, feature flags, secrets, or
+small config files in JSON or YAML file.
+For small internal tools or an early
+prototype, this is good enough. It's
+easy to reason about and easy to debug.
+One process, one URL, minimal moving
+parts.
+The labs in this module will
+essentially use this pattern, just
+running your model API inside a Docker
+container on localhost.
+Let's connect this to typical build and
+deploy pipeline. Step one, build. You
+commit code to a repository. A CI
+system, which is a continuous
+integration system, runs tests. Linters
+and checks to make sure things are
+healthy. Step 2, package. You build a
+docker image that contains your code.
+Your model artefact, and all the
+dependencies, you tag that image with
+something like model service version
+1.0.0. Step three, run.
+You run that image as a container on a
+VM in Kubernetes or in some container
+platform. You pass in environment
+variable, configure ports, and set up
+any required secret.
+This build package run flow is exactly
+what you will practise in M3 labs, with
+a fast API and docker.
+Now let's talk about rollout. We ship
+new version safely. In a toy setup, you
+might just build a new docker image,
+deploy it, and basically hope for the
+best. In reality, shipping a new model
+can introduce risk, bugs in the code or
+configuration, a model that performs
+worse on live data than in your offline
+metrics. Latency regressions may be.
+The new model is slower or more
+resource hungry. Rollout strategies
+exist to reduce the blast radius of a
+bad release and let you test in
+production with traffic, real traffic,
+but in a controlled way.

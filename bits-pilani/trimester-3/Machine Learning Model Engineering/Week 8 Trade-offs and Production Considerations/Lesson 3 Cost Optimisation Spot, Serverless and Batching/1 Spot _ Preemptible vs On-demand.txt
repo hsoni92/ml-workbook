@@ -1,0 +1,85 @@
+Welcome to cost optimisation, spot,
+serveless, and batching. In the
+previous video, we talked about scaling
+pattern, vertical scaling, horizontal
+scaling, and auto scaling. Scaling
+keeps the system fast, under load, but
+it also affects costs. In this video,
+we will look at where inference cost
+actually comes from. Learn three
+practical levers for controlling the
+cost, spot, or preemptible instance,
+surveless inference, and batching, or
+macro batching, and connect all of this
+back to latency, reliability, and user
+experience, not just the cloud bill.
+Before we talk about optimising cost,
+let us be clear about where inference
+cost comes from. The bigger driver is
+usually compute, the number of machines
+you run, and the type of machines, for
+example, GPUs, instances where CPUs are
+instances.
+There are also the cost of ideal
+capacity, instances that are running
+but not doing much work.
+You also pay for network and storage,
+moving data around, storing models and
+logs. Finally, there is the cost of
+engineering time to maintain all of
+this. Our goal is to pay only for
+capacity we actually need. And use that
+capacity as efficiently as possible.
+Most cloud providers offer similar
+pricing model for compute. On demand
+instances, you pay as you go with no
+long term commitment. This is flexible,
+but usually the most expensive option
+per hour. Reserved instances or
+committed use, you agree to use a
+certain amount of capacity for 1 to 3
+years. In exchange,
+you get a lower price unit. This makes
+sense when your load is fairly steady.
+Spot instances, sometimes called
+preemptible instances, are heavily
+discounted machines that the cloud
+provider can take back
+at any time when they need the capacity.
+Spot instances. Are our first big cost
+lever, but they come with reliability
+trade-off. Let us look more closely at
+a spot instance. They are attractive
+because they're often much cheaper than
+on-demand instances.
+The catch is that the cloud provider
+can interrupt them. With short notice,
+if they need the capacity for other
+customers. That makes spot instances
+great for batch job that can be retired
+later, offline scoring tasks such as
+nightly churn prediction runs. And
+training jobs that are set up to resume
+from checkpoints. For critical low
+latency API that must always be
+available. You usually do not rely on a
+spot instance alone, because
+interruption can hurt reliability and
+user experience.
+So when should you actually use a spot
+instance? A common pattern is. Use on
+demand or reserved instances. For your
+core online prediction service, the
+part that must always be available and
+responsive. And use spot instances for
+non urgent tasks, such as batch scoring,
+offline experiments, or backfills.
+You can also mix them, keep a base
+layer. Of on demand instances to
+guarantee availability. And add spot
+instances as extra capacity during
+heavy load, knowing that the system can
+survive if those machines are taken
+away. This gives you some cost saving
+without putting extra experience at too
+much of risk.

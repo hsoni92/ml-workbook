@@ -1,0 +1,33 @@
+Let's make it concrete. Why do
+multimodal system appears?
+One big reason is localization and
+segmentation. You may have different
+models for different countries,
+languages, or customer tiers.
+Another is versioning and
+experimentations. You might run an old
+version and a new version side by side
+for canary deployment, AB tests, or
+champion Challenger setup.
+You also split by task. One model
+handles fraud scores, another handles
+credit risk, another predictions,
+another drives recommendations, and
+finally, architecture and scale. You
+might have model per product line, per
+tenant, or per use case. The result is,
+a typical production platform has many
+models, not one. So routing and
+ensembles become core patterns. At a
+high level, there are two main patterns.
+Routing means choosing one model to
+handle each request. A router. Often
+simple business logic decides which
+model to call. Assembles means calling
+multiple models on the same input and
+then combining their output. For
+example, By averaging scores or taking
+a majority vote, both patterns try to
+match the request with the right
+expertise, and often to secure accuracy
+and robustness compared to single model.

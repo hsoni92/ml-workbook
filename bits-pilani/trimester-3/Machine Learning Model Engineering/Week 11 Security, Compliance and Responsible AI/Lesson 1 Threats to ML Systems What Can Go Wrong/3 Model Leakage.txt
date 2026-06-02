@@ -1,0 +1,26 @@
+Third bucket, model and privacy threats.
+With model extraction, someone sends a
+large number of queries to your public
+API and uses the input and output to
+train your own copy or approximation of
+your model. That can expose your
+intellectual property and make it
+easier for attacker to study weaknesses
+offline.
+There is also information leakage. If
+your model is overfitted or your output
+are too detailed, predictions may
+reveal patterns about specific
+individuals or rare events in the
+training data.
+In the worst case, this can become a
+privacy or compliance issue. Finally,
+over sharing internals. Like
+downloadable downloadable weights.
+Verbs, error messages, or forgotten
+debug end points. Make all of this
+easier for an attacker.
+The principle, expose only what's
+needed, and treat model as sensitive
+asset, just like source code or
+databases.

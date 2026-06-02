@@ -1,0 +1,110 @@
+Welcome back learners. Now that we've
+built the main logic for our
+application, let's build the
+application runner. Now that we have
+implemented our quiz generation logic,
+let's now also implement the
+application runner logic, right? So
+this is the main logic for the app.
+So, firstly, I'm importing time.
+Then I'm defining a function called run
+quiz app, right, so by the name you can
+understand that this is the main
+application. Then I'm taking an input
+from the user on the topic that I need.
+If you want to hard code it, you can
+hard code it this way. I've added it as
+a comment. However, this will make it
+dynamic.
+Some fail-safe for error handling. The
+step 2 is generate quiz, the function
+that we defined earlier, generate quiz,
+right? So we will run this quiz on this
+topic, right? And we will capture the
+response here. Again, some fail-safe
+for error handling. Now step 3, we will
+begin the game for the end user, right?
+So let's print some starting things, so
+quiz data, quiz title, whatever, right,
+some demarcations. Let's define the
+score as 0. So this will be our base
+score, and for the 3 questions that the
+user will answer, if it is correct, we
+will add a plus 1, right? And if it is
+not correct, we will do nothing, right?
+So this is for that. Now I'm also
+capturing total as the length of the
+number of questions. So for example, if
+tomorrow you want to extend it to 5
+questions, I have made it dynamic for
+you. You will not have to hardcode it,
+right?
+Now, for every question, so for queue
+inquis data questions, so for every
+question, what do I need? Right, I need
+User's answer, so I need to capture the
+input from the user, so A, B, C, D,
+whatever the answer is, right, and I
+will normalise it as well. Cool.
+If the user answer matches the correct
+option, then print that it is correct
+and append the score with plus one,
+right? However, if the user's answer
+does not match the correct option in
+the sense it is incorrect, then you
+will print wrong. The answer was this
+whatever the correct option was, right?
+Then print the explanation.
+Great, perfect. Finally, I'm adding a
+gap of 1 2nd for some pause between the
+next question, right, so that the user
+gets a breather.
+And this is coming from the Time
+package.
+Now, once this loop has been run for
+all the questions, which is 3 in our
+case. I will print the final score,
+right? OK, so now the final step, right,
+this is what I want to show to the user,
+right? So final score will be score
+upon total. What are these variables?
+This and this, right? So score will
+have the number of answers that were
+answered correctly, and total will have
+all the total number of questions,
+right? So in case all answers are
+correct, so if score equals equals
+total, right? Let me add it here, all
+answers answers were. Correct. Print,
+perfect score, you are a master, right?
+You can define it as you want. If the
+score is greater than 0, right? So
+maybe 1 was correct or 2 were correct,
+right?
+Print, good job, keep studying, right?
+And else, which means all are incorrect,
+just print Better luck next time, right?
+I hope all of this makes sense.
+Let's run this.
+Right?
+Our function is ready.
+Also, another tip, if you want to
+understand this, right, quiz data, what
+is quiz data questions, what are
+questions in quiz data, right? So what
+are queue options, just look at this.
+Look at this. This is our output, right?
+So quizda.stion means everything inside
+this key variable, right? And queue
+options means all of this, right? So if
+you want to understand this function
+further, just relate it to this output.
+OK, so that was a quick tip from my end.
+Creep. I think we've run this function.
+Let me run it again just for surety.
+Great. So our function, the main
+application runner, is ready. In the
+next video we will use it to demo the
+final application. I hope you're
+excited for what's next to follow. I'll
+see you in the next video. Thank you.

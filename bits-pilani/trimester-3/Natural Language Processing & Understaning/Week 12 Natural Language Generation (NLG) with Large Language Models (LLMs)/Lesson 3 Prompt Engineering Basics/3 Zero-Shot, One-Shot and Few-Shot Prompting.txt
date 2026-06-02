@@ -1,0 +1,105 @@
+Welcome back, learners. Now let's
+understand what are 0 shot, 1 shot, and
+few shot prompting. It's fairly simple
+if you understand that the term short
+refers to examples.
+You remember we spoke of example as an
+optional component of a prompt? Let's
+explore that in this lesson.
+So first look at 0 shot prompting. In 0
+shot prompting, no examples are
+provided, so 0 shot or 0 examples.
+Right? Very straightforward. Look at
+this example. Explain the concept of
+overfitting in machine learning.
+Here, it was simple to the point.
+So there are some advantages to zero
+shot prompting. It is simple, it is
+fast, and often very effective.
+However, some limitations include that
+results of zero shot prompting can vary.
+It is ambiguous. And may produce
+inconsistent outputs, so zero shot
+prompting may fail where you want a
+very specific format of the response.
+Now after 0 shot prompting, let's
+understand 1 shot prompting. So as the
+name explains, 1 shot prompting means 1
+example.
+It provides a single example before
+asking the model to perform the task.
+Let's look at this example to
+understand this further. Classify the
+sentiment of the following text. So you
+remember, this is a sentiment analysis
+task.
+So classify the sentiment of the
+following text as positive, negative,
+or neutral as per the provided example.
+So also specify that whatever follows
+is the example.
+This.
+So the example says, the movie was
+absolutely fantastic, and the sentiment
+is positive.
+Now you specify what the task is. The
+task is to analyse the sentiment of
+this text.
+The new restaurant's food was delicious
+but the service was terribly slow.
+And then you specify where the response
+should come.
+With one shot prompting, the model
+infers the desired format for the
+response, hence the output becomes more
+consistent.
+One-shot prompting is very useful when
+the output structure matters. One-shot
+prompting also gives you more control
+than zero shot prompting.
+Finally, let's now understand few short
+prompting. Few short prompting, as the
+name suggests, it includes multiple
+examples in the prompt. Few short. The
+benefits are that few short prompting
+provides a very strong guidance on
+style and format of the response that
+you need from the LLM.
+It gives you more reliable outputs, and
+finally reduces ambiguity.
+However, there are some tradeoffs, few
+short prompts are longer, and because
+they are longer, they use high number
+of tokens.
+Higher token usage means higher the
+cost.
+Right?
+While few shot prompting is much more
+deterministic than 1 shot and zero shot
+prompting, it still does not guarantee
+correctness. What is there to note is
+that few shot prompting is often used
+in production level energy systems.
+Check out this example of few short
+prompting. Classify the sentiment of
+the provided text as positive, negative,
+or neutral. Example one.
+The text is that the movie was
+absolutely fantastic and its sentiment
+is positive. Then you provide another
+example. I waited for 3 hours and
+nobody ever called me back, and the
+sentiment is negative. Then you provide
+another example. The package arrived on
+Tuesday as scheduled.
+The response for that is neutral
+sentiment.
+Now you provide the text for which you
+need the sentiment.
+The new restaurant's food was delicious,
+but the service was terribly slow. And
+here's where the response should come
+in based on the examples that you've
+already provided.
+So I hope you enjoyed this lesson, and
+I'll see you in the next one. Thank you.

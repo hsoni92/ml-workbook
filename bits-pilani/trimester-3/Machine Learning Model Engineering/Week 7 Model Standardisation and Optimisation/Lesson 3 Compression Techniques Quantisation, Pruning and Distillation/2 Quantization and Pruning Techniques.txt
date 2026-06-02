@@ -1,0 +1,44 @@
+First technique is quantization.
+Most deep learning model is trained
+using 32 bit floating point numbers, or
+FP 32.
+With quantization, we reduce the number
+of bits of use to store and compute,
+for example, from F3 FP 32 to FP 16,
+and even to 8 bit integer like in 8.
+When we do that, the model file gets
+smaller. And move less data in and out
+of memory. And many CPUs and GPUs can
+run low precision math much faster. The
+catch is, we're approximating numbers.
+So we might see a small drop in
+accuracy.
+A lot of this art is in getting most of
+the speed and size benefit while
+keeping accuracy within acceptable
+limit.
+In practise, quantization comes in two
+main flavours, Post-training
+quantization, also called as PTQ. You
+train a model in F. P 32 model.
+Normal FP 32 model. And then you
+quantize it after training.
+Often using a small calibration data
+set.
+It's easy to try, and you don't need to
+retrain the model. The downside is that
+you might lose more accuracy,
+specifically at very low precision like
+in 8.
+Quantization aware training. Or, also
+called as QAT.
+You simulate quantization trade during
+training. The model learns to do robust
+to round and low precision effects. If,
+it requires more training effort, but
+usually gives better accuracy at the
+same bit width. A common pattern is,
+try PTQ first and if you need more
+aggressive compression with better
+accuracy, consider QAT.
+Thank you.

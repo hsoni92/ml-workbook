@@ -1,0 +1,38 @@
+Here are a few practical fairness
+questions you can ask.
+Is one group systematically getting
+more false negatives, for example. Are
+certain applicant or applicants
+disproportionately denied loans, even
+when they should qualify?
+Does model performance drop sharply for
+some subpopulation, like smaller
+language groups or certain age bands?
+Is the model calibrated similarly
+across groups? Does a score of 0.8 mean
+roughly the same real world probability
+for Group A and Group B?
+And are there thresholds or decision
+rules that in practise benefit one
+group more than
+another? Just asking these questions
+and looking at the numbers is a big
+step forward, much easier to discuss
+with non-machine learning stakeholders.
+Use simple bar charts to compare
+accuracy, precision, or recall across
+groups. Use grouped bars or line charts
+to show false positives and false
+negative rates. Calibration plots can
+reveal that, for example, a score of
+0.8 means different actual
+probabilities for different groups. In
+tables, consider showing both the raw
+value and the difference. For example,
+Group B accuracy is 7% points lower
+than Group A.
+Highlight cells where gaps exceed a
+chosen threshold, like 5% percentage
+point, so they stand out.
+This makes fairness and observable
+behaviour, not a fuzzy feeling.

@@ -1,0 +1,37 @@
+Now let's talk about audit trails, the
+log that tell us what happened. For
+each predictions or batch. It helps to
+lock. Model metadata, model name,
+version, or hash, and important config
+flags. Data and feature context. Key
+input fields are references to feature
+versions, plus time stamps.
+Decision details, the prediction itself,
+the score or confidence, any threshold
+applied, and, optionally, a short local
+explanation summary.
+Request context, a request ID, the
+calling service or job name.
+As always, tie this back to privacy,
+don't log raw PII unnecessarily, and
+follow your minimizations and access
+control policies from Topic 2. Audit
+trails are not just about individual
+predictions, they span the whole.
+Machine learning pipeline. During
+training.
+Log which data snapshot you used, which
+hyperparameter, and what metrics you
+achieved. Tools like ML Flow helps
+there.
+During serving, log request metadata,
+model version, predictions and
+performance metrics, like latency and
+errors. During training and rollout,
+log when a new model was trained, who
+approved the promotion, and when
+rollout started, completed, or were
+rolled back. Together, these logs let
+you reconstruct a timeline. Which model
+made this decision? Based on which data
+and under which configurations?

@@ -1,0 +1,104 @@
+OK. So, what we have done so far, we
+have created the original FP 32 model,
+and then we have also created
+compressed version of that, that is, uh,
+uh, INTD 8 model, right? Now, let's uh
+quantify and uh compare the original FP
+32 model and the new uh INT 8 model
+across size and latency to understand
+the trade-offs, OK? So, The quantized
+uh inta model that was uh 4X is smaller
+than our original model, but a smaller
+model is uh useless if it's uh not
+actually faster, right? So, in this
+script, uh,
+Uh, L2 benchmark.PY. Here, we are gonna
+see uh how to quantify the trade-off,
+OK. So, we are going to run a head to
+head benchmark comparing our FP 32
+model against our uh intake model on
+two critical dimensions, the file size
+and uh the uh inference latency, OK?
+And here, we are not evaluating
+accuracy in this uh script uh since uh
+we are working with a baseline model
+without uh actual uh validation data.
+OK. Uh, however, accuracy is a crucial
+metrics when working with uh real
+models, and uh, I encourage you to
+explore accuracy evaluation on your own
+using a, uh, different model from
+hugging face and uh Uh, validation data
+set to understand how much, uh,
+accuracy might be impacted by
+quantization. So this is an important
+part of, uh, compression workflow in uh
+production environment, OK? So, this is
+our script. It's uh designed to give us
+a fair comparison. Uh, it defined two
+models here, uh, the base model and
+then, uh, inta model. And the benchmark
+model function here.
+Uh, is almost identical to one from our
+last module. It takes a model path to
+run a, uh, uh, warm-up, uh, and then,
+uh, execute a 100 times, uh, inference,
+run to get stable average and, uh, uh,
+P95 latency numbers. So, this gives us
+a clear picture of performance
+improvements from, uh, uh, quantization.
+OK.
+So, let's uh run this.
+Uh,
+Is the command, uh, we are running
+benchmark.
+The script will take a moment as it uh
+benchmarks both models running the
+latency test for both uh FA 32 and uh
+uh uh in date, right?
+And uh at the end, it prints the
+summary table. Yeah, here it is. Uh,
+and, uh, this put all key performance,
+uh, information we need to make a
+decision in, uh, one place, right? So,
+let's, uh,
+Break it down. So this table tells a
+compelling story. So if we talk about
+uh size, So this is the most obvious
+win. We went from 44 MB to 11 MB, right?
+That's a 75% reduction. Which is a huge
+for any application where uh you know,
+uh, storage or download size matters,
+uh, like an edge device, right? So here
+it's shows the difference clearly. Uh,
+then if we talk about the latency, so
+look at the performance on CPU. So, the
+inta model is uh significantly faster,
+just 7 seconds it took. Uh, both the
+average and uh uh P95 latency are lower
+here, you can see, right? So, this
+means our model can process request
+more quickly, uh, leading to a better
+user experience and, uh, uh,
+potentially lower cost in a high
+traffic, uh, cloud environment, right?
+So these two metrics, size and latency.
+Uh, show clear wins from quantization,
+but in a real production scenario, you
+would also measure accuracy to
+understand the full trade-off.
+Typically, quantization results
+in a small accuracy drop as we
+sacrifice some precision in the model
+weights. So the key question becomes,
+uh, is a potential small accuracy drop
+worth the gain? In size and speed,
+right? So, for many applications, this
+trade-off is uh highly favourable.
+Yeah.
+So, yeah, you can try different model
+from hugging face, uh, you can
+experiment with real data, and you can
+check uh how uh accuracy is dropping uh
+if you are using quantized model. So,
+yeah, you can uh try it by your own.

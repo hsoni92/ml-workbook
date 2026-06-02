@@ -1,0 +1,47 @@
+Welcome to Module 12, Topic 4, Vector
+Databases and Retrieval Augmented
+Systems. In many modern applications, a
+model on its own is not enough. Instead,
+we combine models with retrieval. The
+model can look things up in external
+knowledge.
+Rather than memorising everything. In
+its weights. Vector search lets us find
+similar item using embeddings and
+retrieval augmented generation. Rag, in
+short, combines that search with a
+model generator.
+Or Downstream Predictor.
+In this session, we will stay high
+level, the goal is clear mental model
+of embeddings, vector databases and
+rack pipeline, not a deep dive into
+specific tool or configs. First,
+embedding. An embedding is just a
+numeric vector that represents
+something like a piece of text, an
+image, an item, or a user, in a way
+that captures meaning. The key property
+is similar items end up with nearby
+vectors, and dissimilar items are far
+apart in this vector space. These
+embeddings are learned by model, so
+that geometry reflects semantics. Two
+sentences with similar meaning have
+embeddings that are close together,
+even if they don't share many words.
+Once we have embeddings. We can do
+similarity search. The pattern is, take
+your query or item, compute its
+embeddings, and then find the nearest
+neighbours in the existing set of
+vectors. We typically measure
+similarity with cosine similarity, dot
+product, or sometimes equilidean
+distance. This is the core semantic
+search, more like this, recommendations,
+near duplicate detections, and many
+cluster workflows vector search answers
+the questions. Given the things, what
+else looks similar in embedded space?
+Thank you.

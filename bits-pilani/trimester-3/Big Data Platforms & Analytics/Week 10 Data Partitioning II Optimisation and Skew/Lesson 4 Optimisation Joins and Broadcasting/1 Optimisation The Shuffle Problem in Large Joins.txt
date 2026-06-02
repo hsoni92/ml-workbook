@@ -1,0 +1,64 @@
+Up to this point, we have focused on
+skew. How data can be unevenly
+distributed, but even with perfectly
+balanced data. There is another
+performance killer we have to deal with.
+And that was shuffle. In distributed
+systems like Spark, a join operation on
+two large data sets almost always
+triggers what we call a shuffle join.
+If you look at the top of the slide.
+You'll see the core issue. A standard
+join requires moving massive amount of
+data across the network.
+So that rows with matching keys can
+eventually end up on the same physical
+node to be processed.
+Why is this a problem? It comes down to
+physics and hardware. So as noted on
+the slide, network IO is often the
+slowest part of big data pipeline.
+Modern CPUs can process millions of
+instructions per second, and RAM can
+move data incredibly fast, but the
+network cable, the physical wire
+connecting node A to node B, is a
+massive bottleneck. When you trigger a
+shuffle, you aren't just processing
+data, you are waiting for data to
+travel across the data centre. This is
+significantly slower than reading from
+local memory. In many cases, a job
+spends 80% of its time shuffling. Job
+hasn't been optimised for realities of
+distributed hardware. Imagine we have
+data spread across Node 1, Node 2, and
+Node 3. To perform a joint, Park needs
+every record with key A to be in the
+same place. As the diagram shows, node
+1 might have some key A data, but node
+3 has a rest.
+During the shuffle phase, Spark has to
+serialise that data, send it over the
+network, and deserialize it on a target
+node. Every arrow you see in that
+diagram represents network latency,
+serialisation overhead, and potential
+disc spills. If the shuffle data is too
+large for RAM, this all to all
+communication pattern is exactly what
+we want to avoid whenever possible. To
+summarise, shuffles are necessary for
+large scale joints, but they are
+expensive because they rely on the
+slowest component of our cluster, the
+network. However, there is a shortcut.
+What if we didn't have to move both
+tables? What if one table was small
+enough that we could just Give a copy
+of it to everyone. So in our next video,
+we are going to look at the broadcast
+joint. A powerful optimisation that
+lets us skip the shuffle entirely and
+keeps our data exactly where it is.
+I'll see you in the next class.

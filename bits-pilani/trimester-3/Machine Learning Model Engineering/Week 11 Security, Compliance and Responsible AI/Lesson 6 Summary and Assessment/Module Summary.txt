@@ -1,0 +1,23 @@
+To wrap up, notice how the security
+view ties into everything we have
+already done. Our deployment pattern
+from Module 3 and Module 4 control who
+can call the Model and how. Monitoring
+and logging from Module 5 help detect
+unusual traffic or behaviour.
+Retraining and pipelines from Model 6
+and 10 are part of how we recover from
+data issues and roll back bad models.
+Feature governance from Module 9 gives
+visibility into which data and features
+we're using, which matters for both
+security and privacy. In the rest of
+Module 11, we will go deeper on data
+privacy, fairness, explainability, and
+audit trials, all key pieces of
+building responsible, secure machine
+learning systems. For now, keep this
+threat map in your mind. When you
+design or review a system, ask what
+could go wrong here, or, and how would
+we notice. Thank you.

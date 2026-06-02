@@ -1,0 +1,234 @@
+Next dimension, synchronous versus a
+synchronous call. Synchronous. Or syn
+means the client sends a request and
+then waits for the response. The call
+is blocking. Nothing else happens in
+what flow until the response comes back
+or times out. A synchronous, also
+called as a sync.
+The client sends a request.
+Or NQs a message.
+And then does not sit and wait. The
+actual results becomes or comes later,
+via queue or a callback or a web hook,
+or by polling status endpoint.
+Both sync or syn can be used with rest
+GRPC cues or any other protocols. The
+choice depends on how long inference
+takes and whether the caller needs to
+needs the result immediately or not.
+Now let's look at synchronous API,
+which are the simplest and most common
+pattern for serving machine learning
+models.
+In synchronous call, the client sends a
+request and then waits. Or blocks until
+the model returns a prediction. Nothing
+else happens until the response comes
+back. This is the traditional request
+response cycle that most web developers
+are familiar with. Synchronous calls
+really works well when the model
+inference is fast, usually under 100 to
+300 milliseconds. They are also the
+right choice when the prediction has a
+direct impact on the user experience or
+a business decisions.
+For example, whether to show a
+recommendation or whether a transaction
+should be approved. Yeah, so some
+typical example includes a UI calling
+predict function to get real-time
+recommendations, a mobile app waiting
+for a sentiment scores before updating
+the screen, or a payment backend client,
+a fraud detection model before
+approving the transactions. In all
+these cases, the user or the system is
+OK with waiting a short amount of time
+for the model to respond.
+So synchronous APIs are ideal when you
+need an immediate answer and your model
+is fast enough to provide one.
+Now let's look at a synchronous or a
+sync pattern, which is very different
+from syn synchronous request response
+model. In a synchronous workflow, the
+client doesn't wait for the model to
+finish. Instead, it simply submits a
+job or a message, usually into the
+queues like SQS, Kafka, Rabbit MQ, and
+immediately moves on.
+A worker service later picks up the job,
+runs the model, and stores the result
+in the database, a file, or sends them
+using a webhook or a notification. This
+pattern is especially useful when
+inference is slow or heavy.
+When the client doesn't need an
+immediate response, or when processing
+might take seconds or even minutes. It
+also helps systems handle traffic
+spikes because queues can buffer a
+large number of incoming requests
+without overwhelming the model service.
+The diagram on the right shows this
+clearly the client sends the job, the
+queue holds it.
+A worker processes.
+And the results are stored for later
+retrieval. There's no block, no
+weighting. The client and model run
+independently. A sync patterns are
+commonly in batch processing,
+background ML tasks, report generation,
+video analysis, documents processing.
+And any scenario where real time
+results are not required. Let's make a
+sink more concrete.
+A synchronous API signs when you have.
+Long running inference. Like scoring
+millions of rows in churn model running
+complex ensemble pipelines, or
+generating large outputs. A need of
+peak smoothing. Let the queue observe a
+spike while worker processes scale up
+or down in the background.
+Offline or near real time use cases
+where it's totally fine for a result to
+show up. In a few seconds, minutes or
+hours later, a common pattern is the
+client submits a job and gets back a
+job ID. Later, the client can poll to
+an endpoint which will be like job job
+ID status or
+receive a callback or webhook when the
+job is complete. This is how many
+production systems handle batch
+inference and heavy workflows without
+blocking user facing requests.
+This slide brings everything together
+by connecting API choices to the three
+core inference patterns we discussed
+earlier in Module 2, batch inference.
+Online inference and streaming
+inference. Let's start with the batch
+inf influence. Batch jobs process large
+input of data at once, sometimes
+thousands or even millions of rows.
+These jobs are usually scheduled daily,
+hourly, weekly, and results are not
+needed immediately. Typical examples
+are churn scoring or nightly
+recommendation updates. Because they
+don't require instant responses, these
+workloads usually rely on asynchronous
+patterns like job cues and background
+processing. Next, we have online or
+real-time inference. Here the client
+sends a request and waits for
+prediction, which means low latency is
+required, usually somewhere between 50
+to 200 milliseconds. This is a classic
+synchronous request response flow using
+rest or sometimes GRPC.
+Few examples like fraud detection using
+checkouts, autocomplete suggestions, or
+real-time product recommendations. The
+key idea is that the client needs an
+answer right now.
+Finally, we have a streaming interface.
+Which is used for continuous event
+driven data.
+These systems are powered by
+technologies like Kafka, Flenk, or
+Spark streaming. Instead of client
+explicitly calling a model, the model
+processes events as they arrive, locks,
+clicks, sensors, signal, and so on.
+This is ideal for the use case like
+device monitoring, anomaly detection,
+or real-time ads. So the key idea is
+prediction happens automatically on
+every incoming event. So depending on
+your use case, batch, online streaming,
+you will choose different APIs style
+and different calling pattern. The same
+machine learning model can be served in
+different ways based on how it's used
+in the systems. So what does all of
+this mean for you in this course? We
+are going to keep things simple and
+practical. For most of our example,
+we'll use RST with Jason over HTTP. And
+specifically a synchronous post predict
+endpoint.
+There are few reasons for this choice.
+First, It's extremely easy to demo,
+test and debug. You can use Curl,
+Postman, or even your browser to
+inspect what's happening.
+Second,
+It works for both batch and online
+style client. A batch script can simply
+send many synchronous requests in a
+loop.
+And 3rd, this is a setup many teams use
+when deploying their very first
+production machine learning model.
+Later in real system, you can expand
+this foundation, you might introduce
+GRPC for internal service to service
+communication. To wrap up your
+synchronous call inside a sync job
+patterns when you need to handle long
+running workflow or manage back
+pressure more reliably.
+But the important thing is. That the
+mental model you build in this course.
+Request in, predictions out, clean API
+boundaries, will transfer directly to
+rest GRPC, a sync system and even
+streaming architectures.
+To wrap up this video, let's quickly
+recap the big ideas we covered. First,
+we compared RET and GRPC. Which is
+really about how we communicate with
+the model service and how strict or
+flexible, how strict or flexible our
+request response contracts are. Then we
+looked at synchronous versus
+asynchronous calls. Which is about when
+the client receives the result, and
+whether it waits for the model to
+finish.
+We also connected these API choices to
+the three major inference patterns
+which we learned in Module 2 online
+inference, batch inference, streaming
+inference. Online inference typically
+synchronous, rest or GRPC, batch
+inference, often implemented as a
+synchronous job. Streaming inference
+driven by event
+event stream or streaming APIs. In the
+next theory video in topic 4, we will
+shift perspective again and focus on
+deployment and rollout strategies.
+We'll talk about running your model API
+in single container or VM and then look
+at safer rollout pattern like
+blue-green deployment, canary green,
+canary release. Or some basic autos
+skilling ideas. And finally, in the
+labs for this module, you will put all
+this into a practise. You will build a
+fast API based rest, predict endpoint,
+package it inside a docker container,
+and call it from the both batch style
+or online style client. This will give
+you hands-on experience with exact API
+pattern we just discussed. So by the
+end of the labs. You'll not only
+understand this concept, you will have
+actually implemented them. Thank you.

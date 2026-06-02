@@ -1,0 +1,65 @@
+First up, ONNX which stands for Open
+Neural Network Exchange. OneNRX is an
+open standard for representing neural
+network models. Many frameworks can
+export to ONNX, Pytorch, Tensorflow,
+even traditional machine learning model
+via converters. Once you have a .OX
+file, you can run it with ONNX runtime,
+or import it into tools like TensorRT.
+ONNX shines when you care about
+interoperability between multiple
+frameworks and deployment stacks.
+And general purpose servings on servers
+and cloud platforms. That's why we will
+use ONNX in the Model 7 labs. It's a
+very practical default format for
+production systems. Next in Tensorflow
+light.
+Often is shorthand to TF Lite. TF Lite
+is both a model format,
+TF Light files, and a runtime focused
+on mobile and embedded devices. It's
+designed to have a small binary size,
+use optimised kernels for mobile CPUs
+and NPUs, and work well with quantized
+IT 8 model. You would choose TF Light
+when your training stack uses Tensor
+Flow. And your deployment targets are
+phones, IOT devices, or other edged
+hardwares. In that world, TF Lite is
+actually the most natural choice. Third,
+Open Venow. Open Venow is a toolkit
+from Intel for optimising and deploying
+models on Intel hardwares, CPUs,
+integrated GPUs, and Intel accelerators.
+The typical flow is start from a model
+in ONNX, or tensor flow, convert it
+into open window intermediate
+representation.
+Then run it with open window runtime on
+Intel machines.
+This is especially attractive when your
+infra is heavily Intel based. You want
+a strong inference performance on CPUs
+without needing GPUs.
+So if your world is lot of Intel
+servers, Open window is a strong option.
+Let's put this into simple mental map.
+ONNX is your general purpose cross
+platform or cross framework option.
+Great for cloud servers, CPU and GPU
+deployments, especially when different
+teams train models in different
+frameworks. Tensorflow Light is your
+mobile and edge option in the
+Tensorflow ecosystem. Perfect for
+Android, iOS and IOT deployments. Open
+Veno is your Intel first option.
+Ideal when your workload run mostly on
+Intel CPUs and integrated GPUs. And you
+want better CPU performance without
+introducing GPUs. In a real company,
+you might use more than one of these
+different products can pick the best
+fit for their constraints.

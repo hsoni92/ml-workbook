@@ -1,0 +1,45 @@
+Let's link this back to our earlier
+modules. In Module 5, we talked about
+monitoring models in production. You
+can't monitor drift or performance if
+you don't have fresh predictions and
+feature data. In module 6, we talked
+about retraining. You can't retrain and
+up to-date data if the new model and
+features never make it to your training
+store. If data pipelines are flaky and
+delayed, drift detection breaks.
+Retraining triggers have nothing to
+work with. dashboard and metrics stop
+reflecting reality. Data pipelines are
+basically the circulatory system for
+machine learning. They keep fresh data
+flowing.
+To recap this first video of Module 10,
+we saw why machine learning needs
+serious data pipeline, not just
+notebook. We introduced three ingestion
+modes batch, micro batch, and streaming,
+and we connected data pipeline back to
+monitoring and retraining, which only
+works when fresh, correct data keeps
+flowing. Next, in topic 2, we will go
+deeper on batch and micro batch
+ingestion pattern for machine learning
+with concrete example. In Topic 3, we
+will look at streaming events, topics,
+producers, consumers, and how streaming.
+Supports real time machine learning use
+cases. In Topic 4, we will talk about
+data quality in real-time machine
+learning, freshness, completeness, and
+schema evaluations. In the lab, you
+will simulate a small new day, new data
+workflow, daily CSV files arriving.
+An ingestion script that depends them
+appends them to a training data set,
+and a similar retraining trigger.
+That's how we turn the idea of data
+pipeline into something you can
+actually build and reason about. Thank
+you.

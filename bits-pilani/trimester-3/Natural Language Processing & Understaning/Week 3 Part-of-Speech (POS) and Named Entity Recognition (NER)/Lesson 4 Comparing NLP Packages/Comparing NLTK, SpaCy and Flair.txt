@@ -1,0 +1,196 @@
+Right, learners, now that we have spent
+some time implementing POS tagging and
+named entity recognition with NLTK,
+Spacey, and Flair. Let's spend some
+time comparing the three and know when
+to use what, right? So when comparing
+NLTK, Spacey, and Flair for standard
+NLP tasks like named entity recognition
+NER or POS tagging, your choice
+ultimately comes down to your project's
+primary goal, right?
+Always use the right tool for the right
+job. So what can be the primary goal of
+your project? Is it to learn the
+fundamentals or teach the fundamentals,
+right? Is it to deploy a fast
+production system, right? Or is it to
+achieve absolute maximum accuracy on
+your text data, right? So now let's
+break down these three libraries
+individually. Let's start with the most
+traditional NLP library called NLTK.
+NLTK or Natural Language Toolit is
+primarily an academic and education
+tool, right? That's the primary use
+case for NLP. It is excellent for
+understanding granular mechanics of NLP,
+but it shows its age when applied to
+modern large scale problems, right? So
+when compared to the results of modern
+applications and modern NLP models. In
+modern use cases, NLP usually falls
+short, right? What is the methodology?
+NLTK uses a traditional modular and
+manual pipeline approach. For example,
+to perform NER, first tokenize the text,
+then apply POS tagging, then finally
+use a chunker for the named entities.
+Of your tax data, right? Which in
+itself was not so great, right? We, we
+already saw that. What's the
+performance like? NLTK relies heavily
+on classical machine learning and rule
+based systems.
+Rather than modern deep learning.
+Systems. Also, NLTK is generally slower
+and less accurate.
+It is best for learning the fundamental
+building blocks of natural language
+processing.
+Or for research or for small scale
+non-production projects, right? It is
+great for building a POC, but when you
+would want to take that POC to a
+production environment or create a
+microservice for your existing
+application, you might need to explore
+a different library for that
+application, right? Which brings us to
+Spacey, which is the workhorse.
+Spacey is the industry standard for
+high performance production ready
+application, right? I always harp on
+Spacey because I have myself used
+Spacey in so many applications, right?
+If you need to process massive amounts
+of text quickly and reliably, Spacey is
+your go to choice, right? How does it
+work? Spacey utilises an incredibly
+efficient transition-based system.
+Powered by a shallow feed forward
+neural network, right? I hope you
+understand the difference between
+shallow neural network and a deep
+neural network, right?
+Spacey uses Bloom embeddings to
+efficiently capture the context of
+words, right? So it not only captures
+the word itself, but it also captures
+the context of that word, right, more
+on embeddings and contextual embeddings
+in one of the future modules. But for
+now you can understand that embeddings
+or word embeddings are nothing but a
+transformed version of your text data
+so that the machine can understand it,
+right?
+OK. What is the performance like? It is
+significantly faster than both NLTK and
+Flair. It is the fastest, fastest out
+there.
+While it might drop a fraction of 1% in
+accuracy compared to the heaviest deep
+learning models and also compared to
+Flair, right? Species speed makes it
+the most practical choice for large
+scale data sets. It's super fast and
+it's super practical.
+Key feature Spay includes displayy,
+right? We already saw displayy, a
+built-in visualizer that renders
+beautiful color-coded NER tags, US
+dependency, syntax depend dependency
+trees directly in your browser or
+Jupiter notebooks. So if you need
+Visual description of your text
+processing, you can also use Displayy
+for that, right? Now, let's come to
+Flair, which is the perfectionist. OK.
+Flair is a powerful modern framework
+built on Pytorch. What is Pytorch?
+Pytorch is a very popular and powerful
+framework for building large scale
+neural network architectures.
+Flair sacrifices raw processing speed,
+right? It sacrifices on speed to focus
+on achieving state of the art accuracy,
+right? So there's a trade-off between
+speed or implementation speed and
+accuracy, and Flair chooses the latter.
+How does it work? Flare leverages a
+complex bi LSTM CRF neural network
+architecture, right? A variant of the
+popular LSTM neural network
+architecture, combined with unique
+flare embeddings, which are contextual
+string embeddings, right? Again, more
+on contextual embedding, static
+embeddings in a future module, right?
+For now, just understand that these
+word embeddings also capture the
+context of a word, right?
+This allows the model to deeply
+understand the meaning of a word based
+on the specific text surrounding it.
+Handling things like polysemy
+exceptionally well. What was polysemy,
+we already discussed it. These are
+words that have different meanings in
+different settings, right?
+What is the performance like? Flair
+consistently achieves higher accuracy
+in F1 scores than Pacey as well on
+standard NLP benchmarks.
+However, because its architecture is
+heavier, it is noticeably slower to run,
+right? We also experienced that.
+Claire is best for academic research,
+highly specialised domains like medical
+or legal text, and applications where
+squeezing out the maximum accuracy is
+more critical than processing speed,
+right? So Flare is great when you need
+more accuracy and you don't, you have
+some time to spare, right? Let's now
+compare the three and summarise our
+observations. So NLTK, the primary use
+is for learning and fundamental NLP
+jobs. SpaceC, the primary use is for
+production applications and industrial
+applications. Flair offers state of the
+art accuracy, right? What is the speed
+like or execution time? So NLTK is the
+slowest. Spacey is superfast, Flare
+somewhere in the middle, right?
+Architecture, NLTK follows a rule-based
+and classical ML pipelines as part of
+its architecture. Spacey follows a
+transition-based neural network, and
+Flare follows a BLSTM CRF.
+How easy are they to use? So NLTK has a
+manual pipeline approach, right? It has
+multiple steps in its in its
+application. Spacey is very
+user-friendly and has a very
+streamlined API and Flair, probably the
+easiest. You just import the sentence
+for text-reprocessing and import the
+model and just apply the model, right?
+Finally,
+If you're building an application to
+process millions of tweets in real time,
+right? This is an example to just give
+you the scale. Spacey is your best bet.
+If you're trying to squeeze every drop
+of accuracy out of a critical data set,
+and have the compute time to spare,
+right, you can go with flair. Wow, that
+was Raymond, right? OK. Finally, NLTK
+should be used as a backup only. If all
+else fails, you can always rely on NLTK,
+right? So that was it for this video. I
+hope you gained a deeper understanding
+when we compared the three side by side,
+right? So that's it for this video.
+I'll see you in the next one. Thank you.

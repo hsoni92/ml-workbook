@@ -1,0 +1,103 @@
+Welcome back, learners. In this lesson
+so far, we have learned about POS
+tagging. We have implemented it with
+Spacey and NLTK. Now let's look at a
+new library and rather unexplored and
+unpopular library, but very, very
+powerful library called Flair, right?
+So Flair is an NLP framework. Written
+in Pytosh, right, so these are neural
+network models, pre-trained models that
+do different things like POS tagging.
+N, etc. etc. right? So more on Flare
+later. Let's first implement POS
+tagging with Flare, and later in this
+module we will discuss what Flare is
+and how does it compare with the other
+NLP libraries, right? So let's begin.
+We will begin with installation.
+While the library instals, let's import.
+From flare.data import sentence. So
+sentence is the main text-free
+processing pipeline and the from.
+Flair.models.
+Import
+Sequence tagger, right? So we will do
+reprocessing here and we will import
+the model and implement this for POS
+tagging, right? So now let's load the
+POS tagger.
+Let's call it tiger. And sequence.
+Sequence tagger. load.
+POS for pos.
+Now, let's We
+Text data. So let's call it sentence.
+Sentence equals sentence, and my text
+would be something like anything that
+you write. You can test it on any
+random sentence. So flair is a great.
+Library for natural language.
+Processing, you must.
+Check it out, right?
+OK, now I will pass text here. So this
+will do all the text the processing for
+me. Solid tokenization and all of that
+will happen here.
+Then let's Do the predictions.
+Sour predict sentence.
+Right? And now let's print it. So
+sentence.2 tag string.
+Perfect. I hope this runs without any
+errors. OK, perfect. So, the text is uh
+oh OK. I passed it as a string.
+Let's rerun it or let's run this in a
+separate cell so that these two things
+don't mix up.
+Right, so Flair is a great library for
+natural language processing. You must
+check it out. This was the sentence,
+right? And here are the tags. Flair is
+NNP, which is noun, is, is VBZ, which
+is verb. A is a determiner, very
+similar to the tags we saw in the last
+video, right? Tags from NLTK, right?
+Great. So this is exactly how you
+implement POS tagging with the Flair
+Natural Language Processing library.
+Very simple. Just load the model, right,
+and do some preprocessing and pass the
+preprocessed text to the model, right?
+Now I also have a library of these tags
+for you. Let me share it with you here.
+Right? So, anything that you need to
+find a definition for any of the tags,
+you can find it here, and the source is
+here, it's available on hugging face,
+right?
+So, you can check it out as well.
+Great So this is They, they're passing
+pause English, right, which is the same
+as pause. So there is flair pause
+tagging in German language in some
+other languages as well. So, Great.
+This was all about implementing POS
+tagging with Flair Natural Language
+Library. What I would expect for you to
+do is implement this on your own data
+sets, right? Firstly, that, and then
+also compare the results. From each of
+the three libraries that we have seen
+so far, right? Take the same text data,
+implement all three, and then compare
+the results, right? If you would ask me
+what is my preference for POS tagging,
+my first preference would be Spacey
+that we saw in detail in previous
+videos, right? Post that, it would
+totally depend on the problem and the
+use case, right? So that's my two cents
+on which library is better or not so
+better, right? So, there you go. This
+was it for this lesson. I hope you've
+enjoyed this and I'll see you in the
+next video. Thank you.

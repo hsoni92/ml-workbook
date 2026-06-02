@@ -1,0 +1,86 @@
+Welcome back, learners. In the last two
+videos, we implemented named entity
+recognition with the Spacey library and
+with the NLTK library. In this video,
+let's implement named entity
+recognition on the same data set with
+the Flair library. So what is Flair?
+Flair is a rather modern and very
+effective library, but however, it's
+not very popular. Apart from very few
+NLP practitioners, no one knows about
+this library. It's a library directly
+built on Ptosh neural network
+architectures, so it uses architectures
+like LSTM and bidirectional LSTMs to
+implement named entity recognition and
+other tasks like sentiment analysis,
+etc. Don't worry about the theory for
+now. More on LSTMs and hugging phase,
+etc. in the upcoming modules, right?
+Let's now quickly implement NER on the
+same data set and see how effective it
+is and how it compares to Spacey and
+NLTK implementations, right? So firstly,
+we will have to install the Flare
+library. So if install Flare, I'll also
+add the card for quiet. And while it
+instals, let me also add some inputs.
+So from flair.
+models import.
+Sequence are good.
+Right? And from flair.
+Data import. Sentence. Let me run this
+as well.
+Right. So you see, Flair is a very,
+very big and heavy library, even after
+the quiet card, right? It has such
+verbose descriptions of its download.
+Now we are importing models.
+OK, great. Now I will load the NER
+model. So NER model equals sequence
+tagger.
+But Lord, and I will pass any year.
+This specific model is built for named
+entity recognition tasks. There are
+other models for other tasks as well,
+right? Now, I will create a sentence, a
+sentence.
+And I will pass sentence. And here we
+will pass our text data, though we have
+not defined the text data, so let me
+quickly define it.
+Right?
+Do you see, it is downloading the
+Pytorch model and its weights.
+All right, done. Now the job is pretty
+simple. We need to just. Print the
+entities.
+That spans.
+And I want named entity recognition.
+Print
+Entity Oops, it did not print anything.
+I was so
+Let me check. Did I miss something?
+Oh,
+We did the pre-processing and model
+loading, but we did not do the NER
+predictions, so NER what model. Do not
+predict.
+Sentence
+OK, so you see, from 0 index to 1st
+index, which is Apple, it is predicted
+that it's an organisation. Then UK is a
+location and billion. Elon Musk is also
+detected as an
+organisation. Right? So you can see,
+even though it is a very modern, very
+sophisticated and state of the art
+library. It sort of feels against
+spacing, right?
+So this was it for this video. Your
+task is to implement NER with Flair on
+your own data sets, right, and compare
+it with how it performs against NER
+with Spacey and NER with NLTK. I'll see
+you in the next video. Thank you.

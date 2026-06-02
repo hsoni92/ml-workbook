@@ -1,0 +1,158 @@
+Now why do we care so much about
+inference metrics? Inference is not.
+A one off event. It happens
+continuously.
+For every page view, for every
+transaction, for every batch job that
+runs overnight, the matrix we use to
+describe inference determine.
+What the user experience feels like? Is
+it snappy? Does it lag? How well we can
+scale as traffic as the data grow.
+And whether we can afford to run the
+model at the required frequency. There
+are 3 core families of metrics we will
+keep referring to throughout the model
+latency, how long does it take to
+predict. Ah, to get a prediction back.
+Throughput, how many predictions can we
+serve per second or per minute? Cost
+and resource usage. What does each
+prediction cost us in compute, memory,
+and money? Let's unpack each of these.
+First up, latency. Latency is simply
+how long it takes for the movement a
+request arrives, until the movement
+prediction is ready to return.
+That includes network overload,
+overhead. Validations and feature prep.
+The model forward pass. And any post
+processing, we usually look at more
+than one latency number. Average
+latency
+The mean across many requests. P. 95%
+latency, 95% of requests are faster
+than this.
+P. 99 latency. 99% of requests are
+faster than this. Why do we care about
+P95 and P99? Because in user facing
+system, people feel the tail. If most
+requests takes 50 milliseconds, but 1
+person takes 2 seconds, users will
+absolutely notice those slow ones. At a
+scale that 1% is a lot of bad
+experience. So when we talk about
+keeping latency under 100 milliseconds,
+We almost always mean P95 or P 99
+latency, not just the average. Let's
+talk about tail latency and why it
+matters so much. When we think about
+latency, it's tempting to look at
+average and feel good if the number is
+low. But for real user, the worst
+request often define the experience.
+From a UX perspective. It only takes a
+few very slow requests to cause the
+real pain. Those slow calls can break
+user flows, someone's click a button
+and nothing seems to happen.
+Cause timeout or errors in upstream
+systems, and generally make the
+inference feel laggy and unresponsive,
+even if most requests are fast. That's
+why product team usually express
+requirements in terms of tail latency,
+but not averages. You will see
+constraints like Predictions must
+return in under 100 milliseconds 95.
+That means 95% of all requests have to
+complete within 100 milliseconds. It
+explicitly about the slow end of the
+distribution. For model engineer, this
+changes the job. It's not enough to say
+our model is fast on average. We have
+to design the whole inference path,
+model choice, feature processing,
+infrastructure, batching, everything,
+so that it fits within a latency budget,
+especially at P95 or P99. In other
+words, we engineer for the tail because
+that's what users actually feel. Next,
+throughput. Throughput answers the
+question, how much inference work can
+the system do per unit of time,
+depending on pattern. We might measure
+requests per second for online APIs.
+Rows per second for batch job scoring
+large tables, real workloads are not
+flat, they have peak and valleys.
+Morning traffic, evening traffic,
+marketing campaign, product launches.
+We also look for at utilisation.
+How busy are our CPUs or GPUs? How they
+mostly ideal, meaning we are wasting
+capacity. Or are they constantly maxed
+out? Means we're risking timeouts and
+failure during spikes.
+Throughput and utilisation tell us
+whether our serving setup can keep up
+with the real world or not. The third
+dimension we need to care about is cost.
+What does each prediction actually cost
+us to serve? Every single prediction
+consumes resources. It uses compute,
+CPU, or GPU cycles to run the model
+forward pass. It uses memories.
+to keep the model and its features in
+RAM or VRAM, it touches storage for
+model artefact, features, stores, and
+all the logs we write, and it uses
+network bandwidth, sending request and
+response across services and data
+centres.
+For one request, the cost looks tiny,
+but at scale, even a small per call
+cost multiplied by million or billion
+of calls turns into very real cloud
+bill. That's why infra teams and
+finance teams care a lot about
+inference design. As model engineer,
+this leads to some important design
+questions. Can we right size the model?
+Do we really need the largest, most
+expensive architecture, or would a
+smaller model give good enough quality?
+At lower costs. Can we use batching or
+caching, process multiple items
+together, or avoid recomputing
+predictions that don't change often?
+Can we mix paths, route most traffic
+through a fast, cheap model, or
+hysteric, and only send a small
+fraction down a slower, more expensive
+path when it's really needed? The key
+idea is that inference cost is not
+abstract. Each prediction burns compute,
+memory, storage and bandwidth. At large
+scales, those decisions directly affect
+how expensive your ML system is to run.
+You can think of these three as kind of
+triangle.
+If you want very low latency and very
+high throughput, you will probably pay
+more in cost. If you want.
+Things cheap You might have to accept
+higher latency or lower throughput.
+There is no universal right answer. The
+right point on that trade-off curve
+depends entirely on the business use
+case, how fast the user expects a
+response, and how critical the decision
+is. For some problems, it's fine if the
+model runs for 30 minutes overnight.
+For others, 200 milliseconds is already
+too slow.
+That's exactly why we have different
+inference patterns, batches, online and
+streaming. There are different ways of
+navigating these tradeoffs.

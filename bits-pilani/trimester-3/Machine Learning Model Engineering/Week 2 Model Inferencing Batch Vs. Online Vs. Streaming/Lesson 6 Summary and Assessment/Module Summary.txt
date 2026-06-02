@@ -1,0 +1,41 @@
+Let's quickly recap what we did in this
+video and where we are going next in
+module 2. In this video, we define
+model inference, using a trained model
+to produce output on new real world
+data.
+We separated that from training and
+treated inference as something that
+lives inside running service.
+We also introduced 3 core serving
+metrics.
+You will hear that again and again.
+Latency, how long a single request
+takes, specifically in the tail P95 P99.
+Throughput, how many predictions can we
+serve per second? Cost, the compute,
+memory, and infrastructure we burn at
+inference time.
+And we previewed three inference
+patterns batch inference, online
+request response, and streaming
+inference over continuous events. In
+the next video, we will go deep dive on
+batch inference when you don't need
+instant answers and can optimise for
+throughput. Then, a deep dive on online
+inference.
+Where APIs, SLAs, and what happens when
+users are actively waiting for
+prediction. And finally, a deep dive on
+streaming inference. Event driven
+pipeline, where data never really stops.
+The key message going forward is this
+we will use the same three metrics
+latency, throughput, and cost to
+compare batch versus online versus
+streaming. That way, you will have a
+consistent mental framework for
+choosing the right inference pattern
+for a given product or system.
+Thank you.

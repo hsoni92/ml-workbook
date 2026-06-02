@@ -1,0 +1,49 @@
+In our last lesson, we identified the
+disc tax, the high latency caused by
+Hadoop's need to write data to physical
+storage at every stage.
+We start the in memory revolution with
+Apache Spark.
+You'll see the core philosophy that
+makes Spark different.
+While Hadoop treats the disc as its
+primary workspace, Spark treats RAM,
+which is random access memory, as its
+primary workspace.
+This is called in memory computing. The
+technical difference is staggering.
+Accessing data in RAM is thousands of
+times faster than reading it from a
+traditional hard drive. In a Spark
+cluster, once data is read from HDFS
+the first time, Spark attempts to keep
+that data cached in the memory of
+worker nodes.
+Think about the iterative algorithms we
+discussed earlier. The ones that run 50
+or 100 times. In Spark, instead of
+writing results to a disc at the end of
+each iteration.
+And reading them back in the next
+iteration, the data simply stays in
+memory. The next step in the algorithm
+starts instantly because the data is
+already right there sitting in the high
+speed working set of the CPU, which is
+called RAM. By shifting the heavy
+lifting from slow discs to fast RAM,
+Spark doesn't make processing a little
+bit faster. It often makes it 10 to 100
+times faster. For complex workloads.
+However, This speed comes with a
+trade-off. Memory is more expensive
+than disc space. A cost benefit
+analysis we will explore later in this
+module. For now. Just remember the
+golden rule of Spark keep the data in
+memory to keep the processing moving.
+In the next video, we'll look
+specifically at how Spark minimises
+those disc read-write cycles. Till then,
+happy learning. I'll see you in the
+next class.

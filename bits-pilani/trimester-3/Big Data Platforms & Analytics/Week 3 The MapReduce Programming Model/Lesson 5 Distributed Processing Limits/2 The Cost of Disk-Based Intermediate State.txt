@@ -1,0 +1,74 @@
+In our last video, we celebrated the
+resilience of MapReduce. We saw how
+functional purity and Master Node's
+ability to reassign tasks make the
+cluster nearly unbreakable. But as an
+architect, you know that there is no
+such thing as a free lunch. To achieve
+that level of fault tolerance,
+MapReduce has to pay a significant
+performance tax. Today we are going to
+look at the slide and discuss the
+biggest bottleneck in this model, the
+cost of disk-based intermediate state,
+the 3x ride penalty. In MapReduce, data
+doesn't just flow through memory from
+mapper to reducer. To ensure that we
+don't lose progress if a node fails,
+the framework rides all intermediate
+data. The results of map phase directly
+to the physical disc because we are
+using distributed file systems like
+SDFS, that data is automatically
+replicated 3 times across the cluster
+for safety. This means if your mapper
+produces 1 terabyte of intermediate
+data, the cluster actually has to write
+3 terabytes of the discs. This write
+penalty consumes a massive amount of
+storage space. And more importantly,
+takes a lot of time. This brings us to
+the core of distributed processing
+limits, as the slide mentions. Writing
+preprocessed data post map and
+post-reduce introduces steep IO latency
+as well. If you remember our lesson on
+hardware constraints in Module 1,
+you'll recall that disc IO, or disc
+input output, is the slowest part of
+the computer. Every time a map task
+finishes, The CPU has to stop and wait
+for the slow mechanical or SSD to
+finish writing those 3 copies before
+the shuffle phase can even begin. This
+stop and copy rhythm creates a massive
+bottleneck. While it makes the system
+incredibly reliable, it also makes
+MapReduce significantly slower for jobs
+that need to pass data through multiple
+stages. So what is the job of big data
+engineer here? As the final point on
+the slide states, performance tuning
+ensures minimising this disk-based
+intermediate state cost. To optimise
+execution time, we try to map logic
+that philtres out as much junk data as
+possible. So that the volume of
+intermediate data hitting the disc is
+as small as it can be, we want to turn
+the 10 terabytes of logs into a tiny
+stream of results as quickly as
+possible. The more we reduce the
+intermediate state, the less time we
+spend waiting on the disc and the
+faster our job completes. To wrap up,
+MapReduce is resilient because it saves
+everything to disc. MapReduce is slow
+because it saves everything to disc.
+Understanding this trade-off is vital.
+In fact, this exact disc overhead
+problem is what led to the creation of
+Apache Spark, which we will learn later
+in this course. Spark tries to do all
+of this in memory to avoid the 3 x ride
+penalty.

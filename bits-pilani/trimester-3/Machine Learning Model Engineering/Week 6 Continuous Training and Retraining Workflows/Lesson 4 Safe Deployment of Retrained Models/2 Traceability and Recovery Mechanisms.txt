@@ -1,0 +1,39 @@
+Governance also means having a solid
+audit trail.
+For every production model version, you
+want a registry entry with its version,
+owner, and current stage.
+Training lineage.
+Which data snapshot, code commit, and
+config were used? And deployment
+history.
+When it moved to staging and production,
+and who approved it, this makes root
+cause analysis far easier. If
+performance drops, you can see exactly
+what changed and when. It actually
+supports external audits and compliance
+requirements, where you may need to
+show which data and model was it
+trained on, how it behaved over time,
+and who was responsible for each change.
+Even with careful evaluation. You
+should assume something will eventually
+go wrong. That's why you need a
+rollback plan. Keep the previous
+version. Or the champion model
+available, not overwritten or deleted.
+Use version pinning in config, for
+example, like model version 7 instead
+of saying it latest.
+Make roll rolling back as simple as
+changing that version or flipping a
+flag.
+And don't just have a rollback
+procedure on paper, test it.
+As part of your deployment playbook,
+check that you can actually route
+traffic back to the last good model. A
+fast, reliable rollback turns an
+incident from a crisis into a
+manageable event.

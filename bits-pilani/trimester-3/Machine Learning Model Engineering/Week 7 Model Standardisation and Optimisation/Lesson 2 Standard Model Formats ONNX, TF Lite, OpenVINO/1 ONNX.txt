@@ -1,0 +1,45 @@
+Welcome to Standard Model formats ONNX,
+TF Lite, Open Venow. In topic one, we
+motivated why we care about probability,
+latency, and footprint. In this video,
+we will do something more concrete. We
+will see what model format actually is.
+We will get a feel for three widely
+used ones ONNX, Tensorflow Light, and
+Open Venow.
+And we will build a simple mental map
+of when to reach for which. The guiding
+idea is train once, deploy widely.
+These formats are the bridge. Let's
+start with the why. Each framework has
+its own way of storing models. A
+Pytorch model is picked or saved as
+.pt. A Tensor Flow model might be saved
+model. Or acharos. H5. And each of
+those expects its own runtime to
+execute it.
+If you want to move models between
+teams, deploy to different types of
+hardware, or build shared tools for
+inspection and optimisation, this
+framework specific world becomes
+painful. Standard model format solves
+that, by providing a common
+representation of the computation graph.
+Frameworks can export into this
+standard. And runtime and tools can be
+built around it. So why exactly is a
+model format? Conceptually, a model
+format is just a graph structure of the
+model. Which layers and operations in
+what order? The parameters, the weight
+and bias, tensors and other constants.
+And some metadata about input and
+output shape. You can think of it as a
+blueprint plus the numbers. Once we
+have that blueprint in a standard
+format, other tools and runtime can
+load it. analyse it, optimise it, and
+run it, without caring whether the
+model originally came from Pytorch,
+Tensorflow, or something else.

@@ -1,0 +1,65 @@
+Welcome back.
+So far we have discussed the
+infrastructure of scaling.
+The networking challenges we faced, and
+the architectural strategies we use to
+split up our data and models. Now we
+are going to look at the mathematical
+engine that actually makes learning
+possible in these environments, which
+is distributed stochastic gradient
+descent. In this part of the module,
+we're going to peel back the curtain.
+On how we take the most fundamental
+optimisation algorithm in machine
+learning. And adapt it so that dozens
+or even thousands of computers can
+collaborate on a single mathematical
+solution.
+Before we distribute the work, let's do
+a quick refresher on how SGD works on a
+single machine. At its core, SGD is an
+optimisation algorithms used to
+minimise a loss function.
+Imagine the 3D original lost landscape.
+Our goal is to find the lowest point in
+the terrain, the global minima. We do
+this by taking iterative steps in each
+step, we calculate the gradient. Which
+tells us the direction of the steepest
+ascent by taking a step in the opposite
+direction, the steepest descent, we
+move closer to the bottom.
+Look at the formula theta T + 1 equal
+to theta T minus eta divided by nbla
+theta T. Theta T represents our current
+model weights. Nabla L theta is the
+gradient or the slope of the loss at
+our current position. Eta is our
+learning rate, which controls how big
+of a step we take. In a standard non
+distributed setting, one computer looks
+at a small batch of data, calculates
+this gradient, and updates the weight.
+It repeats this process 1,000s or
+millions of times.
+Until the learned, lost landscape looks
+smooth, and we have reached our
+destination. However, when we move to
+distributed ML, we aren't just
+calculating one gradient at a time. We
+have multiple workers all standing on
+different parts of the data.
+Calculating their own version of that
+gradient simultaneously.
+The challenge we will explore in the
+next video is how to combine all these
+different local slopes into a single
+accurate step forward for the global
+model. Now that we have refreshed our
+memory on the basic maths, let's look
+at the mechanics of distribution. In
+the next video, we'll exactly see how
+these gradients are pushed, pulled, and
+aggregated across a network. I'll see
+you there.

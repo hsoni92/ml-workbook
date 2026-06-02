@@ -1,0 +1,137 @@
+OK. So, in our last to script, we had
+created the registry, then we created
+the current best. Jason, right? So,
+If you see, we have a registry of
+models and a promotional script that
+write the winner to current-based Jason,
+right? So now it's time to close the
+loop. We need to build a service that
+is smart enough to use this.
+Information. So a key principle of good
+system design is uh decoupling, right?
+So our serving application should not
+need to know anything about our
+training pipeline or our promotion
+logic, right? It should have one and
+only one job that is read the
+configuration file, load the specific
+model, and serve prediction. So the
+current best.json file is that uh
+configuration file. So this decoupling
+is powerful. It means uh we can update
+the live model in production without
+ever touching the, uh, service code,
+right? We just need to change the
+current bit. JSN file and restart the
+service. So, in this script, the final
+script, we will build a fast API
+service that uh Implements this uh
+dynamic uh loading pattern. OK? So
+let's uh open our app. Inside the
+service, we have uh app.
+P.
+So, we have uh
+Usual pangnetic model for the request
+and response, but the most important
+part is the model, uh, loading logic
+here, right? So, the load model from
+Best, yeah, this is the function
+responsible for that. It reads, uh,
+current Jason and get the path of the,
+uh, model artefact and use uh job lib.
+node. To load the model into a uh
+global variable, right? It also stores
+the model version and other metadata,
+so we can use it later. But uh when
+does this function work? We used the
+fast API lifespan events. OK. So this
+is a special feature that tells uh fast
+API to run our uh load model from best
+function exactly once when the server
+first uh starts up, OK? So this is the
+perfect place to in a slice our model.
+It ensures the model is loaded and
+ready before the service starts uh
+accepting any request, OK? So, with the
+model loaded, the rest of the app is uh
+straightforward. We have two endpoints,
+the
+Root
+Uh, this, we have already seen, uh, in
+our previous lab, right? Like, uh, it
+does not make the prediction, it just
+returned the information about the
+currently loaded model. So, this is
+incredibly useful for debugging and
+monitoring as it allows us to ask the,
+uh, live service, which version are you
+currently running. And then we have the
+uh predict end point. Uh, it takes in
+feature and, uh, use our globally
+loaded model object to make a
+prediction. And, uh, notice that the
+response include the version of the
+model that handle the request. So, this
+is another critical piece of
+information for traceability. So, let's
+see uh it in action. First, we start
+the server from the uh service
+directory. OK. So let's, uh,
+OK. So let's run this, uh,
+The script, uh.
+Let's go inside the service.
+OK. You can also follow.
+Read me.
+And uh we have the combined.
+We have the unicorn command. So let's
+uh execute. So let's uh
+Run that
+And you can see. The app is up and
+running, so let's, uh, copy the local
+host URL.
+Paste it in the browser.
+And you can see uh uh basically loaded
+the V2 version of the model given in
+our current uh best torch and file.
+Right? And uh,
+You can also run this uh uh. EPI using
+uh Bruno that we have seen in our
+previous lab. So that experiment you
+can do since we also have the Predicted
+point so you can run uh This and you
+can validate. So, and even uh our log
+message confirming that uh it has
+loaded V2 version because that's what
+our promotion script shows. Now, let's,
+uh, now you can also test it in Kerl or
+uh in the Bruno, which, which we have
+already seen. We also have the predict
+uh pinpoint that you can also explore.
+So, the first command hit our metadata,
+uh, the
+Root end point, right? And confirm that
+uh we do is uh
+Active. And the second command, uh,
+let's open redo.
+So, as we have seen, this command will
+start your application. Uh, and, uh,
+you can run this by using Kern or the
+Bruno that we have already seen in our
+previous lab. So here, the first
+command, uh, hit our metadata point and
+confirm that, uh, V2 is active, and the
+second command, this, uh, gets a
+prediction and the response, uh,
+payload also confirmed it was, uh,
+handled by V2 so that you can try using
+Bruno or GERD. So, we have successfully
+built a service, uh, that is uh
+dynamically configured by our promotion
+process. If we wanted to roll back to
+V1, all we need to do is manually edit
+the current best. JSN to V1 and restart
+the service. So, this file-based
+registry and promotion system is simple,
+robust, and, uh, powerful pattern for
+managing the model life cycle in
+production.

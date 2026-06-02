@@ -1,0 +1,44 @@
+So why are machine learning systems
+particularly attractive targets? First,
+they often sit close to high stake
+decisions money, access, safety,
+reputation. That means any successful
+attack can have outsized impact. Second,
+model behaviour is complex and
+nonintuitive. Even honest team
+struggles to predict every age edge
+cases. Attackers can take advantage of
+that by exploring the system with
+carefully chosen inputs. Third, the
+attack surface is broad. Data pipeline,
+feature stores, batch jobs, online APIs,
+dashboards, and logs. A weakness in one
+of these can affect the whole system.
+And if your deployment and testing
+processes are immature, fixes can be
+slow. Leaving you exposed longer. The
+takeaway, machine learning security is
+not separate from MLOs. It's another
+reason to have good automation,
+monitoring and discipline. What can you
+do as a model engineer?
+You don't have to solve security alone,
+but you can design with defence in mind.
+A few first line practises, implement
+input validation and rate limiting, so
+obviously bad and excessive traffic is
+rejected early.
+Apply least privilege to data, feature
+stores and model, not everyone needs
+production data access or model
+downloads rights.
+Use the monitoring tool we built in
+early modules to watch for anomalies in
+inputs, outputs, and traffic patterns.
+Choose secure defaults, disable debug
+endpoints by default, keep error
+messages minimal, and rely on version.
+Auditable deployments through your CICD
+pipeline. These don't remove all risk,
+but they dramatically raise the bar for
+potential attacks.

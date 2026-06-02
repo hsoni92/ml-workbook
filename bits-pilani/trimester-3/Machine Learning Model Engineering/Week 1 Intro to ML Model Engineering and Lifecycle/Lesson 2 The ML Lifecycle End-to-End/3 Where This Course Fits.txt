@@ -1,0 +1,35 @@
+Now let's place this course on the top
+of the life cycle. In this course, we
+mostly live in later stages deployment,
+turning models into services,
+monitoring, keeping an eye on how they
+behave in real world, retraining and
+depreciation, evolving or retrying
+models over time. We will absolutely
+talk about problem framing, data and
+feature engineering, but mainly as
+context or how to build and maintain
+production systems. Whenever you see
+diagram later on. You can mentally drop
+them into these three stages deploy,
+monitor, and retrain. To wrap up, here
+is how to use this life cycle as a
+mental roadmap for the rest of the
+course. We will keep coming back to
+this diagram, sometimes to zoom into
+one particular stage, sometimes to talk
+about how multiple stages interact, for
+example, how monitoring informs
+retraining. How each module as a deep
+dive into one or parts of this life
+cycle, especially the production
+focused status, the big takeaway. ML in
+the real world is not just about
+training a model once. It's about
+running a system over time with
+feedback loops, updates, and careful
+engineering. In the next module, we'll
+start building the concrete skills and
+tools you need to operate in those
+later life cycle stages as a model
+engineer. Thank you.

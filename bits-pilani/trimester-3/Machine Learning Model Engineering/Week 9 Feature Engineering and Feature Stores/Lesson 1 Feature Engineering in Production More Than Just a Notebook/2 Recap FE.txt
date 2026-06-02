@@ -1,0 +1,67 @@
+The big reason or the message is. Good
+feature are not enough.
+They have to be computed consistently
+in both training and serving. Let's
+start with the familiar word feature
+engineering in a notebook. Here,
+feature engineering usually means
+scaling or normalising numeric columns,
+encoding categories using one hot or
+label encoding, bucketing continuous
+values like age or income, and
+computing aggregations like counts,
+sums, averages, or ratios.
+We do this on a local data frame or a
+data set in memory, typically on a
+static snapshot of data, and as long as
+we stay in this world, things feel
+straightforward. But when we put a
+model into production, the context
+changes completely. We now have 2
+worlds. At training time, we work with
+large historical data set. We compute
+features for millions of rows at once
+and feed them into our training
+pipeline. At serving time, we get one
+request at a time, for one user or even
+event, and we need to compute or look
+up their features right now. The
+challenge is that the same feature must
+be defined in a way that works both on
+large historical data for training and
+on per request data for online
+prediction.
+The first major production constraint
+is consistency.
+We want a feature like customer 3D
+spend to mean the same thing.
+When we compute it over historical data,
+or training, and when we compute it on
+the fly for a single user in production.
+If we use different code path.
+Use different time window, or even pull
+more slightly different data source, we
+end up with what's called training
+serving SKU. The model sees one
+distribution of features in training
+and different distribution in squeuing.
+That skew silently kills model
+performance.
+One second constraint is performance
+and freshness.
+On the training side, life is easier.
+You can run long batch jobs. You can do
+heavy join on a squell or a spark. You
+can afford minute or hours of
+computations.
+On the serving side, you often need
+very low latency, sometimes under 10 to
+20 milliseconds for all feature lookups.
+Fresh data, for example, the last few
+minutes or hours of user activity. And
+you definitely cannot run multiway
+joints on large tables for single,
+every single request.
+This pushes us toward caching,
+precomputation and proper online
+feature infrastructure.

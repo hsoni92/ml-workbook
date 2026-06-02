@@ -1,0 +1,19 @@
+Welcome to why standardisation and
+optimisation Matter in production. Up
+to this point in the course, we have
+learned how to turn models into APIs,
+containerize them, monitor them in
+production, and even train and roll out
+new versions. Now we are hitting a very
+real world problem. This model work,
+but can it run fast enough, cheap
+enough, and all the hardware we care
+about. In this video, I will show you
+why the model we train in research
+often don't fit production constraints.
+Three big goals we care about in
+production probability, latency, and
+throughput and footprints, and a
+preview of the tools we will use
+standard model format, compression
+techniques, and optimised runtime.

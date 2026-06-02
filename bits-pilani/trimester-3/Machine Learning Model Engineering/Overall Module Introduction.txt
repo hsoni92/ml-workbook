@@ -1,0 +1,122 @@
+Welcome to this course on production ML
+and model engineering. In most ML
+journey, we spend a lot of time inside
+notebook tuning models and celebrating
+metrics like accuracy or AUC. But in
+real product, the hard part is getting
+those models deployed, monitored, and
+kept healthy over time. This course is
+about that gap, how to go from I have a
+model in notebook to we have a reliable
+ML service in production. We will
+combine short theory videos with
+practical labs so you don't just
+understand the ideas, you actually
+build and run the pieces of a
+production machine learning system.
+This course assumes you have already
+met ML before. You have trained a model.
+You have seen metrics like accuracy or
+F1, and you're comfortable with writing
+Python and using Git at a basic level.
+We are not going to drive algorithms
+from scratch and prove theorems.
+Instead, we will focus on the
+engineering side. How it to turn models
+into APIs, how to keep them fast,
+reliable and observable. And how to fit
+them into the larger data and
+deployment ecosystem.
+If your goal is to go from I know ML to
+I can help my team ship ML in
+production, you're exactly in the right
+place. By the end of this course, you
+should be able to own the full life
+cycle of a model
+in production. You will know how to
+expose models as API and when to use
+batch, online or streaming inference
+patterns. You'll understand how to plug
+models into deployment pipelines and
+CICD, so updates are not manual and
+fragile. You will set up monitoring for
+latency, data drift and model quality,
+and you will practise retraining and
+versioning models using a simple
+registry. We will also keep coming back
+to real world traffic trade off.
+Accuracy versus latency, cost, user
+experience, and basic aspects of
+security, fairness and auditability
+that every production system needs.
+The course is broken into modules. Each
+with short theory videos, and matching
+labs. In Module 1 to Module 3, you will
+learn that model engineering is what it
+is, and build your first model service
+with fast API and dockers.
+In Module 4 to Module 6, we move into
+pipelines, CICD, monitoring and
+retraining, the basic MLOpe's backbone.
+Model 7 to Model 9 focus on model
+optimisation and feature engineering.
+Using standard format like ONNX,
+optimised runtime, and featured stores
+to keep model fast and consistent.
+In Module 10 to Module 12, we zoom into
+or zoom out to data pipeline,
+multimodal systems, and scaling, how to
+handle multiple models, tenants, and
+traffic patterns. Finally, Module 13 is
+your capstone view.
+Tying everything together into a full
+machine learning system design, every
+module follows the same pattern, short
+theory, then you touch real code.
+Theory is only half the story. The
+other half is labs and mini projects.
+Across the modules, you'll start from
+ready model and turn it into a live
+HTTP service. Build both batch and
+online client and actually measure
+latency and throughput. Package the
+service into Docker container and run
+it locally. Use ML flow style tracking
+to log training runs and metrics.
+Implement a tiny feature store to keep
+training and serving in sync. And wire
+up a simple retraining and model
+registry using version folder, and a
+current best.json file.
+You will also get a taste of
+optimisation and compression, using
+ONNX and ONNX runtime to see how file
+size and latency changes. The labs are
+designed to feel like small slices of a
+real production setup, not just
+artificial toy examples.
+To help you consolidate what you learn,
+the course includes practise quizzes to
+strengthen recall after key modules,
+graded quizzes, and small assignments
+that combines ideas across modules, and
+at the end of the course exam are
+capstone style questions where you will
+reason about system design and
+trade-offs, not just definitions. To
+get most out of this course, I strongly
+recommend you code along with every lab,
+not if it even if it feels slow.
+Pause the video, type things yourself
+and experiment. When the big picture
+feels fuzzy, come back to the Model 13
+layered architecture diagram, data,
+features, training, serving, monitoring.
+Try to place each concept there.
+Finally, keep a small playground
+repository where you tweak things,
+break them, and fix them. That's where
+a lot of real understanding will come
+from. With that, let's jump to Module
+One and start turning model into real
+running systems. Thank you.

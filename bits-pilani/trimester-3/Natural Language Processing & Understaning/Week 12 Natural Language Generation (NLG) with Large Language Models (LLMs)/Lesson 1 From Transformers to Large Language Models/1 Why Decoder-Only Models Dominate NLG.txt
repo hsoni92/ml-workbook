@@ -1,0 +1,44 @@
+Alright learners, welcome to module 12
+of your course, which is all about
+natural language generation with large
+language models or LLMs.
+Now we should know that LLMs are
+decoder-only transformer models, and
+before diving into natural language
+generation, let's understand why
+decoder-only models dominate energy or
+natural language generation.
+Decoder-only transformer models
+dominate natural language generation
+because they model the probability of
+the next token.
+Generation, with decoder only
+transformer models is sequential and
+auto regressive.
+And each generated token. Becomes part
+of the context. So what this means is
+the model generates token by token in a
+sequential format, so token one.
+Token 2, Token 3. So this token I was
+generated based on some context.
+Right?
+Once generated, this T1 also becomes
+part of the context for generating T2.
+Then T1 and T2 becomes part of the
+context for generating T3, and so on,
+right?
+The model learns that given a sequence
+of tokens so far. Predict the most
+likely next token, which we saw here.
+So context.
+Will determine what the first token
+will be.
+Context plus token 1 will determine
+what 2 token will be.
+And this will determine what the 3rd
+token will be, and so on.
+This simple objective scales extremely
+well with decoder only transformers,
+and that's why they dominate energy.
+All right, I'll see you in the next
+video. Thank you.

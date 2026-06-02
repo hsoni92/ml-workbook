@@ -1,0 +1,50 @@
+Welcome back, learners, to this lesson
+on prompt engineering. So what is a
+prompt?
+A prompt is the input provided to the
+LLM, which makes it initiate text
+generation.
+So the prompt.
+Goes to the LLM as input.
+Which makes it generate text, which is
+the output.
+So the prompt is your input.
+And the generated response or the text,
+is the output of the LLM. A prompt can
+include few different things. It may
+have some instructions.
+It may have some context or background
+information.
+It may have some examples as well.
+Finally, a prompt can contain some
+constraints on style or length or the
+format of the response.
+Finally, we must understand that there
+is no single correct prompt. Only more
+or less effective ones. Now that we
+understand what a prompt is, let's get
+into prompt engineering.
+Prompt engineering is the practise of
+designing inputs that guide the model
+towards the desired output.
+Your output will depend on your input.
+Always remember that.
+Garbage in
+Will lead to garbage.
+Out.
+No matter how powerful your LLM or
+model is, if your input is not right,
+your output will not be right.
+Which makes prompt engineering a core
+skill. When working with LLMs, we've
+understood that LLMs generate text
+based entirely on the prompt that they
+receive. Unlike traditional programmes,
+we cannot explicitly code the behaviour,
+we can only describe it through our
+prompt. This means that the same model
+can produce very different outputs, and
+small changes in the input can
+significantly affect the result. So
+that's all in this video, and I'll see
+you in the next one. Thank you.

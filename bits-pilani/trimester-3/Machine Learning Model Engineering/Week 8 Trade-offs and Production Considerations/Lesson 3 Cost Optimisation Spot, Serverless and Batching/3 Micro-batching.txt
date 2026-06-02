@@ -1,0 +1,49 @@
+In practise, you often combine these
+cost levers. Example one offline churn
+scoring that runs once a day. You can
+run this on spot instance and process
+data in large batches. Nobody is
+sitting and waiting, so you can relax
+latency and focus on cost saving.
+Example 2, a low traffic internal tool
+that calls a new model
+or a model a few times per hour. A
+serverless inference setup is ideal.
+You do not pay for ideal capacity, and
+you let the cloud provider handle
+scaling.
+Example 3. A high traffic GPU based
+APIs. You might use on demand GPU
+instance for reliability, enable micro
+batching to keep the GPU efficiently
+used. And perhaps
+Use spot instance for non-critical
+workload, or overflow traffic. The
+right combination depends on your
+traffic latency, cost, and UX
+requirements. To wrap up this video, we
+saw how different pricing models and
+instance types affects inference cost.
+We learn when to use spot or
+preemptible instance. We introduced
+surveillance inference for spiky or low
+volume workloads, and we looked at
+batching and micro batching as powerful
+ways to improve efficiency, especially
+on GPUs. In the next theory video,
+Topic 4, we will put everything
+together into a decision framework. How
+to read your constraints around
+accuracy, latency, cost and user
+experience, and how to choose the right
+combination of model, scaling pattern,
+and cost levers. In the Mole 8, you
+will apply compression to a model,
+major changes in size, latency,
+accuracy, and then practise deciding
+whether each version of model best fits
+Edge or cloud, batch or online. All of
+this is about making your machine
+learning system not just smart, but
+also sustainably affordable in
+production. Thank you.

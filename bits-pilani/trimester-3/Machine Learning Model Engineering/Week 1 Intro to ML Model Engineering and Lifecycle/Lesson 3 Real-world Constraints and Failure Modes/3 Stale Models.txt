@@ -1,0 +1,20 @@
+To wrap up, the constraints and
+failures modes we have just walked
+through are the reason ML needs
+engineering and operations, not just
+clever modelling.
+In the next theory video, topic 4, we
+will put a name to the practises that
+handle these problems, MLOs. We will
+see how it relates to DVs, and where
+the model engineers fits into this
+picture.
+Then in the lab, we will look at real
+ML service and start tying these ideas
+to concrete code and infrastructure. As
+you go through the rest of the course,
+keep these constraints and failure
+modes in mind. They're the backdrops of
+for every design decisions we make as
+model engineers.
+Thank you.

@@ -1,0 +1,52 @@
+Welcome to Lesson 3. In the previous
+lesson, we talked about where the model
+weights live. Now we need to discuss
+when they get updated. This brings us
+to the concept of training modes. Let's
+start with the synchronous training. In
+a synchronous setup, the entire cluster
+operates like a well drilled marching
+band. The key rule is weight all. This
+means every single worker in your
+cluster must finish computing its
+specific batch and calculate its
+gradients before the model weights can
+be updated. So only after everyone is
+done do we aggregate these gradients
+and move to the next step. The primary
+benefit of this approach is consistency,
+because every worker waits for the
+update to finish before starting the
+next batch. You are guaranteed that
+every worker is always using the exact
+same version of the model for every
+training step. This makes the training
+process mathematically identical to
+training on a single machine, just much
+faster. However, there is a major
+downside often referred to as a
+straggler problem. Imagine you have 10
+high-speed GPUs working together, but
+one of them is slightly slower. Perhaps
+due to minor hardware issues, or due to
+a network spike, or. Just
+a different background task running on
+that node, right? So because of the
+weight all rule, those 9 other GPUs
+which are fast will be sitting idle,
+wasting expensive compute time while
+they wait for that 1 straggler to
+finish. In a synchronous world, your
+cluster is only as fast as the slowest
+member, as we might have discussed in
+earlier videos as well. Despite the
+risk, synchronous training is the most
+common choice for many deep learning
+task.
+Why? Because it provides more stable
+convergence.
+In our next video, we'll look at the
+asynchronous training, which tries to
+solve the straggler problem but
+introduces some interesting trade-offs
+of its own.

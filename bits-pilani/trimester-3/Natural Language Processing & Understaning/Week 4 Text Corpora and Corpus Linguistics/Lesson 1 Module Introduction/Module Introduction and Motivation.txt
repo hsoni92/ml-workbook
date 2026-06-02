@@ -1,0 +1,12 @@
+Welcome learners to the 4th module,
+Text Corpora and Corpus Linguistics.
+In this module, we will examine the
+foundational role of Text Corpora in
+training NLP models, and the critical
+issue of data bias. You will gain hands
+on experience analysing standard data
+sets like the Brown and Gutenberg
+Corpora. And during that, we will
+discover some laws that govern natural
+language. That's all for this video.
+I'll see you in the next one. Thank you.

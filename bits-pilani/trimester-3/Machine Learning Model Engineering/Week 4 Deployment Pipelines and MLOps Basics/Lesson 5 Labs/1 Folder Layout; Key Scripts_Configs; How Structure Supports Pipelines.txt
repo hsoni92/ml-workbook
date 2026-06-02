@@ -1,0 +1,221 @@
+Hi, everyone. Welcome to the lab 4. In
+this session, we will take a guided
+tour of the ALOs uh repository. Uh,
+you'll be working with. So I have
+created, uh. This module, uh, lab 4
+over here. The goal is to understand,
+uh, where, uh, things live and, uh, How
+the repository is structured to support
+uh pipelines, uh, experiment tracking,
+and, uh, CRCD. So, here also, don't
+worry about understanding every single
+line of code right now. The focus is on
+the layout and the responsibilities of
+each directory, OK? So, let me open the
+readme file. Here we have uh All the
+details. Yeah.
+So let's start with the top-level
+structure. Uh, you will see this
+pattern in many MLOs projects.
+Uh, so first, uh, you can see this is
+our root directory. Let's, uh, walk
+through each folder.
+Uh, so you can see at the beginning
+here, we have. GitHub. So this GitHub
+folder defined our CICD workflows using
+GitHub actions. The CIYML file inside
+specifies the automated job that run
+whenever we push code or create a pull
+request. The code and all details we're
+gonna see soon. So now let's uh move to
+the next folder that is uh.
+Config, right? So here the config
+folder contains uh our GML
+configuration file. So, these files
+control our experiments. Like, uh,
+hyperparameters, data path, and, uh,
+other training options. Using configs
+is uh key to reproducibility, as they
+are a critical input to our pipeline,
+right? And now we have uh our data
+folder. In data directory here, we keep
+a small sample data for local
+development and testing in production.
+You would never commit large data files
+to your repository. Instead, this
+folder might contain pointers to data
+in a data lake or warehouse. For our
+lab, training data.csv is all we need
+right now. So we have this uh training
+data.csv uh for sample training.
+Right? Now, next, uh, move to the
+models. So, the models directory is an
+artefact output we have already seen in
+our previous lab. When we train the
+model locally, the saved model.pKL file
+will appear here, right? In a real MLO
+setup, this would be replaced by a
+remote model, registry or cloud storage,
+but it serves as a
+Simple local uh placeholder, right?
+Then we have uh scripts.
+So, the scripts folder holds our entry
+point scripts. These are the top-level
+scripts that our pipeline will call
+like uh brain.py.
+They orchestrate the process by calling
+the core logic from the source
+directory. OK. Now, let's move to the
+source. This is where the core ML code
+lives, our data loading function, model
+training logic, and uh any evaluation
+utilities. So, in a pipeline mindset,
+this is where the steps of our pipeline
+actually implement their uh logic.
+So this is about source directory. Then
+we have this uh markdown file. So I've
+already added read to me, so this is no
+longer required. So let's uh remove
+this.
+Yeah.
+Let me save this and open it again,
+command safely.
+Yeah. So then we have uh read me. MD.
+And of course, this is the entry point
+for anyone exploring the repository. It
+basically documents the repository
+structure, provides quick start of
+instruction like we have here, and
+point to detail uh lab guides.
+And a good read me is uh essential for
+onboarding new team members and uh
+ensuring everyone understands how to
+run the project. So, it's the first
+thing people see on GitHub to keep it
+clear and uh up to date. And the
+important thing is not memorising every
+folder, but uh recognising the pattern,
+uh, like uh source code and source,
+data and data, artefacts and models, uh,
+config and configs, entry point in
+scripts, and uh CI workflow in. GitHub.
+So, this structure is what let us plug
+in, uh, automation later, right? OK. So
+now, let's look at two key files that
+work together. The main training script
+and its configuration file. So you can
+find the script over here, training.
+B.
+And uh this is the main training entry
+point that our pipeline will call. Now,
+let's look at the details. So first, it
+will load the configuration file. You
+can see here, this is our configuration
+path.
+And uh it's basically loading all the
+details we are passing into this file,
+this configuration file.
+Then it's uh load the data.
+You can see it and before that
+parameters. Uh, so we'll see it later
+what all parameters we are logging
+inside them and flow. So basically, it
+will log the parameters, it will load
+the data from our, uh, Uh, training
+data sample files, then it's uh, train
+the model. Then it's a log the metrics.
+And then we save the uh logs and the
+model artefacts to the model path,
+which we have provided in the
+configuration file. Then basically, it
+will log the model with ML flow. So
+that's how uh this file looked like and
+uh basically, it's the glue that uh
+connect uh everything, data, module,
+metrics, and then artefacts, right?
+Uh, like I mentioned, here, two files
+are working together. So now, let's, uh,
+open the configuration file we have.
+And uh this YML file contains the
+parameters for our training run, right?
+Notice how the data path and the model
+output path are defined here, not
+hardcoded in the script, right? This
+makes our runs config-driven and highly
+reproducible. We can change the
+learning rate. Or point to a different
+data set just by editing this file
+without touching the Python code, right?
+This pairing a training.Py entry point
+and a train config.TML file. So it's an
+extremely common and powerful pattern
+in ALOP's uh repositories. So,
+everything we just saw is what our
+pipeline and CICD system will call. A
+deployment pipeline, for example, might
+call uh PythonScript.
+Uh train.py.
+Right? With a specific configuration.
+This one and save the resulting
+artefacts, so then it will evaluate the
+metrics and then trigger the packaging
+and uh deployment of the model if it's
+uh meets the quality criteria, right?
+Now, let's uh dive deeper.
+What actually run this training script
+with the ML flow logging to track our
+experiments?
+OK. And then we'll look at how CIE
+automates uh parts of this pipeline on
+each commit. And now we have a great
+understanding.
+At least on how our folder structure
+looked like, how to Read these files,
+the folder directories and the
+subdirectories, right? We have explored
+three key things. First, the repository
+structure, how organising code into
+source data, models, configs, and, uh,
+scripts. And we create uh
+clear boundaries and make uh automation
+possible, right? Second, uh, the
+config-driven approach, how separating
+configuration from code in EML file
+makes uh experiments uh reproducible
+and uh pipelines, uh, flexible, right?
+Then we saw, third, the automation
+Foundation, how these uh structure, uh,
+basically Enables uh CICD workflow to
+automatically run, uh, test, uh,
+validate, uh, our ML code, right? And
+if you're learning this for the first
+time, uh, here's the big picture. I
+mean, MLOs is about uh making ML
+engineering systematic and repeatable,
+right? Instead of running a script
+manually on your laptop and uh hoping
+you remember what parameters you used,
+so you organise everything so that uh
+pipelines can do the work for you. The
+structure we saw isn't arbitrary. It's
+uh designed to support uh tracking,
+reproducibility and uh automation at
+scale, right?
+You can, you can think of it this way.
+The repository is uh like a blueprint
+that uh defined where everything goes.
+The config file are the instruction for
+each run, and the scripts are the
+orchestrator that bring it all together.
+And uh when you layer on tools like ML
+flow for tracking and uh Gita vaccine
+for CI you turn a simple training
+script into a production-ready uh ML
+system.
+So don't worry, uh, if it feels like a
+lot right now as we move through the
+next lab, uh, you will see each piece
+come to life, first with uh
+experimental tracking, then with the
+automated testing and uh validation. So
+let's move to the next step.

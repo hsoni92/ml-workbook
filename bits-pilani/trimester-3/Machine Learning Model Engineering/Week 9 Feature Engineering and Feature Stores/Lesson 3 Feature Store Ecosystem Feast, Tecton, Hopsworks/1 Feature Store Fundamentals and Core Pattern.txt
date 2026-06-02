@@ -1,0 +1,51 @@
+Welcome to Feature Store Ecosystem.
+Feast tecton Hopsworks.
+You don't need to memorise any specific
+vendor, but it's very useful to see how
+Retool implement the same feature store
+patterns we have been talking about. In
+this video, we will identify the common
+building block of most feature stores.
+Use Feast, an open source tool, as a
+mental baseline. And look at Tactton
+and Hopsworks as examples of managed,
+enterprise oriented platforms. The big
+takeaway, vendor names will change, but
+the core concepts of featured stores
+stay surprisingly stable.
+Before we dive into a specific tool,
+let's briefly recap what a feature
+store is.
+A feature store is central system that
+lets you define feature ones,
+materialise them into online store for
+training and batch scoring, and an
+online store for low latency serving.
+And offers APIs plus a registry or
+catalogue so teams can discover fetch
+reuse features. Now we will use or we
+will see how different tools implement
+the same pattern with slightly
+different flavour. Despite different
+branding, most feature stores share the
+same code building blocks. First,
+feature definition. These lifts. In
+code and configurations.
+They specify the entity key. The event
+Time column, and the transformation
+logic. 2nd, an offline store. This is
+your data lake, or warehouse, where
+historical features tables are stored
+in formats like perquet, BigQuery, or
+snowflakes. Third, an online store. A
+low latency key value store such as
+Radis, Amazon Dynamo DB, or Cassandra,
+which serves features per entity.
+Fourth, a registry or catalogue. This
+tracks metadata like honour, freshness,
+and schemas, and provides searches or
+user interface so people can find and
+reuse features instead of reinventing
+them.
+With that pattern in mind, let's look
+at some concrete tools.

@@ -1,0 +1,41 @@
+To bring these ideas down to earth. The
+Module 10 labs will use a simple batch
+style simulation rather than building a
+full streaming system. You will
+simulate a new data arriving as a daily
+CSV files like day 1.csp, day 2.csv.
+Write a small ingestion script that
+finds the new day file. And append it
+to master training data set. And hook
+up to a simple retrain trigger, based
+on data volume or days since last
+retrain.
+Even in this simple setup, you'll start
+thinking about how fresh your training
+data is and how to log what was
+ingested.
+So you maintain basic completeness and
+lineage.
+To wrap up, We distinguished inference
+latency and data freshness latency, and
+saw that both matters. We talked about
+freshness SLAs and how to think about.
+How fresh features need to be!
+We looked at completeness and
+correctness issues, missing events,
+duplicates, out of order data and
+invalid values.
+And some simple checks to catch them.
+We discussed schema evaluation and data
+contracts, and why machine learning
+teams need these to keep models stable,
+and we need data quality monitoring
+with model monitoring. As two halves of
+end to end machine learning safety.
+The main idea fast machine learning is
+useful without trustworthy data.
+With that, you're ready to go into
+Model 10 laps. And build a small new
+data ingest, retrain pipeline. That
+puts these concepts into practise.
+Thank you.

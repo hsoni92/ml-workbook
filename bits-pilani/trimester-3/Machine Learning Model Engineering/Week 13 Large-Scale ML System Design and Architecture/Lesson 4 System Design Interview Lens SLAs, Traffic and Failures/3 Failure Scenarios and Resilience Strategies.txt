@@ -1,0 +1,69 @@
+Next, think about failure scenarios.
+Starting with data and features, data
+pipelines can break, no new events are
+ingested, or only partial batches
+arrive. Feature computation jobs can
+fail. Living stale or incomplete
+features. Typical mitigation includes.
+Failing back to last known good
+snapshot of features when new data is
+missing, having strong data quality
+checks and alerts so you notice issues
+quickly.
+Using version features definitions in a
+feature stores, so you can roll back a
+broken feature computation.
+And degrading gracefully. If a complex
+features fail, you might temporarily
+rely on a simpler, more robust features.
+Calling these out clearly in an
+interview shows you understand the data
+side of reliability, not just the model.
+Model service and deployment bring
+their own failure cases. Service can go
+down or get overloaded, causing latency
+spikes and timeouts.
+A new model deployment can regress
+quality or even crash under real
+traffic. Common mitigation include
+fallbacks like cached implementations,
+a simpler baseline model, or non
+personalised results. These may not be
+ideal. But they keep the product usable.
+Deployment strategies like Blue green
+or canary rollout. Where you send a
+small slice of traffic to a new model,
+and watch Matrix before promoting it
+fully.
+Fast rollback to previous model version
+if you detect issues, and always keep
+logs of models version, request context,
+and errors so you can run proper post
+incident analysis and improve the
+process over time.
+In an interview or design review, you
+can structure your answers like this.
+Start by clarifying requirements, SLA,
+traffic, data volume, and how critical
+failures are. Sketch a layered
+architecture.
+Like data, features, training, serving,
+and monitoring, just like what we did
+in Module 13, Topic 3.
+Talk
+through capacity and scaling, rough
+instance counts, batch windows, and
+auto scaling strategies. Explicitly
+call out failure mode and how you would
+mitigate them data pipeline issues,
+moral service outage, and bad
+deployment. Close by discussing
+tradeoffs and open questions, like
+accuracy versus latency versus cost
+versus complexity, and what you would
+validate with experiment or prototype.
+This shows not just that, you know,
+machine learning. But that you can
+design and reason about machine
+learning system end to end.
+Thank you.

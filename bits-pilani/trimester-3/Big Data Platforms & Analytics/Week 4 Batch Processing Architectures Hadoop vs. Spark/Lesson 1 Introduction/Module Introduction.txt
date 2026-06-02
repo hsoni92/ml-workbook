@@ -1,0 +1,44 @@
+Hello everyone, and welcome to Module 4,
+Hadoop versus Spark. In this module,
+we're going to explore a pivotal shift
+in the world of big data, the move from
+the traditional disk-bound architecture
+of Hadoop to the high-speed in memory
+processing of Apache Spark. If you look
+at our objectives for this module on
+the slide, you'll see that we have a
+clear roadmap. We are going to start by
+looking under the hood of Hadoop. To
+understand HDFS, the Hadoop distributed
+file system. We will examine how data
+is physically stored in massive blocks
+and how the replication process ensures
+your data remains durable. Even if a
+server rack fails, however, as data
+needs have evolved, so have our
+challenges. We're going to spend a
+significant amount of time. Identifying
+the primary bottleneck in Hadoop, which
+is high latency. We will look at the
+materialisation cost, that is the time
+wasted every time a system has to write
+data to a physical disc and read it
+back again.
+This sets the stage for Module 4, the
+Spark revolution. We will explain
+exactly how Spark utilises in-memory
+computing to keep in RAM.
+Effectively turning the superhighway of
+memory into the primary workspace for
+data. By the end of this module, you'll
+be able to contrast the performance of
+Hadoop and Spark specifically for
+iterative algorithms like Kames and
+evaluate the cost benefit of investing
+in RAM heavy architectures versus
+traditional disc storage. This is where
+big data starts to move, at the speed
+of thought. Let's jump into lesson 2
+and begin our deep dive into HTFS
+internals. Happy learning. I'll see you
+in the next class.

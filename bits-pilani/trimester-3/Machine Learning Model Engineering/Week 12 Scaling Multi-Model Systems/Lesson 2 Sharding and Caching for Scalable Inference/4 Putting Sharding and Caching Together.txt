@@ -1,0 +1,22 @@
+Let's put everything together.
+In a practical, large scale setup, a
+router decides which shard or model to
+hit, maybe by region, language, or
+tenets. Within each shard, replicas of
+the model handle the load for
+reliability and throughput.
+A cache sits in the front of model
+calls, storing outputs or embeddings
+with version keys, so repeated or
+similar request can be served quickly.
+This combination of routing, sharing,
+replication and caching lets you keep
+latency low, throughput high, and SLO
+predictable, as traffic and the number
+of model grow.
+In the next Module 12 videos, we will
+look into at multi-tenant system and
+resource isolation, and then at vector
+databases and retrieval augmented
+pipeline, which are multimodal systems
+by design. Thank you.

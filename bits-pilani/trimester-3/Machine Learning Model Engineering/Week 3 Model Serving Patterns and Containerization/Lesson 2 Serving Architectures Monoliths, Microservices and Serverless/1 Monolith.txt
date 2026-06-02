@@ -1,0 +1,122 @@
+In the last video, we defined what
+model serving is a long-lived service
+that loads a model, handle requests,
+and return predictions. In this video
+we are going to look at how that
+service fits into the rest of your
+system. We will walk through three
+common serving architectures a
+monolithic app where the model lives
+inside the main application.
+A model microservice where model is its
+own service with an API. A serverless
+function where the model is packaged as
+a function that scales automatically.
+By the end, you will have a good sense
+of when a simple monolithic is
+perfectly fine, when it's worth
+splitting the models into its own
+service, and where server lists can
+help. Uh, with the spiky or lightweight
+workloads.
+So in topic one, we focused on what a
+model serving layer does.
+Loads the model, validates input, runs
+inference, format outputs, handle,
+logging, and errors.
+Now we are going to zoom out and ask a
+different question. How do we organise
+that serving layer inside a real system?
+There are many possible setups, but 3
+patterns show up over and over.
+A monolithic application, a model
+microservice, and a serverless or
+function based approach.
+Each answers questions like, where does
+the model live, how does the rest of
+the system talk to it, and how do we
+scale it and deploy it.
+When we say serving architecture. We
+are talking about how your model
+service fits into the bigger system.
+It answers questions like. Is the model
+embedded inside the main application,
+or is it a separate service?
+If we get more traffic, how do we scale
+the model? Do we scale the whole
+application, or just the model part?
+How do other systems talk to the model?
+Is it a direct function call, a HTTP,
+an HTTP API, a GRPC call, or an event
+stream?
+Different architectural choices leads
+to different level of complexity,
+degree of flexibility, and amount of
+operational overhead. Let's start with
+the simplest of monolithic application.
+In monolithic setup, everything lives
+together in one application the UI, the
+business logic, the model code, and
+model artefact. A typical shape is your
+web application handle HTTP route, talk
+to the database, and somewhere in that
+same code base you have functions like
+run model that loads model and call
+predicts. Example like you might have
+an internal analytic dashboard where
+clicking button triggers a Python
+function that runs the model directly.
+All inside same process. There is no
+separate model service here. The model
+is just part of your main application.
+Monoliths get a bad reputation
+sometimes. But they are often exactly
+what you want early on.
+Some of some of pros are like simple
+deployment. You build one application,
+deploy one artefact, that's it.
+This is ideal for small teams or early
+stage projects where speed of
+iterations matters more than perfect
+architecture. Infrastructure overhead
+is low. You don't have to manage extra
+services, extra configs, separate
+deployment pipelines. Local development
+is straightforward. And you run one
+process and can test end to end.
+Monoliths are good fit for small
+internal tools, proof of concepts, ML
+features. Low traffic or low critical
+application. If you're just starting
+out, a simple monolithic that includes
+model can be an excellent choice.
+Over time, monoliths can run into real
+limitation, especially for machine
+learning.
+Some of the pain points here are, like,
+it's hard to scale the model separately
+from the rest of the application.
+If the model needs more CPUs or GPUs,
+you end up scaling the whole
+application, including the part that
+don't need it. Model updates are tied
+up to app release. If you want to ship
+new model, you have to ship a new
+version of your entire application.
+You are constrained to the same tech
+stack. If the app is one language, but
+your machine learning ecosystem is
+stronger in other, this can get awkward.
+A bug can crash, the model code can
+potentially affect the entire
+application. Signal that it might be
+time to move beyond a monolith is the
+model becomes heavy, big, slow, or GPU
+hungry.
+Traffic grows, and your model is
+becoming bottleneck. Multiple teams
+need to evolve the model and the rest
+of the app independently.
+That's when we start looking at
+microservice style model serving. Thank
+you.

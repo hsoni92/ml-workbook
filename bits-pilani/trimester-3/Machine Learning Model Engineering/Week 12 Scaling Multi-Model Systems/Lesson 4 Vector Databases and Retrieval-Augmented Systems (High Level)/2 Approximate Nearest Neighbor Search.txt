@@ -1,0 +1,35 @@
+Vector database is a system designed to
+store embeddings and make similarity
+search fast and scalable. Typically, it
+stores a pair of things the embedding
+vector itself and some metadata, like a
+document ID or the original text, tags
+or time stamps. It gives you
+APIs to insert, update, and delete
+vectors, and to query by vectors.
+Here is my query embedding. Give me the
+top K nearest neighbours. Under the
+hood, these systems use specialised
+data structure to make that surge fast,
+even for millions or billions of
+vectors.
+Exact nearest neighbour search doesn't
+scale well when you have millions and
+billions of vectors. It can be too slow
+for real-time systems. That's why many
+vector databases use approximate
+nearest neighbour. Or ANN
+Instead of guaranteeing the exact
+nearest neighbours, ANN returns
+neighbours that are good enough, but
+does so much faster.
+There's a tradeoff between latency and
+recall, how many of the true nearest
+neighbours we recover? You also trade
+off index build time against speed
+query.
+Most systems expose configurable knobs,
+like index type. Number of probes, or
+surge depth. That you can tune based on
+your latency and quality requirements.
+Thank you.

@@ -1,0 +1,115 @@
+So, in our previous script, setup data
+and model, uh, we manually inspected a
+table and a chart to spot a performance
+gap between these two groups, A and B,
+right? So, that's a great start, but uh
+it doesn't scale. We can't rely on a
+human looking at the bar chart or uh uh
+table for every model we build, right?
+We need to automate this process. Let's
+do that. We need to modify our
+definition of um
+Fairness into a set of rules and uh
+threshold, right? So this turns a
+subjective observation into an
+objective. Basically, uh, it's a
+Automated check that can be run as a
+part of CICD pipeline, and the goal is
+to get a clear automated pass or fail
+signal, right? So, in the next script,
+uh, that is uh fairnesscheck.py.
+Uh, we will define, uh, fairness
+threshold. We will calculate more
+advanced, uh, fairness metrics like the
+false positive rate and, uh, build a
+script that, uh, automatically flag our
+model if it's, uh, violate, uh, the
+policy, OK? So, here is the script. Uh
+fairness
+check.py.
+At the very top, you will see our
+fairness policy defined as a set of
+constraints, OK? So we are defining max
+recall difference and uh max uh FPR
+difference. That is uh false positive
+rate difference as 10%. OK. So, this is
+our policy. So, it states that the
+difference in recall between any two
+groups should not exceed 10%, and the
+difference in the false positive rate
+should not exceed 10% as well. And why
+these metrics? Recall is often
+important because it measures how well
+the model identify true positives.
+Which can be critical for
+opportunity-based models like uh loan
+approvals, right? And the false
+positive rate is important because it
+measures uh how often the model
+incorrectly uh flags someone, right?
+Which is critical in uh punitive models
+like uh fraud detection.
+Right? And uh it is absolutely critical
+to understand that uh these thresholds
+are not universal. They are highly uh
+context-dependent. Let's say, for a
+high stakes uh medical model, you might
+uh want a maximum difference of only 1%,
+right? And, uh, for a low-risk uh movie
+recommendation system, uh, probably 10%
+might be perfectly Acceptable, right?
+So, these numbers must be decided in
+collaboration with uh product owners,
+uh, uh, legal teams, and with the
+domain experts, right? So, to enforce
+our policy, we first need to calculate
+the necessary metrics.
+We have created a new helper function
+that is uh
+compute confusion rates.
+So, which use uh psychic-learn uh
+Scal-learn confusion metrics to get the
+raw count of uh Uh, true negative,
+false positive, false positives, and,
+uh, true positives, right? So from
+these, we can calculate the FPR false
+positive rate, and uh false negative
+rate for each group, right?
+And the main part of this script is
+similar to lab one, but uh now, our
+metrics table include these uh new uh
+grades, right? So, next, we compute the
+delta, we calculate the absolute
+difference. In recall and uh FPR
+between Group A and B, right? And this
+gives us a raw number we need to check
+against our policy.
+Right. And uh finally, we have the uh
+Pass fail logic. It's a simple series
+of uh if statements, right? If uh
+recall. is greater than our max recall
+difference threshold, we add a failure
+message to our list of issues, right?
+And then do the same for the FBI
+difference.
+And if at the end the list of issues is
+empty. Uh, the check passes, otherwise,
+it fails, right? And we print out
+exactly which rules were, uh, violated,
+OK? So, let's, uh, run this file.
+Yeah,
+I um.
+Fairness_heck.py. Yeah, that's executed.
+And uh if you notice, the output uh
+clearly shows the detailed metrics per
+group and then the final verdict, right?
+So, in this case, our model might fail.
+One of the check, right? This fail
+status is a critical signal. It doesn't
+necessarily mean we discard the model,
+but it forces a conversation, at least,
+right? It's an automated flag that says
+a human needs to investigate this
+before proceeding. So this automated
+check is a powerful safety net in a
+machine learning pipeline.

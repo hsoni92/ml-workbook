@@ -1,0 +1,156 @@
+Welcome back, learners. In this video.
+Let's analyse the Gothenburg corpus.
+All right, learners, welcome back. In
+the last video we downloaded the two
+most popular text corpora and we did
+some preliminary analysis. Let's now
+deep dive into the Gutenberg corpus.
+So let's first define the objective of
+this analysis. In this video, we will
+use a single literary text to
+understand corpus size, vocabulary
+richness, word frequency patterns, and
+how preprocessing affects statistics.
+Let's work with Alice in the Wonderland
+from the Gothenburg Office.
+So let's first load and inspect the
+text. So what we have done is We have
+imported Guttenberg from the NLTK
+corpus, and here is the file ID for
+this Alice in the Wonderland text.
+The total words you can calculate them
+by Guttenberg.words and like how we saw
+in the last video, we can also
+calculate the total sentences
+Guttenberg.cents, right? So let's play
+with words right.
+Let's run this. So total words are
+34,110, and what are they? Or Alice's
+Adventures in the Wonderland by Lewis
+Carroll, 1865. Chapter one. Down the
+rabbit hole, right, so on and so forth.
+So if you want to see more, just change
+this number and run it again.
+So down the rabbit hole, Alice was
+beginning to get very tired of sitting
+by.
+Now what you need to observe here is
+that this raw corpus reflects the
+original text of this book,
+and the tokens include both punctuation
+and capitalization, right?
+Let's deal with this first.
+So what we're doing here is
+W. lower for w in words. What is words?
+This, the words in this text.
+So w. lower for words in words if
+W
+is alpha. What is alpha does is checks
+if there are alphabets in this word
+token, right? So essentially what we're
+doing is we are removing all the
+punctuations, we are removing all the
+white spaces, we are removing all the
+numbers, etc. Anything that is beyond
+alphabets, we are removing them. So now
+let's run this and calculate how many
+words we are left with.
+27333. Originally we had 34,110, and
+now we have 27,333.
+What you must note is that lower casing
+reduces vocabulary inflation, right,
+and removing punctuation gives
+meaningful words more counts. Also note
+that here we are normalising text only
+for analysis and not modelling.
+Let's now see how rich is the
+vocabulary of this text, right? So
+let's define vocab, which is set off
+this list called words. So what this
+will do is it will remove duplicates.
+We will be left with only the unique
+words in this text, right?
+OK, so we are left with 2,569 unique
+words only. Remember, the number of
+clean words were 27,333, and the number
+of unique words. Almost like 10% of
+that, right?
+And let's see what is TTR or type token
+ratio. What it does is it calculates
+the total size of this vocabulary and
+divides it by the total number of words
+in the vocabulary, right? So what it's
+called is type token ratio. Basically
+it shows the lexical diversity and
+lexical richness of this text.
+It is 0.094, right? Almost 9%.
+Now what we need to observe is that the
+literary text tends to have higher
+vocabulary richness because they use
+more unique words and more different
+words to describe the scene, right? TTR
+gives us the intuition and not the
+absolute judgement. Of how rich the
+lexical diversity is in a text.
+A single book can have thousands of
+unique words, right? And we've seen
+that already.
+Let's now calculate the word frequency
+distribution.
+So how we do that, we import counter
+from the collections package.
+And we run counter on this list of
+words.
+All right, so let's run that.
+Now frequency distribution most common,
+right? So most common 10 words. Are the
+and to a and you see how many times
+they're being repeated, right? These
+are the frequencies of these words
+occurrence. So the has appeared 1,642
+times so and has appeared 872 times, so
+on and so forth, right.
+If you will notice, these are mostly.
+Non-meaningful words, yeah, or
+non-content words, also known as top
+words. So let's remove them and see
+what we're left with.
+All right. After removing the stop
+words, we are left with the content
+words. These are the top 10 most
+occurring words. You see, Alice said.
+Queen would like no, right?
+Now the content words emerge very
+clearly, and this is very useful for
+tasks like topic modelling,
+summarization, even sentiment analysis,
+right?
+Let's visualise this frequency
+distribution.
+So let's import matplotlib.
+So you see, in the original text, these
+are the distributions, the and to uh
+and these are the top 20 most common
+words, right? Let's also run it on the
+Clean text where top words have been
+removed. So the top 10 words are said
+Alice Little, exactly how we saw it
+here, right? So if you want to print.
+Top 20. Let's make it 20 I will also
+name it correctly.
+Right, so you see, after queen, it's
+thought time C, well, king, total, all
+right, we are getting a sense of what
+this text has a lot more now, right?
+Also, you will observe that few words
+dominate the text like Alice said
+little, right? And there is a long tail
+of words that exist beyond this plot.
+All right, so now we've analysed the
+Guttenberg corpus. We've gained much
+more deeper insights about this text
+corpus.
+That's it for this video, and in the
+next video we will analyse the brown
+corpus. I hope you enjoyed this, and
+I'll see you in the next one. Thank you.

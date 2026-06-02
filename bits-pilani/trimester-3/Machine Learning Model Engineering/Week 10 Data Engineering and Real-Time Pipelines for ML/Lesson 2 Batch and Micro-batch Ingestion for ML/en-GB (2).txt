@@ -1,0 +1,40 @@
+Let's compare batch and micro batch
+side by side. Latency. Batch has a
+higher latency, hours, or a full day.
+Micro batch brings that down to minutes.
+Complexity, batch is simpler, micro
+batch is more complex because you have
+more frequent runs and more things to
+monitor. Cost batch is fewer big jobs,
+micro batch is many smaller jobs which
+can add overhead. Use case, batch is
+perfect for offline retraining and
+score all jobs. Micro batch is ideal
+for near real time features and metrics.
+A good rule of thumb, start with batch
+and. Only move to micro batch when you
+clearly need fresher data.
+To wrap up this video, we defined batch
+ingestion and saw how it powers
+retraining and offline scoring. We
+defined micro batch ingestion as a
+power or way to get fresher data
+without diving into full streaming. And
+we compared their trade off in terms of
+latency, complexity, and cost. In the
+next video, topic 3. We will look at
+streaming for machine learning, events,
+topics, producers, consumers.
+And the conceptual role of tools like
+Kafka, spark, flame, Flink and beam.
+In the Model 10. Labs, we will keep it
+concrete and simple. We will simulate a
+new day, new data, as a daily CSV file.
+Write an ingestion script that appends
+them into training dataset, and hook
+that up to a training function so you
+can see tiny data train pipeline in
+action.
+Keep in mind, for many teams. A well
+designed batch, or micro batch pipeline
+is already a huge win. Thank you.

@@ -1,0 +1,136 @@
+OK. So, in our last script, we created
+a landing zone with uh daily data files.
+Now, we need to get that data into a
+single master training data set that
+our model can use, right? So, we could
+every day delete the old master data
+set and rebuild it from scratch using
+all the daily files. This is called a
+full process, right? It's simple, but
+it's uh incredibly inefficient. Imagine
+if you had uh years of data and you
+would not want to reread and reprocess
+all of it just to add one new data
+point, right?
+Uh, our new day data. So, a much better
+approach is, uh, incremental ingestion,
+right? The idea is to only process
+what's, uh, new.
+So, our pipeline should be smart enough
+to know where it left off study, find
+only the new files that have arrived
+since.
+And append them to the master data set.
+So, this is faster, cheaper, and scales
+much better, right? So that's what we
+are going to build in this lab. So
+let's open our second script, uh, L2
+incremental injection.
+Yeah. The most important concept in uh
+incremental pipeline is uh state
+management, OK? So the pipeline needs a
+memory to know what it has already
+processed. We will implement this with
+a very simple but effective pattern, a
+state file. OK. So we are creating a
+new directory, artefact, uh, contain
+here. OK. Right now, it's empty to hold
+our outputs. Inside it, it will have
+our, uh, master training data. CSV and
+a crucial file ion state.json. OK.
+So the in a slide state function here,
+handle this. It checks if the state
+file exists here, uh, conditional
+statement. If it doesn't, it means the
+pipeline is running for the very first
+time. So it simply creates a new
+state dictionary with the last
+injection date set to 0, right? If the
+file does exist, it simply reads uh the
+information from it, OK?
+Uh, and this state file act as a
+pipeline persistent memory.
+OK. And then by externalising the state,
+our Python script itself uh remains uh
+stateless. We can stop it, restart it,
+or run it on a different machine. And
+uh as long as it can access uh the
+state file, uh, this artefact and
+directory.
+It will always know exactly where to
+pick up, OK?
+So now let's uh look at the core in
+just uh
+New days here, OK? So, this function,
+it uh follows a clear uh logical
+sequence. First, it called the, in a
+slide state here to load the last
+ingested uh day from our uh JSON file.
+Second, it scanned our data empty
+directory. So this is our directory
+which we have, uh, hardcoded over here,
+empty.
+OK.
+So it scanned our data and in landing
+zone for all
+days.csv.
+OK. And uh it then philtres this list,
+keeping only the files whose days
+number is greater than our last
+ingested days. OK. This is the
+incremental part in action. If we have
+already processed up to day 3, it will
+only find day 4 and 5.
+Yeah.
+Third, if there are new files, it loads
+the existing app.
+Master training data. CSV into a data
+frame. If it doesn't exist, it starts
+with an
+empty data frame, OK?
+And 4th, it loops through new files.
+OK. For each one, it reads the new data.
+We could perform some basic uh quality
+check.
+Here and then use pandas. concat to
+append these new rules to our main data
+frame, OK? And uh finally, this is
+critical. After successfully saving the
+updated master CSV it updates the state
+uh dictionary with the new last
+ingested day.
+And write it back to
+Tianstate.jian, right? And this uh
+automatic update at the end ensures
+that uh we only record our progress
+after the work is successfully
+completed, right? So, let's uh run it.
+Bring the terminal.
+Python
+I'm 10 and 2.
+Incremental injection. By. Let's
+execute this.
+So, you can see it found all 5 new
+files and uh.
+Ingested them, updating the state to
+day 5. Let's open artefact M 10. Here
+is the injection date. And here we have
+the Uh, final data, right? Now watch
+what happens when I run the exact same
+script again. So, let's, uh,
+Run this again.
+Same script. So you can see we are
+getting uh no new data files to ingest
+and uh.
+This, uh
+State file is still the same. Whatever
+data we have ingested in our previous
+run, it's uh still the same, right? So
+it creates the state, sees that the
+last ingested day is 5, find no new
+files and stops, right? So this
+property is called uh item potency.
+Running the same operation multiple
+times has the same effect as running it
+once, right? So this is a vital feature
+for reliable scheduleli data pipelines.

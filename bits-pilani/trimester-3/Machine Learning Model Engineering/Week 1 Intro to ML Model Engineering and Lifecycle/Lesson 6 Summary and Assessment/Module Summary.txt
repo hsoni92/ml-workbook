@@ -1,0 +1,21 @@
+Let's wrap up.
+Machine learning, model engineering, is.
+All about making models usable by real
+system and users, reliable under real
+world conditions and scalable as usage
+grows. We talked thoroughly four major
+responsibility areas turning notebooks
+into production services. Meeting
+latency, uptime and cost constraints,
+managing versions, rollouts and updates,
+and collaborating with data infra and
+product teams. In next video, topic two,
+we will zoom out and look at the end to
+end machine learning life cycle, from
+problem framing all the way to
+deployment and retraining. And we'll
+see exactly where model engineering
+fits in the bigger picture.
+Keep these responsibilities in mind, we
+will keep coming back to them
+throughout the courses. Thank you.

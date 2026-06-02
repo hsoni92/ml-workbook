@@ -1,0 +1,82 @@
+Hello everyone, and welcome to module 8.
+In our previous discussions on spark
+resilience, we focused heavily on the
+concept of RDD lineage.
+We have praised lineage as the secret
+sauce.
+That allows Spark to achieve fault
+tolerance without the heavy overhead of
+writing data to disc at every single
+step. However, As we move into more
+advanced big data architectures, we
+have to recognise that what makes Spark
+powerful can also, under certain
+conditions, become its greatest
+weakness.
+In this lesson,
+We're going to explore the tipping
+point where dependency tracking shift
+from being an asset to a risk.
+Let's look at the next slide. To
+understand the mechanics, as a
+refresher, Spark RDDs use lineage graph
+or directed acyclic graphs, called DAGs,
+to track exactly how every partition of
+data was derived.
+If a worker node fails and a partition
+is lost, Spark simply looks at the
+graph and recomputs only the missing
+piece.
+In simple, shallow dags, this is
+incredibly efficient. You have high
+reliability because the recipe of your
+data is always available in the memory.
+But look at the visual representation
+of the stages on this slide. Notice how
+the connections spider out as we move
+from Stage 31 to towards Stage 37.
+There are 3 critical issues that arise
+as these graphs grow. One is linear
+cost increase.
+So the first, the cost of recovery is
+not fixed, it is proportional to the
+depth of the graph.
+As indicated by our formula that is
+mentioned. The time it takes to recover
+a lost partition increases linearly
+with the number of stages. If you lose
+a partition at stage 100, you might
+have to recomput 99 previous steps.
+And this is called the driver
+bottleneck. Every one of these
+transformation steps must be tracked by
+a spark driver.
+So as the graph complexity increases,
+the metadata required to store this
+family tree grows.
+Eventually, this bottleneck, the
+driver's memory and CPU, slowing down
+task scheduling.
+Now let's talk about the reliability
+paradox. While lineage provides
+reliability, a very long chain actually
+creates more points of failures, right?
+The longer the pipeline, the higher the
+statistical probability. That a
+recomputation will be triggered.
+And the more expensive that
+recomputation becomes.
+So the question we have to answer in
+this module is, How do we break these
+long chains to ensure stability without
+losing the benefits of Spark's
+functional model? In the next lesson,
+We will look at the specific technical
+failures. Like the dreaded stack
+overflow error.
+That occur when linear chains get too
+long, and we'll introduce checkpointing
+as the ultimate solution to truncate
+these graphs. Stay tuned. Happy
+learning. I'll see you in the next
+class. Thank you.

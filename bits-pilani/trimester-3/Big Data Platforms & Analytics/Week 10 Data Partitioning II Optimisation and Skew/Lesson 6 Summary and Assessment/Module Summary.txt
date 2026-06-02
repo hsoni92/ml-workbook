@@ -1,0 +1,67 @@
+So we have reached the end of this
+module. We have moved from identifying
+the basic problems of data distribution
+to mastering the advanced techniques
+required to keep a massive production
+cluster running at the peak efficiency.
+Before we move on to this week's
+assessment, let's take a moment to
+review the 4 critical commandants. Of
+data partitioning that we have just
+established first and foremost, Data
+skew. Data skew is a silent killer of
+big data performance, as we saw in our
+diagnostic lesson. A single straggler
+task can negate the power of a 1000
+node cluster.
+If you aren't checking your Spark UI
+for the gap between median and max task
+time, you are missing the most common
+cause of pipeline failure. SKU leads to
+hotspot. Hotspot leads to memory errors,
+and memory errors leads to downtime.
+The second is salting. Salting is your
+primary tool for manual intervention.
+While we always hope for naturally
+balanced data, real world data is
+skewed by nature. When you find those
+heavy keys that are causing hotspots,
+sorting allows you to artificially
+force a redistribution. It's a bit more
+code to manage, but it's the difference
+between a job that crashes and the one
+that finishes on time. The 3rd 1 is
+broadcast joints. They are very
+powerful optimisation.
+Network IO is expensive, as we all know,
+but if you have a join where one table
+can fit in memory and don't shuffle it,
+broadcast it.
+By eliminating the network transfer for
+asymmetric joints, you can achieve
+speed increases of almost 10x or more
+as well. It's the single most effective
+shortcut in the Sparks developer's
+toolkit. And finally, performance
+tuning is an iterative process. There
+is no magic number for partitions.
+As your data grows or your cluster
+changes, your partitioning strategy
+must evolve. Use the matrices we
+discussed, shuffle bytes. Fetch wait
+times, remote reads to guide our
+engineering processes. Don't guess,
+just analyse. You're now ready for the
+assessment. You'll be asked to identify
+a skew from logs, choose the right
+joint strategy, calculate salt ranges.
+Once you have completed the assessment,
+I'll see you in the next module. Where
+we'll take these partitioning concepts
+into the world of AI or artificial
+intelligence. We'll explore distributed
+machine learning, looking at the
+difference between data parallelism and
+model parallelism.
+Great work this week. I'll see you in
+the next module.

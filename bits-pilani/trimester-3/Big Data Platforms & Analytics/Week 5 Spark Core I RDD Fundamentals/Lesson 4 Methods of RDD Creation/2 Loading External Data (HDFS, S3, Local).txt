@@ -1,0 +1,68 @@
+In our last video, we looked at how to
+turn a small Python list into an RDD.
+But in the real world of big data, your
+information usually lives somewhere
+else. It's sitting in a database, a
+cloud bucket, or a giant distributed
+file systems. As you can see on the
+slide, Spark is incredibly flexible
+when it comes to where it gets its data.
+We call this method external data
+sources. So there are 3 main places
+where your data might live. One is
+local file system. This is great for
+small projects, or when you're, you
+know, working on your own computer. The
+other is cloud storage systems like
+Amazon S3 or Azure blob storage, or GCP
+buckets. This is where modern cloud
+native companies store their data lakes.
+SDFS is another one, which is Hadoop
+Distributed File System. This is a
+classic standard for large on-premise
+data clusters.
+The most common command you will use
+for this is sc.text file, and then you
+have to provide the path to your file
+where SC stands for, as we already know,
+spark context. When you run this, SAR
+doesn't actually pull out all the data
+into your computer's memory. Instead,
+it's created a distributed RDD where
+each node in the cluster is responsible
+for reading just its own piece.
+And then, you know, remaining pieces
+can be read in another RDDs by another
+machines. Now that we know two ways to
+create RDDs, how do we choose them?
+So let's look at the comparison table.
+First is data origin. We have to use
+parallellyze if our data is already a
+list inside your code.
+Use external methods if your data is a
+file on a disc. How to scale? This is
+the most important factor. SC. paralyse
+is limited by the RAM of your driver
+machine. If you try to paralyse a 1
+terabyte list, your computer will
+likely crash. But external methods,
+however, can handle petabytes because
+the work is distributed across the
+whole cluster. What is the use case for
+both of them? If you are just testing a
+quick formula, go with paralyse. But
+for real world production pipelines,
+you will almost always load from
+external sources like S3 or HDFS.
+Performance wise, external loading is
+significantly faster for large data
+because it respects that data locality
+principle we just talked about in the
+earlier videos, which is reading data
+right where it lives. Now that we have
+covered the theory and the methods,
+it's time for the best part. Which is
+implementing the concepts. In the next
+exercise, we'll try to load data from
+multiple sources to Spark. I'll see you
+in the next class.

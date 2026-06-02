@@ -1,0 +1,23 @@
+To close this module,
+We connect directly to your labs. In
+the labs, you will apply a compression
+method, such as quantization or pruning,
+to a model. Measure the before and
+after the size, latency and accuracy.
+And then reason about where each
+version of these models best fits.
+You will use the 4 way tug of war
+between accuracy, latency, cost, and
+user experience. The scaling pattern
+from module 8, video to.
+And the cost lever from modulate Video
+3.
+To justify whether a model belongs to
+in the cloud or on the edge, in batch
+or online mode, and in high stakes or
+low stakes scenario, this is exactly
+what model engineers do in real team.
+They do not just build a model, they
+explain why this particular setup is
+the right trade-off for the product.
+Thank you.

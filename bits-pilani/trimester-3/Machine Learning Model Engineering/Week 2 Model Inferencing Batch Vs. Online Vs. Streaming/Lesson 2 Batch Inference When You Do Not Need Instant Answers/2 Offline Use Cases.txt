@@ -1,0 +1,79 @@
+So where does batch inference show up
+in real products? Here are some classic
+examples. Monthly or weekly scoring
+tasks. Churn predictions for all
+customers. Credit risks scoring for all
+accounts in a portfolio. Offline
+recommendations.
+Precomputing users item scores that
+will later be used online, building
+similarity metrics and candidate lists
+overnight. Reporting and analytics.
+Risk and compliance reports, marketing
+list, example which user should receive
+this campaign tomorrow? In all of these
+scenarios. We have a lot of data to
+process, but we don't need result
+within 200 milliseconds. Of a user
+click.
+As long as the predictions are ready by
+a certain time, say 6:00 a.m. or end of
+day, batch is a great fit.
+Let's make the key insights explicit,
+batch inference is what you choose when
+near real time is not required. It's
+perfectly acceptable if predictions are
+at most a day old. Or we only need this
+scoring job to finish before business
+hours. You're willing to trade some
+freshness. Predictions are bit stale
+between runs, for simplicity, for high
+throughput, and often better cost
+efficiency.
+A good rule of thumb If nobody cares
+whether an individual prediction is 5
+seconds old or 5 minutes old, as long
+as the whole data set is ready on time,
+then batch inference is a very strong
+candidate. Let's talk about why batch
+is so popular. First advantage, high
+throughput, because you're processing
+many rows in one go. You can take full
+advantage of vectorizations, batching,
+and parallelism. It's common to score
+millions of rows in a single job.
+Second advantage, simpler
+infrastructure. You don't need a highly
+available online API with ultra strict
+SLAs. A scheduled job that runs on
+cluster or even a single beefy machine
+can be enough. Third advantage, easier
+rollback. If you discover a bug in
+model or feature pipeline, you can fix
+it in simply rerun the job.
+You overwrite the bad output with good
+ones. Batch is also a great place to
+run heavier model that might be too
+slow or too expensive to serve in a per
+request online setting.
+Of course, batch inference is not free
+of downsides. The better tradeoff is
+staleness. Predictions are only as
+fresh as the last batch run. A user
+behaviour changes a lot during the day.
+Your prediction might lag behind
+reality until the next run. The 2nd
+tradeoff is a longer feedback loop. If
+you are experimenting with new model,
+the cycle became train. Run large batch
+job, wait for downstream matrix, adjust,
+repeat. That feedback loop might be
+days, not minutes. Finally, batch is
+not suitable when the product require
+instant. Context aware decisions.
+Example like blocking a suspicious
+payment while the user is checking out.
+In those scenarios, we will need to
+talk about online or streaming infer
+instead.
+Thank you.

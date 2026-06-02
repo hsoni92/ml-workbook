@@ -1,0 +1,195 @@
+OK. So, in the last video, we have seen
+how to get prediction for a single
+query. Now, let's uh try to measure uh
+time for one prediction.
+So again, it's, it's the same code. I
+simply copy paste it and just added uh
+time here. So I imported time. And uh
+just did the simple math. So, here I'm
+taking the start time and uh after this
+prediction, when I'm calling moral
+torch and rate. And simply I'm, after
+this, I'm capturing in time.
+Right? And then, I'm doing this, uh,
+just subtraction in time minus start
+time, so we are getting the prediction
+time basically.
+So let's, uh,
+Exagger this?
+Uh, try something else.
+Uh, some translate English to French.
+And it's uh giving you the time, right?
+Now, this
+time, this 0.0. 7
+Or 0.06. It's for one data points for
+one prediction.
+Now let's try to
+Run this script for thousands of Uh,
+data point. OK. So I have created this,
+uh, input CSV which has basically 1000
+queries, uh, from, uh, 4 different
+scenarios. So, we have classified
+sentiments. We have a translation query.
+So like that, we have a total 1000 rows
+over here.
+So what we'll do Uh,
+We will measure how much time basically
+it takes for 1000 prediction. OK? Again,
+it's the same code. I just added uh uh
+this library, uh, pandas to load the
+CSV file.
+And I'm basically looping through this.
+Data rows we have inside the CSV. So
+basically, this uh prediction is
+happening for all 1000 data points and
+uh eventually we are getting the total
+time. So let's execute this.
+OK, Panda is not installed. Let's try
+to install it. So what you can do. Uh,
+if you want to install inside this, uh,
+Notebook, simply you can type it.
+Uh, since we have installed Ubi, so use,
+uh, UB.
+Pip install.
+And does
+and executed.
+Yeah, it got installed, so now let's
+remove this.
+Let's uh try to run it again.
+Uh, let's keep this print statement
+separate. So first we'll run and uh.
+Print the time. So let's execute.
+It will
+It will take a few seconds or probably
+Couple of minutes.
+There are 1000 rows and
+So here we are doing this infer
+sequentially. So model is getting input
+from this CSV file one by one.
+So that's what we're gonna measure over
+here. Yeah, so prediction completed.
+And now let's print the statement.
+So, we were having 1000 inputs, so you
+can see here. Total inference time, it
+took 61 seconds.
+Average time per input, it is 0.06
+seconds. So here, throughput is uh
+16.25. Input per second. So, throughput
+tells you. It's uh
+Measurement of how many inputs the
+model can process per second. And this
+helps us understand how scalable and
+efficient the inference pipeline is. So,
+yeah, but for now, we have to focus on
+this. Basically, for all these 1000
+data rows. Uh, if we do inference
+sequentially, it's taking 61 seconds.
+Right?
+Now, let's try batch inference.
+So, we'll start with the bed size 2.
+So what is uh batch size here? Instead
+of processing one input at a time, we
+process multiple inputs together. So
+pad size 2 means we process 2 inputs
+simultaneously.
+And if you see the code here, we are
+passing the bad sides. And uh there is
+uh one more thing we have to add that
+is uh padding if we're doing uh uh if
+we're doing a batch inference. So if
+you see our uh input examples, uh,
+these uh text inputs have different
+elements, right? Uh, let me show you.
+Here, if you compare the size of
+Row one
+With row 2. So both have different
+sizes, right? The characters are
+different. So to process them together
+in a batch, they must be the same
+length.
+So, basically, padding adds extra token
+to shorter sentences to match the
+longest one in the batch. So if you're
+taking off uh batch size 2, then length
+of the both sentences should be the
+same.
+So that's the idea of padding.
+Otherwise, we'll get better if the
+length of the sentence is not matching.
+For the bed size, OK? Uh, so there's a
+trade-off. Uh, what's the benefit of
+batch processing? We can process
+multiple input at once, but, uh, for
+better, um, resource, uh, utilisation,
+right? But the drawback is, uh, Padding
+add extra computation on padding tokens.
+So it has to also add Uh, padding for
+each of these, uh, sentence, right? So
+on CPU with small batch sizes, batting
+overhead can make it slower than
+sequential processing. But yeah, if we
+do it for large pad size like uh 1632,
+or 64, so it's typically performed
+better as they spread out the padding
+overhead, right?
+Uh, so we'll start with, uh, batch two
+sides. Let's, uh, execute this code.
+And just to recall, in the last, uh, in
+sequential process, it took 61 seconds.
+Ideally here for bat size too because
+of the padding uh computation overhead,
+it will take more than that, more than
+62 seconds. But yeah, let's see.
+How much it will take. Yeah, so if you
+see it's uh.
+Taking 81 seconds to complete 1000
+prediction, but in sequential process,
+it only took 61. So, that's what we
+were talking about. So, if we do the
+simple maths over here, so how many
+times this model has to do padding, so
+1000 divided by 2, it's, uh, so 500
+times model has to invest time on
+padding, right? So basically, whenever
+we use a small batch size. There will
+be more patting overhead, right?
+So, in this case, each batch of 2 needs
+padding, right? Uh, so, basically, 500
+times, we are doing this, uh, padding
+over here. And uh if, if we compare
+this with the sequential process, so
+sequential processing, avoid all
+padding completely, right? Because we
+are putting just, uh, we are just
+passing single input at a time.
+On CPU this overhead overweight the
+parallel processing. Right.
+So yeah, now let's try with the bat
+size, uh.
+16. Uh, everything is the same, just I
+have changed the pad size to 16. So
+let's execute this.
+It's completed. Let's execute the time.
+So if you can see, it just took 45
+seconds, so now it's better.
+But compared to the sequential process.
+So, sequential process basically took
+61.
+But if we're using that size of uh.
+16. It's getting completed within 46
+seconds, right? Now, let's try with uh
+OK.
+Batch size 64. So again, same code,
+just uh, we are changing the batch size
+over here. Yeah, it's completed. Let's
+Check the time.
+So it took 37 seconds. Let's compare
+with the bedside 16.
+So, yeah, it's still, it's better for
+bat size 160, it was taking 45 seconds,
+and now it's uh just taking uh 37
+seconds. So, yeah, you can try
+different uh bat sizes and uh observe
+the results. So, play around with the
+bat size and uh notice how the output
+and uh performance change.

@@ -1,0 +1,22 @@
+Welcome back, learners. Finally, let's
+go through some advantages and
+limitations of Bag of Words. Some
+advantages
+We saw that back of words is simple to
+implement and very efficient. Bag of
+Words works surprisingly well for
+simple tasks like spam detection.
+Where specific key words matter more
+than the grammar. You can imagine,
+right? Most spams have similar kind of
+words, OTP, hurry, lottery, so on.
+Some limitations. Loss of context.
+Imagine the two sentences, the man bit
+the dog and the dog bit the man, have
+the same exact bag of word
+representation. Another limitation is
+sparsity.
+It still suffers from high
+dimensionality and sparsity.
+That's all for this video.
+I'll see you in the next one. Thank you.

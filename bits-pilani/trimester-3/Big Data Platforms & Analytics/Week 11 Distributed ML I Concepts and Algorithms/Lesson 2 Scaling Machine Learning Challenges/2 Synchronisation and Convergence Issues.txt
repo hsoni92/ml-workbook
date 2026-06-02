@@ -1,0 +1,62 @@
+In our last video, we discussed the
+hardware and network limits of moving
+data. But even if we had perfect
+instantaneous communication. We would
+still face the logical challenge of
+coordination.
+In a distributed environment, the speed
+of your entire cluster is often
+dictated by its slowest member. We call
+this the straggler problem. Imagine you
+have 100 GPUs working in parallel. If
+99 of them finish their calculations in
+1 2nd, but one node takes 10 seconds
+due to a temporary network glitch or a
+background system process, the other 92
+GPUs sit idle waiting to synchronise.
+This results in massive compute
+resource idle time. Where you're paying
+for power and hardware that isn't
+actually doing any work, this leads
+directly into convergence issues. In an
+effort to avoid waiting for those
+stragglers, some systems use
+asynchronous updates where workers push
+their results as soon as they are ready.
+However, this creates a new problem
+which is called gradient staleness. By
+the time a slow worker's gradient
+reaches the central model, the model
+might have already been updated 10
+times by faster workers. So using these
+old or delayed gradients can lead to
+numerical instability or worse, can
+cause the model to fail to reach the
+optimal loss entirety. Finally, we have
+to account for heterogeneity. It is
+rare for a massive cluster to be
+perfectly uniform. You might have a mix
+of older and newer GPUs or even a
+combination of CPUs and GPUs. This
+hardware variety makes load balancing,
+the act of giving each node the right
+amount of work. So they all finish at
+the same time. Extremely difficult.
+In summary, scaling isn't just about a
+networking problem, it's a timing and a
+mathematical problem. We have to
+balance the need for speed. With the
+need for accurate up to-date gradients
+to ensure our model actually learns
+correctly.
+We have now identified the core
+challenges. The first is communication
+bottlenecks, and the second is
+synchronisation hurdles.
+So how do we actually organise the work
+to minimise these issues?
+In our next parts. We'll look at the
+two primary strategies for splitting
+the workload.
+Data pallelism and model paelism. I'll
+see you in the next lesson.

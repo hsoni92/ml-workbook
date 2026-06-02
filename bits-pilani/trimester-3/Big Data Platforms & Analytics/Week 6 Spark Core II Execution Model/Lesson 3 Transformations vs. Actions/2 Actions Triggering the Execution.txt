@@ -1,0 +1,60 @@
+In our previous lessons we spent a lot
+of time talking about how spark weights
+and how it records the recipe of
+transformations, but eventually the
+cooking has to start. This brings us to
+the slide which is called actions,
+which is the spark plug. If
+transformations are the. Actions are
+the ignition switch. Without an action,
+spark is just a set of unfulfilled
+promises stored in the driver's memory.
+The engine remains idle until you
+explicitly ask for a result. What
+exactly is an action? So by definition,
+an action is any operation. That either
+returns a value to the driver programme
+or writes data out to an external
+storage. This is a critical distinction
+from transformation, which simply
+produces a new RDD or data set. Common
+examples of action include collect,
+which brings all the data from the
+cluster back to the driver, save as
+text file or save, which Basically
+writes your process data to HTFS or S3
+or any kind of database, then take our
+count, which returns a specific subset
+or a simple tally of your results. The
+moment you call one of these methods,
+the lazy period ends. The spark driver
+takes the lineage graph, that recipe we
+have been building, and Hands over to
+the DAG scheduler. This is where
+high-level logic is converted into
+actual work. The scheduler looks at the
+shuffle boundaries created by your wide
+dependencies, breaks job into stages,
+starts shipping serialised tasks to the
+executors. In short, calling an action
+is what turns your code into a physical
+execution plan. Because actions trigger
+the entire engine, you have to be
+strategic about where you place them.
+In a production environment, you want
+to avoid calling collect on massive
+data sets, as this can overwhelm the
+driver's memory. Instead, you will
+often end your pipeline with a save
+action, keeping the data distributed
+across the cluster. So just to recap
+and summarise, transformations define
+the path, but actions start the journey.
+Now that we understand the triggers, we
+are ready to look at the master plan
+itself. In our next lesson, we'll
+explore the DAG, the directed acyclic
+graph, and see how Spark breaks your
+job down into stages and into tasks.
+I'll see you in the next module. Thank
+you so much. Happy learning till then.

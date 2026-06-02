@@ -1,0 +1,70 @@
+Welcome back learners. Let's now
+understand how an LLM generates a
+response. Do note that in this course
+we will focus on single turn text
+generation with LLMs. Single turn means
+one prompt and one response. There is
+no memory of previous interactions. Let
+me give you an example. So if you ask,
+Who is the president?
+Of USA
+The LLM might respond. Donald Trump.
+Now if you ask a follow up question, so
+you do, what? I His
+Each. In a single turn LLM conversation,
+LLM will respond.
+Whose age do you want?
+Or something like, Who is he?
+Right? Because there is no context
+stored for the next conversation. This
+is single turn conversation.
+Basically, where question two is not
+related to question one for an LLM, a
+multi-tone conversation
+means that
+LLM would know the context for his. So
+basically the LLM would store this as
+memory. So here it would then reply for
+a multi-tone conversation, whatever the
+age is 70, whatever, right.
+Some examples of single turn generation
+are summarising a paragraph. Explaining
+a concept, right? So explain quantum
+mechanics to me.
+Rewriting text in a different style.
+It is important to understand what LLMs
+actually do.
+LLMs do not retrieve answers. Neither
+do they reason symbolically.
+LLMs only generate the most probable
+next token. We saw an example of this
+in the last lesson, right?
+This has some implications.
+Output of an LLM may sound confident
+but may be incorrect.
+Like a confident
+Liar.
+Right? That may be a case.
+This is because output of an LLM
+depends on probability and not the real
+word truth. For example, if the
+training data has President of US as
+Bill Clinton, the response will be Bill
+Clinton and not Donald Trump.
+Understanding these concepts will help
+us design better prompts and help us
+interpret outputs critically, which is
+very important for LLM applications.
+Now let's look at some common NLG tasks
+using LLMs. Summarization, which is
+basically condensing a long text into a
+short summary.
+Text expansion, which is the opposite
+of summarization, it expands a bullet
+point into complete full explanations.
+Paraphrasing, which essentially means
+rewriting text while preserving the
+meaning.
+And explanation of any concept. I hope
+you enjoyed this and I'll see you in
+the next one. Thank you.

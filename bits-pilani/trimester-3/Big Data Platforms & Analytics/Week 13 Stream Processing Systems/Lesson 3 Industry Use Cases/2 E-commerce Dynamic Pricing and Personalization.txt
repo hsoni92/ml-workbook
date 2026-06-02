@@ -1,0 +1,58 @@
+Welcome back. While our previous video
+focused on preventing loss in financial
+services, this session explores how
+stream processing is used to actively
+drive revenue in e-commerce. We see a
+powerful statistic, that is a 15%
+average revenue lift through e-commerce
+optimisation. Central to this is
+dynamic pricing. In the modern
+marketplace, prices are no longer
+static. They respond instantly to
+supply, demand, and competitor data.
+There are 3 key examples of this in
+action.
+Surge pricing. Think of logistics
+giants like Uber or Lyft. They use a
+continuous stream of location data and
+ride requests to adjust prices in real
+time based on current demand, then
+inventory-based discounts. Retailer can
+trigger instant price drops if sensor
+data shows stock isn't moving fast
+enough in a specific region. Then user
+intent scoring. We can actually issue
+real-time coupons to a customer while
+they are still on the site based on
+their immediate browsing behaviour.
+This leads us to real-time
+personalization, often referred to as
+the Amazon effect. The goal here is to
+match user intent while they are still
+browsing. For a recommendation engine
+to truly influence a purchase decision,
+it cannot be based on what a user liked
+last week. It must be near instant. To
+achieve this, we rely on contextual
+awareness. This involves combining a
+user's current browsing data, the
+products they're looking at right now,
+with their historical preferences
+stored in that global state we
+discussed earlier. By merging current
+events with historical context, the
+streaming engine creates a unique
+personalised experience for every user.
+Updated every single second.
+As a data scientist, your goal is to
+architect systems that move past
+generic, top sellers lists and towards
+truly individualised real-time
+responses.
+We have seen how streaming logic solves
+business problems in finance and retail.
+But what is the actual backbone that
+support these flows? In the next lesson,
+we will shift our focus to the
+architectural tools of the trade,
+starting with Apache Kafka.

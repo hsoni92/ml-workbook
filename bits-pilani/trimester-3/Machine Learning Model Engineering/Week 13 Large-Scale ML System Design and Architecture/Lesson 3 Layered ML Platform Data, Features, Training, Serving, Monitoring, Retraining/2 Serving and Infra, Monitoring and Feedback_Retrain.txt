@@ -1,0 +1,106 @@
+At the bottom, we have the data layer.
+This layer is responsible for ingesting
+raw data from many sources batch
+exports, micro batch jobs and real time
+streams. Just like we discussed in
+Module 2 and Module 10, it stores data
+in a data lake or warehouse with
+reasonable partitioning and formats
+such as parquet. Critically, it's its
+owns data quality and contracts.
+Are we getting data on time?
+Is the volume roughly what we expect?
+Has the schema changed in way that
+would break downstream job?
+Modules like
+Model 5 and Module 10 emphasised how
+important it is to monitor freshness,
+completeness, and schema.
+All of that lives in this data layer.
+Above Raw Data sits the Feature layer.
+Which you saw in detail in Module 9.
+This layer's job is to turn messy raw
+data into reusable features, things
+like user_30p
+or
+num_logins_7 days, those are kind of
+files.
+And to define them once in code or
+configuration, it materialises features
+offline for training, creating big
+feature tables keyed by entity on time.
+And it serves feature online.
+For inference. Giving low latency
+lookups per user or item, which we saw
+in recommendation and fraud
+architecture.
+In module 13.
+The goals are, avoid training serving
+skew. Enable reusability across many
+models, and capture metadata and
+lineage about where features come from.
+Practically, this is where feature
+restores set. Next we have training and
+experimentation layer. Which we covered
+in Module 4, Module 6, Module 7, and
+Module 12.
+This layer runs pipeline that pull data
+and features, train models, evaluate
+them and package them into deployable
+artefact. It also owns experiment
+tracking and the model registry,
+logging parameters, metrics, artefacts,
+and tracking multiple versions like V1,
+V2, V3. On top of that, it contains
+promotion logic, deciding which models
+are good enough to be candidates for
+production, possibly incorporating
+fairness thresholds from Model 11.
+Concretely, This is where your training
+scripts. ML flow runs and registry_json
+or current best.json from. Module 12
+live. Above training sits the serving
+and infrastructure layer. Which we
+explored in Module 1 to 3. Module 7,
+Module 8, and Module 12 as well. This
+layer runs Model API and services, fast
+API or GRPC servers that handle batch
+online or streaming interface.
+Loading models from registry or configs
+like your JSN current best models. It
+also handles containerization and
+deployment, packaging model into Docker
+images, deploying to Kubernitis
+clusters. Or serverless platforms and
+managing rollouts, Blue-Green, Canary,
+or AB experiments. Finally, it's
+responsible for scaling and routing,
+auto scaling based on CPU, QPS, or
+latency, routing traffic across
+multiple models, sharding by tenant or
+region, and caching result when
+appropriate. This is where your latency,
+throughput, cost, and reliability
+concerns are front and centre. At the
+top of the stack is the monitoring and
+feedback layer, which we built up in
+Module 5, Module 6, Module 9, 11, and
+12. This layer monitors system metrics
+like latency and error rates, data
+metrics, data drifts in feature
+distributions, and model metrics like
+predictions, quality, and fairness
+slices. When things go wrong, a metric
+drop, data shifts, a fairness check
+fails, it raises alerts and can trigger
+retraining, promotion of a new model,
+or rollback to the previous model.
+It also supports governance, logging
+model version, features, and decisions
+for audit, especially important in
+regulated or high stakes settings. This
+is what closes the loop. Online
+behaviour generates data and labels
+that feeds back into the training layer,
+which then produces a new model for the
+serving layer.

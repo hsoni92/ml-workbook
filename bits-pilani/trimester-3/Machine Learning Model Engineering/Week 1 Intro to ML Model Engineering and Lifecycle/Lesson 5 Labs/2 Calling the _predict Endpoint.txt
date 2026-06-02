@@ -1,0 +1,179 @@
+So, you have to just copy paste it.
+It's uh Uh, this is the command, and
+once you do it, virtual environment,
+you can see here it's, uh, got created.
+And to activate your virtual
+environment, you have to type source.
+virtual environment then.
+Then activate.
+So you can see you are inside your
+virtual environment. Uh, so these,
+these commands are for Mac. And uh here
+is a block diagram why virtual
+environment is important. So you can
+see here, uh, on your main system, you
+have installed some Python version, but
+let's say your project A required very
+specific uh Python version, so you can
+do that by using virtual environment
+and you can also see here. Project A
+has very specific requirement. Let's
+say, for Numpi, we required V1.19.5,
+but in Project B, probably we required
+V1.21.0. So, that's how you can keep
+your
+Uh, project dependency separately, so
+it won't impact each other or there
+won't be any conflict between these two
+projects. So that's how, uh, we create
+a virtual environment. Now we have
+another section for Windows, so same
+command you have to do if you want to
+download the. Um, UB, you have to copy
+paste this command. Again, the same
+process, you can verify the
+installation, create the. Directory and
+inside uh. Uh, your Terminal or your uh
+CMD you can type uh UV virtual
+environment. EMV so this will create
+the virtual environment and to activate
+inside CMD you have to Type this
+command, so it will look like this.
+Now Virtual environment and UV both
+have been.
+Configured. Now, let's uh try to open
+Jupiter notebook. There we are, we are
+gonna do some kind of experiment.
+Let's configure uh Jupiter notebook.
+Just go to here at the extensions icon,
+click on it, type uh Jupiter.
+You'll be seeing this icon Jupiter.
+Just click on it and uh once you're
+doing it for the first time, you'll be
+seeing uh install button over here.
+Since I've already installed it, it's
+coming as uninstall. So just click on
+install and uh uh within a few seconds,
+it will get installed on your system.
+Now come back to. Uh, your folder
+directory, click on, uh, click simply
+right click and create a new file.
+Give the file name like uh my first.
+Notebook. But
+IPY and B extension. So this is very
+much required to open this file inside
+Jupiter notebook.
+So now we have this um Jovita notebook
+opened over here.
+Uh, and if you want to configure, uh,
+virtual environment, if you want to run
+this Jupiter notebook.
+Uh, in the virtual environment, which
+basically we have created over here. So,
+for me, it's by default coming. Um,
+let's consider this virtual environment,
+but in your case, let's say it's not
+coming up here, you'll just simply
+click on it and you'll be seeing, uh,
+this virtual environment over here. And
+so just you have to click on it and it,
+it will get ready for you.
+I'll just try to print something to see
+if Your book is working or not. Yeah,
+now it's working.
+Yes, so now we have configured Jupiter
+notebook, uh.
+Inside our VS code. Now, let's uh open
+the Jupiter notebook again.
+I have updated it uh with all the
+points we discussed so far. And, uh,
+before Ahead. Let's quickly recap
+everything we have uh covered so far.
+Yeah Configured our ID.
+Uh We have uh uh configured UV.
+We have started a small project
+directory and uh.
+Now we are inside Jupiter.
+And then, before we move to hugging
+phase, let's first uh define a very
+simple use case, so we know what we're
+looking for.
+So just imagine you want to build a
+small uh assistant, OK. Uh, something
+that can help, uh, complete sentence or
+answer basic questions or uh generate
+some short text, OK? So, for this kind
+of task, we don't need a huge model. We
+just need a lightweight LLM that can
+download quickly and uh run easily on a
+normal laptop. So let's say our use
+case is just to build a simple text
+assistance that can generate short and
+helpful uh responses.
+So let's say we have decided this use
+case for uh uh for this current lab. So
+let's uh mark this.
+Jack.
+So now let's move to Uh, explore
+hugging Face website. So, what you can
+do, you can go to this website,
+huggingface.com. So when
+Go here, you'll.
+Like this. And just to give you an idea
+what hugging faces, so hugging faces.
+Online platform where the entire AI
+community shares model, data sets, uh,
+and, uh, demos. So think of hugging
+face as the GitHub of AI models. So,
+it's a big online library where
+developers and companies. Uh, share AI
+models, uh, data sets, and AI
+application, and they also provide, um,
+playgrounds. So literally you can go
+there and try any of the models. So if
+you ever need a model for text, uh,
+image or, uh, uh, let's say for any
+audio task, you will find it here.
+And you can download any model,
+try live demos.
+You can fine tune these models or even
+upload your own project over here. So
+you can see these three tabs. So when
+you go here on models, here we have uh
+some kind of philtre, what kind of
+model you want to search. So let's say
+we are looking for text generation
+models, so you click on text.
+All those big companies, uh, developers
+from Google, Meta, OpenAI. Uh, in media
+and researchers worldwide published
+their work on, uh, hugging face.
+So throughout this course.
+We will use hugging face to explore
+models we download. model from here. Um
+Uh, run them locally and then, uh,
+learn model LLM, uh, workflow from here.
+Hugging face has two types of models,
+fully open sourced and, uh, gated
+models. So, open models can be
+downloaded without any logins, but for
+gated models like, uh, Lama or Queen.
+We must create an account and accept
+the licence. Uh, still, it's free, just
+you have to, uh, provide your identity.
+You can simply log in via your Google
+account and you have to use an access
+token. So, that I will show you how to
+create that token. And so basically
+that token proves that you have the
+permission to download and use that
+model. So, let's say if you want to
+create the accounts, you have to go.
+Yeah, and uh
+Uh, like I have already logged in.
+You can go here.
+Uh, you can go to the settings, then
+you can. Click this tab, access token,
+and from here you can create the token
+for your users. So that's the hugging
+face.

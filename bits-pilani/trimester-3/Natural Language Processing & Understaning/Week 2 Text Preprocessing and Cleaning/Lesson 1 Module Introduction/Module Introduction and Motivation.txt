@@ -1,0 +1,35 @@
+Welcome learners to the 2nd module of
+your course, module introduction and
+motivation.
+In this module, we will look at text
+preprocessing and cleaning.
+Why does it matter?
+Natural language, as used by humans. I
+messy. Inconsistent and unstructured.
+Before we can apply any NLP algorithm
+or machine learning model, we must
+first make the text machine readable.
+Text preprocessing is the step where a
+raw text is transformed into usable
+form.
+The noise is removed.
+Linguistic structure begins to emerge.
+Almost every NLP system, from sentiment
+analysis to your latest chat GPT and
+LLM applications, relies on effective
+text preprocessing.
+Although often used interchangeably,
+text preprocessing and text cleaning.
+Have a useful distinction.
+Text cleaning focuses on removing
+unwanted elements from your text corpus.
+These elements can be HTML tags,
+special characters, emojis, and some
+extra spaces.
+Whereas text prep processing focuses on
+linguistic normalisation.
+Some examples are tokenization,
+stemming, lematization.
+In this module, we will cover both.
+That's all for this video. I'll see you
+in the next one. Thanks.

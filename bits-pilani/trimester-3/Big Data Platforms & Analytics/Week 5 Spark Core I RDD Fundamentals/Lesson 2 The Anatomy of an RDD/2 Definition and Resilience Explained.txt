@@ -1,0 +1,62 @@
+In our last video, we introduced the
+RDD. Now we're going to dive deeper
+into the first two pillars, that
+acronym, resilience and distributed
+nature. Let's start with the first
+slide, the power of resilience. How
+does Spark say resilient? In many
+traditional systems. If you wanted to
+make sure you didn't lose data, you had
+to make multiple copies of it and store
+them in different places. This is
+called replication.
+And it's very expensive and slow.
+But Spark takes a different approach
+called lineage, or lineage.
+As you can see in the diagram, Spark
+keeps track of every single
+transformation applied to the data.
+It's like a recipe. It's like a map or
+scheme of things that got applied on
+the data. If a worker node crashes and
+we lose a piece of our dataset, Spark
+doesn't need a backup copy. Instead, it
+looks at the lineage, the history of
+how that data was made or changed, and
+simply reruns those specific steps on a
+different node. To bake that piece of
+that data again. This is self-healing
+through computation rather than storage
+is what makes Spark incredibly
+efficient and robust. Now let's talk
+about the D in RDD, which is
+distributed. When we say Spark is
+distributed, we are talking about
+massive scale. Look at the slide.
+Imagine a data set so large that it
+could never fit on your laptop. Maybe
+it's a petabyte of weblogs. Spark
+allows us to take that massive file and
+spread it across a cluster of
+potentially thousands of nodes. Each
+node holds a small portion of the data
+in its RAM, because the data is spread
+out. We can perform operations on all
+those nodes at the exact same time.
+This is the divide and conquer strategy.
+By harnessing the collective power of
+thousands of computers, a task that
+would take days on a single machine can
+be computed in just a few minutes.
+Just to summarise, resilience gives us
+the safety to work on many machines
+without fear of failure. And the
+distributed nature gives us the raw
+power to handle data at any scale. In
+our next video, we'll look at the 3rd
+pillar, which is immutability and why
+Spark insists that data, once created,
+should never change. I'll see you in
+the next class with the hands on
+session. Thank you so much and happy
+learning.

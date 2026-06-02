@@ -1,0 +1,31 @@
+Welcome to compression techniques,
+quantization, pruning and distillation.
+In earlier videos we saw why we care
+about latency throughput and footprint
+in production. In this video, we will
+focus on how we can shrink models and
+make them faster without losing too
+much accuracy. We will talk about 3
+main techniques quantization, using
+fewer bits for numbers, pruning,
+removing weights or channels that don't
+matter much. Knowledge distillation,
+training a smaller model to mimic a
+larger one. By the end, you should have
+clear, intuitive picture
+of what each technique does when it
+might be useful.
+Before we dive into techniques, let's
+remind ourselves why we compress models.
+Compressed models are. Usually faster
+at inference. Can handle more requests
+per second. And take up less memory and
+discs. All of this translate to better
+user experience because latency is
+lower. Less hardware needed to handle
+the same traffic, sometimes the ability
+to run on mobile or edge devices where
+large models simply won't fit. So
+compression is really about taking a
+good model and making it practical and
+affordable in the real world. Thank you.

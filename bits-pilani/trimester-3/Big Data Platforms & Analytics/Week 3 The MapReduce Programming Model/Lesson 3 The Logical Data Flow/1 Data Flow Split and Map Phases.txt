@@ -1,0 +1,73 @@
+Welcome back. In our previous lessons,
+we defined what map and reduce
+functions look like in isolation, but
+in a real world cluster, these
+functions doesn't just exist in a
+vacuum. They are part of a highly
+coordinated life cycle. Today we begin
+Lesson 3, the logical data flow. We are
+going to trace the path of data from
+the moment it sits on a hard drive
+until it is transformed into the
+intermediate results. This journey
+starts with two critical stages input
+splits and the map phase. Look at the
+step one on our slide input splits.
+Imagine you have a single 10 terabyte
+log file. You cannot hand that entire
+file to one computer. It is too big.
+Instead, the MapReduce framework
+automatically breaks that huge file
+into manageable, executable chunks.
+Usually these are 64 MB or 128 MB in
+size. Why these specific sizes? Because
+they align with the block size of the
+distributed file systems. By splitting
+the data, the framework creates
+thousands of small tasks that can be
+handled by individual workers. It is
+like taking a massive encyclopaedia and
+giving one chapter to each student in a
+classroom, so they all can read at the
+same time. Once the data is split, we
+should move to step 2, the map phase.
+This is where the muscle of the cluster
+comes alive. The framework assigns each
+input to a worker node. This node
+processes its local data split in
+parallel with all the other nodes in
+the cluster. Here's a brilliant part.
+The framework uses data locality. It
+tries to run the map task on the exact
+same server where that 128 split is
+already stored. This avoids the network
+tax that we discussed in module 1. Each
+worker node applies your custom map
+logic independently, let's say
+extracting the URLs from our last
+examples or keywords that you care
+about and creating those key value
+pairs. By the time the map phase is
+finishing, your cluster has thousands
+of workers producing intermediate data.
+These workers aren't talking to each
+other yet. They are simply focused on
+their small piece of the puzzle, as the
+slide shows, these map outputs are not
+the final answer. They are structured,
+sorted pieces of information that are
+now ready for the most complex part of
+the journey.
+To recap, input splits divided the
+massive data into 64 MB or 128 MB
+chunks. The map phase processes those
+chunks in parallel on worker nodes
+using data locality. We have
+successfully transformed our raw data
+into a sea of intermediate pairs. But
+how do we get all the like counts or
+URL counts for the same item into one
+place? In our next video, we'll explore
+the magic of the shuffle and sword
+phase, the bridge from map to reduce,
+and I'll see you there.

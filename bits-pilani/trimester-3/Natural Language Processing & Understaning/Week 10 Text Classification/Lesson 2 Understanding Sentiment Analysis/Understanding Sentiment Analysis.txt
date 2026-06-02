@@ -1,0 +1,65 @@
+Welcome back learners to this lesson on
+understanding sentiment analysis.
+Sentiment analysis is a specific type
+of text classification where the goal
+is to determine the emotional tone
+behind the text.
+The goal is to classify the sentiment
+as positive, negative, or neutral.
+Now check out this product review. I
+absolutely love the screen resolution,
+but the battery life is terrible. This
+is an exercise for you. Pause the video
+and tell me if the sentiment should be
+positive, negative, or neutral for this
+product review.
+There are different levels of sentiment
+analysis.
+The first being document level, for
+example, classifying the entire review.
+Whether the movie entirely was positive,
+negative, or neutral.
+The second sentence level. For example,
+classifying each product review
+individually for the same product.
+The 3rd, ABSA, aspect-based sentiment
+analysis. This is the most advanced
+level of sentiment analysis. It
+identifies what the sentiment is about.
+For example, consider this review. The
+food was great, but the service was
+slow.
+Here, there are two sentiments. One is
+positive and the second is negative.
+The task is to identify the positive
+was for which part and the negative was
+for which part. In this example,
+The food was positive, but the service
+was negative.
+Now sentiment analysis has its own
+challenges.
+Because computers struggle with human
+nuances like sarcasm. Consider this
+sentence. Oh great! My flight is
+delayed again. This is a sarcastic
+sentence. The words are positive, but
+the meaning is negative.
+Then negation.
+The movie was not bad. Here not and bad,
+both are negative. Double negative is a
+positive.
+The next challenge being the context.
+The plot was unpredictable, for a
+thriller movie, this is a positive
+sentiment, whereas for a car driving
+manual, this is a negative sentiment.
+Then polysemy.
+Consider these two sentences, the
+battery life is long. Versus the wait
+time was long.
+For the context of battery life, Long
+has a good sentiment.
+Whereas for wait time, Long has a bad
+sentiment. And that's all for this
+video, and I'll see you in the next one.
+Thank you.

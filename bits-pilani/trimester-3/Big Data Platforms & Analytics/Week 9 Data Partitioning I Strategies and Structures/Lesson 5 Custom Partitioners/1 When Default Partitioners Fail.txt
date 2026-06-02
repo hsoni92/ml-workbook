@@ -1,0 +1,67 @@
+Welcome to Lesson 5. So far, we have
+looked at the 2 off the shelf solutions
+provided by most big data frameworks.
+These are hash partitioning and range
+partitioning.
+These are fantastic for about 80% of
+the use cases. But as we saw at the end
+of the last lesson.
+Standard strategies can struggle when
+data becomes highly skewed, or follows
+a complex nonlinear distribution.
+We are entering the territory of custom
+partitioners, this is where we move
+from using general purpose math to
+designing domain specific structures.
+This is about writing logic that
+understand the nature of your data.
+Rather than just treating it as a
+random string or a simple range.
+What exactly do we mean by custom logic?
+When the default partitioners fail to
+distribute your data evenly, framework
+like Spark allows you to define a
+partitioner class or a custom function.
+This function takes a key as an input
+and returns a specific integer
+representing the target position.
+Essentially, you're taking the wheel,
+instead of letting a modulo operator
+decide where a record goes. You can
+write NFL statement or a complex
+algorithm to decide exactly which node
+should process which piece of
+information. We have highlighted two
+prime examples of when you might need
+this.
+Geographical coordinates. Imagine you
+are processing delivery data. Standard
+hashing might put two neighbouring
+street addresses on completely
+different nodes, but if your goal is to
+calculate local traffic patterns, you
+need these neighbours on the same node,
+right? So a custom partitioner.
+Can group data based on map tiles or
+geo hashes to ensure spatial locality.
+The other is hierarchical business IDs.
+If your company uses IDs where the
+first three digits represent a country
+or a specific department, a custom
+practitioner can ensure that all
+records for Department A stay together,
+regardless of the unique ID that
+follows.
+The takeaway here is that you aren't
+locked into the defaults. If your data
+has a specific shape that computer
+doesn't automatically understand, a
+custom partitioner is your tool for
+fixing it. Now that we understand the
+theory and why behind custom logic, it
+is time to see it in action.
+In our next video, we're going to walk
+through a code demo to show you exactly
+how to build a custom partitioner in
+Pie Park. I'll see you there. Till then,
+happy learning and thank you so much.

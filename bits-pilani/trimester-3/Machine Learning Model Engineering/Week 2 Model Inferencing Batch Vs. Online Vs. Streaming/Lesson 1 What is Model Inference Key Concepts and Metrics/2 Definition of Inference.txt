@@ -1,0 +1,71 @@
+First, understand what is model
+inference. You can think of training
+and inference as two different phases.
+Training is where the model learns its
+parameter from historical data.
+Inference is where we use that trend
+model to make prediction on new unseen
+data.
+Every time your system scores a
+customer for churns, ranks search
+results, classifies an email as spam,
+or generates a recommendation list.
+You are performing inference. A nice
+mental model is? Training built with
+function. Consider F of anything.
+Inference is calling that function over
+and over again. Maybe in a function you
+can say prediction is equal to f of
+input features in production. The bulk
+of the work over the model's lifeline
+is actually inference, not training.
+Training happens occasionally,
+inference happens all the time.
+Let's break down what happens inside a
+single inference call. It just mean the
+step by step journey a request takes
+from moment it hits our model service
+until prediction is sent back.
+Think of it as a pipeline for one
+prediction. First, we receive the input.
+That might be Json payload over HTTP or
+a raw form of file in a batch job, or
+event coming off a stream. Next, we
+validate the phrase and phrase it.
+We check that required fields are
+present, types are correct, values are
+in reasonable range, and we convert the
+raw data into our internal objects and
+or tensors.
+Then we transform features, we apply
+the same preprocessing we use during
+training.
+Encoding, scaling, embedding, whatever
+the model expects. So we end up with
+model ready future vector. After that,
+we run the model. This is the forward
+pass. We call something like
+model.predict and the function. It's
+just like a function, model.predict,
+and gets back scores, probabilities,
+and embeddings. We then post process
+the output, maybe apply thresholds.
+Pick the top key item. Map IDs back to
+human readable labels. Or reshape the
+results into the format the caller
+expects. Finally, we return the
+prediction. We serialise the result,
+usually adjacent.
+And sends a response back to the caller.
+That's what inference flow. And notice
+this same flow exists whether we are
+scoring a million row in batch job,
+handling one HTTP request at a time, or
+consuming a stream of events in real
+time. What changes across batch online
+and streaming is how often we run this
+flow.
+How many items we handle per call, and
+how strict our timing requirements are,
+but the core step of inference flow
+stays the same.

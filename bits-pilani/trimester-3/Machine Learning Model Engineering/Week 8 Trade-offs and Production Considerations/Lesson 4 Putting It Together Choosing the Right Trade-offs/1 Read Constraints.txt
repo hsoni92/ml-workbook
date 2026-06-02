@@ -1,0 +1,119 @@
+Welcome to putting it together.
+Choosing the right trade offs.
+In the 1st 3 videos of Module 8, we
+looked at.
+The 4 way tug of war between accuracy,
+latency, cost, and user experience
+scaling patterns like vertical scaling,
+horizontal scaling and auto scaling.
+And cost optimisation lever, such as
+spot instances, surveillance inference,
+and batching. In this video, we are
+going to make this practical. We will
+build a simple decision framework that
+you can use to say, given this
+constraint. This is the model and
+infrastructure set up that makes sense.
+Let us start with a quick recap.
+Every production machine learning
+system lives in a 4 dimensional space.
+Accuracy, how often the model is right,
+latency, how fast the model responds.
+Cost. Both infrastructure and
+engineering effort. And user experience.
+Often shorthand for UX.
+Which is how all of this feels to the
+users.
+In real life, you cannot simply
+maximise all four at once. Instead, you
+choose a balance between fits the model.
+Or the product needs and the business
+constraints.
+This video is about making that choice
+more systematic. The first step is not
+to choose a scaling pattern or a model
+format. The first step is to read the
+constraints. For every system, ask.
+Latency and user experience. How
+sensitive. Is the UXR latency. Do we
+have strict service level agreements,
+such as P95 latency?
+Under 2 milliseconds.
+Accuracy and risk. What happens when
+the model is wrong? Is this about
+safety, money, or is it relatively a
+trois?
+Cost envelope.
+What kind of budget do we have?
+Are we optimising cost per request? Or
+just making sure the bills stays within
+a certain range. Traffic pattern. Is
+the traffic constant or spiky?
+Are we dealing with low volume or very
+high queries per second? Often
+abbreviated as QPS.
+Answer these questions. We will drive
+all of other design choices. Let us
+zoom into the latency and user
+experience dimensions.
+If a human is literally waiting on the
+response during the log in. At checkout,
+while scrolling a feed. Then we are in
+online request response territory.
+We usually have latency targets such as
+P95 under 100 to 200 milliseconds.
+If no one is waiting, for example, in
+monthly churn prediction or nightly
+backfill, then we can treat the
+workload as batch or asynchronous.
+Individual request latency is less
+important, and we can focus on
+throughput and cost. Tight UX
+constraint push us toward faster model,
+more replicas or better scaling, and
+sometimes specialised hardware, such as
+GPUs combined with micro batching.
+Next, think about accuracy and risk.
+Some system are high stakes, fraud
+detection, on payments, medical
+decisions, support, safety or legal
+decisions.
+In these cases, false negatives and
+false positives can be extremely
+expensive or dangerous.
+Other are media mistakes, such as
+pricing, ranking and promotions.
+Mistakes hurts revenue and user trust.
+But they are not life critical. And
+some are relatively low stake, such as
+content recommendation or simple
+personalization. Here, mistakes are
+mostly just annoying.
+The higher the stakes, the more you
+lean toward. High accuracy, stronger
+monitoring, gradual rollout like canary
+deployments, and sometimes more
+explainability requirement.
+Finally,
+Add traffic patterns and cost envelope
+to the picture.
+If traffic is constant and high volume,
+you usually want dedicated service
+running on a cluster.
+With auto schooling. To adjust capacity.
+And a lot of focus on keeping P95
+latency stable. If traffic is spiky or
+low volume, it may be cheaper and
+simpler to use serverless inference or
+a small cluster that scales down
+aggressively.
+With a strict cost cap, you might use
+spot instances for batch workload. Rely
+on batching or micro batching to get
+more value out of GPUs.
+And when model compression to shrink
+footprints. If the budget is more
+flexible, you can push harder on
+latency and reliability for key user
+flows.
+Thank you.

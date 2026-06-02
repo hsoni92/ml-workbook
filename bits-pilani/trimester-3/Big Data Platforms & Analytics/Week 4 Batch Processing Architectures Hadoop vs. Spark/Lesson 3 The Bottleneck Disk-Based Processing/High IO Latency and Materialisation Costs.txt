@@ -1,0 +1,57 @@
+We've seen how MapReduce reliably
+processes data across a cluster, but if
+you ever waited for a complex Hadoop
+job to finish. You know, it can be slow.
+In this video, we're going to look at
+the why behind that slowness by
+exploring high IO latency and
+materialisation cost.
+Turning to slide. We have to talk about
+the physical reality of hard drives. In
+the Hadoop model, every time a map task
+finishes, it materialises its results.
+materialisation is just a fancy way of
+saying the system saves the data to a
+physical disc. The problem is that disc
+IO, the act of reading from and writing
+to a spinning platter or even an SSD.
+Is orders of magnitude slower than
+reading from RAM. When you have a job
+with many stages, the system spends a
+massive percentage of its time simply
+waiting for the disc to finish writing,
+so that it can start the next step.
+This is what we call high latency. Now
+let's look at the next slide.
+To see where this really hurts, which
+is iterative algorithms. Think of a
+machine learning algorithm like Kames
+or PageRank. These algorithms don't
+just run once, they run the same logic
+over and over again on the same data
+set until they find an answer.
+In the Hadoop map produce world? Each
+iteration is treated as a separate job.
+This means at the end of iteration one.
+The data is written to the disc at the
+start of iteration 2. That exact same
+data is read back from the disc. If
+your algorithm requires 50 iterations,
+you're paying that disc tax 50 times.
+This constant read, process, write,
+repeat cycle creates a massive overhead.
+We call this materialisation costs.
+Because the system is forced to make
+the data a physical reality on the disc
+before it can move forward.
+It is like trying to write a book, but
+being forced to print, bind, ship every
+single page to a warehouse before
+you're allowed to start writing the
+next one. In our next lesson, we'll see
+how Apaches Park completely changes
+this dynamic. By moving the entire
+library into the workspace. Up next,
+the in memory revolution is coming.
+Till then, happy learning. I'll see you
+in the next class.

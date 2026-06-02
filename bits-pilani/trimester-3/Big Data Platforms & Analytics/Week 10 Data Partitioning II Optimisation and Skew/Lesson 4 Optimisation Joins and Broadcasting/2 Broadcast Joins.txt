@@ -1,0 +1,62 @@
+So in our last video, we identify
+shuffle as a major bottleneck due to
+slow network IO. But what if we could
+eliminate the shuffle entirely?
+When you are performing an asymmetric
+joint, meaning you have one very large
+table and one relatively small table,
+You have a golden opportunity to use a
+broadcast joint. Instead of moving both
+data sets across the network to meet in
+the middle, we simply send a complete
+copy of the small table to every single
+node.
+Let's compare the two diagrams on the
+slide. Look at the shuffle join side
+first. Notice the crisscrossing arrows.
+Both table A and table B are being
+sliced up and sent across the network.
+This involves heavy visualisation and
+massive network traffic. Now look at
+the broadcast joint side. There is no
+all to all communication. Instead, the
+small table is broadcasted to every
+node.
+Once a small table is sitting in the
+local ram of every worker, the joint
+happens locally. The big table doesn't
+have to move an inch. It stays right
+where it was partitioned, and the join
+is performed at memory speeds rather
+than the network speeds.
+This sounds like a magic, but there are
+specific conditions you must meet.
+As the slides indicate, you should use
+this when one table is small. In Spark,
+the default threshold is often around
+10 megabytes, though you can tune this,
+right? You can increase this limit as
+well. The primary constraint is that
+the small table must fit entirely
+within the executor's RAM. If you try
+to broadcast a table that is too large,
+you will trigger an out of memory error.
+However, when used correctly for things
+like lookup of product names, category
+codes, or user metadata against a
+massive stream of transactions, the
+performance gains are massive. So
+you're effectively trading a small
+amount of memory on each node to gain a
+huge reduction in the network traffic
+and execution time. By mastering
+broadcast joins, you can turn a stage.
+That used to take minutes into one that
+takes seconds. It is one of the most
+effective quick wins in big data
+optimisation. But what if both tables
+are too large to broadcast? Can we
+still avoid the shuffle? In our next
+lesson, we'll look at a more advanced
+architectural tactic, data co-location.
+I'll see you in the next class.

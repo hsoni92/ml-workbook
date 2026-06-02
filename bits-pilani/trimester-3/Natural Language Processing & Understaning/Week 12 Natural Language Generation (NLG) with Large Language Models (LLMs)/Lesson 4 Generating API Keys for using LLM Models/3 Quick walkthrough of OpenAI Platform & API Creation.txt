@@ -1,0 +1,169 @@
+Welcome learners. In this video
+tutorial, we will get a walkthrough of
+the OpenAI platform. In the last couple
+of videos, we looked at Google AI
+Studio and generated API keys to use
+Gemini LLMs. In this video we will see
+what is OpenAI offering to us and then
+later we will also generate an API key
+and try to implement it to access an
+OpenAI LLM, right? So let's get started.
+Just run. This URL platform.openAI.com
+and it will directly log, redirect you
+to the login page. Use any of the login
+options.
+I'll log in with my Google ID.
+And bingo, we are in. So this is my
+dashboard for the
+open air platform. It will give you a
+quick overview of your usage, of your
+credit balance, right? I usually add
+about $10 or $5 just to stay in my
+limits. And do not overspend because
+that is very easy to do with these
+online offerings, right? Some of the
+models they're recommending for us to
+use, right? Some of the tools for
+function calling, for web search, for
+file search, etc. right? Let's see
+what's there on the left. These are the
+main offerings of OpenAir platform. The
+first is the chat, right? You can do
+your prompting and response generation
+here. Then the agent will do. So if you
+want to create.
+AI agents or the agentic AI servicing,
+you can create it using a UI.
+Then If you want to generate audio, if
+you want to generate images, and if you
+want to generate videos, you can use
+the respective apps. Right? Another tab
+which will, is already deprecated. is
+for generating AI assistance. So then
+we have our usage.
+An option to generate the API key,
+right? Some of the chart GPT
+applications that OpenAI provides logs
+and storage for storing our data, right?
+Some evaluation and fine tuning. So
+this is interesting.
+Without any scripting per se, you can
+use the UI to fine tune a base LLM,
+right? So let's stick to the scope of
+our course and get to chat. Now.
+This is generating a chat prompt, the
+system message, right? This is not the
+prompt that you will get a response for,
+right? So if you don't want to do that,
+just click on plus.
+Right?
+On the left we see what model has been
+selected. You can click here and select
+any other model if you want.
+Variables are nothing if you want to
+generate a variable, say city equals
+Mumbai or city equals Delhi that you
+want to use, right? It's the same as
+your programming variables. Tools are
+your, again, the functions or the tools
+that you want to attach to your LLM,
+right? Then a system prompt, right,
+where you will describe the
+instructions, the tone, the output
+format, etc.
+And then the user prompts, right? So
+let's just use this part. So tell me a
+choke, and I will hit enter.
+Great, I get the response. Why did the
+scarecrow win an award? Because he was
+outstanding in his field. OK, funny
+enough, right? So, now let's look at
+something interesting. You see these
+settings, right?
+Here you get your options. Temperature,
+max tokens, top B, right? So
+temperature currently is set to 1, you
+can go to 2, or you can go to 0. Let's
+stays somewhere between 0 and 1, right,
+in the safe range. Max tokens. So this
+is the maximum number of tokens that
+you want the LLM to generate and not go
+beyond that. So 2048. So for any
+question, the LLM will generate a
+response that is within 2048. This is
+done to limit our API usage cost. Top P
+again, it's set to 1. Let's go to maybe
+0.9 right for now.
+Great. So, let's enter another prom,
+who is the president? Of maybe, let's
+ask Australia this time.
+So it says Australia does not have a
+president. Instead, Australia is a
+constitutional monarchy and a
+parliamentary democracy. OK. Bunch of
+different information about Australia
+that I did not know personally. OK,
+great.
+So this was a quick overview and
+walkthrough of the OpenAI platform. Now,
+let's look at the documentation. OK. So
+we are here at
+developers.openAI.com/API/docs. This
+will give you all the documentation and
+all the information for your different
+models and pricing and enterprise
+offerings, right? Let's click here,
+text generation.
+And I will copy this code.
+And let's go to our So this is Python.
+I will copy it. So let's go to our
+notebook, right? We generated the
+response with Gemini LLM in the last
+video. Let's try to generate a response
+with the open ALLM. OK, we've hit an
+error. OpenAI error. The API key client
+option must be set either by passing
+the API key.
+Or by setting open AI API key
+environment variable, right? So we need
+to set this.
+And to set this, we need to generate an
+AVIT. OK, so let's go back. And click
+your API keys. All right, so this may
+be empty for you. I've generated a
+couple of API keys for my different use
+cases. What I want you to do is come to
+your top right, click on create new
+secret key, right? So when you click
+this, you can select a default project,
+you can name it. Say, let's say demo
+for now. You can name it whatever you
+want.
+Come down, click on create secret key.
+Bingo. So you have your key generated,
+copy it and save it, right? You will
+not find it again. So save it somewhere,
+safe. What I'll do, I'll come here, I
+will go to the secrets. I will add a
+new secret, open AI. API key and I will
+paste it here.
+None.
+I will also grant taxes.
+And let's now
+Satu.
+I will pass the secret name which is
+OpenAI API key and I will store it in
+the same variable name.
+Done. Now, let's pass it. To the
+parameter API key.
+And let's run it again.
+Bingo, we have the response. The input
+prompt was write a one sentence bedtime
+story about a unicorn, right? And the
+model was GPT 5.4, and this is the
+story.
+Perfect. So I hope you've enjoyed this,
+and this will help you. Generate your
+own API keys if you want to use the
+OpenAI elements, right? So I'll see you
+in the next video. Thank you.

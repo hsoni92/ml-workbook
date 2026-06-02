@@ -1,0 +1,52 @@
+Welcome to scaling patterns, vertical,
+horizontal and auto scaling. In the
+previous video, we saw production
+machine learning as a tug of war
+between accuracy, latency, cost and
+user experience. In this video, we will
+focus on one big question.
+When traffic goes up, how do we keep
+latency and UX under control without
+blowing up the cost? We will look at 3
+classical patterns vertical scaling or
+scaling up, horizontal scaling or
+scaling out, and auto scaling, where
+the system adjusts capacity
+automatically based on load.
+And we will tie each of these back to
+latency, cost, and user experience,
+first. Let us remind ourselves why
+scaling matters. Real machine learning
+APIs do not see a flat, predictable
+trickle of traffic. They see spikes
+during marketing campaign or big events,
+daily or weekly pattern, and hopefully
+steady growth as the product succeeds.
+If we do nothing about just keep one
+fixed instance, what happens? Lancies
+start to rise as the instance gets
+overloaded. Error rates can increase,
+and our service level objectives, or
+SLOs under P95 latency and availability
+start getting violated.
+Scaling is all about adding capacity in
+smart way, so that we can keep latency
+and error rates within target as load
+changes.
+There are two fundamental ways to add
+capacity. The first is vertical scaling,
+often called scaling up. You take your
+existing machine and replace it with a
+bigger one, more CPUs, more memory,
+maybe a more powerful GPUs, graphical
+processing unit. And second is
+horizontal scaling or scaling out
+instead of one bigger box. You run
+multiple copies of your service, and
+place a load balancer in the front of
+distribution traffic. Because
+approaches are trying to solve the same
+problem, keep latency under control
+when load grows. Increase the number of
+requests per second, and system can
+handle.

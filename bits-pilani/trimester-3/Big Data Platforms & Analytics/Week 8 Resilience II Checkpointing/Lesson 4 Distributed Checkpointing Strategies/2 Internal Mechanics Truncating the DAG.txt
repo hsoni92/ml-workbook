@@ -1,0 +1,70 @@
+Welcome back. We've talked a lot about
+the theory of cutting the lineage graph.
+But how does Spark actually do it under
+the hood? What happens inside the spark
+driver when you call that checkpoint
+command?
+So in this video, we are going to look
+at the internal mechanics.
+Understanding this process is key to
+seeing why checkpointing is so much
+more effective. Then caching for
+managing driver memory and job
+stability.
+Let's look at the process outlined on
+the next slide.
+So when an RDD is marked for
+checkpointing. Spark doesn't instantly
+delete the lineage. First, it initiates
+a background job. This job's sole
+purpose is to materialise the RDT. And
+write the data partitions to a reliable
+storage system that you have already
+configured.
+Because this is an eager operation.
+Spark ensures the data is physically
+safe on the disc, before moving to the
+next step.
+Once the write is complete, the magic
+happens. Spark creates what is called a
+reliable checkpoint data object.
+This object goes into the RDT.
+And updates the depth field. This is
+the internal field. That store the list
+of parent dependencies. It updates this
+field to an empty list.
+Look at the diagram on the right side
+of the slide.
+Before checkpointing, node E is
+connecting to nodes B, C, and D. After
+the checkpointing, mechanics finish.
+Node E is isolated.
+It no longer knows that B, C, and D
+ever existed. It has become its own
+starting point, a true leaf node in a
+new, much smaller graph.
+The most important consequence of this
+is what happens to those parent RDDs.
+Since Node E no longer references to B,
+C, and D, those original parent RDDs
+are now eligible for garbage collection.
+This is how we solve the memory
+bottlenecks we discussed earlier, right?
+By truncating the dag, we free up
+significant amount of driver memory.
+That were previously occupied by
+thousands of metadata objects
+representing the lineage. The family
+tree isn't just hidden. It is
+physically removed from the driver's
+memory. So in summary, Spark writes the
+data, clears the dependency list, and
+lets the garbage collector clean up the
+old lineage. This keeps your Spark
+application lean and stable.
+In our final video, we'll evaluate the
+ultimate tradeoffs. How do we balance
+the cost of the disc IO? Against the
+time we save during recovery.
+I'll see you in the next lesson. Till
+then, happy learning. Thank you so much.

@@ -1,0 +1,88 @@
+In our last video, we looked at the
+asset, the strict rule following model
+that keeps your bank account safe, but
+as we discussed, maintaining that level
+of perfection across a global cluster
+of thousands of machines is incredibly
+difficult and slow.
+When you're dealing with big data, at
+the scale of Facebook, Twitter or
+Google, you need a different philosophy.
+You need a system that is flexible and
+fast.
+This is where the base model comes in.
+If asset is like a high security bank
+vault, base is more like a busy
+neighbourhood park. It's open, it's
+active, and while things might be a bit
+messy for a moment, it eventually
+settles down.
+The BA in base stands for basically
+available.
+In an asset system, if there's a
+network glitch, the system might give
+you an error page because it can't
+guarantee perfect data.
+A basically available system says, I'd
+rather give you some data than nothing
+at all. Imagine you're looking at a
+friend's profile on a social network.
+If the server holding the latest status
+update is temporarily down, the system
+doesn't show you a broken page. Instead,
+it shows you the last known update from
+5 minutes ago. The system stays
+available even if data isn't 100%
+current. For the user, a slightly old
+status is much better than a system
+crash, right? So the S stands for soft
+state. In the asset world, The state of
+your data is hard. It only changes when
+you specifically tell it to. In the
+base world, data is in the soft state.
+This means the state of the system can
+change over time, even without a new
+user input. Why? Because different
+servers in your cluster are constantly
+talking to each other, behind the
+scenes trying to synchronise, one
+server might discover a new update from
+another server and change its own local
+data to match. In a base system The
+data is consistently flowing.
+Toward the truth, rather than being
+locked in place. Finally, we have the
+most famous part of this model, which
+is E, and that is called eventual
+consistency. This is a promise that the
+system will be consistent. Eventually,
+If no new updates are made to a piece
+of data, eventually all nodes in the
+cluster will agree on the last value.
+Think back to your like counterexample.
+You click like on a photo, your friend
+in London sees 1000 likes, while you
+see 1,0001 for a few seconds. The
+system is inconsistent. But within a
+minute, the London server catches up.
+And everyone sees 1,001 likes. In the
+world of big data analytics, social
+media, and logging, this eventual
+consistency approach allows us to scale
+to a billion users without the system
+grinding to a halt. The architect's
+decision. So to wrap up A look at
+consistency models. Choose asset when
+accuracy is your top priority. Money,
+health records, inventory, choose
+assets. Choose base when scalability
+and availability are your top
+priorities, like social media analytics,
+Google searches, search in general.
+You now have mastered the core
+theoretical challenges of distributed
+systems, you understand the fallacies,
+the cap theorem, the tradeoffs between
+acid and base.
+I'll see you in the next lesson. Thank
+you so much.

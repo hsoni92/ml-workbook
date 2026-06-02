@@ -1,0 +1,79 @@
+Welcome back. Now that we have
+established that partitioning is our
+secret to scaling out, we need to clear
+up a common point of confusion.
+In the world of big data, You will
+constantly hear two terms which are
+used together. And these are
+replication and partitioning.
+While they both involve moving data
+across multiple nodes in a cluster.
+They actually serve completely
+different purposes. We have laid out a
+clear contrast between these two
+strategies.
+Understanding this distinction is vital
+because a healthy distributed system
+requires both. But for very different
+reasons. Let's start with replication.
+The primary goal of replication is
+availability and fault tolerance.
+Think of replication as a safety net.
+When we replicate data, we're creating
+identical copies of the same data and
+storing them on different nodes.
+Why do we do this? Because
+in a cluster of 100,000s of machines.
+Hardware failure isn't just a
+possibility, it's a statistical
+certainty. If no day crashes and it was
+the only machine holding a specific
+piece of data, that data is gone.
+By having replicas on Node B and Node C,
+the system ensures durability. If one
+node fails, the system simply points to
+the copy of another node. And the user
+never even notices a disruption. In
+short, replication is about safety. Now
+let's look at partitioning. The primary
+goal here is not safety, but
+performance and scalability. Instead of
+making copies of the same data,
+partitioning involves splitting data
+sets into different subsets. If you
+have a massive table of customer
+records, partitioning means putting
+customer A through M on one node, and
+then. Customer N through Z on another.
+By distributing different subsets
+across the cluster, we enable
+distributed processing. This involves
+us to scale out.
+Because we can add more machines to
+hold more unique parts of the data,
+while replication makes the system
+reliable, partitioning makes the system
+fast.
+It allows us to process those massive
+data sets in parallel. Which we'll
+discuss in more detail in our next
+video. Just to summarise, the takeaway
+for this lesson, replication is your
+insurance policy. It creates copies to
+protect you from failure. But
+partitioning is your engine, it splits
+data to give you speed and capacity. In
+the real world park environment, these
+two work in tandem.
+A single partition of data is often
+replicated 3 times across the cluster.
+This gives you the performance of
+partitioning with the safety of
+replication.
+Now that we know what is partitioning
+compared to replication, let's move to
+the next lesson. And we look at exactly
+how these partitions turns into
+parallel tasks. Till then, happy
+learning. I'll see you in the next
+class.

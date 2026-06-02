@@ -1,0 +1,90 @@
+We have now seen how to build uh
+features for offline training and uh
+how to sort them for uh offline
+predictions, right? So now, uh, in this
+script, uh, Skew.PY.
+We are going to demonstrate, uh, one of
+the most dangerous and, uh, subtle bugs
+in, uh, machine learning production, OK?
+That is, uh, uh, training service queue.
+Right? SQU happens when the features
+you use during training are different
+from the features you provide to the
+model during serving. So the model's
+performance in production will go worse
+than you expect, and it can be
+incredibly difficult to debug, OK? We
+are going to create this bug
+intentionally and then uh we are going
+to fix it. OK. So here is our script.
+So,
+First, uh, if you notice here, we load
+the, uh, offline feature, OK?
+Uh, for customer one, and uh these are
+the ground truth values our model was
+trained on, right? Now, imagine a
+different team is responsible for our
+online prediction service, OK? They
+reimplemented the feature logic from
+scratch, but they make a mistake. Look
+at this function, uh, compute 7 day
+features bug function, which we have
+intentionally created, OK. So instead
+of a 30 day window, they have
+accidentally hardcoded a 7 day window.
+OK. Here. So, this is a very easy
+mistake to make, OK? So, let's run and
+see the difference, OK? Yeah.
+The script prints the offline values
+and the buggy uh online values, right?
+And they don't match, correct? If you
+see here, total 30 days spent was 170,
+total 7 days spent is uh 0 here, right?
+So the buggy 7 day window returns all 0.
+Uh, zero transaction because it's uh
+looking at too short a time window, OK?
+And this is a training serving askew in
+its purest form. The model was trained
+on 30 days.
+Pattern, right? Uh, showing active
+customers, but at the serving time it
+sees 0.
+Correct? Uh, that making the customer
+appear completely inactive. So, it's,
+uh, predictions will be completely
+unreliable, OK? So, how to fix this?
+The answer is to
+Not have two implementation in the
+first place, OK? If we again go back to
+this.
+So, we need a single source of truth
+for our future logic. So in the first
+part of our script, instead of calling
+the buggy function, We import and call
+the correct this uh compute 30-day
+feature which we had created in our
+last uh uh script, right?
+So, the exact same one we used to build
+our online store in last lab, correct?
+When we run the script again,
+Look at the uh fixed online feature. So
+here we have called the correct feature,
+30 days uh feature function, right? And
+if you see the output here,
+The value for total spend and
+transaction count now perfectly match,
+right, the offline feature. So here the
+SKU is gone.
+So this is the fundamental promise of a
+feature store by forcing you to define
+your feature logic once and then
+reusing that definition to materialise
+feature for both offline training and
+online serving. It's architecturally
+eliminates this entire class of bugs.
+So what we have simulated here with a
+shared Python function, real features
+tools like uh Feast or Hopsworks to at
+a scale, providing consistency,
+governance, and uh discovery for all
+your uh features.

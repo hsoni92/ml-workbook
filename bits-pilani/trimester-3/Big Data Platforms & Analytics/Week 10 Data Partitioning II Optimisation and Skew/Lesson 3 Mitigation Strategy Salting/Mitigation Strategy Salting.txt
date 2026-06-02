@@ -1,0 +1,73 @@
+In our previous lesson we learned how
+to diagnose data skew, right? We saw
+how a single heavy key can create a
+hotspot that brings your cluster to its
+knees. Now let's talk about how to fix
+it. When you have a naturally occurring
+imbalance in your data, like one city
+having millions of users while others
+have only 100s. You can't simply ask
+the data to be different. Instead, we
+use a clever engineering technique or
+trick called salting. The goal of
+salting is to artificially break up
+large skewed partitions by adding a
+random element to the key, forcing the
+data to spread out across more workers.
+Let's look at the 3 step process shown
+on the slide. So step 1 is the skewed
+key. Imagine we are joining data sets
+based on the country code. If we have a
+massive amount of data
+for the key USA, Spark's default hash
+partitioner will send every single
+record with that key to the exact same
+partition as we saw before. This
+creates a massive bottleneck. Step 2.
+Which is add salt. To fix this, we will
+salt the key. This means we append a
+random suffix to the key during the
+processing phase.
+So instead of USA we might generate
+USA_1. Or USA_2 or USA_3, we typically
+choose the range of assault based on
+how many workers we want to spread the
+data across by turning one key into
+four distinct keys. We have tricked the
+petitioner into seeing them as
+different entities. Step 3, that is
+redistribute because the keys are now
+unique. Let's say USA_1 versus USA_2.
+The shuffle operation will now send
+these records to different, different
+partitions and therefore different
+workers, as you can see in the diagram.
+The workload that was once crushing a
+single load is now distributed across 4
+nodes. They can now process that USA
+data in parallel, finishing a job much
+faster. However, there is a trade-off,
+as noted at the bottom of the slide.
+Salting actually increases your code
+complexity. You have to write logic to
+add salt to your large table, and
+crucially, you have to explode or
+replicate your small table to match
+those salted keys. So the join still
+works. While it requires more effort to
+write and maintain, the reward is
+significantly huge. It provides you
+balanced execution and a much more
+stable pipeline. Salting is your
+primary manual tool for redistributing
+hotspot. It's an essential technique
+for any data engineer dealing with real
+world messy data sets. But what if the
+skew happens during a joint? And one of
+those tables is actually quite small.
+Before we jump into the complexity of
+salting, there might be an even better
+way. In our next lesson we'll explore
+the shuffle problem and a powerful
+alternative called broadcast join. I'll
+see you in the next class.

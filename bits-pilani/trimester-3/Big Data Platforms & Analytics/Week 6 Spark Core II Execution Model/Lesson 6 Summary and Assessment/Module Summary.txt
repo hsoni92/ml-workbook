@@ -1,0 +1,49 @@
+Congratulations on completing module 6.
+We have covered a significant amount of
+ground regarding the inner workings of
+SARC. Before we wrap up, let's take a
+moment to synthesise everything we have
+learned about Spark execution model. We
+began by exploring the philosophy of
+lazy evaluation. We learned that Spark
+doesn't just execute line by line, it
+waits for an action to be called, so it
+can optimise the entire pipeline. This
+laziness is what enables high-level
+optimisation like predicate pushdown
+and pipelining. Transforming your logic
+into the most efficient physical plan
+possible, we also dissected the anatomy
+of a spark job. We saw how the driver
+acts as the brain, building the lineage
+and the dag. We learned that wide
+dependencies, those operations that
+require a shuffle, are the most
+critical performance boundaries because
+they force spark to break the job into
+different stages by understanding the
+difference between narrow
+transformations. Stay local and wide
+transformations which move data across
+the network. You are now equipped to
+identify potential bottlenecks in your
+own big data application. The most
+important key takeaway from this module
+is that Spark is not just a tool for
+processing data. It is an intelligent
+execution engine. Every time you call
+map or philtre or join, you aren't just
+manipulating data, you are building a
+complex optimised. Craft that Spark
+will eventually execute in parallel
+across your cluster. As we close this
+module, I highly recommend that you
+refer to Chapter 2 of Spark, the
+Definitive guide for a more granular
+look at the mechanic. Thank you for
+your hard work and participation in
+module 6. In our next module, we'll
+build upon this foundation and look at
+Spark SQL and the Catalyst optimizer in
+even great detail. Happy learning. I'll
+see you in the next module.

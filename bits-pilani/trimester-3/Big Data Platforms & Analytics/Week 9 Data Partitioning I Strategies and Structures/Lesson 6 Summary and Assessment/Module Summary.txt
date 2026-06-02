@@ -1,0 +1,64 @@
+Congratulations. We have reached the
+end of module 9. That is, data
+partitioning strategies and structures.
+So over the last several videos, we
+have taken a deep dive into the
+backbone of distributed systems. But as
+we wrap up, let's take a moment to look
+at the big picture of what we've
+explored together.
+We have touched on 3 major pillars. The
+why, the how and the manual control of
+data distribution. We started by
+establishing that partitioning is the
+secret to horizontal scaling.
+We learned that simply adding machines
+isn't enough. We need a strategy to
+achieve scalability, parallelism and
+data locality. We also made a critical
+distinction between replication and
+partitioning.
+Remember, replication is for safety and
+fault tolerance, while partitioning is
+for performance and scale.
+So without proper partitioning, your
+cluster will suffer from stragglers and
+hot spot.
+That waste your hardware's potential.
+Next, we contrasted the two primary off
+the shelf strategies. We saw that hash
+partitioning is the shuffler of the
+data world. It uses a modulo operator
+to scatter data pseudo randomly. It's
+perfect for point lookups and uniform
+distribution, but it fails when you
+need to perform rain scans. Conversely,
+we looked at range partitioning. Which
+organises data like a library archive.
+It's incredibly efficient for sorted
+chronological order or alphabetical
+queries. But it requires careful
+management to avoid the dreaded
+boundary queue.
+Finally, we discussed what to do when
+those defaults aren't enough. We
+explored the power of custom
+partitioners learning how to write our
+own Python logic in Pie Spark, to
+handle complex domain specific data
+types like geographical coordinates or
+organisational hierarchies.
+You now have the ability to take full
+control of your data flows through a
+cluster.
+Data partitioning is an iterative
+process. As your data grows and changes,
+your partitioning strategy will likely
+to evolve with it.
+I hope this module has given the
+foundational knowledge to build more
+efficient, scalable, big data pipelines.
+Thank you for joining me in this module.
+I'll see you in the next module. Till
+then, happy learning, and thank you so
+much.

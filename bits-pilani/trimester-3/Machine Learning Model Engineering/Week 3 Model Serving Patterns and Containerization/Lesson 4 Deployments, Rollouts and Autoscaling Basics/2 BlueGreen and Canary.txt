@@ -1,0 +1,81 @@
+Two very common patterns are blue-green
+deployment and canary release. First up,
+blue-green deployment.
+The idea is simple. You run two
+environments side by side. Blue is the
+current stable version, Green is the
+new version you're preparing to release.
+Typical flow is you deploy the new
+version to green deployment, you run
+test smoke check against green, maybe
+using test traffic or a similar
+internal traffic slice. When you're
+confident, you stitch the load
+balancers so that all production
+traffic goes from blue to green.
+If something goes wrong, You can
+quickly switch traffic back to green.
+From green to blue. rollback is as
+simple as flipping the traffic back to
+the old environment. This gives you a
+clean separation between old and new
+and very fast rollback. Why use blue
+green? The advantages are you get fast
+simple rollback. You move traffic back
+to blue if the green misbehaves. You
+can run the new version in a parallel
+environment with real infrastructure
+before exposing it to all users.
+There's a very clear separation between
+old and new environments. It's
+specifically useful when you can afford
+to run two environments temporarily.
+You are releasing critical service or
+big changes like a new model plus major
+code changes together. The main
+trade-off is cost. For some period,
+you're paying for both blue and green,
+the important models deployment, that
+cost is often worth the safety. The 2nd
+rollout pattern is canary release.
+Instead of switching all traffic to
+once at once, you route a small
+percentage of traffic to a newer
+version and keep the majority on the
+old version. For example, like 1% of
+users is going to use new model and 99%
+stays with the old model. You carefully
+monitor. Error rates, latency,
+specifically P95 and P.99. The key
+model metrics like click through rate,
+conversion rate, the fraud catch rate.
+If things look healthy, you ramp up
+from 1% to 10% to 50%, eventually 100%.
+If you spot a problem at any stage. You
+stop the ramp.
+Or roll back to the older version. This
+idea is, let the canary test
+the mine first. Or not the entire user
+base.
+Canary release can
+look a lot like A B tests.
+But they serve a different purpose. The
+Kennedy release is about safety and
+reliability. The main question is, is
+the new version healthy enough to serve
+more traffic?
+You look at error rates, latency, and
+any obvious regressions.
+An AB test is about product and
+business impact. The main question is,
+does Model B outperform Model A on our
+business metrics?
+You look at engagement, revenue, click
+through rate, or task specific quality
+metrics. Both involve splitting traffic
+into canary. Is it safe? AB, is it
+better?
+In this module, we focus more on canary
+thinking, making sure your model
+service is safe and stable in
+production.

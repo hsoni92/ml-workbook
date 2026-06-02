@@ -1,0 +1,61 @@
+Now let's switch to fraud detection.
+Think of an online payment. The user
+presses pay. And the system must decide.
+Approve, decline, or step up with extra
+verification, like one time password.
+The latency budget is extremely tight,
+often just a few tens of milliseconds,
+and errors are expensive. A false
+negative means you approve a fraudulent
+transaction and lose money. A false
+positive mean you block a legitimate
+customer, which hurts revenue and user
+trust.
+These are often one shot decision, with
+limited evidence and strong compliance
+implication, the architecture reflect
+that. The online flow for fraud
+detection looks like this. A
+transaction event comes into in with
+card details, amount, merchant, device,
+and location. We quickly assemble real
+time features, such as how many
+transactions this card has made in the
+last 10 minutes.
+Whether the device is new or known.
+Whether the IP addresses look
+suspicious or unusual.
+We feed these into a fraud model.
+Which output a risk score between 0 and
+1. A decision engine applies threshold.
+Low risk, approve, very high risk,
+decline, middle reason, step up
+verification like an OTP.
+We log the decision and context for
+future audits and training. Everything
+must be extremely fast and robust
+because this sits directly in the
+payment flow.
+Fraud systems also have complex offline
+side.
+Labels for fraud often arrive late, for
+example, when a customer files a
+chargeback or an investigation confirms
+fraudulent activity days or weeks after
+the transaction. We then mark past
+transactions as fraud or not fraud,
+reconstruct the features that were
+available at decision time, and build
+training data set from that history.
+New models are trained on these
+labelled data set with evaluation
+focused on the cost of error, not just
+overall accuracy. We tune thresholds
+differently by region, merchant type,
+or risk appetite.
+Some segment may tolerate a higher
+false positive rate to reduce fraud
+loss, and others might prioritise user
+experience. This creates a feedback
+loop similar to ranking but with very
+different stakes.

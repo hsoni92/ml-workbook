@@ -1,0 +1,64 @@
+Another important routing pattern is
+fallback models. Sometimes the main
+model is uncertain, or you detect that
+the input is out of distributions or
+the main service is temporarily down.
+In those situations, you can route to a
+fallback model. The fallback might be a
+simpler, more conversational model or
+group based system, or even a manual
+review, or deny by default path,
+depending on domain.
+The goal is not to be fancy, it's to
+avoid catastrophic failures and
+maintain predictable behaviour during
+incidents or unusual inputs. Now let's
+switch to ensembles. Instead of
+choosing single model, we call multiple
+models on the same input and then
+combine their outputs. Three common
+patterns. Averaging We average the
+probability scores from different
+models.
+Each model votes for a class, and we
+take the majority. Stacking, a separate
+model, sometimes called a meta model,
+learns how to combine the outputs of
+several base models. Ensembles are
+popular because they often give better
+accuracy and robustness than any
+individual model. And they reduce
+sensitivity to one model's quirks or
+bugs.
+Ensemble sound great, but they come
+with trade offs.
+One on the plus side, they often
+delivers higher accuracy and can be
+more robust to noise or drift when the
+models are diverse. On the minus side,
+you are now running multiple models per
+request, which increases compute cost,
+latency, and operational complexity.
+This brings us to the Module 8 picture
+accuracy, latency, cost, and user
+experience pulling in different
+directions. Ensemble usually push up
+accuracy, but also push up cost and
+latency. As a model engineer. It's your
+job to decide whether that tradeoff is
+worth it for your particular use case.
+A few practical tips. Start with simple
+rule-based routing segment by country,
+language, or product. You don't need a
+fancy router model on day one.
+Keep the number of models small
+initially. Once you have a dozen model
+variants, it becomes difficult to
+understand and maintain the system.
+Always measure per model and per
+segment performance, so you know why
+each route or assemble exists and what
+value it provides, and document the
+routing and ensemble logic, which rules
+you use, which models are combined. And
+how this relates to your SLOs and costs.

@@ -1,0 +1,19 @@
+Before you hit the retrand button.
+Run through a checklist, quick
+checklist. Is there a real persistent
+change in data, performance or policy?
+Could we fix this by tweaking threshold,
+adding a rule, or fixing a data bug
+instead of retraining? Do we have
+enough fresh data and labels to
+actually learn something better? And do
+we have a pipeline to train, evaluate
+and compare against the current model
+in control way? If these answers are
+yes.
+Then retraining, triggering retraining
+is sensible.
+In the next video we'll talk about
+What that retraining and promotion
+pipelines actually looks like. Thank
+you.

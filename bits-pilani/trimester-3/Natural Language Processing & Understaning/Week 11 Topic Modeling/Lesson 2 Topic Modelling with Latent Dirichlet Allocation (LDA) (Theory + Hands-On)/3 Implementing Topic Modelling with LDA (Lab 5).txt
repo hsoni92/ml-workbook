@@ -1,0 +1,165 @@
+Welcome back learners to the 5th lab
+for this course
+where we will implement topic modelling
+with LDA. Welcome to the 5th lab
+session, learners. In this lab session,
+we will be implementing topic modelling.
+For the 1st implementation, we will use
+the LDA model, and in the 2nd
+implementation we will use a
+transformer-based model for topic
+modelling, right? So let's get started.
+So let's first install the GEEM and
+NLTK library in our environment and
+also run these.
+All right, so our environment is set up.
+What I've done is I've installed the
+dictionary. Method from GI, the LDA
+model method from GEIM. I've imported
+NLTK, the stop words from NLTK, and the
+tokenizer from NLTK, right? And these
+are some of the dictionaries and list
+of words that we will need for our
+implementation. These are also coming
+from NLTK. Perfect. Now we are ready to
+begin.
+Let's prepare a data set. These are
+just some random sentences that I've
+added in one list, right? We are naming
+it documents. Now what I want you to do
+is go through the documents, which are
+these sentences and identify the main
+themes right before we proceed. For
+example, you take this sentence Stock
+markets reacted to inflation news. So
+what will be the main theme about stock
+market? And inflation, right? Something
+like this. Whatever the top 2, top 3
+topics or themes that you can find,
+just write it down here and then
+revisit this once you're done with the
+lab.
+All right, so let's run this, our
+documents is set. Now let's do some
+preprocessing on these documents. So
+what I'll do is I'll download all the
+stop words. I will remove the stop
+words, and I will tokenize it, right?
+So let's look at the process docs. So I
+will. Copy this here and I will run
+this, right? So sentences have been
+tokenized and the stop words have been
+removed, all right, and we have also
+converted everything to lowercase,
+right? So normalisation has been
+implemented.
+Now let's implement some word embedding
+with bag of words. So let's run these
+two cells, right. So what we've done is
+we've from Jensen we've downloaded a
+dictionary, right? So what we're doing
+is we are mapping words to the IDs in
+this dictionary, right? And then we are
+creating this bag of words, so our
+tokens, which are these.
+Have been converted into. This word
+embedding. Right? I hope this makes
+sense.
+Now let's go and train our LDA model.
+So LDA model coming from Jensen, I've
+initialised it here. I'm passing the
+corpus, which is this, right?
+I'm passing the dictionary, which is
+this.
+And then we pass a number of topics
+that we want to identify. This is to be
+done manually, to be set manually. So
+this LDA model will be trained to
+predict 3 topics from the corpus, right?
+Now let's run this. So what we've done
+is LDA model.get document topics and we
+pass doc. For this doc, it is just
+every list from this list of lists,
+which is the corpus, right?
+So now you see, so document zero, which
+was the first sentence, has been
+assigned these topics. These are the
+confidence scores. So topic zero has
+been assigned a score of 0.07. Topic
+one has been assigned a score of 0.86,
+and topic two has been assigned a score
+of 0.06. So, so how do you want to
+interpret this? Is that topic zero, the
+model's confidence is 7%, right? Topic
+one, the model's confidence is 86%. And
+topic two, the model's confidence is 6%,
+right? So essentially the output is
+that this sentence. This sentence,
+which is essentially this sentence,
+right, has been assigned the topic 1
+out of 01 and 2, right?
+Similarly, 90% for topic zero.
+4% and 4%, so we will assign topic zero
+to the. Document one, right, so on and
+so forth. Now In LDA you have to define
+or add a definition to each topic, 01,
+and 2, the label to these topics,
+manually. However, there is a Python
+way of doing that to make your job easy.
+Let's do that.
+So what I've done is LDA model, which
+was this trained model.
+Dot print topics, right?
+So the topic 0 has words like learning,
+data sets require all of these, so I've
+printed the top 5 words.
+Right, so each topic is a distribution
+over different words. So first topic
+has words like learning, datasets, etc.
+etc.
+This tells us that, OK, maybe topic 0
+is about something about data or
+machine learning, right? Topic 1 is
+about maybe markets and inflation and
+stocks, right? Topic 2 maybe is about
+football and teams preparing cups, so
+maybe football World Cup, maybe that is
+the theme, right? So this is how you
+will have to add the labels to each
+topic within LD. OK, now let's do it in
+a little different way, a much more
+prettier way. So right, so what I'm
+doing is last time I ran LDAmodel.
+print topics, here I'm just using a
+different method to show you a
+different way of doing the same, right?
+So LDAmodel.show topics, and we want to
+print 10 words.
+So topic zero has words like learning,
+datasets require, model, deep, large,
+healthcare, etc. etc. Topic one has
+markets reacted, inflation, news, talk,
+right? Topic two has words like
+football team, World Cup, etc. etc.
+Right, so here also you can find these
+words and maybe add a nice label to
+each topic. Cool. So this is
+essentially the end of this video. You
+have implemented topic modelling with
+LDA model, right? I will leave you with
+one exercise.
+Answer these four questions on your own,
+right? Do topics look clean? Are there
+some words that are repeated across
+different topics, etc. etc. right?
+Answering these questions will, will
+further deepen your foundational
+understanding about topic modelling,
+right? After this, what will be your
+task? You know it already.
+Come here, change this dataset with
+anything of your choice, and run topic
+modelling again. And implemented again.
+All right. Thank you. All right, that's
+it for this lesson and I'll see you in
+the next one. Thank you.

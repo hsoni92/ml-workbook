@@ -1,0 +1,34 @@
+Freshness is just one dimension of load
+quality.
+We also need to think about
+completeness and correctness.
+Things that can go wrong, missing
+events when upstream system drop
+message or pipeline fails, duplicates
+due to retries or at least one delivery
+semantic, out of order events where
+data arrives late or with wrong time
+stamp. And invalid values, like
+negative amounts, not a number, ances,
+or impossible categories.
+These issues won't usually crash your
+code, instead, they quietly make
+features biassed or misleading, and
+your model performance degrades. You
+don't need a huge framework to start
+monitoring data quality.
+For each window, like 5 minutes or an
+hour, you can compute simple count of
+events overall and per key, and watch
+for sudden drop or spikes. Track
+distributions of important fields,
+means standard deviations.
+Min and max and category frequencies.
+Measure the null or invalid value rate
+for key fields.
+Then you set up alerts if these metrics
+deviate too far from historical
+baseline.
+This already catches many issues before
+they silently poison your machine
+learning pipeline.

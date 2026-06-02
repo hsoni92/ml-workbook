@@ -1,0 +1,74 @@
+Welcome back, learners. In this video,
+let's explore the concept of bias and
+representation in text corpora.
+Let's discuss bias in text corpus.
+When we work with text copies, we're
+not working with neutral data.
+This is because a porpoise is written
+by humans, selected by humans,
+collected from very specific sources.
+Therefore, it naturally reflects social
+norms from where it is collected.
+Cultural assumptions and historical
+inequalities.
+Since NLP models learn directly from
+Text Corpora. Any bias present in the
+data can propagate into the model.
+We must understand that models do not
+invent bias, they absorb it from its
+training data. Let's look at different
+types of bias in Text corpora. Source
+bias. Each source has its own lens. For
+example, news media will have a
+different lens, from social media
+platforms to literature and academic
+texts.
+There will be a different kind of bias
+coming from these different sources.
+Representation bias.
+Who appears in the data, and how much?
+Certain demographics may be under
+represented.
+Or over represented, certain languages
+or dialects may be absent from the text
+corpus.
+Minority viewpoints may be rare.
+Historical bias.
+Old text corpus reflects past societal
+norms more than the current. They
+represent outdated terminology.
+And cultural assumptions that may no
+longer hold true.
+Annotation bias. Human labellers bring
+subjective judgement to the text corpus.
+Ambiguous cases get simplified.
+And cultural context influences
+labelling. How does this bias manifest
+in NLP models?
+Bias in a text corpus can lead to
+skewed predictions.
+Unintended stereotypes.
+Unequal performance across groups.
+For example, word embeddings
+associating doctor may be closer to a
+man, and the word embeddings
+associating nurse may be closer to a
+woman.
+This happens because language usage in
+text corpus reflects historical
+patterns, and models optimise for
+statistical regularities and not
+fairness. Finally, I have some
+practical takeaways for you.
+Before training or deploying any NLP
+model, always ask yourself.
+Where does this corpse come from?
+Who does it represent well? And vice
+versa.
+Who might it miss?
+Understanding your data is as important
+as understanding your model. Always
+remember, bias is a data problem before
+it is a model problem.
+That's all for this video. I'll see you
+in the next one. Thank you.

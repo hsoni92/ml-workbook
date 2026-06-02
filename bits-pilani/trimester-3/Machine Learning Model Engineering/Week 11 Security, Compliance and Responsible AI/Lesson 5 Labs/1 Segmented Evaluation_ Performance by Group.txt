@@ -1,0 +1,153 @@
+Hi, everyone. Welcome to the lab for
+module 11. Here, we are gonna tackle
+one of the most important and uh
+nuanced topics in modern machine
+learning. That is responsible AI and
+fairness.
+OK. Uh, so far, you have trained lots
+of models, you have seen, uh, many
+models, but, uh, a model can be
+technically accurate, but it still
+cause, uh, unintended harm if it's
+performed poorly for a specific group
+of people, right? So, a high overall
+accuracy score can be dangerously
+misleading sometimes. So let's take an
+example. Imagine A credit card scoring
+model with, uh, let's say, 95% accuracy,
+OK? When we see 95% accuracy, this
+really looks good, right? So the first
+step toward building fairer models is
+to see these differences clearly, OK.
+So in this lab, we will learn how to do
+just that. We will move beyond a single
+global metrics and perform a segmented
+evaluation, calculating uh performance
+metrics like uh uh accuracy, precision,
+and recall for different uh user groups
+independently, OK? So this is the
+foundational practise for any fairness
+analysis. I have created this directory,
+uh, lab 11. You can find the, read me
+over here. With all the details. OK?
+So, before we can analyse a model, we
+need a model and some data, right? We
+have seen uh in the previous lab uh
+already. So let's uh look at the script
+we have here. Let's, uh, first explore
+setup and datamodel.py.
+OK. Again, very basic code. I will try
+to briefly explain it. So, to make this
+lab uh self-contained, we are
+generating our own uh synthetic data,
+OK? So this is a very common practise
+when real data is sensitive or
+unavailable, so, uh, usually people
+start like this. So I want to draw your
+attention to how the data is, uh, uh,
+created over here. So first, we define
+two groups, uh, Group A and Group B.
+Crucially, we are introducing a slight
+difference in the base probability of
+the positive class for each group, OK?
+This means Group B naturally has a
+higher likelihood of having the
+positive label in our synthetic world,
+OK. So this is designed to mimic real
+world population differences and will
+give our model something to latch onto,
+right? Potentially leading to
+performance disparities. OK. So after
+creating the data set,
+The script train a simple logistic
+regression model. Uh, on the data and
+uh save it uh using Joblin.
+So eventually, we'll be getting our
+model in .pel format and uh data frame
+with uh this valid with group. CSV file.
+So, let's uh run this script and uh
+first create the model and uh I mean,
+first the data set and the model. So
+let's uh execute it.
+Yeah, let's uh run the Python script.
+My name is uh.
+Set up data and model.b. Let's execute.
+And this will create a model in We can
+format and uh it will also create the
+data set, right? So let's uh check.
+So this is our CSV file and you can see.
+And this is the group, and this is the
+label, right?
+So that's how we have uh created. 1000
+rows.
+Right?
+Uh, then we have our model.
+Here inside the models, my
+binarymodel.pkl.
+Right. So model has been created.
+Great. So, our environment is now ready.
+We have a model to evaluate and a
+validation set that includes uh the
+all-important uh group column, right?
+So now let's uh open our manuscript for
+this lab.
+Uh, that is, uh, segmented evaluation.
+P.
+So, segment and evaluation. PY yeah.
+The first part is uh standard uh
+procedure. If you see here the main
+function. We load the model, then we
+load the data. And we get our
+Prediction over here, right? Then we
+start by calculating the overall matrix.
+OK. And this uh gives us a single
+number for accuracy, precision, and
+recall and uh AUC across the entire uh
+data set. So this is our baseline, the
+number we might uh report to
+stakeholders if we were not uh being
+careful, right?
+But here is the crucial part.
+We then loop through each unique group
+in our group column A and B.
+And for each group, we create a mask to
+select only the data points belonging
+to that group, OK.
+We then pass this philtre data into our
+uh compute metrics. So this is our
+function, compute metrics. That is a
+helper function, and this gives us a
+separate set of performance metrics for
+uh each element, right? So let's uh run
+the script and see the uh result.
+Uh, bring back the terminal. Now.
+Yeah
+Ian
+Uh, segmented evaluation. B.
+It's uh executing.
+Now let's uh
+See the output
+We have an overall metrics first, right?
+Then the segmented table.
+Right? Notice how the overall recall
+might look acceptable, but when you
+break it down, there is a clear gap.
+Group A has a different recall from
+Group B. Right
+This is a performance uh disparity that
+was completely invisible in the global
+number, right? A simple bar chart which
+the script also generates, uh, makes
+this gap immediately obvious, right? So
+this is first and the most important
+step in any uh fairness audit, right?
+Disaggregating your evaluation. So,
+here we have successfully uncovered a
+hidden performance issue. In the next
+script, we will learn how to turn this
+uh observation into uh into an
+automated uh fairness check. OK? And
+before moving to the next script, we
+have also generated the Uh, bar chart.
+So let's see that. And here you can
+find the Difference, clearly, right?

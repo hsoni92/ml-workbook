@@ -1,0 +1,87 @@
+Welcome back learners. In this lesson,
+let's understand what RNNs or recurrent
+neural networks are. Unlike the
+standard neural network, which passed
+the data straight from input to the
+output. The RNN has a feedback loop. It
+processes data sequentially, one by one.
+So for example, if the input X.
+Brought the output Y in a standard
+neural network, the hidden layer
+involved would be H, so it would look
+like X comes in the neural network,
+produces the hidden state H, and gives
+the output Y. Right? How the RNN is
+different is that it also considers the
+previous hidden state, which is
+represented by HT1.
+Consider T to be the current time.
+So the input here would be X of T,
+which is X of current time.
+The previous hidden state, which is H
+of T minus 1.
+The new hidden state, H of T. Will
+result in the output Y of T.
+So The input to the RNN.
+Will not be just X but the hidden state
+of the previous input as well.
+This will go as the input. Which will
+create the current hidden state. And
+produce the current output. Right? This
+loop allows the information to persist.
+At step T, this loop allows the
+information to persist, hence
+overcoming the information bottleneck,
+which was the lack of memory. At step T,
+which is the current time, the network
+or the RNN will make a decision based
+on the current input X of T.
+Current context, HFT.
+And the context from the past, H of T
+minus 1.
+This hidden state, H, is the most
+critical component of the RNM. Think of
+it as the memory bucket of the network.
+As the RNN reads a sentence word by
+word, it updates this memory bucket,
+adding new information and potentially
+forgetting old information.
+visualise the RNNs unrolled over time.
+If a sentence has 5 words, the unrolled
+RNN looks like a chain of 5 identical
+neural networks passing a message to
+their successor.
+So for example, the traditional neural
+network was X.
+And output was why? So consider the RNN
+to be XT minus 1.
+Y T minus 1.
+XT minus 2
+Why of Tim m2?
+X T minus 3.
+Reducing Y of T minus 3.
+An X T minus 4.
+Producing y oft minus 4. So these are
+the five words processing individually.
+Imagine them To happen sequentially
+within the RNN.
+The same weight matrices, WXH, WHH, and
+WHY, so which is for the input, the
+hidden state and the output, are used
+every single time.
+This means the model learns a general
+rule for processing language regardless
+of the position.
+Let's look at it mathematically. So HFT,
+which is the memory in the current time.
+Is a product of Tan H.
+Weight WHH, H of T minus 1. So a
+product of these.
+Weight X and X of T. So where HT minus
+1 is the previous memory.
+XT is the current input.
+And HD is the new memory being created.
+These being the wits.
+And Tan-H is the activation function.
+I hope you enjoyed this, and I'll see
+you in the next video. Thank you.

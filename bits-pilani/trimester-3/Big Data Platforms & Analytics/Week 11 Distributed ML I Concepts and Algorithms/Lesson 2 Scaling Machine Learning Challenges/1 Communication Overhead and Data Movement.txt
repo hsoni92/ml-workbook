@@ -1,0 +1,77 @@
+Now that we have laid out our road map,
+it's time to dive into the reality of
+distributed machine learning. When we
+talk about scaling, it's tempting to
+think that doubling your hardware will
+automatically halve your training time.
+Unfortunately, in the world of
+distributed system. It is rarely that
+simple.
+In this first part of the module. We
+are going to look at why scaling can be
+so difficult. We'll focus on the 3
+hidden costs of distribution.
+Communication, data movement, and
+synchronisation. Understanding these
+challenges is crucial because they
+often represent the little speed limit
+of your machine learning infrastructure.
+The most significant hurdle we face is
+what we call the communication
+bottleneck. When training on one single
+node, your GPU or CPU can access data
+via high-speed local memory buses. But
+once you distribute that work, you
+introduce the network.
+And the network is much, much slower
+than the local memory.
+Look at the diagram. You'll notice that
+GPU processing time is actually only a
+small fraction of the total job, but
+the rest of the timeline is consumed by
+notify and synchronised phases. This
+leads us to data movement overhead in
+distributed ML. We aren't just moving
+the data set once, we are constantly
+moving gradients and the parameter
+updates between nodes during every
+single iteration of training. This
+overhead is driven by 3 main factors.
+Network latency, the first one. This is
+a delay in sending a message, even if
+the data packet is tiny. The time it
+takes to travel across the wires and
+through switches adds up. When you have
+thousands of workers communicating
+constantly. The second is bandwidth
+limits.
+Network pipes have a maximum capacity
+if you're trying to sync a model with
+billions of parameters across 100 nodes.
+You can easily saturate your network
+bandwidth.
+Causing everything else to grind to a
+halt. And the last one is shuffle cost.
+In many algorithms we need to
+reorganise or shuffle data across the
+cluster to ensure each node gets a
+representative sample. This all to all
+communication is incredibly expensive
+and often becomes the slowest part of
+the entire pipeline.
+Moving massive data sets and gradients
+creates a significant lag.
+If your communication time is longer
+than your computation time. Adding more
+GPUs won't actually make your training
+faster, it might even make it slower.
+So communication is the first major
+hurdle, but if we had an infinitely
+vast network, we'd still face the
+problem of coordination.
+In our next video, we'll look at the
+synchronisation and convergence.
+Where we'll discuss what happens when
+some nodes are slower than others.
+The infamous Straggler problem. I'll
+see you in the next video.

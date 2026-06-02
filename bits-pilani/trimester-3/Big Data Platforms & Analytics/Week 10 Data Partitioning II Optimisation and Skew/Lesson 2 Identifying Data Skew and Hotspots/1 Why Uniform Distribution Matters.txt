@@ -1,0 +1,67 @@
+Welcome back. Now that we have
+introduced the module, let's get into
+the why.
+Why do we care so much about how data
+is distributed across our cluster?
+The core promise of distributed
+computing is parallelism. In a perfect
+world, if you have 10 workers and a
+task that takes 10 minutes, each worker
+does 1/10 of the work, and the whole
+job is finished in 1 minute. But that
+only happens if the work is distributed
+perfectly. This brings us to the goal
+of this lesson understanding the impact
+of uniform distribution versus skewed
+distribution.
+Let's look at the problem. This
+represents a skewed dataset scenario.
+Notice the bar chart. One worker has a
+massive amount of data compared to the
+others. In big data environments, we
+call this a hotspot.
+While workers 13, and 4 finish their
+task almost instantly. Then sit idle.
+Worker #2 is overwhelmed.
+Here is the critical takeaway. The
+speed of your entire job is limited by
+the speed of your slowest task. In this
+scenario, your cluster is essentially
+running at the speed of that one
+straggler node. You're paying for a
+massive cluster, but you're only
+getting the performance of a single
+machine because of that one bottleneck.
+This is what delays jobs and wastes
+expensive cloud resources. Now let's
+look at the right side, which is the
+ideal stage. This is our goal. In a
+uniform distribution, the work is
+sliced evenly. Every worker gets
+roughly the same number of rows or the
+same amount of processing load.
+When you look at the bar chart here,
+you see a balance cluster, because the
+load is balanced. All workers finished
+approximately at the same time. This
+means your resources like your hardware,
+cloud hardware, are being 100% utilised.
+You aren't paying for idle CPU cycles,
+and your job finishes as fast as
+physically possible.
+This is the difference between a
+pipeline that scales linearly as you
+add nodes and that one hits a
+performance wall. So, as we move
+forward, keep this visual in mind.
+Our objective throughout this module is
+to move our data from that skewed
+hotspot stage.
+On the left of the uniform balance
+state on the right.
+In the next video, we are going to get
+more technical. We'll learn how to
+actually identify these hotspots in
+your logs and the Spark UI as well. So
+you can start fixing them. I'll see you
+in the next class.

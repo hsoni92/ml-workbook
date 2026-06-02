@@ -1,0 +1,78 @@
+In our module introduction, we
+established that map produces the brain
+that coordinates our distributed
+cluster. Today we are going to look at
+the first half of that brain, the map
+operation. If you think of big data as
+a mountain of raw, messy materials, the
+map phase is where we start sorting
+through. That mountain to find the
+specific pieces we care about. In
+technical terms, mapping is about
+transforming data from its raw state
+into a structured format that we can
+actually work with. Let's look at the
+formal definition of map. So map is a
+function. Transformation function
+applied independently to every single
+element in a data set. Think of it like
+a chef in a kitchen who needs to peel
+1000 potatoes. The map instruction is
+simple. Take a potato, peel it, put it
+in the bowl. The chef does this one
+potato at a time, and the results of
+each map is a peeled potato. In the
+world of data, we use a specific
+signature. Which is map And the
+arguments are key and value. Which will
+return me a list of key and value
+players. Don't let the math scare you.
+This just means the function takes a
+raw input, which is the key and value,
+and emits or outputs a new list of
+structured pairs. To make this concrete,
+let's use the example from our slide.
+Extracting URLs from web logs. Imagine
+you have a text file with a billion
+lines of server logs. Each line
+contains an IP address, a timestamp,
+and a URL-like index.estimate. Your
+goal is to count how many times each
+page was visited. The map function will
+look at each raw line independently. It
+ignores the IP address, and the
+timestamp extracts. It just extracts
+the URL and emits a pair that looks
+like this, like it will have index.html
+with a count of view, which is like 1.
+For every line it reads, it creates one
+of these pairs. By the time the map
+phase is done, we have turned a messy
+text file into a clean list of URL
+counts. Now here's why MapReduce is the
+king of big data native parallelism. So
+map operations can run on 100s or even
+thousands or even millions of nodes at
+the exact same time without
+communicating with each other, because
+each peeler or each worker node is
+working on its own specific split of
+data. They don't need to talk to other
+nodes to do their job. There's a secret
+to scaling. If you have twice as much
+data, you don't need a faster computer.
+You just add more nodes and the mapping
+finishes in the same amount of time.
+It's perfectly distributed logic.
+Just to recap, the map operation is our
+transformation stage. It takes raw
+input, uses a pure function to emit
+structured key value pairs in parallel
+across the cluster. But once we have a
+billion pairs like index.html.1, how do
+we actually add them all up to get the
+total? That is where the second half of
+the brain comes in. In our next video
+we'll explore the reduce operation and
+how we aggregate all this state. And
+I'll see you there.

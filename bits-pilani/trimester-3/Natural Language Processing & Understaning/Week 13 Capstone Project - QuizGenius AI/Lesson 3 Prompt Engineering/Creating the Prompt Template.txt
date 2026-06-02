@@ -1,0 +1,57 @@
+Welcome back, learners. Now let's get
+into the prompt engineering for this
+application, and let's create the
+prompt template. All right learners,
+now let's set up the main prompt for
+this application, which we will call as
+the prompt template, right? So let's go
+through it. We will begin with defining
+the roles. So you are a quizmaster,
+right? So this is the specific role for
+the LLM.
+Generate a 3 question multiple choice
+quiz about some topic. This topic will
+be introduced by the user, right? So
+this is the role.
+And this is the instruction.
+Right
+now we will define some constraints.
+So the rules are that the difficulty
+should be intermediate. You can play
+around with this. Provide four options
+A, B, C, D for each question, right? So
+you see how specific we are with our
+constraints. We want the options as A,
+B, C, D, cap, caps or uppercase A, B,
+CD only, yeah, nothing else like 12, A,
+B, whatever.
+Third rule is that mark the correct
+answer clearly.
+We want clarity and consistency, right?
+Finally, provide a short explanation
+for the correct answer.
+OK.
+Now, very important, output format.
+Return a raw Jason with this structure
+and with this structure only. What is a
+structure? This is a Jason structure,
+right? You can see here.
+The first key is quiz title. Add a
+catchy title, then the questions. So
+question will come with ID, then the
+text of that question, then the options
+A, B, C, D, right? And then the correct
+option, whichever is the correct answer,
+and then an explanation on why this B
+option is correct, right? So these are
+all samples, right? B is not always
+correct, it's just sample for the LLM,
+right? So this is the output definition.
+Great, let's run this.
+OK, so our prompt template has been
+defined. Great, we have started, and I
+hope you're excited now. In the next
+video, we will begin with logical
+development. Thank you. That's it for
+this video, and I'll see you in the
+next one. Thank you.

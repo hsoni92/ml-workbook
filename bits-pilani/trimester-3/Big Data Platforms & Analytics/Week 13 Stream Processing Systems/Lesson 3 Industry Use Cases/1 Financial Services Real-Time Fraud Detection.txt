@@ -1,0 +1,47 @@
+Now that we have established the
+technical foundations of stream
+processing, let's look at how these
+systems are applied in the real world.
+We'll start with one of the most high
+stake environments. Which is financial
+services. We have a case study on real
+time fraud detection. This is a classic
+example of why the shift from batch to
+stream is so transformative. In the old
+batch processing world, a bank might
+analyse card transactions at the end of
+the day. What is the problem with that?
+By the time Bad Job identifies a
+fraudulent transaction, the money is
+gone, and the attacker has moved on.
+But stream processing changes the game
+by analysing transactions as they
+happen. Here's how it works. Instant
+scoring. As soon as you swipe your card,
+the transaction data is streamed into a
+processing engine. It is immediately
+scored against your historical patterns.
+Which, as we discussed in the last
+video, are maintained in a global state.
+Immediate rejection. If the score
+indicates a high probability of fraud,
+for example, a large purchase in a
+country you have never visited, the
+system can trigger an immediate
+rejection of the suspect transaction
+before it is even authorised. As a data
+scientist, you must recognise that this
+use case demands extreme performance.
+To make this work, the architecture
+requires 99.999% uptime because a
+system failure means transactions can't
+be processed. The entire check must
+happen in the blink of an eye, so it
+doesn't slow down the checkout
+experience for the legitimate users.
+Front detection is about preventing
+loss through speed. In our next video,
+we'll see how e-commerce platforms use
+similar streaming logic, not just for
+security, but for revenue optimisations
+through dynamic pricing.

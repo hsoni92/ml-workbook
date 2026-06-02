@@ -1,0 +1,42 @@
+Let's summarise key ideas. In CI for
+machine learning. We are testing code,
+lining, unit tests, integration tests,
+data assumption, schemas, and basic
+data validation on samples, the
+training script itself, via a small
+smoke training run to catch
+catastrophic breakages. In CED for
+machine learning, we are deploying.
+A specific model version with known
+metrics and lineage. Paired with a
+specific code version and configuration,
+packaged as a containerized service or
+batch job that we can run on our
+serving platform. Good Machine Learning
+CICD makes it clear what we have
+checked, which model plus code
+combination we have approved, and what
+exactly we have deployed. To close this
+video and wrap up the theory in Module
+4, let's connect this to what we will
+do in the labs.
+In the Model 4 labs, you will walk
+through a real repository that contains
+a training script, ML flow logging for
+metrics and artefacts, a simple CI
+workflow file like a GitHubb action or
+GitLb CI config. You will see code
+tests and lint checks running
+automatically. A small training run
+instrumented with ML flow. Logged run
+metrics and model artefacts popping up
+in the ML flow UI or logs. In other
+words, You'll see a mini version of the
+CI and ML pipeline you have been
+talking about in this module,
+implemented end to end. From here,
+you'll be ready to expand that pattern
+for your own projects, more checks,
+more stages, and more robust CICD for
+real world production ML systems. Thank
+you.

@@ -1,0 +1,52 @@
+We have discussed the theory of
+in-memory computing, but now it's time
+to look at the hard data. In this video,
+we are going to look at a classical
+performance benchmark, running the
+Kames clustering algorithm on Hadoop
+versus Apache Spark.
+If you look at the comparison chart on
+the slide, you'll see a dramatic
+difference in execution time in a
+typical Cain scenario where the
+algorithm must iterate over the same
+data set 1020, or even 100 times to
+find the optimal cluster centres.
+Hadoop's performance is hampered by its
+architecture. Because MapReduce must
+write to the HDFS disc at the end of
+every single iteration. The total time
+spent on dis IO often exceeds the time
+spent on actual computation.
+Now let's analyse the next slide. To
+see why Spark wins this race. So
+convincingly, Hadoop is stuck in a read,
+process, write, repeat cycle. Spark
+uses its caching ability. In the first
+iteration, Spark reads the data from
+HDFS and stores it in the RAM of the
+worker nodes. From that point forward,
+iteration 2 through 100 happen entirely
+within the RAM. These are 0 disc reads
+and 0 disc writes during the middle of
+the algorithm.
+The results are often staggering for
+iterative workloads like Kines. Spark
+can be up to 100 times faster than Hado.
+However, as we see in the cost-benefit
+section of the slide, this speed
+requires a cluster with significant RAM
+capacity. While Hadoop is disc heavy
+and cheaper to scale in terms of
+storage, Spark is RAM heavy, requiring
+a higher investment in memory to
+achieve these performance gains. And
+choosing between them, the question
+isn't just which is faster, but whether
+your algorithms needs to touch the same
+data repeatedly. If the answer is yes,
+Spark is a clear architectural winner.
+In our final video, we'll wrap up the
+module with a summary of these batch
+processing architectures. Till then,
+happy learning.

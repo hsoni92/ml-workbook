@@ -1,0 +1,85 @@
+Now let's talk about ML Model Engineer.
+This role often sits at the
+intersection of research and data
+science, where model ideas and
+prototypes come from, to infrastructure
+and platform engineering, where
+underlying system lives, product and
+business, where requirement and success
+metrics are defined.
+The main mission of a model engineer is
+to take research prototypes and turn
+them into robust, observable, scalable
+surveys. They typically own the serving
+path. Now, how input becomes
+predictions in production, and a large
+part of the deploy, monitor, retrain,
+loop to discuss in Topic 2. In short,
+Make sure model are not just clever,
+but actually usable in real world.
+Concretely,
+What does a model engineer's day to day
+looks like? On the translation side,
+refactor experimental notebook into
+clean testable module, build inference
+services, sometimes online APIs,
+sometimes bad jobs or streaming
+consumers.
+On the engineering side and operations
+side, implement logging, matrix,
+dashboards so we can see what model is
+doing. Set up CICD pipelines for model
+and data changes, handle versioning,
+controlled rollout and fast rollback
+when something goes wrong.
+On collaboration side, work with data
+engineer to define and maintain feature
+pipelines, work with infra platform
+teams to deploy and scale services,
+work with product to understand SLA's
+UX constraints and what good looks like
+in the user's eye.
+It's a highly cross-functional role
+that combines machine learning
+understanding with solid software
+engineering and operations. Let's place
+model engineer back on the life cycle
+diagram which we had seen in topic 2.
+Remember our stages problem framing,
+data collection, feature engineering,
+training and evaluation, deployment,
+monitoring, and retraining. Model
+engineers usually touch all of these at
+some level, but they live primarily in
+deployment, monitoring and retaining
+and deprecation. They anchor that
+deploy monitor, retrain loop. Making
+sure model can Be deployed safely,
+watched in productions. Update as data
+and requirement change. Their job is to
+ensure that models are not just
+experiments, but reliable, evolving
+parts of the production systems. To
+wrap up this video, we defined MLOs as
+DevOps style practise applied to ML
+system. We looked at four core
+practises versioning data, code models
+and configs, reproducible pipelines,
+CICD for ML, and monitoring and
+alerting for both systems and models.
+We also positioned the ML model
+engineer as person who turns research
+prototypes into production services.
+Owns much of the deploy monitor retrain
+loop.
+And collaborate across data
+infrastructure and product team.
+In the next lab, we will make this
+concrete by looking at readymade model
+API, exploring its project structure,
+seeing how model is loaded, served, and
+called via predict. By the way, predict
+is a function.
+Now let's switch over to the lab and
+see what this looks like in real code.
+Thank you.

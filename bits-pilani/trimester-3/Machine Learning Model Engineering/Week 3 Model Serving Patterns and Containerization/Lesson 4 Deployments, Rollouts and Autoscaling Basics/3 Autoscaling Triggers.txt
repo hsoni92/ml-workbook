@@ -1,0 +1,118 @@
+Now let's shift to auto scaling.
+In real system, traffic is not flat.
+You might see daytime peaks, nighttime
+lull. Weekend pattern,
+campaign spikes, or seasonal surges. If
+your capacity is too small, You will
+see time outs, errors, and unhappy
+users when traffic spikes.
+If your capacity is too large, You are
+paying to serve our pots that sits
+mostly ideal. Auto scaling is about
+automatically adjusting the numbers of
+running instances of your model service
+based on. Some measure of load and
+performance. So you stay within your
+SLOs without burning money. It is
+specifically
+important for model service because
+they can be compute heavy.
+What signal can we use to drive water
+scaling? Common water scaling signals
+include. CPU usage across instances. If
+average CPU stays too high, scale up.
+If it's very low for a long time, scale
+down. Request per second or the query
+per second, RPS QPS. How many requests
+are hitting your service? Queue length.
+If you are using a sync jobs, long
+queues mean. The system is failing
+behind. Latency, specifically P95 or
+P99, if it rises above a target, that
+sign you are underprovisioned. For
+machine learning specific workload, you
+might also watch GPU utilizations.
+Memory usage, or out of memory event
+for large models.
+The goal is, keep the system within
+your SLO, for example, P95 latency
+under X millisecond. While controlling
+costs by not running.
+Way more instances than you actually
+need.
+Auto scaling has some extra wrinkles
+for model machine learning services.
+First, model load time. Large model can
+take seconds or even minutes to load
+into memory. If you spin up a few
+instances on demand, they may suffer
+from cold starts where.
+First few requests are very slow.
+Second, the resource profile. Some
+models are CPU heavy, some are GPU
+heavy.
+Batch serving patterns might prefer
+fewer, larger instances. Online serving
+pattern. Might prefers more smaller
+instances. When designing auto scaling
+for machine learning, you often set a
+minimum number of replicas to keep some
+instances warm and avoid cold start.
+Set a maximum number of replicas to
+prevent runaway cost and use a
+combination of traffic, latency and
+resource usage as scaling signal.
+This ties back to Module 2. One, your
+key goal is to keep P95 latency within
+target, even during traffic peak.
+Auto-scaling is one of the main tools
+to achieve that. Let's put everything
+together into an end to end life cycle
+for a new model version. A typical flow
+looks like this.
+Train the new model And save the
+artefact. Build a new Docker image that
+packages the model, the code, and
+dependency. Deploy that image into a
+staging environment or a green
+environment. Run tests, smoke checks
+there. Does the API work? Are basic
+predictions sane enough? Is latency
+roughly acceptable? Start a canary or a
+blue-green rollout for production.
+Watch metrics carefully. Errors,
+latency, and key quality are business
+metrics. If thing looks good, ramp up
+to 100% traffic. Decommission the old
+version, or keep it around as a
+rollback option. As a model engineer,
+your job increasingly involves owning
+this entire loop, not just training the
+model, but making sure it's deployed
+safely, monitored and scalable.
+To close this video and this module.
+In the M3 Model 3 lab.
+You will dive into a fast API model
+service implementation, package it as a
+docker image, run the tests that
+containers locally. The docker image is
+your deployment unit. You can deploy it
+as a simple single instance service on
+a VM or as a model microservice in a
+large cluster, or plug it into a more
+advanced setup using blue, green,
+canary, or auto scaling strategies like
+what we discussed. In later modules, we
+will go deeper into monitoring and
+alerting, model versioning and rollback.
+And more advanced scaling and
+optimisation strategies.
+But after this module, you should
+already have a solid mental picture of
+what a model serving service is. How
+it's structured. How client talk to it.
+And how it gets deployed, rollback, and
+scaled in real world. Now let's jump
+into the labs and see what this looks
+like in an actual code and containers.
+Thank you.

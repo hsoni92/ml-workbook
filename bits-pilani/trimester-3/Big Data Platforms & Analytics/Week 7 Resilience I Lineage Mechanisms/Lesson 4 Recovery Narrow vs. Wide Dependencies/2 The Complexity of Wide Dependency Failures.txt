@@ -1,0 +1,60 @@
+In our last video, we saw how narrow
+dependencies allow for fast, isolated
+recovery.
+But now we must address the elephant in
+the room, which is why dependency
+failures.
+When we perform operations like Group
+by or join or, we create many to many
+mapping. As you can see in the diagram,
+child partition C2 isn't just a
+derivative of one parent. It actually
+contains the data from multiple pieces,
+from parent partitions like P1, P2, and
+P3. This creates a significant
+challenge for resilience. Which we call
+cascading recovery.
+So if we lose the node holding
+partition C2.
+The Spark driver actually cannot simply
+rerun one local task. To restore C2,
+Spark must fetch the relevant result
+from every parent partition across the
+cluster.
+If those parent partitions are no
+longer in memory, the failure cascades,
+forcing Spark to recomute all the
+parent partitions before it can, you
+know, even begin to fix C2.
+This leads to a major shuffle
+interruption. Shuffles are the most
+expensive part of a spark job, because
+they move data across the network.
+If a failure occurs mid shuffle, the
+system often has to re-execute the
+entire preceding stage to ensure the
+data being shuffled is consistent and
+complete.
+Looking at the recovery rule on the
+slide. You can see the visual
+representation of this complexity. To
+restore that one missing piece, see 2.
+We are tracing back through a tangled
+web of dependencies. Because wide
+dependency failures are so much more
+expensive than narrow ones, spark
+developers often use checkpointing to
+save the state of a shuffle to the disc.
+This breaks the lineage and provides a
+save point. Preventing a cascading
+failure from going all the way back to
+the start of the job.
+Understanding this complexity is a key
+to optimising your Spark applications.
+While lineage provides a safety net,
+knowing when a failure will be cheap
+versus expensive. This actually helps
+you design most or more robust
+pipelines. I'll see you in the next
+classes. Thank you so much. Happy
+learning till then.

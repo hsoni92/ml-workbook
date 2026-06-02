@@ -1,0 +1,56 @@
+Where does streaming inference make
+sense in practise? Here are some common
+examples.
+Real time anomaly or fraud detection.
+You might be watching a stream of
+transactions, or login attempts or
+system metrics as each event comes in.
+You use the model to decide, Is this
+suspicious? If yes, you trigger an
+alert, or an automated action.
+Clickstream behaviour Analytics. You
+ingest a stream of user events, page
+views, clicks, scrolls, interactions.
+Model can detect pattern, segment users,
+or compute real time features for
+personalizations, IOT and sensor data.
+Devices, machines or vehicles are
+sending reading continuously. You might
+predict failure, anomalies, or state
+transitions as data flows in. Lo and
+event analytics, security logs,
+application logs, infrastructure events,
+model can flag unusual pattern or
+correlate signals across multiple
+streams. The pattern in all of these,
+there is a continuous stream of event,
+and you care about reacting quickly as
+that stream evolves. Now let's connect
+streaming back to our metrics latency,
+throughput and cost. For a streaming
+system, same specific metrics become
+important.
+Event to action latency. How long does
+it take from the moment an event
+happens to the moment models prediction
+lead to some downstream action. This is
+like an end to end latency from event
+to reaction.
+Sustained throughput.
+How many events per second can we
+handle over long periods? We care not
+just about spikes, but about whether
+the pipeline can keep up with the
+stream continuously, lag and back
+pressure. If events are arriving faster
+than we can process them, we will see
+queues growing. That shows up as lag or
+backlog. A clear signal that we're
+falling behind, and of course cost.
+streaming jobs tend to be long running,
+often 24/7, so CPU, GPU usage, overtime,
+and memory footprint matters a lot. The
+goal in streaming is to keep lag low,
+maintain a stable pipeline under real
+traffic, and keep event to action
+latency within acceptable bounds.

@@ -1,0 +1,84 @@
+Welcome to Drift Data Quality and
+Alerting Basics. So far we have talked
+about why monitoring matters. In this
+video, we will zoom in on one of the
+biggest reasons model fails in
+production, that is called drift. You
+will learn the three main types of
+drift we care about some simple,
+practical way to detect them, and how
+drift connects to alerting and
+retraining. Think of this as your
+starter kit to for noticing when the
+model
+model's world starts changing. Drift is
+what happens when the world changes,
+but model doesn't. User adapt new
+behaviour, your product adds features,
+fraudsters adapt,
+or upstream data pipeline quietly
+change, even if your model's code and
+weight stays exactly the same. The
+input it sees and the label it's trying
+to predict can shift.
+If we don't watch for that, a model
+that was great at launch slowly becomes
+misaligned with reality, and we only
+notice once business impact is painful.
+When people say drift. They often mean
+different things. It helps to break it
+into three buckets. Covariant drift,
+your feature change distribution. Maybe
+be users are older or transaction sizes
+are bigger.
+Label drift. The target itself changes.
+The ratio of churners to non churners,
+or fraud to non fraud shifts.
+Concept drift. The underlying
+relationship between features and label
+changes. What used to be good signal is
+not anymore.
+These are related but not identical
+problems, and they often call for
+different reactions. So covariate drift
+is about.
+Inputs Maybe you launch in a new
+country and suddenly location features
+shift, prices increases, and the amount
+feature has a completely different
+scale.
+Or a data pipeline change introduces
+new categories or slightly different
+formatting. If you plot feature
+histogram for training versus recent
+production.
+They no longer line up. You also might
+see a lot more out of range values or
+previously unseen categories. Covariate
+drift often point to a real business
+change, or a data engineering change
+that we need to understand.
+The model might still be OK for a while.
+But this is a strong signal to pay
+attention. Label drift is when the
+target distribution changes. Maybe your
+churn rate doubles or fraud becomes
+much rarer because you have tightened
+onboarding. The model might still rank
+things OK, but business expectation
+around threshold, preseason, or recall
+will change. Concept drifts is even
+trickier, trickier.
+The mapping from features to label
+changes. Fraudster adapt new patterns.
+A product change alerts which behaviour
+leads to churn. Economic conditions
+change,
+what looks like a good borrower.
+Concept drifts typically shows up as
+our metrics on fresh data are getting
+worse, even though input don't look
+that different. Detecting it usually
+requires ground truth level and ongoing
+performance tracking.
+Thank you.

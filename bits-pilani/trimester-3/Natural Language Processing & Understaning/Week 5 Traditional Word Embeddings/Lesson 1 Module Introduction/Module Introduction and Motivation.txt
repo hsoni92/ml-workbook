@@ -1,0 +1,34 @@
+Welcome learners to the 5th module on
+traditional word embeddings.
+In this module, we will explore how
+word embeddings bridge the gap between
+linguistic text and mathematical
+computation by introducing. Fundamental
+vectorization techniques. You will
+learn to transform raw text into
+numerical features using one hot
+encoding, bag of words, TFIDF, and
+ngrams, effectively preparing data for
+machine learning algorithms while
+understanding the trade-offs between
+sparsity and semantic retention.
+But why do we need vectorization?
+Understand that NLP models are
+mathematical engines, they cannot read
+text like humans do, they only
+understand numbers, specifically zeros
+and ones.
+To feed text data into a model, we must
+translate the text into a numerical
+format that the machine can understand.
+This process is called vectorization or
+word embedding.
+We started with simple rule based
+approaches, such as rejects and
+linguistics, like stemming and
+lematization.
+Now we enter the era of statistical NLP,
+where we convert words into vectors to
+perform mathematical operations on them.
+That's all for this video. I'll see you
+in the next one. Thank you.

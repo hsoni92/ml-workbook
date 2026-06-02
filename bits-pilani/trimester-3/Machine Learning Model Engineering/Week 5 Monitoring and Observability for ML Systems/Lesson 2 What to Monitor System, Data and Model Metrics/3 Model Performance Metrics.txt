@@ -1,0 +1,46 @@
+All of those metrics depends on one
+thing, good logging.
+For each prediction, or at at least a
+sampled say subset, you want to log,
+request metadata. Time stamp, which
+model version and end point, plus a
+request ID.
+Input, or a privacy safe presentation
+of them, Feature value, and segment
+tags like country or product.
+Output, predicted score, and the final
+decision, after applying thresholds or
+business rules.
+When available, labels the outcome the
+actual outcome, even if it arrives
+later, and often latency.
+For that request.
+With that log, you can compute the
+system data prediction metrics we just
+discussed. By time window, by segment,
+or by model version.
+Let's turn this into a simple checklist
+you can use when putting a new model
+into production.
+System metrics, latency distribution.
+Error rates,
+CPU and memory for serving stack, data
+metrics, schemas and type checks,
+missing rates and basic stats.
+At least one drift measure for your
+most important features prediction and
+business metrics, model metrics on
+recent labelled data compared to a
+baseline, segment level breakdowns, or
+critical groups.
+And at least 1 or 2 business KPIs that
+tie the model to Real Impact.
+And underpinning all of this, logging
+enough context per prediction, so you
+can compute these metrics after the
+fact. With this in place, the
+monitoring piece we discussed in Topic
+3 and Topic 4.
+Drift detection and alert workflows
+have a solid foundations on build on.
+Thank you.

@@ -1,0 +1,37 @@
+Let's put a clear definition on this.
+Machine learning model engineering is
+everything needed to make models usable
+by other system and team reliable under
+real world condition. And scalable as
+traffic grows or grows down.
+Practically that means taking a trained
+model artefact, maybe. PKL or a PT file.
+A saved checkpoint.
+And turning it into a production grade
+service that's integrated, monitored,
+can be trusted by the rest of the
+organisation. When you hear model
+engineering in this course, think we're
+not talking about inventing the model
+ideas, we're talking about making it
+work in the real world. It's helpful to
+separate data science or research from
+model engineering.
+Even though in a small team, the same
+person might do both. On the data
+science research side, the focus is on
+exploring data, generating model,
+building prototypes in notebook,
+compare different approaches with
+experiments and metrics. However, on
+the model engineering side, the focus
+shifts to turning those prototypes into
+robust services, owning deployment,
+scaling, monitoring, making sure the
+model is integrated into real
+applications and workflow. You can
+think of it this way. Data science
+answers, what model should we use?
+Model engineering answers, how do we
+run this model safely in production?
+Every day.

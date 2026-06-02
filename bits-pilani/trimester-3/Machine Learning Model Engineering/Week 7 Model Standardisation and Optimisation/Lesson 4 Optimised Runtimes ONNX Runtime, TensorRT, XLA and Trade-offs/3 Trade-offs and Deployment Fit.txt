@@ -1,0 +1,63 @@
+Now let's talk about tradeoffs. One
+axis is probability versus hardware
+specific optimisation.
+The portable approach, such as using
+ONX plus OneNX runtime, give you one
+model format. One runtime that can run
+on different kind of hardwares. And a
+simpler story for standardising across
+teams. The trade-off is that you might
+not reach the absolute peak performance
+of every device. The hardware-specific
+approach, such as a Tensor RT for
+Nvidia GPUs or other vendor runtime,
+can deliver the best possible latency
+and throughput on that device, but at
+the cost of more configuration, more
+setup, and making your system less
+portable. A common strategy is start
+with a portable approach, measure
+performance, and then selectively adopt
+hardware specific runtime for the most
+critical service where every
+millisecond counts.
+Another important trade off is compile
+time versus run time.
+Some runtime, like TensorRT and XLA, do
+not do a lot of work up front. They
+compile or build an optimised engine.
+The tune kernels for the specific GPU
+or processor.
+This means your build step or
+deployment step take longer. But once
+the model is deployed, each inference
+request is faster. Other setup, such as
+running directly in framework with
+minimal optimisation, starts quickly
+but may have higher per request latency.
+The design question for you is,
+are we OK paying a larger one time
+compile time cost to save time on every
+single inference request?
+If you have a model that changes
+infrequently and serves a lot of
+traffic, the answer is often yes. Let's
+connect this back. To the whole module
+7 story.
+A typical production flow looks like
+this. You train a model in a framework
+such as Pytorch or Tensorflow. You
+optionally compress it using techniques
+like quantization, pruning or knowledge
+distillation.
+You export the resulting model into a
+standard format, such as ONNX. Then run
+the format using optimised run time.
+OneNX run time for general purpose
+deployment, Tensor RT for highly
+optimised inference on Nvidia GPUs, or
+XLA through Tensorflow or JAX. You can
+think of it in this way. The model
+format describes what model is. The
+runtime decides how it runs on the
+model.

@@ -1,0 +1,242 @@
+All right, learners. Welcome to this
+video where we will go through Google
+AI Studio, right? This is the platform
+where not only you can test the LLMs
+provided by Google Gemini, but also get
+your API key so that you can use Gemini
+models in your own applications, right?
+So let's go through Google AI Studio,
+right? So earlier when it began, Google
+AI Studio used to be just, you know,
+testing for the language capabilities.
+However, now Google has really expanded
+the capabilities of Google AI Studio.
+You can generate videos. You can
+generate. Images, you can also do white
+coding and build your own apps, right?
+However, we will stick to our use case
+of natural language generation, right?
+So let's get started. So let's go
+through the homepage, right? That was a
+quick video.
+You can try the models, wipe code
+applications, get your API keys, right,
+how we saw. So all the Google's AI
+models are present in Google AI Studio,
+be it language models or image models
+or video models, right?
+This is the build feature within Google
+AI Studio, which allows you to wipe
+code.
+And these are the monitoring
+capabilities of Google AI Studio so
+that you can monitor your API usage,
+right? Because these models often come
+with a cost.
+And then, of course, there is the SDK.
+Which is Gen AI from Google, right,
+which allows you to run Google Gemini
+LLMs in your code, right?
+OK. So let's get started now. On the
+top right, you will see this get
+started button. Click over here.
+Click on the email that you want to log
+in with, right?
+I will enter my password and we are in.
+Great. So this is the Google AI Studios
+playground, right? What this does is it
+gives you a chat interface very similar
+to the Gemini interface or the chat GBT
+interface, any LLM application that
+you're familiar with, right? So you can
+enter your prompt here.
+And just Hit control enter and it will
+send the prompt to the LLM and generate
+an output. So I entered, tell me a joke
+and the output is, why don't scientists
+trust atoms because they make up
+everything. OK, funny, yeah, funny
+enough, right. What this is, which says
+thoughts, is actually a chain of
+thoughts.
+Which basically shows you the steps
+that the LLM has taken to generate your
+application, right?
+So it was a simple step that they
+created crafting a dad joke. I'm
+working on a short punchy dad joke, da
+da yada y, right? If this would have
+been a
+complex prompt which required step by
+step thinking, you would have seen
+multiple different thoughts here, right.
+OK, great.
+Now, let me refresh this. So I will
+create a new chart.
+If you remember from our earlier
+discussion, single term versus multi-t
+conversations, right?
+So let's test that out. So, Who is the
+president of
+United States.
+So you see, the current president of
+the United States is Joe Biden. He is
+the forty-sixth president and assumed
+office.
+Right, 2 things here.
+It said Joe Biden. However, we all know
+that the current president is Donald
+Trump. The model responded with Joe
+Biden because at the cutoff date. So
+till the date which The model has been
+trained on, so that's the cutoff date,
+right? So by the cutoff date, I'm sure
+the data that the LLM was provided for
+training in that data, Joe Biden must
+have been the president of the United
+States right at that time, right? Now,
+let me ask another question.
+What is age?
+And it says Joe Biden is 81 years old.
+He was born on November 20, 1942, right?
+So when Let's expand this.
+So when I asked what is his age, I did
+not personally provide a context. Whose
+age do I want, right? However, in the
+courts you can see, calculate Biden's
+age, right? So what it has done is it
+has collected this prompt for the user
+query and the response.
+Which was passed while processing this
+query, right? So the LM had context. So
+this is a multi-tone conversation,
+right? As far as our scope for this
+course goes, we will focus more on
+single term conversation. OK, so this
+was a quick overview of single term
+versus multi-term conversations. Let me
+refresh this.
+Like Now, these, these cards show you
+what are the features of Google AI
+Studio. We are in playground. Let's see
+what's there on the right, right? So
+here you can select the model that you
+want. Currently, Gemini 3 flash preview
+has been selected. You can select the
+newer models or the older models or the
+lighter models, etc.
+System instructions. Now this is the
+same as system prompt. You can provide
+a system instruction that the LLM will
+always have to follow while generating
+a response. So let's see.
+Poet, right? Let's create a new system
+of instruction. Always respond. In a
+limb.
+Anything random, right?
+OK. So instructions are same. Let me
+close this.
+Essays always respond in a poem.
+It says no API key. Right now, I've not
+generated an API key and not provided
+it. Although if I want to use some of
+the modern features of AI studio, it
+would require an API key, and there
+would be some minor costs involved,
+right?
+Now, temperature. We saw in one of the
+previous videos what temperature is. It
+controls the creativity of the response.
+Currently, it's set to 1, and it ranges
+from 0 to.
+2, right? Although I recommend that you
+stay between 0 and 1, right? So let's
+stay somewhere in the middle 0.65.
+Media resolution. So if you generate
+some media, which is images and videos,
+you can select the resolution, right?
+However, this is not useful for us
+right now. Thinking level. Thinking
+level is high. It just means the
+reasoning level. So if we ask very um
+puzzle sort of intelligent questions,
+how much reasoning level do we want to
+assign to the model? It selects that.
+Structured outputs, so we saw one
+example of Jason output, right? It this
+toggle controls that code execution.
+Do we want it to also execute the code
+that it generates, right?
+Let's deselect it for now. Function
+calling, these are the tools that you
+can attach to. Your LLM.
+So for example, if you want to add um
+tool that fetches whether in real time,
+you can add that function or or tool,
+function or tool, same thing, right?
+Grounding with Google Search, right? So
+do you want the response to be grounded
+with Google Search? So we saw
+groundedness or faithfulness as a
+metric, right? This is the same thing.
+What it will do is it will also go and
+search Google. And then generate a
+response. Grounding with Google Maps.
+So the same thing, there is a location
+that you want to be verified with
+Google Maps, you can select this URL
+context. So if you want to browse the
+URL while generating the response. All
+right. Safety settings under advanced
+settings you see safety settings. What
+are these? These are essentially the
+guard rails that you would want to or
+may not want to, depending on your use
+case, set on your LLM application. So
+your response or the query, you can set
+it on both. So do you want harassment
+to be turned off or blocked, right? You
+can select that. Same for hate and for
+other.
+Safety settings. Now you can set output
+length and stop sequence, right? The
+important one is top P. We saw top P
+and temperature, right? Ways to control
+the output. So top P is currently set
+to 0.95, which is a decent enough
+setting, right? None. This was on the
+playground of Google AI Studio. There
+are other features as well which we
+briefly discussed earlier. Build, where
+you can wipe code applications,
+dashboard where you can see the
+activity.
+Documentation, very important.
+So documentation gives you all the
+necessary details on how you can use
+these models, what are the features of
+these models, and how you can also
+build your use cases in your scripting
+language, say Python or JavaScript, etc.
+So if you're using Python, you can just
+simply copy this code and execute it in
+your notebook or Python file.
+I highly recommend that you go through
+the documentation.
+Right now these are some of the
+settings if you want to search
+something, if you want to see what's
+the latest launches, get API keys very
+important. This we will explore in the
+next video.
+Some settings and your username, right,
+with which you have logged in.
+All right, learners, so this was a
+quick walkthrough of Google AI Studio.
+I hope you've enjoyed this. And this is
+a cue for you to go out and test it for
+yourself, right? So I'll see you in the
+next video where we will generate an
+API key to start using, to start using
+the Gemini elements, right?
+Thank you.

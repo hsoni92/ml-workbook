@@ -1,0 +1,122 @@
+OK. So in our last script, we created
+uh an automated uh fairness check that
+uh prints a pass or fail, right? Uh,
+status to console, right? So, this is
+great for CICD pipeline, but, uh, what
+happens a month from now when, uh, an
+auditor or a regulator or even our team,
+uh, ask, right? What was the fairness
+evaluation for model version 2.1, right?
+And uh why did we decide to ship it? So
+let's say these kind of questions uh
+come up later. So a console log like
+this from a past pipeline run is gone.
+So it's not a system of record, right?
+Because we are simply printing it in a
+terminal.
+So, for governance or for compliance
+and for uh long-term monitoring, we
+need to create a persistent audit trail,
+right? We need to log our fairness
+evaluation result in a structured and
+uh in a curable format, right? So this
+allows us to track fairness metrics
+across uh different model versions,
+right? And uh different data sets over
+time. So, in this script, uh,
+We'll take the result of our fairness
+check and log them to a structure uh
+JSNL file, and uh we'll create a simple
+but effective uh audit log. So let's
+open our next uh script that is uh
+logginfairness.
+BY
+OK.
+Uh, so here, the goal is to capture all
+the context surrounding our fairness
+evaluation in a single, uh, structured
+record. OK. So here, first, we define,
+uh, some crucial, uh, metadata. Like,
+uh, model version, then, uh, data
+version, exa uh, to know, uh, exactly
+which data set, uh, this evaluation was,
+uh, run against, right? And then, uh,
+the time stamp. So this metadata is
+what allow us to find and, uh,
+interpret, uh, this record in the
+future.
+Right? And next, uh, uh, can we, uh, do
+the same stuff, load the model, uh, do
+the prediction, um, uh, execute the
+metrics, right? And then, uh, we create
+the fairness, uh, record dictionary. So
+this is our structured log entry, and,
+uh, look at what we have included over
+here. All metadata just be defined, and
+the group metrics.
+Uh, here, which is the, which is the
+full breakdown of performance for each
+segment, right? And we are not just
+logging the final decision, we are
+logging the raw data that, uh, led to
+it. So, this is, uh, essential for deep
+dive uh investigation, OK? And by
+packaging everything into a one
+dictionary, We create a self-contained
+comprehensive record of the entire, uh,
+fairness, uh, evaluation event, OK? So
+now we have our structure record. Uh,
+we need to save it, right? So we could
+use a database or dedicated logging
+service, but a simple and surprisingly
+powerful pattern is to use a JSONL file,
+that is uh JSON.
+Lines file. OK. So JNL file with uh Uh,
+extension.
+JSONL,
+which we have defined over here.
+Uh, is a text file where each line is a
+valid, uh, self-contained JSON object.
+So, this format is fantastic for
+logging because it's, uh, easy to
+append, uh, and we just open the file,
+uh, in append model and, uh, uh, write
+a new lab. So it's also highly scalable
+as we can process it by Uh, line by
+line without loading the entire file
+into memory. So, which is great for, uh,
+big data tool. OK. So, the script
+creates a log directory. Uh, if it
+doesn't exist, open the fairness audit
+log. JNL in append mode and write our
+fairness record as a single line of
+JSON, OK? So, let's, uh, run this
+script.
+Again, clear it.
+510.
+L3 logging fetus.py.
+The script prints the record. It just
+created and confirms it was. Appended
+to the log file, right? If we were to
+run this script again for a new version
+of model, it would simply add a new
+line to the file, right? So, uh, let's
+look at the file which
+it has generated.
+Inside logs we have.
+Fairness audit log, so you can see all
+the metadata we have saved over here
+with the detailed uh Uh,
+Metric snapshot, right?
+So, over time, this file become a
+complete uh chronicle history of our
+model fairness evaluation, right? So we
+can easily pair it with any programming
+language or load it into a data frame
+for uh Trend analysis for answering a
+question like is our model fairness on
+the recall metrics getting better or
+worse over time? This simple log file
+is the first step toward turning
+fairness from a one-time check-in to a
+continuous monitoring process.

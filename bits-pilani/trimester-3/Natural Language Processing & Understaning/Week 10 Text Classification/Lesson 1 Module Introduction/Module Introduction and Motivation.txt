@@ -1,0 +1,45 @@
+Welcome back, learners, to the 10th
+module of your course on text
+classification. It is a very popular
+and highly implemented real world
+application of natural language
+processing. We live in an era of
+unstructured text. Every minute,
+millions of emails, tweets, product
+reviews, videos, support tickets, and
+so on are generated. These generated
+data need to be classified for
+streamlining operations. For example,
+the spam or not in your Gmail folders.
+The manual approach would be that there
+will be a human reading every email to
+decide if it's a spam or not spam. And
+this is impossible to achieve at scale.
+The automated approach is achieved with
+text classification. X-classification
+is the process of using AI and NLP
+techniques to automatically assign
+predefined categories or labels.
+To tax documents.
+X-classification is one of the most
+widely used NLP applications in the
+industry because it directly automates
+workflows and generates tremendous
+business value. There are different
+versions of text classification that
+you can see, for example, spam
+detection.
+Language identification. Sometimes we
+open a web page that's in a different
+language and we get a prompt to
+translate it, right?
+Then topic labelling or assigning the
+right theme. Topics are also called
+theme.
+Intent recognition, deciding if a user
+wants to book a flight or cancel a
+reservation can be one example.
+Sentiment analysis. Understanding the
+overall sentiment of consumers by
+classifying their product reviews,
+tweets, etc.

@@ -1,0 +1,14 @@
+Welcome back, learners. Now let's
+quickly go over some of the many
+applications of the B BERT model. Some
+of the applications include text
+classification, be it sentiment
+analysis or spam detection, or anything
+else.
+Named entity recognition. Basically
+where we extract the right entities
+from the sentences.
+Question answering and natural language
+inference. That's it for this video,
+and I'll see you in the next one. Thank
+you.

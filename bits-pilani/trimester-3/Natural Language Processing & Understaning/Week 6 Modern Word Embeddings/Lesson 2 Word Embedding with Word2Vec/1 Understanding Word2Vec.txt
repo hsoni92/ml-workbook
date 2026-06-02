@@ -1,0 +1,44 @@
+Welcome back learners. In this lesson,
+we will go through word embeddings with
+word to work.
+Word to wake, a shot for word.
+To vector. Is a very sophisticated
+neural network architecture,
+pre-trained for generating word
+embeddings. To predict the missing word
+efficiently, the neural network learns
+to compress the word meanings into a
+smaller, dense vector represented by
+the hidden layers of the neural network.
+It learns the word vectors by training
+a shallow neural network. There are two
+architectures involved. C bow and Skip
+gramme.
+Before understanding Sibao and Skip Gm.
+For example, consider the sentence, the
+cat.
+Sat
+On
+Matt,
+Imagine that the model is trained on
+this sentence, right?
+So what is CBO now? CIBAO stands for
+continuous bag of words. It predicts
+the target word based on the context
+words, for example, if the input is the
+cat on mat, which will look like.
+The cat.
+Dash on. Matt.
+Due to its training on this sentence.
+The output will be?
+Set.
+Right? It's like a fill in the blanks
+game that these models are playing. Now
+what is Skipgram? It's the opposite of
+CB. It predicts the context words based
+on the target word. So for example, if
+the input is set.
+It will output the context words, the
+cat on mat.
+That's all for this video, and I'll see
+you in the next one. Thank you.

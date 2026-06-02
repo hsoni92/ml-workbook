@@ -1,0 +1,66 @@
+Welcome to Module 11, Topic 2. Data
+privacy in Machine Learning. Most real
+machine learning systems run on
+personal data. That means privacy is
+not optional or nice to have. It's a
+nonfunctional requirement, just like
+latency or up time. In this video, we
+will clarify what counts as personal
+identifiable information and sensitive
+attributes, talk about data
+minimization and anonymisation.
+And see how access control and
+governance fits in. A helpful mental
+model is, you are borrowing users' data,
+and provide value, not owning it
+outright.
+We usually think about nonfunctional
+requirements like latency, uptime, and
+cost. Privacy sits right next to those.
+For any machine learning system, you
+should be able to answer, what data are
+we collecting? How long do we keep it?
+Who can access it, and for what purpose?
+These answers save your features, data
+pipeline, logging and monitoring. So
+privacy is not something you bolt on
+later. You consider it while you design
+the system.
+Let's clarify what we're protecting.
+PII, or Personally Identifiable
+Information.
+Includes direct identifiers like names,
+emails, phone numbers, government IDs,
+and exact addresses. It also includes
+quasi identifiers such as date of birth,
+zip code, IP addresses, or device IDs,
+things that might identify someone when
+combinations.
+We also have sensitive attributes
+health data, financial information,
+biometric, and often things like race,
+religion, political views, or sexual
+orientation. In machine learning, these
+often show up as features or even
+labels, which makes them powerful but
+also high risk. They need spatial
+handling.
+PII is not just obvious fields labelled
+name or email. It often hides inside
+features. Sometimes we directly use
+identifiers like user ID or email
+driven features. Other times we use
+very detailed location history,
+transaction logs, or health
+measurements. These may not look like
+PII, but in practise they can be highly
+identifying and sensitive.
+Even a combination of harmless fields,
+like very granular time stamps, plus
+location, plus a few demographics, can
+pinpoint individuals. As a model
+engineer, keep asking.
+Could this feature help identify a
+person or expose something sensitive
+about them? If the answer is yes, treat
+it with extra care. Thank you.

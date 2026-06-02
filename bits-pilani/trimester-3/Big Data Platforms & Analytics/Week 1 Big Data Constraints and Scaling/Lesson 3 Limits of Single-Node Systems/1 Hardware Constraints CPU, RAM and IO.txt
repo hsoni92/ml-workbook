@@ -1,0 +1,63 @@
+Welcome to lesson 3. So far we have
+talked about the 3 V's of big data
+volume, velocity, and variety, and how
+they force us to rethink our systems.
+You might be thinking, what's up, why
+can't I just buy the most expensive,
+powerful computer on the market? If my
+data grows, I will just add more RAM
+and a faster CPU. It sounds logical,
+right? But today, we're going to look
+at the wall or the barrier. We are
+going to see why even the most
+expensive single computers eventually
+hit a physical limit that they just
+cannot cross. First, let's talk about
+the CPU, the brain of the computer. For
+decades, CPUs got faster and faster
+every year, but around 2005, something
+happened. We hit a physical limit. To
+make a CPU faster, you have to pack
+more transistors closer together. But
+when they get too close, they generate
+so much heat that the chip would
+literally melt. We also hit the speed
+of light limit. Signals can only travel
+across a chip so fast. Let's look at an
+industry example. High frequency
+trading in the world of stock trading
+companies used to spend millions to get
+a CPU that is 0.1% faster, but today
+they have realised they can't have one
+brain work any faster. Instead, they
+have to use many brains working
+together at the same time. One person
+can only read a book so fast, but 100
+people can read 100 pages
+simultaneously. And the next is RAM or
+memory. This is your computer's working
+desk. As you add more RAM to a single
+machine, two things happen. First, the
+cost doesn't just go up, it explodes.
+It is exponential. Like 1 TB RAM stick
+is significantly more than twice the
+price of 512 GB1.
+Second, we hit a memory wall.
+Even if you have 10 TB of RAM, the path
+between CPU and the RAM is like a
+narrow one lane road. No matter how
+much data is on the desk, the brain can
+grab it so fast. Finally, we have IO
+input output, which is how fast data
+moves from the disc or the network into
+the computer. This is usually the
+slowest part. Imagine a massive library,
+which is your hard drive, and a tiny
+window where you check out books like
+your o port. Even if you have the
+world's fastest reader. If the
+librarian can only hand out one book
+per minute, the system is slow. This is
+all about barrier in the hardware. I'll
+see you in the next lesson. Till then,
+happy learning.

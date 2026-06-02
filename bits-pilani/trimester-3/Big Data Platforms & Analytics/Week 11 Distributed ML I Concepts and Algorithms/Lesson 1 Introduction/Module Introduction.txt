@@ -1,0 +1,66 @@
+Hello everyone, and welcome to module
+11. Distributed machine learning. In
+the previous modules, we have explored
+a wide variety of sophisticated machine
+learning models from deep neural
+networks to advanced classifiers.
+However, up until now, we have largely
+operated under the assumption that our
+data and our models could fit
+comfortably on a single machine or on a
+single computer node. In the real world,
+we are often dealing with big data
+datasets. They're so massive that they
+cannot fit on one disc. And models so
+complex, they exceed the memory of even
+the most powerful GPUs. This is where
+distributed machine learning comes in.
+In this module, Which is called
+concepts and algorithms, we are going
+to explore the fundamental principles
+of scaling machine learning beyond a
+single node, how we break apart these
+massive tasks and coordinate multiple
+machines to work together as a single
+powerful unit. Before we dive into the
+technical details, let's take a look at
+our road map for these modules. By the
+end of this module, you'll be able to
+master 4 key areas. First, we will
+identify the primary challenges in
+scaling machine learning. Scaling isn't
+just about adding more computers, it
+introduces significant overhead in
+terms of communication and data
+movement. That can actually slow you
+down if not managed correctly. Second,
+we will differentiate between data
+parallelism and model parallelism.
+There are 2 primary blueprints for
+distribution.
+Do we split the data across machines,
+or do we split the model itself? You'll
+exactly learn. When and why to use each
+strategy. Third, we will explain the
+mechanics of distributed stochastic
+gradient descent, or SGD. SGD is the
+heartbeat of most modern ML training.
+We'll look at how the math of
+optimisation changes when the gradients
+are being calculated across a cluster
+of different workers. Finally, we will
+evaluate different gradient aggregation
+strategies. Once those workers have
+calculated their results, how do we
+bring them back together? We'll discuss
+synchronous versus asynchronous methods.
+And how those choices impact your
+model's final performance and trading
+speed. There's a lot to cover, so let's
+get started by looking at the specific
+challenges we face when we try to scale
+up. In our next video. We'll jump right
+into part one and explore the
+communication bottleneck, the number
+one hurdle in distributed systems. I'll
+see you in the next lesson.

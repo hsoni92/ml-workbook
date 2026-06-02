@@ -1,0 +1,25 @@
+To recap this video. We revisited what
+feature engineering looks like in
+notebook. We saw how production
+introduces new constraints around
+consistency, performance, and fairness.
+We defined training serving SKU and
+walked through a simple example where a
+30 day feature turns into 7 day feature
+in production. In the next theory video,
+topic 2, we will talk about online
+versus offline features, and what a
+feature store actually is. After that,
+we will look at real tool like Feast,
+Tikon and Hopswork and how feature
+stores helps with reusability, lineage
+and governance. In the labs, we will
+build a tiny feature store directly in
+notebook using pandas and a Python
+directory or dictionary.
+And you will see training serving askew
+in action. And how consistent feature
+definition avoid it. Keep this notion
+of skew in mind. It's one of the
+biggest hidden problem in production
+machine learning. Thank you.

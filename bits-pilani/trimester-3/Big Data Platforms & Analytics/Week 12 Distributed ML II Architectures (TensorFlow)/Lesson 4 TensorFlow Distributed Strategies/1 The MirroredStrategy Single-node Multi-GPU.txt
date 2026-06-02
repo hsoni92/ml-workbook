@@ -1,0 +1,50 @@
+So Welcome to Lesson 4. Up to this
+point, we have discussed the high level
+theory of architectures and training
+modes. Now we are going to look at how
+Tensorflow actually implements these
+concepts through TF Distribute strategy
+API.
+We'll start with the most common entry
+point of scaling, which is the mirrored
+strategy.
+Mirror strategy is designed
+specifically for single nodes multi GPU
+setups. Imagine you have a single
+powerful workstation, or a cloud
+instance, which is equipped with 2 or 4
+or 8 Nvidia GPUs. This strategy allows
+you to use all of them synchronously.
+The named mirrored comes from how
+tensor flow handles model variables.
+When you use this strategy, every GPU,
+or just replica gets its own identical
+copy of model variables. So these
+variables are literally mirrored across
+all the devices.
+Here's how the execution flow works.
+Each GPU receives a different portion
+of the data batch. Each GPU performs a
+forward and backward pass to calculate
+its own gradients. Then Tensorflow uses
+an algorithm to aggregate those
+gradients across all GPUs. Once
+aggregated, updated value is applied
+back to all the mirrored variables
+simultaneously. This ensures that the
+model stays perfectly in sync across
+every device on the machine. Mirrord
+strategy is incredibly efficient,
+because it typically uses high speed on
+device communication protocols like
+Nvidia's NCCL. It is a gold standard
+for scaling on a single workstation
+with 2 to 8 GPUs. It is the easiest way
+to get a significant speed up with
+minimal changes to your code.
+In our next video, We'll see what
+happens when a single machine isn't
+enough. And we need to scale out to an
+entire cluster of workers, using multi
+worker mirror strategy. Till then,
+happy learning. Thank you so much.

@@ -1,0 +1,71 @@
+Welcome back. In our last few lessons,
+we explored the physical and economic
+walls of single node systems. We
+learned that even the most expensive
+supercomputer eventually hits a ceiling
+in CPU speed, RAM capacity, and disc
+input outputs. Today we are diving into
+the solution that defines the big data
+era. Which is commodity hardware
+clusters. A cluster is simply a
+collection of interconnected,
+independent computers, which we call
+nodes. That work together to act like a
+single cohesive system. If vertical
+scaling was about building a stronger
+individual, cluster computing is about
+the impact of teamwork and horizontal
+scaling. Let's look at the term
+commodity hardware. In the tech world,
+this doesn't mean cheap or poor quality.
+It means standardised infrastructure.
+These are high quality off the shelf
+servers that are widely available in
+every data centre. Using commodity
+hardware. Provides two major business
+advantages.
+1, cost efficiency. You get the best
+performance per dollar by using many
+standard units instead of one
+specialised proprietary machine. And
+then rapid replacement because the
+hardware is standard. If a node breaks,
+we don't wait for weeks for custom
+parts. We simply swap it for another
+identical unit and keep moving. This
+standardisation is what allows clusters
+to scale indefinitely without
+specialised budgets. How do we manage
+100 or 1000 separate computers so they
+don't descend into chaos? We use a
+centralised master worker model. The
+master node. Think of this as the brain
+or the manager. It handles the mapping
+of tasks and maintains the metadata. It
+knows where everything is, but doesn't
+do the heavy lifting. And then, the
+worker notes, these are the muscle.
+They are distributed across the cluster
+and are responsible for the actual
+storage and execution of compute tasks.
+This division of labour allows us to
+process massive data sets in parallel,
+achieving speeds that a single machine
+could never match.
+Finally, we must address the 2 biggest
+challenges of using many small machines.
+Reliability and the network. Because we
+expect hardware to fail, we build self
+healing resilience directly into the
+software. Typically we replicate data 3
+times across nodes to ensure 24/7
+availability. We also maximise
+throughput by using data locally.
+This means instead of moving massive
+amounts of data across a slow network,
+what we call the network tags, we move
+the processing logic to the data.
+Let's take a closer look at the
+economics of the commodity clusters in
+our next segment. Thank you so much.
+Happy learning.

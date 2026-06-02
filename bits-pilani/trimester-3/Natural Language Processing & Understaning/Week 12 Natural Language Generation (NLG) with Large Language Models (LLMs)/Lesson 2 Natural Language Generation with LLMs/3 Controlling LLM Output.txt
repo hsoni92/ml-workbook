@@ -1,0 +1,156 @@
+All right, learners, let's now see how
+we can control LLM output. You might
+have observed that the same LLM or same
+model produces different text for the
+same input, so you might ask the same
+question, but it may have different
+answers at different times.
+This happens because LLMs generate text
+by sampling from probabilities. While
+LLMs essentially are black boxes and we
+cannot control most of the internal
+parameters, however, we can control the
+output probabilities in some way using
+decoding strategies that are provided
+by the LLM. The two most popular
+decoding strategies are. Top K and Top
+P.
+So let's go over top K sampling first.
+Top K sampling considers only the top K
+most probable tokens for generating an
+output. It renormalizes probabilities
+within the subset and samples the next
+token from this reduced set.
+Which means small k will have a more
+focused and conservative output, and
+large k will have a more diverse and
+creative output. Example, K equals 1
+will have a highly conservative output,
+which is also called a greedy decoding.
+Whereas K equals 50 will have a very
+creative, but at the same time, a
+riskier output.
+Top key gives explicit control over
+output diversity. To understand this
+further, let's consider an example. Are
+very popular, the cat sat on the.
+Whatever, right, the LLM is now tasked
+to fill in this blank to generate the
+next token based on the previous tokens.
+Now to generate this, the LLM might
+receive multiple different tokens based
+on their probability.
+So it could be mat, it could be table,
+it could be desk.
+It could be 3.
+Etc. right? All of these tokens have
+their own probabilities. So for example,
+P1, P2, P3, P4. Now, based on the
+highest probability, The LLM will
+produce the next token. So for example,
+if P2 in this case has the highest
+probability, more than P1, P3, P4, so
+on, it will produce.
+This token table, right? But how we can
+control how many tokens to consider
+from. Is top OK.
+So if I decide
+Top K equals.
+2, right, so it will only consider the
+two tokens with the topmost probability.
+So it could be, for example, P1 and P2.
+If they have the topmost probability,
+in this case it will consider only mat
+and table and choose between mat and
+table as the next token, right? So this
+is your top cake. Therefore, top K
+gives explicit control over output
+diversity.
+Now let's understand top P, or nuclear
+sampling. Top P is more widely used in
+industrial applications. So top P
+sampling selects the smallest set of
+tokens whose cumulative probability. Is
+greater than or equal to p, right, so
+it depends on cumulative probability
+rather than number of tokens. The key
+idea here is that the size of the
+candidate set adapts dynamically based
+on the probability that we've set.
+Which makes it more flexible than a
+fixed K or top K decoding sampling
+technique. So a low P like 0.7 will
+have a more focused and safe generation
+of natural language, and high top P
+value like 0.95 will have more diverse
+and expressive value. As we understood,
+top P is widely used in modern NLG
+systems. To understand this further,
+let's consider the same example. The
+cat sat on the, this is the token to be
+produced. For example, the most highly
+probable tokens for this are mat. Table
+Floor.
+Desk.
+3
+Right?
+So Matt has probability P1. Similarly,
+P2, P3, P4, P5, and so on, right? So
+suppose we set top P equals any number,
+for example, 0.5.
+The LLM will get only the set of tokens
+whose cumulative probability is equal
+to or less than 0.5. So for example,
+Example P1 plus P2 + P3 equals 0.45,
+then these three tokens will be
+available. And if P1 plus P2 plus P3
+plus P4 is 0.65, then this entire set
+will not be available, right, will not
+be available because we've restricted
+the top cumulative probability to 0.5.
+Right, I hope this makes much more
+sense.
+Finally, let's understand one more
+parameter, not a sampling technique,
+but a very important hyperparameter
+called temperature. Temperature is a
+hyperparameter that controls more the
+randomness, more the creativity.
+So more the temperature.
+Will lead to more randomness.
+Which will lead to more creativity.
+Temperature of an LLM usually ranges
+from 0 to 1. However, there's an
+exception we will discuss.
+Low temperature, for example, 0.0 to
+0.3.
+will have lower creativity and more
+deterministic responses, so the model
+becomes focused, deterministic, and
+highly conservative. You must use low
+temperature values for coding, data
+extraction, and factual Q&A kind of
+applications. Essentially in any
+application where you do not want high
+random probabilistic responses.
+At the same time, high temperature
+values like 0.7 to 1. Here the model
+becomes creative, random and highly
+diverse. You can use these temperature
+values for brainstorming poetry or any
+creative writing tasks.
+Now the caveat here is that some LLMs
+also allow you to go beyond one for
+temperature settings, and when you do
+that, You can go up to 2, so it will
+range from 0 to 2. So 0 to 1 will
+behave as you expect it to behave, but
+once you go beyond 1. You will have
+absolute nonsensical.
+Responses.
+The LLM will lose all control.
+And, and this is why it is.
+Not recommended.
+I hope this made sense So that's all
+for this lesson, and I'll see you in
+the next one. Thank you.

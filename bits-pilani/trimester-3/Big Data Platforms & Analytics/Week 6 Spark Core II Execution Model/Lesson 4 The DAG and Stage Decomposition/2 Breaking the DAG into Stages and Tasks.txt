@@ -1,0 +1,65 @@
+So in our previous video, we looked at
+how the dag is constructed. Now let's
+look at the tangible results of that
+construction. On the slide, we see a
+head to head performance comparison
+between lazy versus eager execution. In
+an eager system where operations happen
+step by step, you often see runtimes in
+the hundreds of seconds. This is due to
+high input output overhead. Each step
+actually writes its results to the disc
+before moving to the next. But Sparks'
+lazy approach, however, uses pipelining
+by grouping. Information into a single
+stage, Spark can cut that runtime down
+significantly. In this example, from
+100 seconds down to 30 seconds, this is
+represented by the speed of factor
+formula that you see on the slide,
+where performance is optimised by
+minimising the movement of data. To
+master this model, you need to know
+exactly how different operations behave
+within the DAG. In the next slide
+provides a definitive operation summary.
+We can categorise every. Per command
+into one of the three types. First, we
+have narrow transformations such as map
+and philtre. These are lazy, meaning
+they are recorded but not executed
+immediately. Their impact is high
+efficiency. They are pipelined into the
+current stage, running in parallel
+across your partitions without ever
+needing to touch the network, right?
+Next are the wide dependencies like
+reduce by key and join. These are also
+lazy, but they have a much bigger
+impact on your DAGG. These operations
+trigger a shuffle which creates a new
+stage boundary. When Spark sees these,
+it knows it must stop the pipeline,
+redistribute the data across the
+cluster based on the keys, and then
+start a fresh stage of processing. And
+finally, we have actions such as count,
+collect, or save. Unlike
+transformations, these are immediate.
+An action is the go signal. It tells
+Spark to take the entire DA we have
+been discussing, optimise it, break it
+into stages, and tasks, and execute it
+across the cluster right now. By
+understanding this hierarchy from
+single map operations to complex
+shuffles, and finally the actions, you
+can design Spark jobs that are not only
+functional but highly performant. In
+our final lesson of this module, we'll
+put together all this with a coding
+walkthrough, tracing a single Spark job
+from the first line of code all the way
+down to the individual task. I'll see
+you in the next class. Till then, happy
+learning. Thank you so much.

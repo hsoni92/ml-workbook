@@ -1,0 +1,57 @@
+In our last video, we looked at Apache
+Kafka as a backbone that stores and
+delivers data.
+But storage is only half of the battle.
+To drive value, we need a processing
+engine. That can transform those raw
+events into intelligence.
+This is where Apache storm comes in.
+We introduce the core architecture of
+Storm, unlike Hadoop, which runs jobs
+that eventually finish. Storm runs
+topologies. A topology is a permanent
+network of the processing logic that
+runs until you manually kill it. This
+makes it ideal for the unbounded data
+that we have been discussing. There are
+3 key architectural concepts on this
+particular slide that you must
+understand. Spouts and bolts, these are
+the building blocks of any storm
+application. Spouts are the sources of
+the stream. Usually a spout will read
+directly from the Kafka topics we
+discussed in the previous video and
+emit them into the topology. Bolts are
+where the actual processing happens. A
+bolt can philtre data, aggregate it,
+join it with a database, or even talk
+to a machine learning model. Your
+distributed dag. Storm organises these
+spouts and bolts into a directed
+acyclic graph or dag. This graph
+defines exactly how data flows from the
+point of ingestion, which is the spout,
+through various stages of
+transformations, which are the bolts,
+to the final output, high throughput,
+and low latency. So this is the primary
+reason why companies choose storm. It
+is designed to process millions of
+pupils per second. Across a cluster
+with subsecond response times, often in
+the range of milliseconds, this ultra
+low latency is what makes storm a
+preferred choice for high frequency
+trading or real-time network monitoring.
+When you combine Kafka's reliable
+storage with STOM's high velocity
+processing, you create a robust
+pipeline, capable of handling the most
+demanding real-time intelligence task.
+We have now covered the primary
+paradigms.
+Use cases and architectures of stream
+processing.
+I'll see you in the final video of this
+module.

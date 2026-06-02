@@ -1,0 +1,97 @@
+Welcome back, learners, to this lesson
+on vanishing gradient problem.
+We as humans are excellent at
+maintaining context over long periods.
+Imagine this example, right? A big
+paragraph that starts with, I grew up
+in France, followed by multiple
+different sentences and paragraphs, and
+in the end says, I speak fluent.
+What should be naturally the right
+answer? French, right?
+Why? Because the paragraph started with,
+I grew up in France, so it's natural
+for the person to be fluent in French,
+right? To predict the word French, the
+model needs to remember the word France
+from way back in the sequence. While it
+is very easy for humans to do that, but
+RNNs seemingly fail at that. Let's look
+at why.
+In theory, RNN should be able to handle
+this. We saw that it handles memory,
+right? If you remember HT 1.
+RNNs in practise fail miserably.
+They're great at reading the context,
+for example, the clouds are in the sky,
+but terrible at long-term context, for
+the example that we saw in the previous
+slide, right?
+So what's the reason for this, you may
+ask? The main culprit here is back
+propagation through time, right? So
+back propagation that starts from the
+latest word to the first word. So when
+we train a neural network, we calculate
+the error or loss at the output and
+propagate it backward to update the
+weights, which is back propagation. In
+an RNN, this error must travel
+backwards through time, from the last
+word to the first word.
+Now, as per the chain rule, to
+calculate the gradient of an early word,
+we multiply the gradients of all
+subsequent steps.
+Now the trap here is that if the weight
+matrix. Has value smaller than one.
+Example. 9.
+Multiplying it repeatedly.
+Causes the result to shrink towards
+zero. So 0.9 into 0.9 into 0.9 into 0.9,
+say 100 times, would lead to a number
+that's 0.000001, right? Which is almost
+zero.
+This almost 0 leads to the vanishing
+gradient effect, which means the
+gradient becomes 0.
+And when the gradient becomes zero, the
+signal dies.
+So the gradient. Becomes so small that
+the weights at the beginning of the
+sentence stop updating.
+And the RNN effectively stops learning
+from distant past. It only remembers
+the last few words, which causes it the
+amnesia. Now the natural follow-up
+question should be what if the weights
+are not less than one and they're
+greater than one. In that case, the
+gradients can grow exponentially.
+So you can imagine, 1.1 into 1.1 into
+1.1, say 100 times, can become an
+exorbitantly large number.
+The consequence, the model weights
+become Nan, or not a number, and then
+the training crashes. The solution
+This is easily fixed with gradient
+clipping. Capping the maximum value.
+Vanishing gradients, however, require a
+smarter architecture to overcome this,
+like the LSTMs, which we will look at
+going forward. Now imagine whispering a
+message to a person who whispers it to
+the next and that person to the next
+and that to the next. What Vanishing
+gradient will look like is that the
+whisper gets quieter and quieter until
+the 10th person hears nothing.
+The exploding gradient will look like
+the whisper getting louder and louder
+until the 10th person is screamed at.
+The solution is giving the people a
+walkie talkie, or a cell state, like in
+the LSTMs, to pass the message clearly
+without distortion.
+And that's it for this video, and I'll
+see you in the next one. Thank you.

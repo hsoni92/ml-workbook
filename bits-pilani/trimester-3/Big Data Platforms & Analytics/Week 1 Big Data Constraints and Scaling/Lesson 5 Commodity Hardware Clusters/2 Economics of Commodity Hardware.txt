@@ -1,0 +1,68 @@
+In our last video, we looked at the
+architecture of a cluster. The master
+and the worker nods. But to truly
+understand why the industry shifted to
+this model, we have to look at the why
+from a business perspective. Why do
+companies like Google or Amazon choose
+thousands of standard PCs over a single
+high-end supercomputer? The answer lies
+in the economics of commodity hardware.
+Today we are going to look at how
+standardised infrastructure provides
+the cost efficiency and resilience
+required to scale indefinitely.
+The most important metric in the big
+data isn't just a raw speed, it's
+performance per dollar. As we discussed
+in our vertical scaling lesson. High
+end specialised hardware follows an
+exponential cost curve doubling your
+power on a single machine might
+quadruple your price. However, With
+commodity hardware, the cost is linear.
+If you need twice the storage or twice
+the compute, you simply buy twice the
+number of standard nodes. Because
+These are off the shelf components.
+You're getting the best possible price
+for every processing power. This allows
+a startup to start small and grow their
+budget only as their data grows,
+avoiding upfront supercomputer
+investment.
+In a traditional data centre with
+proprietary machines, if a specialised
+part breaks, the cost of downtime is
+massive. While you wait for a custom
+repair in a commodity cluster, we treat
+the hardware as disposable.
+Because every node is standard unit, we
+can achieve rapid node replacement. If
+a worker node fails, a technician
+doesn't spend hours troubleshooting a
+motherboard. They simply pull the unit
+out and slide a new identical commodity
+server in its place.
+This standardisation reduces the need
+for specialised engineers, and keeps
+the operational expense of the data
+centres significantly lower. Finally,
+we have the economic benefit of self
+healing resilience. Because commodity
+hardware is cheaper, we can afford to
+be redundant. We typically replicate
+our data 3 times. To do this on a 1
+million supercomputer would cost $3
+million which is impossible for most
+businesses. But on commodity hardware,
+replicating data across 3 $1000 nodes
+is highly affordable. We are
+essentially using smart software to
+turn unreliable, cheap hardware into a
+highly reliable and expensive service.
+I hope you were able to gain some
+insights into the economics of
+commodity hardware.
+Happy learning! I'll see you in the
+next lesson.

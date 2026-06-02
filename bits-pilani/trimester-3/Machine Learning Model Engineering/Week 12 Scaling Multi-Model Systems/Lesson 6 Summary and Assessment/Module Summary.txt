@@ -1,0 +1,19 @@
+To recap, in real production,
+multimodal systems are the norm, not
+the exception. Routing means choosing
+one model per request, using simple
+rules, learned routers, or fallback
+models for safety. Ensemble mean
+calling multiple models and combining
+their outputs, trading more accuracy
+and robustness for higher latency, cost
+and complexity.
+In the rest of Module 2, we will widen
+the picture. We'll talk about sharding
+and caching to scale these systems,
+multi-tenant setups, and resource
+isolation, and how vector databases and
+retrieval augmented pipelines are
+multimodal system by design. All of
+this builds on the pattern we
+introduced in this video. Thank you.

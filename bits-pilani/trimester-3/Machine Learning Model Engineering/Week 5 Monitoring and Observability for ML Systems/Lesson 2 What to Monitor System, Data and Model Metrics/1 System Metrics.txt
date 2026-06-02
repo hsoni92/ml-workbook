@@ -1,0 +1,27 @@
+Welcome to what to monitor metrics and
+signals for machine learning systems.
+In topic one, we talked about why
+monitoring ML is different. A healthy
+API doesn't guarantee a healthy model.
+In this video, we will go one level
+down and answer a practical question.
+What exactly should we measure and log?
+We will break it into 3 layers system
+health, data health, predictions, and
+business health, and finish with a
+checklist you can reuse on your own
+project. Before we get into specific
+metrics. Let's anchor on the three
+layers we are going to fill in. Layer 1,
+system metrics. These answers, if the
+service itself is healthy. Layer 2,
+data matrix. These answers are the
+input going into the model insane or
+sane and stable.
+Level 3, predictions and business
+metrics. These answers are the output
+is still useful, accurate, and fair.
+Good machine learning monitoring needs
+signals at all three layers. If you
+only look at one, you will miss
+important failure modes.

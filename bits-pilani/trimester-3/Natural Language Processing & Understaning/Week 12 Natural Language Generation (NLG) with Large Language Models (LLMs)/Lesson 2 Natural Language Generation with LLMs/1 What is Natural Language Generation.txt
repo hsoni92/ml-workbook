@@ -1,0 +1,44 @@
+Welcome students to this lesson on
+natural language generation.
+Before we get into prompt engineering
+with LLMs, let's solidify our
+foundations in NLG. So what is natural
+language generation?
+Natural language generation, or NLG, is
+the task of producing. Human readable
+text from some form of input, which is
+your prompt.
+Historically, energy systems were rule
+based.
+Template driven and highly task
+specific.
+Whereas modern LLMs. Are learning
+language patterns from the data itself
+and generating text probabilistically,
+not rule based. Let's quickly compare
+traditional energy systems with the
+modern LLM based energy, right?
+Traditional energy systems required
+hand crafted rules.
+They were very domain specific and
+brutal they were not robust at all. And
+they did not generalise well. So if
+there was an energy system created for
+a specific website, say an e-commerce
+website, it would not generalise well
+for any other specific task, right? You
+would have to create it from scratch.
+On the other hand, LLM-based natural
+language generation uses a single
+pre-trained model that you can use for
+different types of domains. LLMs adapt
+to multiple tasks through prompting.
+Which is fairly simple than rule based
+systems. And they are able to produce
+fluent and coherent text.
+With LLMs we saw a key shift in natural
+language generation. We went from
+explicit rules to implicit knowledge
+learned from the training data. That's
+all for this video. I'll see you in the
+next one. Thank you.

@@ -1,0 +1,73 @@
+Next lever serverless inference. In a
+serverless setup, you deploy your model
+as a serverless function. The cloud
+platform handles provisioning of
+instances, scales the number of active
+instances up and down, and bills you
+per request or per unit execution time
+and memory. This works really well when
+traffic is spiky. Average volume is low
+or unpredictable, or you are running
+prototypes and internal tools where you
+do not want to manage servers yourself.
+The idea is simple. You only pay when
+the code is actually running.
+Serverless inference has real benefits,
+but also important trade-offs. One of
+the benefits sides.
+You do not manage servers, auto scaling
+is built in, and you only pay when your
+code is running. Which is perfectly
+fine for a spiky and low traffic
+workload. On the trade-off side, you
+can experience cold start. The first
+request after a period of no traffic
+can be noticeably slower as the
+platform spins up the function. There
+are usually limits on memory, maximum
+execution time, and package size.
+And you may face some vendor lock-ins,
+because each provider has its own
+configuration and integration pattern.
+For latency critical path, with a
+strict service level agreement. You
+need to be very aware of these
+tradeoffs. The 3rd cost lever is
+batching, or micro batching. The idea
+is simple. Instead of calling the model
+once per incoming request,
+You collect multiple requests and run
+them together as one batch.
+This has several benefit, you keep your
+GPUs or CPUs more fully utilised. You
+reduce overhead per request since the
+fixed cost of one forward pass is
+shared across many inputs.
+You usually reduce cost per request.
+There are 2 modes here, pure offline
+batch, where no user is waiting for the
+result.
+And online micro batching, where we
+wait a tiny bit to gather a few
+requests into a small batch before
+running the model. In online systems,
+we often use micro batching.
+This pattern is collect incoming
+request for a very short time window,
+say a few milliseconds, or until you
+have a small number of items. Then run
+them together as one batch, for example,
+a tensor in shape from end to end.
+The pros are, you get much better
+throughput per instance, and you reduce
+cost per request, especially when using
+GPUs. The cons are, you are adding some
+queuing delay. Each request might wait
+a few milliseconds before being
+processed. You need to tune the maximum
+batch size and maximum wait time so
+that latency stays within your service
+level agreement. This is directly
+connected to what we discussed in
+Module 2 about batch versus online
+inference.

@@ -1,0 +1,38 @@
+Welcome back learners. In this lesson,
+we will go through topic modelling with
+LDA or latent Dirichlet allocation.
+So latent Dirichlet allocation, or LDA,
+is one of the most widely used
+algorithms for topic modelling. It is
+probabilistic, it is interpretable, and
+it works very well on large document
+collection. These 3 reasons make it the
+most popular.
+Algorithm
+For topic modelling.
+LDA mainly helps us answer what topics
+exist in this text corpus and how they
+are composed of these topics. LDA is
+based on two simple ideas.
+Documents are mixtures of topics, and
+topics are distribution over words,
+right, which means that a single
+document can talk about multiple
+different topics, and each topic is
+defined by a group of words with
+different probabilities. Let's see an
+example to understand this further. For
+example, a document may contain two
+main topics, which is technology and
+healthcare. And its distribution can be
+about 70% technology and 30% healthcare.
+Whereas the topic technology may
+include words like software, system,
+data, algorithm, etc. It's important to
+understand that LDA does not assign one
+topic per document. It assigns topic
+proportions, right? Example which we've
+seen already. So 70% technology and 30%
+healthcare. All right, that's it for
+this video, and I'll see you in the
+next one. Thank you.

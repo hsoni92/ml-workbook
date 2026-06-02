@@ -1,0 +1,62 @@
+All right, learners, let's now
+understand what large language models,
+or LLMs, actually are.
+A model is typically called an LLM or
+large language model, due to 3 factors.
+Scale of parameters, so millions to
+billions of parameters are included in
+an LLM.
+Scale of training data.
+The amount of training data that's
+being used to train these language
+models is huge. Your entire internet,
+your entire Wikipedia, your entire
+stack overflow, Reddit, right? So you
+can imagine how huge that data is.
+Finally, why it's called large is the
+training objective. Next token
+prediction over long sequences, which
+was not previously possible even with
+the most sophisticated transformer
+models.
+Bear in mind that there is no strict
+quantitative threshold. Large is
+relative.
+What actually matters is that scaling
+leads to emergent capabilities in
+natural language generation. Now let's
+look at the pre-training for these LLMs,
+which is next token prediction.
+LLMs are pre trained using a very
+simple objective. Given a sequence of
+tokens, predict the next tokens. So
+what is the sequence of tokens? It is
+the context. Now using this context,
+The LLM is required to predict the next
+token.
+Let's look at an example The context
+being, I love natural language
+processing. NLP is very now depending
+on the data that this LLM has been
+trained on, it could predict any token,
+right? For example, powerful. Let's
+look at another example.
+The cat sat on the.
+Take a guess. What could, what could it
+be?
+Now it could be mat, it could be table,
+it could be floor. Etc. etc. etc. What
+this depends on is the training data.
+And the context.
+Right?
+This task of next token prediction is
+repeated across massive data sets.
+Which leads to the modal learning
+language grammar. Factual associations,
+style and structure.
+Importantly, no task specific labels
+are required for pre-training in LLM,
+which is why the models learn language
+patterns implicitly. I hope you enjoyed
+this and I'll see you in the next video.
+Thanks.

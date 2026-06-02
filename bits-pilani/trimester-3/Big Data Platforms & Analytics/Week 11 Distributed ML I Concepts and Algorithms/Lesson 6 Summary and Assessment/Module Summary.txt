@@ -1,0 +1,59 @@
+We have covered a tremendous amount of
+ground in this module, from the
+fundamental challenges of networking to
+the specific mechanics of distributed
+optimisation. We have explored what it
+truly takes to scale machine learning
+beyond a single node. In many large
+scale clusters, up to 70% of the total
+training time is spent on communication
+rather than computation. This is a
+staggering statistic. It reminds us
+that in the world of big data, training
+time is dominated by data movement.
+Rather than the underlying math. You
+can have the fastest GPUs in the world,
+but if your network is congested, those
+GPUs will spend most of the time
+waiting.
+As we wrap up, let's revisit our three
+most important takeaways. First,
+Remember that scaling is limited by the
+network, not just the GPU. When
+designing a distributed system, you
+must think about bandwidth, latency,
+and synchronisation just as much as you
+think about flops or memory capacity. A
+balanced system is always more
+efficient than a system with fast
+compute and slow interconnects. Second
+is data parallelism. It remains the
+standard for most use cases. It is the
+most robust and straightforward way to
+scale. By sharding your data set and
+keeping a full copy of the model on
+every worker, you can effectively
+utilise massive data sets to train high
+performing models in a fraction of time.
+It would take on a single machine.
+Finally, we explored how model
+parallelism enables the training of
+multi-billion parameter networks.
+Without strategies like pipeline and
+tensor parallelism, the revolutionary
+Lar Language models, or LLMs we see
+today simply wouldn't be possible.
+These techniques allow us to break
+through the memory wall of a single
+device by treating a cluster of GPUs as
+one massive unified memory pool.
+You're now equipped with the conceptual
+framework needed to understand how
+modern AI is built at scale, whether
+you are managing a small cluster or
+architecting a massive cloud-based
+pipeline. These principles of
+communication, parallelism, and
+aggregation will be your guide. This
+concludes our module on distributed
+machine learning. Thank you so much.

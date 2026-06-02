@@ -1,0 +1,85 @@
+The first big responsibility of model
+engineering is turning notebook into
+services. That usually looks like
+taking notebook code and refactoring it
+into proper Python module and packages.
+Writing inference code that covers
+preprocessing inputs, calling the model,
+and post processing outputs.
+Wrapping this logic in. Some kind of
+service, often a REST API or GRPC
+service, or a batch job or a stream
+streaming consumers.
+And then making the whole thing
+deployable using containers like
+dockers, and environment specific
+configuration for dev staging and
+production. This is often the first
+movement where model becomes something
+other people and other systems can
+reliably call.
+This second responsibility is making
+sure the model works under real world
+constraint.
+Model engineer has to care about
+latency and throughput, not just
+average latency, but P95, P99 tail
+latencies, and how the system behaves
+under traffic spikes, then we care
+about up time and reliability.
+What are the SLOs, SLAs? How do we
+handle errors, time outs, partial
+failures, costs, how much compute
+memory and. Storage are we using?
+What's the cost per request if this
+model is called a million times a day?
+A model that's slightly more accurate,
+but 10x lower, or 10x more expensive,
+may be effectively unusable in
+production. So model engineering is
+constantly balancing quality of
+predictions with performance and cost.
+The 3rd responsibility is managing
+change.
+Because model doesn't stay static.
+First, we need clear versioning.
+Versioning the training data, the code,
+the model artefact, the config.
+Be able to answer which model version
+made this prediction, especially in
+regulated industries. Second, we need
+safe rollout strategies, canary, or
+shadow deployments to test new model on
+a subset of traffic, AB tests to
+compute model versions in real
+conditions. Third, We need roll back.
+If a scale version misbehaves or causes
+regressions, we must be able to quickly
+switch back to a stable version. And
+finally, regular updates as data drifts
+on world changes, we need to train or
+fine tune and ship new versions, owning
+this life cycle to deploy, observe,
+update, rollback, if needed. Is a core
+part of model engineering, the 4th big
+responsibility. Is collaboration. Model
+engineering doesn't happen in isolation.
+You will typically work closely with
+data team, who owns the feature
+pipeline and data quality. You need
+them to provide stable, well defined
+features for your model, infrastructure
+or platform team who owns deployment
+tooling, Kubertis cluster,
+observability stacks, and scaling
+strategies. Products and business
+stakeholders who define the user
+experience, SLAs, and what good enough
+means in practise. Model engineers
+often sit in the middle, translating
+these constraints and requirements
+between those groups. So beyond
+technical skills, the real role also
+demands good communication and
+alignment. It really means a good team
+sport.

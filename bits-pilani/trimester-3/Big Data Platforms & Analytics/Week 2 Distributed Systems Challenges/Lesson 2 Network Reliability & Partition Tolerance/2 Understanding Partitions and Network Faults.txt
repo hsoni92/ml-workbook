@@ -1,0 +1,76 @@
+We looked at the fallacies, the myths
+we believe about networks, we learned
+that the network is not reliable and
+latency is not zero. In this video,
+we're going to look at the most
+critical concept that arises from those
+truths. Partition tolerance, or simply
+P? Think of a partition like a bridge
+between two islands. On Island A, you
+have one group of servers, and on
+Island B, you have another. Usually the
+bridge is open. And they talk to each
+other constantly. But what happens if
+that bridge collapses? Or if a thick
+fog rolls in and they can't see each
+other, signals. That break in
+communication is a network partition.
+So what is partition tolerance?
+Formally, it is the ability of a system
+to continue operating even when an
+arbitrary number of messages are
+dropped or delayed by the network
+between nodes.
+In simpler words, if a bridge is down,
+can the people on Island A and Island B
+still do their jobs? Or does the whole
+world stops? Imagine a global ATM
+network. If the ATM in your
+neighbourhood loses its connection to
+the bank's central headquarters in
+another city. That is a partition. A
+partition tolerant system is one that
+is designed to handle this silence
+without crashing or losing data. It
+expects that the bridge will eventually
+break and has a plan for when it does
+it.
+Here is the most important key takeaway
+from this lesson. In distributed
+systems, partition tolerant is a
+requirement, not an option. In the old
+days of single node computing, you
+didn't have to worry about this, but
+once you move your data across a
+cluster, partitions will happen,
+hardware fails, router reboots, and
+underwater cables get cut. Because we
+know from our fallacies that the
+network is unreliable. We can't choose
+to ignore partition.
+If you build a system that isn't
+partition tolerant, the moment a single
+wire gets unplugged in your data centre,
+your entire global application could
+freeze. In big data industry, this is
+called a catastrophic failure. And it's
+something We avoid making P a
+foundational part of our design.
+So if we must be partition tolerant,
+what do we have to give up?
+If the two islands can't talk, how do
+they stay in sync? This is the heart of
+the trade-off.
+If Island A changes a piece of data
+while the bridge is down, Island B
+won't know. When a bridge is repaired,
+they will have different versions of
+the truth.
+How we handle that disagreement is what
+we'll explore in our next chapter, The
+Cap Theorem.
+We'll learn why we have to make a
+painful choice between consistency and
+availability when a partition occurs.
+I'll see you in the next lesson. Till
+then, happy learning.

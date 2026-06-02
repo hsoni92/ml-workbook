@@ -1,0 +1,56 @@
+In our last video, we saw how
+partitioning allows us to divide work
+among many cores, but there is a big
+question that we haven't answered yet.
+Where does that processing actually
+happen? Now, if you look at the slide,
+you'll see one of the most important
+concepts in distributed computing is
+data locality.
+In traditional computing, we usually
+bring the data to the programme, right,
+but when you are dealing with terabytes
+or petabytes of data, moving that much
+information across a network is
+incredibly slow. It creates what we
+call a network bottleneck. So your CPU
+might be fast, but they are sitting
+around waiting for the data to arrive
+over the over the internet or over the
+network. But Spark actually flips this
+logic. Its motto is, Don't move your
+data move code. So think about it. Your
+data might be 10 gigabytes, but your
+Python code or your Scala code is only
+a few kilobytes. It's much faster to
+send that tiny bit of code across the
+network.
+To the specific computer where the data
+is already living.
+So as you see in the diagram that is
+shown in the slide. Spark is data aware.
+It talks to the storage systems like
+SDFS or S3 and says, OK, I see this
+partition is sitting on server A.
+Now I'm going to send the computation
+task directly to the server A, so that
+it can process the data locally.
+And this step actually reduces or
+minimises that network congestion.
+We aren't clogging up the pipes with
+massive data transfers happening across
+the network, right? So we are getting
+huge performance boost as well because
+processing starts almost instantly
+because the data is already in the
+right place. By combining partitioning
+with data locality, Spark actually
+ensures that we are using our cluster
+as efficiently as possible.
+Now that we understand the physics of
+how RDDs actually work, it's time to
+learn on how to actually create them.
+In our next lesson, we'll look at the
+different methods for building your
+first RDDs. I'll see you in the next
+video.

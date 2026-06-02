@@ -1,0 +1,67 @@
+In this lesson, we are going to explore
+one of the most distinctive features of
+Apache Spark, that is lazy evaluation.
+If you ever run a line of spark code,
+perhaps a complex transformation, and
+noticed that it finished in a fraction
+of a second, you have encountered
+laziness in the action.
+The core concept here is simple. In
+Spark, transformations are not executed
+immediately. When you tell Spark to map
+a data set, or philtre a column, it
+doesn't actually go and touch the data.
+Instead, Spark records these operations
+as a recipe, or lineage of steps. In
+technical terms, this creates what we
+call a logical plan. Think of it like
+going to a restaurant. When you give
+the waiter your order for an appetiser,
+a main course, and a dessert, the
+kitchen doesn't start cooking the
+moment you say the first word, right?
+They wait for the entire order. Why?
+Because it's more efficient to
+coordinate the cooking times and
+resources once the full plan is known.
+Spark actually operates exactly in the
+same way. It waits until it sees the
+full order of transformations, before
+it actually starts moving the data. So
+if Spark is just recording recipes,
+when does the actual cooking happen?
+This actually brings us to the
+execution trigger. So calculations
+which only begin when an action is
+called, operations like .co, .collect,
+or save as text files are the triggers
+that actually tell the Spark, OK, I'm
+done describing the recipe. Now give me
+that result. The moment an action is
+invoked, Spark driver looks at the
+recorded logical plan, hands it over to
+Catalyst optimizer. Catalyst optimizer
+then converts it into a physical
+execution plan that runs across your
+executors. You might ask, why wait? Why
+not just compute step by step? The
+answer is massive global optimisation.
+Because Spark waits until the last
+possible second, it can look at your
+entire chain of commands, and it can
+find shortcuts easily in that. For
+example, let's say if you philtre a
+data set at the very end of the script.
+Spark can do a predicate pushdown, and
+they can say, OK, the philtre can be
+shifted to the very beginning, so it
+never has to load any unnecessary data
+in the first place in your RDDs, right?
+So in our next video we'll look at the
+specific performance benefits of this
+approach called lazy evaluation,
+specifically how Spark actually handles
+your query optimisation and pipelining
+to save time and hardware resources.
+I'll see you in the next video. Till
+then, happy learning. Thank you so much.

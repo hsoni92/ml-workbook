@@ -1,0 +1,79 @@
+Welcome back. In our last video, we saw
+how raw data is split and processed by
+thousands of independent mappers. But
+now we face a logical problem. If
+mapper A has some data for URL 1 and
+Mapper B has the data for URL 1, how do
+they both get those results to the
+exact same reducer? The answer is step
+3 of our logical data flow, the shuffle
+and sort phase. This is often called
+the magic of MapReduce because it acts
+as the bridge that connects the
+transformation logic of the map phase
+to the aggregation logic of the reduce
+phase. Look at the first points on our
+Deep Dive slide partitioning.
+Partitioning is the process of deciding
+which reducer nodes will receive which
+key. The network uses a simple but
+powerful mathematical formula that's a
+hash formula. So if you do a hash of
+key modulo, the number of reducer,
+imagine you have 3 reducer nodes node A,
+node B, node C. When a mapper produces
+the key index.stML, the framework
+hashes that string into a number and
+divides it by 3. If the result is 0, it
+goes to node A. If the result is 1, it
+goes to B. If this ensures that every
+single instance of index.htML from
+across the entire cluster is sent to
+the exact same destination. Without
+partitioning, the reducer would only
+have a partial view of the truth. Once
+the data arrives at the reducer node,
+we move to the second part, which is
+sorting. The framework doesn't dump the
+data in a pile, it groups all the
+values by their key. This is why it is
+called shuffle and sort. By sorting the
+data, the framework ensures that when
+the reducer starts its work, all the
+ones from index.html are lined up
+together in a single list. This makes
+the actual reduce function incredibly
+efficient. The reducer doesn't have to
+search through a messy database. It
+just reads a perfectly organised stream
+of values, one key at a time. Now look
+at the warning box on our slide. This
+is a critical takeaway for any
+architect. The shuffle and sword face
+is the most network intensive part of
+the job. Think about what is happening.
+Thousands of mappers are sending data
+to 100s of reducers simultaneously.
+This creates a massive amount of cross
+cluster traffic. In module 1, we talked
+about the network tax. This is where
+you pay it.
+Because so much data is moving across
+the wires and the switches. This phase
+is often the bottleneck that slows down
+the entire job. This is why performance
+tuning in big data almost always
+focuses on minimising shuffle data.
+Just to recap, Partitioning ensures the
+same keys go to the same reducer.
+Sorting organises that data. So it's
+ready for aggregation. The shuffle is
+the bridge. But it comes with a high
+network cost. Now that our data is
+perfectly shuffled, sorted, and
+delivered, we are ready for the final
+step of the journey. In our next video,
+we will look at final aggregation, the
+reduce phase, and see how we turn these
+organised lists into final business
+answers. I'll see you there.

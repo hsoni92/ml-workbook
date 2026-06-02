@@ -1,0 +1,69 @@
+When we talk about data pipelines for
+machine learning, it's useful to
+distinguish three ingestion modes batch.
+You process large chunks of data on a
+schedule, once, like once per day or
+once per hour. Micro batch, you process
+many small batches frequently, say
+every 1 to 5 minutes. Streaming, you
+process events continuously as they
+arrive, reacting in near real time. All
+three modes can support machine
+learning. The choice depends on your
+latency needs, complexity, budget, and
+cost constraints. We will unpack each
+mode in this next videos.
+Let's start with batch ingestion.
+Which is still the workhorse. Of many
+machine learning system.
+Batch pipelines run on a fixed schedule,
+like once per day, or once per hour,
+operate on files or tables that
+represent a whole time window, and.
+Are perfect for retraining jobs,
+offline, scoring event, everything,
+jobs, and heavy aggregations.
+The advantage, they have a simple
+mental model, and they make lineage and
+versioning easier because each run is a
+discrete batch. The tradeoff, the data
+is a stale between runs.
+If you run if you only run a job
+nightly, your features won't include
+events from few hours before. Next. We
+have micro batching.
+Which is kind of middle ground between
+batch and full streaming. With
+microbatch, you still process data in
+batches, but those batches are much
+smaller and run much more efficiently,
+frequently, like everyone, 2 or 5
+minutes.
+This works well for updating risk score
+or user features periodically,
+refreshing data for active sessions.
+The probes. Lower latency than a batch
+daily batch. And you can often reuse
+your existing batch tool like Spark or
+SQL. The trade-offs. More frequent runs
+means more infrastructure overhead,
+and you still don't get true per event
+streaming behaviour. The third mode is
+streaming, where we process events
+continuously as they arrive. Here you
+have producers. Sending events like
+clicks, sensor readings, or
+transactions into topics or queues.
+Consumers that subscribe to those
+topics and process events in real time,
+and concepts like time windows and a
+state which let you compute rolling
+aggregates or detect patterns over time.
+Streaming is especially powerful for
+machine learning use cases like real
+time anomaly detection, live
+recommendation and personalization,
+dynamic pricing or real time fraud
+checks. In upcoming videos, we will
+connect this to tool like Kafka, Spark,
+Flink, or Beam.

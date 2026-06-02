@@ -1,0 +1,78 @@
+Hello everyone and welcome to module 10.
+In our previous sessions, we
+established the fundamentals of how
+data is distributed across a cluster.
+However, in the real world, data is
+rarely perfectly uniform. Today we'll
+begin data partitioning part 2, where
+we move beyond default settings to
+tackle the advanced challenges of
+optimisation and SKUW.
+In this module, we are going to look at
+what happens when your cluster isn't
+working as a team. When 1 or 2 worker
+nodes are doing all the heavy lifting
+while others sit idle. We call these
+hotspots.
+And they are the primary reason why big
+data jobs that should take minutes
+often end up taking hours.
+Let's take a look at our roadmap for
+this week. By the end of this module,
+you'll be able to master 5 critical
+competencies. Number 1, identifying
+data skews and hotspot. We need to be
+detectives in this one. Now you'll
+learn how to look at distributed
+processing logs and the Spark UI to
+identify the. Telltale signs of data
+skew. If a job is 99% complete but
+stays stuck on the final task for 10
+minutes. You have a SKU problem. We'll
+show you exactly how to find it. Second
+is applying sorting techniques. Once we
+identify a skewed key, for example, if
+you have a million transactions for one
+specific country code and only 10 for
+another country code, how do we fix it?
+We'll apply a technique called faulting.
+This involves adding random suffixes to
+keys to force them to redistribute
+across more workers.
+Breaking up those processing
+bottlenecks. And the third is
+evaluating broadcast variables. Next,
+we'll look at joints, Standard joints
+trigger shuffles, which are incredibly
+expensive. Because they move data
+across the network, you learn to
+evaluate when to use a broadcast join.
+It is a strategy where we send a small
+table to every node to avoid that
+network traffic entirely. And then the
+4th 1 is implementing data co-location.
+Efficiency isn't just about how you
+process data, but where it lives. We
+will explore how to implement data
+co-location strategies. The goal here
+is to ensure that related data sets,
+which are closely linked to each other,
+are physically stored on the same nodes
+from the start. minimising input output
+overhead. And then the 5th 1 is
+analysing shuffle performance. Finally,
+we will analyse the shuffle itself. We
+look at the metrics that matter.
+Shuffle is read or write bytes, and
+fetch wait times. This will help you
+understand the true impact of
+partitioning of your overall pipeline
+performance. Mastering these objectives
+will move you from being someone who
+just runs big data jobs to someone who
+optimises them. In our next video, we
+are going to start with the why. Why
+does uniform distribution matter so
+much? And what does a perfectly
+balanced cluster look like? Let's dive
+into the next module.

@@ -1,0 +1,48 @@
+Welcome to reusability, metadata,
+lineage and feature governance. So far,
+in Module 9, we have focused on
+technical consistency, online versus
+offline features, and how feature
+stores help avoid training serving skew.
+In this video, we will zoom out and
+look at the organisational benefit.
+Reusing features definitions across
+many models, tracking metadata and
+lineage so you always know what a
+feature is and where it comes from, and
+governing access so sensitive features
+are used safely. A feature store is not
+just about infra, it's about making
+feature engineering reliable and
+responsible across entire company.
+Let's start with the pain. In many
+organisations without a feature store,
+each team writes its own SQL queries or
+notebook code to compute the same
+feature. Each version has slightly
+different philtre, time, window, or
+edge case handling. You end up with 3
+or 4 different versions of customer 30
+day spend, one in a churn notebook, one
+in a fraud SQL, one in recommendation
+code. The result is duplication and
+inconsistency. Team do a lot of copy
+paste. Feature with the same name don't
+actually mean the same thing, and when
+numbers don't match, debugging become a
+nightmare.
+A feature store turns this around by
+making features reusable asset. You
+define customer 30 days spend once,
+specify that it's keyed by customer ID,
+define the time, column and a 30 day
+aggregation window, capture the logic
+in code or configuration. Then multiple
+models can reuse the same definition
+the churn model, the recommendation
+model, the fraud model. This reduces
+duplicated ETL code, leads to fewer
+bugs, and makes it much faster to
+onboard new use cases because teams can
+build on shared library of battled
+tested features. Thank you.

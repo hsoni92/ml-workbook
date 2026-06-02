@@ -1,0 +1,228 @@
+OK. So now let's uh run the final
+comparison metrics. That is uh
+Onex runtime benchmark.py.
+So, in this uh script, we'll see the
+payoff. We will load our, uh, again,
+resonate 18.1NX file using the1NX
+runtime and uh run the same latency
+benchmark we did in the
+first script here in the baseline. This
+will give us a direct uh apples to
+apples comparison. Of uh performance on
+same model, same GPU but different, uh,
+runtime engine.
+Right. So let's uh dive into this um
+Benchmark.py file. The first step is to
+create an inference, uh, session, right?
+And uh then uh we will explicitly set
+uh the provider to CPU execution
+provider, OK? And uh just to make sure
+we are running on the CPU just like our
+Pytouch baseline, OK? Then we are doing
+a session.
+run here.
+It takes a dictionary where the keys
+are the input name we defined during
+export and the value of the input data
+as uh nonpi array. So this is a key
+difference from Py torch, right? Ox
+runtime worked with uh nonpi array, not
+uh torch tensor.
+So that's 3 friends.
+And uh when we run the exact same
+latency benchmark as before, a warm-up
+loop followed by 100 time run.
+Right? Same we have uh seen in our
+first script. And at the end, the
+script loads the baseline metrics we
+saved earlier.
+And uh print the final comparison table.
+Yeah
+Right? So let's uh execute this. Uh,
+let's go to our read me, copy the
+command.
+Yeah.
+OK. So,
+Let's uh pause here because, uh,
+This result might surprise you. Uh, if
+you look at the comparison table, uh,
+ONNX runtime actually, it's, uh, slower
+than Pytorch in this experiment, right?
+The average latency went from 8 to 17.
+Right millisecond.
+And uh if you see the P5 latency, uh,
+it's went from 9 to 21, more than
+double, right? So, this is the opposite
+of what we expected, right? So, this is
+an incredibly important
+point.
+And I want to be very clear about uh
+what's happening here and why this
+result is actually valuable for uh for
+us to understand this concept. First,
+let me address the elephant in the room.
+Yes. So, ONMX uh runtime is a highly
+optimised inference engine, right? It
+can deliver significant speed up, but
+uh, Uh, this is crucial here because
+optimising is always, uh,
+context-dependent. So there is no one
+size fits all solution, right, in
+performance, uh, engineering. So, why
+is Pytorch uh faster in this uh
+specific uh experiment?
+Uh, there could be several factors, uh,
+uh, are at play, OK? So let's see the
+first one. Uh, the model size, OK.
+ResNNT 18 is uh relatively a small
+model by modern standard, right? And it
+has about 11 million parameters and
+only 49 operations in its graph, right?
+We have seen that.
+But Pytoch has spent years uh
+optimising its uh CPU backend for
+exactly these kind of standard uh CNN
+architectures, right? So, under the
+hood, Pytoch uses uh highly tuned
+libraries like uh MKL and uh one DNN
+that have been optimised for decades.
+And for a well-known architecture like
+ResNet running on CPU, Pytorch native
+implementation is extremely efficient.
+Right.
+Uh, so that's the one thing, model size.
+Second thing, the hardware. We are
+running on CPU only, right? And ONNX
+runtime. Biggest advantage, uh, often
+come from GPU acceleration, a
+specialised hardware like uh GPUs or
+neural processing, uh, units, uh.
+Or when using quantization and other uh
+compression techniques. So, on a
+standard CPU with a small model, the
+overhead of uh ONX runtime, more
+generic uh execution engine can
+actually overweight the benefits, right?
+So, uh, that could be the 2nd thing,
+and the 3rd is, uh, uh, batch size. So
+here, we are running inference with the
+bat size of 1. Uh, processing one image
+at a time. So this is common in
+real-time application, but, uh, it
+doesn't, uh, uh, give you the fixed
+overhead cost of setting up and, uh,
+running inference. So, larger batch
+sizes would give ONX uh runtime more
+opportunity to optimise memory, uh,
+access pattern and paralyzation
+operation, right? So, uh, batch size is,
+uh, Uh, one of the reasons. And the
+fourth one is, uh,
+Uh, uh, and this is important. We
+haven't applied, uh, any ONNX, uh,
+specific optimisation yet. ONNX runtime
+support, uh, graph level optimisation,
+operator fusion, uh, then quantization
+of, uh, uh, INT88, and many other
+techniques that can dramatically
+improve, uh, performance. We just did a
+vanilla export and ran it. Uh, think of
+this as, uh, when an excellent time in
+a kind of safe mode. It works, but we
+haven't, uh, unleashed, uh, it's, uh,
+full potential. So now, here is why
+this result is actual valuable. Uh,
+Rather than uh disappointing, right? So,
+first, it uh teaches us that uh
+Profiling is uh essential. So never
+assume that a tool will make things
+faster without measuring, right? So,
+establish a baseline, make one change
+at a time, and measure the impact. So,
+this scientific approach is what
+separates uh good engineers from the,
+from, uh, uh, those who just uh throw
+tools at problem, right?
+Second, it shows us where Pytorch is
+already excellent.
+For, uh, rapid prototyping, a small
+model and CPU inference of standard
+architecture, Pytorch is fantastic.
+That's what we have observed, right?
+You don't need to overengineer your
+solution if it's already fast enough
+for the your use case. Uh, and the
+third, it highlights, uh, when, when
+the next runtime shine. So, the real
+benefit comes when a large model like
+transformer or vision model with
+hundreds of millions of parameters or
+billions of parameters. When you are
+using GPU or a specialised hardware
+deployment, right? So, cross-platform
+deployment where you need the same
+model running on a uh server, edge
+devices or mobile or probably
+production environment, right, where
+you can apply quantization and other
+aggressive optimisation. Uh, high
+throughput scenario with large, uh, bed
+size. And the 4th, the Perhaps most
+importantly, this is exactly what you
+will encounter in the real world.
+optimisation is uh rarely a straight
+line. Sometimes, uh, a technique that
+worked great in one scenario performed
+worse in another. So, the key is uh
+understanding why, which is exactly
+what we're doing now, right? So, what
+would we do next if this were a real
+production scenario and we need a
+better performance. So, if we are uh
+sticking with uh ONX runtime, we could,
+uh, enable graph optimisation by
+setting the optimisation level to all.
+Try quantizing the model to INT8, which
+can give you 2 to 4X speed up on CPU.
+We can also try increasing the batch
+size if our use case allows it, or uh
+use ONX runtime performance tuning
+options for a specific uh CPU
+architecture.
+Alternatively, we might consider using
+Pytorch, built-in optimisation like uh
+TorchScript compilation or Torch.
+compile.
+Uh, trying Pytorch condition tool or,
+or exploring a specialised deployment,
+uh, framework like, uh, TensorRT or
+Nvidia GPU or Uh, any other tool I've
+learned in the market.
+So the point here is optimising is a
+journey, not a destination. This
+experiment gave us data and uh the data
+tells us that uh for this specific
+configuration, uh, ResNet 18, CPU only
+bath size 1, no additional optimisation,
+Pytorch is faster. That's a perfectly
+valid and useful conclusion.
+In your own project, you will use the
+same methodology, establish a baseline,
+try an optimisation technique, then you
+can measure the result and make
+data-driven decision about what works
+for your specific use skills. Sometimes
+you will get the speed up you expected,
+sometimes you won't, but Uh, you will
+always learn something valuable, and
+that's the reallation of this module.
+optimisation is, uh, empirical. It's uh
+context-dependent and uh it requires uh
+careful management and understanding.
+The tools we have learned uh ONX export,
+ONNX runtime.
+Uh, systematic, uh, benchmarking, all
+are valuable technique, uh, in your
+toolkit. You just need to know uh when
+and how to apply that.
+So, yeah.

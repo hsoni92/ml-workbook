@@ -1,0 +1,19 @@
+Welcome to Module 12, Topic 1. Patterns
+for Multimodal Systems, routing and
+Ensembles.
+Up to now, most of our examples quietly
+assumed one model per service, one
+endpoint, one model behind it. In real
+production system. You almost always
+end up with many models, different
+versions running side by side,
+different models for different user
+segments or languages, and specialist
+models for different tasks like fraud,
+credit risk, and churn. In this video,
+we will focus on one key question. When
+a request arrives, how do we decide
+which model to use? We will look at
+simple routing strategies and at
+ensembles, where we combine models
+rather than pick just one.

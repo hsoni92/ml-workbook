@@ -1,0 +1,91 @@
+Welcome back, learners, to this video
+on LSTM or the Long Short term memory.
+Standard RNNs had a short term memory
+problem that we saw in the last video.
+To fix this, LSTM, or long short term
+memory networks were introduced.
+In a way, it's a smarter memory.
+They separate the short term processing
+from the long term storage.
+Now short term storage are the hidden
+states, and long term storage are the
+cell states.
+Let's look at it further.
+Think of an LSTM, not as a simple
+neuron, but as a complex computer chip
+with logic gates that control the flow
+of information.
+There are 3 main gates. The first, the
+cell state. It's the superhighway.
+Information flows straight down its
+path with very few interaction, which
+allows gradients to flow backwards
+unchanged. The next is the forget gate.
+The forget gate decides what to throw
+away, or what to forget.
+For example, when the subject changed
+from singular to plural.
+The action will be to forget the old
+subject, because it's not useful
+anymore.
+The sigmoid function outputs the value
+between 0, to forget completely, and 1,
+keep everything, or remember everything.
+Sigmoid function looks like this.
+The 3rd main gate is the input gate.
+Which decides what new information to
+store?
+To store the new gender of the subject.
+That could be an information to store.
+A combination of sigmoid. Which is what
+to update and TANH, which is new
+candidate values, forms the input gate.
+Finally, at the output is the output
+gate, which decides what to output
+based on the current state.
+To output a verb conjugated for the
+plural subject, right? Because the
+subject had changed from singular to
+plural. Let's explore it in much more
+depth.
+So here's the input X of T, right? T
+being the current time.
+Which goes in to the LSTM. Goes through
+the first pathway. Where it meets the
+sigmoid function, right?
+And goes
+2
+This gate.
+This is the pathway controlled.
+By the Current gate.
+Similarly, at the same time, the input
+goes through this sigmoid function.
+And similarly, To the tan age function.
+And another sigmoid function.
+This combination.
+Then forms the hidden state, which is
+the short term memory. Remember, right?
+HD is.
+OT, which is the output. Into tan age
+of current state.
+This being the current state.
+Now what to note here is that. For
+application purpose. Understanding the
+internal architectures at max depth is
+not really necessary. It does not
+prevent us from effectively using the
+LSTM or any other architecture, right?
+Let's move ahead. The simplified flow
+will be, first, have the input, all the
+paragraphs that you can imagine that's
+coming in.
+Decide what to forget. What is not
+important for us?
+Then create a new input.
+Send that again?
+To the output gate, which will philtre
+the cell state to get the new hidden
+state, HFT.
+Right? And that's it for this video,
+and I'll see you in the next one. Thank
+you.

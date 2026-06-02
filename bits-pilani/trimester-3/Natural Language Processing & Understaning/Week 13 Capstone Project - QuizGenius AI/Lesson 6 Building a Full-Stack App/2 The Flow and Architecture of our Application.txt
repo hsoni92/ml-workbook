@@ -1,0 +1,145 @@
+Welcome back, learners. In this video,
+we will understand the overall flow of
+our application and then also develop
+an architecture diagram around that so
+that when we start implementing the
+application, it all makes sense to you,
+right? So so far we've understood the
+whole purpose of our exercise, right?
+So we want the users to come and
+interact with our quiz application.
+Who is genius.
+And how do they do this?
+With a full stack application.
+Right?
+This will take your logic
+implementation, which essentially was
+just a POC to a. Application
+Right? Great. So now let's understand
+the overall flow of this application.
+Let me take a different colour. OK, so
+what will happen is that we will have
+A front end.
+A front end
+Right?
+That the users will interact with.
+This can be through the browser or a
+mobile application, right, but mostly
+through the browser, so users will come,
+they will send the topic that please
+generate a quiz on mathematics or
+science or whatever the subject is,
+right? Front end will receive this
+request, which is the topic, process it,
+and then send it to the back end.
+The back end is where your logic is
+implemented. So it will receive a
+processed version of this topic, right?
+Backend will then generate the quiz
+using the Gemini LLM.
+And then send it back to the front end.
+Front end will then dis squeeze.
+And the user will be able to interact
+with it. After that, the user will then
+send the answers, right?
+Front end will send these answers.
+To the back end, back end will
+calculate the score and send it back.
+And this score will be displayed to the
+user with the feedback, if any. Correct?
+I hope this makes sense, this flow,
+right? First, the user will come, send
+the topic.
+To the front end, front end will send
+that to back end. Back end will process
+it and generate a quiz, and quiz will
+be displayed to the user. Then through
+the same front end, the user will send
+the response to that quiz. This
+response, this response to the quiz
+will be sent to the back end, right?
+Back end will calculate scores and then
+send it to front end. Front end will
+display the, the scores. This activity
+will happen. On loop. So for example, I
+generated a quiz for mathematics. The
+application sent me the quiz, the 3
+questions or 4 questions, whatever,
+right?
+I send the answers to that quiz, and
+then the application will show me the
+score of that, right? OK. So now, I
+hope this is clear. Let's then convert
+it into a complete architecture diagram.
+OK.
+Let me first draw some random shapes,
+and then it will start making sense to
+you.
+All right, so this is the user. This is
+our front end.
+This is our front end.
+Right?
+This is our back end.
+And back in will use the Gemini LLM.
+To generate the quiz, right? Because
+it's an API usage, right? It's this LLM
+is not contained inside the back end. I
+hope you understand that. LLM is hosted
+on the Gemini application or Gemini
+clouds. We are just accessing it
+through an API, right?
+OK. Now, what will happen is that the
+user will send the first request, which
+will be the topic, right? Front end
+will capture this. Process it and send
+it to the back end, so this will be the.
+Process request, right? Back end will
+capture this validate it. Then send.
+The request to the LLM, as the prompt.
+The LLM will send back the request in
+JSI format, right, because we
+instructed to do so.
+Right. Back end will then again capture
+this chasing response, parse it, and
+send the useful stuff to the front end,
+so processed.
+Response, right?
+Front end will capture this process
+response and display it. To the user,
+right, so this will be the response.
+Actually, this can be better
+represented with a double-sided arrow.
+Right? So this will be the topic. And
+this will be the quiz.
+Right?
+So This
+request.
+The user is sending what requests? It's
+sending the topic first, right? And
+receiving the quiz.
+Then it is sending the answers.
+And then receiving the scores, right?
+So I hope this makes sense to you. So
+what I intend to do is take this
+architecture diagram as the base of our
+application and implement the
+application on top of it, right?
+However, Usually what happens, and it
+happens in the industry as well, is
+that we start with the base
+architecture, we then develop the app.
+A lot of times more modifications are
+implemented based on optimisation
+requests or changing client's request,
+right? So once the application is
+developed, we then revisit our base
+architecture diagram and modify it as
+required, right? So let's call this
+architecture.
+We one for now.
+Right, great. I hope this all makes
+sense, and I hope it gets you excited
+for what's to come. From the next video,
+we will start implementing our
+application.
+I'll see you there. Thank you.

@@ -1,0 +1,15 @@
+We start with the data layer. The main
+sources are web and app events, page
+views, click, scrolls, plus transaction
+events like add to cart, purchases and
+returns. Typically, these events are
+collected via stream pipeline, for
+example, into Kafka or NISIS, and then
+stored in a data lake or warehouse. In
+formats like Percuit or ORC. On top of
+raw events, we build aggregated tables,
+for example, daily user summary tables,
+which the future pipeline and training
+job will consume.
+Everything else in the system depends
+on this reliable high volume data layer.

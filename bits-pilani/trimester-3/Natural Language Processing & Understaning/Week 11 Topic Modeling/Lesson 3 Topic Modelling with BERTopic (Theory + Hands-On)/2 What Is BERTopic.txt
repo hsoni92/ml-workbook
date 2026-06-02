@@ -1,0 +1,19 @@
+Welcome back, learners. Now that we've
+understood the shortcomings of LDA,
+let's now deep dive into bird topic.
+Bird Topic, from the name you can
+understand, is based on the Birt
+transformer model.
+It is a modern topic modelling
+technique that uses sentence embeddings
+to capture semantic meaning.
+It also clusters documents based on
+these embeddings. And extracts topics
+from clusters using classical NLP
+techniques.
+The key idea here being that instead of
+modelling word distributions directly,
+word topic groups semantically similar
+documents and then derives topics from
+them. OK, so I'll see you in the next
+lesson. Thank you.

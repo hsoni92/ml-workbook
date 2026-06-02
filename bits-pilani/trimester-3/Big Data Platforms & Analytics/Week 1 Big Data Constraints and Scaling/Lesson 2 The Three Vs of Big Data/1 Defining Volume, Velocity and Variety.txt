@@ -1,0 +1,86 @@
+Welcome back, everyone. In our first
+lesson, we talked about how the world
+is shifting from bigger boxes to more
+boxes. But before we start building
+those clusters, we need to understand
+why we are doing it in the first place.
+What makes big data actually big? It's
+not just about the size. It's about 3
+specific challenges that we call the
+three V's volume, velocity, and variety.
+Today we're going to break these down
+using simple words and see how they
+show up in the real world of business.
+First up is volume. In simple terms,
+this is just the sheer amount of data.
+Think back 10 years. A 16 GB phone felt
+like it could hold your whole life.
+Today we are dealing with data so
+massive that it doesn't just fill up
+your phone, it fills up entire
+buildings full of servers. In big data,
+we stopped talking about megabytes and
+gigabytes and started talking about
+terabytes, petabytes, and exabytes.
+Let's discuss a business use case of
+e-commerce retail. Imagine a giant like
+Amazon or Walmart. Every single second,
+millions of people are clicking on
+products, adding items to carts, and
+searching for reviews. If you recorded
+every single click and every single
+transaction from every customer
+globally.
+You'd have a volume problem. You can't
+store the data on one computer. You
+need a platform that can spread that
+data across thousands of machines. The
+second V is velocity. This isn't about
+how much data you have. It's about how
+fast the data is coming at you. Imagine
+trying to take a sip of water from a
+regular glass. That is traditional data.
+Now imagine you're trying to take a sip
+from a high pressure fire hose. That's
+big data velocity. It's data in motion.
+Let's discuss a business use case of
+financial services or banking. Think
+about credit card fraud detection when
+you swipe your card at a coffee shop.
+The bank has about 20 milliseconds,
+less than the blink of an eye. To
+decide if that transaction is
+legitimate or if a hacker stole your
+card. The data is flying in from
+millions of card readers simultaneously.
+If the bank waits an hour to process
+their data in a batch, the thief is
+already gone. They need to process that
+data at a high velocity in real time.
+The final V is variety. In the old days,
+data was neat. It lived in rows and
+columns in an Excel sheet. We call this
+structured data, but today, Only 20% of
+that data is neat. The other 80% is
+unstructured. It is messy stuff, emails,
+PDFs, satellite images, heart rate
+monitor readings, and even voice notes.
+Let's discuss the business use case of
+modern healthcare. Think about a smart
+hospital
+for a single patient. The hospital has
+structured data, which is their age,
+their name, their billing info, and
+then they have semi-structured data,
+their digital prescriptions or lab
+reports. Then they have their
+unstructured data, the X-ray images,
+MRI videos, and the doctor's
+handwritten notes. To truly understand
+a patient's health, a big data platform
+has to be able to make sense of all
+these three different varieties at once.
+In our next video we are going to look
+at exactly how 3 constraints change the
+way we design our systems. I'll see you
+later. Happy learning.

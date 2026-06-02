@@ -1,0 +1,71 @@
+Welcome to Lesson 5. In our last lesson,
+we walked through a case study of
+processing 10 terabytes of logs. But
+here is a reality check. In a cluster
+of 1000 commodity servers, hardware
+failure isn't just a possibility, it's
+a statistical certainty. At any given
+moment, a hard drive might crash, a
+power supply might blow, or a network
+cable might be unplugged. In module 2,
+we discussed the design for failure
+mindset. Today we are going to see how
+the MapReduce framework actually
+implements that mindset to keep your 10
+terabyte job running even when nodes go
+dark. Look at the first point on the
+slide, which is reassignment. The
+master node acts like a vigilant
+project manager. It stays in constant
+communication with every worker node.
+If a worker note fails to check in what
+we call a heartbeat failure, the master
+doesn't panic and cancel the whole job.
+Instead, it simply looks at its
+metadata map and identifies which task
+that failed node was responsible for.
+It then reassigns those exact same
+tasks to other available nodes. Because
+we know from module 1 that HDFS
+replicates data 3 times, the master
+knows exactly where to find a backup
+copy of that data split, so the new
+worker can pick up right where the old
+one left off. But wait, if we restart
+the task halfway, won't that mess up
+our final count? That brings us to the
+most important technical concepts on
+this slide, which is purity. MapReduce
+handles failures so well because map
+and reduce functions are designed to be
+pure and deterministic. In functional
+programming, a pure function is one
+where the same input always produces
+the exact same output, and it has no
+side effects. Think of it like a
+calculator. If you type 5 plus 5 on a
+calculator, you get 10 every single
+time. It doesn't matter if the
+calculator crashed a minute ago or if
+you are using a different calculator,
+because our map logic is pure. Running
+a task on the same 128 MB data split
+will produce the exact same key value
+pairs as the first time. This
+determinism is what ensures total
+reliability across a messy,
+unpredictable cluster. To wrap up,
+MapReduce achieves fault tolerance, not
+by using expensive, unbreakable
+hardware, but by using smart software.
+The master node detects failure and
+reassigns work. Functional purity
+ensures that rerunning task produces
+consistent results. While this makes
+the system incredibly resilient, it
+does come with a price in performance.
+In our next video, we'll look at the
+limits disc overhead where we explore
+the right penalty that MapReduce pays
+to achieve this high level of safety.
+I'll see you in the next class.

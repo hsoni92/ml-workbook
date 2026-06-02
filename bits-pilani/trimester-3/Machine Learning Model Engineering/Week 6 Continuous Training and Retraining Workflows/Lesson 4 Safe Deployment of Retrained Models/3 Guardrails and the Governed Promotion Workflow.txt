@@ -1,0 +1,38 @@
+Governance also include guard rails,
+hard limits and safety checks around
+the model. Some common ones are rate
+limiting to prevent a spike in traffic
+for overwhelming your model or
+downstream systems. Output sanity
+checks ensure probability stays in,
+let's say 01, scores stay in expected
+range, and no obviously impossible
+values are returned.
+Kill switches, feature flags or config
+switches that let you turn off a risky
+model or a feature quickly. Policy
+constraint, technical enforcement that
+certain features or attributes are not
+used in the model, spatially sensitive
+ones. The mindset is
+Don't rely on model always behaving.
+Add rails so that when doesn't, you
+still stay within safe bound.
+Let's zoom out and see the full
+governed life cycle in one picture.
+We monitor our production model and
+detect drift. Performance changes or
+policy triggers. We run a retrain
+pipeline to produce candidate models
+and evaluate them. A governance layer
+ensures proper approval, model
+registration and lineage tracking and
+auditability.
+We do a controlled rollout, staging,
+optional shadow, or AB, then full
+production. Throughout, we rely on
+guard rails and rollback mechanism to
+contain risk. This is what it looks
+like to move from we trained a model to
+we operate a model safely and
+responsibly over time. Thank you.

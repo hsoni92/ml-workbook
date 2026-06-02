@@ -1,0 +1,109 @@
+Welcome back, learners.
+Now let's look at tokenization. Let's
+understand it first and then implement
+it in Python.
+So what is tokenization? Tokenization
+is the process of breaking raw text
+into smaller units, which are called
+tokens. These smaller units can be
+words, sentences, subwords or
+characters. So imagine a paragraph can
+be broken into units, word by word,
+sentence by sentence, or character by
+character.
+Or a mix and match of either.
+Tokenization is the first and most
+fundamental step. Within text
+preprocessing.
+Almost every NLP application, be it a
+simple application like word counting
+to sophisticated and state of the art
+deep learning models,
+start with tokenization.
+If tokenization is wrong, everything
+built on top of it will be affected.
+That's why we must have careful
+attention to tokenization.
+Tokenization is not trivial.
+Tokenization seems simple.
+However, Is not, because the natural
+language is very, very complex.
+Some of the challenges include
+punctuation.
+Like USA can be used with and without
+full stops.
+Hyphenated word.
+Like state of the art.
+Numbers and symbols.
+Emojis and special characters.
+All these, and much more, can make
+tokenization very, very complex.
+Different tokenization strategies may
+be needed, depending on the language.
+The domain And the NLP task or
+application at hand.
+Remember that there is no single
+correct tokenization for all NLP
+applications, and therefore you must
+select the right tokenization for your
+respective problem.
+OK, so let's look at how we can
+implement tokenization using the NLTK
+package, and for that, what we'll have
+to do is import NLTK and from NLTK we
+will also download a prebuilt library.
+Called Punta.
+Done. Make sure you're connected to the
+internet while you're implementing this
+step.
+Now from NLTK, let's also import
+another method
+called Word tokenize. And as it
+suggests, it will implement word by
+word tokenization.
+For human thing word by word.
+Localization, perfect.
+Now let's pass a text.
+That we would ideally want to tokenize.
+So what this will look like, Luke and I.
+Tokens Let's use the same method, word
+tokenize and pass this text. And let's
+print and see what do we have at our
+hand.
+Bingo, we have successfully tokenized
+the sentence natural language
+processing is fascinating into
+different word tokens.
+Right now, before we proceed to the
+next method of tokenization, I would
+like to encourage you to pass different
+texts here and implement the
+tokenization, right? OK, so moving on
+to the second method of tokenization,
+which is the sentence-wise tokenization,
+right? And we have another method
+called send tokenize for the same.
+Let's see how we can implement that.
+So let's import from NLTK.tokenize,
+import send tokenize.
+For implementing. Sentence by sentence.
+Tokenization, right? Perfect.
+Now, let's pass a larger chunk of text.
+Great.
+And that's another.
+And let's run another tokenization
+sentence by sentence, so sent.
+Tokenize and text, and let's print.
+Sentences.
+Boom, we have a list of all the
+sentences tokenize. To give you a
+better view, let me remove this. And
+then So you see, sentence one.
+Sentence 2 and sentence 3, all wrapped
+up in a particular list again.
+Implement this with other kinds of
+texts. Try some news texts. Try some
+literature. See how different kinds of
+texts respond to these methods, right?
+That's all for tokenization, and I'll
+see you in the next video. Thank you.

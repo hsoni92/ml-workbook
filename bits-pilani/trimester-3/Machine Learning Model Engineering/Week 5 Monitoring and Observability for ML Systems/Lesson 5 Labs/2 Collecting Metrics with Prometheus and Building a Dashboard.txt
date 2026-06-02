@@ -1,0 +1,355 @@
+Now, we'll focus on metrics,
+calculation, and uh logging. Uh, we
+understand why we need, uh, machine
+learning monitoring, right? Uh, let's,
+uh, build it. So, let's start with, uh,
+Part one.
+And part one is about the fundamentals,
+calculating system metrics and data
+metrics from production logs.
+Yeah.
+Uh, and let's, uh, If we talk about our
+data, so here we have our data
+directory. And uh we are working with a
+sample data called log. CSV that
+contain 17 simulated production
+requests. Each row represent one
+request to our ML model with column for
+timestamp, uh, latency, status code, uh,
+input feature, prediction, and ground
+truth. So think of this as a snapshot
+from a real production system. Uh,
+In practise, you would have thousands
+or millions of these per day streaming
+into a log aggregation system. We also
+have uh data training stats. Jason,
+which contained the baseline statistic
+from our training data. This is what we
+will compare against to detect the
+drift. We'll also introduce uh
+structure logging, a key pillar of
+observability. Instead of just uh
+printing to the console, we will use
+Python logging module to create
+machine readable logs that you can see
+over here, uh. In the part one, we have,
+uh, we are going to be using logging.
+So first, uh, notice how we configure
+logging. We are using Python.
+Uh, logging module with both, uh, file
+and console handlers. This means our
+log go to the, uh, monitor
+monitoring.log and the terminal. And
+why is this important? Because in
+production, you want logs that are, uh,
+time stamped and uh categorised by
+severity, right? Like, uh, uh, I've
+already seen info, warning error. We
+want different categories. And the
+final one is uh searchable. It should
+be searchable, right? So print
+statement doesn't give you this, but a
+structured log, uh, uh, log does that.
+OK.
+So, now let's uh understand this uh No
+data function.
+Uh, now logs, the log data function now
+logs what it's doing. See the logger.
+Info. Uh, yeah, when we run this, we
+will see a structure log increase for
+each operations.
+We load our production log from CSV and
+our training start from Jason. Uh, from
+here, uh, training start and logs. CSP.
+Then, uh, philtre to window, we have
+another function over here.
+Select only the 7 days of data, uh,
+monitoring it about, uh, recent trends,
+we care most about what's happening, uh,
+right now.
+So now let's uh run.
+Let's get it. Now, let's uh run the
+first uh part again.
+Yeah.
+Look at the output, you will see our
+log messages with a time stamp.
+Right? This is also being returned to
+monitoring.log.
+Uh, here, let me bring it down.
+Monitoring.log, right? In a format that
+uh log aggregation looked like the ELK
+stack can pass, right?
+Now,
+Now for system metrics, we calculate uh
+Latency stat and uh Parris
+Right, uh, yeah. The key insight, don't
+just use the mean. The P95 and P99
+latency are critical.
+Uh
+P95 means 95% of requests were faster
+than this value. This tells you about
+the
+Typical user experience, not just the
+average.
+So, a mean of 50 milliseconds sounds
+great, but uh if your P99 is, uh, let's
+say 500 milliseconds. So, 1% of users
+are having a terrible time. So, notice
+we also log these metrics in a
+structured way with the extra
+parameters. So this creates a machine
+readable log entries that can be
+ingested by uh monitoring tool, right?
+And if we talk about data metrics and
+uh drift detection, let me
+Let me bring that back. Uh,
+Part one.
+Uh
+Computer system metrics. Here we have
+compute data metrics, right? So, data
+metrics are where ML monitoring differ
+from uh traditional monitoring. The
+compute data metrics function compares
+production feature distribution to
+training baselines. For a numeric
+feature, we calculate mean and standard
+deviation. We put them side by side
+with the training start. So, a
+significant difference in mean or
+standard deviation is a red flag for
+drift, right? And for a categorical
+feature, we compare the frequency
+distribution. If category A was 40%
+during training but is now 10% in
+production, something has fundamentally
+changed about your user or uh you know,
+uh input data.
+Right. We also added data quality
+checks. See the warning if uh null
+value are detected. This is another MLS
+specific concern. Uh, missing data can
+uh silently break uh prediction. Yeah.
+Now, let's try to run the lab part two.
+In part 2.
+Uh, we move from basic statistic to
+actionable monitoring. So, here, we
+will calculate a quantitative drift
+score called PSI, Me live model
+performance, and, uh, most importantly,
+implement, uh, automated alerting. So,
+what we're simulating over here, we're
+using the same production log from part
+one,
+this uh logs. CSV. Uh, but now, we'll
+compare them against, uh, simulated
+training data to calculate drift. For
+the PSI calculation, we generate a
+synthetic training distribution that,
+uh, matches our baseline statistic. In
+a real system, you'd save your actual
+training data distribution when you
+train the model, then load it here for
+comparison. So this is where monitoring
+become operational. We are not just uh
+calculating metrics. We are triggering
+alert when things go wrong, OK? Before
+we dive into code, let's uh look at our
+alert.
+Configuration. This CML file defined
+threshold for all our uh metrics, OK?
+For example, uh, we alert if error rate
+exceed 1%.
+Right Uh, or if uh P 99. Uh, latency
+exceed 200 milliseconds. So each alert
+has a severity level, uh, like a
+critical warning or info and a message.
+So this separates uh configuration from
+code, right? Operations team can adjust
+the threshold without touching Python.
+That's the best practise for, uh,
+production system, right? Now, let's
+talk about PSI, Population Stability
+Index. This is a
+Single number that uh quantify how much
+a feature has drifted from its uh
+training uh distribution. The
+algoririthm wins both the training and
+production distribution the same way,
+then it uh compare the percentage of
+data in each uh uh bin, right? So the
+PSI formula combines these uh
+difference into one score. Here, the
+rule of thumb, like if PSI is uh less
+than 0.1, means no significant shift.
+And if PSI between 0.1 and 0.2 means uh
+minor.
+Uh, uh, minor shift. Now, if PSI is, uh,
+greater than
+0.2, that is a major shift, you likely
+need to retrain. So this gives us a
+clear automatic trigger for action,
+right? And the heart of part two is uh
+alert manager uh here in our lab part
+two.py.
+Uh, so this, uh, alert manager class,
+it loads our configuration, then
+evaluate metrics against, uh, the
+thresholds and look at the evaluate
+system metrics, right? It checks if
+error rate exceeds the threshold. If so,
+it creates the alert object with the
+metrics name, value, threshold, and
+severity, right? So, the alert is
+logged and stored. The same pattern
+applies to drift and model performance.
+Each evaluation method compares current
+values to threshold and uh trigger
+alert accordingly. So this is automated
+alerting in action. No human needs to
+manually check dashboards. Uh, the
+system alerts you when metrics, uh,
+cross, uh, threshold, right?
+Uh, now, let's, uh, look at the output
+first. Uh, let me run this.
+We see the monitoring, uh, Summary
+table here. This is our dashboard in
+text form. Then we see the alert
+summary over here. So this shows which
+alert fired, their severity and the
+specific value that triggered them.
+Right? Notice we have uh also
+calculating model performance metriings
+using ground truth from the logs. In
+production, you usually get uh ground
+truth with a delay, maybe hour or uh uh
+days later, but you can still calculate
+accuracy, AUC recall, etc. on recent
+data, right? We are comparing current
+AUC to the baseline from, uh, training.
+If it's dropped by more than 10%, we
+trigger a warning alert. If it falls
+from 0.75 absolute, we trigger a
+critical alert. This is how you detect
+your model degradation automatically.
+So the alerts are also exported to JSON.
+Let me show you.
+Here
+So, in real system, this station would
+be sent to Slack or Teams or an email,
+right? So, that's the routing part of
+uh config. Now, let me walk you through
+what this output is actually telling us.
+Uh, this is critical. It reveals a Uh,
+dangerous, uh, paradox that perfectly
+demonstrate why traditional machine
+learning metrics alone can be, uh,
+misleading. So now, uh, look at the, uh,
+summary table. Let me explain, uh, each
+metrics. Request, 70, right here.
+Only 17 requests over 7 days, very
+small sample in production, you would
+have thousands or millions. So this
+small size should make us immediately
+caution about aesthetical significance,
+right? Uh, now, P5, uh, P95 latency.
+It's uh 126 milliper second warning
+alert trigger, 26% over 100 millisecond
+threshold.
+Right? Not catastrophic, but uh
+trending wrong. This means 95% of
+requests uh complete under uh 126
+millisecond, right? Now, we have uh
+feature 1 mean.
+Uh, 10 to 12.42. Production means
+shifted by 2.42 here, which is a 24%
+change. The typical value of this
+feature have fundamentally uh shifted,
+OK.
+Then we talk about uh feature one PSI.
+Uh, that is 3.1.
+Uh, 938, right? Uh, alarm bell, again,
+remember, so PSI, if it's greater than
+0.2, it's critical. We are at uh 3.19,
+that's uh uh 16X the critical threshold.
+So, the entire distribution has
+fundamentally changed. The model is uh
+operating in a completely different
+universe that is, uh,
+Than it was uh trained for. And then we
+have AOC. So, AOC, uh, currently it's 1,
+baseline was 0.92, perfect AOC better
+than training. This should make you
+suspicious, right? Not happy.
+Uh, then we have recall one, also
+perfect.
+On massively drifted data, something is
+wrong, right?
+Uh, the alert summary, what it means.
+So we have four alerts, 3 critical, one
+morning, right? So, error rate is uh
+5.88. Threshold, 1%, nearly 6% of uh
+predictions fails. That is uh 1 in 17
+requests at a scale, if you talk about
+1 million requests per day, so it's
+like 58,000 failures. So direct user
+impact, right?
+2 and 3.
+Um, feature drift, PSI 319 and uh uh
+1.7.
+Right? Catastrophic drift on both
+feature, uh, 8 to 16X, the critical
+threshold. Your model has uh never seen
+data like this. It's uh like uh
+training on cats and showing it dogs,
+right? Then we have the latency, uh,
+126 uh.
+Uh, millisecond. So 26% of our
+threshold combined with, uh, everything
+else suggests the model is struggling
+with uh unused, uh, unusual data, right?
+So, the, now here, what you must
+understand, and look at this
+combination.
+AOC perfect, recall, perfect. Error
+rate, failing. PSI, uh, it's showing
+catastrophic uh drift, yeah. So if you
+only monitor AOC and recall, you would
+think model performed better than ever.
+Profit score, um, completely, it's a
+success, right? But the reality is, uh,
+the system is broken. Model see is
+completely different data. 6%
+prediction failed, perfect scores are
+meaningless, so,
+How is this possible? Uh, why perfect
+metrics with a broken system. So, the
+reason could be data leakage. Um, so,
+what could happen like, uh, ground
+truth leaking into features and, uh,
+model sees the answer. So basically, we
+have a bug in, uh, feature pipeline,
+right? Uh.
+That could be also a reason of
+selection bias like hard examples fail.
+Uh, we have seen like 5.88% errors,
+right? Only easy one evaluated, perfect
+score on bias sample. Label correction
+could also be the reason, like
+evaluating.
+Evaluation labels wrong or synthetic.
+The metric we're using it's meaningless.
+Uh, then sample size, we have 17
+requests, right? 1 failed. Uh, 16,
+successful prediction, perfect score on
+16 example, prove, uh, nothing, right?
+So, the core lesson here is, uh, this
+is why traditional, uh, machine
+learning metrics alone are insufficient
+and, uh, and kind of, uh, dangerous,
+right? You must also monitor system
+health, like error latency, then, uh,
+data quality, drift and distribution,
+then, uh, evaluation integrity, right,
+and the sample size. Without these, you
+are flying blind, perfectly you see
+while production meltdown.

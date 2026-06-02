@@ -1,0 +1,52 @@
+Another big challenge is schema
+evaluation. The structure of your data
+changing over time. In real system.
+New fields are added, old fields are
+removed, or may be renamed. Sometimes,
+data types changes from integer to
+string, or float to decimal. If you
+don't handle this carefully, downstream
+jobs can break at runtime, or worse,
+they keep running, but silently
+misinterpret the data.
+For machine learning,
+That can mean your model sees a
+different input schema than the one it
+was trained on.
+To manage schema evaluation, teams use
+data contract, explicit agreement
+between data producer and consumer. A
+data contract defines which fields
+exists.
+Their types and allowed values, and how
+changes should be rolled out to keep
+things backward compatible.
+Good practises Adding fields in a way
+that are backward compatible, like
+optional fields with defaults, avoiding
+breaking changes like removal or rename
+without coordination. And using schema
+registries or validations to enforce
+contract.
+For machine learning, data contracts
+help ensure that model don't wake up
+one day.
+To find their input shape or meaning
+has changed without warning.
+Data quality monitoring and machine
+learning monitoring are two sides of
+the same coin. Data quality monitoring
+looks at freshness, completeness,
+schema, and raw value distribution.
+Model monitoring looks at prediction
+distributions, drifts, and performance
+metrics. When something goes wrong,
+data quality alerts might say. Event
+counts dropped by topic X, or null rate
+spiked for feature Y. Model alerts
+might say prediction drift detected, or
+performance dropped on recent data.
+Looking at both together helps you
+quickly find the root cause and avoid
+blaming the model when the real issue
+is upstream data.

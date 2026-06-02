@@ -1,0 +1,25 @@
+Welcome back, learners.
+Let's now look at some different
+applications of natural language
+processing.
+Let's look at some common applications
+of NLP by their domain. Search and
+information retrieval.
+The applications are query
+understanding. Document ranking. Under
+customer support, there are
+applications like chatbots, ticket
+classification.
+Social media analysis includes
+applications like sentiment analysis,
+trend detection.
+Within healthcare, there are
+applications like clinical note
+analysis, medical record summarization.
+Under finance, there's news analysis,
+risk and compliance monitoring.
+Within education,
+There are applications like automated
+grading. And language learning tools.
+That's all for this video. I'll see you
+in the next one. Thank you.

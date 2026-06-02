@@ -1,0 +1,112 @@
+The first big responsibility of serving
+layer is model life cycle inside the
+server.
+That actually means loading the model
+when the service starts up.
+Or at least lazily on the first request,
+managing which version of the model is
+active, example V1, V2, or rollback to
+the previous version, making sure the
+model fits within the available
+resources, CPUs, GPUs, memory.
+A common anti pattern is loading the
+model inside the request handler every
+time. That's extremely slow and
+wasteful. Good serving layer loads the
+model once, keep it in memory, and
+reuse it across many requests, so
+inference is as fast as and efficient
+as possible.
+The next big responsibility is input
+validation and schema enforcement.
+The serving layer needs to check that
+all required fields are present,
+enforce correct types, strings, numbers,
+enums, arrays. Handle missing or
+invalid values gracefully, instead of
+just crashing.
+This has a few important benefits. It
+protects your model from garbage input
+that could cause weird behaviour or
+crashes. It gives client clear error
+messages when they call your API
+incorrectly. And it helps prevent
+subtle training serving SKU,
+where the model sees very different
+input in production than it did during
+training. In practise, we often define
+request, model or schemas, pedantic
+models in fast APIs, proto buff
+messages in GRPC, Json schema, and so
+on. These schemas make contract between
+client and server explicit and
+enforceable.
+Third responsibility Actually running
+the model in a safe, efficient way.
+This includes Using efficient batching
+when it makes sense, example, grouping
+multiple requests together for GPU
+models. Applying the correct feature
+transformation that match training.
+Managing threading and concurrency so
+that multiple requests can be handled
+without corrupting shared estate or
+overloading the model. While doing this.
+The serving layer has to respect the
+metrics we discussed in module two.
+Latency, especially P95 and P99 for
+online system, throughput, how many
+requests or rows we can handle per
+second, stability. Avoiding crashes,
+timeouts or hangs when input or traffic
+patterns are strange. In other words,
+it's not just called predict function,
+it's called predict under real world
+constraints.
+Next, the serving layer is.
+Responsible for formatting responses,
+raw model output might be num array
+tensors, or raw scores. The service
+should turn these into a clean human
+readable Jason or structured messages.
+With clear named field and a stable
+response schema, a good response often
+includes. The prediction itself Class
+scores, ranks, probabilities. And
+optional metadata. Confidence scores,
+model versions, time stamps, maybe a
+request ID. The goal is make it easy
+for downstream system and client to
+consume the output. And avoid breaking
+them every time you tweak the model.
+For client perspective, a stable, well
+designed response is often more
+important than exact model architecture
+under the hood.
+Finally, there's a bunch of operational
+responsibilities that live in the
+serving serving layer, concurrency.
+The service needs to handle multiple
+requests at once without corrupting the
+state or blocking everything.
+Handling error. When something goes
+wrong, it should return clear 400, 500
+error scores and avoid leaking internal
+or crashing the whole process, logging
+and observability. The serving should
+log request IDs, latency, error in
+events, and maybe some high level input
+output summaries.
+And expose metrics so monitoring
+systems can track request rates, error
+rates. And performance. Security basics.
+Depending on context, you might need
+authentication, authorization, rate
+limiting, input size caps, and so on.
+Even in simple teaching lab, it's worth
+calling these out, because in real
+production system, most of the work
+ends up being. Around these operational
+concerns, not just the Predict call
+itself.
+Yeah

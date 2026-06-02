@@ -1,0 +1,65 @@
+Welcome back, learners. In this video,
+let's look at some applications of RNNs.
+RNNs are flexible, depending on the
+input and depending on its output. We
+can design different types of
+architectures. There are 4 main types
+of architectures many to one.
+One too many Many to many, and sinkt
+many to many. Let's look at them in
+further detail.
+Many to one
+Here many and one refers to the number
+of tokens as input and output, right?
+So many to one means there are multiple
+different tokens as input and the
+output is just one token, right? So
+input can be a sequence of words.
+This input will go into the RNL.
+And produce an output.
+Which is a single label. Right? For
+example, sentiment analysis. If the
+input was, the movie is terrible.
+The output will be negative.
+It's like reading a whole book review
+to decide if it's good or bad. The next
+type of RNN is one too many. So you can
+imagine that the input is a token and
+the output are multiple different
+tokens.
+For example, a single image.
+The RNN takes the image vector as the
+initial state, and it generates a
+sequence of words. So this image Was
+the input to this RNN?
+And it created the output. A cat sat on
+a sofa, basically describing the image.
+It looks at the photo and describes it
+in a sentence. The next type of RNN is
+the many to many RNN. For example, a
+sequence goes in as input, and a
+sequence comes out as the output.
+The common example is translation.
+English goes in.
+To the RNN architecture.
+And French comes out?
+The thing to note here is that the
+length of input can be different from
+the length of output. Finally, the last
+type synced many to many. For example,
+imagine the input as a sequence of
+video frames, multiple different videos
+going together. Right? And the output
+needs a label for each frame.
+Example, running, jumping, so this
+would be your sink many to many, so
+multiple different.
+Inputs are coming, the video frames to
+the architecture.
+And then the different labels are being
+created, so L1, L2, L3, L4 labels for
+video 1, video 2, video 3, and
+respectively video 4. The prime example
+is creating subtitles for these video
+frames. That's all for this video, and
+I'll see you in the next one. Thank you.

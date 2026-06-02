@@ -1,0 +1,84 @@
+Hello, everyone.
+In the series of understanding the RDD
+lineage, let's understand by example
+today.
+So I'm just defining a scenario to you.
+So we just want to do a sales analysis
+of some products.
+So let's say we have two data sets as
+we can see on the screen sales.csv and
+products.csv. Sales.csv actually
+contains the tracking ID, the product
+ID, and the amount, and then
+products.csv actually contains the
+product ID and the category.
+Now, our goal is to calculate total
+sales amount per category. But now
+let's see how the Spark lineage
+actually works in action by seeing this
+mockup. So on the left, if you see
+right, there's a Python file which is
+actually reading the data from the CSV
+files that are present. And then they
+are mapping it.
+And then they are joining
+these two files. Like these two RDDs
+which are reading, pulling data from
+these files. And then they are reducing
+it by a particular key.
+And that's how we are getting the total
+sales per product category.
+So the first step is ingesting the data.
+Spark actually creates base RDDs,
+representing the file blocks in the
+storage.
+These are the leaf nodes of our graph,
+and if you see, right, the two RDDs,
+RDDA1 and RDDB1 got created.
+Then we are passing the CSV lines, and
+this is a narrow dependency because
+each input row maps to exactly one
+output row. No data moves between.
+Different machines or different
+executors. So this is one RDD sitting
+on one executor, and the RDDB one is
+another RDD sitting on another executor
+machine.
+To join by key, Spark must bring all
+the records with the same key to the
+same machine, and this causes a shuffle,
+and that's why this is a wide
+dependency, as we have discussed in our
+earlier lectures as well.
+Now step 4 is remapping, and this is
+again a narrow dependency because we
+are actually reshaping the tule.
+We're saying product amount category is
+getting reshaped into category and
+amount.
+So this happens locally on the shuffle
+data itself, so wherever.
+The executor has all the shuffled data.
+This operation can happen there itself,
+so it's, it's a single machine
+operation. That's why it's a narrow
+dependency. Let's move to the next step.
+This again is a wide dependency.
+And we'll know why, because it's an
+aggregation. We are summing the amounts
+by category.
+And different categories can sit in
+different RDDs. That's why shuffle is
+needed to group the new keys, which are
+categories together. So we have to
+bring all the category keys to that
+machine.
+OK, and the final step is saving the
+output into a text file or an output
+folder. So this is the lineage
+walkthrough of a very simple code. I
+hope you got some idea about how a
+Spark actually executes and how narrow
+and wide dependency come into the
+action. Thank you so much. I'll see you
+in the subsequent lessons. Thank you.

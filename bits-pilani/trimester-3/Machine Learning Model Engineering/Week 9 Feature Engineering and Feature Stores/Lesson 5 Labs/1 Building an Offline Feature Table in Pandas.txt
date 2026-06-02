@@ -1,0 +1,90 @@
+Hi, everyone. Welcome to the labs for
+module 9. In this series, uh, we are
+going to tackle one of the most, uh,
+critical and, uh, often challenging
+aspects of, uh, production machine
+learning, OK? That is, uh, feature
+engineering and the problem of, uh,
+training serving SQU, OK. So we will
+see how a features store architecture
+helps, uh, solve this. So I've added
+the module line over here. We have the
+reading.
+OK.
+So, here, our journey begins with all
+ML projects uh start with uh raw data,
+right? Let's uh look at uh the
+feature.PY.
+If we go inside the script, so this is
+our first, uh, script we are gonna see.
+So, here, we are creating a small dummy
+data frame. That is for the customer
+transaction. So if you notice here, we
+have a customer ID, then we have the
+timestamp and the transaction amount
+details, and the category.
+OK. Uh, and this represents the kind of,
+uh, raw event level data you would, uh,
+find in, uh, in any data warehouse, OK.
+So, our model can't use this directly.
+We need to engineer feature, uh, from
+it, from this uh small data set. OK. So,
+our goal is to create a feature table
+that our training process can use. For
+each customer, we want to calculate
+some behavioural features such as their
+total spending and uh and uh
+transaction count over the last 30 days.
+So, this is a classic feature
+engineering task. So, first, uh, we
+define our uh Time window, OK? So, we
+will use the latest time stamp in our
+data as uh our as of date and uh look
+back 30 days uh from there, OK? So this
+uh simulate a point in time calculation,
+OK. And the core of this logic is this
+pandas group by function.
+This group by operation, we are doing
+it for all 30 days transaction by
+customer ID. OK? And then we are
+aggregating them.
+Right?
+We calculate the sum of amount to get
+the 30 days spent. And the count to get
+30 days uh transaction occurred, right?
+So this is a powerful and uh expressive
+way to define feature. After the
+aggregation, we derive a third feature
+that is uh average 30-day ticket by
+dividing the total spend by the
+transaction count. And, uh, finally, we
+add the reference date.
+To every row, OK? And this is uh
+crucial for traceability. It tells us
+the exact point in time these features
+were valid for, right? So, yeah, let's,
+uh, let's run this uh script.
+Let's go inside the lab 9.
+Let's execute.
+Yeah.
+And here is our offline feature table.
+This is the final output we are getting
+from this script. Uh, notice, uh, it's
+structure.
+One row per customer, OK, with column
+for each of uh the feature we
+engineered, right? And this is the
+clean aggregated data that a model
+training script would consume. You join
+this table with your target label like
+uh did the customer churn uh on
+customer ID and uh reference date,
+right? So, the key takeaway is that
+this process is designed for batch
+processing. It runs on a schedule,
+processes large volume of historical
+data, and uh is uh optimised for uh
+throughput, not low latency, right?
+So, in the next script, we will explore
+how to get these same feature values in
+a low latency uh online setting.

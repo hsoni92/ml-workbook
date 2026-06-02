@@ -1,0 +1,58 @@
+So in our last video we looked at how
+to scale training on a single machine,
+but what happens when your model is so
+massive that 8 GPUs aren't enough. This
+is where we scale out to a cluster of
+workers using the multi-worker mirrored
+strategy. So this strategy is
+essentially the big brother of the
+mirrored strategy. That we just
+discussed in the last video, it allows
+you to scale beyond a single machine to
+a cluster of multiple workers. What
+makes it powerful is that each of those
+workers can itself have multiple GPUs.
+The core logic remains the same. It's a
+synchronous strategy that uses
+collective operations, specifically a
+multi-node already used to keep
+variables in sync. However, because the
+data now has to travel over a network
+cable like Ethernet or any other cable
+rather than just a motherboard bus,
+which was earlier in the case of a
+single device, Tensorflow has to
+orchestrate the communication across
+the entire network cluster.
+The key concept you need to know for
+implementation is the TF config
+variable, tensor flow config
+environment variable. Unlike a single
+machine setup, where Tensorflow can see
+all your GPUs automatically in a
+multi-node cluster. Each machine needs
+to know its role. The tensor flow
+config is adjacent string that defines
+the cluster topology. It tells each
+machine who the other workers are in
+the cluster, what their network
+addresses are, and specifically which
+worker. I am, for example, am I worker
+0 or am I worker 5, that I need to know.
+Once this environment variable is set
+on every machine, the multi-worker
+mirrored strategy, hence the complex
+task of partitioning the data and
+synchronising the gradients across the
+network automatically. This strategy is
+your go to solution for industry scale
+deep learning, which allows you to
+train models on dozens or even
+hundreds of GPUs simultaneously.
+In our next lesson, we'll move from
+these high level strategies to the low
+level mechanics of how Tensorflow
+actually places operations on specific
+hardware. Till then, happy learning.
+I'll see you in the next module. Thank
+you so much.

@@ -1,0 +1,66 @@
+Welcome back. In our previous session.
+We discussed the strategic shift toward
+real-time intelligence. Now let's get
+technical. What exactly is a stream? We
+define the core characteristics that
+set stream processing apart. There are
+3 fundamental pillars here. The first
+is low latency. In traditional systems,
+we were comfortable waiting hours in a
+stream. Results must be generated in
+milliseconds or seconds. This is what
+enables immediate automated decisions,
+like authorising a credit card
+transaction before the user even puts
+their phone away. The second is
+unbounded data. This is perhaps the
+most important conceptual shift. Batch
+data is bounded. It has a start and an
+end. A stream, however, is unbounded.
+It is a continuous flow of events from
+sources like IoT sensors or web logs
+that for all intents and purposes never
+ends.
+And the third is actionability. Streams
+aren't just for storage. They are
+designed for triggers, whether it is
+real-time monitoring of a server's
+health or interactive personalizations
+on an e-commerce site. The stream is
+built to be acted upon the moment an
+event arrives. To truly understand this,
+let's look at the direct comparison on
+the next slide. This table highlights
+the architectural trade-offs you need
+to consider as a data engineer. Data
+scope, as we just mentioned, Badge
+handles bounded static data sets,
+whereas stream handles unbounded
+continuous events. Then latency. We
+move from the scale of hours or days
+down to milliseconds to seconds, then
+hardware. This is a key infrastructure
+difference. Batch processing usually
+relies on commodity clusters and
+distributed file systems like HTFS. But
+stream processing, however, requires
+dedicated messaging systems like Apache
+Kafka to handle the high speed
+ingestion. Complexity. In batch, the
+complexity often comes from the high
+volume of data.
+In streaming, the challenge shifts to
+high velocity and maintaining dynamic
+state. Maintaining state, or
+remembering what happened a few seconds
+ago while new data is flying in, is one
+of the biggest challenges we face in
+stream engineering.
+Now that we have defined the stream and
+contrasted it with the batch, we need
+to address a big problem. If a stream
+is infinite, how do we perform
+calculations like sums or averages? In
+the next video, we'll look at the
+concept of windowing to solve exactly
+that.

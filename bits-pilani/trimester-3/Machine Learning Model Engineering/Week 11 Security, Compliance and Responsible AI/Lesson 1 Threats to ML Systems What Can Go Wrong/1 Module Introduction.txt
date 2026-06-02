@@ -1,0 +1,18 @@
+Welcome to Module 11. Topic 1. Threats
+to machine learning system. What can go
+wrong? In previous modules, we focused
+on making models fast, reliable, and
+observable. In this module, we add
+another critical dimension, security
+and responsible use. Machine learning
+systems, just like any other software
+system, can be attacked, abused, or
+misused. The risk touch your data, your
+input and model itself, and the
+infrastructure around it. The goal of
+this video is not to turn you into a
+security researcher, it's to give you a
+mental map of the main threats so you
+can design and operate machine learning
+system with security in mind from the
+start.

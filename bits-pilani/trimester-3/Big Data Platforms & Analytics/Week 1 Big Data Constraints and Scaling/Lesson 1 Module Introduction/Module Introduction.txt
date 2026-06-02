@@ -1,0 +1,62 @@
+Hey everyone. Welcome to the first
+module, Big Data Constraints and
+scaling for Week One. Before we dive
+deep into complex tools like Spark or
+Hadoop later in this course, we need to
+answer a very basic question, yet an
+important question. Why can't we just
+use a regular computer for big data?
+Most of us are used to solving problems
+by getting a faster device or adding
+more RAM, but when we talk about big
+data, we aren't just talking about a
+large file. We're talking about the
+data that is growing so fast and in so
+many different formats that it actually
+evolves the way traditional computers
+work.
+In this module, our first stop is
+understanding the three V's volume,
+velocity, and variety. Volume is about
+size. Imagine trying to fit the entire
+ocean into a single bucket. Velocity is
+about speed, data coming at you like a
+fire hose that never turns off. Variety
+is about types, mixing photos, text,
+sensor data, videos, all at once. We
+will explore how these three factors
+create constraints or walls that force
+us to rethink how we build systems.
+Next, we will look at the physical
+limits of a single machine. We often
+think that if we just buy a more
+expensive supercomputer, we can solve
+any problem. This is called vertical
+scaling or scaling up. However, we will
+learn why this approach eventually
+fails. Not only does it become
+incredibly expensive, but physics
+eventually halts the way. Your CPU's
+speed will have a logical limit, and
+your storage can only fetch data up to
+a limit. And Then they hit a hard
+ceiling. When you hit that ceiling, the
+system crashes, your business stops.
+This brings us to the core theme of
+this module, horizontal scaling or
+scaling out. Instead of buying one
+giant expensive mega machine, what if
+we use hundreds of regular cheap
+computers, what we call commodity
+hardware, and make them work together
+in union. This shift from bigger boxes
+to more boxes is the foundation of
+every big data platform you will use in
+this course. It is the difference
+between one giant person trying to lift
+a mountain and a million people each
+carrying a single stone. We're setting
+the foundation today so that when we
+start coding later, you'll understand
+the why behind the how. Happy learning.
+End of video one.

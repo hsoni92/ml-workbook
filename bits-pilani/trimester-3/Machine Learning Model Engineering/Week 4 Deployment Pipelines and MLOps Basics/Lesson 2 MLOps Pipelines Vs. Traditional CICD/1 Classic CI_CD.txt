@@ -1,0 +1,51 @@
+Welcome to Module 4, topic 2.
+MLOs pipeline versus traditional CICD.
+In topic one, we talked about
+deployment pipelines in general, how we
+go from data to a deployed model with a
+sequence of automated steps. In this
+video we are going to recap what
+classic CICD looks like in normal
+software engineering.
+See what's different when we add
+machine learning into the mix.
+Introduce the data of idea of data and
+models as first class artefact. And
+build a hybrid picture where
+traditional CICD and ML pipelines work
+together.
+By the end, you should understand why
+you can't just copy paste a standard
+software CICD pipeline and expect it to
+be enough for machine learning.
+Let's quickly recap traditional CICED
+from the software world.
+Continuous integration, or CI is about
+developer pushing the code frequently
+and automated builds and tests running
+on every change. Continuous delivery or
+deployment, CD. Is about taking those
+tested changes, packaging them, and
+deploying them to staging our
+production in a small, frequent, low
+risk release.
+The classic picture of pipeline looks
+like the code, build, test, deploy.
+This works really well when your main
+artefact is just code compiled or
+packaged into a binary.
+Or container. In traditional CICD
+pipeline. The focus is on producing one
+main artefact from our code. In typical
+sequence, looks like.
+Check out the repo, build the
+application and container, run unit
+tests and integration tests, then
+package and deploy. The behaviour of
+the system is largely determined by
+which code version you build.
+So the pipeline jobs. To make sure that
+the particular code version has passed
+tests, and then ship that single
+artefact.
+Often a container image into production.

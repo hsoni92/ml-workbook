@@ -1,0 +1,60 @@
+Welcome to the future of language,
+natural language processing.
+Have you ever wondered how chat GPT
+seems to think? How Google Translate
+instantly bridges cultures. Or how your
+phone predicts exactly what you're
+about to type.
+We're living in a historical pivot
+point, where machines have finally
+learned to speak our language. And in
+this course,
+You're going to learn how to build that
+future.
+Why NLP, you may ask.
+Natural language processing, or NLP, is
+no longer just a subfield of AI. It is
+the interface of the modern world. From
+sentiment analysis that drives global
+markets to large language models that
+co-writes code, the ability to process
+text is the most sought after skill in
+tech today.
+What we'll master together.
+We've designed this course to take you
+from the basic alphabet of NLP to the
+poetry of generative AI. We begin with
+the foundations of cleaning text,
+handling grammar, and understanding the
+nuances of human language. Then we go
+to word embeddings. You'll learn how to
+turn words into math, using Word2Vec,
+Glove, TFIDF, and much more
+technologies.
+We'll follow it up with the RNN era.
+Here we'll learn about the
+sophisticated architectures like RNNs,
+LSTMs, GRUs. We'll build models with
+memory to predict sequences.
+Last but not least, the transformer
+revolution. Finally, we'll deep dive
+into the architecture that changed
+everything. Transformers, the engines
+behind the generative AI explosion.
+Throughout the course, you will get
+ample opportunity to get hands on
+experience to solidify your
+understanding. You will get your hands
+dirty building real world tools like a
+semantics search engine, a sentiment
+classifier.
+A quiz app powered by LLMs.
+And much more.
+By the end of this course, you'll
+understand the why behind the magic,
+and the how behind the code.
+This course will be a massive step
+ahead in your journey from an AI user
+to an AI engineer. Are you ready to
+give machines a voice? Let's dive into
+Module One.

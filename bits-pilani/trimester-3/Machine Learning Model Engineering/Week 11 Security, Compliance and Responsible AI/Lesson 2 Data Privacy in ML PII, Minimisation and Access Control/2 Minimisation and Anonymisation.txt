@@ -1,0 +1,53 @@
+A core privacy principle is data
+minimization. Don't hoard data just
+because you can. Collect only what you
+need for the specific task and metric
+you're targeting. Ask questions like.
+Do we actually need raw identifiers, or
+would an internal ID suffice?
+Can we use aggregated or bucketed
+features instead of raw values? Can we
+safely drop or archive data after a
+certain time of window?
+minimising data reduces your attack
+surface, simplifies compliance, and
+makes accidental misuse less likely.
+It's one of the simplest and most
+powerful privacy tool you have.
+To reduce privacy risk, we use a few
+standard tools masking or redaction
+heights, parts of sensitive fields, for
+instance, storing only the last four
+digits of a number.
+Aggregation or bucketing group values,
+we store age ranges instead of exact
+ages, or city level location instead of
+precise GPS coordinates.
+Pseudonormalization replaces direct
+identifiers with internal IDs or hashes,
+while the mapping is stored separately
+in the restricted system. These
+techniques help but full.
+Anonymity is hard to guarantee.
+Especially when data can be cross
+referenced with other sources, so treat
+anonymization as a risk reduction tool,
+not magic. You will sometime hear,
+Don't worry, we'll just anonymize it.
+In practise, that's tricky. Many
+machine learning tasks genuinely need
+detailed behaviour, long histories,
+rare events, fine grained context,
+reducing everything to course bucket.
+And destroy signals.
+On top of that, data sets can be joined.
+When look what look anonymous within
+your system might become identifying
+when combined with external data, and
+even model artefacts can leak
+information if they memorise rare
+examples. The takeaway is, don't rely
+on anonymizations alone. Combine data
+minimization, technical controls like
+access controls and encryption, and
+organisational policies. Thank you.

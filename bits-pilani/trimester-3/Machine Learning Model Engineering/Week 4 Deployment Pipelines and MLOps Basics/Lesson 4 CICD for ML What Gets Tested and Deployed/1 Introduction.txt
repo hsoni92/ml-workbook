@@ -1,0 +1,50 @@
+Welcome to Module 4, Topic 4, CICD for
+Machine Learning. What gets tested and
+deployed in topic 1, we introduced
+pipeline. In Topic 2, we compared
+machine learning pipeline with
+traditional CICD. In Topic 3, we talked
+about artefacts and lineage. Now we are
+going to zoom in on what actually
+happens in CICD for machine learning
+systems. In this video you will see
+what CI looks like. For machine
+learning projects, what we check
+automatically on every change. What
+gets tested code, data assumption, and
+model quality. How CED, continuous
+deployment or delivery decides which
+models get promoted to staging or
+production, and
+This all connects to the repo, ML flow,
+and CI workflow you will use in the
+labs. Think of this as turning the
+abstract idea of CICD for machine
+learning into a concrete mental
+checklist of what we verify and what we
+ship.
+Let's anchor ourselves in the big
+picture.
+Continuous integration is about running
+checks on every stages.
+Or and with every change. Typically
+when someone pushes a comment or opens
+a portal request.
+We catch the problem early, before they
+reach production.
+Continuous delivery.
+Our deployment, CD is about promoting
+artefact that pass those checks into
+staging or production.
+Doing so in safe and controlled way. In
+machine learning, CI tends to check
+code quality and test. Data assumptions,
+and sometimes a quick small training
+runs to make sure nothing is
+fundamentally broken. CD, on the other
+hand, decides which model and which
+code versions are good enough to go
+live.
+We will walk through both halves in and
+machine learning a specific context.
+Thank you.

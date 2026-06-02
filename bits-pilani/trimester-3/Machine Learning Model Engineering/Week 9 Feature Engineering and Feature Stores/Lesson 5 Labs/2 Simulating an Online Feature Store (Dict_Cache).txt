@@ -1,0 +1,70 @@
+Now, let's see how to abstract the
+feature logic into a reusable function
+and uh build a simple in-memory online
+feature store for uh real-time lookup,
+OK? So,
+in this script, what you're gonna do.
+We will create uh a beautiful offline
+feature table for training, OK? But
+what happens when our model is live and
+uh Prediction request for a single
+customer comes in, we can't run a slow
+batch group by operation on our entire
+data warehouse for uh every single
+request, right? So we need the same
+feature values, but uh we need them
+fast, OK? So this is the problem that
+uh online feature store solves. It
+provides a low latency lookup mechanism
+to fetch uh Uh, pre-computed features
+for a specific entity like a customer
+ID, OK? So, in this script, we are, uh,
+uh, we will simulate a simple version
+of, uh, this, OK? And, uh, the
+important step toward consistency is to
+encapsulate our feature logic into a,
+uh, reusable function. So, let's look
+at, uh, compute 30 feature.
+Here?
+This function contains the exact same
+logic as of our offline script, but
+it's uh parameterized to work for a
+single customer at a uh as of time, OK?
+So it takes uh the transaction data
+frame. OK. And uh time stamp? And
+return a dictionary containing the
+calculated feature values for just that
+customer. So this function is now our
+single source of truth for this feature
+group. By defining the logic ones, we
+can use it in multiple places, which is
+the key to avoiding skew, right? Now,
+let's build our simulated online store.
+We will use a simple Python dictionary.
+As our low latency Kar store. We
+iterate through each unique customer ID,
+OK? Uh, call our compute
+uh 30 days features, OK, function for,
+uh, each one, OK, and store the
+resulting featured dictionary in the
+online store. Yeah, right? With the
+customer ID uh as the key. In the real
+system, this process of computing and
+updating feature is called uh
+materialisation, OK? And the dictionary
+would be distributed, uh, cache like uh
+Reddis or a database like uh Dynamo DB,
+OK? So let's, uh, run this, uh, script.
+57
+9.
+I do.
+Yeah. Onlinestore.py
+execute it. The script uh, prints out
+the online store dictionary. Right? Now,
+we have a life prediction request come
+in for, uh, say, customer one. Our
+serving code can simply call, get
+online feature one, right? This is a
+fast uh dictionary lookup. Giving us
+the feature vector in millisecond. So
+this is how we serve a feature online.

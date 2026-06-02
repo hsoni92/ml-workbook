@@ -1,0 +1,135 @@
+Hello, everyone. Welcome to the first
+lab session of the Machine Learning
+Model Engineering life cycle. I'm
+really excited to kick this off with
+all of you. To start off, let me
+quickly tell you what to expect in this
+lab. Today, we are not jumping directly
+into heavy code right away. We are
+keeping things simple and uh focusing
+on the overall flow.
+We are going to tour the full landscape,
+the big picture. Think of today's lab
+as a guided walkthrough.
+And uh I will provide you with
+ready-made scripts, so don't worry
+about uh writing perfect syntax right
+now. In today's lab, simply try to
+understand the flow, and uh we'll go
+deeper into the details later.
+OK. So, if you want to build a real
+MLAI application, you must know what
+all components will be required to do
+that, right? How to start a project, uh,
+how to set up a development environment,
+how to pick the right model, uh, for
+your scenario. And how to download it.
+Finally, how to package it into
+something real that uh user can
+actually run. So, with that mindset,
+let's look at the components. We will
+explore in today's lab. These are the
+components. We will walk through the
+complete flow of starting and building
+an MLAI project.
+First, we'll see how to set up the
+project um environment. Here, we'll
+configure the ID and create a clean
+workspace. Then we'll see how to start
+a new MLAI project. We'll understand
+how to organise project files and uh
+dependencies. Then we'll see uh how to
+use Jupiter notebook for
+experimentation. We'll run code over
+here, we'll test ideas, and explore
+model behaviour.
+Then we'll explore huggingface.com.
+And here we'll see how to search for
+models, how to choose right model for
+our scenario, and we'll download it.
+Uh, then we'll run a prediction using
+the model which we have downloaded from
+hugging face and write simple code to
+see how the model responds.
+And then eventually we'll convert
+whatever experiments we have done over
+here. Into a structure Python package.
+So, basically, we'll move from notebook
+code to a structure Python package.
+So, yeah, let's move to the ID setting
+up our project environment to build any
+ML application, we need an ID. And uh
+I'm gonna use VS code because it's uh
+widely used, but you can use Pyham or
+any other tool you like.
+Uh, so let's do that. I have created
+this, uh, directory. Which I'm gonna
+use uh for creating uh all the projects
+inside it. So let's open terminal over
+here.
+And just type uh code space dot.
+So this will open your VS code uh at
+this directory. So, I had created this
+lab one and you can see in the left
+corner, uh, we are inside the lab one.
+Uh, now, let's say you haven't
+downloaded VS code so far, then what
+you can do, just go to the Google, type,
+uh VS code. And you'll see, uh,
+downloaded for Windows or Mac OS. So
+simply you can go in here and, uh,
+click on download button. It will get
+downloaded and you will see something
+like this, and it's open source, so, uh,
+you can use it easily.
+Now, an important step in every uh
+Python project. Uh, that you have to
+create a virtual environment and why
+this is necessary. Because, uh Virtual
+environment keeps all your project
+libraries separate, and uh this way,
+your main system Python stays clean.
+Uh, and it can also help you when
+you're working on different projects,
+and your different project need
+different version of liabilities.
+So, each project gets its own dedicated
+environment, so installing or uh
+upgrading something in one project
+won't impact uh or affect the others.
+So now, let's talk about the
+prerequisite. So before we start, make
+sure you is install.
+And basically, UV is a fast package
+manager that help us create
+environments and uh install
+dependencies quickly. So, I have a
+small handbook guide for the UB setup.
+Uh, you, I have created this, uh,
+Uh, handbook.
+So simply follow this and you'll be
+able to create a
+Uh, set up UV on your system. So, what
+you have to do. Um,
+Just uh copy this this command on your
+terminal or in your uh CMD. I've
+already downloaded it, so it's a
+one-time activity, so these two
+commands you have to. Uh, execute on
+your terminal. Once you do that, uh, it
+will get installed and get configured,
+and to verify your installation, what
+you can do, you can type UV. Vern, so
+it will tell you what version of UV you
+have installed on your system.
+Right, then you can uh
+Create a new directory for your
+projects. So MKDIR is the command. I've
+already created lab one, and I'm inside
+this lab one. So when you do CD lab one,
+you'll be inside this directory. Now
+Like I mentioned, virtual environment
+is very important. So let's create a
+virtual environment and it's very easy.
+When you have installed uh UV on your
+system.

@@ -1,0 +1,56 @@
+All right, learners, let's get started
+with package installation and the API
+setup. All right, learners, I hope
+you're excited to get started. In this
+video, we will set up our project so
+that we can implement it easily in the
+following videos, right? So let's get
+started.
+So let's begin with package
+installation and the API setup, right?
+So first, let's install Google GEI
+library. So we will run a PI install.
+Great. Now let's run some imports. So
+import Jason for the output, Google,
+from Google, we will import Gen AI to
+handle the LLM application.
+Again, from Gen AI we will import types,
+and I will show you the implementation
+in the project, right? Finally, some
+rejects, right, so let's run this.
+Great. Now what I'll do is I will call
+the API key. Well, just to run the app,
+you can directly paste your API key
+here, right? Let me paste this here so
+that it makes much more sense to you.
+Yeah, so you can directly paste your
+API key here. However, highly not
+recommended for industrial applications
+because your API keys need to be secure,
+right? So what we will do, we will copy
+your API key. And we will paste it here
+and we will define the variable name as
+Gemini API key. So what userdata.get
+will do is it will fetch this API key
+and store it in this variable, right? I
+hope that makes sense.
+Once we have our API key handy, we will
+define the client. What is client,
+GNAI.client, and we will pass the API
+key. This client will let us run the
+LLM model, right?
+Let's also define the model name Gemini
+2.5 flashlight. Again, this is a
+lighter version of the Gemini 2.5 model.
+This is lighter in applications of
+faster and also more cost effective,
+great for demo purposes and POCs.
+Again, in some applications, you can
+also define the model name as part of
+your hidden data.
+Let's run this again, just to make sure.
+Great, so our setup is done. Great. I
+will see you in the next video where we
+will set up our prompt template for the
+application. Thank you. All right, I'll
+see you in the next video. Thank you.

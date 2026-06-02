@@ -1,0 +1,93 @@
+With machine learning, the classical
+picture is incomplete. The behaviour of
+a machine learning system depends on at
+least 3 things the code, feature logic,
+model architecture, serving code. The
+data and label the model was trained on.
+The model parameters and configurations
+like hyperparametters, thresholds,
+preprocessing choices. If your CICD
+only looks at code, you're missing two
+huge pieces of the risk surface data
+issue and model issues. That's why
+machine learning pipeline.
+Have to go beyond classic CICD. They
+need to treat data and model as first
+class citizens.
+First, let's talk about data and model.
+When you ship a new model, you will
+implicitly ship shipping a particular
+training data set version, a particular
+label, definition, and labelling
+process. A snapshot of the data
+distribution at that time. If the data
+changes, say features disappears,
+distribution dev shifts.
+Our labels are defined differently, the
+model's behaviour changes, even if the
+code is identical. So machine learning
+pipeline must treat data version and
+schema as part of the release. Run data
+quality checks. They are field present
+are range scenes.
+Is there unexpected drift compared to
+previous runs? In other words, every
+machine learning release is not just
+new code, it's code plus data.
+The second big difference is that
+models themselves are artefacts.
+And machine learning pipeline doesn't
+just reproduce a container, it produces
+model artefact, files with weights and
+serialised models.
+Evaluation metrics, AUC accuracy, loss
+curves, fairness metrics, calibration
+plots, and other artefacts like reports
+and visualisation. We need to store and
+version these models, attach their
+metrics to each version, and use those
+metrics to decide whether a model is
+eligible for deployment. So machine
+learning pipelines are not just
+Did the test pass?
+There also, does this model meet or
+exceed the performance criteria
+compared to the baseline?
+Another key difference in machine
+learning behaviour is data dependent.
+Traditional pipeline focus on code
+tests do function work as expected? Do
+services integrate correctly?
+We still need those, but in machine
+learning. We also need ML specific
+checks. Data schema tasks are required
+fields present, are types and ranges
+valid? Data distribution tests. Is this
+data similar enough to what we trained
+on? Or we are seeing drift or leakage.
+Model validation test.
+On a hold outset, does this model
+achieve an acceptable matrix compared
+to our baseline models? The core
+question becomes, is this model good
+enough on this data, or to be promoted
+to next stage? That makes machine
+learning pipeline feels like more
+scientific experiment encoded as a code,
+rather than just code compilation.
+Important point Machine learning
+doesn't replace normal CI.
+Your machine learning system still has
+lots of regular software components,
+feature engineering code, serving code
+of API and batch process,
+infrastructure as a code,
+configurations, glue script. For all
+that, you still need. Or you still want
+classic CI lining and formatting checks,
+unit tests and integration tests for
+code, building and publishing container
+images. So when we say ML ops pipeline,
+we are not throwing away what we know
+from software engineering. We are
+adding MLF specific layer on top of it.

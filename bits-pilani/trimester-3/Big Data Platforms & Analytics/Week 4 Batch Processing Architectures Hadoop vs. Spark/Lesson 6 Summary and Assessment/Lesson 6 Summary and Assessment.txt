@@ -1,0 +1,48 @@
+We have reached the end of Module 4.
+Over the course of this module. We have
+charted the evolution of batch
+processing, moving from foundational
+reliability of Hadoop to the high
+performance speed of an Apache Spark.
+We began with a deep dive into SDFS.
+Where we learned that Hadoop
+prioritises data durability through its
+block and replicate strategy.
+By breaking data into large blocks and
+distributing 3 copies across different
+tracks. HDFS ensures that even
+significant hardware failures. Won't
+result in data loss. However, we also
+identify the Achilles' heel of the
+Hadoop MapReduce model, high IO latency.
+The requirement to write intermediate
+results to a physical disc.
+What we call materialisation cost.
+Which creates a significant bottleneck,
+especially for iterative workloads like
+machine learning.
+This led us to the in memory revolution
+brought about by Apache Spark. By
+utilising RAM as its. Primary workspace
+and organising computations into an
+intelligent directed a cyclic graph,
+which is also called DAG. Spark
+minimises unnecessarily discrete rights.
+We saw through our Kamins benchmark
+that this architectural shift can
+result in performance gains up to 100
+times
+for certain algorithms. Finally, we
+discussed the trade-offs. Hadoop
+remains a cost effective solution for
+massive scale archival storage on
+commodity discs, while Spark offers
+unparalleled speed at a higher hardware
+cost due to its heavy reliance on RAM.
+We should now be able to evaluate.
+Which architecture best suits your
+specific big data needs, based on
+performance requirements and budget
+constraints? Thank you for joining us
+in module 4. I'll see you in the next
+module. Till then, happy learning.

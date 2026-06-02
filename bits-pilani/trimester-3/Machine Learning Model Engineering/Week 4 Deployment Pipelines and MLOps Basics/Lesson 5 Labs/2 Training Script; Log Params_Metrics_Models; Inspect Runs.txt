@@ -1,0 +1,132 @@
+OK. So now let's uh focus on how our
+training script is um instrumented with
+uh ML flow for experiment tracking, OK?
+So, we will walk uh through where
+MLFlow is called in the code, run a
+training job, and then inspect the
+logged runs, metrics, and artefacts in
+the ML Flow UI. The goal is to see how
+the concepts of artefact and lineage
+become real and tangible inside a uh
+tool like uh ML flow, OK? So, let's, uh,
+trace the ML flow calls in our
+training.py, OK. So first, uh, every
+training job is, uh, wrapped in an ML
+flow
+start run that you can see over here,
+right? So it's basically context
+manager. Everything we log from this
+point on will be neatly grouped under
+this uh specific run.
+Right, that you can see over here.
+Uh, inside the run, we call ML flow.
+Log parameters? Right? Here, we log our
+hyperparameters and configuration
+values directly from our config file.
+These become searchable field in the UI
+which is uh incredibly useful for
+comparing uh experiments, right?
+Now we have uh log metrics.
+Yeah
+Right? So, after training, we log our
+performance with MLflow.log metrics. We
+are logging dummy values for now, MSC
+and uh IO scores, right? But in a real
+project, there would be actual results
+from your uh evaluation step. So you
+can log metrics at uh EE park to see
+uh learning curve and any other metrics.
+Right. Now, finally, and uh most
+importantly, we log the model itself
+using ML flow Escalon log models.
+Uh, here
+So, this registers the model artefact
+directly uh under the run, creating a
+tight link that uh this run produced
+this exact model. So this is the core
+of uh lineage tracking. So, notice the
+pattern, we start to a run here, then
+we log the parameters. Right? Then we
+log the metrics. And then we log the
+modem, right? So, this simple process
+turns a one-off training script uh into
+a fully tracked uh experiment with a
+complete uh lineage, right?
+Now
+Let's run the training script with uh
+ML flow uh enabled. Uh, so, in the
+terminal. Inside our project directory,
+we will run the command and to run the
+training script, you can check the
+Read me. MD
+so.
+This is the command we have to pass
+Python script train.py and uh here we
+have the configuration file. So let's
+copy it, open the terminal.
+And yeah, before running this, make
+sure you, you have uh installed the.
+Uh, dependencies. So again, you'll be
+install. Uh, iPhone 5 and the
+requirements.
+Right, uh, right? So our, uh, virtual
+environment is already activated and uh
+I have installed all the dependencies,
+uh, our new dependencies for this lab.
+Now, since we have already copied the
+command, let's uh execute this.
+And as the script runs, you will see
+our print statements.
+Uh, but, uh, behind the scenes, MLFlow
+is capturing everything. You will
+notice a new directory has been created.
+Uh, this is where, uh, uh, MLflow
+stores the tracking data locally by
+default. Uh, you run training the same
+way as, uh, before, but now the
+difference is, uh, every run leaves a
+trace, a unique ID parameters, the
+metrics, uh, version, model artefact,
+everything we are basically capturing
+in the Ammanfl
+Right? And it's uh completed.
+Now, to see the result, we will launch
+the ML flow UI in the terminal. Again,
+let's go to the EV.
+And you can see here to run the UI we
+have to
+Execute.
+ML flow.
+U.
+Yeah.
+Now the server has started.
+Open this, uh, let's copy this. Local
+host uh URL. It started a local web
+server. Let's open that in a browser.
+So let me put you over here.
+Right? So this is the experiment we
+just ran. Let's go inside it.
+Uh,
+This is our friend.
+Click on it.
+And uh then you can see all the details.
+We have the metrics. We have logged MSC,
+uh, how to score, the parameters.
+And uh Models, output, you can see over
+here.
+And uh you'll also get all the details,
+uh, the run ID and everything. Uh, here
+we have the model metrics. Right now,
+this looks very simple. If you have uh
+some complex data, so that also will
+get uh plotted over here.
+Right? Then let's uh
+Check the artefacts. So here, uh, we
+can see the model details. So, yeah, we
+have seen uh how to
+And uh
+Training with uh MM flow.
+And uh once you complete your training,
+you can run ML Flow UI where you can
+see uh all the Details. Which we have
+captured uh during uh training.

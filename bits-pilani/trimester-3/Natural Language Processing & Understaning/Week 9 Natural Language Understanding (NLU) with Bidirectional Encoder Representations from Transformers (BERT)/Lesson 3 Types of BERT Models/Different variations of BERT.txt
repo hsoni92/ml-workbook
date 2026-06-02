@@ -1,0 +1,46 @@
+Welcome back learners. Now in this
+video, let's go through some of the
+different variations of the BERT model.
+The BEERT model has been fine-tuned for
+different tasks and for different
+languages as well. If you go to the
+Hugging Face website and search BERT.
+That's just BERT. You will find an
+array of different birth models. Let's
+go through some popular versions of
+Bert, the first one being Roberta.
+Roberta is Facebook's version of Bert.
+So basically the AI researchers at
+Facebook trained the BERT architecture
+for way longer on much more data, and
+they removed NSP, the Next Sentence
+Prediction task, as they found it
+unnecessary. Roberta usually
+outperforms the standard Bert, and it
+is case sensitive. The next model is
+Albert, or a lighter version of Bert.
+Albert uses parameter sharing to reduce
+memory footprint. Albert is also case
+sensitive. The next, and a very popular
+BIRT model, is the distal bird.
+Disilbert is a smaller, faster and
+cheaper version of BRT, which in itself
+is very huge and slow.
+Distilled bird tries to mimic the
+output probabilities of birth, and this
+technique is called knowledge
+distillation. This resulted in a 40%
+smaller, 60% faster model that retained
+97% of the performance. Distillbert is
+ideal for mobile or real-time
+applications. Here are some popular,
+fine tuned variation. Finance Bert,
+fine tuned on financial literature.
+PubMed Bert fine tuned on PubMed, or
+medical and life science articles.
+Germed Bert is again a life science or
+medical version of Bert, but in German
+language.
+Then, Legal BERT, a BERT model fine
+tuned on legal documents. And that's
+all for this video. Thank you.

@@ -1,0 +1,84 @@
+Let's talk about each force, starting
+with accuracy. Accuracy is obviously
+important. Better models detect fraud
+more reliably, rank search results more
+effectively, provide safer or fairer
+decisions. But in many architectures,
+getting higher accuracy means building
+deeper networks, increasing the numbers
+of parameters, and increasing the cost
+per request. At some point, each extra
+percentage point of accuracy comes with
+large costs in terms of latency and
+infrastructure.
+That is where we need to start asking,
+is this extra accuracy actually worth
+what it does to latency and cost?
+Next, latency. Latency is the time
+between sending a request and getting a
+prediction back. Human perception is
+very sensitive here.
+Under about 100 to 200 millisecond
+interaction feel almost instant.
+Between 0.5 2nd and a second, people
+start to feel that there is a delay.
+Beyond 1 2nd, the interface can feel
+slow and frustrating. Notice something
+similar or something important. User
+never see a metric like area under the
+curve, or AUC. They simply feel whether
+the product is responsive.
+That is why latency is a such a
+powerful and sometimes invisible force
+in this tug of war.
+Now let us put accuracy and latency
+together. Imagine you have 2 candidates.
+Model A has 11 or 2% points higher
+accuracy.
+But it is 3 times slower. Model B is
+slightly less accurate, but much faster.
+In an offline leaderboard, Model A
+looks like a winner, but in production,
+Model B might be the right choice if.
+Model A would break your P95 latency
+target. Model B keeps the experience
+snappy. And Model B allows you to
+handle more traffic on the same amount
+of hardware. This is why. Model
+engineering often choose
+a model that is good enough, accurate,
+but much better on latency and cost.
+The third force is cost. Cost is driven
+by how many machines you run, whether
+you use expensive GPUs or cheaper CPUs,
+storage or network usage, and
+engineering work to maintain the system.
+Pushing latency fewer often means more
+replicas of the service or more
+powerful and expensive instances. So a
+natural question for every change is.
+Is the extra accuracy, or the lower
+latency, actually worth the increase in
+monthly cloud bills?
+Sometimes the answer is yes, sometimes
+the answer is not for this product or
+this segment of users.
+The fourth force is user experience,
+often shortened as UX. UX is a
+combination of how fast the system
+feels, how often it is right, how often
+it fails or time out, and whether user
+feels they can trust it.
+This is what ultimately matter to the
+product and the business. The system
+that is perfectly accurate but
+painfully slow as bad UX. A system that
+is fast but often wrong also has a bad
+UX.
+Sometimes the best UX comes from
+accepting slightly lower accuracy,
+investing more in latency or
+reliability, or even spending a bit
+more money on critical user flows. UX
+is where all the other forces become
+visible.

@@ -1,0 +1,25 @@
+Welcome back, learners. In the last
+video, we saw the requirement for
+transformers.
+Let's now in this video also see where
+Transformers came from. The paper
+called Attention Is All You Need.
+In 2017, not long ago, Google Brain
+researchers published the paper called
+Attention is All You Need.
+This paper proposed a simple idea.
+Discard RNNs and CNN's entirely.
+Instead, use a mechanism called self
+attention.
+What was the impact?
+This allowed models to be trained on
+massive data sets like whole of
+Wikipedia, whole of Reddit, whole of
+Stack Overflow, basically the whole
+Internet, much faster than before. And
+the result, you know.
+You know what followed? It birthed the
+era of the modern day large language
+models like Bert, GPT 3, Gemini, Claude,
+and so on. More in the next video, and
+I'll see you there. Thank you.

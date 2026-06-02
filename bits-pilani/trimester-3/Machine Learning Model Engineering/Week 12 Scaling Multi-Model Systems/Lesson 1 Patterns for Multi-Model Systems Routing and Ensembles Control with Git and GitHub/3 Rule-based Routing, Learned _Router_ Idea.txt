@@ -1,0 +1,40 @@
+The simplest form of routing is
+rule-based. For example, you might rout
+by country or language. If user is in
+India, use model.
+The user is in Europe, use model_EU,
+otherwise fall back to a model_global,
+or you might route by product, tenant,
+or risk band. High value customers get
+a heavier, more accurate model,
+low risk or low traffic segment get
+lighter, cheaper model. The big
+advantage is that this approach is easy
+to understand and explain because
+stakeholders can see and agree on the
+rules. The downside is that you add
+exceptions and special cases, the rules
+can become messy and hard to maintain.
+A more advanced pattern is learned
+routing, sometimes called router expert
+setup. Instead of manually writing ILS
+rules, you train a small router model,
+give a request. Given a request, the
+router predicts which expert model, A,
+B, or C, is best suited for that
+particular input.
+This idea shows up in mixture of
+experts architectures and in systems
+where different models specialise on
+different domain, language, or user
+behaviours.
+The upside of that, the router can
+discover pattern you might not hand
+coded. The downside is complexity.
+Training, debugging, and explaining the
+setup
+can be harder than straightforward
+rules. For this course, you don't need
+the maths.
+Just the mental model that sometimes
+routing itself can be learned.

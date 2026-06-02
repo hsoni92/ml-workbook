@@ -1,0 +1,42 @@
+Welcome back, learners. In this video,
+we will understand what NLU and NLG are.
+Let's understand the relationship
+between NLP, NLU and NLG.
+Within NLP, different tasks and
+applications can be grouped into two
+major categories. Natural language
+understanding, or NLU. And natural
+language generation, or NLG. NLP is the
+umbrella term that includes both.
+Let's first look at NLU, or natural
+language understanding. NLU mainly
+focuses on understanding the meaning of
+the text, and extracting the intent and
+information from it.
+Some applications of NLU are sentiment
+analysis.
+Named entity recognition.
+Text classification
+NLU mainly focuses on what the text
+means.
+Natural language generation, or NLG,
+mainly focuses on producing or
+generating humanlike language and text.
+It focuses on communication of
+information clearly. Some examples of
+energy are
+text summarization, chatbots or
+question answering bots. Report
+generation and machine translation.
+Energy mainly focuses on how can a
+machine express information to humans
+in their own language.
+Let's look at the relationship between
+NLP, NLU and NLG. By now we understand
+that NLP includes both NLU and NLG.
+NLU focuses on understanding, while NLG
+focuses on generation of human language.
+What is important to note is that most
+real world NLP applications combine
+both NLU and NLG.
+That's all for this video. Thank you.

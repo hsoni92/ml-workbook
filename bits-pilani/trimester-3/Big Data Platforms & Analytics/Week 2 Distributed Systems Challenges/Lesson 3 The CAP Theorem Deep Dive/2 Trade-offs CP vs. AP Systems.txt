@@ -1,0 +1,86 @@
+In our last video, we defined the three
+pillars of the Kap theorem consistency,
+availability, and partition tolerance.
+We established that in a distributed
+cluster, partition tolerance is a
+requirement, not a choice. This leaves
+us with the most famous dilemma in data
+engineering. When a network partition
+occurs, do we choose CP, which is
+consistency and partition tolerance, or
+we choose AP, which is availability and
+partition tolerance. Today we're going
+to look at the business logic behind
+that choice, because in the real world,
+the right answer depends entirely on
+what problem you're trying to solve.
+Let's start with the CP system. This is
+a system that chooses consistency over
+availability during a network break.
+Imagine you're using a banking app. You
+have 1000 in your account. You withdraw
+that 1000 at an ATM in New York.
+Simultaneously, your spouse tries to
+withdraw 1000 from the same account in
+London. If the network between New York
+and London is broken, which is a
+partition. The system has a choice.
+In CP system, the bank says, If I can't
+guarantee that both servers know the
+exact balance, I'll stop. The London
+ATM will show an error. Saying system
+unavailable. Why? Because a bank would
+rather be offline than go wrong.
+In banking, a stale balance is
+unacceptable. We choose consistency
+because financial integrity is more
+important than 100% uptime. Now let's
+look at the opposite, an AP system.
+This system chooses availability over
+consistency during a partition.
+Think about a like counter on a viral
+YouTube video or an Instagram post. If
+the network between the servers in
+India and the server in US breaks.
+Should the like counter button stop
+working? Of course not. An AP system
+says it's OK if the count is slightly
+off for a few minutes, as long as the
+user can still click on a button. In
+this case, the user in India might see
+1000 likes, while the user in the US
+sees 950 likes. The system stays
+available and responsive. Once the
+network is fixed, the server will talk
+to each other and eventually agree that
+the total is, let's say 1050. In social
+media, being fast and always on is
+usually more important than being
+perfectly accurate. Every single
+microsecond.
+So how do you choose? If your data
+involves money, inventory, or legal
+records, you likely need a CP approach.
+You cannot afford to be inconsistent.
+If your data involves analytics,
+comments, sensor logs, you likely
+prefer an AP approach. You cannot
+afford for your system to look broken
+to the user. As an architect, you
+aren't just managing the server, you're
+managing the user's trust. The CAP
+theorem gives you the framework to
+decide which type of trust is most
+important for your specific application.
+To wrap up, we have seen that P forces
+us to trade off C for A. But how do we
+actually build these systems? In our
+next lesson, we're going to look at the
+two competing philosophies for data
+integrity, that is asset versus base.
+We'll learn how traditional databases,
+or assets, and modern big data systems,
+or B,
+handle these cap tradeoffs in practise.
+I'll see you in the next lesson. Till
+then, happy learning. Thank you.
