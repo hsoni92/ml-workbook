@@ -1,0 +1,50 @@
+Congratulations on completing module 13,
+which is the final module of this
+course. We have covered a lot of ground,
+from the high-level business shift
+toward real-time intelligence to the
+granular architectural details of Kafka
+and Storm.
+As we conclude, let's look at the slide
+to review the most critical technical
+takeaways that will serve as the
+foundation of your assessments and your
+future work as a data scientist.
+Partitioning versus replication. This
+is a fundamental distinction. Remember,
+That partitioning is about performance
+and parallelism. It allows us to split
+data so multiple nodes can work on it
+at once.
+Replication, on the other hand, is
+about availability and fault tolerance.
+Ensuring we have copies if a note fails.
+Task granularity in streaming systems,
+efficiency is tied to how you align
+your data. Ideally, one partition
+should equal to one task. When your
+partitions are balanced, your cluster
+runs at peak performance with faster
+runtime. Choosing the right
+partitioning strategy. Your choice here
+depends entirely on your workload. Use
+hash partitioning for deterministic
+uniform distribution. When you are
+performing high point lookups, use
+range partitioning for analytical
+queries that are heavy on dates,
+alphabetical sorting, or specific
+ranges. Then overcoming skew. Real
+world data is rarely perfectly balanced.
+You must be prepared to use custom
+partitions to solve the straggler
+problem, where one node is overwhelmed
+by a natural data imbalance while
+others sit idle. By mastering these
+concepts, you aren't just building
+faster systems, you're building systems
+that are robust, scalable, and capable
+of providing the real-time intelligence
+that defines modern industry leaders.
+Thank you for your participation in
+this course.

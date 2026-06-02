@@ -1,0 +1,72 @@
+Welcome to Module 4. Topic 3, artefacts,
+lineage, and reproducibility. In the
+previous video we talked about
+deployment pipelines and how ML differs
+from classic CICD. Now we are going to
+zoom in on what those pipelines
+actually move around. In this video.
+You will see what we mean by ML
+artefact, all the pieces beyond just
+code. Understand why lineage and
+traceability are critical if.
+You want to trust your model in
+production. Learn what reproducibility
+looks like in real machine learning
+systems. And connects all of these tool
+like ML flow and model registries.
+Which you will use in labs. Think of
+this as learning how to keep track of
+everything your machine learning
+pipeline touches and produces.
+So you can debug, audit, and repeat
+your work reliably. First, let's define
+machine learning artefact.
+In the context of pipeline, artefacts
+are things that stages, consumes and
+produces. Codes and config files, data
+snapshots, trained model files, metrics,
+plots and reports, every pipeline step.
+Takes in some artefact as input and
+generates new artefact as output.
+When we talk about tracking artefacts,
+we are talking about making sure we
+know what those things are, where they
+live and how they relate to each other.
+Let's make this more concrete. First,
+code and confit. Training scripts,
+feature engineering modules, plus the
+YAML or JSN configs that sets
+hyperparametters and paths. Second,
+data snapshot, raw extracts from your
+warehouse, cleaned and feature
+engineered data sets, often split into
+train, validation and test. Third,
+models, the actual serialised weights
+are the model files. PKL.PT. Dot ONX or
+more complex models. And 4th, metrics
+and reports. Things like AUC accuracy
+and loss curves, plus richer artefacts
+like confusion matrics, calibration
+plots, or PDF reports. All of these are
+artefacts that your pipeline should be
+able to track.
+Now connect these two pipelines. Each
+pipeline step is basically an artefact
+factory. It consumes artefacts.
+Like raw data and configs, it produces
+new artefact, like clean data sets,
+train models, or evaluation reports.
+For example, the data prep step outputs
+a cleaned version data set. The
+training step uses the data set plus
+config and outputs a model artefact.
+And training metrics.
+The evaluation step uses the model and
+a validation set, and produces
+evaluation metrics, maybe a report.
+The packaging step wraps up the model
+into docker image and are some deploy
+deployable bundle. Once you see
+pipeline this way, you realise managing
+artefact and their relationship is
+heart of envelopes.

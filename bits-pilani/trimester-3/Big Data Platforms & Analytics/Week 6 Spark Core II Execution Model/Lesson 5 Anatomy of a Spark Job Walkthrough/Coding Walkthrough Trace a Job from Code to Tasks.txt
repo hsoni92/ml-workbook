@@ -1,0 +1,64 @@
+Hello everyone. Welcome back. We have
+reached a pivotal moment in the Spark
+execution process. We know that Spark
+is lazy.
+And we know that actions trigger the
+work, but what exactly is the master
+plan that Spark creates during that
+waiting period? And how that master
+plan actually gets executed when we hit
+any action command. So let's understand
+this with a mockup.
+So here if you see right, Spark is lazy.
+So let's say you create a mapping
+operation, a map, a philtre, you see
+the line edge or your directed acyclic
+graph is getting created as we click on
+any operation. So basically you add any
+operation in your code, the spark. The
+executor will actually take it and
+it'll record the lineage and store it
+but it won't trigger any action. It
+won't execute the directed cyclic graph
+when you hit any action command, right,
+let's say in this case let's hit this
+count. When you hit the count, then
+only your dag starts to get executed.
+Similarly, let's move to the coding
+walkthrough. So we have created a very
+simple mockup with a code which can do
+word count job, right? It is basically
+if you give a text file to the Spark
+job, it will do the word counter. So
+let's start the tracing of this dag as
+well. So first, what happens is a dag
+gets created. So let's say when your
+first line gets executed, Hadoop will
+create RDDs to read data from the text
+file and store it into separate blocks.
+In the next step, it starts the mapping
+operations.
+In the further next steps, it starts
+the pairing operations, but it comes
+under the map category. So here you see,
+right, both of these operations are
+coming under the narrow dependencies.
+But then the actual reduce operation
+comes in where we are trying to count
+the pairs, right? So here shuffling
+will come up and the white dependencies
+comes into the picture.
+And when we reach the last stage where
+the actual reduction is happening and
+the reduced operation is taking place,
+So before that, shuffle happens, and
+this is the first stage of this
+particular job. So this is how you see,
+right?
+A single code will involve certain wide
+dependencies, certain narrow
+dependencies, and multiple stages.
+We'll discuss more concepts regarding
+Apache Spark in our subsequent modules.
+Till then, happy learning. Thank you so
+much.

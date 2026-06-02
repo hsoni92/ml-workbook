@@ -1,0 +1,43 @@
+Welcome to data quality in real time
+machine learning, freshness,
+completeness, schema. We have talked
+about batch, micro batch and streaming.
+Now we will discuss about what can go
+wrong with the data itself, freshness
+and latency, completeness and
+correctness, and schema changes. Real
+time machine learning system often
+don't crash when data gets bad, they
+just quietly make worse decision.
+That's why we need to reason about data
+quality explicitly.
+First, let's separate inference latency
+from data freshness. Inference latency
+is the time from when you receive the
+request to when you return a prediction.
+For example, 50 milliseconds for an API
+call. Data freshness latency is the
+time from when something happens in the
+real world, say a transaction. 2, when
+your feature actually reflects it.
+That might be 5 minutes if you're using
+micro batch. You need to care about
+both. A first model running on stale
+features can still produce bad
+decisions. To make freshness concrete,
+good teams define SLA, Service Level
+Agreements, for features, not just for
+predictions. Examples
+User's profile features must be updated
+within 10 minutes. Fraud related
+features must include events from the
+last 30 seconds.
+You can then monitor the average lag
+between an event's timestamp and the
+time it shows up in features.
+And the percentage of features that
+meet your freshness target.
+Fresher's data usually cost more. And
+requires more complex pipeline. So, you
+choose SLA per use case, not one size
+fits all.

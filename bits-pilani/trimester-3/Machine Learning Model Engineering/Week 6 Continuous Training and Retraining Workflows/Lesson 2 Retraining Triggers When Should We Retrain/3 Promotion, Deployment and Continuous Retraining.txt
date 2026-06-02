@@ -1,0 +1,38 @@
+Stage 5 is about getting a new model
+safely into production.
+A common pattern.
+Deploy to a staging environment first.
+And then run smoke test or replay
+recorded traffic.
+Then run a canary or shadow deployment
+in production. Send a small percentage
+of live traffic into the new model, or
+run it in parallel and lock predictions
+without affecting users. If metric
+looks good, promote it to the full
+production. But keep the model, old
+model around so that you can roll back.
+During this phase, monitoring is
+crucial. You're not just checking that
+the model runs, but that it behaves as
+expected. Under the real traffic
+compared to the previous champion.
+Putting it all together, retraining
+becomes a closed loop. Monitoring feeds
+us signals, repeated drift. On
+important features. Performance or SLO
+breaches?
+Concerning changes in business KPIs.
+Those signals trigger a retraining
+workflow, sometimes automatically,
+sometimes via ticket that human
+approves. The retraining pipeline.
+Snapshot data, train candidates,
+compare them to the champion, register
+the winner, and promote it through
+staging and canary to production.
+Human judgement still matters,
+especially around risk and fairness.
+But the pipeline gives you repeatable.
+Auditable path from we saw drift to we
+deployed a better model. Thank you.

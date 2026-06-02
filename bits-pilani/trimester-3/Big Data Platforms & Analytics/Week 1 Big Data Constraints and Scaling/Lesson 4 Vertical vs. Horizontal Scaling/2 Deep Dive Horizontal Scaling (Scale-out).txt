@@ -1,0 +1,82 @@
+In our last video, we saw how vertical
+scaling, that means buying a bigger
+truck, can only take you so far before
+it becomes too expensive or physically
+impossible. Today we are going to look
+at the architectural revolution that
+made Google, Amazon, and Netflix
+possible, and that is horizontal
+scaling, also known as scaling out.
+Remember our delivery driver analogy?
+If vertical scaling was buying a bigger
+and bigger truck, horizontal scaling is
+like hiring 10 more drivers with 10
+smaller vans. You aren't making one
+vehicle stronger, you are making the
+system larger by adding more units. In
+the tech world, this means adding more
+servers, what we call nodes, into a
+single group called a cluster. Let's
+look at a business problem that a
+company like Netflix faces. On a Friday
+night, millions of people around the
+world decide to watch a new movie at
+the exact same time. No single computer
+in the world, no matter how much RAM
+you have shoved into it, can stream
+high definition video to 200 million
+people simultaneously. This pipe is
+just too small. The solution?
+Distribute the load. Instead of one
+super server in California trying to
+talk to the whole world, Netflix uses
+thousands of standard, smaller servers
+spread across the globe. When you hit
+play, you aren't talking to the main
+brain of Netflix. You're talking to the
+nearest van in the fleet, that is
+closest to your house. This is the
+power of horizontal scaling. It allows
+you to handle nearly infinite growth by
+just adding more vans to the fleet. One
+of the biggest advantage for a business
+here is the cost. In video one we
+mentioned the price wall where high-end
+RAM becomes exponentially expensive.
+Horizontal scaling uses what we call
+commodity hardware. These are standard
+off the shelf servers, the kind you
+find in any data centre. They aren't
+special because they are standard.
+They're cheap. If you need more power,
+you don't buy a $50,000 upgrade for one
+machine. You buy 5 more $2000 machines.
+This makes the cost of growth linear.
+If your data troubles or it becomes
+thrice or twice, your cost roughly
+doubles, it doesn't explode. This is
+how startups can afford to grow into
+giants. Finally, let's talk about
+business continuity. What happens if a
+van breaks down? In a vertical system,
+if one big truck breaks, the business
+stops. But in a horizontal system, if
+one server in a cluster of 100 fails,
+you still have 99 servers running. This
+is called fault tolerance. In big data
+platforms like Hadoop or Spark, the
+software is smart enough to see that
+node A has died, and it automamatically
+moves node A's work to node B. The
+customer watching the movie never even
+notices a glitch. However, there is a
+tax for this complexity. Now you have
+to manage a network, and you have to
+make sure all those servers can talk to
+each other without getting confused. In
+our next video, we will put vertical
+and horizontal scaling side by side to
+help you decide which one to choose for
+your specific business problem. I'll
+see you there. Till then, happy
+learning.

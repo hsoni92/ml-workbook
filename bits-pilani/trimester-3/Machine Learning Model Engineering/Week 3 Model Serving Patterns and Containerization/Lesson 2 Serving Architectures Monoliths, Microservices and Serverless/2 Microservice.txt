@@ -1,0 +1,74 @@
+In microservice style architecture, the
+model lives in its own separate service.
+That service runs its own process or
+container, exposes an API, often what
+we say predict function over HTTP or
+GRPC. And is called by other part of
+the system. A typical flow might be
+your front end, your back end, and a
+model service, or a batch job, calling
+model service to score data. The key
+idea is that your model service has a
+clear contract. A known request schema,
+a known response schema, and often
+specific SLOs for latency and up time.
+It's no longer just a function inside a
+big gap.
+It becomes its own product like service
+within your architecture.
+Why go through the trouble of splitting
+the model into its own service? First,
+independent scaling. You can scale the
+model service up or down separately
+from the rest of your app.
+If the model needs more CPUs, GPUs, or
+memory, you adjust it replicas without
+touching the front end.
+Second,
+TechStack Freedom, the model service
+can run Python with specific ML
+libraries, use GPUs, or have its own
+dependencies. The rest of your system
+might be in different language or
+runtime, and that's fine.
+Third, clear ownership and contracts. A
+team can own the model API, its
+Syschema, and its SLO. Other teams just
+know here is how to call a predict
+function. Here is what you get back.
+Fourth, deployment and rollbacks are
+easier. You can deploy a new model
+version by updating just the model
+service. If something goes wrong, you
+can roll back that service without
+touching everything else. These
+benefits becomes more and more valuable
+as the model becomes central and high
+traffic.
+Of course, microservices are not free.
+Some of the trade-offs we have here as
+well.
+More deployment complexity. Now you
+have more services to deploy, more
+configurations to do, and more
+dashboards to put up.
+You need to be serious about API design
+and versioning. On other team depends
+on your predict API.
+Changing it becomes really harder.
+There is a network overhead.
+Calls are no longer in process. They go
+over HTTP or GRPC. This adds latency
+potential failure points.
+You need better monitoring and tracking.
+When something goes wrong, you have to
+trace requests across multiple services.
+Microservice style serving is usually
+the right choice when the model is
+critical to the product, traffic is
+high. You need to separate the scaling
+for the model. And you expect to
+iterate on the model frequently and
+independently of the rest of the
+application.
+Thank you

@@ -1,0 +1,37 @@
+Here is the big picture pipeline this
+module assumes.
+You train a model in the framework your
+team likes, Pytorch, Tensorflow, JAX,
+whatever.
+When you export that model to standard
+format that fits your target
+environment, ONNX, TF Lite, or Open
+Veno IR. You run the optimise that
+format with the right runtime, ONLX
+runtime, TFlight runtime on mobile,
+open window run time. On Intel hardware,
+and so on. The standard format. Acts as
+a contract between the training world
+and the serving world. Once you have
+the contract, you can focus your
+optimisation works on the serving side.
+To wrap up this video. We saw why model
+formats exist and what they contain. We
+talked through OneNX, Tensorflow Light
+and Open Veno. And we built a simple
+mental model of when each format shines.
+Next, in topic 3, we will learn how to
+compress models, quantization, pruning,
+and distillations, so we can shrink
+them and speed them up. In topic 4, we
+will see how optimised runtimes like
+ONNX runtime, Tensor RT, and XLA take
+these models format, and squeeze more
+performance into the hardware. Or out
+of the hardware, in your labs.
+You will take a pre-trained CNN in
+Pytorch, export it to ONNX, run it with
+ONNX runtime, and compare size and
+latency with your baseline. So you will
+see this standard model format idea in
+action with real number. Thank you.

@@ -1,0 +1,16 @@
+Welcome back, learners. Finally, let's
+go through some advantages and
+limitations of TFIDF. Some advantages
+TFIDF penalises common words or stop
+words automatically, so you do not need
+stopword removal with TFIDF. TFIDF
+gives higher weightage to domain
+specific terms, for example,
+mitochondria. Will get higher weightage
+in a biology paper.
+Let's go through some limitations.
+TFIDF does not capture semantic meaning.
+Also, TFIDF still suffers from high
+dimensionality.
+That's it for this video. I'll see you
+in the next one. Thank you.

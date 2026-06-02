@@ -1,0 +1,30 @@
+Welcome back, learners, to the 8th
+module of your course about
+Transformers. In the previous module,
+we saw that LSTMs are a great option
+because they have long short-term
+memory.
+But they have a fatal flaw called
+sequential processing.
+Which means that to process the 100th
+word in a sentence, an RNN must wait
+for the 99th word to be processed. This
+means we cannot use the massive
+parallel power of the modern GPUs
+efficiently. And training takes forever.
+Now this is the case with just 100
+words. Imagine a regular document with
+10,000, maybe over 1000 words, right?
+This also brings another problem called
+the long distance problem. With LSTMs,
+information from the 1st word usually
+fades by the 100th word.
+What if we could process the entire
+sentence at once, instead of waiting
+one by one? What if we threw away the
+recurrence and relied entirely on a
+mechanism that lets any word to look at
+any other word instantly?
+And that's where comes the Transformers.
+That's it for this video, and I'll see
+you in the next one. Thank you.

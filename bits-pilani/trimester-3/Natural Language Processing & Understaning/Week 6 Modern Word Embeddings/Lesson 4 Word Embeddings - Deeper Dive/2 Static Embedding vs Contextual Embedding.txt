@@ -1,0 +1,930 @@
+Hello learners. So far in the last
+module and in this module, we have
+covered a lot about word embeddings,
+right? In this video we are going to
+take a deeper dive into understanding
+the concept of word embeddings so that
+our fundamentals are absolutely clear,
+and we will explore different concepts
+within word embeddings as well, right?
+So this will be a deeper dive into the
+world of
+Word embeddings.
+So let's begin I hope you're excited,
+because I surely am. First, let's
+understand why do we need word
+embeddings. So that we have our
+concepts cleared. We know that words or
+text language, right, it's
+understandable by humans, but if we
+want to enable machines to understand
+text, we need to convert it into a
+format called word embeddings, which is
+a mathematical representation.
+Of fixed Or words
+Right, we need to convert it into
+something called as word embeddings.
+Let me make it more neater. And then
+only machines can process it or
+understand it. What are these
+mathematical representations, right?
+They are nothing, but they convert a
+word into a word embedding that looks
+like this, which is a matrix in the
+world of maths. Right? And it would
+look like something like this, so 0.33
+minus 45. These are random numbers I'm
+giving. These are not the actual
+numbers, right? But it looks something
+like this. A word or text is converted
+into a word embedding, that is the
+mathematical representation. These
+numbers, these values, right?
+They capture the essence or the meaning
+of this word, right? So when the
+machine reads all of these numbers. It
+somewhat understands that, OK, this
+world is being discussed.
+Right? So we've understood the need for
+word embeddings.
+This is what we understood. Now,
+Let's understand how are they created.
+So let's consider a word.
+Let's say king, let me choose a
+different colour.
+Right.
+So let's say king, right? One word, and
+queen.
+Right?
+So, If I were to create word embeddings,
+I know that I need to convert it into a
+mathematical format, such that the
+essence or the meaning of this word is
+being captured, right? So, what I need
+to do is I need to encode the
+properties. Of these words or these
+concepts at home, right? So what can we,
+those properties, right? Um, let's take
+a different word. Let me create a table
+of sorts.
+Right? So suppose this column is for
+king and this column is for queen,
+right? And what can be the the
+properties if this word or this concept
+has any authority, for example.
+So, we'll say 11 for yes, right? So
+this may be 0 for no, 1 for yes. Only
+for this question, right? Then
+maybe we can consider gender.
+We can say king is 0 and queen is 1. So
+here, just for this column or just for
+this row of this property, 0.
+To one, this is male, and this is
+female, right? And maybe another
+property called is rich.
+Right, so king is rich, queen is rich,
+right? So 0 is poor.
+And
+One is rich. Only for this property,
+right? So on and so forth. So maybe. OK,
+let's just stick for this now. Uh, so,
+imagine this is how I'm encoding the
+properties of these words, right? So
+now what I can do is I can create a
+matrix. So that will be 101 for king
+and 111 for queen.
+Right, so this scheme of converting
+words into this matrix or word
+embeddings, maybe I can name it Uk's.
+Model
+of word embeddings. Right? So this is
+my scheme. I would like to convert
+different words like into word
+embeddings like this, right? Now, if
+tomorrow someone else comes, say,
+Another person that says, no, I want to
+add more properties, right?
+For example, we've covered authority,
+gender is rich.
+Maybe has moustache.
+Right? So king may have the moustache,
+queen may not.
+Right
+Do they have war experience?
+So maybe King has more war experience
+or let's
+Make it more granular, so maybe the
+king has more war experience, the queen
+has a little less, right, but some
+experience.
+Are they
+Trained
+Books
+Right? So maybe both are equally
+trained into cooking.
+What can something else.
+What can other feature be? Maybe, do
+they have beautiful eyes?
+Right
+Maybe the king does not have a lot of
+beautiful eyes, but the queen does.
+Hypothetical, right? All of these are
+hypothetical numbers. So this can be a
+new scheme. So maybe someone comes and
+says, no, these are not enough
+attributes. I want to add more
+attributes, and let's call it Ayushi's.
+Model Of
+Word embeddings, right? Now, as per
+Ayushi's model of word embeddings.
+The king would be 1011. 0.9 0.5. 0.3.
+Right, and the queen would be.
+1110.1 0.5.9, right? So these are the
+king and these are the Word embeddings
+for queen, right? So that's how word
+embeddings are actually created. Now,
+We have different models like word to
+vec.
+And love.
+And we have modern like text ADA from
+OpenAI. Right? We have B.
+So we have so many different models,
+right? These models have also created
+word embeddings just like this. However,
+Utkarsh's model of word embedding had
+only 3 dimensions. Right?
+Ayushi's model of word embedding had
+12345677 dimensions.
+Right?
+These models have A lot Of
+dimensions.
+That captures.
+The meaning.
+On the Forbes.
+Right? I hope till now, this, this bit
+is clear, how word embeddings are
+created, right? Now, let me give you
+another perspective. So let's consider
+Utkarsha's model of word embedding,
+which had just, oh, it had 4, so let's,
+let's Let's stick it to just 3, and
+I'll tell you why.
+Now, let's consider a simpler word
+embedding, say, just 2 dimensions,
+right?
+So two dimensions as authority and what
+is the gender, right? So let's plot
+that.
+So maybe this is as Authority and this
+is the dimension for vector, right? Two
+dimensions has authority and gender.
+Now let's plot king and queen. So king
+is 1, so this is 0, so this is 1, this
+is 1. Let's assume that. So king is 1
+on has authority. This is king here,
+right?
+So, this is king here and 0 on gender,
+right? So maybe this is the word vector
+for King,
+right? Now, let's consider the queen.
+So queen is one on has authority.
+And one on gender, so this is the word
+vector. 4
+Queen
+Right? Similarly, we can also draw.
+Three dimensions on a 2D plane.
+And plot these vectors. So for example,
+now let's consider these three
+dimensions as Authority
+Right?
+is gender and this is, or maybe let's
+keep this as gender and this as
+I
+Rich or not, right? So this would be 0.
+This would be one, this would be one,
+this would be one.
+Now let's take king. So one has
+authority. King is here, gender for
+king is 0, and 1 for is rich, right? So
+maybe something like something that's
+coming out of screen, right, towards,
+towards you. So let me draw it
+something like this. So this is king.
+However, it should come towards you in
+your direction, right, because it's 11.
+One
+One and one, it is in this plane. For
+those who are not understanding this
+vector representation, do not worry,
+it's just a different perspective
+because word embeddings are also called
+word vectors, right? So what are
+vectors? Vectors are a mathematical
+concept. They have a magnitude.
+And they have a direction. So if you've
+taken math and physics in your 11th, 12,
+you must have understood what I'm
+talking about. If not, don't worry,
+right? This is what you need to
+understand. At the core, right? OK,
+let's come back to our example. So let
+this be king and then one. OK, so 0101
+was king and 111. OK, so this triangle
+was for the queen. So maybe let's draw
+it this way.
+This is the word vector for queen,
+right? Now, if you want me to take more
+dimensions.
+That is physically not possible on a 2D
+plane, right? However, there are a lot
+of dimensions that, that the word is
+encoded into to capture its meaning,
+right? I hope this is more clear now.
+Now what if we create word embeddings
+for a lot of different words and take a
+smarter persons.
+Let's take the words. Like
+King
+Queen
+A man
+Woman
+Something like uh World Cup.
+Right, which World Cup football?
+And a cat, an example of one, say,
+animal, right?
+OK, now let's just select the
+dimensions. So, as authority.
+Right?
+Say, is rich, or do they have money? Do
+they have a tail, right? Do they have,
+like, what gender are they?
+Right? What moustache? Like, do they
+have a moustache? And uh do they have 4
+legs, right? Let's add some more
+dimensions.
+So that I can accommodate more, more
+dimensions.
+So Is this an event? Is this a
+non-living thing?
+Right.
+And many more, right? So let's consider
+these dimensions and maybe let's call
+it um
+Smarter
+Persons
+Model
+Of word embedding. This smart person
+came and said, all your attributes are
+useless. Let me create one, right? So,
+now, now let's add. So king, does the
+king have authority? Yes, queen has
+authority, man.
+Maybe some authority, women, some
+authority, maybe if they're a team
+leader or something. Football World Cup,
+is there authority? No.
+Cat, do they have authority? Um, yeah,
+cats do have authority. They're very
+bossy. If you're a cat parent, you
+would know, right? Um.
+Is rich. King is rich. Queen is rich,
+maybe richer, right? Man could be rich.
+Woman could be rich. I mean, not as
+compared to the queen or the king, but
+yeah, somewhat. So World Cup, it's not
+a person, so the rich is not an
+attribute for the World Cup. So let's
+put it 0. Is cat rich? I mean, do they
+have, by rich, I mean, do they have
+dollars? Cat does not care about
+dollars, right? Um, do they have tail?
+So king does not, queen does not, man
+does not, woman does not, World Cup
+does not, cat does, right? Similarly,
+four legs, so king does not.
+All of these are 0, but 1, right?
+Now, gender, gender 0 for male. And one
+for female.
+And maybe let's say 0.5 because what do
+I put male or female to here? Uh, let's
+say the cat is a female. Do they have a
+moustache? The king may have a nice
+moustache. The queen would not. The man,
+let's say, not as big moustache as the
+king. So let's say it is 0.8, right, or
+0.9, let's say 0.0.9. Why am I
+comparing moustaches? Right? Woman does
+not, right, and uh Football World Cup
+does not. Cats have whiskers, so let's
+consider it to be a moustache, or let's
+put it. 0.8, right? Is this an event?
+King is not an event, Queen is not an
+event, man is not an event. Woman is
+not an event. World Cup is an event.
+That is not an event, right? Is it a
+non-living thing? No, no, no, no. Yes,
+no. Right? So we have our word
+embeddings created for these words,
+right? So on.
+No.
+What I want to explain is. The concept
+of word embeddings and their relations,
+so we know because we have understood
+language that King.
+And Queen Are related
+Right?
+Man And women are related
+Right? We know this as well. How does
+the machine know or how does the
+machine capture these relations, right?
+So let's look at that maths. Now, let
+me scroll.
+Up and define the dimensions. For the
+king.
+Right? So, what was the dimensions of
+King 1100 1000? So 1100 1000. Right.
+Let me just confirm it once. 1100. 1000,
+right? OK. So, let's do king minus. Man
+Plus woman.
+Should be equal to queen, right? So if
+you remove the man from the king, if
+you visualise it, what is left is the
+crown. If you put this crown on this
+woman, uh, oh, yeah, OK, so if you put
+this crown on this woman, it would
+become the queen, right? Why am I
+drawing bad crowns? Let me
+Take a second to draw better grounds.
+OK. So let's verify if this is true,
+right? Let's verify if our hypothetical
+equation is true or not. So queen is
+1101, same as king.
+1101
+0000. OK.
+0000.
+This is the queen. Let me drag it. And
+Move it a little to the side so that we
+can compare the results. Now, what is
+the word vector for man? 0.1.2.
+Find one. 0.2
+00.9.
+00.9
+000, OK.
+What is the word vector for woman?
+Let's do this exercise one last time,
+0.1, 0.201.
+0.1 0.201.
+Oh,
+And, OK. 010000. OK. So, 0000.
+Now let's do this math. So this vector
+minus and this vector would be the plus.
+So what do we get, right? Our result.
+What is the result, right? So one, -0.1
+plus 0.1. So minus 0.1 plus 0.1, they
+cancel each other out. So what we are
+left with is +11 minus 0.2 plus 0.2,
+again, 1. 000 is 00 minus 0 plus 1. So
+plus 1. 1 minus 0.9 is 0.1 plus 0, so
+0.1. 00000 minus 0 + 000 minus 0 + 0.
+OK.
+Now let's compare. 11 exact match.
+11 exact match. 00 exact match. 11
+exact match. 0.1. And 0, almost an
+exact match.
+000 000, exact match, right? So you see
+how this resultant word vector.
+is so close to queen, so close to queen,
+almost equal to queen, right? So that's
+how
+machines understand relationships
+between different words. So that's how
+machines interpret the relationships
+between different words. So we know
+that king is related to the queen. We
+know that man is related to woman.
+Right? Uncle is related to auntie. Or
+aunt, whatever, right?
+I hope this made a lot more sense,
+right?
+So that's how we know that King.
+Oh my first minus.
+King minus man plus woman.
+Equals
+Queen, right? The most popular equation
+when we are understanding word
+embeddings. A similar example can be um
+Delhi
+Minus India.
+Plus or minus, sorry.
+Minus India plus Russia.
+Is Moscow.
+Right? What is Delhi, the capital of
+India, right? When you add, when you
+remove Delhi, so you, do you, so you
+remain with capital.
+What is the capital of Russia? It is
+Moscow, right? So this is also another
+popular example for understanding the
+relationships between different words
+when we're dealing with word embeddings,
+right? Now,
+Let me give you another perspective.
+Let's draw some word vectors.
+I'll try to draw a straighter line.
+Yeah.
+Now, for example,
+OK, so we have our 3D plane of word
+vectors ready. Let's draw a word vector
+for men. Suppose it is here, right? And
+suppose the word vector or word
+embedding for women is here, right? The
+relationship between them can be
+defined by a different vector, right?
+What can that vector be? Let's call it
+gender.
+Right?
+Now
+What if
+the word vector for
+king? It's here.
+What if I transpose this word, this
+relationship vector here, which is also
+a word vector, but let's call it a
+relationship vector here. What if I
+transpose it here, right?
+I transpose it to.
+The word vector that will come as a
+result of this transposition will be.
+Queen. The relationship between man and
+woman is the same relationship between.
+King and queen, which is the gender,
+right? Similarly, what we can do is, um,
+let's imagine. In the same word vector,
+we have. Delhi
+Right?
+And India.
+So the relationship between India and
+Delhi. Can be defined with this vector.
+This is the relationship vector here,
+which can be named as capital city,
+right?
+So if you will calculate the
+relationship vector between Moscow.
+And Russia
+It will be the same.
+Relation relationship vector called
+capital just transposed.
+Had different values, right?
+Great. Now I hope all of this word
+embeddings and the relationships
+between different word embeddings is a
+lot more clear, right?
+Now, so far what we have learned is
+called as static.
+Word embedding, right? So let me go to
+the top.
+And
+write it here.
+Right? So the first topic we discussed
+today was
+Why
+Do
+we need
+Word embeddings, right? This was a
+topic we discussed first, and the
+second topic we discussed was static
+word embeddings and their.
+Relationships.
+OK, so this is what we've understood so
+far. However,
+The newer models. Also capture the
+context of a word embedding.
+Right? So that is the next topic of our
+discussion.
+Contextual.
+Embeddings, right?
+Also, before that, let me give you some
+facts.
+So when we discussed The different word
+embedding models, right? Word to vec,
+love, X ADA, the smart person's model.
+So let's calculate the dimensions. So
+123456788. So the number of dimensions
+here were 8. The models that we use in
+industrial applications like glove,
+right? Word to vec, right? Then the BR
+models. The GPT embeddings, embedding
+models, right?
+They have a lot, lot, lot more
+dimensions which we do not know about.
+So glove has about 100 to 300
+dimensions. Word2vec has 300 to 500
+dimensions, right? What we don't know
+what are the attributes they're using,
+right? But we know that these are the
+roughly, these are the dimensions. Bert
+has a base model which uses 768
+dimensions, and there is a large model
+that uses 1024, so base and large. GPT
+has multiple different. Word embedding
+models, the small one. It has 1536 word
+dimensions or attributes, and the large
+one.
+As
+1024, right? So these word embeddings,
+especially the modern
+Word embedding models.
+Capture
+Context.
+Right?
+That's why they are so popular and they
+are so effective, because they are,
+they are able to move beyond the static
+word embeddings and also capture
+context and create contextual word
+embeddings, right? So now let's spend
+some time understanding what contextual
+word embeddings actually are.
+OK. So let me start with one example.
+Let me take a different colour. Let's
+say this.
+So suppose I use a sentence that uh
+something like, I ate the dish.
+Last night.
+Right? So,
+What do we understand by dish, right?
+Firstly, dish has multiple meanings,
+right? Dish can be What you eat Right?
+Dish can also be the utensil.
+Right? And if there is some other
+meaning of dish in English, so it can
+also be that. So that also is a problem
+with static word embeddings because the
+word embedding for a dish, when it is
+starting, will be a fixed vector with
+some values, right? From this just one
+fixed vector, we will not know or
+matrix or word embedding, we will not
+know what is the
+right.
+Meaning
+For
+This specific.
+Text data.
+Right? With specific test data, this
+one. We're dealing with this one right
+now, or anyone, any data that you're
+dealing with, right? So, that is one
+limitation of static word embeddings.
+How do we overcome it by creating
+contextual word embeddings, right? So
+how do we create contextual word
+embeddings? By capturing
+The context.
+Along
+Prove it.
+The
+Lord,
+That's how we create
+Contextual.
+Word embeddings, right? Great. Now,
+let's understand this further.
+So I had a paragraph, started off with
+something, used the word dish, and
+ended, so imagine this to be a very
+long document with one word, dish.
+Now, how do I understand what dish,
+right, which dish, right? So, for
+example,
+This dish
+Can be Let's say pasta, right? It can
+be pizza, right? It can be biryani.
+It can be cured.
+It can be a burger.
+It can be um risotto.
+Right, it can be french fries.
+Or it can be roast chicken.
+Right? Several other examples can be
+plotative. Now, with static word
+embedding, we are unclear what the data
+is discussing. However, if we also
+capture one more word, say rice dish,
+right? So we know that rice dish. So
+pasta is not a rice dish, risotto is a
+rice dish, pizza is not a rice rice
+dish, biryani is a rice dish, kir is a
+rice dish, Burger is not, French fries
+is not, roast chicken is not, right? OK,
+great. Now, if we also capture one more
+word, say Indian.
+Rice dish. Right now the word is Indian
+rice dish, so we know that risotto is
+not Indian. It is Italian, so risotto
+is not Indian rice dish. It was a rice
+dish, but not an Indian rice dish.
+Biryani is, kir is, and everything else
+is cancelled out. Now imagine if this
+says Indian rice dish with
+Spices. And meat.
+Right?
+Let's consider this to be the entire.
+Sentence. So Indian rice dish came here
+with spices and meat came here. Let's
+imagine it like this. Now biryani can
+be an Indian rice dish with spices and
+meat, so this is one option. He can be
+an Indian rice dish, but it does not
+have spices and meat, so we need to
+cancel it out, right?
+Finally, we conclude that what is being
+discussed here when we're saying dish
+is uh Bani
+Right?
+So you understood how we captured the
+context of this word with the preceding
+and the following words. Right? So
+that's how you create.
+A contextual word embedding. So just
+this word was a static word embedding
+and now this is a contextual word
+embedding, right? So let's now plot
+this in the vector format. So suppose
+this is the word vector for dish, right?
+Um, the rice dish is pure, let me take
+the same colours.
+So this is the word vector for Dish
+Rice dish is here, right? So let's say
+that, and then This
+Indian
+Rice dish is here, right?
+Then, let's say.
+Let me stroll a little. Indian rice
+dish, and then what was the colour that
+I used for spices and meat, orange. So
+let's take orange.
+So spicy. Indian rice dish with meat,
+right? It's your. Sweet
+Indian rice dish is here, right? So how
+do we capture the context? So we
+capture the context by capturing the
+relationships between different words
+which are preceding and following. So
+this relationship between dish and rice
+dish, so we can call it this
+relationship vector as rice, right? So
+then we go from rice dish to Indian
+rice dish. So, so maybe this.
+Relationship vector can be called as
+Indian.
+Right?
+Now we went from Indian rice dish to
+spicy.
+Rice dish, so maybe this vector can be
+called as spicy with meat, right? And
+We can also come here.
+Sweet Indian rice dish, which is Fear,
+right? And this is
+Viani. Right?
+So maybe you can call it sweet, this
+relationship vector, right? So this
+Relationships, these relationships that
+we are capturing. Together
+Come together as The contextual.
+Word
+Embedding.
+Right? And think about it. We also,
+when we are reading any text, we also
+capture relationships in our minds or
+in our brains just like that by
+capturing, by looking at different
+words following and preceding the
+subject, right? Let me give you another
+example.
+So for example, let's say the text says,
+Ok
+And
+Don Corleone.
+are
+Best
+Friends?
+Right.
+Utkar
+Loves
+Choleberture
+or loves to eat. Right.
+loves to eat. Cholevature.
+Mutton biryani
+Right?
+And let's say Kchori.
+And
+Cacholi,
+right?
+OK.
+Don Corleone.
+loves to Eat risotto.
+Pasta.
+Calzone
+And beats us.
+Right.
+Last night,
+Don Corleone.
+Invited
+Oh gosh,
+For
+dinner.
+At his home.
+Right
+They
+Enjoyed
+Wonderful
+Food
+Of
+Daesh.
+Cuisine Right? Now, go through this
+example. Go through this example again.
+And try to guess what should be the
+word that should be filled here, right?
+It's a fill in the blanks, right? This
+is also how models are trained and how
+they work, right? They are word
+prediction engines, so they predict and
+fill in the blanks like this. So.
+Let's see.
+I hope you've tried to solve it.
+What I can see is that Utkarsh as a
+name sounds Indian. Right?
+Don Corleone sounds Italian. Especially
+if you've seen the right movies. Utkash
+loves to eat chole batu, mutton biryani.
+Kechodi and Kochori all are. Indian
+cuisines I know this from my training
+data, right? If I'm the model or if I'm
+a human, I know this from whatever I've
+learned in life, right?
+So Don Corleone sounds like an Italian
+name.
+Right?
+Don Corleone also loves to eat risotto,
+pasta, calzone pizzas, which are all.
+Italian
+Cuisine
+Right. Don Corleone invited Utkash for
+dinner at his home.
+What will be the food that will be
+served at Don Corleone's home? Which
+cuisine? There are two options, or
+maybe let's consider 3 options. Um.
+One is
+South Indian or no, South Indian, let's
+take a totally different example.
+Brazilian.
+Right?
+Italian
+And
+And Right?
+Which word has the highest probability?
+If I'm guessing it right, it should be.
+Italian, right? Highest probability. Of
+being right would be
+For Italian, the next may be for Indian,
+but especially lower than Italian, the
+lower probability or second highest
+probability. Right?
+And
+Brazilian may be like almost negligible
+probability.
+Like
+Lee.
+G but
+Probability, right? So that's how you
+capture the context, right, from
+different words preceding and following.
+And you come to the right conclusion.
+If we were using only static word
+embeddings.
+We might not have guessed this rightly,
+right? So that is the power of
+contextual embeddings, right? Now let
+me show this same example or similar
+example mathematically, how word
+embeddings actually behave. So,
+Let's consider
+Our original example.
+Of
+Indian rice dish, right?
+Let me conclude this with mathematical
+representations. So we had the word
+dish, right?
+So let's say the word.
+Let me also.
+OK. This is better.
+So let's say The word
+Dish
+As this word vector, it can be any
+value, right? Random values, assume any
+random values, right? So dish plus rice.
+Some values.
+Right?
+Then what we added, we added Indian.
+Some values
+Then what do we add? We add spices.
+And we also added
+Meat
+which became Uh
+Popular dish, I can take a different
+colours altogether, yeah.
+Vi
+Right?
+So If you just land up on this word
+embedding.
+Or a contextual word embedding for
+biryani. If you decompose it, what you
+will find. Are the different components.
+That form the word embedding for
+biryani, and these components
+contribute to the context of this word.
+Right, I hope that made sense. No.
+Execution wise, how does this happen?
+There are massive.
+Neural network architectures.
+That capture.
+These relationships.
+Right? These neural network
+architectures have so many parameters.
+Right? A random neural network
+architecture here. They have so many
+parameters. These are, these arrows,
+these parameters, right?
+In so many layers that are able to
+capture. All of these components, all
+of these components, right?
+That's how the modern word embedding
+models.
+are different from the traditional ones
+because they Capture
+Context
+Right?
+I hope this made sense to you.
+The lecture for today is over, however,
+let me give you a quick summary of what
+we have discussed so far.
+So
+We discussed why do we need word
+embeddings, right? We need it so that
+machines can understand our language.
+Then we understood what word embeddings
+are, what static word embeddings are,
+and how are their relationships
+established, right? So if you remember,
+these graphs and these matrices, right?
+Then we created our own model for word
+embedding which we called smarter
+person's model for word embedding,
+right?
+And we verified it by establishing a
+mathematical relationship between king,
+man, woman. Which resulted in a word
+embedding that was very similar to that
+of a queen, which establishes the
+equation. King minus man plus woman is
+equal to queen, right? Similarly, we
+saw the example of Delhi minus India
+plus Russia equals Moscow, right? We
+saw what relationship vectors are. They
+are also word word vectors, right, but
+their usage is to establish the
+relationships, right? So if we capture
+this vector, we transpose it to a
+different word, we will, we will, we
+will, we will land at the same
+relationship for that particular word,
+right?
+Then we studied what contextual word
+embeddings are. We saw the example of
+dish.
+Versus Indian rice dish with spices and
+meat, right, to to land at the right
+option.
+We also saw the relationships, right?
+How contextual word embeddings are
+formed because they capture
+relationships.
+Then we did some practise on this
+example, right?
+And finally, we learned about
+Finally, we learned about the
+components of the context for the
+contextual word embeddings and how they
+are captured in the modern word
+embedding models, right?
+So I hope this was fun and this made a
+lot of sense about word embeddings and
+the world of word embeddings and the
+difference between contextual and
+static word embeddings.
+And how traditional word embedding
+models create word embeddings and the
+modern word embedding models create
+word embeddings, right?
+So I hope this was fun, and I'll see
+you in the next lecture. Thank you.

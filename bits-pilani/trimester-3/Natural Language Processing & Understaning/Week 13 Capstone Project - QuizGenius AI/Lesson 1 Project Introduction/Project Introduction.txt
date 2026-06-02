@@ -1,0 +1,76 @@
+Welcome back, learners, to this last
+module of your course, the Capstone
+Project.
+I'm sure you're going to really enjoy
+this one, and I hope you're excited.
+In this project, we will build a LLM
+based application called Quiz Genius AI.
+So let's get started.
+Welcome to the final module of your
+course, the Capstone project. In this
+project, we will build an LLM
+application called Quiz Genius AI. I
+have named it so you can name it
+whatever you want.
+Let's go ahead
+Let me now introduce this project to
+you, right?
+So in this hands-on project, we will
+implement a quiz generation app, hence
+the name Quiz Genius AI, right? And
+this app will be built with a large
+language model from the Gemini API.
+My main motive with this project is to
+inspire you and motivate you to
+implement your own project ideas with
+LLMs. Take the template that I will
+share with you in this module and
+implement your own ideas with it, right?
+Great. Now let me share some key
+features of this application. The first
+one being dynamic quiz generation. This
+application will create a 3 question
+MCQ on any topic that the user will
+specify. Who is the user? You and I,
+right?
+Now, difficulty level, I've set it to
+intermediate, so the MCQs will be at an
+intermediate difficulty level, which
+will ensure that the questions are
+challenging yet accessible, right, to
+make things interesting.
+Now a main one, structured JSON output.
+The model will return quiz data in a
+consistent, easy to parse JSON format,
+and this specific skill is high in
+demand because in industrial level
+applications you need consistent and
+structured output from LLMs.
+Then interactive UI, the UI or this
+application will allow users to answer
+questions and provide and the
+application will provide immediate
+feedback. So this will happen
+dynamically in real time, and you will
+see this in the demo, right?
+Finally, API key management. Again, a
+very high sought after skill, so that
+you have the security in place. So we
+will securely securely handle API keys
+using the collapse user data feature,
+right?
+Finally, this project serves as a
+practical example of how generative AI
+can be integrated into interactive
+applications and create engaging and
+educational experiences, right? So this
+project is from the domain of education.
+You can implement the same template in
+any domain of your choice, and I highly
+encourage you to do that. All right. So
+we've introduced the project to you. I
+hope you're excited, and I'll see you
+in the next video where we will start
+implementing it. Thank you.
+I hope you're excited, and I'll see you
+in the next video. Thank you.

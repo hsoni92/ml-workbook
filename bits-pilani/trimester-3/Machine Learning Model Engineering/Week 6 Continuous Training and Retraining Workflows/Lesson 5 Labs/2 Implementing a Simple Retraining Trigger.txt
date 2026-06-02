@@ -1,0 +1,129 @@
+OK. So now, let's compare
+and uh perform a classic
+champion versus uh challenger
+evaluation. OK. So, we have already
+trained two models. Uh, so we have
+already trained two versions of models,
+uh, that we can see over here, uh, on
+the sidebar, if you click models inside
+this model, we have two different
+versions, right?
+So now we need to decide if our newly
+trained model, the Challenger model, is
+actually better than the one. Currently
+in production, right? The champion one.
+We will load both model from the
+registry, run them on the same unseen
+evaluation data set, and uh compute
+both uh statistical and uh business
+metrics, right? And then apply your
+promotion logic.
+So let's uh walk through the evaluation
+script we have, that is evaluate and
+promote. By.
+So first, uh, here, we load these two
+models.
+That you can see over here. And this
+script is designed to load the champion
+model by looking for whichever version
+is in the production stage in the
+registry. The Challenger is loaded by
+explicitly passing its version number,
+right? So this is a very robust pattern.
+Next, the evaluate module function we
+have here.
+Uh, it basically calculates, uh, our
+metrics. So here we calculate the mean
+square error.
+OK. As our statistical uh metrics, but
+more importantly, we also calculate a
+simple business metrics, expected uh
+profit here, OK? So this metrics uh
+simulates the financial outcome of uh
+using the model's, uh, predictions, OK?
+Assigning a profit for correct decision
+and a loss for incorrect one. So, tying
+models uh performance to business KPIs
+is a hallmark of uh uh mature MLOs,
+right?
+And then finally, we have our uh
+promotional logic. The rule is simple.
+We promote the challenger only if it's
+uh statical metrics MSC is better and
+uh it's uh business metrics that is
+profit is higher. If it passes, the
+script automatically transition the,
+the challenger stays to production in
+the registry and archive the old one.
+Right? So, before we run the evaluation,
+let's uh manually set our initial state,
+OK? We will use the ML flow UI to move
+version one model uh to the production
+stage. So, this will be our champion
+model. So, let's uh do that.
+So, let's go here. This time I flow UI
+you have to click on models. Let's go
+inside model, and right now you can see
+stays is none. So, let's click on
+version one.
+And for now use the older version of uh.
+UI, if you, if you use a newer version,
+then uh you won't be able to change the
+state. So, here you can see the states.
+Let's uh click on production.
+And now you can see over here, uh. Your
+V1 version is in production, right? So
+now, let's run the evaluation script,
+tailing it to compare the production
+model against our uh challenger, that
+is uh V2, OK? Let's go back to
+PowerScript. And this is our uh
+evaluate and promote.py. Let's bring
+the terminal back. And uh let's open
+the read me to see.
+The command how to run it.
+OK. So, This is the command you have to
+execute to run the. Evaluate and
+prong.py. It's uh copy this command.
+Executed.
+So here we are using evaluator and
+prompt.py and the configuration which
+we're using at eval config.
+Hamel
+OK. Let's uh execute.
+Just a quick heads up. While it's uh
+running, I have set up uh this lab with
+a small simplified data set, so
+everyone can complete it easily.
+What happened in production, you would
+have thousands of data points and
+bigger performance differences. So I
+have also adjusted the promotion logic
+to use a tolerance threshold because
+our tiny model performed very similarly,
+like the V1 and V2 model. The key here
+is learning the pattern, right? How to
+compare models, calculate business
+metrics, and use ML flow to promote uh
+models through stages.
+And the code and workflow you are
+learning is uh production-ready. We
+just simplified the data for learning
+process, right? In the In a real
+company, you would have a larger data
+set, statistically significant
+differences you would see.
+And uh probably you would run AV
+testing uh before uh promoting the
+model, but the ML flow mechanism we are
+demonstrating exactly the same. Right?
+So, here you can see now, uh, it
+compared the metrics and uh version 2
+is now in production. So let's go back
+to the UI and check it. Mm, so let's,
+uh, refresh it and, uh, Inside modern
+tab.
+You can see V1 has been archived and V2
+is running in the production.
+Right? So that's how MNC will work.
+Our promotion was successful.

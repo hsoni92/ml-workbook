@@ -1,0 +1,78 @@
+Hello everyone and welcome back to
+module 6. In our previous discussions,
+we explored the basics of Spark and
+resilient distributed datasets, but
+today we are going to talk about Spark
+Core, where we will deep dive into the
+execution model. And performance
+mechanics. This module is where the
+magic of Spark happens. We aren't just
+looking at how to write code anymore.
+We're looking at how Spark actually
+takes that code and turns it into a
+high performance distributed machine
+across a cluster. Before we jump into
+the architecture. Let's look at what we
+aim to achieve in this module. Our goal
+for you is to master the inner workings
+of Spark's execution pipeline.
+Specifically, we have 3 core objectives.
+The first is understanding lazy
+evaluation. We'll answer the
+fundamental question Why does Spark
+wait before executing your instructions?
+As you'll see, this weighting is
+actually a strategic advantage. Second,
+differentiating between narrow and wide
+transformations. This is the key to
+understanding performance bottlenecks
+and data movement, often referred to as
+the shuffle. And the third, dag and
+stage decomposition. We will explore
+how your code is transformed into a
+directed acyclic graph and then broken
+down into smaller distributed tasks
+that can run in parallel. To get there,
+we're going to focus on 3 core concepts
+lazy evaluation, dependencies, and the
+DG and stages. But to understand this
+concept, we first need to look at the
+brain of this operation, the spark
+execution engine.
+The spark engine is the central nervous
+system of your big data application.
+Its primary responsibility is
+coordinating work across the entire
+cluster. It acts as a bridge,
+transforming your high-level Python,
+Scala, or SQL code into a physical
+execution plan. As you can see in this
+architectural overview, there are 3
+primary components involved in this
+process the driver programme. Think of
+it as a conductor. It hosts the spark
+context, orchestrates the entire jobs,
+and builds the directed cyclic graph or
+DAG, which is essentially the master
+plan of what needs to be done. Then the
+cluster manager. This component acts as
+the resource broker. Whether you are
+using Yarn, MSOs, or Spark's built-in
+standalone manager, its job is to
+allocate the hardware resources like
+the CPUs and the RAM needed to get the
+job done, and then the executors. These
+are the workers located on the
+individual nodes of the cluster. They
+are responsible for executing the
+actual task, storing data in their
+cache and reporting the results back to
+the driver.
+In the next lesson, we'll start our
+deep dive by looking at Sparks unique,
+lazy philosophy. And how it uses this
+architecture to optimise your data
+processing.
+I'll see you in the next class. Till
+then, happy learning and thank you so
+much.

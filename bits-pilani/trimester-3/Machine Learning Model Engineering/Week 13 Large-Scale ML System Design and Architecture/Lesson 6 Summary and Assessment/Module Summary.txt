@@ -1,0 +1,29 @@
+Even with a clean architecture,
+recommendation systems are hard to run
+in practise.
+First, there is a freshness. User
+behaviour shifts quickly. What a user
+cared about yesterday might not matter
+today. So your feature, and sometimes
+your model, must keep up. Second, You
+are balancing many objectives, pure
+relevance, diversity, business rules
+like promotions or inventory, and long
+term satisfaction. You can easily
+overoptimize for short term clicks and
+hurt long term trust. Third, the model
+stack is operationally complex. You
+must stay within strict latency budget,
+handle traffic spikes, and keep the
+data and feature pipeline healthy.
+That's why monitoring is essential.
+Online metrics like click through and
+conversational conversation rates,
+model matrics and breakdowns across
+user segments, system metrics like
+latency and error rates. These signals
+feed into retraining, experimentations
+and system design decisions.
+Exactly the themes you have seen
+throughout the module 11 and 12. Thank
+you.

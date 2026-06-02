@@ -1,0 +1,89 @@
+Hi In our last video, we defined the
+three V's volume, velocity, and variety.
+We saw how they show up in shops, banks,
+and hospitals. But here is a million
+dollar question. Why can't our regular
+computers just handle it? Why do these
+three things force us to throw away the
+old rulebook and build entirely new
+systems? Today we are going to look at
+the so what? The actual impact these 3
+Vs have on how we build technology.
+First, let's talk about volume. When
+your data moves from gigabytes to
+petabytes, you hit a physical limit. A
+single hard drive can only be so big.
+In the old days, you needed more space.
+You bought a bigger drive, but in big
+data we use distributed file systems
+like HDFS, which is Hadoop distributed
+file Systems. Instead of one giant
+vault, imagine a network of thousands
+of small lockers. Think of a company
+like Netflix. They have petabytes of
+video content. They don't store all
+these movies on one supercomputer.
+If they did, that server caught fire.
+Netflix would be gone. Instead, they
+distribute shards or pieces of those
+files across thousands of cheap
+standard discs. What is the impact? We
+move from centralised storage to a
+distributed storage. Next is velocity.
+If the data is coming in like a fire
+hose, you can't process it one by one,
+it's too slow. If you have a million
+records to analyse and 1 processor, it
+might take an hour, but if you have
+thousands of processors working at the
+same time, it takes seconds. This is
+called parallel processing.
+Take Uber as an example. To calculate
+your ride's price, Uber's systems needs
+to look at the traffic, driver
+locations and weather, all happening
+right now. They can't wait for a
+central supercomputer to finish one
+calculation before starting the next.
+They use platforms like Apache Spark to
+split the math problem into thousands
+of tiny pieces and solve them all at
+once. And what is the impact? We move
+from sea level processing to parallel
+processing. Finally, there is variety.
+Traditional databases are like ice cube
+trays every piece of data must be the
+exact same shape to fit into the rows
+and columns.
+But with the big data, your data might
+be a tweet, a video, or a sensor
+reading. You can't force a video file
+to an Excel cell. This can lead to rise
+of no sequel and schema on the read.
+Consider a social media platform like
+Instagram. One person posts a photo
+which is unstructured, a caption, a
+location which is a GPS data, and a
+list of numbers or likes.
+Because the variety is so high, they
+don't use rigid tables, they store the
+data in its raw form and only worry
+about structure when they need to read
+it.
+The impact of it, we moved from fixed
+schemas to flexible data models. So
+let's bring it all together. Because of
+the 3 ways, volume forced us to move to
+distributed storage. Velocity forces us
+to move to parallel processing, and
+variety forces us to move to flexible
+data models. These 3 shifts are the
+foundation of every big data platform
+we will study in this course. In our
+next chapter, we are going to dive
+deeper into hardware.
+We will look at the limits of a single
+node system and see why the hardware
+itself eventually hits a wall. Thanks
+for watching and I'll see you in the
+next lesson. Thank you.

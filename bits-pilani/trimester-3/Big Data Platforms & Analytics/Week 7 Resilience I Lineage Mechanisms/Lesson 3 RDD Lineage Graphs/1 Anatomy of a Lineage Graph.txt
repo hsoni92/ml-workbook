@@ -1,0 +1,79 @@
+Welcome to Lesson 3. In the previous
+lessons, we established that Spark
+actually relies on recomputation rather
+than replication. But how does Spark
+know exactly what to recomput? It uses
+a logical map, which is called RDD
+lineage graph. Think of lineage graph
+as the brain of sparks fault tolerance
+system. It's a directed a cyclic graph
+or dag. Which keeps track of every
+transformation applied to your data. It
+doesn't store the data itself, but it
+stores the history of how the data was
+built. If a node fails and the piece of
+data goes missing, Spark doesn't panic.
+It simply looks at the road map,
+identifies the missing piece, and
+follows the path backward to the last
+known good state to recreate it. To
+understand the efficiency of this road
+map. We can look at it through a simple
+mathematical lens. On this slide You
+see the equation for a recovery cost.
+The cost to recover a lost partition is
+essentially the sum of the time it
+takes to execute each operation in that
+partition's history, starting from the
+last checkpoint or the source data.
+In this formula, N actually represents
+the number of steps, or the
+transformations in the linear change.
+And output of i represent the each
+individual operation.
+This formula tells us something
+critical. Spark's recovery time is
+proportional to the depth of the graph.
+If your lineage is short. Say just a
+simple philtre on a text file, the
+recovery is nearly instant, but if your
+lineage is very long and complex. The
+recovery cost actually increases.
+This is why understanding the anatomy
+of your graph is vital for building
+high performance resilient applications.
+So what makes this road map so reliable?
+It stands on 3 core architectural
+pillars. First is immutability. Which
+is, RDDs cannot change. Once an RDD is
+created, it is a fixed state. Because
+it is read-only snapshot, we don't have
+to worry about data changing midstream,
+right? Each transformation produces a
+brand new fixed state. Second is
+ancestry. Every RDD in Spark maintains
+a pointer or a reference to its parent
+RDD.
+And this creates a chain of custody.
+Because RDDB knows it came from RDDA.
+It knows exactly who to ask for data if
+its own partitions are lost, right?
+Finally, we have determinism.
+This is the secret sauce. In Spark,
+rerunning the same code on the same
+input data is guaranteed to always
+yield the exact same result. Without
+determinism, the lineage of the recipe
+would be useless because re-executing
+it might give us different data than
+what we lost.
+So together, immutability, ancestry,
+and determinism, they all three ensure
+that your data is always recoverable,
+no matter how large your cluster or how
+frequent your hardware failures.
+In our next video, we'll walk through a
+specific log analysis example to see
+this lineage in action. Till then,
+happy learning. I'll see you in the
+next class. Thank you so much.

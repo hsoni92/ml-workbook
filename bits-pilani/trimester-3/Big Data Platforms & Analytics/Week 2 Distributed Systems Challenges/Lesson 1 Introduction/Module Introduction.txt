@@ -1,0 +1,86 @@
+Hi everyone, and welcome to module 2 of
+our course. In our first module, we
+spent a lot of time on the why. We
+learned that to handle the massive
+volume and velocity of big data, we
+have to move away from one giant
+supercomputer toward a fleet of vans, a
+cluster of commodity hardware. We
+celebrated the idea of infinite scaling.
+But as we start this module, I have to
+tell you the truth. Scaling out isn't
+free.
+There is a technical and logical price
+to pay for moving from one box to many.
+This week, we're moving from the muscle
+of hardware to the brain of
+coordination. In this module, we are
+going to learn the rules for managing
+this chaos. We will deconstruct 3
+massive concepts that every big data
+professional must know network
+unreliability. We'll stop assuming the
+network just works, and start designing
+for when it fails. The Gap theorem We
+learned why it is physically impossible
+to have a system that is perfectly
+consistent and always available, and
+can survive a network break, which is
+partition. All at the same time, you
+have to pick 2.
+We will look at why a bank needs strong
+consistency. While a like counter on
+YouTube can settle for eventual
+consistency. By the end of this module,
+you'll stop thinking like a traditional
+software developer and start thinking
+like a systems architect.
+You learn to design for failure.
+Scaling out gave us the power to handle
+big data. Now we have to learn how to
+handle that power responsibly. Let's
+get started with our first step, deep
+dive into the fallacies of distributed
+computing. Think about your favourite
+banking app or a social media site like
+Instagram. When you open the app, it
+looks like you are talking to one
+single perfect machine. Your balance is
+there, your photos are there, and
+everything is in sync. This is what we
+call the single system image. But as an
+architect, you now know that that's an
+illusion. Behind that app are the
+thousands of computers spread across
+different data centres.
+The challenge is the price we pay. In
+maintaining that illusion, when a
+system is distributed, the complexity
+isn't just in the computers stem cells.
+It is in the space between them.
+It's in the wires, the routers, and the
+messages flying back and forth over a
+network that isn't always reliable.
+Imagine you're a global company like
+Amazon. You have 2 servers, one in New
+York and one in London. A customer in
+New York buys the last available pair
+of sneakers. The New York server
+updates its record to 0 items left. Now
+the New York server has to tell the
+London server, Hey, we're out of stock,
+but what if underwater cable in the
+Atlantic Ocean has a glitch?
+Or whatever router in London reboots at
+the exact second. The New York server
+thinks it sent the message, but the
+London server never got it. Now a
+customer in London sees 1 item left and
+buys it 2.
+Suddenly you have sold the same item
+twice. This is a classic distributed
+systems problem. In a single node
+system this is impossible. In a cluster,
+it is a daily reality. I'll see you in
+the next lesson. Till then, happy
+learning.

@@ -1,0 +1,274 @@
+So now, we'll see how a serving service
+can be updated to use the newly
+promoted model and um how to safely
+roll back if it needed, OK? So, in this
+lab, we will uh close the loop. We have
+uh promoted a new model in the registry,
+but uh how does our production service
+actually start uh using it, right? So,
+we will look at a fast API service
+designed to load its uh model directly
+from uh ML flow registry based on its
+uh stage, OK? And we'll see how it pick
+up our new champion, and then uh we
+will simulate a rollback by changing
+the stage uh back to registry, OK? So,
+let's, uh,
+Uh, let's see, the app.py. You can find
+it here inside the service.
+And uh so what is happening here,
+instead of uh loading a hard-coded file
+path of the model, here we have a load
+model from registry function. That
+basically construct a model URI using a
+model name and uh model stage. So
+currently, by default, it takes a
+credit risk model and then uh model
+stage production, and you can see it
+here, we are constructing the model URI,
+OK?
+Um, and, uh, these are read from
+environment variable, defaulting to
+Credit risk model and production, right?
+So, this makes the service uh
+incredibly flexible. So, we can make it
+load a staging model or a specific
+version just by changing its uh
+environment variables, right? Without
+even touching the code. So, this is a
+critical pattern for uh safe uh
+deployments and uh rollback. So, let's
+go back uh to the Uh, I'm flow. Let's
+click on models.
+This is our credit risk model.
+Uh, click on active. So here we have 2
+active models.
+Version one that is uh uh not running
+in the production, and then we have
+version two that is currently running
+in the production, right?
+So let's try to run this app.
+OK. So, once we run the service, M.P.
+Uh,
+We need to make sure our ML flow
+tracking URI is uh Said to the service.
+And find the registry, right? So, that
+is uh being taken care of over here.
+And uh so let's uh copy the command.
+Executed.
+And uh right now the host we're using
+here it's uh. 40.
+And you can see here, if you read the
+Debugger You can find we have loaded
+the version 2.
+Uh,
+The stage tag was production and we are
+using V2 version, uh.
+Currently in the production. So let's
+uh validate it. Let's uh go back to
+Bruno.
+Uh, this is the same request we had
+used in lab 3, but, uh, there, the URL
+was different, so let's, uh, change it.
+It was initially 127, but here we are
+passing. Uh, 40, right? So, let's, uh,
+copy it once again.
+Yeah.
+Institute.
+And you can see our credit risk model
+is up and running. Model version is 2.
+Let's also try predict. Here also we
+need to change the URL to
+Chile
+Execute it and we are getting model
+version and the production right so
+change the number here.
+Yeah.
+So, this app is up and running. Now,
+imagine we detect a problem with the V2
+version of model, which is currently in
+production, OK? And we need to roll
+back to version 1 immediately. With our
+setup right now, this is quite easy and
+safe. We simply go back to the model
+registry. We find Version 1, which is
+currently archived, and we transition
+it back to production stage. We can
+also move version 2 back to staging or
+archived. So, let's do that. Uh, let's
+go back to
+ML flow. So you can see here currently,
+V1 is in staging stage and uh V2 is in
+production. So, let's first uh put V1
+into production.
+And uh
+Uh, we do.
+And do staging.
+Yeah. So now
+V1 should be in production and uh V2
+should be in staging, right? So ideally,
+when we deploy our app.PY, so V1 should
+be used.
+Inside it, right.
+So now all we have to do. Restart our
+serving application, so let's stop it
+and start it again with the same
+command.
+Uh, just remember here, uh, when V2 was
+in production, we were seeing, uh, V2
+version was loaded successfully, right?
+So, let's stop it. Control C.
+Execute the same command.
+And now watch the.
+Startup blogs.
+This time you can see.
+Uh,
+model was in one here, right? It has
+the production tag and it says, was in
+one successfully loaded, right? So, now
+let's uh
+Execute, uh, Bruno. Uh, let's try to
+execute here.
+And you can see here the modern version
+is one.
+And also try to predict something.
+Modern ones the newest one, right?
+So this time, the service. Reports that
+it has loaded uh V1 version, version
+one, right? It automatically picked up
+the change in the registry because uh
+It's configured to always load the
+production model, right? So, this is a
+safe and conflict-driven rollback. We
+did not have to change any code or
+rebuild any images, right? Docker
+images. So, basically, this lab
+demonstrate the full
+End to end envelopes uh loop,
+retraining a.
+New candidate, evaluate it against a
+champion, promoting it, uh, based on
+clear rules and serving it in a way
+that allows for safe and immediate uh
+rollback.
+And uh before we wrap up, Let's, uh,
+step back and talk about why this
+matters in the real world. What we have
+just uh built isn't just a technical
+exercise, it's a strategic, uh,
+business, uh, capability, OK? Imagine
+you are at a fintech company and, uh,
+this credit risk model we have been
+working with, uh, is, uh, preprocessing
+thousands of loan applications every
+hour, OK? And every prediction it makes
+has a direct financial impact. A false
+negative.
+Approving a risky loan could cost the
+company tens of thousands of dollars,
+right? And a false positive, uh,
+rejecting a good customer means, uh,
+lot revenue and, uh, a, uh, damaged
+plan, right? So, now, your data science
+team has, uh, just, uh, retrained the
+model on last quarter's data, and uh
+they're excited because it could
+increase profitability by 8%. But uh
+here's the question, how do you safely
+deploy this into production without
+risking a catastrophic failure, right?
+So, this is where the champion
+Challenger framework we just
+implemented become invaluable. Instead
+of uh crossing your fingers and hoping
+the new model work, you have a
+systematic uh auditable process, right?
+Like, uh, version controlled. So every
+model is version and tracked. You know
+exactly what data set was used, what
+hyperparameters were set, and, uh, who
+trained it. So, there is no mystery,
+right?
+Even the evaluation framework, you're
+not relying on gut feeling. Both models
+are tested on the same holdout data,
+and you are measuring both the statical
+accuracy and the business impact, right?
+The actual dollars and cents. Uh, then
+we have also built an automated, uh,
+promotion, so the decision to promote
+isn't made in Slack or Teams, right?
+It's based on a predefined rule that uh
+your team agreed on. So this uh removes
+emotions and politics from the equation,
+right? And then we have seen the
+rollback process, right?
+So, in the rollback, uh, we have the
+safety net. If something goes wrong, if
+customers start complaining, if fraud
+rates spike, you can roll back to the
+previous model in uh under 60 seconds
+just by changing the stage in the
+registry and, uh, restarting your
+application again. So, no emergency
+code deployment, no panicking,
+debugging, uh, sessions, right? And
+this is quite common in the
+organisation. You must have heard, uh,
+this kind of scenario. A major
+e-commerce company deployed a new
+recommendation model right before Black
+Friday, and within hours, they noticed
+a 15% drop in. Conversion rate, right?
+Because they had a rollback strategy
+similar to what we have built. They
+reverted to the old model in minutes
+and then they're preventing millions in
+lost revenue. Without this
+infrastructure, they would have been
+stuck troubleshooting in production
+during the BGS
+cell uh day of the year, right? So,
+this workflow also has organisational
+benefit. It creates a clear
+accountability. The data science team
+owns the model training and evaluation.
+The LL engineering team own the
+infrastructure and uh deployment, and
+the business team define the success
+metrics, right? Everyone has a role and
+the process is uh transparent.
+It also enables faster iteration. When
+you have confidence in your deployment
+and rollback process, you are willing
+to experiment more, right? And you can
+test uh new features, try a new
+algorithm. You can do AB AB testing uh
+with different approaches because you
+know, you have a uh uh safety net. So,
+as you leave this lab, I want you to
+think about this. MLOs uh isn't just
+about tools and pipeline, it's about
+building business uh resilience.
+OK. Uh, it's about turning machine
+learning from a research project into a
+reliable revenue generating asset that
+your organisation can depend on, right?
+And the technique, uh, we have covered,
+uh, automated retraining, then, uh,
+champion challenger evaluation, then
+registry-driven deployment. These are
+what separate companies that dabble in
+ML from companies that truly scale it,
+right? And now you have the foundation
+knowledge to build these capabilities
+in your, in your own uh organisations.
+Thank you for your attention and uh.
+Feel free to experiment more with this
+code. Try changing the promotion
+criteria, simulate different scenarios,
+or even break things, uh, intentionally
+to see how the rollback works, um,
+under pressure. So that's how you truly
+internalise, uh, these patterns. Yeah.
+Thanks.

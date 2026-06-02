@@ -1,0 +1,50 @@
+Welcome to From Metrics to Action
+Designing an ML monitoring workflow. So
+far we have talked about what to
+monitor system health, data quality,
+drift, and prediction quality. In this
+video we will focus on turning those
+signals into actual workflow, how to
+set monitoring objectives, how to
+design dashboard and alerts that people
+actually use, and how to assign
+ownership. And run books, so problem
+gets handled instead of ignored.
+The goal is a monitoring setup that
+doesn't just collect metrics. But
+actually drives decision and actions.
+Quick recap from earlier video.
+We said machine learning monitoring
+lives in 3 layers. System health,
+classic metrics like CPU, memory, error
+rates, and latency. Data health schemas,
+missing values, drift, out of range
+values. Prediction health, model
+performance metrics, business KPIs, and
+fairness across segments. In this
+session, we will assume you have some
+of these signals already flowing, and
+the question is, how do we organise
+them so real humans can see issues,
+triage them and fix them. Effective
+monitoring starts with clear objective.
+As what bad outcomes are we trying to
+avoid? A big accuracy drop? A major
+revenue or risk impact? Unfair
+decisions are a particular segment.
+Next, translate that into a few service
+level objectives.
+For latency. P95 is less than some
+target. For accuracy,
+AUC or recall above some threshold on
+recent label data.
+For data, drift scores like PSI below a
+certain level. Or your most important
+feature.
+The result should be a short list per
+model. This model is considered healthy.
+If these metrics stays within these
+bands.
+These objectives are what your
+dashboard and alerts should be built
+around.

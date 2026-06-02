@@ -1,0 +1,64 @@
+In our last video we saw how a single
+straggler. Can slow down an entirely
+synchronous cluster. To address this,
+we use asynchronous training. In this
+mode, we throw away the weight all rule.
+Instead, every worker updates the
+global weights independently as soon as
+it finishes its specific batch. If one
+worker is faster than others, it simply
+keeps going. Pulling the latest weights,
+pushing new gradients without ever
+waiting for its peers.
+The primary advantage here is 100%
+worker utilisation. You're getting the
+absolute maximum out of your hardware
+because no GPU ever sits idle. This
+makes asynchronous training incredibly
+fast in terms of raw steps per second.
+However, there is a significant
+trade-off in the convergence quality
+because workers aren't synced. A worker
+might calculate gradients using an
+older version of the weights, while
+other workers have already updated the
+master model.
+So this is known as a stale gradient
+problem.
+Using these stale updates can lead to
+instability, making it harder for the
+model to reach its peak accuracy, or
+requiring more careful tuning of the
+learning rate.
+So to wrap up this lesson, let's look
+at how these two modes actually perform
+in the real world based on standard
+cluster benchmarks. So if you look at
+speed measured in steps per second,
+asynchronous training is a clear winner,
+often reaching 95% efficiency or higher.
+Then synchronous training typically
+lags behind around 70% in this example.
+Because of that one straggler overhead
+that we just discussed, but when we
+look at final accuracy, the story flips.
+Synchronous training usually achieves
+higher accuracy, you know, 98% here in
+this example, because every update is
+mathematically fresh and consistent.
+Asynchronous training might stop at a
+lower accuracy or take much longer to
+converge. To that same peak because of
+the noise introduced by those stale
+gradients. The choice between them
+often comes down to your hardware. If
+you have a very stable high speed
+network, synchronous is usually best.
+If you're working with unreliable nodes
+or varying hardware speeds,
+asynchronous might be your only path to
+finishing the job.
+You know, next lesson We'll see how
+actually Tensorflow helps you implement
+these choices, using its built in
+strategy API.

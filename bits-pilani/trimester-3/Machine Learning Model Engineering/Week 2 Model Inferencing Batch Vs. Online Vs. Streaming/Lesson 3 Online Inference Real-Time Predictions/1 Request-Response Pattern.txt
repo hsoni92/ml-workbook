@@ -1,0 +1,79 @@
+Welcome back to Module 2. Model
+inferencing batch versus online versus
+streaming. In the last video, we looked
+at batch inference, when we. Have a
+huge pile of data? And no one is
+waiting on each individual prediction.
+In this video, we're going to zoom in
+on the opposite pattern, online request
+response inference. By the end, you
+will be able to define what online
+inference is and how it behaves,
+recognise the kind of use cases that
+truly need real time predictions,
+understand why latency, scaling and
+reliability are much big deal here, and
+see where techniques like caching and
+auto scaling fit in at a high level.
+Think of this as what happens when the
+model is sitting directly on the hot
+path of user experience.
+Let's position online inference
+relative to what we have seen already
+in Topic 2. We said batch inference is
+all about processing many items at once,
+on a schedule where no user is staring
+at a spinner waiting for each
+prediction. The focus there is
+throughput and total job time. Can we
+finish by 7:00 a.m.? Online inference
+flips that mindset. We now have one
+request coming in, and we need one
+response back immediately. The caller,
+which might be a UI, a mobile app, or
+another service, is blocked until it
+gets that answer. So we're shifting
+from
+finish the whole job by a deadline, to.
+Respond to this single request under 1
+milliseconds.
+So a proper definition,
+online or synchronous inference means a
+single request arrive at our service,
+usually over HTTP or GRPC. The service
+runs the model right away on that input,
+and it returns a response to the caller
+in the same interaction. The caller
+could be a front-end application, a
+back-end service, a mobile app, or even
+another ML system. The key property is
+the caller is waiting for predictions
+before it can move on. The prediction
+is part of real time interaction, not
+an offline job.
+Let's look at the flow inside a single
+online conference call. For each
+request, the service typically does
+something like this. Receive the
+payload, sample JSON over HTTP or proto
+buff message over GRPC.
+Validate the input, check required
+fields, types, ranges, maybe reject bad
+request early.
+Apply feature transformations.
+Exactly like in training, encodings,
+normalizations, embeddings, all of
+these, run the model forward pass,
+compute logics. Probabilities, scores,
+or embeddings. Post process the outputs,
+apply thresholds, pick top key items,
+attach labels, format the result, send
+the response back to the caller.
+Conceptually, these are the same steps
+as in batch inference. The difference
+is granularity and timing. In batch, we
+do this for thousands and millions of
+rows. In one big job, in online, we do
+this per request, and we have to stay
+within a tight latency budget for every
+single one.

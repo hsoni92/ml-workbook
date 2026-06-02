@@ -1,0 +1,40 @@
+Welcome to Module 3. Model serving
+patterns and containerization.
+In module 1 and 2, we focused on the
+life cycle and MLOs mindset in M1 and
+how we call models via different
+inference patterns in M2 batch online
+streaming. In this module, we shift
+perspective to the other side and ask,
+where does the model actually live?
+What does it mean to serve a model in
+production?
+In first video, we will define what
+model serving actually is beyond I have
+a model file.
+Walk through the core responsibility of
+a serving layer. Connect it back to the
+client and metrics from module 2 and
+preview the different serving patterns
+we will cover next monolith,
+microservice, serverless, and so on.
+Think of this as the job description
+for the thing that sits behind your
+predict endpoint.
+Let's quickly anchor this in what you
+already did in Module II.
+In Module 2, You wrote client, a batch
+client, which called predict many times
+to score lots of rows.
+And an online style client. Which sent
+one request and waited for one response.
+Up to now, our mental model was mostly
+from the client point of view.
+I sent Jason to predict.
+Function, I get back some predictions.
+In this model, we will flip the camera
+around and ask, what's on the other
+side of that predict endpoint. Where
+does the model actually live and how
+does it handle these requests? That's
+what we mean by model serving.

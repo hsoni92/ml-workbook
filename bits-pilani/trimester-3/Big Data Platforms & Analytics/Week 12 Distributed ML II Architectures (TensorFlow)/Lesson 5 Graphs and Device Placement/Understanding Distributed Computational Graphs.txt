@@ -1,0 +1,58 @@
+Welcome to Lesson 5. In our previous
+lessons, we looked at high level
+strategies like mirrored and
+multi-worker. Now we are going back to
+look under the hood at the low level
+mechanics that make those strategies
+actually work computational graphs and
+device placement. When you execute a
+model in Tensorflow, it represents your
+operations as a directed cyclic graph
+DA. In a distributed setting, this
+single main graph needs to be managed
+across many different hardware units.
+The first concept here is graph
+partitioning. Tensor flows run time. Is
+responsible for splitting that main
+graph
+into several subgraphs. Each subgraph
+contains the operations meant for a
+specific device. Whether that's a CPU
+or a specific GPU in your cluster. This
+leads us to device placement.
+This is the process of assigning
+specific operations. To specific
+hardware. Such as, let's say a job
+worker replica of task 0 for device GPU
+0. While Tensorflow can do this
+automatically, developers also can use
+strict placement to manually force
+certain operations like data processing
+to stay on the CPU, while the heavy
+matrix multiplication happens on the
+CPU.
+Finally, we have interdevice
+communication. Because the graph is now
+partitioned, data often needs to travel
+between these subgraphs. Tensorflow
+handles this by automatically inserting
+send and receive nodes. Into the
+partition graphs for communication
+between devices on the same machine, it
+might use fast shared memory for
+communication between different workers
+in a cluster. It utilises high
+performance protocols like GRPC or MPI.
+This ensures that even though your
+model is physically split across many
+machines, it behaves as one logically
+connected system. Understanding those
+low level mechanics. Helps you debug
+performance bottleneck. For example, if
+your GPU is idling, it might be because
+the receive node is waiting too long
+for data over a slow network connection.
+In our final video, we'll summarise
+everything we learned in this module.
+I'll see you in the next video. Thank
+you so much. Happy learning till then.

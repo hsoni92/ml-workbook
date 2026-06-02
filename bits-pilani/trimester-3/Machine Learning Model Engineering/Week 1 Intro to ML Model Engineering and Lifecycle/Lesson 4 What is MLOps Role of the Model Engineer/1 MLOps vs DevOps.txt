@@ -1,0 +1,83 @@
+In this video, we're going to put a
+name to the practises and rules that
+make production ML actually work.
+By the end, you should have a clear,
+simple definition of what MLOs is.
+Understand the key practises that fall
+under MLlopes, see where the ML model
+engineer fits into all of this, and be
+ready for the labs, where we are, we
+will look at real model API.
+Think of this as a job description and
+operating system for production ML.
+First, why do we even need a thing
+called envelopes? In practise,
+production ML is not train. Not train a
+model once, push to prod, and forget.
+Real systems have to deal with data and
+user behaviour constantly changing,
+complex infrastructure, multiple
+services, databases, queues, cloud
+resources, and strict constraints that
+we saw in Topic 3, like latency, cost,
+reliability, compliance.
+So we need a disciplined way to build
+models, deploy them, monitor them in
+the wild. And update them over and over
+again safely. That set of practises is
+what we call ML ops.
+Here is a simple definition that you
+can remember. ML Ops is applying DevOps
+styles practises to ML systems. The
+focus is on automation of training,
+testing, deployment, monitoring.
+Reliability and scalability, making
+sure model based services are as solid
+as any other production services,
+collaboration, getting data scientists,
+ML engineers, infrangineers and product
+folks to work smoothly together. The
+ultimate goal, make it easy and safe to
+put models in production, and keep them
+healthy and useful as the world changes.
+So how is MLOps different from plain
+DevOps?
+On the develop side, we share a lot of
+ideas, automated builds, tests,
+deployments.
+Use CICD pipelines. Invest in
+monitoring, logging, tracing, aim for
+fast, reliable release, rather than
+giant, risky ones.
+The ML twists are.
+Data and labels keep changing, so the
+system's logic can change even when the
+code stays the same. Models degrade
+over time because of data drift and
+need to be retrained. Reproducibility
+now means tracking data, code, model
+artefacts. And configuration together,
+we often need to answer which model
+version produced this specific
+prediction for debugging fairness and
+compliance. That's why I like to think
+it as MLOs is equal to DevOps plus data
+plus models. Fourth practise monitoring
+and alerting. We need to monitor system
+health, latency, error rates, uptime,
+resource usage, data and model health,
+input distributions, missing values,
+out of range features, change in
+prediction distributions, and, where
+possible, actual performance metrics
+once levels arrive.
+We also need alerts. When distribution
+drifts, when metrics regress, when
+pipelines breaks or dashboards stops
+updating, without serious monitoring,
+ML systems tends to suffer from silent
+failures. Everything looks up from
+infrastructure perspective, but model
+is doing the wrong thing. Good ML ops
+makes these issues visible and
+actionable.

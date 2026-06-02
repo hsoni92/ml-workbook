@@ -1,0 +1,57 @@
+Congratulations. You have officially
+completed module 5 on RDD fundamentals.
+We have covered a lot of ground, from
+the high-level theory of distributed
+computing, down to the actual Python
+code. Used to create data sets. Let's
+take a final look at the timeline on
+the slide to recap the 4 major
+milestones we hit in this module. The
+first is, what is an RDD? We started by
+defining the resilient distributed
+dataset. We learned that this is the
+core building block of Spark.
+It's a virtual collection of data that
+feels like a single list, but is
+actually spread across your entire
+cluster. The second one is the core
+properties. We looked at why RDDs are
+so reliable, we discussed resilience,
+which is achieved through lineage, the
+ability to rebuild lost data without
+needing expensive backups. We also
+talked about immutability. The rule
+that RDDs never change once they are
+created, which keeps our distributed
+system consistent and bug free. The 3rd
+is, the internal logic.
+We then moved into mechanics of speed.
+We saw how partitioning allows Spark to
+chop data into pieces so every CPU core
+can work in parallel.
+We also covered data locality, the
+brilliant strategy of moving your tiny
+bits of code to where the massive data
+already lives, rather than wasting time
+moving data across the network.
+And the 4th 1 is creation methods.
+Finally we got practical. We looked at
+the two ways of bringing data into
+Spark, paralysing local Python list for
+quick testing, and loading external
+file from HDFS or S3 for real world,
+large scale production work.
+You now have a solid understanding of
+the static side of Spark. How data is
+stored and organised. But data isn't
+meant to just sit there. It's meant to
+be processed in our next module, which
+is Spark Core 2. We're going to learn
+how to actually manipulate this data
+using transformations. We'll see how to
+philtre, map, and join RDDs to get the
+insights we need.
+Great job on finishing this fundamental
+module. I'll see you in the next one.
+Till then, happy learning. Thank you so
+much.

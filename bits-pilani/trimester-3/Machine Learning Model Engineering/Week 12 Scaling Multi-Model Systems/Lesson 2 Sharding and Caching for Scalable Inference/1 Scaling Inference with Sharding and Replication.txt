@@ -1,0 +1,34 @@
+Welcome to Module 12, Topic 2 sharding
+and caching for scalable inference.
+A single model instance on a single
+machine.
+Only works up to a point. As traffic
+grows, you will see queuing, timeout,
+and unhappy users. In this video, we
+will look at how important patterns
+sharding.
+And replication to spread load across
+many instances or models, and caching
+to avoid doing the same expensive
+inference over and over again. The goal
+is to keep latency and cost under
+control while your system and your
+number of models grows.
+Let's quickly recap the scaling problem.
+In simplest system, you have one model
+service. On one machine and all traffic
+flows through that instance. This is
+easy to understand, but as traffic
+grows, you will see increased latency,
+timeouts, and a huge single point of
+failure.
+There is also a hard upper bound on how
+many queries per second that one
+machine can handle.
+To go beyond that, we use two ideas
+replication, where we run multiple
+copies of the same model to spread load,
+and sharding, where we divide traffic
+or data into pieces and send each piece
+to a specific subset of servers or
+models.

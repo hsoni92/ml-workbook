@@ -1,0 +1,41 @@
+You'll often hear names like Kafka,
+Spark, Flink, Beam, all of these
+together.
+It helps to separate their roles.
+System like Kafka primarily handles
+event transport and storage. They
+manage topics, partitions and offsets,
+and act as a durable log of events.
+Frameworks like Spark streaming, Flink,
+and Apache Beam are processing engines.
+They read events from Kafka or other
+sources, apply transformations, windows
+and aggregations, and write results to
+databases, feature stores, or dashboard.
+You can think of Kafka as the event
+highway. And spark flank beam as the
+work that drive. On that highway.
+To transform events into useful
+features or signals.
+Most streaming engines support 3 key
+ideas windows, aggregations, and state.
+Time windows let you group events over
+periods like last 5 minutes or last
+hours.
+These can be tumbling windows, non
+overlapping, sliding windows
+overlapping, or session windows.
+Aggregations, compute counts, sums,
+average, or other statistics over
+events in each window.
+Often grouped by users, device, or the
+account.
+Stateful processing means the job keeps
+track of running counts, last values,
+or rolling a statistic across events.
+These are exactly what we need to build
+a streaming based machine learning
+feature like.
+Click in the last 10 minutes, or.
+Average transaction amount in the last
+hour.

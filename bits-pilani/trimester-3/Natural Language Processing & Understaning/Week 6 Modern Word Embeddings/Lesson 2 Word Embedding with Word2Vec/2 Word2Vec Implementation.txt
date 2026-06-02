@@ -1,0 +1,93 @@
+Welcome back learners. Now that we've
+understood what Word2Vec is, let's also
+implement it in Python to gain a deeper
+understanding. Right, learners, let's
+now implement Word2vec.
+So V2Vec is available in the GI library,
+right? So for that you need to install
+it first.
+Perfect. Now let's import Gensim, and
+from Gensim.models, let's import W2 web.
+This will help us implement Word to
+workc embeddings. Now I've created a
+sample copies of very random sentences,
+as you can see, right? So this is our
+corpus. Let's print it out, so our text
+data is ready. Let's preprocess it
+first before we pass it to the word to
+work model. So what I've done is
+nothing. I have converted all the
+capitalization into lowercase, and then
+I have split it on white space to
+convert it into tokens, right? It will
+look something like this. Nothing
+special, right?
+Now comes our word to work
+implementation.
+So let's initialise the word to work
+model in this variable called model.
+You pass some hyperparameters. This is
+the training data.
+Vector size equals 50. Window equals 3,
+min count equals 1, and workers equals
+4. Actually, let me write definitions
+of all these so that it makes
+Much more sense to you.
+So this is your
+Training data.
+Defines the dimensionality of your word
+embeddings or word vectors, right?
+Now window is very important.
+Window defines how many words you want
+to look before and after the current
+word, right? So for example, if you're
+at love, how many words before, so I,
+machine, I am learning machine, love I.
+So how many words before this and how
+many words after this do you want to
+look at for considering the context for
+this word, right?
+Min count.
+Is nothing, but what it tells the model
+is to ignore all the words with a total
+frequency lower than this value, right?
+So in this case, it will ignore all the
+words which have not appeared at all,
+right? They must appear at least once.
+And then workers
+There's nothing.
+Let me put it here, and now let me
+define it.
+These are the number of threads that
+you want to use for training your model.
+More the number of workers, the faster
+your training will be, right?
+Let's run this. OK, our model is
+trained now.
+Now, let's explore the vocabulary. So
+what I'm doing is model.word to vec,
+and I'm passing one of these words.
+So what it says is the vector for word
+machine. Is this
+Right? And this will allow us to find
+similar words from our data set, right?
+So I'll run model.word to
+vec.mostsimilar. Most similar to what,
+I can pass anything here, so I passed
+machine here. Let me also convert this
+into machine. And what I want to look
+at the top three most similar words to
+machine from my data set.
+So as for this model, It says words
+most similar to machine are learning,
+OK, that makes sense, dog and love,
+which do not make as much sense. So
+this depends on how big your data set
+is and how you have configured your
+model for training as well. Right? So
+now, what is your task? Your task is to
+take a different, maybe more bigger,
+more coherent data set and run word to
+Vec on it.
+That's all for this video, and I'll see
+you in the next one. Thank you.

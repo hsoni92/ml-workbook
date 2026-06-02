@@ -1,0 +1,52 @@
+Welcome to lesson 3. So far we have
+talked about the wall in the hardware.
+Now we will discuss about why bigger
+boxes eventually fail. In the world of
+hardware, the relationship between
+power and price is not a straight line.
+It's a curve. If a standard server
+costs $5000 a server that is twice as
+powerful might cost $25,000. A server
+that is four times as powerful might
+cost $150,000.
+Cloud providers, why do companies like
+AWS or Google Cloud use millions of
+cheap servers instead of one giant
+supercomputer? Because it is cheaper.
+It is much more cost effective to buy
+100 normal computers than one monster
+computer, and that has the same total
+power. We call this moving from
+specialised hardware to commodity
+hardware. The biggest risk with a
+bigger box is that it is a single point
+of failure. If you have one massive,
+expensive server running your entire
+company's database and a single power
+supply. Fails or single motherboard
+short circuits, your whole business
+goes offline. You're all in one machine.
+Imagine an airline like Delta or
+Emirates. If they ran their booking
+system on one massive bigger box and it
+crashed during a holiday weekend,
+thousands of flights would be grounded.
+In big data, we prefer a cluster. If 1
+machine out of 1000 fails, the other
+999 just keep working. The system is
+resilient. Finally, bigger boxes have a
+ceiling. You can only add so many CPUs
+to a single motherboard before you run
+out of slots. When you reach that
+ceiling, you're stuck. You have to
+throw away the whole bigger machine and
+buy an even bigger one. But with
+horizontal scaling, which is like
+adding more small machines, there is no
+ceiling. If your data grows, you just
+buy another locker and add it to the
+network. Now that you have good
+understanding of why bigger boxes
+eventually fail, let's dig deeper into
+the concepts in our subsequent lessons.
+Happy learning till then. Thank you.

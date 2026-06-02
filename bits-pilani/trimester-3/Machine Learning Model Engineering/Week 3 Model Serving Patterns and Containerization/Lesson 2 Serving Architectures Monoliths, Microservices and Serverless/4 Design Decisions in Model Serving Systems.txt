@@ -1,0 +1,79 @@
+Let's put all three patterns side by
+side, monolith. Very simple
+To build and deploy one app, one
+artefact. But hard to scale the model
+separately.
+Model and app are tightly coupled, good
+for small internal tools, early stage
+experiments, and proof of concepts
+features. Microservice
+It lets you scale the model
+independently and choose the best stack,
+take a stack for it. Comes with more
+infrastructure and operational
+complexity, more services to monitor
+and maintain. Good for high traffic
+critical and model APIs you expect to
+invest in.
+So Wallace, It is great for spiky or
+low traffic and per pay user scenarios,
+minimal server management.
+You have to deal with cold start, time
+limits, memory limits, packaging
+constraints. It's good for lightweight
+inference and event driven use cases.
+There's no one right architectural
+choice, the correct choice depends on
+how critical the model is, what traffic
+looks like, and how your organisation
+is structured.
+Before we wrap up, Let's connect the
+serving architecture back to the
+inference patterns from Module 2.
+Batch inference often runs as a
+scheduled job or a container in a
+cluster. Sometimes that job calls a
+separate model microservice to score
+data, Online inference, often
+implemented as a model microservice
+behind an API gateway. In lighter
+scenarios, it might be a servers
+function exposed via an HTTP endpoint,
+streaming interface. The model usually
+lives inside a streaming pipeline.
+Example like Flenk, Spark, streaming
+jobs, or a car for consumer that runs
+continuously, so the inference pattern
+from Module 2 lets you. Uh, tells you
+how the models are called batch versus
+online versus streaming. The serving
+architectures tells you how the model
+service fits into your overall system.
+They are two layers of the same picture.
+To wrap up this video, We looked at 3
+common serving architectures, monolith,
+where the model lives inside the main
+app. Model microservice, where the
+models is it's in own API and server is
+function, where the model is packaged
+as a function invoked on demand. We
+talked about when each of these makes
+sense and how they relate to batch
+online or streaming patterns from
+Module 2.
+In the next theory video, topic 3, we
+will zoom into APIs for machine
+learning, where we'll see RT versus
+GRPC, synchronous versus asynchronous
+pattern, and how these choices affect
+your model service. In the labs are for
+this module, you'll see or you'll build
+fast API based on models services.
+Package it into a docker container and
+test it locally. That container can act
+as a simple monolithic app in a smaller
+system or a model microservice in a
+larger architecture. So keep this
+architectural pattern in the mind.
+As we move into the APIs and then to
+the code for the labs. Thank you.

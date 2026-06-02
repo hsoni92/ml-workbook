@@ -1,0 +1,23 @@
+Welcome back, learners. In this lesson,
+let's understand glove, another very
+popular word embedding technique. Glove
+stands for global vectors for word
+representation. While word2vec relies
+on local window context, glove relies
+on global matrix factorization. It
+builds a gigantic co-occurrence matrix
+that counts how often every pair of
+words appear together. In the entire
+corpus, it then factorises this matrix
+to produce the word vectors. Basically,
+glove adds another layer over what word
+to vec did with word frequencies and
+their appearance. The intuition to
+understand this is that the ratio of
+probabilities of word cooccurrences
+encodes the word meanings. For example,
+if in a corpus, ice. And steam appear
+rarely, but ice and solid appear often
+together. This ratio captures the
+concepts of thermodynamics. That's all
+for this video. Thank you.

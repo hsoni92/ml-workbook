@@ -1,0 +1,58 @@
+Welcome to Lesson 4. We have spent the
+previous lessons discussing the why and
+what of stream processing. Now we are
+moving into the how. In this lesson, we
+look at the architectures that make
+real time flows possible.
+Starting with the industry standard,
+that is Apache Kafka. If you look at
+the slide, Kafka is described as the
+streaming backbone. In a modern data
+ecosystem, you have dozens of different
+data sources like web logs, IoT sensors,
+or databases. And dozens of different
+destinations that need that data.
+Without a backbone, you end up with a
+spaghetti of connections.
+Kafka solves this by acting as a
+persistent, fault tolerant log of
+events that sits directly between your
+producers and your consumers.
+Let's break down the architecture shown
+in the diagram on the slide. Producers,
+these are the applications pushing data
+into the system. This could be anything
+from a mobile app sending click stream
+events to a thermometer in a shipping
+container sending temperature readings.
+Kafka cluster or brokers, the heart of
+the system. Kafka doesn't just pass
+messages. It stores them in a highly
+scalable cluster of brokers.
+Because these messages are written to
+disc and replicated. Kafka provides the
+durability we need.
+If a processing engine fails, the data
+is still safe in the Kafka broker.
+Consumers, these are the systems
+reading the data to do the actual work.
+This could be a spark streaming job, a
+database, or, as we'll discuss in our
+next video, an Apache storm topology.
+The beauty of this architecture is that
+it decouples your sources from your
+targets. Producers don't need to know
+who is consuming.
+And consumers can read the data at
+their own pace, without worrying about
+producers pushing the data into brokers.
+This decoupling is what allows us to
+scale real-time intelligence up to
+millions of events per second.
+Kafka is where the data lives while
+it's in the motion, but how do we
+actually transform that data? In the
+next video, we'll look at the Apache
+storm and how it uses spouts and bolts
+to process these Kafka streams in real
+time.

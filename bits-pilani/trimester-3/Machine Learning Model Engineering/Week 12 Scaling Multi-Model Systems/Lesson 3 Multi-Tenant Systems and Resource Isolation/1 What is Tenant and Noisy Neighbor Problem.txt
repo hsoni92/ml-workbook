@@ -1,0 +1,62 @@
+Welcome to Module 12, Topic 3,
+Multi-tenant Systems and resource
+isolation. In a real machine learning
+platform, it's rare to have just one
+team or one model. Instead, you have
+many tenants, different product teams,
+internal business units, or even
+external customers, all using the same
+infrastructure. Our goal is to share
+infrastructure efficiently without
+letting one tenant hurt another. We
+don't want performance interference,
+data leaks, or broken SLOs. In this
+video, we will build a mental model for
+multi tenant system and the technique
+we use to keep them safe and
+predictable.
+Let's define tenant. In machine
+learning platform, a tenant is
+basically a logical customer of the
+platform, that might be an internal
+product team, like search,
+recommendations, or fraud, a business
+unit, like retail, enterprise, or small
+business.
+Or an external customer. If you are
+offering machine learning as a platform
+or SAS product, each tenant usually has
+its own models, data, SLOs, and budgets,
+but they all run on the same sharded
+hardware and infrastructure.
+That's where the challenges comes in.
+In a multi tenant setup, the platform
+provides the heavy lifting, compute,
+storage, networking, and common tools
+for deployment, monitoring and logging.
+Tenants bring their own models,
+pipelines and traffic. Some tenants
+generate steady traffic, others are
+spiky, some are high priority, others
+are best effort. There is a natural
+tension here. You get efficiency by
+sharing the resources, but you also
+need safety and isolation so that one
+tenant doesn't accidentally breaks
+the experience for everyone else. One
+of the classic multi-tenant issues is
+the noisy neighbours problem. The noisy
+neighbour is a tenant that overuses
+shared resources, CPU, GPU, memory,
+network, to the point that the other
+tenant starts to suffer, latency
+increases, queues build up, timeout
+happens, and. Users for other teams get
+worse experience. For example,
+Tenant A might launch a big batch job
+on shared cluster, and suddenly Tenant
+B online conference service becomes
+sluggish. The core challenge of
+multi-tenancy is how do we let tenants
+share the same resource. Efficiently,
+but keep noisy neighbours under control.

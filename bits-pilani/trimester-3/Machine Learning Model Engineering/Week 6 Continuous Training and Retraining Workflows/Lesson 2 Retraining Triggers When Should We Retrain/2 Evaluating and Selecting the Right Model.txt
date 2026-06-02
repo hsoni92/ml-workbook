@@ -1,0 +1,36 @@
+Stage 3 is where retraining meets
+governance. We compare candidates to
+the current champion model. We evaluate
+on a held out validation set.
+And often across multiple time slices
+if possible. For each candidate, we
+compute standard ML matrics.
+Approximate business KPIs, and ideally
+segment level metrics for fairness.
+Then we compare it to the current
+production model using the same
+evaluation protocol.
+You should have clear promotion rules,
+like the new model must beat the
+champion by at least the delta in your
+primary matrix.
+And it must not degrade a specific
+business KPI or fairness metrics.
+Only candidate that passes these rules
+on moves on. The rest were logged and
+archived.
+Once we have chosen a winner, we
+register it as a first class artefact
+in a model registry.
+That registry Entry includes
+A model name and version.
+Pointed to the training data, snapshot,
+code commits, and configs. A summary of
+evaluation metrics.
+And useful tags, like which environment
+it's in and who owns it.
+This gives us a searchable catalogue of
+models. An audit trail for compliance.
+And an easy way to roll back to
+previous version if something goes
+wrong in production. Thank you.

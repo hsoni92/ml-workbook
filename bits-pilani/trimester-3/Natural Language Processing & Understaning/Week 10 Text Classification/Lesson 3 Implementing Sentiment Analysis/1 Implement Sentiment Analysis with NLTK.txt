@@ -1,0 +1,131 @@
+Welcome back learners. In this lesson,
+let's implement sentiment analysis in
+Python. In this video, we will
+implement sentiment analysis with NLTK.
+All right, learners. Welcome to your
+lab 8. In this lab session, we will be
+implementing sentiment analysis with
+Python, right? So we will do it in two
+parts. First, we will look at sentiment
+analysis with the NLTK package,
+especially the VEDA model, and then we
+will look at sentiment analysis with
+the B BIRT model, right? So what is our
+objective with this lab session, right?
+The objective is very clear.
+It is to implement sentiment analysis
+first off, right, and also to contrast
+two distinct approaches for
+implementing sentiment analysis. The
+first one, which is from NLTK, is the
+traditional rule-based method. The
+second one from BERT model, which is a
+transformer model, uses a modern deep
+learning method, right? So let's get
+started.
+So let's now import NLTK and the
+sentiment intensity analyzer method
+from NLTK.sentiment, right?
+Now what I'll do is I will download the
+Vedder lexicon.
+In the last video, we already saw what
+lexicons are. It is a dictionary, and
+Veda lexicon is a specialised
+dictionary model that has Valent's
+score for every word and its
+combinations, right?
+Now let's initialise the sentiment
+intensity analyzer, which is the Ver
+model.
+Now, I've created some test sentences.
+These are random sentences that you,
+you can test with, you can modify,
+right? So let's look at the sentences.
+I love this product. I love this
+product. This should be a positive
+sentiment, right?
+This is the worst experience ever,
+probably a negative sentiment. The
+movie was OK. Nothing special. Mm.
+A little negative, but not that, not
+that bad, right?
+I usually hate waiting, but this was
+worth it. OK, this is a complex case,
+so this part is negative, but this
+looks more positive, right? So let's
+see how this is being handled with Ver.
+Now look at this statement. The food
+was good, but the service was terrible,
+right? The food was good, positive, but
+the service was terrible, negative,
+right? So let's run this
+Now, here, what I've done is I've
+already written out the sentiment
+analyzer with SIA or sentiment
+sentiment intensity analyzer, right? So
+what is this? Nothing but simple
+implementation.
+For text in sentences, or the sentences,
+this list, right?
+So for every sentence in this list.
+Calculate the polarity score. This is
+the polarity of the sentiment, positive
+to negative.
+Now, within this course, there is a
+parameter called compound, so I need
+that, so scores. And compound
+If compound is greater than 0.05, it
+should be positive. If it is less than
+minus or -0.05, it should be negative.
+And if it's anything else, it should be
+neutral, right? So these are the
+thresholds that you have manually set
+up. You can change these thresholds.
+It's up to you.
+Now let's run this
+So for text, I love this product.
+Negative is 0, neutral is 0.3, positive
+is 0.6, right? So the compound, which
+is a mix of all these three scores, is
+0.6696, which is greater than 0.05, so
+it should be positive. This is positive,
+right? And so on for the other
+sentences. This is the worst experience
+ever, negative. The movie was OK,
+nothing special. Nothing like pretty
+negative, but is it as negative as this?
+No, right?
+I usually hate waiting, but this was
+worth it. This is neutral, because the
+compound score was 0.0.
+The food was good but the service was
+terrible. The compound score is 0.49,
+which is a negative, right? So this
+concludes our first part of the
+sentiment analysis. Which is sentiment
+analysis with NLTK. Now your task again.
+Experiment with different sentences and
+different paragraphs, see how it
+behaves.
+For it NLTK follows a lexicon based
+approach. Lexicons are nothing but
+dictionaries.
+NLTK offers VDO.
+Vader is V aware dictionary and
+sentiment reasoner. It is a rule based
+model specifically tuned for social
+media text. It has a list of words with
+valence score. Example, good can be +
+1.9 and horrible can be -2.5. Ver also
+understands capitalization. Good is
+more positive than small good.
+Punctuation, good with multiple
+exclamations is more positive than good
+without any exclamation.
+Degree modifiers. So extremely good is
+more positive than good. And
+conjunctions. The food was good but the
+service was bad. The word but here
+shifts the weight to the second half.
+That's all for this video, and I'll see
+you in the next one. Thank you.

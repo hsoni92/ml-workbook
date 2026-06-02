@@ -1,0 +1,36 @@
+Now let us zoom in to the triangle of
+latency, cost, and user experience. If
+you want to reduce latency, you can add
+more replicas of your service. Or move
+to bigger machine or GPUs.
+That usually improves UX, but it also
+increases your infrastructure cost. If
+you want to reduce costs, you can
+shrink instances or reduce the number
+of replicas, but if you go too far,
+latency starts to climb and the system
+becomes unstable under the load, and UX
+gets worse.
+In later video in this module, we will
+talk about scaling pattern and cost
+optimisation techniques that helps you
+balance this triangle more
+intelligently. A practical way to use
+this mental model is to turn it into a
+checklist. For any change you make,
+introducing a new model, changing
+configuration, or changing
+infrastructure, ask these four
+questions. Accuracy. Did our offline
+online quality metrics go up, down, or
+stay the same? How? By how much?
+Latency.
+What happened to both average latency
+and P95 latency? Cost. What does this
+do to cost per request or to our
+monthly bills? User experience.
+If you were the user, does the change
+feel snappier, more helpful, or more
+frustrating? If you cannot answer these
+ones. That is a sign of you might be
+missing an important effect.

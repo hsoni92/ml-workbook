@@ -1,0 +1,76 @@
+Welcome back. We have reached the final
+logical stop in our data journey. We
+started with raw files, split them into
+chunks, transformed them with magic
+mappers, and used the shuffle and sort
+phase to organise those billions of
+results. Now we arrive at step 4, the
+reduce phase. This is the moment where
+all our parallel stream of data finally
+meet to produce the definitive answers
+the business is looking for. As you can
+see on the slide. The reducer phase is
+the 3rd and final logical stage of the
+map reduce job. Its primary goal is to
+consolidate the results from the
+shuffle and shod phase. This phase is
+the functional core of the entire model.
+It is rooted in the mathematical
+concept of fold or reduce. If you
+imagine our data as a long unfolded
+piece of paper representing every
+single click on a website, the reduced
+phase folds that paper down until only
+the total sum remains. It takes the
+organised piles created during the
+shuffle and turns them into a single,
+summarised output folder. Now let's
+look at how this work physically on
+next slide. The aggregation funnel. In
+this phase, each reducer node acts like
+a funnel. It receives a key and a list
+of all the values associated with that
+key. For example, the key might be
+index or estimate, and the list might
+be 1, 1,111, and so on, representing
+every time someone visited that page.
+The developer's job here is simple
+write the logic that aggregates the
+list. Usually this is an arithmetic sum,
+but it could be an average. It could be
+maximum value or a philtre. The
+operation can become mathematically
+complex depending upon the business use
+case, because a reducer has a complete
+view of every instance of that key
+across the entire cluster. The result
+it produces is the absolute global
+truth. The most important takeaway here
+is data reduction. Think back to over a
+10 terabyte log file in the map phase.
+We were still dealing with 10 terabytes
+of data, but in the reduced phase we
+are performing a massive compression of
+information. We're turning the noise of
+billions of individual events into the
+signal a few megabytes of ranked
+insights. Once the reducer finishes its
+calculations, it writes the final
+results directly to the distributed
+file system, the job is now complete,
+and the data is ready for the business
+analyst to read.
+Just to recap, our entire logical data
+flow. Input splits divide the work. Map
+phase transforms the data in parallel.
+Shuffle and sort, organises and moves
+the data to the right place. Reduce
+performs the final aggregation.
+You have now mastered the mechanics of
+how data moves through a distributed
+cluster. In our next lesson, we'll put
+all these pieces together in a
+comprehensive case study on URL
+popularity to see how exactly these
+steps look in a real world analytics
+project. I'll see you there.

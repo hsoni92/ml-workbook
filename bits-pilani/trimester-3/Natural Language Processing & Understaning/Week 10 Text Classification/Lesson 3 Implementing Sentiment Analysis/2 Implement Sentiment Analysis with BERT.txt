@@ -1,0 +1,78 @@
+Bert follows a transformer approach,
+while Vader looks at individual words,
+Bert looks at the entire sentence for
+context. Remember bidirectional. The
+advantage here is that Bert understands
+sarcasm, complex negation, and other
+complexities much better than Vader.
+We will be using the hugging face
+pipeline, which downloads a BIRT model
+already fine-tuned on millions of
+reviews. That's all for this video.
+I'll see you in the next one. Thank you.
+Welcome back learners. Now that we
+implemented sentiment analysis with
+NLTK, let's explore sentiment analysis
+with BERT, a more advanced model. All
+right, learners, in this video, let's
+implement sentiment analysis with the
+BERT model, right? It is the more
+modern version rather than the
+traditional method that we saw in the
+last video. Cool. Before beginning,
+just go to this website
+huggingface.co/settings/tokens and
+generate an API key and add it here.
+Write hf_ token here and then paste
+your key here, right, and enable this.
+What this will do is it will access the
+hugging face environment to download
+whatever model that you want to do. In
+this case we will download the
+sentiment analysis model, right? I've
+already done that. So here are the
+weights. Now let's go ahead
+We have the model set up. Let's now
+implement it on our test sentences.
+It's the same set of sentences that
+we've used previously.
+OK, so implementation is rather
+straightforward. What we'll do is we
+will. Use the sentiment pipeline, which
+we have initialised here.
+We will pass the text which is the
+sentence in this list.
+And we will put truncation to true,
+right?
+Truncation to true handles, texts that
+are longer than 5 and 2 tokens, so you
+can use large text for your
+experimentation as well.
+All right, so now, we will capture the
+label and we will capture the score.
+Let's see it in action.
+OK, so For the text, I love this
+product. The label was positive, which
+is here.
+And the score is 0.9999, right? This is
+the worst experience ever. The
+confidence score is 0.99, almost 99.9%,
+right? It's a negative.
+Now check this out. The movie was OK,
+nothing special, 0.9925, a little less
+than the previous course. The
+confidence is a little lower, but still
+very high, so it's a negative sentiment.
+I usually hate waiting, but this was
+worth it. The confidence is 99.98. And
+the label is positive. The food was
+good, but the service was terrible,
+negative, right? And the confidence is
+also fairly high, not as high as
+99.999%, but still very high. So this
+was our implementation of sentiment
+analysis using the BIRT model. You know
+what you need to do now? Expand this
+test case, add sentences from the
+internet, and run it again and get some
+hands on, all right?

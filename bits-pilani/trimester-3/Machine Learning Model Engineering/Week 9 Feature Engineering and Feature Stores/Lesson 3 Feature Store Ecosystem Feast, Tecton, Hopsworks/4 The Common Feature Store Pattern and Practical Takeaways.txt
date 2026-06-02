@@ -1,0 +1,62 @@
+If you step back, feast tack on hops
+works. All share same core pattern.
+They start with feature definition,
+materialise features into an offline
+store for training and an online store
+for serving, and maintain a registry
+and user interface for discovery and
+management.
+Where they differ is mostly in whether
+they are self hosted or fully managed.
+Which data and serving ecosystem they
+integrate with the most deeply, and the
+richness of user interface and
+governance features. For this course,
+you do not need to become an expert in
+any of one tool.
+What matter is that you recognise the
+pattern when you see it. So what do you
+actually do with this ecosystem
+knowledge? As a model engineer, you
+should be able to recognise situation
+where feature stores make sense,
+repeated training serving SKU issues.
+Many team re implementing same features.
+Growing need for low latency online
+features at a scale. You should also be
+able to ask good questions about any
+feature store your company uses. Where
+do feature definition live?
+How are online and offline view kept in
+sync?
+What does the registry or catalogue
+looks like?
+How do we add new features safely? To
+understand the concept, you can adapt
+to feast tacton. Hops work, or even a
+completely custom internal platform. To
+wrap up this video, we identified the
+common building block of feature stores,
+feature definitions, offline and online
+store, and a registry or catalogue. We
+used Feast as an open source mental
+baseline for what a feature store looks
+like. We saw how Tacton and Hopswork
+implement similar pattern with more
+managed, enterprise oriented features.
+The key message is that vendor names
+and details may change, but the core
+feature store pattern remains stable.
+In the next theory video, Topic 4, we
+will focus on organisational side,
+reusability, metadata and lineage, and
+feature governance, who can use which
+feature, how we deprecate old one, and
+how this ties into responsible AI. In
+the labs, you will implement a tiny
+feature store right in a notebook using
+PANDAS or features offline and a Python
+dictionary for online features, and you
+will see how shared definition helps
+you avoid training serving askew in
+practise. Thank you.

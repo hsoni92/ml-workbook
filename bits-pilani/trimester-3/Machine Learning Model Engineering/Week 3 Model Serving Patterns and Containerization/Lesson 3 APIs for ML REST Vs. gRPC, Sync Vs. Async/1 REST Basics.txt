@@ -1,0 +1,152 @@
+Welcome back to Module 3, Model serving
+patterns and containerisations.
+In the last two videos we talked about
+what model serving is and how it can be
+structured as monolith, a microservice,
+or a surveillance function. In this
+video we are going to zoom in on how
+the client actually talks to the model
+service. In other words, APIs for
+machine learning.
+By the end of this lesson, you will
+understand difference between RET and
+GRPC for model APIs. You will know when
+to use simple JSON over HTTP versus
+more compact binary protocols.
+See how synchronous versus asynchronous
+calling pattern works. And connect
+these choices back to the batch online
+streaming inference pattern from module
+2. Think of this as a communication
+layer between your client and your
+model service.
+Let's start with why API design matters.
+In the first place, whenever you serve
+a model, you expose it through an API.
+That might be simple rest end point
+like post predict or a GRPC method,
+such as like a function predict.
+The way you design this API has a big
+impact on several things the developer
+experience, how easy it is for other
+teams to call your model. From
+different language and platform,
+performance, including latency, payload
+size, and the overall overhead of
+sending data to model.
+Service contract, how stable, strongly
+typed and version safe your request and
+response formats are.
+A well designed API makes your model
+easy to use for many kinds of clients,
+front-end apps, back-end service, batch,
+pipelines, even other machine learning
+systems.
+So this is not just technical detail,
+it's the foundation for how your model
+connects to the rest of the
+organisations.
+The common starting point for model API
+is simple rest over HTTP with JSON
+payloads.
+With rest, we use the similar HTTP
+verbs like get and posts. And we send
+our input and output in the requests or
+response body. Usually formatted as
+adjacent.
+Rest has become extremely popular in
+machine learning serving because it's
+so easy to work with.
+You can call it from virtually any
+language, Python, JavaScript, Java, Go,
+whatever your team uses.
+The payloads are human readable, so
+it's simple to inspect them and
+understand what's being sent.
+And the tooling ecosystem is excellent.
+Curl, Postman, your browser, and
+automatically generated documentations
+with Swagger or open API. So a very
+common machine learning pattern is post
+slash predict API with JSON payload
+containing your input features
+and JSON response containing the
+predictions and some maybe some
+metadata. This is exactly the style we
+will usually or mostly use throughout
+the course because it's simple,
+debuggable, and works well for
+beginners and production systems. On
+this slide, I want to show a very
+concrete example of how rest-based
+prediction call actually looks in
+practise. On the left. You can see the
+request. A client sends a simple JSson
+payload.
+In case features like age, income, to
+the API using a post request to the
+predict endpoint.
+This is a pattern we use all the time.
+Post, predict with JSN input.
+On the right is the response. The model
+returns another Jason object containing
+the predictions, such as approved.
+Along with some metadata, like
+confidence score and others.
+Because everything is Jason, it's
+extremely easy to inspect, log, and
+debug. And this is really why rest. is
+so popular in ML serving, especially
+when you're getting started. It's human
+friendly, meaning you can just open the
+payload and understand it. It's easy to
+debug. You can send requests using
+tools like Curl or Postman and
+immediately sees what's happening. And
+it's also production ready enough for
+many application uses,
+use cases before you need to move to
+something more advanced like GRPC.
+This simple request response pattern,
+it is the foundation we build on
+for the rest of the course.
+Let's quickly summarise the pros and
+cons of using RET for model APIs. On
+the positive side, RET is extremely
+simple and familiar. Most developers
+already use when to work with HTTP or
+and Jason, so onboarding new teams. Is
+very easy.
+We also get excellent tooling, things
+like curl, Postman, browsers, debugging,
+and automatically generated API docs
+with Swagger and open API.
+So as long as team understand basic web
+APIs, they can call your model without
+any friction.
+But there are some limitations.
+Jason is fairly verbose, which means
+the payloads are typically larger than
+necessary.
+This usually doesn't matter at low to
+moderate traffic, but at very high
+request rates, it can become
+inefficient.
+Rest also provides.
+Strong compile time.
+Typing across services. You rely on
+documentation and conventions to keep
+request and response format consistent?
+And for extremely high throughput
+workloads are very large. Complex
+payload, rest can becomes very or
+inefficient. Compared to binary
+protocols, so overall rest is an
+excellent default and a great starting
+point for most teams. It works well for
+demos, prototypes, and many production
+setups, but in a large scale
+environment with a lot of microservices
+and heavy internal traffic, we start to
+see teams adopting GRPC for performance
+and strong typing.

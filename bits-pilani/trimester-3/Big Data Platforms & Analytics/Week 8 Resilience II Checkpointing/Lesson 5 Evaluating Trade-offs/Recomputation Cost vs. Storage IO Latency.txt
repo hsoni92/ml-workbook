@@ -1,0 +1,78 @@
+Welcome to Lesson 5. Throughout this
+module, we have painted checkpointing
+as a lifesaver for long running spark
+jobs. But in engineering, there is no
+such thing as a free lunch.
+Every time we truncate the lineage and
+save data to the disc, we are paying a
+price. In terms of time and resources.
+So in this video, we are going to
+evaluate the tradeoffs between
+recomputation cost and storage IO
+latency.
+This will help you decide exactly when
+and how often should trigger. A
+checkpoint in your application.
+Let's look at the graph on the next
+slide.
+On the Y axis we have recovery time,
+and on the X axis.
+We have the lineage chain.
+Represented by N, notice that red line
+labelled raw lineage. This represents
+the standard spark behaviour without
+checkpointing. As the chain gets deeper,
+the time required to recover from a
+failure grows linearly. So if N is 100,
+your recovery cost is massive, because
+you have to replay 100 stages of logic.
+At a certain point, this cost becomes
+prohibitive.
+Meaning, the job takes longer to
+recover than it does to actually
+progress.
+Now look at the blue line labelled with
+checkpoints. Notice how it starts
+slightly higher than the red line at
+the beginning. That's because
+checkpointing introduces a fixed IO
+cost.
+You're spending time writing data to
+HTFS or S3 that you wouldn't otherwise
+spend, right? However, look at what
+happens as the lineage depth increases.
+While the red line continues to climb,
+the blue line levels off. Because we
+are resetting the lineage, the recovery
+time stays stable. Even if you are at
+stage 500, a failure only requires you
+to go back to the most recent
+checkpoint, perhaps only 10 stages back.
+So how do you find a tipping point? You
+have to balance the right cost.
+Ride cost is basically the time spent
+by doing the IO against the risk cost,
+which is the time lost if a failure
+occurs.
+In iterative algorithms, a common rule
+of thumb is to checkpoint every 10 to
+20 iterations.
+This is frequent enough to keep the
+recovery time predictable. And the
+driver's memory is safe.
+But not so frequent that IO overheads
+slows the job down to a crawl.
+Right? So you are essentially buying
+insurance against a failure.
+The more expensive the recomputation,
+the more you should be willing to pay
+the IO premium for a checkpoint. So in
+summary, checkpointing isn't free, but
+it makes your recovery time constant
+rather than linear. In large scale
+systems, stability is often more
+valuable than raw speed.
+In our final video, we'll wrap up the
+module with the summary.
+See you in the next class. Thank you so
+much. Happy learning till then.

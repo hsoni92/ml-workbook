@@ -1,0 +1,62 @@
+Hello everyone and welcome to Module 3,
+the MapReduce programming model. In our
+previous modules we focused heavily on
+muscle of big data, the hardware, the
+clusters, and the challenges of
+distributed systems. We learned why we
+need a fleet of vans to carry our data,
+but today we start looking at the brain.
+How do we actually write code that can
+run on 1000 different machines? At the
+same time, without them tripping over
+each other, the answer lies in a
+programming model called MapReduce.
+Our first goal in this module is to
+relate MapReduce to its functional
+programming rules. You might have heard
+of MapReduce, or Fold in languages like
+Python, Java, or Lisp. We are going to
+look at how Google took these simple
+mathematical concepts and scale them to
+handle the entire internet. You'll
+learn that MapReduce isn't just a piece
+of software, it's a specific way of
+thinking about data as an immutable
+stream of transformations. Next, we are
+going to trace the logical data flow of
+MapReduce job. Processing petabytes of
+data is a journey. We will follow a
+single piece of data through every stop
+on the pipeline, from the initial split
+into the map phase through the magic of
+the shuffle and sort, and finally into
+the reduce phase for aggregation.
+Understanding this sequence is the key
+to mastering any modern big data tool,
+including Apache Spark. We will also
+explain how MapReduce achieves
+parallelism and fault tolerance.
+Remember the design for failure mindset
+we discussed in module 2. We're going
+to see it in action here. You'll learn
+how MapReduce abstracts away the
+hardware complexity. As a developer,
+you write simple logic, and the
+framework automatically handles
+distributing that work across a cluster
+and re-executing tasks if a machine
+fails. It's software defined resilience
+at its best. Finally, we will apply
+this logic to a real world scenario. We
+won't just talk about theory. We'll
+walk through a web analytics case study.
+We'll see how a company would use
+MapReduce to analyse terabytes of web
+pages logs to find most popular URLs on
+their site. This practical example will
+help you ground everything you have
+learned about data splits and
+aggregation. By the end of this week,
+you'll understand the why and the how
+of the world's most influential
+distributed programming model.

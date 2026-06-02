@@ -1,0 +1,46 @@
+First objective is probability. Ideally,
+our training team can use whatever
+framework they like, basically, Pytorch,
+Tensorflow, anything. And our
+deployment team can still run that
+model on CPUs, run it on GPUs, or even
+deploy it to edge devices. Without
+constantly rewriting everything.
+Without probability. Every new
+framework or hardware combination means
+more custom glue code, more fragile
+conversation, and more chances of
+subtle bugs. Standard model format will
+be our main tool here. They act as
+common language between training and
+serving. The second objective is
+latency and throughput. Latency is how
+long each prediction takes. We care
+about the average, but what really
+hurts user and downstream systems are
+P95 and P99 tail latencies. Throughput
+is how many requests per second a
+single instance can handle. That
+determines how many servers we need to
+pay for. The goal here is keep P95
+latency within our SLA and increase
+throughput so we can serve more traffic
+on the same hardware. Two models with
+identical accuracy can be very
+different in cost if one is 3 to 5x
+lower at inference.
+The Third objective is the model's
+footprint. Footprint includes how big
+the model file on disc, how much memory
+or VRAM it needs at runtime, and for
+phones and IOTs, how much power it
+consumes.
+Smaller, more efficient model, start up
+faster and easier to cache and
+replicate, and can run on devices where
+a giant model simply won't fit. When
+you multiply this by million or billion
+of predictions, footprint directly
+translates into infrastructure costs
+and feasibility. So how do we actually
+attack these three pain points?

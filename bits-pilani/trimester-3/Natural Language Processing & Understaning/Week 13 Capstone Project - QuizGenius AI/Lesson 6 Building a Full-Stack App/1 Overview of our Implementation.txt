@@ -1,0 +1,56 @@
+Welcome back learners to the final
+lesson of module 13, the Capstone
+project. In this lesson, we will take
+our Quiz Genius AI application to the
+next level, step by step. So far what
+we've done is we've built the Quiz G AI
+app.
+In our collab notebook, right?
+Or Jupiter notebook, one and the same
+thing. However, right now, only people
+who know Python can come and interact
+with our application, right? However,
+ideally we would like our applications
+to be available to all users, right,
+whether they belong to the Python
+community or not, right?
+This is the same logic that we can use
+scripting language to generate
+responses from LLMs, right? We can send
+a prompt and we can get the response.
+Right.
+However, if the big companies like
+OpenAI, Google, Cloud, right, if they
+want everyone to use their LLM
+applications, they had to build
+applications which were full stack
+applications, meaning it had a front
+end that where the user could come and
+interact with, right, and, and the back
+end that would generate the response,
+right? So when they created those
+applications like chat GPT.
+Only then the G AI revolution came.
+Only then it became viral and popular,
+right? GPT or transformer models
+existed way before chat GPT, right? OK.
+Also, from your perspective, if you
+really want your profile to stand out
+from all the applications, this is what
+you need, right? A full stack
+application.
+In your portfolio.
+Do not worry, you do not need to learn
+front end for this. As NLP
+practitioners or AI engineers, we can
+do it in Python as well, right? And
+then there will be software engineering
+teams or front-end teams that will take
+your application and convert it into a
+more beautiful front end, right? So we
+don't have to worry about that. I'll
+show you step by step how we do it in
+the industry, right? I hope you're
+excited for it. We will begin from the
+next video. So I'll see you there.
+Thank you.

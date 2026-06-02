@@ -1,0 +1,19 @@
+Welcome to the 4 way tug of war,
+accuracy, latency, cost, and user
+experience. Up to now, we have talked a
+lot about improving models, scaling
+them, and monitoring them. In
+production though, it is not enough to
+simply have high accuracy. Real systems
+are pulled in four directions at once.
+Accuracy, how often the model is right,
+latency, how fast the model comes back.
+Cost, how much memory or money
+the infrastructure we're burning, and
+user experience, often shortened to UX,
+how it feels for the users or the
+downstream product. In this video, we
+will build a simple mental model of
+this tug of war and see why you almost
+never get to maximise just one of these
+without affecting the others.

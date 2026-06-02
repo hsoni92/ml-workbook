@@ -1,0 +1,25 @@
+To wrap up, explainability helps us
+understand model behaviour at the local
+and global level for debugging, trust
+and review. Audit trails gives us logs
+that tie together data, model version,
+decisions, and time, so we reconstruct
+what happened. The regulatory and
+organisational context mean people will
+ask why and how.
+You need a system that can answer those
+questions.
+Design your machine learning system to
+be traceable and interpretable enough
+that you can talk about them with non
+machine learning stakeholders, not just
+other engineers. In the Model 11 labs,
+we will bring this all together by
+computing fairness metrics by group
+turning them into simple fairness
+checks and logging them along with
+model metadata to form a basic audit
+trail. That's a big step forward,
+building secure, fair and accountable
+machine learning in production. Thank
+you.

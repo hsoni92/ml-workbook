@@ -1,0 +1,67 @@
+Hello everyone and welcome to module 12
+of our series on distributed machine
+learning. In our previous discussions,
+we established the why of distributed
+systems, but today, We will dive into
+the how, specifically focusing on the
+architectures and strategies provided
+by Tensorflow. So we have titled this
+module as Scaling Intelligence Across
+Nodes because as models grow in
+complexity, our ability to train them
+depends entirely on how well we can
+orchestrate multiple computing
+resources to work as a single cohesive
+unit before we get into the technical
+details. Let's look at what we aim to
+achieve in this module. We have 4
+primary goals. First, we'll compare the
+parameter server model against the all
+reduce strategy to understand
+centralised versus decentralised
+learning. Second, we'll contrast.
+Synchronous and asynchronous
+distributed training modes, looking at
+the trade-offs between consistency and
+speed. Third, we'll get more practical
+with tensor flow strategies,
+specifically learning when to apply
+mirrored strategy for single node
+setups and multi-workers mirror
+strategy for multi-node clusters.
+Finally. We'll go under the hood to
+describe device placement and how
+computational graphs are partitioned
+across a cluster. This brings us to
+lesson one. Architecting for
+distributed intelligence. So we are
+currently living in an era where modern
+machine learning models. Think about
+large language models or massive
+recommendation engines. They involve
+billions of parameters, and they
+operate on petabytes of data. At this
+scale, a single device, no matter how
+powerful, simply isn't enough. We are
+forced to shift from single device
+intelligence to multi node intelligence.
+The core challenge we face is
+orchestration. How do we take a
+training task and split it across
+dozens or hundreds of nodes in a way
+that actually speeds up the process? If
+done poorly. The overhead of
+communication between nodes can
+actually make training slower than
+using a single machine.
+In this lesson, we are going to explore
+the fundamental logic of distributing
+these tasks. Our ultimate goal is to
+increase throughput and reduce training
+time. Turning processes that used to
+take weeks of computation into tasks
+that can be completed in just a few
+hours.
+So let's get started by looking at
+different ways we can structure these
+clusters.

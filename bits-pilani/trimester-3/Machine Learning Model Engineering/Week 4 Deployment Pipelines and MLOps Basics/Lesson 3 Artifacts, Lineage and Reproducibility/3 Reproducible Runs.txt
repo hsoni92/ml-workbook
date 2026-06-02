@@ -1,0 +1,44 @@
+Everything we have just discussed will
+show up concretely in Module 4 labs.
+You will use ML flow to lock parameters,
+metrics, artefacts, and models in each
+training run.
+See how each run gets a unique run ID
+with attached artefact and metrics.
+Compare different runs to choose the
+best candidate model. Once you have got
+that. It becomes natural to ask, which
+run produced the model that's currently
+in staging or production. What config
+and data were used? Can I rerun that
+job and reproduce the result? That's
+artefact, lineage and reproducibility
+in action, not just as theory. To wrap
+up this video, here are key points.
+First, machine learning artefacts
+include much more than just code. Data
+snapshot, models, metrics, configs, and
+reports are all parts of the picture.
+Second, lineage. Think of these
+artefacts together so we can answer
+questions like which model and code
+produced this. Which data and code
+produce this model?
+Which model is running in production?
+And what changed between one version
+and the next version? Third,
+reproducibility means. That running the
+same pipeline with the same input
+produces the same model that's
+essential for debugging, audit, and
+collaboration in serious ML work.
+And finally, look at experimentation
+trackers, model registries, metadata
+stores, including ML flow, which you
+will use in labs, makes all of this
+practical in real project.
+With this foundation, you're ready to
+see how the Module 4 repos.
+ML flow logging and CI pipeline work
+together to give you tracked,
+reproducible ML workflow. Thank you.

@@ -1,0 +1,53 @@
+Welcome back, learners. After LSTM
+let's understand GRU, or gated
+recurrent Unit.
+Now LSTM solved a big problem of memory.
+They are powerful, but very complex and
+computationally expensive. Because it
+needed a lot of different parameters to
+train.
+Then came GRU to solve that issue. GRU
+is a simplified version of LSTM.
+What it does is that it merges the cell
+state and the hidden state into one
+state. Instead of the three main gates
+of LSTM. In GRU, we just have two gates
+to handle the update gate and the reset
+gate. Let's look at them. The update
+gate combines the forget and input
+gates.
+It decides how much of the past to keep
+and how much of the new information to
+let in.
+The analogy being, should I update my
+memory now? That's the work of the
+Update gate.
+Now the reset gate decides how much of
+the past information to ignore when
+computing the new candidate state. The
+analogy being, drop the previous
+context for a moment to see if the new
+word makes sense on its own. Without
+the previous context, right? So you see,
+the architecture of GRU is a much
+simplified version of LSTM. This being
+the reset gate.
+And this being the update gate.
+This is the hidden state, or the short
+term memory.
+And this here is the output.
+For the input XT.
+While LSTMs are better for very long
+sequences and paragraphs, with complex
+relationships, for tasks like
+translation and long text generation.
+GRUs are faster to train, with fewer
+parameters, and often perform just as
+well on the smaller data sets,
+sentiment analysis on some tweets or
+product reviews. The rule of thumb
+being
+You can start with GRU for speed. If
+you feel that it underperforms, you can
+switch to LSTMs. And that's all for
+this video. Thank you.

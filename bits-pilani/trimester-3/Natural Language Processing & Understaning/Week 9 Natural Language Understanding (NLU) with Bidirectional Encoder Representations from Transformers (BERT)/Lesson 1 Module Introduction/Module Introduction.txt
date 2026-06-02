@@ -1,0 +1,28 @@
+Hello learners. Welcome back to the 9th
+module of your course, Natural Language
+Understanding, with Bert. So let's get
+started.
+BIRD stands for bidirectional encoder
+representation from Transformers, and
+this is the very model that
+revolutionised natural language
+understanding. In this module,
+We will go through contextual
+embeddings that solve the limitations
+of word to vec and transfer learning.
+Especially fine tuning and distillation
+to adapt massive pre-trained models to
+downstream tasks like classification
+and question answering.
+So what makes bird special? Before Bert
+The word embeddings were static.
+For example, the word bank always meant
+that it had the same vector, whether it
+was the riverbank or Bank of America or
+any other bank, right?
+With Bert It introduced contextual
+embeddings, the vector for bank changes
+based on the words around it, which
+form its context. That's it for this
+video, and I'll see you in the next one.
+Thank you.

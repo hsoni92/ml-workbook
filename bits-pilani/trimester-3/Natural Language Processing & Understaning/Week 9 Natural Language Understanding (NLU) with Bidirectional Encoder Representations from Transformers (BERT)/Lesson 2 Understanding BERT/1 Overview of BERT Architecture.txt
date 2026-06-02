@@ -1,0 +1,62 @@
+Welcome back learners to Lesson 2.
+Let's go through the BERT architecture.
+So Bert. Which stands for bidirectional
+encoder representations from
+transformers, is essentially a stack of
+transformer encoders. It is an encoder
+only model. The base BT, or BET base,
+has 12 layers of encoders, and the
+larger version of BIRT, called BERT
+Large, has 24 layers of encoder models.
+To give you a recap, here's the
+transformer model, which was a
+combination of encoder and decoder
+model, right? We saw in the last module
+that GPT is a decoder only model, and
+the BIRT is an encoder only model, so
+it's just this part.
+Bert was not trained to translate. It
+was trained on 2 self-supervised tasks
+using the entire Wikipedia.
+Mask language modelling and next
+sentence prediction. Let's go through
+these
+So the idea in MLM or masked language
+modelling, is to force the model to use
+context from both sides to fill in the
+blanks, hence bidirectional, right? So
+the sentence.
+The cat sat. On the. Matt, the model is
+trained so that it looks at the
+sentence in one way and in the second
+way as well, bidirectional.
+Now suppose the training is on this
+sentence itself. What will happen is it
+will go through multiple iterations
+where certain words will be masked. So
+for example, this will be hidden from
+the model, and the model's job will be
+to predict what is the right word. So
+it will keep on predicting different
+words until it achieves the right
+target, which is sat.
+Now let's go to next sentence
+prediction, or NSP. The idea here is to
+teach the model relationships between
+sentences. This is very crucial for
+question and answering bots and
+summarization as well.
+So for example, if the model was
+trained on this, the man went to the
+store to buy milk.
+Here, it can be broken down into two
+sentences, sentence A being the man
+went to the store, and sentence B being
+to buy milk.
+The model will be trained on this
+training data, and then it will be
+asked to predict the following sentence
+given the previous sentence. So given
+the sentence A, its task will be to
+predict the sentence B, and that's it
+for this video. Thank you.

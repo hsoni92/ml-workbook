@@ -1,0 +1,62 @@
+Next, access control, who can see what?
+Use role based access control. A data
+engineer, a model engineer, and a
+business analyst don't all need the
+same level of access to raw PII or full
+production logs.
+Give each role only what they need to
+do their job. Keep clear environment
+boundaries in depth and staging. Try to
+use synthetic sampled or marked data,
+not full raw production data, or
+feature store.
+And data catalogues, you can also
+enforce feature level policies.
+Some features may be restricted or only
+available in aggregated form. This way,
+privacy is not just about what the
+system does at runtime, it's also about
+how many people can directly touch
+sensitive data.
+Privacy also depends on having a trail
+of what happened. Audit logs track who
+accessed which data sets or features,
+and who deployed which model versions
+and configuration changes. When
+something goes wrong, this history is
+crucial. Data lineage and documentation
+tell you where a feature come from and
+what raw resources which
+transformations.
+That's important both for debugging and
+for answering privacy questions like,
+why are we using this field?
+When there are policy hooks, some
+features may only be allowed for
+specific use cases or may require
+approval before being used in new model.
+This ties back to feature governance
+from Module 9.
+You want a system where you can see,
+control, and justify how data is used.
+To recap this video, PII and sensitive
+data often show up inside machine
+learning features, not just in obvious
+ID column. Use data minimization.
+Only collect what you need and prefer
+aggregated or bucketed features
+wherever possible. Apply masking,
+aggregations, pseudo anonymization as
+privacy tools, but remember, they don't
+guarantee perfect anonymity.
+Enforce access control and environment
+separation, so only the right people
+and system can see sensitive data. Log
+data access, model deployments, and
+feature usage, so have an audit trail
+and can govern how data is used over
+time. In the next video, we will move
+from privacy to fairness and bias, look
+at how model behaves across different
+groups and how to start evaluating that
+in practise. Thank you.

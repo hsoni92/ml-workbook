@@ -1,0 +1,41 @@
+Let's make the problem concrete.
+Imagine a user open your home page and
+a product detail page. You want to show
+a carousal of maybe 10 recommended
+products. The system need to be
+personalised, using the user's past
+behaviour, their views, clicks and
+purchases. It must be fresh, so that if
+they just clicked on a new category,
+recommendations react to that quickly.
+At the same time, there is a tight
+latency and UX requirement. The user
+should not feel any delay. Typically,
+the entire recommendation call gets
+under 100 to 200 milliseconds, and you
+must respect business constraint. Only
+in in stock items maybe highlight.
+Promotions, and keep some diversity so
+the user doesn't see 10 almost
+identical products.
+Here is the high level architecture.
+On the left, we have the Data layer,
+click stream logs of views, clicks add
+to cart events and purchases, all
+flowing into a data lake or warehouse.
+On top of that, we build a feature and
+serving layer. User features like past
+categories, recency of activity,
+average purchase value.
+Item features like price, category,
+textual description, may be learned
+embeddings. A feature store that can
+serve these features both offline for
+training and online at request time.
+Finally, there is the model and online
+path. A candidate generator pulls a few
+100 or 1000 potentially relevant items.
+A ranking model, score those candidates
+and the current user and context, and
+we return the top end to the UI.
+Let's zoom into each part.

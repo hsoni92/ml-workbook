@@ -1,0 +1,72 @@
+To wrap up Let's look ahead at where we
+are going in this module. We are going
+to zoom into 3 common patterns for
+calling a model batch inference. When
+you have a large set of items. And you
+don't need instant response. Here
+throughput and total job time are the
+stars. Online. Online inference kind of
+request response, when user or system
+is waiting right now for an answer.
+Your P95 latency is the king. Streaming
+inference.
+When you have a continuous stream of
+event and you want to react quickly to
+each one.
+Here, you care about end to end event
+latency and sustained throughput. The
+important idea is.
+It's often the same model function, but
+we call it in different ways, depending
+on business needs.
+In the next video, we'll start with
+batch inference, the big job pattern.
+And see when it's the right tool and
+how its matrix looks different from
+online surfing.
+Then in the lab, you'll actually call
+the same model API using a batch client
+and on an online client.
+Measure latency and throughput, and
+feel these tradeoffs in real number.
+On this slide, I want you to think of
+the model in a very simple way, as a
+function.
+We can write it as prediction is equal
+to function of input features. That's
+it. The model takes in same feature and
+return a prediction.
+What actually changes in production is
+not function itself. It's how we call
+it, how often we call it, once a month,
+once a minute, thousands of times per
+second. How many items we send in each
+call. Single record, big batches, or
+continuous stream of events,
+how quickly we need. The response
+Is someone waiting in the UI or can
+wait for a minute or an hour?
+This is where batch versus online
+versus streaming comes in.
+Each of those is just a different
+calling pattern for the same underlying
+function which we defined F.
+Batch is optimised for throughput.
+And big offline job.
+Online is optimised for low latency
+when a user or system is actively
+waiting. Streaming is optimised for
+continuous events flowing. And near
+real time reactions.
+Choosing the right pattern is about
+matching the business and product needs.
+What are our latency requirement? What
+kind of scale and cost can we handle?
+What does product actually need,
+instant answer, periodic update, or
+real time signals? So as we go through
+module 2. Keep this mental picture.
+Same model, same function, with input
+features, but very different way to
+call it, depending on latency, needs,
+scale, cost, and product requirements.

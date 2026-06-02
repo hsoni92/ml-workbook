@@ -1,0 +1,7 @@
+Throughout all of this. Keep our North
+Star in mind, a model is only truly
+useful if it's accurate enough, fast
+enough and cheap enough to run in the
+real world. Model standardisation and
+optimisation are how we get there.
+Thank you.

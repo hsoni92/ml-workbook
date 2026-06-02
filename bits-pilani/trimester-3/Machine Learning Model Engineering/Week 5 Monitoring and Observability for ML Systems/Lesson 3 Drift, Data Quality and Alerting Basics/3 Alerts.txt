@@ -1,0 +1,46 @@
+So what do we actually do when drift
+shows up? A reasonable pattern, detect
+drift. Either in inputs, labels, or
+model performance. Investigate.
+Is this a real business change, a data
+pipeline bug, a seasonal pattern we
+should expect?
+Based on that, decide what to do. Maybe
+we just adjust decision threshold, or
+business rule.
+Maybe we fix a data issue upstream, or
+maybe it's time to retrain the model on
+fresher data.
+And roll out a new version. The
+important point, drift is a signal.
+That something changed.
+It does not always mean retrain
+immediately, but it should always
+trigger a human or automated
+investigation.
+In later modules, when we talk about
+retraining pipeline, we will plug drift
+detection straight into that life cycle.
+To wrap up, We saw 3 main types of
+drift. Covariate drift in the features,
+label drifts in the targets, and
+concept drift in the relationship
+between them.
+We look at simple ways to detect drift,
+basic stats, histograms, and common
+tests like PSI and KS. Always comparing
+training to a recent production window,
+we talked about alerts.
+When to notify people and how to avoid
+turning drift detection into a constant
+stream of noise.
+And we framed drift as a signal that
+kicks off a process. Detect,
+investigate, maybe retrained, or adjust.
+In the next pieces of this module, we
+will turn these ideas into more
+concrete monitoring setups, dashboards,
+and workflow. So drift is not just
+something we talk about, but something
+your system can automatically watch and
+react to. Thank you.

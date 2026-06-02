@@ -1,0 +1,33 @@
+Let's start with a story that might
+feel familiar. Imagine you're on your
+team, have trained a model in a
+notebook, it gets great metric, maybe
+your accuracy is fantastic, your error
+is much lower than before, everyone is
+excited, and then nothing happens. The
+model never gets integrated into the
+product. No customers ever see it. A
+few months later, the notebook is
+basically forgotten.
+This is extremely common.
+The obvious question is why.
+Keep that question in mind. Because the
+answer is what model engineering is all
+about. So what's actually sitting
+between the notebook and real user? A
+real product never gives or it's more
+than just a train model.
+It needs API, or services, so other
+systems can call it. It needs
+infrastructure to run reliably and at a
+scale. It needs monitoring so someone
+notices when things breaks or drift. If
+those pieces are not there. The model
+never leaves the lab, it's technically
+done in the notebook, but practically
+useless to the business. That missing
+layer in the middle, the thing that
+connects we have a model.
+To this is a reliable product feature,
+is exactly the space where machine
+learning model engineering lives.

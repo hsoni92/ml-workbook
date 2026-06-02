@@ -1,0 +1,70 @@
+Welcome back. In our previous video, we
+contrasted partitioning with
+replication.
+We know partitioning is about speed and
+scale. But how that actually look under
+the hood?
+We have the core technical definition.
+In a distributed engine like Spark,
+partitioning defines the unit of
+parallelism.
+This is a vital concept to grasp. You
+can have the most powerful cluster in
+the world, but if your data is only in
+one partition, only one core can work
+on it at a time. The number of
+partitions you have essentially sets
+the speed limit. For how much work your
+cluster can do simultaneously or in
+parallel. Let's look at the mapping
+process. When you submit a job to a
+cluster, the engine breaks that job
+down into tasks. The rule is simple.
+Each partition is mapped to exactly one
+task. That task is then sent to a
+worker node. Where a worker thread
+executes it independently.
+Imagine you have a data set with 4
+partitions. The engine create 4 tasks.
+If you have 4 available CPU cores
+across your cluster, those 4 tasks can
+actually run at the exact same time.
+This is parallel execution in action.
+If you have 400 partitions, you could
+utilise 400 cores. So partitioning is
+the bridge that turns a static data set
+into a dynamic one.
+However, simply having many partitions
+isn't enough.
+As the slide notes, optimal
+partitioning is key. Our goal is to
+ensure that cluster resources are
+utilised evenly. If your partition
+strategy is poor, for example, if one
+partition contains 90% of your data,
+while the others are nearly empty, you
+encounter what we call stragglers.
+A straggler is a task that takes
+significantly longer than others to
+complete. In a distributed system, the
+job is only as fast as its slowest task.
+If 99 tasks finish in 1 minute, but the
+100th task, which is a struggler, takes
+10 minutes, your entire job takes 10
+minutes. Proper partitioning is about
+avoiding these bottlenecks. Just to
+ensure that every node finishes it
+works roughly at the same time.
+So just to wrap up Lesson two.
+Partition aren't just about where data
+sits, they're about the blueprint for
+how the work is divided. Now that we
+understand the role of partitioning, we
+need to look at the how. In Lesson 3,
+we'll start exploring our first major
+strategy, which is hash partitioning.
+And see how the modulo operator helps
+us achieve that uniform distribution.
+we are looking for. I'll see you there.
+Till then, happy learning. Thank you so
+much.

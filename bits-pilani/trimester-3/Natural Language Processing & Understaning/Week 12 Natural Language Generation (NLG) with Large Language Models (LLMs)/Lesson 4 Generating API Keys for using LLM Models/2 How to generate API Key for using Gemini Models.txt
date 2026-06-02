@@ -1,0 +1,118 @@
+All right, learners, in this quick
+video, we will see how we can use the
+Gemini LLMs in our Python applications,
+right? And what is needed for that.
+So just to demonstrate that, we saw the
+documentation of Gemini in the last
+video. Let me quickly copy this. And
+try to run it here in my notebook,
+right?
+So what it says is value error, no API
+key was provided. Please pass a valid
+API key. Learn how to create an API key
+at what the code said that it first
+imported Gen AI from Google, right? It
+created a client. A client is what will
+allow us to use the Gemini elements,
+right? It then declared the model name
+and the prompt or the user input.
+Explain how AI works in a few words,
+right? And then it captures that in the
+response variable and to see the
+response what we do is response.text,
+right? However, we failed at it and the
+error was no API key was provided. So
+now it is clear to us that to use
+Gemini LLMs we will have to provide an
+API key, right? So let's see how we can
+first generate the API key and then how
+we can provide it to our notebook
+environment. All right. So,
+Come to Google AI Studio and log in as
+we saw in the last video. On the bottom
+left, it says get API key. Let's click
+on that.
+So this may be empty for you. However,
+I've generated a couple of API keys
+that I've used in the past, right?
+First, what you need to do is to select
+a project. This project, you will have
+to create in your GCP account, right?
+Once you select the project that you
+want to create this API for,
+Just come here and click on Create API
+key.
+Great.
+So you can see You can select projects.
+You can also create a project if you
+don't have a project already here.
+Finally, just select Gemini API and
+click on create key. So you've created
+the key. Now.
+This key As all the options available
+to it. So if you want to see the usage
+of your API, you can click here view
+usage.
+Right? So you see, this particular API
+key was used in the past, right? For a
+few different models. You can see the
+names as well. Right? And you can see
+the API requests and all the costs
+involved, right? However,
+What is more important is
+This spends that have been incurred and
+Copy API key. Just click on this double
+square option, copy API key, and your
+API key has been copied to the clip
+clipboard.
+Now,
+The first part is done. You have
+generated the API key. Now we need to
+provide the API key to this client so
+that we can use the Gemini LLM models,
+right? So for that, come to secrets.
+Right? And then add a new secret. Let's
+name it Gemini_API_ key.
+And I will paste it here.
+Yeah, OK.
+OK, this is done. Now. I will just copy
+the script.
+Is it here. What it is doing is from
+Google.collab import user data, and
+then we will use userdata.get and we'll
+provide a secret name which is Gemini.
+API key. I will store it in a variable
+Gemini API key.
+It's asking to grant taxes, yes.
+So you see, it will turn this toggle on,
+right? Now we don't need this. The
+Gemini API key has been successfully
+stored here. Let's try to run this
+script again.
+Oh, we again ran into the same error.
+No API key was provided, right? Why is
+this?
+Because
+in the client, we will have to provide
+the APIT.
+Let's see if this is the right syntax.
+Let me try to run it again.
+And voila, we have the response. So AI
+learns patterns from data to make
+predictions. This is the response to
+this input, right? So this is where you
+declare LLM name.
+Specifically, the Gemini LLM, and this
+is your. End quote, prompt. Or the
+request. So let's save this file so
+that you can have it handy. Great. So
+this was a quick walk through on how to
+create the API key and how to provide
+it to your environment and essentially
+what is the requirement of the API key
+altogether, right?
+So I hope this helps you create your
+own API keys so that you can practise
+with this script.
+Great. So I'll see you in the next
+video. Thank you.

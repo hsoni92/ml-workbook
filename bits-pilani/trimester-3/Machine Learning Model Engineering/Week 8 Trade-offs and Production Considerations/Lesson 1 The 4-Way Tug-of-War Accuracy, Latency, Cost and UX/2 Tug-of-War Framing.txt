@@ -1,0 +1,42 @@
+I want you to picture a tug of war game.
+In the centre, there is a knot on the
+rope that represents your production
+machine learning system. On one side,
+accuracy is pulling, trying to make the
+model bigger, deeper and more powerful.
+On the other side, latency is pulling,
+asking model to respond it in only a
+few milliseconds.
+On the third side, cost is pulling,
+trying to keep hardware and cloud bills
+under control. And finally, user
+experience, or UX is pulling, wanting
+everything to feel fast, reliable, and
+intuitive. In practise, you're not
+trying to win on just one side, you are
+constantly adjusting the position of
+the knot. To a place where is
+acceptable or your product or and to
+your company.
+Let's ground this in a few quick
+stories. First story. The team trains a
+new, more complex model. Often metric
+looks great, accuracy improves by 3%
+points, but in production, response
+time doubles, page load slows, user
+abandons the flow, and overall business
+metrics get worse. Second story. Your
+team focuses on latency. They ship a
+tiny model that is extremely fast, but
+its predictions are poor. Customers see
+bad recommendations, wrong flags, or
+annoying false positives, and they lose
+trust. Third story finance pushes for
+cost reduction. The team cuts hardware
+capacity aggressively. The system
+survives, but now application is often
+slow or jittery. User notices, reviews
+get worse, and growth slowdowns. All
+three stories are the same pattern.
+optimising one dimension in isolation
+hurts the others.

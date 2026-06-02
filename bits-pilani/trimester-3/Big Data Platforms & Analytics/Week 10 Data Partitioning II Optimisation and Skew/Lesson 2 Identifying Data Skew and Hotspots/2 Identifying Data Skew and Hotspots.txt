@@ -1,0 +1,66 @@
+In our last video, we looked at the
+conceptual difference between a skewed
+cluster and a balanced one. Now it's
+time to get practical. How do you
+actually know if your job is suffering
+from skew when you're looking at a
+console or a dashboard? So first, let's
+define it formally.
+Data skew is a condition where a small
+number of data partitions are
+significantly larger than the rest of
+them. Because Spark and other
+distributed engines process data one
+partition at a time per core, an
+oversized partition means one worker is
+left doing a mountain of work while the
+others finish their small hills and go
+home.
+So this imbalance is a silent killer of
+your big data performance. The first
+symptom to watch for is what we call
+hotspot. When you monitor your
+cluster's resource usage, perhaps
+through a tool like Ganglia or
+Cloudwatch, look for unevenness.
+If you see specific nodes hitting 100%
+CPUs or maxing out their memory, while
+other nodes in the same cluster are
+sitting at 5% or 10% or 15%, you are
+sure that you have a hotspot. In a
+perfectly healthy job, all your CPU
+graphs should move together like a
+synchronised heartbeat. When you see
+one spike that stays high while the
+others drop off, that node is
+struggling with a skewed partition. And
+the second and the most common symptom
+is tail latency. Have you ever run a
+spark job where progress bar shoots up
+to 99% in 2 minutes but then stays at
+the last 1% for another 10 minutes?
+That is tail latency. To confirm this,
+you need to dive into the spark UI.
+Look at the summary metrics for your
+stages. Pay close attention to the max
+task versus the median task time.
+In a balanced job, the max and the
+medium should be relatively close.
+However, if your median task is 2
+seconds, but your max task is, let's
+say 5 minutes. You have found your
+straggler task. This single task is
+holding up the entire stage. And it's
+almost always caused by data skew. So
+just to recap, look at the synchronised
+heartbeat in your CPU logs to avoid
+hotspot and check the max versus median
+times in the Spark UI to catch
+stragglers. Now that you know how to
+find the problem, the big question is
+how do you fix it.
+So in the next lesson, we are going to
+look at our first major mitigation
+strategy. A technique called as salting.
+I'll see you in the next lesson. Thank
+you so much.

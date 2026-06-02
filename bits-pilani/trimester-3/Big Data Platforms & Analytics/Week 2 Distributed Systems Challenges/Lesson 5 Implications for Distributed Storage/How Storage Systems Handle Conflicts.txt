@@ -1,0 +1,58 @@
+Hello everyone. In distributed AP
+systems, network partitions allows
+nodes to remain available and accept
+rights independently. Once the
+partition is resolved and connectivity
+is restored, the system must reconcile
+divergent versions of the same data
+object. This necessitates a conflict
+resolution strategy to determine the
+final state or merge concurrent updates.
+Last ride wins, is a timestamp based
+resolution strategy. The system
+compares the metadata of conflicting
+rides and retains only the update, with
+the most recent physical timestamp.
+While computationally efficient, LWW,
+like last rite wins, is a susceptible
+to clock skew.
+The lack of perfect synchronisation
+between hardware clocks, which can lead
+to accidental deletion of valid,
+which can lead to the accidental
+deletion of valid data that was
+assigned to an earlier timestamp by a
+slower node. To avoid the inaccuracies
+of physical clocks, systems utilise
+logical time through vector clocks.
+This method tracks the causal history
+of an object across nodes. By
+maintaining a counter for each node
+that has modified the data, the system
+can determine if one update happened
+after another, or if they occurred
+concurrently. If updates are concurrent,
+the system makes them as conflict,
+rather than automatically overwriting
+data.
+Preserving the causal integrity of
+system. In more complex scenarios, the
+database may delegate resolution to the
+application layer. This is known as
+client side or semantic resolution. The
+database stores all conflicting
+versions and presents them to an
+application logic during the next read
+operation. The application then
+performs a merge or selection based on
+business specific rules, ensuring that
+data is consolidated without unintended
+loss. Conflict resolution is a
+fundamental requirement of eventual
+consistency. The choice between LWW
+vector clocks or semantic resolution is
+an architectural trade-off between
+system performance. Implementation
+complexity and data precision. Thanks a
+lot. I'll see you in the next video.
+Till then, happy learning.

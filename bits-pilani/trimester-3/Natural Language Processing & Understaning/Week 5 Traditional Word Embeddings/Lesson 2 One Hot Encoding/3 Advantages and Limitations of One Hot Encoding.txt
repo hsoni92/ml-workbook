@@ -1,0 +1,23 @@
+Welcome back, learners. Now let's
+understand some advantages as well as
+limitations of one not encoding.
+Some advantages are that it is very
+simple to understand and implement.
+There is no loss of information
+regarding presence of a word. There are
+some limitations to sparsity. The
+vectors for a sentence are mostly zeros.
+for a vocabulary of 10,000 words, you
+will have 9,999 zeros. And 11, this
+massively waste memory. The next
+limitation is that there is no semantic
+meaning. For example, dog and puppy are
+orthogonal vectors. In other words,
+they are highly related. However, with
+one hot encoding, the model will never
+realise that these two words are
+related. Variable length. Handling
+sentences of different lengths is
+difficult without padding.
+That's all for this video. I'll see you
+in the next one. Thank you.

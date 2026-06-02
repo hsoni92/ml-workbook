@@ -1,0 +1,16 @@
+Under the hood, most machine learning
+pipelines still rely on classic ETL or
+ELT.
+In ETL, extract, transform, load, you
+extract data from operational system,
+logs or APIs. Transform it by cleaning,
+joining and aggregating, then load the
+result into data warehouse or data lake.
+In ELT, extract, load, transform, you
+load raw data into the warehouse first.
+Then, do most transformations there,
+using SQL or other tools.
+For machine learning, ETL and ELT
+pipelines produces the clean,
+structured table that you then turn
+into features for training and scoring.

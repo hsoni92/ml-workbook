@@ -1,0 +1,97 @@
+Welcome back, learners. Now let's go
+through some of the different types of
+text corpora. Before exploring some
+different types of corporas, let's
+understand the need to classify these.
+We must understand that not all tax
+copora are the same. And therefore they
+will lead to different behaviours.
+Different NLP tasks require different
+kinds of language data.
+For example, news language. Is often
+different from conversational language.
+Literary text is not often used in
+random product reviews.
+Finally, raw text is totally different
+from labelled text. Understanding
+different corpus types help us choose
+the right data for the right task. It
+helps us avoid poor model
+generalisation.
+And helps us interpret model outputs
+correctly. Now let's look at the first
+type of text copora, the general
+purpose corpora. It is designed to
+represent broad language usage.
+Some of the popular examples are brown
+coppers and Gothenburg coppers. Brown
+Corpus is balanced across genres. It
+can include news, fiction, reviews,
+whereas the Gothenburg corpus mainly
+consists of literary texts and books.
+General purpose corporas have diverse
+vocabulary. Multiple writing styles,
+and very useful for foundational NLP
+applications.
+However, General purpose copora may not
+perform well for specialised domains.
+Like finance, health care, legal, and
+so on, let's look at the next type of
+tax corpora. The domain specific
+corpora.
+This type is focused on a particular
+field or a particular task. For example,
+the text copies of movie reviews is
+very useful for sentiment analysis.
+The text corpus of medical reports is
+highly applicable for clinical natural
+language processing tasks. Similarly,
+legal documents can help us build some
+contract analysis tasks.
+Domain specific corporas have very
+specialised terminology.
+Narrow context
+And high relevance for domain tasks.
+A sentiment model trained on movie
+reviews will not work well on medical
+text. The next type is the raw or
+unannotated copper.
+This text corpus has plain text with no
+labels or linguistic tag.
+This is mainly used for language
+modelling.
+Word embeddings and topic modelling
+tasks.
+Some examples are the Gutenberg Books
+and Wikipedia dumps.
+The final type of Tex copora is the
+annotated copper.
+This text corpus is enriched with
+linguistic or task specific labels. For
+example, post tax.
+Named entities, sentiment labels,
+positive, negative, neutral. Syntactic
+dependencies, right?
+Some examples are the pause tagged
+brown corpus, or CON LL NER data sets.
+These are mainly used for supervised
+learning NLP tasks. And evaluation and
+benchmarking tasks. Some text copies
+are created specifically for some NLP
+tasks, for example, sentiment analysis
+of movies. Can come from IMDb data sets,
+question answering data sets, the squad
+data set. And text classification data
+sets.
+These text copies have a clearly
+defined input and output, high quality
+labels. And they are very ideal for
+model training and comparison.
+However,
+These text copies have a very narrow
+task scope, which means they're only
+useful for that particular NLP task.
+And hence have limited linguistic
+diversity.
+That's all for this video. I'll see you
+in the next one. Thank you.

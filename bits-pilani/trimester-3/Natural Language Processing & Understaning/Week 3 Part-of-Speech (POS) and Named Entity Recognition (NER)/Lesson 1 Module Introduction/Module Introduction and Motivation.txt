@@ -1,0 +1,13 @@
+Welcome back learners to module 3. In
+this module, we will explore parts of
+speech and named entity recognition.
+This module explores the structural
+analysis of text, focusing on
+extracting grammatical context via
+parts of speech, or pause.
+And identifying real world concepts.
+And identifying real world.
+And identifying real world concepts
+with named entity recognition, or NER.
+I'll see you in the next video. Thank
+you.

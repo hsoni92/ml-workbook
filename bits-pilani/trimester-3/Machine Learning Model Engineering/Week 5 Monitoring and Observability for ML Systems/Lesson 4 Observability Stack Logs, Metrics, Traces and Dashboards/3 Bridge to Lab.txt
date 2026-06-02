@@ -1,0 +1,22 @@
+The last piece of closing the loop from
+monitoring back to model updates.
+When you see repeated drifts on
+important features or a persistent
+performance drop on fresh labelled data,
+that should create an investigation
+ticket. After investigation, you decide.
+Is this a data issue we can fix? Do we
+need to adjust threshold or business
+logic?
+Or is it time to retrain the model on
+fresh data, or roll out a new version?
+If you decide to retrain, your
+retraining pipeline should train on
+updated data, evaluate and compare the
+current model, register a new candidate.
+And if it passes, deploy it, starting
+the monitoring loop again. In the next
+module, we'll go deeper into retraining
+workflow and promotion rules and show
+how monitoring signals feed into these
+pipelines automatically. Thank you.

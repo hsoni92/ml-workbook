@@ -1,0 +1,112 @@
+In this video we are going to zoom out
+and look at the entire ML life cycle
+from the initial idea all the way
+through to monitoring and retraining.
+By the end, you should be familiar with
+the 7 key stages that most machine
+learning projects move through.
+Understand each stages are more about
+research and exploration, and which
+ones are about running a production
+system. And have a clear picture of
+where this course will focus.
+So you know how each module fits into a
+bigger story. This life cycle is a
+diagram we will keep coming back
+throughout the course. Let's start with
+the high level picture.
+We will use this simple 7 stage life
+cycle as our mental model, first.
+Problem framing. What are we trying to
+achieve? How will we measure success?
+Data collection and labelling. Getting
+the right data, and labelling it if
+needed. 3rd, feature engineering.
+Turning raw data into useful signal the
+model can use. 4th, model training and
+evaluation. Choosing a model, training
+it, and checking if it meets our goal.
+5th deployment. Shaping the model into
+real environment where it can serve
+predictions, monitoring, watching the
+system in production. Performance, data
+quality, latency, errors. And last,
+retraining or depreciation, updating
+models with new data or turning them
+off. If they are no longer useful.
+Different companies might slice this
+differently, but these core stages
+shows up almost everywhere. The life
+cycle starts with problem framing.
+Before any models or data pipeline, we
+need to answer some basic questions.
+What decision or work flow are we
+trying to improve? What metrics are we
+trying to move?
+That could be click through rate,
+revenue, fraud loss, time saved, error
+rate, and so on.
+In machine learning, even the right
+tool here, or would a simple heuristic
+or rule based system be enough?
+And importantly, how will this fit into
+the product? Will it power
+recommendations, rankings, alerts, or
+something else? Good problem framing
+saves a lot of time later.
+A well framed problem gives you a clear
+target for rest of the life cycle.
+Once we know what we're solving. We
+move to data collection and labelling.
+Here we answer.
+Where does the data come from?
+Logs, databases, third party sources,
+users' behaviours, censors, or any
+other sources. Do we already have
+labels like ground truth outcomes?
+Or do we need to generate them via
+manual labelling? Heuristic or the weak
+supervisions? Is the data
+representative of what we will see in
+production, or is it biassed in some
+way?
+And are there privacy, security, or
+compliance constraint on how we can
+store and use the data?
+Without the right data, even the best
+model architecture won't help. Stage 3
+is feature engineering, turning raw
+data into something your model can
+actually consume. This can include
+simple aggregations like counts,
+averages, or time windows, encodings
+for categorical variables, text
+preprocessing, embeddings, image
+transformations, and so on.
+A crucial point, which we will revisit
+later in the course, is consistency.
+The way you compute features during
+training needs to match how you compute
+them during serving in production. If
+those diverges, you get training
+serving SKU.
+Which is a classical source of bugs in
+production machine learning systems?
+Stage 4 is the one most people think of
+model training and evaluation. Here we
+train one or more candidate models.
+Maybe baseline, classical models, deep
+learning models, or fine tuned LLMs,
+evaluate them using appropriate metrics.
+Accuracy, F1, AUC, calibrations,
+regression, error, depending on the
+problem. Use validation and test sets
+to avoid overfitting and get an honest
+estimate of performance. But the key
+question remains, does this model
+actually move the business or product
+metric we set in the problem framing
+stage? A model can be good in terms of
+AOC.
+But still not meaningful in terms of
+real world impact.

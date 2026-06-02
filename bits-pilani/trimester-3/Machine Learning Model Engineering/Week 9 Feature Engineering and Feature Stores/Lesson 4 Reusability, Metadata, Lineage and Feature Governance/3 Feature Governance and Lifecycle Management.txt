@@ -1,0 +1,58 @@
+Not all features are equal, some are
+sensitive. These include personally
+identifiable information, or PII. Such
+as email address, phone numbers, home
+addresses, and national identities,
+protected attributed attributes like
+race, gender, or religion. Which may be
+restricted or banned from use in many
+jurisdictions. And financial or health
+related data that require special
+handling. A feature store can enforce
+governance by controlling which roles
+and teams can read which features,
+defining policies that certain features
+can only be used in specific models, or
+blocking some features entirely from
+production usage. It can also log who
+accessed. Which features, and when,
+which is important for security and
+compliance?
+Features themselves have a life cycle.
+Over time, you might fix bugs in the
+logic, change the time window from 30
+days to 60 days, or replace an old
+feature with a better alternative. A
+feature store helps by versioning
+feature, for example, customer 30 day
+spend, version 1, version 2, and so on.
+Allowing features to be tagged as
+active, deprecated, or experimental.
+This makes it much safer to roll out
+changes. You can test a new version
+while keeping the old version around.
+You can see which model still depends
+on old features.
+And you can eventually clean up unused
+or deprecated features. It's feature
+engineering with proper life cycle, not
+just ad hoc script.
+When you combine reusability, metadata,
+lineage, and governance, the benefits
+extend across the whole organisation.
+For data scientists, there is a library
+of trusted reusable features, so they
+spend less time on plumbing and more
+time on modelling. For machine learning
+engineering, offline and online
+features are consistent.
+So there are fewer skew bugs and safer
+rollouts. For Data and Platform team.
+There is a clear ownership and lineage,
+and better control over access and
+compliance. For the business overall,
+you get more reliable model, faster
+iteration, and lower risk around data
+misuse. This is why feature stores have
+become such a central piece of modern
+machine learning platform. Thank you.

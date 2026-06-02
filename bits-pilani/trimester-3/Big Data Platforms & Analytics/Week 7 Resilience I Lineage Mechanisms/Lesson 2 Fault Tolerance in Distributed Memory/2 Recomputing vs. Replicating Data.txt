@@ -1,0 +1,104 @@
+Now that we are going to look at the 2
+primary ways distributed systems handle
+failures.
+But to understand why spark is so
+efficient, we need to contrast it with
+the traditional method. Which is data
+replication. Which you might recognise
+from systems like HDFS. Let's look at
+the storage strategy first. In a
+replication based system, the strategy
+is straightforward.
+You copy the data. If you have a block
+of data, you save it on node A, Node B,
+and node C. Spark takes a radically
+different path. Called the lineage
+mechanism. Instead of storing the data
+itself, Spark stores the recipe, which
+is a DAG, a directed acyclic graph,
+that tells the system exactly how to
+recreate that data from its source.
+This difference leads Directly to the
+IO overhead. Replication is IO heavy.
+Every time you write data, you're
+multiplying the network and disc
+traffic by 3 or more times, right? But
+in a high speed RAM environment, this
+is a massive bottleneck. Spark's
+lineage, however, has incredibly low
+overhead, because it only logs metadata.
+We aren't moving terabytes of data. We
+are just recording a few kilobytes of
+instructions or recipe. Now let's talk
+about recovery speed.
+Here, replication actually has an
+advantage. If node A fails, the system
+immediately switches to the replica of
+node B.
+It's nearly instantaneous. In Spark,
+the recovery is computed. We don't have
+the data, right? So this means the
+recovery speed depends on the depth of
+your dag.
+If you have a very long chain of
+transformations, it might take a moment
+to rerun these steps. However, when we
+look at the scalability, the lenient
+mechanism wins. Replication is resource
+heavy. For every 1 gigabyte of data you
+want to process, you need 3 gigabytes
+of storage across the cluster, or more.
+Spark is extremely efficient for a
+large scale dataset because its
+footprint doesn't grow with the size of
+the data. It only grows with the
+complexity of the logic.
+By the end of this lesson. You'll see
+why choosing to compute instead of
+replicate is the secret behind Spark's
+ability to be up to 100 times faster
+than Hadoop. Now let's give a closer
+look at the specific philosophy that
+Spark uses to balance performance with
+stability. We call this the cost of
+volatility. As we know, Spark is
+incredible in speed, often cited as
+being 100 times faster than MapReduce.
+Now, it comes from its ability to
+process data directly in RAM. However,
+Ram's volatility is a double edged
+sword. It's fast, but it's fragile.
+This necessitates what we called a
+robust recovery plan. Spark's plan is
+built on specific promise, which is
+re-execution instead of replication.
+Think about the resource cost. If you
+want to replicate data in memory, we
+would be using up half or more of our
+cluster's total RAM just to store.
+The safety copies that would leave very
+little space for actual computation.
+Defeating the purpose of an in memory
+engine.
+By promising to rerun the code, if a
+partition is lost, Spark keeps its
+memory footprint lean. Because RDDs are
+immutable. Meaning they never change
+once created, right? And
+transformations are deterministic.
+Spark can guarantee that rerunning the
+same recipe on the original input will
+always yield the exact same result.
+This is how Spark maintains its speed
+advantage. We save the network
+bandwidth and the storage space that
+replication would consume.
+And in the rare event of a failure, we
+simply use the CPU to compute that
+specific missing piece again.
+In the next lesson, we're going to look
+at the logical roadmap that makes this
+possible, which is the RDD lineage
+graph. Till then, happy learning. I'll
+see you in the next chapters. Thank you
+so much.

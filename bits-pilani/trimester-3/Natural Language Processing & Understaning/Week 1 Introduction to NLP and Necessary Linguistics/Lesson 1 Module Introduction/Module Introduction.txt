@@ -1,0 +1,13 @@
+Hello, learners. Welcome to the first
+module of your course, Natural Language
+Processing.
+In this module, we will introduce you
+to the core concepts of natural
+language processing.
+The relationship between NLP, NLU and
+NLG.
+And in the end, we will explore some
+linguistic foundations for natural
+language processing.
+I'll see you in the next video. Thank
+you.

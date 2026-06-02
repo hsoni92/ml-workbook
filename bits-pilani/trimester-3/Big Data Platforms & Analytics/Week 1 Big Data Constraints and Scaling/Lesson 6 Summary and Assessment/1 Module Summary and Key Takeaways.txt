@@ -1,0 +1,67 @@
+Congratulations! You've reached the end
+of module one. Big data constraints and
+scaling. In this module, we moved away
+from the idea that computing is just
+about having a fast laptop. We have
+explored the fundamental shift in
+thinking required to handle data at a
+global scale. We have gone from
+identifying why systems break to
+understanding the architecture that
+keeps the world's largest companies
+running.
+Key takeaway constraints drive
+architecture.
+Our first major takeaway is that big
+data is defined by its constraints. We
+explored the three V's volume, velocity,
+and variety. We learned that these
+aren't just buzzwords, they are
+architectural pressures.
+Next, we looked at the vertical scaling,
+or scaling up, we saw the natural
+instinct to just buy a more expensive
+supercomputer. However, we discovered
+that this path eventually hits physical
+and economic limits. Whether it's a
+price wall where hardware cost explodes
+exponentially, or the risk wall where a
+single machine becomes a single point
+of failure, we learned that vertical
+scaling is a short-term fix. It's great
+for simplicity and small startups. But
+it cannot sustain the theoretical
+infinite growth required by the modern
+enterprise. This led us to our most
+important solution, horizontal scaling,
+and commodity hardware clusters.
+Instead of one giant truck, we built a
+fleet of vans. We learned that by using
+standard off the shelf servers and
+smart software, we can achieve linear
+cost. Adding power stays affordable as
+you grow.
+The system stays online, even if
+individual nodes fail.
+We learned the secret sauce of big data,
+moving the code to the data to avoid
+the network tax and latency. We saw
+that while clusters are more complex to
+manage.
+They are the only way to provide
+elasticity needed for big data
+analytics.
+So choosing a scaling strategy is
+always a balance between software
+simplicity and long term resilience.
+You now have the hardware and
+architectural foundation. But there is
+a new challenge. When you have 1000
+computers working together, how do they
+stay in sync?
+How do they handle network partitions?
+In Module 2, we will dive into
+distributed system challenges,
+exploring the famous Cap theorem. How
+we manage data consistency across a
+cluster. But till then, happy learning.

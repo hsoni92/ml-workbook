@@ -1,0 +1,154 @@
+Welcome to module 5, Hands-on lab on uh
+model monitoring and observability.
+This is a comprehensive 4-part plan
+that will take us from understanding
+why ML monitoring is different all the
+way to building a complete, uh,
+observability stack with, uh,
+dashboards, OK?
+So, here I've created a directory for
+module 5.
+And uh we're gonna see all these 4
+different paths and uh they have
+basically a different scenario here we
+are gonna cover. And uh important note
+before we begin. So, throughout this
+lab, we'll be working with uh simulated
+data and uh scenarios, OK? So, here,
+the Part zero uses a synthetic example
+to illustrate uh concepts, OK? And, uh,
+part one and part two use a small
+sample data of, uh, data set of uh
+production logs. And then part 3. Uh,
+simulates uh ML inference request, OK?
+So, we do this for two reasons. First,
+uh, it makes the lab portable and, uh,
+reproducible for everyone. Second, it
+lets us create a specific scenario that
+clearly demonstrate each monitoring
+concept without waiting for real drift
+or failure to occur. OK. In a real
+production environment, you would
+connect the same technique to your
+actual ML service logs. Uh, metric
+systems, OK. And uh distributed tracing
+infrastructure like uh Datao
+tool, something like that, OK? The
+patterns and the code we are building
+here is scale directly to production.
+So, uh, we'll start with part zero, OK?
+And, uh, which is, uh, conceptual but
+uh crucial. We are going to see a
+specific scenario where traditional
+monitoring completely misses, uh. Uh,
+ML failures, OK? And this will motivate
+everything we build, uh, in the later
+part. So, right now, just focus on this
+part. So you can see uh in traditional
+system metrics, week one, everything
+looks good.
+Uh, pipeline is stable, latency is
+stable, error rate stable, right. And
+uh if you see the MLS specific metrics,
+that is uh model accuracy. In week
+first, it was 92%. Later in week 4,
+it's just uh 0.67, right? So, the
+keynote here is uh traditional
+monitoring shows everything is fine,
+but the model is making uh increasingly
+poor prediction, right? So this is a
+silent failure and uh users are getting
+uh fast error-free responses that are
+basically uh wrong. This is our first
+scenario. Now, let's move to Scenario
+second, that is uh part one. So in this
+scenario, uh, we are gonna see data
+distribution shift, also known as
+covariant drift. This happens when your
+input feature changes over time.
+So let's consider, uh, for this example,
+we trained our model on users from
+reason A. Where averages was 35, uh,
+average income was, uh, 600, something
+like that, OK?
+Uh, and then what happened? The code
+did not change. The system is healthy,
+but the data changed, and the model was
+never trained for the new population.
+Let's say, reason B, OK. So,
+traditional monitoring can't say this.
+You need to actively track, uh, feature
+distribution and compare them to, uh,
+playing baseline. OK. So let's try to
+execute, uh, this part.
+So here, uh,
+by 1 part 1.
+OK. Let's see the second, uh, scenario.
+So you can notice here, production week
+one. We were having uh means 35. And uh
+production is uh
+4 The mean has changed to 24. Same for
+the income. Initially it was 64, now
+it's 34. So if you see the key inside,
+the model was trained on one user
+population, but it's now being used on
+a different population. So traditional
+monitoring.
+Traditional monitoring can't detect
+this. You need to track feature
+distribution, right? So, everything
+again, running smoothly, but you can
+see the difference. So basically, data
+has uh drifted here. Now, let's cover
+the scenario 3.
+Uh, let's run.
+The slam
+Yeah. So this is our 3rd scenario.
+And uh the scenario is particularly uh
+insidious. It's a uh feedback loop of
+degradation. And this is unique to
+machine learning. Your model's output
+can influence the data it sees in the
+future.
+Uh, let's consider a recommendation
+system. Uh,
+and, uh, initially, it recommends
+diverse content. User engaged with a
+variety of topics, and that is great,
+but over time, the models start
+favouring popular items. User only see
+popular content, so niche content gets
+no clicks, and the training data become
+biassed toward popular items, OK. And
+the model reinforcing this bias further,
+so it's a vicious cycle, and we see the
+catalogue coverage.
+Uh, here Uh, metrics dropped from 85 to
+40%. So traditional monitoring wouldn't
+catch this. You need to, uh, track, uh,
+like, uh, diversity metrics, uh,
+fairness metrics, and, uh, distribution
+shift over time, right? And if we talk
+about scenario 4.
+Uh, label shift, that is a target drift.
+So this scenario is, uh, where the
+distribution of your target variable
+changes.
+Uh, in our fraud detection example, we
+trained on 1% fraud rate, but, uh,
+production now sees, uh, 5%, uh.
+Fraud rate. Right? The model precision
+tanks because it wasn't calibrated for
+this. Now, look at this final
+comparison table. It's a whole story.
+Traditional monitoring catches system
+error and latency, right? But it
+completely misses all four.
+ML specific failure modes we just
+discussed, right? So this is why we
+need a specialised ML monitoring. We
+need to tackle model performance or
+data drift, uh, prediction,
+distribution, and fairness metrics,
+right? So that's what we'll build in
+the next 3 parts.

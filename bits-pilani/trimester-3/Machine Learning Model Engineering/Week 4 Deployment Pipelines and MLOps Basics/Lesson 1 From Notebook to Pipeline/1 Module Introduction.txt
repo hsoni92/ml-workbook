@@ -1,0 +1,20 @@
+Welcome to Module 4 deployment
+pipelines and ML Ops Basics. In the
+earlier modules, we focused on getting
+a model into a service, understanding
+inference patterns, and seeing how
+models runs into containers. In this
+model, we are going to focus on the
+process that gets a model a from a
+notebook into a production reliably.
+In this video specifically, we will
+look at why works in my notebook is not
+enough for a production system.
+Define what an ML deployment pipeline
+is, walk through the key stages data,
+train, evaluate, package, deploy. And
+connect pipelines to repeatability and
+reliability. You can think of this as
+moving from one-off hero work in
+notebook to a systematic repeatable way
+of shipping models.

@@ -1,0 +1,159 @@
+Welcome learners. In this quick video,
+I will give you an overview of hugging
+face. You may have already heard of it.
+Some of you may already have used it as
+well. However, to bring everyone up to
+speed, let me quickly take you through
+this platform and show you how you can
+use it for your own use cases as well.
+So what is hugging face, you may ask?
+So as you can see, Hugging Face is a
+platform where the machine learning
+community collaborates on models, data
+sets, and applications. And actually
+there's more than just this, right?
+Hugging Face started off as an
+aggregator for all open source
+transformer models and AI models.
+However, it very quickly gained
+popularity and became a full blown
+community for AI developers.
+It currently is hosting more than 2
+million models, right? That's crazy. So
+let's explore. So firstly you need to
+create your account on hugging face,
+click on sign up. Add your email
+address and a password and just follow
+the steps. It's pretty easy. I already
+have an account, so I will just log in.
+Add your email address and password.
+All right, so let's click on log in.
+Great, so this may be empty for you,
+right? It is just community stuff. If
+you're following other developers or
+contributors, you will see updates from
+them, right?
+On the left are your profile inbox, and
+all those general stuff. If there are
+some organisations that you're
+following, and they will be listed here,
+right? And the other resources also,
+you can quickly switch from light to
+dark theme, right?
+Why is it always dark for me? Right. So
+light theme, dark theme, right? I
+prefer dark.
+No.
+On the right are all the new and
+trending models, right? So you can see
+cohere, transcribe, Mistral models,
+Baidu models, right, the OCR ones, OK.
+If you need to quickly search for a
+transformer model, like Bert, in our
+case, we can just quickly type Bert and
+we will find some of the top bird
+models, right?
+Let's explore this in a while.
+Let me take you through these parts of
+hugging face. So the main purpose of
+hugging face is that it is an
+aggregator of open source models, right?
+So you can see all the models here, see,
+right? So Baidu, OCR model, Mistral
+model, Chroma DV, right, Facebook. So
+all the big and small contributors can
+come to Hugging Face and upload their
+models and share it with everyone,
+right?
+Let's now search for our model, birth.
+Uncased, right? Once you search for a
+model, you will have its page open. You
+can go through what the model is about,
+the description, right? There are
+variations as well.
+These ones, right?
+Uses and limitations, and then how you
+can execute it in Python, right?
+On the right, you can also test these
+models. So for example, you add your
+input here and you can generate an
+output for it. Let's use an example.
+So it is a fill in the blanks kind of
+exercise. So Paris is the
+The model is supposed to fill this
+blank, and the answer is capital, right,
+with 99% confidence. Heart, centre,
+centre, city are other few options.
+Let's test something of our own.
+The cat.
+Dash on the Mac.
+Let's hit general.
+SAT with the highest probability 16.8,
+there's lay was landed, collapsed, all
+of them make sense. However, as per its
+training data, the highest probability
+is for SA.
+Right? So this is how you can use the
+models, OK.
+If you want to use it in your collab
+notebooks or Kaggle notebooks, you can
+directly click here as well. Otherwise,
+the way to go about it is just copy
+this.
+Code snippets and use it in your
+notebooks or Python files. Right, so
+this was all about models in the
+hugging face. Now, hugging face also
+provides a lot of good and high value
+data sets, right? So your cloud Opus
+reasoning data set, Open moss data set,
+etc. etc. Let's go through any one of
+them.
+So this user Roman 1111 has uploaded
+this data set. What is this data set
+about? So let's see. This is a high
+fidelity reasoning data set synthesised
+using Cloud Opus 4.6, right? Data set
+is designed to capture the model's
+internal chain of thought.
+And reasoning traces, specifically
+focus on, focusing on mathematical
+accuracy, etc. etc. You can go about
+what this data set is about and how you
+can use it, right, which is here. All
+right, so this was about data sets. Now,
+spaces.
+This is a recent addition to hugging
+face.
+What Spaces offers is that you can
+develop your application and host it on
+hugging face so that anyone can use it.
+So many applications. Let's just see
+anyone at random.
+Oh your multilingual ASR, OK, so it's a
+transcribing. Application from what it
+seems, let's test it out.
+Hello, hello, hello. Testing, testing,
+testing.
+OK, let me hear.
+OK, it's working fine. The English
+detect uh the language detected is
+English, and let me hit transcribe.
+OK, perfect. Exactly what I said, right?
+So this is how you can also develop
+your own applications with hugging face
+models and then post it on hugging face
+itself.
+So this was about spaces. No. We were
+here buckets. This is a very, very
+recent addition to hugging face, and
+this is nothing but your databases,
+right, in the, in the sense. So hugging
+face is also providing.
+Services for you to store your own data
+sets, right? Then of course there is
+documentation and pricing for
+enterprise usage, right? So this was
+all about hugging face.
+I hope you've enjoyed this, and I'll
+see you in the next video. Thank you.

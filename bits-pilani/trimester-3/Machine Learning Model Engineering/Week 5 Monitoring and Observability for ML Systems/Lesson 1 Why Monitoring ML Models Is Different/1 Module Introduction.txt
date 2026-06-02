@@ -1,0 +1,29 @@
+Welcome to why monitoring ML model is
+different.
+In the last module, we focused on
+getting models into production. We
+exposed them as APIs, packaged them in
+containers, and wired them into
+pipeline and CICD. In this video we are
+going to flip the question. Once a
+model is live, how do we know it's
+still doing the right thing? We will
+quickly recap where we are at how
+traditional apps monitoring works, see
+what extra dimensions machine learning
+introduces, and talk about. What
+happens when we don't monitor our
+models properly? Let's quickly recap
+where we are in the story. In earlier
+modules, we trained models and exposed
+them via APIs, wrapped them in
+containers, and wired them into CICD so
+we can deploy new versions safely.
+That gets us To deployment. But
+deployment is not the finish line, it's
+the starting point of a new phase.
+Are we still getting the right inputs?
+Are predictions still accurate enough?
+Are we helping business or silently
+hurting it? That's where monitoring
+comes in.

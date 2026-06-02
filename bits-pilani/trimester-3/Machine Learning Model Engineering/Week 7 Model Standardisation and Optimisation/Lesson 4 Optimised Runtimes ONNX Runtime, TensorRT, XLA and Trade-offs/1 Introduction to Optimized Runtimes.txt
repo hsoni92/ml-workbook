@@ -1,0 +1,46 @@
+Welcome to optimised runtimes, ONX
+runtime, Tensor RT, XLA, and trade-offs.
+So far in module 7, we have talked
+about models, formats, and compression.
+In this video, we focus on one big
+question. Given a model graph, how do
+we run it as efficient as possible on
+the hardware we have?
+That's the job of optimised run times.
+We will look at 3 of them. OneNNX
+runtime, a general purpose engine for
+ONNX models, Tensor RT. Nvidia's highly
+optimised inference engine, and XLA.
+Which stands for Accelerated Linear
+Algebra, a compiler used by Tensorflow
+and JAX. We will also talk about
+tradeoffs, probability versus hardware
+specific performance.
+And paying a higher compile time cost
+to get lower runtime latency.
+Let's first answer the basic question.
+What does an optimised run time
+actually do? Imagine you have a model
+graph exported to a standard format
+like ONNX, which stands for Open Neural
+Network Exchange. The runtime will
+optimise the graph, for example, by
+fusing a convolution, batch
+normalisation, and RELU into the single
+operation. Choose the fastest kernel
+implementation it can find for each
+operation on that target hardware,
+whether that's a central processing
+unit or CPU or graphics processing unit
+or GPU.
+Manage memory, reusing buffers instead
+of constantly allocating and freeing
+them.
+And make use of any hardware
+accelerator, such as vector
+instructions, GPUs. Neural processing
+units, or NPUs, or tensor processing
+units, TPUs. The goal is simple.
+Keep the model's output the same, but
+reduce latency, improve throughput, and
+often reduce memory usage.

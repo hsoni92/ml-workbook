@@ -1,0 +1,156 @@
+So what do we gain by putting a model
+in the online request response path
+first?
+Very fresh prediction.
+We can use the latest context, current
+session data, recent actions,
+geolocations, device type, all the
+stuff that might not exist in
+yesterday's batch snapshot. Second, per
+request personalization, two users
+hitting the same page at the same time
+can see completely different content,
+ranking. Are the recommendation based
+on their profile and behaviour. Third,
+tighter feedback loop, we can log each
+prediction along with user interaction
+and outcomes, and feed that back into
+training. Over time, that makes model
+better. Online inference is what
+enables those dynamic, interactive, ML
+powered experience that people now
+expect from model products.
+Of course, we pay a price for all that
+power. First, strict latency
+requirement. We can't just say the
+model usually responds in time. We have
+to design the system so that P95 and
+P99 stays within our target, or the
+user experience suffers. Second,
+scaling complexity, traffic is not
+uniform. We need to handle spikes due
+to time of day.
+Marketing campaign, product launches,
+or even bots. That often means auto
+scaling, careful capacity planning, and
+a lot of monitoring. Third, more moving
+parts. An online prediction path
+usually includes load balancers,
+network hops, caches, multiple services,
+and external dependencies. When any of
+those go wrong, real user notice
+immediately. In practise, this often
+means. We may have to simplify the
+model, or use hybrid approaches like
+precomputing heavy features offline,
+and only doing a light model online to
+meet real time constraint reliably.
+Another big challenge with online
+system is what happens under stress.
+Think about a sudden traffic spike from
+a viral campaign or a dependency
+slowing down, like a feature store, a
+database, or an upstream API. If we are
+not careful, a few slow components can
+lead to higher latency, retries, and
+eventually cascading failures where
+everything starts to time out. Online
+system need to be able to scale out
+quickly,
+example by auto scaling the number of
+model server replicas. Fail gracefully
+by using fallback
+or default behaviour instead of
+blocking forever.
+And avoid caskets.
+Using timeouts, rate limit, and circuit
+breakers, this is where the work of
+model engineers and mops really shows
+up. It's not just about model itself,
+it's about building a robust service
+around it.
+Let me quickly name a few techniques
+you will see more on later in this
+course, just so you can attach label.
+To the ideas, caching.
+If the same prediction is requested
+frequently, we can cache it and reuse
+the result. This can dramatically
+reduce latency and cost for common
+queries. Auto scaling, automatically
+adjust the number of model serving
+replicas based on CPU, GPU or request
+load.
+Scale out during busy period. Scale
+back in the cost save cost.
+Circuit breakers and time outs if a
+downstream dependency is slow or
+failing.
+We stop calling it and fall back to a
+safe behaviour. This prevents one slow
+component from dragging the entire
+system down.
+Hybrid pattern, precomput heavy
+features, and candidate sets in batch.
+Then use a lighter model online for the
+final ranking or decision.
+We won't deep dive into all of these
+right now, but keep them in mind
+they're key tool for making online
+inference practical in production.
+Let's anchor everything by contrasting
+batch and online.
+One more time. In batch inference, you
+are thinking. I have 10 million rows,
+and I need them all scored by tomorrow
+morning. The main metrics are
+throughput and total job time. If the
+individual row takes bigger longer, bit
+longer.
+It's not a big deal, as long as the job
+finishes on time. In online inference,
+you're thinking. A user just clicked
+something and they expect this page to
+load now. The main metrics are P95,
+P.99 latency, and error rate per
+request. If even 1% of requests are
+very slow, or fails, a lot of users are
+impacted.
+It might be the same underlying model,
+but Batch is like doing heavy lifting
+backstage. Online is like performing
+live on stage in front of user. Same
+function If of input, very different
+constraint and engineering choices.
+To wrap up, let let's look at where we
+are headed next.
+So far in Module 2, Topic I gave us
+shared vocabulary of inference and the
+core metrics, latency throughput cost.
+Topic 2 showed us batch inference.
+Great when you have a lot of data and
+no one is waiting. This video, topic 3,
+focused on online inference, where a
+user or upstream system is waiting
+right now, and P95 latency is part of
+the product specs. In the next theory
+video, Topic 4, we will introduce
+streaming inference, where data arrives
+as a continuous event stream, and we
+want to react quickly to each event
+without necessarily having a 1 to 1
+request response pattern. We will also
+build a simple decision guide to choose
+between batch online and streaming. In
+the labs, you will implement both a
+batch client and an online client
+against the same model API,
+measure actual latency and throughput,
+and really feel why these patterns
+behave so differently. Once you have
+done that, the phrase batch versus
+online versus streaming. Will mean more
+than just word, it will map to concert
+sense.
+Of how the system feels under load.
+Thank you.

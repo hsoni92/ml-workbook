@@ -1,0 +1,56 @@
+Next, get explicit about SLAs Service
+Level Agreements. On latency ask, what
+is a target P95 or P99 latency.
+Is that measured end to end from users'
+point of view, or just for our service?
+On availability, ask about uptime. 99%
+uptime means you can be down about 3.5
+days per year, 99.9%.
+Which is called 3 9s, is around 9 hours
+downtime. 99.99, which is also called
+as 4 9s, is under 1 hour. Also asks,
+can the system degrade gracefully if
+something fails? For example, can we
+fall back to a baseline model or a
+cached result? Or if the functionality
+absolutely critical. These SLA
+constraints directly affect your design.
+You also need to understand traffic and
+data volume. Ask about QPS queries per
+second, about the averages, what's the
+peak, and example during sales events
+or evenings. A system that sees 100 QPS
+is very different from one that sees
+20,000 QPS.
+On the data side, ask how many events
+per day do we log, clicks, transactions,
+logs.
+How long do we need to retrain this
+data? 3 months, 6 months, or longer?
+This helps you estimate storage,
+processing time for offline jobs, and
+whether you might need batch, micro
+batch, or full streaming pipeline.
+In system design interview, you are not
+expected to be exact, but you should be
+able to do back of the envelope
+calculation or the capacity planning.
+For example, if PQPS is 1000 and a
+single instance can safely handle about
+100 QPS at the required latency, you
+will roughly need 10 instances. Then
+you might add headroom, say, double it.
+To handle bursts or failovers, getting
+to around 20 instances, you also or you
+should also reason about. The cost of
+the inference. Are you using CPUs or
+GPUs, and how many requests per second
+can each handle? The duration of bad
+jobs, can your nightly retrain
+comfortably finish within its window?
+Whether you need multi region set up.
+Active active across regions, or
+primary region with a backup? You don't
+need perfect number, but you do need to
+show this kind of quantitative thinking.
+Thank you.

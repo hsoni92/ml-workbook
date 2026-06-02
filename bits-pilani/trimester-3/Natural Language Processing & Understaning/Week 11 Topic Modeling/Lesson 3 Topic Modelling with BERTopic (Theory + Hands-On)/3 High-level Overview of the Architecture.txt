@@ -1,0 +1,56 @@
+Welcome back learners. Let's understand
+Bird Topic in much more detail by going
+over its architecture. So at a very
+high level, Bird Topic consists of
+three main steps. First is embedding,
+so which converts documents into dense
+word vectors. Then these embeddings are
+clustered based on their semantic
+similarity.
+Finally, topic representation. Which
+extracts representative words per
+cluster using TFIDF.
+So here's the architecture of Bird
+Topic. First, the base BIRT model is
+used to create word embeddings. Then
+these embeddings are passed to UMap.
+It's a dimensionality reduction
+technique.
+Very similar to PCA.
+So what it does is, it takes these
+embeddings and then converts it into
+smaller word vectors. It is then passed
+to something called a HDB scan.
+Should be HDB.
+Scan, which is used for clustering
+these embeddings.
+Right, so there may be. Three different
+topics, right? First embedding may go
+here.
+Second embedding may go here. 3rd
+embedding is very similar to this, so
+it will go to this topic. The 4th may
+go here. So on and so forth. So these
+embeddings are clustered using
+something called a cosine.
+Similarity
+These clustered embeddings are then
+passed to a TFIDF variant called CTFIDF.
+The C stands for clusters.
+Basically what it does is it calculates
+the same term frequency and inverse
+document frequency per cluster.
+Right, and this output is then passed
+to MMR just to optimise the output.
+Some of the smaller biopic variants
+does not even have MMR, so this is
+optional.
+However, it just enhances the output.
+Finally, we receive the output.
+For
+Bird topic.
+And that's the overview of the
+architecture of Bird Topic. We will
+understand this further when we
+implement Bird Topic in Python. Until
+then, thank you.

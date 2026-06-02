@@ -1,0 +1,55 @@
+Welcome to streaming for machine
+learning, events, topics and consumers.
+In the last video, we talked about
+batch and micro batch ingestion.
+Now, we will step into world of
+streaming, processing events
+continuously as they arrive. We will
+define what an event stream is,
+introduce terms like topics, producers
+and consumers. Place tools like Kafka
+Spark, Blink, Beam. Into a simple
+mental model.
+And connect streaming to real time
+machine learning use cases like anomaly
+detection and live recommendations.
+In batch and micro batch pipelines,
+data arrive as files or table
+partitions, yesterday's data, last hour
+datas.
+In streaming, we move to continuous
+flow of events, user clicks, payment
+transactions, sensor readings,
+application logs. Instead of asking
+what's inside this file, we are asking.
+What is happening right now, and we
+process events as they arrive. At the
+core of streaming is the idea of an
+event. An event is a small record that
+describes something that happened, when
+it happened, what type of thing it is.
+Like a click or a purchase?
+Who or what is involved? Such as a user
+or device. And some details like amount
+or URL.
+Some of the example events can be. User
+12 3 clicked Product A at 10:01 a.m.
+Sensor 45 reported 25 degree at 9:00
+a.m. Payment 987 was approved for $52.
+A stream is just a sequence of these
+events over time.
+Most streaming system use a few core
+concepts. A topic is a named channel or
+stream of events, like click events or
+transactions. Producers are service
+that publish events into the topic. For
+example, like web server might. Send
+click events. Consumers are services
+that subscribe to a topic and process
+the events.
+It's a many to many relationship.
+Many producers can write into same
+topic, and many consumers can read from
+that topic for different purpose, like
+monitoring, feature computation or
+analytics.

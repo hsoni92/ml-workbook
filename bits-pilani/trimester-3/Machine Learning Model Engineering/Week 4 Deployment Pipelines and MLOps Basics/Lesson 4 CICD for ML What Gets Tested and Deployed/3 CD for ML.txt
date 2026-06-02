@@ -1,0 +1,86 @@
+Now let's switch over to CD, what we
+actually promote.
+In machine learning, CD is not just
+deploying the latest image, it's
+promoting a specific model version
+along with its context. A promotion
+decision usually bundles. A model
+artefact The file or package containing
+the model weights. The metrics
+associated with that model, like AUC
+accuracy or business KPI measured on
+validation data. The associated code
+version and conflict. So we know
+exactly which training logic produced
+this model.
+CD then moves that model to a staging
+environment first and eventually to
+production, often via strategies like
+Canary or Bluereen. So continuous
+deployment or delivery for machine
+learning is really about answering
+which model plus code combination do we
+trust enough to promote to the next
+environment.
+A core part of CED for machine learning
+is the promotion rules, the gate that
+decides whether a model moves forward.
+Common rules include the model must
+meet minimum metric thresholds. For
+example, AUC must be at least around
+0.85, or error rate must be below some
+value. The model must beat the current
+baseline. On the key KPIs you care
+about. Data and fairness checks must
+pass, for example, large performance
+drop on critical user segment.
+And no obvious bias violations.
+If any of these rules fails, the model
+should not be promoted even if training
+technically succeeded. The shifts the
+mindset.
+From training finished to training
+produced a model. That actually
+deserves to be deployed.
+Many of team uses a moral registry to
+manage these promotion processes. A
+model registry lets you store different
+versions of each model, attach matrix
+and lineage to each version, track the
+stage of each model, typically
+something like none or archived,
+staging and production.
+A typical CD flow looks like when the
+pipeline finds a model that passes
+promotion rules. It registers the model
+and tags it as a staging.
+After traditional checks, integration
+tests are a successful canary run, you
+update that model's stage to production.
+This gives you a clear queriable answer
+to which model is running in production
+right now, which one is ready in
+staging.
+Which older ones are archived but
+reproducible?
+At the infrastructure level,
+What we actually deploy. Is usually a
+container image that wraps everything
+together. A typical ML serving image
+includes. The model serving code.
+For example, fast API or another
+framework, the model artefact, either
+baked into the image or pulled from
+registry to at a startup. The relevant
+config and environment that controls
+how service runs in CD once we have
+selected the winning model and code
+version. We build a container image
+that pairs them.
+Push that image to a container history.
+And then roll it out to a VM Kubernetis
+cluster or surveillance container
+platform. So the deployed unit is
+container plus model. And the CICD
+pipelines automate building and rolling
+out that unit. Thank you.

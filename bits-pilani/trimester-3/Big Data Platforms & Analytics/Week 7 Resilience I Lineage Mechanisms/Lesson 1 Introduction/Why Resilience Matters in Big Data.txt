@@ -1,0 +1,54 @@
+Welcome to Module 7. In this module,
+we're diving into one of the most
+elegant parts of Apaches Park's
+architecture.
+It's resilience. Our goal over the next
+several lessons is threefold. First, we
+want to understand distributed fault
+tolerance.
+We'll look at how Spark maintains
+stability in massive clusters without
+relying on the high IO cost of the
+traditional data application.
+Next Will define the lineage graph
+anatomy.
+You'll learn exactly what an RDD
+lineage graph is, and how it tracks
+operational history to ensure data
+integrity.
+Finally, We'll cover partition recovery,
+where we'll contrast the recovery
+complexity between narrow and wide
+dependencies.
+When things eventually go wrong.
+But before we get into the how, we have
+to talk about the why. Why does
+resilience matter so much in big data?
+When you're working with a cluster of
+1000 nodes or more.
+Node failure isn't just a possibility,
+it's a daily statistical certainty.
+Hardware breaks and in a massive
+environment, something is always
+failing in it. Beyond hardware, we have
+network partitions.
+These are transient outages that can
+isolate data right in the middle of a
+competition.
+Leaving your job stranded.
+But the biggest challenge here is
+distributed memory.
+Unlike HTFS, which stores data on
+physical disc, Spark works primarily in
+RAM. RAM is volatile. If a node loses
+power, that data is gone instantly.
+In the world of big data. We simply
+cannot afford to stop a multi hour job
+every time a single load hiccups.
+For us, cluster failure is not an
+option. We need a system that can heal
+itself on the fly.
+I'll see you in the further lessons
+where we'll deep dive into these
+concepts. Till then, happy learning and
+thank you so much.

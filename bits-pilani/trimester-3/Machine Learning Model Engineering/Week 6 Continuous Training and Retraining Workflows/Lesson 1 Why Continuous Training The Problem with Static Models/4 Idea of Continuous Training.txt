@@ -1,0 +1,18 @@
+How often should we retrain? There are
+2 main patterns, scheduled and event
+driven. Scheduled retraining is
+time-based, retrain every week, every
+month, or quarter. It's simple and
+works well when you have steady data
+and labels. Event driven retraining
+happens when drift monitors across
+threshold, performance drops below SLOs,
+or there is a major product or policy
+change. In practise, you often use a
+hybrid. A baseline schedule, so model.
+Don't get stale Plus, event driven
+triggers. That let you respond quickly
+when something unusual happens.
+Retraining is powerful, but it's not
+free. It can be expensive, and a rushed
+retrain can produce a worse model.

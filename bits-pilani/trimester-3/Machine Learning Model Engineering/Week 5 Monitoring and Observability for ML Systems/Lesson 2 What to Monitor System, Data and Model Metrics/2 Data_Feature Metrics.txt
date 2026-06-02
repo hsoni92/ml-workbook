@@ -1,0 +1,88 @@
+First layer, system and API health.
+These are the classic metrics you would
+monitor for any web service latency,
+like average, but specifically P95 and
+P99.
+They tell you what slow user actually
+experience. Errror rates 400 or bad
+requests, 500 server issues, plus
+connection timeouts, traffic requests
+per second, per endpoint.
+To see load patterns and spikes,
+infrastructure metrics, CPU and memory
+usage for your containers or VMs plus
+restart count, these metrics answers
+questions like is predicted function
+still responding quickly.
+Are we hitting resource limit under the
+load? ML System need these just as much
+as any other service.
+Layer 2 data health.
+The world As the model sees it. At a
+minimum,
+We want to track each important feature,
+schema and type.
+Are all expected columns present? Are
+there types what we expect? Basic
+quality, missing value, rate, min and
+max. And out of range values that
+shouldn't exist. Cardinality.
+For categorical features, did the
+number of distinct categories suddenly
+explode or collapse?
+Then we add simple drift indicators.
+Compare mean and standard deviation in
+production to what we saw during
+training.
+For mission critical features, compute
+a lightweight drift score like PSI over
+a recent time window.
+Watch volume if the number of daily
+predictions collapses. Or doubles,
+something changed.
+These metrics catch upstream data
+issues and business changes before they
+silently wreck model quality.
+Layer 3 starts with prediction and
+model performance metrics.
+Whenever you have ground truth labels.
+Even if they arrive later, you should
+compute standard machine learning
+metrics on recent data for
+classification, accuracy, precision,
+recall, F1 and AUC for regression, RMSE.
+MAE. Maybe R is squared.
+For ranking tasks, NDCG, MAP. And top K
+matrix.
+We also care about calibrations and
+thresholds.
+Are predictions are predicted
+probabilities still well aligned with
+observed frequencies? Has the threshold
+that maximises business value shifted
+over time? Critically, don't just look
+at overall performance, look at
+segments. Performance by country,
+product, device, or any other critical
+grouping. Segment level metrics are how
+much how you catch local failures that
+are invisible in global average.
+Still in layer 3. We go one level
+higher. Business and fairness signals.
+A model exists to move business KPIs,
+more revenues, more conversations,
+better fraud catch rates, lower churns,
+fewer manual reviews, less operational
+cost. You want at least a few basic
+KPIs hooked up so you can see whether
+model changes and data drift are
+actually happening
+or helping or hurting the business.
+And for fairness track, error rates are.
+Acceptance rates across key groups, and
+watch how those gaps changes over time.
+A model can have a stable AUC and still
+silently shift the distribution of who
+gets good or bad decisions. Business
+and fairness metrics are how you notice
+that.

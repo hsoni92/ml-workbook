@@ -1,0 +1,18 @@
+Finally, we will carry this mindset
+into the Model 13 labs and Capstone,
+where you will see a full architecture
+diagram and map all these pieces you
+have built.
+The fast API service and docker images,
+the ML flow experiments and model
+registry, the retraining and deployment
+logic, the monitoring and fairness
+check, you will practise telling the
+system story end to end.
+What the system does, how it scales,
+and how it behaves when things go wrong.
+If you can do that, you're well
+prepared for real world
+architectural discussion and system
+design interviews about machine
+learning systems. Thank you.

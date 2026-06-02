@@ -1,0 +1,30 @@
+To wrap up this video, we have seen why
+notebook only workflow are fragile and
+hard to reproduce.
+We defined an ML deployment pipeline as
+a sequence of automated steps that
+takes us from data to a deployed model,
+and we saw how pipelines help with
+repeatability, auditability, speed, and
+fewer errors, acting as the automation
+engine behind envelopes. In the next
+theory videos in Module 4, we will
+build on this foundation.
+Topic 2, we will compare MLOs pipelines
+to traditional CICD pipelines in
+software.
+Topic 3 we will dive into artefact,
+lineage, and reproducibility, how we
+track all the input and outputs. Topic
+4. We will show what CICD for ML looks
+like, what gets tested, what gets
+deployed, and when. Then, in the labs.
+You will see all of this in real
+repository, a training script
+instrumented with ML flow. A repo
+structure that fits nicely into
+pipeline, and a CI workflow that runs
+checks automatically on each changes.
+So keep this idea of pipeline in mind.
+Everything else in this module plugs
+into that core concept. Thank you.

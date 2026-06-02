@@ -1,0 +1,36 @@
+Welcome back, learners.
+In this lesson, we will understand what
+natural language processing is. So what
+is NLP?
+Natural language processing, or NLP, is
+the subset of computer science,
+artificial intelligence, and human
+language.
+Natural language processing is the
+field of artificial intelligence that
+focuses on enabling computers to
+understand, process and interact using
+human language. It basically enables
+machines to interact with humans using
+their own language.
+We must understand that human language
+is very complex. What makes it complex
+is that it is unstructured, ambiguous,
+and context dependent.
+And NLP bridges the gap between human
+communication and machine computation.
+What does NLP try to achieve at a high
+level? NLP aims to read and interpret
+text. Extract useful information.
+Generate meaningful responses from that
+text.
+Let's look at some examples of NLP in
+daily life. Search engines like Google
+and Bing, voice assistants like Siri.
+Email systems, filtering spam or not
+spam.
+Your next word prediction engines in
+your mobile phones and emails.
+Chat GPT and other LLM applications.
+That's all for this video. I'll see you
+in the next one. Thank you.

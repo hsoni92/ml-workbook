@@ -1,0 +1,26 @@
+Welcome back, learners. To the next
+lesson on TFIDF.
+In bag of words, we saw that common
+words like the, is, and dominate the
+accounts but carry very little
+information. TFIDF, which stands for
+term frequency, inverse document
+frequency, aims to downweight these
+common words and highlight the rare but
+more important words. It consists of
+two parts. TF, term frequency, which
+means how often a word appears in a
+single document. An IDF, inverse
+document frequency, how rare the word
+is across all documents in the text
+corpus.
+The formula for TFIDF is simple.
+To calculate TFIDF of a word, say X.
+The formula says term frequency means
+number of times X appears in a document
+into log of n, which is.
+Total number of documents.
+Upon DF, which is. Number of documents
+in which X appears.
+That's it for this video. I'll see you
+in the next one. Thank you.

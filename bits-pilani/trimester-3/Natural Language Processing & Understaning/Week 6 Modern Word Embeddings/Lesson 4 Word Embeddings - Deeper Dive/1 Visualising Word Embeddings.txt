@@ -1,0 +1,61 @@
+Welcome back, learners. Now that we
+have implemented 2 modern word
+embedding techniques, let's visualise
+word embeddings to understand it
+further.
+All right, learners, now let's
+visualise our word embeddings, and this
+will help us understand word embeddings
+a lot better.
+So what I've already done, just like a
+previous video, I have installed GNI in
+my environment, right? There are some
+imports, scaler or decomposition. I'm
+importing PCA for dimensionality
+reduction.
+Right? Along with that, I have my plot
+lib and number.
+Now I'm importing the GI downloader as
+API and from API I'm loading this
+pre-trained model, right, just like how
+we did in the last video.
+I've created a sample corpus, a list of
+different words that I want to
+visualise as per their word embeddings,
+right?
+Now, here is the main function for
+visualising our word embeddings. First
+things first, we create word embeddings,
+right?
+Then we do dimensionality reduction
+because we want to bring this high
+dimensionality word embeddings to the
+two dimensions so that we can plot them
+easily, right? So for that I'm running
+PCA and I've defined n components
+equals 2. So n components is number of
+dimensions, right?
+And here I have ran the fit transform
+on these vectors that we created
+earlier. Finally, I will plot it using
+PLT.figure. It's a scatter plot, right?
+And here I'm just adding some labels,
+right? Some titles and labels, etc.
+Let me run this function, let me run
+this as well, and this, and now let's
+finally visualise these word embeddings.
+Right? So you can see.
+That few words like fruit, orange,
+apple are very close by, right, because
+they are similar to each other. Other
+words like king, queen, woman, man,
+they are. Here in this different space
+but very close to each other. Similarly,
+words like car and bus, which are
+similar, are at a different space, very
+much close to each other, right? So I
+hope this makes you understand how
+different words are related to each
+other using word embeddings.
+That's it for this video, and I'll see
+you in the next one. Thank you.

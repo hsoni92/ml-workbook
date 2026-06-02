@@ -1,0 +1,68 @@
+One key concept is blast radius, how
+far an incident is spread when
+something goes wrong. We use name
+spaces or projects to group each
+tenant's service and config, and
+sometimes we go further and put high
+risk or VIP tenants on separate
+clusters clearly. For example, you
+might host some most internal teams on
+cluster one. And host VIP external
+customers or regulated regions on
+cluster 2. If tenant A's workload
+crashes cluster 1, cluster 2 keeps
+running. The idea is that each tenant's
+problem should have a limited blast
+radius, not bring down everyone else.
+To keep noisy neighbours under control,
+we set resource quotas and priorities.
+Each tenants get limit on CPU, memory,
+GPU, and sometimes on concurrency. How
+many requests or job they can run at
+once. We also assign priority classes.
+High priority tenants get resources
+first low priority batch jobs can be
+delayed, throttled, or even preempted
+when the cluster is under pressure.
+This enforces a kind of budget for each
+tenant, no matter how hard they push,
+their impact on others is bounded.
+Isolation is not just about compute,
+it's also about data and logs. In many
+setups, each tenants get separate
+storage spaces, their own buckets,
+schemas or databases. Access controls
+like RBC or IMs ensure that tenant A
+credentials cannot read Tenant B's data.
+Logs and metrics are also often
+segregated per tenant. That makes
+debugging easier and reduces the chance
+that sensitive information from one
+tenant appears in another tenant's log
+stream. This ties back to privacy,
+governance and audit trails from Module
+11, and feature governance from Module
+9. Multi-tenancy and responsible AI are
+deeply connected. Let's summarise
+Multi-tenancy means many teams or
+customers sharing one machine learning
+platform. The risks are noisy
+neighbours, broken SLOs, and potential
+data leaks. We manage those risks with
+SLOs per tenant, logical isolation
+through name spaces and clusters.
+Resource quotas and priority classes to
+control usage, and data and logging
+isolation to protect privacy and
+simplify audits. This connects back to
+monitoring in Module 5, retraining
+Trigger in Module 6, Feature and data
+governance in Model 9, and the security
+fairness work in Model 11. In the next
+video, Module 12 Topic 4, we will look
+at vector databases and retrieval
+augmented systems, which are by design,
+multimodal, and often multi-tenant. You
+will see how all these concepts can
+together in modern machine learning
+stack. Thank you.

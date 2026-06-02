@@ -1,0 +1,70 @@
+Welcome back. In the last module, we
+spent some time discussing the
+challenges of scaling. The why behind
+the difficulty of distributed machine
+learning. Now we are going to move into
+the how. How do we actually take a
+massive machine learning task? And
+slice it into pieces that can be
+handled by a cluster. There isn't just
+one way to do this, depending upon
+whether your data set is too big or
+your model itself is too big. You have
+to choose a specific architectural
+strategy.
+In this part of the module, we'll
+explore the two primary blueprints for
+scaling. First is data parallelism, and
+another is model parallelism. Let's
+start with the most common strategy.
+Which is used in the industry today.
+That is data panelism. This is a go to
+approach when your model is small
+enough to fit in on one single GPU's
+memory, but your data set is so large
+that training on one machine would take
+weeks or even months. The core concept
+here is sharding the data set. Instead
+of one machine looking at every single
+row of data, we split the data set into
+multiple shards or partitions. If you
+have 4 GPUs, let's say, each GPU is
+assigned a different shard. However,
+and this is a critical point. Every
+single worker node maintains a full
+copy of the model architecture. Unlike
+the data, modem is not split yet every
+GPU has the same layers. The same
+weight and the same configuration.
+So how does the training actually
+happen? Each node takes a mini batch
+from its specific shard of data. Each
+node performs a forward pass and a
+backward pass to calculate gradients
+locally. At this exact moment, the
+nodes are working independently, once
+the local calculations are done. The
+nodes must communicate. They aggregate
+their gradients, which is like
+essentially averaging them out to
+produce a single global update. Finally,
+that global update is applied to the
+model on every node, ensuring they all
+stay in sync for the next round of data.
+Data parallelism is incredibly
+effective, but it allows you to
+increase your effective batch size.
+Which can significantly speed up the
+convergence of your model on massive
+data sets.
+Data parallelism works wonders as long
+as that model copy can fit in a single
+GPU RAM, but what happens when the
+model itself is a behemoth like a
+modern large language model with
+hundreds of billions of parameters? For
+that we need a different strategy. In
+our next video we'll look at the model
+parallelism and how we split the
+network itself across devices. I'll see
+you in the next class.

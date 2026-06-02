@@ -1,0 +1,40 @@
+Let us put the patterns side by side
+and connect them to latency and cost.
+Vertical scaling is often the quickest
+way to improve latency for small to
+medium system. But bigger instances can
+become expensive and you eventually hit
+a technical limit. Horizontal scaling,
+with auto scaling. Is the standard way
+to handle spikes and high sustained
+traffic. Keep P95 latency more stable
+as load increases, but you must watch
+total replica counts and set good upper
+limit to control cost. What you choose
+depends on your stage, your traffic
+pattern and your budget.
+To wrap up this video, We looked at
+vertical scaling or scaling up,
+horizontal scaling or scaling out, and
+scaling where the system adjusts
+replica count based on metrics. We
+connected a scaling pattern back to
+latency, cost, and user experience. In
+the next theory video, Topic 3, we will
+zoom in on cost optimisation levers.
+Using spot or per impeable instance
+where possible.
+Using serverless inference for spiky
+and low throughput work load. And using
+batch to make GPUs more efficient. Then
+in topic 4, we will put everything
+together into a decision framework for
+real world scenarios. And in the labs
+you will compress a model, measure size,
+latency, and accuracy, and practise
+deciding whether a model fits better on
+the edge or in the cloud. Keep these
+scaling patterns in mind. They're the
+backbone of how production machine
+learning system stays fast and reliable
+as they grow. Thank you.

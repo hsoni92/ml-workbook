@@ -1,0 +1,18 @@
+Welcome back learners. Now that we've
+implemented sentiment analysis with
+both VDor from NLTK and BERT models,
+let's compare both.
+The VADA model is fast, it does not
+need heavy GPUs, and is interpretable
+or explainable. You can see the
+dictionary to explain your outcome. The
+VA model is best for social media
+monitoring.
+Whereas the BERRT is slower, requires
+heavy computation, and essentially is a
+black box, we do not know what happens
+inside. BERT, however, is best for high
+accuracy requirements, for example,
+automated support ticket routing. And
+that's all for this video. I'll see you
+in the next one. Thank you.

@@ -1,0 +1,78 @@
+Welcome back to Module 2, modal
+inferencing, batch versus online versus
+streaming. In this video, we're going
+to zoom in one of the first pattern,
+which is batch inference.
+By the end of this lesson, you should
+be able to clearly explain what batch
+inference is,
+recognise the kind of use cases where
+batch is perfect fit, and connect our
+inference matrix, latency, throughput,
+cost to this pattern. Think of this
+video as, when do I not need real time
+predictions, and how can I take
+advantage of that?
+Quick reminder from topic one and
+friends. Inference is just using a
+trended model to make prediction on new
+data.
+In this module,
+we are looking at 3 different patterns
+for doing that.
+Batch inference scores many items at
+once on a schedule. Online inference,
+one request, one response. Users
+waiting.
+Streaming inference, continuous events
+flowing through the pipeline. In this
+video, we are going to zoom in on batch.
+The key idea sometimes you don't need a
+model to respond right now for a single
+user. Instead, you have a big list of
+things to score. And you're happy as
+long as it's done by some deadline, say
+before business hours tomorrow.
+Let's start with a crisp definition.
+Batch inference means. You take a large
+set of input, thousands, millions,
+sometimes billions of rows.
+And run the model over all of them in
+one job. And you write the predictions
+somewhere, usually a database table, a
+warehouse, or a file.
+Time wise, this job runs periodically.
+Maybe once a day, once an hour, or
+every 15 minutes. And importantly,
+There is usually no human sitting there
+waiting on each individual prediction.
+You care that the whole job finishes by
+a certain time, but you don't care if
+one specific row took 50 milliseconds
+or 500 milliseconds to process, as long
+as the entire batch completes on
+schedule.
+Here is what a batch inference job
+typically looks like, end to end. First,
+we read input data.
+This might be a big CSV or perquet file.
+Or a table in a data warehouse, or a
+snapshot from a production database.
+Then, we preprocess and featureize each
+row. Apply the same feature engineering
+we used at training time. Handle
+missing values, encodings,
+normalizations and so on. Next, we run
+the model over all rows, sometimes row
+by row, more often in chunk or mini
+batches. And often in parallel across
+multiple courses or machines. Finally,
+we write predictions out, back into
+database, or to a file like
+predictions.csv. Or into a feature
+store for later use by online systems.
+The job has a clear start and a clear
+end. We care a lot about how long did
+this entire job take, did it finish
+before our operational deadline?
+Thank you.

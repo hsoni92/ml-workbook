@@ -1,0 +1,60 @@
+Welcome back learners. In this video,
+let's implement TFIDF and gain a deeper
+understanding. All right, learners, now
+let's implement TFIDF in Python. Again,
+you've understood the concept.
+Implementing it will further solidify
+your understanding and give you
+confidence, right? So let's go.
+First things first, let's import TFIDF
+vectorizer from Escalon.
+Escalon makes it very easy to create
+these kinds of embeddings for us, right?
+And then we import pandas for data
+frame handling.
+Here I've created a text corpus with
+three sentences. The car is fast, the
+race car is fast, and the car is parked,
+right?
+Let's also print this corpus.
+So our text data is ready now. The step
+one is to initialise the TFIDF
+vectorizer that we imported from
+Escalon.
+Right? So, let's further look into it.
+So you see, this variable TFIDF is a
+TFIDF vectorizer object.
+Cool Now let's fit and transform, right?
+So, which is training and transforming.
+Training on what the text data.
+All right, that's done. Let's also look
+at what this is.
+Again, it's a compressed sparse row
+sparse matrix of D type float.
+In the last lesson you saw that the D
+type was 1 because it was 012 the count
+of the frequencies, right here it's
+different, it's float with 13 stored
+elements of shape, 3 to 6. OK, let's
+see what it looks like.
+So here is our word embedding. This
+sentence, the car is fast, has been now
+converted into this sentence. And so on
+and so forth. Let's now convert it into
+a data frame to visualise it better.
+OK. It's missing something. Let me add
+the index as well. That
+is.
+Corpus.
+Perfect. Now we have our TFIDF matrix
+ready. So the car is fast, has been
+converted into this matrix. So 00.46,
+0.6, right? So car has been assigned
+00.46. However, The same word car has
+been assigned 0.36 in a different
+sentence, and in the third sentence,
+the same word car has been assigned
+0.41, right? So this is our TFIDF
+matrix.
+I hope you enjoyed this one. I'll see
+you in the next video. Thank you.

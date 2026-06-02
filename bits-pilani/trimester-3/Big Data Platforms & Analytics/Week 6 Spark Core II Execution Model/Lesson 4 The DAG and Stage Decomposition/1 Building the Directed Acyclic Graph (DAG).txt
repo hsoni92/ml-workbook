@@ -1,0 +1,71 @@
+We have reached a pivotal moment in
+Spark execution process. Now we know
+that Spark is lazy, and we know that
+actions trigger the work, but what
+exactly is the master plan that Spark
+creates during that waiting period?
+This plan is called directed acyclic
+graph, or the DA. As the name implies,
+it is directed because the data flows
+in one direction and it is acyclic
+because there are no loops. So on the
+slide, we see the four-step process
+that Spark uses to build this graph and
+prepare for execution. The journey
+begins with a logical plan. When you
+write your Python or Scala code, Spark
+doesn't see lines of text. It parses
+that. Code into an abstract syntax tree
+of operations. This is essentially a
+mathematical representation of your
+logic. At this stage, Spark knows what
+you want to do, but it hasn't decided
+how to do it yet. It just records the
+lineage, the sequence of
+transformations, right, which are
+required to produce a final result.
+Next, Spark converts that logical plan
+into a physical plan. This is where the
+Catalyst optimizer steps in. Spark
+evaluates several different strategies
+to run your logic. For instance, it
+might look at two different ways to
+join your tables and choose the one
+that minimises data movement across the
+cluster. The output of this step is a
+specific blueprint for execution
+detailing which algorithms will be used
+and how data will be accessed. Once the
+physical plan is set, the DAG scheduler
+breaks the graph into stages.
+This is where our knowledge of
+dependencies from Lesson 3 comes into
+play. The scheduler looks for shuffle
+boundaries, those wide dependencies
+like join or reductions. Everything
+between two shuffles is grouped into a
+single stage. This allows Spark to
+pipeline narrow transformations
+together, ensuring that data stays in
+memory as long as possible before it
+has to be moved across the network. And
+then finally we reach the task launch.
+The stages are further divided into
+individual tasks, which are the
+smallest unit of work in Spark. Each
+task corresponds to a single partition
+of data. And a set of transformations.
+These serialised tasks are then shipped
+out to the executors across the cluster
+for a parallel process. The driver
+monitors these tasks, and once they all
+are complete, your action finally
+returns its results. By building the DA
+in this structured way, Spark ensures
+your distributed job is as efficient
+and resilient as possible. In our next
+video, we'll take a closer look at how
+these stages and tasks are managed
+across the hardware of your cluster.
+Till then, happy learning. I'll see you
+in the next class.

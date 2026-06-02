@@ -1,0 +1,67 @@
+Welcome back learners. Now let's
+implement bag of words in Python and
+understand it more deeply. All right,
+learners, let's now implement bag of
+words in Python. While the overall
+logic is very similar to one hot
+encoding, it counts the frequencies of
+the occurrence of words. However,
+implementation is a little different.
+Let's explore that.
+So first things first, We will import
+Count Vectorizer from Escalon.
+Right now let's create our sample
+corpus. I've created a corpus, which is
+a list of three sentences again. The
+cat sat on the mat. The dog sat on the
+log. Cats and dogs are enemies, right?
+Just 3 random statements that I took,
+right? So let's print this. So our
+corpus is ready.
+Now let's implement bag of words. So
+first, what I'll do is I'll initialise
+the count vectorizer that I had
+imported from Escalon.
+So if you want to explore this further,
+let's implement this. The count
+vectorizer, uh, so vectorizer is
+nothing but a count vectorizer object,
+right?
+Now the next step is to fit and
+transform, right? So for that we will
+run fit transform on our data set which
+is called Corpus. So let's run this,
+right? So let's see what it looks like.
+It says X is an object that's
+compressed sparse row sparse matrix of
+type in with 15 stored elements and
+shape 3 to 12.
+I'll not delete it, but what I'll do is
+I'll convert it into an array so that
+it starts making sense to you. So it
+says the shape is 3 to 12 and the type
+is in. So you see all these entries are
+of type in, right, and the shape is 3
+to 12, 3. Into 123456789, 1011, 12,
+right? So what these essentially are.
+Are the word embeddings of these
+statements.
+Right, respectively. Let's convert it
+into a data frame so that you're able
+to better visualise and understand this.
+Right, so this array has been converted
+into a panda's data frame. So this
+statement, the cat sat on the mat has a
+word embedding of this. So it's
+basically a count of how many times
+this word occurs. So cat appears once.
+Matt appears once, An appears once, Sat
+appears once, the appears twice, the.
+And the Right?
+So this is your bag of words.
+Now what you need to do. You need to
+implement the same on your own data set,
+right, and this will help you
+understand it further.
+I hope you enjoyed this, and I'll see
+you in the next one. Thank you.

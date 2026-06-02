@@ -1,0 +1,91 @@
+Welcome back. So far we have learned
+that RDDs are resilient and distributed.
+Now we are going to look at the 3rd and
+perhaps most unique pillar of Spark,
+that is immutability. I'll show you a
+complete demo of RDD being immutable.
+So here we have on your screen a very
+basic Sy Spark online compiler. We will
+cover the nitty gritties of this code
+in the later lab section, but I just
+want to demo the immutability aspect of
+RDTs in Spark. OK, so line number 4 is
+we are creating a Spark session with a
+unique name. And then line number 5 is
+actually has created a spark context
+for us, and that variable is called SC.
+OK, so line number 8, if you see, right,
+we are creating a base RDD with these 4
+values or original prices, let's call
+them. And the name of this particular
+RDD is Base Prices RDD. OK, now we will
+try to make changes to this RDD and
+then see whether the original RDD
+changes or not, right? So now we are
+applying a transformation on this data.
+So since we have the original prices
+like 50, 100, 150, 200, like 4 values
+in this RDD, what we are trying to do
+is we are trying to apply a
+transformation where we are reducing
+the price by 10 for all the
+individual elements in the RDD. So now
+we have created a new RDD called
+Discounted prices RDD by reducing $10
+from each of the prices from the
+original one. Then we applied another
+philtre where we filtered all the
+prices, which are more than 100. OK.
+And then there's a 3rd RDD that got
+created. So now if you see in point
+number 5, we have 3 separate RDDs base
+RDD, discounted prices RDD, and the
+final RDD. OK. If I run the code,
+You'll see that original base prices
+this particular RDD remain the same. Uh,
+discounted prices was a new RDD that
+got created. And this is again 40 90
+140, 190. So this, this was a
+completely new RDD that got created.
+And similarly, the third one, if you
+see where we filtered for all the
+values which are more than $100 this
+new RDD got created. So if you see.
+The original one never changed because
+we printed the original ones after
+doing the transformation, but still the
+original one remained the same and the
+discounted prices also, uh, was never
+changed after that, right?
+Why does Spark force this rule? If
+creating new RDDs over and over seems
+like it would waste memory, Spark
+relies on this design for two critical
+reasons.
+First one is fault tolerance.
+Via lineage. So in distributed system,
+hardware fails constantly. If a worker
+mode crashes and loses part of the
+final RDD, Spark doesn't panic because
+the previous RDDs, let's say discounted
+prices RDD and base prices RDD, were
+never changed. Spark simply looks at
+the line edge. The blueprint printed in
+step 6 and reruns those specific
+calculations to restore the lost data
+and then zero concurrency issue is also
+one of the reasons why Spark does it.
+Imagine 50 different machines trying to
+read and update the exact same list of
+numbers. Simultaneously, you would need
+complex locks to prevent them from
+corrupting the data because RDDs are
+immutable. Spark doesn't need locks.
+Every node can read the data safely at
+the same time, knowing it will never
+suddenly change underneath them. In our
+next lesson, we will take a deep dive
+into partitioning to see how Spark
+actually breaks this data apart. See
+you there. Happy learning. Thank you so
+much.

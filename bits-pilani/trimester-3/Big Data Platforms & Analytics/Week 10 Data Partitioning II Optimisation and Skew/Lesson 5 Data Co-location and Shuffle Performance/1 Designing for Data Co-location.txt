@@ -1,0 +1,71 @@
+Welcome to lesson 5. So far we have
+looked at the ways to fix performance
+issues using salting to break up SKU or
+broadcasting to hide a shuffle, but as
+you advance in your data engineering
+career, you'll want to move from being
+reactive to being proactive. This
+brings us to the concept of data
+co-location. Instead of letting our
+data land wherever it wants and then
+moving it around later, we
+intelligently design our system so that
+data that is frequently joined together
+is physically stored or partitioned on
+the same nodes. From the very beginning
+itself.
+If the data is already in the same
+place, we don't have to shuffle it. So
+how do we actually achieve this? It
+comes down to a specific strategy
+harmonising your partitioners. Think
+about two massive data sets like orders
+and users. Normally these might be
+partitioned differently or have a
+different number of partition files. To
+co-locate them, you ensure that both
+data sets use the exact same
+partitioner. And this is the key. The
+exact same number of partitions. When
+you do this, Spark's hash logic becomes
+predictable. It ensures that a specific
+key like user ID 123 will always land
+in partition X. If both tables are set
+up this way, that user ID 123 from the
+orders table and the user ID 123 from
+the user's table will land in the same
+partition on the same machine during
+the initial load itself. Look at node 1
+because we designed for co-location,
+the orders from user 12 3 and the
+profile for the user 123 are already
+sitting on the same disc. When we call
+the join command, Spark actually looks
+at the execution plan and realises,
+wait, I don't need to send this data
+over to the network, right? I don't
+need to use the network. It's already
+here. As a slide says, the shuffle
+becomes a local-only operation. This is
+the holy grail of your joint
+optimisation. We have replaced a
+shuffle join with a shuffle less join.
+We have drastically reduced network
+traffic, removed serialisation overhead,
+and significantly lowered the risk of
+stuck at 99% problem that we have
+already discussed earlier. So data
+co-location is an advanced technique
+because it requires you to know your
+data access patterns ahead of time. It
+requires a bit more planning during
+your ATL phase itself, but the
+performance boost for downstream
+analytics is unparalleled. In our final
+technical video, we're going to wrap up
+by looking at how to verify if these
+strategies are working or not. We'll
+learn how to analyse shuffle matrix in
+the Spark UI to ensure your pipeline is
+as lean and as fast as possible. I'll
+see you in the next class.

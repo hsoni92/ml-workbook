@@ -1,0 +1,24 @@
+Welcome back learners to this lesson on
+topic modelling with Bird topic, but
+before proceeding with bird topic,
+let's understand why we needed to look
+for alternatives to LDA. Now LDA is
+very widely used in industrial
+applications, however, it has its own
+limitations.
+We saw that LDA assumes bag of words,
+which means. There is no context
+retained.
+LDA also ignores word order. And
+semantic similarity.
+Finally, LDA requires very careful
+tuning of topic count.
+LDA also struggles with a short amount
+of text copies, for example, your
+product reviews, tweets, etc. and LDA
+is also a very general purpose
+algorithm and struggles with highly
+contextual language. As NLP evolved,
+embedding-based methods emerged to
+address these limitations, so I'll see
+you in the next lesson. Thank you.

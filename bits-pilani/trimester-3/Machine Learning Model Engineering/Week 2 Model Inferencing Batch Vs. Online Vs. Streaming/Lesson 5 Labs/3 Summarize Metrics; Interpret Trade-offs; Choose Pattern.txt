@@ -1,0 +1,100 @@
+Well,
+Now that we have seen the results,
+let's recall what we learned from this,
+uh, inference experiments.
+OK. So, as we have already seen in the
+lab demo, we explored how inference
+throughput changes with different
+batching strategies, right? So, let's
+uh have a look, uh,
+To understand a uh practical question.
+When does batching help and uh when
+does it actually slow things down? So,
+our goal was to interpret the metrics,
+understand the trade-off, and, uh,
+learn how to choose the most efficient
+uh inference pattern, right?
+So, as we saw earlier, batch
+inferencing means processing multiple
+inputs together instead of one at a
+time, right? For example, in the demo,
+a batch size of 16 meant that 16 inputs
+were processed in a single forward pass,
+right? We also saw that text inputs
+have different lengths, and to process
+them together, padding was required so
+that all input in a batch had the same
+length. And uh padding enabled batching,
+but it also introduced extra
+computation, which became an important
+factor in our results, right?
+If we talk about the coal trade-off, as
+we demonstrated in the experiments,
+batch influencing involved a clear
+trade-off. On one side, batching
+increased parallelism and improved
+hardware utilisation. On the other side,
+padding added overhead due to extra
+tokens, right? And uh the performance
+depended on whether the benefit from
+parallelism was large enough to
+overweight the padding cost.
+So, when this balance was not achieved,
+batching actually reduced the
+performance, right?
+And uh if we talk about uh experimental
+results as uh
+We have already seen we processed
+thousands inputs using different batch
+size. And uh measured throughput in
+input per second, right?
+Sequential processing gave us a
+baseline throughput, uh, that is 16
+input per second. And uh bat size with
+16 and 64 showed clear improvements, uh,
+reaching 21 and 26 input per second
+respectively, right? However, we
+observed bat size to perform the worst,
+right? Even slower than the sequential
+processing.
+And uh if we talk about uh why larger
+batches perform better,
+So, as we demonstrated by batch size 16
+and 64, larger batches were able to
+spread the overhead across many inputs.
+So padding and setup cost were shared,
+reducing the cost per input. At the
+same time, hardware utilisation
+improved, leading to higher throughput.
+So this is why bat size 16 showed a
+significant improvement and batch size
+64 achieved the highest uh throughput
+in our experiment.
+And uh if we talk about how to choose
+the right bed size based on what we
+observed, choosing the right bed size
+was clearly a data-driven decision. In
+practise, the approach is to start with
+small batch size and gradually increase
+them while measuring throughput. So the
+optimal batch size is reached when
+throughputs stop improving or when or
+when memory limits are hit, right? As
+we saw, the best batch size depends on
+the model, hardware, and the Workload.
+What was the
+Optimal
+That sciences for us. It was 64 and uh
+it processed. 26 input per second and
+uh to summarise what we learned from
+the demo. Throughput was the key
+metrics for comparing inference
+patterns. A small bat size could
+perform worse than sequential
+processing. Padding introduced real
+overhead that was.
+That must be considered.
+Effective batching required tuning
+based on actual measurement. So these
+principles help ensure efficient and
+scalable model deployment.

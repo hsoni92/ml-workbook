@@ -1,0 +1,51 @@
+Welcome to offline versus online
+evaluation, backtest, shadow, and AB
+test. In Topic 1 and Topic 2, we talked
+about how to retrain and how to design
+a retrain pipeline. In this video, we
+will zoom in on one key challenge.
+How do we know a new model is truly
+better before we roll it out fully?
+We will contrast offline evaluation
+with online experiments, and we will
+walk through. Three tools back tests,
+shadow testing, and AB tests. By the
+end, you will know where it fits into a
+safe promotion strategies.
+First up, Offline evaluation. This is
+everything you do without touching live
+traffic. Train, validations. Test
+splits Cross validation, time based
+splits or backtest using historical
+data.
+The advantages here are, it's fast and
+it's cheap. You can try many candidates.
+And there is zero risk to real users.
+However, it has a limitation. It
+assumes the past looks like the future.
+Offline metrics also don't see the
+changes in user behaviour when you
+change the model. Product UX
+interactions are unexpected side effect
+in downstream system. So offline
+evaluation is necessary but not
+sufficient for high impact models.
+A powerful offline tool is backtesting.
+The idea is, take historical data. What
+user did, what decision we made, and
+replay it through a new candidate model,
+you ask.
+If we had used this model last month,
+How many fraud cases would have. Caught.
+How much revenue Would we have made
+How many users would have churned or
+stayed? This is a common risk,
+recommendations, and fraud. The caveat
+here is. It depends on how well you
+logged features and labels.
+And it still doesn't capture how users
+would have behaved differently if they
+would have actually seen those new
+decisions. Backtests are a great
+philtre before you even think about
+touching the live traffic.

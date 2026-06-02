@@ -1,0 +1,55 @@
+Welcome to designing a retraining and
+promotion pipeline.
+In Topic one, we discussed when it
+makes sense to retrain. Now we will
+focus on how to do it in a structured
+way.
+We will walk through The key stages of
+the retraining pipeline. How to compare
+a new candidate model to a current
+champion? And how to safely move models
+from offline experimentations into
+staging and then production.
+Here is the high level picture of
+retraining pipeline.
+Take a snapshot of data. And rebuild
+features. Train one or more candidate
+models.
+Evaluate those candidates against a
+baseline.
+Register the best model with all its
+metadata. Optionally, promote it to
+staging or canary, and, if it passes,
+promote it to production. Along the way,
+We log everything so we can produce and
+audit how each model was created.
+Stage one is all about data and
+features. We decide on a time window.
+Say that last 3 months off-label data,
+we pull that from our warehouse or
+feature stores.
+And we run the same feature engineering
+logic we use in production. The result
+is a training data set plus metadata.
+Which time period it covers. Which
+source tables or feature view were used?
+And ideally hashes are the version IDs.
+Treating this as first class artefact
+is critical for reproducibility. Later
+you will want to answer exactly which
+data produced this model.
+Stage 2. Is where we train candidate
+models. Instead of training just one,
+we often try different hyperparameterss
+or even different model types. For each
+candidate, we log which version or the
+code version and configs were used.
+Which data snapshots? And training time
+metrics like loss curves, tools like ML
+flow or similar experiment trackers
+help keep all this organised.
+So we can later say these 3 candidates
+were all trained at the same data
+snapshot using these different
+configurations.
+Thank you.

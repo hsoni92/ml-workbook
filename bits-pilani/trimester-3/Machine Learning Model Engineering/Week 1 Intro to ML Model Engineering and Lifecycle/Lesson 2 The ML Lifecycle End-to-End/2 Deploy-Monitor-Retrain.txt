@@ -1,0 +1,67 @@
+Stage 5 is deployment. This is where
+model engineering starts to become very
+central. Deployment means taking the
+trained model and exposing it so other
+systems can call it. That might be the
+online API for real-time predictions,
+or a batch job that writes output once
+a day. Integrating those predictions
+into the product experience, for
+example, a ranking algorithm. In a feed
+or a fraud score used by other service?
+Once we're here, we can't just think
+about accuracy, we must also care about
+latency, how quickly we respond, up
+time and reliability, how often the
+service is available, cost and security,
+how expensive and how safe it is to run
+the model at scale. This is where a lot
+of work in this course will focus. Once
+a model is deployed.
+We move to monitoring. Monitoring
+covers multiple layers. System health,
+we are in within latency target. Are
+error rates spiking? Is the service up?
+Data quality and drift? Are the input
+distributions changing? Are we seeing
+new categories, missing values, or
+unexpected pattern? Model performance,
+where we have ground truth or delayed
+labels, are our predictions still
+accurate over time? The goal is to
+catch issues earlier, ideally before
+users notice degraded quality. Without
+good monitoring, production ML systems
+tend to silently degrade. The last
+stage in the life cycle is retraining
+and depreciation. Over time, the world
+changes, user behaviour shifts, the
+model may start performing worse.
+That's model drift.
+To keep performance good. We need to
+retrain with fresh data, possibly with
+updated features or model architectures.
+In some cases, we may decide to
+deprecate a model. Maybe the use case
+is no longer important.
+Or the model's complexity and cost are
+no longer justified? By its benefits.
+Retraining and depreciation are part of
+keeping our ML system healthy and
+sustainable over the long term, so the
+life cycle is not a line, it's more
+like a loop. If we look at the life
+cycle as a whole, it's not a straight
+line, it's a loop. After we deploy a
+model, we monitor it in production,
+then retrain
+or update based on what we see. And
+deploy again. Feedback come from user
+behaviour, product metrics, and new or
+changed data. Successful ML systems are
+usually the result of many small
+iterations around this loop, rather
+than a single big launch. This loop,
+deployment, monitoring, retraining. Is
+where ML Model Engineering spends most
+of its time.

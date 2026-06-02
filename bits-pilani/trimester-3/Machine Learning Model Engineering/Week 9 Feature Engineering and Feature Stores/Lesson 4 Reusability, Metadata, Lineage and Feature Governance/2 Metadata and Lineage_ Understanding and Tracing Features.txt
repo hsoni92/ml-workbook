@@ -1,0 +1,38 @@
+Next, metadata. A feature stored
+typically keeps rich metadata for each
+feature, a clear name and description,
+including units, the owner or team
+responsible for it, the schema, data
+type, allowed values, and whether nulls
+are expected, freshness information,
+how often it's updated, and whether
+it's currently passing data quality
+checks. The usage
+The model and services it depends on.
+This metadata makes it much easier for
+other team to discover features they
+can trust, and it reduces the number of
+mystery columns being passed around the
+pipelines.
+Closely related to the metadata is
+lineage. The ability to trace where
+feature comes from and where it goes.
+Lineage answers questions like upstream,
+which raw table or event stream are
+used to compute this feature, and what
+transformations, joins and time windows
+are applied downstream, which models,
+APIs, or dashboards consumes this
+feature. This is crucial for debugging.
+If a feature value suddenly change, we
+can trace back to the upstream source
+or pipeline that might be broken.
+Impact analysis. If a data team want to
+change a table or a field, we can see
+what features and model will be
+affected. And regulatory audits, that
+needs to know how input flow into
+critical model. A feature store becomes
+a central place to capture this data
+lineage.
+Thank you.

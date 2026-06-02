@@ -1,0 +1,15 @@
+Welcome to Data Pipelines for Machine
+Learning. The big picture. Up to now,
+we have talked a lot about models
+sawing, monitoring and retraining. In
+this module, we zoom out to the data
+plumbing that feeds all of that. In
+this video, we will connect data
+engineering to the machine learning
+life cycle. Look at why a simple
+notebook is not enough in production,
+and introduce three ingestion modes
+batch, micro batch, and streaming. The
+core message is simple no data means no
+model, and bad data means bad model, no
+matter how fancy the architecture.

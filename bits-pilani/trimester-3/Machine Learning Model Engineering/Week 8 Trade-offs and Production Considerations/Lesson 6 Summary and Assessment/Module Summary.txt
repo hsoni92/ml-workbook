@@ -1,0 +1,25 @@
+To wrap up, in this video, we have
+framed production machine learning as a
+four-way tug of war between accuracy,
+latency, cost, and user experience. We
+have seen that a pure latency mindset
+is not enough. Lowering latency has
+both user and cost implications. And
+user experience is where all of these
+decisions become visible.
+In the next video of Module 8, Topic 2
+will cover scaling pattern, vertical
+scaling, horizontal scaling, auto
+scaling. Topic 3 will explore cost
+optimisation levers such as spot
+instances, serverless inference, and
+batching. Topic 4 will give you a
+decision framework to choose the right
+combination of model and infrastructure
+for different scenarios. Then in labs,
+you will compress a model, measure how
+size, latency, accuracy change, and
+practise deciding where that model fits
+best on the edge or in the cloud. Keep
+this 4 tug of war picture in mind. We
+will keep coming back to it. Thank you.

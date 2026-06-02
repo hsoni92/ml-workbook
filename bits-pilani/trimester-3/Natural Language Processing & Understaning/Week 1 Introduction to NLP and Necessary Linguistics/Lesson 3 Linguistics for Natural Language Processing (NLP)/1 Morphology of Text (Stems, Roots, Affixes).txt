@@ -1,0 +1,21 @@
+Welcome back, learners. Let's now
+understand morphology of text.
+What is morphology?
+Morphology is the branch of linguistics
+that studies the internal structure of
+words and their relations.
+Within NLP, morphology helps us
+understand how words are formed, how
+different words relate to each other.
+And why words appear in multiple
+variants. For machines, recognising
+these relationships is critical for
+reducing vocabulary size and improving
+generalisation.
+Why does morphology matter within NLP?
+For 2 basic reasons. Morphology
+directly motivates how the text should
+be treated for machine processing.
+And how the model looks at the text
+data and their internal relationships.
+That's all for this video. Thank you.

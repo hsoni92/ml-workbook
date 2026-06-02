@@ -1,0 +1,74 @@
+Welcome to Lesson 4.
+In our previous lesson, we saw how hash
+partitioning is excellent for
+scattering data. To achieve balance,
+but we also identify its problems.
+It's terrible for range based queries.
+If your business needs to analyse data
+within specific time frames or
+alphabetical segments, you need the
+strategy we're discussing today, which
+is range partitioning. This method is
+all about optimising for sorted data.
+And continuous queries.
+Instead of scrambling the data, we are
+going to organise it.
+Let's look at the mechanics on the next
+slide.
+Range partitioning works by dividing
+data into continuous, non-overlapping
+ranges based on a sortable key.
+The visual here Of the books on a shelf
+is the perfect analogy, just like a
+well organised library archive, arrange
+partitioning groups related items
+together. For example, if you are
+partitioning by a name.
+We might assign names starting with A
+through G to node 1, and H to P to node
+2, and Q to Z to node 3.
+Within each of these partitions, the
+data is typically sorted in a sorted
+format.
+This creates a predictable, structured
+map of your entire data set. Across the
+cluster. Why would we choose this over
+the random spread of hash? The answer
+is query efficiency.
+Imagine you run a query asking for all
+the records from March 1st to March 15.
+In a hash partition system, these
+records are scattered everywhere. So
+every node must be searched. But in a
+range partition system, the system
+looks at the metadata and says, Oh, I
+know exactly where those data lives or
+where those dates live.
+They're all on node 4, let's say.
+The system can then ignore all other
+nodes, query the only relevant one, or
+ones.
+This significantly reduces the IO
+overhead and makes chronological or
+alphabetical searches incredibly fast.
+However, while this sounds like a
+perfect system. It relies on one very
+dangerous assumption. That your data is
+evenly distributed across these ranges.
+In a library, if every author's name
+started with the letter S, the S shelf
+would break under the weight, while the
+rest of the library stood empty.
+This is the exact challenge we face in
+distributed systems. So range
+partitioning gives us the order and
+efficiency for sorted queries. But it
+introduces the risk of hot spots.
+So in our next video, we're going to
+look at the darker side of this
+strategy.
+Data skew and boundary issues. And how
+we handle dynamic ranges when the data
+doesn't behave as expected.
+I'll see you in the next lesson. Thank
+you so much. Happy learning.

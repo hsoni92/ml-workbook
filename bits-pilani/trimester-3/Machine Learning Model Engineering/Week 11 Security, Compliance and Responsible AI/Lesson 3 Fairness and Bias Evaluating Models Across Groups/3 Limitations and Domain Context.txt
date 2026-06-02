@@ -1,0 +1,55 @@
+A few important caveats. There is not a
+single universal fairness metric.
+You can talk about equal accuracy,
+equal false positive, equal false
+negative rates, equal calibrations, and
+more, and these definitions can
+conflict with each other.
+Trying to improve one fairness measure
+may cost you some overall accuracy or
+add complexity that affect latency or
+cost. And metrics alone cannot tell you
+what's acceptable. Deciding whether a
+3% gap or a 10% gap is OK depends on
+domain, stakes, policy, and regulation.
+So treat fairness numbers as a single
+or discussion and investigation, not a
+magic yes no verdict. So what's your
+role as model engineer? First. Make
+group wise matrics easy to compute,
+through script, notebook, or dashboards.
+If it's easy, people are more likely to
+do it regularly. Second, Flag large or
+surprising gaps early in the life cycle,
+not right before launch. Third,
+document which groups you evaluated and
+gaps you saw, and what decisions were
+made in response. This helps features.
+Teams understand the context and shows
+the fairness was considered. And
+finally, remember, you're not alone.
+Work with domain experts, legal, policy
+and product teams. Your job is to
+provide clear evidence and options, not
+to decide fairness in isolation. To
+summarise, fairness checks. Begin with
+group comparisons, same model,
+different group, same matrix. Don't
+stop at overall accuracy. Look at false
+positive and false negative rates,
+calibration and performance by slice.
+Use tables and visualisations to
+surface disparities so that everyone
+can see what's happening. recognise
+that fairness has multiple definitions
+and tradeoffs. Metrics are inputs to
+human decisions, not magic answers. In
+the upcoming Module 11 labs,
+we'll put this into practise, computing
+metrics per group, defining simple
+fairness thresholds, and logging those
+metrics as part of an audit trail that
+connects to monitoring and governance.
+This is a key step toward building
+responsible production grade machine
+learning systems. Thank you.

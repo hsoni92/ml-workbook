@@ -1,0 +1,88 @@
+Welcome to Module 11, Topic 4,
+Explainability, audit trials, and
+regulatory context. At some point,
+someone will ask, Why did the model do
+that? Maybe it's a user who was denied
+a loan, a business stakeholder, or a
+regulator. To answer that question, we
+need to be able to trace how data
+flowed through the system, which model
+made the decision, and what influenced
+that output. In this video, we'll see
+how explainability and audit trials.
+Work together
+as an accountability toolkit for
+production machine learning system.
+Explainability is about making model
+behaviour understandable enough that
+human can reason about it. There are
+two big flavours. Local explainability
+asks why did we get this prediction for
+this specific case.
+Global explainability asks. In general,
+what features or patterns drives this
+model's behaviour? Explainability
+supports debugging, building user trust
+and satisfying regulatory or internal
+review requirements. We don't need
+perfect transparency. But we do need
+useful, honest summaries of how the
+model works. Let's separate local and
+global explanations. A local
+explanation. Is about a single case.
+For example, for this loan application,
+income and repayment history
+contributed most to the decision.
+These are useful for user facing
+explanation, appeals, or support
+tickets. A global explanation
+summarises behaviour over many cases.
+For example, across the data set,
+credit history, debt to income ratio,
+and recent delinquency are the top
+drivers of risk. These are useful in
+model reviews, feature design
+and risk analysis. In production
+machine learning, you usually need both
+local explanation or specific decisions,
+and global explanations to understand
+and govern the system. Why do we invest
+in explainability? First, debugging and
+safety. Explanations can reveal strange
+dependencies, like a model relying
+heavily on postcode.
+Which might act as a proxy for
+something sensitive. Second, user trust
+and experience. When people get a
+decision, especially a negative one. A
+clear, honest reason helps. It can also
+guide them on what to improve or how to
+appeal. Third, internal and regulatory
+review. Stakeholders will ask.
+What's really driving these decisions,
+and is this aligned with our policies
+and commitments? Explainability gives
+you a way to answer. So explainability
+is not just nice to have, it's part of
+being a responsible system owner.
+A quick warning. Explanations are not
+magic truth machines. Many popular
+explanability methods provide
+approximations.
+They simplify complex models into
+something your brain or our brain can
+handle,
+which means they can oversimplify or
+mislead. Explanations are also only as
+good as the data
+and features underneath. If data is
+biassed, or features are proxies for
+sensitive attributes, a pretty
+explanation chart doesn't fix that.
+There is a risk of telling just so
+stories, explanations that sounds
+plausible, but gloss over deeper
+problems.
+So use explainability alongside domain
+expertise, fairness checks and sanity
+checks, not as a substitute for them.

@@ -1,0 +1,172 @@
+Welcome back, learners.
+Now that we've understood the flow and
+architecture of our application, let's
+now set it up in our local environment,
+right? So I will begin with GitHub.
+This is the homepage of my GitHub
+account. If you don't have a GitHub
+account, don't worry, you can simply
+create one or simply skip this part
+because GitHub maintenance is optional
+for you, but I highly recommend it, so
+I'm covering it as well. So I'm at the
+home page of my GitHub account, so
+homepage, right? What you need to do is
+create a new repository. So what you
+can do is go to repositories and then
+you'll find a button to create new
+repository, or you can just come here.
+There is a shortcut, click on this
+button new.
+And you will be able to create a new
+repository. Let's name our repository.
+Of course, genius AI, right?
+Not any random description for now, we
+will update it later.
+Um, so let's add. An LLM
+powered application that helps create.
+Quiz for students on their favourite.
+Subjects. OK.
+You can choose the visibility if you
+don't want to expose it to everyone,
+you can keep it private, but I'll keep
+it public, right?
+Click this to turn this toggle on. This
+is for add read me. This will add a
+readme.md file, right? Add a t ignore,
+so we need python.git ignored file,
+right? And as licence I will select MIT
+licence, right? MIT licence is nothing,
+it's just a very popular and industry
+standard for open source applications,
+right? Now once all this is set.
+I'll just click on create a repository.
+And my repository is done now. All the
+code that I will do in local, I will
+also push it here so that it's
+available for everyone else to view and
+collaborate, right?
+Now what I'll do is you can either
+download the zip and then extract the
+zip or
+simply copy this URL.
+Go to an empty folder that I've created
+for this capstone project. What I'll do
+is I will open terminal here.
+And I will do it. Clone and paste the
+URL.
+Right, so what it has done is it has
+cloned this project or this repository
+in my local, right? This is just us
+downloading it and unzipping it. Once
+this is ready, what I'll do is I'll
+open my IDE. That's my preferred IDE.
+If you have another preference, you can
+go ahead in that. That's not a problem,
+right? I will close copilot. And here
+is my application. OK, let me give you
+a quick walkthrough of the files that
+we have. We have a .git ignore file. So
+if at any point you do not want. One
+file to be uploaded or shared through
+your repository in GitHub. You can add
+the name of that file in this list. So
+when we selected Python, it has already
+added a bunch of default files that we
+don't want to expose, right? One file
+is of our interest, which is env. We
+will create this file and keep all our
+secret keys here. These secret keys we
+do not want to expose to everyone via
+our GitHub repository. Therefore, we
+will. Not uploaded. So let's create
+this file.env, right? I will add it
+inside, OK.
+So that was dot get ignore. We touched
+upon.NV. We will keep all our secrets
+or API keys here.
+licence is the MIT licence, which is a
+popular licence for open source
+projects.
+And read me. ReadM will have all the
+documentation for our application. So
+as we will go along, we will keep
+updating our Readme file, right? Readme
+file will also be reflected here.
+OK, so, Let's update this. Quiz genius
+AI.
+Is the project, let this be the.
+Let this be the description for now.
+Now, let's add the file structure,
+right? So.
+Quiz
+Genius
+AI, right, which is the folder name.
+Now under this folder we will have.
+Dot ENV file.
+We will have
+get ignore file. We will have the
+licence file. And we will have a readme.
+MD file right now. These are all the
+project related files.
+Now, let's go ahead and create the
+files for our application. One file
+will be for the front end as we saw in
+the architecture, right? One file will
+be for the back end. Right, and I think
+we can start with this. So we have
+front end, we have back end. Back end
+will deal backend file will deal with
+the Gemini LLM app, and front end will,
+will deal with the back end app. OK, so
+let's go ahead with this first, and as
+and when we will require something, we
+will update that. So my front end file
+will be called as app.pile, and my
+backend file I can name it quiz.
+Engine.pi. This will have all the main
+logic for our back end for the quiz
+generation and score calculation, and
+this will have everything related to UI,
+right? Our UI will be built in
+streamlet, OK.
+So
+That is just for your information we
+don't have to include it here, right?
+This is one way of representing the
+file structure. There is another way
+which is also very popular, so let me
+show that to you.
+Right, so this will show the branches
+very clearly. So this is the name of
+our root folder, Quiz Genius AI. We
+have the .NV file which will have the
+API keys and other secrets.
+One get ignore file, ignore secrets
+cache and ID files. Requirements.txt,
+right? We will have all the pinned item
+dependencies for our application. So
+let's create that file as well.
+Requirements.txt.
+Then quizine.pi is for backend.
+App.pi is for front end string. UI read
+me.md is this file in itself, right? So
+let me just verify if there is
+something missing licence file is
+missing. So let me add that.
+licence
+And let me copy. This
+Right.
+Perfect.
+All right, so I can remove this, and we
+can also call it project structure.
+Oops, project
+structure.
+So this is sorted. Now, let's create
+these files as well.
+Perfect. So our base project structure
+is ready and I will see you in the next
+video where we will start building the
+back end and the front end, right? I
+hope you're excited. See you on the
+other side. Thank you.

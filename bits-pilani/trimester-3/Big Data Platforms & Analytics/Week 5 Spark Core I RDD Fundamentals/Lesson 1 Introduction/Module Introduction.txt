@@ -1,0 +1,58 @@
+Hello everyone, and welcome to module 5.
+Up until now, we have discussed the big
+picture of Spark. But starting today,
+we're going to get under the hood. And
+look at the engine that makes
+everything run. We are diving into
+Spark Core, specifically focusing on
+RDDs, or resilient Distributed Data
+sets.
+If you look at the screen, you'll see a
+road map for this module. I want to
+take a moment to walk you through
+exactly what you'll be able to do by
+the time we finish these lessons. First,
+We're going to define what an RDD
+actually is. You'll hear this term
+constantly in the big data world. We'll
+explain why it is considered the heart
+of the Spark ecosystem and why it was
+such a game changer for processing data
+at scale. Think of this as what and why.
+Next. We'll move into the how. We're
+going to explore two very important
+properties. The first is immutability.
+And partitioning
+Immutability sounds like a fancy word,
+but it just means unchanging. It cannot
+be changed. We'll discuss why keeping
+data unchanging actually makes our
+system safer and easier to recover. If
+something breaks, partitioning is the
+secret to spark speed. We'll see how
+Spark chops up big data into smaller
+chunks so that many computers can work
+on it at the exact same time. Once we
+understand what they are, we need to
+know how to build them. We'll identify
+the two main ways to create an RDD
+paralysing existing data you already
+have in your code. Referencing external
+data sets, like pulling in a massive
+file from a cloud storage system or a
+local folder. Finally, we're not just
+going to talk about it, we're going to
+do it. We'll end the module with a
+hands-on session where I'll show you
+the actual Python commands used to
+create and view your very first RDDs in
+the PySpark shell. By the end of this
+module, you won't just know the theory
+of spark, you'll have the foundational
+skills to start building real
+distributed applications. So, if you're
+ready to see how Spark handles massive
+amount of data with ease, let's jump
+into the next lesson and look at the
+anatomy of the RDT. Thank you so much.
+Happy learning.

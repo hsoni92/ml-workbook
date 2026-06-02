@@ -1,0 +1,78 @@
+Welcome back. In our previous lessons,
+we identified that big data creates
+walls that traditional computers
+eventually hit. Today we are going to
+look at the first strategy most
+businesses use when they hit those
+walls, and that is vertical scaling,
+also known as scaling up. Think of
+vertical scaling like this.
+Imagine you are a delivery driver with
+a small scooter. As your business grows,
+you have one more package than the
+scooter can carry your natural instinct
+buy a bigger scooter, then a van, then
+a massive truck. You are still just one
+driver with one vehicle, but that
+vehicle is becoming so powerful in the
+world of servers. This means taking
+your existing machine and swapping out
+the parts for more RAM, a faster CPU,
+or a larger hard drive. Why is this
+great?
+Number one, it is easy. You don't have
+to change a single line of your code.
+The software still thinks it's running
+on one computer. That computer is just
+faster.
+2, low maintenance. You have 1 box to
+manage, 1 operating system to update,
+and one set of security rules.
+So if vertical scaling is so easy, why
+don't we use it for everything, right?
+This is where we hit the industry
+bottleneck, as discussed in the earlier
+lessons. In big data, we often deal
+with petabytes of data. There is no
+truck in the world big enough to hold a
+whole mountain, right? Eventually you
+hit the three major problems. Number
+one, the price wall. Moving from 16 GB
+to 32 GB of RAM might cost you an extra
+$20 a month, but moving from 1 TB to 2
+TB or specialised high performance RAM
+might cost you $20,000. The cost
+doesn't go up in a straight line, it
+explodes.
+Then the hardware wall, you eventually
+reach the physical limit of the
+motherboard. You literally cannot plug
+in more RAM or more CPUs because there
+is no more slots.
+And then the risk wall. This is a
+single point of failure. If your one
+super server has a power supply failure,
+your entire multi-million dollar
+business goes dark. One driver, one
+truck. If the truck breaks, the
+delivery stops. So what's the solution?
+Industry experts use vertical scaling
+as a short term fix. Or for specialised
+tasks, if you're a small business where
+high availability isn't a life or death
+matter. Or if your data set fits
+comfortably in memory, scaling up is
+your best friend, because it keeps your
+software simple, but if you are a
+company like Netflix or Uber or Google,
+where data never stops growing, you
+eventually have to stop building a
+bigger truck. And start building a
+fleet of vans. In our next video, we'll
+explore that fleet-based approach,
+which is horizontal scaling. But for
+now, remember, vertical scaling is
+about making the individual stronger,
+while big data is eventually about
+making the group work together. See you
+in the next lesson. Happy learning.

@@ -1,0 +1,76 @@
+Welcome back. In our previous video, we
+introduced the idea that lineage can
+become a liability.
+But in this lesson, we're going to get
+into the technical why.
+Specifically, we look at the
+performance and stability constraints
+that arise when we push sparks
+dependency.
+Tracking to its absolute limits.
+When we talk about long linear chains,
+we aren't just talking about a few
+extra stages. Repeat, we aren't just
+talking about a few extra stages.
+We are talking about complex iterative
+processes, where the family tree of our
+data becomes so massive. That the
+system itself begins to buckle.
+Let's look at the next slide.
+One of the most common and frustrating
+errors encountered in large scale spark
+job. Is a stack overflow error.
+Why does this happen? Think about how
+Spark handles serialisation. When the
+Spark driver needs to send a task to an
+executor. It has to serialise the RDD
+object. Because
+an RDD holds a reference to its parent,
+right, which holds a reference to its
+further parent, and so on.
+This serialisation process is recursive.
+When you hit a recursive lineage depth
+of 100 or more, which is like very
+common in iterative algorithms like
+graphics or machine learning. The JVM's
+call stack literally runs out of space.
+The driver simply cannot finish
+describing the RDD's history before it
+crashes.
+This is particularly prevalent in
+algorithms like page rank or
+alternative list squares, also called
+as ALS. In these scenarios, the state
+of data is updated 100s of times.
+Each iteration adds a new layer to the
+lineage.
+Even if you don't hit a hard crash,
+you'll face severe performance
+degradations.
+Every time a task fails, Spark must
+traverse the entire family tree. To
+find the root of the data.
+This leads to excessive CPU overhead.
+The drivers spend more time calculating
+dependency than scheduling the actual
+work.
+The latency spikes, so task recovery,
+which should be a quick fix, suddenly
+turns into a massive recomputation
+effort.
+That can stall your entire pipeline for
+minutes or even for hours.
+So just to summarise the limits of
+memory.
+Aren't just about much data you can
+store, they're about how much metadata
+the system can manage or handle. So if
+your line edge is too long, your job is
+a ticking time bomb. In the next video,
+we're going to learn how to break the
+family tree using strategic truncation.
+We'll see how checkpointing acts as a
+stability anchor to stop this recursive
+growth in its tracks.
+So I'll see you in the next module.
+Thank you so much. Happy learning.

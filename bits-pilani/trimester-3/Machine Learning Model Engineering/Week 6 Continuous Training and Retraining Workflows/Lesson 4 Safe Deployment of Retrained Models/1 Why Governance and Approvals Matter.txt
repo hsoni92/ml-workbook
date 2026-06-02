@@ -1,0 +1,45 @@
+Welcome to governance and safety,
+approvals, rollbacks and guard rails.
+We have now designed retraining
+pipelines and evaluation strategies.
+The last piece is how do we keep all of
+this safe and controlled as models and
+team scale. In this video, we will look
+at how approvals and ownership works
+for model changes.
+How to design robust rollback plans,
+and some common guard rails and
+policies that make machine learning
+deployment safer and more predictable.
+Why do we need governance at all?
+Without it, you end up with. Silent
+model changes in production, no clear
+owner when something breaks, and
+painful questions like who approved
+this, and which model live last Tuesday.
+Governance is not about showing
+everything down for fun, it's about
+accountability, knowing who owns and
+approves the changes, traceability.
+Being able to reconstruct what happened
+and why, and controlled risk, making
+sure big changes get proper review,
+especially in regulated or high impact
+domains. This is nonnegotiable. The
+first governance pillar is approval and
+change management. For each important
+model, define a model owner or owning
+team. And specific honours for major
+architectural changes, promotions to
+productions. And where relevant
+fairness or ethics reviews. In practise,
+approvals often happen through pull
+requests that includes a summary of a
+new model and its metrics, change
+tickets that link to model registry
+entries, experiment results, and AB
+test outcomes. The key is that
+promoting a model is not an invisible
+push to main, it's a visible,
+reviewable change with clear yes from
+right people.

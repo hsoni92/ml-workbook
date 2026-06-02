@@ -1,0 +1,67 @@
+Hello everyone.
+You remember that we discussed. RDD
+lineage map and the DAG scheduling of a
+particular example that we discussed
+where we were processing sales and
+products data and try to find out total
+sales amount per category. Now let's
+dive deeper into that same walkthrough
+and understand some more concepts and
+stages behind the Spark execution.
+So as we know that Spark is fault
+tolerant. If a partition is lost, Spark
+checks the lineage. It sees exactly
+which parent data is needed to recomput
+just that missing piece, without
+actually restarting the whole job.
+Right, so in real cluster, Spark would
+basically reque just the failed task
+set, and that's it. That's how it is
+fault tolerant.
+In pipelining, as we know, narrow
+dependencies like map philtre are fused
+in a single stage. Spark executes them
+in one pass per record, avoiding any
+kind of disc input output. And then the
+optimisation.
+The DAG scheduler actually realises
+that sales branch and products branch
+are independent. It launches tasks for
+both of them in parallel just to
+maximise the cluster usage.
+Now if you just want to visualise how
+the shuffle actually happens, right,
+and why we kept on saying that wide
+dependencies are expensive.
+They are expensive because they involve
+shuffle, and data is physically moved
+across different networks to group all
+the keys together.
+If you see the condition of stage one,
+which is An independent processing one,
+right? Executors working on their own
+local data partitions. So here you see,
+right, each partition will be roughly
+equally divided by the spark cluster.
+But the moment you hit A network
+shuffle stage, right? So if we hit the
+shuffle state, you see, partition 2 has
+become very skewed, right, because data
+is sorted and transferred over the
+network so that all the electronics
+category data is sitting in one
+partition.
+Right? And since we know in the real
+world, keys tend to be more popular
+than the other keys, right? So that's
+why the SKU problem comes in.
+So data is sorted and transferred over
+network, so all electronic records end
+up on the same note, and that is why.
+Why dependency is so costly?
+I hope you were able to get some
+concepts, deeper concepts of how
+actually Spark executes any particular
+job.
+I'll see you in the next modules. Thank
+you so much. Happy learning.

@@ -1,0 +1,87 @@
+In our last lesson,
+We talked about the price of scaling
+out. We realised that when we split our
+data across a cluster, we're no longer
+dealing with a single perfect machine.
+Instead, we're dealing with a web of
+computers connected by a network. Today
+we're going to look at why many big
+data projects fail before they even
+start. It's because of a list of myths
+known as the fallacies of distributed
+computing.
+These are common sense things that
+developers assume are true, but in the
+world of distributed systems, they are
+dangerous lies. Fallacy number one. The
+network is reliable. The biggest
+mistake we make is assuming the network
+is reliable. On our laptop, when you
+save a file to your hard drive, it
+works 99.999% of the time. But in a
+cluster, a message has to go through
+wires, routers and switches. Think
+about a busy city during a rainstorm.
+Roads get flooded, traffic lights fail,
+suddenly your delivery truck can't get
+to the destination. In a data centre,
+cables can be accidentally unplugged,
+or a switch can overheat. If your code
+assumes the message always arrives,
+your system will crash the moment there
+is a tiny glitch. You must design your
+system to expect that the message will
+be lost. Fallacy number 2 and 3,
+latency and bandwidth.
+Next are the twins of performance.
+Latency is 0 and the bandwidth is
+infinite. On a single computer. Moving
+data from memory to CPU is nearly
+instantaneous, but in a cluster,
+sending a request to another nodes
+takes time. This is latency It's a
+difference between asking someone in
+the same room for a pen versus sending
+a letter across the country to ask for
+one. If the letter travels fast, the
+round trip takes time. Bandwidth is
+about how much data you can fit through
+a pipe at once.
+Many people think we have fibre optics,
+so bandwidth is infinite. But imagine a
+giant water pipe. No matter how big it
+is, if you try to push the entire ocean
+through it at once, it'll burst. In big
+data, if you try to move a petabyte of
+data across the network for a simple
+calculation. You will clog the system.
+This is why we learned about data
+locality in Module I, because bandwidth
+is precious.
+The other fallacies involve assuming
+the network is secure. That the
+topology doesn't change, that there is
+only one administrator. In reality,
+networks are messy and constantly being
+hacked, servers are added and removed
+daily. The topology changes. Different
+teams manage different parts of the
+network.
+Meaning, no one person has the master
+key, assuming things are simple and
+clean led to systems that are fragile
+and impossible to fix.
+When things inevitably go wrong. So
+what is the key takeaway for this? To
+be a successful big data architect, you
+have to be a bit of a pessimist. You
+have to assume the network will fail.
+The latency will be high, and the
+bandwidth will be limited. In our next
+video, we'll look at how we build
+systems that survive these fallacies by
+defining partition tolerance. We'll
+learn how to keep the system running
+even when the roads between our servers
+are completely blocked. I'll see you
+there. Thank you so much.

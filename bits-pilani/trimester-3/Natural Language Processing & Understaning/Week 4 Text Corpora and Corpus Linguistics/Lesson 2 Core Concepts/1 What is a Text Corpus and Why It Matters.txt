@@ -1,0 +1,74 @@
+Welcome learners. Let's go through some
+core concepts before we get into hands
+on implementation.
+So what is a text corpus? In natural
+language processing, a text corpus is a
+large, structured collection of text
+data used to study, analyse and model
+language. So what is the size of a
+corpus? A corpus is more than a single
+document.
+More than a folder of text files.
+And the corpus is carefully collected
+to represent language usage. Let's look
+at some examples of text corpus. A
+collection of books can be a text
+corpus. A popular example is the
+Gothenburg corpus. News articles across
+categories can also be a text corpus,
+brown corpus being a popular example.
+Movie reviews with labelled sentiment
+for sentiment analysis can be a text
+corpus. Question answer pairs used for
+comprehension tasks, or QA modelling
+can also be a text corpus. So when we
+say we train an NLP model, what we
+really mean is that we train a model on
+a text corpus.
+Let's understand this further. A
+document is a single unit of text.
+Example of document.
+One book, an article, a review, whereas
+Corpus is a collection of documents,
+500 books, a million reviews. Finally,
+a data set. A corpus that is organised
+for a specific task, often with labels,
+is called a data set,
+example sentiment analysis data set,
+NER data set, and so on.
+Finally, In natural language processing,
+corpora provides language, whereas data
+sets provide supervision. What's the
+importance of text corpus in NLP? NLP
+systems do not understand language the
+way humans do. Machines only understand
+zeros and ones. They learn patterns,
+statistics, and distributions from
+these text corpus. Everything we do in
+natural language processing depends on
+the corpora. For example,
+TFIDF depends on word frequencies. Word
+embeddings depend on word cooccurrence.
+Topic models depend on document word
+distributions.
+And language models depend on sequence
+patterns. The bottom line is Any change
+in corpus? Will change the model's
+behaviour. Remember, garbage corpus
+will lead to a garbage model. And so
+goes the famous saying.
+Garbage in, will lead to garbage out.
+Here M represents the model.
+Human language is more statistical and
+not rule based. Traditional linguistics,
+whereas modern NLP focuses on usage
+patterns, for example, the word bank
+could mean. A river bank or a financial
+bank? Models disambiguate meaning not
+from rules, but from how the words
+appear together, how frequently they
+appear. And the context in which they
+appear, all of this comes only from the
+corpus.
+That's all for this video. I'll see you
+in the next one. Thank you.

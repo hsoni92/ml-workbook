@@ -1,0 +1,48 @@
+The 3rd pattern is serverless or
+function as a service. In this approach,
+you package your model code as a
+function.
+A cloud provider manages the underlying
+servers and scaling for you.
+The function can be triggered by an
+HTTP request, a message in a queue, a
+scheduled event, or just other event
+resource. This can be very attractive
+for spiky workload where traffic is
+unpredictable, low or medium traffic
+where you don't want to pay when your
+servers are ideal.
+Simple models, or lightweight inference
+task, you get automatic scaling up or
+scaled down.
+And you pay mostly for actual usage
+rather than preprovisioning capacity.
+Server list has its own
+set of pros and cons. Some of the pros,
+like auto scaling is built in. If the
+traffic spikes, more function uh
+instances it spins up. When traffic
+goes down, they spin down.
+You generally pay per use. Which can be
+very cost effective for low or bursty
+traffic. You don't have to manage
+servers or VMs, the cloud provider
+handle handles that.
+Constraints we have few. Cold start. If
+your function hasn't been called for a
+while, the first call can be noticeably
+slower.
+There are time and memories limit per
+invocation, which can be tricky, or
+heavy models for heavy models or long
+running inferences. Packaging limit.
+Every large model or many heavy
+dependencies may not fit comfortably
+into single function package as a sous.
+So surveillance is best for non-latency
+critical APIs where occasionally. Extra
+milliseconds are acceptable. Simple
+stateless entrance logic, prototypes or
+event driven machine learning logic
+with or like a web hook or small
+automation tasks. Thank you.

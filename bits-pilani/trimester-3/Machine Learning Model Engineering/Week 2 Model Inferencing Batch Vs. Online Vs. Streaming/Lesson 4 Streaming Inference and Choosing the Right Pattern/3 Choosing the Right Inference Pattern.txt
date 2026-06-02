@@ -1,0 +1,76 @@
+Why would we choose streaming given
+that it adds some complexity? First,
+near real-time reaction. Streaming lets
+us react quickly to new events, not
+just once an hour or once a day. That's
+powerful for catching problems early or
+seizing short-lived opportunities.
+Second, continuous views of behaviour.
+Instead of looking at static snapshot,
+we see how things change over time.
+That's specifically useful for
+understanding user journey, system
+dynamics, or temporal pattern. Third,
+better temporal context. Models can
+incorporate sequence of events, not
+just a single row, to detect pattern
+like unusual login behaviour, or
+suddenly shift in usage. Streaming
+plays really well with event driven
+architectures. System where events and
+logs are the primary source of truth.
+And where reacting quickly to those
+events creates values. Of course,
+streaming inference is not free, higher
+complexity, you often have to learn and
+operate system. Processing frameworks.
+Deal with concepts like stateful
+operators, windowing.
+Checkpoints and watermarks,
+operationals overhead. Job runs
+continuously, so you have to monitor
+lag, failure rates, resource usage over
+time.
+You also need strategies for restart
+and replay when something goes wrong.
+Debugging is harder. Bug can depend on
+timing, ordering, or rare sequences of
+event. Reproducing those in a test
+environment can be more challenging
+than replaying a batch file, and,
+importantly, streaming is not always
+necessary. If your data changes slowly,
+or if daily or hourly batches run are
+perfectly fine.
+Then a full on streaming setup might be
+a overkill. So streaming is powerful,
+but you should use it when the problem
+genuinely demands it, not just because
+it sounds cool. Let's step back now and
+build a simple decision guide. Question
+1, do you need subsecond response to a
+specific user action? If yes,
+You are most likely in online inference
+territory. A user clicked a button, a
+system called an API, and it can't move
+forward without the prediction.
+Question 2, are you processing millions
+of rows or entities on a schedule, and
+no one is waiting per row? If yes,
+that's a strong signal for batch
+inference. You care about finishing
+before a deadline, not about the
+latency of individual predictions.
+Question 3, do you have a continuous
+stream of events, and do you want to
+react quickly as they come in? If yes,
+that's where streaming inference shines.
+You are now answering one of user
+requests.
+You're reacting to a live event stream.
+You can almost think of it as.
+Who is waiting? How fresh do
+predictions need to be?
+How much data, and how often do we need
+to process it? Your answers to those
+questions drive the patent choice.

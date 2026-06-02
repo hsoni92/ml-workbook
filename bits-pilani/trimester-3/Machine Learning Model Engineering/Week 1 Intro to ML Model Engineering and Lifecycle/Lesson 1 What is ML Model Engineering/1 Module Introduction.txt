@@ -1,0 +1,14 @@
+In this video, we're going to talk
+about the machine learning model
+engineering actually is. You might
+already know how to train models in a
+notebook, but there's a big gap between
+cool notebook and a system that real
+users depend on every day. By end of
+this session, you should be able to
+clearly define machine learning model
+engineering, how it's different from
+just training a model. And list the
+main responsibility of someone in a
+model engineering role. This will set
+the foundation for rest of the course.

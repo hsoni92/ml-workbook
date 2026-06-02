@@ -1,0 +1,37 @@
+We will start with Feast, an open
+source feature store that many teams
+use as a starting point or as a
+conceptual reference. In Feast, you
+define features in Python or YAML,
+specifying entities, features, views,
+and the source table. Feast connects to
+your online store, a warehouse, or data
+lag. And build offline feature stable
+used in training. And it connects to an
+online store such as Radis or similar
+key value stores, where it pushes fresh
+feature values for serving. Feast is
+great as mental baseline. If you
+understand the feast pattern, most
+other feature stores will feel familiar.
+Here is the conceptual workflow in
+feast simplified. Step one. You define
+features in code or YAML as feature
+view, specifying the entities, the time
+column, and the source table. Step 2,
+you materialise offline features by
+running jobs that read from your data
+warehouse and write historical feature
+tables, which you then use for training
+through an API like Get Historical
+Features. Step 3, you materialise
+online features by pushing the latest
+features values into an online store,
+such as Radis.
+Your serving code calls something like
+get online feature with entity ID to
+fetch them.
+The important idea is that both offline
+and online views are computed from same
+feature definition, reducing training
+serving SKU.

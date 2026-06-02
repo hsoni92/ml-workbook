@@ -1,0 +1,14 @@
+Welcome to feature engineering in
+production, more than just a notebook.
+In this video, we will briefly recap
+what feature engineering looks like
+when you are just working in a notebook.
+Then we will see how things change when
+the model has to run in production. Our
+main concept today is training serving
+skew, when features are computed one
+way during training and slightly
+different way during serving.
+Your production model quality degrades
+even though the offline matrix looked
+great.

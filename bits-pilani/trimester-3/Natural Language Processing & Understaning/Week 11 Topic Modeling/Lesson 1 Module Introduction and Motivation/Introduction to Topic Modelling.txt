@@ -1,0 +1,101 @@
+Welcome back, learners, and let's now
+begin module 11, which is all about
+topic modelling. So what is topic
+modelling, you may ask. So topic
+modelling is an unsupervised machine
+learning technique used to discover
+hidden themes or topics in a collection
+of documents. It is also used to
+organise large volumes of text and to
+understand what a corpus is all about
+without manually going through it and
+manually labelling it, right. A topic
+typically represents a group of words
+that frequently occur together.
+Each word having a certain probability
+within that topic or theme. For example,
+there may be a text corpus with words
+like software, data, system, network,
+algorithm, and the algorithm may label
+it as technology, right? So let's look
+at this example. There is this text
+document which has 3 different themes
+or 3 different topics tourism,
+facilities, and feedback. And what are
+the words that are associated under
+each topic? They are monuments,
+adventure, hiking, scenic words like
+these under the topic tourism. Then
+there are words like restaurants,
+transport, hotels,
+under the theme facilities, and then
+there are words like great, good, bad,
+awesome, under the theme, feedback. So
+this one document has 3 different
+distinct topics, right? So you may ask
+why do we need topic modelling. And to
+let you know, topic modelling is very
+widely used in industrial practise.
+Modern applications generate a massive
+amount of text and by minute and by
+second. It can be news articles,
+research papers, customer reviews,
+social media posts,
+manually going through all of these
+text data and categorising them as per
+their theme is impractical.
+Therefore, we need a technology like
+topic modelling which helps us to
+summarise large documents collections,
+identify recurring themes.
+Group similar different documents
+together as per their theme and support
+downstream tasks like search and
+recommendation. Topic modelling mainly
+answers the question What are the main
+themes present in this text corpus? Now
+let's also quickly see some of the
+differences between text classification
+and topic modelling.
+Text classification is a supervised
+machine learning technique, whereas
+topic modelling is an unsupervised
+machine learning technique.
+Because it is supervised, text
+classification requires labelled data.
+And on the other hand, topic modelling
+being an unsupervised technique does
+not require labelled data. Within text
+classification, output classes are
+predefined.
+Within topic modelling, topics are
+discovered automatically, without any
+predefinitions. A popular example of
+text classification is spam versus non
+spam of emails and messages, right?
+A popular example within topic
+modelling is uncovering different
+themes in news articles.
+The key difference being. Text
+classification assigns documents to
+known categories, unlike topic
+modelling. And topic modelling
+discovers unknown structure within the
+text data. Finally, let's see some
+common use cases of topic modelling.
+They are document clustering, where we
+need to group similar different
+documents based on their recurrent
+themes. Exploitatively data analysis.
+Which means to understand a new corpus
+very quickly. We can run a topic
+modelling on that and quickly get a
+sense of what theme the text document
+is talking about, trend analysis, which
+tracks how topics evolve over time.
+Information retrieval, which improves
+search by topic-based indexing. Finally,
+content recommendation, which suggests
+articles or documents with similar
+topics. And that's all for this video.
+I'll see you in the next one. Thank you.

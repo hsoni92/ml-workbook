@@ -1,0 +1,283 @@
+Welcome back, learners. In the last
+video, we saw how we can implement
+named entity recognition, or NER with
+Spacey library.
+In this video and in the next one,
+we'll see a couple of other ways of
+implementing named entity recognition.
+Bear in mind the industrial and most
+accepted. Platform or technology to
+implement named identity recognition in
+the industry is Spacey. However, it is
+important for us to know the
+alternatives as well, and this will not
+only help us have options, but will
+also allow us to appreciate why Spacey
+is so popular, right? So let's start by
+implementing named entity recognition
+with the popular NLTK library. NLTE
+came before Spacey, so it's expected
+that its solution is a little primitive
+to Spacey. In the next video, we will
+implement NER with a more recent
+library and then also compare the
+output. All right, so let's get started.
+First, with the imports.
+I'll also connect my notebook in the
+meanwhile. So import NL3K. We will need
+Any chunk, any chunk.
+We will also need.
+From
+NLTK.3, we will need 3.
+And then we need to tokenize for NLTK.
+Took N and put.
+Who were tokenized. Um, we may actually
+we don't need to do sentence
+organisation,
+so let it be. Tokenize,
+right.
+Finally, NLTK from NLTK.tag.
+Import US style.
+Right?
+So let's run this. Great. Now, let's go
+over these. NLTK, we know the most
+popular NLP library.
+NE chunk, right? This will help us
+implement the named entity recognition
+part of the exercise, right? 3 is
+something, let's, let me run it and
+show it to you.
+Right, a tree represents a hierarchical
+grouping of leaves and subtrees. For
+example, each constant in a syntax tree
+is represented by a single tree, etc.
+etc. You can read a lot about it, but
+what it is essentially, it's a
+pre-built sort of dictionary of which
+word or which token is which entity,
+right? So we will do the chunking with
+any chunk, right? However, we will
+extract. The named entities with trees,
+right? Word tokenize is for
+tokenization, right, and POS tag is for
+parts of speech tagging. We will have
+to first implement part of speech and
+then implement NR on top of it, right?
+So let's go. Let me delete this and we
+will also have to download a few
+packages from NLTK, so NLTK.download.
+On fab
+I've reached
+Exceptron.
+Tiger English.
+Woods
+And Matt's ENT.
+Named entity.
+Chung
+app, right, all these packages will
+help us implement the methods above.
+OK, downloaded.
+You need to be connected to the
+internet to download these, right? Bear
+in mind.
+I will take the same
+text example as the last exercise.
+Now, let's implement. So let me declare
+a variable called named entity tree,
+which is
+The word tokenization of the text,
+right? So first, we will do
+tokenization. Then we will implement US
+tagging.
+Right?
+And on top of that, we will do any
+chunk, right?
+So, Let's implement this.
+Took some time, right? So let me show
+you what it is NE3.
+Oh, no module named SVG link. We will
+have to install this, so.
+OK, so I hope this will solve the error.
+Mhm.
+So you see.
+Right?
+All the tokens have been assigned a POS
+tag, so GPE.
+is looking at buying, so Apple is
+looking at buying. So Apple, this token.
+Is identified as GPE, geopolitical
+entity, right? It's a company. And NNP
+is the named entity, so it is
+recognised that Apple is the noun. Let
+me convert this into light theme and
+see if it is better visible, right?
+Yeah, it's visible now. So you see.
+With NLTK we were able to identify only
+two named entities, Apple and Musk.
+It has also not defined Billion and
+Elon separately. It has clubbed them
+together.
+Maybe because of this. So you can see
+that it is not very smart, right? It's
+not too smart. If you want to see a
+different version, you can just put it
+inside print and see. Right?
+This is better visible. So Apple.
+Is a GP E P O POS tag and NNP N E R NNP
+is numb, right?
+Let me display this
+in a better way. So first, let me
+switch back to dark theme.
+Like
+So for Chung in Any tree
+If Is instance. Chunk is part of 3.
+Then
+If it is a named entity.
+Right? This is what
+This philtre means.
+So
+Th
+Chunk
+Right? So,
+Out of all the tokens, it was able to
+recognise only two named entities that
+were nouns, apple and musk.
+Right? So you see, named entity
+recognition is A lot less effective
+with NLTK when you compare it with
+spacing.
+Let me also display it in a little
+better way.
+Here I have two functions which are
+just basically libraries of POS tags
+and The named entity tax, right?
+So GPE is a geopolitical entity.
+Person is people, organisation is
+companies, location is non-GP locations,
+right? Like cities or countries.
+Facility is buildings, airports,
+highways, etc. So you see, NLTK allows
+you to identify only these five named
+entities, right? So let me
+Define these functions, and now let me
+write a quick script that will help me
+represent this. A lot better, or this a
+lot better, right?
+So, what I'll do is.
+Bri
+We had a spacing of 15.
+Great
+This can also be a spacing of 15. Maybe
+10, let's see if it works.
+Then I will have EOS.
+Description
+Which will be maybe 50. Right?
+Named entity tag, or I need to put it
+inside. Strings. So let this be 15 or
+10.
+And then
+Name entity.
+Description
+Imprint, a separator.
+Maybe 100, right? So what this will
+look like is this. So what I'm trying
+to do is print. This information in a
+tabular form with a lot more
+information from these lookups, right?
+So I see that, OK, this is a little
+less, maybe. 120 Should be fine, right?
+OK. Now comes the main strip. So for
+chunk in NE3.
+If is instance,
+Chunk
+3
+Then
+I want the named entity tag as chunkt.
+Label, I'll store it here.
+And the description.
+As
+Get any description, and I will pass
+the tag.
+Right? So what this will do is, first
+we will define the tag for the named
+entity, right, like GPE. Once we have
+the tag, I will use this function.
+Right? And then get the definition of
+that tag, right, or description of that
+tag, just that. So for leaves in.
+Chunk.
+leaves.
+I want to store the POS tags as well.
+description.
+Get
+AOS description, which is dysfunction,
+right?
+So
+I will pass the post tag, which is this.
+Now I will print.
+Exactly this. So let me copy.
+This
+Right? So instead of token, I will
+print token.
+Instead of POS tag, I will print POS
+tag.
+PS
+Description without the strings.
+And Doug
+And any
+Description. I think this is good.
+Right now for all the other chunks
+which are not named entities, we will
+do an L.
+Right? So this is
+For all the
+Chances that Uh
+And
+And it is
+Wen
+US tag.
+What's the chunk and
+POS description will be get
+POS. Description
+on a tag.
+And here I will.
+Take this exact string.
+And instead, I will print
+Or
+4
+Outside of
+Named
+cities
+Right, I hope this works. Let me hit
+run.
+Let's run this
+All right. So we have our table.
+Apple NNP is the POS tag. GPE is the
+named entity tag, which is geopolitical
+entity, right? And then the second
+named entity was Musk, which was
+detected as a person, right? Let me
+adjust this spacing. I feel like this
+is too much.
+So let me make it 40, 40, and 40.
+Yeah, to exact rate. I can also adjust
+this. So maybe 88. And it and it.
+8 here as well and
+not 88. Let me run.
+Yeah, now the table looks a little more
+compact. All right, so this is how we
+implement named entity recognition with
+NLTK. This will not only give you
+another option of implementing named
+entity recognition, but I hope you
+realise how good Spacey is, right? When
+you compare it with NLTK, right? So I
+hope you enjoyed this and this special
+way of.
+Displaying your named entities, right?
+So now your task is to implement the
+same with different data sets, right?
+So, come here, change this. And then
+implement and see how it works out,
+right? Great. So I'll see you in the
+next video. Thank you.

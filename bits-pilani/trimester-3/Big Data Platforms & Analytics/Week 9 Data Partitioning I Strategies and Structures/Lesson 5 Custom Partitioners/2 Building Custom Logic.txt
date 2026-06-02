@@ -1,0 +1,73 @@
+Welcome back. In our previous lessons,
+we explored standard partitioning
+strategies like hash and range
+partitioning, but what happens when
+default partitioning fails to handle
+your specific data distribution?
+Sometimes you need to design domain
+specific structures for complex
+distributions, for example, handling
+specific data types like geographical
+coordinates or hierarchical business
+IDs. Today we're going to dive into
+PySpark code and build a custom
+partitioner from scratch to route data
+based on geographical regions.
+Let's look at the code. First, we
+initialise our spark session.
+Just like any standard PySpark
+application, next we define our dummy
+data. Pay close attention to the
+structure here. It is a list of pupils
+representing key value players.
+The key is a string representing a
+geographic region like US, EU, or APEC,
+and.
+The value is a mock transaction ID.
+When we paralyse this data, Spark
+assigns a default number of partitions.
+But we are about to change that.
+Here is where the magic happens.
+We can define a function to map our
+keys to specific integers. We define a
+target of 3 partitions and write our
+function geographic partitional key.
+Inside this function, we use a simple
+Python dictionary mapping. If the key
+is US. We return 0 if the key is EU, we
+return 1. If the key is Apec, we return
+2.
+But what if our data is messy? In our
+dummy data we have a Latin record which
+isn't in our dictionary. By using
+Python's get key method, we create a
+fail-safe. If an unknown integer
+appears. It by default gets assigned to
+0.
+It prevents our entire pipeline from
+crashing. Now we apply this logic.
+Called partition by.
+We call the partition by transformation
+on our RDD. This method requires two
+arguments the total number of
+partitions, which is 3, and our custom
+function. To prove this worked, we have
+a handy pie spark action called gloom.
+OK, what Gloom does is it takes all the
+elements within a single partition and
+combines them into a list. When we
+print this out, we can clearly see our
+data is perfectly separated.
+All US and Latin records in partition 0,
+in EU in Partition 1, and APEC in
+Partition 2.
+And there you have it. By explicitly
+defining how our data is distributed,
+we keep processing close to where data
+resides.
+Just to minimise expensive network
+shuffles. This data locality is the
+secret to unlocking two performances in
+distributed systems. Thank you so much
+for watching. Happy coding. I'll see
+you in the next video.

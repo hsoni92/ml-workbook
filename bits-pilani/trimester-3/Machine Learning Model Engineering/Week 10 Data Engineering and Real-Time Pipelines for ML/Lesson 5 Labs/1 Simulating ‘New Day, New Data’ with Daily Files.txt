@@ -1,0 +1,131 @@
+Hi everyone. Welcome to the labs for
+module 10. Uh, in this lab, we are
+going to see how to build a data
+pipeline and why they are, uh, backbone
+of, uh, production ML system, OK? So,
+So far, we have uh talked a lot about
+models, but, uh, as the saying goes, G
+is in, garb is out. So here, the system
+that uh feed our models with high
+quality, timely data are just as
+important as the models uh themselves,
+right? So, these systems are data
+pipelines. And a data pipeline is an
+automated process that takes raw data
+from various sources.
+Then, uh, clean it, transform it, and
+uh loads it into a destination where it
+can be used for uh training or, or
+could be used for analytics or for
+survey, right? So it's the circulatory
+system of any MLOps uh platform. So, in
+this lab, what we are gonna see, we are
+going to Build a mini data pipeline,
+but uh before we can process data, we
+need uh data to process, right?
+And if we talk about common challenge
+in development is uh getting a
+realistic uh stream of data. So our
+first step is to build a simulator that
+uh mimics uh new data arriving each day,
+and, uh, this is a crucial pattern for
+building and testing pipelines, uh,
+robustly before they even touch live
+production, OK? So, for that, uh, I
+have created, uh, again, this directory,
+lab 10. You can find all the
+A script over here. Let's open to me.
+And uh here we have all the scripts. So
+first, we are gonna see uh simulate
+dailydata.py OK? So, here, our first
+task is to generate a base data set
+that we can then split into daily
+chunks, OK? Uh, and, uh, we're using
+Numpi, random default RNG.
+Uh, with a fixed, uh, seed. And this is
+a small but important detail for
+reproducibility. So it ensured that
+every time we run this script, we get
+the exact same random data which is
+essential for debugging and consistency
+during testing, OK.
+So, next, uh, we define the shape of
+our data, that is 5 days.
+OK. Uh, with, uh, 10 records per day.
+And then we use uh Panda's uh date
+range here to create our daily time
+stamps, OK? And the core of the
+generation happened in this loop.
+OK. And for each day, we create 10
+records.
+Right.
+So rows we have here are 10, and for
+each day we're creating uh uh 10 rows
+for 5 days, right? So we have here a
+nested loop. So each record is a
+dictionary containing our event data,
+uh, and, uh, let's uh look uh. At each
+field. So here we have a day. This is
+just an index, OK? Then we have the
+time stamp. We create a realistic time
+stamp by taking the base day and uh
+adding a random number of minutes so
+they simulate the event during
+throughout the day. Then we have the
+customer ID, uh, amount, and, uh, label.
+These are our feature and target
+columns generated uh randomly. This
+mimics the event data a real model
+would be trained on, right? And finally,
+we load our data into a data frame, and
+this base TF now represents our entire
+historical data for the five-day period,
+OK?
+So now that we have our base data set,
+we need to simulate the daily arrival
+part, right? So we are going to split
+the single data frame into multiple CSV
+files, one for each day, right? Uh, so
+we have 5 days over here.
+So the magic happens with the group by
+function. Uh, or the group by operation.
+This pandas function is, uh, incredibly
+powerful. It, uh, iterates, uh, through
+our data frame, gives us a mini data
+frame which we call group for each
+unique value in the day column, OK? And,
+uh, inside this loop, for each day's
+group, we construct a file path like,
+uh, day one, day 2, and so on. Then we
+use the two CSV. Uh, method to write
+that, uh, group's, uh, data to its own
+file. And here, we said the index, uh,
+equal to files because, uh, we don't
+need to write the data frame, uh,
+internal index, uh, to the file, right?
+So, This script is uh Completed over
+here. Now, let's uh execute this uh
+Python file. So let's go inside the lab
+10.
+Yeah, now execute uh this file. And 10
+and 1 similar data.
+Dot uh PY simulate daily data. P. OK?
+That's execute it. So if you notice
+here, we don't have any data right now
+inside uh data and10 format.
+Now, if you look inside this.
+Data and then there they are. They have
+uh successfully simulated a production
+scenario where a new data file arrive
+each day,
+right? So, day 1, day 2, you can see
+over here. So this simple setup in the
+foundation for the test of our work is
+uh uh in this uh module. We now have a
+predictable, reputable source of new
+data to build our injection pipeline,
+right? So if you see inside it, so
+that's what we expected, right? D
+timestamp, customer ID amount, and the
+label. That's uh random generated data.
+Yeah. Now let's move to the next step.

@@ -1,0 +1,70 @@
+Shading simply mean splitting things up.
+In a sharded system, each shard is
+responsible for a subset of your
+traffic or data, maybe a subset of
+users, items, or regions. Each shard
+has its own resources, its own
+instances, storages, and sometimes its
+own model version.
+Shading helps with scalability because
+each shard is smaller and easier to
+handle, and it also gives you some
+isolation. A spike or failure on one
+shard doesn't necessarily take down the
+others. Inside each shard, you can
+still be replication or do replication
+if you need multiple instances for
+reliability or extra throughput.
+One common sharding strategy is hashba
+sharding, often by user ID. For example,
+you might compute shard is equal to
+hash of user ID mod N. And route the
+request to that shard.
+With a good hash, users are spread
+roughly evenly. Across the sharks.
+Which gives you fairly balanced load.
+The advantage here is, it's simple and
+work well when user behaves similarly.
+The disadvantage, it's harder to do per
+region or per language customization,
+because users from the same region may
+end up on different shard. And changing
+the number of shards, say, from 3 to 4,
+can force you to rebalance, moving lots
+of users between the shards. Another
+pattern of sharding by a meaningful
+attribute like region, language, or
+customer segment. For example, you
+might route all Europe users to a shard
+that hosts a model tuned to Europe data
+and regulations. And all Indian users
+to a shard tuned to local patterns.
+Or you might have a dedicated chart for
+enterprise versus small business
+customers. The big benefit is that it
+becomes easier to specialise model and
+infrastructure per shard. You can have
+different configurations, SLOs, or even
+different model architectures. The
+downside is that shards might not be
+perfectly balanced. One region or
+segment might carry much more traffic,
+so you have to watch for hot shards and
+plan capacity accordingly. It's
+important to distinguish replication
+from shading.
+With replication You have multiple
+copies of same model, all capable of
+handling the same kind of traffic. A
+load balancer spreads requests across
+these replicas to increase throughput
+and reliability. With sharding,
+different shards handle different
+subsets of traffic or data. Shards
+might even run different models or
+configurations. In real system. You
+often combine both. For example, you
+might have 3 shards by reason, and
+within each shard you run 3 replicas
+for reliability, so a total of 9
+instances.

@@ -1,0 +1,181 @@
+Welcome back learners. In the last
+video, we learned about what hugging
+face is and what does it offer. Right?
+In this video, let me take you through
+how to generate a hugging face token
+and how to use it in your Google Collab
+notebook so that you can easily use any
+model from hugging face. At the end of
+this video, we will also see a quick
+demo on how we can download and use an
+AI model from hugging Face inside our
+collab notebooks. All right, so let's
+get started.
+Once you're on hugging face and logged
+in,
+Click on this icon for your profile. At
+the bottom, you will see access tokens,
+right? So click on this. So this may be
+empty for you right now. I have already
+generated a few tokens for my use cases,
+right now to generate a new token, just
+click on this button that says create
+new token.
+Add any name right like Bits Pilani
+Digital or I'll just add demo just for
+testing right for now no need to go
+through all of this, no need to select
+or deselect anything just just come to
+the bottom and click on create token.
+Right. Now, very important.
+Copy this token, right? And paste it
+somewhere from there you can access it
+whenever you want, right? Let me come
+to this collab notebook and just paste
+it here for now, right?
+But I would advise you to paste it in a
+notepad or somewhere safe, right?
+Click on done. Now you will see that
+your newly generated token is available
+here, right? You can also click here
+and edit permissions or refresh or just
+delete, right?
+Now, this was on how to generate an
+hugging face API token.
+How to use it, right? So come to your
+collab notebook. Click on this secrets,
+right? Click on add new secret and type.
+HF token, right? Type exactly this HF
+token. Let me type it for you here,
+right? Now.
+Copy this and paste it to you, OK?
+Click anywhere outside.
+And click on this. It will hide your
+token. This activity is done for two
+reasons. One, to add your API token in
+this session or in this environment,
+right? So whenever you want to access
+any hugging face model.
+Your environment will already pick up
+the access token from you. Also,
+secondly and more importantly, for
+security purposes. For any key, not
+just hugging face key, for any key that
+you will use.
+You do not want to expose it anywhere,
+right? So it is not a good practise to
+type your type and show your token to
+anyone, right? So I will delete this.
+Now,
+how to use this token, right? How to
+call this token. Simply copy this
+script and paste it here and in secret
+name, copy whatever name you've said,
+right? I've said HF token.
+And this way
+OK, it's asking me that do you want
+this notebook to grant access to this
+token? When I click grant access.
+This thing will turn on, so let me
+click here.
+See, this thing was turned down. Let me
+now run it again.
+She
+All right, so it has successfully
+loaded whatever I saved it here, right?
+Ideally, how you want to use it is
+store it in a variable so that it is
+not exposed. Let me run it again.
+Right? Now you've loaded the token or
+the API key, and you can use it
+wherever you want to, right?
+All right. Finally, let me show you how
+you can download and use any model from
+hugging face, right? So we saw the
+example of Bert uncased, right? Let me,
+let me go to that page, right. The fill
+in the blanks module, right, scroll
+down, you will see the usage script.
+Copy it.
+And simply paste it here, right? Let me
+remove this and add it to a new cell.
+Now, it is important to note that not
+all Models on hugging face will require
+your HF token or hugging face token,
+but most of them do, so it is a good
+practise to already keep it loaded in
+your environment, right? Now, let me
+run this.
+Great, you can see that it has loaded
+the model and its weights.
+Now, let me run this exam.
+So you see, you provided the input.
+hello, I'm a mask. So this is the fill
+in the blanks model. I'm a dash model.
+So the option one essays, I'm a fashion
+model. I'm a fashion model. I'm a role
+model, right? I'm a new model. I'm a
+supermodel. I'm a fine model. All are
+great options, but the highest
+confidence score was for fashion. So
+I'm a fashion model. Let's use it for
+another example.
+Our favourite example, the cat sat on
+the
+The first
+Word was the cat sat on the floor.
+Second, bed, couch, sofa, ground, all
+are valid options. Right? So this is
+how you can use any model. Let's now
+also use
+another model just for another example.
+So let me use a translator, English to
+Tamil.
+Let me use any model that I can find.
+Right, so this has been uploaded by
+Surya 7.
+I will scroll down and I will copy this.
+OK, let me copy this in a new cell.
+And let me run this.
+So the download has begun.
+And it is completed as well. So what we
+have done is we have downloaded A
+tokenizer and Amodel for sec to sec LM,
+right? LM is language model.sec to sec
+is sequence to sequence. So input a
+sequence and output a sequence, and
+this is the type of the model, right?
+This is for tokenization, OK. So first,
+This is the checkpoint. What is the
+checkpoint?
+This week, OK, so you add this
+checkpoint, then you initialise the
+model. So auto model for sec to sec LM
+from pre-trained, right, and you pass
+the checkpoint. Also for the tokenizer,
+you pass it.
+Here, right now your tokenizer and the
+model are initialised. This is a simple
+user-defined function that will first
+tokenize and then generate the output
+of the model, right?
+We've already done this. Now let's
+implement it.
+Great, we have the Tamil translation of
+hard work never fail. Let's also use it
+for.
+Another sentence, anything. So the cat
+sat on the mat, right? Let's run it
+Great, we have the Tamil translation of
+our input sentence. I do not know how
+to read or speak Tamil, so if any of
+you do, please verify if it is correct
+or not, right? So this was a quick
+tutorial on 3 things. How to generate
+an HF token or hugging face token and
+how to load it on your collab notebooks.
+Secondly, we saw how to download a
+model from hugging face and use it for
+our use case, right? I hope you enjoyed
+this, and I'll see you in the next
+video. Thank you.

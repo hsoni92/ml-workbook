@@ -1,0 +1,764 @@
+All right, owners, in this module, we
+have looked at topic modelling and
+explored all the different and popular
+ways of implementing topic modelling in
+Python. The best way being LDA and Word
+topic, right? And we also saw an
+implementation of LSA in the previous
+video. In this video, let me take you
+through GSDMM, a model for topic
+modelling on a very particular use case,
+right?
+So we will go over some conceptual
+knowledge and then we will look at its
+implementation in Python. So let's get
+started.
+GSDMM stands for Gibbs Sapling
+Dirichlet multinomial mixture. It's the
+name of the model. It's quite a word
+for it, right? So before understanding
+GSDMM, let's first look at some
+shortcomings of the LDA model, which
+was the most popular model for topic
+modelling. This will help us understand
+the need for any other algorithm like
+GSDMM, right?
+So the most popular model or algorithm
+for topic modelling is LDA. We all know
+that. However, it has two major
+limitations. One, it assumes that a
+text has a mixture of topics. Now you
+might say this is actually a good thing.
+How is it a shortcoming or limitation,
+right? Most articles or documents,
+which are huge in number of texts, Have
+this quality. They are a mixture of
+topics. One document may have 23, or 4
+or more different themes or document or
+topics being discussed in it. However,
+that is not true for very short text
+data like a tweet or an image caption
+on social media, right, or like a
+product review. More often than not,
+those documents have only one
+particular theme being discussed, right?
+It may be a sentence or maximum max of
+2 or 3 sentences, right? So that's why
+on this short x data, LDA has shown
+poor performance, right? So you can say
+less than 50 words. This makes LDA
+ineffective for implementing topic
+modelling on short snippets of text,
+such as social media text, like tweets,
+image captions, etc. and product
+reviews, right?
+So let's spend some time understanding
+GSD MM or GIB sampling Dirichlet
+multinomial mixture.
+GSTMM model works better than LDA on
+short text. This model assumes that one
+document is only about one topic.
+Therefore, it becomes very effective
+for topic modelling on short text,
+right?
+Here is the original paper for it. I'll
+leave the link for it in the notebook
+as well. You can go through it, right?
+OK, great. So we've understood that LDA.
+Performs ineffectively on short text
+and the solution is GSTMM, right? Now
+let's look at the implementation of it.
+For our use case, we will take Donald
+Trump's tweets, which are available. At
+the TTA or Trump Twitter Archive
+website.
+Don't worry, I've already downloaded it
+and exported it so that you can
+directly start using it, right?
+Also, we will import GSTMM
+implementation available at this GitHub
+repo. So someone called us our walk has
+already implemented the algorithm
+called GSTMM and shared it with
+everyone for us to use. So we don't
+have to implement it from scratch. We
+can just clone this repo and start
+using the library, right?
+So,
+Let's get started with the
+implementation.
+What we'll do first is clone this repo.
+So we will type git clone, repo, and
+dash Q for quiet.
+So this will install the wrapper for us.
+Let's look at it. Right, so GSDMM has
+been cloned in our notebook environment.
+This is the data. In JSON format, right?
+So dot Jason. These are all the tweets
+written by Trump from 20201107 to 2021,
+17, almost half a year. OK, great. Now
+that we're done, let's start.
+Importing the necessary packages.
+So we will need pandas for loading the
+data.
+It's also use Nampai.
+Of course, we will need Jason because
+our data set is in Jason.
+Let's also import CSV for handling CSV
+files and LTK for some pre-processing
+stuff in LTK.download.
+Stop words for Stopford's removal.
+And some other NLTical activities.
+From NLTK.purpose, let's import stop
+words.
+No, from NLTK.
+Code
+word
+tokenize maybe sentence tokenize. We
+may not need send tokenize, but let's
+book it. Let's keep it handy.
+Unicode Unicode data for handling.
+Data at Unicode level, some rejects,
+and finally from GSDMM, which is our
+repo, this one.
+Let's import.
+Movie group process. So,
+You see,
+GSTMM. GSTMM.
+This MGP.pi has the class movie group
+process. Let me show it to you.
+In this class. This is what we're
+importing. This is the implementation
+of GSTMM, right? And you can read more
+about it. In this paper, so movie group
+process, right? All right. So let's hit,
+oh, let's add download, download here.
+OK, let's hit on.
+OK, done.
+Now, let's also add some configurations.
+Modifications.
+Um,
+OK Python.core.
+But interactive shell. Input
+Interactive shell.
+And And that stuff
+L.ST_moo node.
+Underscore interactivity. Equals 1.
+Right.
+I think this should be good enough for
+now. We will add more configurations if
+needed.
+OK, now let's load our data set, which
+is in Jason format. So, it's called a
+DFTD. Read. Jason, what I'll do is I'll
+come here and Copy art.
+And pass it in this function.
+Perfect. Let's explore data, so DF.
+sample, let's explore 4 samples.
+Great.
+So, what we actually need here is this
+column, text. This has the text of all
+the tweets that Trump has tweeted, and
+this is all the metadata about that
+particular tweet. OK, great.
+So text is the column of our interest
+where we can implement topic modelling.
+Great.
+Now, let's do some text cleaning and
+preprocessing.
+Let's check for missing values.
+So what this will do is
+Include only those rows which are not
+mine.
+And then let's check the ship.
+OK. So we have 932 rows and 6 columns,
+123456, correct. Great. That's again.
+Explore
+Our data set just for sanity.
+Yeah, perfect. Looking good.
+OK. Now let's do some basic test. The
+processing.
+Who has the
+Original data.
+We're creating a function for cleaning
+purposes, so basic_clean.
+Word was.
+Original galore, so this will normalise
+the text.
+So what this has done is normalise text
+between lowercase and uppercase, and
+here what we're doing is normalising
+between the encodings of the text data.
+There are different encodings of test
+data like Unicode, ASI, UTFA, etc.
+right?
+Now, let's do some reject sub
+substitution.
+A to C 0 to 9.
+Some spacing
+Should be replaced with nothing.
+So this will remove everything that is
+beyond A to Z and 0 to 9. Notice we are
+not including A to Z because we have
+already lowercased everything and all
+the extra white spaces. This will
+remove all of that.
+Let's also remove some other garbage.
+Slash N is for new line, slash T is for
+tab. In
+this has cleaned our data phenomenally.
+Now let's create a function for stop
+words removal.
+We will take the original text.
+And two lists of extra words and
+excluding words.
+Let's define the stop words.
+Her words in extra words, stop words.
+Just brought a pen.
+Word. So whatever extra words that you
+provide will be added to the list of
+stop words. Stop word. Let's not make a
+typo here and for word in. Explode
+Works
+This will be removed from the Stopfords
+list.
+OK, great. Now that our list of softwas
+is ready.
+Let's start removing it from our text
+data.
+First, we will tokenize using the split.
+And then we will do the filtration or
+stop food removal.
+So W for W in words.
+If W not in stop or list. Great.
+Great. So now that we have filtered the
+soft words, let's all, let's join all
+the individual tokens.
+Together
+And a return that as part of this
+function, great. So we have a neat
+function to remove stop words.
+Now, let's implement stemming as well.
+So PS equals NLTK.orter.
+The
+or the stemmer. We could have directly
+imported sport a stemmer as well on top,
+but this is also fine.
+He is stem as the word or word. In
+original, original, which is this input
+to this function.
+split.
+Now let's capture that stem.
+Stems.
+Unless than return original stem.
+Right? So we have a neat function for
+implementing STEMming as well.
+Let's run this, OK?
+There are some warnings which we can
+avoid.
+Also, if you want to avoid all these
+warnings, you can also do.
+Some conflagrations. In court warnings.
+Or
+some warnings port.
+philtre warnings.
+philtre
+Warnings
+I not.
+Now, when you run this, all of this
+will not be visible to you.
+So let's get started.
+Offending,
+and
+We processed, fixed through.
+Yeah,
+data.
+Let's create a list, drops, and let's
+run a loop. So for sentence in DF text.
+Words equals word. Open eyes
+Stem
+Remove stuffed goods.
+Basically,
+Sentence
+Don't stop and
+Floats
+Perfect. Now let's take a look at our
+data set again.
+OK, great.
+So now in this list, dots.
+We have, let's not add print. So we
+have all the sentences from our text
+data set, but cleaned and pre-processed,
+right? So let's, let me do a sample of
+it.
+You know, there you go. Let's also try
+and
+Print it
+To make it a little short. So, this is
+the first sentence.
+Which has been cleaned and tokenized
+and stemmed.
+So, you see, unfairly, or maybe some
+word has been stamped to unfairly.
+OK.
+Maybe this could have been peaceful or
+something. This could have been
+remembered. Maybe forever, right? Great.
+Now let's go ahead and implement topic
+modelling, which is a clustering
+exercise.
+So what we will do is we will call this
+class.
+MGP equals movie group process.
+K equals 15.
+Alpha equals 0.1.
+Beta equals one. A number of iterations,
+let this be 30.
+Now, define our vocab, which will be
+set. It's for dock in dogs, for its in
+dock.
+All right. Now, let's define incomes,
+which will be length of
+Look up
+Right, so we have to implement 24 loops
+because this.
+Docs was a list of list.
+Now, let's
+Let's first implement this and see if
+it all works.
+Yes. So we have 2613 as end terms. It's
+also went.
+Woke up
+Right, so this is a set of all the
+words in your doc's list of lists.
+Now,
+let's call MGP.
+The victims. Pass docs, which was our
+original data set, and in terms, which
+are all the number of unique terms used
+in this text data set.
+And let's start running.
+Great, we're done. Let me also now just
+define all these hyperparameters for
+you.
+So that you have more clarity.
+So OK
+I
+Number of topics, right? This we have
+to define as per our requirement. So
+number of topics that may that this
+document may have.
+Alpha and beta values are experimental.
+I live
+Select what's best suited. Or the data,
+right, you will have to experiment with
+it, tweak it here and there, and then
+find the best one for your data.
+Right?
+Let me
+He it here as well.
+Now,
+And iterations, how many times do you
+want the model to run over the data set?
+So select. A number
+I know
+For the model to converge. So, if you
+remember your concepts of gradient
+descent, This is, this is related to
+that.
+Now let's look. Into the topics.
+So Dotown
+Also, let me, let me add some comments
+here.
+Number of uni.
+Words used in
+The dataset, right?
+This may
+Meaning
+Algorithm, algorithm over.
+Uh, data set.
+No.
+I. array, so let's create an array. MGP.
+cluster.
+Underscore doc.
+Underscore.
+So what is this, doctor?
+We made an error. OK, spelling mistake,
+cluster.
+Right, so these are the dotcoms. Let me
+rearrange it and then explain what is
+happening.
+So top index, so let's rearrange the
+clusters in the order of its importance.
+I've defined a variable called top
+index, right? I will take dotco.
+R.
+15.
+And
+-1.
+Right, so we have rearranged the topics.
+Let me also add some neat print
+commands. To make it more extremely, to
+make it better.
+Let me add some print commands to make
+it more explainable.
+A string
+Number of documents. Or
+a.
+OK.
+Right. So per topic, like topic one,
+there were 6 documents. Topic two,
+there were 2 documents. Topic three had
+00, 630 documents in topic 12345, 5th,
+right, so on and so forth. Now what we
+have done here is
+Let me again explain it to you.
+Whether its
+The most important clusters.
+And how do we define that by number of
+documents.
+In it.
+So what are the most important clusters?
+4N 8701 14. So what does this mean?
+This means that the 4th index topic is
+the most important topic because it has,
+because it had the most number of
+documents. So you start from here,
+01234. So 4th topic, 4th index topic,
+which is the 5th. So we, we started
+from 0, so 5th becomes 4th. So 4th
+topic had 630 words, so that's right.
+4th is the most important topic. Then
+10th. So 0123456789, 10th, right? So
+233. Comes after 6:30 in descending
+order. So that is the second most
+important topic. Again, let's check 8
+for, again, understanding it. So
+012345678, 45. Now, the next biggest
+number is 45, so 6:30, 233, 45. So 45
+is the 8th topic or 8th index topic,
+right? Again, then 7, which is 16, so
+on and so forth.
+So I hope this made a lot more sense.
+However, let's package it so that it
+looks a little bit better.
+The
+4th cluster, right? We're just noting
+our observations here. This is a good
+practise. So the 4th cluster.
+Now the 5th cluster index equals 4.
+Yeah Let's not confuse ourselves as
+well. So the 5th cluster is the most
+important.
+Cluster
+With
+6:30 doctors.
+Similarly,
+The 11th Cluster with index equals 10.
+It's the 2nd.
+Second Most important. Cluster with.
+233 No, who knows. Like, I hope this
+makes much more sense.
+Let's define this function. I hope it
+runs well.
+And now, let's
+put on the upwards.
+MGP.
+Close to
+Editor, please remove all of this.
+Later we will begin from here now.
+OK, so we've understood this. Let's
+look into the topics a little further.
+So, Let me define a function called.
+Uploads
+Which will help me dive deeper into
+this. So cluster word distribution is
+what I need, then I need. Top cluster,
+and I will need values.
+So, let me scroll up a little. Yeah.
+For cluster in Easter.
+We will
+sort lifts.
+Equals sorted. Now, I will call a
+function called cluster word
+distribution.
+An index cluster, then dot items
+because it's a dictionary.
+We will pass a key as well, which is a
+lambda function.
+And divorce equals true.
+Thats
+OK, let's print.
+Cluster
+Cluster in chocolate, so like this.
+OK,
+so I think we are good for cluster and
+top cluster.
+I'm creating a sorted dictionary and a
+person. OK, I think this looks good.
+You'll find out when we run. Let's add
+a delimiter, say 100 or maybe 120.
+Great. We have the function ready.
+Let's now run it. So,
+up.
+Words
+MGP cluster word distribution goes here.
+Then
+top index goes here.
+Right?
+And Let's put 7 as values. So top index
+is this.
+Oh, it should be MGP.
+OK. Let's run.
+Great.
+So what do we have here? We have the
+most important cluster.
+Which was the 4th index cluster. It has
+the following word distribution. So
+elect, vote, state, Georgia, people,
+right? So this looks like something
+about elections and voting in Georgia,
+right? So that's how you can name the
+topics as well. Then next most
+important cluster was the 10th index
+cluster which had words like great,
+thank, news, vaccine, uh, get from big.
+OK, maybe it looks like something about
+vaccination, right? Now, the third most
+important cluster, which was the 8th
+indexed cluster, right, look at this,
+had words like nation, amp, section.
+Section 230 maybe termine defence
+security, maybe something about
+national security. So this way you can
+define what each topic is, right? This
+you'll have to do yourself by looking
+at the distribution. OK.
+Let's add some comments here so that
+our documentation is on point. So this
+is a user-defined function for viewing.
+Westers with the top words distribution.
+Perfect.
+So top 7 words. And
+Or for each cluster by their importance.
+Great. So 7 is showing the top 7 words
+per cluster.
+Great. So now, I hope this makes a lot
+more sense.
+Let's now package our results, just for
+presentation sake.
+Let's see in the the dictionary.
+Topic.
+Let's not make spelling errors. Topic
+names.
+Right, so I have a list of names ready.
+Very generic names
+But I'll this template will show you
+how to give your preferred names to the
+clusters.
+So I
+Of them
+and and new.
+Mar
+Of index
+I it.
+Papenam will go here. And
+Of
+names.
+Welcome.
+OK, uh, it is, oh, OK, spleen mistake.
+Let's run this. Great.
+Now let's see if our dictionary has
+been populated.
+Oh, spelling mistake again.
+Great, so our dictionary is populated.
+Let's now use this for packaging our
+results.
+Let's create a UDF or user-defined
+function called Cre topics data frame.
+Let's pass the, that's data.
+DF.text or
+You can pass it this way as well. It's
+one and the same thing.
+MGP will be MGP.
+Threshold, let's define it to be 0.3
+for now.
+Topic that will be. OK.
+which we have already defined.
+And
+Let's add stem decks, which is stocks.
+Perfect. If you remember, we had ducks.
+Up your
+this, this list.
+That's dear.
+PD
+Data frame, AD responders.
+That's
+Oh
+And stems. So this will create a data
+frame for holding our results.
+Now let's populate the data frame.
+Oh
+Yay.
+Great data text, now better.
+Result. A.
+I fixed.
+Equals text.
+Result.80.
+I
+Stems
+Equal1 text.
+And I index.
+Um,
+globe equals MGP.
+Choose the best. Label
+Stem text at higher index. Now, let's
+consolidate everything. So if Uh
+If prob is greater than equal to the
+threshold that will defined above.
+OK.
+Result.8.
+I topic will be topic.
+Uh,
+at 00 candidates.
+Hell
+Result. 80.
+I
+Topic
+Equals Something else or other.
+Now we will return our res.
+OK, don't worry if this does not make
+sense. Once we run it, it will start
+making much more sense.
+up to him.
+Oh
+OK, let me add some comments for
+Documentation purposes, so user-defined
+function to create a data frame with
+original text.
+And the assigned topic and.
+The assigned topic.
+What we're doing here is basically, let
+me add it here.
+Consolidating all the topics.
+which do not meet the threshold.
+OK, so any topic that will be that will
+be, so any topic that will not meet our
+threshold, which we've set as. 3 as
+default will be clubbed into the other
+category, right? Let's on this function,
+see if there's no error.
+So let's call a function DFX.
+The
+Topic. Let me just copy it from you. So.
+Create topics data frame data.text
+equals DF.text.
+MGP is MGP.
+Oh, my back. This is data_text.
+Is DF.text MGPS MGP.
+Threshold is 0.3 using the default only.
+Kopek_dick is Topic
+date.
+And stem texts. equals knock.
+So now, let's run this.
+OK, we have successfully run our create
+topics data frame, so hopefully no
+errors. Let's add some documentation
+here.
+A data frame with text and its assigned
+topic. Let's explore data.
+Stream.
+The effects
+Great. So you have defined the text and
+which topic it falls under. So first,
+text or first tweet comes under topic
+one, second comes under topic two, etc.
+etc. So here we define the names of our
+topic. You can define whatever names
+you need and that those particular
+names will be added against the
+original text. This is great. What are
+the stems used in this text? Thing,
+event happened, SACR landslide, the
+stem of landslide, maybe the stem of
+elections or electoral electoral will
+be elect, etc.
+Let's also calculate.
+The effects The
+topic. Topic, this column.
+But
+Value counts.
+And let's drop any as false.
+Perfect. So, the topic one. The count
+is 654. Topic two, the count is 233,
+233. The topic three, the count is 29.
+Perfect. So now we have successfully.
+I hope the spelling is correct.
+Simplymented GSTMM or Gibbs sampling
+Dirichlet multinomial mixture model.
+For topic modelling.
+One short text.
+Like
+Tweets
+Perfect. I hope this makes a lot of
+sense. Let me quickly give you a
+summary of what we've done so far.
+First we understood what are the
+shortcomings or limitations of LDA,
+especially for short text, and then we
+understood that GSDMM, which was
+defined in this paper,
+is a great option for implementing
+topic modelling on short text like
+product reviews, movie reviews, tweets,
+etc.
+When we saw that we took our data set
+from Trump Twitter archive, a bunch of
+different tweets, we exported it. I
+mean, I did it already. You can also do
+it from here. I exported it. I exported
+a bunch of different tweets in Jason
+format, right, and we cloned this
+library.
+So we cloned this repo, right? I highly
+recommend that you go through it.
+And you can also go through this class.
+Called Moro process, which is the main
+class for implementing our GSDMM
+algorithm.
+Perfect. So first, we cloned GSTMM and
+we Downloaded or loaded a data set and
+started explorations.
+Then we did some basic text
+preprocessing and cleaning. Let me add.
+Cleaning and reprocessing.
+All right? Then we implemented MGP or
+movie group Process class, which is our
+algorithm for GSDMM, right?
+We have defined 15 number of topics, so
+what the algorithm did.
+Per topic, it discounted how many
+documents are present there, right? So
+this topic, as you can see, has the
+highest number of documents, which was
+630. So that's why 630, so that's why
+this particular topic is the most
+important and it sits at the 4th index.
+Perfect. Then we looked at each topic a
+lot deeper and we saw the stems or the
+words being used per topic, right?
+Then finally, we packaged everything
+into a neat data frame and we assigned
+every text with its assigned topic and
+the stemMs used in that topic just for
+more view, right?
+So, finally, we successfully
+implemented GSTM model for topic
+modelling on short text. I hope you
+enjoyed this theory and implementation.
+And now what you need to do is start
+implementing this model on your own
+data set. Make sure the data set has
+short text for more effectiveness.
+So, all right, I'll see you in the next
+video. Thank you.

@@ -1,0 +1,94 @@
+All right, learners, let's now
+understand some core components of a
+prompt.
+A well structured prompt often contains
+these three elements. First is the role.
+The role of the LLM that it can take.
+And also the role of the audience.
+Second is the input. This can contain
+your context for the input, and also
+some instructions.
+Finally, the output expectation, in
+which format do you want?
+The response in which tone do you want
+the response, to which depth do you
+want the response, so on and so forth.
+Now there is also 1/4 component called.
+Examples. You can also provide some
+examples in your prompt, but this is
+highly optional.
+So let's understand the rule. The role
+defines who the model should act as. Or
+what it should do. It not only defines
+what the model should act as, but you
+can also, and this is optional, you can
+also define who the audience is.
+Right? For example, you're a math
+teacher explaining concepts to 3rd
+graders, so this is the role.
+Of LLM?
+And this is the role. Of target
+audience.
+I hope this makes sense. Now, the
+second component, the input. The input
+provides information to this model that
+it should use to generate the response,
+right? This information can be some
+context.
+It can be some instruction.
+Or maybe both, right? For examples. It
+can be a paragraph that you need to
+summarise, it can be a question that
+you need a response to, or it can be a
+topic that you want an explanation for.
+Now the 3rd core component, the output
+expectation. It specifies how the
+response should look like, what depth
+it should be at, what should be the
+tone. It should be friendly or it
+should be constructive. Should it be
+sarcastic? Should it be in what style
+it should be in? Should it be a poetic
+or should it be very wordy? Should it
+be literary, right? These are some of
+the examples of output expectations.
+Let's see some examples. Respond in 3
+bullet points.
+Use simple language to explain this
+point. Limit your response to 100 words
+only. Remember that clear structure
+reduces ambiguity and improves the
+output quality. Finally, let's do a
+prompt engineering exercise together.
+Let's look at this example. So you.
+Are a
+Physics teacher.
+Conducting
+A class
+For
+3rd grade.
+Explain the
+Top 3 concepts.
+Of quantum physics.
+Use analogies.
+To explain.
+And
+Tie back.
+The concept to. It's Respective
+Analogy
+Make sure
+To use.
+Simple language.
+And A friendly tone.
+Right?
+So what do we have here? We have a very
+solid prompt to explain quantum physics.
+This is the role.
+Right?
+This is the input.
+And this is the. Output expectation.
+Right? Go ahead and try this out.
+So your task now will be to practise
+prompt engineering using this template.
+I hope you enjoyed this one, and I'll
+see you in the next lesson. Thank you.

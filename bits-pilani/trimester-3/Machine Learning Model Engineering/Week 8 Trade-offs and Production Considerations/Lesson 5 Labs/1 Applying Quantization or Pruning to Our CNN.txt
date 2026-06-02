@@ -1,0 +1,139 @@
+Hi, everyone. Welcome back to the labs
+for module 8.
+Here, we are uh moving from uh
+optimising our model's format to
+optimising its uh very substance, OK?
+So in the last module, we standardise
+our model to ONNX uh format, right? And
+we try to
+Boost our performance
+with the next run time.
+But the question here is, what if we
+need our model to be even smaller and
+uh faster, right? So this is where uh
+model compression comes in. So, the
+story for this lab is simple. We need
+to deploy our image classification
+model, but uh our target environment
+has a constraint, OK? Maybe it's a
+mobile phone with a limited storage and
+battery or a surless uh function with a
+tight memory limit. If you remember, uh,
+the last model we used, it, the size of
+that model was uh around uh 45 MB,
+right? So, it might be too big or too
+small. So in the first uh script, we
+will apply a powerful and easy to use
+uh Compression technique called uh uh
+dynamic quantization, and our goal is
+to convert the model weight from 32 bit
+floating points number to much smaller
+8 bit integers and uh then create a new
+compressed uh model file, OK? So before
+we compress anything, we need our
+starting point. So, I have created, uh,
+uh, this script.
+Set up baseline.py. So that recreates
+the artefact from our previous lab, and,
+uh, first, it will download a
+pre-trained uh resonate 18 model and
+then save the Pythor checkpoint and
+export it to the standard uh UNNX
+format, OK? Uh, so now, uh, OK. So
+let's, uh, run this script. I've
+already installed the dependencies, I
+think. So let's uh
+And again, you can find all the details
+over here, how to do that.
+So first, we are gonna run, uh, set up
+a baseline. PY, OK? So let's execute it.
+And now, if you look in our model
+directory,
+We have uh ResMed.OX.
+Model created over here, right?
+So, this is our FP 32 model or 32-bit
+uh floating point model. Let's uh check
+its size. So if you see here,
+Uh, this is 44.67 MB. So this is the
+model size. And this is our baseline.
+So every optimisation we do will be
+measured again this uh this number. So
+now let's see if uh is it possible to
+make this significantly smaller without
+destroying its accuracy. So, let's uh
+find out. So, before that, let's say,
+what, what exactly is uh quantization?
+OK. So At its core, it's about using a
+simple, less precise number format to
+represent the weights in our neural
+network. OK. So, our current model uses
+32 bit floating point, uh, this model.
+Right? And think of these uh as very
+precise uh decimal uh numbers capable
+of representing a huge uh range of
+values, OK? And uh so, what does
+quantization tell? Quantization says,
+uh, do we really need all that
+precision? What if we could represent
+the same information with 8 bit
+integers, which are whole number from
+Uh, -28 to
+127. So this is like uh taking a high
+resolution photograph, right? And, uh,
+saving it as a lower quality like uh in
+JPEG format. So, basically, you lose uh
+some fine-grained details, but the main
+picture is still there.
+Still, you can't see much difference,
+right? So, the effect we are hoping uh
+here is a 4X uh reduction in this model.
+Let's see. Usually, uh, this happens,
+uh, because we are going from 32 bits
+to 8 bits per weight. OK. So we also
+expect it to be faster on CPU because
+integer math is generally much faster
+for processors than floating point
+maths, right? So, the risk, of course,
+is a potential drop in accuracy, which
+we will measure uh later, right?
+So now we have uh another script over
+here. Uh, L11X.P. OK.
+So now, for the practical part, let's
+uh Uh, see this script, what it's
+basically doing. So, here, you will be
+amazed at how simple this is. The ONNX
+runtime library provide a utility
+called uh quantized dynamic, OK? And we
+simply give it our input model path,
+right?
+Uh, input model.
+And uh that is our resonate 18 uh
+resonate 18.ONX and a path for the new
+uh model. So this is uh the output path,
+OK. And the most important parameter is
+weight type. So, this is uh uh
+important uh parameter where we are
+passing, uh, 8 bet and diesel.
+Right? Um, and this tells the tool to
+find all the floating point weights in
+the model graph and convert them into,
+uh, 8-bitten teaser. OK. So, let's try
+to run this.
+And there it is. Look at the output.
+The original 44 MB model is now just uh
+11 MB, right? And that's a nearly
+perfect 4X reduction, right? Exactly we
+predicted. And we have just uh
+compressed our model by 75% with a
+single function call, right? And the
+script also does a quick uh sanity
+check. You can see over here. Uh, just
+to make sure the new ResNN 18, that is
+uh FP8 format model. Uh, can be loaded
+by ONX, uh, runtime and can produce an
+output. So, this confirms, uh, we have
+a valid, uh, renewable model, but, uh,
+is it still accurate? And uh is it uh
+Actually faster.
+That's what we will find out in the
+next script.

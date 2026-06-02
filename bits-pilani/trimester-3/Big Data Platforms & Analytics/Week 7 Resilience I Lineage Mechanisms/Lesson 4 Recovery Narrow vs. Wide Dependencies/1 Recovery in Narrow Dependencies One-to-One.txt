@@ -1,0 +1,57 @@
+Welcome to Lesson 4. Now we have
+discussed the RDD lineage graph as a
+high level road map.
+But now we need to look at how Spark
+actually executes a repair.
+When a node fails. So in this class, we
+focus on the most efficient type of
+recovery.
+Narrow dependencies.
+As you can see in the diagram, a narrow
+dependency is the one which occurs
+during operations like map or FILTE.
+And is categorised by 1 to 1 mapping.
+This means that each parent partition
+maps to exactly one child partition.
+Let's look at the scenario on the
+screen. Suppose we have lost the data.
+Or we have lost the node holding
+partition C2.
+Because of the lineage graph, the spark
+driver knows exactly how C2 was created.
+It looks at the ancestry and sees that
+OK, C2 was derived solely from a parent
+partition called P2.
+This leads to what we called fast
+recovery and local recovery.
+The first key advantage is isolation.
+To restore C2, Spark only needs to
+rerun the transformation logic on P2.
+It doesn't need to touch P1, P3, C1 or
+C3.
+The failure is contained here.
+The 2nd, and perhaps most important
+advantage is that there is no shuffle
+in it. No data needs to be moved across
+network between different nodes during
+this recovery. Spark simply schedules a
+task to recomput P2 on a healthy
+executor, and the missing data is
+restored. This efficiency is why we try
+to chain as many narrow transformations
+together as possible in our spark
+pipelines.
+It makes the recovery cost. What we
+discussed earlier, extremely and
+extremely low.
+As a system can heal itself, partition
+by partition without interrupting the
+rest of the cluster.
+In our next video, we'll contrast this
+with the much more complex world of
+wide dependency failures.
+Wide dependency failures are pretty
+extreme uh to handle because of the
+recovery cost. But we'll see that in
+the next video. Till then, happy
+learning and thank you so much.

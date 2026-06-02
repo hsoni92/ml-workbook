@@ -1,0 +1,78 @@
+Welcome to Lesson 5. In our previous
+lessons, we looked at the 4-step cycle
+of a distributed gradient update.
+But there is a massive operational
+question we haven't answered yet.
+How strictly do we enforce the timing
+of these updates? In a distributed
+cluster, not every worker finishes
+their math at the same microsecond or
+nanosecond. How we handle those timing
+differences, what we call our
+aggregation strategy. It can change
+everything from the speed of our
+training to the final accuracy of the
+model. Let's break down the 3 main
+strategies shown in the table. First,
+let's look at the synchronous strategy.
+This is the most straightforward
+approach in a synchronous setup. The
+system waits for every single worker in
+this cluster to finish its local
+calculation and push its gradient
+before performing the global update.
+The pro here is a mathematical purity,
+because we wait for everyone. We have a
+complete picture of the data which
+guaranteed convergence. We are
+essentially doing true SGD at scale.
+However, the con is the straggler
+problem we discussed earlier. Your
+entire million dollar cluster is held
+back by the single slowest worker. If
+one node lags, everyone waits. To solve
+the weighting problem, we can use the
+asynchronous strategy. Here. We don't
+wait. As soon as any single worker
+finishes its calculation, it pushes its
+gradient. The global model updates
+immediately, and that worker pulls the
+new weight and keeps going. The pro is
+incredible speed and high throughput.
+Your GPUs are never sitting idle, but
+the con is gradient staleness. Because
+the workers are moving at different
+speeds, a slow worker might submit a
+gradient based on a version of the
+model that is already 10 steps old.
+This can lead to convergence issues and
+mathematical instability. Finally,
+there is a middle ground approach
+called local SGD. Instead of
+communicating after each single mini
+batch, workers perform many training
+steps locally before synchronising with
+the rest of the cluster. The pro is
+that it drastically reduces
+communication cost, which is great for
+slow networks. The con, however, is
+model drift. Because the workers go so
+long without talking to each other,
+their local models can start to diverge
+in different directions.
+Making it harder to reconcile them into
+a single accurate global model at the
+end.
+Choosing between these three isn't
+about finding the best one, it's about
+choosing the right balance for your
+specific hardware and network
+constraints. Aggregation is all about
+the trade off between speed and
+stability. In our next video, we'll
+take a deeper look at the convergence
+side of this trade-off, specifically
+how these different timing strategies
+actually change the path your model
+takes through the loss landscape. I'll
+see you there.

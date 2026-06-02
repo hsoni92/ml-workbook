@@ -1,0 +1,75 @@
+In our previous lessons, we established
+that checkpointing is a powerful tool
+for truncating lineage. But for that
+truncation to be safe, the data must be
+written to a location.
+That's even if your entire spark
+cluster fails in this lesson.
+Called Distributed storage strategies,
+we're going to look at the two most
+common backends used for checkpointing.
+One is HDFS, another is Amazon S3.
+Choosing between them depends entirely
+on your infrastructure. And your
+specific performance needs. Let's look
+at the next slide.
+First, we have the SDFL strategy. This
+is a traditional approach for on
+premise Hadoop clusters.
+The main advantage here is data
+locality.
+Because SDFS is often co-located with
+your Spark workers, the network IO is
+typically lower.
+HDFS provides consistent access speeds
+and high throughput.
+But if you're running your own hardware
+and need the fastest possible right
+speed for your checkpoints, HDFS is
+usually your best bet. Next we have
+Amazon S3 or, you know, object stores.
+It could be anything.
+This has become the standard for cloud
+native spark deployments, such as those
+on EMR or on data breaks.
+The key benefit here is global
+durability.
+Unlike HDFS, which is tied to the life
+cycle of your compute cluster, S3 is
+decoupled, right? This means you can
+shut down your spark cluster completely
+to save cost.
+And your checkpointed data will still
+be there when you spin up a new cluster.
+A bit later.
+So it offers extreme persistence.
+Through it often comes with a slightly
+higher latency
+during the right process compared to
+local SDFS. Because S3 is not
+on-premise, SDFS is on-premise, so due
+to data locality, right is slightly
+easier on SDFS.
+So the setup, regardless of which
+backend you choose, there is one
+mandatory step that you must perform in
+your code before you even call RDD.
+checkpoint function.
+As shown under Metadata control. You
+must configure the checkpoint directory
+using spark context SC.set checkpoint
+directory. This tells Spark exactly
+where the stability anchors should be
+stored. With this directory set, Spark
+won't know where to write the data, and
+your checkpoint call will fail.
+Just to wrap up, use SDFS for high
+speed and on premise locality. And use
+S3 for cloud native durability. And
+decouple scaling. In our next video,
+We'll go under the hood to look at the
+internal mechanics, exactly how Spark
+updates the RDD objects, and frees up
+memory once that data is safely stored
+on disc. See you in the next video.
+Till then, happy learning. I'll see you.

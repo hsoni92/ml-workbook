@@ -1,0 +1,40 @@
+We won't go deep into specific laws.
+But many domains, finance, healthcare,
+hiring, and others share common
+expectations. Typically, you are
+expected to use data with a clear
+purpose and appropriate consent.
+Avoid unjustified discrimination or
+harmful bias. Be able to explain
+decisions in understandable terms to
+non technical people.
+Keep records of which model were used,
+how they were evaluated and who
+approved them.
+When a user asks, why was I denied?
+Or, a regulator asks, how is this model
+governed?
+You want explainability plus audit
+trails ready to go. Remember, this is
+not legal advice. The key takeaway for
+you is to design for auditability and
+accountability.
+The best time to think about
+auditability is at design time, not
+after an incident. Treat model
+versioning and logging as core
+requirement, just like accuracy or
+latency. Decide early what you need to
+log, metrics, decisions, key features,
+or even group or group wise metrics,
+from the fairness works in Topic 3.
+Make it easy to answer basic questions.
+Which model made this decision? What
+data and features were used?
+What fairness, quality, or regression
+checks did that model pass? Finally,
+create simple playbook that describe
+how to investigate a complaint or
+incident. When something goes wrong,
+you don't want to invent the process on
+the spot.

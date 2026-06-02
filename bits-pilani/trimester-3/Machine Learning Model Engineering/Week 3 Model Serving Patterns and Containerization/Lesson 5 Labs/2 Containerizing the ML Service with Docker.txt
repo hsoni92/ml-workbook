@@ -1,0 +1,175 @@
+Hi, everyone. In this video, we will
+take our working fast API service and
+uh contemporize it with uh Docker.
+So let's come back to our, we scored.
+Uh, open Docker file. So the container
+image we create is the portable,
+reproducible unit that can deploy
+anywhere. It could be virtual machine
+or it could be. Cuban ATS cluster or a
+serverless container platform, right?
+We will walk through the Docker file,
+uh, then we'll build the image and then
+run it locally, OK? So let's try to
+understand what uh basically we are.
+Doing here. So this is our docker file.
+That's how we create uh.
+Uh, Docker file. OK. The Docker file is
+our recipe for building the image.
+Doctor Image, let's uh look at the
+instruction here.
+So we start with Python 3.11, Slim. We
+use a slim base image to keep the final
+image size small and secure. Which is a
+best practise for production.
+Then we have the working directory.
+Here, we set the working directory
+inside the container. Everything that
+follows happens inside this uh app
+folder.
+Next,
+We have a critical step for layer
+caching, basically. We copy requirement.
+TXT and uh then run PI install.
+We do this first because if our
+application code changes, but uh our
+dependencies don't, so Docker can reuse
+the cast layer for the installation
+steps, making bells much faster, right?
+Then we copy uh
+Or application file.
+Right? Uh, these 35. The model PKL
+artefacts and the A.PY. Train model. By
+but uh this is not necessary in uh uh
+in our surveying a script, but uh since
+it's a part of our directory, so I'm
+copying it for now.
+Right? Then we are exposing port 80. So
+expose 80 is a documentation telling
+anyone using this image that the
+service runs on port 80.
+Finally, we have uh
+CMD instruction tells Docker how to
+start the service.
+We use uh Unicorn and uh ESGI server to
+run our fast EP application, right?
+Here, the host is 0.0.0.0. is uh
+essential to make the service
+accessible from outside the container's,
+uh, local host, right?
+Now let's build the image. We use the
+Docker command to uh build the image.
+Let's open another terminal.
+And uh the command here is, and before
+running this command, make sure you are
+running uh Docker desktop, OK?
+Yeah, so now let's try to run the
+command.
+Doctor
+Bel
+iPhone D. And then you can pass the
+Image name. Let's give ML.
+Solving Uh, API, right? And let's pass
+the version V1.
+So here, uh, let's try to understand
+what command we are passing. So here
+hyphenT flag is for tagging the. Image
+With a name and a version. So good uh
+tagging practises are vital for
+managing different versions of models
+in a production environment. And here,
+the Then we have to pass the dot. And
+the dot specifies the build context,
+which is the current directory
+container, our docker files, and all
+the files we need to copy.
+Uh, that reminds me, we are not inside
+the, the lab 3, right? If you execute
+this command, you'll be getting error.
+Right? Uh, so, we have to go inside.
+Lab 3.
+Then use the same command.
+And now you can see, uh.
+Our docker image is building.
+As it builds, you will see steps uh
+corresponding to the instruction in our
+docker file, pulling the base image,
+installing dependencies, and then.
+Copying the file. Right?
+Once it completes, anyone with a docker
+can run this exact.
+Same service, same Python, same
+libraries, uh, the same model, no
+matter what their host Oasis. That's
+the power of, uh, containerization,
+right? OK, we got this error. Let's, uh,
+remove this.
+Piece of code. Now, let's uh try to
+rebuild it. With the same command.
+And uh our doctor is ready, right?
+OK.
+The final step is, uh, containerization
+is running the image as a container. We
+use the Docker and command, right? Now,
+Docker image has peed. Now let's try to
+run the.
+Docker image. So, let's type docker.
+Run-D-P and then we have to pass the
+port number.
+So, it's uh 8000 then 80.
+Uh, then we have to pass the Docker
+image name. So, let's copy the name
+from here.
+So this is our docker.
+Image. OK. The final step in
+containerization is running the image
+as a container. So, here we are using
+Docker run command, and uh let's break
+down.
+Uh, this command, basically. So
+hyphen-D runs the container in detached
+mode, meaning it runs in the background.
+The most important flag is hyphen P.
+Uh, if you see here.
+HyphenP where we are passing the port
+number. So this is port mapping. It
+maps the host machine port 8000 to the
+container internal port 80, which is
+the port we exposed uh in the Docker
+file, right? So we have uh. Essentially
+recreated the Unicorn app command, but
+now it's uh isolated inside a container.
+The host only needs a docker. The
+container brings its own environment.
+So this is the fundamental trick behind
+uh deploying it uh anywhere. So let's
+run this.
+Uh, it's saying.
+Require at least one argument. OK,
+let's take the command which we have
+given.
+Oh, we are passing the tag name, but
+we're not, uh.
+Given the name here, so let's give ML.
+Service. OK.
+Now let's try to run. Yeah, and you can
+see uh our docker container is running.
+We can go back here. And you can see
+the ML service, the name which we have
+given, and this is our Docker image
+which is basically running at uh this
+port 8000. Colon, 80, right?
+So now,
+We now have our model service running
+inside a docker container, accessible
+on port 8000.
+Right.
+We now have our model serving running
+inside a docker container accessible on
+port 8000 of our host machine. In the
+final lab, we will test connectivity
+from the host, call the health and
+prediction endpoint, and then briefly
+talk about how this container would be
+deployed in.
+Real environment.

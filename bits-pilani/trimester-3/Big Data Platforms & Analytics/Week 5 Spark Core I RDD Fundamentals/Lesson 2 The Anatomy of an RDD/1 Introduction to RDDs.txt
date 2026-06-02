@@ -1,0 +1,51 @@
+Now that we have had a bird's eye view
+of our goals for this module, let's
+dive into the most important concept in
+Spark. That is the RDD. If you look at
+the slide, you'll see that RDD stands
+for Resilient Distributed Dataset. To
+truly understand Spark, you need to
+understand what each of these three
+words means. Let's break it down. The R
+is for resilient. In the world of big
+data, we are often working with
+hundreds or even thousands of computers.
+In a system that large, something is
+bound to break eventually. A hard drive
+might fail or a network cable might
+come loose. Resilient means that Spark
+is fault tolerant. If a piece of data
+is lost because a computer fails, Spark
+doesn't lose that data forever. It has
+a recipe to automatically rebuild that
+data and keep the job running. It's
+self-healing.
+Then the next D is for distributed.
+When we say data is distributed, we
+mean it isn't just sitting on one
+single hard drive. Instead, Spark takes
+your massive data set and spreads it
+out across the memory of many different
+computers in a cluster. Even though
+it's spread out physically. Spark
+allows you to treat it as one single
+unit.
+This is what allows us to process
+terabytes of data in minutes rather
+than days. And then the next D is for
+dataset. This is the simplest part.
+At its core, an RDD is just a
+collection of objects. It could be a
+list of numbers, rows of text from a
+log file, or complex customer records.
+It's the actual stuff you're working
+with. So when you put it all together,
+an RDD is a collection of data that is
+spread across many computers and is
+smart enough to fix itself if something
+goes wrong. In our next video, we're
+going to look closer at the resilient
+part to understand exactly how Spark
+manages to never lose its place. I'll
+see you there. Thank you so much. Happy
+learning.

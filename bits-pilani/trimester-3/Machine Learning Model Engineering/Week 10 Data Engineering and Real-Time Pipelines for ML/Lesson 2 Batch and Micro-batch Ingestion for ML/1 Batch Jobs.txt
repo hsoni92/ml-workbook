@@ -1,0 +1,63 @@
+Welcome to batch and micro batch
+ingestion for machine learning. In this
+video, we will understand how batch
+ingestion fuels most training and
+offline machine learning workloads, see
+how micro batching gives you near real
+time data without full streaming
+complexity, and compare the trade-offs
+in terms of latency, complexity and
+cost. In practise, most machine
+learning systems starts with batch or
+micro batch pipeline before they ever
+touch full streaming.
+Quick reminder from topic one.
+We have 3 ingestion modes batch, micro
+batch, and streaming. In this video, we
+zoom in on the 1st 2 batch ingestion,
+which processes large chunks of data on
+a fixed schedule, and micro batch
+ingestion, which processes smaller
+chunks. More frequently
+These modes are extremely common for
+feeding, retraining pipelines and
+computing offline or near real time
+features.
+Let's start with batch ingestion. Batch
+injection runs on a fixed schedule,
+maybe once a day at 1:00 a.m., or every
+hour for the past 5 hours.
+Each job reads data, raw data, for a
+specific time window, like yesterday's
+events, Clean it, join it and other
+table and computes aggregations. And
+write the result into your new data
+warehouse for feature Tables.
+This pattern is simple and extremely
+common in machine learning workflow.
+Where does batch injection Sign in
+Machine Learning? It's ideal for
+regular retraining jobs like updating a
+churn model every week with a new
+labelled data, offline scoring, such as
+computing monthly risks, scores, or
+nightly recommendations for all users,
+and heavy aggregations, for example, 30
+or 90 days rolling statistics and
+complex feature engineering. If your
+use case doesn't need instant reaction,
+batch is often the easiest and most
+robust choice. Here is the concrete
+batch example for training data. Once
+per day, say at 10 a.m., we read
+yesterday's event from the partitions
+like events 2024, 2009, 2010.
+We join them with reference table like
+users or products, we compute features
+and write a daily feature table.it
+training_features_202409010. We append
+that to a master training data set,
+which our retraining pipeline can use.
+This kind of job might take minutes or
+even hours, and that's perfectly fine
+for daily retraining. Thank you.

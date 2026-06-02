@@ -1,0 +1,38 @@
+Welcome to Lesson 2. In our last lesson,
+we discussed why resilience is such a
+high stakes requirement for big data.
+This brings us to the specific
+technical challenges of recovering data
+in a distributed memory environment.
+First, there is volatility and state
+loss. Because Ram state is wiped.
+Instantly upon the failure, if we don't
+have a metadata-based recipe of our
+data, we have no way of knowing where a
+computation stopped or how to resume it.
+You might ask, why not just copy the
+data like STFS does? Well, that leads
+to the replication bandwidth tax.
+Traditional recovery via replication
+requires copying data across the
+network. If you're working with
+terabytes of data in RAM, copying those
+replicas consume massive amount of
+bandwidth. And significantly slows down
+your job.
+Finally, we face consistency
+bottlenecks. Trying to keep memory
+replicas perfectly synced across a
+global cluster introduces heavy latency
+and complex locking issues.
+This is why Spark's approach of using
+lineage instead of replication is so
+revolutionary.
+It allows us to be 100 times faster
+than Hadoop.
+While remaining completely fault
+tolerant.
+I'll see you in the further lessons
+where we'll deep dive into these
+concepts. Till then, happy learning and
+thank you so much.

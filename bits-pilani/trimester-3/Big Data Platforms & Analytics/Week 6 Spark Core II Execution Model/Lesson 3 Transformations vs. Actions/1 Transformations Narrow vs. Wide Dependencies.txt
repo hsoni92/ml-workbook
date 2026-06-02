@@ -1,0 +1,71 @@
+Now that we understand how Spark
+optimises code through lazy evaluation,
+we need to look at the skeleton of that
+optimisation, which is dependencies.
+When you chain transformations together,
+you are creating a parent-child
+relationships between RDDs.
+Understanding the type of dependencies
+between these RDDs is the single most
+important factor in predicting your
+job's performance. First, let's look at
+the narrow dependencies. As you can see
+in the diagram on the slide, in a
+narrow dependency, each partition of
+the parent RDD is used by at most one
+partition of the child RDD. Think of
+this as 1 to 1 or a many to one
+relationship with the same node.
+Typical examples include operations
+like map, philtre, or union, because
+the data required. For the child
+partition is already present in the
+single parent partition. Spark can keep
+the data locally. There is no shuffle
+involved here. This allows Spark to
+pipeline these operations, executing
+them in a single sweep of memory. On
+the other hand, we have wide
+dependencies. These occur when multiple
+child partitions depend on data from a
+single parent partition. You can. See
+this visually in the crosshatch pattern
+in the diagram for operations like
+group by key or certain types of join.
+This forces what we call a shuffle.
+Spark must move data across the network
+to group related keys together on the
+same physical node. Shuffles are
+expensive. They involve disc input
+outputs, data serialisation, and
+network overhead. In the world of spark
+performance tuning, wide dependencies
+are the boundaries we watch most
+closely. On the next slide, we see how
+this maps out into the actual execution
+flow. Every time Spark encounters a
+wide dependency. It creates a shuffle
+boundary.
+This is where one stage of the job ends
+and a new one begins. Think of it this
+way. Transformation flow, your narrow
+dependencies like map and philtre are
+queued up in a lineage graph. Shuffle
+boundary. So the moment you call a wide
+dependency, Spark knows it has to stop,
+redistribute the data, and start a new
+stage, then distribute a task. These
+stages are then broken down into final
+tasks that are scheduled on your
+available. Worker nodes. So just to
+summarise, narrow dependencies are fast
+and stay local, but wide dependencies
+are global and requires a shuffle.
+Understanding this distinction is how
+we move from just writing spark code to
+truly mastering spark performance. In
+our next video, we'll look at how
+actions act as a spark plug to trigger
+this entire flow. I'll see you in the
+next module. Thank you so much. Till
+then, happy learning.

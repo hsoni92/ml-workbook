@@ -1,0 +1,54 @@
+Now, our app is running inside the
+container, so now let's uh. Test the
+prediction end point, OK?
+For the main event, testing the
+prediction and point containing our
+feature, we need to send a post request
+with a JSson payload containing our
+feature like we have did it for our Uh,
+no app, right. So before running, let's
+stop, uh. The app which is
+Running locally, so you can do control
+and see.
+So you can see this app has been
+terminated, but uh our container is
+still running, right?
+So let's, uh,
+Um
+Call the health checkup endpoint, and
+you can see it's running, called the
+model info. Still it's running, and now
+call the prediction.
+So, change the number.
+And you can see it's uh running.
+Right?
+Finally, let's uh clean up our
+environment by stopping and removing
+the container. To conclude, uh, we
+started with a Python script, wrapped
+it in a fast API service with a clear
+input output.
+Contracts, right? And then containerize
+it using a Docker file. The resulting
+docker image is a self-contained
+immutable artefacts that guarantees our
+model will run exactly the same way,
+whether it's uh on your laptop or in a
+production data centre. So this is the
+fundamental goal of uh model serving
+and continuization in uh MLOs.
+Right? So let's uh try to
+Stop the container.
+Uh, you can also do it, uh, using
+topper desktop. So let's, uh, stop it.
+Now, this has been stopped. Now, let's
+try to check the healthier.
+So, you can see, now we're getting the
+error, all end points are.
+Dead, right?
+Because we have stopped our container
+over here.
+So yeah, that's all about uh converting
+your docker file into a container and
+uh running your application inside the
+docker.

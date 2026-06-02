@@ -1,0 +1,59 @@
+Welcome back, learners
+In this video, let's understand what
+makes LLM so good at natural language
+generation.
+LLMs work very well for natural
+language generation because they are
+able to capture long range dependencies
+over text. So how we saw with RNNs that
+after multiple different sentences, it
+would forget what was there in the
+first sentence.
+This is not the case with LLMs. Next,
+LLMs are able to generate coherent
+multi-sentence text, so based on what
+you ask, it can generate. Essays, it
+can generate multiple paragraphs, right,
+which was not possible earlier. And
+what you ask is also popularly known as
+the prompt.
+Finally, LLMs adapt output based on the
+input instructions.
+The output of an LLM will directly
+depend on your prompt, which is the
+input instructions, right?
+Now it is very important to understand
+that. While it seems that LLMs are very
+intelligent, very capable, and they're
+able to reason and think.
+It is not true. LLMs at the end of the
+day, are just.
+Next
+Word
+Prediction engines.
+They are next word prediction engines.
+They're very capable next word
+prediction engines, which makes it seem
+like they're able to reason and they're
+able to think on their own, but that's
+not true. They're not smart per se.
+LLMs generate tokens based on
+probability and not understanding. So,
+for example, the cat sat on.
+Matt
+Let's imagine that it generated mat,
+however, it would have had different
+options, for example, table, floor,
+desk.
+Why for this particular example the LLM
+chose Matt is because the. Probability
+of this token was higher than the
+probability of the other possible
+tokens. Right?
+Also, output quality depends heavily on
+how we prompt the LLM.
+And this directly will lead us to our
+next lesson, which is on prompt
+engineering.
+All right. I'll see you there then.
+Thank you.

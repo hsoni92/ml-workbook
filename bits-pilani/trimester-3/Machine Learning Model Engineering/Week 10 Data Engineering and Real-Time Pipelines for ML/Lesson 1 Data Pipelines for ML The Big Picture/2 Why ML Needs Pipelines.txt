@@ -1,0 +1,30 @@
+Let's contrast the world.
+Of a notebook with the world of
+production pipeline. In a notebook, you
+manually load a CSV or run one of SQQL
+query, do some ad hoc cleaning and join.
+Runs, sells, on whatever order works,
+and as long as it works, once you're
+happy in production, that's not enough.
+Data needs to show up every day, every
+hour, or even every second. Steps must
+be automated, repeatable and observable,
+with clear alerts when something breaks.
+This jumps from one of notebook to
+reliable pipeline is one of the biggest
+shift when turning machine learning
+into a real product.
+So where do data pipeline fits in the
+machine learning cycle?
+They feed at least 3 major stages.
+Training, where we use historical data
+to build model, validation, where we
+evaluate models on fresh or held out
+data, and inference, where we compute
+features and predictions in production.
+If data is late, training and batch
+scoring gets delayed. If data is wrong,
+your validation metrics lie and your
+production decision break. That's why
+just run this notebook again is not a
+strategy, you need robust data flow.

@@ -1,0 +1,50 @@
+Let's connect back to what you did in
+M2. In Module 2, we focused on clients,
+scripting that call, predict in batch
+or online pattern.
+And metrics like latency, throughput,
+and cost in serving layer, it is where
+the metrics become real. Latency
+depends on how quickly this end to end
+serving flow runs and requests paths to
+model. Throughput depends on how well
+service manages concurrency and
+resources. Cost depends on your CPU,
+GPUs, and memory the service uses to
+keep up with traffic. In other words,
+The model artefact is just potential,
+the model service is what turns
+potential into real measurable systems
+that live in your product.
+To wrap up this video, we define model
+serving as running a long-lived service
+that loads a model, listens for
+requests, runs inference, and return
+responses. We looked at the core
+responsibility of that serving layer,
+managing the model life cycle. In the
+server, validating input and enforcing
+schemas, running inference efficiently
+under real world constraint, formatting
+responses cleanly and handling all the
+operational concerns like logging
+errors and concurrency. In the next
+theory videos, we will explore
+different ways to implement this. In
+topic 2, we will look at serving
+architecture, monolith, microservices,
+serverless. In Topic 3, we will talk
+about APIs in machine learning, R
+versus GRPC, synchronous versus
+asynchronous. In topic 4, we will cover
+deployment, rollouts, and auto scaling,
+how these services are rolled out and
+scaled in the real environment. The
+mental hook is the responsibility stays
+roughly the same, but the architectural
+pattern you choose changes how you
+build, deploy, and operate your model
+service. In the labs for this module,
+you'll actually see these ideas in code
+with fast API service and a docker
+image. Thank you.

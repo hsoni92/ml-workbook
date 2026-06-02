@@ -1,0 +1,37 @@
+Welcome back learners. Now let's
+discuss some practical guidelines for
+your prompt engineering tasks. Now,
+while these prompting guidelines will
+help you generate a very robust prompt,
+but you must understand that prompting
+is an experimental process. It is not a
+one-time step. You will have to keep on
+generating new and new prompts and
+experiment with them to arrive at the
+final prompt for your task. Now let's
+go ahead and discuss the guidelines.
+The first one being that you must be
+explicit about the task. Explain the
+task with as much details as possible.
+Specify the desired format for your
+output, right? The more specific you
+will be, the more close the LLM will
+get your response to what you need.
+The third guideline being avoid vague
+instructions.
+Which is very self-explanatory.
+The more specific instructions you will
+give, the more better and more.
+Deterministic the output of your LLM
+will be.
+Finally, add constraints when needed.
+If you need the response in a specific
+format, you must specify it to the very
+detail.
+Finally, test and iter. Keep on
+creating different versions of your
+prompt and keep on testing and
+experimenting with them. I hope these
+guidelines help you create the right
+prompt for your task. And I'll see you
+in the next one. Thank you.

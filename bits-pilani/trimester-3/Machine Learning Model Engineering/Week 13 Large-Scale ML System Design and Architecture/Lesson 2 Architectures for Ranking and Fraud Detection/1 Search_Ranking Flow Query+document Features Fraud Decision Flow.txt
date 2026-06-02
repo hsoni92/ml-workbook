@@ -1,0 +1,90 @@
+Welcome to Model 13, Topic 2,
+architectures for ranking and fraud
+detection. In this video, we will
+compare two common machine learning
+architectures, ranking systems for
+search results and feeds, and fraud
+detection systems for payments and
+account activity. Both need data
+pipeline, online scoring, and
+monitoring, but their constraints and
+priorities are very different. Ranking
+models cares a lot about ordering,
+relevance and engagement, fraud models
+cares about risk, compliance, and the
+cost of errors. We will walk through
+architecture for each, then highlight
+what's shared and what's unique. First
+ranking, Imagine a user searching for a
+running shoe on an e-commerce website.
+The system must retrieve a lot of
+potential product, and then rank them
+in useful order. The constraints here
+are very tight latency, the ranking
+step might get only 50 to 150
+milliseconds. Success measured by
+online metric like click through rate,
+conversion rate, or dwell time.
+And crucially, users mostly interact
+with the top of the list. If the first
+few results are bad, the experience
+feels broken, even if overall recall is
+high.
+So the architecture is designed around
+fast, high quality ordering.
+Under the hood Ranking sits on top of a
+strong offline data and indexing layer.
+First, there is a document or item
+store, products, articles or videos,
+with all their metadata and possibly
+precomputed embeddings.
+Then we build a search index. This is
+where we apply classic information
+retrieval technique like BM 25,
+inverted indexes, and possibly a
+separate vector index for semantic
+search using embeddings. In parallel,
+we run features pipeline to precomput
+popularity features. Such as historical
+click through rates, quality signals,
+or business scores, all of this feeds
+the online ranking pipeline.
+The online path for ranking looks like
+this, first. The user query, for
+example, running shoes, arrive at
+search service.
+A retriever uses lexical search, vector
+search, or both to pull back 100 or
+1000 candidate documents. We then
+enrich each candidate with feature.
+Query feature
+like length or detected intent,
+document feature such as popularity and
+metadata. User feature from the Feature
+store like past interactions.
+And Machine Learning rankers scores
+each candidate given the query. The
+document, the user, and context. 5th,
+we apply post processing, business
+rules, diversity constraint, filtering
+of unsafe or unavailable items. Finally,
+we return the top end results to the UI.
+All of this must meet a strict latency
+budget to keep search snappy. Ranking
+system live and die by online metrics
+and experimentation. We watch metrics
+like click through rate, conversion
+rate, dwell time, and bounce rate to
+see how well the ranking is doing. When
+we have a new model, we run AB tests.
+One group of users sees baseline model,
+another sees new rancour, and we
+compare their behaviour. The feedback
+loop is important. We log queries,
+which items are shown, which were
+clicked. Or ignored, and we use these
+logs to generate training data for the
+next version of the ranker. So ranking
+architecture are tightly linked to
+experimentations and continuous
+improvements.

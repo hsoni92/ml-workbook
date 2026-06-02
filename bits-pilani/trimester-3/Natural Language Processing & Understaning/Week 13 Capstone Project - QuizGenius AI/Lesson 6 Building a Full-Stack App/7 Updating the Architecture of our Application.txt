@@ -1,0 +1,137 @@
+Welcome back, learners, to the final
+video of this module and your capstone
+project. In this video, let's quickly
+revisit our base project architecture,
+the architecture diagram, which was
+architecture version 1, and let's see
+what all updates that we can make to
+this. So for that, what I've done is
+I've just made a copy of it. So that we
+don't disturb the version one. Right?
+Let me move this to your top right.
+And let's add more details now. So, can
+I not.
+OK, this doesn't work like this, so
+let's
+Create new.
+I think this should be good enough. We
+have the front end. Which I can copy
+and move it here.
+This front end is a.
+Streamlet front end, right? So let me
+add that detail. Streamlet front end,
+which is app. Dot
+I is the file name. This front end has
+3 pages. Let me select a different
+colour. Maybe
+Maybe this
+So this front end has 3 pages. One is
+the Set up Then 2nd is the quiz. And
+then finally we see the results.
+Screens. So these are your
+Since
+Our pages, right?
+All this
+So all of this is session managed.
+In the function st.
+Session underscore.
+State, right? This is optional. This is
+just to explain it to you. OK, so we've
+updated our front end. Now, let's
+update the back end.
+So let me
+Quickly
+Track this here.
+Right? I think there should be enough.
+We will get rid of this box, and we
+will create a new box.
+Thank God for technology, otherwise my
+box was hideous.
+It
+the he.
+Back can, it can be healed. Right,
+Backend was in Python, so no need to
+mention that. Although what I can
+mention is the file name, so quiz.
+Engine
+Dot
+I, right? Now, what were the steps? So,
+first was to validate.
+Inputs
+Then Build
+The
+prompt.
+Finally,
+Generate
+This,
+so this can come. In a separate box,
+these are the steps that happen in the
+back end logic. So this is my
+Back in logic, right? Now, let's come
+to the API management.
+There's no major change here. Although
+what we can add is that This EPA.
+Or the Gemini LLM was being handled via
+the environment file. So let me select
+one colour, maybe this, right? Or let's
+select dark green with the light green,
+doesn't really matter. So there is a.
+Dot NV.
+File With which there is.
+Always a connection, right? So it was
+sent.
+And what was that connection? The
+API key. Perfect. I think we have added.
+All the details
+For our application, right? We can do
+one more thing. We can.
+Put everything.
+In one bucket, so let's select a colour.
+Suitable colour
+Maybe this is what we've not used so
+far. I'll try to make a big box now.
+OK. Almost. Let's try to increase the
+size.
+And
+you, right, so this will be our
+application.
+was
+Genius
+AI
+Bang on.
+Perfect.
+Let's do one more small detail.
+You
+Let me move it. Oh,
+my OCD was triggering, so, OK, I think.
+Just delete this. We don't need this.
+And let's call it
+Question is AI.
+Project
+Architecture
+Perfect.
+Yes, everything is sorted. Everything
+looks good now. So this is our updated
+architecture. What we can do is we can
+quickly take a snapshot of this and add
+it to our folder. All right, so this
+marks the end of this module. I hope
+you've really enjoyed this, and I hope
+that this inspires you to not only make
+your own tweaks to this application,
+but also develop your own applications
+with a proper back end, proper front
+end, right? And the package management.
+OK. One quick teaser Next time we meet
+in the live session, I will have some
+good surprises for you. I intend to
+make some more, you know, nuanced
+tweaks to this application that I will
+show it to you in the live session, and
+then we will push everything to our
+GitHub repository, right? And that will
+mark the close of this project. All
+right, so I hope you're excited for
+that. I sure am excited, so I'll see
+you then. Till then, take care. Thank
+you.

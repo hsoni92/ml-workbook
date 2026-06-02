@@ -1,0 +1,102 @@
+Welcome back, learners. In this lesson
+so far, we have implemented sentiment
+analysis using the two most popular
+approaches, one with NLTK and Ver
+sentiment, and the other with the BIRT
+model. Now let's also implement
+sentiment analysis with some alternate
+packages like Flair and Spacey. So
+let's begin with sentiment analysis
+with the flare package. If you remember
+our module on NER and POS, we discussed
+Flare. At detail, right? It is a Pytosh
+deep learning based NLP package. So
+let's start by downloading it.
+While it downloads, let me import the
+packages as well.
+It takes a while to download the flare
+package as it's very huge. So the, so
+the download is complete. Now let's
+import. So what I've done is from
+flare.data, I'm importing sentence,
+which will Implement the NLP pipeline
+on our basic text, and then I'm
+importing the classifier method which
+will implement sentiment analysis for
+us.
+OK, now let's prepare data. So let me
+start with one sentence first and then
+we will implement it on the list of our
+sentences.
+So, let's say I love Lily.
+I will create a variables called
+sentence, and then I will pass our text
+through this sentence method.
+Great. Now let's load the tagger.
+So what I've done, I've taken the
+classifier model from Flair and then
+loaded the sentiment analyzer.
+We will let it download
+OK, it's asking me to grant the access
+to HF token, so which I will do. Which
+is the hugging face token for the pie
+torch models.
+OK, great. Now it's downloaded, as you
+can see.
+Now what I'll do is I will take this
+stagger. And do and run on a
+preprocessed sentence. So let's do that.
+Let's also print the sentence after
+that.
+OK, so the sentence is, I love Delhi,
+and the sentiment is positive with a
+99.12% confidence. Great. Now let's
+implement the same pipeline on our
+original data set.
+Because here it's the same as the
+previous implementations.
+Now let's implement.
+Sentiment analysis.
+Using flair and I rate on this list of
+data.
+Here I will just print a delimiter or
+just lines.
+No.
+I slowed the tiger, which we did here.
+I'll copy it from here.
+Classifier. load sentiment.
+Now let's loop through our list of
+sentences, which is this.
+So for sent in sentences.
+Reprocessing of our sin.
+Then
+Ager.
+Dot Predict
+Intense. And let's print sentence.
+Great. So let's look at the results. So
+I love this project. It's a positive
+with 99% confidence. This is the worst
+experience ever, negative with 100%
+confidence. This movie was OK, nothing
+special. The overall sentiment
+predicted has been negative, with a
+99.9% confidence. Now let's go through
+the. More difficult ones. I usually
+hate waiting, but this was worth it,
+and it has predicted the sentiment
+positive, which is correct, as it is,
+giving more emphasis on whatever is
+falling after the but.
+99% confidence here.
+The food was good, but the service was
+terrible. Overall sentiment is negative
+with a 99% confidence. Great. So I hope
+you enjoyed this and you've seen the
+effectiveness of Flair.
+As usual, since it's a very big package,
+it takes a lot of time to download and
+implement. However, it is very
+effective, right? So I'll see you in
+the next video where we will implement
+sentiment analysis using the Spacey
+library. I'll see you there. Thank you.

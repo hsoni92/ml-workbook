@@ -1,0 +1,84 @@
+In our last lesson, we explored the Cap
+theorem. And the difficult choice
+between consistency and availability.
+But how do we actually tell a computer
+to be consistent? In the world of
+traditional databases, the kind that
+power your bank account for your
+airline bookings, there's a set of
+rules we follow to ensure that data
+never gets corrupted. We call these the
+asset properties. Today we're going to
+break down what ASID stands for and why
+it has been the gold standard for
+reliability for decades. The first
+letter.
+Stand for atomicity. Think of a
+transaction like a single atom. That
+cannot be split. Imagine you are
+transferring $50 to a friend. This
+actually involves two steps. 1st, $50
+is taken out of your account, and then
+$50 is put into your friend's account.
+What happens if the power goes out
+right after the money leaves your
+account, but before it reaches your
+friend? In a non-atomic system, that
+$50 just disappears into thin air.
+Atomicity guarantees that either both
+steps happens, or none of them.
+If
+the 2nd step fails, the 1st step is
+automatically undone.
+It's all or nothing
+Next is consistency.
+Consistency ensures that a transaction
+follows all the house rules. If a bank
+rule says an account balance cannot be
+negative, the database will reject any
+transaction that tries to break that
+rule. It keeps the data valid at all
+times, and then isolation. It is about
+privacy between transactions. If you
+and your spouse both try to withdraw
+the last $100 from your joint account
+at the exact same millisecond. The
+system makes them wait in line. One
+transaction must finish before the next
+starts. They act as if they are the
+only ones using the database.
+Preventing them from tripping over each
+other. Finally, we have D, which is
+durability. This is a simple but
+critical promise.
+Once the system tells you transaction
+successful, the data is written in
+stone. Even if the entire data centre
+loses power, or server crashes 1 2nd
+later, when the system reboots, your
+transaction will still be there. It's
+not just sitting in the short-term
+memory or RAM. It has been safely
+tucked away in a long-term storage disc.
+This is what allows you to sleep
+soundly, knowing your money didn't
+vanish during a midnight system update.
+Why asset is hard for big data? Asset
+is perfect for financial services,
+inventory management. And legal record
+keeping. It prioritises the truth above
+everything else. However, as we learned
+in Module One, the truth is expensive.
+To keep everything perfectly atomic and
+isolated across a global cluster of
+1000 or 1 million machines requires a
+massive amount of coordination.
+Right? So this coordination creates the
+network tags and slows things down.
+Is there another way? In our next video,
+we'll look at the base model, the relax,
+chill younger sibling of acid that
+powers the massive scale of social
+media and search engine. I'll see you
+in the next lesson. Thank you so much.
+Happy learning.

@@ -1,0 +1,90 @@
+First, let's talk about what what
+doesn't change in CI or machine
+learning. You still have a software
+project with feature engineering code,
+serving code for APIs or batch jobs,
+utility modules, configuration, parsing,
+etc.
+All of that still needs standard CI.
+Linting and formatting checks unit
+tests that validate core logic.
+Integration tests that make sure
+component works together, example like
+that the API starts and responds to a
+healthy checks.
+A typical CI pipeline well. It will
+check out the report.
+Install dependencies Run tests and
+letters, and fail quickly if anything
+breaks. So the base layer of CI for
+machine learning looks exactly like CI
+for any other software project.
+On top of generic tests, machine
+learning projects benefit a lot from
+machine learning specific unit tests.
+Example Tests of feature feature
+functions.
+Do they produce the right shape and
+type? And avoid
+NAN, which is also called as not a
+numbers.
+Tests for pre and post processing logic.
+Can we safely convert raw inputs into
+model ready features and then decode
+model output back to business friendly
+values?
+Tests for model loading and predictions.
+Can we load a model artefact and run
+the function predict? On a small dummy
+batch without crashing, these tests are
+still fast and lightweight, but they
+catch a lot of oops, I changed the
+feature code and broke the model input
+type errors. Type of errors before they
+reach production. In CI you want these
+tests to run on every change.
+Next, machine learning CI often
+includes data validation. Even in CI,
+where you might only have a small
+sample of data.
+You can still check
+Schema
+Are the expected column or field
+present? Are there types, what we
+expect, integer, floats, or string?
+Basic distributions. Are null rates
+within a reasonable range? Are values
+within expected bounds? These checks
+can run on a small data set.
+Checked into the rapport or a small
+slice pulled from a data source
+in a test environment. The goal is not
+to do full data science in CI, it's to
+catch obvious issues. A column gets
+renamed. A type change from numeric to
+string. A field A required field
+disappears.
+Catching those CI is much cheaper than
+finding out after deployment.
+One extra trick many machine learning
+teams use in CI is a tiny smoke.
+Training run. The idea is. Take a very
+small subset of the data, train the
+model for just a few steps
+or epochs. And then stop. The purpose
+is not to get a good model, it's to
+catch issues like the training loop
+crashing. The mismatch between loss and
+output.
+Logging or ML flow integration failing.
+Or shaping the pipes breaking somewhere
+in the pipeline. Because this uses a
+small sample and very few steps, it
+stays fast enough for CI. You can think
+of it as. Can we still successfully run
+the training skips end to end on a tiny
+data set?
+If that breaks, you definitely don't
+want to start the full retraining job
+on real data.
+Thank you.

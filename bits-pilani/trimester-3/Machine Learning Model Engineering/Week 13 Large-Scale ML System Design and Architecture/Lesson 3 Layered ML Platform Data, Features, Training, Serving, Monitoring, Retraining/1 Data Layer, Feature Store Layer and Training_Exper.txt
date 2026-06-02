@@ -1,0 +1,29 @@
+Welcome to Module 13, Topic 3, layered
+machine learning platform. In this
+video, we will step back and look at
+the machine learning platform as a set
+of layers, data, features, training and
+experiments, serving and infrastructure,
+and monitoring, retraining, and
+governance. Every module from Module 1
+to Module 12 fits somewhere in this
+stack.
+By the end, you should be able to point
+to any part of the production machine
+learning system and say that belong to
+this layer, and these modules talk
+about it. Here is the big picture, we
+will think of the machine learning
+platform as five layer stack data,
+features, training, and experiments.
+Serving and infrastructure.
+Monitoring and feedback.
+Each layer depends on.
+The one below it, and exposes
+capabilities.
+To the one above it.
+A healthy machine learning platform is
+not just one giant monolith, it's a set
+of well defined layer that can evolve
+somewhat independently, as long as
+their interface stays clear.

@@ -1,0 +1,269 @@
+Welcome back, learners. In this video,
+let's analyse the brown corpus.
+Welcome back learners. So far in this
+lab session we have seen how to
+download different text corpus, right?
+We downloaded the Guttenberg corpus and
+we downloaded the brown corpus. Then we
+deep dived into the Guttenberg corpus
+analysis and drew insights from it. In
+this video, let's analyse the brown
+coppice and make our observations about
+it.
+So let's get started.
+Firstly, what is the objective of this
+analysis? Let's define that first. The
+main objective of this analysis of the
+brown corpus is to show you how
+different brown corpus is from the
+Gothenburg corpus. The brown corpus is
+balanced across genres. It contains
+text from different genres, and it
+represents modern American English,
+whereas Guttenberg had texts from
+classic literatures of English language,
+right?
+Finally, the brown corpus allows us to
+study variations in different domains
+of the English language. In this lesson,
+we'll explore different categories of
+the English language, compare
+vocabulary across these different
+domains, and analyse linguistic
+variations quantitatively.
+So now let's explore different
+categories in the brown corpus.
+So first I import brown from NLTK.
+corpus. We've already downloaded the
+corpus, right? And then we run
+brown.categories. Let's see, OK, so we
+have these different categories which
+are different genres, right? So
+adventure, fiction, government, hobbies,
+learned, lore, mystery, news, religion,
+romance, sci-fi, right? So many
+different genres. Each category, since
+we've run brown out categories, each
+category is a different genre of
+English language, right? Let's now
+calculate the total size of the brown
+caucus.
+So you see that the brown corpus is
+huge. The number of words in the brown
+corpus are 11,61,192.
+These many different words in the
+entire corpus and not a particular
+genre, right? Do note that the brown
+corpus is designed to represent
+language usage and not a single author
+or style. It's very balanced across
+genres.
+Let's now compare some categories by
+their size. So let's take the news
+category and the fiction. So you do
+brown dotwords and within categories
+you pass news, and here let's pass
+fiction.
+Let's run this
+So number of tokens in news, so you see
+1,554, and number of tokens in fiction,
+68,488, right? So what do we observe
+from this? We observe that different
+genres use language very differently.
+It's very specific to the genres. Token
+count alone does not explain the
+lexical richness of that genre.
+Now let's compare these two categories
+further and calculate the vocabulary
+size.
+So I've created this function. What it
+does is it removes everything except
+alphabets, right? So all your
+punctuations, your white spaces, your
+numbers, everything will be removed. We
+run this function prep process on news
+words which we calculated here.
+These are the number of words in the
+news category, and we run this function
+on fiction words, right?
+Next, to calculate the size of
+vocabulary, which means the number of
+unique words used in the entire text
+for this category, we just convert this
+list into a set which will remove the
+duplicates. We repeat this for fiction,
+right? And now let's print both of
+these.
+So you see that the category news or
+the genre news had these many words.
+After removing all the non-alphabetic
+words, we're left with 11,151 words. Of
+which The type token ratio is 0.1334,
+and the same for fiction. The size of
+the vocabulary is 8141, and the type
+token ratio is 0.1426, right? Although
+the size of the vocabulary is very
+different, but the TTR numbers are
+pretty similar, right? So what is our
+observation from here?
+We can say that fiction genre shows
+often higher lexical diversity, right?
+So you see that number of unique words
+were less than the number of unique
+words in news.
+However, it's TTR was a little higher
+than news, right? So that's why we can
+make the observation that fiction often
+shows higher lexical diversity, and
+news language is more standardised and
+repetitive.
+Right? Now, let's calculate frequency
+distributions.
+So again, let's import counter from the
+collections package. And let's run it
+on the news vocabulary and fiction
+vocabulary. Which we calculated here.
+Great.
+So you see, the top 10 words in news
+are the, of, and similarly, the, and to
+within fiction. Most of these words
+look like the top words, right? They
+don't have much. Lexical meaning. Yeah
+So let's remove these soft foods.
+So what do we do? First we download the
+list of stopwords. And here I've
+created a function. What it does is And
+I've written the name so that it
+explains you well. Obviously you can
+replace it with a shorter name. This is
+just for explanation.
+First we philtre the words. So what,
+what we're doing is we are removing
+stop words.
+And then we are finding the most common
+words.
+Right, and we are returning both of
+them. So let's run it for news. So we
+run, we create these variables called
+filtered words for news and common
+words for news. And we run this
+function on. The number of words in
+news category and we passed 10 here as
+the number of most common words that we
+need, right? So let's print this first
+let's run this function and then let's
+apply it on this, right? So after
+removing of stop words we have the
+total words are 46,867. Unique words
+are 11,025, right?
+The different words that were used in
+news category were Fulton County grand
+jury said Friday investigation, all of
+these, right, sound a lot like news.
+And the most common words used are said.
+Word, new, one, right? These are all
+the words after removing stoppers,
+right? So let's also apply this on the
+fiction genre.
+So,
+Fiction
+Let's this news. With fiction
+Right?
+And let's add this back here. OK, so I
+think we have fixed our errors.
+Let's run and see.
+Right, so there is an error here. This
+has not been defined. We need to define
+this first.
+Filtered word fictions.
+Oh, it's not fictions, but fiction.
+Like It shall work now. Yes, it did.
+So you see, the total words were, after
+removing stop words, of course, the
+total words were 28,223. And unique
+words were 8,015, right? And you see
+that now after removing stop words, the
+most common occurring words are would,
+said one, could, like, man, back, right?
+So this makes much more sense.
+Now let me add something for you, right?
+So if as per your use case, you feel
+that, oh, I don't like this word, it
+does not add any meaning, right? I'm
+just taking said as an example. You can
+take any other word. It does not add
+any meaning. I want to remove this,
+right? So you can take this word. And
+you can add it to your. List of
+softwares, right? How do we do that?
+So first, let me show you what the stop
+words looks like. Right,
+all these words are part of the of
+words.
+Let me also show you the size of this
+set.
+See, we have 198 different stop words.
+Let's add
+Add a new word to our List of sculptors.
+So stopwords. a.
+Said, right?
+Now, let's
+Calculate this And confirm if we have
+successfully added said or not.
+199. Yes, so we have added said to our
+list of soft words. Now if you run this,
+so you see the most common occurring
+word here was said. Let's run it again.
+It's gone. It's been replaced with the
+2nd most, which was wood. It's also run
+it here for consistency. Great.
+Now what we need to observe from here
+is that
+More institutional and formal terms
+were used in the news category, right?
+Whereas more narrative, descriptive,
+and also creative words were used in
+the fiction category. The language is
+the same, however, the statistical
+behaviour of the words used is very
+different. In different genres Right?
+Now let's
+visualise this. So let's import Matt
+Rotlib.
+So you see, the most common occurring
+words, they have been repeated so many
+times.
+Let me run this for.
+The cleaned
+List as well.
+So what is the name of, yeah, filtered
+words fiction. I think this is what we
+need.
+No, not here. Here.
+Let's run this
+Yes, got. We've run into another error.
+Let's find out what the issue is.
+Mm. I think this should not be that. We
+need to find the most common. 000, OK,
+OK, OK. We need this and not that. OK.
+OK, perfect. So you see, we have the
+words after removing stop words, now
+you can visualise that. Let me also
+rotate these labels, so. PLT.XX.
+Rotation equals 45. Let's rotate it by
+45 degrees.
+All right.
+Yeah.
+Much more visible.
+Right? So what do we observe here?
+Different high frequency words have
+been used in different genres. And
+these high frequency words show us
+clear domain signatures.
+Right? So this was our analysis of the
+brown corpus. I hope you've enjoyed
+this lesson and this lab session.
+And I'll see you in the next module.
+Thank you.
+That's all for this video. I'll see you
+in the next one. Thank you.

@@ -1,0 +1,86 @@
+All right, Linus. Welcome back. Now
+that we've understood the concept of
+POS tagging and also implemented it in
+Spacey, let's now go ahead and
+implement POS tagging with a few other
+NLP libraries. So in this video we will
+implement POS tagging with NLTK, the
+most traditional NLP library, maybe not
+the most popular, but certainly most
+traditional, right? So let's go ahead
+and implement POS tagging with NLTK.
+So what I'll do is first we will deal
+with imports, so let me import.
+NLTK then from NLTK tokenize import
+word.
+Take a nice, right. Now we need some
+resources, so. Necessary.
+Resources. So let's download.
+Yeah, he copied it as well, so.
+Punk tab as usual. Then we need
+averaged.
+Petron
+I hope you guys are aware of what
+Perceptron is from your deep learning
+course.
+And tax sets Jason, especially for a
+very helpful purpose.
+All right, so download is done.
+Now, let's prepare our text data set,
+so I have something handy.
+She
+There's a sentence, NLTK is a powerful
+library for natural language processing.
+OK. Now, let's tokenize. So, tokens,
+word.
+Tokenize
+Text, right? So if you want to see what
+the tokens look like. It is a list of
+all the words, right, now.
+We need to Implement
+POS study
+So Ads as equals NLTK.
+POS tag, right, and you pass your
+tokens.
+Now let's print the tags. So perfect.
+We have all the tokens and now we have
+all the tag, the POS tag against each
+token. Let me.
+Comment this out and let's print it
+this way, or actually let me remove
+this print. Let's see if it is a better
+view. Yes, it is. So we can see NLTK is
+NNP.
+Is Is a VBZ. Now you must be wondering
+what is this VBZ DT, right? So, this is
+where this resource will come. Andy,
+let me show you. So, NLTK.help.
+U P E N N Tag it we will access the tag
+it and now we can pass any tag set or
+any tag in this tag set and it will
+fetch the definition of it for us. OK,
+so NNP is a noun proper and singular,
+right? So NLTK is a noun. Is there any
+NN
+right? NN is also a noun, so.
+And then is also a noun, right? It's a
+common noun, whatever.
+Now, if you're wondering what VBZ is,
+let's pass VBZ. Right, it's a verb
+present tenseense third person singular.
+So is, is the verb here BT must be
+something like a determinant, but let's
+check it out.
+Determiner. Right, and then the
+definition of it. Cool. So this way you
+can find whatever the meaning of the
+tag is. I have. Collated a table for
+you so that you can quickly refer to
+the most common tags, right? If there
+is a tag that is outside this table,
+you know how to get the definition of,
+right? So this was all about
+implementing. POS tagging with the NLTK
+framework. I hope you all enjoyed this,
+right, and I will see you in the next
+video. Thank you.

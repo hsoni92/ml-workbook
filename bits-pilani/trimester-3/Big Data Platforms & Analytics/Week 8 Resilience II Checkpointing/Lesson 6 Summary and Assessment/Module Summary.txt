@@ -1,0 +1,57 @@
+We have reached the end of the module
+throughout these lessons. We have moved
+beyond basic fault tolerance to explore
+the advanced resilience strategies
+required for complex real world big
+data processing.
+We started by identifying the critical
+limits of RDD lineage. While lineage is
+the backbone of spark resilience, we
+learned that it can become a liability
+when it grows too deep.
+Leading to driver bottlenecks. And the
+dreaded stack overflow error.
+Let's review our key findings from this
+module.
+Strategic truncation.
+So we saw how checkpointing acts as a
+stability anchor by physically cutting
+the lineage graph and saving data to
+reliable storages. Like HDFS or S3.
+Then internal mechanics. We went under
+the hood to see how Spark clears the
+dependency list of an RDD. Allowing the
+garbage collector to reclaim the driver
+memory, then caching versus
+checkpointing, we differentiated
+between these two tools.
+Noting that while caching is for
+performance and reuse within a session,
+checkpointing is for extreme
+persistence and lineage management
+across sessions. The trade off we
+analysed the recovery curve to
+understand that while checkpointing has
+a. Up front IO cost, it prevents the
+exponential recovery times. Which are
+seen in raw linear chains. If there is
+one thing you take away from this
+module.
+Let it be this.
+Checkpointing is not just for recovery.
+It's a stability strategy for large
+scale iterative processing.
+Whether you're building complex machine
+learning pipelines or traversing
+massive graphs with graphics,
+checkpointing is the tool that ensures
+your job doesn't run, but finishes
+reliably. It is the difference between
+a job that crashes at iteration 99 and
+the one that successfully completes
+iteration 1000.
+Now that you have completed the videos.
+You can proceed with the assessment of
+this model.
+Thank you so much. I'll see you in the
+next class. Happy learning. Till then.

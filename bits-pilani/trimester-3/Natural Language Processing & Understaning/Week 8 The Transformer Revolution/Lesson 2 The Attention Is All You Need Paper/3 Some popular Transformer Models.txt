@@ -1,0 +1,34 @@
+Welcome back, learners. In this video,
+let's go over some popular transformer
+models.
+The original transformer had both
+encoder and the decoder, however, the
+modern models usually just pick one
+side, for example, the encoder only
+model. However, the modern models
+usually just pick one side. For example,
+the encoder-only models. These are the
+readers, right? For example, Bert,
+Roberta, Disilbert, etc.
+They are very good at understanding
+context. Text classification, sentiment
+analysis.
+Basically, they see the whole sentence,
+left and right, all at once. These are
+then followed by the decoder-only
+models, which are the writers. The
+popular examples are GPT, Lama, Gemini.
+Fun fact, the T in GPT stands for
+Transformers.
+Their strengths are at text generation.
+Right? Basically writing.
+They only see what came before. Then
+there are obviously transformer models
+which are both encoder and decoder.
+These are the translator models, right?
+Examples are some popular examples are
+the T5, BAT. They are very good at
+translation, summarization.
+All right, that's the end of this video,
+and I'll see you in the next one. Thank
+you.

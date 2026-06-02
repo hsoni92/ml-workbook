@@ -1,0 +1,83 @@
+Now let's connect each pattern back to
+its core matrix, the way we score the
+serving strategy batch.
+optimise for throughput and total job
+time. Per row latency doesn't matter
+much. Cost can be optimised with
+scheduling and cheap compute. Online,
+optimise for P95, P99 latency and error
+rate per request. Must stay within
+latency SLOs. Even during traffic
+spikes. Throughput and cost still
+matters, but the user experience sets
+the bar. Streaming, optimise for event
+to action latency and sustained
+throughput. Watch lag and back pressure
+to ensure the pipeline keeps up. Cost
+is about running workers 24/7 in a
+stable, efficient way. It might be the
+same ML model underneath. But the
+serving pattern you choose determines
+which metric you care about most, and
+that drives your engineering decision.
+Let's ground this decision guide with a
+few concrete examples. Scenario one.
+We want to score all customers weekly
+for a churn campaign.
+So the marketing team can decide who to
+contact. No single.
+Customer need a prediction in real time.
+This is a classic batch inference. Run
+a job once a week, produce a table of
+scores. Scenario 2.
+We need to decide in under 200
+milliseconds if a payment attempt is
+likely fraudulent. The payment flow
+can't continue until we make that
+decision.
+This is online inference. One request,
+one response, strict latency. Scenario
+3. We want to monitor login events and
+raise an alert if we see suspicious
+pattern, maybe multiple failed login.
+New device, or strange locations.
+Events are coming in continuously, and
+we care about reacting quickly. This is
+a great fit for streaming inference, a
+pipeline watching the events stream and
+scoring each login as it happens. The
+message here is, don't default to
+online by habit. Match the pattern to
+the business needs. To wrap up module
+two.
+You now have a clear definition of
+moral inference.
+A shared vocabulary for latency,
+throughput, and cost.
+And a mental model for batch online and
+streaming inference pattern. Plus when
+to use each.
+In the M2 lab, we are going to build a
+batch client for our model API. Build
+an online client and simulate traffic.
+Measure and compare for batch total
+time and row per second for online
+average and P95 latency and requests
+per second.
+That will let you feel that trade off
+in. Real number.
+We won't build a full streaming
+pipeline in this module, but the
+concept you're just learning will show
+up again in later module when we talk
+about event driven system and
+monitoring. The big takeaway, a model
+is just a function call, which I called
+about F function of input. How you call
+it, batch online streaming, depends on
+who is waiting, how fast they need the
+answer, and how much data you're
+dealing with. With that, you're ready
+to head on. Into the labs and see Batch
+versus Online Inference in action.
+Thank you.

@@ -1,0 +1,72 @@
+Welcome back, learners. In the last
+lesson, we explored what pause tagging
+is, and in this lesson. Let's explore
+NER or Named Entity Recognition.
+Named entity recognition, or NER, is
+the task of identifying and classifying
+real world entities mentioned in the
+text.
+These common entities, or named
+entities, include, person.
+Person includes names of people. Og ORG
+refers to organisations.
+GPE or LOC, refers to geographical
+locations.
+Date, or time, refers to exactly that.
+Money, a person.
+Refers to monetary amounts. Let's look
+at an example to understand this
+further. Consider the sentence Sundar
+Pichai is the CEO of Google. Let's look
+at the named entities within this
+sentence.
+So Sundar Pichai is the name of a
+person, right? So it will be assigned
+the entity person. And Google is an
+organisation, so it will be assigned
+the entity ORG or org.
+NER moves beyond syntax and focuses on
+the semantic meaning of words. NER is a
+core component of many NLP applications,
+such as information extraction.
+Search and indexing?
+Knowledge graph constructions.
+Question Answering bots.
+Resume passing, document analysis, and
+many more.
+NER enables machines to answer who did
+what, where and when. Now that we have
+understood both NER and POS.
+People often confuse between NER and
+POs, whereas they are totally different.
+Let's look at that.
+So pause tagging includes grammatical
+roll of words. Such as noun, verb,
+adjective, and so on. Whereas any er
+depends on the semantic meaning of text.
+NER identifies real world objects.
+Let's look at an example to understand
+this further.
+Consider the sentence, Apple released a
+new product in India.
+Here the word apple.
+Let's look at its post tagging and NER
+tagging. The pause tagging for Apple.
+Would be a noun.
+Whereas the NER tagging for Apple would
+be an organisation, or.
+ORG
+It's important to note that NER often
+builds on pause and dependency
+information.
+NER also has its own set of challenges.
+It is difficult to implement NER
+because entities can be ambiguous.
+Same words can be an entity, or it can.
+Entity boundaries, often, is unclear.
+Let's look at an example.
+Washington Can be a person, can be a
+location, or it can be an organisation.
+This makes NER highly context dependent.
+That's all for this video, and I'll see
+you in the next one. Thank you.

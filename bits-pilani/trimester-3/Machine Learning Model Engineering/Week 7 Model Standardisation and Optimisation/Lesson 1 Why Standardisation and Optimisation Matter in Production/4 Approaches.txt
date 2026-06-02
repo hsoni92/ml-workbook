@@ -1,0 +1,50 @@
+We will use 3 big levers. First,
+standard model formats like ONNX,
+TensorFlow Light, and Open Veno. These
+help with probability, train in one
+framework, deploy in many run time and
+devices. Second, compression techniques,
+quantization.
+Use fewer bits of weights and
+activations. Pruning Cut away weights
+or channels that don't matter much.
+Knowledge distillation. Train a smaller
+student model to mimic a bigger teacher.
+These directly target size, memory, and
+speed. optimised runtimes like ONNX Run
+time, Tensor RT and XLA. They take a
+model graph and generate a highly
+efficient execution plan on your
+hardware. The rest of module 7 is about
+learning how to use these levers and
+seeing the tradeoff in practise.
+Everything we just talked about becomes
+concrete in the labs. You will start
+with a pre-trained CNN like RESNT,
+mobile net.
+Measure its baseline, the file size,
+average latency, P95 latency, and a
+quick accuracy sanity check. Export
+that same model to ONNX. Run inference
+with ONNX run time. And compare the
+numbers like size, latency, and output.
+The key takeaway you will see is.
+Same underlying model, but once we
+standardise the format and swap the
+runtime, the performance profile
+changes. Later, you can build on this
+by adding quantization and even more
+aggressive optimisations. To close this
+video, let's look ahead. In topic 2, we
+will dive into standard model formats
+ONNX, tensor flow light, Open Veno, and
+when you should use each. In Topic 3,
+we will cover compression techniques
+like quantization, pruning,
+distillation, so we can shrink and
+speed up model while keeping the
+accuracy acceptable.
+In topic 4, we will focus on optimised
+runtimes like ONNX runtime, Tensor RT,
+and XLA, and the tradeoffs between
+probability and hardware specific speed.

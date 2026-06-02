@@ -1,0 +1,45 @@
+Next step toward live evaluation is
+shadow testing, sometimes called as
+dark launch. In this setup,
+Light traffic comes in as usual. Both
+the current champion and the new
+challenger model sees the same input,
+but only the champion output is used to
+respond the user. We log the
+challenger's predictions and analyse
+them offline.
+Do they look sane?
+How do metric compares?
+Do we see any obvious bias or failures?
+The benefits
+We are using real production inputs.
+But we are not putting users at risk.
+The tradeoffs
+We pay extra compute.
+We generate more logs.
+And we need to be careful with privacy
+and data retention.
+Shadow testing is an excellent way to
+de-risk a new model before any user see
+it.
+Once you're comfortable with offline
+and shadow results. You may choose to
+run an A B test. In an AB test, some
+fraction of users or requests go to the
+champion. Another fraction goes to the
+challenger, and you measure real
+business outcomes, revenue, click,
+fraud loss, churn, etc. all of these.
+This tells you not just whether the new
+model looks better. But whether it
+actually improves behaviour on business
+metrics in real world.
+You do need enough traffic and. Time to
+reach statistical significance. A clear,
+defined primary matrix and guard rails.
+Also, be careful not to run too many
+overlapping experiments.
+That interfere with each other. AB
+tests are the gold standard, but they
+are heavier weight, so you don't use
+them for every tiny change.

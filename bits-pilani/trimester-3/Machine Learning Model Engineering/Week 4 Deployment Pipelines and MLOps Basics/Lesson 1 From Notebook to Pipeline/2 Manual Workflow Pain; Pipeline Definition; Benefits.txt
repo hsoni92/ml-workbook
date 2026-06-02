@@ -1,0 +1,197 @@
+Let's start with a scenario that will
+feel familiar if you have done real ML
+work. You build a great model in a
+notebook, you get solid metrics, nice
+plots, and everything looks good. But
+behind the scene, there are a lot of
+manual steps. Rune 3, then Cell 7, then
+export the file. Maybe you have some
+hardcoded local path or weird
+environment variable that only exists
+in your laptop, and all that logic
+lives only in your notebook inside your
+head.
+The business risk is, nobody else can
+reproduce your mental model exactly.
+And when something breaks into
+production, it's hard to debug because
+the true process is not just captured
+anywhere.
+This is the core problem. Notebooks are
+fantastic for exploration, but by
+themselves they don't scale to reliable
+team-wide deployment. In a lot of team,
+the first version of deployment looks
+like this.
+You train the model in a notebook. You
+manually save it in a file, maybe
+model.pkl. You manually copy that file
+into repo or onto a server. You hand
+edit some code or config to load it. At
+first this feels quick and practical,
+but over time becomes fragile. Steps
+are forgotten and done out of order.
+Someone saves the model but forgots to
+update a config or update the code that
+forgot to update the model, and very
+soon you reach the point where no one
+can say with confidence which exact
+model is actually running in production
+right now. Debugging becomes detective
+work. Who ran it. Which data? With
+which notebook? On what day? That's why
+manual workflow breakdown as soon as
+you more people and more models get
+involved.
+There is another big problem with ad
+hoc notebook on flow workflow.
+It's lack of tracking. If we don't have
+a structure, we often have no clear
+record of which data was used to train
+the model, no record of
+hyperparameterss or code versions, and
+our metrics live in random places local
+logs, screenshots, or printed output
+that never get saved properly. Then
+when performance changes in production,
+We can't answer basic questions, like,
+why did this moral behaviour change?
+Which training runs produce the model
+that's currently deployed. We also
+can't audit decisions. In many domains,
+spatially regulated one. You need to
+show exactly how a model was trained.
+Without tracking, we end up with
+non-reproducible models, and that's not
+acceptable for a serious production
+systems. So what's the alternative?
+We introduce a deployment pipeline. A
+deployment pipeline is essentially a
+sequence of automated steps that takes
+you from raw data to a trained model to
+a deployed artefact or service. Instead
+of relying on human to remember and
+rerun each step, the pipeline encodes
+it. The typical steps are. Data
+preparation, train, evaluate, package,
+and deploy. The key idea is that the
+pipeline is the recipe for how we move
+from one or an idea in a notebook to
+something that's actually running in
+production.
+Let's zoom in on how pipeline stages
+works.
+Each stage in the pipeline.
+Consume artefact.
+Things like raw or clean data, configs,
+or outputs from previous steps. And
+produces artefacts. Clean data, trend
+model, metrics, reports, containers,
+and so on.
+For example, data preparation step
+loads raw data and output a cleaned
+version data set. The train step,
+consume the data step data sets, plus
+configurations, and output a model
+artefact and training metrics. The
+evaluate step, consume the model and
+the validation sets, and output
+evaluation metrics, and maybe the
+report. The package step consumes the
+model and wrap it into a docker image
+or model bundle. The deploy step Takes
+the package and turns it into a running
+service, and registered or a registered
+model in a registry. Thinking in terms
+of input and output.
+Is actually important. It's what
+actually allows us to track artefacts,
+connect the steps, and rerun parts of
+the pipeline when needed.
+Here's a concrete, simple end to end
+example. Step one, data preparation.
+You load raw data from your source.
+Clean it! Engineer features. And split
+to train, validation and test, the
+output a versioned clean data set. Step
+2, train.
+Use the data set plus a configuration
+of hyperparameters to train a model.
+The output, a model artefact, says a
+.bKL file or saved weight. And training
+matrices like loss curve.
+Step 3, evaluate. Evaluate on
+validation or test set. Reproduce
+metrics like AUC or accuracy, and maybe
+a smaller evaluation reports with plots.
+Step 4, package and deploy. Take the
+model artefact, bundle it into docker
+image or some kind of deployable unit.
+Push it to registry and deploy it as a
+service. Register it as the latest
+production model. This is just one
+example, but the pattern is always the
+same, clearly defined steps with clear
+input and output chained together.
+So why bother building pipeline instead
+of just using notebook and manual
+scripts? First, repeatability. If you
+run into, run the same pipeline with
+the same input, you get same outputs.
+What makes experiment and debugging
+much easier?
+Second, audibility. You have a clear
+record of what ran, when, and with what
+artefact. That's critical for debugging
+issues and for compliance or audit.
+Third, speed. Once the pipeline is in
+place, going from idea to production is
+faster because you're not manually
+stitching together each step.
+At each time.
+And 4th, fewer human errors.
+The less we rely on copy paste and
+manual file copying. The fewer oops, I
+forgot to update the conflict movement
+we have.
+In short, pipeline make machine
+learning more repeatable, traceable and
+efficient.
+This is where pipeline connects
+directly to MLOs. MLOps is largely
+about automating the ML life cycle,
+data, train, validate, deploy, monitor,
+and back again. Pipelines are
+automation backbone that makes this
+possible. They provide a standard path
+for models to move from experimentation
+to production. And they give you
+obvious place to plug in. Data quality
+checks, model validations and fairness
+checks, CICD integrations, and
+eventually retraining and depreciation
+workflow. So when you hear MLO's
+pipeline, think.
+This is the engine that runs my machine
+learning life cycle over and over. In a
+controlled and automated way.
+One of the biggest shifts in becoming a
+model engineer. Is a mindset shift. The
+old mindset is. I have a really good
+notebook. I will manually push my model
+from there to production.
+The new pipeline first mindset is, I
+have a good pipeline, my notebook is
+place to explore ideas, but.
+Those ideas eventually get turned into
+pipeline steps that handle deployment
+automatically.
+As you work, start asking. Where does
+this logic belong in the pipeline? How
+can we automate each or this step?
+So that anyone in the team can rerun it.
+That shift from the artefact living in
+my notebook. True logic living in my
+pipeline and rapport is at the heart of
+moving from solo experimentation to
+team scale production machine learning.

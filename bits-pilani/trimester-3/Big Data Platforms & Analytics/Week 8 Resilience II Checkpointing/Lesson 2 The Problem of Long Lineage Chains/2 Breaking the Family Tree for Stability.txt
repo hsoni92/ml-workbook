@@ -1,0 +1,64 @@
+So in our last video, we looked at the
+chaos that long lineage chain can cause,
+from stack overflow errors to massive
+performance degradation.
+Now we are going to look at the
+solution.
+So if a family tree that is too long is
+the problem. The solution is what we
+call strategic truncation. In Spark,
+this is known as checkpointing.
+Let's look at the key concepts on the
+slide. So checkpointing is
+fundamentally different from cashing.
+While caching just keeps a copy of the
+data, checkpointing actually cuts the
+lineage graph. When you checkpoint an
+RDD, Spark physically saves that RDD to
+a reliable storage system like HDFS or
+S3.
+But here is the magic part. Once that
+save is complete,
+Spark removes the references to all
+parent entities.
+This makes the checkpoint at RDD a
+stability anchor.
+So in the eyes of Spark Driver, this
+RDD no longer has a history. It becomes
+a new leaf node or a fresh starting
+point, right? So the entire family tree
+behind it is pruned away.
+Why is this so powerful for stability?
+So think about recovery. If a node
+fails after a checkpoint, Spark doesn't
+have to go back to the very beginning
+of the pipeline, it doesn't have to go
+back to the root RDT. It just goes back
+to the checkpoint file which is saved
+on the disc. So this reduces
+recomputation time from potentially
+100s of stages to just a single stage,
+or maybe, you know, multiple stages.
+As a slide notes.
+This is a massive recovery optimisation.
+So instead of linear increase in
+recovery cost, we reset the clock.
+Finally, we must emphasise.
+That checkpointing isn't just an
+optional performance boost, it is
+mandatory for iterations.
+If you're running a page rank.
+Like a Page rank algorithm, where the
+state is updated hundreds of times,
+your job will eventually fail without
+checkpointing.
+It is the only way to keep the metadata
+small enough.
+For the driver to manage.
+In our next lesson, we'll do a deep
+dive comparison. To see exactly how
+this differs from the caching
+mechanisms.
+You're already familiar with. The
+caching mechanisms. I'll see you there.
+Happy learning. Thank you so much.

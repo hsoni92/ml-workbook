@@ -1,0 +1,398 @@
+Hi, everyone. Welcome to our final and
+uh most important module, the AMLOs uh
+capstone, right? So, throughout this
+course from module 1 to 12, we have uh
+explored uh each part of machine
+learning life cycle in isolation, right?
+We have seen, uh, surveying, we have
+seen, uh, monitoring, then retraining,
+optimisation, and many more things we
+have covered. So, we have done deep
+dives into specific tools and
+techniques. Now, it's, uh, time to put
+it all. Uh, whatever we have learned,
+uh, everything together. So the goal of
+this capstan is to zoom out and see the
+entire, uh, forest, not just the
+individual trees, OK? So here today, we
+are gonna build and uh walk through a
+complete. Into in the MNO system from
+uh raw data all the way to a production
+module that can be retrained and
+monitored, right? This lab is uh
+designed to be a comprehensive review
+and a practical demonstration of uh How
+all the pieces you have learned so far
+connect in a real-world scenario, OK?
+So, let's begin by looking at uh the
+blueprint of our system. So, I've
+created this uh directory, lab 13 over
+here. So if you go inside the docks, we
+have one architectural diagram. On your
+screen Is the blueprint uh of your
+entire system. Let me zoom it a little
+bit. Yeah.
+So this diagram represents a simplified
+but realistic architecture for a
+production machine learning application.
+OK. At first glance, it might seem
+complex, but, uh, we're going to break
+it down, uh, piece by piece, OK? And
+you'll see that it's made up of the
+very components we have, uh, been
+learning from module 1 to module 12, OK?
+So let me orient you to the layout on
+the right side.
+Uh, we have our
+Data source, OK? So, this is where
+everything begins, right? You can see,
+uh, click a stream data, transactional
+data, and, uh, user profile flowing uh
+into the system, right?
+So this raw material feed into data
+layer, right, below it, just below it.
+Where our uh data ingestion pipeline,
+pick it up, OK?
+And stored in a data lake.
+Right? And uh runs uh data quality
+checks. So, this is the domain of uh
+module 10 on uh data pipeline, right?
+From uh data layer, the flow moves down
+and uh left into the features stored
+section at the bottom, right? Here, our
+feature pipeline transform raw data
+into meaningful features which are then
+stored and uh Made available as both
+offline features for training and
+online features for real-time serving.
+So, this is exactly what we built in
+module 9, right? Now, follow the flow
+upward on the left side. Here, the
+offline feature feed into the training
+and uh registry block, OK? In the
+centre left. This is where the training
+pipeline runs, produces uh uh
+evaluation and metrics, and save model
+to the model registry. And then the
+promotion logic to decide which model
+becomes the champion and uh write that
+decision to current best. Jason, right?
+So this connects to our work in module
+46. And murder 12, right?
+Then the current best.json file, point
+to the
+online serving layer.
+In the centre here.
+So, here, our model service. The fast
+API app in a docker container loads the
+promoted model. It also receives the
+online feature from the feature store
+to make a real-time, uh, prediction. OK.
+So if you see here, online feature, uh,
+we're getting it here for, uh, during
+serving. So this is the serving
+architecture from, uh, module uh. 1237
+and 8, right?
+Finally, at the top left. If we go.
+Uh, top left, right, we have, uh, the
+monitoring and governance layer it.
+Watches the model service and collect
+the system metrics like uh latency and
+errors.
+Uh, data metrics, uh, for drift and
+quality and, uh, model metrics for
+accuracy and fairness, right? And when
+something goes wrong, the alert and uh
+triggers component fires a retrain
+trigger back to the training pipeline.
+That's the dotted line you see here.
+This closes the loop and uh brings in
+module 5 and 11, right?
+And you can also notice also the
+feedback label over here.
+Uh, if we go, yeah, here. Uh, this, uh,
+again, dotted line from, uh, prediction
+back to the data lake. This represents
+how real world outcomes like whether a
+user clicked or converted flow back
+into our uh data layer to become
+training label for future model. So
+this is the complete MLOs life cycle
+visualised in one diagram, OK.
+So now, let's uh zoom in on the offline
+path in the journey Dale to become a
+module. Let's start with the raw data,
+our data ingestion pipeline, which we
+built in module 10.
+It picks up new files, validate them,
+and, uh, append uh them to our master
+training data set, right?
+So this raw data is not ready for a
+model. It needs to be transformed into
+a feature. So this is the job of uh
+feature pipeline.
+Right here.
+Which we explored in modern line and uh
+this pipeline computes meaningful
+attributes like a user, 30 days average
+purchase value and store them in a
+feature uh store, right? So, the key
+principle here is that this feature
+logic is defined once and can be used
+for both training that is offline and
+serving that is online, which is how we
+prevent the
+Training serving screw, right? With our
+features and label ready, the training
+pipelines uh kicks in.
+Uh, right. Yeah.
+So this is uh the workflow we designed
+in module 4 and 6.
+It joins the features uh with uh ground
+truth labels, trains a new model
+candidate, evaluate it against a
+holdouts set, right? And, uh,
+critically logs all the results,
+metrics, and the model artefact itself.
+And uh each run of this pipeline
+produce a new potential model version,
+right? The final step in the offline
+path is uh registration. Right? The
+newly trained model, let's say, uh,
+model. Version 5 along with its metrics.
+I
+saved to a version folder in our model
+directory, right? Our registry building
+script from module 12, then scan this
+directory and update registry.gson.
+Right? So, officially adding Model V5
+to our catalogue of available models,
+right? And the, the offline journey is
+now complete. We have a new version and
+uh evaluated model ready for
+consideration. OK. Now, with a new
+model in the registry, how does it get
+to the production? So this is where the
+online path. Right. Let's move a little
+bit right.
+Yeah. So, online path and the feedback
+loops uh
+come in the picture, right? So, our
+promotion logic, which we built in uh
+module 12, it compares the new
+candidate, uh, V5 against the currently
+serving model, let's say V4, based on
+our business rule, perhaps, uh, higher
+accuracy and acceptable fairness
+metrics from module 8.
+OK. And if V5 is better, the promotion
+script update the uh current uh
+besttchison file, OK? And then our
+serving.
+Online serving layer, the fast API app
+from module 3 and 12. It, uh,
+configured to read this uh current uh
+best. JSON file on startup, and, uh,
+the next time the service restart or
+reload, it will automatically load uh
+V5 without any code changes. So this is
+also where the optimisation technique
+from module 7 and 8,
+Like, uh, converting to ONNX uh or
+applying quantization would come into
+play to ensure the model is fast and
+efficient. Right? And uh as the service
+runs.
+It uh solves prediction and uh log
+everything. Our uh monitoring system.
+If we come this side.
+Uh, from module 5 is watching these, uh,
+logs, right? It tracks system metrics
+like latency, data metrics for drift,
+and modern metrics for performance. If
+it detects that the life model's
+performance is degrading or uh that the
+data has drifted, uh, significantly, it
+sends a signal, and, uh, this signal is
+uh
+Uh, retraining trigger we designed in
+module 6 and 10. So basically, it
+automatically kicks off the entire
+offline path again.
+Uh, creating, let's say, V5, uh, V6
+model to challenge V5, uh, model, right?
+So, this is the closed loop. Uh, this
+is MLOs. It's a continuously running,
+self-improving system where the model's
+uh performance and production directly
+influence the creation of its successor,
+right? So every model we have covered
+plays a critical role in making this,
+uh, loop, uh, function. OK. So now,
+theory and diagrams are great,
+but, uh, let's make this real, OK. So,
+on my screen, uh,
+Let me bring the, read me.
+Yeah. So, on my screen, uh, is the
+repository of our Capstone project. A
+well-organized, uh, repository is the
+foundation of a collaborative and, uh,
+maintainable MLOs, uh, project, OK? So
+let's, uh, do the structure. First, uh,
+we have, uh, data directory here, right?
+So this is our data lake with the soft
+folders for draw and process data, just
+like we discussed. This is the domain
+of the data engineering work from
+module 10.
+Next, in the feature directory, this is
+where the logic for our feature
+engineering lives, as we discussed in
+module 9. By keeping it in a separate
+module, we ensured this logic can be
+shared between our training and uh
+serving uh code. Right? Then, the
+model's uh directory is our simple
+file-based uh model stored. As you can
+see, it's ready to hold our version
+model folders like V1, V2, V3, and, uh,
+so on, right? So, this is the output of
+our training pipeline and the input to
+our uh registry from uh module 12, OK?
+Then we have the services and API
+directory contains our production ready
+code, the fast API app.PY, and it's uh
+Docker file, which we first learned
+about in module 3. This is the code
+that gets uh containerized and uh
+deployed. OK. Then we have uh pipelines
+directory contains the Python scripts
+that orchestrate our code ML flow.
+Here, the training pipeline.Py handles
+the training of a single model version
+and uh retrain job.PY act as our
+scheduler, deciding when to trigger a
+new training run, right? So this is the
+implementation of our logic from uh
+module 46, and 10.
+Uh, finally, we have, uh, monitoring
+for our configuration, docks for our
+architecture diagram, and, uh, GitHub,
+uh, workflows directory for our CICD,
+uh, pipeline from, uh, Module 4. So
+every part of our architecture diagram
+has a corresponding home, uh, in the
+Repository, right? So now, let's uh run
+the whole system in twin. We'll start
+by simulating the work of the ML
+engineer. First, we run the training
+pipeline to create uh initial uh model
+version, OK?
+So
+Let's, uh, uh, let's go inside, uh.
+Uh, so you can follow this, uh, read me
+to run all these scripts. So first, uh,
+let's go inside the I am 13.
+CD pipelines.
+Right now, let's run training.
+P.
+It's uh running. So basically, this
+script uh. Creates a model V1 and V2 in
+our model directory. So let's go back
+and check. Yeah, it has been created
+and it will contain. Model and it's uh
+metrics that you can see.
+Here, right?
+Uh, for both model we have. The model
+file. PL file, and the metrics as well.
+Now, let's uh simulate a scheduled
+training job that will create a new
+version and then.
+Promote the best one overall. So. Uh,
+let's run Python retrain job.
+Yeah, executed. So you can wash the log.
+The job first run the training pipeline
+to create a new candidate that is uh V3.
+OK. Uh, so then it's built the registry,
+discover all three versions, finally it
+run the promotion logic. Right, that
+you can see?
+And compare their accuracy and find the
+Uh,
+V1 is the new champion. It writes, uh,
+this decision to Karin Pestochison.
+So, let's check the JSON file and you
+can see it has uh promoted the uh V1
+model, right? So here, the offline part
+of life cycle is complete. So now let's
+uh put on our platform engineer hat and
+uh start the production service. Now,
+let's uh
+Launch the app. So let's go inside the.
+Service.
+Uh
+Launched the
+Yuricon app.
+Yeah, the app is running. Let's open
+another terminal.
+And uh let's try to run the call
+command. So here we can see that uh V1
+version of model is up and running.
+Let's also do the prediction using curl
+command.
+So we are getting
+Prediction from this model, so.
+Yeah. Everything is uh up and running.
+You can find further details over here.
+Right? So, basically, let me bring the
+architecture diagram again.
+Yeah. So this architecture is not just
+for uh moving forward, it's also for uh
+safety and uh rollbacks, right? Imagine
+our monitoring system detects something,
+uh, over here, let's say a major issue
+with uh V3 in production, right? So we
+need to roll back. Uh, to a previous
+stable version immediately because our
+system is decoupled, this is, uh,
+incredibly easy to do that, right? So
+what actually we have to do, we just
+have to go to this, uh, current, uh,
+best. Jason, right? We will change the
+version from, uh, we want to let's say.
+V3, uh, model, right? And uh now just
+we have to restart this uh application.
+Right? This is the, uh, this running
+application. And uh what will happen.
+So, let's, let's do that. Let's do that.
+Uh, so let's save, uh, stop the
+application.
+Let's uh reload. So you can see V3
+version has been loaded. Now, let's uh
+execute the Again, the inference
+command, and you can see we are getting
+the prediction from V3. So it's quite
+easy to uh roll back or update uh our
+uh inference pipeline with uh a
+specific model, right? So, basically,
+this demonstrates the true power of
+MLOps life cycle, which we have built.
+It's uh automated, it's uh auditable,
+and it's, uh, resilient, right? By
+understanding and building these
+components, you have moved beyond just
+uh training models and uh into the
+world of designing and uh operating
+robust and uh production grade uh
+machine learning system.
+So, yeah, congratulations on completing
+this uh journey. You have gone from uh
+understanding individual ML concept to
+designing complete uh production graded
+system, right? So just remember, every
+expert was once a beginner, so now go
+build something amazing and uh don't be
+afraid to break things uh along the way.
+Uh, the best learning happens in
+production, right? So yeah, best of
+luck on your journey ahead.

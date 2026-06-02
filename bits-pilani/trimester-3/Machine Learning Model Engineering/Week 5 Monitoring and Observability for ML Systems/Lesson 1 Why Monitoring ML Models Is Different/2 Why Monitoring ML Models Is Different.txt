@@ -1,0 +1,97 @@
+In traditional software systems,
+monitoring focuses on systems health.
+Typical metrics include infrastructure
+metrics like CPU, memory, disc usage,
+and network traffic. Service help
+metrics like HTTP error codes, response
+times, and requests per second. We wire
+these dashboards and alerting system so
+if a CPU spikes or error rate shoot up,
+someone gets paged.
+This is essential. Then, machine
+learning system needs.
+All of this too, but for models, it's
+not enough.
+Here is the core problem. A model
+service can be perfectly healthy. From
+a system perspective, it returns 200K,
+which is OK API response. Latency is
+low, error rates are nearly zero, and
+yet from a machine learning perspective,
+it can be doing the wrong thing. Input
+data has drifted, labels or business
+rules changed. The model's predictions
+are now systematically biassed or
+inaccurate. In other words, the service
+is up. Does not mean the model is good.
+That's why machine learning monitoring
+has to look beyond CPU and error rates
+and care about data and predictions.
+The first machine learning specific
+dimension is data quality and drift. We
+need to monitor the input
+going into the model.
+Are we suddenly getting the more
+missing values? Are types or schemas
+changing, like numerical fields
+suddenly becoming a string identifiers?
+Are values going
+out of expected range, for example,
+like negative wages or insane
+transaction amounts.
+And beyond basic quality, we care about
+drift. Are the distributions of
+features in production shifting away
+from what we saw during training?
+Are we seeing entirely new user
+segments and patterns the model wasn't
+trained on? If the input world changes.
+And we don't notice, the model will
+quietly become less relevant or
+outright wrong without showing any HTTP
+errors.
+The 2nd machine learning specific
+dimension is the quality and fairness
+predictions. Ideally, we monitor
+classic machine learning metrics over
+time, accuracy, AUC, RMSC.
+Whatever is appropriate for the task.
+Business metrics tied to those
+predictions, click through rate, fraud
+caught versus missed, revenue impact,
+churn reduction.
+We also care about fairness and bias.
+How does the model perform for
+different segment? Region, products,
+age group, or other sensitive
+attributes. Is performance stable
+across these, or is one group silently
+getting worse prediction over time?
+Without monitoring predictions, quality,
+and segment level behaviour, we can't
+tell if the model is still useful or
+fair.
+So what happens if we don't monitor
+machine learning models first? We get
+silent degradations, the world changes,
+input drifts, but the model doesn't
+adapt. Accuracy drops over weeks or
+months, and no one notices until damage
+is obvious. Second, we get wrong
+decisions at a scale.
+We might be approving the wrong loans,
+ranking the wrong search results,
+missing fraud. Patterns and are sending
+the wrong notifications. Third, we risk
+unfair outcomes if data shifts
+differently across segments. Some users
+may start receiving consistently worse
+prediction or treatment. Finally. We
+get loss of trust, stakeholders sees
+weird behaviour, stop trusting the
+model. And go back to model weird
+overrides and gut feelings.
+Without monitoring, model doesn't get a
+bit worse. Over time, they can become
+actively harmful to both business and
+the users.

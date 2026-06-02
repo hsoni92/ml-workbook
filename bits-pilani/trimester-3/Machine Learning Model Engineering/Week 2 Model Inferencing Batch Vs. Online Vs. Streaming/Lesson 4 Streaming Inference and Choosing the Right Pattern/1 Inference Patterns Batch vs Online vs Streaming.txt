@@ -1,0 +1,104 @@
+Welcome back to Module 2. Model
+inferencing, batch versus online versus
+streaming. So far we have talked about
+what inference is, which metrics matter.
+How batch inference works when no one
+is waiting, and how online inference
+work when a user or upstream system is
+waiting right now.
+In this video, we are going to
+introduce a 3rd pattern, streaming
+inference. See where it shines,
+specifically with event driven systems.
+And then step back and build a small,
+simple decision guide.
+For choosing between batch, online and
+streaming. By the end, you should have
+a clear mental model for all three
+patterns and a quick way to decide
+which one fits a given problem. Let's
+quickly recap how we got here. In Topic
+one, we set up the basic vocabulary of
+inference. Latency, throughput, cost,
+and resource usage. In Topic 2, we
+looked at batch inference.
+You process many items at once on a
+schedule. No user is waiting on each
+prediction. The key metric are
+throughput and total job time. In T3,
+we looked at online inference. A single
+request comes in, and you return a
+single response. The caller is blocked
+until the prediction arrives. Here, P95
+and P99 latency become product level
+concern. Now in T4, we're going to
+introduce a streaming inference and
+then compare all three so you have a
+clear mental map of the space. So what
+do we mean by streaming inference?
+Streaming inference is what happens
+when data arrives as a continuous flow
+of events, not as a static file and not
+as one of request. The model processes
+those events as they happen. And the
+output feeds into the other system.
+Like alerts, dashboards, or downstream
+services.
+This is different from batch, where we
+grab a big static data set, run a job,
+and then we're done until the next run.
+Online, where a caller makes a specific
+request and expects a direct response.
+With streaming, the mental model is a
+long running pipeline. Events come in.
+They flow through several stages, the
+model is just one of those stages,
+continuously transforming incoming
+events into predictions or signals. Let
+me give you a high level picture of
+what a streaming pipeline looks like.
+Conceptually, you have a few building
+blocks, an event source. This is where
+events originate. Applications, sensors,
+devices, logs, click streams, a stream
+transport, something that carries out
+events like Kafka, Nisis, PUSub, or a
+similar. Que stream system, a stream
+processing layer. This is where we
+define the logic of transforming events,
+joining streams, aggregating, and so on.
+Tools like Flink, spark streaming, or
+custom
+consumer live here, a model step.
+Within that processing layer, we call
+the model on each event or on small
+mini batches of events. One or more
+sinks. Where we send the outputs, maybe
+to an alert system, a database, a
+feature store, or a monitor dashboard.
+The key idea events are constantly
+flowing through the pipeline, and the
+model is embedded as a stage in that
+flow, rather than being triggered by
+discrete batch job or single API
+request. Let's contrast streaming. With
+the two pattern you have already seen,
+batch.
+You start with a big static dataset.
+You run one job, or rather one big job,
+to score everything.
+Then the job finishes and you're done
+until the next scheduled run. Online.
+You get an individual request, you
+synchronously compute a response, and
+you send the response directly back to
+the caller. Streaming, you deal with
+continuous event stream. There is no
+clear job start, job end, the pipeline
+is just always running, and often there
+is not a direct request response to
+human. Instead, predictions might
+trigger alerts, update features, or
+feed other services. Same core idea,
+using a model for inference, but the
+shape of the system is quite different.

@@ -1,0 +1,38 @@
+Despite their differences, ranking and
+fraud system shares a lot. Both need
+reliable data pipeline from raw events
+to usable tables. Both use a feature
+layer or feature store to keep training
+and serving consistent. Both rely on
+online scoring service that perform low
+latency inference. Both requires
+continuous monitoring and retraining.
+Metric drift, data drift, and model
+performance all need to be tracked over
+time. In other words, they run on top
+of the same machine learning platform
+primitives you have been studying
+throughout this course.
+The big difference are that they
+optimise for and the cost of getting it
+wrong. Ranking system focus on order
+and relevance. They optimise click
+through conversion and engagement.
+They experiment aggressively with AB
+tests. A bad result is annoying and may
+hurt metric, but it's usually not
+catastrophic. Fraud systems focus on
+risk and correctness. They care about
+fraud loss and group specific error
+rates. Decisions are often one shot,
+with strong compliance and audit
+requirements. A bad decision mean can
+mean direct financial losses or unfair
+treatment of users.
+The toolbox, data pipeline feature
+stores, model serving, monitoring is
+similar. But the priorities and risk
+profiles are very different.
+Understanding that distinction is
+crucial for designing the right
+architecture. Thank you.

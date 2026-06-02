@@ -1,0 +1,59 @@
+The first big retraining trigger is
+data drift and quality changes. You
+might see strong drift scores on
+important features, new segments or
+categories that the model has never
+seen before, or persistent data quality
+issues like suddenly higher missing
+value rates. These are warning signs,
+but they are not an automatic retrain
+now button.
+The first step is always investigation.
+Is this a legitimate business change?
+Is it a data pipeline bug?
+Is the model actually performing worse,
+or just seeing different inputs? Once
+you have confirmed that the model is
+now operating on a meaningful,
+different data regime. Retraining, with
+newer data, becomes a stronger opinion.
+The 2nd major trigger is performance
+degradation on fresh label data.
+Over time, you may observe low accuracy
+or AUC.
+Worse Root mean square error on
+regression tasks.
+Our business KPIs that depends on the
+model. Like conversion rate or fraud
+losses. Moving in the wrong direction.
+Again, We need to double check.
+Did the evaluation logic change? Did
+business rules or pricing change?
+Are we comparing, like. With like
+We have ruled those out, and the
+metrics really are worse. That's a
+strong signal that the model needs
+either threshold adjustment. Or a new
+training run on more representative
+data.
+Not all retrains come from matrix
+dashboard.
+Some come from policy and product
+decisions. Few examples, like new
+regulation requires us to exclude
+certain features or provide better
+explanation.
+A fairness review shows that a
+particular group is underserved and you
+decide and we decide to rebalance
+training or change the loss function.
+The product itself changes dramatically.
+New pricing structure, new onboarding
+funnel, new countries. These shifts can
+make the old model structurally
+misaligned.
+With the new world, even if performance
+metrics haven't completely tanked up.
+In these cases, retraining is about
+aligning with policy and product intent,
+not just chasing slightly higher AUC.

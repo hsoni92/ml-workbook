@@ -1,0 +1,106 @@
+OK. So now, let's uh step out of the
+code and uh get into the role of a
+machine learning engineer or a product
+manager. OK. So, let's say we have the
+data from our benchmark. Now, we have
+to make a decision, um, like, uh, which
+model do we deploy and uh where we have
+to deploy it. So, This is not a purely
+technical question, right? It's about
+uh aligning our models, performance, uh,
+characteristic with our uh business and
+uh, uh, product goods, OK?
+So, let's first consider our original
+uh this uh resonate 18 uh base model,
+OK?
+Uh, it's, uh, bigger and slow on CPU,
+but it's, uh, preserved, uh, the model
+full precision. So, when, when we
+choose this, uh, model, right?
+So, here, the primary reason is maximum
+precision and potential accuracy, right?
+So, if we are in a domain where even in
+a tiny fraction of a percentage in
+accuracy matters, OK? So, we might uh
+stick with the uh floating.32 model and
+uh think about high stakes uh medical
+diagnosis or uh financial fraud
+detection where the Cost of a mistake
+is uh extremely high, and, uh, in these
+cases, the business value of
+maintaining full model precision
+overweighs the infrastructure cost,
+right?
+The second scenario is when we are
+deploying an unconstrained environment,
+OK? If our model is running on a
+powerful cloud server with a GPU, the
+latency difference might become
+negligible, right? Because GPUs are
+exceptionally good at floating point
+maths, right? So the speed advantage of
+NT8 is less pronounced. Right. So, if
+we are running a batch processing job
+overnight where inference time is not
+critical and uh server costs are fixed,
+the simplicity and maximum accuracy of
+floating. 32 model make it a safe and
+reliable choice. OK. Now, if we talk
+about uh resonate
+uh compressed version of model that is
+uh IT 8.
+So it's a 4x smaller and significantly
+faster on CPU. So this profile makes it
+a perfect fit for a whole different set
+of applications, right? So the most
+obvious use case is edge or mobile
+deployment, right? Because it's just 11
+MB size, uh, and it's uh much more
+manageable for an on-device application
+where user have to download the model.
+Uh, and if you talk about the low
+latency, Uh, so here, low latency means
+uh, it can run in real time on a phone
+CPU without draining the battery, right?
+Enabling features like, uh, uh, live
+camera philtres or um instant object
+recognition, something like that. But
+uh, it's not just for the edge.
+The ITI model is also a fantastic
+choice for uh latency sensitive or
+Cost-sensitive, uh, cloud services.
+Imagine a high traffic API that serves
+millions of predictions per second. The
+low latency means a better user
+experience and the ability to handle
+more concurrent user server, right?
+Because it's faster. You can run it on
+a cheaper CPU-based uh instance instead
+of uh expensive GPU instances. So
+that's uh leading to a massive uh
+reduction in uh operation cost, right?
+So, in those cases, we can use uh uh
+compressed version of a model.
+So, ultimately, this entire process
+comes down to balancing competitive uh
+priorities, right? Latency, cost, and
+user experience. By quantizing our
+model, we made a deliberate choice to
+optimise for speed and efficiency,
+right? And uh in production scenarios,
+uh, you would also measure the impact
+on accuracy to ensure the trade-off is
+acceptable for your use cases or not,
+right? For many real world applications,
+the gain in latency and cost reduction
+lead to a much better overall user
+experience.
+Yeah. And uh yes, so this lab has shown
+you the full workflow from identifying
+a need for optimisation to apply a
+compression technique, uh, then
+benchmarking the result, and finally to
+making an informed data-driven
+deployment decision. So, this is the
+essence of practical.
+Production-oriented uh machine learning.

@@ -1,0 +1,94 @@
+OK. So, in our last lab, we have built
+a registry.json file, right? Now we
+have this uh uh registry details, which
+is a catalogue of all our models
+version, right? But the registry itself
+doesn't tell us which model we should
+actually use, right? So that's a, uh,
+separate decision. This process is
+called promotion. Promotion is the act
+of, uh, evaluating. The candidates in
+the registry and uh declaring one of
+them as the current best for a specific
+purpose like uh uh production survey,
+right? So this decision needs to be
+recorded somewhere, OK? We need a
+single unambiguous file that uh our
+production service can look at to know
+which model to load, right? We will
+call this file current best thought uh
+Jason, OK. So, in this script, we will
+build the promotional script. It will
+read from the registry, apply a rule.
+Pick the model with the highest
+accuracy. Right? And uh then it's a
+right decision to current invest uh
+Jason. So basically, this decouples the
+decision of what is best from the act
+of uh serving it. OK? So let's uh open
+uh prombestmodel.
+B.
+The core of our promotion process is
+the select the best model here.
+So basically, this function embodies
+our promotion policy. It takes the
+entire registry directory.
+As input, it uh then I trade through
+every version and it's uh associated
+metadata.
+For each version, it looks up the value
+of our chosen metrics, which in this
+case is accuracy, so it keeps track of
+the version with the highest accuracy
+it has seen so far, OK? And after
+checking all the versions, it returned
+the name of best version it found, OK.
+This logic is simple but very powerful.
+So right now, our policy is the highest
+accuracy wins. But you could easily
+change this. We could write a policy
+that requires a minimum accuracy of 90%
+or one that tries to balance accuracy
+and long loss, right? So the policy is
+centralised in this one function,
+making it easy to understand and modify,
+right? Now, The main part of our script
+orchestrates the promotion. First, it
+loads the STGson, OK. Then it calls our
+select best
+version function to get the winning
+version, and once it has the winner, it
+creates a new dictionary called current
+best, OK? And this is the payload for
+our current best.json file. Look at the
+information we are storing here, the
+version, the full path of model
+artefact, the reason for the promotion.
+In this case, uh, highest accuracy,
+right? And the specific uh metric name
+and uh metric value that justified the
+promotion and a promoted at the time
+stamp, OK.
+So this is a rich descriptive record of
+the promotion event, right? And finally,
+the script writes this dictionary to
+the uh current best, uh, Jason, right?
+So let's uh run the promotion script.
+Uh, bring back the terminal.
+Yeah, let's execute it. So, if you see,
+we have created the selected version
+V2 with accuracy.91 and uh we have
+created the Uh, current best.json file
+and you can find all those details,
+right? So this script tell us it, uh,
+promoted uh V2.
+And, and if you see uh this clean,
+simple file that contains everything
+our serving layer needs to know, right?
+So it doesn't need to know about all
+other models in the registry or the
+promotion logic. It just need to read
+this uh one file. This is powerful
+decoupling pattern. So in our next uh
+script, we will build a service that
+does exactly that.

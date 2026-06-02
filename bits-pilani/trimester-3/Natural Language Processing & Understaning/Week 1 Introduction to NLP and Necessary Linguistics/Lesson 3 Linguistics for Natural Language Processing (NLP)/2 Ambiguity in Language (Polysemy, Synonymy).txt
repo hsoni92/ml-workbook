@@ -1,0 +1,61 @@
+Welcome back, learners. Now let's
+understand some ambiguities in human
+language and the concepts of polysemy
+and synonymy.
+What is linguistic ambiguity?
+Within human language, ambiguity occurs
+when a word, phrase, or sentence has
+more than one possible interpretation.
+Humans resolve ambiguity naturally
+using context. For machines, ambiguity
+is a major challenge.
+For an example, let's look at the
+sentence I saw her duck.
+This sentence can have multiple valid
+meanings, like, does the sentence mean
+that the subject or she was ducking?
+Or does the sentence mean? That I saw
+her duck the animal.
+Now let's look at polysemy. Polygamy
+refers to a single word having multiple
+related meanings.
+Polygamy is extremely common in natural
+human language.
+Let's look at some examples. The word
+bank can mean a financial institution.
+Or the bank of a river.
+The word paper can mean the writing
+material. Or an academic article.
+The word run can have meanings like jog,
+to manage, or a function.
+For effective NLP systems. Word meaning
+must be inferred from its context. And
+therefore just the dictionary lookups
+are insufficient.
+Now let's look at synonymy.
+Synonymy occurs when different word
+express similar meanings. For example,
+Big And large, they are different words,
+but have similar meanings. Buy and
+purchase, happy and joyful, they all
+have similar meanings.
+Synonymy causes challenges, such as
+vocabulary sparsity.
+And difficulty in matching semantically
+similar text.
+This is why embedding based
+representations are important, and this
+is that we will explore in future.
+Ambiguity is a big challenge for
+machines. Ambiguity can exist at
+multiple levels at the word level, at
+the phrase level, at the sentence level,
+and so on.
+Some of the challenges include lack of
+explicit content. Domain specific
+meanings. And cultural and linguistic
+variations.
+Traditional rule based systems can
+struggle here.
+That's all for this video. I'll see you
+in the next one. Thank you.

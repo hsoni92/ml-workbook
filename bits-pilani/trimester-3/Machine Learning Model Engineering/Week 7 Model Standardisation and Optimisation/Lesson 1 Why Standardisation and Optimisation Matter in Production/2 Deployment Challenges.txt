@@ -1,0 +1,47 @@
+This will set the stage for the rest of
+Module 7. And the labs where you will
+actually measure size and latency of
+real CNN.
+Let's start with the gap we're trying
+to close. In research, we will usually
+live in very comfortable world, big FP
+32 models. Running on a single powerful
+GPU. Driven by notebooks or simple
+scripts, and nobody really cares if one
+forward pass takes 200 milliseconds or
+2 seconds. In production, the
+environment is completely different.
+Some workloads run on CPUs only some
+share GPUs with other services.
+Some needs to run on edge devices or
+phones.
+And now we have hard constraints. We
+must meet P95 latency targets, and we
+have a strict budget on cost per
+predictions. This leads to a familiar
+situation. The model is accurate and
+impressive, but it's too big, it's too
+slow, or too awkward to deploy. Model
+standardisation and optimisation are
+all about closing that gap between
+research and reality. We can group the
+pain of production ML into 3 big
+buckets. First, probability. You might
+train in Pytorch, Tensorflow, or
+something else. But you need to deploy
+on CPUs, GPUs, mobile devices, and Edge
+hardwares. If each environment expects
+a different model format or runtime,
+integration becomes painful. Second,
+latency and throughput. We need to meet
+P95 and P99 latency target under real
+traffic.
+And we need good throughput, so we're
+not spinning up an army of machines
+just to keep up. Third footprint, the
+model's disc size.
+How much memory or VRAM it consumes.
+And for edge use cases, how much power
+it drains. The rest of the module is
+about systematically attacking these
+three pain points.

@@ -1,0 +1,56 @@
+Now let's talk about caching. Model
+inference, especially for large deep
+learning model, can be expensive. But
+in many applications, requests are
+repeated or very similar.
+The same user asking the same question,
+the same product page being rendered
+repeatedly, and so on. Output caching
+means that if we have seen this exact
+input recently, we skip the model and
+just return the cache answer.
+This can dramatically reduce latency
+because reading from cache is much
+faster than running the model and
+reduce cost.
+Because we pay for fewer model calls,
+it's especially useful for heavy or
+bursty workload. In many modern systems,
+we use embeddings, vector
+representations of text, items, or
+users. Computing those embeddings is
+often the expensive step,
+especially for large language models.
+With embedding caching, we store the
+embedding for a given text, item ID or
+user ID and reuse it across many
+downstream tasks, such as search,
+recommendation, rag, and so on.
+The critical piece is cache key design.
+Your key should include not just the
+content or ID but also the model
+version and, sometimes, a preprocessing
+version. That way, you upgrade the
+model from V1 to V2. You don't
+accidentally mix embeddings from the
+old and the new model under the same
+key.
+Caching is powerful, but you can't keep
+entries forever. You need strategies
+for expiration and invalidation.
+Time-based expiry, or TTL, which is
+also called as time to live, says after
+10 minutes or hours, this cache entry
+is no longer valid.
+Version based invalidation happens when
+you change the model or preprocessing
+version, new version, new cache keys.
+Event based invalidation means that if
+underlying data changes, like a user's
+profile or an item price. You clear or
+refresh the relevant cache entries, you
+will need to decide how long is it safe
+to serve stale results, for which use
+case do we absolutely need fresh
+answers. There's always a tradeoff
+between freshness and performance.

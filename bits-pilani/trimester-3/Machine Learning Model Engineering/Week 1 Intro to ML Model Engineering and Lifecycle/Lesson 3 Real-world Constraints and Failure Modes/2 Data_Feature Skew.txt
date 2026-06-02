@@ -1,0 +1,135 @@
+Now let's shift focus from constraint
+to failures.
+Even if you pick a good architecture
+and get strong metrics, production
+system fails in a predictable way.
+Again and again, Teams runs into
+training serving askew, data drift and
+stale models, silent failures,
+infrastructure and dependency issues.
+The key pattern is most of these
+failures are not about choosing wrong
+algorithm. They are about how the model
+is integrated, deployed, monitored and
+maintained. Let's look at each of these
+failure modes more closely.
+The first common failure mode in
+production ML is training serving SQU.
+This happens when the features a model
+sees during training is not computed in
+exact the same way when model is live
+in production. For example, your
+offline training script and your online
+service might use different
+preprocessing code. Handle missing
+value, or outlines differently.
+Or apply different encoding and
+normalisation. When these definitions
+drift apart, the model is effectively
+seeing two different worlds. Which
+leads to unexpected poor performance
+online even if the offline matrices
+looked good.
+Sometimes your model looks fantastic
+offline. But once we put them into
+production. The performance suddenly
+drops. That's often a training serving
+skew. Problem the feature or logic used
+during training don't exactly match
+what's used in serving. Engineers even
+struggle to reproduce production issues
+on their local machines, because the
+data path and transformations are
+slightly different. The way to fix this
+is not more tuning, it's better
+engineering discipline.
+We use sharded features pipeline or a
+common feature store, and reuse the
+same code and transformation for both
+training and serving.
+2nd failure mode.
+Data drift and stale model. Over time,
+the real world changes, user behaves
+differently, product evolve, new
+markets, countries, or user segment
+appears, when the input data
+distribution changes, but the model
+stays the same. We get data drift.
+Model is now making predictions in
+world that look different from one it
+was on trend. We don't react.
+The models slowly become stale.
+Performance degraded little by little.
+Business matrices get worse in a day
+that can be easy to miss. This is why
+we need monitoring in input features
+and output quality processes for
+retraining or fine tuning model on
+fresh data.
+Third failure mode, silent failures.
+These are the scariest, because
+everything looks fine at a glance, the
+API is returning 200s, latency is OK,
+logs looks normal, but in reality, the
+label pipeline broke, so offline
+evaluation matrices are now nonsense. A
+feature pipeline dropped or changed a
+column. And the model is getting
+garbage input. Monitoring dashboard
+stopped updating or alerts were never
+configured properly. The result, model
+quality quietly degrades. Over days or
+weeks, nobody notices until a human
+sees something off in the business KPIs,
+or user complains. Avoiding silent
+failures requires strong data quality
+checks and validation, end to end
+monitoring and alerting that covers not
+just system health, but data and model
+behaviour as well. Fourth failure mode,
+infrastructure and dependency issues.
+Even if your model is perfect, the
+environment around it can break.
+Infrastructure problems, like request
+starts timing out because the model is
+too slow under peak load, auto scaling
+doesn't kicks in, so instances get
+overloaded, network or storage system
+becomes bottleneck.
+Some of the dependency problems, a
+library upgraded changes serialisation,
+preprocessing, or numerical behaviour.
+An upstream API changes its schema or
+rate limits. Conflict or schema changes
+are not coordinated across services.
+All of this can make model appear to
+perform poorly, even though the model
+weights never changed.
+Mitigation is about good deployment
+practises, versioning and rollbacks.
+Strong observability, logs, matrices
+and trace traces.
+And close collaboration with
+infrastructure and other engineering
+team.
+Let's zoom out and connect everything
+we have seen the constraints, latency,
+throughput, cost, reliability,
+compliance, the failure modes, training
+serving SKU, data drifts and staleness,
+silent failures, infrastructure and
+dependency issues.
+Notice the problem of these are
+engineering problems, not about a model.
+It's about systems, code, and
+infrastructure.
+Operations problems, about monitoring
+alerts and processes over time. They
+are not solved by simply swapping one
+model architecture for another.
+This is why we need ML model
+engineering as a discipline, and ML ops
+as a set of practises. To handle all of
+the real world complexity around the
+model, not just to train it once and
+hope for the best. Thank you.

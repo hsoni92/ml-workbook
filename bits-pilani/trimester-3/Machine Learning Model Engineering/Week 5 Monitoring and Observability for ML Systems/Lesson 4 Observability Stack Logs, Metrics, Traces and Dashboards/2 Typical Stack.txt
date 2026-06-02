@@ -1,0 +1,82 @@
+Next, let's talk about dashboards. A
+good rule of thumb is.
+One primary dashboard per important
+model.
+That dashboard should show.
+Top level system health, traffic,
+latency, error rates, so you know the
+API or the batch job is not on fire.
+Data health, drift scores and schema,
+missing value summaries for your top
+features. Prediction health. Recent
+model metrics compared to a baseline.
+Plus segment breakdown, to catch
+fairness issues. Design, design it so
+that. Someone can scan it in 30 seconds
+and answer.
+Is this model basically fine? Or, is
+something clearly wrong that deserves a
+deeper look? Always highlight
+exceptions.
+Out of range values, red or amber
+indicators. Rather than forcing people
+to read Wall of Numbers.
+Dashboards Are for pull monitoring.
+People look when they are curious.
+Alerts are push monitoring. The system
+taps you on the shoulder.
+To turn metrics into alerts, define
+conditions tied up to your objectives.
+P. 95 latency above X
+for more than Y minutes, alert. Drift
+score above a threshold for several
+hours in a row. Alert. Model
+performance on fresh label, failing or
+falling more than delta below the
+baseline. To avoid alert fatigue,
+trigger on sustained issues, not single
+noisy spikes. Require a metric to come
+back inside the band before an alert is
+fully resolved.
+Send the message emails for
+investigation.
+Alerts
+And reserve pagers for truly urgent or
+take action now situations. And,
+crucially, each alert should include a
+link to a runbook, a short document
+describing. What to check next?
+Monitoring only works if someone owns
+the response. In most, our
+responsibility is split roughly like
+the following data engineering handles
+schema change, missing data, pipeline
+failure. Model or ML engineers handle
+drift, performance degradation, and
+retraining decisions. Platform or infra
+teams handle latency, CPU, scaling, and
+network issues. For each alert type you
+want a primary owner, the person or
+team expected to respond first. A
+secondary or escalation path, and a
+clear destination, a slack or team's
+message, on call rotation or ticket
+queue. When an alert fires, it should
+be obvious who is on the hook for
+triage. A run book is a short playbook
+for each alert type. It typically
+includes. One line explanation of what
+that alert means in business terms. A
+list of common causes schema change,
+traffic spikes, roll out issues.
+Any such thing A sequence of checks.
+Which dashboard to open, which log to
+inspect, which queries to run. And a
+menu of Next action. Roll back to a
+previous model, disable a feature. Open
+a ticket for retraining or escalate to
+other team. The benefit is huge. Triage
+as faster.
+People panic less. And new team members
+don't have to reinvent the process
+every time something goes wrong.

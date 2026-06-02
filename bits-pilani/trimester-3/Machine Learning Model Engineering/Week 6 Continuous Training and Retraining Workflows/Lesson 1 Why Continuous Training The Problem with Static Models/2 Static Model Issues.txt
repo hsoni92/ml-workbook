@@ -1,0 +1,13 @@
+Let's situate retraining. In the life
+cycle we have used throughout the
+course. After we train and deploy a
+model, we monitor it in production.
+Over time, the world changes, data
+shifts and performance drifts.
+Retraining is not version 2.0 once and
+done, it's a loop.
+Deploy, monitor, detect meaningful
+change, retrain with new data, and
+deploy again. The question is, what
+counts as a meaningful change that's
+worth spinning up that loop?

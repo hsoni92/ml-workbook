@@ -1,0 +1,154 @@
+Now that we have our baseline, we are
+going to export our CNN to ONNX.
+Which stands for Open Neural Network
+Exchange, right? This is a critical
+step in making our model portable and
+ready for high performance runtimes, OK?
+So let's open the 2nd script that we
+have. Inside the script folder, you can
+find uh.
+Uh, export_ONNX.py. So here, we are
+loading our model from this model
+directory from here.
+Uh, then we are loading the state, and
+again, we're calling the model.eval. Uh,
+this we have already seen in our
+previous skip, right?
+No? After loading the exact same
+weights we used for our baseline. We
+get to the core to this lab, that is a
+torch uh ONNX export function. We
+provide the model here. A dummy input
+tensor to trace the graph and the
+output path. Which is again the Uh,
+mind.
+Yeah. We also specify input names and
+output names. So these are important
+because uh they become the public API
+of the ONNX model. So, any runtime
+using this file will refer to this
+inputs and outputs by uh these names,
+OK? Crucially, we define dynamic access.
+Here, we are telling the exporter that
+the first dimension of our input and
+output. The batch size can vary. So
+this makes our ONX uh model flexible,
+uh, allowing it to handle batches like,
+uh, uh, 18 or 32 or any other size at,
+uh, inference time. So that's the
+purpose of this.
+So, after exporting, we immediately use
+the ONX library to validate the file.
+Yeah.
+And uh ONNX checker.
+Check uh model function, perform a
+static analysis of the model graph to
+ensure it's, uh, well-formed, and, uh,
+this is a vital sanity check that can
+catch any, uh, issues before you even
+get to, uh, get to a rundown, OK? And
+finally, we compare the file size.
+So, let's uh run the script and uh
+See the output. So let's open uh read
+me here to run this. Here's the command.
+So if you notice here, the script
+confirms the model is valid and then
+print a size uh comparison, right?
+So you can see the ONNX file size is
+very similar to Py. Checkpoint. Let's
+take a closer look at what just
+happened.
+So first you might have noticed a
+deprecation warning about the Torch
+script-based uh ON NX export. So, this
+is actually uh really interesting uh
+from a tooling evolution perspective.
+So, PyTorch is, uh, moving toward a
+newer export mechanism called uh Dodge.
+Export, OK, which will eventually
+become the default, but for our purpose
+today, the current exporter works
+perfectly fine. And uh is what uh you
+will still see most uh production code.
+OK. So now look uh at the validation
+step here.
+The checkmark tells us the model is
+valid and we can see it has 49 nodes,
+right? What does that mean? So, think
+of nodes as the building blocks of our
+neural network graph. Each node
+represents uh operations uh like uh a
+convolution, a batch normalisation, a
+reactivation, a pooling layer, and so
+on. So, here, resonate 18, despite
+being a relatively small network by
+modern standards, still require 49
+distinct operation to transform an
+input image into a classification
+output.
+Right. And uh The file size comparison
+is fascinating. Uh, the vital
+checkpoint is 44.67 megabyte. Uh, and
+the ONX model is, uh, 4 44.5 megabyte,
+right? Almost identical with just a
+tiny, uh, difference, right? Why, why
+is this? Because, uh, the vast majority
+of both files in the same thing, right?
+The actual weight values. Whether we
+are storing them in Tytosh format or
+ONN X uh. Format, we still have
+millions of floating points number
+representing the learned parameter of
+our network, right? So, if the file
+size are the same, so what did we gain
+here? So the answer is optimisation
+potential. Our ONNX file is now a
+standard uh representation that can be
+understand by
+Any ONX compatible runtime, right? Like
+whenNX runtime, tensor RT, or many
+others. So each of these runtime can
+apply their own optimisation to the
+graph.
+OK. And uh think of it like uh this uh
+Pytosh.bt file is like source code that
+can only be compiled and uh run by
+Pytosh, but here, the ONNX file is like
+an intermediate representation that uh
+multiple different compilers can
+optimise in their own way. So, we are
+not logged into one framework anymore
+here, OK?
+And uh here's another important point.
+The export process we just did is
+completely lossless in terms of uh
+model accuracy. We did not uh quantize
+the weights. We did not uh prune any
+connection. We did not uh distil the
+knowledge into a smaller model, right?
+So this is the exact same network.
+With the exact same parameters just
+expressed in a different format. If you
+were to run both models on the same
+input, you would get numerically
+identical output down to floating
+points precision, OK? And uh this is
+crucial because it means we can explore
+runtime optimisation without touching
+the model itself, right? We trained it
+once, uh, validated its accuracy, and
+now we can deploy it, uh, in the most
+efficient way possibly without worrying
+about uh degrading its performance, uh,
+on any task, right? So now we have two
+versions of the same model. One is uh
+Pyto checkpoints and another one is, uh,
+ONNX uh export. Next, we will see if,
+uh, ONNX runtime can actually deliver
+on its promise of better inference
+performance. So, we will run the exact
+same benchmark we did, uh, uh,
+previously, measuring latency and, uh,
+with the same, uh, methodology and
+compare the number side by side. So,
+let's, uh, do that.

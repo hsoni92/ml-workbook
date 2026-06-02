@@ -1,0 +1,110 @@
+Now, let's uh understand how CI works,
+OK?
+So, we will look at a real CIE workflow
+for this uh ML repository using uh
+GitHub vaccines, OK? So we'll see when
+it runs, what steps it basically
+executes and uh how it acts as an
+automated uh gatekeeper for our ML
+deployment process.
+So, the goal is to understand how CI
+automates the checks that ensure our
+code is always in a good state. So
+let's open this file, CI.
+YML? OK.
+So, this JaL file is our CI pipeline
+definition. So let's uh break it down.
+So here we have one trigger.
+This workflow will run on every push to
+the main.
+Main branch and uh on every pull
+request uh targeting. Uh, the main,
+right?
+Next, we have, uh, define our jobs. We
+have one job called Build that runs on
+the latest uh version of Ubuntu.
+Each job runs in a fresher and uh clean
+environment in the cloud, right? So,
+inside the job, we have a sequence of
+steps that you can see over here.
+Uh, first, we check out the repository
+code, then we set up the Python
+environment, then we install the.
+Dependencies from the requirement. TXT.
+So basically this ensured our CI
+environment perfectly matches our local
+deployment environment, right?
+And then after setup, we run the
+quality check. Uh, these are the
+placeholder for now, uh, but, uh, uh,
+this is where you run your, uh, linters
+like, uh, Flake it or, or uh.
+Unit test with pi test.
+So, what will happen if any of these
+steps fail?
+The entire CI job fails, preventing bad
+code from being merged to main, right?
+So, that's how uh it works.
+And that's how we basically configured
+the. Uh, CA pipeline.
+When this pipeline gets triggered, and
+what a job basically it has to perform
+that we have to define over here.
+Now, before we talk about ML specific
+checks, let's see what CI actually does.
+In addition to standard software test,
+we have uh ML specific check, a smoke
+test for our training script. This step,
+run our main training script, Python,
+using our standard configuration. In
+addition to the standard software test.
+We have uh MLS specific check.
+Right? Uh, a smoke test for our
+training script.
+So, this step, run our main training
+script.
+Using our standard configuration.
+It's a smoke test because its main
+purpose is to ensure the training
+pipeline runs into and without uh
+crashing. So it's not about getting the
+best metrics, but about uh catching
+integration error early. For example,
+if a data processing change breaks the
+model input layer. So this fast
+training run catches many common ML
+bugs automatically before. They get uh
+merged into the main branch, so that's
+the purpose of uh smoke taste.
+So, what does this look like in
+practise when you create a pull request
+on GitHub, you'd see this workflow
+start automatically.
+Right? So, in the GitHub UI, uh, when
+you push this code to the GitHub,
+you'll see each step from your EML file
+executing in order, checkout, setup,
+install.
+Land and then test. Each step, get a
+green check mark if it succeed or uh a
+red uh. Uh, X, if it fails.
+So, a pull request with a failing CI
+check gets a big red uh cross next to
+it.
+Uh, giving a signal that the term that
+it's not ready to be merged. And this
+automated feedback loop is the core of
+CI continuous uh integration.
+OK. So, to conclude, we have seen how a
+well-structured repository provides the
+foundation of ML ops. We use ML flow to
+track our experiments and uh create a
+lineage and uh use a CI pipeline
+defined in code to automatically uh
+test our changes, right?
+And, uh, together, these tools and uh
+structured rapport, experiment tracking,
+and uh continuous integration. Allow us
+to develop, test, and uh deploy machine
+learning model in a reliable and
+reproducible and automated way.

@@ -1,0 +1,84 @@
+Welcome to Module 11, Topic 3. Fairness
+and bias, evaluating Models Across
+Group. Even when a model looks good, on
+average, it can behave very differently
+for different groups of people.
+Some may systematically get worse
+predictions. Or more harmful errors. In
+this video. We're not trying to solve
+ethics and law in 8 minutes. Instead,
+we'll focus on a very practical skill,
+how to evaluate model
+behaviour across groups and make
+disparities visible and measurable.
+This will set you up for the lab where
+you will compute some of these metrics
+yourself. Fairness means different
+things in different context. In this
+course, we use a working definition. We
+are mainly asking questions like, does
+the model behave consistently across
+groups?
+Are some groups getting systematically
+worse errors? To answer that, we break
+the data into segments, for example,
+Group A versus Group B, and compare
+metrics and error rates for each
+segment. The numbers helps us see
+patterns, deciding what to do about
+those patterns still needs domain
+expertise, policy, and context. The
+model engineer's job is to surface the
+behaviour clearly.
+The core technique is group comparison.
+First, you choose a group attribute. It
+might be region, age band, product year,
+or where allowed and appropriate, a
+sensitive attribute like gender or
+ethnicity. Then you slice your
+evaluation data into subsets.
+One for each group, for each subset,
+you compute the same metrics you
+already know. Accuracy, precision,
+recall, AUC, and so on. Finally, you
+compare the matrix across groups and
+ask.
+Are differences small and expected
+given the context, or are they large
+enough to be worrying, especially for
+high impact decisions?
+This simple pattern is at the heart of
+many fairness checks. Here is a simple
+example. Suppose your classifier has
+92% accuracy for Group A and 83%
+accuracy for Group B. If you only
+looked at the overall accuracy, you
+might see something like 90% and feel
+great, but once you split by group, you
+see that Group B consistently gets
+worse prediction. That might matter a
+lot, especially if Group B represents a
+vulnerable population, or a key
+customer segment. The next step is to
+break this down into error types, false
+positives and false negatives, to
+understand how the model is failing for
+Group B. Accuracy alone hides important
+details. False positives and false
+negatives often matter more. A false
+positive is when the model predicts
+positive but the truth is negative, for
+example, flagging a legitimate
+transaction as fraud. A false negative
+is when the model predicts negative,
+but the truth is positive. For example,
+missing an actual fraudulent
+transaction. Different domain care
+about different errors. In fraud, you
+might tolerate more false positives. In
+healthcare or hiring, false negatives
+might be more painful.
+Fairness quotient often looks like, are
+false positive or false negative rates
+significantly higher for one group or
+another?

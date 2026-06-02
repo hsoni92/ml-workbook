@@ -1,0 +1,64 @@
+Welcome to Lesson 3. We have spent some
+time talking about properties of RDDs,
+how they are resilient and immutable.
+But now we're going to talk about the
+secret sauce that makes spark so
+incredibly fast, that is partitioning.
+If you look at the slide, you'll see a
+visual representation of how Spark
+handles data. Imagine you have a
+massive library of books to scan. If
+one person does it, it takes forever,
+but if you divide these books into
+smaller piles, or partitions. You can
+have many people working at once, in
+Spark. An RDD is automatically divided
+into these logical chunks, which is
+called partitions.
+These are the atomic units of
+parallelism. Here is the rule of thumb.
+One partition is typically process by
+one CPU.
+By breaking the data into these chunks,
+Spark ensures that no node in your
+cluster is sitting idle.
+Let's say if you have 100 cores
+available.
+You want at least 100 partitions, so
+every core has work to do.
+This balance is what we call
+parallelism.
+To really see the impact of this, let's
+look at the next slide, which is a
+chart.
+Look at the top bar. If we try to
+process a massive dataset using just a
+single core, the way a traditional
+programme might, it could take upwards
+of 10 hours. The CPU is doing all the
+work alone.
+Now look at the middle bar. By using
+Spark and dividing that same data into
+just 10 partitions.
+We can spread the work across 10
+different courses.
+Suddenly, that 10 hour job is finished
+in just 1 hour, all the 10 cores
+working parallelel to achieve the same
+task in union.
+But it gets even better if you scale up
+to 100 partitions across a larger
+cluster. That same task drops down to
+just 6 minutes.
+This is the core value proposition of
+Spark, which is linear scalability. By
+adding more partitions and more cores,
+we can shrink processing times from
+hours to minutes. Partitioning is what
+makes the divide and conquer strategy
+possible. In our next video, we'll talk
+about where these partitions actually
+live and how Spark decides which
+computer should handle which chunk of
+data through a concept called data
+locality. I'll see you there.

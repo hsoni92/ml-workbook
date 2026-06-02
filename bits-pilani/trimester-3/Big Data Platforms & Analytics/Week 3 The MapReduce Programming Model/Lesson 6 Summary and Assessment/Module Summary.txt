@@ -1,0 +1,52 @@
+We also reviewed the disc overhead and
+the 3x write penalty because MapReduce
+writes every intermediate step to the
+disc for safety. It is incredibly
+stable but inherently slower than
+memory-based systems. Understanding
+this resilience versus speed trade-off
+is what separates a beginner from a
+professional data architect.
+Congratulations on completing module 3.
+In our first two modules, we built the
+muscle of our big data platform, the
+clusters, and the distributed hardware.
+This week we finally mastered the brain.
+We moved from asking how many boxes we
+need to asking how we actually
+coordinate those boxes to solve massive
+problems by exploring the MapReduce
+programming model. You have learned the
+fundamental language of distributed
+data processing. Our first major
+takeaway. Is the power of abstraction
+as we saw, the primary goal of
+MapReduce is to hide the messiness of
+the cluster. As a developer, you don't
+need to worry about network protocols,
+data replicas, or which specific van in
+the fleet is carrying which split of
+data.
+MapReduce allows you to focus entirely
+on your mapping and reducing logic. You
+define the business transformation and
+the framework handles the thousands of
+moving parts in the background. It
+turns a complex hardware problem into a
+simple functional programming task.
+However, we also learned that this
+power comes with a price. One of the
+most critical points from our summary
+is that the shuffle and sort phase is a
+critical performance bottleneck because
+it requires moving data across the
+entire network. It is the most complex
+and time consuming part of any job.
+You now have a complete understanding
+of MapReduce's life cycle from input
+splits to the final aggregation results.
+You understand why it is resilient, why
+it is scalable, and why it is sometimes
+slow. Great work this week. Happy
+learning. I'll see you in the next
+module. Thank you.

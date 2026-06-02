@@ -1,0 +1,200 @@
+Hi everyone. Welcome to the Hanson Lab
+7. In this video, we are going to
+establish a crucial baseline for a
+pre-trained, uh, convolutional neural
+network, OK? Before we can say we have
+optimised the model, we need to know
+how it performs out of the box, OK? So,
+we will look at two key metrics. First,
+uh, How big the model is on disc, and
+the second, uh, how long a forward pass
+takes, uh, on a standard CPU. OK. And
+uh these baseline numbers are what we
+will compare against uh when we move to
+the ONNX format and uh ONNX uh runtime
+in the next couple of minutes.
+OK. So let's uh explore the code. I
+have, again, I have created the lab 7.
+You have the requirement.txt. Uh, all
+the new dependencies are there.
+So let's open.
+Uh, here you can find all the details.
+So here we have a script for Uh,
+baseline first. Let's install the
+dependencies.
+UV
+pip install.
+Requirements.
+Yeah, I got installed. Let's open the.
+Baseline first. Baseline script. And
+here you'll notice that uh We'll start
+loading a pretained uh resonator 18
+model from a torch vision, OK?
+Uh,
+And we are uh picking resonate 18
+because it's a realistic, uh,
+well-known architecture, but still
+small enough to be fast for our demo,
+OK? So, we immediately call.eval here,
+model.eval.
+To set it to entrance mode and move it
+to the CPU for a consistent.
+Baseline. OK. Now, a quick note, you
+can absolutely explore any model from
+hugging face that we learned about in
+the first lab, transformer, vision
+model, or any other architecture.
+However, for uh simplicity and uh to
+keep our focus on the optimisation
+techniques themselves, we are using
+this uh simpler CNN model that is uh
+resonator 18.
+But feel free to iterate through this
+entire process with the hugging face
+model. Doing so will deepen your
+understanding and give you hands-on
+experience with uh optimising the more
+complex models you'll encounter in uh
+real-world scenarios, right?
+So, yeah, coming back to the script, uh,
+next, uh, we see the models. Uh, into
+the desk. OK. Uh, you can see here. And,
+uh, this file resonate baseline, uh.
+Uh, Resna 18_baseline.pt uh represent
+our baseline, uh, model artefact. So,
+we then use Python OS model to get its,
+uh, size, size of this model, and this
+size in metabytes in our first key
+baseline metrics, we need to know this,
+uh, so we can see if, uh, other format
+like ONX, uh, uh, offer any size
+reduction, OK?
+So now for our second key metrics,
+latency, we create a random dummy input
+tensor that matches the expected input
+shape for Uh, resonate 18. OK.
+Uh, and before we time anything, we
+perform a warm-up loop here. The first
+few inference run on a model can often
+be slower due to things like uh memory
+allocation or library installations, OK?
+So, the warm-up ensure our measurements
+are stable and uh representative of uh
+steady state uh performance, right?
+Then we have the main loop here. So in
+the main timing loop, we run inference
+100 times and record the duration of
+each forward pass. Here, uh, we are
+interested in both the average latency
+and the most importantly, the P95
+latency. The 95 percentile tells us the
+latency value that 95% of requests fall
+under, giving us a much better sense of
+uh worst cases, uh, user experience
+than a simple average, right? So now
+let's uh, uh, run the script and
+establish our baseline. So to run that.
+Uh, again, you have this, uh, read me
+over here where you can find all the
+details. We have already installed the
+dependencies. Uh, now let's, uh, run
+this file.
+Um,
+Clear the terminal with this command.
+So basically, we are running the first
+script that is baseline.py. Executed.
+And what this script basically does,
+the script print out the model size and
+the latency metrics at the end. And it
+also saved uh this number into a JSON
+file. We'll, we're gonna see that.
+So if you see here, uh,
+It gave you total parameters, how many
+parameters we have, checkpoint size,
+average latency, P95 latency.
+And uh baseline summary. And let's go
+back to the Jason.
+Uh, baseline metrics. Jason. So here
+you can see the same information we are,
+uh, keeping it here. So this gives us a
+persistent record of our baseline that,
+uh, our Nexus script can use for
+comparison. So these are the, uh,
+numbers to beat basically, right? Now,
+the question here is, why did we go
+through all this trouble of
+establishing a baseline, right?
+That's because optimisation without
+measurement is uh just uh guesswork, OK?
+So we need to know where we started, so
+we can quantify our improvements.
+Right? So think about it this way.
+Uh, if someone tells you that, uh, they
+made a model that run faster, so, your
+first question should be how much
+faster? And, uh, to answer that, you
+need to have a reference point, right?
+And that's exactly what our baseline
+metrics provide here. But here is the
+interesting part. If you, if we talk
+about Pytosh, so Pytoch is already
+pretty good at inference. It's a
+natural product, uh, well optimised
+framework. So the question becomes, uh,
+can we do better? And the answer is yes.
+But we need to use the right tool for,
+for this job, OK? So, this is where uh
+ONNX uh runtime comes in. So, ONNX, uh,
+which uh stands for uh Open Neural
+Network Exchange, uh, and it's a, it's
+an open format for representing machine
+learning models. But more importantly
+for us, ONNX uh runtime is a high
+performance inference engine.
+Especially designed to squeeze uh every
+bit of performance out of your models,
+OK? And ONNX runtime uses a variety of
+optimisation technique, things like uh
+graph optimisation, operator fusion,
+and hardware specific uh accelerations.
+Uh, so, basically, it's designed from
+the ground up with uh one goal in mind,
+that is uh fast interference. Well,
+Pytorch is uh a general purpose
+framework that uh handles uh, uh,
+training, debugging, experimentation,
+and inference. We have already seen
+that, right? Uh, but ONNX runtime is,
+uh, laser-focused on making inference
+as fast as possible. Uh, there are lots
+of, uh, other inferences in available
+in the market like VLLM. So, uh, for
+most of the deployment, uh, like, uh,
+for LLM models, we use VLLM. You can
+also explore, uh, VLLM, uh, in
+production, we usually use, uh, VLLM.
+But yeah, for this lab, we're gonna see,
+uh, on ONLX.
+So, yeah, in our experiment, we are
+gonna use same model architecture, same
+input image, same performance metrics.
+The only difference will be the
+inference engine. So, this gives us a
+true apple to apple comparison. So,
+what we are comparing here, Pytosh
+inference and then ONX uh and inference,
+right? And here is what makes this
+exciting. We are not changing our model
+accuracy at all. We are not, uh,
+Uh, retraining, anything?
+We are not making any sacrifice to the
+model capabilities. We are purely
+looking at inference optimisation. If
+ONLX runtime is faster. Uh, that's, uh,
+free performance, better latency with a
+zero trade-off, right? So, let's move
+forward and see what kind of speed up,
+uh, we can achieve. It could be 10%, 5%.
+Uh, uh, maybe even more. So, now, the
+best line is set. Uh, now, let's see
+what optimisation, uh, can do.

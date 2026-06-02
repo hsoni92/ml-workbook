@@ -1,0 +1,72 @@
+Welcome back. In our last video. We
+looked at how range partitioning
+creates a beautiful, ordered library of
+data.
+But as any experienced data scientist
+will tell you. Data in the real world
+is rarely that well behaved.
+We are addressing the single biggest
+risk of this strategy, and that is data
+skew. Also known as the creation of hot
+spots.
+While range partitioning is efficient
+for queries, it is incredibly
+vulnerable to uneven data distribution.
+Let's look at the diagram. Imagine we
+have partitioned our users
+alphabetically across the three nodes.
+Node 1 handles A through L, node 2
+handles M through S, and node 3 handles
+T through Z. On paper, this looks like
+an even split, but what if your data
+set is based on users in a region?
+Where names starting with S are
+incredibly common.
+If a huge portion of your users fall
+into that specific range, node 2
+becomes a hotspot. While node 1 and
+node 3 are sitting idle, node 2 is
+overwhelmed, struggling to process a
+massive mountain of data.
+This creates the straggler effect. That
+we just discussed earlier. Your entire
+job slows down to the pace of that one
+overloaded note.
+Beyond just the volume of data, we also
+face what we call boundary skew. This
+often happens with time series data.
+If you partition your data by date and
+keep up pending new records for today.
+Every single new right operation will
+hit the same partition.
+The one holding the most recent date
+range in this scenario.
+You aren't just dealing with a slow
+query, you're creating a bottleneck for
+the entire ingestion pipeline.
+One node is doing all the writing,
+while the others do nothing. This is a
+critical failure because it prevents
+the system from truly scaling out its
+right capacity.
+So the tradeoff is clear. Range
+partitioning gives you order, which
+makes range-based searches incredibly
+fast, but it requires constant
+vigilance. You must understand your
+data distribution perfectly to set the
+boundaries that state balance.
+If your data is constantly shifting, or
+if the SKU is too unpredictable for a
+fixed range, you might need a more
+flexible approach.
+When both hash and range partitioning
+fail to give you the balanced
+performance you need, it's time to take
+manual control. In our next module,
+we'll explore custom partitioners.
+Where you can write your own logic to
+handle these complex distributions.
+I'll see you in the next lesson. Till
+then, happy learning and thank you so
+much.

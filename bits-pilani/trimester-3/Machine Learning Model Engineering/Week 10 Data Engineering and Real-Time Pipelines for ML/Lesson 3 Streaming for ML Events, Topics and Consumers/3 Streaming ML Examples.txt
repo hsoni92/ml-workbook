@@ -1,0 +1,74 @@
+Where does streaming machine learning
+really shines? Real time anomaly
+detection, spotting unusual traffic
+patterns, suspicious transactions, or
+system failures?
+Live recommendations and
+personalization, where you want to
+react quickly to recent clicks and
+views, dynamic pricing or bidding,
+reacting to market data and demand. And
+even observability, where you stream
+model prediction and metrics into a
+monitoring system for real time
+alerting.
+Streaming machine learning often pairs
+with. Online inference, where an API is
+called per request, or streaming
+inference where a job consumes events
+and emits prediction or alerts directly
+on the stream. How do we choose between
+micro batch and full streaming?
+Micro batch is easier, if you already
+use batch tools, it's usually enough
+when you just need minute level
+freshness.
+Streaming is worth the complexity when
+you need 2nd level or sub 2nd level
+reactions. Every high event volume or
+reach continuous features.
+A good rule of thumb, start with a
+batch or micro batch.
+Move to full streaming only when you
+have clear requirement for very low
+latency. Or when simpler patterns can't
+keep up.
+Streaming is not just for features. It
+can touch multiple parts. Of the
+machine learning life cycle, it can
+power features computation, maintaining
+live aggregates and latest stages that
+feeds into online feature stores. It
+can drive model serving. Where a
+streaming job, consume events, runs
+models and writes prediction to other
+topic or store. It can support
+monitoring by streaming predictions,
+feature risks and eventual labels, so
+streaming can become a backbone of data
+for data.
+Serving and monitoring in real time
+machine learning systems. To summarise
+this video, we defined events, topics,
+producers and consumers. We positioned
+Kafka as event transports and logs, and
+a spark flink beam as processing engine
+on a top. And we saw were streaming
+machine learning signs.
+Real time anomaly detection, live
+recommendation, dynamic price. And more.
+In the next theory video, topic 4, we
+will focus on data quality in real-time
+machine learning, data freshness and
+latency, completeness and correctness
+of events.
+And the schema evaluation and contracts.
+And in the labs, we will keep it
+practical with the batch style
+simulation, daily CSV file representing
+new data. An ingestion script and a
+simple retraining hook, that gives you
+concrete feel of how data train
+pipeline works.
+Even without building a full streaming
+system. Thank you.

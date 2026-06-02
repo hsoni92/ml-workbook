@@ -1,0 +1,49 @@
+Welcome back, learners. In the previous
+videos, we have completed the building
+of the application. It's time to run it
+and demo the application now. I hope
+you're excited for the final demo of
+our capstone project, Quiz Genius AI.
+Let's go for it.
+So Implementation wise, it is nothing.
+I will just run the function that we
+defined in the previous video, run
+quizar, right? Let me run this.
+Great. What topic do you want to be
+quizzed on? Let me add mathematics.
+Generating quiz on mathematics. All
+right, so it has generated a quiz name,
+right? Mathmaster's Challenge.
+Question one, what is the value of
+integral of whatever, whatever? Let me
+just add anything at random. It says
+wrong. The answer was A, and some
+explanation for that. If a matrix, if a
+matrix A has eigenvalues 123, yada yada
+yada, let me answer as B then just a
+random answer. Oh, it was correct as
+well, right? Random luck. And then the
+explanation. Finally, let me add this.
+OK, again, correct, great. So you see,
+2 were correct, so the score was 2,
+total was 3, and the output was good
+job, keep studying. Great. I hope you
+enjoyed this, this was so dynamic and
+in real time, right?
+Let's also run it again for another
+topic, just for fun. So we ran it for
+maths, let's run it for science.
+The intermediate science challenge,
+right? One question, let me answer
+something.
+Let me answer something again and then
+one more answer.
+And the final score was 1 out of 3,
+good job, keep studying. Great. I hope
+you enjoyed this capstone project.
+We're done. However, I would want you
+to again experiment with this
+application and also use this template
+to implement your own ideas. So this
+marks the end of this module. I hope
+you really enjoyed this. Thank you.

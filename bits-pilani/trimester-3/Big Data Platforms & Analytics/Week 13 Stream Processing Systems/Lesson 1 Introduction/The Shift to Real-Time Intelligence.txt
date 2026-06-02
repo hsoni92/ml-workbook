@@ -1,0 +1,73 @@
+Hello everyone and welcome to module 13
+of our course Big Data Platforms and
+Analytics. I am Waal Mishra, and in
+this module we are going to dive deep
+into the world of stream processing
+systems.
+Up until now we have spent a
+significant amount of time discussing
+how to store and process massive
+datasets using batch processing
+frameworks like Hadoop and Spark. While
+those are powerful for historical data
+analysis, today's digital landscape
+requires something more immediate.
+We are moving towards architecting
+real-time data intelligence at scale.
+By the end of this module, you'll be
+able to contrast batch and stream
+processing models in terms of latency
+and data velocity, identify key use
+cases for streaming in financial
+services and e-commerce, evaluate
+different processing guarantees exactly
+once versus at least once for system
+reliability. Architect high skill
+real-time streaming solutions using
+tools like Kafka.
+Let's start by looking at the slide
+where we discuss why the shift is
+happening.
+Historically, data engineering was
+built around historical analysis. You
+would collect data all day, store it in
+a warehouse, run a bad job at night to
+see what happened. But as you can see
+here, the paradigm shift is happening.
+We're moving from periodic batch
+processing to continuous real-time
+flows. For those of you in this course,
+understanding this transition isn't
+just a technical upgrade. It's a
+critical requirement for the modern
+data engineering.
+Why does this matter? There are 3 core
+drivers shown on this slide. Velocity
+is the new volume. We used to focus
+only on how much data we had. Now the
+focus is on how fast we can act on it.
+We are talking about acting on data in
+milliseconds or microseconds, so
+operational efficiency is needed a lot.
+This is a shift in the questions we ask.
+We are moving from what happened
+yesterday to what is happening right
+now. This allows for immediate
+intervention and monitoring. In a world
+of instant gratification, being able to
+respond immediately to market
+fluctuations or user triggers provide a
+massive advantage. Whether it's a
+sudden drop in stock prices or a user
+clicking in a specific product,
+real-time intelligence allows for an
+immediate response.
+As we move forward in this lesson. We
+will define exactly what constitutes a
+stream and how these systems manage to
+process data that never actually stop
+flowing. In the next segment we'll
+contrast these three concepts directly
+with the batch models that you are
+already familiar with, and then we'll
+see the technical trade-offs involved.

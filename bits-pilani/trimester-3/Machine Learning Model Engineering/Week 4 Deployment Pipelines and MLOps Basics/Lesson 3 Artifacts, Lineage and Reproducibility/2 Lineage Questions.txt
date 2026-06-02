@@ -1,0 +1,102 @@
+So why do we care about lineage and
+traceability in the real world? You
+constantly need. To answer questions
+like which data, which config, which
+code produced this particular model?
+Which model version is currently
+running in production?
+What changed between Model V3 and V4
+that changed that caused the
+performance shift?
+Which experiments led us to choose this
+model in the first place itself?
+Without good lineage, you are guessing.
+With good lineage, you can inspect, you
+can compare, and roll back model with
+confidence. One way to visualise
+lineage is as a graph. Imagine a node
+representing model V 7. That node is
+linked to the code commit that was used
+to train it. The config file that sets
+hyperparameter, the data snapshot or
+dataset version it was trained on. The
+training run ID. In a system like ML
+flow. And the metrics and evaluation
+artefacts that justified promoting it.
+When we say we want lineage.
+We mean we want it to be able to
+reconstruct this graph, or any model
+version, especially
+the ones running in production.
+In practise, we use tools to capture
+all this information.
+At high level, You'll often see an
+experiment tracker like ML flow that
+locks, runs parameters, metrics, and
+artefacts. A model registry
+Which manages model version and their
+stages, like staging and or production.
+A general metadata store that tracks
+pipelines, data sets, and relationships
+between all of these artefacts.
+You don't need to become an expert in
+all these tools right away. The
+important part is the concept, runs the
+artefact.
+Runs and artefacts are recorded.
+Models and their context are versioned.
+And you can construct lineage when you
+need it. In the labs, you will see this
+concretely with ML flow.
+Now let's talk about reproducibility.
+Reproducibility means that if you run
+the same pipeline with the same code,
+the same config, and the same data
+snapshot, you get the same model, or at
+least one that's effectively equivalent
+within acceptable randomness.
+This is crucial for debugging. When
+something goes wrong, you want to be
+able to replay the training exactly.
+Audits and compliance. In regulated
+industries, you may have to prove how a
+model was created.
+Scientific workflow result should be
+repeatable, not one of accidents.
+Here are some concrete scenarios where
+reproducibility really matters.
+Debugging Imagine production
+performance drops. You want to replay
+the exact training process. What
+produced the current model? To see what
+went wrong or how it differs from
+previous version. Compliance and audits
+in domains like finance or healthcare,
+regulators might ask, how was this
+model trained? On what data? With what
+parameter? If you can't answer that,
+you're in trouble. Collaboration, a new
+teammate join and want to build on your
+work.
+If they can rerun your pipeline and get
+the same result, they can confidently
+extend it.
+All of this relies.
+On artefacts being tracked and lineage
+being available.
+So how do we actually achieve
+reproducibility in practise? First, we
+use pipeline to encode. The sequence of
+steps. And their order The config and
+parameters used at each stage.
+Second, We use tracking tools to record
+metadata for each run, commit code data
+versions, config environment.
+The artefact and matrix produced, put
+together. The pipeline knows what to do.
+The tracking system knows what was done
+and with what. And we can say, rerun
+training for. Run X. And expect the
+expect to get the same result.
+That's reproducibility in an machine
+learning system. Not just in a notebook.

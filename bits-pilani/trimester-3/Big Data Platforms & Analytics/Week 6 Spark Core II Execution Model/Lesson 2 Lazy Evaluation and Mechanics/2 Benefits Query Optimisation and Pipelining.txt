@@ -1,0 +1,63 @@
+So in our previous video, we
+established the what and when of lazy
+evaluation. Now let's talk about the
+why, specifically, why is being lazy so
+much faster than being eager. On the
+slide, we actually highlighted four
+pillars of spark optimisation that are
+only possible because of this delayed
+execution. The first pillar is query
+optimisation, because Spark waits until
+you call an action. It gets a bird's
+eye view of your entire logic, or your
+logical plan. It can see if you're
+joining two massive tables, but only
+need 3 columns from each, right? It can
+reorder your philtres to happen before
+a join, which actually significantly
+reduces the volume of data that needs
+to be shuffled across the network. This
+is essentially a smart execution. The
+second pillar is pipelining. In
+traditional systems, every time you
+perform a transformation, the result
+might be written to disc, right? But in
+Spark, multiple narrow transformations
+like a map followed by a philtre are
+actually combined into a single
+physical stage. Instead of reading from
+disc, mapping writing back to the disc
+and then reading again to philtre it,
+Spark does it all in one pass in memory.
+This effectively eliminates unnecessary
+IO overhead. The third benefit is fault
+tolerance. Since Spark doesn't just
+store the data, but the recipe or the
+lineage required to create it, it is
+incredibly resilient. If a worker node
+fails and partition data is lost, Spark
+doesn't panic. It simply looks at the
+lineage graph and recomutes only the
+lost partition from the original source
+itself, right? So this is a much more
+efficient way to handle failures than
+your traditional checkpointing. Finally,
+We have the Catalyst optimizer. This is
+the underlying engine that actually
+automates high level optimisation for
+you. You don't have to manually figure
+out the best way to order your joints
+or philtres, right? Catalyst takes your
+logical plan and tests various physical
+strategies and then find the most
+efficient route to your data. By
+delaying execution, Spark transforms
+from a simple executor into an
+intelligent optimizer. In our next
+lesson, we'll dive deeper into
+different types of dependencies, narrow
+and wide dependencies, and see how they
+determine where Spark draws the
+boundaries for its execution stages.
+I'll see you in the next video. Till
+then, happy learning. Thank you so much.

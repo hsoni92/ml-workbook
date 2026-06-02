@@ -1,0 +1,80 @@
+Welcome back. In the last video, we
+looked at the mathematical how of hash
+partitioning.
+Now let's talk about the strategic when.
+Just because hash partitioning is a
+default in many systems. This doesn't
+mean it's always the right choice.
+We have identified 4 key scenarios that
+should guide your decision making
+process when architecting a distributed
+data set. The first and most common
+reason to choose hash partition is
+uniform key distribution. If your data
+set has a high cardinality. Meaning?
+You have many unique keys, like a
+Social Security number or a random UU
+ID. Hash partitioning is your best
+friend.
+It effectively scrambles the data to
+ensure you don't end up with hot spot.
+Assuming your keys are diverse.
+So second, hash partitioning is the
+gold standard for point lookups,
+because the mapping is deterministic,
+meaning the math always points to the
+same index for the same key. The system
+doesn't have to scan the whole cluster
+to find one record. It simply watches
+the hash, applies the modulo, and goes
+straight to the specific node where
+that record lives.
+It's nearly instantaneous. Now let's
+talk about one of the most powerful
+performance boosts in big data, that is
+join optimisation through data
+co-location.
+In a typical distributed join, the
+system has to move data across the
+network.
+So matching keys from two different
+tables end up on the same machine. This
+is very slow. However, if you have two
+large data sets, say, let's say orders
+and customers. And you partition both
+of them on customer ID.
+Using the same hash function and the
+same number of partitions. Something
+magical happens.
+The matching keys are already on the
+same nodes. This results in what we
+call a shuffle less joint.
+Which can improve performance by orders
+of magnitude.
+But there is one major red flag on this
+slide. Which is, no range scans. Hash
+partitioning is designed to scatter
+data. This means that while ID 101 and
+ID 102 might be numerically close,
+their hashes will be completely
+different. Sending them two entirely
+different nodes.
+So if a query uses between greater than
+or lesser than or any date range
+philtre, hash partitioning will force
+the system to scan every single node in
+the cluster.
+Because it has no idea where the train
+starts or where the train ends.
+So use hash partitioning for balance,
+for specific IDs, and for optimising
+joints. But if your business relies on
+chronological order or range-based
+queries, you need a different strategy.
+In the next lesson, we'll dive into
+range partitioning.
+Which solves the exact same problem we
+just identified in hash partitioning.
+But I'll see you in the next video.
+Till then, happy learning. Thank you so
+much.

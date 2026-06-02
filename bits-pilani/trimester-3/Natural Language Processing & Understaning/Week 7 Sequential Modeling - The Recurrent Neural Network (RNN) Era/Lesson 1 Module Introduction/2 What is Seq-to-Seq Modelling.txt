@@ -1,0 +1,88 @@
+Welcome back, learners, to the lesson 2
+on RNNs.
+So what is sequence to sequence
+modelling? Sequence to sequence, or set
+to set modelling, is the powerhouse
+behind applications like Google
+Translate, Siri, and some modern chat
+apps.
+It involves training models to convert
+sequences from one domain to sequences
+in another domain, so you understand
+that a sentence in English is a
+sequence. If you provide a sentence as
+input and you receive a sentence as
+output, that's sequence to sequence
+modelling. Sequence to sequence
+modelling is powered by its
+architecture, a very special
+architecture called the encoder-decoder
+architecture.
+Let's understand this further. The
+encoder consumes the input, which is a
+sequence, one token at a time. It then
+compresses the entire meaning of the
+sequence into a single fixed size
+vector, called the context vector, or
+the hidden state.
+It's like reading a whole book and
+summarising it into a single mental
+thought. After the encoder comes the
+decoder. What decoder does is that it
+takes the context vector that it
+received as its starting point and then
+generates the output sequence again one
+token at a time.
+To understand this, it's like taking
+that mental thought and then writing it
+down in a different language. So The
+architecture looks like.
+This is the encoder. It takes an input.
+Condenses that input sequence into one
+context vector, or hidden state. And
+then passes it
+To the decoder, and then this decoder
+consumes this hidden state as the input.
+And produces the output sequence.
+Let's understand this further. So
+here's the encoder. It takes a sentence
+in English.
+I am fine.
+Takes it one token at a time, so I goes
+first, A goes 2, Fine goes next. It
+then condenses all of this into a
+single hidden state, or context vector.
+Then the decoder receives this context
+vector. As a whole, and then starts
+generating the output sequence one
+token at a time.
+J Weisben. This is the French
+translation for I am fine, some real
+world applications of set to set
+modelling is machine translation, an
+example that we just saw. Text
+summarization.
+And speech recognition.
+So you realise that in each of these
+examples the input is a sequence and
+the output is a sequence. Similarly,
+long article is a sequence sequence of
+words, and so is the short summary.
+Audio signals is also a sequence, and
+text transcript is another sequence,
+right? So that makes it SEC to SEC. Now
+while this looks simple, it's not easy
+to implement. The main challenge here
+is the information bottleneck.
+The encoder must capture everything
+about a long sentence or a paragraph,
+be it the grammar, tone, facts and
+information in it, into a small vector.
+The condensation into the hidden state.
+If the sentence is too long, the model
+forgets the beginning by the time it
+reaches the end, right? This limitation
+is what eventually leads us to the
+future of attention mechanisms.
+That's all for this video, and I'll see
+you in the next one. Thank you.

@@ -1,0 +1,134 @@
+Hello everyone, and welcome to this
+course. But before we jump into the
+course introduction, let me share my
+introduction first. My name is Watsal
+Mishra, and I'll be your instructor as
+we dive deep into the architecture and
+strategy behind modern data systems.
+Currently I lead the data engineering
+and generative AI initiatives at Google.
+Over my 6 year tenure there, I have
+transitioned from technical solutions
+consultant to senior data engineer,
+focusing on scaling complex data
+infrastructure.
+My career has been defined by a passion
+for transforming raw data into
+actionable intelligence and insights.
+A journey that has taken me through
+management consulting and high growth
+startups as well. Prior to Google, I
+was a senior data platform development
+engineer at urban company, erstwhile
+Urban Clap. There I was responsible for
+maintaining a data platform powered by
+Kafka and Spark.
+Managing the seamless flow of
+information from diverse sources into
+snowflake data warehouses. I also
+spearheaded the deployment of tools
+like Redash and Jupiter Hub to ensure
+that business users and data scientists
+could effectively utilise that data. My
+foundational experience as a big data
+engineer at ZS involved handling large
+scale commercial data for leaders in
+the pharmaceutical industry. Where I
+built data lakes using Apache Spark.
+And technically, my toolkit is built on
+Python, Spark, Kafka, SQL, Java and the
+Spring framework. I hold a Bachelor of
+Technology in Electronics and
+communications Engineering from
+TripleIT Allahabad.
+In this course, I won't be just
+teaching you the theory of big data,
+I'll be sharing the real world
+engineering challenges and solutions.
+I've encountered at some of the world's
+most data driven organisations.
+I look forward to helping you master
+the platforms that power the future of
+analytics.
+And now welcome back to Big Data
+Platform and Analytics course. I'm
+thrilled to have you here. We live in
+an era where data is generated at an
+unthinkable scale.
+But here's the secret.
+Big data isn't just a size problem.
+It's an infrastructure problem.
+In our first two weeks, we're going to
+dive into the three V's volume,
+velocity, and variety. We look at why
+the hardware sitting on your desk
+eventually hits a wall.
+And why we have to shift from vertical
+scaling to horizontal scaling using
+clusters of commodity hardware.
+We'll also tackle the cap theorem. The
+fundamental law of distributed systems
+that forces us to choose between
+consistency, availability and partition
+tolerance.
+Once we understand the constraints. We
+need an engine. So in week 3, we master
+map produce.
+You'll learn how to take a massive task,
+map it across thousands of machines,
+and reduce it into a single answer.
+But as you will discover soon,
+MapReduce has a weakness. It is disc
+based and slow. That's why in Weeks 4
+through 6, we pivot to the Spark
+revolution.
+We will explore how Spark uses in
+memory computing and resilient
+distributed data sets. To make
+processing up to 100 times faster.
+We look at the anatomy of spark job,
+exploring lazy evaluation, and directed
+a cyclic graph or dag.
+Which is how Spark intelligently plans
+its execution.
+In a distributed world, things will
+break. So in week 7 and 8, we'll focus
+on resilience. How does a system
+recover when a node fails? We'll look
+at the lineage and checkpointing
+strategies to ensure your 24 hour data
+job doesn't have to start over from
+scratch just because one hardware
+glitch happened.
+Then we get into the secret to scale,
+which is data partitioning, in week 9
+and 10. We'll solve the data skew
+problem. You learn advanced
+optimisation techniques like salting
+and broadcasting to ensure your cluster
+is working.
+And it is working evenly and
+efficiently, avoiding those hot spots
+that can paralyse a pipeline. In the
+final stretch. We move beyond batch
+processing. So weeks 11 and 12 are all
+about distributed machine learning.
+How do you train a model that is too
+big for one machine?
+We'll dive into tensor flows,
+distributed strategies and the ring all
+reduce method. Finally, in week 13,
+we'll shift to real-time intelligence.
+We look at stream processing with Kafka
+and storm. Learning how to architect
+systems for fraud detection and dynamic
+pricing, where every millisecond counts.
+This course is rigorous, hands on, and
+designed to prepare you for the real
+world challenges of data engineering.
+I'm really excited to see what you
+build.
+Let's dive into Module One and start
+scaling. I'll see you in the first
+lesson. Thank you so much. Happy
+learning.

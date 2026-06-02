@@ -1,0 +1,130 @@
+Hello, everyone. Welcome to the labs
+for module 6. Here, uh, we will put the
+theory of retraining and uh model
+promotion into practise.
+In this lab, we will simulate a common
+envelopes task, uh, like, uh,
+retraining our model on a newer slice
+of data. We will tweak our
+configuration to point at a new data
+set. Run the same training pipeline we
+have used before and uh log a new
+candidate model version into the MLflow
+model registry, OK? Think of this as,
+uh, answering the question, what if we
+refresh this model using the last few
+weeks of data, OK? So I have created,
+uh, here, module 6. Here's the reading.
+It will give you all the details of our,
+uh, Repository structure, OK, uh,
+requirement.txt. You have to install
+the dependencies and then we have a
+different version of, uh, data source,
+different version of configuration
+which uh we are gonna see, uh, in this
+lab, OK.
+So, our first step is to define the
+data window for our training run. Our
+pipeline is uh configure-driven, OK? Uh,
+meaning we don't hardcode path in our
+script, OK? So let's open, uh, uh, so
+this, this was our initial, um,
+configuration which we have used in our
+previous lab, right? This was our
+original configuration.
+It points to training data, uh, V1.
+Right? We will use this to create our
+first uh production model. Then we have
+configuration V2, and this is our new
+configuration for the retraining run,
+right? The only changes, uh, is that
+the data path now points to V2, which
+represents a more recent, uh, snapshot
+of data, OK? And uh by storing these
+setting in a config file, our
+retraining process becomes repeatable
+and auditable, right? So we have a
+clear record of uh which data was used
+for uh which training run. That's why
+we have different configuration file.
+OK. Uh, now, let's, uh, look at the
+script training.
+By. This is the heart of our retraining
+pipeline script. It's uh designed to be
+generic and uh
+Controlled entirely by the config file,
+we passed to it, OK? Inside the trainer
+log function here, uh, after loading
+the data and training the model, we see
+the ML flow integration, OK? So here
+you can find the implementation of ML
+flow. Uh, we log the model parameter
+here, some dummy metrics for this
+example, and a copy of config file
+itself as an, uh, artefact. This ensure
+for traceability. And if you notice
+here, ML flow register model, this is
+the crucial last step. After logging
+the model as an artefact, we call ML
+flow register model. So this takes the
+model from the runs artefact and
+officially register it as a new version
+under the name uh credit uh risk model,
+OK, uh, in the ML flow uh registry. And
+this is how we create our official
+version candidates, OK? Now, let's
+execute. First, we'll run the initial
+training to create our uh champion
+model, which uh we will imagine is
+already in production. Then let's run
+this training.PY and the configuration
+we are gonna use is, uh, train config
+version one. Right? Before that, let's
+uh first, uh,
+Install the dependencies.
+Yeah, UV.
+Good and strong.
+Requirement.
+Yeah.
+Now dependency is uh got installed. Uh,
+let's open Reade, uh, where we can also
+see how to execute this training. Py
+train.py. So here's the command Python
+script. Uh, this is our training script,
+and, uh, that's how we can pass, uh,
+config file as a parameter, right? So
+let's copy this and, uh. That's the
+Greek code.
+So basically, this creates a version
+one of our model. Now, let's uh
+simulate a scheduled uh training job by
+running the pipeline again and the new
+data config, OK?
+So it's already got created.
+I run, yes, Model. Got trained? he
+asked the artefact.
+OK. Now let's run the 2nd configuration.
+Yeah. Second model also got uh trained.
+So you can find, uh, so here you can
+find two models which we just uh
+trained. Right?
+Now it's a dry. Uh, ML flow. So to run
+the ML flow, what we can do. Uh, we can
+simply type, uh.
+Amal flow.
+Uh, UI. Last time we have also executed
+in the same way.
+Right, so
+A man flow is running.
+So this is the ML flow UI and if we go
+inside this, you can find uh these two
+models. And uh if you go inside, you
+can get all those details, uh, what was
+the training script and uh parameters,
+everything. Uh,
+Model metrics here, everything that we
+have already seen, right? Let's go back
+to the another model.
+Uh, we do, and here's another model.
+Now, let's compare these two models,
+head to head.

@@ -1,0 +1,37 @@
+Welcome back, learners. In the last
+video, we saw how we can implement
+pause tagging in Python.
+Let's extend that and visualise our
+pause tags. Now that we've seen how to
+implement POS tagging with Spacey.
+This is one way of visualising the
+results, right? Spacey also gives us
+another option to pictorially visualise.
+The POS tax. And it looks like this. So
+what you do is import display C from
+space C.
+And then you run displacey.ser. You
+pass the sentence and you declare a
+style. And what you get as an output is
+the tokens I will book a ticket and the
+US tags, so pronoun, auxiliary, verb,
+determinant, noun. Additionally, what
+you get are the relations of these
+tokens with each other, so book is
+related to I. I will book, right? I,
+who will book? I will book.
+Will book as an auxiliary relationship,
+book as a subject here, right? Book is
+also related to ticket, so book what?
+Book ticket, right? And ticket is
+related to a, so a ticket as in one
+ticket, right? So this is very
+informative.
+Let's see this on the next sample. Read
+this book. The verb determinant noun,
+book is related to this, and read is
+related to book.
+So that's how you pictorially visualise
+POS tags using spacing. That's all for
+this video, and I'll see you in the
+next one. Thank you.

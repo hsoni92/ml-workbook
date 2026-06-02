@@ -1,0 +1,62 @@
+Here is working definition.
+Model serving is running a long lived
+service. That loads your trained model,
+listen for incoming request, runs
+inference on each request, and send
+responses back to whoever called it. So
+it's not just we have a PKL or .pT file
+on disc.
+It's we have a reliable service that
+can take real traffic, answer
+predictions call. And behave like a
+proper production component. That
+server might be a fast API app, or a
+flash app, or a GRPC service, or
+servers function, or something more
+specialised, but the core idea is the
+same.
+It's useful to distinguish between a
+model artefact and a model service. A
+model artefact is a serialised file on
+disc, maybe. PKL.pt.x or similar. It's
+passive. It just sits in large storage
+until something loads it.
+Model services a running process or
+container that exposes endpoint like
+post predict or
+get path and integrates with client
+like one you wrote in Module 2.
+And also we integrate it with
+monitoring, logging infrastructure from
+the envelopes, world we talked about in
+M1. Serving is the act of taking that.
+Inert artefact and bringing it to the
+file as a reliable callable service in
+production.
+Let's look at what a single prediction
+actually involves from a server's point
+of view.
+For each inference request, the serving
+layer typically does a lot of steps.
+Starts with, it receives a request,
+usually HTTPJN, GRPC or something
+similar. It validates and parse the
+input, checks type, required field,
+ranges, and turns raw Json into
+structured object. It transforms
+features, applies the same processing
+you use during training, like encoder,
+normalizer, feature unions, whatever
+the model expects. It runs the model
+forward pass, which means calls the
+model predict or model with the input
+under the hood.
+It post processes the output, maybe
+applies thresholds, picks top K, add
+labels, or shape the result. And
+finally, it returns a response to the
+caller in a stable format.
+Model serving is about orchestrating
+this entire pipeline around the model,
+not just calling a function which is
+predict in isolation.

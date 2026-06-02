@@ -1,0 +1,60 @@
+In our previous video, We established
+that RAM is the secret sauce to Spark's
+speed, but how Spark actually manages
+its operations to avoid touching the
+disc. In this video we'll look at 2
+slides to understand how Spark
+minimises disc rewrite cycles. Let's
+look at the first slide, the DG,
+directed acyclic graph. Unlike Hadoop
+MapReduce, which sees a job as a rigid
+map shuffle reduce sequence, Spark
+builds a logical plan of the entire
+data pipeline. Because Spark knows the
+entire series of transformation you
+want to perform before it even start.
+It can optimise the workflow. It looks
+for ways to pipeline operations
+together in a single stage. Keeping the
+data in memory for as many steps as
+possible, without ever needing to
+materialise or write to the disc.
+This leads us to the two key features
+of Spark on the next slide, which is
+lazy evaluation and persistence. In
+Spark, transformations are lazy. This
+means if you tell Spark to philtre a
+data set and then map it, Spark doesn't
+actually do anything.
+It just adds those instructions to the
+dag. It only executes the code when an
+action, like saving to a file or
+showing the count, is called.
+Then this allows Spark to combine
+multiple steps into one efficient pass
+over the data. So Spark intelligently
+decides to arrange each step, each
+iteration, the way they want, and then
+they prune the dag to make it more
+efficient. The second feature is
+persistence or catching.
+In Hadoop model, if you needed to use
+the same data set for 2 different tasks.
+You have to read it from the disc twice.
+In Spark, you can explicitly tell the
+system to persist a data set in memory.
+Once it is loaded and transformed, it
+stays in the RAM of the worker noises.
+Any subsequent operations can then pull
+that data directly from memory
+instantly by combining an intelligent
+execution plan with the ability to lock
+data in RAM. Spark virtually eliminates
+the constant disc chatter that slows
+down traditional batch processing.
+Next. We'll put these theories to the
+test by looking at a performance
+benchmark, Hadoop versus Park in a Ky
+means algorithm. And I'll see you in
+the next class. Till then, happy
+learning.

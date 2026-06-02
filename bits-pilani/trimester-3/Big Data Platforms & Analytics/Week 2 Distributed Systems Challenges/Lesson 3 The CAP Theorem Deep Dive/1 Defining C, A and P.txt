@@ -1,0 +1,76 @@
+Welcome back. In our last lesson, we
+learned that in a distributed system,
+network partitions, those breaks in
+communication, are a guaranteed reality.
+Today we are going to learn the golden
+rule of how we deal with those breaks.
+It's called the Cap theorem. Proposed
+by Eric Brewer. Cap theorem is a
+fundamental law that states in a
+distributed system, you can only
+provide 2 out of 3 guarantees at any
+given time. Those 3 guarantees are
+consistency, availability, and
+partition tolerance. Before we look at
+the trade-off, we first need to
+understand exactly what each of these
+letters means in the real world.
+First, let's talk about consistency,
+see? In a consistent system, every read
+request receives the most recent write.
+Or an error. Think of it like a group
+text with your friends. If you send a
+message saying
+lunch is at 1:00 p.m. and your friend
+checks the group text a second later, a
+consistent system guarantees that they
+see your message about 1:00 p.m. first.
+They won't see an old message about
+12:00 p.m. It's about everyone seeing
+the exact same truth at the exact same
+time. If the system can't guarantee
+that the data is the most recent
+version, it would rather return an
+error than give you the wrong answer.
+Next is availability, or A. This means
+that every request receives a response,
+without the guarantee that it contains
+the most recent right.
+Imagine you're trying to check the
+score of a cricket match on a news
+website. An available system will
+always give you a score when you
+refresh the page. Even if the server in
+your city has lost its connection to
+the stadium. And is showing a score
+from 5 minutes ago, the side stays up.
+It's better to give some answer than no
+answer. In an available system, up time
+is the most important thing. Finally,
+we have partition tolerance. As we
+learned in Lesson 2. That it is the
+system's ability to keep working even
+when messages are being dropped or
+delayed between nodes. Since we are
+working with big data clusters spread
+across many machines, P is a
+requirement. We know the network will
+eventually fail. So the real question
+the cap theorem asks is, when a
+partition or a break happens, do you
+choose to be consistent, which means
+give the perfect truth or nothing. Or
+available, which means, give whatever
+answer you have, so the user isn't
+stuck.
+In order to recap, consistency is about
+being correct, availability is about
+being fast, and partition tolerance is
+about being resilient. Because we
+cannot avoid partitions, we are forced
+to choose between C and A. In our next
+lesson, we will talk at real world
+scenarios like banking versus social
+media to see which choice is the right
+one for different business problems.
+I'll see you there. Thank you.

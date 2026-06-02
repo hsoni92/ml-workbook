@@ -1,0 +1,59 @@
+In our previous video, we looked at the
+data parallelism, where we duplicated
+the model and split the data.
+But what happens when the model itself
+is simply too large to fit into a
+memory of a single GPU? If you're
+working with massive LLMs or learn
+language models, the kind with hundreds
+of billions of parameters, even a
+single copy of that network requires
+hundreds of gigabytes of virtual RAM.
+In these cases, we have a turn to model
+parallelism where we split the actual
+layers of the network across multiple
+devices. Look at the model parallelism
+instead of every GPU holding the whole
+model.
+We divided the architecture, for
+example, node A might be responsible
+for handling layers 1 to 10. Lode B
+handles layer 11 to 20. Lord C handles
+the final layers. In this scenario,
+data flows sequentially to the split.
+This is often referred to as pipeline
+parallelism as well. Another more
+granular version is tensor parallelism.
+Instead of splitting by layer, we
+actually split the large metric
+operations, the tensors themselves
+across GPUs. This allows multiple GPUs
+to compute a single layer
+simultaneously.
+The trade-off here is communication
+complexity, unlike data parallelism,
+where nodes only need to sync up at the
+end of the batch. Model parallelism
+requires nodes to communicate during
+the forward and backward passes.
+Because layer 11 can't start until
+layer 10 finishes, managing the
+timeline and data transfer between
+these stages is critical to avoid
+leaving your GPUs idle.
+To summarise, we use data parallelism
+to handle big data sets, and we use
+model parallelism to handle big
+networks. In many state of the art
+systems, we actually use a combination
+of both to achieve the best possible
+performance.
+Now that we understand the two main
+ways to divide the work, it's time to
+look at the mathematical engine that
+drives the training. Stochastic
+gradient descent. In Part 3, we'll see
+how we take the standard SGD algorithm
+and adapt it for these distributed
+environments. I'll see you in the next
+lesson.

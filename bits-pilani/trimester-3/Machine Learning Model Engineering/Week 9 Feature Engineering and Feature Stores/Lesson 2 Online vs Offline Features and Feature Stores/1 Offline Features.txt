@@ -1,0 +1,59 @@
+Welcome to Online versus offline
+Features and what is a feature store.
+In the previous video, we saw that
+feature engineering becomes a system
+problem in production, and we
+introduced training serving SQU. In
+this video, we will clearly separate
+offline feature and online features,
+and then introduce the idea of a
+feature store, a central system that
+defines features once and materialises
+them consistently for both training and
+serving.
+This is the foundation for avoiding
+training serving skew at a scale.
+Let's start with the big picture.
+We use the same feature concept in two
+different contexts, offline. When we
+train models on large historical data
+set or run batch scoring jobs, these
+jobs can run for minutes or hours.
+Online, when we serve prediction for
+live traffic, here we only have
+milliseconds to compute or look up
+features. We want the same feature
+definition in both worlds, but the
+compute pattern and infrastructure are
+very different. That's why we talk
+about offline features and online
+features as separate concerns.
+First, offline features. Offline
+features are computed on large
+historical data set. They typically
+live in your data lake or data
+warehouse, things like perquet files,
+big query tables, or snowflake tables.
+We use offline features for training
+models and running batch scoring jobs,
+like overnight churn predictions.
+These pipelines can do heavy joints and
+aggregations. Scan billion of rows, and
+run my minutes or hours to complete.
+The goal in this world is throughput,
+not per row latency. Here's an example
+of offline features for customer spend.
+Step 1, we start from raw transaction
+events with columns like customer ID,
+time stamp, and amount. Step 2, we run
+an aggregation job in the warehouse to
+compute for each customer. 30 days
+total spend, 30 days, transaction,
+30 days average ticket size. Step 3, we
+store this into feature table, 1 row
+per customer, and as of date.
+With columns like Customer 30 Day total,
+Customer 30 day count, and customer 30
+day average ticket, this is exactly the
+kind of table a training job would join
+with labels or to training a model.

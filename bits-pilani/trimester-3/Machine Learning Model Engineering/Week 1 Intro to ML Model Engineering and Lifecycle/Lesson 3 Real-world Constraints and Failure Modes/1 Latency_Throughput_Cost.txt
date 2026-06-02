@@ -1,0 +1,125 @@
+In this video, we're going to look at
+what actually makes production ML hard.
+While offline, we tend to celebrate AUC
+accuracy, leaderboard positions. It
+feels a bit like Cagle competition, but
+shipping a real ML product is very
+different.
+By the end of this video, you should
+understand the main constraints realML
+systems have to operate under.
+recognise common failure modes that
+shows up again and again in the
+production, and see clearly why we need
+engineering and operations practises,
+not just better model in notebook.
+This sets the stage for MLlopes and
+model engineering roles while we talk
+about next.
+Most ML folks are trained to think in
+terms of offline matrixes, accuracy, F1,
+AUC, loss curves. But the moment you
+move into production. The question
+changed to things like, can this model
+respond in tens of milliseconds, not
+seconds? Can it handle real peak
+traffic, not just a small test set? Can
+we afford to run it every time a user
+clicks something?
+You can have a model with amazing test
+metrics that is still possible to ship
+because it's too slow.
+Too expensive or too fragile.
+So great offline performance is
+necessary. But it's not sufficient to
+be production ready. First constraint,
+latency. In production system, users
+don't experience the average latency.
+They feel the slowest calls. That's why
+we focus on P95 and P99 latency. P95
+means 95% of users are faster than this
+value. P99 means 99% of requests are
+faster than this value. If 1% of
+requests takes a long time at a scale,
+that's still a huge number of bad
+experiences. Timed out pages, spinning
+loader, broken workflows.
+And remember, the model usually gets
+only a slice of total latency budget.
+You also have network hubs, databases.
+Other services in requests path.
+So model engineers have to design for
+strict latency budgets, especially in
+users facing, real time applications.
+Next constraint throughput.
+How many requests per second you can
+handle? In real systems, traffic is not
+just flat. You get daily cycles,
+morning, evening, weekends, you get
+spikes from marketing campaign. News
+events or product launches, model
+engineers have to ask.
+Can our system handle peak RPS, not
+just average RPS? What happens if
+traffic doubles overnight?
+Do we have auto scaling? Do we have
+capacity? Sometimes a simpler model
+wins, not because it's more accurate,
+but because it scales predictably and
+doesn't collapse under load.
+Third constraint, cost. Each prediction
+has a price cost. Compute, CPU or GPU,
+time per request, memory, how much RAM
+or VRAM, the model needs to stay loaded.
+Storage and bandwidth, storing the
+model features and moving data around.
+At low traffic, a heavy model might
+seem cheap enough. But once you're at a
+millions of requests per day, even a
+small per request cost adds up quickly,
+so there is always a trade-off.
+Is that extra 1% or 2% accuracy worth 3
+to 4x the cost per prediction?
+Is a giant fancy model worth it, or
+should we use simple, smaller or more
+sustainable model long term? Model
+engineers constantly weigh predictions,
+quality against infrastructure costs.
+Fourth constraint reliability. Many
+products operate under explicit uptime
+targets like 99.99%, 99.999%, and they
+define error budgets, basically, how
+many failures per month are acceptable
+for model engineers.
+This raises questions.
+What do we do if the model is
+unavailable, or too slow to respond?
+Can we fall back to a simpler heuristic
+or cach result?
+Does the system gracefully degraded?
+Or does everything just fail hard? In
+practise, a slightly less accurate
+model that's rock solid. And always
+available often beats a super fancy
+model that's fragile and frequently
+down. Reliability is part of the
+product.
+The last major constraint bucket is
+compliance and privacy. Depending on
+how your industry and region you might
+be in, rules that where data must be
+stored, processed, becomes very
+significant. example data must stay
+within particular country or region.
+Strict policies for handling PII or
+sensitive data, financial information,
+health data, all of these.
+Requirement to audit and explain model
+decisions. This affects, which could
+which cloud region you are allowed to
+deploy to. Whether you can call
+external APIs or not.
+How you log predictions and store
+inputs, Model engineers have to design
+systems that are compliant to by design,
+not as an afterthought. Thank you.

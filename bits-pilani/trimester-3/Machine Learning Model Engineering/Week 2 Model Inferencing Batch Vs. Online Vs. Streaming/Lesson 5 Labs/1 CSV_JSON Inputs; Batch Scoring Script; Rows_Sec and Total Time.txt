@@ -1,0 +1,221 @@
+Hi, everyone. Welcome back to lab 2. In
+the previous session, we used a very
+small model, mainly to understand the
+workflow, and uh that model helped us
+learn the basics, but uh it was uh
+limited in understanding instruction,
+and we have seen that the output was
+not much relevant. Right? So, in this
+session, we'll download a more capable
+model, one that uh understands tasks
+much better and uh produce more
+meaningful uh responses. So, I've
+created another directory over here.
+And uh let's go back to Uh, notebook
+one, which we had created in our first
+session. So, I'm gonna use the same
+code for downloading new model. And uh
+we'll proceed further that way. So
+first, let's create a new file.
+Uh, let's give a name, model. And
+friends.
+I P Y N B.
+Yeah. Let's uh search another model
+which is uh more capable. So, initially,
+we had used the Still GPT 2 and we have
+seen it's, uh, it wasn't performing. Uh,
+that could. OK. So let's uh go back to
+the main page models, and uh here we
+have a philtre for text generation.
+So, let's pick uh any of, let's go
+through this open AI uh models.
+So, if we go on open AI page, you will
+find something like this. And if you
+scroll down, here you can see the
+collection of models. And a view 3
+collection. So, OpenAI have uh
+different variants of model.
+Uh, that you can see GPTOSS, Safeguard,
+GPTOSS, and then whisper.
+So, let's open GPT OSS family models.
+So here we have uh two variant, GPTOSS
+120 billion, and then we have GPTOSS 20
+billion.
+So, it's a very huge model. Um, uh, and
+here you can check the parameters also.
+Uh, it says, uh, 22 billion parameters.
+So this I can basically tell you 1 20
+billion parameter it has. And if we
+talk about in terms of, uh,
+22 billion, so it's again, very huge
+model around uh
+I'd say it would be around.
+40 GB?
+Uh, if, if I'm correct, uh, but yeah,
+it's a huge, but still, we won't be
+able to load this model on our local
+system, right? So, uh, I just want to
+show you how you can choose your model.
+These models are quite capable of doing
+everything, but the only challenge here
+is, uh, we won't be able to run it on
+our local system. Let's go back and
+choose a model which we can basically
+run on our system. So let's explore uh
+Google model.
+Uh, let's go to here.
+Click on Google homepage. So here we
+are looking for small model. So let's
+search for Flan.
+Deeply is smart, yeah.
+So if you see here, it's just uh 77
+million parameters. So,
+This will be a small model and uh
+It will be uh good for experiments, OK?
+And uh, Then we can also find all the
+relevant fold if you want to run on CPU,
+uh, how to run on GPU. So all, uh,
+everything, uh, they have given over
+here. Uh, if you want to run with the
+14.16, so, yeah. But we just need, uh,
+this model because we have the code to
+download the model and use it, so.
+Let's go back to our Uh, notebook and
+uh download this model first.
+OK. I have copied the code from the
+previous lab and uh I will use the same
+code to download the model and uh run
+prediction. Just make sure you have
+selected the virtual environment which
+we had created in our last session,
+right? So, same dependencies, we are
+gonna use it here as well. So, just to
+show you these Uh, this is the code
+which basically, uh, create the
+directory and then here we were
+downloading the model. And uh we were
+loading the model and we have seen how
+to do the prediction, right? The same
+code I have copied over here.
+Um, It will work. As it is, uh, with
+just a
+Small changes. So let's first, uh, uh,
+create the directory.
+Uh, it got created.
+Now, there is a small error in the code,
+so let's, let's see that what it is. So,
+when you try to download this model,
+Let's execute this.
+So, you're seeing here uh the error.
+What this is about? Let's go and check.
+Uh, so here, like I mentioned,
+Uh, hugging face give you all the
+details about this model, how to use it.
+So, if you click on Use this, how to
+use this model, you'll be getting
+multiple options. Since we are using
+Transformers library, so just click on
+it. It will give you this piece of code.
+So, basically, by using this code, we
+can simply uh load our model, right? So,
+if you see there is a difference, uh,
+uh, here, we are using auto model for
+sequence to sequence LM, right? So if
+we go back and uh if you notice here,
+uh we are using auto model for Causal
+LM Right? So, the model which we were
+using, it's a distil GPT 2. And this is
+a causal language model. So, there are
+two different types of model. Uh, so,
+all the LLMs like GPT, uh, uh, family
+models, so they are basically decoder
+model. But this is, uh, it's a
+combination of encoder and decoder
+model. So that's why, uh, if you, again,
+if I go back here, it's saying you have
+to use automodel for sequence to
+sequence. So instead of using causalLM,
+we have to use, uh, sequence to
+sequence LM. So let's copy this thing
+and simply paste it here.
+Uh, and we have to change.
+This year as well. Now it should work.
+So, just a small change will required
+to load this model.
+And you can see we are able to download
+this model.
+Model got downloaded over here.
+Uh, now, let's, uh, load this model.
+We have noted it. You can see the
+parameter, 76. Million. Now let's do
+the prediction. So let's try on the
+same question uh we asked with uh
+Uh, that is a type of
+machine learning is.
+Uh, machine learning is a process of
+learning. Again, it's better as
+compared to, you know, the last model.
+Let's go back on hugging face and see
+what this model is about, what, what's
+the purpose of this model. So,
+Let me go back and uh
+Yeah. If you see this uh model
+description, uh, this model has
+basically trained on multiple languages.
+So we can use this model for uh kind of
+uh translation task, right? So, let me
+try something. Uh, translate.
+English to French, yes.
+Uh, now, let's execute it. Yeah, it's
+able to do that, right? Uh, let's try
+something else.
+OK. Let me show you one more thing. If
+we go to the model card. You can see
+here, this model has instruction fine
+tuned.
+Uh, it has also followed chain of
+thoughts fine tuning.
+So that means. This model is trained
+not just on raw data, but also on tasks
+which basically follow the instruction.
+So, instead of only predicting the next
+word, the model learns to follow what
+you ask it to do. So that's why uh you
+can see here, uh, in the example. Uh,
+first, uh, they are passing the
+instruction, like translate this to
+German, and then they are giving the
+actual sentence, right?
+Uh, in most of the examples. So let's
+try something uh different. Let's, uh,
+let's try to ask, uh,
+Uh, classify the sentiments.
+Of this review, the movie was fantastic
+and I loved it. Yeah. Use, use this.
+Yeah, you can see it's giving positive.
+Uh, let's try some negative sentence.
+The
+is a. It was.
+Very well.
+And the service was slow, yeah.
+Uh, you can see it's, uh, predicted. Uh,
+it's a negative sentiment. So, at some
+extent, this model is doing good. At
+this stage, this model performs
+reasonably well and it's good enough
+for learning and basic tasks, right?
+However, it's uh important to
+understand that uh this is not the most
+powerful model available, right? So, we
+have just uh Seeing this model has
+performed better in, for some of the
+scenarios, right?
+And uh we have tried single prediction.
+You can see here, we are passing one
+data at a time and uh basically model
+is predicting it.
+And it's taking almost.
+nanoseconds to process this. Now, let's
+uh implement how much time basically
+it's took to generate this uh output.
+OK? So, let's, uh, do that.

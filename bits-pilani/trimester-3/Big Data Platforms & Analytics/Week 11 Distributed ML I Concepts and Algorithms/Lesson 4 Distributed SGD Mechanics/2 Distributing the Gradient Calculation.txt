@@ -1,0 +1,68 @@
+In our last video, we reviewed the
+basic math of stochastic gradient
+descent, or SGD.
+We know that to update a model, we need
+to find a gradient, the slope of the
+loss, but in a distributed system, that
+slope isn't calculated in one place,
+it's calculated in pieces across the
+entire cluster.
+Let's look at the life cycle of a
+single training alteration, often
+called a step, as shown in the
+mechanics. Step one is the local
+calculation. Each worker node in your
+cluster takes its own specific mini
+batch of data. Using the current
+version of the model, the worker
+performs a forward and backward pass to
+compute the local gradient. This
+represents the best guess of how to
+improve the model based only on the
+data specific to that worker saw. Step
+2 is the push. Once those local
+gradients are ready. They need to be
+shared, you see the workers sending
+these gradients up to the parameter
+server actors. In other architectures,
+workers might exchange them directly
+using a method called alluce. Either
+way, the goal is the same move the
+local data to the central or a
+collective point. Step 3 is a global
+update. This is where the magic happens.
+The system takes all those different
+local gradients from the workers and
+averages them. This average represents
+a much more accurate global direction
+for the model to move in.
+The central parameter server uses this
+average to update the master copy of
+the model weights. Step 4 is the pull.
+Now that the master model has been
+updated, the individual workers have
+stale or old versions of the weights.
+The updated weights are broadcast or
+pulled back down to every worker in the
+cluster. Once every worker has a new
+set of identical weights, the cycle is
+complete. They are now ready to grab a
+new batch of data and start the next
+iteration. This constant push, update,
+pull cycle is what allows a distributed
+system to behave like one giant
+computer. However, as we discussed
+earlier in the module, this cycle is
+only as fast as your network. If the
+push and pull takes too long, your
+workers spend more time waiting than
+they do calculating.
+This 4 step process is the standard way
+we distribute SGD, but there's a big
+question we haven't answered it yet. Do
+we make the workers wait for each other
+at the end of every step in our next
+lesson, we'll look at the aggregation
+strategies and compare synchronous
+versus asynchronous training. I'll see
+you there.

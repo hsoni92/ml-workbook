@@ -1,0 +1,24 @@
+To close this video, let's connect it
+directly to your lab.
+In the Module 7 lab, you will start
+with a pre-trained convolution neural
+network, for example, a RES net or a
+mobile net in a PyTorch or a similar
+framework. Measure its baseline, the
+model file size, and the inference
+latency, including average, or the 95th
+latency or the P99. Export that model
+to the ONX format, load it with ONX
+runtime, and measure the latency again.
+Then you will compare size before
+versus size after, latency before
+versus after, and check that the output
+is still reasonable. This gives you a
+concrete feel for how changing the
+model format and runtime can change the
+performance profile, even though the
+underlying model is logically the same.
+Later on, you can extend this by
+combining run time with compression
+technique from the previous videos.
+Thank you.

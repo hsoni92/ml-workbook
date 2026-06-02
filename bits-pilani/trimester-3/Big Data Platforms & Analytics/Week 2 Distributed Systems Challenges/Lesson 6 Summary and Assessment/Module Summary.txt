@@ -1,0 +1,67 @@
+In module one, we learned that scaling
+out was the only way to handle big data,
+but this week we looked behind the
+curtain and realised that scaling out
+comes with a complex price. We move
+from building the fleet of vans to
+learning how to keep all those drivers
+coordinated when the roads are blocked
+and the radios are failing.
+Our first major takeaway was that the
+network is not a perfect wire. We
+deconstructed the fallacies of
+distributed computing, and learned that
+as an architect, you must never assume
+the network is reliable, that the
+latency is zero. Or that the bandwidth
+is infinite. We learned that these
+assumptions are what cause big data
+projects to fail in the real world. But
+by adopting a design for failure
+mindset, we stop treating network
+glitches as accidents and start
+treating them as guarantees. This is
+the foundation of partition tolerance,
+the absolute requirement that our
+system stays alive even when
+communication breaks down.
+Next we mastered the famous rule in our
+field, the Cap Theorem. Because
+partition tolerance is mandatory in a
+cluster, we learned that we are forced
+into permanent tradeoff between
+consistency and availability.
+We saw that CP systems, like banking,
+choose to be correct or offline. We saw
+that AP systems, like social media,
+choose to be fast and always on, even
+if the data is slightly stale.
+Understanding that you cannot have all
+three at once. Is that mark of a
+professional. Your job is no longer to
+find a perfect system, but to find the
+right trade-off for your specific
+business problem. Finally, we looked at
+how these theories are put into
+practise through consistency models. We
+reviewed acid, the strict golden
+standard that ensures every transaction
+is atomic and isolated. It's the anchor
+of the financial world.
+Then we met its distributed sibling
+base. We learned that by accepting
+basically available and eventual
+consistency, we can build systems that
+scale to millions of users.
+Something that is physically impossible.
+With a strict acid approach.
+Knowing when to demand the hard truth
+of asset versus the flowing truth of
+base. Is one of the most valuable
+skills you now possess. You now have a
+deep understanding of the challenge of
+distributed systems. You know that
+coordination is the real network tax of
+big data. Great job. Happy learning.
+I'll see you in the next module. Thank
+you.

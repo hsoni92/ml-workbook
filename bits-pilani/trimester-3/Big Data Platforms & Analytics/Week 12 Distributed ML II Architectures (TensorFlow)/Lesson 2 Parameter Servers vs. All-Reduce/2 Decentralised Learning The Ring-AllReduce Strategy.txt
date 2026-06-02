@@ -1,0 +1,50 @@
+So in our previous video, we looked at
+the parameter server model. And noted
+that while it is great for sparse
+models. The central server can become a
+major bottleneck as you add more
+workers. So in order to solve this, we
+turn to a decentralised approach, which
+is also known as ring all Reduce
+strategy. Unlike the centralised model,
+RingAReduce doesn't have a dedicated
+server to store weights. Instead, it
+treats every worker as an equal
+participant in a logical ring.
+Here's how this magic happens. Instead
+of every worker sending all their data
+to one central point, each node only
+communicates with its immediate
+neighbour. A node receives a chunk of
+gradients from its predecessor in the
+ring.
+Then it adds its own locally computed
+gradients to that chunk, and then
+passes the result to the successor. By
+the time the data has travelled across
+the ring twice, every single node in
+the cluster ends up with the exact same
+fully aggregated set of gradients.
+The biggest advantage here is that it's
+bandwidth optimal. The amount of data
+each node needs to send and receive is
+independent of the total number of
+nodes in the cluster, so this
+completely eliminates the central
+bottleneck we saw with parameter
+servers.
+So when should you use this? So ring
+wall reduce is highly efficient for
+dense models such as deep neural
+networks used in computer vision or
+natural language processing.
+Especially when you're running them on
+a multi GPU clusters, because these
+models can have dense parameter updates.
+The ring structure ensures that the
+high speed interconnects between your
+GPUs are used at maximum efficiency. In
+the next lesson, we'll move from where
+the data is stored to when it is
+updated as we compare synchronous and
+asynchronous training modes.

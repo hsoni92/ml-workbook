@@ -1,0 +1,103 @@
+On top of the raw data, we build
+features for user we might compute.
+Recency or frequency signals, like
+number of clicks in last 7 days,
+category affinities, how interested
+this user seems in electronic versus
+fashion, and so on. Spend patterns,
+such as average order value or discount
+sensitivity. For items, we have static
+attributes like category, brand, price,
+and whether the item is in stock.
+Content features, from the title and
+description, or even image embeddings.
+Popularity metrics like click through
+or view counts. Optionally, we also
+include context, time of day, device
+type, page type, so the model
+understand where and when the
+recommendation is being shown. All of
+these become feature vectors that the
+model will consume.
+To keep feature logic consistent, we
+usually introduce feature store.
+The feature store's job is to let us
+define features once and use them both
+offline and online. Offline, it
+materialises features into big tables
+for training. Online, it serves feature
+at low latency for a single user ID or
+item ID. This helps us avoiding
+training serving skew where training
+job computes user 30 day click one way
+and the online service computes it
+slightly different. In our
+recommendation system. The training
+pipeline reads users and item features
+from the offline store to train models.
+The online service calls the feature
+stores or an associated cache to fetch
+fresh features for the current user and
+items. Recommendation systems
+usually split modelling into two stages.
+The first is candidate generation. Here,
+the goal is to go from potentially
+millions of items down to a few 100
+candidates that are roughly relevant.
+You can do this with simple heuristic
+like top trending item in a category,
+or with embedding based retrieval,
+where you represent users and items as
+vectors, and use approximate nearest
+neighbour ANN search to find similar
+items.
+A common approach is the two tower
+model, one, network of users embedding.
+One for Item embedding.
+The similarity between user and item
+vectors gives you candidate score.
+Candidate generation is about recall
+and scalability. It doesn't need
+perfect ranking, just a good short list.
+The second stage is the ranking model.
+It takes the 100s of candidates from
+the generator and scores each one for a
+specific user and context. The input
+features typically includes user
+features, item features, and the
+context features like device or the
+page type.
+The model can be something like
+gradient boosted trees, or a deeper
+neural network. Its output is a score
+for each candidate pair. We sort
+candidate by score, then apply business
+rules, for example, philtre out tough
+stock items, enforce category diversity.
+Or boost certain promotions, and
+finally, choose the top and items to
+show. Ranking is where we fine tune the
+tradeoffs between relevance, business
+goals and user experience.
+Let's stitch the online path together.
+First, a user request, like loading the
+homepage, hits your API gateway. Second,
+The gateway call The recommendation
+service, which runs in something like
+fast API or GRPC. Third, the service
+look up user features from the Feature
+Store or a low latency cache and
+computes simple context features such
+as device type or time of day. 4th, it
+calls the candidate generator to fetch
+a few 100 candidate items. 5th, it then
+passes user, item, and context feature
+into ranking model to score each
+candidate. 6th, it applies any business
+philtres and rules, like removing out
+of stock items and enforcing diversity.
+7th, finally, it returns the top end
+items to the UI. And the page renders
+the recommendationousal.
+All of this typically has to happen in
+under 100 to 200 milliseconds.

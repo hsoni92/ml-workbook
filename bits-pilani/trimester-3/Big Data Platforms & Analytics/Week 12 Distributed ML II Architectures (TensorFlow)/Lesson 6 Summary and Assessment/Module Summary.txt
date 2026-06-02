@@ -1,0 +1,47 @@
+Congratulations on completing Module 12,
+which is distributed ML architectures
+in Tensorflow. I know it can be a lot
+to take. Over the course of this module,
+we have journeyed from high-level
+architectural theories to the specific
+APIs that make scaling possible. Let's
+take a final look at the key concepts
+that we have covered. We started by
+comparing decentralised and centralised
+learning. We saw that while parameter
+servers are excellent for massive
+sparse models like recommendation
+engines, the ringing all reduce
+strategy provides a bandwidth optimal
+solution for that dense model, which is
+common in modern deep learning.
+We analysed the synchronisation
+trade-offs. You now understand that
+synchronous training offers
+mathematical consistency at the cost of
+the straggler problem, while
+asynchronous training offers raw speed,
+but can be trickier to converge due to
+stale gradients.
+And we have explored the practical side
+with tensor flow strategies. We covered
+mirrored strategy for maximising the
+power of single workstation. And
+multi-worker mirrored strategy for
+scaling out a massive network cluster
+using the Tensorflow config environment
+variable. Finally, we peeked under the
+hood at graphs and device placement,
+learning how Tensorflow partitions
+operations and users send and receive
+nodes to orchestrate communication
+across disparate hardware units.
+Scaling intelligence across nodes is no
+longer just an extra feature. It's a
+requirement for modern AI development.
+With the tools and concepts from this
+module, you're now equipped to take
+your models from a single machine to a
+global scale cluster.
+Thank you so much for joining us in
+this module. Happy learning.

@@ -1,0 +1,13 @@
+Welcome to when and why to retrain
+models. In module 5, we talked about
+monitoring drifts and alerts. In this
+video we will connect that to retrain.
+We will look at the main trigger that
+should make you consider retraining.
+The difference between time-based and
+event-based retraining, and simple
+checklist to decide whether retraining
+is actually the right move. By the end,
+you'll have a clear answer to. Is this
+drift alert worth a new model, or
+something else is going on?

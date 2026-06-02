@@ -1,0 +1,33 @@
+Next, let's look at tacton at a high
+level. Tacton follows the same feature
+store patterns. You define features, it
+materialise them into offline and
+online store. And it maintains a
+registry or catalogue. The difference
+is that Tecton focuses on being managed
+enterprise platform. It runs the
+infrastructure and pipeline for you,
+offers a richer user interface, and for
+discovering and managing features. And
+integrates deeply with warehouse,
+streaming systems and model serving
+platforms. The focus here is
+reliability, governance, and making
+feature engineering a shared platform
+for many teams.
+Another example is hop's work.
+Which combines a feature store with a
+broader machine learning platform. From
+a feature store perspective, Hopswork
+still has the same ingredients. A
+feature registry. Offline features
+tables and an online store. Support for
+batch and streaming feature pipeline,
+but it also includes more pieces.
+Integrated notebook and job
+orchestration, a model registry, and a
+full platform feeling where data
+engineering and machine learning live
+closer together. Again. The vendor
+specific details differ, but the
+feature store core is very recognisable.

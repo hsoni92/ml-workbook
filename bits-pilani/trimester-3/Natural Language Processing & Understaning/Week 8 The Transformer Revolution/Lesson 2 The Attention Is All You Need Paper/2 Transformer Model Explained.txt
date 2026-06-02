@@ -1,0 +1,140 @@
+Welcome back, learners. Now that we've
+had an intro to Transformers. Let's
+understand it at a greater depth. So
+what is self attention? Imagine this
+sentence for an example. The animal did
+not cross the street because it was too
+tired. If I ask you, who is it here?
+You may rightly say that it's the
+animal.
+Animal was too tired. How did you
+achieve that answer?
+You calculated what is it referring to
+here, or basically, who was too tired.
+You might rightly say that it was the
+animal, animal is referring to it,
+animal was too tired, right? However,
+technically. It can also refer to the
+street, right?
+And it can refer to the animal. But how
+did you decide that here? It is
+referring to animal and not the street.
+It is done by calculating relevant
+scores. How it happens Is that each
+word in the sentence looks at every
+other word and calculates its
+relationship with it. Right? What it
+looks like is.
+Let's Plot all the words, the animal.
+Did
+Not cross the street.
+Because
+it.
+Was too tired. Right?
+Similarly, let's plot them again.
+The animal
+Did
+Not cross the street.
+Because it was too tired.
+Now each word will calculate its
+relationship with every other word in
+the sentence.
+And this will assign a score to it,
+right? It will happen both ways.
+Basis on this score, the relevancy will
+be decided. The score is called the
+relevance score. So it will have a
+higher relevance score with animal than
+with street, right? That's why it will
+refer to animal in this sentence. This
+process is called the self attention.
+Let's look at the transformer
+architecture.
+So your input is coming from here. And
+your output is being received here,
+right? The input gets converted into
+word vectors, right, so embeddings, and
+then positional encoding happens, which
+is marking of which word stands at
+which position in the sentence.
+It then goes into the encoder where
+self-attention mechanism occurs and the
+tokens look at each other and calculate
+their relevant scores. Then this is
+forwarded to a feed forward neural
+network after taking information from
+other tokens, after processing from the
+feed forward neural network, the input
+goes to another decoder encoder
+attention system,
+what it says is shifted right outputs
+shifted right. This is the output
+coming from previous states.
+Right? Similar action happens here. And
+an input comes here to the decoder
+system, right? Processing happens here
+as well.
+The target tokens look at the source.
+And then it is passed to another feed
+forward neural network. The output from
+here is passed through a soft max.
+Basically, converting the output to 01
+probabilities, and then pass to the
+output source, right? So this is an
+overview of the transformer
+architecture.
+The math is also simple to understand.
+This is the main equation for attention.
+So attention is a function of Q, K, and
+V. What are these? Q is the query.
+So the prompt that you're putting to
+the LLM or any transformer model, right?
+Key is the label or tag of the data in
+the data set, for example, the animal,
+the street, right? And value is the
+meaning of that word. Or that word, it
+can also be that word as well, right?
+Attention Of QKNV is a soft max of the
+dot product of QNK rays to T, upon root
+of decay into the value.
+Right?
+As we saw, SoftMax, it normalises to
+probabilities ranging from 0 to 1.
+That's about it.
+Multi headed attention.
+Why have 1 attention mechanism when you
+can have 8, right? So one mechanism.
+Can focus on grammar.
+Another can focus on vocabulary
+relationships. Another may focus on
+pronouns.
+And model can run all these attention
+heads in parallel that concatenates the
+result, right? So overcoming the
+sequential processing, the problem of
+overcoming the problem of sequential
+processing.
+Now let's look at positional encoding a
+little further.
+Since the transformer processes all
+words simultaneously or in parallel, it
+has no idea of the order. For example,
+the sentence The dog bit the man and
+the man bit the dog looks entirely the
+same. So what's the solution? We inject
+a time stamp into the word vectors
+using sine and cosine waves. This adds
+information about the position of the
+word in the sentence, right?
+For example, if you have a collection
+of words called. The
+Dog Bit The
+Man In sentence one, which is this. The
+positional encoding will be 1234, and 5,
+whereas in sentence 2, which is this.
+The positional encoding will be, the,
+is 1, man is 2.
+Bit remains 3.
+The is 4 and Doug is 5.
+Right? That's all for this video, and
+I'll see you in the next one. Thank you.

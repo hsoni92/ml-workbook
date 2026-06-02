@@ -1,0 +1,79 @@
+Welcome back, learners. Now that we've
+understood what pause tagging is, let's
+also implement it. In this video, we
+will do a hands-on implementation of
+pause tagging.
+All right, learners, now let's
+implement POS tagging using Spacey. So
+what I've done already is I have
+installed Spacey and I have installed
+the English language model available
+within Spacey. So this is all the
+installation verbos. There is a way to
+avoid all of this literature. Let me
+show it to you in the next video. So,
+OK, coming back to topic, implementing
+was tagging with Spacey. Now what I've
+done is I've imported Spacey as SP and
+I've initialised the English language
+model. All right, so let's now
+implement POS tagging on a sample text.
+Say sentence one. Now I passed the
+sample text. In the English language
+model, right? Sentences I will book a
+ticket. Let's run this. OK, so in the
+tokenization lecture we saw how NLP
+model already tokenizes all your text
+data, right? So let's print that. So
+for token in. Sentence.
+One
+And
+Coca
+All right, so you see, I will book a
+ticket and the full stop, right? So all
+tokens have been separated correctly.
+Now to print the POS tag, what you need
+to do is
+Let me print the POS tag against the
+token, so token.text and token.
+AOS
+So what this is 95, 8700. These are the
+unique IDs for the particular POS tag,
+and if you want to see which tag it is,
+what you have to do is POScore.
+Right, so I is pronoun, will is
+auxiliary, book is a verb, a is a
+determinant, ticket is the noun, and
+this full stop is a punctuation. Right?
+Now let's print this a little more
+neatly.
+So I'll put this within a string. I
+will declare this a variable. Within an
+F string, right?
+So nothing changes. I've just added a
+comma. Let me also add some constant
+spacing. So you can do this.
+Right. Now I don't need this comma.
+Perfect, this looks nice. Let me also
+print.
+Which sentence we are.
+Implementing POS tying off.
+Perfect.
+Let's now implement this on another
+sample text.
+Say sentence 2, right? And I will copy
+this and paste it here.
+Replace sentence 1 with sentence 2.
+Let's run this.
+Bingo, we have the right US tag. So
+read is the verb, this is the
+determinant, book is the noun, and
+first stop is the punctuation. Let me
+try changing this punctuation.
+It has caught it perfectly. All right,
+so that's POS tagging in Spacey. It's
+very effective.
+I implore you to practise this with a
+bunch of different text data. That's
+all for this video. I'll see you in the
+next one. Thank you.

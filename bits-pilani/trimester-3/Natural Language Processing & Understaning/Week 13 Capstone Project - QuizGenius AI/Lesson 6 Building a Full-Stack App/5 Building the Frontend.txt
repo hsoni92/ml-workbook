@@ -1,0 +1,900 @@
+All right, learners, welcome back to
+the final lesson of this module. In the
+last video, we developed the backend
+logic for our application. In this
+video, we will work on the front-end
+logic of our application with Streamlet.
+Streamlet is a very special package
+available in Python that allows us to
+build nice and neat front-end. Visuals.
+Streamlet has a very special package
+available in Python that allows Python
+developers to build front-end without
+the knowledge of HTML and CSS, right?
+So let's see how that works out. I'm
+pretty sure many of you are already
+aware of what Streamlet does and its
+magic. So let's use Streamlet to build
+our front end. So I have the app.pi
+open up. Let's add a doc string to
+explain what this file is about.
+So quiz genius AI.
+This is the streamlet. Funtain
+Interactive front end for
+Generating quiz and handling.
+User response.
+I think this is good enough. OK, so
+let's import streamlet. As SD
+Stay And from Quiz engine, which is
+this file. We would like to import our
+functions, generate quiz, right? And
+let's also import
+the inputs.
+So let me copy it from here so that I
+don't make spelling mistakes, right?
+We need valid difficulties. We don't
+need topic length.
+You need max Questions
+And we need
+You mean
+questions.
+Right
+OK.
+So, let's get started. Let's first
+Config or page config so this will be
+the configurations for our page.
+SD.
+Set Age On
+Let's set the
+Let's set the page title, which will be
+Who is genius.
+AI And let me just show you what's
+happening. So let me open the terminal,
+and I will run this streamlet up. So
+streamlet run.
+After we were.
+I hope this works out. Yes.
+So we have, oh, it's asking, do you
+want to allow private, yes, yes, yes, I
+want to allow.
+So we have our page set up. Let me show
+you. Side by side
+OK, so you see page title is Quiz
+Genius AI. This is Quiz Genius AI. Let
+me also implement auto run from here
+you can select light mode, dark mode. I
+like dark mode, so I'll let that be.
+If you change.
+This and save, you see? It implemented
+the change here, right? So this is the
+page title. I will save it.
+Now let's set a age. I can
+Um, for quiz, let's select a brain.
+Right. So you see, the icon has been
+changed.
+Let's also set the layout.
+Which is centred. Usually you can
+select from two options wide and
+centred, so you will select centred so
+that it is our application is visible
+in this. So there is a lot of padding
+on both sides, left and right, right?
+So this was about our streamlet page
+config.
+No.
+Let me also
+minimise this now. I'll save this. I'll
+close the terminal.
+OK.
+Now, one thing to note about streamlet
+is that we will need to implement state
+management here on every run. Stream
+lit will refresh itself, right, which
+we do not want, so. What do I mean by
+every run? Every time the user will
+interact, say, with the first question.
+If we do not manage that state,
+Streamlit, we'll rerun that page. So we
+want to hold that page for the 3 states
+which is. Answer the 1st question, the
+2nd question, and 3rd question,
+supposing there are 3 questions, right?
+So we need to do state management.
+Session states lets us persist data
+across all the reruns, right? So let's
+do state management.
+This initialise the session state.
+Let's pass the default values.
+So this
+data.
+Is none. Also, let me. Convert this
+into a string.
+This is a dictionary. I'm sure you're.
+You must have identified that already,
+so user answers.
+will be another dictionary.
+Right?
+The states were submitted or not. Will
+be false at the beginning and then once
+submitted, it will change to true.
+And
+current. Step
+Let's pass it as set up.
+So let me also add. Comments for you
+guys?
+This will store the generated.
+Generated Quiz and Jason.
+This maps. Question
+Index
+The selected
+Option
+A or B or C or D.
+Whether the user has
+Submitted
+Answers
+And this will track.
+Which screen to? Sure.
+Right, we will have two different
+screens. One will be the first screen,
+which is the setup screen. Then the
+quiz screen, and then the results
+screen. So the setup screen will
+request all the inputs. Which topic do
+you want the quiz for be? How many
+questions do you need? What is the
+difficulty, right? That will be the
+setup screen. The quiz screen will be.
+Uh, I mean, it's self-explanatory. It
+will have all the quiz questions, right?
+And results will show the results,
+whether correct or wrong, and the score.
+Now, for Key value in defaults. items
+because it's a dictionary, right?
+If key not in session statest. Session
+State
+ST. session.
+State
+He
+Equals value pursuit.
+Let me add
+A dog string here.
+Explaining why this is or what this is.
+Simulate reruns the entire.
+Script on every Interaction.
+Right? But this interaction can be
+button click. Input changes, etc.
+Session state.
+Lets us persist.
+Data across these Runs, right?
+This
+Function
+initialises. The session state.
+Actually, let me add this year, it will
+make much more sense.
+Right, there are 2 full stops. Let me
+delete 10, perfect.
+No.
+Let's create a function for resetting
+everything, and you want to reset your
+quiz and you want to generate a new
+quiz, right?
+Let's have some more space.
+So
+this will have one dot string, which I
+will add later. So ST.
+Session state.
+quiz data. Let me copy it from here.
+Equals none
+ST
+Session state, let me.
+And speed it up. So.
+I did not realise this, with me.
+Undo it and then
+OK. So this will be
+User answers.
+And this will be empty string.
+This should be
+Submitted
+And
+this will be
+Pause and let me copy this as well.
+OK.
+So
+For this function, the purpose is that
+it clears all quiz gate. And goes back
+to the setup. Stream, which are the
+default values defined here, right?
+Now, now that we've done our state
+management, let's begin with
+Screen one, the setup page.
+Now, the first page, now, since you're
+dealing with front end and it's all
+design-based, you will have to use your
+visualisation. visualise that the first
+page will be like a form.
+It will accept 3 things. One is the
+topic for the quiz. The second is the
+difficulty level.
+And the 3rd is the number of questions,
+right? So let's design that setup page.
+So, deaf.
+Render set up form form because we're
+taking inputs from the user, right?
+So ST. Edor.
+On figure.
+Your quiz.
+Right. Let's add some nice emojis as
+well.
+With ST.com. OK, by the way, st.header
+is streamlet.header, so this will just
+be an H1 for your page. So H1 will say
+configure your quiz with this emoji,
+right? H1 will be on top of it.
+So now let's build the form with ST.com.
+Who
+Step up fun.
+Topic will be the first input. ST.
+It's input
+Topic
+The shoulder
+Equals
+Example, Python programming. Quantum
+Mechanics.
+Right, you can add anything.
+Or
+Or 11, or this is better.
+Etc.
+Or this is a better way. OK, so let me
+also add. Uh, emoji for topic which
+will be a bunch of notes.
+OK. So what this will do, it will
+design a text input, which is like a
+box where you can input any text, right?
+You can type anything and When there is
+nothing present or when you've not
+typed anything in that box, this will
+be shown in a faded way, right? And
+this will all start making sense when
+we start running the first page, right?
+So
+Let's create 2 columns, call 1 and call
+2.
+ST. columns and we want 2 columns.
+Kids, call 1.
+Numb Questions peoples.
+Slider
+Number of questions.
+Main value of the slider will be.
+Main questions which we imported from
+quiz Engine.pi
+and
+Max value will be max questions.
+And default value? Will be 3. So this
+will be a slider, right? So you can
+select. From min number of uh questions
+to max number of questions so that the
+user does not enter anything. When we
+need an in value between a specific
+range, right? OK, now in column two,
+what do we need with Solemn 2
+Difficulty equals st selection.
+You will name it Difficulty. Is the
+spelling correct? No.
+It should be correct now
+And
+Options are
+Valid difficulties.
+And by default, let's select the first
+indexed difficulty, right? So valid
+difficulties is easy, intermediate hard.
+So first index would be intermediate,
+right, because it's zero to indexed.
+Now,
+Submitted. This will capture all the
+values that the user has submitted.
+SD. form submit. Button
+Generate
+course.
+Let's add an exclamation. Just for the
+effect.
+Use
+container.
+Width equals group. This is just for
+sizing.
+It saved this.
+Let me also add some emojis, right?
+Just to make it very nice and fun to
+look at.
+OK, this is done.
+Let's see
+Now let's also create
+What happens after submission, right?
+Now let's also create the script for
+what happens after submission. So if
+submitted equals true.
+It's not
+Topic strip.
+ST error.
+Please enter a topic to generate. Uh,
+quiz, right? So what this does is if
+someone has not added a topic but have
+added a number of questions and
+difficulty and pressed generate quiz,
+then we should give this error message,
+right? Also, let me add a beautiful
+emoji.
+OK. So this is done. Return that error.
+With ST.
+Spinel
+Generating your
+was
+Like this will show when your quiz is
+loading, so generating your quiz, do we
+have a.
+Oh, let's use the brain emoji only.
+This may take a few seconds, right?
+This will handle the impatient users.
+All right, I hope so. So let's add a
+trip block.
+Quiz data equals generate quiz.
+Topic
+Numb questions. and difficulty.
+Right. Generate quiz. This is the
+function that we imported from quiz
+engine, right, from here. Generate
+questions right
+and these are the inputs that it needs.
+Let's come back here
+OK.
+Mm, yeah, it's just.
+Yeah, this should solve that error.
+ST.
+Session state.
+But
+Cause
+Later
+Equals quiz data. She'll let me copy it
+from top.
+No
+We need to set these values when the
+form is submitted, so this is the Jason
+past Jason, right? This will be the
+dictionary itself. This will be false,
+and this will be.
+was
+S T.
+Re
+Run the script so that render
+I
+Takes over.
+What is the render quiz? render quiz is
+the function of the next page. So
+except.
+V
+And runtime error.
+As
+ST. error.
+Failed to generate the quiz.
+OK, I think we are done with the first
+pitch. Let's, oh, let's add a dock
+string just when I think we're done.
+I am reminded that you're not.
+OK. So show the quiz on federation form.
+Here the user picks.
+Yeah, there's the spelling. I selects.
+Let's be safe. Selects the topic,
+difficulty.
+And a number of questions.
+Let me add it to a new line, OK.
+If you're following me, keep on saving
+your files. I have autosave configured
+in my IDE, so I don't, you know, keep
+on pressing controls, but if you don't,
+please keep saving your progress.
+OK.
+We are done with the first page.
+At least I hope so. When we'll run it,
+if we encounter with any error, we'll
+know that we're not done. Now, let's.
+I
+Now let's create the second screen,
+which is the quiz.
+Let me follow.
+The same format.
+Just for consistency, my OCD kicks in,
+right?
+OK.
+So that's render the home.
+Because
+Who is equals.
+Streamer. sessionstate.
+Who did?
+Which we got from here.
+Right
+ST. Edo.
+This is the header for this page.
+Of string.
+Who is
+Who is titled, right? All this will be
+dynamic, so we have to handle it here.
+Let's
+Generate some, what will be a good
+emoji for quiz. Um, question mark.
+Maybe this
+SD caption.
+Ble
+Of
+was
+Questions. This will be a number of
+questions.
+Right.
+Questions?
+Select Your answers and submit them.
+I think this will be there, so it will
+say, for example, if 3 questions are
+generated, so 3 questions, select your
+answers and submit them. This will
+follow this idle.
+Then I need a divider.
+Now, with SD.com.
+Quiz answer form. So this will be a
+form which will accept all the answers
+from the users. Let me also add the
+comment.
+Accept answers
+um user. Form that accepts answers from
+users.
+For I, comma Q in enumerate.
+Quiz.
+Questions.
+ST. subaddo.
+So
+So the format I want is that Q and
+whatever the question is, right? So
+queue numbers of question 1, this
+question 2, and so and so, right? So we
+need to make this dynamic and we need
+to make this dynamic. So this will be
+your queue. ID now remember the output
+is a format here so we have
+questions and then ID 1234 whatever so
+this will be ID.
+And this will be cue.text.
+Let's go back. Q. text is the question.
+Question text Ashleyue number and
+Text
+Now, let's build the option labels. So,
+Option
+Labels equals.
+He
+In thought
+So I
+For P value in Q.
+Options
+Not items. So what is this? Let's see.
+Q
+is all of this, Jason, right? So queue
+options is a dictionary, right? So we
+need these key values. So A is this, B
+is this, like that, right? So for
+example, this will be A.
+Whatever the value is, and B, whatever
+the value is, C, and so on.
+Now, choice will be a radio button.
+So we'll say, select your answer for
+question 1, question 2, whatever, right?
+This will be dynamic.
+The options will be option labels.
+Index can be none.
+Key will be
+The index, so this I, yeah, so that can
+be the key. None is for no option
+selected.
+Good, that I mentioned that and label
+visibility.
+Will be
+Collapsed, right? This you'll see, and
+we render the page.
+It's the label since the sub. You know,
+it's good.
+OK, so we have Set up the form, we have
+set up the option labels, right? And we
+have set up the ABCD options to select
+from.
+No.
+Extract
+The selected option.
+A or B or C or B.
+5th choice. Choices what? This, the
+selection on the radio button.
+If choice.
+Finlett sessions state.
+The user answers, I, the index.
+Choice
+0 OK.
+The steel door divider
+Cool. What this will do is just select
+the first index of that choice. So it
+will be A. yada yada yada, B.something
+something something, right? So it will
+just select the option name, which is A,
+B, C, or D.
+Then add a divider. And let's add some
+action buttons which will be
+column 1, column 2 equals ST.
+columns.
+She is still one
+Right?
+With column one
+Submit
+Button Equals st.com_submit_ button.
+Submit answers.
+And use The container with. Do not go
+beyond it.
+Or stay shrink inside.
+Use the entire width of the containers
+with.
+Stoops with coal to.
+B.
+Mutton
+ST.com.
+Submit
+Button.
+Go back, right? Or just back is also
+fine.
+OK, so what this does is it creates two
+columns where we will have 2 buttons.
+Of the size of ratio 3 to 1, so submit
+button will have the ratio of 3, and
+back button will have the size ratio of
+1, which means submit button will be
+bigger than the back button, right,
+because it's the main button that we
+want the users to use.
+No.
+It's had some
+Emojis, right? Some it can be what on
+button.
+That is fine.
+And for back.
+What do we have back is this. Let's use
+this. This is fine.
+Just to make it more fun, right?
+So,
+If back button, if this button is
+selected.
+Reset quiz. Run the reset function.
+And ST dot.
+Rerun, right? Streamlet will also rerun
+the script.
+However, if submit button.
+Then
+calculate the total, so length of quiz.
+Questions, a number of questions.
+Answer will be lens.
+Session.
+State, you know.
+User answers.
+It's
+If answered is less than total.
+Is still not warning.
+You'll have Answered
+Answered
+Questions. So suppose if the total
+questions are 4 and the user has
+answered only 3 and selected the submit
+button, we need to send this warning
+that you have answered 3 out of 4
+questions.
+Please answer all of them.
+Questions before.
+Submitting.
+Right, let me scroll up.
+If not, right, if the user has answered
+all the questions, then st. session.
+State submitted equals 2, right? If you
+remember, it used to be false as
+default, now we have turned it to 2.
+ST. session.
+State not current step equals results.
+And ST
+Freedom.
+So finally, page 2 is done. Let me add.
+Some doxygen to explain this function.
+So let's play the quiz.
+Questions and Um,
+Answers from, you know, the user.
+OK.
+Now, we are done with screen 2, which
+was the quiz page. Screen 1 was the
+setup page, right?
+Where the user was entering the inputs
+like topics and number of questions.
+Etc. OK. So now let's come to the 3rd
+screen. So, screen 3. In his own speech,
+or. The
+render results.
+Right, ad string that we will enter
+later. So quiz will be sessionstate.com.
+This data
+Answers will be sessions.
+Session
+state.
+User answers.
+Questions will be.
+was
+Any vexed questions.
+And total will be length of questions,
+number of questions, right?
+OK, great.
+Now let's calculate the score.
+So score equals sum. Of
+Let's add one for
+iq and enumerate.
+Questions
+If
+Answers. get i equals q.
+Correct.
+Option, let me just Copy it
+Right?
+So that I don't make spelling mistakes.
+So, what this says is, if
+The index of this, which is option and
+the value, if this selected option is
+the same as the correct option, which
+is here, right, then add one. That's it.
+Otherwise, don't do anything.
+So let's let's play the score summary.
+Percentage equals n.
+Score upon total.
+Actually, let me
+multiply it with 100.
+Right? So if percentage
+equals 100.
+Then Add a Emoji
+And a message which will be Let me show
+it to you.
+Emoji will be of a trophy, perfect
+score, you're a master. We're saving it
+in different variables for a particular
+reason. We'll see. Soon
+I
+Percentage
+Greater than 70.
+And then,
+Let's eat this.
+This will be something like
+Great job. You know your stuff, right?
+So, let me copy it twice. So if the
+percentage is greater than 40%.
+Then
+Let's add something like.
+Keep on going, right? Keep studying.
+And finally,
+If the percentage, 00 no, if it is
+below 40%. Then let's add, keep
+learning, right?
+So this is what will be displayed to
+the user based on their score. Now.
+Let's present it as well. So ST. Eor,
+header for the page.
+Emoji
+And score
+Store upon.
+Total
+ST subheader.
+This will be
+Percentage
+Sam correct.
+And our message, which was this
+variable rate.
+And finally, let's add a divider.
+Now, let's add detailed review. For
+each question
+LSD.
+I do.
+Detailed
+Do you
+For I And cue and enumerate.
+Questions?
+Let's store the user answer.
+Your answers not yet.
+Right
+I
+Correct or not?
+User answers if equals equals q.
+Correct
+Option. So if The user answer matches
+the correct option, this will be true,
+otherwise, is correct will be false.
+ST subheader.
+Question?
+The number of questions, so.
+This
+Dot Q.
+It's
+Throw each option with markers.
+I'll let it Or wrong. Right? So for key
+value in Q.
+Uh, options.
+Dot items. It was a dictionary, right?
+So we're using dot items. If key
+equals equals q.
+Got it.
+Option
+Then a state of markdown.
+Let's add
+Right, so it is correct. If the option
+selected is correct, add this.
+Else if
+Key equals user, answer, and not. is a
+wreck.
+Then stay mark down.
+This mark SD markdown is just for
+displaying text.
+Show wrong. If it's correct, show tick
+mark. If it's not, show the cross mark.
+And let's add else.
+If there is a 3rd situation.
+Right? So, just display the key value.
+Now we need to present the feedback.
+If is correct.
+Then ST.
+Success
+And else
+STero.
+Pretty simple. So show cross and then
+also show what was the correct answer.
+ST.info.
+We have explanation as well.
+So,
+let's add that explanation. And then
+Put a divider.
+Right, this explanation is coming from
+here.
+Now, finally, let's add a restart
+button if the user wants to again run
+the cycle and create a new quiz.
+So if ST button.
+Take another quiz.
+Take another, another quiz.
+And also, let's add the size, so use
+container width equals 2. Right, let's
+add an emoji here. So something for
+redo, you know. Look
+No.
+Uh.
+Let me search it on the internet. And
+paste it here
+OK. Found it.
+Yeah, now, reset quiz.
+And Struck streamlet to also rerun the
+script.
+Perfect. We are done with the 3 pages.
+I know you've not seen what's happening,
+but I hope you've somewhat understood
+what the logic of this implementation
+is. Once you see it, you will
+understand it completely, right? And we
+will see it very soon now.
+Let's add the main function, so the
+main app, which will be dev main.
+In it
+Session state
+So first, initialise the session state,
+which was this, right?
+The
+SD Title
+Quiz genius, AI.
+ST or caption.
+Generate AI powered quizzes on any
+topic in seconds, and then let's add a
+divider.
+Right, now some logic, so
+route through the correct screen.
+Based on current step, right? This is
+user routing. So if ST.
+session.
+State Not
+Current step.
+Equals
+Set up
+Then
+render.
+Set up form.
+I hope it's starting to make sense.
+LFST. sessionst.
+Current
+current. Step
+Equals
+Of course
+Orrendo uz.
+And LFSD.
+sessionstate.
+Current step equals results.
+Render Results. Perfect. So I hope
+you're understanding the state
+management, right? So in every page we
+were setting the state management of
+current step. Let me show you an
+example.
+Yeah,
+so current step was the results.
+So if current step is results, show
+that page.
+Which page? This one. Who is page? OK.
+Now, let's add a footer.
+ST not divider.
+SD or caption.
+Built with streamlet. And Gemini,
+If you want to add any disclaimer, you
+can also add that, uh, you can also add
+that. So these uh AI. Generated Quiz on
+this.
+This
+It is an AI generated quiz. AI
+can also be incorrect.
+Sometimes something like that, right?
+Even you see at the bottom Gemini and
+Cloud, all of these
+AI applications also have a disclaimer.
+Now, if you want to run, let's run it.
+So if name.
+Equals equals main oh
+underscore underscore, so double under
+dundo.
+If it's main, then run the main
+function.
+So. Quite a lot of implementation,
+right? Let me quickly run you through
+it. You're done with the front end
+setup. Let me quickly give you an
+overview. So what we did first, we
+first set up the page config, overall
+config. So at every page this will be
+the title, this will be the page icon,
+and the layout will be centred. Then we
+did some state management, right?
+So if the quiz data has been generated
+or not, if the user answers have been
+submitted or not, right? Submitted is
+true or false, and what is the current
+step or the current page that the user
+is on. Then we built the first page,
+which is the setup page, which accepts
+the input from users, which is what
+topic they want the quiz to be on, how
+many questions do they need, and what
+difficulty level. Right?
+Then we set up the second page, which
+was a render quiz. So once they've
+selected the input, they would want to
+render their quiz. So it will have the
+number of questions that they've
+selected on the topic that they have
+selected and at the difficulty that
+they have selected, right?
+Now.
+Oh, I've not added this do string. I'll
+add it later. Don't worry. Then the
+third screen was the results page.
+You, you see, this will have all the
+Results for the user's submitted
+answers. So number of corrected, so
+number of correct answers submitted,
+what is the overall score, and a
+message depending on that score.
+Finally, we created the main app which
+will display the right page based on
+the right session state.
+All right, I hope you've enjoyed
+building the front-end app. I would
+request you that if if this is new to
+you.
+Go through this video again, or maybe 3
+times to understand it completely. In
+the next video, we will run the main
+function and show you how this quiz app
+has taken shape. So I hope you're
+excited for that. I'll see you in the
+next video. Thank you.

@@ -1,0 +1,50 @@
+If we take all the modules and place
+them on this architecture, it looks
+like this Data Layer, Module 25, and 10,
+where we talked about ingestion
+patterns, data quality, and pipeline.
+Feature Layer Module 23, and especially
+Module 9, which focused on feature
+stores and training serving SKUs.
+Training and experimentle Module 4 and
+Module 6 for pipeline and retraining,
+plus Module 7 and Module 8 for model
+optimisation and trade-offs, and Module
+12 for model registries and versions,
+serving and infralayer. Module 1
+through Module 3 for serving patterns,
+Module 7 and Module 8 for runtime, and
+Module 12 for multi-modal routing.
+Monitoring and feedback. Module 5 for
+Monitoring, Module 6 for retraining
+triggers, Module 8 for SLO awareness
+trade-offs, and Module 11 for security,
+fairness, and audit trails. This is
+your mental index. If you need to
+design or debug a layer, you know which
+module to visit or revisit. To wrap up,
+the key shift is from thinking about
+single model. 2, thinking about the
+whole system. For any machine learning
+problem, ask Data layer, where does the
+data come from? How often, and how do
+we ensure quality? Feature layer, which
+features matter, and how do we compute
+them consistently in training and
+serving? Training layer. How do we
+orchestrate training, track experiments,
+and close or choose which model to
+promote. Serving layer. How do we
+deploy and scale it while meeting
+latency, reliability and cost
+constraints, Monitoring and feedback?
+How do we detect drifts or failures and
+trigger retraining or rollback safely?
+If you can walk through these layers
+for a recommendation system. A ranking
+system or a fraud system.
+You are essentially doing machine
+learning system design. The kind of
+thinking expected in real world
+architecture discussions and interviews.
+Thank you.

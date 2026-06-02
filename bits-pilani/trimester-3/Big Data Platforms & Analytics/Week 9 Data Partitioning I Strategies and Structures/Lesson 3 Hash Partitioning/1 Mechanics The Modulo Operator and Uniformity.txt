@@ -1,0 +1,82 @@
+Welcome to Lesson 3. We have discussed
+why we partition, and now let's look at
+the most common way distributed systems
+actually do it. That is hash
+partitioning. Our goal is clear.
+Achieving uniform data distribution
+through deterministic mapping. So in a
+big data cluster,
+We don't want to manually decide where
+every single row goes.
+We need an automated mathematical way
+to scatter data. So that every note
+gets a fair share.
+Hash partitioning is the industry
+standard for achieving this
+pseudorandom but predictable spread.
+Let's get into the mechanics.
+At the heart of this strategy is a very
+simple formula.
+P equal to hash of key mode of n. Let's
+break that down. The key is This is the
+attribute you choose to partition by,
+for example, a user ID or an order ID.
+The hash function
+So the system takes that key and runs
+it through a hash function, like. Any
+hash function
+This transforms any input.
+Into a string a number and a date, into
+a large consistent integer.
+And the modulo N or mod N, we take that
+large integer and apply the modulo
+operator on it, where N is the number
+of partitions that you want in your
+cluster.
+The result P is your target partition
+index.
+Because the hash of a specific key is
+always the same. This process is
+deterministic.
+So user 12 3 maps to partition 5 today,
+it'll map to partition 5 tomorrow. This
+predictability is what allows the
+system to find data again without
+having to search every node.
+Why do we use this specific math?
+Because the modulo operator naturally
+scatters values across the range. Of 02
+and -1.
+This ensures that roughly the same
+amount of data ends up on every node.
+It's like dealing a deck of cards. The
+hash function shuffles the keys. And
+the modular operator deals them out one
+by one, to the available partitions.
+However, there is a catch, assuming no
+significant key skew.
+Hash partitioning works perfectly if
+your keys are diverse, but if 50% of
+your records have the exact same key.
+Say a null value or a very common
+category.
+The hash function will produce the same
+integer for all of them. The module
+operator will send that entire 50% of
+your data to a single partition.
+Which will eventually create a hot spot
+or a straggler problem. That we have
+already discussed earlier.
+So just to wrap up, hash partitioning
+uses a modulo operator to turn keys
+into partition addresses.
+It's the best way to ensure your
+cluster stays balanced under normal
+conditions. But when is this actually
+the best choice for your specific query?
+In our next video, we'll look at the
+specific use cases like point lookups
+and joint optimisations. Where harsh
+partitioning really shines. I'll see
+you there. Till then, happy learning,
+and thank you so much.

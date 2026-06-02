@@ -1,0 +1,55 @@
+Hello everyone. We have reached the end
+of module 7. Over the last few lessons,
+we have deconstructed the engine of
+Spark's resilience. Let's wrap up by
+reviewing the key takeaways you should
+carry forward. First is, first let's
+look at lineage versus replication.
+The fundamental shift in Spark is that
+it prioritises metadata over actual
+data by storing the transformation
+recipe, what we call lineage, instead
+of making full data copies. Spark
+actually saves a massive amount of RAM
+and network bandwidth through it. This
+is what allowed us to move away from
+the replication tags of older systems
+like HDFS.
+Next, we looked at the efficiency of
+narrow dependencies. Transformations
+like map and philtre are the building
+blocks of high performance data
+pipelines. Because of their 1 to 1
+mapping, they allow for fast local
+recovery. If a node fails, Spark
+recomputs only the lost partitions on a
+single healthy executor.
+Without needing a cluster wide shuffle.
+On the other hand, we analyse the
+complexity of wide dependencies.
+Shuffles are a necessary part of data
+processing.
+But they make recovery expensive and
+global.
+A failure during a shuffle can force
+the system to reexecute entire upstream
+stages.
+Understanding this helps you decide
+when to use persistence or
+checkpointing to protect your most
+expensive computations.
+I want to leave you with one final
+thought.
+Resilience in Spark is built on the
+twin foundations of immutability and
+determinism.
+Because an RDD never changes once
+created, and because our operations
+always produce the exact same result
+for the same input.
+The recipe never expires. If the recipe
+never changes, the result can always be
+recreated. Thank you for joining me in
+this module. Happy learning. I'll see
+you in the subsequent modules. Thank
+you so much.

@@ -1,0 +1,77 @@
+Welcome back, learners. Now that we've
+understood what NER is, let's also
+implement it in Python.
+All right, learners, in the last lesson
+we saw how we can implement POS tagging
+using Spacey. In this, let's look at
+how we can implement named entity
+recognition using Spacey. So what I've
+done is I have installed Spacey and its
+English language model. This q stands
+for quiet, and what it does is it
+reduces all that all that verbose
+literature to a simple message, right?
+Then I have imported Spacey and
+displacey. Right? And here is our text
+data to implement NER on. I have again
+initialised the English language model,
+and I have processed the text data and
+saved it in this variable called doc.
+Now, this doc variable. Has something
+called as ENTs or entities. Let's look
+at it.
+So for
+ENT and doc. ENTs.
+Let's print what ENT is.
+ENT, so you see Apple UK 1 billion,
+Elon Musk, December 2026. So from this
+whole text data, NLP English model has
+identified the key entities, right,
+which are these.
+Now, which specific entity these are,
+let's look at them. So ENT.
+Dot
+and ENT.
+Label, so this will give us the label
+of that entity.
+So you see, just like in POS, we have
+the ID of that label, and to print the
+exact label.
+Just put an underscore against it. So
+Apple is an organisation. UK is a
+geographical location. 1 billion is
+money. Elon Musk is a person, and
+December 2026 is a date, which is
+correct identification of all the
+entities. Let's now make it a little
+neat.
+Right? So what's the difference? It
+looks more like a table or a data frame.
+Now the only addition here is
+spacey.explain, and you pass the entity
+label. So what this will do is this
+will give you a definition for this
+entity. So ORG is companies, agencies,
+institutions, etc. GPE is country,
+cities, states, like a location. Money
+is monetary value, including unit.
+Personcent means people, including
+fictional date, absolute or relative
+dates or periods, right? So that's how
+you implement NER on your tax data.
+Now let's use display C to visualise
+this as well.
+So we do displace rendo and you pass
+this variable doc.
+And you define the style, which is
+entity ENT.
+So you see, Apple, which is an og. Is
+looking to buy a
+location for monetary value or money. P
+And death
+So that's how you implement named
+entity recognition using Spacey. Your
+task now is to practise this on
+different kinds of text data.
+That's all for this video. And I'll see
+you in the next one. Thank you.

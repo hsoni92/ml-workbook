@@ -1,0 +1,34 @@
+All right, learners, welcome back. And
+now let's go through some key
+assumptions for LDA. So LDA makes
+several assumptions. The first one
+being word order does not matter, which
+is very similar to your bag of words,
+right? And what does this mean actually,
+that there is no context preserved.
+Right? The second assumption being that
+topics are shared across documents.
+Then, documents are mixtures and not a
+single topic or a single theme, which
+means documents can have multiple
+different themes in different
+proportions.
+Finally, the last assumption being,
+words are generated independently,
+given any topic, right? So these are
+the 4 different assumptions for LDA
+algorithm. Now what we should note is
+that these assumptions explain that why
+text preprocessing matters so much,
+especially for traditional algorithms
+like LDA.
+Also Why LDA struggles with very short
+text, right? So if the text corpus is
+very short, LDA really struggles
+deducing the right topic or the right
+theme from that text corpice. Finally,
+why context aware models were later
+developed, right, because LDA was not
+capturing any context. OK, so that's it
+for this video, and I'll see you in the
+next one. Thank you.

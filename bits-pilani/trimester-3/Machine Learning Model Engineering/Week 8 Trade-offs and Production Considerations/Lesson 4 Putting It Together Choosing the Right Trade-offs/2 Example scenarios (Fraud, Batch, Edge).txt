@@ -1,0 +1,86 @@
+Let us make this concrete. With few
+scenarios. Scenario one. A payment
+fraud check. Constraints, very high
+accuracy and very high stake. Mistakes
+either lose money or block legitimate
+users.
+Low latency, because the user is
+waiting for the payment to go through,
+and high availability, the system
+should rarely, if ever, be down. A like
+design, a compact but strong model,
+perhaps a distilled or optimised
+version of a larger model. Online
+inference with strict service level
+agreement, horizontal scaling without
+auto scaling based on latency and
+queries per second, possibly GPU and
+high-end CPU instances, and
+aggressively monitoring latency, error
+drifts, and business metrics. Here we
+are willing to pay more for
+infrastructure to protect accuracy,
+latency and user experience.
+Scenario 2. Monthly churn prediction.
+Here, no one is waiting in real time.
+You might have a time window to a few
+hours to run the job. And the data
+volume can be very large.
+A likely design, pure batch inference,
+over many rows at once. Using spot
+instances or preemptible instances to
+save cost, potentially using heavier
+model because latency per user is less
+than total throughput, focusing on rows
+per second and total job runtime. The
+key user experience quo question here
+is not milliseconds, it is does the
+churn. Scoring finish in time for the
+business to act on the results.
+Scenario 3. A mobile camera app running
+inference on device constraints, the
+model must run on phone or edge device.
+Latency and battery usage must be low,
+memory and compute are limited. A
+likely design A compressed or quantized
+model. Exported to a format like
+Tensorflow Light or ONNX, that is
+supported on device. Often a distilled
+student model that mimics a larger
+teacher trained in the cloud.
+With a strong focus on model size in
+megabytes, power usage, and latency per
+frame. The cloud still plays a role.
+Training the large teacher model,
+generating new student model,
+collecting aggregated analytics. Here,
+accuracy is balanced between device
+constraint and end user smoothness.
+We can turn everything into compact
+decision flow. Step one.
+Is a user waiting? If yes, choose an
+online, low latency setup. If no,
+Consider batch or asynchronous
+processing. Step 2. How risky are
+mistakes? If the risk is high,
+prioritise accuracy, strong monitoring
+and safe roll out pattern like canaries.
+If the risk is lower, you have more
+room to compress the model and choose
+simpler architecture.
+Step 3, traffic pattern and budget. For
+high, steady traffic, use dedicated
+servers.
+With horizontal scaling and auto
+scaling. For spiky and low traffic,
+serverless or a small cluster plus spot
+instances can be more cost effective.
+Step 4, fit the model. And optimisation.
+To those choices. Pick the right model
+size and compression level. Choose
+hardware, CPU, GPU, or edge devices.
+Decide whether to use batching or micro
+batching. This is not a perfect formula,
+but it gives you a structured way to
+reason about tradeoff.
+Thank you.

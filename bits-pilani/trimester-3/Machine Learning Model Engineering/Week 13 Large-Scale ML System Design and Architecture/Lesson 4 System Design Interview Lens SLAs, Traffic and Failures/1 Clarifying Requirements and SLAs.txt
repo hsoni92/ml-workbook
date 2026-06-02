@@ -1,0 +1,35 @@
+Welcome to Module 13, Topic 4, Systems
+design interview lens, SLAs, traffic,
+and failure scenarios. In this video,
+we will shift from implementation
+details to how you reason about machine
+learning systems overall, especially in
+a system design interview or an
+architecture review.
+We will ask questions like.
+What are we building and who depends on
+it?
+How much traffic and data will it see?
+What happens when we when pieces break?
+The idea is to use everything from
+Module 1 to Module 12 as a toolbox and
+apply it in a structured interview
+style way.
+In any system design conversation,
+don't start by drawing boxes, start by
+clarifying requirements. What exactly
+is the product? Is this a
+recommendation system, a fraud detector,
+or a search rankings service? Who uses
+it and how? Is this a UI facing API, a
+back end service, or a purely batch
+system? What does good enough mean? Is
+the priority is accuracy, freshness, or
+user experience, and, crucially, what
+happens if it fails?
+Is it just a slightly worse homepage,
+or is it a regulatory or a financial
+incident?
+These answers will shape your choice
+for SLA's scaling and resilience. Thank
+you.

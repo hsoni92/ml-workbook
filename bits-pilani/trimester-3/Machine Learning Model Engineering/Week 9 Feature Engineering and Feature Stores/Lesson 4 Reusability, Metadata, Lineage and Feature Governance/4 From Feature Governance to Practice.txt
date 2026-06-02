@@ -1,0 +1,41 @@
+To connect this back. To hand on work.
+Our Module 9 labs will simulate a tiny
+feature stores directly in a notebook.
+You will build an offline features
+table using pandas.
+As if it lived in a warehouse. Build a
+simple online store using Python
+dictionary.
+And, most importantly, use the same
+feature computation logic in both
+places. You will intentionally
+introduce training serving SKU, when
+fix it by using shared definition. This
+will give you a concrete feel of why
+consistency matters, how reusability
+and lineage starts to show up even in a
+small demo, and why feature stores are
+such a powerful abstraction for
+production machine learning.
+To wrap up Module 9 theory, in Topic 1,
+we saw how feature engineering in
+production is much more than a notebook,
+and we introduced training serving
+skill. We separated offline and online
+features and defined what a feature
+store does to them consistent.
+In topic 3, we looked at the features
+stored ecosystem, feast, tecton, hops
+work as a concrete implementation.
+Of the same pattern. In Topic 4, we
+focused on reusability, metadata,
+lineage, and governance, and how
+feature stores help at an organisation
+level. The big idea is that feature
+stores turn feature engineering into
+from a mess of ad hoc script into a
+shared reliable governed platform. Now
+in the labs, you will implement a tiny
+version of this idea and experience
+training serving SKU and its fix
+firsthand. Thank you.

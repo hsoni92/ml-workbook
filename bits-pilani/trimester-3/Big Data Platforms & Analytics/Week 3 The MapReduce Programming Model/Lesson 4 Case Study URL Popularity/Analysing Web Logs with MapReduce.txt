@@ -1,0 +1,87 @@
+Welcome to Lesson 4. We have spent the
+last few videos discussing the abstract
+theory of map and reduce. We looked at
+the logical data flow and the magic of
+the shuffle. But as an architect, you
+need to see how these pieces fit
+together to solve a real business
+problem. Today we are going to walk
+through a classic web analytics case
+study. Our goal is simple but massive.
+We need to find the most popular URLs
+from 10 terabytes of raw server logs.
+Imagine trying to open a 10 terabyte
+file in Excel. It's impossible. But
+with MapReduce, it becomes
+straightforward 3-step process. Let's
+look at the first box on the slide. Map
+logic. Our 10 terabytes of weblogs are
+currently sitting in HDFS, split into
+thousands of 128 MB chunks. The
+framework assigns a mapper to each
+chunk for every single line in that log
+file, which contains IP addresses, time
+stamps. And browser info. The mapper
+performs one specific task extract the
+URL every time it sees a URL. It emits
+a key value pair. The key is the URL
+string and the value is number 1. So
+the formula will be, you know, you give
+a log line, it will give you a URL, and
+it will give you 1 as an argument. If
+mapper sees, let's say, Google.com in
+the logs, it outputs Google.com.1. It
+does this millions of times in parallel
+across the entire cluster. By the end
+of this phase, we have a sea of
+billions of ones associated with
+different URLs. Next is the shuffle
+logic. As we learned, this isn't code
+you have to write. The framework
+handles it automatically. The framework
+looks at all those billions of pairs
+and ensures that every single pair with
+the same key is sent to the exact same
+reducer, as the slide shows. All the
+pairs for Google.com might be sent to
+reducer A, while every instance of,
+let's say, bitsplanning.ac.n is sent to
+reducer B. This is the moment of
+coordination. It takes distributed
+noise from the mappers and groups it
+into organised piles, ready for the
+final count. Finally, we reach the
+reduced logic. Each reducer now has a
+manageable list. Reducer A receives the
+key, google.com. And a massive list of
+ones. The logic we write for the
+reducer is simple sum the list. The
+formula is clear. You give a URL. You
+give a list of all the ones. The result
+should be a URL and a total count. It
+iterates through that list of ones and
+outputs one final result. Let's say
+Google, 50 million. We have
+successfully reduced 10 terabytes of
+raw text into a tiny ranked list of URL
+popularity. This is the power of
+turning noise into signal that we
+discussed in the last lesson.
+By using MapReduce for this case study,
+we achieved 3 things. Number 1,
+scalability. We handled 10 terabytes by
+just adding more nodes. Number 2,
+simplicity. The developer only had to
+write the extract and some logic. And
+Number 3, resilience. If one mapper
+failed during the 10 terabyte process,
+the framework simply restarted without
+failing the whole job. Now that you
+have seen a real world example, you're
+ready to look at the limits of this
+model. In our next lesson, we'll
+discuss distributed processing limits.
+Including how MapReduce handles
+hardware failures and the cost of
+disk-based storage. I'll see you in the
+next lesson.

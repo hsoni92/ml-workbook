@@ -1,0 +1,52 @@
+Welcome back, learners. In this lesson
+we will explore part of speech tagging.
+So what is pause tagging, you may ask?
+Part of speech, or pause tagging is the
+process of assigning a grammatical
+category to each word in a sentence.
+These categories include noun, verb,
+adjective, adverb, preprocession. Let's
+look at a simple example to understand
+pause tagging. Consider the sentence,
+natural language processing is
+fascinating.
+So what will be our tokens here?
+Natural language processing is
+fascinating.
+Here each token, or each word, will be
+assigned a part of speech. So let's
+look at that. Natural is an adjective.
+Language is a noun. Processing is a
+noun as well. Is It's a verb.
+Fascinating. It's an adjective.
+I hope this clears it much more.
+Pause tagging helps NLP systems
+understand the syntactic structure of
+the sentence. It also helps it
+understand the role each word plays
+within the context. Pause tagging is a
+building block for many NLP
+applications.
+Like dependency parsing. Information
+extraction. Text normalisation And
+question answering applications. Even
+modern NLP models internally learn
+syntactic patterns of the words.
+Pause tagging makes these patterns
+explicit and interpretable.
+It's important to note that pause
+tagging is very contextual.
+A word's pause tag depends on its
+context. Let's look at an example.
+I will book a ticket. And another
+sentence. Read this book.
+The word book in I will book a ticket
+has the post tag of a verb, whereas
+within the sentence read this book, the
+word book has the post tag of a noun.
+So you understand the difference?
+Pause tagging is not a simple
+dictionary lookup. It is highly context
+sensitive. That's all for this video,
+and I'll see you in the next one. Thank
+you.

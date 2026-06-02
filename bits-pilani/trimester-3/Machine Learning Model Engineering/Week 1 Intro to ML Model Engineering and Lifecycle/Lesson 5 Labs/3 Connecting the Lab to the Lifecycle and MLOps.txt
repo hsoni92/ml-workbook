@@ -1,0 +1,322 @@
+So, before we move forward, I want to
+pause for 2 minutes and um want to talk
+about why hugging face matters so much
+in today's AI world. Like I mentioned,
+think of hugging face as the GitHub of
+AI models, just like uh GitHub changed
+how software is built and shared.
+Hugging face changed how AI models are
+created. How it can be shared, how it
+can be tested, or how it can be
+improved.
+If we just go 2 years back, building AI
+was limited to big companies with
+massive resources, right? If you wanted
+a language model, you had to build
+everything from scratch. Like data, you
+have to work upon data preparation,
+then training pipeline, then
+infrastructure, lots of GPUs, right?
+But today's hugging face has
+democratised AI with a few lines of
+code. Even if you are a learner, if you
+are someone from a startup, or even if
+you are from a big organisation, or you
+are a researcher, can basically
+download Whiteglass models, right? They
+can run an experiment. We can fine tune
+models on custom data. Because all the
+quotes are available on hugging face.
+All the reference documents are
+available over there, right? And we can
+also deploy them into real application.
+Even we have the playground to test any
+models. Even people are fine-tuning it
+on their domain-specific data, and
+those models are also available, so we
+can easily go on the playground and
+test those models. Now, this is very
+powerful, right? So, hugging Face is
+not just a website, it is an AI
+ecosystem. A model hub where thousands
+of models live. A dataset hub for real
+world data. And of course, it's an
+open-source library like uh Transformer,
+uh, datasets, and Accelerate. These
+libraries, anyway, we are gonna see in
+the uh upcoming labs, but yeah, these
+are very important uh libraries.
+And global community improving models
+every single day. So, we are getting
+every day. Uh, lots of new models,
+right, for experiment. So, what's
+important for you as a learner is this,
+you don't need to reinvent the wheel to
+learn AI.
+You have to stand on the shoulders of
+the best researcher in the world. Most
+modern AI research or even startup, or
+even large companies, including what we
+do in industry, uh, uh, in my
+organisation, we use hugging face as
+the foundation. So when you learn
+hugging face, you are not just learning
+a tool, you are basically learning how
+modern AI is actually built in the real
+world, right? And uh if you just master
+this ecosystem, you are no longer just
+a student experimenting. You become
+someone who can build, basically adapt,
+and ship AI solutions. So that's why
+Hanging Face is the most-known platform
+for anyone serious about AI today.
+And also one important thing I want to
+clarify right now, we will be
+revisiting this hugging face website
+many times throughout this curriculum,
+so please don't feel stressed or
+overwhelmed if everything doesn't make
+sense at once. You're not expected to
+master hugging face in one day or one
+lab. This course is designed in a way
+that you will see the same platform
+again and again, and each time we, we
+will focus on one small components and
+uh with every labs, your understanding
+will naturally improve.
+Right? If you simply follow the lab's,
+uh, experiments step by step, practise
+what we do in the session, and explore
+a little on your own, you will
+automatically become comfortable with,
+uh, uh, all the models, uh, data set,
+how tokens work, inferencing and script,
+how to do fine-tuning. Everything is
+available on the website.
+So, yeah, the overall hugging phase
+ecosystem, you'll learn. So, take it
+step by step, just uh trust the process.
+By the end of this curriculum, hugging
+phase will feel uh familiar, not
+confusing. So, yeah, that's our goal.
+OK. So now, let's come back to our
+Jupiter notebook, just to quickly
+recall what we decided earlier. Uh, and
+our use case for this lab is very
+simple. We want to build a simple basic
+assistant that can generate short and
+helpful responses, right? And uh, so
+far, we understood what hugging face is,
+why it matters, and how the ecosystem
+works. Now, let's do the first, uh,
+practical step. Let's download a
+hugging face model for text generation.
+Like we have this philtre, you can go
+and explore these philtres. You can
+click on
+this. We want uh text generation model,
+and as you see, hugging face has many,
+very big models, and they are powerful.
+But for this first lab, we want
+something that is easy to understand,
+fast to run, and can work on a normal
+laptop. Or, uh, in our local system,
+because I want everyone to be able to
+run it without worrying about GPU or
+heavy setup. So, we will pick a very
+small model, a lightweight text
+generation model, and today's, our goal
+is not to pick the best model in the
+world, but to pick a model which we can
+run easily. So, I have a model in my
+mind which we can try that is distil 2.
+And please uh also consider using this
+model from authorised vendor. So, uh,
+if you're doing it by yourself, then
+please use uh distilled bird. The
+shorts should be distilled bird.
+Now, you can see here, uh, this is the
+model card. Basically, model card is uh
+where you can find all information
+about model, how it's trained, what was
+data source has been used to train this
+model. Uh, if you want to deploy this
+model, you can explore this tab, but
+this, we'll be covering this part later.
+And if you want to use this model, so
+we have multiple options uh to use it,
+but we are gonna take a very simple
+path. So, let's come back here. And we
+will also find a tab where we can see
+how to use this model inside our code.
+So you can see uh this code has been
+given over here and we can directly
+consume it. OK. And just to give you uh
+an introduction about what is digital
+GPT 2, it's a small and lightweight
+language model provided on hugging face.
+It's a, uh, compressed version of uh
+GPT 2, which means it is faster and
+easier to run. And, uh, the biggest
+advantage of the still GPT 2 is that it
+can run on a normal laptop using CPU.
+So, You don't need a GPU or any uh
+special hardware. This model is not
+very powerful, and it may generate uh
+simple or imperfect text, but that's
+exactly why it is good for uh learning.
+So, it helps us focus on understanding
+how text generation work, uh, learning
+how to load a model from hugging face,
+and seeing the full end to end workflow.
+And later in the school, we'll move to
+bigger and better model, but for first
+lab, is still GPT 2 is a perfect
+starting point.
+So now, in the notebook, we will do two
+things. First, we will install the
+basic libraries we need, mainly
+Transformers and torch. Then we
+download the model and load it, and
+then test it with a simple prompt.
+OK. So let's see, uh, we are here,
+Discover and download ML models. Since
+we have already decided which model we
+need to download, that is, uh, digital
+GPT 2. Now, let's, uh, set up the
+environment. So I have created this
+requirement on TXT. Here, we have two
+dependencies, transformers and torch.
+So let's try to install it uh.
+Uh, you know, environment. So just make
+sure your environment is activated and
+it will look like this.
+Right. And we are inside lab one. Let's
+uh just make sure. That the
+requirement.txt is there and now let's
+try to uh install it. Since we have
+already installed UV, so let's UV
+install iPhone R and then
+requirement.txt. As soon as you click
+this, it got installed. Uh, you can
+also validate this by
+Executing command like UV. OK,
+last.
+So this way you can see what all
+libraries basically have been installed
+inside your environment. So we have
+installed a transformer and torch, but
+these two libraries.
+A dependencies of others. So that's why
+you are seeing uh these many uh
+installed liabilities over here. So,
+yeah. So now, let's clear it. We have,
+uh, configured our virtual environment.
+Now, let's try to run the code. So here
+we have mentioned which model we're
+gonna download and uh this is the
+directory where we are gonna put our
+model, downloaded model. And basically
+this code is just to create a directory,
+uh.
+This and model directory and the
+subdirectory, so let's uh execute it.
+As you can see, this uh directory and
+then subdirectory has been created.
+Now, let's try to download the model.
+And uh just to give you a brief about
+these two lines, so here we are
+downloading two things, the tokenizer
+and the model itself. We'll see this,
+what's the purpose of tokenizer and
+model in upcoming labs, but yeah, for
+now, um, I just want to show you like,
+uh, these two things we're downloading
+from hugging Face. So let's execute it.
+It will take some time, and you can see
+all the weights are downloaded inside
+this water directory.
+And you can also see uh the output here.
+The still 2, we have downloaded and uh
+saved over here, and model saved to
+this, model saved to this. So yeah, now
+we have model uh on our local system.
+Let's try to execute it.
+So To run this, first we have to load
+this model. So here is the cold. As you
+see here, we are basically loading
+tokenizer as well as the model. Now
+let's uh load this model, and as you
+can see here, we have loaded uh this
+model inside uh this model object and
+uh it's also saying how many parameters
+this model has. So these topics anyway,
+we are gonna discuss in upcoming labs.
+So, but for now, we have uh these many
+details. We uploaded the model,
+tokenizer, uh, and uh this model has
+these many parameters. Now, let's uh
+try to do some kind of prediction. So
+let's create a prompt. Here, prompt is
+very simple. It's just a hello message
+and uh model has to predict the next
+token or model has to complete the
+Sentence. So what we have to do first,
+we need to pass this prompt inside the
+tokenizer. So this text message will
+get converted into tokens because model
+always texts input as a token. And uh
+if you see here, we are storing those
+tokens inside
+input. And we are passing this input
+inside our model. So we are calling
+model not generate. This model is the
+same model which we loaded from our
+local system and we are calling
+generate function. And inside generate
+function we have multiple parameters.
+But right now the important parameter
+is inputs, whatever prompt we have
+created basically over here. Now?
+Uh, once we get the output, we have to
+again decode it. Um, again, to decode,
+we have to use tokenizer.decode, and
+then we'll be having our generated text.
+So, let's execute this.
+And you can see like model has
+generated for the token, and it's
+simply saying hello the first time I
+saw a new version of the game, so it's
+simply uh completing this. Uh, token or
+the sentence. Let's try something else.
+Uh, let's say machine.
+Loving.
+Machine learning is, let's say what,
+what I will do.
+And it's saying machine learning is a
+great way to learn about the world. Now,
+if you look at this output, uh, you
+will notice that the sentence doesn't
+make perfect sense, right? Uh, and
+that's completely OK. The important
+thing to understand here is, uh, not
+the quality of the sentence. The idea
+of this lab is to show that like, uh,
+the model understood this is a text
+completion task. It, uh, continued the
+sentence based on the given input,
+given prompt. And it uh basically
+successfully generated text in, right?
+Because we are using a very small model
+and uh we gave it a very short prompt,
+right? We should not expect deep or
+meaningful responses. So, right now,
+our focus is on how the model is loaded,
+how the prompt uh is passed, and how
+text is generated. And in the upcoming
+labs, we will improve the prompt, uh,
+we'll use better model and uh control
+the output more effectively. So even if
+the sentence looks simple or repetitive,
+it means our pipeline is working
+correctly and that's a success.

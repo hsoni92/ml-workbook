@@ -1,0 +1,18 @@
+Welcome to Module 13, Topic 1. End to
+end architecture recommendation systems.
+In this video, we will walk through a
+realistic recommendation system
+architecture, like what you might see
+in an e-commerce site with recommended
+for you carousals.
+The goal is simple, to say, but hard to
+do well.
+Show the right item to the right user
+at the right time, usually within a
+tight latency budget, often under 100
+to 200 milliseconds per page load. We
+will connect everything you have
+learned so far data ingestion, feature
+engineering, model retraining, serving
+and monitoring and see how they fit
+into one coherent system.

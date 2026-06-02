@@ -1,0 +1,58 @@
+So when is online inference the right
+tool? Think about a scenario like
+searching and ranking. When a user
+types a query, we want to rank and
+philtre results in real time.
+personalised recommendations. When a
+user lands
+on a homepage or product page, we want
+to serve suggestions tailored to that
+movement.
+Real time fraud or risk checks. At
+checkouts, login or password reset, we
+might want to block suspicious activity
+before it goes through. Dynamic UX and
+personalization, content layout or
+pricing that adapt to the current user
+and context. The common theme, there is
+a live interaction happening. And
+something important doesn't move
+forward until the prediction arrives,
+that's when you're almost certainly in
+online inference territory.
+Here's the mental shift to keep in mind.
+In online inference, the user is
+waiting. That means, model latency
+directly affects page load time. How
+snappy the app feels. Abandonment rates.
+Example like user dropping out of
+checkout funnel because it feels too
+slow. You might have product
+requirement like show recommendation in
+under 100 or 200 milliseconds, complete
+a fraud check, and approve or decline
+the payment before payment provider's
+timeout.
+So for online inference, metrics like
+P95 and P99 latency are not just
+engineering stats, they become product
+requirement. If we miss them, the user
+experience breaks. Let's connect this
+to our inference matrix dashboard for
+online systems. The metrics we care
+more about are average or P50 latency
+to understand the general.
+Typical performance, P95 and P99
+latency. To understand the worst
+experience that user will feel, error
+rate. How often do we time out, return
+errors, or fall back to default?
+We still care about throughput, how
+many requests per second we can handle,
+and cost, specifically at peak traffic,
+where every extra millisecond of
+computation gets multiplied by
+thousands of requests. But the headline
+for online inference is, can we meet
+the latency SLOs, specifically at P95
+and P99, even when traffic spikes.

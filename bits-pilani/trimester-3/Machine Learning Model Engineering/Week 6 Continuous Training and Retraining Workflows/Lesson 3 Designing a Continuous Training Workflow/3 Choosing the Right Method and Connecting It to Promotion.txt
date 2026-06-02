@@ -1,0 +1,35 @@
+So which technique should you use, or
+when? Back tests are cheap and safe.
+Perfect for early exploration. Low risk
+internal models, narrowing down
+candidates shadow tests are great for
+medium to high impact models. When you
+want live input without changing user
+behaviour. AB tests are for high impact
+decision when you're already pretty
+confident in the model, and you need
+proof that it improves business
+matrixes.
+A common pattern is backtest. Then
+shadow, then AB tests, and then full
+rollout.
+You don't always need all three, but
+thinking in these levels keep you pick
+the right safety gear for each change.
+Finally, Tie this back to the pipeline
+from topic 2, that evaluate stage is
+not just one metric run on a test set.
+For important model, it often
+aggregates offline metrics and a
+backtest, shadow testing results under
+live input distributions, and where
+justified, AB test comes on real user.
+The decision to promote a candidate
+over the champion should be based on
+the. Combined evidence plus the risk
+and fairness consideration. In the next
+video, we will talk about governance
+and safety, approvals, rollback
+strategies and guard rails that keep
+this evaluation and promotions
+processes under control. Thank you.

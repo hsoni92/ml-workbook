@@ -1,0 +1,41 @@
+Welcome to Module 2. Modal Inferencing.
+Batch versus online versus streaming.
+In this first video, we're going to
+zoom in on one specific part of ML life
+cycle, what actually happens when your
+model is asked for a prediction. By the
+end of this lesson, you will be able to
+explain what model inference is in
+simple terms.
+Explain how it's different from just
+training a model.
+Use a shared vocabulary for latency,
+throughput, and cost. And understand
+why we sometimes use the same model in
+different ways,
+depending on how it's being called.
+This will set us up for next video.
+Where we will compare batch online and
+streaming inference patterns, and then
+feel the differences in the lab with
+real latency and throughput numbers.
+Let's quickly connect back to Module
+One. In Module 1, we said, model in
+production is not just like a PKL file
+sitting on disc or a notebook with a
+Predict call. Predict is, by the way,
+function.
+In production, a model is actually part
+of a service. It receives requests, it
+runs the model, and it returns
+predictions to some caller, maybe a UI,
+another backend service, or a batch job.
+So when we talk about serving or
+deployment, that we really mean is.
+We have a running system that can
+answer prediction requests reliably
+again and again.
+Module 2 is all about that serving side.
+We're going to put more structure
+around how we call the model, and how
+we measure what happen when we do call.

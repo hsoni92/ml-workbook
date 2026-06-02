@@ -1,0 +1,121 @@
+Hi, everyone. Welcome back to the lab
+for our final module, Joel.
+We have come a long way from uh
+training models to deploying and uh
+monitoring them. Now, we are going to
+address a critical piece of uh
+infrastructure that uh ties it all
+together, the model registry, OK. So,
+if you have ever found yourself with a
+folder full of files named like uh
+model
+final.pkl modelff.pkl. And something
+like model for real this time.pkl. So
+you already understand the problem a
+registry solves, right? So a model
+registry is the single source of truth
+for all of your train models. It's a
+version. centralised system that uh
+answers a key question like uh what
+models do we have, uh like uh which
+version is, uh, which, how did each
+version perform during evaluation or
+where is the actual model file located.
+So, while, while there are powerful
+dedicated tools like uh ML flow, vertex
+AI model industry,
+You can build a surprisingly effective
+one with simple file-based conventions.
+In this lab, we'll do just that. We
+will create a simple registry using
+version folders and a central JSON file.
+So this is the first step toward
+building a robust uh multi-modal
+serving system, right? So, I've created
+this uh directory, uh, lab tool. You
+can find all the details over here.
+Yeah. So first, uh, we need some uh
+First, uh, we need some models to
+register. So, let's, uh, look at the
+setupmodel.py here. Inside the script,
+you can find uh setupmodels.py.
+Uh
+So, this script established our core
+convention. Instead of saving model to
+a single file, we create a parent uh
+model directory, OK? Uh, inside it,
+every model version gets its own folder
+like V1, V2, and so on. Inside each
+version folder, we save two critical
+files. First, uh, is the model artefact
+itself, like a model.pkl, and the
+second. Uh, just an important, it's a
+metrics.json file. This file contains
+the key performance indicator for that
+model version like, uh, accuracy or log
+loss, uh, captured, uh, during its
+evaluation, right? Storing metrics with
+the model is a crucial practise. It
+makes the model artefact, uh,
+self-describing, OK? So, our setup
+script creates two versions, V1 and V2.
+OK, with a slightly different and faked
+performance metrics. So, let's run it
+to create our model assets.
+Bring the terminal.
+Go inside, uh.
+Lab 12.
+Now, run the setup a script.
+Excellent. So, now, our models
+directory is populated. We have two
+distinct version model ready to be
+discovered and uh registered, right? So
+that you can see V1 and V2. So this is
+our folder structure. Right? Now, for
+main event of this lab, uh, let's open
+build registry. P.
+Again, inside the script, we have uh
+another script that is built.py.
+OK. This script acts as our
+registration agent. Its job is to scan
+the model's directory and create a
+central catalogue, which we will call
+registry.json. OK. The logic is
+straightforward. First, it lists all
+the sub-directories in the model
+directory.
+Uh, start with V. This is how it
+discovers our model version. Then it,
+uh, iterate through each discovered
+version folder, right? So for each
+version, it, uh, construct a metadata
+entry. This is the heart of the
+registry. The entry includes the path.
+Uh, model PKL file, the metrics loaded
+from the corresponding matrix. Jason
+file. And uh uh created a time stamp,
+right? So we know when this version was
+registered. So each of these uh entries
+is added to main registry directory
+with the version name like uh V1 as the
+key. Finally, the script dumps this
+entire dictionary into rere. Jason with
+nice formatting. So, let's run it.
+Python.
+Uh
+Builders topi.
+And there we have it. The script has
+created resi. Jason. So let's open it.
+And uh if you inspect this file, we see
+a clean uh machine rotable catalogue of
+all our models. It tells us that uh
+version two has an accuracy of 91 and
+its artefact is located at uh uh this
+location, right? So this simple JSON
+file is our model registry. It uh
+decoupled the knowledge of what models
+uh. Exist from any other part of our
+system, right? So in the next uh script,
+we will use this registry to make a
+decision about uh which model is the
+best one to deploy.

@@ -1,0 +1,81 @@
+We have covered a lot of ground in this
+module, from fixing skew with salting
+to architecting the for co-location.
+But one of the most common questions I
+get from data engineers all the time.
+How many partitions should I actually
+have?
+As you can see on the slide, this is
+what we call the partition count
+dilemma. Finding the right number isn't
+a one and done setting. It's a key
+tuning parameter that changes based on
+your data volume and cluster. If you
+get it wrong in either direction, your
+performance will suffer. Let's look at
+the two extremes. If you have too few
+partitions, your data chunks are too
+big. When a single partition is larger
+than your available RAM of the worker,
+Spark is actually forced to perform a
+disc spill, so it writes the temporary
+data to the hard drive to avoid the
+crashing of it. So this is incredibly
+slow. In the worst case scenario, if
+the partition is simply too massive to
+handle, You will run into the dreaded
+out of memory errors. On the flip side,
+you might think I'll just make
+thousands of tiny partitions to be safe,
+but having too many creates a small
+file problem. Every partition requires
+metadata management and task scheduling
+overhead. So if your tasks are only
+running for a few milliseconds but take
+a full 1 2nd to schedule. You are
+wasting the vast majority of your
+cluster's time on administrative
+overhead, rather than your actual
+computation.
+So how do we know if we have found the
+sweet spot? We look at the data in the
+Spark UI. There are 3 key matrices you
+should monitor. First is shuffle, write,
+or read bytes. This tells you the sheer
+volume of data being moved. If this
+number is massive compared to your
+input data, you might have an
+inefficient join or an unnecessary
+shuffle. Shuffle, read, fetch wait
+times. So this is a crucial one. It
+measures how long your tasks are
+sitting idle, waiting for remote data
+to arrive over the network. A high
+value here is a red flag for a network
+bottleneck. It means your workers are
+ready to work, but the highway is
+congested. Remote by street. So this is
+a direct measure of network traffic. By
+comparing this to local reads, you can
+see if your co-location or broadcasting
+strategies are actually working or not.
+In a perfectly co-located joint, this
+number should be very, very low.
+analysing these matrices allows you to
+stop guessing and start engineering.
+Remember, the performance tuning is an
+iterative process. You adjust your
+partition count, you check these
+matrices, you refine until your fetch
+wait time is low and your disc spills
+have disappeared. This concludes our
+technical deep dive for this module.
+You have the tools to identify skews
+now.
+Mitigate it with salting or
+broadcasting.
+And you can tune your shuffles for
+maximum speed. In the next video, we'll
+wrap up everything with a summary of
+your key takeaways. I'll see you in the
+next class.

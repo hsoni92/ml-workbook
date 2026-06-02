@@ -1,0 +1,121 @@
+Welcome back learners. In the last few
+videos, we have implemented sentiment
+analysis using NLTK reader sentiment,
+using BERT, and using the flair package.
+Now in this video, let's explore the
+spacey package for sentiment analysis.
+So for that, first I will do is install
+theacy package.
+So we will especially need spacey text
+blob.
+And then let's run it.
+And dash Q for quiet. So what I'm doing
+is downloading the English core package
+from Spacey and also installing Spacey
+text blob from Spacey.
+So you'll let it download?
+All right, so we have downloaded it
+successfully. Let's now import. The
+necessary packages.
+So let's import spacey.
+And from Stacey, it's blob.
+Dot
+x blog import.
+Next blob. All right. This is done.
+Now we will initialise our processing
+pipeline.
+English or. But there's some
+And NLP. A pipeline.
+Spacey.
+It's
+love.
+Perfect. This will now help us
+implement sentiment analysis. So let's
+use a random text.
+I am feeling very good.
+Let's pass it through the preprocessor.
+And now let's print the results.
+So there are two types of results that
+we can get from you. One is polarity.
+Polarity.
+And
+Subjectivity.
+Let's implement it first, and then we
+will get into the explanations.
+All right, so the polarity says 90% and
+subjectivity says 78%. Great. So what
+polarity and subjectivity are, is
+polarity is pretty clear. It's, it is
+the polarity of sentiment, so positive
+or negative.
+Sub Subjectivity measures if it is an
+opinion or a fact, OK? So it, and both
+of them range from 0 to 1.
+And polarity ranges from -1 to 1, and
+subjectivity ranges from 0 to 1.
+All right. So let me also Type it out
+for you.
+First is polarity.
+So -1 says very negative and +1 says
+very positive. And it ranges from -1 to
+1. Now, subjectivity.
+All right, so it measures how much of
+the text is based on personal opinion,
+emotion, or judgement versus objective
+factual information.
+And it ranges from 0.
+Which is very objective or factual.
+2 1.0.
+Which is very subjective.
+Or?
+Opinion
+Based
+Perfect. Now, let's go ahead and
+implement sentiment analysis on our
+running text data.
+So let's implement.
+Sentiment analysis.
+Stacey
+Let's print a divider.
+OK.
+Now what we need is to run sentiment
+analysis on all the sentences.
+Let's make this an F string. So first,
+I will print the sentence.
+Then,
+I will print the polarity.
+Blog
+blog.
+Dot
+Olarity.
+And similarly for subjectivity.
+And let's also print.
+Or do I do?
+Perfect. So, we have the sentiment
+analysis done on all the sentences in
+our text data. So, I love this product
+has a polarity of 62%, slightly
+positive, whereas I feel this should be
+very positive. This is the worst
+experience ever. This is -1, so very
+negative. The movie was OK, nothing
+special, 42%, right?
+Which is pretty much neutral to
+negative. I usually hate waiting, but
+this was worth it. -21-0.2, which means
+very negative. However, all the other
+packages have predicted it to be
+positive.
+The food was good but the service was
+terrible. -0.15, very negative.
+Right, so you see how to implement
+sentiment analysis with Spacey and also
+how different it is from the other
+packages. Now what you can do is is
+implement this, get some hands-on
+experience on your own text data, and
+also compare the result with all the
+different libraries that we have
+implemented so far. All right, so this
+was it for this video, and I'll see you
+in the next one. Thank you.

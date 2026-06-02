@@ -1,0 +1,109 @@
+Let us start with vertical scaling, or
+scaling up. In vertical scaling, we
+take our existing service and simply
+run it on bigger machines.
+More vertical CPUs, more memory, maybe
+we add a GPU where there was none
+before.
+The big advantage is simplicity. We
+often do not need to change application
+code. The architecture stays mostly the
+same, and it is a very natural first
+step for a small team or a new product.
+Of course, there are downsides, and we
+will talk about those next.
+Here are a quick summary of the
+tradeoffs for vertical scaling.
+On the pro side, it is very easy to
+implement, you only manage one of or
+the few instances.
+And it is perfectly fine for prototypes
+and low to medium traffic services.
+On the corn side,
+There is always an upper limit to how
+big a single machine can be. That big
+machine becomes a single point of
+failure. If it dies, your service is
+gone, unless you add more complexity.
+And very large instances are often more
+expensive per
+unit of CPU or more memory than a
+smaller one. At some point, scaling up
+further becomes either impossible or
+not cost effective. That is where
+horizontal scaling comes in. Now let us
+look at horizontal scaling or scaling
+out. In horizontal scaling, we run
+multiple replicas of the same model
+service, put a load balancer in front
+of distributed incoming request among
+them. This increase the total
+throughput we can handle. And keep
+latency low even when the many requests
+are arriving at once. Horizontal
+scaling also improves availability. If
+one replica crashes or
+is being restarted. The other can still
+serve the traffic. This pattern is the
+backbone of most production ML service
+at a scale.
+Horizontal scaling comes with its own
+set of challenges.
+On the plus side, you can achieve high
+availability by running multiple
+replicas.
+And you can scale gradually. Start with
+2 replicas, then 3, then 10, as traffic
+grows. But there are trade-offs. State
+management becomes more complex. Any in
+memory cache or session estate on a
+single instance might need to move to
+an external cache or database that all
+replica can share. Coordination is
+needed for rolling deployments, health
+checks, and making sure different
+versions of the service do not conflict.
+And you need
+Good cost planning, if you just keep
+adding replicas without limit, the
+cloud bill's going to grow quickly.
+This is where auto schooling and good
+monitoring helps a lot.
+To manage horizontal scaling more
+intelligently, we often use auto
+scaling. Auto scaling means. The system
+automatically adjusts the number of
+replicas based on observed metrics.
+Common trigger includes CPU usage, for
+example, when average CPU goes above
+70%. QPS query per second, which is
+like if it improves, we add new
+instance. Or latency metrics, like the
+95th percentile, are often called as P
+95.
+We configure a minimum number of
+replicas. To always keep running a
+maximum number of replicas to avoid
+runaway cost. And threshold for when to
+scale out and when to scale in. Auto
+scaling is how we match capacity to
+load dynamically. Auto scaling is
+powerful, but it must be configured
+carefully. If you react too
+aggressively to shiny spikes or tiny
+spikes, you can get flapping. The
+system rapidly scales out and in.
+Instances are constantly starting and
+stopping. Cost and stability both
+suffer. Common safeguard includes.
+Using a cooldown period, for example,
+waiting a few minutes for a scale event
+before allowing other, feeding auto
+scaling with, rolling average, or
+percentile. Not just individual
+outliner points. Setting sensible
+minimum and maximum replica count. This
+is where your monitoring setup from
+Module 5 really matters. Good metrics
+and alerts helps you design sensible
+autos schooling rules.

@@ -1,0 +1,50 @@
+Welcome learners to Lesson 2 on 1 hot
+encoding. So what is one hot encoding,
+also known as OHE?
+Why not encoding is the simplest method
+to represent text numerically. OHE
+treats every unique word in your
+vocabulary as an isolated category.
+Let's look at an example to understand
+this further.
+Consider an input copies of I love NLP.
+I love AI.
+And NLP is the future. This corpus has
+3 sentences.
+What are the unique words used in this
+corpus?
+AI I NLP future is. Love.
+The collection of these unique words is
+called vocabulary. Now if I want to
+convert this into one hot encoding. It
+will look like this matrix.
+Whereas I have the sentences from my
+corpus.
+On one hand,
+And the vocabulary on the other. So
+let's look at the first sentence. I
+love NLP. The word AI appears how many
+times in this sentence? 0.
+I appears once, NLP appears once,
+future 0 is 0, and love appears once.
+So I love NLP.
+Similarly, I love AI.
+AI appears once. I appears once.
+Love appears once.
+And the rest of the words from
+vocabulary do not appear in this
+sentence.
+Let's look at also the last sentence.
+NLP is future. AI gets zero because it
+doesn't appear in this sentence,
+similarly with I.
+NLP, future and is appear once, so one
+each.
+Love does not appear in this sentence,
+so it will be marked as 0.
+So this is how we converted this corpus
+of three sentences.
+Into a numerical word embedding, called
+one hot encoding.
+I hope you enjoyed this. I'll see you
+in the next video. Thanks.

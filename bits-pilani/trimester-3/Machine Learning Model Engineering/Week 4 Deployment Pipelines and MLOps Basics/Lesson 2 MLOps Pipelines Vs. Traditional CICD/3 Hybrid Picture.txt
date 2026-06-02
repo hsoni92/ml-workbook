@@ -1,0 +1,72 @@
+So in practise,
+You end up with a hybrid picture.
+On one side You have code CICD.
+Sources code goes through build and
+test stages.
+Produces containers and infrastructures
+that get deployed.
+On the other side, you have an ML
+pipeline. Data flow into training and
+evaluation steps, produces candidate
+models and metrics, register them in a
+model registry and or same artefact
+stored. At deployment time, You combine
+the infrastructure and code from the
+CICD pipeline.
+With the chosen model first from the
+machine learning pipeline. MLOps is
+about orchestrating those two flow so
+that code, data and model. All move
+forward in controlled, automated way.
+To make this concrete Imagine what
+happens when something changes. If a
+developer changed code. The normal code
+CI pipeline runs, tests, build image,
+maybe a fast smoke training step on
+sample data to catch obvious breakages.
+If there is a new data snapshot or
+scheduled retrain, the ML pipeline runs
+data quality checks, full training
+evaluations, comparison against current
+baseline. If the new model beats the
+baseline and passes checks, it's
+registered as a candidate for
+deployment.
+A good MLO setup only deploys when both
+code changes and model changes have
+passed their respective checks. That's
+why you don't roll out broken code, and
+you don't roll out worse model just
+because the training job finished.
+Let's wrap up. First, traditional CICD
+is still essential. You absolutely need
+it for your code, test, run, and
+infrastructure. But by itself, it's not
+enough for machine learning system.
+Second, Machine learning pipeline adds
+several uh elements.
+Data and model artefact that need to be
+versions.
+Tracked and linked data quality check
+and model validation steps that gate
+whether a model is ready for promotion.
+Third, The right mental model is hybrid.
+You have a code CICD pipeline for
+software, and an IML pipeline for data
+and model.
+And MLlopes ties them together so your
+system ships the right code when the
+right model trained on the right data.
+In the next video, topic 3. artefact
+lineage and reproducibility. We will go
+deeper into how we track all these
+artefact.
+How we answer questions like which data
+and code produced this model?
+And how look how the tools like ML flow
+and model registries help you build
+that lineage.
+That sets up for the lab, where you'll
+see a real rapport with ML flow and CI
+that implements these ideas in pictures.
+Thank you.
