@@ -1,0 +1,2708 @@
+[
+  {
+    "source": "Big Data Platforms & Analytics/Course Introduction and Faculty Introduction.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-1/1-course-introduction-and-faculty-introduction-transcript.txt",
+    "week": 1,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 1 Big Data Constraints and Scaling/Lesson 1 Module Introduction/Module Introduction.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-1/2-module-introduction-transcript.txt",
+    "week": 1,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 1 Big Data Constraints and Scaling/Lesson 2 The Three Vs of Big Data/1 Defining Volume, Velocity and Variety.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-1/3-defining-volume-velocity-and-variety-transcript.txt",
+    "week": 1,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 1 Big Data Constraints and Scaling/Lesson 2 The Three Vs of Big Data/2 Impact of the 3 Vs on System Architecture.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-1/4-impact-of-the-3-vs-on-system-architecture-transcript.txt",
+    "week": 1,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 1 Big Data Constraints and Scaling/Lesson 3 Limits of Single-Node Systems/1 Hardware Constraints CPU, RAM and IO.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-1/5-hardware-constraints-cpu-ram-and-io-transcript.txt",
+    "week": 1,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 1 Big Data Constraints and Scaling/Lesson 3 Limits of Single-Node Systems/2 Why Bigger Boxes Eventually Fail.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-1/6-why-bigger-boxes-eventually-fail-transcript.txt",
+    "week": 1,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 1 Big Data Constraints and Scaling/Lesson 4 Vertical vs. Horizontal Scaling/1 Deep Dive Vertical Scaling (Scale-up).txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-1/7-deep-dive-vertical-scaling-scale-up-transcript.txt",
+    "week": 1,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 1 Big Data Constraints and Scaling/Lesson 4 Vertical vs. Horizontal Scaling/2 Deep Dive Horizontal Scaling (Scale-out).txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-1/8-deep-dive-horizontal-scaling-scale-out-transcript.txt",
+    "week": 1,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 1 Big Data Constraints and Scaling/Lesson 5 Commodity Hardware Clusters/1 Introduction to Cluster Computing.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-1/9-introduction-to-cluster-computing-transcript.txt",
+    "week": 1,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 1 Big Data Constraints and Scaling/Lesson 5 Commodity Hardware Clusters/2 Economics of Commodity Hardware.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-1/10-economics-of-commodity-hardware-transcript.txt",
+    "week": 1,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 1 Big Data Constraints and Scaling/Lesson 6 Summary and Assessment/1 Module Summary and Key Takeaways.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-1/11-module-summary-and-key-takeaways-transcript.txt",
+    "week": 1,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 2 Distributed Systems Challenges/Lesson 1 Introduction/Module Introduction.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-2/1-module-introduction-transcript.txt",
+    "week": 2,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 2 Distributed Systems Challenges/Lesson 2 Network Reliability & Partition Tolerance/1 The Fallacies of Distributed Computing.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-2/2-the-fallacies-of-distributed-computing-transcript.txt",
+    "week": 2,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 2 Distributed Systems Challenges/Lesson 2 Network Reliability & Partition Tolerance/2 Understanding Partitions and Network Faults.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-2/3-understanding-partitions-and-network-faults-transcript.txt",
+    "week": 2,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 2 Distributed Systems Challenges/Lesson 3 The CAP Theorem Deep Dive/1 Defining C, A and P.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-2/4-defining-c-a-and-p-transcript.txt",
+    "week": 2,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 2 Distributed Systems Challenges/Lesson 3 The CAP Theorem Deep Dive/2 Trade-offs CP vs. AP Systems.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-2/5-trade-offs-cp-vs-ap-systems-transcript.txt",
+    "week": 2,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 2 Distributed Systems Challenges/Lesson 4 Consistency Models ACID vs. BASE/1 ACID Properties in Distributed Contexts.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-2/6-acid-properties-in-distributed-contexts-transcript.txt",
+    "week": 2,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 2 Distributed Systems Challenges/Lesson 4 Consistency Models ACID vs. BASE/2 BASE Basically Available, Soft State, Eventual Consistency.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-2/7-base-basically-available-soft-state-eventual-consistency-transcript.txt",
+    "week": 2,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 2 Distributed Systems Challenges/Lesson 5 Implications for Distributed Storage/How Storage Systems Handle Conflicts.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-2/8-how-storage-systems-handle-conflicts-transcript.txt",
+    "week": 2,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 2 Distributed Systems Challenges/Lesson 6 Summary and Assessment/Module Summary.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-2/9-module-summary-transcript.txt",
+    "week": 2,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 3 The MapReduce Programming Model/Lesson 1 Introduction/Module Introduction.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-3/1-module-introduction-transcript.txt",
+    "week": 3,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 3 The MapReduce Programming Model/Lesson 2 Map and Reduce/1 The Map Operation Transforming Data.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-3/2-the-map-operation-transforming-data-transcript.txt",
+    "week": 3,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 3 The MapReduce Programming Model/Lesson 2 Map and Reduce/2 The Reduce Operation Aggregating State.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-3/3-the-reduce-operation-aggregating-state-transcript.txt",
+    "week": 3,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 3 The MapReduce Programming Model/Lesson 3 The Logical Data Flow/1 Data Flow Split and Map Phases.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-3/4-data-flow-split-and-map-phases-transcript.txt",
+    "week": 3,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 3 The MapReduce Programming Model/Lesson 3 The Logical Data Flow/2 The Magic of Shuffling and Sorting.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-3/5-the-magic-of-shuffling-and-sorting-transcript.txt",
+    "week": 3,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 3 The MapReduce Programming Model/Lesson 3 The Logical Data Flow/3 Final Aggregation The Reduce Phase.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-3/6-final-aggregation-the-reduce-phase-transcript.txt",
+    "week": 3,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 3 The MapReduce Programming Model/Lesson 4 Case Study URL Popularity/Analysing Web Logs with MapReduce.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-3/7-analysing-web-logs-with-mapreduce-transcript.txt",
+    "week": 3,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 3 The MapReduce Programming Model/Lesson 5 Distributed Processing Limits/1 How MapReduce Handles Node Failures.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-3/8-how-mapreduce-handles-node-failures-transcript.txt",
+    "week": 3,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 3 The MapReduce Programming Model/Lesson 5 Distributed Processing Limits/2 The Cost of Disk-Based Intermediate State.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-3/9-the-cost-of-disk-based-intermediate-state-transcript.txt",
+    "week": 3,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 3 The MapReduce Programming Model/Lesson 6 Summary and Assessment/Module Summary.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-3/10-module-summary-transcript.txt",
+    "week": 3,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 4 Batch Processing Architectures Hadoop vs. Spark/Lesson 1 Introduction/Module Introduction.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-4/1-module-introduction-transcript.txt",
+    "week": 4,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 4 Batch Processing Architectures Hadoop vs. Spark/Lesson 2 Hadoop Architecture HDFS & Data Flow/1 HDFS Deep Dive Blocks and Replication.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-4/2-hdfs-deep-dive-blocks-and-replication-transcript.txt",
+    "week": 4,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 4 Batch Processing Architectures Hadoop vs. Spark/Lesson 2 Hadoop Architecture HDFS & Data Flow/2 The MapReduce Data Flow on HDFS.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-4/3-the-mapreduce-data-flow-on-hdfs-transcript.txt",
+    "week": 4,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 4 Batch Processing Architectures Hadoop vs. Spark/Lesson 3 The Bottleneck Disk-Based Processing/High IO Latency and Materialisation Costs.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-4/4-high-io-latency-and-materialisation-costs-transcript.txt",
+    "week": 4,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 4 Batch Processing Architectures Hadoop vs. Spark/Lesson 4 Spark The In-Memory Revolution/1 Introduction to In-Memory Computing.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-4/5-introduction-to-in-memory-computing-transcript.txt",
+    "week": 4,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 4 Batch Processing Architectures Hadoop vs. Spark/Lesson 4 Spark The In-Memory Revolution/2 How Spark Minimises Disk RW Cycles.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-4/6-how-spark-minimises-disk-rw-cycles-transcript.txt",
+    "week": 4,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 4 Batch Processing Architectures Hadoop vs. Spark/Lesson 5 Performance Benchmarking/Hadoop vs. Spark Iterative Algorithms (K-Means).txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-4/7-hadoop-vs-spark-iterative-algorithms-k-means-transcript.txt",
+    "week": 4,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 4 Batch Processing Architectures Hadoop vs. Spark/Lesson 6 Summary and Assessment/Lesson 6 Summary and Assessment.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-4/8-lesson-6-summary-and-assessment-transcript.txt",
+    "week": 4,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 5 Spark Core I RDD Fundamentals/Lesson 1 Introduction/Module Introduction.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-5/1-module-introduction-transcript.txt",
+    "week": 5,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 5 Spark Core I RDD Fundamentals/Lesson 2 The Anatomy of an RDD/1 Introduction to RDDs.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-5/2-introduction-to-rdds-transcript.txt",
+    "week": 5,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 5 Spark Core I RDD Fundamentals/Lesson 2 The Anatomy of an RDD/2 Definition and Resilience Explained.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-5/3-definition-and-resilience-explained-transcript.txt",
+    "week": 5,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 5 Spark Core I RDD Fundamentals/Lesson 2 The Anatomy of an RDD/3 Immutability Why RDDs Never Change.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-5/4-immutability-why-rdds-never-change-transcript.txt",
+    "week": 5,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 5 Spark Core I RDD Fundamentals/Lesson 3 Distributed Data Properties/1 How Partitioning Enables Parallelism.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-5/5-how-partitioning-enables-parallelism-transcript.txt",
+    "week": 5,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 5 Spark Core I RDD Fundamentals/Lesson 3 Distributed Data Properties/2 Data Locality and the Spark Cluster.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-5/6-data-locality-and-the-spark-cluster-transcript.txt",
+    "week": 5,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 5 Spark Core I RDD Fundamentals/Lesson 4 Methods of RDD Creation/1 Parallelising Local Collections.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-5/7-parallelising-local-collections-transcript.txt",
+    "week": 5,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 5 Spark Core I RDD Fundamentals/Lesson 4 Methods of RDD Creation/2 Loading External Data (HDFS, S3, Local).txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-5/8-loading-external-data-hdfs-s3-local-transcript.txt",
+    "week": 5,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 5 Spark Core I RDD Fundamentals/Lesson 6 Summary and Assessment/Module Summary.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-5/9-module-summary-transcript.txt",
+    "week": 5,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 6 Spark Core II Execution Model/Lesson 1 Introduction/1 Module Introduction and The Spark Execution Engine An Overview.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-6/1-module-introduction-and-the-spark-execution-engine-an-overview-transcript.txt",
+    "week": 6,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 6 Spark Core II Execution Model/Lesson 2 Lazy Evaluation and Mechanics/1 Understanding Lazy Evaluation Why Wait.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-6/2-understanding-lazy-evaluation-why-wait-transcript.txt",
+    "week": 6,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 6 Spark Core II Execution Model/Lesson 2 Lazy Evaluation and Mechanics/2 Benefits Query Optimisation and Pipelining.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-6/3-benefits-query-optimisation-and-pipelining-transcript.txt",
+    "week": 6,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 6 Spark Core II Execution Model/Lesson 3 Transformations vs. Actions/1 Transformations Narrow vs. Wide Dependencies.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-6/4-transformations-narrow-vs-wide-dependencies-transcript.txt",
+    "week": 6,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 6 Spark Core II Execution Model/Lesson 3 Transformations vs. Actions/2 Actions Triggering the Execution.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-6/5-actions-triggering-the-execution-transcript.txt",
+    "week": 6,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 6 Spark Core II Execution Model/Lesson 4 The DAG and Stage Decomposition/1 Building the Directed Acyclic Graph (DAG).txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-6/6-building-the-directed-acyclic-graph-dag-transcript.txt",
+    "week": 6,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 6 Spark Core II Execution Model/Lesson 4 The DAG and Stage Decomposition/2 Breaking the DAG into Stages and Tasks.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-6/7-breaking-the-dag-into-stages-and-tasks-transcript.txt",
+    "week": 6,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 6 Spark Core II Execution Model/Lesson 5 Anatomy of a Spark Job Walkthrough/Coding Walkthrough Trace a Job from Code to Tasks.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-6/8-coding-walkthrough-trace-a-job-from-code-to-tasks-transcript.txt",
+    "week": 6,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 6 Spark Core II Execution Model/Lesson 6 Summary and Assessment/Module Summary.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-6/9-module-summary-transcript.txt",
+    "week": 6,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 7 Resilience I Lineage Mechanisms/Lesson 1 Introduction/Why Resilience Matters in Big Data.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-7/1-why-resilience-matters-in-big-data-transcript.txt",
+    "week": 7,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 7 Resilience I Lineage Mechanisms/Lesson 2 Fault Tolerance in Distributed Memory/1 Challenges of Distributed Memory Recovery.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-7/2-challenges-of-distributed-memory-recovery-transcript.txt",
+    "week": 7,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 7 Resilience I Lineage Mechanisms/Lesson 2 Fault Tolerance in Distributed Memory/2 Recomputing vs. Replicating Data.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-7/3-recomputing-vs-replicating-data-transcript.txt",
+    "week": 7,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 7 Resilience I Lineage Mechanisms/Lesson 3 RDD Lineage Graphs/1 Anatomy of a Lineage Graph.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-7/4-anatomy-of-a-lineage-graph-transcript.txt",
+    "week": 7,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 7 Resilience I Lineage Mechanisms/Lesson 3 RDD Lineage Graphs/2 Walkthrough an Example of RDD Lineage Graph.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-7/5-walkthrough-an-example-of-rdd-lineage-graph-transcript.txt",
+    "week": 7,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 7 Resilience I Lineage Mechanisms/Lesson 4 Recovery Narrow vs. Wide Dependencies/1 Recovery in Narrow Dependencies One-to-One.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-7/6-recovery-in-narrow-dependencies-one-to-one-transcript.txt",
+    "week": 7,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 7 Resilience I Lineage Mechanisms/Lesson 4 Recovery Narrow vs. Wide Dependencies/2 The Complexity of Wide Dependency Failures.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-7/7-the-complexity-of-wide-dependency-failures-transcript.txt",
+    "week": 7,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 7 Resilience I Lineage Mechanisms/Lesson 5 Simulating Node Failures/Demo Triggering Recomputation in PySpark.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-7/8-demo-triggering-recomputation-in-pyspark-transcript.txt",
+    "week": 7,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 7 Resilience I Lineage Mechanisms/Lesson 6 Summary and Assessment/Module Summary.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-7/9-module-summary-transcript.txt",
+    "week": 7,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 8 Resilience II Checkpointing/Lesson 1 Introduction/When Lineage Becomes a Liability.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-8/1-when-lineage-becomes-a-liability-transcript.txt",
+    "week": 8,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 8 Resilience II Checkpointing/Lesson 2 The Problem of Long Lineage Chains/1 Stack Overflow and Performance Degradation.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-8/2-stack-overflow-and-performance-degradation-transcript.txt",
+    "week": 8,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 8 Resilience II Checkpointing/Lesson 2 The Problem of Long Lineage Chains/2 Breaking the Family Tree for Stability.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-8/3-breaking-the-family-tree-for-stability-transcript.txt",
+    "week": 8,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 8 Resilience II Checkpointing/Lesson 3 Checkpointing vs. Caching/The Key Differences Caching vs. Checkpointing.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-8/4-the-key-differences-caching-vs-checkpointing-transcript.txt",
+    "week": 8,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 8 Resilience II Checkpointing/Lesson 4 Distributed Checkpointing Strategies/1 Writing to Reliable Storage HDFS and S3.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-8/5-writing-to-reliable-storage-hdfs-and-s3-transcript.txt",
+    "week": 8,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 8 Resilience II Checkpointing/Lesson 4 Distributed Checkpointing Strategies/2 Internal Mechanics Truncating the DAG.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-8/6-internal-mechanics-truncating-the-dag-transcript.txt",
+    "week": 8,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 8 Resilience II Checkpointing/Lesson 5 Evaluating Trade-offs/Recomputation Cost vs. Storage IO Latency.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-8/7-recomputation-cost-vs-storage-io-latency-transcript.txt",
+    "week": 8,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 8 Resilience II Checkpointing/Lesson 6 Summary and Assessment/Module Summary.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-8/8-module-summary-transcript.txt",
+    "week": 8,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 9 Data Partitioning I Strategies and Structures/Lesson 1 Introduction/Why Partitioning is the Secret to Scale.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-9/1-why-partitioning-is-the-secret-to-scale-transcript.txt",
+    "week": 9,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 9 Data Partitioning I Strategies and Structures/Lesson 2 The Role of Partitioning/1 Partitioning vs. Replication.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-9/2-partitioning-vs-replication-transcript.txt",
+    "week": 9,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 9 Data Partitioning I Strategies and Structures/Lesson 2 The Role of Partitioning/2 How Partitions Enable Parallel Execution.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-9/3-how-partitions-enable-parallel-execution-transcript.txt",
+    "week": 9,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 9 Data Partitioning I Strategies and Structures/Lesson 3 Hash Partitioning/1 Mechanics The Modulo Operator and Uniformity.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-9/4-mechanics-the-modulo-operator-and-uniformity-transcript.txt",
+    "week": 9,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 9 Data Partitioning I Strategies and Structures/Lesson 3 Hash Partitioning/2 Use Cases When to Choose Hash Partitioning.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-9/5-use-cases-when-to-choose-hash-partitioning-transcript.txt",
+    "week": 9,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 9 Data Partitioning I Strategies and Structures/Lesson 4 Range Partitioning/1 Mechanics Key Ranges and Sorted Data.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-9/6-mechanics-key-ranges-and-sorted-data-transcript.txt",
+    "week": 9,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 9 Data Partitioning I Strategies and Structures/Lesson 4 Range Partitioning/2 Handling Dynamic Ranges and Boundary Issues.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-9/7-handling-dynamic-ranges-and-boundary-issues-transcript.txt",
+    "week": 9,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 9 Data Partitioning I Strategies and Structures/Lesson 5 Custom Partitioners/1 When Default Partitioners Fail.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-9/8-when-default-partitioners-fail-transcript.txt",
+    "week": 9,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 9 Data Partitioning I Strategies and Structures/Lesson 5 Custom Partitioners/2 Building Custom Logic.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-9/9-building-custom-logic-transcript.txt",
+    "week": 9,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 9 Data Partitioning I Strategies and Structures/Lesson 6 Summary and Assessment/Module Summary.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-9/10-module-summary-transcript.txt",
+    "week": 9,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 10 Data Partitioning II Optimisation and Skew/Lesson 1 Introduction/Module Introduction.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-10/1-module-introduction-transcript.txt",
+    "week": 10,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 10 Data Partitioning II Optimisation and Skew/Lesson 2 Identifying Data Skew and Hotspots/1 Why Uniform Distribution Matters.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-10/2-why-uniform-distribution-matters-transcript.txt",
+    "week": 10,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 10 Data Partitioning II Optimisation and Skew/Lesson 2 Identifying Data Skew and Hotspots/2 Identifying Data Skew and Hotspots.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-10/3-identifying-data-skew-and-hotspots-transcript.txt",
+    "week": 10,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 10 Data Partitioning II Optimisation and Skew/Lesson 3 Mitigation Strategy Salting/Mitigation Strategy Salting.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-10/4-mitigation-strategy-salting-transcript.txt",
+    "week": 10,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 10 Data Partitioning II Optimisation and Skew/Lesson 4 Optimisation Joins and Broadcasting/1 Optimisation The Shuffle Problem in Large Joins.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-10/5-optimisation-the-shuffle-problem-in-large-joins-transcript.txt",
+    "week": 10,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 10 Data Partitioning II Optimisation and Skew/Lesson 4 Optimisation Joins and Broadcasting/2 Broadcast Joins.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-10/6-broadcast-joins-transcript.txt",
+    "week": 10,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 10 Data Partitioning II Optimisation and Skew/Lesson 5 Data Co-location and Shuffle Performance/1 Designing for Data Co-location.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-10/7-designing-for-data-co-location-transcript.txt",
+    "week": 10,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 10 Data Partitioning II Optimisation and Skew/Lesson 5 Data Co-location and Shuffle Performance/2 Analysing Shuffle Performance.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-10/8-analysing-shuffle-performance-transcript.txt",
+    "week": 10,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 10 Data Partitioning II Optimisation and Skew/Lesson 6 Summary and Assessment/Module Summary.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-10/9-module-summary-transcript.txt",
+    "week": 10,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 11 Distributed ML I Concepts and Algorithms/Lesson 1 Introduction/Module Introduction.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-11/1-module-introduction-transcript.txt",
+    "week": 11,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 11 Distributed ML I Concepts and Algorithms/Lesson 2 Scaling Machine Learning Challenges/1 Communication Overhead and Data Movement.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-11/2-communication-overhead-and-data-movement-transcript.txt",
+    "week": 11,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 11 Distributed ML I Concepts and Algorithms/Lesson 2 Scaling Machine Learning Challenges/2 Synchronisation and Convergence Issues.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-11/3-synchronisation-and-convergence-issues-transcript.txt",
+    "week": 11,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 11 Distributed ML I Concepts and Algorithms/Lesson 3 Data vs. Model Parallelism/1 Data Parallelism Sharding the Dataset.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-11/4-data-parallelism-sharding-the-dataset-transcript.txt",
+    "week": 11,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 11 Distributed ML I Concepts and Algorithms/Lesson 3 Data vs. Model Parallelism/2 Model Parallelism Splitting the Network.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-11/5-model-parallelism-splitting-the-network-transcript.txt",
+    "week": 11,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 11 Distributed ML I Concepts and Algorithms/Lesson 4 Distributed SGD Mechanics/1 Review of Stochastic Gradient Descent (SGD).txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-11/6-review-of-stochastic-gradient-descent-sgd-transcript.txt",
+    "week": 11,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 11 Distributed ML I Concepts and Algorithms/Lesson 4 Distributed SGD Mechanics/2 Distributing the Gradient Calculation.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-11/7-distributing-the-gradient-calculation-transcript.txt",
+    "week": 11,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 11 Distributed ML I Concepts and Algorithms/Lesson 5 Gradient Aggregation Strategies/Synchronous vs. Asynchronous Aggregation.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-11/8-synchronous-vs-asynchronous-aggregation-transcript.txt",
+    "week": 11,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 11 Distributed ML I Concepts and Algorithms/Lesson 6 Summary and Assessment/Module Summary.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-11/9-module-summary-transcript.txt",
+    "week": 11,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 12 Distributed ML II Architectures (TensorFlow)/Lesson 1 Introduction/Architecting for Distributed Intelligence.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-12/1-architecting-for-distributed-intelligence-transcript.txt",
+    "week": 12,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 12 Distributed ML II Architectures (TensorFlow)/Lesson 2 Parameter Servers vs. All-Reduce/1 Centralised Learning The Parameter Server Model.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-12/2-centralised-learning-the-parameter-server-model-transcript.txt",
+    "week": 12,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 12 Distributed ML II Architectures (TensorFlow)/Lesson 2 Parameter Servers vs. All-Reduce/2 Decentralised Learning The Ring-AllReduce Strategy.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-12/3-decentralised-learning-the-ring-allreduce-strategy-transcript.txt",
+    "week": 12,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 12 Distributed ML II Architectures (TensorFlow)/Lesson 3 Sync vs. Async Training/1 Synchronous Training Consistency and the Straggler Problem.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-12/4-synchronous-training-consistency-and-the-straggler-problem-transcript.txt",
+    "week": 12,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 12 Distributed ML II Architectures (TensorFlow)/Lesson 3 Sync vs. Async Training/2 Asynchronous Training Speed vs. Convergence Quality.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-12/5-asynchronous-training-speed-vs-convergence-quality-transcript.txt",
+    "week": 12,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 12 Distributed ML II Architectures (TensorFlow)/Lesson 4 TensorFlow Distributed Strategies/1 The MirroredStrategy Single-node Multi-GPU.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-12/6-the-mirroredstrategy-single-node-multi-gpu-transcript.txt",
+    "week": 12,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 12 Distributed ML II Architectures (TensorFlow)/Lesson 4 TensorFlow Distributed Strategies/2 MultiWorkerMirroredStrategy for Multi-node Clusters.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-12/7-multiworkermirroredstrategy-for-multi-node-clusters-transcript.txt",
+    "week": 12,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 12 Distributed ML II Architectures (TensorFlow)/Lesson 5 Graphs and Device Placement/Understanding Distributed Computational Graphs.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-12/8-understanding-distributed-computational-graphs-transcript.txt",
+    "week": 12,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 12 Distributed ML II Architectures (TensorFlow)/Lesson 6 Summary and Assessment/Module Summary.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-12/9-module-summary-transcript.txt",
+    "week": 12,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 13 Stream Processing Systems/Lesson 1 Introduction/The Shift to Real-Time Intelligence.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-13/1-the-shift-to-real-time-intelligence-transcript.txt",
+    "week": 13,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 13 Stream Processing Systems/Lesson 2 Batch vs. Stream Processing/1 Processing for Velocity What is a Stream.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-13/2-processing-for-velocity-what-is-a-stream-transcript.txt",
+    "week": 13,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 13 Stream Processing Systems/Lesson 2 Batch vs. Stream Processing/2 Technical Differences Windowing vs. Global State.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-13/3-technical-differences-windowing-vs-global-state-transcript.txt",
+    "week": 13,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 13 Stream Processing Systems/Lesson 3 Industry Use Cases/1 Financial Services Real-Time Fraud Detection.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-13/4-financial-services-real-time-fraud-detection-transcript.txt",
+    "week": 13,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 13 Stream Processing Systems/Lesson 3 Industry Use Cases/2 E-commerce Dynamic Pricing and Personalization.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-13/5-e-commerce-dynamic-pricing-and-personalization-transcript.txt",
+    "week": 13,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 13 Stream Processing Systems/Lesson 4 Streaming Architectures Kafka and Storm/1 Kafka as the Streaming Backbone.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-13/6-kafka-as-the-streaming-backbone-transcript.txt",
+    "week": 13,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 13 Stream Processing Systems/Lesson 4 Streaming Architectures Kafka and Storm/2 Real-time Topology with Apache Storm.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-13/7-real-time-topology-with-apache-storm-transcript.txt",
+    "week": 13,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Big Data Platforms & Analytics/Week 13 Stream Processing Systems/Lesson 5 Summary and Assessment/Module Summary.txt",
+    "dest": "big-data-platforms-and-analytics/transcriptions/week-13/8-module-summary-transcript.txt",
+    "week": 13,
+    "course": "big-data-platforms-and-analytics"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Overall Module Introduction.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-1/1-overall-module-introduction-transcript.txt",
+    "week": 1,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 1 Intro to ML Model Engineering and Lifecycle/Lesson 1 What is ML Model Engineering/1 Module Introduction.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-1/2-module-introduction-transcript.txt",
+    "week": 1,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 1 Intro to ML Model Engineering and Lifecycle/Lesson 1 What is ML Model Engineering/2 Hook Scenario.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-1/3-hook-scenario-transcript.txt",
+    "week": 1,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 1 Intro to ML Model Engineering and Lifecycle/Lesson 1 What is ML Model Engineering/3 Definition of Inference and Model Engineering.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-1/4-definition-of-inference-and-model-engineering-transcript.txt",
+    "week": 1,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 1 Intro to ML Model Engineering and Lifecycle/Lesson 1 What is ML Model Engineering/4 Responsibilities.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-1/5-responsibilities-transcript.txt",
+    "week": 1,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 1 Intro to ML Model Engineering and Lifecycle/Lesson 2 The ML Lifecycle End-to-End/1 Lifecycle Stages.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-1/6-lifecycle-stages-transcript.txt",
+    "week": 1,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 1 Intro to ML Model Engineering and Lifecycle/Lesson 2 The ML Lifecycle End-to-End/2 Deploy-Monitor-Retrain.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-1/7-deploy-monitor-retrain-transcript.txt",
+    "week": 1,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 1 Intro to ML Model Engineering and Lifecycle/Lesson 2 The ML Lifecycle End-to-End/3 Where This Course Fits.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-1/8-where-this-course-fits-transcript.txt",
+    "week": 1,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 1 Intro to ML Model Engineering and Lifecycle/Lesson 3 Real-world Constraints and Failure Modes/1 Latency_Throughput_Cost.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-1/9-latency-throughput-cost-transcript.txt",
+    "week": 1,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 1 Intro to ML Model Engineering and Lifecycle/Lesson 3 Real-world Constraints and Failure Modes/2 Data_Feature Skew.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-1/10-data-feature-skew-transcript.txt",
+    "week": 1,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 1 Intro to ML Model Engineering and Lifecycle/Lesson 3 Real-world Constraints and Failure Modes/3 Stale Models.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-1/11-stale-models-transcript.txt",
+    "week": 1,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 1 Intro to ML Model Engineering and Lifecycle/Lesson 4 What is MLOps Role of the Model Engineer/1 MLOps vs DevOps.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-1/12-mlops-vs-devops-transcript.txt",
+    "week": 1,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 1 Intro to ML Model Engineering and Lifecycle/Lesson 4 What is MLOps Role of the Model Engineer/2 Versioning and Pipelines.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-1/13-versioning-and-pipelines-transcript.txt",
+    "week": 1,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 1 Intro to ML Model Engineering and Lifecycle/Lesson 4 What is MLOps Role of the Model Engineer/3 Role of Model Engineer.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-1/14-role-of-model-engineer-transcript.txt",
+    "week": 1,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 1 Intro to ML Model Engineering and Lifecycle/Lesson 5 Labs/1 Tour of the Ready ML Service.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-1/15-tour-of-the-ready-ml-service-transcript.txt",
+    "week": 1,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 1 Intro to ML Model Engineering and Lifecycle/Lesson 5 Labs/2 Calling the _predict Endpoint.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-1/16-calling-the-predict-endpoint-transcript.txt",
+    "week": 1,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 1 Intro to ML Model Engineering and Lifecycle/Lesson 5 Labs/3 Connecting the Lab to the Lifecycle and MLOps.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-1/17-connecting-the-lab-to-the-lifecycle-and-mlops-transcript.txt",
+    "week": 1,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 1 Intro to ML Model Engineering and Lifecycle/Lesson 6 Summary and Assessment/Module Summary.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-1/18-module-summary-transcript.txt",
+    "week": 1,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 2 Model Inferencing Batch Vs. Online Vs. Streaming/Lesson 1 What is Model Inference Key Concepts and Metrics/1 Module Introduction.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-2/1-module-introduction-transcript.txt",
+    "week": 2,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 2 Model Inferencing Batch Vs. Online Vs. Streaming/Lesson 1 What is Model Inference Key Concepts and Metrics/2 Definition of Inference.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-2/2-definition-of-inference-transcript.txt",
+    "week": 2,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 2 Model Inferencing Batch Vs. Online Vs. Streaming/Lesson 1 What is Model Inference Key Concepts and Metrics/3 Latency_Throughput_Cost.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-2/3-latency-throughput-cost-transcript.txt",
+    "week": 2,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 2 Model Inferencing Batch Vs. Online Vs. Streaming/Lesson 1 What is Model Inference Key Concepts and Metrics/4 Setup for Patterns.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-2/4-setup-for-patterns-transcript.txt",
+    "week": 2,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 2 Model Inferencing Batch Vs. Online Vs. Streaming/Lesson 2 Batch Inference When You Do Not Need Instant Answers/1 Batch Definition.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-2/5-batch-definition-transcript.txt",
+    "week": 2,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 2 Model Inferencing Batch Vs. Online Vs. Streaming/Lesson 2 Batch Inference When You Do Not Need Instant Answers/2 Offline Use Cases.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-2/6-offline-use-cases-transcript.txt",
+    "week": 2,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 2 Model Inferencing Batch Vs. Online Vs. Streaming/Lesson 2 Batch Inference When You Do Not Need Instant Answers/3 Pros and Cons.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-2/7-pros-and-cons-transcript.txt",
+    "week": 2,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 2 Model Inferencing Batch Vs. Online Vs. Streaming/Lesson 3 Online Inference Real-Time Predictions/1 Request-Response Pattern.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-2/8-request-response-pattern-transcript.txt",
+    "week": 2,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 2 Model Inferencing Batch Vs. Online Vs. Streaming/Lesson 3 Online Inference Real-Time Predictions/2 Interactive Use Cases.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-2/9-interactive-use-cases-transcript.txt",
+    "week": 2,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 2 Model Inferencing Batch Vs. Online Vs. Streaming/Lesson 3 Online Inference Real-Time Predictions/3 Latency and Reliability.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-2/10-latency-and-reliability-transcript.txt",
+    "week": 2,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 2 Model Inferencing Batch Vs. Online Vs. Streaming/Lesson 4 Streaming Inference and Choosing the Right Pattern/1 Inference Patterns Batch vs Online vs Streaming.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-2/11-inference-patterns-batch-vs-online-vs-streaming-transcript.txt",
+    "week": 2,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 2 Model Inferencing Batch Vs. Online Vs. Streaming/Lesson 4 Streaming Inference and Choosing the Right Pattern/2 Metrics That Matter for Streaming Inference.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-2/12-metrics-that-matter-for-streaming-inference-transcript.txt",
+    "week": 2,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 2 Model Inferencing Batch Vs. Online Vs. Streaming/Lesson 4 Streaming Inference and Choosing the Right Pattern/3 Choosing the Right Inference Pattern.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-2/13-choosing-the-right-inference-pattern-transcript.txt",
+    "week": 2,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 2 Model Inferencing Batch Vs. Online Vs. Streaming/Lesson 4 Streaming Inference and Choosing the Right Pattern/en-GB (3).txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-2/14-now-let-s-connect-each-pattern-back-to-transcript.txt",
+    "week": 2,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 2 Model Inferencing Batch Vs. Online Vs. Streaming/Lesson 5 Labs/1 CSV_JSON Inputs; Batch Scoring Script; Rows_Sec and Total Time.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-2/15-csv-json-inputs-batch-scoring-script-rows-sec-and-total-time-transcript.txt",
+    "week": 2,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 2 Model Inferencing Batch Vs. Online Vs. Streaming/Lesson 5 Labs/2 Single-request Client; Concurrent Users; Per-request Latency Stats.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-2/16-single-request-client-concurrent-users-per-request-latency-stats-transcript.txt",
+    "week": 2,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 2 Model Inferencing Batch Vs. Online Vs. Streaming/Lesson 5 Labs/3 Summarize Metrics; Interpret Trade-offs; Choose Pattern.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-2/17-summarize-metrics-interpret-trade-offs-choose-pattern-transcript.txt",
+    "week": 2,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 2 Model Inferencing Batch Vs. Online Vs. Streaming/Lesson 6 Summary and Assessment/Module Summary.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-2/18-module-summary-transcript.txt",
+    "week": 2,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 3 Model Serving Patterns and Containerization/Lesson 1 What Is Model Serving/1 Module Introduction.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-3/1-module-introduction-transcript.txt",
+    "week": 3,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 3 Model Serving Patterns and Containerization/Lesson 1 What Is Model Serving/2 Definition.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-3/2-definition-transcript.txt",
+    "week": 3,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 3 Model Serving Patterns and Containerization/Lesson 1 What Is Model Serving/3 Serving Responsibilities.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-3/3-serving-responsibilities-transcript.txt",
+    "week": 3,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 3 Model Serving Patterns and Containerization/Lesson 2 Serving Architectures Monoliths, Microservices and Serverless/1 Monolith.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-3/4-monolith-transcript.txt",
+    "week": 3,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 3 Model Serving Patterns and Containerization/Lesson 2 Serving Architectures Monoliths, Microservices and Serverless/2 Microservice.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-3/5-microservice-transcript.txt",
+    "week": 3,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 3 Model Serving Patterns and Containerization/Lesson 2 Serving Architectures Monoliths, Microservices and Serverless/3 Serverless.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-3/6-serverless-transcript.txt",
+    "week": 3,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 3 Model Serving Patterns and Containerization/Lesson 2 Serving Architectures Monoliths, Microservices and Serverless/4 Design Decisions in Model Serving Systems.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-3/7-design-decisions-in-model-serving-systems-transcript.txt",
+    "week": 3,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 3 Model Serving Patterns and Containerization/Lesson 3 APIs for ML REST Vs. gRPC, Sync Vs. Async/1 REST Basics.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-3/8-rest-basics-transcript.txt",
+    "week": 3,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 3 Model Serving Patterns and Containerization/Lesson 3 APIs for ML REST Vs. gRPC, Sync Vs. Async/2 gRPC.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-3/9-grpc-transcript.txt",
+    "week": 3,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 3 Model Serving Patterns and Containerization/Lesson 3 APIs for ML REST Vs. gRPC, Sync Vs. Async/3 Sync vs Async Calls.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-3/10-sync-vs-async-calls-transcript.txt",
+    "week": 3,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 3 Model Serving Patterns and Containerization/Lesson 4 Deployments, Rollouts and Autoscaling Basics/1 Single-Instance Deployment.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-3/11-single-instance-deployment-transcript.txt",
+    "week": 3,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 3 Model Serving Patterns and Containerization/Lesson 4 Deployments, Rollouts and Autoscaling Basics/2 BlueGreen and Canary.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-3/12-bluegreen-and-canary-transcript.txt",
+    "week": 3,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 3 Model Serving Patterns and Containerization/Lesson 4 Deployments, Rollouts and Autoscaling Basics/3 Autoscaling Triggers.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-3/13-autoscaling-triggers-transcript.txt",
+    "week": 3,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 3 Model Serving Patterns and Containerization/Lesson 5 Labs/1 Deep Dive into the FastAPI Model Service.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-3/14-deep-dive-into-the-fastapi-model-service-transcript.txt",
+    "week": 3,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 3 Model Serving Patterns and Containerization/Lesson 5 Labs/2 Containerizing the ML Service with Docker.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-3/15-containerizing-the-ml-service-with-docker-transcript.txt",
+    "week": 3,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 3 Model Serving Patterns and Containerization/Lesson 5 Labs/3 Testing the Containerized Service Locally.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-3/16-testing-the-containerized-service-locally-transcript.txt",
+    "week": 3,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 3 Model Serving Patterns and Containerization/Lesson 6 Summary and Assessment/Module Summary.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-3/17-module-summary-transcript.txt",
+    "week": 3,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 4 Deployment Pipelines and MLOps Basics/Lesson 1 From Notebook to Pipeline/1 Module Introduction.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-4/1-module-introduction-transcript.txt",
+    "week": 4,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 4 Deployment Pipelines and MLOps Basics/Lesson 1 From Notebook to Pipeline/2 Manual Workflow Pain; Pipeline Definition; Benefits.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-4/2-manual-workflow-pain-pipeline-definition-benefits-transcript.txt",
+    "week": 4,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 4 Deployment Pipelines and MLOps Basics/Lesson 2 MLOps Pipelines Vs. Traditional CICD/1 Classic CI_CD.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-4/3-classic-ci-cd-transcript.txt",
+    "week": 4,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 4 Deployment Pipelines and MLOps Basics/Lesson 2 MLOps Pipelines Vs. Traditional CICD/2 ML-specific Differences.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-4/4-ml-specific-differences-transcript.txt",
+    "week": 4,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 4 Deployment Pipelines and MLOps Basics/Lesson 2 MLOps Pipelines Vs. Traditional CICD/3 Hybrid Picture.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-4/5-hybrid-picture-transcript.txt",
+    "week": 4,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 4 Deployment Pipelines and MLOps Basics/Lesson 3 Artifacts, Lineage and Reproducibility/1 ML Artifacts.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-4/6-ml-artifacts-transcript.txt",
+    "week": 4,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 4 Deployment Pipelines and MLOps Basics/Lesson 3 Artifacts, Lineage and Reproducibility/2 Lineage Questions.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-4/7-lineage-questions-transcript.txt",
+    "week": 4,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 4 Deployment Pipelines and MLOps Basics/Lesson 3 Artifacts, Lineage and Reproducibility/3 Reproducible Runs.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-4/8-reproducible-runs-transcript.txt",
+    "week": 4,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 4 Deployment Pipelines and MLOps Basics/Lesson 4 CICD for ML What Gets Tested and Deployed/1 Introduction.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-4/9-introduction-transcript.txt",
+    "week": 4,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 4 Deployment Pipelines and MLOps Basics/Lesson 4 CICD for ML What Gets Tested and Deployed/2 CI for ML.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-4/10-ci-for-ml-transcript.txt",
+    "week": 4,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 4 Deployment Pipelines and MLOps Basics/Lesson 4 CICD for ML What Gets Tested and Deployed/3 CD for ML.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-4/11-cd-for-ml-transcript.txt",
+    "week": 4,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 4 Deployment Pipelines and MLOps Basics/Lesson 4 CICD for ML What Gets Tested and Deployed/4 Summary.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-4/12-summary-transcript.txt",
+    "week": 4,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 4 Deployment Pipelines and MLOps Basics/Lesson 5 Labs/1 Folder Layout; Key Scripts_Configs; How Structure Supports Pipelines.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-4/13-folder-layout-key-scripts-configs-how-structure-supports-pipelines-transcript.txt",
+    "week": 4,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 4 Deployment Pipelines and MLOps Basics/Lesson 5 Labs/2 Training Script; Log Params_Metrics_Models; Inspect Runs.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-4/14-training-script-log-params-metrics-models-inspect-runs-transcript.txt",
+    "week": 4,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 4 Deployment Pipelines and MLOps Basics/Lesson 5 Labs/3 CI YAML; ML-specific Jobs; Show a Passing Run.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-4/15-ci-yaml-ml-specific-jobs-show-a-passing-run-transcript.txt",
+    "week": 4,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 4 Deployment Pipelines and MLOps Basics/Lesson 6 Summary and Assessment/Module Summary.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-4/16-module-summary-transcript.txt",
+    "week": 4,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 5 Monitoring and Observability for ML Systems/Lesson 1 Why Monitoring ML Models Is Different/1 Module Introduction.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-5/1-module-introduction-transcript.txt",
+    "week": 5,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 5 Monitoring and Observability for ML Systems/Lesson 1 Why Monitoring ML Models Is Different/2 Why Monitoring ML Models Is Different.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-5/2-why-monitoring-ml-models-is-different-transcript.txt",
+    "week": 5,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 5 Monitoring and Observability for ML Systems/Lesson 2 What to Monitor System, Data and Model Metrics/1 System Metrics.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-5/3-system-metrics-transcript.txt",
+    "week": 5,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 5 Monitoring and Observability for ML Systems/Lesson 2 What to Monitor System, Data and Model Metrics/2 Data_Feature Metrics.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-5/4-data-feature-metrics-transcript.txt",
+    "week": 5,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 5 Monitoring and Observability for ML Systems/Lesson 2 What to Monitor System, Data and Model Metrics/3 Model Performance Metrics.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-5/5-model-performance-metrics-transcript.txt",
+    "week": 5,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 5 Monitoring and Observability for ML Systems/Lesson 3 Drift, Data Quality and Alerting Basics/1 Types of Drift.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-5/6-types-of-drift-transcript.txt",
+    "week": 5,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 5 Monitoring and Observability for ML Systems/Lesson 3 Drift, Data Quality and Alerting Basics/2 Simple Detection Ideas.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-5/7-simple-detection-ideas-transcript.txt",
+    "week": 5,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 5 Monitoring and Observability for ML Systems/Lesson 3 Drift, Data Quality and Alerting Basics/3 Alerts.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-5/8-alerts-transcript.txt",
+    "week": 5,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 5 Monitoring and Observability for ML Systems/Lesson 4 Observability Stack Logs, Metrics, Traces and Dashboards/1 Logs_Metrics_Traces.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-5/9-logs-metrics-traces-transcript.txt",
+    "week": 5,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 5 Monitoring and Observability for ML Systems/Lesson 4 Observability Stack Logs, Metrics, Traces and Dashboards/2 Typical Stack.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-5/10-typical-stack-transcript.txt",
+    "week": 5,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 5 Monitoring and Observability for ML Systems/Lesson 4 Observability Stack Logs, Metrics, Traces and Dashboards/3 Bridge to Lab.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-5/11-bridge-to-lab-transcript.txt",
+    "week": 5,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 5 Monitoring and Observability for ML Systems/Lesson 5 Labs/1 Instrumenting the Model Service with Metrics.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-5/12-instrumenting-the-model-service-with-metrics-transcript.txt",
+    "week": 5,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 5 Monitoring and Observability for ML Systems/Lesson 5 Labs/2 Collecting Metrics with Prometheus and Building a Dashboard.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-5/13-collecting-metrics-with-prometheus-and-building-a-dashboard-transcript.txt",
+    "week": 5,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 5 Monitoring and Observability for ML Systems/Lesson 6 Summary and Assessment/Module Summary.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-5/14-module-summary-transcript.txt",
+    "week": 5,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 6 Continuous Training and Retraining Workflows/Lesson 1 Why Continuous Training The Problem with Static Models/1 Module Introduction.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-6/1-module-introduction-transcript.txt",
+    "week": 6,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 6 Continuous Training and Retraining Workflows/Lesson 1 Why Continuous Training The Problem with Static Models/2 Static Model Issues.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-6/2-static-model-issues-transcript.txt",
+    "week": 6,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 6 Continuous Training and Retraining Workflows/Lesson 1 Why Continuous Training The Problem with Static Models/3 Performance Drift.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-6/3-performance-drift-transcript.txt",
+    "week": 6,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 6 Continuous Training and Retraining Workflows/Lesson 1 Why Continuous Training The Problem with Static Models/4 Idea of Continuous Training.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-6/4-idea-of-continuous-training-transcript.txt",
+    "week": 6,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 6 Continuous Training and Retraining Workflows/Lesson 2 Retraining Triggers When Should We Retrain/1 Building the Retraining Foundation.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-6/5-building-the-retraining-foundation-transcript.txt",
+    "week": 6,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 6 Continuous Training and Retraining Workflows/Lesson 2 Retraining Triggers When Should We Retrain/2 Evaluating and Selecting the Right Model.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-6/6-evaluating-and-selecting-the-right-model-transcript.txt",
+    "week": 6,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 6 Continuous Training and Retraining Workflows/Lesson 2 Retraining Triggers When Should We Retrain/3 Promotion, Deployment and Continuous Retraining.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-6/7-promotion-deployment-and-continuous-retraining-transcript.txt",
+    "week": 6,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 6 Continuous Training and Retraining Workflows/Lesson 3 Designing a Continuous Training Workflow/1 Understanding Offline Evaluation.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-6/8-understanding-offline-evaluation-transcript.txt",
+    "week": 6,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 6 Continuous Training and Retraining Workflows/Lesson 3 Designing a Continuous Training Workflow/2 Moving into Live-Environment Validation.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-6/9-moving-into-live-environment-validation-transcript.txt",
+    "week": 6,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 6 Continuous Training and Retraining Workflows/Lesson 3 Designing a Continuous Training Workflow/3 Choosing the Right Method and Connecting It to Promotion.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-6/10-choosing-the-right-method-and-connecting-it-to-promotion-transcript.txt",
+    "week": 6,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 6 Continuous Training and Retraining Workflows/Lesson 4 Safe Deployment of Retrained Models/1 Why Governance and Approvals Matter.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-6/11-why-governance-and-approvals-matter-transcript.txt",
+    "week": 6,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 6 Continuous Training and Retraining Workflows/Lesson 4 Safe Deployment of Retrained Models/2 Traceability and Recovery Mechanisms.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-6/12-traceability-and-recovery-mechanisms-transcript.txt",
+    "week": 6,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 6 Continuous Training and Retraining Workflows/Lesson 4 Safe Deployment of Retrained Models/3 Guardrails and the Governed Promotion Workflow.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-6/13-guardrails-and-the-governed-promotion-workflow-transcript.txt",
+    "week": 6,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 6 Continuous Training and Retraining Workflows/Lesson 5 Labs/1 Walking Through the Training Pipeline Script_DAG.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-6/14-walking-through-the-training-pipeline-script-dag-transcript.txt",
+    "week": 6,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 6 Continuous Training and Retraining Workflows/Lesson 5 Labs/2 Implementing a Simple Retraining Trigger.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-6/15-implementing-a-simple-retraining-trigger-transcript.txt",
+    "week": 6,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 6 Continuous Training and Retraining Workflows/Lesson 5 Labs/3 Promotion Logic Choosing & Updating the Production Model.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-6/16-promotion-logic-choosing-updating-the-production-model-transcript.txt",
+    "week": 6,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 6 Continuous Training and Retraining Workflows/Lesson 6 Summary and Assessment/Module Summary.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-6/17-module-summary-transcript.txt",
+    "week": 6,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 7 Model Standardisation and Optimisation/Lesson 1 Why Standardisation and Optimisation Matter in Production/1 Module Introduction.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-7/1-module-introduction-transcript.txt",
+    "week": 7,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 7 Model Standardisation and Optimisation/Lesson 1 Why Standardisation and Optimisation Matter in Production/2 Deployment Challenges.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-7/2-deployment-challenges-transcript.txt",
+    "week": 7,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 7 Model Standardisation and Optimisation/Lesson 1 Why Standardisation and Optimisation Matter in Production/3 Goals (Portability, Speed, Footprint).txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-7/3-goals-portability-speed-footprint-transcript.txt",
+    "week": 7,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 7 Model Standardisation and Optimisation/Lesson 1 Why Standardisation and Optimisation Matter in Production/4 Approaches.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-7/4-approaches-transcript.txt",
+    "week": 7,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 7 Model Standardisation and Optimisation/Lesson 2 Standard Model Formats ONNX, TF Lite, OpenVINO/1 ONNX.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-7/5-onnx-transcript.txt",
+    "week": 7,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 7 Model Standardisation and Optimisation/Lesson 2 Standard Model Formats ONNX, TF Lite, OpenVINO/2 TF Lite.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-7/6-tf-lite-transcript.txt",
+    "week": 7,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 7 Model Standardisation and Optimisation/Lesson 2 Standard Model Formats ONNX, TF Lite, OpenVINO/3 OpenVINO.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-7/7-openvino-transcript.txt",
+    "week": 7,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 7 Model Standardisation and Optimisation/Lesson 3 Compression Techniques Quantisation, Pruning and Distillation/1 Why Model Compression Matters.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-7/8-why-model-compression-matters-transcript.txt",
+    "week": 7,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 7 Model Standardisation and Optimisation/Lesson 3 Compression Techniques Quantisation, Pruning and Distillation/2 Quantization and Pruning Techniques.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-7/9-quantization-and-pruning-techniques-transcript.txt",
+    "week": 7,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 7 Model Standardisation and Optimisation/Lesson 3 Compression Techniques Quantisation, Pruning and Distillation/3 Knowledge Distillation.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-7/10-knowledge-distillation-transcript.txt",
+    "week": 7,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 7 Model Standardisation and Optimisation/Lesson 3 Compression Techniques Quantisation, Pruning and Distillation/4 Trade-offs, Tooling and Next Steps.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-7/11-trade-offs-tooling-and-next-steps-transcript.txt",
+    "week": 7,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 7 Model Standardisation and Optimisation/Lesson 4 Optimised Runtimes ONNX Runtime, TensorRT, XLA and Trade-offs/1 Introduction to Optimized Runtimes.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-7/12-introduction-to-optimized-runtimes-transcript.txt",
+    "week": 7,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 7 Model Standardisation and Optimisation/Lesson 4 Optimised Runtimes ONNX Runtime, TensorRT, XLA and Trade-offs/2 ONNX Runtime, TensorRT and XLA.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-7/13-onnx-runtime-tensorrt-and-xla-transcript.txt",
+    "week": 7,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 7 Model Standardisation and Optimisation/Lesson 4 Optimised Runtimes ONNX Runtime, TensorRT, XLA and Trade-offs/3 Trade-offs and Deployment Fit.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-7/14-trade-offs-and-deployment-fit-transcript.txt",
+    "week": 7,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 7 Model Standardisation and Optimisation/Lesson 4 Optimised Runtimes ONNX Runtime, TensorRT, XLA and Trade-offs/4 Bridge to the ONNX Runtime Lab.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-7/15-bridge-to-the-onnx-runtime-lab-transcript.txt",
+    "week": 7,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 7 Model Standardisation and Optimisation/Lesson 5 Labs/1 Baseline Pre-trained CNN Size and Latency.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-7/16-baseline-pre-trained-cnn-size-and-latency-transcript.txt",
+    "week": 7,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 7 Model Standardisation and Optimisation/Lesson 5 Labs/2 Exporting the CNN to ONNX Format.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-7/17-exporting-the-cnn-to-onnx-format-transcript.txt",
+    "week": 7,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 7 Model Standardisation and Optimisation/Lesson 5 Labs/3 Running Inference with ONNX Runtime and Comparing Metrics.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-7/18-running-inference-with-onnx-runtime-and-comparing-metrics-transcript.txt",
+    "week": 7,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 7 Model Standardisation and Optimisation/Lesson 6 Summary and Assessment/Module Summary.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-7/19-module-summary-transcript.txt",
+    "week": 7,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 8 Trade-offs and Production Considerations/Lesson 1 The 4-Way Tug-of-War Accuracy, Latency, Cost and UX/1 Module Introduction.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-8/1-module-introduction-transcript.txt",
+    "week": 8,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 8 Trade-offs and Production Considerations/Lesson 1 The 4-Way Tug-of-War Accuracy, Latency, Cost and UX/2 Tug-of-War Framing.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-8/2-tug-of-war-framing-transcript.txt",
+    "week": 8,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 8 Trade-offs and Production Considerations/Lesson 1 The 4-Way Tug-of-War Accuracy, Latency, Cost and UX/3 Accuracy vs Latency.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-8/3-accuracy-vs-latency-transcript.txt",
+    "week": 8,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 8 Trade-offs and Production Considerations/Lesson 1 The 4-Way Tug-of-War Accuracy, Latency, Cost and UX/4 Latency vs Cost and UX.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-8/4-latency-vs-cost-and-ux-transcript.txt",
+    "week": 8,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 8 Trade-offs and Production Considerations/Lesson 2 Scaling Patterns Vertical, Horizontal and Autoscaling/1 Why ML Services Need to Scale.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-8/5-why-ml-services-need-to-scale-transcript.txt",
+    "week": 8,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 8 Trade-offs and Production Considerations/Lesson 2 Scaling Patterns Vertical, Horizontal and Autoscaling/2 Vertical and Horizontal Scaling Patterns.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-8/6-vertical-and-horizontal-scaling-patterns-transcript.txt",
+    "week": 8,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 8 Trade-offs and Production Considerations/Lesson 2 Scaling Patterns Vertical, Horizontal and Autoscaling/3 Autoscaling, Stability and Cost Trade-offs.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-8/7-autoscaling-stability-and-cost-trade-offs-transcript.txt",
+    "week": 8,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 8 Trade-offs and Production Considerations/Lesson 3 Cost Optimisation Spot, Serverless and Batching/1 Spot _ Preemptible vs On-demand.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-8/8-spot-preemptible-vs-on-demand-transcript.txt",
+    "week": 8,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 8 Trade-offs and Production Considerations/Lesson 3 Cost Optimisation Spot, Serverless and Batching/2 Serverless.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-8/9-serverless-transcript.txt",
+    "week": 8,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 8 Trade-offs and Production Considerations/Lesson 3 Cost Optimisation Spot, Serverless and Batching/3 Micro-batching.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-8/10-micro-batching-transcript.txt",
+    "week": 8,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 8 Trade-offs and Production Considerations/Lesson 4 Putting It Together Choosing the Right Trade-offs/1 Read Constraints.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-8/11-read-constraints-transcript.txt",
+    "week": 8,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 8 Trade-offs and Production Considerations/Lesson 4 Putting It Together Choosing the Right Trade-offs/2 Example scenarios (Fraud, Batch, Edge).txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-8/12-example-scenarios-fraud-batch-edge-transcript.txt",
+    "week": 8,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 8 Trade-offs and Production Considerations/Lesson 4 Putting It Together Choosing the Right Trade-offs/3 Bridge to Lab.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-8/13-bridge-to-lab-transcript.txt",
+    "week": 8,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 8 Trade-offs and Production Considerations/Lesson 5 Labs/1 Applying Quantization or Pruning to Our CNN.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-8/14-applying-quantization-or-pruning-to-our-cnn-transcript.txt",
+    "week": 8,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 8 Trade-offs and Production Considerations/Lesson 5 Labs/2  Benchmark Before vs After \u2013 Size, Latency, Accuracy.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-8/15-benchmark-before-vs-after-size-latency-accuracy-transcript.txt",
+    "week": 8,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 8 Trade-offs and Production Considerations/Lesson 5 Labs/3 Deployment Fit Edge vs Cloud for Compressed Models.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-8/16-deployment-fit-edge-vs-cloud-for-compressed-models-transcript.txt",
+    "week": 8,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 8 Trade-offs and Production Considerations/Lesson 6 Summary and Assessment/Module Summary.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-8/17-module-summary-transcript.txt",
+    "week": 8,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 9 Feature Engineering and Feature Stores/Lesson 1 Feature Engineering in Production More Than Just a Notebook/1 Module Introduction.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-9/1-module-introduction-transcript.txt",
+    "week": 9,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 9 Feature Engineering and Feature Stores/Lesson 1 Feature Engineering in Production More Than Just a Notebook/2 Recap FE.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-9/2-recap-fe-transcript.txt",
+    "week": 9,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 9 Feature Engineering and Feature Stores/Lesson 1 Feature Engineering in Production More Than Just a Notebook/3 Production Constraints.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-9/3-production-constraints-transcript.txt",
+    "week": 9,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 9 Feature Engineering and Feature Stores/Lesson 2 Online vs Offline Features and Feature Stores/1 Offline Features.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-9/4-offline-features-transcript.txt",
+    "week": 9,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 9 Feature Engineering and Feature Stores/Lesson 2 Online vs Offline Features and Feature Stores/2 Online Features.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-9/5-online-features-transcript.txt",
+    "week": 9,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 9 Feature Engineering and Feature Stores/Lesson 2 Online vs Offline Features and Feature Stores/3 What a Feature Store Provides.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-9/6-what-a-feature-store-provides-transcript.txt",
+    "week": 9,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 9 Feature Engineering and Feature Stores/Lesson 3 Feature Store Ecosystem Feast, Tecton, Hopsworks/1 Feature Store Fundamentals and Core Pattern.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-9/7-feature-store-fundamentals-and-core-pattern-transcript.txt",
+    "week": 9,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 9 Feature Engineering and Feature Stores/Lesson 3 Feature Store Ecosystem Feast, Tecton, Hopsworks/2 Feast_ Open-Source Feature Store Baseline.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-9/8-feast-open-source-feature-store-baseline-transcript.txt",
+    "week": 9,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 9 Feature Engineering and Feature Stores/Lesson 3 Feature Store Ecosystem Feast, Tecton, Hopsworks/3 Managed Feature Platforms_ Tecton and Hopsworks.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-9/9-managed-feature-platforms-tecton-and-hopsworks-transcript.txt",
+    "week": 9,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 9 Feature Engineering and Feature Stores/Lesson 3 Feature Store Ecosystem Feast, Tecton, Hopsworks/4 The Common Feature Store Pattern and Practical Takeaways.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-9/10-the-common-feature-store-pattern-and-practical-takeaways-transcript.txt",
+    "week": 9,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 9 Feature Engineering and Feature Stores/Lesson 4 Reusability, Metadata, Lineage and Feature Governance/1 Feature Reuse_ Solving Duplication and Inconsistency.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-9/11-feature-reuse-solving-duplication-and-inconsistency-transcript.txt",
+    "week": 9,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 9 Feature Engineering and Feature Stores/Lesson 4 Reusability, Metadata, Lineage and Feature Governance/2 Metadata and Lineage_ Understanding and Tracing Features.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-9/12-metadata-and-lineage-understanding-and-tracing-features-transcript.txt",
+    "week": 9,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 9 Feature Engineering and Feature Stores/Lesson 4 Reusability, Metadata, Lineage and Feature Governance/3 Feature Governance and Lifecycle Management.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-9/13-feature-governance-and-lifecycle-management-transcript.txt",
+    "week": 9,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 9 Feature Engineering and Feature Stores/Lesson 4 Reusability, Metadata, Lineage and Feature Governance/4 From Feature Governance to Practice.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-9/14-from-feature-governance-to-practice-transcript.txt",
+    "week": 9,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 9 Feature Engineering and Feature Stores/Lesson 5 Labs/1 Building an Offline Feature Table in Pandas.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-9/15-building-an-offline-feature-table-in-pandas-transcript.txt",
+    "week": 9,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 9 Feature Engineering and Feature Stores/Lesson 5 Labs/2 Simulating an Online Feature Store (Dict_Cache).txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-9/16-simulating-an-online-feature-store-dict-cache-transcript.txt",
+    "week": 9,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 9 Feature Engineering and Feature Stores/Lesson 5 Labs/3 Avoiding Training\u2013Serving Skew with a Tiny Feature Store.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-9/17-avoiding-training-serving-skew-with-a-tiny-feature-store-transcript.txt",
+    "week": 9,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 9 Feature Engineering and Feature Stores/Lesson 6 Summary and Assessment/Module Summary.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-9/18-module-summary-transcript.txt",
+    "week": 9,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 10 Data Engineering and Real-Time Pipelines for ML/Lesson 1 Data Pipelines for ML The Big Picture/1 Module Introduction.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-10/1-module-introduction-transcript.txt",
+    "week": 10,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 10 Data Engineering and Real-Time Pipelines for ML/Lesson 1 Data Pipelines for ML The Big Picture/2 Why ML Needs Pipelines.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-10/2-why-ml-needs-pipelines-transcript.txt",
+    "week": 10,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 10 Data Engineering and Real-Time Pipelines for ML/Lesson 1 Data Pipelines for ML The Big Picture/3 ETL_ELT.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-10/3-etl-elt-transcript.txt",
+    "week": 10,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 10 Data Engineering and Real-Time Pipelines for ML/Lesson 1 Data Pipelines for ML The Big Picture/4 Pipeline Types and Links to Lifecycle.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-10/4-pipeline-types-and-links-to-lifecycle-transcript.txt",
+    "week": 10,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 10 Data Engineering and Real-Time Pipelines for ML/Lesson 2 Batch and Micro-batch Ingestion for ML/1 Batch Jobs.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-10/5-batch-jobs-transcript.txt",
+    "week": 10,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 10 Data Engineering and Real-Time Pipelines for ML/Lesson 2 Batch and Micro-batch Ingestion for ML/2 Micro-batch Concept.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-10/6-micro-batch-concept-transcript.txt",
+    "week": 10,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 10 Data Engineering and Real-Time Pipelines for ML/Lesson 2 Batch and Micro-batch Ingestion for ML/en-GB (2).txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-10/7-let-s-compare-batch-and-micro-batch-transcript.txt",
+    "week": 10,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 10 Data Engineering and Real-Time Pipelines for ML/Lesson 3 Streaming for ML Events, Topics and Consumers/1 Event Streams.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-10/8-event-streams-transcript.txt",
+    "week": 10,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 10 Data Engineering and Real-Time Pipelines for ML/Lesson 3 Streaming for ML Events, Topics and Consumers/2 Kafka _ Spark _ Flink _ Beam Roles.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-10/9-kafka-spark-flink-beam-roles-transcript.txt",
+    "week": 10,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 10 Data Engineering and Real-Time Pipelines for ML/Lesson 3 Streaming for ML Events, Topics and Consumers/3 Streaming ML Examples.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-10/10-streaming-ml-examples-transcript.txt",
+    "week": 10,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 10 Data Engineering and Real-Time Pipelines for ML/Lesson 4 Data Quality in Real-Time ML Freshness, Completeness, Schema/1 Freshness and Latency in Real-Time Data.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-10/11-freshness-and-latency-in-real-time-data-transcript.txt",
+    "week": 10,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 10 Data Engineering and Real-Time Pipelines for ML/Lesson 4 Data Quality in Real-Time ML Freshness, Completeness, Schema/2 Completeness and Correctness Checks.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-10/12-completeness-and-correctness-checks-transcript.txt",
+    "week": 10,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 10 Data Engineering and Real-Time Pipelines for ML/Lesson 4 Data Quality in Real-Time ML Freshness, Completeness, Schema/3 Schema Evolution and Data Contracts.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-10/13-schema-evolution-and-data-contracts-transcript.txt",
+    "week": 10,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 10 Data Engineering and Real-Time Pipelines for ML/Lesson 4 Data Quality in Real-Time ML Freshness, Completeness, Schema/4 Applying Data Quality Concepts in Practice.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-10/14-applying-data-quality-concepts-in-practice-transcript.txt",
+    "week": 10,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 10 Data Engineering and Real-Time Pipelines for ML/Lesson 5 Labs/1 Simulating \u2018New Day, New Data\u2019 with Daily Files.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-10/15-simulating-new-day-new-data-with-daily-files-transcript.txt",
+    "week": 10,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 10 Data Engineering and Real-Time Pipelines for ML/Lesson 5 Labs/2 Incremental Ingestion Script Append New Data to Training Set.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-10/16-incremental-ingestion-script-append-new-data-to-training-set-transcript.txt",
+    "week": 10,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 10 Data Engineering and Real-Time Pipelines for ML/Lesson 5 Labs/3 Hooking Ingestion to Retraining A Mini \u2018Data \u2192 Train\u2019 Flow.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-10/17-hooking-ingestion-to-retraining-a-mini-data-train-flow-transcript.txt",
+    "week": 10,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 10 Data Engineering and Real-Time Pipelines for ML/Lesson 6 Summary and Assessment/Module Summary.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-10/18-module-summary-transcript.txt",
+    "week": 10,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 11 Security, Compliance and Responsible AI/Lesson 1 Threats to ML Systems What Can Go Wrong/1 Module Introduction.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-11/1-module-introduction-transcript.txt",
+    "week": 11,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 11 Security, Compliance and Responsible AI/Lesson 1 Threats to ML Systems What Can Go Wrong/2 Data_Input Risks.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-11/2-data-input-risks-transcript.txt",
+    "week": 11,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 11 Security, Compliance and Responsible AI/Lesson 1 Threats to ML Systems What Can Go Wrong/3 Model Leakage.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-11/3-model-leakage-transcript.txt",
+    "week": 11,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 11 Security, Compliance and Responsible AI/Lesson 1 Threats to ML Systems What Can Go Wrong/4 Why ML Systems are Attractive Targets.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-11/4-why-ml-systems-are-attractive-targets-transcript.txt",
+    "week": 11,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 11 Security, Compliance and Responsible AI/Lesson 2 Data Privacy in ML PII, Minimisation and Access Control/1 PII and Sensitive Attributes.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-11/5-pii-and-sensitive-attributes-transcript.txt",
+    "week": 11,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 11 Security, Compliance and Responsible AI/Lesson 2 Data Privacy in ML PII, Minimisation and Access Control/2 Minimisation and Anonymisation.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-11/6-minimisation-and-anonymisation-transcript.txt",
+    "week": 11,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 11 Security, Compliance and Responsible AI/Lesson 2 Data Privacy in ML PII, Minimisation and Access Control/3 RBAC for Data.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-11/7-rbac-for-data-transcript.txt",
+    "week": 11,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 11 Security, Compliance and Responsible AI/Lesson 3 Fairness and Bias Evaluating Models Across Groups/1 Group-wise Metrics.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-11/8-group-wise-metrics-transcript.txt",
+    "week": 11,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 11 Security, Compliance and Responsible AI/Lesson 3 Fairness and Bias Evaluating Models Across Groups/2 Fairness Questions.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-11/9-fairness-questions-transcript.txt",
+    "week": 11,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 11 Security, Compliance and Responsible AI/Lesson 3 Fairness and Bias Evaluating Models Across Groups/3 Limitations and Domain Context.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-11/10-limitations-and-domain-context-transcript.txt",
+    "week": 11,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 11 Security, Compliance and Responsible AI/Lesson 4 Explainability, Audit Trails and Regulatory Context/1 Explainability_ What It Is, Why It Matters and Its Limits.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-11/11-explainability-what-it-is-why-it-matters-and-its-limits-transcript.txt",
+    "week": 11,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 11 Security, Compliance and Responsible AI/Lesson 4 Explainability, Audit Trails and Regulatory Context/2 Audit Trails Across the ML Pipeline.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-11/12-audit-trails-across-the-ml-pipeline-transcript.txt",
+    "week": 11,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 11 Security, Compliance and Responsible AI/Lesson 4 Explainability, Audit Trails and Regulatory Context/3 Regulatory Expectations and Designing for Auditability.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-11/13-regulatory-expectations-and-designing-for-auditability-transcript.txt",
+    "week": 11,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 11 Security, Compliance and Responsible AI/Lesson 4 Explainability, Audit Trails and Regulatory Context/4 Recap and Bridge to the Labs.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-11/14-recap-and-bridge-to-the-labs-transcript.txt",
+    "week": 11,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 11 Security, Compliance and Responsible AI/Lesson 5 Labs/1 Segmented Evaluation_ Performance by Group.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-11/15-segmented-evaluation-performance-by-group-transcript.txt",
+    "week": 11,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 11 Security, Compliance and Responsible AI/Lesson 5 Labs/2 A Simple Fairness Check and Interpretation.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-11/16-a-simple-fairness-check-and-interpretation-transcript.txt",
+    "week": 11,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 11 Security, Compliance and Responsible AI/Lesson 5 Labs/3 Logging Fairness Metrics for Audit and Monitoring.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-11/17-logging-fairness-metrics-for-audit-and-monitoring-transcript.txt",
+    "week": 11,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 11 Security, Compliance and Responsible AI/Lesson 6 Summary and Assessment/Module Summary.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-11/18-module-summary-transcript.txt",
+    "week": 11,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 12 Scaling Multi-Model Systems/Lesson 1 Patterns for Multi-Model Systems Routing and Ensembles Control with Git and GitHub/1 Module Introduction.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-12/1-module-introduction-transcript.txt",
+    "week": 12,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 12 Scaling Multi-Model Systems/Lesson 1 Patterns for Multi-Model Systems Routing and Ensembles Control with Git and GitHub/2 Single Vs. Multi-model.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-12/2-single-vs-multi-model-transcript.txt",
+    "week": 12,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 12 Scaling Multi-Model Systems/Lesson 1 Patterns for Multi-Model Systems Routing and Ensembles Control with Git and GitHub/3 Rule-based Routing, Learned _Router_ Idea.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-12/3-rule-based-routing-learned-router-idea-transcript.txt",
+    "week": 12,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 12 Scaling Multi-Model Systems/Lesson 1 Patterns for Multi-Model Systems Routing and Ensembles Control with Git and GitHub/4 Fallback Models, Ensembles and Cost_Benefit.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-12/4-fallback-models-ensembles-and-cost-benefit-transcript.txt",
+    "week": 12,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 12 Scaling Multi-Model Systems/Lesson 2 Sharding and Caching for Scalable Inference/1 Scaling Inference with Sharding and Replication.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-12/5-scaling-inference-with-sharding-and-replication-transcript.txt",
+    "week": 12,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 12 Scaling Multi-Model Systems/Lesson 2 Sharding and Caching for Scalable Inference/2 Caching Model Results and Embeddings.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-12/6-caching-model-results-and-embeddings-transcript.txt",
+    "week": 12,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 12 Scaling Multi-Model Systems/Lesson 2 Sharding and Caching for Scalable Inference/3 Combining Routing, Sharding and Caching at Scale.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-12/7-combining-routing-sharding-and-caching-at-scale-transcript.txt",
+    "week": 12,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 12 Scaling Multi-Model Systems/Lesson 2 Sharding and Caching for Scalable Inference/4 Putting Sharding and Caching Together.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-12/8-putting-sharding-and-caching-together-transcript.txt",
+    "week": 12,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 12 Scaling Multi-Model Systems/Lesson 3 Multi-Tenant Systems and Resource Isolation/1 What is Tenant and Noisy Neighbor Problem.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-12/9-what-is-tenant-and-noisy-neighbor-problem-transcript.txt",
+    "week": 12,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 12 Scaling Multi-Model Systems/Lesson 3 Multi-Tenant Systems and Resource Isolation/2 SLOs Per Tenant.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-12/10-slos-per-tenant-transcript.txt",
+    "week": 12,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 12 Scaling Multi-Model Systems/Lesson 3 Multi-Tenant Systems and Resource Isolation/3 Namespaces_Clusters, Resource Quotas and Separate Logging Access.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-12/11-namespaces-clusters-resource-quotas-and-separate-logging-access-transcript.txt",
+    "week": 12,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 12 Scaling Multi-Model Systems/Lesson 4 Vector Databases and Retrieval-Augmented Systems (High Level)/1 Embeddings and Vector Similarity and Role of Vector DB.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-12/12-embeddings-and-vector-similarity-and-role-of-vector-db-transcript.txt",
+    "week": 12,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 12 Scaling Multi-Model Systems/Lesson 4 Vector Databases and Retrieval-Augmented Systems (High Level)/2 Approximate Nearest Neighbor Search.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-12/13-approximate-nearest-neighbor-search-transcript.txt",
+    "week": 12,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 12 Scaling Multi-Model Systems/Lesson 4 Vector Databases and Retrieval-Augmented Systems (High Level)/3 RAG Pipeline as a Multi-model System.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-12/14-rag-pipeline-as-a-multi-model-system-transcript.txt",
+    "week": 12,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 12 Scaling Multi-Model Systems/Lesson 5 Labs/1 Creating a Simple Model Registry with Versioned Folders.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-12/15-creating-a-simple-model-registry-with-versioned-folders-transcript.txt",
+    "week": 12,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 12 Scaling Multi-Model Systems/Lesson 5 Labs/2 Implementing current_best.json and Promotion Logic.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-12/16-implementing-current-best-json-and-promotion-logic-transcript.txt",
+    "week": 12,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 12 Scaling Multi-Model Systems/Lesson 5 Labs/3 Wiring the Service to current_best.json for Multi-Model Serving.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-12/17-wiring-the-service-to-current-best-json-for-multi-model-serving-transcript.txt",
+    "week": 12,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 12 Scaling Multi-Model Systems/Lesson 6 Summary and Assessment/Module Summary.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-12/18-module-summary-transcript.txt",
+    "week": 12,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 13 Large-Scale ML System Design and Architecture/Lesson 1 End-to-End Architecture Recommendation Systems/1 Module Introduction.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-13/1-module-introduction-transcript.txt",
+    "week": 13,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 13 Large-Scale ML System Design and Architecture/Lesson 1 End-to-End Architecture Recommendation Systems/2 Recsys Problem and Requirements.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-13/2-recsys-problem-and-requirements-transcript.txt",
+    "week": 13,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 13 Large-Scale ML System Design and Architecture/Lesson 1 End-to-End Architecture Recommendation Systems/3 Data Layer.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-13/3-data-layer-transcript.txt",
+    "week": 13,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 13 Large-Scale ML System Design and Architecture/Lesson 1 End-to-End Architecture Recommendation Systems/4 Feature-serving Layer.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-13/4-feature-serving-layer-transcript.txt",
+    "week": 13,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 13 Large-Scale ML System Design and Architecture/Lesson 2 Architectures for Ranking and Fraud Detection/1 Search_Ranking Flow Query+document Features Fraud Decision Flow.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-13/5-search-ranking-flow-query-document-features-fraud-decision-flow-transcript.txt",
+    "week": 13,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 13 Large-Scale ML System Design and Architecture/Lesson 2 Architectures for Ranking and Fraud Detection/2 Online Decisions Lables Arriving Later.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-13/6-online-decisions-lables-arriving-later-transcript.txt",
+    "week": 13,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 13 Large-Scale ML System Design and Architecture/Lesson 2 Architectures for Ranking and Fraud Detection/3 Similarities and Differences.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-13/7-similarities-and-differences-transcript.txt",
+    "week": 13,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 13 Large-Scale ML System Design and Architecture/Lesson 3 Layered ML Platform Data, Features, Training, Serving, Monitoring, Retraining/1 Data Layer, Feature Store Layer and Training_Exper.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-13/8-data-layer-feature-store-layer-and-training-exper-transcript.txt",
+    "week": 13,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 13 Large-Scale ML System Design and Architecture/Lesson 3 Layered ML Platform Data, Features, Training, Serving, Monitoring, Retraining/2 Serving and Infra, Monitoring and Feedback_Retrain.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-13/9-serving-and-infra-monitoring-and-feedback-retrain-transcript.txt",
+    "week": 13,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 13 Large-Scale ML System Design and Architecture/Lesson 3 Layered ML Platform Data, Features, Training, Serving, Monitoring, Retraining/3 Governance Hooks.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-13/10-governance-hooks-transcript.txt",
+    "week": 13,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 13 Large-Scale ML System Design and Architecture/Lesson 4 System Design Interview Lens SLAs, Traffic and Failures/1 Clarifying Requirements and SLAs.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-13/11-clarifying-requirements-and-slas-transcript.txt",
+    "week": 13,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 13 Large-Scale ML System Design and Architecture/Lesson 4 System Design Interview Lens SLAs, Traffic and Failures/2 Traffic Estimation and Capacity Planning.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-13/12-traffic-estimation-and-capacity-planning-transcript.txt",
+    "week": 13,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 13 Large-Scale ML System Design and Architecture/Lesson 4 System Design Interview Lens SLAs, Traffic and Failures/3 Failure Scenarios and Resilience Strategies.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-13/13-failure-scenarios-and-resilience-strategies-transcript.txt",
+    "week": 13,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 13 Large-Scale ML System Design and Architecture/Lesson 4 System Design Interview Lens SLAs, Traffic and Failures/4 Structuring System Design.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-13/14-structuring-system-design-transcript.txt",
+    "week": 13,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 13 Large-Scale ML System Design and Architecture/Lesson 5 Labs/Use Case Overview.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-13/15-use-case-overview-transcript.txt",
+    "week": 13,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Machine Learning Model Engineering/Week 13 Large-Scale ML System Design and Architecture/Lesson 6 Summary and Assessment/Module Summary.txt",
+    "dest": "machine-learning-model-engineering/transcriptions/week-13/16-module-summary-transcript.txt",
+    "week": 13,
+    "course": "machine-learning-model-engineering"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 0 Course Introduction/Lesson 1 Course Introduction/1 Course Introduction.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-0/1-course-introduction-transcript.txt",
+    "week": 0,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 0 Course Introduction/Lesson 1 Course Introduction/2 Instructor Introduction.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-0/2-instructor-introduction-transcript.txt",
+    "week": 0,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 1 Introduction to NLP and Necessary Linguistics/Lesson 1 Module Introduction/Module Introduction.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-1/1-module-introduction-transcript.txt",
+    "week": 1,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 1 Introduction to NLP and Necessary Linguistics/Lesson 2 Introduction to Natural Language Processing (NLP)/1 What is Natural Language Processing (NLP).txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-1/2-what-is-natural-language-processing-nlp-transcript.txt",
+    "week": 1,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 1 Introduction to NLP and Necessary Linguistics/Lesson 2 Introduction to Natural Language Processing (NLP)/2 Understanding Natural Language Understanding (NLU) and Natural Language.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-1/3-understanding-natural-language-understanding-nlu-and-natural-language-transcript.txt",
+    "week": 1,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 1 Introduction to NLP and Necessary Linguistics/Lesson 2 Introduction to Natural Language Processing (NLP)/3 Different applications of Natural Language Processing (NLP).txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-1/4-different-applications-of-natural-language-processing-nlp-transcript.txt",
+    "week": 1,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 1 Introduction to NLP and Necessary Linguistics/Lesson 3 Linguistics for Natural Language Processing (NLP)/1 Morphology of Text (Stems, Roots, Affixes).txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-1/5-morphology-of-text-stems-roots-affixes-transcript.txt",
+    "week": 1,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 1 Introduction to NLP and Necessary Linguistics/Lesson 3 Linguistics for Natural Language Processing (NLP)/2 Ambiguity in Language (Polysemy, Synonymy).txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-1/6-ambiguity-in-language-polysemy-synonymy-transcript.txt",
+    "week": 1,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 2 Text Preprocessing and Cleaning/Lesson 1 Module Introduction/Module Introduction and Motivation.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-2/1-module-introduction-and-motivation-transcript.txt",
+    "week": 2,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 2 Text Preprocessing and Cleaning/Lesson 2 Text Cleaning/1 Tokenisation.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-2/2-tokenisation-transcript.txt",
+    "week": 2,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 2 Text Preprocessing and Cleaning/Lesson 2 Text Cleaning/2 Noise Removal with RegEx.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-2/3-noise-removal-with-regex-transcript.txt",
+    "week": 2,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 2 Text Preprocessing and Cleaning/Lesson 2 Text Cleaning/3 Stopwords Removal with NLTK.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-2/4-stopwords-removal-with-nltk-transcript.txt",
+    "week": 2,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 2 Text Preprocessing and Cleaning/Lesson 3 Text Preprocessing/1 Stemming.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-2/5-stemming-transcript.txt",
+    "week": 2,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 2 Text Preprocessing and Cleaning/Lesson 3 Text Preprocessing/2 Lemmatisation.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-2/6-lemmatisation-transcript.txt",
+    "week": 2,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 2 Text Preprocessing and Cleaning/Lesson 4 Build a Preprocessing Pipeline/Text Preprocessing Pipeline Construction.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-2/7-text-preprocessing-pipeline-construction-transcript.txt",
+    "week": 2,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 3 Part-of-Speech (POS) and Named Entity Recognition (NER)/Lesson 1 Module Introduction/Module Introduction and Motivation.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-3/1-module-introduction-and-motivation-transcript.txt",
+    "week": 3,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 3 Part-of-Speech (POS) and Named Entity Recognition (NER)/Lesson 2 Part-of-Speech Tagging/1 What is Part-of-Speech tagging.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-3/2-what-is-part-of-speech-tagging-transcript.txt",
+    "week": 3,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 3 Part-of-Speech (POS) and Named Entity Recognition (NER)/Lesson 2 Part-of-Speech Tagging/2 POS Tagging in Practice (Spacy).txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-3/3-pos-tagging-in-practice-spacy-transcript.txt",
+    "week": 3,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 3 Part-of-Speech (POS) and Named Entity Recognition (NER)/Lesson 2 Part-of-Speech Tagging/3 Visualising POS and Dependency Trees (Spacy).txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-3/4-visualising-pos-and-dependency-trees-spacy-transcript.txt",
+    "week": 3,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 3 Part-of-Speech (POS) and Named Entity Recognition (NER)/Lesson 2 Part-of-Speech Tagging/4 POS Tagging in Practice (NLTK).txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-3/5-pos-tagging-in-practice-nltk-transcript.txt",
+    "week": 3,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 3 Part-of-Speech (POS) and Named Entity Recognition (NER)/Lesson 2 Part-of-Speech Tagging/5 POS Tagging in Practice (Flair).txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-3/6-pos-tagging-in-practice-flair-transcript.txt",
+    "week": 3,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 3 Part-of-Speech (POS) and Named Entity Recognition (NER)/Lesson 3 Named Entity Recognition/1 What is a Named Entity Recognition.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-3/7-what-is-a-named-entity-recognition-transcript.txt",
+    "week": 3,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 3 Part-of-Speech (POS) and Named Entity Recognition (NER)/Lesson 3 Named Entity Recognition/2 NER in Practice (SpaCy).txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-3/8-ner-in-practice-spacy-transcript.txt",
+    "week": 3,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 3 Part-of-Speech (POS) and Named Entity Recognition (NER)/Lesson 3 Named Entity Recognition/3 NER in Practice (NLTK).txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-3/9-ner-in-practice-nltk-transcript.txt",
+    "week": 3,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 3 Part-of-Speech (POS) and Named Entity Recognition (NER)/Lesson 3 Named Entity Recognition/4 NER in Practice (Flair).txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-3/10-ner-in-practice-flair-transcript.txt",
+    "week": 3,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 3 Part-of-Speech (POS) and Named Entity Recognition (NER)/Lesson 4 Comparing NLP Packages/Comparing NLTK, SpaCy and Flair.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-3/11-comparing-nltk-spacy-and-flair-transcript.txt",
+    "week": 3,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 4 Text Corpora and Corpus Linguistics/Lesson 1 Module Introduction/Module Introduction and Motivation.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-4/1-module-introduction-and-motivation-transcript.txt",
+    "week": 4,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 4 Text Corpora and Corpus Linguistics/Lesson 2 Core Concepts/1 What is a Text Corpus and Why It Matters.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-4/2-what-is-a-text-corpus-and-why-it-matters-transcript.txt",
+    "week": 4,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 4 Text Corpora and Corpus Linguistics/Lesson 2 Core Concepts/2 Types of Corpora.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-4/3-types-of-corpora-transcript.txt",
+    "week": 4,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 4 Text Corpora and Corpus Linguistics/Lesson 2 Core Concepts/3 Bias and Representation in Text Corpora.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-4/4-bias-and-representation-in-text-corpora-transcript.txt",
+    "week": 4,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 4 Text Corpora and Corpus Linguistics/Lesson 3 Hands-On Corpus Analysis (Lab 4)/1 Setup and Corpus Exploration.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-4/5-setup-and-corpus-exploration-transcript.txt",
+    "week": 4,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 4 Text Corpora and Corpus Linguistics/Lesson 3 Hands-On Corpus Analysis (Lab 4)/2 Gutenberg Corpus Analysis.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-4/6-gutenberg-corpus-analysis-transcript.txt",
+    "week": 4,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 4 Text Corpora and Corpus Linguistics/Lesson 3 Hands-On Corpus Analysis (Lab 4)/3 Brown Corpus Analysis.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-4/7-brown-corpus-analysis-transcript.txt",
+    "week": 4,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 5 Traditional Word Embeddings/Lesson 1 Module Introduction/Module Introduction and Motivation.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-5/1-module-introduction-and-motivation-transcript.txt",
+    "week": 5,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 5 Traditional Word Embeddings/Lesson 2 One Hot Encoding/1 What is One Hot Encoding.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-5/2-what-is-one-hot-encoding-transcript.txt",
+    "week": 5,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 5 Traditional Word Embeddings/Lesson 2 One Hot Encoding/2 One Hot Encoding - Implementation.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-5/3-one-hot-encoding-implementation-transcript.txt",
+    "week": 5,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 5 Traditional Word Embeddings/Lesson 2 One Hot Encoding/3 Advantages and Limitations of One Hot Encoding.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-5/4-advantages-and-limitations-of-one-hot-encoding-transcript.txt",
+    "week": 5,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 5 Traditional Word Embeddings/Lesson 3 Bag of Words/1 What is BoW.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-5/5-what-is-bow-transcript.txt",
+    "week": 5,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 5 Traditional Word Embeddings/Lesson 3 Bag of Words/2 BoW - Implementation.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-5/6-bow-implementation-transcript.txt",
+    "week": 5,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 5 Traditional Word Embeddings/Lesson 3 Bag of Words/3 Advantages and Limitations of Bag of Words.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-5/7-advantages-and-limitations-of-bag-of-words-transcript.txt",
+    "week": 5,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 5 Traditional Word Embeddings/Lesson 4 TF-IDF/1 What is TF-IDF.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-5/8-what-is-tf-idf-transcript.txt",
+    "week": 5,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 5 Traditional Word Embeddings/Lesson 4 TF-IDF/2 TF-IDF Implementation.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-5/9-tf-idf-implementation-transcript.txt",
+    "week": 5,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 5 Traditional Word Embeddings/Lesson 4 TF-IDF/3 Advantages and Limitations of TF-IDF.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-5/10-advantages-and-limitations-of-tf-idf-transcript.txt",
+    "week": 5,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 6 Modern Word Embeddings/Lesson 1 Module Introduction/Module Introduction and Motivation.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-6/1-module-introduction-and-motivation-transcript.txt",
+    "week": 6,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 6 Modern Word Embeddings/Lesson 2 Word Embedding with Word2Vec/1 Understanding Word2Vec.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-6/2-understanding-word2vec-transcript.txt",
+    "week": 6,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 6 Modern Word Embeddings/Lesson 2 Word Embedding with Word2Vec/2 Word2Vec Implementation.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-6/3-word2vec-implementation-transcript.txt",
+    "week": 6,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 6 Modern Word Embeddings/Lesson 3 Word Embedding with Glove/1 Understanding Glove.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-6/4-understanding-glove-transcript.txt",
+    "week": 6,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 6 Modern Word Embeddings/Lesson 3 Word Embedding with Glove/2 Glove Implementation.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-6/5-glove-implementation-transcript.txt",
+    "week": 6,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 6 Modern Word Embeddings/Lesson 4 Word Embeddings - Deeper Dive/1 Visualising Word Embeddings.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-6/6-visualising-word-embeddings-transcript.txt",
+    "week": 6,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 6 Modern Word Embeddings/Lesson 4 Word Embeddings - Deeper Dive/2 Static Embedding vs Contextual Embedding.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-6/7-static-embedding-vs-contextual-embedding-transcript.txt",
+    "week": 6,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 7 Sequential Modeling - The Recurrent Neural Network (RNN) Era/Lesson 1 Module Introduction/1 Module Introduction and Motivation.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-7/1-module-introduction-and-motivation-transcript.txt",
+    "week": 7,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 7 Sequential Modeling - The Recurrent Neural Network (RNN) Era/Lesson 1 Module Introduction/2 What is Seq-to-Seq Modelling.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-7/2-what-is-seq-to-seq-modelling-transcript.txt",
+    "week": 7,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 7 Sequential Modeling - The Recurrent Neural Network (RNN) Era/Lesson 2 Recurrent Neural Networks (RNNs)/1 What is Recurrent Neural Network (RNN).txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-7/3-what-is-recurrent-neural-network-rnn-transcript.txt",
+    "week": 7,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 7 Sequential Modeling - The Recurrent Neural Network (RNN) Era/Lesson 2 Recurrent Neural Networks (RNNs)/2 Applications of Recurrent Neural Network (RNN).txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-7/4-applications-of-recurrent-neural-network-rnn-transcript.txt",
+    "week": 7,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 7 Sequential Modeling - The Recurrent Neural Network (RNN) Era/Lesson 3 Vanishing Gradient/The Vanishing Gradient Problem.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-7/5-the-vanishing-gradient-problem-transcript.txt",
+    "week": 7,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 7 Sequential Modeling - The Recurrent Neural Network (RNN) Era/Lesson 4 Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU)/1 What is Long Short-Term Memory (LSTM).txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-7/6-what-is-long-short-term-memory-lstm-transcript.txt",
+    "week": 7,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 7 Sequential Modeling - The Recurrent Neural Network (RNN) Era/Lesson 4 Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU)/2 What is Gated Recurrent Unit (GRU).txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-7/7-what-is-gated-recurrent-unit-gru-transcript.txt",
+    "week": 7,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 8 The Transformer Revolution/Lesson 1 Module Introduction/Module Introduction.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-8/1-module-introduction-transcript.txt",
+    "week": 8,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 8 The Transformer Revolution/Lesson 2 The Attention Is All You Need Paper/1 Overview of the Attention Is All You Need paper.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-8/2-overview-of-the-attention-is-all-you-need-paper-transcript.txt",
+    "week": 8,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 8 The Transformer Revolution/Lesson 2 The Attention Is All You Need Paper/2 Transformer Model Explained.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-8/3-transformer-model-explained-transcript.txt",
+    "week": 8,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 8 The Transformer Revolution/Lesson 2 The Attention Is All You Need Paper/3 Some popular Transformer Models.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-8/4-some-popular-transformer-models-transcript.txt",
+    "week": 8,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 8 The Transformer Revolution/Lesson 3 HuggingFace Overview/1 What is HuggingFace.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-8/5-what-is-huggingface-transcript.txt",
+    "week": 8,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 8 The Transformer Revolution/Lesson 3 HuggingFace Overview/2 How to Generate HuggingFace Token and Implement a HuggingFace Model.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-8/6-how-to-generate-huggingface-token-and-implement-a-huggingface-model-transcript.txt",
+    "week": 8,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 9 Natural Language Understanding (NLU) with Bidirectional Encoder Representations from Transformers (BERT)/Lesson 1 Module Introduction/Module Introduction.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-9/1-module-introduction-transcript.txt",
+    "week": 9,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 9 Natural Language Understanding (NLU) with Bidirectional Encoder Representations from Transformers (BERT)/Lesson 2 Understanding BERT/1 Overview of BERT Architecture.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-9/2-overview-of-bert-architecture-transcript.txt",
+    "week": 9,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 9 Natural Language Understanding (NLU) with Bidirectional Encoder Representations from Transformers (BERT)/Lesson 2 Understanding BERT/2 Applications of BERT.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-9/3-applications-of-bert-transcript.txt",
+    "week": 9,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 9 Natural Language Understanding (NLU) with Bidirectional Encoder Representations from Transformers (BERT)/Lesson 3 Types of BERT Models/Different variations of BERT.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-9/4-different-variations-of-bert-transcript.txt",
+    "week": 9,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 10 Text Classification/Lesson 1 Module Introduction/Module Introduction and Motivation.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-10/1-module-introduction-and-motivation-transcript.txt",
+    "week": 10,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 10 Text Classification/Lesson 2 Understanding Sentiment Analysis/Understanding Sentiment Analysis.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-10/2-understanding-sentiment-analysis-transcript.txt",
+    "week": 10,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 10 Text Classification/Lesson 3 Implementing Sentiment Analysis/1 Implement Sentiment Analysis with NLTK.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-10/3-implement-sentiment-analysis-with-nltk-transcript.txt",
+    "week": 10,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 10 Text Classification/Lesson 3 Implementing Sentiment Analysis/2 Implement Sentiment Analysis with BERT.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-10/4-implement-sentiment-analysis-with-bert-transcript.txt",
+    "week": 10,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 10 Text Classification/Lesson 3 Implementing Sentiment Analysis/3 Comparing both Approaches.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-10/5-comparing-both-approaches-transcript.txt",
+    "week": 10,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 10 Text Classification/Lesson 3 Implementing Sentiment Analysis/4 Implement Sentiment Analysis with Flair.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-10/6-implement-sentiment-analysis-with-flair-transcript.txt",
+    "week": 10,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 10 Text Classification/Lesson 3 Implementing Sentiment Analysis/5 Implement Sentiment Analysis with SpaCy.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-10/7-implement-sentiment-analysis-with-spacy-transcript.txt",
+    "week": 10,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 11 Topic Modeling/Lesson 1 Module Introduction and Motivation/Introduction to Topic Modelling.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-11/1-introduction-to-topic-modelling-transcript.txt",
+    "week": 11,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 11 Topic Modeling/Lesson 2 Topic Modelling with Latent Dirichlet Allocation (LDA) (Theory + Hands-On)/1 Introduction to Latent Dirichlet Allocation (LDA).txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-11/2-introduction-to-latent-dirichlet-allocation-lda-transcript.txt",
+    "week": 11,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 11 Topic Modeling/Lesson 2 Topic Modelling with Latent Dirichlet Allocation (LDA) (Theory + Hands-On)/2 Key Assumptions of LDA.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-11/3-key-assumptions-of-lda-transcript.txt",
+    "week": 11,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 11 Topic Modeling/Lesson 2 Topic Modelling with Latent Dirichlet Allocation (LDA) (Theory + Hands-On)/3 Implementing Topic Modelling with LDA (Lab 5).txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-11/4-implementing-topic-modelling-with-lda-lab-5-transcript.txt",
+    "week": 11,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 11 Topic Modeling/Lesson 3 Topic Modelling with BERTopic (Theory + Hands-On)/1 Why Do We Need Alternatives to LDA.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-11/5-why-do-we-need-alternatives-to-lda-transcript.txt",
+    "week": 11,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 11 Topic Modeling/Lesson 3 Topic Modelling with BERTopic (Theory + Hands-On)/2 What Is BERTopic.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-11/6-what-is-bertopic-transcript.txt",
+    "week": 11,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 11 Topic Modeling/Lesson 3 Topic Modelling with BERTopic (Theory + Hands-On)/3 High-level Overview of the Architecture.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-11/7-high-level-overview-of-the-architecture-transcript.txt",
+    "week": 11,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 11 Topic Modeling/Lesson 4 Underrated Techniques for Topic Modelling/GSDMM for Topic Modelling.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-11/8-gsdmm-for-topic-modelling-transcript.txt",
+    "week": 11,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 12 Natural Language Generation (NLG) with Large Language Models (LLMs)/Lesson 1 From Transformers to Large Language Models/1 Why Decoder-Only Models Dominate NLG.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-12/1-why-decoder-only-models-dominate-nlg-transcript.txt",
+    "week": 12,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 12 Natural Language Generation (NLG) with Large Language Models (LLMs)/Lesson 1 From Transformers to Large Language Models/2 What is a Large Language Model (LLM).txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-12/2-what-is-a-large-language-model-llm-transcript.txt",
+    "week": 12,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 12 Natural Language Generation (NLG) with Large Language Models (LLMs)/Lesson 1 From Transformers to Large Language Models/3 Why LLMs Are Good at Natural Language Generation.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-12/3-why-llms-are-good-at-natural-language-generation-transcript.txt",
+    "week": 12,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 12 Natural Language Generation (NLG) with Large Language Models (LLMs)/Lesson 2 Natural Language Generation with LLMs/1 What is Natural Language Generation.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-12/4-what-is-natural-language-generation-transcript.txt",
+    "week": 12,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 12 Natural Language Generation (NLG) with Large Language Models (LLMs)/Lesson 2 Natural Language Generation with LLMs/2 How LLM generate a response.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-12/5-how-llm-generate-a-response-transcript.txt",
+    "week": 12,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 12 Natural Language Generation (NLG) with Large Language Models (LLMs)/Lesson 2 Natural Language Generation with LLMs/3 Controlling LLM Output.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-12/6-controlling-llm-output-transcript.txt",
+    "week": 12,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 12 Natural Language Generation (NLG) with Large Language Models (LLMs)/Lesson 2 Natural Language Generation with LLMs/4 Choosing the Right Strategy.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-12/7-choosing-the-right-strategy-transcript.txt",
+    "week": 12,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 12 Natural Language Generation (NLG) with Large Language Models (LLMs)/Lesson 3 Prompt Engineering Basics/1 What is a Prompt and Why Does it Matter.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-12/8-what-is-a-prompt-and-why-does-it-matter-transcript.txt",
+    "week": 12,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 12 Natural Language Generation (NLG) with Large Language Models (LLMs)/Lesson 3 Prompt Engineering Basics/2 Core Components of a Prompt.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-12/9-core-components-of-a-prompt-transcript.txt",
+    "week": 12,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 12 Natural Language Generation (NLG) with Large Language Models (LLMs)/Lesson 3 Prompt Engineering Basics/3 Zero-Shot, One-Shot and Few-Shot Prompting.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-12/10-zero-shot-one-shot-and-few-shot-prompting-transcript.txt",
+    "week": 12,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 12 Natural Language Generation (NLG) with Large Language Models (LLMs)/Lesson 3 Prompt Engineering Basics/4 Practical Prompting Guidelines.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-12/11-practical-prompting-guidelines-transcript.txt",
+    "week": 12,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 12 Natural Language Generation (NLG) with Large Language Models (LLMs)/Lesson 4 Generating API Keys for using LLM Models/1 Quick walkthrough of Google AI Studio - Playground.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-12/12-quick-walkthrough-of-google-ai-studio-playground-transcript.txt",
+    "week": 12,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 12 Natural Language Generation (NLG) with Large Language Models (LLMs)/Lesson 4 Generating API Keys for using LLM Models/2 How to generate API Key for using Gemini Models.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-12/13-how-to-generate-api-key-for-using-gemini-models-transcript.txt",
+    "week": 12,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 12 Natural Language Generation (NLG) with Large Language Models (LLMs)/Lesson 4 Generating API Keys for using LLM Models/3 Quick walkthrough of OpenAI Platform & API Creation.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-12/14-quick-walkthrough-of-openai-platform-api-creation-transcript.txt",
+    "week": 12,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 13 Capstone Project - QuizGenius AI/Lesson 1 Project Introduction/Project Introduction.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-13/1-project-introduction-transcript.txt",
+    "week": 13,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 13 Capstone Project - QuizGenius AI/Lesson 2 Project Setup/Package Installation and API Setup.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-13/2-package-installation-and-api-setup-transcript.txt",
+    "week": 13,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 13 Capstone Project - QuizGenius AI/Lesson 3 Prompt Engineering/Creating the Prompt Template.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-13/3-creating-the-prompt-template-transcript.txt",
+    "week": 13,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 13 Capstone Project - QuizGenius AI/Lesson 4 Logic Development/1 Building the Quiz Generation logic.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-13/4-building-the-quiz-generation-logic-transcript.txt",
+    "week": 13,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 13 Capstone Project - QuizGenius AI/Lesson 4 Logic Development/2 Building the Main Application Runner.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-13/5-building-the-main-application-runner-transcript.txt",
+    "week": 13,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 13 Capstone Project - QuizGenius AI/Lesson 5 Final Demo/Demo the application.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-13/6-demo-the-application-transcript.txt",
+    "week": 13,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 13 Capstone Project - QuizGenius AI/Lesson 6 Building a Full-Stack App/1 Overview of our Implementation.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-13/7-overview-of-our-implementation-transcript.txt",
+    "week": 13,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 13 Capstone Project - QuizGenius AI/Lesson 6 Building a Full-Stack App/2 The Flow and Architecture of our Application.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-13/8-the-flow-and-architecture-of-our-application-transcript.txt",
+    "week": 13,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 13 Capstone Project - QuizGenius AI/Lesson 6 Building a Full-Stack App/3 Setting up the Project Architecture.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-13/9-setting-up-the-project-architecture-transcript.txt",
+    "week": 13,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 13 Capstone Project - QuizGenius AI/Lesson 6 Building a Full-Stack App/4 Building the Backend.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-13/10-building-the-backend-transcript.txt",
+    "week": 13,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 13 Capstone Project - QuizGenius AI/Lesson 6 Building a Full-Stack App/5 Building the Frontend.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-13/11-building-the-frontend-transcript.txt",
+    "week": 13,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 13 Capstone Project - QuizGenius AI/Lesson 6 Building a Full-Stack App/6 Let's Run the Application.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-13/12-let-s-run-the-application-transcript.txt",
+    "week": 13,
+    "course": "natural-language-processing-and-understanding"
+  },
+  {
+    "source": "Natural Language Processing & Understaning/Week 13 Capstone Project - QuizGenius AI/Lesson 6 Building a Full-Stack App/7 Updating the Architecture of our Application.txt",
+    "dest": "natural-language-processing-and-understanding/transcriptions/week-13/13-updating-the-architecture-of-our-application-transcript.txt",
+    "week": 13,
+    "course": "natural-language-processing-and-understanding"
+  }
+]
