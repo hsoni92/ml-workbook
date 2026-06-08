@@ -1,0 +1,466 @@
+Let's start with Google Trends. So
+Google Trends is a tool that helps you
+understand.
+What people are searching across the
+world, uh, across any region, across
+any category. So let's see what people
+are searching for iPhone.
+So let's suppose we're looking for
+iPhone 17, let's click on explore.
+So this is where we can see how people
+in India have been searching across
+iPhone in the last 24 hours. Uh, this
+tool also helps you understand search
+trend for Google Web Search and even
+YouTube.
+Now let's suppose we want to do a
+comparison of two categories. Let's
+suppose a
+MacBook.
+OK. Now, we will again come back to
+this Google search view. It gives you a
+very interesting graph which helps you
+understand for these two terms, iPhone
+17 and MacBook, how the interest of
+people in India have been, uh, changing
+in the last 24 hours. Of course, we can
+go ahead and change the timeline. Let's
+suppose we want to see the data for the
+last 3 months. Uh, this is, you can see
+MacBook,
+interest has been spiked in the last
+few days.
+Of course, we can go back and change
+the timeline as we want. Uh, again, we
+can look into either what people are
+searching across Google search, image,
+Google shopping, news, or even YouTube,
+as I mentioned.
+OK, but the interesting thing over here
+is, let's suppose we want to again go
+back to uh Google search over here.
+Again, we're looking into two search
+term categories like iPhone 17 and
+MacBook. We first understood how we can
+understand what people are searching
+for and what the trend looks like, but
+also if you scroll down a little below,
+uh, we will also see what are the other
+top queries associated with these
+keyboards.
+One is like people are mostly searching
+for iPhone 17 Pro that has been up by
+4%, people who are searching for 17 Pro
+Max, that is down by -4%, so on and so
+forth. So it gives you an overview of
+what people are searching and as a
+marketeer, how you can cater to this
+demand.
+Similarly, you can see on the right
+side of the screen, uh, some of the
+rising queries in terms of the fastest
+growing queries you can imagine, like
+people who have been, uh, looking for
+the Republic Day offers or some Vijay
+sales offers and so on and so forth. So
+this is all about Google trends.
+OK, now we will explore another tool,
+uh, which is a part of Google Trends.
+It's called trends.google.com/tv. Uh,
+again, it's, uh, it's a, it's a tool
+that helps you understand, uh, what are
+the top searches that are appearing in
+a particular country. So let's suppose
+we want to see what is trending in
+Canada.
+So you will see what are the top
+searches people in Canada are doing.
+Let's suppose you want to see it for
+India.
+Again, people are India are right now
+searching for the, some of these top
+searches. So it's a very cool tool
+which helps you understand what people
+are searching in a particular country
+at an aggregate level.
+OK, uh, now we will explore another
+free tool, which is called Uber Suggest,
+but before we go there, let's try to
+understand what's the motivation of
+people who are searching what they're
+searching for. So the technical term
+that we use as marketeers is called a
+search engine. It basically talks about.
+What's the purpose of an individual?
+Why she is making an online search?
+It's the reason behind why he or she
+conducts a specific search. So
+basically we can categorise all the
+motivation of a user into 4 major
+categories. The first category of
+search intent or search motivation is
+known as informational intent. It
+basically talks about.
+People with informational intent have a
+specific question or want to know more
+about a certain topic, like they want
+to know about information, for example,
+a search query like what is the capital
+of India. It could be categorised as an
+informational intent. The person is
+looking for some information.
+Second is navigational content. For
+example, people who search for Facebook,
+they're usually on their way to the
+Facebook website. Imagine yourself like
+if you're going to Google search bar
+and just writing out Amazon, your idea
+is just to go to Amazon's website. So
+you're just using Google Search as a
+navigation.
+The third category is transactional
+intent, where people are
+looking or their purpose is to buy
+something, right? So sometimes you
+write like, OK, buy an iPhone 17, right?
+So that's the transactional intent that
+we call. Sometimes you're not ready to
+buy, you are just in an investigation
+mode. We call this as a commercial
+investigation. These people also have a
+transactional mode, but they're right
+now at a little early stage and they're.
+Using YouTube or Google to research
+about a particular product, for example,
+what's the difference between an LG
+washing machine model number 3321 as
+compared to a Samsung washing machine
+or model number 591. So this is where
+you're doing a little bit of research,
+so we kind of categorise all those.
+Particular searches as commercial
+investigation.
+Now, just remember this fact and let's
+go to our tool, which is called Uber
+Suggest.
+Uh, you can just Google and Uber
+Suggest, sign in with your Gmail. It's
+a free tool, uh, till a certain extent,
+it's free.
+Uh, you can use the free version to
+kind of get some basic ideas. I've
+already signed up over here. Once you
+land into Uber, suggest, click on
+keyword ideas. Once you click on
+keyword ideas,
+A screen like this will appear?
+Now let's suppose I want to do a search
+for bits planning.
+OK, so here the results are out.
+Remember the intent that we talked
+about? You can see over here a C or N,
+commercial or navigational. So for
+example, people who are just searching
+Bits Pilani, they're mostly into
+commercial investigation mode, whereas
+people who are searching for Bits
+Pilani Hyderabad, they're mostly into
+transactional mode. They're trying to
+get into the Bitspilai Hyderabad
+website.
+OK, now you can see a lot of other
+metrics, as volume, CPC, PD and SU
+difficulty. Now, just try to look into
+volume and your difficulty. Volume
+basically means the monthly search
+volume,
+like monthly average monthly search
+queries for this particular keyword.
+Again, example, for Bits Panning, the
+average search volume in a particular
+month is almost 300,000.
+And then what is SO difficulty rate?
+It's basically how difficult or how
+competitive this keyword is on Google
+searches via organic forms.
+Now, these are the two things that you
+broadly should know, uh.
+OK, so why should we consider about
+these two things, which is monthly
+search volume or SO difficulty rate, or
+also sometimes known as keyword
+difficulty rate. The monthly search
+volume basically talks about the number
+of search queries in a particular area
+for that particular category or keyword.
+SO difficulty rate basically talks
+about, as I mentioned, how difficult it
+would be or how competitive it would be
+to rank those particular keywords. In
+an organic way in Google, that is
+without paying any money or running any
+ads.
+So, for example, when you see this in
+Uber suggest, as I said, just look into
+volume and SA difficulty there. Now
+imagine you are a marketeer at
+Bitspilani and you have to decide which
+keyword to use, for example.
+Bitsilani in Goa or Bitspilai Goa,
+right, there's a subtle difference over
+here. The surge volume in Bitspiani in
+Goa is almost 33,000 in a month, and
+Bitspilai Goa is only 14,800. On the
+face of it, both these keywords look
+very similar, but the surge volume has
+dropped to half from 33,000 to almost
+15,000. But interestingly, the SEO
+difficulty rate is almost 18 as
+compared to 15. So this particular
+keyword, Bitspilai Goa,
+is not only a keyword with less search
+volume, but also it's highly
+competitive. So in that case, it would
+be preferred to choose Bitspilai in Goa
+as a keyword when you are writing your
+blogs or website content. Ideally, a
+marketer should choose this one because
+it has not only got high surge volume,
+but it's it's also less competitive. So
+what's the framework over here we are
+talking, so whenever you're trying to
+write a blog or website content and in
+order to ensure Google crawlers quickly
+crawl your website, and you have a
+higher probability of ranking into the
+first page of Google uh in the shortest
+possible time.
+Just remember the framework. We have to
+choose a keyword where the monthly
+search volume should not be very high,
+because if it's too high, the chances
+are the difficulty rate will also be
+high or the competitiveness of it will
+also be high. But again, it's not
+always the case, but generally that's
+how it goes. So remember, the monthly
+search volume should be moderate,
+neither too high nor too low. Uh,
+because if it's high, it might be very
+competitive, and if it's too low,
+there's, there's no point of doing so
+much effort. For example, if only 10
+people are searching for a particular
+category, why to do so much effort?
+Then on 2, the essay difficulty rate or
+the keyword difficulty rate should be
+low to moderate because if it's too
+high, it will take a long amount of
+time and a lot of effort to get into
+the first few pages of Google. So, just
+the two frameworks, MSV or the monthly
+search volume should be moderate, and
+SAO difficulty rate should be low to
+moderate. And almost the same principle
+applies in any of the AI-based tools as
+well, like the GPTs of the world or the
+Geminis.
+OK, now let's talk about some of the
+paid tools that are available. This is
+called as SCMrush, it's one of the uh
+most popular tools in SEO and uh AI
+based content analysis tools. Uh, once
+you sign up over here, the tool
+provides you a beautiful dashboard.
+Again, it's almost provides the same
+metric, but at a much deeper level. So
+for example, let's take an example of a
+category as interior design software,
+as you can see over here.
+This is a report from SCM Rush itself.
+We are looking for a category of
+interior design software in the United
+States. We are seeing right now 4
+different keywords interior design
+software, free interior design software,
+best interior design software, and 3D
+interior design software. And all these
+keywords have different keyword volume.
+And remember I said some of the tools
+call at KD percentage or keyword
+difficulty rate, or some say SEO
+difficulty rate. It's both the same. Of
+course, some measure it on a scale of
+100, some measure it on a scale of 50,
+but essentially, uh, the same thing.
+So with that, uh, let's look at the
+first keyword, the interior design
+software. It has got a surge volume of
+almost 4400 in the US but with a
+keyword difficulty data of 72.5. Free
+interior design software, however, the
+volume drops to 2400, but the keyword
+difficulty rate is even higher than
+this, which is almost 75. Best interior
+design software comes at 880 search
+volume, but the keyword difficulty rate
+is even higher. 3D interior design
+software at the last, it has got the
+least search volume and also the least
+keyword difficulty rate.
+So one of the things is what we can do
+is we can probably start with interior
+design software because it has got high
+surge volume and a moderate keyword
+difficulty rate. But in order to Ensure
+we choose one of the best keywords, we
+could also go with 3D interior design
+software, although the search volume is
+significantly lower, but so is the
+keyword difficulty rate. So probably
+our first choice could be 3D interior
+design software and gradually move to
+interior design software as a keyword.
+OK, this is, again, from a tool called
+as RFS. Uh, it's again a paid tool. Uh,
+you can go and sign up over there and
+uh.
+You know, get into the keyword analysis
+report. Uh, again, we'll look into
+three keywords. First keyword is how to
+lose weight. Uh, you can see the KAD is
+almost at 49, the volume is 90,000. How
+to lose weight fast, The KAD drops from
+49 to 45, but the surge volume also
+drops from 90,000 to 58,000. But lose
+weight, where the surge volume is the
+least, which is at 35,000, but KD is at
+highest, it's at 56.
+So, as I mentioned, uh, the KD and the
+search volume, it's not like if the
+search volume is high, the keyword
+difficulty will always be highest, uh,
+you know, the data are as for the
+competitiveness of a market, of a
+category, and of a region. So, the
+ideal framework one should use is. The
+surge volume should be moderate. You
+can take a median or the average of the
+surge volumes, and also the keyword
+difficulty rate, again, a median or the
+average, and it should be low to
+moderate. So don't just blindly choose
+any keywords which has got a high
+search volume or a low search volume.
+Uh, just try to marry both the data
+points. So in this case, an ideal bet
+could be. Choosing the second one, how
+to lose weight fast, because it has got
+a keyword difficulty rate which is also
+moderate, and the volume is also
+moderate at 58,000. Because if we
+choose the last one, the keyword
+difficulty rate is the highest.
+OK. Now, we will go to Google Ads
+keyword planner. Uh, it's also another
+tool where you can, uh, do your keyword
+research. Again, we'll talk more on
+this once we get into Google Ads
+ecosystem. But for now, uh, what you
+can do is probably, you can just listen
+to this module, but once we get into
+the ads module in module 6 or 7, which
+is week 6 or 7, we can talk more about
+Google Ads, but Google Ads also gives
+you a feature to understand what people
+are searching in a particular area or
+region.
+So what we have to do is, once you get
+into ads.google.com, so this is the
+interface that you can see over here.
+All we have to do is click on tools.
+Then click on planning. Under Planning,
+you'll get Keyword planner as an option.
+OK. Now, it again gives you two choices.
+Either you can put your website and it
+helps you understand what are the key
+keywords or thematic keywords that you
+should look into. Uh, or there's also
+an option, if you just want to plug in
+some of the known keywords that you
+want to look for, it will give you the
+exact search volume. So let's go with
+option two for now, which is get search
+volume and forecast.
+Similar thing, let's say we want to see
+for Bitspiani, click started.
+OK, so over here you can change the
+targeting. It's basically, I want to
+see instead of whole of India, I just
+want to see.
+Ah, Delhi.
+So you can see, uh, you can also, uh,
+you know, get into some specific areas
+of Delhi as well, but let's just stick
+to Delhi for now. Click on save. So the
+average search volume is anywhere
+between 10,000 to 100,000, which is
+almost a lakh. Uh, but again, it
+doesn't give you the competitiveness
+because it just gives you some other ad
+metrics which we are not interested
+right now, which we'll talk in the
+later few modules. But over here you
+can get the average monthly searches.
+So this is also one of the ways you can
+uh look into market demand estimation.
+So we talked about a few tools, like
+Google Trends, Uber Suggests, Shim Rush,
+RFS and Google Ads.
+OK, let's suppose you don't want to use
+any one of those, so what you can do is
+you can go to this website called
+Answer the Public.
+Just Google it out, click on the first
+link, which is answer thepublic.com.
+You can sign up with Google uh with a
+Gmail account. Uh, let's suppose again
+we want to look for.
+Let's suppose simple thing, iPhone 17
+maybe.
+You can select the language, you can
+select the region, let's suppose it's
+India. Click search.
+Just wait for a few seconds, it's
+create a kind of a neural map.
+OK, so what it does, it's in a, at a
+very simplistic thing, it pulls all the
+data from Google searches, YouTube, all
+the AI models like chat GPTs, Gemini,
+across all the social medias, popular
+social medias like Twitter and uh
+Instagram. Uh, and it pulls out what
+are the main categorical searches
+happening across all the AI tools,
+Google searches, YouTube, and social
+media. So for example, it says like in
+search engines, uh, in India, iPhone 17
+Pro Max is kind of the most searched
+term. On the other side, on social
+media, iPhone 17 Pro Max is again, kind
+of the most trending hashtags, and
+people are also searching for that. In
+AI models, people are kind of running
+some queries like.
+When will the next generation of iPhone
+17 be launched? What are the expected
+features? What are the rumoured design
+changes, so on and so forth. So if you
+don't want to use any of the technical
+tools, uh, your friend is, answer
+thepublic.com, it kind of gives you a
+very quick data in a short amount of
+time. But again, it's not very, uh,
+immersive, uh, not very data-oriented,
+but if, it just gives you the data in a
+few seconds and a few clicks.

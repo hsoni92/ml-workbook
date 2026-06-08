@@ -1,0 +1,134 @@
+Now we have understood how to
+understand market demand. But once we
+have understood the market demand,
+let's try to understand how we can
+forecast a market demand in a very
+quick and easy way. Basically how we
+can predict a market demand without
+using very high level codes or AI or ML
+models. With just a few simple clicks
+and using Google's ML power, how we can
+predict market demand. So for this we
+will use this tool called a simple ML
+for sheets. Imagine on Google Sheets,
+uh, you can run an ML model without
+writing even a line of code. This tool,
+as I mentioned, it's called Simple ML
+for sheets. You can read more about it
+on SimLfsheets.com.
+With this, let's get to understand what
+it does. So SimpleML4 sheets allows
+anyone to use machine learning in
+Google Sheets without any prior
+knowledge of ML coding or the need to
+share data with third parties. SimpleML
+is an add-on for Google Sheets to solve
+the most common ML task. Its main tasks
+are highly automated ML capabilities
+that do not require users to know ML.
+You can do predict missing values, spot
+abnormal values, and even forecast
+future values.
+We are right now interested in the uh
+part of forecasting, right? So again,
+what is forecasting? Forecasting is the
+prediction of future events based on
+past data and is central to decision
+making in many technical domains. For
+instance, predicting product sales in
+retail, forecasting energy demand, or
+anticipating customer return all have
+tremendous value across different
+industries.
+Forecasting uses historical data to
+predict future data by looking for
+patterns in the data over time. You can
+only forecast future values if each
+example in the data set includes a time
+or date from the date that was
+collected.
+OK, so let's take a practise websheet
+to understand how we can do it in a
+real world. So, yeah, in this tutorial,
+we will use simple ML, as I mentioned,
+to forecast future values.
+Let's assume you were a data analyst
+for a air travel company in the 1960s,
+and you have records of number of
+monthly passengers from January 1949 to
+December 1960. Our objective is to
+predict the traffic from January 1961
+to May 1963.
+How to do it. So this is the. Google
+Sheet Uh, it will be available on your
+portal. You can have a look into that.
+So once you click on that, it will say
+make a copy.
+Just click on make a copy over here.
+OK, now we will skip everything and
+we'll come to tab number 5, which is
+known as case 4 or which is also known
+as forecast future values. Now first
+step is we have to install the simple
+ML4 sheets over here. So we'll go to uh
+extensions, we'll click on add-ons,
+we'll click on get add-ons.
+A simple pop up box will open.
+We will write simple ML for sheets.
+Let's see this over here.
+You'll see simple ML for sheets by
+tenor Flow Decision for esteem, click
+install, click Continue.
+So give the required permissions.
+OK, it says it has been installed.
+Great.
+Let's check. Yeah, it's done. So as you
+can see over here, we have the data and
+values uh for. All the years and the
+passengers, but we don't have values
+from 1961. We have values till 1960.
+Remember our problem statement? Our
+problem statement was we have the data
+from January 19949 to December 1960,
+but we need to predict that passenger
+traffic from January 1961, 1961 to 1963.
+So these are the three years we are
+predicting. Let's get back over here.
+So just select these two things. Again,
+click on extensions, you will see your
+simple ML4 sheets already installed.
+Remember, just a minute back we have
+installed it. Now go back to a simple
+ML for sheets, click on Start.
+OK, it says authorization required.
+Just click on continue.
+I can click on continue.
+Oh.
+OK.
+Now, we'll click on, as I mentioned,
+the tool can do a lot of things. Uh,
+first, it can predict missing values,
+it can spot abnormal values, or it can
+forecast future values. We are
+interested on this forecast feature, so
+click on that.
+So it will ask what we are looking to
+forecast, click on value because that's
+what this particular column we are
+trying to forecast, which is the number
+of passengers.
+So click on forecast, give it a minute.
+OK, so it looks like it's done. Let's
+scroll to that down. Yes, it has
+started forecasting all the values from
+1961 up till 1963, and it automatically
+creates a graph also over here, as you
+can see. So the blue line is the past
+data and the red line is the predicted
+value as it mentions, and of course you
+can change the timeline as you want.
+So this is Simple ML for sheets, which
+helps us use a machine learning model
+and forecast future values right in a
+Google Sheet without writing even a
+single piece of code.

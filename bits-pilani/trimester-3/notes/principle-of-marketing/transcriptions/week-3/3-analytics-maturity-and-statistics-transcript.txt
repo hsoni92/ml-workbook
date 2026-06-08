@@ -1,0 +1,248 @@
+Today I'm going to walk you through a
+set of foundational concepts that sit
+at the heart of analysis and market
+research. We'll start with the
+analytics maturity model, move into
+core statistics, explore how we
+summarise and understand data, and
+finally look at the sampling methods
+that determine the quality of insights
+we gather. Let's break this journey
+step by step. So we'll start with the
+foundational statistics. There are 4
+different kinds of statistical models
+that are available to us. First one is
+the descriptive model. Then we have the
+diagnostic model. Then we have the
+predictive model. And finally we have
+the prescriptive model. First, let's
+try to understand what descriptive
+model talks about. In descriptive
+analytics, we begin with basics,
+understanding what has already happened.
+We look at reports, alerts, dashboards,
+and summaries that tell us systems or
+campaigns and how they've performed.
+It's essential and forms the baseline
+for everything that follows. Whereas in
+the diagnostic analysis model we dig
+deeper into why it has happened, here
+we use queries, data mining, and
+statistical analysis to uncover the
+root causes, correlations, and patterns.
+This is where data begins to tell a
+more meaningful story. Then we move
+into predictive analytics. What will
+happen using machine learning,
+statistical models, and simulators? We
+start forecasting future outcomes. This
+shifts organisations from a reactive to
+proactive decision making. Finally, in
+the prescriptive analytics model, it
+talks about the highest level. How do
+we make it happen? We apply
+optimisation and planning techniques to
+recommend actions that drive desired
+outcomes. Here, analytics doesn't just
+anticipate the future, it shapes it. As
+we move up through the stages, value
+increases, complexity increases, and
+organisations become more data driven
+and strategic. We go from understanding
+the past to influencing the future. Now
+let's look at the statistical
+foundations behind all these
+descriptive and inferential statistics.
+In descriptive statistics, the goal is
+simple summarise, organise, and
+describe the data we already have.
+We are answering questions like what's
+the average, what's the typical, what's
+the distribution look like. Marketeers
+rely on descriptive stats to understand
+things like average purchases per
+customer, most common products selected,
+median response time, average open
+rates, and we use tools like mean,
+median mode, variance, standard
+deviation, percentiles, and quartiles.
+Descriptive statistics gives us a clean
+and clearer picture of what it is. In
+inferential statistics, we go a step
+further here. We take a sample of data
+and make predictions or generalisations
+about a larger population. Examples in
+marketing include AB testing of two
+different ad variations, estimating
+revenue from a sample set, checking if
+churn differs by region, by country, or
+by city. We rely on confidence
+intervals, hypothesis testing, P values,
+and Z scores to determine whether we
+are seeing a meaningful or just a
+random variation. In short, descriptive
+statistics helps us understand existing
+data, whereas inferential statistics
+help us predict beyond it. Now let's
+look at the measures of central
+tendency.
+One of the first questions marketers
+ask when looking at data is, what's the
+normal? To answer that, we look at
+measures of central tendency, the
+statistical values that identify the
+centre of a distribution. There are 3
+main measures mean, the arithmetic
+average. It's widely used, simple to
+calculate, and familiar with everyone,
+but it can be pulled up or down by
+extreme values.
+So we use median. Median is nothing but
+the middle value when data is sorted.
+It's resistant to outliers and gives a
+realistic sense of what's typical when
+data is skewed. Mode, on the other hand,
+it's the value that appears most
+frequently.
+This is especially helpful with
+categorical data like the most commonly
+purchased product or selected plan.
+Together these measures help us find
+the hard bit of our data set from the
+backbone of understanding typical
+consumer behaviours. Knowing the centre
+is useful but not enough. We also need
+to understand how the spread of the
+data is. That's where measures of
+dispersion comes in.
+These measures tell us how much
+variability exists around the centre.
+In marketing. This is crucial because
+performance, behaviour, and engagement
+can be unpredictable. Here are the key
+measures. First, range, the difference
+between highest and lowest value,
+simple but sensitive to outliers. Then
+we have variance, the average squared
+distance from the mean. It tells us how
+spread out values are, especially when
+comparing data sets. Standard deviation
+is nothing but the square root of
+variance. This is the most popular
+measure of spread because it's easy to
+interpret and in the same units as the
+original data. A high standard
+deviation shows unpredictable behaviour.
+A low one shows consistency. Now moving
+to percentiles. They are nothing but
+the indicators of where a value stands
+relative to the rest. For example,
+being in the 80th percentile means
+outperforming 80% of the observations.
+Quartiles and IQR, or interquartile
+range as we call it. It's nothing but
+dividing the data into 4 parts and
+measuring the middle 50%. This helps
+identify outliers, compare segments,
+and understand typical performance
+without extreme skewing the story.
+Together these measures gives a
+realistic nuanced view of your data and
+help marketeers make grounded decisions.
+Once we know how to understand data,
+the next step is knowing how to collect
+it. In market research, there are many
+ways to design a sample, and no method
+is perfect. Each one varies in its
+accuracy, reliability, and efficiency.
+Today, let's look into the two most
+popular and prominent statistical
+survey methods. The first one is
+stratified sampling, and the other one
+is cluster-based sampling. In
+stratified sampling, we divide the
+population into meaningful subgroups
+called strata based on factors like
+demographic segments, regions, or
+product behaviour. Then we select a
+random sample from each stratum. This
+method ensures representation, reduces
+bias, and improves accuracy. It's ideal
+when you need proportional
+representation or want to compare
+groups more fairly. Whereas in cluster
+sampling we don't pick individuals one
+by one, instead we divide the entire
+population into groups called clusters,
+and then we randomly choose a few of
+those specific clusters. Once a cluster
+is selected, we include everyone inside
+that cluster in that sample. Cluster
+sampling is extremely efficient and
+cost effective when the population is
+geographically large or logistically
+difficult to reach.
+Now that we understood how each
+sampling method works, the natural next
+step is how they stack against each
+other, especially in terms of accuracy,
+reliability, and efficiency. Now let's
+try to understand how these two methods
+stack up against each other in terms of
+the various parameters that we have
+already selected. First, in terms of
+accuracy, stratified sampling
+consistently performs high in accuracy.
+Because every subgroup or stratum is
+represented, it minimises variance and
+reduces standard error. Each important
+group contributes to the sample, which
+builds a more precise reflection in the
+entire population. Cluster sampling, on
+the other hand, has low accuracy. If
+the randomly selected clusters are not
+truly a representation of the whole,
+the sample can become biassed. Accuracy
+heavily depends on how similar clusters
+are to one another, which isn't always
+guaranteed. Now moving on to the next
+parameter, which is reliability. In
+terms of reliability, stratified
+sampling performs high because repeated
+samples tend to produce very similar
+results. Why? Because the internal
+structure of the group is preserved,
+you're always pulling from the same
+meaningful strata, so the outcomes
+remain stable. Cluster sampling offers
+moderate stability. Results can vary
+depending on which clusters are chosen.
+Two different clusters might behave
+very differently, causing fluctuations
+in the outcome even under the same
+sampling design. Now moving on to the
+final parameter, which is in terms of
+efficiency. Stratified sampling tools
+tends to be low in efficiency. It
+requires a complete sampling frame, a
+full list of the population. The
+researcher must know and reach every
+stratum. That means more travel, more
+operational time, and more
+administrative effort. Cluster sampling
+is highly efficient. Instead of
+visiting every group, you focus on a
+handful of selective clusters, often
+called as nodes. Because of that,
+cluster sampling is far more practical
+for large scale. Or spread out
+populations. At the end of the day, the
+quality of your insights depends on how
+well you understand your data and how
+thoughtfully you collect it. When
+strong statistical foundations are
+paired with the right sampling approach,
+you gain the power to make smarter,
+more meaningful, and more confident
+decisions. With that, I'll see you on
+the next video.

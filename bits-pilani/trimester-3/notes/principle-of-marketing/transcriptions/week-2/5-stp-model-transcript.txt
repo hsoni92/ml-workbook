@@ -1,0 +1,134 @@
+Welcome back everyone. In the previous
+lesson, we explored how marketing
+thinking has evolved and examined key
+frameworks like AIDA, Pestel, and
+competitive analysis tools that help us
+understand the market environment. Now
+we will move from understanding the
+market to acting on it. In this lesson
+we'll focus on STP model and learn how
+marketers identify the right consumers,
+choose where to compete, and position
+products effectively in real world
+scenarios. So in the STP model, let's
+first start with S, which stands for
+segmentation. Segmentation means
+dividing a broader market into smaller
+distinct subgroups based on shared
+characteristics which can include
+demographics, psychographics, behaviour,
+or geography. Next is targeting. Here
+we evaluate the attractiveness of each
+segment by looking at factors such as
+size, profitability, reachability. And
+then select one or more segments to
+focus on. Finally, the P stands for
+positioning. It involves developing a
+unique, desirable, and competitive
+image for the product in the minds of
+the target consumers, especially when
+compared to its competitors. The
+easiest way to remember the STP model
+or the segmentation targeting model is
+through this. formula, which basically
+means segmentation plus targeting
+equals to positioning. Now let's
+understand each of these in a bit more
+detail. We'll first focus on
+segmentation, which is all about
+understanding how a broad audience,
+which can be grouped in meaningful ways.
+One common way to segment an audience
+is by geography, that is where they are
+located. This could mean by grouping
+customers by country, region, or even a
+specific city, depending on the product
+and the market being served. Another
+important basis of segmentation is
+demography or what defines the audience.
+This includes demographics such as age,
+gender, their economic status, their
+profession, or any other
+characteristics that help describe the
+audience at a basic level. Segmentation
+can Also be done based on behaviour or
+how the customers act. This looks at
+buying patterns, preferred
+communication channels, browsing habits,
+and the level of brand loyalty
+customers display. Finally, there is
+psychographic segmentation, or who the
+audience is at a deeper level. This
+type of segmentation focuses on
+personality traits of an individual
+like what's their lifestyle choices,
+hobbies, interests. This helps
+marketeers understand what truly
+motivates their customers. Taken
+together, these segmentation approaches
+help marketeers break down a larger
+market into clearer and more actionable
+groups. OK, now so far this might sound
+a little more complex. To make this
+look even more simpler, let's take a
+real world example. Let's suppose your
+product is a milk-based milk that you
+want to promote in your marketplace.
+Your general audiences might consist of
+people who want to move away from
+dairy-based products. Now you can
+segment this audience into two
+categories. One segment could be the
+people who are choosing dairy-free
+alternatives for lifestyle reasons.
+These are typically high-income groups
+who may be motivated by wellness,
+sustainability, or personal preferences.
+Another segment could be lactose
+intolerant consumers who are looking
+for alternative options because they
+cannot consume dairy on a daily basis.
+Although both the segments are
+interested in plant-based milk, the
+message we use for each of them would
+clearly be different. What appeals to a
+lifestyle-driven consumer may not
+resonate well in the same way for
+someone who is lactose intolerant. OK.
+Using tools like Google Data Studio,
+you can further segment these groups
+into people who already use a
+competitor's product and those who do
+not. Based on this, you can refine and
+tailor your messaging even more
+precisely. Once the segmentation is
+done, the next step is targeting. These
+are different types of targeting
+approaches that we would talk about.
+First, one is known as undifferentiated
+targeting. With undifferentiated
+targeting, a single product is marketed
+to a broad audience. For instance,
+Colgate used mass marketing for
+products like toothpaste, where the
+product is a staple and appeals to a
+wider audience. In differentiated
+targeting mechanism, companies design
+separate offerings for separate
+consumer groups. Example, Nike uses
+differentiated marketing for its
+various product lines tailored to
+different segments. For example, for
+runners, they have a different
+marketing message. For basketball
+players, they have a different
+marketing message. And for casual
+wearers they have a different marketing
+message. Next, the final one is
+concentrated targeting mechanism. It
+takes a more focused approach by
+serving specific niche, example,
+Lululemon concentrates on niche markets
+by offering high quality athletic wear
+for yoga enthusiasts and fitness
+conscious consumers.
