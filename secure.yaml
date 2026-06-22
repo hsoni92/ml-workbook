@@ -3,6 +3,7 @@
 # Paths ignored by Git (.gitignore, etc.) are skipped.
 # Staged: under a secured path, only .enc files (unless allow_staged_non_enc).
 paths: [
+  "bits-pilani/trimester-3/apex-project",
   "bits-pilani/trimester-2/assignment-1",
   "bits-pilani/trimester-1/assignments"
 ]
