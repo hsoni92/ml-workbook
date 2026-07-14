@@ -1,0 +1,78 @@
+Hi again, welcome back. Now instead of
+looking at the internal marketing
+performance, we'll look at how a
+company performs related to its
+competitors. Let's first define what
+market share actually means. Market
+share refers to the percentage of total
+industry sales captured by a particular
+company during a given time period. It
+provides a simple but powerful
+indicator of competitive position. For
+example, if the total market generates
+₹100 crore in sales and one company
+contributes to ₹10 crore. That
+particular company holds almost a 10%
+market share. When a firm's market
+share increases, it generally indicates
+the company is gaining strength
+relative to its competitors. Now before
+we begin calculating market share, it's
+helpful to understand the different
+ways it can be measured or calculated.
+In practise, companies use two primary
+models. One model focuses on revenue.
+And the other focuses on financial
+dominance of a company in a market. The
+second model focuses on unit sold and
+helps evaluate operational scale and
+customer reach. Each model provides a
+different perspective, and marketeers
+choose the appropriate approach
+depending on the objective of their
+analysis. Usually revenue model is the
+most preferred one. One common way to
+measure market share is through the
+revenue model, also known as the
+value-based model. In this approach, we
+divide the company's sales revenue by
+the total revenue generated in the
+industry and then multiply the result
+by 100 to convert it into a percentage.
+For instance, if a boutique generates
+₹100,000 in revenue. While the total
+market revenue is ₹1 million the
+company's market share would be 10%.
+This model is particularly useful in
+industries where pricing differences
+between competitors are significant.
+The second approach measures market
+position differently through volume
+rather than revenue. Another related
+concept is relative market share.
+Instead of comparing a company with
+entire industry, relative market share
+compares the company's sales directly
+with the sales of the largest
+competitor. In this calculation model,
+we divide the company's sales by the
+sales of the market leader. If the
+result is greater than one, the company
+holds a leadership position. If the
+result is less than, The company is
+operating behind the leading competitor.
+To conclude this lesson, market share
+plays an important role in
+understanding competitive performance.
+Companies with higher market share
+often benefit from stronger brand
+recognition, economies of scale, and
+greater pricing flexibility. However,
+growth in market share should always be
+balanced with profitability. When
+market share metrics are analysed,
+together with CAC, LTV and marketing
+rulers, marketing managers gain a
+complete understanding of both
+financial performance and competitive
+positioning.

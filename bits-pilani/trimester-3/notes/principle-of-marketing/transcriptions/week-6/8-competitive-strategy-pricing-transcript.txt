@@ -1,0 +1,117 @@
+Hi again. In this video we are going to
+explore one of the most important
+concepts in business strategy, that is
+customer lifetime value. Understanding
+how much a consumer is worth all over
+their entire duration with the
+relationship with the company is
+essential for long term success. By the
+end of this video, you will understand
+how businesses use customer lifetime
+value to guide marketing investments,
+improve consumer relationship. And
+design strategies that maximise long
+term revenue and sustainable growth.
+Customer lifetime value, or CLV, refers
+to the total revenue a business can
+expect from a consumer over the entire
+duration of the relationship. It's a
+forward-looking metric that helps
+businesses evaluate not only how much a
+consumer has already spent, but also
+how much value that consumer is likely
+to generate in the future. Instead of
+focusing on one-time transactions, CLV
+emphasises long-term engagement and
+repeat purchases. To better understand
+customer lifetime value, let's walk
+through a simple example from a
+subscription-based business. Imagine a
+company offering a subscription product
+priced at $50 per month. Now consider
+three different types of customer.
+First, we have cautious Claire. Claire
+subscribes but cancels the first
+delivery. Her lifetime value is $50 but
+the business spent $70 to acquire her
+and another $25 to serve her. That
+means the company actually loses $45 on
+this customer.
+Next we have experimental Eric. Eric
+stays slightly longer and cancels the
+second payment. His lifetime value
+becomes $100 but after accounting for
+acquisition cost and two months of
+product and shipping, the company still
+loses $20. Finally, we have loyal Luke.
+Luke continues his subscription for
+five months or more, generating $250 or
+more in lifetime value. After covering
+acquisition and service costs, Luke
+generates a profit of $55 and may
+continue contributing revenue beyond
+that. This example highlights not all
+customers create the same value even if
+they pay the same monthly price.
+Ultimately, tracking customer lifetime
+value helps businesses understand which
+customers truly support long-term
+growth and profitability. Now let's
+look at how to calculate customer
+lifetime value or CLV. The simplest way
+to calculate CLV could be by
+multiplying the average revenue per
+consumer by the consumer lifespan and
+then subtracting the total cost to
+serve that consumer. This approach
+works best when business has a reliable
+historical data and consistent pricing
+model, allowing it to better estimate
+consumer value more accurately and
+precisely.
+For example, suppose a consumer spends
+₹10,000 per year and stays with the
+company for 5 years. In that case, the
+gross CLV could be ₹50,000. If the
+total cost to support and serve that
+customer during the same period is
+₹15,000 the net CLV will be $50,000
+minus the 15,000, that is 35,000. Next,
+to understand and improve customer
+lifetime value, or CLV, businesses need
+to track several key metrics that
+influence it. One important metric is
+average purchase value, which is
+calculated by dividing total revenue by
+the number of purchases. Next is
+purchase frequency, which tells us how
+often a consumer buys within a specific
+time period. Another factor is consumer
+lifespan or the average duration a
+consumer's relationship with the
+business. We could also monitor the
+consumer churn rate, which represents
+the percentage of consumers who stop
+doing business with the company over a
+point of time. Closely related to this
+is consumer profitability score, which
+compares the revenue earned from a
+consumer with the cost required to
+serve them. This is especially helpful
+when comparing high touch and low touch
+accounts. In digital subscription
+business, user adoption is another
+critical metric. It measures how many
+users actively engage with the product
+over time. Similarly, an engagement
+score tracks signals such as logic,
+event participation, and other
+interactions that indicate ongoing
+interest. Finally, businesses also look
+at product expansion, which reflects
+how consumers grow across different
+solutions or offerings, not just how
+much they spend. Together, these
+metrics help organisations better
+understand, predict, and improve
+consumer lifetime value.

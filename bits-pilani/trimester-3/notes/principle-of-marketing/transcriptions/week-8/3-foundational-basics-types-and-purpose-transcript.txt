@@ -1,0 +1,202 @@
+Hi. Welcome back. In this video, we'll
+take a look at the meta ad structure.
+We'll break down how campaigns, adsets,
+and ads are organised within the meta's
+advertisement ecosystem so that you can
+understand how each layer works
+together to deliver effective results.
+Let's start by understanding what an ad
+campaign is. A campaign is the highest
+level in the meta ad structure. When
+you create a one, meta asks you to
+choose an objective. This choice
+determines who Meta will target and how
+your ad budget will be distributed and
+how your overall performance might look
+like. In simple terms, the campaign
+sets the direction, the purpose of the
+adsets, and ads that sit underneath it.
+So what the objectives of a marketing
+campaign could be? Meta offers
+different campaign objectives based on
+the result you want to achieve. The
+traffic objectives help send people to
+a destination such as your website, app,
+or Instagram profile. It is useful for
+increasing link clicks, landing page
+views, and profile visits. The
+engagement objective focuses on
+interactions with their content. It
+helps generate messages, video views,
+post engagement, and conversations on
+platforms like Messenger, Instagram,
+and WhatsApp. For example, the leads
+objective business help collect
+potential customer information. This
+can be done through instant forms.
+Finally, The app promotion objective is
+designed to encourage people to install
+your app and continue using it through
+app instals or in-app events. OK,
+here's a quick overview of Mehta's
+campaign objectives, when to use each
+one. For first, we have awareness as an
+objective. It helps get the word out of
+your new store by reaching new people
+who may be interested, even if they're
+not ready to purchase yet.
+Second, we have traffic. It is designed
+to boost clicks and send people to a
+specific page or link, such as landing
+pages, blogs, or events. Third, we have
+engagement, which focuses on getting
+more likes, comments, shares, and
+interactions on your post.
+Then we have leads, which is ideal when
+you need people to sign up, whether
+it's for an event or for an RSVP or for
+a survey or even for an insurance
+callback. And finally, we have app
+promotions which helps you reach people
+who are likely to install and use your
+new mobile app. With this, let's move
+on to understanding the next layer of
+Meta's advertisement structure, which
+is an ad set. Think of adset at a level,
+which is where the most important
+setting of your campaign lies, which is
+target audience, like whom to target
+and all this magic happens on an adset
+level. While the campaign tells Meta
+what to optimise for, the adset focuses
+on defining exactly who you want to
+reach. So this is where all the magic
+happens. In the adset level. You can
+choose the age group of your target
+audience, the location, the demographic
+details like what they're interested in,
+what their behaviours are on Meta and
+other Instagram platforms, and find the
+best match for your particular
+marketing campaign. Here's how it works.
+First, you create or select your
+audience. This is where you choose who
+you want your ads to reach based on
+factors like age, location, interests,
+and behaviours. Next you select a
+placements. You can either choose
+placements manually or use automatic
+placements, which Mehta recommends to
+help you reach ads more people at the
+best possible cost. So what is a
+placement? A Placement is basically you
+can select whether you want to put your
+ads on certain parts on Facebook. In
+parts of Instagram, so on and so forth,
+or you can just simply go with
+automatic placements where Meta tries
+to show your ad on all the placements
+like Instagram story, Instagram post,
+Facebook post, Facebook right column,
+and all those things, and even Facebook
+Marketplace, and then it figures out
+where your audience is truly engaging
+with your ads and it automatically
+optimises it. So either you can select
+a manual or an automatic placement. OK,
+now let's look at different targeting
+options that are available on meta ads
+within the asset level. First,
+demographic targeting. It allows you to
+reach people based on age, gender,
+location, language and other basic
+details.
+Second, we have Interest, which helps
+you connect with users through things
+they enjoy, such as their hobbies,
+pages that they follow, activities that
+they engage in. Third, we have
+behaviours which allow you to target
+people based on their online actions,
+device users, purchasing signals, and
+so on. Finally, we have something
+called Customer audiences, which helps
+you the ability to reach your existing
+customers by using your own first party
+data. And finally, we have lookalike
+audiences which help you find people
+who you share similar characteristics
+with your current best customers.
+Together, these targeting mechanisms
+help you reach the right audience with
+the right message.
+Now we will look at what an ad is on
+Meta, which is the final layer. An ad
+is the final piece your audience will
+actually see once your campaign
+launches. It includes everything that
+represents your messages, your images
+or videos, the headline and the text,
+and the links you want people to visit.
+This could be your Instagram page or
+even a website. This is also your
+strongest opportunity to stand out
+creatively and speak directly to your
+target audience, which is especially
+important in competitive industries
+like fashion, accessories, and beauty.
+So here is an example of a sample meta
+ad. This ad is from Awe Inspert, is a
+great example of how polished imaginary
+and premium presentation can elevate
+the overall look and feel of your meta
+ad campaign. OK, now let's look at
+different types of meta ads that are
+available. The real strength of meta
+ads comes from the variety of ad
+formats that you can choose from. Here
+are some of the most popular ad types
+you can work with. Image ads are clean,
+direct, and visually striking, making
+them perfect for promoting a single
+product or highlighting an event. Video
+ads allow you to tell a story, to show
+your product in action. They can be
+short and attention grabbing, or longer
+for people who want more detail. Next
+we have Cardozal ads which lets you
+showcase multiple images or videos
+within one ad, with each card linking
+to its own destination, perfect for
+highlighting a range of products or
+telling a story step by step. Then we
+have collection ads which allows people
+to browse and purchase products
+directly from the ad. Then we have
+instant experience ads, formerly known
+as canvas ads. These are mobile-only
+interactive formats that lets users
+deeply engage with their content. With
+instant experience, your audience can
+swipe through images, tilt their screen,
+zoom in or out using their fingertips,
+creating a highly immersive mobile
+experience. These ads also load up to
+10 times faster than standard mobile
+web pages, which help keep users
+engaged and reduces drop off rate. Then
+we have story ads. These are full
+screen vertical placements on Facebook
+and Instagram stories. They deliver
+quick, intimate impressions that feel
+natural on mobile and are perfect for
+grabbing quick attention. And finally,
+we have leads that make it easy to
+collect customer details without
+requiring people to leave the platform.
+They're ideal for newsletters, signups,
+inquiries, or any situation where you
+need quick, seamless data to capture.
+The worst array of ad formats and meta
+means you can tailor your campaign to
+almost any goal.

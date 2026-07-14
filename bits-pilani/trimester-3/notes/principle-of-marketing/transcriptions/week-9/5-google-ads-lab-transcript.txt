@@ -1,0 +1,328 @@
+OK, now we will explore Google Ads. Uh,
+once you sign up on ads at google.com,
+you will see an interface like this.
+Let's try to understand this dashboard
+a little more. Uh, on the left side, we
+have a couple of options called
+campaigns, goals, tools, settings, and
+building. Soing pretty much
+straightforward, where you can see all
+your campaigns at one go.
+Then you will have tools. Let's click
+on tools.
+So, on first thing you will see over
+here is uh where you can give prompts
+and create a lot of images and videos
+uh for your advertisement. This sits in
+your asset studio. Then you have
+planning. Remember keyword planner that
+we talked in week 3? You can use the
+keyword planner from over here.
+Basically, it gives you search volume
+forecast. Either you can plug your
+website URL over here, or you, if you
+know specific keywords, you can plug in
+a keyword over here. So you can either
+ways try to look for keyword search
+queries.
+Then we have Performance planner, which
+helps you estimate what kind of media
+budget you should put in. Then you have
+reach planner. If you're more in uh
+YouTube advertisement and stuff, you
+can also use reach planner over here.
+Then uh. There's an interesting section
+called as creator partnerships, uh,
+where, imagine if you as a brand has
+partnered with some of the top
+prominent YouTube creators and have
+kind of done a co-sponsored video. You
+kind of uh can link those co-sponsored
+videos over here and track their
+performances in terms of views, clicks,
+and how much final sales those videos
+are actually helping you make.
+Uh, then we have data manager, uh,
+basically where you are connecting all
+of your Google properties, uh, over
+here, like your YouTube channel, Google
+Analytics, so on and so forth.
+Yeah, that's about the tools. Then you
+have simple billing section uh where,
+you know, you kind of plug in your
+credit card or debit card. Again, this
+is a demo and test account, so uh a lot
+of the features are not there, but you
+can just link to your billing account
+over here. Then, uh, this is the
+account settings where you can select
+time zones, so on and so forth, and you
+can even give your account a name.
+OK, so with this, uh, the most
+important thing we are interested uh is
+on how to create campaigns.
+So you can just click on the plus
+button over here which is create.
+Again, remember, Google has a structure
+called as campaign ad group and ads.
+Well, Meta has a structure called as
+campaign ad set and ad. So basically,
+Google call it as an ad group, Meta
+call it as an ad set. That's the only
+difference.
+So let's click on campaign.
+OK, so. In this video, we'll just.
+Talk about the lead ion-oriented
+businesses, businesses which kind of
+collect leads, basically your phone
+numbers or emails. Think of insurance
+company as an example. So we'll talk
+about maybe this company is interested
+either in leads or website traffic.
+Let's suppose they're interested in
+website traffic, let's click on that.
+Uh, then let's click on continue.
+Now, interestingly, over here, it talks
+about select a campaign type. Uh, there
+are multiple campaign types. One is
+Performance Max. It's a single campaign
+which runs ads across all of Google
+properties, search, display, YouTube,
+Gmail, Maps, and everything.
+Then you have a dedicated search only
+ad where you just uh run ads on Google
+Search. Then you have DemandGen, which
+runs ads on YouTube, Sidebar, Discovery,
+Gmail, so on and so forth. Then you
+have video, uh primarily on YouTube.
+Then you have display, uh, in many of
+the internet websites, you have seen
+image-based ads coming up on the left,
+right, or centre of the website. And
+finally you have shopping as a ad
+category. Where if you search for
+something on Google, it has also a
+shopping tab, which shows some shopping
+listing.
+But for today, we are just interested
+on PMax and search, and the next few
+options we'll explore in the next video.
+So let's go with search.
+OK, so it will ask me what's uh my
+business website. Let's suppose it's
+www.google.com or you can just use
+ABC.com, like, just plug in your URL
+over here.
+OK, it will ask me to put a name. Let's
+do pose it's test, one.
+OK, start new.
+OK, so. So Google asked me what should
+I bid for? Is it conversions,
+conversion value, clicks, or impression
+share? Conversions is basically
+whatever you define as a conversion.
+Let's suppose for an insurance company,
+a conversion could be people who have
+filled up the form so that they can get
+a callback from. Let's suppose we want
+to optimise for clicks, so we'll click
+on clicks over here. We can also set a
+bid amount like, hey, I don't want to
+pay more than ₹50 for a click, you can
+do that. Uh, let's suppose I want to
+say ₹50 but let's suppose in this case
+we don't want to put that. We'll come
+back over here, how to set a bid like.
+Uh, what value we should put, whether
+it's 50 or 100. But for now, let's
+think of we don't want to put a bid, we
+will let Google AI decide the bid and
+then click on next.
+We'll just click on Google search.
+Let's suppose we are targeting India as
+a location. Of course we can enter any
+location that we want, uh, just click
+on the advanced search. If you just
+want Delhi, uh, we can just include
+Delhi.
+OK.
+Then we can choose languages that we
+want to target, primarily it's English.
+It's not an EU political ad, so we'll
+just click no. We'll
+go next.
+OK, so in this thing, uh, we will kind
+of look into.
+Uh, we'll come and click on keyword and
+asset generation. Uh, so we'll put a
+final URL, whatever that URL is, it has
+already plugged in. We'll just give a
+quick introduction to Google what this
+website or what my service is all about.
+So, it's a Spector from ABC.com. It's a
+popular TV show and news and live event,
+but whenever you give an URL, Google
+will kind of pick up uh some few cues
+from your website.
+Once that is done, it can create some
+ad groups by its own, or you can create
+uh uh ad group for yourself as well.
+Let's suppose, since it's a TV news
+website, let's suppose there's a
+section called as lifestyle.
+And you can just put a URL.
+Then let's say generate, so the AI will
+kind of generate. Some few ads for you.
+Well, it makes uh generate some of the
+ads and stuff.
+You can either use this Google AI or
+you can create ad group manually, the
+option over here.
+And then let's suppose we go next. Once
+we do that, uh, you can select a custom
+budget that you want. Let's suppose
+₹1000 800 rupees a day, or even you can
+select your own budget. Uh, let's
+suppose I want 200. ₹2000 over here,
+you can put that. And once you click on
+next, and within a few minutes it will
+go for an auto review and your campaign
+will get live. So this is how we do a
+Google search.
+OK, so now we have learned how to do
+Google search. Once we have kind of
+turned on the campaign, you'll see uh
+it will appear over here, and again
+with a bunch of similar metrics like
+meta advertisements, like impression,
+share, and all those things.
+OK, now let's try to create another
+campaign.
+Website traffic.
+OK, now we are trying to look into PMax
+or performance max. Let's click on that.
+Again, it will ask for the final URL
+which is.
+E.com.
+OK, let's suppose it's performance max
+2.
+Mm
+OK, yeah.
+So let's suppose we are now bidding
+towards conversion.
+And then let's click on next. Again,
+you can choose uh.
+You can choose any location like India
+or any other options. Let's suppose
+it's India.
+No
+OK. So over here, uh, it's called an
+asset group where you can plug in a
+bunch of assets, uh, logos, your, you
+know, uh, search ads, display ads.
+Either you can ask the Google AI to
+create, like if you just plug in the
+URL and stuff, it will create for you,
+or you can manually upload and you can
+preview it. So for example, on Google
+search, your ad will look like this.
+On display, uh, you can upload your
+image and you can see a preview over
+here. And then also on YouTube, you can
+see how your ad would look like on
+YouTube. So it has a preview section
+which helps advertisers a lot in terms
+of understanding how their ad would
+look like.
+Uh, then.
+We have signals. Signals are basically,
+uh, they provide valuable information
+about the people you want to reach. So
+think of this way, you're giving some
+cues to Google AI like, hey, these are
+the people that I want to look for. So
+for example, in this example, people
+who would like to.
+Travel
+Uh, people who love to watch news, so
+on and so forth. You can add some
+search themes. And then you have
+audience signal. Again, audience signal,
+you can uh.
+Browse from over here.
+OK. So basically, you can upload your
+own customer list if you want to
+retarget your own customers, or you can
+look for uh
+You know, if you have connected to your
+YouTube channel and so on, people who
+have interacted with your YouTube
+channel or videos, you can also
+retarget them.
+OK. Over here, if you click on
+additional signals, you will see any
+other changes that you want to make.
+Remember uh how we were making some
+changes on uh meta advertisements? Very
+similar fashion, we want to kind of
+target male, female, age group, or even
+based on their parental status,
+household income, so on and so forth.
+OK. Now, over here, you can also choose
+like the AI understood. OK, this is for
+a uh news channels, so people who love
+to watch TV news channels, news or
+politics, we can target them also. Or
+you can browse based on their life
+events or based on their interests like
+people like autos and vehicles, so on
+and so forth. You can either browse or
+just search over here people who loves
+news.
+Right? So for example, people who love
+Huffington Post or economic news or
+whatever, right? So you can select
+whatever you want. Let's suppose it's
+New Zealand news.
+OK, so we have selected news and
+politics, TV channels, New Zealand news,
+some demographics. Let's suppose, let's
+make it under 54, from 25 to 54.
+Household income from top 10% to 50%.
+Let's click on next.
+And again, here, we have to set up a
+custom budget, uh, either you can put
+your own budget or select any of the
+pre-filled budget recommendations, like
+you can go with the pre-filled budget
+recommendations. And yeah, click on
+next and your ad will go for a couple
+of minutes for a review and you will
+see the final ad on the dashboard.
+Again, you'll see a dashboard over here.
+Now remember uh the CPC thing that we
+were talking about, what CPC to bid for?
+Of course, it's not recommended we
+should let the AI decide the best CPC
+for us, but if you just want to uh know
+how to calculate a CPC manually or how
+to calculate a CPC to bid for. One of
+the ways is, uh, go to tools, click on
+planning, go to keyword planner.
+Click on get search volume and forecast.
+Let's suppose we want to bid for the
+keyword called, uh, let's suppose
+simple online education.
+In this, it's online education, OK.
+Mm.
+OK. So for online education in India,
+the top of the page bid is ₹130. The
+low range bid is 40.9. So our manual
+CPC bid should be a minimum of ₹41 and
+it can go up to a maximum of ₹130. So
+we can, let's suppose, create a bid
+around 120 to 110, right, just to be on
+the upper side. But our ad to show up,
+we have to minimum put a bid of ₹41.
+Yeah, that's all about uh Google Ads
+search and PMax.

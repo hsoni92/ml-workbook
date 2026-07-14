@@ -1,0 +1,189 @@
+Welcome back. In this video, we are
+diving into the exciting world of app
+campaigns with Google Ads. App
+campaigns are a powerful tool for app
+developers and businesses to increase
+app instals, engage existing users, and
+build anticipation for app launches.
+Understanding the different types of
+app campaigns and targeting options
+available will allow you to tailor your
+approach and achieve your app's
+marketing goals. So let's get started.
+When it comes to app campaigns, the
+strategy you choose will depend on
+specific goals you have for your app.
+Google Ads provides the three main
+types of app campaigns, each with its
+unit's objectives app campaigns for
+instals, app campaigns for engagement,
+and app campaigns for pre-registration.
+Let's break each one down. First up, we
+have A campaign for instals. These
+campaigns are also known as ACI. They
+are designed to encourage people to
+install your app. Whether you have just
+launched your app or you're looking to
+boost its presence in the marketplace.
+ACI campaigns are your go to option.
+The main goal here is to reach users
+who are likely to download and install
+your app. Google Ads uses machine
+learning to automatically optimise your
+ads and show them to people who are
+most likely to take action of
+installing your app. ACI campaigns are
+great for targeting a broad audience,
+but you will also want to think about
+narrowing your targeting to specific
+groups that are more likely to find
+value in your app, such as people who
+have similar app usage behaviours or
+interests. Next, we have app campaigns
+for engagements, or ACE. Once your app
+has gained a little bit of traction and
+you have users who already have
+installed your app, the goal often
+shifts from accusation to engagement.
+ACE campaigns help you re-engage who
+have already installed your app but may
+not be using it as actively as you'd
+like them to do. For example, if your
+app has users who haven't purchased
+anything in a while, or users who have
+abandoned their shopping carts, AC
+Campaigns allows you to target those
+users specifically. You can also
+encourage in-app purchases for your
+products or services, or even send them
+reminders about a live event or sale
+happening in the app.
+To create an AC campaign, however, your
+app needs to have at least 50,000
+instals. This is because AC campaigns
+rely on having a substantial user base
+to effectively target and re-engage the
+right people. With ACE, Google Ads
+utilises machine learning and AI to
+optimise your campaigns, ensuring your
+ads are shown to the right users at the
+right time, leading to higher
+engagement and retention rates. Now
+let's talk about app campaigns for
+pre-registration, which are specific to
+Android apps only. This type of
+campaign is designed to help you build
+excitement and anticipation for your
+app before it's officially released on
+Google Play Store. If you're planning
+to launch a new app or game, a
+pre-registration campaign can help you
+generate interest and sign ups in
+advance. These campaigns work by
+promoting your app or game to users who
+are likely to pre-register for it. By
+targeting users who have shown interest
+in similar apps or games, or who have a
+history of pre-registering new releases,
+app campaigns for pre-registration
+ensure your app has an eager audience,
+ready and waiting when you finally
+launch. Pre-registration campaigns can
+also help you gather valuable insights
+on how your audience is responding to
+your app or game before it's released.
+Giving you the opportunity to fine tune
+your marketing strategy ahead of time.
+However, keep in mind these campaigns
+are only available for iOS apps. One of
+the most powerful features of app
+campaigns is the ability to target
+specific audience segments based on
+their behaviour and interest. Google
+Ads offers a variety of audience
+targeting options that can help you
+reach the right people at the right
+time. Let's take a look at some of the
+targeting options that are available
+for your app campaigns. Here are some
+of the audience targeting options that
+are available. Firstly, detailed
+demographics. With this, you can target
+user groups based on long term life
+facts. These demographics can include
+age, gender, household income, parental
+status, and more. This is a great way
+to narrow down your audience, down to
+the people most likely to use your app
+based on personal characteristics and
+life stages. For example, if your app
+is related to parenting or child
+education, targeting parents in
+specific age ranges might be especially
+effective.
+Then we have life events. Life
+event-based targeting allows you to
+reach users who are going through
+important milestones or life changes.
+This could include getting married,
+buying a home, having a baby, or even
+graduating. These significant life
+moments often influence people's
+behaviours and needs. So if your app
+offers services or products related to
+these events, this is a powerful way to
+target your audience at the right time.
+With affinity targeting, you can reach
+users based on their passions, habits,
+and interests. Google Ads uses a vast
+amount of data to group users to
+affinity categories such as sports
+enthusiasts, travellers, foodies, and
+more. If your app aligns with any of
+these interests, this is a great way to
+reach a highly engaged audience that is
+likely to download and use your app.
+Then we have in-market targeting
+focuses on reaching users who have
+shown. Recent intent to make a purchase
+or take specific action. For example,
+if your app is an online shopping
+platform, you can target users who are
+actively looking for products in your
+category. In-market targeting helps you
+focus on users who are more likely to
+take the next step. Whether it's
+downloading your app, making a purchase,
+or engaging with your content. In
+addition to these targeting options,
+you can also create audience segments
+based on specific actions users have
+taken within your app. For example, you
+can create segments of users who have
+completed a purchase, started a signup
+process but didn't finish, added items
+to their cart but didn't check out. By
+creating these segments, you can target
+users more effectively, sending
+tailored messages that encourage them
+to take the next step. Whether that's
+completing a purchase, signing up, or
+simply re-engaging with the app, in
+this video we have explored the
+different types of app campaigns that
+are available on Google Ads, including
+campaigns for instals, engagement, and
+pre-registration. We have also
+discussed the various audience
+targeting options that help you
+fine-tune your campaigns and reach the
+right users at the right time. By
+understanding these key concepts, you
+will be better equipped to run
+effective app marketing campaigns that
+drive instals, increase engagement, and
+build anticipation for new releases. In
+the next video, we'll dive deeper by
+optimising your app campaigns and
+making the most of your marketing
+budget, so stay tuned and keep learning.

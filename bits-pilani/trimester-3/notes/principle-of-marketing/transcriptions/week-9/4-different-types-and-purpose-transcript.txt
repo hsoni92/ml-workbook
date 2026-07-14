@@ -1,0 +1,192 @@
+Hi again. Welcome to the next video. In
+this section we will explore different
+types of Google Ads campaign and their
+specific purposes. Each campaign type
+is designed to achieve different
+marketing goals. The main types include
+search, demand gen, discovery, and
+performance max campaign in Google Ads
+ecosystem. Let's start with search
+campaigns. Google search ads appear
+when users actively search for
+information, product, or services.
+These ads can include extensions such
+as ratings, callouts, structure
+snippets, and site links to provide
+additional information. However, there
+are specific guidelines to follow for
+search ads. Words in all caps are not
+allowed unless highlighting a
+promotional code. The trick to click
+phrases like click here are often
+flagged. Only one exclamation point is
+allowed, and none are permitted in the
+headline. Additionally, the root domain
+in their display URL must match the
+destination URL. Search campaigns also
+offer various bidding strategies
+depending on your campaign goals.
+Google Ads provides options aligned
+with business objectives such as
+conversion, leads, sales, clicks, views,
+engagement, and impressions. Strategies
+include targets, target CPA, maximised
+conversions, maximised clicks, manual
+CPC, CPMs, target impression share, so
+on and so forth. That's aligned with
+some of the use cases that businesses
+are looking for to bid effectively on
+Google Ads.
+Broadly, there are two kinds of bidding
+strategies on Google. One is smart
+bidding that typically starts when you
+have a little bit of clicks and
+conversions already loaded on your
+account, and then we have a manual
+bidding option which typically uses
+manual CPC model. Examples of smart
+bidding could be target rowva or
+maximise conversion value, or maximise
+conversions or target CPA. And on the
+other hand, manual bidding has models
+like manual CPC.
+Now let's move to another part of
+search campaigns which is very critical,
+that is keyword targeting.
+Keywords in Google Ads are bucketed
+into match types, and different match
+types control when ads are triggered.
+For example, match types like broad
+match trigger ads for synonyms and
+related searches, offering maximised
+reach, but a little more restricted
+relevance for businesses. On the other
+hand, phrase match-based keywords
+target ads for phrase and its close
+variants, offering medium reach and
+relevance for advertisers.
+On the other hand, exact match target
+ads for exact term and close variance,
+providing maximum relevance. And
+slightly restricted reach. Finally, we
+have negative matches that prevent ads
+from showing for particular searches
+where business doesn't want their ad to
+show up. Now let's move on to another
+concept which is known as quality score,
+which influences ad performance.
+Quality score is nothing but a
+combination of three factors, which
+includes your landing page experience.
+Your expected click through rate and
+add relevance.
+Landing page, experience and expected
+CTR each contribute 39%, and add
+relevance roughly contributes to 22%.
+Next we have ad extensions which
+enhance ads by providing additional
+information and actions. Extensions
+include site links, ratings, app links,
+price details, promotion information,
+click to call options, even location
+data and phone numbers.
+Each extension serves a specific
+purpose, such as linking to a deeper
+content, showing reviews, enabling app
+downloads, displaying prices,
+initiating calls, or providing location
+details, or just putting on ad
+disclosures.
+With this, now let's move on to another
+type of Google Ads campaign, which is
+known as DemandGen campaigns. DemandGen
+campaigns help advertisers reach users
+across YouTube shorts, YouTube in
+stream ads, YouTube in feed, Discover,
+and even Gmail.
+This kind of ads include multiple
+assets such as image, headlines,
+description, logos, call to action
+buttons, URLs, and business names.
+These campaigns are designed either to
+re-engage with existing audiences or
+help expand reach and target users
+based on custom intent or remarketing
+strategies. Demands and campaigns offer
+advanced targeting options as well. You
+can target audiences based on
+demographics, affinity in market and
+custom intent segments as well. So
+what's an in-market audience? Imagine.
+A regular car insurance buyer who buys
+car insurance every year.
+The algorithm knows she is already an
+in-market audience because she has been
+in the market and buying car insurance
+year over year or month over month
+versus there's something called a
+custom intent. Like for example, if you
+have if you have bought a new guitar
+and if you have searched like what is
+the best course for first-time guitar
+learners, the algorithm buckets you as
+a custom maintain because this is the
+first time you have showed interest in
+guitar or associated products.
+Additional categories include weddings,
+financial services, apparels,
+electronics, education, real estate,
+and even more.
+Campaign structures may include. Add
+groups for in market and custom intent
+audiences.
+Remarketing and even customer match.
+Let's now look at discovery campaigns
+on YouTube. Discovery campaigns use
+video ads across YouTube with bidding
+options like CPA or CPM. CPA is cost
+per action, and CPM is cost per meal or
+cost per 1000 impressions. First
+category is known as true view or also
+known as skippable in-stream ads. It is
+the most popular format. These ads can
+be skipped after 5 seconds, and
+advertiser only pays if the viewers
+continue watching post 5 seconds.
+Other formats include non-skippable ads,
+bumper ads, in-feed video ads, and
+masters ads. Each format serves a
+different purpose from awareness to
+engagement and to broad reach. Now
+let's see what each of these looks like.
+Skippable ads allow viewers to skip the
+ads after 5 seconds, while
+non-skippable ads ensure you see the
+full message at once. Then you have
+bumpered ads which are usually 6
+seconds long and cannot be skipped and
+usually appears at the start of the
+video.
+Then you have in feed ads that appear
+when users discover contents. Finally,
+you have YouTube short ads which are
+mostly on mobiles. Then you also have
+something called master ads that
+provide prominent visibility on
+YouTube's home feed or the homepage,
+like a big banner ad that shows up on
+YouTube's homepage. Finally, let's
+explore Performance Max campaign.
+Performance Max campaigns allows
+advertisers to run ads across YouTube,
+display, search, discover, Gmail, and
+maps from a single campaign. These
+campaigns complement the keyword based
+search campaigns and help increase
+conversions across Google full range of
+advertising inventory. By choosing the
+right campaign type, search, demand gen,
+or performance max, you can effectively
+reach your audience, achieve your
+marketing goals, and maximise the
+impact of your Google Ads campaigns.

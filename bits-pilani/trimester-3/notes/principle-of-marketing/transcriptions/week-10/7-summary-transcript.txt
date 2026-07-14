@@ -1,0 +1,38 @@
+Hi again, we have reached the end of
+this module, so let's quickly bring
+together the key concepts we have
+explored so far. Each idea in this
+module was designed to help you
+understand how digital advertisement
+campaigns are planned, executed, and
+optimised in real world marketing
+environments. Let's quickly recap the
+key takeaways. Firstly, behavioural
+targeting, which allows advertisers to
+deliver personalised ads based on user
+actions, interests, and interaction.
+Then we also understood contextual
+targeting, which focuses on delivering
+ads based on the context where the user
+is currently located at or based on
+other signals, and also layering it
+with their past behavioural data,
+ensuring the ad is relevant at that
+particular context or time.
+Then we also explore some of the key
+concepts in machine learning and how
+they are being used on digital
+advertisement ecosystems, concepts like
+collaborative filtering, clustering,
+which helps advertisers create hyper
+personalised and effective campaigns by
+grouping similar users and offering
+tailored recommendations. By using
+these strategies and understanding
+these technologies, marketeers build
+more targeted, personalised, effective
+campaigns that help them engage with
+their audience and drive meaningful
+business results. With this, keep
+learning and I will see you on the next
+video.

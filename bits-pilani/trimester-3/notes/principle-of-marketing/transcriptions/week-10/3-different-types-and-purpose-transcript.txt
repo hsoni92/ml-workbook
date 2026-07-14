@@ -1,0 +1,196 @@
+Welcome back, learners. In this video
+we are going to explore Google Shopping
+ads, a powerful tool for e-commerce
+businesses to showcase their products
+and drive traffic to their online
+stores. If you have ever searched for
+products like Air Jordans on Google,
+you probably have encountered shopping
+ads. This is exactly what we will
+discuss today. How these ads works and
+how they can benefit your business and
+how you can use them to grow your
+online presence.
+Let's start with the basics of Google
+shopping ads, which allows retailers to
+showcase their products directly on
+Google's search results page, often
+alongside with other organic search
+results. Unlike traditional textpress
+ads, shopping ads feature product
+images, prices, and business names,
+making them highly visual and appealing
+to potential customers. When user
+searches for a product like Air Jordan
+or Bluetooth headphones, Google pulls
+relevant products from merchants who
+have set up Google shopping ads. These
+ads show up at the top of their search
+results in the Google Shopping tab by
+providing an image and pricing
+information up front. Shopping ads give
+users an immediate sense of what
+they're looking for and influence
+purchase decisions much faster than
+traditional text ads. As an e-commerce
+business, you have several options for
+promoting your products in Google Ads.
+The most prominent campaign type for
+shopping ads are performance max
+campaigns and standard shopping
+campaigns. Both have their unique
+features and advantages, and choosing
+the right one depends on your business
+needs. Firstly, starting with
+Performance max. Performance Macs are a
+newer, all in one campaign type. This
+campaign allows you to reach a broader
+audience across Google properties,
+including search, YouTube, Display, and
+Gmail. By using Google merchant centre
+feed, Performance max campaigns
+automatically optimise your ads to
+appear in the most relevant places and
+formats, depending on the intent of
+your audience. This is great if you're
+looking to increase your reach. And let
+Google AI and machine learning handle
+the targeting for you. On the other
+hand, standard shopping campaigns are
+more traditional and focus specifically
+on Google's shopping inventory. They
+allow you to manage your product
+listings, set your own bids, control
+which products are promoted. These
+campaigns are highly effective if you
+have a similar inventory or want to
+maintain more control over your product
+ads. The key difference is that
+performance max campaigns offer a wider
+reach and automated optimisations,
+while standard shopping campaigns are
+more focused on Google shopping
+inventory with manual control over
+bidding and targeting. To get started
+with Google shopping ads, all you have
+to do is set up a Google Merchant
+centre account. This is where you will
+upload your product data or simply
+connect your online store website with
+Google Merchant centre. And then
+finally connect your Google merchant
+centre with Google Ads account and you
+can manage all the product listings
+from there. Setting up a Google
+merchant centre is quick and easy.
+Here's a general overview of the steps.
+First, you will have to provide the
+information about your business,
+including your store name, business
+hours, the services you offer. Your
+business profile will be used across
+various Google tools, and you can
+update or edit this information at any
+point in time. Second, Google will ask
+whether you sell products online or in
+a physical store, or both. You can
+choose multiple options and change them
+later if needed. If you're selling in
+multiple locations, it's important to
+provide the correct details so
+customers can find you easily. The next
+step is to upload your product data to
+Google Merchant centre. Here are a few
+ways you can do this. If you already
+have an online store. Like Shopify or
+other websites, just connect that
+particular web portal to Google
+Merchant centre, and Google will fetch
+all the product data for you.
+Alternatively, you can manually upload
+all the product data directly into the
+merchant centre. If you use a third
+party platform like Shopify,
+BigCommerce, or WooCommerce, you can
+link the store directly to the merchant
+centre as mentioned earlier. This
+allows Google automatically to sync
+your products, saving you time and
+effort as compared to the manual upload.
+You can also modify and add products
+directly within the merchant centre as
+and when needed. After completing all
+the steps, your products will be ready
+to appear in Google Shopping ads, and
+you can start creating campaigns in
+Google Ads. Google shopping ads are
+highly visual, showcasing your product
+image, title, price, and the name of
+your business. This makes it much
+easier for the user to make a decision
+when comparing similar products.
+For example, let's say a user searches
+for Air Jordans on Google. In addition
+to organic search results, they will
+also likely see a row of shopping ads
+displaying various styles, sizes and
+prices. The product image, title, and
+price are prominently displayed, making
+it easy for users to evaluate options
+right from the search results page. One
+of the key benefits of Google shopping
+ads is the product image itself.
+Research has shown that people are more
+likely to click on ads with images, as
+they can quickly see the product that
+they're considering for purchase.
+Shopping ads also help your products
+stand out in a crowded search results
+space, giving you an edge over the
+competitors who are only using
+text-based ads. Now that we have
+explored how shopping ads work, let's
+take a moment to highlight some of the
+main benefits for your business. First,
+higher visibility. As already mentioned
+earlier, shopping ads appear
+prominently on the top of the search
+results page, often before organic
+listing. This gives your products
+maximum visibility when potential
+customers are searching for items like
+yours. Then we have improved conversion
+rates. Since shopping ads display
+images and prices up front. Users are
+more likely to convert, especially. If
+they find exactly what they're looking
+for, shopping ads provide a clear and
+immediate product offering, increasing
+the likelihood of purchases. Easier
+shopping comparison with images, prices,
+and business names displayed. Customers
+can easily compare similar products,
+which helps them make faster decisions.
+Finally, we have better control and
+customization. Through Google Merchant
+centre, you can manage your product
+data, optimise your listings for better
+results. Whether you're using
+performance mass or standard shopping
+campaigns, you have control over how
+your products are promoted, to which of
+the audiences that you want. In this
+video we have covered the ins and outs
+of shopping ads, including how to set
+up a Google merchant centre, the
+differences between the performance max
+and the standard shopping campaigns,
+the benefits of using product ads to
+boost your business, whether you choose
+to run performance max campaigns for
+broader reach or to offer standard
+shopping campaigns for more control.
+Google shopping ads can help increase
+your visibility, drive more qualified
+traffic, and boost sales for your
+e-commerce business.

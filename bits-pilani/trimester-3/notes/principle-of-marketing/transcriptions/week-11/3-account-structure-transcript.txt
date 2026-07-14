@@ -1,0 +1,99 @@
+Welcome back. In this video we are
+going to take a closer look at how
+Google Analytics, or the latest Google
+Analytics, which is known as GAO, is
+structured. Understanding the framework
+of GA is crucial because it lays the
+foundation for how data is collected,
+organised, and even analysed. To begin
+with,
+GA, our latest GA 4, is built around
+three key levels account, property, and
+data stream. At the top level is the
+account which serves as the parent
+level for the entire organisation. This
+is typically where you'd find a
+company's overarching account. For
+example, a large company like Nike
+would have a single account that houses
+all of its different brands or units
+under one umbrella. Next, we move to
+property level. This represents a
+specific business entity, brand, or
+product line with the company. Let's
+say you are analysing a company like
+Nike. The Nike Air brand would be
+considered a property within the main
+Nike account. At the source level, we
+have data stream. This is the actual
+channel through which the data flows
+from a touch point to Google Analytics.
+Each property can have 3 different
+types of data streams web, iOS App, and
+Android app. This structure is
+important because it helps you
+understand how users engage across
+different platforms. For example, A
+user may browse your website, Web
+stream, but complete a purchase on your
+mobile app that is AppStream. Let's
+visualise this in action. Let's take a
+pizza store as an example. In this
+particular example of a pizza store GAO
+account, at the account level, think of
+the pizza store overall as an
+organisation. Within that account there
+might be multiple properties, like one
+is a website or an app that
+specifically customers use.
+Similarly, there could be another
+property that the pizza delivery
+drivers would use. So drivers could be
+another property that has its own data
+stream. The app that drivers or
+delivery agents use, there could be an
+app or website for them also. So we
+have two property structures. On one
+hand, there's a customer facing
+property on the app that we have, and
+the driver's facing app that we have
+which is connected to a property like
+that. This structure helps you track
+interactions for each of these groups,
+whether it's your customer or driver
+separately, while keeping everything
+within one account. Now let's move to a
+key difference between the latest
+Google Analytics 4 and the older
+version of Google Analytics. Unlike the
+older versions, focuses on sessions and
+page views. GA 4, or the latest Google
+Analytics 4, uses an event-based data
+model. That means every interaction a
+user has, whether it's clicking a
+button, watching a video, or completing
+a purchase, it's recorded as an event
+in GF4. To analyse these events, GAF 4
+uses two main components dimensions and
+metrics. OK, so what's a dimension?
+Dimensions describe the attributes or
+characteristics of the data. They
+answer the question what? Examples
+include what city, what device, what
+category, what browser, or what traffic
+source. Dimensions are typically
+expressed in text and provide context
+to the data. Then we have something
+called as metrics. Metrics are the
+quantitative measurements or numbers
+that answer the question how many. For
+example, metrics could include total
+users, sessions, or even count. Metrics
+give you the numbers you need to
+evaluate performance and scale.
+Together, dimensions and metrics help
+organise and interpret the data
+collected in GFO. Dimensions provide
+context while metrics provide numerical
+details that helps you measure and
+analyse performance effectively.

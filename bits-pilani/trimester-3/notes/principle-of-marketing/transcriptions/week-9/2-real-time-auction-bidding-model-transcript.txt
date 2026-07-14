@@ -1,0 +1,104 @@
+Hi again. Welcome to listen to the
+Foundational basics. In this video, we
+will be taking a deep dive to
+understand the RTB model, or the
+real-time auction bidding, and
+exploring how it plays a crucial role
+in the digital advertising landscape.
+So firstly, what's an RTB or a
+real-time bidding? RTB is a form of
+programmatic advertisements where
+digital ad spaces are bought and sold
+instantly through automated auctions.
+When a user visits a website or opens a
+mobile app, an auction for the
+available ad space takes place in real
+time. Advertisers compete by placing
+bids to show their ads to that specific
+user. Within milliseconds, the system
+selects the highest bid, and winning
+advertiser's ad is displayed to the
+publisher's website or the mobile app.
+Let's explore why real time bidding
+plays a key role in digital
+advertisements. Real-time bidding makes
+the buying and selling of digital ads
+faster and more efficient. In
+traditional advertising, advertisers
+often spend a lot of time creating
+requests for proposals or RFPs,
+negotiating prices and finalising
+insertion orders. With real-time
+bidding, this entire process becomes
+automated. Advertisers can quickly bid
+for ad spaces and place their ads
+instantly, giving them greater speed,
+flexibility, and control over their
+advertisement campaigns.
+OK, now let's understand how this
+real-time bidding actually works in a
+concept accordance with the Internet ad
+exchange that connects the ad network,
+publisher, demand side platform, or
+DSPs, or even the supply side platforms
+which is SSPs, advertisers, and
+agencies.
+Let's see how programmatic
+advertisement works behind the scenes.
+In the simplest form, programmatic
+advertisements relies on three key
+technologies a demand side platform or
+DSP, the supply side platform or SSP,
+and finally, an ad exchange. These are
+not physical machines but software
+platforms that work together to
+automate the buying and selling of
+digital ad space.
+Firstly, on demand side platform are
+DSPs. They're used by buyers such as
+advertisers and media agencies. These
+platforms store information about the
+type of ad inventory they want to
+purchase. This includes a target
+audience, campaign criteria, the
+maximum price they're willing to bid.
+On the other side, we have supply side
+platforms or SSPs. They're used by
+publishers or media owners who want to
+sell their ad space on their website or
+apps. SSPs manage the available ad
+inventory, audience segments, visiting
+the site, the minimum price the
+publisher wants to receive. Between DSP
+and SSPs is the ad exchange. This
+platform acts as a digital marketplace
+where ad inventory is auctioned. If the
+available inventory matches the
+criteria set by advertisers in their
+DSP, those advertisers are entered into
+the auction.
+The advertiser with the highest bid,
+relevancy, and ad quality wins the
+auction, and their ad is displayed to
+the user. Companies that provide the
+technologies are often referred to as
+the type of platforms such as DSP
+providers, SSP providers, or ad
+exchange providers. Although this
+process sounds quite complex, but it
+happens incredibly fast in the back end.
+The auction begins the moment a user
+opens a web page. Within that ad space
+with a fraction of a second, the
+winning ad is selected and displayed as
+the page loads. This process is
+entirely known as real-time bidding or
+RTB. When a web page loads without an
+ad, the page content appears, but the
+ad space remains empty. When the same
+page loads with an ad, a real-time
+bidding process that takes place in the
+background. Within a few milliseconds,
+advertisers compete for their ad space,
+and the winning ad is displayed almost
+instantly as the page finally loads up.

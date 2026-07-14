@@ -1,0 +1,83 @@
+Now we are going to compare two
+powerful brands from completely
+different industries, Netflix and Nika.
+While one dominates global streaming
+and the other leads India's beauty and
+lifestyle market, both companies offer
+valuable lessons in understanding
+consumer lifetime value. First, let's
+consider Netflix, which follows a
+subscription-based model. In this model,
+the average value of each sales is
+fixed because the consumer pays a set
+monthly subscription fee. As a result,
+Netflix LTV, or the consumer lifetime
+value, is relatively predictable.
+Customer lifetime value is calculated
+by multiplying the monthly subscription
+fee by the number of months the
+consumer remains subscribed. This means
+the longer a consumer remains
+subscribed, the higher their lifetime
+value becomes. Next, let's look at NICA,
+which operates on a transactional or
+retail model. Unlike Netflix, consumers
+are not limited to a fixed monthly fee.
+They purchase different products in
+different quantities at different
+points of time. Because of this, there
+is no clear ceiling on how much a
+consumer can spend. Consumer lifetime
+value is calculated in this case by
+multiplying the average order value by
+the number of orders a consumer places
+in a particular year, month, or a
+quarter by the number of orders a
+consumer places in a year, and then
+multiplying that by the length of the
+consumer relationship.
+Hence, customer lifetime value grows
+based on how much customer spends per
+order, how often they buy, and how long
+they remain as customers. We can better
+understand these models by examining
+Netflix and Nyika. Across several key
+points. First, consider revenue growth.
+For Netflix, growth is primarily driven
+by retention. The longer consumers stay
+subscribed, the more revenue they
+generate.
+In contrast, Nike's growth is driven by
+the basket size and the purchase
+frequency, meaning how much consumers
+buy and how often they return to shop.
+Next, let's look at primary metric for
+each business. For Netflix, the most
+critical metric is churn rate, which
+measures how many consumers cancel
+their subscriptions. For Nyika, the key
+metric would be the average order value,
+or AOV, which reflects how much
+consumers typically spend in each
+purchase. The marketing goals also
+differ. Netflix focuses on keeping the
+service essential, encouraging
+consumers to develop a habit of
+watching the content regularly, while
+Nyika, on the other hand, focuses on
+creating discovery and desire,
+motivating consumers to explore
+products and continue shopping. Each
+model faces a different risk factor.
+For example, Netflix, the biggest
+challenge is content fatigue, where
+consumers may cancel if there is
+nothing new or interesting to watch.
+For Nika, the risk comes from
+competition, price sensitivity, where
+consumers might switch platforms such
+as Amazon in search of better prices or
+deals. So when analysing LTV, Always
+consider how the company generates
+revenue and keeps its customers engaged
+over a period of time.

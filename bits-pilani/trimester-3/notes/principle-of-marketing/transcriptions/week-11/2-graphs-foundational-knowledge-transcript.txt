@@ -1,0 +1,109 @@
+Hi again and welcome back. In this
+video we are diving into Google
+Analytics, often referred to as GA or
+Google Analytics. Google Analytics is a
+free web analytics service provided by
+Google. It tracks and reports website
+and app traffic, giving organisations
+detailed insights into visitor
+behaviour, demographics, and marketing
+performance. Why this is important for
+marketers? Google Analytics helps
+marketers monitor user engagement,
+measure return on investment. Or ROI
+track conversions, optimise the overall
+user experience. With these insights,
+organisations can now make data-driven
+decisions that help them achieve their
+business goals more effectively and
+efficiently. So what exactly does
+Google Analytics do? It's a powerful
+digital analytics platform that helps
+marketers understand how users interact
+with their websites. You can see who is
+visiting your site, how they engage
+with it, and what actions they're
+taking. It also helps assign credit to
+various digital channels, showcasing
+which marketing efforts are driving
+valuable engagement. The insights you
+gathered through Google Analytics can
+be tracked through continuous testing
+and optimisation, ultimately helping
+improve your overall marketing
+performance. So why do marketers love
+Google Analytics? Think about the type
+of questions they constantly ask about
+their website. How are my users
+engaging with my site? How can I make
+my outreach campaigns more effective
+and accountable? They also wanted to
+know, am I creating an effective
+content? Where exactly are my users
+entering and exiting my site, and most
+importantly, how I can improve the
+overall on-site experience for my users.
+This is where Google Analytics becomes
+such a powerful tool. It answers all
+these questions and helps marketers
+improve their websites and strategies
+with actionable insights. So how does
+Google Analytics work? Google Analytics
+operates through something called a
+page tag, also known as Google
+Analytics Tracking Code. It's a small
+snippet of JavaScript code, when added
+to your website pages or mobile apps,
+enables Google Analytics to track and
+record user activity on your site, or
+on your website or on your app. This is
+the foundation for all the data you
+receive in Google Analytics. Now let's
+explore some of the key aspects of
+Google Analytics that every marketeer
+should know. First up is behaviour
+tracking. This monitors which pages are
+popular, how long users stay, and the
+navigation paths. Think of it as a way
+to see your website through users' eyes.
+Next, we have traffic sources which
+identify where your visitors are coming
+from, whether it's organic search,
+social media, or paid ads, so you know
+which channels are driving engagement.
+Then there is audience insights which
+reveal user demographics, their
+location, and even the devices they use.
+This helps you tailor your content to
+the right people at the right time.
+Finally, conversion tracking tracks by
+key events such as purchases, sign ups
+or form submissions, or you can see if
+your marketing efforts are actually
+achieving the desired results. Together
+these features give you a 360 view of
+your website and marketing performance.
+So why do marketers continue to rely on
+Google Analytics? Well, it helps
+improve ROI by showing which particular
+marketing channels are delivering the
+best results. It allows you to optimise
+a user experience by identifying pages
+with high bounce rates or falloff rates
+and helping you figure out how to keep
+those users engaged over a long period
+of time. With Google Analytics, you can
+make data-driven decisions both in real
+time and historical data to guide your
+content and marketing strategies. Most
+importantly, it helps in goal
+monitoring. You can track specific
+actions such as e-commerce sales,
+signups, or form completions to see if
+you're meeting your business objectives.
+In short, Google Analytics turns raw
+data into actionable insights. By
+leveraging these insights, Marketeer
+can make smarter decisions. Improve
+their website and ultimately achieve
+better marketing results.

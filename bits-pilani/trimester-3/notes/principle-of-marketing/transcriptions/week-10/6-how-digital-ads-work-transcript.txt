@@ -1,0 +1,208 @@
+Welcome back learners. In this video we
+are going to take a deep dive into the
+fascinating world of digital ads,
+focusing on how they work, particularly
+by understanding behavioural and
+contextual targeting. We'll also look
+at advanced technologies. If you've
+ever wondered, right, if you have been
+thinking about something and
+immediately that ad pops up on your
+Instagram feed or across the internet,
+we'll try to have an answer for this,
+how this actually works and how they
+kind of show an ad that you have been
+thinking about.
+We'll try to answer like do they really
+read your mind and show a particular ad
+at the right point, at the right place.
+So by the end of this video, you will
+have a solid understanding of these
+concepts and how marketeers reach the
+right audience and the right message at
+the right time. Let's start with 2
+important types of targeting in digital
+advertisements. One is behavioural
+targeting and another one is known as
+contextual targeting. The behavioural
+targeting focuses on the actions of
+users and their behaviour online. It
+tracks users based on past actions,
+interests, and interactions, especially
+it uses the data gathered from previous
+activities such as websites you have
+visited, search queries, social media
+behaviour, and more. And then it tries
+to predict what the user might be
+interested in. So if someone frequently
+visits websites about fitness or
+searches for gym equipment, advertisers
+can target that user with ads related
+to fitness products, gym membership, or
+health supplements.
+The main benefit of behavioural
+targeting is that it enables
+advertisers to serve highly
+personalised ads to users who have
+shown interest in similar topics,
+making the ads more relevant and
+increase the likelihood of conversion.
+Imagine in a way like maybe you've just
+recently got blessed with a child and
+you have been looking around childcare
+products all across the internet, so
+the algorithm will try to show you ads
+related to childcare products like
+Pampers and all those things. So this
+is a typical. behavioural based
+targeting, where the algorithm tries to
+understand what your behaviour has been
+and then try to match an ad which is
+relevant as per your behaviour. Now
+let's look into contextual targeting.
+We'll learn what contextual targeting
+is and we'll go back to the similar
+example and see how the world would be
+different in a contextual targeting
+environment. So first, what's a
+contextual targeting? Contextual
+targeting doesn't only rely on your
+pulse. behaviour, but it also focuses
+on the context of where the user is
+located or currently engaged with.
+Remember our previous example where in
+a behavioural targeting mechanism,
+since you were blessed with a child and
+you were only searching for a childcare
+product online. The algorithm was
+trying to show you childcare products,
+related ads across the way. Now imagine
+in a way Like, you know, one of your
+friends calls up and says, like, hey,
+let's meet for a drink tonight. And you
+know you went to a bar, and at this bar,
+you're not being shown a childcare
+product ad. Now you're shown like, hey,
+if you buy this wine, there's another
+discount of ₹1000 or ₹2000.
+In a case of behavioural based
+targeting, it knows based on your past
+behaviour you have been looking for
+childcare products, so it was just
+showing you childcare products without
+understanding the context where you are
+placed right now. But in terms of
+contextual advertisement, the key
+advantage is it not only understands.
+Your past behaviour, but also the
+context you are in. Since you are out
+with your friend on an evening sitting
+on a bar, you might not be interested
+in buying a childcare product even
+though you have past behaviours of it,
+but it understands your current
+location and current context, and it
+shows you a relevant contextual ad
+which is relevant based on your present
+behaviour and not on your past
+behaviour. These are the differences
+between behavioral-based targeting and
+contextual-based targeting.
+Now that you understand the basics of
+behavioural and contextual targeting,
+let's look at how Marketing digital
+advertisements uses technology,
+especially machine learning, to change
+the digital advertisement ecosystem.
+Many of you already know machine
+learning is a subset of artificial
+intelligence or AI that allows systems
+to learn and improve from experience
+without being explicitly programmed in
+the context of digital advertising.
+Machine learning algorithms help
+improve targeting, ad relevance, and
+campaign performance over time by
+analysing large sets of data and
+behaviours. For example, machine
+learning can help determine which ads
+are most likely to resonate with
+specific audience groups based on their
+historical and contextual data. OK. One
+of the use cases that they use is
+collaborative filtering. In this method,
+it analyses the preferences of similar
+users to predict what another user
+might like. For example, if user A And
+user B shared a common interest in
+fitness products. Collaborative
+filtering might suggest that user A
+would also be interested in the items
+user B has purchased. In digital
+advertisement. This approach helps
+deliver.
+Almost equivalent of personalised
+product recommendations, which
+increases the relevance and drives
+sales. For instance, if a user buys a
+fitness tracker, collaborative
+filtering can suggest accessories
+related to what similar users have
+already bought. Then we have clustering
+for relevant ads. Moving from almost
+personalised recommendations. Let's now
+discuss which clusters users to
+segments based on shared
+characteristics. By grouping users with
+similar behaviours or demographics,
+clustering enables advertisers to
+create audience segments such as high
+spenders or frequent shoppers. This
+segment can be targeted with tailored
+ads, for instance, premium products for
+high spenders or discounts and loyalty
+programmes for frequent shoppers. This
+method ensures ads are more relevant,
+improving engagement and conversions by
+focusing. On the unique needs of each
+group. Next, let's look at how the
+neighbourhood algorithm is also used,
+which helps advertisers understand and
+target users based on local trends and
+proximity. If a significant number of
+users in a particular area are engaging
+with the content, the neighbourhood
+algorithm understands it and shows all
+those related ads to the people in the
+neighbourhood.
+To wrap up, we have explored the power
+of behavioural and contextual targeting,
+how technologies like machine learning
+enable advertisers to deliver almost
+personalised, relevant, and effective
+ads. This technique allows marketeers
+to reach the right audience with the
+right message at the right time,
+whether it's providing real-time
+recommendation, targeting users based
+on their location, or grouping them
+into meaningful segments. These
+strategies help businesses create
+campaigns that drive real results.
+Understanding this will help you
+understand the whole digital marketing
+ecosystem and enabling you to connect
+with the right audience in a more
+meaningful way. OK, with this, I will
+leave you with one quote from Mike
+Tyson. He says everyone has a plan till
+you get punched in the face. Similarly,
+in digital marketing also, you might
+have the perfect plan, but once your
+campaign goes live, they might surprise
+you. The key to success is staying
+closure to your data, adapting quickly,
+and knowing when to cut your losses or
+when to double down. This is the
+mindset that separates great
+performance marketeers from the rest.

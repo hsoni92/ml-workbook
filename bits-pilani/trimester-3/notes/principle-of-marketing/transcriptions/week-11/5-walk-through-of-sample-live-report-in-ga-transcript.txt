@@ -1,0 +1,129 @@
+Today we are going to explore a demo
+Google Analytics account to understand
+the various reporting formats and what
+are the other nitty gritties that it
+provides. So here's a link of a demo
+Google Analytics account that will be
+provided in the beneath of your video.
+So first, let's start exploring with
+the real-time dashboard over here.
+Again, this is a demo account, uh, it
+pulls up some dummy data, but on the
+home screen you can see the active
+users, new users. And then average
+engagement time, basically how much
+time they're spending on your website
+or the mobile app. It also talks about
+active users in the last 30 minutes,
+country-wise. Now if we kind of scroll
+a little down below. It shows average
+engagement time per active user, again,
+a similar kind of a view, but in much
+more depth. You'll see engaged sessions
+per active user, uh, you know,
+basically kind of a frequency of visit
+on your website.
+Now this is about the home section.
+Again, you can click on any of those
+things and take a deep dive. As I said,
+kind of, it gives you a breakdown by
+country, by new versus returning users,
+so on and so forth. Let's go back.
+Similarly, you can see a real-time data
+as well.
+Based on countries, based on wherever
+this traffic is coming from, and what
+they're actually doing on your website.
+Are they're viewing your website or
+engaging with your website, or clicking
+on certain buttons, uh, so on and so
+forth. With that, we'll move to
+advertisements. So first thing we have
+key event performance.
+OK, so it basically talks about the
+traffic that is coming, where they're
+coming from. Is it like a direct
+traffic that is basically someone
+directly typing your website name on
+the search bar. Then is it through paid
+Google advertisement or organic search,
+like on the organic listings of Google,
+or some referral or cross-network
+across other channels as well. Then
+we'll move to attribution paths. Now
+attribution is one of the important
+concepts where it basically talks about
+who the credit goes through. In
+attribution path, first we'll look into
+the path that it is falling, so some of
+the traffic which is 100% direct, like
+the people or the conversions that is
+happening, which is by directly putting
+your web address. Then we have page
+search, where, you know, the Google
+paid search, what percentage it
+contributes to the total events, and so
+on and so forth over here. Then key
+attribution models, so there are
+various attribution models which you
+can change the model just by clicking
+over here, last click, first, click
+data driven. The important point to
+note over here is, let's suppose from
+Derek, if we use a last click
+attribution model, you can see this is
+almost like 1,465,000 key events that
+have been recorded, but if we use a
+data-driven attribution model, it's
+almost like 1,479,000. There's a slight
+difference because as we change the
+attribution model. The credit also
+changes. Then we'll move to conversion
+performance again. It talks about all
+conversions that came through direct
+organic search, any referral or page
+search network, whatever that was. So
+these are very helpful reports when you
+are running campaigns across Google Ads,
+Me ads, and other platforms as well. It
+gives you a consolidated view of your
+marketing efforts in a one single
+platform, and then uh we can create our
+own reports over here, you can pick and
+choose any template. Let's suppose if
+you're an e-commerce company, you can
+choose path exploration report. Since
+now it's just loaded up, so let's
+suppose you can track how many people
+have started the session. How many
+people have kind of viewed a particular
+product page, so on and so forth. You
+can define each of the event page and
+names over here. Let's go back to
+report. OK, uh, so in report, we will
+come under life cycle and acquisition.
+Let's start with the overview, or maybe
+let's go to first user acquisition. OK,
+it again gives you a split across the
+channels, like the total users, new and
+returning users. And again, it shows
+average engagement time per active user,
+so it basically gives you a snapshot of
+new versus returning users.
+Kind of broken down, uh, based on
+platforms or channels that they have
+came through.
+Similarly, you can do a traffic
+acquisition report as well.
+Uh, again, very similar kind of view,
+it gives you, uh, the session metrics
+over here. So difference between user
+acquisition and traffic is, a user is
+kind of defined mostly based on their
+IP addresses.
+Our traffic is based on the number of
+sessions that they are coming in, so
+basically how they're interacting with
+your website, irrespective of their IPs.
+So yeah, uh, that's about, uh, Google
+Analytics.

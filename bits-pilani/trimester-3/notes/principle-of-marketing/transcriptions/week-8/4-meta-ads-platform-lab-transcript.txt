@@ -1,0 +1,381 @@
+Let's understand meta ads business
+manager, as they call us, ads manager.
+So if you go to. Meta adds business
+manager. This is how the initial screen
+looks like. For the first time, you
+might have to sign up with your
+Facebook or Instagram account. Uh, so
+I've already signed in over here. I'll
+just directly go and click on, go to
+Ads Manager.
+So once I click over here.
+The dashboard opens up.
+Before we get into the dashboard, a
+real quick recap about how metals ads
+are structured.
+So we already talked about how the meta
+ads structure is placed. First, at the
+first level we have campaign level,
+then we have the ads set level, and
+then finally we have the ad level. What
+is a campaign? Level, a campaign is the
+topmost level of your ads. When you
+create a new campaign, Meta will always
+ask you for an objective, like what's
+the ad is all about. So that Meta's
+algorithm can decide how to distribute
+that money.
+So, objectives, again, uh, there is
+objective for traffic, you want to
+drive traffic to your website, or it
+could be engagement, you want to drive
+views to your Instagram reels or other
+ways. There are leads where you can
+collect information, uh, user
+information based on whatever they
+input, or if you want to promote your
+app.
+And the next level, there is adset. At
+the asset level, the most important
+setting
+is what you define via your audience
+targeting, placement targeting, or
+regional targeting. For example, if you
+want to target a particular location, a
+particular demographic like people who
+love designer clothing or women's
+clothing, everything falls into adset.
+So remember in Meta's ad structure, the
+whole magic happens in the adset level.
+So these are the some few examples that
+you can
+use as a targeting options on an asset
+level on meta. And finally, the ad,
+which is pretty straightforward, uh, an
+ad is everything your audiences will
+get to see when your campaigns are live.
+It could be a video image or any other
+form of, uh, advertisement like a
+cadozal cards also.
+So this is an example of a meta and
+Instagram ad. So now we know all the
+basics, we'll get into the account, so
+this is, as I mentioned, how the
+account looks like. We'll click on
+campaigns.
+OK, let's create a new campaign over
+here. So first thing it says, what's
+the buying type that we want to use.
+First option is auction or reservation.
+Auction is, it's get into a real-time
+auction, but reservation is you kind of
+pre-decide or kind of pre-set a budget
+for a specific time. And as you can
+imagine, reservation adds a slightly
+higher expensive and auction is a
+little more cost effective. So we'll go
+with a real-time auction over here.
+Let's click on auction, and then at a
+campaign level, it will ask me what's
+my campaign objective, uh, whether it's
+awareness, driving traffic to my
+website or engagement, whether it's
+video views or post engagement,
+whatever it could be, so on and so
+forth. Let's suppose my objective is to
+drive traffic to my website. Or maybe
+it could be Instagram profiles as well,
+so let's click on that traffic.
+Click on continue.
+OK. So now, again, it gives me two
+options. Uh, it Say like, hey, you know,
+let an AI decide your targeting, or you
+can use a manual option over here. For
+the learning purposes, let's suppose
+we'll go with the manual option.
+Let's click on continue.
+OK. This is how things will look like.
+It will ask you to give a campaign name.
+You can give any campaign name. Let's
+suppose it's called a test campaign.
+OK, so the buying type is auction.
+Campaign objective is traffic. Now it
+will ask me to set a budget. Either I
+can set a budget at the adset level,
+which is the second layer, or the first
+layer. For the simplicity, let's
+suppose we'll go with campaign budget.
+Then it will ask me whether I want to
+use a daily budget or a lifetime budget.
+Daily budget is basically I can choose,
+like I will spend, let's suppose, ₹100
+a day. Or I can say a lifetime budget,
+which is basically, I will run this
+campaign for the next 7 days, and let's
+suppose I'll put a budget of ₹10,000
+right? So I can choose anything. Let's
+suppose we'll go with a daily budget of
+₹100.
+OK, now, uh, let's.
+Scroll down. So some special ad
+categories is basically if your
+advertisements falls under financial
+products or services, employment,
+housing or social issues, you have to
+kind of give a disclaimer to Meta, like,
+hey, this, my ad is under a special
+category. Let's suppose in our case
+it's not, we'll move forward.
+OK, remember from the campaign level,
+now we are at the adset level, the
+three-tiered structure that we kind of
+talked over here, campaign, asset, and
+ad. So right now we are at the adset
+level.
+So what happens in asset level? Um, it
+basically talks about where do I want
+to drive my, uh, profile visits,
+whether it's a website or Instagram or
+Facebook page, or whatever that is,
+let's suppose it's a website.
+Performance goal. My performance goal
+is maximum number of landing page views
+that I want.
+Let's scroll down. Attribution is
+something we'll talk at the end of our
+session, like, uh, when we are in week
+12 or week 13. Uh, right now you can go
+with standard attribution model. Uh,
+attribution is basically how meta
+understands, uh, you know, how the
+conversions or clicks has to be
+attributed or given the credit for, but
+we'll talk more about in week 12 or
+week 13.
+OK, uh, then.
+We have already set the budget and all
+those things. We can put a start date
+or an end date. Since we have put our
+daily budget, so our start date is
+enough, we can anytime in the campaign.
+OK, then it comes audience controls, uh.
+And the placement control, you can
+choose your placement. Uh, if you don't
+want to show your ad, let, let's post
+on the Facebook right column, you can
+just uncheck it.
+In our case, there's no such thing.
+OK, so we'll come to advantage plus
+audiences, and over here, we can start
+editing the age group that we want to
+target. So for example, imagine if you
+are showing an ad for a woman apparel,
+uh, so maybe on the genders, you just
+want to show women and age you want to
+edit, let's suppose people from 25 to
+35.
+OK, let's oppose gender is women only.
+Now, detailed targeting, this is what
+people have been, uh, you know, looking
+at Instagram or Facebook. You can
+target those specific interest-based
+people. So for example, let's suppose
+women.
+Clothing.
+So you can add that, or people who love
+online shopping, so on and so forth. So
+you can decide what kind of audiences
+you want to target and you can keep
+adding over here.
+Yeah, so this is what the asset level
+is, where you set your audience
+targeting, you set your start date and
+end date, uh, age, gender, all the
+demographic changes that you do over
+here. Again, if you're running some
+special category advertisements like
+finance, stock market trading, and so
+on, so you have to just mark it as yes.
+In our case it's not, so we'll skip
+this. So any ads which is related to
+securities and investments, you have to
+just put a disclaimer, but right now we
+are not in that category, so we'll skip
+that and we'll click next.
+OK, so once this is done,
+We have to connect our page, like the
+Facebook page and the Instagram account.
+You can just click on create page. If
+you don't have it, or if you have it,
+you know, it will just show, your page
+will automatically be shown up over
+here and you have to just click on
+connect.
+OK, uh, with that, this is where the ad
+comes up. Uh, we have already learned
+the various forms of ad, like a single
+image or a video or a colossal ad, and
+so on and so forth in our earlier
+videos. So let's suppose that for the
+learning purposes, we'll just use
+single image or video over here. You
+can put the website URL over here,
+let's say www.abc.com, whatever that is.
+You can put it over here, even, even
+you can put a WhatsApp button uh link
+in your, uh, web link as a web link
+over here.
+OK. So once you do that, you can click
+on add preview and upload all your uh
+images or videos over here and connect
+your Facebook page and Instagram page.
+Either, it can fetch all your existing
+Facebook posts or Instagram post and
+suggest you options, or you can
+manually upload it. Once you are done,
+click on publish.
+So it will ask
+the region and time zone, and just
+click on next and you should be done.
+So with that, your Facebook ad will go
+live. So in this case, we are not
+publishing it. At any point in time,
+you can turn your ad on and off with
+this toggle button over here. Uh, this
+is on the asset level. Let's go back on
+campaign, yeah, so the test campaign
+that we have created, we have just
+turned it off. Of course, at any point
+in time, you can turn it on as well.
+And this is where it shows the key
+metrics like impressions, reach, uh,
+and let's suppose we want to add
+another few things. So you just click
+on columns and go and customise columns.
+So, whatever you need, let's suppose I
+want to see clicks. So I just click on
+clicks. And then I want to see the CTR.
+CTR is basically, uh, the click through
+rate.
+So, once the data populates over here,
+you will see everything over here. So,
+just remember a quick difference
+between impressions and reach, uh,
+Reach is a unique number, impression is
+a non-unique number. For example, you
+could have reached 100 unique people,
+but your impression could be 200. That
+means each people have seen your ad for
+twice. So that's called a frequency. So,
+again, uh, reach could be 100, that is
+100 unique people your ad has been
+reached to, but they might have seen
+your ad for twice on an average, and so
+the impression becomes 200. Reach
+multiplied by frequency.
+OK, so this is how uh the Meta Ads
+manager looks like.
+With this, you can also come to ads
+reporting.
+OK. So right now we don't have any
+campaign, but you can create your own
+reporting dashboard over here with
+campaign name, adset name, and ad name,
+and with what, uh, other things that
+you would need, like, you can have a
+breakdown of age, gender, so on and so
+forth, so you can understand. So for
+example, if you're running 5 different
+campaigns, it will basically tell you,
+uh, How, which campaign is kind of uh
+performing better and which are age
+group, gender, region, so on and so
+forth.
+Now let's go to audiences.
+OK, now, Meta supports 3 kinds of
+audiences. One is called as custom
+audiences, then is a lookalike
+audiences, and uh finally, you can save
+your audiences as well. So what's a
+custom audience? Custom audience is
+basically imagine if you have got a
+data set of people. Uh, from our data
+sourcing agencies, for example, just
+imagine, uh, you know, you have seen
+those folks on shopping malls who
+always ask you for your phone numbers
+or email IDs for selling credit cards
+and so on and so forth. So imagine in
+your neighbourhood you somehow got
+access to that data, you can upload
+those as custom audiences. This is one
+example of custom audiences. Another
+could be the first party data that you
+have collected, that is basically Uh,
+imagine if you're a cafe owner in your
+neighbourhood and the people who have
+actually signed up in your cafe, uh,
+for the cafe, uh, you know, for buying
+order and stuff, you always ask for
+their phone number or email. So imagine
+you have also collected those data, so
+you can upload those as custom
+audiences, right? So basically,
+customer contacts, it could be any
+other contacts that you have purchased
+or even your website traffic or app,
+right?
+The lookalike audiences is a little, uh,
+I would say, uh, a layered version of
+custom audiences. Basically, it just
+tries to look into what are the
+look-alike versions or interests or
+behaviours that is also similar to your
+custom audiences, right? So the metas
+algorithm try to find out whatever
+custom audiences you have uploaded.
+What are those users or behaviours that
+they are seeing on Instagram or Meta,
+and then they also try to look for
+similar or lookalike audiences, right?
+So basically, as it says, reach new
+people who are similar to your
+audiences who already care about how it
+understands similarity based on their
+Instagram or metas, uh, usage
+performances, right? So for example, if
+Your consumer likes to see cat videos.
+Meta will also try to understand
+someone who likes cat videos, could be
+your potential lookalike audiences or
+your potential consumer, right? So this
+is all about look-alike audiences. In
+the audience section, remember in the
+ad set we were selecting a lot of
+audiences. You can either target your
+own customers, like retarget your own
+customers, or you can rely on Meta's AI
+which tries to find out look-alike
+audiences.
+With that, we have uh advertisement
+settings over here, like the advertiser
+settings, uh, you can use certain
+controls like whom do you want to give
+access to this dashboard, whom do you
+don't want to give access.
+Finally, we have the billing and
+payment section.
+OK. So here, you can use this as a
+top-up wallet as well. You can top up
+the wallet and uh run your ads. You can
+connect your PayTM account or your Visa
+or Mastercard, uh, you know, credit or
+debit cards. You can add it over here
+and run your ads.
+Yeah, uh, so these are all the tools
+that are available, which might not be
+fully activated, uh, because you need a
+Instagram business page or a meta
+business page also, and then a lot of
+other options will also, uh, be opened
+up for you.

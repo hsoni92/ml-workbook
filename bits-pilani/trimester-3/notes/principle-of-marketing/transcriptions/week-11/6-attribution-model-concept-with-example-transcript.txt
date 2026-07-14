@@ -1,0 +1,186 @@
+Great to see you again. In the previous
+session, we have learned how to track
+campaign traffic using various
+parameters and analyse it in Google
+Analytics 4. Let's now look at how
+marketeers understand which touch
+points actually lead to a conversion.
+In order to understand it, first we
+need to understand how digital
+advertisement ecosystem is currently
+operating. In today's omni-channel yet
+fragmented digital environment,
+customers rarely convert just after one
+interaction. In fact, according to
+multiple researchers and surveys, it
+has been found an individual often
+reacts with about 7 different digital
+touch points before making a product
+purchase decision, or before becoming a
+paying customer. This is where the
+concept of attribution modelling
+becomes important. It helps stitch
+together data from these different
+touch points. In one place to
+understand how each interaction
+contributes to your final conversion.
+So the first category of attribution
+modelling is known as rule-based.
+Attribution models within the
+rule-based category we have some common
+models, which is first click, last
+click, linear time decay, and
+position-based attribution modelling.
+Let's examine each of these rule-based
+models in more detail. First, we have
+this first touch attribution model
+which gives credit to all the first
+touch point a customer interacts. The
+focus is on the touch point that
+initially captured the customer's
+attention and started their conversion
+journey. For example, if the first
+interaction is a Google ad, that ad
+receives 100% of the credit for that
+conversion. Other interactions like
+filling a website form, attending a
+webinar, or clicking an email, or even
+a Facebook retargeting ad gets no
+credit. In contrast, the last click
+attribution model assigns all credit to
+the final touch point before the
+conversion. It emphasises interactions
+that directly influences the decision
+to buy. For instance, if a Facebook
+retargeting ad is the last interaction.
+It receives 100% of the conversion
+credit, while previous touch points are
+ignored.
+Next, we have linear attribution model
+which spreads credits equally across
+all the touch points throughout the
+customer journey. Every interaction is
+considered equally important in
+contributing to the conversion,
+regardless of its position in
+customer's journey path. If a customer
+engages with 5 touchpoints Google Ads,
+website form, webinar, email click, and
+Facebook retargeting, each one gets the
+same share, example, 20% credit for
+each.
+Next, we have time decay attribution.
+Under time decay attribution, it gives
+more credit to the touch points closer
+to the conversion. Reflects the idea
+that touch points nearer the purchase
+decision, likely to have a stronger
+impact on customer's choice. Earlier
+interactions like Google Ads get less
+wet, while later touch points like
+email click or Facebook retargeting get
+more.
+Next, we have position-based
+attribution, also called as U-shaped
+attribution. The position-based
+attribution model gives 40% credit to
+each of the first and last touch points,
+while the remaining 20% is split evenly
+among the other touch points in between.
+This model acknowledges the
+significance of the initial and final
+touch points while still valuing the
+role of touch points in the middle of
+the customer journey. For example, the
+Google ad the first and the Facebook
+retargeting ad at the last. Gets
+roughly 30 to 40% credit, and the
+middle touch points like website form,
+webinar, and email click gets 10% each.
+In order to understand the various
+rule-based attribution modelling that
+we have learned so far, we can take a
+quick example of this very popular web
+series called How I Met Your Mother
+Style to understand and to recap all
+the things that we have learned so far.
+To make this clearer, we'll take the
+help of these characters of this
+particular famous web series. We will
+have a quick recap of all the
+rule-based attribution modelling we
+have learned so far in a How I Met Your
+Mother style. Don't worry if you don't
+know about the characters. We will. Get
+to them and we will try to use
+attribution modelling over here. OK, so
+over here we are talking about some of
+the few characters. On the left, we
+have Mr. Bani.
+Then next to him we have Miss Robin,
+then on the middle we have Mr. Ted. On
+the right side we have Mr. Marshall,
+and on the extreme rightmost we have Ms.
+Lily.
+Imagine Bernie gets introduced to Robin
+by his friend Lily at a party. They
+have a nice casual conversation over a
+drink, and then they part their own
+ways. Mr. Burney immediately starts to
+like Miss Robin.
+The next week, they again bumped into
+each other.
+This time it's at Marshall's party, the
+conversations between them now were a
+little longer. Mr. Bernie is mesmerised,
+and he finally gathers the courage to
+ask Miss Robin out on a date. And guess
+what? Miss Robin says yes. Now Bernie
+and Robin have been dating for a couple
+of years. Mr. Bernie knows Robin is the
+one, and now he wants to propose for
+marriage, but now he's extremely
+nervous. Now over here enters Mr. Ted.
+Ted gives the courage to go and buy a
+ring and open his heart to Robin.
+Mr. Burney follows the advice, and he
+does, and guess what? Miss Robin again
+says yes this time. Now imagine we are
+at Bernie's and Robin's wedding, and Mr.
+Burney has to raise a toast for each of
+his friends. Now the question is, who
+should Mr. Burney give the credit for
+their marriage. If Mr. Burney would
+have used last click attribution model.
+Ted would get the entire credit.
+On the other hand, if Mr. Berney used
+first click attribution model, Lily
+would get the entire credit. Remember,
+Lily was the first one to introduce
+Bernie and Robin. Now imagine if Bernie
+have used linear attribution, Lilly,
+Mershel and Ted would get equal credit.
+And if Bernie would have used time
+decay attribution modelling, Ted would
+get the maximum credit, followed by
+Mershall and then finally Lilly. But
+poor Bernie got confused and forgot to
+thank anyone in his wedding speech. So
+the key takeaway is, don't be like Mr.
+Burney, know your attribution model.
+Now let's look at the second category,
+non-rule-based attribution modelling.
+We have data driven attribution
+modelling over here. Data driven
+attribution modelling harness the
+goodness of AI. Where the machine
+learning model decides to give credits
+to various channels based on real-time
+signals. This allows the system to
+learn from actual customer behaviour
+and distribute credits across touch
+points and more intelligently. With
+this, you now have a clearer
+understanding of various attribution
+models, and I will see you on the next
+video.

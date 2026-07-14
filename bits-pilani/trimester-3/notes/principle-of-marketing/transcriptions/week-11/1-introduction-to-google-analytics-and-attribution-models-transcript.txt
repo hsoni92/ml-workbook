@@ -1,0 +1,48 @@
+Hi everyone, welcome back to this
+week's session where we will be diving
+into the world of digital analytics.
+Digital analytics plays a vital role in
+helping organisations track, monitor
+and measure the effectiveness of
+digital marketing campaigns and efforts.
+With an ever growing reliance on online
+marketing, understanding how to
+interpret the data from various
+platforms can make or break a campaign.
+By the end of this week, you will gain
+a clear understanding of the key
+metrics used in these platforms like
+Google Analytics. These metrics are
+more than just numbers, they represent
+the core insights needed to measure
+your campaign success and areas of
+improvement. You will learn not only
+what these metrics mean, but also how
+to use them strategically to improve
+the overall performance of your digital
+marketing initiatives. Whether it's
+understanding user engagement, traffic
+sources, or conversion rates, you'll
+have the tools to make data-driven
+decisions. Additionally, we'll explore
+the concept of attribution modelling.
+Attribution modelling is the process of
+determining how credit for conversions
+is assigned across different marketing
+touchpoints in a complex digital
+landscape where customers interact with
+multiple channels before making a
+decision. Understanding attribution
+models are crucial. This concept will
+equip you with the knowledge needed to
+evaluate the effectiveness of your
+marketing efforts and allocate
+resources efficiently. Ultimately, by
+mastering these foundational concepts,
+you will be better positioned to access
+the success of your campaigns, optimise
+marketing strategies, and deliver
+measurable results. So let's get
+started, take the first step towards
+becoming proficient in digital
+analytics.

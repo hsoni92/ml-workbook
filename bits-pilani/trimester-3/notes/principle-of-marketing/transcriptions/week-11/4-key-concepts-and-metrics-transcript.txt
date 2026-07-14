@@ -1,0 +1,338 @@
+Welcome to the next video. In this
+section we are going to explore some
+key concepts that form the foundation
+of how data is measured and interpreted
+in GFO. Understanding these concepts
+will help you make most of the insights
+that GFO provides. First up, let's talk
+about events. In GFO, almost everything
+is recorded as events. Some events are
+tracked automatically, such as page
+views or scroll activity, while others
+can be set manually to track specific
+business goals. For example, add to
+cart. Next are conversions, also known
+as key events. Not all events are equal.
+A conversion is a specific action that
+is valuable to a business, such as
+purchase, sign up, or lead form
+submission. Another important concept
+is acquisition, which explains where
+your users are coming from. For example,
+a visitor may arrive through social
+media, Google Ads, or direct traffic.
+GF4 also focuses on engagement. Instead
+of relying solely on bounce rate or the
+drop off rate, GFO measures engage
+sessions as well. These are the
+sessions that last longer than 10
+seconds, include a conversion event, or
+involve at least 2 page views. You may
+also encounter the term hits. A hit
+refers to an interaction that sends
+data to Google Analytics. Common hit
+types include page tracking hits, even
+tracking hits, and commerce hits.
+Another core concept is a session.
+Google Analytics groups user heads
+within a certain time period into a
+session. By default, a session ends
+after 30 minutes of inactivity. If
+Google Analytics stops receiving hits
+for a period of time longer than the
+timeout length, the session ends.
+Closely related is the concept of a
+user. Google Analytics can recognise
+when multiple sessions come from the
+same user using a cookie stored in the
+web browser, which sends an identifier
+back to Google Analytics. We also have
+the goals that measure how well your
+website fulfils its target objective.
+It represents completed activities such
+as reaching a specific destination,
+duration of time spent on the site,
+pages or screen views, viewed per
+session, or completing an event.
+Another metric you may have seen is
+bounce rate. Which represents
+percentage of sessions that were not an
+engaged session.
+So what's an engaged session? In order
+to have an engaged session, the user
+must have completed at least one of the
+following stay longer, more than 10
+seconds, or have one or more completed
+conversion events, or have completed
+two or more page or screen views.
+Next up, we have average session
+duration, which measures the average
+amount of time users spend in a session
+on your website or app.
+Next up we have source. Source refers
+to where the traffic originates from,
+whether it's Google search, organic
+results, or social platforms, and so on
+and so forth. OK, Medium explains how
+the traffic originated, such as whether
+it's an organic search or paid search
+or some other ways. Finally, channel is
+a top-level grouping of inbound
+marketing that combines source and
+medium. Common channel types could
+include organic search, direct social,
+email, or even paid search. Together
+this concept helps marketeers interpret
+user behaviour. Understand traffic
+sources and measure the performance of
+their digital marketing efforts to make
+sense of the large amount of data
+collected. Google Analytics organises
+this information into different types
+of reports, each designed to answer a
+specific question about users and their
+activity.
+Some sample reports could be
+acquisition reports, audience report,
+behaviour report, or conversion reports.
+We will take a look into the types of
+report and its usage. First up, the
+acquisition reports, which answers the
+question, how did the users get here?
+This report helps marketeers understand
+traffic sources, including where
+visitors are coming from. They also
+include Google Ads report, which shows
+the performance of advertisement
+campaigns and search engine
+optimisation, insights through search
+console, which helps track users
+discover the site through search
+engines. Next we have behaviour reports
+which focuses on what the user did on
+the site after they have arrived. These
+reports provide insights into site
+speed, helping you understand how
+quickly pages load. They also track
+events which capture specific user
+interactions, as well as page timings.
+In addition, site search reports reveal
+what users search within your website.
+Next, we have audience report. They
+help answer another important question,
+who are these people who are visiting
+the site? These reports provide
+detailed information about demographics
+such as age and gender. They also
+include interests such as affinity
+categories in market segments and other
+miscellaneous categories. You can
+analyse geodata, including language and
+location, as well as behaviour insights
+such as new versus returning users,
+frequency and recency, and their
+engagement levels as well. Audience
+reports also provide details about
+technology, including browser,
+operating system and the network, along
+with mobile versus computer device
+usage. Finally, there are conversion
+reports, which answer the key question.
+Did users do what we wanted them to do?
+This reports track goals, e-commerce
+activity, multichannel funnels, and
+attribution modelling, helping
+marketers understand which marketing
+efforts contribute to conversions. They
+also include gold funnel visualisation,
+which shows the steps user took before
+completing a desired action. To
+understand how Google Analytics
+identify traffic sources and other
+things, we need to look at something
+called UTM tags. UTM stands for urchin
+Tracking module. UTM codes are small
+pieces of information that can be added
+to the end of a regular URL. In order
+to give Google Analytics specific
+information about that link, a UTM tag
+typically includes 3 essential
+parameters. First is a source, which
+tells you where the traffic is coming
+from. Second is medium, which explains
+how users are finding the links, such
+as through email, social media, or paid
+ads. The third is the campaign name
+parameter which identifies marketing
+campaign associated with that link.
+Together these parameters make it
+easier to track the performance of
+different marketing efforts. Now in
+Google Analytics, tracking parameters
+correspond to 5 key dimensions. The
+first dimension is source, which shows
+where the traffic originates. The
+Second is medium, which represents the
+marketing medium used. The 3rd is
+campaign, which records the name of the
+campaign. The 4th dimension is term,
+which indicates the keyword or audience
+being targeted. And finally, the 5th
+dimension is content, which provides a
+description of the specific content or
+ad variation. If your goal is to track
+the performance of marketing efforts at
+a campaign level.
+Then you typically use sorts, medium
+and campaign tags.
+For example, if you're running a
+monsoon sale offer and add a Facebook
+ad, your source could be source as
+Facebook or Meta, Medium as paid or
+social, and your campaign tag could be
+the name of your sale, example, monsoon
+sale in this case. However, if you want
+to analyse performance at an individual
+ad level, then try to use all the five
+dimensions like source, medium,
+campaign, term, and content. Among
+these five dimensions, source and
+medium are the two most important tags
+because together they explain where the
+traffic came from and how users reached
+your site. In fact, these two
+dimensions are so critical that they
+often deserve focused analysis on their
+own. Let's look at an example, a sample
+traffic acquisition report in Google
+Analytics 4. In this report, you can
+see various options that we can look
+into for either source or medium.
+Source shows where the traffic comes
+from, such as Google, Facebook, Twitter,
+LinkedIn or others. Medium shows how
+users have arrived, whether through
+organic or paid or social channels.
+What it does, this allows marketeers to
+compare performance across different
+channels and across different
+categories like within a channel
+organic versus paid content. If you've
+ever wondered how Google Analytics
+identify where visitors come from. The
+answer is, again, the Google Analytics.
+UTM tracking methodologies. When
+someone visits your website, the
+browser reads the underlying HTML and
+CSS to display the page. But if you've
+installed Google Analytics, the code
+also includes a small script that
+tracks how people arrived on your site.
+One of the ways it does is by checking
+the referral URL, the web address that
+brought the visit over here. Let's say
+there's a link to your site, Website B,
+from another website, Website A. As
+long as Website B has Google Analytics
+running, traffic from Website A will
+automatically appear in your report as
+source equals to websiteA.com and
+medium as referral because you got a
+referral back from the other website.
+This is the way how Google Analytics
+identify that visitor came from another
+website through a referral link.
+So this concept is known as URL marking
+up. Take a look at this URL markup
+example and how UTM parameters are
+structured within it. The main website
+appears first. After the question mark,
+the query string begins, which contains
+the tracking parameters used by Google
+Analytics. Each parameter includes a
+UTM tag name such as UTM So, UTM Medium,
+UTM Cont content, and UTM campaign,
+followed by an equal sign and a
+property value that defines a specific
+detail. For example, Yahoo, CPC brander
+and company branding campaign are the
+property values assigned to those tags.
+Multiple parameters are connected using
+the ampers and symbol, which acts as
+the query string separator to link
+several UTM tags within the same URL.
+Typically, UTM source, medium, and
+campaign are the most used ones, while
+the UTM content is optional and used
+for more detailed tracking. So another
+example of how it looks like, you see
+your website name over here as a URL
+website.com, www.website.com, put a
+backslash and question mark, and you
+can define your own UTM sources. So for
+example, if you're putting this link on
+another website, you can say as UTM
+source. As news site.com, wherever you
+want to put the link on, then you can
+say UTM Medium. If it's a paid
+partnership that you are doing with
+that website, you can say it as paid or
+CPC, whatever that is. Then use an
+ampers and or a symbolic and, and then
+add another parameter over here which
+is UTM campaign. You can say it as
+brand retarget or whatever you want to
+put the campaign name over there. So
+remember, while connecting the UTM
+parameters, we have to just use
+ampersan and or symbolic and over here.
+OK, so here is the Google Analytics UTM
+parameters cheat sheet. On the left
+side you can see all the dimensions
+like source, medium, campaign, term and
+content. Next column you can see what
+it is used for. A source is typically
+used to denote where our visitors are
+coming from. Medium, it talks about the
+marketing medium, paid or organic or
+referral or otherwise. Campaign, it
+talks about the name of your campaign
+monsoon sale, summer sale, whatever
+brand campaign you are thinking about.
+It's the search keyword of the audience
+identifier. Content identifies each
+ad's content. How to use it, you can
+think of for source you can think of
+the ad platform or the publisher for
+this name. Similarly, again, we have
+for other things like medium, campaign,
+term and content. And here are some
+examples that you can see on the
+rightmost corner in the table over here.
+Now let's walk through how to view the
+campaign data in GFO.
+First, you should log in to your GF4
+account and look at the left side
+navigation options. You would see an
+option caller Reports. This takes you
+to the main reporting area where Google
+Analytics organises acquisition and
+engagement data. Next, navigate to
+acquisition and select traffic
+acquisition. You will now see the
+traffic acquisition table, which is
+organised by the session default
+channel group. Here traffic is
+categorised into channels such as
+direct, organic, paid, search, etc.
+Click on any of the drop down button
+and you can see the associated data on
+the following few columns. So also, if
+you want to change your available
+dimensions, you can select on the bar
+above and select the options depending
+on what you want to analyse or view.
+With this setup, you can easily track
+how different campaigns and channels
+are driving traffic and engagement to
+your site.

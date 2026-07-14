@@ -1,0 +1,238 @@
+OK, with this, let's explore some of
+the few other capabilities and types of
+Google Ads uh that the portal has to
+offer.
+We'll go back to create a campaign.
+OK, let's suppose we want website
+traffic.
+I do continue. Let's start with demand
+gen.
+Click on continue again.
+You can name the campaign name over
+here.
+Let's suppose this we call it a test.
+We'll optimise for clicks.
+You can put a daily budget over here.
+Let's suppose ₹1 a day.
+OK. And then you can schedule your ads
+as well. Like, let's suppose I only
+want to run my ads on Mondays. And
+let's suppose, and then Wednesday. You
+can change the timing as you want.
+Then go to add group. Again, you can
+change your location as you want it,
+like India or any other location within
+India also. Any other location that we
+want, let's suppose Delhi.
+OK.
+OK, so once we have all this, we can
+also target an audience.
+Let's suppose.
+People who are interested in education,
+news and politics, who are pet lovers,
+who love media and entertainment, so on
+and so forth. Either you can search or
+choose from the dropdown, suggested
+drop-down list, or you can even browse
+based on certain options that Google
+provides, like life events or.
+In market audiences who are already
+searching for certain categories like
+this, so on and so forth. You can also
+change the demographics as per your uh
+business name. Let's click on save.
+Let's say test audience, you have to
+name the audience over here.
+OK, so once over here, then click on
+add one.
+Again, you can decide whether you want
+to go with a single image ad or a video
+ad or a carousal image ad. Let's
+suppose you want to go with a single
+image ad.
+All you have to do is plug in the final
+website URL over here and just click on
+this add buttons and upload uh. Your
+videos or images, and then write the
+headline and you can see the preview,
+how it would look on YouTube, Discover
+feed and on Gmail. Once you're done,
+just click on go to Review and it will
+take a few minutes to review your
+review, uh, get your ad reviewed and
+your ad will be live in a few minutes.
+OK. With this, let's move on to the
+next one.
+Which is uh.
+Let's suppose.
+We want to look for display.
+OK.
+Again, very similar options, you can
+change your location targeting as you
+would need, plug in the languages.
+Uh, you can schedule your ad if you
+want to. Either you can run it for all
+days or a few specific days in a week
+and change the timings as well.
+Click on next.
+Put the budget, let's suppose our daily
+budget is only ₹1.
+OK, over here targeting, you can select
+the audience segments, like the last
+time we talked about. You can select
+the demographics based on gender, male,
+female or unknown, age brackets,
+parental status, and household income.
+Whatever you don't want, you just keep
+on checking them.
+OK, then, interestingly, over here you
+can also target some of the few
+specific YouTube channels or videos,
+like if they're, if they have opened
+their channels and videos for
+monetization, so click on YouTube
+channel and you can search for your
+favourite YouTube channel over here,
+where you want your ad to get placed on.
+Uh, again, similarly for YouTube videos,
+you can copy paste the video URL to
+check if the video is available for
+monetization, and you can place your ad
+on the specific videos as well. Or else
+you can put your ads on websites,
+specific websites, or even apps.
+And once you are done, click on next.
+Again, a similar drill follows, you
+just have to put your final website URL
+in the final URL section over here. Put
+your business name and keep uploading
+your images, logos, videos, other stuff
+over here, and write a bunch of
+headlines and description about the ad,
+which will go live. And at any point of
+time you can preview your ads just by
+toggling the button over here.
+OK, so we have covered mostly a lot of
+things. Final thing that is left is
+shopping ads. So you can click on
+shopping.
+You can name the campaign.
+OK, so you have to create a merchant
+centre over here. So for shopping, you
+have to kind of create your merchant
+centre, Google merchant centre.
+Let's suppose we'll name it as test one.
+Business website is.
+ABC.com.
+OK. Anyway, let's try to
+OK, let's explore Google shopping ads.
+Click on camping, click on website
+traffic. Click on continue. Let's
+suppose shopping.
+OK. So, it will automatically fetch
+your Google merchant centre account
+provided you have created with the same
+Gmail account.
+There are 2 options in shopping. One is
+standard shopping and performance max.
+Remember Performance Max, a single
+campaign that helps you run.
+Google Ads across all the uh Google
+inventories. Uh, let's suppose we'll
+just go with the standard shopping in
+this example because we have already
+covered PMax in the other video. You
+can put the uh campaign name over here.
+Click on continue.
+OK.
+OK, so once you click on continue.
+It shows uh a bunch of other options
+like the budget. Uh, let's suppose
+daily budget is rupees 1, bidding is
+maximus clicks.
+Then click on next again. The same rule
+follows. Just put your location where
+do you want to target.
+And how you want to schedule your ad,
+when do you want to start it? When do
+you want to add?
+Then, uh, create an ad group and you
+can choose your list of products from
+over here by editing this icon. It will
+automatically fetch all the products
+and you can choose and pick and choose
+what products you want to advertise
+from your e-commerce website. And then,
+yeah, then uh just click on next and
+summary and it will show you a preview
+of your ad. Once you're done, you can
+hit on uh.
+Next, and it will take your ad live in
+the next few seconds.
+OK, with this, we will explore the
+final type of Google ad campaign type,
+which is a promotion. Let's click on
+click.
+New campaign and then app promotion.
+Now once we have clicked app promotion,
+there are 3 options that we usually get,
+like if we want to drive app instals
+for our new app. Then the next option
+is if you want to drive app engagement,
+but for that, the requirement or the
+eligibility criteria is. Uh, one has to
+have a minimum of 50,000 downloads or
+instals, and then if you're launching a
+new app, like you can do a
+pre-registration as well. Uh, it's
+basically before, even, even before the
+app is ready for the launch, you can do
+a pre-registration. Uh, but this is
+only for Android. Let's go with the, uh,
+more universal option which is app
+instals. Like if you already have the
+app and you just want to drive more
+instals for it.
+OK, so we have selected this. Let's
+pose. Our platform is Android, you can
+select either Android or iOS. Then we
+have to look for the app name. Let's
+suppose we just want to go with Swiggy
+over here.
+Then put the campaign name, app
+promotion app one, click continue.
+OK, again, a very similar process, uh,
+you can select the location where you
+want to target. Users and drive
+awareness about this app. Uh, let's
+suppose it's India.
+Uh, then again, in more settings, you
+can kind of schedule a start date or
+even set an end date to it when your
+campaign gets, uh, end. Then click on
+next. OK, so this is how your
+advertisement will look on various
+Google products like Google search.
+YouTube.
+Discover feed.
+So, basically, you can see a nice
+preview over here, and you can write a
+bunch of headlines to describe your app
+for the advertisement. So you can write
+a headline, a description, and then you
+can go and click next.
+OK. So once you have clicked next, uh,
+it will ask you what do you want to
+focus on, uh, since we have chose uh
+app install, so it's mostly install
+volume. And then you can set a target
+cost per install. Ideally you should
+uncheck it because we want as many
+instals as possible within our budget.
+You can set a daily budget, let's
+suppose it's ₹100. And you can click on
+next. Once you click on next again, the
+ad will automatically get live in a few
+seconds. And where to check whether
+your campaign has been got live or not
+in the main dashboard.

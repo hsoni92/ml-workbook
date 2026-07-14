@@ -1,0 +1,127 @@
+Hi again. In this video we will explore
+various pricing strategies from an
+economist's perspective. Let's start
+with price discrimination, a strategy
+where seller charges different prices
+for the same product depending on what
+different group of buyers are willing
+to pay. So first, let's look at first
+degree or perfect price discrimination
+strategy. This is often referred to as
+the holy grail for economists. In this
+strategy, the seller charges each
+individual consumer the maximum price
+they're willing to pay for a product or
+service. When this happens, the result
+is simple. Consumer surplus becomes
+zero. All the value that consumers
+would normally gain is captured
+entirely by the producer. A classic
+example is personalised haggling, like
+negotiating prices at a flea market or
+high-end legal services that adjust
+their fees based on clients' financial
+capacity. In today's world, a modern
+version of this is seen in dynamic
+pricing algorithms. The systems analyse
+our browsing behaviour, purchase
+history, and online patterns to present
+you with a personalised price that may
+be different from what others see. Next,
+let's look at a situation where the
+seller doesn't know what exactly each
+consumer is willing to pay. Instead of
+guessing, the seller creates a pricing
+structure that allows customers to
+self-select based on how much they
+consume. Here's the logic the price per
+unit changes depending on the quantity
+purchased. The more you buy, the lower
+the unit price becomes. A simple
+example could be. Buy one for $10 get
+the second for $5 or think about a bulk
+buying at a wholesale store where
+bigger packs cost less per unit. From
+economists' perspective, this form of
+pricing helps capture extra value from
+high volume users, where consumers who
+are willing to buy more in exchange of
+a reduced cost per unit. This method is
+a smart way for sellers to segment
+buyers without the need to know their
+exact willingness to pay.
+Now let's move to the 3rd degree, or
+segment based pricing discrimination
+strategy. In this approach, the market
+is divided into clear groups based on
+certain characteristics such as age,
+location, or consumer status. Each
+segment behaves differently, so
+business adjusts price accordingly. The
+logic is straightforward. Different
+groups have different levels of priced
+elasticity of demand. Some segments are
+more sensitive to price changes, while
+others are willing to pay more because
+they need the product more urgently. As
+a result, sellers charge higher prices
+to the groups with inelastic demand and
+lower prices to the groups that are
+more price sensitive. Common examples
+include student discounts, senior
+citizen movie tickets, and premium
+pricing for business class airline
+travellers who typically show more
+inelastic demand. This strategy helps
+businesses maximise revenue by aligning
+prices with the specific needs and
+behaviours of each consumer segment.
+Next, let's look at two-part tariffs.
+In this pricing strategy, the total
+price is split into two components a
+fixed fee that gives consumer access
+and a variable usage fee based on how
+much they consume. Here's how it works.
+The fixed fee captures the consumer's
+entry value, essentially the pricing of
+getting in. Meanwhile, the usage fee
+covers the cost of whatever they
+actually use. A common example is a gym
+membership. You might pay a monthly
+membership fee just to access the gym
+facility. Then additional charges for
+personal training sessions or specialty
+classes can incur. The next one is
+bundled pricing. Bundling is a strategy
+where two or more distinct products are
+packaged together and sold as a single
+combined offer. This approach boosts
+the consumer's perceived value, while
+businesses increase the volume of items
+they sell. A classic example is
+McDonald's Value Meal. Instead of
+purchasing each item separately, the
+burger, the fries, and the drink are
+all bundled together at a lower overall
+price. Bundling works well because
+consumers feel they're getting more for
+their money, and it encourages them to
+buy additional items they might not
+have purchased on their own. So finally,
+let's look at discounts, also known as
+tactical price discrimination. This
+strategy uses discounts to separate
+consumers based on how much they value
+their time versus their money. For
+example, coupons and rebates require
+effort. Only price sensitive consumers
+will spend clipping coupons or filling
+out rebate forms. This lets businesses
+charge higher prices. To time poor
+consumers and lower prices, those who
+are more price conscious. Another form
+of this is seasonal or temporal pricing,
+like hotels charging more during peak
+season and lowering the hotel rates in
+the offseason to keep the rooms filled
+when demand drops.

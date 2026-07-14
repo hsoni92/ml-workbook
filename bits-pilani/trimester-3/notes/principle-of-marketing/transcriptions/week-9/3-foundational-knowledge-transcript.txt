@@ -1,0 +1,131 @@
+Hi again. Welcome to the next video
+where we'll be taking a deep dive into
+the foundational knowledge for Google
+Ads. But first, let's begin by looking
+at the policies that guide advertising
+on Google. Google strives to maintain a
+healthy advertisement ecosystem that is
+trustworthy and transparent both for
+users, advertisers, and publishers. The
+purpose of the health centre is to
+assist advertisers in building Google
+Ads campaigns that align with these
+advertisement policies. The policies
+are essential for ensuring a safe and
+positive experience for users while
+also ensuring compliance with
+applicable laws. They also play a key
+role in preventing harmful content from
+appearing in the advertisement
+ecosystem. Google advertisement
+policies are broadly divided into four
+broad areas. First is prohibited
+content, content that cannot be
+advertised on Google Network. Then we
+have prohibited policies, actions that
+you can't take if you want to advertise.
+Then we have restricted content and
+features, content that can be
+advertised but with certain limitations.
+And finally we have editorial and
+technical standards, quality standards
+for your ads, websites, and apps that
+you have to maintain to ensure running
+ads on Google.
+Now that we have covered policies,
+let's move to understand how Google Ads
+work. Google Ads operates through a
+process that begins with user
+interaction. When a user searches on
+Google, visits a Google Display Network,
+or GDN, Google conducts a quick auction
+for the available ad space. Advertisers
+place bids for these placements during
+the auction. Ads are then evaluated for
+their relevance to the user's search or
+the content that they're engaging with.
+Quality score plays a key role here. As
+it measures the ad overall quality,
+Google then combines bid amount and
+quality score to determine a final ad
+rank. Finally, the highest ranking ads
+are shown with their positions
+determined by their ad rank and other
+factors. To manage campaigns
+effectively, Google also uses a
+structured account setup. A Google
+account is organised into campaigns, ad
+groups, keywords, and ads. Each account
+can include multiple campaigns such as
+Campaign 1, Campaign 2, and so on.
+Inside each campaign there are ad
+groups. Remember ads set from Meta
+where all the magic happens. Similarly,
+in Google, they call it as ad groups,
+which can organise your ads and
+keywords. Each ad group contains
+specific keywords and associated ads.
+Once your account structure is set, the
+next step is selecting the right
+targeting options. Google Ads provides
+several targeting options to help you
+reach the right audience. Keywords are
+specific words or phrases that trigger
+your ads. Choosing the right keyword
+means you will reach your users
+actively searching for what you offer.
+Tools like Google Keyword Planner can
+help you identify relevant keywords for
+your industry. Audiences allow you to
+group individuals based on their
+interests and behaviours on the
+internet. For example, if you run an
+online bookstore, a targeted audience
+could be people who are interested in
+books, literature can be very effective.
+Then we have demographics. It helps you
+narrow down your audience based on
+factors such as age, gender, income,
+and others. For example, if you sell
+luxury watches, targeting high income
+bracket people can be more effective
+than a broad approach.
+Finally, we have location targeting
+that ensures your ads are shown to
+specific geographic locations, which is
+useful for local businesses trying to
+attract customers from a particular
+area like a country, city, or a town.
+After defining the targeting, the next
+step is choosing the right bidding
+strategy. Google Ads offer various
+bidding strategies depending on your
+campaign goals. The strategies include
+smart real-time automated strategies
+such as maximising conversions with or
+without a target CPA and maximising
+conversion value with or without a
+target OS or return on ad spend.
+Automated strategies like maximise
+clicks and target impression share are
+also available. Similarly, Google also
+offers manual bidding options like CPC
+models. The final step is selecting the
+bidding strategy that aligns with your
+campaign goals. Choosing the right
+strategy depends on what you're aiming
+to achieve within your campaign. For
+brand awareness, you might want to use
+target impression share or maximise
+clicks to drive traffic growth.
+maximise clicks could be a good choice
+for lead generation, our target CPU or
+maximise conversions can be used. For
+e-commerce sales, a targets or target
+return on ad spend or maximise
+conversions is often very effective. If
+budget control is important,
+manual CPC might be the best option for
+high competition environment. Target
+impression share
+or target may be ideal.
