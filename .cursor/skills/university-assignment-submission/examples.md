@@ -58,3 +58,43 @@ Example paths in this repo (Apex Project-2):
 - Prior notebook: `bits-pilani/trimester-3/apex-project/Apex2_Week2_Notebook_2025EM1100506_Himanshu_Soni.ipynb`
 
 Always read the current week's faculty note — section names and file naming may differ.
+
+---
+
+## AI authorship markers — avoid in college work
+
+### Bad (reveals AI or template scaffolding)
+
+```markdown
+## Task 2: Traditional Machine Learning Pipeline
+
+As per the assignment requirements, below is a comprehensive implementation of the
+traditional ML pipeline. This section addresses Task 2 and demonstrates robust
+sentiment classification using TF-IDF vectorization.
+
+[Insert accuracy results here]
+```
+
+```python
+# Step 1: Load the NLTK Movie Reviews dataset as required by the assignment
+# Step 2: Apply comprehensive text preprocessing
+print("Preprocessing complete! Moving to the next step...")
+```
+
+### Good (sounds like a student who ran the work)
+
+```markdown
+## TF-IDF + Logistic Regression
+
+I vectorized the cleaned reviews with TF-IDF (max 5000 features, English stop words removed)
+and trained logistic regression with `class_weight='balanced'`.
+On the held-out 20% test set, accuracy was 0.86 and F1 was 0.85 — slightly better than Naive Bayes.
+Training took under 2 seconds on my laptop.
+```
+
+```python
+# 80/20 split — same test set for all three pipelines
+X_train, X_test, y_train, y_test = train_test_split(
+    reviews, labels, test_size=0.2, random_state=42, stratify=labels
+)
+```

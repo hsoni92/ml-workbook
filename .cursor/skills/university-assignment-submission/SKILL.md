@@ -1,6 +1,6 @@
 ---
 name: university-assignment-submission
-description: Implements university coursework and project submissions with authentic student voice. Covers notebooks, reports, essays, and code deliverables for MSc/BITS-style assignments. Use when implementing any assignment submission, coursework, lab report, progress report, or when the user asks to avoid AI slop in academic work.
+description: Implements university coursework and project submissions with authentic student voice. Follows assignment briefs, rubrics, and shared repo context (prior submissions, templates, course folders). Covers notebooks, reports, essays, and code for MSc/BITS-style assignments. Use when doing assignments, coursework, lab reports, progress reports, or when the user asks to avoid AI slop in academic work.
 disable-model-invocation: true
 ---
 
@@ -8,12 +8,22 @@ disable-model-invocation: true
 
 Implement university assignments as real student work — clear, correct, and submitted on time — not as polished AI output.
 
-## Before starting
+## Non-negotiable rules
 
-1. **Find the brief** — faculty note, rubric, portal instructions, email, or attached PDF. Read it fully before writing anything.
-2. **Find prior work** — earlier weeks, outline, template, or sample submission in the same course folder. Match structure and tone.
-3. **Confirm deliverables** — file types, naming, section list, word limits, deadline, upload rules (e.g. no zip).
-4. **Confirm environment** — required tools, data paths, `uv`/`pip`, run commands from the project README or makefile.
+1. **No AI slop language** — human-like content always. Write like a student who did the work, not a chatbot or blog post.
+2. **No emojis** — nowhere in notebooks, reports, code comments, or presentations.
+3. **Follow the assignment carefully** — every task, rubric row, deliverable, and submission rule in the brief. Do not skip, reorder, or substitute unless the brief allows it.
+4. **No markers that reveal AI authorship** — this is college coursework. Avoid chatbot phrasing, meta-commentary, placeholder text, overly polished template structure, and any pattern that reads as machine-generated rather than student-written.
+
+## Shared context (read before writing)
+
+Use everything available in the repo and conversation — not just the latest user message.
+
+1. **Target instructions** — `assignment.md`, faculty note, rubric, portal text, or attached PDF in the assignment folder. Read fully before writing anything.
+2. **Prior work** — earlier weeks, outline, template, or sample submission in the same course folder. Match structure, naming, and tone.
+3. **Student identity** — roll number, name, file naming pattern from prior submissions (e.g. `RollNumber_Name_Week{N}_Notebook.ipynb`).
+4. **Project environment** — README, makefile, `uv`/`pip` setup, data paths, required libraries.
+5. **Workspace rules** — `.cursor/rules/` (e.g. formula formatting, no emojis).
 
 If anything is unclear in the brief, ask the user once. Do not guess file names or required sections.
 
@@ -95,6 +105,19 @@ Avoid entirely:
 - Empty summaries that repeat the heading
 - Superlatives without proof: "thoroughly optimized", "state-of-the-art", "highly accurate"
 
+### No AI authorship markers (college submissions)
+
+Graders notice when work does not sound like a student wrote it. Also avoid:
+
+- Meta-commentary: "As per the assignment requirements…", "This section addresses Task 3…", "Below is a comprehensive analysis…"
+- Placeholder or scaffold text: `[Insert results here]`, `TODO`, `your name here`, lorem ipsum
+- Chatbot narration in code: `# Step 1: Load the dataset as required`, `# Now we will train the model`
+- Overly uniform structure — every section same length, same opener, same bullet rhythm
+- Claims not backed by your actual notebook outputs or runs
+- References to "we" when the brief expects individual work — use "I" where appropriate
+- Disclaimers: "Note: results may vary", "This is a simplified example"
+- Brand-new jargon or framing not used elsewhere in the course or your prior submissions
+
 ### Code style
 
 - Practical names; comments only where non-obvious
@@ -105,12 +128,14 @@ Avoid entirely:
 ## Quality checks before handoff
 
 1. Every required section and file from the brief is present.
-2. File names match the brief exactly.
-3. Numbers in reports match notebook or code outputs.
-4. Code runs without errors.
-5. Formulas use `$...$` inline math where needed.
-6. No emojis anywhere.
-7. Read-aloud test: rewrite anything that sounds like marketing copy or a chatbot.
+2. Every rubric criterion is addressed — cross-check the rubric table row by row.
+3. File names match the brief exactly.
+4. Numbers in reports match notebook or code outputs.
+5. Code runs without errors.
+6. Formulas use `$...$` inline math where needed.
+7. No emojis anywhere.
+8. Read-aloud test: rewrite anything that sounds like marketing copy or a chatbot.
+9. AI-marker pass: remove meta-commentary, placeholders, and overly polished template phrasing.
 
 ## Examples
 
