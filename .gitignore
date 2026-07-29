@@ -3,6 +3,9 @@ __pycache__
 .DS_Store
 .venv
 venv
+.java/
+checkpoints/
+.ipynb_checkpoints/
 training_experiments/recommendation_system/data/*
 training_experiments/fine_tuning/llm-finetune/outputs/*
 *.pt
