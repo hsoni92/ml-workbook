@@ -141,3 +141,18 @@ Submit the following as your solution:
 Marks will be awarded for creativity and clarity in your solution.
 
 > **Tip:** Always keep the client in mind while preparing the deliverables.
+
+---
+
+## Rubric
+
+**Rubric Name:** NLP Sentiment Analysis Project Rubric
+
+| Criteria | Level 4 | Level 3 | Level 2 | Level 1 | Max Score |
+| --- | --- | --- | --- | --- | --- |
+| **Data Sourcing & Preprocessing (Task 1)** | **2.1–3.0 points** — Successfully loads the NLTK Movie Reviews dataset. Creates a robust text-cleaning and preprocessing function. Correctly splits the data into an 80% Training set and a 20% Test set. | **1.1–2.0 points** — Loads the dataset. The text-cleaning function misses minor steps like lowercasing or noise-removal. | **0.1–1.0 points** — Incomplete preprocessing function. Fails to ensure all pipelines are evaluated on the exact same 20% Test set. | **0.0 points** — Does not load the required dataset. Preprocessing is entirely absent. | / 3 |
+| **Traditional ML Pipeline (Task 2)** | **3.1–4.0 points** — Correctly converts text to numbers using Bag-of-Words, TF-IDF, or similar. Successfully trains a classifier like Logistic Regression or Naive Bayes. Accurately outputs the accuracy score and one additional evaluation metric. | **2.1–3.0 points** — Converts text to numbers. Trains a traditional statistical model. Fails to output the additional evaluation metric. | **1.1–2.0 points** — Multiple issues or errors in vectorization logic. | **0.0–1.0 points** — Incorrect or completely broken implementation of the classifier. | / 4 |
+| **Deep Learning Pipeline (Task 3)** | **4.1–5.0 points** — Correctly maps text to dense vectors using a PyTorch `nn.Embedding` layer. Efficiently builds and trains a PyTorch architecture using an RNN or LSTM layer. Outputs the accuracy score and one additional evaluation metric. | **3.1–4.0 points** — Maps text to dense vectors. Minor inefficiencies in building the RNN or LSTM layer. | **1.1–3.0 points** — Multiple issues in the structural logic of the PyTorch architecture. Fails to properly train the model from scratch. | **0.0–1.0 points** — Incorrect implementation of embeddings. Missing evaluation metrics on the Test set. | / 5 |
+| **Pretrained Model Inference (Task 4)** | **2.1–3.0 points** — Selects a pretrained model like NLTK VADER or TextBlob. Successfully passes Test set reviews without training and converts polarity scores into binary labels. Outputs the accuracy score and one additional metric. | **1.1–2.0 points** — Selects a pretrained model. Minor errors in converting polarity scores to positive/negative labels. | **0.1–1.0 points** — Incorrectly attempts to train the pretrained model. Fails to output required metrics. | **0.0 points** — Does not implement sentiment analysis using a pretrained model. | / 3 |
+| **Final Analysis & Presentation (Task 5)** | **4.1–5.0 points** — Submits a creative presentation with clear insights and recommendations. Accurately compares the evaluation metrics and training times. Thoroughly explains the pretrained model's performance by discussing domain adaptation. Justifies the selected metrics. Provides a sound recommendation for production based on required factors like compute cost and training data. | **2.1–4.0 points** — Submits a presentation. Compares metrics. Explanations on domain adaptation lack depth. | **1.1–2.0 points** — Misses the presentation format entirely. Fails to justify selected metrics. | **0.0–1.0 points** — Does not answer the required questions. Fails to consider factors like compute cost or training data in the final recommendation. | / 5 |
+| **Total** | | | | | **/ 20** |
