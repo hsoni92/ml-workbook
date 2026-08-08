@@ -161,3 +161,7 @@ flowchart TD
 - Decision rule: **start simple** (batch/micro-batch), escalate to streaming only with clear latency or volume needs.
 - Streaming can become the **backbone** for real-time data serving and monitoring in ML systems.
 - Training typically remains **batch**; streaming primarily feeds inference and observability paths.
+
+---
+
+**← [Previous](09-kafka-spark-flink-beam-roles-transcript.md) · [Index](../README.md) · [Next](11-freshness-and-latency-in-real-time-data-transcript.md) →**

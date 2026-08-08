@@ -150,3 +150,7 @@ def main():
 - Results: score percentage, tiered feedback, per-question review with explanations.
 - `main()` routes to correct screen based on session state.
 - Always call `st.rerun()` after state transitions.
+
+---
+
+**← [Previous](10-building-the-backend-transcript.md) · [Index](../README.md) · [Next](12-let-s-run-the-application-transcript.md) →**

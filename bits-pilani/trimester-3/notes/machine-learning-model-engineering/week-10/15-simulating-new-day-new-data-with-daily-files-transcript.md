@@ -168,3 +168,7 @@ Each CSV contains columns: `day`, `timestamp`, `customer_id`, `amount`, `label`.
 - Pattern mirrors production: **time-partitioned files** arriving on schedule.
 - Enables testing: **incremental ingestion, idempotency, state management, retrain triggers, quality checks**.
 - Staging environments in production use the **same simulation pattern** at larger scale.
+
+---
+
+**← [Previous](14-applying-data-quality-concepts-in-practice-transcript.md) · [Index](../README.md) · [Next](16-incremental-ingestion-script-append-new-data-to-training-set-transcript.md) →**

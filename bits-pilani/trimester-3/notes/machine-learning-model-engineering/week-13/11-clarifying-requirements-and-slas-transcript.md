@@ -174,3 +174,7 @@ These requirements directly inform: two-stage model architecture, Redis feature 
 - SLAs directly drive architecture, capacity, and resilience decisions
 - Use the 6-section requirements template for any ML system design discussion
 - Failure impact severity determines how much to invest in resilience
+
+---
+
+**← [Previous](10-governance-hooks-transcript.md) · [Index](../README.md) · [Next](12-traffic-estimation-and-capacity-planning-transcript.md) →**

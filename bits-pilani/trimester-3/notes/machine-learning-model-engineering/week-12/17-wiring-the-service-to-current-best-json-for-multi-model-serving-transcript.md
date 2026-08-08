@@ -196,3 +196,7 @@ The same pattern scales to multi-model systems:
 - Every prediction response includes `model_version` for traceability
 - Rollback = edit `current_best.json` + restart — no code changes
 - Pattern extends to multi-model, per-tenant, and A/B serving configurations
+
+---
+
+**← [Previous](16-implementing-current-best-json-and-promotion-logic-transcript.md) · [Index](../README.md) · [Next](18-module-summary-transcript.md) →**

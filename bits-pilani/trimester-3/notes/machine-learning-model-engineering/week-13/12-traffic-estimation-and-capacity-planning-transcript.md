@@ -213,3 +213,7 @@ Multi-region adds:
 - Per-instance QPS depends on model type, hardware, compression, and feature lookup time
 - Multi-region adds complexity and ~1.5–2x cost; only when availability requires it
 - Show quantitative reasoning in interviews — exact numbers not required, but methodology is
+
+---
+
+**← [Previous](11-clarifying-requirements-and-slas-transcript.md) · [Index](../README.md) · [Next](13-failure-scenarios-and-resilience-strategies-transcript.md) →**

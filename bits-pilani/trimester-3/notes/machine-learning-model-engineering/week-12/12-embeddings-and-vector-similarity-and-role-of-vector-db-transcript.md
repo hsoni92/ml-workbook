@@ -142,3 +142,7 @@ Regular databases can do vector search via brute-force comparison, but this does
 - A **vector database** stores (vector, metadata) pairs and provides fast similarity search APIs
 - Vector DBs use specialised indexes (ANN) to scale to millions/billions of vectors
 - Embedding model + vector database are complementary — model produces vectors, DB stores and searches them
+
+---
+
+**← [Previous](11-namespaces-clusters-resource-quotas-and-separate-logging-access-transcript.md) · [Index](../README.md) · [Next](13-approximate-nearest-neighbor-search-transcript.md) →**

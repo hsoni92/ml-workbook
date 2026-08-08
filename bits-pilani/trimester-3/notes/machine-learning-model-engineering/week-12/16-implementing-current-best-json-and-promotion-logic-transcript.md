@@ -149,3 +149,7 @@ File-based promotion handles the **decision** step. Canary and shadow handle **s
 - Decoupling: registry (catalogue) → promotion (decision) → serving (execution)
 - Rollback = edit `current_best.json` to previous version + restart service
 - Promotion is one step in the broader staging → canary → production pipeline
+
+---
+
+**← [Previous](15-creating-a-simple-model-registry-with-versioned-folders-transcript.md) · [Index](../README.md) · [Next](17-wiring-the-service-to-current-best-json-for-multi-model-serving-transcript.md) →**

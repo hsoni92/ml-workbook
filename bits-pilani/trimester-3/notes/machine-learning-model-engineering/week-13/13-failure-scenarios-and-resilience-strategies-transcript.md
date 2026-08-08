@@ -182,3 +182,7 @@ flowchart TD
 - Every failure needs: logs, traceability, post-incident review
 - Graceful degradation > hard failure for non-critical systems
 - Resilience patterns: feature fallback, circuit breaker, canary, config rollback, data quality alerts
+
+---
+
+**← [Previous](12-traffic-estimation-and-capacity-planning-transcript.md) · [Index](../README.md) · [Next](14-structuring-system-design-transcript.md) →**

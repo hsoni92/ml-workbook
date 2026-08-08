@@ -301,3 +301,7 @@ curl -X POST http://localhost:8000/predict -d '{"features": {...}}'
 - Repository structure mirrors architecture: data/, features/, models/, services/, pipelines/, monitoring/
 - System is **automated, auditable, and resilient**
 - Every course module maps to a concrete directory or script in the capstone
+
+---
+
+**← [Previous](14-structuring-system-design-transcript.md) · [Index](../README.md) · [Next](16-module-summary-transcript.md) →**

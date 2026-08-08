@@ -110,3 +110,7 @@ Popular stories (e.g., mentor figures, hidden abilities, facing a challenge) rec
 - Avoid: errors, missing contact, passive duty lists, pronouns, unneeded personal data
 - Interviews test competence, thinking, and alignment
 - Tools change; motivations (belonging, recognition, security, meaning) stay — use that in careers and marketing
+
+---
+
+**← [Previous](09-soft-skill-transcript.md) · [Index](../README.md) · [Next](11-summary-transcript.md) →**

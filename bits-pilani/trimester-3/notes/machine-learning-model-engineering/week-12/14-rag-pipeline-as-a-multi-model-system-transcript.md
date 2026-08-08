@@ -160,3 +160,7 @@ The model engineer's role expands from training models to **designing and operat
 - Production RAG is a multi-model, multi-tenant, sharded, cached system
 - Real-world uses: Q&A, support bots, recommendations, code search, enterprise knowledge
 - Production ML = models + data + retrieval infrastructure, not just a model file
+
+---
+
+**← [Previous](13-approximate-nearest-neighbor-search-transcript.md) · [Index](../README.md) · [Next](15-creating-a-simple-model-registry-with-versioned-folders-transcript.md) →**

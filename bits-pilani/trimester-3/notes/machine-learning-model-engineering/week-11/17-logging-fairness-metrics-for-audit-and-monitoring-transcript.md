@@ -156,3 +156,7 @@ This closes the loop from evaluation to governance.
 - Enables trend analysis: is fairness improving or worsening over model versions?
 - Evolve to databases or governance platforms as scale demands.
 - Pipeline: evaluate → check → log → deploy — fairness becomes continuous, not one-time.
+
+---
+
+**← [Previous](16-a-simple-fairness-check-and-interpretation-transcript.md) · [Index](../README.md) · [Next](18-module-summary-transcript.md) →**

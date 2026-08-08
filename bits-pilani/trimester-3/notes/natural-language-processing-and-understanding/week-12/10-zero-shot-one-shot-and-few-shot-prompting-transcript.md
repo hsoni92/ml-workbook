@@ -126,3 +126,7 @@ Few-shot prompts consume more tokens per request → higher API cost. In product
 - Few-shot: multiple examples; strongest guidance, highest token cost.
 - Few-shot is common in production but does not guarantee correctness.
 - Choose based on format strictness, cost budget, and task complexity.
+
+---
+
+**← [Previous](09-core-components-of-a-prompt-transcript.md) · [Index](../README.md) · [Next](11-practical-prompting-guidelines-transcript.md) →**

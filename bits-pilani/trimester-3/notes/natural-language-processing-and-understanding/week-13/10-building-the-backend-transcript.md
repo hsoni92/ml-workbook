@@ -139,3 +139,7 @@ def generate_quiz(topic: str, num_questions: int = 3,
 - `response_mime_type="application/json"` enforces structured output.
 - Validate `"questions"` key exists in parsed response.
 - Handle `JSONDecodeError` and general exceptions separately.
+
+---
+
+**← [Previous](09-setting-up-the-project-architecture-transcript.md) · [Index](../README.md) · [Next](11-building-the-frontend-transcript.md) →**

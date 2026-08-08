@@ -155,3 +155,7 @@ The capstone prepares you for real-world scenarios:
 - Prepare for: system design interviews, architecture reviews, production on-call
 - The capstone tests **system thinking**, not isolated technique knowledge
 - Every directory maps to a platform layer — organisation reflects architecture
+
+---
+
+**← [Previous](13-failure-scenarios-and-resilience-strategies-transcript.md) · [Index](../README.md) · [Next](15-use-case-overview-transcript.md) →**

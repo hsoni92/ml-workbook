@@ -103,3 +103,7 @@ Run the app with different topics to verify:
 - Results show score, percentage, tiered message, and per-question explanations.
 - "Take Another Quiz" resets session state to setup.
 - Map UI elements to `render_setup_form`, `render_quiz`, `render_results`, and `main()`.
+
+---
+
+**← [Previous](11-building-the-frontend-transcript.md) · [Index](../README.md) · [Next](13-updating-the-architecture-of-our-application-transcript.md) →**

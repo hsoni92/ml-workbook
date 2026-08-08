@@ -157,3 +157,7 @@ The fraud model's decision quality depends on **all four** being within SLA — 
 - Match ingestion mode to freshness tier: streaming (< 30s), micro-batch (1–5 min), batch (hourly/daily).
 - A fast model on **stale features** produces unreliable production decisions.
 - Freshness monitoring is as critical as model performance monitoring.
+
+---
+
+**← [Previous](10-streaming-ml-examples-transcript.md) · [Index](../README.md) · [Next](12-completeness-and-correctness-checks-transcript.md) →**

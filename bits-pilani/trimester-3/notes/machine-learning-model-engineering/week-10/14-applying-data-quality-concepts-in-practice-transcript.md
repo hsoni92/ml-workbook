@@ -165,3 +165,7 @@ flowchart TD
 - **Data quality monitoring + model monitoring** together enable fast root cause analysis.
 - Investigation order: **check data first**, then model, when performance degrades.
 - Simple lab patterns mirror production patterns — incremental ingestion, state, idempotency, quality gates.
+
+---
+
+**← [Previous](13-schema-evolution-and-data-contracts-transcript.md) · [Index](../README.md) · [Next](15-simulating-new-day-new-data-with-daily-files-transcript.md) →**

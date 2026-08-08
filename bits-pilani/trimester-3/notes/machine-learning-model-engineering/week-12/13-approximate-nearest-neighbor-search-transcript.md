@@ -132,3 +132,7 @@ For everything else at scale, ANN is the standard.
 - ANN indexes (HNSW, IVF, LSH, PQ) use pre-computed structures to avoid brute force
 - Tunable knobs: index type, probes, search depth — adjust per quality/latency requirements
 - Measure recall on evaluation sets; retune when embedding models or data distributions change
+
+---
+
+**← [Previous](12-embeddings-and-vector-similarity-and-role-of-vector-db-transcript.md) · [Index](../README.md) · [Next](14-rag-pipeline-as-a-multi-model-system-transcript.md) →**

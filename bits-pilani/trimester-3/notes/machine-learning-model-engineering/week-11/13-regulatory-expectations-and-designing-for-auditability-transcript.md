@@ -134,3 +134,7 @@ Explainability without audit trails is unverifiable. Audit trails without explai
 - Explainability (why) and auditability (what/when/who) complement each other.
 - Fairness metrics logged per model version enable regulatory and internal review.
 - High accuracy alone does not demonstrate responsible governance.
+
+---
+
+**← [Previous](12-audit-trails-across-the-ml-pipeline-transcript.md) · [Index](../README.md) · [Next](14-recap-and-bridge-to-the-labs-transcript.md) →**

@@ -164,3 +164,7 @@ if window_stats["null_user_id_rate"] > 2.0 * baseline["null_user_id_rate"]:
 - **Deduplication** is mandatory under at-least-once delivery semantics.
 - Proactive monitoring catches issues **before** they poison the ML pipeline.
 - Data quality monitoring is a lightweight starting point — no enterprise framework required initially.
+
+---
+
+**← [Previous](11-freshness-and-latency-in-real-time-data-transcript.md) · [Index](../README.md) · [Next](13-schema-evolution-and-data-contracts-transcript.md) →**

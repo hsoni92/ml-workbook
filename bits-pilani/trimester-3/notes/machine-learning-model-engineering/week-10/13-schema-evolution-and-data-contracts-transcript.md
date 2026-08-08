@@ -163,3 +163,7 @@ A model trained on schema `v3` must be served with schema `v3` features. Deployi
 - **Data quality monitoring** (freshness, counts, schema) and **model monitoring** (drift, performance) are complementary halves of ML safety.
 - ML models must be tied to a **specific schema version** — serving with a different schema causes silent degradation.
 - Root cause analysis requires checking **both** data quality and model monitoring signals.
+
+---
+
+**← [Previous](12-completeness-and-correctness-checks-transcript.md) · [Index](../README.md) · [Next](14-applying-data-quality-concepts-in-practice-transcript.md) →**

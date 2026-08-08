@@ -156,3 +156,7 @@ Per-tenant SLOs and isolation connect to:
 - Three isolation layers: logical (namespaces), resource (quotas), data (access controls)
 - Principle: shared platform with clear per-tenant boundaries
 - Under pressure, protect high-SLO tenants first via throttling and preemption
+
+---
+
+**← [Previous](09-what-is-tenant-and-noisy-neighbor-problem-transcript.md) · [Index](../README.md) · [Next](11-namespaces-clusters-resource-quotas-and-separate-logging-access-transcript.md) →**

@@ -179,3 +179,7 @@ A perfect data pipeline with duplicated feature logic still produces skew.
 - Detection: compare offline vs online feature values for sample entities; monitor feature distributions.
 - Skew ≠ data drift — skew is a logic bug; drift is a distribution change.
 - Data pipelines must deliver consistent data, but **feature logic consistency** is a separate, equally critical concern.
+
+---
+
+**← [Previous](16-incremental-ingestion-script-append-new-data-to-training-set-transcript.md) · [Index](../README.md) · [Next](18-module-summary-transcript.md) →**

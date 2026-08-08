@@ -120,3 +120,7 @@ flowchart LR
 - Design systems to be traceable and interpretable from the start.
 - Lab workflow: segmented evaluation → automated fairness check → JSONL audit log.
 - Fairness, security, privacy, explainability, and auditability integrate into responsible production ML.
+
+---
+
+**← [Previous](13-regulatory-expectations-and-designing-for-auditability-transcript.md) · [Index](../README.md) · [Next](15-segmented-evaluation-performance-by-group-transcript.md) →**

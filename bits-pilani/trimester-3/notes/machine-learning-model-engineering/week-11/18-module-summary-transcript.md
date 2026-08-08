@@ -156,3 +156,7 @@ flowchart LR
 - Labs: segmented evaluation → fairness check → JSONL audit log.
 - Security and responsibility integrate with deployment, monitoring, retraining, and feature governance.
 - When designing any system, ask: **What could go wrong, and how would we notice?**
+
+---
+
+**← [Previous](17-logging-fairness-metrics-for-audit-and-monitoring-transcript.md) · [Index](../README.md) · [Next](../week-12/01-module-introduction-transcript.md) →**

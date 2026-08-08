@@ -86,3 +86,7 @@ Keep holding the discipline as a whole: **numbers + strategy + psychology + huma
 - Careers → T-shaped skills, resume positioning, interview clarity
 - Marketing = measurable investment decisions + social responsibility + human insight
 - End state: grow with evidence, influence with care, communicate with proof
+
+---
+
+**← [Previous](10-resume-and-interview-tips-transcript.md) · [Index](../README.md) · [Next](../README.md) →**

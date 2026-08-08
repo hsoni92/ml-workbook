@@ -136,3 +136,7 @@ It converts an invisible problem into an **observable** one — the prerequisite
 - Recall gaps often indicate denied opportunities (lending) or missed detections (fraud).
 - Synthetic data with group-specific base rates is a valid way to practise fairness analysis.
 - Disaggregation is the first and most important step in any fairness audit.
+
+---
+
+**← [Previous](14-recap-and-bridge-to-the-labs-transcript.md) · [Index](../README.md) · [Next](16-a-simple-fairness-check-and-interpretation-transcript.md) →**

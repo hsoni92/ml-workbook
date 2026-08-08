@@ -116,3 +116,7 @@ flowchart LR
 - Initialise: `genai.Client(api_key=your_key)`.
 - Never commit API keys to version control.
 - Monitor usage and costs via the AI Studio dashboard.
+
+---
+
+**← [Previous](12-quick-walkthrough-of-google-ai-studio-playground-transcript.md) · [Index](../README.md) · [Next](14-quick-walkthrough-of-openai-platform-api-creation-transcript.md) →**

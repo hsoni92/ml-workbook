@@ -201,3 +201,7 @@ The pattern is identical; only the storage and discovery mechanisms change.
 - **Idempotency**: re-running produces the same result — essential for scheduled pipelines.
 - **Update state only after successful save** — prevents data loss on crash.
 - Quality checks at ingestion time catch schema and completeness issues before they enter training data.
+
+---
+
+**← [Previous](15-simulating-new-day-new-data-with-daily-files-transcript.md) · [Index](../README.md) · [Next](17-hooking-ingestion-to-retraining-a-mini-data-train-flow-transcript.md) →**

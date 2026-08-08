@@ -145,3 +145,7 @@ This prevents models with known disparities from reaching production unnoticed.
 - FAIL triggers human investigation — not automatic model rejection.
 - Thresholds must be set with product, legal, and domain experts — not by engineers alone.
 - Fairness check is a safety net integrated into the ML pipeline before promotion.
+
+---
+
+**← [Previous](15-segmented-evaluation-performance-by-group-transcript.md) · [Index](../README.md) · [Next](17-logging-fairness-metrics-for-audit-and-monitoring-transcript.md) →**

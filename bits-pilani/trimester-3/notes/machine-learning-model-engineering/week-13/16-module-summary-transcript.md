@@ -190,3 +190,7 @@ Even with clean architecture, recommendation systems are hard to operate:
 - **Rollback**: edit current_best.json + restart — decoupled, fast, auditable
 - **Operational challenges**: freshness, multi-objective balance, latency, monitoring breadth
 - **Paradigm shift**: from single model to whole system thinking
+
+---
+
+**← [Previous](15-use-case-overview-transcript.md) · [Index](../README.md) · [Next](../README.md) →**

@@ -211,3 +211,7 @@ The role expands beyond training models:
 - Model lifecycle: versioned folders → registry.json → promotion → current_best.json → serving
 - Production ML = models + data + retrieval + governance, not just a model file
 - Model platform engineer: design, scale, isolate, retrieve, manage lifecycle, govern
+
+---
+
+**← [Previous](17-wiring-the-service-to-current-best-json-for-multi-model-serving-transcript.md) · [Index](../README.md) · [Next](../week-13/01-module-introduction-transcript.md) →**

@@ -153,3 +153,7 @@ This connects fairness evaluation (Topic 3) to long-term accountability.
 - Structured, append-only, versioned logs enable compliance and incident investigation.
 - Include fairness evaluation results in the audit trail, not just pass/fail.
 - A complete trail answers: which model, which data, which checks, who approved.
+
+---
+
+**← [Previous](11-explainability-what-it-is-why-it-matters-and-its-limits-transcript.md) · [Index](../README.md) · [Next](13-regulatory-expectations-and-designing-for-auditability-transcript.md) →**

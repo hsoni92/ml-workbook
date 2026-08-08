@@ -125,3 +125,7 @@ Fairness evaluation logged alongside model metadata forms part of a **basic audi
 - Fairness numbers are inputs to human decisions — not automated verdicts.
 - Integrate fairness checks into CI/CD and audit trails for continuous accountability.
 - Document which groups were tested, what gaps appeared, and what action was taken.
+
+---
+
+**← [Previous](09-fairness-questions-transcript.md) · [Index](../README.md) · [Next](11-explainability-what-it-is-why-it-matters-and-its-limits-transcript.md) →**

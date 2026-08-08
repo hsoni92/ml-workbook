@@ -176,3 +176,7 @@ flowchart LR
 - **Data quality monitoring + model monitoring** together enable root cause analysis.
 - Start simple (batch), escalate deliberately; a well-designed batch pipeline is already a major win.
 - Feature consistency (no training-serving skew) requires a **single source of truth** — feature stores at scale.
+
+---
+
+**← [Previous](17-hooking-ingestion-to-retraining-a-mini-data-train-flow-transcript.md) · [Index](../README.md) · [Next](../week-11/01-module-introduction-transcript.md) →**

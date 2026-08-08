@@ -95,3 +95,7 @@ flowchart LR
 - Avoid vague language — specificity improves determinism.
 - Add constraints when format or content must be exact.
 - Test multiple prompt versions and refine based on results.
+
+---
+
+**← [Previous](10-zero-shot-one-shot-and-few-shot-prompting-transcript.md) · [Index](../README.md) · [Next](12-quick-walkthrough-of-google-ai-studio-playground-transcript.md) →**

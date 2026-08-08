@@ -151,3 +151,7 @@ Never as a **substitute** for these.
 - Biased data and proxy features produce polished but misleading explanations.
 - Use explainability with fairness checks and domain expertise — not as a substitute.
 - Production systems typically need both local and global explanation capabilities.
+
+---
+
+**← [Previous](10-limitations-and-domain-context-transcript.md) · [Index](../README.md) · [Next](12-audit-trails-across-the-ml-pipeline-transcript.md) →**

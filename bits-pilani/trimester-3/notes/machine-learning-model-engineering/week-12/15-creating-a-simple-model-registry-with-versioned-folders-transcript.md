@@ -160,3 +160,7 @@ Each step is decoupled. The serving layer never needs to know about training or 
 - Registration agent scans version folders and writes `registry.json` catalogue
 - Registry decouples model knowledge from training, promotion, and serving
 - File-based registries teach core concepts applicable to MLflow, Vertex AI, and similar tools
+
+---
+
+**← [Previous](14-rag-pipeline-as-a-multi-model-system-transcript.md) · [Index](../README.md) · [Next](16-implementing-current-best-json-and-promotion-logic-transcript.md) →**

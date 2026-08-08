@@ -123,3 +123,7 @@ quiz-genius-ai/
 - v2 adds file names, screen flow, validation pipeline, and secrets.
 - Update architecture diagrams after implementation — industry standard practice.
 - Project ready for GitHub portfolio with README and architecture snapshot.
+
+---
+
+**← [Previous](12-let-s-run-the-application-transcript.md) · [Index](../README.md) · [Next](../README.md) →**

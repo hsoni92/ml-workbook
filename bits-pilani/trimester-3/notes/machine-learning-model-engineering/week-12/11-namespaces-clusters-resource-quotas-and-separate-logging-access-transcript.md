@@ -176,3 +176,7 @@ Multi-tenancy connects deeply to responsible AI practices:
 - **Data isolation**: separate storage + RBAC/IAM per tenant
 - **Logging isolation**: per-tenant log streams and metric namespaces
 - Multi-tenancy isolation connects to privacy, governance, compliance, and responsible AI
+
+---
+
+**← [Previous](10-slos-per-tenant-transcript.md) · [Index](../README.md) · [Next](12-embeddings-and-vector-similarity-and-role-of-vector-db-transcript.md) →**

@@ -129,3 +129,7 @@ Includes model pricing, endpoint specifications, and copy-paste code for Python 
 - Set `OPENAI_API_KEY` environment variable or use Colab Secrets.
 - Monitor credit balance to avoid unexpected charges.
 - Documentation at developers.openai.com/api/docs.
+
+---
+
+**← [Previous](13-how-to-generate-api-key-for-using-gemini-models-transcript.md) · [Index](../README.md) · [Next](../week-13/01-project-introduction-transcript.md) →**

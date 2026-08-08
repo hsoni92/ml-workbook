@@ -194,3 +194,7 @@ Governance is not a separate layer — it is **woven through** every layer:
 - Layer interfaces must stay clear so layers evolve independently
 - This framework is the expected thinking in ML system design interviews
 - If you can walk through all 5 layers for any use case, you are doing ML system design
+
+---
+
+**← [Previous](09-serving-and-infra-monitoring-and-feedback-retrain-transcript.md) · [Index](../README.md) · [Next](11-clarifying-requirements-and-slas-transcript.md) →**

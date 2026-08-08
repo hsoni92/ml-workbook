@@ -106,3 +106,7 @@ Documentation provides copy-paste code snippets for quick integration.
 - Knowledge cutoff causes outdated factual answers.
 - Structured outputs, grounding, and function calling support production workflows.
 - Python SDK: `google.genai` with `Client` and `generate_content`.
+
+---
+
+**← [Previous](11-practical-prompting-guidelines-transcript.md) · [Index](../README.md) · [Next](13-how-to-generate-api-key-for-using-gemini-models-transcript.md) →**
