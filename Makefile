@@ -1,4 +1,4 @@
-.PHONY: check-uv setup precommit-install precommit-run encrypt decrypt notes-pdf-setup notes-pdf
+.PHONY: check-uv setup precommit-install precommit-run encrypt decrypt notes-pdf-setup notes-pdf notes-pdf-t3
 
 check-uv:
 	@command -v uv >/dev/null 2>&1 || { \
@@ -33,3 +33,6 @@ notes-pdf-setup: check-uv
 
 notes-pdf: check-uv
 	cd scripts && uv run notes-pdf-gen.py $(ARGS)
+
+notes-pdf-t3: check-uv
+	cd scripts && uv run python ../notes-pdf-compact.py $(ARGS)
