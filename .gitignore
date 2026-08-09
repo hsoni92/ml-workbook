@@ -17,3 +17,4 @@ training_experiments/fine_tuning/llm-finetune/outputs/*
 *.pyc
 *.pdf
 !bits-pilani/trimester-2/notes/**/*.pdf
+!bits-pilani/trimester-3/notes/**/*.pdf
