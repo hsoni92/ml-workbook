@@ -41,10 +41,10 @@ Spark flips the model:
 ```mermaid
 flowchart LR
     subgraph Traditional["Traditional: Move Data"]
-        D1["10 GB Data"] -->|"Slow"| CPU1["Central CPU"]
+        D1["10 GB Data"] -->|Slow| CPU1["Central CPU"]
     end
     subgraph Spark["Spark: Move Code"]
-        Code["2 KB Function"] -->|"Fast"| Node["Node with 10 GB Data"]
+        Code["2 KB Function"] -->|Fast| Node["Node with 10 GB Data"]
     end
 ```
 
@@ -73,9 +73,9 @@ flowchart TB
 
     HDFS --> Scheduler
     S3 --> Scheduler
-    Scheduler -->|"Partition 0 → Server A"| E1
-    Scheduler -->|"Partition 1 → Server B"| E2
-    Scheduler -->|"Partition 2 → Server C"| E3
+    Scheduler -->|Partition 0 → Server A| E1
+    Scheduler -->|Partition 1 → Server B| E2
+    Scheduler -->|Partition 2 → Server C| E3
 ```
 
 ### Locality Levels

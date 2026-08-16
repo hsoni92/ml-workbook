@@ -27,3 +27,16 @@ repos:
         pass_filenames: false
         always_run: true
         require_serial: true
+
+      - id: validate-mermaid
+        name: validate mermaid diagrams (maid)
+        description: >
+          Parse every Mermaid block in staged *.md files using @probelabs/maid
+          (Chevrotain-based validator with the same render guarantee as Mermaid.js,
+          no browser required). Run `make mermaid-setup` once after cloning to
+          install the Node dependency.
+        entry: node scripts/validate-mermaid.js
+        language: system
+        files: '(?i)\.(md|markdown)$'
+        pass_filenames: true
+        require_serial: false

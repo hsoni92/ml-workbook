@@ -18,9 +18,9 @@ In synchronous training, the entire cluster operates like a **well-drilled march
 
 ```mermaid
 sequenceDiagram
-    participant W1 as Worker 1 (fast)
-    participant W2 as Worker 2 (fast)
-    participant W3 as Worker 3 (straggler)
+    participant W1 as Worker 1 fast
+    participant W2 as Worker 2 fast
+    participant W3 as Worker 3 straggler
     participant Agg as Aggregator
     W1->>Agg: Gradients ready
     W2->>Agg: Gradients ready

@@ -1,4 +1,4 @@
-.PHONY: check-uv setup precommit-install precommit-run encrypt decrypt notes-pdf-setup notes-pdf notes-pdf-t3
+.PHONY: check-uv check-node setup precommit-install precommit-run encrypt decrypt notes-pdf-setup notes-pdf notes-pdf-t3 mermaid-setup mermaid-validate
 
 check-uv:
 	@command -v uv >/dev/null 2>&1 || { \
@@ -7,12 +7,24 @@ check-uv:
 		exit 1; \
 	}
 
-setup: check-uv
+check-node:
+	@command -v node >/dev/null 2>&1 || { \
+		echo "Error: node (>=20) is not installed."; \
+		echo "Install Node: https://nodejs.org/en/download"; \
+		exit 1; \
+	}
+	@node -e "process.exit(Number(process.versions.node.split('.')[0]) >= 20 ? 0 : 1)" || { \
+		echo "Error: node >=20 required (found $$(node --version))."; \
+		exit 1; \
+	}
+
+setup: check-uv check-node
 	cd scripts && uv sync
 	uv tool install pre-commit
 	uv tool run pre-commit install
+	$(MAKE) mermaid-setup
 
-precommit-install: check-uv
+precommit-install: check-uv check-node
 	uv tool install pre-commit
 	uv tool run pre-commit install
 
@@ -36,3 +48,14 @@ notes-pdf: check-uv
 
 notes-pdf-t3: check-uv
 	cd scripts && uv run python ../notes-pdf-compact.py $(ARGS)
+
+mermaid-setup: check-node
+	npm install
+
+mermaid-validate: check-node
+	node scripts/validate-mermaid.js
+
+# Auto-fix safe issues (maid's level-1 fixes: e.g. unquoting parens in labels).
+# Use with care — review the diff before committing.
+mermaid-validate-fix: check-node
+	npx -y @probelabs/maid --fix bits-pilani/

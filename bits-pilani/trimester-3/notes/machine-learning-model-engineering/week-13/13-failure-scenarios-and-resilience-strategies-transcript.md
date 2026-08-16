@@ -74,10 +74,10 @@ flowchart TB
 ```mermaid
 flowchart LR
     TRAIN["New Model V_N+1\n(trained + evaluated)"] --> CANARY["Canary: 5% traffic"]
-    CANARY -->|"metrics OK\n(15 min)"| PARTIAL["25% traffic"]
-    PARTIAL -->|"metrics OK\n(1 hour)"| FULL["100% traffic\n(promote)"]
-    CANARY -->|"metrics BAD"| ROLLBACK["Rollback to V_N\n(immediate)"]
-    PARTIAL -->|"metrics BAD"| ROLLBACK
+    CANARY -->|metrics OK&#40;15 min&#41;| PARTIAL["25% traffic"]
+    PARTIAL -->|metrics OK&#40;1 hour&#41;| FULL["100% traffic\n(promote)"]
+    CANARY -->|metrics BAD| ROLLBACK["Rollback to V_N\n(immediate)"]
+    PARTIAL -->|metrics BAD| ROLLBACK
 ```
 
 ### Post-Incident Requirements

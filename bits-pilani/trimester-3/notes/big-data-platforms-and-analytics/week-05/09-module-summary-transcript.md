@@ -44,9 +44,9 @@ Once created, an RDD **never changes**. Transformations produce **new** RDDs; th
 
 ```mermaid
 flowchart LR
-    A["RDD A (immutable)"] -->|"map()"| B["RDD B (new)"]
-    A -->|"filter()"| C["RDD C (new)"]
-    A -.->|"A unchanged"| A
+    A["RDD A (immutable)"] -->|map&#40;&#41;| B["RDD B (new)"]
+    A -->|filter&#40;&#41;| C["RDD C (new)"]
+    A -.->|A unchanged| A
 ```
 
 ---

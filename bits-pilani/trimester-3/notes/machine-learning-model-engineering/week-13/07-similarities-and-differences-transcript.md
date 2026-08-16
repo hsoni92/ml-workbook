@@ -116,7 +116,7 @@ flowchart LR
         M2["Data layer\n→ Feature layer\n→ Training layer\n→ Serving layer\n→ Monitoring layer"]
     end
 
-    M1 -.->|"shift"| M2
+    M1 -.->|shift| M2
 ```
 
 The key shift is from thinking about a **single model** to thinking about the **whole system**. For any ML problem, ask:

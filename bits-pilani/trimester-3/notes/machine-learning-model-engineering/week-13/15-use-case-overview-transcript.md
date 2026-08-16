@@ -8,7 +8,7 @@ The capstone implements a complete MLOps lifecycle — from raw data ingestion t
 flowchart TB
     subgraph "Data Sources (Right)"
         CS["Click-stream Data"]
-        TD["Transactional Data"]
+        TX["Transactional Data"]
         UP["User Profiles"]
     end
 
@@ -41,7 +41,7 @@ flowchart TB
     end
 
     CS --> ING
-    TD --> ING
+    TX --> ING
     UP --> ING
     ING --> DL2
     ING --> DQ
@@ -49,7 +49,7 @@ flowchart TB
     FP2 --> OFF
     FP2 --> ON
     OFF --> TP
-    DL2 -->|"labels"| TP
+    DL2 -->|labels| TP
     TP --> MR
     MR --> PL
     PL --> MS
@@ -57,8 +57,8 @@ flowchart TB
     MS --> PRED2
     PRED2 --> MON3
     MON3 --> ALERT
-    ALERT -.->|"retrain trigger"| TP
-    PRED2 -.->|"feedback labels"| DL2
+    ALERT -.->|retrain trigger| TP
+    PRED2 -.->|feedback labels| DL2
 ```
 
 ---
@@ -171,7 +171,7 @@ While the service runs, the monitoring system watches:
 
 ```mermaid
 sequenceDiagram
-    participant S as Serving (V3)
+    participant S as Serving V3
     participant M as Monitoring
     participant R as Retrain Job
     participant T as Training Pipeline
@@ -181,9 +181,9 @@ sequenceDiagram
     M->>M: Detect performance degradation
     M->>R: Retrain trigger fired
     R->>T: Run training pipeline
-    T->>T: Create V4 candidate
     T->>P: Evaluate V4 vs V3
     P->>P: V4 better → update current_best.json
+    deactivate M
     P->>S: Service restarts → loads V4
 ```
 

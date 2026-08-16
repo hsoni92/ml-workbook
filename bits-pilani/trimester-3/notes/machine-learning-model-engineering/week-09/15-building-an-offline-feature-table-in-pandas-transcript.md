@@ -137,7 +137,7 @@ flowchart TB
     Raw["Raw Events"] --> Logic["Feature Logic\n(30-day aggregation)"]
     Logic --> Offline["Offline Feature Table\n(pandas DataFrame)"]
     Offline --> Train["Training Pipeline"]
-    Logic -.->|"Same logic later"| Online["Online Store\n(next lab)"]
+    Logic -.->|Same logic later| Online["Online Store\n(next lab)"]
 ```
 
 The offline table is one half of the feature store. The next step wraps the same logic in a reusable function and materialises to an online store.

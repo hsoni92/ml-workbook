@@ -27,10 +27,10 @@ premium = discounted.filter(lambda p: p > 100)
 
 ```mermaid
 flowchart LR
-    A["base_prices\n[50,100,150,200]"] -->|"map(p-10)"| B["discounted\n[40,90,140,190]"]
-    B -->|"filter(>100)"| C["premium\n[140,190]"]
-    A -.->|"unchanged"| A
-    B -.->|"unchanged"| B
+    A["base_prices\n[50,100,150,200]"] -->|map&#40;p-10&#41;| B["discounted\n[40,90,140,190]"]
+    B -->|filter&#40;>100&#41;| C["premium\n[140,190]"]
+    A -.->|unchanged| A
+    B -.->|unchanged| B
 ```
 
 Three separate RDDs coexist. The original is never touched.

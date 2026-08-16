@@ -106,7 +106,7 @@ flowchart LR
     subgraph "Embedding Space"
         E1[buy]
         E2[purchase]
-        E1 -. close .- E2
+        E1 -.-> E2
     end
 ```
 

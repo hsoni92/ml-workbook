@@ -64,11 +64,11 @@ Every single write operation targets the same partition. One node handles all in
 
 ```mermaid
 flowchart LR
-    W1[Write stream] --> P1[Today's partition<br/>Node 4<br/>ALL writes]
+    W1[Write stream] --> P1["Todays partition<br/>Node 4<br/>ALL writes"]
     W2[Write stream] --> P1
     W3[Write stream] --> P1
-    P2[Yesterday<br/>Node 1<br/>Idle]
-    P3[Last week<br/>Node 2<br/>Idle]
+    P2["Yesterday<br/>Node 1<br/>Idle"]
+    P3["Last week<br/>Node 2<br/>Idle"]
 ```
 
 This is not just a slow query — it is a **critical failure** that prevents the system from scaling write capacity horizontally.

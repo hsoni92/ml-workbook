@@ -19,7 +19,7 @@ flowchart TB
     L1["Layer 1: Data Layer\n(ingestion, storage, quality)"]
 
     L1 --> L2 --> L3 --> L4 --> L5
-    L5 -.->|"feedback loop"| L1
+    L5 -.->|feedback loop| L1
 ```
 
 | Layer | Core Responsibility | Key Question |
@@ -152,8 +152,8 @@ A new model version is promoted when it beats the current champion on business m
 flowchart LR
     SERVE["Serving Layer\n(predictions)"] --> LOG["Logs & Outcomes\n(clicks, chargebacks)"]
     LOG --> MON["Monitoring Layer\n(detect drift/degradation)"]
-    MON -->|"alert / trigger"| TRAIN["Training Layer\n(new model)"]
-    TRAIN -->|"promote"| SERVE
+    MON -->|alert / trigger| TRAIN["Training Layer\n(new model)"]
+    TRAIN -->|promote| SERVE
 ```
 
 Online behaviour generates data and labels that feed back into training, which produces a new model for serving. This is the **MLOps closed loop**.
@@ -172,12 +172,12 @@ flowchart TB
         M["Monitoring\n(provides: alerts, triggers)"]
     end
 
-    D -->|"tables"| F
-    F -->|"features + labels"| T
-    T -->|"model binary"| S
-    S -->|"prediction logs"| M
-    M -->|"retrain signal"| T
-    M -->|"quality signals"| D
+    D -->|tables| F
+    F -->|features + labels| T
+    T -->|model binary| S
+    S -->|prediction logs| M
+    M -->|retrain signal| T
+    M -->|quality signals| D
 ```
 
 A failure at any layer propagates upward. Stale data → stale features → degraded model → bad predictions → monitoring alert → retrain trigger.

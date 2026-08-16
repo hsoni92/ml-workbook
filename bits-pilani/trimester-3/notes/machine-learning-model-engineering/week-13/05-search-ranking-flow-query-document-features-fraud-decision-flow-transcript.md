@@ -62,6 +62,7 @@ sequenceDiagram
     SS->>ML: Score each (query, doc, user, context)
     ML-->>SS: Relevance scores
     SS->>PP: Business rules, diversity, safety filters
+    deactivate RET
     PP-->>User: Top N results
 ```
 
@@ -137,6 +138,7 @@ sequenceDiagram
         DE-->>TXN: Step-up (OTP)
     end
     DE->>LOG: Decision + context for audit
+    deactivate LOG
 ```
 
 **Real-time features assembled at decision time**:

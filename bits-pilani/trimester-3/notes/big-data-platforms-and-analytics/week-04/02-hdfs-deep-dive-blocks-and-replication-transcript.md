@@ -59,8 +59,8 @@ flowchart TB
         N4["Node 4 (Copy 3)"]
     end
     Upload["Client Upload"] --> N1
-    N1 -->|"Pipeline replication"| N3
-    N3 -->|"Pipeline replication"| N4
+    N1 -->|Pipeline replication| N3
+    N3 -->|Pipeline replication| N4
 ```
 
 ### Rack-Aware Placement Strategy

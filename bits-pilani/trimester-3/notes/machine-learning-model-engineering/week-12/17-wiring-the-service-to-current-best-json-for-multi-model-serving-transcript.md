@@ -125,11 +125,12 @@ sequenceDiagram
 
     T->>R: Register v2 (accuracy 0.91)
     P->>R: Read all versions
-    P->>C: Write v2 as current best
+    P->>C: Write v2 to current_best
     S->>C: Read on startup
     S->>S: Load v2/model.pkl
     CL->>S: POST /predict
     S->>CL: prediction + model_version: v2
+    deactivate CL
 ```
 
 ---

@@ -44,6 +44,7 @@ sequenceDiagram
     API->>API: Optional lightweight transforms
     API->>Model: Feature vector + request context
     Model-->>API: Prediction
+    deactivate Model
     API-->>Client: Response
 ```
 

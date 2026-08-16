@@ -51,11 +51,11 @@ flowchart TB
     subgraph Lin["Linear"]
         Eq[Equal % each]
     end
-    subgraph TD["Time decay"]
-        Near[higher weight near conversion]
+    subgraph TimeDecay["Time decay"]
+        Near["higher weight near conversion"]
     end
     subgraph Pos["Position-based"]
-        U[40% first + 40% last + 20% middle]
+        U["40% first + 40% last + 20% middle"]
     end
 ```
 

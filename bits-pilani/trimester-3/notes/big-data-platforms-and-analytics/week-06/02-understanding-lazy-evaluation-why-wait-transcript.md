@@ -23,9 +23,9 @@ Spark does **not** read data, apply `map`, or apply `filter`. It **records** the
 
 ```mermaid
 flowchart LR
-    SRC["Source RDD"] -->|"map (recorded)"| R2["RDD2 (logical)"]
-    R2 -->|"filter (recorded)"| R3["RDD3 (logical)"]
-    R3 -.->|"no data moved yet"| X["Waiting for action"]
+    SRC["Source RDD"] -->|map&#40;recorded&#41;| R2["RDD2 (logical)"]
+    R2 -->|filter&#40;recorded&#41;| R3["RDD3 (logical)"]
+    R3 -.->|no data moved yet| X["Waiting for action"]
 ```
 
 ### Restaurant Analogy

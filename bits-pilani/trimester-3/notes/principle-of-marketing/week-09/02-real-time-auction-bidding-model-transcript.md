@@ -79,7 +79,8 @@ sequenceDiagram
     Exchange->>DSP: Auction invitation
     DSP->>Exchange: Bids + criteria match
     Exchange->>Page: Winning creative
-    Page->>User: Ad displays as page loads
+    deactivate Exchange
+    Page->>User: Ad displays during page load
 ```
 
 | Scenario | Result |

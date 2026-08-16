@@ -35,7 +35,7 @@ flowchart LR
     TF["textFile\n(source RDD)"] --> FM["flatMap\n(split lines)"]
     FM --> MAP["map\n(word, 1)"]
     MAP --> RBK["reduceByKey\n(sum counts)"]
-    RBK -.->|"waiting"| ACT["count() not yet called"]
+    RBK -.->|waiting| ACT["count() not yet called"]
 ```
 
 | Step | Operation | Dependency type | Stage (when run) |
@@ -110,9 +110,10 @@ flowchart LR
     end
     A0 --> SH["Shuffle by key"]
     B0 --> SH
-    SH --> subgraph NodeC["Node C (hash slot)"]
+    subgraph NodeC["Node C (hash slot)"]
         C0["hello→1,1\nspark→1"]
     end
+    SH --> C0
 ```
 
 This is the **most expensive** phase of word count — disk I/O + network.
@@ -148,6 +149,8 @@ sequenceDiagram
     S0->>Shuffle: Write shuffle files
     Shuffle->>S1: Fetch grouped keys
     S1->>Driver: reduceByKey + count result
+    deactivate S0
+    deactivate Driver
     Driver->>Code: Return count
 ```
 

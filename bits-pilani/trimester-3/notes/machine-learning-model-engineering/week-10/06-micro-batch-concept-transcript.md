@@ -97,6 +97,7 @@ sequenceDiagram
     TX->>Job: Events accumulate (5 min window)
     Job->>Job: Compute features + score
     Job->>DB: Write updated scores
+    deactivate Job
     API->>DB: Read latest score per user
 ```
 

@@ -28,9 +28,9 @@ print(type(names_rdd))         # <class 'pyspark.rdd.RDD'>
 ```mermaid
 flowchart LR
     Driver["Driver Memory\n[List of names]"]
-    Driver -->|"Chop into partitions"| P0["Partition 0 → Worker 1"]
-    Driver -->|"Chop into partitions"| P1["Partition 1 → Worker 2"]
-    Driver -->|"Chop into partitions"| P2["Partition 2 → Worker 3"]
+    Driver -->|Chop into partitions| P0["Partition 0 → Worker 1"]
+    Driver -->|Chop into partitions| P1["Partition 1 → Worker 2"]
+    Driver -->|Chop into partitions| P2["Partition 2 → Worker 3"]
 ```
 
 1. Spark takes the list from the **driver's memory**

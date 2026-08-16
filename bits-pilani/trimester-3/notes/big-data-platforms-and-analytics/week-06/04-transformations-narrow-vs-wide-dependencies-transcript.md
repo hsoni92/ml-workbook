@@ -7,8 +7,8 @@ When you chain transformations, each parent RDD connects to child RDDs through *
 ```mermaid
 flowchart TB
     CHAIN["Transformation chain"] --> DEP{"Dependency type?"}
-    DEP -->|"Narrow"| LOCAL["Local / pipelined\n(fast)"]
-    DEP -->|"Wide"| SHUF["Shuffle required\n(slow — stage boundary)"]
+    DEP -->|Narrow| LOCAL["Local / pipelined\n(fast)"]
+    DEP -->|Wide| SHUF["Shuffle required\n(slow — stage boundary)"]
 ```
 
 ---
@@ -102,9 +102,10 @@ flowchart LR
         MAP --> FILT["filter"]
     end
     FILT --> SHUFFLE["Shuffle\n(wide dep boundary)"]
-    SHUFFLE --> subgraph Stage2["Stage 2"]
+    subgraph Stage2["Stage 2"]
         RED["reduceByKey"]
     end
+    SHUFFLE --> RED
     RED --> ACT["count() action"]
 ```
 

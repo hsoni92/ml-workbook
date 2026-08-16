@@ -63,6 +63,7 @@ sequenceDiagram
     Fn-->>Client: Slow first response
     Client->>Platform: Subsequent requests
     Platform->>Fn: Reuse warm instance
+    deactivate Fn
     Fn-->>Client: Fast response
 ```
 

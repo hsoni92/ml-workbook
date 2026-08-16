@@ -41,6 +41,7 @@ sequenceDiagram
     API->>Model: Feature vector
     Model-->>API: Score + decision
     API-->>Client: 200 OK (or 4xx/5xx)
+    deactivate API
     Note over API: Emit system metrics
 ```
 

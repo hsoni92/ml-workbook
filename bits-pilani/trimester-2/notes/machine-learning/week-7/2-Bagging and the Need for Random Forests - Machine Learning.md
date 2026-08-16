@@ -28,10 +28,10 @@ flowchart TB
   D --> BB[Bootstrap B]
   B1 --> T1[Tree 1]
   B2 --> T2[Tree 2]
-  BB --> TB[Tree B]
+  BB --> TREEB[Tree B]
   T1 --> V[Vote / average]
   T2 --> V
-  TB --> V
+  TREEB --> V
 ```
 
 **Why variance drops:** individual trees are **high-variance**; averaging **decorrelates** some errors (especially if trees differ).

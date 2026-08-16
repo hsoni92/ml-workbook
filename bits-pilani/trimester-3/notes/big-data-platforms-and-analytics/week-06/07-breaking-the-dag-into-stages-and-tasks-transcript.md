@@ -65,9 +65,10 @@ flowchart TB
         M["map"] --> F["filter"] --> FM["flatMap"]
     end
     FM --> SH["SHUFFLE\n(stage boundary)"]
-    SH --> subgraph Stage1["Stage 1"]
+    subgraph Stage1["Stage 1"]
         RBK["reduceByKey"]
     end
+    SH --> RBK
 ```
 
 ### Category C: Actions
@@ -116,7 +117,7 @@ flowchart TB
         T4["Task 4\nPartition 3"]
     end
     Stage1 --> SH["Shuffle barrier\n(all tasks must finish)"]
-    SH --> subgraph Stage2["Stage 2: 4 tasks"]
+    subgraph Stage2["Stage 2: 4 tasks"]
         T5["Task 5"]
         T6["Task 6"]
         T7["Task 7"]

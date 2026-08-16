@@ -26,12 +26,12 @@ flowchart TD
     XT[X_t] --> FG[Forget Gate]
     XT --> IG[Input Gate]
     XT --> OG[Output Gate]
-    CT1[C_{t-1}] --> CS[Cell State Highway]
+    CT1["C_&#123;t-1&#125;"] --> CS[Cell State Highway]
     FG --> CS
     IG --> CS
     CS --> CT[C_t]
     CT --> OG
-    OG --> HT[H_t]
+    OG --> HT["H_t"]
 ```
 
 ### 1. Cell State ($C_t$) — The Highway

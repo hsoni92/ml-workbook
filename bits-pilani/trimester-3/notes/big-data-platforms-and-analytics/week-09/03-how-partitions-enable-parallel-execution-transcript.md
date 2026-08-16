@@ -62,16 +62,16 @@ Poor partition strategy creates bottlenecks even when hardware is abundant. The 
 ```mermaid
 flowchart TB
     subgraph Good["Balanced Partitions"]
-        G1[P1: 25%] --> GT[All finish ~1 min]
-        G2[P2: 25%] --> GT
-        G3[P3: 25%] --> GT
-        G4[P4: 25%] --> GT
+        G1["P1: 25%"] --> GT["All finish ~1 min"]
+        G2["P2: 25%"] --> GT
+        G3["P3: 25%"] --> GT
+        G4["P4: 25%"] --> GT
     end
     subgraph Bad["Skewed Partitions"]
-        B1[P1: 90%] --> BT[Job takes 10 min]
-        B2[P2: 3%] --> BT
-        B3[P3: 4%] --> BT
-        B4[P4: 3%] --> BT
+        B1["P1: 90%"] --> BTFIN["Job takes 10 min"]
+        B2["P2: 3%"] --> BTFIN
+        B3["P3: 4%"] --> BTFIN
+        B4["P4: 3%"] --> BTFIN
     end
 ```
 

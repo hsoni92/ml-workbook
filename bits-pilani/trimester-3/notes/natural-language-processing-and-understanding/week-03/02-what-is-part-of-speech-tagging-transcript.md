@@ -45,8 +45,8 @@ Disambiguation requires surrounding context — a core challenge that modern tag
 ```mermaid
 flowchart LR
     W[Word: book] --> C{Context?}
-    C -->|"will book a"| V[Verb]
-    C -->|"this book"| N[Noun]
+    C -->|will book a| V[Verb]
+    C -->|this book| N[Noun]
 ```
 
 ---

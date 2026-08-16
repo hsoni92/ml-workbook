@@ -58,15 +58,15 @@ Proposed by Eric Brewer, the CAP theorem states a fundamental law: in a distribu
 
 ```mermaid
 flowchart TD
-    CAP[CAP Theorem<br/>Pick 2 of 3]
-    P[P - Partition Tolerance<br/>MANDATORY in clusters]
-    C[C - Consistency<br/>Correct or error]
-    A[A - Availability<br/>Always respond]
+    CAP["CAP Theorem<br/>Pick 2 of 3"]
+    P["P - Partition Tolerance<br/>MANDATORY in clusters"]
+    C["C - Consistency<br/>Correct or error"]
+    A["A - Availability<br/>Always respond"]
     P --> CHOICE{During partition}
-    CHOICE --> CP[CP System<br/>Consistent + Partition Tolerant]
-    CHOICE --> AP[AP System<br/>Available + Partition Tolerant]
-    CP --> CPB[Reject requests if can't<br/>guarantee latest data]
-    AP --> APB[Serve best available data<br/>even if stale]
+    CHOICE --> CP["CP System<br/>Consistent + Partition Tolerant"]
+    CHOICE --> AP["AP System<br/>Available + Partition Tolerant"]
+    CP --> CPB["Reject requests if cannot<br/>guarantee latest data"]
+    AP --> APB["Serve best available data<br/>even if stale"]
 ```
 
 ### Why Only 2 of 3?

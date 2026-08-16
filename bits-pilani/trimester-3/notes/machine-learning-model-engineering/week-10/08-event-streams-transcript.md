@@ -11,8 +11,8 @@ flowchart LR
         F2[events_2024-09-02.csv]
     end
     subgraph StreamView["Streaming View"]
-        E1[click @ 10:01] --> E2[purchase @ 10:02]
-        E2 --> E3[click @ 10:03]
+        E1["click @ 10:01"] --> E2["purchase @ 10:02"]
+        E2 --> E3["click @ 10:03"]
         E3 --> E4[...]
     end
 ```

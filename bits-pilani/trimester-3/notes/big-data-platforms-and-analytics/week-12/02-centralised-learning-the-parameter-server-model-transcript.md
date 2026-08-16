@@ -22,6 +22,7 @@ sequenceDiagram
     PS->>W: Pull latest parameters
     W->>W: Forward + backward pass on local batch
     W->>PS: Push computed gradients
+    deactivate W
     PS->>PS: Apply optimizer (e.g. SGD) to update global weights
 ```
 

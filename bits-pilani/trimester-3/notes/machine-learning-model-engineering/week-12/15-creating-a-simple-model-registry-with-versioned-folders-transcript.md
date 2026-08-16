@@ -73,13 +73,13 @@ A registration script scans the `models/` directory and produces a central catal
 
 ```mermaid
 flowchart TD
-    S[Scan models/ directory] --> F[Find subdirectories starting with 'v']
-    F --> I[For each version folder]
-    I --> M[Load metrics.json]
-    I --> P[Record model.pkl path]
-    I --> T[Add created_at timestamp]
-    M & P & T --> E[Build metadata entry]
-    E --> R[Write registry.json]
+    S["Scan models/ directory"] --> F["Find subdirectories starting with 'v'"]
+    F --> I["For each version folder"]
+    I --> M["Load metrics.json"]
+    I --> P["Record model.pkl path"]
+    I --> T["Add created_at timestamp"]
+    M & P & T --> E["Build metadata entry"]
+    E --> R["Write registry.json"]
 ```
 
 ### `registry.json` Structure

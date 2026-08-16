@@ -14,7 +14,7 @@ SGD minimises a **loss function** $L(\theta)$ by iteratively updating model weig
 flowchart LR
     Start["Current weights θ_t"] --> Grad["Compute ∇L(θ_t)"]
     Grad --> Step[Step opposite to gradient]
-    Step --> New[Updated weights θ_{t+1}]
+    Step --> New["Updated weights θ_&#123;t+1&#125;"]
     New --> Start
 ```
 

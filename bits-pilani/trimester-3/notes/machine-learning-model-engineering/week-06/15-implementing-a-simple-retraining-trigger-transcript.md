@@ -134,6 +134,7 @@ sequenceDiagram
     else Champion wins
         E->>R: v2 stays archived
     end
+    deactivate E
 ```
 
 ---

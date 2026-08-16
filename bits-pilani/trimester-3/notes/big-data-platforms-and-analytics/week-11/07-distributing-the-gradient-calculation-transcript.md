@@ -24,6 +24,9 @@ sequenceDiagram
     WN->>PS: Push local gradient gₙ
 
     Note over PS: Step 3 — Global update
+    deactivate W1
+    deactivate W2
+    deactivate WN
     PS->>PS: Average gradients, update θ
 
     Note over PS,W1: Step 4 — Pull

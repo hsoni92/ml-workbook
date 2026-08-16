@@ -80,12 +80,14 @@ flowchart TB
         A1["Read"] --> A2["map"] --> A3["filter"]
     end
     A3 --> SH["Shuffle"]
-    SH --> subgraph S2["Stage 1"]
+    subgraph S2["Stage 1"]
         B1["reduceByKey"]
     end
-    S2 --> subgraph S3["Stage 2"]
+    SH --> B1
+    subgraph S3["Stage 2"]
         C1["map (format output)"]
     end
+    B1 --> C1
 ```
 
 Why stages matter: tasks within a stage can fuse operations; crossing a stage always implies shuffle I/O.

@@ -14,14 +14,14 @@ When nodes cannot communicate, a CP system **refuses to serve requests** rather 
 
 ```mermaid
 sequenceDiagram
-    participant NY as ATM - New York
-    participant LON as ATM - London
+    participant NY as ATM / New York
+    participant LON as ATM / London
     participant DB as Central Database
     NY->>DB: Withdraw $1000
     DB->>NY: Success, balance = $0
     Note over NY,LON: Network partition occurs
     LON->>DB: Withdraw $1000
-    DB--xLON: ERROR - System Unavailable
+    DB--xLON: ERROR / System Unavailable
     Note over LON: Cannot serve stale balance
 ```
 
@@ -54,10 +54,10 @@ When nodes cannot communicate, an AP system **continues serving requests** with 
 
 ```mermaid
 sequenceDiagram
-    participant IN as Server - India
-    participant US as Server - US
-    participant U1 as User - India
-    participant U2 as User - US
+    participant IN as Server / India
+    participant US as Server / US
+    participant U1 as User / India
+    participant U2 as User / US
     U1->>IN: Like video
     IN->>IN: Count = 1001
     Note over IN,US: Network partition

@@ -87,7 +87,7 @@ def get_online_features(customer_id):
 sequenceDiagram
     participant Request
     participant API as Serving API
-    participant Store as online_store (dict)
+    participant Store as online_store dict
     participant Model
 
     Request->>API: predict(customer_id="C001")

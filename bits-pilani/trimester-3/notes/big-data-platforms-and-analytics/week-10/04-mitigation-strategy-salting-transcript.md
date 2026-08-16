@@ -58,7 +58,7 @@ Without this, salted keys on the large table will not find matches on the small 
 
 ```mermaid
 sequenceDiagram
-    participant LT as Large table (skewed)
+    participant LT as Large table skewed
     participant ST as Small table
     participant C as Cluster workers
 

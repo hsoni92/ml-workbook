@@ -95,10 +95,10 @@ for text in sentences:
 
 ```mermaid
 flowchart TB
-    TEXT[Input text] --> SPACY[spaCy pipeline<br/>en_core_web_sm]
-    SPACY --> TB[spacytextblob pipe]
-    TB --> POL[polarity -1 to 1]
-    TB --> SUB[subjectivity 0 to 1]
+    TEXT["Input text"] --> SPACY["spaCy pipeline<br/>en_core_web_sm"]
+    SPACY --> STB["spacytextblob pipe"]
+    STB --> POL["polarity -1 to 1"]
+    STB --> SUB["subjectivity 0 to 1"]
 ```
 
 ## When to Use spaCy + TextBlob

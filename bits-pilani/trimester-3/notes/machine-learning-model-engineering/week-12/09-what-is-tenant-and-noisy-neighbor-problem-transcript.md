@@ -32,15 +32,15 @@ But all tenants run on the **same shared hardware and infrastructure**.
 
 ```mermaid
 flowchart TB
-    subgraph Platform Layer
-        COMP[Compute / GPU]
-        STOR[Storage]
-        NET[Networking]
-        TOOLS[Deploy / Monitor / Log]
+    subgraph Platform["Platform Layer"]
+        COMP["Compute / GPU"]
+        STOR["Storage"]
+        NET["Networking"]
+        TOOLS["Deploy / Monitor / Log"]
     end
-    T1[Tenant A: Fraud] --> Platform Layer
-    T2[Tenant B: Recommendations] --> Platform Layer
-    T3[Tenant C: External SaaS] --> Platform Layer
+    T1["Tenant A: Fraud"] --> Platform
+    T2["Tenant B: Recommendations"] --> Platform
+    T3["Tenant C: External SaaS"] --> Platform
 ```
 
 ### What the Platform Provides
@@ -89,9 +89,9 @@ Tenant A launches a large batch scoring job on the shared GPU cluster
 
 ```mermaid
 sequenceDiagram
-    participant A as Tenant A (Batch Job)
+    participant A as Tenant A / Batch Job
     participant C as Shared Cluster
-    participant B as Tenant B (Real-time API)
+    participant B as Tenant B / Real-time API
     A->>C: Saturate GPU / memory
     C->>B: Queued inference requests
     B->>B: Latency spike, timeouts

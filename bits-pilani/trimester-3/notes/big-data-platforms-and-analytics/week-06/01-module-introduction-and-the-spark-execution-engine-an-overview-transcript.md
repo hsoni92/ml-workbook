@@ -36,7 +36,7 @@ flowchart TB
     DAG --> CM["Cluster Manager\n(YARN / Mesos / Standalone)"]
     CM --> EXEC["Executors on Worker Nodes"]
     EXEC --> RESULT["Results / Persisted Output"]
-    EXEC -->|"status, metrics"| DRIVER
+    EXEC -->|status, metrics| DRIVER
 ```
 
 ---
@@ -77,10 +77,10 @@ flowchart LR
         EN["Executor N\nTasks + Cache"]
     end
     SC --> DS --> TS
-    TS -->|"serialised tasks"| E1
+    TS -->|serialised tasks| E1
     TS --> E2
     TS --> EN
-    E1 -->|"results / heartbeats"| SC
+    E1 -->|results / heartbeats| SC
 ```
 
 ---

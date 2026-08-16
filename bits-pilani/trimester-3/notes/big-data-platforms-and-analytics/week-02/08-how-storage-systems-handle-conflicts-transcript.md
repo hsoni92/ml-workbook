@@ -57,9 +57,9 @@ Each node maintains a counter for every node that has modified the data. By comp
 
 ```mermaid
 flowchart LR
-    N1[Node 1: write A] -->|vector [1,0]| N2
-    N2[Node 2: write B] -->|vector [1,1]| N3
-    N1 -->|concurrent write C<br/>vector [2,0]| CONFLICT[Conflict detected<br/>No auto-merge]
+    N1[Node 1: write A] -->|vector &#91;1,0&#93;| N2
+    N2[Node 2: write B] -->|vector &#91;1,1&#93;| N3
+    N1 -->|concurrent write C<br/>vector &#91;2,0&#93;| CONFLICT["Conflict detected<br/>No auto-merge"]
 ```
 
 Vector clocks preserve **causal integrity**: the system knows whether one event caused another or whether they happened in parallel.

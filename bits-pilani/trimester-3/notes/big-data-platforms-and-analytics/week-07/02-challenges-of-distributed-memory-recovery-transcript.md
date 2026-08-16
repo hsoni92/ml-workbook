@@ -71,10 +71,13 @@ flowchart TB
         R1[Data Copy 1] --- R2[Data Copy 2] --- R3[Data Copy 3]
         R1 --> RN[High RAM + Network cost]
     end
-    subgraph Lineage["Lineage Approach"]
-        L1[Source Data] --> L2[Transform A] --> L3[Transform B]
-        L3 --> LM[Metadata only: recipe stored]
-        LM --> LR[On failure: recompute missing piece]
+    subgraph LineageBuild["Lineage Approach — Build"]
+        L1[Source Data] --> L2[Transform A]
+        L2 --> L3[Transform B]
+        L3 --> LM["Metadata only - recipe stored"]
+    end
+    subgraph LineageRecover["Lineage Approach — Recover"]
+        LM --> RCRV["On failure: recompute missing piece"]
     end
 ```
 

@@ -65,8 +65,8 @@ flowchart TD
     C --> M[Measure: Revenue, Clicks, Fraud, Churn]
     H --> M
     M --> D{Statistically Significant?}
-    D -->|Challenger wins| Promote
-    D -->|No difference / Champion wins| Keep Champion
+    D -->|Challenger wins| Promote[Promote]
+    D -->|No difference or Champion wins| KeepChampion[Keep Champion]
 ```
 
 ### Requirements for Valid A/B Tests

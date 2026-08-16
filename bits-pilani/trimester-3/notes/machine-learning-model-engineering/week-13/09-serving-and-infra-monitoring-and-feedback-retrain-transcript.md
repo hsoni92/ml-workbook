@@ -129,11 +129,11 @@ Retraining can be triggered by:
 
 ```mermaid
 flowchart LR
-    MON["Monitoring\n(detects issue)"] -->|"trigger"| RETRAIN["Retraining Job"]
+    MON["Monitoring\n(detects issue)"] -->|trigger| RETRAIN["Retraining Job"]
     RETRAIN --> TRAIN["Training Pipeline\n(new candidate V_N+1)"]
     TRAIN --> EVAL["Evaluate vs Champion"]
-    EVAL -->|"better + passes checks"| PROMOTE["Update current_best.json"]
-    EVAL -->|"worse or fails fairness"| DISCARD["Discard candidate"]
+    EVAL -->|better + passes checks| PROMOTE["Update current_best.json"]
+    EVAL -->|worse or fails fairness| DISCARD["Discard candidate"]
     PROMOTE --> RESTART["Serving restarts\nloads new model"]
 ```
 
@@ -171,8 +171,8 @@ flowchart TB
 
     DATA --> FEAT --> TRAIN2 --> REG --> PROMO
     PROMO --> SERVE2 --> PRED --> MON2
-    MON2 -->|"retrain trigger"| TRAIN2
-    PRED -->|"outcome labels"| DATA
+    MON2 -->|retrain trigger| TRAIN2
+    PRED -->|outcome labels| DATA
 ```
 
 **Every arrow is a production concern:**

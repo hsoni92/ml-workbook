@@ -146,6 +146,7 @@ sequenceDiagram
     RM-->>RS: Scores per candidate
     RS->>RS: Apply business rules + diversity
     RS-->>GW: Top 10 items
+    deactivate RS
     GW-->>User: Render carousel
 ```
 

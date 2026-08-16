@@ -119,10 +119,10 @@ flowchart TD
   allowOut["Allow"]
   defaultOut["Deny default"]
   reqNode --> denyNode
-  denyNode -->|"yes"| denyOut
-  denyNode -->|"no"| allowNode
-  allowNode -->|"yes"| allowOut
-  allowNode -->|"no"| defaultOut
+  denyNode -->|yes| denyOut
+  denyNode -->|no| allowNode
+  allowNode -->|yes| allowOut
+  allowNode -->|no| defaultOut
 ```
 
 ---

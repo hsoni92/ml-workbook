@@ -148,7 +148,7 @@ flowchart LR
     OLD["Single Model Thinking\n(train → deploy → hope)"]
     NEW["System Thinking\n(5 layers × 5 questions)"]
 
-    OLD -->|"required shift"| NEW
+    OLD -->|required shift| NEW
 ```
 
 | Old Thinking | New Thinking |

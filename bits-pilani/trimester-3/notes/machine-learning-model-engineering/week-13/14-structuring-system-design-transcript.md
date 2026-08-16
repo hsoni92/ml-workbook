@@ -88,8 +88,8 @@ flowchart LR
     OUTCOME --> DATA2["Data Lake\n(enriched)"]
     DATA2 --> RETRAIN["Retraining\n(new candidate)"]
     RETRAIN --> EVAL["Evaluation\n(vs champion)"]
-    EVAL -->|"better"| PROMOTE["Promote\n(current_best.json)"]
-    EVAL -->|"worse"| DISCARD["Discard"]
+    EVAL -->|better| PROMOTE["Promote\n(current_best.json)"]
+    EVAL -->|worse| DISCARD["Discard"]
     PROMOTE --> PRED
 ```
 

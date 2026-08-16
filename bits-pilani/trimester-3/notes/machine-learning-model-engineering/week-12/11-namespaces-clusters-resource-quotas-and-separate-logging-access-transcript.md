@@ -33,10 +33,10 @@ Cluster 2: VIP external customers + regulated regions (EU GDPR)
 
 ```mermaid
 flowchart TB
-    TA[Tenant A failure] --> C1[Cluster 1 - DOWN]
-    C2[Cluster 2 - Running]
-    TB[Tenant B on Cluster 2] --> C2
-    TC[Tenant C on Cluster 2] --> C2
+    TA[Tenant A failure] --> C1["Cluster 1 - DOWN"]
+    C2["Cluster 2 - Running"]
+    TENB["Tenant B on Cluster 2"] --> C2
+    TC["Tenant C on Cluster 2"] --> C2
 ```
 
 ### When to Use Which

@@ -17,12 +17,12 @@ Moving terabytes across a cluster network is prohibitively slow. A 10 Gbps link 
 ```mermaid
 flowchart LR
     subgraph Wrong["Anti-Pattern: Move Data"]
-        D1["10 TB Data"] -->|"Slow network transfer"| C1["Central Compute Node"]
+        D1["10 TB Data"] -->|Slow network transfer| C1["Central Compute Node"]
     end
     subgraph Right["Hadoop: Move Code"]
-        C2["Map Code (KB)"] -->|"Fast"| N1["DataNode with Block"]
-        C2 -->|"Fast"| N2["DataNode with Block"]
-        C2 -->|"Fast"| N3["DataNode with Block"]
+        C2["Map Code (KB)"] -->|Fast| N1["DataNode with Block"]
+        C2 -->|Fast| N2["DataNode with Block"]
+        C2 -->|Fast| N3["DataNode with Block"]
     end
 ```
 

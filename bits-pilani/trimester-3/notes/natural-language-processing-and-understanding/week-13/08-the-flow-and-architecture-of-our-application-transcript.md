@@ -22,6 +22,7 @@ sequenceDiagram
     FE->>BE: Send user answers
     BE->>BE: Calculate score
     BE->>FE: Score + feedback
+    deactivate FE
     FE->>U: Display results
 ```
 

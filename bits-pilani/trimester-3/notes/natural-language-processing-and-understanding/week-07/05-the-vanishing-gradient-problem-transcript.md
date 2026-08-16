@@ -26,9 +26,9 @@ Training an RNN requires propagating the error backward from the last time step 
 ```mermaid
 flowchart RL
     YT[Y_T - loss] --> HT[H_T gradient]
-    HT --> HT1[H_{T-1} gradient]
+    HT --> HT1["H_&#123;T-1&#125; gradient"]
     HT1 --> Dots[...]
-    Dots --> H0[H_0 gradient]
+    Dots --> H0["H_0 gradient"]
 ```
 
 To update weights affecting an early word, the gradient must travel through **every intermediate time step**.
