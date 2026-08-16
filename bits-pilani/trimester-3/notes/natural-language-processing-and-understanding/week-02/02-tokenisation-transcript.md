@@ -20,9 +20,9 @@ If tokenisation is wrong, every downstream step inherits the error: wrong POS ta
 ```mermaid
 flowchart TB
     P["Paragraph: NLP is fascinating. Deep learning changed AI."]
-    P --> W[Word tokens: NLP | is | fascinating | . | Deep | learning | ...]
-    P --> S[Sentence tokens: NLP is fascinating. | Deep learning changed AI.]
-    P --> C[Character tokens: N | L | P | ...]
+    P --> W["Word tokens: NLP | is | fascinating | . | Deep | learning | ..."]
+    P --> S["Sentence tokens: NLP is fascinating. | Deep learning changed AI."]
+    P --> C["Character tokens: N | L | P | ..."]
 ```
 
 ---
