@@ -36,7 +36,7 @@ flowchart LR
         R --> S[Suffix: -ness]
     end
     R --> L[Lemma: happy]
-    R --> ST[Stem (algo): happi]
+    R --> ST["Stem (algo): happi"]
 ```
 
 ---
