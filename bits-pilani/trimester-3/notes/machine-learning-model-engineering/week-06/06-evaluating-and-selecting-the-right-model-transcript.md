@@ -13,7 +13,7 @@ Training candidate models is straightforward; **choosing which one replaces prod
 ```mermaid
 flowchart TD
     A[Load Champion] --> C[Same Evaluation Protocol]
-    B[Load Challenger(s)] --> C
+    B["Load Challenger(s)"] --> C
     C --> D[Held-Out Validation Set]
     D --> E[Multiple Time Slices]
     E --> F[Compute Metrics]

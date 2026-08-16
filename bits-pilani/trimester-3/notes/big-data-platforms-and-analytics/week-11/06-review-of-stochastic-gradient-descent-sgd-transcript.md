@@ -12,7 +12,7 @@ SGD minimises a **loss function** $L(\theta)$ by iteratively updating model weig
 
 ```mermaid
 flowchart LR
-    Start[Current weights θ_t] --> Grad[Compute ∇L(θ_t)]
+    Start["Current weights θ_t"] --> Grad["Compute ∇L(θ_t)"]
     Grad --> Step[Step opposite to gradient]
     Step --> New[Updated weights θ_{t+1}]
     New --> Start

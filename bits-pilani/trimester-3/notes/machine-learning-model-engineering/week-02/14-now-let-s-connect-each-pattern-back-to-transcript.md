@@ -12,7 +12,7 @@ The same ML model can sit underneath any serving pattern. What changes is **whic
 
 ```mermaid
 flowchart TB
-    M[Same ML Model f(x)]
+    M["Same ML Model f(x)"]
     M --> B[Batch<br/>Throughput + Job Time]
     M --> O[Online<br/>P95/P99 Latency]
     M --> S[Streaming<br/>Event-to-Action + Lag]

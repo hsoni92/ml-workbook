@@ -121,9 +121,9 @@ A recommendation model's features (user history, item metadata) look stable, but
 
 ```mermaid
 flowchart TB
-    CD[Covariate Drift<br/>P(X) changes]
-    LD[Label Drift<br/>P(Y) changes]
-    CoD[Concept Drift<br/>P(Y|X) changes]
+    CD["Covariate Drift<br/>P(X) changes"]
+    LD["Label Drift<br/>P(Y) changes"]
+    CoD["Concept Drift<br/>P(Y|X) changes"]
     CD -->|May cause| CoD
     LD -->|Affects thresholds| PERF[Apparent Performance Change]
     CoD --> PERF
