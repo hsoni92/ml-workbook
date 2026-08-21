@@ -18,10 +18,10 @@ quadrantChart
     title Sync vs Async Trade-offs
     x-axis Low Speed --> High Speed
     y-axis Low Accuracy --> High Accuracy
-    quadrant-1 High accuracy, lower speed
-    quadrant-2 Ideal but rare
-    quadrant-3 Low accuracy, high speed
-    quadrant-4 Balanced
+    quadrant-1 Ideal but rare
+    quadrant-2 High accuracy, lower speed
+    quadrant-3 Low accuracy, low speed
+    quadrant-4 Low accuracy, high speed
 ```
 
 | Mode | Utilisation | Accuracy | Key risk |

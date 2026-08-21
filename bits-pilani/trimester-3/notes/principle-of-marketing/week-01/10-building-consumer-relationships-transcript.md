@@ -13,10 +13,10 @@ quadrantChart
     title Customer Relationship Groups
     x-axis Low Profitability --> High Profitability
     y-axis Low Loyalty --> High Loyalty
-    quadrant-1 Butterflies
-    quadrant-2 True Friends
+    quadrant-1 True Friends
+    quadrant-2 Barnacles
     quadrant-3 Strangers
-    quadrant-4 Barnacles
+    quadrant-4 Butterflies
 ```
 
 | Group | Profitability | Loyalty | Strategy |

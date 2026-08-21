@@ -13,8 +13,8 @@ quadrantChart
     title BCG Growth-Share Matrix
     x-axis Low Market Share --> High Market Share
     y-axis Low Market Growth --> High Market Growth
-    quadrant-1 Question Marks
-    quadrant-2 Stars
+    quadrant-1 Stars
+    quadrant-2 Question Marks
     quadrant-3 Dogs
     quadrant-4 Cash Cows
 ```

@@ -18,7 +18,7 @@ Batch and micro-batch are the two most common ingestion modes for ML training an
 quadrantChart
     title Latency vs Complexity Trade-off
     x-axis Low Complexity --> High Complexity
-    y-axis High Latency --> Low Latency
+    y-axis Low Latency --> High Latency
     Batch: [0.2, 0.85]
     Micro-Batch: [0.55, 0.45]
     Streaming: [0.9, 0.1]
