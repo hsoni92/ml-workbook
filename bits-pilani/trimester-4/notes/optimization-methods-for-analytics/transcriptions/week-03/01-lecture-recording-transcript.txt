@@ -1,156 +1,534 @@
-<!DOCTYPE html>
-<html data-userprofile-context="{&quot;hasProfileCardAccess&quot;:false}" data-mathjax-context="{&quot;renderLatex&quot;:true,&quot;outputScale&quot;:1.5}" data-logging-endpoint="/d2l/lp/logger/provision?sessionToken=NjYwNiw" lang="en-gb" data-lang-default="en-gb" data-intl-overrides="{&quot;number&quot;:{&quot;patterns&quot;:{&quot;decimal&quot;:{&quot;negativePattern&quot;:&quot;-{number}&quot;},&quot;percent&quot;:{&quot;positivePattern&quot;:&quot;{number} %&quot;,&quot;negativePattern&quot;:&quot;-{number} %&quot;}},&quot;symbols&quot;:{&quot;decimal&quot;:&quot;.&quot;,&quot;group&quot;:&quot;,&quot;,&quot;negative&quot;:&quot;-&quot;,&quot;percent&quot;:&quot;%&quot;},&quot;groupSize&quot;:[3]},&quot;date&quot;:{&quot;hour24&quot;:false,&quot;calendar&quot;:{&quot;firstDayOfWeek&quot;:0,&quot;dayPeriods&quot;:{&quot;am&quot;:&quot;AM&quot;,&quot;pm&quot;:&quot;PM&quot;},&quot;months&quot;:{&quot;short&quot;:[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;,&quot;Sep&quot;,&quot;Oct&quot;,&quot;Nov&quot;,&quot;Dec&quot;,&quot;&quot;],&quot;long&quot;:[&quot;January&quot;,&quot;February&quot;,&quot;March&quot;,&quot;April&quot;,&quot;May&quot;,&quot;June&quot;,&quot;July&quot;,&quot;August&quot;,&quot;September&quot;,&quot;October&quot;,&quot;November&quot;,&quot;December&quot;,&quot;&quot;]},&quot;days&quot;:{&quot;short&quot;:[&quot;Sun&quot;,&quot;Mon&quot;,&quot;Tue&quot;,&quot;Wed&quot;,&quot;Thu&quot;,&quot;Fri&quot;,&quot;Sat&quot;]}},&quot;formats&quot;:{&quot;dateFormats&quot;:{&quot;short&quot;:&quot;dd/MM/yyyy&quot;},&quot;timeFormats&quot;:{&quot;short&quot;:&quot;h:mm tt&quot;,&quot;medium&quot;:&quot;h:mm tt&quot;,&quot;full&quot;:&quot;h:mm tt ZZZ&quot;}}}}" data-oslo="{&quot;batch&quot;:&quot;/d2l/api/oslo/batch?languageId=11&quot;,&quot;collection&quot;:&quot;/d2l/api/oslo/collection?languageId=11&quot;,&quot;version&quot;:&quot;W/\&quot;20.26.10.26259.0\&quot;&quot;}" data-timezone="{&quot;name&quot;:&quot;India - Kolkata&quot;,&quot;identifier&quot;:&quot;Asia/Calcutta&quot;}" data-terminology="{&quot;outcomes&quot;:&quot;outcomes&quot;,&quot;educator&quot;:&quot;educator&quot;,&quot;moduleHierarchy&quot;:&quot;unit&quot;}" data-app-version="20.26.10" dir="ltr" data-telemetry-endpoint="https://prd.ap-south-1.telemetryservice.brightspace.com/api/events/" data-cdn="https://s.brightspace.com/apps/brightspace/20.26.10.26259/" data-global-context="{&quot;orgUnitId&quot;:&quot;6606&quot;,&quot;orgId&quot;:&quot;6606&quot;,&quot;userId&quot;:null}" data-he-context="{&quot;activeOrgEnrollment&quot;:false,&quot;applySandboxing&quot;:false,&quot;bcsansFontAllowed&quot;:false,&quot;contentStyler&quot;:false,&quot;contentStylerCssOverride&quot;:&quot;&quot;,&quot;enableLmsPathChecking&quot;:true,&quot;generativeAIEndpoint&quot;:&quot;&quot;,&quot;h5pContext&quot;:null,&quot;insertElement&quot;:false,&quot;insertPractice&quot;:false,&quot;layouts&quot;:false,&quot;mathRenderScale&quot;:1.5,&quot;maxFileSize&quot;:2147483648,&quot;mentions&quot;:true,&quot;orgUnitId&quot;:&quot;6606&quot;,&quot;orgUnitPath&quot;:&quot;/content/&quot;,&quot;pasteFormatting&quot;:&quot;merge&quot;,&quot;sourceEditable&quot;:false,&quot;uploadFiles&quot;:false,&quot;useNewTinyMCEVersion&quot;:true,&quot;viewFiles&quot;:false,&quot;wmodeOpaque&quot;:true}" data-css-vars="{&quot;--d2l-branding-primary-color&quot;:&quot;#ff812c&quot;}">
-<head>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Login - BITS Pilani Digital</title>
-<link rel="preconnect" href="https://s.brightspace.com/lib/bsi/2026.10.234/" crossorigin>
-<link rel="dns-prefetch" href="https://s.brightspace.com/lib/bsi/2026.10.234/">
-<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.10.234/unbundled/bsi-unbundled.js" as="script" crossorigin="anonymous">
-<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.10.234/unbundled/navigation.js" as="script" crossorigin="anonymous">
-<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.10.234/unbundled/navigation-main-header.js" as="script" crossorigin="anonymous">
-<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.10.234/unbundled/navigation-link-image.js" as="script" crossorigin="anonymous">
-<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.10.234/unbundled/html-block.js" as="script" crossorigin="anonymous">
-<script>
-(function(){var client;var errors = [];window.addEventListener('d2l-logging-loaded', function(e) {client = e.detail.createClient('uncaught-errors', { shouldThrottle: true });if (errors.length > 0) {client.legacyErrorBatch(errors);}});var handleError = function(data) {if (!data.message) return;if (data.error && data.error.stack && (data.error.stack.includes('/content/') || data.error.stack.includes('/shared/'))) return;if (client) {client.legacyError(data.message, data.source, data.lineno, data.colno, data.error);} else {errors.push(data);}};window.addEventListener('error', function(e) {handleError({ message: e.message, source: e.source, lineno: e.lineno, colno: e.colno, error: e.error });});window.addEventListener('unhandledrejection', function(e) {handleError({message: e.reason ? (e.reason.message ? e.reason.message : e.reason) : '',error: e.reason});});})();
-(function(){try { localStorage.setItem('XSRF.Token','');} catch(e) {}})();
-(function(){if(window['FontFace'] === undefined) { window.d2lFontsLoaded = true; return; }window.d2lFontsLoaded = false;Promise.all(['400','700'].map(function(w) {return new FontFace('Lato','url(https://s.brightspace.com/lib/fonts/0.6.1/assets/Lato-' + w + '.woff2) format("woff2")', {style:'normal',weight: w}).load();})).then(function() {window.d2lFontsLoaded = true;if(window['D2L'] && window.D2L['FontsLoaded']) { window.D2L.FontsLoaded(); }});})();
-(function(){
-D2L = window.D2L || {}; D2L.LP = D2L.LP || {}; D2L.LP.Web = D2L.LP.Web || {}; D2L.LP.Web.UI = D2L.LP.Web.UI || {};
-D2L.LP.Web.UI.Flags = {
-{"award-enable-copy-workflow":false,"awards-allow-unenroll-bake":true,"awards-ui-fetch-from-orgunit":true,"create-space-experimental-brightspace-object-types":false,"MAV-5508-welcome-widget-create-new":true,"ipsis-sourcesystem-migration":true,"ipsis-provider-oldstandardcsv":false,"ipsis-oneroster-csv-powerschool":false,"ipsis-oneroster-full-sync-implicit-unenrollments":false,"ipsis-esb-lis":false,"hyrl-611-ilp-user-sourcedid-update":true,"hyrl-4009-filter-change-force-full-sync":false,"hyrl-5142-department-location":false,"f17778-oneroster-psur":false,"f19471-gg4l-oneroster-grades-passback":true,"hyrl-1999-oneroster-rest-1p2":false,"hyrl-4029-academic-session-merge":false,"hyrl-2962-cancel-batch":false,"hyrl-3638-user-default-inactive-option":true,"hyrl-3205-psur-firstName-fallback":false,"hyrl-3587-hylia-data-pond":false,"F18735-lti-special-access-ui-feature-flag":false,"F16988-add-to-calendar":true,"advanced-assessments-groups":true,"nim-5386-modify-activity-display-return-to":true,"nim-5395-update-org-unit-id-on-activity-iteration":true,"nim-5243-consolidate-evaluator-and-publisher-patch-actions":true,"nim-5812-modify-aa-face-save-order":true,"nim-5846-lock-publisher-rule-selection-when-submissions-received":true,"nim-5757-aa-learner-candidates-route-improvements":false,"nim-6384-save-actions-complete-after-annotations-processed":true,"PHNX-3264-unavailable-content-visibility-setting":true,"F19162-enable-content-face-releaseconditions":true,"F21912-enable-content-face-competencies":true,"F19163-enable-content-face-standards":true,"IDCS-15-edit-content-file-descriptions":true,"PHNX-1554-enable-refactored-completion-summary":true,"PHNX-2629-access-unlimited-depth":true,"IDCS-283-edit-lti-descriptions":true,"EP-1169-use-content-search":true,"EP-1432-enable-description-scrolling-hovering":true,"EP-1580-enable-url-updating-in-lessons-next-prev":true,"PHNX-2357-user-guided-grade-associations":true,"PHNX-2649-lessons-course-overview":true,"PHNX-3198-respect-availability-window":true,"PHNX-3065-lessons-quicklink-current-window-navigation":true,"PHNX-2766-lazy-load-content":true,"PHNX-2988-lessons-full-date-tooltip-and-aria":true,"PHNX-3063-support-availability-types":true,"PHNX-4040-improved-file-topic-uploader":true,"PHNX-3190-valence-get-user-topic-completions-ignores-classlist-presence":true,"PHNX-4337-lti-multigrades-link-existing-button-fix":false,"EP-1454-enable-module-level-outcome-alignment":true,"PHNX-5006-enable-immersive-lessons-content-view":true,"PHNX-5314-lessons-live-polling":true,"usa-1243-discussions-due-date":true,"FED-3067-Annual-Consumption":true,"cpd-add-record-from-award":true,"fed-54-in-progress":false,"FED-4668-lift-outcomes":true,"FED-4649-content-gen-import-expand":true,"FED-4285-content-templates":true,"LUMI-275-full-screen":true,"LUMI-276-split-view":true,"HAI-1593-content-picker-quiz":true,"HAI-1591-content-picker-ideas":true,"HAI-1592-content-picker-summary":true,"HAI-1821-content-picker-lss":true,"HAI-596-Interventions":true,"FED-6732-quiz-custom-instructions":true,"FED-6876-idea-custom-instructions":true,"rpc-recalculate-all-users-fix":true,"AUT-4438-Grades-Recalc-Restrict-Users":true,"shield-15581-dev-add-bulk-edit-group-names-ui":true,"shield-16289-dev-add-groups-enrollment-pages":false,"oad-include-asn":true,"EP-1443-enable-lightcast-skills":false,"outcomes-set-course-dataset":true,"outcomes-set-org-dataset":true,"EP-1420-enable-createspace-picker":true,"outcome-sets-scales":true,"outcomes-coverage-grid":true,"de44716-lti-iframe-resize-limit":false,"lti-apps":true,"shield-14553-add-semester-department-filters":true,"employee-training-my-courses-page":false,"BORG-5429-Hotspot-Question-Type":false,"BORG-6738-shared-question-components":false,"BORG-7129-true-false-universal-question":false,"PHNX-5035-smart-curriculum-mobile-dvh-viewport-fix":true,"FED-9107-learner-mode-config-choose-content":false,"FED-2493-Docs-PDF":true,"HAI-2170-study-notebook":false,"HAI-3146-modify-knowledge-checks":false,"HAI-3607-lumi-tutor":false,"chrome-unload-deprecation-opt-out":true,"MAV-6565-lms-context-provider-host-head-filter":true,"MAV-5203-createspace-h5p-library":true,"MAV-6452-createspace-discard-changes-dialog":true,"GAUD-8852-use-input-generated-styles":true,"GAUD-8849-Use-input-radio-generated-styles":true,"GAUD-8351-dialog-resize-telemetry":true,"PHNX-3234-dialog-alignment-fix":true,"shield-16276-add-accessible-tooltip-for-edit-in-place":true,"d2l-offscreen-sizeless":true,"GAUD-9564-accessible-grid-navigation-with-up-down-keys":true,"GAUD-8299-core-tabs-use-new-structure":true,"GAUD-10260-get-focusable-fix":true,"GAUD-10337-use-alert-toast-popover":true,"GAUD-10409-prefer-native-general-dialogs":false,"GAUD-10336-prefer-native-fullscreen-dialogs":false,"GAUD-10581-use-intersection-observer":true,"button-toggle-no-change-event-on-prop-update":true,"install-wizard-dialog":true,"unique-reoffer-code":true,"MAV-5974-hwep-delete-config-button":false,"fix-navbar-flicker":true,"PHNX-4309-iframe-modal-dialog-zindex-fix":true,"AUT-4452-Grades-Formula-Special-Characters-HTML-Fix":false},
-function(feature, defaultValue) {
-const featureValue = D2L.LP.Web.UI.Flags.ListedFlags[feature];
-return featureValue !== undefined ? featureValue : defaultValue;
-}
-};
-})();
-</script>
-<meta name="robots" content="noindex" />
-<link rel="icon" href="/d2l/lp/web/faviconView?variant=0&amp;version=1" />
-<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/lib/bsi/2026.10.234/bsi.css" />
-<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/lib/reset-css/1.1.0/reset.css" />
-<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/apps/brightspace/20.26.10.26259/web-packages/D2L.LP.Web.Desktop.css" />
-<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/apps/brightspace/20.26.10.26259/web-packages/D2L.LP.Auth.Web.Desktop.css" />
-<style>
-html { font-size:20px; }
-#ff812c; }
-.d2l_1_0_732 {margin-bottom:30px;}
-.d2l-button-sso-1[primary] {
-#006FBF;
-#FFFFFF;
-hidden;
-normal;
-break-word;
-}
-.d2l-button-sso-1[primary]:hover,
-.d2l-button-sso-1[primary]:focus {
-#005089;
-}
-.d2l_1_1_978 {margin:20px 0px;}
-.d2l_1_3_862 {margin:20px 0px 0px 0px;}
-.d2l_1_4_745 {margin:10px 0px;}
-.d2l_1_8_561 {padding:5px;}
-.d2l_1_9_508 {margin-bottom:1em;}
-.d2l_1_10_14 {background-color:#fefcef;}
-.d2l_1_11_396 {border:1px solid #faecbb;border-radius:4px;}
-.d2l_1_12_435 {background-position:left top;}
-.d2l_1_13_994 {background-image:url('/d2l/img/0/SystemCheck.Main.itemWarning.png?v=20.26.10.26259');background-size: 18px;}
-.d2l_1_14_452 {padding-left:29px;}
-.d2l_1_15_721 {min-height:16px;}
-.d2l_1_16_654 {margin-top:5px;}
-.d2l_1_17_538 {float:right;}
-</style>
-<script>(function() {})();</script></head>
-<body class="d2l-body d2l-typography vui-typography daylight d2l-body-unresolved d2l-body-flex">
-<div class="d2l-body-main-wrapper"><div class="d2l-navigation-s-no-login d2l-navigation-s-main-no-links"><d2l-labs-navigation><d2l-labs-navigation-main-header><div class="d2l-labs-navigation-header-left" slot="left"><d2l-labs-navigation-link-image class="d2l-navigation-s-logo" src="/d2l/lp/navbars/6606/theme/viewimage/15587/view?v=20.26.10.26259" text="BITS Pilani Digital" tooltip-offset="0"></d2l-labs-navigation-link-image></div></d2l-labs-navigation-main-header></d2l-labs-navigation></div><div class="d2l-page-main d2l-max-width" style="background-color: transparent;"><div class="d2l-page-main-padding"><h1 class="d2l-login-portal-heading d2l-page-title d2l-heading vui-heading-2" style="color: #565A5C;">Welcome to LUMEN</h1><div class="d2l_1_0_732"><d2l-html-block html="&lt;p>The Learning Management System of BITS Pilani Digital&lt;/p>"></d2l-html-block></div><div class="d2l-login-portal-flex"><div><div class="d2l-login-portal-login-container"><div class="d2l-login-portal-login d2l-login-portal-bordered"><div class="d2l_1_1_978">
-<button type="button" primary class="d2l-button d2l-button-sso-1" id="d2l_1_2_535" style="width:100%;" data-onclick="D2L.O(&quot;__g1&quot;,0)();">Login using BITS Mail</button></div>
-<div>
-<div class="d2l-sep d2l-sep-s d2l-sep-t" aria-hidden="true"><hr /></div>
-</div>
-<div class="d2l_1_3_862">
-<div class="d2l-messagearea" id="d2l_messagearea"></div></div>
-<form data-method="post" data-scope="" data-location="/d2l/lp/auth/login/login.d2l" class="d2l-form d2l-form-primary" id="formId" onsubmit="return false;">
-<input type="hidden" name="target" id="target" value="/content/enforced/7204-T1-26_MDSDF412/Optimization Methods for Analytics1.vtt" />
-<input type="hidden" name="loginPath" id="loginPath" value="/d2l/login" />
-<div class="d2l_1_4_745">
-<div class="d2l-fieldgroup">
-<div class="vui-field-row">
-<label for="userName" class="d2l-field d2l-label d2l-label-required">Username</label>
-<span class="d2l-validator" id="d2l_1_5_205"></span>
-<input type="text" class="d2l-edit d2l-edit-required" id="userName" name="userName" autocomplete="username" autocorrect="off" autocapitalize="off" />
-</div>
-<div class="vui-field-row">
-<label for="password" class="d2l-field d2l-label d2l-label-required">Password</label>
-<span class="d2l-validator" id="d2l_1_6_825"></span>
-<input type="password" class="d2l-edit d2l-edit-required" id="password" name="password" autocomplete="off" />
-</div>
-</div>
-<button type="button" class="d2l-button" id="d2l_1_7_136" data-onclick="D2L.O(&quot;__g1&quot;,1)();">Log In</button></div>
-</form>
-</div><div class="d2l-systemcheck" style="margin-bottom:1em;">
-<noscript><div class="d2l_1_8_561 d2l_1_9_508 d2l_1_10_14 d2l_1_11_396">
-<div class="d2l-container-icon d2l_1_12_435 d2l_1_13_994 d2l_1_12_435 d2l_1_14_452 d2l_1_15_721">
-<div class="d2l-textblock d2l-textblock-strong">Warning</div>
-</div>
-<div class="d2l-htmlblock-untrusted d2l-htmlblock-wc d2l_1_16_654"><d2l-html-block no-deferred-rendering><div>Either your browser does not support <strong>JavaScript</strong> or it has been disabled through your browser&#39;s settings. The system requires a JavaScript enabled browser, and will be unable to perform the other system checks without JavaScript support.</div></d2l-html-block></div><a class="d2l-link d2l_1_17_538" aria-label="" href="/d2l/systemCheck" title="Learn more about: JavaScript">Learn more...</a>
-<div class="d2l-clear"></div>
-</div>
-</noscript>
-</div>
-</div><div class="d2l-login-portal-image d2l-login-portal-margin"><img class="d2l-image" src="/d2l/lp/login/picture?fileSystemType=Database&amp;fileId=17789&amp;v=20.26.10.26259" alt="" />
-</div><div class="d2l-clear"></div>
-</div></div></div></div><script src="https://s.brightspace.com/lib/jquery/3.7.1/jquery.min.js"></script>
-<script src="https://s.brightspace.com/lib/jqueryui/1.13.2/jquery-ui.min.js"></script>
-<script src="https://s.brightspace.com/lib/bsi/2026.10.234/bsi.js"></script>
-<script>
-window.__elasticRumOnload = function() {if (!window['elasticApm']) return;var apm = elasticApm.init({serviceName: 'LMS',serverUrl: 'https://d2l-elasticrum.apm.us-east-1.aws.cloud.es.io/',transactionSampleRate: 0.1,disableInstrumentations: ['xmlhttprequest','fetch','eventtarget','history']});apm.addLabels({ "orgName": "bitsdigital"});apm.addLabels({ "instanceName": "bitsdigital"});};
-</script>
-<script async="async" onload="window.__elasticRumOnload()" src="https://s.brightspace.com/lib/elastic-apm-rum/5.14.0/elastic-apm-rum.umd.min.js"></script>
-<script src="https://s.brightspace.com/apps/brightspace/20.26.10.26259/web-packages/D2L.LP.Web.Desktop.js"></script>
-</div><footer class="d2l-footer d2l-footer-background-color d2l-footer-top-spacing d2l-footer-top-inner-view"><div class="d2l_1_18_545 d2l-login-language-selector">
-<d2l-dropdown><d2l-button-subtle icon="tier1:browser" class="d2l-dropdown-opener" text="English (United Kingdom)" description="English (United Kingdom) – Select a locale and language"></d2l-button-subtle>
-<d2l-dropdown-menu><d2l-menu label="English (United Kingdom) – Select a locale and language" class="d2l-menu-mvc">
-<d2l-menu-item text="English (United States)" id="d2l_1_19_532"></d2l-menu-item>
-<d2l-menu-item text="English (United Kingdom)" id="d2l_1_20_614"></d2l-menu-item>
-</d2l-menu>
-</d2l-dropdown-menu></d2l-dropdown>
-</div>
-<div class="d2l-footer-default-content"><p>Powered by <span class="d2l-offscreen">D2L Brightspace</span></p><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212 17" fill="#6e7477"><g clip-path="url(#clip0_12_484)"><path d="M66.4982 8.47672C67.9121 7.76855 68.6563 6.50425 68.6563 4.79585C68.6563 2.0192 66.5291 0.293457 63.1045 0.293457H56.1851V16.7133H63.2224C66.786 16.7133 68.9133 15.0223 68.9133 12.1883C68.9119 10.3785 68.0792 9.10086 66.4982 8.47672ZM59.5001 9.87171H63.1045C64.6658 9.87171 65.5266 10.5719 65.5266 11.8415C65.5266 13.1885 64.6841 13.8993 63.1045 13.8993H59.5001V9.87171ZM62.9191 7.16307H59.5001V3.10745H62.8489C63.954 3.10745 65.271 3.44887 65.271 5.07725C65.271 6.4189 64.4356 7.15774 62.9191 7.15774V7.16307Z" /><path d="M84.1186 5.47331C84.1186 2.22588 81.7738 0.288086 77.8465 0.288086H71.2051V16.7133H74.5216V10.7025H77.8732L80.7474 16.7133H84.3784L81.1181 10.029C83.081 9.20618 84.1186 7.63515 84.1186 5.47331ZM74.5216 3.12875H77.8465C79.6367 3.12875 80.6631 3.98362 80.6631 5.47331C80.6631 7.00567 79.6367 7.88321 77.8465 7.88321H74.5216V3.12875Z" /><path d="M89.982 0.286621H86.6655V16.7132H89.982V0.286621Z" /><path d="M100.365 10.153H105.486C105.441 12.5669 103.746 14.0045 100.933 14.0045C97.7635 14.0045 95.7978 11.9441 95.7978 8.62195C95.7978 5.15447 97.7551 2.99663 100.909 2.99663C103.051 2.99663 104.559 3.96352 105.028 5.64792L105.062 5.77061H108.526L108.498 5.58257C108.005 2.25779 104.988 0.0239258 100.978 0.0239258C98.4501 0.0239258 96.2766 0.854788 94.7082 2.42449C93.1398 3.99419 92.3423 6.09469 92.3423 8.55927C92.3423 11.0238 93.137 13.127 94.6408 14.6474C96.1446 16.1677 98.1904 16.9599 100.583 16.9599C102.653 16.9599 104.526 16.2651 105.597 15.1248L105.756 16.7172H108.593V7.33365H100.365V10.153Z" /><path d="M121.852 6.93618H114.691V0.286621H111.375V16.7132H114.691V9.88755H121.852V16.7132H125.169V0.286621H121.852V6.93618Z" /><path d="M127.022 3.21664H131.983V16.7132H135.298V3.21664H140.259V0.286621H127.022V3.21664Z" /><path d="M149.045 7.33628L146.378 6.78682C145.027 6.49208 144.451 5.91461 144.451 4.85703C144.451 3.61407 145.538 2.84322 147.289 2.84322C148.881 2.84322 149.832 3.5874 149.896 4.88637L149.905 5.04507H153.225V4.87437C153.13 1.86833 150.878 0.0012207 147.348 0.0012207C143.697 0.0012207 141.147 2.0337 141.147 4.94505C141.147 7.46431 142.71 9.11937 145.664 9.73018L148.355 10.3036C149.639 10.5704 150.18 11.1185 150.18 12.1441C150.18 13.3737 149.013 14.1365 147.133 14.1365C145.333 14.1365 144.246 13.383 144.225 12.1201V11.956H140.907V12.1267C140.979 15.0874 143.422 16.9999 147.132 16.9999C150.997 16.9999 153.495 14.9994 153.495 11.9027C153.495 9.44478 152.04 7.95109 149.045 7.33628Z" /><path d="M162.633 0.288086H155.753V16.7133H159.069V11.1653H162.633C166.093 11.1653 168.418 8.97546 168.418 5.71603C168.418 2.4566 166.098 0.288086 162.633 0.288086ZM159.076 3.12875H162.055C163.929 3.12875 164.962 4.03963 164.962 5.69336C164.962 7.38976 163.914 8.32464 162.007 8.32464H159.076V3.12875Z" /><path d="M195.457 11.1292C194.916 12.8629 193.21 13.9379 191.011 13.9379C188.019 13.9379 186.086 11.804 186.086 8.48992C186.086 5.14246 187.973 3.06331 191.011 3.06331C193.183 3.06331 194.809 4.13023 195.364 5.91598L195.402 6.03601H198.859L198.826 5.84396C198.234 2.30846 195.191 0.0239258 191.074 0.0239258C186.02 0.0239258 182.625 3.43406 182.625 8.51126C182.625 13.6551 185.886 16.9772 190.935 16.9772C195.021 16.9772 198.211 14.658 198.873 11.2052L198.909 11.0105H195.489L195.457 11.1292Z" /><path d="M212 3.21664V0.286621H201.128V16.7132H212V13.7831H204.443V9.84354H211.212V7.02421H204.443V3.21664H212Z" /><path d="M171.747 13.1084H168.358L166.987 16.7132H170.422L171.747 13.1084Z" /><path d="M179.187 16.7132H182.669L181.299 13.1084H177.862L179.187 16.7132Z" /><path d="M178.07 10.5557C178.731 10.1692 179.317 9.67797 179.804 9.1034L176.459 0.309326H173.196L169.905 8.9647C170.435 9.68813 171.11 10.3053 171.892 10.7811C171.306 9.51549 171.751 7.80176 172.487 6.63748C172.665 7.40433 173.025 7.75508 173.44 8.01781C173.159 7.66706 172.94 7.1376 173.019 6.37875C173.15 5.1438 174.446 4.17424 175.663 3.77548C175.19 4.84239 175.82 5.35451 176.084 6.13736C176.553 5.83715 177.061 5.59555 177.595 5.41853C176.72 7.39899 178.71 7.92045 178.234 10.0289C178.197 10.209 178.142 10.3854 178.07 10.5557Z" /><path d="M-0.000121416 15.6864H1.63004L2.43319 14.6595V2.34326L1.63004 1.31635H-0.000121416V0.290771H7.76878C13.7826 0.290771 16.4377 3.52887 16.4377 8.31666C16.4377 13.1045 12.297 16.7186 7.71964 16.7186H-0.00292969L-0.000121416 15.6864ZM8.08471 15.301C11.47 15.301 12.5905 13.2658 12.5905 9.12618C12.5905 4.77716 10.7876 1.31635 7.64663 1.31635C7.20881 1.31184 6.77309 1.37444 6.35626 1.50172C6.20617 1.55448 6.05984 1.6164 5.91818 1.6871V14.6595C6.42225 15.1449 7.42759 15.301 8.08471 15.301Z" /><path d="M28.1985 9.53424L27.3181 13.6352H17.9106V12.5883C17.9106 12.5883 19.3147 11.1786 19.3456 11.1466C22.276 8.2126 24.5787 5.88005 24.5787 3.46215C24.5787 1.9618 23.9609 1.02691 22.8812 1.02691C21.8014 1.02691 21.1345 2.06582 21.1345 3.62352V4.4117H18.2912C18.2235 4.16672 18.1914 3.9141 18.1957 3.66086C18.1957 1.23496 20.6908 0 23.037 0C25.3538 0 27.6902 1.05358 27.6902 3.56884C27.6783 4.19317 27.5164 4.80668 27.217 5.3626C26.8948 5.96398 26.4922 6.52338 26.0193 7.02699C25.424 7.69381 24.1294 8.72605 22.9837 9.58759C22.0682 10.2784 21.2468 10.8599 20.9561 11.0666H26.5108L27.9935 9.53424H28.1985Z" /><path d="M43.7477 11.5814L42.6455 16.7133H29.7896V15.6837H31.4127L32.2257 14.6581V2.34324L31.4127 1.31766H29.7896V0.288086H38.5806V1.31766H36.4618L35.705 2.34324V15.1783H39.7896L43.3434 11.5814H43.7477Z" /><path d="M27.6259 15.1743V15.8118L26.681 16.7093H17.376V16.0785L18.3209 15.181L27.6259 15.1743Z" /></g><defs><clipPath id="clip0_12_484"><rect width="212" height="17" fill="white"/></clipPath></defs></svg></div></footer><script src="/d2l/portal/js/desktop?v=20.26.10.26259"></script>
-<script>
-D2L.LP.Web.UI.Events.OnInit.AddListener( function() {
-D2L.O("__g1",2)();
-D2L.O("__g1",3)();
-D2L.O("__g1",4)();
-D2L.O("__g1",5)();
-D2L.O("__g1",6)();
-D2L.O("__g1",7)();
-} );
-D2L.LP.Web.UI.Events.OnLoad.AddListener( function() {
-D2L.O("__g1",8)();
-} );
-D2L.OR={
-"__g1":{"0":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Navigate\",\"P\":[{\"_type\":\"url\",\"Url\":\"https:\/\/lumen.bitspilani-digital.edu.in\/d2l\/lp\/auth\/saml\/initiate-login?entityId=https%3a%2f%2faccounts.google.com%2fo%2fsaml2%3fidpid%3dC042gmm8v&target=%2fcontent%2fenforced%2f7204-T1-26_MDSDF412%2fOptimization+Methods+for+Analytics1.vtt\"}]}",
-"1":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Form.SubmitByButton\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_7_136\"}]}",
-"2":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.Authentication.Xsrf.Init\",\"P\":[\"d2l_referrer\",\"\",0]}",
-"3":"{\"_type\":\"func\",\"N\":\"D2L.LP.ActivityBar.Init\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/activityFeed\/checkForNewAlerts\"},120]}",
-"4":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.MessageArea.Init\",\"P\":[\"d2l_messagearea\",{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/validation\/errors\"}]}",
-"5":"{\"_type\":\"func\",\"N\":\"D2L.LP.Globalization.Locale.Init\",\"P\":[{\"_type\":\"anon\",\"DecimalSeparator\":\".\",\"GroupSeparator\":\",\",\"NumberNegativePattern\":1,\"PercentPositivePattern\":0,\"PercentNegativePattern\":0,\"PercentSymbol\":\"%\",\"NegativeSign\":\"-\",\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"UseNativeDigits\":false,\"GroupSizes\":[3],\"IntegerRegex\":\"^([\\\\(-]*(([01234567890123456789]?[01234567890123456789]?([01234567890123456789](,[01234567890123456789][01234567890123456789][01234567890123456789])*)?))[\\\\)-]*)$|^([\\\\(-]*[01234567890123456789]+[\\\\)-]*)$\",\"DecimalRegex\":\"^([\\\\(-]*(([01234567890123456789]?[01234567890123456789]?([01234567890123456789](,[01234567890123456789][01234567890123456789][01234567890123456789])*)))(\\\\.[01234567890123456789]+)?[\\\\)-]*)$|^([\\\\(-]*[01234567890123456789]*\\\\.?[01234567890123456789]+[\\\\)-]*)$\"},{\"_type\":\"anon\",\"InputDateFormat\":\"dd\/MM\/yyyy\",\"Is24HourClock\":false,\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"UseNativeDigits\":false,\"TimeFormat\":\"h:mm tt\",\"AmDesignator\":\"AM\",\"PmDesignator\":\"PM\",\"FirstDayOfWeek\":0,\"ShortMonthNames\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\",\"\"],\"LongMonthNames\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\",\"\"],\"ShortDayOfWeekNames\":[\"Sun\",\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\"]},{\"_type\":\"anon\",\"TextDirection\":1},{\"_type\":\"anon\",\"Culture\":\"en-gb\"},{\"_type\":\"anon\",\"JustNow\":\"just now\",\"OneMinuteAgo\":\"1 minute ago\",\"TwoMinutesAgo\":\"2 minutes ago\",\"MinutesAgoMany\":\"[0] minutes ago\",\"OneHourAgo\":\"1 hour ago\",\"TwoHoursAgo\":\"2 hours ago\",\"ManyHoursAgo\":\"[0] hours ago\",\"YesterdayTime\":\"yesterday at [0]\",\"DayOfWeekTime\":\"[0] at [1]\",\"MonthDayTime\":\"[0] at [1]\",\"Now\":{\"_type\":\"D2L.LocalDateTime\",\"Year\":2026,\"Month\":11,\"Day\":9,\"Hour\":13,\"Minute\":36,\"Second\":29,\"Millisecond\":64}}]}",
-"6":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Initialize\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/login?target=%2fd2l%2flogin%3ftarget%3d%252fcontent%252fenforced%252f7204-T1-26_MDSDF412%252fOptimization%2bMethods%2bfor%2bAnalytics1.vtt%26sessionExpired%3d0&sessionExpired=1\"},\"Error: unable to complete your request.\",{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"flash\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.FlashMessages.RpcReceivePayloadProvider\"},\"session\":{\"_type\":\"func\",\"N\":\"D2L.PT.Auth.SessionTimeout.RpcReceivePayloadProvider\"},\"messageArea\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.MessageArea.RpcReceivePayloadProvider\"},\"OR\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.ObjectRepository.RpcReceivePayloadProvider\"},\"JS\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.RpcReceiveJsPayloadProvider\"},\"CSS\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.RpcReceiveCssPayloadProvider\"},\"BSI\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Bsi.RpcReceiveJsPayloadProvider\"},\"ariaMessages\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Aria.RpcReceivePayloadProvider\"}}]}",
-"7":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.InlineHelp.Init\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/inlineHelp\/6606\/help\"}]}",
-"8":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Focus\",\"P\":[{\"_type\":\"id\",\"Value\":\"userName\"}]}"}
-,
-"d2l_1_5_205":{"0":"[\"userName\",{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Edit.ValidateRequired\",\"P\":[\"userName\"]},\"Username is required.\",null]"}
-,
-"d2l_1_6_825":{"0":"[\"password\",{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Edit.ValidateRequired\",\"P\":[\"password\"]},\"Password is required.\",null]"}
-,
-"password":{"enter":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Form.Submit\",\"P\":[{\"_type\":\"id\",\"Value\":\"formId\"},false],\"D\":true}"}
-,
-"d2l_1_19_532":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Connect\",\"P\":[\"POST\",{\"_type\":\"url\",\"Url\":\"\/d2l\/login\/locale\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"localeId\":1}],\"D\":true}"}
-,
-"d2l_1_20_614":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Connect\",\"P\":[\"POST\",{\"_type\":\"url\",\"Url\":\"\/d2l\/login\/locale\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"localeId\":3}],\"D\":true}"}
-};
-</script>
-<script>D2L.LP.Web.UI.Html.Bsi.Init('prod', 'https://s.brightspace.com/lib/bsi/2026.10.234/', ['unbundled/navigation.js','unbundled/navigation-main-header.js','unbundled/navigation-link-image.js','unbundled/html-block.js','unbundled/dropdown.js','unbundled/dropdown-menu.js','unbundled/button-subtle.js','unbundled/menu.js','unbundled/menu-item.js'], true);</script>
-</body>
-</html>
+Purple.
+Okay.
+I have started recording.
+Yes, sorry guys, actually there was a confusion.
+Because this was the class not on the regular day.
+It was like.
+I got a message that the class will begin at 7:45, but.
+Now, 7:45 to 8:45.
+But now it is, I don't know, Akash called me and said, he told me that the class is at 6.30. So, sorry about that, don't worry, but whatever the portion that we have missed it out, I'll still go slowly. If required, I'll take an extra class, so don't worry about all these things.
+Bear with me for 2 minutes, and I will share the screen.
+That's good.
+So, sometime… last time I told you, I explained you about the artificial variable and all that.
+And, I'm going to do that first, and then we will actually, you know, get into the today's topic of duality. So, probably I may not be able to go through all the things, but we will definitely cover at least duality part of it. And whatever left out, I assure you that I will take next time.
+So, sorry for, or apologies for the late joining and confusion.
+That you have to wait for a long time.
+Let me share the screen.
+So, let's… because…
+Okay.
+So let me actually talk a little bit about the basic part first and then.
+Last time, there was… someone asked me the question, and I told him that definitely I will explain.
+So let's consider a simple problem, so let me do it like this, let's go slowly because.
+Okay.
+Let me consider a simple problem of maximization, right? So let's take this problem.
+of maximization. Maximize… maximize Z equal to 5X1.
+Plus 3X2.
+Subject to… Oh!
+3X1.
+plus 5X2.
+Less than equal to 15, and phi X1.
+plus 2X2.
+less than equal to 10, and obviously, I'm going to impose the condition on this
+This is objective function, these are constraints, and
+These are X1 and X2 are the decision variables.
+Okay.
+So.
+when you… plot this in a in a using graphical method.
+Good.
+So, you have to plot these inequalities, and then you have to check the corner points. So, basically, let's assume…
+That the first line, if you look at the first line very carefully, it would take x2 equal to 0, you get x1 equal to 5.
+So this will be 5, 0.
+And if you take XO equal to 0, you get 0 comma 3.
+So this is your first line, right? And obviously, I'm going to include both. So X1… so my region that I'm going to…
+Say that this is going to be included.
+And this is the first line, and the second line is…
+If I put X equal to 0, I'll get 2.
+2X2 equal to, you know, if I put X2 equal to 0, I'll get X1 equal to 2, so this 2 comma 0 somewhere else.
+Okay. And the next one is, obviously, if I put x2 equal to 0, I get 0 over 2.
+Right, so these are the kind of things that we usually have.
+So these are… these lines… I'm just taking a problem, but…
+Usually what we find is something like this. Okay, so give me a break for a moment.
+Usually, what we find…
+Unfortunately, this line does not meet this condition, so… but usually what we find is you have something like this.
+One line goes like this, and other line actually, you know, kind of…
+Comes like this, and then we get this corner… corner points, 4 power corner points.
+For the region.
+Sorry, I took a wrong, thing.
+Wrong questions. So, this is our region.
+Sure.
+For this, so…
+The solutions, basically, last time you have seen, that these four corner points are solutions, basic feasible solutions. Any point inside this is also a basic feasible solution, so this is a basic feasible region.
+Okay.
+Now, if I write the standard form of this, standard LPP form, standard LPP form. It will look like max semi Z equal to.
+5X1.
+plus 3X2.
+Such that… or, sorry, subject to…
+3X1 plus 5X2. Now you have to add a slack variable, which is S1.
+That is, to make equality.
+And you have to add another Slack variable.
+5X1 plus 2X2.
+Plus S 2 equal to 10 and now.
+all these… These variables, X one, X 2, S one S. 2.
+are going to be Now, the question is, so first we start with
+What is initial basic feasible solution?
+initial Basic.
+feasible solution.
+Okay, so what we do that for this to get the initial basic feasible solution, we put X one.
+And X 2, all these decision variables to be equal to 0.
+Okay.
+So, if you put in this standard form, okay, if you put S1 and X1 and X2 to be 0, you will get S1 to be 15, and S2 to be 10.
+Okay, S1 to be 15, S2 to be 10.
+So… We can have this as.
+a basic feasible solution.
+Basic.
+Feasible.
+solution.
+Okay.
+So, yes, so I mean, I can say, okay, my corner starting point is 0,0, and that's perfectly fine.
+Now, if I take another problem, so let's take another problem, okay, so let's say
+It's again the same problem, so maximize.
+Z equal to… X one plus X two.
+Maximize Z equal to
+Excellent.
+Maximize Z equal to… What happened?
+Maximize.
+Z equal to X1 plus X2.
+With, subject to… X1?
+Plus 2X2 less than equal to 3.
+Now 2 X 1 minus 3 X 2.
+Now see, I'm changing it. I'm writing it greater than equal to 3 and X1 and X2 greater than equal to 0.
+Now, if you write it in the standard form, if you write it in the standard form, you'll get
+Maximize Z equal to X one plus X two.
+X one subject to.
+X 1 plus 2 X 2 plus S 1 equal to 3.
+Because it was less than equal to, but now here.
+Look at the second condition.
+You have to write minus S two.
+Equal to 3.
+Because it is greater than equal to make it equal to subtract something, okay.
+And… The other condition we have X one X two S one S two.
+greater than equal to Z. Okay, that's true.
+Now.
+Suppose I start with the corner, X1 equal to 0, X2 equal to 0. Let's say there's a corner, and I start with the corner, X1 equal to 0, X2 equal to 0.
+Now if I put XO equal to 0 X2 equal to 0 in this one I will get.
+S 1 equal to 3 and minus of S 2 equal to 3 that will give you.
+S two equal to minus three.
+Now, this is the initial basic feasible solution, but we cannot call it initial basic feasible solution, because S1 is greater than 0, but S2 is less than 0.
+Okay, so minus 3 is not greater than 0. Therefore, keeping X1 equal to 0, X2 equal to 0, we are not getting any basic feasible solution.
+And therefore, once you are not able to get the basic physical solution, you cannot apply simplex method.
+To apply the simplex method, you need something called basic feasible solution first.
+Here the simplex method cannot be applied.
+It is not possible to apply.
+Simplex method.
+Now what to do?
+Okay.
+There's no use. You cannot apply simplest method. So there's a… so there is a…
+So there's a way to deal with this.
+That is called… Using artificial variables.
+What are… what is the role of artificial learning?
+Okay, so the role of artificial variable.
+Is to get.
+Initial basic feasible solution and how would you achieve it I'll tell you.
+Initial basic feasible solution.
+Okay.
+Actually the phasing is so far as the physical meaning of artificial variable is concerned.
+There's no meaning. Please understand.
+Okay, this, this artificial variable as such has no meaning in the problem.
+Physical meaning is zero. No.
+But.
+This is to be introduced just to get the basic feasible solution, just to get that corner-like fit.
+Okay? Because when you look at the…
+The constraint which is greater than equal to it's very difficult okay so now.
+Please understand.
+We introduce artificial variable in two cases, whenever constraint are greater than equal to, or whenever constraint are equal to. So, in this case, we use artificial variable.
+In this case, we always use Slack video.
+Okay, so let's take a simple problem. For example, maximize Z equal to minus 7.5X1, let's say, plus 3X2, subject to, let's say, 3X1 minus.
+X 2, let's say greater than equal to 3 and X 1 minus X 2.
+X. One minus x. 2.
+Is basically greater than or equal to 2.
+Okay, so this is a simple problem.
+Please note, this is a maximization problem. In maximization problem, it is expected that you have less than equal to inequality, okay? Whenever you write any maximization problem.
+It has always less than equal to inequality. Constraints and minimization problem always have greater than equal to construct. But this is a maximization problem, and it has a greater than equal to construct.
+So when you write it in a standard form, how does it look like a standard form? So it will look like maximize.
+Maximize.
+Z equal to minus 7.5 X 1 plus 3 X 2 subject to now look at this.
+3 X 1 minus X 2 now here because it is greater than equal to you have to subtract something.
+S one equal to three.
+And here X one minus X two minus S two equal to two.
+Okay, but keeping this, because now if…
+If you put X X 1 equal to 0 and X 2 equal to 0 if you try to start with some corner.
+You will get the… you will not get initial basic feasible solutions. So here, one trick we play, what we do, rather, is this. We do… instead of writing our
+Constraint it like this, we write it like this, plus some A 1 equal to 3.
+And X one minus X two minus S two plus some A two equal to.
+Okay, so I'm introducing the artificial variable.
+And the idea is all this X1, X2, S1, S2, A1, A2, they're all greater than equal to zero. Okay, so this is the way we introduce the artificial variable to just to get the initial basic feasible solution.
+Okay, otherwise it will be very difficult to do that. One more problem I would like to tell you.
+Okay, so suppose I have a simple problem like this.
+Z equal to… Minus X one.
+Plus 2 X 2.
+Plus 3 X 3 subject to now look at the conditions.
+Minus 2 X 1 plus 3 X 3.
+3X3 equal to 2.
+See I'm writing equality no.
+3 X 2.
+Plus 4X3.
+equal to one. So even if you have equal to sign, please understand, to get the initial basic feasible solution, we have to write this constraint in this form.
+Minus 2X1.
+Plus 3 X 2.
+Plus A one equal to two.
+And 3X2 plus 4X3 plus A3 equal to 1. Okay? So there is no surplus or slack variable whenever you have equal to sign. Whenever either you have greater than equal to sign or less than equal to sign. For greater than equal to sign, you have surplus.
+For less than equal to sign, you have Slack.
+Okay, but if there's a mixed condition, you have to introduce some way or the other artificial variable, or even if… if it is equal to sign in the constraint, if it is equal to sign in the constraint, you can simply add
+The the this one the artificial that's the one.
+Now, actually, What happens is…
+Now, once you add the artificial variable, no, once you add the artificial variable, let's say you have added artificial variable here, now this problem you can easily solve using simplex method. Otherwise, you cannot solve it.
+Okay, you can easily solve this problem using simplex method. Once you introduce the artificial variable, the objective function slightly changes. Then we write objective function as minus 7.5 times x one.
+Plus 3 times X 2.
+And now, what we do is we write
+Whenever it is a problem of maximization.
+We add… A positive number M a large positive number M.
+a large positive number M
+This way. And how many artificial variables I have added? A1 and A2. Minus M times A1. This is called penalty, and I don't think so you have this method, but let me check. Minus M times… this is going to become your objective function, and rest… now, this number… this M could be anything. M could be, you know, thousand…
+M could be, 1 million, whatever you want.
+M could be any number, okay? Now, there are two ways to solve this problem whenever you introduce the artificial variable. One is called Big M method, this is what we have done, and one is called two-phase method.
+Okay, and we will see that little later. But I want you to introduce, last time it was… somebody asked me the question why it is needed to
+add the artificial variables, so whenever it comes to the minimization problem, or some problems with this kind of, you know, constraint, you know, opposite constraint, it is very difficult to find the corner point. To get that corner point and a basic feasible solution, we can always add these artificial variables. Is that… is it clear now?
+I'm not sure whether… Somebody asked me last time the artificial variable.
+Can you write in chat also?
+If you are clear about it.
+Okay.
+Fine.
+So please note, it's very important that given optimization problem must be in the canonical form.
+Okay, given optimization problem must be in the canonical form.
+So what do you mean by canonical form that
+you are whenever solving a maximization problem. See, canonical formula plays very important role.
+When you are solving a maximization problem, you must have constraint looks like this, otherwise it's a problem, okay? Constraint must be less than equal to.
+And whenever you are solving minimization problem your constraint must be.
+All constraint must satisfy this.
+If any of the constraint does not satisfy this, then you have to multiply it by minus sign and get it done some way or the other.
+You know, or otherwise add the artificial variable there.
+So this is very important and the third thing is that your all decision variables.
+Your all decision variables.
+Must be greater than or equal to 0 these are the constraints that we must be able to.
+Form okay now let's move to the today's topic called dual form.
+Of, you know, this thing.
+Primal and dual form, so we'll talk about it. Just give me a second.
+Don't have the slides, I don't know whether I have slides today.
+Hello, Milan, sir.
+Oh.
+Yes, with due respect, sir, can I, interrupt you for 2 minutes, sir?
+Please, please.
+Okay.
+Okay, actually, this is Studio Learners, Dell Learners.
+There's a poll I'll be launching now. Kindly take this poll, it will just take 1 or 2 minutes, and…
+Let us know.
+Once you're done with the poll, okay? I've just launched the poll.
+I have to start the pool after the class, you're saying?
+No, no, sir. The poll is just for this today. I'll take this.
+Once the poll is done.
+I will inform you and you can start.
+Okay, okay. So, okay, let the poll go first, and then I'll start, right? Okay, so…
+I'll let you answer.
+Okay, okay.
+He said, so there's just one laundry lift.
+Oh.
+I think, today's poll, I don't know, I mean, we are started late already.
+So,
+Sarah.
+Yes, sir, I think you can continue, sir. Thank you for your time.
+Sorry for the interruption, sir, actually.
+Okay, okay.
+Okay.
+Fine, so I will start, then I will take you to the problems.
+By any mean, I'm… anyway.
+Sir, actually, I don't think 100% will be participating. 90% has already participated, so you can continue, sir.
+Okay, okay.
+Thanks.
+Okay, fine. So basically, there is something called primal problem.
+And there's something called the dual of the primal.
+Okay.
+So far we have seen that the problems like Z equal to maximize.
+You know, so sorry, maximize my bad, maximize.
+Z equal to some objective function.
+And subject to certain construct.
+Okay, usually you're seeing, when it comes to maximize, we used to, you know, maximize the profit.
+And given the products, okay?
+So.
+Actually, what we try to do is, we try to find the production plan that gives the highest profit within the available resources, okay? So these constraints are the available resources. May it be a…
+I know, labor… May be a time, it can be anything.
+Labor or time, it can be anything.
+Okay.
+But so far, the dual is concerned.
+Okay.
+Now we try to.
+Optimize or maximize the profit.
+Given the resources.
+What Dwell says.
+Do it if you are.
+Optimizing the profit, or maximizing the profit, Using certain resources dual says.
+Minimize the total assigned value of the resources. That's, that's very true.
+Okay.
+So whereas the mac the primal actually maximizes the profit.
+The dual minimizes the value.
+assigned to Available resources.
+Okay.
+And not the amount of resources used, please understand. Okay, so this is the relation between primal and dual.
+So how does this relation looks like? So let's say
+If you look at this slide very carefully.
+So there's a product A, okay, and there's a product B.
+Product A.
+$4 profit.
+And what unit?
+And the constant says one labor is available and two machine levels hours are available.
+For product B, we have $3 profit.
+One labor available, and one machine hour available.
+So available labors are 40 hours and the machine hours are.
+60. So, your job is to maximize the profit. So, let's say we are making A units of product A, and B units of product B, so we want to maximize this, and the constraints are total labor hours 40, and total machine hours 60. 8B greater than or equal to 0.
+Now this is we are trying to maximize the profit but now.
+We are interested in the resources also.
+So, what we're trying to do is… We will call this as.
+Y1 This.
+As Y 2 right so what we write.
+As a dual and as I told you.
+In dwell we minimize the resources so the resources are labor hours and machine hours okay suppose let P be the value of the labor hour.
+Per label hour and QB the value of per machine hour.
+Okay, what we're trying to do, we're trying to minimize
+W equal to 40 P plus 60 Q.
+So here you can see… I'll tell you what is that.
+Subject to the constraint.
+So we'll take these, take these coefficients here and take these coefficients. P plus 2 cube greater than equal to 4, it's a minimization problem, and P plus 2 greater than equal to 3. Okay, so that's the whole idea.
+So let me give you one thing that how would you exactly convert the any parameter problem into dual problem and then we will try to solve one problem.
+Okay, so for example.
+Suppose I have a simple problem like this. Let's understand dual very carefully, then I'll tell you other way to actually do it.
+Okay, so suppose I want to, you know.
+Let's take a simple problem. Let's say…
+Let me give you a simple problem.
+So, let's say, primal problem first.
+Maximize… Z, which is equal to…
+X1 minus… please be careful about this one.
+X2.
+X 2 plus X 3.
+And let's say the constraint is.
+X1 plus X2 plus X3 less than equal to 10.
+First constraint, second constraint is 2X1 minus X2, let's say minus X3.
+less than equal to two And 2 X 1.
+minus 2X2 minus 3X3 less than or equal to 6. Okay, so this is the primal problem. I want to write it as a dual problem, okay? I want to write it as a dual problem. So, how would you write it as a dual problem? While writing a dual problem, so primal problem is a problem of maximization.
+The dual problem will be a problem of minimization.
+Please note.
+So minimal so call this as first as Y one.
+Call this as Y2.
+call this as Y. There are 3 constraints. So in minimization we will have 3 decision variables. If there are 4 constraints, we could have 4 decision variables. Right?
+So now the problem is a minimization problem.
+And its dual will become minimize Z equal to.
+Minimize Z equal to look at the constraint.
+Look at the construct.
+Multiply 10 times Y 1.
+10 times Y 1.
+Plus 2 times Y2.
+Plus 6 times Y3.
+Okay, subject to…
+No.
+Just have a look at the coefficients here also. These coefficients are also important.
+Okay, now we'll write the first constraint.
+To write the first constraint, we will take the first column.
+Okay, and we'll write the constant in terms of Y only.
+Okay.
+And this, this also you remember. Please understand. Okay, now this is a minimization problem. Constraint will be greater than equal to.
+Okay now the first constraint will be 1 times Y 1.
+Plus 2 times Y 2.
+Plus 2 times Y3.
+Greater than equal to this 10.
+Okay, similarly, next is.
+1 times Y 1 minus one times Y two Y2.
+Minus 2 times Y3.
+Greater than equal to the next number.
+Excuse me, sir.
+She will not be 10 or 1.
+One, one. I had my back, my back.
+And the third one.
+Is this, this, this, okay? So it'll be Y1.
+minus Y 2.
+Minus 3 Y 3.
+Greater than equal to.
+This number 3.
+Okay, so this is a minimization problem.
+Now, I can actually give you one more problem, and you will write it, and you will tell me how it would look. Okay, so that would be, that would be great if you're telling me about it. So let me write down one more problem.
+Okay, so Z equal to… You can write it in chat, I'll wait for 2 minutes. 3X1 minus 2X2.
+Plus 4 X and then I will tell you other way simply you have to take transpose and you are done.
+Subject to.
+Phi X one Plus 5 X 2.
+Plus 4 X 3.
+Now greater than equal to 7, so this is a minimization problem.
+Okay, you have to write this problem.
+Of maximization. Please understand, this is a different problem.
+Yes, last time problem was maximize, and we convert it to dual as a minimize. Now, this is a minimization problem, you have to convert it to dual as maximize, and this is an interesting problem, please note.
+Okay, this is not something like…
+We are spending time behind something. This will give you something interesting.
+Okay please look at every inequality.
+And then only write it.
+I'll give you 2 minutes to write.
+Look at all constraints, okay? I'm giving you a number of constraints to be high here, but that's okay. Sometimes some problems are to be learned.
+Using bigger… a bigger model.
+Be careful.
+Okay, your time starts now.
+Write this as.
+This is a minimization problem. Write this as maximization problem.
+Okay, and be careful.
+about it.
+I'll explain after 2 minutes, don't worry.
+Think upon it, then write. Don't blindly write it, okay?
+Don't blindly write it.
+Please think upon it first.
+Do not blindly write it. Think upon it and then write.
+and once you post it, I will ask you a question.
+Okay.
+So… I will start, but anyway.
+So, first look at The problem very carefully.
+Okay.
+So we want to maximize, okay? So maximize, first of all, you need to be very careful whether this minimization problem is in canonical form or not.
+Then only.
+This is a primal problem, right? And we want to write it as a dual.
+Right, so first of all, in the primal problem, check whether this is in canonical form, okay, so if not.
+Create it in canonical form, so what do you mean by canonical form, canonical form says.
+Minimization problem constraints are always.
+Greater than equal to.
+Maximization problems are always maximization problem constraint are always less than equal.
+Okay, this is the important thing.
+So, first of all, this is a minimization problem. Look at every constraint.
+Look at every constraint. Look at the first constraint. Okay, it satisfies. Look at the second constraint. Satisfies. Look at the third constraint very carefully. Third constraint is not the constraint for the minimization problem.
+Constraint for the minimization problem is always greater than equal to. So this problem itself is a problematic. It is not in the canonical form. So this is okay, this is pass, this is pass, this is fail, this is pass, this is pass.
+So, first of all, it is important for us to write down it in proper canonical form. So, how would you write it in canonical form? To write it in canonical form, I will not write it dual right now. First of all, I will write… rewrite the primal problem as it is, in slightly different way. So, it's minimize…
+Z equal to… 3 X 1 minus 2 X 2 plus 4 X 3.
+with subject to 5X1 plus 5X2 plus 4X3 greater than equal to 7.
+6X1 plus X2 plus 3X3 greater than equal to 4. Now, look at the third constant. Please note, if A is less than B,
+If A is less than B, and both A and B are positive, then minus A
+Is greater than minus B, okay, so to change this.
+Or to change this inequality.
+Other way, you have to multiply it by minus sign. So I'm going to multiply by minus sign to the third constraint. It will give me minus 7X1 plus 2X2 plus 5X3 greater than equal to minus 10.
+And the next one, X1 minus 2X2 plus 5X3 greater than equal to 4. And the next one is 4X1 plus 7X2 minus 2X3 greater than equal to 2. Now, this problem is a proper canonical form.
+Okay, once it is in canonical form, now we can actually do
+We can actually write its dual, okay, so let's write this dual properly.
+Now we'll write its dual. Somebody has answered the question. Let me see who is that.
+Perfect, okay.
+Less than or equal to 3.
+Just a moment.
+Minus 2.
+and 4.
+Correct, exactly.
+Wonderful.
+I think, yeah.
+So…
+Somebody has again answered the question. Yeah, Lakshmi has answered the question. Nasa has also answered the Push…
+But slightly… Rasman is doing, I said, you're making some mistake.
+Can you check you wrote it correctly?
+But I'm not sure about whether it's my confusion or whether I wrote it like that.
+Maybe, but anyway, so two people got the answer, and I'm going to explain you again, same answer.
+Okay, so be careful. Now, once our problem is in canonical form, now, as I told you.
+You call this as Y1.
+You call this as Y2.
+To call this as Y3.
+You call this as Y4. Purposely, I'm taking so much, because otherwise you will not understand. Call this as Y5. And obviously, here, all these X1…
+X2 greater than or equal to 0. That is always there. And our whatever
+All these whatever new variables we are introducing for duality.
+They are always going to be greater than equal to 0 2. So how would you start about it? Okay.
+Now, the problem will become maximize.
+Z equal to, okay? Maximize Z equal to.
+7 times Y1.
+Maximize Z equal to.
+7 times Y1.
+Plus.
+4 times Y 2.
+What is happening?
+Okay.
+Plus 4 times Y2.
+Minus 10 times Y 3.
+Minus 10 times Y3.
+Plus 4 times Y4.
+Plus 2 times 55.
+Okay? So we want to maximize this. Subject to the constraint. Now, have a look at the constraint. Look at the first column.
+There's a one here.
+Okay, and look at this number.
+This, we are going to connect. How would you connect it? You are going to connect Very…
+Carefully about this, you need to be very careful about this.
+So.
+Yeah, can somebody tell me how do I write now?
+Already written.
+So, 5 times?
+Y1 plus 6 times Y2 minus 7 times Y3 plus Y4 plus 4 times Y5 and this will become less than equal to your first number 3.
+Okay.
+Now, the next column. I'll write two columns, and then rest of the things you write.
+5 times Y1 plus Y2 plus 2Y3 minus
+2Y4 plus 7Y5 less than equal to minus 2.
+Okay, so we'll have only 3 inequalities. Here we have 5, but here we have 3 inequalities, because there are 3 decision variables.
+Okay, so, and the last one, I will write it for you.
+4 times Y1 plus 3 times Y2 plus 5 times Y3 plus 5 times Y4 minus 2 times Y5 less than equal to
+4. Okay, so this is the dual part of it. Now, there's one more way to solve the dual, to write the dual.
+which is again simple. And I'm going to explain that, and then we'll stop. I'm really sorry for today. I I joined late again. But that's sometimes only, you know. Confusion was there.
+Yeah, so let's… Let's try to do it.
+Let me show you the dual.
+One way to write down the dual is this.
+Okay.
+So let's take this problem. And now this is the simple, simple way to understand. Well, okay, so let's say, this is a minimization problem. And please note, we usually solve maximization problem. Okay, given any minimization problem, our 1st job. 1st thing you have to remember.
+Is it in canonical form, proper form?
+Is it in canonical form?
+Okay, if what do you mean by that is all greater than all signs are greater than equal to.
+If they are greater than equal to, we approve. Okay, this is in canonical form. Okay, if it is not, then you have to multiply it by minus sign and create it in canonical form.
+Second thing.
+Second thing to go about it is, simply write down the matrix like this, okay? Second way. See, I'm showing you other way to convert it into dual form.
+So what you do is you write down the matrix 1 5 1 5.
+2, 2, like this, okay? Write down the const… constraint matrix, 9, 10, 9, 10, and then 8, 16, 8, 16, and 0, okay? This… so this… this guy will be 0, okay? So how did you get this matrix? You look at the first constraint.
+Write the…
+Coefficient of the first constraint, then go with the next constraint, write the coefficient of the next constraint.
+And then look at your objective, write the coefficient of the objectives, and write 0 here.
+Okay, and this will create your… Matrix for a minimization problem.
+Now, so you can, you can treat this matrix like this, 1, 5, 9.
+2, 2, 10, 8, 6, 0. Now, there is a concept of transpose of a matrix. If you take a transpose of this, have a look at it.
+Transpose means turning
+columns into rows, or turning rows into columns. So I'll write first column as a first row.
+I'll write second column.
+I will write the second column.
+As a second row.
+I'll write the third column as a third row.
+Okay.
+That's all. And now, I will rewrite my original problem of taking transpose into this form of maximization. So I'll show you how it happens. Pretty easy, okay? So let me start.
+So, here.
+Transposer matrix, exchange row and columns.
+M by N matrix will become M by N matrix. So this is your matrix now. New, new transpose matrix, right?
+And now, you can always do like this. Once you write down the matrix.
+Once you got the matrix, now this is going to be your, you can write it as 9Y1 plus 10Y2. Please, I'm sorry, Y1 and Y2 are used, my bad, and some maximization, so we'll use X1, X2, 9X1.
+Plus 10X2.
+Which is Z.
+maximization problem.
+Subject to the first constraint.
+Subject to… X1 plus 2X2 less than equal to 8, and second constraint
+5X1 plus 2X2 less than equals to 16.
+Okay? And this is the simplest way to write it.
+Now, to solve this, see, you are given a minimization problem.
+And we cannot solve minimization problem in a simple way.
+So, what we do is, we basically create this matrix out of a constraint, And object to.
+Then we take a transpose of that matrix. Once the transpose is created, the same problem we write it using X1, X2.
+And once you write it, you can easily solve this problem now using graphical method, or you can solve it using, you know.
+So you can plot these lines.
+You can plot these lines writing equal to sign.
+And.
+Look at the four corner points.
+Evaluate the objective at the four corner points.
+Okay, and you see this is the 4 and this is 1, so Mac.
+So this is 4 1. Okay, so basically, when you solve it.
+You will have the minimum occur at 4,1. So let me show you the graphical methods you already know.
+Okay, and this is basically, you know, when it comes to solving this, you know, so, sorry, sorry, I just… I just missed it out, not… not this one. Actually, minimization problem, these are the constraints, and in minimization problem, you have all of these points.
+Which are basically greater than equal to inequalities.
+And all these points, all these points are basically, you know, they will not satisfy to
+of the minimization condition, but this is the corner point where you will reach to the minimum. As last time, I'm telling you that for approaching minimum, we come from this direction, and for approaching maximum, we go from this direction to this direction, okay? We'll try all these directions.
+And actually, what we find is, this is the same point here.
+Will be a minimum and same point here will be a maximum okay so the maximum point if you try to solve.
+will be given.
+Yeah, so 2, 3. Okay, so at the same point.
+Same point, I mean to say, the minimum value, the value, maximum value, 48. And the minimum value is 48. The same thing here, okay? So, basically, the maximum of this will be the minimum of this. So, using graphical method. You can use it, use the other method called
+The, you know, the simplex method.
+Convert it to maximization problem, look at the pivot, and then keep on doing row operations, get the identity matrix there.
+And see whether you can solve it.
+Using the same method here.
+I think now, guys, give me time, okay? Next time, we'll actually do it in great detail.
+So next time, be on time. I'll be also joining time.
+So we'll stop here for today, okay? And yes, we'll join next time. Thank you so much.

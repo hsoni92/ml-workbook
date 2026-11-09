@@ -1,156 +1,637 @@
-<!DOCTYPE html>
-<html data-userprofile-context="{&quot;hasProfileCardAccess&quot;:false}" data-mathjax-context="{&quot;renderLatex&quot;:true,&quot;outputScale&quot;:1.5}" data-logging-endpoint="/d2l/lp/logger/provision?sessionToken=NjYwNiw" lang="en-gb" data-lang-default="en-gb" data-intl-overrides="{&quot;number&quot;:{&quot;patterns&quot;:{&quot;decimal&quot;:{&quot;negativePattern&quot;:&quot;-{number}&quot;},&quot;percent&quot;:{&quot;positivePattern&quot;:&quot;{number} %&quot;,&quot;negativePattern&quot;:&quot;-{number} %&quot;}},&quot;symbols&quot;:{&quot;decimal&quot;:&quot;.&quot;,&quot;group&quot;:&quot;,&quot;,&quot;negative&quot;:&quot;-&quot;,&quot;percent&quot;:&quot;%&quot;},&quot;groupSize&quot;:[3]},&quot;date&quot;:{&quot;hour24&quot;:false,&quot;calendar&quot;:{&quot;firstDayOfWeek&quot;:0,&quot;dayPeriods&quot;:{&quot;am&quot;:&quot;AM&quot;,&quot;pm&quot;:&quot;PM&quot;},&quot;months&quot;:{&quot;short&quot;:[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;,&quot;Sep&quot;,&quot;Oct&quot;,&quot;Nov&quot;,&quot;Dec&quot;,&quot;&quot;],&quot;long&quot;:[&quot;January&quot;,&quot;February&quot;,&quot;March&quot;,&quot;April&quot;,&quot;May&quot;,&quot;June&quot;,&quot;July&quot;,&quot;August&quot;,&quot;September&quot;,&quot;October&quot;,&quot;November&quot;,&quot;December&quot;,&quot;&quot;]},&quot;days&quot;:{&quot;short&quot;:[&quot;Sun&quot;,&quot;Mon&quot;,&quot;Tue&quot;,&quot;Wed&quot;,&quot;Thu&quot;,&quot;Fri&quot;,&quot;Sat&quot;]}},&quot;formats&quot;:{&quot;dateFormats&quot;:{&quot;short&quot;:&quot;dd/MM/yyyy&quot;},&quot;timeFormats&quot;:{&quot;short&quot;:&quot;h:mm tt&quot;,&quot;medium&quot;:&quot;h:mm tt&quot;,&quot;full&quot;:&quot;h:mm tt ZZZ&quot;}}}}" data-oslo="{&quot;batch&quot;:&quot;/d2l/api/oslo/batch?languageId=11&quot;,&quot;collection&quot;:&quot;/d2l/api/oslo/collection?languageId=11&quot;,&quot;version&quot;:&quot;W/\&quot;20.26.10.26259.0\&quot;&quot;}" data-timezone="{&quot;name&quot;:&quot;India - Kolkata&quot;,&quot;identifier&quot;:&quot;Asia/Calcutta&quot;}" data-terminology="{&quot;outcomes&quot;:&quot;outcomes&quot;,&quot;educator&quot;:&quot;educator&quot;,&quot;moduleHierarchy&quot;:&quot;unit&quot;}" data-app-version="20.26.10" dir="ltr" data-telemetry-endpoint="https://prd.ap-south-1.telemetryservice.brightspace.com/api/events/" data-cdn="https://s.brightspace.com/apps/brightspace/20.26.10.26259/" data-global-context="{&quot;orgUnitId&quot;:&quot;6606&quot;,&quot;orgId&quot;:&quot;6606&quot;,&quot;userId&quot;:null}" data-he-context="{&quot;activeOrgEnrollment&quot;:false,&quot;applySandboxing&quot;:false,&quot;bcsansFontAllowed&quot;:false,&quot;contentStyler&quot;:false,&quot;contentStylerCssOverride&quot;:&quot;&quot;,&quot;enableLmsPathChecking&quot;:true,&quot;generativeAIEndpoint&quot;:&quot;&quot;,&quot;h5pContext&quot;:null,&quot;insertElement&quot;:false,&quot;insertPractice&quot;:false,&quot;layouts&quot;:false,&quot;mathRenderScale&quot;:1.5,&quot;maxFileSize&quot;:2147483648,&quot;mentions&quot;:true,&quot;orgUnitId&quot;:&quot;6606&quot;,&quot;orgUnitPath&quot;:&quot;/content/&quot;,&quot;pasteFormatting&quot;:&quot;merge&quot;,&quot;sourceEditable&quot;:false,&quot;uploadFiles&quot;:false,&quot;useNewTinyMCEVersion&quot;:true,&quot;viewFiles&quot;:false,&quot;wmodeOpaque&quot;:true}" data-css-vars="{&quot;--d2l-branding-primary-color&quot;:&quot;#ff812c&quot;}">
-<head>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Login - BITS Pilani Digital</title>
-<link rel="preconnect" href="https://s.brightspace.com/lib/bsi/2026.10.234/" crossorigin>
-<link rel="dns-prefetch" href="https://s.brightspace.com/lib/bsi/2026.10.234/">
-<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.10.234/unbundled/bsi-unbundled.js" as="script" crossorigin="anonymous">
-<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.10.234/unbundled/navigation.js" as="script" crossorigin="anonymous">
-<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.10.234/unbundled/navigation-main-header.js" as="script" crossorigin="anonymous">
-<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.10.234/unbundled/navigation-link-image.js" as="script" crossorigin="anonymous">
-<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.10.234/unbundled/html-block.js" as="script" crossorigin="anonymous">
-<script>
-(function(){var client;var errors = [];window.addEventListener('d2l-logging-loaded', function(e) {client = e.detail.createClient('uncaught-errors', { shouldThrottle: true });if (errors.length > 0) {client.legacyErrorBatch(errors);}});var handleError = function(data) {if (!data.message) return;if (data.error && data.error.stack && (data.error.stack.includes('/content/') || data.error.stack.includes('/shared/'))) return;if (client) {client.legacyError(data.message, data.source, data.lineno, data.colno, data.error);} else {errors.push(data);}};window.addEventListener('error', function(e) {handleError({ message: e.message, source: e.source, lineno: e.lineno, colno: e.colno, error: e.error });});window.addEventListener('unhandledrejection', function(e) {handleError({message: e.reason ? (e.reason.message ? e.reason.message : e.reason) : '',error: e.reason});});})();
-(function(){try { localStorage.setItem('XSRF.Token','');} catch(e) {}})();
-(function(){if(window['FontFace'] === undefined) { window.d2lFontsLoaded = true; return; }window.d2lFontsLoaded = false;Promise.all(['400','700'].map(function(w) {return new FontFace('Lato','url(https://s.brightspace.com/lib/fonts/0.6.1/assets/Lato-' + w + '.woff2) format("woff2")', {style:'normal',weight: w}).load();})).then(function() {window.d2lFontsLoaded = true;if(window['D2L'] && window.D2L['FontsLoaded']) { window.D2L.FontsLoaded(); }});})();
-(function(){
-D2L = window.D2L || {}; D2L.LP = D2L.LP || {}; D2L.LP.Web = D2L.LP.Web || {}; D2L.LP.Web.UI = D2L.LP.Web.UI || {};
-D2L.LP.Web.UI.Flags = {
-{"award-enable-copy-workflow":false,"awards-allow-unenroll-bake":true,"awards-ui-fetch-from-orgunit":true,"create-space-experimental-brightspace-object-types":false,"MAV-5508-welcome-widget-create-new":true,"ipsis-sourcesystem-migration":true,"ipsis-provider-oldstandardcsv":false,"ipsis-oneroster-csv-powerschool":false,"ipsis-oneroster-full-sync-implicit-unenrollments":false,"ipsis-esb-lis":false,"hyrl-611-ilp-user-sourcedid-update":true,"hyrl-4009-filter-change-force-full-sync":false,"hyrl-5142-department-location":false,"f17778-oneroster-psur":false,"f19471-gg4l-oneroster-grades-passback":true,"hyrl-1999-oneroster-rest-1p2":false,"hyrl-4029-academic-session-merge":false,"hyrl-2962-cancel-batch":false,"hyrl-3638-user-default-inactive-option":true,"hyrl-3205-psur-firstName-fallback":false,"hyrl-3587-hylia-data-pond":false,"F18735-lti-special-access-ui-feature-flag":false,"F16988-add-to-calendar":true,"advanced-assessments-groups":true,"nim-5386-modify-activity-display-return-to":true,"nim-5395-update-org-unit-id-on-activity-iteration":true,"nim-5243-consolidate-evaluator-and-publisher-patch-actions":true,"nim-5812-modify-aa-face-save-order":true,"nim-5846-lock-publisher-rule-selection-when-submissions-received":true,"nim-5757-aa-learner-candidates-route-improvements":false,"nim-6384-save-actions-complete-after-annotations-processed":true,"PHNX-3264-unavailable-content-visibility-setting":true,"F19162-enable-content-face-releaseconditions":true,"F21912-enable-content-face-competencies":true,"F19163-enable-content-face-standards":true,"IDCS-15-edit-content-file-descriptions":true,"PHNX-1554-enable-refactored-completion-summary":true,"PHNX-2629-access-unlimited-depth":true,"IDCS-283-edit-lti-descriptions":true,"EP-1169-use-content-search":true,"EP-1432-enable-description-scrolling-hovering":true,"EP-1580-enable-url-updating-in-lessons-next-prev":true,"PHNX-2357-user-guided-grade-associations":true,"PHNX-2649-lessons-course-overview":true,"PHNX-3198-respect-availability-window":true,"PHNX-3065-lessons-quicklink-current-window-navigation":true,"PHNX-2766-lazy-load-content":true,"PHNX-2988-lessons-full-date-tooltip-and-aria":true,"PHNX-3063-support-availability-types":true,"PHNX-4040-improved-file-topic-uploader":true,"PHNX-3190-valence-get-user-topic-completions-ignores-classlist-presence":true,"PHNX-4337-lti-multigrades-link-existing-button-fix":false,"EP-1454-enable-module-level-outcome-alignment":true,"PHNX-5006-enable-immersive-lessons-content-view":true,"PHNX-5314-lessons-live-polling":true,"usa-1243-discussions-due-date":true,"FED-3067-Annual-Consumption":true,"cpd-add-record-from-award":true,"fed-54-in-progress":false,"FED-4668-lift-outcomes":true,"FED-4649-content-gen-import-expand":true,"FED-4285-content-templates":true,"LUMI-275-full-screen":true,"LUMI-276-split-view":true,"HAI-1593-content-picker-quiz":true,"HAI-1591-content-picker-ideas":true,"HAI-1592-content-picker-summary":true,"HAI-1821-content-picker-lss":true,"HAI-596-Interventions":true,"FED-6732-quiz-custom-instructions":true,"FED-6876-idea-custom-instructions":true,"rpc-recalculate-all-users-fix":true,"AUT-4438-Grades-Recalc-Restrict-Users":true,"shield-15581-dev-add-bulk-edit-group-names-ui":true,"shield-16289-dev-add-groups-enrollment-pages":false,"oad-include-asn":true,"EP-1443-enable-lightcast-skills":false,"outcomes-set-course-dataset":true,"outcomes-set-org-dataset":true,"EP-1420-enable-createspace-picker":true,"outcome-sets-scales":true,"outcomes-coverage-grid":true,"de44716-lti-iframe-resize-limit":false,"lti-apps":true,"shield-14553-add-semester-department-filters":true,"employee-training-my-courses-page":false,"BORG-5429-Hotspot-Question-Type":false,"BORG-6738-shared-question-components":false,"BORG-7129-true-false-universal-question":false,"PHNX-5035-smart-curriculum-mobile-dvh-viewport-fix":true,"FED-9107-learner-mode-config-choose-content":false,"FED-2493-Docs-PDF":true,"HAI-2170-study-notebook":false,"HAI-3146-modify-knowledge-checks":false,"HAI-3607-lumi-tutor":false,"chrome-unload-deprecation-opt-out":true,"MAV-6565-lms-context-provider-host-head-filter":true,"MAV-5203-createspace-h5p-library":true,"MAV-6452-createspace-discard-changes-dialog":true,"GAUD-8852-use-input-generated-styles":true,"GAUD-8849-Use-input-radio-generated-styles":true,"GAUD-8351-dialog-resize-telemetry":true,"PHNX-3234-dialog-alignment-fix":true,"shield-16276-add-accessible-tooltip-for-edit-in-place":true,"d2l-offscreen-sizeless":true,"GAUD-9564-accessible-grid-navigation-with-up-down-keys":true,"GAUD-8299-core-tabs-use-new-structure":true,"GAUD-10260-get-focusable-fix":true,"GAUD-10337-use-alert-toast-popover":true,"GAUD-10409-prefer-native-general-dialogs":false,"GAUD-10336-prefer-native-fullscreen-dialogs":false,"GAUD-10581-use-intersection-observer":true,"button-toggle-no-change-event-on-prop-update":true,"install-wizard-dialog":true,"unique-reoffer-code":true,"MAV-5974-hwep-delete-config-button":false,"fix-navbar-flicker":true,"PHNX-4309-iframe-modal-dialog-zindex-fix":true,"AUT-4452-Grades-Formula-Special-Characters-HTML-Fix":false},
-function(feature, defaultValue) {
-const featureValue = D2L.LP.Web.UI.Flags.ListedFlags[feature];
-return featureValue !== undefined ? featureValue : defaultValue;
-}
-};
-})();
-</script>
-<meta name="robots" content="noindex" />
-<link rel="icon" href="/d2l/lp/web/faviconView?variant=0&amp;version=1" />
-<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/lib/bsi/2026.10.234/bsi.css" />
-<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/lib/reset-css/1.1.0/reset.css" />
-<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/apps/brightspace/20.26.10.26259/web-packages/D2L.LP.Web.Desktop.css" />
-<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/apps/brightspace/20.26.10.26259/web-packages/D2L.LP.Auth.Web.Desktop.css" />
-<style>
-html { font-size:20px; }
-#ff812c; }
-.d2l_1_0_99 {margin-bottom:30px;}
-.d2l-button-sso-1[primary] {
-#006FBF;
-#FFFFFF;
-hidden;
-normal;
-break-word;
-}
-.d2l-button-sso-1[primary]:hover,
-.d2l-button-sso-1[primary]:focus {
-#005089;
-}
-.d2l_1_1_51 {margin:20px 0px;}
-.d2l_1_3_628 {margin:20px 0px 0px 0px;}
-.d2l_1_4_783 {margin:10px 0px;}
-.d2l_1_8_940 {padding:5px;}
-.d2l_1_9_888 {margin-bottom:1em;}
-.d2l_1_10_11 {background-color:#fefcef;}
-.d2l_1_11_275 {border:1px solid #faecbb;border-radius:4px;}
-.d2l_1_12_721 {background-position:left top;}
-.d2l_1_13_190 {background-image:url('/d2l/img/0/SystemCheck.Main.itemWarning.png?v=20.26.10.26259');background-size: 18px;}
-.d2l_1_14_285 {padding-left:29px;}
-.d2l_1_15_607 {min-height:16px;}
-.d2l_1_16_766 {margin-top:5px;}
-.d2l_1_17_279 {float:right;}
-</style>
-<script>(function() {})();</script></head>
-<body class="d2l-body d2l-typography vui-typography daylight d2l-body-unresolved d2l-body-flex">
-<div class="d2l-body-main-wrapper"><div class="d2l-navigation-s-no-login d2l-navigation-s-main-no-links"><d2l-labs-navigation><d2l-labs-navigation-main-header><div class="d2l-labs-navigation-header-left" slot="left"><d2l-labs-navigation-link-image class="d2l-navigation-s-logo" src="/d2l/lp/navbars/6606/theme/viewimage/15587/view?v=20.26.10.26259" text="BITS Pilani Digital" tooltip-offset="0"></d2l-labs-navigation-link-image></div></d2l-labs-navigation-main-header></d2l-labs-navigation></div><div class="d2l-page-main d2l-max-width" style="background-color: transparent;"><div class="d2l-page-main-padding"><h1 class="d2l-login-portal-heading d2l-page-title d2l-heading vui-heading-2" style="color: #565A5C;">Welcome to LUMEN</h1><div class="d2l_1_0_99"><d2l-html-block html="&lt;p>The Learning Management System of BITS Pilani Digital&lt;/p>"></d2l-html-block></div><div class="d2l-login-portal-flex"><div><div class="d2l-login-portal-login-container"><div class="d2l-login-portal-login d2l-login-portal-bordered"><div class="d2l_1_1_51">
-<button type="button" primary class="d2l-button d2l-button-sso-1" id="d2l_1_2_391" style="width:100%;" data-onclick="D2L.O(&quot;__g1&quot;,0)();">Login using BITS Mail</button></div>
-<div>
-<div class="d2l-sep d2l-sep-s d2l-sep-t" aria-hidden="true"><hr /></div>
-</div>
-<div class="d2l_1_3_628">
-<div class="d2l-messagearea" id="d2l_messagearea"></div></div>
-<form data-method="post" data-scope="" data-location="/d2l/lp/auth/login/login.d2l" class="d2l-form d2l-form-primary" id="formId" onsubmit="return false;">
-<input type="hidden" name="target" id="target" value="/content/enforced/7204-T1-26_MDSDF412/Optimization Methods for Analytics.vtt" />
-<input type="hidden" name="loginPath" id="loginPath" value="/d2l/login" />
-<div class="d2l_1_4_783">
-<div class="d2l-fieldgroup">
-<div class="vui-field-row">
-<label for="userName" class="d2l-field d2l-label d2l-label-required">Username</label>
-<span class="d2l-validator" id="d2l_1_5_744"></span>
-<input type="text" class="d2l-edit d2l-edit-required" id="userName" name="userName" autocomplete="username" autocorrect="off" autocapitalize="off" />
-</div>
-<div class="vui-field-row">
-<label for="password" class="d2l-field d2l-label d2l-label-required">Password</label>
-<span class="d2l-validator" id="d2l_1_6_910"></span>
-<input type="password" class="d2l-edit d2l-edit-required" id="password" name="password" autocomplete="off" />
-</div>
-</div>
-<button type="button" class="d2l-button" id="d2l_1_7_254" data-onclick="D2L.O(&quot;__g1&quot;,1)();">Log In</button></div>
-</form>
-</div><div class="d2l-systemcheck" style="margin-bottom:1em;">
-<noscript><div class="d2l_1_8_940 d2l_1_9_888 d2l_1_10_11 d2l_1_11_275">
-<div class="d2l-container-icon d2l_1_12_721 d2l_1_13_190 d2l_1_12_721 d2l_1_14_285 d2l_1_15_607">
-<div class="d2l-textblock d2l-textblock-strong">Warning</div>
-</div>
-<div class="d2l-htmlblock-untrusted d2l-htmlblock-wc d2l_1_16_766"><d2l-html-block no-deferred-rendering><div>Either your browser does not support <strong>JavaScript</strong> or it has been disabled through your browser&#39;s settings. The system requires a JavaScript enabled browser, and will be unable to perform the other system checks without JavaScript support.</div></d2l-html-block></div><a class="d2l-link d2l_1_17_279" aria-label="" href="/d2l/systemCheck" title="Learn more about: JavaScript">Learn more...</a>
-<div class="d2l-clear"></div>
-</div>
-</noscript>
-</div>
-</div><div class="d2l-login-portal-image d2l-login-portal-margin"><img class="d2l-image" src="/d2l/lp/login/picture?fileSystemType=Database&amp;fileId=17789&amp;v=20.26.10.26259" alt="" />
-</div><div class="d2l-clear"></div>
-</div></div></div></div><script src="https://s.brightspace.com/lib/jquery/3.7.1/jquery.min.js"></script>
-<script src="https://s.brightspace.com/lib/jqueryui/1.13.2/jquery-ui.min.js"></script>
-<script src="https://s.brightspace.com/lib/bsi/2026.10.234/bsi.js"></script>
-<script>
-window.__elasticRumOnload = function() {if (!window['elasticApm']) return;var apm = elasticApm.init({serviceName: 'LMS',serverUrl: 'https://d2l-elasticrum.apm.us-east-1.aws.cloud.es.io/',transactionSampleRate: 0.1,disableInstrumentations: ['xmlhttprequest','fetch','eventtarget','history']});apm.addLabels({ "orgName": "bitsdigital"});apm.addLabels({ "instanceName": "bitsdigital"});};
-</script>
-<script async="async" onload="window.__elasticRumOnload()" src="https://s.brightspace.com/lib/elastic-apm-rum/5.14.0/elastic-apm-rum.umd.min.js"></script>
-<script src="https://s.brightspace.com/apps/brightspace/20.26.10.26259/web-packages/D2L.LP.Web.Desktop.js"></script>
-</div><footer class="d2l-footer d2l-footer-background-color d2l-footer-top-spacing d2l-footer-top-inner-view"><div class="d2l_1_18_874 d2l-login-language-selector">
-<d2l-dropdown><d2l-button-subtle icon="tier1:browser" class="d2l-dropdown-opener" text="English (United Kingdom)" description="English (United Kingdom) – Select a locale and language"></d2l-button-subtle>
-<d2l-dropdown-menu><d2l-menu label="English (United Kingdom) – Select a locale and language" class="d2l-menu-mvc">
-<d2l-menu-item text="English (United States)" id="d2l_1_19_397"></d2l-menu-item>
-<d2l-menu-item text="English (United Kingdom)" id="d2l_1_20_928"></d2l-menu-item>
-</d2l-menu>
-</d2l-dropdown-menu></d2l-dropdown>
-</div>
-<div class="d2l-footer-default-content"><p>Powered by <span class="d2l-offscreen">D2L Brightspace</span></p><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212 17" fill="#6e7477"><g clip-path="url(#clip0_12_484)"><path d="M66.4982 8.47672C67.9121 7.76855 68.6563 6.50425 68.6563 4.79585C68.6563 2.0192 66.5291 0.293457 63.1045 0.293457H56.1851V16.7133H63.2224C66.786 16.7133 68.9133 15.0223 68.9133 12.1883C68.9119 10.3785 68.0792 9.10086 66.4982 8.47672ZM59.5001 9.87171H63.1045C64.6658 9.87171 65.5266 10.5719 65.5266 11.8415C65.5266 13.1885 64.6841 13.8993 63.1045 13.8993H59.5001V9.87171ZM62.9191 7.16307H59.5001V3.10745H62.8489C63.954 3.10745 65.271 3.44887 65.271 5.07725C65.271 6.4189 64.4356 7.15774 62.9191 7.15774V7.16307Z" /><path d="M84.1186 5.47331C84.1186 2.22588 81.7738 0.288086 77.8465 0.288086H71.2051V16.7133H74.5216V10.7025H77.8732L80.7474 16.7133H84.3784L81.1181 10.029C83.081 9.20618 84.1186 7.63515 84.1186 5.47331ZM74.5216 3.12875H77.8465C79.6367 3.12875 80.6631 3.98362 80.6631 5.47331C80.6631 7.00567 79.6367 7.88321 77.8465 7.88321H74.5216V3.12875Z" /><path d="M89.982 0.286621H86.6655V16.7132H89.982V0.286621Z" /><path d="M100.365 10.153H105.486C105.441 12.5669 103.746 14.0045 100.933 14.0045C97.7635 14.0045 95.7978 11.9441 95.7978 8.62195C95.7978 5.15447 97.7551 2.99663 100.909 2.99663C103.051 2.99663 104.559 3.96352 105.028 5.64792L105.062 5.77061H108.526L108.498 5.58257C108.005 2.25779 104.988 0.0239258 100.978 0.0239258C98.4501 0.0239258 96.2766 0.854788 94.7082 2.42449C93.1398 3.99419 92.3423 6.09469 92.3423 8.55927C92.3423 11.0238 93.137 13.127 94.6408 14.6474C96.1446 16.1677 98.1904 16.9599 100.583 16.9599C102.653 16.9599 104.526 16.2651 105.597 15.1248L105.756 16.7172H108.593V7.33365H100.365V10.153Z" /><path d="M121.852 6.93618H114.691V0.286621H111.375V16.7132H114.691V9.88755H121.852V16.7132H125.169V0.286621H121.852V6.93618Z" /><path d="M127.022 3.21664H131.983V16.7132H135.298V3.21664H140.259V0.286621H127.022V3.21664Z" /><path d="M149.045 7.33628L146.378 6.78682C145.027 6.49208 144.451 5.91461 144.451 4.85703C144.451 3.61407 145.538 2.84322 147.289 2.84322C148.881 2.84322 149.832 3.5874 149.896 4.88637L149.905 5.04507H153.225V4.87437C153.13 1.86833 150.878 0.0012207 147.348 0.0012207C143.697 0.0012207 141.147 2.0337 141.147 4.94505C141.147 7.46431 142.71 9.11937 145.664 9.73018L148.355 10.3036C149.639 10.5704 150.18 11.1185 150.18 12.1441C150.18 13.3737 149.013 14.1365 147.133 14.1365C145.333 14.1365 144.246 13.383 144.225 12.1201V11.956H140.907V12.1267C140.979 15.0874 143.422 16.9999 147.132 16.9999C150.997 16.9999 153.495 14.9994 153.495 11.9027C153.495 9.44478 152.04 7.95109 149.045 7.33628Z" /><path d="M162.633 0.288086H155.753V16.7133H159.069V11.1653H162.633C166.093 11.1653 168.418 8.97546 168.418 5.71603C168.418 2.4566 166.098 0.288086 162.633 0.288086ZM159.076 3.12875H162.055C163.929 3.12875 164.962 4.03963 164.962 5.69336C164.962 7.38976 163.914 8.32464 162.007 8.32464H159.076V3.12875Z" /><path d="M195.457 11.1292C194.916 12.8629 193.21 13.9379 191.011 13.9379C188.019 13.9379 186.086 11.804 186.086 8.48992C186.086 5.14246 187.973 3.06331 191.011 3.06331C193.183 3.06331 194.809 4.13023 195.364 5.91598L195.402 6.03601H198.859L198.826 5.84396C198.234 2.30846 195.191 0.0239258 191.074 0.0239258C186.02 0.0239258 182.625 3.43406 182.625 8.51126C182.625 13.6551 185.886 16.9772 190.935 16.9772C195.021 16.9772 198.211 14.658 198.873 11.2052L198.909 11.0105H195.489L195.457 11.1292Z" /><path d="M212 3.21664V0.286621H201.128V16.7132H212V13.7831H204.443V9.84354H211.212V7.02421H204.443V3.21664H212Z" /><path d="M171.747 13.1084H168.358L166.987 16.7132H170.422L171.747 13.1084Z" /><path d="M179.187 16.7132H182.669L181.299 13.1084H177.862L179.187 16.7132Z" /><path d="M178.07 10.5557C178.731 10.1692 179.317 9.67797 179.804 9.1034L176.459 0.309326H173.196L169.905 8.9647C170.435 9.68813 171.11 10.3053 171.892 10.7811C171.306 9.51549 171.751 7.80176 172.487 6.63748C172.665 7.40433 173.025 7.75508 173.44 8.01781C173.159 7.66706 172.94 7.1376 173.019 6.37875C173.15 5.1438 174.446 4.17424 175.663 3.77548C175.19 4.84239 175.82 5.35451 176.084 6.13736C176.553 5.83715 177.061 5.59555 177.595 5.41853C176.72 7.39899 178.71 7.92045 178.234 10.0289C178.197 10.209 178.142 10.3854 178.07 10.5557Z" /><path d="M-0.000121416 15.6864H1.63004L2.43319 14.6595V2.34326L1.63004 1.31635H-0.000121416V0.290771H7.76878C13.7826 0.290771 16.4377 3.52887 16.4377 8.31666C16.4377 13.1045 12.297 16.7186 7.71964 16.7186H-0.00292969L-0.000121416 15.6864ZM8.08471 15.301C11.47 15.301 12.5905 13.2658 12.5905 9.12618C12.5905 4.77716 10.7876 1.31635 7.64663 1.31635C7.20881 1.31184 6.77309 1.37444 6.35626 1.50172C6.20617 1.55448 6.05984 1.6164 5.91818 1.6871V14.6595C6.42225 15.1449 7.42759 15.301 8.08471 15.301Z" /><path d="M28.1985 9.53424L27.3181 13.6352H17.9106V12.5883C17.9106 12.5883 19.3147 11.1786 19.3456 11.1466C22.276 8.2126 24.5787 5.88005 24.5787 3.46215C24.5787 1.9618 23.9609 1.02691 22.8812 1.02691C21.8014 1.02691 21.1345 2.06582 21.1345 3.62352V4.4117H18.2912C18.2235 4.16672 18.1914 3.9141 18.1957 3.66086C18.1957 1.23496 20.6908 0 23.037 0C25.3538 0 27.6902 1.05358 27.6902 3.56884C27.6783 4.19317 27.5164 4.80668 27.217 5.3626C26.8948 5.96398 26.4922 6.52338 26.0193 7.02699C25.424 7.69381 24.1294 8.72605 22.9837 9.58759C22.0682 10.2784 21.2468 10.8599 20.9561 11.0666H26.5108L27.9935 9.53424H28.1985Z" /><path d="M43.7477 11.5814L42.6455 16.7133H29.7896V15.6837H31.4127L32.2257 14.6581V2.34324L31.4127 1.31766H29.7896V0.288086H38.5806V1.31766H36.4618L35.705 2.34324V15.1783H39.7896L43.3434 11.5814H43.7477Z" /><path d="M27.6259 15.1743V15.8118L26.681 16.7093H17.376V16.0785L18.3209 15.181L27.6259 15.1743Z" /></g><defs><clipPath id="clip0_12_484"><rect width="212" height="17" fill="white"/></clipPath></defs></svg></div></footer><script src="/d2l/portal/js/desktop?v=20.26.10.26259"></script>
-<script>
-D2L.LP.Web.UI.Events.OnInit.AddListener( function() {
-D2L.O("__g1",2)();
-D2L.O("__g1",3)();
-D2L.O("__g1",4)();
-D2L.O("__g1",5)();
-D2L.O("__g1",6)();
-D2L.O("__g1",7)();
-} );
-D2L.LP.Web.UI.Events.OnLoad.AddListener( function() {
-D2L.O("__g1",8)();
-} );
-D2L.OR={
-"__g1":{"0":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Navigate\",\"P\":[{\"_type\":\"url\",\"Url\":\"https:\/\/lumen.bitspilani-digital.edu.in\/d2l\/lp\/auth\/saml\/initiate-login?entityId=https%3a%2f%2faccounts.google.com%2fo%2fsaml2%3fidpid%3dC042gmm8v&target=%2fcontent%2fenforced%2f7204-T1-26_MDSDF412%2fOptimization+Methods+for+Analytics.vtt\"}]}",
-"1":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Form.SubmitByButton\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_7_254\"}]}",
-"2":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.Authentication.Xsrf.Init\",\"P\":[\"d2l_referrer\",\"\",0]}",
-"3":"{\"_type\":\"func\",\"N\":\"D2L.LP.ActivityBar.Init\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/activityFeed\/checkForNewAlerts\"},120]}",
-"4":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.MessageArea.Init\",\"P\":[\"d2l_messagearea\",{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/validation\/errors\"}]}",
-"5":"{\"_type\":\"func\",\"N\":\"D2L.LP.Globalization.Locale.Init\",\"P\":[{\"_type\":\"anon\",\"DecimalSeparator\":\".\",\"GroupSeparator\":\",\",\"NumberNegativePattern\":1,\"PercentPositivePattern\":0,\"PercentNegativePattern\":0,\"PercentSymbol\":\"%\",\"NegativeSign\":\"-\",\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"UseNativeDigits\":false,\"GroupSizes\":[3],\"IntegerRegex\":\"^([\\\\(-]*(([01234567890123456789]?[01234567890123456789]?([01234567890123456789](,[01234567890123456789][01234567890123456789][01234567890123456789])*)?))[\\\\)-]*)$|^([\\\\(-]*[01234567890123456789]+[\\\\)-]*)$\",\"DecimalRegex\":\"^([\\\\(-]*(([01234567890123456789]?[01234567890123456789]?([01234567890123456789](,[01234567890123456789][01234567890123456789][01234567890123456789])*)))(\\\\.[01234567890123456789]+)?[\\\\)-]*)$|^([\\\\(-]*[01234567890123456789]*\\\\.?[01234567890123456789]+[\\\\)-]*)$\"},{\"_type\":\"anon\",\"InputDateFormat\":\"dd\/MM\/yyyy\",\"Is24HourClock\":false,\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"UseNativeDigits\":false,\"TimeFormat\":\"h:mm tt\",\"AmDesignator\":\"AM\",\"PmDesignator\":\"PM\",\"FirstDayOfWeek\":0,\"ShortMonthNames\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\",\"\"],\"LongMonthNames\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\",\"\"],\"ShortDayOfWeekNames\":[\"Sun\",\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\"]},{\"_type\":\"anon\",\"TextDirection\":1},{\"_type\":\"anon\",\"Culture\":\"en-gb\"},{\"_type\":\"anon\",\"JustNow\":\"just now\",\"OneMinuteAgo\":\"1 minute ago\",\"TwoMinutesAgo\":\"2 minutes ago\",\"MinutesAgoMany\":\"[0] minutes ago\",\"OneHourAgo\":\"1 hour ago\",\"TwoHoursAgo\":\"2 hours ago\",\"ManyHoursAgo\":\"[0] hours ago\",\"YesterdayTime\":\"yesterday at [0]\",\"DayOfWeekTime\":\"[0] at [1]\",\"MonthDayTime\":\"[0] at [1]\",\"Now\":{\"_type\":\"D2L.LocalDateTime\",\"Year\":2026,\"Month\":11,\"Day\":9,\"Hour\":13,\"Minute\":36,\"Second\":28,\"Millisecond\":492}}]}",
-"6":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Initialize\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/login?target=%2fd2l%2flogin%3ftarget%3d%252fcontent%252fenforced%252f7204-T1-26_MDSDF412%252fOptimization%2bMethods%2bfor%2bAnalytics.vtt%26sessionExpired%3d0&sessionExpired=1\"},\"Error: unable to complete your request.\",{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"flash\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.FlashMessages.RpcReceivePayloadProvider\"},\"session\":{\"_type\":\"func\",\"N\":\"D2L.PT.Auth.SessionTimeout.RpcReceivePayloadProvider\"},\"messageArea\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.MessageArea.RpcReceivePayloadProvider\"},\"OR\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.ObjectRepository.RpcReceivePayloadProvider\"},\"JS\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.RpcReceiveJsPayloadProvider\"},\"CSS\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.RpcReceiveCssPayloadProvider\"},\"BSI\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Bsi.RpcReceiveJsPayloadProvider\"},\"ariaMessages\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Aria.RpcReceivePayloadProvider\"}}]}",
-"7":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.InlineHelp.Init\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/inlineHelp\/6606\/help\"}]}",
-"8":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Focus\",\"P\":[{\"_type\":\"id\",\"Value\":\"userName\"}]}"}
-,
-"d2l_1_5_744":{"0":"[\"userName\",{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Edit.ValidateRequired\",\"P\":[\"userName\"]},\"Username is required.\",null]"}
-,
-"d2l_1_6_910":{"0":"[\"password\",{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Edit.ValidateRequired\",\"P\":[\"password\"]},\"Password is required.\",null]"}
-,
-"password":{"enter":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Form.Submit\",\"P\":[{\"_type\":\"id\",\"Value\":\"formId\"},false],\"D\":true}"}
-,
-"d2l_1_19_397":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Connect\",\"P\":[\"POST\",{\"_type\":\"url\",\"Url\":\"\/d2l\/login\/locale\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"localeId\":1}],\"D\":true}"}
-,
-"d2l_1_20_928":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Connect\",\"P\":[\"POST\",{\"_type\":\"url\",\"Url\":\"\/d2l\/login\/locale\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"localeId\":3}],\"D\":true}"}
-};
-</script>
-<script>D2L.LP.Web.UI.Html.Bsi.Init('prod', 'https://s.brightspace.com/lib/bsi/2026.10.234/', ['unbundled/navigation.js','unbundled/navigation-main-header.js','unbundled/navigation-link-image.js','unbundled/html-block.js','unbundled/dropdown.js','unbundled/dropdown-menu.js','unbundled/button-subtle.js','unbundled/menu.js','unbundled/menu-item.js'], true);</script>
-</body>
-</html>
+Good evening, sir.
+Yes, good evening.
+Okay, so I'm going to share the screen, just wait for some time, 2 minutes, give me 2 minutes.
+So let's start to… Where's the folder?
+Just give me a second.
+Cool contents.
+Okay, just a moment.
+Yup, as well as Optimization.
+Okay, so today, we will go through,
+Gradient descent method.
+Yes.
+So, basically, When it comes to the gradient descent method, so before that, there are…
+Analytical methods, and there are basically, what you can call it, iterative methods, or iterative methods.
+So far.
+the analytical methods… see, at the end of the day, what we're trying to do is we're trying to optimize. We are trying optimization.
+Okay? So… We're trying to… Let's say minimize or maximize.
+Okay, let's assume that we are minimizing.
+P.
+We're minimizing, some function.
+F of X.
+Okay?
+We're trying to find out that X where value of f of x is as minimum as possible.
+So, this is basically one part of the constant… unconstrident optimization.
+And X is not just a single variable, but X is basically n-dimensional variable.
+Excel, right?
+So…
+There are two methods, as you can see. There are, for example, if you look at this method.
+Second derivative test.
+Second derivative test.
+Okay? For, let's say, for one variable. Okay, X.
+What is the usual procedure? So, first we find a dash X.
+And then next step, we quit up "-X with 0.
+Okay, and using this equation, we find critical points.
+Critical points.
+And then we basically,
+looked at F double dash, we find F double dash at X. Let's say we found out critical points to be A and B, and then we evaluate F double dash at A,
+And F double dash at B.
+Okay, if double dash at A is greater than 0, we say at A, we have minimum.
+And if this is less than zero, we say at P. B is maximum.
+It's just an example.
+This is where we equate M double dash X equal to 0, and we find critical points. This is called closed from solution, or analytical solution.
+Close form. We directly equit, F double-20, F20, close form solution, or analytical solution.
+Okay, but… Sometimes, this kind of idea does not work.
+To equate it with zero. So we use something called iterative method, or, you know, we perform certain set of operations. We don't equate with zero, but basically, you know.
+a sort of… we just use it, we just use the derivative, rather than equating to zero, we just use the derivative. And we, you know, there is… there is a rule we use, and in that rule, we use the derivative or gradient in the… to solve the problem, that is called iterative methods. So, if you look at this,
+here, So When you are not able to set the derivative to zero, And solved.
+Okay? So, imagine that you're not able to set the derivative to 0 and not able to solve it. How does anyone find the best answer?
+The best answers to find is to attract.
+So we need to iterate the algorithm. Okay, so very simple example is fitting of a straight line.
+Okay, so I will, I will walk you through this gradient descent algorithm, but let's create, the idea before it.
+Let's imagine… let's imagine that you have set of points… X and Y.
+Let's say X is the size of a house.
+Why is the price of a house?
+Okay, and we have certain set of points.
+Okay, endpoints.
+Okay?
+And we will…
+plot them accordingly on the axis. One is going to be the size axis, other is going to be price axis. So here I have plotted those points. So these are the points, let's say 0.8,
+on the 58, 172. So, these points I have plotted.
+Okay? If you want me to plot it again for you, I can just plot it for you, here in front of…
+So, we're plotting each set of points, so these points are plotted. We can change them if you want. We can change these points to any other points, and we can replot them.
+Okay, so any point we can change. So this is the way we plot the points.
+So, the idea is, Let's say this is size of a house.
+This is size axis, and this is slice axis.
+Okay? It is clear from this particular 0.1, as the size of house, the price is given to us, which is
+this 58.
+Let's assume.
+Of course, these are fake numbers, these are not really true numbers of size and else.
+Then we have We don't have any price in between 0.1 to 1, then we have price for 1.
+the house size is 1 square feet, we have the price, and then you see for this point. But, if you look at it very carefully, there are certain sizes
+like this size, this size, this size, there is no price available, okay? For example, for this size, there's no price available here. We have this data of size and price, that's all.
+Okay, so I'll reset the data in front of you, and once again, we see the original data, what it was. The original data was like this.
+Okay, started with the… but you can, you can, you can, you can take any set of points, okay? Now.
+if I really want to find out, for example, I have the… If the size is 0.8,
+I have the price to be… 58, which is approximately here.
+This is 58, this one, okay?
+And what if I want to find out and for one.
+If the size is 1, I have this, which is basically 72.
+What if I want to find out
+Something for, let's say the price is 1.1.
+Size is 1.1, what would be the price?
+That price is not available to me, okay? That price in the data is not available to me. I don't have it. So is there any way we can do it?
+Okay.
+So, one way to do it, usually the one practice that we do, is we fit a straight line. We just try to fit a straight line to the given data. We just try to fit something around, like, straight line like this.
+Now, once you feed a straight line, It is easy.
+To predict. Because, see, now you have
+Now, what we do usually, my bad, just, I need to… okay, so we fit the straight line like this. Let me fit it again.
+We feed the straight line like this.
+Okay, something like this. Okay? Now…
+Now, somebody says, and that the equation of that straight line is always going to be, we call it as Y hat, equal to
+AX plus B.
+Okay? Now, fitting this straight line.
+means, basically, so, Y hat, this is the Y, this is called observed.
+And one more observation, one more prediction, this line will give to us. Okay, now there are two predictions that are happening.
+Okay, for example, For the house, size is 0.8.
+the price… Original price is $58.
+And the line is also predicting 58.
+Okay. Now, for one.
+If you look at 1, the original price is $72, but the line is predict… this is the prediction of the line that coming… that is coming on the line.
+Okay, the prediction on the line, this value, yellow value, might be it is somewhere around 70, that I don't know.
+Okay? So it is not necessary for that line to go through all the points. Okay? So… so we have observed and predicted every time.
+But now, what do you mean by you're fitting a line to this particular… to this particular set of points?
+Okay. Now, to fit a line to a particular set of points, which looks like AX plus B,
+First of all, you have to assume that the relationship between X and Y is linear.
+Okay? That this… this point falls on the line.
+What if these points are not falling on the line? What kind of relationship
+It can also have… it can also have this kind of relationship, which is… which may look like this.
+Now, this point cloud may go like this.
+So, fitting a straight line to this particular is not possible, right? You have… actually, you have to fit a curve to this. So, this is called nonlinear relationship.
+Okay? But here, we are not interested in the non-linear relationship. We are interested in the linear relationship, that's why we… first… this is something called scatter plot.
+Okay, we always plot a scatter plot of this first, and then we see
+Is there a linear relationship between them or not? If there is no linear relationship, we never fit a line. If there is a linear relationship, we always fit a line, which is… which looks like A plus B. Now, what do you mean by fitting a line? Fitting a line means finding this value of A and finding this value of B.
+Okay? What does this A and what does this B do? So, finding a value of A and finding a value of B. Anytime you fit a straight line, okay, so you always fit a straight line. When you say you are fitting a straight line, means you're going to find
+the value of A and the value of B. So let me… let me extend this line here.
+Wonderful.
+Okay, something new.
+Okay. Now… Let's go to the next topic.
+So, let's assume… that… Let me, let me once again, come back to this.
+There are two methods, analytical, it solves once, and there's a try-do method, walk towards it, okay?
+So, in analytical method, you differentiate, set the derivative to zero.
+Solve, exact, and fast.
+It is generally used for simple… simple problems, or simple functions, okay? But if the functions are complicated, using this method is no… or no… is of no use.
+Okay, we have seen this. We have seen, we have equated the derivatives to zero.
+Okay, and then we found the optimum values. All these…
+But if you look at any machine learning-based functions, or machine learning-based equations, they are very difficult and impossible to solve by hand. You cannot simply equate zero and, you know, you can find the analytical solution, no.
+So, the other way around is to use iterative, walk towards it, okay? So, what do you mean by that? Well, to start somewhere else, evaluate.
+Improve, repeat. Okay? So, this process…
+And you can stop when nothing further can be gained. Okay, so you need to set a criteria. What do you mean by gain first?
+So, it handles the complex objective function, and that is scalable, suitable for machine learning and applications to large datasets.
+Okay, it's applications to large units. So, there are 5 steps.
+First, you start with a random case.
+random guess, okay? So, for example, if you're trying to fit a line AX plus B.
+You assume that A equal to 0 or B equal to 0. You can start with.
+Okay? So your line will become Y equal to 0.
+Then, by certain formula.
+This is your… now, this is your beginning, random guess. You can… you can start with any guess you want.
+And then what you do is, you, using the previous guess, Okay, you guessed…
+Let's say this gase is done at the 0th iteration.
+Then, using the 0th iteration, you can get the new A1B1.
+using… A1, B1, you can get A2, B2.
+Using A2B2, you can get A3B3, and this way, you carry on your process.
+of iteration.
+Okay.
+That's… that's the whole idea.
+So, might be if you'd start with this.
+You may get a random thing.
+Okay, and then, see, usually what will happen, if you want to, let's say, plot this line.
+To this set of words.
+And if you start A equal to 0, B equal to 0, what line you will get? You will get this line.
+Y equal to 0 is simply x-axis, this line you'll get, which is useless.
+Then, let's say you got… get this 0.1, 0.2. What will happen? The line will slightly come up.
+Okay? In the next iteration, let's say this is… this has happened to be 1 and 3. Then line will slightly come up.
+Let's say in the next iteration, this happens to be 2 and 4.
+Okay, the line will slightly go. Then, let's say in the next iteration, A4 and B4, you got this as 2.3, and before you got as minus, minus 4.
+Okay, and let's say minus 4, plus 4. And let's say then, finally, you'll get the right line. Okay, so this way, as iteration improves, the line will move towards the points, set of points, okay? You start with the random guess, and use some formula
+to actually, you know, to get closer and closer, closer and closer to given set of points. That's the whole idea of gradient descent algorithm.
+Okay. Now, what… when it comes to the…
+gradient descent algorithm, there are 4 important things that you must understand before going to this one. There is something called cost function, which is a function of A and B.
+And this function defines the goal.
+Okay? And in case of fitting a line, this cost function is called mean square error.
+Okay.
+So, this mean square error, will tell you How wrong?
+the current AB is, okay? Whatever the ABO selected, how wrong it is, that it will tell. Then there is something called gradient.
+Gradient of the loss function.
+So, this will give you the local information each state's needs.
+Okay? If you simply nudge A and B,
+If you tweak and tune A and B, how the cost will change, that is determined by this gradient.
+Then there is something called learning rate.
+Okay? So, the learning rate will determine how large the state algorithm will take towards the next AV.
+Okay, you start with AB here.
+Would you like to go this way, or will you like to go this much, or would you like to go this much?
+That is determined by alpha.
+Okay? And there is something called stopping criteria.
+it decides when the iteration ends, okay? So, basically, we actually set up some criteria that, after that, we don't say, for example, let's say your previous A at the 20th iteration is 4.3,
+and B at the 20th iteration is, let's say, 3.2, okay? And we set a criteria. We want
+to say that whatever your A knew, minus a old.
+Should be less than 0.01.
+And so, suppose…
+If this is happening, then you stop the algorithm. Whatever B new you get, and what is your B old.
+If it is 0.01, you'll stop the algorithm. Let's say A21 happens to be 4 point.
+3-1.
+3001, and B20 happens to be 3.2001. Now, look at the difference. So that means it is not improving at all. It is just…
+kind of…
+stuck there, you see. So you see the difference between this and this will be less than 0.01, and you see the difference between this and this is less than 0.01, and then you stop the algorithm.
+So there is this important, you know.
+This important thing that you need to be very careful about, that you need to set a stopping criteria.
+Okay, now…
+So, I ask you to fit the… fit the line, okay? So, usually when I ask you to fit the line, means, you see.
+Given such a set of points.
+You can fit infinitely many lines to this.
+There's no one line to fit, okay? You can fit a line like this.
+You can fit a line like this to this.
+Also, you can fit a line like this, no doubt about that.
+You can fit a line like this.
+If you want.
+And you can fit a line like this, and it can keep on continuing this way.
+Okay, you can fit tons of line to this.
+But we don't want… see, fitting a line means what? Let's say I fitted the first line, and this equation
+Y equal to, let's say, some A1X plus B1.
+This line is Y equal to some A2X plus B2. This line is Y equal to A3X plus some B3. This line, Y equal to A4X plus some B4.
+So, first line is giving me A1 comma B1, second line has given me A2, B2, third line has given me A3, B3, and fourth line has given me A4, B4. And this way, I can contain.
+Okay, but… But I want the best fit.
+See, there are tons of lines we can fit, but I want the best fit. Now, what do you mean by best fit? Okay, and that there was… comes the concept of errors. Okay, there comes the concept of errors. Okay? As we can fit infinitely many lines, fitting a line, please understand.
+Fitting align means just finding A1, A and B, that's all. Fitting align means finding A and B.
+That's all. Now, what is the role of A, and what is the role of B? That is needed to be understood very clearly. Okay, now let's understand the role of A and role of B.
+So, when you fit a line, let's say I have fitted this line, for example.
+Okay? Now, what does A does, and what does B does? So, if you look at A, A is called slope of the line.
+Okay, in any equation, Y equal to AX plus B
+A is called slope of the line. That is, orientation.
+A will give you orientation, or you can say direction of the line.
+Okay, if A is positive, the orientation will become This way.
+as A increases, It will also increase like this.
+Okay, so I can swipe A, or I can show you the effect of it. Let's look at the effect of it.
+Look at A.
+look at A, how A goes through the points. Forget about the rest, just look at the orientation of the
+line, how different values of A. See, as A decreases, here A is 0. Now, as A increases, and if A go to negative, the line will come in other direction, automatically, because for this set of points, line is
+actually turned to be like this. This is the value of A. This is the role A play. What is the role of B? The B will tell you that
+Where?
+where the line is crossing Y-axis. It is called Y intercept, okay? It is called Y…
+intercept, okay? And I can swipe values of Y to… let's swipe the values of Y. See, it goes up and down.
+Okay, it goes up and down.
+Okay?
+Now, what is the meaning of best fit? Now, look at this. Suppose
+If I take this line, for example, Okay.
+Where?
+This is the line. Y equal to… 37.5.
+X plus 1.
+p-value is 1, okay? Now, if I try to fit this line to this, then you see that
+For any point here, for any point here, this is the point the line is giving, but this is the original point.
+Okay, here you see, this is the point line is giving, this is the original point. What we are rather expecting, we're expecting that this line will go
+as close as possible to all these points. But now, if you select this A and this B, you are getting… every time you are getting… line is giving different point, and the original point is different. So what is happening?
+You see, This… let's say this is some 55.
+Okay, let's say this is 55, and let's say this is… for P.
+So, this is the predicted byline, Y hat, and this is the observed value, Y.
+So, if you look at this difference, Y hat minus Y, or Y minus Y hat.
+Okay, this is Y hat, and this is Y.
+This is Y hat, and this is Y. Okay, let's say this is X1. We can call it Y1 hat, Y1. Let's say this is X2.
+let's say this is X2.
+We can call it Y2 hat, Y2. Let's say this is X3.
+Y3 hat?
+widely.
+Okay? So, one… one answer, line will give, one answer is already observed. So, now you see, there's always an error.
+for any Xi, for any XI.
+there is an error, EI, for any XI,
+For given any XI, take X3, for example.
+there is an error. The error is… Why I?
+minus Yi hat.
+Okay. Now, for this particular this.
+You see, the errors seems to be very large.
+Here.
+the errors seems to be very large, okay? So, usually what we do, we just don't take the errors. Now, look at error at every point, okay? Look at error error at every point.
+We just don't take the errors, we square it. We square the errors.
+We square the errors, we just don't take the errors, because we want
+the bigger error should be penalized more, and we… and finally, we are going to add them
+We are going to add the errors, and that's why we don't want… because there are some… it may be possible… now, it may be possible that some points may be below the line, okay?
+some actual points are maybe below the line, so sometimes error may get canceled and will get zero. So for that purpose also, we square it. And finally, for every XI, jittner BXI have Y4, JITNA be 0.7.
+KU sub error KUMAR aggregate.
+We square it.
+And we call it as a squared error.
+Sum of squared error.
+Okay? So, for this particular A and this particular B, I'll get this particular sum. Okay, now what I will do, I will change all of this. What I will do is I will slightly go up.
+Now I'll do the same. I'll calculate the error again.
+Okay? Now I have different A and different B. Now, A is 49.
+And B is 1. Okay, let's… let's take a 1. B is one.
+Okay, now for this 49 and 1, I will again do the same.
+then I will… I will change…
+Next A and B. Let's say I will change B to this.
+Let's say I will change B to this, and I will change A to this.
+Okay, I will change A to this.
+Okay? For this A and this B, I'll get another sum of square errors. Now see.
+If this number, and… For… then, for some purpose, instead of sum of squared error, Sum of squared error.
+I define it something like this. I define…
+mean square error. We just don't restrict ourselves to this. We'll define mean square error, and we define it like this.
+Instead of just defining it like this.
+YI minus Yi X squared, we just do… we take the average.
+We take the average, and some people also write 2-year, for some calculation purpose, but it's also called
+loss function. It's also called loss function.
+It's also called loss function.
+Now, this loss function, or this MSc, is basically a function of A and B. Let me tell you how.
+C.
+You are fitting a line.
+Y hat equal to AX plus P.
+Now, when you do Yi minus Yi hat square, Okay, and when you submit.
+And when we take an average, this is MSc, mean square error.
+I goes from a… Usually, You can replace
+This is why I hacked by this.
+AXI plus square. And now, this is 1 by N.
+Summation i goes forward to N.
+Yi minus AXI minus B whole squared. Now, Xi and Yi, we know.
+Okay, so let's say… It's 1, 2, 3, 4. It's 10, 20,
+30, 40. Now, what it will look like, there are 4 points, and what you're summing up?
+YI minus… A… so, first YI. First Yi is 10.
+Okay, first YI is 10.
+10 minus A times
+Okay, so 1 by 4.
+YI. YI is… we start with
+We can… we can write this like this.
+Y1 minus AX1 minus B squared.
+Plus.
+Y2 minus AX2 minus B squared.
+Plus.
+Y3 minus AX3 minus B squared plus Y4 minus AX4 minus B squared.
+Okay, and this can be written as… what is Y1? 10.
+10 minus… what is X1? 1.
+A minus B squared, plus… what is Y2?
+20 minus…
+2A minus B squared, plus 30 minus 3A minus B squared, plus 40 minus 4A minus B squared. Now see.
+here, A and B are… variables. So this is a function
+of AB, and that's why we write this as a G of AB, and some people also write it as
+I love it.
+Loss function. Or also, people also call it as a cost function.
+Okay, now, for different A and B, for selecting different A and B, we would like to see what is the cost.
+And we'd like to actually finally find that optimal A and B.
+For which this cost is minimum.
+This is basically MSc.
+We want that A and B for which this cost is minimum. That means we have to differentiate this function to find derivative.
+And if you differentiate this and try to put derivative equal to 0, this is unsolvable. This is just for 4 points. Remember, there are MILAN points in the dataset.
+There are a million points in the dataset. You cannot simply solve it by hand. You cannot simply equip it with zero and find the values of A and B. That's not possible.
+This is just for 4 points. This is the function, okay? So this is the function of A and B, and now you see.
+For a different set of… now here, you see that if you look at… just focus on this one.
+Just focus on this one.
+This is the loss every time we show it.
+Okay?
+And this is the… this is showing what is exactly is happening here.
+Okay? Now… If I swipe A, okay, you just focus on these numbers.
+See how it is changing.
+Swipe B. See how these numbers are changing. Let's fit to the best.
+Okay, so these are the best fit points. These points, which points? Basically, the best fit points are
+50.5 and 20 points, because this is giving you the least MSc.
+This is giving you the least MSc.
+Okay.
+Now, I am already snapping it to the best fit, so therefore I'm getting the best fit. So, by changing the value of A, you see it affects the MSc.
+Also, changing the value of P.
+It affects the MSc.
+Therefore, MSc is a function of A and B. For different A and B, you'll get different MSc.
+Okay.
+So, at the end of the day, we want to find optimal loss, okay? Now, writing an objective. Okay, so this is, as I told you.
+that… Usually what we do.
+This is D of AB.
+One by N.
+summation i equal to 1 to n, you can also write it like this.
+Yi minus X minus D squad.
+Right? This is the way. So usually, for any Xi, we have an error EI, which is Yi minus Yi hat, which is Yi minus A times X plus B.
+So we squared.
+Okay, why we square it? Because…
+plus 5, there is a plus 5, there can be a minus 5. So I don't want them to get canceled. Okay? And…
+Also… Squaring.
+If you square it, one of the fundamental reasons I'm telling you, If you square it.
+Okay, so this becomes a square function.
+Okay, this guy becomes a square function.
+Okay? And if you have a square function, square function always looks like this.
+Okay, square function.
+In higher dimension, looks like this. Or in one dimension, looks like this.
+And what is the best part of this? It's a convex function.
+The most important reason for squaring the errors.
+is to get a convex function, okay? So this J of AB, which
+See, what is our goal? We want to minimize this function.
+We want to minimize J of AB.
+And J of AB is a square function, J of AB looks like this.
+And when there's a convex function, it always have global minima.
+That is what we want to find.
+We always have global minimum. Global minimum is… minimum is here.
+Okay, global minimum. This is a convex function, and every convex function has a global minimum.
+Okay? Had it not been a convex function, we would have been worried, because in machine learning, when it comes to regression.
+It always have a convex function, too.
+find the minimum. I mean, we want to minimize the convex function, we want to find that AB.
+Which will give me this minimum. But in deep learning.
+None of the functions are convex. They are all not convex functions, and there, we have several different methods to deal with that.
+But here, in case of simple regression.
+Or multiple linear regression, simple linear regression or multiple integration. We always have a convex function to minimize.
+That's the beauty.
+Okay.
+Now, let's… let's start how… how V goes.
+Let's start with A equal to 40.
+Let's start with, the polls are started. Please start voting. I'll wait for 2 minutes.
+Rest of the participants, there are 11 people. Please vote quickly.
+I think there are only 8 students.
+Purple.
+H1. Yes, it's H.
+Yeah.
+Okay, I think we're done. Six students are done. Please,
+Rate the rest of the two.
+Yeah, sir, I think we can go on, too.
+Oh, okay.
+Thank you, sir.
+Thank you.
+Okay, fine. So, now we have a value of A and we have a value of B.
+Okay?
+So… So our line.
+is Y equal to 40x plus 30?
+Okay?
+So, therefore, obviously, this is your line, and…
+We can see what is a Y hat here, we can see the difference, we can square the difference, and we can also find MSc.
+for a different set of points, we'll find MSc.
+So let me go along with this one. First, let me, you know, play the first one, where A is 14, B is 13. Okay, so all of these things are getting
+Populated here.
+Okay? And now, for this A and B, I'm getting the MSc to be 96.2.
+Okay, if I slightly select… If slightly select a different setup, let's say, let me select
+This to be 39.
+And let me select this to be different, okay?
+Okay. Now, using this, let's play again.
+All these are calculated automatically.
+And I got another MSc. And you can see, the MSc now is 132.
+The MSc now is 132.
+Okay? Now, if you select another one, let's select another one.
+Let's change it.
+this to some… some random.
+And let's play it again.
+Okay, now let's look at the MSc, okay? For different values of A and B, we are getting different MSc. What is MSc? MSc, as I told you.
+MSc is basically nothing but this.
+One by N?
+Summation, Yi minus, Y, I, square. This…
+Okay? So our job is to find the best AB that will give us the less… least MSc.
+That will give us the least MSc. Here you see that
+least MSc is coming out to be 96.2, to be honest.
+Okay.
+Mount… for different values, we'll just give us the different MSc. So here, this… you can see that
+I have tri- okay. So, I have tried a different
+5 different values of A and B here.
+5 different values of A and B, and I got one more MSc which is more laser. So for A equal to 15, B equal to 20, I get the least MSc here. So finally, I can select the MSc to be
+you know?
+are the A and B2B, whatever's expected, that is, 50 and 20.
+So here, this is basically if you look at the error surface here, this is the error surface. Usually,
+for A equal to 30 and B equal to 60, you can see that this is called an NAIR surface.
+And here you can see, there's a minimum here.
+Okay, here you can see there is a minimum here.
+Now, what we generally do, when you have an error surface, so given any, for example, let's say…
+Arrow surface like this.
+So, we project it in 2D.
+Okay, when you project this error surface in 2D,
+you will see something called Contuce.
+For example, if I project this point here, Then I project…
+This here will give me a circle kind of thing.
+And for at every level, it will give me some circle, because if I actually cut it at certain…
+Z value.
+Okay, this is basically the surface Z equal to…
+X squared plus Y squared. Something very close to that.
+Okay, if I cut it at Z equal to some… let's say, if I'm cutting it at
+Z equal to this particular cut, this particular cut, let's say I'm cutting it at z equal to 3, then it will become X squared plus Y square equal to 3. So it is just X squared plus Y square equal to
+square root of 3 squared. It's a radius… circle of radius 3, and it can be seen to be something like here, it is reflected.
+Okay, now… These are called contours, or label curves, of the given surface.
+Okay, any setup points.
+Okay.
+So, it is just a set of points that equal to K.
+That's all. Where Z is 1, Z is 2, Z is 3, Z is 4, Z is 5.
+Okay? And you see that here, we… our aim is to Find that A and B.
+Okay, now see what exactly… this is lost landscape, by the way. This is a loss function.
+for any A and NEV, you'll get AB, and this point will be… J of AB.
+This is surface. For any A and any B, this point will be J of AB. The height will be J of AB.
+Okay, you select any A. Any A you select, and any B you select, it will always give you J of A. So all these values, which can be also seen here, so this value can be seen here. These two values can be seen somewhere down here.
+I don't know, maybe here or here. So, you can see all these values here on the contuce tool. It is very difficult to see here, but on the contuce, on the 2D projection, all these values can be seen here. Now, if you look at this level surface, and this is called
+Label, surface, or contuce.
+Okay? Now, usually what you do in gradient desert for… what is your… what is your aim, is to reach to this place, okay? Which is here.
+Okay, this place corresponds to this place. Okay? Now, what gradient testing algorithm says is start Any random, maybe.
+Scott?
+any random AB.
+Okay? Find the gradient of J, J is about MSc.
+Find the derivative of this function.
+YI minus Yi hat squared.
+I goes from 1 to L. So let me show you one… let me show you the derivative of this, okay? So how to compute the derivative of this.
+So, J-Op AB.
+is summation Yi minus, A minus
+AX minus BXI, so by that.
+square.
+So, this is a function of two variables. So, first, we'll find The derivative of this?
+with respect to A,
+And if you find derivative of this with respect to A, trust me, just a matter of taking to this side and differentiating this.
+So it becomes… Finally, it has to be something very close to XI times.
+YI minus Yi hat.
+Okay, and if you differentiate this with respect to B,
+It comes out to be simply YI minus Yi.
+Okay, if you differentiate this and arrange the terms, you'll get these simple derivatives. That's all.
+To differentiate this, and… find it, you'll get this. So, usually.
+One buy-in remains to be here, always.
+Some people…
+write 2 here to cancel out these two, because if you don't write 2 here, the 2 will come here extra. So for that cancellation purpose, we write it like this, 2. Okay? So these are the
+gradients, okay? So, the gradient of J is this.
+1xN?
+You can write 1x2 and also, minus sign you can take outside.
+Summation, Xi.
+YI minus why I hacked.
+And 1 by 12, Summation, Yi minus, yact.
+This is the gradient, okay? This is the gradient with respect to A, and this is the gradient with respect to B, or the derivative with respect to B.
+Now, as I told you,
+The algorithm says, very simple, once you get the gradient, then there is something called update rule.
+Okay? You start with random, maybe.
+start with any AB you want, okay? Then find the gradient, and now you're already started, let's say this is the old AB, you started with this, old A and old B.
+Okay, then update rule says the new A is to be obtained by taking old A
+Minus learning rate times the gradient of loss with respect to A.
+This will be… This will be this. Okay, and be new.
+Will be, be old, Minus gradient of this with respect to…
+Okay, and this way, you'll get this.
+Okay, this is all happening at A and B. Please understand.
+Okay, this is all happening at A&B.
+YI hat contains A and B.
+Okay, so this is the update rule, and then you look at the convergence criteria. You set up some convergence criteria that the difference between the A old and A new
+you want to set it to some level, okay? I don't want this difference. If this difference happens to be this, I will stop my algorithm. So now.
+Using the contours, you can randomly start anywhere else you want.
+You can randomly start anywhere else you want, and your job is to approach gradually approach To this minimum.
+Right? Your job is to gradually approach to this minimum.
+So, because I told you that, actually, this is called Hiker's Map, by the way, and you can start anywhere else on the Hiker Map, and you'll try to get to that particular
+Point.
+Okay, these are the gradients I have shown you.
+Actually, you can write 2, but usually, if you define the loss function like this.
+So there are… some people define the loss function like this, as I told you, 1 upon 2N, summation.
+YI minus ya hected square.
+But if you define the loss function like this.
+YI minus Y hat square, you will get 2 here, but that is okay. I mean, this is not really necessary. You can get rid of 2 by defining it… by defining it like this, so that's not the big deal. So you… it's your choice, how do you define it?
+Now, here you see.
+that…
+When it comes to gradient, okay, when it comes to gradient, the gradient is always pointing towards the direction of the increasing surface.
+Okay? Gradient will point always Towards the direction of increasing surface at any point.
+This gradient, this guy.
+Okay? But minus of gradient will point in opposite direction.
+That's why we call it gradient descent.
+Okay? This is called gradient ascent.
+And we are interested in gradient descent. We want to descend towards the surface. We want…
+to start somewhere else and gradually come down decent, and that's why we use the update equation. When it comes to update equation, we use
+eta times minus eta times gradient, okay? This is, at iteration k plus 1, we use XK minus eta times gradient. So minus will basically
+will pull the gradients in opposite direction. Actually, the direction of the gradient is always in the direction of surface increasing.
+This might you have… you might have done in this class. Now, let's start with the gradient descent, by the way.
+So this is the updated equation.
+Okay, and then we write down the table, we fill the table straight away.
+Okay, and this is the table, and we got… Some to be this much.
+No?
+Let's see.
+how it happens. So, basically, I'm starting my random AV somewhere else here.
+Okay?
+Which is… A, and the alpha, I'm going to put 0.05.
+Okay.
+And if you look at the… usually, what I want, that it should come towards the minimum.
+Okay, so let's see.
+What happens is…
+And look at this table also. Initially, we start… you may start at any point, wherever you want, I mean, it's not necessary, but if we look at it at this point, we are starting at 0, AB equal to 0, 0.
+Okay, then we are computing the gradient at A equal to 0, gradient at B equal to 0, and using that, we are computing MSc.
+MSc is way higher. That means we are almost Plotting a flat line.
+We are almost plotting a flat line, so you can start. But if you plot a flat line, you can see the errors, the error bar, very high error bar.
+Okay? So let's look at it very carefully.
+And now, Let me play this.
+And you see, as the value of A and B is getting updated.
+the… we are moving towards this, so every time you see the value of A and B, it's getting updated here, so there are tons of values of A and B.
+That we're getting.
+And now look at the MSc.
+look at the MSc for different values of A and different values of B.
+The line is still moving towards this, the gradient is still moving towards this. Now, here, the alpha is 0.05. Okay, now, if I slightly change the alpha.
+And make it… 0.23.
+Now, what will happen, Z?
+Now, gradually.
+If you make high alpha, it will not go slowly like this. It will take a long jump, okay? And sometimes it may overshoot the minimum. That can be a problem. So let's start with the… with the alpha very high, and let me play. You see?
+It is going towards the minimum, but some way or the other, it is overshooting the minimum sometimes.
+If I take very much high, like 1.5, it will diverge. This algorithm will never give you A and B.
+The loss exploded.
+So…
+Because the update equation, if you look at the update equation, it says if you want to compute the next XK, next value of
+A and B, so you can write it like this.
+If you want to compute the AK plus 1,
+take old AK and compute the gradient.
+Okay, at AK, or you can say BK plus 1?
+PK minus eta times… Or, if you don't like these equations, you can write this as like this.
+J. Let me call it J.
+This is Ticket.
+Again, this is done at BK. So, here.
+So, we have different values of
+Alpha will also see that algorithm is diverging at the moment.
+So let's take a fairly good value of alpha, let's take 1, and let's start again to play.
+See, gradually, now what is happening?
+how the line is getting fitted, okay? Look at the line.
+Look at the loss. This is MSc.
+And look at the way it is approaching to minimum.
+It will take some time, because if you take alpha very, very slow, or very small, it will take a lot of time to reach to minimum, okay? Because it is gradually updating the things.
+Okay, now we are moving, moving, moving.
+The line is getting fitted as we are moving towards the minimum.
+We're trying to find out that value of… see, minimum doesn't mean A…
+So it's very… be careful about this, okay?
+So now, we are getting close to the minimum, and one stage will get minimum.
+Now, if alpha is slightly high, and if I find it again, see, quickly line got fitted. Okay, slightly. So, this is a very nice learning rate. So…
+There are certain other things which are basically called eruptive learning rate, you know, you… you can… also use…
+learning rate as alpha by root t, where t is a number of iterations. So, for example.
+If you are at XT plus 1, You can also do that.
+Okay? Where, let's say, you are at the fifth iteration. Then, how will you compute X6? X6 is computed as
+X phi minus alpha by root of 5 times gradient of G. So this will also be there, so there's a lot of research going on this, how to actually set up the learning rate, but at the end of the day, to fit this line here is to go to this minimum, which is occurring at 0, basically, and to reduce this MSc loss.
+to as low as possible. And we would like to finally see, initially, the loss is very high.
+And then loss becomes gradually zero, and then loss stagnates. Now the loss becomes static. There's no point in going with this.
+Flip it.
+So, learning rate alpha, as I told you, that when it comes to learning rate alpha.
+So you can actually see how it actually, for different values of learning rate, how its algorithm is converging that I am showing you.
+Some, some, some learning that algorithm might diverge.
+P.
+Stopping criteria, you can have stopping criteria for this algorithm could be… Max iterations.
+the… Value of the gradient, or the norm of the gradient, and
+Alpha. So let's see how it actually been there.
+how it works, so…
+norm of the gradient, if you look at the norm of the gradient, it is just, whatever the gradient you get, you can set up it here. And for different value, I can set up these different values. And as I set up these different values, it will show you the same thing that I have shown in the last slide.
+I don't want to get into that detail.
+So, you can start anywhere else.
+And still, you'll converge.
+You can start randomly anywhere else. A random AB, you can start. Okay? Click to choose A0B0, your initial. You can select here also. You can select here also. You can select here also. Still, you'll get…
+Select heroes.
+So, select any AB, but now look at the number of iterations it takes. So, the closer you take, it less… it requires less iteration.
+And the further you take, it requires some more regression. And you really don't know. I mean…
+Whether you are closer, or whether you are… whether you are not closer.
+So there is a simple loop in, in Python.
+You can initially set SUMASUMB to 00, and compute the error, Add this.
+Add this, and compute the gradient. And you can see that this is just the same equation I'm doing.
+Treating it as this way.
+Okay, and here, you can… this is the full algorithm, I can run the algorithm.
+And you see the different values of A and B are computed here.
+Okay, so thank you so much for being with me.
+If you have any questions, you can ask. There are 2 minutes left out.
+Yeah, any question?
+Any questions so far, please?
+So if you really want to see this one also, this lab is there.
+I mean, whether you can actually see where… exactly… how this points…
+You should take any point on the surface.
+This actually corresponds to this point, it's either.
+And the gradient is always pointing towards the direction of… surface increasing.
+But if I want to see the negative of the gradient.
+the negative gradient actually comes out to be down AIC. Any point, everywhere, these are the negative gradients.
+Here. If you want to see both the gradients.
+The positive gradients are white one, and negative gradients are the blue one.
+For this ball, and if you take any other saddle-like surfaces.
+Okay, so here, probably you see the point.
+These are just, you know.
+The label curves I'm showing at this.
+Here, also, sir. Okay, so…
+Yeah, I'll share the slide, yes. So, sure, I will share the slide. Thank you so much.
+You know, you can have another surface, and…
+Here you can see there are two minimums on this surface.
+Which are easily seen, but if you look at the surface, it's very difficult to see that there are two minimums. But if you look at the level curves, it is easy to see that these are… these are the minimums that can be easily seen.
+You can draw your own surface if you want. I mean, I just can… I can draw, this surface, okay, sine x into cosine.
+See that.
+surface. You can draw this surface also.
+And you can see this label curves. This is a very famous surface, it's called 3D Gaussian, which is e to the power minus X squared plus Y squared, and these are the label curves of the surface here.
+Where the gradients are so.
+Yeah.
+Yes, folks, thank you so much. I don't… I think you don't have any questions. Thank you for attending the class.
+Thank you so much. Bye-bye.

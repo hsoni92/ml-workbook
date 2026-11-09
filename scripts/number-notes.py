@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Number, index, and cross-link the trimester-3 course notes.
+"""Number, index, and cross-link course notes under ``bits-pilani/.../notes``.
 
 Three jobs, all idempotent so the script can be re-run after adding weeks:
 
 1. Zero-pad ``week-N`` folders and ``N-*`` note files (under each subject and
    under ``transcriptions/``) so GitHub's lexicographic listing shows them in
    reading order.
-2. Write a ``README.md`` index per subject listing every note week by week,
-   plus any ``stories/`` files.
+2. Write a ``README.md`` index per subject: notes by week, plus an alphabetical
+   topic index and any ``stories/`` files.
 3. Append a ``← Previous · Index · Next →`` footer to every note, chaining all
    notes of a subject into one linear sequence.
 
@@ -38,7 +38,13 @@ def git(repo: Path, *args: str) -> None:
 def humanize(name: str) -> str:
     """Turn a filename slug into display text."""
     name = NOTE_NUM_RE.sub("", name)
-    name = re.sub(r"-transcript$", "", name)
+    for suffix in (
+        "-summary-presentation",
+        "-makeup-transcript",
+        "-transcript",
+        "-presentation",
+    ):
+        name = re.sub(re.escape(suffix) + r"$", "", name)
     return " ".join(w.capitalize() for w in name.replace("-", " ").split())
 
 
@@ -141,17 +147,41 @@ def write_footer(note: Path, prev: str, next_link: str) -> None:
 
 
 def generate_subject_index(subject_dir: Path, notes: list[Path]) -> None:
-    lines = [f"# {subject_title(subject_dir.name)}", ""]
+    lines = [
+        f"# {subject_title(subject_dir.name)}",
+        "",
+        "Lecture and deck notes grouped by teaching week. File names match the",
+        "topic in each note's title. Jump by week below or use the",
+        "[topic index](#topic-index) for alphabetical lookup.",
+        "",
+    ]
+    mind_map = subject_dir / "mind-map.md"
+    if mind_map.is_file():
+        lines += [
+            "**Revision:** [Mind map](mind-map.md) — acronyms and one-liners for the whole course.",
+            "",
+        ]
     current_week: int | None = None
+    topic_rows: list[tuple[str, str, int, Path]] = []
     for note in notes:
         week_num = int(WEEK_RE.match(note.parent.name).group(1))
+        title = first_h1(note) or humanize(note.stem)
+        topic_rows.append((title.lower(), title, week_num, note))
         if week_num != current_week:
             if current_week is not None:
                 lines.append("")
             lines += [f"## Week {week_num}", ""]
             current_week = week_num
-        title = first_h1(note) or humanize(note.stem)
         lines.append(f"1. [{title}]({note.relative_to(subject_dir).as_posix()})")
+    if not notes:
+        lines += ["_No week notes yet. Transcripts may still be under_ `transcriptions/`.", ""]
+    if topic_rows:
+        lines += ["", "## Topic index", ""]
+        lines.append("| Topic | Week |")
+        lines.append("| --- | --- |")
+        for _, title, week_num, note in sorted(topic_rows, key=lambda r: r[0]):
+            rel = note.relative_to(subject_dir).as_posix()
+            lines.append(f"| [{title}]({rel}) | {week_num} |")
     stories = subject_dir / "stories"
     if stories.is_dir():
         story_files = sorted(stories.glob("*.md"))
@@ -171,16 +201,29 @@ def generate_top_index() -> None:
     lines = [
         f"# {title}",
         "",
-        "Course notes by subject. Each subject has a week-by-week index and every",
-        "note carries a Previous/Next footer so the notes read as one linear",
-        "sequence. Regenerate everything with:",
+        "Course notes by subject. Open a subject index for a **week-by-week** list",
+        "and an alphabetical **topic index**. Each note links to the previous and",
+        "next topic in reading order.",
+        "",
+        "Maintain indexes and cross-links:",
         "",
         "```bash",
+        f"python3 scripts/rename-notes-by-topic.py {rel_notes.as_posix()}",
         f"python3 scripts/number-notes.py {rel_notes.as_posix()}",
         "```",
         "",
+        "## Subjects",
+        "",
+        "| Subject | Topics | Index |",
+        "| --- | ---: | --- |",
     ]
-    lines += [f"- [{subject_title(d.name)}]({d.name}/README.md)" for d in subjects]
+    for d in subjects:
+        count = len(collect_notes(d))
+        name = subject_title(d.name)
+        mind = " — [mind map]({}/mind-map.md)".format(d.name) if (d / "mind-map.md").is_file() else ""
+        lines.append(
+            f"| {name} | {count} | [{name}]({d.name}/README.md){mind} |"
+        )
     (NOTES_DIR / "README.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 

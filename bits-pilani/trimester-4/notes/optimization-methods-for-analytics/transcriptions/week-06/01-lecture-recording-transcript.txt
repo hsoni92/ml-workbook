@@ -1,156 +1,619 @@
-<!DOCTYPE html>
-<html data-userprofile-context="{&quot;hasProfileCardAccess&quot;:false}" data-mathjax-context="{&quot;renderLatex&quot;:true,&quot;outputScale&quot;:1.5}" data-logging-endpoint="/d2l/lp/logger/provision?sessionToken=NjYwNiw" lang="en-gb" data-lang-default="en-gb" data-intl-overrides="{&quot;number&quot;:{&quot;patterns&quot;:{&quot;decimal&quot;:{&quot;negativePattern&quot;:&quot;-{number}&quot;},&quot;percent&quot;:{&quot;positivePattern&quot;:&quot;{number} %&quot;,&quot;negativePattern&quot;:&quot;-{number} %&quot;}},&quot;symbols&quot;:{&quot;decimal&quot;:&quot;.&quot;,&quot;group&quot;:&quot;,&quot;,&quot;negative&quot;:&quot;-&quot;,&quot;percent&quot;:&quot;%&quot;},&quot;groupSize&quot;:[3]},&quot;date&quot;:{&quot;hour24&quot;:false,&quot;calendar&quot;:{&quot;firstDayOfWeek&quot;:0,&quot;dayPeriods&quot;:{&quot;am&quot;:&quot;AM&quot;,&quot;pm&quot;:&quot;PM&quot;},&quot;months&quot;:{&quot;short&quot;:[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;,&quot;Sep&quot;,&quot;Oct&quot;,&quot;Nov&quot;,&quot;Dec&quot;,&quot;&quot;],&quot;long&quot;:[&quot;January&quot;,&quot;February&quot;,&quot;March&quot;,&quot;April&quot;,&quot;May&quot;,&quot;June&quot;,&quot;July&quot;,&quot;August&quot;,&quot;September&quot;,&quot;October&quot;,&quot;November&quot;,&quot;December&quot;,&quot;&quot;]},&quot;days&quot;:{&quot;short&quot;:[&quot;Sun&quot;,&quot;Mon&quot;,&quot;Tue&quot;,&quot;Wed&quot;,&quot;Thu&quot;,&quot;Fri&quot;,&quot;Sat&quot;]}},&quot;formats&quot;:{&quot;dateFormats&quot;:{&quot;short&quot;:&quot;dd/MM/yyyy&quot;},&quot;timeFormats&quot;:{&quot;short&quot;:&quot;h:mm tt&quot;,&quot;medium&quot;:&quot;h:mm tt&quot;,&quot;full&quot;:&quot;h:mm tt ZZZ&quot;}}}}" data-oslo="{&quot;batch&quot;:&quot;/d2l/api/oslo/batch?languageId=11&quot;,&quot;collection&quot;:&quot;/d2l/api/oslo/collection?languageId=11&quot;,&quot;version&quot;:&quot;W/\&quot;20.26.10.26259.0\&quot;&quot;}" data-timezone="{&quot;name&quot;:&quot;India - Kolkata&quot;,&quot;identifier&quot;:&quot;Asia/Calcutta&quot;}" data-terminology="{&quot;outcomes&quot;:&quot;outcomes&quot;,&quot;educator&quot;:&quot;educator&quot;,&quot;moduleHierarchy&quot;:&quot;unit&quot;}" data-app-version="20.26.10" dir="ltr" data-telemetry-endpoint="https://prd.ap-south-1.telemetryservice.brightspace.com/api/events/" data-cdn="https://s.brightspace.com/apps/brightspace/20.26.10.26259/" data-global-context="{&quot;orgUnitId&quot;:&quot;6606&quot;,&quot;orgId&quot;:&quot;6606&quot;,&quot;userId&quot;:null}" data-he-context="{&quot;activeOrgEnrollment&quot;:false,&quot;applySandboxing&quot;:false,&quot;bcsansFontAllowed&quot;:false,&quot;contentStyler&quot;:false,&quot;contentStylerCssOverride&quot;:&quot;&quot;,&quot;enableLmsPathChecking&quot;:true,&quot;generativeAIEndpoint&quot;:&quot;&quot;,&quot;h5pContext&quot;:null,&quot;insertElement&quot;:false,&quot;insertPractice&quot;:false,&quot;layouts&quot;:false,&quot;mathRenderScale&quot;:1.5,&quot;maxFileSize&quot;:2147483648,&quot;mentions&quot;:true,&quot;orgUnitId&quot;:&quot;6606&quot;,&quot;orgUnitPath&quot;:&quot;/content/&quot;,&quot;pasteFormatting&quot;:&quot;merge&quot;,&quot;sourceEditable&quot;:false,&quot;uploadFiles&quot;:false,&quot;useNewTinyMCEVersion&quot;:true,&quot;viewFiles&quot;:false,&quot;wmodeOpaque&quot;:true}" data-css-vars="{&quot;--d2l-branding-primary-color&quot;:&quot;#ff812c&quot;}">
-<head>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Login - BITS Pilani Digital</title>
-<link rel="preconnect" href="https://s.brightspace.com/lib/bsi/2026.10.234/" crossorigin>
-<link rel="dns-prefetch" href="https://s.brightspace.com/lib/bsi/2026.10.234/">
-<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.10.234/unbundled/bsi-unbundled.js" as="script" crossorigin="anonymous">
-<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.10.234/unbundled/navigation.js" as="script" crossorigin="anonymous">
-<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.10.234/unbundled/navigation-main-header.js" as="script" crossorigin="anonymous">
-<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.10.234/unbundled/navigation-link-image.js" as="script" crossorigin="anonymous">
-<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.10.234/unbundled/html-block.js" as="script" crossorigin="anonymous">
-<script>
-(function(){var client;var errors = [];window.addEventListener('d2l-logging-loaded', function(e) {client = e.detail.createClient('uncaught-errors', { shouldThrottle: true });if (errors.length > 0) {client.legacyErrorBatch(errors);}});var handleError = function(data) {if (!data.message) return;if (data.error && data.error.stack && (data.error.stack.includes('/content/') || data.error.stack.includes('/shared/'))) return;if (client) {client.legacyError(data.message, data.source, data.lineno, data.colno, data.error);} else {errors.push(data);}};window.addEventListener('error', function(e) {handleError({ message: e.message, source: e.source, lineno: e.lineno, colno: e.colno, error: e.error });});window.addEventListener('unhandledrejection', function(e) {handleError({message: e.reason ? (e.reason.message ? e.reason.message : e.reason) : '',error: e.reason});});})();
-(function(){try { localStorage.setItem('XSRF.Token','');} catch(e) {}})();
-(function(){if(window['FontFace'] === undefined) { window.d2lFontsLoaded = true; return; }window.d2lFontsLoaded = false;Promise.all(['400','700'].map(function(w) {return new FontFace('Lato','url(https://s.brightspace.com/lib/fonts/0.6.1/assets/Lato-' + w + '.woff2) format("woff2")', {style:'normal',weight: w}).load();})).then(function() {window.d2lFontsLoaded = true;if(window['D2L'] && window.D2L['FontsLoaded']) { window.D2L.FontsLoaded(); }});})();
-(function(){
-D2L = window.D2L || {}; D2L.LP = D2L.LP || {}; D2L.LP.Web = D2L.LP.Web || {}; D2L.LP.Web.UI = D2L.LP.Web.UI || {};
-D2L.LP.Web.UI.Flags = {
-{"award-enable-copy-workflow":false,"awards-allow-unenroll-bake":true,"awards-ui-fetch-from-orgunit":true,"create-space-experimental-brightspace-object-types":false,"MAV-5508-welcome-widget-create-new":true,"ipsis-sourcesystem-migration":true,"ipsis-provider-oldstandardcsv":false,"ipsis-oneroster-csv-powerschool":false,"ipsis-oneroster-full-sync-implicit-unenrollments":false,"ipsis-esb-lis":false,"hyrl-611-ilp-user-sourcedid-update":true,"hyrl-4009-filter-change-force-full-sync":false,"hyrl-5142-department-location":false,"f17778-oneroster-psur":false,"f19471-gg4l-oneroster-grades-passback":true,"hyrl-1999-oneroster-rest-1p2":false,"hyrl-4029-academic-session-merge":false,"hyrl-2962-cancel-batch":false,"hyrl-3638-user-default-inactive-option":true,"hyrl-3205-psur-firstName-fallback":false,"hyrl-3587-hylia-data-pond":false,"F18735-lti-special-access-ui-feature-flag":false,"F16988-add-to-calendar":true,"advanced-assessments-groups":true,"nim-5386-modify-activity-display-return-to":true,"nim-5395-update-org-unit-id-on-activity-iteration":true,"nim-5243-consolidate-evaluator-and-publisher-patch-actions":true,"nim-5812-modify-aa-face-save-order":true,"nim-5846-lock-publisher-rule-selection-when-submissions-received":true,"nim-5757-aa-learner-candidates-route-improvements":false,"nim-6384-save-actions-complete-after-annotations-processed":true,"PHNX-3264-unavailable-content-visibility-setting":true,"F19162-enable-content-face-releaseconditions":true,"F21912-enable-content-face-competencies":true,"F19163-enable-content-face-standards":true,"IDCS-15-edit-content-file-descriptions":true,"PHNX-1554-enable-refactored-completion-summary":true,"PHNX-2629-access-unlimited-depth":true,"IDCS-283-edit-lti-descriptions":true,"EP-1169-use-content-search":true,"EP-1432-enable-description-scrolling-hovering":true,"EP-1580-enable-url-updating-in-lessons-next-prev":true,"PHNX-2357-user-guided-grade-associations":true,"PHNX-2649-lessons-course-overview":true,"PHNX-3198-respect-availability-window":true,"PHNX-3065-lessons-quicklink-current-window-navigation":true,"PHNX-2766-lazy-load-content":true,"PHNX-2988-lessons-full-date-tooltip-and-aria":true,"PHNX-3063-support-availability-types":true,"PHNX-4040-improved-file-topic-uploader":true,"PHNX-3190-valence-get-user-topic-completions-ignores-classlist-presence":true,"PHNX-4337-lti-multigrades-link-existing-button-fix":false,"EP-1454-enable-module-level-outcome-alignment":true,"PHNX-5006-enable-immersive-lessons-content-view":true,"PHNX-5314-lessons-live-polling":true,"usa-1243-discussions-due-date":true,"FED-3067-Annual-Consumption":true,"cpd-add-record-from-award":true,"fed-54-in-progress":false,"FED-4668-lift-outcomes":true,"FED-4649-content-gen-import-expand":true,"FED-4285-content-templates":true,"LUMI-275-full-screen":true,"LUMI-276-split-view":true,"HAI-1593-content-picker-quiz":true,"HAI-1591-content-picker-ideas":true,"HAI-1592-content-picker-summary":true,"HAI-1821-content-picker-lss":true,"HAI-596-Interventions":true,"FED-6732-quiz-custom-instructions":true,"FED-6876-idea-custom-instructions":true,"rpc-recalculate-all-users-fix":true,"AUT-4438-Grades-Recalc-Restrict-Users":true,"shield-15581-dev-add-bulk-edit-group-names-ui":true,"shield-16289-dev-add-groups-enrollment-pages":false,"oad-include-asn":true,"EP-1443-enable-lightcast-skills":false,"outcomes-set-course-dataset":true,"outcomes-set-org-dataset":true,"EP-1420-enable-createspace-picker":true,"outcome-sets-scales":true,"outcomes-coverage-grid":true,"de44716-lti-iframe-resize-limit":false,"lti-apps":true,"shield-14553-add-semester-department-filters":true,"employee-training-my-courses-page":false,"BORG-5429-Hotspot-Question-Type":false,"BORG-6738-shared-question-components":false,"BORG-7129-true-false-universal-question":false,"PHNX-5035-smart-curriculum-mobile-dvh-viewport-fix":true,"FED-9107-learner-mode-config-choose-content":false,"FED-2493-Docs-PDF":true,"HAI-2170-study-notebook":false,"HAI-3146-modify-knowledge-checks":false,"HAI-3607-lumi-tutor":false,"chrome-unload-deprecation-opt-out":true,"MAV-6565-lms-context-provider-host-head-filter":true,"MAV-5203-createspace-h5p-library":true,"MAV-6452-createspace-discard-changes-dialog":true,"GAUD-8852-use-input-generated-styles":true,"GAUD-8849-Use-input-radio-generated-styles":true,"GAUD-8351-dialog-resize-telemetry":true,"PHNX-3234-dialog-alignment-fix":true,"shield-16276-add-accessible-tooltip-for-edit-in-place":true,"d2l-offscreen-sizeless":true,"GAUD-9564-accessible-grid-navigation-with-up-down-keys":true,"GAUD-8299-core-tabs-use-new-structure":true,"GAUD-10260-get-focusable-fix":true,"GAUD-10337-use-alert-toast-popover":true,"GAUD-10409-prefer-native-general-dialogs":false,"GAUD-10336-prefer-native-fullscreen-dialogs":false,"GAUD-10581-use-intersection-observer":true,"button-toggle-no-change-event-on-prop-update":true,"install-wizard-dialog":true,"unique-reoffer-code":true,"MAV-5974-hwep-delete-config-button":false,"fix-navbar-flicker":true,"PHNX-4309-iframe-modal-dialog-zindex-fix":true,"AUT-4452-Grades-Formula-Special-Characters-HTML-Fix":false},
-function(feature, defaultValue) {
-const featureValue = D2L.LP.Web.UI.Flags.ListedFlags[feature];
-return featureValue !== undefined ? featureValue : defaultValue;
-}
-};
-})();
-</script>
-<meta name="robots" content="noindex" />
-<link rel="icon" href="/d2l/lp/web/faviconView?variant=0&amp;version=1" />
-<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/lib/bsi/2026.10.234/bsi.css" />
-<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/lib/reset-css/1.1.0/reset.css" />
-<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/apps/brightspace/20.26.10.26259/web-packages/D2L.LP.Web.Desktop.css" />
-<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/apps/brightspace/20.26.10.26259/web-packages/D2L.LP.Auth.Web.Desktop.css" />
-<style>
-html { font-size:20px; }
-#ff812c; }
-.d2l_1_0_786 {margin-bottom:30px;}
-.d2l-button-sso-1[primary] {
-#006FBF;
-#FFFFFF;
-hidden;
-normal;
-break-word;
-}
-.d2l-button-sso-1[primary]:hover,
-.d2l-button-sso-1[primary]:focus {
-#005089;
-}
-.d2l_1_1_491 {margin:20px 0px;}
-.d2l_1_3_623 {margin:20px 0px 0px 0px;}
-.d2l_1_4_554 {margin:10px 0px;}
-.d2l_1_8_543 {padding:5px;}
-.d2l_1_9_331 {margin-bottom:1em;}
-.d2l_1_10_130 {background-color:#fefcef;}
-.d2l_1_11_339 {border:1px solid #faecbb;border-radius:4px;}
-.d2l_1_12_269 {background-position:left top;}
-.d2l_1_13_59 {background-image:url('/d2l/img/0/SystemCheck.Main.itemWarning.png?v=20.26.10.26259');background-size: 18px;}
-.d2l_1_14_989 {padding-left:29px;}
-.d2l_1_15_392 {min-height:16px;}
-.d2l_1_16_106 {margin-top:5px;}
-.d2l_1_17_618 {float:right;}
-</style>
-<script>(function() {})();</script></head>
-<body class="d2l-body d2l-typography vui-typography daylight d2l-body-unresolved d2l-body-flex">
-<div class="d2l-body-main-wrapper"><div class="d2l-navigation-s-no-login d2l-navigation-s-main-no-links"><d2l-labs-navigation><d2l-labs-navigation-main-header><div class="d2l-labs-navigation-header-left" slot="left"><d2l-labs-navigation-link-image class="d2l-navigation-s-logo" src="/d2l/lp/navbars/6606/theme/viewimage/15587/view?v=20.26.10.26259" text="BITS Pilani Digital" tooltip-offset="0"></d2l-labs-navigation-link-image></div></d2l-labs-navigation-main-header></d2l-labs-navigation></div><div class="d2l-page-main d2l-max-width" style="background-color: transparent;"><div class="d2l-page-main-padding"><h1 class="d2l-login-portal-heading d2l-page-title d2l-heading vui-heading-2" style="color: #565A5C;">Welcome to LUMEN</h1><div class="d2l_1_0_786"><d2l-html-block html="&lt;p>The Learning Management System of BITS Pilani Digital&lt;/p>"></d2l-html-block></div><div class="d2l-login-portal-flex"><div><div class="d2l-login-portal-login-container"><div class="d2l-login-portal-login d2l-login-portal-bordered"><div class="d2l_1_1_491">
-<button type="button" primary class="d2l-button d2l-button-sso-1" id="d2l_1_2_303" style="width:100%;" data-onclick="D2L.O(&quot;__g1&quot;,0)();">Login using BITS Mail</button></div>
-<div>
-<div class="d2l-sep d2l-sep-s d2l-sep-t" aria-hidden="true"><hr /></div>
-</div>
-<div class="d2l_1_3_623">
-<div class="d2l-messagearea" id="d2l_messagearea"></div></div>
-<form data-method="post" data-scope="" data-location="/d2l/lp/auth/login/login.d2l" class="d2l-form d2l-form-primary" id="formId" onsubmit="return false;">
-<input type="hidden" name="target" id="target" value="/content/enforced/7204-T1-26_MDSDF412/Optimization Methods for Analytics4.vtt" />
-<input type="hidden" name="loginPath" id="loginPath" value="/d2l/login" />
-<div class="d2l_1_4_554">
-<div class="d2l-fieldgroup">
-<div class="vui-field-row">
-<label for="userName" class="d2l-field d2l-label d2l-label-required">Username</label>
-<span class="d2l-validator" id="d2l_1_5_933"></span>
-<input type="text" class="d2l-edit d2l-edit-required" id="userName" name="userName" autocomplete="username" autocorrect="off" autocapitalize="off" />
-</div>
-<div class="vui-field-row">
-<label for="password" class="d2l-field d2l-label d2l-label-required">Password</label>
-<span class="d2l-validator" id="d2l_1_6_212"></span>
-<input type="password" class="d2l-edit d2l-edit-required" id="password" name="password" autocomplete="off" />
-</div>
-</div>
-<button type="button" class="d2l-button" id="d2l_1_7_816" data-onclick="D2L.O(&quot;__g1&quot;,1)();">Log In</button></div>
-</form>
-</div><div class="d2l-systemcheck" style="margin-bottom:1em;">
-<noscript><div class="d2l_1_8_543 d2l_1_9_331 d2l_1_10_130 d2l_1_11_339">
-<div class="d2l-container-icon d2l_1_12_269 d2l_1_13_59 d2l_1_12_269 d2l_1_14_989 d2l_1_15_392">
-<div class="d2l-textblock d2l-textblock-strong">Warning</div>
-</div>
-<div class="d2l-htmlblock-untrusted d2l-htmlblock-wc d2l_1_16_106"><d2l-html-block no-deferred-rendering><div>Either your browser does not support <strong>JavaScript</strong> or it has been disabled through your browser&#39;s settings. The system requires a JavaScript enabled browser, and will be unable to perform the other system checks without JavaScript support.</div></d2l-html-block></div><a class="d2l-link d2l_1_17_618" aria-label="" href="/d2l/systemCheck" title="Learn more about: JavaScript">Learn more...</a>
-<div class="d2l-clear"></div>
-</div>
-</noscript>
-</div>
-</div><div class="d2l-login-portal-image d2l-login-portal-margin"><img class="d2l-image" src="/d2l/lp/login/picture?fileSystemType=Database&amp;fileId=17789&amp;v=20.26.10.26259" alt="" />
-</div><div class="d2l-clear"></div>
-</div></div></div></div><script src="https://s.brightspace.com/lib/jquery/3.7.1/jquery.min.js"></script>
-<script src="https://s.brightspace.com/lib/jqueryui/1.13.2/jquery-ui.min.js"></script>
-<script src="https://s.brightspace.com/lib/bsi/2026.10.234/bsi.js"></script>
-<script>
-window.__elasticRumOnload = function() {if (!window['elasticApm']) return;var apm = elasticApm.init({serviceName: 'LMS',serverUrl: 'https://d2l-elasticrum.apm.us-east-1.aws.cloud.es.io/',transactionSampleRate: 0.1,disableInstrumentations: ['xmlhttprequest','fetch','eventtarget','history']});apm.addLabels({ "orgName": "bitsdigital"});apm.addLabels({ "instanceName": "bitsdigital"});};
-</script>
-<script async="async" onload="window.__elasticRumOnload()" src="https://s.brightspace.com/lib/elastic-apm-rum/5.14.0/elastic-apm-rum.umd.min.js"></script>
-<script src="https://s.brightspace.com/apps/brightspace/20.26.10.26259/web-packages/D2L.LP.Web.Desktop.js"></script>
-</div><footer class="d2l-footer d2l-footer-background-color d2l-footer-top-spacing d2l-footer-top-inner-view"><div class="d2l_1_18_118 d2l-login-language-selector">
-<d2l-dropdown><d2l-button-subtle icon="tier1:browser" class="d2l-dropdown-opener" text="English (United Kingdom)" description="English (United Kingdom) – Select a locale and language"></d2l-button-subtle>
-<d2l-dropdown-menu><d2l-menu label="English (United Kingdom) – Select a locale and language" class="d2l-menu-mvc">
-<d2l-menu-item text="English (United States)" id="d2l_1_19_938"></d2l-menu-item>
-<d2l-menu-item text="English (United Kingdom)" id="d2l_1_20_277"></d2l-menu-item>
-</d2l-menu>
-</d2l-dropdown-menu></d2l-dropdown>
-</div>
-<div class="d2l-footer-default-content"><p>Powered by <span class="d2l-offscreen">D2L Brightspace</span></p><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212 17" fill="#6e7477"><g clip-path="url(#clip0_12_484)"><path d="M66.4982 8.47672C67.9121 7.76855 68.6563 6.50425 68.6563 4.79585C68.6563 2.0192 66.5291 0.293457 63.1045 0.293457H56.1851V16.7133H63.2224C66.786 16.7133 68.9133 15.0223 68.9133 12.1883C68.9119 10.3785 68.0792 9.10086 66.4982 8.47672ZM59.5001 9.87171H63.1045C64.6658 9.87171 65.5266 10.5719 65.5266 11.8415C65.5266 13.1885 64.6841 13.8993 63.1045 13.8993H59.5001V9.87171ZM62.9191 7.16307H59.5001V3.10745H62.8489C63.954 3.10745 65.271 3.44887 65.271 5.07725C65.271 6.4189 64.4356 7.15774 62.9191 7.15774V7.16307Z" /><path d="M84.1186 5.47331C84.1186 2.22588 81.7738 0.288086 77.8465 0.288086H71.2051V16.7133H74.5216V10.7025H77.8732L80.7474 16.7133H84.3784L81.1181 10.029C83.081 9.20618 84.1186 7.63515 84.1186 5.47331ZM74.5216 3.12875H77.8465C79.6367 3.12875 80.6631 3.98362 80.6631 5.47331C80.6631 7.00567 79.6367 7.88321 77.8465 7.88321H74.5216V3.12875Z" /><path d="M89.982 0.286621H86.6655V16.7132H89.982V0.286621Z" /><path d="M100.365 10.153H105.486C105.441 12.5669 103.746 14.0045 100.933 14.0045C97.7635 14.0045 95.7978 11.9441 95.7978 8.62195C95.7978 5.15447 97.7551 2.99663 100.909 2.99663C103.051 2.99663 104.559 3.96352 105.028 5.64792L105.062 5.77061H108.526L108.498 5.58257C108.005 2.25779 104.988 0.0239258 100.978 0.0239258C98.4501 0.0239258 96.2766 0.854788 94.7082 2.42449C93.1398 3.99419 92.3423 6.09469 92.3423 8.55927C92.3423 11.0238 93.137 13.127 94.6408 14.6474C96.1446 16.1677 98.1904 16.9599 100.583 16.9599C102.653 16.9599 104.526 16.2651 105.597 15.1248L105.756 16.7172H108.593V7.33365H100.365V10.153Z" /><path d="M121.852 6.93618H114.691V0.286621H111.375V16.7132H114.691V9.88755H121.852V16.7132H125.169V0.286621H121.852V6.93618Z" /><path d="M127.022 3.21664H131.983V16.7132H135.298V3.21664H140.259V0.286621H127.022V3.21664Z" /><path d="M149.045 7.33628L146.378 6.78682C145.027 6.49208 144.451 5.91461 144.451 4.85703C144.451 3.61407 145.538 2.84322 147.289 2.84322C148.881 2.84322 149.832 3.5874 149.896 4.88637L149.905 5.04507H153.225V4.87437C153.13 1.86833 150.878 0.0012207 147.348 0.0012207C143.697 0.0012207 141.147 2.0337 141.147 4.94505C141.147 7.46431 142.71 9.11937 145.664 9.73018L148.355 10.3036C149.639 10.5704 150.18 11.1185 150.18 12.1441C150.18 13.3737 149.013 14.1365 147.133 14.1365C145.333 14.1365 144.246 13.383 144.225 12.1201V11.956H140.907V12.1267C140.979 15.0874 143.422 16.9999 147.132 16.9999C150.997 16.9999 153.495 14.9994 153.495 11.9027C153.495 9.44478 152.04 7.95109 149.045 7.33628Z" /><path d="M162.633 0.288086H155.753V16.7133H159.069V11.1653H162.633C166.093 11.1653 168.418 8.97546 168.418 5.71603C168.418 2.4566 166.098 0.288086 162.633 0.288086ZM159.076 3.12875H162.055C163.929 3.12875 164.962 4.03963 164.962 5.69336C164.962 7.38976 163.914 8.32464 162.007 8.32464H159.076V3.12875Z" /><path d="M195.457 11.1292C194.916 12.8629 193.21 13.9379 191.011 13.9379C188.019 13.9379 186.086 11.804 186.086 8.48992C186.086 5.14246 187.973 3.06331 191.011 3.06331C193.183 3.06331 194.809 4.13023 195.364 5.91598L195.402 6.03601H198.859L198.826 5.84396C198.234 2.30846 195.191 0.0239258 191.074 0.0239258C186.02 0.0239258 182.625 3.43406 182.625 8.51126C182.625 13.6551 185.886 16.9772 190.935 16.9772C195.021 16.9772 198.211 14.658 198.873 11.2052L198.909 11.0105H195.489L195.457 11.1292Z" /><path d="M212 3.21664V0.286621H201.128V16.7132H212V13.7831H204.443V9.84354H211.212V7.02421H204.443V3.21664H212Z" /><path d="M171.747 13.1084H168.358L166.987 16.7132H170.422L171.747 13.1084Z" /><path d="M179.187 16.7132H182.669L181.299 13.1084H177.862L179.187 16.7132Z" /><path d="M178.07 10.5557C178.731 10.1692 179.317 9.67797 179.804 9.1034L176.459 0.309326H173.196L169.905 8.9647C170.435 9.68813 171.11 10.3053 171.892 10.7811C171.306 9.51549 171.751 7.80176 172.487 6.63748C172.665 7.40433 173.025 7.75508 173.44 8.01781C173.159 7.66706 172.94 7.1376 173.019 6.37875C173.15 5.1438 174.446 4.17424 175.663 3.77548C175.19 4.84239 175.82 5.35451 176.084 6.13736C176.553 5.83715 177.061 5.59555 177.595 5.41853C176.72 7.39899 178.71 7.92045 178.234 10.0289C178.197 10.209 178.142 10.3854 178.07 10.5557Z" /><path d="M-0.000121416 15.6864H1.63004L2.43319 14.6595V2.34326L1.63004 1.31635H-0.000121416V0.290771H7.76878C13.7826 0.290771 16.4377 3.52887 16.4377 8.31666C16.4377 13.1045 12.297 16.7186 7.71964 16.7186H-0.00292969L-0.000121416 15.6864ZM8.08471 15.301C11.47 15.301 12.5905 13.2658 12.5905 9.12618C12.5905 4.77716 10.7876 1.31635 7.64663 1.31635C7.20881 1.31184 6.77309 1.37444 6.35626 1.50172C6.20617 1.55448 6.05984 1.6164 5.91818 1.6871V14.6595C6.42225 15.1449 7.42759 15.301 8.08471 15.301Z" /><path d="M28.1985 9.53424L27.3181 13.6352H17.9106V12.5883C17.9106 12.5883 19.3147 11.1786 19.3456 11.1466C22.276 8.2126 24.5787 5.88005 24.5787 3.46215C24.5787 1.9618 23.9609 1.02691 22.8812 1.02691C21.8014 1.02691 21.1345 2.06582 21.1345 3.62352V4.4117H18.2912C18.2235 4.16672 18.1914 3.9141 18.1957 3.66086C18.1957 1.23496 20.6908 0 23.037 0C25.3538 0 27.6902 1.05358 27.6902 3.56884C27.6783 4.19317 27.5164 4.80668 27.217 5.3626C26.8948 5.96398 26.4922 6.52338 26.0193 7.02699C25.424 7.69381 24.1294 8.72605 22.9837 9.58759C22.0682 10.2784 21.2468 10.8599 20.9561 11.0666H26.5108L27.9935 9.53424H28.1985Z" /><path d="M43.7477 11.5814L42.6455 16.7133H29.7896V15.6837H31.4127L32.2257 14.6581V2.34324L31.4127 1.31766H29.7896V0.288086H38.5806V1.31766H36.4618L35.705 2.34324V15.1783H39.7896L43.3434 11.5814H43.7477Z" /><path d="M27.6259 15.1743V15.8118L26.681 16.7093H17.376V16.0785L18.3209 15.181L27.6259 15.1743Z" /></g><defs><clipPath id="clip0_12_484"><rect width="212" height="17" fill="white"/></clipPath></defs></svg></div></footer><script src="/d2l/portal/js/desktop?v=20.26.10.26259"></script>
-<script>
-D2L.LP.Web.UI.Events.OnInit.AddListener( function() {
-D2L.O("__g1",2)();
-D2L.O("__g1",3)();
-D2L.O("__g1",4)();
-D2L.O("__g1",5)();
-D2L.O("__g1",6)();
-D2L.O("__g1",7)();
-} );
-D2L.LP.Web.UI.Events.OnLoad.AddListener( function() {
-D2L.O("__g1",8)();
-} );
-D2L.OR={
-"__g1":{"0":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Navigate\",\"P\":[{\"_type\":\"url\",\"Url\":\"https:\/\/lumen.bitspilani-digital.edu.in\/d2l\/lp\/auth\/saml\/initiate-login?entityId=https%3a%2f%2faccounts.google.com%2fo%2fsaml2%3fidpid%3dC042gmm8v&target=%2fcontent%2fenforced%2f7204-T1-26_MDSDF412%2fOptimization+Methods+for+Analytics4.vtt\"}]}",
-"1":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Form.SubmitByButton\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_7_816\"}]}",
-"2":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.Authentication.Xsrf.Init\",\"P\":[\"d2l_referrer\",\"\",0]}",
-"3":"{\"_type\":\"func\",\"N\":\"D2L.LP.ActivityBar.Init\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/activityFeed\/checkForNewAlerts\"},120]}",
-"4":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.MessageArea.Init\",\"P\":[\"d2l_messagearea\",{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/validation\/errors\"}]}",
-"5":"{\"_type\":\"func\",\"N\":\"D2L.LP.Globalization.Locale.Init\",\"P\":[{\"_type\":\"anon\",\"DecimalSeparator\":\".\",\"GroupSeparator\":\",\",\"NumberNegativePattern\":1,\"PercentPositivePattern\":0,\"PercentNegativePattern\":0,\"PercentSymbol\":\"%\",\"NegativeSign\":\"-\",\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"UseNativeDigits\":false,\"GroupSizes\":[3],\"IntegerRegex\":\"^([\\\\(-]*(([01234567890123456789]?[01234567890123456789]?([01234567890123456789](,[01234567890123456789][01234567890123456789][01234567890123456789])*)?))[\\\\)-]*)$|^([\\\\(-]*[01234567890123456789]+[\\\\)-]*)$\",\"DecimalRegex\":\"^([\\\\(-]*(([01234567890123456789]?[01234567890123456789]?([01234567890123456789](,[01234567890123456789][01234567890123456789][01234567890123456789])*)))(\\\\.[01234567890123456789]+)?[\\\\)-]*)$|^([\\\\(-]*[01234567890123456789]*\\\\.?[01234567890123456789]+[\\\\)-]*)$\"},{\"_type\":\"anon\",\"InputDateFormat\":\"dd\/MM\/yyyy\",\"Is24HourClock\":false,\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"UseNativeDigits\":false,\"TimeFormat\":\"h:mm tt\",\"AmDesignator\":\"AM\",\"PmDesignator\":\"PM\",\"FirstDayOfWeek\":0,\"ShortMonthNames\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\",\"\"],\"LongMonthNames\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\",\"\"],\"ShortDayOfWeekNames\":[\"Sun\",\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\"]},{\"_type\":\"anon\",\"TextDirection\":1},{\"_type\":\"anon\",\"Culture\":\"en-gb\"},{\"_type\":\"anon\",\"JustNow\":\"just now\",\"OneMinuteAgo\":\"1 minute ago\",\"TwoMinutesAgo\":\"2 minutes ago\",\"MinutesAgoMany\":\"[0] minutes ago\",\"OneHourAgo\":\"1 hour ago\",\"TwoHoursAgo\":\"2 hours ago\",\"ManyHoursAgo\":\"[0] hours ago\",\"YesterdayTime\":\"yesterday at [0]\",\"DayOfWeekTime\":\"[0] at [1]\",\"MonthDayTime\":\"[0] at [1]\",\"Now\":{\"_type\":\"D2L.LocalDateTime\",\"Year\":2026,\"Month\":11,\"Day\":9,\"Hour\":13,\"Minute\":36,\"Second\":29,\"Millisecond\":900}}]}",
-"6":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Initialize\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/login?target=%2fd2l%2flogin%3ftarget%3d%252fcontent%252fenforced%252f7204-T1-26_MDSDF412%252fOptimization%2bMethods%2bfor%2bAnalytics4.vtt%26sessionExpired%3d0&sessionExpired=1\"},\"Error: unable to complete your request.\",{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"flash\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.FlashMessages.RpcReceivePayloadProvider\"},\"session\":{\"_type\":\"func\",\"N\":\"D2L.PT.Auth.SessionTimeout.RpcReceivePayloadProvider\"},\"messageArea\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.MessageArea.RpcReceivePayloadProvider\"},\"OR\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.ObjectRepository.RpcReceivePayloadProvider\"},\"JS\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.RpcReceiveJsPayloadProvider\"},\"CSS\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.RpcReceiveCssPayloadProvider\"},\"BSI\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Bsi.RpcReceiveJsPayloadProvider\"},\"ariaMessages\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Aria.RpcReceivePayloadProvider\"}}]}",
-"7":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.InlineHelp.Init\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/inlineHelp\/6606\/help\"}]}",
-"8":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Focus\",\"P\":[{\"_type\":\"id\",\"Value\":\"userName\"}]}"}
-,
-"d2l_1_5_933":{"0":"[\"userName\",{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Edit.ValidateRequired\",\"P\":[\"userName\"]},\"Username is required.\",null]"}
-,
-"d2l_1_6_212":{"0":"[\"password\",{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Edit.ValidateRequired\",\"P\":[\"password\"]},\"Password is required.\",null]"}
-,
-"password":{"enter":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Form.Submit\",\"P\":[{\"_type\":\"id\",\"Value\":\"formId\"},false],\"D\":true}"}
-,
-"d2l_1_19_938":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Connect\",\"P\":[\"POST\",{\"_type\":\"url\",\"Url\":\"\/d2l\/login\/locale\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"localeId\":1}],\"D\":true}"}
-,
-"d2l_1_20_277":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Connect\",\"P\":[\"POST\",{\"_type\":\"url\",\"Url\":\"\/d2l\/login\/locale\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"localeId\":3}],\"D\":true}"}
-};
-</script>
-<script>D2L.LP.Web.UI.Html.Bsi.Init('prod', 'https://s.brightspace.com/lib/bsi/2026.10.234/', ['unbundled/navigation.js','unbundled/navigation-main-header.js','unbundled/navigation-link-image.js','unbundled/html-block.js','unbundled/dropdown.js','unbundled/dropdown-menu.js','unbundled/button-subtle.js','unbundled/menu.js','unbundled/menu-item.js'], true);</script>
-</body>
-</html>
+Today, we will talk about… I'll give you a rough idea about unconstrident Optimization, some…
+some terms associated with it and everything. It's not possible to teach everything in one hour.
+But even though, if you look at my last recording, I have completed the linear programming stuff here.
+I started with this, but I thought of, you know.
+Starting from the beginning, so that…
+You will understand what exactly it is. I'll quickly go through some of the concepts, if you have any
+Problems, anything, you can just ask me.
+And we'll discuss our problems.
+Okay.
+So, here, let's talk a little bit about convex set.
+What is a convict set?
+So, first of all, let me tell you that if you talk about a simple real number, we… we… we call it R, script R. So we say X belongs to R, right?
+means X can be any number.
+Then if any vector is there, let's start with X bar. We say X bar belongs to R2.
+So here it is a number, like 2, 3, you know, 4.6, pi, any number, but when I say some number belongs to R2, then it's a pair of points, X and Y.
+or X comma Y.
+Okay, both are real numbers. When I say some vector X belongs to R3,
+means this is a vector that contains 3 components, X1, X2, X3, either this way.
+Or it can be written like this way, X1, X2,
+X3 this way, okay? So, one example of an element in R3, please note, they are all real numbers. So, element in R3 can be looked like… you can take it as 1, 1.2, and 5, something like this, okay?
+This is an example of Act 3.
+So, basically, If you have a set in RM, any subset of RN.
+N-dimensional space.
+we say that that set S is a convex set.
+Okay, that set S is a convex set, that if you take any two points in that set.
+Okay? And if we join them, The line joining them, basically.
+stay fully inside it. So there are specific conditions.
+So, usually what we do, If we select two points, X1 and X2.
+And then we consider the linear combination, lambda times… lambda 1 times X1.
+plus lambda 2 times X2, which we call it as X. And we restrict some of the conditions on these lambdas, that all these lambda 1 and lambda 2 are greater than or equal to 0, and then
+their sum must be 1.
+Okay, if this is true, That… what I want to say is, given any two points.
+X1, X2, in S.
+And if we select two lambres, which are greater than or equal to zero, and satisfies this condition.
+And then if you consider this linear combination, this is called convex linear combination. If this linear combination is still in S, then we say that
+that set is convex, okay? And that is the definition of a convex set. So, for example, if you select any two point.
+Okay, consider lambda belongs to 01.
+Okay? Then your lambda 1 will be lambda, and your lambda 2 will be 1 minus lambda. So that if you add them, their addition will be 1.
+And then consider the linear combination lambda times X1.
+plus 1 minus lambda times X2.
+If this linear combination, which is a convex linear combination, it's called X lambda. If this X lambda
+Okay? Lie fully inside this line. Fully inside this line.
+Lie fully inside the set, then we call it as a… convicted.
+Then… some of the examples of a convert set. Here you can see.
+This is an example of a convex set.
+If you take any two points and look at the line joining them.
+convex layer combination, it's still inside. Here, this is a convex set, here this is a convex set, here this is a convex set, but here, you see it's not a convex set. If you take
+See, the important thing is that, that if you find two points which is not satisfying the condition, that means that set is not convex. So, here you see this last set is not convex. Also, if you consider the star.
+Star is not also complex. If you take these two points, if you try to find
+some part of the line will go outside. Okay, these are some of the important things that you must understand.
+Then, now, if you look at the set, that is.
+the set which is basically the circle, okay? Set of all X1, X2, which are in R2, such that X1 squared plus X2 square equal to 1.
+So… any X1X2.
+Will always lie on this boundary.
+Okay? Any X on X2 will always lie on this boundary.
+Because… for X1, comma, X2.
+belongs to this set, it must satisfy X1 squared plus X2 squared equal to 1.
+So, the distance from the origin. This is a circle of radius 1.
+The distance from the origin of all these points is always 1. Any X1, X2 you select.
+Now, is it a convex set? So, it is not a convex set, because if you take a .01,
+And 1-0.
+Okay, so 0, 1…
+belongs to S. Why? Because it must satisfy this condition. 0 square plus 1 square is equal to 1. And 1-0 also belongs to S. Why? Because 1 square plus 0 square equal to 1.
+And both the point belongs to us, but if you look at their convex linear combination.
+If you look at their convex linear combination, 10 and 01, by taking lambda equal to half, so half times X1 plus half times X2, that will give you 1 by 2, 1 by 2, and 1x2 comma 1x2 does not lie on this circle.
+Okay, why 1x2 comma 1x2 does not lie on this circle? Because 1x2 comma 1x2 does not satisfy this condition.
+is not equal to 1. And therefore, the circle is not a convex set.
+This is important information that you have to understand.
+then… if you have any set in RM, and, you know, you take, for example, you take R2,
+Okay? And if you remove origin from this, so it will look like this.
+If you remove origin from this, okay, you're not considering this point. Then this is not a convex set.
+This is not a convex set, because if you single point, if you remove from any set, it no longer remains convex. For example, let's take
+in R2.
+Okay, let's take two points. 1, 0.
+and minus 1, 0. Okay, let's take these two points. Let this be X1, let this be X2. And let's take lambda equal to half.
+Okay, and let's consider the linear combination lambda times X1.
+plus 1 minus lambda times X2.
+So, lambda is half, so half times 1, 0.
+Plus, 1 minus lambda is also half.
+Half times minus 1, 0.
+So it'll be half 0.
+Plus, minus half 0.
+So this will be 0, but 0, is not there. It's a hole there, okay? So…
+This convex linear combination does not belong to it. So, therefore, if you take any set.
+Okay? If you take any set, and if you take out a single point from that set, any point, not necessarily zero.
+And you can always show that.
+A CAIC minus.
+Any point is not necessarily a convex set.
+Okay, this is an example.
+Then.
+Now look at the… the, unit ball. Now, there's a difference between unit circle and unit ball.
+There's a difference between unit circle And unit volume.
+Unit circle is a set of all boundary points.
+Which are exactly lying on the boundary.
+And unit ball.
+It's a set of all points which are on the boundary, as well as in the interior.
+Okay? So here, it satisfies this condition, X1 square plus X2 square exactly equal to 1, and here it will satisfy the condition X1 square plus X2 square, also less than 1, and equal to 1 also.
+Now…
+Now, I want to show this unit ball is a convex set, okay? I want to show this unit ball is a convex set.
+So take any X.
+Which is, let's say, X1, X2.
+Okay, and let's take any Y, which is, let's say, Y1, Y2.
+In this unit ball.
+Okay, then consider… They're convex linear combination.
+Which is lambda X plus 1 minus lambda times y.
+Okay, this one. Now, to show that, let's say this is W.
+I want to show that this W.
+this W, Is in this set.
+Okay, now to show that W is in this set.
+So, first of all, let's look at what W is.
+Lambda times X1, comma X2.
+plus 1 minus lambda times Y1 comma Y2.
+So this will be Lambda X1.
+comma, lambda X2.
+plus 1 minus lambda times Y1,
+comma, 1 minus lambda times Y2.
+Now, this I will add.
+lambda X1 plus 1 minus lambda times Y1, Comma.
+Lambda X2.
+Plus 1 minus lambda times.
+Y2, okay? Now, to show that this W is in W, this is
+inside this, I have to show that… I have to show that the square of the first.
+First square plus second square.
+is less than or equal to 1. And you have to, you know, open it, and it will be very long, so we will do one thing.
+We'll prove it very simply. So…
+Consider this combination. See, any point, if you want, to lie within this, you need to prove that the norm of that
+Okay, the norm of this point, this linear combination, less than equal to 1. So, consider the norm of this linear combination, because what is X? X is lambda X, 1 minus lambda times y.
+What is X? Small x? Is X1X2? What is small y? Y1, Y2?
+So now, you can easily see by triangular equality.
+Norm of A plus B is norm A plus norm of B.
+And by this.
+multiplicativity of the norm, you can always take the scalar outside, so we can write this as less than equal to
+Norm of X plus 1 minus 1 number. Now, this norm of X is already less than equal to 1, and this norm of Y is already less than equal to 1, because we are selecting them from B, and therefore, the unit ball is always a convex set.
+Now, look at this set.
+Set of all XY where while is then equal to sine X.
+Now, this is the Y equal to sine x.
+on the interval.
+0 to pi.
+Okay, and Y equal to half is this line.
+Okay? I want Y less than equal to sine X, and Y greater than or equal to half. So Y less than equal to sine x will be this region.
+And Y greater than or equal to half.
+will be this region. So, yellow region is a combined region, and it's very easy to see that if you take any two points in this yellow region, it's always a convex set. So, to look at this convexity, it's pretty easy. Also, you can see that this set is a convex set.
+Now… We have talked about the feasible region. What is a feasible region?
+Feasible region, you might have seen.
+That we have from the feasible region like this. It's a simplexus.
+By connecting these corner points, okay?
+This we used to call a feasible region. So, feasible region is a set of all those points in RN where A times capital X, less than or equal to B, and X greater than or equal to 0. So, this feasible region is also a convex set.
+Now, why? Now, why it is convex, sir? Because if you take any XY, belongs to feasible region, you take any XY,
+XY belongs to a physical region, then we'll always have this condition satisfied.
+Okay, now let's consider… a point W.
+Which is lambda X plus 1 minus lambda times y. Okay, this.
+And now to show that this W
+is also in the same set. We have to show that A times W is less than or equal to B.
+That's what we want to show.
+Right? If you look at them, A times W, which is A times this, which is this.
+Now, this…
+It's very clear that we know that AX is less than or equal to P, and AY is also less than equal to P. So this complete is inequality, and then we can write this equal to lambda plus 1 minus lambda times B, and hence it is this case. Okay, so any feasible region is also a convex set.
+Now… You can see that any hyperplane, this is the equation of a plane.
+Okay? Or you can say that 4X… a line, my bad. 4x plus 2Y equal to 3 is a line. So this kind of lines are convex sets.
+Any plane that contains three variables is also a convex set. Any hyperplane, we could call it, is a convex set. So basically, these are the examples of the convex set.
+Now, what is exactly convex linear combination.
+Okay, a point X is set to be a convex linear combination.
+If you can write it like this, then we say that this X is a convex linear combination of this X1 and X2, where lambda is in 01. Please note. Now, let me show you that
+I want to, let's say, we want to clear, clarify, Without it.
+this… We want to see whether 1, 2, and 01.
+Okay, 2 points we'll take, and we want to check whether 1x3 and 4x3
+is a convex linear combination of these two or not. So what we will do
+We will try to write 1x3, 4x3 equal to lambda times the first one.
+Plus 1 minus lambda times the second one.
+And using this, we'll try to find out the value of lambda.
+So, and lamina must satisfy that lamina must be inside 0, 1, and lamina must satisfy this condition.
+Okay? Equal to 1. Now.
+So, if you look at this, you'll get 1 by 3 equal to lambda, okay, and 1 plus lambda equal to 4 by 3, and therefore lambda equal to 1 by 3. So, 1 by 3 belongs to this, okay, and you can write this as 1 by 3 times the first, 2x3 times the second.
+And therefore, 1x3, 4x3 is a convex layer combination of 1, 2, and 01.
+Now, sometimes it is not necessary that every time you get it as a convex layer combination. Now, the question is, can you write 2-1?
+Is it possible for you?
+To write 2-1 as a convex linear combination.
+Can… is it possible for you to write 2-1 as a convex linear combination of 1, 1, and minus 1, 2? So I'll start with 2, 1, lambda 1 times 1, lambda 2 times minus 1, 2,
+From this, if I solve this.
+I'll get the first equation, second equation. So, from this, solving using spool simultaneous equation method, I'll get the value of lambda 2 to be minus 1 by 3, and lambda 1 to be 5 by 3. Now, these two values of lambda, I get, but condition is both lambda 1 and lambda 2 belongs to 01.
+That means they must be positive.
+Okay, but here we are getting Lambda 2.
+is not satisfying this condition. Therefore, 2-1 is not a linear combination of these two.
+Okay, so it's not a convex linear combination, whereas 0, 3 by 2 is easily seen to be the convex linear combination. Now, one of the most important parts I'm going to tell you now, please note.
+Given a feasible region, okay, let's say this is a triangle, Given any feasible reason.
+Okay? Like, we used to solve some, lPPs over there.
+Given any feasible po… any feasible region.
+The important thing is that you can always write any point inside that feasible region, any point inside that feasible region.
+As a convex linear combination of It's…
+corner points, okay? So you can… you take these three corner points, Okay, and take any point.
+inside that region. You can always write that as a linear combination of this point, and this is a very important result.
+That result says…
+That every point of a non-empty bounded laser programming feasible region can be written as a convex combination of its corner point.
+You take a point, You take this point, let's say this point is X,
+then X can be written as lambda 1 times V1 corner points. Lambda 2 times V2, lambda 3V times V3, V4, lambda 4 times V4, and so on and so forth. And these lambda 1, lambda 2 will satisfy these conditions. The sum will be 1,
+And all lambdas will be greater than or equal to 0. That's the whole idea.
+Okay, now let's understand the convex functions, okay? Now, to understand the convex functions, it is important
+to show you…
+Just give me a second.
+Okay.
+Okay.
+Okay, now let's understand the convex function.
+the condition of function f
+F is set to be.
+Convicts.
+on any interval AP.
+B?
+If… you look at this, you consider the… a point called X lambda.
+which is basically some lambda 1 times A, plus lambda 2 times B.
+Or, you can also write this as…
+lambda times A plus 1 minus lambda times B.
+It's basically a line joining AB, okay? So, let's look at this function.
+Let's look at this function.
+Okay, suppose this is the function.
+Okay.
+Or instead of AB, let's call it…
+let's take any X1, X2. Here, you can see I'm taking any X1, X2, belongs to this, or basically you see that I'm taking an interval here, which starts with X1, and it ends at X2, but I took an AB there instead of X1X2, okay? So…
+Now, look at this particular point, okay? So, this is A, This is B.
+Okay. Now, this… As the value of lambda will vary.
+this X lambra will vary, okay? If lambda equal to half.
+If you take lambda equal to half.
+coffee.
+1 minus half B, which, you can see, it is A plus B by 2. Okay, so it will come in between.
+If you take lambda equal to 1 by 3, so it will become lamb…
+1 by 3 times A, plus 1 minus 1 by 3 times B.
+which is 1 by 3 times A, plus 2 by 3 times B. So it is 0.33 times A,
+0.33 times A,
+plus 0.6 times B. So somewhere, I don't know where it is exactly to point, but for a different values of lambda, it will take all the points here, okay? So these are the points.
+Okay, so these points, basically, are X lambra.
+Okay.
+Now, the condition says that if above X lambda.
+Okay? Look at F of F lambda. It will come out to be here.
+Okay, this is a 4x lambda. Okay, that is…
+F of lambda times A plus 1 minus lambda times B.
+If this is always less than equal to, Okay? And now look at…
+This is A, and this will be a forfeit.
+Okay, this is B, and this will be F4B.
+Okay? Now, consider the line.
+that joins F of A and F of B, same like this, okay? So consider this point. Lambda times f of A,
+plus 1 minus lambda times F of B. This will be this line.
+Okay, this will be this line. Okay, for example, if you take lambda equal to half.
+Okay? Then this will be F of A plus F of B divided by 2.
+Okay, and it will come out exactly in the middle.
+this point, okay? So the condition says that if F of X lambda
+Okay, if F of this will be less than equal to lambda times f of A.
+plus 1 minus lambda times F of P.
+then that function is convex. That means, every time you want… if you… what do you want exactly… every time, what do you exactly want? You want, given a function like this.
+If you select… starting from A into B, if you select any X lambra, Here, when you want
+this value.
+this value.
+Always.
+Okay? Less than equal to this value.
+Okay? You want this value.
+less than equal to this value. What is this value? This value is F of…
+lambda times A plus 1 minus lambda times B.
+Let's the… what is this value? It is lambda times FA.
+plus 1 minus lambda times FB. Okay, and this is what convex function says. Now here, if you look at this function, this is a concave function.
+Here, exactly opposite happening.
+for a particular X lambda.
+This is F of X lambda, and this is lambda times f of A plus 1 minus lambda times f of p. It is exactly opposite, okay?
+Now, these kind of functions are called con… convex functions, okay? And very nice thing about the convex functions, that I'll talk about it very cleanly.
+Now, there are certain functions which are neither convex nor concave. So, for example, this function.
+Okay, if you… if you draw the line joining these two points.
+For example, some part of the… some part of the function
+goes above the line. Therefore, this is not convex, not even concave.
+But it is partially convex, partially concave.
+But for a convex function, We want it to happen for all points, okay? You select any damn point.
+Okay? You select any damn point, look at its F value, and look at its line journey value. This must be satisfied, and it should happen for any damn point, all points here. Then the function is convex. Otherwise not.
+Now, some of the examples of convex functions that I would like to talk a little bit about
+Here you can see, there's a… there's a condition, basically.
+It has something to do with the derivative.
+Okay, so here, C, If some function has its double derivative greater than or equal to zero.
+throughout the domain, then FX is convex. You take any… this parabola is a convex function, because its derivative is 2X, and its double derivative 2, it's always greater than or equal to 0. But if you look at this particular function.
+If you look at its first derivative.
+DY by DX, its first derivative, is 1 minus 2x upon.
+Or, 2 times n root of 1 minus X squared. So I can just, you know, get rid of this minus sign.
+on this. And its second derivative, D2Y by DX squared.
+this will also have a minus sign. Therefore, it's negative throughout, so therefore it's concave. But there are certain functions which are neither convex nor concave. Here you see.
+This part seems to be…
+Concave, and this part seems to be convex, but we are not interested in the part.
+In this part, the derivative happens to be greater than or equal to zero, and in this part, derivative… double derivative will be curvature. Double derivative talks about the curvature. So here, it will be greater than or equal to zero. Here, it will be less than or equal to 0.
+So, F is neither convex nor con cube, okay? And some examples are X cubed, you see, if you look at the double derivative, 6X. Now, whenever you say 6X,
+when X changes the sign.
+the 6X become positive or negative, right? Similarly, sine x. It's not concave or convex. So, some of the examples of the convex and concave functions I have already given. Now, let's talk a little bit about why convexity… and these are the examples of convex functions.
+X to the power 4, you know, this function, e to the power x, mod X, minus log of x, they're all convex functions.
+And they are… they play a very important role when it comes to optimization. In two dimensions, you can see.
+The surface is like this. This is a convex function. Okay, this is a convex function.
+This is a convex function. This is another example of convex function. This is another example of convex function. I will talk about the conditions for the derivative when it is convex. Now, see.
+You see that this function, this particular function, is a convex because its double derivative is greater than zero. And how do you know that whether a surface is convex or not?
+Okay, whether this function is convex or not in higher dimension. So, what you do is consider the Haitian metrics.
+Okay, and look at the eigenvalues of the Haitian matrix. Okay, both are greater than zero. If this Haitian matrix is positive semi-definite, we'll come to that.
+Then we say that this is a convex function.
+Another example of a convex function is X1 plus x2, the whole square, okay? So,
+Now, let's look at… The important… importance of the convex function.
+When it comes to the… Okay, just hold on. Okay.
+Nope.
+What is unconstrained Optimization? So…
+When you want to find minimum of a function, or a maximum of an objective function.
+And there are no consent given.
+We have seen, in last classes, a lot of LPV classes.
+We have given, the objective functions and the constraint, but here, in unconstrident Optimization, you don't have any equality or inequality constraint, okay?
+on any of the decision variables. You do have a decision variables, but you don't have an equality or equality constraint. So, any mathematical form can be written as, you want to minimize this function, you want to find X, okay? You want to find X, and it's also called ergmin.
+Okay, you want to find X,
+belongs to Rn, which minimizes this, okay? Where x is a decision variable, FX is an objective function, no additional constraint for maximization.
+you can replace minimum with maximum. We can also write max. So, these are the example of an unconscored optimization. Any simple example is, like, can you find the minimum value of FX? So, suppose FX is X minus 2, the whole square plus 1, which looks like a parabola here.
+So, you see, to find minimum means to find a number
+A number where this function will take a minimum value.
+1, okay? This is the minimum.
+This is… Minimum, and this is the value of the minimum.
+Okay? And we, together, we can say 2, comma 1. So the best choice, we call X star, or we write it something like this.
+Arjmin.
+of eggs.
+X minus 2 squared plus 1 is equal to 2, because at 2 we have a minimum, and minimum value, that minimum value is 1, okay? That's the important thing that you have to understand.
+Now, what is the use of convex function? Basically, why do we require a convex function at all? I mean, in… because, see, when we talk about a minimum or maximum, okay, when we talk about minimum.
+or maximum. We are always interested in the global
+let… we call them as optimum.
+Or some people call it as extremum.
+Okay? So whenever I'm looking for an optimum, whenever I'm looking for minimum or maximum, or whenever I'm looking for extremum, that means whenever I'm looking for minimum or maximum, we're always looking for global optimum.
+That means we're looking for global minimum, And global maximum.
+Okay, not… not the local.
+Now, if you look at this graph very carefully.
+Okay.
+this graph.
+Disc golf.
+Has 2 minima.
+Okay, one at this point, let's call it X1.
+Which is this.
+And other minima attacks, too.
+Okay, other minima attacks, too.
+Okay, so here, This, exactly, this minimum.
+occurs on this particular part, interval, we can say.
+And therefore, at X1, we call it local minima.
+local minima. But if you look at X2,
+It is a minimum out of all minimum. Any minimum will be greater than this X2.
+So, we can say X2 is also a local minima, but it's actually a global minima.
+It's a global minimum.
+Okay? X2 is also a global minimum, because X2 is… and you see, if I… if I do it something like this again, and I end up the graph.
+Okay? Then you see, at Y1, we have local maxima.
+And at Y2,
+We have local as well as… but this is a global maxima also, okay? We are interested, always interested, not in local maximum.
+Or not in local maximum. But when you… any solve… any optimization problem, we are always interested in the global minimum.
+We're interested in.
+global minimum.
+or Global Max.
+And one of the… part that I like about the convex function, that given a convex function.
+Convex functions don't have anything like
+2-3 minima, 2-3 maxima. It always have a single Extremum.
+Either minimum or maximum.
+And that minimum maximum itself is a global minimum, global maximum. So every convex function Always have a single
+Global minimum that we are interested in.
+They don't have too much minima or too much maxima. Or any…
+If you look at this function, you will always have Single maxima.
+So… but rather, we are interested in the minima, because most of the algorithm will talk about the minima.
+So, any convex function, okay, a convex function always have global minima.
+Generally, what happens if you have a non-convex function like this?
+Okay.
+Let's say you have a non-convex function like this.
+Then.
+When you try to solve… try to find the minima of this function, there are two minimas. This is a local minima that we are not interested. We are interested in the global minima.
+I'm good.
+So, if we try to find out
+If you start your algorithm somewhere here, and if you try to approach to the minima.
+Okay? What algorithm will find, that algorithm will find that.
+As soon as the algorithm will come here, let's say it has selected this X,
+then it will select some next X1. What algorithm will find here? F of X is always less than equal to F of X1.
+It's strictly less than. So it will thought that… it will think that this is the only minimum that is required. It will never try to reach to global minimum, okay? So this is called that algorithms get stuck
+At local minimum.
+If you have a non-convex function.
+Or in deep learning, we call it non-convex loss.
+Okay? Because when it comes to deep learning.
+The lost landscape of deep learning will be very difficult.
+to see. These are the lost landscape of the…
+deep learning, okay? When you have a loss in deep learning.
+So, you will understand when you learn deep learning. So, basically what happens, there are a lot of local minimum, a lot of local optima, okay? Lot of local minima. So, algorithm will, every time will get stuck up at all these things. But there are ways to get rid of this. Somehow, is there any way, can I push this ball to
+up, because it will never go up. It will think that this is the only minimum, because
+on the interval, a particular X star is set to be a minimum.
+If f of x star is always less than or equal to F of X for all X in that interval.
+Okay, so it will… stuck here.
+Now, what will happen, that in deep learning, they will create something called momentum.
+Okay? They will add velocity and add momentum, and then try to push this ball on the upside. Then ball will come out of this, then probably it will reach to some other minima, if it is not local, but
+Fortunately, In deep learning, you will never reach to global minimum.
+You have to get satisfied.
+Under some local… where you'll find that the difference between local and global remains to be a little bit
+Very low. Less than epsilon, or very low, okay? You will never reach global minimum, because the lost landscape is pretty dangerous. You will never come to know where exactly, but whatever the minima that we get after the convergence of the algorithm.
+It will get somehow very close to your local global minimum, or sometimes may not be.
+So, that's why training takes a lot of time. You need a lot of something called epochs, a lot of iteration, to reach to that global minimum.
+Okay, so that's the whole idea behind understanding the convex function.
+Okay, so… Convex function, other words, they are very nice.
+Because, they don't have the problem of, you know, so many minimas and so many maxima.
+They always have a global minimum there.
+Okay? That's the whole idea.
+Now, here I'm showing you some of the, some of the things.
+Like, suppose you want to find the minimum of this function.
+then x star equal to 2 is the minimum. And we write ergmin x belongs to f of x is equal to 2. So, actually, we write it as ergmin
+of X minus 2 squared plus 1.
+X is basically… single point 2. That's the whole idea you just made.
+Now, let's go to the… basically, you know.
+there are some of the precincts that I don't want to get into. So here also, for this particular surface, X1 squared plus X2 squared, the global minimum is 0, okay, and that can be achieved.
+Also.
+Now, here, as I told you, that this is an example of a local minimum, because at
+how do you know that it's a local minimum, that if you consider the nearby points, points near to A,
+And you will always find, if you take any X, then F of X is always greater than or equal to F of A.
+And whereas, here, for a global minimum.
+for a global minimum, that epoch B value will be always less than or equal to epo-X, and that will happen for all X. It will happen for all X, that's true.
+Similarly, local maximum, I have given some condition about local maximum and global maximum here.
+And… Now, let's talk about a stationary point.
+Given, a function, and we say that
+Stationary point occurs where the F-FX equal to 0.
+Okay, where the derivative is 0. See, the derivative… when the slope… if you draw a tangent line, and when that slope of that tangent line is zero, then we say that the point is a stationary point.
+So, okay, it's also about critical point.
+So what you want to do is, you simply have to solve F-X equal to 0 to find those candidates. So here, f of x is x squared. You write down F dash X to X, and you solve 2x equal to 0, you'll get X equal to 0.
+So whenever X is 0, so X equal to 0 is a stationary point here. Similarly, for this graph, you just compare with 0 and you get this. Now, for this one.
+0 is a stationary point here again. So, at zero, the slope is zero. But this is a trap, actually.
+This is not a good case, okay? These two cases are good.
+So, to find stationary point, you need to basically equate
+First order or, second, first order derivative with zero.
+To understand what's happening.
+Now, there is a first… second derivative test. What second derivative test says.
+That you find a stationary point, given a function, You find a stationary point.
+And you try to compute F double dash at X. You compute its second derivative, which is 2.
+And if you plug in that stationary point at the second derivative.
+If it is greater than zero.
+Okay, then we have a minimum.
+Okay? And if that double derivative is less than 0, then we have a maximum. So here, at this stationary point 2, we have a minimum, and at this stationary point 1, we have a maximum. So this is called second derivative test.
+Okay, so it is important
+It's called curvature test. So, what is exactly happening? So, here we have a negative curvature.
+So, my bad, here we have a positive curvature, right?
+The second derivative less than 0.
+If you can see that the curvature is slightly different, and we are… we have a curvature here slightly different. So, curvature is positive, so its minimum curvature happens to be negative, it's minimum.
+Maximum.
+So, another set of interesting ideas.
+Now, if you look at this…
+So here, if you look at it.
+F of x to the power 4, you go with first derivative, go with second derivative.
+And, now, f double-0 equal to 0.
+Okay?
+Now, here you see that it has a minimum at zero.
+If you take this, it has a maximum at zero.
+here we are getting the cases where F double dash dash zero is zero. It is not greater than zero, not less than zero.
+Here, also, not greater than zero, not less than 0.
+Here also, F double dash is greater than 0. Whenever you have this kind of these, so you need to check
+You need more analysis.
+when you are getting F double-F0s.
+F double-0 is equal to exactly zero. So here, I'm not getting either greater than zero, because minimum and maximum conditions are only valid for greater than 0 and less than zero, but still, if you do a little bit of analysis here, you will realize that, okay, here you have a minimum, and here you have maximum.
+So, that's okay.
+So… but if you look at the first derivative here, it's basically positive, second derivative is negative, okay? So here, I mean, on this side, if you look at it.
+If you look at the first derivative, this side, okay? This side, first derivative.
+The slope is always coming up, so it's positive, and this slope… this side slope is negative.
+So, first derivative positive, first derivative is negative, we have this side.
+So, whenever you have such case, this point is called point of inflation, or a saddle point, okay?
+But there are cases that you need to be careful. Here, this particular graph don't have any minimum or maximum. There are certain things that you need to check.
+Now, what is a gradient of a function?
+For example, if you have a function from Rn to R,
+then the gradient vector is derivative of F with respect to X1, derivative of F with respect to X2, derivative of F with respect to Xn.
+So basically, if you look at this function, x squared plus 2Y squared.
+its first partial derivative is 2x, next partial derivative is 4Y. Therefore, gradient is 2X, 4Y. Now, to get the gradient at 1, we just put X equal to 1, Y equal to 1, so we get a vector 2, 4. Now.
+You see that this surface
+These are nothing but the label curves of the surface, it's not a surface itself.
+So, the level curve of the surface.
+Might look like this.
+So here, what we're trying to do is, let's say, this is a surface.
+Which looks like this.
+to the surface.
+And if you project it on 2D,
+Okay? It will start from here.
+If you try to project it on 2D, it will start from here.
+Then the next one, next circle.
+Then the next circle here.
+Then the next circle here.
+And these are called contours.
+Okay?
+Therefore, Cantus.
+Okay, so if you project it on 2D, it will look like this.
+Now, if you take any point here, P, Okay?
+So that can be… that is same as taking a point P here. Okay, now… Please understand that
+This gradient vector, if you look at this gradient vector very carefully.
+If you look at this gradient vector 2,4 very carefully.
+Okay, I'm taking this gradient vector at 1, okay? So, this is the point on the surface, 1,
+And the gradient vector is always pointing in the increasing direction of the surface, okay? So, if you look at it very carefully.
+So this is the surface.
+Okay?
+And if you take a 0.1 comma 1,
+And its output will be 1 square plus 2 times 1 square… 3. So this point is 1, 3. So at this point, if you draw the gradient, gradient vector, something like this.
+So, it's always in the direction of the surface increase, deepest increase, okay? Now, if you take a minus of that gradient vector, that will come this side.
+Okay, steepest, descent, descent direction, this is ascent direction.
+So, minus of the gradient vector will be exactly the vector opposite to the vector.
+Okay.
+Now, so, in case of the optimization, what we try to do, the same thing we do in more than one dimension. In one dimension, we take… to find critical point, in one dimension, we
+Equate this with zero.
+To find critical point in two dimensions, we equate the gradient Add zero.
+Okay? We equate the gradient at 0.
+Okay? And once you equate the gradient at 0, you will get stationary point. You will get set of points X comma Y here.
+to get a stationary point. Okay, and then we use something called Haitian metrics.
+To verify whether it's, whether it is… it is global minimum or maximum.
+Now, here you can see there's one more concept called directional derivative.
+So the directional derivative, if you remember that
+If you look at the derivative of F with respect to X, okay?
+Derivative of F with respect to X is basically
+And derivative of F with respect to Y.
+This is nothing but the gradient. Okay, these guys are gradient of F.
+Okay, now this, if you look at, derivative of F with respect to X, is nothing but if you take a dot product of gradient with the vector i.
+you will get a partial derivative with respect to X. And if you dot… take a dot product of vector.
+with J, you will get deliberated by del Y. Okay? And now, these will give you derivatives along direction X and direction Y. What if you want a derivative along any vector, any other vector?
+let's say… Let's say W.
+Then what you do is, you…
+You just take a dot product of gradient, Along.
+that vector. Not just that vector, but you take a dot product along the unit vector in that direction. Just call it, let's say.
+Let's call this to be you.
+That's all. Simple.
+Okay?
+Here, let's say, a very simple thing. I will… I'll just explain exactly what is partial derivative here, if you look at it very carefully.
+Now, look at the gradient.
+Okay?
+2X… 4Y. This is the gradient, okay? That is… now, if you take a dot product of this.
+along this vector x-axis, it is just 2X. So this is partial derivative with respect to X.
+And if you take a dot product of this.
+within this direction, it'll be 4-1. Now, if you want, instead of this, if you want…
+in the direction of 3, 4, okay? You want the derivative, just not in the direction of 10 and 01.
+You want it in the direction of 3.4, which is somewhere else here.
+Okay, you don't want derivative in this direction, you don't want derivative in this direction, but you want derivative in this direction, because
+Now, plane can have, you know, several directions. There are two major directions in the plane, so if you look at the plane here.
+Okay, plane means a surface. This is the surface.
+Okay? When you take a derivative of surface in this direction, it's a derivative along Y-axis. When you take a derivative along x-axis, and when you want to take a derivative along any other side, any other direction, when it comes to
+It's called directional derivative.
+So, you have to convert that vector V first to a unit vector, and simply take
+The… the dot product of the gradient at 1, which we are taking the directional derivator at 1,
+which is this, and you just take a dot product of this with the… with this unit vector, and that's all. I mean, just look at this. That's 22 by… 22 by 4. So 4.4 is a…
+That exclude.
+Now, you see… There are 3… 3 things. If derivative.
+Directional derivative is greater than zero, that means alongside it has increasing. If directional derivative is less than zero, alongside that is decreasing.
+And if the direction derivative.
+is zero, then there's no first-order change, okay? So it is important to… you have to normalize the direction value before getting into that.
+Now, what is exactly the post-definite Matrix? Let me explain. Just give me a second.
+Okay.
+Nope.
+Yeah.
+Given any metrics, two conditions. It should be real, And it should be symmetric.
+Okay.
+Symmetric means… It's transpose.
+is itself.
+Okay, so this is the matrix, where you can see, if you take its transpose, it's always equal to it.
+So, any real symmetric metrics is called positive definite.
+Okay?
+It's called positive definite. If you take any vector, non-zero vector.
+And you consider the product V transpose AV, if it is greater than 0, and this is for all V not equal to 0.
+then we call it as a positive difference. So I'm taking V to be AB, I'm taking V transpose AB, which is this.
+And you see this comes out to be something like this. So it comes out to be surface, which is basically like a paraboloid here.
+If you try to plot this.
+So, whenever A and B not equal to 0, this guy is always good than zero.
+Okay.
+So, what does it mean? That the bowel is rising in every direction?
+The ball is rising in every direction.
+No… The other thing is that
+It is also called positive definite. If you look at the eigenvalues of that matrix, happens to be positive.
+If both eigenvalues are supposed to be positive, then it's called positive definite. Now, there's a condition, okay? So, why this is an important condition? Because if you look at it very carefully.
+given any stationary point X star, The gradient of
+At that point, if is always 0, that is true.
+And… If you look at the… this, which is Haitian, If it is positive definite.
+Then, at this point, we have strict local minimum, okay?
+There is something called positive semi-definite. We'll go with that. Now, this is negatives, negative definite.
+Negative definite metrics, if you try to plot it.
+it will come like a bowel in another direction. Positive matrix comes like a ball in this direction.
+Here, the eigenvalues will be negative, because it is negative semi-different.
+Okay.
+No, the next thing is that.
+What is positive semi-definite? PSD. This is very important. Now, instead of a strict greater than sign, we have greater than or equal to. So here, in this case, eigenvalues could be greater than or equal to zero, and surface
+will be greater than or equal to 0. It is actually, you know, it will…
+Passed through the origin, something like that.
+Okay? So…
+there are certain conditions that has to be very clearly known. Now, let's look at Asian metrics. So, what is Asian metrics? Okay?
+It's a collection of all second-order partial derivatives. Now, if you have A function of one variable.
+Please understand.
+Function of one variable, if you look at double derivative of it, because it is in one variable, it has just one single derivative.
+higher order, double-order. But when you have a function of XY,
+or Z, or more than two variables.
+It has… this is the first order… second order derivative, this is also second-order derivative.
+This is also second-order derivative, this is also second-order derivative. So to collect all the second order derivatives.
+to understand the meaning of double dash in more than one dimension, okay? So please note, the Haitian
+or it's actually called this second-order gradient of FX, is the collection of all these points. So what does it mean? You have to take FXX, FXY, FYX, and FYY.
+Okay, now…
+what is important, and this is Haitian. So, for example, if you got a Haitian… if you got a point.
+If you've got a function, F of XY, X squared plus XY plus Y squared.
+His first derivative is 2x plus y.
+Derivative with respect to Y is X plus 2Y.
+2, FXY is 1, actually, they both are same, all the time.
+Unless or otherwise, your given function is continuous, not continuous. If the given function is not continuous, then these two are not equal. You have to… you have to be worried about that. So here you see, this is the Haitian matrix, and this Haitian matrix is always symmetric, and it is always positive semidefinite.
+Okay, PSD.
+If it is PSD, the Haitian matrix is PSD.
+Okay, positive… positive definite, or positive semi-definite.
+And then we have already known the condition.
+That here, if you look at the gradient.
+First look at the stationary point of this.
+Okay? Then look at the eigenvalues of this particular matrix. We have already known the eigenvalues are 1 and 3.
+How to know the eigenvalues are correct?
+The sum of the eigenvalues, It's always the trace of the matrix.
+Addition of these two.
+And the product of diagonal values?
+It's always the determinant of the matrix.
+Okay, so the eigenvalues are 1 and 3, you can check.
+So, at 0, we'll have a strict local minimum in this particular point, okay? So, with that being said, I would like to stop here, and next time, I would like to take more about on this, more detail on this. We'll take some methods
+I'm going a little slow, but I… I'll ensure that, I'll take your… some of the… at the last… I'll take one extra class that I'll end up.
+Wow.
+Yeah, any questions regarding this one now?
+Any questions so far?
+Any questions on anything?
+Or any method, or anything you want to ask me.
+Hello?
+In the chat, you can also say…
+Okay, let me, there is the poll, meanwhile.
+I launched the pool.
+Please quickly, do, philip?
+Okay.
+In the pool.
+So… I think you don't have any questions.
+Yes, HEMANT?
+Nasa?
+Please let me know. We have one minute.
+Okay, fine, thank you.
+spelled…

@@ -1,156 +1,813 @@
-<!DOCTYPE html>
-<html data-userprofile-context="{&quot;hasProfileCardAccess&quot;:false}" data-mathjax-context="{&quot;renderLatex&quot;:true,&quot;outputScale&quot;:1.5}" data-logging-endpoint="/d2l/lp/logger/provision?sessionToken=NjYwNiw" lang="en-gb" data-lang-default="en-gb" data-intl-overrides="{&quot;number&quot;:{&quot;patterns&quot;:{&quot;decimal&quot;:{&quot;negativePattern&quot;:&quot;-{number}&quot;},&quot;percent&quot;:{&quot;positivePattern&quot;:&quot;{number} %&quot;,&quot;negativePattern&quot;:&quot;-{number} %&quot;}},&quot;symbols&quot;:{&quot;decimal&quot;:&quot;.&quot;,&quot;group&quot;:&quot;,&quot;,&quot;negative&quot;:&quot;-&quot;,&quot;percent&quot;:&quot;%&quot;},&quot;groupSize&quot;:[3]},&quot;date&quot;:{&quot;hour24&quot;:false,&quot;calendar&quot;:{&quot;firstDayOfWeek&quot;:0,&quot;dayPeriods&quot;:{&quot;am&quot;:&quot;AM&quot;,&quot;pm&quot;:&quot;PM&quot;},&quot;months&quot;:{&quot;short&quot;:[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;,&quot;Sep&quot;,&quot;Oct&quot;,&quot;Nov&quot;,&quot;Dec&quot;,&quot;&quot;],&quot;long&quot;:[&quot;January&quot;,&quot;February&quot;,&quot;March&quot;,&quot;April&quot;,&quot;May&quot;,&quot;June&quot;,&quot;July&quot;,&quot;August&quot;,&quot;September&quot;,&quot;October&quot;,&quot;November&quot;,&quot;December&quot;,&quot;&quot;]},&quot;days&quot;:{&quot;short&quot;:[&quot;Sun&quot;,&quot;Mon&quot;,&quot;Tue&quot;,&quot;Wed&quot;,&quot;Thu&quot;,&quot;Fri&quot;,&quot;Sat&quot;]}},&quot;formats&quot;:{&quot;dateFormats&quot;:{&quot;short&quot;:&quot;dd/MM/yyyy&quot;},&quot;timeFormats&quot;:{&quot;short&quot;:&quot;h:mm tt&quot;,&quot;medium&quot;:&quot;h:mm tt&quot;,&quot;full&quot;:&quot;h:mm tt ZZZ&quot;}}}}" data-oslo="{&quot;batch&quot;:&quot;/d2l/api/oslo/batch?languageId=11&quot;,&quot;collection&quot;:&quot;/d2l/api/oslo/collection?languageId=11&quot;,&quot;version&quot;:&quot;W/\&quot;20.26.10.26259.0\&quot;&quot;}" data-timezone="{&quot;name&quot;:&quot;India - Kolkata&quot;,&quot;identifier&quot;:&quot;Asia/Calcutta&quot;}" data-terminology="{&quot;outcomes&quot;:&quot;outcomes&quot;,&quot;educator&quot;:&quot;educator&quot;,&quot;moduleHierarchy&quot;:&quot;unit&quot;}" data-app-version="20.26.10" dir="ltr" data-telemetry-endpoint="https://prd.ap-south-1.telemetryservice.brightspace.com/api/events/" data-cdn="https://s.brightspace.com/apps/brightspace/20.26.10.26259/" data-global-context="{&quot;orgUnitId&quot;:&quot;6606&quot;,&quot;orgId&quot;:&quot;6606&quot;,&quot;userId&quot;:null}" data-he-context="{&quot;activeOrgEnrollment&quot;:false,&quot;applySandboxing&quot;:false,&quot;bcsansFontAllowed&quot;:false,&quot;contentStyler&quot;:false,&quot;contentStylerCssOverride&quot;:&quot;&quot;,&quot;enableLmsPathChecking&quot;:true,&quot;generativeAIEndpoint&quot;:&quot;&quot;,&quot;h5pContext&quot;:null,&quot;insertElement&quot;:false,&quot;insertPractice&quot;:false,&quot;layouts&quot;:false,&quot;mathRenderScale&quot;:1.5,&quot;maxFileSize&quot;:2147483648,&quot;mentions&quot;:true,&quot;orgUnitId&quot;:&quot;6606&quot;,&quot;orgUnitPath&quot;:&quot;/content/&quot;,&quot;pasteFormatting&quot;:&quot;merge&quot;,&quot;sourceEditable&quot;:false,&quot;uploadFiles&quot;:false,&quot;useNewTinyMCEVersion&quot;:true,&quot;viewFiles&quot;:false,&quot;wmodeOpaque&quot;:true}" data-css-vars="{&quot;--d2l-branding-primary-color&quot;:&quot;#ff812c&quot;}">
-<head>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Login - BITS Pilani Digital</title>
-<link rel="preconnect" href="https://s.brightspace.com/lib/bsi/2026.10.234/" crossorigin>
-<link rel="dns-prefetch" href="https://s.brightspace.com/lib/bsi/2026.10.234/">
-<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.10.234/unbundled/bsi-unbundled.js" as="script" crossorigin="anonymous">
-<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.10.234/unbundled/navigation.js" as="script" crossorigin="anonymous">
-<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.10.234/unbundled/navigation-main-header.js" as="script" crossorigin="anonymous">
-<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.10.234/unbundled/navigation-link-image.js" as="script" crossorigin="anonymous">
-<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.10.234/unbundled/html-block.js" as="script" crossorigin="anonymous">
-<script>
-(function(){var client;var errors = [];window.addEventListener('d2l-logging-loaded', function(e) {client = e.detail.createClient('uncaught-errors', { shouldThrottle: true });if (errors.length > 0) {client.legacyErrorBatch(errors);}});var handleError = function(data) {if (!data.message) return;if (data.error && data.error.stack && (data.error.stack.includes('/content/') || data.error.stack.includes('/shared/'))) return;if (client) {client.legacyError(data.message, data.source, data.lineno, data.colno, data.error);} else {errors.push(data);}};window.addEventListener('error', function(e) {handleError({ message: e.message, source: e.source, lineno: e.lineno, colno: e.colno, error: e.error });});window.addEventListener('unhandledrejection', function(e) {handleError({message: e.reason ? (e.reason.message ? e.reason.message : e.reason) : '',error: e.reason});});})();
-(function(){try { localStorage.setItem('XSRF.Token','');} catch(e) {}})();
-(function(){if(window['FontFace'] === undefined) { window.d2lFontsLoaded = true; return; }window.d2lFontsLoaded = false;Promise.all(['400','700'].map(function(w) {return new FontFace('Lato','url(https://s.brightspace.com/lib/fonts/0.6.1/assets/Lato-' + w + '.woff2) format("woff2")', {style:'normal',weight: w}).load();})).then(function() {window.d2lFontsLoaded = true;if(window['D2L'] && window.D2L['FontsLoaded']) { window.D2L.FontsLoaded(); }});})();
-(function(){
-D2L = window.D2L || {}; D2L.LP = D2L.LP || {}; D2L.LP.Web = D2L.LP.Web || {}; D2L.LP.Web.UI = D2L.LP.Web.UI || {};
-D2L.LP.Web.UI.Flags = {
-{"award-enable-copy-workflow":false,"awards-allow-unenroll-bake":true,"awards-ui-fetch-from-orgunit":true,"create-space-experimental-brightspace-object-types":false,"MAV-5508-welcome-widget-create-new":true,"ipsis-sourcesystem-migration":true,"ipsis-provider-oldstandardcsv":false,"ipsis-oneroster-csv-powerschool":false,"ipsis-oneroster-full-sync-implicit-unenrollments":false,"ipsis-esb-lis":false,"hyrl-611-ilp-user-sourcedid-update":true,"hyrl-4009-filter-change-force-full-sync":false,"hyrl-5142-department-location":false,"f17778-oneroster-psur":false,"f19471-gg4l-oneroster-grades-passback":true,"hyrl-1999-oneroster-rest-1p2":false,"hyrl-4029-academic-session-merge":false,"hyrl-2962-cancel-batch":false,"hyrl-3638-user-default-inactive-option":true,"hyrl-3205-psur-firstName-fallback":false,"hyrl-3587-hylia-data-pond":false,"F18735-lti-special-access-ui-feature-flag":false,"F16988-add-to-calendar":true,"advanced-assessments-groups":true,"nim-5386-modify-activity-display-return-to":true,"nim-5395-update-org-unit-id-on-activity-iteration":true,"nim-5243-consolidate-evaluator-and-publisher-patch-actions":true,"nim-5812-modify-aa-face-save-order":true,"nim-5846-lock-publisher-rule-selection-when-submissions-received":true,"nim-5757-aa-learner-candidates-route-improvements":false,"nim-6384-save-actions-complete-after-annotations-processed":true,"PHNX-3264-unavailable-content-visibility-setting":true,"F19162-enable-content-face-releaseconditions":true,"F21912-enable-content-face-competencies":true,"F19163-enable-content-face-standards":true,"IDCS-15-edit-content-file-descriptions":true,"PHNX-1554-enable-refactored-completion-summary":true,"PHNX-2629-access-unlimited-depth":true,"IDCS-283-edit-lti-descriptions":true,"EP-1169-use-content-search":true,"EP-1432-enable-description-scrolling-hovering":true,"EP-1580-enable-url-updating-in-lessons-next-prev":true,"PHNX-2357-user-guided-grade-associations":true,"PHNX-2649-lessons-course-overview":true,"PHNX-3198-respect-availability-window":true,"PHNX-3065-lessons-quicklink-current-window-navigation":true,"PHNX-2766-lazy-load-content":true,"PHNX-2988-lessons-full-date-tooltip-and-aria":true,"PHNX-3063-support-availability-types":true,"PHNX-4040-improved-file-topic-uploader":true,"PHNX-3190-valence-get-user-topic-completions-ignores-classlist-presence":true,"PHNX-4337-lti-multigrades-link-existing-button-fix":false,"EP-1454-enable-module-level-outcome-alignment":true,"PHNX-5006-enable-immersive-lessons-content-view":true,"PHNX-5314-lessons-live-polling":true,"usa-1243-discussions-due-date":true,"FED-3067-Annual-Consumption":true,"cpd-add-record-from-award":true,"fed-54-in-progress":false,"FED-4668-lift-outcomes":true,"FED-4649-content-gen-import-expand":true,"FED-4285-content-templates":true,"LUMI-275-full-screen":true,"LUMI-276-split-view":true,"HAI-1593-content-picker-quiz":true,"HAI-1591-content-picker-ideas":true,"HAI-1592-content-picker-summary":true,"HAI-1821-content-picker-lss":true,"HAI-596-Interventions":true,"FED-6732-quiz-custom-instructions":true,"FED-6876-idea-custom-instructions":true,"rpc-recalculate-all-users-fix":true,"AUT-4438-Grades-Recalc-Restrict-Users":true,"shield-15581-dev-add-bulk-edit-group-names-ui":true,"shield-16289-dev-add-groups-enrollment-pages":false,"oad-include-asn":true,"EP-1443-enable-lightcast-skills":false,"outcomes-set-course-dataset":true,"outcomes-set-org-dataset":true,"EP-1420-enable-createspace-picker":true,"outcome-sets-scales":true,"outcomes-coverage-grid":true,"de44716-lti-iframe-resize-limit":false,"lti-apps":true,"shield-14553-add-semester-department-filters":true,"employee-training-my-courses-page":false,"BORG-5429-Hotspot-Question-Type":false,"BORG-6738-shared-question-components":false,"BORG-7129-true-false-universal-question":false,"PHNX-5035-smart-curriculum-mobile-dvh-viewport-fix":true,"FED-9107-learner-mode-config-choose-content":false,"FED-2493-Docs-PDF":true,"HAI-2170-study-notebook":false,"HAI-3146-modify-knowledge-checks":false,"HAI-3607-lumi-tutor":false,"chrome-unload-deprecation-opt-out":true,"MAV-6565-lms-context-provider-host-head-filter":true,"MAV-5203-createspace-h5p-library":true,"MAV-6452-createspace-discard-changes-dialog":true,"GAUD-8852-use-input-generated-styles":true,"GAUD-8849-Use-input-radio-generated-styles":true,"GAUD-8351-dialog-resize-telemetry":true,"PHNX-3234-dialog-alignment-fix":true,"shield-16276-add-accessible-tooltip-for-edit-in-place":true,"d2l-offscreen-sizeless":true,"GAUD-9564-accessible-grid-navigation-with-up-down-keys":true,"GAUD-8299-core-tabs-use-new-structure":true,"GAUD-10260-get-focusable-fix":true,"GAUD-10337-use-alert-toast-popover":true,"GAUD-10409-prefer-native-general-dialogs":false,"GAUD-10336-prefer-native-fullscreen-dialogs":false,"GAUD-10581-use-intersection-observer":true,"button-toggle-no-change-event-on-prop-update":true,"install-wizard-dialog":true,"unique-reoffer-code":true,"MAV-5974-hwep-delete-config-button":false,"fix-navbar-flicker":true,"PHNX-4309-iframe-modal-dialog-zindex-fix":true,"AUT-4452-Grades-Formula-Special-Characters-HTML-Fix":false},
-function(feature, defaultValue) {
-const featureValue = D2L.LP.Web.UI.Flags.ListedFlags[feature];
-return featureValue !== undefined ? featureValue : defaultValue;
-}
-};
-})();
-</script>
-<meta name="robots" content="noindex" />
-<link rel="icon" href="/d2l/lp/web/faviconView?variant=0&amp;version=1" />
-<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/lib/bsi/2026.10.234/bsi.css" />
-<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/lib/reset-css/1.1.0/reset.css" />
-<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/apps/brightspace/20.26.10.26259/web-packages/D2L.LP.Web.Desktop.css" />
-<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/apps/brightspace/20.26.10.26259/web-packages/D2L.LP.Auth.Web.Desktop.css" />
-<style>
-html { font-size:20px; }
-#ff812c; }
-.d2l_1_0_23 {margin-bottom:30px;}
-.d2l-button-sso-1[primary] {
-#006FBF;
-#FFFFFF;
-hidden;
-normal;
-break-word;
-}
-.d2l-button-sso-1[primary]:hover,
-.d2l-button-sso-1[primary]:focus {
-#005089;
-}
-.d2l_1_1_536 {margin:20px 0px;}
-.d2l_1_3_270 {margin:20px 0px 0px 0px;}
-.d2l_1_4_447 {margin:10px 0px;}
-.d2l_1_8_610 {padding:5px;}
-.d2l_1_9_150 {margin-bottom:1em;}
-.d2l_1_10_50 {background-color:#fefcef;}
-.d2l_1_11_404 {border:1px solid #faecbb;border-radius:4px;}
-.d2l_1_12_821 {background-position:left top;}
-.d2l_1_13_211 {background-image:url('/d2l/img/0/SystemCheck.Main.itemWarning.png?v=20.26.10.26259');background-size: 18px;}
-.d2l_1_14_293 {padding-left:29px;}
-.d2l_1_15_152 {min-height:16px;}
-.d2l_1_16_98 {margin-top:5px;}
-.d2l_1_17_953 {float:right;}
-</style>
-<script>(function() {})();</script></head>
-<body class="d2l-body d2l-typography vui-typography daylight d2l-body-unresolved d2l-body-flex">
-<div class="d2l-body-main-wrapper"><div class="d2l-navigation-s-no-login d2l-navigation-s-main-no-links"><d2l-labs-navigation><d2l-labs-navigation-main-header><div class="d2l-labs-navigation-header-left" slot="left"><d2l-labs-navigation-link-image class="d2l-navigation-s-logo" src="/d2l/lp/navbars/6606/theme/viewimage/15587/view?v=20.26.10.26259" text="BITS Pilani Digital" tooltip-offset="0"></d2l-labs-navigation-link-image></div></d2l-labs-navigation-main-header></d2l-labs-navigation></div><div class="d2l-page-main d2l-max-width" style="background-color: transparent;"><div class="d2l-page-main-padding"><h1 class="d2l-login-portal-heading d2l-page-title d2l-heading vui-heading-2" style="color: #565A5C;">Welcome to LUMEN</h1><div class="d2l_1_0_23"><d2l-html-block html="&lt;p>The Learning Management System of BITS Pilani Digital&lt;/p>"></d2l-html-block></div><div class="d2l-login-portal-flex"><div><div class="d2l-login-portal-login-container"><div class="d2l-login-portal-login d2l-login-portal-bordered"><div class="d2l_1_1_536">
-<button type="button" primary class="d2l-button d2l-button-sso-1" id="d2l_1_2_114" style="width:100%;" data-onclick="D2L.O(&quot;__g1&quot;,0)();">Login using BITS Mail</button></div>
-<div>
-<div class="d2l-sep d2l-sep-s d2l-sep-t" aria-hidden="true"><hr /></div>
-</div>
-<div class="d2l_1_3_270">
-<div class="d2l-messagearea" id="d2l_messagearea"></div></div>
-<form data-method="post" data-scope="" data-location="/d2l/lp/auth/login/login.d2l" class="d2l-form d2l-form-primary" id="formId" onsubmit="return false;">
-<input type="hidden" name="target" id="target" value="/content/enforced/7204-T1-26_MDSDF412/Optimization Methods for Analytics2.vtt" />
-<input type="hidden" name="loginPath" id="loginPath" value="/d2l/login" />
-<div class="d2l_1_4_447">
-<div class="d2l-fieldgroup">
-<div class="vui-field-row">
-<label for="userName" class="d2l-field d2l-label d2l-label-required">Username</label>
-<span class="d2l-validator" id="d2l_1_5_89"></span>
-<input type="text" class="d2l-edit d2l-edit-required" id="userName" name="userName" autocomplete="username" autocorrect="off" autocapitalize="off" />
-</div>
-<div class="vui-field-row">
-<label for="password" class="d2l-field d2l-label d2l-label-required">Password</label>
-<span class="d2l-validator" id="d2l_1_6_843"></span>
-<input type="password" class="d2l-edit d2l-edit-required" id="password" name="password" autocomplete="off" />
-</div>
-</div>
-<button type="button" class="d2l-button" id="d2l_1_7_522" data-onclick="D2L.O(&quot;__g1&quot;,1)();">Log In</button></div>
-</form>
-</div><div class="d2l-systemcheck" style="margin-bottom:1em;">
-<noscript><div class="d2l_1_8_610 d2l_1_9_150 d2l_1_10_50 d2l_1_11_404">
-<div class="d2l-container-icon d2l_1_12_821 d2l_1_13_211 d2l_1_12_821 d2l_1_14_293 d2l_1_15_152">
-<div class="d2l-textblock d2l-textblock-strong">Warning</div>
-</div>
-<div class="d2l-htmlblock-untrusted d2l-htmlblock-wc d2l_1_16_98"><d2l-html-block no-deferred-rendering><div>Either your browser does not support <strong>JavaScript</strong> or it has been disabled through your browser&#39;s settings. The system requires a JavaScript enabled browser, and will be unable to perform the other system checks without JavaScript support.</div></d2l-html-block></div><a class="d2l-link d2l_1_17_953" aria-label="" href="/d2l/systemCheck" title="Learn more about: JavaScript">Learn more...</a>
-<div class="d2l-clear"></div>
-</div>
-</noscript>
-</div>
-</div><div class="d2l-login-portal-image d2l-login-portal-margin"><img class="d2l-image" src="/d2l/lp/login/picture?fileSystemType=Database&amp;fileId=17789&amp;v=20.26.10.26259" alt="" />
-</div><div class="d2l-clear"></div>
-</div></div></div></div><script src="https://s.brightspace.com/lib/jquery/3.7.1/jquery.min.js"></script>
-<script src="https://s.brightspace.com/lib/jqueryui/1.13.2/jquery-ui.min.js"></script>
-<script src="https://s.brightspace.com/lib/bsi/2026.10.234/bsi.js"></script>
-<script>
-window.__elasticRumOnload = function() {if (!window['elasticApm']) return;var apm = elasticApm.init({serviceName: 'LMS',serverUrl: 'https://d2l-elasticrum.apm.us-east-1.aws.cloud.es.io/',transactionSampleRate: 0.1,disableInstrumentations: ['xmlhttprequest','fetch','eventtarget','history']});apm.addLabels({ "orgName": "bitsdigital"});apm.addLabels({ "instanceName": "bitsdigital"});};
-</script>
-<script async="async" onload="window.__elasticRumOnload()" src="https://s.brightspace.com/lib/elastic-apm-rum/5.14.0/elastic-apm-rum.umd.min.js"></script>
-<script src="https://s.brightspace.com/apps/brightspace/20.26.10.26259/web-packages/D2L.LP.Web.Desktop.js"></script>
-</div><footer class="d2l-footer d2l-footer-background-color d2l-footer-top-spacing d2l-footer-top-inner-view"><div class="d2l_1_18_70 d2l-login-language-selector">
-<d2l-dropdown><d2l-button-subtle icon="tier1:browser" class="d2l-dropdown-opener" text="English (United Kingdom)" description="English (United Kingdom) – Select a locale and language"></d2l-button-subtle>
-<d2l-dropdown-menu><d2l-menu label="English (United Kingdom) – Select a locale and language" class="d2l-menu-mvc">
-<d2l-menu-item text="English (United States)" id="d2l_1_19_577"></d2l-menu-item>
-<d2l-menu-item text="English (United Kingdom)" id="d2l_1_20_434"></d2l-menu-item>
-</d2l-menu>
-</d2l-dropdown-menu></d2l-dropdown>
-</div>
-<div class="d2l-footer-default-content"><p>Powered by <span class="d2l-offscreen">D2L Brightspace</span></p><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212 17" fill="#6e7477"><g clip-path="url(#clip0_12_484)"><path d="M66.4982 8.47672C67.9121 7.76855 68.6563 6.50425 68.6563 4.79585C68.6563 2.0192 66.5291 0.293457 63.1045 0.293457H56.1851V16.7133H63.2224C66.786 16.7133 68.9133 15.0223 68.9133 12.1883C68.9119 10.3785 68.0792 9.10086 66.4982 8.47672ZM59.5001 9.87171H63.1045C64.6658 9.87171 65.5266 10.5719 65.5266 11.8415C65.5266 13.1885 64.6841 13.8993 63.1045 13.8993H59.5001V9.87171ZM62.9191 7.16307H59.5001V3.10745H62.8489C63.954 3.10745 65.271 3.44887 65.271 5.07725C65.271 6.4189 64.4356 7.15774 62.9191 7.15774V7.16307Z" /><path d="M84.1186 5.47331C84.1186 2.22588 81.7738 0.288086 77.8465 0.288086H71.2051V16.7133H74.5216V10.7025H77.8732L80.7474 16.7133H84.3784L81.1181 10.029C83.081 9.20618 84.1186 7.63515 84.1186 5.47331ZM74.5216 3.12875H77.8465C79.6367 3.12875 80.6631 3.98362 80.6631 5.47331C80.6631 7.00567 79.6367 7.88321 77.8465 7.88321H74.5216V3.12875Z" /><path d="M89.982 0.286621H86.6655V16.7132H89.982V0.286621Z" /><path d="M100.365 10.153H105.486C105.441 12.5669 103.746 14.0045 100.933 14.0045C97.7635 14.0045 95.7978 11.9441 95.7978 8.62195C95.7978 5.15447 97.7551 2.99663 100.909 2.99663C103.051 2.99663 104.559 3.96352 105.028 5.64792L105.062 5.77061H108.526L108.498 5.58257C108.005 2.25779 104.988 0.0239258 100.978 0.0239258C98.4501 0.0239258 96.2766 0.854788 94.7082 2.42449C93.1398 3.99419 92.3423 6.09469 92.3423 8.55927C92.3423 11.0238 93.137 13.127 94.6408 14.6474C96.1446 16.1677 98.1904 16.9599 100.583 16.9599C102.653 16.9599 104.526 16.2651 105.597 15.1248L105.756 16.7172H108.593V7.33365H100.365V10.153Z" /><path d="M121.852 6.93618H114.691V0.286621H111.375V16.7132H114.691V9.88755H121.852V16.7132H125.169V0.286621H121.852V6.93618Z" /><path d="M127.022 3.21664H131.983V16.7132H135.298V3.21664H140.259V0.286621H127.022V3.21664Z" /><path d="M149.045 7.33628L146.378 6.78682C145.027 6.49208 144.451 5.91461 144.451 4.85703C144.451 3.61407 145.538 2.84322 147.289 2.84322C148.881 2.84322 149.832 3.5874 149.896 4.88637L149.905 5.04507H153.225V4.87437C153.13 1.86833 150.878 0.0012207 147.348 0.0012207C143.697 0.0012207 141.147 2.0337 141.147 4.94505C141.147 7.46431 142.71 9.11937 145.664 9.73018L148.355 10.3036C149.639 10.5704 150.18 11.1185 150.18 12.1441C150.18 13.3737 149.013 14.1365 147.133 14.1365C145.333 14.1365 144.246 13.383 144.225 12.1201V11.956H140.907V12.1267C140.979 15.0874 143.422 16.9999 147.132 16.9999C150.997 16.9999 153.495 14.9994 153.495 11.9027C153.495 9.44478 152.04 7.95109 149.045 7.33628Z" /><path d="M162.633 0.288086H155.753V16.7133H159.069V11.1653H162.633C166.093 11.1653 168.418 8.97546 168.418 5.71603C168.418 2.4566 166.098 0.288086 162.633 0.288086ZM159.076 3.12875H162.055C163.929 3.12875 164.962 4.03963 164.962 5.69336C164.962 7.38976 163.914 8.32464 162.007 8.32464H159.076V3.12875Z" /><path d="M195.457 11.1292C194.916 12.8629 193.21 13.9379 191.011 13.9379C188.019 13.9379 186.086 11.804 186.086 8.48992C186.086 5.14246 187.973 3.06331 191.011 3.06331C193.183 3.06331 194.809 4.13023 195.364 5.91598L195.402 6.03601H198.859L198.826 5.84396C198.234 2.30846 195.191 0.0239258 191.074 0.0239258C186.02 0.0239258 182.625 3.43406 182.625 8.51126C182.625 13.6551 185.886 16.9772 190.935 16.9772C195.021 16.9772 198.211 14.658 198.873 11.2052L198.909 11.0105H195.489L195.457 11.1292Z" /><path d="M212 3.21664V0.286621H201.128V16.7132H212V13.7831H204.443V9.84354H211.212V7.02421H204.443V3.21664H212Z" /><path d="M171.747 13.1084H168.358L166.987 16.7132H170.422L171.747 13.1084Z" /><path d="M179.187 16.7132H182.669L181.299 13.1084H177.862L179.187 16.7132Z" /><path d="M178.07 10.5557C178.731 10.1692 179.317 9.67797 179.804 9.1034L176.459 0.309326H173.196L169.905 8.9647C170.435 9.68813 171.11 10.3053 171.892 10.7811C171.306 9.51549 171.751 7.80176 172.487 6.63748C172.665 7.40433 173.025 7.75508 173.44 8.01781C173.159 7.66706 172.94 7.1376 173.019 6.37875C173.15 5.1438 174.446 4.17424 175.663 3.77548C175.19 4.84239 175.82 5.35451 176.084 6.13736C176.553 5.83715 177.061 5.59555 177.595 5.41853C176.72 7.39899 178.71 7.92045 178.234 10.0289C178.197 10.209 178.142 10.3854 178.07 10.5557Z" /><path d="M-0.000121416 15.6864H1.63004L2.43319 14.6595V2.34326L1.63004 1.31635H-0.000121416V0.290771H7.76878C13.7826 0.290771 16.4377 3.52887 16.4377 8.31666C16.4377 13.1045 12.297 16.7186 7.71964 16.7186H-0.00292969L-0.000121416 15.6864ZM8.08471 15.301C11.47 15.301 12.5905 13.2658 12.5905 9.12618C12.5905 4.77716 10.7876 1.31635 7.64663 1.31635C7.20881 1.31184 6.77309 1.37444 6.35626 1.50172C6.20617 1.55448 6.05984 1.6164 5.91818 1.6871V14.6595C6.42225 15.1449 7.42759 15.301 8.08471 15.301Z" /><path d="M28.1985 9.53424L27.3181 13.6352H17.9106V12.5883C17.9106 12.5883 19.3147 11.1786 19.3456 11.1466C22.276 8.2126 24.5787 5.88005 24.5787 3.46215C24.5787 1.9618 23.9609 1.02691 22.8812 1.02691C21.8014 1.02691 21.1345 2.06582 21.1345 3.62352V4.4117H18.2912C18.2235 4.16672 18.1914 3.9141 18.1957 3.66086C18.1957 1.23496 20.6908 0 23.037 0C25.3538 0 27.6902 1.05358 27.6902 3.56884C27.6783 4.19317 27.5164 4.80668 27.217 5.3626C26.8948 5.96398 26.4922 6.52338 26.0193 7.02699C25.424 7.69381 24.1294 8.72605 22.9837 9.58759C22.0682 10.2784 21.2468 10.8599 20.9561 11.0666H26.5108L27.9935 9.53424H28.1985Z" /><path d="M43.7477 11.5814L42.6455 16.7133H29.7896V15.6837H31.4127L32.2257 14.6581V2.34324L31.4127 1.31766H29.7896V0.288086H38.5806V1.31766H36.4618L35.705 2.34324V15.1783H39.7896L43.3434 11.5814H43.7477Z" /><path d="M27.6259 15.1743V15.8118L26.681 16.7093H17.376V16.0785L18.3209 15.181L27.6259 15.1743Z" /></g><defs><clipPath id="clip0_12_484"><rect width="212" height="17" fill="white"/></clipPath></defs></svg></div></footer><script src="/d2l/portal/js/desktop?v=20.26.10.26259"></script>
-<script>
-D2L.LP.Web.UI.Events.OnInit.AddListener( function() {
-D2L.O("__g1",2)();
-D2L.O("__g1",3)();
-D2L.O("__g1",4)();
-D2L.O("__g1",5)();
-D2L.O("__g1",6)();
-D2L.O("__g1",7)();
-} );
-D2L.LP.Web.UI.Events.OnLoad.AddListener( function() {
-D2L.O("__g1",8)();
-} );
-D2L.OR={
-"__g1":{"0":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Navigate\",\"P\":[{\"_type\":\"url\",\"Url\":\"https:\/\/lumen.bitspilani-digital.edu.in\/d2l\/lp\/auth\/saml\/initiate-login?entityId=https%3a%2f%2faccounts.google.com%2fo%2fsaml2%3fidpid%3dC042gmm8v&target=%2fcontent%2fenforced%2f7204-T1-26_MDSDF412%2fOptimization+Methods+for+Analytics2.vtt\"}]}",
-"1":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Form.SubmitByButton\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_7_522\"}]}",
-"2":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.Authentication.Xsrf.Init\",\"P\":[\"d2l_referrer\",\"\",0]}",
-"3":"{\"_type\":\"func\",\"N\":\"D2L.LP.ActivityBar.Init\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/activityFeed\/checkForNewAlerts\"},120]}",
-"4":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.MessageArea.Init\",\"P\":[\"d2l_messagearea\",{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/validation\/errors\"}]}",
-"5":"{\"_type\":\"func\",\"N\":\"D2L.LP.Globalization.Locale.Init\",\"P\":[{\"_type\":\"anon\",\"DecimalSeparator\":\".\",\"GroupSeparator\":\",\",\"NumberNegativePattern\":1,\"PercentPositivePattern\":0,\"PercentNegativePattern\":0,\"PercentSymbol\":\"%\",\"NegativeSign\":\"-\",\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"UseNativeDigits\":false,\"GroupSizes\":[3],\"IntegerRegex\":\"^([\\\\(-]*(([01234567890123456789]?[01234567890123456789]?([01234567890123456789](,[01234567890123456789][01234567890123456789][01234567890123456789])*)?))[\\\\)-]*)$|^([\\\\(-]*[01234567890123456789]+[\\\\)-]*)$\",\"DecimalRegex\":\"^([\\\\(-]*(([01234567890123456789]?[01234567890123456789]?([01234567890123456789](,[01234567890123456789][01234567890123456789][01234567890123456789])*)))(\\\\.[01234567890123456789]+)?[\\\\)-]*)$|^([\\\\(-]*[01234567890123456789]*\\\\.?[01234567890123456789]+[\\\\)-]*)$\"},{\"_type\":\"anon\",\"InputDateFormat\":\"dd\/MM\/yyyy\",\"Is24HourClock\":false,\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"UseNativeDigits\":false,\"TimeFormat\":\"h:mm tt\",\"AmDesignator\":\"AM\",\"PmDesignator\":\"PM\",\"FirstDayOfWeek\":0,\"ShortMonthNames\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\",\"\"],\"LongMonthNames\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\",\"\"],\"ShortDayOfWeekNames\":[\"Sun\",\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\"]},{\"_type\":\"anon\",\"TextDirection\":1},{\"_type\":\"anon\",\"Culture\":\"en-gb\"},{\"_type\":\"anon\",\"JustNow\":\"just now\",\"OneMinuteAgo\":\"1 minute ago\",\"TwoMinutesAgo\":\"2 minutes ago\",\"MinutesAgoMany\":\"[0] minutes ago\",\"OneHourAgo\":\"1 hour ago\",\"TwoHoursAgo\":\"2 hours ago\",\"ManyHoursAgo\":\"[0] hours ago\",\"YesterdayTime\":\"yesterday at [0]\",\"DayOfWeekTime\":\"[0] at [1]\",\"MonthDayTime\":\"[0] at [1]\",\"Now\":{\"_type\":\"D2L.LocalDateTime\",\"Year\":2026,\"Month\":11,\"Day\":9,\"Hour\":13,\"Minute\":36,\"Second\":29,\"Millisecond\":348}}]}",
-"6":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Initialize\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/login?target=%2fd2l%2flogin%3ftarget%3d%252fcontent%252fenforced%252f7204-T1-26_MDSDF412%252fOptimization%2bMethods%2bfor%2bAnalytics2.vtt%26sessionExpired%3d0&sessionExpired=1\"},\"Error: unable to complete your request.\",{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"flash\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.FlashMessages.RpcReceivePayloadProvider\"},\"session\":{\"_type\":\"func\",\"N\":\"D2L.PT.Auth.SessionTimeout.RpcReceivePayloadProvider\"},\"messageArea\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.MessageArea.RpcReceivePayloadProvider\"},\"OR\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.ObjectRepository.RpcReceivePayloadProvider\"},\"JS\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.RpcReceiveJsPayloadProvider\"},\"CSS\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.RpcReceiveCssPayloadProvider\"},\"BSI\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Bsi.RpcReceiveJsPayloadProvider\"},\"ariaMessages\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Aria.RpcReceivePayloadProvider\"}}]}",
-"7":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.InlineHelp.Init\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/inlineHelp\/6606\/help\"}]}",
-"8":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Focus\",\"P\":[{\"_type\":\"id\",\"Value\":\"userName\"}]}"}
-,
-"d2l_1_5_89":{"0":"[\"userName\",{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Edit.ValidateRequired\",\"P\":[\"userName\"]},\"Username is required.\",null]"}
-,
-"d2l_1_6_843":{"0":"[\"password\",{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Edit.ValidateRequired\",\"P\":[\"password\"]},\"Password is required.\",null]"}
-,
-"password":{"enter":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Form.Submit\",\"P\":[{\"_type\":\"id\",\"Value\":\"formId\"},false],\"D\":true}"}
-,
-"d2l_1_19_577":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Connect\",\"P\":[\"POST\",{\"_type\":\"url\",\"Url\":\"\/d2l\/login\/locale\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"localeId\":1}],\"D\":true}"}
-,
-"d2l_1_20_434":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Connect\",\"P\":[\"POST\",{\"_type\":\"url\",\"Url\":\"\/d2l\/login\/locale\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"localeId\":3}],\"D\":true}"}
-};
-</script>
-<script>D2L.LP.Web.UI.Html.Bsi.Init('prod', 'https://s.brightspace.com/lib/bsi/2026.10.234/', ['unbundled/navigation.js','unbundled/navigation-main-header.js','unbundled/navigation-link-image.js','unbundled/html-block.js','unbundled/dropdown.js','unbundled/dropdown-menu.js','unbundled/button-subtle.js','unbundled/menu.js','unbundled/menu-item.js'], true);</script>
-</body>
-</html>
+Okay, welcome back.
+Oh.
+As I was not able to take the last class because of my health.
+And some protein section.
+Today I'm a bit okay.
+So… In today's class, what we will cover, we'll try to cover quickly.
+Oh.
+will recall Some… something about primal and dual problems.
+Then… That duality in the matrix form.
+What do you mean by strong duality?
+What is complementary slackness.
+Right?
+Then how to get the solution of the dual.
+Without solving the dual by any method.
+From the?
+Primal itself.
+From the optimal simplex table.
+What do you mean by shadow prices?
+Then we'll focus on some of the things like post-optimality analysis.
+Post Optimality and sensitivity analysis.
+There are certain ways to deal with that.
+That.
+You see that when we change the objective function coefficients.
+When we change the requirement vectors.
+When we add some new variable and when we add some new construct.
+So, I don't have… we don't have time within one hour to really, you know, go through each and every basics, but
+I'll try to solve some of the problems so that you will understand.
+What exactly is going on?
+With that being said.
+Let's begin with the.
+What is done last time a little bit idea that I will give you.
+So that you can recall.
+If you remember.
+This is our.
+Primal form.
+Which says that.
+Maximize.
+Z equal to C 1 X 1 C 2 X 2 C N X 1 C N X N subject to this constraint and these are.
+Non-negativity conditions.
+So this itself, this thing, Okay.
+You can write it as something like C transpose X.
+And this is this.
+Thing is a system of linear equations from linear algebra.
+It can be written as AX.
+And this B vector can be written as B, and all these constants are greater than or equal to 0, and these are the decision variables.
+Now, to get the dual of this.
+We take this as Y one we take this as Y two we take this as Y M.
+And this will be the coefficients for Y 1.
+And this is the condition for YI1 to be less than equal to. In fact, here we have less than equal to, here we have greater than equal to.
+C one okay so we take original X one.
+And all these A11, A21, simply what we're trying to do here is
+We are taking a transpose of this matrix A. If you look at this matrix A very carefully.
+We start with A11, A12, A1N, and it ends at AM1.
+AMN and if you look at the transpose here.
+you see that this is A11, and now, if you take the transpose of this, it will become a column. If you take a transpose of this, it will become a row.
+So here you see that is A 2 1 till AM 1 okay so.
+We are taking the first column as the first row in this matrix. This is the matrix we have formed.
+So, similarly, that's what I'm trying to show you.
+That.
+So this is the dual form, right? Now this is the matrix form that you can have a matrix A and you can have a matrix A transpose.
+Similarly, you can write the given
+Given maximization problem in the form of transpose.
+So you can simply write.
+C transpose X as X transpose C.
+Okay and these conditions you could write it as X transpose A transpose less than equal to B transpose so.
+Either you write it this way or you write it this way it's one and the same or either you write it this way.
+How do you write it this way?
+The other one understood.
+Good.
+Now.
+Once you are done with that.
+Then we have seen one of the how to get. This is just I'm recalling the last time till people will join.
+Given a maximization problem, how to convert it to minimization problem? So we write this as Y1, we write this as Y2.
+Okay.
+And now… This is one here, this is one here, this is one here.
+Then, what we do is.
+We write the condition 2 times Y 1 1 times Y 2 less than equal to 40.
+Okay and.
+Again, so here you can see that next Y1.
+Plus Y two.
+Okay, Y1 plus Y2 less greater than equal to 30, so here if it is less than equal to, we just make it greater than equal to, very clear.
+And you see that the optimal solution to this is x1 equal to 20 and x2 equal to 60.
+And we put it in Z Z we we denote the optimal solution to be Z star.
+So we put the value of X one optimal value of X one and optimal value of X two we get 2600 year.
+Now, you can see… Optimal solution here, here Y1 equal to 10 and Y2 equal to 20.
+So I write W star equal to.
+100 times 10 plus.
+Y 2 times 20 so I'll get 26 of that year.
+So in this case, what we're trying to do is… so solving Sometimes.
+Dual problem solving a dual problem is as good as solving a primal problem because at the end of the day.
+We have… Z star which is the optimal value of this.
+And W star which is optimal value of dual.
+Which are the same 2,600 so this gives rise to something called strong duality theorem.
+Strong duality says that.
+Okay.
+If you want to maximize something let's say C transpose X.
+Okay, given these conditions and your X greater than 0.
+And if you write a dual form of that which is minimize B transpose Y.
+I forget to write C transpose X here.
+Given this condition.
+Why did I go to zero?
+Now… The optimal solution for the primal problem and the optimal solution for the.
+Dual problem.
+You can see that one there, one and the same.
+We don't know what are the decision variable values here, what are the decision variable values here, they may differ.
+But at the end of the day.
+The optimal solution will be same so what the strong duality theorem says.
+That.
+Whether you are given a primal or a dual problem.
+Okay.
+Whether you are given a primal problem or a dual problem.
+Use all one of them okay and if you find that it has a finite optimal solution.
+Then the other one also poses.
+the same solution.
+And the optimal values of the objective functions of the two problems are equal.
+This is what the strong duality theorem says there is something called weak duality.
+With duality says that.
+This B transpose Y.
+Is always greater than equal to this C transpose X this is called weak duality it doesn't show equal to okay but we can always prove.
+that maximization is always less than equal to minimization. Otherwise, you will get infinite profit. So we… we have to… we have to show that
+The constraints.
+Stuff is always greater than equal to the profit stuff.
+This is called weak duality group.
+But strong duality theorem says that if any one of them has optimal solution.
+The other one also has a finite optimal solution and those optimal solution are same.
+So if one form of the linear program is optimized, then the other form is also optimized. Furthermore, their optimal values of both forms are equal. This is what is the strong duality theorem.
+Whether you solve a primal problem whether you solve a dual problem.
+Both of them will have their optimal values equal, okay, that is Z equal to 45 in this case.
+Now, the next thing.
+So how to solve dual so basically is it really necessary I mean given a primal problem if you convert it into dual problem.
+Okay.
+Is it always necessary to solve the dual problem by simplex method that is called dual simplex method or any other method? No, not necessary.
+Given a primal problem if you want to find out given a primal problem.
+If you want to solve.
+If you want to solve.
+The dwell of it.
+If you want to solve the dual of it.
+Then we have certain set of methods.
+That you don't have to rewrite the table, you don't have to do anything extra.
+You can solve this dwell by using primal optimal table. You just need to solve the primal problem, and dwell problem will automatically get solved by using some tricks.
+You can obtain the solutions the first way.
+Is using a primary optimal table second way.
+Using this CB into B inverse what is that I will tell you.
+Third way is something called complementary sadness.
+Theorem or condition and fourth way is using simplex or dual simplex method okay so I'm going to touch upon these three.
+Because they're very simple to solve it.
+Okay because the approaches to solve them is very simple so we'll take few problems so that you will understand I will take four to five problems on this one.
+So that you will understand what is exactly happening.
+Okay.
+Let's go ahead.
+The first way.
+Please understand.
+So how can we solve the dual problem using the primal optimal table? So let's see step by step way of doing it.
+Okay so let's say this is the your final primal optimal table right let's say this is your final optimal table.
+Okay.
+Just look at the Slack columns.
+S 1, S 2, S 3, look at the entries of Z J minus C J.
+in the Slack columns.
+If you don't know about ZJ minus TJ I probably know about it.
+ZJ minus CJ this we want to be always greater than equal to zero so far maximization problem is concerned.
+Look at these entries.
+ZJ minus CJ look at these entries look at these 3 entries okay.
+Now, here… What we'll try to do is.
+The primal solution, see, S1.
+Okay, S1.
+Corresponds to Y1.
+This solution corresponds to Y2, and this solution corresponds to Y3. That's all. Very simple and straightforward, how it is. Let's go ahead, and let's do more analysis on this one.
+We'll take a problem, and I'll tell you how… what exactly is happening. Now, let's say… Suppose… I have.
+The… the… the question, okay? The question is, minimize Z equal to X1 minus 2X2 plus X3, subject to these three.
+Okay and.
+The whole idea is, The question is find the values of the dual variable.
+Okay.
+From the optimal table of the primal problem, so you are given already given the optimal table.
+You're already given the optimal table. If not, you can get this optimal table easily because you know how to solve simplex. This is just by using simplex method.
+Okay.
+Now, the next.
+Next is, now if you look at it very carefully, folks.
+Okay, so this is the optimal table. Now look at the slack variables. S1, S 2 S 3.
+Okay look at their corresponding CJs.
+Okay, because if you look at this particular thing here.
+Just give me a second.
+You see that the corresponding.
+C, so, see, this is the C… this is C1.
+Which is 1.
+This is C2.
+This is C3.
+This is C4, this is C5, and this is C6. So these are the coefficients, or cost vectors. Cost.
+Corresponding to a decision variable.
+And the cost corresponding to the slack variable is zero here, okay?
+So, the condition says that The net effect, suppose you want to find out the Y1.
+The net effect of Y1 is the value of ZJ minus CJ corresponding to S1. That's all, okay? That is YI.
+Minus the value of the cost vector of SI is simply ZJ minus CJ corresponding to SI.
+ZJ minus CJ corresponding to SI. So let me tell you what exactly it means.
+This is simple idea okay now look at this how to solve this problem.
+What will be your Y1?
+What will be your Y1? So Y1 here.
+will be.
+Y 1 minus.
+What is the… Cost?
+What is the coefficient of S1? 0 in the objective function. Y1 minus 0.
+equal to… The corresponding value of ZJ minus CJ in the S one that is minus three by two.
+And therefore Y1 is.
+Minus 3 by 2.
+Then… How do you find Y two?
+So Y 2 minus the cost is 0.
+Equal to.
+The corresponding value of S 2 which is 0 so Y 2 is 0 what is Y 3 Y 3 minus the cost.
+Okay, the cost variable associated with S3, which is 0,
+Equal to the value of ZJ minus CJ.
+in the S3 column, which is minus 1. So Y3 is minus 1. So you see that I got 3 values of Y without solving a dual. Now.
+Is it really the case I mean is it is it is it satisfying the is it satisfying the things so if you look at it.
+If you look at the solution here.
+In the primal, if you look at the solution in the primal, the solution in the primal is minus 8.
+Okay, now…
+And the value of the X2 is 1, value of X3 is 1, S2 is 1, and X1 is 0 here.
+Value of X1 is 0. X1 is a non-basic variable, and these are the basic variables here.
+So, putting down these values, and this is, this is unused, I mean, this is just a Slack variable, so we, we don't bother of using it by any mean.
+So here, you see, the solution is minus 8, and we have solved the dual problem, and if you look at the dual problem, and we got the dual value, and now I will substitute in the dual problem. If you try to… if you try to see what exactly the dual of this, this is the dual problem, okay? And this is the objective of the dual problem.
+2 times Y1, so sorry, 4 times Y1, Y1 we got minus 3 by 2, plus 3 times Y2, plus 2 times minus 1, the final value, and it happens to be minus 8 again. So therefore.
+Whatever the value, optimal value in primal, we got the same optimal value. We got it in dual. Let's take few more problems and let's understand. Now it is. It will be easy. You will be able to see it orally.
+Suppose there are two products.
+And… You see that these are the machine hours available. There's a machine one.
+and machine 2, and profit per unit is given, and we want to maximize the profit. Suppose we want to make X1 units of the profit A and X units of the profit B, so we want to maximize
+the total profit.
+And the constraints are 30 times X1 plus 20 times X2 less than or equal to 300, 5 times X1 plus 10 times X2 less than or equal to 110.
+Now, if I try to solve this problem, this is a maximization problem, and I get this as my final, you know, the final optimal table. Okay, this is optimal table for the primal problem. Now, the question is.
+What is the dual of this? Determine the optimal product mix. So you can see that the optimal product mix is 96, and we have the value of X1 to be 4, and the value of X2 to be 9, okay? So that's already given, and we want to find the solution of the dual problem. As I told you, to find the solution of the dual problem.
+It is very easy to see that.
+This you are going to write it as.
+30 X 1.
+Plus 20 X 2 plus S 1.
+Less than equal to 300 equal to 300.
+And the second is 5 X 1 plus 10 X 2 plus S 2 equal to 110. So there are two slack variables which is S 1 and S 2.
+So how do you get the value of Y 1 here? So Y 1.
+So obviously if you look at the dual first let's write the dual.
+First let's write the dual.
+So this is the dual, okay? This is the dual.
+Okay, and to solve this means we want to minimize.
+The cost of 1 hour of machines 1 and 2 respectively okay so basically this is given to us.
+Why one is the cost of one overall machine?
+1 and 2.
+Y2… Y1 is the cost of 1 over of machine of 1, and Y2 is the cost of 1 over of machine of 2, respectively, okay? And the total cost available is…
+300 and 10 and we know that we usually write it like this.
+Straightway subject to the condition. Now to solve this, I want to find the value of Y1 and Y2. And it's very easy to see from a very table. You can easily see that this is the table.
+And you see from the table.
+To get the value of Y1, I told you, Y1 minus the coefficient of
+The coefficient of S one.
+equal to… The corresponding value of ZJ minus CJ in this one.
+1 by 10.
+And Y2 minus the coefficient of S2.
+Which is zero again.
+6 by 10. So, values are 1 by 10 and 6 by 10. If you literally put these values, you will get the minimum cost, 96 rupees.
+It's very clear. Okay, now we'll go for the third one. Again, I will tell you this again is interesting problem. Now I am not going to get into detail. I wanted to write the solution straightforwardly without even looking at the problem. Just look at the table.
+you're given to maximize this, given this constraint. So, Y1… so, obviously, there is a S1 here, there is a S2 here, there is a S3 here, okay? And there's a S1 here, S2 here, S3 here, and the coefficient… cost coefficient of S1, S2, S3 are 0, 0, 0. So, Y1 minus 0 equal to 1 by 5.
+Therefore, Y1 is 1 by 5.
+Y2 is 8 by 5.
+And Y 3 is 0 that's all.
+And Y3 is 0 pretty clear.
+All these three values. Straightforward.
+Okay, so…
+You can see here, and then you can actually check whether its solution is the same or not.
+Now let's take slightly different problem. Okay, so this is slightly different problem. So I want to maximize this. Now look at the constraint. It's greater than equal to.
+Okay so this is to be solved using something called BGM method.
+Okay, and we have to introduce artificial variable here because if you look at the first constant, it can be written as x 1 plus 2 x 2, okay.
+If you look at it very carefully minus S one.
+It will not become equal to, so we'll not be having
+The basic feasible solution here so we add the artificial variable equal to 2.
+Okay, so because if you write my greater than equal to means minus you have to write and if you just put it equal.
+And then the basic feasible solution, it will not satisfy because this one will give you negative value. So to add artificial variable.
+So this is the artificial variable added, and this is actually the solved simplex.
+Solve solve problem and this is the final optimal table now here also it is very clear that suppose you want to find out the
+The optimal solution for the dual okay what you will do.
+See, there are how many Slack variables? This one is 2.
+See S one is not a slack here okay.
+Instead of S1, we are introducing A1 here, because
+That is very important to understand because the first constraint we write it like this.
+So S1 cannot be a basic query.
+Okay, and therefore the main basic variables are S2, S3, and artificial variable.
+So first, y1 minus coefficient of S2 is 0, coefficient of S3 is 0, and coefficient of A1 is minus F, because in the BigM method, you can write it like this, 0 times S1.
+Plus 0 times S 2 minus A times.
+M times A1. So this is the way we write when we want to solve the problem by Big M method.
+And the M is very large now. So here Y1 is clear Y1 minus now C.
+This A 1 corresponds to this S 1 right S 1 means A 1 so Y 1 minus minus M because the coefficient here is minus M.
+Minus M times A1.
+Equal to the.
+Okay, so Y plus M.
+Equal to M, Y1 plus M equal to M, and Y1 equal to 0.
+Okay, now, Y2 minus… So, I have S2 here.
+The coefficient of S 2 is 0 Y 2 minus 0 equal to 3.
+Therefore, Y2 is 3, and Y3 minus 0 equal to 0. So, Y3 is 0. So, the solution is 030, right? So, that's… this is the way we usually find out the solution.
+Correct. So let's go ahead, and you can see 030 is the solution, and you can actually, you know, verify it.
+Now, this is one more problem, where I will leave it to you to quickly tell me the answer, so, without doing anything. So, be careful. So, this is the value of Y1.
+This is the value of Y2.
+And this is the value of Y3, straightforward.
+Okay, no need to do anything directly, you can solve the dual like this.
+You can write the dual POP. Okay.
+So, The other method…
+So basically there is there is other method here so which I would like to discuss about.
+The same same problems are there, you know, you we have all these problems there.
+So we are going to talk about this problem.
+This one problem is important, the last one which I'm going to take.
+Snow seat.
+Z equal to alpha X one plus X two now please note S three X three here is S one X four here is S two okay they are they are slack variables.
+Now, I want to maximize this subject to this, okay, where X3, X4 are slack variable, and I want to find the dual solution of this also.
+To find out the dual values of this.
+Now, if I write the, you know.
+The optimal table of this, that optimal table comes out to be this.
+Now, if you want to find out the value of
+Alpha, beta, and gamma. So how do you find out the value of beta? So please understand, x1 is the basic variable here.
+Okay, to make X 1 basic, it's important, its coefficient must be equal to 1.
+So I'm going to divide everywhere by beta.
+Beta.
+Beta and beta so this is I will get.
+Okay.
+Now if you look at it very carefully.
+X one plus two beta X two plus one beta X three.
+Okay.
+So and here I'm going to divide it by 5 by beta so 5 by beta.
+Now.
+If you compare with this, Okay so look at this X 1.
+Plus 2 by beta times X 2.
+Plus… 1 by beta times X 3.
+Okay, so this, this, if you compare, you'll find that 1 by beta is same thing as 1 by 3, and therefore beta equal to 3.
+Similarly how how you find alpha to find alpha we know that the coefficient of X 1 here is alpha.
+The KUMARA of expose Z this one.
+To find alpha, so what we're going to do is.
+we'll use ZJ minus CJ, and we'll use this, this particular, this particular column X3, because we can use this, but it will be a little complicated, so we'll use the simple one, okay? So ZJ minus CJ, so ZJ is alpha X1,
+Okay so we we are doing Z 3 minus C 3 here.
+Alpha X 1.
+Okay.
+Which is basically, sorry, alpha times 1 by 3, my bad, alpha times 1 by 3 minus plus 0 into 0.
+This 0 into this 0, okay, so this is the case and that is equal to 2 by 3, it's already given.
+And if you Z 3 minus C 3 if you do alpha times 1 by 3 0 1 2 0.
+And minus zero, that this is basically the, the coefficient of Expo here.
+And now you can see it is 2 by 3. And therefore, if you compare this, and once the finally, we know that x 2 plus x 4 equal to gamma. So x 2 we know which is 0.
+And expo is 2, okay? We already have expo equal to 2.
+And X2, we already got To be zero.
+Okay, so there is no x2 here. X2 is not basic variable. Any non-basic variable will always have a value 0.
+So 2 0 plus 2 equal to gamma and gamma equal to 2 done so all these values are found sometimes in quiz you may encounter this kind of question.
+So please understand how to solve.
+Now, to get the value, look at the base, look at the slack variables, X3 and X4.
+X3 and X4.
+That's all this is your Y 1 and this is your.
+Why to simple.
+This is the first way to solve this.
+The other method to solve this is.
+The solution can be obtained using this is very interesting.
+This is another method.
+Just look at the cost vector of the basic variable, look at the cost vector of the basic variable, and look at the B inverse, okay?
+The the metrics so cost these are the basic variables look at the cost factor of the basic variables.
+And whatever the matrix you get, that is the matrix of the slack variables that you do, that after solving a table, that is your P inverse. And let's try to understand. And that will be your solution to this problem.
+Okay, so let's try to solve it. It is again very easy.
+So, okay.
+If you solve it by first method the first method says this is your Y one.
+This is your Y2.
+And the 0 I 3, very simple, straightforward.
+But the second method says that, okay, look at the basic variable first, which is the X2 S2 X3.
+Look at their coefficient, that will be a cost vector. So here you can see, look at the basic variable, which is X2, S2, S3.
+And find out the CV, that is cost of this. So, the cost of X2 is minus 2, S2 is 0,
+And X3 has a cost of 1, so write down this.
+And just look at the Slack variables here.
+And look at the matrix this matrix is called B inverse.
+Okay, so simply your B inverse is this.
+matrix, and multiply the cost vector with the B inverse, multiply with cost vector with B inverse, and you will get these values, minus 3 by 2, 0, minus 1. And they are arranged like that only by using Roche long form, we know that. All things, we do it like this, straightforwardly.
+Similarly, for the second problem.
+Look at the basic variables, look at the cost vector, create a cost vector out of a basic variable, which is CB, and the cost vector out of a basic variable is 6.
+And 8.
+And look at the matrix of the slack variables. So this matrix is basically your B inverse.
+And multiply CB with the B inverse to get the final answer.
+Okay, so let us see whether we have it.
+Just give me a second.
+Okay, now, next.
+So, basically, if you look at your B, no? So, you might be wondering, trust me, but this is always your B.
+This matrix is always your B.
+And this matrix is your P inverse.
+If you literally find out.
+If you literally find out the inverse of this B, it comes out to be this.
+Okay, and you simply have to multiply CV with
+B inverse. This is the original problem, and that matrix is B, basically.
+Okay, and these are some of the relations that you need to understand very carefully.
+No, next.
+Same problem here.
+Now, if you look at now, this is what we have done. We are actually look at the dual and again computed the same thing. Okay, let's go for the next problem.
+So… Can you do the next problem quickly?
+I'll give you 2 minutes to do and put the answer in the chat.
+By the way, what is the, what is the solution by first method, quick solution by first method of the dual?
+What is the solution of the dual by using the first method?
+What is the solution of the dual by using first method?
+It is?
+10 by 6?
+2 by 3.
+And zero.
+This is the value of Y1, this is the value of Y2, this is the value of Y3.
+Okay, and how do you find the solution using CB into B inverse?
+How do you find the solution using CB into B inverse? Just look at CB. Look at all basic variables, look at their cost associated to basic variables.
+The costs associated to basic variables are.
+4.
+Okay.
+So first basic variable is x 2, second very basic variable is x 1, which is 3.
+And third basic variable is S3, which has a cost zero.
+Okay.
+Now, once you get CV, you need to look at
+C B inverse so B inverse is basically.
+This matrix.
+And simply have to multiply this with this, and you will get 3 solutions. Please understand, That this 430
+Is actually a matrix that has.
+One row.
+Three columns, and your next matrix This…
+Is 3 row, 3 columns. Therefore, the answer will be…
+One row, three columns. That is a single…
+Column, okay? So basically, you will get all single row. The answers you will get as X2, X1, S3.
+That's the whole idea.
+Okay.
+Let's take one more problem.
+So this is done here.
+Okay, and let's take this problem. This is a very interesting one. Again, it has something to do with
+This now if you look at it very carefully if you look at this look at the set of basic variables so the basic variables are X 2 S 1 and S 3.
+So the cost vectors are so if you try to solve this.
+Plus, if you look at it very carefully, 0 times S1.
+Plus 0 times S 2 plus 0 times S 3 minus M times A.
+Okay, some, A1, right? So this is basically its…
+Objective function, because here we have a greater than equal to 2.
+Okay, now the basic variables are X2, S1, S3, the cost vector for S.
+The cost vector for S one is zero the cost vector for S three is zero.
+And the matrix that this time you will take, you will not take this matrix, okay, as you will rather take this one.
+Okay, because the artificial variable is added here, so be careful about this.
+Okay, once you get this, and it's very easy to see.
+That columns we are taking for A1, S2, S3, okay, and then we are simply multiplying it to get the final solution.
+Now the next method is called complementary slackness, okay, the complementary slackness method is very interesting method.
+That says.
+Sir? Hello.
+Yeah, please, can you go back to that minus MA?
+Yes.
+Yes.
+be Minus MA1 or plus MA1?
+No, it's minus MB1.
+Minus M. We subtract the big value of M.
+Okay we purposely subtract the minus MA1 we will not add it.
+Okay, we keep M very positive large.
+Yes.
+No, we never did.
+I.
+also.
+Yeah.
+Is it so? Let me show. Let me show you, let me show you.
+Earlier case means
+Okay.
+MA1 kind of.
+Okay, okay, yes, let's see, this…
+it.
+Oh.
+Just let me show you, let me show you.
+I don't want any confusion.
+So I would like to take you to that problem.
+Yeah, this one, this one, this one.
+No, I did not add it. I subtracted only.
+The coefficient of A1 is always minus N.
+It's not pleasant.
+The M is called large penalty. M is a bigger number, as big as possible. We penalize the whole objective by a large number.
+Because we don't want any effect of artificial variable in our problem. Artificial variable is just, just, you know, introduced just to get the corner, that's all. Nothing more than that for the simplex.
+So if I go up, look at this. Here also I did minus MA1, if you look at it. See, the whole idea is when there is an greater than equal to.
+See if you do it like this X 1 plus 2 X 2 if you do something like plus S 1.
+Okay, so basically, sorry, minus S1 can subtract, then it will become 2. But now, if you put X1, X2, 0, you'll get S1 equal to minus 2.
+So, which is infeasible. So, S1 will not be a basic solution of this. So, what we generally do, we add a slack variable, and for… add artificial variable, and in the objective, we take a big M, bigger M value, so that we want to penalize the total profit, because we don't want…
+This guy to have any effect in the objective function, so we always subtract minus it.
+Is it clear now or still confused?
+No, it's clear, but you… you mentioned plus, so you're adding, but the equation will have negative effect on it.
+Yeah, so this is something like…
+I think adding, but… Okay, but you have to subscribe. Okay.
+Plus internet.
+Literal adding. Yeah, yeah, okay.
+It's
+You're adding this means adding minus M. That's what happens.
+Yeah, yeah, adding minus, yeah, correct.
+Hiding bias.
+So in general if you do A minus B you do A plus.
+The negative of B this is true.
+You don't literally do A minus B, you add minus B to A. The same thing here.
+Okay.
+Yeah.
+Like.
+Okay, let's understand complementary slackness. It's very interesting, complementary slackness is very simple and straightforward.
+Okay, complementary SACNAS says that If you have any positive surplus variable.
+I'll talk about it this sound little abstract but once you get the problem it will be very easy.
+the corresponding YI, you always treat at 0, and if you find that any XJ, okay, has a positive value, then the corresponding dual constraint is an equality. So, what does it mean? Literally, I mean, it sounds a little abstract at the moment, so let's try to solve a simple problem. Okay, now first.
+First look at…
+Very important thing, first look at all the solutions, okay? First look at all the solutions that you have.
+Okay.
+See, the value of X2 is 6.
+Positive.
+Value of S 2 is 7.
+Okay, positive.
+Value of X 3 is 4.
+Positive.
+And.
+Here.
+X one X three.
+Sorry, my bad, X 2, X 3 are the basic variables.
+S2 is a basic variable, but X1 is not here, so X1 is non-basic, so X1 is always going to be 0 here, okay? So this is the solution, X1 equal to 0, X2 equal to 6, X3 equal to 4, S2 equal to 7. Now, what complementary slackness says.
+That if any of the slack or surplus variable value is greater than zero.
+Then its corresponding dual variable S two corresponds to Y two.
+S 2 2 index 2 will corresponds to Y 2 will be always equal to 0.
+Okay, and…
+The duality constraint. So here we have two. So constraint number two will become equality in the dual and constraint number three will become equality in the dual. So what does it mean? So it may sound little.
+Hard, but it's pretty simple and straightforward. We'll solve 2-3 problems, so we'll understand what exactly is happening. Okay.
+Now let's look at it very carefully.
+Okay so this is our primal problem.
+This is our primer problem, and subject to this, and these are our duality constraints. So, I'm writing its dual constraint. Now, if you look at the slack variable value, it's 7, okay? So, 7, if you find that slack variable value is greater than 0,
+Then its corresponding dual value is always 0 so here.
+Straightforward. In the table, look at slack variable, look at its value. If slack variable is a basic variable in the final primal table.
+Then if its value is greater than 0 then the corresponding index Y 2 with respect to Y is also 0.
+Now, the value of X2 is 6, which is greater than 0, and the value of X3 is 4, which is greater than 0. So, the dual constraint, constraint number 2 and constraint number 3, so constraint number 2 and constraint number 3 will become equal.
+In between. So there's an equal sign that will be here. Now, from here, You see…
+That the first thing so Y 2 is clearly 0 for me I don't have to do anything.
+And this… these inequalities will become… constraint number 2 and constraint number 3 will become equalities. They will not be any more inequalities. That is… that is proven by theorem, and that… that is none of our business to see, because we're looking for the applied part of it.
+Now, we already know Y2 is 0, so put the Y2 is 0 here. So, if you put Y2 is 0, you will get two simultaneous equations to solve.
+Okay, now if you solve these two simultaneous equations, how do you solve it?
+If you add it.
+you will get this to be canceled out, and you will get this to be minus Y3 plus Y2, which is simply Y3 equal to minus 2 plus 1, which is minus 1. So Y3 is minus 1. So put this Y3 minus 1 in any of the equation you like, and you will get the value of Y1.
+So this is the way we solve using complementary slackness. What complementary slackness is, any slack
+Any slack or any surplus.
+SI.
+Is is a basic variable it is in the solution and if it is greater than 0 then the corresponding YI is always 0.
+If… Any of the decision variable XI XJ greater than 0.
+Then jth inequality in dual becomes equality.
+J inequality.
+in dual becomes equality. Okay, we'll solve two, three problems more. If you don't still understand, let me know. It's pretty easy. This is called complementary slackness.
+We're taking the complement now let's let's look at this problem very carefully okay.
+Okay fine so for this problem.
+First of all, look at the basic variables X1, X2, S3. Look at the value of S3, L1.
+S3 is 11. Okay, so I'm looking first… my first… as soon as I solve this primal problem, first I will look at… I want to solve dual problem using complementary segments.
+So S3 is 11. So whenever I say S3 is 11, this is Slack.
+Either it is slack or it is surplus whatever it is.
+If it is greater than 0, then the corresponding dual variable Y3 will be always.
+0. This is the first condition.
+Now look at the basic variable, other basic variable, X1 and X2.
+Look at the value of X one the solution is four.
+This is greater than 0 look at the value of X 2.
+X2 is 5, this is also greater than 0. So, the corresponding first inequality in dual will become equality, and corresponding second inequality in dual will become equality. Okay, so let's get into the solution of the problem, very carefully.
+Now look at this.
+Okay.
+Now, if you look at it very carefully, and if you try to represent it as a dual problem, so obviously, I have not given… okay, let me see whether we have dual problems written down. I did not write the dual of this, unfortunately, but you can write the dual of this very clearly. So, you know…
+The first dwell will become, you know, if you look at the first dwell.
+3 Y 1 okay minus Y 2 minus 4… Y3.
+Is greater than or equal to minus 1.
+The second will become.
+Minus Y2… minus Y1.
+plus 2Y2.
+Plus 3Y3.
+Greater than equal to 3 and the third will become.
+1, there's no here, so it is Y 1, there's no Y 3 here, Y, there's no, X 3 here.
+0 Y 2 and there's a plus 8 Y 3 greater than equal to minus 3 okay so what did we find here we found that.
+You are.
+S three is basically greater than zero therefore Y three is zero.
+And your X one X two.
+Are positive solutions are positive therefore the first inequality will become equality so this inequality will become equality.
+Okay, and second inequality also will become equality.
+From this, and we already have Y3 equal to 0, you can put Y3 equal to 0 and get simple two solutions, simultaneous equations, and you can solve them, and these are the dual solutions.
+Okay, we'll go for one more problem.
+Two more problems, rather, if you want.
+Okay, look at this problem.
+Now this is again the same problem which we are we were facing right from the beginning okay so we're talking about.
+So here, obviously, minus, we're adding the M. We're adding the M.
+I mean to say minus M okay now here.
+Again, look at the values of your slack variable S1 is positive, therefore Y1 is 0.
+S one is positive therefore Y one is zero now look at X.
+X two S three is positive. Oh wow. Therefore Y three is also zero. We just have to write the second dual as an equality. That's all.
+Okay? We have just have to write the second dual as an equality to get the answer. So you can compare every other method with every other method, they will give the same. Now, this is what Y1 is 0, Y3 is 0. And if you try to write down the…
+Second dual if you look at the second dual which is 2 times Y 1.
+Plus Y 2.
+Okay,
+2 times Y1 plus Y2 equal to 3.
+equal to 3.
+And we already know Y 1 and Y 3 equal to 0 so this will be 0 so and therefore Y 2 is equal to 3 is the answer.
+Pretty simple and straightforward. Nothing, nothing fancy, nothing different. Okay, so we have learned four methods and now we'll move to security analysis.
+Yes, so, any questions on this?
+Whatever we have learned so far in any of the method.
+So that we can move towards the sensitivity analysis now.
+If you have any questions, let me know.
+Any questions? Yes, yes, sir?
+Yeah, sir, can we pause for, like 1 minute? I need to take a poll, so.
+Okay, okay, no problem.
+Sorry for interruption, sir.
+Au revoir.
+Okay, these students are.
+I I would like to request all the learners to kindly take this poll it will just take 1 minute.
+Okay.
+Okay.
+I think we have just 4 students, that's 4, 5 learner students.
+Filer was okay.
+Yeah, 5 months.
+MOOCAIC.
+So 4 out of 5 is done.
+If, all the learners are listening, kindly take the poll so we can continue with the class.
+Okay, sir, I think that's it.
+That would be enough. Thank you for your time. Sorry for interruptions.
+Thank you.
+Okay.
+So let's go ahead.
+And let's go with the post Optimality analysis of sensitivity analysis.
+Okay, so… We will go through this again.
+Okay.
+So, please understand that when it comes to sensitivity analysis.
+Okay, we'll see some…
+First of all, a very formal definition of sensory analysis.
+So, it determines the range.
+It determines the range, range that how sensitive your output.
+How sensitive.
+How?
+Sensitive.
+Your output, or your answer, To changes in the input.
+To changes in input.
+Please understand, whenever I say change in the input, I don't mean a single change. I mean range of changes.
+Okay, there is some lower bound and there is some upper bound, there is some lower limit, upper limit. So sensitivity analysis determines the sensitivity range.
+Both for lower and upper limit.
+Within which the linear programming model parameters can vary, okay, one at a time.
+Okay, so we would like to determine the range within which the parameters will vary without affecting the Optimality. I don't want
+My current solution to change, after changing something.
+So I would like to have a range of my.
+A parameter, input parameter, I would like to determine the range okay the idea here is to determine.
+range.
+Of input.
+That will keep your optimal solution as it is keep.
+Your optimal solution as it is.
+How sensitive it is.
+How sensitive your output or your optimal solution to change in the range of inputs, okay.
+That is what the shadow price is all about. So shadow price, tail search.
+As how much optimal objective value changes.
+It talks about constraint when constraint in the RHS increase by 1 unit.
+Keeping everything fixed. And this is one of the part of sensitivity analysis. We'll talk about this little later. Right now, we'll begin with something different, okay? We'll begin with cost vector.
+Then we'll talk about, changing the constraint stuff, or right-hand side of the constraint.
+That is B vector.
+Okay, so shadow price will seize the second one.
+Okay, so let's begin, step by step and easy.
+Okay.
+So first let us see there are certain ways what do you mean by.
+Which.
+Okay, so… What are the inputs? What are the inputs that we are going to change?
+Okay, so given a problem that you want to maximize Z equal to C transpose X.
+Given AX less than equal to B and X greater than equal to 0.
+Okay.
+Now we may change the cost vector of the objective function. See, this is the cost vector of the objective function.
+C one X one.
+Plus C 2 X 2.
+Plus let's say C three X three.
+Plus…
+CNXL, okay? So, let's say we will change the cost of the first decision variable. So, we'll not change the cost, okay? We would like to see
+What is the range of this cost is there any range is there any A.
+Less than equal to B.
+Okay, is there any range of numbers?
+So that C1 will be in that range, and within that range, the optimal solution will not change. Similarly, we can do it for C2. This is called cost vectors. Then, change in the requirement vector, that is, this is actually shadow price.
+Okay, this B, if we change this requirement vector, any of the requirement vector.
+What will happen?
+If we add some new variable to your linear programming problem, what will happen?
+If you delete the given constraint what will happen.
+If you change the coefficients of the variable in the constraint itself, what will happen? If you change this matrix A, what will happen? So we'd like to see all these types, and this is called post-sensitivity analysis.
+Once you have a profit, once you have a cost minimize, profit maximize, then we'll experiment along with the range, range of the cost vector, range of the requirement vector, adding some new variable, deleting some constraint.
+you know, deleting some old variables, all these things we can do, and we'll actually try to see how sensitive our solution is to change in the input, range of input, okay? So, first thing.
+First thing, we would like to talk about the cost factor, okay? So, we have Consider this LPP.
+Z equal to 20X1 plus 10X2, which you can see that this is C1, and this is C2 here, okay? Subject to this constructor, okay? Now, here, if you try to solve this, it is very easy, you can solve it by graphical method also.
+Quickly, you can graph it, see the region, and see the point of intersection, where it intersects, and then you can find that 20 and 0 is the solution, and maximum value is 400. Okay, now…
+Now, the question is, what will happen to the optimal solution if we change
+Any cost vector of the objective function.
+Any cost work.
+Like, if I change 20 to, let's say, if I make it 25.
+Will my profits.
+Stays the same, okay? If I make it 19, will it stays the same?
+Will it increase or decrease or will it stay the same.
+Is there any range in between A and B? Is there any range?
+So that 20 will become in that range and AB, including AB and including all number between A and B, if you take any number, the profit will remain the same.
+Okay? Or if it… if I change it, will it increase, or will it decrease? What will happen? This kind of thing, we want to understand.
+And I don't want to get into the theory of this, there is a straightforward.
+Formula to find the bounds of this, so let's look at the 1st problem straight away.
+So here please understand so here if Z is 1.
+Plus C two times X two.
+plus your somewhere else. Ck, times xk, plus dot dot of Cn times x. Okay, so where Ck is the objective coefficient of the variable Xk.
+And let's assume that delta CK is the change I do.
+In the coefficient CK, so new coefficient will become CK plus delta CK, okay, so for example.
+Let's say I ha- I I have I have this.
+Okay, now suppose I want to change it by 5, okay? So what it will become? Original 10 plus the change is 5, something like that, okay? Now, there are two cases here.
+In this particular problem.
+When you are.
+When your CI, whatever CI that you're looking for.
+It may be a basic variable.
+Or it may not be a basic variable so what we are interested in.
+How much CR?
+change while the current solution remains optimal, okay? What are the different values of CI I can take that will keep my current optimal solution as it is? So, this CI, whenever you talk about this CI, this CI could belongs
+to one of the basic variable, or it may not belongs to basic variable. So there are two cases. Now the case one, when they belongs to basic variable. So let's start with the case, and let's start the problem straightforwardly without wasting time.
+Okay, now look at this.
+Now what I want to find out, let's see, this is C 1 X 1.
+Okay, so this is C1X1, and this is C2X2. Now, what I want to find out is how much this C1 can be changed without affecting this optimal solution.
+What are the different values of C one you can take so that this won't get disturbed this is the question okay.
+Now… The range is given by formula, the range is given by this formula.
+The range is given by this formula.
+Okay.
+Minus of ZJ minus CJ divided by YKJ all YKJ greater than equal greater than 0.
+In between your delta CK and so this is maximum taken out of all of this.
+In between delta CK I'll explain all of this don't worry and the minimum where YKJ less than 0 and.
+These two things are same, please understand.
+See.
+This…
+2 things are same. Okay, minus minus one is a Max. All these YKs are J's are positive. All those YKs are negative. Now, what is this exactly? How? So look at this very carefully.
+For the condition was.
+You have to first find out whether you are.
+CJ belongs to basic variable or not. We're trying to find out the effect of 15. 15 corresponds to X1, and X1 is basic variable. Therefore, your… this C1 belongs to basic variable, okay? It is in the basic variable, this C1.
+It is in the basic variable now.
+As you want to look at the effect of C1, look at the row of The basic variable.
+Look at the row corresponding to basic variable, okay? First of all, this is, please understand, this is Y11, you know, this is Y11, Y12, Y13, Y14, Y15.
+Y two one Y two three Y two three Y three three Y four Y three one Y three two.
+Y34… Y three five Y three four Y three five so on so forth.
+Now, first.
+Look at this, this C1, look at this, look at the corresponding basic variable, look at that variable, look at that row.
+First of all, look at all the positive values here.
+The positive values are 1.
+And 8 by 39 this value we are looking at.
+Okay, so YKJ, so C1 corresponds to X1.
+And all positive YKJs are 1 and 8 by 39. And all negative YKJs are only one value, that is minus 1 by 39.
+Simply put in this formula that's all okay so how do we put in this formula.
+So first of all look at the positive value the first positive value is 1.
+And the corresponding ZJ minus CJ to that is 0 so it will be the formula is.
+Taken over all YKJ.
+Greater than 0.
+So you are going to find out.
+Greater than zero numbers.
+Minus of.
+ZJ minus CJ so this is minus of zero.
+Divided by 1.
+Divided by YKJ so this is the YKJ here.
+Divided by 1, comma, next positive value.
+Is… Next positive value.
+Is it by 39?
+And what minus of this value.
+5 by 2, okay, so we don't take 0, we don't take 0, therefore we don't need 0, so we just have 1 value.
+Less than equal to delta C1, we are looking at the change in C1, and minimum out of… now look at the negative 1, and it's corresponding… this is YKJ, and this is corresponding ZJ minus CJ, okay? So, once you solve this, you'll get…
+Something like this.
+So first value.
+C1 belongs to CB.
+Delta C one and the minimum value.
+So if you solve it.
+You'll get this value.
+This one right now this is the delta C1 change but we want C1 so we'll add 15.
+To both the side.
+We want to find the range of C1.
+We add 15 both the side to this we'll add 15 here we'll add 15 here.
+Okay? And you'll get 45 by 16 to 225 by 2. Now, if you really do it, it is,
+3 point something.
+C1 we got.
+And 225 by 2 is 1 1.
+So, it says that if you change this value from 3 point something to 112, Okay.
+See, 15 is already there in between. So if we change this value from 3 point something to 112, solution will not change. That's what this…
+Sensitivities.
+Okay, post-optimal analysis.
+This is one way to do it.
+There's other way to do the same problem, other way to solve the same problem.
+The other way to solve the same problem is.
+This is slightly difficult.
+So what you do is you find the you know ZJ minus CJ table.
+And, you know, you already have
+You just need to fill these two values, okay?
+And you're going to assume that these two values are always going to be greater than zero, because this is a maximization problem.
+Grada equal to 0.
+Right?
+So now.
+Look at this ZJ minus CJ so ZJ is obviously this into this.
+Plus this into this.
+Okay, so this is what? Greater than equal to 0.
+And look at the ZJ minus CJ for this which I'm going to do.
+Okay, for this particular problem, the same thing.
+greater than equal to zero and form this you see that we get the same thing
+Okay, so this is the… This is the way we solve it by second method.
+Okay.
+Now, it might be possible that whenever you don't have
+You know your variable may not be a basic variable if you look at.
+The… The expo the C four here C four corresponds to.
+Now if you look at the C4 okay if you look at C4 very carefully.
+There's no C4 here, as such.
+Okay.
+This is C one this is C two this is C three.
+But… And we have X2, X3, X1. So there is no base C4
+Does not belongs to basic variable.
+Okay, but C4, if you look at it, you can write it as 0 times S1. So, this is C4.
+So C 4 is objective coefficient of S 1.
+Originally C four is zero and S one is non-basic.
+Okay, so read ZJ minus CJ under the S1 column. So look at this ZJ minus CJ. Okay, in this case, what will happen is
+We'll always say that infinity less than.
+This ZJ minus CJ if you look at ZJ minus CJ.
+It will be… 45.
+upon 41 minus delta C4, we say, directly. This is greater than or equal to 0, and then we solve it, we get the range in between minus infinity to 40 pi over 41.
+So it actually finds the range this way and this is the same thing.
+Now, there is something called effect of requirement vector.
+So okay, so I have a class. So we'll talk about effect of requirement vector in the next class.
+Till then, we have a class on Sunday, so we'll cover that, this requirement, but then I will start with unconscious optimization straight away on Sunday also. With that being said, thank you so much. We'll stop here.
+Any questions, guys?
+No questions.
+Yes, sir.
+Yes, yes, Anish.
+Ashish.
+Milan sir.
+Yeah, that's just it.
+Yeah, I think there's a class scheduled… there's a class scheduled for tomorrow.
+Yours, yours.
+Yeah, so, 18 days also, another person.
+I have a class, I have a class scheduled on Sunday, 18th.
+Okay.
+No, actually, in the LMS, it shows 17, no? So, I have already registered for the class.
+No, actually, on Loom, on my Loom, canvas, it shows 18th, so…
+16th and 18th, the class which went, last time, because I was not well, that class.
+the.
+Launch 18 18 you make a plaster.
+Okay, sure, sure.
+Please check it again and let me know.
+Sure sure sure sure thank you.
+Okay. Okay.

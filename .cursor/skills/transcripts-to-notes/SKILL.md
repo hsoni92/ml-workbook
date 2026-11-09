@@ -31,6 +31,11 @@ disable-model-invocation: true
    - Inline math: `$...$`
    - Verify formulas render correctly in GitHub-flavored markdown
 
+6. **Rename and index** when notes live under `bits-pilani/trimester-4/notes` (or any tree using topic filenames):
+   - Set a clear `# Title` H1 on each note (that title becomes the file slug)
+   - `python3 scripts/rename-notes-by-topic.py bits-pilani/trimester-4/notes`
+   - `python3 scripts/number-notes.py bits-pilani/trimester-4/notes`
+
 ## Instructions
 
 from requested transcriptions/week-{n} transcriptions prepare proper notes 1-1 per transcription at {subject}/week-{n} with same file name.

@@ -1,156 +1,571 @@
-<!DOCTYPE html>
-<html data-userprofile-context="{&quot;hasProfileCardAccess&quot;:false}" data-mathjax-context="{&quot;renderLatex&quot;:true,&quot;outputScale&quot;:1.5}" data-logging-endpoint="/d2l/lp/logger/provision?sessionToken=NjYwNiw" lang="en-gb" data-lang-default="en-gb" data-intl-overrides="{&quot;number&quot;:{&quot;patterns&quot;:{&quot;decimal&quot;:{&quot;negativePattern&quot;:&quot;-{number}&quot;},&quot;percent&quot;:{&quot;positivePattern&quot;:&quot;{number} %&quot;,&quot;negativePattern&quot;:&quot;-{number} %&quot;}},&quot;symbols&quot;:{&quot;decimal&quot;:&quot;.&quot;,&quot;group&quot;:&quot;,&quot;,&quot;negative&quot;:&quot;-&quot;,&quot;percent&quot;:&quot;%&quot;},&quot;groupSize&quot;:[3]},&quot;date&quot;:{&quot;hour24&quot;:false,&quot;calendar&quot;:{&quot;firstDayOfWeek&quot;:0,&quot;dayPeriods&quot;:{&quot;am&quot;:&quot;AM&quot;,&quot;pm&quot;:&quot;PM&quot;},&quot;months&quot;:{&quot;short&quot;:[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;,&quot;Sep&quot;,&quot;Oct&quot;,&quot;Nov&quot;,&quot;Dec&quot;,&quot;&quot;],&quot;long&quot;:[&quot;January&quot;,&quot;February&quot;,&quot;March&quot;,&quot;April&quot;,&quot;May&quot;,&quot;June&quot;,&quot;July&quot;,&quot;August&quot;,&quot;September&quot;,&quot;October&quot;,&quot;November&quot;,&quot;December&quot;,&quot;&quot;]},&quot;days&quot;:{&quot;short&quot;:[&quot;Sun&quot;,&quot;Mon&quot;,&quot;Tue&quot;,&quot;Wed&quot;,&quot;Thu&quot;,&quot;Fri&quot;,&quot;Sat&quot;]}},&quot;formats&quot;:{&quot;dateFormats&quot;:{&quot;short&quot;:&quot;dd/MM/yyyy&quot;},&quot;timeFormats&quot;:{&quot;short&quot;:&quot;h:mm tt&quot;,&quot;medium&quot;:&quot;h:mm tt&quot;,&quot;full&quot;:&quot;h:mm tt ZZZ&quot;}}}}" data-oslo="{&quot;batch&quot;:&quot;/d2l/api/oslo/batch?languageId=11&quot;,&quot;collection&quot;:&quot;/d2l/api/oslo/collection?languageId=11&quot;,&quot;version&quot;:&quot;W/\&quot;20.26.10.26259.0\&quot;&quot;}" data-timezone="{&quot;name&quot;:&quot;India - Kolkata&quot;,&quot;identifier&quot;:&quot;Asia/Calcutta&quot;}" data-terminology="{&quot;outcomes&quot;:&quot;outcomes&quot;,&quot;educator&quot;:&quot;educator&quot;,&quot;moduleHierarchy&quot;:&quot;unit&quot;}" data-app-version="20.26.10" dir="ltr" data-telemetry-endpoint="https://prd.ap-south-1.telemetryservice.brightspace.com/api/events/" data-cdn="https://s.brightspace.com/apps/brightspace/20.26.10.26259/" data-global-context="{&quot;orgUnitId&quot;:&quot;6606&quot;,&quot;orgId&quot;:&quot;6606&quot;,&quot;userId&quot;:null}" data-he-context="{&quot;activeOrgEnrollment&quot;:false,&quot;applySandboxing&quot;:false,&quot;bcsansFontAllowed&quot;:false,&quot;contentStyler&quot;:false,&quot;contentStylerCssOverride&quot;:&quot;&quot;,&quot;enableLmsPathChecking&quot;:true,&quot;generativeAIEndpoint&quot;:&quot;&quot;,&quot;h5pContext&quot;:null,&quot;insertElement&quot;:false,&quot;insertPractice&quot;:false,&quot;layouts&quot;:false,&quot;mathRenderScale&quot;:1.5,&quot;maxFileSize&quot;:2147483648,&quot;mentions&quot;:true,&quot;orgUnitId&quot;:&quot;6606&quot;,&quot;orgUnitPath&quot;:&quot;/content/&quot;,&quot;pasteFormatting&quot;:&quot;merge&quot;,&quot;sourceEditable&quot;:false,&quot;uploadFiles&quot;:false,&quot;useNewTinyMCEVersion&quot;:true,&quot;viewFiles&quot;:false,&quot;wmodeOpaque&quot;:true}" data-css-vars="{&quot;--d2l-branding-primary-color&quot;:&quot;#ff812c&quot;}">
-<head>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Login - BITS Pilani Digital</title>
-<link rel="preconnect" href="https://s.brightspace.com/lib/bsi/2026.10.234/" crossorigin>
-<link rel="dns-prefetch" href="https://s.brightspace.com/lib/bsi/2026.10.234/">
-<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.10.234/unbundled/bsi-unbundled.js" as="script" crossorigin="anonymous">
-<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.10.234/unbundled/navigation.js" as="script" crossorigin="anonymous">
-<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.10.234/unbundled/navigation-main-header.js" as="script" crossorigin="anonymous">
-<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.10.234/unbundled/navigation-link-image.js" as="script" crossorigin="anonymous">
-<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.10.234/unbundled/html-block.js" as="script" crossorigin="anonymous">
-<script>
-(function(){var client;var errors = [];window.addEventListener('d2l-logging-loaded', function(e) {client = e.detail.createClient('uncaught-errors', { shouldThrottle: true });if (errors.length > 0) {client.legacyErrorBatch(errors);}});var handleError = function(data) {if (!data.message) return;if (data.error && data.error.stack && (data.error.stack.includes('/content/') || data.error.stack.includes('/shared/'))) return;if (client) {client.legacyError(data.message, data.source, data.lineno, data.colno, data.error);} else {errors.push(data);}};window.addEventListener('error', function(e) {handleError({ message: e.message, source: e.source, lineno: e.lineno, colno: e.colno, error: e.error });});window.addEventListener('unhandledrejection', function(e) {handleError({message: e.reason ? (e.reason.message ? e.reason.message : e.reason) : '',error: e.reason});});})();
-(function(){try { localStorage.setItem('XSRF.Token','');} catch(e) {}})();
-(function(){if(window['FontFace'] === undefined) { window.d2lFontsLoaded = true; return; }window.d2lFontsLoaded = false;Promise.all(['400','700'].map(function(w) {return new FontFace('Lato','url(https://s.brightspace.com/lib/fonts/0.6.1/assets/Lato-' + w + '.woff2) format("woff2")', {style:'normal',weight: w}).load();})).then(function() {window.d2lFontsLoaded = true;if(window['D2L'] && window.D2L['FontsLoaded']) { window.D2L.FontsLoaded(); }});})();
-(function(){
-D2L = window.D2L || {}; D2L.LP = D2L.LP || {}; D2L.LP.Web = D2L.LP.Web || {}; D2L.LP.Web.UI = D2L.LP.Web.UI || {};
-D2L.LP.Web.UI.Flags = {
-{"award-enable-copy-workflow":false,"awards-allow-unenroll-bake":true,"awards-ui-fetch-from-orgunit":true,"create-space-experimental-brightspace-object-types":false,"MAV-5508-welcome-widget-create-new":true,"ipsis-sourcesystem-migration":true,"ipsis-provider-oldstandardcsv":false,"ipsis-oneroster-csv-powerschool":false,"ipsis-oneroster-full-sync-implicit-unenrollments":false,"ipsis-esb-lis":false,"hyrl-611-ilp-user-sourcedid-update":true,"hyrl-4009-filter-change-force-full-sync":false,"hyrl-5142-department-location":false,"f17778-oneroster-psur":false,"f19471-gg4l-oneroster-grades-passback":true,"hyrl-1999-oneroster-rest-1p2":false,"hyrl-4029-academic-session-merge":false,"hyrl-2962-cancel-batch":false,"hyrl-3638-user-default-inactive-option":true,"hyrl-3205-psur-firstName-fallback":false,"hyrl-3587-hylia-data-pond":false,"F18735-lti-special-access-ui-feature-flag":false,"F16988-add-to-calendar":true,"advanced-assessments-groups":true,"nim-5386-modify-activity-display-return-to":true,"nim-5395-update-org-unit-id-on-activity-iteration":true,"nim-5243-consolidate-evaluator-and-publisher-patch-actions":true,"nim-5812-modify-aa-face-save-order":true,"nim-5846-lock-publisher-rule-selection-when-submissions-received":true,"nim-5757-aa-learner-candidates-route-improvements":false,"nim-6384-save-actions-complete-after-annotations-processed":true,"PHNX-3264-unavailable-content-visibility-setting":true,"F19162-enable-content-face-releaseconditions":true,"F21912-enable-content-face-competencies":true,"F19163-enable-content-face-standards":true,"IDCS-15-edit-content-file-descriptions":true,"PHNX-1554-enable-refactored-completion-summary":true,"PHNX-2629-access-unlimited-depth":true,"IDCS-283-edit-lti-descriptions":true,"EP-1169-use-content-search":true,"EP-1432-enable-description-scrolling-hovering":true,"EP-1580-enable-url-updating-in-lessons-next-prev":true,"PHNX-2357-user-guided-grade-associations":true,"PHNX-2649-lessons-course-overview":true,"PHNX-3198-respect-availability-window":true,"PHNX-3065-lessons-quicklink-current-window-navigation":true,"PHNX-2766-lazy-load-content":true,"PHNX-2988-lessons-full-date-tooltip-and-aria":true,"PHNX-3063-support-availability-types":true,"PHNX-4040-improved-file-topic-uploader":true,"PHNX-3190-valence-get-user-topic-completions-ignores-classlist-presence":true,"PHNX-4337-lti-multigrades-link-existing-button-fix":false,"EP-1454-enable-module-level-outcome-alignment":true,"PHNX-5006-enable-immersive-lessons-content-view":true,"PHNX-5314-lessons-live-polling":true,"usa-1243-discussions-due-date":true,"FED-3067-Annual-Consumption":true,"cpd-add-record-from-award":true,"fed-54-in-progress":false,"FED-4668-lift-outcomes":true,"FED-4649-content-gen-import-expand":true,"FED-4285-content-templates":true,"LUMI-275-full-screen":true,"LUMI-276-split-view":true,"HAI-1593-content-picker-quiz":true,"HAI-1591-content-picker-ideas":true,"HAI-1592-content-picker-summary":true,"HAI-1821-content-picker-lss":true,"HAI-596-Interventions":true,"FED-6732-quiz-custom-instructions":true,"FED-6876-idea-custom-instructions":true,"rpc-recalculate-all-users-fix":true,"AUT-4438-Grades-Recalc-Restrict-Users":true,"shield-15581-dev-add-bulk-edit-group-names-ui":true,"shield-16289-dev-add-groups-enrollment-pages":false,"oad-include-asn":true,"EP-1443-enable-lightcast-skills":false,"outcomes-set-course-dataset":true,"outcomes-set-org-dataset":true,"EP-1420-enable-createspace-picker":true,"outcome-sets-scales":true,"outcomes-coverage-grid":true,"de44716-lti-iframe-resize-limit":false,"lti-apps":true,"shield-14553-add-semester-department-filters":true,"employee-training-my-courses-page":false,"BORG-5429-Hotspot-Question-Type":false,"BORG-6738-shared-question-components":false,"BORG-7129-true-false-universal-question":false,"PHNX-5035-smart-curriculum-mobile-dvh-viewport-fix":true,"FED-9107-learner-mode-config-choose-content":false,"FED-2493-Docs-PDF":true,"HAI-2170-study-notebook":false,"HAI-3146-modify-knowledge-checks":false,"HAI-3607-lumi-tutor":false,"chrome-unload-deprecation-opt-out":true,"MAV-6565-lms-context-provider-host-head-filter":true,"MAV-5203-createspace-h5p-library":true,"MAV-6452-createspace-discard-changes-dialog":true,"GAUD-8852-use-input-generated-styles":true,"GAUD-8849-Use-input-radio-generated-styles":true,"GAUD-8351-dialog-resize-telemetry":true,"PHNX-3234-dialog-alignment-fix":true,"shield-16276-add-accessible-tooltip-for-edit-in-place":true,"d2l-offscreen-sizeless":true,"GAUD-9564-accessible-grid-navigation-with-up-down-keys":true,"GAUD-8299-core-tabs-use-new-structure":true,"GAUD-10260-get-focusable-fix":true,"GAUD-10337-use-alert-toast-popover":true,"GAUD-10409-prefer-native-general-dialogs":false,"GAUD-10336-prefer-native-fullscreen-dialogs":false,"GAUD-10581-use-intersection-observer":true,"button-toggle-no-change-event-on-prop-update":true,"install-wizard-dialog":true,"unique-reoffer-code":true,"MAV-5974-hwep-delete-config-button":false,"fix-navbar-flicker":true,"PHNX-4309-iframe-modal-dialog-zindex-fix":true,"AUT-4452-Grades-Formula-Special-Characters-HTML-Fix":false},
-function(feature, defaultValue) {
-const featureValue = D2L.LP.Web.UI.Flags.ListedFlags[feature];
-return featureValue !== undefined ? featureValue : defaultValue;
-}
-};
-})();
-</script>
-<meta name="robots" content="noindex" />
-<link rel="icon" href="/d2l/lp/web/faviconView?variant=0&amp;version=1" />
-<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/lib/bsi/2026.10.234/bsi.css" />
-<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/lib/reset-css/1.1.0/reset.css" />
-<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/apps/brightspace/20.26.10.26259/web-packages/D2L.LP.Web.Desktop.css" />
-<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/apps/brightspace/20.26.10.26259/web-packages/D2L.LP.Auth.Web.Desktop.css" />
-<style>
-html { font-size:20px; }
-#ff812c; }
-.d2l_1_0_196 {margin-bottom:30px;}
-.d2l-button-sso-1[primary] {
-#006FBF;
-#FFFFFF;
-hidden;
-normal;
-break-word;
-}
-.d2l-button-sso-1[primary]:hover,
-.d2l-button-sso-1[primary]:focus {
-#005089;
-}
-.d2l_1_1_274 {margin:20px 0px;}
-.d2l_1_3_694 {margin:20px 0px 0px 0px;}
-.d2l_1_4_493 {margin:10px 0px;}
-.d2l_1_8_806 {padding:5px;}
-.d2l_1_9_575 {margin-bottom:1em;}
-.d2l_1_10_988 {background-color:#fefcef;}
-.d2l_1_11_787 {border:1px solid #faecbb;border-radius:4px;}
-.d2l_1_12_292 {background-position:left top;}
-.d2l_1_13_895 {background-image:url('/d2l/img/0/SystemCheck.Main.itemWarning.png?v=20.26.10.26259');background-size: 18px;}
-.d2l_1_14_20 {padding-left:29px;}
-.d2l_1_15_889 {min-height:16px;}
-.d2l_1_16_166 {margin-top:5px;}
-.d2l_1_17_279 {float:right;}
-</style>
-<script>(function() {})();</script></head>
-<body class="d2l-body d2l-typography vui-typography daylight d2l-body-unresolved d2l-body-flex">
-<div class="d2l-body-main-wrapper"><div class="d2l-navigation-s-no-login d2l-navigation-s-main-no-links"><d2l-labs-navigation><d2l-labs-navigation-main-header><div class="d2l-labs-navigation-header-left" slot="left"><d2l-labs-navigation-link-image class="d2l-navigation-s-logo" src="/d2l/lp/navbars/6606/theme/viewimage/15587/view?v=20.26.10.26259" text="BITS Pilani Digital" tooltip-offset="0"></d2l-labs-navigation-link-image></div></d2l-labs-navigation-main-header></d2l-labs-navigation></div><div class="d2l-page-main d2l-max-width" style="background-color: transparent;"><div class="d2l-page-main-padding"><h1 class="d2l-login-portal-heading d2l-page-title d2l-heading vui-heading-2" style="color: #565A5C;">Welcome to LUMEN</h1><div class="d2l_1_0_196"><d2l-html-block html="&lt;p>The Learning Management System of BITS Pilani Digital&lt;/p>"></d2l-html-block></div><div class="d2l-login-portal-flex"><div><div class="d2l-login-portal-login-container"><div class="d2l-login-portal-login d2l-login-portal-bordered"><div class="d2l_1_1_274">
-<button type="button" primary class="d2l-button d2l-button-sso-1" id="d2l_1_2_23" style="width:100%;" data-onclick="D2L.O(&quot;__g1&quot;,0)();">Login using BITS Mail</button></div>
-<div>
-<div class="d2l-sep d2l-sep-s d2l-sep-t" aria-hidden="true"><hr /></div>
-</div>
-<div class="d2l_1_3_694">
-<div class="d2l-messagearea" id="d2l_messagearea"></div></div>
-<form data-method="post" data-scope="" data-location="/d2l/lp/auth/login/login.d2l" class="d2l-form d2l-form-primary" id="formId" onsubmit="return false;">
-<input type="hidden" name="target" id="target" value="/content/enforced/7204-T1-26_MDSDF412/GMT20260925-125006_Recording.transcript.vtt" />
-<input type="hidden" name="loginPath" id="loginPath" value="/d2l/login" />
-<div class="d2l_1_4_493">
-<div class="d2l-fieldgroup">
-<div class="vui-field-row">
-<label for="userName" class="d2l-field d2l-label d2l-label-required">Username</label>
-<span class="d2l-validator" id="d2l_1_5_113"></span>
-<input type="text" class="d2l-edit d2l-edit-required" id="userName" name="userName" autocomplete="username" autocorrect="off" autocapitalize="off" />
-</div>
-<div class="vui-field-row">
-<label for="password" class="d2l-field d2l-label d2l-label-required">Password</label>
-<span class="d2l-validator" id="d2l_1_6_110"></span>
-<input type="password" class="d2l-edit d2l-edit-required" id="password" name="password" autocomplete="off" />
-</div>
-</div>
-<button type="button" class="d2l-button" id="d2l_1_7_436" data-onclick="D2L.O(&quot;__g1&quot;,1)();">Log In</button></div>
-</form>
-</div><div class="d2l-systemcheck" style="margin-bottom:1em;">
-<noscript><div class="d2l_1_8_806 d2l_1_9_575 d2l_1_10_988 d2l_1_11_787">
-<div class="d2l-container-icon d2l_1_12_292 d2l_1_13_895 d2l_1_12_292 d2l_1_14_20 d2l_1_15_889">
-<div class="d2l-textblock d2l-textblock-strong">Warning</div>
-</div>
-<div class="d2l-htmlblock-untrusted d2l-htmlblock-wc d2l_1_16_166"><d2l-html-block no-deferred-rendering><div>Either your browser does not support <strong>JavaScript</strong> or it has been disabled through your browser&#39;s settings. The system requires a JavaScript enabled browser, and will be unable to perform the other system checks without JavaScript support.</div></d2l-html-block></div><a class="d2l-link d2l_1_17_279" aria-label="" href="/d2l/systemCheck" title="Learn more about: JavaScript">Learn more...</a>
-<div class="d2l-clear"></div>
-</div>
-</noscript>
-</div>
-</div><div class="d2l-login-portal-image d2l-login-portal-margin"><img class="d2l-image" src="/d2l/lp/login/picture?fileSystemType=Database&amp;fileId=17789&amp;v=20.26.10.26259" alt="" />
-</div><div class="d2l-clear"></div>
-</div></div></div></div><script src="https://s.brightspace.com/lib/jquery/3.7.1/jquery.min.js"></script>
-<script src="https://s.brightspace.com/lib/jqueryui/1.13.2/jquery-ui.min.js"></script>
-<script src="https://s.brightspace.com/lib/bsi/2026.10.234/bsi.js"></script>
-<script>
-window.__elasticRumOnload = function() {if (!window['elasticApm']) return;var apm = elasticApm.init({serviceName: 'LMS',serverUrl: 'https://d2l-elasticrum.apm.us-east-1.aws.cloud.es.io/',transactionSampleRate: 0.1,disableInstrumentations: ['xmlhttprequest','fetch','eventtarget','history']});apm.addLabels({ "orgName": "bitsdigital"});apm.addLabels({ "instanceName": "bitsdigital"});};
-</script>
-<script async="async" onload="window.__elasticRumOnload()" src="https://s.brightspace.com/lib/elastic-apm-rum/5.14.0/elastic-apm-rum.umd.min.js"></script>
-<script src="https://s.brightspace.com/apps/brightspace/20.26.10.26259/web-packages/D2L.LP.Web.Desktop.js"></script>
-</div><footer class="d2l-footer d2l-footer-background-color d2l-footer-top-spacing d2l-footer-top-inner-view"><div class="d2l_1_18_654 d2l-login-language-selector">
-<d2l-dropdown><d2l-button-subtle icon="tier1:browser" class="d2l-dropdown-opener" text="English (United Kingdom)" description="English (United Kingdom) – Select a locale and language"></d2l-button-subtle>
-<d2l-dropdown-menu><d2l-menu label="English (United Kingdom) – Select a locale and language" class="d2l-menu-mvc">
-<d2l-menu-item text="English (United States)" id="d2l_1_19_387"></d2l-menu-item>
-<d2l-menu-item text="English (United Kingdom)" id="d2l_1_20_508"></d2l-menu-item>
-</d2l-menu>
-</d2l-dropdown-menu></d2l-dropdown>
-</div>
-<div class="d2l-footer-default-content"><p>Powered by <span class="d2l-offscreen">D2L Brightspace</span></p><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212 17" fill="#6e7477"><g clip-path="url(#clip0_12_484)"><path d="M66.4982 8.47672C67.9121 7.76855 68.6563 6.50425 68.6563 4.79585C68.6563 2.0192 66.5291 0.293457 63.1045 0.293457H56.1851V16.7133H63.2224C66.786 16.7133 68.9133 15.0223 68.9133 12.1883C68.9119 10.3785 68.0792 9.10086 66.4982 8.47672ZM59.5001 9.87171H63.1045C64.6658 9.87171 65.5266 10.5719 65.5266 11.8415C65.5266 13.1885 64.6841 13.8993 63.1045 13.8993H59.5001V9.87171ZM62.9191 7.16307H59.5001V3.10745H62.8489C63.954 3.10745 65.271 3.44887 65.271 5.07725C65.271 6.4189 64.4356 7.15774 62.9191 7.15774V7.16307Z" /><path d="M84.1186 5.47331C84.1186 2.22588 81.7738 0.288086 77.8465 0.288086H71.2051V16.7133H74.5216V10.7025H77.8732L80.7474 16.7133H84.3784L81.1181 10.029C83.081 9.20618 84.1186 7.63515 84.1186 5.47331ZM74.5216 3.12875H77.8465C79.6367 3.12875 80.6631 3.98362 80.6631 5.47331C80.6631 7.00567 79.6367 7.88321 77.8465 7.88321H74.5216V3.12875Z" /><path d="M89.982 0.286621H86.6655V16.7132H89.982V0.286621Z" /><path d="M100.365 10.153H105.486C105.441 12.5669 103.746 14.0045 100.933 14.0045C97.7635 14.0045 95.7978 11.9441 95.7978 8.62195C95.7978 5.15447 97.7551 2.99663 100.909 2.99663C103.051 2.99663 104.559 3.96352 105.028 5.64792L105.062 5.77061H108.526L108.498 5.58257C108.005 2.25779 104.988 0.0239258 100.978 0.0239258C98.4501 0.0239258 96.2766 0.854788 94.7082 2.42449C93.1398 3.99419 92.3423 6.09469 92.3423 8.55927C92.3423 11.0238 93.137 13.127 94.6408 14.6474C96.1446 16.1677 98.1904 16.9599 100.583 16.9599C102.653 16.9599 104.526 16.2651 105.597 15.1248L105.756 16.7172H108.593V7.33365H100.365V10.153Z" /><path d="M121.852 6.93618H114.691V0.286621H111.375V16.7132H114.691V9.88755H121.852V16.7132H125.169V0.286621H121.852V6.93618Z" /><path d="M127.022 3.21664H131.983V16.7132H135.298V3.21664H140.259V0.286621H127.022V3.21664Z" /><path d="M149.045 7.33628L146.378 6.78682C145.027 6.49208 144.451 5.91461 144.451 4.85703C144.451 3.61407 145.538 2.84322 147.289 2.84322C148.881 2.84322 149.832 3.5874 149.896 4.88637L149.905 5.04507H153.225V4.87437C153.13 1.86833 150.878 0.0012207 147.348 0.0012207C143.697 0.0012207 141.147 2.0337 141.147 4.94505C141.147 7.46431 142.71 9.11937 145.664 9.73018L148.355 10.3036C149.639 10.5704 150.18 11.1185 150.18 12.1441C150.18 13.3737 149.013 14.1365 147.133 14.1365C145.333 14.1365 144.246 13.383 144.225 12.1201V11.956H140.907V12.1267C140.979 15.0874 143.422 16.9999 147.132 16.9999C150.997 16.9999 153.495 14.9994 153.495 11.9027C153.495 9.44478 152.04 7.95109 149.045 7.33628Z" /><path d="M162.633 0.288086H155.753V16.7133H159.069V11.1653H162.633C166.093 11.1653 168.418 8.97546 168.418 5.71603C168.418 2.4566 166.098 0.288086 162.633 0.288086ZM159.076 3.12875H162.055C163.929 3.12875 164.962 4.03963 164.962 5.69336C164.962 7.38976 163.914 8.32464 162.007 8.32464H159.076V3.12875Z" /><path d="M195.457 11.1292C194.916 12.8629 193.21 13.9379 191.011 13.9379C188.019 13.9379 186.086 11.804 186.086 8.48992C186.086 5.14246 187.973 3.06331 191.011 3.06331C193.183 3.06331 194.809 4.13023 195.364 5.91598L195.402 6.03601H198.859L198.826 5.84396C198.234 2.30846 195.191 0.0239258 191.074 0.0239258C186.02 0.0239258 182.625 3.43406 182.625 8.51126C182.625 13.6551 185.886 16.9772 190.935 16.9772C195.021 16.9772 198.211 14.658 198.873 11.2052L198.909 11.0105H195.489L195.457 11.1292Z" /><path d="M212 3.21664V0.286621H201.128V16.7132H212V13.7831H204.443V9.84354H211.212V7.02421H204.443V3.21664H212Z" /><path d="M171.747 13.1084H168.358L166.987 16.7132H170.422L171.747 13.1084Z" /><path d="M179.187 16.7132H182.669L181.299 13.1084H177.862L179.187 16.7132Z" /><path d="M178.07 10.5557C178.731 10.1692 179.317 9.67797 179.804 9.1034L176.459 0.309326H173.196L169.905 8.9647C170.435 9.68813 171.11 10.3053 171.892 10.7811C171.306 9.51549 171.751 7.80176 172.487 6.63748C172.665 7.40433 173.025 7.75508 173.44 8.01781C173.159 7.66706 172.94 7.1376 173.019 6.37875C173.15 5.1438 174.446 4.17424 175.663 3.77548C175.19 4.84239 175.82 5.35451 176.084 6.13736C176.553 5.83715 177.061 5.59555 177.595 5.41853C176.72 7.39899 178.71 7.92045 178.234 10.0289C178.197 10.209 178.142 10.3854 178.07 10.5557Z" /><path d="M-0.000121416 15.6864H1.63004L2.43319 14.6595V2.34326L1.63004 1.31635H-0.000121416V0.290771H7.76878C13.7826 0.290771 16.4377 3.52887 16.4377 8.31666C16.4377 13.1045 12.297 16.7186 7.71964 16.7186H-0.00292969L-0.000121416 15.6864ZM8.08471 15.301C11.47 15.301 12.5905 13.2658 12.5905 9.12618C12.5905 4.77716 10.7876 1.31635 7.64663 1.31635C7.20881 1.31184 6.77309 1.37444 6.35626 1.50172C6.20617 1.55448 6.05984 1.6164 5.91818 1.6871V14.6595C6.42225 15.1449 7.42759 15.301 8.08471 15.301Z" /><path d="M28.1985 9.53424L27.3181 13.6352H17.9106V12.5883C17.9106 12.5883 19.3147 11.1786 19.3456 11.1466C22.276 8.2126 24.5787 5.88005 24.5787 3.46215C24.5787 1.9618 23.9609 1.02691 22.8812 1.02691C21.8014 1.02691 21.1345 2.06582 21.1345 3.62352V4.4117H18.2912C18.2235 4.16672 18.1914 3.9141 18.1957 3.66086C18.1957 1.23496 20.6908 0 23.037 0C25.3538 0 27.6902 1.05358 27.6902 3.56884C27.6783 4.19317 27.5164 4.80668 27.217 5.3626C26.8948 5.96398 26.4922 6.52338 26.0193 7.02699C25.424 7.69381 24.1294 8.72605 22.9837 9.58759C22.0682 10.2784 21.2468 10.8599 20.9561 11.0666H26.5108L27.9935 9.53424H28.1985Z" /><path d="M43.7477 11.5814L42.6455 16.7133H29.7896V15.6837H31.4127L32.2257 14.6581V2.34324L31.4127 1.31766H29.7896V0.288086H38.5806V1.31766H36.4618L35.705 2.34324V15.1783H39.7896L43.3434 11.5814H43.7477Z" /><path d="M27.6259 15.1743V15.8118L26.681 16.7093H17.376V16.0785L18.3209 15.181L27.6259 15.1743Z" /></g><defs><clipPath id="clip0_12_484"><rect width="212" height="17" fill="white"/></clipPath></defs></svg></div></footer><script src="/d2l/portal/js/desktop?v=20.26.10.26259"></script>
-<script>
-D2L.LP.Web.UI.Events.OnInit.AddListener( function() {
-D2L.O("__g1",2)();
-D2L.O("__g1",3)();
-D2L.O("__g1",4)();
-D2L.O("__g1",5)();
-D2L.O("__g1",6)();
-D2L.O("__g1",7)();
-} );
-D2L.LP.Web.UI.Events.OnLoad.AddListener( function() {
-D2L.O("__g1",8)();
-} );
-D2L.OR={
-"__g1":{"0":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Navigate\",\"P\":[{\"_type\":\"url\",\"Url\":\"https:\/\/lumen.bitspilani-digital.edu.in\/d2l\/lp\/auth\/saml\/initiate-login?entityId=https%3a%2f%2faccounts.google.com%2fo%2fsaml2%3fidpid%3dC042gmm8v&target=%2fcontent%2fenforced%2f7204-T1-26_MDSDF412%2fGMT20260925-125006_Recording.transcript.vtt\"}]}",
-"1":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Form.SubmitByButton\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_7_436\"}]}",
-"2":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.Authentication.Xsrf.Init\",\"P\":[\"d2l_referrer\",\"\",0]}",
-"3":"{\"_type\":\"func\",\"N\":\"D2L.LP.ActivityBar.Init\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/activityFeed\/checkForNewAlerts\"},120]}",
-"4":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.MessageArea.Init\",\"P\":[\"d2l_messagearea\",{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/validation\/errors\"}]}",
-"5":"{\"_type\":\"func\",\"N\":\"D2L.LP.Globalization.Locale.Init\",\"P\":[{\"_type\":\"anon\",\"DecimalSeparator\":\".\",\"GroupSeparator\":\",\",\"NumberNegativePattern\":1,\"PercentPositivePattern\":0,\"PercentNegativePattern\":0,\"PercentSymbol\":\"%\",\"NegativeSign\":\"-\",\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"UseNativeDigits\":false,\"GroupSizes\":[3],\"IntegerRegex\":\"^([\\\\(-]*(([01234567890123456789]?[01234567890123456789]?([01234567890123456789](,[01234567890123456789][01234567890123456789][01234567890123456789])*)?))[\\\\)-]*)$|^([\\\\(-]*[01234567890123456789]+[\\\\)-]*)$\",\"DecimalRegex\":\"^([\\\\(-]*(([01234567890123456789]?[01234567890123456789]?([01234567890123456789](,[01234567890123456789][01234567890123456789][01234567890123456789])*)))(\\\\.[01234567890123456789]+)?[\\\\)-]*)$|^([\\\\(-]*[01234567890123456789]*\\\\.?[01234567890123456789]+[\\\\)-]*)$\"},{\"_type\":\"anon\",\"InputDateFormat\":\"dd\/MM\/yyyy\",\"Is24HourClock\":false,\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"UseNativeDigits\":false,\"TimeFormat\":\"h:mm tt\",\"AmDesignator\":\"AM\",\"PmDesignator\":\"PM\",\"FirstDayOfWeek\":0,\"ShortMonthNames\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\",\"\"],\"LongMonthNames\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\",\"\"],\"ShortDayOfWeekNames\":[\"Sun\",\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\"]},{\"_type\":\"anon\",\"TextDirection\":1},{\"_type\":\"anon\",\"Culture\":\"en-gb\"},{\"_type\":\"anon\",\"JustNow\":\"just now\",\"OneMinuteAgo\":\"1 minute ago\",\"TwoMinutesAgo\":\"2 minutes ago\",\"MinutesAgoMany\":\"[0] minutes ago\",\"OneHourAgo\":\"1 hour ago\",\"TwoHoursAgo\":\"2 hours ago\",\"ManyHoursAgo\":\"[0] hours ago\",\"YesterdayTime\":\"yesterday at [0]\",\"DayOfWeekTime\":\"[0] at [1]\",\"MonthDayTime\":\"[0] at [1]\",\"Now\":{\"_type\":\"D2L.LocalDateTime\",\"Year\":2026,\"Month\":11,\"Day\":9,\"Hour\":13,\"Minute\":36,\"Second\":28,\"Millisecond\":759}}]}",
-"6":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Initialize\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/login?target=%2fd2l%2flogin%3ftarget%3d%252fcontent%252fenforced%252f7204-T1-26_MDSDF412%252fGMT20260925-125006_Recording.transcript.vtt%26sessionExpired%3d0&sessionExpired=1\"},\"Error: unable to complete your request.\",{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"flash\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.FlashMessages.RpcReceivePayloadProvider\"},\"session\":{\"_type\":\"func\",\"N\":\"D2L.PT.Auth.SessionTimeout.RpcReceivePayloadProvider\"},\"messageArea\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.MessageArea.RpcReceivePayloadProvider\"},\"OR\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.ObjectRepository.RpcReceivePayloadProvider\"},\"JS\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.RpcReceiveJsPayloadProvider\"},\"CSS\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.RpcReceiveCssPayloadProvider\"},\"BSI\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Bsi.RpcReceiveJsPayloadProvider\"},\"ariaMessages\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Aria.RpcReceivePayloadProvider\"}}]}",
-"7":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.InlineHelp.Init\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/inlineHelp\/6606\/help\"}]}",
-"8":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Focus\",\"P\":[{\"_type\":\"id\",\"Value\":\"userName\"}]}"}
-,
-"d2l_1_5_113":{"0":"[\"userName\",{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Edit.ValidateRequired\",\"P\":[\"userName\"]},\"Username is required.\",null]"}
-,
-"d2l_1_6_110":{"0":"[\"password\",{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Edit.ValidateRequired\",\"P\":[\"password\"]},\"Password is required.\",null]"}
-,
-"password":{"enter":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Form.Submit\",\"P\":[{\"_type\":\"id\",\"Value\":\"formId\"},false],\"D\":true}"}
-,
-"d2l_1_19_387":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Connect\",\"P\":[\"POST\",{\"_type\":\"url\",\"Url\":\"\/d2l\/login\/locale\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"localeId\":1}],\"D\":true}"}
-,
-"d2l_1_20_508":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Connect\",\"P\":[\"POST\",{\"_type\":\"url\",\"Url\":\"\/d2l\/login\/locale\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"localeId\":3}],\"D\":true}"}
-};
-</script>
-<script>D2L.LP.Web.UI.Html.Bsi.Init('prod', 'https://s.brightspace.com/lib/bsi/2026.10.234/', ['unbundled/navigation.js','unbundled/navigation-main-header.js','unbundled/navigation-link-image.js','unbundled/html-block.js','unbundled/dropdown.js','unbundled/dropdown-menu.js','unbundled/button-subtle.js','unbundled/menu.js','unbundled/menu-item.js'], true);</script>
-</body>
-</html>
+Hello.
+And welcome to this class.
+Second live class on Optimization.
+Let me share the screen.
+So, the… the chat and the mute, the mic, functionality is active.
+So, you can ask the questions if you're in… if you want to ask any.
+Okay, let me start sharing the screen, and
+Let me share the slides for today's class.
+So today, we'll be focusing on the
+simplex method. Last time we have introduced, the linear programming, we have seen some of the business cases.
+And we have seen one example of graphical method, but again, I would like to revise that, so graphical method example.
+So that you'll understand what exactly is happening.
+Okay, so without wasting time… Can you please, respond with a message or Mike, that…
+I'm audible, and my screen is visible to you.
+Before moving to the slides.
+You can either chat, Message me, or you can either… Just let me know.
+loses.
+See you and see you.
+Wonderful, wonderful. Thank you so much for confirmation.
+With that being said, let's talk about, today in detail.
+Some… if you have any questions, please unmute and let me know.
+We'll talk a little bit about delin's equalities.
+A little bit mathematical, but this is okay, I mean, I don't…
+Think what's gonna be a problem for you.
+So we'll talk about linear inequalities, and we'll… hello?
+Hello, any questions?
+Please unmute yourselves, so that
+So, linear inequalities, we'll talk about linear inequalities, and we'll take it to some of the graphical methods stuff.
+Then, we'll see what exactly is the linear programming models, and then…
+We'll see what is maximization model, what is minimization model, and based on the maximization model.
+Let it… we'll carry it through the simplex method.
+Was it?
+So, yeah.
+let's go one by one. So, again, it is not expected from me to…
+Go through all the things that you watched.
+all the videos for this particular week, but it's expected me to give you a summary of what has been done in the week so far.
+Still, if you have any questions, you can interact with me, we can just, you know, I would like to entertain all of your questions.
+Okay, cool. So, let's go ahead and… talk about… dealing with this.
+So, you know very well. So, if you look at this, it's very easy to see that if somebody wants you to plot just X equal to 0,
+Okay, X equal to 0 is just a y-axis.
+It's a vertical y-axis.
+Right? It is shown in the… Purple line here.
+And if somebody asks you, hey, what is X greater than or equal to zero?
+Okay? Where you find all the points X, where they are either 0 or greater than 0. So either 0 means X equal to 0 is this vertical line.
+And greater than 0 will be all these X, like, you can have 1, you can have 2, you can have 3, and so on and so forth. So this is the region where you have
+All the points were X greater than or equal to 0.
+Right? Similarly, if somebody asks you, hey, can you tell me where is Y equal to 0? Y equal to 0 is just an x-axis, nothing more than that. It's a horizontal line, x-axis. Whenever you say y equal to 0, that means y-axis is absent.
+Y equal to 0 means Y axis is totally absent.
+only accesses exist. And somebody asks you, hey, what is Y greater than or equal to 0? So then it's very easy to see that all these points, 1, 2, 3, all these points here, all these Ys are
+you'll have greater than or equal to 0. Now, if somebody asks you, hey, can you give me a combined region that has X greater than or equal to 0 and Y greater than equal to 0? So, combined region, basically, so this… this is… this is basically a region where we have
+X greater than or equal to 0, and this is a region we have, Y greater than or equal to 0. And if you take any point here, for example, this is 2, you will see that the first coordinate is also greater than 0.
+And second coordinates also… this includes this corner also, which is 0, okay? Any point in this will satisfy
+greater than…
+are equal to 0. More often than not, any point here will satisfy. If you pick up any X and pick up any Y, you'll always see that this is also greater than zero, this is also greater than 0, because it is constructed like that. So it's a positive quadrant, first quadrant.
+Where the origin is included, okay? Where the origin is included. Now, let's move to the next thing.
+let's say, suppose, I want to, you know, I want to plot a region, which is basically, you know, kind of,
+3X plus 5Y less than or equal to 15. I want to plot this region. So, to plot this region, first I would like to write it as an equality, and then what I would do, it's very easy to say, just try to get the intercept. Try to get a Y intercept, and try to get an x-intercept. To get those intercepts.
+put X equal to 0, so if you put X equal to 0 here.
+you'll get 5i… sorry, my bad. If you put X equal to 0, you'll get 5i equal to 15.
+5y equal to 50, and that will give you Y equal to 3. So, our X was 0, Y is 3.
+So any point where first coordinate is 0 lie on the y-axis, so this is 0, and then to get the x-intercept, put y equal to 0. That will give you… if you put Y equal to 0, that will give you 3X equal to 15.
+And then you'll get X equal to 5. Now, here, the Y coordinate is 0, and X coordinate is 5, so here. And then simply correct the line.
+That's all.
+Now.
+What we are interested, we are not interested in just this line, but we are interested in the region which is less than or equal to 15. So this line exactly is this.
+Now, anything below this line, anything below this line.
+will be less than equal to. Anything above this line will be greater than or equal to. So how do you come to know that? You can just test one point, take a point B here, which is basically 1,
+Okay?
+1, put x equal to 1 and Y equal to 1, and check out what the sum you get. You'll get 8, and 8 is less than or equal to 15.
+Okay, so B lies here. A, 0, so you can see the 15 lies here. 0 lies here, because 0 comma 0 will give you 0, and 0 is less than equal to 15. And take one more point, which is 3, 1.
+which you'll get, if you put X equal to 3 and Y equal to 1, you'll get this, okay? And that means it's less than or equal to 15. Now, consider any point which is way beyond this region. So, let's take this point, D, which is 2, 3, and it is revealed that if you put
+X equal to 2 and Y equal to 3. You're not gonna get less than 15, you'll get 21.
+So, this point does not belong to this region, as well as this point does not belong to this region.
+Any point on this line, any point on this line, will satisfy 3x plus 5Y exactly equal to 15. If you pick up this point, and pick up this point, put X equal to that point, Y equal to that point.
+Okay, so here, let's say I'll pick up a 2, and I'll pick up
+Any other point, X equals 2, I don't know what the point is, but it will satisfy. Any point on the line will satisfy equality. Any point below the line will satisfy strict less than. Any point above the line will satisfy greater than. So these… these three are very important. Now, let's try to understand one more thing.
+let's try to get the two lines, and let's try to find out the combined region. Suppose the line is 3x plus 5Y less than or equal to 15, and minus X plus 5 greater than or equal to minus 1.
+Now, if you look at this very carefully, so I'm going to plot the first line, and the plotting stand… plotting method is simple. Just plot x-intercept and Y intercept by putting one of the values to be 0.
+So, once again, we got the same line, which is 3x plus 5Y equal to 15, and look at this line, okay? Now, if you put X equal to 0, you'll get y equal to minus 1, so first point is 0 over minus 1.
+this point over here. And if you put Y equal to 0, you get minus X equal to minus 1, and X equal to 1. So another point over here. And simply draw a line passing through this. Now, what we want? We want…
+This is less than equal to.
+Okay?
+I want… this is led by Corpus. So, all the region…
+Below the purple line is less than equal to the purple line.
+And I want… this is greater than or equal to minus 1, right? So that's pretty much, like, very, very much part of that, and you see that greater than or equal to minus 1 if you want, so it will be something, the region which is basically this.
+So, combined region, that is intersection, okay? You can also… you can also, if you want to see.
+If you feel that this is a little difficult, you can multiply it by minus sign.
+If you multiply it by minus sign, you'll get this.
+this line.
+Okay? Less than equal to 1, very clearly.
+Now, if you want to verify whether so…
+See, generally, when A is greater than or equal to B,
+then minus A is always greater than or equal to minus B. This is the property of inequality.
+Please understand.
+So, as soon as you multiply it by a minus sign, the inequality changes, and it changes to…
+Multiply here by minus, multiply here by minus, and if you make it.
+As soon as you multiply every row by minus, it… the inequality sign changes. Less than or equal to becomes greater than or equal to, greater than or equal to becomes less than or equal to, and so on and so forth.
+These are some of the ideas to be used when you do layer programming, and then you do constraint optimization.
+So far as linear constraints are concerned, basically.
+Okay, so now you can pick up any point here, and you just see whether it satisfies the condition. You can pick up a B here.
+And ensure that. Ensure that.
+B… see, the B has to satisfy both the constraint, please understand. Okay? Any point in the common region will satisfy this constraint, as well as this constraint.
+So, it's a feasible… please understand, this is called feasible region. So, in our case.
+See, the whole idea is, I have not taken here X greater than or equal to 0, and Y greater than or equal to 0.
+Had I take… so I would have taken… take that, so I… it would have become something like this.
+Okay, this region only.
+Okay, because I'm not using this construct here. I'm just… this is just an idea to show you how the inequalities work.
+Okay? So, if you want to test, you can take any point, and you see that it will satisfy both the constraint, okay? So, this is called feasible region at the moment. This particular region is a feasible region. Why it is called feasible region? Because if you pick up any point inside the region, it will satisfy both the constraint. That's the overview.
+Okay? Now, let me go with one of the graphical examples.
+So, before that, once again, recall last time what we have learned, we have learned about decision variables.
+What are decision variables? Basically, in our case, the decision variable is always gonna be
+We'll have one property that they're always going to be greater than or equal to zero, because most of the time they will be quantities.
+They could be discrete.
+like 1, 2, 3, 4, they could be continuous, like 2.5, 4, 5, 6, and so on and so forth, okay? So, decision variables are basically the quantities controlled by the decision maker.
+Okay, so if you're a decision maker.
+Let's say you prepare product A and product B.
+It's in your hand how many units of product A and how many units of product B that you're going to prepare, so that to make profit.
+Okay? So it's a quantity controlled by the decision maker, and we'll use… we write them as X and Y.
+Values must be allowed by the model, okay? So you need to be very careful that these values, whatever you select, must be allowed by the model. Then we have an object2 function.
+So, defines how to evaluate a solution, specifies whether
+Whatever the objective, what is… your goal is there, whether you want to maximize it or minimize it.
+Okay? An optimal solution has the best objective value among all feasible solutions. So, you know that inside your region, you have a bunch of feasible solutions, but we are not interested in all the solutions. What we are interested in the optimal solution. An optimal solution will be that solution.
+That will either maximize your objective function or minimize your objective function, okay? There are tons of solutions available, okay? There are tons of solution available.
+And then there are constraints.
+equations. Constant could be equations, it could be inequalities that restrict the decision variable values. So, you know, you're given… you have to optimize, or you have to maximize or minimize certain things.
+under the constraint, okay? It's not that you don't have any constraint, because that constraint is very important, that's why optimization makes sense, okay? And whatever the feasible solution that you have.
+That must satisfy all constraints. Otherwise, it won't be a feasible solution, okay? So, there can be infinitely many feasible solutions. That means you have a set of solutions that satisfies the constraint.
+But those…
+But only one of them will basically be optimal solution. Only one of them basically will be the optimal solution. At the moment, let's take one of them.
+Okay, now, once you understand this all, so let's move to the, general formula for linear programming, how it looks. So the whole idea is
+this is objective, okay?
+With your objective, and you want to maximize your objective.
+Basically, subject to certain construct, which is here, less than equal to.
+Okay, as you… as you… when you change this to minimize, it will become greater than or equal to. Or sometimes, probably, it's not necessarily all the time
+You would have this constant like this, sometimes you could have an equal to sign, sometimes you could have a greater than equal to sign, but one of the most important things that you must remember, all the decision variables will take the value greater than or equal to zero, and all of this constant, these values, has to be greater than or equal to zero.
+Okay? So, what do you know? You always know CJ, you know all these values?
+See, your objective is to find the value of X1, X2, XM, under this given construct, okay? And BJs are known to you. These guys you know very well. You know what is AIJ, you know what is A11, all these… all these things are known to you.
+The whole idea is you don't know what is X1, X to XL, okay? So Z is the objective value, XJ is the decision variable J, CJ is a coefficient variable in the objective, AIJ is a coefficient variable in the constraint.
+So BI is the limit of the constraint I, n is the number of variables, M is the number of equations. So, this system is basically a system that contains n variables.
+and M equations.
+Okay, that's the Lord.
+Okay.
+Cool. Now, can you write this in a matrix form? So, that's a very important thing, that is it possible to write it in a matrix form, okay? So, let's see.
+So let's go ahead and talk about how do we write it in matrix form.
+Now, please understand that this Z, the value of Z, which is basically
+See you next one.
+plus C2X2.
+plus C and XN.
+Okay?
+So this… C.
+You can have it as… It's, let's take it as a column vector.
+C1, C2, C3, CN.
+And you can take a dot product of this column vector with this.
+X1… X2… X3, XM.
+Okay, sorry, my bad, my bad, my bad, my bad.
+So, Z is… C1X1.
+plus C2X2, plus CMXN.
+And where this C is basically… You know…
+Yeah, my… I was like that, so… C1, C2…
+CN, and X is X on next to XN.
+P.
+So this is a drop product of two vectors, so just take a transpose of this, so C transpose will be this.
+Which is 1 by N-vector.
+And X is n by 1. So basically, if you multiply 1 by n vector with N by 1 vector, you'll get 1 by 1. It's a number. So this guy is a number. Please note, it is single number. It's a profit…
+Cost, okay? So something like that.
+And subject to the constraint, when you multiply this matrix with this matrix.
+And if you write less than or equal to this, so this will get multiplied with this, and this will become less than or equal to B1.
+This will get multiplied with this, this will be equal less than or equal to B2, and so on and so forth.
+And you are always given that X is greater than or equal to 0, B is greater than or equal to 0.
+So this is basically called a matrix form, or general form of the maximization problem.
+Okay, any questions?
+You can just chat, Do you have any questions?
+Sir, I have a doubt in the simplex formula that will come later.
+Okay, okay, sure, sure, sure, no worries.
+Okay, fine, school.
+Now let's go ahead and talk about the…
+simple, you know, maximization problem. How does the maximization problem look like?
+So you can have something like maximize, this is C1X1 plus C2X2 plus C3 is 1, C3X3, and these are the constant that, you know…
+A11X1 plus A12X2 plus A13X3 is less than or equal to B1, you know, B2, B3. And constraints are, X1 greater than or equal to 0, X2 greater than or equal to 0, and X3 greater than or equal to 0.
+Please understand that this is a three-variable problem, okay? It requires a three decision variables. Any variable, any optimization problem which is of more than two variables.
+You… you cannot use graphical method. You have to get it to the…
+simplex method, okay? So, any problem that has two variables, two decision variables, can be easily
+Sort by graphical methods.
+Okay, so let's go ahead and try to solve one simple problem of the graphical method. So, we want to maximize phi X plus 2Y, given these two constraints, and X is greater than 0, Y is greater than 0. So, first of all, I told you that you have to write those equations, and then you plot those equations.
+Once you plot those equations, please understand here, X is greater than 0, Y is greater than or equal to 0.
+So, if you look at the first line, which is a purple line.
+And less than or equal to 10 minutes, it will go way down.
+Less than or equal to 10.
+Okay?
+It will not cross my back, it will not cross this, less than or equal to 10 minutes, it will just… because this constraint won't allow us to cross x-axis or y-axis.
+P.
+And for the first line, so my bad, this line, this line, for the first line, okay? And the second line will be…
+will be, again, I mean, Less than equal to this.
+So it will be this.
+I think I need to select a different… this one.
+P.
+If you look at the combined region, the combined region is the shaded purple region. This is feasible region. So, any point inside the feasible region will satisfy both the inequalities, okay? Now, what will happen? So, what will happen? So, there are…
+Four points of intersection.
+1, 2… 3 and 4.
+So this point is 010x3, this point is 1, 3, this point is 2, 0, this point is…
+Okay, so basically, what we'll do, we'll try to evaluate the…
+Z at these four coordinator points, okay? It is obedient, I'll tell you. So, if you go with 0, you'll get the profit 0.
+If you go with 2-0, you'll get 10. If you go with 1, 3, you'll get 11, and if you go with this point, you'll get 6.67.
+So, all these are feasible points, all these are, okay, points, but they are not the basically one that will give you the optimum.
+Any point, if you select in between, that will also satisfy
+the constant, and it will be one of… one value… one value of Z it will give, but that value of Z will be always less than this, okay? This point, this corner point. What we're trying to do is we're trying to move gradually towards the corner. We're trying to move towards the corner.
+As we move towards the corner, the value of Z increases, and that can be shown here in the next slide.
+So here you see.
+We started with 0, 0.
+Here, so the value is 0. We started with, you know, let's… let's take any point in between. This, if you draw this, this is basically…
+A graph of… let me tell you, this is the graph of…
+This dotted line are the graph of 5x plus 2Y.
+Okay, so this is 5X plus 2Y equal to 5. This…
+Okay, so as we move further, if you draw some other line, it will be 5x plus 2i equal to something. If you draw one more line, it will be 5x plus 2i equal to 10.
+And as we move… as we move ahead, as we move ahead gradually, as we move ahead, as we reach to this particular point, which is optimum, and if you draw the… draw the line here, that will give you 5x plus 2Y equal to 11. That is the Z max, okay? All this point. And that's why it is very important to understand
+That the… the whole idea of this is simply to move towards the maximum point.
+So, this is basically one example. This is… this is this particular region. If you look at this particular region.
+This region is basically a simplex.
+This is a simplex, okay? And our idea is to start with the coordinal points, test all the coordinate points and see, and move towards gradually the point where we'll get the optimum.
+That's the simplex method also. So, it's a graphical way of looking at it. So, here I can show you that the direction of the increase of the Z is in this way.
+Okay? As we move towards this particular point, we'll get the maximum.
+Okay.
+Now, the next idea is simplex method, okay? So, before getting into simplex method, let's understand what is simplex method, and
+What are the different steps in the simplex method? What simplex method does? So, simplex method solves a linear programming problem by moving from one feasible corner
+to another. It's all about moving to the corner. Each move improves the objective until no better corner is available, right? So start, begin at some feasible corner point.
+Then move, choose a variable that can improve the objective.
+That is what… that is called… we'll call it a little bit later, called basic variable that enters.
+And stop. Stop when no feasible move increases the value, right?
+Okay. So, something like,
+I'm taking one example here for the next four slides, that this is the example, z equal to 3X plus 2Y, and X plus Y less than equal to 4, X less than equal to 2, Y is then equal to 3, X greater than or equal to 0, Y equal than equal to 0. Simple constants are there, simple examples there. Any question? Yes?
+Plasters.
+Huh?
+Hello?
+The class will be of 1 hour only.
+I don't know what… she's asking what the plants, of course shell.
+Hmm, okay.
+So, basically, there are some basic things, like, what do you mean by…
+Slack variable. Okay, so let's understand.
+Let's imagine that there's a factory.
+Which makes 2 products, A and B.
+Each A needs 2 labor hours, and B needs 1 labor hour.
+The factory has, at most, 100 hours. That means
+2A plus B less than equal to 100, okay? So, as I told you, that
+If 2A plus be less than or equal to 100, we have to add something called a greater than or equal to 0 variable, called slack variable.
+and see if X plus Y is less than 50. Okay, what do you mean by that?
+that X… the addition of these two variables is less than 50, that means…
+If I add something to that, that will make it exactly 50.
+That's what the slack is, okay? At the moment, it is less than equal to 50.
+But as soon as I add some extra variable which is positive, or non-negative, greater than or equal to 0, it will make it 50.
+For example, I try equal to 30 and B equal to 20.
+Okay, if I try A equal to 30, And be equal to 20.
+to get S equal to 20.
+So… That means… if this… Total number of hours are not utilized.
+Okay? There will be some hours which are left, remain unused, okay? And that is nothing but the slack variable.
+There is something called surplus variable. The surplus variable is slightly different.
+Now, suppose The same factory has contract requiring at least 40 machine hours of
+At least 40 machine hours, okay, greater than or equal to 40. At least means greater than or equal to 40. At most means less than or equal to.
+A uses 1 machine hour, B uses two, okay?
+So, basically, what is happening, the…
+what we'll get, that we have a suppose variable, and let's say we have something like A plus 2BC. Please understand, if I'm saying X plus Y greater than or equal to 2,
+Okay, X plus Y happens to be greater than 2. Okay, what is hap… what do you mean? That if I subtract something from
+This, it will give me 2.
+Okay? For less than equal to to add, for greater than or equal to to subscribe.
+Now, suppose I try A equal to 13, B equal to 20. So, you will get U equal to 30. So, what has happened? That…
+you need 30 hours above the minimum, okay? You need 30 hours above the minimum.
+And that is what's surplus variable? And there's one more… one more variable called artificial variable.
+So, basically, Because you subtracted something, You need to add something.
+Okay? Because you've subtracted something, you need to add something.
+So…
+you have to remove it before finishing anything, okay? So A equal to 0 is always the final plan, if you add the artificial variable. This is to be added for balancing the stuff, okay? Suppose A is 30 and B is 20, so what you will get? U to B?
+30. Okay, so basically, if… because we are setting up A to be 0, so artificial, please remember, is not a real machine hour. It helps start
+simplex, then must become zero. Okay, so this is just to help us to… for the calculation, and help us to build a simplex properly.
+Otherwise, that's not any use of this. Artificial variable has to be treated as zero. You will not see any use of this little letter, so we'll see pretty much like that, okay?
+Then, there is some… it's the same thing here I have just given in three… three lines.
+Then there is something called basic variables, so let's understand the meaning of basic variables.
+So basic variables, basically, okay. Yes, WASEM.
+Sir, I didn't get, artificial variables.
+Artificial variable data, you didn't get me what exactly would you not?
+Like, why do we have to add, something? Like, I understood the slack variable, like, we have to minus the remaining.
+And surplus variable.
+Yeah, I understood surplus also, but I didn't understand this, artificial one.
+Actually, when it comes to adding it, is it okay that time if I explain, or do you want me to explain right now, because it will become a little bit abstract.
+As you see fit, sir, I can wait.
+Can you wait for a…
+Yeah, I can wait, absolutely, sir, I can.
+Okay. Otherwise, I will… even if I explain you, you may… you know, I'm not sure whether you will get it or not, because you may remain confused. Unless we have a set of problem, and we'll solve that problem, you'll understand artificial guarantee. But anyway, I'll get back to artificial variability once again, and I'll explain.
+Where is that?
+Okay, sir.
+Just a moment, let me get back.
+Artificial, okay. So, you know, When you apply a simplex method, okay, basically.
+there is, in simplex method, you start with some corner, right? Which is… see, you already always have a basic feasible region, and you start with the corner in the feasible region, okay? Whenever you have less than equals to cost, my bad.
+When you have a less than equals to constraint, your job, like, you might have seen so far, let's say this is our feasible region.
+Okay.
+Me.
+When you have less than equals to constraint, you basically start at the corner point. You start… you've seen that in a simplex… in graphical method, you start at the corner point for this, okay?
+The, when you have a slack variable, they always give you the corner automatically, okay?
+But when you have this greater than
+constraint, or equal to constraint, okay? For these two constraints, no such starting corner is available, because, see, basically, when you say.
+Okay, so basically, when you say something like this…
+Okay. When you have feasible region, goes way beyond.
+this one.
+Listen.
+Here, the inequalities are greater than or equal to, okay?
+So, you don't have any basic… anything to… any corner to start with. Here, the whole idea is…
+See, here the whole idea is to go towards this. Are you okay with this?
+Yeah, yeah, I'm getting it soon.
+Okay. But here, your idea is to come from this to this corner, because here is the minimization problem. Maximization problem. Are you getting my minimization? My bad. Minimization problem.
+Right, sir.
+See, as you go far, you will get a maximum, but you want to come towards this. Are you getting my point now?
+Yes, sir, I'm getting it.
+Okay, so the whole idea is, for here, do you have any KOML to start with?
+No, we don't, we are going towards the corner.
+Yeah, so to create that corner, artificial variables are temporary variables added to build one such corner. Make sense?
+Okay, so we're getting random points to assess the difference, then we can come closer to it.
+Yeah, so once… at least you got the intuition, the idea will give you in the problem.
+Okay, okay, so we're getting an idea, like, how far we are away from the corner, and then… Correct. Okay, alright.
+Yeah, yeah. So, yeah, so let's solve the problem, and I'm sure in the next class, probably, when I take a maximization problem, it will be easy for you to understand what's happening. Okay, anyway.
+Let's whatsoever.
+So, yeah, fine. Now… Okay.
+So, let's understand the idea of… Can you see…
+Basic variable and basic feasible Solution. Okay, basic variable and basic feasible Solution.
+Okay, so let me go here.
+Okay, so we know that we basically have, you know, given set of inequalities, we turn it into equalities, okay, and we add the slack variable to this. We are talking about maximization problem at the moment.
+Each slack is non-negative, the slack measures unused capacity, okay?
+Nice.
+So, what is a basic feasible solution? It's a feasible KOMAL point.
+Okay? And when some variables are set to zero, once again, in the problem, I will explain everything. So, at the moment, it may sound a little abstract, but when you take a problem, you'll understand what's exactly happening.
+Okay.
+So…
+Okay, so this, I will leave it to you at the moment. So, when you set X equal to 0 and Y equal to 0, you'll get Z equal to 0.
+Okay, so non-basic variables are X equal to 0, Y equal to 0, and this will give you some basic variables. So then, when we… when we have this… when we solve the problem, we'll get to know what exactly is happening, okay? So, here you see all five variables, and all five variables, X, Y, S1, S2, S3, they're all greater than or equal to 0.
+And… They… they all satisfy these three equations.
+So, basically, you start with some…
+See, when you put X equal to 0 and Y equal to 0, when you put X equal to 0 and Y equal to 0, you will get S1 equal to 4, S2 equal to 2, S3 equal to 3. And they're all…
+they're all coming out to be greater than or equal to zero, and basically, they will give you the objective value to be Z equal to zero, right? So, the whole idea is.
+they are greater than or equal to zero, and they satisfy all the constant, all equations holds. So you can… we can say that, okay, this is a basic feasible solution. So basic feasible solution is that solution. When you… when you… when you write out that solution, it will satisfy all three equations. So that's just a basic feasible solution, okay?
+Now, let's get into the idea of entering variable and leaving variable. Okay.
+again, I'm giving you this, you know, you may not understand here, but once you solve the problem, you'll understand everything, what is happening. Don't worry about that.
+Okay, so it's basically, it's better to start solving the problem rather than just getting the vague idea of what is happening.
+Okay, so let's… but anyway, so before that.
+Entering variable, add 0, 0, raising X, add 3,
+Z per unit. Okay, raising Y adds 2.
+we choose X to enter the basic set, okay? So, basically, when you set your basic solution to be X equal to 0, Y equal to 0,
+And if you raise X, it will add 3 to Z per unit, and raising Y adds 2 to Z per unit. So, let's select that X to enter the basic variable, okay? So, then, similarly, living variable.
+At X grows, with Y equal to 0, you see all these three inequalities.
+The smaller limit is 2, so S2 leaves, okay? Don't worry, I will explain the problem. And we have a pre-vote. So prevote again, so let's actually turn to the problem. I think it's better to turn to the problem rather than talking abstractly.
+I thought of giving you the idea.
+It's a new one.
+describe.
+So let me…
+get to a problem statement where problem is not written here. Okay, problem may be written here.
+Okay.
+So let's understand this.
+So, first, my bad.
+Okay.
+This is the simplex, and download the simplex.
+And, okay. Let's… let's talk about simplex method, and we'll try to solve the problem using simplex method.
+Okay, so the problem is maximize Z equal to 3x1 plus 2x2 plus X3, subject to these three constraints.
+Okay, and please understand, x from greater than 0, X2 given. We want to solve this problem using simplex.
+Okay.
+No.
+So… If you're not given this… if you're given a problem in words.
+First of all, you have to convert that problem into a mathematical problem.
+Okay? State the objective, write all the constraints, okay?
+If the problem is not given like this, if it is a word problem, fine, that's perfectly fine.
+No, next.
+Slack variable. Now, convert the constraint to equations by adding non-negative variable to each. Now, you see that all these will become this, okay? So, this is the first step.
+The first step is to, you know.
+Add the slack variables. Convert these equalities, inequalities to equalities.
+That's all. This is the next step.
+Now, please understand, here, if you look at the first constraint.
+Which is this, 2X1 plus X2 plus X3.
+Less than or equal to 150. This can be written as 2X1 plus X2 plus X3.
+plus some S1.
+Equal to 150.
+But we can also write it as 0 times S2 plus 0 times S3. Please note.
+Second constraint, You can write as 0 times S1.
+0 times S3, and third constraint, you can write as 0 as 1.
+0S2, and S3, okay? To make it equal. So, I mean, just to show you. And here, also, you can write it as 0, S1,
+0S20S3. So, I've converted everything into a proper format, but people don't write… so, by the way, once again, let me tell you, this can be written as
+As we are adding the surplus variable, sorry, slack variable, you have to add that slack variable everywhere.
+But here, you cannot add them, so we write 0S1 0S3, 0S2, 0S3.
+Year 1S1.
+0S2, 0S3.
+Here, 0S1, 1S2, 0 S3, here 0 is 1…
+0, S2S3. Okay, and now it is full, the equation will look like full.
+Okay, now, the next tip.
+The next step is… Okay, so…
+We will form a simplex term.
+So, what will happen to form a simplex taboo?
+We will actually convert this particular thing
+This objective function, something like this.
+Okay? So, equation should have all variables on the left. That's why… because we want to match up with this, okay? We'll convert this properly, okay? So, now the next is…
+Let's have a look again.
+set up initial complex. So, let's set up an initial tableau. Now, in the initial tableau, what we'll do…
+is… will take this decision variable X1, X2, X3, and flag variable X1, X2, S3, and objective Z.
+Okay.
+Now, look at this.
+Look at the first one.
+2X1, 1X2, 1X3, 1X1, okay? So the first one is 2X1, 1X2, 1X3, 1X1, the rest of the 0 equal to 150.
+It should look like this. Second one.
+228010.
+228010, and Z. So here, we don't have Z. So Z values to be taken 0 here. I mean, yes, I mean, you can write it like this if you want again.
+plus 0 times Z, okay? So we are converting it to bring it in this form.
+Dead, next.
+23100. 23100.
+1, and then the value of Z is 0 also.
+That is 320. And finally, we'll write the coefficient outside, which is minus 3, minus 2, minus 1.
+minus 3, minus 2, minus 1. So, I can show you how to write this. Minus 3, X1, minus 2, X2, minus X3…
+plus 0 S1, plus 0S2, plus 0S3, plus Z equal to 0, and then we will take the coefficient of this. So, this is the initial simplex table.
+Okay, no.
+So… First thing is to find the P. Vote.
+Okay? How to find the P. Please understand.
+To find the PUT, locate.
+The most negative value in the bottom row.
+The most negative value in the bottom row.
+The highest negative value, most negative value in the bottom row, which is minus 3.
+Once you've got this most negative value in the bottom row, The next job is to
+Let's determine the P.
+Okay.
+The pivot is going to be…
+Now, once you understand this PO, you'll understand. Now, one thing, please understand.
+how to determine the P. Now, what you're going to do?
+calculate the quotient of the farthest right column, this is the farthest right column, with corresponding values in the pivot column. Once you get the pivot, this will become your pivot column.
+Okay, once you get the pivot, PIOT is the maximum negative entry in the most bottom row.
+So, this becomes your POT column. Now, for the POT column, what you're going to do, once you get the POT column, you divide 150 by 2, you divide 200 by 2, you divide 320 by 2. Okay? Take a calculate quotient of the farthest right column with corresponding values in the POT column.
+Okay? Once you do that, the next step.
+Okay, is this. That is 75, 100, and 160.
+Now, here, disregard any quotient with zero. Suppose you got a 0 here, okay? So, let's assume that here you got 0, for example, instead of 2. So, 150 by 0. So, disregard that. Or if you got, let's say, minus 2 here, also disregard dividing by this.
+Okay? So, any number, if you have this number to be 0 or negative, disregard that quotient. Disregard that operation. Okay? This is very important to understand.
+If all quotient must be disregarded.
+If possible, if it is happening that, okay, you got the pivot column, you got the pivot entry, and you got the pivot column. Unfortunately, suppose these two are zero, and this is negative.
+So what will happen? 150 by 0? We'll disregard it. 200 by 0, we'll disregard it. 320 by minus 5 will disregard it. So, I've disregarded everything. That means…
+everything is disregarded, so no maximum solution exists in that scenario, okay? So you need to be very careful about it.
+You're okay.
+Now, there must be one chance.
+that if two quotients are both equal and smallest, for example, this is also giving you 75, and let's say this is also giving you 75. So there's a tie.
+Okay, so choose the P.O.
+In the row nearest the top of the matrix.
+Okay.
+So, what we're trying to do here is we're trying to determine the P.O. First of all, we'll determine what is P.O.T column. Okay, first job is to find POT column.
+Next thing is to… how to find it? Look at most negative.
+Look at most negative entry. Second job, select a POT column. Select a POT column.
+Okay.
+How to find the… once you select the P-word column, then quotient.
+ocean.
+So there are rules of quotient I have explained.
+Okay?
+Now, if there must be some tie, let's say this is… and what we want to find out, we want to find out which is the minimum, okay? That will give you the pivot, okay? Find out the minimum out of this. If there is a tie, this is 75, or this is also 75.
+Select the first 75. That's all. Select the first 75, and okay, then we'll say that, okay, this guy's going to be P.O.
+So, the next thing… As we're determining the POT,
+So we started something like this.
+The smallest non-negative quotient gives is the location of the pupil. So, look at all the quotients.
+whichever is the smallest, that will give you the location of the pyot. So here, if you look at very carefully, 2 is the PUT.
+Okay.
+Now, once you got 2 is the POT, then what we'll do?
+The thing first.
+Now, here, the next important thing is use row operations
+use row operations to change all the numbers in the POT column to zero. Okay, try to change all these numbers to 0.
+Okay, row… use row operations. Now, what are those row operations? You're going to use the row operations in metrics. Metrics row operations. So, first thing.
+Okay, so what row operations I'm going to do? I'm going to do minus R1 plus R2. Okay, so minus of R1, minus of R1 plus R2, minus of R1 plus R2. Okay, and I will… I'll… I'll change it to R2.
+Whatever the entry I will get. Similarly, I'll do minus R1 plus R3. I'll change R3.
+Similarly, I have to make this also 0.
+3R1, okay, 3R1 plus 2R4, 2R4, so it will give you 0. Keep the first period as it is, and try to change all these entries to 0 by using simple row operations.
+Okay? Now, please understand, while doing this.
+You have to do it on all rows, okay? You have to do it on all rows, okay? So this, like, whenever I say minus of R1, that literally means you're taking the first row.
+All multiplying by a minus.
+And then, plus R2.
+minus of R1 plus R2, so I'm going to add this to… Second row, 0, 1,
+sorry, 2280100. So, if you add corresponding entries.
+This I will change to R2. See, all these entries are now changed to these entries.
+And all these entities are now changed to these entries. And all these entities are now changed to these entries. This is the first row operation I did.
+Next.
+Oh… Please understand.
+Never take a negative multiple of the row that is being changed, and that's true, because otherwise it would be a big problem. So let's understand this next. If the number in the bottom row are all positive or equal to zero, that is your final. Now see, once you do perform your operation, if you find that all these numbers are greater than or equal to zero, you're done.
+Okay, you stop the table. Otherwise.
+You try to find out the next boot.
+Now, the next step is…
+to find out the next P. To find out the next PO, you see which is the most negative entry here, and that is minus 1.
+Okay, most… so this is going to be your period column. Now, divide 150 by 1, 50 by 1, 170 by 2.
+Okay? To find out the pivot. So we'll do that again.
+Okay.
+And now, what you find it, if you divide 150 by 1, you'll get…
+150, if you divide 50 by 1, you'll get 50. And if you divide 170 by 2, how much 170 by 2?
+Media.
+you'll get something at 85. So, this second is the minimum, so one is the POT column. Now, what you're going to do next, you're going to perform row operations.
+to make this zero, and this zero, and this zero, okay? For that, you simply do this… these row operations, okay? Now we made them 0.
+Okay, this is zero. Done.
+Now, the next step.
+Now, this is the final simplex tableau, because everything is greater than or equal to zero.
+So, this is the final.
+Okay.
+A basic variable is a variable. Now, again, it's a variable whose columns has all zeros except
+for one non-zero entry. Now, X1 is a basic, as I told you. X2 is a basic variable.
+You see, S3 is also basic.
+Okay? So these are called basic variables whose all columns have… whose columns has all zeros except one non-zero entry. Any one of the entries will be non-zero. So we have three basic, basic
+variables, and now what we'll do…
+With respect to this, we'll find out, we'll multiply 2 times X1 equal to 100,
+Then we'll say 1 times X2 equal to 50, and then we'll see
+1 times S3, equal to 70. Okay, so we'll get these 3 values, and therefore, we'll get Z equal to 500 by 2. The final one, Z… this is actually 2Z equal to 500, and we'll get Z equal to 250. So, all other variables are set to be 0 here.
+So, if you look at this, so the solution is X1 equal to 50,
+X2 equal to 50, S3 equal to 70. So this 73, 70, S3 is 70, that means they are remain unused, okay? And that is giving you Z equal to 250.
+Now, if you look at the simplex method for this problem, I mean, the graphical method.
+Okay, it's the same problem we have. So, let's take one example with a graphical method of two dimensions, and simplex table of two dimensions. Same problem I'm trying to solve.
+So… Here, you see that the method 1, if we try to solve this problem using method 1,
+And there are two methods I'm using, using the row formulas only.
+So here you see X equal to 1 I got, Y equal to 3 I got. X equal to 1 I got, Y equal to 3 I got, and Z equal to 11 I got. Okay, so here also, same thing.
+So, using simplex method, we try to find out the… first, the most non-negative entry, and then we find the pivot column, pivot, then we divide it, and then this way we have done it.
+So here, X and Y are not basic. X equal to 0 will… X equal to 0, Y equal to 0 will give you Z equal to 0.
+Here, X is basic, and Y is not basic, because X is 6 upon 3, okay? X is 6 upon 3,
+That is 2, and Y is 0, and 0 is 30 by 3. That is 10.
+So, here, X and Y both are basic, because once you put X equal to a 1 and Y equal to 3, it will give you Z equal to 11.
+Okay, so these are the ideas that we have.
+no mixes.
+Suppose… imagine that there's a word problem you are trying to solve.
+Okay, yes, one more thing. So, there's a Pulp library in Python. You can import LP variable, LP problem, LP maximize, LP status, values, and LP minimize.
+You define a variable, okay? This means their bounds are defined.
+and you define a problem like LP problem, and then these are the constraints that you can add it this way, and you define our objective function, and you simply solve it.
+and get the value of X, value of Y, and finally the profit, whatever it is. Value of X will be 1.0, value of Y will be 3.0, value of Z will be 11. So this way, you can actually use the Python to solve this problem.
+Similarly, let's say there is one problem, and I want you to write this problem.
+in… In the mathematical form.
+Okay, so let's try to write this problem in mathematical form.
+Slowly.
+Okay, so how do you write these problems in a mathematical form?
+Okay? So, company manufactures three types of lamps, A, B, and C. Each lamp is processed in two departments.
+Okay, 1 and 2.
+Okay, total available hours per day for Department 1 and 2 are 400 and 600.
+No additional labor is available. Time requirement and profit per unit for each land.
+Are shown in this table.
+three types of labs. So, let's say…
+We want to make few units of A, few units of B, and few units of C.
+Okay.
+And then you… in fact.
+A, B, C, are the number of units, so let's take them into our problem. So we want to find out the profit. Suppose we make A units of the first product.
+B units of second and C units of third one.
+And these are the constraints for the working hours.
+For the one, and working hours for the two.
+And this is the problem. Now, this… once you have this problem in your hand, you can easily solve them, okay? So, convert the objective function, set up initial taboo, and solve this… try to solve this problem.
+you'll get this problem. You can solve this using Python straightway. There's no problem here in solving this problem in Python.
+Just a moment, give me a second.
+Okay, so…
+Next class, we'll talk about the minimization, and then I'll explain in more detail what was your question, and so that you'll understand.
+Okay, but this is very simple. By using this to row operation, you can solve this problem. With that being said, I would like to stop here. Any questions so far?
+I will address your question next time in more detail.
+Hello, sir. Will you be sharing this PPT with us?
+Yes, yes, I'll be sharing this VPT with you.
+Don't worry about it.
+Yeah, yeah, sure, sure. I'll share the PPT.
+I'll try to make it more easy as possible, more readable, and more, you know, comprehensive, so don't worry about it.
+Yeah, any other question?
+Okay, folks, then, see you. Today I have a good presentee, so last time we… I just had 7 people, so I was a little bit nervous, but now I find that people are joining.
+So I'll also get excited, and I'll try to make this subject more interesting. So let me meet next time with more interesting things, and more detailed stuff.
+Yeah, I hope you'll definitely enjoy the class, and next time more, because this time attendance is very high.
+So if the attendance is low, I feel discouraged, but if attendance is high, I'm always happy.
+Anyway, so I'll be sharing the PPTs with you, don't worry. I'll share on the, Zoom, or probably, if not, you can visit, you know, my GitHub, so let me show you.
+My question.
+Yeah.
+I will upload the PPT on GitHub. So, this is my GitHub.
+GitHub… In case if I'm not able to… because last time I'm not able to load.
+So this is my GitHub, I'll give you the link.
+And you will find an Optimization folder there. I will make a folder. Let me give you the link.
+Yeah, just give me a sec.
+It's in the chat.
+Please save this link. I'll create an optimization folder, and I will put up all the material that I'm using, whatever I'm doing, on that. So, in case I'm not able to upload there, you can just go through this and find it easily.
+Okay, with that being said, thank you so much. Please keep the attendance high.
+So then I'll be very happy to address all the things that you want.
+Thank you so much. Bye-bye.
+leghe lei.
+Yeah, very true.
+Anyway, they're discussing themselves, I don't know about you.
+Okay.

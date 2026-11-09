@@ -1,156 +1,452 @@
-<!DOCTYPE html>
-<html data-userprofile-context="{&quot;hasProfileCardAccess&quot;:false}" data-mathjax-context="{&quot;renderLatex&quot;:true,&quot;outputScale&quot;:1.5}" data-logging-endpoint="/d2l/lp/logger/provision?sessionToken=NjYwNiw" lang="en-gb" data-lang-default="en-gb" data-intl-overrides="{&quot;number&quot;:{&quot;patterns&quot;:{&quot;decimal&quot;:{&quot;negativePattern&quot;:&quot;-{number}&quot;},&quot;percent&quot;:{&quot;positivePattern&quot;:&quot;{number} %&quot;,&quot;negativePattern&quot;:&quot;-{number} %&quot;}},&quot;symbols&quot;:{&quot;decimal&quot;:&quot;.&quot;,&quot;group&quot;:&quot;,&quot;,&quot;negative&quot;:&quot;-&quot;,&quot;percent&quot;:&quot;%&quot;},&quot;groupSize&quot;:[3]},&quot;date&quot;:{&quot;hour24&quot;:false,&quot;calendar&quot;:{&quot;firstDayOfWeek&quot;:0,&quot;dayPeriods&quot;:{&quot;am&quot;:&quot;AM&quot;,&quot;pm&quot;:&quot;PM&quot;},&quot;months&quot;:{&quot;short&quot;:[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;,&quot;Sep&quot;,&quot;Oct&quot;,&quot;Nov&quot;,&quot;Dec&quot;,&quot;&quot;],&quot;long&quot;:[&quot;January&quot;,&quot;February&quot;,&quot;March&quot;,&quot;April&quot;,&quot;May&quot;,&quot;June&quot;,&quot;July&quot;,&quot;August&quot;,&quot;September&quot;,&quot;October&quot;,&quot;November&quot;,&quot;December&quot;,&quot;&quot;]},&quot;days&quot;:{&quot;short&quot;:[&quot;Sun&quot;,&quot;Mon&quot;,&quot;Tue&quot;,&quot;Wed&quot;,&quot;Thu&quot;,&quot;Fri&quot;,&quot;Sat&quot;]}},&quot;formats&quot;:{&quot;dateFormats&quot;:{&quot;short&quot;:&quot;dd/MM/yyyy&quot;},&quot;timeFormats&quot;:{&quot;short&quot;:&quot;h:mm tt&quot;,&quot;medium&quot;:&quot;h:mm tt&quot;,&quot;full&quot;:&quot;h:mm tt ZZZ&quot;}}}}" data-oslo="{&quot;batch&quot;:&quot;/d2l/api/oslo/batch?languageId=11&quot;,&quot;collection&quot;:&quot;/d2l/api/oslo/collection?languageId=11&quot;,&quot;version&quot;:&quot;W/\&quot;20.26.10.26259.0\&quot;&quot;}" data-timezone="{&quot;name&quot;:&quot;India - Kolkata&quot;,&quot;identifier&quot;:&quot;Asia/Calcutta&quot;}" data-terminology="{&quot;outcomes&quot;:&quot;outcomes&quot;,&quot;educator&quot;:&quot;educator&quot;,&quot;moduleHierarchy&quot;:&quot;unit&quot;}" data-app-version="20.26.10" dir="ltr" data-telemetry-endpoint="https://prd.ap-south-1.telemetryservice.brightspace.com/api/events/" data-cdn="https://s.brightspace.com/apps/brightspace/20.26.10.26259/" data-global-context="{&quot;orgUnitId&quot;:&quot;6606&quot;,&quot;orgId&quot;:&quot;6606&quot;,&quot;userId&quot;:null}" data-he-context="{&quot;activeOrgEnrollment&quot;:false,&quot;applySandboxing&quot;:false,&quot;bcsansFontAllowed&quot;:false,&quot;contentStyler&quot;:false,&quot;contentStylerCssOverride&quot;:&quot;&quot;,&quot;enableLmsPathChecking&quot;:true,&quot;generativeAIEndpoint&quot;:&quot;&quot;,&quot;h5pContext&quot;:null,&quot;insertElement&quot;:false,&quot;insertPractice&quot;:false,&quot;layouts&quot;:false,&quot;mathRenderScale&quot;:1.5,&quot;maxFileSize&quot;:2147483648,&quot;mentions&quot;:true,&quot;orgUnitId&quot;:&quot;6606&quot;,&quot;orgUnitPath&quot;:&quot;/content/&quot;,&quot;pasteFormatting&quot;:&quot;merge&quot;,&quot;sourceEditable&quot;:false,&quot;uploadFiles&quot;:false,&quot;useNewTinyMCEVersion&quot;:true,&quot;viewFiles&quot;:false,&quot;wmodeOpaque&quot;:true}" data-css-vars="{&quot;--d2l-branding-primary-color&quot;:&quot;#ff812c&quot;}">
-<head>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Login - BITS Pilani Digital</title>
-<link rel="preconnect" href="https://s.brightspace.com/lib/bsi/2026.10.234/" crossorigin>
-<link rel="dns-prefetch" href="https://s.brightspace.com/lib/bsi/2026.10.234/">
-<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.10.234/unbundled/bsi-unbundled.js" as="script" crossorigin="anonymous">
-<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.10.234/unbundled/navigation.js" as="script" crossorigin="anonymous">
-<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.10.234/unbundled/navigation-main-header.js" as="script" crossorigin="anonymous">
-<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.10.234/unbundled/navigation-link-image.js" as="script" crossorigin="anonymous">
-<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.10.234/unbundled/html-block.js" as="script" crossorigin="anonymous">
-<script>
-(function(){var client;var errors = [];window.addEventListener('d2l-logging-loaded', function(e) {client = e.detail.createClient('uncaught-errors', { shouldThrottle: true });if (errors.length > 0) {client.legacyErrorBatch(errors);}});var handleError = function(data) {if (!data.message) return;if (data.error && data.error.stack && (data.error.stack.includes('/content/') || data.error.stack.includes('/shared/'))) return;if (client) {client.legacyError(data.message, data.source, data.lineno, data.colno, data.error);} else {errors.push(data);}};window.addEventListener('error', function(e) {handleError({ message: e.message, source: e.source, lineno: e.lineno, colno: e.colno, error: e.error });});window.addEventListener('unhandledrejection', function(e) {handleError({message: e.reason ? (e.reason.message ? e.reason.message : e.reason) : '',error: e.reason});});})();
-(function(){try { localStorage.setItem('XSRF.Token','');} catch(e) {}})();
-(function(){if(window['FontFace'] === undefined) { window.d2lFontsLoaded = true; return; }window.d2lFontsLoaded = false;Promise.all(['400','700'].map(function(w) {return new FontFace('Lato','url(https://s.brightspace.com/lib/fonts/0.6.1/assets/Lato-' + w + '.woff2) format("woff2")', {style:'normal',weight: w}).load();})).then(function() {window.d2lFontsLoaded = true;if(window['D2L'] && window.D2L['FontsLoaded']) { window.D2L.FontsLoaded(); }});})();
-(function(){
-D2L = window.D2L || {}; D2L.LP = D2L.LP || {}; D2L.LP.Web = D2L.LP.Web || {}; D2L.LP.Web.UI = D2L.LP.Web.UI || {};
-D2L.LP.Web.UI.Flags = {
-{"award-enable-copy-workflow":false,"awards-allow-unenroll-bake":true,"awards-ui-fetch-from-orgunit":true,"create-space-experimental-brightspace-object-types":false,"MAV-5508-welcome-widget-create-new":true,"ipsis-sourcesystem-migration":true,"ipsis-provider-oldstandardcsv":false,"ipsis-oneroster-csv-powerschool":false,"ipsis-oneroster-full-sync-implicit-unenrollments":false,"ipsis-esb-lis":false,"hyrl-611-ilp-user-sourcedid-update":true,"hyrl-4009-filter-change-force-full-sync":false,"hyrl-5142-department-location":false,"f17778-oneroster-psur":false,"f19471-gg4l-oneroster-grades-passback":true,"hyrl-1999-oneroster-rest-1p2":false,"hyrl-4029-academic-session-merge":false,"hyrl-2962-cancel-batch":false,"hyrl-3638-user-default-inactive-option":true,"hyrl-3205-psur-firstName-fallback":false,"hyrl-3587-hylia-data-pond":false,"F18735-lti-special-access-ui-feature-flag":false,"F16988-add-to-calendar":true,"advanced-assessments-groups":true,"nim-5386-modify-activity-display-return-to":true,"nim-5395-update-org-unit-id-on-activity-iteration":true,"nim-5243-consolidate-evaluator-and-publisher-patch-actions":true,"nim-5812-modify-aa-face-save-order":true,"nim-5846-lock-publisher-rule-selection-when-submissions-received":true,"nim-5757-aa-learner-candidates-route-improvements":false,"nim-6384-save-actions-complete-after-annotations-processed":true,"PHNX-3264-unavailable-content-visibility-setting":true,"F19162-enable-content-face-releaseconditions":true,"F21912-enable-content-face-competencies":true,"F19163-enable-content-face-standards":true,"IDCS-15-edit-content-file-descriptions":true,"PHNX-1554-enable-refactored-completion-summary":true,"PHNX-2629-access-unlimited-depth":true,"IDCS-283-edit-lti-descriptions":true,"EP-1169-use-content-search":true,"EP-1432-enable-description-scrolling-hovering":true,"EP-1580-enable-url-updating-in-lessons-next-prev":true,"PHNX-2357-user-guided-grade-associations":true,"PHNX-2649-lessons-course-overview":true,"PHNX-3198-respect-availability-window":true,"PHNX-3065-lessons-quicklink-current-window-navigation":true,"PHNX-2766-lazy-load-content":true,"PHNX-2988-lessons-full-date-tooltip-and-aria":true,"PHNX-3063-support-availability-types":true,"PHNX-4040-improved-file-topic-uploader":true,"PHNX-3190-valence-get-user-topic-completions-ignores-classlist-presence":true,"PHNX-4337-lti-multigrades-link-existing-button-fix":false,"EP-1454-enable-module-level-outcome-alignment":true,"PHNX-5006-enable-immersive-lessons-content-view":true,"PHNX-5314-lessons-live-polling":true,"usa-1243-discussions-due-date":true,"FED-3067-Annual-Consumption":true,"cpd-add-record-from-award":true,"fed-54-in-progress":false,"FED-4668-lift-outcomes":true,"FED-4649-content-gen-import-expand":true,"FED-4285-content-templates":true,"LUMI-275-full-screen":true,"LUMI-276-split-view":true,"HAI-1593-content-picker-quiz":true,"HAI-1591-content-picker-ideas":true,"HAI-1592-content-picker-summary":true,"HAI-1821-content-picker-lss":true,"HAI-596-Interventions":true,"FED-6732-quiz-custom-instructions":true,"FED-6876-idea-custom-instructions":true,"rpc-recalculate-all-users-fix":true,"AUT-4438-Grades-Recalc-Restrict-Users":true,"shield-15581-dev-add-bulk-edit-group-names-ui":true,"shield-16289-dev-add-groups-enrollment-pages":false,"oad-include-asn":true,"EP-1443-enable-lightcast-skills":false,"outcomes-set-course-dataset":true,"outcomes-set-org-dataset":true,"EP-1420-enable-createspace-picker":true,"outcome-sets-scales":true,"outcomes-coverage-grid":true,"de44716-lti-iframe-resize-limit":false,"lti-apps":true,"shield-14553-add-semester-department-filters":true,"employee-training-my-courses-page":false,"BORG-5429-Hotspot-Question-Type":false,"BORG-6738-shared-question-components":false,"BORG-7129-true-false-universal-question":false,"PHNX-5035-smart-curriculum-mobile-dvh-viewport-fix":true,"FED-9107-learner-mode-config-choose-content":false,"FED-2493-Docs-PDF":true,"HAI-2170-study-notebook":false,"HAI-3146-modify-knowledge-checks":false,"HAI-3607-lumi-tutor":false,"chrome-unload-deprecation-opt-out":true,"MAV-6565-lms-context-provider-host-head-filter":true,"MAV-5203-createspace-h5p-library":true,"MAV-6452-createspace-discard-changes-dialog":true,"GAUD-8852-use-input-generated-styles":true,"GAUD-8849-Use-input-radio-generated-styles":true,"GAUD-8351-dialog-resize-telemetry":true,"PHNX-3234-dialog-alignment-fix":true,"shield-16276-add-accessible-tooltip-for-edit-in-place":true,"d2l-offscreen-sizeless":true,"GAUD-9564-accessible-grid-navigation-with-up-down-keys":true,"GAUD-8299-core-tabs-use-new-structure":true,"GAUD-10260-get-focusable-fix":true,"GAUD-10337-use-alert-toast-popover":true,"GAUD-10409-prefer-native-general-dialogs":false,"GAUD-10336-prefer-native-fullscreen-dialogs":false,"GAUD-10581-use-intersection-observer":true,"button-toggle-no-change-event-on-prop-update":true,"install-wizard-dialog":true,"unique-reoffer-code":true,"MAV-5974-hwep-delete-config-button":false,"fix-navbar-flicker":true,"PHNX-4309-iframe-modal-dialog-zindex-fix":true,"AUT-4452-Grades-Formula-Special-Characters-HTML-Fix":false},
-function(feature, defaultValue) {
-const featureValue = D2L.LP.Web.UI.Flags.ListedFlags[feature];
-return featureValue !== undefined ? featureValue : defaultValue;
-}
-};
-})();
-</script>
-<meta name="robots" content="noindex" />
-<link rel="icon" href="/d2l/lp/web/faviconView?variant=0&amp;version=1" />
-<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/lib/bsi/2026.10.234/bsi.css" />
-<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/lib/reset-css/1.1.0/reset.css" />
-<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/apps/brightspace/20.26.10.26259/web-packages/D2L.LP.Web.Desktop.css" />
-<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/apps/brightspace/20.26.10.26259/web-packages/D2L.LP.Auth.Web.Desktop.css" />
-<style>
-html { font-size:20px; }
-#ff812c; }
-.d2l_1_0_637 {margin-bottom:30px;}
-.d2l-button-sso-1[primary] {
-#006FBF;
-#FFFFFF;
-hidden;
-normal;
-break-word;
-}
-.d2l-button-sso-1[primary]:hover,
-.d2l-button-sso-1[primary]:focus {
-#005089;
-}
-.d2l_1_1_394 {margin:20px 0px;}
-.d2l_1_3_393 {margin:20px 0px 0px 0px;}
-.d2l_1_4_723 {margin:10px 0px;}
-.d2l_1_8_854 {padding:5px;}
-.d2l_1_9_127 {margin-bottom:1em;}
-.d2l_1_10_281 {background-color:#fefcef;}
-.d2l_1_11_530 {border:1px solid #faecbb;border-radius:4px;}
-.d2l_1_12_837 {background-position:left top;}
-.d2l_1_13_15 {background-image:url('/d2l/img/0/SystemCheck.Main.itemWarning.png?v=20.26.10.26259');background-size: 18px;}
-.d2l_1_14_807 {padding-left:29px;}
-.d2l_1_15_945 {min-height:16px;}
-.d2l_1_16_608 {margin-top:5px;}
-.d2l_1_17_861 {float:right;}
-</style>
-<script>(function() {})();</script></head>
-<body class="d2l-body d2l-typography vui-typography daylight d2l-body-unresolved d2l-body-flex">
-<div class="d2l-body-main-wrapper"><div class="d2l-navigation-s-no-login d2l-navigation-s-main-no-links"><d2l-labs-navigation><d2l-labs-navigation-main-header><div class="d2l-labs-navigation-header-left" slot="left"><d2l-labs-navigation-link-image class="d2l-navigation-s-logo" src="/d2l/lp/navbars/6606/theme/viewimage/15587/view?v=20.26.10.26259" text="BITS Pilani Digital" tooltip-offset="0"></d2l-labs-navigation-link-image></div></d2l-labs-navigation-main-header></d2l-labs-navigation></div><div class="d2l-page-main d2l-max-width" style="background-color: transparent;"><div class="d2l-page-main-padding"><h1 class="d2l-login-portal-heading d2l-page-title d2l-heading vui-heading-2" style="color: #565A5C;">Welcome to LUMEN</h1><div class="d2l_1_0_637"><d2l-html-block html="&lt;p>The Learning Management System of BITS Pilani Digital&lt;/p>"></d2l-html-block></div><div class="d2l-login-portal-flex"><div><div class="d2l-login-portal-login-container"><div class="d2l-login-portal-login d2l-login-portal-bordered"><div class="d2l_1_1_394">
-<button type="button" primary class="d2l-button d2l-button-sso-1" id="d2l_1_2_534" style="width:100%;" data-onclick="D2L.O(&quot;__g1&quot;,0)();">Login using BITS Mail</button></div>
-<div>
-<div class="d2l-sep d2l-sep-s d2l-sep-t" aria-hidden="true"><hr /></div>
-</div>
-<div class="d2l_1_3_393">
-<div class="d2l-messagearea" id="d2l_messagearea"></div></div>
-<form data-method="post" data-scope="" data-location="/d2l/lp/auth/login/login.d2l" class="d2l-form d2l-form-primary" id="formId" onsubmit="return false;">
-<input type="hidden" name="target" id="target" value="/content/enforced/7204-T1-26_MDSDF412/Optimization Methods for Analytics3.vtt" />
-<input type="hidden" name="loginPath" id="loginPath" value="/d2l/login" />
-<div class="d2l_1_4_723">
-<div class="d2l-fieldgroup">
-<div class="vui-field-row">
-<label for="userName" class="d2l-field d2l-label d2l-label-required">Username</label>
-<span class="d2l-validator" id="d2l_1_5_265"></span>
-<input type="text" class="d2l-edit d2l-edit-required" id="userName" name="userName" autocomplete="username" autocorrect="off" autocapitalize="off" />
-</div>
-<div class="vui-field-row">
-<label for="password" class="d2l-field d2l-label d2l-label-required">Password</label>
-<span class="d2l-validator" id="d2l_1_6_402"></span>
-<input type="password" class="d2l-edit d2l-edit-required" id="password" name="password" autocomplete="off" />
-</div>
-</div>
-<button type="button" class="d2l-button" id="d2l_1_7_542" data-onclick="D2L.O(&quot;__g1&quot;,1)();">Log In</button></div>
-</form>
-</div><div class="d2l-systemcheck" style="margin-bottom:1em;">
-<noscript><div class="d2l_1_8_854 d2l_1_9_127 d2l_1_10_281 d2l_1_11_530">
-<div class="d2l-container-icon d2l_1_12_837 d2l_1_13_15 d2l_1_12_837 d2l_1_14_807 d2l_1_15_945">
-<div class="d2l-textblock d2l-textblock-strong">Warning</div>
-</div>
-<div class="d2l-htmlblock-untrusted d2l-htmlblock-wc d2l_1_16_608"><d2l-html-block no-deferred-rendering><div>Either your browser does not support <strong>JavaScript</strong> or it has been disabled through your browser&#39;s settings. The system requires a JavaScript enabled browser, and will be unable to perform the other system checks without JavaScript support.</div></d2l-html-block></div><a class="d2l-link d2l_1_17_861" aria-label="" href="/d2l/systemCheck" title="Learn more about: JavaScript">Learn more...</a>
-<div class="d2l-clear"></div>
-</div>
-</noscript>
-</div>
-</div><div class="d2l-login-portal-image d2l-login-portal-margin"><img class="d2l-image" src="/d2l/lp/login/picture?fileSystemType=Database&amp;fileId=17789&amp;v=20.26.10.26259" alt="" />
-</div><div class="d2l-clear"></div>
-</div></div></div></div><script src="https://s.brightspace.com/lib/jquery/3.7.1/jquery.min.js"></script>
-<script src="https://s.brightspace.com/lib/jqueryui/1.13.2/jquery-ui.min.js"></script>
-<script src="https://s.brightspace.com/lib/bsi/2026.10.234/bsi.js"></script>
-<script>
-window.__elasticRumOnload = function() {if (!window['elasticApm']) return;var apm = elasticApm.init({serviceName: 'LMS',serverUrl: 'https://d2l-elasticrum.apm.us-east-1.aws.cloud.es.io/',transactionSampleRate: 0.1,disableInstrumentations: ['xmlhttprequest','fetch','eventtarget','history']});apm.addLabels({ "orgName": "bitsdigital"});apm.addLabels({ "instanceName": "bitsdigital"});};
-</script>
-<script async="async" onload="window.__elasticRumOnload()" src="https://s.brightspace.com/lib/elastic-apm-rum/5.14.0/elastic-apm-rum.umd.min.js"></script>
-<script src="https://s.brightspace.com/apps/brightspace/20.26.10.26259/web-packages/D2L.LP.Web.Desktop.js"></script>
-</div><footer class="d2l-footer d2l-footer-background-color d2l-footer-top-spacing d2l-footer-top-inner-view"><div class="d2l_1_18_211 d2l-login-language-selector">
-<d2l-dropdown><d2l-button-subtle icon="tier1:browser" class="d2l-dropdown-opener" text="English (United Kingdom)" description="English (United Kingdom) – Select a locale and language"></d2l-button-subtle>
-<d2l-dropdown-menu><d2l-menu label="English (United Kingdom) – Select a locale and language" class="d2l-menu-mvc">
-<d2l-menu-item text="English (United States)" id="d2l_1_19_817"></d2l-menu-item>
-<d2l-menu-item text="English (United Kingdom)" id="d2l_1_20_463"></d2l-menu-item>
-</d2l-menu>
-</d2l-dropdown-menu></d2l-dropdown>
-</div>
-<div class="d2l-footer-default-content"><p>Powered by <span class="d2l-offscreen">D2L Brightspace</span></p><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212 17" fill="#6e7477"><g clip-path="url(#clip0_12_484)"><path d="M66.4982 8.47672C67.9121 7.76855 68.6563 6.50425 68.6563 4.79585C68.6563 2.0192 66.5291 0.293457 63.1045 0.293457H56.1851V16.7133H63.2224C66.786 16.7133 68.9133 15.0223 68.9133 12.1883C68.9119 10.3785 68.0792 9.10086 66.4982 8.47672ZM59.5001 9.87171H63.1045C64.6658 9.87171 65.5266 10.5719 65.5266 11.8415C65.5266 13.1885 64.6841 13.8993 63.1045 13.8993H59.5001V9.87171ZM62.9191 7.16307H59.5001V3.10745H62.8489C63.954 3.10745 65.271 3.44887 65.271 5.07725C65.271 6.4189 64.4356 7.15774 62.9191 7.15774V7.16307Z" /><path d="M84.1186 5.47331C84.1186 2.22588 81.7738 0.288086 77.8465 0.288086H71.2051V16.7133H74.5216V10.7025H77.8732L80.7474 16.7133H84.3784L81.1181 10.029C83.081 9.20618 84.1186 7.63515 84.1186 5.47331ZM74.5216 3.12875H77.8465C79.6367 3.12875 80.6631 3.98362 80.6631 5.47331C80.6631 7.00567 79.6367 7.88321 77.8465 7.88321H74.5216V3.12875Z" /><path d="M89.982 0.286621H86.6655V16.7132H89.982V0.286621Z" /><path d="M100.365 10.153H105.486C105.441 12.5669 103.746 14.0045 100.933 14.0045C97.7635 14.0045 95.7978 11.9441 95.7978 8.62195C95.7978 5.15447 97.7551 2.99663 100.909 2.99663C103.051 2.99663 104.559 3.96352 105.028 5.64792L105.062 5.77061H108.526L108.498 5.58257C108.005 2.25779 104.988 0.0239258 100.978 0.0239258C98.4501 0.0239258 96.2766 0.854788 94.7082 2.42449C93.1398 3.99419 92.3423 6.09469 92.3423 8.55927C92.3423 11.0238 93.137 13.127 94.6408 14.6474C96.1446 16.1677 98.1904 16.9599 100.583 16.9599C102.653 16.9599 104.526 16.2651 105.597 15.1248L105.756 16.7172H108.593V7.33365H100.365V10.153Z" /><path d="M121.852 6.93618H114.691V0.286621H111.375V16.7132H114.691V9.88755H121.852V16.7132H125.169V0.286621H121.852V6.93618Z" /><path d="M127.022 3.21664H131.983V16.7132H135.298V3.21664H140.259V0.286621H127.022V3.21664Z" /><path d="M149.045 7.33628L146.378 6.78682C145.027 6.49208 144.451 5.91461 144.451 4.85703C144.451 3.61407 145.538 2.84322 147.289 2.84322C148.881 2.84322 149.832 3.5874 149.896 4.88637L149.905 5.04507H153.225V4.87437C153.13 1.86833 150.878 0.0012207 147.348 0.0012207C143.697 0.0012207 141.147 2.0337 141.147 4.94505C141.147 7.46431 142.71 9.11937 145.664 9.73018L148.355 10.3036C149.639 10.5704 150.18 11.1185 150.18 12.1441C150.18 13.3737 149.013 14.1365 147.133 14.1365C145.333 14.1365 144.246 13.383 144.225 12.1201V11.956H140.907V12.1267C140.979 15.0874 143.422 16.9999 147.132 16.9999C150.997 16.9999 153.495 14.9994 153.495 11.9027C153.495 9.44478 152.04 7.95109 149.045 7.33628Z" /><path d="M162.633 0.288086H155.753V16.7133H159.069V11.1653H162.633C166.093 11.1653 168.418 8.97546 168.418 5.71603C168.418 2.4566 166.098 0.288086 162.633 0.288086ZM159.076 3.12875H162.055C163.929 3.12875 164.962 4.03963 164.962 5.69336C164.962 7.38976 163.914 8.32464 162.007 8.32464H159.076V3.12875Z" /><path d="M195.457 11.1292C194.916 12.8629 193.21 13.9379 191.011 13.9379C188.019 13.9379 186.086 11.804 186.086 8.48992C186.086 5.14246 187.973 3.06331 191.011 3.06331C193.183 3.06331 194.809 4.13023 195.364 5.91598L195.402 6.03601H198.859L198.826 5.84396C198.234 2.30846 195.191 0.0239258 191.074 0.0239258C186.02 0.0239258 182.625 3.43406 182.625 8.51126C182.625 13.6551 185.886 16.9772 190.935 16.9772C195.021 16.9772 198.211 14.658 198.873 11.2052L198.909 11.0105H195.489L195.457 11.1292Z" /><path d="M212 3.21664V0.286621H201.128V16.7132H212V13.7831H204.443V9.84354H211.212V7.02421H204.443V3.21664H212Z" /><path d="M171.747 13.1084H168.358L166.987 16.7132H170.422L171.747 13.1084Z" /><path d="M179.187 16.7132H182.669L181.299 13.1084H177.862L179.187 16.7132Z" /><path d="M178.07 10.5557C178.731 10.1692 179.317 9.67797 179.804 9.1034L176.459 0.309326H173.196L169.905 8.9647C170.435 9.68813 171.11 10.3053 171.892 10.7811C171.306 9.51549 171.751 7.80176 172.487 6.63748C172.665 7.40433 173.025 7.75508 173.44 8.01781C173.159 7.66706 172.94 7.1376 173.019 6.37875C173.15 5.1438 174.446 4.17424 175.663 3.77548C175.19 4.84239 175.82 5.35451 176.084 6.13736C176.553 5.83715 177.061 5.59555 177.595 5.41853C176.72 7.39899 178.71 7.92045 178.234 10.0289C178.197 10.209 178.142 10.3854 178.07 10.5557Z" /><path d="M-0.000121416 15.6864H1.63004L2.43319 14.6595V2.34326L1.63004 1.31635H-0.000121416V0.290771H7.76878C13.7826 0.290771 16.4377 3.52887 16.4377 8.31666C16.4377 13.1045 12.297 16.7186 7.71964 16.7186H-0.00292969L-0.000121416 15.6864ZM8.08471 15.301C11.47 15.301 12.5905 13.2658 12.5905 9.12618C12.5905 4.77716 10.7876 1.31635 7.64663 1.31635C7.20881 1.31184 6.77309 1.37444 6.35626 1.50172C6.20617 1.55448 6.05984 1.6164 5.91818 1.6871V14.6595C6.42225 15.1449 7.42759 15.301 8.08471 15.301Z" /><path d="M28.1985 9.53424L27.3181 13.6352H17.9106V12.5883C17.9106 12.5883 19.3147 11.1786 19.3456 11.1466C22.276 8.2126 24.5787 5.88005 24.5787 3.46215C24.5787 1.9618 23.9609 1.02691 22.8812 1.02691C21.8014 1.02691 21.1345 2.06582 21.1345 3.62352V4.4117H18.2912C18.2235 4.16672 18.1914 3.9141 18.1957 3.66086C18.1957 1.23496 20.6908 0 23.037 0C25.3538 0 27.6902 1.05358 27.6902 3.56884C27.6783 4.19317 27.5164 4.80668 27.217 5.3626C26.8948 5.96398 26.4922 6.52338 26.0193 7.02699C25.424 7.69381 24.1294 8.72605 22.9837 9.58759C22.0682 10.2784 21.2468 10.8599 20.9561 11.0666H26.5108L27.9935 9.53424H28.1985Z" /><path d="M43.7477 11.5814L42.6455 16.7133H29.7896V15.6837H31.4127L32.2257 14.6581V2.34324L31.4127 1.31766H29.7896V0.288086H38.5806V1.31766H36.4618L35.705 2.34324V15.1783H39.7896L43.3434 11.5814H43.7477Z" /><path d="M27.6259 15.1743V15.8118L26.681 16.7093H17.376V16.0785L18.3209 15.181L27.6259 15.1743Z" /></g><defs><clipPath id="clip0_12_484"><rect width="212" height="17" fill="white"/></clipPath></defs></svg></div></footer><script src="/d2l/portal/js/desktop?v=20.26.10.26259"></script>
-<script>
-D2L.LP.Web.UI.Events.OnInit.AddListener( function() {
-D2L.O("__g1",2)();
-D2L.O("__g1",3)();
-D2L.O("__g1",4)();
-D2L.O("__g1",5)();
-D2L.O("__g1",6)();
-D2L.O("__g1",7)();
-} );
-D2L.LP.Web.UI.Events.OnLoad.AddListener( function() {
-D2L.O("__g1",8)();
-} );
-D2L.OR={
-"__g1":{"0":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Navigate\",\"P\":[{\"_type\":\"url\",\"Url\":\"https:\/\/lumen.bitspilani-digital.edu.in\/d2l\/lp\/auth\/saml\/initiate-login?entityId=https%3a%2f%2faccounts.google.com%2fo%2fsaml2%3fidpid%3dC042gmm8v&target=%2fcontent%2fenforced%2f7204-T1-26_MDSDF412%2fOptimization+Methods+for+Analytics3.vtt\"}]}",
-"1":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Form.SubmitByButton\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_7_542\"}]}",
-"2":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.Authentication.Xsrf.Init\",\"P\":[\"d2l_referrer\",\"\",0]}",
-"3":"{\"_type\":\"func\",\"N\":\"D2L.LP.ActivityBar.Init\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/activityFeed\/checkForNewAlerts\"},120]}",
-"4":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.MessageArea.Init\",\"P\":[\"d2l_messagearea\",{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/validation\/errors\"}]}",
-"5":"{\"_type\":\"func\",\"N\":\"D2L.LP.Globalization.Locale.Init\",\"P\":[{\"_type\":\"anon\",\"DecimalSeparator\":\".\",\"GroupSeparator\":\",\",\"NumberNegativePattern\":1,\"PercentPositivePattern\":0,\"PercentNegativePattern\":0,\"PercentSymbol\":\"%\",\"NegativeSign\":\"-\",\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"UseNativeDigits\":false,\"GroupSizes\":[3],\"IntegerRegex\":\"^([\\\\(-]*(([01234567890123456789]?[01234567890123456789]?([01234567890123456789](,[01234567890123456789][01234567890123456789][01234567890123456789])*)?))[\\\\)-]*)$|^([\\\\(-]*[01234567890123456789]+[\\\\)-]*)$\",\"DecimalRegex\":\"^([\\\\(-]*(([01234567890123456789]?[01234567890123456789]?([01234567890123456789](,[01234567890123456789][01234567890123456789][01234567890123456789])*)))(\\\\.[01234567890123456789]+)?[\\\\)-]*)$|^([\\\\(-]*[01234567890123456789]*\\\\.?[01234567890123456789]+[\\\\)-]*)$\"},{\"_type\":\"anon\",\"InputDateFormat\":\"dd\/MM\/yyyy\",\"Is24HourClock\":false,\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"UseNativeDigits\":false,\"TimeFormat\":\"h:mm tt\",\"AmDesignator\":\"AM\",\"PmDesignator\":\"PM\",\"FirstDayOfWeek\":0,\"ShortMonthNames\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\",\"\"],\"LongMonthNames\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\",\"\"],\"ShortDayOfWeekNames\":[\"Sun\",\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\"]},{\"_type\":\"anon\",\"TextDirection\":1},{\"_type\":\"anon\",\"Culture\":\"en-gb\"},{\"_type\":\"anon\",\"JustNow\":\"just now\",\"OneMinuteAgo\":\"1 minute ago\",\"TwoMinutesAgo\":\"2 minutes ago\",\"MinutesAgoMany\":\"[0] minutes ago\",\"OneHourAgo\":\"1 hour ago\",\"TwoHoursAgo\":\"2 hours ago\",\"ManyHoursAgo\":\"[0] hours ago\",\"YesterdayTime\":\"yesterday at [0]\",\"DayOfWeekTime\":\"[0] at [1]\",\"MonthDayTime\":\"[0] at [1]\",\"Now\":{\"_type\":\"D2L.LocalDateTime\",\"Year\":2026,\"Month\":11,\"Day\":9,\"Hour\":13,\"Minute\":36,\"Second\":29,\"Millisecond\":636}}]}",
-"6":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Initialize\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/login?target=%2fd2l%2flogin%3ftarget%3d%252fcontent%252fenforced%252f7204-T1-26_MDSDF412%252fOptimization%2bMethods%2bfor%2bAnalytics3.vtt%26sessionExpired%3d0&sessionExpired=1\"},\"Error: unable to complete your request.\",{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"flash\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.FlashMessages.RpcReceivePayloadProvider\"},\"session\":{\"_type\":\"func\",\"N\":\"D2L.PT.Auth.SessionTimeout.RpcReceivePayloadProvider\"},\"messageArea\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.MessageArea.RpcReceivePayloadProvider\"},\"OR\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.ObjectRepository.RpcReceivePayloadProvider\"},\"JS\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.RpcReceiveJsPayloadProvider\"},\"CSS\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.RpcReceiveCssPayloadProvider\"},\"BSI\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Bsi.RpcReceiveJsPayloadProvider\"},\"ariaMessages\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Aria.RpcReceivePayloadProvider\"}}]}",
-"7":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.InlineHelp.Init\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/inlineHelp\/6606\/help\"}]}",
-"8":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Focus\",\"P\":[{\"_type\":\"id\",\"Value\":\"userName\"}]}"}
-,
-"d2l_1_5_265":{"0":"[\"userName\",{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Edit.ValidateRequired\",\"P\":[\"userName\"]},\"Username is required.\",null]"}
-,
-"d2l_1_6_402":{"0":"[\"password\",{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Edit.ValidateRequired\",\"P\":[\"password\"]},\"Password is required.\",null]"}
-,
-"password":{"enter":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Form.Submit\",\"P\":[{\"_type\":\"id\",\"Value\":\"formId\"},false],\"D\":true}"}
-,
-"d2l_1_19_817":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Connect\",\"P\":[\"POST\",{\"_type\":\"url\",\"Url\":\"\/d2l\/login\/locale\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"localeId\":1}],\"D\":true}"}
-,
-"d2l_1_20_463":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Connect\",\"P\":[\"POST\",{\"_type\":\"url\",\"Url\":\"\/d2l\/login\/locale\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"localeId\":3}],\"D\":true}"}
-};
-</script>
-<script>D2L.LP.Web.UI.Html.Bsi.Init('prod', 'https://s.brightspace.com/lib/bsi/2026.10.234/', ['unbundled/navigation.js','unbundled/navigation-main-header.js','unbundled/navigation-link-image.js','unbundled/html-block.js','unbundled/dropdown.js','unbundled/dropdown-menu.js','unbundled/button-subtle.js','unbundled/menu.js','unbundled/menu-item.js'], true);</script>
-</body>
-</html>
+So…
+Hello Milan sir, good evening.
+Yes, good evening.
+Sir, I wanted to request a thing. Actually, it's not…
+Good for the flow of the class to interrupt time and again for the poor.
+What I like to request you to,
+Like, before the session ends, before 10 or 15 minutes.
+If you allow me to, take.
+Yes, yes. Yes, yes. You can directly start the poll. Once the poll will start, I will stop.
+Okay, okay, sir, sir.
+No need to.
+Doesn't look good time and again I'm calling out and.
+See, you don't need to say, sir, I want to start the poll. You start the poll at your time. When the poll will start, I will stop. No problem. That's a regular part now. We'll make it our regular routine.
+Joseph, Joseph.
+No need to say that, sir, please stop, I want to start the poll. You can directly start whatever you want. I will keep quiet.
+Sure, sir, sure. Thank you so much, sir.
+So, Doctor Ashish, are people joining today?
+Yeah, sir, I… I…
+I think they should because it was clearly mentioned in the live session that it is.
+I do.
+If they won't join, I will just record the…
+I will just record the class, okay?
+Yeah, recording, they can access the recording ones, yeah.
+Yeah, we'll record the class and we'll leave it, because otherwise…
+That will be a problem. We'll wait for 5 minutes more, then we'll start recording.
+What do you think?
+Okay, sir.
+Yeah, yeah, so 5 minutes more than… I was also thinking of asking for contact numbers of the…
+Learners, because.
+Most of the time they are not regular, most of the learners.
+So we can, I can contact them before the classes.
+Yes.
+Yes.
+I'll coordinate with, sir. Okay.
+Yeah.
+of the hunting.
+Oops.
+Okay, Dr. Ashish, I will start the recording.
+Sure, sure, sure, sure. You can go ahead.
+So hello students, as.
+Nobody else is here, but I would like to record the class.
+Because recording class, we'll not lose our…
+So, yes.
+So, recording class will not lose our session.
+And therefore, it is important to record so that you can also watch recording.
+Okay, so last time, if you remember.
+That we started, with the sensitivity.
+We started with the sensitivity analysis.
+And I told you that.
+Sensitive analysis.
+determines the sensitivity range.
+Maybe for the cost vector, maybe for the requirement vector.
+Maybe for addition or deletion of any new constraint.
+Or addition or deletion of any new variable.
+It will give you both bounds. It will give you lower bound as well as upper bound.
+Okay.
+So, important thing is that… When it comes to parameter and their variation.
+A parameter can vary one at a time.
+And it does not affect the Optimalities. We would like to find the range of a particular parameter.
+That would not affect the Optimality, right? So last time I already discussed all these things with you.
+What are the different ways to do post-sensitivity analysis?
+of a given LPP.
+It's basically, we have… To look at the effect of the cost factor.
+Okay, we have to look at the effect of the requirement vector.
+We have to look at the addition of new variables.
+We can delete the new constraint. We can add the new constraint.
+Okay, and we can also change the coefficient of variables in the construct. So I'll not take it all, but we'll go with some of them.
+Which are a little bit easy to discuss.
+So the first one yesterday we have already discussed. Suppose you are, you got a problem of maximization, and these are the constraint, and we would like to see the effect of this.
+Changing of this C one. So the whole idea is what range?
+lower bound less than equal to C1 less than equal to upper bound what range of C1 I should get so that I will not this optimal solution will not get affected okay
+So, the whole idea is…
+Changing the value of C1, will it increase or decrease the objective? That is also we are interested to see.
+Okay, so last time, yesterday, I already discussed about all these things.
+Then, there are two cases.
+The coefficient you are discussing is it in the.
+Is it a basic variable? Is it a cost vector associated with the basic variable?
+Or is it a cost vector that is not associated with the basic variable for both the cases.
+We have different set of approach, right? So let's get straight into the first one.
+Now, if you look at it very carefully, The formula says.
+the range of the change, so I'm giving you the range of the change, and you can add further that C1, okay? So here, I'm talking about, you know, this… this… the range you'll get, but if you add CK every time here, everywhere, you'll get the range of CK, because if you add them, you'll get the range of CK.
+Now, here, look at the problem, and so…
+If we are interested in the C1 here, C1 is 15, right? So that's the C1, and this is C2.
+So C1 corresponds to X1. C1 corresponds to X1. Now, if you want to find out all YKJs which corresponds to X1, which are greater than 0. So just have a look at this. So these are the YKJs which are greater than 0, which corresponds to X1.
+which is 1 and 8 by 39, and all the YKJs which corresponds to X1, and which is less than 0, which is minus 1 by 39.
+Now, just you have to plug and play, that's all. I mean, this is going to be MaxOff.
+The upper part is just you have to take a minus of ZJ minus CJ. Just look at this ZJ minus CJ here. Just look at this ZJ minus CJ. Corresponds to positive values.
+Okay, that's all.
+And then, we discard zero part, and we just keep this part here.
+And then delta C1 and the minimum. Now, in case of minimum, you're going to look at the negative variable.
+And the value corresponds to ZJ minus CJ value corresponds to negative variable. So yesterday, all these things were discussed, and we got the range. And then after that, if you look at it, I got all these numbers, but I get a delta C1 here.
+But if you want to find the C1, you need to add 15 here.
+Everywhere else.
+Okay.
+We need to add 15. Once you add 15, so delta C1 plus 15 will make it C1, and this is the range of C1. So what does it mean?
+that if C1 lies between these two numbers, this final objective will not change. Okay, if C1 lies above this number.
+Then.
+Oh, what happened?
+Then if C1 lies above this number, then the objective may change.
+That's the whole idea.
+Now, here in this case.
+our C1, if you look at our C1, it corresponds to X1, and X1 is a basis variable. So C1 here, in this case, is an element of CB, okay? Now.
+There's other method to solve the same problem. I already discussed the other method.
+Similarly, what do you do?
+is… just, look at… write it out, and we just want to find out the value of S1 and S2 here. So these are all values we consider to be… all these values are greater than or equal to 0. Now, to find these values, you know, you just have to multiply this with this, and this with this.
+And then subtract it from the coefficient, which is 0 minus whatever.
+So this value will get.
+Okay,
+ZJ will be this, and this is CJ corresponds to S1. This value we want to equal to 0.
+Now, similarly, we want ZJ for, this one.
+for this… this value we want. So it's, again, this multiplied by this, this multiplied by this, which is this, minus the coefficient of this is, which is 0, and this we want to be greater than or equal to 0.
+Now, from this, you can solve it to get the range. Same range you'll get. This was another approach.
+Right? Now, what if…
+What if your particular cost variable is not as a basis variable? So here, if you look at it.
+This objective function can be written as.
+0 S. 4. Okay.
+So here C4 corresponds to.
+If you look at it very carefully.
+C4 is a coefficient, sorry.
+So, this… This is basically…
+This is basically C1, this is C2, this is C3, and C4. So C4 corresponds to S1. Now, there is no S1 here, okay? Therefore, C1, C4 is not a relevant top CV.
+Right.
+So now C4 corresponds to S1.
+Correct.
+So, please understand, C4 is zero.
+And S1 is non-basic variable.
+Okay, so I'm going to read ZJ minus CJ under the column S1 column, which is basically 45 by 41.
+Right.
+So, what will happen? So, what we assume, that If you calculate, this value.
+By formula, we want it to be greater than or equal to 0.
+And therefore, this will get final value, right? So, since C4 equal to 0 initially, therefore C4 less than equal to 45 by 1. So, even if you add that value 0, you'll get the value of the C4, right? So, this is another way to solve it.
+Then yesterday I discussed about the cost vector. So it was the it was the cost vector that we have to decide now.
+So please understand, now we'll change the cost vectors, requirement vectors, my bad.
+So the solution is, if XB is the optimal basic feasible solution of the standard Lpp with B as required basis, then XB is always this value. Okay, so let's get into straightforward without wasting our time into theory. We'll get into formula directly.
+So we always want this B inverse B greater than equal to 0, and then this… some mathematics is there, but I don't want to get into that. Look at this formula.
+We want to find the range of BK and we'll get go for that range using problem.
+Now, suppose I want to know if I change this 15,
+Or I want to find the range of this 15 here.
+That will keep my optimal solution as it is. So the formula is very simple and straightforward. What do you do?
+Now, this is a B1.
+and this is B2 so 15 corresponds to B1 okay and B1 actually corresponds to S1 right so B1 corresponds to S1
+So what I'm going to do is I'm going to look at the column of S1.
+In the column of S1, I will select my BIKs. The BIK is 1x4 and minus 1x12.
+Right? My BIK is minus 1 by 4 and 1 by 4. And the solution is 3 by 4.
+So the formula says if you look at the formula.
+Very carefully the formula says it is first you look at.
+All BIK which are greater than zero.
+Take a max.
+Divide by BIK, and look at minus XBI.
+Okay, so minus XBI is a solution, which is minus 3 by 4, and BIK, which is positive, is 1 by 4.
+Similarly, delta P1 and then minimum part, which will be again, so here I'm going to take PIK less than 0.
+So that will be minus 1 by 12.
+And this one. So this way we'll get the range.
+So now finally we want to add 15 to get the range. So if this value 15 lies in between 12 to 16, 60, then we don't have to worry about the optimal solution won't change.
+Okay.
+Now, let's get into… Next problem.
+The same problem can be solved using second method.
+And second method is pretty easy.
+You will love it. It simply says that what you do.
+Take a B, take a B vector, because 15 is replaced by B1.
+Okay, and take a B inverse. B inverse is always the slack variable matrix, and simply multiply these two.
+And we want it to be greater than equal to 0 B inverse B greater than equal to 0 and.
+These values are greater than or equal to 0, means their component values are greater than or equal to 0, and this way you can find the range. So this is pretty simple and straightforward.
+Next is… The next was.
+Adding a new variable. Suppose… Let's say this is my optimization problem, or…
+LPB. Now suppose I add one more variable, 2X3.
+Then the constant will also change.
+Right?
+Now, how to solve this?
+First, if you look at what I'm trying to do, see, if I'm adding a new variable X3,
+With the column coefficient 1 1 1 if you look at it very carefully if you look at the coefficient of.
+Constant coefficient of X three there one one one column coefficient one one one.
+So I will add a X3 column, and now I want to find all these entries, right, in the X3 column.
+Okay, and then once I find these entries, I would like to see whether my solution changes or not.
+That's what the whole idea.
+Now, it's a pretty simple job to do, so the solution is
+You look at the B inverse, so B inverse we know all the time. B inverse is going to be the slack variable matrix.
+And you take a B inverse, and you take a column coefficients of the X3, and you get the new… get the numbers, minus 1 by 3, 5 by 3, and 1. These numbers are obtained using this. And then, finally, you can find out what is ZJ minus CJ.
+Okay.
+Once you find ZJ minus CJ though X three is not a basic variable here.
+But your solution will not change, it remains the same.
+So this is the way when new variable is added.
+And there is there is one more.
+There's one more thing.
+It says new constraint is added. What if new constraint is added?
+Let's say I have two constraints at the moment. If I add one more constraint, which is like this.
+Now, first of all, this is the final solution of the optimal table from the optimal table. Now look at the new constraint. If these 2 people, if these 2
+Satisfies the new constraint.
+Okay, then that means that constraint, whatever the constraint you are added, that is redundant.
+And the current optimal solution remains unchanged.
+Okay, but if you look at this constraint.
+Okay, if this constraint is added, and look at the solutions here, put down into this solution, does it satisfy? If it does not satisfy, then we have to modify this LPP.
+And I'm going to leave it as it is to you to modify this LPT, okay?
+So yeah so this is done now we'll start our next topic which is unconstrained optimization.
+And I will go through it on constraint optimization part.
+Okay, so let me go through unconstrained Optimization.
+Okay.
+Okay, fine.
+So in case of unconstrained optimization, so we will go through some of the important things first, like convex set, okay?
+So, given any subset, Okay, we'll talk about a convex set straight away.
+Given any subset of, yes, sir, give me a second.
+Given any subset S, We offer RN.
+What is RN? RN is a n-dimensional space. Any point in RN look like?
+X1, X2… XN, okay? We say it belongs to RL.
+For example, We can say that 1, 2 belongs to R2.
+R means real number. We can say pi comma 7 by 2.
+belongs to R2. We can say.
+E, minus pi, square root of 2 belongs to R3.
+Okay, we can say 101.
+Belongs to R3. So we want all these numbers to be real numbers.
+Right, so when do you say a particular set is a convex set?
+Given given any subset of RN.
+When you say that particular set is a convex set so we say.
+That if you select any 2 points, let's say X 1 and X 2 in that set.
+Okay, and let's take… Two numbers, Lambda 1 and Lambda 2.
+Okay, specifically, they are going to be greater than equal to zero with one more condition that if you add them.
+You'll get one.
+Total weight is 1.
+Okay, now if you consider the line segment.
+Which is lambda 1 X 1.
+plus lambda 2X2.
+DivX.
+Which looks like this.
+Okay, if it lies completely inside the set, then we say that.
+The set is a contact set.
+So that this, this particular thing, Lambda one X one.
+plus lambda to X2.
+Is called convex linear combination of two points in S.
+So given when do you say a particular set is convex?
+Given any two point if the convex linear combination of that two points lies within the set.
+Then we say that the set is convex.
+Okay, now the next thing… Here, you can see, you can take any two points here in this.
+And consider their convex linear combination it will lie inside this any two point you take.
+Here also any two point you take no matter.
+Their convex combination will always lie inside the set.
+Here also. So this is all convex sets.
+They're all convex. But look at this, this set. If you take a point here, if you take a point here and consider a line segment joining this, which is nothing but lambda one times x one plus lambda two times x two.
+Now, this…
+This part, this part is going outside the set, it is not completely inside the set, so this is a non-convex set.
+Okay, so convexity plays a very important role when it comes to
+Optimization because convexity has a close relation and has a special importance.
+When you want to.
+Find the extremum values of a function.
+Okay, but unfortunately, When it comes to deep learning.
+You will not get some of the convex, sets or convex functions.
+And there you have to be very careful while dealing with that.
+Now let's solve some of the questions, easy questions, whether a particular set is convex or not.
+Let's say that I have a set of all X1, X2, which is R2, and
+X1 squared plus X2 squared equal to 1.
+And I want to see whether this set is convex or not.
+To see this set is convex or not, I'm going to take two points.
+Okay, and then I'm going to compute.
+I'm going to take this Lambda 1 and Lambda 2, please note, they're always
+in the range 0 to one. Okay, so take the point 1 0 and 0 1.
+Which is in S, because they are on the boundary.
+See, any point… Belongs to this means let's say if I'm saying A comma B.
+Belongs to us it must satisfy one one condition A square plus B square exactly equal to one.
+Okay, all the points on the boundary belongs to it.
+Now.
+If I take this.
+Two points, 1,0 and 0,1 on this particular
+In this particular set and I'm going to consider this convex combination.
+which lambda times X one lambda one times X one plus lambda two times X two now lambda one I will take
+As a half.
+And Lambda 2, I will take as half.
+usually what we do we take this as lambda and we take this as one minus lambda because this lambda is inside the zero comma one
+Now half times x one plus half times x two if you solve.
+okay so half times X one plus half times X two
+What do you get? Half times X1, which is 1, 0, plus half times X2, which is 0, 1, which you'll get as half, half.
+Now.
+We would like to see whether this point belongs to this circle.
+So to for this point to belong to circle it must satisfy 1 by 2 square plus 1 by 2 square equal to 1.
+But it's not true. Therefore, this set is not complex.
+And this is this proof I have shown purposely.
+Now, you can say that
+Given any convex set, if you take a single point out of that convex set.
+Okay, then it does not become anymore, it does not remain a convex set, okay, here I've shown example, you can take
+You take n-dimensional space and you get rid of 0 from that.
+Okay, you can easily show that this set is not convex. If you remove single point, then you can always
+Take two points, which will pass through that point, but that point is not already inside the set. Therefore, this point can be a problem.
+So, here you can see… That I have taken 2 points in RN.
+I have chosen lambda equal to half, and finally I'm getting 0,0,0,0. So this space does not have 0,0,0,0. Therefore, the convex linear combination of these two points does not lie inside the set, and hence, this set is not convex.
+Okay, now.
+is this unit ball is a convex set. Now, it's a different set altogether. What do you mean by norm X less than equal to 1? It's a set of all X that satisfies
+Summation X square equal is less than equal to one. Okay, so summation Xi square less than equal to one.
+So here, It will take all these points inside this set.
+So if you take any 2 point XY belongs to B, take a lambda like this and consider this linear combination.
+Then.
+You want to show that this X, the norm of this X less than equal to one. The norm of X is the norm of this.
+which is the length of a vector. Then we can use this to triangle inequality.
+And this property, scalar multiplication property of the norm.
+And to write it like this, so we can write… so this norm is 1, this norm is 1, you can write this times 1 times 1, and then you can see that norm of x is then equal to 1. Therefore, unit ball is a convex function.
+Then if you look at this set, set of all XY, where Y less than equal to sine X, Y greater than half, 0 less than equal to X less than equal to pi.
+Now, first of all, why… Equal to sine X is this graph.
+Okay, then y equal to half is this graph.
+Okay, then Y less than equal to sine X will come down, and Y greater than equal to half will come go. So the common region will be this, and you can see it can take any 2 points. Then you can see that this this part is a convex set.
+Okay.
+So, having said that.
+Now, once again, I mean, is this set is a convex set, so you can draw it the region, and you can see that's… take any two points and see whether it's convex or not.
+Now… Any feasible reason.
+in the LPP is always a convex set.
+So set of all x belongs to Rn which satisfies this.
+It's also a convex set. You can always prove that. Okay, you can take any 2 points X and Y.
+Then it will satisfy this rule equality. Then look at A times W. We want this A times W to be less than equal to B, and if you solve it, you can easily prove, because what is the property of set? If any X belongs to this set, it is always less than equal to B.
+So we want to prove that W belongs to it. That means we want to show that AW is less than equal to P. And similarly, we can prove that it will satisfy non-negativity condition. So any feasible region is always a convex set because
+If you look at the feasible region.
+The feasible region is made up of this kind of, you know, simplex.
+With the corner points, right? So it's always a convex.
+Feasible region is convex.
+Next.
+Umm.
+Is it a convex set? It's a pure plane. Yes, it is a convex set, and you can show it is a convex set.
+Now a point X is said to be a convex linear combination of X one and X two which satisfies this condition.
+So, if I take any two point, this point.
+2 points, let's say I want to see whether this is a convex linear combination of these 2 points or not.
+Okay, so take this point, and look at this linear combination, and from this, try to find out the value of lambda. If you're getting a value of lambda, and if you're not getting any absurd equation, that means it's a convex linear combination.
+Right? Next.
+Now, here you see…
+Can we express these two as a convex linear combination of 1 1 and 1 2? So let's try first. Can we express 2 1 as a convex linear combination of 1 1 and minus 1 2?
+So you solve this equation, and unfortunately, you see, That.
+I get a value of lambda 1 and lambda 2, that is okay.
+But it does not satisfy the condition that both the values that I got equal to 1.
+and therefore two one cannot be thought of as a convex linear combination
+The other number can be easily seen to be a convex combination.
+One of the nice things about this feasible region is.
+any point in between okay if you take any point in between it is always a convex linear combination of the corner points
+That is what the simplex.
+Fundamental theorem of simplex that we want to address this okay so here you can check.
+That this point can be thought of as, can be written as convex linear combination of these common points, always. And that is what we want to say in the next theorem.
+Every point in a non-empty bounded LP feasible region.
+Can be written as a convex layer combination of its corner point given any X.
+you can write this X as lambda 1 V 1 Lambda two V two.
+till Lambda 4 V 4
+Okay, and that's the beauty, and this is a very important theorem when it comes to unconstrained optimization, we'll talk about it.
+So what is convex function?
+Okay, convex function.
+From any subset of Rn to R.
+Okay, given that S is convex.
+is… Satisfies this condition.
+Okay, now, if you look at it very carefully, let me tell you how to add… how to look at this particular
+Think very carefully. Now, what do you do?
+So you already have a function, okay? So this is your function. Blue is your function.
+So this is X one comma F of X one and this is X two comma F of X two. And you have a convex set here.
+Okay.
+Take X lambda. What is X lambda? X lambda is basically
+Just lambda times X 1 plus 1 minus lambda times X 2, okay?
+This, this X lambda is this, okay, if you look at it very carefully.
+this value, is X lambda F of X lambda, which is height.
+Right?
+And now, look at the… look at the…
+convex combination, convex linear combination of F of X1 and F of X2. It is just a line joining this line, okay? Now, whenever you see that your F of X lambda
+is less than equal to CLC.
+Convulsive is a combination of.
+FX1 and FX2.
+Then we say that the function is convex every time. Otherwise, it is actually said to be concave if this is greater than or equal to this, okay? And it's pretty, very important that
+Convex function plays a very important part when it comes to getting a global minimum.
+If your function is a convex like this, Then, reaching to
+There is no local optimum from there.
+There's no local minimum here in this case. We'll always have of global bingo.
+or every convex function has Whenever it has an optimum, it has a global optimum.
+So there are some tests of the convexity.
+When the F double dash greater than equal to zero, we say F is convex.
+When f double dash less than equal to zero when say f is concave.
+And whenever f double dash greater than zero at some point and it is less than zero at some point we say it is neither convex nor.
+Concave.
+Right?
+Now here are some of the examples of a convex function. These are all convex functions.
+In one dimensions and these are all convex functions in two dimensions.
+Okay, so that's pretty much the same definition it follows.
+You see… That.
+The convex function, you see, always achieve its global optimum, okay? Global minima here can be easily achieved, as well as global minima at the surface can also be easily achieved. This is the surface, you see, in 3D, and global minima can be achieved here. There are certain conditions, okay?
+Based on that conditions, we find out. Here, I'm not going to talk about Asian or Eigenvalues at the moment. We'll discuss that in the next class.
+Okay, now… What is unconstrained optimization, basically? So unconstrained optimization gives you minimum or maximum of an objective function.
+without any equality or inequality constraint on the decision variable. So our aim is basically is to find out.
+the minimum of this function, okay, where that minimum can be NAREP. Where X is a decision variable, FX is an objective function, and there are no constraints at all. You can have a maximization problem also, you can replace this minimization with the maximization. A simple example, that suppose you want to minimize FX,
+You want to find out you want to find out that x for which fx has a minimum a simple example is.
+X minus 2 square plus 1 which is this can you find a point.
+Okay, can you find X star?
+Which is minimum.
+Can you find a X star?
+That will.
+Well, using that, we can have a minimum value. So, X star is 2. Okay, here you can see, if you put down the value 2 here.
+You'll get a minimum value to be 1.
+See, this is a minimum, and the value of the function at the minimum is 1.
+So, minimum value is 1, and the choice of the minimum is
+So, this is the whole idea behind when it comes to And then cluster optimization.
+See, when you don't have a convex function, okay, so when you don't have a convex function, and if you try to achieve minimum by using certain algorithm, unfortunately, you will…
+Get stuck at the local menu.
+Because this function is not convex.
+Because if you look at why this function is not convex, this function is not convex because if you select a point here and if you select a point here and if you try to connect.
+Then some part of the function lie below this line, and some part of the function lie above the line.
+Therefore in this is a non-convex function.
+In non-convex function, you will get stuck up at local minimum, okay? And it's very difficult to come out of that local minimum.
+You know, and that's why convex function plays a very important role, because convex functions always have a structure like this.
+Every local minimum, it's global minimum.
+Here in this case, for convex option.
+Okay, now… So these are these, this is a general problem statement.
+That, we want to minimize the function f of x. Can you find x?
+Minimizing is to find out the smallest output.
+Can you select a proper input that will give you the… Smallest output.
+The whole idea is like this.
+Okay, now, here you can see in one dimension.
+Yes, for this function, I can find my X star to be 2.
+And… I want to find out see this urban F of X.
+X belongs to armies can you find the set of.
+Can you find a particular point X?
+Okay, that will minimize this function. That point is 2.
+Okay, so F of X star is F of 2, that is 1. But that minimum value is 1, but minimum occurs at 2.
+See the minimum occurs at 2 that's the base point best input and the minimum value is 1.
+Okay, so this base is X star.
+Similarly, we can have it for two dimensions or more than two dimensions.
+You can see here again, the same thing.
+The minimum, the best input value is 000.
+And the minimum value is also 0. Both are same in this case.
+Now, if you look at
+There are certain you know as I talked about local minima and global minima.
+So given any function, it has always some set of local minima and some set of global minima, not necessarily, but most of the time. So here, this particular part is the local minimum.
+Okay, it's a local number.
+and this is the global it's a minimum out of all minimums okay similarly you can have a maximum also and the condition for the local minimum that if you select any A
+Okay, so you see that at A, suppose you have a minimum, then you will always find F of A is always less than equal to
+For any neighborhood points B, you'll always find F of A is always less than or equal to F of B, or F of X, for all X which are sufficiently close to A.
+Similarly, for global minimum, a global minimum.
+For global minimum, it is always less than equal to pop X for all X. That's the difference.
+Okay, that's the whole idea.
+This is about global.
+Now, about global maximum, same condition we have. This is local maximum, this is global maximum.
+Now.
+If we look at the first derivative test here, just a moment.
+Okay.
+I think from here, the things will be a little difficult.
+So Ashish, Dr. Ashish, we can stop here, right?
+Yes, sir, yes, sir.
+Because, otherwise, student will… Not understand anything.
+So nobody has joined today, so we'll stop.
+Yeah, actually I'll get somehow I'll contact them.
+I'll try to know why actually no one joined, bro.
+Probably, no, no, in the announcement, I got a confusion. In the announcement, I said the class is at…
+Tomorrow at, 7, 6, 6.30.
+Ha ha.
+So probably.
+That that that is.
+What I think, but still, sir, in the.
+But but I have not seen any.
+Doctor Ashish, I have.
+In the live session, they are supposed to go through the live session links, and it was clearly mentioned 17th, yes.
+Correct, correct, correct, correct.
+Was,
+Yeah, yeah.
+Nobody joined, so by any means…
+New Officer of.
+Some things are unnecessary, unfortunately, I want to teach them in front of them, so we'll stop here.
+Sure, sir, sure, sure, sure. Okay.
