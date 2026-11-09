@@ -1,0 +1,311 @@
+Hello, everyone!
+Good evening.
+Welcome to the first session.
+with retail, I mean, E-Commerce.
+Okay?
+So, analytics with E-Commerce.
+So, I will be your instructor for the next… 13 sessions?
+And before we get started, let me give you a quick introduction about myself.
+I am Krish.
+And, full name is Krishnaydu Mondal, and I have almost 16 years of corporate experience, and I have worked
+in, different domains, be it E-Commerce, retail, FMCG, automobile industry, IT,
+And, and in terms of technology, yes, I worked with… I build different solutions, build different models using, machine learning, little bit of deep learning, little bit of gen AI.
+and visualizations, as well as, to have experience in, data warehousing as well. So, and, in this, in this session, in this wonderful journey, I'm going to, you know, help you
+Answer all your queries, and try to guide you, and… You know, take you through.
+And try to, give you suggestions, ideas, whenever is, and if possible. Okay, with that being said, whenever, if you have got any questions regarding anything, please feel free to, you know, raise your hand or interrupt me.
+And, I'll be happy to answer your questions.
+Okay?
+All good, guys?
+Okay, okay. Thank you, thank you. So,
+So, any of you got a chance to go through the videos? So, ideally, it's… yes, so this is what happens is, based on the analytics for E-Commerce, you… you will have
+you know, some… for each week, there are some pre-recorded sessions which are available. And on top of that, you will have these live sessions with me.
+And where I'm going to walk you through what is… what all you have learned, and and it's more or less related to question and answers, right? I'll try to answer your queries, I'll try to answer some concepts, explain some things which you…
+while going through the videos you faced, and, you know, and I'll try to answer each of them, and then move about. The… more or less, it should be, like, by the end of this course, you should be well-versed with what
+What E-Commerce is, what the… how does it function, and how the analytics happens at the back end.
+Okay, with that being said, so before we get started, anyone has got any questions? Anything? Any suggestions? Anyone?
+All good, guys. We just have… I mean, 10 people?
+Okay, so, guys, any time, if you have any questions, you can use the chat window, which is available to you.
+On the right-hand side of your account.
+Okay.
+So now, let me just quickly share my screen and let me know if my… Just a minute,
+If my screen is visible.
+Okay.
+Is my screen visible, guys?
+Okay, okay, okay. So, so, first thing that, that we are going to talk about is, first.
+what is… what is the meaning of this? What is… why do we… why we are interested, and what's the…
+Why we are so interested about E-Commerce and, you know, Why we are…
+We are more interested in, you know, E-Commerce, and why people are more and more interested in these kind of businesses, where investors are putting in their money.
+And, you know, even for people like us who are looking for jobs, they are going into this industry. And why it is booming so much, what's the reason behind it?
+Right.
+So, why… so we are going to, try and, you know, we are going to answer all these questions in, in, in using this.
+Like, for example.
+normally, if, like, if I talk about, say, maybe, if I go back Say, 10 years back.
+10 years, or maybe 20 years back, or… like, if I take a mission and go back to time zone… time, okay? And suppose I want to buy, buy a mobile, okay? And at that time, it was, if I said 10 years, there was, Nokia.
+If I want to buy a mobile, what I'll do, I will visit a shop.
+I will visit a shop, okay? So, I will visit a shop.
+I will look at the, you know, I will look at the prices, I will talk to the shopkeeper.
+And if my price is fine, I will buy it. Otherwise, I am going to visit to another shop, which is a little far away from my place, maybe 10 kilometers from there, and definitely I'll look at the compare prices, which is giving me cheaper, and I will buy from there. Maybe this one, or this one.
+Right? That's… that used to happen. And these are all offline shops.
+Looks like, what I did. So, person is…
+Visiting this store, okay, looking at the product that it is, they are looking at physically, looking at viewing it, asking for the features, which the shopkeeper tells, okay, this has got this thing, that thing, and also asking for the reviews based on the customers who have brought from them.
+The same, same product. And, you know, based on the recommendation of the shopkeeper, it's completely recommendation of the shopkeeper. The person is thinking of whether it needs to buy it or leave it.
+Okay, so that's… that's what is happening. But, come to the present. What is happening now?
+If I am thinking of buying a mobile.
+So, yes, I visit a website known as Amazon, I visit the Amazon website.
+Okay?
+I visit the Amazon website, I will check
+you know, mobile, which I'm looking for.
+Okay, and I will compare it, I'll look at the reviews, I'll look at the price, okay? And I even… I am more smart enough, I will look at the historic price of that product.
+When… when was the last time, what is the cheapest price it has offered? And either I add it to my wishlist, or I add it to my cart, or if I have already the funds, I will go ahead and buy it.
+Okay? So that's how nowadays I do shopping in, when I'm buying a mobile.
+Here, in the first case, what you used to do 10 years back, you have to rely completely on
+on reviews of the… or recommendation of the shopkeeper, or someone who is going along with you, who understands more about mobiles, and based on that, you are going to the purchase. But here, you are being, you know.
+you are understanding, or you are… you're getting influence based on the reviews, based on maybe YouTube videos, maybe some Google reviews, and based on that, you are making the purchase. So here, your audience is limited. Here, you have huge, huge audience that
+That you can… That you can interact, and that information that you can
+Okay, so that is what E-Commerce is all about.
+So, and why? My question… my next question is why you are so interested in E-Commerce? In E-Commerce, like, if I talk about
+If I talk about, if I compare.
+Offline versus online. Okay. So, in a particular day, in a particular day, so I'm… let's take 10 years back. In a particular day, number of people who are going to
+going to the shop, maybe, buying it, or just viewing it, maybe I put a number, say, 100.
+100 people are buying it, out of which, let's take conversion rate, that is 50%, or 500 people are going there and looking at the product, maybe 50, or maybe less. Let's take 40% of the people, 40% of 100, are really buying the product. But when I'm looking at
+Amazon, that's online.
+What is happening?
+if I say, if I receive, or a particular day, 100 people who are visiting here.
+100 people visit in a minute, because here, it depends on a specific location. Here, there is no location specific.
+I… it might be… it might be in a particular… there might be someone who is from
+From Jammu.
+who is visiting that website. There might be someone who is
+from, you know, in the southern part of India. There might be someone who might be in the western part of India, and all are browsing that same product.
+It might happen.
+And so here, you can have 100 people visiting your website in an hour.
+In 30 minutes, or even less.
+Right.
+So… So, here, that's… that's the… that's what E-Com…
+Zoom is all about. When I talk about a couple of things that I want to say about E-Commerce. E-Commerce, why people are more interested? Because you get… here, you get to interact with huge, huge amount of the customer base.
+the customers are huge. It's… here, you are just limited to where your shop is throughout the locality, and if you have some good friends, good, you know, good, good references, then definitely it becomes famous within that city, within that, you know.
+within that, specific location, and, you know, you… it becomes easier for you to sell the product. But here, in Amazon, here you have the entire, country to… where… not even country, entire world, where you get to, get access.
+To that, To that product, or to that website.
+Okay, now.
+So that's why you have got… if I say if you have got the number of customers, it's plenty in offline versus online, right? Now, let's talk a little bit more about the… so this is what? E-Commerce.
+what… so, when I talk about e-commerce, but nowadays there is… this is the time, so this is… if I talk about E-Commerce, there we can talk about Amazon, we can talk about Flipkart, we can talk about,
+What more?
+Anything else, guys? Any suggestions from you guys?
+Amazon, Flipkart.
+there was Strap Deal, but that is gone. Apart from that, there is Shopify, etc, etc, etc. And there, you name it, there are lots and lots of, you know, other websites which are available. Now, coming to…
+how these, these, companies, like, how these E-Commerce or other, other companies work. Now we are going to talk about…
+D2C business. What is D2C?
+Meaning, direct to customer.
+Okay, so there are two different types of models that we are going to talk about, D2C and Marketplace.
+So, all these E-Commerce, or E-Commer, or you have also about QCOM, QCOM, okay? Like, you know, delivery in 10 minutes, like, which is blanket.
+Delivery in, so you have,
+This is, this is, this is scheme that is Sweaky.
+there is, not a Swiggy, there is Blinket, there is Big Basket, there is, what more are there? There is,
+there is… so, what's more? There is Flipkart, Flipkart Minutes. Again, that is another 10 minutes. So, all these are part of QCOM.
+So before, we just had E-Comm, now we have Q-Com as well.
+Now, coming back here, when we talk about D2C, that is, direct-to-consumer.
+Like, for example, I am a… I am a… manufacturer.
+I am a manufacturer, I… and I'm… I am creating, say, certain products. I have my own brand.
+Okay.
+I have my own brand. So what I do is,
+I have… I have this… this is my factory, where I am creating certain products. So, normally, ideal or traditional way of… of, selling my product is, I… I… I… I go to a distributor, I have a distributor.
+Okay? And I pass the products to the distributor, okay? That distributor passes it to certain, some, maybe, some agents, or… and those, in terms…
+Falls under, or maybe directly you go into different shops, and from shops, you get to the customers.
+Okay, so in between.
+here, I have brought the product, say, I am… per product costing is, say, say, 70 rupees. When I'm selling, selling it to the distributor, the distributor is selling it, say, at 100 rupees. And when it comes to the shops, that is, the customer, they are paying
+say, 150 rupees. This is just an example. You see, the cost has doubled over… Over time.
+Right. So, what… so this was something where the brands… where these manufacturers were facing an issue, because they are just selling at 70 rupees, right? And if I say, yes, they are selling hugely, but the profit they are getting, it's very less.
+So, what they came about it, they created a model where they will directly Sell it to the customers.
+Okay, what, what, so this is called D2C, direct to consumer. That means they are just this distributor, these shops, they are just eliminating all these, so that the customer gets,
+Get the product at a much, much cheaper price, and manufacturers also get a fair amount of profit from these… from these trades.
+Right, so this is about D2C, where this manufacturer are directly selling the products to the customer. Like, for example,
+like, Domino's, not Domino's, like, you have those factory outlets, right? Those have those, those shops are…
+Like, if I talk about Lenscart. Lenscart is one example, where they are the own manufacturer, and they have their own shops where they are selling the products. And, you know, customers are directly responsible for getting that product. So this is one example of…
+D2C, yes. It is… it is helpful, yes, and the only… yes, these are all the good things. You get… you get more customers, you can directly get to, get to…
+speak with the customer, you directly get to interact with the customer, you directly get your own feedback regarding your products. If your products are not doing good, or if you need any improvement, you definitely are
+going to get first-hand information, first-hand feedback from those customers, right? So that's what… and also, oh…
+And also, what will happen if… if you are, and you have… you have to go after, you have to search for the consumer, search for the customer at your own cost. So, if your customers are dropping, you will be all responsible. If your customers is increasing, you will be only be solely responsible. So, finding out
+customers will be your headache, but in this… in this case, it was the job of the distributor or the retailer who used to find sellers for you. Okay, so this is one type of business that we have, which is called
+D2C. Now, there is another, another type of business model, which is called Marketplace.
+What happens in a marketplace? Marketplace…
+It's like, it's like, it's a, it's a, it's a platform.
+Okay, it's a platform.
+Where buyers, Where buyers and sellers come together and do the trades. Or, for example, you have Amazon.
+You have flip cut.
+You have Shopify, you have Myntra, you name it, and you have it. So what is happening here? Here, it's like… so the person who is owning this platform.
+owning this platform, like Amazon or Flipkart, they are getting… they are charging commission from these buyers, right? And it's… and what they are going to do, they are… they have to do nothing. They are just…
+publicize their websites. They have to come out with different ideas, like Great Indian Sale.
+Or, you know, the big billion sale. And, you know, you will see customers are customers or sellers.
+Okay, they are just coming in. What…
+And you… even… even here also, I'm, suppose this one, these manufacturers, they are directly, they can directly go here and sell the product, where these… these platforms are going to give you that…
+place where you can directly get in touch with the sellers and sell the products. So, what used to happen in D2C? In D2C, you and manufacturers used to, go ahead and find customers, but now.
+Just a minute.
+Okay, sorry about that. So, what used to happen? The manufacturer Manufacturer used to, directly…
+Used to go… was responsible for buying the customers for you. But now, going to a marketplace.
+Is my screen shared, guys?
+Hello? Is my screen shared, or it's gone?
+Yeah, can you see my screen again?
+Hello?
+Nice, yes, yes. Was it, was it, visible, previous time?
+Okay, okay, okay.
+Okay, thanks a lot, thanks a lot. So, what is happening? So, the manufacturer was responsible for, you know, for finding the customers for you, but now it becomes very easy. You are directly going to this marketplace, and you are getting the sellers. So, in short, these brands, yes.
+Your… in terms of profit, it is… it is… it is dropping a bit. Okay, in terms of profit, you are dropping a bit, but in terms of number of items that you are selling, it has gone up a lot.
+That means, in short, your profit, definitely, if I talk about… the total profit will definitely go up.
+and the number of products also, you have to go up. And what you have to do? You have to just pay a certain amount of commission in terms of…
+for these platforms, right? And for my customers, if I talk about in terms of customers, customers are getting the products at a cheaper place.
+So, and here, also, there are different, different, you know, business models. Like, there are some people who are,
+who are buying the products, like, for example, you go to China, and you buy the products at a bulk.
+Okay, and you become a seller in Amazon, and you are selling here. And further, you are selling in Amazon, and there are customers who are buying it. So, in short, you are earning profit here also.
+Okay, so here in this marketplace, anyone, anyone can become a seller, right? Anyone. You buy, you get the… either you, either you, you know, manufacture it, or you,
+or you are buying it or procuring it from somewhere else, at a cheaper, much cheaper place. And yes, you will… you'll definitely sell it in Amazon. So before, what used to happen in manufacturer, they are responsible for the brand or, you know, creating and building it, and then selling it. But here.
+you are on, here, anyone can have that… have that trade license. Here, you have to have those… all those trade licenses and all those formalities. Here, you do not need…
+Need to do anything.
+Okay.
+So, this is about, D2C and Marketplace. Next, next comes in, there are another type of model, which is subscription-based model. In subscription-based model, what happens is, this is one place where, you know, where
+You, you, compel, or you give out different offers, where customers subscribe to a particular product.
+on a periodic basis. And then you… what happens? You get the revenue at a timely manner. So that is also one of the type of models where you sell the products. You… you…
+Sell the products or not, based on subscriptions.
+Okay, so, like, for example, there is, one of the subscription-based models is, like, Netflix, where you have the monthly, you are selling the products, selling the, you know, selling the
+packages at a yearly, or even monthly, right? So that's how you have.
+Just give me a minute, let me look at…
+Yes, it is now, Shane. We cannot reply to your chat. Okay, chat is disabled. Sorry, guys. I didn't see this.
+Okay. Not now. Yes, it is now shared. SINDHU had, questions that… wait, let me… give me a minute.
+Let me… Reset to default, settings. Let me give you access.
+Chat, chat, chat, chat,
+Okay,
+I think, guys, please see if you can,
+Put your questions, anything, just type it.
+If you can use the… You can type your answers there.
+Chat is still disabled, oh, oh.
+Okay, I don't know how… how do I remove that, but let's… let's get started. If you have any questions, guys, please try to raise your hand, okay? And I will check it from time to time, and I will unmute you, and you can ask me the questions. As of now, any questions, anyone?
+And the session, or anything?
+Any questions, any doubts?
+No one?
+Okay, okay.
+Not as of now. Okay, great, great.
+How do I answer this live?
+This question live, answers live, answers live.
+Answer is like, okay, done, done, done. All questions are answered as of now.
+Okay, now, moving in. So, next thing is we are going to talk about is,
+We have talked about, so…
+we have spoken about D2C, we are talking about the subscription-based. Now, next is,
+You have to understand one more thing is, when we are…
+when we are studying the… this offline one, right? What… what information are you
+So, if I am a shopkeeper, okay, I am a shopkeeper, and when a customer is visiting, so…
+I become… so, what all information is being passed? What all information do I have?
+of that… of that customer. Definitely, I have lots of information, like, what… where is he from, what is he doing, because you have… you start with small talks. If this… if this customer is your known person, who you have been shopping for quite some time.
+you know that person, so you will have lots of information. If this person is visiting for the first time, or first couple of times, you will hardly notice.
+Right. It depends. So, here, you know, getting information of the customer becomes really, really painful and really difficult. So, offline models.
+doesn't… have much information. But when it comes to D2C or marketplace.
+In D2C, yes, you will try to get information as much as possible, but, you know, the customers are not ready to share that information, but you will have some information of the customers directly available to you. And, you know, when you see your, if a customer is… so.
+When your customer is not coming in for quite some time, you will try to follow up. But what happens in Marketplace?
+get information, lots and lots of information. How that happens? Let me just show you. So, like…
+You have a web page.
+It's my screen, okay. So, you have a…
+Okay, so you have this Amazon web page, it has got different, different product categories, and so and so. Okay, just give me a minute, guys.
+So, what happens is, when, when I am…
+you have got different, different, you have got different, different categories, different, different products, right? So whenever a user is coming in, coming into the website.
+Where the user is coming into the website. So what it does, what the user does is, he browses a couple of products.
+Selects, selects a couple of categories.
+Okay, tries to seize, try to compare a couple of things based on some of the recommendation that is coming up, okay? Adds, create, you know, adds some of the products to… to their wish list, adds something in their, in their cart, and then finally leaves.
+So, what is happening?
+A user is visiting, Just browsing, and then leaving.
+Right? So, when this person leaves, this person leaves their digital footprints behind.
+What do you mean by digital footprints? That means…
+digital footprints behind. That means The user, till the time.
+the person enters your website. You are keeping a track of each and everything, like when the person entered the website, when the person
+You know, what all categories the person is clicking on, what all things they are browsing on, which products they are, you know.
+Which products they are adding to their wishlist, adding to their cart.
+And if they are purchasing well and good, which products they bought, and how… and when they are leaving. So also, you will have… so all this information will be available at your disposal. And these… all this information becomes really, really… becomes helpful for
+For, you know, for different kind of analysis. Different kind of analysis for your business.
+So, you know how much time the person was staying in your website, which all categories they are browsing, okay?
+Which all products they added to their cart, which all products they are to their wishlist, which all products they have compared. And finally, if they have bought which all products they are
+Buying, or if they are putting any filter, what are the kinds of filter they are doing it?
+And if you have all these information at your disposal, right, so that you, whenever, so whenever this person comes for the next time, you will… you will be able to analyze, and you can suggest better, better products for
+this customer. So that… the customer… so, like, for example, I am browsing, I'm looking for, I do not have any specific thing in mind. I am looking for buying a mobile in the range of 15 to 20.
+Okay
+So, definitely, I… if I do not have any specific brand, then definitely you will type in what brand you're looking for, and you will get that result. But if I do not have any specific brand, I'll just try to randomly, here and there, and try to see the range, and definitely I can…
+my websites based on the history. So these are all digital footprint, these are all different metrics, these are all different information.
+which is trackable, right? Which is, like, it… so whenever I'm click… so there are clicks, there are impressions.
+There are time, there are, you know, people, the items that are putting in in the wish list, the items that you are putting in the cart, and then you are leaving, that is abandonment.
+Right? So all these information are there that you can analyze, and then whenever the person comes for the next time, you can definitely give that recommendation. So, what do you mean by recommendation? Recommendation is something like,
+like, when, whenever you are, when you're visiting a website, so you, you will see a couple of things are in, in the website, it comes up. This is something which, which, which, which, which you would like to, like, in your mail that you're going to…
+See, you might be interested, like, you will get that mail. These are some of the products which you might be interested. So those are some of the recommendation systems, and how do… how do… and these, at the back end.
+are being run by different machine learning and deep learning models. So, how do they understand which kind of recommendations are suitable for you, based on all when, if you, if you happen to
+visit this website once. I will get your data, and I will be able to recommend some things for you. So, all this information are available, so that's why.
+E-Commerce is booming in terms of data. In terms of data, E-Commerce is one of the industries where each second… so, like, for example, you are staying in this website, say, for just 5 minutes.
+So, for 5 minutes, you understand how much data you'll be generating. The number of clicks you are… number of categories you are clicking. That click, you know what is clicked? Clicking on the button, clicking on the link.
+so many line items, so many information are being passed. The more you click, the more data I'll be able to collect.
+So, this is… this is maximum, it is collected by Google Analytics. Google Analytics is one of the agency who collects your digital footprints, who collects your data, right? So, here also in Amazon, they have got different, Amazon has got different,
+You know, agencies who are responsible for collecting your entire data, and there will be… the more you…
+click, the more you stay in that website, the more data you will generate. So that's why E-Commerce is one of the industries where you have got huge, huge, huge amount of data that is being generated each minute, each second, each hour, and so on and so forth.
+Okay, and because you have so, so huge amount of customer base, you have so much amount of data, that's why the number of jobs
+number of jobs are huge. And one more reason is they, they offer huge, not huge, they, they, they offer good packages. Why? You know, the amount of work in E-Commerce compared to 70 in a service-based industry.
+is on the higher side. In E-Commerce, you get to work a little more extra.
+Because… because you can understand, the data is huge, your, it's like a revenue bucket for India, or for any other brands. Like, because here, in E-Commerce, then QCOM, you get the number of sales.
+Increases every time compared to offline sales, right?
+all these marketplaces are… generate huge revenue compared to their offline, and that's why, you know, people are more interested. They want people. So these… these companies, like Blinket, like Amazon, like Flipkart, they want people who are…
+you know, they can do wonders. If I give you this kind of data, you will do me an analysis within a couple of seconds, and, you know, you will give me some results, which definitely will be unput-downable by the customers. So that's why they hire some
+So, huge, talented people who can come in and be useful to them. So, that's why they don't shy away from paying you huge amount of money to their employees. And that's why, you know, E-Commerce is so booming, in terms of jobs, in terms of business, in terms of everything.
+Okay, so now, next we talk about, we have spoken about,
+events, user sensations. Events, user sensations. Session is how, you know, events… so the… so…
+So, so what… so the… the time, you are… so each… each session is like, you know, you are going into the website, logging in, you know, you're staying there, and then leaving. It's all about…
+The… these sessions that you are.
+That you are staying in.
+Okay, now, guys, now is the time for taking up questions. If you have any, anyone having any, any questions?
+Regarding anything, regarding some of the topics which I covered just now?
+Because apart from these data, so, like, for example, one more, one more thing I'm going to talk about, so let me see if you have got any questions for me.
+Any questions, guys? You can raise your hand, and I will, let you unmute yourself.
+Nothing.
+Okay, okay, fine. So,
+not only… not only about that, right? So… so here, it's not only about, as I said, it, it, when I have an E-Commerce data, and I, when I have an E-Commerce company, I am a seller, I get… have… I get to access to different, different ac… different, you know.
+Different matrices, or different…
+dashboard, different type of data which Amazon provides. And using that data, I can come up with different type of analysis. Like, for example, and even, even in E-Commerce, why it is so challenging to work, and why there are so many hours. Because…
+You understand, the number of…
+information. I'm… this is about digital information that I'm getting. Not only that, the sale. Normally, in… in your offline, it used to happen only during day, or it… if I say, from 9am to 9pm, your shop was open. But in E-Commerce.
+24 hours it is running. There might be someone who is based out of India, there might be someone who is shopping from the same website, from outside India.
+So, when people are sleeping in India, they are awake, and they are also shopping. So, your data collect… so, your data never stops, your number of orders doesn't stop. It keeps on going on and on.
+So that's why your data keeps on flowing from time to time, and there's no stoppage to that. So that's why there's a huge amount of data in terms of, you know, not only about customer data, but about your order history, sales, etc, etc. So that's why you have to… so those who are the sellers, or if I'm an e-commerce
+if I'm an E-Commerce business, I'm the platform owner, so I have to keep track of lots and lots of information.
+Like, how many sales I am doing? What is the sales? What is the sales that I'm getting for the last 6 hours? Why is my sale? Why, for a particular sales, why it is not increasing? Like, I will have different, different information that I'm going to get. Okay.
+So, all these information are at my disposal, and I can, you know, I can create different dashboards, different reports,
+And so on and so forth. And not only about that, like, for example, you can, you can also see, like, you have, you have launched a new product. Okay, you have launched a new product. And, you know, or you, you have made some enhancements to your webpage. So.
+oh, you have made some enhancements to your webpage, and you've made it live. So what happens is, you know, you are seeing, for the last 6… 6 hours, you are seeing, so…
+you are seeing people are going to the Add to Cart.
+But, they're not buying it. That means the conversion, 100%. So, what happens if I talk about the flow of how, how these,
+the… these different steps works is, you… you go to the website.
+you select the product, okay? You add the product to your cart, okay? You go to the payment gateway, and you make the payment, and you, finally, your purchase is done. This is, in short, how the process works. But.
+There might be… so you… you have made some enhance…
+to your webpage. So what is happening? You are adding the product to your cart, and when you're going to the payment gateway.
+it is failing. So that's why you will see… so, and each, each of these matrices, each of these, you know, points, checkpoints, you have got different ratios, different conversion rates. Conversion, that means how much it is being converted based on the total population.
+Okay, so if you see the, people who are going to the payment gateway, it's huge, but people who are successfully making the payment and people who are just leaving, that is called abandonment. Okay, so that is the abandonment rate, people who are quitting, okay, before the final
+making the payment. It's huge, has spiked up, that means it has risen. So.
+if you have a track of all this information, definitely you'll understand there is something going wrong with my payment gateway, and I need to
+make steps so that it becomes approachable, and it becomes… I need to fix it, and so that people can.
+you know, people will face no issues. What, or might be one more case is, I have, I have, I have created a new product, and my price is on the higher side. So why, people are…
+you know, people are people, right? They… if you have… give them internet, they will start comparing, right? You are checking at Amazon, the same product, they are checking at Flipkart. And if Flipkart, the rate is a little low, they will go ahead and buy it. So that is one more reason. So.
+what I'm saying is you, you get, you get, hell lot of, information, and if you can make sense from that information, you can make wonders with your business, or you can do,
+You can, if you are facing some issues, you can definitely highlight where the issue is, and you can fix it.
+Right,
+So, guys, any, any, any questions as you have?
+Because, if you have not, I will try to wrap up.
+And we catch again in the next… next week, with…
+It's a recap of Module 1, and I will also take any questions from today, if you have any.
+Guys, any, any questions?
+Any questions, any suggestions, anything?
+So, what these live sessions does is it's giving you a quick recap of what
+What the active… what the videos is all about, and here you get…
+You know, here you'll get to clear your doubts, and, Move ahead with it.
+So, what we have talked about, we have talked about why the E-Commerce is booming so much, what is E-Commerce, what is QCOM, what is D2C, what is Marketplace, okay, and how the customer journey, how the customer journey happens, one after the other, what more information can you get from
+From the digital footprints of the customers, and also, like, for example, you know, if a customer is visiting over and over again, if a customer… so you will have information of how… which customer is visiting, how many times, which customer hasn't visited for the last… for which… which duration.
+all these information will be available to you, and you can use that. Like, for example, there I'll take two situations. There is a particular customer who does very, very small shopping, and they are quite regular. And there is one customer
+who does huge amount of shopping. Like, for customer 1, your maximum budget is, say, $2,000. For the second customer, the maximum budget, it goes around $50,000 to $60,000, or maybe $70,000, right? But this one comes
+So, once in a year, the previous customer comes maybe once in a week, or twice in a week, so it's quite frequent.
+So, from… from all this information.
+you can definitely find out which of the customers are very valuable for us, so, which of the customers are not valuable at all, and which customers are, you know, are churning out. That means are not coming up for your, for your, in, in your websites, or in your, in your, in your…
+or not customer to your shop. So there is a term, there is an analysis, like RFM, recursive Frequency Monitoring.
+which you're going to learn in your subsequent module. So, there is another for churn, churn prediction. So, churn models, which is going to tell you which the customers have dropping out, which are not coming to their website. So, all from… you have information, you have,
+ocean of information which you have. And your job is just
+You know, try to figure out how we can use that information and get some… something out of it.
+Right? Some, to end, to get some meaningful insights, which becomes valuable for your business.
+So, with that being said, and if you have got any, no, any further questions, I will try to, you know, wrap up, wrap up the session.
+Okay?

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html data-userprofile-context="{&quot;hasProfileCardAccess&quot;:false}" data-mathjax-context="{&quot;renderLatex&quot;:true,&quot;outputScale&quot;:1.5}" data-logging-endpoint="/d2l/lp/logger/provision?sessionToken=NjYwNiw" lang="en-gb" data-lang-default="en-gb" data-intl-overrides="{&quot;number&quot;:{&quot;patterns&quot;:{&quot;decimal&quot;:{&quot;negativePattern&quot;:&quot;-{number}&quot;},&quot;percent&quot;:{&quot;positivePattern&quot;:&quot;{number} %&quot;,&quot;negativePattern&quot;:&quot;-{number} %&quot;}},&quot;symbols&quot;:{&quot;decimal&quot;:&quot;.&quot;,&quot;group&quot;:&quot;,&quot;,&quot;negative&quot;:&quot;-&quot;,&quot;percent&quot;:&quot;%&quot;},&quot;groupSize&quot;:[3]},&quot;date&quot;:{&quot;hour24&quot;:false,&quot;calendar&quot;:{&quot;firstDayOfWeek&quot;:0,&quot;dayPeriods&quot;:{&quot;am&quot;:&quot;AM&quot;,&quot;pm&quot;:&quot;PM&quot;},&quot;months&quot;:{&quot;short&quot;:[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;,&quot;Sep&quot;,&quot;Oct&quot;,&quot;Nov&quot;,&quot;Dec&quot;,&quot;&quot;],&quot;long&quot;:[&quot;January&quot;,&quot;February&quot;,&quot;March&quot;,&quot;April&quot;,&quot;May&quot;,&quot;June&quot;,&quot;July&quot;,&quot;August&quot;,&quot;September&quot;,&quot;October&quot;,&quot;November&quot;,&quot;December&quot;,&quot;&quot;]},&quot;days&quot;:{&quot;short&quot;:[&quot;Sun&quot;,&quot;Mon&quot;,&quot;Tue&quot;,&quot;Wed&quot;,&quot;Thu&quot;,&quot;Fri&quot;,&quot;Sat&quot;]}},&quot;formats&quot;:{&quot;dateFormats&quot;:{&quot;short&quot;:&quot;dd/MM/yyyy&quot;},&quot;timeFormats&quot;:{&quot;short&quot;:&quot;h:mm tt&quot;,&quot;medium&quot;:&quot;h:mm tt&quot;,&quot;full&quot;:&quot;h:mm tt ZZZ&quot;}}}}" data-oslo="{&quot;batch&quot;:&quot;/d2l/api/oslo/batch?languageId=11&quot;,&quot;collection&quot;:&quot;/d2l/api/oslo/collection?languageId=11&quot;,&quot;version&quot;:&quot;W/\&quot;20.26.10.26259.0\&quot;&quot;}" data-timezone="{&quot;name&quot;:&quot;India - Kolkata&quot;,&quot;identifier&quot;:&quot;Asia/Calcutta&quot;}" data-terminology="{&quot;outcomes&quot;:&quot;outcomes&quot;,&quot;educator&quot;:&quot;educator&quot;,&quot;moduleHierarchy&quot;:&quot;unit&quot;}" data-app-version="20.26.10" dir="ltr" data-telemetry-endpoint="https://prd.ap-south-1.telemetryservice.brightspace.com/api/events/" data-cdn="https://s.brightspace.com/apps/brightspace/20.26.10.26259/" data-global-context="{&quot;orgUnitId&quot;:&quot;6606&quot;,&quot;orgId&quot;:&quot;6606&quot;,&quot;userId&quot;:null}" data-he-context="{&quot;activeOrgEnrollment&quot;:false,&quot;applySandboxing&quot;:false,&quot;bcsansFontAllowed&quot;:false,&quot;contentStyler&quot;:false,&quot;contentStylerCssOverride&quot;:&quot;&quot;,&quot;enableLmsPathChecking&quot;:true,&quot;generativeAIEndpoint&quot;:&quot;&quot;,&quot;h5pContext&quot;:null,&quot;insertElement&quot;:false,&quot;insertPractice&quot;:false,&quot;layouts&quot;:false,&quot;mathRenderScale&quot;:1.5,&quot;maxFileSize&quot;:2147483648,&quot;mentions&quot;:true,&quot;orgUnitId&quot;:&quot;6606&quot;,&quot;orgUnitPath&quot;:&quot;/content/&quot;,&quot;pasteFormatting&quot;:&quot;merge&quot;,&quot;sourceEditable&quot;:false,&quot;uploadFiles&quot;:false,&quot;useNewTinyMCEVersion&quot;:true,&quot;viewFiles&quot;:false,&quot;wmodeOpaque&quot;:true}" data-css-vars="{&quot;--d2l-branding-primary-color&quot;:&quot;#ff812c&quot;}">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - BITS Pilani Digital</title>
+<link rel="preconnect" href="https://s.brightspace.com/lib/bsi/2026.10.234/" crossorigin>
+<link rel="dns-prefetch" href="https://s.brightspace.com/lib/bsi/2026.10.234/">
+<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.10.234/unbundled/bsi-unbundled.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.10.234/unbundled/navigation.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.10.234/unbundled/navigation-main-header.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.10.234/unbundled/navigation-link-image.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.10.234/unbundled/html-block.js" as="script" crossorigin="anonymous">
+<script>
+(function(){var client;var errors = [];window.addEventListener('d2l-logging-loaded', function(e) {client = e.detail.createClient('uncaught-errors', { shouldThrottle: true });if (errors.length > 0) {client.legacyErrorBatch(errors);}});var handleError = function(data) {if (!data.message) return;if (data.error && data.error.stack && (data.error.stack.includes('/content/') || data.error.stack.includes('/shared/'))) return;if (client) {client.legacyError(data.message, data.source, data.lineno, data.colno, data.error);} else {errors.push(data);}};window.addEventListener('error', function(e) {handleError({ message: e.message, source: e.source, lineno: e.lineno, colno: e.colno, error: e.error });});window.addEventListener('unhandledrejection', function(e) {handleError({message: e.reason ? (e.reason.message ? e.reason.message : e.reason) : '',error: e.reason});});})();
+(function(){try { localStorage.setItem('XSRF.Token','');} catch(e) {}})();
+(function(){if(window['FontFace'] === undefined) { window.d2lFontsLoaded = true; return; }window.d2lFontsLoaded = false;Promise.all(['400','700'].map(function(w) {return new FontFace('Lato','url(https://s.brightspace.com/lib/fonts/0.6.1/assets/Lato-' + w + '.woff2) format("woff2")', {style:'normal',weight: w}).load();})).then(function() {window.d2lFontsLoaded = true;if(window['D2L'] && window.D2L['FontsLoaded']) { window.D2L.FontsLoaded(); }});})();
+(function(){
+D2L = window.D2L || {}; D2L.LP = D2L.LP || {}; D2L.LP.Web = D2L.LP.Web || {}; D2L.LP.Web.UI = D2L.LP.Web.UI || {};
+D2L.LP.Web.UI.Flags = {
+{"award-enable-copy-workflow":false,"awards-allow-unenroll-bake":true,"awards-ui-fetch-from-orgunit":true,"create-space-experimental-brightspace-object-types":false,"MAV-5508-welcome-widget-create-new":true,"ipsis-sourcesystem-migration":true,"ipsis-provider-oldstandardcsv":false,"ipsis-oneroster-csv-powerschool":false,"ipsis-oneroster-full-sync-implicit-unenrollments":false,"ipsis-esb-lis":false,"hyrl-611-ilp-user-sourcedid-update":true,"hyrl-4009-filter-change-force-full-sync":false,"hyrl-5142-department-location":false,"f17778-oneroster-psur":false,"f19471-gg4l-oneroster-grades-passback":true,"hyrl-1999-oneroster-rest-1p2":false,"hyrl-4029-academic-session-merge":false,"hyrl-2962-cancel-batch":false,"hyrl-3638-user-default-inactive-option":true,"hyrl-3205-psur-firstName-fallback":false,"hyrl-3587-hylia-data-pond":false,"F18735-lti-special-access-ui-feature-flag":false,"F16988-add-to-calendar":true,"advanced-assessments-groups":true,"nim-5386-modify-activity-display-return-to":true,"nim-5395-update-org-unit-id-on-activity-iteration":true,"nim-5243-consolidate-evaluator-and-publisher-patch-actions":true,"nim-5812-modify-aa-face-save-order":true,"nim-5846-lock-publisher-rule-selection-when-submissions-received":true,"nim-5757-aa-learner-candidates-route-improvements":false,"nim-6384-save-actions-complete-after-annotations-processed":true,"PHNX-3264-unavailable-content-visibility-setting":true,"F19162-enable-content-face-releaseconditions":true,"F21912-enable-content-face-competencies":true,"F19163-enable-content-face-standards":true,"IDCS-15-edit-content-file-descriptions":true,"PHNX-1554-enable-refactored-completion-summary":true,"PHNX-2629-access-unlimited-depth":true,"IDCS-283-edit-lti-descriptions":true,"EP-1169-use-content-search":true,"EP-1432-enable-description-scrolling-hovering":true,"EP-1580-enable-url-updating-in-lessons-next-prev":true,"PHNX-2357-user-guided-grade-associations":true,"PHNX-2649-lessons-course-overview":true,"PHNX-3198-respect-availability-window":true,"PHNX-3065-lessons-quicklink-current-window-navigation":true,"PHNX-2766-lazy-load-content":true,"PHNX-2988-lessons-full-date-tooltip-and-aria":true,"PHNX-3063-support-availability-types":true,"PHNX-4040-improved-file-topic-uploader":true,"PHNX-3190-valence-get-user-topic-completions-ignores-classlist-presence":true,"PHNX-4337-lti-multigrades-link-existing-button-fix":false,"EP-1454-enable-module-level-outcome-alignment":true,"PHNX-5006-enable-immersive-lessons-content-view":true,"PHNX-5314-lessons-live-polling":true,"usa-1243-discussions-due-date":true,"FED-3067-Annual-Consumption":true,"cpd-add-record-from-award":true,"fed-54-in-progress":false,"FED-4668-lift-outcomes":true,"FED-4649-content-gen-import-expand":true,"FED-4285-content-templates":true,"LUMI-275-full-screen":true,"LUMI-276-split-view":true,"HAI-1593-content-picker-quiz":true,"HAI-1591-content-picker-ideas":true,"HAI-1592-content-picker-summary":true,"HAI-1821-content-picker-lss":true,"HAI-596-Interventions":true,"FED-6732-quiz-custom-instructions":true,"FED-6876-idea-custom-instructions":true,"rpc-recalculate-all-users-fix":true,"AUT-4438-Grades-Recalc-Restrict-Users":true,"shield-15581-dev-add-bulk-edit-group-names-ui":true,"shield-16289-dev-add-groups-enrollment-pages":false,"oad-include-asn":true,"EP-1443-enable-lightcast-skills":false,"outcomes-set-course-dataset":true,"outcomes-set-org-dataset":true,"EP-1420-enable-createspace-picker":true,"outcome-sets-scales":true,"outcomes-coverage-grid":true,"de44716-lti-iframe-resize-limit":false,"lti-apps":true,"shield-14553-add-semester-department-filters":true,"employee-training-my-courses-page":false,"BORG-5429-Hotspot-Question-Type":false,"BORG-6738-shared-question-components":false,"BORG-7129-true-false-universal-question":false,"PHNX-5035-smart-curriculum-mobile-dvh-viewport-fix":true,"FED-9107-learner-mode-config-choose-content":false,"FED-2493-Docs-PDF":true,"HAI-2170-study-notebook":false,"HAI-3146-modify-knowledge-checks":false,"HAI-3607-lumi-tutor":false,"chrome-unload-deprecation-opt-out":true,"MAV-6565-lms-context-provider-host-head-filter":true,"MAV-5203-createspace-h5p-library":true,"MAV-6452-createspace-discard-changes-dialog":true,"GAUD-8852-use-input-generated-styles":true,"GAUD-8849-Use-input-radio-generated-styles":true,"GAUD-8351-dialog-resize-telemetry":true,"PHNX-3234-dialog-alignment-fix":true,"shield-16276-add-accessible-tooltip-for-edit-in-place":true,"d2l-offscreen-sizeless":true,"GAUD-9564-accessible-grid-navigation-with-up-down-keys":true,"GAUD-8299-core-tabs-use-new-structure":true,"GAUD-10260-get-focusable-fix":true,"GAUD-10337-use-alert-toast-popover":true,"GAUD-10409-prefer-native-general-dialogs":false,"GAUD-10336-prefer-native-fullscreen-dialogs":false,"GAUD-10581-use-intersection-observer":true,"button-toggle-no-change-event-on-prop-update":true,"install-wizard-dialog":true,"unique-reoffer-code":true,"MAV-5974-hwep-delete-config-button":false,"fix-navbar-flicker":true,"PHNX-4309-iframe-modal-dialog-zindex-fix":true,"AUT-4452-Grades-Formula-Special-Characters-HTML-Fix":false},
+function(feature, defaultValue) {
+const featureValue = D2L.LP.Web.UI.Flags.ListedFlags[feature];
+return featureValue !== undefined ? featureValue : defaultValue;
+}
+};
+})();
+</script>
+<meta name="robots" content="noindex" />
+<link rel="icon" href="/d2l/lp/web/faviconView?variant=0&amp;version=1" />
+<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/lib/bsi/2026.10.234/bsi.css" />
+<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/lib/reset-css/1.1.0/reset.css" />
+<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/apps/brightspace/20.26.10.26259/web-packages/D2L.LP.Web.Desktop.css" />
+<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/apps/brightspace/20.26.10.26259/web-packages/D2L.LP.Auth.Web.Desktop.css" />
+<style>
+html { font-size:20px; }
+#ff812c; }
+.d2l_1_0_23 {margin-bottom:30px;}
+.d2l-button-sso-1[primary] {
+#006FBF;
+#FFFFFF;
+hidden;
+normal;
+break-word;
+}
+.d2l-button-sso-1[primary]:hover,
+.d2l-button-sso-1[primary]:focus {
+#005089;
+}
+.d2l_1_1_536 {margin:20px 0px;}
+.d2l_1_3_270 {margin:20px 0px 0px 0px;}
+.d2l_1_4_447 {margin:10px 0px;}
+.d2l_1_8_610 {padding:5px;}
+.d2l_1_9_150 {margin-bottom:1em;}
+.d2l_1_10_50 {background-color:#fefcef;}
+.d2l_1_11_404 {border:1px solid #faecbb;border-radius:4px;}
+.d2l_1_12_821 {background-position:left top;}
+.d2l_1_13_211 {background-image:url('/d2l/img/0/SystemCheck.Main.itemWarning.png?v=20.26.10.26259');background-size: 18px;}
+.d2l_1_14_293 {padding-left:29px;}
+.d2l_1_15_152 {min-height:16px;}
+.d2l_1_16_98 {margin-top:5px;}
+.d2l_1_17_953 {float:right;}
+</style>
+<script>(function() {})();</script></head>
+<body class="d2l-body d2l-typography vui-typography daylight d2l-body-unresolved d2l-body-flex">
+<div class="d2l-body-main-wrapper"><div class="d2l-navigation-s-no-login d2l-navigation-s-main-no-links"><d2l-labs-navigation><d2l-labs-navigation-main-header><div class="d2l-labs-navigation-header-left" slot="left"><d2l-labs-navigation-link-image class="d2l-navigation-s-logo" src="/d2l/lp/navbars/6606/theme/viewimage/15587/view?v=20.26.10.26259" text="BITS Pilani Digital" tooltip-offset="0"></d2l-labs-navigation-link-image></div></d2l-labs-navigation-main-header></d2l-labs-navigation></div><div class="d2l-page-main d2l-max-width" style="background-color: transparent;"><div class="d2l-page-main-padding"><h1 class="d2l-login-portal-heading d2l-page-title d2l-heading vui-heading-2" style="color: #565A5C;">Welcome to LUMEN</h1><div class="d2l_1_0_23"><d2l-html-block html="&lt;p>The Learning Management System of BITS Pilani Digital&lt;/p>"></d2l-html-block></div><div class="d2l-login-portal-flex"><div><div class="d2l-login-portal-login-container"><div class="d2l-login-portal-login d2l-login-portal-bordered"><div class="d2l_1_1_536">
+<button type="button" primary class="d2l-button d2l-button-sso-1" id="d2l_1_2_114" style="width:100%;" data-onclick="D2L.O(&quot;__g1&quot;,0)();">Login using BITS Mail</button></div>
+<div>
+<div class="d2l-sep d2l-sep-s d2l-sep-t" aria-hidden="true"><hr /></div>
+</div>
+<div class="d2l_1_3_270">
+<div class="d2l-messagearea" id="d2l_messagearea"></div></div>
+<form data-method="post" data-scope="" data-location="/d2l/lp/auth/login/login.d2l" class="d2l-form d2l-form-primary" id="formId" onsubmit="return false;">
+<input type="hidden" name="target" id="target" value="/content/enforced/7204-T1-26_MDSDF412/Optimization Methods for Analytics2.vtt" />
+<input type="hidden" name="loginPath" id="loginPath" value="/d2l/login" />
+<div class="d2l_1_4_447">
+<div class="d2l-fieldgroup">
+<div class="vui-field-row">
+<label for="userName" class="d2l-field d2l-label d2l-label-required">Username</label>
+<span class="d2l-validator" id="d2l_1_5_89"></span>
+<input type="text" class="d2l-edit d2l-edit-required" id="userName" name="userName" autocomplete="username" autocorrect="off" autocapitalize="off" />
+</div>
+<div class="vui-field-row">
+<label for="password" class="d2l-field d2l-label d2l-label-required">Password</label>
+<span class="d2l-validator" id="d2l_1_6_843"></span>
+<input type="password" class="d2l-edit d2l-edit-required" id="password" name="password" autocomplete="off" />
+</div>
+</div>
+<button type="button" class="d2l-button" id="d2l_1_7_522" data-onclick="D2L.O(&quot;__g1&quot;,1)();">Log In</button></div>
+</form>
+</div><div class="d2l-systemcheck" style="margin-bottom:1em;">
+<noscript><div class="d2l_1_8_610 d2l_1_9_150 d2l_1_10_50 d2l_1_11_404">
+<div class="d2l-container-icon d2l_1_12_821 d2l_1_13_211 d2l_1_12_821 d2l_1_14_293 d2l_1_15_152">
+<div class="d2l-textblock d2l-textblock-strong">Warning</div>
+</div>
+<div class="d2l-htmlblock-untrusted d2l-htmlblock-wc d2l_1_16_98"><d2l-html-block no-deferred-rendering><div>Either your browser does not support <strong>JavaScript</strong> or it has been disabled through your browser&#39;s settings. The system requires a JavaScript enabled browser, and will be unable to perform the other system checks without JavaScript support.</div></d2l-html-block></div><a class="d2l-link d2l_1_17_953" aria-label="" href="/d2l/systemCheck" title="Learn more about: JavaScript">Learn more...</a>
+<div class="d2l-clear"></div>
+</div>
+</noscript>
+</div>
+</div><div class="d2l-login-portal-image d2l-login-portal-margin"><img class="d2l-image" src="/d2l/lp/login/picture?fileSystemType=Database&amp;fileId=17789&amp;v=20.26.10.26259" alt="" />
+</div><div class="d2l-clear"></div>
+</div></div></div></div><script src="https://s.brightspace.com/lib/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://s.brightspace.com/lib/jqueryui/1.13.2/jquery-ui.min.js"></script>
+<script src="https://s.brightspace.com/lib/bsi/2026.10.234/bsi.js"></script>
+<script>
+window.__elasticRumOnload = function() {if (!window['elasticApm']) return;var apm = elasticApm.init({serviceName: 'LMS',serverUrl: 'https://d2l-elasticrum.apm.us-east-1.aws.cloud.es.io/',transactionSampleRate: 0.1,disableInstrumentations: ['xmlhttprequest','fetch','eventtarget','history']});apm.addLabels({ "orgName": "bitsdigital"});apm.addLabels({ "instanceName": "bitsdigital"});};
+</script>
+<script async="async" onload="window.__elasticRumOnload()" src="https://s.brightspace.com/lib/elastic-apm-rum/5.14.0/elastic-apm-rum.umd.min.js"></script>
+<script src="https://s.brightspace.com/apps/brightspace/20.26.10.26259/web-packages/D2L.LP.Web.Desktop.js"></script>
+</div><footer class="d2l-footer d2l-footer-background-color d2l-footer-top-spacing d2l-footer-top-inner-view"><div class="d2l_1_18_70 d2l-login-language-selector">
+<d2l-dropdown><d2l-button-subtle icon="tier1:browser" class="d2l-dropdown-opener" text="English (United Kingdom)" description="English (United Kingdom) – Select a locale and language"></d2l-button-subtle>
+<d2l-dropdown-menu><d2l-menu label="English (United Kingdom) – Select a locale and language" class="d2l-menu-mvc">
+<d2l-menu-item text="English (United States)" id="d2l_1_19_577"></d2l-menu-item>
+<d2l-menu-item text="English (United Kingdom)" id="d2l_1_20_434"></d2l-menu-item>
+</d2l-menu>
+</d2l-dropdown-menu></d2l-dropdown>
+</div>
+<div class="d2l-footer-default-content"><p>Powered by <span class="d2l-offscreen">D2L Brightspace</span></p><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212 17" fill="#6e7477"><g clip-path="url(#clip0_12_484)"><path d="M66.4982 8.47672C67.9121 7.76855 68.6563 6.50425 68.6563 4.79585C68.6563 2.0192 66.5291 0.293457 63.1045 0.293457H56.1851V16.7133H63.2224C66.786 16.7133 68.9133 15.0223 68.9133 12.1883C68.9119 10.3785 68.0792 9.10086 66.4982 8.47672ZM59.5001 9.87171H63.1045C64.6658 9.87171 65.5266 10.5719 65.5266 11.8415C65.5266 13.1885 64.6841 13.8993 63.1045 13.8993H59.5001V9.87171ZM62.9191 7.16307H59.5001V3.10745H62.8489C63.954 3.10745 65.271 3.44887 65.271 5.07725C65.271 6.4189 64.4356 7.15774 62.9191 7.15774V7.16307Z" /><path d="M84.1186 5.47331C84.1186 2.22588 81.7738 0.288086 77.8465 0.288086H71.2051V16.7133H74.5216V10.7025H77.8732L80.7474 16.7133H84.3784L81.1181 10.029C83.081 9.20618 84.1186 7.63515 84.1186 5.47331ZM74.5216 3.12875H77.8465C79.6367 3.12875 80.6631 3.98362 80.6631 5.47331C80.6631 7.00567 79.6367 7.88321 77.8465 7.88321H74.5216V3.12875Z" /><path d="M89.982 0.286621H86.6655V16.7132H89.982V0.286621Z" /><path d="M100.365 10.153H105.486C105.441 12.5669 103.746 14.0045 100.933 14.0045C97.7635 14.0045 95.7978 11.9441 95.7978 8.62195C95.7978 5.15447 97.7551 2.99663 100.909 2.99663C103.051 2.99663 104.559 3.96352 105.028 5.64792L105.062 5.77061H108.526L108.498 5.58257C108.005 2.25779 104.988 0.0239258 100.978 0.0239258C98.4501 0.0239258 96.2766 0.854788 94.7082 2.42449C93.1398 3.99419 92.3423 6.09469 92.3423 8.55927C92.3423 11.0238 93.137 13.127 94.6408 14.6474C96.1446 16.1677 98.1904 16.9599 100.583 16.9599C102.653 16.9599 104.526 16.2651 105.597 15.1248L105.756 16.7172H108.593V7.33365H100.365V10.153Z" /><path d="M121.852 6.93618H114.691V0.286621H111.375V16.7132H114.691V9.88755H121.852V16.7132H125.169V0.286621H121.852V6.93618Z" /><path d="M127.022 3.21664H131.983V16.7132H135.298V3.21664H140.259V0.286621H127.022V3.21664Z" /><path d="M149.045 7.33628L146.378 6.78682C145.027 6.49208 144.451 5.91461 144.451 4.85703C144.451 3.61407 145.538 2.84322 147.289 2.84322C148.881 2.84322 149.832 3.5874 149.896 4.88637L149.905 5.04507H153.225V4.87437C153.13 1.86833 150.878 0.0012207 147.348 0.0012207C143.697 0.0012207 141.147 2.0337 141.147 4.94505C141.147 7.46431 142.71 9.11937 145.664 9.73018L148.355 10.3036C149.639 10.5704 150.18 11.1185 150.18 12.1441C150.18 13.3737 149.013 14.1365 147.133 14.1365C145.333 14.1365 144.246 13.383 144.225 12.1201V11.956H140.907V12.1267C140.979 15.0874 143.422 16.9999 147.132 16.9999C150.997 16.9999 153.495 14.9994 153.495 11.9027C153.495 9.44478 152.04 7.95109 149.045 7.33628Z" /><path d="M162.633 0.288086H155.753V16.7133H159.069V11.1653H162.633C166.093 11.1653 168.418 8.97546 168.418 5.71603C168.418 2.4566 166.098 0.288086 162.633 0.288086ZM159.076 3.12875H162.055C163.929 3.12875 164.962 4.03963 164.962 5.69336C164.962 7.38976 163.914 8.32464 162.007 8.32464H159.076V3.12875Z" /><path d="M195.457 11.1292C194.916 12.8629 193.21 13.9379 191.011 13.9379C188.019 13.9379 186.086 11.804 186.086 8.48992C186.086 5.14246 187.973 3.06331 191.011 3.06331C193.183 3.06331 194.809 4.13023 195.364 5.91598L195.402 6.03601H198.859L198.826 5.84396C198.234 2.30846 195.191 0.0239258 191.074 0.0239258C186.02 0.0239258 182.625 3.43406 182.625 8.51126C182.625 13.6551 185.886 16.9772 190.935 16.9772C195.021 16.9772 198.211 14.658 198.873 11.2052L198.909 11.0105H195.489L195.457 11.1292Z" /><path d="M212 3.21664V0.286621H201.128V16.7132H212V13.7831H204.443V9.84354H211.212V7.02421H204.443V3.21664H212Z" /><path d="M171.747 13.1084H168.358L166.987 16.7132H170.422L171.747 13.1084Z" /><path d="M179.187 16.7132H182.669L181.299 13.1084H177.862L179.187 16.7132Z" /><path d="M178.07 10.5557C178.731 10.1692 179.317 9.67797 179.804 9.1034L176.459 0.309326H173.196L169.905 8.9647C170.435 9.68813 171.11 10.3053 171.892 10.7811C171.306 9.51549 171.751 7.80176 172.487 6.63748C172.665 7.40433 173.025 7.75508 173.44 8.01781C173.159 7.66706 172.94 7.1376 173.019 6.37875C173.15 5.1438 174.446 4.17424 175.663 3.77548C175.19 4.84239 175.82 5.35451 176.084 6.13736C176.553 5.83715 177.061 5.59555 177.595 5.41853C176.72 7.39899 178.71 7.92045 178.234 10.0289C178.197 10.209 178.142 10.3854 178.07 10.5557Z" /><path d="M-0.000121416 15.6864H1.63004L2.43319 14.6595V2.34326L1.63004 1.31635H-0.000121416V0.290771H7.76878C13.7826 0.290771 16.4377 3.52887 16.4377 8.31666C16.4377 13.1045 12.297 16.7186 7.71964 16.7186H-0.00292969L-0.000121416 15.6864ZM8.08471 15.301C11.47 15.301 12.5905 13.2658 12.5905 9.12618C12.5905 4.77716 10.7876 1.31635 7.64663 1.31635C7.20881 1.31184 6.77309 1.37444 6.35626 1.50172C6.20617 1.55448 6.05984 1.6164 5.91818 1.6871V14.6595C6.42225 15.1449 7.42759 15.301 8.08471 15.301Z" /><path d="M28.1985 9.53424L27.3181 13.6352H17.9106V12.5883C17.9106 12.5883 19.3147 11.1786 19.3456 11.1466C22.276 8.2126 24.5787 5.88005 24.5787 3.46215C24.5787 1.9618 23.9609 1.02691 22.8812 1.02691C21.8014 1.02691 21.1345 2.06582 21.1345 3.62352V4.4117H18.2912C18.2235 4.16672 18.1914 3.9141 18.1957 3.66086C18.1957 1.23496 20.6908 0 23.037 0C25.3538 0 27.6902 1.05358 27.6902 3.56884C27.6783 4.19317 27.5164 4.80668 27.217 5.3626C26.8948 5.96398 26.4922 6.52338 26.0193 7.02699C25.424 7.69381 24.1294 8.72605 22.9837 9.58759C22.0682 10.2784 21.2468 10.8599 20.9561 11.0666H26.5108L27.9935 9.53424H28.1985Z" /><path d="M43.7477 11.5814L42.6455 16.7133H29.7896V15.6837H31.4127L32.2257 14.6581V2.34324L31.4127 1.31766H29.7896V0.288086H38.5806V1.31766H36.4618L35.705 2.34324V15.1783H39.7896L43.3434 11.5814H43.7477Z" /><path d="M27.6259 15.1743V15.8118L26.681 16.7093H17.376V16.0785L18.3209 15.181L27.6259 15.1743Z" /></g><defs><clipPath id="clip0_12_484"><rect width="212" height="17" fill="white"/></clipPath></defs></svg></div></footer><script src="/d2l/portal/js/desktop?v=20.26.10.26259"></script>
+<script>
+D2L.LP.Web.UI.Events.OnInit.AddListener( function() {
+D2L.O("__g1",2)();
+D2L.O("__g1",3)();
+D2L.O("__g1",4)();
+D2L.O("__g1",5)();
+D2L.O("__g1",6)();
+D2L.O("__g1",7)();
+} );
+D2L.LP.Web.UI.Events.OnLoad.AddListener( function() {
+D2L.O("__g1",8)();
+} );
+D2L.OR={
+"__g1":{"0":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Navigate\",\"P\":[{\"_type\":\"url\",\"Url\":\"https:\/\/lumen.bitspilani-digital.edu.in\/d2l\/lp\/auth\/saml\/initiate-login?entityId=https%3a%2f%2faccounts.google.com%2fo%2fsaml2%3fidpid%3dC042gmm8v&target=%2fcontent%2fenforced%2f7204-T1-26_MDSDF412%2fOptimization+Methods+for+Analytics2.vtt\"}]}",
+"1":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Form.SubmitByButton\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_7_522\"}]}",
+"2":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.Authentication.Xsrf.Init\",\"P\":[\"d2l_referrer\",\"\",0]}",
+"3":"{\"_type\":\"func\",\"N\":\"D2L.LP.ActivityBar.Init\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/activityFeed\/checkForNewAlerts\"},120]}",
+"4":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.MessageArea.Init\",\"P\":[\"d2l_messagearea\",{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/validation\/errors\"}]}",
+"5":"{\"_type\":\"func\",\"N\":\"D2L.LP.Globalization.Locale.Init\",\"P\":[{\"_type\":\"anon\",\"DecimalSeparator\":\".\",\"GroupSeparator\":\",\",\"NumberNegativePattern\":1,\"PercentPositivePattern\":0,\"PercentNegativePattern\":0,\"PercentSymbol\":\"%\",\"NegativeSign\":\"-\",\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"UseNativeDigits\":false,\"GroupSizes\":[3],\"IntegerRegex\":\"^([\\\\(-]*(([01234567890123456789]?[01234567890123456789]?([01234567890123456789](,[01234567890123456789][01234567890123456789][01234567890123456789])*)?))[\\\\)-]*)$|^([\\\\(-]*[01234567890123456789]+[\\\\)-]*)$\",\"DecimalRegex\":\"^([\\\\(-]*(([01234567890123456789]?[01234567890123456789]?([01234567890123456789](,[01234567890123456789][01234567890123456789][01234567890123456789])*)))(\\\\.[01234567890123456789]+)?[\\\\)-]*)$|^([\\\\(-]*[01234567890123456789]*\\\\.?[01234567890123456789]+[\\\\)-]*)$\"},{\"_type\":\"anon\",\"InputDateFormat\":\"dd\/MM\/yyyy\",\"Is24HourClock\":false,\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"UseNativeDigits\":false,\"TimeFormat\":\"h:mm tt\",\"AmDesignator\":\"AM\",\"PmDesignator\":\"PM\",\"FirstDayOfWeek\":0,\"ShortMonthNames\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\",\"\"],\"LongMonthNames\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\",\"\"],\"ShortDayOfWeekNames\":[\"Sun\",\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\"]},{\"_type\":\"anon\",\"TextDirection\":1},{\"_type\":\"anon\",\"Culture\":\"en-gb\"},{\"_type\":\"anon\",\"JustNow\":\"just now\",\"OneMinuteAgo\":\"1 minute ago\",\"TwoMinutesAgo\":\"2 minutes ago\",\"MinutesAgoMany\":\"[0] minutes ago\",\"OneHourAgo\":\"1 hour ago\",\"TwoHoursAgo\":\"2 hours ago\",\"ManyHoursAgo\":\"[0] hours ago\",\"YesterdayTime\":\"yesterday at [0]\",\"DayOfWeekTime\":\"[0] at [1]\",\"MonthDayTime\":\"[0] at [1]\",\"Now\":{\"_type\":\"D2L.LocalDateTime\",\"Year\":2026,\"Month\":11,\"Day\":9,\"Hour\":13,\"Minute\":36,\"Second\":29,\"Millisecond\":348}}]}",
+"6":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Initialize\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/login?target=%2fd2l%2flogin%3ftarget%3d%252fcontent%252fenforced%252f7204-T1-26_MDSDF412%252fOptimization%2bMethods%2bfor%2bAnalytics2.vtt%26sessionExpired%3d0&sessionExpired=1\"},\"Error: unable to complete your request.\",{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"flash\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.FlashMessages.RpcReceivePayloadProvider\"},\"session\":{\"_type\":\"func\",\"N\":\"D2L.PT.Auth.SessionTimeout.RpcReceivePayloadProvider\"},\"messageArea\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.MessageArea.RpcReceivePayloadProvider\"},\"OR\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.ObjectRepository.RpcReceivePayloadProvider\"},\"JS\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.RpcReceiveJsPayloadProvider\"},\"CSS\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.RpcReceiveCssPayloadProvider\"},\"BSI\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Bsi.RpcReceiveJsPayloadProvider\"},\"ariaMessages\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Aria.RpcReceivePayloadProvider\"}}]}",
+"7":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.InlineHelp.Init\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/inlineHelp\/6606\/help\"}]}",
+"8":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Focus\",\"P\":[{\"_type\":\"id\",\"Value\":\"userName\"}]}"}
+,
+"d2l_1_5_89":{"0":"[\"userName\",{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Edit.ValidateRequired\",\"P\":[\"userName\"]},\"Username is required.\",null]"}
+,
+"d2l_1_6_843":{"0":"[\"password\",{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Edit.ValidateRequired\",\"P\":[\"password\"]},\"Password is required.\",null]"}
+,
+"password":{"enter":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Form.Submit\",\"P\":[{\"_type\":\"id\",\"Value\":\"formId\"},false],\"D\":true}"}
+,
+"d2l_1_19_577":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Connect\",\"P\":[\"POST\",{\"_type\":\"url\",\"Url\":\"\/d2l\/login\/locale\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"localeId\":1}],\"D\":true}"}
+,
+"d2l_1_20_434":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Connect\",\"P\":[\"POST\",{\"_type\":\"url\",\"Url\":\"\/d2l\/login\/locale\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"localeId\":3}],\"D\":true}"}
+};
+</script>
+<script>D2L.LP.Web.UI.Html.Bsi.Init('prod', 'https://s.brightspace.com/lib/bsi/2026.10.234/', ['unbundled/navigation.js','unbundled/navigation-main-header.js','unbundled/navigation-link-image.js','unbundled/html-block.js','unbundled/dropdown.js','unbundled/dropdown-menu.js','unbundled/button-subtle.js','unbundled/menu.js','unbundled/menu-item.js'], true);</script>
+</body>
+</html>

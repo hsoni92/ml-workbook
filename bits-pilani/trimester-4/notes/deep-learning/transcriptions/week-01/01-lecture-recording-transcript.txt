@@ -1,0 +1,477 @@
+So, today we will be discussing, the first weeks, like, what are the things that you are going to learn in the first week.
+So, probably, you might have got the access to your course, the first week's course, and then you might be going through that.
+Today, we will be, having a short discussion about the topics that you're going to cover in the first week.
+As well as the experiential learning component, right? So, the practical session.
+So I'm going to take you through all the topics in short, and then I'll open the forum for your questions at the last.
+So you can keep up your questions, and then we can take it up one by one, right?
+So let me share my screen.
+So, the first, week is all about the Deep Learning Foundations.
+So, in the first week, we are trying to understand, like, what is deep learning, like, how it is different from, you know, the traditional machine learning. You might have got an idea before.
+So you might have got, you know, introduction to
+Certain components of deep learning before, and few of you might not get it.
+So, let us try to cover that, like, what are the things that you are going to learn in detail. So, this slide is showing you the outline of the complete topics that you will be covering in Week 1.
+So, when you talk about, deep learning, right? So, deep learning comes up from…
+something where we see that we try to work on certain unstructured data, certain data which is a little bit difficult to process, or certain types of different forms of data, right? So, not only
+You know, a tabular form of data, but it can be any kind of image, or it can be any kind of
+you know, text, or audio, or video data. Any form of data, right? So, when people started, learning machine learning.
+then people have seen certain gaps with this type of machine learning techniques, right? So, in machine learning, what were the problems, and
+How we have solved that using the deep learning.
+If you see here, I've just outlined few of the points here, right? So, in machine learning, we will have to give the features by our own. So, that means what you need to be knowing about the domain.
+Okay? So, domain in the sense, for example, you're working for healthcare.
+Or you're working for banking.
+or you're working for telecom. Example, in any industry you are working with, okay? So, you need to know the domain knowledge of whatever industry you are in.
+So, based on that knowledge, you are going to
+Create the data, or going to fetch the data.
+So, a manual process is involved here. So, manual…
+features has to be extracted. What is features? Features means the columns… In the data.
+Right? Whatever data you are taking.
+It can be of anything.
+So, manual process is there, you need to manually check whether all the necessary features are there or not, based on your domain understanding, okay?
+And mostly, machine learning works with structured form of data. Structured form means very clean form of data, like what we see in Excel sheets.
+In Excel sheets, we have rows and columns, right?
+So these are columns, and these are roles.
+So…
+like, Excel sheet form of data, or very clean numerical set of data, or it can be numerical, or it can be categories, but very clean form of data machine learning can deal with.
+Okay? And there is a problem with early saturation also. So, performance will come to a flattened position if the dataset is not increased.
+So, if my dataset size is constant, and again and again, I'm trying to, you know, improve the performance. So, in that case.
+At some point of time, you will see that your performance will be flat.
+So, these are certain problems.
+that people faced with the traditional machine learning. So, in certain cases, machine learning was useful, but then, in some of the different things, different use cases, this was not working out.
+So then people thought out that we should come up with something which is, again, an extension to machine learning.
+Where we can solve all these problems.
+Here, we had a problem of manual feature selection. So here, we are doing the automated selection. How we are doing the automated selection here? You are giving the data, right? So data can be any one of this type.
+So, it has something which is, like, it is trying to understand the
+The features inside the… inside the data directly.
+Because of its architecture, because of its structure, okay?
+So, in the upcoming, weeks, you will be understanding why exactly, what is the architecture exactly that is there in deep learning, which is making deep learning so versatile.
+So we will be talking about that, obviously, in the upcoming weeks, and you will also go through the videos that I have created, where I've explained the things in a very, you know, from very scratch.
+And then you will be able to see that within examples also. So you'll be able to appreciate why, actually, it is doing the automated extraction.
+It can deal with unstructured data. So this type of data that you see here, whether it is image, whether it is audio, whether it is video, text.
+Text is somewhat structured to some extent, but not completely, but image, audio, video, this type of data.
+are unstructured data. There is no structure to it. You cannot tell that I want to put an image in a tabular format. You can't do that.
+Right? So, image can have many pixels, many, coloring pixels. How can you put that in a table? It's not possible.
+So, deep learning deals with this kind of data, which machine learning could not handle.
+Okay? Machine learning was used for image and other forms of data, but it didn't give good response. Okay? And in deep learning, you can continuously scale also.
+Scaling means what? Like, if suppose.
+I want to make an application, okay? I want to make an application.
+Suppose this application I want to give it to 10 people.
+10 users are there.
+Suddenly, I see that 2,000 people have come up.
+To use the application.
+What happens?
+If your system is only created for 10 people, obviously when 2,000 people are coming, your system will break.
+Right? Your system will break. So, you need to have such a robust system where
+Even though it increases to 2,000 from 10, All from 100.
+To any number, it should be able to handle it.
+Okay, so as you scale up all your parameters in the algorithms that is there here.
+So, you can also scale up your users.
+So, scalability happens here continuously.
+Okay? When this particular architecture sees that many things are coming up, and the network is growing very, very, complex, the use case that you're trying to solve is very, very complex. It will try to scale.
+you can add up more things to scale it up. So, continuous scaling also could be done using deep learning.
+So, whatever problems we faced in machine learning, that has been solved
+using deep learning. So nowadays, you might be seeing a lot of discussions around generative AI, around Agentic AI. So, from where these things came up, obviously, this were the deep learning methods.
+After doing an extensive research on deep learning methodologies and deep learning algorithms, those things came up, right?
+So, that is why we need to first understand why
+People have selected deep learning instead of machine learning.
+For what cases? Try to always relate with the example. If I'm doing this, if tomorrow I want to do this, how my system should be able to handle it, right? So, that way, we have to think.
+Then, there are certain things which are…
+discussed here in this deep learning, right? So, you will have something called as universal approximation and depth
+Okay? Depth means, obviously.
+See, whenever you have a deep learning model, you will have something like this. Suppose there will be an input.
+There will be hidden layer.
+And there will be an output. I'm just giving you a simple example, okay? So when there is a hidden layer, it could be one layer, it could be multiple layers.
+So, how much ever complex problem you're trying to solve, that much ever hidden layer could be there. Either it can be this way, or it can be one top of another.
+Anything is possible, right? So what happens when this kind of layers are added up?
+There is something called as universal approximation.
+You will learn this in detail, obviously, but here we are trying to understand what actually that means.
+So, if a single hidden layer, whatever single layer, if you see this, with certain functions.
+That we apply. So these functions are what? These functions are mathematical functions, right?
+So, when we are trying to apply these mathematical functions, we call this as activation functions as well. So, it can approximate anything with sufficient
+width. So, we are trying to do an approximation, which is through the mathematical functions that is inside each unit of hidden layer. Like that, so many units will be there, right?
+So, this is one of the characteristics of universal, approximation, where
+As the complexity grows, your… each of the layer has that capacity to take up any Oh…
+complex thing, and approximate that, and give you a particular solution. So, it will be passed from one layer to another, another layer to another, like that.
+Okay?
+How about the depth versus width?
+Depth means how many layers, one top of another, like this.
+And width means, obviously, side by side.
+So whenever you have deep networks, like this, like, many hidden layers are there, suppose. When you have deep networks, it will be
+Obviously, it will compose of certain things, which will be a little bit
+faster, okay? So, suppose, for example, you are trying to solve a complex problem. I want to create a deep network. Deep network means network with more hidden layers.
+this between layers, I want to keep it more, so that this layer can identify a lot of different complex patterns that I'm trying to pass.
+Okay? So, sometimes what happens whenever you are increasing the layers, that can act faster than the
+Shallow, wide layers.
+If it is white, Sometimes it may not work properly.
+If it is depth, depth is more, that means one top of another layers are more, then it can work a little bit faster, because it doesn't have to pass from one to another, another to another. In one go only, it can just do it at once.
+So sometimes this thing, this setup is faster than this, but not in every case, okay? So there is an advantage for this in deep learning.
+Then, hierarchical feature reuse. If, suppose, you have certain lower layers, okay? So, lower layers can take up the
+old patterns. And D players can combine everything and can take up the Concept.
+that you are trying to draw. So, whatever
+small layers are there, suppose these are small layers, and there are certain large layers, or deeper layers. Deeper layers means more.
+complexity is there, inside that layers, okay? And lower layers means less complexity is there.
+Okay? So this will try to take up the
+normal patterns, and these deep layers will try to understand the complex patterns. So, when some of the things of this layer, you can reuse here also.
+Okay? You don't have to do everything, all the computation here from the scratch. You can take up from this
+lower layers, and you can add up on the deep layers. So, because of this kind of advantages, deep learning has gained its importance.
+So many things are taken into consideration, whether it is approximation, whether… how you can make the system scalable, how you can reuse certain things, right? So, because of these advantages, there, people have started using deep learning.
+So, this is the… Overall, 4-step pipeline, okay? So, how the pipeline works? The first step is forward pass.
+So what you do here, your inputs will pass through these layers to produce the predictions. That is the forward, like, from input to hidden layer to output.
+Okay? Then, when it is actually,
+having the output. So, then it will take out the error here. What is error?
+Whatever original thing was there, original value or original thing was there, and what the model has given, you will find out the difference between that.
+what originally I had, and what my model gave. If I find a difference between that, that is my error.
+So, what is my aim here?
+To reduce this error.
+How much ever I can reduce this error, that much ever good, my algorithm will work.
+So, in order to reduce the error, Again, what will you do?
+You will go back.
+So here, you will have certain
+Parameters which are present, which we call as weights and biases.
+So, these are certain parameters which are present, and what you will do when you go back
+You will try to.
+Update these parameters.
+So there are mathematical formulas to update these parameters, right? So, once you update these parameters, again, you will go
+And you will find out the output.
+Again?
+Error came, again, come back. So this coming back is called as back propagation.
+This one.
+Okay? And backside, whenever we are coming, we are doing the updation of the weights here.
+So, it's a… So, it's… this will go on and on and on.
+Okay? Till the error comes down.
+When the error is less, The process will stop here.
+And you will get your final output. So because of this updation, because of the forward pass and back propagation, you see that this is an iterative process.
+So when something you are trying to iterate, right? Something, for example, suppose you are learning something, and you are making mistake, right? So, you are going back, you're taking the feedback, and you're going back, and you are trying to improve yourself.
+When you're trying to improve yourself, at that point of time, you will remember, okay, I have done that mistake, so this time I'll not do that same mistake.
+Right? So until and unless you stop making mistakes, or you make minimal mistakes, your feedback cycle will go on and off.
+So this network also works in a similar manner.
+First, the weights and biases will be there. It will be default.
+By default, some values will be there. It will go ahead, do the calculation here, get the output. Okay, error has come. Again, I'll go back, update my weights. Again, I'll come here, get the output. Again, I'll go back, update my weights. And this circle will go on and on, till my
+Error is coming down.
+So, at one point of time, I will see that my error has become flat.
+Whatever from the past 2 to 3 steps I have got the error, now also I'm getting the same error. That means I have gone flat.
+So that will be the point where I should stop.
+So… This particular, workflow of deep learning has made it so versatile that whatever error
+It is getting… it is trying to learn from that, and it is trying to update. Again, it is coming back and trying to…
+Get proper output.
+Okay, so this is the complete flow of the
+Deep learning, whatever network you take, right?
+Soap?
+As you see that we go back and we have this backpropagation method, right? We actually try to update the weights over here. So, in that case, what happens? We try to update the weights based on the chain rule. This is a derivative rule.
+So, we have the loss… Loss means the error.
+Okay? We try to take a derivative of that. Don't… you don't have to memorize all of these things, but it is for your knowledge, right? So, it will be…
+The equation will be this way.
+So, in that case, what you're doing here is, you're taking the derivative of your error. That means, in this step.
+When you're coming back.
+Here. In this step, when you're trying to do the update, you will take the derivative of that error here.
+And through that derivative, you will try to
+update your weight. So, for example.
+If before the weight was W1, suppose you have updated to W2.
+So, you will take out the… Derivative of the…
+Loss, that means the error. And finally, you will get the Wait, too.
+Okay?
+So… See, whenever we are dealing with this kind of
+equations here. There are certain problems that you might come across with.
+First problem will be the vanishing gradients problem. What is vanishing gradients? Vanishing gradients means C. This one is the derivative, so these are the gradients, okay? So whenever you go into deep networks, suppose your network has many layers like this.
+Okay.
+Suppose this many layers are there. When you try to go back to the last
+200 steps back, for example.
+At that point of time, what happens?
+when the updation is happening so many times, the weight updation is happening so many times, at one point of time, this gradient, this value of this derivative will become very, very, very, very less.
+It will become negligible.
+Okay? Negligible means you will not be able to understand whether the weight values are changing or not. That is the problem, which is called as
+vanishing gradients. That means the gradient value itself will feel like vanishing.
+Okay? So, in that case, how you are going to deal with this kind of issues. Then, the activation function.
+So, what are the different, like, you will have to go with the relu activation function, why not other activation function? Because other activation function has a problem of having a saturation. Saturation means somewhere it will go and become flood.
+So, in order to break that flatness, in order to just go and break that flatness, we go with ReLU.
+Okay? So, this is one of the activation functions.
+That week.
+Take, and then?
+Finally, we also go with the residual connections.
+Just give me one minute, I'll be back.
+Yeah, sorry. So, what happens over here is, yeah, I was talking about the residual connections. So, sometimes what happens, these gradients that we are calculating here, right? So, we try to actually bypass those, deep layers directly.
+Okay? So those are called as residual connections, where you're allowing to just
+go across these deep layers and just bypass it, okay? So that the gradients could be calculated properly. So there are issues that might come up because you are doing a derivative.
+Right? There might be issues which might come up, but then there are techniques to mitigate that also. Techniques to, basically, stabilize that also. So, you are going to study this in the first week, so I've explained in a very good way, you can go and you can check.
+Where you will study about the chain rule and the gradient stability there, right?
+Then, what about the learning rate? Learning rate means at what rate or at what speed your algorithm is working.
+Okay? This is the speed.
+So, how the learning rate dynamics are there, and what are the schedules? So, excessive learning rate means what will happen if the algorithm is running excessively… in excessive speed, so it will just shoot like this.
+Okay? So there will be shooting like this.
+If it is taking small step the other way around, suppose here, here, here, here, like that, so it will take more time.
+And?
+If we are going with particular schedule, which is neither too fast nor too slow, it is somewhere in between.
+So, what will happen? In that case, your process will smooth out.
+Okay? This calculation of gradients that is happening, and then at what rate that gradient calculation will happen, and how your algorithm is going to come to a position where saturation will happen. Till the saturation comes, the algorithm will work, right?
+So, in that case, what are the things you should consider? Learning rate is one of the important parameters that you should consider, where
+If you go excessively high, it will shoot out, overshoot, which is, again, like, just like a here and there zigzag thing will happen.
+If it is too small, too much time will be wasted. We don't want that. So we want something in between. Not too fast, not too slow. So we have…
+certain.
+thing to calculate the learning rate. So, we can keep it neither too high nor too low.
+Okay?
+And in that way, we can control the speed of the algorithm, like, at what speed or at what rate the learning of the algorithm is happening, okay? This is one of the things that you will study.
+Then comes your optimizers.
+Optimizers means, if at all, You want to, add up like… as you're calculating gradients. So…
+if you want to, you know, add up more things to optimize your algorithm, or to speed up your algorithm, right? To…
+increase the speed or efficiency of your algorithm. So, in that case, your optimizers will come up.
+Okay? So, you will study about the optimizers and the regularization. So, optimizers are those things where… which will help up
+to increase the speed of the, or help to optimize the performance of the algorithm. So there are various optimizers which are there. We have SGD, which is Stochastic gradient descent, and we have momentum, we have RMS prop.
+We have Adam, so you will be learning about all of this in detail, where
+We talk about the optimizers, different types of optimizers, and
+at what situation you're going to use each of the optimizers, that is very important, okay? So, with examples, that is given, where we are going to use SGD, where we are going to use RMSprop, where we are going to use ADAM, right? And…
+Why do we say that we are going to use that in that particular scenario? Because
+Of the particular use case.
+That we are trying to solve there, right? So you will be learning about the optimizers, and you'll also be learning about regularization. See, whenever your model that you're trying to create, any kind of deep learning model or machine learning model, what happens, there is a tendency that it will try to
+overfit.
+What is overfit?
+Overfitting means.
+the… Model will try to work very good with the train data, but very less.
+Performance will be there with the testing data.
+Okay? So, that means it will be very confident, overconfident on the data that it has seen, but very, very less confident on the unseen data.
+So that situation is overfitting.
+So, in order to reduce the overfitting, we go with regularization.
+Okay? We go with regularization, we go where we have dropouts. Dropouts means whenever you have certain things in the networks, you will be just switching off few of the parts of the network.
+So that this overfitting problem doesn't come out. Regularization, L1, L2 regularization, we can go with, or we can go with batch normalization, okay?
+you normalize all the inputs, and then you try to feed into your network. So, through all of these methods, you can try to stop your overfitting problem in any kind of model. It is not only relevant to deep learning, but it is relevant to machine learning, deep learning, everything.
+Okay? So you will be learning about all this
+Where? How to optimize it, how to increase the efficiency, how you can, you know, deal with the learning rates, what are the things that you're going to see, when, you know, the regularization is not done, what happens? What is the consequence of that?
+is important.
+Then, different types of loss functions. So, if you are going through a regression or a classification, right? So, regression means, like, you can go with MSc or Uber loss or MA loss.
+So, for what purpose we use MSc? For what purpose we use MAE?
+all of those things you are going to study. And for classification, you will have cross entropy loss and focal loss kind of thing. Most of the time, we use cross entropy loss only, where we are calculating various likelihoods of
+various, distribution of the data, okay? So these are, again, taken in detail, where we understand at what scenario you go with MSc at what scenario you go with MAE.
+Sometimes, certain outlayers are there, so out-of-bound points are there. In that case, go with NSC.
+Right? It will penalize… And MA will be good for
+It will be robust for any kind of
+noisy targets that is there. So.
+In the lesson, we have tried to see that with examples, like when we should apply MSc and when we should apply MA.
+Okay?
+So, that is for the regression part.
+For the classification, we are mostly going with cross entropy loss. Sometimes we go with binary entropy loss also.
+And focal loss. Focal loss is basically for imbalanced data.
+Imbalanced data means data where the classes Suppose there are two classes.
+Equal distribution of two classes are not there.
+Okay? Equal distribution of two classes are not there. That is imbalanced data. So for
+Handling imbalanced data, you go with focal loss.
+So, again, See, if I consider this situation, if I give you one example.
+Okay? What are the scenarios where you will find this kind of problems?
+If you consider an example of healthcare, Okay Patients having diabetes.
+And not having diabetes.
+So, whom do you think that the population will be higher? Obviously, the non-diabetes population will be higher than the diabetes population. So that means these people are more, these people are less in number. So there is an imbalance.
+So, in order to make our model understand all the patterns, we try to deal with this kind of imbalanced data, try to bring it to a balanced format, and then we try to deal with it, like how we have done machine learning.
+We used to do that, right? So, when this kind of imbalance data comes up, you go with focal loss, okay? You give weights to the, easy examples which are there, and you give, you try to dynamically give weights. Somewhere the weights will be high, somewhere the weights will be low, based on the
+examples that you are taking. So, at what scenario you will be choosing what loss functions is important, because, see, your loss function is going for
+the derivative. So, choosing your loss function wisely is very important for each of your use cases.
+Okay?
+Then, if there are high-dimensional loss.
+losses that are there. So, how you can navigate them. So, there will be something called a saddle point.
+Saddle point means something like this, where, you know, the algorithm cannot go up.
+Somewhere stuck here.
+there will be Haitian curvature. Haitian curvature is something where, you know,
+it will be, like, a positive, or negative, or zero direction curvature. It can be any way. It can be below, it can be top, or it can be on the zero position.
+Or there can be any kind of noise.
+Noise means, like, some small, small Inconsistencies in the data.
+Right? So if noise is coming up, then obviously there will be problem with the loss function. If there is a problem with the loss function, then your algorithm derivative will be in the problem. If derivative is in the problem, then your…
+Whatever weight updation you are doing, that will be in the problem. So, ultimately, your output will get impacted. That is why
+How the lost landscapes, how this kind of problems will lead to, you know, different problems with the laws is something which has been discussed.
+then the linear transformation part, so…
+We know that when we work with a simple deep learning network, it deals with a linear network first, linear layer first. So, whenever we take any linear layer, it follows the equation of a straight line, right?
+Like, how we say Y is equal to MX plus C. Here, Y is equal to WX plus B. Like that.
+So, W is the weight matrix, B is the bias, right? And this is your input, this is your output. So, a linear… a completely connected linear layer will be there, which actually goes on to
+Take up the inputs, and…
+ultimately find out the output. So, our algorithm work will be to find out these weights and biases.
+value. When you find out this weight and biases value you put up in this equation, you get your output.
+White.
+Till… the proper value of weight and biases come out, that
+Forward pass and backward pass, forward pass and backward propagation, both the things will go on and on.
+Alright?
+So, it goes through the matrix multiplication, you can see this is the matrix multiplication, which is there, which happens. And just imagine this happening for a large network.
+So, computationally, also, this is a little bit heavier.
+Here, it looks very simpler, right? But computationally, this is a little bit heavier. So you need to think, when you are putting such kind of networks like this.
+How it is going to deal with
+So many things, so many equations going ahead, and then so many times we are updating the weights and biases, and
+how it is fitting to this particular kind of data, right? So…
+Each and every bits and pieces of your network is very important, whether you talk about optimizer, you talk about learning rates, regularization, any linear transformation that you're doing, everything plays a role, separate role.
+So, understanding each and every component of
+The network, the deep learning network, is very important, right?
+So, how do we do the parameter counting? How memory footprint is there? How do you calculate the parameters? How do you have the activation memory? How…
+optimizer states are calculated, so this calculation has been given, like, this… this much is the weight count, this much is the bias count, and how many parameters your model will have. This is the formula.
+Okay? So, why we are counting the parameters? More number of parameters, more complex model.
+less number of parameters, less complex model, right? So you need to think whether you need to have that particular parameter or memory footprint to have a complex model for a simpler issue. If you have a simpler use case, and you have taken a very big memory footprint.
+Or a memory thing, right?
+That is of no use. You are simply making the model more complex.
+So, that is why understanding these parameters are important.
+Then the memory wall and the roofline model, right? So you'll be, seeing the memory wall, so there will be a lot of data transfer that will be happening inside, like, on the hardware side, right? If you're using any hardware things, there will be a lot of things which will be there.
+which will be, passed on bytevice. So, how you are going to have bandwidth for your memory, how you are going to have bandwidth for your GPUs, if at all it is a complex application, you might have to use GPUs. So, all those…
+Hardware complexities are also discussed.
+Okay? And how you are going to have it, like, In a batch.
+And then how you are going to increase those batches so that you can have the things properly set up.
+So, that talks about the memory wall, and then how your model should be going on with all of these factors into consideration, right?
+hardware acceleration, system optimization, right? What… how do we do quantization? Quantization means you're making your model
+you are squeezing up your model, you're compressing your model. Suppose your model can hold 32 bits.
+You are squeezing it to 4 bits.
+So that is called as quantization.
+So that bandwidth increases.
+How many Tensor cores should be there? Hardware units?
+how Carnell should be there.
+How attention, if at all you are putting certain blocks to, you know, manage the memory.
+problems, or eliminate the memory problems, how you're going to do that. So, hardware-wise also, you need to think, because
+you are going to use this kind of systems where you're going to build a scalable application, right? So, these things are also discussed.
+So, if you see the complete synthesis of
+Or the key takeaways that you will have from this module will be, like, how deep learning works, how it can eliminate the manual feature engineering.
+How gradients and back propagation optimizers, all those works, and what are the different
+hardware considerations that you should consider whenever you're working with this kind of models. Now, why do you see that hardware part comes here? Because when you start understanding, the technicality of any model, model is also important, and
+the hardware side is also important, because ultimately, this kind of models, you're not going to use for smaller applications, you're going to use for larger applications. Like, maybe you can use it for image classification. So that time, you will not have 5-10 images.
+There will be multiple sets of images that you might be working on. So, hardware and other things also play a vital role.
+So… As you start the foundation of deep learning, you understand deep learning, To the core.
+I know that people study deep learning, but there is a difference between studying, and there is a difference between understanding where exactly that concept has to be applied.
+So, it's kind of an application-based study that you're going to have.
+So, when I created the modules, I have kept that in mind, that application-wise, you should be able to appreciate that. Not learning the concept and the formulas.
+That's not required.
+You have to know the concept, formulas, understanding is required, but not memorizing all of those things, but understanding at what situation.
+Suppose I say that there is a situation, tell me what optimizer you're going to use. Tell me what learning rate you're going to use. So that level of understanding should be there.
+then you are clear about the foundation, okay? So, your week 1 will comprise of that foundation, I think six.
+topics are there in week one, which will be, like, in short, I have talked about this.
+And you will be taking those topics, and then you'll be understanding, and we can take up questions also. Before I move to the practical part, do you have any questions here? You can post up your questions in the chat.
+I'll stop my share.
+You can post up your questions in the chat.
+No, this course doesn't cover Agentic. There will be a part of generative AI at the last.
+You can see I have touch-based a little bit about generative AI, and
+I have… I think I have taken one topic about agents, that is just an introduction to agents, so that you'll be able to appreciate, like, how actually from deep learning to generative AI, we have gone to the Agentic AI. So that connection, you'll be able to build. I think you will get that in module…
+12?
+That's probably Module 12, yes.
+You'll be getting an idea about that, but not completely. Agentic AI is there here.
+Yes. So, VISHAL, basically, wide and deep networks. Wide networks… deep networks means, suppose the layers are one top of another, like how we have stack of layers, right? And wide networks means side-by-side. So, in what kind of use cases, you will be using this kind of
+this kind of networks. If I tell you about a white
+Why it means side by side. Suppose you wanted to have a sequential, sequential learning of
+certain thing. For example, images. You wanted to do an image classification.
+Okay? You want to classify certain forms of images. Suppose, like, maybe 100 categories of images are there. In that case, you go with white. Why? Because when your images will pass through each and every layer one by one.
+sequentially. In that case, the understanding will be
+more. Why? Because each layer will understand a different set of features.
+Okay? First layer is, suppose, understanding a small portion of it. Second layer, understanding some other portion of the image. Third layer, understanding some other portion of the image. Like that, when it is going through sequentially, going through all the layers in the wild networks.
+The output that you're going to have, that is, how it is going to predict whether a certain type of image is there or not, in that case, the output will be good.
+So, mostly in this kind of scenarios where, you know, understanding of the
+Input requires a sequential, understanding of various parts of the input.
+So, in… Mostly in, image examples, we use white, white networks.
+And deep networks is good for if you're going with text.
+Okay? In text, what happens, you might be, like, in this course only, you will be learning about, recurrent neural networks, you'll be learning about transformers, where, you know, for various textual applications, we use it. So, when you stack one
+on top of another, what happens? It actually increases the capacity of that single unit.
+So, in textual applications, suppose you wanted to do a sentiment analysis.
+of… Certain social media post.
+Okay? Of a particular product.
+that you are going to buy in Amazon. You can go with this kind of deep networks, because textual analysis requires more
+Understanding in the single layer.
+Rather than image having a sequential thing. So here, we don't require a sequential thing. We can increase the power of that single unit, and then make it one top of another.
+So that, you know, the kind of output that we are getting out of that, textual data is something which we are looking for. So for text, you can go with deep.
+For image applications, mostly you go with white.
+Try to evaluate, like, what kind of things are coming up, right?
+Yes, computer vision topics will be there.
+So we have CNNs.
+Where we will be talking about that is in upcoming weeks. We will be talking about CNNs, where the concepts of computer vision is also there.
+So, this week is all about the foundation, understanding what deep learning actually is, and then…
+How actually it… what are the different components inside those networks? And how can you actually use those components for various things? Like, when… see, always think in the… in terms of the use cases where you're going to apply it, right?
+I'm going to create a system which should be robust.
+So, if I'm going to create a system which is
+robust, and I'm creating an architecture which is, like, very weak, obviously my system is going to break.
+So, for that purpose, the understanding of each of the components of those networks are very important. So, as I said, application-wise, we need to understand. Like, this is the application, so…
+This is how I'm going to implement it.
+Right? So, if I… if I just show you that, practical implementation of Week 1,
+Let me just quickly show to you. That is a simple implementation of a customer churn prediction.
+Example. Let me share the screen once again.
+Oops.
+Yep.
+So this is the, experiential learning video that you will see for Module 1. So this is about a, you know, a customer churn prediction problem. Like, how can you say that, like, whether your customers are going to leave?
+Okay, so this is a telecom dataset. You will find this dataset in Kaggle, and I'll also provide this dataset for you. You'll be finding that in your LMS.
+So…
+taken from Kaggle. So, you are going to see here, like, how a telecom company is going to predict whether a customer is going to churn.
+or leave.
+based on certain customer information, like tenure, monthly charges, total charges, contract type, internet service, and payment methods that we're using, okay? So here, we have actually followed that particular process that we discussed. The data set, the pre-processing part.
+How we can apply the neural network, the forward pass, the loss, the back propagation.
+optimization, training, and evaluation. So that complete thing is given. So what are the things that we are trying to achieve here? You can see that in the task. One thing which I have tried to always follow in all the implementation is the star format.
+What is a star format?
+situation. What is the situation? What are the tasks that you are trying to, create for that situation? What actions you have taken, and what are the results?
+Always try to structure your problem in this format. It becomes easier for you, okay? So you can see the implementation. This is a simple implementation, which is there. So…
+calling the packages, and then, you know, I have used here SageMaker, so I have stored my dataset in a
+SageMate in S3, S3 location, so I've given the link of S3 location here.
+And I've read the data, so you can see here…
+7,043 rows and 21 columns are there.
+In the data.
+You can also visualize the data.
+Just try to see all the column names of the data, and how many levels, like, churning labels are there. So, how many people have not churned, how many people have churned.
+It is divided as yes and no.
+Okay.
+So, simple, implementation of how to preprocess and clean the data. So here, we are dropping the ID column, because ID column doesn't…
+Add any value to our analysis.
+Okay?
+total charges, there is a total charges column, like, we want to convert that into numeric. So, some basic
+Changes we have done in the columns.
+Then, how to convert your target, that is yes and no, to 0 and 1. It is easier for the algorithm to, you know, take up. How to take one hot encoded variables. So, all of those things we have done here, and you can see this is the data, how it looks like.
+with all the… Encoded data as well, like, columns as well.
+why we have done… I've written here, then…
+dividing into train and test, split. You're doing the split of train and test data set, similar to machine learning that we do. We try to do the scaling of the data also. We try to bring the data in a single scale.
+So, as we are using PyTorch here, so we need to create the… we actually need to take up the train and test dataset in the form of torch objects.
+So, we convert that here, you can see. So, total 5,625 rows are in train, and 1,407 rows are in test.
+Okay? And the number of columns have increased, because obviously you have added up the one-hot encoded columns. Then you are creating a simple neural network for your churn. You can see a linear network, RELU function, again, a linear network, RELU function, and finally the output.
+So, you have created that network.
+You have defined your loss. Here, we have taken, sigmoid as well as binary cross entropy as the loss function. Directly, we have that. We are calling that.
+And, optimizer, we have used Adam, right? Now we are running the training. So you can see for each of the epochs, like, epochs means how many times you are running the training process. So you are training it
+You're calling your model, you're calculating your loss, calling the optimizer, and finally, you can see for each of the epochs what is the loss.
+Right? So, here we have done up to 50.
+divided by 10 I have done, so that is why every 10th epoch, it has recorded. You can change this.
+If you want to change, you can change this, okay? So…
+just for faster processing, I have just seen that, like, in every 10th epoch.
+my loss is decreasing. So my loss should decrease.
+Okay? You can increase the number of epochs also.
+Here, I have used 5 with a gap of 10, you can increase it.
+After that, you can evaluate your model, like, the accuracy score, what is the test accuracy, you can see.
+It's around 75, almost 76 percentage.
+Then for churn and no churn, what are the precision recall F1 score? It is decent.
+Not too bad. For churn, the F1 score can be improved.
+And the recall can be improved, but then…
+Here, the matrices are good, and accuracy-wise also, 76%. Not too bad, not too good, somewhere in between. You can even improve this model.
+You try to work with, the hyperparameters that is there, and try to improve this performance.
+Okay? Then, you can compare between SGD, ADAM, and RMSprop. So, different types of optimizers. Again, same thing I've done.
+I've just done a comparison of 3 optimizers. Again, the same steps you see here.
+And I've done a comparison, so you can see.
+SGD, ADAM, and RMS prop. I have tried to run that.
+If you see the results, SGD accuracy is this, loss is this, atom accuracy is this, loss is this, so this is just an example to show you, this is not a ballpark figure.
+This is just an example to show you, right?
+And then you can display it in a particular…
+a tabler format also, so this is the learning rate. We have kept the learning rate same, 0.001.
+And the loss, and the test accuracy, and whatever optimizer, different types of optimizers we have used, and you can just plot it also. You can see this RNS prop is doing good.
+So, wherever it is going flat, that means it is not performing well.
+RMS prop is trying to do it well. So, it is trying to converge in a slower
+manner. So, green color one is… Performing better, right?
+So, what is the best optimizer? You can see here.
+So, almost 80% accuracy. RMSProp is the best optimizer. So, this is how you can just take a simple data set.
+you can apply different learning… same learning rate, same architecture, try with different, you know, optimizers, try to change different parameters, and then try to explore around it what results you're getting. So this is a kind of,
+late.
+Sample file, which you can use it since this is a first week, so you can use this sample file. I've explained in detail about this each and every step whenever you go through the experiential learning video.
+each and everything that has been explained, and then how it is implemented, why we have taken that, everything has been explained there. So you can go through this.
+And, you can also come up with your questions if you want to ask anything, right? On the experiential learning part and on the
+the theory part, so… If anything comes up, we will be taking that up.
+So this is all about the Week 1 content that is there. So, if anything is there, you can ask.
+I can see somebody has…
+No. Don't try to compare the answer right now, because this is a sample dataset. You can see that the dataset is very small, right? So, when the dataset is very small, then there is a high chance that, there is certain overfitting which is happening.
+Right? This file, or this dataset, is to show you how do you implement
+Deep learning model to a particular real-time use case.
+So, as I said, you can still improve this model.
+You can still improve the model, and you can still improve the performance of this model. Increase the accuracy, increase the other matrices by, you know, changing the different parameters and playing with the different parameters.
+Decent accuracy is something which is, like, in case of churn, churn prediction, it is more than…
+Close to more than 70-75 percentage.
+That is…
+It's not a ballpark figure, but then in terms of churn prediction, that is considered. Here you see 16%, right? The recall is 16 percentage. That means 16 percentage of the time, it is able to actually catch up the churn. That is happening because
+The dataset is small, the parameters are not optimized, and
+If you try to work on the parameters, and if you try to have a larger dataset, you can improve this performance of 16%, and you can increase the recall percentage as well.
+Okay? So, that remains an activity for you also, like, how you can improve the performance.
+Any other questions?
+Anybody, any other questions?
+Okay, so if there are no other questions, then we can close the session here. And if you have any additional questions that you would like to, you know, ask, you can come up with your questions. We'll try to answer it, and…
+Yes, obviously, when you go through the module, you'll have more questions.
+Okay, you want the transcript?
+of the… I think the transcript is there. Can you please check once?
+Let me just cross-check also from my end.
+I'll try… I'll try to cross-check once whether the transcripts are available or not.
+But it should be available. Let me check.
+Okay, then if nothing else, then we'll close off.
+I'll meet you all next week.
+Bye. Good night.

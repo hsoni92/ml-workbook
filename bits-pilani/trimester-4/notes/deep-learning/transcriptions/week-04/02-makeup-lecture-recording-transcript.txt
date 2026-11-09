@@ -1,0 +1,386 @@
+Okay.
+Okay.
+So it's 9-5, we can start off.
+discussing about Module 3.
+Which we have missed out in the last week, right?
+We'll try to cover that up now. So, in Module 3, we have overall 8 topics, so we will be discussing about each and every, topic, like, what is the essence of each of the topics, right? Let me…
+Share the screen.
+So, Module 3 is about…
+the CNN architectures and the YOLO model, right? So, in Module 2 also, we have discussed about the CNNs introduction, the architecture of CNNs, right? Module 3 also has a certain extension to that, right?
+So here, in Module 3, you are going to learn more about the, the parent CNN architectures which were already created, right? So there are certain architectures which were already created for certain use cases. So these are the architectures.
+We have Lennett, 5.
+We have AlexNet, we have BGGNet, and we have GoogleNet. So, these are certain benchmark architectures which were used for certain use cases. So, Lenet 5 is basically, you know.
+It's a kind of, like, it was used for some document recognizer, kind of, so it has two convolutional layers, two pooling layers, and some, FC layers, which is there. And, LXNet is also, basically, it was
+A part of one of the competition, that is this.
+And then this also, it's a CNN architecture, but with different types of layers, right? Then we have VGG net.
+Vgg net also has like 3 cross 3 convolutions, and then it has a lot of different other things in the architecture. So you will learn in detail about this architectures where
+Like without any exploding parameter counts, how VGG net is working well for some of the use cases.
+Google Net, this is, like, how the different filters and layers are there. There are 22 layers. Usually, see, the base of the CNNs are same. Only the number of layers and, like, how it is working is different. So, whatever variations you see here.
+That is, LENet, or your LXNet, or, GoogleNet, or whatever.
+Right, it's only difference between the layers.
+And for different use cases, for different competitions, different things, these architectures have came up.
+We have ResNet also, we have DenseNet, we have EfficientNet, all of this, right? ResNet was basically, it was 152 plus layers, and then it was also coming in one of the, like, competitions, which was there in 2015. It was able to fix the degradation and vanishing gradient problems.
+So that's why ResNet is one of the prominent CNN architecture which was used.
+Delsnet was there.
+efficient net was there, so some of the architectures were doing certain things. Like, DenseNet, it used to have the feature reuse, it used to have better gradient flow, less number of parameters, so it was having a, you know, kind of.
+Certain, certain architectures were having certain, like, advantages that it was going on and it was used for some use cases like efficient net if you see, like.
+if you have the depth and the width and the resolution, it was actually having a very good accuracy, with very efficient results. So, from a simpler architecture, how more efficient architectures we have came up with, like, the people have came up with, the trend
+irza khani: is shown here. Okay, in topic one.
+Topic 2, slowly you will be moving towards the architectures. So, LXNet, what is the architecture, what is ReLU?
+So why 2012, like it came up, then ImageNet was there, which is like, you know, 15 million plus images were used and then thousand classes were there.
+And the structure of this LXNet is 5 convolutional layer, 3 connected layer, FC layer, and downsampling was done, ReLU function was used. So, about the complete architecture of LXNet in this topic, you will be learning, right? ReLU is the form of.
+Activation function, which is being used here, so that it can stabilize the architecture.
+Then it also talks about regularization and the impact, like I talked about the dropout, right, dropout is basically to stop the overfitting, see.
+Here, it has been given here, right? Like, why dropout we are using? Some of the units we are switching off and on. So, to curb the overfitting problem.
+Right? Then, data augmentation, how you can basically create more number of samples, training sample data.
+through this. So, that is called as data augmentation, like, more number of samples, how you can create. Suppose if you are creating this many, 224 x 224 cropping images from 256
+Cross 256 images, how you can do that, what variations, how you can rotate the images, all of those things will be taken up in data augmentation.
+So how was the impact of it? How there was a turning point for deep learning to move from, you know, LXNet to VGG to GoogleNet to ResNet and so on and so forth.
+So in topic 2, you will learn about AlexNet's architecture as well as you'll learn about various aspects of AlexNet.
+In topic 3, you will learn about VGGNet. These are certain standard architectures which you should know, right? So every time, you don't have to go back and you don't have to create the CNN models from scratch. You can use these standard architectures also.
+after LXNet, how VGGNet was coming up. So, to raise the accuracy, VGGNet was there. So, it came up in 2014, competition, where
+this VGG net has come up, so it has a uniform design. Every convolutional layer has, 3 cross 3 kernels, right? A pooling layer has 2 cross 2, pooling. Why 3 cross 3 was used?
+So, all of those things has been given here. Like, some, here also, ReLU function was used, why this, dimension of, dimension was used, why 3x3 filters were used, what happened, why… what is the usage of having those filters, all of those things you will learn here.
+Then, about the variants, what are the different variants of VGG? You have VGG11, you have VGG16, you have VGG19. 11 means 8 convolutional layer and 3
+fully connected layer. VGG 16 means 13 convolutional layer and 3 FC layer.
+Nineteen means sixteen convolutional layer and three.
+FC layer, so… Different forms of V G G models are there.
+Okay? So, there are certain, like, how the block of VGG is, growing from 64 to 512, then how the training of VGG happens, how, like.
+if you want to have an initialization from VGG11, and how you can scale it up, how you can reuse certain features, you will learn about that. So, VGGNet is basically used for medical imaging, for any kind of detection.
+In medical and for style transfer, style transfer means.
+Like, if at all you are using it for, you know, you have your own photo, you want to create the cartoon image of your picture.
+You are changing the style.
+Which you might have heard about a few days back, like, a few months back, Ghibli, the Ghibli style has come up, right? Like, if you give your photo, it will change into a cartoon image.
+Right? Then, few days back, there was another trend which was coming up. If you give your photo, it will change into a 80s or 70s photo.
+That was also going up. So these are style transfer examples. Like, how you can do… obviously, this kind of models are working in the background to do this kind of activities, right? So VGG was mainly used for medical imaging and for…
+style transfer. So, in Topic 3, you will learn about the complete architecture of VGG. What are the different variants? What are the blocks? How the training happens? What are the drawbacks? How you can reuse, certain things inside VGG? You will learn about that.
+Topic four will tell you about VGG 16 versus VGG 19.
+Okay? VGG16, what is there? VGG19, what is there? How they are shared, and what is the trade-off?
+So basically VGG 19 is more accurate but slower.
+And VGG16 is, like, good in practice. Like, sometimes whenever we go for any kind of applications, VGG16 is actually used up.
+NINTIN is more accurate, but it is very slow also, and it is memory hungry.
+So, comparison between the VGG16 and VGG19 has been given there.
+Then, how the training transfer happens, like, how are the training recipes that are there? So, how… what are the different batch sizes, what momentum, what learning rate has been given, how many flips, what is the dropout? All of these things, how you can manage, that has been given.
+Timeline of each of the models, like right from LXNet 2012.
+How V G G 2014 came to Google Net 2014 came, then Resnet came in 2015.
+Right, after ResNet, after GoogleNet and ResNet, then this transfer learning concept came up. Transfer learning means using this standard network, if you add up your own data and
+or using this pre-trained model, if you're using this pre-trained model for some of your use cases. So, already pre-trained model, VGG models will be present for your specialized use cases.
+Okay? So, what are the legacy, benchmark baselines and all of those things, and how…
+it is actually having a, you know, a feature extractor, a frozen feature extractor, how it can be faster, all of those things has been given here. So, ideally, topic 4 will talk about the comparison between VGG16 and 19, and how, in terms of training.
+In terms of transfer, in terms of timeline, or transfer learning, how this has helped out in various cases.
+That is topic 4.
+Topic 5, you will come to YOLO.
+Yellow is one of the, algorithm which is used for detection, right? So.
+If you have certain objects in your photo.
+It can detect, it, it will give some bounding boxes around it like this.
+And it can detect, this is a human, this is a truck, this is a building, or this is a human, something like that.
+Okay? So, YOLO…
+came up, so what was the problem, why, you know, two-stage CNNs were not used, what was the problem, and why YOLO's idea came up, how it came up.
+Okay, so one CNN, too many CNNs not required, one CNN and one forward pass was there. Then output was this bounding boxes.
+Boxes used to be there around each of the objects in your photos.
+Okay, so it used to create the bounding boxes and class probabilities from the raw pixels. If you give raw image, it will try to create this bounding box and tell what type of image that what type of object is there in that bounding box.
+So it used to create the grid, and then it will tell the, like, this is…
+suppose this is human, so it will tell the probability of human as, suppose, 0.96, like, 96%, this is human. So, if the probability of that particular object is more, so it will tell that it belongs to that particular class.
+So yellow has been also a very useful,
+Idea which came up after people have moved out from this.
+Traditional CNNs, right?
+Then YOLO's performance, you will learn what kind of loss you have in YOLO. So, base YOLO will run in what… fast YOLO will run with what speed.
+Right? So…
+this is the speed that is there. So, high resolution images, how it will be helping up, how are the strength, what are the loss functions that you're using. In YOLO also, there is version 1 to 8.
+So, from version 1 to version 8, there has been lot of differences in speed and accuracy and capability. So, you will learn about those things which are very important, right? In topic 5, usually you will learn about YOLO and the performance.
+Then, topic 6, you will learn about deep inside the YOLO architecture.
+So you will see what are the grids that are formed in version 1, how the box prediction is done, what is the confidence that you get out of, you know, this kind of YOLO models. Like, there is something called as intersection over union, IOU.
+That means how the objects are, you know.
+How the intersection of these objects are calculated, so that we can find out how much confident that this is a human and this is a truck.
+Example.
+How the output, boxes will look like, what grid size it will have. So, about the architecture, you will learn here.
+Okay? In topic 6.
+What is loss function that is used? What kind of separation values we use? If at all we want to remove the overlapping predictions, to have clear predictions.
+So, what can we use? How YOLO version 1 to version 3 has came up? What were the limitations of YOLO? Suppose there are some crowded pictures. YOLO can get
+Like, how YOLO can, proceed in that?
+Right, crowded marketplaces there, you are taking the picture, so many objects will be there, how it can detect.
+how it can have some, unusual aspect, how it can have some errors, even YOLO can have errors in that. So, how it is able to, you know.
+what are the limitations of this YOLO, even though it is one of the efficient method to find out the… for object detection, but how, what are the limitations, and
+how you are going to solve the limitations, right? So, that is covered in Topic 6.
+Topic 7 talks about the
+real-time detection and that intersection over union, IOU matrix. So why YOLO is existing, like, why, this kind of pipelines, whatever pipelines we used to have, these were slow.
+for live use cases. So, that is why, one time only in single pass, we used to have it on the go. Even in videos also, YOLO can work.
+grid values, what is IOU, you will have what is overlap area and union area, how IOU is calculated. So, a detection will be counted if IOU is greater than a threshold. Usually, the threshold is 0.5.
+If IOU value of that object is greater than 0.5, that means that object is confirmed.
+Like that. So, IOU is one of the important metrics whenever you are considering in object detection.
+Okay, so you will learn about the real-time detection and IOU there.
+Then, what are the other evaluation matrices? Here, you will learn about the precision and recall. We already know this because we use precision and recall for other type of, algorithms also. So here, how you can, have for this kind of images.
+What is.
+MAP50 and what is MAP50 to 95. These are certain benchmark scores which are there, you will learn about that. How the deployment happens, so suppose IOU will have this prediction, filtering, and scoring, then how you can deploy this kind of applications.
+What are the different applications on which you will be applying this for medical imaging, real-time imaging, for surveillance? Suppose you have CCTVs.
+and you want to detect a particular object from the CCTV videos, YOLO is used.
+In retail, in autonomous vehicle, that time YOLO is used for real-time detection.
+Okay? So you will learn about the YOLO, the architecture of YOLO, how evolution of YOLO happened, and then how the applications of YOLO are there, and in what kind of real-time use cases we use YOLO.
+Okay.
+Finally, in Topic 8, you will learn about UNET. This is kind of like, like, how we can have the segmentation levels done every pixel, okay? So, what was the earlier approach? Why this U-shape came up?
+U-unit means U-shape came up, that means one end-to-end encoder-decoder will be there, right? So, from here only, slowly, slowly, people have moved into that encoder-decoder path.
+What is the contracting path, what is the expanding path? That means, contracting path means how, like, what
+Things are there inside that unit and where it is there.
+So that we can restore the resolution of the images, we use the unit.
+For doing the segmentation, so segmentation became very, very easy, like segmenting each of the objects became very, very easy when U-Net came up.
+Okay? So we also see here about the skip connections, like how each of the features are combined together to, you know, have all the details that has been there.
+How we can do more data, we can do data augmentation, like we can do rotations, flips inside the existing data, and then how can we make more data?
+What kind of takeaways are there? What is the loss that we are using? So, in this topic, you will be learning about the unit architecture, right? After that, only slowly, when you are having a view of this, then only
+whatever fourth topic today we have seen, right? There are… there is also a, like, inclusion of encoder and decoder, right? So, some idea, you will get it from here also. Why do we call this as unit? What is the main usage of this unit structure? Everything you will come to know here.
+So, here, mostly, in all these, topics, 8 topics, you are going to learn more about the traditional.
+benchmark CNN models, then you are going to learn about YOLO, you are going to learn about various applications of YOLO, then what are the different evaluation matrices that is used in YOLO, and then your unit architecture. After learning this, then only your CNNs get completed.
+So, week 2 and week 3 talks about CNNs only, mostly. Week 2, mostly about the basics of CNNs, and week 3 talks about the standard architectures of CNNs.
+With that, it will be getting completed. Then, week 4, which we discussed today, week 4 will be RNNs. So, new topic of RNNs will start there.
+So this is all about the, topics that will be there, whenever you are, basically going through this third module, okay?
+So here, one thing which you need to do is, whenever you are going through this second module, right? Whenever you're going through this second module, try to do third module, because it's a continuation. Like, second module and third module are connected.
+So try to do that so that it becomes easier for you to do CNNs together.
+Okay?
+Okay, so this is, in short, about the third module. If you have any questions, you can come up with your questions.
+You can have the questions in the chat.
+I'll try to answer.
+Please come up with your questions, if you have any.
+You can mute yourself, please, and then…
+You can come up with your questions.
+So in live sessions you are not going to explain in detail, we have to go through all the weak videos to understand.
+These things.
+Right. Yes, in live sessions, it's about the gist.
+Of, like, whatever you're going to go through in the modules.
+So that anyway we will have videos right we can go through those topics and also.
+I mean basically we want In depth
+By taking some live real time.
+Examples to explain certain things so that we can understand more.
+In live sessions.
+Because in the past also we had the similar things like topics anyway we can find out in videos.
+Hmm. No, in videos, there is a difference. See, whatever videos you see now, I don't know about other courses, but whatever course I have created, if you go through the videos, it's not only saying about only the topic.
+Okay? It talks about…
+Sorry to interrupt here because.
+And it is very difficult to spend so much of time to go through each and every video.
+There is a thing where we wanted to attend weekly sessions.
+So that we can get more.
+Information here.
+I mean I'm not sure for others how is it.
+Hmm, so this is the… this is the, structure of how Bits has come up with. So, like…
+Usually, the structure is, like, the videos are there, and this live session is for one hour to actually, like, give the gist of whatever, things you have in the module, along with the experiential learning that you're going to have. That is the practical part.
+And then, if any questions are there from that particular week, then we are going to address those questions. That is how the structure is.
+Okay, if everyone is okay, then…
+Yeah, so if at all you have any issues, like, see, anyways, when I'm explaining also, you yourself also have to go through it, right?
+And.
+I was mentioning here, like, we may not be able to spend so much of time go through each and every video immediately.
+Because we will not have more time during the weekdays.
+Yes, so if you are taking… why we are doing this session is to just make you aware that what are the things that you're going to learn throughout the videos, right?
+why this specifically 1R is dedicated is to make you aware of that. Now, after you know, like, okay, in Module 3, I'm going to learn this, this, this, this topics. Suppose 8 topics. Inside 8 topics, I'm going to learn this, these things.
+So now, when you go back and when you learn the things, like, when you go through the videos.
+The videos are around 5 to 6 minutes, maximum 6 to 7 minutes per topic.
+Okay? It's not very long.
+So, when you go through the videos, you get an idea, and after that, when you come up with any questions, we are here to address those questions as well.
+I mean, I am there, I'm coming every week, so even if you have certain questions, suppose from the previous week, you might have done the videos in the previous week, like, maybe week 2 videos you have done, or week 3 videos you have done, and you have certain questions, you can always come up with your questions.
+Okay.
+Hope that answers your question.
+No, but if everyone is fine, then no point in discussion.
+Thanks.
+Yeah.
+I think better to, I mean, discuss in group and come with, I mean, what we are expecting.
+Oh.
+Agreed.
+You can discuss among yourself, like, what could be done, but this is the structure, so you need to talk with your coordinators as well, as well as, like, this is how the structure is. So, if there is something, like,
+Like, we need to come up with that, and then there are certain suggestions, then obviously that will be looked upon, but…
+You can discuss and you can come back. But as far as I understand, I mean, I also being into this, for a very long time, as far as I understand, until and unless you go through the things.
+First.
+And then you come up with your questions, nothing is going to work out.
+I can have a session for 4 hours, that's okay.
+I can take for 4 hours everything in detail, every topic, everything in detail, but.
+Sitting for 4 hours, listening to that. And then you… your productivity… I mean, obviously, when you're going for a self-paced thing, you are going by your own speed. So every day, if you're doing… it's a 6 minutes video, so every day, if you're doing even spending half an hour.
+You are going through 2-3 videos.
+So, in a week, you have 7 to 8 videos only.
+So, if you can spare…
+some 15 minutes or half an hour, which we usually spend in something useless also, right? I mean, useless things, like we go sit somewhere. If we can spend that much half an hour also, I think for the week, you will be able to cover it up. But yes, if it is getting accumulated, and then these topics are, like.
+to some extent, it is not that easy. It's complicated. So when you are learning through it, you will definitely come up with your questions. You jot down the questions, you come up when we are discussing in the live class, you come up with your questions. I think with that effort from your end and from my end, whatever from my end, I will do it.
+If you tell me to, you know, explain it in more detail, we don't want to go in, experiential learning, or we don't want to do in that manner, then I can take a 4 hours class. That's not an issue.
+But the thing is, you also need to go through it simultaneously and then come back.
+Okay, this is the part which we are not understanding, or this is the part which we are not getting. This is the… the lab that has been given, we are not clear about this step.
+Then it becomes more meaningful to answer your questions.
+Thank you.
+Okay, then we can go to the experiential learning,
+Discussion, the use case that Has been here, so…
+In this use case, we have basically tried to implement,
+the VGGNET and LXNET from scratch, okay?
+Let me just try to share… one second.
+Okay, so this is the, experiential learning which is there. So here, what has been tried here is to keep, the LXNet and the VGGNet. These two are, mostly used whenever you… we are working in any kind of scenarios. So…
+LXNet and VGGNet is something which is used from, you know, for the various use cases.
+So in this practical, you will get an idea of LXNet and VGGNet from scratch.
+So, how we can verify, and then how we can, you know, run it on certain use case or certain datasets. So, we have an image dataset called as Cypher 10. I have provided this dataset to you also.
+you can take… Cypher is a big dataset, okay? It's a dataset of image, where lots of images are there, and you can basically classify those images.
+So it's a use case of image classification. In real time also, whenever we go with image classifications, we use this kind of data set. And this Cypher data set came up from one of the organization who was trying to segmentize the images.
+various classes of images. So we have taken a small portion of that data set. It is called as Cypher 10.
+And then we have tried to, see the… we have tried to use this dataset and try to run these models on top of this dataset. And, also a discussion of YOLO is also there. So YOLO… for YOLO, we are using a library called as Ultralytics.
+Right? Alternate Lytics Library, and
+like, how YOLO works, how that bounding boxes come up, is through this Ultralytics library. So you can go through that as well.
+These are all the installations, like, NumPy and then Torch. You're taking the PyTorch version.
+So this is the LXNet, structure from scratch. Like.
+what are the different layers? This is the first layer, this is the second layer, third layer, fourth layer, fifth layer, and the final layer, where you're getting the output, right? So, what are the different dimensions of each of the layers? Because this is a standard network. We can't change anything here.
+It's a standard network which has been there. Whoever has created LXNet, that, I mean, it has come into a research paper where this kind of structure was used.
+Where, you know, the first layer had this dimension, second layer had this dimension, you can see the 96 filters were used, ReLU was used, maximum pooling was done.
+Then in the third, it was like one padding and then, you know, ReLU was used. Sorry, 1,384 padding sequences and then ReLU was used.
+Then, finally, the FC layer, how many classes are there. So, through that, we are getting the logits, and we are getting the image classification done.
+Okay, so how you can create this particular structure in the code, same thing, but we have just placed it on the code. So from the scratch, how we are actually implementing LXNet.
+This is there in the, in this particular research paper. You can go through this if you want to understand the implementation of LXNet from scratch. So.
+The layers that we have seen here, right?
+the layers that we have seen here, that only has been implemented here, over here, see? Convolutional layer 1, convolutional layer 2, convolutional layer 3, 4, and 5.
+So, total, 5 layers are here, if you see here.
+total 5 layers are here, and that only we have tried to put it up here, okay? And then we have done the, pooling, and then finally the sequential, the sequence we have called, and then dropout layer, the linear layer, the ReLU, the dropout. So…
+Everything in sequence, we have placed it, whatever you see here.
+as the base of LXNet, the same implementation has been done here.
+Where we are calling each and every layer, and then we are actually creating the LXNet class.
+This is the LXNet class, which is the same structure in code.
+Okay? So if you see the structure.
+This is how the LXNet structure looks like. Now.
+Every time you want to use LXNet, you can create the base LXNet, and this LXNet, you can use it on your particular data.
+So, similar way, VGG also is created. So, there are various versions of VGG, we have seen. VGG11, VGG13, VGG16, and VGG19.
+Right? So, in that case, what happens? When VGG different forms are there, so what are the different dimensions that we are using? And this is also very, very constant, which is defined in the standard VGG configurations in the paper.
+So likewise, this is the paper name. I have given the paper name so that you can also go back and refer.
+This is VGG16 that we are trying to implement, and for VGG16, we have given all the configurations, like, what are the different features that are there that we are getting from the config, then we have the pooling layer, we have all the…
+Sequential layers, everything, and then, finally, like.
+in what kind of channels we are going to… we have, suppose, 3 channels, and in what kind of channels we are going to place it. What is this channels? This…
+this channels whatever you see here, right? This channels whatever you see here. So, you can see V is equal to M, then you're going to have the max layer, or else you go for normal convolutional layer. So, whatever you see here in the config.
+And whatever layers are mentioned in the paper, that has been implemented here as the base VGG.
+16 thing, okay? So, you can see here.
+for… you are calling the class VGG. It is a VGG16. You can change it to some other VGG as well. And for 1,000 classes, we are doing this. 1,000 classes of images.
+So we are passing that, and this is how the structure of VGG looks.
+Again, as I'm telling you, this is the constant structure which has been defined in the research paper. Whoever has taken out the VGG structure, right? You can go through the paper, and you can also have a look upon it.
+Like, there is nothing to go in detail about it, because these are, like, how many layers are there, what is the size of the layer, what is the stripe that has been used, how much padding has been used. So, multiple layers are
+piled up, and then the VGG thing has came up. We have seen during the discussion, like, why VGG11, why VGG16, why VGG19? So, in VGG11, how many, convolutional layer and how many FC was used?
+in Vgg. 19. How many convolutional layer, and how many Fc. Layers were used based on that only it has got the namings.
+Right? So, we can create the function for the LXNet and the VGG. You can check the parameters, how many parameters are there, how many trainable parameters, total parameters and trainable parameters are there for the model, and then
+How?
+how much the LXNet and VGGNet expects as the size. So, LXNet will expect 227 cross 227, VGG will expect 224 cross 224.
+Okay? So… upon that, how… Your model is going to look.
+So, basically, like, what will be the output shape, how many parameters will be there, total parameters, and out of that, how many trainable parameters are there. Sometimes, whatever total parameters you see, all of them are trainable. So, you can see both the numbers are same.
+Sometimes trainable parameters are less.
+Then the total parameters.
+So it depends how you can, how you are defining the parameters over here, okay? Now you can call your dataset. So we have our dataset, Cypher dataset, which is, again, an image dataset, as I told you.
+So, there is a CSV file where the image shape and the label of that image, the pixel values, the number of classes, everything is present. You call that through a function, you load up the pixel values, so finally your image and label will be coming out.
+image, along with that label. Label means what kind of image this is. This is a cat, or a dog, or a bus, or what?
+So like that, many classes are there in this Cypher 10 data set.
+So you can create the function for… sorry, you can create the class for it, and finally, you can load it from your S3. So I have used, from S3, and I've used a small section of that dataset, so I'm trying to load my.
+I'm going to stream it from S3 bucket, I'm going to load that and read my dataset. So, this is a CSV dataset, which I'm going to read, and I'm going to load my labels and the pixels as well. So, finally, for the dataset, my labels and the pixels are in place.
+Okay? So, function is already present. Now, I will pass my URL where my dataset is there. So, the train.csv, this is the file which is already there. I have sent the file. You can have the look on that dataset, right?
+And now we can do the transformation. See, LXNet will have an expectation of 227 cos 227 image dimension, so that you can resize it. You can load the image, you can resize, change it to tensor, and normalize the image.
+Okay, so what happens over here is, like, all the functions that we wanted, we have defined on the top.
+But.
+Here, now, we are going to actually
+call all the functions. You're going to call up your data, which is, like, I want to, use a small section of the data, so the URL, from the URL I'm going to, take.
+Actually, I have taken 5,000, images, data, to make it a little bit short, because the processing time of this kind of models are longer time, right? So you can take a subset of this data, I've taken 5,000. You can take, and you can.
+basically, have the pixels and the label, and then you can initialize your dataset and load it using a data loader. So, how many classes are there? You can see how many classes are there, right?
+So finally, after loading up the data set, you can apply your LXNet. So on the number of classes, you are applying your LXNet class, which you have defined on the top.
+Then, after that, everything is same. Any neural network will go through all of these steps. Defining the loss, defining the optimizer, going through this many batches, if maximum batches are there, break it. Same to same, whatever we have done in the previous implementations also.
+Load the images.
+go through the optimizer, get the output of that image, apply the loss function, and then finally, you will see the training has been completed. So, what we have done is we have loaded 5,000 samples, right? We have detected that this many 256 classes were there.
+That means 256 classes of images were there in that data set.
+Okay? So, for every 5 batch, we have run the epoch. You can see batch 0, this is the loss. Batch 5, this is the loss. Batch 15, this is the loss. So, after every 5-5 batch, we have run. You can change that. I have written here, like.
+For 5, every multiple of 5, you can change and you can run it for more or less.
+So, you can see every time the loss is getting decreased, okay? Starting from 5.54, it has come to 5.11.
+So, like this.
+What you can do, you have defined the architecture from scratch.
+the LXNet and the VGGNet architecture from scratch. And from there.
+Taking a data set, which is,
+you know, real-time, image dataset, that is Cypher 10. You can go back and you can refer also. Cypher 10 has come up into certain competitions.
+Where companies have provided that, and it has come up in the competitions, and then people have produced wonderful results, okay, with Cypher 10. That is why we try to implement our first architectures with Cypher 10. It's good dataset, and very stable dataset.
+So, we have taken certain samples of data from Cypher 10, and then we have tried to run our in-scratch model, and we have, tried to implement on this.
+CSV, I mean, on this image file, right?
+And we have seen that it is actually doing its work. When the loss is decreasing, that means you understand that your model is going in a correct direction.
+Whenever the loss is stopped or whenever the loss is increasing, that means the model is not going in a proper way.
+So when model is going with the lesser loss over the epochs, that means it is going in the right direction, okay? We have done with 5,000 samples. If you increase the samples, you can increase it here.
+Here.
+maximum rows, you can increase it here. I have kept it 5000. You can increase it, and then run and check it. Since these models will take time, so you will have to wait.
+Okay? So, you can increase the number of epochs, you can increase the batch size, you can increase your number of samples, and you can run, and you can check it.
+Okay? So this is how…
+implementation of LXNet or VGGNet from scratch is done, and we have implemented that on a dataset. I mean, trained that on a dataset, right? And after that, if you take one image and implement this model, you will be able to do that. So, in the last example, we have seen how to take
+a particular image, And how to implement a particular model on that image.
+I think in Module 2, we have discussed that during the EL, right? So, what happens over there is, like, whenever we are taking certain set of samples, test samples, and implementing, you also check there whether the loss is decreasing or not.
+Okay? You check the accuracy as well as the loss. So whenever the loss is decreasing, that means it is going in a right direction.
+So this talks about this LXNet and VGGNet. Then the YOLO part is also there. So for that, you will have to do the installation of OpenCV.
+and OpenCV Python, and then you will have to implement your YOLO model. See, Ultralytics is a library which already has YOLO model in it, okay? You can, call this library called as Ultralytics. Even industries use this, okay?
+So, Ultralytics will, have this YOLO, and you can load up the YOLO model, so it is the, 8th version of the model, okay? It is a little bit faster.
+So you can directly call the model from the Ultralytics library, and you can implement it on a particular data. It's a bus data, image data, you can see, from the Ultralytics only.
+So you can,
+have your model on… run the model on your sample, and then you can see the detected boxes will be coming out. So once you are fitting that, you can see there are 6 objects that are present in that picture.
+So bus, the confidence is 87%. This is the box size.
+This is how it will give it to you.
+Person is there, confidence is 87. Beside that, there is a person.
+One bounding box is there in that person also. This is the bounding box size.
+Okay? Then, another person is there, 85…
+percent confidence is there. Another person is there, 83%. Another person is there, 26. That means this is not likely to be a person, maybe looking like a person.
+Okay? It's not, fully visible in the picture. Maybe half of the human is visible in that picture, so that is why the confidence is less.
+And then the stop sign. That means there will be a red traffic signal or something like that. That is also visible partially, so that is why 26% is the confidence.
+So, like that, for each and every object that is present in that picture.
+It will detect that, and it will give you the bounding boxes. This is how YOLO works.
+So, in a real time, you can imagine the use cases. Suppose, you are detecting certain thing in the CCTV cameras.
+In traffic signals, in traffic, roads, you are detecting certain ways of, you know, detecting humans, if some accidents happen, then YOLO mechanism is working there.
+In COVID time also, remember people had deployed certain kinds of models like this for detecting mask.
+If somebody is not wearing mask, they will be detecting that from the CCTV images, and they will be telling this is the person who is not wearing the mask.
+So, that time also, YOLO model was deployed. So, if you talk about the real-time use cases, definitely you can relate it. What we are doing here is
+Some way or the other used in some of the use cases in real time we always observe that during the image segmentation or classification or this kind of.
+implementations, this kind of models are used, where definitely the bounding boxes are there, where there will be a bounding box in the mask, and there will be a bounding box on your face. Now, obviously, that model is not going to tell a door is wearing a mask, right? It has to be a human.
+So, how you are going to implement the model so that the detection happens properly? So, like this, in those kind of use cases, you are going to use YOLO, and it is already being used.
+Okay?
+So, implementation-wise, you can do this, and if you want to observe the…
+boxes, you can run this, to observe the boxes, like, with all the dimensions, you can, run this, okay? You will see the boxes around each and every object.
+So…
+this module talks more about the standard CNN architectures and the YOLO model, right? So, both the implementations we have seen. In YOLO, you don't have to do it from the scratch. In LXNet and VGGNet, also that is present, but we… I have shown you how to create it from the scratch also.
+the architecture, the base architecture, how you can create it. And YOLO, obviously, you are going to use Ultralytics. Since YOLO is a very big algorithm, you cannot train it here.
+Okay? It becomes very difficult to train YOLO model, because it requires a lot of infrastructure.
+So, that is why we use the YOLO different versions from Ultralytics library, and then we use it for our use cases.
+Okay? So this only you are going to see in your experiential learning for Module 3.
+what I suggest all of you is to go through, since you have a concern on, like, understanding that in depth, what I suggest is to go through the modules.
+if you're doing a program, obviously you need to go through the materials which is being provided, right? So…
+please go through it. If anything that you're facing problem, like, I'm not understanding maybe the full module itself, then we'll try to see that, like, we can have certain things, certain sessions, where you can… we will be able to discuss.
+Okay, but that is very important, like you going through the session and coming back.
+So I've just stopped my sharing. If there is any question, you can ask me.
+Yeah, hi, ma'am.
+Hello, am I audible?
+Yes, Hemant, tell me.
+Ma'am, I have one question. This is regarding the denoising of the images that we do.
+So, like, for any… before, you know, deploying any model, be it LXNet, VGGNet, or YOLO, how we are, like, doing some denoising? For example, we are having a very blurry image.
+And the model is not able to recognize that.
+Hmm.
+So what sort of steps should we take in mind or are these universal steps like for all the models or like model specific steps are there for denoising the images?
+Yes, so in this models, usually denoising process is not done that well.
+So there is one of the things, called as stable diffusion. You might have heard about the diffusion models. I don't know whether you have heard or not, but anyways, we will be discussing about that in the upcoming modules, where this denoising process is done very well.
+So what this nature of the models is there is, like, they will be actually adding up noise in the image, and then the model will learn to remove the noise.
+Okay.
+In this kind of YOLO model, YOLO is obviously something which is different, it is only for bounding, for detection only, but if you think about LXNet or VGGNet, it has an inbuilt mechanism to bring to a particular resolution to denoise the image, but it's not that efficient.
+If you give a bad quality image, it will learn on top of that.
+So that is why, you know, diffusion models and other things have came up, which is after this.
+If you specifically talk about denoising.
+Okay, got it, got it. So, I have another question. I mean, this was a recent use case that happened. I don't know whether you have heard about it or not. So, there was a case from Bangalore wherein, you know, there was one driver and he was carrying guitar at his back.
+And he was like, you know, issued a chalan stating that there is a pillion rider and he's not wearing a helmet.
+Hmm.
+So what sort of use case can it be? Was it like the lack of training or we were not using the proper model on the AI layer, which was on the CCTV camera? So why that issue happened? So if you want to throw some light on that.
+Yes, yes, that's a good question, actually. So, there could be two problems, Hemant, here. One is the kind of dataset that they might have used for training this kind of models.
+They might not have given any, glimpse of guitar, or any this kind of, you know, objects when they were training this model. That could be a problem with the training set also.
+That is one problem. Secondly, the visibility of that object.
+See, whenever you are, like, implementing any kind of YOLO model or something like that, right? Where, that person is wearing a helmet or not, whether there are some, adjacent object.
+Like adjacent to helmet, then what this YOLO things will, YOLO kind of model will do is like.
+If at all it is not able to detect the object with particular confidence, then.
+The detection fails, actually.
+So confidence is one of the factor because of which it might have missed.
+Secondly, the quality of data that they might have used to train this model, whatever model they are using for doing the detection.
+Okay, okay, got it.
+Yeah.
+Thank you.
+Yeah.
+Vandita, okay.
+Okay, so, both, theoretical as well as practical experience, I mean, problems will be there in your exam, Vandita.
+Like, whatever we are discussing, here, it's a gist. And whatever, you will be learning through the module, that… the questions regarding that, and also, like, whatever impractical, EL thing we have discussed about the architecture, questions will be around all the aspects.
+Okay.
+Any other questions?
+Okay, if there are no other questions, then we will close off.
+And then we'll… I'll see you all in the next week with a new module, and also, before leaving, I just want to encourage all of you, please go through the modules properly, spend some time.
+I'm not telling you spend more time in a day, at least half an hour every day, that should be enough.
+you will be good enough to go with all your modules, okay? And don't pile up the things, keep keeping for the last, don't do that, since with deep learning, that doesn't work.
+You'll forget everything. It will pile up at the last. During exam, you'll be struggling, I didn't understand, I didn't do that, no.
+Come up.
+In a regular basis, half an hour you give, you should be able to do it. And in Saturdays and Sundays, if you have some more time, please do that, and then it will be good for you, okay?
+And after that, if you have any questions, please come up with your questions, I am there to help.
+Even if you ask me 20 questions, I'll answer. But please don't sit with the questions.
+Okay, fine then, I am closing the session and bye, good night.

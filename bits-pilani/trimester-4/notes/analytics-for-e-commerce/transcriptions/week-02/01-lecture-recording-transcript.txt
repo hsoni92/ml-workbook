@@ -1,0 +1,342 @@
+Okay,
+So let me know if my screen is visible.
+Is it visible, guys?
+Okay, thank you, SINDHU. So…
+In the previous class, so, we… what we talk about, we talked about E-Commerce. What is E-Commerce, and why people are crazy about E-Commerce business, and why it is happening. Okay, we talked about what is D2C. Okay, what is D2C business?
+direct-to-customer or direct-to-consumer. Okay, what is a marketplace? Marketplace as in, you know, about Amazon, about Flipkart, okay, how the revenue models looks like, okay, where, who keeps majority of the portion of the profits.
+in, and what is the positives versus, what is the plus, what is the minus, if you compare D2C versus marketplace, okay?
+And there are also, like, subscription commerce, okay? So, how, subscription-based models as well.
+Then there is, we talked about, a little bit about the churn and retention, okay? So those couple of things are also there. Then, even also we talked about if, you know,
+ONDC, a little bit about that, we spoke about, okay? Then we spoke, also spoke about… we haven't spoken about the five, stages of creation, collection, processing, analysis, and reporting, so that we do in,
+analytics value chain, or when we get about E-Commerce data, what do you do with that data? What kind of reporting can we…
+Why do we need that reporting thing, and why do we need that analysis to be done? Okay.
+And, you know, we also talked about a different, matrix, different matrix, like, if I talk about churn rate, you talk about, RFM, so all these… we haven't spoken about RFM, right? Or CLV.
+So these are different, different matrix which are available. So then we also spoke about, about the, you know, the product life cycle. So that is product view.
+you know, added to cart, purchase rate, so there is also about, you know, clicks, the time you are spending in, in your, in the, in the website. So all these things are analyzed, and so whenever,
+user comes in, and whenever user leaves, what is the… how much time they are spending, what all the things they are browsing, if it is a genuine customer or not. So, all these things we have,
+We have understood. And also, we have also understood about, you know,
+abandon rate, you know, cart not added to cart, or, you know, all these different metrics which are available, which will give you a better idea how your products are doing, how your, things are doing. And also, we talked about a little bit about,
+Building, our tracking plan.
+So, these are some of the things that we have covered in last week. Now, today, what we are going to do is we are going to
+start module 2.
+And in Module 2, we are going to talk a little bit more about, about exploratory data analysis, okay?
+And we are going to talk about outliers, missing data, structured or unstructured data, and finding patterns, and anomaly detection, affinity analysis, okay? And also, we have talked about, you know, data storytelling.
+Okay, by the end of the session, it's like a… it's like a… I will say it's not a… last class was completely theory. This class will be a little bit hands-on.
+Okay, so that you also have an idea of what are the things, what kind of data we are dealing with, and how it is going to work out.
+Okay.
+That being said, let me share my screen again, and this time we am,
+Let me share the… pull up the Excel file for you. Just give me a minute.
+So guys, any questions we have? We have got very less people.
+So, guys, if you have got any questions anytime during, during the call or during the session, please feel free to, you know, unmute and speak up.
+Okay.
+Yes, give me a minute…
+Okay, so… Let me just share my screen, and let me know if my screen is visible.
+Guys, I am… I hope you are all aware of Excel.
+Okay?
+Let me know if my screen is visible.
+And I hope you all have hands-on into Excel, and how Excel works, and all those things.
+Right?
+Yes, no, maybe?
+Yep, yep, yep. Okay. So, I am going to take an example. So, this is a sample data, which I have obtained from
+Google, or you can get it from Kaggle also. This is called Superstore data. So, you have data across different product IDs.
+And different, based on when it was shipped, order date, customer name, country, etc, etc. Lots and lots of things are… lots of information are there. But we are not going into that.
+Okay, or maybe we should take that into consideration.
+Okay, so let's take about orders data. So, I'm not doing it into… into Python. So, which… so have you, I want to ask you any questions. So, which tool are you comfortable with? Are you comfortable with Excel? Are you comfortable with Python? Or which tool you are… will be comfortable with?
+Excel?
+Yes, no, maybe?
+Python. Okay, Shivansh… what about the rest?
+Just a handful of people are there.
+Both. Okay, let's do one thing.
+Let's do one thing. Let me open Anaconda, and while it opens, I'm going to show you
+the things in, Excel.
+It will take a little bit of time, but since we have already started… Okay, so my… so when, say, let's talk about…
+Array, sorry.
+Because this is, just then wait just a couple of minutes, let Python opens up.
+Okay, so now… What do we mean by EDA?
+Okay, or why EDA is required. So,
+When you get any kind of data.
+Okay? When you get any kind of data, any kind of data. So, why do… what do you do the first thing that comes to your… what's the first thing that comes to your mind? What are you going to do… what… what data it contains, and how you're going to deal with it, or…
+how you're going to deal with this data, right? So, for that, you have to do a first-level analysis, which is called as EDA, or Exploratory Data Analysis. Yes, so what EDA tells you is, like.
+It's majorly, like, you have to bring out insights from that data.
+That is about… Ibier.
+Okay, so where you tell about what kind of data you're dealing with, what kind of patterns you are having.
+Okay, what is the general statistics about the data, whether your data is normally distributed, whether it's not normally distributed, whether it's following any patterns, and so on and so forth. Because you're… when you talk about data, it will have different attributes, it will have different, objects as well.
+Or, in short, we can say it will have different values, it will have different, columns, and you have to play around and find out the relationship across each other to make sense out of the data.
+Right. So, yes, and it's not always like your data is going to be clean and correct.
+Right? So you have to make sure what, what kind of, you know, your, your data, data, you, you, you have to do some data pre-processing steps.
+That is, you have to remove the noise, you have to remove unreadable characters, you have to remove some certain spaces, certain blanks from the data to make some
+To make some, you know, to… to have…
+To have some, meaningful insights from the data.
+Okay, so before going into the data, okay, let me talk a little bit about One Step Back, and let's talk about what data is.
+Wait, give me a minute, I'm sharing my… we have a white screen, whiteboard, right?
+Wait, wait, wait, wait, wait, wait, wait, wait, wait, let me see if I can…
+Quick template…
+a new one.
+Okay, got it.
+Okay. Suppose… so I have the whiteboard. Okay.
+You can see my screen, right?
+And you can play around with it. So, suppose, let's talk about, first, about data.
+Guys, please excuse me for my handwriting. It is very, very… I've got to say.
+good, bad, ugly, whatever you want to say about it. So, what is data? Data is anything which occupies a little bit of space.
+It can be… It can be anything, like the video which you are seeing.
+If you're talking, and my voice, that is again data. You are sending some messages, that is, again, data, okay?
+Or it can also be the images that you're clicking, the video that you are seeing, or the things that I'm writing on the whiteboard. That is, again, data. Everything and anything which can acquies a little bit of space is called data.
+So, data can be of majorly.
+Okay.
+Hey guys, I got dropped off.
+I don't know what happened.
+Something really happened, nasty, and because of which, I had to drop off.
+Okay, let me just bring up my screen again.
+Whiteboard.
+Okay, so I was talking about data, right?
+So, when I was talking about data, data is anything and everything which occupies space.
+buddy.
+Data is anything and everything, which occupies a little bit of… space.
+Right. And…
+And there are two types of data. If I talk about the types of data, their data can be of two types. One is, which is numeric.
+The other, that is categorical.
+Numeric is something which has numbers.
+Okay.
+Any kind of numbers.
+It can be… it can be a whole number, it can be a numeric number, it… it can be a fractional number, it can be a scientific number, it can be Boolean, etc, etc. And categorical is something which is non-numeric. That means it will have text.
+Okay, it will have…
+it will… here it will be values, here you will be NAD alphabets, it will be text, names, etc, etc. So, these are the two types of data, majorly. One is called numeric, the other is categorical. Okay, so again, if I… and
+Okay?
+And and also, there are two types of… two… two data types that we'll be dealing with.
+Okay, so one is called, structured data.
+The other is called unstructured data. Why we are talking about numeric and categorical, you'll understand.
+Okay.
+So… So, structured is something which has… which has a proper structure, like matrix, or like a tabular view.
+Or it has… you can, in short, you can say which has rows and columns.
+So that is, structured data.
+Or it… majorly, it contains about values.
+It has values, okay? It is numeric.
+And, categorical, both.
+Or only one. Okay, so anything which has a tabular format is called a structured data, and the
+And that kind of data, which doesn't have any kind of structure, is called a unstructured data.
+Like, for example, Okay, it's again gone. Guys, you can able to see my screen, right?
+Yes? No? Maybe? Thumbs up, thumbs down?
+Hello?
+Yep, yep, yep, yep. Okay, so…
+Like, for example, you are, for structured data.
+When I talk about structured data, you are dealing with, say, Say, bank account details, bank data.
+Or, say, retail data.
+Or, E-Com data.
+etc, etc.
+Okay, all these are structured.
+When we talk about unstructured, what is that unstructured data?
+That means which has got no structure. That means which has got no rows, no columns, like your images.
+like your… It can be images, like your videos, like your texts.
+Okay? It can be a WhatsApp text, it can be your comments, it can be your, you know, stories, it can be… it can be anything.
+It can be images, it can be voice, it can be audio, or… you name it, and you have it, it can be of any type. That is unstructured.
+Okay, so structure is something which has a tabular format, and unstructured is something which is completely, you know, unstructured. That means it has got no structure, no rows, no columns, nothing.
+Right? And when we deal with E-Commerce data, majorly, we will be dealing with structured data.
+Okay. Now, one more thing, one more thing before, since we are in this structured and unstructured. So, what do you think will occupies more space? Is it structured or unstructured? Like, I have, I have a space of, say, 100MB.
+Okay, I have a space of 100MB in my, say, in my memory chip.
+Like, I have.
+I have 10… 10 structured data, 10 unstructured data.
+Okay, so when I am putting 10 unstructured data, this becomes full.
+And when I'm trying to put 10 structured data.
+it then still be left with the space. Or, for example, You have an Almera.
+Okay, you know Almira?
+Okay, you have a Almira, sorry about that. So, you have an Almira. You… you… you have, again, take 10 clothes, which are… 10 clothes are folded.
+And 10 are not folded.
+Okay, 10 are folded, 10 are not folded.
+you first take the knot, fold it, and try to dump in into your cupboard. You will find… you will find there is hardly any space, because you're just dumping in.
+Right, you'll find, at the end of the day, you'll be fighting with the space.
+Okay? But, if you take those 10 folded clothes and try to put 10 in the Almira, you'll find you'll be still left with lots of space in there.
+So that's the trick. When you are dealing with structured data, you… your… the space that it occupies is less. When you're dealing with unstructured data, the space
+is… You, you will be outage, you'll be out of space.
+Okay.
+So that's the thing you… and majorly when you are dealing with E-Commerce data.
+In E-Commerce data, yes, there is plenty and plenty of data that will come in your way when you're dealing with E-Commerce data. Or if you are in the E-Commerce field, you will have lots and lots of data.
+But, you have to first store it, you have to…
+clean it, and then find out meaningful insights. Because unless you do that, those things, there's no use in analyzing or, you know…
+Or, you know, until you… until and unless you analyze those things, it makes no sense.
+Okay.
+Now, any questions so far?
+So, yes, in those videos, you will have a more detailed explanation of what your structured and unstructured data is all about, okay? What happens and why, and all those things, okay,
+And, why we are going to do all those things. You will have a more detailed explanation.
+Guys, any questions so far?
+Okay.
+Let's move to the… Next speech.
+Clip, clip, clip, nope.
+Can I add here?
+Now, we are going to talk about a little bit, about outliers.
+Okay, what is an outlier?
+What is an out?
+Liar.
+What is an outlier? Suppose… You have, you have data.
+Okay, you have data, say, for example, you have the price of goods.
+you have the price of goods. Say I have 10 price. Okay, it's ranging from…
+So it starts with 10 rupees, 50 rupees.
+60 rupees, 110.
+It is 5000… Here, this is 60,000.
+2, 3, 4, 5, 6. Here there is 20.
+Here, let's keep it 90.
+So, what will happening?
+UC… so let's change the color.
+So what is happening? It's the price range, say, of different products you have, okay? Suppose here you will see it's ranging between, say, 0 to 110, maybe?
+Majorly, it is ranging in between that, but there are two points. One is $5,000, the other is 60,000, which is really, really standing up off. Or if you try to,
+plot a graph.
+like, a scatter plot or a bar graph. You'll have 1, 2, and 1 will be so big.
+Other will be so big and rest. Majorly, your all data points will fall in this range, but two of the data points, 5,000 and 60,000, will fall… will have huge bars.
+60,000 will have… bigger part.
+Okay, so what… so this is an outlier. So what is an outlier? Outlier is something where it falls outside the normal boundary. That is an outlier.
+Okay, and, and, and which, which really, really stands out, that is an outlier.
+Right? Or, for example, every day you are shopping. Every day you are shopping for, in the range… you are spending amount, or you have Google Pay account, and you are spending in between thousands to, say, maximum 10,000 each day.
+you are spending. So yes, when your salary comes up, then you have to pay the credit card bills. I'm not taking that into consideration. I'm considering, say, from 10th to 30th.
+These are the days I am considering. The normal amount spending that you are spending is, like, if there is any weekend party, you are spending more around $5,000, $6,000, but I'm taking the upper cap of between $1,000 to $10,000. Normally, you're spending.
+All of a sudden, I see a transaction of, say, 20 lakhs.
+One transaction on a particular day of 20 LAKS.
+What do you think this is? Definitely, this is an outlier.
+Okay? Because it is falling apart, it is falling… Out of the ordinary.
+Right? So that's why this is an outlier.
+Okay, so these are some of the things you will come across in your e-commerce studies. Like.
+Like, there you might come across something, some use cases, or something, which will tell you, okay, this is something you are,
+You are… you are having an outlier.
+Okay. So, or for example, if I talk about order value.
+Okay, order value, or even you are… the order value that you are spending. It's… so, suppose you have
+This is about the spending. If I am taking the order value, right? Order value, that is the average value of the order that you are being placed each day. It is ranging from 1,000 to 10,000. All of a sudden, 20 lakh.
+How 20 LAKS? That's a completely outlier.
+Okay.
+So we spoke about… so what all we have spoken about till now? We have spoken about
+exploiti data analysis. Why do we need, exploit data analysis? The thing is, you have to find about
+Okay, different statistics, different, different statistics about that, if you have data.
+Your data should tell you how they are related with each other and, you know, different statistics about your data, like your mean, median, mode, variance, cross-correlation, etc, etc.
+Okay, or if, you know, what is the… if I'm talking about E-Commerce, what is the order value, what is the average price, number of orders, total sales, etc, etc, and etc. will come under EDA. Next is, we talked about outliers.
+Okay? So, what are outliers? Outliers are something which are really falling out.
+Which are falling out of the ordinary, right?
+Then, then we spoke about structured and unstructured data. Okay, structured data is something which has got
+You know, which has got rows and columns, okay, and which has got nothing is under unstructured data. Like.
+Like, for example, if, can anyone give me about unstruct… example of unstructured data?
+Yes, reviews.
+the reviews, V-I-E-W-S, right? Reviews. So, the reviews that you get for different products, that is completely an unstructured data. And yes, you do have to analyze them as well, whether they are positive, or whether they are negative.
+So that you will have an idea what kind of brand image you are having. Is it a positive approach, or is it a negative approach?
+Okay, so that all falls under, unstructured.
+Okay, so next is, next is about, like, when you have visited E-Commerce page, right? You have, sorry, what is happening?
+Oh, just a minute…
+this one…
+Okay. Now, suppose, you are, I am, I am Amazon.
+I am opening, Amazon page.
+Okay, and you are thinking of buying a laptop?
+Okay, it's a great Indian sale, grade GIS, or…
+or the Tiwali sale, or whichever sale it happens. So, before the Shira, there's a great Indian sale, and after that, there is the… before Tiwali, there's another sale that happens in Amazon. So, suppose you are browsing laptop.
+Okay, and in that time, you are looking at different, different products, and you have, you know, you are…
+You are thinking of buying an Apple product.
+Okay, Apple laptop.
+you've added it to your cart, okay? And you have bought it. Okay, or you are thinking of purchasing it. In below that, definitely you will… or let me show you in person.
+Just a minute.
+Let me know if my screen is visible, guys.
+You able to see my screen?
+Yes, snow, maybe?
+Okay.
+So, suppose, yeah, as I said, Great Indian Festival is coming. Greatest Indian Sale is coming from 8th.
+Okay, suppose iPhone.
+Or MacBook?
+I don't know which is the latest one, or suppose… wow, it's cheap!
+13 Pro… okay, suppose you are thinking of buying this.
+Oh, I don't know.
+If I click it, it's going to the next page, wait.
+I have to go to that page.
+Just give me a minute.
+Now, you have gone to this page, right? And here, what is showing up.
+You'll see if you want to exchange. Without exchange, you will get this service center replacement with what color you are looking for. And below it, if you come, so this is some price activity that you're going to see. Okay, here you are going to see, frequently bought together.
+Who is that person? Who is buying
+all these three are all at once. I am not sure about it. Might be, but here, explore more from other stores. Here, you are getting,
+some, some, protectors, here are keyboard protectors, here are the USB, here is something like that, here is mouse, here is the bag, here is…
+Phone, no. Mouse. So, there are some relevant things, there are some irrelevant things, like, three, three products, right? So, what is this? This is, this is called,
+This is called, affinity analysis, or where you people are suggesting you, this is some… where people are suggesting you, or the website is suggesting you something which go in together.
+Okay.
+Because, so, normally, when you are buying a mobile or buying a laptop.
+So you always make sure my, you know, laptops get protected, I'm looking for a screen guard or a key guard, something like that, so that, you know, there is hardly any damage. So that is about affinity analysis, and E-Commerce based on your things that you are browsing for other customers. They are suggesting you, they're pushing all those things to you, so that you feel trapped and you will buy it.
+A little more.
+So, if a person is spending $70,000 to $73,000, so he won't shy away from spending,
+100,000 or 2,000 more.
+Right, so that is about… and E-Commerce, the objective is, yes.
+let me get as much as possible, as much as revenue for each customer. So that is about affinity analysis. Okay, so then, again, we have talked about, outliers. There is,
+There are lots of things happens in E-Commerce, and there are frauds also. Okay, there are frauds also happen. Like, you remember in Amazon, there was,
+a few times back, there was a news, you know, where a person have ordered Apple, Apple product, Apple iPhone, and instead of getting a phone, he got an Apple. Actual Apple.
+Okay, it also happens, like, you know, the…
+there is some orders which, which increases, okay? And, there are some things which… there, there are orders,
+there are some orders which spikes, or during the, during the sales season, your orders goes up. So these are, these are some of the things which are actually general pattern, but not part of outliers. There are some things which is an outlier, but
+you have to make sure which is an outline, which is a not, but normally, things happen. There are also, you have to keep a tab where outliers are happening. There might be some… some customers who are playing the trap.
+Suppose you have ordered something, they delivered the right product, but when they're returning, they're returning a completely different product. So that is something which you have to keep,
+Ion.
+Okay, and the last, but not least, is about, you know, is about your data visualization. That means, in E-Commerce, you, as I said, you have to keep a trap of each of the data that
+That comes to you, or, you know, as you have got access to lots and lots of data, you have to make sure
+And have some meaningful insights from that data, or have some graphical representation, so that you can refer, always, so that
+it becomes easier for you to understand and take the steps. Like, for example, you have the, like, you have created a new, you've created a new product.
+from the feedback, from the reviews, definitely you can understand what people are looking at your product. Is it a positive review? Is it a negative review? Or so on, and based on that, or if they are facing any issues, where the issue is, or if they're based on the reviews also.
+Or based on the feedback, the, you know, the stars that you are giving. Based on that, also, you can take a step, whether it is a good thing, bad thing, ugly thing.
+Or whatever is going good, or what is going bad.
+What are the sales happening? If people are abandoning it in between the carts, why they are abandoning it, and where the issue is. Is it something related to cart? Is it something related to any other thing?
+Okay.
+Got it. So these are some of the things which I,
+Which, which, which we have covered, and these are some of the things which you will find in your…
+modules in details, right? So, in short, if I just summarize what are the things we have covered today in our class, we have covered… covered about structured and unstructured data, we have covered about EDA,
+We have covered about affinity analysis, anomaly detection, and also about data storytelling. That is, you get the data, you create a narrative, or you create a story based on the data, and you visually display that, so that people can understand.
+Okay, so with that in mind, guys, any questions, any doubts you are having?
+Anyone?
+I have still a couple of minutes before we can wrap this up.
+Hi, Seth, I have, just one question. Yes, yes.
+Please.
+This is in connection to the last week's session, where we were explaining about the five stages of…
+The, collection of data of different, you know, the customer journey, right?
+Yes, yes.
+Yes.
+So, looking at the current trends where, Agentic systems are paying close, you know, where a customer just entering their intent and
+the agents are actually doing all those things, like filtering, searching, and then coming up with, you know, the filtered list of items. So, the analytics is actually changing, from the current system to when agents are taking place.
+So, do we have any such plan in this course to cover how this shift will be in the future, and how we will be able to add into the analytics?
+So, you mean to say, in this course, definitely.
+No, there aren't any, scope where, you know, we are going to talk about, Gen AI or agents taking care of, you know, handling the data, I mean, handling the…
+majorly taking care of the data issues, and finding out insights, or, you know, about the customer journey. In this course, no, but yes, in the near future, definitely there might be
+And in… and actually, what is happening, yes, as of now, it is…
+So, the major, it's not hap… it is not happening in India. Okay, but in… outside India, there are a lot of countries where they are putting in agents, they are automating everything. Now, here, the main issue, the major challenge.
+with India is… with E-Commerce is the… E-Commerce is… what is E-Commerce? If I take you about the background, it is like, you know, it's a marketplace where you need to have an idea.
+and you need to have the investor. If you have the investor, you have the idea, and your E-Commerce opens up.
+The… but the major challenge starts when your data comes in. In most of the Indian E-Commerce business, or in the E-Commerce, you know, companies, they have… they are generating data each and every second.
+The issue is, they are… do not have that infrastructure to store that data, or forget about analysis, okay? They even can't store… because there is huge E-Commerce, you understand, like, when you are opening Blinket, or Swiggy, or…
+Not Swiggy, that is. If I talk about QuickCom, like, when you are browsing Blinkit, you are browsing, say, Big Basket, you are browsing, say, Flipkart Minutes, okay? Each second you are, you are, if you are browsing
+through different products, you are going from one page to the other quickly, browsing, closing, browsing, closing, right? So, so many records are being generated, okay? That also for…
+those 5 minutes. Those 5 minutes, you have browsed, say, you have, you have browsed through 10 different products, and, you know, you have added the product to the cart, canceled it, removed it, added it again. So.
+At each… those 5 minutes, maybe you have generated, say, 100 records of data.
+Okay? And, you know, and that happens only for 5 minutes for just one particular customer. So, you can understand, it's a pan-India level. So, so much of data is being generated. So, if you have so much of data.
+you have to spend on the infra also, so that your data gets stored, right? So…
+my E-Commerce, I have just opened it, I have got an investor, my… I am not in a profitable condition, forget about spending more money in storing the data, and then after that, your analysis starts, once your data gets stored. So, in India, the issue is…
+You know, people are not able… these E-Commerce businesses are not able to store the data, and then forget about, you know.
+doing some analysis. Yes, now coming to agents and all. So, agents are… these are pre-trained models who are, you know.
+who will be taking care of some automations, or they will take care of the customer journey, and but you need to train them first, okay? For training, you need to have that data. So, where is the data?
+Forget about agents. And that also, you know, people are crazy about Gen AI, people are crazy about agents, but…
+That comes at a cost.
+It doesn't come ad-free.
+Right, so you have to have that infrastructure, you have to have that funds, and only then you will be able to do it. So there was one example where, you know, you had these small, small services, it was done by, analysts.
+So what they did, they removed those 40, 50 analysts and completely automated the processes by agents. But costing cost a lot.
+these, maintaining these agents, these AI,
+Because these are… these are not going to run on-premise, these are all cloud-based, and these are all technologies, so they will cost a lot. So, by the end of a couple of months, they realized they are spending more on these technologies compared to the analysts they were spending. So, again, back to square one.
+So yes, maybe in near future we can have that, but not now.
+Yeah, so, thanks for this answer. Actually, like, I was, more curious about to know, like.
+not from the analyst perspective, but from the customer perspective. So, if, for example, I'm using this Amazon Seller Central for past couple of months, where, like, before 2 months, I was just going through all the different UIs to, you know, see all the metrics and all the, you know.
+the reports if I want to access. But now what happened, like, for past one month, they have just introduced, ChatGPT-like, you know, discussion, that I can, like, you know, simply type and ask.
+So, what exactly is happening is that, like, the agent sitting inside the seller symbol, it is going through a different user interfaces.
+And then it is, you know, coming up with the summary of what I'm asking. So, like, you know, like, even for the product search.
+So… like, in the future, I think, like, people will not be doing extensive, you know…
+on that, but they will rely on the agents to do their job for us.
+In that case, the analytics will change, right? So, analytics.
+Yeah, definitely. So it's like… it's like moving up the ladder, or it's like enhancing yourself.
+what we used to… so, like, let's take 10 or 15 years back. If you wanted a packet of milk, what you used to do? I mean, what I used to do, I still do now, you will walk down to the Kirana store, or the small shop.
+you buy the product and come back. No matter if it is raining, no matter the heat, no matter the cold, you have to go out, and that too, in the market, and then buy it and commit. So, so much time is gone, but now, you just open your mobile, and within 10 minutes, the milk would be there.
+So, things have changed. Similarly, for, data processing, like, the… when… if I… when I started my journey, I used to build models.
+using SPSS, or KNIME, or some other menu-based, you know, applications. And building a model used to take me one and a half months of effort, and that two, two or three people used to work rigorously, you know, 8 to 9 hours per day.
+But now, within… within an… within a day or two, your model is ready. So that's about automation, that's about technology we are looking at. And yes, you're correct, so they are just…
+they are just building it, they have just implemented it. Maybe they… it's just the starting, so it is just… it won't give you great results, but in the near future, the results would be wonderful.
+for the, actually, like, the rate at which it is, you know, getting, adopted, it is, it is very high. So I see, like, you know, it is very easy for the customers to type and, you know, get the results as quickly as possible, rather than going through multiple screens.
+So, where we are actually using those analytics, you know, customer visited this UI and this UI this way. So, analytics is changing. So, you know, we may have to, like, look at what has customer as initially typed.
+And we may have to apply some NLP over there, and then…
+Yes.
+some different attributes to study to, you know, to see the complete customer journey. So I think, if at all, possible, maybe, I'm not sure, maybe, in the future, you can, include one, one, session.
+Yeah, one session, one module on that, definitely.
+Both the analytics change with… when agents are taking, over?
+Taking cover, yes, yes, correct. Yes, I will just pass on the word on this. Thanks for your lot, avoid the suggestion.
+items, nope.
+Okay, okay. Thank you, guys. Any other questions you have, or we can just… Wrap up the session.

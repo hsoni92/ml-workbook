@@ -11,5 +11,6 @@ Graded **assignments** and capstone work listed in [secure.yaml](../secure.yaml)
 | [Trimester 1](trimester-1/notes/) | PDF study packs | Secured under `trimester-1/assignments` |
 | [Trimester 2](trimester-2/notes/) | ML, neural networks, cloud — Markdown + PDF | Secured under `trimester-2/assignment-1` |
 | [Trimester 3](trimester-3/notes/README.md) | BDA, MLME, NLPU, marketing — week-by-week Markdown | Secured under `trimester-3/assignment-1`, `apex-project` |
+| [Trimester 4](trimester-4/notes/README.md) | Deep learning, retail/e-commerce analytics, optimization — transcripts + deck Markdown | (assignments when added) |
 
 Return to the [repository home](../README.md).

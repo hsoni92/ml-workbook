@@ -1,0 +1,441 @@
+Ask me, interrupt, and let me know.
+Okay, and I'll be able… well, be happy to answer that.
+Okay, I'm just sharing my screen. Let me know once that is visible.
+Okay.
+Is my screen visible?
+Yeah, it's visible to us.
+Okay, great, great.
+Okay, today what we are going to do is we are going to start with week 7, or Module 7, which is about behavioral analytics.
+Okay.
+So… So…
+Okay.
+So we ate… So… So, what do you mean by behavioral?
+Okay.
+This behavioral means what people Boom.
+Okay, and if I'm talking about customer journey.
+Okay, what do you mean by customer journey? It's not about the journey people are taking while traveling from one place to other. This is more like a digital journey.
+Right. It's like a… it's like the path the customer takes from the first time they log in into the websites, and the time they are buying the product.
+So, what we learn in this module, we learn to look at what customers really do in a website.
+And… And the places where they get stuck, or where are the places they leave.
+Right. Moving ahead. So we have… So…
+So, if we talk about the entire journey, the mapping, Okay, so… huh.
+we see the full path, one customer across many visits, not just one visit. So, the first topic is the navigation path.
+For navigation path analytics. Here, what we find, which pages people really visited.
+And which order?
+And if they have taken any detours, like browsing this thing and went ahead and… After that.
+After that, coming back again. So these are different detours people are taking.
+Okay, the first is about customer journey, the next is about navigation…
+The third is about funnel leakage. What do you mean by funnel leakage? In short.
+We tell the difference with… it's like a difference between, normal drop-off and a real problem.
+And find the… What was the causeage of that?
+Okay, and the last is behavioral segment.
+What do we do here? We put the customers into groups, but why? By… by what they do. And… and we are going to treat each group
+Based on the things they do are based on their own… it's like a customized treatment.
+Okay.
+By the end of this entire course, what are the things that you can do? You can map a customer's journey across different visits.
+Okay? You can read a complete flow diagram.
+You can… you can talk about… you can identify a leakage from a normal drop-off.
+And also, try to find out what is causing them.
+And lastly, we… we try to find out what is the… you can… you can group the customers based on different… based on different behaviors.
+Okay.
+So these are some of the things that we are going to cover in the session today, and which you have already covered, right, in, in your, in the, in the event, in the, in the hour-long session that you have done, or the, through the different videos, correct?
+Let's look at the big picture.
+Now, let's start from left to right.
+Okay.
+Column… the first is about the journey.
+Though… We are… we have to… let's look at the entire story of a customer.
+Okay, the next is the path.
+Okay, in this path, what is… what this… what that… what that customer really did in that website?
+Okay, next is the leakage.
+What is the leakage? The… the objective here is to find what was the real problem here.
+Okay, next is about segment.
+And…
+And here, we have to group the customers.
+Okay, first, so this, this, the flow, if you see.
+It's very easy, right? Okay, and
+what we are doing is you find how the customers have traveled from different pages, okay? Then you find out what the paths the people have taken.
+then you find out what was the actual issue. What is the norm… if there was any normal drop-off or not? And at the end, it's like a recommendation. Do we need to…
+categorize, or, do we need to cluster that, those customers in particular, any particular group? Okay.
+Okay, now, now let's look at the second set of things. Okay, touch points across visits.
+So here, we start with touchpoints, and then make a journey map with one customer ID.
+Right? With just one customer ID. Like, what is a customer ID? It's like an identification. It's like, just like, for example, when you have different employees working under
+different employees working for a particular company. Each employee has got a different individual ID,
+Similarly, products also has got IDs, and in the same way, when a customer comes in to your website, they, using their credentials, they log in, right? They get a user ID.
+Okay, now, next is about the parts.
+We start here, we talk about pages in one session.
+Sweet.
+Here we see the pages in one session, and then we see a flu.
+That shows loops and detours.
+Like, there might be a situation where, where a customer is browsing different products, right? And after that, they leave.
+And come back again.
+Right. It's like a detour that they have taken.
+Okay. Now, next is about the leakage.
+It's like we, here we talk about the natural drop-off versus leakage.
+And we ask, and we check what changed, and in which segment.
+the last… Portion is about the segment.
+Okay.
+Who… which of those person… What?
+which of the person, and what it does. And it's like, based on their behavior, we try to understand what this person has done.
+Okay? Now, let's… let's take a simple example.
+Okay, start folding.
+Customer journey mapping.
+In Level 1, let's take, for example, the…
+The journey is of a full path of a customer across many visits, not just one session.
+Okay.
+A touchpoint is any contact between the customer and the brand. It can be an ad, a visit to our website, an email, or even a support chat. For example.
+So, for example, I have opened,
+I have opened… I have logged in into Amazon, okay? I was browsing a product, I closed it.
+After a couple of hours, I again.
+opened Amazon, and checked, and closed it. Again, I opened…
+Browsed, closed it. So, 3 times I have done.
+So… So, how many… how many visits will I be called?
+So how many visits are there? It is being measured.
+Ideally, I have logged in 3 times, right?
+But it will be just one visit, because I am tagged under one customer ID.
+So, no matter how many times I log in, log off, log in, log off, in that particular time range, I… it will be counted as just one visit.
+It is completely different.
+Compared to, offline store. In offline stores, you get counters, you know? There are, in different malls, in different shopping malls, you get counters.
+like, once you enter the gate, the counter's plus 1. You leave, and you enter again, plus 1. So, if… even if there are just 10 people, and they… maybe 100 times they are entering and leaving, entering and leaving.
+the count will rise huge, and they will say, I will have huge crowd based on the numbers of the count, it will count as huge, right? But in actuality, you don't have so many people that are coming in and off. It's just a couple of
+Customers who are coming in and out.
+Okay.
+So, so these are some of the things which is… and it's… this is called… just… this is about customer journey, and this is what happens in… in E-Commerce. In E-Commerce, you are tagged under one… one ID, and hence, no matter how many times you are gone, yes, the frequency will be 3, but the number of
+Visits will be 1.
+A customer journey, a journey has got four stages.
+Okay, awareness, consideration, Purchase and post-purchase.
+Okay. Awareness.
+So, when the person first hears about the product, or about the marketplace, or about that particular website.
+Okay, consideration. What do you mean by consideration?
+The… it's like, comparing and thinking.
+Like, it's like Consideration is whether I should go, or let's check it out. Okay.
+Now, next is purchase. Purchase means that the person, the customer, is actually buying the product.
+Okay, and the last is the post-purchase.
+Okay? It's all about when the product got delivered, support, and the person or the customer is coming again with a new order, or it's the repeat customers.
+That was Level 1. Now, let's talk about the touchpoints.
+Just a minute, guys, just give me a minute.
+Okay.
+Okay, now, let's, let's move to level 2.
+So, level 2 is about journey mapping timelines.
+Okay, where is it? Where is it? Okay. Oh, here. Level 2 is like a… it's like a timeline journey, okay?
+It's like, we join.
+It's like we… as I was talking about, like, a person is going… coming in, like, I logged in, log off, logged in, log off, something like that. It's like, we are joining all the visits of one person using one IT.
+Okay, without any consistent ID, You might be mistaken as different.
+different, customers who are coming in. Okay, similarly, like an offline store, an offline store, there are 10 people who have entered and exited 100 times. So…
+So, it is, like, a thousand visitors have come in. Similarly, if I'm opening, if I'm opening the app 10 times, I'll be counted as
+10, 10 visitors, but if I have an ID written, I will be counted as just 1.
+Okay, if you look at this example.
+It is about a backpack shopper.
+So this example is also available in your
+in your videos, okay? So what is happening? On the first day, she… this… this customer, she's an Instagram ad.
+Okay? And she does not click the… click the ad, okay? On the next day.
+So, a friend of hers mentioned about this product.
+Okay? And after some days.
+she… she might be aware of what brand her friend had referred to. She was searching the brand, okay, and browsed it for a couple of minutes. But after, after a couple of days, okay.
+She gets an email with a discount code, and she buys the product.
+Okay?
+No, no, no.
+So what happens?
+Now, the… if you see what is happening, it's like a sale has been created. First couple of days, she was not interested at all. Her friend referred to it, not interested, okay? Then, after a few days, she just casually went through
+after… After… it's only after when she got the discount coupon, she bought that phone.
+Okay.
+if I'm talking about different timelines report, a last-click report
+We'll only see that email sessions
+Like, an email was sent to her, and the sale will… will be credited because of the email.
+And whatever the journey, or whatever that customer has done over the last couple of days, they have visited, seen it, logged off, will be
+Completely ignored.
+So, definitely, the mail will get credit, right?
+the mail, because of the mail, you will get credit, but that is not the actual thing. It's like a…
+It's like a… it's like a sale has been created. It's over the time the sale has happened, right? It's… if you just look at the last part, because of the mail.
+you will see that the seal was done. But, in actual fact, this is not the case.
+Okay, moving ahead… This is about… Another example.
+This is about backpack and the sofa.
+Okay, there's an ad on the first day.
+Okay.
+the friend referred it after a couple of days. After a couple of days, searched it.
+And after a few days, you get a mail, and you bought the product.
+And again, as usual, if I look at the last credit, I'll last click report, which I have received, the credit will be given to the email.
+Which was sent out.
+Okay, but… the credit will, give the last meal, but if I'm talking, go deeper.
+Right? I will give credit to the advertisement, which was… which was shown. Then the friend.
+And the search engine, which gave you that product, all should be Given the credit.
+Right? Because they were equally responsible for
+For making that purchase to happen.
+Okay, now take another example. This is Level 2.
+There, we have a furniture shop.
+When we are looking at different journeys, different mapping, we see a pattern.
+So, what… so when we… we are… so, in a furniture… furniture, E-Commerce sort of furniture.
+E-Commerce business, you know, you don't have that much sale compared to other products, FMCG or any other products.
+There, what happens? There, the customers, what they do, they come in, they view the product.
+Okay, once, twice, or… or thrice a week, and they… they… without buying the lead.
+Okay, why would people, why would people come and see the
+See the product, and not buy it.
+Any guesses why they are… Why they are not buying that product. Let's talk about SOFA.
+So… So, one…
+So, one… one thing might be you, you know what, you have these AI or augmented reality in different websites. Like, what it does is you are selecting a product.
+And you get the… you… they will ask you to switch on your camera, and they will…
+create a virtual sofa in your… or the sofa, or the product that you are purchasing in your room, and you can have and see it. Okay.
+is the reason why they are visiting and not buying it, because they're not able to use that AI feature.
+Okay, if… if that… if that website owner or the shopkeeper adds that feature to see it in your room using augmented reality, okay.
+This will help in enhancing the sale.
+So, if you look at the picture, before visit 1, visit 2, visit 3, and then the person vanishes. After… after…
+The same revisit, then an AR, or augmented reality comes in, and the product is already
+bought. So this is what This is what happens.
+you have to understand. You have to… it's not only about, you know, just capturing data and understanding and collecting, it's not about only selling.
+you have to understand the sentiment of the products. You have to… this is… this is one thing where, you know, the customers was… where the…
+Whether the shopkeeper or the… or the, where the website, the E-Commerce company was missing was that, that augmented reality,
+feature, right? There might be different, different reasons why people are coming, adding, or dropping off. They're one of… one… there are a couple of reasons. Might be because
+there are some marketplaces where the delivery charge is high, or they do have delivery charge. Because of that, people not buying that product.
+Or just moving ahead, or dropping off, or bouncing off.
+Okay? Or might be the description, or maybe the product description is not that accurate, or the pictures are not good enough.
+So because of that, you know, people, although are interested, they are not buying the product. There can be any reason, any number of reasons, why this and that is happening.
+Okay.
+Now, moving ahead… So, we are talking about navigation path analysis.
+Okay, so what do you mean by path analysis?
+or the navigation path analysis. It means looking at the exact order of page, or pages a person visits inside one session. You know, what is a one session? Like, once you are logging into the website or the app.
+And after that, you are going from one product… one page to the other, you know, it's like a process flow, from category page to the product page, from that product page to some other page, and so on and so forth. It's like how you are moving in that
+In that app, or in that.
+Marketplace… marketplace website. Okay.
+A flow diagram will show the most common parts, and it branches at every step.
+Right? It's like, it's like, you know…
+It's like a… it's not exactly a tree diagram, it's like a diagram which will… it's like a flow diagram, which tells you where you are going from here to there, there, and so on and so forth. Okay.
+Okay, so there are two things that happens. One is a funnel, the other is a flow.
+A funnel… funnel is something which assumes that everyone follows one fixed path, that is, one after.
+Adiph.
+Okay, like, for example, you go to the category page. From category page, you go to the product page. From product page, you go to the cart page. From cart page, you go to the payment page. And finally, the order confirm page.
+Okay, but a flow.
+It… Flow will show you what really happened.
+So, normally, it's not like people go to the category, go to the home page, then the category page.
+product page, buy it, and leave. It doesn't happen, right? When you go to any website, when any, any, anywhere, you know, E-Commerce website, you go to one page, you start browsing it, okay, and then you find something different, and you go to another page, right? It's like, you jump from one page to other.
+And you repeat If you look at this diagram, it shows 1,000 sessions.
+The thickness of each band shows you how many people took that part.
+Starting from home page, 550 people go to the search page.
+And 300 goes to the category page.
+And from there, they reach the product page. And some, out of there, go to the cart, and many leave the website.
+Okay, now if you look at the orange loop.
+It goes from product page to the size guide, and back to the product page, and again and again. It's like, you know, they are…
+in Aluth, one after the other.
+And then that normally happens in most of the cases, where people are, you know, you go to the marketplace homepage. From there, you know which category you are looking for, from category, or you go to the search page, then the product page, and then, again, go to the search page.
+And, and leaves. So, it depends at random. So, this is what flow is all about.
+Okay.
+So now, let's look at the level 2, which is unexpected pattern.
+Okay, when we see, a particular loop is being formed, or a detour is being formed, okay.
+we have to ask that question. It's… I'm talking about in terms of data analytics. So these are some of the things you will find in these data, okay?
+You have to ask this question. Is it confusion why that customer has taken a detool? Or it's like,
+You know, comparison that people are doing.
+So, we… So, you shouldn't be deciding before investigating.
+Okay.
+So this is what happens. So, whenever you find this kind of things are happening, you should go ahead and investigate why this… this detour is happening. Is it… are they… are they, you know, they're not sure why they are
+they are not sure what they are going to buy, or is it just, like, they have… they found something in Amazon, and they want to compare it to the Flipkart, and they got… get it at a
+Cheaper level, and so on and so forth.
+Okay, any questions so far, guys?
+Anyone?
+Okay, now let's take about an example. Recipe detour and size guide.
+Okay.
+So, we have a grocery app.
+Okay, you have a grocery app?
+People, or customers, are adding items to the cart.
+Now, what they do?
+So they are adding items to the cart, and they are moving to the recipe page. And they come back, again, to that
+Start after some time.
+If I'm… if I'm… yes, there are different reports available, right? I am… I am fetching a funnel report. It will show you, check out this flow.
+But if… so this is what happens if I'm taking off the funnel report. But if I am looking at the actual flow, the story is completely different.
+So what people are doing, they are going to the recipe page to have ideas about different recipes.
+Okay, so they are not, they are not confused.
+They are more interested about recipes, how they can cook better, okay? And the fix is very, very simple. You have to improvise, you have to customize. Put the recipe ideas in the cart page itself. People do not
+need to leave. What happens if people leave the
+The thing is, they might have some other… they might be interested in some other product, or because of
+Or maybe they might be caught getting distracted and leave, and their objective was of buying, okay?
+So now, let's take a shoe shop. This is another example.
+Okay, the data that we have received show many more loops between the product page and the size guide compared to any other product.
+Okay.
+Is it… is it confusion? Why people are, you know, going in a loop, where people are adding the product, okay, and they are going through the size guide?
+Yes, definitely. It was some issue with the size.
+So… so there might be… there might be… and it's… it's still… it's still a bigger problem. Whenever you are…
+you know, buying a shoe. If no country is mentioned, what kind of size it is? Like, for example, you have bought a product from online, and you… of your shoe, you have bought the product of size 7.
+And you find it when it got delivered, the size is not fitting well. It is… it is too small.
+Okay.
+And if… and you go to another website, there, the size guide is there based on which country it is, and you select size 7, and there you see it is fitting well.
+So…
+Okay, so these things you have to keep in mind if you are selling
+Excuse me? If you are selling shoes, Okay.
+So, you have to be specific, okay? If you have to be specific which country you are selling and what size you are referring to, okay?
+Yes.
+So, in the size guide, it never said… so, when… why the confusion happened? Because when people were in a loop, that the reason was, in the size guide, it never mentioned about the country, which
+which size they are referring to. Is it US? Is it UK? Or Europe?
+So people were still undecisive, and they were confused what to buy and which size to.
+which size to consider, and… and hence that thing is. So… so how can you fix this problem?
+And it is… it is very, very simple, okay?
+So it is just by adding one line, a label, saying.
+US, UK, or EU in the size, and, you know, you will be very, very… customers will be, you know, very easily, you know, decisive of which size to consult.
+They will look at the chart.
+So…
+And they will look at the chart, and they will be easily able to select their size. Okay, what was happening before is… before the label was mentioned, or that line was mentioned, we had, you know, we had these loops.
+Or you said repeated patterns was available in, say, 100 sessions. After the label, only 6.
+That means… more than half Half of the loops… half of the loops which was having is gone.
+And this is just for illustration.
+And what, what do you… what do you, what do you take away from here? Okay.
+So, whenever there's a loop, It is, it is, it is just going to give you an indication.
+It is… it is about a confusion, or it can be a healthy comparison. So, the ideal case, since we are all part of data analytics, our objective is to go there and investigate why the problem is happening.
+Try to find out a solution to that.
+Okay.
+Okay, now we are left with the funnel leakage.
+identification.
+Now, let's talk about funnel leakages.
+Now, before… before we talk about funnel leakage.
+So now, let's talk about the natural drop-off.
+So, at every page… so, at, so, like, when we are talking about funnels, okay, when we are talking about funnel, at every funnel.
+Some people, or some customer, or the other is going to drop off or leave. That is quite natural, okay? And it is quite healthy also.
+Leakage. Leakage that is natural drop-off. Leakage is something different.
+Leakage means the drop-off, and the drop-off is… the percentage of drop-off is quite high compared to the normal level of
+Compared to the normal level of people are dropping off at each funnel. Like, for example, people were dropping off almost 2% to 3%, like, drop-off having… was happening at each funnel, but your drop-off has increased to 10% or 20%. So that is what leakage is all about.
+Okay.
+So, what we have to do, what… and how do we compare? How do we identify, okay, a leakage is happening, or is it a natural drop-off?
+So, we have to have a baseline.
+Okay? We have to compare each step with our baseline, okay? And… And based on that.
+Based on that, you have to decide. A step that normally loses 70% of people is fine. A step that normally loses 10% is not fine, if it suddenly loses 25.
+Okay, so then, say you have to have a…
+have to… you have to have a baseline. If… if in normality, in and around the baseline, if people are dropping off, then it is fine. If it is going beyond
+above baseline. That means there is… something is going on.
+Okay, so now let's look at the chart.
+Okay.
+So it's like a subscription, it's a chart instance of a subscription box.
+So, the gray bar is the normal level, and the blue bar is this week. In the first step, 35 and 36.
+In the first step, it is 35% and 36. So it is… it is quite normal.
+In the next step, it is 10 and 10.
+Okay?
+This, this one.
+enter payment is 10%, and order placed is also 10%. That is normal, right? The first and the last are same. It is… it is below threshold. Like, if my threshold is around 35. So I will say, okay, that is pretty normal.
+Okay. But in the middle step, it is 30%, And it is 55%.
+So, 55 is leakage. So, you get an orange tag. Whenever, whenever you have any value.
+Any leakage, any percentage. Whenever any… any point, any other point, values are above a threshold, that means a leakage is happening.
+Okay, now… We have to find out what is causing it.
+For that, you have to ask 4 easy questions.
+What was that thing that was changed? Maybe a release?
+Or an… or a technical glitch.
+Next is what was… so this is something which you have to find out what changed.
+Next is, which segment it is happening.
+Maybe it was because of one device, or because of the traffic.
+The next question that you have to find out is.
+What do the numbers and the voice say? That means the data plus session recording and support tickets.
+Right? Was there any issue with the website? Because of which you have so much drop-off?
+Okay, the next and the final thing is…
+You have to fix the issue, and measure again.
+To check if the leak is closed or not.
+Okay, so these are some of the, some of the action items that you have to perform if you find there is some leakage which is going on.
+First, you have to find out, okay, if it is below the baseline or above the baseline. If it is, okay, in and around the baseline, I'll say fine. If it is greater than the baseline, okay, okay.
+We have to fix this.
+Okay, now it is another example.
+That we have to do.
+So, we… you were talking… we was talking about the subscription box problem, okay? Here, 30% became 55%, right? So let's talk in detail.
+about this example. For one full year.
+30% of the people left between choosing a plan and entering the payment.
+So, 30% was my baseline. In every, every
+Every time period, okay? And every week, the drop-off was around 30%. In one week, it jumped to 55%.
+So, because the… The data analytics team knew that
+the baseline, about 30%. They found it and see, okay, there's a leakage.
+So, and they… they already found out what the issue was. The issue was a payment provider had an
+outreach, and because of that, there was some network congestion, and hence, there is some
+There is some, and because of that, you have so high Drop off.
+Okay? Out of 1,000 people, the normal loss that is… used to happen is 300.
+Now, there is 550.
+That means, how many extra people have, have, like.
+That is… if I'm… now it's 550 minus 300, which is normal. That is $2.50 extra. That is a huge loss.
+Okay.
+Now, let's talk about another example, which is about an electronics app.
+The checkout. After a checkout, the leakage jumped.
+Jumped, and because there was some app update done, the The drop-off percentage increased.
+So that… the developer team of the data analytics team, what they did is they split the numbers by device.
+Now, if we look at the charts now.
+So, if, based on device, you know, they will have information which device they are using.
+So… so if it is a new phone, the drop was 9%.
+And if it is, another new phone, so maybe it's new phone Android. It is 9%. New phone.
+Huh.
+new phone, iPhone it is, we have 10%. And if it is a
+If it's a tab, something like that, 8%.
+If it is an older phone, maybe any, any…
+You know, operating system. The drop is of 62%.
+So, do you understand where the leakage is? Why the issue is happening? Because if it is an older phone, the drop-off rises a lot.
+So… so this is how we have to find out, okay, why the issue is, where the baseline is, and why it is causing it. And if you know everything, the next thing that you have to do is go and fix it to control that loss.
+So that's it. Now, the last portion of this
+Session today is behavioral segmentation.
+Okay. So there are…
+There are different ways for grouping customers. We are talking about two ways we can group customers.
+Okay, one is… one is through demographic. What is demographics? What comes under demographic? In demographics, we have persons
+Person's age, city, income.
+Behavioral means what that person does.
+Okay, or how the person is coming to the website. How many times they are visiting, okay?
+And what they are browsing, and where they are getting the discount.
+So, it's like… what about… What about their behavior, okay?
+Why we are more interested about this behavior, because
+Because here, VV's behavior will help in
+better sales next time, okay? Like…
+So now, let's… let's take an example and understand it better. We are talking about two customers in the right side that you have. Customer A and Customer B. Okay? Both are 28 years, and both live in Pune.
+Both have same income.
+On paper, they are quite identical with each other, okay?
+But Customer A bought only in the last
+Last three sales, and often leaves the cart when the price is A little higher.
+Right? So, customer A is something who only buys during the sales, like Great Tiwali sale, okay, or the, the Great Indian Sale.
+Okay, and there is customer B, who buys, or who has bought only 4 times
+Four times in a year, okay? And at full price.
+And that means never, never use any discount code, okay?
+And, and they have written Previews as well.
+Okay, now, do you think, like, these two customers can be treated in the same way? One, the first customer, A, is more interested with discounts. Like, if you give them discounts, they're going to buy it.
+And customer B, they are least bothered about discounts. And these are your, you know, more serious sellers, more senior customers.
+You cannot… if I'm sending emails, I'm not going to sell the… I'm going to send the same mail to each of them.
+So, if I'm talking about demographics based on the details, I will say.
+These are same customers, but behavioral will say different customers.
+Okay.
+Now, let's look at the next thing, which is targeting.
+Okay, so now…
+We are talking about the targeting.
+So, when…
+So, when they… you know what, people, there are a couple of things which is called cart abandonment, like, who… who leave the cart, okay?
+who leaves the cart and go away. So, these guys, cart abandonment, these guys, get a reminder with the small discounts in them.
+Okay.
+Those guys, who never bought a product first time.
+So… so, like, for example, so… so there are cart abandonment where customers are leaving, or, you know, if people are leaving the carts without any buying. So, if you send them the same mails about discounts.
+You… you think you are going to get huge sales? Definitely not. Why?
+Because you forget. Let's… you remember the example, customer A and Customer B. Customer A is someone who is more interested in discounts. Customer B is those loyal customers, no matter what, I'm going to buy the product.
+Okay, and if you give them… if that customer is going to only buy if they are… if they are…
+willing to buy. So… so you cannot treat both the customers in the same way. Similarly, if they are, you know, abandoning the product… abandoning the cart.
+You cannot send the same mail
+each of them the same things. You have to give them
+Two different males, and you have to segment them differently.
+Because of their behavior, because of their buying pattern.
+Okay.
+Now, let's look at one last… let's look at, based on the same logic, let's look at an example.
+Okay, so we are talking about the same example.
+So there are…
+We have two customers.
+So, we have spoken about that. Okay, so there are two customers, both are 28 years of age and living in Pune, and…
+there is Customer A who is not buying, and who is buying at a sale, and customer B is someone who is writing reviews, and
+writing reviews, and they are not looking for sale, they are buying it whenever they need it, so they need different treatment. Now, let's take another example of a beauty brand, okay?
+The brand sent out a big email, okay, to everyone.
+And they are giving out 20% off to everyone.
+So there were deal hunters who got… who got their… who got their fair share and things, but their products at a better price.
+The loyal customers hardly bought that product, because… so, no matter what, you send out the mail at a discount, or no matter what, they are going to buy it. You… let's reference off customer B.
+Okay, and the recent… buyers, who had bought the product at the full price.
+They found out, okay, price cut is going on, that is 20% off. Then they found out, okay, this website has changed the price, oh god, I got cheated.
+Okay, so this is… this was something where, instead of doing good, it did bad.
+So, what you need to do here, you have to breathe
+three segments differently. Those customers who are normally buying, those customers are high-value customers who, no matter what, are also buying, and those who are opportunists, or those who are looking at discounts, you have to give them special privilege and discount them.
+Okay.
+Okay.
+So, these are… these were the… some of the things that we had We had covered, okay?
+So, the first thing was about
+about… about an example where of a customer who sees a product, didn't buy, friend refers, didn't buy. After a couple of days, browsed it, exited, and after a few days, they bought the product. Okay.
+So in the next… so these are just, like, a summary, what we have learned so far.
+So, there were huge customers, some leave, okay? It's just based on the benchmark, the drop-off increased. Then you… it's like a flag, which went up. Okay, something is happening, and I have to make sure why that is happening. And I have to make sure of that.
+Okay, the next is… the last thing was, about two customers.
+They… one is buying at a discount, the other buying at a full… full price.
+So they need to have different segmentation, or groups, and based on that, you have to read them.
+Okay, so these were some of the things that…
+I had for today, mostly about behavioral analytics. Okay, so that's all I had for today.
+It was nice, you know, having the session with you. Guys, do you have any questions?
+So, hi Krishan.
+Yeah, yeah.
+Where we can launch the.
+Yeah, yeah, yeah, yeah.
+Okay, please, have the poll.
+So, everyone, just fill out this poll.
+M, stop recording.

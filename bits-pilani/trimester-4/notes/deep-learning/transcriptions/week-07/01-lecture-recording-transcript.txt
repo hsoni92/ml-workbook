@@ -1,0 +1,447 @@
+Yeah.
+So, we have been discussing about various, models which have been evolving in deep learning, right? So, right from the neural networks, like, how neural networks have different flavors, and then, we have discussed still transformers. We have seen how it has evolved from
+RNNs to LSTMs, GRUs, and then we have also read about transformers in the last two modules, where
+we had discussed that, like, how the transformers work, and then how, the architecture of transformers, acts, right? And what are the different, attributes for transformers to work in different scenarios, right? So, why self-attention is required, and then
+What is the meaning of, the feed-forward network? How does self-attention, is arranged, between the encoded and decoded
+a mechanism inside the transformers. So, till there, we have seen, right? And then, we also have seen that… how transformers could be used as a pre-trained model, like we have discussed about GPT.
+So, GPT is a kind of a transformer model, right? So, how we can use the pre-trained model, how we can do transfer learning?
+Now, the same transformers could be used for vision, okay?
+So, in this module, we are discussing about the vision transformers, that is, VITs.
+So if you see…
+in this, so…
+Initially, for images, like, vision means images. For images, what we used to use, we used to have CNNs, right? We have discussed about the convolutional neural network. So, in the CNNs, what happens?
+There are set of convulational layers, and from that, those layers, the images are being detected or classified. So…
+Now, the evaluation has happened from the CNNs to the vision transformers.
+Okay.
+So, in the CNN era, as I said, we had pooling layer, we had kernels, we had a lot of things. It was efficient on a small data set, okay?
+CNN used to work on that. I mean, not completely small, but mid-sized data set, okay? But the limitations were, like, again, the long-range dependencies, where there are too many layers used to get stacked up. If at all you want a very good quality image.
+Then, too many layers you need to stack up for the, inside the CNNs, right?
+And then,
+obviously, CNNs were not that much equipped with the language part, right? CNNs were not equipped with the language part. So, if at all we have to interact with the image.
+with the description of that image. That description of the image, obviously, will be a text, right?
+Description cannot be a image, so it will be a text only.
+So, you have an image, and you have a relevant description. Again, you have an image, you have a relevant description. So, if
+you want a model which can read both the image and your text. So, that is where that
+The role of transformers have come up.
+So, you can, train…
+100 million plus images, and it outperforms from CNNs, because in CNNs, there are limitations.
+CNN doesn't understand text, right? So, in order to
+help people to analyze this kind of a data, where text classification, if you are doing… it should be able to recognize what kind of, sorry, if you're doing image classification, it should be able to recognize what kind of image
+It is trying to classify, or it is trying to,
+identify, right? So, that is where the transformers were extended from the text to image.
+So, how does the patch-based processing work over here? So, what it does is, it will split the image into some non-overlapping patches.
+Okay? So, patches mean small, small cuts.
+So, suppose if you have a 224 plus 224 image, that is the size of the image, it will be splitting that image into small, small patches.
+like, patch of image, like how we see, right? Patch of pictures, like that. It will divide that, and then it will try to flatten each of that patch, and take it linearly as an embedding value.
+Okay? So, here, what happens is, whatever image you give, how much of a size image you give, it will try to
+split up the image into small, small patches, and then it will try to flatten the patch, and it will try to convert into embeddings. Why embeddings is required? Because transformers
+We'll use the embeddings.
+Right? Transformers will use the embeddings. So whenever,
+transformer is, using the embedding, it will go to the, the self-attention mechanism. Otherwise, it will not work. So here, also, you can add up the positional encoding and whatever, the transformer architecture is having, that same things you can add up here, okay?
+So, what is happening here is, in Transformer, you are analyzing image, it is also analyzing the intrinsic part of the image, and also, if you want to pass on the text also, it will be useful for you to, use the Transformers, okay?
+So?
+That is what, in the topic 2, you will learn about the VID architecture, that is Vision Transformers Architecture. How the patches work, how patch embedding is created, so how it turns a 2D image into a one-dimensional token sequence.
+How it will break down the image into small patches, and then patches, it will, break down into, you know,
+a flat dimensional sequence. How does it do? Why does it add up the CLS token?
+Okay, so this is just to, you know, this is a kind of a learnable token which is added to the sequence, so that it can go step by step, one by one, from each of the positions.
+then how it can aggregate everything in the self-attention, all the patches, it will aggregate inside the self-attention, and then it will work as expected. Because after self-attention, all the things will remain same.
+whatever we have in Transformers.
+Okay? And then, obviously, the final layer will tell you the classification of the image. So, whatever you used to do with CNNs.
+Some added benefit is there whenever you are adding, whenever you are trying to, work with transformers, okay? That is because in CNNs, it used to work on the pixel values, on the pixels
+of the images. Here, it will convert the image into small, small patches, and then into embeddings. So whenever it is converting into embeddings, it becomes very easy for the network to understand, okay?
+So?
+Here, you will be learning about the architecture, right? So, you know about the positional embeddings and the pipeline, we already know that.
+the pipeline of transformer. So, self-attention mechanism will be there, positional embeddings will be there, then it will go to the, I mean, the standard multi-head attention, self-attention network. The normalization will happen, and then it will go to the normal feed-forward block.
+So…
+One thing is, the architecture is very, clear and very scalable, that is why we are using transformers. And initially, as I said, people started off with text, but later on.
+as the texts were there, then people have, thought of how images could be, analyzed using transformers, and this was much more useful than CNNs, okay?
+So, topic 3 will tell you how you can utilize the self-attention for images. So, how patches… each of the patches interact with each other, like, how words used to interact in a sentence. So, here also, you will have query key value, okay? So, that means what the patch is…
+what the patch wants, what it offers, and what information it has. The patch.
+Okay? And then, obviously.
+like, for, you know, different kinds of use cases, you will be using this kind of networks, okay? So usually for, the medical imaging, satellite images, for this kind of use cases where images are there, we use
+vision transformers. So you will be learning about that in this particular topic. See, everything remains same, only before the self-attention, whenever we are feeding the embeddings, in that part only, the difference comes.
+Okay? Because after the embeddings are created, it is numerical only. After that, everything remains same in the transformer. But here.
+The before the self-attention mechanism.
+the changes are there. So, for text, it is different. For images, it is different.
+So, it also talks about… more about, window-based and efficient attention, like, how efficiently attention mechanism we can be used… use it, okay? And here also, like, for example, like, we have…
+a certain set of images, and how we can window the attention, like.
+A particular window we can draw up.
+And then we can, you know, work with the attention mechanism.
+So, what are shifted windows? How we can shift from one layer to another layer?
+that you'll be studying here, and then what is neighborhood attention? Neighborhood attention means each of the token that you're getting out of the patch, how it will be actually interacting with the neighborhood. That means with the neighbor.
+token, okay? That means there will be patches, right? So, for each of the patches.
+Suppose this is the patch. For each of the patch, tokens will be there.
+So, how this patch token is interacting with this, or this, or with this?
+So, that also… that part is called as neighborhood attention. So, various types of
+I mean, ways of having the attention mechanism is there whenever you are using this for images, okay?
+Then, how can you train the VITs? What kind of data you can use? Whether you can use a pre-trained model? Yes. In this case also, you can use a pre-trained model, okay? So here, you don't require any convulational layers.
+you can do a large-scale pre-training. So usually, ImageNet is the dataset, which has 14 million images. So this kind of large, huge data set could be used to do the pre-training.
+Right? And you can also use up the masked autoencoding. Why? Because you want to mask out the patches, so that the future patches are not exposed.
+Right? That you can do. So, the thing is that from one form of,
+model, you can form different form of model. That means you can change few layers in the model.
+If you have a pre-trained model, you can change few layers in the model, and you can have different other efficient models. So here, you will be learning about the
+VITs, how you can train, and what are… what kind of data you can use, and how pre-training could be done using certain data.
+Okay, then how augmentation you can do? What is augmentation? Suppose your data is very small. You have less set of images.
+So, using that less set of image, you can do various rotations in those images, and then form more number of images. That is called as data augmentation.
+So, augmentation is required.
+Because we want to increase the training data.
+Okay? We want to… Increase the training data.
+So whenever we want to increase the training data, remember, we always go for augmentation. So, what should be the color, how we should do the cropping, what kind of mix-up we should do.
+if there is any depth in the layers of the image, whether we should do any stabilization or scaling of the images or not, all this
+methodologies could be done for augmentation and regularization. Regularization means to, like, whatever images you're getting.
+if at all it is going, as an overfitted image, how you can reduce the overfitting here. Since you will be using this for pre-training, right?
+So whenever a pre-trained model is there, how we can basically
+Use the regularization so that too much overfitting doesn't happen.
+So, in this topic, you will be learning about the,
+the training part of the BIBs, the data, the pre-training, the augmentation, regularization, all of this you'll be learning.
+Then, Topic 5 will tell you the difference between CNNs and VITs.
+Okay? CNNs and VITs. So, how CNNs are different from VITs? So, prior to VITs, CNNs were there, so how it used to have, you know, a particular architecture. So, here, in VITs.
+You know, there is no need to learn from the scratch.
+Okay, so that is there, then, how the self-attention mechanism is working in the VITs. Because, see, self-attention mechanism… what is the work of self-attention mechanism? Self-attention mechanism knows that
+which important parts to consider, right? So that is one of the specialty of transformers.
+because self-attention is there, transformer is working fine. So here, in this case also.
+Whenever we are using the same theory for the images, in that case also, self-attention is going to see what portion of the images are important.
+And obviously, it will not take the white spaces, the extra space, like, spatial elements which are there in the image, so it will try to see what is important, based on the embedding values that it is getting.
+Okay? So, you will learn about the CNNs.
+and the VITs comparison.
+How does the performance work? How can you use the hybrid model? Suppose hybrid means you want to use CNN and VIT together.
+how you can use that, you can do that, but that is a little bit complex. We don't prefer that always, but you can use it. Like, CNNs, you can use it for taking out the features first, and then you can go for the transformer.
+For the reasoning part.
+You can do that.
+That is also, like, hybrid model. How small data would be used
+So, CNNs used to use small data, so… It used to dominate.
+Large data, VITs are very good with the large data, so it will outperform
+With respect to whatever we have in compared to CNNs, right? Robustness, obviously, VITs will have more robustness, since we have the self-attention mechanism through which
+It is able to find out the,
+Exact locations where… which is important, and then it will be taking ahead those particular portion of the image, and then
+Take it forward to the decoding.
+Okay.
+Then in Topic 6, you will be learning about different variants of VITs. So, there is date, you have normal VIT, which will have 16 cross 16 patch.
+tokens, which will be there. Some constraints will be there in VITs, okay? So, it needs, actually, massive amount of pre-training
+So, cost is a little bit high.
+So, in that case, you can use date.
+DEIP. This is a distilled version of the pre-trained CNN
+model, okay? So here, we are using a CNN teacher model, which will teach the student model, which is a VIT.
+So, little bit efficient than normal VITs, okay? DEIT, that is the variant which is used nowadays, so we can club the CNNs, as well as we can club the CNNs along with the
+the VITs, and then we will get the DEIT. So, the thing is that whenever you have DEIT, you don't have to focus much on the huge data set. Like, in VITs, that is the constraint.
+But when you have DEIT, since you're using a CNN model. So, initially, lot of, data
+or, you know, a lot of data for the pre-training is not required. It is not a prerequisite. So that is one of the things which is a benefit of DEIT. It is a variant of VIT.
+So here, you will be learning about this.
+Then, what are different other types of transformers? Like, we have something called a swin transformer and hierarchical transformers. This is something which is not very important. I just want you to go through it, but then, don't focus too much on it. It is just for your additional knowledge.
+Like, how hierarchy… this is a bit on the higher side, so if you want to go, and read it, you can read it. That is okay. But…
+The main important part is how VEIT architecture works, what are the different usages, and then what are the different variants of VEIT would be more important. So here also, like.
+Different variations of transformers are used, how hierarchical feature maps are used, like, features will be there like this, like a pyramid.
+Okay? So it's… it will be creating a pyramid kind of thing, how patches merging can be done, so how attention network, like a window attention could be used, how you can shift the windows. So, in…
+VEIT, whenever you have VE, sorry, VEIT, you will use
+more data. When you have DEIT, you will use small data. That is okay. And SWIN and this hierarchy is basically used for high resolution tasks. If you want a very, very high resolution image, then only all this hierarchical feature map, patch merging… patch merging means
+3, 4, 5, 6 patches you can march together, and then do the
+Analysis, then window attention, all of these additional things you can put up.
+If you want a very, very good quality image, high resolution image, right? In that case, the swing transformers will be helping you out. So these are certain additional transformers which every industry doesn't use, but then, this is for your knowledge.
+Okay?
+Then, the use cases. Finally, you will be studying about the use cases. In the use cases, what will you study? You will be, knowing, like, how language
+Like, transformer, which was used for language modeling, how it was, changed into a vision
+model, we know that it has been applied to patch the tokens, and then
+It has been used to create the layers.
+So, basically, you will be learning, like, how it is used in medical imaging. See, in medical imaging, we use, for tumor segmentation, for any kind of tissue-related regions, if you want to detect, because a lot of imaging happens in medical field, right? So.
+Obviously, people have seen that CNNs could be used.
+But…
+the Vision Transformers have outperformed the local CNNs in this case. How? In the organ boundary. So, whenever it is doing the boundary of a particular organ, these VITs are doing a good job.
+Okay.
+For remote sensing, it is used. Remote sensing means if at all satellite images or something you want, you want to cover the land, or if you want to have the disaster management. So, for those kind of images also, VIDs are used.
+So pre-trained VIPs will be there. People will be using that to detect this kind of classifications. So, these are certain use cases.
+Where predominantly, CNNs were used, now VITs are used.
+Okay? So in, like, videos also it is used.
+We have something called as VIVIT. It is a… it is an extension to VIT, where we have, you know, temporal attention and all those things. I don't want you to go into much detail about it.
+not required, just understanding is okay, okay? So we don't go into much detail about, like, temporal attention and all those. Knowing about window attention, how does it work.
+When we are using the swing transformers, what is the usage of that is sufficient.
+Okay.
+So how…
+activity recognition could be done across various frames, so that you can, you know, have a look over here, how different types of models are working. Hybrid model. Hybrid model means, like, we have CNNs.
+Plus, we have the IPs.
+So, some layer will be running in CNN, and some layer will be using VIPs. How efficient models we can use, like the SWIN and the DEIP models. So, these are certain kinds of use cases which still people are exploring, and for certain use cases, we use it.
+But usually, the hybrid models, if you see the hybrid models, it's a bit complicated. Why? CNNs, again, the layers of CNNs will come, VITs is also not very, you know, lighter framework, it is also a little bit heavier.
+So how, in that particular case, how it is helping out, we understood. So, basic idea of VIT is that we are passing the image
+The images are passed as the patches, small, small patches of images. That patches are flattened out, and then it is converted into embedding values, like numerical values, and after that, everything remains same.
+in the transformer network. Whatever we used to do for text, that way only once it is converted into a number, then obviously the other workings will remain same. At last, whenever it is forming the image, it will be combining all the patches, and then it will be
+I mean, all the patches, embeddings, and then it will be giving us the result.
+So…
+Knowing about various kinds of data for transformer is very, very important, especially if you're working with images. Vision Transformer is one of the things which is
+likely to be studied. Mostly, the architecture of Vision Transformer, how does it work, what are the different variants, and what are the use cases.
+I'm good?
+So… That's all about this particular module. So, why we have
+like, gone a bit faster, because we have already discussed in the last two classes, we have discussed in detail about the transformers and the pre-training of the transformers, how it can be used for various use cases.
+already in the fifth and the sixth module, we have discussed. So, the same utilization you are doing here also, but with the images.
+So if you understand 5th and 6th module really well, then 7th module is not a very big deal for you. You understand the blocks of transformers. In that case, you also understand, like, how each of the layers differ for text as well as for videos.
+Okay, so if there is any question, you can ask now.
+I'll just stop my share.
+Oh, hi ma'am, I have one question.
+Yeah, go ahead.
+So, you have told, like, in vision transformers, each pixel acts as a, sort of token, if we compare it with the normal, like, transformers. So, does those pixels interact in one direction only, or, like, it's, like, bi-directional interaction?
+No, not every pixel is a token. It will be collection of pixels as one token.
+It's a patch.
+Patch means, like, small, small section of the image.
+So, it will… so when you take a small section of the image, it will be collection of pixels, right? So, actually, in Transformers, whenever we are… we don't directly work with each and every pixel, it will di… it will be working with the patch.
+So whenever you are taking patch, like, suppose in a particular image, you have 10 patches. Collection of different, different pixels, right? At different areas of the image.
+So whenever you are doing that, it will be, kind of a unidirectional, because for image, you don't have to… see, for text, it was bidirectional, because sometimes we don't understand the context of the text, so both the directions we might be using.
+Which is, like, bi-directional, which is present. But usually, for images, we don't do that.
+We go with unique addiction along with it, yeah.
+Okay, and is the, like, if that's a unidirection one, so is it happening across both the Xs? Because if we understand, like, image is composed of X axes and Y axes, so is the interaction happening across both the X's simultaneously? Or, like, is it, like…
+No, it will convert the 2D into 1D, and then it will do, the embeddings.
+it will flatten out. The length and the breadth, suppose, the x-axis and Y axis, it will be flattening out as 1D, one-dimensional.
+Okay, got it, got it.
+Each of the patch, it will be one directional array.
+Of embedding values.
+Okay, got it. Thank you, man.
+Yep.
+How is the split decided? Like, for a given image, how many patches have to be created? Because I think you've told 16 by 16.
+So does it vary? And also, are these patches overlapping, or these are, like, disjoint? And also, is there any loss? Because we are actually spreading a bigger image into smaller, tiny images, right? So is there any loss, which happens, and how…
+I mean, how does it, I mean, I mean, get avoided?
+Yes, so overlapping usually doesn't happen for a very large area. It might be a small overlap, which might be there, since we might have to, you know, go ahead and then might have to draw a relationship between, between the patches.
+So that could be one of the things. And, definitely there will be loss. Loss means it won't be a very huge loss.
+Like, usually in text models also, you see that there is loss.
+It doesn't come up 100%.
+So, in image model also, you will be having loss.
+Okay, are there ways we can calculate this loss?
+I mean, are there any…
+The same way how you
+a feed-forward network. So, transformers already have a feed-forward network, right? It's a normal neural network.
+like, how we use back propagation, and then we calculate based on that, right? The loss. It's the same way it will do it.
+There is no separate method.
+Okay.
+Yep.
+You mean the TANH functions, what we use, or…
+It depends, like, different activation functions we use. Usually, we go for reuse.
+sigmoid function we had, then 10H.
+We have rails.
+what do you mean?
+Like, mean square… mean root squared area.
+Yes, we go for Releu, ReLU. Releu is one of the functions, most of.
+Real Looker.
+Thank you, yeah.
+Can you all please, answer the poll?
+Then we'll move to the Rakuten discussion.
+I'm just opening the AWS panel, one second.
+So, basically, Millik Ray low, leaky ray low sigmoid, and hit Softmax.
+Hmm, those are the different activities.
+Okay, okay. So there are no separate functions here.
+No, no, no, no. No separate ones.
+So the only change, I mean, with regard to processing of images and text is to convert or split the image into text, and then provide those as embeddings, right? From there, everything remains.
+Not, into text, into embeddings.
+Into embeddings, basically, correct.
+Yes.
+Also, like, how is the noise, or because, like, whenever we are feeding any image.
+It also depends upon the quality of the image. So, I mean, at times, we find the image is not clear, or it is blurred, or it may be, like, parts of the image are… images are blurred, so how… how are those handled?
+See, that is handled by the self-attention, the multi-head attention mechanism.
+What does that mechanism do? It understands, like, what is important part, right? So, if it sees that there are certain quality issues.
+So, through the attention, and whenever, like, it passes through the neural network also, it will try to give some weights on those areas of blurness. Suppose a section of the image is blurred.
+Or, like, quality is not good.
+So it will try to add up certain higher weights to that. Based on that, this network will be understanding that there is certain noise over there. That is why the weights are different from the usual, weights that it is giving.
+And based on that, it understands that. So, it…
+See, every time any kind of modeling you use, if you're giving a very, very bad quality data, that impacts the model, obviously. But if it is, like, small patches of the images are, like, having a blurness, or, like, the quality is not good, it is handled.
+But if it is, like, complete picture is not good, then it is going to impact it. Then it won't give you the expected result.
+Whether it is CNNs or VITs.
+Okay.
+Usually, like, garbage input, garbage, or put as much.
+Yes, it's for every model.
+Module 7.
+Okay.
+We also have, like, a tense x-rays, right? I mean, when we talk about medical…
+We also have access. So, are those also considered as images, or…
+Images. We processed in X-ray.
+No, no, they're configured as images, yes.
+Okay.
+Okay, so let us just try to see the implementation.
+Once again.
+Is everyone done with the poll?
+Okay, let me… Go to…
+Okay, so vision transformer is, like, there are two things over here, which tells you about, like, how you can create a vision transformer from scratch, as well as we have a pre-trained vision transformer, which is there in place.
+And using that pre-trained transformer, you can take a dataset and then try to utilize that dataset with that pre-trained transformer. So what we'll try to do is, first, we will try to create a
+Vision Transformer from the scratch.
+That is just the, you know, simple implementation, and we'll try to verify the model, on a dummy image batch.
+Secondly, we'll be using, the pre-trained VIT, on the other hand. Like, already this pre-trained VIT is present.
+So we'll be loading that VIP, and we will be fine-tuning this model on a particular dataset.
+That is one part. So, one part is the, from-scratch part, and one part is loading the pre-trained one. So, usually in the industry, we go for pre, pre-trained one only.
+But you should know, like, how the architecture is created from scratch also. So I'll be explaining that as well. So this is the same thing, like, we checked the version of PyTorch.
+So, we were talking about the patches, right? So here, how can you basically create your patch embeddings?
+So if you have the patch size, any kind of patch size you can give, so usually it is considered 16 plus 16, so you can see patch size you can give, and you can have a convulation layer, because obviously it's a patch, right? It's an image.
+So, that… for that, you can pass the embedding dimensions. You can change these numbers.
+But then, what are the inputs that we are seeing here? You can pass the patch size
+For the kernel, and then what kind of channels you want, how many in channels you want, you can pass that in a forward propation, mechanism. This is always present in all the models, okay? So in this, what we are trying to do, we are trying to flatten it out, because
+Usually, it will be in 2D.
+Right? So we want to flatten it out, and then we want to have the embedding value.
+So, this class will actually create a custom embedding, patch embedding, for you, okay? Now…
+Using this, now you can create up your VIT. So, from scratch, you can create that. So, you will have to pass your image size, what image size you are providing, 224 plus 224.
+what should be the pad size, all other things the same. How many classes are there? That means, for example, if you're using many classes of images, like images of buses, humans, medical images, so many classes are there. Suppose I'm considering 10 classes.
+for the data set that I have, okay? So, how many classes you have, what kind of depth is there, all those things you can consider. So, if at all the path size and the image size doesn't… I mean, it is not divisible, then it's a…
+It should be divisible. It must be divisible.
+That we need to take care.
+Accordingly, we need to take the image size and the patch size, okay? So how many patches are there that you can calculate? Then you can call this patch embedding here.
+The class which we have defined at the top, you can call it up here, and
+Obviously, the CLS, token and the positional encoding… embedding values you can call up here. Here you have the… the transformer encoder layer, right? So this is your encoder layer, which you have. Then, your…
+the layer normalization and your linear layer. So, after that, all the layers will remain the same.
+Then, in this, what you can do is, like, in the forward, you can use your patch embeddings over here, whatever embeddings, you'll pass on to that, forward mechanism, I mean, to that forward, propagation, right? And then, you will be getting up your
+input, so that you would be passing on to your transformer, and finally getting the output. That means you will extract the representations at that particular position, okay? So.
+If you do this, if you pass the image size, how many classes, how… what is the path size, you can implement the
+Simple VIT. So your model from scratch is ready.
+Okay? Now, suppose you have a dummy image.
+Okay? That image is having…
+224 plus 224, there are two images with 3 channels you can give like this. So it's a random size of the image that I'm passing. If you're passing this dummy image to this model scratch, you can see it is able to give you the
+BAT size, as well as the number of classes. So, how many images are there, and then
+how many classes are there, it is able to actually distinguish it.
+Okay? So, that means what? Like, whatever VIT model we have created from scratch, this is working fine. It is able to take off the
+Parameters, or it is able to frame up the model what we have expected.
+Okay.
+So, this is one way to do it. You can pass your images here in place of this dummy image, you can pass your images here, and you can use this VID
+From scratch model.
+But usually, this practice is not done in industry. This is for your knowledge, right? If, suppose, tomorrow somebody asks you to write
+a code, from scratch, like, for a particular architecture, you should be able to do it. So that is why you will see that in every practicals that I've done, always the architecture is given from scratch.
+Later on, we are using pre-training, pre-trained architecture, that is okay, but then architecture from scratch is also important.
+Another way is to use the pre-trained VIT model. So, you can use the pre-trained model already present, that is VIT P16 model, okay? Already, this model was pre-trained before, you can use the weights.
+As well as the model itself. You can freeze some of the parameters, you can take up the features, you can take up… you can have the, linear layers, and then finally get the model and your widths.
+Okay? So here, suppose you're passing 5 classes.
+And you're telling?
+get pre-trained VIT, that means you're calling this, you're passing the class.
+So, you will get the pre-trained model, as well as the VIT transformation, that means the weights of that model, okay? So, like this, this is one of the ways of how you can actually
+load up the already pre-trained VIT model, freeze the backbone, and then replace
+few layers with your target task, okay? So here, you're doing the replacement with your target task. That means you are using the features that you have. You can put it there in the model, and then ask the model to fine-tune.
+Okay, so if you are doing this task, how you can do it at once? So, in a single code, I have done with a particular dataset. So, here also, I have used the Cypher 10 dataset. The Cypher 10 dataset will be already present with you also, and this file also.
+So, Cypher 10 dataset has various images collection.
+with different classes. So, out of that, a section of the image we have taken, okay?
+So…
+we are checking the… the pixel CSV data set, okay? So we are… as we are taking it from S3, so we are loading the file system, we are opening the CSV path, that means in the CSV file, we have all these specifications of the image.
+And then we are reading the labels and all the pixel values from the CSVs. Instead of reading a CSV, you can have your direct image files also. You can read the pixels directly from that image file also. That is also possible.
+So here, what you're trying to do, whatever pixel data you are getting.
+that you can try to extract a 1D array, right? And convert it into a tensor, because you are using PyTorch, so you will have to consider the tensor values, I mean, convert into tensor values all the pixels, okay? And finally.
+you can try… you can go for the resizing of your image, because VITs will require a specific
+size of the image. If at all you have 32 cross 32 image, you'll have to convert that into 224 cross 224, because the VIT that you are using, the VIT model that you are using, the pre-trained model, that
+accepts the size as 224 plus 224. So that means you need to apply the resizing to resize it.
+Okay? And finally, you will get the tensor values and the label of those images.
+That is how you'll be loading up the data.
+And then loading up the VIT model, you know, which we have seen just on the top. The same code is written here, so you will have your VIT model.
+Nope.
+you can call your main function, so you can call the file. This file is already present with you also, the train.csv. You can run that.
+So, our path is this, and then we are resizing the image. We want to resize it into 224 plus 224, and we are doing the normalization. This, you can keep it constant, okay? You don't have to change it again and again.
+So…
+data transformations are this, and then on this dataset that we have in our CSV file, I mean, all the pixel values that we are loading up, and then we are applying the data transformation on our dataset. So that is our final dataset.
+And the maximum number of samples that we have taken is 20.
+just to make the dataset smaller for the interest of time. You can increase these maximum samples also.
+So, your dataset is loaded. Convert that into Data Loader. This is the format used by PyTorch.
+Then?
+As I said, I'm using Cypher 10 dataset.
+It has 10 classes, so you are applying this Get Adapted VIT, that model, on your 10 classes. So, this is your final model.
+After that, the things remain same. Your, loss, your optimizer, your… for every epoch, you will be getting the image and the labels, and then you will be passing on, and you'll get the output. And finally, for each of the epoch, for each of the batch, what is the loss? The same thing.
+We'll be here, so you can see… We have taken 5 batches.
+two epochs, so for first epoch, first batch, the loss is this. For first epoch, second batch, the loss is this.
+For first epoch, the third batch losses this.
+Okay? So here.
+loss is less, but here it has increased. Again, it has gone down. Again, it has increased. Again, it has
+Gone to 2.
+So that means, if you are going with Epoch 1,
+It is little bit daily deli. Daily-dally means it's, like, increasing, decreasing, increasing, decreasing, so this is not reliable. That is why you have to increase the epochs.
+go for more number of epochs, okay? Two epochs, and then second epoch, first, you can see 1.76, then 1.59, it is decreasing.
+1.44, 1.14. But here, again, it is increasing. So, this doesn't make sense.
+You don't have to go to this stage. At this fourth stage only, you can stop.
+Because
+Till now, it was decreasing the loss, but here it got increased, so we don't want the increased path.
+We can have only 4?
+iterations.
+I'm in 4 batches, and then run the thing, okay?
+And if you want, you can increase the number of epochs also. So here, we have used only two epochs, that is why.
+2 epochs and 5 patches, that is why you're getting all this. If you increase the epochs, the number of
+results will be more. And then, through the loss, you can see how the model is performing.
+Okay? So this is how using a dataset, using a pre-trained VIT model, how you can implement that model using that data set, and how you can train it, right?
+Now, suppose in that cipher dataset, you have this many classes, like image of airplane, image of automobile, image of bird, cat, deer, truck.
+dog, all these are the classes. Now you can test.
+You can test the model that you have trained. You can pass something from the data set, and you can test, suppose, 5 samples you are passing.
+Okay, so first, the mean and the standard deviation, and then…
+you will be passing out your dataset, so whatever dataset, how many images you are taking, that many images you will be passing, you will be, like, adding the batch onto that, you will do the forward pass.
+Then you will do the prediction, like, what kind of image this model will predict that. And then, finally, it will unnormalize it, again, bring back
+N?
+It will convert and bring back into a particular,
+tensor, it will be converting that into a NumPy value, and finally, it will give you the result, because through the numerical value only, it will be able to see the result, the label. So, if you pass a data, if you pass a set of data, then
+that label of that data set will be coming. Like, 5 images are there, it will tell this is dog, this is cat, this is human, this is bird, like that.
+So, you will have to see.
+If the, classification, what it has done for the image, whether it is correct or not.
+Okay? So, basically, you can run this, you can see, test and visualize prediction, you can run your already, fine-tuned model, pass your data set, and from the dataset, you can pass only 5 samples as a test.
+So, it will give you the result.
+Okay?
+So, like this.
+Two ways you can do the… via any model, two ways you can do. One is from creating the model from scratch, and then applying it on the dataset. You can do that on the same dataset, you can build the thing from scratch, which we have already seen.
+You can implement that in some of the samples of this dataset, or else the most preferred method is to go with this
+pre-trained VIPs. Pre-trained.
+VIT models, where you load up your data, you load up your model, you fine-tune your model based on your data set, and then you test the model, the fine-tuned model, whether it is working fine or not. This is more efficient in terms of infrastructure, in terms of cost.
+Rather than creating something from scratch, you already have a model, take that model, add up the data. But remember one thing?
+Whenever you're going ahead with the data, data's size, the image size.
+should be the same size, which
+the previous model was using. Only that part you need to keep in mind, because if the size mismatches, then
+It will not be working. It will not work.
+Okay? So, that has to be taken into consideration.
+So, this file will be there with you. Go and run this file once.
+And, you will also get an idea, like, how we can create a VIT model from scratch, or else, if at all I don't want to do it, how I can use it by using a
+sample VIT model. So here, I have used a simple VIT pre-trained model. You can use some of the model from Hugging Face… Hugging Face also.
+Okay? You can try that out and see how efficient results you're getting.
+Okay?
+That's it.
+That's it about the discussion. If you have any questions, you can come up with that.
+Or else, we will close the session.
+Ma'am, I have one question.
+So, if we talk about, like, any use case of from, medical side, let's say I'm… I'm uploading some of the images, scanned images from some MRI scan, okay? So, I don't believe, like, the normal pre-trained, VIT will work over here, so we have to use any domain-specific
+VIT, which is trained on some medical images of MRE, right? So, where those models are, actually, are they hosted on Hugging Face, or like…
+Are they, like, paid models? So, how does, like, hospitals or maybe big medical companies leverage those models? Where are actually there?
+Yes, for large organizations, they usually used to do the modeling, I mean, create the models from scratch, since lot of medical models are not present right now.
+But if you are using that for practice, you will get some of the models in Hugging Face that will be there, but then that is not sufficient for the industry. Usually, the medical industry goes for creating the model once.
+And then maybe distributing that model every time and reusing that model every time for different other, data set.
+But usually, they go for Scratch first.
+Okay? Because in that case, you cannot use a general model.
+Like, I cannot use a cat, dog, and bus model for my medical image. That is not going to make any sense. So, usually, this kind of specified industries, they used to go for, their own models, creation from scratch.
+they will try the model with a limited number of data set, maybe limited number of images, and eventually they will scale up. It will not be, like, so many images they are using at once, but eventually they will scale up.
+Okay, so in future, like, if we go for any project which involves these, domain-specific models, be it from financial services, or, like, medical, or any retail, so are these models available, anywhere, like, in Hagin Khaja? I mean.
+Which is, like, open sourced.
+Few models are there, which is open sourced, you will get it. But, those models are… I mean, for practice, it is okay.
+But if at all you're going for an industry application, then what happens is, like, bigger industries, like, larger organizations, they might have their own flagship model already created for this purpose. If not.
+I mean, you might have to go ahead and create the model from the scratch.
+They will provide you the data you might have to create.
+Usually, domain-specific models are something which is, like, not readily available open source, because people don't, wish to share it sometimes.
+It is very, very specific to their data, right? That is what. But some general models you will get… I mean, some specific models you will get in Hugging Face, but if you go to an industry, then it will be, like, you will have to do it.
+Okay, okay. But actually, where these models are actually embedded in production, because, you know, we have seen, like, whenever we visit any radiology department, there is some MRE machine, and there is a physical in-person radiologist who is scanning the images, and he's telling us, like, okay, we have a particular disease or not.
+So, are these models embedded into the radiology machines, or, like… No. Yeah.
+Into the software. They have a particular, like, what they used to do, they will have these images, and they will store it in their systems, right?
+Okay. From where they are… from where they are giving the result. So, in that.
+only, your model will be sitting in the system. So what it will try to do, it will try to take the image, the MRI image, and it will be storing in some location, right? So usually it will be in the system or in a cloud location.
+Usually, in the hospitals, that is done.
+So, in that part only, your model will be sitting. So, this particular image will come to the system, and then it will be passed on to the model, and then finally, the result will be given, and then the report will be generated.
+So, between the report generation, between the decision, and between the image, that is where the model will sit.
+Okay, so that means it will completely bypass the need of radiologists in near future, is it?
+To some extent, yes. It is bypassing some of the role of doctors also.
+So, there will be no validation required from their side? I mean, directly the report will be shared to the patient.
+No, no, no, no. Validation will be required, because without… this is a… this is a medical field, right? Whether it is medical and whether it is financial services, like, these are very sensitive industries.
+if at all we are using AI, and then only based on AI solutions, we are giving the diagnosis, then it can be, like, against the, you know, ethics of medical code.
+So, there is, there is something which they have in medical industry, which, like.
+Yes, the result will be given by AI, but it will be cross-validated by the, by the physician also.
+Then only it will be passed on to the patient.
+Okay, got it, got it. Thank you, ma'am. Yep, thank you.
+Okay, any other questions?
+When will you have the assignment given? Next week?
+Will you be people?
+Walk through the assignment as well.
+In terms of the problem statement.
+Which assignment you're talking about?
+We usually have one graded assignment.
+Hmm.
+Yep.
+For one of the subjects, it was told that, I mean, it will…
+be, like, mostly, like, next week, it will be, like, made available from November 7th up to December 5th.
+Okay.
+Wanted to know… will we be discussing the grade assignment problem statement in upcoming class for any queries or clarification?
+Usually that we don't do, but if you have anything, like, to discuss, we can discuss.
+What would be the…
+problem in general, like, if… just to get me…
+It will be… no, it will be based on different types of scenarios. It will be a scenario-based kind of question. Like, a scenario will be given, and then you will be asked to say that, like, what kind of models, or what kind of solution you will propose.
+So, assignment will be that sort of thing.
+Okay, maybe from a particular industry, a particular scenario will be given. So, in that scenario, what do you propose? Like, what solution do you propose?
+Okay.
+Yay.
+Probably one common question for everybody.
+Yeah. Yes.
+Nope.
+Okay then, if there is nothing else, then we'll close the session, and I'll meet you all next week. Bye.

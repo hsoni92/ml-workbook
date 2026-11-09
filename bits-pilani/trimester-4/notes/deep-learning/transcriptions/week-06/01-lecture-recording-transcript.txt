@@ -1,0 +1,450 @@
+Okay.
+So, today we are going to discuss about Module 6.
+So, just to give you a…
+bit of the context that we discussed last week. We have started our discussions around transformers, right?
+Wherein,
+We were saying, like, how transformers were used, how they came into existence, what were the problems that were there with the transformers, and then, what were the problems that were there with the previous model.
+to transformers, and why transformers have came up, why, we haven't, taken up RNNs, LSTNs. There are usages of RNNs, LSTMs, and GRUs, but then, why do we came up with the transformers? So that we have seen,
+In the last module, right? So, in continuation to the discussion that we had in the last module, this sixth module is also
+Related to transformers. So here, we will be, basically focusing on, like, how…
+some pre-made transformer models could be used for various activities, right? So let me share my screen.
+So, it's like Transformers 2, the design variants, and the LLMs. So, what are the different variants of transformers that are present? Like, there are different types of transformers. For what purpose do we use those types, right?
+So, there are a few topics in this module. So, topic one tells you about the different, transformer design variants, right? So, we have various types of transformers which we use it for various purposes. So, here, if you see.
+we have the original transformer. In the original transformer, we have
+normally, like, whatever we discussed in the last module, that we have an encoder, we have a decoder, and then, you know, according to that, the transformer works. And also, I have, told you about the research paper, which is, like, attention is all you need, where about the architecture of transformers has been discussed, right?
+So…
+Original transformers came up from that paper, wherein we understood, like, why self-attention mechanism was there, how it has replaced the RNNs, then how we had the cross-attention links between encoder and decoder, how positional encoding is working. So all the parts of those encoder and decoder we have seen.
+Now, when you say the variants of transformers, there are
+three types, basically. One is only encoder.
+One is only decoder, and one is both encoder-decoder. That means there are certain models where only the encoder part of the transformer is present.
+Okay? So…
+that those models are called as only encoder-based model. So, if you see here, there is a model called as BERT,
+Okay? That model is an encoder-only model, where only the encoder part is present. So basically, it's a bidirectional, model, where bidirectional attention is there, and it
+This kind of models are used for classification, any kind of text classification that you're doing.
+For that purpose, it is used… it is used for any kind of, similarity search between the text. We call that a semantic search also. Like, the words which are having the similar meanings. If you wanted to have a search for those words.
+We can have those Also. So, encoder-only model is one type of transformer.
+Okay? There are some other models, transformer models, where only decoder part is present, like GPD.
+GPT is one of the examples, okay? So, if you see GPT, the model which is behind ChatGPT, right? I told you that, that all the generative AI models that you see today
+having the inspiration of Transformers. That is why we are giving so much emphasis to whatever we are learning over the modules, right? Since we are learning the evaluation, like, how the previous models came, and then how it has got evolved to the latest models, and then how the
+latest models have come up to the transformers, and how transformers have led to the, models that we use today. So, GPT is one of the prominent models that we use today.
+Right? So this GPT is also a transformer model, but only the decoder part of the transformer is present.
+So basically, for chat, for code generation, for creative writing, whatever task you do using GPT, for all those purposes, decoder-only models are used.
+And there will be certain models where both encoder and decoder are present, okay? That means the encoder part is also present, the decoder part is also present. So.
+for, this, T5 is one of the examples. T5 is one of the model type, I mean, model example, where both encoder and decoder is present. Okay? So what it will try to do
+It will… encoder will try to read the source from where the text is coming. Decoder will try to generate that particular text via cross-attention. So, both the ways it is trying to work.
+So, basically, for translation tasks, like, if you want to convert one language to another, for those kind of tasks, this is used. For summarization, for question answers, for this kind of text-related activities, we use encoder-decoder models.
+So, ideally, we have 3 types of transformers. We have encoder only, we have decoder only, and we have both encoder, decoder, transformer. So, for what purpose we use it? We have
+seen here, okay?
+So, how can you choose the correct, or how can you choose the right model, or the right structure to select any model?
+The thing is, there are certain things which you should understand before you select whether you should go with encoder only, decoder only, or encoder-decoder.
+Right? First thing is understanding your task. What task you're going to perform.
+If you are going to do some bi-directional task, then you go for encoder-only models. So, you can just relate to the examples here. If you're doing classification, semantic search, you go with encoder-only. If you're doing chat.
+code generation, go with decoder only. If you're doing summarization or translation, you go with encoder-decoder models. So, you have to understand the task.
+What kind of task you're going to do.
+Based on that, you're going to select the model.
+Okay?
+Then, if there is any kind of creation task, okay, if you're doing any kind of creation task, you are going to use decoder-only models, right? If it is a shared foundation, then you can use the same attention, like, shared foundation means, like.
+few parts of the things are reused in the architecture. Same attention network, or same feed-forward layers you can use, but
+with different data. That is also possible.
+In that case, your model will remain same, but your data will change.
+Okay? So…
+So nowadays, We have mostly decoder-only models, which is used for
+modern LLMs, okay? Since we are using GPT, GPT is a decoder-only model.
+Most of the time… most of the time, we are using those kind of models where
+We are generating something.
+Right? When generation task is coming out, when something you're trying to generate, you are using decoder-only transformer model.
+So?
+Obviously, nowadays, whatever LLM models we are using, we're using it for generation only, most of the time.
+That time, we are using decoder-only models. So, Topic 1 tells you about what are the different types of transformer models, for what purpose you should use it, and for whatever, like.
+If you're categorizing the purpose, for what purpose, each of the models should be selected. If you're doing a particular thing, choose a model. If you're doing another particular task, choose an appropriate model. So, your right choice is important whenever you're dealing with this type of transformers.
+That is, in the topic one.
+Topic 2, slowly it goes into each of the type of the
+transformer examples, okay? So, you will learn about BERT here.
+So, BERT is basically bi-directional. Bidirectional means one transformer is working from the left side, one transformer is working from the right side. Both the side transformers are placed.
+So, that means bi-directional. So, you are understanding the context of those sentences whenever
+you are using this kind of model. So, BERT is an encoder-only model, okay?
+You can see.
+transformer encoder stack only is present. It is used for understanding, not generation. BUD you can use for only understanding the text, and knowing the context out of it, but you cannot generate anything using BERT.
+Okay? And here, we have 15% of the token masked out and predicted from surrounded.
+Context, because it understands the context.
+Okay, so few of the tokens, we have masked it out. So, in the last session, when I was talking about masking, in that, I told you that… that certain things are there, like, certain models are there, where we cannot tell the result from before.
+That means you are telling the future to the model.
+If the model knows the future, then what it is going to predict?
+Right? So, that is why few of the tokens we have masked out, we have hidden it out.
+We have created a filter which can just hide those tokens, so that
+the future, things are not revealed. And whatever has been hidden, those parts will be predicted by the model through the context, the surrounding context. That is the work of the model.
+Okay, I told you why mask is important. It stops the tokens from seeing themselves in a bidirectional model, because both the sides, the transformer models are working, so that is why sometimes what happens, this kind of models has a very high chance of leakage.
+That means if your words are… if your future things are leaked now only, then what the model is going to do?
+You are giving all the knowledge to the model. Model doesn't have any work, right? So that is why masking is very, very important whenever you are using this kind of model. And why bidirectional? Because we are understanding the context from both the side. And remember, this kind of things are
+Very, very important whenever you are understanding the context. If you see, River Bank and Deposit Bank, both the worlds have bank.
+But the meaning of this word, where BANK is there, and this word, where bank is there, both are different.
+This relates to riverbank. That means, the…
+what to say, where the river starts, or the sides of the river, right? And this means here.
+your… wherever you deposit your money, right? That bank. So this bank and this bank, if this surrounding world is not there, you will not understand whether you're talking about Riverbank or you're talking about a simple bank.
+Both the words are same, but the surrounding words have made the meaning different.
+So, for this kind of context, Understanding. Bidirectional.
+models are used, or BERT is used.
+Okay, so here you will learn about BUT. You will see, like, how you can do next sentence prediction. Suppose 50% of the real next sentences or 50% random sentences are given to learn the coherence.
+So, you will learn about this particular thing, then you will learn that if at all we use this kind of models, then how can we do the pre-tune… pre-training, okay? That means pre-training means already a model is created with huge number of data.
+And later on, that model, you can use it for some other purpose. You don't have to create the model from scratch.
+So that is called as pre-trained model.
+Suppose you have the corpus of the books, the Wikipedia, and you apply You know?
+Your models, and then, once you have done, and it is done.
+Later on, you can just load the model, use it for your purpose.
+So, one time, whenever you're doing the pre-training, right, over here, it is a bit costly. Why bit… it is costly? Because so much of data.
+So much of data is there, and you're training the model on top of this data.
+So, so much understanding the model has to…
+build, right? So, that is why pre-training task is always costly. But once it is done.
+Then you can just take that model, whatever model is there, you can modify small layers in the model, and you can use it. That part is called as fine-tuning.
+Where you take a pre-made model.
+Change some small layers here and there, and make a new model for your task.
+Okay? And fine-tuning is preferred, because every time we cannot create a model, a large language model from scratch. It's very costly, you require very good infrastructure, there is a lot of constraint, right? People who can shell out money can create their own models.
+Otherwise, whatever pre-made models are there for that particular task, you can take that up, you can load it up.
+Load your data, try to make that model understand your data, change some layers here and there in the model, fine-tune the model, and use it for your purpose.
+Here, you don't have to use… you don't have to train the complete model. You're just
+Using the pre-made model, changing little bit, and using it.
+So for, classification task, you use this kind of fine-tuned model for question answering, for named entity recognition. What is this named entity recognition?
+Like, there might be paragraphs and documents, right? So, out of those documents, you might want to find out the name of the places, some specific entities.
+Like, name of the places, name of the people, name of certain countries, like that. Some specific entities you wanted to find out. That is called as NER.
+Okay? So it's also a very good example where
+You know, we use this kind of pre-trained model. So whenever you are using BERT, or whenever you are using GPT or T5 model, we obviously don't train the model from scratch, because if you go to strain a GPT model from scratch, it's very costly.
+Right? You cannot do that. So, whatever pre-made GPT model is there, you take that up, add up your own data, fine-tune that, and use that model.
+So, in Topic 2, you will learn about that.
+Topic 3 talks about the GPT. So, topic 2 talks about the BUT. Topic 3 comes to GPT model. That is the decoder-only model, right? So, here, what we try to do, here.
+When… whenever decoder-only model comes up, here, generation part comes up.
+Understanding was the work of encoder-only model, but decoder-only model does the generation, like, text generation.
+So that is why you can see GPT, Llama, Claude, this kind of… whatever models are there. These are all generation-based models. Generation means if you ask the question, it will generate the answer for you.
+So, whenever generation-based models are there, that… those are decoder-only models, okay? So, these are called as autoregressive models, because every task becomes the next token classification completion for them.
+Suppose the previous word is there, what will be the next word? It will try to predict, based on the context, okay?
+So, decoder-only models.
+A GPT is one of the type of that, and it has given very good performance whenever we worked at large scale.
+Okay? So, one of the type of model, which is GPT, which we use nowadays for our generation task, and when people came to know about generative AI and other things, right, from GPT only.
+So, initially, ChatGPT came up, and people came to know about Generative AI. So, this was the pioneer, and still we use this model for our generation tasks. So, this is a decoder-only transformer model.
+So here, you will be learning about, like, why do we do the masking? Because in decoder architecture, you will see mask… masking is there.
+Which we discussed in the last session, right? When we were discussing the architecture of a transformer.
+Then, how can it, affect.
+each of the tokens, each of the words. So, what is the pipeline? You will read a little bit more about the pipeline, where we have the tokenizer, it will tokenize the text, it will try to convert it into embedding, give a position to that, and then, finally, it will pass through the
+Attention Mechanism, and feed-forward network.
+So, that complete pipeline, you will be learning, and then
+What it will do, at the end of the pipeline, it will try to give you a kind of probability. Probability of the occurrence of the next word.
+That will be your…
+final result. So that means, always remember that decoder-only models always helps you to do text generation.
+Whenever you're trying to do any generation task, always you should use decoder-only model, and GPT is one of that type of model.
+So, topic 3 will be about this.
+Topic 4 will be more… mostly on the pre-training part.
+how pre-training could be done. So, I told you about pre-training, right? Like.
+you want to predict the next tokens of whatever sources of data you have taken, right? So sometimes what happens, you have a particular goal, and then you also have found a pre-made model before.
+Using that pre-made model, you can add up your data.
+Do some certain changes, and then…
+You can use it for that. So, when the pre-made model we need to create, that is called as pre-training.
+Pre-made model from some data, it has to be created first, right? Without creation, how can you use it later on?
+So, whenever you are trying to create The model from scratch.
+that you have the data, you have the algorithm, you have applied the data, you have created the large language model from scratch. That is called as pre-trained model.
+Okay? Pre-trained model.
+So?
+There will be a lot of, like.
+parameters which will be there. So, as data will grow, the parameters will also scale up, and then you can see how the cost will also increase. So, about those things, you will be learning here in the topic 4.
+So how, different types of abilities have came up for this kind of pre-trained models, right? So, if you are increasing the scale, how multi-step reasoning it can do, how it can understand the context.
+Then, if there are, you know, any kind of accuracy, strict accuracy matrices that are followed or not.
+For certain cases, accuracy means direct answer giving. In some cases, accuracy means how much percentage of the answer is correct, right? Where reasoning is there. So, how the quality
+Comes over quantity through this data.
+through these models, right? So how…
+We give quality models rather than giving too many models.
+Okay? How alignment is done between the fine-tuning part and RLHF. RLHF is something which we will discuss little later. We have a fine-tuning topic, where I will be talking about SFT and RLHF in detail.
+Probably on Module 10 or Module 12, we will be talking about that, the fine-tuning part. So how…
+as a whole, you know what is fine-tuning, right? So, how fine-tuning could be done so that
+You know, these base models could be used, and so that we don't have to put the effort to create the models from scratch.
+So, efficiency is also required, cost also has to be saved, and there should be very, very less time for this model to give the answer. So, basically, the cost, the inference cost, and the latency… latency means how much time does a model take to
+Give the result.
+Right? So it can be slower, so latency time, latency is this much seconds, or this much milliseconds, we can tell that.
+So that is…
+what we are going to see here in the topic 4. So, how this pre-training has happened, why it was important, what are the different abilities that pre-trained models have.
+How can we focus more on quality rather than having too many models? How it can align to, you know, fine-tuning, how we are actually saving up… after creating pre-trained models, how we are saving up the cost and the latency. So, all those factors you will be learning here in Topic 4.
+Topic 5, you'll be learning about.
+the efficient transformers, okay? So, you will be learning about, like, what are the bottlenecks, how…
+memory-bound GPUs, could be used. So, what happens is, sometimes what happens inside the transformer, there are a lot of multiplications and other things are happening. Where it is happening? In the self-attention mechanism, right? So, when in the attention mechanism.
+Matrix multiplication is happening. That is taking so much of memory.
+And the runtime is also…
+high over there. So, how can we, you know, basically save the cost? How can we save the time?
+What kind of attention mechanism we can use so that memory usage is less?
+What is sparse attention? Only a few subset of the data could be used, and then memory could be cut down, and compute time could be cut down. So, basically, how efficiently you can use the transformers. So, topic 5 tells you about that.
+Okay?
+Where you will talk about the latent KV, that is, like, how the cache could be made into a low-rank latent cache, where suppose you want to save the bandwidth, right? You don't want to use the complete thing and then fill up your cache.
+So, how can you use that? Then, how can you use some hybrid stacks? Rather than having foolproof attention blocks, you can have sparse attention blocks. Sparse means some of the portion of the attention blocks will be active, some will not be active.
+Okay? And… Obviously, wherever the activity is less, it will be marking that as 000.
+So, how can we basically make it memory efficient, cost efficient, and also faster? That will be
+Here in the topic 5, about Transformer. Because, see, you understand transformer, you understand the architecture, you understand the application, but when you come to real-life scenarios, if architectural fixes and how efficiently you can use these models if you don't know.
+Then, obviously, you are going to lose more money, more cost, more infrastructural
+bandwidth, right? Which is not acceptable, because LLM model's cost is not less. It's very high.
+So… There also, we need to understand how efficiently we can use transformer models.
+Topic 6 talks about, different types of tokenization. There are, different types of tokenization techniques which are there, that is BPE. We have WordPiece. You will learn BPE is used for GPT. WordPiece is one of the algorithms which is used in BERT. How tokenization happens.
+Over there, you will learn about that. See, tokenization is very important.
+Since you are converting the text into small words, and then you are doing the numbering of those texts, right? So without that tokenization step.
+Nothing could be done.
+No model can understand, like, What you have written, or what you are asking.
+So that is why…
+Various kinds of tokenization algorithms are there in place, which you can apply, and then you can
+See that, how tokenization could be done efficiently.
+Okay? Suppose in BP, you can see, how it will do. It will repeatedly merge the most frequent adjacent pairs.
+Okay?
+And then…
+And what piece, what it will do, it will merge the… that, that will be according to the likelihood of that model, okay? So that means…
+Every algorithm that you are using over here for tokenization has a different way of doing the tokenization.
+Okay? So, learning about the different types of tokenization is also very, very important. These are algorithms which does tokenization.
+We have sentence piece. Sentence piece is also a type of…
+tokenization algorithm which is there. Then, how can you deal with white space, okay? Treat them as a normal character. Then, how… for different languages, we can use this kind of models. So, for Chinese, for Japanese, for Thai, example.
+What kind of model, what kind of tokenization?
+you could use. Because, obviously, you are not going to every time, deal with English. You're going to deal with multilingual
+things, right? So, in that case, how T5 and then BUD and other models you're going to use, what are the different ways by which, you know, you can see that memory and memory consumption and computational cost can be reduced?
+That is very important. Whenever you are, talking about any model, if you don't know how to use that model efficiently, then there is no point.
+Right? So, this…
+module, we'll talk about… mostly about, like, what are the different varieties of models that you will learn.
+in Transformers, and then how efficiently you can use those models. Suppose I am doing a translation task, okay?
+I'm doing a translation task, and I'm using one very big LLM model. To load that model itself, I'm taking so much of time. I don't know what is the capacity of my system, what kind of hardware requirements that particular model has. I'm loading it, and it is going for days and days.
+It's still not loaded. So, it is…
+like, creating the cost factor also, it is consuming my infrastructure also, my time also, and the latency is very high.
+Right? So all those factors, you will learn about here, so that architecturally, And…
+Resources-wise, you can take the decision. Like, if I'm selecting this model, whether it is apt for my use case or not.
+Okay?
+Then you will learn about decoding, like, how greedy and beam search, these are algorithms for doing the decoding, how exit search works, how greedy search works, like, greedy will pick up the top token every step.
+It is very, very fast, okay? Beam search means it will take certain, hypotheses for the tokens, and then it will try to reduce.
+from that particular hypothesis. Like, a set of tokens it will take, and from there, it will check the criteria and go on reducing the repetitive ones.
+Okay? So… How you can work with this kind of algorithms that is there.
+Then, what are different parameters? Like, we have temperature, we have top K, we have top P. What kind of things that you can use? Temperature means if the temperature value is greater than 1, that means diverse answers these models will give.
+Very creative answers these models will give. If it is less than one, then it will be focused answers. There will be no diversity.
+So, temperature is a very important parameter.
+Four.
+Tuning this model, okay?
+Top K is there. Top K is basically to sample only the first
+Whatever probable tokens are coming out.
+that much top 10 or top 20 tokens I want to sample it out, that you can do by top key.
+Top P means it will try to see that what is the, like, common default for the model, and how the different, data size, the pool size, can be adjusted according to the model.
+So, that is taken care by top P. And how can you choose this kind of parameters that we have seen in different tasks that you will be learning? So, for, suppose, translation task, I will be taking temperature this much.
+And then, top K this much, top P this much, and then what is the result that I'm going to get? It will not…
+be a hard and fast kind of a, you know, cutoff that will be there, but again, it's a trial and error that you need to take a certain set of values, you need to run the model and see how is the performance, okay?
+Then comes your transfer learning.
+Transfer learning is what?
+The same thing.
+Like, if you have a pre-trained model, if you're using that pre-trained model, adding up your data, using the previous
+Knowledge of that model to do your task today.
+I have trained the model before.
+And that pre-trained model, I'm using it today to do certain tasks.
+So, that means what I'm learning? I'm taking all the learnings of that model, which the model has learned from the data.
+So, actually, what I'm doing, I'm transferring that learning of that model.
+So, you will learn about the transfer learning process here.
+Before transformers, what used to be there, how people used to struggle with each of the models that were present.
+and then how… what were the limitations of RNNs, then how the shift happened, right? How massive pre-training data… sorry, pre-training model came up, and then how we don't have to spend much time, you know, training the model from scratch. And nobody does that.
+Because we don't have that bandwidth to do.
+So that is why the transfer learning process has came up, okay?
+So?
+Pre-train once and fine-tune anywhere. That is the motive. One time you do the pre-training of these models, already model is prepared. Again and again, you take the model, do some
+Adjustment here and there, and use it for your different purpose, like, whether it is classification, translation, or question-answer, with very little time.
+Because here, you are just using the model for inference. You are not doing anything, like, you are doing the fine-tuning, but only a certain layers of the model you are doing the training on.
+So, the time required for training a full model and the time required for training a partial model both have difference.
+So, we are actually increasing the efficiency, and Through the cost.
+whatever we have over here for the model that we are training from scratch, and the cost that we are having after transfer learning came up, both are different.
+So that is why, in industry, we go for transfer learning process, because
+We are doing certain tasks where already models are present. Then why should we go and create our own model?
+We can take our own organization data, add up to the model, fine-tune the model, and get a new version of the model for ourselves.
+So that is transfer learning. So here, you will be learning about transfer learning, and then how efficiently pre-training, fine-tuning, all these things happens, and then how the previous knowledge of the model can be utilized for your various purpose.
+Okay? So this is all about all the topics that are present in Module 6.
+So, total 8 topics are present. In this, module, specifically.
+More than technically understanding transformers, which we have already done in Module 5,
+Here, you will be understanding, like, what are the different varieties of transformer models, and then how
+efficiently you can use those models. Like, what are the different ways of using those models? Like, directly, should we use it? Should we take the pre-trained model? Should we do some fine-tuning? Should we use some different set of data? How can we save the cost? How can we save the inference time? How…
+efficiently, we can use the model for our purpose. So that is the main motto of this particular module.
+Okay? So, architecturally.
+How you can take the decision that I have selected this model, should I select this model for my purpose or not?
+That this module will give you an idea about, okay?
+If you have any questions, you can ask me regarding this.
+Before we move to the practical discussion.
+You can just take 2 minutes, and if you have any questions, you can write down your questions in the chat.
+Yes, whenever you are doing a fine-tuning, see.
+We have to ensure that, based on the diff… there are two ways to do that.
+One way is to directly ask questions to the model related to whatever data that you have fed in, right? You can test that way.
+That is first way, which is a straightforward way.
+Second way is… is that… that for different tasks, there are certain evaluation matrices which we use. Like, for translation tasks, we have certain evaluation matrices for
+Summarization, we have certain evaluation matrices.
+Through those evaluation matrices, task-specific, models could be evaluated, like, to ensure that whether the model have learned those knowledge that we have
+tried to feed in, right? We have tried to feed in through our data.
+So, it can be both ways. So, first way is the general way.
+Second way is using different types of evaluation matrices for different specific tasks. It can be translation, it can be text generation, sorry, summarization, it can be question answer. For any kind of task, there are specific evaluation matrices.
+Which, will help you out to find out whether actually the model has learned or not.
+Okay?
+Even only testing the model after it has been pre-tained is…
+It's a way for us to know that it still retains the existing capabilities and also
+Has learned the additional knowledge.
+Yes, so existing capabilities will always be there.
+Why? Because you are not touching the core layers of the model, right? You are just touching the outer layers of the model.
+You're just pre… you're just fine-tuning the outer layers of the model. So if the core of the model is not touched, obviously the core knowledge that the model has will… will be retained.
+Okay. I had one more question, I'm pasting it in the chat.
+Neo.
+So, like, if pre-training, usually, like, as we discussed, right, it requires massive computational resources. So, what…
+Is the criteria which organizations can use to know whether to fine-tune existing model?
+Or to just use prompt engineering, or to maybe train in a model from scratch, in case there is no such model which they can use for a pre-training.
+Hmm.
+Maybe, can you give some examples, or…
+Like, for example… Yeah, maybe, for example, like, most of the companies, they go for, suppose, creation of chatbot.
+Okay, let me give the example of chatbot. So, if there are… if, suppose, they are finding out models.
+Where already, I mean, chatbot models are present, where they can take those and use for pre-training, but, sorry, for fine-tuning. But if at all they find that for what purpose they are creating the chatbot, suppose the chatbot is for a banking…
+domain, right? And they may not find an exact model.
+For that chatbot for the banking domain. That may happen. It might be a chatbot, model which is present in general, but it's not specific to banking domain.
+So, in that case, they will understand that, okay.
+If we have to make it too specific to banking, we don't want to make it general. In that case, they will be thinking of creating the model from scratch. But again, there are challenges. I mean, if it is a bigger organization, they have bandwidth with the cost.
+and they have appropriate infrastructure to create the model from scratch, then only they will use it. Or, I mean, they will create the model from scratch. Or else, what they will take, they will take the
+general chatbot model. On top of that, they will be adding up as much as knowledge as they could through their data.
+through their policy data, through their whatever data they want to feed to the chatbot, they could do that. I don't know whether you have heard about a technique called as RAG.
+We will be discussing about that a little later. That is called as Retrival Augmented Generation, RAG.
+It's very well known in industry that whenever we have such kind of issues where we don't find an appropriate model, we try to give up as much as context through RAG.
+And then we try to add those contexts into the LLM models.
+whatever models, if any generic model also they are using. That, many times, many a times that happens.
+I mean, it's not very specific to banking, it's not very specific to healthcare, suppose, and then you take up a generic model, add as much as context as you can from your industry, related documents, or maybe external documents, make that model more equipped, and then use it.
+Or else, if you are a large organization, you have a bandwidth, then
+go for the model training from scratch, but that is not preferred, okay? Even larger organizations don't prefer going for creation of model from scratch, apart from if it is a giant. If you're talking about Google, Microsoft, Meta.
+OpenAI, they will be doing it. But if you talk about mid-size organizations, small-size organizations, they won't.
+Since the cost of creating
+the data itself and the cost of training that model itself is huge. They won't prefer. That time, they prefer RAG.
+Okay?
+Yeah, again, though we pre-tain a model, one of the major problems with LLM models is they are badded. So, in case I ask a question which is very recent, so there might be cases where it is
+hallucinating, or it is not answering properly. So that is one cost of it, in the sense, like, these are not, like, real time, or they need to be… we need to, again, maybe, like, train them over a period of time.
+On the contrary, as you said, using a retrieval augmented generation mechanism, wherein, at runtime, I can feed in some level of information, which can again evolve, because whatever policies I have today, they might change over a period of time. Maybe if I'm a financial organization, RBA regulations might change. So what do you select? I mean, is pre-training
+when to use spray training, and when to use RAG, so that, like, I'm feeding that data at runtime, and then keeping my model, or at least the decision accurate, as per the real-time scenarios.
+No, even if you are using RAG, RAG will definitely, give you the, suppose you're giving the data on the runtime, that is okay, but whatever data you have given previously, and whatever data you are giving now.
+It won't… if you're giving the data now, it won't forget the previous data. It won't be replacing that. It will go on adding up on top of that.
+So, ideally, if you would have created a model from scratch with all the knowledge that you have, with all the latest information that you have, with all the evolution of knowledge that you have, suppose you have created a model, pre-trained model, two years back.
+Now, you will have to update that model at a particular frequency. Suppose every 1 year or every 6 months, you are updating that model with the latest information. The same thing if you are doing with RAG also.
+In RAG also, you will have to update the information, suppose, after every 6-6 months, because your policies are changing, your documents are changing, that you are doing with RAG also. But the cost of doing that in RAG and the cost of doing that in pre-training both are different.
+Because in pre-training, again, with that newer information, you will have to train the full model.
+Which is very costly.
+In RAG, you don't have to do that. You can only feed up the information as a context to the LLM. Full LLM model, you don't have to, again, train it back.
+Yeah, I think in that case, like, second option might be more feasible for medium-sized organizations.
+Yes. Second option is always feasible for even larger organizations also, because one time they create the model, again and again, they don't create the model. They just go on doing the fine-tuning, or they go on using RAG.
+Yeah.
+Yeah.
+Okay, is there any other questions from anybody?
+Okay.
+If not, we'll go to a simple implementation. So, in this implementation, I have taken,
+You know, a pre-trained…
+BERT model, and then how you can have that pre-trained model, and then how you can implement that for a particular task, okay? Let us see that implementation here.
+So, if you see this, this is, like, talking about a BERT type called as distilled bird. So, what is Distilled BERT? It's a name of a BERT, another variant of BERT model.
+It's a distilled version of, BERT model, like, little bit clearer version of BERT model, okay? You can see that in this paper.
+So, since this is… this distilled bot is a lighter version of the model, it's a kind of pre-trained model which is there, and using this pre-trained model, we are going to add up some sample data, and we are going to train this model again, and use it for a particular purpose, okay?
+So basically, we are trying to do transfer learning.
+So, we know the steps, what we need to do. So, every time you're using any kind of model, you need to do the tokenization. So, first, always perform your tokenization of your text.
+And then…
+use up whatever input sequences are there, you have to make it in a PyTorch version, since we are using PyTorch here. And then we are loading the model, so here we are doing
+for classification, text classification, so we are loading distilled BERT for classification with the pre-trained weights that are present. That means the pre-trained weights will have the previous pre-trained knowledge.
+Okay? Then we will be configuring our training arguments, do the fine-tuning, and check the accuracy of the model, okay? So for that, we will be, at some portion, we will be requiring TFKS, so, you have to install PIP install TFKS, okay?
+Then, as usual, we check our PyTorch version.
+Since every time we need to ensure that we have PyTorch in our working environment, and then the version is also stable, so we just check that.
+And here you can see, from Transformers, we have taken DistilBERT tokenizer, Okay?
+for loading the tokenizer of the pre-trained model. This is to load the model itself, the pre-trained model. This is to run the, fine-tuning, and this is to have all the arguments required for the training, okay? So, from transformer
+Package, we have taken all of this.
+submodules.
+Okay? So, first thing is…
+your data preparation. Since we are using a text classification, the purpose of our, like, experiment is to do the text classification. So, we are creating a class that is text classification dataset, so where we have the encodings of the dataset and the labels
+Like… What we want to predict.
+Okay?
+So, we'll be taking all the, whatever items we have, we will be taking it in the form of dictionary. You can see key and the value.
+And the labels we will be converting into tensor format. And finally, we will get the items, okay? Length of the labels also, you can have it if you require. So, this is the sample set of sentences that we have taken as a data set.
+Just to test, okay? It's a dummy dataset setup. Suppose I love this movie, it was absolutely wonderful.
+Terrible experience. I hated every minute of it.
+Great acting and marvelous direction.
+Boring plot, waste of money, time, and money. Suppose these are certain sentences that you would like to classify, whether these are positive sentences, negative sentences, or what.
+Okay? So, the labels that we are using here is 1 for positive and 0 for negative. So, the first sentence, if you see, this is the positive sentence. Second sentence that you see, that is a negative sentence, so that is why you have given 0.
+Again, third sentence is a positive sentence. Again, we have kept one.
+Again, fourth sentence is a negative sentence, we have kept zero. So, we have given the labels also.
+Okay?
+Now?
+We will be loading our tokenizer from the pre-trained model. So the pre-trained model that we are using is Distilled BERT, Base Uncased. It's a base BERT model.
+Okay? As I told you, BERT is a type of
+transformative model. So, it's a base model.
+Base uncased model means it's something which is a raw model, okay, that we are using. So, that is loading the tokenizer, and this tokenizer, you will apply it on your training text, so that your training text could have the encoding values, okay?
+Now, you call your text classification dataset, which is this, your class.
+You call it here, pass your encodings, pass your labels that you have mentioned here, and your train data set is ready.
+Okay? So total, you can see 4 samples are processed. Why? Because 4 sentences we have. This is one example, okay? You can take, other examples also in place of this text.
+So, we have loaded, we have tokenized, and we have loaded the tokenizer, and we have tokenized our dataset, and made our trained dataset ready.
+Okay, so after doing this with the data, then
+what are the different setups for the model, and then how you can compute the matrices, right? So, you will have your logits, and you have… you will have your labels. So, how can you get the predictions? How can you get the accuracy value of your
+After doing the prediction of… from the model, so basically computing your matrix, that for that, you have created a function here.
+So, our model name is, again, distal butt base uncased, number of labels 2, 0, and 1.
+And here, we have loaded our model, the pre-trained model. So, always you will see, whenever you load a pre-trained model, you will get the purpose of the model, the name of the model, dot from pre-trained.
+So, whenever dot from pre-trained is written, that means you are loading a pre-trained model. Give the model name here. That is, in our case, it is distilled BUDBASEUNKISED.
+Okay? So, you will have to give the model name.
+Give the number of labels, and your model is loaded. So if you see here.
+The model is this particular model, so loaded, distilled water and case model architecture, so it has been loaded properly.
+Okay? So, here, we have taken the pre-trained model, we have loaded our model. So, our dataset is ready, our model is loaded. Now, the dataset that we have, the trained dataset, we will have to load it inside the data loader, since this is a PyTorch format.
+So, data loader should be used. Inside that, you have your data set.
+Batch size is 2, that means every time two, two samples will go at once. If you want to shuffle it, shuffle the samples, you can do. So shuffle is equal to true, and finally, your train loader is present. That means your data set is loaded.
+You are using the Atom optimizer. It's a native PyTorch optimizer that you will use for your model.
+Right? So you're giving all the parameters for the optimizer. Number of epochs, how many times we want to run the model, 3 times. So, number of epochs, 3. You can also change this. You can increase the epochs, if you have some time.
+total number of steps, how many steps are there, so the length of the train data set into the epochs. That will be the total steps. Then your scheduler
+Scheduler means how you would like to schedule up your, optimizer, okay? So how many… after how many steps you want to warm up, what number of total steps are there, how you can… what optimizer you are using, so that and all, you will pass it here in the scheduler.
+So, after you have your optimizer, after you have your dataset, you have loaded your model also, you have loaded your scheduler, now you will go for training the model. So, model.train.
+So you're executing the training loop, okay? So, for each of the epochs.
+First, the loss will start with zero. So now, one by one, the models, sorry, one by one, the data set will be loaded, and then it will go as input data, it will be converted into IDs.
+take up the attention values. From there, the label values will be there after that.
+To get the outputs, you will implement the model. So, you will pass your input IDs, you will pass your attention mask, and you will pass your label. So, your outputs are present.
+So after that, the similar torch format that we follow, we have the
+backward, function present, then we apply the optimizer, the scheduler, and finally, we capture the loss for each of the epoch. So, if you see.
+For epoch, 1 out of 3. Batch 1 out of 2, this is the loss.
+Epoch, first epoch, batch, second, this is the loss. So, epoch 1 is completed. Average loss is this much.
+Then, coming to Epoch 2,
+If you see Batch 1, this is the loss. Batch 2, this is the loss.
+So, Epoch 2 is completed with this much loss. Epoch 3, similarly, is completed with this much loss. So, you can see here, the loss was 0.70 here.
+Here, it became 0.66, it decreased. Again, it increased 0.68. So, that means what? Up to Epoch 2, we can finish it.
+If the loss is increasing again, then there is no point doing this epoch 3.
+Okay? Loss should not increase. Loss always should decrease from the previous one. So here, previous one was 0.66, here it became 0.68. So stop it here itself at epoch 2.
+Don't go for Epoch 3.
+Okay?
+So that tells you, the loss tells you about that. So, after you have fine-tuned your model now, you have passed your data set, you have passed the previous pre-trained model, and on top of that, you have done the fine-tuning.
+Okay? Now, you can take one sample text, and you can predict the sentiment.
+Just take the text, take your fine-tuned model, and take the sample tokenizer.
+And then you can see. So, whatever tokenizer we have, pass that into the inputs, then get the logits, get the probabilities, get the labels out of that particular text, and then from that label, you will tell whether it is a negative or a positive one.
+So, this is to predict your sentiment, because we are doing a…
+classification of the text. So, if you pass a text like this, suppose the performance was surprisingly brilliant and engaging.
+Okay? Surprisingly brilliant and engaging. So, tell me, predict the sentiment of this sample text. So, you're telling predict sentiment, sample text.
+test sample here, pass your pre-trained… sorry, the fine-tuned model and the tokenizer, and finally you will see the predicted class is positive. So this sentence that you have tested is positive. What is the confidence? 50%.
+50.46%. So, 50% of the time, the model is confident that this particular sentence is a positive sentence.
+Okay? So, like this, after you have your pre-trained model, after you add up your own data to the pre-trained model.
+do the fine-tuning, and after doing the fine-tuning, test the model, like this. Take any sentence, and then try to implement that model on that sentence, and see whether it is predicting correctly or not. So, label prediction, it has done correctly.
+That means the pre-training that we… the fine-tuning that we have done is almost good.
+Not too bad. If you are passing some sample sentence, it is able to predict it properly. So, it's a classical case of using a particular pre-trained model. Here, we have used BUT. You can use GPT also, you can use some other pre-trained model also.
+And you can take up certain sample text, and try to… suppose those texts could be related to your organization also. It could be.
+So you can take those and then fine-tune this pre-trained model, get a new model, and the tokenizer, that new fine-tuned model and the tokenizer implement on your future text to see whether it is giving you proper result or not.
+Okay? So this is the way how you can use a pre-trained transformer model. It's very simple, implementation-wise.
+The only thing is, whenever you feel you're going to do the practice, you can change these sentences, and you can put up your
+Own organization examples, and then you can check, okay?
+So, very classical example of how can we implement
+pre-trained model for doing a similar kind of task that we are aiming for with our own data, okay? So, pre-trained model present. On top of that, you add up the own data.
+Fine-tune that model, get a new version of that model, use that model for your future use.
+Okay?
+So that is how you will do the, fine-tuning, or you will use the pre-trained model. One example I've given of BUD, you can try with different other
+models, as well as different other data sets as well, to have the complete understanding, okay? With this kind of setup, only first try it, then you can go with some other examples as well.
+Okay? So…
+This particular notebook, again, is present with you, with that, that particular PPT. PPT also is loaded up in your human.
+You'll be able to see that after today's class, the Module 6, PPT you will be able to see.
+And you can go through. If you have any questions, you can come back.
+Okay.
+In this simple example, I think we just have used, like, one… I mean, one question to check. But I think in general, we might use test data to actually verify how the model is performing, and…
+I mean, the confusion matrix as well to know, like, how the accuracy, precision, recall are coming up.
+Can we do that?
+Provide some more light on…
+how can we actually, like, I mean, verify that the training, whatever has been done, is accurate?
+to confirm.
+See, you are doing a classification here, right? Like, you have given a set of sentences, and you have told whether it is positive or negative.
+So, there is a function where I have used computation of matrices, correct?
+If I just show you there, I'll share the screen.
+Here. Can you see this? Compute matrix.
+Yeah.
+Here, you can include, because you have done your predictions here, right? See, we are checking the accuracy here. So, in this function itself, you can just go and you can, include the confusion matrix, and you can return this here.
+So, whenever you're using the compute matrix after your model is created, it will give you all the matrices.
+Okay.
+Yeah.
+Okay, any other questions?
+others?
+Okay.
+If there are no other questions, then I think we will close the session here.
+And apart from that, if you have any other questions, you can reach out to me.
+And we'll try to solve that out, like, we'll try to have answer for those questions, right?
+Okay, then. I'll close the session here by… I'll meet you all next week. Bye.

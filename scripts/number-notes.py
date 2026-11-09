@@ -165,15 +165,18 @@ def generate_subject_index(subject_dir: Path, notes: list[Path]) -> None:
 
 def generate_top_index() -> None:
     subjects = sorted(d for d in NOTES_DIR.iterdir() if d.is_dir())
+    trimester = NOTES_DIR.parent.name
+    title = " ".join(w.capitalize() for w in trimester.split("-")) + " Notes"
+    rel_notes = NOTES_DIR.relative_to(REPO_ROOT)
     lines = [
-        "# Trimester-3 Notes",
+        f"# {title}",
         "",
         "Course notes by subject. Each subject has a week-by-week index and every",
         "note carries a Previous/Next footer so the notes read as one linear",
         "sequence. Regenerate everything with:",
         "",
         "```bash",
-        "python3 scripts/number-notes.py",
+        f"python3 scripts/number-notes.py {rel_notes.as_posix()}",
         "```",
         "",
     ]
@@ -182,7 +185,9 @@ def generate_top_index() -> None:
 
 
 def main() -> None:
+    global NOTES_DIR
     notes_dir = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else NOTES_DIR
+    NOTES_DIR = notes_dir
     subjects = sorted(p for p in notes_dir.iterdir() if p.is_dir())
     for subject_dir in subjects:
         process_weeks_root(subject_dir)

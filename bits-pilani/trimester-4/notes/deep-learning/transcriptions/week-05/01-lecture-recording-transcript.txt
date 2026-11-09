@@ -1,0 +1,591 @@
+Yeah, started.
+So, in the last class, we were discussing about RNNs.
+So basically, like, what are RNNs, what are the different parts of RNNs, and then, how do we basically use RNNs for different, use cases, then what were the extensions to RNN, right? We discussed about LSTMs, GRUs.
+And then, how those things could be used, and then what are the differences, right? So, from RNNs, we moved to LSTM, and from LSTM, we moved to GRU.
+So, all those models were somewhere or the other, having certain issues, right? So, in order to
+in order to mitigate those issues, we came up with a new architecture, which is Transformer, okay? So…
+Here, in the Topic 1 of Week 5, you will be knowing about the limitations of
+RNNs. Like, what was the problem? So, basically, the bottleneck for RNNs is, basically, it will go step-by-step. So, it follows step-by-step processing, okay? It cannot do any kind of parallel processing. Like, many parallel steps are happening side by side, it cannot do that.
+It will do one by one.
+then the past-to-past information can get degrade… degraded over the time, okay? So, it can remember, the
+suppose you have done 5 steps back, it can remember the 5 steps back. But if you're telling… tell me what happened 200 steps back, it cannot remember that much early information, okay? So, because of these problems, this early information degradation problem, we came out with LSTMs.
+And GRUs.
+Right?
+But then what happened? After that, also, LSTMs and GRUs were fine. For simple things, we used GRUs. For complex applications, we used LSTM. But
+at one point of time, what happened is that that… those architectures also were having step-by-step processing. That means word by word, it will go inside the architecture, and then the architecture works. So, obviously, it is time-consuming.
+And then, it is also not adding that much value, right?
+Then, so because of that problem, transformers came up. So…
+There were crisis of certain skill which was there like if at all you do this kind of sick.
+Can you please mute yourself?
+Yeah, thanks.
+So,
+as you do sequential training, right? So, it will be using more infrastructure, so it will be actually keeping some of the GPUs that you're using for your model, some of the GPUs will be idle, and then there will be a lot of issues if you go for this sequential training. I mean, sequential trailing in the sense, like.
+the step-by-step processing, okay? So… Then, in order to combat that problem, transformer has came up.
+So, Transformer, where, so it was.
+proposed by Vaswani, okay? And, whatever problem we were facing with RNNs and LSTMs, Transformer has actually solved that. So, in Transformer, we have a mechanism called as self-attention.
+Okay?
+Self attention, so self attention is that mechanism which will help.
+Two.
+Find out which are the important parts in the input.
+In the input data. And only process those parts and take it forward. Okay?
+One problem was that, another problem is, it can do parallel processing.
+So, here, step-by-step processing was there. So, here, it has done parallel processing, so obviously it is solving that issue.
+And this degradation problem was also not there since self-attention mechanism was used, okay? So, what was happening is that if you are connecting one by one things inside the transformer, it knows that which to take and which not to take.
+Through the self-attention mechanism. And through this self-attention mechanism only, transformers were working well.
+So, if you see the architecture of Transformer, there are two parts in that architecture.
+This is called as encoder.
+And this is called as decoder.
+Okay? So you put the input, through the encoder.
+This input will be divided into 3 things.
+We call that as query.
+Key and value.
+Okay? Query key and value.
+So.
+We'll know about it, what is query key and value. So here, after this, it will go to the
+Self-attention mechanism here.
+Then?
+This output will get normalized and go to a simple neural network.
+Which is placed here. And then finally, it will give you the output. This output will somehow connect here to the decoder.
+Okay? Two parts will be connected here, and one part will come from here. So here.
+In decoder, we will have the output
+Of the previous step, like previous step, whatever we have done, we'll take that output here again, one self-attention mechanism will be here.
+Again, it will go, and this connection, this both connections will be there. Again, one self-attention mechanism will be there. These two parts will be, shown, I mean, coming from the encoder, and one part will come from this decoder. And finally, again, the neural network, and finally the output.
+So this is overall architecture of transformers. So as I said, the input will be divided into query, key, and value. So this query, key, and value is that query means the asking, what do you want to do?
+Key means the labels.
+Okay? And V is the content.
+value is the content. So.
+the input itself, you are dividing it into 3 parts, okay? So this attention mechanism, whatever you see inside encoder, or whatever you see inside decoder two times, this is the building block of transformer.
+Okay? So…
+There are various types of transformers which came up. We have a transformer called as BERT, which came up in 2018. We have GPT-2 and 3, which came out
+A little later, and then we had Vision Transformer, which is used for, mostly images.
+Okay?
+that came up in 2020.
+So, as this architecture was also handling parallel processing, so it was able to scale up if we increase the data, or if we increase the computation.
+Okay, so scalability-wise also, Transformer architecture was.
+Good.
+So this topic one tells about the introduction to transformer architecture, why should you select that, what are the limitations of RNNs or other architecture, what is query key value, and the impact of that.
+Then, topic 2 will be, little bit description about this self-attention mechanism, where query key and value is going, and how we are getting the attention scores.
+Okay? So, if you see here, query means the search term, key means the book title, and value means the book content. Just in a layman terms, if you want to understand what is query key and value.
+Okay? So here, what we try to do is, we try to find out the attention scores.
+We can call that as attention scores, and the formula of this attention score is softmax of Query.
+into… Transpose of key.
+Divided by… Dimension of key, root over dimension of key.
+into value.
+Okay, so once we take out this thing, that will be the attention score.
+Okay? So for each of the input, we use to find out the attention score. So for each of the input, we will take out the query, the key, do the multiplication.
+of the both query and key, divided by a normalizing factor, which is dimension of key, DK, we call that as, okay? So, this is just to normalize your, values that you're getting over here. Then.
+apply a softmax. Softmax, what it will try to do? The function of softmax is, it will try to convert this into probabilities.
+So, it will be having the value between 0 and 1.
+It will be having the values between 0 and 1, so these probabilities, again, will be multiplied by the value. So when finally you get the values, whatever output you're getting, that will be the attention score for that input.
+So, like that, that only has been explained here, okay? So, like that, the attention scores are taken out. So, when attention scores are taken out, that means based on each of the attention score, you will understand that, okay, this… this input has higher
+Attention score. So this input is more important. This input has lower attention score. So this input is less important. It's like that.
+Okay? So… This only works, this mechanism only works inside the self-attention mechanism, I mean, self-attention layer.
+In that architecture. And because of this attention scores only, we are able to find out what is the important part in the input, in the self-attention. So, because of this part, the
+Architecture is more versatile.
+Okay.
+Then, if at all we have this attention mechanism, self-attention mechanism, like that, if you have multiple self-attention mechanism, like.
+one on top of another, right? So, if you have the multiple self-attention mechanism, then that is called as
+Multi-head attention.
+Okay? Multi-head attention. That means many self-attention mechanisms you're concatenating, and all the outputs will be concatenated, and you will be getting a final output.
+So sometimes what happens, on this attention mechanism, we actually put a mask.
+Mask means it will be like a filter kind of a thing where you know.
+Some of the values will be.
+minus infinity.
+Like this, in this particular…
+diagonal, it will be minus infinity. Why do we keep this as minus infinity? Because when you apply softmax to this minus infinity, this will become 0. The values will become 0.
+Now, why do you want to keep these values as 0? Because these are the future words.
+So whenever you have the future words, you don't want that words to be exposed.
+Obviously, right? If you are telling the future words or the future tokens to an existing model, that means what is going to happen in the future, that also it will know, which is bad.
+Right? We don't want it,
+For the model to know that initially.
+So that is why we add the mask over here, and that is called as masked attention. It is an attention mechanism only, but only this filter we are adding, so that the future, whatever words are there, that is masked out.
+Okay, and this type of masked attention is only present in that, see, in transformer you have encoder and decoder, right? In decoder only you have that masked attention.
+In encoder, you don't have.
+Only in decoder here, you will have the masked attention. One masked attention layer, and one simple self-attention layer.
+Okay? So this mask is only for the decoder-only model, so that we don't see the future tokens.
+Then, slowly, slowly, the multi-head attention mechanism is explained, that is in topic 3. So, I told you, if a single head is there, single unit is there, that is single self-attention mechanism. If we have multiple, then we have
+Multi head.
+attention mechanism, right? So that multiple heads are coming, that means, how many heads we want to have, how many units we want to have, that many units we can have, and then
+We can basically, concatenate all the result and get a final.
+Output. That will be also a attention score, okay? So…
+this is the way how you can implement the attention mechanism, okay? So, for query, key, and value, always there will be certain weights that will be measured, and then that will be going as the head formula. And finally, you concatenate.
+Concatenate means consolidate all the result and then give it to.
+Give it out as a output. So in topic 3, you will be knowing about the multi-head attention.
+What is scaled dot product? Scale dot product means this part.
+This is the scaling part, the formula which I told you, and this is the dot product, Q into.
+Q multiplied by K to the power transpose.
+Okay? So this, how this mechanism works, why do we have to do, scaling of this, I told you, to normalize the values, right? So, you will learn about that also, so it will stabilize the training, so that at least whenever you're applying Softmax, your values are not too large here.
+So that is why this normalizing factor you will have to divide it with.
+Okay, so in BART or GPT or T5 or Vision Transformers, this mechanism only works.
+For the… Attention scores.
+Okay? So, now, this particular architecture
+of transformer, it was used initially for text.
+Okay?
+For text data, initially it was used, but
+Nowadays, it is also used for
+images, and for other forms of data. So that is what it is called as multimodal.
+Multimodal means different forms of data.
+It could be text, it could be image, it could be audio, it could be video, anything.
+Okay? Any form of data.
+You can take it up for this, for this, transformer model. So that you will learn over here in topic 3.
+Topic 4, we'll be talking about positional encoding. What is this positional encoding? If you see.
+This encoder and decoder block in transformer.
+Encoder block and decoder block.
+In transformer, whenever you're putting this input here, right.
+Whether here or here, whatever, here there will be a block called as positional encoding.
+What is this positional encoding?
+Encoding means you know when you are converting your text into numerical format.
+But, how will you know that this numerical data is for this particular word?
+So the sequence over here for the word is not maintained inside, transformers. So, in order to maintain the sequence of the numbers, or the sequence of, like, for this word, this is the number. For second word, this is the number. For third word, this is the number.
+So, if you want to know that sequence, we used to put positions into that encoding values. Position means this is 0th position, this is 1st position, this is 2nd position, this is 3rd position, like that. We used to put positions. So, whenever you put positions, you know that, okay, this number
+Is for this particular word, this number.
+Okay, this is the number in the first position, which is for this.
+First word.
+Okay? So, in order to give the numbering, that is called as positional, and encoding means the encoding values, the numerical values.
+So always in order to maintain the position or in order to maintain the sequence, we add this positional encoding part over here. So that you will learn in this topic 4.
+So, as I told you, that order problem is there. It doesn't understand the order. It cannot understand, okay, for this word, this is the value, it cannot understand. In order to fix that, we put a unique position vector to each of the embedding values.
+Okay, how do we put that? We can put that through certain mathematical functions. Usually, we use sinusoidal functions.
+Okay? And why there is a benefit? Because this doesn't add up to any external parameters, okay? If you have different lengths of your input, it can be used for different lengths.
+And, obviously, it can encode to a particular
+Length also, so that is why.
+Positional encoding is important over here since we want to
+give the input to this architecture, whether it is encoder or decoder, if we want to put this, we have to put this in order. Otherwise, it will jumble up everything, and if you remember that if the sequence of the words are here and there, you will lose the meaning.
+So, there is no point running the architecture then, right? So, positional encoding is one of the important segment which is there in transformers. So, here you will learn about that positional encoding.
+Okay? So, what are the different ways of doing the positional encoding? What are the different, embedding styles that are there? What are the innovations that was done onto this? And then how…
+People have, chosen between the flexibility and the length.
+of the inputs, okay? So, this topic is completely about these methods.
+Then, fifth topic, you will know about the encoder block. The encoder block, which I told you, right? The left-hand side block.
+how it will work, that you will know. So, what is the main goal of that block? So, usually, this encoder block, if you pass the input as text, it will give out the embedding values.
+The numerical values of that, that is the output of.
+encoder, okay? So, how self-attention mechanism works, how it will go to the next layer, and then how you will do the normalization, all of those things are given here. So, if you see every part, every segment.
+That inside.
+The encoder, whatever it is running, everywhere, the values that is passing from one place to another place will get normalized.
+Normalization is very important, since it can produce large amount of values. So, some values will be large, some values will be small. So, then the network will get disturbed. That is why we always do normalization here, and that is called as layer normalization.
+Okay, in each and every step that is maintained.
+So, this topic will talk in detail about the encoder block.
+Okay, what is feed forward network? Feed forward network means I told you here that there will be a simple neural network which will be present. That is the feed forward network.
+Like, what is positional encoding? What is dropout? Dropout means if some of the neurons, if you are having in that neural network, if you can switch it off.
+for some of the iterations, that is dropout. If we can stack up certain layers, then we can do that also. So, overall, this topic the encoder block.
+Similarly, sixth topic, we'll speak about the decoder block, the right-hand side block, okay? So, right-hand side block will be this, so the output
+of the previous, step will be coming up here. There will be positional encoding here. Then query key value will be here. There will be a self-attention mechanism. Here, it will be masked.
+self-attention mechanism. Then the output of that will be normalized. Again, it will go to a
+Attention mechanism, ok so, attention mechanism, some of the values of this will come from the encoder.
+Here is the encoder, right? So it will come from here and join, and one value will go from here. Then, again, it will go to a…
+Simple, feed-forward network.
+Okay? And then it will apply a softmax and give the result.
+Okay?
+So, this particular topic will tell you about each and every part of decoder.
+Why masked self-attention is used, what is cross-attention, when, whenever you are applying certain, you know, the encoder is giving the, this particular.
+keys and values, right? So this is cross-attention. Like, from encoder, you are taking the value and putting it into decoder.
+Okay? And how is the block maintained? So, all that block anatomy you will be studying. So this, in short, I have told you how does it look, but then, yes, one by one part, you will learn, like, why it is present, and then how does it work.
+again, the same steps, so the feed-forward steps, then the layer normalization, what happens if you don't do the normalization, post-normalization versus pre-normalization. So, pre-normalization will stabilize certain deep stacks, like if you are using GPT-3 or LAMA.
+But post-normalization will be good for certain models.
+Okay? What will be the output? So, output will be a probability distribution. Like, what will be the probability of the occurrence of the next word, if you're giving the previous word?
+That will be the probability which will be given by decoder.
+Okay? So, about decoder, you will learn in the sixth topic. So, each and every part of the transformer, you are going to learn, wherein, you will have, like.
+how it started, what is the journey, and then how… what are the different parts of Transformer, what each of the parts
+Are doing what is encoder, what is decoder, why do we require encoder, why do we require a decoder, what should be the input and output of the encoder and decoder, what are, what is self attention mechanism, how does self attention mechanism works, why.
+Transformer has gained so much of importance over other architectures. All of these things you will be learning.
+Then?
+Topic 7, you will be learning about the full transformer architecture, like full encoder block and decoder block, how many encoder block was taken.
+How many decoder block was taken? What are the core blocks that is present? Positional encoder, multi-head attention, layer normalization. Then we have position-wise feed-forward network, that is the simple neural network.
+All of those things, you will club it together, and then, as I told you, encoder and decoder both will be there. You will club up, and you will learn about the transformer.
+Then the loss functions, the training objectives and the loss functions, what is called cross-entropy loss, then how does you do… how do you do the masking?
+What, what are the scaling laws?
+Then, what kind of design this has been into? Like, whether we are using it, query key value from the same input, and how we are using it, what is masked attention, what is cross-attention. Cross-attention, I told you, the two outputs will come from encoder and join with the decoder.
+Masked attention, I told you, you will add up a filter.
+Which will stop the future words to be known, right? So, how those particular things are working will be present there. Just give me 1 minute.
+Yeah, sorry.
+So, here you will be learning about that, right? So, what is happening in this particular, week is that you will be learning about the introduction to transformers, how the transformer has brought a different, you know, change.
+To, like, the thought process, what people were having for this kind of architectures, and then the different parts of the transformers you will be, actually discussing here.
+Okay?
+So, that's all will be, like, total 7 topics will be there, in this particular week, where, again,
+This week and the next week, that is sixth module, week six and week five, both will be talking about transformers.
+So this is Transformer 1, and that is Transformer Part 2, okay? Transformer Part 1 will be telling you about all of the, like, the structure of the Transformer, and then Transformer Part 2 will be talking about the, more on the application side.
+Right? More extensive over the application side. So that we'll see next week. So here.
+as you understand the transformer architecture, as I told you that this is very important architecture, since this was the pioneer for generative AI models, okay? When people have worked on GPT, when people have worked on some other models.
+That time even GPT is a kind of transformer model. So understanding transformers is very important if really you want to scale up to generative AI and later on if you want to use your Agentic AI and other things, right? The core topic is transformer.
+So in order to reach to transformer, we have seen so many topics.
+Before. Like, previous 4 weeks, we have seen all the prerequisites, and then how actually people have come up with transformers, that we came to know now.
+But then, previous things, we have seen RNNs, LSTMs, GRUs, how it came, what were the problem, and then how people have came up with the transformer.
+So, as you go through this module, you'll come to know the overall end-to-end parts and the components of transformer, why it is present, and what will happen if those parts are not there.
+That is important, right? So I can take up any architecture, but if it is not solving my purpose, then why should I take that architecture? Why people do think that transformer could be a future architecture for generative AI, or maybe for some other, you know, advanced models. So you will come to know about that.
+So that's all about this,
+module's, topics. If you have any questions, you can ask now.
+I'm just stopping my share.
+You can write over the chat if you have any questions.
+Can this PPT as well be uploaded to the Lumen?
+This PPT?
+The one what you're currently showing, it's just a glance of all the topics, so that would be helpful.
+In general, I mean, for all the weeks.
+Yeah, yeah, yeah. I think,
+It should be uploaded in the Lumen. Parth, do you, like.
+It's not available, that's all.
+Okay.
+Mom, I don't have the presentation through.
+I'll just give the access to you today. Probably you can just make it available for them as well.
+Alright, ma'am, and also, I think you're the host of this meeting, so could you raise the poll for the participants to rate the class out of 5?
+Okay.
+If the option shows up for you, because it is not showing up for me.
+Yeah.
+Yeah, it's raised.
+And I think you'll get the results for this poll.
+So, if you could just share the results with me.
+Okay, yep.
+Yahoo.
+Oh.
+From when are these being supported? Like, I mean, initially, you were only supporting text, right? As you tell, you're also supporting audio and video, so do we know when?
+From Ben Lakati is being supported.
+The transformation.
+Sorry, what is your question? Can you come back?
+During the presentation, like, there was one slide where we talked about
+We are also supporting different forms of
+Representation in addition to text, such as images, video, and audio.
+Do we know from when are these being supported? At least not from initial, right?
+No, initially it was not supported. So initially it came up with the text only. When initial models came up, that time it was only for text.
+Since it came up, as an extension to LSTMs and, RNNs, right? LSTMs and RNNs were predominantly used for text. But later on, like, as the transformer architecture has evolved, then
+images or audio-video kind of data was used.
+Okay.
+Ma'am, are there no lab sessions or practice sessions, or this is going to be entirely theory?
+For all the weeks.
+So I'm going to discuss now the lab part, like, after the…
+Okay.
+Yes.
+So everybody has given the responses in the poll.
+Add this question I have pasted in the chat, if you can.
+Look at it, it's more about.
+The multi-head attention mechanism.
+And what happens if… When the complexity gets increased in terms of the depth and attention hits.
+Yeah, let me just check one second.
+Everybody has answered the poll. I'll just close the poll and just answer your question.
+Okay, I'm just ending the poll now.
+Is the result shared? I am not sure.
+Okay, so… Yeah, your question is, like.
+Okay, transformer will achieve parallelism by removing the recurrence, but rely on
+Rely on the positional encoding to preserve the sequence, yes.
+So, if we increase the model depth and attention heads.
+Can model compensate for poor positional information?
+No.
+Positional information is the fundamental, requirement which is there. So even if you increase the depth of the model… See, in transformer, what happens? Suppose you have an encoder and a decoder, right?
+So you can increase the depth of this by increasing the number of blocks of encoder or the number of blocks of decoder.
+But whatever initial fundamental, like.
+Components are there inside this, each of this block will remain same.
+So, if at all you are increasing the number of blocks of encoder, like the model depth.
+Or maybe if you are, having a multi-head attention, it's a multi-head attention only that you are using inside encoder and decoder block. So in that case, the sequence will not get
+Disturbed. Even though you get… even though you consolidate, and then, you know, you have multiple things, multiple encoder blocks, or multiple
+Self attention blocks it will not get because before it moves to the attention mechanism or before it goes to the multiple blocks, we have the positional information already.
+spin selected.
+And then only it passes to the attention mechanism. So there is no problem with the, like, information getting lost or, like, model not working, performing properly if at all you increase the depth or the attention hits.
+Okay.
+Fine. So, we'll move to the implementation part.
+So.
+Let me share my screen.
+One second.
+Yeah. So, in the implementation, you will see that, like, it will be also there when you go through the fifth module. So, this is the Python notebook for the fifth module, where we have done a small implementation of the mechanism, the attention mechanism. So.
+There is a paper called as Attention Is All You Need by Vaswani, ok so, this is the parent paper for Transformers.
+If you just go and browse this.
+Attention is all you need. This is the paper.
+Let me go to PDF.
+This is the paper which you can go through if you want to know end-to-end about Transformer, because this is the parent paper taken out by Google, who has actually taken out the Transformer architecture, okay? So, it is named after Vaswani.
+This is a whole team who has worked for Transformers. So here only, you will see, like, they will tell about the introduction to Transformer, they'll tell about the background of, like, how it came up, and this is the architecture that I spoke about. This is the encoder block, and this is the decoder block.
+Okay? So you can see here, multi-head attention is there. You can see here, positional encoding is there, the embedding inputs are there. Then addition… the normalization is present, the feed-forward network is present, two of the inputs is going to the decoder.
+In decoder, we have masked multi-head attention, then we have another multi-head attention, then it is going to normalization, same, going to the feed forward. going to softmax and giving out the probabilities.
+Okay? So, this, architecture, you will come to know from this paper only how many encoder blocks were used, how many decoder blocks were used. Total 6 blocks of decoder and 6 blocks of encoders were used.
+Then how do we do the scaled dot product attention, right? Query key value, the formula which I told you, you will multiply query and key, scale it up, then.
+apply softmax, and multiply that softmax with your value vector. So, this is one unit of self-attention. Like that, if you have multiple units, you can stack up multiple units, concat, and get the
+Final result, this is multi-head attention, so it speaks about that particular formula here, whatever we have seen, right, it comes from this paper only.
+Then what is multi-head attention? What are the applications of attention in the model?
+You can go through what is embeddings and softmax. So, basically, every component that we spoke about, or you are going to learn about, is present in this paper. So, why self-attention? You go through this paper.
+not going much into detail in the, you know, the mathematical equations and other things, but understand what are the different setups that they have used when they came up with this particular transformer architecture. And this is the parent paper for transformer.
+If at all you are going to talk about transformer, you should be knowing about attention is all you need.
+Okay? So…
+That's what I have given you the reference here. You will have this notebook with you. It's already there, present, and the code is also explained in that particular, like, each and every module I have explained the code, okay, and the output as well.
+So you can directly download that, and you can also execute the code.
+So here we will see, about the self-attention mechanism, so how we can, actually, you know, have this formula.
+for the attention, and then how we can build a single head self-attention mechanism, how you can scale it up to multiple head. You can verify those attention mechanisms with a dummy batch of data.
+We can… we will take that dummy batch of data, and then you can also check it out. And then.
+If at all you wanted to use masking that is there in decoder, you can use masking and then cross check. So Pytorch already has a multi head attention package present.
+If you are creating that by your own.
+creating by your own and already the inbuilt package, what is the difference? So you can cross-check the Scratch implementation with PyTorch.
+built in.
+Package, okay? Built-in module.
+So, implementation-wise, how to implement it, and then how to use it on a batch of data, you can
+see that through this particular implementation practical, okay? So here, you can see that we have first seen what is the
+PyTorch version that we have used. So here we have used 2.11.0, and the device is a CPU device. If you have GPU connected, you can also use a GPU device. Your training will be done a little bit faster.
+Okay? Then, about the query key value formula has been given here. So, that only has been, actually,
+implemented here, the scale.product attention. So, you pass the query, you pass the key, and you pass the value, and if you want to do masking, for now, we haven't done a masking. So…
+We have actually tried to implement that particular formula if you see here.
+In the form of torch values. So, query into key transpose divided by the square root of DK.
+Okay, the dimension of the query vector, that is DK. So, if the mask is not none, then you go and fill up the mask with 0.
+Sorry, if not none, you go and fill up with minus infinity or else directly go and
+Compute the attention scores so you'll get the output as well as the attention scores whatever you are.
+getting from the softmax, right? So, finally, the multiplication of your attention as well as the value vector will happen here, and finally, you get the output. So, here, if you see, in this function, we have actually implemented that formula, whatever we discussed.
+Right? That is the scaled dot product attention function.
+Now, if you do a quick check, like, you pass some, like, a batch of 2, and this much sequence, and then the dimension of the query vector as 16, just pass some random number, and
+Okay? You will see that you are getting the same thing. So, you are getting the output as 2, 5, and 16, whatever you have passed, and the attention weights will be 2, 5, and 5, because it is implementing the logic over there and giving you the output.
+Okay? So…
+If you want to weight the things, give weights to each of the things per query, you're telling true.
+If at all. That is an additional information that you want to check, but just do a quick checkup by passing some random numbers.
+So, after your… this scaled, portion is ready, now you will be ready to actually create your own self-attention mechanism.
+So, own self-attention mechanism, if you're writing, if you are mentioning the embedding dimensions, then what will be the query, what will be the key, what will be the value, and what will be the output. You can see here.
+Query, key, value, and the final output. So you have defined all of these things, those segments inside.
+Self-attention and then the forward.
+Layer. Forward layer means, how will you
+implement those. So you are calling the query key value, and then you are implementing your scaled dot product attention.
+Which is?
+you have passed through your self-attention mechanism. Now, if you are passing the embedding dimension as 32, you can change this number.
+Apply this function, this class of self-attention so it will go, it will calculate everything and finally it will give you the output and the attention scores.
+Okay? So, you can see here, if you are just passing, normal input, and you are telling that I want to get the output of this, that means whatever you have defined here as self-attention, you have passed that.
+So you will get the output of the thing that you have passed here as the query key value. So your input is 2632 that you have passed, and your output also will be of the same size.
+Since whatever inputs you have passed, the output should not be changed, even after doing so much of processings.
+So, for getting this, you have got a batch of two numbers, and the sequence of the query is 6, and the sequence of the key is 6. That is what you have mentioned here.
+So, similar way, if for one
+Attention mechanism, you can, have self-attention.
+Likewise, you can have multi-head attention also, like, multiple heads will be there. Not only one unit, multiple units will be there, okay? So, in that case, you will have to pass one more parameter, that is, number of heads.
+So if you see here, other things are same, only the number of heads we have asserted. The embedding dimension is same, the number of heads we need to pass. Suppose one head, or two head, or three head. One head means only one self-attention mechanism, self-attention block. Two heads means two self-attention block.
+Three heads means three self-attention blocks.
+Okay? So…
+If we are mentioning that over here, right? And then we are finding out the DK, that is, embedding dimension divided by the number of heads.
+And then after that, everything is same, whatever you have defined in the previous self-attention also.
+Then…
+As you mentioned the, forward network here, like, the concept is same, only thing is, like, how you can split up your result head by head.
+So, you are telling split heads. Split heads means for each of the head, I want to view the batch number of heads, and then I want to create my
+input, and keep it. So, after that, my batch size, whatever I'm passing, suppose 1 batch, 1, 1, 2, or whatever I'm taking, I will take that. Here, I have taken the size of the query, then I'll apply this split heads for
+All the query, key, and value.
+Okay? So, when you pass for the query key and value, in that case, what will happen here? Only thing which we are taking up is the heads.
+Right? And after that, what you will try to do, you will try to have the same thing.
+You'll try to have the mask and then apply the dot product attention mechanism here. So, same output and attention scores you will be getting. Only thing which you will be passing additional is the number of heads. Number of heads, 8 means 8
+Blocks of.
+Self-attention mechanism you have added.
+Okay? That is the meaning of number of heads is equal to 8.
+So, like that, multi-head attention also, you can define.
+So, here, remember, we are defining it from the scratch. Whatever definition we have learned, whatever the formula we have, that same-to-same we are implementing in Python.
+Okay? Now, why do we require this implementation? Already, PyTorch has a direct module present for multi-head attention, but the in-scratch implementation is required so that you get an idea how do we create it. You will see that in every.
+practical that I have given. In every practical, I've tried to give you the in-scratch implementation. Why that is important? Since you will get an idea how tomorrow, if somebody asks you to create this architecture from scratch, you will be able to code it up.
+So, it should not be a direct dependency on the package that we have. I know that package you can directly use and implement and get the result, but you will not know how to create it from scratch. That is why, for every
+Architecture, we have created that from scratch, and later on, we have used, which is already present. So, like that, multi-head attention also, you will be
+actually, looking up to, okay? And then, if you want to add up a mask, Okay? So, suppose…
+If it is 1, then it will be keep, or if it is 0, it will be
+blocked. So, as I told you, the upper triangle, whenever you're ask… whenever you're adding a mask, the upper triangle will be 0.
+So that only we have added up here. So if you want to add up a causal mask, you can add it up over here.
+Okay? So you can see here, the upper triangle… upper triangle value is 0, and other all are 1, because 1 we need to pass, and this all are 0. So this is the mask.
+On top of the.
+On top of that mask, you are getting the attention scores and this is the way how you will get the attention scores.
+So based on this attention scores, you will understand which portion of the input is important. Suppose this attention score, if you see 0.4.
+This is more, so this is more important, then 0.34, this is important, then 0.26, then 0.32, like that, based on the attention scores that we are getting, we are actually
+seeing which of the words are important. Upper triangle, you leave it, that will be 0 only. Lower triangle, I'm telling, if you're getting that attention scores, which are important, those part of the inputs will be taken up.
+Okay? Now, if you see the…
+Inbuilt PyTorch, whatever in PyTorch we have.
+Same, the embedding dimension, the number of heads, the bat… the sequence, the bat size, everything you mentioned the same, whatever you have mentioned on the top. And directly implement this multi-head attention, which is present in PyTorch.
+Okay? Directly do that. So this is…
+The, sorry, this is our multi-head attention, which is there, and this is the PyTorch multi-head attention, which is there.
+So this is our result, and this is PyTorch's result. Then, you can do the comparison of the results. So, if you see our output shape.
+What we have got? 2, 10, and 20, sorry, 64, and Todd's output shape is also 2, 10, and 64.
+Whether there is a shape match, yes, there is a shape match, true.
+Then you see.
+Attention mask, you verify the mask, whatever we have used. So, if you are using Torch, you can use directly this and get the mask out of it. So, if you see the built-in causal attention mask, whatever is present, you will see that
+That is also given to zero. We also have used the zero mask only, and in built-in, that is, in PyTorch, whatever built-in is there, there also it will be zero. These all are warning, you can just ignore it, that is okay, but this is your output, till here.
+So, that means whatever implementation we have done our site from scratch, and whatever you have seen from PyTorch, both are
+Comparatively, okay.
+Okay? That means both are matching.
+That means our implementation is correct.
+If you are comparing against a standard implementation, standard package, if your answers are correct, that means your implementation from scratch is also correct.
+So, here, in this notebook.
+As you go through it, as you run it, you will see that, the same output you will get, whatever you are seeing here.
+And also try… here I have tried to run with the sample data, right? Sample, random data that I have used. You also try to use it with some different forms of data. That will be an exercise for you also.
+Use the same code, same architecture, same in-scratch implementation, and try to use some other forms of data.
+Okay? And try to see that what results you are getting. So this will give you a overall idea of how attention mechanisms work, and then how actually you can set up those, self-attention or multi-head attention mechanism, and then how you can implement on your data.
+Also, do a comparison once you have a different data, also do a comparison with the inbuilt PyTorch.
+multi-head attention package also, like how we have done here. You do a comparison between that, whether with the different data, you are getting the same thing or not, whether it is changed, or whether you are getting the same thing. That will give you an overall idea
+Of how do we implement the attention mechanism, this is the starting to
+In the transformer architecture and in the background of transformer architecture, this only you will be seeing.
+Attention mechanism is something which is the heart of Transformers. Other… all parts are, something which is, like.
+Feed forward network, neural network, you already know how to implement.
+If it is a positional encoding, directly positional encoding packages are present. So, only the attention mechanism is something which you should know, since it's the heart of
+the transformer. If this is clear, then doing transformer is not an issue, okay? I have explained this code also, whenever you will go to your module, Module 5, when you will go in your Newman.
+Okay.
+Explain that also.
+Okay?
+Okay.
+So, if you have any confusion, any doubts after running this notebook…
+I am confused.
+Can you please,
+Think about some new circuit, Ali. Now we can,
+Yeah.
+So, requesting everyone to mute yourself, since, as I'm speaking, right, it's, like, it's some kind of background noise is coming, so that's what.
+Yeah, so that is what I have mentioned it here. Please go through it once and please run this notebook.
+And, also practice with one more example, apart from whatever example I've given here, and let me know if you are facing any doubts.
+For the previous weeks, like, week 1 to week 4, whatever doubts you had, I didn't hear any doubts in this class. I don't know later on if you have come up with doubts, but please do let me know if you have anything over there also. It's not only for this week.
+for the upcoming weeks, right? If you are facing some kind of issue while doing the practice, whatever notebooks I have given, if you are facing any issue, or if you are not understanding some part, please do let me know.
+We'll try to see that.
+Okay? So these two things, are present, your module as well as your EL component. That is your practice part, which we have seen just now. So, every class, we used to see the, the module.
+whatever the gist of the module, as well as the EL component.
+Which is, like, the practice part, where both of these are there in your Lumen also. In Lumen, there is an extensive explanation of the code as well, with the output. So you can go through that. Whatever I have done now.
+And whatever I've done in Lumen, it's different. In Lumen, it will be much more in descriptive way. So each and every line has been explained, and why it has been done, it has been given, the idea there.
+So please go through it, it's extensively explained.
+I'm, I had a question, Robin.
+Is it, right… place to… ask whether
+What are the practical implementation of these transformers and.
+I mean, the examples of practical implementations are
+I mean, theory is there, a lot of theory and a lot of understanding, but…
+I don't know if I missed a few lectures or something, but…
+Hmm.
+I'm just curious about that.
+The one of the most practical implementation of transformer is your generative AI.
+So whatever model in generative AI right right now, whether it is GPT or
+Everything, the base of that is transformer.
+Okay.
+And.
+Yeah.
+And basically, if we talk about a transformer.
+Hmm.
+Where, you know, it's a whole, you know, output of GPTs coming out of Transformer or a part of it.
+the.
+And then it is processed to build a human readable form.
+No, the GPT model that you see, right?
+phone.
+If you see the full form of GPT, it is generative train transformer.
+Okay.
+It's a type of transformer model. It's actually a transformer model only. You are sending your input to a transformer model, that is, your GPT model, and then the GPT model is giving the answer. So actually, you are asking a question to transformer only.
+Okay, and let's say there are different type of outputs that these transformers generate, which are more of indices and, you know.
+I forgot the term, but… How does it convert into a human readable form?
+So.
+Or.
+The work of encoding and decoding.
+You might have heard about encryption and decryption.
+Yeah.
+So, this kind of architectures always try to, you know, take up your text. I don't know whether you have…
+attended the previous classes where I've… I was talking about any, like, text getting converted into a numerical format for the system to understand that text. Now, obviously, it will be in English, right? Now, I cannot expect the computer to understand English.
+Yes.
+or any other language. So, how we convert those texts into a particular numerical format, which is understandable by the system.
+So, the terminology for that is called as embeddings.
+Okay.
+Okay.
+Yeah.
+Sorry.
+We actually take out the embedding values for each and every word.
+Suppose you have a text and it is consisting of words. So for each and every word, we take out that embeddings and how that came up. If you go to like way behind to NLP, natural language processing.
+NLD, yeah.
+Yeah. So the basis of that has come up from there. You might have heard about the Word2Vec model, the embedding model.
+Yeah, I was just thinking of vectors, yeah.
+Yes, so the basis has come from there.
+That's the exact thing which is used here also, since this is also working with text initially.
+Okay.
+Yep.
+Okay.
+But is there a… is there a…
+Picture, flow diagram, where we can see, like, how it flows through.
+Or on internet or somewhere.
+You can get that.
+Formal architecture picture.
+Yeah.
+Yeah, I have just shown you that in the paper, right? Just now.
+Attention is all.
+you.
+Yep.
+Yeah.
+Okay.
+You can see that I'll just show you once again, like, you can just have a reference to that.
+this is the architecture of Transformer, which I was explaining, like, this is the encoder block, and this is the decoder block, how the encoder… different segments of encoder works, how it is attached to the decoder, how it is going and giving up the probability, you know?
+So that the next word it can predict.
+Noted.
+Architecture, yeah. This is the flow also.
+Yeah, we did last last last trimester also statistical modeling and interference in that we did it.
+3…
+Thank you.
+Yeah.
+Okay.
+Is there any other questions regarding this topic?
+Okay, if no questions, then.
+8.
+Yeah, go ahead.
+Oh, no, I said statistical modeling, but it was artificial neural network in that we learned.
+Transformers.
+Oh, yeah, the previous one, previous to deep learning, right?
+Yeah.
+Yes, yes, I'm aware of that, yeah.
+So you might have got only a view of the transformers, you may not have gone into detail about that.
+Okay, so this one, this time it is more detailed.
+Yeah, yeah, this time it is more detailed. Last time, whatever you have learned, it's like base of deep learning, and not much into detail about… there you have learned mostly about the neural network architecture.
+And then that only in detail, then other parts you might have learned a bit, little bit, like CNNs and RNNs, transformers, like, just touching those topics, you might have learned that. But here, it is more detailed.
+Okay.
+Yeah.
+And in this course, you'll also learn how we are connecting all of these things to generative AI and, like, how this has come to Agentic AI also. That also you'll be learning.
+Yeah, right now, I was just…
+I haven't gone through all the recordings, but all the lectures, but when we learned about, learned on the neural networks.
+I was not able to understand how the, you know, text is converted into vectors and matrices, right?
+So, that is covered in this one, right?
+Yeah, yeah, that is covered in this one.
+So, the way how you see the videos that is, like, available for this course, like, you might see a, kind of a cartoon video, or maybe, like, a, you know.
+A pre-made video, but the… the script, and then the content over there. Like, why do we select a particular bit of structure?
+There are a lot of things over here, right? Like, the complicated architectures are there. But why actually do we select that? There are, like, purposes for each and every bits and pieces for that architecture.
+Like, simply architecture didn't came up like that, right? There might be certain, thought process behind that architecture coming out, whether it is any kind of architecture, RNNs, or whether it is, transformers, or… That time, nobody knew that transformers will be used for generative AI.
+But when people have researched more and then the existing architectures only, they have changed how they came to know that, that this could be useful was behind.
+The components only was behind that.
+So, it made it… so, actually, if you see this, every component-wise, I have given the explanation. Like, why do you think that it should be in this particular place? What happens if that component is not there in that architecture? What loss it will have?
+It's like reverse engineering. Like, you go back and check why, if I don't have food for one day, what problem I'm going to face? It's not like I'm going to have food for one day. It's very straightforward.
+But if you just go back and reverse engineer, why should I have food?
+For if I don't have food for 1 day, I'm going to or maybe 5 days one day.
+Yeah, I got it.
+For 5 days, I may not leave. It's like that.
+So, just back, reverse, and then understand. That only has actually been evolved to generative AI, and nowadays, whatever flashy terms we talk about, right? Generative Agentic. All those bases are from deep learning only.
+Okay.
+Yeah.
+So, in industry right now, the most nearest practical
+usages of deep learning, right? Algorithms and all, or are they still using machine learning and all?
+See, if at all you are going for a very specialized kind of…
+Implementation, still people use machine learning techniques.
+Okay.
+But.
+For, like, specific scenarios.
+For specific scenario, for specific use case. For example, if I talk about fraud detection.
+Now, there are many banks, you will see that still they will be retaining that ML-based fraud detection method, right? They know that there is generative AI, there is Agentic AI, they know that.
+But then, generative AI, or maybe if they are creating certain things, certain models in generative AI also, they're using LLMs, that used to be more generic. They will be overloaded with information, right? So sometimes that specificity doesn't come.
+So, in that case, some of the organizations still use ML, but yes, the usage from before has been reduced.
+Okay.
+Yeah, it's not the same like before, how you… people used to use it, but then… It's the base.
+You don't know machine learning, you don't know deep learning. You don't know deep learning, you don't know generative AI. I mean…
+As a user, you can know, but what is actually going on in the background, you don't know that.
+No.
+Yeah.
+Thank you.
+Okay.
+Okay, then if there are no other questions… I don't hear any other questions from you from the previous,
+Weeks, like, whatever modules you have done.
+So, yeah, please come up with the questions, like, we can take it up.
+Some will be answered by Parth, he is also there, so he will be also taking it up.
+And some things, if you want a explanation, like, additional explanation on top of whatever videos you're going through. Since it's videos, you can only go through, you know, one video, or maybe
+You can dedicate some half an hour every day to go through one video. I mean, obviously, it's a video, right? So, sometimes you might land up into some questions why this has come up.
+You can browse it out, but then how do we connect it is something where you can have doubts. So please come up with your doubts, and
+Just make sure that when you learn and go deep learning, you understand what is deep learning. Otherwise, there is no point, right, explaining and talking so much. There is no point. Life classes are kept only to address more of the doubts.
+What people have.
+read through the module. That is the main objective. Yes, apart from that, explaining the module in gist.
+Understanding the EL component that is there, that's a part of the process, but then more emphasis is on the doubt.
+So if you are facing any doubt, any EL component, any theory, any understanding, any real-time use cases, please come up with that. Make a list of the questions, come up with the questions, we'll try to answer. Whatever is
+like, possible within my scope of time, I'll answer, then Parth is also there, okay? So, but then don't keep anything within you. Please come up with this, those questions.
+Amen.
+Yeah.
+Yeah, hi. So, while, our friend Robin was, you know, asking about how this,
+Transformer decoder model works, I just, put this on ChatGPT.
+Hmm.
+shared what the output, maybe you can explain. I'll just put the output in the chat.
+Hmm.
+Is it there?
+No.
+Yeah, it's there now, maybe you can…
+loading.
+Exactly what… yeah, yeah, it's appearing.
+So, it covers right from how…
+We entered some something in the.
+chat box, and then it converts into token token to vectors, and then positions. And so maybe you can use that image and explain.
+No, this is the same image, which is, like, if you see the architecture that I have explained, right?
+I mean, when you go through the videos, there also, right now, the architecture, whatever we have discussed here, is on the top. When you go through the videos, you will see that it will be broken down into this kind of each and every component.
+It's the same architecture that we have discussed.
+Yeah, but then it will be more broken down, each and every bits, like, each and every part.
+So, I think at a high level, this gives a view of what it is.
+Yes, this is a high level, but then how we are going inside each and every part is something which is explained in the video.
+Definitely, that's, that's there in the video.
+Yes, yes.
+You can close the class.
+Yeah, yeah. If there are no other questions, we'll close. Meet you all by next week. Bye.
+Good night.

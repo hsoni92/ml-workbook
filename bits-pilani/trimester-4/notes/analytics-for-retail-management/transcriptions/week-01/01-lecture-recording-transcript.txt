@@ -1,0 +1,466 @@
+Can you please check?
+Yes, sir, now it… now it is not easy.
+Okay, thank you so much.
+Good evening, everybody.
+I hope I'm audible.
+visible, and you can see the PPD as well.
+Can anybody please confirm?
+Thank you so much.
+Okay, so, welcome to the first class, or… Analytics for Retail Management.
+And, I hope that by now you had a look at the first week's content.
+Designed for this course.
+So…
+Before we start with the course, let me introduce myself, in case you have missed it, or you have not gone through that PPT, that particular recording. I'm Professor Nirankush Dutta from the Department of Management with Pulani, Pilani Campus.
+And I have been here since 2012,
+Before coming to Birspilani, I did my BTEC in Information Technology, and then
+Pgdm, with major in Marketing and Minor in Operations.
+Then I worked for 4 years in the IT industry, mostly, in India, as well as abroad, and…
+After that, I joined academia for 2 years.
+And that was followed by me coming here to Bispilani as a full-time research scholar.
+So, my research… Topic was on online social media marketing and the role of trust in it.
+So I submitted my PhD in… 16 and…
+I was fortunate enough to have been inducted here as a faculty, a full-time faculty, from 2017.
+Since then, I have been here, and right now, I'm working here as an associate professor.
+So, as I told you, my research interest lies basically in online social media marketing. I also do research on electronic commerce, e-commerce, digital marketing.
+Omnichannel retailing, and, so on.
+Basically, the interest revolves around consumer behavior.
+Okay, applied to the emerging technologies.
+So… This course has been designed by me.
+Broadly, yes, we have taken the help of AI. Probably you have already seen in the
+videos for the first week, if you've gone through that, you know that. We have taken help of AI to generate more engaging content.
+Rather, the way that it has been presented, but the content has been designed by us.
+Here I have with me, Mr. Joydeep Singh, you can see him here, and he will be the…
+teaching assistant for this course. He has been a great help. He's also currently doing his PhD under my supervision here in Bits. And prior to that, he also has experience of working as a faculty in a university.
+Also, yes, for your course, Joydeep will be helping you all along with you.
+As I told you before I start with the course today, in fact, today I'll be giving a broad description of how this course is going to be conducted, what all things will be taught.
+And then we'll go through some of the key concepts that we have covered in the week one.
+Hmm?
+So this is the first live session.
+Where we are going to… Introduce you to the very basic concepts of retabling.
+So…
+So, retailing, it involves… A series of interconnected decisions.
+Who we are serving.
+What type of customer, how much they are buying from us, from where are they buying?
+Like, what should we offer and what we probably should not?
+Because that will also…
+Have an impact on our inventory, on the way that we are going to manage our Cash.
+Right? Our money.
+So, where and how should we sell?
+And how we manage our merchandise, so that we have the right product at the right place. People should not go away from us only because we have run out of stock.
+Okay? And also, we should not be overloading our stock with something which is not necessary, and
+Probably, for no reason, will be
+Spending our money on that.
+And what kind of stores can we… Sell our products through.
+Whether we will be managing the stores ourselves, somebody else will be managing.
+So we'll discuss all those things in this course, and also, obviously, if we want to be into retaining.
+Any kind of sales activity, marketing activity, we must be having some customers. The customers would be paying attention to us, they would be coming to us, right? And they would be, buying from us, right?
+So, we have to find out ways to attract and serve those customers. And not only serving the customers, but also, you have to ensure that the customers are retained.
+Because if I want to get new customers again and again.
+I'll be spending a lot of money. If I already have some customers, then my expenditure for getting that customer is reduced to a large extent.
+We'll talk about that in some other session, and then how
+Data can improve these… all these decisions.
+Okay, so that's the, really fundamental question that we are going to answer through this course on
+Analytics for Retail Management. So this course brings these questions together by combining retail management concepts with analytical decision making.
+The core idea here is that you should be able to understand the retail decisions.
+How data can help you to take the decisions?
+And for that, how you can analyze the data.
+So that you get the right kind of insight, you can interpret it properly, and then act on those insights.
+So…
+This course is, spread over 13 weeks. Each week, you'll be getting, some content, some recorded lecture will be there.
+Also, there will be one, live session like this each week.
+So, we are going to cover various topics. In fact, 13 weeks we have, and in 13 weeks, we'll be covering 13 different topics. They may be somehow related, definitely they are all related to retailing, but they will give you a different flavor of the course.
+In the first week, we are going to introduce retailing, then we'll talk about retailing strategy, why it is important, how it is framed, how we can form an appropriate strategy, so that we can have an upper hand over our competitors.
+What kind of merchandise should we be having?
+In our store. And how we can manage the inventory properly.
+We'll also look into human resources part, because that is very important in retailing.
+Like any other marketing activity, this is very important, where customers get a loan.
+how we can… we can manage an entire store. We'll discuss in much more detail how we can communicate with customers, and finally, integrating and controlling retail strategy. So, actually, in this part, in the first 7 weeks, as you can see, we will give you the core concepts of retail management.
+The way that this course has been designed
+is on the very basic premise that some of you may not be having a background in retail management. You may not be knowing marketing. So, we should give you the very basic concepts of retail management before we move on to the analytics part.
+And that comes from week 8 to week 13, where we have practical and analytical concepts.
+of retailing, you'll have hands-on experience of working with data there. So, we will introduce you to Retail Analytics.
+Okay, how we can allocate resources based on our Retail Analytics insights, then how we can forecast sales, retail pricing analytics, how we can develop an appropriate pricing for our product, or even for the service.
+And then, managing customers, how we can do that appropriately, so that we know that the customers are going to stay with us. We have more coming out of the customers over a longer period of…
+Okay, involvement, engagement with the customers. And how we can analyze the value of the customers who are with us.
+Sue?
+Finally, we will be doing a retail valuation. If we have a store, we have an operations, how do we come to a value of that one? Okay, so these 13 topics will be covered in 13 weeks.
+For this, we will have different
+Concepts, different forms of learning activity.
+All these have been designed, keeping in mind that you are coming from different backgrounds, you also may be busy with some other work, or maybe your regular forms of studies, so how we could attract your attention, we could easily
+make this comprehensible to you. That was our main concern. So, for that, we have developed concept videos. You'll have different concept videos coming.
+Each week, there will be multiple videos, there will be practice quizzes also, then reading materials will be provided, which will take a couple of minutes. So, depending on the kind of reading materials, sometimes it may be over within 5 minutes, sometimes it can take 8 to 10 minutes also.
+But that's a very basic, expectation that we have.
+From you all, and you're spending this much of time to understand.
+The… the course in depth.
+Not only that, you'll also have discussion prompts, where we may be giving you certain, situations, and you can discuss with your peers to make your learning much more effective.
+You'll have case studies, or experiential learning. There may be different, different, reading materials, different cases, or different situations which we give to you, and you will work on that. We can also be giving you some data to work on.
+Then there'll be some graded assessments.
+Again, the assessment is divided into different parts, which I'll talk about in the next couple of minutes. And then, obviously, there is this kind of live sessions.
+So, understanding the concept is the very first step.
+And the next objective is to apply the concept to a retail decision or business situation.
+You will learn all these things throughout the next 13 weeks of this course.
+As I was stating, that you'll have different forms of assessment, so you'll have graded quizzes. Basically, there will be 3 graded quizzes.
+So… First quiz will be based on the
+The concepts that you learn from week 1 to Week 3.
+Then the second quiz will cover your learnings from week 4 to week 6. So, each 3 weeks, you'll be having 1 graded quiz. The third graded quiz will come from, or will cover.
+Concepts learned in week 7 to week 9. So, at the end of week 9, you'll have the third graded quiz.
+You already should have access to the calendar for this course. Please go through the calendar, you will get to see when all these things will be made available to you, when you'll be having the quizzes and so on. So, for the quizzes, as well as for your
+exams, you'll be having a particular time duration. Please ensure that you attempt
+those quizzes, those evaluative components, and you do not miss out on anything. These will have bearings on your final CGPA, final grade that you will be getting.
+So, another form of assessment is the assignment part. You'll be, submitting a take-home assignment, which, again, will be graded.
+then there will be a project. This project is… sorry.
+Based on…
+the learnings given to you from week 8 to week 13. So, basically, week 8 to week 13, there will be,
+quantitative part, as I have shown you earlier, analytics part. So, based on that, you will be doing some kind of project, and you have to complete the project and submit it online.
+Then, finally, there will be our comprehensive exam. This comprehensive exam will be a proctored one. This is the final exam, and the
+Institute Bisplani Digital will be sharing with you all the required details for this comprehensive exam.
+To, know all these things, to stay updated, you must, Continuously check.
+The website, which is created for this particular course.
+So, here you have a snapshot of the different graded component structure.
+Phase 1, which will be conducted after Week 3.
+We'll have 10% weightage.
+Quiz 2 and Quiz 3. Each will have 15% weightage.
+In the week 7, you'll have the assessment, or, sorry, assignment.
+which will have 20% weightage, and at the end of your 13 weeks, you'll have the MSIM, or Comprehensive exam, which will have the remaining 40% of weightage. So, in total, you'll have 100% for this course.
+Please feel free to ask me any question at any point of time. If you want, you can just type here your query in the chat box. Joydeep is here, who will be happy to help you. And once I also get to see your queries, I can also answer those queries.
+There are different options for you to make this course much more interactive. You can use the platform.
+Effectively, and ask questions, you can interact among yourselves as well. Yes, Mr. WASEM.
+Just let me check, I think… I'll try to unmute you.
+Boom.
+Can you come on mic now? Just check, please.
+So the chat box is disabled.
+Chatbox is visible, okay?
+Alright, get two.
+No problem.
+Okay, so these are some initial hiccups that we may be having. I'm, also taking, obviously, this is the first class for this trimester, so don't worry, we'll,
+get it done. I'm just trying to figure out how this chat box can be enabled for all of you.
+In the meanwhile, I have actually enabled, audio for all of you. You can, just raise your hand, and I'll be unmuting you so that you can ask questions here.
+I think I can send chat messages to you all, and you were able to see my message, right?
+Was it visible to you?
+Yes, sir, we are able to see.
+Right, and… yes.
+now you can't speak, so there should not be any problem. I have enabled that. Just one simple request, is that, see,
+I'd be really happy to make this course interactive, so I'd be… I'd like to…
+keep all of you unmuted, but it would be your responsibility to mute from your end, so that we do not get any unnecessary noise. Whenever I get a noise, my first assumption would be that you are asking something or telling something to the class, so please take care of that.
+Coming back to what I was saying, that, yes, we'll have 100% weightage for the overall course grading, and
+what do we expect from you? You should be attending the course regularly. This is just one hour of course, and see, this course is designed in a flipped mode pattern. Those of you who do not understand this.
+Actually, it means that you already have recorded content available with you.
+Okay, before coming to the class, you should go through the recorded content.
+Okay? If you do that, if you go through the recorded content, if you go through the reading materials, then you can come prepared for the class and ask me questions which will enrich others, which will clear your doubts about certain concepts, and we can have more meaningful discussion.
+Right, so that's called a flipped mode of…
+of, pedagogy or delivery of lectures. This course is designed in such a way, so please attend the course regularly.
+If, for any reason, you are not able to attend, at least go through the recorded live lecture also, as soon as possible, and definitely before the next class, that will help you. Watch all the videos in the recommended sequence, so that means going from week 1 to week
+13, and in fact, within each week, you'll find that there are a couple of
+videos. Very short videos, generally they are of around 3 to 5 minutes. I would be introducing the
+week. I was summarizing the week. Apart from that, there will be various, AI, content.
+To help you understand the concepts.
+And then, starting from, week 8 onwards, there'll be a lot of
+sessions where I'll be showing you how to utilize data, how to use Excel file.
+So please go through those, and also keep on, practicing. So watch videos, complete all the assigned readings, attempt all the practice quizzes. In fact, these practice quizzes are different from the graded quizzes.
+Right? In the graded quizzes, if you make a mistake, that's going to reflect in your final grade, CGPA, and so on. But in the practice quiz, we just try to clear your doubts. So, there'll be some tricky questions you can
+Attempt those questions, and you'll get a feedback.
+Why this question is right, why it may be wrong?
+And if you find that there is any problem, there is any issue, you are not able to understand why something has been marked as wrong, and you feel it right, please feel free to ask in the class, and you can also raise a question in the query, box, which will be there in the platform.
+So, participate in discussions and live sessions.
+to practice your Excel, apply the concepts to real retail examples whenever it is possible. You'll have ample data sources. Now, data is actually not much of a problem.
+There will be a lot of data coming maybe from your own organization. You can also create data, you can get data from various online sources, which are totally free.
+Okay, apart from that, in different books, you will get a dataset, so you can just take any data set and try to have some hands-on experience on that. Okay, so consistent participation and practice is what we expect, and that will enhance your learning experience for this course.
+So, till now, I have, told you about the course, and what our expectations are, how it will be conducted, what are the different, breeding components, evaluation components. Till here, if you have any doubt, please ask now.
+You can come on, Mike.
+Don't be shy.
+So this is clear.
+Yes?
+Because we have done this all in the last three trimesters, so we are aware of the graded quizzes, and the practice quizzes, and the live session. So, we are well-versed in this, because we did this for the past three trimesters.
+Great, great.
+Right. So, yes, there may be certain, changes also, okay, in each semester, because Bill and Digital is a completely new concept. It has been floated, it has started only
+be in the last year. So, there may be certain changes. My suggestion here is that although you might have gone through the last few trimesters, but still.
+please, keep a track of any changes. Do not miss out on the announcements. I may be making some announcements.
+So please follow those. And in fact, each faculty member has certain flexibility in terms of
+how the course is conducted, what kind of grading is done, what kind of evaluation is done, so please go through that. Okay, thank you so much, Andrew, for assuring me that you are already well-versed of all these technical issues, right? So,
+Talking about the retailing.
+We have…
+Pat introduced you to this concept in the first two weeks. What is the meaning and the role of retail? How it has grown over the years, how it is still evolving.
+If you see worldwide, it has been evolving at a very rapid pace.
+Even in India, we have seen that retailers have grown very fast. I'll show you some data in the next couple of slides. So, we know that the government is also pushing forward for reforms in the retail industry.
+So, we have, talked about the characteristics of retailing, why and when we can say that something is retailing, and when some… when something is not to be considered as retailing.
+Okay, based on the situation. We have discussed that, and again, take you through those. The types of retail institutions and what kind of strategies they should adopt.
+Okay? Non-store and non-traditional retailing formats. And then.
+A very important and interesting part comes, which is the consumer behavior. As marketers, our main focus is always on the consumer. So, what do we expect from the consumers? How their behaviors change over time, okay? And how do they make a certain decision?
+Why do they take such a decision? Yeah, we'll discuss all those things. So, this basically focuses on understanding the retail business and consumers before we move into more specific retail management decisions.
+So, coming to what is Retail, it refers to activities involved in selling goods and services to final consumers for personal, family, or household use.
+Now, here, the very important tongue is final consumers. Consumer is anybody who consumes, right? So, I may be a customer, but
+another person may be a consumer. I may be buying something from a store, but my family can be consuming those, right? So here, customer and consumer may be different in some cases.
+It may be same also. And here, the main point, or the main emphasis on… is on the word final.
+Okay, so that means if…
+if a store is buying something, suppose I have a grocery store, and I am buying thousand, pieces of material from somewhere in order to sell it later on. Okay, so that does not make it a retail activity when I am buying.
+But when I am selling.
+to each individual who will be consuming those, then that is a retail activity. So, retailing represents the final stage of the distribution process.
+Okay, as,
+shop owner or a store owner, I may be getting it from the wholesaler. The wholesaler might have got it from distributor. The distributor might have got it from the manufacturer, and there may be a lot of other people in between.
+Right. So…
+they… when they are working, they are dealing, they are passing it on to the next phase. That is not a retail activity. Retail activity happens only when
+The shopkeeper, the store owner, okay, or,
+Anybody is selling it to the final contributor, to each individual, okay, or maybe each family to each household for their own use.
+Okay? Own use, the final consumer, and it connects the products and services in the final consumers. It includes both goods and services, right? So please do not have this assumption that retailing is only about
+goods. Retailing is also about services, and I hope that you are somewhat aware of the difference between goods and services.
+Can anybody tell me how, good
+How goods or products are different from services.
+Any idea, just broadly, you can tell me?
+Anybody, please come on mine.
+Okay, let me…
+products, and… Services are like what you get from housekeepings in hotels.
+That was the services.
+Very good, very good. So, you have given an example. Goods are products. Products like a toothpaste.
+Okay? Soap bar, a toilet soap that I may be using.
+Right? The cooking oil that we use.
+My clothes, shoes, you know, all these things are goods, products, and then we do have services. Like what you said, that somebody is probably cleaning the house for you.
+Somebody is, answering a call.
+when you call the customer care, and you ask for a solution to some issues that you are facing, right? So that is a service. You go to,
+probably a hospital, okay, or an educational institute, so you get service there, but yes, that one also will have some comprehensive products. So, how basically products and services, or goods and services are differentiated?
+That's based on whether we can touch and feel it, whether we can own it for a long period of time, or we have to conjummit then and there. Okay, whether there is any kind of variability. See, if I buy,
+A soap bar from any, any store.
+the soap bar will be packaged in the same way. It will be having same fragrance, same weight, same color, okay? All these things are very much uniform. There may be only very slight variation because of different factors.
+But suppose I,
+now I am teaching you this course, and I might have taught this course to another cohort also. The way that I might have delivered the course to that cohort can be very different from the way that I am delivering it now.
+Yeah, when you go to MacD, McDonald's, okay? So, yes, you may be getting the same burger, Or…
+Same french fries?
+But who is delivering it to you? Who is handing it out to you? That person.
+Does that person love?
+Does that person send you some warm vibes? You feel happy that you are there?
+Okay, what is the kind of environment in which you are getting this service? So, all these things, they are quite variable, right? So, service basically is intangible. You cannot touch.
+Okay? You can feel, but you cannot touch. So these are some of the basic differences between goods and services, and in retail, we can have both goods and services.
+And it can take place through store-based and non-store formats also.
+Okay? So, do not think that we must be having a store for retailing to happen.
+Yes, in most other cases, we do have stores. We call brick-and-mortar stores.
+Okay, you go somewhere, and there is a shopkeeper, you talk to that person, there are maybe some other staff, you talk to them, and then you get your product.
+But…
+there also are situations where you buy something from online, so that's a non-store formatting. You do not get to see exactly where that store is located.
+Great.
+You are getting some kind of service related to your customer care queries, and you do not have, basically, a store there. So, they are non-store formats. So, retailing is not synonymous with physical stores, and retail transactions may take place through websites also, as I have told right now.
+So, Amazon, Flipkart, they are there. Then, through direct selling, people may be coming to you, and they are selling to you.
+In fact, there have been quite a number of such companies which
+Sold very successfully to the customers through the direct selling methods.
+One such company was Eureka Folks, which used to sell directly to customers.
+Okay, then there can be vending machines. Nowadays, at different places, we get to see vending machines. You do not see anybody standing there, okay? You just press some buttons, you pay the money somehow, maybe by cash, or by using some card, or through UPI payment, and…
+you get the product, right? And there can be other non-traditional formats, also formats of retailing that you can come across.
+So… Retailer performs an important, task, that is connecting, the supply
+The supply side with the consumer's demand side.
+Okay? How much one can supply, and how much consumers are demanding. So, the retailers work as a bridge between these two parties.
+Hence, the key functions include bringing products from different sources together.
+creating an assortment of products, okay? You may be having different products, and you create an assortment. You have seen that there may be
+some kind of bundling also, right? Retailers can be doing the bundling themselves, okay? They can make products available at convenient locations.
+You go to, suppose a petrol store.
+Now, where is that petrol store located? That must be at a convenient location. If it is far away, who will go for petrol there?
+Right? We all look for a petrol pump, which is very near to the highway, by the roadside, and we can get the petrol from there. Again, that may be a little slow. Okay, you can be selling products in quantities which are appropriate for consumers. I said, final consumers.
+Each household member, each family can be buying from you, and how much will they be buying?
+Okay, think of a shop owner. A shopkeeper will be having a… Large quantity of product.
+But when I buy something from somewhere, I'll be buying only small quantity, maybe 1 or 2 tubes of toothpaste, right? But a shopkeeper will be having, maybe 20, 30, or 50 such toothpastes.
+In a case. And then there'll be others who are delivering to that shopkeeper, and they would be having even larger bundles, right? Larger packages. So, we have to look into
+Those appropriate sizes.
+And retailers provide information and services. Sometimes we buy something from the stores, and we face some issues. Maybe we have bought a room heater, and the room heater is not working.
+Where should we go? Our first…
+First attempt, generally, is to go to the retail store from where we have got it, and then check if they can service it there, or they can get it repaired.
+Okay, if we buy it from online, we often talk to the online store, we raise a complaint so that this issue is resolved. So they provide us with information and services.
+They facilitate the final exchange.
+the final exchange of money as well as products. So they take… the retailers will be taking… accepting the money, and they will be giving the products to their consumers.
+So, Retailers do more than transferring the products. They create value. At each stage, whatever we are doing, we are adding value.
+Right? We are adding value, and that's how it passes on from one place, from one person, one entity to another entity.
+Okay, so when we are making sardine chloride available.
+We are adding value to that product.
+And we have seen that, retail has grown over the years.
+It has evolved,
+And why it has been so. Because consumers' needs and preferences, they have evolved over time. Technologies have changed.
+The… we think of your… Parents, or your grandparents?
+Probably your grandparents might not have had televisions also, is a chance. I'm not saying it is applicable for all of you, but maybe… or maybe they might have, one television for their entire life.
+Now you have one mobile phone, which lasts only for a couple of years, and then you tend to change that mobile.
+Right? So, the way that we are behaving, that has changed.
+There are different generations of customers. We have seen the technologies evolving, the prices have changed also, right? Our income has changed. Inflation, if you look at that, that has changed. Our consumption pattern has changed.
+1990s, 91, I think, on, yeah, that was the time when we, went through, this liberalization
+Privatization and globalization.
+And different international companies, brands came to India.
+That was…
+an altogether, separate scenario, and we got exposed to so many different things. And I was talking about service. Now, think about those, channels being shown on the TV. Earlier, we had only Dutta, and then, once this happened, we started getting to see so many channels
+Popping up.
+Right? We were exposed to foreign culture, and our own culture changed.
+Our tastes changed. What kind of music we used to listen to earlier, that has changed over the years.
+And, depending on that, the marketers also have to change the way that they serve us, the way that they give us certain products or services, the way that even think of the music. So, earlier, we used to have cassets.
+Okay, before that, there were gramophones, so we found gramophones, we had cassets, then we had CDs, DVDs.
+Okay, blu-ray discs, and so on.
+And now, we do not even bother about any of those. We have so many, these, live music platforms from where we can just have all these things,
+Played, right? And for that, we pay only a very minimal amount.
+We do not have to buy an entire cassette just to listen to one favorite song. Rather, we can buy only one song.
+If we at all want that, right? So, that has changed. And because of that, the competition has also changed. And now we have more competition, different kinds of products are coming up.
+the pricing strategies have changed, the distribution system has changed. Earlier, we used to go to stores.
+And now, we do not even go to stores. We are very comfortable ordering for something, staying at our own home.
+Right? So… Within 15 minutes, Blinket is delivering to us.
+So, distribution system, that has evolved a lot. Think about the retail formats. Now, who was selling to us earlier? Those mom-and-pop stores, those Kirana stores, they are still there.
+But now, their number, their influence is reducing.
+And major organized retailing is growing very fast.
+And digital channels have come up. So, in India, retail encompasses both traditional and organized formats, as well as rapid development.
+digital and hybrid models, when we get to see that, okay, there are stores or companies which are selling products through brick-and-mortar stores to the physical shops, and also they are selling through their online store part.
+So, retailing basically changes as the market, consumers, and the technology change.
+That's the very essence of marketing.
+In retailing.
+what we get to see, that generally, the average transaction size is very small. As I was saying that each individual would be buying. So, one product, how much will it cost? I'm only buying one.
+Bottle of poop.
+Okay, that may be 200ml, 250, 300, 500, 750, with maybe 1 liter, 2 liters, that is it, right? So that is what I'm going to buy. How much am I going to pay for that?
+100 rupees, 120 rupees, that is it. But when somebody else buys for the organization purpose, right? Maybe to sell to somebody else, then that person, that entity, is actually buying in a bulk.
+So that person pays a different kind of price.
+Okay, and although the price per quantity, per unit is small, but the overall price is very high, so the average transaction size is high.
+Okay, there may be also some impulse purchases.
+In retailing. So, we… we see that, that sometimes we do not have something in our list, but when we go to the store, we end up buying something. That is called impulse.
+Yeah, it was not planned earlier, but something suddenly catches our attention, and we tend to buy it. That is called impulse purchase. And shoppers, okay, they, the, sorry, the…
+But the shopkeepers, they have to attract the shoppers.
+For that, they need to think about the location, how it can be made more accessible, what kind of products, assortments they should be keeping.
+So, in some places, see, I come from West Bengal, I have a different kind of culture, I have grown up in a different kind of culture. From my childhood, I have been used to a different kind of food.
+And, when I…
+have been to different other parts of the country, different parts of the world, and I have seen that, okay, in those parts, even forget about, those outside the country. Inside the country also, I may not be getting something.
+Okay, which is otherwise very easily available in West Bengal.
+In my hometown.
+Kolkata. I would be easily getting it, but can I get that thing, probably in Bangalore very easily? Or can I get that in, Manali so easily? May not be the case, right? So.
+The retailers actually look at the people who are there in the nearby areas, and depending on their choices, preferences, they decide on the product assortment.
+the kind of store environment that they will have to, ensure. Operating hours, promotion and competition, they have to think about all these things, so retailers must manage both what they sell and the environment in which the purchases take place.
+for this, we should be developing an appropriate retail strategy. There will be a different, week altogether, a different model altogether on retail strategy. Here, you just need to understand that, while forming the retail strategy, we must
+Identify whom we should be serving.
+What we need to achieve as retailers, what products and services should we be offering? How these would be priced, how we can change the price dynamically, where and how they can be sold, and how customers will be attracted and sold.
+So, it all involves a strategic planning part, where we define our business, we set certain objectives for the business. Again, this is a very technical term, which I'll…
+clarify later on, yeah? But Alison, yes, I need to…
+do something, I need to achieve something, so that is my objective. As of now, that is good enough for you to understand. And then identify the target customers, develop the strategy, implement and evaluate, and adjust if it is needed. So Retail decisions are interdependent.
+A change in one element can affect other parts of your retail strategy, and we must be prepared for that.
+Now, there are different types of Retail.
+Ownership-based retailing, which focuses on who owns
+Yeah, who owns, your retail store or retail business?
+There can be different kinds of store-based strategy mix, which focuses on how the retailer combines its operating and, market offering decisions.
+Okay, what all things we are going to keep in the store? Non-store and non-traditional retailer. Based on that, we can also classify retailing. So, it focuses on how retailing takes place outside
+conventional store format, as I told you, we have e-commerce, we have, okay, direct selling, which is non-store-based retail format. So these classifications are not necessarily mutually exclusive.
+Okay, we can be having a store which can fall into some of these categories. Not necessarily only to one category, but maybe it can apply to different categories. Okay, but this is the base. This is the base for our categorization. I hope still here it is clear.
+Visit, please let me know.
+Yeah? Yeah? Fine.
+Okay?
+So… Fine?
+So…
+We have retail institutions. If I look at the ownership type, then there are independent retailers, where one retail unit is there under an individual ownership, like the Kranan stores, mom-and-pop stores. In the Western countries, they call it mom-and-pop stores.
+then there can be a chain store. Multiple outlets are under one common ownership.
+Right?
+And, there can be franchises, like,
+McDonald's, in fact, operates as a franchisee, where a retailer operates under an established franchisor's name and business system. So, each, franchisee can be… they are actually using the
+brand name, McDonald's, right? And they are trained, they are given a particular protocol which they must be following in the stores, and only then they can use the brand name. And for that, they have to also pay McDonald's a certain percentage of money, right? So this is called franchisee model.
+there can be leased departments, so within a retail store, there can be different departments operated by an outside party. Like, when you go to the shopper store, you'll find that there will be different,
+these, Makeup brands?
+Of our fashion brands, which may be having their own.
+part of a store within it, so that's a leased department, and there are vertical marketing systems, different levels of the distribution channel.
+which are coordinated within the system itself, and then consumer coordinates, where retail farms are owned by the consumer members. Like, here, in fact, in which we do have a co-party facility, which is basically co-owned by all
+The staff member of Bitspilani, and we get the things
+The products at a very subsidized price.
+So, the ownership structure affects control.
+Decision.
+Decision making and coordination and scale.
+depending on the store-based, strategy mix, okay, we can, Yeah, think of,
+Store locations, where it is located, how it is operated, goods and services which are being offered, pricing.
+Okay. So all these things come under the strategy mix, right? And,
+store atmosphere. In some stores, when you enter, you'll find that products are crammed. There'll be a lot of products in a very small space. In some stores, you'll find a lot of space to explore.
+Okay, in some stores, they will be playing music, so the kind of ambience that you are using, right? There are reasons for that.
+the store which sells a product like Apple's iPhone, that will be very different from a store which sells, maybe, clothing items, right? And then promotion, how they promote. So retailers combine these elements to create a particular market offer.
+And two retailers may sell similar colors, but have different retail strategies, because their strategy mixes differ.
+Then, major store-based retail formats, we can see some food-oriented stores, convenience stores, conventional supermarkets, food-based superstores, commercial stores, all these things, and then there are general merchandise retailers, specialty stores, department stores, full-line discount stores, variety stores.
+off-price chains, yeah, all these different kinds, flea markets, okay, where people from the nearby areas can come and they can be selling something at a very cheap price. Okay, so what differentiates the format? It's the assortment, price, service, location, operating approach, and…
+the target market, which differentiates each of these retail formats. And then I told you that there are non-store and non-traditional retailing, like direct marketing, direct selling, vending machines, electronic retailing, retail kiosks.
+Airport retailing, they're all very different kinds. Airport kiosk, sorry, airport retailing, there's a kind of non-traditional retailing.
+Okay, so the retail format is determined by how the retailer reaches and serves the consumer.
+Not simply by whether it operates as a physical store.
+Then, consumer behavior, which is a very important part of this, as I was stating you earlier, right?
+So, why KJMA behavior matters? Because their preferences, their tastes.
+Evolve. How they search for products, how they evaluate the different alternatives, how they make a purchase decision.
+If I want to buy, suppose, 1 liter of cooking oil.
+the way that I'll be deciding on that.
+will be very different from the way that I'll be deciding on buying a laptop, or buying a refrigerator, right?
+Sue?
+our decision the ways that we, actually, take
+To come to a decision that That is a lot.
+So, understanding cultural behavior helps us in making decisions about product offerings.
+How much we should be pricing, how we can promote that product.
+Okay, what kind of store environment should be there, how we can provide a particular customer service, and giving an overall enhanced retail experience. So this all basically comes from the very fundamental concepts of needs, wants, and demands.
+Need is a state of discrepancy between the current state and the desired state.
+We all need food, water, shelter, and so on.
+Okay? Then, want, which is a specific way in which a consumer chooses to satisfy a need. So, we all need food, okay? North India would, relish,
+Probably, parathas more.
+I, being from West Bengal, I may relish rice more than anything. Somebody coming from South India, that person may actually, look forward to having dosas and English, right?
+So, are…
+our, way of fulfilling our needs can vary, and that is what we mean by want. And when we have the ability and willingness to purchase that thing.
+then it converts into a demand. So, I may be having certain need and want, but it may not always convert into a…
+demand. It may not convert into an actual market demand, because I may not have the willingness to purchase, or I may not have the money to buy it. So, needs can be functional.
+While it solves a consumption-related problem, it can be symbolic, which relates to identity, status, belonging, or self-perception. It can be hedonic, which relates to pleasure, stimulation, novelty, or experience.
+Various internal and external factors affect our consumer behavior. Like, internally, we can think of motivation, personality, perception, learning, and attitude. We'll be discussing all this later on. And then external factors, like culture, subculture, family, social culture, reference groups.
+Word of mouth, opinion leaders, all these things can affect how we behave.
+This continual behavior results from the interaction of individuals, psychological processes, and external Social Influences.
+There are different models of consumer behavior. In fact, you have, some insight about this in the first week itself. So, economic model, learning model.
+Psychoanalytic model, powered-shaped model is a very important one, you should be looking at it. Then Angel Kolat, backwell.
+backfill model, and then theory of reasoned action. There are a lot of different models. These are some of the important models that we have already highlighted to you, for you to get some understanding that these models are important, and how they actually help us to understand the consumers better.
+Right.
+So, consumers are also, having some kind of motivation about how they are motivated, what makes them behave in a particular way. That also can be explained by various theories. Like, there is one called Master's Hierarchy of Names Theory.
+Which shows the needs in a form of hierarchy. There are 5 different levels.
+And as we, fulfill one level of need, we go to the next level. It goes on like that. So it starts from physiological needs and go up to, self-actualization. Then there is Macrien's theory of needs.
+Which talks about achievement, power, and definition.
+Then Heisberg's two-factor theory.
+with, it talks about satisfiers, okay, and dissatisfiers. Okay, two things, and how they are different. Then there is expectancy, expectancy theory.
+Which says that motivation depends on expectancy, instrumentality, and balance. Whether we expect that our hard work will, lead to better performance, and our better performance will lead to better output, and how much we actually value that output. So that is the essence of expectancy theory.
+Yes, consumer decisions can be influenced by more than functional product requirements or price, they are motivated by a lot of other things. In the end, in fact, we have given you some reading on Indian retail industry.
+This reading provides context on the Indian retail industry, including development of retail sector, major retail formats, changing consumer environment, organized and traditional retail.
+the digital transformation that we are going to see, and the emerging retail models. There is an infographic. It will hardly take you a couple of minutes to have a look at that infographic, and if possible, I would suggest that also, please check
+No?
+the material along with that, okay, whatever is written there in text from it. Please go through that. It's a very easy read. It will help you to understand better. So, there we are… we get to know about the demographics, how the demographics have changed over the years in India.
+Here, we have a large, young population, rising middle class is there.
+More and more organization is happening.
+Okay, we have more purchasing power now.
+India ranks third in terms of GDP, purchasing power parity-wise, okay, with economy valued at $18 trillion in 2026, right?
+the consumer mindset is changing, as I have told you, from the 1991s and so on, how it has changed over the years. Even think of our usage of the social media platforms, how it has changed, right? That affects the way that we look forward to something, what we
+Buy what we wear, what we eat, right? That changes.
+how we, pay for something, credit cards, okay, how we have got accustomed to different, online retailers. Digital payments have come a long way now.
+And we also get to see there in this reading material about the large retail, large formal stores.
+Exclusive brand outlets, which are there, pop-up and experience stores, franchisee-based retails, tiaranas, and modern grocery farmers. Okay, on what basis they have evolved over the years, what are the consequences of
+a new technology, a new government regulation on all these things, okay, that is, mentioned there. D2C, which is direct-to-customer and omnichannel, whereby one retailer can be using different formats, okay, of stores, online, offline, mobile, and so on. So.
+All these, okay, how it has evolved over the years, we have discussed that. You get to see that in the reading material.
+Okay, so Retail Format is not simply a stored tile.
+We talk about the customer experience, scale, and expansion.
+How brands have different controls over this, exclusive brands, maybe having different…
+kind of control. Then market testing, channel integration, because we have to integrate, we have to work simultaneously with multiple channels to achieve our objectives. And what are the operating complexities associated with it, right?
+And how Pajmer preferences have changed overall in India. The value perception has changed. Premium products, we are looking for that. We look for value, whereby also we are simultaneously going for something premium. So how can you maintain a balance between that? That becomes very important and tricky.
+Okay, quick commerce is, is now evolving. I said, blink it.
+Okay, Zepto. In 15 minutes, Domino's is delivering your pizza in 30 minutes, right? Tier 2 and Tier 3 markets, they are becoming more important now. Health, sustainability, and responsible consumptions are becoming mainstream. Consumers are more worried about that.
+And they are becoming more digitally connected. So, as a retailer, you do not only talk to your consumer, but you also talk to those who may be influencing your consumers.
+And omni-channel retaining is becoming more integrated.
+So, consumer behavior, we see that it is not static, it keeps on changing. Consumers' expectations change, which can lead to new retail farmers. Their priorities change, which leads to new product propositions.
+the markets change, which leads to new expansion strategies, and technology use change, which leads to connected retailing, and changing expectations lead to greater personalization, right? So that is all about our first week.
+Okay, so…
+If you still have any question, you can please ask me right now. You can drop a message in that platform. You have an option to ask queries there.
+I'd be happy to help. If you want to ask me anything right now, you can please come on mic. I'll be very happy to help you out.
+Sir.
+I'm here.
+Okay, sir, I'm working as a merchandiser for a small company in Noida. So, I just wanted to ask, like, for week 3, which is merchandising, will we be focusing on Excel?
+More for merchandising.
+See, in week 3, we are not going to the data analysis part, okay? Analytics part basically will come from week 8 onwards, but, till week 7, we'll be talking about the concepts, because not everybody is coming from, a retail background.
+So we first need to clear that, and then week 8 onwards, we'll be working on data.
+different forms of data, and you will… in the first week, in fact, I have explained
+How these weeks will progress, how the modules will be organized, so you can please have a look at that.
+Right, yeah, I have the… the…
+the week-wise module. Sir, just for, your information.
+In the last trimester, we did, principles of Marketing, so we covered all the fundamentals of marketing, like,
+Like, types of,
+stores that you were discussing, and motivation theories. We did this in the last trimester. So, you can ask others as well. I believe they are comfortable with the very basics, so maybe we could move towards a bit more nuance if you're comfortable.
+For this…
+See, actually, this, course, or in fact, the entire program is designed in such a way that, we should also be reinforcing certain concepts because they are important for a particular vertical.
+Okay, like, we do have different verticals, I'm not sure which vertical you are from. Are you coming from Retail Vertical?
+Yes, sir.
+So, there are different articles, and some people may not be comfortable, or they might have just got to know about some concepts only for one time. So, reinforcement is also very much essential. That's why these modules are organized in such a way, and
+it would not be a very prudent decision to suddenly change it, right? So, they're all recorded, and I'm here to clarify along with those recorded concepts. So, the flow will be very much in sync, right? So, I would not be able to change the sequence now.
+And yes, I can take this, I mean, because we are also evolving, we can take this, forward, and probably next time onwards, we can have a more look into it, depending on the kind of total feedback that we get from the students.
+So, are there any additional resources related to merchandising in Excel?
+That you may know.
+There will be some, so please have patience. This is just the beginning, so we'll be having a lot of
+Thanks.
+All right, it's okay. Okay, understood. Thank you so much.
+Most welcome.
+Anybody else?
+So, no problem. If you do not have any questions right now, and something suddenly comes up, please feel free to use the platform, ask us questions. We'll be trying our level best to reply as soon as possible. Probably within 24 hours, you can expect a response.
+Okay? So, that's all for today. Thank you, everybody, for being here in the class, and hope to see you in the next class. Take care, good night.
+Right.

@@ -1,0 +1,478 @@
+I'm going to host on board.
+Okay, okay, great. So, I have started the recording.
+Okay, so…
+Okay.
+Okay.
+So, today's session is about…
+Today's session, it's, wait, is my screen visible?
+Yeah, Krishna Henderson.
+Yes.
+Okay, okay, okay, thank you.
+So, today's module… today's Module 6 is about merchandising.
+Okay, so now let's understand first.
+What is this merchandising?
+Okay.
+So, merchandising means deciding which, which all products, sorry, which all products we show to the customers, and where we show them.
+Okay, just like, in a physical shop, you decide, which products goes to the front and which goes in the back, based on
+how the product is in demand, and how the customers like. Okay, that happens in a physical store. But in online, since we are
+Sorry about that. Since we are dealing with online
+E-Commerce and there is online sales, it is, it is, it is a bit different, although the logic remains the same.
+Here, here also, you… sorry, here also, you have to make sure that when people are logging in to the first page, the things which are your hot selling cake should be in the front.
+And those, I mean, readily accessible, and those which are a little less in demand should be a little inside.
+So that's how the placement, and that's how your web design works.
+Okay, you decide, here, you have to decide the… I mean, the person, the owner of the E-Commerce, has to decide which goes into the homepage, and which goes in on top of the page, and which goes in the, recommendation
+recommendation page. So there are different sections that you get, and there are different places that you can recommend, and which the customers get to see. That you can show it to the customers.
+And, we are also going to learn how to use this data
+to check if this decision, the placement of where we are placing the products, is it, good or bad? And we are going to learn with a couple of examples. That's the objective of this merchandising thing.
+Merchandising, you know, is all… what is merchandising? It's all about products.
+So, what are the things we are going to cover today? There are not many things that we are going to cover. Okay.
+So, first thing that we are going to cover is merchandising effectiveness.
+Okay, what do you mean by merchandising effectiveness? If, here, we check if the places where we show our products are really working or not. That is about merchandising effectiveness.
+Okay? The next thing that we are going to learn is about digital shelf, or digital shelf life.
+So here… So what is this about a digital shelf? Here?
+Here, it's all about how the products look using… when people are using the search results.
+So, whenever people are… I mean, the customers are, you know, searching the products, how does it look before they, they, before they go into the home, into the product page?
+Okay, that is about digital shelf.
+The next is about category performance. What do you mean by, category? Category means,
+is the… like, for example, I am dealing with a particular product.
+Like, for example, I am dealing with the same
+I'm dealing with, say, cold, I'm dealing with, say, fruity.
+Okay, fruity is a specific drink, okay? But when I'm talking about category, it should be the bigger picture, that is the cold drinks. That means all our beverages, so that is a category, okay?
+the group under which the umbrella, bigger umbrella, under which that product falls. That is called a category. Okay, and we are… we will be talking about category performance.
+So?
+Or, for example,
+Or, for example, this is, this is beverages. Similarly, you have skincare. Similarly, you have that, what's called.
+You have shoes, okay, it can be anything.
+Here, we will also see how the entire category is working, or how is it doing, okay? And…
+And how the season of the year changes the numbers. That is, if it is a seasonal, definitely, it is only going to change in that particular month of the year. Okay, and the last thing is about
+product portfolio. So, what do you mean by portfolio? Portfolio means
+The entire, the entire, you can say, summary of our entire, entire results of how things are moving.
+Or also in E-Commerce, it means all the products that we are seeing.
+So, including all the categories.
+Okay, so…
+So here, we decide which products we should remove, and which product we should add. That is, it is going to tell you, okay, it is just going to give you a… it's like a result.
+So, some there might be based on all of these things, you are going to, understand if these products are working or not working.
+Okay, so… so if you know all these things, okay, if all of these four things, you can test if a placement of the product really
+Helps in increasing your, your sales.
+Okay, next that you can think of, it can be used to check how your products look in the search results.
+And how you can read the category numbers in a fair way, even when there is a seasonal thing.
+And then last, you can decide what to remove and what to add in your product range.
+Okay, and whenever we start, and we are going to zoom in into each of the topics, and we are going to take one example at a time, and go through each of them.
+Okay.
+So that's what we are going to… Boop.
+Sorry. Sorry guys, my throat is a little bad, so at times, I will take a little pause.
+Hope, that is fine. Okay, so these are some of the
+Some of the topics which we are going to cover, although…
+All these topics in detail are available in your video sessions.
+Okay, so now let's take the first one.
+Okay, so this one.
+Nope.
+The first thing that we are going to talk about is this one.
+The big picture, zooming out 4 times.
+Okay. Like, for example, let's,
+let's think of a… of a… when you are… I hope you all, all have… you click pictures using a camera.
+So, why do we… So why do we zoom in or zoom out?
+So, we zoom in or zoom out to get… if you zoom in to get a more clearer and go deeper into the things, and we zoom out to understand, okay, what the entire frame is looking like.
+Like, so, same things we will be doing in each of the topics. Like, for example, one more example I can give you is, whenever you are building any dashboards, or if you are aware of Tableau.
+Power BI, there is a feature of drill up and drill down.
+Right, so what is drill up and drill down? Like, for example, you are having the view of a yearly level. Okay, I will go… I will drill down.
+From years, I go to months. From months, I go to weeks.
+From weeks, I go to days. From days, I go to hours. From hours, I go to minutes. So that is what drill down is. Or we can talk about what a Zoom In is. And zoom out, or drill up is something when we are moving up.
+So that is one direction going inside it, one direction.
+It's not going up.
+Okay, now let's look at one placement.
+Let's look at the first one, which is one placement.
+Okay, what is this one placement? A placement is a play… is the place where a product is shown inside, in a… in a… in a… in a home, home page banner, or… or somewhere where it's a… it's a recommended slot.
+Okay, so first, we ask a simple question. Is this… is this… is this session… is this…
+It's whenever… is this working?
+Okay.
+Is this placement which we have, the product which I placed in this, in this one placement, is it working? Is it giving results? Okay.
+So, how do we understand if data is working or not? We check the clicks, okay?
+we check the clicks. That means people are clicking on it, or if it is… that is… that is in view, if people are not looking at it, that means it is not driving any sales, because
+whenever you… people are clicking, okay, in… indirectly, it will… going to… finally, it's going to convert and bring out sales. If people are not clicking, that means no sales is coming up.
+Right.
+sudden… Next, what we do, we zoom out.
+To the digital shelf.
+So here… sorry. So, we zoom out to the digital shelf. So, this is how many products look in the search results before, before anyone opens a product page. So, that is about digital shelf. So, when we are zooming out.
+The next is about a whole category.
+Okay, then, as I said, which is a whole category.
+So we ask, is this category growing?
+Or is this… there is a change in the sales? Is this because of the season?
+Right.
+The next, which we'll be talking about, is the full portfolio. You remember the full portfolio we were talking about?
+So, what all products we have in together?
+Okay, which of the products are…
+are our hero products, that means they are doing exceptionally well.
+Okay, which products should be removed, and which products should we add? So this is what we will get the answer when we talk about the full portfolio.
+Okay, so now…
+So, what is happening? We… we start with… we start with clicks, then move to sales, then what we call incremental sales. Okay.
+So, that is the thing that is happening when we look at one place, when we are talking about the first one, which is one placement, where there, what we think, there we are just focused on clicks. Because if there is a click, then your sale will come.
+Okay, in the next one, that is Digital Shelf.
+we start… what do we do there? We rank in the search results, and we go
+To share of the search.
+Right? And the third one… Third one is a whole category.
+We start with growth, then we go to the seasonal trend. And the last one, the full portfolio, we start with product segmentation.
+And we review every quarter. And every quarter, what do we find out? Which of the products are doing well, and which is not doing well.
+Okay.
+Now, the next topic is about merchandising effectiveness.
+So, let's start with a simple Simple idea.
+Okay.
+Let's talk about Level 1.
+a placement What do you mean by a placement? A placement is the place where a product appears.
+Okay, suppose, for example, level 1 we are talking about, a placement is a place where a product appears. For example.
+For example, what is a placement? It can be,
+A big banner on the homepage.
+Okay, or it can be the top slot of the category page, or…
+something in Amazon you get, your recommended… recommendations for you.
+Whenever, whenever you are… when you are browsing any product.
+Okay, so now my… the question is, how do you measure these placement?
+How do you measure this placement? So, there is a simple metric for that, which is called CTR.
+That is, click-through rate.
+Now, what does click-through rate, and what does it tell… tell us about?
+It tells us, out of all the people who saw the product, how many clicked on it.
+Boom.
+That is, and the formula is very, very simple. Clicks divided by the number of times it was shown.
+Right?
+You know, clicks and impressions?
+GRPs, all these terms.
+Right? Like, for example, let's take…
+If an ad or a banner is shown 2,000 times, Okay, 2,000 times.
+And, out of that 2,000 times, 60 people are clicking it.
+Then, what will be my CPR? 60 divided by 2000, that is just 3%.
+Right? So… What is 2000?
+2000 is,
+in my impressions, and 60 is the clicks. Because when we are talking about e-commerce, or when you are talking about the digital world, we are more concerned about
+the presence. That is, first will be your impressions, then will be your clicks.
+Right, because… So, if we have everything… so, and that will going to give you what is my CTR.
+Right, and why we are concerned about CTR? Because
+Because it influences your sales. If people are clicking. I will have some probability that at the end of the day, some people will get converted to sales, and I will get some sales.
+Right?
+Got it? Now, now, now, let's just look at the chart here on the right side that you are getting.
+It shows… it shows one chair.
+Okay.
+It shows one chair. The chair is the same, the price is the same.
+The photos are the same, only the place is different.
+Okay, on the homepage banner, the CTR is 1.8%,
+Which is this one, the homepage planner.
+At the top of the category page, it is 3.4%. In the recommended for you, it is 5.1%.
+Okay, so we can compare one product in different placements, and we learn which placement works better.
+So you can… you can have different locations where you can put in your product.
+And based on that, you are going to get how much, you know, how much CTR, or the highest CTR, that means how much clicks you are getting, or how many conversions you are getting. So that is what your objective should be.
+Got it?
+No?
+Now, the next thing that we are going to talk about is attribution.
+So… So, as I said.
+click that people are getting is not a sale, but it pushes for a sale.
+It can be… can be… can be… there can be a situation. A person can click, and then not buy anything.
+Okay, so it doesn't guarantee, like, if a person is clicking or has some impression, it will guarantee me any sales, right?
+there's no guarantee on that, or they… yes, they might have some correlation. If people are clicking, then they might be converted to a sale, but there's no guarantee on that.
+Or, there are other… either way.
+Or a person may have brought the product anyway, even without clicking on that banner.
+So, attribution asks this one question.
+So, did the placement really cause that purchase?
+Right? So, I place the product in different locations of the page, but…
+But… but the… the customer did not look into the webpage at all, but they… they purchased it.
+Right, so… My location was… Futile. He… the site did not… it did not help in generating the sales.
+Right, so this is about… attribution. So now, the next thing is about There is also a trap.
+This is called a cannibalization.
+What do you mean by cannibal? You know, what is cannibal, right?
+Sorry. So you… so it's such a…
+So, for example, suppose we feature one product on the homepage.
+Okay? We feature one product on the homepage, and its sales goes up.
+And the sale of a similar product goes down.
+So, how do we create the new sales?
+So, suppose, for example, I have two… I have two products. Suppose I have product A and product B.
+And I… what I did is… and they had average sales, like, for example, 40, and 30, or 50, and 40, something like that, okay?
+And they had similar sales. So what I did, I did, I placed the product A in my homepage.
+So, all of a sudden, if it is coming in my homepage, definitely your sale will go up.
+Right, so…
+So, what is happening? So, it's… it's your majority of this, like, for example, on a particular day, I received 100
+impressions. I mean, 100 customers, or 100 sales. So, and product A is getting 80, 80% of the sales. So, for product B, I'll… it will be left with just 20%. So, what is happening? My distribution is going to add product, which is in the homepage.
+Right, so this is called cannibalization. And how do we check this properly?
+If you look at this picture, you will… you will have a better understanding, okay?
+So, most… most of the visitors saw the banner. That means we were… so we have placed that product in the homepage. Most of the visitors saw the product, but a small, random group of visitors never sees the banner.
+Right. So… Then…
+So then, what we do, how to take care of this? Then, we compare the total category sales of both the groups.
+And the difference between them is the effect of the banner.
+Okay, so this is about merchandising effectiveness.
+Okay, now we will have one example which we are going to talk about.
+And which is going to clear the concepts.
+So, there are two examples, that we are going to talk about. Okay, the first example
+is about, about a chair.
+Okay.
+So, the chair was shown in 3 placements.
+Namely, on the homepage banner, when it was shown in the homepage banner, the CTR was 1.8.
+Percept.
+Right? Which we have seen here. In the…
+This one, right? It was… it was shown, it was coming to 1.8%. When it was at the top category page, it was 3.4%, and…
+And it was in the category page, it was 3.
+4%.
+And when it was in the… Recommendation page, it was 5.1%.
+And if we divide 5.1 by 1.8, we get about… 2.8.
+So we can say, when we are putting in the recommendations page, it is almost 3 times better than the home page, right? It's simple math, right?
+If you see it here, it is 1.8, and it is 5.1. That is almost 3 times.
+Effectiveness.
+Great.
+So, why did this happen?
+So, the answer is the audience.
+The homepage is seen by everyone.
+Many of these people are not looking for furniture.
+But, but, the recommended, people
+the recommended things are shown to the people who are already looking into the furniture. So they are more interested, like, it's like specializing that. So, whenever you are…
+Sorry. Whenever you are placing the…
+Whew! When you are placing it…
+and generic, okay? People, there might be most of the people who are not looking for furniture, but if you place it in the recommendation page, that means this guy is looking for a furniture. And if you recommend something, definitely he or she is going to look for that.
+Right.
+Got it?
+So that's why… So they will be more interested, and that's why you will have more clicks in that.
+Now, let's talk about another example. This is about a smartwatch.
+shh… Okay.
+So, let's see what happens in a smartwatch example. A shop featured a smartwatch on the homepage of his website for 2 weeks.
+The smartwatch seal went up by 30%.
+And, as usual, like, if your sale is going up, the entire team was very, very happy.
+And they all wanted, because of the placement, we are getting so, so much 30% hike of my sales.
+Okay, now…
+So this is… this is the first glance, what is happening. Now, since you are into analytics, if you only study, look at the data.
+When… when they are looking at the entire watch category.
+We… they… they understood the entire category view.
+The entire category growth was by 4%.
+Right, as if my category is growing, if my entire category is growing, definitely, it will have impact on your sales as well, no matter where you are placing the banner, okay?
+So, most of the 30% from the customers would have bought the same other watch from the same page.
+the banner only moved the demand from one watch to another. It did not create new demand.
+This is called a cannibalization tract.
+Got it.
+Now, another example, the…
+So the… another example is the… the… the orange… that orange box that you are seeing, that is… this is into Level 3, a little advanced culture.
+First, it talks about holdout group again.
+So this… this is the cleanest way to find out the real extra effect of placement. Second, it says that we should be careful while we compare CTR.
+The, 2% CTR on the homepage is not same as 2% CTR on a category page.
+the category page is already interested, so it is easier to click there. So.
+Okay, so that is the thing.
+So this is a little advanced. Okay, so…
+Ideally, so this is… this is what happens if we are talking about category. Okay, so… so it is… it is a fair way to compare each placement with its own average, not with a different placement.
+Right, so that's why CTR plays a important part, that is click-through rate.
+Right, so we have talking about… so we said we were going to talk about each of these topics. So, merchandising effectiveness is done.
+Next, we talk about digital shelf and the rest of the two topics.
+Okay. Any, any questions, guys? Anyone?
+Okay, wonderful, SINDU. Thanks a lot. Let's continue.
+This is about the digital shelf life.
+Okay, let's take another example. We talk about a big, big supermarket.
+So, whenever you are visiting any, any supermarket, tell me anything, like a Reliant store, or, you know, that,
+You, you have, what's that called?
+Spencer's. So these are the couple of supermarkets which you can visit, okay?
+there are some products which are at your eye level, like, which you just go there and see. You can see, very easily see them. Some products are at the bottom shelf.
+And, and if they are at the bottom, you hardly, you know, people notice.
+So, okay.
+And the people and the shop owners knows that the position of a product changes its sales, even if the product is the same, right? So whenever you are visiting any supermarket.
+So, if any product is at your eye level, that becomes catchy. You go there, this is… even though if there is
+sale or not sale going on, you will just first visit and just get a glimpse of that product, if that product is yours.
+Of interest, right?
+I need to check. If there… if it's like, for example, if some discount is available, and it is placed at the bottom.
+You will hardly notice, because normally when we enter, we just see your eye-level things, and we forget about the things which are at the lower ground level.
+Okay, so this is what happens in a physical store. Now, let's go back to the digital life we have.
+So, in digital shelf life, the idea for online shopping is the same.
+Okay, it means how products look in the search results, in the listing pages, before… before the customer opens the product page.
+Before they open the product page, this is how the listing happens.
+Okay.
+The, digital shelf life has, has got 5 parts.
+And you can see them at the top of the page. Image, title, price, rating, and stock.
+So, what is this image? Image means the small photo, Okay.
+So… so these are the image. The first thing is, does this photo look good among many other photos?
+The next is the title. It's the name of the product here, even when it is cut short.
+The next is the price.
+So, can the customer see the price and discount very easily?
+The next is the rating.
+A product with a visible rating and many reviews looks more trustworthy.
+The next is, the last one, is the stock status. It says only 2 left, or out of stock.
+And if it is out of stock, people will hardly care about it, or they will just give me notification. And if it is just two left or one left, people will be more interested.
+And these are all very important, because a weak digital shelf can lose the sale in the search results.
+And that customer will never reach your product page, and they will just churn out.
+Right. The next… the next is the benchmarking.
+So this is… that level one is digital shelf, how people look using
+Image, title, price, rating, and stock. The next level is about benchmark.
+What do you mean by benchmark? Benchmark means we compare
+We compare our products with our competitors.
+Or, like, for example, if I'm bringing a new product. So, I will definitely have some threshold, or I will have some benchmark, based on which I can say my range of products is above the benchmark or below the benchmark.
+And that's how you get the competitor pricing. It can be get… you can get this from different sources, as I said, it can be given by different, you know, data agencies like Kantar, Nielsen. Okay.
+So, let's look at two boxes.
+On the left is our own product.
+It has the, it has the rank of 7 for the search word.
+And it has got 60 reviews.
+Whereas, on the other right side, we have the competitor. It has number 1.
+It has 5,000 reviews.
+And the discount is… And the discount is clearly visible, and you know where we are falling behind.
+Right.
+And you know where we are finding behind. Here…
+Here, you have everything, but the discount is missing. Whereas your competitor, although it is at 1 or 2, but you have got more reviews, and you are also
+Also, giving out discounts. That's where we fall apart.
+Okay, so I'm just leaving out this orange box, whatever it is, because that is some additional information, and I know we are a little less on time.
+Now, it is, example.
+example we are going to talk about. The example of two charges and a serum.
+Let's talk about the first… about the two charges.
+So, let's take two charges are shown side by side in an E-Commerce website.
+Both have almost the same price, and are of the same quality.
+So, the first one, the product A, has a very, very clear photo.
+With a white background.
+And its title, you remember the five things? Its title is very, very clearly, and it tells you about what the weightage, and the cable type, and everything.
+And it has got around 4.2
+6, 7, say, 4.6 stars, with around…
+Huge, huge ratings. Okay, number of people I've rated is around 1200.
+So, this is product A. Now, when we look at the second charge, that is the second product, the photo is not clear. It's not good.
+And its title has a brand slogan, and there's no rating.
+So, people, or the customer of which… as a customer, which one will you choose?
+Definitely the first one, right?
+And that's a fact, because whenever you are buying any product, what all things that you're going to look for? You are going to look for, okay, what is my… if my photo is clearly visible or not, if I'm able to,
+Get the view of the product, a clear view of the product.
+I will also be checking the ratings. If the rating is good enough, Right?
+And how much…
+And so all these things, I have to make, I have to make the decisions, I go through the reviews, and only then I will purchase, right? If there is no rating, then I will be skeptical.
+Great.
+So this is the first example. Now, the next example is about the vitamin C serum.
+A skincare brand checked the search word vitamin C serum.
+The competitor was at Rank 1.
+and Rank 2.
+And our brand, which we… our product was at rank 7.
+When the team looked.
+paper and analyzed it, they found out what was the reason. It was the reviews. The competitors' listing had more than 5,000 ratings for each of them.
+And whereas the… our product, which was at rank 7, had got Minor 60 ratings.
+Okay, even though it was on sale for a year.
+So, the reason for that is, there was no follow-up.
+done on our products, whereas in the other products, a deep follow-up was done to give… so, just like, if you…
+once you purchase a product, you get… you get different mails, you get different messages to share your feedback, how your product is, right? Reviews. And you get also to select the starts, right? If no follow-up is done, people will hardly care for that.
+So, how you can fix it, how you can increase your ratings, you have to politely, or you have to just push the customers and ask for more reviews.
+We do not need to change the product, but just a push, so that people will go ahead
+And, the people will go ahead and give their rating for the product.
+Okay.
+The next is about category performance and seasonality. Seasonality means which comes once in a season, or which are seasonal, that is, maybe once in a year, like winters.
+Or cold creams. When do you buy cold creams? Or when does the sale of cold cream rises? It is seasonal. It only rises during the
+winter season.
+And when is the time when the ice cream, sale of ice cream increases? That is also seasonal. It increases during summers.
+Although…
+Okay, so till now, we were looking at single product and single placement. Now, what are you going to do? We are going to look at a category.
+As you know, what is a category? A category is a group of products. Like, it can be a footwear, or a skincare, or a beverage, or whatever you want to call it.
+So, when we are looking at a category, we have four, four, we have to look here.
+We have to, take care of the four KPIs.
+That is, namely… Revenue, growth, conversion, and what's this?
+And average order value, or AOV.
+Right, so let's talk about revenue. What is revenue? It is the total sales of the category.
+Next is growth.
+It tells us how much the sale has grown compared to the last year, compared to previous year, compared to previous month, compared to previous week, compared to previous day.
+like, how your growth has happened. Like, for example, if last October, the category sold 50 lakh rupees.
+And here, in the next… and in this year, in this October, we are selling around, say, 59 lakh rupees. How much is the growth? The growth will be 9, that is 59 minus 50, which is 9, divided by 50, which comes to 18%.
+Right, that is my growth.
+Next is the conversion.
+So that means… Out of the people who has got viewed the category, how many?
+Truly bought the product.
+The last is AOV. That is Average Order Value. That means which is
+How much, on an average, how much people are spending on a particular order?
+So, why do we… why we are looking at categories?
+Why not look at a product?
+Because categories show patterns that single product hides.
+Okay, category will show the patterns in a better way compared to your products.
+Okay.
+Now, let's talk about seasonality.
+Okay.
+Seasonality means the demand goes up and down in a regular way during a particular year, during a particular time of the year.
+Okay, like, for example, from January to March, things are steady. From June to September, if you look at the graph, you will see, from Jan to March, things are very, very stable. From June to September.
+we get a spike, that is a monsoon spike. That means raincoats, umbrellas are peaking up. In October, November, we have the festive spike with Diwali shopping and gifts. In December, again, there's a slowdown.
+Okay.
+So… so this is one… one… one thing that you have to… Keep in mind, okay.
+So whenever you are doing a comparison, always compare with the same period of the last year, not with last month.
+So, why?
+If you were comparing July with September.
+You may think the category is in trouble, but maybe it's not the season, because when we are dealing with seasonal variables.
+You cannot compare month on month. You have to compare that year on year only, because
+the seasonality, what happens is it comes once in a year. Like, for example, it is peaking at September. That means you cannot compare
+August and September, right? You can compare September sales of this year compared to September sales of the previous year.
+Okay, that's the… That's the logic of having seasonality.
+Okay, now, moving ahead with an example.
+So, let's talk about home… let's talk about one of the examples which is quite common, about the home and kitchen category.
+So, the category grew by 18% compared to last year.
+This looks very, very good.
+But when you go further inside, the category.
+They, they found out something different.
+There were 3 older products.
+So, 3 older products, they had fallen, the sales have fallen in double digits.
+And we're more than 10%. At the same time, there are 2 new products which live fast.
+that they covered the loss. So the total looks healthy, but some… some products were quietly struggling. If we looked at the total, we would never find this problem.
+So that means, what thing that we are going to get?
+The threat is.
+So, overall, it is looking very, very stable and fine. It's only when you go deeper, you will find the older products
+Excuse me. The older products… Are not doing that great, but your newer ones are
+Fairly, fairly picking up the seeds.
+Sorry. The next example is about raincoat, and that is about seasonal. If you compare it at a month-on-month, it will be very difficult to, you know, capture the thing.
+Okay, now, the last thing that we are going to talk about is about… Product portfolio.
+30.
+It's because of the cold. It's like that. So, okay, let's try to cover this up, though…
+Okay.
+So, what do you mean by a portfolio?
+A portfolio means about, when we are talking about a portfolio, it means the entire product range.
+Okay, it's like, looking at a big picture. It's not looking at either a single product, single category, but everything together.
+So just like if you are dealing with
+If you're into stock market, where you talk about what is my portfolio? So there, we don't talk only about
+Goodbye.
+what, what, one or two stocks. We are talking about the entire the entire history.
+Your entire, portfolio, entire list of stocks that you are dealing with.
+Right.
+Jeez.
+So, to understand a portfolio, what we do, we put the products into segments. That means we put the products into different groups.
+We can see we have 4 groups in the boxes. The first is about Hero products.
+So, these are small in number products that bring up the maximum of the revenue. Second is the long-tail products.
+They are, and there, here, you have the maximum products, and each one sells in small, small quantities. So, next is the seasonal products. That means you are grouping the products into the four different categories.
+Hiro.
+the… what's called? The first one is hero, the second is Long Tail, the third is seasonal, that is…
+They are selling it just…
+for a couple of months in a year, only they will be active. And the last is discontinue candidates. These are the products which are
+No sale is happening for quite a long time, and, you know, you are just,
+It's better to stop selling these products, because my sale is not going up.
+Okay, so I, I will also talk about a parity rule, 80-20 parity rule, which was there in Module 5, but I don't think we have covered that.
+So, it's… what is that say? It says a smaller part of the product gives you a big of the revenue. The hero products are something like that. Or, one more example I can give you, whenever you are working in a particular company.
+Right. What does AP and 20, tell you? 20% of the people
+does the 80% of the job. Or, for example, when you're working in a particular company, and if you look at the entire salary structure.
+you will see 20% of… of your office staff are your… are the leadership team, right? Let's say 20.
+It is less than that, but let's for… for…
+For better example, we are taking just 20%.
+And when I am talking about their salary, okay, the salary, those 20%, takes more than 80% of the salary
+So, total salary, if I combine, sum them up.
+And only 20% of the salaries are distributed among 80% of the employees. So this is what financial rule is all about.
+De Bronquier.
+So, now, the next thing is about taking decisions. There are
+So there are two decisions that we can think of. One is prune, that means just remove.
+And the other is about expand.
+So what do you… so let's see what prune means. Prune means to remove the products which are weak and, you know, and not selling.
+Okay, so it might be some products which are having very, very low conversion rate.
+And very high returns, and has got very weak digital shelf life for… for last… last 6 months, maybe.
+So, what's better? Maybe if we can remove that, that would be better. Now, the other action that we have is about expansion.
+That means we can add new products.
+where the demand is already there. For example, we can look for the search words which give zero results, and because, you know, you do… you do SMO search.
+search engine optimization, and from there, you do the different analytics, and you will understand what people are looking for, and yes, if you can tag some new products, definitely your sale will go up.
+Right. Now, now, let's move to our last slide, which is about an example.
+So, about… let's talk about a footwear brand.
+Okay.
+The footwear has got 800, more than 800 styles.
+So, when… when they checked in the data, they found just… so you remember the four categories, right? When they checked, they found just 25 styles where your hero
+and 3% And they contributed to just 3% of the styles.
+And in terms of revenue, they gave around 50 par… 55% of the total revenue.
+And on the other side, which is the long tail, remember.
+And they had around 300 style, and in the long tail, and they contributed to only 8% of the sales.
+So, does that mean that Are they useless? No.
+So, because there are… you will get different type of customers. Some… some… Likes to have different choice.
+Okay, so these styles still have some value.
+But it… it tells us how to use our marketing money and our homepage space. We should give it to… to more, to the 25%, 25… those styles which were our hero.
+And spread it equally to over the 800 styles.
+Okay, so the next is about a home where homeware example.
+Okay, so the shop, the shopkeeper, that is E-Commerce guy, removed 60 products.
+And why they removed 60 products? Because they were weak, and very low conversion rate, sale was very, very poor, weak digital self-life, very high return.
+And after removing, the shop got some free space on their homepage, and free money from the, you know, the budget, because when you are… when you are having these products, you have to make sure about
+Having photographed, having some…
+You know, have some data updated here and there, so that your budget is being saved.
+And what did you… what the shopkeeper or the… Merchandiser did.
+They added 8 new products, sir.
+Okay, and how did they… looked the… selected these 8 products. They used the, remember, the search
+search results, which they were getting zero. So, like, the people, based on the search engine optimization, they found out what products people are looking for, and based on that, they added those 8 products.
+Okay.
+So… So these are… These are… These are our two examples.
+Okay, now let's move to the next. So these are the… these are different checklists and different advanced, so I'll be sharing
+this slide with you, and these are the key takeaways. So, what is CTR, what is digital shelf, what is the category, the KPI, and the segment and portfolio.
+So, that's all I had for today.
+And unfortunately, we didn't get time for a quick recap, but in the next class, for the 10-15 minutes, we are going to do a recap of Session 1 to 6, and then move to the new topic for Module 7.

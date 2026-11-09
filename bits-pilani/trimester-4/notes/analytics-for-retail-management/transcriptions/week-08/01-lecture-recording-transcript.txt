@@ -1,0 +1,343 @@
+Good evening, everybody.
+I was actually waiting for others to join, but, let me start the class today. I can just cover,
+some of the slides that we have prepared for this live session, and after that, I have a small case study for you.
+that will also have some data for you to analyze. You can use Excel.
+For analyzing the data.
+This is your… Week 8, and…
+And this week, you have been taught, About the basic uses of
+Excel for analyzing your data, how Excel can help you all.
+So, from this week onwards, we will go into the code Retail Analytics part.
+So, we get data from various sources, and this data must be analyzed properly.
+We… If we base our decision on the data.
+Majority of the cases are decisions
+Actually turn out to be right.
+Sometime back, I was going through a study which said that if we
+Make a decision based only on our function.
+Okay, on the… not relying on data, but on the, maybe, part-time experience that we have.
+Because of working in a particular domain.
+It is…
+not always wrong, but maybe it is around, 40% or so when it turns out to be right. But if you…
+Base it on your data.
+then it turns out to be right around 90% or above the timer. So it is always good.
+That you first have a look at what your data says, and then take a decision based on that data.
+Now, Retail Analytics will combine your knowledge, relevant data, the method that you are using, and also, not only that, the managerial judgment that you have.
+You may be surprised to know that Netflix actually has a lot of data about its users, which all
+series… series are going to be a blockbuster. Who should be, made, a part of that series, and so on. Who should be the director?
+They know very well that if this combination is taken, that then this one will be Oh.
+Blockbuster. This one will be a hit with the viewers.
+But still, they say very clearly that even after knowing all these things, we do not always rely on the data. Because a lot of things
+may not be uncovered by data. While I'm not undermining the importance of data in an email, but I'm just trying to highlight that you should look at data from various angles, and always
+Use your experience alongside data, so do not just focus only on one of these. You should have
+Okay, emphasis on both.
+So you focus on your customers, your products, stores, promotions, inventory, channels through which you are going to sell, and so on.
+Right? So…
+you should collect data, you should generate data, right? And you should use those data which are meaningful to you. So, do not unnecessarily keep on collecting data and then try to
+Use that data, which may lead you to some, maybe false, conclusions, which may not be that, right also.
+Okay, so be a little careful about what kind of data you are going to collect, because that also involves a lot of your money.
+And… Your?
+Time, report, and so on.
+So, we have a lot of uncertainties. Consumers, their preferences are changing, the demands may fluctuate, there may be new competitors coming out, your margins are narrowing.
+Yeah, and the customer's, expectations about your service is always going to be increased.
+Hence, you have to… Look at your data to…
+decide where you should put more emphasis on. Which one should be prioritized?
+This can help you to identify the problems, recognize your opportunities, compare alternatives, yeah, and improve your decisions. Now, there are broadly four different types of analytics. Descriptive, which tells you what happened.
+So, you basically look at the past. Then there's diagnostics, which tells why something happened.
+Here, you try to identify the possible causes. And then there is predictive, which tells you what may happen in future.
+Finally, we have prescriptive, which tells you
+what you should be doing in order to reach a certain objective, or avoid some unnecessary or unexpected outcomes, right? So these are all very important.
+You should move from understanding your performance, then explain it, anticipate it, and then finally act on it.
+So here, we have a very simple logic. First, we have data. Data, which is unformatted, which is…
+Collected raw from different sources.
+Then, we have information, which is the data after a certain level of
+polishing, I would say, or maybe data which has undergone some processes. It is organized. It describes some situation. Then, from that information, we have to get insight, which gives us
+a better understanding of why something happened, if there is a pattern involved somewhere. Then, based on that, you take decisions. And finally, you have to definitely take action, because only doing analytics will not help, unless you take action on that outcome.
+So, you should start with some business questions.
+what data is relevant for you? Think of a business which may be, suffering from losses over the last couple of,
+quarters. So, why is it suffering losses? From where the most of the loss is generating?
+Okay, which product is contributing to most of those? Or even if it can be something good, some company is actually doing profit. So from where? Most of the profit is coming? Which are the most profitable, maybe stores for that organization?
+You have to think about the level of detail.
+How do you identify customers? To what level you should go?
+Oh.
+Think about your, employees also.
+And also, At the very beginning itself, think how you are going to interpret the result.
+Without a clear question, your analysis will become unfocused, and you'll lose track on it.
+So, always ask the right question.
+And then you have Retail Data and Information, which is generated, basically, from the activity.
+This can be of various things, as I have told you earlier, and each record that you get to it, that represents only a small part of the business.
+When these records are organized and compliant, they can live in.
+Patterns, differences, trends, or relationship.
+And all this, again, remember, they must be concern connected with your business problem.
+In retail, there are certain very basic things that we can definitely look into, like the customer.
+What is the main question? Who is buying?
+Okay. Our product? What is being bought? Bought? Transaction. What happened in the purchase? What was the average purchase value? Average transaction value, or order value, that is often called AOV, average order value. Or, where did this, sale happen?
+At what time did it happen? We will find that sometimes there is a spike in our cell, sometimes there is, an ebb, okay? A cell is not that good. So, why it is not good? Can we connect it with some other
+Factors which may be, which we might have overlooked, or which is not captured by the data.
+It is possible that we are capturing the data month-wise.
+But then, that does not tell me when a particular festival falls.
+So, we should have that idea that, okay, in this month, this festival falls, and that is why the sale of these products have, increased.
+Or maybe during this season, the sales of these items actually come down, because that is not needed in those seasons. So your level of detail matters a lot. Too much of aggregation can hide your important defenses.
+And if you have too much of detail, then you will find it difficult to see the pattern. So, again, this is a very tricky situation where you have to think about maintaining the balance.
+Okay, so useful analysis requires the right level of detail for the decision maker. Also, if you want to have more detail.
+Then.
+probably you'll be spending too much of your time and money on gathering that detail, and then analyzing that. So, we have to come to such a point where we have sufficient level of understanding of the situation, and also we can,
+I have a,
+broad overview of what is happening, so that balance is extremely needed. You have different sources of data, internal or external sources. Now, internal sources, they are called primary sources, or in fact.
+primary sources or secondary sources we can think of, right?
+Primary sources, like our sales transactions, customer records, inventory, store operations, all these things, we have total control on those things.
+So that is primary. And in fact, now, do not only think that your
+All your primary source, primary data will be internal. Primary data is basically something which is totally or fully aligned with your requirements. So, you can have primary data coming from some other party. Okay, you have requested a third party, maybe a marketing research company, to gather data for you.
+So that company is actually generating primary data for you, but then there are external data sources, which is outside the scope of your organizational activities.
+Okay, demographics, competitor activity, market trends, and so on. So, you may get this data from different ministries, organizations, or different market research companies, which aggregate this data and publish them in terms of the report, in the form of a report.
+Okay, so they are secondary sources of data, okay, and they are external. Now, why do I call this secondary? Because these data, often, they are not
+formatted in the way that you actually want them to be. It is possible that you have that data, but there are something, some extra data also involved, or you may have to extract the data from some other things. In that case, that is called a secondary source of data. So you have internal and external data, and primary and secondary data.
+Internal data explains what is happening within the retailer. And external is outside your organization, so it has a wider market context.
+Now, no single data source is counted, even when you are looking at data coming from, maybe a very good organization. Still, you should cloud that data from different other perspectives, different other sources, and try to figure out, okay, why something is happening. Look at different sources always.
+point of sale, or POS data records purchases, but that does not have competitor purchases. Loyalty data extruds your unidentified customers.
+Yeah, so good analysis asks, what does the source reveal? What it does not reveal, and what additional source may be required?
+Okay, so a single outcome can have several possible explanations. For example, a decline in sales may reflect the
+lower demand, okay, you did not have, proper stocks, so because of stock out, consumers went and bought something as not from you. Okay, there was some kind of service problem.
+Or maybe there is now more competition in the market, and you are gradually losing your market share. You are pricing your product too high, or the competitors have given some kind of discount because of which customers are now buying from the competitor, right? So different data sources help distinguish them among these explanations. You have
+Sales data, inventory data, customer feedback, and a lot of other data which can give you good insight about what is happening in the marketplace.
+So the objective is not to combine all available data, but to combine the sources that improve the decision.
+Now, you should then, once you have analyzed, you should take the insight into detailed action. Your action may lead to change in your assortment, what kind of products you are going to stock.
+Okay? You may be operating in a particular region where there is, more number of people from a certain ethnic background. So, you should think of, you may think of, stocking, keeping in the store some of the products which that, people from that background actually prefer.
+Or how you can adjust the replenishment, where, and I mean, from where you should be ordering for the replenishment, okay, how, at what level of your stock should you ask for that replenishment, okay? When you can go for promotions, what kind of promotions can be there?
+Okay, which all channels of promotion you'll be, utilizing, how you can modify your customer's offer, okay, whom to give offer, and whom not to. Suppose you find that the sum of, that some of your customers are purchasing from you.
+Okay, and they are purchasing the products that actually you expect them to. So, in that case, if you offer them some discount, you are paying for your own pocket. You do not want to do that.
+So, you should… you should think of giving some incentive to those customers who otherwise may not be buying from you. So, you actually lured them, you attract them that, okay, because of this, now you try our product.
+Right? You can think of improving the service. You can check how long, generally it takes for a service to be completed, and you act on that. You can also act on the local competition.
+So, before acting, you should consider what is the impact on the customer. Will the customer actually buy from you if you lower the price?
+Or if you make more promotional efforts, will the customer be happy to oblige?
+Okay? Will the customer buy your product? Think of the financial implications that you have. You are going to offer discounts. A lot of times, in fact, especially the novice market, as they think that if I reduce the price, then I'll be able to sell more.
+But your, concern probably is more about
+the profit that you are generating, not the sale volume. So, in that case, what is the financial implication? If you reduce the price, will you have that much of sales so that you can actually overcome the
+reduced margin of profit, think about the operational feasibility. Okay, from where, or which channels are you going to use? What are the possible trade-offs that you have?
+You are going to reduce, maybe some fees.
+But, what will happen if you really do that? Will the, customers come and take up your, loyalty points, or will they become your loyal members? Will they opt for the loyalty cards?
+Okay, so the result of the actions will then be monitored to determine whether the original problem actually improved or not.
+For retail data, you have to look at systematically collected, organized, integrated, stored, updated, and accessible data.
+These are a lot of things, actually. I have told it in a single breath, but it takes a lot of effort for the organizations to ensure that you have the right kind of data accessible to the right group of people.
+And so… You may think of retrieving your information for your routine decisions.
+Okay? You have to, often give some, promotions, so that may be something looked in, or maybe you have to think, think of the, sales being generated by each of your retail stores.
+So, Retail Decisions, look at those. The performance, how it is improved, or, it has probably gone down, look at that. How, you are able to solve your problems, and whether you can
+Take… Or benefit from new opportunities.
+Now, do not think that more data is always better, because with data, with collection, gathering, storing of more data, you are actually spending a lot.
+And your customers may not always be very comfortable sharing a lot of data, so what for are you going to collect the data? Think about that. Okay, will that data be of any help? Only then do you collect the data.
+Okay, so look at the quality of data that you have generated. Your system-generated data should not always be assumed to be analysis-ready. The data that you are getting from the system, that may need some kind of quality check.
+Do you have any kind of garbage data? That means you thought that I'll be getting this data, but then when you start analyzing the data, you find that it is not in the proper format, or you have to change something somewhere.
+Okay, computers understand only ones and zeros. So, how do we represent those on the, on this, I mean, in the, in the computer, in the tool that we are going to use?
+Right? So, do you think how those,
+data points can be utilized for your benefit. So, quality of data has to be checked. You should not have duplicate records. That will inflate your numbers.
+That will give you wrong output also. They should…
+not be missing values, but then that is an ideal situation. Often, we have missing values. You ask a survey question to a customer, and the customer may not be comfortable sharing some of the information. In that case, you have some missing values. So, how do you deal with the missing values?
+Hey, you have given a form to somebody, a physical form, a piece of paper, and now somebody has not ticked all the options.
+So, what do you do with that data? You have to think about that. We'll talk about some of this later on, and probably you already have some idea about this. If there are product classifications, how do you classify the products? How do I identify the different products?
+Think about different systems being used. You may be having different organizations, I mean, different stores in different cities, and now, in one of the cities, the retail manager is, storing
+the gender information as male and female. Another, the manager is storing male as M, and female as F. Or in another case, one is, being used to represent, maybe, male, and 0 for female. If that happens, then you have to… when you club all this data, you have to
+Aggregate that, transform the data, and then…
+Start your analysis. Look for the consistency in your… in your field definitions. If there is any inconsistency, again, you will end up with the problem. And the price information you have, right?
+So, these… if there are problems, your output, as we often say, that garbage in leads to garbage out. So, you will have a wrong output. And if you believe too much of that output, then it will be even… even worse, right? We call that garbage in and gospel out.
+We work on the data in a wrong manner. We do not have the right kind of information ready with us, and then we rely too much on that. Okay, then our decisions will be wrong.
+So, be very careful. Now, why do we use Excel? Because, firstly, Excel is there, almost in every computer.
+We all are very comfortable, and we do not have to generally install any new software for this. And Excel, in a lot of cases, actually can do well for the managers.
+higher up, you would find that most of the managers actually use Excel.
+Okay, but then there are other things also, I'm not, denying that fact, okay? Nowadays, we use Python, R, and there are so many other options.
+But Excel has been there for so many years, and it has very good functionalities also, although there are limitations. Excel cannot, probably deal with a large volume of data set.
+Okay, it tends to take more time, or it can crash, so in those cases, we should be using some other, other tool. But, for general uses, to understand how it works, Excel works fine, and that's the reason that we have, thought of using Excel for this course. Okay, so the… we do…
+Now, you can be using Excel, but what all techniques are you going to use? For that, you should have good understanding of the statistical techniques, right? You can start with something very generic, like, you can have,
+A chart, or maybe different kinds of charts. And then, you start analyzing the data using different,
+maybe functions. And then, after that, you can start using, formula.
+Yeah, so there are a lot of different things that we can do. In fact, Excel is, are very…
+useful tool that you have at your disposal. I, myself, do not claim to be an expert in Excel, but yes, I can do some analysis, which I'll show you, and you can also check on your part, how it works, how it goes, and then we can
+See whether the answer that we get here that actually is meaningful to us or not.
+So, apart from all these things, we have one very important tool, available to us, that is ByWord Table. Byword Table and Pyot charts.
+Now, when we use a biotable, we can actually look at the data from various angles. You can think of it like, like a cube. So, you have a cube.
+okay, Rubik's Cube, and you are rotating it, looking at it from different angles, trying to find out how the data actually reflects the business scenario. And pivot charts, again, this is related to the pivot table only, that gives you a graphical representation of the table.
+So, these two things are extremely important and, widely used by retail managers.
+Now, there are certain things you…
+must know, I guess you already know, average, median, mode, okay? What do they mean? They are all basically measures of central tendency. Then we have variance and standard deviation, which shows you how the data deviates from your expected location. And then look at the position, the minimum, maximum rank, or
+Percentile. Percentile means in terms of if I put everybody in, on a scale of 100, then where somebody actually lies.
+So, for CAD, ZAT, GMAT, or many other, exams, the computer exams, we see that they use percentile. Okay, so somebody who has got 99 percentile actually, has 99% of the others below
+that below himself or herself, right? So he is only within the top 1% of the… 1% of the students. Similarly, we can think of the quarters, okay? First quarter, second quarter, third quarter, and fifth… Fourth quarter. So that means
+every 25%. The first quarter, 25%, second quarter, 50%, and so on. Now, these measures help us to understand what is typical of a business scenario, how much,
+value do they carry, and what observations stand relative to others, and so on. We can also use some functions, some,
+something like count if, sum if, average if, right? Count… actually, today, in the case that I'm going to share, you will use some of these. So, I want to count certain things. You know, how many times this has appeared. So, I use COUNT.
+Now, if I want to count that based on a particular condition, then I use COUNTIF. Yeah, if I have more, then I can have COUNTIFS, or some… SUMIF.
+Okay, when I want to find the sum total of something. When I want to find the sum total of something based on a condition, then I use SUMIF. Or if I want to have it based on what conditions, then I can use SUMIFS. Okay, similarly, average if is another function that you can have.
+We use VLOOKUP and XLOOKUP often. XLOOKUP is actually the next version of VLOOKUP, but VLOOKUP, and earlier we had… we have still VLOOKUP and HLOOKUP.
+So I can look at a particular table and try to figure out
+Which… which data, which data, is related to a particular observation?
+So, for example, if I say that I have data about, sales of, refrigerators, washing machines, and all those stuff, okay, all white good products.
+Okay, and then what is the price of these? For simplicity, let us think that, let us assume that the price of refrigerator… I have only one model, and that is the price. I have only one model of
+Tv, and that is the price. So, if I… I use VLOOKUP, basically, I look at the entire range, and I tell that, okay, if you find anywhere this refrigerator occurring, refrigerator is coming up, then what is the price for that?
+Yeah, so it will give me the price for that particular product, or if it can look at certain transactions and give me the price or information related to that transaction.
+Okay, so these two, again, are very important functions that you have.
+Whenever you are using Excel, you must have data consistently.
+Okay, structured data use… you can use Excel tables, which is actually a very good tool, because it gives you, by default, certain
+benefit certain features it has, like, you can easily find out the sum total of something, average of something. If you add one or more columns to it or rows to it, it automatically understands that it is a part of that table. So, we can have a range of data, which we often use in Excel, but now Excel also has this table function, so it helps you to
+identify your, range of data. And also, it has, one, Oh.
+beneficial feature. It has a bandit thing, so every, alternate row, okay, that, every row, in fact, has a different
+color associated. So, we generally get to see two different colors, and we can easily, easily find out, okay, this, is this entire,
+row, okay, is related to this particular transaction, and so on. So, this is actually visually also very easy to understand. It can help you to sort and filter, okay? You can have appropriate cell references and so on. So.
+try to use Excel table feature whenever it is possible.
+Yeah, you do not have to memorize, remember, you do not have to actually memorize all these Excel shortcuts. You do not have to memorize all these functions. There are so many different functions. I told you, I do not myself know many of the functions, but I would say I do not know most of the functions.
+But yes, depending on the kind of business that you are in, depending on the kind of work profile that you have, you should play around with those and check how it works, okay? So, as you actually get accustomed to it, you'll find that they work in a very similar fashion. Today, in the class, we go with that.
+Okay, so you will see that, yeah, how these things can work for you.
+So, you can think of having some output, look at a pattern, interpret that, take a decision, and then monitor the effect of your decision. You should ask what is different, how it has evolved over time.
+where you have the strongest pattern, okay? What can explain, okay, a certain change in the pattern? All these things. As managers, you should have all these questions ready, okay? So here, I stopped this because we have actually something very interesting to do.
+There are a few readings that we have shared. Again, I'm not going to take you through these readings. Rather, you can look at the readings at your own leisure time, and that will help you. Especially this one, Excel Practices That Improve Analysis. I really like this one. So, look at that, and probably you will learn a couple of new things.
+With that, let me stop sharing.
+My screen now.
+Stone.
+Is my screen still visible?
+Can you still see my screen?
+Yes.
+Yes, sir.
+The PowerPoint, okay.
+Okay, so I have stopped sharing now, okay?
+I'll share with you a case.
+Prepared.
+Yeah, this is a small one.
+both test cases.
+Just give me a moment, I'm uploading a fight for you.
+Okay, the second link that I have shared just now, that contains the dataset.
+Can you try to answer the questions from the dataset?
+Take your time.
+Yeah, anybody ready with the answer?
+Rishan or Shivansh?
+For the first one?
+Tukan, right here in the chat box.
+what your answer is, or you can come on mic.
+Have you raised any of the answers?
+Can you answer any question?
+I hope you are working on the dataset.
+Thanks, Rishan, for confirming.
+Okay.
+So, not… you have got some values, good.
+South. Yeah.
+Great. So, can you tell me what was the, function that you used for this?
+Can you write down the function here?
+The first one, I think, Okay, we have used SUMIFS function, right?
+SUM if S…
+In fact, it was mentioned also, you can use a pivot table. Actually, that's my favorite. I tend to use Pyot table a lot.
+That makes life easier if you know how to use that.
+Right? But, anyway, you can use the SUMIFS function.
+And…
+Big pink.
+They should have used something like this.
+Okay, you used Python.
+Okay.
+Okay, no problem.
+Python is definitely highly used, but yeah.
+Aye.
+I prefer to have Excel for this one, because it is easily available.
+Anyway.
+So if you use Excel, you should have used this function, SUMIFIS, Now, see, I…
+And let me check this one. Right.
+So I, that is the total sales amount, some efface, I, that means I have chosen the entire column, which has total sales amount.
+Okay, and then I'll look at D, that is the region.
+Okay, so if the region is not…
+Okay, then only it will sum. Sum all these…
+values, which are under the column I.
+Okay? That way, it works. You can also use, by… what did I say? Pyotable.
+for this.
+Okay.
+So, the total company revenue would be around 2.45 per across all 500 transactions.
+Yeah, and top contributing region.
+Which is the top contributing region that you have got.
+27, east, east, east is, 36.68, okay?
+Okay.
+Right. But, did you consider the…
+revenue? Okay, you should have considered that, right? In terms of the percentage, then it is fine. So, region revenue divided by the total revenue. In fact, one way that you can use this thing is when you use a pie chart. Yeah, pie chart will easily give you a graphical representation of what
+That data set is, right?
+So, you can use that.
+Then… Okay,
+For the next question, analytical, method, what can you use? You can, really use Pyot table. Have you used Pyotable?
+For the next one.
+Let me check…
+Okay, you can use, this…
+Line chart also, or clustered column chart.
+In fact, I tend to choose again.
+My favorite, hygurt table.
+Okay, so Robo.
+If you do that, you can…
+have different slicers also. I'll show you after some time, I'll show, actually, my screen.
+Okay.
+So… Yep.
+What are the answers that you have got? You have used, okay, DF pivot table, right? Actually, it works in the same way only.
+Fine.
+Right.
+For that third one.
+what formula would you use if I look… if I have to look at the product performance?
+Okay.
+What formula can I use?
+highest standards, okay? For the units sold.
+revenue. Okay, good.
+Yeah?
+For the third question?
+Try to solve the third one.
+Okay.
+So, for the third question, actually, you can use this, and you can repeat it for all the different regions.
+This is for the region, not for the quarters. Okay, for… yeah, fine, you can look at quarters and regions both if you want.
+Okay.
+And fourth question, if I want to use SUMIFS function.
+What would it be?
+For the fourth question.
+For the fourth question.
+Okay, you can use something like this, right?
+Rishan, did you do that?
+Yeah? Okay.
+People have been working on this, okay.
+Boom.
+So, I hope that you know Like, Joseph… Which thing?
+this tournament.
+for… You know, the ideas of…
+use private table. In fact, you have used, one of… you have used in Python. It's the same.
+Basically, if you go to Excel, what I have done is, actually, the data was in the form of a range.
+When I got the data, firstly, I selected the entire range of data, also, like.
+And then… I clicked here insert, clicked table, and that table, this is the one, that's…
+one anyway. So, I can create a table by clicking here, I think.
+I was working on a separate set of data, let me check.
+Okay.
+So, after I selected all the data, I just went to insert, I clicked on fiber chart here, fiber chart and table, and then this thing appeared.
+And once I have this, I can easily have different,
+different items as either row or column. What I have done here is I have
+Yeah, clicked button, or icon, right? Easily just…
+pull it from there, on the top, and then bring it down, okay, to whatever I want.
+So… It's gone out.
+Huh.
+So, I got this, I pulled it to here, and we got quarter here in the rows, and then, okay, region and product category here, the filters.
+Here, sum of values. I can, in fact, click here, if I want at any time, click on the value field settings. We do have different other options, some count, average, max, mean, product, whatever you want. You can select from there. There are other options as well.
+So you can choose any of those. Generally, some is the default one you can use from there. You can have different filters, you can move also a column here if you want,
+For example, suppose… And a tip.
+color.
+So, it will now look at the… Yeah, different problems.
+Yeah, Ahmedabad, Bangalore. In fact, they are the different places where I have my stores located.
+Yep.
+There it is, looking at all these things, they appear as separate columns. And for each of the stores, their quarterly sales volume, okay, total sales amount, that is given. And at the end, we get the grand total
+Okay, for that particular… region, and we also get that grand total here. Now.
+Depending on what exactly I want, I can make many changes. Here, I have also included a slicer, which is a very useful tool, because it gives you the feeling of… it looks like buttons. You can easily insert slicers here.
+Okay, here, click on here, and then you can have slicers, or you can click on here, okay? Just a moment, I included slicers, yes. This is where… so I have inputted slices. Now, if I… I click on any of these.
+You know, those are… because they were always selected right there, now they're getting deselected.
+Right.
+And see here how my data has changed.
+Now I have data only.
+Okay, for this washing machine. In fact, I can either use that slicer, which I have showed you here, I have clicked only washing machine here, or I can select from here as well. I can select all.
+And I'll get all the data. If I want to select only a few, I can do that as well.
+Right, I can select multiple items, so north and south, clicking on both.
+And I'll have data coming from all these buses.
+And, here, also, I can…
+And it all works like filters, so it is very easy. I can figure out any of these. I am interested only in Chennai and Delhi. I can do that, right? So that is how… what I actually wanted to show here is that we… we had…
+Slightly complex data, it was not that complex. Also, we had only 500 different, rows of data, okay, having, 4 different types of products, okay, different prices, and in fact, you must have noticed that the price of
+Tv or refrigerator, that is not the same. The price may vary.
+Okay? And then, in different regions, we are having multiple stores, okay, in different cities. So, if I want to figure out how these stores are performing, I can easily take help of either
+chart, I can use a function, or I can use this pivot table and chart option, which gives me the best of both the words, and I can find out, okay, the result.
+So…
+That is it for today's class. I hope that you liked working on the dataset. If you have used Python, that is perfectly fine, but if you want to get accustomed with
+Excel also, it works in the same way. In fact, in Python, it is the same. The data, the function that you have used, that is the same as Python, the same as the
+by your table function as well, right? So you can use that, no issues. But in my class, I'll be using only Excel for this course.
+Okay, so that is it. I hope that, you have got it, got all the answers. I'll also share with you the answer key later on.
+With that, I end this class. Thank you so much for being here today.
+Wish you a very happy Diwali. Take care, everybody, and hope to see you in the next class.
+Bye.
+Bye, good night.

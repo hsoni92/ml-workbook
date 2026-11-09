@@ -1,0 +1,456 @@
+Okay. So, hi, everyone. We will start our discussion for Module 4.
+So, last week, we haven't connected for Module 3, so that we will be covering up today. Hopefully you might have got the announcement.
+For Module 3, Makeup Plus, that is from 9 to 10 today. And first, we will be doing our usual discussion about Module 4 now. And then we'll take a break of 15 minutes, and then we will move to the makeup class.
+For Module 3.
+Right? Let me… share my screen.
+Okay.
+So, we are going to talk about recurrent neural network, so Module 4 is about RNNs.
+So there are, overall 7 topics under this particular module.
+Or week, you can say.
+And then, we are going, like, topic by topic, whatever, you are going to cover in this particular module, right? So, as we talk about RNNs, RNNs are basically, these are models which are used for
+Sequence modeling, right? So, if you imagine text.
+Right? Text is something which is, like, you will have to, take your text in the form of sequence only.
+Right? In the form of sequence only. So, if you just change the arrangement of the words, your text meaning will go away.
+Right? So…
+For this kind of sequential data, where sequence is very important, like, if you change the arrangement of the words, or if you change the position of the words, the meaning of
+This particular thing will go.
+So, RNNs are basically… they are deep learning models, which are used to understand this particular sequential data.
+Right?
+So, if you see the sequential world, we have, text, we have speech, we have time series data, we have video data. Again, which is converted into text, right? So, this all are sequential form of data.
+Right? So if any of this data loses its sequence, then It has no meaning.
+Okay? So if you see, for example, if you take normal neural network, normal neural network, artificial neural network, if you see that, those neural networks are something which does not
+take into consideration the order of your data, right? If you put the data, it will not take the things into order. Like, this is first step, this is second step, this is third step, it will not take that way.
+So it will not understand actually the sequence itself.
+So, what happens is, because of this kind of models not understanding the sequence, so we cannot use these models to actually analyze this kind of… the sequential kind of data. So that is where RNNs have came into picture.
+Okay.
+It's called as recurrent neural network. Neural network you're already aware of. Why recurrent? We will talk about it, right? So, usually what happened?
+See, there are certain feed-forward limits which are there in those traditional models, right? Fixed input size is there, memory… no memory of the previous inputs are there. Suppose in sequential data, what happens? Suppose you have series of sentences.
+Okay? You have series of sentences. Whenever you have series of sentences, suppose this sentence has gone, then this sentence has gone, then this sentence has gone, then this, and then this. Okay? So…
+Suppose you come to this fifth sentence.
+And you wanted to have a knowledge of the first sentence also.
+So usually, this kind of models doesn't have that memory to remember what happened on the first sentence, when you come to the fifth sentence. Example, okay? It may be fifth sentence, it may be hundredth sentence, it may be thousandth sentence.
+We don't know. But in the past, whatever things happened, it doesn't have that memory to actually preserve those things. So, that was one of the problem of memory.
+Input size also, this kind of models wanted same input size. Now you can imagine you have text.
+So, always, can you have a sentence of equal length? No. In some sentences, you might have 4 words. In some sentences, you might have 10 words.
+So… Your input is different.
+input size is different. So, if you give this kind of data to traditional neural network or any kind of model, it will not be able to understand, okay? So, it will be not able to understand. So, fixed input size is something which is a problem with this kind of model, which is, again.
+Like, in sequential data, it is not possible to carry, right?
+It's not possible. That is one problem. Then, No parameter sharing was there.
+No parameter sharing means the weights that are present in this neural networks, like the artificial neural networks, every time the weights used to be different.
+So.
+There was no.
+Weight sharing. Weight sharing means same weight, it is not reusing again and again.
+So whenever it is not using again and again, weight sharing is not there. Obviously, so much of data you are processing, like, text data is very long. So much of data you are processing, and if
+Different, different weights are coming for this kind of data. It will be a pool of weights. And computationally, it will be very, very expensive.
+Okay? So these were the problems why we did not go for a normal neural network, or Any kind of other network for sequence modeling, for understanding sequential data.
+Okay? So, what is the fix?
+Fix is, first of all, we need a model which can handle dynamic input size. Like, if I have different, size of the input, it should be able to handle that.
+Then it should also have a memory to remember what we have done in the past.
+Since there might be connection between the first sentence and the fifth sentence, which I was referring here.
+Right?
+So, there might be certain connections. So, if I lose that connection, then it is not going to be of help.
+And we also want a model which can have weight sharing, because to process that many number of weights of that many number of words, or that many number of, you know, section of words or phrases, it will be huge.
+So computationally it will be very, very expensive, right? So RNNs actually Are taking up.
+the drawbacks of the previous models. So, it can handle dynamic input size, it also has memory, and it also has the weight sharing.
+Thing, okay, so every time whenever it is going, the neural network is working in the front ways.
+In the hidden layer, suppose this is the hidden layer, this is your input, this is your output. In the hidden layer, again, it used to loop back the weights, and again, it used to take up the
+Next, seek next word in the sequence.
+Okay? Next word in the sequence it used to take. First word has gone, it has done, it has gone to the output. Again.
+next word will go, and then the weights will be shared here. So that is why, because of this loop which is going on inside the hidden layer, this is called as recurrent neural network. Recurrent means something which is repeatedly occurring.
+Right? That is why the name is Recurrent Neural Network. So remember, why specifically we have selected neural, recurrent neural network instead of ANNs?
+We could have gone with artificial neural network also with the text data. But why we have gone with recurrent neural network? Why again a new architecture has come up because of this reasons. So reason understanding is very, very important.
+Okay? So because of this kind of architectural change in RNNs, it also has a memory.
+It can remember what it has done in the past, right? So, those problems of understanding the sequence data was solved.
+So as I said, weight sharing.
+Is happening, so 1 weight matrix can be reused at every step, which will let the RNNs handle the sequence of any length.
+So, dynamic input size, that means any input size it can handle.
+Also, again and again, weights are being reused. So that means one time you calculate the weight, you can reuse it again and again.
+Okay?
+So we have certain kinds of RNNs which are there. We have SEEK to VEC, we have VEC to SEEK, we have SEEK to SEEK.
+Vect… seek to Vec is what? If you have a complete sequence, okay, you want to encode a complete sequence of text into a vector format.
+Vector means, suppose if you have a sentence, and you wanted to convert those words of the sentence into numerical values.
+So suppose these are all the words and certain numerical values you have put here. So this is called as the vector.
+Okay, so if you are converting a text into a vector.
+That is, seek to wake.
+Type of model.
+So, usually for sentiment classification, for topic classification, we use this.
+Then comes the vec2seq. Vector seek means if you want to create a sequence from the vector, the other way around.
+Backside.
+If already you have the vector and you wanted to convert, decode that vector back into the words.
+That is there to seek.
+Okay? So usually for text generation, for image captioning, we use this. Because whenever you are having certain mathematical formats, that you are using it, and then you are converting that into text.
+So usually for text generation models, which models will be like nowadays you see the.
+generative AI models, right? So those are… there are certain models which are text generation models, like, for example, GPT.
+GPT is basically used for text generation, right? So for those kind of models, it's very important that we convert the vectors into a sequence format again.
+Decode it back to sequence again.
+Okay? And image captioning means, suppose you have image, and on top of that, you wanted to do certain captioning of the image. That means tell the details of the image. Nowadays, we use that image.
+Usually, before, we used to have only text, right? Nowadays, for image captioning, for having certain description for the images also, we use this kind of model.
+And seek to seek is the third type.
+Which is mapping one sequence to another sequence. Usually for translation, we use this. For summarization, we use this. Translation means, suppose you're converting one language to another. Suppose you're converting German to
+English.
+So here also you have a text, here also you have a text.
+So you are converting text to text. That means sequence to sequence.
+Okay? For summarization also, because summarization, your input also will be text, and whatever summarized results you're getting, that also will be text.
+So for summarization also, we use this seek-to-seek models.
+Okay, so if you see the evolution of the model that has happened for the text.
+What has come up initially it was the normal.
+Multilayer perceptron. Multilayer perceptron is basically the ANNs.
+Okay? The normal ANNs. Then it has got evolved to RNNs.
+There are certain architectural changes which we discussed that it can handle the dynamic input, it can have memory, it will have weight sharing. All of these architectural changes happened on top of the ANNs and RNNs came up.
+Then RNNs also had certain issues. Because of that, we also got something called as LSTMs, which we will be discussing.
+LSTMs and another model was GRU.
+Okay.
+LSTMs and GRUs came up, and then there were certain problems with LSTM and GRU, then transformers came up. And we all know that transformer is the mother for
+generative AI models.
+Whatever generative AI models you see today, specifically GPT.
+Okay, you are using it, right, so, it's a kind of transformer model, so, we will see over this.
+like, whenever we are having the sessions, or whenever you are doing the modules, you will see the evolution that I have given there, which is basically to understand how, from this normal neural network, we have actually landed up to
+Generative AI and Agentic AI. Nowadays, those are the buzzwords, right? People are running after generative AI, people are running after Agentic AI. There are certain job descriptions about that.
+But then how it is coming out?
+That background is important, since you need to have a strong foundation, right? Even though you're going for a Agentic AI thing, or maybe a Generative AI thing, but how did it come up?
+This evolution is important.
+There were certain issues with certain architectures. Because of that, to mitigate those issues, next architecture have came up.
+Okay, so this was the introduction to RNNs which you will see in the topic 1 of this week, okay.
+Then…
+going deeper into the RNN architecture. So you will understand how RNN architecture is working. That will be your topic 2, okay, video 2, that you will go through in your, module.
+So RNN architecture, as I told you, that it is purposely built for sequences like language or speech or time series for this kind of data. This model was this type of architecture was made where, you know, past inputs are also very important.
+Because if in text, if in time series you lose the past information, then it is not done.
+Okay.
+Then, in hidden state, there is a memory. So, a vector summarizing everything the network has seen so far.
+If you see the architecture of RNNs, when you go through the architecture of RNN, you will see that there is a memory component, which is actually summarizing everything the memory… the network is actually
+Scene.
+Okay? There are update rules also, so it's a normal update rule. You have the input, and then you have the input of the previous state, and you will have the current input. Totally, you will multiply the weight, and you will get the next.
+step output.
+So, how it works?
+Suppose you have this, you have the current input.
+Current input means the current word.
+You have the previous state output.
+Previous state means previous, one, before whatever, on whatever word you have run the RNN, right? That output also will be there, current input will be there, then you do calculation here, and then
+You get the output of this thing again, this output will go to the next step.
+Again, the current input will come here.
+So.
+Again, calculation happens, you are getting the output. Again, in this step, the current input is there, and this output will go to the next step. So, like this, this is the power of sequence.
+If the previous output was not there in the with the current input in this stage, what happened in the past? How will it understand?
+Only if you give the current input, how will it understand how it is connected to the previous thing? So, because the previous output is coming up also here, and the current input is also coming up here, that is why it is able to draw a
+Relationship between the past and the present.
+That is why the memory component is very, very important here, okay? So that every time we are doing the… we are actually taking up the, refreshing the output, we need the previous output and the current input. So this is the previous output.
+And this part is the current input.
+So, you can see, you will get the
+output of this particular state. So, fresh input with the previous context. Previous output will have the context, so it will be taking up. And here, it will carry everything word by word, frame by frame.
+Okay, because it is capturing also the meaning side by side.
+So this is how the architecture of RNNs work.
+Okay?
+The architecture of RNN work like this.
+So…
+Unrolling is something which is, like, weight sharing and then unrolling. Unrolling is something which is, like, the recurrent loop becomes a chain of identical layers. So, here, as I was telling you.
+Here.
+Here, this is the recurrent loop, right?
+So, when this recurrent loop is working here, when the weight sharing is happening, so, what is happening? You are taking the…
+chain of identical layers. That means, obviously, same kind of layers you are trying to do the iteration, okay? So, why does it matter? Because it will clarify the information flow. If you change the weights, again, the flow will get different.
+So, in order to keep the flow of the information going, and in order to do the propagation over time, that means what?
+At each and every time step, it is doing the back propagation. That means going back and updating the weights. Again, going forward, again going back and updating the weights, like how neural network does, right? But here, back propagation happens over time.
+through time. That means, suppose in time T, I have done this. In time T plus 1, I have done this. In time T plus 2, I have done this. In time T plus 3, I have done this. So, like that, time-wise, it is doing the backpropagation. Why? Because word by word, it is passing.
+This is one word, this is second word, this is third word, and this is fourth word.
+Since it is passing on word by word, that is why.
+This kind of unrolling is required.
+Okay, so there will be 3 weight matrices that will be there, 1 will be state-to-state memory.
+One will be U, that is input to state, and one will be state to output.
+3 kind of.
+Weight matrices will be present, ok so, every time whenever you are using this W, U and V at each and every step it will be able to handle any kind of sequence length.
+Because you are keeping the weight matrices same. One time you are calculating, and every time you are keeping the weight matrices same, and every time, for every step, you are applying that weight matrix only.
+So, whether you give any kind of input doesn't matter.
+It can be of length 4, it can be of length 100, it can be of length 2000.
+Doesn't matter. So, because of this kind of, flexibilities with RNNs, we go with RNNs for textual data.
+This you will learn in Topic 2. It will be in much more detail, so you will get a background context, and also you will be able to understand how, actually, the weight sharing and other mechanisms work. Okay?
+In topic 3, you will learn about the training of the RNNs with back propagation through time.
+how back propagation is happening in RNNs, because by that back propagation only, training process is happening, right? So, it will unfold the loop into over T steps.
+And every time it will be applying the normal back propagation. So all the time the shared weights will be there at every time point. The same thing whatever I discussed here.
+Okay?
+Then, there will be a chain rule through time, so the current state will depend on the previous state also.
+And memory will grow linearly.
+And all the intermediate steps will be stored.
+So, memory component is one of the biggest things which is there in RNNs. Okay? So, how back propagation happened at each and every time point, how back propagation is happening, that you will learn here.
+Then, there are also certain problems with the gradients. Like, whenever you're updating the weights, right, there are certain issues with the gradients, and how you will do the fixes. That you will learn here. So, there is a problem of exploding gradients, that means sometimes the gradient might explode like this.
+Jumping from one place to another place to another place to another place.
+Right, that could be a problem. Again, too much jumping means your system will become instable.
+Sometimes there can be vanishing gradients. Vanishing gradient means the gradient value will become so small that updation will stop.
+Okay? So, what you need to do in this kind of scenarios, for vanishing gradients, usually we go for gradient clipping. Gradient clipping means we try to hold a single value of gradient for a particular step.
+We do not allow the gradient to come down.
+That is called as gradient clipping. So you will understand in detail about gradient clipping. See, why these components are very, very important in the architecture? Because that will give you the granularity information of how actually this architecture is working.
+I'm telling you, if you understand this architecture really well, you will not have any problem understanding generative AI and Agentic AI.
+It's 200% going to be very, very good for you when you understand deep learning really well.
+Because that's the era now.
+If you go to industry, if you go to… whether you are teaching, whether you are going to industry, whether you are doing research, anything, any place, the hot topic is generative AI and Agentic AI, right? So, there might be certain things which might come after that also, but…
+The base of deep learning is very important, and especially RNNs, because RNNs are working with the text, and whatever models we are seeing, usually the input is text, right? So, if you think that
+gradient, exploding gradient, vanishing gradients doesn't come in generative AI models, you are wrong. It will come.
+So the concept understanding and each and every bit is very important, okay? So whenever you go through the module that I have created, it might be a video, but the content that I have created is made in such a way so that you understand each and every bit.
+If anybody is asking you any question from anywhere, you should be able to answer.
+So, that… that is the goal, okay?
+Then, truncate it, this BPTT, that is, your back propagation through time, okay? If you want to truncate at some place, you can do that up to some steps. If you want to run, and then you want to cut it down, you can do that. If you want to do some trade-off.
+You can do that. So, gradient instabilities and how you are fixing this gradient instabilities is very important, because sometimes you might go with, you know, creating chatbots. Sometimes you might go with sentiment analysis. Sometimes
+You might go with translation.
+At that point of time, if you're using this model and gradient instability is coming, how you are going to solve it? These are the problems, and how you're going to solve it.
+Right? So solving part also is very important. Sometimes problem may not be there, but still you should know the solution, how you are going to have a proper, working model, right?
+So that talks about the instabilities and the fixes.
+Topic 4, you will come to LSTMs.
+Okay? So, if you see the… This flow.
+MLP has gone to RNNs, and RNNs were having certain issues, then people came to LSTMs and GRUs. Why people came to LSTMs and GRUs? What was the problem with RNNs?
+If you see that, you will get that in topic 4.
+So, first of all, the problem you will understand.
+Standard RNNs will freeze all the context into one hidden vector, so sometimes the previous-to-previous information, it will try to forget.
+That means what? Suppose I am here.
+At step number 200.
+I can remember suppose the, 150th step.
+But I cannot remember the 0th step.
+So RNNs have a problem of remembering only till a particular extent, not so much.
+into the past.
+So.
+As it goes on the back side, to remember so many steps back, the things will fade out.
+This is the problem with RNNs.
+It has a memory, but too much long-term memory, it doesn't have.
+It has a short-term memory.
+Okay, it has a short-term memory, long-term memory is not there because of this problem of RNL.
+We have came out with LSTM, that is another, you can say, a brother of RNN.
+Little bit changes on the architecture, and then LSTM has came out. So LSTM is actually solving this problem of long-term memory. So the name itself is that long short-term memory, the full form of LSTM.
+Okay? So, it has a dedicated memory lane across all the time steps protected by gates.
+So, when you see the architecture of LSTM, you will see gates are there. This is gate 1, this is gate 2, this is gate 3.
+We have input gate, we have forget gate, and we have output gate. You will see three types of gates that are present.
+Okay? So, even if you have any information, it can survive hundreds of time steps without being
+Able to have any fade out.
+Okay, because of this gate system, LSTM is having the short-term memory as well as the long-term memory both.
+So LSTM will see which information to keep and which information to forget. ForgetGate will do that.
+Input gate, obviously, to understand which input. Output means what information to retain and what information to put it in the memory back.
+That will be done by the output kit. So.
+These three gate combinations have made LSTM such powerful architecture that this memory problem is not at all an issue. So, in topic 4, you will learn that in detail.
+Okay.
+We will learn about the LSTM gates. I told you about forget gate, input gate, and output gate, right? Forget gate will tell you which part of the old information to erase and which to keep.
+Input gate will tell you, it will give you the current value and it will tell what to
+Pass on as the output.
+An output gate will have certain.
+activation functions, so this tanh and this sigmoid, these are activation functions. This will be actually inside the gates, and it will be actually filtering out to produce the hidden state for the
+Particular model, okay, and here also updates will happen like gradients will be coming out and repeatedly it will be updating.
+So usually for time series prediction, for speech recognition, LSTMs are used. So you will see the, use cases also of LSTM, why it is used, some use cases you will see, and why it is used, how it is used.
+Okay, so topic 4 talks about the LSTMs, why RNNs didn't work for certain things, why people came up with LSTMs, and what LSTM has provided, what are the different architectural changes in LSTM, and why people have preferred LSTM.
+Over RNNs, and what are the use cases?
+Okay?
+Then GRUs will come. This is also like LSTM but here.
+In LSTM, you have 3 gates. In GRUs, you will have 2 gates. But.
+Architecturally, if you see the working wise, it both are same. GRUs are little bit simplified and LSTMs are little bit complicated. That is the only thing.
+GRUs also came up because of the RNN problems.
+So in GRUs, you… if you see the paper of GRU,
+where GRUs has been mentioned, you see that only two gates are present. It is little bit simpler than LSTM.
+We have the update gate and we have the reset gate.
+So you will learn why update gate is there, how much past information to carry forward, reset gate, how much past context to use for the new information, why, what is candidate state.
+the current input that is there. So, with the help of these two gates, that is, update gate and reset gate, what GRU is able to do?
+Working of GRU and LSTM both are same. Only thing is, GRU is simple, LSTM is complex.
+Okay?
+Then you will learn about the bidirectional RNNs and bidirectional GRUs. Bidirectional means both side.
+it will work. It will go from left to right also, and there will be one RNN from left to right also, analyzing from left to right, and one RNN
+Which will be analyzing from right to left, both sides.
+This is called as bidirectional. If you are using RNN, it will be bidirectional RNN. If you are using GRUs, it will be bidirectional GRUs. If you use LSTM, it will be bidirectional LSTM.
+So, all the three models you can use in both the directions.
+Why bi-directional, thing we have taken here? Because sometimes we require to, you know, capture certain information, so front also we run one LSTM, and backside also, from backside also, we run one LSTM.
+What are the limitations? Why bidirectional GRU has come up? In what use case we are using it? Generally for machine translation, that means converting one language to another.
+We use this bidirectional LSTM or bidirectional GRUs.
+For speech recognition, we use it. So wherever, you know, the context is important.
+from both the angles.
+In that case, we use this bidirectional.
+models. Okay? So in Topic 5, you will learn about GRUs, as well as you will learn about the bidirectional models.
+Topic 6 you will learn about seek to seek.
+Encoder decoder model, okay, so here.
+Converting one sequence to another sequence, usually for
+Conversion of one language to another, for this kind of use cases, we use it.
+So what is the work of encoder and decoder?
+Encoder?
+So RNNs will read the tokens one by one. Its final hidden state is the context vector. So work of encoder is to take the words one by one and convert it into a context vector.
+And what decoder will do? Another RNN will be there, which will initialize from the context vector. It will generate the output tokens till the end token comes up. So, decoding back.
+So, it will take the context vector and decode it back.
+So that, it can generate the Sentence.
+So, encoder is doing the encoding, decoder is doing the decoding.
+Okay? So, one bottleneck which is there in this kind of model is all the meanings that are there, they are squeezed into one fixed size vector.
+Okay? So if I'm trying to squeeze all the thing into one size vector, or one size mathematical representation, that could be a problem. Sometimes. I can squeeze it, but sometimes while squeezing it, I might lose some information.
+That is a problem here.
+Okay, so… Because of that, you will come to something called as attention mechanism.
+What is attention mechanism? So what it does is, see, in the input, whenever we have an input, only a certain part of the inputs are important.
+So, attention mechanism will try to take that important parts, and will try to process these important parts further.
+In layman terms, I am telling you that, okay, in layman term, attention mechanism is that.
+So.
+Dynamic context, whatever context we are getting, we are trying to
+have a particular importance inside the input, and we are trying to take it up. So here, dynamic context can be taken up. We have the alignment scores, we call that as attention scores. Based on these scores, we'll understand which part of the input is important.
+Okay, and remember attention mechanism is one of the stepping stone to transformer architecture.
+Which will come next, right? But attention mechanism is the heart of transformer architecture. Attention mechanism means instead of taking all the inputs, you just take whatever input is important.
+Okay? You will learn in detail about attention mechanism, how attention mechanism works, how can it understand which part is important. I am giving the input how it is able to understand.
+through the attention scores.
+How the attention scores are calculated, there is a mathematical background behind that.
+If you understand that, you understand attention scores. When attention scores are there, based on the scoring, it will try to see, okay, the attention score for this area, for this particular input is more, so this is important.
+For this particular part is, attention score is less, so it is unimportant. Like that, it used to take up.
+Okay? So, problem with
+RNNs, LSTM, and GRUs have solved. Problem with LSTM GRUs are that, that it will take word by word. It cannot do a parallel processing. And LSTMs are very, very complex models.
+So if you're… if you're running those kind of complex model, one by one word you're sending, just think if you have collection of documents. It is going to take a lot of time.
+Because of that, this, architecture of transformers have come up. And one of the stepping stones for… before we move to transformer is attention mechanism. So here, you will…
+See the seek-to-seek encoder-decoder part, and you will see the attention mechanism in topic 6.
+And finally, final topic, you will learn about the RNN applications, where RNNs are used, okay? We know that RNNs have memory, RNNs have shared parameters, all of those things we know.
+But usually for sentiment analysis, for text generation, we use it.
+Right? Sentiment analysis, if you see that, type of RNNs that we use, that is many to one.
+Many sentiments can be there, and you will get… sorry, many sentences can be there, and you will get one sentiment.
+Text generation, many to many, many text will be converted to many text.
+Okay? So, for this kind of applications, we use RNNs. So, you will learn about the applications of RNNs. Time series forecasting for forecasting stock prices, for forecasting power loads, for climate trend changes, for all of these things, we use RNNs.
+We know that RNNs had a problem. Vanilla RNNs will have a problem of long-term memory, so in that case, if you want to use, you can go with LSTMs and GRUs. Whatever applications you have implemented with RNNs, you can go ahead with LSTMs and GRUs as well.
+Okay?
+So.
+These are all the topics that you will be learning inside this module 4.
+Total, there are 7 topics. I've given you a gist about all the topics that you are going to learn in RNNs. Always remember that whenever you are learning a particular architecture, here.
+these architectures are equally important because that is shaping up the foundation for you for today, right? And it has lots of applications. So whenever you are learning any architecture, any deep learning architecture.
+Understand the things why each and every bits and pieces are important.
+You will get a very fair idea when you go through the module, okay? So it is comprehensively made in such a way so that even if a layman is sitting there and just trying to learn that, they should be able to learn it. And instead of that also.
+If you are facing any issues, you can come back to me, that is there. Secondly, you also explore by your own, as well.
+Okay? I have given you one small implementation of RNNs, for the coding, right? For your experiential learning. So, we'll discuss about that also, but then.
+It's very important that you go ahead and you explore by your own.
+Since these architectures are very, very important. And understanding the foundation of these architectures are also very important, okay?
+So this is all about the topics that you are going to see in Module 4. It's already enabled for you, and then you will be able to go through each and every thing, whatever I discussed here, you'll be able to go through them in more detail. Okay?
+So, before I go to the experiential learning part, do you have any questions here? You can come up with your questions in the chat.
+Okay.
+If you have any questions, you can come up with your questions in the chat.
+Yes. So, BPTT truncated means what? Truncated means you're cutting something in between. And whenever this back propagation is happening, sometimes you say that, okay, I don't want to continue back propagation fully, I want to stop the back propagation after 200 steps.
+Example, that is called as truncated BPTT.
+That means you are doing back propagation, but you are truncating it, you are cutting it out in between.
+After certain steps.
+Is it clear?
+Okay.
+Any other questions?
+Yes, why do we need it? Reason behind that is, see, sometimes what happens in certain cases.
+Right? If you are going on doing back propagation for a very long time, there is a very high chance that your model will get overfitted.
+It will try to read everything, each and everything, whatever is present in the training data.
+So in order to stop the overfitting, that is one of the reasons why we go for truncated backpropagation.
+And the second thing, which is there is sometimes,
+See, the memory component of RNNs are something which is, like, you have seen the problem, right? If you're doing too many steps. If we are going to the 200 steps, it might forget what it has done in the first step.
+So it does not have a long-term memory.
+So, because of that type of problems, we actually truncate it in between, so that that long-term memory problem doesn't come.
+So because of these two reasons, we do this BPTT truncated.
+Okay.
+Hmm.
+In some case, for GRU, we don't require that much, because GRU is already a simpler, architecture. For LSTM, we require this.
+RNNs, we have this, but for LSTM, the memory part is not an issue, that is okay, but overfitting part is an issue.
+So, because LSTM is a very complex architecture, it has a very high chance of doing overfitting. So, during the overfitting time also, we can use the BPTT truncated.
+Okay.
+Usually we use it for RNNs, but.
+In LSTMs, wherever the overfitting problem comes, there also, we might have to stop it somewhere. Otherwise, if we don't stop it somewhere, it will go on growing, growing, and at one point of time, it will learn so much that overfitting will happen.
+Okay.
+Fine then. Any other questions? Or else we'll just go on discussing the… Practical Session.
+So, I have, implemented one small practical with, you know, a sample data set. It's a textual data set, and this gives you a kind of idea about how do we implement this kind of models, okay? If you see here.
+So, we… the tasks that we have completed here is basically, like, we have loaded the dataset, so I have used here one corpus… text corpus dataset, that is Sixpear dataset.
+So it has a vocabulary and then, you know, we want to load this and pre-process the data set.
+how we can prepare the training sequences, how we can implement a character-level LSTM.
+Okay, using PyTorch. How can we train the model and with various kind of losses? How can we generate new text, if at all?
+We want to test the model, right? So it's a small implementation of the LSTM.
+So, this one is basically, I'm understanding, like, what is the, format of my, or, version of my PyTorch. Always try to check this at each and every session. Reason behind that is, if your PyTorch is not enabled properly.
+Then you might face a problem whenever you are going for the practicals, right? Because these practicals are purely based on PyTorch. So always try to check the version.
+Then, I have taken a sample… a piece of the dataset, where we have certain text, and then it is trying to talk something about it. So here, you can see I have loaded the dataset, so you can have your dataset in the same directory from where you're running this code. I have my dataset in the S3 bucket, so this is the link of the S3 bucket, which is there.
+You can load the link like that, you can have your dataset there.
+And then you can put up the link here. And then here, you are loading the dataset, right? You are understanding the column, understanding the data types. So basically, if the dataset is not present, it will go to the fallback.
+That means this sample data set which I have kept just for the fallback as a fallback mechanism. Okay, so just run that you will be loading the data set. So you can see here.
+I've loaded the dataset from this link. This many characters are there and this is the preview of the dataset. It's a text dataset.
+Okay?
+After that, what you're going to do, you are going to have a… you're going to create the vocabulary.
+And you're going to encode the text.
+Right? So, if you are going for a character level model, so the vocabulary is means the unique characters that is present, so that each and every character can be mapped to an integer. So, you are getting all the
+unique set of characters. You are taking the length of those characters as your vocabulary size, then you are taking character to index, and index to character. You are just
+Doing encoding and decoding, so that is what you're, sorry, that is what you're calling here, the encoding and decoding part, and you are converting that into a tensor format because
+whenever we are using Pytorch, we have to convert that into a tensor format. So you can see vocabulary size is 77.
+We have the data shape after encoding is this much, and some of the encoded values are this much.
+Okay?
+So just we have loaded and tried to take up the vocabulary size.
+Now, you will create the input or target sequences, right?
+So, for that, you will have… suppose I want this many characters in the training sample, per training sample. In one training sample, I want to have, suppose, 100 characters. That is my sequence length. So, I can change my sequence length. If you… if you want to have some other sequence length, you can go ahead with that.
+So, you are having a class, that is character dataset class, you are taking the sequence length, you are returning, the length, like, how much data is there, and then, minus the sequence length, and then you are having your X and Y, right?
+So, you're calling this class, whatever you have defined, you have put your data and your sequence length. So that means this data that you have, you wanted to divide it into
+This particular sequence length, which is inside this particular, this thing.
+the character dataset class. After that, you use a data loader. So, data loader is very important because you are using Torch here, PyTorch here, right? So, whenever you want to load any data to PyTorch, you will have to use data loader.
+Wherein, you can mention your dataset, and then how much batch size is there, whether you want to drop any last thing, you can drop it out. And then, you can just see how many training samples are there, so total training samples are this.
+batches or epochs, and what is the input batch size, what is the target batch size, you are seeing the things here. Right?
+After that, you are designing your LSTM, so your character level LSTM model.
+So here, why I have given you directly, you know, the background of the LSTM model here, you can directly call LSTM from, some other place also, and you can use it here. But I've given you the background so that you understand how to create an LSTM.
+Okay? So, you will have the vocabulary size, how much embedding dimension you want to have. Embedding means your numerical values, dimension, how much you want to have, how much dimension you want to have for hidden layer, how many layers you want to have. You're telling two layers I want to have.
+So, what is the dropout? Dropout means what? Suppose 0.2 means 20% of the neurons, I want to switch it off.
+This dropout is also used to actually handle the,
+This thing, the overfitting problem because every time if the network is same, there is a problem that it can learn more.
+Right? So sometimes some of the, like, neurons of the network, we try to switch it off. It's just, like, on and off.
+So that overfitting doesn't happen, okay? So you have your embedding.
+layer, you are calling your LSTM, and then you are mentioning all of these layers, and dropout, everything, and finally, you will have a linear layer as well, which is, obviously, your final layer, and this is your forward propagation.
+function, which is always there. So, you will mention your batch size, your sequence length, and your embedding matrix, and then here, you will mention your batch, sequence, and hidden dimension, and finally, the value.
+The logit value and your hidden information you will get here.
+Okay? So, this character LSTM, you can call, you can pass your vocabulary size, which you have done… which you have taken before, and
+You can run this character based LSTM. You can view the LSTM. How does it look like? These are all the layers of the LSTM that is there and this many trainable parameters are there. Trainable parameter means this many weights will get updated. That is why this is called as trainable parameters. Trainable means always it will get updated. Non trainable means it will be fixed.
+Okay? So you can see number of parameters, these are trainable parameters. So you have defined your model, you have run your model, and you have seen how many… how the model looks like.
+Okay? Now…
+After you have defined your model, after you have done everything, now it's time to train the model.
+Step by step. So here, we will be using cross-entropy loss. So we are using that as the loss function. Optimizer, we are using the Adam optimizer.
+Epochs, we have run for 3 epochs, okay? Number of batch, how many batches, we have taken 200. These numbers, again, are hyperparameters, you can change that.
+Okay? So for, again, the same thing.
+whatever we do for all the models. For each and every epoch, we are taking all the, we are loading all the things. If maximum batches
+Is reached, you can break it, or else you can directly go and take up the inputs, you can apply the optimizer, you can get the logits, you can apply the loss function, backward propagation, and this is the… this is the portion which will be same for all the models every time.
+Right? After that, you can see
+You have run for each and every epoch, for each and every batch size, okay? So for first epoch, batch 0, this is the loss.
+for every 50 batch size you have run. For batch… for epoch 1, batch size… batch 50, this is the loss. So you can see, when you are moving around in that same epoch, batch by batch.
+Like, every 50 batches you are running, every 50 sample as a batch you are running, you can see that the loss value is decreasing.
+That is, epoch 1 is done with this much average loss, then epoch 2, then epoch 3.
+So, by the time you reach epoch 3, you see the loss has become 1.24. In epoch 1, it was 1.98. So, as you increase the number of epochs, it will try to reduce the loss.
+No, applying dropout will not affect any loss in the long-term memory, no.
+Dropout is actually helping out. See, what happens in Dropout is, basically.
+A small portion of your network you are trying to switch off and on.
+It's not something that you are removing that from the network. You are not removing that. If you remove that, then there will be a loss in memory.
+Okay? Then that means there will be a loss somewhere, you're losing the information. But in dropout, you're not losing the information. You're just switching off and on. Suppose in first, step, you're keeping two neurons on. In second step, that two neurons, you have kept it switched off.
+Again, in third step, you have kept it switched on, like that. It's on and off switch, kind of. But we are not removing anything.
+Okay?
+Okay, so after you have done the epoch, so your, the loss value has come down.
+Okay? So, what you can do is, you can run more number of epochs. Obviously, if you have more time, you can run more number of epochs, and you see that how much loss you can reduce. In our case, we have reduced from 1.98, almost 2, to 1.24, which is a
+Huge reduction, right? That means the model is actually trying to work really well. That means loss reduction is happening means the model is trying to work well.
+Then, after you have trained the model, now you can use it for generating new.
+Any kind of new.
+thing, right? So, you can, call your model, you can use the encodings, I mean, whatever, inputs you're giving, right? And then, you can convert it into tensor.
+and have the logits, have the output, and this is the last character. So what you can run is your logits and the hidden values that you're getting, you're converting those logits into the probabilities.
+And that you can convert it into torch and finally you will get the output here.
+So, it's just like how you are implementing to the, implementing the model on your new data, whatever new data you are using, and then you are trying to, I mean, on the new set of inputs, and how you have tried to actually generate
+the things, right? So if you see here, I am using this generate function on, I am calling my model, and again, I am able to generate my text through this model. After I have trained the model.
+So if I'm using this for a particular temperature.
+Temperature is basically used for finding out the diversity.
+If the temperature value is less, like 0 or 0.1 or like that, then your answers will be more diverse. If it is nearby to 1, sorry.
+If it is nearby to 1, it will be more creative. If it is, less, then it will be more conservative. Conservative means what? It will be almost giving you the same answers. There won't be any variety in your answers. So, whatever you could see in the Shakespeare dataset, if you go and run that dataset.
+After we have, taken a character level LSTM, you can see that, again, it has tried to
+Bring back the text that you are trying to find it, ok so, usually in this scenario for both the temperatures we have seen, like
+There will be certain changes in the output, but ideally, the essence of the output will be same.
+Okay, so it's a small implementation of a LSTM model and at final you can save up your model. So name is
+the character LSTM.pt, so you can save up your model, your vocabulary size, your model, state, everything. You can just.
+save it. If you want to reload the model, this is the code for reloading the model again. If you want to use… if you want to load it once again, so torch.load.
+character LSTM.pt, and then you can call the model, and you can load the model and get the answer. So this, I've commented it out, because if you want to reload it back and use it, you can use it.
+So always, whenever you see that the model is doing well, you can go and you can save the model, and later on, you can reload and use it. One thing which I haven't included here is the evaluation part, which is the exercise for you, that you have to include the evaluation matrix here.
+How the model has performed.
+Here, we have trained the model, we have taken the input, we have trained the model, we have generated the output, we have tried to use it in one of the test cases, but we haven't done the evaluation.
+So before this saving of the model, you will have to include your evaluation also. You will have to evaluate the model, how the model has performed.
+If it is good performance, then you go and save it, and you can use it for the later usages. So…
+The action from your side is to add up the evaluation part.
+Okay? I have, shown this, I think, the evaluation in first week or second week, I don't remember, but you can go back and you can check it up, and you can also, browse it yourself, where, how the evaluation of a LSTM model happens.
+For this kind of a use case. That's a… that is, knowingly I haven't kept it here, so that you go and explore that.
+Because evaluation is something which is very important before you save the model.
+Okay? So, a simpler version of, how to create the model from the scratch, how to use it on a particular dataset. Now, instead of this Shakespeare dataset, you could have some other dataset also. So, how you can take that dataset, and how
+You can basically implement this kind of models, and you can test it on some of the
+Test samples of your dataset.
+Right? So, it's a simple implementation which has been shown. The detailed explanation of this experiential learning part will be there whenever you go through that in your module, okay? Each and every step I have explained, like how I've explained you right now. There, more detailed explanation is given.
+And, each and everything has been explained there.
+Okay? So the dataset and this notebook is kept for your reference. You can go back and you can download the dataset, you can download the notebook, and you can have a trial. And apart from whatever I have shown here, I encourage you to also do some additional practice, so that you are confident enough.
+Here, we have seen example of one thing, one of the models. Other models, you can have a look through, where same type of example you use, and apply a RNN or a GRU.
+And try to see… try to compare the results from all the three models.
+Okay.
+So that's all about this.
+particular thing, like, about Module 4.
+Any questions? I'm just stopping my share.
+I mean, you can go through the module, if you still have certain questions, then you can come back to me, and maybe, like, we'll try to solve it out.
+And also, while you are doing the practice, always don't keep yourself restricted to whatever examples has been there here. Try to also practice some additional examples as well, okay? It will give you more clarity.
+And you will understand the topic more.
+I think we are over time.
+And, so if there are no questions, we will close this session, since we have the makeup session after 5 minutes.
+It's almost 8.54 now, so 5 minutes. Maybe we'll start the session by 9.5.
+We'll just take a 10 minutes break and come back in the other link. So, there is a makeup class link, which will be there.
+We can come up to that link, and we can start by 9-5.
+Okay.
+Okay, then. I'll meet you all in the other session. Bye.

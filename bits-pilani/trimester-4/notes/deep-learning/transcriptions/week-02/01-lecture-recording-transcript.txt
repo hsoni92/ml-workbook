@@ -1,0 +1,475 @@
+Yeah, I've started.
+Okay.
+So, that is what we are going to discuss. Let me share my screen.
+So as the topic that we are going to discuss is convolutional neural networks.
+So we will be seeing like what are the overall concepts that you are going to cover during this particular module. So convolutional neural networks are basically there are 7 lessons.
+In that, and you will, go…
+go through each and every, bits and pieces of CNNs through that module, right? So, initially, whenever you start the module, you'll see that why actually people came up with this, convolutional neural network, right? Why people have not gone with a simple neural network.
+So, for images, this convolutional neural network is used. CNNs, okay?
+So, first.
+starting of the module says that why, you know, the fully connected networks or, like, the simple neural networks could not deal with the images, right? So, that is what
+Is the context first, because we need to understand that how actually, these networks have failed with the images.
+So, first problem is that See, images always has pixels. Pixel values, right? So, suppose you have an image.
+You will have multiple pixels in the image, right?
+Whatever, you'll have multiple pixels inside the image, so here what happens is
+Whenever you are feeding a particular image to this kind of network.
+So, pixel-wise, it is being read.
+Let's move on to the laptop, Nitras.
+Can you please mute yourself?
+Yeah.
+Thanks.
+So, pixel-wise, it is going to read, right? So, when it is going to read pixel-wise, now there are so many pixels inside the image. So what happens is, for example, if you have the pixel, so…
+without any context, it will just go and read the pixels, okay? So, if you, suppose, have a 256 cross 256 image, okay? That's the size of the image, suppose. 256…
+Cross 256.
+image, okay? So, what will happen?
+If you bring that image.
+And if you feed to a normal neural network, first it will try to flatten it out. Because, obviously, this cannot be read directly by the neural network. The main purpose of neural network is to take it one by one.
+take the input one by one. So when it is trying to flatten the image, the
+Flattening part will actually destroy the topology of the image.
+Okay? Then there will be loss of proximity. So, if there are some adjacent pixels which are there, suppose here one pixel, here one pixel, so every pixel is connected to each other.
+So if I'm taking one pixel one time, another pixel another time, then the connection between two pixels will be lost.
+Right? So, that also could be a problem, whenever you are feeding this kind of images to a normal neural network, okay? And there could be a blind
+kind of, matrix representation. Now, what happens? Because you are taking this and you're applying mathematical functions, so in that case, what happens? The mathematical matrix which is being created, that also will be blind.
+Because it will see raw numbers, and it will not be able to find out what is actually the context.
+If the context itself is not clear, how it is going to interpret that image, right? So that is the biggest problem when you feed this kind of images data inside a simple neural network.
+Then there could be, you know, parameter explosion. Parameter explosion means
+A particular image can have so many pixels, so just imagine if you are putting so many pixels inside this normal neural network, so many parameters will be created, and there will be an explosion.
+Right? There will be an explosion. There will be a huge, massive weight matrix that will be formed. Weight matrix means whatever weights we are getting after each and every iteration. This will be huge, because for every pixel, you will get the weights. So just imagine.
+a single image will have how many pixels? You can't even imagine that many pixels are there, right? If it is a, you know, gray image, then the pixels will be a little bit lighter. If it is a colorful image, then the pixel size will be more, and then, you know, different colors have different pixel values.
+All those things will be there. So, massive Matrix will be coming out.
+That means it will explode.
+Okay? Then there is a severe problem of overfitting. Like, excessive weights, if you put inside this particular model, model will try to learn so much
+About each and every weights.
+So then there is a problem with the… that this kind of model can read any image too much, because at the pixel level, if it is reading, it will be able to read it in a, you know, more granular way.
+So, overfitting problem can come up. So, it can memorize those pixels, it can memorize the noise also inside the pixels.
+So that is another problem.
+Then computational bottlenecks. Imagine if you have a big matrix.
+Big mathematical matrix, how much time will you take to do the computation?
+It's a longer time, right?
+So, when you put this kind of image into these models, so much time is taken, the values are more, parameter explosion is happening, pixels are not read properly, so that is why fully connected networks are not used for images.
+Okay, so then only the birth of CNN have been there.
+So, convolutional neural network. You know about neural network. Now, what is convolutional neural network, and what are the different segments inside this, or what are the different components inside this CNNs?
+Which helped this, model to read image data.
+Okay? So, what are the different things that is different from a normal neural network that makes it capable to read the image data? So, that is what is the introduction of the module that you will see. So, first, we need to understand how is the context coming from, right? Why?
+the existing things are not working and why people have come up with this kind of models.
+So how the convolutional filters work. So there will be a kind of filter which will be there inside this CNNs. So input is there. Suppose this is the input.
+And it will go to hidden layer, so in this hidden layer.
+there will be certain kinds of layers.
+You can say that these are kind of filters.
+Okay?
+This image that you pass from here, it will pass through these filters.
+This filters are called as convolutional filters, okay? So.
+any kind of filter, which is, like, when the image is passing through this, it is a kind of sliding filter through that. Each and every pixel at each and every filter, it will be read out.
+Okay? So…
+suppose this is the image, there is a pixel value, so if you are placing a filter here, it will read first this, then it will read this, then it will read this, like that. In a sliding kind of thing, it will read it. So more systematically, it will read the
+these filters will read the image, okay? So, the compact local receptive field, that is what, it will try to scan the image very systematically.
+So if it is a small 3x3 or 5x5 image, so it will try to have a sliding window, which will actually try to
+go through the pixels, okay? Second thing is the weight sharing.
+So, whatever weight problem we have seen here, right? Like, each and every, pixel will have a different set of weights.
+So, so many weights will be coming here, right? Different values of weights, and it will be massive kind of weight matrix, which will be found. But here.
+The weights are shared.
+So the exact same filter weights are reused across the
+Different coordinates, so every time it will not take.
+Repetitive weights, if somewhere you see that there is repetition, it will try to reuse the same weights that was there before, so that means what, now your matrix value will reduce.
+Which was the problem with the normal neural network, right? Now it will try to reduce.
+So weight problem is down.
+number of parameters is down, so it has tried to solve that. Then.
+spatial hierarchy of vision. What is this? Whenever we have this early layers, right, this first layer, second layer, third layer, the early layers, so it will try to actually read the low-level
+features here itself in the early layers.
+Low-level features means it will try to see the edge of the image, where the corners are there, what colors are there. It will try to read all those basic things first itself.
+Later on, in the later layers, it will be deep.
+That means all other complex things about the image, it will be reading.
+Okay? So, early layers will detect the low-level features, like edges, colors, all that.
+And D players will read the
+High-level features, like how each of the pixels are connected to each other, how it can form, suppose if you have a human image, how it can form the face of the human.
+So many pixels are coming together to form the face of the human. All those complex reading will happen in the later layers, but the early layers will read the basic information of the image.
+So, that way, the workload is also divided.
+Okay, every layer is not trying to read everything.
+First few layers will try to read the basic things. Then deep layers will try to read the complex things. So it is divided. That is also a benefit when CNNs have come up.
+First thing is the sliding filter.
+Weight sharing. Second thing is the…
+understanding of these, features which are there in the early and the later layers. That is also second reason why CNNs are used.
+And third reason is.
+Translation invariance. What is this?
+positional robustness. That means it will try to identify the target features regardless of the shift or the location. Whatever the location of the image is.
+Doesn't matter. It will try to identify what actually the target is for that, okay? So…
+That is why, because it is not dependent on the location, it will try to generalize wherever you keep the image. Suppose if you're keeping the cat face or human face here, and in some image you're keeping it here, doesn't matter.
+It can read this also, it can read this also.
+So.
+Generalization will be done and then positional robustness is there whether the position is changing, location is changing, doesn't matter, it is robust to understand.
+all these scenarios.
+Yes. So, we'll read about it, which CNN filters will be used, like, how it is used, and then, like, what is the working of that. We'll see that.
+Okay?
+So, now we have understood that.
+why we are not using, normal neural network for image data, and what is the benefit of using CNNs for this image data? What are the characteristics that CNNs are bringing so that we can effectively read the image data?
+Okay?
+So there are lot of different other things which are there.
+So, as I told you about the, the weights, right? So, we call that as the filter dot product operation, okay? Because these all are mathematical operations, right? So, you can see here, suppose a K cross K matrix is there, so we will actually try to do the dot product.
+Okay?
+So it's an operation, which we do in the linear algebra, ok so, we'll try to do the dot product.
+then, if at all we wanted to do any input depth coverage we are doing, so there are certain formulas which you will be seeing for different types of color images, that is called as RCB images. Some local activation values will be there. So, all these things you will go through during your
+whenever you're going through your recordings, like, how actually the, you know, weight calculation is done, how the inputs are taken, how activation values are taken, all of those things, the complete dot operation you will go through, okay? And also, you will go through the
+the feature map. Feature map means whenever you are doing all these dot operations.
+All these dot products, how it will be actually coming up in the form of a map.
+This is one dot product done, this is one, this is one, this is one, this is one, this is one. How the… each of the things, like, calculated dot product values are calculated, and how all the things will come together to form a map.
+Because it has to ultimately understand all the, existing pixels.
+and connection between the pixels.
+Okay? How you can apply, multiple filters, okay? How you can do the volume stacking, that means stacking one map on top of another, like this.
+So all of those things you will study here. These are certain characteristics when you are doing this kind of operations, okay?
+Then comes your stride and padding. So now, as I told you that you will be moving this filter, right?
+Suppose we have this filter. So just now, you have asked a question, right, that how can we decide that… what filter to use, okay? Types of filter.
+It's not the issue, because the filter is of the same thing. But here, two things will be there. One thing is, by how much you are sliding the filter.
+And whether.
+You are adding any kind of?
+Cushion.
+Around the image, so that your… whenever your filters are moving, that time, whether it is doing it effectively or not.
+Okay? By how much you are sliding the filter. Suppose I have a filter size of 3.
+So, first 3 pixels I'll take.
+Let me draw here.
+1.
+2… 3… 4… 5… 6…
+7, 8, okay? So, if I have a size of 3, then first 3 I will take.
+One value I'll get. Then, from the second, I will take 2, 3, 4. Again, one value I'll get. Again, 3, 4, 5.
+Again, one value. Again, 4, 5, 6. Again, one value. 5, 6, 7, like that. It will be sliding by 1-1 place. That sliding that you see here, 1-1 space is given. Right? That is called a stride.
+Like, 1 month space is given, or 3-3 space is given, or, you know, whatever. So, when you are moving the filter by ones.
+Then, like, with 1-1 space, that is tried one. When it is more than, like, when you are moving from…
+Multiple pixels, then it will be more than 2, or whatever size you're taking.
+That mechanics is used here, because you cannot take everything at once, right? I cannot tell that this whole line of pixels, I'll take it as once.
+Because then that will distort my understanding.
+Whenever the CNN filters are moving on top of the image, because it is scanning the pixels, so it has to go in a window size.
+Either it could be 1 pixel, 2 pixel, 3 pixel at a time, whatever. That stride mechanics work there.
+And padding means border.
+Border around the images. Now you might be thinking, why do we require a border?
+Sometimes what happens, if your filters are moving around the image, if the borders are not there, sometimes there could be a problem that your image might become smaller. Because out of the three values, you're taking one value. Again, next three values, you're taking one value.
+After reading 3 pixels. Again, after reading 3 pixels, you're getting one value. So, what happens? Your image size can become smaller.
+So that your image size does not become smaller, we give a boundary.
+Around the image, like a cushion.
+That is called as padding.
+Okay? So whether you want to go for, padding, or same padding, or maybe, you know, zero padding, that depends. If there is no padding required, you are happy with the small image, then okay. If it is too complex image, then go with the padding.
+Okay? That means you give a cushion around your images. Whenever your filters are moving, it will also take that cushion into consideration, so that your size of the image doesn't shrink out.
+Okay, so these are certain things.
+Through which your filters are moving.
+Okay? Now…
+When filters are moving within a window of 3 or 2, whatever you have taken, when it is moving, whenever you have added the padding, how the filters are actually calculating the values?
+That is important, right?
+So, this is how the filters are calculating the values. Suppose I have taken 3, Pixels.
+Okay, pixel values, again I've taken next 3 pixel value, again I've taken next 3 pixel value, suppose like this, so suppose I have this.
+This is, suppose, a set of pixels.
+And I have taken suppose.
+This first part. This is my filter.
+Okay?
+It's a 2x2 filter.
+So, suppose here one value is there, here one value is there, here one value, here one value, okay?
+Now, whenever I'm moving the filter, I'll move 2 cross 2 only first here. Then the filter will be here. Then the filter will be here, something like this, right?
+So, when I'm at the first place, when the filter is set here, 2 cross 2 filter.
+Out of these 4 values, whichever is the maximum value that I will take.
+Suppose… Let me just draw it here out of these 4 values.
+one maximum value, whichever is there, I'll take there. Again, when I move next.
+The maximum… out of this 4, whichever is the maximum value, I will take here.
+Again, when I move to the next, out of this 4 value, whichever is maximum value, I'm taking here.
+So, for the first row, I've got 3 values. This maximum value that I'm taking from, you know, from this, all the values which… where the filter is sitting, that is called as max pooling.
+Okay? These are called as max pooling, that means maximum value we are taking over there.
+So, there will be a peak
+feature detection, which will be there, so obviously you're taking out the value, which is a kind of feature, right? There will be noise separation, so it will try to see the, that it will discard any kind of weak things, weak noise which is there, and
+This is kind of a standard default, which is there in different types of CNNs. We will read about this
+LXNet, VGGs, and ResNet, when you go forward, you will read about this CNN types, where this max pooling is the default mechanism.
+Okay, so this CNN algorithms use this max pooling. Max pooling operation is like this.
+So, the maximum value Where the filter is placed, you are getting that maximum value. Average pooling means?
+The average value out of these four.
+Average value means obviously all the values you will do, addition of all the values.
+Suppose these are 4 values divided by 4.
+So whatever value you are getting, that will be your first value. So either you can do an average pooling, or you can do a maximum pooling.
+Okay? Average pooling will help you out to have a smooth kind of a thing, because you're taking out the average value, not the extreme value. It will try to, you know.
+Have the texture retention.
+Because overall, you're trying to take the average, so whatever texture of the image was there, it will try to actually preserve that, okay? The background information and everything, it will try to preserve.
+Then.
+It is also very good for the modern networks.
+Okay, so in the modern networks, sometimes we use this average pooling. In the old type of CNNs like LXNet, VGG, and ResNet.
+We used to have max pooling, but average pooling is something which is used in the modern CNN networks. So, as you have the question that how the filters are working, it depends on… the filters are same, but it depends on what operation you are doing with the filter.
+What… how much stride you are taking, how much padding you are doing, what kind of pooling you are doing, whether it is max pooling or average pooling. Try to apply all of the things first, like…
+It's a kind of… you cannot say that this is the definitive answer. Like, if I do this, then only I'll get a correct answer, no.
+It is decided based on the trial and error.
+Because few… for few images, few kind of, stride might work.
+Max pooling may work, average pooling may not work, but until and unless you apply that on your images, you will not be able to find out. So these are certain ways, or certain parameters, that we should keep in mind when we are applying any kind of, CNN model on our image data.
+Okay.
+Then, if you want to do the downsampling, okay, downsampling means if you want to reduce the number of data.
+or reduce the number of images that you can do. You can do a compression of the height and width of the image.
+You can have the receptive fields, like, if you want to have certain, you know, larger regions of the raw image, you can have that. If you want to, do the mitigation of your overfitting, because, see, sometimes when pixel by pixel it is reading, there is a huge chance that overfitting might come up.
+Right? So, it might be able to learn the pixels so much that if tomorrow I give some new images, it will not be able to recognize. That mitigation also you have to do. Secondly, you will also have to do the pipeline cascading. So, this kind of.
+Notations while I was just converting the, you know, the equations, so it has got into this kind of notations. You can ignore that, but try to understand that why it is actually coming up, so.
+See, there are certain things whenever you are doing with, whenever you are applying CNNs. Whether you are doing compression, whether you are, you know, trying to optimize your parameters.
+So that overfitting doesn't happen, whether you're trying to see larger regions, whether you're trying to, you know, create the pipeline properly, everything matters here.
+So, how each of these things matters in CNN will be something which you will be learning in this topic.
+Probably it will be in lesson 2 or 3.
+You will be learning about this impacts of different criteria over CNNs, okay?
+Then, how flattening will work? So, if you want to have a special, feature map, okay? So, 3D map kind of a thing, 3D map format, or whether you want to do a local feature scanning, that means only scanning the features, like.
+Overall, it not going deep inside it, whether you want to have the preserved features, you will learn about this.
+Then, from this kind of spatial maps, how you can bring up to a 1D linear transformation. Because, see, whenever you have 3D, you are converting that 3D into 1D.
+Okay, so that there is no information loss also, and the dimension also gets converted. See, you are doing the flattening, okay? You are doing the flattening at the last. How it happens? Suppose this is the input.
+These are all the convolutional filters, or layers, whatever you call.
+And after this image comes out of this, it will go to a flattening layer.
+So here, a simple neural network will be there.
+Okay? Whatever output you're getting, it will do the flattening here, and then only it will give the output.
+Because without flattening, how it can tell that, whether a particular image is this image or that image, it cannot identify that. So, flattening also has to be done in such a way so that information loss is not there.
+Because while doing the flattening, while doing conversion of 3D to 1D, if I do.
+And if the information is lost, then there is no purpose doing this flattening.
+So.
+C N N work in this particular manner.
+Where convolutional layers are something which is different. This layer is something which is obviously a simple neural network. This is not something which is different, but the main difference comes from this convolutional filters, or layers, which is present inside CNNs, which a normal neural network doesn't have it.
+That is why we can scan images, we can read images, and this network can analyze the image and give us whatever we require for that image data. Okay? So, so many operations are going inside. But then.
+Each of the parts which is responsible for, you know, reading the image is something which we are interested on. Why a simple thing is not able, why it is not there in simple neural network, why it is there in CNNs? Because of the architecture.
+So, each and every part of the architecture that
+you will see during this week will be something which is, like, well explained with the example, where you will see that each and every, like, as I'm breaking down the parts here on a top level, right? There you will see it in a more detailed way.
+Like, why this part is taken, what is the purpose of this, and why do you think that this… if this is not there, why this is done by CNN, and why it is not done by the other neural networks, why we could not apply some other things. All those kind of reasoning you will get an idea about.
+Fully connected layers, the last layers which are there, where
+You know, there will be global connections, there will be feature integrations, which you will learn about. You'll learn about the linear transformations, which will be there, like how you can apply different activation function, then how you can… if you want to do any reduction on the neurons, how you can do. Finally, how score will be there, and finally, how you will get the final output.
+So, all those things you will read about, and each of… each of the parts are important, because each of the parts will tell you why exactly you have done the previous thing, and what you are going to do next.
+Okay? So, those things are also explained there about the fully connected layers. Fully connected layers are this area.
+This part.
+Okay.
+Then comes your, one of the important.
+Topic which you will be seeing whenever even you go to a industry and work.
+In the industry also, you will see this transfer learning used a lot. What is this transfer learning?
+Transfer learning means, see, whenever you are creating this kind of model, these are deep learning models, right? These are, like, little bit complex models. So whenever you want to create this kind of models, you require huge amount of data.
+Right? You require a huge amount of data. So when you require a huge amount of data, that much data should be there also with you.
+Otherwise, you will not be able to implement that, correct?
+So, you will not be able to get that level of performance for your model, if your data itself is very less.
+So, that is a problem. So, what we try to do is, we try to take some pre-made models, which is created already with a huge data by somebody.
+That is a pre.
+Made model.
+Or we can tell that as a pre-trained model.
+So this pre-trained model, where somebody else would have used some form of data, already this model, whatever you see here, this model has some sort of knowledge present.
+You don't have to feed the knowledge from scratch. Already, people have made this model, people have used some amount of data, made this model, and already this model has some knowledge.
+So, we want to transfer this knowledge, and we want to add our own data on top of this model and get a new model.
+For our purpose.
+So, what is the benefit of that?
+You are not doing any model from scratch. You are taking somebody else's model, adding up your own data, and creating your new model. This is much more simpler.
+Right? It will take less infrastructure, less cost, and less time.
+That is very important, right? Because when you are going for any kind of business applications, that time, you cannot afford to have more cost. You cannot afford to take more time.
+then you're going to lose… you're going to lose your business, right? So, in that case, this
+Parameters matter a lot.
+So, this process is called as transfer learning, where pre-made models are there. You don't have to create any model from scratch. Take the model which is already pre-made or pre-trained, take the knowledge from that model, add up your own data.
+Increase the knowledge and get a new model.
+That is what is written here.
+Okay? Training from scratch problem. So, millions of, images will be there, it will take so much of time, redundant learning will be there.
+So many problems are there for this scratch model made from scratch.
+So, solution is transfer learning.
+pre-trained knowledge will be there, data efficiency will be there. So, in this, you don't have to take a very huge data. You can have your own set of data, because already that model is pre-made with some data.
+Right? So… That transfer learning process is also.
+currently used for many applications. Whenever you see in the industry, a lot of different applications will be there where transfer learning is used for this kind of complex models, right? Where creating this model from scratch is a huge problem.
+So, you can have, like, whatever features are there in that model, you can freeze those features, you can have very rapid convergence, like, the speed of the training will be very faster, and whatever you want to have related to your task, you can do the changes.
+On the top layers of this model and you can.
+Get your new model. You don't have to touch the, like inside layers of the model. The outside layers you can, you can change.
+Or you can update, and you can use that model. So, it becomes an efficient method to use this kind of models, which is already pre-made for your purpose.
+Okay?
+So, very effective to use during the image data also.
+So that is transfer learning. Remember, transfer learning is not only used for images. Nowadays, we use for text models also, like, text-based models also, for images also, for normal models also. Because
+This kind of huge model creation is a… there are a lot of overhead things which are there when we create any model from scratch.
+So already, we take the pre-made models, we validate whether it is for our task, whether the data that it requires, whether we have that sort of data or not. Those are the things that you need to validate. But your model is pre-made.
+Okay? So, it solves your purpose.
+So, transfer learning is one of the biggest area where you will see this during the CNNs, as well as you will see this when we go to the textual models, that is, RNNs, which we'll see in the, you know, future weeks that you will, I mean, you'll read about it.
+So.
+Both the places, transfer learning is used.
+So here, what happens? See, whenever you're doing transfer learning, sometimes you can extract the features, like, the base features could be frozen out. Only you can train the head, that means only, you know, the…
+you can fit only to the output part, you can just do it. You can have a small data set, and it could be faster.
+So, either you can do this, or you can do the fine-tuning. What is this fine-tuning?
+Fine-tuning means whatever layers are there inside that model, you try to unlock those layers, and try to see if little bit more training you could do on those layers or not, little bit larger data sets you can use or not, and then, you know, you can use a small learning rate
+And if you can adopt to your use case or not. Either go for this, or you go for fine-tuning.
+This you can do when you have simple application.
+When you want a fast solution for your application and this fine-tuning you can do when
+You are going for certain application where, you know, a little bit more than, like, the outside layers has to be tuned.
+Suppose the model that you got is not completely relevant to your use case, you might have to tune a little bit more. That time you go for this fine tuning part. So, you will understand.
+What is the difference between a feature extraction and fine tuning?
+It's regarding the transfer learning only. Like, whether you want to do only few changes in the model, or you wanted to do, you know, little bit larger changes in the model. Larger changes means fine-tuning.
+And small changes means just you want to extract the feature, use it for the output, change the output, and just, you know, keep everything frozen.
+Small changes, okay?
+Then you will evaluate the model. Evaluate the model means, see, whenever you are doing evaluation, you might have heard about the confusion matrix part, which is also used in machine learning.
+Like, we have certain type of matrix, which is called as confusion matrix, where you will find, like, this.
+True positive.
+True negative.
+False positive.
+And false negative.
+Okay? So, suppose this is your actual value.
+And this is the predicted value what the model has.
+Okay?
+Suppose this is 1 and 0, present not present, 1 and 0, present not present.
+Where model… where actual value is also yes, and model also says yes, this is true positive. That is the first part.
+When?
+Model tells, when actual value is no, and model also tells no, then this is true negative.
+So these two portion are correctly.
+The model has done the prediction, so this is correct.
+False positive and false negative are the things which are incorrect things, like the model might not have done the prediction properly. That will come inside this false positive and false negative.
+False positive, where false alarm is raised, right?
+Called as type 1 error and false negative means where the model might have missed the target.
+That is type 2 error. So, all these things are evaluated whenever you are creating any model, whenever you are doing any kind of classification. Suppose you are doing image classification. How well the image is being classified
+Suppose you have 100 images of humans, 100 images of cats, and 100 images of dogs.
+You want to classify human, cat, and dog. So sometimes it might happen that your model might say.
+A dog to be a cat or a cat to be a dog.
+Or a human to be a kind of a cat face.
+Example, there might be mistakes from the model side. Those mistakes are captured in this false positive and false negative. So you should also do the evaluation to see whether
+Your model is working fine or not.
+Okay?
+So, through the confusion matrix, you will be able to see that, and obviously, there is something called as accuracy. So, true positive plus true negative divided by total prediction, that is your accuracy. How much accurate your model is.
+But remember, this accuracy doesn't work when you have an imbalanced data set. Imbalanced data set means suppose five images of cat and 100 image of human and only 10 image of dog.
+So the distribution of image of cat, dog, and human is different, right?
+So which image will dominate more, human, because 100 images of human.
+Only 10 image of dog and only 10 image of cat.
+So human will be… the model will be more biased towards the human. So if those kind of imbalanced data set is there, accuracy will not work.
+Okay? Accuracy does not work. So, in that case, we go for some other matrices, but in that case, accuracy doesn't work.
+So, it might tell you
+good number of accuracy, suppose 90%, 95% accuracy, but if the imbalanced data is there, this accuracy is not a good measure to evaluate your model. It can be misleading.
+Okay? In that case, what will you do? In that case, you will go to this 3,
+Things, precision, recall, and F1 score.
+Precision means false alarm, okay? It will actually do the false alarm prevention.
+So, it will maximize the accuracy of the false… positive claims, okay? So, the formula is this.
+True positive divided by true positive plus false positive. Just one minute.
+Yeah, sorry. So, precision is basically to
+see that we prevent the false alarm, okay? Usually in spam filtering or legal things, we use this precision. Very important. So that we don't lose money, right? So precision is important that time, so that false alarm doesn't come up.
+Recall means what?
+Recall means?
+Whatever, if you want to detect a fraud, whether your model is actually telling the fraud as fraud or not.
+So, if some fraudulent activity or certain things have happened, whether the model is able to predict that properly or not.
+So that is recall.
+Recall is very important when you're doing fraud detection, disease detection, this kind of, scenarios, recall is very important. Because, see, when you have, suppose, X-ray images.
+You wanted to find out whether the patient has pneumonia or not. You're doing a disease detection there, right?
+So, in that case, recall value should be high.
+That means if a pneumonia patient is there.
+Then model is also telling that the person has pneumonia, that is.
+correctly predicting the positive cases.
+That is recall.
+So, precision is important in its own things, recall is important in its own things.
+And if both of these don't work, you go for F1 score. Where?
+Both the things, precision and recall, will be taken into consideration. So, it can evaluate on the imbalance data also.
+So if the F1 score is good, that means precision, recall, both are balanced.
+So, when you're evaluating each of the matrices, you should know why you're using those matrix. Otherwise, there is no point. Like, I can memorize the formula, but that is no… there is nothing that I'm going to achieve from that, right? I am going to achieve what exactly this particular thing is doing for my
+Whether it is image data, whether it is any kind of text data, or any kind of data, I want to evaluate it, whether it is doing… my model is doing a good job or not.
+So…
+Whatever we used to have in machine learning, we have the same matrices here also, in deep learning, where we evaluate based on the use cases. Like, for this use case, precision is important. I want to have more precision.
+For this use case, recall is important. I want to have more recall. So, it depends.
+Right?
+Then you will also have something called as, if at all there is overfitting in your, models, then you might go with dropout or batch normalization. This will actually reduce the overfitting. Dropout means some of the neurons inside your.
+Inside your network, you can switch it off.
+Okay, suppose 10% of your neurons, you, you want to switch it off, you can switch it off, it will reduce your overfitting problem, that is dropout.
+Okay, so, so that the network doesn't see again and again same features and then again and again whenever it is actually doing the weight calculation, it should not be redundant.
+So dropout actually helps to reduce the overfitting. And batch normalization also. Batch normalization means whenever you are giving the input, the input should be normalized. That means brought into a single scale. So you will read about the batch normalization also.
+Okay?
+Like, how many parameters are there, how many of them are learnable, non-learnable, you will learn about all of those things. Regularization is very important, because
+there is a huge chance that after you have evaluated your model, you realize that your model is overfitted. That time, you will have to go with these methods to reduce your overfitting. Okay? So you will read about this, all things also there.
+Then, one biggest thing which you will be reading here is about data augmentation. See, what happens? Sometimes, whenever you're creating this kind of models, data is very less.
+And deep learning models always require more number of data.
+If your data is not there, then this model doesn't work as expected.
+Okay, it doesn't work as expected, so that is why what happens is you will have to go for increasing your data set. That is called data augmentation.
+Whatever images you have, you can change the orientation of the image. You can rotate the image horizontally, vertically. Any kind of cropping you can do, scaling or rotation you can do. You can do some, you know, color jittering, you can do some contrast shifts.
+Any kind of thing you can try to do and.
+Create more number of images for.
+your model.
+Otherwise, your model is not going to give you the expected result because
+Deep learning models are data hungry.
+If data is not given, Then it will not be able to see so much.
+Of diversity or variety and ultimately the performance will be dripped.
+So data augmentation also is a very important segment when we work with the images.
+Okay? So this also you will read in the… in this module, where
+The complete explanation of augmentation is given, why it is required, how it is being done. I told you already, right? Like, cropping, or maybe rotation of the image. Some…
+changes, aesthetic changes you can do in the existing image, and create some more number of images in different things, different ways. So, you can also add those things as your training data.
+So now your data has increased. Sometimes in real world, we don't have so much of data. We have to do all of these transformations and bring up the data more. So that is augmentation.
+So through this, you can also do the data augmentation as well.
+Okay? So this is all about your CNN module.
+Please go through the module in detail. You will understand, for each and every perspective, you'll understand, like, why we are going through each of the things.
+Why each step is taken? Why haven't we gone with some other things? What was the problem? And what we are trying to solve through that particular part? If we… if that part was not there, what problem we could have faced?
+And what problems CNNs could have faced. So, every lesson that you see will have this kind of explanation, okay? So, so that you can have an in-depth
+understanding about each and everything. So, since these are, you know, kind of recorded modules, so I would ask you to go through it a little bit slower.
+Go in a slower pace and try to understand why exactly we are doing it because it's, it starts from the foundation.
+Why exactly we have not gone for this, why we have gone for this, what was the problem that we are trying to solve, how we have solved the problem, and what was the result.
+Those kind of approaches has been taken, okay.
+So, that is all about this week, second week. You will be reading about all of these things, and also you will do a similar kind of implementation also.
+in your, CNNs, right? So, last week, we have seen a simple implementation of, neural networks, right? So, this week also, you will see the simple implementation of taking an image dataset. So, there is something called as Cypher 10.
+image dataset. I have taken certain images from there, and we have tried to run a simple, convolutional neural network model out of that.
+Okay? It will be the same implementation, kind of, what we have discussed in the last week. And only thing is that, in the last week, the neural network, simple neural network we have seen here, you will be seeing the convolutional neural network, right? So you will be implementing, like, this convolutional layers.
+And then, in between.
+And then other things are seen. The dataset that we have used here, I have already given a reference to the dataset, and the dataset also will be attached for your reference.
+You can take the train and test data from, like, I have already attached that data. You can take it and try to train the model, but try to take a section of the data, because that data is very large.
+So sometimes you might run out of memory, or maybe the infrastructure may not be there with you to run the whole data, and it might take some time for you.
+So, take a section of the data, try to run the CNN model in the same way, whatever was there in the last week. I have given you a detailed explanation of the implementation part, right? So, similar way, you will have the implementation for this week also, in the similar manner.
+So, what was the situation? What kind of task we are trying to do here? What is the action that we have taken? That means, what are the steps that we have done, and what result we have got? So, that image data is basically to do the classification. There are certain building images.
+Human images, different kinds of images, and we have tried to classify that correctly.
+Okay? So…
+please go through the module, please go through the experiential learning video. I've given a very, very detailed explanation over there, where each and every step is explained, why I have done that, why each of the things we have included.
+Please go through that, and if you have any questions, you can come up with the questions now, or maybe you can ask in the next week also.
+Like, if you have anything after reading the module.
+Or already, some of you might have gone through the module, you have any existing questions, you can come up with that. You can come up with your questions in the chat.
+I'll try to answer.
+Let me just stop my share.
+If anybody has questions, please come up with your questions.
+Along with the theory, can we also just have a brief overview of the
+the problems as well, maybe, like, the Python programs, what we have shared, so that we can also understand it parallelly.
+Yes, so I'm.
+If you can take some time at the end, like, 5 to 10 minutes.
+You want it now?
+Not now, I mean, in general, I was just telling as a feedback, so that we also get a glimpse of how these are implemented.
+Yes, yes. So I have done that last week actually. So where you know we have discussed like each and every step like what we have done, how we have done the implementation in Python. So as I've done last week, so that's why I just asked you to refer that probably you were not there in the first week, right?
+Yeah, correct.
+Okay.
+I mean to say for every class, if we can spend some like 5-10 minutes at the end, that will give us practical exposure as well and also to know like what exact programs you are referring. That's what was followed for other classes as well. So I just thought to give it as a feedback.
+Yes, yes, yes. We'll do that.
+Komal, this PPT, okay, I will try to share it.
+I don't know whether it will be in the Lumen, but I'll try to share it with the coordinator, so they'll, they'll try to keep it in the Lumen, right?
+The same PPT. This is a GIST PPT.
+Just for your understanding, yeah, I'll try to pass it on.
+Okay, first week and second week, okay, fine.
+Any other questions?
+Okay.
+If there are no other questions, then we'll follow the same thing, like, the explanation part, and then we'll just take 5-10 minutes, like as we have done in the first week. We'll take it up, 5-10 minutes at the last to go through the implementation quickly.
+And also, I would suggest you to go through the videos and let me know,
+that's okay. I mean, if you have done some things in the previous week, and you have a question in the next week, that is okay. You can come up with your questions, but if you have certain doubts, please don't keep it within yourself. Come up with your doubts, and then, you know.
+We are here to, address the doubts.
+Since this is very important, and then you might also come up with a… you might also go and implement those things, and then other sections are also there, where every module has, you know, 6-7 lessons. So, it might pile up.
+So, if you're doing it every week, coming up with your questions, if you're not understanding something, that would be helpful for you, as well as, we'll also be able to understand whether you are there on track and you are doing it, you know, in the, like, how it is being set up.
+And we'll try to address the issues, right?
+Are these programs available as attachments in the Lumen itself?
+Which one? The PPTs?
+No, not the… yeah, the PPTs and also the programs, what you have just mentioned.
+Yes, yes, yes.
+programs.
+Yes, the Python programs are… actually, you can see the experiential learning videos, where I have explained the complete Python program, step by step.
+You can go through the, the learning, I mean, experiential learning videos, it is present in your Lumen.
+For every week, it is there.
+Okay, and the programs are also there as attachments?
+Yes, the programs are there, the dataset files are there.
+Okay.
+All the supporting files are present.
+Okay.
+Yeah.
+Okay, Parvathi, so, for dropout, we usually have, generally we take it as 10%, like, 10% of the neurons, we try to keep it switched off. That is usually the practice, but then that is not a hard and fast
+Thing that we try to take up, like, it could be changed, like, it can be 10%, 15%, could be there, but usually the practice is 10%.
+For dropout.
+Thank you.
+Okay, any other questions?
+Apart from accuracy, precision, recall, and F1 score.
+Do we also calculate ROs, like receiver operating characteristic as well?
+We do that.
+We do that. In some of the cases, we do it, but, you know, in images, most of the cases are being solved using either precision or recall. Accuracy is sometimes misleading, because
+What happens is, as I said, that like imbalanced data set is there and in real world you will see lot of imbalanced data only.
+Every time you cannot have a similar distribution for all your data, right? So usually, accuracy could be misleading. In some cases, it is okay.
+But usually the things are being solved by precision recall. ROC is something which is, again, a combination of your, you know, sensitivity, specificity, all those things are there, but then our, purpose gets solved if we have precision recall and F1.
+You can extend to ROC.
+But then…
+Purpose is getting solved, and then, you know, we can generally extend to a lot of things, but then…
+This is okay.
+Precision, recall, and F1. F1 score is one of the most important metrics, because in certain scenarios, in images, we see that, precision, recall, both are important.
+Generally, you know, in case of medical images.
+When, medical images are there, scans, x-rays, all these kind of things. Because in real world, those things are very sensitive, right? If you give a wrong diagnosis, or if you, you know, try to, have a lot of false positives, then that is also an issue. So, F1 score.
+Helps us a lot in those kind of scenarios, usually for images.
+Okay.
+Yep.
+Bye.
+Okay.
+Does the DEL also talk about the activation functions, what we have learned in EN, like, or maybe variant of this, like Sigmoid, Tanh, ReLu, Softmax?
+Yes. Gradient descent, then we have.
+Yes, you will have that in the.
+In the laws, okay.
+You will have it in the week one itself, all those different types of activities.
+Okay, okay.
+Let's see it.
+Okay, if nothing else is there, then we can close off for today, and I'll meet you all next week for week 3.
+Okay, bye.
+Bye bye, good night, bye.

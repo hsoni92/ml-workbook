@@ -1,0 +1,402 @@
+Okay.
+So, so, so, so, so, so…
+So, as I said, we are going to start with… conversion optimization.
+Okay.
+So, let's see what all we are going to cover today.
+So, we are going to cover, we are going to cover four topics, okay? So, the first topic is about CRO process.
+Okay? So what is CRO? CRO is, it's like a cycle, and it, and it repeats.
+And, and it repeats, and not just one time. It's like, it's like, which, which repeats itself, and it's not, like, something which can be run in just once.
+Okay, next is cart abandonment.
+Okay.
+And, in, in, wow, so what this matrix talks about, it, it helps you, you know, to… to get that information where the carts are lost.
+And, where carts, or people are just checking out, okay? People are just leaving your website, and it's like, you know, you're losing business. And, and it also helps you to check if a recovery email which is being sent out really works, you know, really makes them, you know, to…
+You know, reduce the cart abandonment rate.
+The next topic is about watching how people behave.
+Okay, how people are behaving in your, in your websites when they are visiting. Okay, so it's like a visualization thing that we will use. We will use different heatmaps and, sessions to see,
+It's, like, based on the data, actually, because this is an E-Commerce study we are doing, so we will be using different visualizations, like heat maps of the sessions, and see what these customers are doing on different pages. Okay.
+And the last topic is about turning observations into testable hypotheses.
+Okay, and here, how do we learn? How do we know? How do we understand to write a clear idea, and we can test it, and which idea, it's like… it's like which testable idea that we should be using?
+To make it work.
+Okay, and how things is going to be going, like, we will have 3 stages. First is very, very… it's like the basic things that we are going to cover. The next is we are going to take one example, and the last we are going to go into is about the
+More advanced thing.
+Okay.
+So those are the things for, that we are going to cover.
+Okay, so the big picture, from finding a problem and fixing it. So that's the major thing.
+So, let's look at the four different columns that you are seeing, that is from left to right.
+Okay, so the first column is talking about the process.
+Okay, so the objective is… to see the CRO.
+CRO, the CRO.
+as a… as a cycle, right? Not…
+The objective is to see CRO as a cycle and not as a, like, guesswork or something.
+The second is CART.
+And here, we have to find out what the issue is.
+what the issue was. The third is about behavior.
+And here, we try to find out how people are behaving, as the name suggests, behavior.
+The last is, the last… the fourth one, is about hypothesis.
+And what this hypothesis is all about, you have a particular idea, and you want to see, and you have to test it out, whether it's working or not.
+Okay? So, so this is, like…
+how the process flow is, we try to understand what the cycle is. Then, we try to deep dive and identify what the issue was. Then.
+We understand.
+the… what the behavior was, okay? And we have a… we form an idea, and test it out.
+Right? That is about the first
+First thing, you diagnose, learn, test, find the gap.
+Using… Level 1 is using through heat maps, and you find it, and you… Test it out. Okay.
+Okay, and if I am looking at these 1, 2, 3, you have got the three simple levels that we talked about.
+So, the first one is… is about having the idea.
+The next is where we will be using some examples, and the third is some… we are more,
+We will have some advanced knowledge about that.
+Okay, so now let's move to the next system, next topic. This is about CRO.
+CRO is a process, okay? So, and it's not a guess. So, what does CRO stands for?
+And what is the full form of CRM?
+CRO means Conversion Rate Optimization.
+So that is the full form of CRO.
+Okay, it… so what does it mean? It means…
+It's like, it is the work of making moon more… it's like, it's making the visitors complete the action.
+Okay, so it's like, what is the… what is the… for… for any, any customer who is coming to your website? To… if I want to make him, you know, complete the task, what will that be? That person, that customer coming in and gets the product, or buys the product.
+Okay.
+So… Now, just look at the four boxes in the picture.
+First is about diagnosis.
+Right? Where we try to find out why we are losing people.
+Okay, and we already know how to do this from the funnel and the journey which we have learned in our previous topics, right? Next is we form a hypothesis.
+Okay, we think, like, we can have this, we can make these changes, and it will get this fixed.
+Okay? The next is, the next step is, we have to test it out.
+And we have to test it in a very, very fair way. And the last thing is we have to learn.
+So what we do? We keep the change, we drop it, or we try again. So that is, it's like an iterative process, and it's on a repeat mode.
+Right, so what we do, we make changes, we either accept it or drop it, and we try it again.
+On what kind of genes do we try?
+And most of the fixes that we do, that works on three, three important points.
+Okay, and just look at the three things. The four things. Friction, trust, relevance, and urgency. The first lever that we are talking about is friction.
+What is this friction?
+So, as you know, what is friction? Friction is, like, for example, when you are, walking in a rough road, right? So, you have got friction. That is.
+It's like, when two, you know, one… when two unsmooth surfaces are colliding with each other, we… it… it forms a thing which is called a friction. That means conflict is happening.
+Okay.
+So if… so it… in… in here, what it is, it means that anything which is making that action
+It's action to be much harder. That is known as friction.
+So, like, for example, we can talk about, like, while you are applying for jobs, and it has lots and lots of many information or steps that they are asking for.
+Okay.
+So that is what is known as friction. Or when you are wanting to buy something, you know, you have to pay some other taxes, some other delivery charges, or, you know, website charges. So that is also part of friction.
+Okay, what will be the solution here, if anyone wants to have a smooth journey? So what you need to do is, you know, instead of giving some
+so, so big form, so you can just upload your resume, and you get, like, you apply, just like you have Easy Apply in LinkedIn.
+Right? Instead of, if you are going to… if you have applied in any company websites, right? So there, you will see, you know, they will ask for your resume. After that, you have to mention each and every
+Details.
+And finally, once you, and then, finally, you will read the page where you have to submit. Instead of that, if I do through Easy Apply, what I do, I have my resume in LinkedIn. I just…
+Plate, and it's done.
+Similarly, like, instead of, for the payment where they're asking, at each step, you have to pay for this.
+You have to pay for that. Instead of giving that, we form one… one payment, and you know, we make the customers to pay at that moment. So, you know, it reduces friction, it, like, customers are also not worried about that.
+Okay, the next is about liver.
+The next, the next lever is about the next thing, the point is all about trust.
+So, it's… what do you mean by trust? Trust means having faith.
+Okay.
+So, if, if a, if a, like, buyer
+the customer is worried. Like, if you have trust, they will, you know, won't be worried, and they will feel safe. So that's the objective.
+So, like, for example, a customer is worried about what the product they are buying, right? And if, for example, if there are reviews of that product, okay, and there is a complete picture about the return policy.
+And, you know, you have, and the payment gateways and the payment things are trustworthy. Then the…
+Customer will definitely have more confidence in buying.
+The next is about relevance.
+So, it's about what you mean by relevance. That means what, you have to understand what is your target population.
+Right? So, it's like showing the right thing to the right person at the right time.
+Right? So… There are 3 P's. Person, place, and product.
+If everything falls into place, you will have a good sale. If they fall in different places, in a different time, in a different product, and a different person, then you are going for a step instant going to work.
+Okay.
+So these three P's play a very, very important part in marketing.
+Okay.
+Okay, so,
+There, there can be, you know, you are showing, winter clothes to in… if anyone visiting, you know, any, any cold state during winters, like, that's what, you know.
+having proper things. Or, for example.
+in person, in, in, you know, in summer, okay? And summer, you are selling woolen clothes.
+That's not relevant, right?
+They, they will think you are crazy.
+The last thing is what we have, it's optional, which is called… the last part, is about urgency.
+Okay, so what do you mean by urgency? That means you have to act.
+Like, now.
+Okay. Or, for example, you, you know how the Diwali sale happens. Like, whenever you are adding a product.
+like in Amazon, I have seen that, I hope you guys have also seen that. Like, when you are,
+Okay, like, if you are,
+If you have seen, if you have bought products.
+you will see last two products remaining, last one product remaining, or last product, and after that, it will go out of stock. So these kind of things, so that is about urgency that they do. And, you know, during the sale also, there's a countdown timer, which they run, like.
+order within 25 minutes, otherwise you won't get this offer, something like that. Or they will tell you.
+Order within the next 40 minutes.
+order within the next 24 minutes, or something like that, it is going to tell you, so that if you… so, you know, if you… so they just create that urgency so that you order it, if you are, you know, concerned about discounts and all.
+So, you know, you try to order it. So, what I've seen in some couple of cases, there's a fake countdown timer which… which they run. And because of that, it's like that, you know, that brand loses the trust.
+Like, it is showing, like, if you are not placing the order within the next 30 seconds, you are going to lose the deal.
+So what I do, I log in after 2-3 hours. Again, it is showing the same thing. If you do not order within the next 30 seconds, you're going to lose the deal.
+So, it's like a fake thing which they are running.
+Okay, and what it does, it's, you know, customer sees once, and, you know, by food, they order it. Next time, again, they don't get fooled, always.
+Okay.
+So this is the first topic of CRO.
+Right? And what does CRO stands for? Conversion Rate Optimization. Now, we will going to see up an example.
+Okay.
+So, so you'll see in each slide there is, you know, orange…
+thing that is mentioned. So, these are some additional information which I have put in the slides, okay?
+So… So, we… what we are seeing here, it… it is showing that…
+for, online furniture store, okay? Online furniture store, 11 tests were run on that.
+Okay. A furniture retailer store, 11 tests in a year, that's right.
+Okay.
+So, only out of those 11, Only 4.
+Improved the conversion rate.
+Okay, and you see these are given in blue.
+Great.
+And the other boxes are given in, in gray.
+And they didn't improve, like, yes, when you have the…
+The wind, win, win, it's like blue boxes, you definitely have some VIN.
+It's, it's like you, you are winning something, and
+Okay, and you know, and normally that's what happens. In maximum cases, you will find a no, but in some cases, you will find a yes, that is winning.
+Okay.
+Now, now, let's go, like, let's zoom in a bit.
+Okay, now let's look at the results. The four small wins
+The 4 small wins, about 3 or 4% each.
+And let's add up.
+And the compound.
+By the end of the year, check-out completion was up by 14%.
+Okay, and if you look at the two bars, we call the start of the year 100, the end of the year is 114. Like, initially, if it is 100, after the end of the year, if it's, like, 14% uplift, that you are getting.
+You are getting around 114.
+Okay.
+And this is not some redesigning of anything that was done.
+Okay? It's like, it was a steady, you know, where it is quite steady, and, you know, it's like testing and learning. That's what we have done.
+Okay.
+So this is how we have, increased by 14%.
+And, if I'm talking about the additional information, so there are, you know, different teams, different marketing teams are the good marketing teams, okay?
+They track how many real tests they ran each month.
+Okay, and they also, and they watch it closely as they are tracking any single results.
+And, you know, on an average, 10 decent tests in a month. Usually, you know, one test in a year, it beats completely.
+And one more, one more thing, you remember that, you know, timer thing.
+The timer that you are saying, okay, 30 minutes left.
+you order or else, you will lose that. You will lose that, you know, offer. Or you will say it's, like, last product remaining. And if you order it, the product will go out of stock. Something like that.
+Okay, so this is what…
+This, like, if… and if you are running it, like, it's a fake thing that you're running it. Over and over again, if you try to run it, you know, customers, yes, definitely will get fooled for the first time, but later on, they will stop trusting your finances, thrusting your products.
+Okay, so now…
+Moving to the next topic, which is called as cart abandonment.
+Okay, so… So, what is this cut abandonment rate?
+It, it is, it is about…
+So it's about that, you know, there were, you know, there were 100 people who… who added the product in the cart.
+Okay, and 90% just left away.
+And just 10% who went ahead and moved to the next stage.
+So this is about cart abandonment, like, 90%, they never, you know, went through with the cart.
+It is the share of carts that were started, but they couldn't become an order as the customers left in between.
+And this… and this, as I said, it's 90%, and it's always.
+Always high, this card abandonment rate is always high.
+Okay, and it's not, you know, a flag that should be raised.
+Okay, one… so, the… the problem…
+So, the problem is, one blended number is not very useful.
+So, if I say 2 out of 3 cards are abandonment, you cannot fix anything.
+And and if we… what we do, we break it by checkout step.
+And, like, at each step, we are tracking, and then we understand where the people are leaving.
+Sue?
+We say 3 out of 3, 2 people have abandonment.
+have left the country. But you should understand why they have left, and why, and where.
+If you track it, the entire process, where the people are just leaving off, you'll have a better idea.
+Okay.
+Okay, now if we look at this picture, so how many carts we are having?
+Almost thousands.
+Not almost, it is actual thousands.
+So we, we are starting with, 1000s, and after that.
+When the shipping happens, it moves to 700 and… 780.
+So, when we are moving, so what was 1000? When we moving to 780 shipping details, it becomes 780.
+Great.
+That is 220L lost.
+And when the delivery fee is shown.
+Again, more 260 people are loved.
+And lost. That is, when 260 is gone, from 5 to 780, it becomes 520.
+Okay?
+Plugin you are showing?
+A delivery fee, then it…
+It's… it's moved to the payment page. In payment page, we find it is from 520 to 440. That means 80 we have lost. From 440, we have just 330 which orders got placed. That means 110 orders were not placed.
+Okay, so, so, if we look at this one…
+So, if you look at this one, in each step, we say here, from year 220, year 80, 110.
+But maximum people, We have shown, maximum people we have lost is during this orange bar only.
+Where almost 260 people, almost half of, you know, half of the people we have lost. So, now, if we think of fixing this.
+So, what will be the possible fix here?
+So, we can show the delivery fee much earlier.
+During, you know, if we show it at the product page itself.
+That, you know, that will help and cut down these numbers.
+Okay.
+So, at each step, we… we get to know why the… what was the reason what that's causing it.
+A surprise fee.
+A long form, or a missing payment option.
+So, these are… so, based on these, we… we… we have to measure step by step, so that we identify where the issue is, and we go ahead and fix that issue.
+Okay, so now we move to the next step, where we are talking about a work example, or an example using. We try to understand the
+concepts.
+Okay, so this here, the example is about a homeware brand.
+Okay, homeware brand sends… sends some emails.
+Okay.
+So…
+So, it's a homeware brand. So, you know, they have, you know, collected the data from time to time, and they have got to know that.
+their abandonment rate is quite high. So what they do is, you know, they send a reminder email 3 hours after the people have left.
+And what happens to the impact?
+a few weeks later, we find 12 people, I mean, 12%, 12% of those carts have placed their order.
+And, you know, and, since, the… these guys, the back-end teams, they understood, like, yes, based on these mails, we can say 12% have, you know, we have recovered, we have able to…
+You know, we are able to recover almost 12%
+Of the people who were abandoning their car.
+Right? So this is what impact they… they will see as a… as a normal guy, or as… from a visualization point of view, if you see the turn of events.
+So, was that actually happening?
+Okay, so was that actually happening? So, there definitely, like, for example, there definitely might have been some people who have left, but they would have come back later, bought the product, no matter you send the mail or not, right?
+So here, before jumping to a conclusion like your email brought in that extra 12%, you know, they…
+They shouldn't be jumping to conclusion.
+they should have a proper, you know, check, what was the reason for it. They have a control group, control group.
+Okay, this is a similar set of abandonment carts that did not get any emailed.
+And, you know, even… and we find these… these groups did not get any email. And, you know, it's naturally, like, you know, they… they had recovered 9% on its own. Like, no effort was required.
+Right?
+Look at these two bars.
+12% of the email group, 9% of the control group.
+Right?
+The real effect of the email is only the difference.
+So, the email ID did not bring in 12%. It brought… so we just deduct it.
+Okay, so if I say, what was the effectiveness, what was the additional, you know.
+people, they, they, that your email brought, which I was talking about earlier. So, earlier we said, like, they, they brought in almost 12%.
+But ideally, if you just compare, they brought in, like, 12% of the mail was sent, but 9% recovered without any meme email that being sent. So we can say, just 3%.
+3%.
+So… so… so this is the reason you have to have a control probe.
+And, and we… you should have a thorough, thorough check in place before pre… giving credit to what happened and, you know, to… to the…
+other, other teams. Right.
+Okay, so now, for the additional, additional thing.
+So, what is this additional thing? So, first, you have to clean the carts, then you have to start a sequence.
+Okay?
+So, there are some cards, which says just, you save for later.
+You, you, you, you go to that webpage, okay, you add it.
+You save for later, for one of the items, and you do nothing.
+And these are not abandonment.
+Okay, so these are… might be, like, you know, that person went to buy a product, and, you know, the price was…
+not what they was expecting. So what I do, I will add it
+You know, to save for later, because I do not want to buy it now. The price is a little higher. Let's wait for a couple of days, and then I'll buy it.
+Okay, so… So if we… we…
+Okay, so one more thing that we can do here is, like, how do we, you know, fix this? Okay, so we… we can send a gentle reminder.
+Okay.
+Gentle reminder, and tell them, like, you have some objects in your cart.
+that we normally receive in Amazon, okay? And we test each email against its own control group, so you know which one is doing the job and, you know, recovering the abandonment. So these are a couple of things, some additional things that we can definitely do to improve, improve how
+How things are improving, or how things are going, right?
+Now, the next thing is watching how people really behave, you know? Remember, the third topic, it's about behavior.
+Okay, so numbers, so when we're talking about numbers.
+Numbers tell us what the thing happened, and how of it was.
+And… but these numbers won't tell you why this happened.
+They are going to tell you what happened and how often.
+What's the frequency? But they, won't tell you why this happened.
+For that, we will be using two simple tools.
+First is a heat map.
+Where it shows It… it is going to show you where the people is clicking.
+Where they hover, and how far they scroll.
+Okay. The second is, session recording.
+The second is a session recording.
+Okay, it is an anonymous replay of one real visit. It's like a small video.
+It's like, you know, So if I look at this page, Okay.
+What is this thing?
+It is a simple product page.
+Right? The red and orange spots are where people click most of the times.
+Which is product for 2, add to cart, and what are the ingredients out there?
+And if you look at the dotted line, red line, it shows you where a typical phone Screen ends.
+Okay, so it's… it normally tells you where you're, you know, if you're looking at a phone most of the times.
+You are not able to see the entire things, like reviews, you may also like, so these are not visible to the customers.
+Okay.
+So, if you look at… on the right.
+Okay? It's talking about the scroll depth.
+Everyone looks at the top feeds.
+So everyone, when people are visiting, if I say, so, top of the page, say 100%.
+How many look at the ingredients?
+Almost 55. Reviews, 22%. At the bottom, That is almost 8%.
+Okay.
+One, one recording is a clue, and not a proof.
+It is a hypothesis. Before we call it a problem, we check the numbers to see.
+If many people do the same Team.
+Okay.
+So now, let's talk about, example.
+Okay.
+But this is my… Example.
+A skincare brand. So, we are talking about a skincare brand. Okay, it looks at the heat map of their best-selling serum page.
+Okay, and they find nobody is clicking anywhere below the first photo and the price.
+Okay, so they are just looking at ingredients. They're not looking at here, photo and price and…
+But then, okay.
+So that… so the thing is, the ingredients are… and reviews are below the screen.
+Right? And most of the people do not reach there.
+So… so we… And we do not redesign the page based on one video.
+Right.
+So, we, we checked… So, we have to check first how many sessions behave in this way.
+And after that, we perform a hypothesis.
+Okay, now look at the pages on the slide.
+on the…
+On the left is before, on the right is after.
+So, what do you have done? You just moved up.
+So, what you have done, you have, since before, my price photo was coming, right, in the first page. So, what I've done, key ingredients are pushed. After that, I've kept reviews and full ingredients open.
+Great.
+So, normally, this definitely will work.
+Okay, so now let's talk about the advanced.
+Okay.
+So… So, there are some tools to talk about range clicks for you.
+Okay.
+And, what happens?
+Someone, if… clicks the same spot again and again, quickly.
+We get rage clicks, so what is rage clicks for you? Rage click is like, you know, you are in rage, and, you know, the things are not working out, you know, everything is going haywire, it's against you, so you…
+Okay, so what you do, you have… you,
+you have these rage clicks here, yeah, you know, so…
+Okay So, but… So you are…
+So it's like, you are clicking, you're throwing the mouse, and so on and so forth.
+So, what it might mean, one thing is you're not angry, or might be click is not working.
+Okay.
+Okay, so that's about the topic 3. Now, let's move to Topic 4.
+Now, what is this topic for?
+Turning observations into testable hypotheses.
+We… we have to write a hypothesis, we have to write an idea, and test it out.
+A very good hypothesis has got three phases.
+Okay, the first is the problem, the second is the change
+And the next is the expected outcome.
+Okay, let… let's take an example.
+So, because of 60% of Mobile users leaving.
+Leaves, or leaves without scrolling past the first photo.
+If we move the price and, like, just, like, take the last example, and we, wait one minute…
+You take this example. Before, what was there?
+Rise, photo, But only visible.
+And the rest was below the page. So what we have done, we have pushed the key ingredients above.
+Okay, so… So, if we say 60% of the mobile users leave without scrolling past the first photos.
+If we move the price and add to cart button higher up on the screen.
+Okay, higher up in the screen. Then add to cart rate on mobile will rise at least 10% within 4 weeks.
+Okay?
+So, but the problem will come from the real data. The change is clear, and the outcome has a number
+And a type.
+Now, compare with the…
+Bad example. Let's make a product page better. What exactly we will change? How will we
+No. How will he know if it worked?
+So, if we cannot… Tests we cannot see.
+So, one… Okay, so now let's move to the next thing about work example.
+So, we will always have more ideas than, than time.
+A simple way is called an ICE.
+What does ICE mean? It means impact country confidence and ease.
+For each of these ideas, we give a score from 1 to 10 in these… based on these three questions.
+Okay.
+This is impact.
+First is impact, ICE, right? Impact, confidence, ease, when you have impact. How big a difference can it make?
+Okay.
+Confidence, the next is confidence. How sure are we
+Okay, that is going to work.
+Okay, the next is ease.
+How easily can it be built and tested?
+And then we take the average of the three.
+If I am looking at the table, okay, the…
+So, the move, price, and button-up gets 8.
+7 and 8.
+the average It's 7.
+Average 7.
+And if I add… add a size guide pop-up, get 6.3.
+Okay, if you redesign the whole checkout, it will have a huge impact.
+And so, we are not sure whether it's going to work or not.
+So, it gets only 5 point.
+3.
+And change the… Banner colors are very…
+Okay, so, and change the banner color. It's very easy, but it makes almost no difference, so it gets the…
+0.7.
+So, what we have to do? The winner is to move the price and button up. It's big enough, it's supported by data, and we do it.
+Right. So…
+So this is one example about how we are going to diagnose, hypothesize, learn, and test it. It's like a iterative process, but you can read it, okay?
+So now, just a quick summary about what all we have covered. The first thing we have covered is about CRO, that is, repeatable cycle, diagnosis, hypothesis, Testing, and Learn.
+Many small, well-run tests are better than a.
+big one.
+Second, we talked about measure of gut abandonment, step by step.
+And prove that a recovery tactic works with a control group.
+So if, how do we calculate 12% minus 9% control is a 3-point effect.
+The next is about heat map and recordings.
+to see how and why, the reason. But one recording is a clue, and not a proof.
+Right.
+The last is, a good hypothesis has a problem.
+a change and a expected outcome with number. And when you have many ideas, rank them with ICE or RISE.
+Okay, so that's… that's all I had for today, guys.
+Kirti is going to share you the uploaded version of this text, of this document. So, over to you, Kirti.
+Yeah.
+The pink stack.
+Listen, so, hi team, just fill out this poll.

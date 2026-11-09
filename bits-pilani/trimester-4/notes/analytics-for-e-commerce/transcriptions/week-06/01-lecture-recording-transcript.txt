@@ -1,0 +1,204 @@
+Okay, recording… has started.
+So let me reshare my screen.
+Okay, so, coming to this one, today, in the last couple of classes, we were talking about customers, how this is moving, how that is moving. Okay.
+But going forward, in this session, we are mostly going to talk about the products.
+mostly, like, how the products are moving, what all analytics we are doing in it, and how the search is going on, and, you know, mostly to do with the products page. Okay.
+And, like, for example, if a new product has been launched, so you… you just check how is the… how… how engaging it is, how… is people interested in your product? Are people logging into the product page? Are they interested in it? So.
+So that's what we are going to start with, that's what we are going to discuss in today's session. And I will try to have this as short as possible and as engaging as possible.
+So… so there are, there, there are when you go to, when you visit any kind of e-commerce or any…
+Not any, any website, that is, that has, that has got, different products which are selling.
+So, there are a couple of things that you are more concerned.
+Not as a customer, but the backend.
+at the back end is how the data is being collected, and from an analytics point of view, you are more focused on product page. Okay, if
+So there… so there is a main page. From main page, when you just log in to the, to the marketplace page, or to the E-Commerce page, you get the main page. And then you click on categories, and then you go to the product page.
+Okay, so how do we know if this product page, or if this product is gaining traction, or is this, the product that you have created is… is… is in demand, or is able to sell in the market? So, how do you know that from an analytics point of view? So, in…
+So, you have got different matrixes, different data that comes from… that's from Google Analytics. That, either if you have Google Analytics very good. If not, you have ClickStream as well, from which you are going to get the data. So, from data, that means you will get views.
+you will get the bounce rate. You have got the add-to-got rate. So, all these matrix are available for the product page. And based on this, based on the different matrixes, based on the different values, you will understand if your product is doing fairly.
+Good or bad?
+Right.
+Now, next comes… so this is one thing that will tell you how your product is doing. Next is, how engaging is your product?
+So that… so these are got different… different matrices that are going to tell you how your product is doing, like, engagement. So.
+So, what do you mean by engagement? That means how engaging your product is. That means either they are adding it to their wishlist, they are giving reviews, and how many repeat visitors are coming for your product.
+So… So, when… so… and, normally in, in, normally what happens in an E-Commerce.
+90% of the, or maybe 80% of the customers go to the product page, view the product, and then leave.
+Okay, so… so that's… that's how the… in E-Commerce it happens. And there are some customers who, if they like the product, they will add to their cart, or add to their bucket list, or the wishlist. So, that's all about engagement. How many are adding the products to their wishlist?
+Or writing reviews, or are the customers who are the repeat customers?
+The next is about search.
+Right? How, where, based on what source, or based on how they have landed to your product page, how they came to know about your product, have they searched the internet, or they have clicked any banner, and then they have come to your product page.
+Okay, and the last thing is the KPIs. Okay, in KPIs.
+And mostly, you have to do with your sales, your conversions, and return together.
+So, that means your sales will tell you exactly how your product is doing.
+Compared to other segments, compared to other categories, compared to your… maybe if you are able to… if you… say, for example, you are, you are… you have, you have created,
+you have created a product, which is a cold cream. And this cream is a seasonal cream, because it's a cold cream, right? Which is only picking up sales during winter, and this is a new, new company you have come up with, or a new cream. Why?
+And because of the price, compared to the other competitors, which
+You… you have also… you have got the sales. And what you do, you… you also try to get the competitor sales as well. The competitor sales, and yes, your sales, definitely, it will be captured by your own system, your own architecture, and for the…
+for the competitor, sales, how you're going to get that? You are going to get that from different sources, like Kantar, like Nielsen, they are going to provide you
+sales of the competitor's sales. And there, you will have a pretty good idea if you just compare your present brand sales with your competitor sales. Where do you stand in your competitors, and how much sales you have gained in this winter season. So that will give you
+a pretty fair idea, so where you are, and how… what all effort you should be put into… and yes, ex… these numbers, the competitor numbers, will not be 100% accurate, but roundabout numbers, which will going to give an idea where do you stand.
+So, and what are all these things are going to give you? They are going to give you, where you are, where you should improve. Is it the views you're not getting? Is it your bounce rate, which is pretty high?
+Okay, or is it the repeat customers that is coming out very low? Okay, or the search penetration is low? Or your sales? Sales is coming down. So, these are going to give you, okay.
+A pretty good, good idea, so how things are moving.
+Okay, so now…
+So, when we talk about the PDP, product pay… Product details page.
+Using the product detail page, you get lots of different information. That is, you get the views, you get… so, there are two things that might happen whenever any customer is coming to that
+product page. Either They are going to…
+Add… add that product to their cart, or those who are just going to look at the price and leave.
+So, when they are leaving.
+Okay, when they are leaving the product peak, that means, that is, they are bouncing off.
+That is called bounce rate.
+So, that means they landed on this page and left without doing anything else. So, normally, what happens? Say, suppose I am going to, let's say I'm…
+I'm looking at an iPhone, okay? Suppose iPhone 15, suppose, and I landed on Amazon. I'm looking at iPhones?
+15, iPhone 16, and it is coming under $79,000.
+Okay, then I am comparing the same product in Flipkart. In Flipkart, so it is Great Indian Sale, which is coming, because of that, I'm getting at $79. In Flipkart, I see the price is around, say, $85.
+So what do I do? I just close FlipCart.
+So what that is, that is called bounce rate. That means I bounced off.
+You without taking any action, I just…
+close the browser. So, that is bounce rate. So, for…
+In Amazon, what I am doing, I am adding that product. I selected my variant that I'm looking for and added it to the cart.
+Okay, and if I manage to find some money, I'm going to buy it, if my budget is in line, or if not, I'll just keep it in my bucket, keep it in my cart, and hope it comes down a little bit more, okay, and then I'm going to buy it.
+Okay
+So, this is what the… so in product view… in product details page, you are going to get how many views you are getting, how many people are landing in that product page, right? So.
+And, so there are different information that you're going to get, right? And out of that, there might be some customers who are also, who are buying the product.
+Right? Who are buying the product? So, when you're buying the product, that's a sale for you. That's the KPI. So… so that's how the sale happens.
+Okay, so now we have… we are comparing two headphones.
+So…
+Sorry about that, guys. Had a bad cold, so that's fine. Okay, so now we take two two models, right? So, Model A and Model B.
+So, suppose in Model A, we have the number of views. Look at the views. One is 1 fourth. Model A, you have 8,000 views.
+And in Model B, you just have just 2,000 views a month.
+Okay.
+Okay, just 8,000 and 1 fourth in Model B, okay? And in Model A, I find 1.2% are the people who are adding to the cart, and in Model B, there's 4.5%. That means…
+Although, in Model B, the number of views is only 1 fourth, people are adding it more to their cart.
+Okay.
+Okay, so if I talk about 1-2%, which is coming out to be 96 at 2 cards, that means you just multiply 1.2% into 8,000, which comes out 96.
+96 are just adding to the cards. That's why if you're… although the percentage is very less here, okay, number of views is more. So, in short, no matter what.
+There are 96 people who are
+Here, there are more people who are adding that product to the carts compared to Model B.
+Okay, so…
+in… we can have a hypothesis. That is, we can have, like, people who, in any model where you have got very high visitors, very high visitors, no matter your add-to-cart rate is maybe small, or maybe…
+maybe same, you are definitely going to get, you know, number of people who are adding… absolute number of people who are adding the
+product to the cart and more compared to the other model. Okay.
+So, only… so… so although it is… it is just 96, it is 90, but one thing is… is… is a little bit concerning, is from 8,000, it is just 96, whereas from 2,000, it is 90, which is more…
+I mean, which is more, painful. From 8,000, I have got huge 8,000 visitors, and I'm just able to convert 96, who are just adding it to the cart. And if I see number of people who are… who are just buying the product, that will be much less.
+Right? So here, I have just 2,000. Out of 2,000, I managed 9 people who I've added to the cut. So, if I get more visitors, more viewers.
+In Model B. Definitely, I will be able to convert more people.
+Right? So… So there might be some reason, because of which… because of which there…
+In Model A, number of people are…
+are coming up, and there might be some reason are not able to add to the car.
+Might be they have some delivery charge, might be they have some charges which comes under, you know, open box delivery. Because of that, people are almost,
+98% people are dropping off.
+Whereas here, you just have small, yet different… they didn't get any publicity, they didn't get any exposure. That's why the viewers are less, but it is almost 5%. People are
+Adding to the cart, which is a decent job compared to the restaurant.
+Okay, or might be the photos.
+Or might be… might be something which is just… which is throwing off.
+Okay, so moving next, so this is about the two headphones, which they are getting the same results. So, you can see, if you have got huge number of visitors, no matter what percentage you are getting, if it is percentage less, that means your
+your entire business model is not working correctly. You have to make sure the conversion rate
+you know, rises. Here, although your views is small, so you have to… in both the cases, there are concerns, but this concern is very high compared to this one. Here, this… you didn't get the exposure which you… the other one got.
+Great.
+Now, next is about the product engagement and the engagement scores. That means how people are engaging. So, based on the products, how people are engaging about the product. It can be two reasons.
+it can be a couple of reasons. One is, you know.
+Just a minute, guys. There might be two reasons.
+Lord, not two reasons, there might be three reasons. One is…
+people like the product too much, so they have added it to their wishlist. And, so… but because of the price, they're not able to buy it. But they are added to their wishlist, so that whenever they have the budget, they're going to buy it.
+Next is, people are more, happy with the product, so they have written good, good reviews. Or, if…
+Reviews can be positive and negative, both ways. If it is a negative.
+then, you know, definitely that's a concern. But if it's a positive, that's a good thing for you. And the next is, repeat, repeat.
+customers. That means those customers who are visiting again. You remember the cohort, that means the repeat customers analysis, once, twice, thrice, how much they are… they are coming up to buying that product. Okay, so that's where product engagement and the engagement scores play a part.
+Okay.
+Okay, so now… So we… we just skip this now, is about the search.
+So now, when we talk about
+the search thing. So what is search? Search means when, if you're searching something, and if… so suppose you… so there's a customer who is looking for some… some products, one specific product, but because of the interface.
+Okay.
+So… so you are searching for the product. When you made the search, results showed no, no, zero results. That… that means you are not searching that specific
+product, because of which, they are not showing you the exact, exact product that you're looking for. Suppose, instead of iPhone, you are searching for… maybe you made a spelling mistake, and because of which, you are not getting any results that you are looking for. Okay.
+Or, because of that, your search is not getting. Or when…
+Or, again, there might be you have searched the product, but people are not getting into the product, because in that description, you are getting everything. Maybe the price is too high. That's why they are just logging off.
+Or if they are fine with the price, they just click on that product, but not buying it.
+Okay, or… and the third… End of, first is when they are
+searching the product, they are not getting the product they are looking for. That means they are not finding the product in the search page. Next is, when they found the product, they just saw it because of the price, or because of the description, or because of something, they got pissed off and they left.
+So, next is, if… if they are… they are happy with the product description, they are happy with the price, they click on it, but they are not adding it to the cart, they are leaving.
+Okay, the next is where they have added to the card, and they have purchased it, or not purchased it. Okay, so these are the different outcomes that can happen when you go to the search, and what customers are looking for, or they are looking for.
+Okay.
+So there are, there are… one more example is, missing products and wrong order. Okay, missing products.
+So there are… so whenever we are adding search results… so, do you know how the search happens? When we are searching any product.
+it has to link with the keywords, right? If you… your keyword is correct, right? So, this is known as search engine optimization, SEO.
+So, based on whatever searches happens in any of the websites, we… we, as analytics, we do analysis. What… so, how do we know what are the keywords people are searching for, or what is the trend, or what is the general thing people are looking for?
+So… so, and based on that… so, like, for example, I have opened a website, I have opened an E-Commerce business, and people are, you know, randomly searching, but they're not getting any results. Why that is… what is the… what's the reason for that? Because…
+the search engine optimization is pathetic. That means, whatever people are searching, those searches are not being
+mapped with the products. So, from time to time, I have to go ahead and find or take a download of what the search words they have
+people have searched, and understand what is the exact search, and I have to group the searches and make sure
+I have to tag those with different products, so that whenever they are searching any product, they get the products they are looking for.
+Okay, and that has to be done from time to time. Otherwise, it becomes an issue. If I am looking for a product that I'm looking for, and I am not getting it, so it becomes a concern for me, because if I'm not getting that product, so why will I stay in that product page? I'll go to somewhere else. Okay, right.
+So this is one of the analytics which is… and this is part of NLP, natural language processing, where you play around with your text words. You first map the words which are similar in nature, and then group it, and then you tag it with different products.
+Okay. So, and people might search anything, like, for example, left-handed scissors.
+Okay.
+And from here, from the search, search results, or the search data itself, you will have an idea, like, what people are looking for, what specific
+if they are… what are the specific things that people are looking for? What their preference is? Like, left-handed scissors. And you will see, and
+And and from this itself, if you want to… if you want to explore different products.
+Okay, what you can do is… so, like, for example, if you find left-handed scissors have been searched 400 times, 400 plus times, what you do? You, in the next development you do in your webpage, you put a section, left-handed scissors, and you will see.
+your… within… within a couple of months, your conversion rate will be rising very high. That is, people are buying that.
+Okay, so another… what happens for gym mix?
+So, so, so for, for other one also. So, for others, like gym bags, or… okay, for gym bags also, you can think of, you know, I added a section, okay?
+So, for the top… for the first…
+For the first couple of months, it converted, in… so the conversion rate was high, but later on, it started
+And started, so, more…
+So, so it's… it happens. So, if you are having a… so, like, for example, I added a search order for gym bags. So, it might work, or in midnight, it might not work. So, for… and from this also, so you can have a different sports section. People did not have. Or if you have some…
+You know, so from our gym section, there you can have your different gym bags, dumbbells, and etc, and etc. You can sell out, because you know from your search what people are more searching, and from the frequency, and the number of number.
+number of frequency people, the words they are occurring. You will have a pretty good idea where they are searching and what they are looking for, and then you can increase your
+what are they called? Increase your…
+Increase your search, increase your product sales, right?
+So now, now comes about the product KPIs. That means, which are your
+Which are your top performers in terms of sales, in terms of, conversion rate, in terms of, in terms of promotions? Which one are the
+Which are the products which are highly in demand, or your hot-selling cake.
+Right.
+So, there, you look for three things. That is, your sales, conversion rate, and return rate should be also high, because that also is one metric which should be… we should be concerned about. So, if all three are met, so those are… those products are where
+Your sales are high, conversion rate is high, and return rate is low, so those are your star customers, or your star products.
+Okay, so then comes your… Then comes your steady sellers, so those who are…
+in between, on average. So they have average sales, average customer conversion rate.
+you can say an average return rate. Who are steady, helping your… Sales to creep in.
+Okay, based on all these, like, steady sellers on underperformers, on new underperformers. Underperformers are those where you have got very high la-
+Where you have very high, I mean, very low sales, okay, conversion rate is also down, and return rate is high.
+So that is your underperformer. Although you have put in money, you have put in all the, you know, campaigns, but still, they are not able to perform, based on the potential, based on the money you have put in. So those are your
+Those are your underperformers. Just give me a minute, guys.
+Okay, so you have, then the next is who are newbies? Those… those products which are newly launched. So they… these guys won't have any sales, won't have any conversion rate.
+only you'll be focusing on views. So, you have to make sure all the products you have in your line should be classified as stars, steady sellers, underperformers, or new.
+So that you can focus, you can distribute your budget, you can have a… pretty…
+Good type of analysis that you can focus on.
+Okay, stars, the products which are
+with high sales, or the start products, you need minimal effort from
+from you. Okay, steady are always doing well. Okay, they are running up your sales. Other performers are the one where you have to cut down your budget in terms of if you are looking, or if you are putting in more money, okay? And new or unproven ones, there you have to put in effort.
+You have to make sure what the customers are looking for, what the search engine optimization is telling you, and so on and so forth.
+Okay, the next is.
+So, next is about an example. So it's, same revenue, different health. Let's take about two dresses. So, dress A.
+So, it, it generates about 8 LAKS a month. The next
+Next is about… both cost about 8 lakhs a month, okay? Okay. And here, Indress A brings in 6% conversion and 4% return rate.
+And it is monastrophic and efficient. And in Dresby, you have
+Conversion rate is almost 5x the traffic, only 1%, 1.2% of conversion rate, and 22% return.
+Okay, 22% return rate.
+So, what do you think from here? So… Breast rate here is…
+So, both are generating almost same revenue. Conversion rate, yes, it is 6%.
+Here, it is… the traffic, the amount of traffic the people are getting is almost 5x.
+And the conversion rate is pretty low.
+Okay, the return rate in dress A is almost 4, whereas in dress B is 22%.
+Okay, so what this tells you? They have the same revenue.
+Respi costs far more in returns and unhappy customers.
+Okay, so that is in… if you have got 22% return rate, your… most of the revenue will go… fall in the… in the… in the water, right? If you are mostly focused on reclining, right? So…
+So that's… that's how you are going to deal with if you have such kind of…
+So, these are the things that you should focus on about the return percentage, which is pretty, pretty high. So, each plays an important role, right? One is about your sales, one is your conversion rate, the other is your return rate. Okay.
+So this is just a quick, quick, that's what brings to our…
+our wrap-up, or the summary, which we have covered so far. So this, this module was completely into products, okay, of different categories where you
+Group them into different segments, and which you are going to help you to understand and fast track it. If you want to put in more budget, or if you want to focus on this product, this is going to help you.
+Yes.
+Any questions, anyone?
+So this is what I had for you, and after this class, I'm going to share the deck with you.
+So Chris, sir, sir, salvio, host the poll right now?
+Yes, yes, please.
+Yeah.
+So, hi everyone, please just fill out this poll.
+I think 4 people were only there, so that should be fine.
+Yeah, among 5 of them, 4 has been affiliate.
+35th is mine, no?
+Yeah.
+You're counting me.
+No, no, I'm not counting you. We are total 8 persons are, attending this meeting. Among 5 of them are students.
+Okay.
+Okay.

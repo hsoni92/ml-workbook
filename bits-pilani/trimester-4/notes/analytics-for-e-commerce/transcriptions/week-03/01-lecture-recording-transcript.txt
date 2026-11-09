@@ -1,0 +1,423 @@
+Okay, it has started.
+Just a little bit, I had to check…
+Okay, wonderful.
+So, we have everyone, and we can get started today.
+So I'm just sharing my screen, and let me know once my screen is up.
+It can, see my screen, right?
+So today, we are at week 3, right? And what all we are going to cover is majorly, we are going to cover a little bit
+about,
+Different, different kinds of dashboard, or what is our… first, we have to understand what is our dashboard.
+By dashboard, I mean it is a view.
+Okay, like, for example, we have seen in the last class what data is and how do we go about and looking at the data. We are going to also see a little bit of doing a little bit of EDA with our data.
+Okay, and those things we are going to do, and what all insights we can get from the data, we are going to talk about that as well in the class today. So…
+So, what is a dashboard? Dashboard is… is a… is a view which has a collection of different charts and different tables, and it gives you different, number… numerical view.
+So that, at first glance, you know what you are looking for, and, like, if I want to know how my business is growing, or how my… so I have an e-commerce business, and I want to see how my… I am doing in my… in my… in my day-to-day, sales that are happening.
+So, if I get a view which tells me what are the, you know, average orders which are being.
+what are the average orders that are being, that are being generated, and what is the average order value, or how many returns I'm getting on an average.
+And what are the sales happening, etc, etc. If I get… if I have an idea what are the things going on, on… in… in a short at a first glance, you know, I will have a pretty good idea, a fair idea, like, how my business is growing over the years, and that is what a dashboard is all about.
+And it's not… it hasn't been… it has not to be, you know, for… everyone is looking at the same view.
+Yes, a visual representation of the data through… in terms of tables, in terms of graphs, in terms of numbers, right? It hasn't… it has to be, like, if I am look… if I am the CEO.
+What I will look for, I will look for, you know, the sales.
+if I am… if I am a brand team, I will look at, you know, how many… how many out-of-stock products I am having, how my brand is faring, right? I will…
+Zoom in a bit. So, if different people or different, section of the groups has got their focus area, and they are going to look at different matrixes of the same,
+Of the same, dashboard, and different data, different… using different views, so that they have an understanding whichever portion they're looking for, and how they're
+How their business is faring.
+The next thing is about KPI. What is a KPI? KPI is Key Performing Indicators. Or, for example, it is, like, for example, if our… for, what is your, what is your main
+variable for that data set. Like, for example, if I'm looking at E-Commerce, what will be my KPI? My KPI will be my sales, right?
+So, if I am an inventory manager.
+Okay. Then, if I'm an inventory manager, what I'll be looking on? I will be looking on, yes, the sales. I'll be focusing on, you know, how many
+How many products are in stock, which of the products are going out of stock, and so on and so forth. I'll be focusing on.
+Okay, so your KPI, and if I am… so this is e-commerce. If I am going into.
+Into a banking sector. Then, I'll be looking for how many…
+accounts I have opened, or how much, you know, revenue I have generated in terms of if I'm a… if I'm a loan… if I'm the loan department. So, from… based on different sectors, based on different people, your KPI changes from time to time.
+Okay, that is, what is your…
+What is your main driver? What is your main driver? Which is what is your main goal? That is what KPI is all about. Then comes funnels, cohorts.
+Funnel is, like,
+It's like, you know, it's like, as you know, when you are preparing tea, right? What it happens, and you, you filter out the tea leaves, and you get the tea. Similarly, funnel is like.
+one after the other. You are going… you are going to the product page, you are going to the sub-product page, you are going to, then the payment page, and finally making the payment. One after the other, you have these
+Step, and these comes under different funnels, right?
+And cohorts, and
+Cohorts are, like, it's like grouping the customers based on different frequency, and looking at it in a…
+in a… in a different way. So that is what a cohort is. Majorly, this… this session is all about different visualization and how you are looking at the data.
+Okay, so, so if, if, if I just look at the data, if I just, if, if I am not doing any kind of analysis, if I'm not building any kind of.
+any kind of report, any kind of graph, I just have the data, it makes no sense. But, if you just put in, if you just create a different cohort, if you just build a trend of the KPI, or if you build different funnels.
+You will understand where you are doing well, where you are lagging.
+Right, so that's the objective of this entire session, and that's the objective that I will be looking for.
+Okay.
+So, there are, as I said, and there is…
+So, I'm not going to detail, because in each of the topics that is in your… in your, in your video sessions for week 3, they have given you lots and lots of details, but what we will be focusing on is we will be just brushing up these things, and we'll have a little bit of
+You know, a little bit of… More,
+more hands-on, right, about this data. So, coming to that, in your… do… in week 3 or in week 2, did you have any…
+Any practical sessions in any of the dashboard… dashboard building? Like, be it Tableau, or Power BI, or anything?
+Any task where you have to build different dashboards, or any kind of dashboards.
+Okay. Was it in Tableau?
+Or Excel.
+Okay, you had to do something. Okay, anyways, ignore that.
+Yes.
+Go live also in through Python and Power BI both.
+Okay, okay.
+The option was given that you can create either way.
+Oh, wow, that's great, that's great, wonderful.
+But what happened?
+Okay, okay, wonderful, wonderful.
+Great. So, as I said, when you are creating an executive-level dashboard, that is, CEO, or the owner of the company, what…
+What they are going to focus on, they are going to focus at the sales number, but they are the main.
+Revenue. They are only concerned about revenue. How much revenue is coming in, or how much we are growing? How is the growth going on from the last… so if I'm looking at a day level.
+if I look at the report at a daily level, I look at, you know, compared to the last 30 days, how I am doing, or how much growth I am having, or if I'm looking at a monthly
+monthly numbers, how much growth I'm getting, etc. So, you just need to compare it and play around with the Gryphon crafts and different trends, and how much growth you are getting. That's the objective of a CEO that's going to get.
+Okay, so if I am in the operations… operations team, my focus is
+How my orders are progressing? How my, you know, products are going at the average time? Is any products getting delayed? Okay, how many products are… are out of stock, okay? How many days we are… how much… how much inventory we are having, okay?
+And so all these things, which are the products which are getting returned, which are the brands which are still out of stock and we haven't received anything yet, okay, which are the products which are stuck.
+in certain locations because of some delivery issues. So these things that you will be covering on, and these are some of the… you'll be zooming on.
+On different views, right?
+Now, next, so, when we are building up, when you know what is your KPI and you are zooming in, so that was the different views you are getting. Now, when you have
+the KPI. You are going to go deeper into it, okay?
+What is the, what is the,
+what is the conversion rate is going to be, what… how… how we are progressing, how… what is the average… average order value we are getting. And it's like, you have to go… go have… you will have different metrics for… based on your KPI, which will help you to understand your KPI in a better way. So…
+That's… that's… you are… you are going to go much, much deeper into it.
+Okay, so, lagging and leading indicators. Okay.
+So, lagging is, like like la la so for example you you say.
+There were a couple of products which were out of stock last month… last week.
+Okay, so how… what we are doing with it?
+So, these are some of the indicators which was happening last time. So, and there, the customers are…
+You know, they are just adding that product. They are looking for that product. So what is happening in that?
+Okay, and there will be a couple of products which are in stock, and soon will be out of stock. So, what we…
+So that was a lagging indicator which went out of stock, and these will go out of stock, and how we are looking at the inventory, how we are planning for the future sales, or maybe your…
+Maybe a sale is coming up, like for an Amazon.
+A sale will be coming up.
+So leading and lagging indicators play a majority.
+Major, major part. And during this time, your entire E-Commerce industry, or the complete analytics team.
+are, you know, hell-bound in terms of data, because they have to plan it in advance, so that no customers face any issues. Because in most… if… because during this time, there… the number of orders, the number of order values will be huge.
+like, and your revenue is going to jump a lot, so that's why you have to make sure you are anticipating each and every move, so that, you know, you do not have, any disruptions for the customers. Otherwise, people
+People have always get choices, right? They are going to just churn from one E-Commerce to the other one.
+Okay.
+Then you have this, this, this, funnel visualization. What is this funnel visualization? You get the product view, customer view.
+Okay, so how many, how many,
+how many visits we are having, how many product views we are getting, how many are adding to the cart, how many are checking out, and how many final purchases they are doing. So, all these
+one after the other, how the conversion rate is going to be, how these funnels are going to tell you how things are moving. This is the.
+product funnel, or this is the purchase funnel, and this is the customer funnel, where people are going in, looking at products, and then finally buying it. So these are the different views. So these are actually different views that you are going to
+look at, and if you find any issues, like, for example, where you find, like, people are… although people are… lots of people are… so you have… you have launched a new product.
+Okay, and people are… people are really, really interested based on, based on the competitor. This is something which is completely out of the box. And people are, you know, definitely interested in this product. But what is happening? They are adding that product.
+Going, adding it to the cart, but not making payment, but they are just leaving and going. So, you'll see.
+people are abandoning that product. So you have to understand why that is having… why the conversion is not going through. It might be because of some…
+payment issues, or might be because of some, some, so, some, because of some delivery issues. Might be you, you, you guys, might be that product is being
+a little bit higher, where, you know, there are other… other websites are giving it at a little cheaper rate, or there might be different factors which you have to encash on, and you have to take care of that, so that
+The abandoning cart rate doesn't increase or shoots up, where people go and finally make the purchase, not leaving that product, okay?
+Okay, then there is that cohort.
+Like, the time when they are… that is your… based on the time they have been in the system, okay, based on different frequencies they are coming, you… you group them.
+Okay, so it becomes easier for you to understand which of the, how,
+It'll tell you how much time they have visited, or how frequently they are visiting, and so on, and you have to… so…
+so that you can focus which are your… you remember RFM and, customer lifetime value and all those things we had, talked about. And these are the cohorts, or, like, it's not… it's cohort is, like, grouping the customers based on the
+frequency they are coming, and how they are coming. Based on each month, you can group them and find out the frequency.
+So that you can find out, okay, these are my, you know, repeat customers. So this, I have to focus on.
+And these are the customers who are not repeating. So that, I have to make sure of that, that
+dashboards.
+And one more, now, these… these were all the good things that comes out of a dashboard. Now, there also happens one more
+Thing, which is when you are trying to put in lots of lots of information in a dashboard.
+Because of that, your dashboard becomes fully cluttered.
+That is, lots of information are already there in your system, in your dashboard, and it becomes really difficult what to choose and what not to choose. If there is so many, so many, information that are being passed, you, you really, you really face an issues, like.
+what to select and what not to select, right? So that becomes an issue
+for, for, for dashboards, and that's why you have a clutter, in, in your dashboard. So, like, for example, or you have different.
+You know, high…
+high graphics, or different high-colored, you know, colors you are using, because of which it becomes very, very, at times irritating and becomes difficult to read, or you are using some charts which are very difficult to read.
+Or, like, for example, I have got 10 categories, and I'm using a pie to denote that. So you understand how people will face it difficult to understand that. So these are some of the things that you should be taking care of.
+Okay, so that's all I had, in, in Module 3. So, in, majorly, what you need to do is, it's all about, you know, what your dashboard should look like. What are the things that you should
+It should be visually appealing, it should be informative, and it shouldn't be, like, quite…
+Cluttered so that it becomes really difficult for people to make sense of what is being shared or what is being shown to you.
+Okay, so I'll just take a pause, and we will move to the data piece. And let me know if you have got any questions as of now.
+No questions?
+And after this class, I am going to… share, these
+Files with you, so that you can view them.
+Hi, Krish, sir. Hello? Am I audible?
+Yeah, yeah, you're audible, tell me.
+Yeah. So before you are closing the class today, I have to, share one, a post like in the comment section. Share a poll over there so everybody can able to poll, rate out of the, regarding this course related.
+Yeah, you can post it now, while I'm reading the other things.
+Okay, so… I do not have the poll access as of now.
+Wait, wait, wait.
+MSC licensed.
+Okay.
+Oh…
+The poll is not open yet, right?
+Poll is not open yet.
+How do I make him the…
+I'm not getting any option to make you the… co-host.
+Is anyone available for the coordinator review?
+Who can give you the access?
+Because I do not… I'm not able to.
+Yeah, I go to the access.
+I go to the access.
+You got the access. Now you can start with the book.
+I'm going to launch the, polls. So, guys, everybody, Fill this poll.
+Done.
+Yeah, thanks.
+So, 8 members are joined in this call. As of now, 6 has been done the call.
+Remaining two are there.
+One more, like…
+Who else is left? Yeah.
+It's done.
+Okay, great. Thanks, everyone.
+Okay, okay, wonderful.
+So…
+I think in the polls, you have to add another column.
+Because based on the poll result, somebody is not satisfied, they can put a comment also.
+Right?
+It will be helpful, otherwise this data will not help.
+To improve wise.
+Yeah, Ashish, I got your point. So, I need to talk to the tech team, so that they could able to, give additional things over here.
+Next time onwards, you will get all those stuffs over there. Thank you, Assis, for this.
+Yeah.
+7 days, sir.
+To be like if you are giving like.
+Less than 4, then you have to put a comment, otherwise it's not summit, right? Something like that. Sorry, but…
+Yeah, yeah, definitely.
+Thinking bad about me that how come you do that? It means I am just a fellow student but.
+It making sense.
+Thank you.
+I shared the wrong file.
+One minute…
+Is my screen visible?
+Yes, it is.
+Okay, wonderful. So, what we are going to do is, okay, I haven't,
+Let me share my entire screen, that would be better.
+Okay, so what we are going to do is, you remember the…
+In the last class we talked about this data which we had.
+But we haven't done anything with it. I said, like, we will be doing a little bit of EDA with this data, but we didn't get much time in the last class. But, today we, we can do something with it.
+So, we have got orders data, we have people, and we have returns.
+We have everything.
+So,
+So, there are two ways for doing it. First, we do a little bit of EDA, and if we get time, we can think of creating our dashboard using
+Power BI, if we get time, definitely.
+Okay, so what we do is, we first upload the data. So you guys all,
+All fine with Python right?
+Because it is part of.
+It is…
+Yeah, okay, okay.
+Go so far.
+So… So whichever console you Id you want to use Pycharm.
+PySpark, sorry, PySpark. So, whichever you are going to use, you can use it. I'm using Anaconda, so that's what you have been using. So, first thing first.
+I have uploaded the data in here. It is in Sample Superstore Data. And after this class, I'm going to share these files with you so that it becomes easier for you to view.
+Okay, so first is, I'm going to first import these two datasets. I do not have to write it, so that's just copying. I'm importing these two libraries, Pandas and NumPy.
+I'll zoom in a bit…
+I'll go a little bit quickly. Let me know if you follow… are unable to, you know, follow anything.
+Okay, I'm just copying from the last…
+things. There's some sort of store.
+Okay, so what I'm going to do, I'm reading this data, pd.readXL, I'm just supposed to store data.
+Okay, and…
+And let's look at… The first two lines, okay?
+And, you have this data, order ID, order date, ship date, ship date.
+Okay, and the details which I have recorded…
+Okay. Next, what we do is…
+Let me look at the info, that is…
+What are the different fields I'm using, I'm just copying this.
+A code from another one.
+Okay, which will tell you what… how many, these… based on these variables, what kind of data format I'm using. Okay, it is a… is it.
+numeric, or is it a categorical? Numeric, if it is, it will give you int or float. If it is a categorical, it will give you an object.
+You have order ID, it is an object, order date, date time, ship date, date time, ship mode object, customer ID object, name object, segment object, country, city.
+Zip, regional, product ID, category, etc, etc. Everything is object. But here, you have sales. Apart from that, it is… it is float and end. So these are, your things which you should be focusing on.
+Apart from this, it also gives you, you know, how many non-null characters you are having.
+Okay, so how many data points you are having? 10, 1, 9, 4. Okay, and if you see, all your data contains no
+No missing value. So that's a very good thing.
+Okay, so now, with that, with this being said, now let's move to a disc. Let's look at a little bit about
+Oh, okay.
+Do a little bit of descriptive statistics.
+Wait, wait, wait, wait.
+Okay, it is going to tell you what is descriptive status gives you. It will tell you what is mean, median. And your 25th percentile, 75th percentile, and so on. It will only cover the memory fields. And since order date is in date-time format, it will cover those also.
+Okay, so this is the number of data points that you're going to get. Okay, what is your mean… mean sales, quantity, discount, etc, etc.
+Apart from that, you can also use this one.
+this one, which is going to give you, like, 80th percentile, 90th percentile, 95th, and 99. If you want to add a little more, you can do, say, 0.2, that is your 20th percentile, 0.3, your 30th percentile, and so on. And that's, as you add, it's going to give you.
+Okay, so 20th, 30th, 50th, 80th, etc, etc.
+Okay, now I am going to use a library which will do a EDA for me. So this is called as Pandas Profiling, or it was called, now it is called YData Profiling, or Profile Report.
+So.
+From Y data, you get PANDAS profiling.
+Okay, so this… every time it gets… it gets updated, so…
+What I'm going to do, I'm going to generate a report.
+And I'm going to see what kind of data I am going to do.
+And I'm going to show you how to…
+how does… how does this helps you, and how to make this. So, using Pandas profiling, it does your entire EDA that you used to do using Excel, or you have to write lots of codes to understand what kind of data you are.
+you're looking at, right? So, like, for that, you have Pandas Profiling. What it does is, first, from YData Profiling, import Profile Report. From Profile Rep…
+Profile you are creating a.
+variable is profile report, and you're calling that function, and it has a… it will create a report for you. Now, let's see. And this, I'll say, if you are using Power… if you're new to, new to…
+analytics, and if you're new to Anaconda, and new to Python, so you, you can use this.
+For your… for the first couple of times. Okay, and if you look at this one.
+Under profiling report has already done that. First analysis, number of variables you are having, 20. Number of observation, number of missing cells. Missing cells, number of duplicate rows, wow, you have two duplicate rows as well. Total size and memory, okay. Now you have all the variables.
+See?
+either you select one by one, or you'll get order ID, distinct, distinct percentage, how many distinct values are there. Okay, since it is categorical, okay, missing, and memory size. Order date.
+distinct. Now, if I want to do a scroll from this drop-down, let's look at sales.
+Right? So, distinct sales, distinct missing, missing, infinite, infinite mean, minimum, maximum, zeros.
+Zeros, negative, negative memory size, and you will get more details about it, and you will get not only these, you're going to get different statistics, which I have already done earlier.
+Like, describe. Minimum, 5th percentile, quartile 1, that is 25th. Median, Q3, 75th percentile. 95th percentile, maximum range, interquartile range.
+Okay, then you're going to get standard deviation, coefficient of variation, kurtosis.
+What does 306 Curtis tells you? Your data contains outliers. Skewness 12.
+Okay.
+Mean absolute deviation, sum, And apart from that, you have Instagram. Instagram is, okay.
+Common values.
+Okay, other values, 6151, extreme values, which is also going to give you. If you're not happy with it, if you want a cross-correlation matrix, so sales with the quantity.
+Sales with discount.
+Profit with sales.
+The cross correlation also is going to give you and this is,
+cross-correlation. This is the interaction between different, you know, values, and this is a heat map. If I want it in a tabular view, so based on cross-correlation, you… if you want to get, you'll get it here. If you want it in a tabular format, so here you have the variables there.
+By category, region… Wow.
+Okay, so why category is coming? I don't know. Category shouldn't be category. Is it the a country region? Okay, country region. Why, it is coming. Let me see.
+Look at the data.
+Mmm.
+Ha.
+This one. Category, country, region, and it's a cross-correlation that you are getting using a heat map. Apart from that, you get missing values, if any are of countries, if your data contains any missing values or not.
+And about duplicate rows, which are these, which duplicate you are getting, but you see, customer name are different. This is not a duplicate.
+Based on what duplicate it has.
+So, I don't know, okay? And this is what Pandas Profiling will do that for you.
+Okay? Is it helpful for you?
+Yes, no, maybe?
+Are you guys aware of this?
+Yes, no, maybe?
+No one, I think.
+This is good, but… Why it is showing these two?
+That we need to see it.
+It's duplicated.
+frequently occurring.
+That means we have to get into the data, and then find out why it is happening.
+Apart from that, it would be difficult to…
+That's why. Actually, it has duplicated. It is saying there are two data points which are duplicates, and it is duplicate.
+Okay, understood now.
+I thought both are duplicates, but no, it is… frequency it is giving is duplicate 2.
+Duplicate yeah it's not yeah.
+And the only issue with this library is it requires a lot of, I mean, supporting
+Libraries. So, at times, it becomes irritating, one after the other, and you finally give up.
+But if you are doing it for the first time, follow it and it will work well and it doesn't work with Colab.
+That's one of the issues.
+It will work on your system, but with Colab, it doesn't work. I think there is some workaround on it. But, it works sometimes. So there is one more library, which is known as Detail. This is also good enough.
+I'll leave it up to you, whichever you are fine, and whichever you are comfortable with it.
+Detail is more… Like an, Excel,
+Thing it's going to show you.
+You see, you get this data in an Excel format.
+Okay, where you can go about and look into the data. Next is you go here if you want to visualize.
+Go to describe.
+Or you want to chart it out, something, you can go ahead and do that.
+Okay.
+You want a scatter plot?
+Select the column.
+Let's see… I want sales.
+And Based on, order date.
+Scatter plot line.
+Discount order ID.
+Oh, what has happened?
+No, no, no, no.
+Say… monthly?
+Yearly order ID.
+available.
+So based on this also, you can, definitely go about that.
+Pay the deal and bar scatter plot.
+This one, I haven't used this that much, but…
+But definitely, you can definitely explore and.
+And understand which one to use and which not.
+describe.
+Yep, yep.
+Let's take, sales?
+And, I go to describe…
+Let's see here, just a minute.
+Outliers, if there are any, it's going to give you… you have the sales…
+the histogram, based on categories, QQ plot, you name them, and you're going to get it. But this is also helpful if you're going to visualize the data. Wow, not enough memory, wow.
+1.
+So these things, definitely, you can, sorry.
+Go ahead and explore, detail.
+Okay, so now, so I'm just closing this.
+Now, one more thing that we are going to look at is a scatterplot, box plot.
+Is my…
+Sales.
+This is not coming up.
+What has happened?
+No.
+SNS, Boxplore… Sales, I got sales name, let me… Try with quantity.
+It's me.
+So, some issues with it.
+Oh, oh, oh, oh.
+No, no, no, no.
+Don't generate again.
+This one, when it generates, it takes a lot of time, and if my data was small, so thank God, if,
+Your data, data is huge, it takes a lot of time to generate.
+Okay, I'm closing this.
+My phone.
+Great.
+share… That's shit.
+As I said, if you are running these, you are definitely going to get one issue or the other.
+Okay, so now… If I look at this data.
+This one can pass as an outlier, or… what do you think? Are these outliers?
+5,000 is here, 15,000 is here, 20,000 is here. I think they can go as an… not an outlier. They can go. And even these, you know, quantities also can go. So…
+There isn't much outlier in the data.
+Right, if there are outliers, what you can do, if you want to find out, you can say, if any data point is beyond upper control and lower control limit, you can limit that.
+Right.
+And you can take the action, right? Apart from that, you can also do a bus correlation…
+Where is that?
+Okay, and here you go. If you look at this data, sales with profit is almost 0.5.
+Even not 0.5 complete, 0.48.
+So, in short, your… KPI is…
+not in a good relationship with the other variables. So if you are thinking of building a model, you might face some issues.
+Right. So… That's all I had for today. Yes, as I said, We are almost…
+6 minutes to go, so for the dashboard, I have to do some groundwork and have it ready for you in the next class, so that, if we get time, we can show it to
+To you? Okay. And so, and that's all I had for today, guys. So I have covered the…
+EDA a little bit, which I had in the last… which we have spoken about, and for today's, dashboarding stuff, we are going to cover in the next class.
+So, can you do one thing? I mean, we all have completed one year, so this, EDA, null value analysis, these chart, heat map.
+And including, we have completed the data visualization and storytelling already, so we know how to create dashboard and all.
+Okay, that's already covered. So…
+Possible, if you can just go through and talk to the BITS people, that what all we have done so far.
+and What new you can introduce in your live sessions?
+That will be really helpful.
+Right, that will make sense for us as well. Okay, okay, okay.
+And more comments, and more, more interaction, between, between you and us. That will be helpful, because all these codes.
+I believe, because one year is already done, we have, created, projects, and everything we have submitted, so…
+So this is nothing important.
+Means every presentation means we have to do these analysis, we have to create heat map, we have to do EDA, we have to do.
+Hmm hmm hmm.
+I mean, it's common.
+They're doing it for the last one year, and creating dashboard, and
+Then this is nothing new for you. Yeah, yeah, yeah.
+Nothing new.
+I wasn't aware of this, so thanks for…
+That's what I'm saying, that if you can check what all courses we have done so far, and then what was the content related to your subject, which is already cleared, and if you can introduce something new.
+Something exciting. Maybe you will get more questions, more interaction. That's what I'm saying. It's up to you. It's up to you. I'm not…
+Coffee.
+the.
+No, no, no, that's, that's, that's really, really fair ask. That's really fair ask. So, what happens is, in all these, live sessions, what we try to cover is, you know, you get a couple of… the objective is, whatever.
+the subtopics that is there, you need to cover them, and along with it, if you get time, you can cover a little bit of practical things. But yes, what you said, if you have already done all these things, then it becomes monotonous.
+And interest goes down. Definitely agree with it. So yeah, for coming next class, I will try to make it more informative. Not only interesting, but definitely informative, so that you can at least take something from this class.
+Now what is happening is we have already covered, so what's the use?
+Give you an example, like, you have a dashboard for CEO.
+But we have to give that dashboard to a manager, how we are going to explain and what all things we have to change in the dashboard to make it more appealing to a low level manager, or maybe if it is a means vice versa, things like that.
+Hmm.
+Also, like, if you have a dashboard for projects.
+And, somebody from, operations team is also present, so how we can tweak that dashboard, so that it will make sense for the operation person as well.
+That could be…
+So.
+ignite.
+In… so that will be a completely different, topic, actually.
+So, why I say? Because what happens in… in… in… in dashboard is.
+we… so, like, for example, I create one dashboard, okay? And in that dashboard, I'm showing sales, I am showing order value, I am showing what revenue I'm giving, and I'm also showing how my products are moving along after the other.
+And when I am sharing these different.
+I mean, this report to different levels. That means CEO,
+then comes the operation, brands, and the inventory team, I have to give different access. That means, based on this dashboard only, like, for example, there are two slides which will be available to the operation guy. So those two slides won't be available to the brand team, but the CEO will get access to everything.
+So based on, you know,
+person to person, I have to get that access. But yes, what you are saying, that noted, I will try to implement in the next class onwards.
+Yeah, in fact, okay, let's take it like in that way, in the Python code.
+If you have code like, okay, we write it down, and the dashboard is created for each and every team, based on their interest and their inputs to what they want to see in the dashboard. We create multiple dashboards in one Colab notebook or Jupyter notebook.
+Like we used to do in Excel, like, we create macros, and it took data and put it in a PowerPoint presentation automatically with multiple slides, one for each team.
+How we can do it in Python, that I don't know, maybe others know.
+Hmm Okay, okay, got it, got it.
+I don't know if you remember.
+got it, got it. Okay, okay, point noted. But yeah, really, thanks for your feedback.
+Okay, anyone? Any, any questions? Any suggestions?
+So that's why it's better to have some live sessions in between.
+So you, you get to know what, what people are thinking, what the objective is, and how things are moving.
+In fact, I can tell you, most of the time we use these live sessions to repeat
+Means before before the exams.
+This will give us, like, a sense that what… whatever we have learned in… in the last 13 weeks. Just a quick, recap.
+Recap. Yeah, yeah, yeah.
+So that way also you can think about that you can give a recap of the week so that at the time of exam we will have to do 13 hours of videos which we can do or half the time.
+She can cover in 1 or 2 hours.
+Yeah.
+These live sessions.
+Yes, means we put it on 1.5, and we can do it in less time.
+Okay, okay, sure.
+Okay, okay, got it.
+I hope not too much feedback today.
+That's fine, that's fine.
+That's… that's okay.
+Okay, so that's all I have.

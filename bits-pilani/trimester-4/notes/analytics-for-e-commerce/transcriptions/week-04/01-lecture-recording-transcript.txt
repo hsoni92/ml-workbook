@@ -1,0 +1,357 @@
+Okay,
+So guys, feel free to ask your questions if you have any in between. Okay, I'll be happy to walk you through. And all these,
+All these sessions are for a little recap of what all you have covered in the life.
+in your modules, and also, and so a little bit, we'll, try, if we, based on the timelines, we can do a little bit of hands-on as well. So that is using one of the use cases. Okay.
+So, let's talk about, a little bit, one step back, let's talk about a little bit of what all we have covered in last week, and what all we are going to.
+Whatever we are going to cover in…
+In this, in this week as well.
+Okay, so last week we talked about dashboards, we talked about KPIs, we talked about funnels, we talked about cohorts.
+Okay.
+So, these are… what are these, in short, if I talk about, you know, different, different dashboards. So, what are these dashboards used for? These dashboards are actually different views for different people, or different groups of people.
+Like, there is a dashboard which is…
+Which is at the… at executive level, that means a higher end, higher end of the system who are looking at.
+There's, so… so that is one view. So, like, for example, if the…
+if the CEO or the MD is looking at, want to understand how the business is going, how the business is going on, and how
+the growth has been, and et cetera, and et cetera. They want to view at some of the things, like how many sales they are having on a… on a daily basis, how my sales have been growing, how many returns I'm going on with profit I'm making, net profit I'm making on a…
+Maybe on a daily basis, on a month on a month basis compared to last year, how I'm growing, etc. So all these information I will be looking at. Now someone at a operational level.
+Okay, what these people are going to look at, they are going to look at completely different things, okay.
+they are going to look at, okay, what is the average time of delivery of the products? How many returns I'm getting? Okay, how frequent are the returns? Okay, so how many return value I'm getting?
+Okay, what is the condition, what is the condition of the inventory? Okay, if any products are out of stock, and all these are some of the things that they are going to focus on. So…
+The thing is, you have… you… when you create a… I hope you know where… what is a dashboard, right? It contains a group of different charts with different, different views we can have. So you can create one dashboard with different, different views, and you can give access to different people.
+One view is for the executive dashboard, one view at the people higher up in the company, and one view is for the operation people. One view will be for the brand people, and one view might be for
+For for for others as well and there and.
+Okay, so you can provide different views using that, so that we can make some meaningful, meaningful insights from that. So this is something which we can… which we have spoken about.
+Which we have, which we have spoken about in the last class. Now, the next thing that we had spoken about of
+about the funnels, right? What, what, and how these are, like, for example, if a person… how many, people are visiting it? Visiting the… my, my e-Commerce website. How many people are just visiting and just going away? How many people are
+adding that product to their cart, and how many people are going to the checkout, and how many are completing the purchase. That means you have just purchased the product.
+So, if I look at this, this is just that step-by-step, and this is called funnel. That means, if you know how the funnel is, like, when you are, you know, when you are preparing tea, you take that, and you pour the tea, and the…
+you know, the tea leaves get filtered out, right? It's like a filter at each level. Similarly, if you see, most of the people are at 100% have visited. Out of that, just 55% are adding, or mostly they are visitors, right? They are just looking at your
+Website visiting the products and just moving away out of that 55% are just interested in your product out of that 35% are
+moving to the checkout, and out of that, only 22% are finally purchasing the product. So, you see from 100%, that's only 22%. Okay, so…
+That is, that is, that is what a funnel is all about. Then, next, we talked about cohort tables.
+cohort tables is when you are grouping the customer based on different, based on different, things, based on different, you know, based on different criteria. Like, if you want to group people based on how many, when they have joined, or
+the time they had been in… have been your customer, the time, and how many… and in and around how much purchases they are making, that is the average card value, the total value, or the number of orders, etc, and etc. You can group these.
+these customers, and how frequently they are having. So, based on the frequency and all, you can group these customers, and it's like creating different bins, creating different intervals, and analyzing that in a different way. So that is about cohorts.
+So these are some of the things that we majorly focused on in the last class, where
+Like, one… one dashboard view is… which is…
+You, you, for different, you know, different departments, you get, you cannot have the same view for different.
+Difference, right? Someone will demand something different.
+So, you want it customized. So, that's the objective of building a dashboard. So, as I said, like, executive versus operational. Similarly, like, as a… so, now the next thing about the funnels, how the people have been filtered out. The next is about cohorts, and
+How you are grouping that customer so that you can, you know, give meaningful advice to the
+Do your business, okay? And what are the things that we are going to focus on today?
+So that was for week 3. So that's a quick recap which we had done. We are going to talk about facts and dimensions. Okay, we are going to talk about schemas, event schemas, and data governance.
+platforms at ONDC. So these are some of the things that we are going to talk about, but you have to understand what is… what are facts and mentions first.
+So, what do you mean by fact and dimensions? So, guys, when anytime during the class, if you have got any questions, please feel free to ask them, okay?
+I do not have access to the chats, okay, so I'm not following that. If you have got any, any questions, please feel free to ask them, okay?
+You can unmute yourself and, speak up.
+Okay, so…
+So we are talking about, first, you have to understand what is a fact, what is a dimension. Okay, what is a fact? Fact is something which is associated with a value.
+Okay, when you are talking about any kind of value, it is a fact.
+And dimension is something which is non-numeric.
+Okay, like, for example, if I talk about Slack.
+Which is, which is associated with a value. Like, it can be, it's
+An order ID. Not an order ID, maybe the order value. Okay, number of orders.
+number of, the total sales, okay? Total profit, etc. So whenever you are dealing with a number or a value.
+Okay, that is perfect.
+And these facts and what is a dimension? Dimension is something which is non-factual, or which is non-numeric.
+Like, customer, customer ID, customer name.
+Okay, product, product ID, product type, product description, etc.
+Okay, location.
+So all these are dimensions.
+In short, and…
+And these facts and dimension, not only here, facts and dimension, you… I guess you have used in… used in your… when you were building different dashboards. When you… and also when you go… if you go deeper into… into BI, business intelligence, like, when you go into data warehousing.
+or data engineering, you will come across facts and dimensions a lot, lot of times, and they are going to refer it more and more often.
+Okay, so whenever we are talking about e-commerce.
+Or the E-Commerce Day.
+Okay, so…
+we have to… you have to have data which is a mixture of facts and dimension. It cannot be possible that you can only have facts, or you can only have dimensions, okay? If you only have mixture of both, then, then, then only you can make.
+Meaningful…
+insights, or you can do some, you know, do some analysis from that data. Now, suppose if you have data of only, only one type, be it omninumeric, or be it only, only…
+dimensions, that is only categorical. Categorical, I hope you are all aware of. What is a categorical? Categorical is something which is non-numerical. It's the same thing, like, dimension.
+Category, you can also call as category, dimension, or string, or object, whatever you want to call it.
+Okay, so you cannot do or you cannot have meaningful insights or you cannot. Can you think of building a dashboard where I give you only, only that means I just give you data which have only numbers and numbers. Can you build a dashboard with that?
+Yes, no, maybe?
+Guys, please use the chat for the communication.
+What I say is, if I tell you
+I give you only facts. That means I give you only numeric values. You have a table which contains only numeric values. Can you build a dashboard with that?
+No, definitely, you cannot.
+Yes, correct, Hemant. Thank you.
+you cannot have any dashboard. But yes, if you have, only, if you have only facts, no use. If you have only dimension, yes, you can have at least one or two, but still, that will not make any sense.
+Right. So, whenever you have
+You have a combination of facts and dimension, then only it will have a meaningful insights.
+So now, let's understand what is a star schema. So what is a star? You know how the star looks like? You have here, you remember when you were small, you drew a star like this, one triangle inverted, one triangle straight, right? So…
+How many, how many edges a star used to have?
+I think 4 Right 4 ages no 4 6 ages.
+6… a star has 6 edges. But here, we… what the star schema that we are going to talk about, it has just 4… 4 edges. Okay. So, if we have one fact.
+And surrounding we take 4 dimensions that is a star schema.
+Why do we have these, these facts and dimensions? Because if you want to have some meaningful data out of it.
+Okay, where it contains different, different information.
+Like, I have got, so, suppose I… I am talking about the…
+I'm talking about data of, of… I have an e-commerce company, and I am collecting data, okay? Or, for example, there is… I have an e-commerce company, and people are visiting. You know how people visit through… through the e-commerce portal. People are coming in.
+Some are, you know, creators, some are… some are, you know, creating their order or buying products, some are just visiting and leaving, and some are also have… which have bought their products, they are… they are returning that product. So, that's what e-Commerce is all about, right?
+You can buy a product, you can, you can return a product, or you can just view the product.
+Whatever you want to do it. So…
+And you know how E-Commerce works, is you have lots and lots of information which are being passed. And it becomes very, very difficult if all the information are kept in only one table.
+That's why we create separate, separate tables which contains… which will contain information about different
+different things, and… and if you… and put together, it will make a meaningful insight, which will make an, thing, an information. If you take it single table at one go, then, you know, you will have half, information.
+Like, for example, and that's why, if you put a star schema, it will give you maximum information. That is.
+If I… if I'm talking about, let's take a couple of information. Like, I have information about.
+you know, that date. Like, for example, if a customer has come… has come to the E-Commerce business, and he or she has purchased some products, okay?
+So, I will have information about the product details. What kind of product it is, which,
+what kind of product it is, okay, what is the description, okay, and so on and so forth. That information will be in the product… product table.
+product dimension table, okay? Then that customer details, like, what is the name of the customer, where they are seeing, where they are seeing, where they are from, etc, etc. That will have information about customer dimension. Then there is
+which channel they are purchasing, which type of product they have purchased, okay, which store, which channel, that is, again, store, store dimension. Now, which, on which date they purchased, so that is date dimension. The next is, and the last thing is.
+What was the price?
+which price they bought that product, which will be contains in what was the order ID. So, which will be in the orders table, which is a fact table.
+And if you put together.
+And you will have a different information. If you just analyze the customer, you will have information about the customer. If you just analyze the store or the channel, you will have information about that channel also. If you just,
+Have information about the product, you will get information about the product only, and if you have.
+if you talk about the date, you will have information where… which date it is purchased, and so on. And on… and if you just analyze these orders, like how many, how many orders it is, what is the average outer value, etc, etc, then you will have information of only orders. Now, you put together all of these three
+all of these four, five things together, and you will understand when was the customer coming, when was the person visited the website, what was the average value he or she purchased the product, where was the customer from, what all, you know.
+categories the customer bought the product, and when did they buy it. So, it's like, you will have more and more information about the purchase than if you take single, single information, single, single background information, which is available through different tables.
+Okay.
+Okay, like, for example, why…
+Like, for example, I have a record, I have a data, I have a messy data.
+So, how… so, here I have taken examples, okay? So, like, I have, messy data. I mean, I have just put together data. I have the order ID, I have the name of the customer.
+location, That customer bought 2 fish… 2 products.
+Of 100ml each.
+Okay, on… on 26th April 2026, and the total value was 558.
+Okay, so this is a simple information if you just go back.
+If you just go back, one step back, and you see, you have created 4 or 5, you have created a star schema. That means you have created 5 tables, which will contain information of 5 different things.
+Okay, and now what you're doing, you do not… do not want to create a table. If I want, put everything put together in one line.
+Order ID?
+Name of the customer, which location.
+What he bought, what he… Rohit is he, right? What he bought, when was the… when did he buy, and what was the total?
+Now, when I am running the factor table, what FACT will do? It will pick up the key values, that is, the numbers. Quantities, 2, unit price, 279.
+Okay, total was 5x8.
+Okay, why these facts are important? Because when you are dealing with numeric values, you can perform any mathematical treatment out of it, okay?
+Now, all these… all these… the rest of the information get…
+Pulled together in different tables, like customer name, move to the customer dimension, product name goes to the product table.
+Category, move into the… convention products.
+Okay.
+Got it. So…
+you have created 5 tables. So, from this first row, you 5 tables will get information from just one record.
+Right. Now, what will happen?
+So we are thinking of building a star schema. So so each table, each table has got
+Each table has got different, different information. This has got customer information, this has got, you know, orders information, price and all. This has got about product. This is about category, and this is about date.
+Okay, so… You know how joins work, right? In join, you must have a primary key.
+Primary key must be present in both the tables, and hence, you can join. But here, what do you have?
+If I want to create a primary key, I must have a customer ID.
+Here…
+For the different stores, I must have a store ID. For the product table, I must have a product ID. Okay, for orders, I will have an order ID and date.
+the date ID should also be there. So, each of the tables should have a primary key, and if you have a primary key, I will only be able to join these tables, okay?
+So, as I said, so… so on these… on these four… all these information, the first line, you… all these information get absorbed in these four to five tables, and each table has some ID based on which you can differentiate.
+Okay.
+The next thing.
+Now you have to understand.
+How?
+how customers, orders, and products connect. That means this is a fact or a dimension.
+Orders, facts are a dimension.
+Products.
+Facts are a dimension.
+Guys?
+Customer, definitely, it will be,
+So, look at the star schema first.
+Look at the star schema. You have customer.
+It's a dimension store, dimension date, dimension product.
+Dimension, only orders is your fact table. Now, how they are related with each other. So.
+When I am a customer, I will have a customer ID.
+Then… When I am placing an order, I will have an order ID generated.
+Okay.
+And based on that, I will order some items based on the order ID, right? So, when I am purchasing that product.
+I will generate a product. Id.
+Right? And using that product ID, if I'm talking about how much inventory I'm left with.
+you can go to the inventory table as well. And using all these IDs, and these are not only these, you can have different, different tables which are linked, which can be linked using these IDs.
+Okay, it's not… so, why these IDs are important? Otherwise, what you have to do, you have to write these… the entire thing. That means you have to refer this entire information over and over again when you get some additional information.
+Like, here, I got… I got an information that this person, Rohit Malhotra, has bought
+you know, two face packs on 26th of April. So now, when this… so this person has got… has just bought the product, right? Now, it will get shipped, it will get packed.
+And then the delivery will happen. After that, if Rahul Malhotra faces any issues, they are going to return it, right? And once the packet, once the package has been picked up, the refund will be initiated. So, if I'm talking about
+So and that's how it happens in E-Commerce. Okay, you.
+It's like, one after the other, the events get triggered, okay? When, when, like, look at here, when a customer is going in, okay, customer ID generated.
+Ordered the product, order ID generated. Ordered the item, okay? Product item, product ID generated, okay?
+And then from product ID, you will get inventory ID, based on which you'll find out if your product is out of stock, or in…
+As some have some product, or is it in stock? Now, next comes your… when you have purchased the order, you made the pay… then next comes your payment ID. When you are making the payment, or when you are purchasing that product, right? After that, it comes your shipping ID.
+Okay. Delivery ID.
+Next, if you are returning it, return ID. So, there are… so, it's like, one event has… when a person has purchased, that is one event.
+And it is following up with one after the other. If you do not have that IDs in place, you have to write this entire
+line, every time you have to refer it once, everywhere. So if… and it becomes very, very difficult. So this is… I'm dealing with just one record. And in E-Commerce, as I said, so it's open for everyone, each moment, each second. There are lots and lots of people who are…
+You know, visiting your website. Okay, so that's why…
+That's why so much information is there, and you cannot refer the same information over and over, and it becomes really, really difficult to manage. So that's why you have these IDs, so that this information, or using these IDs, you can.
+You can refer back and have, and know where the status is, or how many people are ordering, and etc, and etc.
+Okay.
+So, as I said, That… that Rohit has got… purchased the product, and he has got the order,
+And he has got the product. Now he is returning, so he's ordered two products. And out of that, he's returning just one.
+Okay, so there…
+you will have another, a separate table, which will take the… as I said, when you are returning, return ID will be generated, okay, and so on and so forth. Okay, so now look at… so now what… what… how… how things…
+How things are happening. It's like there was one, event. Okay, there's an event that is the person… person purchased the product.
+Okay.
+That is, event name was Cart Added.
+Okay, and properties may… what you are going to get, product ID, quantity, price. Then you have timestamp, and then you have, user, and when was the user ID? It's like a unique ID that you are going to get. So what is an event?
+So every time people are visiting or making a purchase, it rises to one event. And from that event, you… you have an event name, you have properties, you have timestamp, and you have the session IDs and all.
+So, what is the event name that is a person is adding a product to the cart?
+What are the properties that you can think of? You can have product ID, quantity, price, if they are purchasing a product, what's the quantity, what's the price, etc. Then you have the timestamp when the event got triggered, and user ID or session ID.
+When this happened, when… when was this, and what is the…
+Okay, when did it happen? And these are… events are, like, it's like a back-end data that is getting stored. So these tables are the front end, where you are keeping track of the sales, majorly the sales that is happening, how many returns are happening, and all those things. But…
+This is the backend that is happening, that is event and trigger… event and event… it's like a log that is happening.
+Okay. Now, if… now… now you have seen how… how the first purchase is… happened, that…
+that Rohit Malhotra had bought two items and returned one product. Okay, so now, if I want to build a… build an event from Rohit, how will I do it?
+I will,
+Okay, how, how, it's the complete flow, that the person has bought the product, okay? He has received the product based on… it has got order ID, it has got product ID. Then that person has returned the product, it has got return ID.
+Okay.
+That means it can have, in short, one record is for
+buy, where the customer is buying the product. The second record is for selling the product.
+Okay, and each, each… and again, if I talk about in terms of event, yes, you will have a different event, you have the… when was this happening? You will have different tables, which is in…
+Capturing information about sale. Then, apart from that, in the event, you will have the Session IDs, right? Which will tell you when that… when did, Rahul
+You know, buy that, and when they travel, return that, okay.
+Now, next is we talk about data trustworthy.
+And, you know, whenever, like, for example, in public places, when you are going. So, you know, and you are going on clicking pictures, creating videos, and when you are in public, there are different people.
+Okay, since you are taking… not only taking selfies, you are taking photos of the environment, okay, and…
+And you are clicking pictures of different people also, right? There might be someone who might not like that, because you are jeopardizing their privacy.
+Right? Because you cannot click pictures, you cannot treat it as it's, you know, at your free will, you cannot, you know, click pictures.
+Okay, so that that because that's not private, that is your public property.
+Okay, but if you are at your home, it is on your own bungalow, and you are clicking pictures here and there, so no one is going to, you know, stop you, because you are… that's your own place that you are clicking pictures, so that's private. Okay.
+Now, when we talk about data are trustworthy, so you have to make sure your data has all these qualities. That is, your data should be good enough.
+That means you should have complete data. It should be consistent, and it should be, you know, following a range pattern.
+It should be in a proper range. Apart… if it's not in a proper range, then it will be giving rise to noise and outliers in your data.
+Okay.
+And when you… and this is… I'm talking about in terms of if you are thinking of building an e-Commerce platform, and you want to have a good, good database in place. That means you should have followed the data quality
+checklist, that is, you… there should be as minimal of pre-processing required in that date.
+Okay, next is, you know, as I said, when you are creating dashboards, you give different teams, different groups, different, accesses. Similarly, when it comes to data.
+Again, you have to follow that control. Different… based on different role, okay, of these people, you have to give them, or control them.
+Based on how much you are exposing that data to them.
+Okay, and they… and when… and you should have…
+Okay, and and you should have a proper documentation, that is, of the, you know, complete glossary of what all data it is available, what are the… what is the meaning of this data, etc, and…
+how it is collected, etc, etc. And if any data, so if you are collecting data online, you… before it was freely, because there was no consent that was required, some…
+more than 2 years or 3 years back. So, you know, people, these companies at random used to fetch information as much as possible. Now you need to have a consent. You have to ask the user whether you are willing to share the information. Now, only then.
+You will be liable to collect it, otherwise you won't be able to collect that data.
+Okay.
+So that is about data,
+That is about, you know, completeness of the data. Okay.
+So, next is,
+Next example, we talk about different platforms which are available. One is monolithic, one is SaaS, then the other is ONDC.
+Okay.
+So, one is monolithic.
+So when, so, when you have got front end plus back end, which are just piled up together.
+So that is monolithic, that's the premier, that's the primitive, you know, type of system that you're going to have. SaaS, just like Shopify.
+Custom, custom, custom built, full control, more engineering effort. Okay, so that's what SaaS is all about, which is purely, if you talk an example of Shopify, ONDC.
+Let's talk about ONDC.
+So, so, it's like,
+1 order can touch several company systems at once, okay, it's like an open protocol, you have buyer.
+You have a seller. Both are using different apps and they are just connecting to the ONDC, right? That's how it happens.
+Okay.
+And… Just a minute.
+Out of,
+Thanks.
+And so, apart from that,
+Okay, so that's… that's the last thing which we have. Okay, so these are the different platforms which are available. Apart from that, If I'm talking about…
+So, if I'm talking about ONDC, how this is performing, you can, so these are different, they have got good things, bad things, of how ONDC performs, and where is the open platform, and so on and so forth.
+Okay, so then you have this example, but I'm not, talking about that. We were trying to have a use case where I'm going to walk you through that, okay?
+So let's, let's take a quick recap of what all we have done so far. We have spoken about facts, we have talked about the dimensions, that is, we have also seen how the star schema.
+How… what is about star schema, and how you can connect one… one schema with the other, or one table with the other.
+Schema means, you know, schema means, architecture, or the table in short.
+So, you have got different tables where you can link
+with different, different people, different tables, and fetch additional information that you're looking for. Then you have these events.
+Then you have these events, like, you have when, how the events and session IDs are generated, and how you can track people, what people are doing.
+Then you have these quality checks, which is going to make sure that, your… the data that you are using, or data that you have been collected, is more trustworthy.
+Okay, then you,
+You have the platform choice, what kind of platform you are going to use. Is it… is it ONDC or, Bucket Place? What you can track and how fragmented the data is. Okay, so these are some of the things which we have spoken till now.
+Okay, now let's… we have some 15 minutes. Let me walk you through one of the use cases. So, and in the meantime, if you have got any questions, please, please raise your hands, or just speak up.
+Hi, Krishnanji, sir. Yes, yes. Good evening. So, I just wanted to take, one to two minutes.
+I'm going to post one poll over here.
+Please, everyone, fill out this form.
+Who else is left?
+Among 6 people, 5… Of them has been filled yet.
+Yeah.
+Yeah, thank you, everyone.
+So I am going to end this poll right now. So yeah, Krishnananda sir, you are continuing.
+Okay, thank you, thank you.
+thing.
+Okay, let me…
+You able to see my screen?
+Okay, now we… what we are going to do is we are going to play around with the… with our dummy data, and understand a little bit more about facts and dimensions, and about how these… about the star schemas, okay?
+First is about fact.
+YFACT is something which has… which is related to a number. And dimension, something is which is non-numeric. It's like, if I say, fact is something which talks about
+What happened? And Dimension is giving you context.
+To what the situation that happened.
+And, how the star schema is, it's like, put one table in the center, and put all the dimension around it, you get a star schema.
+Okay.
+And you have the same fact table and different dimension, and you have the completely different report.
+Okay, if I look at this table, that, this table I have, I have order ID, order date, customer ID, customer name, customer city, customer email, customer sign up, product ID, product name, product category, unit price, quantity, line total. So…
+You guys remember, you have the order, order ID table?
+That is, order ID, order date, customer ID, customer name, customer city, this is available from the customer table.
+Okay, customer email, customer sign up. Then you have the product details, product ID, product name, which is obtained from product table, custom, product category. Then you have unit price, quantity, line 2D, which is obtained from order table.
+Okay.
+So that means order ID can be fetched from date, date column, sorry, this is not order table, this is the date column.
+And this one is fetched from the order table. So you can see that complete information is available from different, different schemas, or different, different tables. And you put together, you have, completely different
+Different information. And if we just try to aggregate it, Okay.
+how… what you're going to get, you get that based on… and you're grouping the customers. You're grouping the data based on customers. So, based on each customer ID, customer name, and customer city.
+Okay, you have… When did the customer sign up?
+Okay, so here is the customer… if you talk about… this is about the customer table.
+Where you have the.
+This is about the customer table, and similarly, you get it here.
+Customer ID, customer name, customer city, customer email, and customer sign-up date, from when the customer has been in your system. So, this is what your customer table is all about.
+Okay, now you can similarly, create your
+From this table, so it's like…
+What we are doing, we are going one step back.
+First, we created the main table, and then we are creating this small, small table. But ideally, what we do in real world, we have… we combine all these small tables and have one big table which has information of everything.
+Okay.
+Now let's talk about entity relationship. That means return bundles and variants. So what has happened?
+That means… So, let, let, let me see… Let's see.
+Now, what, what is happening? That, that, you remember that example, when that customer returned
+Return the product, okay? So, what is happening? So, that line of code where the person is, purchasing two units.
+Okay, that remains unchanged. But when the person is returning the product, that means
+Another line item, another record will be created that, or it will just get extended. That is, this customer is returning this product, which will go into return table, return ID, order ID, product ID, quantity return, return date, and return reason.
+Okay, so what is happening? Your original order, so that means number of products which got sold, which will remain unchanged, because it's not changing. It's only you are added one more information on top of that. That means you have returned the product.
+Okay, so now, if I… if I see… Previously.
+Okay, how many, how many products, how many quantities I have sold?
+Is 2.
+After the return, how many quantities I have sold, I will be just left with one.
+And similarly, when you are calculating revenue.
+When you are calculating revenue, you always consider the returns, minus that, and then your net revenue will be calculated.
+That means, what is your actual… this is what is your sales. That is… this one.
+This one. What is your sales?
+What else you have?
+Selling. And when you return, that gets subtracted.
+Okay.
+So, and most of the companies in e-Commerce business, if your, you know, infra or if your product is not good, people will return the product. And most of the companies face issues, face losses when people are returning the products.
+Okay, now we are… what we are going to do, we are, you know, creating a design. We are creating a event log.
+Okay, what are the things that an event requires? It requires a name.
+Okay, object action, that means.
+The, the… The person is initiating a return.
+Okay.
+Okay, that means it needs a name. That means what you are looking for.
+properties.
+Okay, the specific details about the return, timestamp, when the product got delivered.
+You can Session IDs, schemas change, so version rather than… So, in short, when you are creating an event, that means when the person is thinking of returning the product, how they are going to behave.
+So this is mainly obtained when you're creating an event. This is obtained through JSON file. Or if you look at this, you can understand this is a dictionary format, right? Event name, return initiated. Properties is nothing. Order ID, product ID.
+Quantity, etc, etc.
+Now, if I want to,
+Okay, so these are some of the things that you are going to cover.
+Now, if a person has created a wish list, you know what is a wish list in an E-Commerce business? Yes. So, based on wish list also, you can give recommendation. So, whenever a person is adding a couple of products in their wish list, how you are going to track it? Again, through events. You create a…
+Event name?
+Properties.
+Product ID, product name, timestamp, user ID, because how you are going to link that
+data that you have, that information that a customer, that is using user ID, using session IDs, you can keep.
+Keep data trustworthy and private. That means…
+Okay, that means you have to have, when you are capturing data, or you are dealing with data, it should have, the four, four major things. That is, it should be complete.
+shouldn't be, like, inconsistent, shouldn't have missing values. That is, the quality of the data should be good.
+Access control, that is, spec… You know, rules-based specific control should be given. A documentation, that is, a data dictionary should be there.
+And consent. That is, when you are collecting data, a consent should be there.
+Now, if you look at this…
+Order ID. It is giving an inconsistent total.
+So what you… why this is inconsistent? You say, unit price is $279.
+Total 3 units.
+Okay.
+Line total is 737.
+But, ideally, it should come to 837, that's why it has flagged as inconsistent total. So, this is some checks that you have to run.
+Now, based on this.
+So, based on this, you can also have different checklists based on the data that you have. You can see if your data, the format is correct or not. You…
+The values are in range or not, if there's any outliers or not, etc, etc, etc.
+So, now, let's… last is on ONDC. A single order can touch several companies' systems at once. A buyer app, a seller app, a logistic partner, and no single one can see them, the whole picture.
+Okay, so…
+It's like different events are going on in tandem, okay? And no one has a clear picture. It's like 3 events put together in one platform. So that is what ONDC is all about.
+Okay, so here you have the buyer app, where the customer has bought the product. The seller app, when the seller is selling, and logistic app, that means when the logistics team is, you know, delivering the product.
+So.
+no one has got complete picture of what is going on. It's only when you put together everything, you will make sense, and you will have an idea. Similarly, so once this is done, and you have shared
+And from this, you can again, summarize and have some meaningful insights. Okay, so that's all I had for today.
+So guys, any, any questions, anyone?
